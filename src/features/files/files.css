@@ -1,0 +1,216 @@
+/* Image + archive tools. Only design tokens: the three presets swap colours, borders and shadows. */
+
+.fx-thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+.fx-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 0.5rem;
+  min-width: 0;
+}
+.fx-thumb .fx-img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: contain;
+  background: var(--bg-2);
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+  display: block;
+}
+.fx-thumb .fx-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fx-thumb .fx-delta {
+  font-size: 0.7rem;
+  color: var(--fg-muted);
+}
+.fx-thumb.is-error {
+  border-style: dashed;
+}
+
+/* before / after preview */
+.fx-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+@media (max-width: 640px) {
+  .fx-compare {
+    grid-template-columns: 1fr;
+  }
+}
+.fx-pane {
+  border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.fx-pane .fx-img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  background: var(--bg-2);
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+  display: block;
+}
+.fx-pane .fx-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.fx-pane .fx-caption .mono {
+  color: var(--fg-muted);
+}
+.fx-delta-big {
+  border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--acid);
+  color: var(--acid-fg);
+  padding: 0.6rem 0.9rem;
+  font-weight: 700;
+}
+.fx-delta-big.is-flat {
+  background: var(--bg-2);
+  color: var(--fg-muted);
+}
+
+/* option rows */
+.fx-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.fx-field .fx-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.fx-field input[type='range'] {
+  width: 100%;
+  accent-color: var(--acid);
+}
+.fx-seg {
+  display: flex;
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.fx-seg button {
+  flex: 1;
+  padding: 0.45rem 0.5rem;
+  background: var(--card);
+  color: inherit;
+  border: 0;
+  border-right: var(--bw-thin) solid var(--line);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.fx-seg button:last-child {
+  border-right: 0;
+}
+.fx-seg button[aria-pressed='true'] {
+  background: var(--acid);
+  color: var(--acid-fg);
+}
+.fx-seg button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.fx-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.fx-check input {
+  accent-color: var(--acid);
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* zip listing */
+.fx-tree {
+  display: flex;
+  flex-direction: column;
+  border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
+}
+.fx-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: var(--bw-thin) solid var(--line);
+  min-width: 0;
+}
+.fx-tree-row:last-child {
+  border-bottom: 0;
+}
+.fx-tree-row .fx-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.fx-tree-row .fx-path {
+  color: var(--fg-muted);
+  font-weight: 400;
+}
+.fx-tree-row.is-dir {
+  background: var(--bg-2);
+  color: var(--fg-muted);
+}
+.fx-tree-row .size {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+.fx-tree-row .fx-warn {
+  font-size: 0.7rem;
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+.fx-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  font-weight: 700;
+}
+.fx-notice {
+  border: var(--bw-thin) dashed var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+}
