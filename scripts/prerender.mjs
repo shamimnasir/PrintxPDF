@@ -91,6 +91,7 @@ async function loadData() {
     entry,
     `export { CLUSTERS, ALL_POSTS } from ${JSON.stringify(path.join(ROOT, 'src/content/index.ts'))}
      export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
+     export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}
      export { fontHref, isDesignId } from ${JSON.stringify(path.join(ROOT, 'src/design/presets.ts'))}`,
   )
   await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
@@ -141,7 +142,7 @@ async function writeRoute(route, html) {
 }
 
 async function main() {
-  const { CLUSTERS, ALL_POSTS, TOOLS, fontHref, isDesignId } = await loadData()
+  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, fontHref, isDesignId } = await loadData()
   let cfg = {}
   try {
     cfg = JSON.parse(await readFile(path.join(ROOT, 'public/site-config.json'), 'utf8'))
@@ -330,6 +331,25 @@ async function main() {
   for (const t of TOOLS.filter((x) => !hiddenTools.has(x.slug))) {
     const route = `/tools/${t.slug}`
     const guides = ALL_POSTS.filter((p) => p.relatedTools?.includes(t.slug)).slice(0, 5)
+    const tc = TOOL_CONTENT[t.slug]
+    const c = tc && tc.answer.trim() ? tc : null
+    const contentHtml = c
+      ? `
+  <div class="post-answer"><p><strong>Short answer:</strong> ${esc(c.answer)}</p></div>
+  <h2 id="what">${esc(c.whatHeading || `What is ${t.name}?`)}</h2>
+  ${c.what.map((w) => `<h3>${esc(w.term)}</h3><p>${rich(w.definition)}</p>`).join('')}
+  <h2 id="why">${esc(c.whyHeading || `Why use ${t.name}?`)}</h2>
+  <ul>${c.why.map((b) => `<li><strong>${esc(b.h)}.</strong> ${rich(b.x)}</li>`).join('')}</ul>
+  <h2 id="how">${esc(c.howHeading || `How to use ${t.name}, step by step`)}</h2>
+  <ol>${c.how.map((s, i) => `<li id="how-step-${i + 1}"><strong>${esc(s.h)}</strong> ${rich(s.x)}</li>`).join('')}</ol>
+  ${c.faqs.length ? `<h2 id="faq">Frequently asked questions</h2>${c.faqs.map((f) => `<h3>${esc(f.q)}</h3><p>${rich(f.a)}</p>`).join('')}` : ''}`
+      : ''
+    const contentSchema = c
+      ? [
+          { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faqs.map((f) => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: plain(f.a) } })) },
+          { '@context': 'https://schema.org', '@type': 'HowTo', name: c.howHeading || `How to use ${t.name}`, description: plain(c.answer), totalTime: 'PT2M', estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' }, tool: [{ '@type': 'HowToTool', name: 'A web browser' }], step: c.how.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: plain(s.h), text: plain(s.x), url: `${SITE}${route}#how-step-${i + 1}` })) },
+        ]
+      : []
     const schema = [
       crumbs([
         { name: 'Home', path: '/' },
@@ -348,7 +368,8 @@ async function main() {
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
         publisher,
       },
-      guides.length && {
+      ...contentSchema,
+      !c && guides.length && {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
         mainEntity: guides.map((g) => ({ '@type': 'Question', name: plain(g.title), acceptedAnswer: { '@type': 'Answer', text: plain(g.answer) } })),
@@ -359,9 +380,10 @@ async function main() {
   <h1>${esc(t.name)}</h1>
   <p>${esc(t.description)}</p>
   <p>${t.status === 'real' ? 'Runs entirely in your browser. Your file is never uploaded.' : t.status === 'best-effort' ? 'Best-effort conversion in your browser.' : 'Runs on our server: the file is sent over HTTPS, converted with LibreOffice or Calibre, returned and deleted immediately. Free for 5 files a month; Pro includes 300.'}</p>
+  ${contentHtml}
   ${guides.length ? `<h2>Guides that use this tool</h2><ul>${guides.map((g) => `<li><a href="${href(`/blog/${g.cluster}/${g.slug}`)}">${esc(g.title)}</a></li>`).join('')}</ul>` : ''}
 </main>`
-    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: `${t.name} | ${t.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}`, description: `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
+    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: c?.metaTitle || `${t.name} | ${t.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}`, description: c?.metaDescription || `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
     count++
   }
 

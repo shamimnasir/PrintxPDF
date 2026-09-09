@@ -2,7 +2,9 @@ import { lazy, Suspense } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useTool, useVisibleTools } from './useTools'
 import { postsForTool } from '../../content'
-import { breadcrumbSchema, softwareSchema, useSeo } from '../../lib/seo'
+import { breadcrumbSchema, faqSchema, howToSchema, softwareSchema, useSeo } from '../../lib/seo'
+import { isFilled, toolContent } from '../../content/tools'
+import { ToolContentSections, stepAnchor } from './ToolContent'
 import { StatusBadge, ToolCard } from './ToolCard'
 import { GenericTool } from './GenericTool'
 import './tools.css'
@@ -29,12 +31,14 @@ export default function ToolPage() {
   const key = slug // remounts the tool UI when the route changes
   const allTools = useVisibleTools()
   const guides = postsForTool(slug).slice(0, 4)
+  const content = toolContent(slug)
+  const c = isFilled(content) ? content : undefined
 
   useSeo({
-    title: tool ? `${tool.name}, ${tool.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}` : 'Tool not found',
-    description: tool ? `${tool.description} ${tool.status === 'server' ? 'Free for 5 files a month, no sign-up.' : 'No upload, no sign-up: it runs entirely in your browser.'}`.slice(0, 158) : '',
+    title: tool ? c?.metaTitle || `${tool.name} | ${tool.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}` : 'Tool not found',
+    description: tool ? c?.metaDescription || `${tool.description} ${tool.status === 'server' ? 'Free for 5 files a month, no sign-up.' : 'No upload, no sign-up: it runs entirely in your browser.'}`.slice(0, 158) : '',
     path: `/tools/${slug}`,
-    keywords: tool ? [tool.name.toLowerCase(), `${tool.name.toLowerCase()} free`, `${tool.name.toLowerCase()} online`, tool.status === 'server' ? 'online converter' : 'no upload'] : [],
+    keywords: tool ? [...(c?.keywords || []), tool.name.toLowerCase(), `${tool.name.toLowerCase()} free`, `${tool.name.toLowerCase()} online`] : [],
     noindex: !tool,
     schema: tool
       ? [
@@ -43,7 +47,8 @@ export default function ToolPage() {
             { name: 'Tools', path: '/tools' },
             { name: tool.name, path: `/tools/${tool.slug}` },
           ]),
-          softwareSchema({ name: tool.name, description: tool.description, path: `/tools/${tool.slug}` }),
+          softwareSchema({ name: tool.name, description: c?.metaDescription || tool.description, path: `/tools/${tool.slug}` }),
+          ...(c ? [faqSchema(c.faqs), howToSchema({ title: c.howHeading || `How to use ${tool.name}`, description: c.answer, steps: c.how, path: `/tools/${tool.slug}`, anchors: c.how.map((_, i) => stepAnchor(i + 1)) })] : []),
         ]
       : [],
   })
@@ -90,6 +95,8 @@ export default function ToolPage() {
         {tool.custom === 'unzip' && <UnzipTool key={key} />}
         {!tool.custom && <GenericTool key={key} tool={tool} />}
       </Suspense>
+
+      {c && <ToolContentSections tool={tool} c={c} />}
 
       {guides.length > 0 && (
         <div className="section-tight" style={{ marginTop: '3rem' }}>

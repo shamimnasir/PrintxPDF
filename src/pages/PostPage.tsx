@@ -15,7 +15,7 @@ const slugify = (s: string) =>
     .replace(/^-+|-+$/g, '')
 
 /** Renders inline markup: **bold**, [text](/path) and `code`. Content is authored by us, not user input. */
-function Rich({ x }: { x: string }) {
+export function Rich({ x }: { x: string }) {
   const nodes: React.ReactNode[] = []
   // link paths may contain balanced parentheses, e.g. /blog/x/y(2)
   const re = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(((?:[^()]|\([^()]*\))+)\)|`([^`]+)`/g

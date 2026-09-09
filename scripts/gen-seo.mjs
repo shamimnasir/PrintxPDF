@@ -21,7 +21,8 @@ async function loadData() {
   await writeFile(
     entry,
     `export { CLUSTERS, ALL_POSTS } from ${JSON.stringify(path.join(ROOT, 'src/content/index.ts'))}
-     export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}`,
+     export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
+     export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}`,
   )
   await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
   const mod = await import(pathToFileURL(out).href)
@@ -42,7 +43,7 @@ async function siteConfig() {
 const iso = (d) => new Date(d).toISOString().slice(0, 10)
 
 async function main() {
-  const { CLUSTERS, ALL_POSTS, TOOLS } = await loadData()
+  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT } = await loadData()
   const cfg = await siteConfig()
   const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.com').replace(/\/$/, '')
   const hiddenTools = new Set(cfg?.tools?.hidden || [])
@@ -128,7 +129,7 @@ Written and maintained by ${authorName}, founder of PrintxPDF: ${SITE}${authorRo
 
 ## Tools
 ${TOOLS.filter((t) => !hiddenTools.has(t.slug) && (t.status === 'real' || t.status === 'server'))
-  .map((t) => `- [${t.name}](${SITE}/tools/${t.slug}): ${t.short}. ${t.description}`)
+  .map((t) => `- [${t.name}](${SITE}/tools/${t.slug}): ${t.short}. ${TOOL_CONTENT[t.slug]?.answer?.trim() || t.description}`)
   .join('\n')}
 
 ## Guides
