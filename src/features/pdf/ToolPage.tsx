@@ -12,6 +12,16 @@ const ReaderTool = lazy(() => import('./custom/ReaderTool'))
 const QrTool = lazy(() => import('./custom/QrTool'))
 const OcrTool = lazy(() => import('./custom/OcrTool'))
 const OrganizeTool = lazy(() => import('./custom/OrganizeTool'))
+const EditTool = lazy(() => import('./custom/EditTool'))
+const FormsTool = lazy(() => import('./custom/FormsTool'))
+const RedactTool = lazy(() => import('./custom/RedactTool'))
+const CompareTool = lazy(() => import('./custom/CompareTool'))
+const ScanTool = lazy(() => import('./custom/ScanTool'))
+// file and image tools live outside the PDF feature so their decoders never load with it
+const ImageConvertTool = lazy(() => import('../files/ImageConvertTool'))
+const CompressImageTool = lazy(() => import('../files/CompressImageTool'))
+const ZipTool = lazy(() => import('../files/ZipTool'))
+const UnzipTool = lazy(() => import('../files/UnzipTool'))
 
 export default function ToolPage() {
   const { slug = '' } = useParams()
@@ -69,6 +79,15 @@ export default function ToolPage() {
         {tool.custom === 'qr' && <QrTool key={key} />}
         {tool.custom === 'ocr' && <OcrTool key={key} />}
         {tool.custom === 'organize' && <OrganizeTool key={key} />}
+        {tool.custom === 'edit' && <EditTool key={key} />}
+        {tool.custom === 'forms' && <FormsTool key={key} />}
+        {tool.custom === 'redact' && <RedactTool key={key} />}
+        {tool.custom === 'compare' && <CompareTool key={key} />}
+        {tool.custom === 'scan' && <ScanTool key={key} />}
+        {tool.custom === 'image' && <ImageConvertTool key={key} />}
+        {tool.custom === 'compress-image' && <CompressImageTool key={key} />}
+        {tool.custom === 'zip' && <ZipTool key={key} />}
+        {tool.custom === 'unzip' && <UnzipTool key={key} />}
         {!tool.custom && <GenericTool key={key} tool={tool} />}
       </Suspense>
 

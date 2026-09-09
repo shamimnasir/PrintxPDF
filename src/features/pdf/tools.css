@@ -287,3 +287,322 @@
   max-width: 320px;
   image-rendering: pixelated;
 }
+
+/* ------------------------------------------------------------------
+   Bespoke tools: edit, forms, redact, compare, scan
+   All colours, borders and shadows go through the design tokens so the
+   three presets keep working.
+   ------------------------------------------------------------------ */
+
+/* the segmented control lives in webclip/editor.css too; repeated here so a
+   tool page styles it correctly without loading the editor's stylesheet */
+.seg {
+  display: flex;
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+}
+.seg button {
+  flex: 1;
+  padding: 0.45rem 0.4rem;
+  background: var(--card);
+  border: 0;
+  border-right: var(--bw-thin) solid var(--line);
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: var(--tt-ui);
+  cursor: pointer;
+  color: var(--fg);
+}
+.seg button:last-child {
+  border-right: 0;
+}
+.seg button.on {
+  background: var(--acid);
+  color: var(--acid-fg);
+}
+
+/* shared notice block */
+.tool-notice {
+  border: var(--bw) solid var(--line);
+  border-left-width: calc(var(--bw) * 3);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  color: var(--fg);
+  padding: 0.9rem 1rem;
+  font-size: 0.88rem;
+}
+.tool-notice.alarm {
+  border-left-color: var(--alarm);
+}
+.tool-notice strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.tool-notice p {
+  margin: 0;
+  color: var(--fg-muted);
+}
+
+.color-input {
+  width: 46px;
+  height: 34px;
+  padding: 2px;
+  border: var(--bw-thin) solid var(--line);
+  border-radius: calc(var(--radius) / 2);
+  background: var(--card);
+  cursor: pointer;
+}
+
+/* ---- edit ---- */
+.edit-tools {
+  display: flex;
+  gap: 0;
+  border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  width: fit-content;
+}
+.edit-tool {
+  width: 44px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-right: var(--bw-thin) solid var(--line);
+  background: transparent;
+  color: var(--fg);
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.edit-tool:last-child {
+  border-right: 0;
+}
+.edit-tool.on {
+  background: var(--acid);
+  color: var(--acid-fg);
+}
+.edit-tool:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.edit-stage {
+  position: relative;
+  display: inline-block;
+  border: var(--bw) solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  max-width: 100%;
+  background: #fff;
+  touch-action: none;
+  user-select: none;
+}
+.edit-stage canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+.edit-stage[data-mode='text'],
+.edit-stage[data-mode='image'] {
+  cursor: copy;
+}
+.edit-stage[data-mode='rect'],
+.edit-stage[data-mode='ink'] {
+  cursor: crosshair;
+}
+.edit-stage[data-mode='erase'] {
+  cursor: not-allowed;
+}
+.edit-item {
+  position: absolute;
+  box-sizing: border-box;
+}
+.edit-item.text {
+  white-space: pre;
+  line-height: 1.2;
+  transform-origin: top left;
+}
+.edit-item.sel {
+  outline: var(--bw-thin) dashed var(--alarm);
+  outline-offset: 2px;
+}
+.edit-item.draft {
+  pointer-events: none;
+}
+.edit-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+.edit-handle {
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
+  width: 14px;
+  height: 14px;
+  background: var(--acid);
+  border: var(--bw-thin) solid var(--line);
+  cursor: nwse-resize;
+}
+.edit-ink {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* ---- forms ---- */
+.form-field {
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ---- redact ---- */
+.redact-stage {
+  position: relative;
+  display: inline-block;
+  border: var(--bw) solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  max-width: 100%;
+  background: #fff;
+  cursor: crosshair;
+  touch-action: none;
+  user-select: none;
+}
+.redact-stage canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+.redact-box {
+  position: absolute;
+  background: #000;
+  border: var(--bw-thin) solid var(--alarm);
+}
+.redact-box.draft {
+  opacity: 0.55;
+  pointer-events: none;
+}
+.redact-box .del {
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  background: var(--alarm);
+  color: var(--paper);
+  border: var(--bw-thin) solid var(--line);
+  font-size: 0.7rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* ---- compare ---- */
+.cmp-stage {
+  border: var(--bw) solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  padding: 0.75rem;
+  overflow: auto;
+  max-height: 78vh;
+  min-height: 200px;
+}
+.cmp-stage canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: var(--bw-thin) solid var(--line);
+  background: #fff;
+}
+
+/* ---- scan ---- */
+.scan-cam {
+  border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: var(--bg-2);
+  overflow: hidden;
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+}
+.scan-cam video {
+  width: 100%;
+  max-height: 60vh;
+  display: block;
+  background: var(--ink);
+  object-fit: contain;
+}
+.scan-cam-empty {
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+.film {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.film-item {
+  position: relative;
+  border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.film-item img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--bg-3);
+  background: #fff;
+}
+.film-item .n {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: var(--acid);
+  color: var(--acid-fg);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border: var(--bw-thin) solid var(--line);
+}
+.film-acts {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+}
+.film-acts button {
+  width: 28px;
+  height: 28px;
+  border: var(--bw-thin) solid var(--line);
+  background: var(--card);
+  color: var(--fg);
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.film-acts button:hover:not(:disabled) {
+  background: var(--sky);
+  color: var(--ink);
+}
+.film-acts button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
