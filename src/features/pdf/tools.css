@@ -12,6 +12,7 @@
   background: var(--acid);
   color: var(--acid-fg);
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   font-family: var(--font-display);
   font-size: 1.6rem;
@@ -42,6 +43,7 @@
   align-items: center;
   gap: 0.75rem;
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   background: var(--sky);
   color: var(--ink);
   padding: 0.6rem 0.9rem;
@@ -86,6 +88,7 @@
 }
 .thumb {
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   background: var(--card);
   padding: 0.5rem;
   position: relative;
@@ -113,7 +116,7 @@
   font-family: var(--font-mono);
   font-size: 0.7rem;
   padding: 0.1rem 0.4rem;
-  border: 2px solid var(--line);
+  border: var(--bw-thin) solid var(--line);
 }
 .thumb .acts {
   display: flex;
@@ -124,7 +127,7 @@
 .thumb .acts button {
   width: 28px;
   height: 28px;
-  border: 2px solid var(--line);
+  border: var(--bw-thin) solid var(--line);
   background: var(--card);
   cursor: pointer;
   font-weight: 900;
@@ -161,7 +164,7 @@
 .reader-side canvas {
   width: 100%;
   height: auto;
-  border: 2px solid var(--line);
+  border: var(--bw-thin) solid var(--line);
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
@@ -175,7 +178,7 @@
 }
 .reader-main canvas {
   margin: 0 auto 1rem;
-  border: 2px solid var(--line);
+  border: var(--bw-thin) solid var(--line);
   box-shadow: var(--shadow-sm);
   background: #fff;
 }
@@ -204,11 +207,18 @@
 /* sign */
 .sig-pad {
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   background: #fff;
   touch-action: none;
   width: 100%;
   height: 160px;
   cursor: crosshair;
+}
+/* typed / uploaded signature previews */
+.sig-thumb {
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
 }
 .sign-stage {
   position: relative;
@@ -218,14 +228,16 @@
   max-width: 100%;
   cursor: copy;
   background: #fff;
+  border-radius: var(--radius);
 }
 .sign-stage canvas {
   max-width: 100%;
   height: auto;
+  border-radius: inherit;
 }
 .sig-placed {
   position: absolute;
-  border: 2px dashed var(--alarm);
+  border: var(--bw-thin) dashed var(--alarm);
   cursor: move;
   user-select: none;
 }
@@ -242,7 +254,7 @@
   height: 22px;
   background: var(--alarm);
   color: #fff;
-  border: 2px solid var(--ink);
+  border: var(--bw-thin) solid var(--ink);
   font-size: 0.7rem;
   font-weight: 900;
   cursor: pointer;
@@ -256,13 +268,14 @@
   width: 14px;
   height: 14px;
   background: var(--acid);
-  border: 2px solid var(--ink);
+  border: var(--bw-thin) solid var(--ink);
   cursor: nwse-resize;
 }
 
 /* qr */
 .qr-preview {
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
   background: #fff;
   padding: 1rem;

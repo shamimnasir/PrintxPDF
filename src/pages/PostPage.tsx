@@ -2,7 +2,8 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { useAllPosts, useCluster, usePost } from '../content/usePosts'
 import type { Block } from '../content/types'
 import { useTool } from '../features/pdf/useTools'
-import { articleSchema, breadcrumbSchema, faqSchema, howToSchema, useSeo } from '../lib/seo'
+import { articleSchema, authorPath, breadcrumbSchema, faqSchema, howToSchema, useSeo } from '../lib/seo'
+import { useSiteConfig } from '../admin/useSiteConfig'
 import '../content/blog.css'
 
 const slugify = (s: string) =>
@@ -167,6 +168,7 @@ export default function PostPage() {
   const post = usePost(postSlug)
   const cluster = useCluster(clusterSlug)
   const allPosts = useAllPosts()
+  const cfg = useSiteConfig()
   const valid = post && cluster && post.cluster === cluster.slug
   const path = `/blog/${clusterSlug}/${postSlug}`
   // a post can document more than one procedure; HowTo gets all of them, in order
@@ -201,6 +203,7 @@ export default function PostPage() {
               keywords: [post.primaryKeyword, ...post.secondaryKeywords, ...post.entities],
               answer: post.answer,
               readMinutes: post.readMinutes,
+              author: cfg.author,
             }),
             ...(post.faqs.length ? [faqSchema(post.faqs)] : []),
             ...(allSteps.length ? [howToSchema({ title: post.title, description: post.metaDescription, steps: allSteps, path, anchors: stepAnchors })] : []),
@@ -225,6 +228,9 @@ export default function PostPage() {
           <header className="post-head">
             <h1>{post.title}</h1>
             <div className="post-meta">
+              <span>
+                By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+              </span>
               <span>Updated {new Date(post.updated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
               <span>{post.readMinutes} min read</span>
               <span>{cluster.name}</span>

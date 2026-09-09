@@ -300,7 +300,7 @@ export const browserExtensions: Cluster = {
         { t: 'p', x: 'A bookmarklet cannot do that. The code is stored in your own bookmark, in plain text, and it only executes on the page you are looking at when you click it. If you want to know what it does, you can read it in ten seconds.' },
         { t: 'h2', x: 'A real bookmarklet' },
         { t: 'p', x: 'Here is the entire PrintxPDF bookmarklet. It takes the address of the page you are on, URL-encodes it, and opens the cleaner with that page loaded.' },
-        { t: 'code', x: "javascript:(function(){\n  window.open(\n    'https://printxpdf.vercel.app/print?url=' + encodeURIComponent(location.href)\n  );\n})()" },
+        { t: 'code', x: "javascript:(function(){\n  window.open(\n    'https://printxpdf.com/print?url=' + encodeURIComponent(location.href)\n  );\n})()" },
         { t: 'p', x: 'That is all of it. No network calls of its own, no storage, no listeners left behind. When you paste it into a bookmark it must be on one line, which is how the ready-made button supplies it.' },
         { t: 'h2', x: 'How to install a bookmarklet' },
         {

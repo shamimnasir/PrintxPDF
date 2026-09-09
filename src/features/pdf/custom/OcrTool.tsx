@@ -3,6 +3,7 @@ import { Dropzone, FileList } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/Toast'
 import { ProgressBar, ResultList } from '../../../components/ui/ResultList'
 import type { Output } from '../engines'
+import { useUser } from '../../account/useUser'
 
 const LANGS: [string, string][] = [
   ['eng', 'English'],
@@ -21,6 +22,7 @@ const LANGS: [string, string][] = [
 
 export default function OcrTool() {
   const { toast } = useToast()
+  const user = useUser()
   const [files, setFiles] = useState<File[]>([])
   const [lang, setLang] = useState('eng')
   const [busy, setBusy] = useState(false)
@@ -36,7 +38,7 @@ export default function OcrTool() {
     setProgress({ f: 0, msg: 'Loading language data (first run downloads ~10 MB)…' })
     try {
       const { ocr } = await import('../engines')
-      const r = await ocr(files[0], lang, (f, msg) => setProgress({ f, msg }))
+      const r = await ocr(files[0], lang, (f, msg) => setProgress({ f, msg }), user && user.plan !== 'free' ? 200 : 30)
       setText(r.text)
       setOutputs(r.outputs)
       toast(r.note ? `OCR complete. ${r.note}` : 'OCR complete')
@@ -85,8 +87,7 @@ export default function OcrTool() {
           {busy ? 'Recognizing…' : 'Run OCR'}
         </button>
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-          Powered by Tesseract compiled to WebAssembly. Language packs download once and are cached. PDFs are capped at
-          30 pages in the browser. Output: a .txt and a searchable PDF with an invisible text layer.
+          Powered by Tesseract compiled to WebAssembly. Language packs download once and are cached. PDFs are capped at 30 pages per file on the free plan and 200 on Pro. Output: a .txt and a searchable PDF with an invisible text layer.
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
-// All PDF operations run in the browser. Nothing is uploaded anywhere.
+// Every operation here runs in the browser and uploads nothing. The four server-backed
+// conversions (PowerPoint and ebook formats) live in src/lib/api.ts instead.
 import { PDFDocument, degrees, rgb, StandardFonts, PageSizes } from 'pdf-lib'
 import { loadPdf, renderPageToCanvas, canvasToBlob, extractText } from '../../lib/pdfjs'
 import { readAsDataURL, stripExt } from '../../lib/download'
@@ -424,7 +425,7 @@ export async function flatten(file: File): Promise<Output[]> {
 // ---------- OCR ----------
 const OCR_PAGE_CAP = 30
 
-export async function ocr(file: File, lang: string, onProgress?: Progress): Promise<{ text: string; outputs: Output[]; note?: string }> {
+export async function ocr(file: File, lang: string, onProgress?: Progress, pageCap = OCR_PAGE_CAP): Promise<{ text: string; outputs: Output[]; note?: string }> {
   const Tesseract = await import('tesseract.js')
   const worker = await Tesseract.createWorker(lang, 1, {
     logger: (m: { status: string; progress: number }) => {
@@ -434,8 +435,8 @@ export async function ocr(file: File, lang: string, onProgress?: Progress): Prom
   })
   const isPdf = /pdf$/i.test(file.type) || /\.pdf$/i.test(file.name)
   const pdf = isPdf ? await loadPdf(await readAsArrayBuffer(file)) : null
-  const total = pdf ? Math.min(pdf.numPages, OCR_PAGE_CAP) : 1
-  const note = pdf && pdf.numPages > OCR_PAGE_CAP ? `Only the first ${OCR_PAGE_CAP} of ${pdf.numPages} pages were processed in the browser.` : undefined
+  const total = pdf ? Math.min(pdf.numPages, pageCap) : 1
+  const note = pdf && pdf.numPages > pageCap ? `Only the first ${pageCap} of ${pdf.numPages} pages were processed in the browser.` : undefined
 
   const texts: string[] = []
   const searchable = await PDFDocument.create()

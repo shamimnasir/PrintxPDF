@@ -3,7 +3,8 @@ import { CLUSTERS } from '../content'
 import { useCluster } from '../content/usePosts'
 import { useTool } from '../features/pdf/useTools'
 import { ToolCard } from '../features/pdf/ToolCard'
-import { breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
+import { authorPath, breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
+import { useSiteConfig } from '../admin/useSiteConfig'
 import '../content/blog.css'
 import '../features/pdf/tools.css'
 
@@ -15,6 +16,7 @@ function ClusterTool({ slug }: { slug: string }) {
 export default function ClusterPage() {
   const { cluster: slug = '' } = useParams()
   const cluster = useCluster(slug)
+  const cfg = useSiteConfig()
 
   useSeo({
     title: cluster?.metaTitle || 'Not found',
@@ -58,6 +60,12 @@ export default function ClusterPage() {
       <div style={{ maxWidth: 780 }}>
         <span className="eyebrow">{cluster.posts.length}-part guide</span>
         <h1>{cluster.title}</h1>
+        <div className="post-meta">
+          <span>
+            By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+          </span>
+          <span>{cluster.posts.length} guides</span>
+        </div>
         <div className="post-answer">
           <span className="label">Short answer</span>
           <p>{cluster.answer}</p>

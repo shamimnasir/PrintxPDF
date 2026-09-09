@@ -199,7 +199,7 @@ export default function WebClipPage() {
           </div>
         )}
         {error && (
-          <div className="card" style={{ marginTop: '1.25rem', borderColor: 'var(--alarm)', boxShadow: '6px 6px 0 0 var(--alarm)' }}>
+          <div className="card card-alarm" style={{ marginTop: '1.25rem' }}>
             <h4 className="alarm">Could not clean that page</h4>
             <pre className="mono" style={{ whiteSpace: 'pre-wrap', fontSize: '0.8rem', margin: '0 0 1rem' }}>
               {error}

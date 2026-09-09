@@ -30,19 +30,18 @@ export default function Extensions() {
     <>
       <section className="section center">
         <div className="container">
-          <span className="eyebrow">Browser extension · demo listing</span>
+          <span className="eyebrow">Browser extension · not yet in the store</span>
           <h1 style={{ maxWidth: '16ch', margin: '0 auto 1rem' }}>
             Turn any page into a <span className="acid-mark">clean PDF.</span>
           </h1>
           <p className="lead" style={{ margin: '0 auto 2rem' }}>
             Print, PDF or screenshot the page you are on. No ads, no sidebars, no clutter. One click.
           </p>
-          <button className="btn btn-ink btn-lg" onClick={() => alert('Demo site: the extension is not published. The bookmarklet below does the same job today.')}>
+          <button className="btn btn-ink btn-lg" onClick={() => alert('The extension is not published yet. The bookmarklet below does the same job today.')}>
             Add to {b.name}
           </button>
           <div className="row" style={{ justifyContent: 'center', marginTop: '1rem', gap: '0.5rem' }}>
-            <span className="badge badge-acid">★ 4.8 · 12k reviews</span>
-            <span className="badge">1,000,000+ users</span>
+            <span className="badge">Coming to the stores</span>
           </div>
           <p className="muted" style={{ marginTop: '1rem' }}>{b.note}</p>
           <div className="row" style={{ justifyContent: 'center', gap: '0.5rem' }}>

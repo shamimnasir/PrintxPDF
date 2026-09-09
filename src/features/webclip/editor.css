@@ -35,12 +35,12 @@
   padding: 0.4rem 0.6rem;
   background: transparent;
   color: var(--paper);
-  border: 2px solid transparent;
+  border: var(--bw-thin) solid transparent;
   cursor: pointer;
   font-weight: 800;
   font-size: 0.65rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: calc(var(--ls-ui) * 4 / 3);
+  text-transform: var(--tt-ui);
   white-space: nowrap;
   position: relative;
 }
@@ -81,7 +81,7 @@
   color: #fff;
   font-size: 0.6rem;
   padding: 0 4px;
-  border-radius: 0;
+  border-radius: var(--radius-pill);
 }
 
 /* style menu */
@@ -93,6 +93,7 @@
   background: var(--card);
   color: var(--fg);
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1rem;
   width: 340px;
@@ -111,17 +112,18 @@
 }
 .seg {
   display: flex;
-  border: 2px solid var(--line);
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
 }
 .seg button {
   flex: 1;
   padding: 0.45rem 0.4rem;
   background: var(--card);
   border: 0;
-  border-right: 2px solid var(--line);
+  border-right: var(--bw-thin) solid var(--line);
   font-weight: 800;
   font-size: 0.75rem;
-  text-transform: uppercase;
+  text-transform: var(--tt-ui);
   cursor: pointer;
   color: var(--fg);
 }
@@ -140,8 +142,8 @@
   border-bottom: var(--bw) solid var(--line);
   font-weight: 800;
   font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  text-transform: var(--tt-ui);
+  letter-spacing: calc(var(--ls-wide) / 2);
   padding: 0.4rem 0;
 }
 .ed-hint.danger {
@@ -441,6 +443,7 @@
   height: 56px;
   border: 6px solid var(--line);
   border-top-color: var(--acid);
+  border-radius: var(--radius-pill);
   margin: 0 auto 1rem;
   animation: spin 0.8s linear infinite;
 }

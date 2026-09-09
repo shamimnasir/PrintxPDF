@@ -1,7 +1,45 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { trackPageview } from './config'
+import { isBooted, trackPageview } from './config'
 import { useSiteConfig } from './useSiteConfig'
+import { DESIGNS, fontHref, isDesignId, type DesignId } from '../design/presets'
+
+/** `?design=paper` previews a preset without publishing it; the choice sticks for the tab. */
+export function previewDesign(): DesignId | null {
+  try {
+    const q = new URLSearchParams(window.location.search).get('design')
+    if (q !== null) {
+      if (isDesignId(q)) {
+        sessionStorage.setItem('pxp:design', q)
+        return q
+      }
+      sessionStorage.removeItem('pxp:design')
+      return null
+    }
+    const s = sessionStorage.getItem('pxp:design')
+    return isDesignId(s) ? s : null
+  } catch {
+    return null
+  }
+}
+
+/** Sets the html attribute the preset stylesheets key off, and loads that preset's fonts. */
+export function applyDesign(id: DesignId) {
+  document.documentElement.setAttribute('data-design', id)
+  const href = fontHref(id)
+  let link = document.getElementById('pxp-design-font') as HTMLLinkElement | null
+  if (!href) {
+    link?.remove()
+    return
+  }
+  if (!link) {
+    link = document.createElement('link')
+    link.id = 'pxp-design-font'
+    link.rel = 'stylesheet'
+    document.head.appendChild(link)
+  }
+  if (link.href !== href) link.href = href
+}
 
 /** Relative luminance, used to keep a light "ink" from destroying dark mode. */
 function luminance(hex: string) {
@@ -44,7 +82,12 @@ export function RuntimeEffects() {
   // ---------- theme tokens ----------
   useEffect(() => {
     const r = document.documentElement
-    const t = cfg.theme
+    const preview = previewDesign()
+    const design: DesignId = preview ?? (isDesignId(cfg.theme.design) ? cfg.theme.design : 'blocks')
+    // a preview swaps in the preset's own colours and shape; the admin draft is untouched
+    const t = preview ? { ...cfg.theme, ...DESIGNS[preview].theme } : cfg.theme
+    // before the published config arrives the prerendered attribute is the truth, so leave it
+    if (preview || isBooted()) applyDesign(design)
     r.style.setProperty('--acid', t.accent)
     r.style.setProperty('--acid-fg', t.accentFg)
     r.style.setProperty('--alarm', t.alarm)
@@ -58,7 +101,7 @@ export function RuntimeEffects() {
     return () => {
       ;['--acid', '--acid-fg', '--alarm', '--bw', '--radius', '--ink', '--line-custom'].forEach((k) => r.style.removeProperty(k))
     }
-  }, [cfg.theme])
+  }, [cfg.theme, search])
 
   // ---------- custom CSS ----------
   useEffect(() => {

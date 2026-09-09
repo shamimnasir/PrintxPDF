@@ -7,6 +7,7 @@ import { useToast } from '../components/ui/Toast'
 import { downloadBlob } from '../lib/download'
 import { TOOLS } from '../features/pdf/toolsMeta'
 import { ALL_POSTS, CLUSTERS } from '../content'
+import { DESIGNS, DESIGN_IDS } from '../design/presets'
 
 type P = { cfg: SiteConfig }
 
@@ -115,6 +116,21 @@ export function General({ cfg }: P) {
         <Text label="Footer note" value={cfg.site.footerNote} onChange={(v) => set('site', { footerNote: v })} />
       </Card>
 
+      <Card title="Author & founder" desc="Credited on every guide, on the About page and in structured data (Article.author, Organization.founder). Profile links become sameAs, which helps search engines connect the name to a real person.">
+        <Text label="Name" value={cfg.author.name} onChange={(v) => set('author', { name: v })} hint="Changing the name changes the author page URL (/author/<name>)." />
+        <Text label="Title" value={cfg.author.title} onChange={(v) => set('author', { title: v })} />
+        <Area label="Short bio" rows={3} value={cfg.author.bio} onChange={(v) => set('author', { bio: v })} />
+        <Text label="Photo URL" value={cfg.author.photo} onChange={(v) => set('author', { photo: v })} placeholder="https://…/photo.jpg" hint="Square, at least 400×400. Leave empty to show none." />
+        <Text label="LinkedIn" value={cfg.author.links.linkedin} onChange={(v) => set('author', { links: { ...cfg.author.links, linkedin: v } })} placeholder="https://www.linkedin.com/in/…" />
+        <Text label="X / Twitter" value={cfg.author.links.x} onChange={(v) => set('author', { links: { ...cfg.author.links, x: v } })} placeholder="https://x.com/…" />
+        <Text label="GitHub" value={cfg.author.links.github} onChange={(v) => set('author', { links: { ...cfg.author.links, github: v } })} placeholder="https://github.com/…" />
+        <Text label="Website" value={cfg.author.links.website} onChange={(v) => set('author', { links: { ...cfg.author.links, website: v } })} placeholder="https://…" />
+      </Card>
+
+      <Card title="Billing" desc="Shown on the Subscription page for people who lost the browser they subscribed in.">
+        <Text label="Stripe customer portal login link" value={cfg.billing.portalLoginUrl} onChange={(v) => set('billing', { portalLoginUrl: v })} placeholder="https://billing.stripe.com/p/login/…" hint="Stripe → Settings → Customer portal → 'Customer portal login page'. Stripe emails a sign-in link to the address the customer paid with." />
+      </Card>
+
       <Card title="Announcement bar" desc="A strip above the header. Good for launches and notices.">
         <Toggle label="Show the announcement bar" value={cfg.announcement.enabled} onChange={(v) => set('announcement', { enabled: v })} />
         <Text label="Text" value={cfg.announcement.text} onChange={(v) => set('announcement', { text: v })} />
@@ -131,6 +147,37 @@ export function Appearance({ cfg }: P) {
   const set = useSet()
   return (
     <>
+      <Card title="Design" desc="Three complete looks. Choosing one also sets its colours and shape below, which you can then adjust. To preview a design without publishing it, add ?design=paper (or studio, blocks) to any page URL.">
+        <div className="grid grid-3">
+          {DESIGN_IDS.map((id) => {
+            const d = DESIGNS[id]
+            const on = cfg.theme.design === id
+            return (
+              <button
+                key={id}
+                type="button"
+                className="card card-flat"
+                aria-pressed={on}
+                onClick={() => set('theme', { design: id, ...d.theme })}
+                style={{ textAlign: 'left', cursor: 'pointer', borderColor: on ? 'var(--acid)' : undefined, boxShadow: on ? 'var(--shadow-acid)' : undefined }}
+              >
+                <div style={{ background: d.swatch.bg, border: `1px solid ${d.swatch.ink}`, padding: '0.75rem', marginBottom: '0.6rem', borderRadius: d.theme.radius }}>
+                  <div style={{ fontFamily: d.swatch.fontDisplay, color: d.swatch.ink, fontWeight: 800, fontSize: '1.4rem', lineHeight: 1 }}>Aa</div>
+                  <div style={{ display: 'flex', gap: 4, marginTop: 8 }}>
+                    {[d.swatch.ink, d.swatch.accent, d.swatch.card].map((c, i) => (
+                      <span key={i} style={{ width: 16, height: 16, background: c, border: `1px solid ${d.swatch.ink}`, display: 'inline-block', borderRadius: d.theme.radius / 2 }} />
+                    ))}
+                  </div>
+                </div>
+                <strong>{d.name}</strong>
+                {on && <span className="badge badge-acid" style={{ marginLeft: '0.5rem' }}>Live</span>}
+                <div className="muted" style={{ fontSize: '0.8rem', marginTop: '0.25rem' }}>{d.tagline}</div>
+              </button>
+            )
+          })}
+        </div>
+      </Card>
+
       <Card title="Colours" desc="Applied live as CSS variables. The accent drives buttons, links, badges and highlights.">
         <Color label="Accent" value={cfg.theme.accent} onChange={(v) => set('theme', { accent: v })} />
         <Color label="Text on accent" value={cfg.theme.accentFg} onChange={(v) => set('theme', { accentFg: v })} hint="Keep contrast at 4.5:1 or better against the accent." />
@@ -418,7 +465,7 @@ export function Analytics({ cfg }: P) {
     <>
       <Card title="Connect an analytics provider" desc="Scripts are injected on every page as soon as you fill in an ID. Leave a field blank to disable that provider.">
         <Text label="Google Analytics 4 measurement ID" mono value={cfg.analytics.ga4Id} onChange={(v) => set('analytics', { ga4Id: v })} placeholder="G-XXXXXXXXXX" />
-        <Text label="Plausible domain" mono value={cfg.analytics.plausibleDomain} onChange={(v) => set('analytics', { plausibleDomain: v })} placeholder="printxpdf.vercel.app" />
+        <Text label="Plausible domain" mono value={cfg.analytics.plausibleDomain} onChange={(v) => set('analytics', { plausibleDomain: v })} placeholder="printxpdf.com" />
         <Text label="Umami website ID" mono value={cfg.analytics.umamiId} onChange={(v) => set('analytics', { umamiId: v })} />
         <Text label="Umami script URL" mono value={cfg.analytics.umamiSrc} onChange={(v) => set('analytics', { umamiSrc: v })} />
         <Toggle label="Respect Do Not Track" value={cfg.analytics.respectDnt} onChange={(v) => set('analytics', { respectDnt: v })} hint="Skips all analytics for visitors who enabled the browser setting." />

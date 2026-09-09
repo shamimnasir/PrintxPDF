@@ -2,7 +2,7 @@
 
 Strip the ads, keep the words. A browser-only print-friendly and PDF toolkit with an original brand and a bold cobalt-on-white design. Every tool runs client-side — nothing is uploaded to a server — so the whole thing ships as static files.
 
-**Live:** https://printxpdf.vercel.app
+**Live:** https://printxpdf.com
 
 ---
 

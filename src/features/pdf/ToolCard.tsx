@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { STATUS_LABEL, type ToolMeta } from './toolsMeta'
 
 export function StatusBadge({ status }: { status: ToolMeta['status'] }) {
-  const cls = status === 'real' ? 'badge-acid' : status === 'best-effort' ? 'badge-sky' : 'badge-alarm'
+  const cls = status === 'real' ? 'badge-acid' : status === 'best-effort' ? 'badge-sky' : 'badge-ink'
   return <span className={`badge ${cls}`}>{STATUS_LABEL[status]}</span>
 }
 

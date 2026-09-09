@@ -23,8 +23,27 @@ export type SiteConfig = {
     github: string
     footerNote: string
   }
+  /** the person credited on every guide and in Organization.founder */
+  author: {
+    name: string
+    title: string
+    bio: string
+    photo: string
+    links: { linkedin: string; x: string; github: string; website: string }
+  }
   announcement: { enabled: boolean; text: string; linkText: string; linkUrl: string; dismissible: boolean }
-  theme: { accent: string; accentFg: string; ink: string; paper: string; alarm: string; defaultMode: 'light' | 'dark' | 'system'; borderWidth: number; radius: number }
+  theme: {
+    accent: string
+    accentFg: string
+    ink: string
+    paper: string
+    alarm: string
+    defaultMode: 'light' | 'dark' | 'system'
+    borderWidth: number
+    radius: number
+    /** site-wide look; see src/design/presets.ts */
+    design: 'blocks' | 'paper' | 'studio'
+  }
   home: {
     eyebrow: string
     headline1: string
@@ -56,6 +75,7 @@ export type SiteConfig = {
   analytics: { ga4Id: string; plausibleDomain: string; umamiId: string; umamiSrc: string; localStats: boolean; respectDnt: boolean }
   code: { headHtml: string; bodyEndHtml: string; css: string; js: string }
   content: { hidden: string[]; overrides: Record<string, PostOverride> }
+  billing: { portalLoginUrl: string }
 }
 
 export const DEFAULT_CONFIG: SiteConfig = {
@@ -64,20 +84,27 @@ export const DEFAULT_CONFIG: SiteConfig = {
   site: {
     name: 'PrintxPDF',
     tagline: 'Cut the clutter. Own your PDFs.',
-    description: 'Strip ads from web pages before you print, and run every common PDF job in your browser. Free, no upload, no sign-up.',
-    url: 'https://printxpdf.vercel.app',
+    description: 'Strip ads from web pages before you print, and run every common PDF job in your browser. Free, no sign-up, and your files stay on your computer.',
+    url: 'https://printxpdf.com',
     email: '',
     twitter: '',
     github: 'https://github.com/shamimnasir/PrintxPDF',
-    footerNote: 'Demo project. Not affiliated with any other print or PDF service.',
+    footerNote: 'Independent project. Not affiliated with any other print or PDF service.',
+  },
+  author: {
+    name: 'Nasir Uddin Shamim',
+    title: 'Founder, PrintxPDF',
+    bio: 'Nasir builds PrintxPDF and writes every guide on it: how to print web pages without the clutter and how to get PDFs to behave, using tools that keep your files on your own computer.',
+    photo: '',
+    links: { linkedin: '', x: '', github: '', website: '' },
   },
   announcement: { enabled: false, text: 'New: OCR now runs fully offline in your browser.', linkText: 'Try it', linkUrl: '/tools/ocr-pdf', dismissible: true },
-  theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0b0b0f', paper: '#ffffff', alarm: '#ff3b1f', defaultMode: 'system', borderWidth: 3, radius: 0 },
+  theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0b0b0f', paper: '#ffffff', alarm: '#ff3b1f', defaultMode: 'system', borderWidth: 3, radius: 0, design: 'blocks' },
   home: {
-    eyebrow: 'Free · No uploads · Works offline once loaded',
+    eyebrow: 'Free · Files stay on your device · Works offline once loaded',
     headline1: 'Cut the clutter.',
     headline2: 'Own your PDFs.',
-    lead: 'Strip ads and menus from any web page before you print. Then merge, split, sign, compress and convert PDFs, all inside your browser. Nothing is uploaded, ever.',
+    lead: 'Strip ads and menus from any web page before you print. Then merge, split, sign, compress and convert PDFs, all inside your browser. Nothing is uploaded, except four heavy conversions that say so on their page.',
     fileCardTitle: 'Work with a file',
     fileCardText: 'Compress, sign, convert, merge, organize',
     urlCardTitle: 'Print or PDF a web page',
@@ -104,6 +131,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
   analytics: { ga4Id: '', plausibleDomain: '', umamiId: '', umamiSrc: 'https://cloud.umami.is/script.js', localStats: true, respectDnt: true },
   code: { headHtml: '', bodyEndHtml: '', css: '', js: '' },
   content: { hidden: [], overrides: {} },
+  billing: { portalLoginUrl: '' },
 }
 
 const DRAFT_KEY = 'pxp:admin:config'
@@ -150,6 +178,9 @@ function sanitize(value: unknown): unknown {
 
 let published: SiteConfig = DEFAULT_CONFIG
 let current: SiteConfig = DEFAULT_CONFIG
+let booted = false
+/** True once the published config has been fetched (or found missing). */
+export const isBooted = () => booted
 const listeners = new Set<(c: SiteConfig) => void>()
 
 /** Persists a value, reporting failure instead of throwing (quota, private mode, blocked storage). */
@@ -188,6 +219,7 @@ export async function bootConfig(): Promise<SiteConfig> {
   } catch {
     // no published config yet — defaults are the site
   }
+  booted = true
   recompute()
   return current
 }

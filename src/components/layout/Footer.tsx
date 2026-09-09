@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useVisibleTools } from '../../features/pdf/useTools'
 import { useSiteConfig } from '../../admin/useSiteConfig'
 import { Wordmark, initial } from './Wordmark'
+import { authorPath } from '../../lib/seo'
 
 export function Footer() {
   const cfg = useSiteConfig()
@@ -10,7 +11,7 @@ export function Footer() {
     <footer className="footer">
       <div className="container grid grid-4">
         <div>
-          <div className="logo" style={{ color: 'var(--paper)', marginBottom: '0.75rem' }}>
+          <div className="logo" style={{ color: 'var(--footer-fg)', marginBottom: '0.75rem' }}>
             <span className="logo-mark">{initial(cfg.site.name)}</span>
             <Wordmark name={cfg.site.name} />
           </div>
@@ -19,6 +20,12 @@ export function Footer() {
           </p>
           <p className="mono" style={{ fontSize: '0.7rem', opacity: 0.6 }}>
             {cfg.site.footerNote}
+          </p>
+          <p className="mono" style={{ fontSize: '0.7rem', opacity: 0.6 }}>
+            Founded by{' '}
+            <Link to={authorPath(cfg.author)} style={{ color: 'inherit' }}>
+              {cfg.author.name}
+            </Link>
           </p>
         </div>
         <div>

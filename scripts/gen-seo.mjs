@@ -44,10 +44,12 @@ const iso = (d) => new Date(d).toISOString().slice(0, 10)
 async function main() {
   const { CLUSTERS, ALL_POSTS, TOOLS } = await loadData()
   const cfg = await siteConfig()
-  const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.vercel.app').replace(/\/$/, '')
+  const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.com').replace(/\/$/, '')
   const hiddenTools = new Set(cfg?.tools?.hidden || [])
   const hiddenPosts = new Set(cfg?.content?.hidden || [])
   const today = iso(Date.now())
+  const authorName = cfg?.author?.name || 'Nasir Uddin Shamim'
+  const authorRoute = `/author/${String(authorName).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`
 
   // ---------- sitemap ----------
   const urls = [
@@ -57,13 +59,14 @@ async function main() {
     { loc: '/blog', pri: '0.8', freq: 'weekly', mod: today },
     { loc: '/pricing', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/about', pri: '0.5', freq: 'yearly', mod: today },
+    { loc: authorRoute, pri: '0.5', freq: 'monthly', mod: today },
     { loc: '/api', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/wordpress', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/website-button', pri: '0.6', freq: 'monthly', mod: today },
     ...['chrome', 'firefox', 'safari', 'edge'].map((b) => ({ loc: `/extensions/${b}`, pri: '0.5', freq: 'monthly', mod: today })),
     { loc: '/privacy', pri: '0.3', freq: 'yearly', mod: today },
     { loc: '/terms', pri: '0.3', freq: 'yearly', mod: today },
-    ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}`, pri: t.status === 'real' ? '0.8' : '0.4', freq: 'monthly', mod: today })),
+    ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}`, pri: t.status === 'best-effort' ? '0.4' : '0.8', freq: 'monthly', mod: today })),
     ...CLUSTERS.map((c) => ({ loc: `/blog/${c.slug}`, pri: '0.7', freq: 'monthly', mod: today })),
     ...ALL_POSTS.filter((p) => !hiddenPosts.has(p.slug)).map((p) => ({ loc: `/blog/${p.cluster}/${p.slug}`, pri: '0.7', freq: 'monthly', mod: iso(p.updated) })),
   ]
@@ -118,10 +121,12 @@ Sitemap: ${SITE}/sitemap.xml
 
 > Free browser-based tools for printing web pages without ads and for working with PDF files. Every tool runs client-side in the visitor's browser using pdf-lib, pdf.js and Tesseract.js — files are never uploaded to a server.
 
-PrintxPDF has two halves: a web-page cleaner that extracts an article with Mozilla Readability and lets you delete anything left before printing or saving as PDF, and ${TOOLS.length} PDF tools covering merge, split, organise, compress, OCR, sign, watermark, convert and QR generation. Tools that genuinely require a server (PowerPoint, EPUB and MOBI conversion) are labelled as demo interfaces rather than pretending to work.
+PrintxPDF has two halves: a web-page cleaner that extracts an article with Mozilla Readability and lets you delete anything left before printing or saving as PDF, and ${TOOLS.length} PDF tools covering merge, split, organise, compress, OCR, sign, watermark, convert and QR generation. Four conversions that need a real layout engine (PowerPoint ↔ PDF, EPUB and MOBI → PDF) run on PrintxPDF's own server at api.printxpdf.com: the file is uploaded over HTTPS, converted and deleted immediately. Free for 5 files a month; more on the Pro ($5/month) and API ($29/month) plans.
+
+Written and maintained by ${authorName}, founder of PrintxPDF: ${SITE}${authorRoute}
 
 ## Tools
-${TOOLS.filter((t) => !hiddenTools.has(t.slug) && t.status === 'real')
+${TOOLS.filter((t) => !hiddenTools.has(t.slug) && (t.status === 'real' || t.status === 'server'))
   .map((t) => `- [${t.name}](${SITE}/tools/${t.slug}): ${t.short}. ${t.description}`)
   .join('\n')}
 
@@ -139,7 +144,8 @@ ${c.posts
 - [Web page printer](${SITE}/print): paste a URL, strip ads and menus, edit the result, then print or export PDF.
 - [All tools](${SITE}/tools): the full index with a status badge on each tool.
 - [Print button generator](${SITE}/website-button): a copy-paste HTML snippet that adds a print button to any site.
-- [Privacy](${SITE}/privacy): no upload endpoint exists; processing is local to the browser.
+- [About the founder](${SITE}${authorRoute}): who writes and maintains these guides.
+- [Privacy](${SITE}/privacy): browser tools never upload; the four server conversions delete the file the moment they finish.
 `
   await writeFile(path.join(PUBLIC, 'llms.txt'), llms)
 

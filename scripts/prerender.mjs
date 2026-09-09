@@ -19,6 +19,9 @@ const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').r
 
 // set from VITE_BASE in main(); GitHub Pages serves the site from /<repo>/
 let BASE = ''
+// the published design preset: crawlers and first paint should match what the runtime will apply
+let DESIGN = 'blocks'
+let DESIGN_FONT = null
 const href = (p) => (p.startsWith('/') ? `${BASE}${p}` : p)
 
 /** Content strings carry **bold**, [text](/path) and `code`. */
@@ -87,7 +90,8 @@ async function loadData() {
   await writeFile(
     entry,
     `export { CLUSTERS, ALL_POSTS } from ${JSON.stringify(path.join(ROOT, 'src/content/index.ts'))}
-     export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}`,
+     export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
+     export { fontHref, isDesignId } from ${JSON.stringify(path.join(ROOT, 'src/design/presets.ts'))}`,
   )
   await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
   const mod = await import(pathToFileURL(out).href)
@@ -121,10 +125,12 @@ function pageHtml(shell, { title, description, canonical, keywords, schema, body
     throw new Error('prerender: could not find <div id="root"></div> in dist/index.html — the shell changed, so no content would be baked in.')
   }
   if (!shell.includes('</head>')) throw new Error('prerender: no </head> in dist/index.html')
+  const fontLink = DESIGN_FONT ? `<link id="pxp-design-font" rel="stylesheet" href="${esc(DESIGN_FONT)}">\n    ` : ''
   return shell
+    .replace(/<html([^>]*)>/, (_m, attrs) => `<html${attrs.replace(/\s*data-design="[^"]*"/, '')} data-design="${DESIGN}">`)
     .replace(/<title>[\s\S]*?<\/title>/, '')
     .replace(/<meta name="description"[^>]*>/, '')
-    .replace('</head>', `  ${head}\n  </head>`)
+    .replace('</head>', `  ${fontLink}${head}\n  </head>`)
     .replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`)
 }
 
@@ -135,20 +141,38 @@ async function writeRoute(route, html) {
 }
 
 async function main() {
-  const { CLUSTERS, ALL_POSTS, TOOLS } = await loadData()
+  const { CLUSTERS, ALL_POSTS, TOOLS, fontHref, isDesignId } = await loadData()
   let cfg = {}
   try {
     cfg = JSON.parse(await readFile(path.join(ROOT, 'public/site-config.json'), 'utf8'))
   } catch {
     /* defaults */
   }
-  const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.vercel.app').replace(/\/$/, '')
+  const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.com').replace(/\/$/, '')
   BASE = (process.env.VITE_BASE || '/').replace(/\/$/, '')
+  DESIGN = isDesignId(cfg?.theme?.design) ? cfg.theme.design : 'blocks'
+  DESIGN_FONT = fontHref(DESIGN)
   const hiddenTools = new Set(cfg?.tools?.hidden || [])
   const hiddenPosts = new Set(cfg?.content?.hidden || [])
   const noindexAll = !!cfg?.seo?.noindexAll
   const shell = await readFile(path.join(DIST, 'index.html'), 'utf8')
   const publisher = { '@type': 'Organization', name: 'PrintxPDF', url: SITE, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.svg` } }
+  // the founder is credited on every guide; the runtime reads the same block from site-config.json
+  const author = { name: 'Nasir Uddin Shamim', title: 'Founder, PrintxPDF', bio: '', photo: '', links: {}, ...(cfg?.author || {}) }
+  const authorRoute = `/author/${slugify(author.name)}`
+  const person = {
+    '@type': 'Person',
+    '@id': `${SITE}${authorRoute}#person`,
+    name: author.name,
+    jobTitle: author.title,
+    url: `${SITE}${authorRoute}`,
+    ...(author.photo ? { image: author.photo } : {}),
+    ...(author.bio ? { description: author.bio } : {}),
+    sameAs: Object.values(author.links || {}).filter(Boolean),
+    worksFor: publisher,
+  }
+  const org = { ...publisher, founder: person }
+  const byline = `<p class="byline">By <a href="${href(authorRoute)}">${esc(author.name)}</a> · ${esc(author.title)}</p>`
   const crumbs = (trail) => ({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -180,8 +204,8 @@ async function main() {
         mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}${route}` },
         datePublished: p.published,
         dateModified: p.updated,
-        author: publisher,
-        publisher,
+        author: person,
+        publisher: org,
         keywords: [p.primaryKeyword, ...p.secondaryKeywords, ...p.entities].join(', '),
         timeRequired: `PT${p.readMinutes}M`,
         inLanguage: 'en',
@@ -207,6 +231,7 @@ async function main() {
     const bodyHtml = `<article>
   <nav><a href="${href('/')}">Home</a> / <a href="${href('/blog')}">Guides</a> / <a href="${href(`/blog/${p.cluster}`)}">${esc(cluster?.name || p.cluster)}</a></nav>
   <h1>${esc(p.title)}</h1>
+  ${byline}
   <p><em>Updated ${esc(p.updated)} · ${p.readMinutes} min read</em></p>
   <div class="post-answer"><p><strong>Short answer:</strong> ${rich(p.answer)}</p></div>
   ${blocksToHtml(p.body)}
@@ -249,6 +274,7 @@ async function main() {
     const bodyHtml = `<main>
   <nav><a href="${href('/')}">Home</a> / <a href="${href('/blog')}">Guides</a></nav>
   <h1>${esc(c.title)}</h1>
+  ${byline}
   <div class="post-answer"><p><strong>Short answer:</strong> ${rich(c.answer)}</p></div>
   <p>${esc(c.intro)}</p>
   <h2>Every guide in this topic</h2>
@@ -320,10 +346,10 @@ async function main() {
   <nav><a href="${href('/')}">Home</a> / <a href="${href('/tools')}">Tools</a></nav>
   <h1>${esc(t.name)}</h1>
   <p>${esc(t.description)}</p>
-  <p>${t.status === 'real' ? 'Runs entirely in your browser. Your file is never uploaded.' : t.status === 'best-effort' ? 'Best-effort conversion in your browser.' : 'Demo interface — this format needs server-side conversion.'}</p>
+  <p>${t.status === 'real' ? 'Runs entirely in your browser. Your file is never uploaded.' : t.status === 'best-effort' ? 'Best-effort conversion in your browser.' : 'Runs on our server: the file is sent over HTTPS, converted with LibreOffice or Calibre, returned and deleted immediately. Free for 5 files a month; Pro includes 300.'}</p>
   ${guides.length ? `<h2>Guides that use this tool</h2><ul>${guides.map((g) => `<li><a href="${href(`/blog/${g.cluster}/${g.slug}`)}">${esc(g.title)}</a></li>`).join('')}</ul>` : ''}
 </main>`
-    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: `${t.name} — Free, In Your Browser`, description: `${t.description} No upload, no sign-up.`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
+    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: `${t.name} — Free, In Your Browser`, description: `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
     count++
   }
 
@@ -362,11 +388,11 @@ async function main() {
       h1: 'Cut the clutter. Own your PDFs.',
       body: [
         'PrintxPDF does two things. It strips ads, menus, sidebars and comment walls out of any web page so you can print or save just the article. And it runs every common PDF job — merge, split, organise, compress, OCR, sign, watermark, convert — entirely inside your browser.',
-        'Nothing is uploaded. There is no server-side application and no upload endpoint, so your files are processed in memory by your own browser using pdf-lib, pdf.js and Tesseract, and are gone when you close the tab.',
+        'Browser tools never upload anything: your files are processed in memory by your own browser using pdf-lib, pdf.js and Tesseract, and are gone when you close the tab. Four conversions that need a real layout engine (PowerPoint and ebook formats) run on our own server, say so on their page, and delete the file the moment they finish.',
       ],
       links: [['/print', 'Print a web page'], ['/tools', `All ${TOOLS.length} PDF tools`], ['/blog', 'Guides'], ['/pricing', 'Pricing']],
       schema: [
-        { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg?.site?.name || 'PrintxPDF', url: SITE, description: cfg?.site?.description || '', publisher },
+        { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg?.site?.name || 'PrintxPDF', url: SITE, description: cfg?.site?.description || '', publisher: org },
         { '@context': 'https://schema.org', '@type': 'WebApplication', name: cfg?.site?.name || 'PrintxPDF', url: SITE, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any (web browser)', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, publisher },
       ],
     },
@@ -383,26 +409,49 @@ async function main() {
     },
     {
       route: '/pricing',
-      title: 'Pricing — Every Browser Tool Is Free',
-      description: 'Every PDF tool and the web-page cleaner are free forever, because they run in your browser. Pro and API tiers cover the WordPress plugin and server-side jobs.',
+      title: 'Pricing — Free Browser Tools, Pro Server Conversions',
+      description: 'Every browser PDF tool is free forever. Pro ($5/mo) adds 300 server conversions a month for PowerPoint and ebook formats; API ($29/mo) adds key-based access with 5,000 a month.',
       h1: 'Free is free.',
-      body: ['Every tool that runs in your browser costs nothing and always will, because there is no server cost to recover. The Pro tier covers the WordPress plugin, removing branding from printed pages and print analytics. The API tier covers server-side conversions.'],
+      body: [
+        'Every tool that runs in your browser costs nothing and always will. Paid plans cover the four conversions that need a real layout engine on our server — PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF — and the API.',
+        'Free: all browser tools, 5 server conversions a month, OCR up to 30 pages. Pro, $5 a month: 300 server conversions, OCR up to 200 pages, priority support. API, $29 a month: 5,000 conversions and an access key for the HTTPS API. Payments are handled by Stripe; cancel any time; refund on request within 14 days of the first charge.',
+      ],
       links: [['/tools', 'PDF tools'], ['/api', 'API']],
     },
     {
       route: '/about',
       title: 'About PrintxPDF — Print Less Junk',
-      description: 'PrintxPDF is a browser-only print and PDF toolkit. No upload endpoint exists, so your files never leave your computer. Built with Readability, pdf-lib, pdf.js and Tesseract.',
+      description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Every browser tool keeps your files on your computer; four heavy conversions run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
       h1: 'Print less junk. More of what matters.',
-      body: ['PrintxPDF is a demonstration of what a modern print-and-PDF toolkit looks like when it refuses to run a server. Every tool is static HTML, CSS and JavaScript. It removes ads and navigation before you print, lets you preview and edit exactly what you are about to output, and exports clean PDFs with working links.'],
-      links: [['/privacy', 'Privacy'], ['/blog', 'Guides']],
+      body: [
+        `PrintxPDF is a print-and-PDF toolkit founded by ${author.name}. Everything that can run in a browser does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript that keep your files on your own computer. Four conversions that need a real layout engine — PowerPoint and ebook formats — run on our own server and say so on the tool page.`,
+        'It removes ads and navigation before you print, lets you edit the result, and exports clean PDFs, PNG screenshots and emails. Built with Mozilla Readability, DOMPurify, pdf-lib, pdf.js, Tesseract.js, jsPDF and html2canvas.',
+      ],
+      links: [['/privacy', 'Privacy'], ['/blog', 'Guides'], [authorRoute, `Founder: ${author.name}`]],
+      schema: [{ '@context': 'https://schema.org', ...org }],
+    },
+    {
+      route: authorRoute,
+      title: `${author.name} — ${author.title}`,
+      description: (author.bio || `${author.name} is the founder of PrintxPDF and writes its guides on printing web pages cleanly and working with PDF files.`).slice(0, 158),
+      h1: author.name,
+      body: [
+        author.title,
+        author.bio || `${author.name} founded PrintxPDF and writes and maintains every guide on the site.`,
+        `${ALL_POSTS.length} guides across ${CLUSTERS.length} topics, listed below with the most recently updated first.`,
+      ],
+      links: [...ALL_POSTS].filter((p) => !hiddenPosts.has(p.slug)).sort((a, b) => b.updated.localeCompare(a.updated)).map((p) => [`/blog/${p.cluster}/${p.slug}`, p.title]),
+      schema: [{ '@context': 'https://schema.org', '@type': 'ProfilePage', url: `${SITE}${authorRoute}`, mainEntity: { ...person, knowsAbout: CLUSTERS.map((c) => c.name) } }],
     },
     {
       route: '/api',
-      title: 'PDF API and Self-Hosted Fetch Proxy',
-      description: 'Deploy a one-file Cloudflare Worker so the web-page cleaner fetches reliably from your own domain, plus the specification for a URL-to-PDF API endpoint.',
-      h1: 'Clean PDFs, programmatically.',
-      body: ['Public reader proxies are rate-limited. Deploying the single-file Cloudflare Worker in this repository routes every URL fetch through your own edge instead. The URL-to-PDF API is published here as a specification rather than a live endpoint, because this deployment has no backend.'],
+      title: 'PDF Conversion API — PowerPoint, EPUB and MOBI to PDF',
+      description: 'An HTTPS API that converts PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF. Send a file, get a file back. 5 free conversions a month; the API plan includes 5,000.',
+      h1: 'Convert files, programmatically.',
+      body: [
+        'POST a file as multipart form data to /convert/ppt-to-pdf, /convert/pdf-to-ppt, /convert/epub-to-pdf or /convert/mobi-to-pdf on api.printxpdf.com and the converted file comes back in the response. Without a key you get 5 conversions a month per IP address; Pro keys get 300 and API keys 5,000, sent as an Authorization: Bearer header.',
+        'Files are limited to 100 MB and jobs to two minutes. They are processed in an isolated container and deleted the moment the response is sent. Errors are JSON with an error message and a code. The whole API is open source in the repository and can be self-hosted on Cloudflare.',
+      ],
       links: [['/website-button', 'Print button generator'], ['/wordpress', 'WordPress plugin']],
     },
     {
@@ -423,18 +472,24 @@ async function main() {
     },
     {
       route: '/privacy',
-      title: 'Privacy — Nothing Is Uploaded',
-      description: 'PrintxPDF has no server-side application and no upload endpoint. Files are processed in your browser and discarded when you close the tab. No cookies.',
-      h1: 'We cannot see your files.',
-      body: ['This site has no server-side application, so there is nothing to store your documents in. Files you open are processed in your browser memory and discarded when you close the tab. Account data, saved documents, signatures and settings live in your browser localStorage and never leave it. When you clean a page by URL, only that address is sent to a reader proxy so the page can be fetched. There are no cookies.'],
+      title: 'Privacy — Your Files Stay on Your Device',
+      description: 'Browser tools never upload your files. Four server conversions send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.',
+      h1: 'Your files stay with you.',
+      body: [
+        'Every browser tool processes your documents on your own computer, in memory, and discards them when you close the tab. Account data, saved documents, signatures, settings and your access key live in your browser and are never sent to us.',
+        'Two things leave your device. Cleaning a web page by URL sends only the address to our fetch proxy so the page can be retrieved. The four server conversions upload the file over HTTPS to an isolated container, hold it for the length of the job (at most two minutes) and delete it; nothing is kept or logged. Free-tier usage is counted per month against a salted hash of your IP address for 40 days. Payments are hosted by Stripe; we never see card numbers. This site sets no cookies; Stripe sets its own on its pages.',
+      ],
       links: [['/terms', 'Terms'], ['/about', 'About']],
     },
     {
       route: '/terms',
       title: 'Terms of Use',
-      description: 'Terms for using PrintxPDF: a free, as-is demonstration of browser-based printing and PDF tools. No payment is collected and no paid service is delivered.',
+      description: 'Terms for using PrintxPDF: free browser tools, a free monthly allowance of server conversions, and Pro and API subscriptions billed monthly by Stripe with a 14-day refund on the first charge.',
       h1: 'Terms, briefly.',
-      body: ['PrintxPDF is provided as-is, free of charge, for demonstration purposes. Only clean, print or convert content you have the right to use, and respect the terms of the sites you fetch. Conversions are best-effort, so check the output before relying on it. Pricing, plans and the API are illustrative: no payment is collected.'],
+      body: [
+        'PrintxPDF is provided as-is. Only clean, print or convert content you have the right to use; do not use the converter to circumvent DRM or to attack the service. Conversions are best-effort: check the output before relying on it.',
+        'Pro ($5 per month) and API ($29 per month) are billed monthly by Stripe and renew until cancelled from Account → Subscription; access continues to the end of the paid period. Refund on request within 14 days of the first charge. Quotas of 5, 300 and 5,000 conversions a month reset on the first of the month; files are limited to 100 MB and jobs to two minutes.',
+      ],
       links: [['/privacy', 'Privacy']],
     },
     ...['chrome', 'firefox', 'safari', 'edge'].map((b) => ({
@@ -443,7 +498,7 @@ async function main() {
       description: `Print or save any page as a clean PDF in ${b[0].toUpperCase()}${b.slice(1)}. Reader mode, the print dialog settings that matter, and a bookmarklet that works today with no install.`,
       h1: `Turn any page into a clean PDF in ${b[0].toUpperCase()}${b.slice(1)}`,
       body: [
-        `Remove ads, navigation and distractions from any web page before you print or save it as a PDF. The extension listing on this site is a design demonstration and is not published to any store; the bookmarklet on this page works today in every browser with no install and no permissions.`,
+        `Remove ads, navigation and distractions from any web page before you print or save it as a PDF. The extension is not yet published to any store; the bookmarklet on this page works today in every browser with no install and no permissions.`,
       ],
       links: [['/print', 'Print a web page'], ['/blog/browser-extensions/bookmarklet-vs-extension', 'Bookmarklet vs extension']],
     })),

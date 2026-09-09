@@ -285,7 +285,7 @@ export default function SignTool() {
               <option value="'Archivo Black', sans-serif">Block</option>
             </select>
             {typedPreview && (
-              <div style={{ border: '2px solid var(--line)', background: '#fff' }}>
+              <div className="sig-thumb">
                 <img src={typedPreview} alt="preview" />
               </div>
             )}
@@ -299,7 +299,7 @@ export default function SignTool() {
             </p>
             <input className="input" type="file" accept="image/png,image/jpeg,image/webp" onChange={(e) => onUpload(e.target.files?.[0])} />
             {uploaded && (
-              <div style={{ border: '2px solid var(--line)', background: '#fff', padding: '0.5rem' }}>
+              <div className="sig-thumb" style={{ padding: '0.5rem' }}>
                 <img src={uploaded} alt="Uploaded signature preview" style={{ maxHeight: 90, width: 'auto', margin: '0 auto' }} />
               </div>
             )}

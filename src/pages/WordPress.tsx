@@ -15,7 +15,7 @@ export default function WordPress() {
       <section className="section">
         <div className="container grid grid-2" style={{ alignItems: 'center' }}>
           <div>
-            <span className="eyebrow">WordPress plugin · demo listing</span>
+            <span className="eyebrow">WordPress plugin · in development</span>
             <h1>
               A print button your readers will <span className="acid-mark">actually use.</span>
             </h1>
@@ -24,9 +24,9 @@ export default function WordPress() {
               you get fewer "can you send me a PDF" emails.
             </p>
             <div className="row">
-              <button className="btn btn-ink btn-lg" onClick={() => alert('Demo site: install from the WordPress admin → Plugins → Add New in a real deployment.')}>
-                Install free plugin
-              </button>
+              <Link to="/website-button" className="btn btn-ink btn-lg">
+                Get the button today
+              </Link>
               <Link to="/website-button" className="btn btn-lg">
                 Not on WordPress?
               </Link>
@@ -52,12 +52,12 @@ export default function WordPress() {
           <h2>What the plugin does</h2>
           <div className="grid grid-3">
             {[
-              ['One-click install', 'Search "PrintxPDF" in Plugins → Add New. No API key needed for the free tier.'],
+              ['Not in the directory yet', 'The plugin is being prepared for WordPress.org. Until then the button generator gives you the same button as one snippet.'],
               ['Respects your theme', 'Button placement: top, bottom, or both. Floating or inline. Custom text, icon and colours.'],
               ['Works everywhere', 'Standard posts, custom post types, WooCommerce products, Elementor and Gutenberg blocks.'],
               ['Clean output', 'Uses the same content extraction as this site: ads, widgets, share bars and comments removed.'],
               ['Reader controls', 'Readers can delete paragraphs, resize text and drop images before they print.'],
-              ['Analytics (Pro)', 'See which posts get printed, saved and emailed the most.'],
+              ['On the roadmap', 'Print analytics and custom CSS for the printed page come after the directory listing.'],
             ].map(([h, p]) => (
               <div key={h} className="card">
                 <h4>{h}</h4>
@@ -82,10 +82,10 @@ export default function WordPress() {
           <div className="card card-ink">
             <h3 style={{ color: 'var(--acid-dim)' }}>Pro</h3>
             <ul style={{ fontWeight: 600, paddingLeft: '1.2rem' }}>
-              <li>Custom CSS for the printed page</li>
-              <li>Remove PrintxPDF branding</li>
-              <li>Print analytics</li>
-              <li>Priority support</li>
+              <li>300 server conversions a month</li>
+              <li>PowerPoint ↔ PDF, EPUB and MOBI → PDF</li>
+              <li>OCR up to 200 pages per file</li>
+              <li>Priority email support</li>
             </ul>
             <Link to="/pricing" className="btn btn-acid btn-sm">
               See pricing

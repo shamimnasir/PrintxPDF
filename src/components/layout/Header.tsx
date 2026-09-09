@@ -151,6 +151,11 @@ export function Header() {
             <>
               <Link to="/account" className="btn btn-sm hide-mobile">
                 {user.name}
+                {user.plan !== 'free' && (
+                  <span className="badge badge-acid" style={{ marginLeft: '0.4rem' }}>
+                    {user.plan === 'api' ? 'API' : 'Pro'}
+                  </span>
+                )}
               </Link>
               <button
                 className="btn btn-sm btn-ghost hide-mobile"

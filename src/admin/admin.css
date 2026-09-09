@@ -18,6 +18,7 @@
   position: sticky;
   top: calc(var(--header-h) + 1rem);
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   background: var(--card);
   padding: 0.5rem;
   display: flex;
@@ -32,7 +33,8 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 0.88rem;
-  border: 2px solid transparent;
+  border: var(--bw-thin) solid transparent;
+  border-radius: calc(var(--radius) / 2);
 }
 .admin-nav a:hover {
   background: var(--bg-2);
@@ -59,6 +61,7 @@
   background: var(--ink);
   color: var(--paper);
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   padding: 0.6rem 0.9rem;
   margin-bottom: 1.5rem;
 }
@@ -83,6 +86,7 @@
 }
 .stat {
   border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
   background: var(--card);
   padding: 1rem;
 }
@@ -94,8 +98,8 @@
 .stat .k {
   font-family: var(--font-mono);
   font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: calc(var(--ls-wide) * 5 / 6);
+  text-transform: var(--tt-ui);
   color: var(--fg-muted);
   margin-top: 0.35rem;
 }
@@ -111,7 +115,8 @@
 .bar-row .track {
   height: 14px;
   background: var(--bg-3);
-  border: 2px solid var(--line);
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius-pill);
   overflow: hidden;
 }
 .bar-row .track > div {
@@ -138,7 +143,8 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  border: 2px solid var(--line);
+  border: var(--bw-thin) solid var(--line);
+  border-radius: var(--radius);
   background: var(--card);
   padding: 0.5rem 0.7rem;
   font-size: 0.88rem;

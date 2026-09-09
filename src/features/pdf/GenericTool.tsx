@@ -6,6 +6,8 @@ import { ProgressBar, ResultList } from '../../components/ui/ResultList'
 import { downloadBlob } from '../../lib/download'
 import type { Output } from './engines'
 import type { ToolMeta } from './toolsMeta'
+import { convertRemote, describeError, isConvertKind, warmConverter } from '../../lib/api'
+import { useUser } from '../account/useUser'
 
 type Field =
   | { key: string; label: string; type: 'select'; options: [string, string][]; default: string; help?: string }
@@ -72,13 +74,6 @@ const FIELDS: Record<string, Field[]> = {
   'html-to-pdf': [{ key: 'pageSize', label: 'Page size', type: 'select', options: [['A4', 'A4'], ['Letter', 'Letter']], default: 'A4' }],
 }
 
-const DEMO_TEXT: Record<string, string> = {
-  'pdf-to-ppt': 'Turning PDF pages into editable slides needs a layout engine (LibreOffice or a commercial SDK) running on a server. Our browser demo stops here, but the merge, split, image and sign tools are fully working.',
-  'ppt-to-pdf': 'Rendering PowerPoint faithfully requires the Office layout engine. Export from PowerPoint with File → Save As → PDF, then use any tool here on the result.',
-  'epub-to-pdf': 'EPUB is zipped HTML. A faithful conversion needs a paginating renderer on a server. Tip: open the EPUB in your reader app and print to PDF, then clean it up here.',
-  'mobi-to-pdf': 'MOBI is a proprietary Kindle container; decoding it in the browser is not practical. Convert with Calibre, then use our PDF tools on the output.',
-}
-
 export function GenericTool({ tool }: { tool: ToolMeta }) {
   const { toast } = useToast()
   const [files, setFiles] = useState<File[]>([])
@@ -88,6 +83,10 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
   const [results, setResults] = useState<Output[]>([])
   const [error, setError] = useState<string | null>(null)
   const [html, setHtml] = useState('')
+  const [usage, setUsage] = useState<{ used: number; limit: number } | null>(null)
+  const [errorHint, setErrorHint] = useState<{ upgrade?: boolean; account?: boolean } | null>(null)
+  const user = useUser()
+  const server = isConvertKind(tool.slug)
 
   useEffect(() => {
     // pre-fill metadata form from the file
@@ -102,6 +101,9 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
   const addFiles = (incoming: File[]) => {
     setResults([])
     setError(null)
+    setErrorHint(null)
+    // wake the container while the person is still looking at the options
+    if (server && incoming.length) warmConverter()
     setFiles((cur) => (tool.multiple ? [...cur, ...incoming] : incoming.slice(0, 1)))
   }
   const move = (from: number, to: number) =>
@@ -115,12 +117,28 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
   const run = async () => {
     setBusy(true)
     setError(null)
+    setErrorHint(null)
     setResults([])
     setProgress({ f: 0 })
     const onP = (f: number, msg?: string) => setProgress({ f, msg })
     const s = (k: string) => String(opts[k] ?? '')
     const n = (k: string) => Number(opts[k] ?? 0)
     try {
+      if (isConvertKind(tool.slug)) {
+        const f = files[0]
+        setProgress({ f: 0, msg: 'Starting the converter…' })
+        const r = await convertRemote(tool.slug, f, {
+          token: user?.entitlement?.token,
+          onProgress: (frac, phase) =>
+            onP(phase === 'upload' ? frac * 0.6 : 0.6 + frac * 0.4, phase === 'upload' ? `Uploading… ${Math.round(frac * 100)}%` : 'Converting on the server…'),
+        })
+        if (r.usage) setUsage(r.usage)
+        const out = [{ name: r.name, blob: r.blob }]
+        setResults(out)
+        toast('Done: 1 file ready')
+        downloadBlob(out[0].blob, out[0].name)
+        return
+      }
       // engines pull in pdf-lib / pdf.js / jsPDF; load them only when a tool actually runs
       const E = await import('./engines')
       const f = files[0]
@@ -197,7 +215,9 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
       toast(`Done: ${out.length} file${out.length > 1 ? 's' : ''} ready`)
       if (out.length === 1) downloadBlob(out[0].blob, out[0].name)
     } catch (e) {
-      setError((e as Error).message)
+      const d = describeError(e)
+      setError(d.message)
+      setErrorHint({ upgrade: d.upgrade, account: d.account })
     } finally {
       setBusy(false)
     }
@@ -212,31 +232,6 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
   const needsFile = tool.slug !== 'html-to-pdf' || !html.trim()
   const canRun = !busy && (needsFile ? files.length > 0 : true)
 
-  if (tool.status === 'demo') {
-    return (
-      <div className="tool-grid">
-        <div className="stack">
-          <Dropzone accept={tool.accept} multiple={false} onFiles={addFiles} />
-          <FileList files={files} onRemove={(i) => setFiles(files.filter((_, k) => k !== i))} />
-          <div className="card" style={{ borderColor: 'var(--alarm)', boxShadow: '6px 6px 0 0 var(--alarm)' }}>
-            <span className="badge badge-alarm">Server-side conversion</span>
-            <p style={{ margin: '0.75rem 0 0' }}>{DEMO_TEXT[tool.slug]}</p>
-          </div>
-        </div>
-        <div className="card card-ink">
-          <h4 style={{ color: 'var(--acid-dim)' }}>Why is this a demo?</h4>
-          <p>
-            This site ships as static files (Vercel, Cloudflare Pages, GitHub Pages). Everything that can run in a browser
-            does. This one format cannot, so we tell you instead of pretending.
-          </p>
-          <Link to="/api" className="btn btn-acid btn-sm">
-            See the API plan
-          </Link>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div className="tool-grid">
       <div className="stack">
@@ -248,8 +243,22 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
 
         {progress && busy && <ProgressBar value={progress.f} msg={progress.msg} />}
         {error && (
-          <div className="card" style={{ borderColor: 'var(--alarm)', boxShadow: '6px 6px 0 0 var(--alarm)' }}>
+          <div className="card card-alarm">
             <strong className="alarm">Something went wrong.</strong> {error}
+            {errorHint?.upgrade && (
+              <div style={{ marginTop: '0.75rem' }}>
+                <Link to="/pricing" className="btn btn-sm btn-acid">
+                  See Pro · $5/month
+                </Link>
+              </div>
+            )}
+            {errorHint?.account && (
+              <div style={{ marginTop: '0.75rem' }}>
+                <Link to="/account/billing" className="btn btn-sm">
+                  Open your account
+                </Link>
+              </div>
+            )}
           </div>
         )}
         <ResultList outputs={results} zipName={`${tool.slug}-output.zip`} />
@@ -289,8 +298,17 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
           {busy ? 'Working…' : `Run ${tool.name}`}
         </button>
         <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>
-          Files never leave this tab. Close it and they are gone.
+          {server ? 'Sent over HTTPS to our converter, processed, and deleted immediately. Never stored or logged.' : 'Files never leave this tab. Close it and they are gone.'}
         </p>
+        {server && (
+          <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>
+            {usage
+              ? `${usage.used} of ${usage.limit} conversions used this month.`
+              : user && user.plan !== 'free'
+                ? `${user.plan === 'api' ? 'API' : 'Pro'} plan · ${user.plan === 'api' ? '5,000' : '300'} conversions a month.`
+                : 'Free: 5 conversions a month. Pro: 300.'}
+          </p>
+        )}
       </div>
     </div>
   )

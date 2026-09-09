@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export const SITE_URL = (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, '') || 'https://printxpdf.vercel.app'
+export const SITE_URL = (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, '') || 'https://printxpdf.com'
 export const SITE_NAME = 'PrintxPDF'
 export const PUBLISHER = {
   '@type': 'Organization',
@@ -8,6 +8,39 @@ export const PUBLISHER = {
   url: SITE_URL,
   logo: { '@type': 'ImageObject', url: `${SITE_URL}/favicon.svg` },
 }
+
+export type AuthorInfo = { name: string; title: string; bio: string; photo: string; links: Record<string, string> }
+
+export const slugify = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
+export const authorPath = (a: { name: string }) => `/author/${slugify(a.name)}`
+
+/** Person node for the founder/author. `@id` lets Article.author and Organization.founder point at one entity. */
+export const authorPerson = (a: AuthorInfo) => ({
+  '@type': 'Person',
+  '@id': `${SITE_URL}${authorPath(a)}#person`,
+  name: a.name,
+  jobTitle: a.title,
+  url: `${SITE_URL}${authorPath(a)}`,
+  ...(a.photo ? { image: a.photo } : {}),
+  ...(a.bio ? { description: a.bio } : {}),
+  sameAs: Object.values(a.links || {}).filter(Boolean),
+  worksFor: PUBLISHER,
+})
+
+/** Organization with its founder attached; used as `publisher` wherever the author is known. */
+export const orgSchema = (author?: AuthorInfo) => (author ? { ...PUBLISHER, founder: authorPerson(author) } : PUBLISHER)
+
+export const profileSchema = (a: AuthorInfo, knowsAbout: string[] = []) => ({
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  url: `${SITE_URL}${authorPath(a)}`,
+  mainEntity: { ...authorPerson(a), ...(knowsAbout.length ? { knowsAbout } : {}) },
+})
 
 type Seo = {
   title: string
@@ -135,6 +168,7 @@ export const articleSchema = (a: {
   keywords: string[]
   answer: string
   readMinutes: number
+  author?: AuthorInfo
 }) => ({
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -144,8 +178,8 @@ export const articleSchema = (a: {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${a.path}` },
   datePublished: a.published,
   dateModified: a.updated,
-  author: PUBLISHER,
-  publisher: PUBLISHER,
+  author: a.author ? authorPerson(a.author) : PUBLISHER,
+  publisher: orgSchema(a.author),
   keywords: a.keywords.join(', '),
   timeRequired: `PT${a.readMinutes}M`,
   inLanguage: 'en',

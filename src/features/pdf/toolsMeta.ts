@@ -1,5 +1,5 @@
 export type ToolCategory = 'organize' | 'optimize' | 'convert' | 'edit' | 'security' | 'more'
-export type ToolStatus = 'real' | 'best-effort' | 'demo'
+export type ToolStatus = 'real' | 'best-effort' | 'server'
 
 export type ToolMeta = {
   slug: string
@@ -46,12 +46,12 @@ export const TOOLS: ToolMeta[] = [
   { slug: 'excel-to-pdf', name: 'Excel to PDF', short: 'XLSX → PDF', description: 'Convert Excel spreadsheets to polished PDFs for sharing, printing and archiving.', icon: 'X', category: 'convert', status: 'real', accept: '.xlsx,.xls,.csv' },
   { slug: 'html-to-pdf', name: 'HTML to PDF', short: 'Web files → PDF', description: 'Turn an HTML file or pasted markup into a clean PDF using the same engine as our web-page printer.', icon: '<>', category: 'convert', status: 'real', accept: '.html,.htm' },
   { slug: 'pdf-to-text', name: 'PDF to Text', short: 'Extract all text', description: 'Pull every line of text out of a PDF into a plain .txt file you can search and reuse.', icon: 'T', category: 'convert', status: 'real', accept: '.pdf' },
-  { slug: 'pdf-to-word', name: 'PDF to Word', short: 'PDF → DOCX', description: 'Get an editable Word document from your PDF. Layout-faithful conversion needs a server; in this browser demo we produce a text-based .docx.', icon: 'W', category: 'convert', status: 'best-effort', accept: '.pdf' },
-  { slug: 'pdf-to-excel', name: 'PDF to Excel', short: 'Tables → XLSX', description: 'Turn PDF tables into an Excel workbook. This demo extracts text lines per page into rows.', icon: 'X', category: 'convert', status: 'best-effort', accept: '.pdf' },
-  { slug: 'pdf-to-ppt', name: 'PDF to PowerPoint', short: 'Pages → slides', description: 'Convert PDF pages into PowerPoint slides. Requires server-side rendering, shown here as a demo UI.', icon: 'P', category: 'convert', status: 'demo', accept: '.pdf' },
-  { slug: 'ppt-to-pdf', name: 'PowerPoint to PDF', short: 'PPTX → PDF', description: 'Turn PowerPoint decks into presentation-ready PDFs. Requires server-side rendering, shown here as a demo UI.', icon: 'P', category: 'convert', status: 'demo', accept: '.pptx,.ppt' },
-  { slug: 'epub-to-pdf', name: 'EPUB to PDF', short: 'Ebooks → PDF', description: 'Convert EPUB ebooks to PDF for printing, sharing and offline reading.', icon: '📖', category: 'convert', status: 'demo', accept: '.epub' },
-  { slug: 'mobi-to-pdf', name: 'MOBI to PDF', short: 'Kindle → PDF', description: 'Turn Kindle MOBI files into clean PDFs you can print, share and read anywhere.', icon: '📖', category: 'convert', status: 'demo', accept: '.mobi' },
+  { slug: 'pdf-to-word', name: 'PDF to Word', short: 'PDF → DOCX', description: 'Get an editable Word document from your PDF. Produced in your browser as a text-based .docx; columns, images and exact layout are not preserved.', icon: 'W', category: 'convert', status: 'best-effort', accept: '.pdf' },
+  { slug: 'pdf-to-excel', name: 'PDF to Excel', short: 'Tables → XLSX', description: 'Turn PDF tables into an Excel workbook. Runs in your browser: each page becomes a sheet of text lines; ruled table cells are not detected.', icon: 'X', category: 'convert', status: 'best-effort', accept: '.pdf' },
+  { slug: 'pdf-to-ppt', name: 'PDF to PowerPoint', short: 'Pages → slides', description: 'Convert PDF pages into editable PowerPoint slides. Runs on our server with LibreOffice: the file is sent over HTTPS, converted and deleted immediately.', icon: 'P', category: 'convert', status: 'server', accept: '.pdf' },
+  { slug: 'ppt-to-pdf', name: 'PowerPoint to PDF', short: 'PPTX → PDF', description: 'Turn PowerPoint decks into presentation-ready PDFs. Runs on our server with LibreOffice: the file is sent over HTTPS, converted and deleted immediately.', icon: 'P', category: 'convert', status: 'server', accept: '.pptx,.ppt,.pps,.ppsx,.odp' },
+  { slug: 'epub-to-pdf', name: 'EPUB to PDF', short: 'Ebooks → PDF', description: 'Convert EPUB ebooks to A4 PDFs with page numbers for printing and offline reading. Runs on our server with Calibre: the file is sent over HTTPS, converted and deleted immediately.', icon: '📖', category: 'convert', status: 'server', accept: '.epub' },
+  { slug: 'mobi-to-pdf', name: 'MOBI to PDF', short: 'Kindle → PDF', description: 'Turn Kindle MOBI, AZW and AZW3 files into clean PDFs you can print and read anywhere. Runs on our server with Calibre: the file is sent over HTTPS, converted and deleted immediately.', icon: '📖', category: 'convert', status: 'server', accept: '.mobi,.azw,.azw3,.prc' },
 
   // edit & sign
   { slug: 'sign-pdf', name: 'Sign PDF', short: 'Draw or type a signature', description: 'Draw, type or upload a signature, place it on any page, add a date, and download a file ready to share.', icon: '✍', category: 'edit', status: 'real', accept: '.pdf', custom: 'sign' },
@@ -68,4 +68,4 @@ export const TOOLS: ToolMeta[] = [
 ]
 
 export const toolBySlug = (slug: string) => TOOLS.find((t) => t.slug === slug)
-export const STATUS_LABEL: Record<ToolStatus, string> = { real: 'Runs in your browser', 'best-effort': 'Best effort', demo: 'Demo UI · needs server' }
+export const STATUS_LABEL: Record<ToolStatus, string> = { real: 'Runs in your browser', 'best-effort': 'Best effort', server: 'Runs on our server' }

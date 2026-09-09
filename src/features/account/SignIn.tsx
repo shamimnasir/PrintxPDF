@@ -9,7 +9,7 @@ export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
   const { toast } = useToast()
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  useSeo({ title: mode === 'up' ? 'Sign up — PrintxPDF' : 'Log in — PrintxPDF', description: 'A demo account stored only in this browser.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
+  useSeo({ title: mode === 'up' ? 'Sign up — PrintxPDF' : 'Log in — PrintxPDF', description: 'A local account kept in this browser: saved documents, signatures, settings and your access key.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
 
   const submit = (e: FormEvent) => {
     e.preventDefault()
@@ -21,9 +21,9 @@ export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
 
   return (
     <div className="container section" style={{ maxWidth: 520 }}>
-      <span className="eyebrow">Demo account · stored only in this browser</span>
+      <span className="eyebrow">Account · stored in this browser</span>
       <h1>{mode === 'up' ? 'Sign up' : 'Log in'}</h1>
-      <p className="muted">No password. No email is sent. Your "account" is a localStorage entry that keeps saved documents, signatures and settings together.</p>
+      <p className="muted">No password and no email is sent. Your account lives in this browser: it keeps saved documents, signatures and settings together, and holds your access key once you subscribe. Subscribed on another device? Sign in, then paste the key under Account → Access key.</p>
       <form className="card stack" onSubmit={submit}>
         {mode === 'up' && (
           <div>

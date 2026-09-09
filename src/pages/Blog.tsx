@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import { useAllPosts, useClusters } from '../content/usePosts'
-import { breadcrumbSchema, SITE_URL, useSeo } from '../lib/seo'
+import { authorPath, authorPerson, breadcrumbSchema, SITE_URL, useSeo } from '../lib/seo'
+import { useSiteConfig } from '../admin/useSiteConfig'
 import '../content/blog.css'
 
 export default function Blog() {
   const CLUSTERS = useClusters()
   const ALL_POSTS = useAllPosts()
+  const cfg = useSiteConfig()
   const recent = [...ALL_POSTS].sort((a, b) => b.updated.localeCompare(a.updated)).slice(0, 8)
   useSeo({
     title: 'Printing & PDF Guides — PrintxPDF Blog',
@@ -23,6 +25,7 @@ export default function Blog() {
         name: 'PrintxPDF guides',
         url: `${SITE_URL}/blog`,
         description: 'Guides on printing web pages and working with PDF files in the browser.',
+        author: authorPerson(cfg.author),
         hasPart: CLUSTERS.map((c) => ({ '@type': 'WebPage', name: c.title, url: `${SITE_URL}/blog/${c.slug}` })),
       },
     ],
@@ -41,6 +44,9 @@ export default function Blog() {
       <p className="lead" style={{ marginBottom: '2.5rem' }}>
         Plain-English guides to printing web pages without the clutter and getting PDFs to behave. Every method here works
         in a normal browser, free, with no upload.
+      </p>
+      <p className="muted" style={{ marginTop: '-1.5rem', marginBottom: '2.5rem' }}>
+        Written and maintained by <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link>, founder of {cfg.site.name}.
       </p>
 
       <div className="grid grid-3">

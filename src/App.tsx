@@ -15,6 +15,7 @@ const Pricing = lazy(() => import('./pages/Pricing'))
 const Blog = lazy(() => import('./pages/Blog'))
 const ClusterPage = lazy(() => import('./pages/ClusterPage'))
 const PostPage = lazy(() => import('./pages/PostPage'))
+const AuthorPage = lazy(() => import('./pages/AuthorPage'))
 const AdminApp = lazy(() => import('./admin/AdminApp'))
 const About = lazy(() => import('./pages/About'))
 const Legal = lazy(() => import('./pages/Legal'))
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:cluster" element={<ClusterPage />} />
           <Route path="blog/:cluster/:post" element={<PostPage />} />
+          <Route path="author/:slug" element={<AuthorPage />} />
           <Route path="about" element={<About />} />
           <Route path="privacy" element={<Legal kind="privacy" />} />
           <Route path="terms" element={<Legal kind="terms" />} />

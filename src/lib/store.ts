@@ -1,7 +1,10 @@
-// Tiny localStorage-backed store for the demo "account" features.
-// Nothing leaves the browser.
+// Tiny localStorage-backed store for the account features. Everything here stays in the
+// browser; the one server-side fact is the entitlement — a signed key that points at a
+// Stripe subscription, which api.printxpdf.com verifies whenever it is used.
 
-export type User = { email: string; name: string; plan: 'free' | 'pro'; apiKey: string; createdAt: string }
+import type { Entitlement, Plan } from './api'
+
+export type User = { email: string; name: string; plan: Plan; createdAt: string; entitlement?: Entitlement }
 export type SavedDoc = { id: string; title: string; url?: string; html: string; savedAt: string }
 export type Signature = { id: string; name: string; dataUrl: string; createdAt: string }
 export type Settings = {
@@ -40,13 +43,6 @@ function write(key: string, value: unknown): boolean {
 
 export const uid = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(36)
 
-export function genApiKey() {
-  const chars = 'abcdefghijklmnopqrstuvwxyz0123456789'
-  let s = 'pxp_live_'
-  for (let i = 0; i < 32; i++) s += chars[Math.floor(Math.random() * chars.length)]
-  return s
-}
-
 export const store = {
   getUser: () => read<User | null>(KEYS.user, null),
   signIn(email: string, name?: string) {
@@ -58,7 +54,6 @@ export const store = {
             email,
             name: name || email.split('@')[0],
             plan: 'free',
-            apiKey: genApiKey(),
             createdAt: new Date().toISOString(),
           }
     write(KEYS.user, user)
@@ -68,6 +63,16 @@ export const store = {
     const u = read<User | null>(KEYS.user, null)
     if (!u) return null
     const next = { ...u, ...patch }
+    write(KEYS.user, next)
+    return next
+  },
+  /** Records a paid plan from the API's entitlement, creating the local account if there is none. */
+  setEntitlement(e: Entitlement) {
+    const u = read<User | null>(KEYS.user, null)
+    const base: User = u
+      ? { ...u, email: e.email || u.email }
+      : { email: e.email, name: e.email.split('@')[0] || 'You', plan: 'free', createdAt: new Date().toISOString() }
+    const next: User = { ...base, plan: e.plan, entitlement: e }
     write(KEYS.user, next)
     return next
   },

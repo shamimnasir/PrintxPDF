@@ -150,9 +150,9 @@ export default function Home() {
       </section>
 
       {cfg.home.showHowItWorks && (
-      <section className="section" style={{ background: 'var(--ink)', color: 'var(--paper)', borderTop: 'var(--bw) solid var(--line)', borderBottom: 'var(--bw) solid var(--line)' }}>
+      <section className="section band-ink">
         <div className="container">
-          <span className="eyebrow" style={{ color: 'var(--acid-dim)' }}>
+          <span className="eyebrow" style={{ color: 'var(--footer-accent)' }}>
             How the web printer works
           </span>
           <div className="grid grid-3" style={{ marginTop: '1rem' }}>
@@ -161,9 +161,9 @@ export default function Home() {
               ['02', 'Delete what is left', 'Hover any paragraph, image or table and click to remove it. Drag to sweep whole sections. Undo is one key away. Resize text, shrink or drop images.'],
               ['03', 'Print, PDF, email', 'Print with your browser for crisp text, download a PDF, save a PNG screenshot, or email it to yourself. Nothing touches a server.'],
             ].map(([n, h, p]) => (
-              <div key={n} style={{ borderTop: '3px solid var(--acid-dim)', paddingTop: '1rem' }}>
-                <div className="mono" style={{ color: 'var(--acid-dim)', fontSize: '2rem', fontWeight: 600 }}>{n}</div>
-                <h3 style={{ color: 'var(--paper)' }}>{h}</h3>
+              <div key={n} style={{ borderTop: '3px solid var(--footer-accent)', paddingTop: '1rem' }}>
+                <div className="mono" style={{ color: 'var(--footer-accent)', fontSize: '2rem', fontWeight: 600 }}>{n}</div>
+                <h3 style={{ color: 'inherit' }}>{h}</h3>
                 <p style={{ opacity: 0.85 }}>{p}</p>
               </div>
             ))}

@@ -22,9 +22,9 @@ export default function ToolPage() {
 
   useSeo({
     title: tool ? `${tool.name} — Free, In Your Browser` : 'Tool not found',
-    description: tool ? `${tool.description} No upload, no sign-up: it runs entirely in your browser.`.slice(0, 158) : '',
+    description: tool ? `${tool.description} ${tool.status === 'server' ? 'Free for 5 files a month, no sign-up.' : 'No upload, no sign-up: it runs entirely in your browser.'}`.slice(0, 158) : '',
     path: `/tools/${slug}`,
-    keywords: tool ? [tool.name.toLowerCase(), `${tool.name.toLowerCase()} free`, `${tool.name.toLowerCase()} online`, 'no upload'] : [],
+    keywords: tool ? [tool.name.toLowerCase(), `${tool.name.toLowerCase()} free`, `${tool.name.toLowerCase()} online`, tool.status === 'server' ? 'online converter' : 'no upload'] : [],
     noindex: !tool,
     schema: tool
       ? [
@@ -57,7 +57,7 @@ export default function ToolPage() {
         <div className="tool-icon">{tool.icon}</div>
         <div className="row" style={{ gap: '0.5rem', marginBottom: '0.75rem' }}>
           <StatusBadge status={tool.status} />
-          <span className="badge">No upload · runs locally</span>
+          <span className="badge">{tool.status === 'server' ? 'Uploaded · converted · deleted' : 'No upload · runs locally'}</span>
         </div>
         <h1>{tool.name}</h1>
         <p className="lead">{tool.description}</p>
