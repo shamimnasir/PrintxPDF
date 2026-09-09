@@ -1,0 +1,139 @@
+// Generates public/sitemap.xml, public/robots.txt and public/llms.txt from the real
+// content and tool data. Runs before `vite build` so the files ship with the site.
+//
+// The content modules are plain TypeScript data with no React imports, so we bundle
+// them with esbuild (already installed as a Vite dependency) and import the result.
+
+import { build } from 'esbuild'
+import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import path from 'node:path'
+import { pathToFileURL } from 'node:url'
+
+const ROOT = path.resolve(import.meta.dirname, '..')
+const PUBLIC = path.join(ROOT, 'public')
+
+async function loadData() {
+  const dir = await mkdtemp(path.join(tmpdir(), 'pxp-seo-'))
+  const entry = path.join(dir, 'entry.mjs')
+  const out = path.join(dir, 'bundle.mjs')
+  await writeFile(
+    entry,
+    `export { CLUSTERS, ALL_POSTS } from ${JSON.stringify(path.join(ROOT, 'src/content/index.ts'))}
+     export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}`,
+  )
+  await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
+  const mod = await import(pathToFileURL(out).href)
+  await rm(dir, { recursive: true, force: true })
+  return mod
+}
+
+async function siteConfig() {
+  const file = path.join(PUBLIC, 'site-config.json')
+  if (!existsSync(file)) return {}
+  try {
+    return JSON.parse(await readFile(file, 'utf8'))
+  } catch {
+    return {}
+  }
+}
+
+const iso = (d) => new Date(d).toISOString().slice(0, 10)
+
+async function main() {
+  const { CLUSTERS, ALL_POSTS, TOOLS } = await loadData()
+  const cfg = await siteConfig()
+  const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.vercel.app').replace(/\/$/, '')
+  const hiddenTools = new Set(cfg?.tools?.hidden || [])
+  const hiddenPosts = new Set(cfg?.content?.hidden || [])
+  const today = iso(Date.now())
+
+  // ---------- sitemap ----------
+  const urls = [
+    { loc: '/', pri: '1.0', freq: 'weekly', mod: today },
+    { loc: '/print', pri: '0.9', freq: 'monthly', mod: today },
+    { loc: '/tools', pri: '0.9', freq: 'weekly', mod: today },
+    { loc: '/blog', pri: '0.8', freq: 'weekly', mod: today },
+    { loc: '/pricing', pri: '0.6', freq: 'monthly', mod: today },
+    { loc: '/about', pri: '0.5', freq: 'yearly', mod: today },
+    { loc: '/api', pri: '0.6', freq: 'monthly', mod: today },
+    { loc: '/wordpress', pri: '0.6', freq: 'monthly', mod: today },
+    { loc: '/website-button', pri: '0.6', freq: 'monthly', mod: today },
+    ...['chrome', 'firefox', 'safari', 'edge'].map((b) => ({ loc: `/extensions/${b}`, pri: '0.5', freq: 'monthly', mod: today })),
+    { loc: '/privacy', pri: '0.3', freq: 'yearly', mod: today },
+    { loc: '/terms', pri: '0.3', freq: 'yearly', mod: today },
+    ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}`, pri: t.status === 'real' ? '0.8' : '0.4', freq: 'monthly', mod: today })),
+    ...CLUSTERS.map((c) => ({ loc: `/blog/${c.slug}`, pri: '0.7', freq: 'monthly', mod: today })),
+    ...ALL_POSTS.filter((p) => !hiddenPosts.has(p.slug)).map((p) => ({ loc: `/blog/${p.cluster}/${p.slug}`, pri: '0.7', freq: 'monthly', mod: iso(p.updated) })),
+  ]
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map((u) => `  <url>\n    <loc>${SITE}${u.loc}</loc>\n    <lastmod>${u.mod}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`).join('\n')}
+</urlset>
+`
+  await writeFile(path.join(PUBLIC, 'sitemap.xml'), sitemap)
+
+  // ---------- robots ----------
+  const robots =
+    cfg?.seo?.robotsTxt?.trim() ||
+    `# ${SITE}
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /account
+
+# AI crawlers are welcome to read and cite these guides
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: ${SITE}/sitemap.xml
+`
+  await writeFile(path.join(PUBLIC, 'robots.txt'), robots + '\n')
+
+  // ---------- llms.txt ----------
+  const llms =
+    cfg?.seo?.llmsTxt?.trim() ||
+    `# PrintxPDF
+
+> Free browser-based tools for printing web pages without ads and for working with PDF files. Every tool runs client-side in the visitor's browser using pdf-lib, pdf.js and Tesseract.js — files are never uploaded to a server.
+
+PrintxPDF has two halves: a web-page cleaner that extracts an article with Mozilla Readability and lets you delete anything left before printing or saving as PDF, and ${TOOLS.length} PDF tools covering merge, split, organise, compress, OCR, sign, watermark, convert and QR generation. Tools that genuinely require a server (PowerPoint, EPUB and MOBI conversion) are labelled as demo interfaces rather than pretending to work.
+
+## Tools
+${TOOLS.filter((t) => !hiddenTools.has(t.slug) && t.status === 'real')
+  .map((t) => `- [${t.name}](${SITE}/tools/${t.slug}): ${t.short}. ${t.description}`)
+  .join('\n')}
+
+## Guides
+${CLUSTERS.map(
+  (c) => `### ${c.name}
+${c.answer}
+${c.posts
+  .filter((p) => !hiddenPosts.has(p.slug))
+  .map((p) => `- [${p.title}](${SITE}/blog/${p.cluster}/${p.slug}): ${p.answer}`)
+  .join('\n')}`,
+).join('\n\n')}
+
+## Key pages
+- [Web page printer](${SITE}/print): paste a URL, strip ads and menus, edit the result, then print or export PDF.
+- [All tools](${SITE}/tools): the full index with a status badge on each tool.
+- [Print button generator](${SITE}/website-button): a copy-paste HTML snippet that adds a print button to any site.
+- [Privacy](${SITE}/privacy): no upload endpoint exists; processing is local to the browser.
+`
+  await writeFile(path.join(PUBLIC, 'llms.txt'), llms)
+
+  console.log(`gen-seo: ${urls.length} URLs in sitemap.xml, robots.txt and llms.txt written for ${SITE}`)
+}
+
+main().catch((e) => {
+  console.error('gen-seo failed:', e)
+  process.exit(1)
+})

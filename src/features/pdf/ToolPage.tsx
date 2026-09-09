@@ -1,6 +1,9 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { lazy, Suspense } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { toolBySlug, TOOLS } from './toolsMeta'
+import { TOOLS } from './toolsMeta'
+import { useTool } from './useTools'
+import { postsForTool } from '../../content'
+import { breadcrumbSchema, softwareSchema, faqSchema, useSeo } from '../../lib/seo'
 import { StatusBadge, ToolCard } from './ToolCard'
 import { GenericTool } from './GenericTool'
 import './tools.css'
@@ -13,11 +16,29 @@ const OrganizeTool = lazy(() => import('./custom/OrganizeTool'))
 
 export default function ToolPage() {
   const { slug = '' } = useParams()
-  const tool = toolBySlug(slug)
+  const tool = useTool(slug)
   const key = slug // remounts the tool UI when the route changes
-  useEffect(() => {
-    document.title = tool ? `${tool.name} — PrintxPDF` : 'Tool not found — PrintxPDF'
-  }, [tool])
+  const guides = postsForTool(slug).slice(0, 4)
+  const faqs = guides.map((g) => ({ q: g.title, a: g.answer }))
+
+  useSeo({
+    title: tool ? `${tool.name} — Free, In Your Browser` : 'Tool not found',
+    description: tool ? `${tool.description} No upload, no sign-up: it runs entirely in your browser.`.slice(0, 158) : '',
+    path: `/tools/${slug}`,
+    keywords: tool ? [tool.name.toLowerCase(), `${tool.name.toLowerCase()} free`, `${tool.name.toLowerCase()} online`, 'no upload'] : [],
+    noindex: !tool,
+    schema: tool
+      ? [
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Tools', path: '/tools' },
+            { name: tool.name, path: `/tools/${tool.slug}` },
+          ]),
+          softwareSchema({ name: tool.name, description: tool.description, path: `/tools/${tool.slug}` }),
+          ...(faqs.length ? [faqSchema(faqs)] : []),
+        ]
+      : [],
+  })
 
   if (!tool) {
     return (
@@ -52,6 +73,20 @@ export default function ToolPage() {
         {tool.custom === 'organize' && <OrganizeTool key={key} />}
         {!tool.custom && <GenericTool key={key} tool={tool} />}
       </Suspense>
+
+      {guides.length > 0 && (
+        <div className="section-tight" style={{ marginTop: '3rem' }}>
+          <span className="eyebrow">Guides that use this tool</span>
+          <div className="grid grid-2">
+            {guides.map((g) => (
+              <Link key={g.slug} to={`/blog/${g.cluster}/${g.slug}`} className="card card-hover" style={{ textDecoration: 'none' }}>
+                <h4 style={{ fontFamily: 'var(--font-body)', textTransform: 'none', letterSpacing: '-0.01em', fontWeight: 800, marginBottom: '0.3rem' }}>{g.title}</h4>
+                <p className="muted" style={{ margin: 0, fontSize: '0.9rem' }}>{g.metaDescription}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {related.length > 0 && (
         <div className="section-tight" style={{ marginTop: '3rem' }}>

@@ -1,0 +1,18 @@
+# https://printxpdf.vercel.app
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /account
+
+# AI crawlers are welcome to read and cite these guides
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://printxpdf.vercel.app/sitemap.xml
+

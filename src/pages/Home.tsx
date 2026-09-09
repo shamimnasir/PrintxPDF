@@ -1,13 +1,34 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { TOOLS } from '../features/pdf/toolsMeta'
 import { ToolCard } from '../features/pdf/ToolCard'
+import { useVisibleTools } from '../features/pdf/useTools'
+import { useSiteConfig } from '../admin/useSiteConfig'
+import { breadcrumbSchema, softwareSchema, useSeo } from '../lib/seo'
 import '../features/pdf/tools.css'
-
-const LOGOS = ['Northwind Post', 'Kestrel Labs', 'Harbor Health', 'Meridian U', 'Tabula Legal', 'Orbit Studio', 'Bluebell Schools', 'Fjord Bank']
 
 export default function Home() {
   const nav = useNavigate()
+  const cfg = useSiteConfig()
+  const tools = useVisibleTools()
+  useSeo({
+    title: `${cfg.site.name} — ${cfg.site.tagline}`,
+    description: cfg.site.description,
+    path: '/',
+    keywords: cfg.seo.keywords,
+    noindex: cfg.seo.noindexAll,
+    schema: [
+      breadcrumbSchema([{ name: 'Home', path: '/' }]),
+      softwareSchema({ name: cfg.site.name, description: cfg.site.description, path: '/' }),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: cfg.site.name,
+        url: cfg.site.url,
+        description: cfg.site.description,
+        potentialAction: { '@type': 'SearchAction', target: `${cfg.site.url}/tools?q={q}`, 'query-input': 'required name=q' },
+      },
+    ],
+  })
   const [url, setUrl] = useState('')
   const [drag, setDrag] = useState(false)
 
@@ -27,16 +48,13 @@ export default function Home() {
     <>
       <section className="section" style={{ paddingBottom: '2rem' }}>
         <div className="container center">
-          <span className="eyebrow">Free · No uploads · Works offline once loaded</span>
+          <span className="eyebrow">{cfg.home.eyebrow}</span>
           <h1 style={{ maxWidth: '14ch', margin: '0 auto 1rem' }}>
-            Cut the <span className="acid-mark">clutter.</span>
+            <span className="acid-mark">{cfg.home.headline1}</span>
             <br />
-            Own your <span className="alarm">PDFs.</span>
+            {cfg.home.headline2}
           </h1>
-          <p className="lead" style={{ margin: '0 auto 2.5rem' }}>
-            Strip ads and menus from any web page before you print. Then merge, split, sign, compress and convert PDFs,
-            all inside your browser. Nothing is uploaded, ever.
-          </p>
+          <p className="lead" style={{ margin: '0 auto 2.5rem' }}>{cfg.home.lead}</p>
 
           <div className="grid grid-2" style={{ maxWidth: 980, margin: '0 auto', textAlign: 'left' }}>
             <label
@@ -54,10 +72,8 @@ export default function Home() {
               }}
             >
               <div style={{ fontSize: '2.2rem' }}>⬆</div>
-              <h3 style={{ margin: '0.5rem 0 0.25rem' }}>Work with a file</h3>
-              <p className="muted" style={{ margin: '0 0 0.75rem' }}>
-                Compress, sign, convert, merge, organize
-              </p>
+              <h3 style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.fileCardTitle}</h3>
+              <p className="muted" style={{ margin: '0 0 0.75rem' }}>{cfg.home.fileCardText}</p>
               <span className="btn btn-sm btn-ink" style={{ alignSelf: 'flex-start' }}>
                 Drop a file or click to browse
               </span>
@@ -69,10 +85,8 @@ export default function Home() {
 
             <form className="card" style={{ minHeight: 230, display: 'flex', flexDirection: 'column', justifyContent: 'center' }} onSubmit={go}>
               <div style={{ fontSize: '2.2rem' }}>⌘</div>
-              <h3 style={{ margin: '0.5rem 0 0.25rem' }}>Print or PDF a web page</h3>
-              <p className="muted" style={{ margin: '0 0 0.75rem' }}>
-                Paste a URL, we strip the ads and clutter
-              </p>
+              <h3 style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.urlCardTitle}</h3>
+              <p className="muted" style={{ margin: '0 0 0.75rem' }}>{cfg.home.urlCardText}</p>
               <div className="clip-input" style={{ boxShadow: 'none' }}>
                 <input type="text" inputMode="url" placeholder="https://example.com/article" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="URL" />
                 <button type="submit">Go</button>
@@ -86,15 +100,17 @@ export default function Home() {
         </div>
       </section>
 
+      {cfg.home.showMarquee && cfg.home.marquee.length > 0 && (
       <div className="marquee" aria-hidden>
         <div className="marquee-track">
-          {[...LOGOS, ...LOGOS].map((l, i) => (
+          {[...cfg.home.marquee, ...cfg.home.marquee].map((l, i) => (
             <span key={i} style={{ padding: '0 2rem' }}>
               {l} ✦
             </span>
           ))}
         </div>
       </div>
+      )}
 
       <section className="section">
         <div className="container">
@@ -108,11 +124,11 @@ export default function Home() {
               </h2>
             </div>
             <Link to="/tools" className="btn">
-              All {TOOLS.length} tools →
+              All {tools.length} tools →
             </Link>
           </div>
           <div className="grid grid-4">
-            {TOOLS.filter((t) => t.status === 'real')
+            {tools.filter((t) => t.status === 'real')
               .slice(0, 12)
               .map((t) => (
                 <ToolCard key={t.slug} tool={t} />
@@ -121,6 +137,7 @@ export default function Home() {
         </div>
       </section>
 
+      {cfg.home.showHowItWorks && (
       <section className="section" style={{ background: 'var(--ink)', color: 'var(--paper)', borderTop: 'var(--bw) solid var(--line)', borderBottom: 'var(--bw) solid var(--line)' }}>
         <div className="container">
           <span className="eyebrow" style={{ color: 'var(--acid-dim)' }}>
@@ -144,10 +161,12 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      )}
 
+      {cfg.home.showProducts && (
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Everything PrintxPDF does</span>
+          <span className="eyebrow">Everything {cfg.site.name} does</span>
           <h2>Four products. One idea: cleaner documents, less waste.</h2>
           <div className="grid grid-2" style={{ marginTop: '2rem' }}>
             {[
@@ -167,7 +186,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      )}
 
+      {cfg.home.showPrivacy && (
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="card card-acid" style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', alignItems: 'center' }}>
@@ -183,6 +204,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      )}
     </>
   )
 }

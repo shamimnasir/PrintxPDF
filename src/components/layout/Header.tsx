@@ -3,6 +3,20 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { TOOLS, CATEGORY_LABEL, type ToolCategory } from '../../features/pdf/toolsMeta'
 import { useUser } from '../../features/account/useUser'
 import { applyTheme, store } from '../../lib/store'
+import { useSiteConfig } from '../../admin/useSiteConfig'
+
+function Wordmark({ name }: { name: string }) {
+  // highlight the "x" when the name contains one (PrintxPDF); otherwise render it plainly
+  const m = name.match(/^(.*?)x(pdf.*)$/i)
+  if (!m) return <span>{name}</span>
+  return (
+    <span>
+      {m[1]}
+      <span className="x">x</span>
+      {m[2]}
+    </span>
+  )
+}
 
 function NavMenu({ label, children, id, open, setOpen }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void }) {
   const isOpen = open === id
@@ -29,6 +43,8 @@ export function Header() {
   const loc = useLocation()
   const ref = useRef<HTMLElement>(null)
   const [dark, setDark] = useState(() => document.documentElement.getAttribute('data-theme') === 'dark')
+  const cfg = useSiteConfig()
+  const [annOpen, setAnnOpen] = useState(() => sessionStorage.getItem('pxp:ann') !== 'closed')
 
   useEffect(() => {
     setOpen(null)
@@ -43,15 +59,40 @@ export function Header() {
   }
 
   const cats = (Object.keys(CATEGORY_LABEL) as ToolCategory[]).filter((c) => c !== 'more')
+  const visible = TOOLS.filter((t) => !cfg.tools.hidden.includes(t.slug))
+  const ann = cfg.announcement
 
   return (
-    <header ref={ref} className={`header ${menu ? 'menu-open' : ''}`}>
+    <>
+      {ann.enabled && annOpen && (
+        <div className="announce">
+          <div className="container row" style={{ gap: '0.6rem', justifyContent: 'center' }}>
+            <span>{ann.text}</span>
+            {ann.linkText && (
+              <Link to={ann.linkUrl} style={{ fontWeight: 900, textDecoration: 'underline' }}>
+                {ann.linkText} →
+              </Link>
+            )}
+            {ann.dismissible && (
+              <button
+                className="announce-x"
+                aria-label="Dismiss"
+                onClick={() => {
+                  sessionStorage.setItem('pxp:ann', 'closed')
+                  setAnnOpen(false)
+                }}
+              >
+                ×
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+      <header ref={ref} className={`header ${menu ? 'menu-open' : ''}`}>
       <div className="container header-inner">
-        <Link to="/" className="logo" aria-label="PrintxPDF home">
-          <span className="logo-mark">P</span>
-          <span>
-            Print<span className="x">x</span>PDF
-          </span>
+        <Link to="/" className="logo" aria-label={`${cfg.site.name} home`}>
+          <span className="logo-mark">{cfg.site.name.charAt(0).toUpperCase()}</span>
+          <Wordmark name={cfg.site.name} />
         </Link>
 
         <nav id="main-nav" className="nav" aria-label="Main">
@@ -59,7 +100,7 @@ export function Header() {
             {cats.map((c) => (
               <div key={c} style={{ breakInside: 'avoid' }}>
                 <div className="menu-title">{CATEGORY_LABEL[c]}</div>
-                {TOOLS.filter((t) => t.category === c).map((t) => (
+                {visible.filter((t) => t.category === c).map((t) => (
                   <Link key={t.slug} to={`/tools/${t.slug}`}>
                     {t.name}
                   </Link>
@@ -120,6 +161,7 @@ export function Header() {
           </button>
         </div>
       </div>
-    </header>
+      </header>
+    </>
   )
 }

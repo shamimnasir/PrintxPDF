@@ -5,9 +5,15 @@ import './index.css'
 import App from './App'
 import { applyTheme, store } from './lib/store'
 import { ToastProvider } from './components/ui/Toast'
+import { bootConfig, getConfig } from './admin/config'
 
 applyTheme(store.getSettings().theme)
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => applyTheme(store.getSettings().theme))
+
+// published site config decides the default colour mode for first-time visitors
+bootConfig().then(() => {
+  if (!localStorage.getItem('pxp:settings')) applyTheme(getConfig().theme.defaultMode)
+})
 
 // Vite's BASE_URL is "/" locally and "/<repo>/" on GitHub Pages
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '')

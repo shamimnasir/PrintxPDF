@@ -854,3 +854,27 @@ code.inline {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* ---------- Announcement bar ---------- */
+.announce {
+  background: var(--acid);
+  color: var(--acid-fg);
+  border-bottom: var(--bw) solid var(--line);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+.announce a {
+  color: inherit;
+}
+.announce-x {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.3rem;
+}

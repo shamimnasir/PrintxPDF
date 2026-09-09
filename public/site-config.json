@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-09",
+  "site": {
+    "name": "PrintxPDF",
+    "tagline": "Cut the clutter. Own your PDFs.",
+    "description": "Strip ads from web pages before you print, and run every common PDF job in your browser. Free, no upload, no sign-up.",
+    "url": "https://printxpdf.vercel.app",
+    "email": "",
+    "twitter": "",
+    "github": "https://github.com/shamimnasir/PrintxPDF",
+    "footerNote": "Demo project. Not affiliated with any other print or PDF service."
+  },
+  "announcement": {
+    "enabled": false,
+    "text": "New: OCR now runs fully offline in your browser.",
+    "linkText": "Try it",
+    "linkUrl": "/tools/ocr-pdf",
+    "dismissible": true
+  },
+  "theme": {
+    "accent": "#2b5bff",
+    "accentFg": "#ffffff",
+    "ink": "#0b0b0f",
+    "paper": "#ffffff",
+    "alarm": "#ff3b1f",
+    "defaultMode": "system",
+    "borderWidth": 3,
+    "radius": 0
+  },
+  "home": {
+    "eyebrow": "Free · No uploads · Works offline once loaded",
+    "headline1": "Cut the clutter.",
+    "headline2": "Own your PDFs.",
+    "lead": "Strip ads and menus from any web page before you print. Then merge, split, sign, compress and convert PDFs, all inside your browser. Nothing is uploaded, ever.",
+    "fileCardTitle": "Work with a file",
+    "fileCardText": "Compress, sign, convert, merge, organize",
+    "urlCardTitle": "Print or PDF a web page",
+    "urlCardText": "Paste a URL, we strip the ads and clutter",
+    "marquee": ["Northwind Post", "Kestrel Labs", "Harbor Health", "Meridian U", "Tabula Legal", "Orbit Studio", "Bluebell Schools", "Fjord Bank"],
+    "showMarquee": true,
+    "showHowItWorks": true,
+    "showProducts": true,
+    "showPrivacy": true
+  },
+  "pages": {},
+  "tools": { "hidden": [], "featured": [], "overrides": {} },
+  "seo": {
+    "titleTemplate": "%s — PrintxPDF",
+    "defaultDescription": "Print web pages without ads and run every common PDF job free in your browser.",
+    "keywords": [
+      "print web page without ads",
+      "printer friendly",
+      "save webpage as pdf",
+      "merge pdf",
+      "compress pdf",
+      "sign pdf",
+      "ocr pdf",
+      "pdf tools free"
+    ],
+    "robotsTxt": "",
+    "llmsTxt": "",
+    "googleVerification": "",
+    "bingVerification": "",
+    "indexBlog": true,
+    "noindexAll": false
+  },
+  "analytics": {
+    "ga4Id": "",
+    "plausibleDomain": "",
+    "umamiId": "",
+    "umamiSrc": "https://cloud.umami.is/script.js",
+    "localStats": true,
+    "respectDnt": true
+  },
+  "code": { "headHtml": "", "bodyEndHtml": "", "css": "", "js": "" },
+  "content": { "hidden": [], "overrides": {} }
+}

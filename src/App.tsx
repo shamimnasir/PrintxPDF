@@ -1,6 +1,7 @@
 import { lazy, useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
+import { RuntimeEffects } from './admin/RuntimeEffects'
 
 const Home = lazy(() => import('./pages/Home'))
 const WebClip = lazy(() => import('./features/webclip/WebClipPage'))
@@ -12,6 +13,9 @@ const WebsiteButton = lazy(() => import('./pages/WebsiteButton'))
 const Api = lazy(() => import('./pages/Api'))
 const Pricing = lazy(() => import('./pages/Pricing'))
 const Blog = lazy(() => import('./pages/Blog'))
+const ClusterPage = lazy(() => import('./pages/ClusterPage'))
+const PostPage = lazy(() => import('./pages/PostPage'))
+const AdminApp = lazy(() => import('./admin/AdminApp'))
 const About = lazy(() => import('./pages/About'))
 const Legal = lazy(() => import('./pages/Legal'))
 const SignIn = lazy(() => import('./features/account/SignIn'))
@@ -30,6 +34,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <RuntimeEffects />
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
@@ -43,13 +48,15 @@ export default function App() {
           <Route path="api" element={<Api />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="blog/:slug" element={<Blog />} />
+          <Route path="blog/:cluster" element={<ClusterPage />} />
+          <Route path="blog/:cluster/:post" element={<PostPage />} />
           <Route path="about" element={<About />} />
           <Route path="privacy" element={<Legal kind="privacy" />} />
           <Route path="terms" element={<Legal kind="terms" />} />
           <Route path="signin" element={<SignIn mode="in" />} />
           <Route path="signup" element={<SignIn mode="up" />} />
           <Route path="account/*" element={<Account />} />
+          <Route path="admin/*" element={<AdminApp />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
