@@ -1,0 +1,84 @@
+/**
+ * PrintxPDF Print & PDF Button
+ *
+ * Layout and the screen-reader helper are always active. The visual button
+ * styling and the print-chrome rules only apply when "match my theme" is off,
+ * which is what adds .printxpdf-styled and the .printxpdf-clean-print body class.
+ */
+
+.printxpdf-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5em;
+	margin: 1.5em 0;
+}
+
+.printxpdf-align-left { justify-content: flex-start; }
+.printxpdf-align-center { justify-content: center; }
+.printxpdf-align-right { justify-content: flex-end; }
+
+.printxpdf-sr {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Minimal styling, used when the theme is not asked to take over. */
+.printxpdf-styled .printxpdf-btn {
+	--printxpdf-ink: #1a1a1a;
+	--printxpdf-paper: #ffffff;
+	display: inline-flex;
+	align-items: center;
+	font: inherit;
+	font-size: 0.95em;
+	font-weight: 600;
+	line-height: 1.2;
+	padding: 0.6em 1.1em;
+	border: 2px solid var(--printxpdf-ink);
+	border-radius: 4px;
+	background: var(--printxpdf-paper);
+	color: var(--printxpdf-ink);
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.printxpdf-styled .printxpdf-btn:hover,
+.printxpdf-styled .printxpdf-btn:focus {
+	background: var(--printxpdf-ink);
+	color: var(--printxpdf-paper);
+	text-decoration: none;
+}
+
+.printxpdf-styled .printxpdf-btn:focus-visible {
+	outline: 2px solid var(--printxpdf-ink);
+	outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.printxpdf-styled .printxpdf-btn {
+		--printxpdf-ink: #f2f2f2;
+		--printxpdf-paper: transparent;
+	}
+}
+
+@media print {
+	/* The button row must never print, whatever the theme setting is. */
+	.printxpdf-row { display: none !important; }
+
+	.printxpdf-clean-print .site-header,
+	.printxpdf-clean-print .site-footer,
+	.printxpdf-clean-print .widget-area,
+	.printxpdf-clean-print #comments,
+	.printxpdf-clean-print nav {
+		display: none !important;
+	}
+}

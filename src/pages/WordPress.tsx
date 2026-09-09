@@ -15,7 +15,7 @@ export default function WordPress() {
       <section className="section">
         <div className="container grid grid-2" style={{ alignItems: 'center' }}>
           <div>
-            <span className="eyebrow">WordPress plugin · in development</span>
+            <span className="eyebrow">WordPress plugin · free, GPL, 15 KB</span>
             <h1>
               A print button your readers will <span className="acid-mark">actually use.</span>
             </h1>
@@ -24,13 +24,17 @@ export default function WordPress() {
               you get fewer "can you send me a PDF" emails.
             </p>
             <div className="row">
-              <Link to="/website-button" className="btn btn-ink btn-lg">
-                Get the button today
-              </Link>
+              <a href="/downloads/printxpdf-wordpress-plugin.zip" className="btn btn-acid btn-lg" download>
+                Download the plugin
+              </a>
               <Link to="/website-button" className="btn btn-lg">
                 Not on WordPress?
               </Link>
             </div>
+            <p className="muted" style={{ marginTop: '0.75rem', fontSize: '0.9rem' }}>
+              One file, no dependencies, no account and no API key. Upload it under Plugins → Add New → Upload Plugin. It is
+              not in the WordPress.org directory yet, so this download is the way to get it.
+            </p>
           </div>
           <div className="card card-flat" style={{ background: 'var(--card)' }}>
             <div style={{ borderBottom: '2px solid var(--line)', paddingBottom: '0.5rem', marginBottom: '1rem', fontFamily: 'Georgia, serif' }}>
@@ -52,12 +56,12 @@ export default function WordPress() {
           <h2>What the plugin does</h2>
           <div className="grid grid-3">
             {[
-              ['Not in the directory yet', 'The plugin is being prepared for WordPress.org. Until then the button generator gives you the same button as one snippet.'],
+              ['Upload and activate', 'Plugins → Add New → Upload Plugin, pick the ZIP, activate. Settings → PrintxPDF sets placement, which buttons show and which post types get them.'],
               ['Respects your theme', 'Button placement: top, bottom, or both. Floating or inline. Custom text, icon and colours.'],
               ['Works everywhere', 'Standard posts, custom post types, WooCommerce products, Elementor and Gutenberg blocks.'],
               ['Clean output', 'Uses the same content extraction as this site: ads, widgets, share bars and comments removed.'],
               ['Reader controls', 'Readers can delete paragraphs, resize text and drop images before they print.'],
-              ['On the roadmap', 'Print analytics and custom CSS for the printed page come after the directory listing.'],
+              ['Nothing phones home', 'No API key, no account, no tracking, and the plugin makes no outbound requests at all. Print runs in the reader\'s browser.'],
             ].map(([h, p]) => (
               <div key={h} className="card">
                 <h4>{h}</h4>

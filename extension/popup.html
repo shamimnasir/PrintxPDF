@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PrintxPDF</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="card">
+      <header class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" role="presentation">
+            <rect x="0" y="0" width="24" height="24" rx="6" fill="#2b5bff" />
+            <path
+              d="M8 5.5h5.2a4.15 4.15 0 0 1 0 8.3H10.6V18.5H8V5.5Zm2.6 2.4v3.5h2.6a1.75 1.75 0 0 0 0-3.5H10.6Z"
+              fill="#ffffff"
+            />
+          </svg>
+        </span>
+        <span class="wordmark">Print<span class="x">x</span>PDF</span>
+      </header>
+
+      <p class="tagline">Strip the ads, menus and comment walls. Then print or save a PDF.</p>
+
+      <p class="target" id="target" title="">Reading the current tab…</p>
+
+      <button class="btn btn-primary" id="clean" type="button">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+          <path
+            d="M7 8V4h10v4M7 18v3h10v-3M5 8h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v-3H6v3H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Clean this page
+      </button>
+
+      <div class="row">
+        <button class="btn btn-ghost" id="pdf" type="button">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
+            <path
+              d="M12 3v11m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Save as PDF
+        </button>
+        <button class="btn btn-ghost" id="copy" type="button">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
+            <path
+              d="M9 9h9a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 18 21H9a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 9 9Zm-3 6H6a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 6 3h9A1.5 1.5 0 0 1 16.5 4.5V5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Copy clean link
+        </button>
+      </div>
+
+      <p class="status" id="status" role="status" aria-live="polite" hidden></p>
+
+      <label class="check">
+        <input type="checkbox" id="newtab" checked />
+        <span>Open in a new tab</span>
+      </label>
+
+      <footer class="foot">
+        <a href="https://printxpdf.com/tools" id="tools" target="_blank" rel="noreferrer">All PrintxPDF tools</a>
+        <span class="shortcut" id="shortcut"></span>
+      </footer>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
