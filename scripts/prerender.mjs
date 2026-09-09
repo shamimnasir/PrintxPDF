@@ -174,7 +174,7 @@ async function main() {
   }
   const org = { ...publisher, founder: person }
   const avatar = author.photo ? `<img class="avatar" src="${esc(author.photo)}" alt="${esc(author.name)}" width="32" height="32">` : ''
-  const byline = `<p class="byline">${avatar}By <a href="${href(authorRoute)}">${esc(author.name)}</a> · ${esc(author.title)}</p>`
+  const byline = `<p class="byline">${avatar}By <a href="${href(authorRoute)}">${esc(author.name)}</a></p>`
   const authorBox = `<aside class="author-box">
   ${author.photo ? `<img class="avatar" src="${esc(author.photo)}" alt="${esc(author.name)}" width="72" height="72">` : ''}
   <div class="author-box-body">

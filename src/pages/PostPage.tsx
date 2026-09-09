@@ -233,7 +233,7 @@ export default function PostPage() {
               <span className="byline">
                 <Avatar src={cfg.author.photo} name={cfg.author.name} size={32} />
                 <span>
-                  By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+                  By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link>
                 </span>
               </span>
               <span>Updated {new Date(post.updated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>

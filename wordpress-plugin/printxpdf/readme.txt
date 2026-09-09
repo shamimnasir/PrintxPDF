@@ -1,5 +1,5 @@
 === PrintxPDF Print & PDF Button ===
-Contributors: TODO-WORDPRESS-ORG-USERNAME
+Contributors: affglad
 Tags: print, pdf, print button, printer friendly, email
 Requires at least: 6.0
 Tested up to: 7.1

@@ -65,7 +65,7 @@ export default function ClusterPage() {
           <span className="byline">
             <Avatar src={cfg.author.photo} name={cfg.author.name} size={32} />
             <span>
-              By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+              By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link>
             </span>
           </span>
           <span>{cluster.posts.length} guides</span>
