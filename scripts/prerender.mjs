@@ -349,7 +349,7 @@ async function main() {
   <p>${t.status === 'real' ? 'Runs entirely in your browser. Your file is never uploaded.' : t.status === 'best-effort' ? 'Best-effort conversion in your browser.' : 'Runs on our server: the file is sent over HTTPS, converted with LibreOffice or Calibre, returned and deleted immediately. Free for 5 files a month; Pro includes 300.'}</p>
   ${guides.length ? `<h2>Guides that use this tool</h2><ul>${guides.map((g) => `<li><a href="${href(`/blog/${g.cluster}/${g.slug}`)}">${esc(g.title)}</a></li>`).join('')}</ul>` : ''}
 </main>`
-    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: `${t.name} — Free, In Your Browser`, description: `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
+    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: `${t.name} — ${t.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}`, description: `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
     count++
   }
 
