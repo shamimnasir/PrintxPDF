@@ -44,11 +44,7 @@ export function Footer() {
           <Link to="/wordpress">WordPress plugin</Link>
           <Link to="/api">PDF API</Link>
           <Link to="/pricing">Pricing</Link>
-          <h4 style={{ marginTop: '1rem' }}>Extensions</h4>
-          <Link to="/extensions/chrome">Chrome</Link>
-          <Link to="/extensions/firefox">Firefox</Link>
-          <Link to="/extensions/safari">Safari</Link>
-          <Link to="/extensions/edge">Edge</Link>
+          <Link to="/extensions/chrome">Chrome extension</Link>
         </div>
         <div>
           <h4>Company</h4>

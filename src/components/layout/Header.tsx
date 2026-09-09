@@ -132,12 +132,9 @@ export function Header() {
             <Link to="/wordpress">WordPress plugin</Link>
             <Link to="/api">PDF API</Link>
           </NavMenu>
-          <NavMenu label="Extensions" id="ext" open={open} setOpen={setOpen}>
-            <Link to="/extensions/chrome">Chrome</Link>
-            <Link to="/extensions/firefox">Firefox</Link>
-            <Link to="/extensions/safari">Safari</Link>
-            <Link to="/extensions/edge">Edge</Link>
-          </NavMenu>
+          <NavLink to="/extensions/chrome" className="nav-btn">
+            Chrome
+          </NavLink>
           <NavLink to="/pricing" className="nav-btn">
             Pricing
           </NavLink>

@@ -5,6 +5,7 @@ import { useTool } from '../features/pdf/useTools'
 import { ToolCard } from '../features/pdf/ToolCard'
 import { authorPath, breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useSiteConfig } from '../admin/useSiteConfig'
+import { Avatar } from '../components/ui/Avatar'
 import '../content/blog.css'
 import '../features/pdf/tools.css'
 
@@ -61,8 +62,11 @@ export default function ClusterPage() {
         <span className="eyebrow">{cluster.posts.length}-part guide</span>
         <h1>{cluster.title}</h1>
         <div className="post-meta">
-          <span>
-            By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+          <span className="byline">
+            <Avatar src={cfg.author.photo} name={cfg.author.name} size={32} />
+            <span>
+              By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+            </span>
           </span>
           <span>{cluster.posts.length} guides</span>
         </div>

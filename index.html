@@ -9,7 +9,9 @@
     <title>PrintxPDF — Print web pages clean. Master your PDFs.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Only the mono face is design-independent; each design preset loads its own display/body
+         pair (see src/design/presets.ts), injected here as #pxp-design-font. -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

@@ -103,7 +103,7 @@ function pageHtml(shell, { title, description, canonical, keywords, schema, body
   const head = [
     `<title>${esc(title)}</title>`,
     `<meta name="description" content="${esc(description)}">`,
-    `<link rel="canonical" href="${esc(canonical)}">`,
+    canonical ? `<link rel="canonical" href="${esc(canonical)}">` : '',
     keywords?.length ? `<meta name="keywords" content="${esc(keywords.join(', '))}">` : '',
     `<meta name="robots" content="${noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'}">`,
     `<meta property="og:title" content="${esc(title)}">`,
@@ -172,7 +172,18 @@ async function main() {
     worksFor: publisher,
   }
   const org = { ...publisher, founder: person }
-  const byline = `<p class="byline">By <a href="${href(authorRoute)}">${esc(author.name)}</a> · ${esc(author.title)}</p>`
+  const avatar = author.photo ? `<img class="avatar" src="${esc(author.photo)}" alt="${esc(author.name)}" width="32" height="32">` : ''
+  const byline = `<p class="byline">${avatar}By <a href="${href(authorRoute)}">${esc(author.name)}</a> · ${esc(author.title)}</p>`
+  const authorBox = `<aside class="author-box">
+  ${author.photo ? `<img class="avatar" src="${esc(author.photo)}" alt="${esc(author.name)}" width="72" height="72">` : ''}
+  <div class="author-box-body">
+    <span class="label">Written by</span>
+    <h3><a href="${href(authorRoute)}">${esc(author.name)}</a></h3>
+    <p class="author-box-title">${esc(author.title)}</p>
+    ${author.bio ? `<p>${esc(author.bio)}</p>` : ''}
+    <p><a href="${href(authorRoute)}">All guides by ${esc(author.name.split(' ')[0])}</a></p>
+  </div>
+</aside>`
   const crumbs = (trail) => ({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -237,6 +248,7 @@ async function main() {
   ${blocksToHtml(p.body)}
   ${p.faqs?.length ? `<h2 id="faq">Frequently asked questions</h2>${p.faqs.map((f) => `<h3>${esc(f.q)}</h3><p>${rich(f.a)}</p>`).join('')}` : ''}
   ${p.relatedTools?.length ? `<h2>Tools</h2><ul>${p.relatedTools.map((t) => `<li><a href="${href(`/tools/${esc(t)}`)}">${esc(TOOLS.find((x) => x.slug === t)?.name || t)}</a></li>`).join('')}</ul>` : ''}
+  ${authorBox}
   ${p.relatedPosts?.length ? `<h2>Keep reading</h2><ul>${p.relatedPosts.map((s) => { const r = ALL_POSTS.find((x) => x.slug === s); return r ? `<li><a href="${href(`/blog/${r.cluster}/${r.slug}`)}">${esc(r.title)}</a></li>` : '' }).join('')}</ul>` : ''}
 </article>`
 
@@ -492,16 +504,17 @@ async function main() {
       ],
       links: [['/privacy', 'Privacy']],
     },
-    ...['chrome', 'firefox', 'safari', 'edge'].map((b) => ({
-      route: `/extensions/${b}`,
-      title: `Print Web Pages Cleanly in ${b[0].toUpperCase()}${b.slice(1)}`,
-      description: `Print or save any page as a clean PDF in ${b[0].toUpperCase()}${b.slice(1)}. Reader mode, the print dialog settings that matter, and a bookmarklet that works today with no install.`,
-      h1: `Turn any page into a clean PDF in ${b[0].toUpperCase()}${b.slice(1)}`,
+    {
+      route: '/extensions/chrome',
+      title: 'PrintxPDF for Chrome — Print Any Page Clean',
+      description: 'A Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comment walls stripped, ready to print or save as PDF. Free, and it reads nothing until you click it.',
+      h1: 'Turn any page into a clean PDF',
       body: [
-        `Remove ads, navigation and distractions from any web page before you print or save it as a PDF. The extension is not yet published to any store; the bookmarklet on this page works today in every browser with no install and no permissions.`,
+        'Click the toolbar button and the page you are on opens in the PrintxPDF cleaner, ready to print, save as PDF or email. Right-click entries clean the current page, a link you are hovering, or just the text you selected. It also works in Brave, Edge, Opera, Vivaldi and Arc, which all run Chrome extensions.',
+        'The extension is not in the Chrome Web Store yet, so it installs in developer mode: download the ZIP, unzip it, open chrome://extensions, turn on Developer mode and choose Load unpacked. It asks only for activeTab, contextMenus and storage — it cannot read pages in the background, sends nothing anywhere and contains no analytics. If you would rather install nothing, the bookmarklet on this page does the same job in any browser, including Firefox and Safari.',
       ],
       links: [['/print', 'Print a web page'], ['/blog/browser-extensions/bookmarklet-vs-extension', 'Bookmarklet vs extension']],
-    })),
+    },
   ]
 
   for (const pg of STATIC_PAGES) {
@@ -520,7 +533,22 @@ async function main() {
     count++
   }
 
-  console.log(`prerender: ${count} static pages written into dist/`)
+  // ---------- SPA shell ----------
+  // Routes with no prerendered file (/account, /signin, /admin/*) fall back to this. It must NOT
+  // be the home page: serving dist/index.html there flashed the home hero for a second before
+  // React replaced it with the real route. The shell carries the same <head> (design attribute,
+  // fonts) but an empty #root, so those routes paint nothing until the app renders.
+  const shellHtml = pageHtml(shell, {
+    noindex: true,
+    title: `${cfg?.site?.name || 'PrintxPDF'} — ${cfg?.site?.tagline || 'Print web pages clean. Master your PDFs.'}`,
+    description: cfg?.site?.description || '',
+    canonical: '',
+    bodyHtml: '',
+  })
+  await writeFile(path.join(DIST, 'app.html'), shellHtml)
+  await writeFile(path.join(DIST, '404.html'), shellHtml)
+
+  console.log(`prerender: ${count} static pages written into dist/ (plus app.html and 404.html shells)`)
 
 }
 

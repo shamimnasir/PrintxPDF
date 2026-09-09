@@ -14,7 +14,7 @@ export type DesignPreset = {
   tagline: string
   /** values written into cfg.theme when the preset is chosen */
   theme: { accent: string; accentFg: string; ink: string; borderWidth: number; radius: number }
-  /** Google Fonts families to load (css2 syntax), empty for blocks (already in index.html) */
+  /** Google Fonts families this preset needs; index.html only loads the design-independent mono */
   googleFamilies: string[]
   swatch: { bg: string; card: string; ink: string; accent: string; fontDisplay: string }
 }
@@ -25,7 +25,7 @@ export const DESIGNS: Record<DesignId, DesignPreset> = {
     name: 'Blocks',
     tagline: 'Electric brutalist: hard edges, thick rules, offset shadows.',
     theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0b0b0f', borderWidth: 3, radius: 0 },
-    googleFamilies: [],
+    googleFamilies: ['Archivo+Black', 'Archivo:wght@400;500;600;700;800;900'],
     swatch: { bg: '#ffffff', card: '#ffffff', ink: '#0b0b0f', accent: '#2b5bff', fontDisplay: "'Archivo Black', 'Archivo', Impact, sans-serif" },
   },
   paper: {
@@ -50,7 +50,7 @@ export const DESIGN_IDS: DesignId[] = ['blocks', 'paper', 'studio']
 
 export const isDesignId = (s: unknown): s is DesignId => typeof s === 'string' && DESIGN_IDS.some((id) => id === s)
 
-/** Google Fonts stylesheet for a preset's families; null when nothing extra is needed (blocks). */
+/** Google Fonts stylesheet for a preset's families; null only if a preset needs no extra face. */
 export function fontHref(id: DesignId): string | null {
   const families = DESIGNS[id].googleFamilies
   if (families.length === 0) return null

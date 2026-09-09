@@ -95,11 +95,11 @@ export const DEFAULT_CONFIG: SiteConfig = {
     name: 'Nasir Uddin Shamim',
     title: 'Founder, PrintxPDF',
     bio: 'Nasir builds PrintxPDF and writes every guide on it: how to print web pages without the clutter and how to get PDFs to behave, using tools that keep your files on your own computer.',
-    photo: '',
+    photo: '/author.jpg',
     links: { linkedin: '', x: '', github: '', website: '' },
   },
   announcement: { enabled: false, text: 'New: OCR now runs fully offline in your browser.', linkText: 'Try it', linkUrl: '/tools/ocr-pdf', dismissible: true },
-  theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0b0b0f', paper: '#ffffff', alarm: '#ff3b1f', defaultMode: 'system', borderWidth: 3, radius: 0, design: 'blocks' },
+  theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0f172a', paper: '#ffffff', alarm: '#ff3b1f', defaultMode: 'system', borderWidth: 1, radius: 12, design: 'studio' },
   home: {
     eyebrow: 'Free · Files stay on your device · Works offline once loaded',
     headline1: 'Cut the clutter.',

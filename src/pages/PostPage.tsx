@@ -4,6 +4,8 @@ import type { Block } from '../content/types'
 import { useTool } from '../features/pdf/useTools'
 import { articleSchema, authorPath, breadcrumbSchema, faqSchema, howToSchema, useSeo } from '../lib/seo'
 import { useSiteConfig } from '../admin/useSiteConfig'
+import { Avatar } from '../components/ui/Avatar'
+import { AuthorBox } from '../components/ui/AuthorBox'
 import '../content/blog.css'
 
 const slugify = (s: string) =>
@@ -228,8 +230,11 @@ export default function PostPage() {
           <header className="post-head">
             <h1>{post.title}</h1>
             <div className="post-meta">
-              <span>
-                By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+              <span className="byline">
+                <Avatar src={cfg.author.photo} name={cfg.author.name} size={32} />
+                <span>
+                  By <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link> · {cfg.author.title}
+                </span>
               </span>
               <span>Updated {new Date(post.updated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
               <span>{post.readMinutes} min read</span>
@@ -263,6 +268,8 @@ export default function PostPage() {
               </>
             )}
           </div>
+
+          <AuthorBox />
 
           {related.length > 0 && (
             <div style={{ marginTop: '3rem' }}>

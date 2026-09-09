@@ -63,7 +63,7 @@ async function main() {
     { loc: '/api', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/wordpress', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/website-button', pri: '0.6', freq: 'monthly', mod: today },
-    ...['chrome', 'firefox', 'safari', 'edge'].map((b) => ({ loc: `/extensions/${b}`, pri: '0.5', freq: 'monthly', mod: today })),
+    { loc: '/extensions/chrome', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/privacy', pri: '0.3', freq: 'yearly', mod: today },
     { loc: '/terms', pri: '0.3', freq: 'yearly', mod: today },
     ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}`, pri: t.status === 'best-effort' ? '0.4' : '0.8', freq: 'monthly', mod: today })),

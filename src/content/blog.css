@@ -325,3 +325,71 @@
   color: var(--fg-muted);
   white-space: nowrap;
 }
+
+/* ---------------------------------------------------------------- author */
+.avatar {
+  border-radius: 999px;
+  object-fit: cover;
+  border: var(--bw-thin) solid var(--line);
+  background: var(--bg-2);
+  display: inline-block;
+}
+
+.avatar-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--fg-muted);
+}
+
+.byline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author-box {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: var(--bw) solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  background: var(--card);
+}
+
+.author-box-body {
+  flex: 1;
+  min-width: 240px;
+}
+
+.author-box h3 {
+  margin: 0.35rem 0 0.15rem;
+  font-size: 1.35rem;
+  text-transform: var(--tt-ui);
+  letter-spacing: var(--ls-ui);
+}
+
+.author-box h3 a {
+  text-decoration: none;
+}
+
+.author-box h3 a:hover {
+  color: var(--link);
+}
+
+.author-box-title {
+  margin: 0 0 0.6rem;
+  color: var(--fg-muted);
+  font-weight: 600;
+}
+
+.author-box p {
+  margin: 0 0 0.9rem;
+}

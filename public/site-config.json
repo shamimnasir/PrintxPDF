@@ -21,12 +21,13 @@
   "theme": {
     "accent": "#2b5bff",
     "accentFg": "#ffffff",
-    "ink": "#0b0b0f",
+    "ink": "#0f172a",
     "paper": "#ffffff",
     "alarm": "#ff3b1f",
     "defaultMode": "system",
-    "borderWidth": 3,
-    "radius": 0
+    "borderWidth": 1,
+    "radius": 12,
+    "design": "studio"
   },
   "home": {
     "eyebrow": "Free · Files stay on your device · Works offline once loaded",
@@ -98,5 +99,17 @@
   },
   "billing": {
     "portalLoginUrl": "https://billing.stripe.com/p/login/test_7sY6oG0XFczs4LedpidnW00"
+  },
+  "author": {
+    "name": "Nasir Uddin Shamim",
+    "title": "Founder, PrintxPDF",
+    "bio": "Nasir builds PrintxPDF and writes every guide on it: how to print web pages without the clutter and how to get PDFs to behave, using tools that keep your files on your own computer.",
+    "photo": "/author.jpg",
+    "links": {
+      "linkedin": "",
+      "x": "",
+      "github": "",
+      "website": ""
+    }
   }
 }
