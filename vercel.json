@@ -21,6 +21,186 @@
       ],
       "destination": "https://printxpdf.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/blog/browser-extensions",
+      "destination": "/blog/extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/browser-extensions/:post",
+      "destination": "/blog/extensions/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/compress-pdf",
+      "destination": "/blog/compress",
+      "permanent": true
+    },
+    {
+      "source": "/blog/compress-pdf/:post",
+      "destination": "/blog/compress/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/convert-from-pdf",
+      "destination": "/blog/from-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/blog/convert-from-pdf/:post",
+      "destination": "/blog/from-pdf/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/convert-to-pdf",
+      "destination": "/blog/to-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/blog/convert-to-pdf/:post",
+      "destination": "/blog/to-pdf/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/merge-pdf",
+      "destination": "/blog/merge",
+      "permanent": true
+    },
+    {
+      "source": "/blog/merge-pdf/:post",
+      "destination": "/blog/merge/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ocr-scanned-documents",
+      "destination": "/blog/ocr",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ocr-scanned-documents/:post",
+      "destination": "/blog/ocr/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pdf-images",
+      "destination": "/blog/images",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pdf-images/:post",
+      "destination": "/blog/images/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pdf-privacy",
+      "destination": "/blog/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pdf-privacy/:post",
+      "destination": "/blog/privacy/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/print-recipes",
+      "destination": "/blog/recipes",
+      "permanent": true
+    },
+    {
+      "source": "/blog/print-recipes/:post",
+      "destination": "/blog/recipes/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/print-web-pages",
+      "destination": "/blog/print",
+      "permanent": true
+    },
+    {
+      "source": "/blog/print-web-pages/:post",
+      "destination": "/blog/print/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/publishers-wordpress",
+      "destination": "/blog/publishers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/publishers-wordpress/:post",
+      "destination": "/blog/publishers/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qr-codes",
+      "destination": "/blog/qr",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qr-codes/:post",
+      "destination": "/blog/qr/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/save-paper-ink",
+      "destination": "/blog/save-ink",
+      "permanent": true
+    },
+    {
+      "source": "/blog/save-paper-ink/:post",
+      "destination": "/blog/save-ink/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/save-webpage-as-pdf",
+      "destination": "/blog/save-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/blog/save-webpage-as-pdf/:post",
+      "destination": "/blog/save-pdf/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sign-pdf",
+      "destination": "/blog/sign",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sign-pdf/:post",
+      "destination": "/blog/sign/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/split-pdf",
+      "destination": "/blog/split",
+      "permanent": true
+    },
+    {
+      "source": "/blog/split-pdf/:post",
+      "destination": "/blog/split/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/students-research",
+      "destination": "/blog/students",
+      "permanent": true
+    },
+    {
+      "source": "/blog/students-research/:post",
+      "destination": "/blog/students/:post",
+      "permanent": true
+    },
+    {
+      "source": "/blog/watermark-page-numbers",
+      "destination": "/blog/watermark",
+      "permanent": true
+    },
+    {
+      "source": "/blog/watermark-page-numbers/:post",
+      "destination": "/blog/watermark/:post",
+      "permanent": true
     }
   ],
   "rewrites": [

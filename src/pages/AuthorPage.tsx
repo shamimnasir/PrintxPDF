@@ -19,7 +19,7 @@ export default function AuthorPage() {
   const first = a.name.split(' ')[0]
 
   useSeo({
-    title: `${a.name} — ${a.title}`,
+    title: `${a.name} | ${a.title}`,
     description: (a.bio || `${a.name} is the founder of ${cfg.site.name} and writes its guides on printing web pages cleanly and working with PDF files.`).slice(0, 158),
     path,
     noindex: !valid,

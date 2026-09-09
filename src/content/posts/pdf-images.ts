@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const pdfImages: Cluster = {
-  slug: 'pdf-images',
+  slug: 'images',
   name: 'PDFs and images',
   title: 'PDFs and images: convert, extract and print at the right resolution',
   metaTitle: 'PDF to Image: Convert, Extract and Print Right',
@@ -18,7 +18,7 @@ export const pdfImages: Cluster = {
   posts: [
     {
       slug: 'pdf-to-jpg',
-      cluster: 'pdf-images',
+      cluster: 'images',
       title: 'How to convert PDF pages to JPG or PNG images',
       metaTitle: 'How to Convert PDF Pages to JPG or PNG Images',
       metaDescription:
@@ -49,7 +49,7 @@ export const pdfImages: Cluster = {
             ['8.33×', '600', '5100 × 6600 px', '4960 × 7016 px', 'OCR of very small type, archival capture'],
           ],
         },
-        { t: 'p', x: 'The default in most converters is 144 DPI, and for most jobs that is right. Only step up to 300 if the image is going on paper. See [what resolution you need for printing](/blog/pdf-images/best-image-format-for-print) for the full reasoning behind the 300 DPI number.' },
+        { t: 'p', x: 'The default in most converters is 144 DPI, and for most jobs that is right. Only step up to 300 if the image is going on paper. See [what resolution you need for printing](/blog/images/best-image-format-for-print) for the full reasoning behind the 300 DPI number.' },
         { t: 'h2', x: 'Step 2: Convert the file' },
         {
           t: 'steps',
@@ -75,9 +75,9 @@ export const pdfImages: Cluster = {
             ['WebP, quality 90', '95 KB', 'Crisp', 'Supported'],
           ],
         },
-        { t: 'p', x: 'For a page that is one large photograph, those numbers invert: the PNG balloons to several megabytes while the JPG stays small and looks identical. [PNG versus JPG for PDF pages](/blog/pdf-images/pdf-to-png-transparent) walks through the edge cases.' },
+        { t: 'p', x: 'For a page that is one large photograph, those numbers invert: the PNG balloons to several megabytes while the JPG stays small and looks identical. [PNG versus JPG for PDF pages](/blog/images/pdf-to-png-transparent) walks through the edge cases.' },
         { t: 'h2', x: 'Rendering a page is not the same as extracting a photo' },
-        { t: 'p', x: 'If your goal is to recover a photograph that somebody placed into the PDF, rendering the page is the wrong tool. Rendering gives you a picture of the whole page at the size you chose, including the surrounding text and margins, and the photo inside it has been resampled. Extraction pulls the original file back out untouched. See [extracting the original images from a PDF](/blog/pdf-images/extract-images-from-pdf).' },
+        { t: 'p', x: 'If your goal is to recover a photograph that somebody placed into the PDF, rendering the page is the wrong tool. Rendering gives you a picture of the whole page at the size you chose, including the surrounding text and margins, and the photo inside it has been resampled. Extraction pulls the original file back out untouched. See [extracting the original images from a PDF](/blog/images/extract-images-from-pdf).' },
         { t: 'h2', x: 'Other ways to do it' },
         {
           t: 'table',
@@ -93,10 +93,10 @@ export const pdfImages: Cluster = {
         { t: 'code', x: '# Poppler: pages 3 to 5 as 300 DPI JPEGs named page-03.jpg and so on\npdftoppm -jpeg -r 300 -f 3 -l 5 report.pdf page\n\n# ImageMagick: every page as a 150 DPI PNG\nmagick -density 150 report.pdf page-%02d.png' },
         { t: 'warn', x: 'Do not screenshot a PDF page when you need a usable image. A screenshot captures your display, so you inherit the viewer zoom level, any scroll bars, and roughly 96 DPI. Printing that gives you soft, fuzzy text that no amount of sharpening recovers.' },
         { t: 'h2', x: 'Keeping the file size under control' },
-        { t: 'p', x: 'A 300 DPI PNG of a Letter page is 2550 × 3300 pixels — about 8.4 million pixels, which commonly lands between 1 MB and 4 MB. Three practical ways to shrink it: drop to 144 DPI if the image is only going on screen; switch to JPG at quality 85 if the page has photos; or crop the page to just the region you need before exporting.' },
+        { t: 'p', x: 'A 300 DPI PNG of a Letter page is 2550 × 3300 pixels, about 8.4 million pixels, which commonly lands between 1 MB and 4 MB. Three practical ways to shrink it: drop to 144 DPI if the image is only going on screen; switch to JPG at quality 85 if the page has photos; or crop the page to just the region you need before exporting.' },
         { t: 'tip', x: 'Going the other way is just as easy. If you have a folder of photos or scans and you want one document, [combine them into a single PDF](/tools/jpg-to-pdf) instead of emailing twelve attachments.' },
         { t: 'h2', x: 'After the conversion' },
-        { t: 'p', x: 'Images are bigger than text, so a PDF rebuilt from page images grows fast. If you convert a document to images and then back to a PDF, expect the result to be several times larger than the original and no longer searchable — you will need to [OCR it](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) to get the text back. When size becomes a problem, compress the file before you send it anywhere.' },
+        { t: 'p', x: 'Images are bigger than text, so a PDF rebuilt from page images grows fast. If you convert a document to images and then back to a PDF, expect the result to be several times larger than the original and no longer searchable, you will need to [OCR it](/blog/ocr/how-to-ocr-a-scanned-pdf) to get the text back. When size becomes a problem, compress the file before you send it anywhere.' },
       ],
       faqs: [
         { q: 'What DPI should I use to convert a PDF to JPG?', a: 'Use 144 DPI for anything viewed on a screen and 300 DPI for anything printed. 72 DPI is only useful for thumbnails, and going above 300 mostly produces very large files without visible improvement, except for OCR of tiny type.' },
@@ -110,7 +110,7 @@ export const pdfImages: Cluster = {
     },
     {
       slug: 'extract-images-from-pdf',
-      cluster: 'pdf-images',
+      cluster: 'images',
       title: 'How to extract the original images from a PDF',
       metaTitle: 'Extract the Original Images From a PDF',
       metaDescription:
@@ -145,11 +145,11 @@ export const pdfImages: Cluster = {
         {
           t: 'ul',
           items: [
-            '**DCTDecode** — the object holds JPEG data verbatim. Extraction is a straight copy: the JPEG that comes out is the JPEG that went in, with zero additional loss.',
-            '**FlateDecode** — raw pixels compressed losslessly. These come out best as PNG, and they are exactly as sharp as the day they were placed.',
-            '**JPXDecode** — JPEG 2000, common in scanned archives and some Mac-created PDFs. Fewer editors open it, so converting to PNG or TIFF on the way out is usually sensible.',
-            '**CCITTFaxDecode** and **JBIG2Decode** — one-bit black-and-white scans, the classic output of a fax machine or a document scanner in text mode. Tiny files, no greys.',
-            '**Inline images** — small graphics written directly into the page content stream rather than stored as separate objects. Some extractors skip these entirely.',
+            '**DCTDecode**, the object holds JPEG data verbatim. Extraction is a straight copy: the JPEG that comes out is the JPEG that went in, with zero additional loss.',
+            '**FlateDecode**, raw pixels compressed losslessly. These come out best as PNG, and they are exactly as sharp as the day they were placed.',
+            '**JPXDecode**, JPEG 2000, common in scanned archives and some Mac-created PDFs. Fewer editors open it, so converting to PNG or TIFF on the way out is usually sensible.',
+            '**CCITTFaxDecode** and **JBIG2Decode**, one-bit black-and-white scans, the classic output of a fax machine or a document scanner in text mode. Tiny files, no greys.',
+            '**Inline images**, small graphics written directly into the page content stream rather than stored as separate objects. Some extractors skip these entirely.',
           ],
         },
         { t: 'h2', x: 'Extract images in your browser' },
@@ -183,9 +183,9 @@ export const pdfImages: Cluster = {
         { t: 'h2', x: 'When extraction cannot help' },
         { t: 'p', x: 'Charts, logos and diagrams built in Illustrator or exported from a spreadsheet are usually **vector art**: paths and fills, not pixels. There is no image object to extract, so `pdfimages` finds nothing on a page that visibly contains a chart. Render that page at 300 or 600 DPI instead, or crop it afterwards. Conversely, a scanned document is the opposite case: the entire page is one giant image, so extracting it gives you the full sheet including the margins.' },
         { t: 'h2', x: 'Before you reuse anything' },
-        { t: 'note', x: 'Extracted images frequently carry their original EXIF block, including camera model, timestamps and sometimes GPS coordinates. That is useful when you are recovering your own archive and a problem when you are republishing someone else’s file. Strip it first — see [removing metadata from a PDF](/blog/pdf-privacy/remove-metadata-from-pdf) for the same idea applied to the document itself.' },
+        { t: 'note', x: 'Extracted images frequently carry their original EXIF block, including camera model, timestamps and sometimes GPS coordinates. That is useful when you are recovering your own archive and a problem when you are republishing someone else’s file. Strip it first, see [removing metadata from a PDF](/blog/privacy/remove-metadata-from-pdf) for the same idea applied to the document itself.' },
         { t: 'p', x: 'Being able to pull an image out of a document does not grant you a licence to use it. Stock photos, press images and figures from journals are routinely embedded in PDFs under terms that cover that one publication only.' },
-        { t: 'p', x: 'Once you have the images you want, you can [rebuild them into a clean PDF](/tools/jpg-to-pdf), or read up on [the resolution you need for printing](/blog/pdf-images/best-image-format-for-print) before committing them to paper.' },
+        { t: 'p', x: 'Once you have the images you want, you can [rebuild them into a clean PDF](/tools/jpg-to-pdf), or read up on [the resolution you need for printing](/blog/images/best-image-format-for-print) before committing them to paper.' },
       ],
       faqs: [
         { q: 'What is the difference between extracting and converting a PDF to images?', a: 'Converting renders each page into a new picture at a resolution you choose. Extracting copies out the image objects that were already inside the file, at their original pixel dimensions and with no additional compression.' },
@@ -199,7 +199,7 @@ export const pdfImages: Cluster = {
     },
     {
       slug: 'pdf-to-png-transparent',
-      cluster: 'pdf-images',
+      cluster: 'images',
       title: 'PNG vs JPG for PDF pages: which should you pick?',
       metaTitle: 'PNG vs JPG for PDF Pages: Which to Pick',
       metaDescription:
@@ -237,12 +237,12 @@ export const pdfImages: Cluster = {
         { t: 'p', x: 'This gets worse as the resolution drops. A 300 DPI JPG of a page of body text looks fine because each letter is 30 or 40 pixels tall. The same page at 72 DPI, where a letter is 8 pixels tall, is a mess in JPG and still perfectly legible in PNG.' },
         { t: 'tip', x: 'A simple rule that almost always works: if you would call the page a **document**, use PNG. If you would call it a **photo**, use JPG. Mixed pages follow whichever dominates the area.' },
         { t: 'h2', x: 'Transparency' },
-        { t: 'p', x: 'JPEG has no alpha channel at all, so a transparent background gets composited onto something opaque — usually white, occasionally black — during export. PNG stores a full 8-bit alpha channel, meaning each pixel can be anywhere from fully opaque to fully clear, with soft anti-aliased edges in between.' },
+        { t: 'p', x: 'JPEG has no alpha channel at all, so a transparent background gets composited onto something opaque, usually white, occasionally black, during export. PNG stores a full 8-bit alpha channel, meaning each pixel can be anywhere from fully opaque to fully clear, with soft anti-aliased edges in between.' },
         { t: 'p', x: 'This matters for the specific job people search for: getting a PDF page out with a transparent background, so a logo or a stamp can sit on top of something else. Two things to know before you try it.' },
         {
           t: 'ul',
           items: [
-            'Most PDF pages **have a real white background**. The page paints a white rectangle before it draws anything else, so a transparent render still comes out white. Only PDFs that were authored without a background rectangle — logos, single-object exports, some Illustrator files — render transparent.',
+            'Most PDF pages **have a real white background**. The page paints a white rectangle before it draws anything else, so a transparent render still comes out white. Only PDFs that were authored without a background rectangle, logos, single-object exports, some Illustrator files, render transparent.',
             'Renderers **default to compositing onto white** because that is what a printed page looks like. You need a converter that exposes a transparent-background option to get the alpha channel through.',
           ],
         },
@@ -256,10 +256,10 @@ export const pdfImages: Cluster = {
           ],
         },
         { t: 'h2', x: 'Screenshots and scans' },
-        { t: 'p', x: 'Screenshots are the strongest case for PNG. A user interface is flat colour, thin one-pixel borders and small text — everything JPEG handles badly. A PNG screenshot is often *smaller* than the JPG, because large areas of identical colour compress extremely well under DEFLATE.' },
-        { t: 'p', x: 'Scans go the other way. A scanned page is photographic in nature: paper texture, scanner noise and slight tonal variation everywhere. PNG has to store all of that noise faithfully, so a 300 DPI PNG scan can hit 8 MB per page while a quality-85 JPG of the same scan is 400 KB and looks the same. Scanned archives use JPEG for exactly this reason. If your scans are going into a document, [compressing the PDF](/blog/compress-pdf/how-to-compress-a-pdf) usually just means re-encoding those images.' },
+        { t: 'p', x: 'Screenshots are the strongest case for PNG. A user interface is flat colour, thin one-pixel borders and small text, everything JPEG handles badly. A PNG screenshot is often *smaller* than the JPG, because large areas of identical colour compress extremely well under DEFLATE.' },
+        { t: 'p', x: 'Scans go the other way. A scanned page is photographic in nature: paper texture, scanner noise and slight tonal variation everywhere. PNG has to store all of that noise faithfully, so a 300 DPI PNG scan can hit 8 MB per page while a quality-85 JPG of the same scan is 400 KB and looks the same. Scanned archives use JPEG for exactly this reason. If your scans are going into a document, [compressing the PDF](/blog/compress/how-to-compress-a-pdf) usually just means re-encoding those images.' },
         { t: 'h2', x: 'What about WebP?' },
-        { t: 'p', x: 'WebP does both jobs: lossless mode for graphics, lossy mode for photos, and an alpha channel in both. It typically lands 25 to 35 percent smaller than the equivalent PNG or JPG. Every current browser supports it. The catch is everything that is not a browser — older printing workflows, some office suites and a few document management systems still reject it — so use WebP when the destination is the web and PNG or JPG when the destination is anything else.' },
+        { t: 'p', x: 'WebP does both jobs: lossless mode for graphics, lossy mode for photos, and an alpha channel in both. It typically lands 25 to 35 percent smaller than the equivalent PNG or JPG. Every current browser supports it. The catch is everything that is not a browser, older printing workflows, some office suites and a few document management systems still reject it, so use WebP when the destination is the web and PNG or JPG when the destination is anything else.' },
         { t: 'h2', x: 'Quick decision guide' },
         {
           t: 'table',
@@ -276,21 +276,21 @@ export const pdfImages: Cluster = {
           ],
         },
         { t: 'cta', tool: 'pdf-to-jpg', x: 'Export any PDF page as PNG or JPG, at the resolution you choose, entirely in your browser.' },
-        { t: 'note', x: 'Whichever you pick, remember that an exported page image is no longer searchable text — it is pixels. If you need the words back, run the image through [OCR](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) or keep the original PDF alongside the image.' },
+        { t: 'note', x: 'Whichever you pick, remember that an exported page image is no longer searchable text, it is pixels. If you need the words back, run the image through [OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) or keep the original PDF alongside the image.' },
       ],
       faqs: [
         { q: 'Is PNG or JPG better for a PDF page?', a: 'PNG for pages of text, tables, diagrams or screenshots, because it keeps edges pixel-exact. JPG for pages that are mostly photographs, because it is around three times smaller with no visible difference on continuous-tone images.' },
         { q: 'Can I export a PDF page with a transparent background?', a: 'Only if the page does not paint its own background. Most documents draw a white rectangle first, so the export is white regardless of the setting. Logos and single-object PDFs usually do render with transparency.' },
         { q: 'Why does my JPG text look fuzzy?', a: 'JPEG discards high-frequency detail in 8 × 8 blocks, and the hard edges of letters are exactly that detail. The result is a grey halo around characters. Export as PNG, or raise both the quality setting and the resolution.' },
         { q: 'Does PNG lose quality when I save it again?', a: 'No. PNG compression is lossless, so you can open and re-save a PNG any number of times and the pixels stay identical. JPG loses a little detail on every save, which compounds over several rounds.' },
-        { q: 'Should I use WebP instead?', a: 'Use WebP when the image is going onto a web page — it is typically 25 to 35 percent smaller than PNG or JPG with an alpha channel in both modes. Stick with PNG or JPG for print shops, office documents and older software.' },
+        { q: 'Should I use WebP instead?', a: 'Use WebP when the image is going onto a web page, it is typically 25 to 35 percent smaller than PNG or JPG with an alpha channel in both modes. Stick with PNG or JPG for print shops, office documents and older software.' },
       ],
       relatedTools: ['pdf-to-jpg', 'jpg-to-pdf'],
       relatedPosts: ['pdf-to-jpg', 'best-image-format-for-print', 'extract-images-from-pdf'],
     },
     {
       slug: 'best-image-format-for-print',
-      cluster: 'pdf-images',
+      cluster: 'images',
       title: 'What resolution and format do you need for printing?',
       metaTitle: 'Print Resolution and Format: The 300 DPI Rule',
       metaDescription:
@@ -339,7 +339,7 @@ export const pdfImages: Cluster = {
           ],
         },
         { t: 'h2', x: 'CMYK and RGB' },
-        { t: 'p', x: 'Screens emit light and mix red, green and blue. Presses lay ink on paper that reflects it. The two gamuts overlap but are not the same shape, so some colours you see on screen — saturated oranges, vivid cyans, electric blues — cannot be reproduced with process inks. They are converted to the nearest printable colour, which usually reads as duller.' },
+        { t: 'p', x: 'Screens emit light and mix red, green and blue. Presses lay ink on paper that reflects it. The two gamuts overlap but are not the same shape, so some colours you see on screen, saturated oranges, vivid cyans, electric blues, cannot be reproduced with process inks. They are converted to the nearest printable colour, which usually reads as duller.' },
         {
           t: 'ul',
           items: [
@@ -362,11 +362,11 @@ export const pdfImages: Cluster = {
             ['SVG / AI / EPS', 'Logos, line art, anything scaled large', 'Vector: resolution-independent, so DPI does not apply.'],
           ],
         },
-        { t: 'p', x: 'For a document rather than a single image, PDF beats all of them. It carries text as text, so type prints at the printer’s full resolution rather than at whatever DPI you rasterised to. That is why [saving a web page as a PDF](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome) prints far more crisply than screenshotting it.' },
+        { t: 'p', x: 'For a document rather than a single image, PDF beats all of them. It carries text as text, so type prints at the printer’s full resolution rather than at whatever DPI you rasterised to. That is why [saving a web page as a PDF](/blog/save-pdf/save-webpage-as-pdf-chrome) prints far more crisply than screenshotting it.' },
         { t: 'h2', x: 'The upscaling myth' },
-        { t: 'p', x: 'Enlarging an image in Photoshop or any other editor does not recover detail. Traditional interpolation — bicubic, Lanczos — examines neighbouring pixels and guesses the values in between. The result has more pixels and exactly the same amount of real information, spread thinner. A 600 × 400 photo resampled to 3000 × 2000 is a soft 600 × 400 photo with a bigger file size.' },
-        { t: 'p', x: 'Modern AI upscalers are better at this and can produce a convincing 2× enlargement. But they **invent** plausible detail from a trained model rather than recovering what was there — fine for a decorative background, a serious problem for a product photo or a document scan.' },
-        { t: 'warn', x: 'Never upscale text or a scanned document to hit a DPI target. Rescan it at the correct resolution instead. Upscaled type looks visibly soft on paper and [wrecks OCR accuracy](/blog/ocr-scanned-documents/improve-ocr-accuracy), because the character shapes have been smeared by interpolation.' },
+        { t: 'p', x: 'Enlarging an image in Photoshop or any other editor does not recover detail. Traditional interpolation, bicubic, Lanczos, examines neighbouring pixels and guesses the values in between. The result has more pixels and exactly the same amount of real information, spread thinner. A 600 × 400 photo resampled to 3000 × 2000 is a soft 600 × 400 photo with a bigger file size.' },
+        { t: 'p', x: 'Modern AI upscalers are better at this and can produce a convincing 2× enlargement. But they **invent** plausible detail from a trained model rather than recovering what was there, fine for a decorative background, a serious problem for a product photo or a document scan.' },
+        { t: 'warn', x: 'Never upscale text or a scanned document to hit a DPI target. Rescan it at the correct resolution instead. Upscaled type looks visibly soft on paper and [wrecks OCR accuracy](/blog/ocr/improve-ocr-accuracy), because the character shapes have been smeared by interpolation.' },
         { t: 'h2', x: 'A pre-print checklist' },
         {
           t: 'ol',
@@ -381,12 +381,12 @@ export const pdfImages: Cluster = {
           ],
         },
         { t: 'cta', tool: 'pdf-to-jpg', x: 'Need a page as a print-ready image? Render it at 300 DPI rather than screenshotting the screen.' },
-        { t: 'p', x: 'If your finished file is now enormous, that is normal for print resolution — but do not compress it before the printer sees it. [Compression](/tools/compress-pdf) is for email and archives, not for the press.' },
+        { t: 'p', x: 'If your finished file is now enormous, that is normal for print resolution, but do not compress it before the printer sees it. [Compression](/tools/compress-pdf) is for email and archives, not for the press.' },
       ],
       faqs: [
         { q: 'How many pixels do I need to print an A4 page?', a: 'A4 at 300 DPI is 2480 × 3508 pixels, about 8.7 megapixels. At 150 DPI, acceptable for drafts and internal copies, it is 1240 × 1754 pixels. Below roughly 150 DPI the softness becomes obvious at reading distance.' },
         { q: 'Is 300 DPI always necessary?', a: 'No. 300 DPI assumes the piece is held at reading distance. A poster viewed from a metre away looks sharp at 150 DPI, a trade-show banner at 100, and a billboard at 15 to 30. Match the resolution to the viewing distance.' },
-        { q: 'Should I convert my images to CMYK before printing?', a: 'For home and office printers, no — send RGB and let the driver convert. For commercial offset printing, ask the printer: many now prefer RGB with an embedded profile, while others require a specific CMYK profile.' },
+        { q: 'Should I convert my images to CMYK before printing?', a: 'For home and office printers, no, send RGB and let the driver convert. For commercial offset printing, ask the printer: many now prefer RGB with an embedded profile, while others require a specific CMYK profile.' },
         { q: 'Can I make a low-resolution image printable by upscaling it?', a: 'Not really. Interpolation adds pixels without adding information, and AI upscalers invent plausible detail rather than recovering the original. Both are acceptable for decorative images and unsuitable for documents, product photos or evidence.' },
         { q: 'What is the difference between DPI and PPI?', a: 'PPI describes pixels in a digital image; DPI describes ink dots a printer lays down. They are used interchangeably in everyday practice, but a 4800 dpi inkjet still only needs a 300 PPI image, because many dots make up one pixel.' },
       ],

@@ -496,7 +496,7 @@ export default function EditTool() {
             </div>
             <div>
               <label className="label" htmlFor="ed-size">
-                Font size — {selected.size} pt
+                Font size, {selected.size} pt
               </label>
               <input id="ed-size" type="range" min={6} max={72} value={selected.size} onChange={(e) => patch(selected.id, { size: Number(e.target.value) })} />
             </div>
@@ -527,7 +527,7 @@ export default function EditTool() {
             </div>
             <div>
               <label className="label" htmlFor="ed-ro">
-                Opacity — {Math.round(selected.opacity * 100)}%
+                Opacity, {Math.round(selected.opacity * 100)}%
               </label>
               <input id="ed-ro" type="range" min={5} max={100} value={Math.round(selected.opacity * 100)} onChange={(e) => patch(selected.id, { opacity: Number(e.target.value) / 100 })} />
             </div>
@@ -556,7 +556,7 @@ export default function EditTool() {
           <>
             <div>
               <label className="label" htmlFor="ed-dsize">
-                Text size — {size} pt
+                Text size, {size} pt
               </label>
               <input id="ed-dsize" type="range" min={6} max={72} value={size} onChange={(e) => setSize(Number(e.target.value))} />
             </div>
@@ -578,13 +578,13 @@ export default function EditTool() {
             </div>
             <div>
               <label className="label" htmlFor="ed-stroke">
-                Stroke / ink width — {stroke} pt
+                Stroke / ink width, {stroke} pt
               </label>
               <input id="ed-stroke" type="range" min={1} max={16} value={stroke} onChange={(e) => setStroke(Number(e.target.value))} />
             </div>
             <div>
               <label className="label" htmlFor="ed-op">
-                Rectangle opacity — {Math.round(opacity * 100)}%
+                Rectangle opacity, {Math.round(opacity * 100)}%
               </label>
               <input id="ed-op" type="range" min={5} max={100} value={Math.round(opacity * 100)} onChange={(e) => setOpacity(Number(e.target.value) / 100)} />
             </div>
@@ -596,7 +596,7 @@ export default function EditTool() {
             Image to place
           </label>
           <input id="ed-img" className="input" type="file" accept="image/png,image/jpeg" onChange={(e) => pickImage(e.target.files?.[0])} />
-          {pending && <p className="muted" style={{ margin: '0.4rem 0 0', fontSize: '0.8rem' }}>Ready — click the page to drop it in.</p>}
+          {pending && <p className="muted" style={{ margin: '0.4rem 0 0', fontSize: '0.8rem' }}>Ready, click the page to drop it in.</p>}
         </div>
 
         <button className="btn btn-acid btn-lg btn-block" disabled={!items.length || busy} onClick={exportPdf}>
@@ -604,7 +604,7 @@ export default function EditTool() {
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
           Ctrl/Cmd+Z undoes the last change. Text is written with Helvetica; other fonts are not embedded. Everything is
-          stamped onto the page, so the original text underneath is untouched — use Redact PDF to remove content.
+          stamped onto the page, so the original text underneath is untouched, use Redact PDF to remove content.
         </p>
       </div>
     </div>

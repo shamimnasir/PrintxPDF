@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Area, Card, Color, ListEditor, Num, Text, Toggle } from './fields'
+import { Area, Card, Color, ListEditor, Num, Photo, Text, Toggle } from './fields'
 import { clearHits, discardDraft, exportConfig, getHits, importCarriesCode, importConfig, setPasscode, updateConfig, type SiteConfig } from './config'
 import { inkIsTooLight } from './RuntimeEffects'
 import { useToast } from '../components/ui/Toast'
@@ -120,7 +120,7 @@ export function General({ cfg }: P) {
         <Text label="Name" value={cfg.author.name} onChange={(v) => set('author', { name: v })} hint="Changing the name changes the author page URL (/author/<name>)." />
         <Text label="Title" value={cfg.author.title} onChange={(v) => set('author', { title: v })} />
         <Area label="Short bio" rows={3} value={cfg.author.bio} onChange={(v) => set('author', { bio: v })} />
-        <Text label="Photo URL" value={cfg.author.photo} onChange={(v) => set('author', { photo: v })} placeholder="https://…/photo.jpg" hint="Square, at least 400×400. Leave empty to show none." />
+        <Photo label="Photo" value={cfg.author.photo} onChange={(v) => set('author', { photo: v })} hint="Upload a square JPG or PNG (it is resized to 512px and stored in the config), or paste a URL. Publish to make it live." />
         <Text label="LinkedIn" value={cfg.author.links.linkedin} onChange={(v) => set('author', { links: { ...cfg.author.links, linkedin: v } })} placeholder="https://www.linkedin.com/in/…" />
         <Text label="X / Twitter" value={cfg.author.links.x} onChange={(v) => set('author', { links: { ...cfg.author.links, x: v } })} placeholder="https://x.com/…" />
         <Text label="GitHub" value={cfg.author.links.github} onChange={(v) => set('author', { links: { ...cfg.author.links, github: v } })} placeholder="https://github.com/…" />
@@ -357,8 +357,8 @@ export function Content({ cfg }: P) {
                 </summary>
                 <div style={{ paddingTop: '0.9rem' }}>
                   <Text label="Title" value={ov.title ?? p.title} onChange={(v) => patch({ title: v })} />
-                  <Text label="Meta title" value={ov.metaTitle ?? p.metaTitle} onChange={(v) => patch({ metaTitle: v })} hint={`${(ov.metaTitle ?? p.metaTitle).length} characters — aim for under 60.`} />
-                  <Area label="Meta description" rows={2} value={ov.metaDescription ?? p.metaDescription} onChange={(v) => patch({ metaDescription: v })} hint={`${(ov.metaDescription ?? p.metaDescription).length} characters — aim for 140-158.`} />
+                  <Text label="Meta title" value={ov.metaTitle ?? p.metaTitle} onChange={(v) => patch({ metaTitle: v })} hint={`${(ov.metaTitle ?? p.metaTitle).length} characters, aim for under 60.`} />
+                  <Area label="Meta description" rows={2} value={ov.metaDescription ?? p.metaDescription} onChange={(v) => patch({ metaDescription: v })} hint={`${(ov.metaDescription ?? p.metaDescription).length} characters, aim for 140-158.`} />
                   <Area label="Short answer" rows={3} value={ov.answer ?? p.answer} onChange={(v) => patch({ answer: v })} hint="40-60 words. This is the block featured snippets and AI assistants lift." />
                   <div className="row" style={{ gap: '0.5rem' }}>
                     <button className="btn btn-sm" onClick={() => toggle(p.slug)}>

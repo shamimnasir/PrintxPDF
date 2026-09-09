@@ -11,7 +11,7 @@ export default function ToolsIndex() {
   const cats = Object.keys(CATEGORY_LABEL) as ToolCategory[]
   const match = (t: ToolMeta) => !q || `${t.name} ${t.short} ${t.description}`.toLowerCase().includes(q.toLowerCase())
   useSeo({
-    title: `All ${TOOLS.length} PDF Tools — Free, In Your Browser`,
+    title: `All ${TOOLS.length} PDF Tools | Free, In Your Browser`,
     description: `Merge, split, compress, convert, sign, watermark and OCR PDFs free. ${TOOLS.length} tools that run in your browser with no upload and no sign-up.`,
     path: '/tools',
     keywords: ['free pdf tools', 'merge pdf', 'compress pdf', 'pdf converter', 'sign pdf online'],
@@ -36,7 +36,7 @@ export default function ToolsIndex() {
         {TOOLS.length} tools · {TOOLS.filter((t) => t.status === 'real').length} fully in-browser
       </span>
       <h1>All PDF tools</h1>
-      <p className="lead">Every tool tells you up front whether it runs in your browser, is best-effort, or runs on our server — and what happens to your file when it does.</p>
+      <p className="lead">Every tool tells you up front whether it runs in your browser, is best-effort, or runs on our server, and what happens to your file when it does.</p>
       <input className="input" style={{ maxWidth: 480, marginBottom: '2rem' }} placeholder="Search tools…" value={q} onChange={(e) => setQ(e.target.value)} />
 
       {cats.map((c) => {

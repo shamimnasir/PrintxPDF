@@ -24,7 +24,7 @@ function Rich({ x }: { x: string }) {
   let i = 0
   while ((m = re.exec(x))) {
     if (m.index > last) nodes.push(x.slice(last, m.index))
-    // dispatch on which group matched, not on truthiness — the literal "0" is falsy
+    // dispatch on which group matched, not on truthiness, the literal "0" is falsy
     if (m[1] !== undefined) nodes.push(<strong key={i++}>{m[1]}</strong>)
     else if (m[2] !== undefined && m[3] !== undefined)
       nodes.push(

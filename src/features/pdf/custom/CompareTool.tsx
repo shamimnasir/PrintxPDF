@@ -182,11 +182,11 @@ export default function CompareTool() {
   if (files.length < 2)
     return (
       <div className="stack" style={{ maxWidth: 720 }}>
-        <Dropzone accept=".pdf" multiple onFiles={(f) => setFiles((prev) => [...prev, ...f].slice(0, 2))} label="Drop two PDFs — old first, new second" />
+        <Dropzone accept=".pdf" multiple onFiles={(f) => setFiles((prev) => [...prev, ...f].slice(0, 2))} label="Drop two PDFs, old first, new second" />
         <FileList files={files} onRemove={(i) => setFiles((f) => f.filter((_, k) => k !== i))} />
         <p className="muted">
           Both files are rendered to the same width and compared pixel by pixel. It sees anything that moved, including
-          reflowed lines — it is not a word-level text diff.
+          reflowed lines, it is not a word-level text diff.
         </p>
       </div>
     )
@@ -236,7 +236,7 @@ export default function CompareTool() {
         </p>
         <div>
           <label className="label" htmlFor="cmp-tol">
-            Tolerance — {tolerance} / 255 per channel
+            Tolerance, {tolerance} / 255 per channel
           </label>
           <input id="cmp-tol" type="range" min={0} max={90} value={tolerance} onChange={(e) => setTolerance(Number(e.target.value))} />
           <p className="muted" style={{ margin: '0.3rem 0 0', fontSize: '0.8rem' }}>

@@ -6,7 +6,7 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
   const cfg = useSiteConfig()
   const contact = cfg.site.email ? <a href={`mailto:${cfg.site.email}`}>{cfg.site.email}</a> : <Link to="/account">your account page</Link>
   useSeo({
-    title: kind === 'privacy' ? 'Privacy — Your Files Stay on Your Device' : 'Terms of Use',
+    title: kind === 'privacy' ? 'Privacy, Your Files Stay on Your Device' : 'Terms of Use',
     description:
       kind === 'privacy'
         ? 'Browser tools never upload your files. A few server jobs send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.'

@@ -5,7 +5,7 @@ import { useSiteConfig } from '../admin/useSiteConfig'
 export default function About() {
   const cfg = useSiteConfig()
   useSeo({
-    title: 'About PrintxPDF — Documents You Control',
+    title: 'About PrintxPDF | Documents You Control',
     description: `PrintxPDF is a print and PDF toolkit founded by ${cfg.author.name}. Every browser tool keeps your files on your computer; a few heavy jobs run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
     path: '/about',
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]), { '@context': 'https://schema.org', ...orgSchema(cfg.author) }],

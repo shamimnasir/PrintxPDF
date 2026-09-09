@@ -193,7 +193,7 @@ export default function FormsTool() {
           <div className="tool-notice">
             <strong>This PDF has no fillable form fields.</strong>
             <p>
-              It is a flat document — the boxes and lines you can see are just drawing, not an AcroForm. To type on it
+              It is a flat document, the boxes and lines you can see are just drawing, not an AcroForm. To type on it
               anyway, use <Link to="/tools/edit-pdf">Edit PDF</Link>, which stamps text wherever you click.
             </p>
           </div>
@@ -238,7 +238,7 @@ export default function FormsTool() {
                   )}
                   {(f.kind === 'dropdown' || f.kind === 'optionlist') && (
                     <select id={id} className="select" value={f.value} disabled={f.readOnly} onChange={(e) => set(f.name, { value: e.target.value })}>
-                      <option value="">— none —</option>
+                      <option value="">,  none , </option>
                       {f.options.map((o) => (
                         <option key={o} value={o}>
                           {o}
@@ -271,7 +271,7 @@ export default function FormsTool() {
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
           <strong>Filled</strong> keeps the fields live, so the answers can still be changed later.{' '}
-          <strong>Flattened</strong> paints the answers into the page and drops the form, so nobody can edit them — do
+          <strong>Flattened</strong> paints the answers into the page and drops the form, so nobody can edit them, do
           that last, on a copy. Appearances are regenerated with Helvetica; a form that asks for a font you don't have
           will look slightly different.
         </p>

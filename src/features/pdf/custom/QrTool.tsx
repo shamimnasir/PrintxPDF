@@ -168,7 +168,7 @@ export default function QrTool() {
         <button className="btn btn-ink btn-block" onClick={() => dl('pdf')}>
           Print-ready PDF
         </button>
-        <pre className="code" style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>{payload || '—'}</pre>
+        <pre className="code" style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>{payload || ', '}</pre>
       </div>
     </div>
   )

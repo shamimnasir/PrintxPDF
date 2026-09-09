@@ -1,14 +1,14 @@
 import type { Cluster } from '../types'
 
 export const convertToPdf: Cluster = {
-  slug: 'convert-to-pdf',
+  slug: 'to-pdf',
   name: 'Converting files to PDF',
   title: 'Converting Word, Excel, HTML and images to PDF',
   metaTitle: 'Convert Word, Excel, HTML and Images to PDF',
   metaDescription:
     'Turn documents, spreadsheets, web pages and photos into PDFs that look right. Font embedding, print areas, page-break CSS and the DPI that matters in print.',
   intro:
-    'Converting into PDF is the easy direction: the format was designed to freeze a layout so it renders identically everywhere. The failures are all avoidable and all boring — a font that was not embedded, a spreadsheet that spills onto 40 pages, a table cut in half by a page break, a photo at 72 DPI that prints like a mosaic. These guides cover the settings that prevent each one, in Word, Excel, browsers and image tools.',
+    'Converting into PDF is the easy direction: the format was designed to freeze a layout so it renders identically everywhere. The failures are all avoidable and all boring, a font that was not embedded, a spreadsheet that spills onto 40 pages, a table cut in half by a page break, a photo at 72 DPI that prints like a mosaic. These guides cover the settings that prevent each one, in Word, Excel, browsers and image tools.',
   answer:
     'Every major application exports PDF directly: Word uses File → Save As → PDF, Excel uses Export → Create PDF/XPS after setting a print area, browsers use Ctrl+P with "Save as PDF" as the destination, and images can be combined into a single PDF. The settings that matter are font embedding, scale-to-fit and DPI.',
   primaryKeyword: 'convert to pdf',
@@ -18,7 +18,7 @@ export const convertToPdf: Cluster = {
   posts: [
     {
       slug: 'word-to-pdf',
-      cluster: 'convert-to-pdf',
+      cluster: 'to-pdf',
       title: 'How to convert Word to PDF and keep the fonts',
       metaTitle: 'Convert Word to PDF and Keep the Fonts',
       metaDescription:
@@ -78,11 +78,11 @@ export const convertToPdf: Cluster = {
         { t: 'p', x: '**File → Download → PDF Document (.pdf)**. It embeds fonts, keeps links clickable and turns your heading styles into bookmarks. The catch is upstream: if you uploaded a .docx using a font Google does not have, Docs already substituted it when it opened the file, so the PDF faithfully records the wrong typeface. Check the document on screen before exporting.' },
         { t: 'h2', x: 'LibreOffice Writer' },
         { t: 'p', x: '**File → Export As → Export as PDF** opens the most detailed export dialog of any free office suite. The General tab controls JPEG quality and image downsampling; Digital Signatures lets you sign at export time; the PDF/A-2b checkbox is on the General tab. LibreOffice embeds fonts by default and honours the same licence restrictions Word does.' },
-        { t: 'cta', tool: 'word-to-pdf', x: 'No Word licence? Convert a .docx to PDF in your browser — nothing is uploaded.' },
+        { t: 'cta', tool: 'word-to-pdf', x: 'No Word licence? Convert a .docx to PDF in your browser, nothing is uploaded.' },
         { t: 'h2', x: 'Keeping the file small' },
-        { t: 'p', x: 'A Word document with a few phone photos in it routinely exports as a 30 MB PDF, because Word stores the images at their original camera resolution. Before exporting, click any image, then **Picture Format → Compress Pictures → Apply to all pictures**, choose **Print (220 ppi)**, and tick **Delete cropped areas of pictures**. That one step frequently removes 80 percent of the eventual file size. There is more in [why your PDF is so large](/blog/compress-pdf/why-is-my-pdf-so-large), and you can always run the [compressor](/tools/compress-pdf) afterwards.' },
-        { t: 'warn', x: 'Converting to PDF does not protect your content — it just makes editing inconvenient. It also does not remove the document history. The author name, company and editing time are copied straight from the Word properties into the PDF metadata. [Strip the metadata](/blog/pdf-privacy/remove-metadata-from-pdf) before sending anything outside your organisation.' },
-        { t: 'p', x: 'If the finished PDF needs a signature, do that last: [sign the PDF](/blog/sign-pdf/how-to-sign-a-pdf) after every other change, because any later edit invalidates it.' },
+        { t: 'p', x: 'A Word document with a few phone photos in it routinely exports as a 30 MB PDF, because Word stores the images at their original camera resolution. Before exporting, click any image, then **Picture Format → Compress Pictures → Apply to all pictures**, choose **Print (220 ppi)**, and tick **Delete cropped areas of pictures**. That one step frequently removes 80 percent of the eventual file size. There is more in [why your PDF is so large](/blog/compress/why-is-my-pdf-so-large), and you can always run the [compressor](/tools/compress-pdf) afterwards.' },
+        { t: 'warn', x: 'Converting to PDF does not protect your content, it just makes editing inconvenient. It also does not remove the document history. The author name, company and editing time are copied straight from the Word properties into the PDF metadata. [Strip the metadata](/blog/privacy/remove-metadata-from-pdf) before sending anything outside your organisation.' },
+        { t: 'p', x: 'If the finished PDF needs a signature, do that last: [sign the PDF](/blog/sign/how-to-sign-a-pdf) after every other change, because any later edit invalidates it.' },
       ],
       faqs: [
         { q: 'How do I convert Word to PDF for free?', a: 'Word itself does it: File → Save As, then choose PDF as the file type. Google Docs does it with File → Download → PDF Document. LibreOffice does it with File → Export as PDF. All three are free at the point of use and all three embed fonts.' },
@@ -96,7 +96,7 @@ export const convertToPdf: Cluster = {
     },
     {
       slug: 'excel-to-pdf',
-      cluster: 'convert-to-pdf',
+      cluster: 'to-pdf',
       title: 'How to convert an Excel spreadsheet to PDF that actually fits',
       metaTitle: 'Excel to PDF: Make the Spreadsheet Actually Fit',
       metaDescription:
@@ -116,15 +116,15 @@ export const convertToPdf: Cluster = {
         {
           t: 'steps',
           items: [
-            { h: 'Set the print area', x: 'Select the cells you actually want, then **Page Layout → Print Area → Set Print Area**. Without this, Excel exports every cell that has ever been touched — including the stray space in BZ4000 that produces 38 blank pages.' },
+            { h: 'Set the print area', x: 'Select the cells you actually want, then **Page Layout → Print Area → Set Print Area**. Without this, Excel exports every cell that has ever been touched, including the stray space in BZ4000 that produces 38 blank pages.' },
             { h: 'Fit to width, not to page', x: 'In **Page Layout → Scale to Fit**, set **Width: 1 page** and leave **Height: Automatic**. This is the single most important setting. It stops columns spilling onto their own sheets while letting the rows flow naturally over as many pages as they need.' },
-            { h: 'Go landscape for wide tables', x: '**Page Layout → Orientation → Landscape**. A4 landscape is 297 mm wide against 210 portrait — 41 percent more width for nothing.' },
+            { h: 'Go landscape for wide tables', x: '**Page Layout → Orientation → Landscape**. A4 landscape is 297 mm wide against 210 portrait, 41 percent more width for nothing.' },
             { h: 'Repeat the header row', x: '**Page Layout → Print Titles → Sheet tab → Rows to repeat at top**, then click the row selector for row 1 (it fills in as `$1:$1`). Now every page carries the column headings instead of just the first.' },
             { h: 'Check Page Break Preview', x: '**View → Page Break Preview** shows blue lines where the pages will split. Drag them to move a break. Solid blue is a manual break you set; dashed blue is Excel automatic choice.' },
             { h: 'Export', x: '**File → Export → Create PDF/XPS**, then click **Options** to choose Active sheet(s), Entire workbook or Selection, and to set a page range.' },
           ],
         },
-        { t: 'warn', x: 'Do not set both Width and Height to 1 page unless the data really is small. Excel will shrink the whole sheet until it fits, and a 200-row table forced onto one page ends up at about 4 point type — technically one page, unreadable in practice. Width 1 / Height Automatic is almost always what you meant.' },
+        { t: 'warn', x: 'Do not set both Width and Height to 1 page unless the data really is small. Excel will shrink the whole sheet until it fits, and a 200-row table forced onto one page ends up at about 4 point type, technically one page, unreadable in practice. Width 1 / Height Automatic is almost always what you meant.' },
         { t: 'h2', x: 'Every relevant setting, and where it lives' },
         {
           t: 'table',
@@ -162,7 +162,7 @@ export const convertToPdf: Cluster = {
         { t: 'cta', tool: 'excel-to-pdf', x: 'Convert an .xlsx to PDF in your browser, with fit-to-width handled for you.' },
         { t: 'h2', x: 'After the export' },
         { t: 'p', x: 'Always open the PDF and read it before sending. Two checks catch nearly everything: does page 2 have headers, and does any column end in `#####` (the column was too narrow and Excel could not display the number). Widen the column and export again.' },
-        { t: 'p', x: 'If you exported each sheet separately, [merge them](/blog/merge-pdf/how-to-merge-pdf-files) into one document. If a monthly report needs page numbers, [add them to the PDF](/blog/watermark-page-numbers/add-page-numbers-to-pdf) rather than fighting Excel footers, which do not know how many pages the whole compiled document has. If the workbook is full of charts and screenshots, [compress the result](/tools/compress-pdf) before emailing it.' },
+        { t: 'p', x: 'If you exported each sheet separately, [merge them](/blog/merge/how-to-merge-pdf-files) into one document. If a monthly report needs page numbers, [add them to the PDF](/blog/watermark/add-page-numbers-to-pdf) rather than fighting Excel footers, which do not know how many pages the whole compiled document has. If the workbook is full of charts and screenshots, [compress the result](/tools/compress-pdf) before emailing it.' },
       ],
       faqs: [
         { q: 'How do I make an Excel spreadsheet fit on one page in PDF?', a: 'Page Layout → Scale to Fit, set Width to 1 page and leave Height on Automatic. Setting both to 1 page shrinks the text until everything fits, which for anything over about 40 rows produces type too small to read.' },
@@ -176,7 +176,7 @@ export const convertToPdf: Cluster = {
     },
     {
       slug: 'html-to-pdf',
-      cluster: 'convert-to-pdf',
+      cluster: 'to-pdf',
       title: 'How to convert HTML to PDF',
       metaTitle: 'How to Convert HTML to PDF (Browser + Code)',
       metaDescription:
@@ -189,7 +189,7 @@ export const convertToPdf: Cluster = {
       secondaryKeywords: ['html to pdf free', 'webpage to pdf', 'headless chrome pdf', 'css page break pdf', 'print to pdf css'],
       entities: ['Google Chrome', 'Puppeteer', 'WeasyPrint', 'CSS Paged Media', 'A4', 'Chromium', 'DevTools'],
       answer:
-        'For a one-off, press Ctrl+P and set the destination to "Save as PDF" — the browser renders real text and clickable links. For repeatable output, control pagination with @page and break-inside CSS, and drive headless Chrome or Puppeteer so every run produces an identical file.',
+        'For a one-off, press Ctrl+P and set the destination to "Save as PDF", the browser renders real text and clickable links. For repeatable output, control pagination with @page and break-inside CSS, and drive headless Chrome or Puppeteer so every run produces an identical file.',
       body: [
         { t: 'p', x: 'Your browser already contains an excellent HTML-to-PDF engine. The question is only how much control you need over the result.' },
         { t: 'h2', x: 'The one-off: print to PDF' },
@@ -204,14 +204,14 @@ export const convertToPdf: Cluster = {
             { h: 'Turn off headers and footers', x: 'Otherwise the browser stamps the page title, URL, date and page number onto every sheet.' },
           ],
         },
-        { t: 'p', x: 'The result is a real text PDF: selectable, searchable and with working links. That matters — an image-based capture of the same page looks identical and is useless for search. If the page is full of ads and navigation, clean it first with the [web page printer](/print) and see [printing a web page without ads](/blog/print-web-pages/print-web-page-without-ads).' },
+        { t: 'p', x: 'The result is a real text PDF: selectable, searchable and with working links. That matters, an image-based capture of the same page looks identical and is useless for search. If the page is full of ads and navigation, clean it first with the [web page printer](/print) and see [printing a web page without ads](/blog/print/print-web-page-without-ads).' },
         { t: 'cta', tool: 'html-to-pdf', x: 'Convert an HTML file or a URL to PDF in your browser.' },
         { t: 'h2', x: 'Controlling the pagination with CSS' },
         { t: 'p', x: 'If you own the HTML, a handful of CSS rules fix the classic problems: a heading stranded at the bottom of a page, a table row split down the middle, an invoice total on a page by itself.' },
         { t: 'code', x: '@page {\n  size: A4;              /* or: A4 landscape, Letter, 210mm 297mm */\n  margin: 20mm 15mm;\n}\n\n@media print {\n  /* Never split these across a page boundary */\n  table, figure, blockquote, .invoice-total { break-inside: avoid; }\n  tr, li { break-inside: avoid; }\n\n  /* Keep a heading with the text that follows it */\n  h1, h2, h3 { break-after: avoid; }\n\n  /* Start each chapter on a fresh page */\n  .chapter { break-before: page; }\n\n  /* No orphaned single lines */\n  p { orphans: 3; widows: 3; }\n\n  /* Repeat table headers on every page */\n  thead { display: table-header-group; }\n\n  /* Print the destination of every link */\n  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 90%; }\n\n  nav, aside, .no-print { display: none; }\n}' },
         { t: 'p', x: 'Two of those rules do most of the work. `break-inside: avoid` on tables, figures and totals stops the single most common complaint, a block cut in half by a page boundary. `thead { display: table-header-group }` makes a long table repeat its column headings on every page, which is the paper equivalent of a frozen row. Everything else is a refinement you add once those two are in place.' },
         { t: 'note', x: '`break-inside`, `break-before` and `break-after` are the current CSS Fragmentation properties. The older `page-break-inside` family still works everywhere and is what most existing stylesheets use. Chrome and Firefox support both; keeping the legacy pair alongside the modern one costs nothing.' },
-        { t: 'warn', x: '`position: fixed` and `position: sticky` elements are unreliable in print — a sticky header can appear on page one only, or on every page, or overlap the content. Set them to `position: static` inside your print media query.' },
+        { t: 'warn', x: '`position: fixed` and `position: sticky` elements are unreliable in print, a sticky header can appear on page one only, or on every page, or overlap the content. Set them to `position: static` inside your print media query.' },
         { t: 'h2', x: 'Headless Chrome for developers' },
         { t: 'p', x: 'For automated invoices, reports or receipts, drive the same rendering engine from the command line so every run is identical.' },
         { t: 'code', x: '# Chrome / Chromium, no browser window\nchrome --headless=new --disable-gpu \\\n       --print-to-pdf=invoice.pdf \\\n       --no-pdf-header-footer \\\n       https://example.com/invoice/1042\n\n# Puppeteer, with backgrounds and explicit margins\nconst browser = await puppeteer.launch();\nconst page = await browser.newPage();\nawait page.goto(url, { waitUntil: "networkidle0" });\nawait page.pdf({\n  path: "invoice.pdf",\n  format: "A4",\n  printBackground: true,\n  margin: { top: "20mm", bottom: "20mm", left: "15mm", right: "15mm" }\n});\nawait browser.close();' },
@@ -248,14 +248,14 @@ export const convertToPdf: Cluster = {
         { q: 'How do I stop a table breaking across pages in a PDF?', a: 'Add `break-inside: avoid` (and the legacy `page-break-inside: avoid`) to the table and to its rows inside a print media query. Add `thead { display: table-header-group }` so the header row repeats at the top of each page.' },
         { q: 'Why does my PDF look different from the web page?', a: 'The browser applies your print stylesheet, drops fixed positioning, and paginates a continuous layout. Emulate it in Chrome DevTools: Ctrl+Shift+P, "Show Rendering", set Emulate CSS media type to print, and fix what you see.' },
         { q: 'How do I set the page size and margins in CSS?', a: 'Use the @page rule: `@page { size: A4; margin: 20mm 15mm; }`. Add `landscape` after the size keyword for landscape. Browsers honour this in the print dialog, though the user can still override the margins manually.' },
-        { q: 'What is the best HTML to PDF library?', a: 'For fidelity, Puppeteer or Playwright driving headless Chromium, because it is the same engine users see. For a lightweight server with no browser binary, WeasyPrint has the best CSS Paged Media support. Avoid wkhtmltopdf for new projects — it is archived and uses an old WebKit.' },
+        { q: 'What is the best HTML to PDF library?', a: 'For fidelity, Puppeteer or Playwright driving headless Chromium, because it is the same engine users see. For a lightweight server with no browser binary, WeasyPrint has the best CSS Paged Media support. Avoid wkhtmltopdf for new projects, it is archived and uses an old WebKit.' },
       ],
       relatedTools: ['html-to-pdf', 'compress-pdf', 'merge-pdf'],
       relatedPosts: ['word-to-pdf', 'images-to-pdf', 'print-web-page-without-ads'],
     },
     {
       slug: 'images-to-pdf',
-      cluster: 'convert-to-pdf',
+      cluster: 'to-pdf',
       title: 'How to combine photos and scans into one PDF',
       metaTitle: 'Combine Photos and Scans Into One PDF',
       metaDescription:
@@ -270,7 +270,7 @@ export const convertToPdf: Cluster = {
       answer:
         'Drop your JPG or PNG files into an image-to-PDF tool, put them in the right order, and pick a page size. Choose A4 or Letter with each image fitted to the page for documents, and 300 DPI if the result will be printed. HEIC files from an iPhone must be converted to JPEG first in most browsers.',
       body: [
-        { t: 'p', x: 'Photographing receipts, scanning a signed contract page by page, assembling a portfolio — they all end the same way: a folder of images that somebody wants as one file. Four decisions determine whether the result is usable.' },
+        { t: 'p', x: 'Photographing receipts, scanning a signed contract page by page, assembling a portfolio, they all end the same way: a folder of images that somebody wants as one file. Four decisions determine whether the result is usable.' },
         { t: 'h2', x: 'Decision 1: page size' },
         {
           t: 'table',
@@ -284,7 +284,7 @@ export const convertToPdf: Cluster = {
             ['Presentation handout', 'A4 landscape', 'Fit to page'],
           ],
         },
-        { t: 'p', x: 'A4 is 210 × 297 mm; US Letter is 8.5 × 11 inches (216 × 279 mm). They are close but not identical, so a Letter-sized PDF printed on A4 gets a slightly different margin. Pick the one your recipient uses. For documents, one image per page with the aspect ratio preserved is almost always right — stretching a photo to fill A4 distorts it.' },
+        { t: 'p', x: 'A4 is 210 × 297 mm; US Letter is 8.5 × 11 inches (216 × 279 mm). They are close but not identical, so a Letter-sized PDF printed on A4 gets a slightly different margin. Pick the one your recipient uses. For documents, one image per page with the aspect ratio preserved is almost always right, stretching a photo to fill A4 distorts it.' },
         { t: 'h2', x: 'Decision 2: DPI' },
         { t: 'p', x: 'DPI in this context means: how many of your image pixels land in one printed inch. It is arithmetic, not a setting you can wish for.' },
         {
@@ -298,18 +298,18 @@ export const convertToPdf: Cluster = {
             ['Web preview only', '72', '595 × 842', 'Visibly soft when printed'],
           ],
         },
-        { t: 'p', x: 'A modern phone photo is typically 4032 × 3024 pixels, which is more than enough for a 300 DPI A4 page. A screenshot from a laptop is often 1440 × 900, which fills an A4 page at only about 110 DPI — fine on screen, soft on paper. You cannot add detail that was never captured, so scan or photograph at the resolution you need from the start.' },
+        { t: 'p', x: 'A modern phone photo is typically 4032 × 3024 pixels, which is more than enough for a 300 DPI A4 page. A screenshot from a laptop is often 1440 × 900, which fills an A4 page at only about 110 DPI, fine on screen, soft on paper. You cannot add detail that was never captured, so scan or photograph at the resolution you need from the start.' },
         { t: 'h2', x: 'Decision 3: order' },
-        { t: 'p', x: 'This is where most people lose ten minutes. Files named `page1.jpg` through `page10.jpg` sort as 1, 10, 2, 3 in almost every file browser, because the sort is alphabetical. Rename with zero padding — `page01`, `page02` … `page10` — and everything falls into place automatically. Phone photos named IMG_0001 onwards are already padded and sort correctly by capture time.' },
+        { t: 'p', x: 'This is where most people lose ten minutes. Files named `page1.jpg` through `page10.jpg` sort as 1, 10, 2, 3 in almost every file browser, because the sort is alphabetical. Rename with zero padding, `page01`, `page02` … `page10`, and everything falls into place automatically. Phone photos named IMG_0001 onwards are already padded and sort correctly by capture time.' },
         { t: 'h2', x: 'Decision 4: file format' },
         {
           t: 'ul',
           items: [
-            '**JPEG** — the right choice for photographs and camera scans. Already compressed, so the PDF stays small.',
-            '**PNG** — right for screenshots, diagrams and anything with sharp text or flat colour. Lossless, so it produces a larger PDF; a full-page PNG screenshot can be several megabytes.',
-            '**HEIC** — the iPhone default. **Chrome and Firefox cannot decode HEIC**, so a browser tool usually cannot read it directly. Two fixes: on the iPhone, Settings → Camera → Formats → **Most Compatible** makes the camera shoot JPEG from then on; or, for photos you already have, sharing them out of Photos to a Mac or Windows machine converts them to JPEG in transit.',
-            '**TIFF** — common from office scanners and often multi-page. Convert to JPEG or PNG first; browser support is effectively nil.',
-            '**WebP and AVIF** — decode fine in modern browsers, so they work if your tool supports them.',
+            '**JPEG**, the right choice for photographs and camera scans. Already compressed, so the PDF stays small.',
+            '**PNG**, right for screenshots, diagrams and anything with sharp text or flat colour. Lossless, so it produces a larger PDF; a full-page PNG screenshot can be several megabytes.',
+            '**HEIC**, the iPhone default. **Chrome and Firefox cannot decode HEIC**, so a browser tool usually cannot read it directly. Two fixes: on the iPhone, Settings → Camera → Formats → **Most Compatible** makes the camera shoot JPEG from then on; or, for photos you already have, sharing them out of Photos to a Mac or Windows machine converts them to JPEG in transit.',
+            '**TIFF**, common from office scanners and often multi-page. Convert to JPEG or PNG first; browser support is effectively nil.',
+            '**WebP and AVIF**, decode fine in modern browsers, so they work if your tool supports them.',
           ],
         },
         { t: 'h2', x: 'Doing it' },
@@ -321,7 +321,7 @@ export const convertToPdf: Cluster = {
             { h: 'Check and fix the order', x: 'Drag any thumbnail that landed in the wrong place before generating the file.' },
             { h: 'Set page size and orientation', x: 'A4 or Letter for documents. Choose auto-orientation so a landscape photo gets a landscape page instead of being shrunk to fit a portrait one.' },
             { h: 'Generate and check', x: 'Open the PDF and page through it. Look for upside-down pages, which come from phone photos whose EXIF rotation was ignored.' },
-            { h: 'Compress if it is going by email', x: 'Twenty phone photos make a 60 MB PDF. Run it through the [compressor](/tools/compress-pdf) at 150 DPI first — see [reducing a PDF for email](/blog/compress-pdf/reduce-pdf-file-size-for-email).' },
+            { h: 'Compress if it is going by email', x: 'Twenty phone photos make a 60 MB PDF. Run it through the [compressor](/tools/compress-pdf) at 150 DPI first, see [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email).' },
           ],
         },
         { t: 'cta', tool: 'jpg-to-pdf', x: 'Combine JPG and PNG files into a single PDF, in the right order.' },
@@ -329,10 +329,10 @@ export const convertToPdf: Cluster = {
         {
           t: 'ul',
           items: [
-            '**macOS** — select the images in Finder, right-click → Quick Actions → **Create PDF**. Selection order determines page order, so click them in sequence. Preview also lets you drag pages around afterwards in the sidebar.',
-            '**Windows** — select the images, right-click → **Print**, choose **Microsoft Print to PDF** as the printer and **Full page photo** as the layout, then Print. Tick "Fit picture to frame" off if you do not want cropping.',
-            '**iPhone** — in Photos, select the images → Share → **Print**, then pinch outwards on the print preview. It turns into a PDF you can share or save to Files. It is undiscoverable and it works.',
-            '**Android** — Google Drive → + → Scan uses the camera, auto-crops, deskews and saves straight to a multi-page PDF.',
+            '**macOS**, select the images in Finder, right-click → Quick Actions → **Create PDF**. Selection order determines page order, so click them in sequence. Preview also lets you drag pages around afterwards in the sidebar.',
+            '**Windows**, select the images, right-click → **Print**, choose **Microsoft Print to PDF** as the printer and **Full page photo** as the layout, then Print. Tick "Fit picture to frame" off if you do not want cropping.',
+            '**iPhone**, in Photos, select the images → Share → **Print**, then pinch outwards on the print preview. It turns into a PDF you can share or save to Files. It is undiscoverable and it works.',
+            '**Android**, Google Drive → + → Scan uses the camera, auto-crops, deskews and saves straight to a multi-page PDF.',
           ],
         },
         { t: 'h2', x: 'Photographing documents well' },
@@ -342,17 +342,17 @@ export const convertToPdf: Cluster = {
             'Shoot **straight down**, not at an angle. Perspective distortion is hard to fix and wrecks any later OCR.',
             'Use **even, indirect light**. Direct light creates a hotspot; a window on one side creates a gradient across the page.',
             'Put the page on a **dark surface** so the edge-detection in scanning apps can find it.',
-            'Fill the frame with the page, and **do not use digital zoom** — move the phone closer instead.',
-            'For anything you will need to search later, run [OCR](/tools/ocr-pdf) on the finished PDF. Details in [how to OCR a scanned PDF](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf).',
+            'Fill the frame with the page, and **do not use digital zoom**, move the phone closer instead.',
+            'For anything you will need to search later, run [OCR](/tools/ocr-pdf) on the finished PDF. Details in [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf).',
           ],
         },
-        { t: 'warn', x: 'A photo carries EXIF metadata: GPS coordinates, the device model, the exact capture time. Those fields can travel into the PDF. Before sending photographed documents to anyone, [remove the metadata](/blog/pdf-privacy/remove-metadata-from-pdf).' },
+        { t: 'warn', x: 'A photo carries EXIF metadata: GPS coordinates, the device model, the exact capture time. Those fields can travel into the PDF. Before sending photographed documents to anyone, [remove the metadata](/blog/privacy/remove-metadata-from-pdf).' },
       ],
       faqs: [
         { q: 'How do I combine multiple JPG files into one PDF?', a: 'Drop them all into an image-to-PDF tool, drag them into the right order, choose A4 or Letter as the page size, and generate. On macOS you can also select the files in Finder and use Quick Actions → Create PDF; on Windows, right-click → Print → Microsoft Print to PDF.' },
         { q: 'Why can I not upload HEIC photos?', a: 'Chrome and Firefox cannot decode HEIC, so browser-based tools cannot read the files. Set your iPhone to Settings → Camera → Formats → Most Compatible so it shoots JPEG, or copy the existing photos to a computer, which converts them to JPEG during the transfer.' },
         { q: 'What resolution do I need for a PDF I will print?', a: '300 DPI, which means about 2480 × 3508 pixels for a full A4 page. A phone photo at 4032 × 3024 exceeds that comfortably. A 1440-pixel-wide screenshot only reaches about 110 DPI on A4 and will look soft on paper.' },
-        { q: 'Why are my PDF pages in the wrong order?', a: 'Alphabetical sorting puts page10 before page2. Rename the files with zero padding — page01, page02 and so on — and they will sort correctly everywhere. Most tools also let you drag the thumbnails into order before generating.' },
+        { q: 'Why are my PDF pages in the wrong order?', a: 'Alphabetical sorting puts page10 before page2. Rename the files with zero padding, page01, page02 and so on, and they will sort correctly everywhere. Most tools also let you drag the thumbnails into order before generating.' },
         { q: 'How do I make a scanned PDF searchable?', a: 'Combine the images into a PDF first, then run OCR on the result. OCR reads the characters in each image and writes an invisible text layer over them, so Ctrl+F and copy-paste start working while the pages still look identical.' },
       ],
       relatedTools: ['jpg-to-pdf', 'compress-pdf', 'ocr-pdf'],

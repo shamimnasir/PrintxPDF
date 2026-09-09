@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const studentsResearch: Cluster = {
-  slug: 'students-research',
+  slug: 'students',
   name: 'Students and research',
   title: 'Printing, annotating and citing for coursework and research',
   metaTitle: 'Printing and Annotating for Students (2026)',
@@ -18,7 +18,7 @@ export const studentsResearch: Cluster = {
   posts: [
     {
       slug: 'print-journal-articles',
-      cluster: 'students-research',
+      cluster: 'students',
       title: 'How to print journal articles and papers properly',
       metaTitle: 'How to Print Journal Articles Properly',
       metaDescription:
@@ -39,7 +39,7 @@ export const studentsResearch: Cluster = {
         { t: 'p', x: 'Almost every one has a **Download PDF** button. Use it. The PDF is typeset at a fixed size, carries the real journal page numbers you need for citations, and prints exactly as the editors intended. If the HTML version is all you have, run it through the [web page printer](/print) first.' },
         { t: 'note', x: 'Hitting a paywall? Search the exact title on Google Scholar and look for the `[PDF]` link beside the result, which usually points at an author copy in an institutional repository. PubMed Central, arXiv, bioRxiv and SSRN are all free.' },
         { t: 'h2', x: 'Two pages per sheet is the single biggest saving' },
-        { t: 'p', x: 'Academic PDFs are typeset for a page, so the margins are generous and the type is large enough to survive shrinking. Two portrait pages side by side on one landscape sheet scales each to roughly 65 percent, taking 11pt body text to about 7pt — comfortable at desk distance.' },
+        { t: 'p', x: 'Academic PDFs are typeset for a page, so the margins are generous and the type is large enough to survive shrinking. Two portrait pages side by side on one landscape sheet scales each to roughly 65 percent, taking 11pt body text to about 7pt, comfortable at desk distance.' },
         {
           t: 'table',
           caption: 'What 11pt body text becomes at each n-up setting.',
@@ -61,7 +61,7 @@ export const studentsResearch: Cluster = {
             { h: 'Open the file in a proper PDF reader', x: 'Browser PDF viewers hide the settings you need. Use Adobe Acrobat Reader, Preview on macOS or Evince on Linux, and check the page count first.' },
             { h: 'Open Print and find the sizing panel', x: 'Press Ctrl+P or Cmd+P. In Acrobat Reader the section is called **Page Sizing & Handling**. On macOS it is the **Layout** pane of the system print sheet.' },
             { h: 'Choose Multiple, two pages per sheet', x: 'Click **Multiple**, set **Pages per sheet** to 2 and **Page order** to Horizontal. The orientation flips to landscape by itself. Leave "Print page border" off.' },
-            { h: 'Turn on double-sided with the right flip', x: 'Tick **Print on both sides of paper**. Because two-up rotates the sheet to landscape, the right choice is **Flip on short edge**, the opposite of the portrait default. Get it backwards and every second sheet reads upside down: [the full rule is here](/blog/save-paper-ink/print-double-sided).' },
+            { h: 'Turn on double-sided with the right flip', x: 'Tick **Print on both sides of paper**. Because two-up rotates the sheet to landscape, the right choice is **Flip on short edge**, the opposite of the portrait default. Get it backwards and every second sheet reads upside down: [the full rule is here](/blog/save-ink/print-double-sided).' },
             { h: 'Drop the colour', x: 'Tick **Print in grayscale (black and white)**, just under the copies field in Acrobat Reader. On an inkjet this stops the printer mixing cyan, magenta and yellow into a composite black, which is what silently drains colour cartridges.' },
             { h: 'Test on four pages', x: 'Set the range to `1-4` and print. Check page 2 is on the back of page 1 the right way up, and nothing is clipped at the spine.' },
           ],
@@ -71,12 +71,12 @@ export const studentsResearch: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Shrink and shift.** Set **Custom Scale** to 92 percent in Acrobat Reader. The page is redrawn smaller and centred, adding roughly 8mm of white space on every edge — enough for a three-hole punch.',
+            '**Shrink and shift.** Set **Custom Scale** to 92 percent in Acrobat Reader. The page is redrawn smaller and centred, adding roughly 8mm of white space on every edge, enough for a three-hole punch.',
             '**Staple top-left, print one-sided.** If you will write on the pages anyway, single-sided gives you a clean back for notes.',
             '**Use a wallet instead of a punch.** It keeps the margins intact and survives a rucksack better than staples.',
           ],
         },
-        { t: 'tip', x: 'If a paper matters enough to keep, do not punch the only copy. Paper is for reading; the file is the archive. [Annotate the PDF](/blog/students-research/annotate-pdf-for-study) instead.' },
+        { t: 'tip', x: 'If a paper matters enough to keep, do not punch the only copy. Paper is for reading; the file is the archive. [Annotate the PDF](/blog/students/annotate-pdf-for-study) instead.' },
         { t: 'h2', x: 'Notes for the main sources' },
         {
           t: 'table',
@@ -97,7 +97,7 @@ export const studentsResearch: Cluster = {
           items: [
             'Rename the PDFs `01-author-year.pdf`, `02-author-year.pdf` and so on, so they sort in reading order.',
             'Merge them into a single file with the [PDF merger](/tools/merge-pdf).',
-            '[Add page numbers](/blog/watermark-page-numbers/add-page-numbers-to-pdf) so you can say "pack page 41" in a seminar.',
+            '[Add page numbers](/blog/watermark/add-page-numbers-to-pdf) so you can say "pack page 41" in a seminar.',
             'Print the whole pack once, two-up and duplex.',
           ],
         },
@@ -114,7 +114,7 @@ export const studentsResearch: Cluster = {
         },
         { t: 'p', x: 'Across a thirty-paper reading list that is roughly $87 against roughly $5 a term, and 720 sheets against 180. The settings take thirty seconds once; your reader remembers them.' },
         { t: 'cta', tool: 'compress-pdf', x: 'Reading pack too large to email round the study group? Compress it first.' },
-        { t: 'p', x: 'If the file is a scan with no text layer, run [OCR](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) before printing so your copy stays searchable. Then see [annotating PDFs for studying](/blog/students-research/annotate-pdf-for-study).' },
+        { t: 'p', x: 'If the file is a scan with no text layer, run [OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) before printing so your copy stays searchable. Then see [annotating PDFs for studying](/blog/students/annotate-pdf-for-study).' },
       ],
       faqs: [
         { q: 'How do I print two pages of a PDF on one sheet?', a: 'In Adobe Acrobat Reader, open Print, find Page Sizing & Handling, click Multiple, and set Pages per sheet to 2 with Page order Horizontal. On macOS the same control is in the Layout pane of the print sheet. Browser PDF viewers do not offer it.' },
@@ -128,7 +128,7 @@ export const studentsResearch: Cluster = {
     },
     {
       slug: 'annotate-pdf-for-study',
-      cluster: 'students-research',
+      cluster: 'students',
       title: 'How to annotate PDFs for studying',
       metaTitle: 'How to Annotate PDFs for Studying',
       metaDescription:
@@ -173,7 +173,7 @@ export const studentsResearch: Cluster = {
             ['Purple', 'A sentence worth quoting verbatim', 'Copied with the page number, ready to cite'],
           ],
         },
-        { t: 'warn', x: 'You cannot highlight text that is not there. A scanned PDF is a picture of a page: the highlighter tool will either be greyed out or will draw a free-form box that never matches the line. Run [OCR](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) first to add a real text layer, then annotate.' },
+        { t: 'warn', x: 'You cannot highlight text that is not there. A scanned PDF is a picture of a page: the highlighter tool will either be greyed out or will draw a free-form box that never matches the line. Run [OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) first to add a real text layer, then annotate.' },
         { t: 'cta', tool: 'ocr-pdf', x: 'Scanned chapter or a photographed handout? Add a searchable text layer before you start marking it up.' },
         { t: 'h2', x: 'Which app, on which machine' },
         {
@@ -203,7 +203,7 @@ export const studentsResearch: Cluster = {
         { t: 'p', x: 'Annotations are live objects. Anyone who opens your PDF can drag your notes around, delete them, or read the comments you meant only for yourself. If you are sending a marked-up paper to a supervisor or a study group, flatten it first so the marks become part of the page.' },
         { t: 'cta', tool: 'flatten-pdf', x: 'Flatten comments and highlights into the page before you send a marked-up PDF to anyone.' },
         { t: 'h2', x: 'Paper still wins for some things' },
-        { t: 'p', x: 'Dense mathematics, anything you need to sketch alongside, and long theory chapters are genuinely easier on paper with a pencil. The sensible split is: annotate digitally the things you will search later, and print the things you will think with. If you are printing, do it economically — see [printing journal articles properly](/blog/students-research/print-journal-articles) and [printing lecture slides](/blog/students-research/print-lecture-slides). And when you quote anything you found online, record the details you will need for [the citation](/blog/students-research/cite-a-web-page) while the tab is still open.' },
+        { t: 'p', x: 'Dense mathematics, anything you need to sketch alongside, and long theory chapters are genuinely easier on paper with a pencil. The sensible split is: annotate digitally the things you will search later, and print the things you will think with. If you are printing, do it economically, see [printing journal articles properly](/blog/students/print-journal-articles) and [printing lecture slides](/blog/students/print-lecture-slides). And when you quote anything you found online, record the details you will need for [the citation](/blog/students/cite-a-web-page) while the tab is still open.' },
       ],
       faqs: [
         { q: 'What is the best free PDF annotator for students?', a: 'Zotero 7 if you are managing a reference list, because it exports every highlight into a note with page numbers and citations. Adobe Acrobat Reader if you only need to mark up individual files, and Microsoft Edge if you want zero installation on Windows.' },
@@ -217,7 +217,7 @@ export const studentsResearch: Cluster = {
     },
     {
       slug: 'cite-a-web-page',
-      cluster: 'students-research',
+      cluster: 'students',
       title: 'How to cite a web page in APA, MLA and Chicago',
       metaTitle: 'Cite a Web Page: APA, MLA and Chicago',
       metaDescription:
@@ -305,7 +305,7 @@ export const studentsResearch: Cluster = {
             { h: 'Capture it publicly', x: 'Paste the URL into the Wayback Machine at web.archive.org and use **Save Page Now**: a permanent, timestamped, third-party copy anyone can check. For law and policy work, Perma.cc does the same with an institutional guarantee.' },
             { h: 'Keep your own copy too', x: 'Public archives miss paywalled and script-heavy pages. Clean it with the [web page printer](/print) and save a PDF of what you actually read.' },
             { h: 'Stamp the retrieval date onto it', x: 'A PDF stamped "Retrieved 9 September 2026" is unambiguous a year later, when the file metadata has been rewritten by three syncs.' },
-            { h: 'Cite the original, and note the archive', x: 'Give the live URL as normal. If the page has already vanished, cite the archived version and say so — all three styles allow it.' },
+            { h: 'Cite the original, and note the archive', x: 'Give the live URL as normal. If the page has already vanished, cite the archived version and say so, all three styles allow it.' },
             { h: 'Store it with the reference', x: 'A Zotero record holds the metadata, the snapshot and your annotations together, so citation and evidence never drift apart.' },
           ],
         },
@@ -313,7 +313,7 @@ export const studentsResearch: Cluster = {
         { t: 'cta', tool: 'add-watermark', x: 'Stamp the retrieval date across your captured page so the copy speaks for itself.' },
         { t: 'h2', x: 'Let software do the formatting, but check it' },
         { t: 'p', x: 'Zotero, Mendeley and the citation tools in Word and Google Docs all produce a formatted entry from a URL, and all fail in predictable ways: a section name mistaken for an author, sentence-case titles capitalised, a publication date buried in the metadata missed, and a retrieval date APA no longer wants appended. Generate, then check each entry against the patterns above.' },
-        { t: 'p', x: 'For the mechanics, see [saving a web page as a PDF](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome) and [paper versus PDF for records](/blog/print-web-pages/print-web-page-to-pdf-vs-printer). For marking up sources, see [annotating PDFs for study](/blog/students-research/annotate-pdf-for-study).' },
+        { t: 'p', x: 'For the mechanics, see [saving a web page as a PDF](/blog/save-pdf/save-webpage-as-pdf-chrome) and [paper versus PDF for records](/blog/print/print-web-page-to-pdf-vs-printer). For marking up sources, see [annotating PDFs for study](/blog/students/annotate-pdf-for-study).' },
       ],
       faqs: [
         { q: 'Do I need an access date when citing a website?', a: 'In APA 7 only when the content is designed to change and is not archived, such as a live map or a wiki. MLA 9 makes it optional but recommends it. Chicago 17 wants it only when no publication or revision date exists. When in doubt, include it.' },
@@ -327,7 +327,7 @@ export const studentsResearch: Cluster = {
     },
     {
       slug: 'print-lecture-slides',
-      cluster: 'students-research',
+      cluster: 'students',
       title: 'How to print lecture slides without wasting 60 pages',
       metaTitle: 'Print Lecture Slides Without Wasting Paper',
       metaDescription:
@@ -412,7 +412,7 @@ export const studentsResearch: Cluster = {
         { t: 'h2', x: 'When you only want the words' },
         { t: 'p', x: 'For text-heavy decks, Outline mode is the most underrated setting in PowerPoint: it prints the title and bullet text with no slide frames, no images and no background, turning a sixty-slide deck into three or four pages. If all you have is a PDF, extracting the text gives you the same thing, and it drops straight into your notes.' },
         { t: 'cta', tool: 'pdf-to-text', x: 'Pull the text out of a slide PDF when you want the content, not the slides.' },
-        { t: 'p', x: 'Once the handout is printed, the rest is study method rather than printing — see [annotating PDFs for studying](/blog/students-research/annotate-pdf-for-study) for what to do with the note lines. For the settings that apply to every document you print, [fitting more on a page](/blog/save-paper-ink/fit-more-on-a-page) and [saving ink](/blog/save-paper-ink/save-ink-when-printing) cover the rest.' },
+        { t: 'p', x: 'Once the handout is printed, the rest is study method rather than printing, see [annotating PDFs for studying](/blog/students/annotate-pdf-for-study) for what to do with the note lines. For the settings that apply to every document you print, [fitting more on a page](/blog/save-ink/fit-more-on-a-page) and [saving ink](/blog/save-ink/save-ink-when-printing) cover the rest.' },
       ],
       faqs: [
         { q: 'How do I print 6 slides per page in PowerPoint?', a: 'File → Print, open the dropdown that says "Full Page Slides", and choose Handouts → 6 Slides Horizontal. Horizontal reads left to right, vertical reads top to bottom; horizontal matches how the deck was presented.' },

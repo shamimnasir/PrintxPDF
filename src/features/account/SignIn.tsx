@@ -9,7 +9,7 @@ export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
   const { toast } = useToast()
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  useSeo({ title: mode === 'up' ? 'Sign up — PrintxPDF' : 'Log in — PrintxPDF', description: 'A local account kept in this browser: saved documents, signatures, settings and your access key.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
+  useSeo({ title: mode === 'up' ? 'Sign up, PrintxPDF' : 'Log in, PrintxPDF', description: 'A local account kept in this browser: saved documents, signatures, settings and your access key.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
 
   const submit = (e: FormEvent) => {
     e.preventDefault()

@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const browserExtensions: Cluster = {
-  slug: 'browser-extensions',
+  slug: 'extensions',
   name: 'Browser extensions and shortcuts',
   title: 'Print better from your browser: reader modes, extensions and bookmarklets',
   metaTitle: 'Print-Friendly Browser Extensions and Shortcuts',
@@ -18,7 +18,7 @@ export const browserExtensions: Cluster = {
   posts: [
     {
       slug: 'print-friendly-extension-chrome',
-      cluster: 'browser-extensions',
+      cluster: 'extensions',
       title: 'Print-friendly options for Google Chrome',
       metaTitle: 'Print-Friendly Options for Google Chrome',
       metaDescription:
@@ -86,12 +86,12 @@ export const browserExtensions: Cluster = {
             '**Background graphics** off, which is the default, to skip solid colour blocks and hero images.',
             '**Scale** at 80 or 90 percent to fit more text per sheet.',
             '**Pages** set to a range like `2-3` once you have found your content in the preview.',
-            '**Selection only**, which appears in the Pages dropdown when text is highlighted. This is the fastest trick in Chrome and is covered in [printing only selected text](/blog/print-web-pages/print-selected-text-only).',
+            '**Selection only**, which appears in the Pages dropdown when text is highlighted. This is the fastest trick in Chrome and is covered in [printing only selected text](/blog/print/print-selected-text-only).',
           ],
         },
         { t: 'cta', tool: 'html-to-pdf', x: 'Already saved the page as an HTML file? Convert it straight to a PDF in your browser.' },
         { t: 'h2', x: 'What about Edge, Brave and the rest?' },
-        { t: 'p', x: 'Every Chromium browser shares Chrome extensions and the same print dialog, so all of the above transfers directly. Edge is the exception worth knowing: it ships **Immersive Reader**, reachable with F9 or the book icon in the address bar, which does what Chrome will not. If you print articles often and you are already on Windows, Edge is the path of least resistance. The full comparison lives in [printing a web page without ads](/blog/print-web-pages/print-web-page-without-ads).' },
+        { t: 'p', x: 'Every Chromium browser shares Chrome extensions and the same print dialog, so all of the above transfers directly. Edge is the exception worth knowing: it ships **Immersive Reader**, reachable with F9 or the book icon in the address bar, which does what Chrome will not. If you print articles often and you are already on Windows, Edge is the path of least resistance. The full comparison lives in [printing a web page without ads](/blog/print/print-web-page-without-ads).' },
       ],
       faqs: [
         { q: 'Does Chrome have a reader mode?', a: 'Chrome has a Reading mode side panel, opened from the side panel menu, but it is not a page mode. Printing while it is open prints the original cluttered page. For a printable clean view you need a bookmarklet, an extension or a web tool.' },
@@ -105,7 +105,7 @@ export const browserExtensions: Cluster = {
     },
     {
       slug: 'firefox-print-addon',
-      cluster: 'browser-extensions',
+      cluster: 'extensions',
       title: 'Printing better from Firefox',
       metaTitle: 'How to Print Better From Firefox',
       metaDescription:
@@ -133,7 +133,7 @@ export const browserExtensions: Cluster = {
             { h: 'Trim the header and footer', x: 'Untick **Print headers and footers** in the modal so you do not get the URL and date stamped on every page.' },
           ],
         },
-        { t: 'note', x: 'Reader View strips images by default only in its narrow modes; article images stay. If you want them gone to save ink, remove them in a printer-friendly view instead, or read [saving ink when printing](/blog/save-paper-ink/save-ink-when-printing).' },
+        { t: 'note', x: 'Reader View strips images by default only in its narrow modes; article images stay. If you want them gone to save ink, remove them in a printer-friendly view instead, or read [saving ink when printing](/blog/save-ink/save-ink-when-printing).' },
         { t: 'h2', x: 'What happened to Simplify Page' },
         { t: 'p', x: 'If you remember a **Simplify page** checkbox in Firefox print preview, you are not imagining it. The old print preview window carried it, and Firefox 81 replaced that window with the modern in-tab print modal, which dropped the option. Reader View is the official replacement and does the same job better, because you can adjust the type before printing.' },
         { t: 'h2', x: 'The print modal, setting by setting' },
@@ -164,12 +164,12 @@ export const browserExtensions: Cluster = {
             'An add-on that only needs to reformat the current page should not need access to your browsing history, bookmarks or downloads.',
           ],
         },
-        { t: 'warn', x: 'For a print tool specifically, a bookmarklet gives you the same result with no standing permissions at all. There is one on [the Firefox page](/extensions/firefox), and the trade-offs are in [bookmarklet versus extension](/blog/browser-extensions/bookmarklet-vs-extension). To be clear: the "Add to Firefox" button on that page is a demo listing, not a published add-on.' },
+        { t: 'warn', x: 'For a print tool specifically, a bookmarklet gives you the same result with no standing permissions at all. There is one on [the Firefox page](/extensions/firefox), and the trade-offs are in [bookmarklet versus extension](/blog/extensions/bookmarklet-vs-extension). To be clear: the "Add to Firefox" button on that page is a demo listing, not a published add-on.' },
         { t: 'h2', x: 'Firefox on Android' },
         { t: 'p', x: 'Firefox for Android keeps Reader View and, unusually for a mobile browser, supports a subset of desktop add-ons. Tap the page icon in the address bar for Reader View, then use the menu to Print or Save as PDF. It is the most capable mobile browser for getting a clean file off a phone.' },
         { t: 'cta', tool: 'pdf-reader', x: 'Saved the article as a PDF? Open it in the browser PDF reader to check it before you print.' },
         { t: 'h2', x: 'When Reader View refuses' },
-        { t: 'p', x: 'Reader View needs an article-shaped page. Order confirmations, forum threads, search results, dashboards and single-page apps will not trigger it. For those, paste the URL into the [web page printer](/print) and delete what you do not want, or use the selection trick described in [printing only selected text](/blog/print-web-pages/print-selected-text-only). If the layout itself is the problem, [web page printing problems](/blog/print-web-pages/fix-web-page-printing-problems) covers the fixes browser by browser.' },
+        { t: 'p', x: 'Reader View needs an article-shaped page. Order confirmations, forum threads, search results, dashboards and single-page apps will not trigger it. For those, paste the URL into the [web page printer](/print) and delete what you do not want, or use the selection trick described in [printing only selected text](/blog/print/print-selected-text-only). If the layout itself is the problem, [web page printing problems](/blog/print/fix-web-page-printing-problems) covers the fixes browser by browser.' },
       ],
       faqs: [
         { q: 'How do I turn on Reader View in Firefox?', a: 'Press F9 or Ctrl+Alt+R on Windows and Linux, or Cmd+Alt+R on macOS. You can also click the page icon at the right of the address bar. The icon only appears on pages Firefox recognises as articles.' },
@@ -183,7 +183,7 @@ export const browserExtensions: Cluster = {
     },
     {
       slug: 'safari-print-extension',
-      cluster: 'browser-extensions',
+      cluster: 'extensions',
       title: 'Printing better from Safari on Mac and iPhone',
       metaTitle: 'Printing Better From Safari on Mac and iPhone',
       metaDescription:
@@ -242,10 +242,10 @@ export const browserExtensions: Cluster = {
         },
         { t: 'warn', x: 'There is no PrintxPDF extension in the App Store. The [Safari page](/extensions/safari) on this site is a demo listing and the install button does nothing. What works today is the bookmarklet on that page, or pasting a URL into the [web page printer](/print).' },
         { t: 'h2', x: 'Bookmarklets on iOS, which is fiddly but works' },
-        { t: 'p', x: 'iOS Safari cannot drag a bookmarklet to a bar, but it can still run one. Bookmark any page, then edit that bookmark and replace its address with the bookmarklet code. Open the Bookmarks list on any page and tap it to run. Because bookmarks sync through iCloud, a bookmarklet you set up on your Mac appears on the iPhone by itself, which is by far the easier route. The step-by-step is in [bookmarklet versus extension](/blog/browser-extensions/bookmarklet-vs-extension).' },
+        { t: 'p', x: 'iOS Safari cannot drag a bookmarklet to a bar, but it can still run one. Bookmark any page, then edit that bookmark and replace its address with the bookmarklet code. Open the Bookmarks list on any page and tap it to run. Because bookmarks sync through iCloud, a bookmarklet you set up on your Mac appears on the iPhone by itself, which is by far the easier route. The step-by-step is in [bookmarklet versus extension](/blog/extensions/bookmarklet-vs-extension).' },
         { t: 'cta', tool: 'pdf-reader', x: 'Open the PDF you just saved and check the pagination before sending it to a printer.' },
         { t: 'h2', x: 'When none of it works' },
-        { t: 'p', x: 'Reader is unavailable on dashboards, order pages, forum threads and heavy JavaScript apps. For those, take a [full-page screenshot](/blog/save-webpage-as-pdf/full-page-screenshot) or paste the URL into a cleaner and delete the blocks you do not want. The broader browser-by-browser comparison is in [printing a web page without ads](/blog/print-web-pages/print-web-page-without-ads).' },
+        { t: 'p', x: 'Reader is unavailable on dashboards, order pages, forum threads and heavy JavaScript apps. For those, take a [full-page screenshot](/blog/save-pdf/full-page-screenshot) or paste the URL into a cleaner and delete the blocks you do not want. The broader browser-by-browser comparison is in [printing a web page without ads](/blog/print/print-web-page-without-ads).' },
       ],
       faqs: [
         { q: 'How do I turn on Reader in Safari?', a: 'On a Mac, press Control-Command-R or click the ☰ icon at the left of the address bar. On iPhone, tap the page settings button in the address bar and choose Show Reader. The option only appears on pages Safari recognises as articles.' },
@@ -259,7 +259,7 @@ export const browserExtensions: Cluster = {
     },
     {
       slug: 'bookmarklet-vs-extension',
-      cluster: 'browser-extensions',
+      cluster: 'extensions',
       title: 'Bookmarklet vs browser extension: which should you use?',
       metaTitle: 'Bookmarklet vs Browser Extension: Which to Use',
       metaDescription:
@@ -328,7 +328,7 @@ export const browserExtensions: Cluster = {
         },
         { t: 'p', x: 'Reformatting a page for printing needs none of those, which is why a bookmarklet is the honest recommendation here. To be explicit: the extension listings on this site are a **design demo**. Nothing is published in the Chrome Web Store, on addons.mozilla.org or in the App Store, and the install buttons do nothing. The bookmarklet is the working option today.' },
         { t: 'h2', x: 'A third option people forget' },
-        { t: 'p', x: 'You do not need a button at all. Pasting a URL into the [web page printer](/print) takes about five seconds and installs nothing, which is the right choice on a borrowed or managed machine. Site owners who want their readers to have a print button can use the [website button](/website-button) instead, so no visitor has to install anything. The browser-specific routes are in [Chrome](/blog/browser-extensions/print-friendly-extension-chrome), [Firefox](/blog/browser-extensions/firefox-print-addon) and [Safari](/blog/browser-extensions/safari-print-extension).' },
+        { t: 'p', x: 'You do not need a button at all. Pasting a URL into the [web page printer](/print) takes about five seconds and installs nothing, which is the right choice on a borrowed or managed machine. Site owners who want their readers to have a print button can use the [website button](/website-button) instead, so no visitor has to install anything. The browser-specific routes are in [Chrome](/blog/extensions/print-friendly-extension-chrome), [Firefox](/blog/extensions/firefox-print-addon) and [Safari](/blog/extensions/safari-print-extension).' },
       ],
       faqs: [
         { q: 'What is a bookmarklet?', a: 'A bookmark whose address is a small piece of JavaScript instead of a web address. Clicking it runs that code on the page you are currently viewing. It needs no installation, no permissions and no background process, and it works in every browser.' },

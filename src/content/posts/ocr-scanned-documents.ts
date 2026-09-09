@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const ocrScans: Cluster = {
-  slug: 'ocr-scanned-documents',
+  slug: 'ocr',
   name: 'OCR and scanned documents',
   title: 'OCR and scanned documents: turning pictures of words back into words',
   metaTitle: 'OCR a Scanned PDF and Make It Searchable',
@@ -18,7 +18,7 @@ export const ocrScans: Cluster = {
   posts: [
     {
       slug: 'how-to-ocr-a-scanned-pdf',
-      cluster: 'ocr-scanned-documents',
+      cluster: 'ocr',
       title: 'How to OCR a scanned PDF so you can search it',
       metaTitle: 'How to OCR a Scanned PDF So You Can Search It',
       metaDescription:
@@ -33,20 +33,20 @@ export const ocrScans: Cluster = {
       answer:
         'Run the PDF through an OCR tool, choose the language of the document, and export. The tool reads each page image, recognises the characters, and writes them back as an invisible text layer positioned over the picture. The page looks unchanged but becomes searchable, selectable and copyable.',
       body: [
-        { t: 'p', x: 'You scan a twelve-page contract, open it, press Ctrl+F to find the termination clause, and get nothing. The document is not broken — it simply does not contain any text. It contains twelve photographs of text, and the difference is total as far as software is concerned.' },
+        { t: 'p', x: 'You scan a twelve-page contract, open it, press Ctrl+F to find the termination clause, and get nothing. The document is not broken, it simply does not contain any text. It contains twelve photographs of text, and the difference is total as far as software is concerned.' },
         { t: 'h2', x: 'What OCR actually adds' },
         { t: 'p', x: 'Optical character recognition looks at the pixels, segments them into blocks, lines, words and characters, and classifies each shape against a trained model. The output is a stream of Unicode characters, each with a bounding box saying where on the page it came from.' },
-        { t: 'p', x: 'A good OCR tool then does something clever with that: it writes the recognised text back into the PDF in **invisible rendering mode**, positioned exactly over the matching pixels in the scan. Visually nothing changes, because the text is drawn with no ink. But Ctrl+F now finds words, selecting a paragraph highlights it in the right place, and copy-paste works. This is why the result is called a searchable PDF rather than a converted one — the original image is still there, untouched.' },
+        { t: 'p', x: 'A good OCR tool then does something clever with that: it writes the recognised text back into the PDF in **invisible rendering mode**, positioned exactly over the matching pixels in the scan. Visually nothing changes, because the text is drawn with no ink. But Ctrl+F now finds words, selecting a paragraph highlights it in the right place, and copy-paste works. This is why the result is called a searchable PDF rather than a converted one, the original image is still there, untouched.' },
         { t: 'note', x: 'This is also why OCR is non-destructive. If the recognition gets a word wrong, the picture of the page is still correct; only the hidden text is wrong. You can always re-run OCR with better settings without losing anything.' },
         { t: 'h2', x: 'Run it in your browser' },
         {
           t: 'steps',
           items: [
             { h: 'Open the file', x: 'Drop the scanned PDF onto the [OCR tool](/tools/ocr-pdf). Recognition runs locally in your browser, which matters because scans are usually the most sensitive documents anyone owns.' },
-            { h: 'Choose the language', x: 'Pick the language the document is written in. This is the single biggest lever on accuracy — the recogniser uses the language model to resolve ambiguous shapes. Select two languages only if the document genuinely mixes them.' },
+            { h: 'Choose the language', x: 'Pick the language the document is written in. This is the single biggest lever on accuracy, the recogniser uses the language model to resolve ambiguous shapes. Select two languages only if the document genuinely mixes them.' },
             { h: 'Let it download the language pack', x: 'Each language is a separate trained data file of roughly 2 to 15 MB, fetched once and then cached. The first run on a new language is slower for this reason.' },
             { h: 'Wait for the pages', x: 'Budget a few seconds per page on a modern laptop. PDFs are capped at the first 30 pages in the browser, so split anything longer with [Split PDF](/tools/split-pdf) and run the parts one at a time.' },
-            { h: 'Check a page before you trust it', x: 'Open the result and search for a word you know appears on page one. If it is not found, the language, resolution or orientation is wrong — see [how to get better OCR results](/blog/ocr-scanned-documents/improve-ocr-accuracy).' },
+            { h: 'Check a page before you trust it', x: 'Open the result and search for a word you know appears on page one. If it is not found, the language, resolution or orientation is wrong, see [how to get better OCR results](/blog/ocr/improve-ocr-accuracy).' },
             { h: 'Download', x: 'Export the searchable PDF. Keep the original scan as well until you have confirmed the new file is good.' },
           ],
         },
@@ -89,9 +89,9 @@ export const ocrScans: Cluster = {
         { t: 'p', x: 'For bulk work, OCRmyPDF wraps Tesseract and handles the PDF plumbing, including deskewing and rotation.' },
         { t: 'code', x: '# Add a searchable layer, straighten crooked pages, fix upside-down scans\nocrmypdf --language eng --deskew --rotate-pages --optimize 1 scan.pdf searchable.pdf\n\n# A German and English document, skipping pages that already have text\nocrmypdf -l deu+eng --skip-text report.pdf out.pdf\n\n# Check the result: this should print real words, not nothing\npdftotext searchable.pdf - | head -40' },
         { t: 'h2', x: 'File size and what to do about it' },
-        { t: 'p', x: 'OCR adds only the text layer, which is tiny — usually a few kilobytes per page. Files still grow when a tool re-encodes the page images on the way out, sometimes doubling the size. If that happens, run the result through the [compressor](/tools/compress-pdf), which re-encodes the scan images without touching the text layer you just created.' },
+        { t: 'p', x: 'OCR adds only the text layer, which is tiny, usually a few kilobytes per page. Files still grow when a tool re-encodes the page images on the way out, sometimes doubling the size. If that happens, run the result through the [compressor](/tools/compress-pdf), which re-encodes the scan images without touching the text layer you just created.' },
         { t: 'h2', x: 'What to do with the text once you have it' },
-        { t: 'p', x: 'A searchable PDF is the usual goal, but the recognised text can also be exported on its own. Use [PDF to text](/tools/pdf-to-text) for a plain file you can grep or feed to another program, or [PDF to Word](/tools/pdf-to-word) when you need to edit the document rather than read it. If you are not sure whether a given file needs OCR at all, [test whether it is searchable first](/blog/ocr-scanned-documents/make-pdf-searchable).' },
+        { t: 'p', x: 'A searchable PDF is the usual goal, but the recognised text can also be exported on its own. Use [PDF to text](/tools/pdf-to-text) for a plain file you can grep or feed to another program, or [PDF to Word](/tools/pdf-to-word) when you need to edit the document rather than read it. If you are not sure whether a given file needs OCR at all, [test whether it is searchable first](/blog/ocr/make-pdf-searchable).' },
       ],
       faqs: [
         { q: 'Does OCR change how my scanned PDF looks?', a: 'No. The recognised text is written in an invisible rendering mode positioned over the original image, so the page appears exactly as before. Only searching, selecting and copying behave differently.' },
@@ -105,7 +105,7 @@ export const ocrScans: Cluster = {
     },
     {
       slug: 'extract-text-from-image',
-      cluster: 'ocr-scanned-documents',
+      cluster: 'ocr',
       title: 'How to extract text from an image or photo',
       metaTitle: 'How to Extract Text From an Image or Photo',
       metaDescription:
@@ -158,7 +158,7 @@ export const ocrScans: Cluster = {
         {
           t: 'ol',
           items: [
-            'Sort the files so the names put them in reading order — most tools use filename order, not the order you selected them.',
+            'Sort the files so the names put them in reading order, most tools use filename order, not the order you selected them.',
             'Combine them with the [images to PDF tool](/tools/jpg-to-pdf), which puts one image on each page.',
             'Run the result through [OCR](/tools/ocr-pdf) once, choosing the correct language.',
             'Export plain text with [PDF to text](/tools/pdf-to-text) if you want the words rather than the document.',
@@ -167,9 +167,9 @@ export const ocrScans: Cluster = {
         { t: 'cta', tool: 'ocr-pdf', x: 'Got more than a handful of images? Combine them into one PDF and OCR the lot in a single pass.' },
         { t: 'h2', x: 'Privacy: on-device or in the cloud?' },
         { t: 'p', x: 'This distinction is worth knowing before you photograph a payslip. Live Text on Apple devices and PowerToys Text Extractor on Windows run entirely on the device. Google Lens and Google Drive OCR send the image to a server. Browser-based OCR tools that use WebAssembly also run locally, with only the language model downloaded.' },
-        { t: 'warn', x: 'Photos carry EXIF metadata, which routinely includes the exact GPS coordinates where the picture was taken and the device that took it. If you are sharing a photographed document rather than just reading it, strip that first — the same reasoning as [removing metadata from a PDF](/blog/pdf-privacy/remove-metadata-from-pdf).' },
+        { t: 'warn', x: 'Photos carry EXIF metadata, which routinely includes the exact GPS coordinates where the picture was taken and the device that took it. If you are sharing a photographed document rather than just reading it, strip that first, the same reasoning as [removing metadata from a PDF](/blog/privacy/remove-metadata-from-pdf).' },
         { t: 'h2', x: 'What comes out, and what does not' },
-        { t: 'p', x: 'Recognition returns characters, not layout. Columns are usually merged into a single stream, tables lose their cell structure and arrive as loose runs of numbers, and hyphenated line breaks stay hyphenated. Expect to clean up. If the layout matters more than the words, keep the image and add a searchable text layer instead of extracting plain text — see [how to OCR a scanned PDF](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf).' },
+        { t: 'p', x: 'Recognition returns characters, not layout. Columns are usually merged into a single stream, tables lose their cell structure and arrive as loose runs of numbers, and hyphenated line breaks stay hyphenated. Expect to clean up. If the layout matters more than the words, keep the image and add a searchable text layer instead of extracting plain text, see [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf).' },
       ],
       faqs: [
         { q: 'How do I copy text from a photo on an iPhone?', a: 'Open the photo, press and hold on the text, and drag the selection handles as you would in any document. This is Live Text, built into iOS since version 15, and it runs entirely on the device.' },
@@ -183,7 +183,7 @@ export const ocrScans: Cluster = {
     },
     {
       slug: 'make-pdf-searchable',
-      cluster: 'ocr-scanned-documents',
+      cluster: 'ocr',
       title: 'How to tell if a PDF is searchable, and make it so',
       metaTitle: 'Is Your PDF Searchable? How to Test and Fix It',
       metaDescription:
@@ -201,7 +201,7 @@ export const ocrScans: Cluster = {
         { t: 'p', x: 'A PDF that will not search is one of the most common document complaints, and it has three quite different causes. Two minutes of testing tells you which one you have, and the fix follows directly from that.' },
         { t: 'h2', x: 'Test 1: the Ctrl+F test' },
         { t: 'p', x: 'Open the file in any viewer, press **Ctrl+F** (**Cmd+F** on a Mac), and type a common word you can plainly see on the current page. Something short and unambiguous: a name, a date, "the".' },
-        { t: 'p', x: 'No results means there is no matching text layer. But do not stop here — the search box may simply be searching a page you are not looking at, and some viewers restrict search scope in odd ways. Run the second test to confirm.' },
+        { t: 'p', x: 'No results means there is no matching text layer. But do not stop here, the search box may simply be searching a page you are not looking at, and some viewers restrict search scope in odd ways. Run the second test to confirm.' },
         { t: 'h2', x: 'Test 2: the select-text test' },
         { t: 'p', x: 'Click at the start of a line and drag across it. This is the decisive test.' },
         {
@@ -230,10 +230,10 @@ export const ocrScans: Cluster = {
         { t: 'h2', x: 'Fixing an image-only PDF' },
         { t: 'p', x: 'This is the common case and the fix is straightforward: run OCR, which adds an invisible text layer over the existing images without changing how the page looks.' },
         { t: 'cta', tool: 'ocr-pdf', x: 'Add a searchable text layer to a scanned PDF in your browser, in over 100 languages.' },
-        { t: 'p', x: 'The step-by-step version, along with language selection and the accuracy you should expect, is in [how to OCR a scanned PDF](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf). If the scan is poor, spend five minutes on [improving the input](/blog/ocr-scanned-documents/improve-ocr-accuracy) before running recognition — it makes far more difference than any setting.' },
+        { t: 'p', x: 'The step-by-step version, along with language selection and the accuracy you should expect, is in [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf). If the scan is poor, spend five minutes on [improving the input](/blog/ocr/improve-ocr-accuracy) before running recognition, it makes far more difference than any setting.' },
         { t: 'h2', x: 'The awkward middle case: hybrid PDFs' },
         { t: 'p', x: 'Documents assembled from several sources are frequently part searchable and part not. A born-digital report with three scanned appendices behaves normally for forty pages and then goes silent. So does a contract where a signed page was scanned and reinserted.' },
-        { t: 'p', x: 'The symptom is distinctive: search works, but misses things you know are there. Test the specific page you care about rather than page one. Most OCR tools have a skip-text option that processes only the image pages and leaves the existing text layers untouched, which is exactly what you want here — re-OCRing a page that already has good text usually makes it worse.' },
+        { t: 'p', x: 'The symptom is distinctive: search works, but misses things you know are there. Test the specific page you care about rather than page one. Most OCR tools have a skip-text option that processes only the image pages and leaves the existing text layers untouched, which is exactly what you want here, re-OCRing a page that already has good text usually makes it worse.' },
         { t: 'h2', x: 'Text that selects but pastes as nonsense' },
         { t: 'p', x: 'You highlight "Invoice total" and paste it, and get something like `,QYRLFH WRWDO`. The page has a text layer, but the PDF is missing the mapping that says which Unicode character each glyph represents.' },
         {
@@ -272,7 +272,7 @@ export const ocrScans: Cluster = {
     },
     {
       slug: 'improve-ocr-accuracy',
-      cluster: 'ocr-scanned-documents',
+      cluster: 'ocr',
       title: 'How to get better OCR results from bad scans',
       metaTitle: 'How to Get Better OCR Results From Bad Scans',
       metaDescription:
@@ -287,7 +287,7 @@ export const ocrScans: Cluster = {
       answer:
         'Scan at 300 DPI, straighten the page to within half a degree, raise the contrast until the paper is white and the ink black, process one column at a time, and select only the language actually present. Input quality dominates every engine setting you can change afterwards.',
       body: [
-        { t: 'p', x: 'OCR settings get most of the attention and deserve almost none of it. The difference between a 300 DPI straight scan and a 150 DPI crooked photocopy is the difference between 99 percent and 80 percent accuracy, and no engine option closes that gap. Fix the picture and the recognition looks after itself. The steps for the recognition pass itself are in [how to OCR a scanned PDF](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf).' },
+        { t: 'p', x: 'OCR settings get most of the attention and deserve almost none of it. The difference between a 300 DPI straight scan and a 150 DPI crooked photocopy is the difference between 99 percent and 80 percent accuracy, and no engine option closes that gap. Fix the picture and the recognition looks after itself. The steps for the recognition pass itself are in [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf).' },
         { t: 'h2', x: 'Resolution: 300 DPI, and why' },
         { t: 'p', x: 'Recognition engines want a capital letter to be roughly 30 pixels tall. For 10 or 12 point body type, that lands almost exactly at 300 DPI. Below that, characters start sharing pixels with their neighbours and the classifier confuses rn with m, cl with d, and 8 with B.' },
         {
@@ -303,10 +303,10 @@ export const ocrScans: Cluster = {
             ['1200 DPI', 'No benefit, often slower and worse', 'Not for OCR'],
           ],
         },
-        { t: 'warn', x: 'Never upscale a low-resolution scan to hit 300 DPI. Interpolation smears the character edges, which is precisely the information the recogniser needs. A 150 DPI scan enlarged to 300 performs worse than the 150 DPI original. Rescan instead — see [what resolution you need](/blog/pdf-images/best-image-format-for-print).' },
+        { t: 'warn', x: 'Never upscale a low-resolution scan to hit 300 DPI. Interpolation smears the character edges, which is precisely the information the recogniser needs. A 150 DPI scan enlarged to 300 performs worse than the 150 DPI original. Rescan instead, see [what resolution you need](/blog/images/best-image-format-for-print).' },
         { t: 'h2', x: 'Straighten the page' },
         { t: 'p', x: 'Line detection assumes text runs horizontally. A skew of two or three degrees, which is what you get from a page dropped casually into a feeder, causes lines to be merged or split and drags accuracy down sharply. Aim for under half a degree.' },
-        { t: 'p', x: 'Most OCR pipelines can do this for you: OCRmyPDF has `--deskew`, Acrobat straightens during its recognition pass, and dedicated tools like ScanTailor handle whole books. Also correct page orientation — a scan rotated 90 or 180 degrees produces complete nonsense, which `--rotate-pages` detects and fixes.' },
+        { t: 'p', x: 'Most OCR pipelines can do this for you: OCRmyPDF has `--deskew`, Acrobat straightens during its recognition pass, and dedicated tools like ScanTailor handle whole books. Also correct page orientation, a scan rotated 90 or 180 degrees produces complete nonsense, which `--rotate-pages` detects and fixes.' },
         { t: 'h2', x: 'Contrast and binarisation' },
         { t: 'p', x: 'Engines convert the page to pure black and white before recognising anything, using a threshold. The default global method works well on evenly lit scans and fails on anything with a gradient, which is why phone photos produce a page that is half readable and half solid black.' },
         {
@@ -314,7 +314,7 @@ export const ocrScans: Cluster = {
           items: [
             { h: 'Convert to greyscale', x: 'Colour adds nothing for text recognition and can confuse the threshold. Greyscale first.' },
             { h: 'Set the white point', x: 'Use Levels in any image editor and drag the white input slider left until the paper is genuinely white, not light grey. This removes paper texture and scanner noise in one move.' },
-            { h: 'Set the black point', x: 'Drag the black slider right until the ink is solid. Stop as soon as thin strokes start breaking up — over-thresholding erodes letters and is worse than a slightly grey page.' },
+            { h: 'Set the black point', x: 'Drag the black slider right until the ink is solid. Stop as soon as thin strokes start breaking up, over-thresholding erodes letters and is worse than a slightly grey page.' },
             { h: 'Fix uneven lighting first if present', x: 'A gradient across the page needs adaptive thresholding, not a global one. ScanTailor and the `--clean` option in OCRmyPDF both handle this.' },
             { h: 'Remove speckle', x: 'Photocopy dust and JPEG noise get classified as punctuation. A light despeckle pass removes stray marks smaller than a full stop.' },
             { h: 'Crop to the text area', x: 'Cut off dark scan borders, the shadow in a book gutter and any visible desk. Every non-text region is somewhere for the layout analyser to go wrong.' },
@@ -342,7 +342,7 @@ export const ocrScans: Cluster = {
         { t: 'p', x: 'Non-Latin scripts have their own requirements. Arabic and Persian are cursive and connected, so accuracy is structurally lower. Indic scripts such as Bengali, Devanagari and Tamil have complex conjunct forms and benefit from 400 DPI. Chinese and Japanese have large character sets and need the vertical model when the text runs vertically.' },
         { t: 'h2', x: 'Where handwriting stops' },
         { t: 'p', x: 'Tesseract is trained on printed type. Neat block capitals sometimes come through at 60 to 80 percent, which is enough to search for a name and not enough to read. Ordinary cursive returns essentially nothing usable, and no amount of preprocessing changes that, because the engine has no model for connected script.' },
-        { t: 'p', x: 'Handwritten text recognition is a separate field with separate models. If you have a handwritten archive, use a service built for it rather than tuning a print engine. For forms that mix printed labels with handwritten answers, expect the labels to recognise cleanly and the answers not to — which is still useful, because it lets you find the right form quickly.' },
+        { t: 'p', x: 'Handwritten text recognition is a separate field with separate models. If you have a handwritten archive, use a service built for it rather than tuning a print engine. For forms that mix printed labels with handwritten answers, expect the labels to recognise cleanly and the answers not to, which is still useful, because it lets you find the right form quickly.' },
         { t: 'h2', x: 'A checklist before you run OCR' },
         {
           t: 'ol',
@@ -359,7 +359,7 @@ export const ocrScans: Cluster = {
           ],
         },
         { t: 'cta', tool: 'ocr-pdf', x: 'Once the input is clean, run OCR in your browser and get a searchable file back.' },
-        { t: 'tip', x: 'Always test on one representative page before processing two hundred. Thirty seconds of checking catches a wrong language or an upside-down batch before it costs you an hour, and lets you confirm the file is genuinely [searchable afterwards](/blog/ocr-scanned-documents/make-pdf-searchable).' },
+        { t: 'tip', x: 'Always test on one representative page before processing two hundred. Thirty seconds of checking catches a wrong language or an upside-down batch before it costs you an hour, and lets you confirm the file is genuinely [searchable afterwards](/blog/ocr/make-pdf-searchable).' },
       ],
       faqs: [
         { q: 'What DPI is best for OCR?', a: '300 DPI for ordinary 10 to 12 point text, which puts a capital letter at roughly 30 pixels tall. Go to 400 DPI for very small type or for Indic and CJK scripts. Above 600 DPI there is no benefit and processing slows down.' },

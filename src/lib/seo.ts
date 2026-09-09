@@ -102,7 +102,7 @@ function upsertLink(rel: string, href: string) {
  * an article never follows the visitor onto a marketing page.
  *
  * The `schema` and `keywords` props are usually fresh array literals, so the effect keys
- * off their serialised form rather than object identity — otherwise every unrelated
+ * off their serialised form rather than object identity, otherwise every unrelated
  * re-render would tear down and rebuild the structured data.
  */
 export function useSeo({ title, description, path, type = 'website', published, updated, keywords, schema, noindex }: Seo) {
@@ -151,7 +151,7 @@ export const breadcrumbSchema = (trail: { name: string; path: string }[]) => ({
   itemListElement: trail.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name, item: `${SITE_URL}${t.path}` })),
 })
 
-/** Only emit this when the questions and answers are actually rendered on the page —
+/** Only emit this when the questions and answers are actually rendered on the page , 
  *  Google requires FAQ markup to match visible content. */
 export const faqSchema = (faqs: { q: string; a: string }[]) => ({
   '@context': 'https://schema.org',

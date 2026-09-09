@@ -1,4 +1,4 @@
-// Client for api.printxpdf.com — the only server this site talks to. It handles billing
+// Client for api.printxpdf.com, the only server this site talks to. It handles billing
 // (Stripe Checkout and the customer portal, via the Worker) and the four conversions that
 // need a real layout engine. Everything else on the site runs in the browser.
 import { stripExt } from './download'
@@ -71,7 +71,7 @@ const post = (body?: unknown, headers: Record<string, string> = {}): RequestInit
   body === undefined ? { method: 'POST', headers } : { method: 'POST', headers: { 'content-type': 'application/json', ...headers }, body: JSON.stringify(body) }
 
 export const billing = {
-  /** Starts Stripe Checkout; the caller redirects to `url`. Works signed-out — Checkout collects the email. */
+  /** Starts Stripe Checkout; the caller redirects to `url`. Works signed-out, Checkout collects the email. */
   checkout: (plan: PaidPlan, email?: string) => call<{ url: string; id: string }>('/billing/checkout', post({ plan, email: email || undefined })),
   /** Exchanges a completed checkout session for the entitlement. Idempotent, so a page refresh is safe. */
   session: (id: string) => call<Entitlement>(`/billing/session?id=${encodeURIComponent(id)}`),
@@ -80,7 +80,7 @@ export const billing = {
   rotate: (token: string) => call<{ token: string }>('/billing/rotate', post(undefined, bearer(token))),
 }
 
-/** The key's payload is plain base64url JSON; only the signature is secret. Never trust it for access — the server does. */
+/** The key's payload is plain base64url JSON; only the signature is secret. Never trust it for access, the server does. */
 export function decodeToken(token: string): { sub: string; email: string; plan: PaidPlan; exp: number } | null {
   try {
     if (!token.startsWith('pxp_')) return null

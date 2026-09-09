@@ -1,5 +1,5 @@
 // Tiny localStorage-backed store for the account features. Everything here stays in the
-// browser; the one server-side fact is the entitlement — a signed key that points at a
+// browser; the one server-side fact is the entitlement, a signed key that points at a
 // Stripe subscription, which api.printxpdf.com verifies whenever it is used.
 
 import type { Entitlement, Plan } from './api'

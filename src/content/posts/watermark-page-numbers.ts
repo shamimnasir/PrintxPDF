@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const watermarkPdf: Cluster = {
-  slug: 'watermark-page-numbers',
+  slug: 'watermark',
   name: 'Watermarks, page numbers and stamps',
   title: 'How to watermark, number and stamp a PDF properly',
   metaTitle: 'Add Watermarks & Page Numbers to a PDF',
@@ -18,7 +18,7 @@ export const watermarkPdf: Cluster = {
   posts: [
     {
       slug: 'add-watermark-to-pdf',
-      cluster: 'watermark-page-numbers',
+      cluster: 'watermark',
       title: 'How to add a watermark to a PDF',
       metaTitle: 'How to Add a Watermark to a PDF (Free)',
       metaDescription:
@@ -45,7 +45,7 @@ export const watermarkPdf: Cluster = {
             { h: 'Set rotation to 45 degrees', x: 'A diagonal mark crosses the text at an angle, so no single line of body text is obscured for its whole length. Zero degrees looks tidier on screen but hides more words.' },
             { h: 'Choose centred or tiled', x: 'One large centred mark for a warning. A tiled grid of small marks when you want the mark to survive someone cropping or screenshotting part of the page.' },
             { h: 'Apply to the right pages', x: 'All pages is the default. If you are marking a covering page only, enter a page range such as `1` before you apply.' },
-            { h: 'Save the file', x: 'Download the marked copy. Keep the original unmarked file — removing a watermark cleanly afterwards is harder than making a fresh copy.' },
+            { h: 'Save the file', x: 'Download the marked copy. Keep the original unmarked file, removing a watermark cleanly afterwards is harder than making a fresh copy.' },
           ],
         },
         { t: 'cta', tool: 'add-watermark', x: 'Add a text watermark to every page of a PDF, free and in your browser.' },
@@ -64,7 +64,7 @@ export const watermarkPdf: Cluster = {
           ],
         },
         { t: 'h3', x: 'Tiled or centred?' },
-        { t: 'p', x: 'A centred watermark is a message to a cooperative reader. A tiled watermark is a deterrent against reuse: if someone crops a figure out of your report, the crop still carries part of a mark. Tiling costs readability, so use 8-12 percent opacity when you tile, and keep the tile text short — a name or a domain rather than a sentence.' },
+        { t: 'p', x: 'A centred watermark is a message to a cooperative reader. A tiled watermark is a deterrent against reuse: if someone crops a figure out of your report, the crop still carries part of a mark. Tiling costs readability, so use 8-12 percent opacity when you tile, and keep the tile text short, a name or a domain rather than a sentence.' },
         { t: 'h2', x: 'Text watermark or image watermark?' },
         {
           t: 'ul',
@@ -82,27 +82,27 @@ export const watermarkPdf: Cluster = {
           t: 'table',
           head: ['What you need', 'What actually does it'],
           rows: [
-            ['Warn a reader that a document is provisional', 'A watermark — this is exactly its job'],
+            ['Warn a reader that a document is provisional', 'A watermark, this is exactly its job'],
             ['Discourage casual reuse of your images or copy', 'A tiled watermark, plus a visible copyright line'],
-            ['Stop someone opening the file at all', 'Encryption with an open password — see [password protecting a PDF](/blog/pdf-privacy/password-protect-pdf)'],
-            ['Remove sensitive words from the file entirely', 'Real redaction — see [redacting a PDF properly](/blog/pdf-privacy/redact-pdf-properly)'],
+            ['Stop someone opening the file at all', 'Encryption with an open password, see [password protecting a PDF](/blog/privacy/password-protect-pdf)'],
+            ['Remove sensitive words from the file entirely', 'Real redaction, see [redacting a PDF properly](/blog/privacy/redact-pdf-properly)'],
             ['Prove a document is genuine and unaltered', 'A digital signature'],
           ],
         },
         { t: 'p', x: 'You can make a watermark harder to remove by [flattening the file](/tools/flatten-pdf) afterwards, which merges layers and form fields into the page content. That defeats a casual "click and delete" attempt. It does not defeat anyone determined, and it also makes your own text non-editable, so only flatten the copy you are sending out.' },
-        { t: 'tip', x: 'For per-recipient tracking, put the recipient name in the tiled watermark itself — a faint repeated "Issued to A. Khan, 14 March 2026" across the page. If a copy leaks, the mark tells you which copy it was. This is the one case where a watermark genuinely changes behaviour.' },
+        { t: 'tip', x: 'For per-recipient tracking, put the recipient name in the tiled watermark itself, a faint repeated "Issued to A. Khan, 14 March 2026" across the page. If a copy leaks, the mark tells you which copy it was. This is the one case where a watermark genuinely changes behaviour.' },
         { t: 'h2', x: 'What to write on the mark' },
         {
           t: 'ul',
           items: [
-            '**DRAFT** — content may still change. Pair it with a version number in the [footer](/blog/watermark-page-numbers/add-header-footer-pdf).',
-            '**CONFIDENTIAL** — internal or contractual restriction on sharing.',
-            '**FOR REVIEW ONLY** — clearer than DRAFT when you want comments back by a date.',
-            '**SAMPLE** or **SPECIMEN** — for template documents that must never be mistaken for a real certificate or invoice.',
-            '**SUPERSEDED** — for archived versions, so an old copy in someone\'s downloads folder does not get used.',
+            '**DRAFT**, content may still change. Pair it with a version number in the [footer](/blog/watermark/add-header-footer-pdf).',
+            '**CONFIDENTIAL**, internal or contractual restriction on sharing.',
+            '**FOR REVIEW ONLY**, clearer than DRAFT when you want comments back by a date.',
+            '**SAMPLE** or **SPECIMEN**, for template documents that must never be mistaken for a real certificate or invoice.',
+            '**SUPERSEDED**, for archived versions, so an old copy in someone\'s downloads folder does not get used.',
           ],
         },
-        { t: 'p', x: 'Once the mark is on, most documents also want [page numbers](/blog/watermark-page-numbers/add-page-numbers-to-pdf) so a reader can refer to "the table on page 7" without counting sheets.' },
+        { t: 'p', x: 'Once the mark is on, most documents also want [page numbers](/blog/watermark/add-page-numbers-to-pdf) so a reader can refer to "the table on page 7" without counting sheets.' },
       ],
       faqs: [
         { q: 'How do I add a DRAFT watermark to a PDF for free?', a: 'Open the file in a browser-based watermark tool, type DRAFT, set opacity to about 15 percent and rotation to 45 degrees, and apply it to all pages. No account or installation is needed, and the file never leaves your computer.' },
@@ -116,7 +116,7 @@ export const watermarkPdf: Cluster = {
     },
     {
       slug: 'add-page-numbers-to-pdf',
-      cluster: 'watermark-page-numbers',
+      cluster: 'watermark',
       title: 'How to add page numbers to a PDF',
       metaTitle: 'How to Add Page Numbers to a PDF',
       metaDescription:
@@ -162,7 +162,7 @@ export const watermarkPdf: Cluster = {
         { t: 'note', x: 'PDF measures in points: 72 points to an inch. A4 is 595 x 842 points, US Letter is 612 x 792 points. A 36 point margin is half an inch on both, which is why that number appears as a default everywhere. Most consumer printers cannot print within about 12 points of the paper edge, so never set the margin below 18.' },
         { t: 'h2', x: 'The "1 of 12" format' },
         { t: 'p', x: 'A bare number tells a reader where they are. A "1 of 12" tells them whether anything is missing, which is why it is standard on faxed and posted documents, invoices, and anything handed across a desk. Use it whenever the document may be printed and separated from its file.' },
-        { t: 'p', x: 'One trap: the total counts the pages in this file, not the pages in the logical document. If you number a 12-page file and then [merge it](/blog/merge-pdf/how-to-merge-pdf-files) with an 8-page appendix, every page still says "of 12" and now half of them are wrong. Merge first, number second. Always.' },
+        { t: 'p', x: 'One trap: the total counts the pages in this file, not the pages in the logical document. If you number a 12-page file and then [merge it](/blog/merge/how-to-merge-pdf-files) with an 8-page appendix, every page still says "of 12" and now half of them are wrong. Merge first, number second. Always.' },
         { t: 'h2', x: 'Skipping a cover page' },
         { t: 'p', x: 'Two different settings are involved and they are easy to confuse:' },
         {
@@ -175,7 +175,7 @@ export const watermarkPdf: Cluster = {
             ['Continuation file', 'Numbering that carries on from an earlier PDF', 'First page to number 1, starting number 41'],
           ],
         },
-        { t: 'p', x: 'For a document with front matter — a title page, a contents page, an executive summary — the traditional convention is roman numerals (i, ii, iii) on the front matter and arabic numerals restarting at 1 on the first page of the body. In a PDF tool this means two passes: number pages 2-5 as roman, then number page 6 onward as arabic starting at 1.' },
+        { t: 'p', x: 'For a document with front matter, a title page, a contents page, an executive summary, the traditional convention is roman numerals (i, ii, iii) on the front matter and arabic numerals restarting at 1 on the first page of the body. In a PDF tool this means two passes: number pages 2-5 as roman, then number page 6 onward as arabic starting at 1.' },
         { t: 'h2', x: 'Bates numbering for legal and discovery work' },
         { t: 'p', x: 'Bates numbering is page numbering with a fixed prefix and a fixed digit count, applied across a whole production set so that every page in a case has a unique identifier: `SMITH-000001`, `SMITH-000002`, and so on. The digit count is padded so the numbers sort correctly as text.' },
         {
@@ -188,7 +188,7 @@ export const watermarkPdf: Cluster = {
           ],
         },
         { t: 'h2', x: 'When numbers land on top of your text' },
-        { t: 'p', x: 'This happens when the source document has no bottom margin to spare — dense slides, scanned pages trimmed close, or a report that already has a footer. Three fixes, in order:' },
+        { t: 'p', x: 'This happens when the source document has no bottom margin to spare, dense slides, scanned pages trimmed close, or a report that already has a footer. Three fixes, in order:' },
         {
           t: 'ol',
           items: [
@@ -197,8 +197,8 @@ export const watermarkPdf: Cluster = {
             'Scale the page content down. Printing at 96 percent scale creates a clear band at the bottom of every page, and at that ratio nobody notices the difference in text size.',
           ],
         },
-        { t: 'tip', x: 'Numbering a scanned document works the same way, but the number is drawn as real text on top of an image. That means the number is searchable even when the rest of the page is not — a genuinely useful side effect when you are looking for a specific exhibit.' },
-        { t: 'p', x: 'If you also need a document title or date on every page, add that as a [header or footer](/blog/watermark-page-numbers/add-header-footer-pdf) in the same pass rather than numbering twice.' },
+        { t: 'tip', x: 'Numbering a scanned document works the same way, but the number is drawn as real text on top of an image. That means the number is searchable even when the rest of the page is not, a genuinely useful side effect when you are looking for a specific exhibit.' },
+        { t: 'p', x: 'If you also need a document title or date on every page, add that as a [header or footer](/blog/watermark/add-header-footer-pdf) in the same pass rather than numbering twice.' },
       ],
       faqs: [
         { q: 'How do I add page numbers to a PDF for free?', a: 'Use a browser-based page numbering tool: drop the file in, choose a position and format, set the starting number, and download the result. It runs on your own machine, so there is no upload, no account and no watermark on the output.' },
@@ -212,7 +212,7 @@ export const watermarkPdf: Cluster = {
     },
     {
       slug: 'add-header-footer-pdf',
-      cluster: 'watermark-page-numbers',
+      cluster: 'watermark',
       title: 'How to add a header or footer to a PDF',
       metaTitle: 'How to Add a Header or Footer to a PDF',
       metaDescription:
@@ -263,7 +263,7 @@ export const watermarkPdf: Cluster = {
         {
           t: 'ol',
           items: [
-            'Most word processor exports leave a 1 inch (72 point) margin top and bottom. That is plenty — put the header at 36 points and it lands in clean space.',
+            'Most word processor exports leave a 1 inch (72 point) margin top and bottom. That is plenty, put the header at 36 points and it lands in clean space.',
             'Slides exported to PDF and marketing documents often run content to within 20 points of the edge. There is no safe band; scale the pages down before adding anything.',
             'Scanned pages vary sheet to sheet, because the scan itself is not perfectly aligned. Use the tightest page as your reference, not the first one.',
             'Documents that already have a footer need your text in a different horizontal slot, not a different vertical one.',
@@ -275,29 +275,29 @@ export const watermarkPdf: Cluster = {
         {
           t: 'ul',
           items: [
-            'Use **ISO 8601** — `2026-03-09` — for anything that will be sorted, filed or read internationally. It removes the 03/09 ambiguity between March and September entirely.',
-            'Use a written month — `9 March 2026` — for documents going to clients or the public, where readability matters more than sortability.',
+            'Use **ISO 8601**, `2026-03-09`, for anything that will be sorted, filed or read internationally. It removes the 03/09 ambiguity between March and September entirely.',
+            'Use a written month, `9 March 2026`, for documents going to clients or the public, where readability matters more than sortability.',
             'Label what the date means when it is not obvious: `Issued 2026-03-09` or `Valid until 2026-06-30`.',
             'Never put a generated timestamp on a document you will reissue. Two copies with different times in the footer look like two different documents.',
           ],
         },
         { t: 'h2', x: 'File references that pay for themselves' },
         { t: 'p', x: 'The most useful thing in a footer is usually not the date but the reference: a short code that ties the printed sheet back to the file it came from. A pattern like `OPS-2026-11 v3` tells you the owning team, the year, the sequence and the revision. When someone waves a page at you in a meeting, you can find the source in seconds.' },
-        { t: 'p', x: 'Pair the reference with a version marker and a [DRAFT watermark](/blog/watermark-page-numbers/add-watermark-to-pdf) while the document is still moving, and drop the watermark for the final issue while keeping the reference. That way the printed archive shows which copies were provisional.' },
+        { t: 'p', x: 'Pair the reference with a version marker and a [DRAFT watermark](/blog/watermark/add-watermark-to-pdf) while the document is still moving, and drop the watermark for the final issue while keeping the reference. That way the printed archive shows which copies were provisional.' },
         { t: 'h2', x: 'What a header cannot do' },
         {
           t: 'table',
           head: ['Goal', 'Header or footer?', 'Better option'],
           rows: [
-            ['Identify the document on a loose printed sheet', 'Yes, this is the core use', '—'],
-            ['Mark a document as confidential', 'Partly — it is easy to miss', 'Add a watermark as well'],
-            ['Prevent forwarding or copying', 'No', 'Encryption, and accept its [real limits](/blog/pdf-privacy/password-protect-pdf)'],
-            ['Record who authored the file', 'Yes, visibly', 'Also check the hidden [document metadata](/blog/pdf-privacy/remove-metadata-from-pdf)'],
-            ['Hide something already on the page', 'No, never', '[Proper redaction](/blog/pdf-privacy/redact-pdf-properly)'],
+            ['Identify the document on a loose printed sheet', 'Yes, this is the core use', ', '],
+            ['Mark a document as confidential', 'Partly, it is easy to miss', 'Add a watermark as well'],
+            ['Prevent forwarding or copying', 'No', 'Encryption, and accept its [real limits](/blog/privacy/password-protect-pdf)'],
+            ['Record who authored the file', 'Yes, visibly', 'Also check the hidden [document metadata](/blog/privacy/remove-metadata-from-pdf)'],
+            ['Hide something already on the page', 'No, never', '[Proper redaction](/blog/privacy/redact-pdf-properly)'],
           ],
         },
         { t: 'note', x: 'Text added as a header is real, selectable, searchable text. That is useful: search a folder for a file reference and every printed-to-PDF copy comes back. It also means the header contents are extracted along with your document text, so do not put anything in a header you would not want in a text dump of the file.' },
-        { t: 'p', x: 'Finish by adding [page numbers](/blog/watermark-page-numbers/add-page-numbers-to-pdf) in the same pass, and check the result at 100 percent zoom rather than fit-to-window — small text is where zoom lies to you.' },
+        { t: 'p', x: 'Finish by adding [page numbers](/blog/watermark/add-page-numbers-to-pdf) in the same pass, and check the result at 100 percent zoom rather than fit-to-window, small text is where zoom lies to you.' },
       ],
       faqs: [
         { q: 'How do I add a company name to every page of a PDF?', a: 'Put it in the header right field of a header and footer tool, set the font to 9pt, apply to all pages, and download. It is drawn onto each page as real text, so it prints and searches like any other text in the file.' },
@@ -311,7 +311,7 @@ export const watermarkPdf: Cluster = {
     },
     {
       slug: 'watermark-vs-stamp',
-      cluster: 'watermark-page-numbers',
+      cluster: 'watermark',
       title: 'Watermark, stamp, or redaction? Choosing the right mark',
       metaTitle: 'Watermark vs Stamp vs Redaction Explained',
       metaDescription:
@@ -335,7 +335,7 @@ export const watermarkPdf: Cluster = {
           rows: [
             ['Purpose', 'Set the status of the whole document', 'Record an action at a point in time', 'Remove content permanently'],
             ['Scope', 'Every page, or a page range', 'One spot on one page, usually', 'Specific words, figures or regions'],
-            ['Typical text', 'DRAFT, CONFIDENTIAL, SAMPLE', 'APPROVED, RECEIVED, PAID, VOID', 'Nothing — the content is gone'],
+            ['Typical text', 'DRAFT, CONFIDENTIAL, SAMPLE', 'APPROVED, RECEIVED, PAID, VOID', 'Nothing, the content is gone'],
             ['Appearance', 'Large, pale, diagonal, behind text', 'Small, opaque, often coloured, on top', 'Solid black box, or blank space'],
             ['Changes the file content?', 'Adds a mark', 'Adds a mark', 'Deletes the original content'],
             ['Reversible?', 'Yes, by anyone with an editor', 'Yes, by anyone with an editor', 'No, if done correctly'],
@@ -345,33 +345,33 @@ export const watermarkPdf: Cluster = {
         },
         { t: 'h2', x: 'Watermark: a warning to a cooperative reader' },
         { t: 'p', x: 'A watermark changes how a reader treats the document, and nothing else. It is the right choice when the risk you are managing is misunderstanding rather than misuse: a draft quoted as final, a template mistaken for a real certificate, an old version resurfacing after a policy change.' },
-        { t: 'p', x: 'It works because it is unmissable and applies to every page, so a single sheet torn out of the stack still carries the warning. It fails the moment anyone treats it as protection. Anyone with a PDF editor deletes the object in two clicks. See [adding a watermark](/blog/watermark-page-numbers/add-watermark-to-pdf) for the settings that make one readable.' },
+        { t: 'p', x: 'It works because it is unmissable and applies to every page, so a single sheet torn out of the stack still carries the warning. It fails the moment anyone treats it as protection. Anyone with a PDF editor deletes the object in two clicks. See [adding a watermark](/blog/watermark/add-watermark-to-pdf) for the settings that make one readable.' },
         { t: 'h2', x: 'Stamp: a record that something happened' },
-        { t: 'p', x: 'A stamp is small, opaque and specific. It says a thing was done to this document: received on this date, approved by this person, paid, void, superseded. Its ancestor is the rubber stamp on a paper file, and it inherits the same convention — a stamp usually carries a date, often a name, and sits in a margin rather than across the content.' },
+        { t: 'p', x: 'A stamp is small, opaque and specific. It says a thing was done to this document: received on this date, approved by this person, paid, void, superseded. Its ancestor is the rubber stamp on a paper file, and it inherits the same convention, a stamp usually carries a date, often a name, and sits in a margin rather than across the content.' },
         {
           t: 'ul',
           items: [
             '**Dynamic stamps** in desktop editors fill in the current date, time and user name automatically. Useful for volume, but the name comes from the local application profile, so it proves who was logged in, not who agreed.',
-            '**Approval stamps** are a workflow marker, not a legal signature. If a stamp needs to bind someone, use a [digital signature](/blog/sign-pdf/how-to-sign-a-pdf) instead, which cryptographically ties an identity to the exact bytes of the document.',
-            '**Received stamps** are the most defensible use: they record an internal fact — this arrived on our desk on this date — which is exactly what a stamp is good at.',
+            '**Approval stamps** are a workflow marker, not a legal signature. If a stamp needs to bind someone, use a [digital signature](/blog/sign/how-to-sign-a-pdf) instead, which cryptographically ties an identity to the exact bytes of the document.',
+            '**Received stamps** are the most defensible use: they record an internal fact, this arrived on our desk on this date, which is exactly what a stamp is good at.',
           ],
         },
-        { t: 'note', x: 'A stamp and a watermark are technically the same thing: content drawn onto the page. The difference is entirely convention — size, opacity, position and intent. Tools separate them because the settings you want are different, not because the file format treats them differently.' },
+        { t: 'note', x: 'A stamp and a watermark are technically the same thing: content drawn onto the page. The difference is entirely convention, size, opacity, position and intent. Tools separate them because the settings you want are different, not because the file format treats them differently.' },
         { t: 'h2', x: 'Redaction: the only one that removes anything' },
         { t: 'warn', x: 'Drawing a black rectangle over text does not redact it. The text stays in the file underneath the box, and anyone can recover it by selecting the area and pressing copy, or by running a text extraction tool. The box is decoration drawn over the top.' },
-        { t: 'p', x: 'Real redaction removes the underlying content from the file. In desktop tools this is a two-stage operation: mark the regions, then apply, at which point the text objects are deleted and replaced with a filled rectangle. In a browser toolkit, the reliable equivalent is to cover the regions and then rasterise each page to an image, which destroys the text layer entirely. Either way, you then verify by trying to select the text — the full method is in [how to redact a PDF properly](/blog/pdf-privacy/redact-pdf-properly).' },
+        { t: 'p', x: 'Real redaction removes the underlying content from the file. In desktop tools this is a two-stage operation: mark the regions, then apply, at which point the text objects are deleted and replaced with a filled rectangle. In a browser toolkit, the reliable equivalent is to cover the regions and then rasterise each page to an image, which destroys the text layer entirely. Either way, you then verify by trying to select the text, the full method is in [how to redact a PDF properly](/blog/privacy/redact-pdf-properly).' },
         { t: 'h2', x: 'Choosing in ten seconds' },
         {
           t: 'table',
           head: ['If your sentence is…', 'You want'],
           rows: [
             ['"Readers should know this is not final"', 'A watermark'],
-            ['"Every page should carry our name and a reference"', 'A [header or footer](/blog/watermark-page-numbers/add-header-footer-pdf)'],
+            ['"Every page should carry our name and a reference"', 'A [header or footer](/blog/watermark/add-header-footer-pdf)'],
             ['"This was approved on Tuesday by the finance team"', 'A stamp'],
             ['"I need to prove this document has not been altered"', 'A digital signature'],
-            ['"Nobody outside the team may open this"', 'Encryption — with its [honest limits](/blog/pdf-privacy/password-protect-pdf)'],
+            ['"Nobody outside the team may open this"', 'Encryption, with its [honest limits](/blog/privacy/password-protect-pdf)'],
             ['"These three names must not appear in the file"', 'Redaction, verified'],
-            ['"Nobody should know which laptop made this"', 'Stripping the [metadata](/blog/pdf-privacy/remove-metadata-from-pdf)'],
+            ['"Nobody should know which laptop made this"', 'Stripping the [metadata](/blog/privacy/remove-metadata-from-pdf)'],
           ],
         },
         { t: 'h2', x: 'Combining them' },
@@ -386,7 +386,7 @@ export const watermarkPdf: Cluster = {
             'Strip the metadata on the outgoing copy, and keep the unmarked original somewhere safe.',
           ],
         },
-        { t: 'cta', tool: 'add-watermark', x: 'Start with a watermark — free, in the browser, nothing uploaded.' },
+        { t: 'cta', tool: 'add-watermark', x: 'Start with a watermark, free, in the browser, nothing uploaded.' },
         { t: 'p', x: 'The single rule worth remembering: a watermark and a stamp change what a reader sees, and redaction changes what the file contains. If the consequence of being wrong is a disclosure, only the third one counts.' },
       ],
       faqs: [

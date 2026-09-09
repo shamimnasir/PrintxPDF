@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const printWebPages: Cluster = {
-  slug: 'print-web-pages',
+  slug: 'print',
   name: 'Printing web pages',
   title: 'How to print any web page without ads, menus or wasted paper',
   metaTitle: 'How to Print a Web Page Without Ads (2026 Guide)',
@@ -18,9 +18,9 @@ export const printWebPages: Cluster = {
   posts: [
     {
       slug: 'print-web-page-without-ads',
-      cluster: 'print-web-pages',
+      cluster: 'print',
       title: 'How to print a web page without ads',
-      metaTitle: 'How to Print a Web Page Without Ads — 5 Free Methods',
+      metaTitle: 'How to Print a Web Page Without Ads | 5 Free Methods',
       metaDescription:
         'Five ways to print a web page without ads, banners or sidebars: printer-friendly tools, Chrome reader mode, print preview, browser extensions and CSS tricks.',
       published: '2026-01-14',
@@ -58,7 +58,7 @@ export const printWebPages: Cluster = {
             ['Safari (macOS/iOS)', 'Click the ☰ icon at the left of the address bar, or press ⌃⌘R', 'Best of the built-in readers. Lets you pick a font and background before printing.'],
             ['Firefox', 'Click the page icon in the address bar, or press F9', 'Reader View has a built-in print button.'],
             ['Microsoft Edge', 'Click "Immersive Reader" in the address bar, or press F9', 'Also offers Read Aloud and picture dictionary.'],
-            ['Google Chrome', 'Reading mode in the side panel', 'Reformats for reading but not for printing — Ctrl+P still prints the full page. Use a printer-friendly tool instead.'],
+            ['Google Chrome', 'Reading mode in the side panel', 'Reformats for reading but not for printing, Ctrl+P still prints the full page. Use a printer-friendly tool instead.'],
           ],
         },
         { t: 'warn', x: 'Reader mode fails on pages that are not articles: dashboards, order confirmations, forum threads, search results and anything behind a heavy JavaScript app. For those, use Method 1 or Method 3.' },
@@ -67,11 +67,11 @@ export const printWebPages: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Background graphics** — leave this off. It is off by default and keeps you from printing solid colour blocks and hero images.',
-            '**Headers and footers** — turn off to remove the page title, URL, date and page number your browser adds.',
-            '**Scale** — drop to 80 or 90 percent to fit more text per sheet without making it unreadable.',
-            '**Pages** — do not print the whole document. Look at the preview, find the two pages that hold your content, and enter a range like `2-3`.',
-            '**Print using system dialog** — on Chrome this opens your operating system dialog, which exposes two-sided printing and draft quality.',
+            '**Background graphics**, leave this off. It is off by default and keeps you from printing solid colour blocks and hero images.',
+            '**Headers and footers**, turn off to remove the page title, URL, date and page number your browser adds.',
+            '**Scale**, drop to 80 or 90 percent to fit more text per sheet without making it unreadable.',
+            '**Pages**, do not print the whole document. Look at the preview, find the two pages that hold your content, and enter a range like `2-3`.',
+            '**Print using system dialog**, on Chrome this opens your operating system dialog, which exposes two-sided printing and draft quality.',
           ],
         },
         { t: 'tip', x: 'Selecting the text you want before pressing Ctrl+P, then choosing **Selection only** in the print dialog, is the single fastest trick in this article. It works in Chrome, Firefox and Edge.' },
@@ -92,7 +92,7 @@ export const printWebPages: Cluster = {
             ['Print a dashboard, invoice or web app screen', 'DevTools (Method 5) or a full-page screenshot'],
           ],
         },
-        { t: 'p', x: 'Once the page is clean, you might also want to [save it as a PDF instead of printing](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome), or [cut the ink cost](/blog/save-paper-ink/save-ink-when-printing) further.' },
+        { t: 'p', x: 'Once the page is clean, you might also want to [save it as a PDF instead of printing](/blog/save-pdf/save-webpage-as-pdf-chrome), or [cut the ink cost](/blog/save-ink/save-ink-when-printing) further.' },
       ],
       faqs: [
         { q: 'How do I print only the article and not the whole web page?', a: 'Select the article text with your mouse, press Ctrl+P, and choose "Selection only" in the print dialog. If the site does not support that, paste the URL into a printer-friendly tool, which extracts the article automatically.' },
@@ -106,7 +106,7 @@ export const printWebPages: Cluster = {
     },
     {
       slug: 'print-selected-text-only',
-      cluster: 'print-web-pages',
+      cluster: 'print',
       title: 'How to print only the part of a page you selected',
       metaTitle: 'Print Only Selected Text From a Web Page',
       metaDescription:
@@ -129,7 +129,7 @@ export const printWebPages: Cluster = {
             { h: 'Select the content', x: 'Click and drag across the text you want. Include the heading if you want it on the printout.' },
             { h: 'Open the print dialog', x: 'Press Ctrl+P on Windows or Cmd+P on macOS. Do not right-click and choose Print, which prints the whole page in some builds.' },
             { h: 'Find the Pages dropdown', x: 'Under **Pages**, open the dropdown that says "All" and choose **Selection only**.' },
-            { h: 'Check the preview', x: 'The preview should now show just your selection. If it still shows everything, your selection was lost when the dialog opened — close it, reselect, and try again.' },
+            { h: 'Check the preview', x: 'The preview should now show just your selection. If it still shows everything, your selection was lost when the dialog opened, close it, reselect, and try again.' },
             { h: 'Print', x: 'Choose your printer, or "Save as PDF" as the destination, and confirm.' },
           ],
         },
@@ -151,7 +151,7 @@ export const printWebPages: Cluster = {
         { t: 'tip', x: 'For any of the above, paste the URL into the [web page printer](/print), delete everything except the block you want, and print that. It takes about ten seconds and works regardless of how the site is built.' },
         { t: 'cta', tool: 'html-to-pdf', x: 'Already have the content in an HTML file? Convert it straight to PDF.' },
         { t: 'h2', x: 'Printing a selection to PDF' },
-        { t: 'p', x: 'The same trick works for PDFs: choose **Save as PDF** as your printer destination instead of a physical printer. You get a one-page PDF containing only the selection, which is ideal for filing receipts or quoting a source in a report. See [saving a web page as a PDF](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome) for the full walkthrough.' },
+        { t: 'p', x: 'The same trick works for PDFs: choose **Save as PDF** as your printer destination instead of a physical printer. You get a one-page PDF containing only the selection, which is ideal for filing receipts or quoting a source in a report. See [saving a web page as a PDF](/blog/save-pdf/save-webpage-as-pdf-chrome) for the full walkthrough.' },
       ],
       faqs: [
         { q: 'Why is "Selection only" missing from my print dialog?', a: 'The option only appears when the browser detects an active text selection at the moment the dialog opens. If you selected text and then clicked elsewhere, the selection was cleared. Reselect and press Ctrl+P without clicking anything in between.' },
@@ -164,7 +164,7 @@ export const printWebPages: Cluster = {
     },
     {
       slug: 'fix-web-page-printing-problems',
-      cluster: 'print-web-pages',
+      cluster: 'print',
       title: 'Web page printing problems and how to fix them',
       metaTitle: 'Web Page Won’t Print Correctly? 12 Fixes',
       metaDescription:
@@ -196,17 +196,17 @@ export const printWebPages: Cluster = {
         { t: 'h2', x: 'Everything prints in a tiny font' },
         { t: 'p', x: 'The site set a small print font size, or your scale is stuck below 100 percent from a previous job. Reset Scale to Default, then use a printer-friendly view where you can set text to Large or XL explicitly.' },
         { t: 'h2', x: 'Nine pages for a 600-word article' },
-        { t: 'p', x: 'This is the classic complaint and it is what printer-friendly tools exist for. See [how to print a web page without ads](/blog/print-web-pages/print-web-page-without-ads) for the full method. In the browser alone, the quickest partial fix is to look at the preview, identify the two or three pages holding your content, and print only that range.' },
+        { t: 'p', x: 'This is the classic complaint and it is what printer-friendly tools exist for. See [how to print a web page without ads](/blog/print/print-web-page-without-ads) for the full method. In the browser alone, the quickest partial fix is to look at the preview, identify the two or three pages holding your content, and print only that range.' },
         { t: 'h2', x: 'Links print as unreadable blue underlined text' },
         { t: 'p', x: 'On paper, a link is just decoration unless the URL is visible. In a printer-friendly view you can choose to strip link styling entirely, or to print each URL in brackets after the link text so a reader can type it in. The second option is useful for reference material and academic printouts.' },
         { t: 'h2', x: 'Headers and footers add junk to every page' },
-        { t: 'p', x: 'Your browser, not the site, adds the page title, URL, date and page numbers. Turn off **Headers and footers** in More settings. Note that this also removes page numbers, so for a long document you may prefer to keep them, or [add proper page numbers to a PDF](/blog/watermark-page-numbers/add-page-numbers-to-pdf) instead.' },
+        { t: 'p', x: 'Your browser, not the site, adds the page title, URL, date and page numbers. Turn off **Headers and footers** in More settings. Note that this also removes page numbers, so for a long document you may prefer to keep them, or [add proper page numbers to a PDF](/blog/watermark/add-page-numbers-to-pdf) instead.' },
         { t: 'h2', x: 'The print dialog opens then immediately closes' },
         { t: 'p', x: 'A script on the page is calling `window.print()` and then navigating. Save the page first (Ctrl+S, "Web page, HTML only"), open the saved file, and print from there. Or paste the URL into a cleaner, which never runs the page scripts.' },
         { t: 'h2', x: 'A table splits awkwardly across pages' },
-        { t: 'p', x: 'Rows break mid-cell because the browser has nowhere better to split. Landscape orientation plus a scale reduction usually fits the table on one page. If it is genuinely long, converting to a PDF and then [splitting by page range](/blog/split-pdf/split-pdf-into-pages) gives you cleaner control.' },
+        { t: 'p', x: 'Rows break mid-cell because the browser has nowhere better to split. Landscape orientation plus a scale reduction usually fits the table on one page. If it is genuinely long, converting to a PDF and then [splitting by page range](/blog/split/split-pdf-into-pages) gives you cleaner control.' },
         { t: 'h2', x: 'Colours look wrong or too dark' },
-        { t: 'p', x: 'Screens are backlit, paper is not, so mid-grey text on a white screen becomes muddy on paper. Print in black and white (greyscale) for text documents, which is also faster and cheaper. See [saving ink](/blog/save-paper-ink/save-ink-when-printing).' },
+        { t: 'p', x: 'Screens are backlit, paper is not, so mid-grey text on a white screen becomes muddy on paper. Print in black and white (greyscale) for text documents, which is also faster and cheaper. See [saving ink](/blog/save-ink/save-ink-when-printing).' },
         { t: 'h2', x: 'A quick checklist' },
         {
           t: 'ol',
@@ -232,7 +232,7 @@ export const printWebPages: Cluster = {
     },
     {
       slug: 'print-web-page-to-pdf-vs-printer',
-      cluster: 'print-web-pages',
+      cluster: 'print',
       title: 'Print to paper or save as PDF? How to decide',
       metaTitle: 'Print to Paper vs Save as PDF: Which to Choose',
       metaDescription:
@@ -269,7 +269,7 @@ export const printWebPages: Cluster = {
           items: [
             'You are keeping a **receipt, order confirmation or booking**. You will want to search it later by order number.',
             'You are collecting **research or references**. A folder of PDFs is searchable; a stack of paper is not.',
-            'You need a **record of what a page said on a given date** — a price, a policy, a listing. The file metadata carries the date.',
+            'You need a **record of what a page said on a given date**, a price, a policy, a listing. The file metadata carries the date.',
             'You are **sharing with someone else**. Email an attachment instead of scanning.',
             'You might need **several copies** later.',
           ],
@@ -295,9 +295,9 @@ export const printWebPages: Cluster = {
             { h: 'For a message or slide', x: 'Press **Screenshot** to get a PNG of the cleaned page.' },
           ],
         },
-        { t: 'note', x: 'Printing to PDF through the browser print dialog keeps the text selectable and produces a small file. Exporting a rendered image of the page produces a picture of the text: it looks identical but cannot be searched. Prefer the print dialog when searchability matters, and use [OCR](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) if you end up with an image-only file.' },
+        { t: 'note', x: 'Printing to PDF through the browser print dialog keeps the text selectable and produces a small file. Exporting a rendered image of the page produces a picture of the text: it looks identical but cannot be searched. Prefer the print dialog when searchability matters, and use [OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) if you end up with an image-only file.' },
         { t: 'h2', x: 'A note on archiving' },
-        { t: 'p', x: 'For documents you need to keep for years, PDF/A is the archival flavour: it embeds every font and forbids external dependencies, so the file renders the same in 2046 as it does today. Ordinary PDFs are usually fine, but if the document is legally or historically important, converting to PDF/A is cheap insurance. Either way, [strip the metadata](/blog/pdf-privacy/remove-metadata-from-pdf) before sharing anything you did not author.' },
+        { t: 'p', x: 'For documents you need to keep for years, PDF/A is the archival flavour: it embeds every font and forbids external dependencies, so the file renders the same in 2046 as it does today. Ordinary PDFs are usually fine, but if the document is legally or historically important, converting to PDF/A is cheap insurance. Either way, [strip the metadata](/blog/privacy/remove-metadata-from-pdf) before sharing anything you did not author.' },
         { t: 'cta', tool: 'compress-pdf', x: 'Archiving a lot of files? Compress them first so the folder stays manageable.' },
       ],
       faqs: [

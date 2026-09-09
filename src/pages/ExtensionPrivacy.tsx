@@ -3,7 +3,7 @@ import { breadcrumbSchema, useSeo } from '../lib/seo'
 
 /**
  * Public privacy policy for the Chrome extension. The Web Store listing links here, so this
- * must state exactly what extension/ does — keep it in step with extension/PRIVACY.md.
+ * must state exactly what extension/ does, keep it in step with extension/PRIVACY.md.
  */
 export default function ExtensionPrivacy() {
   useSeo({

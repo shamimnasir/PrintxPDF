@@ -286,7 +286,7 @@ export default function ScanTool() {
           )}
         </div>
 
-        <Dropzone accept="image/*" multiple onFiles={onFiles} label="Or drop photos of your pages" hint="JPG, PNG, HEIC-converted — anything your browser can decode" />
+        <Dropzone accept="image/*" multiple onFiles={onFiles} label="Or drop photos of your pages" hint="JPG, PNG, HEIC-converted, anything your browser can decode" />
 
         {pages.length > 0 && (
           <div className="film">

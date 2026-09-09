@@ -48,7 +48,7 @@ export const postBySlug = (slug: string) => postIndex.get(slug)
 export const clusterBySlug = (slug: string) => clusterIndex.get(slug)
 export const clusterOf = (post: Post) => clusterIndex.get(post.cluster)
 
-/** Posts that reference a given tool slug — used to cross-link tool pages into the blog. */
+/** Posts that reference a given tool slug, used to cross-link tool pages into the blog. */
 export const postsForTool = (tool: string) => ALL_POSTS.filter((p) => p.relatedTools.includes(tool))
 
 export type { Cluster, Post, Block, Faq } from './types'

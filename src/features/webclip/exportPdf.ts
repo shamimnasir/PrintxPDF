@@ -44,7 +44,7 @@ export async function exportPdf(el: HTMLElement, filename: string, size: PageSiz
 export type ImageKind = 'png' | 'jpg'
 
 /** Screenshot of the cleaned page. JPEG has no alpha channel, so transparent areas are painted white
- *  first — otherwise the browser encodes them as black. */
+ *  first, otherwise the browser encodes them as black. */
 export async function exportImage(el: HTMLElement, filename: string, kind: ImageKind = 'png', quality = 0.92) {
   let canvas = await snapshot(el)
   if (kind === 'jpg') {

@@ -102,3 +102,38 @@ export function Card({ title, desc, children }: { title: string; desc?: string; 
     </section>
   )
 }
+
+
+/** Image picker that stores a resized data URL, so a photo can be set without touching the server. */
+export function Photo({ label, value, onChange, hint }: { label: string; value: string; onChange: (v: string) => void; hint?: string }) {
+  const pick = (file: File) => {
+    const img = new Image()
+    const url = URL.createObjectURL(file)
+    img.onload = () => {
+      const side = Math.min(512, img.width, img.height)
+      const c = document.createElement('canvas')
+      c.width = side
+      c.height = side
+      const sx = (img.width - Math.min(img.width, img.height)) / 2
+      const sy = (img.height - Math.min(img.width, img.height)) / 2
+      c.getContext('2d')!.drawImage(img, sx, sy, Math.min(img.width, img.height), Math.min(img.width, img.height), 0, 0, side, side)
+      onChange(c.toDataURL('image/jpeg', 0.86))
+      URL.revokeObjectURL(url)
+    }
+    img.src = url
+  }
+  return (
+    <Field label={label} hint={hint}>
+      <div className="row" style={{ gap: '0.75rem', alignItems: 'center' }}>
+        {value && <img src={value} alt="" width={56} height={56} style={{ objectFit: 'cover', borderRadius: '999px', border: 'var(--bw-thin) solid var(--line)' }} />}
+        <input type="file" accept="image/*" onChange={(e) => e.target.files?.[0] && pick(e.target.files[0])} />
+        <input className="input" style={{ flex: 1, minWidth: 160 }} value={value.startsWith('data:') ? '' : value} placeholder="or paste an image URL" onChange={(e) => onChange(e.target.value)} />
+        {value && (
+          <button type="button" className="btn btn-sm btn-ghost" onClick={() => onChange('')}>
+            Remove
+          </button>
+        )}
+      </div>
+    </Field>
+  )
+}

@@ -356,7 +356,7 @@ function Billing() {
           <a href={cfg.billing.portalLoginUrl} target="_blank" rel="noopener">
             Manage your subscription by email
           </a>{' '}
-          — Stripe sends a sign-in link to the address you paid with.
+         , Stripe sends a sign-in link to the address you paid with.
         </p>
       )}
     </div>
@@ -406,7 +406,7 @@ export default function Account() {
   const sessionId = params.get('session_id')
   const [activating, setActivating] = useState(!!sessionId)
   const [activationError, setActivationError] = useState<string | null>(null)
-  useSeo({ title: 'Your account — PrintxPDF', description: 'Saved documents, signatures, settings and your subscription.', path: '/account', noindex: true })
+  useSeo({ title: 'Your account | PrintxPDF', description: 'Saved documents, signatures, settings and your subscription.', path: '/account', noindex: true })
 
   // back from Stripe Checkout: turn the session into an entitlement, then drop the id from the URL
   useEffect(() => {

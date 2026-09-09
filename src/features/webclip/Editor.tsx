@@ -328,7 +328,7 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
   const doEmail = () => {
     const subject = encodeURIComponent(getTitle())
     const text = (bodyRef.current?.innerText || '').slice(0, 1500)
-    const body = encodeURIComponent(`${getTitle()}\n${article.url || ''}\n\n${text}\n\n— cleaned with PrintxPDF`)
+    const body = encodeURIComponent(`${getTitle()}\n${article.url || ''}\n\n${text}\n\n,  cleaned with PrintxPDF`)
     window.location.href = `mailto:?subject=${subject}&body=${body}`
   }
   const doSave = () => {

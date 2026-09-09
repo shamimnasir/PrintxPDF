@@ -29,7 +29,7 @@ export default function Pricing() {
   const { toast } = useToast()
   const [busy, setBusy] = useState<PaidPlan | null>(null)
   useSeo({
-    title: 'Pricing — Free Browser Tools, Pro Server Conversions',
+    title: 'Pricing | Free Browser Tools, Pro Server Conversions',
     description: 'Every browser PDF tool is free forever. Pro ($5/mo) adds 300 server conversions a month for PowerPoint and ebook formats; API ($29/mo) adds key-based access with 5,000 a month.',
     path: '/pricing',
     keywords: ['pdf tool pricing', 'free pdf tools', 'pptx to pdf api', 'epub to pdf api'],
@@ -123,7 +123,7 @@ export default function Pricing() {
       </div>
       <p className="muted center" style={{ marginTop: '2rem', fontSize: '0.85rem', maxWidth: 720, marginLeft: 'auto', marginRight: 'auto' }}>
         Payments are handled by Stripe; card details never touch this site. Plans renew monthly and can be cancelled any time
-        from your account. Refund on request within 14 days of your first charge — see the <Link to="/terms#refunds">terms</Link>.
+        from your account. Refund on request within 14 days of your first charge, see the <Link to="/terms#refunds">terms</Link>.
       </p>
 
       <h2 style={{ marginTop: '4rem' }}>Questions</h2>

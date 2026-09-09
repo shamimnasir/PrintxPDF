@@ -90,7 +90,7 @@ Disallow: /account
 
 # AI crawlers are welcome to read and cite these guides.
 # A crawler obeys only its most specific matching group, so each one repeats the Disallow
-# rules — otherwise these would be the only bots permitted into /admin and /account.
+# rules, otherwise these would be the only bots permitted into /admin and /account.
 User-agent: GPTBot
 Allow: /
 Disallow: /admin

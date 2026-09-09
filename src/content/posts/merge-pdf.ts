@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const mergePdf: Cluster = {
-  slug: 'merge-pdf',
+  slug: 'merge',
   name: 'Merging PDF files',
   title: 'How to merge PDF files without installing anything',
   metaTitle: 'How to Merge PDF Files Free (2026 Guide)',
@@ -18,7 +18,7 @@ export const mergePdf: Cluster = {
   posts: [
     {
       slug: 'how-to-merge-pdf-files',
-      cluster: 'merge-pdf',
+      cluster: 'merge',
       title: 'How to merge PDF files for free',
       metaTitle: 'How to Merge PDF Files for Free',
       metaDescription:
@@ -81,7 +81,7 @@ export const mergePdf: Cluster = {
             '**Images stored at full camera resolution.** A 12-megapixel photo placed on a page is still 12 megapixels inside the PDF, even though it displays at postcard size.',
           ],
         },
-        { t: 'p', x: 'Compression fixes all three: it de-duplicates identical objects, downsamples images to a sensible DPI, and re-encodes scans. A 60 MB merged batch of scans usually lands between 5 and 12 MB with no visible change on screen. See [reducing PDF file size for email](/blog/compress-pdf/reduce-pdf-file-size-for-email).' },
+        { t: 'p', x: 'Compression fixes all three: it de-duplicates identical objects, downsamples images to a sensible DPI, and re-encodes scans. A 60 MB merged batch of scans usually lands between 5 and 12 MB with no visible change on screen. See [reducing PDF file size for email](/blog/compress/reduce-pdf-file-size-for-email).' },
         { t: 'cta', tool: 'compress-pdf', x: 'Merged file too big to send? Compress it before you attach it.' },
         { t: 'h2', x: 'When merging fails' },
         {
@@ -110,7 +110,7 @@ export const mergePdf: Cluster = {
     },
     {
       slug: 'merge-pdf-without-acrobat',
-      cluster: 'merge-pdf',
+      cluster: 'merge',
       title: 'How to combine PDFs without Adobe Acrobat',
       metaTitle: 'Combine PDFs Without Adobe Acrobat',
       metaDescription:
@@ -169,7 +169,7 @@ export const mergePdf: Cluster = {
         { t: 'cta', tool: 'merge-pdf', x: 'Merge PDFs on Windows, Mac, Linux or ChromeOS, with no upload and no install.' },
         { t: 'h2', x: 'Command line, if you already live there' },
         { t: 'p', x: 'Three tools do this well and all are free. **qpdf** is the most correct: it preserves structure and is actively maintained. **pdftk** is the classic and still fine for simple jobs. **Ghostscript** re-writes the file, which can shrink it but also re-encodes images.' },
-        { t: 'code', x: '# qpdf — cleanest structural merge\nqpdf --empty --pages a.pdf b.pdf c.pdf -- merged.pdf\n\n# qpdf — merge only pages 1-3 of a.pdf with all of b.pdf\nqpdf --empty --pages a.pdf 1-3 b.pdf -- merged.pdf\n\n# pdftk — the classic\npdftk a.pdf b.pdf cat output merged.pdf\n\n# Ghostscript — re-writes and often compresses\ngs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite \\\n   -sOutputFile=merged.pdf a.pdf b.pdf' },
+        { t: 'code', x: '# qpdf, cleanest structural merge\nqpdf --empty --pages a.pdf b.pdf c.pdf -- merged.pdf\n\n# qpdf, merge only pages 1-3 of a.pdf with all of b.pdf\nqpdf --empty --pages a.pdf 1-3 b.pdf -- merged.pdf\n\n# pdftk, the classic\npdftk a.pdf b.pdf cat output merged.pdf\n\n# Ghostscript, re-writes and often compresses\ngs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite \\\n   -sOutputFile=merged.pdf a.pdf b.pdf' },
         { t: 'note', x: 'On macOS there is also a hidden Automator action at `/System/Library/Automator/Combine PDF Pages.action`, and a Python script Apple ships with Preview\'s print pipeline. Both work, and both are more effort than dragging thumbnails.' },
         { t: 'h2', x: 'Choosing between them' },
         {
@@ -186,7 +186,7 @@ export const mergePdf: Cluster = {
           ],
         },
         { t: 'h2', x: 'What you give up by not buying Acrobat' },
-        { t: 'p', x: 'Honestly, not much for merging. Where Acrobat still earns its price is true redaction that removes the underlying text rather than covering it, PDF/A validation and conversion, accessibility tagging for screen readers, and Bates numbering for legal discovery. Combining files is not on that list. Neither is [reordering pages](/blog/merge-pdf/reorder-pdf-pages), [splitting](/blog/split-pdf/split-pdf-into-pages) or compression, all of which have solid free equivalents.' },
+        { t: 'p', x: 'Honestly, not much for merging. Where Acrobat still earns its price is true redaction that removes the underlying text rather than covering it, PDF/A validation and conversion, accessibility tagging for screen readers, and Bates numbering for legal discovery. Combining files is not on that list. Neither is [reordering pages](/blog/merge/reorder-pdf-pages), [splitting](/blog/split/split-pdf-into-pages) or compression, all of which have solid free equivalents.' },
       ],
       faqs: [
         { q: 'Can Windows 11 merge PDF files without software?', a: 'No. There is no built-in merge in Windows 10 or 11. Microsoft Print to PDF handles one document at a time and Edge can only view and annotate. A browser-based merge tool is the closest thing to a built-in option.' },
@@ -200,7 +200,7 @@ export const mergePdf: Cluster = {
     },
     {
       slug: 'combine-images-and-pdfs',
-      cluster: 'merge-pdf',
+      cluster: 'merge',
       title: 'How to combine images and PDFs into one document',
       metaTitle: 'Combine Images and PDFs Into One File',
       metaDescription:
@@ -243,7 +243,7 @@ export const mergePdf: Cluster = {
             ['US Letter, 8.5 × 11 in', '1275 × 1650 px', '2550 × 3300 px', '5100 × 6600 px'],
             ['A4, 210 × 297 mm', '1240 × 1754 px', '2480 × 3508 px', '4960 × 7016 px'],
             ['A5, 148 × 210 mm', '874 × 1240 px', '1748 × 2480 px', '3496 × 4960 px'],
-            ['Typical iPhone photo', '4032 × 3024 px — more than enough for any of these', '', ''],
+            ['Typical iPhone photo', '4032 × 3024 px, more than enough for any of these', '', ''],
           ],
         },
         { t: 'p', x: 'A modern phone photo is around 12 megapixels, which is well above what a printed page can resolve. Placing it at full resolution wastes several megabytes per page for detail nobody will ever see. Downsampling to 300 DPI for print, or 150 DPI for a document that will only be read on screen, typically cuts the file by 70 to 90 percent.' },
@@ -288,7 +288,7 @@ export const mergePdf: Cluster = {
     },
     {
       slug: 'reorder-pdf-pages',
-      cluster: 'merge-pdf',
+      cluster: 'merge',
       title: 'How to reorder, rotate and delete PDF pages',
       metaTitle: 'Reorder, Rotate and Delete PDF Pages',
       metaDescription:
@@ -355,7 +355,7 @@ export const mergePdf: Cluster = {
           ],
         },
         { t: 'h2', x: 'Deleting is not redacting' },
-        { t: 'p', x: 'Removing a page removes it from the page tree. Depending on how the file is written, the underlying objects can survive in the file as orphaned data, particularly if the editor saves an incremental update rather than rewriting the whole document. For confidential material, use a tool that fully rewrites the file, then [flatten](/tools/flatten-pdf) it and [strip the metadata](/tools/remove-metadata). More on that in [deleting pages from a PDF](/blog/split-pdf/delete-pages-from-pdf).' },
+        { t: 'p', x: 'Removing a page removes it from the page tree. Depending on how the file is written, the underlying objects can survive in the file as orphaned data, particularly if the editor saves an incremental update rather than rewriting the whole document. For confidential material, use a tool that fully rewrites the file, then [flatten](/tools/flatten-pdf) it and [strip the metadata](/tools/remove-metadata). More on that in [deleting pages from a PDF](/blog/split/delete-pages-from-pdf).' },
         { t: 'cta', tool: 'rotate-pdf', x: 'Just need to turn a few pages the right way up and save it properly?' },
         { t: 'h2', x: 'A sensible order of operations' },
         { t: 'p', x: 'When a document needs several fixes, do them in this order: merge everything first, then reorder, then rotate, then delete, then add page numbers, then OCR if it is scanned, and compress last. Compression goes last because every earlier step rewrites the file and would undo it. Signing, if needed, goes after compression, because signing must be the final change.' },

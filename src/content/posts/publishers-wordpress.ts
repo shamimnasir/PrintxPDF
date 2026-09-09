@@ -1,14 +1,14 @@
 import type { Cluster } from '../types'
 
 export const publishersWordpress: Cluster = {
-  slug: 'publishers-wordpress',
+  slug: 'publishers',
   name: 'For publishers and developers',
   title: 'Print buttons, print stylesheets and printer-friendly pages',
   metaTitle: 'Print Buttons and Print CSS for Publishers',
   metaDescription:
     'Add a print or PDF button to WordPress or any website, write a print stylesheet that works, and stop readers printing nine sheets to get one article.',
   intro:
-    'Readers still print. Recipes go on the counter, itineraries go in a pocket, order confirmations go in a folder, and documentation goes next to the keyboard. Almost none of that is designed for: most sites ship no print stylesheet at all, so the nav bar takes the first sheet and the article arrives in fragments. These four guides cover the two halves of the fix — a button people can find, and a stylesheet that makes the button worth pressing.',
+    'Readers still print. Recipes go on the counter, itineraries go in a pocket, order confirmations go in a folder, and documentation goes next to the keyboard. Almost none of that is designed for: most sites ship no print stylesheet at all, so the nav bar takes the first sheet and the article arrives in fragments. These four guides cover the two halves of the fix, a button people can find, and a stylesheet that makes the button worth pressing.',
   answer:
     'Give readers a print button and a print stylesheet. The button is a plain HTML anchor or a button calling window.print(), placed near the article title. The stylesheet hides navigation, resets the layout to a single column, sets @page margins, controls page breaks and prints link URLs so the paper copy stands on its own.',
   primaryKeyword: 'how to add a print button to a website',
@@ -18,7 +18,7 @@ export const publishersWordpress: Cluster = {
   posts: [
     {
       slug: 'add-print-button-to-wordpress',
-      cluster: 'publishers-wordpress',
+      cluster: 'publishers',
       title: 'How to add a print button to WordPress',
       metaTitle: 'How to Add a Print Button to WordPress',
       metaDescription:
@@ -54,7 +54,7 @@ export const publishersWordpress: Cluster = {
             { h: 'Search and install', x: 'Search for a print or print-friendly plugin, click **Install Now**, then **Activate**. The [PrintxPDF WordPress plugin](/wordpress) adds Print, PDF and Email buttons and needs no API key on the free tier.' },
             { h: 'Choose placement', x: 'In the plugin settings pick top, bottom or both, and inline or floating. Bottom-of-article is the safest default: a floating button competes with cookie banners and chat widgets on mobile.' },
             { h: 'Limit it to the right post types', x: 'Turn the button off on the home page, archives and search results. It belongs on single posts, pages and any custom post type that people actually print.' },
-            { h: 'Check the output', x: 'Open a post, click the button and read what comes out. If the plugin only calls the browser print dialog, you still need a print stylesheet — see [writing a print stylesheet](/blog/publishers-wordpress/print-stylesheet-css).' },
+            { h: 'Check the output', x: 'Open a post, click the button and read what comes out. If the plugin only calls the browser print dialog, you still need a print stylesheet, see [writing a print stylesheet](/blog/publishers/print-stylesheet-css).' },
           ],
         },
         { t: 'h2', x: 'Route 2: a Custom HTML block, no plugin' },
@@ -64,7 +64,7 @@ export const publishersWordpress: Cluster = {
         { t: 'h2', x: 'Route 3: a shortcode you can drop anywhere' },
         { t: 'p', x: 'A shortcode gives you `[print_button]` in any editor, widget or page builder, and one place to change the markup later. Put this in a child theme’s `functions.php` or, better, in a small site-specific plugin so it survives a theme change too.' },
         { t: 'code', x: "<?php\n// wp-content/plugins/site-print-button/site-print-button.php\n\nfunction pxp_print_button( $atts ) {\n    $a = shortcode_atts( array( 'label' => 'Print / PDF' ), $atts, 'print_button' );\n\n    $target = 'https://printxpdf.com/print?url=' . rawurlencode( get_permalink() );\n\n    return sprintf(\n        '<a class=\"pxp-print\" href=\"%s\" target=\"_blank\" rel=\"noopener\">%s</a>',\n        esc_url( $target ),\n        esc_html( $a['label'] )\n    );\n}\nadd_shortcode( 'print_button', 'pxp_print_button' );" },
-        { t: 'p', x: 'Use it as `[print_button]` or `[print_button label="Print this recipe"]`. Three details matter: `shortcode_atts` gives you a default label, `rawurlencode` keeps query strings and non-ASCII characters in the permalink intact, and `esc_url` plus `esc_html` are not optional — a shortcode that echoes unescaped attributes is a cross-site scripting hole.' },
+        { t: 'p', x: 'Use it as `[print_button]` or `[print_button label="Print this recipe"]`. Three details matter: `shortcode_atts` gives you a default label, `rawurlencode` keeps query strings and non-ASCII characters in the permalink intact, and `esc_url` plus `esc_html` are not optional, a shortcode that echoes unescaped attributes is a cross-site scripting hole.' },
         { t: 'h2', x: 'Route 4: put it on every post automatically' },
         { t: 'p', x: 'Rather than editing templates, append the shortcode with a filter. The three guards below matter: without them the button also appears in excerpts, RSS feeds, related-post widgets and anywhere else the theme runs the loop.' },
         { t: 'code', x: "add_filter( 'the_content', function ( $content ) {\n    if ( ! is_singular( array( 'post', 'page' ) ) ) {\n        return $content;   // not a single view\n    }\n    if ( ! in_the_loop() || ! is_main_query() ) {\n        return $content;   // a widget or a related-posts loop\n    }\n\n    return $content . do_shortcode( '[print_button]' );\n} );" },
@@ -87,7 +87,7 @@ export const publishersWordpress: Cluster = {
         { t: 'code', x: "add_action( 'woocommerce_order_details_after_order_table', function () {\n    printf(\n        '<button type=\"button\" class=\"pxp-print button\" onclick=\"window.print()\">%s</button>',\n        esc_html__( 'Print this order', 'my-theme' )\n    );\n} );" },
         { t: 'h2', x: 'Which one should you pick' },
         { t: 'p', x: 'If you have fewer than twenty posts, use the Custom HTML block and stop reading. If you publish regularly, spend the fifteen minutes on the shortcode and the filter: it is roughly thirty lines of code, it lives outside the theme, and it means every post you write from now on has the button without you thinking about it. If you would rather not touch PHP at all, a plugin is a perfectly respectable answer.' },
-        { t: 'p', x: 'Whichever route you take, the button is only half the job. A button that opens a print dialog full of navigation and sidebars is worse than no button, because now the reader blames you rather than the browser. Pair it with [a print stylesheet](/blog/publishers-wordpress/print-stylesheet-css), and run the [printer-friendly checklist](/blog/publishers-wordpress/printer-friendly-website-design) once across your main templates. If you are not on WordPress, the same anchor works everywhere — see [adding a print button to any website](/blog/publishers-wordpress/print-button-any-website) or generate one on the [button builder](/website-button).' },
+        { t: 'p', x: 'Whichever route you take, the button is only half the job. A button that opens a print dialog full of navigation and sidebars is worse than no button, because now the reader blames you rather than the browser. Pair it with [a print stylesheet](/blog/publishers/print-stylesheet-css), and run the [printer-friendly checklist](/blog/publishers/printer-friendly-website-design) once across your main templates. If you are not on WordPress, the same anchor works everywhere, see [adding a print button to any website](/blog/publishers/print-button-any-website) or generate one on the [button builder](/website-button).' },
         { t: 'cta', tool: 'qr-code', x: 'Printing something readers will act on? Put a QR code on the paper that leads back to the live page.' },
       ],
       faqs: [
@@ -102,7 +102,7 @@ export const publishersWordpress: Cluster = {
     },
     {
       slug: 'print-stylesheet-css',
-      cluster: 'publishers-wordpress',
+      cluster: 'publishers',
       title: 'How to write a print stylesheet that actually works',
       metaTitle: 'Write a Print Stylesheet That Actually Works',
       metaDescription:
@@ -177,7 +177,7 @@ export const publishersWordpress: Cluster = {
         },
         { t: 'cta', tool: 'html-to-pdf', x: 'Render a page to PDF to see exactly what your print stylesheet produces.' },
         { t: 'cta', tool: 'pdf-to-text', x: 'Extract the text from your printed PDF to confirm the text layer survived intact.' },
-        { t: 'p', x: 'Now give readers a way to reach it: [a print button on any site](/blog/publishers-wordpress/print-button-any-website), or on WordPress [the button routes](/blog/publishers-wordpress/add-print-button-to-wordpress). For the wider audit, run through [making your website printer-friendly](/blog/publishers-wordpress/printer-friendly-website-design). To see how a page behaves with no print CSS at all, paste it into the [web page printer](/print).' },
+        { t: 'p', x: 'Now give readers a way to reach it: [a print button on any site](/blog/publishers/print-button-any-website), or on WordPress [the button routes](/blog/publishers/add-print-button-to-wordpress). For the wider audit, run through [making your website printer-friendly](/blog/publishers/printer-friendly-website-design). To see how a page behaves with no print CSS at all, paste it into the [web page printer](/print).' },
       ],
       faqs: [
         { q: 'Why is my print CSS not working?', a: 'Three usual causes: the rules sit outside a @media print block, a dark-mode block later in the cascade overrides them, or you tested with the DevTools media emulator, which does not paginate. Always confirm in the real Ctrl+P preview.' },
@@ -191,7 +191,7 @@ export const publishersWordpress: Cluster = {
     },
     {
       slug: 'printer-friendly-website-design',
-      cluster: 'publishers-wordpress',
+      cluster: 'publishers',
       title: 'How to make your website printer-friendly',
       metaTitle: 'How to Make Your Website Printer-Friendly',
       metaDescription:
@@ -229,7 +229,7 @@ export const publishersWordpress: Cluster = {
         { t: 'h2', x: '6. The article is inside a scroll container' },
         { t: 'p', x: 'Any wrapper with `overflow: hidden`, `height: 100vh` or a fixed height truncates the printed document to one page. It is the commonest cause of "the site only prints the first page", and the fix is two lines.' },
         { t: 'h2', x: '7. You paginate through the middle of things' },
-        { t: 'p', x: 'Figures split from captions, headings stranded at the foot of a sheet, code broken across the fold, a single orphaned line. `break-inside: avoid` on figures, tables and code, `break-after: avoid` on headings, and `orphans: 3; widows: 3` cover almost all of it — [the full rules](/blog/publishers-wordpress/print-stylesheet-css).' },
+        { t: 'p', x: 'Figures split from captions, headings stranded at the foot of a sheet, code broken across the fold, a single orphaned line. `break-inside: avoid` on figures, tables and code, `break-after: avoid` on headings, and `orphans: 3; widows: 3` cover almost all of it, [the full rules](/blog/publishers/print-stylesheet-css).' },
         { t: 'h2', x: '8. The paper has no identity' },
         { t: 'p', x: 'A printed article that does not say where it came from is worthless as a reference and as marketing. Add a print-only block with the site name, page title, publication date and canonical URL. Browsers add their own header and footer, but readers can switch those off.' },
         { t: 'h2', x: '9. You send readers to a worse "print version"' },
@@ -270,7 +270,7 @@ export const publishersWordpress: Cluster = {
         { t: 'h2', x: 'Why it is worth the afternoon' },
         { t: 'p', x: 'A good print stylesheet is a good reading stylesheet with the interface removed, so the work overlaps with accessibility, reader modes and anything an assistant reads. It also fixes a quiet failure mode: readers who get nine sheets of clutter never file a bug. They just decide your site is annoying.' },
         { t: 'cta', tool: 'html-to-pdf', x: 'Render your template to PDF and check the result at full size before you ship.' },
-        { t: 'p', x: 'Next: the code is in [writing a print stylesheet](/blog/publishers-wordpress/print-stylesheet-css), the button in [adding a print button to any website](/blog/publishers-wordpress/print-button-any-website), and on WordPress start with [the WordPress routes](/blog/publishers-wordpress/add-print-button-to-wordpress). [Web page printing problems](/blog/print-web-pages/fix-web-page-printing-problems) is the same list from the reader end.' },
+        { t: 'p', x: 'Next: the code is in [writing a print stylesheet](/blog/publishers/print-stylesheet-css), the button in [adding a print button to any website](/blog/publishers/print-button-any-website), and on WordPress start with [the WordPress routes](/blog/publishers/add-print-button-to-wordpress). [Web page printing problems](/blog/print/fix-web-page-printing-problems) is the same list from the reader end.' },
       ],
       faqs: [
         { q: 'How do I test whether my website is printer-friendly?', a: 'Press Ctrl+P on your longest article, your widest table page and one commerce page, in Chrome, Firefox and Safari, with the operating system set to dark mode at least once. The preview is the whole test; almost every problem is visible in it.' },
@@ -284,7 +284,7 @@ export const publishersWordpress: Cluster = {
     },
     {
       slug: 'print-button-any-website',
-      cluster: 'publishers-wordpress',
+      cluster: 'publishers',
       title: 'How to add a print or PDF button to any website',
       metaTitle: 'Add a Print or PDF Button to Any Website',
       metaDescription:
@@ -351,9 +351,9 @@ export const publishersWordpress: Cluster = {
         },
         { t: 'cta', tool: 'html-to-pdf', x: 'Check what your page really produces on paper before you put a button on it.' },
         { t: 'h2', x: 'Generate one instead of writing it' },
-        { t: 'p', x: 'If you would rather pick a colour, size and label than edit CSS, the [button builder](/website-button) produces the same markup with inline styles, ready to paste into any CMS. On WordPress specifically, [the plugin, block and shortcode routes](/blog/publishers-wordpress/add-print-button-to-wordpress) cover the options in more detail, and [the WordPress plugin page](/wordpress) has the one-click version.' },
+        { t: 'p', x: 'If you would rather pick a colour, size and label than edit CSS, the [button builder](/website-button) produces the same markup with inline styles, ready to paste into any CMS. On WordPress specifically, [the plugin, block and shortcode routes](/blog/publishers/add-print-button-to-wordpress) cover the options in more detail, and [the WordPress plugin page](/wordpress) has the one-click version.' },
         { t: 'cta', tool: 'qr-code', x: 'Add a QR code so the printed sheet still leads back to the live page.' },
-        { t: 'p', x: 'A button without a stylesheet is only half a feature. When you have the button in place, spend an afternoon on [a print stylesheet](/blog/publishers-wordpress/print-stylesheet-css) and run the [printer-friendly checklist](/blog/publishers-wordpress/printer-friendly-website-design) over your main templates.' },
+        { t: 'p', x: 'A button without a stylesheet is only half a feature. When you have the button in place, spend an afternoon on [a print stylesheet](/blog/publishers/print-stylesheet-css) and run the [printer-friendly checklist](/blog/publishers/printer-friendly-website-design) over your main templates.' },
       ],
       faqs: [
         { q: 'What is the HTML code for a print button?', a: 'The minimum is <button type="button" onclick="window.print()">Print</button>. Use type="button" so it never submits a surrounding form, and add a @media print rule hiding the button, or it prints on the page itself.' },

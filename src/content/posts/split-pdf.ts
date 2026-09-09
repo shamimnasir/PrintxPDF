@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const splitPdf: Cluster = {
-  slug: 'split-pdf',
+  slug: 'split',
   name: 'Splitting and extracting PDF pages',
   title: 'How to split a PDF and extract exactly the pages you need',
   metaTitle: 'How to Split a PDF Free (Pages and Ranges)',
@@ -18,7 +18,7 @@ export const splitPdf: Cluster = {
   posts: [
     {
       slug: 'split-pdf-into-pages',
-      cluster: 'split-pdf',
+      cluster: 'split',
       title: 'How to split a PDF into separate pages or ranges',
       metaTitle: 'How to Split a PDF Into Pages or Ranges',
       metaDescription:
@@ -77,7 +77,7 @@ export const splitPdf: Cluster = {
         { t: 'note', x: 'Watch out for documents whose printed page numbers do not match their physical ones. A report with a cover, a blank verso and roman-numbered front matter can have "page 1" printed on physical page 7. Range syntax always means the physical position, so count thumbnails, not the numbers on the paper.' },
         { t: 'h2', x: 'Every N pages, with a real example' },
         { t: 'p', x: 'A 240-page manual made of twelve chapters, each exactly 20 pages, splits into chapters with a single instruction: every 20 pages. You get 12 files without typing 12 ranges. The mode is only useful when the unit really is fixed, so check two boundaries before you trust it: does file 2 start at the top of chapter 2, and does the last file end where the document does? If chapter 4 runs to 21 pages, every subsequent boundary is wrong.' },
-        { t: 'p', x: 'The other genuinely useful case is size-limited splitting: a 90 MB scan divided into six 15-page parts so each attachment stays under a mail server ceiling. See [splitting a large PDF for email](/blog/split-pdf/split-large-pdf-for-email) for the arithmetic.' },
+        { t: 'p', x: 'The other genuinely useful case is size-limited splitting: a 90 MB scan divided into six 15-page parts so each attachment stays under a mail server ceiling. See [splitting a large PDF for email](/blog/split/split-large-pdf-for-email) for the arithmetic.' },
         { t: 'h2', x: 'Splitting at bookmarks' },
         { t: 'p', x: 'If the PDF has a proper outline, splitting at top-level bookmarks is far better than counting pages, because the boundaries follow the document\'s own structure and survive a revision that changes the page count. Not every tool offers it, and it only works when the file actually has bookmarks: a scanned document or a PDF printed from a web page will have none at all.' },
         { t: 'h2', x: 'Why the parts add up to more than the whole' },
@@ -88,10 +88,10 @@ export const splitPdf: Cluster = {
         {
           t: 'ul',
           items: [
-            '**macOS Preview** — show thumbnails with ⌥⌘2, select the pages you want and drag them onto the Desktop. macOS creates a new PDF from the selection. Fine for one extraction, tedious for twelve.',
-            '**Print to PDF with a page range** — works everywhere, but re-renders the document. Links, bookmarks and form fields are lost, and the output can be larger than the input.',
-            '**Adobe Acrobat** — Organize Pages → Split, with by-page-count, by-file-size and by-bookmark options. The by-file-size mode is genuinely handy and rare elsewhere.',
-            '**qpdf** — free, offline, scriptable, and the most structurally faithful of the lot.',
+            '**macOS Preview**, show thumbnails with ⌥⌘2, select the pages you want and drag them onto the Desktop. macOS creates a new PDF from the selection. Fine for one extraction, tedious for twelve.',
+            '**Print to PDF with a page range**, works everywhere, but re-renders the document. Links, bookmarks and form fields are lost, and the output can be larger than the input.',
+            '**Adobe Acrobat**, Organize Pages → Split, with by-page-count, by-file-size and by-bookmark options. The by-file-size mode is genuinely handy and rare elsewhere.',
+            '**qpdf**, free, offline, scriptable, and the most structurally faithful of the lot.',
           ],
         },
         { t: 'code', x: '# Pages 1-3 into their own file\nqpdf input.pdf --pages input.pdf 1-3 -- part1.pdf\n\n# Every page as its own file: out-01.pdf, out-02.pdf, ...\nqpdf --split-pages input.pdf out.pdf\n\n# Chunks of 20 pages each\nqpdf --split-pages=20 manual.pdf chapter.pdf' },
@@ -111,7 +111,7 @@ export const splitPdf: Cluster = {
     },
     {
       slug: 'extract-pages-from-pdf',
-      cluster: 'split-pdf',
+      cluster: 'split',
       title: 'How to extract specific pages from a PDF',
       metaTitle: 'How to Extract Pages From a PDF',
       metaDescription:
@@ -181,12 +181,12 @@ export const splitPdf: Cluster = {
         { t: 'h2', x: 'macOS Preview and command line' },
         { t: 'p', x: 'On a Mac, show thumbnails with **⌥⌘2**, ⌘-click the pages you want, and drag the selection onto the Desktop. macOS builds a new PDF from it. For repeatable work, qpdf is exact and scriptable:' },
         { t: 'code', x: '# Pages 4-9 into a new file\nqpdf report.pdf --pages report.pdf 4-9 -- section.pdf\n\n# Non-contiguous: pages 2, 7 and 15-18\nqpdf report.pdf --pages report.pdf 2,7,15-18 -- selected.pdf\n\n# Pull the same page range out of every PDF in a folder\nfor f in *.pdf; do qpdf "$f" --pages "$f" 1 -- "covers/$f"; done' },
-        { t: 'warn', x: 'Extracting a page does **not** remove anything hidden on it. Text under a black box, content outside the crop box, comments, and hidden layers all travel into the new file. If the point of extracting was to share less, [flatten](/tools/flatten-pdf) the result and [strip its metadata](/blog/pdf-privacy/remove-metadata-from-pdf) before sending it.' },
+        { t: 'warn', x: 'Extracting a page does **not** remove anything hidden on it. Text under a black box, content outside the crop box, comments, and hidden layers all travel into the new file. If the point of extracting was to share less, [flatten](/tools/flatten-pdf) the result and [strip its metadata](/blog/privacy/remove-metadata-from-pdf) before sending it.' },
         { t: 'h2', x: 'What comes with the pages' },
         { t: 'p', x: 'An extracted file inherits the source document\'s metadata: title, author, producer, and the creation date of the original rather than of your extraction. If you extracted a single page from a colleague\'s report, their name is now in your file\'s author field. Check it with [edit metadata](/tools/edit-metadata), which takes about ten seconds.' },
         { t: 'p', x: 'Bookmarks pointing at pages you did not keep are dropped or left dangling depending on the tool, and printed page numbers do not renumber, so an extracted range that starts at physical page 12 will still say 12 on the first sheet. If that is confusing for the reader, re-apply [page numbers](/tools/page-numbers) to the extract.' },
         { t: 'h2', x: 'Extract, or delete the rest?' },
-        { t: 'p', x: 'They reach the same place from opposite ends, so pick whichever needs less typing. Keeping 6 pages out of 50: extract. Removing 6 pages from 50: [delete those pages](/blog/split-pdf/delete-pages-from-pdf). The rule of thumb is to specify the smaller set, because every page you type is a page you can get wrong.' },
+        { t: 'p', x: 'They reach the same place from opposite ends, so pick whichever needs less typing. Keeping 6 pages out of 50: extract. Removing 6 pages from 50: [delete those pages](/blog/split/delete-pages-from-pdf). The rule of thumb is to specify the smaller set, because every page you type is a page you can get wrong.' },
       ],
       faqs: [
         { q: 'How do I save just one page of a PDF?', a: 'Open the file in an extract tool, select that single page and download. Alternatively press Ctrl+P, enter the page number in the range box and choose Save as PDF, though that route drops links, bookmarks and form fields.' },
@@ -200,7 +200,7 @@ export const splitPdf: Cluster = {
     },
     {
       slug: 'delete-pages-from-pdf',
-      cluster: 'split-pdf',
+      cluster: 'split',
       title: 'How to delete pages from a PDF',
       metaTitle: 'How to Delete Pages From a PDF',
       metaDescription:
@@ -281,7 +281,7 @@ export const splitPdf: Cluster = {
         { t: 'warn', x: 'The same applies to content you covered with a black rectangle. Drawing a box over text hides it visually and leaves the text underneath fully selectable. Deleting the page removes it properly; covering it does not.' },
         { t: 'cta', tool: 'remove-metadata', x: 'Strip author names, timestamps and edit history before you send a trimmed document.' },
         { t: 'h2', x: 'Delete, or keep what you want?' },
-        { t: 'p', x: 'If you are removing more than about half the document, [extracting the pages you want](/blog/split-pdf/extract-pages-from-pdf) is faster and less error-prone: fewer numbers to type means fewer numbers to get wrong. And if the reason you are deleting pages is file size, deleting rarely helps as much as [compression](/tools/compress-pdf), because the weight is usually in the images on the pages you are keeping.' },
+        { t: 'p', x: 'If you are removing more than about half the document, [extracting the pages you want](/blog/split/extract-pages-from-pdf) is faster and less error-prone: fewer numbers to type means fewer numbers to get wrong. And if the reason you are deleting pages is file size, deleting rarely helps as much as [compression](/tools/compress-pdf), because the weight is usually in the images on the pages you are keeping.' },
       ],
       faqs: [
         { q: 'How do I delete a page from a PDF for free?', a: 'Open the file in a browser-based page editor, click the thumbnail of the page you want removed, and download the result. On a Mac you can also use Preview: show thumbnails with Option+Command+2, select the page and press Delete.' },
@@ -295,7 +295,7 @@ export const splitPdf: Cluster = {
     },
     {
       slug: 'split-large-pdf-for-email',
-      cluster: 'split-pdf',
+      cluster: 'split',
       title: 'How to split a large PDF to get under an email size limit',
       metaTitle: 'Split a Large PDF to Fit an Email Limit',
       metaDescription:
@@ -364,7 +364,7 @@ export const splitPdf: Cluster = {
           items: [
             { h: 'Work out the chunk size', x: 'Divide the file size by your per-message target. A 68 MB PDF with an 18 MB target needs 4 parts, so round up and aim for 4 or 5.' },
             { h: 'Convert that to pages', x: 'Divide the page count by the number of parts. A 68 MB, 240-page file split into 5 gives 48 pages per part. Use the every-N-pages mode with N = 48.' },
-            { h: 'Split at a sensible boundary', x: 'Nudge the boundaries so parts break between chapters or sections rather than mid-sentence. Custom ranges are worth the extra typing here. See [splitting into pages or ranges](/blog/split-pdf/split-pdf-into-pages).' },
+            { h: 'Split at a sensible boundary', x: 'Nudge the boundaries so parts break between chapters or sections rather than mid-sentence. Custom ranges are worth the extra typing here. See [splitting into pages or ranges](/blog/split/split-pdf-into-pages).' },
             { h: 'Check every part', x: 'Sizes are rarely even, because pages are not equally heavy. One 90-page part of thin text can be smaller than a 20-page part of scans. Verify each file individually against your target.' },
             { h: 'Name them for the recipient', x: 'Use `Report_2026_part1of4.pdf` rather than `Report (1).pdf`. The person on the other end has to work out the order without you.' },
             { h: 'Send in order, one per message', x: 'Say in the first message how many parts there are, and mention how to reassemble them if the recipient needs the whole document.' },
@@ -377,15 +377,15 @@ export const splitPdf: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Google Drive** — Gmail does this automatically above 25 MB, uploading the file and inserting a link. Check the sharing permission it applies, because the default may be narrower than the recipient needs.',
-            '**OneDrive** — Outlook offers the same thing, and Microsoft 365 accounts include 1 TB.',
-            '**iCloud Mail Drop** — up to 5 GB, built into Apple Mail, links expire after 30 days.',
-            '**WeTransfer and similar** — up to 2 GB on the free tier, no account required for the recipient.',
+            '**Google Drive**, Gmail does this automatically above 25 MB, uploading the file and inserting a link. Check the sharing permission it applies, because the default may be narrower than the recipient needs.',
+            '**OneDrive**, Outlook offers the same thing, and Microsoft 365 accounts include 1 TB.',
+            '**iCloud Mail Drop**, up to 5 GB, built into Apple Mail, links expire after 30 days.',
+            '**WeTransfer and similar**, up to 2 GB on the free tier, no account required for the recipient.',
             'For anything confidential, check whether your organisation permits these services before using one. Many do not.',
           ],
         },
         { t: 'h2', x: 'Why the PDF is large in the first place' },
-        { t: 'p', x: 'Worth knowing, because it changes what you should do. A 50 MB PDF is almost always one of three things: a scanned document stored at 300 or 600 DPI, a set of pages carrying full-resolution photographs, or an export from design software that embedded every asset at print resolution. All three [compress dramatically](/blog/compress-pdf/how-to-compress-a-pdf). A 50 MB PDF that is genuinely mostly text is rare, and usually means the file has accumulated revision history through incremental saves, which a full rewrite clears out.' },
+        { t: 'p', x: 'Worth knowing, because it changes what you should do. A 50 MB PDF is almost always one of three things: a scanned document stored at 300 or 600 DPI, a set of pages carrying full-resolution photographs, or an export from design software that embedded every asset at print resolution. All three [compress dramatically](/blog/compress/how-to-compress-a-pdf). A 50 MB PDF that is genuinely mostly text is rare, and usually means the file has accumulated revision history through incremental saves, which a full rewrite clears out.' },
         { t: 'p', x: 'If the file came from a scanner, also run [OCR](/tools/ocr-pdf) while you are at it. It adds a small amount of size and makes the document searchable, which is what the recipient will want next anyway.' },
       ],
       faqs: [

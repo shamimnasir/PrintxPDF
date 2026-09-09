@@ -25,9 +25,9 @@ export type Post = {
   slug: string
   cluster: string
   title: string
-  /** <title> tag — keep under ~60 chars */
+  /** <title> tag, keep under ~60 chars */
   metaTitle: string
-  /** meta description — 140-158 chars, contains the primary keyword */
+  /** meta description, 140-158 chars, contains the primary keyword */
   metaDescription: string
   published: string
   updated: string

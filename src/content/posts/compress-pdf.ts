@@ -1,14 +1,14 @@
 import type { Cluster } from '../types'
 
 export const compressPdf: Cluster = {
-  slug: 'compress-pdf',
+  slug: 'compress',
   name: 'Compressing PDF files',
   title: 'How to compress a PDF: make files smaller without wrecking them',
   metaTitle: 'How to Compress a PDF for Free (2026 Guide)',
   metaDescription:
     'Compress a PDF in your browser for free. Lossless structural compression, image downsampling, DPI targets, email size limits and why your PDF got so big.',
   intro:
-    'A PDF gets big for one of two reasons: it contains large images, or it contains a lot of accumulated structural junk. The fix is different for each. Structural compression rewrites the file — subsets fonts, drops orphaned objects, packs the cross-reference table — and never touches a pixel. Image compression downsamples photos and scans to a target DPI, which is where the real savings live. These guides cover both, plus the email limits that started the problem.',
+    'A PDF gets big for one of two reasons: it contains large images, or it contains a lot of accumulated structural junk. The fix is different for each. Structural compression rewrites the file, subsets fonts, drops orphaned objects, packs the cross-reference table, and never touches a pixel. Image compression downsamples photos and scans to a target DPI, which is where the real savings live. These guides cover both, plus the email limits that started the problem.',
   answer:
     'Compress a PDF by choosing between two methods. Lossless structural compression subsets fonts and removes unused objects, typically saving 10-30 percent with zero visible change. Image downsampling re-encodes embedded photos at a lower DPI, which can cut a scanned document by 80-95 percent but is not reversible.',
   primaryKeyword: 'how to compress a pdf',
@@ -18,7 +18,7 @@ export const compressPdf: Cluster = {
   posts: [
     {
       slug: 'how-to-compress-a-pdf',
-      cluster: 'compress-pdf',
+      cluster: 'compress',
       title: 'How to compress a PDF file for free',
       metaTitle: 'How to Compress a PDF File for Free',
       metaDescription:
@@ -54,7 +54,7 @@ export const compressPdf: Cluster = {
         {
           t: 'steps',
           items: [
-            { h: 'Open the compressor', x: 'Go to the [PDF compressor](/tools/compress-pdf) and drop your file on the page. Nothing is uploaded — the file is processed by your own browser, so a confidential contract never leaves your machine.' },
+            { h: 'Open the compressor', x: 'Go to the [PDF compressor](/tools/compress-pdf) and drop your file on the page. Nothing is uploaded, the file is processed by your own browser, so a confidential contract never leaves your machine.' },
             { h: 'Try lossless first', x: 'Run the structural pass on its own and look at the result. If a 4 MB text document drops to 2.6 MB, stop there. You have paid nothing in quality.' },
             { h: 'Check whether images are the problem', x: 'If lossless barely moved the needle, the weight is in images. Scroll the document: if the pages look like photographs of paper rather than crisp text, it is a scan and image compression is the only lever that matters.' },
             { h: 'Pick a level', x: 'Three choices, not a DPI box. **Light** is lossless: it rewrites the file structure and drops metadata, keeping text selectable. **Medium** re-renders each page at roughly 100 DPI and re-encodes it as JPEG. **Strong** goes to about 72 DPI. Medium and Strong are what shrink scans, at the cost of turning text into pixels.' },
@@ -92,26 +92,26 @@ export const compressPdf: Cluster = {
         },
         { t: 'h2', x: 'When compression does almost nothing' },
         { t: 'p', x: 'A clean, text-only PDF exported straight from Word or LaTeX is already near-optimal. Expect 5-15 percent, not 80. If a compressor promises to shrink a 900 KB text PDF to 90 KB, it is rasterising your pages into images, which destroys the text layer and makes the file unsearchable. Check afterwards: press Ctrl+F and search for a word you can see. If nothing is found, your text layer is gone.' },
-        { t: 'warn', x: 'Never compress a signed PDF. Any change to the bytes invalidates the digital signature. Compress first, then [sign the PDF](/blog/sign-pdf/how-to-sign-a-pdf) — never the other way around.' },
+        { t: 'warn', x: 'Never compress a signed PDF. Any change to the bytes invalidates the digital signature. Compress first, then [sign the PDF](/blog/sign/how-to-sign-a-pdf), never the other way around.' },
         { t: 'h2', x: 'Compressing on the desktop' },
         { t: 'p', x: 'If you prefer local tools, three work well:' },
         {
           t: 'ul',
           items: [
-            '**macOS Preview** — File → Export, then set Quartz Filter to "Reduce File Size". It is aggressive and slightly crude, but it is already installed.',
-            '**Adobe Acrobat Pro** — File → Save as Other → Reduced Size PDF, or Tools → Optimize PDF for per-image-type control over downsampling.',
-            '**Ghostscript** — free, scriptable and the engine behind many online compressors.',
+            '**macOS Preview**, File → Export, then set Quartz Filter to "Reduce File Size". It is aggressive and slightly crude, but it is already installed.',
+            '**Adobe Acrobat Pro**, File → Save as Other → Reduced Size PDF, or Tools → Optimize PDF for per-image-type control over downsampling.',
+            '**Ghostscript**, free, scriptable and the engine behind many online compressors.',
           ],
         },
         { t: 'code', x: '# 150 DPI, good for email and screen reading\ngs -sDEVICE=pdfwrite -dCompatibilityLevel=1.7 \\\n   -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH \\\n   -sOutputFile=small.pdf big.pdf\n\n# /screen = 72 dpi, /ebook = 150 dpi, /printer and /prepress = 300 dpi' },
         { t: 'h2', x: 'If it is still too big' },
-        { t: 'p', x: 'Compression has a floor. A 400-page scanned manual is not going to fit in an email no matter what you do. At that point you have two honest options: split it into parts, or send a link. See [reducing a PDF for email](/blog/compress-pdf/reduce-pdf-file-size-for-email) for the size limits of every major mail service, and [why your PDF is so large](/blog/compress-pdf/why-is-my-pdf-so-large) if you want to attack the cause instead of the symptom.' },
+        { t: 'p', x: 'Compression has a floor. A 400-page scanned manual is not going to fit in an email no matter what you do. At that point you have two honest options: split it into parts, or send a link. See [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email) for the size limits of every major mail service, and [why your PDF is so large](/blog/compress/why-is-my-pdf-so-large) if you want to attack the cause instead of the symptom.' },
         { t: 'cta', tool: 'split-pdf', x: 'Too big even after compressing? Split it into chapters or page ranges instead.' },
       ],
       faqs: [
-        { q: 'Does compressing a PDF reduce quality?', a: 'Only if it downsamples images. Structural compression — font subsetting, object streams, removing unused objects — is completely lossless and changes nothing you can see. Image downsampling does lose detail permanently, which is why you should always keep the original file.' },
+        { q: 'Does compressing a PDF reduce quality?', a: 'Only if it downsamples images. Structural compression, font subsetting, object streams, removing unused objects, is completely lossless and changes nothing you can see. Image downsampling does lose detail permanently, which is why you should always keep the original file.' },
         { q: 'How much can a PDF be compressed?', a: 'A text-only PDF usually gives 10-30 percent. A colour scan at 600 DPI can drop 90-95 percent when downsampled to 150 DPI. A PDF full of photographs sits in between, typically 40-70 percent depending on the JPEG quality you accept.' },
-        { q: 'Is it safe to compress a PDF online?', a: 'It depends entirely on whether the file is uploaded. Most online compressors send your document to a server. A browser-based compressor runs the same algorithms in your own browser tab, so the file never leaves your computer — the safer choice for anything confidential.' },
+        { q: 'Is it safe to compress a PDF online?', a: 'It depends entirely on whether the file is uploaded. Most online compressors send your document to a server. A browser-based compressor runs the same algorithms in your own browser tab, so the file never leaves your computer, the safer choice for anything confidential.' },
         { q: 'Why did compressing my PDF make it bigger?', a: 'Usually because the images were already JPEG-compressed and the tool re-encoded them at a higher quality than the original, or because it added a new revision instead of rewriting the file. Run a lossless structural pass instead, which rewrites cleanly.' },
         { q: 'Can I compress a PDF without losing the text layer?', a: 'Yes. Any tool doing genuine PDF compression keeps text as text. If your file comes back unsearchable, the tool rasterised the pages into images. Test by pressing Ctrl+F and searching for a visible word.' },
       ],
@@ -120,7 +120,7 @@ export const compressPdf: Cluster = {
     },
     {
       slug: 'reduce-pdf-file-size-for-email',
-      cluster: 'compress-pdf',
+      cluster: 'compress',
       title: 'How to reduce a PDF file size for email',
       metaTitle: 'Reduce PDF File Size for Email: Limits + Fixes',
       metaDescription:
@@ -149,7 +149,7 @@ export const compressPdf: Cluster = {
             ['Yahoo Mail', '25 MB per message', '~18 MB', 'Cloud link'],
             ['Proton Mail', '25 MB per message', '~18 MB', 'Proton Drive link'],
             ['Typical corporate gateway', '10 MB', '~7 MB', 'Ask IT, or use a file share'],
-            ['WeTransfer (free)', '2 GB per transfer', '2 GB', 'Not email — a download link'],
+            ['WeTransfer (free)', '2 GB per transfer', '2 GB', 'Not email, a download link'],
           ],
         },
         { t: 'note', x: 'Email attachments are encoded in base64 before they travel, which turns every 3 bytes into 4. That is roughly 33 percent overhead. A 24 MB PDF becomes about 32 MB on the wire and will be rejected by a 25 MB limit. This is why your "under the limit" file bounced.' },
@@ -165,23 +165,23 @@ export const compressPdf: Cluster = {
             { h: 'Re-check and send', x: 'Confirm the new size, open the file once to make sure it still reads properly, then attach it.' },
           ],
         },
-        { t: 'cta', tool: 'compress-pdf', x: 'Compress the PDF in your browser first — the file never leaves your computer.' },
+        { t: 'cta', tool: 'compress-pdf', x: 'Compress the PDF in your browser first, the file never leaves your computer.' },
         { t: 'h2', x: 'Split it instead' },
-        { t: 'p', x: 'A 60 MB report will not compress to 18 MB without becoming unreadable. Splitting is the honest alternative: send chapters 1-3 in one mail and 4-6 in another, or send only the pages the recipient asked for. Use [extract pages](/tools/extract-pages) when you need a specific range, or the [splitter](/tools/split-pdf) to cut at chapter boundaries. There is a full walkthrough in [splitting a large PDF for email](/blog/split-pdf/split-large-pdf-for-email).' },
+        { t: 'p', x: 'A 60 MB report will not compress to 18 MB without becoming unreadable. Splitting is the honest alternative: send chapters 1-3 in one mail and 4-6 in another, or send only the pages the recipient asked for. Use [extract pages](/tools/extract-pages) when you need a specific range, or the [splitter](/tools/split-pdf) to cut at chapter boundaries. There is a full walkthrough in [splitting a large PDF for email](/blog/split/split-large-pdf-for-email).' },
         { t: 'h2', x: 'Send a link instead of a file' },
         {
           t: 'ul',
           items: [
-            '**Google Drive** — in Gmail, click the Drive icon in the compose toolbar. Gmail offers this automatically once your attachment exceeds 25 MB. Set sharing to "Anyone with the link" or the recipient gets a permission-request loop.',
-            '**OneDrive** — in Outlook, Insert → Link → Browse this computer, then choose "Upload and share". Recipients outside your tenant may need the link set to "Anyone".',
-            '**iCloud Mail Drop** — Apple Mail offers this at 20 MB. Files stay available for 30 days and do not count against your iCloud storage.',
-            '**WeTransfer** — no account needed on the free tier, 2 GB per transfer, and the recipient gets a plain download page. Good for one-off sends to people outside your organisation.',
+            '**Google Drive**, in Gmail, click the Drive icon in the compose toolbar. Gmail offers this automatically once your attachment exceeds 25 MB. Set sharing to "Anyone with the link" or the recipient gets a permission-request loop.',
+            '**OneDrive**, in Outlook, Insert → Link → Browse this computer, then choose "Upload and share". Recipients outside your tenant may need the link set to "Anyone".',
+            '**iCloud Mail Drop**, Apple Mail offers this at 20 MB. Files stay available for 30 days and do not count against your iCloud storage.',
+            '**WeTransfer**, no account needed on the free tier, 2 GB per transfer, and the recipient gets a plain download page. Good for one-off sends to people outside your organisation.',
           ],
         },
         { t: 'tip', x: 'A shared link also fixes the version problem. If you find a mistake after sending, you replace the file at the link. An attachment sits in the recipient inbox forever in its wrong version.' },
         { t: 'h2', x: 'Before you send anything' },
-        { t: 'p', x: 'A PDF carries the author name, the software that made it, and often the full path of the folder it was saved in. If the file is going outside your organisation, [strip the metadata](/blog/pdf-privacy/remove-metadata-from-pdf) first. It takes a few seconds and costs nothing in file size.' },
-        { t: 'p', x: 'If the file only got large because it is a scan, the deeper fix is on the scanner: 200 DPI greyscale for text documents, 300 DPI colour only when the colour matters. See [why your PDF is so large](/blog/compress-pdf/why-is-my-pdf-so-large) for the rest of the causes.' },
+        { t: 'p', x: 'A PDF carries the author name, the software that made it, and often the full path of the folder it was saved in. If the file is going outside your organisation, [strip the metadata](/blog/privacy/remove-metadata-from-pdf) first. It takes a few seconds and costs nothing in file size.' },
+        { t: 'p', x: 'If the file only got large because it is a scan, the deeper fix is on the scanner: 200 DPI greyscale for text documents, 300 DPI colour only when the colour matters. See [why your PDF is so large](/blog/compress/why-is-my-pdf-so-large) for the rest of the causes.' },
       ],
       faqs: [
         { q: 'What is the maximum PDF size I can email?', a: 'Gmail and Yahoo allow 25 MB per message, Outlook.com and iCloud Mail 20 MB, and many corporate gateways cap at 10 MB. Because base64 encoding adds about 33 percent, keep the actual file under 18 MB for a 25 MB limit and under 14 MB for a 20 MB limit.' },
@@ -195,7 +195,7 @@ export const compressPdf: Cluster = {
     },
     {
       slug: 'compress-pdf-without-losing-quality',
-      cluster: 'compress-pdf',
+      cluster: 'compress',
       title: 'How to compress a PDF without losing quality',
       metaTitle: 'Compress a PDF Without Losing Quality',
       metaDescription:
@@ -208,7 +208,7 @@ export const compressPdf: Cluster = {
       secondaryKeywords: ['lossless pdf compression', 'reduce pdf size without quality loss', 'best dpi for pdf', 'compress scanned pdf quality'],
       entities: ['PDF', 'JPEG', 'Flate', 'JBIG2', 'CCITT Group 4', 'Adobe Acrobat', 'Ghostscript', 'DPI'],
       answer:
-        'Truly lossless PDF compression means font subsetting, object streams and removing unused objects — it changes nothing visible and saves 10-30 percent. Anything beyond that downsamples images. For documents you will only read on screen, 150 DPI is visually indistinguishable from 300 and saves about 75 percent.',
+        'Truly lossless PDF compression means font subsetting, object streams and removing unused objects, it changes nothing visible and saves 10-30 percent. Anything beyond that downsamples images. For documents you will only read on screen, 150 DPI is visually indistinguishable from 300 and saves about 75 percent.',
       body: [
         { t: 'p', x: '"Without losing quality" means two different things depending on what is inside your PDF, and most compression advice confuses them. A text document and a scanned document need opposite treatment.' },
         { t: 'h2', x: 'What lossless actually means in a PDF' },
@@ -257,14 +257,14 @@ export const compressPdf: Cluster = {
             ['72', 'Visibly blurry', 'No', 'Fails', 'Do not use for documents'],
           ],
         },
-        { t: 'warn', x: 'Order matters, and so does the level. Run [OCR](/tools/ocr-pdf) on the high-resolution scan first, because recognition accuracy falls off a cliff below about 200 DPI. Then compress with **Light** only: Light rewrites the file structure and leaves the text layer alone, while Medium and Strong rasterise every page to a JPEG and rebuild the document, which destroys the text layer you just created. There is a full guide in [how to OCR a scanned PDF](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf).' },
+        { t: 'warn', x: 'Order matters, and so does the level. Run [OCR](/tools/ocr-pdf) on the high-resolution scan first, because recognition accuracy falls off a cliff below about 200 DPI. Then compress with **Light** only: Light rewrites the file structure and leaves the text layer alone, while Medium and Strong rasterise every page to a JPEG and rebuild the document, which destroys the text layer you just created. There is a full guide in [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf).' },
         { t: 'h2', x: 'The colour mistake that costs the most' },
         { t: 'p', x: 'Most people scan black text on white paper in 24-bit colour because that is the scanner default. That stores three channels for a page that has one channel of information. Two better options:' },
         {
           t: 'ul',
           items: [
-            '**Greyscale (8-bit)** — one third of the data, keeps the soft edges that make text look natural, and handles pencil marks, stamps and signatures well. This is the right default for scanned contracts.',
-            '**Bitonal (1-bit)** — one twenty-fourth of the data. With CCITT Group 4 or JBIG2 encoding, a full page of text can be 20-60 KB. Perfect for clean printed text; terrible for anything with photographs, shading or a coloured letterhead.',
+            '**Greyscale (8-bit)**, one third of the data, keeps the soft edges that make text look natural, and handles pencil marks, stamps and signatures well. This is the right default for scanned contracts.',
+            '**Bitonal (1-bit)**, one twenty-fourth of the data. With CCITT Group 4 or JBIG2 encoding, a full page of text can be 20-60 KB. Perfect for clean printed text; terrible for anything with photographs, shading or a coloured letterhead.',
           ],
         },
         { t: 'h2', x: 'A safe procedure' },
@@ -276,17 +276,17 @@ export const compressPdf: Cluster = {
             { h: 'Decide the destination', x: 'Screen only → 150 DPI. Will be printed → 300 DPI. Will be archived or re-OCR-ed → leave the images alone entirely.' },
             { h: 'Downsample once', x: 'Apply image compression to the original, not to an already-compressed copy. Compressing a JPEG twice stacks the artefacts.' },
             { h: 'Inspect at 400 percent', x: 'Zoom in on the smallest text and on any diagonal line or fine table rule. Artefacts appear there first, long before they show in body text.' },
-            { h: 'Check the text layer survived', x: 'Ctrl+F for a visible word. If it is not found, the tool rasterised your pages — discard the result.' },
+            { h: 'Check the text layer survived', x: 'Ctrl+F for a visible word. If it is not found, the tool rasterised your pages, discard the result.' },
           ],
         },
         { t: 'cta', tool: 'compress-pdf', x: 'Run a lossless pass first and see how far it gets you.' },
-        { t: 'p', x: 'If lossless gets you nowhere and downsampling would hurt, the file is simply big. Split it, or send a link. See [reducing a PDF for email](/blog/compress-pdf/reduce-pdf-file-size-for-email) for the practical limits.' },
+        { t: 'p', x: 'If lossless gets you nowhere and downsampling would hurt, the file is simply big. Split it, or send a link. See [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email) for the practical limits.' },
       ],
       faqs: [
         { q: 'Is there such a thing as truly lossless PDF compression?', a: 'Yes. Font subsetting, packing objects into object streams, compressing the cross-reference table and deleting unreferenced objects are all bit-exact lossless. They typically save 10-30 percent. Anything advertising 90 percent savings on a text PDF is not lossless.' },
         { q: 'What DPI should I compress a PDF to?', a: '150 DPI for on-screen reading, 200 DPI for scanned text you may still print, 300 DPI for anything going to a printer properly. Below 150 the small text starts to soften; below 100 it becomes visibly blurry.' },
-        { q: 'Will compressing a PDF break the OCR text?', a: 'It depends on the level. **Light** is structural and lossless, so the text layer is untouched. **Medium** and **Strong** rasterise each page to an image and rebuild the file, which removes every text object — the result looks identical but nothing is searchable any more. OCR first, then compress with Light, and check with Ctrl+F before you delete the original.' },
-        { q: 'Why does my compressed PDF look blurry when I zoom in?', a: 'The images were downsampled below what your zoom level needs. A 150 DPI page looks perfect at 100 percent and soft at 300 percent. If you need to zoom, keep 300 DPI — or go back to the original file.' },
+        { q: 'Will compressing a PDF break the OCR text?', a: 'It depends on the level. **Light** is structural and lossless, so the text layer is untouched. **Medium** and **Strong** rasterise each page to an image and rebuild the file, which removes every text object, the result looks identical but nothing is searchable any more. OCR first, then compress with Light, and check with Ctrl+F before you delete the original.' },
+        { q: 'Why does my compressed PDF look blurry when I zoom in?', a: 'The images were downsampled below what your zoom level needs. A 150 DPI page looks perfect at 100 percent and soft at 300 percent. If you need to zoom, keep 300 DPI, or go back to the original file.' },
         { q: 'Does compressing a PDF twice make it smaller?', a: 'A second lossless pass gains nothing. A second lossy pass makes it smaller but stacks JPEG artefacts, and the damage compounds visibly. Always compress the original once at the setting you actually need.' },
       ],
       relatedTools: ['compress-pdf', 'ocr-pdf', 'pdf-to-jpg'],
@@ -294,7 +294,7 @@ export const compressPdf: Cluster = {
     },
     {
       slug: 'why-is-my-pdf-so-large',
-      cluster: 'compress-pdf',
+      cluster: 'compress',
       title: 'Why is my PDF file so large? 8 reasons',
       metaTitle: 'Why Is My PDF So Large? 8 Causes and Fixes',
       metaDescription:
@@ -309,23 +309,23 @@ export const compressPdf: Cluster = {
       answer:
         'A PDF is usually large for one of eight reasons: it is a scan stored as images, images are embedded at full resolution, fonts are embedded whole instead of subset, resources are duplicated per page, saves were incremental, images are cropped only visually, forms and attachments are attached, or colour profiles and transparency are heavy.',
       body: [
-        { t: 'p', x: 'A four-page memo should be about 100 KB. If yours is 40 MB, something specific is wrong, and it is almost always one of the eight causes below. Work down the list — the first three account for the large majority of oversized files.' },
+        { t: 'p', x: 'A four-page memo should be about 100 KB. If yours is 40 MB, something specific is wrong, and it is almost always one of the eight causes below. Work down the list, the first three account for the large majority of oversized files.' },
         { t: 'h2', x: '1. It is a scan, not a document' },
-        { t: 'p', x: 'The single most common cause. If your PDF came from a scanner, a copier or a phone camera, every page is a photograph. A 600 DPI colour scan of one A4 page is 4960 × 7016 pixels — 35 megapixels, which is more than most cameras produce. Twenty pages of that is easily 100 MB.' },
+        { t: 'p', x: 'The single most common cause. If your PDF came from a scanner, a copier or a phone camera, every page is a photograph. A 600 DPI colour scan of one A4 page is 4960 × 7016 pixels, 35 megapixels, which is more than most cameras produce. Twenty pages of that is easily 100 MB.' },
         { t: 'p', x: '**Fix:** downsample to 150-200 DPI and switch colour scans of black text to greyscale. On the scanner itself, set 200 DPI greyscale as your default for documents. Reserve 300 DPI colour for photographs and artwork.' },
         { t: 'h2', x: '2. Images are embedded at their original resolution' },
         { t: 'p', x: 'You dropped a 6000-pixel-wide photo from your phone into a Word document and scaled it to two inches. On screen it looks like a small picture; inside the file it is still 6000 pixels wide, which works out to 3000 DPI. You are storing a hundred times more image data than the page can ever show.' },
         { t: 'p', x: '**Fix:** resize images to their display size before placing them. A 2-inch-wide image at 300 DPI needs 600 pixels. In Word, Picture Format → Compress Pictures → 220 ppi does this for the whole document at once.' },
         { t: 'h2', x: '3. Fonts are embedded in full instead of subset' },
-        { t: 'p', x: 'PDF embeds fonts so the file renders identically everywhere. Well-behaved generators embed only the glyphs used — a subset. Badly-behaved ones embed the entire font file. A Latin font is 100-500 KB, but a CJK font covering Chinese, Japanese and Korean can be 5-25 MB. Embed three of those in full and you have a 60 MB file with nothing but text in it.' },
+        { t: 'p', x: 'PDF embeds fonts so the file renders identically everywhere. Well-behaved generators embed only the glyphs used, a subset. Badly-behaved ones embed the entire font file. A Latin font is 100-500 KB, but a CJK font covering Chinese, Japanese and Korean can be 5-25 MB. Embed three of those in full and you have a 60 MB file with nothing but text in it.' },
         { t: 'p', x: '**Fix:** run a structural compression pass, which subsets fonts as part of the rewrite. In Acrobat you can confirm the state under File → Properties → Fonts: subset fonts are labelled "Embedded Subset".' },
         { t: 'h2', x: '4. The same resource is stored many times' },
         { t: 'p', x: 'A letterhead logo placed on all 80 pages should be one object referenced 80 times. Some generators, and almost every "merge these files" workflow that does not deduplicate, store 80 separate copies. The same happens with background images, watermarks and repeated table graphics.' },
-        { t: 'p', x: '**Fix:** deduplication is part of a proper structural compression pass. It is also why a merged document is often much larger than the sum of its parts until you compress it. See [merging PDF files](/blog/merge-pdf/how-to-merge-pdf-files).' },
+        { t: 'p', x: '**Fix:** deduplication is part of a proper structural compression pass. It is also why a merged document is often much larger than the sum of its parts until you compress it. See [merging PDF files](/blog/merge/how-to-merge-pdf-files).' },
         { t: 'h2', x: '5. Every save was an incremental update' },
         { t: 'p', x: 'PDF allows a writer to append changes to the end of the file rather than rewriting it. This is fast and it preserves digital signatures, so annotation tools use it constantly. The cost is that every previous version stays in the file. A document annotated across thirty sessions can carry twenty-nine dead copies of itself.' },
-        { t: 'p', x: '**Fix:** a full rewrite — sometimes called "Save As" rather than "Save", or "linearise" — collapses the history into a single current version.' },
-        { t: 'warn', x: 'Old revisions are a privacy problem too. If someone redacted a paragraph and saved incrementally, the original text may still sit in an earlier revision. [Remove metadata and flatten](/blog/pdf-privacy/remove-metadata-from-pdf) before sharing anything sensitive.' },
+        { t: 'p', x: '**Fix:** a full rewrite, sometimes called "Save As" rather than "Save", or "linearise", collapses the history into a single current version.' },
+        { t: 'warn', x: 'Old revisions are a privacy problem too. If someone redacted a paragraph and saved incrementally, the original text may still sit in an earlier revision. [Remove metadata and flatten](/blog/privacy/remove-metadata-from-pdf) before sharing anything sensitive.' },
         { t: 'h2', x: '6. Images are cropped visually, not actually' },
         { t: 'p', x: 'Cropping in InDesign, PowerPoint or Word usually sets a visible frame over the image rather than deleting the hidden pixels. Crop a 20-megapixel photo down to a thin banner and the file still carries all 20 megapixels. The same applies to images placed partly off the edge of the page.' },
         { t: 'p', x: '**Fix:** in Word and PowerPoint, Compress Pictures has a "Delete cropped areas of pictures" checkbox. Tick it. In InDesign, use Package or export with image downsampling enabled.' },
@@ -333,7 +333,7 @@ export const compressPdf: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Form fields** carry appearance streams — a stored rendering for each visual state of each field. A 200-field form can add several megabytes.',
+            '**Form fields** carry appearance streams, a stored rendering for each visual state of each field. A 200-field form can add several megabytes.',
             '**Embedded file attachments.** PDF can carry arbitrary files inside it. A spreadsheet attached to a report is invisible in the page view and fully counted in the file size.',
             '**Annotation appearance streams** from highlighting and commenting tools.',
             '**JavaScript** for form validation, plus the fonts those form fields reference.',
@@ -347,11 +347,11 @@ export const compressPdf: Cluster = {
         {
           t: 'steps',
           items: [
-            { h: 'Try to select text', x: 'Open the PDF and drag across a paragraph. If nothing highlights, it is a scan — cause 1, and you can stop reading here.' },
+            { h: 'Try to select text', x: 'Open the PDF and drag across a paragraph. If nothing highlights, it is a scan, cause 1, and you can stop reading here.' },
             { h: 'Divide size by page count', x: 'Under 100 KB per page is a normal text document. 100 KB - 1 MB usually means images. Over 1 MB per page is a scan or a full-resolution photo problem.' },
             { h: 'Check the fonts', x: 'File → Properties → Fonts in any full PDF viewer. Anything not marked "Embedded Subset" is cause 3.' },
             { h: 'Look for a rogue page', x: 'Split the file and compare the parts. One 25 MB page among forty 80 KB pages points straight at a single oversized image or vector drawing.' },
-            { h: 'Run a lossless compression pass', x: 'Whatever the [compressor](/tools/compress-pdf) removes without touching images was structural waste — causes 3, 4 and 5.' },
+            { h: 'Run a lossless compression pass', x: 'Whatever the [compressor](/tools/compress-pdf) removes without touching images was structural waste, causes 3, 4 and 5.' },
           ],
         },
         {
@@ -367,7 +367,7 @@ export const compressPdf: Cluster = {
             ['Filled form is huge', 'Field appearance streams (7)', 'Flatten the form'],
           ],
         },
-        { t: 'cta', tool: 'compress-pdf', x: 'Start with a lossless pass — it tells you how much of your problem is structural.' },
+        { t: 'cta', tool: 'compress-pdf', x: 'Start with a lossless pass, it tells you how much of your problem is structural.' },
       ],
       faqs: [
         { q: 'Why is my PDF bigger than the Word document it came from?', a: 'Word stores images compressed and fonts by reference. A PDF embeds the fonts and often stores images re-encoded at full resolution so the file renders identically everywhere. Use Word Compress Pictures at 220 ppi before exporting to close most of the gap.' },

@@ -287,7 +287,7 @@ export type MdItem = { str: string; x: number; y: number; width: number; height:
 type MdLine = { text: string; height: number; y: number }
 
 /** Bullet markers people actually use, plus the ASCII stand-ins. */
-const MD_BULLET = /^(?:[•·▪◦‣∙*+]|[-–—])[ \t]+/
+const MD_BULLET = /^(?:[•·▪◦‣∙*+]|[-–, ])[ \t]+/
 // letters only with a bracket: "a) step" is a list, "e.g. a thing" is a sentence
 const MD_ORDERED = /^(?:\d{1,3}[.)]|[A-Za-z]\))[ \t]+/
 

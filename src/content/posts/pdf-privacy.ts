@@ -1,14 +1,14 @@
 import type { Cluster } from '../types'
 
 export const pdfPrivacy: Cluster = {
-  slug: 'pdf-privacy',
+  slug: 'privacy',
   name: 'PDF privacy and security',
   title: 'PDF privacy: metadata, passwords and redaction that works',
   metaTitle: 'PDF Privacy: Metadata, Passwords, Redaction',
   metaDescription:
     'What a PDF leaks about you, what a password really protects, and how to redact so the text is genuinely gone. Practical methods with the limits spelled out.',
   intro:
-    'Every PDF carries more than the words on the page: the author name from the account that made it, the application that produced it, edit timestamps, and sometimes GPS coordinates inside embedded photos. On top of that sit two widely misunderstood controls — password protection, which does less than people assume, and redaction, which most people do wrong. These guides cover what leaks, what protects, and how to check that it worked.',
+    'Every PDF carries more than the words on the page: the author name from the account that made it, the application that produced it, edit timestamps, and sometimes GPS coordinates inside embedded photos. On top of that sit two widely misunderstood controls, password protection, which does less than people assume, and redaction, which most people do wrong. These guides cover what leaks, what protects, and how to check that it worked.',
   answer:
     'Before sharing a PDF, strip the document metadata, redact any sensitive content properly by removing it rather than covering it, and use encryption only when you genuinely need to control who can open the file. Always verify redaction by trying to select and copy the text afterwards.',
   primaryKeyword: 'pdf privacy',
@@ -18,7 +18,7 @@ export const pdfPrivacy: Cluster = {
   posts: [
     {
       slug: 'remove-metadata-from-pdf',
-      cluster: 'pdf-privacy',
+      cluster: 'privacy',
       title: 'How to remove hidden metadata from a PDF before sharing',
       metaTitle: 'Remove Hidden Metadata From a PDF',
       metaDescription:
@@ -56,13 +56,13 @@ export const pdfPrivacy: Cluster = {
         {
           t: 'steps',
           items: [
-            { h: 'Open the metadata tool', x: 'Go to [Remove metadata](/tools/remove-metadata) and drop the PDF in. The file is parsed in the browser tab, which matters here more than anywhere else on the site — you do not want to upload the very file whose provenance you are trying to hide.' },
+            { h: 'Open the metadata tool', x: 'Go to [Remove metadata](/tools/remove-metadata) and drop the PDF in. The file is parsed in the browser tab, which matters here more than anywhere else on the site, you do not want to upload the very file whose provenance you are trying to hide.' },
             { h: 'Read what is there first', x: 'Look at every field before you clear anything. Sometimes the interesting leak is a Title field naming a client you are not supposed to mention.' },
             { h: 'Clear the document information fields', x: 'Author, Title, Subject, Keywords, Creator and Producer. Empty is safer than a plausible fake, unless you specifically need a cover story.' },
             { h: 'Clear the XMP block as well', x: 'XMP is a second copy of the metadata stored as XML. A tool that clears only the document info dictionary leaves the XMP behind, and readers will still show the old author.' },
             { h: 'Decide about the dates', x: 'Creation and modification dates are not always removable without breaking readers. Where the tool allows it, blanking or normalising them removes the time zone hint.' },
             { h: 'Handle embedded photos', x: 'If the document contains camera photos and the location matters, convert the pages to images and rebuild the PDF, or replace the photos with re-exported copies that were stripped first.' },
-            { h: 'Save and verify', x: 'Reopen the saved file and press Ctrl+D again. If a field is still populated, the tool wrote a new copy but left the old object in the file — try again with a tool that rewrites the document rather than appending to it.' },
+            { h: 'Save and verify', x: 'Reopen the saved file and press Ctrl+D again. If a field is still populated, the tool wrote a new copy but left the old object in the file, try again with a tool that rewrites the document rather than appending to it.' },
           ],
         },
         { t: 'cta', tool: 'remove-metadata', x: 'Strip author, creator, timestamps and the XMP block from a PDF in your browser.' },
@@ -92,10 +92,10 @@ export const pdfPrivacy: Cluster = {
             ['Cropped-away content', 'Cropping changes the visible box, not the content', 'Rasterise the pages if the cropped area is sensitive'],
           ],
         },
-        { t: 'warn', x: 'Cropping is the sibling of the black-box mistake. Setting a crop box hides part of a page from view but leaves the content in the file, so anyone can restore it by resetting the crop. If the cropped-off area is sensitive, treat it as a redaction job and follow [the proper method](/blog/pdf-privacy/redact-pdf-properly).' },
+        { t: 'warn', x: 'Cropping is the sibling of the black-box mistake. Setting a crop box hides part of a page from view but leaves the content in the file, so anyone can restore it by resetting the crop. If the cropped-off area is sensitive, treat it as a redaction job and follow [the proper method](/blog/privacy/redact-pdf-properly).' },
         { t: 'h2', x: 'When to strip and when to set' },
         { t: 'p', x: 'Blanking every field is right for anonymous or externally shared documents. For a published report, deliberately setting the metadata is better: a real Title improves how the file appears in search results and in a browser tab, and a sensible Author is professional rather than leaky. Use [edit metadata](/tools/edit-metadata) to write clean values instead of empty ones.' },
-        { t: 'tip', x: 'Build it into the routine. Anything leaving your organisation gets the same three steps: strip metadata, confirm redactions, then check the file opens correctly. It takes under a minute and it is the cheapest privacy control available. If you also [compress the file](/blog/compress-pdf/how-to-compress-a-pdf) for email, do that before the metadata pass, since compression tools often write their own Producer string.' },
+        { t: 'tip', x: 'Build it into the routine. Anything leaving your organisation gets the same three steps: strip metadata, confirm redactions, then check the file opens correctly. It takes under a minute and it is the cheapest privacy control available. If you also [compress the file](/blog/compress/how-to-compress-a-pdf) for email, do that before the metadata pass, since compression tools often write their own Producer string.' },
       ],
       faqs: [
         { q: 'How do I see the metadata in a PDF?', a: 'Press Ctrl+D (Cmd+D on macOS) in most PDF readers to open document properties, or use Tools then Show Inspector in macOS Preview. For a complete view including data inside embedded images, run ExifTool on the file from a terminal.' },
@@ -109,7 +109,7 @@ export const pdfPrivacy: Cluster = {
     },
     {
       slug: 'password-protect-pdf',
-      cluster: 'pdf-privacy',
+      cluster: 'privacy',
       title: 'How to password protect a PDF, and what it actually protects',
       metaTitle: 'Password Protect a PDF: What It Really Does',
       metaDescription:
@@ -132,9 +132,9 @@ export const pdfPrivacy: Cluster = {
           head: ['', 'User password (open password)', 'Owner password (permissions password)'],
           rows: [
             ['Prompted when', 'Opening the file', 'Editing, printing or extracting, in some readers'],
-            ['Encrypts content?', 'Yes — the page data is genuinely encrypted', 'The file is encrypted with an empty user password'],
+            ['Encrypts content?', 'Yes, the page data is genuinely encrypted', 'The file is encrypted with an empty user password'],
             ['Without the password you can', 'See nothing but the file name', 'Read everything'],
-            ['Enforcement', 'Cryptographic', 'Advisory — the reader chooses to obey'],
+            ['Enforcement', 'Cryptographic', 'Advisory, the reader chooses to obey'],
             ['Removable without the password?', 'No, not practically, with a strong password', 'Yes, with common command-line tools'],
             ['Use it for', 'Genuinely restricting who can read a document', 'Signalling intent, nothing more'],
           ],
@@ -151,9 +151,9 @@ export const pdfPrivacy: Cluster = {
             ['AES-256', 'Acrobat X, PDF 2.0 / ISO 32000-2', 'The correct choice. Strength now depends on your password, not the cipher.'],
           ],
         },
-        { t: 'p', x: 'With AES-256 the algorithm is not the weak point — your password is. A six-character password on AES-256 is a six-character password. Use a passphrase of four or more unrelated words, or a generated string of at least 16 characters from a password manager.' },
+        { t: 'p', x: 'With AES-256 the algorithm is not the weak point, your password is. A six-character password on AES-256 is a six-character password. Use a passphrase of four or more unrelated words, or a generated string of at least 16 characters from a password manager.' },
         { t: 'h2', x: 'What this site cannot do, honestly' },
-        { t: 'note', x: 'PrintxPDF is a browser-based toolkit that rearranges and rewrites the structure of PDF files. It does not add AES encryption, and no page here will claim otherwise. If you need a genuinely encrypted PDF, use one of the desktop options below — they are free, already installed on most machines, and they produce real encryption.' },
+        { t: 'note', x: 'PrintxPDF is a browser-based toolkit that rearranges and rewrites the structure of PDF files. It does not add AES encryption, and no page here will claim otherwise. If you need a genuinely encrypted PDF, use one of the desktop options below, they are free, already installed on most machines, and they produce real encryption.' },
         {
           t: 'steps',
           items: [
@@ -169,19 +169,19 @@ export const pdfPrivacy: Cluster = {
           t: 'ul',
           items: [
             '**A recipient who reshares it.** Once someone opens the file, they can save an unprotected copy, screenshot it, or forward the password. Encryption controls the first opening, not what happens afterwards.',
-            '**Sensitive content already visible in the document.** Encryption hides the file from outsiders; it does nothing about the third-party names on page 9 that should have been [redacted](/blog/pdf-privacy/redact-pdf-properly).',
+            '**Sensitive content already visible in the document.** Encryption hides the file from outsiders; it does nothing about the third-party names on page 9 that should have been [redacted](/blog/privacy/redact-pdf-properly).',
             '**Metadata leakage in the file name.** `Q3-layoffs-final.pdf` in an email subject line tells the story before anyone types a password.',
             '**Print and copy restrictions.** These are permission flags a conforming reader agrees to honour. Non-conforming tools ignore them entirely.',
             '**A weak password.** Recovery tools try millions of candidates a second against a PDF. A dictionary word with a number on the end will not hold.',
           ],
         },
-        { t: 'warn', x: 'Never email a protected file and its password in the same message, or in a reply to the same thread. Anyone who reaches the mailbox has both. Send the password by a different channel — a phone call, a text message, or a message in a separate application.' },
+        { t: 'warn', x: 'Never email a protected file and its password in the same message, or in a reply to the same thread. Anyone who reaches the mailbox has both. Send the password by a different channel, a phone call, a text message, or a message in a separate application.' },
         { t: 'h2', x: 'When encryption is the right tool' },
         { t: 'p', x: 'Encryption fits a narrow but real set of cases: a document going to one identified recipient, a file on removable media, an archive on shared storage where the storage administrators should not be able to read it, or a regulatory requirement that names encryption at rest. In each of those, the threat is a party who should never see the content at all.' },
-        { t: 'p', x: 'It fits badly where the concern is downstream behaviour by a legitimate recipient. For that, combine a [CONFIDENTIAL watermark](/blog/watermark-page-numbers/add-watermark-to-pdf) naming the recipient with an explicit written restriction. The watermark will not stop anyone either, but it survives forwarding, and it makes a leak traceable in a way that a password never does.' },
+        { t: 'p', x: 'It fits badly where the concern is downstream behaviour by a legitimate recipient. For that, combine a [CONFIDENTIAL watermark](/blog/watermark/add-watermark-to-pdf) naming the recipient with an explicit written restriction. The watermark will not stop anyone either, but it survives forwarding, and it makes a leak traceable in a way that a password never does.' },
         { t: 'h2', x: 'Removing a password you own' },
         { t: 'p', x: 'If you know the password and want an unprotected working copy, open the file, enter the password, and export or print to a new PDF. In macOS Preview, File → Export as PDF with permissions left empty produces a clean copy. In Acrobat, use Protect → Remove Security. On the command line, `qpdf --decrypt --password=yourpassword in.pdf out.pdf` does it in one step.' },
-        { t: 'tip', x: 'Encrypted PDFs cannot be processed by browser-based tools, including the ones here, because the page content is unreadable until it is decrypted. If you need to [merge](/blog/merge-pdf/how-to-merge-pdf-files), split or compress an encrypted file, decrypt it first with the password you hold, do the work, then re-encrypt the result.' },
+        { t: 'tip', x: 'Encrypted PDFs cannot be processed by browser-based tools, including the ones here, because the page content is unreadable until it is decrypted. If you need to [merge](/blog/merge/how-to-merge-pdf-files), split or compress an encrypted file, decrypt it first with the password you hold, do the work, then re-encrypt the result.' },
         { t: 'cta', tool: 'remove-metadata', x: 'Whatever you do about passwords, strip the metadata before the file leaves your machine.' },
       ],
       faqs: [
@@ -196,7 +196,7 @@ export const pdfPrivacy: Cluster = {
     },
     {
       slug: 'redact-pdf-properly',
-      cluster: 'pdf-privacy',
+      cluster: 'privacy',
       title: 'How to redact a PDF so the text is really gone',
       metaTitle: 'How to Redact a PDF (So Text Is Really Gone)',
       metaDescription:
@@ -211,7 +211,7 @@ export const pdfPrivacy: Cluster = {
       answer:
         'To redact a PDF, the sensitive content must be deleted from the file, not covered. Cover the areas with solid black, then rasterise every page to an image and rebuild the PDF, which destroys the text layer. Verify by selecting all text and pasting it into a text editor.',
       body: [
-        { t: 'warn', x: 'Drawing a black rectangle over text does not remove the text. The characters stay in the page content stream underneath the box. Anyone can select the area, press copy, and paste the hidden words into a text editor. Every reported redaction failure — in court filings, government reports and corporate disclosures — is this mistake.' },
+        { t: 'warn', x: 'Drawing a black rectangle over text does not remove the text. The characters stay in the page content stream underneath the box. Anyone can select the area, press copy, and paste the hidden words into a text editor. Every reported redaction failure, in court filings, government reports and corporate disclosures, is this mistake.' },
         { t: 'p', x: 'This is not an obscure edge case. A PDF page is a list of drawing instructions executed in order. "Put the word Hendricks at x=180, y=420" is one instruction. "Fill a black rectangle over that area" is a later instruction. The second one paints over the first on screen. It does not erase it from the list.' },
         { t: 'h2', x: 'Things that look like redaction and are not' },
         {
@@ -220,18 +220,18 @@ export const pdfPrivacy: Cluster = {
           head: ['What people do', 'Does it remove the text?', 'How it is recovered'],
           rows: [
             ['Draw a black rectangle in a viewer or markup tool', 'No', 'Select over the box, copy, paste'],
-            ['Use the highlighter set to black', 'No', 'Same — highlights are transparent annotations'],
+            ['Use the highlighter set to black', 'No', 'Same, highlights are transparent annotations'],
             ['Change the text colour to white', 'No', 'Select all and paste; it is still there'],
             ['Add a black box in the source document, then export', 'No', 'The export still writes the characters underneath'],
             ['Crop the page to hide a margin', 'No', 'Reset the crop box and the content returns'],
-            ['Blur or pixelate a scanned name', 'Partly — and unreliably', 'Short pixelated text can be reconstructed by matching candidates'],
+            ['Blur or pixelate a scanned name', 'Partly, and unreliably', 'Short pixelated text can be reconstructed by matching candidates'],
             ['Delete the text and box over the gap', 'Yes for the text, but check', 'Undo history and appended objects can survive in the file'],
             ['Cover, then rasterise the page to an image', 'Yes', 'There is no text layer left to recover'],
           ],
         },
-        { t: 'p', x: 'Note the blur row. Pixelation of a short, known-format string — a name, a licence number, a postcode — is reversible in principle: an attacker pixelates candidate strings the same way and looks for a match. Never blur. Use solid, opaque black.' },
+        { t: 'p', x: 'Note the blur row. Pixelation of a short, known-format string, a name, a licence number, a postcode, is reversible in principle: an attacker pixelates candidate strings the same way and looks for a match. Never blur. Use solid, opaque black.' },
         { t: 'h2', x: 'The reliable browser method' },
-        { t: 'p', x: 'The idea is simple: make the sensitive area invisible, then destroy the entire text layer by turning every page into a picture of itself. Once a page is an image, there is nothing to select, extract or search — including the words that were under the box.' },
+        { t: 'p', x: 'The idea is simple: make the sensitive area invisible, then destroy the entire text layer by turning every page into a picture of itself. Once a page is an image, there is nothing to select, extract or search, including the words that were under the box.' },
         {
           t: 'steps',
           items: [
@@ -244,13 +244,13 @@ export const pdfPrivacy: Cluster = {
             { h: 'Verify before it leaves your machine', x: 'Do the checks in the next section, every single time. A redaction you have not verified is not a redaction.' },
           ],
         },
-        { t: 'cta', tool: 'pdf-to-jpg', x: 'Rasterise pages to images — the step that actually destroys the hidden text layer.' },
+        { t: 'cta', tool: 'pdf-to-jpg', x: 'Rasterise pages to images, the step that actually destroys the hidden text layer.' },
         { t: 'h2', x: 'Verifying that it worked' },
         { t: 'p', x: 'Four checks, one minute, on the final file you are about to send. Run all four.' },
         {
           t: 'ol',
           items: [
-            '**Select all and paste.** Open the redacted file, press Ctrl+A then Ctrl+C, and paste into a plain text editor. On a correctly rasterised file, nothing is selectable and nothing pastes. If you get a wall of text, the text layer survived — stop and start again.',
+            '**Select all and paste.** Open the redacted file, press Ctrl+A then Ctrl+C, and paste into a plain text editor. On a correctly rasterised file, nothing is selectable and nothing pastes. If you get a wall of text, the text layer survived, stop and start again.',
             '**Search for a redacted term.** Press Ctrl+F and type one of the names you removed. Zero results is the expected answer. A hit means the word is still in the file even though you cannot see it.',
             '**Extract the text on the command line.** Run `pdftotext redacted.pdf -` and read the output, or pipe it to grep for the removed terms. This bypasses the viewer entirely and is the check that catches everything.',
             '**Check the file size.** A rasterised document is usually larger than the text original. A file identical in size to the original means the rasterising step never ran.',
@@ -264,14 +264,14 @@ export const pdfPrivacy: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Metadata.** Title, Author and Keywords are separate from the page content and survive rasterising in some pipelines. Always run a [metadata pass](/blog/pdf-privacy/remove-metadata-from-pdf) afterwards.',
+            '**Metadata.** Title, Author and Keywords are separate from the page content and survive rasterising in some pipelines. Always run a [metadata pass](/blog/privacy/remove-metadata-from-pdf) afterwards.',
             '**Inference.** Redacting a name but leaving a job title, a date and a department can identify a person as surely as the name did. Redact the identifying combination, not just the obvious field.',
             '**Consistency across a set.** If the same person is redacted on page 4 and left visible on page 30, the redaction on page 4 achieved nothing. Search the whole set for every term.',
             '**Attachments and embedded files.** A spreadsheet attached inside the PDF is not part of any page and is not rasterised. Check the attachments panel and remove them.',
           ],
         },
         { t: 'note', x: 'Delete the intermediate marked-up file when you are done: it holds both the boxes and the text. If you later run OCR to restore searchability, the engine reads only what is visible, so black areas produce nothing.' },
-        { t: 'p', x: 'Covering is not removing, and the only proof of removal is failing to extract the text. A [watermark or stamp](/blog/watermark-page-numbers/watermark-vs-stamp) solves a different problem entirely.' },
+        { t: 'p', x: 'Covering is not removing, and the only proof of removal is failing to extract the text. A [watermark or stamp](/blog/watermark/watermark-vs-stamp) solves a different problem entirely.' },
       ],
       faqs: [
         { q: 'Why is a black box not a real redaction?', a: 'The rectangle is drawn on top of the page, while the text remains in the content stream underneath. Selecting over the box and copying, or running a text extraction tool, returns the hidden words in full. Nothing has been removed.' },
@@ -285,7 +285,7 @@ export const pdfPrivacy: Cluster = {
     },
     {
       slug: 'are-online-pdf-tools-safe',
-      cluster: 'pdf-privacy',
+      cluster: 'privacy',
       title: 'Are online PDF tools safe? What happens to your file',
       metaTitle: 'Are Online PDF Tools Safe? What Happens',
       metaDescription:
@@ -307,14 +307,14 @@ export const pdfPrivacy: Cluster = {
           caption: 'Upload-based and browser-based PDF tools compared.',
           head: ['', 'Upload-based (server-side)', 'Browser-based (client-side)'],
           rows: [
-            ['Where the file goes', 'To the provider servers', 'Nowhere — it stays in the browser tab'],
+            ['Where the file goes', 'To the provider servers', 'Nowhere, it stays in the browser tab'],
             ['Who could read it', 'The provider, their hosting company, anyone who breaches either', 'Only you'],
             ['Works offline', 'No', 'Yes, once the page has loaded'],
-            ['Typical retention', '1 hour to 24 hours, by policy', 'None — there is nothing to retain'],
+            ['Typical retention', '1 hour to 24 hours, by policy', 'None, there is nothing to retain'],
             ['Limits on file size', 'Server-side, often generous', 'Your device memory, usually a few hundred MB'],
             ['Heavy jobs (OCR, big scans)', 'Faster on server hardware', 'Slower, but private'],
             ['GDPR position', 'The provider is a data processor; you need an agreement', 'No processor, because no transfer'],
-            ['What to verify', 'The privacy policy, retention, and the contract', 'That it really does not upload — check it yourself'],
+            ['What to verify', 'The privacy policy, retention, and the contract', 'That it really does not upload, check it yourself'],
           ],
         },
         { t: 'h2', x: 'Check it yourself in thirty seconds' },
@@ -326,7 +326,7 @@ export const pdfPrivacy: Cluster = {
             { h: 'Clear the log and start recording', x: 'Click the clear icon so you are only looking at what happens next.' },
             { h: 'Load your file into the tool', x: 'Use a test PDF of a few megabytes, not your confidential one. Size matters here: a large file makes an upload obvious.' },
             { h: 'Watch the request list', x: 'Sort by **Size**. A POST or PUT request whose size is close to your file size means the document was uploaded. A tool that stays local shows no such request at all.' },
-            { h: 'Run the operation and look again', x: 'Some sites process locally but upload on export. Do the whole job — merge, compress, download — and watch throughout.' },
+            { h: 'Run the operation and look again', x: 'Some sites process locally but upload on export. Do the whole job, merge, compress, download, and watch throughout.' },
             { h: 'The offline test', x: 'The simplest proof of all: load the page, disconnect from the network, then use the tool. If it still works, the processing is genuinely happening on your device.' },
           ],
         },
@@ -342,7 +342,7 @@ export const pdfPrivacy: Cluster = {
             '**Where are the servers?** For personal data under GDPR, a transfer outside the EEA needs a legal basis such as standard contractual clauses.',
           ],
         },
-        { t: 'warn', x: 'A deletion promise is a policy, not a technical guarantee. You cannot verify it, you cannot audit it, and backups may outlive it. For a document that would cause real harm if exposed, do not rely on retention terms — do not upload it in the first place.' },
+        { t: 'warn', x: 'A deletion promise is a policy, not a technical guarantee. You cannot verify it, you cannot audit it, and backups may outlive it. For a document that would cause real harm if exposed, do not rely on retention terms, do not upload it in the first place.' },
         { t: 'h2', x: 'GDPR, HIPAA and workplace rules' },
         { t: 'p', x: 'The rules do not care whether a tool is free. They care about where personal data goes.' },
         {
@@ -377,9 +377,9 @@ export const pdfPrivacy: Cluster = {
             '**"No registration required".** Anonymity for you, not for the file.',
           ],
         },
-        { t: 'tip', x: 'The strongest signal is behavioural, not written: does the tool still work with the network disconnected? Nothing can fake that. Everything on this site is built to pass that test, which is also why [encrypted PDFs](/blog/pdf-privacy/password-protect-pdf) and very large scans have to be handled elsewhere — there is no server here to hand the hard work to.' },
-        { t: 'cta', tool: 'merge-pdf', x: 'Merge PDFs entirely in your browser — try it with the network switched off.' },
-        { t: 'p', x: 'Whichever kind of tool you use, the file itself still carries its own history. Strip the [document metadata](/blog/pdf-privacy/remove-metadata-from-pdf) before sharing, and confirm any [redactions are real](/blog/pdf-privacy/redact-pdf-properly) rather than drawn on.' },
+        { t: 'tip', x: 'The strongest signal is behavioural, not written: does the tool still work with the network disconnected? Nothing can fake that. Everything on this site is built to pass that test, which is also why [encrypted PDFs](/blog/privacy/password-protect-pdf) and very large scans have to be handled elsewhere, there is no server here to hand the hard work to.' },
+        { t: 'cta', tool: 'merge-pdf', x: 'Merge PDFs entirely in your browser, try it with the network switched off.' },
+        { t: 'p', x: 'Whichever kind of tool you use, the file itself still carries its own history. Strip the [document metadata](/blog/privacy/remove-metadata-from-pdf) before sharing, and confirm any [redactions are real](/blog/privacy/redact-pdf-properly) rather than drawn on.' },
       ],
       faqs: [
         { q: 'Are online PDF converters safe to use?', a: 'Only if they do not upload your file, or if you have a contract with the provider. Upload-based converters send the document to a server that could store or read it. Browser-based tools process the file locally and transmit nothing.' },

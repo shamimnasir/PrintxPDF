@@ -1,7 +1,7 @@
 // Bakes static HTML for every content route after `vite build`.
 //
 // The site is a client-rendered SPA. Googlebot executes JavaScript, but most AI crawlers
-// (GPTBot, ClaudeBot, PerplexityBot) and every social scraper do not — they would otherwise
+// (GPTBot, ClaudeBot, PerplexityBot) and every social scraper do not, they would otherwise
 // see an empty <div id="root">. This writes a real <title>, meta tags, JSON-LD and the full
 // article text into dist/<route>/index.html. React replaces the markup on mount, so users
 // get the interactive app and crawlers get the content.
@@ -122,7 +122,7 @@ function pageHtml(shell, { title, description, canonical, keywords, schema, body
     .join('\n    ')
 
   if (!shell.includes('<div id="root"></div>')) {
-    throw new Error('prerender: could not find <div id="root"></div> in dist/index.html — the shell changed, so no content would be baked in.')
+    throw new Error('prerender: could not find <div id="root"></div> in dist/index.html, the shell changed, so no content would be baked in.')
   }
   if (!shell.includes('</head>')) throw new Error('prerender: no </head> in dist/index.html')
   const fontLink = DESIGN_FONT ? `<link id="pxp-design-font" rel="stylesheet" href="${esc(DESIGN_FONT)}">\n    ` : ''
@@ -290,7 +290,7 @@ async function main() {
   <div class="post-answer"><p><strong>Short answer:</strong> ${rich(c.answer)}</p></div>
   <p>${esc(c.intro)}</p>
   <h2>Every guide in this topic</h2>
-  <ul>${c.posts.map((p) => `<li><a href="${href(`/blog/${c.slug}/${p.slug}`)}">${esc(p.title)}</a> — ${esc(p.metaDescription)}</li>`).join('')}</ul>
+  <ul>${c.posts.map((p) => `<li><a href="${href(`/blog/${c.slug}/${p.slug}`)}">${esc(p.title)}</a>, ${esc(p.metaDescription)}</li>`).join('')}</ul>
   <h2>Tools for this job</h2>
   <ul>${c.tools.map((t) => `<li><a href="${href(`/tools/${esc(t)}`)}">${esc(TOOLS.find((x) => x.slug === t)?.name || t)}</a></li>`).join('')}</ul>
 </main>`
@@ -310,7 +310,7 @@ async function main() {
       route,
       pageHtml(shell, {
         noindex: noindexAll,
-        title: 'Printing & PDF Guides — PrintxPDF Blog',
+        title: 'Printing & PDF Guides | PrintxPDF Blog',
         description: `${ALL_POSTS.length} free guides on printing web pages without ads, merging and compressing PDFs, e-signatures, OCR and more.`,
         canonical: `${SITE}${route}`,
         schema: [
@@ -361,19 +361,19 @@ async function main() {
   <p>${t.status === 'real' ? 'Runs entirely in your browser. Your file is never uploaded.' : t.status === 'best-effort' ? 'Best-effort conversion in your browser.' : 'Runs on our server: the file is sent over HTTPS, converted with LibreOffice or Calibre, returned and deleted immediately. Free for 5 files a month; Pro includes 300.'}</p>
   ${guides.length ? `<h2>Guides that use this tool</h2><ul>${guides.map((g) => `<li><a href="${href(`/blog/${g.cluster}/${g.slug}`)}">${esc(g.title)}</a></li>`).join('')}</ul>` : ''}
 </main>`
-    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: `${t.name} — ${t.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}`, description: `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
+    await writeRoute(route, pageHtml(shell, { noindex: noindexAll, title: `${t.name} | ${t.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}`, description: `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
     count++
   }
 
   // ---------- tools index ----------
   {
     const route = '/tools'
-    const bodyHtml = `<main><h1>All ${TOOLS.length} PDF tools</h1><ul>${TOOLS.map((t) => `<li><a href="${href(`/tools/${t.slug}`)}">${esc(t.name)}</a> — ${esc(t.short)}</li>`).join('')}</ul></main>`
+    const bodyHtml = `<main><h1>All ${TOOLS.length} PDF tools</h1><ul>${TOOLS.map((t) => `<li><a href="${href(`/tools/${t.slug}`)}">${esc(t.name)}</a>, ${esc(t.short)}</li>`).join('')}</ul></main>`
     await writeRoute(
       route,
       pageHtml(shell, {
         noindex: noindexAll,
-        title: `All ${TOOLS.length} PDF Tools — Free, In Your Browser`,
+        title: `All ${TOOLS.length} PDF Tools | Free, In Your Browser`,
         description: `Merge, split, compress, convert, sign, watermark and OCR PDFs free. ${TOOLS.length} tools that run in your browser with no upload.`,
         canonical: `${SITE}${route}`,
         schema: [
@@ -391,16 +391,16 @@ async function main() {
 
 // ---------- marketing + legal routes ----------
   // These have no content model, so their crawler-visible copy lives here. Without it the
-  // homepage — the highest-priority URL in the sitemap — serves an empty <div id="root">.
+  // homepage, the highest-priority URL in the sitemap, serves an empty <div id="root">.
   const STATIC_PAGES = [
     {
       route: '/',
-      title: `${cfg?.site?.name || 'PrintxPDF'} — Print Only What Matters. Fix Any PDF.`,
-      description: cfg?.site?.description || 'Turn any web page into a clean printout or PDF, then do everything else to a PDF — merge, sign, compress, OCR, protect, convert — with free tools that run on your own computer. No account, nothing to install.',
+      title: `${cfg?.site?.name || 'PrintxPDF'}, Print Only What Matters. Fix Any PDF.`,
+      description: cfg?.site?.description || 'Turn any web page into a clean printout or PDF, then do everything else to a PDF, merge, sign, compress, OCR, protect, convert, with free tools that run on your own computer. No account, nothing to install.',
       h1: 'Print only what matters. Fix any PDF.',
       body: [
-        'PrintxPDF does two things. Paste a link and it keeps just the article — no ads, menus, sidebars or comment threads — so you can print it or save it as a PDF. Drop in a PDF and it does everything else: merge, split, organise, crop, compress, OCR, sign, fill forms, redact, compare, protect and convert, with thirty-nine tools in one place.',
-        'Browser tools never upload anything: your files are processed in memory by your own browser using pdf-lib, pdf.js and Tesseract, and are gone when you close the tab. A few jobs that need a real engine — PowerPoint, ebooks, PDF encryption, PDF/A — run on our own server, say so on their page, and delete the file the moment they finish.',
+        'PrintxPDF does two things. Paste a link and it keeps just the article, no ads, menus, sidebars or comment threads, so you can print it or save it as a PDF. Drop in a PDF and it does everything else: merge, split, organise, crop, compress, OCR, sign, fill forms, redact, compare, protect and convert, with thirty-nine tools in one place.',
+        'Browser tools never upload anything: your files are processed in memory by your own browser using pdf-lib, pdf.js and Tesseract, and are gone when you close the tab. A few jobs that need a real engine, PowerPoint, ebooks, PDF encryption, PDF/A, run on our own server, say so on their page, and delete the file the moment they finish.',
       ],
       links: [['/print', 'Print a web page'], ['/tools', `All ${TOOLS.length} PDF tools`], ['/blog', 'Guides'], ['/pricing', 'Pricing']],
       schema: [
@@ -417,26 +417,26 @@ async function main() {
         'Paste a web address and PrintxPDF fetches the page inside your browser and reduces it to the article itself. Click anything left over to remove it, resize the text, shrink or drop the images, then print, save a PDF or PNG, or email it to yourself.',
         'If a site blocks readers, paste the page source or upload a saved .html file instead. Both always work, because the cleaning happens in your browser.',
       ],
-      links: [['/blog/print-web-pages/print-web-page-without-ads', 'How to print a web page without ads'], ['/tools', 'PDF tools']],
+      links: [['/blog/print/print-web-page-without-ads', 'How to print a web page without ads'], ['/tools', 'PDF tools']],
     },
     {
       route: '/pricing',
-      title: 'Pricing — Free Browser Tools, Pro Server Conversions',
+      title: 'Pricing | Free Browser Tools, Pro Server Conversions',
       description: 'Every browser PDF tool is free forever. Pro ($5/mo) adds 300 server conversions a month for PowerPoint and ebook formats; API ($29/mo) adds key-based access with 5,000 a month.',
       h1: 'Free is free.',
       body: [
-        'Every tool that runs in your browser costs nothing and always will. Paid plans cover the handful of jobs that need a real engine on our server — PowerPoint to PDF, PDF to PowerPoint, EPUB and MOBI to PDF, password protect and unlock, and PDF/A — and the API.',
+        'Every tool that runs in your browser costs nothing and always will. Paid plans cover the handful of jobs that need a real engine on our server, PowerPoint to PDF, PDF to PowerPoint, EPUB and MOBI to PDF, password protect and unlock, and PDF/A, and the API.',
         'Free: all browser tools, 5 server conversions a month, OCR up to 30 pages. Pro, $5 a month: 300 server conversions, OCR up to 200 pages, priority support. API, $29 a month: 5,000 conversions and an access key for the HTTPS API. Payments are handled by Stripe; cancel any time; refund on request within 14 days of the first charge.',
       ],
       links: [['/tools', 'PDF tools'], ['/api', 'API']],
     },
     {
       route: '/about',
-      title: 'About PrintxPDF — Documents You Control',
+      title: 'About PrintxPDF | Documents You Control',
       description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Every browser tool keeps your files on your computer; a few heavy jobs run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
       h1: 'Your documents. Your computer. Your call.',
       body: [
-        `PrintxPDF is a print-and-PDF toolkit founded by ${author.name}. Everything that can run in a browser does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript that keep your files on your own computer. A few jobs that need a real engine — PowerPoint, ebooks, PDF encryption, PDF/A — run on our own server and say so on the tool page.`,
+        `PrintxPDF is a print-and-PDF toolkit founded by ${author.name}. Everything that can run in a browser does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript that keep your files on your own computer. A few jobs that need a real engine, PowerPoint, ebooks, PDF encryption, PDF/A, run on our own server and say so on the tool page.`,
         'It removes ads and navigation before you print, lets you edit the result, and exports clean PDFs, PNG screenshots and emails. Built with Mozilla Readability, DOMPurify, pdf-lib, pdf.js, Tesseract.js, jsPDF and html2canvas.',
       ],
       links: [['/privacy', 'Privacy'], ['/blog', 'Guides'], [authorRoute, `Founder: ${author.name}`]],
@@ -444,7 +444,7 @@ async function main() {
     },
     {
       route: authorRoute,
-      title: `${author.name} — ${author.title}`,
+      title: `${author.name} | ${author.title}`,
       description: (author.bio || `${author.name} is the founder of PrintxPDF and writes its guides on printing web pages cleanly and working with PDF files.`).slice(0, 158),
       h1: author.name,
       body: [
@@ -457,7 +457,7 @@ async function main() {
     },
     {
       route: '/api',
-      title: 'PDF Conversion API — PowerPoint, EPUB and MOBI to PDF',
+      title: 'PDF Conversion API | PowerPoint, EPUB and MOBI to PDF',
       description: 'An HTTPS API that converts PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF. Send a file, get a file back. 5 free conversions a month; the API plan includes 5,000.',
       h1: 'Convert files, programmatically.',
       body: [
@@ -472,7 +472,7 @@ async function main() {
       description: 'Free plugin that adds Print, PDF and Email buttons to every WordPress post or page: any public post type, shortcode or block editor, no account, no API key.',
       h1: 'A print button your readers will actually use.',
       body: ['Drop a Print, PDF and Email button onto every post and page. Readers get a clean version of your content with the ads, widgets, share bars and comments removed, and they can delete paragraphs, resize text and drop images before printing.'],
-      links: [['/blog/publishers-wordpress/add-print-button-to-wordpress', 'How to add a print button to WordPress'], ['/website-button', 'Button generator']],
+      links: [['/blog/publishers/add-print-button-to-wordpress', 'How to add a print button to WordPress'], ['/website-button', 'Button generator']],
     },
     {
       route: '/website-button',
@@ -480,11 +480,11 @@ async function main() {
       description: 'Generate a copy-paste print and PDF button for any site. Plain HTML with inline styles, so it works in WordPress, Squarespace, Wix, Shopify and static sites.',
       h1: 'A print button for any site.',
       body: ['Paste one snippet into your template. When a reader clicks it, the page they are on opens in the PrintxPDF cleaner, ready to print, save as PDF or email. It is plain HTML with inline styles, so it works in any CMS, static site or email template that allows links.'],
-      links: [['/blog/publishers-wordpress/print-button-any-website', 'How to add a print button to any website'], ['/wordpress', 'WordPress plugin']],
+      links: [['/blog/publishers/print-button-any-website', 'How to add a print button to any website'], ['/wordpress', 'WordPress plugin']],
     },
     {
       route: '/privacy',
-      title: 'Privacy — Your Files Stay on Your Device',
+      title: 'Privacy | Your Files Stay on Your Device',
       description: 'Browser tools never upload your files. A few server jobs send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.',
       h1: 'Your files stay with you.',
       body: [
@@ -506,14 +506,14 @@ async function main() {
     },
     {
       route: '/extensions/chrome',
-      title: 'PrintxPDF for Chrome — Print Any Page Clean',
+      title: 'PrintxPDF for Chrome | Print Any Page Clean',
       description: 'A Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comment walls stripped, ready to print or save as PDF. Free, and it reads nothing until you click it.',
       h1: 'Turn any page into a clean PDF',
       body: [
         'Click the toolbar button and the page you are on opens in the PrintxPDF cleaner, ready to print, save as PDF or email. Right-click entries clean the current page, a link you are hovering, or just the text you selected. It also works in Brave, Edge, Opera, Vivaldi and Arc, which all run Chrome extensions.',
-        'The extension is not in the Chrome Web Store yet, so it installs in developer mode: download the ZIP, unzip it, open chrome://extensions, turn on Developer mode and choose Load unpacked. It asks only for activeTab, contextMenus and storage — it cannot read pages in the background, sends nothing anywhere and contains no analytics. If you would rather install nothing, the bookmarklet on this page does the same job in any browser, including Firefox and Safari.',
+        'The extension is not in the Chrome Web Store yet, so it installs in developer mode: download the ZIP, unzip it, open chrome://extensions, turn on Developer mode and choose Load unpacked. It asks only for activeTab, contextMenus and storage, it cannot read pages in the background, sends nothing anywhere and contains no analytics. If you would rather install nothing, the bookmarklet on this page does the same job in any browser, including Firefox and Safari.',
       ],
-      links: [['/print', 'Print a web page'], ['/blog/browser-extensions/bookmarklet-vs-extension', 'Bookmarklet vs extension'], ['/extension-privacy', 'Extension privacy policy']],
+      links: [['/print', 'Print a web page'], ['/blog/extensions/bookmarklet-vs-extension', 'Bookmarklet vs extension'], ['/extension-privacy', 'Extension privacy policy']],
     },
     {
       route: '/extension-privacy',
@@ -521,7 +521,7 @@ async function main() {
       description: 'The PrintxPDF Chrome extension collects nothing and sends nothing. It reads the address of the tab you click on, stores one preference, and puts a selection on your clipboard only when you ask.',
       h1: 'It collects nothing. It sends nothing.',
       body: [
-        'Last updated 10 September 2026. The extension has no server of its own, no account, no analytics, no tracking, no advertising and no third party. It stores two values on your own machine: the "Open in a new tab" preference (chrome.storage.sync, synchronised between your own Chrome profiles by Google) and a timestamp plus a "was the copy blocked?" flag from the last "Print just this selection" (chrome.storage.local) — never the selected text. Both are deleted when you uninstall.',
+        'Last updated 10 September 2026. The extension has no server of its own, no account, no analytics, no tracking, no advertising and no third party. It stores two values on your own machine: the "Open in a new tab" preference (chrome.storage.sync, synchronised between your own Chrome profiles by Google) and a timestamp plus a "was the copy blocked?" flag from the last "Print just this selection" (chrome.storage.local), never the selected text. Both are deleted when you uninstall.',
         'It reads the address of the tab you are on only when you click the icon, choose a right-click item or press the shortcut (Chrome\'s activeTab permission: one tab, your gesture, no standing access to any website). For "Print just this selection" it turns your selected text into HTML and places it on your clipboard (the clipboardWrite permission); it goes nowhere else. It makes no network requests and contains no remote code. Opening printxpdf.com/print is an ordinary page visit governed by the site privacy policy. We collect no user data, so we sell, share and transfer none, meeting the Chrome Web Store Limited Use requirements; it collects nothing from children; uninstalling removes both values; any change to these practices is published here before it ships.',
       ],
       links: [['/extensions/chrome', 'Chrome extension'], ['/privacy', 'Site privacy policy']],
@@ -551,7 +551,7 @@ async function main() {
   // fonts) but an empty #root, so those routes paint nothing until the app renders.
   const shellHtml = pageHtml(shell, {
     noindex: true,
-    title: `${cfg?.site?.name || 'PrintxPDF'} — ${cfg?.site?.tagline || 'Print web pages clean. Master your PDFs.'}`,
+    title: `${cfg?.site?.name || 'PrintxPDF'}, ${cfg?.site?.tagline || 'Print web pages clean. Master your PDFs.'}`,
     description: cfg?.site?.description || '',
     canonical: '',
     bodyHtml: '',

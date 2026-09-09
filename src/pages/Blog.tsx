@@ -10,7 +10,7 @@ export default function Blog() {
   const cfg = useSiteConfig()
   const recent = [...ALL_POSTS].sort((a, b) => b.updated.localeCompare(a.updated)).slice(0, 8)
   useSeo({
-    title: 'Printing & PDF Guides — PrintxPDF Blog',
+    title: 'Printing & PDF Guides | PrintxPDF Blog',
     description: `${ALL_POSTS.length} free guides on printing web pages without ads, merging and compressing PDFs, e-signatures, OCR and more. Every method runs in your browser.`,
     path: '/blog',
     keywords: ['pdf tutorials', 'how to print a web page', 'pdf guides', 'printer friendly'],

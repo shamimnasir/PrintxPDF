@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const savePdf: Cluster = {
-  slug: 'save-webpage-as-pdf',
+  slug: 'save-pdf',
   name: 'Saving web pages as PDF',
   title: 'How to save any web page as a PDF, on any device',
   metaTitle: 'How to Save a Web Page as PDF (2026 Guide)',
@@ -18,7 +18,7 @@ export const savePdf: Cluster = {
   posts: [
     {
       slug: 'save-webpage-as-pdf-chrome',
-      cluster: 'save-webpage-as-pdf',
+      cluster: 'save-pdf',
       title: 'How to save a web page as a PDF in any browser',
       metaTitle: 'Save a Web Page as PDF in Any Browser',
       metaDescription:
@@ -74,7 +74,7 @@ export const savePdf: Cluster = {
         { t: 'note', x: 'Use Microsoft Print to PDF when you need a PDF from an app that has no PDF export of its own. For web pages, the browser option is better on every measure that matters.' },
         { t: 'h2', x: 'Safari has two routes and they produce different files' },
         { t: 'p', x: '**Cmd+P → PDF ▾ → Save as PDF** paginates the page into Letter or A4 sheets, exactly like printing. **File → Export as PDF** produces a single page as tall as the whole document, with no page breaks at all. The second is excellent for keeping a layout intact and terrible for printing later, because most printers will shrink that one enormous page to fit a single sheet.' },
-        { t: 'tip', x: 'Before you save, use Safari Reader (⌃⌘R) or Firefox Reader View (F9). The PDF then contains the article and nothing else, typically two pages instead of nine. See [printing a web page without ads](/blog/print-web-pages/print-web-page-without-ads) for the full set of cleanup methods.' },
+        { t: 'tip', x: 'Before you save, use Safari Reader (⌃⌘R) or Firefox Reader View (F9). The PDF then contains the article and nothing else, typically two pages instead of nine. See [printing a web page without ads](/blog/print/print-web-page-without-ads) for the full set of cleanup methods.' },
         { t: 'h2', x: 'Save the page you want, not the page the site hands you' },
         { t: 'p', x: 'A PDF made from a raw web page inherits every problem the printed version would have: ad slots, a cookie banner frozen mid-page, a "related stories" grid, and a newsletter box. The fix is to clean first and save second.' },
         {
@@ -88,13 +88,13 @@ export const savePdf: Cluster = {
         },
         { t: 'cta', tool: 'html-to-pdf', x: 'Already have a saved .html file or some HTML you wrote yourself? Convert it straight to PDF in the browser.' },
         { t: 'h2', x: 'Phones and tablets' },
-        { t: 'p', x: 'On iPhone and iPad the route is the Share sheet, not a print dialog: see [saving a web page as a PDF on iPhone](/blog/save-webpage-as-pdf/save-webpage-as-pdf-iphone). On Android, Chrome uses the same print flow as the desktop: tap **⋮ → Share → Print**, then choose **Save as PDF** as the printer. The file lands in your Downloads folder and appears in the Files app.' },
+        { t: 'p', x: 'On iPhone and iPad the route is the Share sheet, not a print dialog: see [saving a web page as a PDF on iPhone](/blog/save-pdf/save-webpage-as-pdf-iphone). On Android, Chrome uses the same print flow as the desktop: tap **⋮ → Share → Print**, then choose **Save as PDF** as the printer. The file lands in your Downloads folder and appears in the Files app.' },
         { t: 'h2', x: 'When a PDF is the wrong output' },
         {
           t: 'ul',
           items: [
-            'You need the **visual layout preserved exactly**, including a sticky header or an interactive chart. Take a [full-page screenshot](/blog/save-webpage-as-pdf/full-page-screenshot) instead.',
-            'You need **third-party proof of what the page said**. A self-made PDF proves nothing on its own. [Archive the page properly](/blog/save-webpage-as-pdf/archive-web-pages).',
+            'You need the **visual layout preserved exactly**, including a sticky header or an interactive chart. Take a [full-page screenshot](/blog/save-pdf/full-page-screenshot) instead.',
+            'You need **third-party proof of what the page said**. A self-made PDF proves nothing on its own. [Archive the page properly](/blog/save-pdf/archive-web-pages).',
             'You need to **edit the text afterwards**. Copy it into a document, or convert the PDF to Word later.',
             'The page is behind a **login you cannot keep**. Print-to-PDF works while you are signed in, so save it before the session expires.',
           ],
@@ -116,7 +116,7 @@ export const savePdf: Cluster = {
     },
     {
       slug: 'save-webpage-as-pdf-iphone',
-      cluster: 'save-webpage-as-pdf',
+      cluster: 'save-pdf',
       title: 'How to save a web page as a PDF on iPhone and iPad',
       metaTitle: 'Save a Web Page as PDF on iPhone or iPad',
       metaDescription:
@@ -145,7 +145,7 @@ export const savePdf: Cluster = {
         },
         { t: 'note', x: '**Reader PDF** is only offered when Safari can see an article on the page. If the option is greyed out, the page is a dashboard, a form or a JavaScript app, and only the plain PDF option is available.' },
         { t: 'h2', x: 'Method 2: Full Page screenshot (best for layout)' },
-        { t: 'p', x: 'This is the most reliable option and almost nobody knows it exists. It captures the entire scrolling page, not just what is on screen, and hands you a real PDF. The desktop equivalents are covered in [taking a full-page screenshot](/blog/save-webpage-as-pdf/full-page-screenshot).' },
+        { t: 'p', x: 'This is the most reliable option and almost nobody knows it exists. It captures the entire scrolling page, not just what is on screen, and hands you a real PDF. The desktop equivalents are covered in [taking a full-page screenshot](/blog/save-pdf/full-page-screenshot).' },
         {
           t: 'steps',
           items: [
@@ -172,7 +172,7 @@ export const savePdf: Cluster = {
           ],
         },
         { t: 'h2', x: 'Where the file actually goes' },
-        { t: 'p', x: '**Save to Files** offers iCloud Drive, which syncs to your Mac where [the desktop print dialog](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome) gives you more control, and On My iPhone (stays on the device, survives no backup unless you back the device up). If you tap the **Books** icon in the Share sheet instead, the PDF is imported into Apple Books, where it gets a reading position, bookmarks and highlights, and syncs across your devices. Books is the better home for long documents you will read; Files is the better home for receipts and records.' },
+        { t: 'p', x: '**Save to Files** offers iCloud Drive, which syncs to your Mac where [the desktop print dialog](/blog/save-pdf/save-webpage-as-pdf-chrome) gives you more control, and On My iPhone (stays on the device, survives no backup unless you back the device up). If you tap the **Books** icon in the Share sheet instead, the PDF is imported into Apple Books, where it gets a reading position, bookmarks and highlights, and syncs across your devices. Books is the better home for long documents you will read; Files is the better home for receipts and records.' },
         { t: 'warn', x: 'Saving to Books makes the file harder to email later. You have to open it in Books, tap Share, then Save to Files. If you might need to send it, save to Files first and add it to Books afterwards.' },
         { t: 'h2', x: 'Chrome, Firefox and Edge on iOS' },
         { t: 'p', x: 'Every iOS browser uses Apple’s WebKit engine, but only Safari gets the Options → PDF menu. In Chrome for iOS, tap **⋯ → Print**, then use the same pinch-out trick. Firefox and Edge behave the same way. The Full Page screenshot method is Safari-only, so for anything important it is worth opening the link in Safari first.' },
@@ -192,7 +192,7 @@ export const savePdf: Cluster = {
     },
     {
       slug: 'full-page-screenshot',
-      cluster: 'save-webpage-as-pdf',
+      cluster: 'save-pdf',
       title: 'How to take a full-page screenshot of a website',
       metaTitle: 'How to Take a Full-Page Screenshot',
       metaDescription:
@@ -245,7 +245,7 @@ export const savePdf: Cluster = {
           items: [
             '**Sticky headers repeat.** A navigation bar with `position: fixed` is painted at each viewport position in some capture implementations, so it appears five times down the image. Delete the element in DevTools first, or scroll the page so the header un-sticks.',
             '**Blank rectangles.** Lazy-loaded images that never entered the viewport. Always scroll to the bottom before capturing.',
-            '**Truncation on very long pages.** Browsers cap the capture at a maximum texture height, historically 16,384 pixels. An infinite-scroll feed will be cut off. Capture in two passes, or use the [print-to-PDF route](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome) instead.',
+            '**Truncation on very long pages.** Browsers cap the capture at a maximum texture height, historically 16,384 pixels. An infinite-scroll feed will be cut off. Capture in two passes, or use the [print-to-PDF route](/blog/save-pdf/save-webpage-as-pdf-chrome) instead.',
             '**Animations frozen mid-frame.** Carousels and skeleton loaders capture in whatever state they happen to be in.',
             '**Cookie banners and chat bubbles.** They are part of the page. Dismiss them, or remove the node in DevTools before capturing.',
           ],
@@ -264,13 +264,13 @@ export const savePdf: Cluster = {
             ['Good for', 'Bug reports, design reviews, visual proof', 'Reading, archiving, sharing, printing'],
           ],
         },
-        { t: 'p', x: 'If you need both properties, capture the PNG and also [save the page as a PDF](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome). Together they cost under 10 MB and cover every later use.' },
+        { t: 'p', x: 'If you need both properties, capture the PNG and also [save the page as a PDF](/blog/save-pdf/save-webpage-as-pdf-chrome). Together they cost under 10 MB and cover every later use.' },
         { t: 'cta', tool: 'jpg-to-pdf', x: 'Turn your PNG or JPG captures into PDF pages, then combine them into one document.' },
         { t: 'h2', x: 'Making a screenshot searchable' },
         { t: 'p', x: 'A screenshot is an image, so nothing inside it can be found by search. Running it through [OCR](/tools/ocr-pdf) adds an invisible text layer underneath the pixels: the image looks identical, but Ctrl+F now works and the text can be copied. This is worth doing for anything you file away, because a folder of screenshots you cannot search is a folder you will never use again.' },
         { t: 'cta', tool: 'ocr-pdf', x: 'Add a searchable text layer to screenshots and scans without changing how they look.' },
         { t: 'h2', x: 'Screenshots as evidence' },
-        { t: 'p', x: 'A screenshot shows what you saw; it does not show when you saw it, and it is trivially editable. For a listing price, a policy change or a deleted post, pair the image with an independent capture from a third-party archive so the date does not depend on your word. That is covered in [archiving a web page](/blog/save-webpage-as-pdf/archive-web-pages).' },
+        { t: 'p', x: 'A screenshot shows what you saw; it does not show when you saw it, and it is trivially editable. For a listing price, a policy change or a deleted post, pair the image with an independent capture from a third-party archive so the date does not depend on your word. That is covered in [archiving a web page](/blog/save-pdf/archive-web-pages).' },
       ],
       faqs: [
         { q: 'How do I take a scrolling screenshot in Chrome without an extension?', a: 'Open DevTools with F12, press Ctrl+Shift+P, type "screenshot" and select Capture full size screenshot. Chrome saves a PNG of the entire page to your Downloads folder. No extension is needed and this has been built in since Chrome 59.' },
@@ -284,7 +284,7 @@ export const savePdf: Cluster = {
     },
     {
       slug: 'archive-web-pages',
-      cluster: 'save-webpage-as-pdf',
+      cluster: 'save-pdf',
       title: 'How to archive a web page so it still exists later',
       metaTitle: 'How to Archive a Web Page That May Vanish',
       metaDescription:
@@ -331,7 +331,7 @@ export const savePdf: Cluster = {
           t: 'steps',
           items: [
             { h: 'Clean the page', x: 'Paste the URL into the [web page printer](/print) and delete the banners, ad slots and comment sections. What remains is what you are actually archiving.' },
-            { h: 'Save as PDF, not as an image', x: 'Use the browser Save as PDF destination so the text stays selectable. See [saving a page as a PDF](/blog/save-webpage-as-pdf/save-webpage-as-pdf-chrome).' },
+            { h: 'Save as PDF, not as an image', x: 'Use the browser Save as PDF destination so the text stays selectable. See [saving a page as a PDF](/blog/save-pdf/save-webpage-as-pdf-chrome).' },
             { h: 'Add the URL and date to the file itself', x: 'Browsers put both in the header and footer of a printout. For an archive copy, leave headers and footers ON: the provenance is more valuable than the tidier margin.' },
             { h: 'Name it so you can find it', x: 'A convention like `2026-04-09_example-com_pricing-page.pdf` sorts chronologically and survives being moved between folders.' },
             { h: 'Store two copies in two places', x: 'One local, one in cloud storage. A single copy in one location is not an archive.' },
@@ -359,15 +359,15 @@ export const savePdf: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Casual bookmark you want to keep** — save a PDF and stop there.',
-            '**Research or references** — PDF plus a Wayback capture, filed with the date in the name.',
-            '**A price, offer or policy you may need to point at** — Wayback capture, PDF, and a full-page screenshot.',
-            '**Legal, academic or regulatory** — Perma.cc or a WARC, plus PDF/A, plus a hash.',
-            '**Something behind a login** — only your own copies work. Public archives cannot see it.',
+            '**Casual bookmark you want to keep**, save a PDF and stop there.',
+            '**Research or references**, PDF plus a Wayback capture, filed with the date in the name.',
+            '**A price, offer or policy you may need to point at**, Wayback capture, PDF, and a full-page screenshot.',
+            '**Legal, academic or regulatory**, Perma.cc or a WARC, plus PDF/A, plus a hash.',
+            '**Something behind a login**, only your own copies work. Public archives cannot see it.',
           ],
         },
         { t: 'cta', tool: 'merge-pdf', x: 'Combine a batch of archived pages into one dated dossier.' },
-        { t: 'p', x: 'One last thing: strip the metadata before you share an archive with anyone else. A saved PDF carries your operating system username and often the local folder path, which is more than you meant to disclose. [Remove metadata](/blog/pdf-privacy/remove-metadata-from-pdf) covers what is in there.' },
+        { t: 'p', x: 'One last thing: strip the metadata before you share an archive with anyone else. A saved PDF carries your operating system username and often the local folder path, which is more than you meant to disclose. [Remove metadata](/blog/privacy/remove-metadata-from-pdf) covers what is in there.' },
       ],
       faqs: [
         { q: 'How do I save a web page to the Wayback Machine?', a: 'Go to web.archive.org, find the "Save Page Now" box on the right, paste the full URL and click Save Page. The capture usually completes in under a minute and returns a permanent link containing the capture timestamp.' },

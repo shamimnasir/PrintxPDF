@@ -22,7 +22,7 @@ const USES: [string, string][] = [
 export default function Extensions() {
   const { browser } = useParams()
   useSeo({
-    title: 'PrintxPDF for Chrome — Print Any Page Clean',
+    title: 'PrintxPDF for Chrome | Print Any Page Clean',
     description: 'A Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comment walls stripped, ready to print or save as PDF. Free, and it reads nothing until you click it.',
     path: '/extensions/chrome',
     keywords: ['chrome print extension', 'print friendly chrome extension', 'save webpage as pdf chrome', 'print without ads'],

@@ -1,8 +1,8 @@
 // Site configuration for the admin panel.
 //
 // This site is static (no backend), so config lives in two places:
-//   1. public/site-config.json — the published config every visitor gets
-//   2. localStorage           — your unpublished draft, visible only in your browser
+//   1. public/site-config.json, the published config every visitor gets
+//   2. localStorage          , your unpublished draft, visible only in your browser
 //
 // The admin panel edits the draft. "Publish" exports the JSON so you can drop it into
 // public/site-config.json and redeploy, which makes the change live for everyone.
@@ -84,7 +84,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
   site: {
     name: 'PrintxPDF',
     tagline: 'Print only what matters. Fix any PDF.',
-    description: 'Turn any web page into a clean printout or PDF, then do everything else to a PDF — merge, sign, compress, OCR, protect, convert — with free tools that run on your own computer. No account, nothing to install.',
+    description: 'Turn any web page into a clean printout or PDF, then do everything else to a PDF, merge, sign, compress, OCR, protect, convert, with free tools that run on your own computer. No account, nothing to install.',
     url: 'https://printxpdf.com',
     email: '',
     twitter: '',
@@ -104,9 +104,9 @@ export const DEFAULT_CONFIG: SiteConfig = {
     eyebrow: 'Free · {count} tools · Your files never leave your device',
     headline1: 'Print only what matters.',
     headline2: 'Fix any PDF.',
-    lead: 'Paste a link and keep just the article — no ads, no menus, no comment threads — then print it or save it as a PDF. Or drop in a PDF and merge, split, sign, compress, redact, OCR or convert it. Everything runs on your own computer, and you never have to sign up.',
+    lead: 'Paste a link and keep just the article, no ads, no menus, no comment threads, then print it or save it as a PDF. Or drop in a PDF and merge, split, sign, compress, redact, OCR or convert it. Everything runs on your own computer, and you never have to sign up.',
     fileCardTitle: 'Drop in a file',
-    fileCardText: 'Merge, sign, compress, convert, protect, redact — {count} tools',
+    fileCardText: 'Merge, sign, compress, convert, protect, redact, {count} tools',
     urlCardTitle: 'Print a web page',
     urlCardText: 'Paste a link. Keep the article, drop the rest.',
     marquee: ['Merge', 'Split', 'Sign', 'Compress', 'OCR', 'Redact', 'Protect', 'Crop', 'Compare', 'Convert', 'Fill forms', 'Scan'],
@@ -118,7 +118,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
   pages: {},
   tools: { hidden: [], featured: [], overrides: {} },
   seo: {
-    titleTemplate: '%s — PrintxPDF',
+    titleTemplate: '%s | PrintxPDF',
     defaultDescription: 'Print web pages without ads and run every common PDF job free in your browser.',
     keywords: ['print web page without ads', 'pdf tools', 'merge pdf', 'compress pdf', 'sign pdf', 'ocr pdf'],
     robotsTxt: '',
@@ -217,7 +217,7 @@ export async function bootConfig(): Promise<SiteConfig> {
       published = merge(DEFAULT_CONFIG, json)
     }
   } catch {
-    // no published config yet — defaults are the site
+    // no published config yet, defaults are the site
   }
   booted = true
   recompute()

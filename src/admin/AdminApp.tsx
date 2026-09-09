@@ -48,7 +48,7 @@ function Gate({ onUnlock }: { onUnlock: () => void }) {
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.82rem' }}>
           Default passcode is <code className="inline">printxpdf</code>. Change it under Publish &amp; data. This gate only
-          hides the UI in this browser — it is not a security boundary, because the panel edits a local draft and
+          hides the UI in this browser, it is not a security boundary, because the panel edits a local draft and
           publishing requires access to the repository.
         </p>
       </form>
@@ -63,7 +63,7 @@ export default function AdminApp() {
   const draft = hasDraft()
 
   useSeo({
-    title: 'Admin — PrintxPDF',
+    title: 'Admin | PrintxPDF',
     description: 'Site control panel.',
     path: pathname,
     noindex: true,

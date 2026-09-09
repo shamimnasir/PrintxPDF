@@ -21,7 +21,7 @@ export default function Home() {
   const [h1Lead, h1Last] = lastWord(cfg.home.headline1)
   const [h2Lead, h2Last] = lastWord(cfg.home.headline2)
   useSeo({
-    title: `${cfg.site.name} — ${cfg.site.tagline}`,
+    title: `${cfg.site.name} | ${cfg.site.tagline}`,
     description: cfg.site.description,
     path: '/',
     keywords: cfg.seo.keywords,

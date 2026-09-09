@@ -31,7 +31,7 @@ export default function ToolPage() {
   const guides = postsForTool(slug).slice(0, 4)
 
   useSeo({
-    title: tool ? `${tool.name} — ${tool.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}` : 'Tool not found',
+    title: tool ? `${tool.name}, ${tool.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}` : 'Tool not found',
     description: tool ? `${tool.description} ${tool.status === 'server' ? 'Free for 5 files a month, no sign-up.' : 'No upload, no sign-up: it runs entirely in your browser.'}`.slice(0, 158) : '',
     path: `/tools/${slug}`,
     keywords: tool ? [tool.name.toLowerCase(), `${tool.name.toLowerCase()} free`, `${tool.name.toLowerCase()} online`, tool.status === 'server' ? 'online converter' : 'no upload'] : [],

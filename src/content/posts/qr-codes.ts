@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const qrCodes: Cluster = {
-  slug: 'qr-codes',
+  slug: 'qr',
   name: 'QR codes for print',
   title: 'QR codes for print: size, contrast and error correction that actually work',
   metaTitle: 'QR Codes for Print: Size, Contrast, Error Levels',
@@ -18,7 +18,7 @@ export const qrCodes: Cluster = {
   posts: [
     {
       slug: 'qr-code-for-print',
-      cluster: 'qr-codes',
+      cluster: 'qr',
       title: 'How to make a QR code that actually scans off paper',
       metaTitle: 'How to Make a QR Code That Scans Off Paper',
       metaDescription:
@@ -53,7 +53,7 @@ export const qrCodes: Cluster = {
         { t: 'note', x: 'The [QR code generator](/tools/qr-code) exports SVG, PNG up to 2048 px and a print-ready PDF, all in your browser, so what you type never leaves your machine.' },
         { t: 'h2', x: 'Rule 2: 2 cm is the practical floor' },
         { t: 'p', x: 'The smallest square in a QR code is a **module**. A version 1 symbol is 21 modules across and every version up adds four, so a typical short URL at error correction M lands on version 3, or 29 modules across.' },
-        { t: 'p', x: 'Consumer printing and phone cameras need each module to be roughly **0.5 mm** wide; 0.4 mm is where things get unreliable. Twenty-nine modules at 0.5 mm is 14.5 mm, so 15 mm is the theoretical floor. Round up to **20 mm (0.8 in)** for tolerance against cheap paper, ink spread and a shaky hand. For anything read from further away, see [what size a QR code should be](/blog/qr-codes/qr-code-size-for-print).' },
+        { t: 'p', x: 'Consumer printing and phone cameras need each module to be roughly **0.5 mm** wide; 0.4 mm is where things get unreliable. Twenty-nine modules at 0.5 mm is 14.5 mm, so 15 mm is the theoretical floor. Round up to **20 mm (0.8 in)** for tolerance against cheap paper, ink spread and a shaky hand. For anything read from further away, see [what size a QR code should be](/blog/qr/qr-code-size-for-print).' },
         { t: 'h2', x: 'Rule 3: The quiet zone is part of the code' },
         { t: 'p', x: 'The blank border is not whitespace, it is a required component. ISO/IEC 18004 specifies **four modules of clear margin on all four sides**, and scanners use it to find where the symbol starts and stops. On a 25 mm code with 0.7 mm modules that is a 2.8 mm blank frame.' },
         { t: 'warn', x: 'Do not crop the margin to make the code fit, do not butt it against a photograph, and never place it within 5 mm of a trim edge. Press trimming tolerance is 1 to 2 mm per cut and it will eat your quiet zone.' },
@@ -105,7 +105,7 @@ export const qrCodes: Cluster = {
             'Shorten the payload. A 900-character vCard makes a dense symbol; a short URL scans from twice the distance.',
           ],
         },
-        { t: 'p', x: 'Once the artwork is right, [combine the proofs into one PDF](/blog/convert-to-pdf/images-to-pdf) before sending. For cards, the layout details are in [putting a QR code on a business card](/blog/qr-codes/qr-code-on-business-card).' },
+        { t: 'p', x: 'Once the artwork is right, [combine the proofs into one PDF](/blog/to-pdf/images-to-pdf) before sending. For cards, the layout details are in [putting a QR code on a business card](/blog/qr/qr-code-on-business-card).' },
       ],
       faqs: [
         { q: 'Why does my QR code work on screen but not when printed?', a: 'Almost always size or resolution. A code that fills your monitor is huge; the same file at 15 mm on paper has modules under 0.4 mm. Re-export as SVG, print at 20 mm or larger, and keep a four-module quiet zone.' },
@@ -119,7 +119,7 @@ export const qrCodes: Cluster = {
     },
     {
       slug: 'wifi-qr-code',
-      cluster: 'qr-codes',
+      cluster: 'qr',
       title: 'How to make a WiFi QR code guests can scan',
       metaTitle: 'How to Make a WiFi QR Code Guests Can Scan',
       metaDescription:
@@ -182,7 +182,7 @@ export const qrCodes: Cluster = {
         },
         { t: 'tip', x: 'Always print the SSID and password as readable text under the code. Laptops, older phones and anyone with a cracked camera lens will need them, and it costs you one line of type.' },
         { t: 'h2', x: 'Printing it for a cafe, guest room or office' },
-        { t: 'p', x: 'A WiFi code sits on a table tent, a wall card or a laminated door hanger, so it is read from roughly 30 to 60 cm. Applying the ten-to-one rule from [QR code sizing](/blog/qr-codes/qr-code-size-for-print), that means a symbol **30 to 60 mm** wide. A 40 mm code on an A6 table tent is a safe, tested default.' },
+        { t: 'p', x: 'A WiFi code sits on a table tent, a wall card or a laminated door hanger, so it is read from roughly 30 to 60 cm. Applying the ten-to-one rule from [QR code sizing](/blog/qr/qr-code-size-for-print), that means a symbol **30 to 60 mm** wide. A 40 mm code on an A6 table tent is a safe, tested default.' },
         {
           t: 'ul',
           items: [
@@ -205,7 +205,7 @@ export const qrCodes: Cluster = {
             '**Do not post it publicly.** A code in a shop window, or in a photo on social media, is readable by anyone who walks or scrolls past.',
           ],
         },
-        { t: 'p', x: 'Once the card design is finished, [save it as a PDF](/blog/print-web-pages/print-web-page-to-pdf-vs-printer) so you can reprint it identically, and keep the SVG next to it. If you are making several versions for different rooms, [merge them into one file](/tools/merge-pdf) so the print shop gets a single job.' },
+        { t: 'p', x: 'Once the card design is finished, [save it as a PDF](/blog/print/print-web-page-to-pdf-vs-printer) so you can reprint it identically, and keep the SVG next to it. If you are making several versions for different rooms, [merge them into one file](/tools/merge-pdf) so the print shop gets a single job.' },
       ],
       faqs: [
         { q: 'Do WiFi QR codes work on iPhone?', a: 'Yes. Every iPhone running iOS 11 or later reads them with the stock Camera app. Point the camera at the code and a "Join Network" banner appears at the top of the screen; tap it and the phone connects without you typing anything.' },
@@ -219,7 +219,7 @@ export const qrCodes: Cluster = {
     },
     {
       slug: 'qr-code-size-for-print',
-      cluster: 'qr-codes',
+      cluster: 'qr',
       title: 'What size should a QR code be? The distance rule',
       metaTitle: 'What Size Should a QR Code Be? Distance Rule',
       metaDescription:
@@ -272,7 +272,7 @@ export const qrCodes: Cluster = {
             ['Long plain text', '1,000 characters', 'Version 21, 101 x 101', '50.5 mm'],
           ],
         },
-        { t: 'p', x: 'Read that last row again. A thousand characters of text needs a 50 mm code just to reach the minimum module size, which is why encoding a whole paragraph is a bad idea. Encode a short URL and let the page hold the content. The same logic applies on a card: a link beats a [full vCard](/blog/qr-codes/qr-code-on-business-card) when space is tight.' },
+        { t: 'p', x: 'Read that last row again. A thousand characters of text needs a 50 mm code just to reach the minimum module size, which is why encoding a whole paragraph is a bad idea. Encode a short URL and let the page hold the content. The same logic applies on a card: a link beats a [full vCard](/blog/qr/qr-code-on-business-card) when space is tight.' },
         { t: 'h2', x: 'Pixels, DPI and what to hand the printer' },
         { t: 'p', x: 'If you are supplying a raster file rather than vector, the conversion is `pixels = millimetres × DPI ÷ 25.4`. Commercial print is 300 DPI; large-format banners and vehicle wraps are usually 100 to 150 DPI because nobody stands close to them.' },
         {
@@ -298,12 +298,12 @@ export const qrCodes: Cluster = {
             { h: 'Add 25 percent', x: 'This is your working size. It covers poor light, older cameras and scanning at an angle.' },
             { h: 'Add the quiet zone', x: 'Four blank modules on each side. On a 40 mm code that is roughly 5 mm of clear space all round, so reserve 50 mm in the layout.' },
             { h: 'Check the module size', x: 'Divide your working width by the grid size. If the answer is under 0.5 mm, shorten the payload or make the code bigger.' },
-            { h: 'Proof at final size', x: 'Print one, scan it at the real distance with an old phone, then commit. The full checklist is in [making a QR code that scans](/blog/qr-codes/qr-code-for-print).' },
+            { h: 'Proof at final size', x: 'Print one, scan it at the real distance with an old phone, then commit. The full checklist is in [making a QR code that scans](/blog/qr/qr-code-for-print).' },
           ],
         },
         { t: 'cta', tool: 'qr-code', x: 'Generate a code at any size as SVG, PNG or a print-ready PDF, free and in your browser.' },
         { t: 'h2', x: 'Angle, motion and light' },
-        { t: 'p', x: 'The 10:1 rule assumes the phone is held roughly square to the code. Decoding degrades past about 30 degrees of tilt, so a code on a sloped table tent or a shelf edge should be sized as if it were 20 to 30 percent further away. Anything scanned in motion, on an escalator or from a bus, needs to be larger still, and codes on moving vehicles do not work at all. Codes people scan while seated, such as a [WiFi card on a table](/blog/qr-codes/wifi-qr-code), are the easy case.' },
+        { t: 'p', x: 'The 10:1 rule assumes the phone is held roughly square to the code. Decoding degrades past about 30 degrees of tilt, so a code on a sloped table tent or a shelf edge should be sized as if it were 20 to 30 percent further away. Anything scanned in motion, on an escalator or from a bus, needs to be larger still, and codes on moving vehicles do not work at all. Codes people scan while seated, such as a [WiFi card on a table](/blog/qr/wifi-qr-code), are the easy case.' },
       ],
       faqs: [
         { q: 'What is the minimum size for a QR code?', a: 'Twenty millimetres, about 0.8 inches, for anything held in the hand. Below that, individual modules fall under the 0.4 mm that consumer printing and phone cameras can resolve, and scan success drops sharply even in good light.' },
@@ -317,7 +317,7 @@ export const qrCodes: Cluster = {
     },
     {
       slug: 'qr-code-on-business-card',
-      cluster: 'qr-codes',
+      cluster: 'qr',
       title: 'How to put a QR code on a business card or flyer',
       metaTitle: 'How to Put a QR Code on a Business Card',
       metaDescription:
@@ -360,7 +360,7 @@ export const qrCodes: Cluster = {
         },
         { t: 'note', x: 'The [QR code generator](/tools/qr-code) has a **vcard** tab that builds this for you from name, organisation, phone, email and website, and shows the raw payload underneath so you can check it before downloading.' },
         { t: 'h2', x: 'Size, placement and margins' },
-        { t: 'p', x: 'Business cards are read at roughly 20 cm, so the [10:1 rule](/blog/qr-codes/qr-code-size-for-print) puts the minimum at 20 mm. A vCard payload is dense, so 22 to 25 mm is the practical range. On an 85 x 55 mm card, a 25 mm code takes a meaningful bite out of the layout, which is why the back of the card is usually the right home for it.' },
+        { t: 'p', x: 'Business cards are read at roughly 20 cm, so the [10:1 rule](/blog/qr/qr-code-size-for-print) puts the minimum at 20 mm. A vCard payload is dense, so 22 to 25 mm is the practical range. On an 85 x 55 mm card, a 25 mm code takes a meaningful bite out of the layout, which is why the back of the card is usually the right home for it.' },
         {
           t: 'table',
           caption: 'Card and flyer dimensions with the space a QR code needs.',
@@ -404,7 +404,7 @@ export const qrCodes: Cluster = {
           ],
         },
         { t: 'tip', x: 'On a flyer, put the code in the lower right of the front panel. That is where a right-handed reader holds the sheet, and it keeps the code clear of the fold on a folded leaflet.' },
-        { t: 'p', x: 'If you are assembling the print pack yourself, [combine the front and back artwork into one PDF](/blog/convert-to-pdf/images-to-pdf) before sending, and check it against the shop’s upload limit with [compress](/tools/compress-pdf). The underlying scan rules are all in [making a QR code that scans off paper](/blog/qr-codes/qr-code-for-print).' },
+        { t: 'p', x: 'If you are assembling the print pack yourself, [combine the front and back artwork into one PDF](/blog/to-pdf/images-to-pdf) before sending, and check it against the shop’s upload limit with [compress](/tools/compress-pdf). The underlying scan rules are all in [making a QR code that scans off paper](/blog/qr/qr-code-for-print).' },
       ],
       faqs: [
         { q: 'What size should a QR code be on a business card?', a: 'Twenty to twenty-five millimetres, roughly 0.8 to 1 inch. Cards are scanned from about 20 cm, and the 10:1 rule sets 20 mm as the floor. A vCard payload is dense, so lean towards 25 mm if the layout allows.' },

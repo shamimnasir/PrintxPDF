@@ -1,6 +1,6 @@
 # PrintxPDF
 
-Print only what matters, then fix any PDF. A print-and-PDF toolkit with an original brand and a bold cobalt-on-white design. Every browser tool runs client-side; a few heavy jobs — Office layout, ebooks, PDF encryption, PDF/A — run on a small Cloudflare container that deletes each file the moment it finishes. Founded and written by Nasir Uddin Shamim.
+Print only what matters, then fix any PDF. A print-and-PDF toolkit with an original brand and a bold cobalt-on-white design. Every browser tool runs client-side; a few heavy jobs, Office layout, ebooks, PDF encryption, PDF/A, run on a small Cloudflare container that deletes each file the moment it finishes. Founded and written by Nasir Uddin Shamim.
 
 **Live:** https://printxpdf.com
 
@@ -8,18 +8,18 @@ Print only what matters, then fix any PDF. A print-and-PDF toolkit with an origi
 
 ## What's in it
 
-### 1. Web-page cleaner — `/print`
+### 1. Web-page cleaner, `/print`
 Paste a URL. The page is fetched through a reader proxy, run through Mozilla Readability and sanitised with DOMPurify, then handed to an editor:
 
-- **Delete mode** — hover any block, click to remove it, drag to sweep several
+- **Delete mode**, hover any block, click to remove it, drag to sweep several
 - **Highlight**, **Edit text** (contentEditable), **Notes**, **manual page breaks**
 - **Undo / redo** with ⌘Z / ⌘⇧Z
-- **Style menu** — text size, font, image size, margins, A4/Letter, link handling
-- **Outputs** — Print (crisp text), Download PDF, PNG screenshot, Email, Save to account
+- **Style menu**, text size, font, image size, margins, A4/Letter, link handling
+- **Outputs**, Print (crisp text), Download PDF, PNG screenshot, Email, Save to account
 
 Fallbacks that always work: paste HTML/text, upload an `.html` file, or three bundled sample articles.
 
-### 2. PDF tools — `/tools`
+### 2. PDF tools, `/tools`
 43 tools. Every one states up front whether it runs in your browser, is best-effort, or runs on our server.
 
 | Engine | Tools |
@@ -31,12 +31,12 @@ Fallbacks that always work: paste HTML/text, upload an `.html` file, or three bu
 | `jsPDF` + `html2canvas` | HTML→PDF, images→PDF, QR→PDF |
 | `qrcode` | QR generator (URL, WiFi, vCard, email, SMS, phone) |
 
-PowerPoint ↔ PDF and EPUB/MOBI → PDF need a real layout engine, so they run on `api.printxpdf.com` — LibreOffice + Calibre in a Cloudflare container, source in `worker/`. Free for 5 files a month per IP; the Pro ($5/mo, 300) and API ($29/mo, 5,000) plans lift that.
+PowerPoint ↔ PDF and EPUB/MOBI → PDF need a real layout engine, so they run on `api.printxpdf.com`, LibreOffice + Calibre in a Cloudflare container, source in `worker/`. Free for 5 files a month per IP; the Pro ($5/mo, 300) and API ($29/mo, 5,000) plans lift that.
 
-### 3. Content — `/blog`
+### 3. Content, `/blog`
 18 topic clusters, 72 guides, built as typed data in `src/content/posts/`. Each post carries the metadata Google wants and the shape LLMs want: a 40-60 word extractable answer, explicit entities, FAQs and comparison tables.
 
-### 4. Admin panel — `/admin`
+### 4. Admin panel, `/admin`
 Default passcode `printxpdf` (change it under **Publish & data**).
 
 | Section | Controls |
@@ -52,7 +52,7 @@ Default passcode `printxpdf` (change it under **Publish & data**).
 | Custom code | head HTML, body-end HTML, CSS and JS injection |
 | Publish & data | export/import `site-config.json`, discard draft, change passcode |
 
-**How publishing works.** There is no backend, so the panel writes a draft to `localStorage` — visible only in your browser. To make a change live for everyone: download `site-config.json` from **Publish & data**, drop it into `public/site-config.json`, commit and push. Vercel redeploys and every visitor gets it.
+**How publishing works.** There is no backend, so the panel writes a draft to `localStorage`, visible only in your browser. To make a change live for everyone: download `site-config.json` from **Publish & data**, drop it into `public/site-config.json`, commit and push. Vercel redeploys and every visitor gets it.
 
 ---
 
@@ -83,13 +83,13 @@ Step 4 matters: Googlebot runs JavaScript, but AI crawlers and social scrapers m
 
 Set `VITE_SITE_URL` so canonical URLs and the sitemap point at your domain.
 
-## API, billing and the converter — `worker/`
+## API, billing and the converter, `worker/`
 
 `worker/` is a Cloudflare Worker (`printxpdf-api`, served at `api.printxpdf.com`) plus a container image (Debian + LibreOffice Impress + Calibre, Python stdlib HTTP server). It provides:
 
-- `POST /convert/{ppt-to-pdf|pdf-to-ppt|epub-to-pdf|mobi-to-pdf}` — multipart `file` in, converted file out; 100 MB / 2 min limits; free quota by hashed IP, plan quotas by access key
-- `POST /billing/checkout`, `GET /billing/session`, `GET /billing/me`, `POST /billing/portal`, `POST /billing/rotate` — Stripe Checkout and customer portal; entitlement is a stateless HMAC-signed key, re-checked against Stripe on use (no database, no webhook)
-- `GET /fetch?url=` — the CORS fetch proxy the web-page cleaner uses (`VITE_FETCH_PROXY`)
+- `POST /convert/{ppt-to-pdf|pdf-to-ppt|epub-to-pdf|mobi-to-pdf}`, multipart `file` in, converted file out; 100 MB / 2 min limits; free quota by hashed IP, plan quotas by access key
+- `POST /billing/checkout`, `GET /billing/session`, `GET /billing/me`, `POST /billing/portal`, `POST /billing/rotate`, Stripe Checkout and customer portal; entitlement is a stateless HMAC-signed key, re-checked against Stripe on use (no database, no webhook)
+- `GET /fetch?url=`, the CORS fetch proxy the web-page cleaner uses (`VITE_FETCH_PROXY`)
 - `GET /health`
 
 Deploy (needs Docker or Colima running for the image build):
@@ -98,12 +98,12 @@ Deploy (needs Docker or Colima running for the image build):
 cd worker && npm install && npx wrangler deploy
 ```
 
-Secrets: `ENTITLEMENT_SECRET` (any long random string) and `STRIPE_SECRET_KEY` — a *restricted* key with Checkout Sessions (write), Customers (read), Subscriptions (read), Billing Portal (write), Prices and Products (read). Set them with `npx wrangler secret put <NAME>`; never commit them. Price ids go in `vars.PRICE_PRO` / `vars.PRICE_API`. Full runbook in `worker/README.md`.
+Secrets: `ENTITLEMENT_SECRET` (any long random string) and `STRIPE_SECRET_KEY`, a *restricted* key with Checkout Sessions (write), Customers (read), Subscriptions (read), Billing Portal (write), Prices and Products (read). Set them with `npx wrangler secret put <NAME>`; never commit them. Price ids go in `vars.PRICE_PRO` / `vars.PRICE_API`. Full runbook in `worker/README.md`.
 
-Site-side env (Vercel → Settings → Environment Variables, or `.env`): `VITE_SITE_URL`, `VITE_API_BASE`, `VITE_FETCH_PROXY` — see `.env.example`.
+Site-side env (Vercel → Settings → Environment Variables, or `.env`): `VITE_SITE_URL`, `VITE_API_BASE`, `VITE_FETCH_PROXY`, see `.env.example`.
 
 ### Design presets
-Three complete looks — **Blocks** (brutalist, default), **Paper** (book: serif on cream) and **Studio** (rounded SaaS) — switch site-wide from Admin → Appearance. Preview one without publishing with `?design=paper` on any URL.
+Three complete looks, **Blocks** (brutalist, default), **Paper** (book: serif on cream) and **Studio** (rounded SaaS), switch site-wide from Admin → Appearance. Preview one without publishing with `?design=paper` on any URL.
 
 ## Structure
 

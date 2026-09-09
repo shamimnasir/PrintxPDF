@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const savePaperInk: Cluster = {
-  slug: 'save-paper-ink',
+  slug: 'save-ink',
   name: 'Saving paper and ink',
   title: 'How to print for less: ink, paper and the settings that matter',
   metaTitle: 'How to Save Ink and Paper When Printing',
@@ -18,7 +18,7 @@ export const savePaperInk: Cluster = {
   posts: [
     {
       slug: 'save-ink-when-printing',
-      cluster: 'save-paper-ink',
+      cluster: 'save-ink',
       title: 'How to save ink when printing',
       metaTitle: 'How to Save Ink When Printing: 9 Real Fixes',
       metaDescription:
@@ -41,7 +41,7 @@ export const savePaperInk: Cluster = {
         { t: 'p', x: 'The setting most people get wrong. On an inkjet, **Grayscale** often does not stop the printer using colour: it mixes cyan, magenta and yellow into a richer composite black, so a document that looks entirely black quietly drains three cartridges. You want **Black ink only** or **Print using black cartridge only**.' },
         { t: 'warn', x: 'Many inkjets refuse to print at all when a colour cartridge is empty, even in black and white, because the maintenance routine needs every head present. Black-ink-only is what stops you reaching that point.' },
         { t: 'h2', x: '3. Turn off background graphics' },
-        { t: 'p', x: 'In a browser print dialog, **Background graphics** is off by default and should stay off. It keeps solid colour blocks, dark hero panels, zebra striping and section tints off your paper — the difference between an article and a black rectangle on a dark-mode site.' },
+        { t: 'p', x: 'In a browser print dialog, **Background graphics** is off by default and should stay off. It keeps solid colour blocks, dark hero panels, zebra striping and section tints off your paper, the difference between an article and a black rectangle on a dark-mode site.' },
         { t: 'h2', x: '4. Remove the images, or shrink them' },
         { t: 'p', x: 'A full-width photograph is worth ten pages of text in ink, and on most web pages the images are decorative. In the [web page printer](/print) the Style menu has an image setting: choose half-size or None and the page count falls with the ink.' },
         { t: 'cta', tool: 'pdf-to-text', x: 'Want the words and nothing else? Extract the text from a PDF and print that instead.' },
@@ -62,7 +62,7 @@ export const savePaperInk: Cluster = {
         },
         { t: 'p', x: 'The best-known claim here came from a 2014 school science project estimating that the United States federal government could save over a hundred million dollars a year by switching to Garamond. The methodology was fairly criticised, but the direction is right.' },
         { t: 'h2', x: '6. Drop a point size' },
-        { t: 'p', x: 'Ink coverage scales roughly with the square of the type size. 12pt to 11pt is about 16 percent less ink for the same words, and nobody notices. 12pt to 10pt is 30 percent less, fine for reference material and too far for an older reader. Size table in [fitting more on a page](/blog/save-paper-ink/fit-more-on-a-page).' },
+        { t: 'p', x: 'Ink coverage scales roughly with the square of the type size. 12pt to 11pt is about 16 percent less ink for the same words, and nobody notices. 12pt to 10pt is 30 percent less, fine for reference material and too far for an older reader. Size table in [fitting more on a page](/blog/save-ink/fit-more-on-a-page).' },
         { t: 'h2', x: '7. Set it once, as the default' },
         {
           t: 'steps',
@@ -70,7 +70,7 @@ export const savePaperInk: Cluster = {
             { h: 'Open your printer settings', x: 'Windows: **Settings → Printers & scanners** → your printer → **Printing preferences**. macOS: set the options in any print dialog, then **Save Current Settings as Preset** and make it the default.' },
             { h: 'Set the quality to Draft or EconoMode', x: 'It is usually on the first tab, labelled Quality, Print Quality or Paper/Quality.' },
             { h: 'Set the colour mode to black only', x: 'Look for Grayscale plus a **Black ink only** or **Black cartridge only** sub-option. Ticking greyscale alone is not enough on most inkjets.' },
-            { h: 'Turn on two-sided printing', x: 'If your printer has a duplex unit, make it the default here. It halves your paper for good. See [printing double-sided](/blog/save-paper-ink/print-double-sided).' },
+            { h: 'Turn on two-sided printing', x: 'If your printer has a duplex unit, make it the default here. It halves your paper for good. See [printing double-sided](/blog/save-ink/print-double-sided).' },
             { h: 'Apply, then confirm from a different app', x: 'Print one page from another program. Driver defaults are per printer, but some apps carry their own overrides.' },
           ],
         },
@@ -101,8 +101,8 @@ export const savePaperInk: Cluster = {
         { t: 'p', x: 'No setting beats not printing. Look at the preview, find the pages you need, and enter a range like `2-3`. If a PDF carries ten pages of appendices you will never open, delete them once.' },
         { t: 'cta', tool: 'delete-pages', x: 'Strip the pages you will never read out of a PDF before it reaches the printer.' },
         { t: 'h2', x: 'What it adds up to' },
-        { t: 'p', x: 'Take a twenty-page report with colour figures on an inkjet. As it arrives — full quality, colour, single-sided, images in — it is twenty sheets and roughly $2.40. In draft, black only, images out, duplexed, it is ten sheets and about 30 cents: same words, eight times the cost.' },
-        { t: 'p', x: 'The next levers are structural: [double-sided printing](/blog/save-paper-ink/print-double-sided) halves the sheets, [fitting more on a page](/blog/save-paper-ink/fit-more-on-a-page) shrinks the count, and [printing less overall](/blog/save-paper-ink/eco-friendly-printing) covers the habits.' },
+        { t: 'p', x: 'Take a twenty-page report with colour figures on an inkjet. As it arrives, full quality, colour, single-sided, images in, it is twenty sheets and roughly $2.40. In draft, black only, images out, duplexed, it is ten sheets and about 30 cents: same words, eight times the cost.' },
+        { t: 'p', x: 'The next levers are structural: [double-sided printing](/blog/save-ink/print-double-sided) halves the sheets, [fitting more on a page](/blog/save-ink/fit-more-on-a-page) shrinks the count, and [printing less overall](/blog/save-ink/eco-friendly-printing) covers the habits.' },
       ],
       faqs: [
         { q: 'Does printing in greyscale actually save colour ink?', a: 'Not always. Many inkjets mix cyan, magenta and yellow to make a richer composite black even in greyscale mode. You need the separate "black ink only" or "black cartridge only" option in the driver to genuinely stop colour ink being used.' },
@@ -116,7 +116,7 @@ export const savePaperInk: Cluster = {
     },
     {
       slug: 'print-double-sided',
-      cluster: 'save-paper-ink',
+      cluster: 'save-ink',
       title: 'How to print double-sided, including without a duplex printer',
       metaTitle: 'How to Print Double-Sided (No Duplex Needed)',
       metaDescription:
@@ -133,7 +133,7 @@ export const savePaperInk: Cluster = {
       body: [
         { t: 'p', x: 'Double-sided printing halves your paper for free, and it is a checkbox. The only confusing parts are which edge to flip on, and what to do when your printer has no duplex unit.' },
         { t: 'h2', x: 'If your printer has a duplex unit' },
-        { t: 'p', x: 'Look for **Print on both sides of paper** in the print dialog on Windows, or **Two-Sided** on macOS. If it is greyed out, either the printer genuinely lacks the hardware or the driver has duplex disabled — check the printer properties before assuming.' },
+        { t: 'p', x: 'Look for **Print on both sides of paper** in the print dialog on Windows, or **Two-Sided** on macOS. If it is greyed out, either the printer genuinely lacks the hardware or the driver has duplex disabled, check the printer properties before assuming.' },
         { t: 'p', x: 'Then pick the binding edge, which is where everyone goes wrong. The rule is about the physical paper, not about what you are reading:' },
         {
           t: 'table',
@@ -148,7 +148,7 @@ export const savePaperInk: Cluster = {
         },
         { t: 'warn', x: 'The most common duplex mistake is printing a landscape document, such as two pages per sheet or a set of slides, with the portrait default of long-edge binding. Every second sheet then reads upside down. If you have flipped the page to landscape for any reason, flip the binding setting too.' },
         { t: 'h2', x: 'If your printer has no duplex unit' },
-        { t: 'p', x: 'Manual duplex is a two-pass job: print one side of every sheet, put the stack back in the tray, print the other side. The difficulty is that two independent things can be wrong — which way up you reload the stack, and which order the second pass runs in — and the same symptom can come from either.' },
+        { t: 'p', x: 'Manual duplex is a two-pass job: print one side of every sheet, put the stack back in the tray, print the other side. The difficulty is that two independent things can be wrong, which way up you reload the stack, and which order the second pass runs in, and the same symptom can come from either.' },
         {
           t: 'steps',
           items: [
@@ -189,9 +189,9 @@ export const savePaperInk: Cluster = {
         { t: 'p', x: 'A document with an odd number of pages ends on a half-used sheet, and some drivers waste a whole sheet at the end of a manual duplex run. If you are printing several documents in one job, or you want a chapter to start on a right-hand page, insert deliberate blank pages so the breaks land where you want them rather than where the arithmetic puts them.' },
         { t: 'cta', tool: 'organize-pdf', x: 'Insert blank pages or reorder a document so the double-sided breaks land in the right places.' },
         { t: 'h2', x: 'Booklets, if you want to go further' },
-        { t: 'p', x: 'Acrobat Reader has a **Booklet** option that imposes pages two-up on landscape sheets in saddle-stitch order: fold the stack, staple the spine, get a small book. The page count must be a multiple of four, so add blanks. Without duplex, print the fronts, reload and print the backs — and remember landscape means short edge.' },
+        { t: 'p', x: 'Acrobat Reader has a **Booklet** option that imposes pages two-up on landscape sheets in saddle-stitch order: fold the stack, staple the spine, get a small book. The page count must be a multiple of four, so add blanks. Without duplex, print the fronts, reload and print the backs, and remember landscape means short edge.' },
         { t: 'h2', x: 'What it saves' },
-        { t: 'p', x: 'Duplex halves your sheets, which is roughly a cent a page in paper and a great deal more in storage and weight. On a 24-page academic paper it turns twelve sheets into six; combined with [two pages per sheet](/blog/students-research/print-journal-articles) it turns twenty-four pages into six sheets. In an office printing 150,000 pages a year, defaulting to duplex saves around 150 reams of paper. Set it as the printer default and the saving happens whether anyone remembers or not, which is covered in [saving ink](/blog/save-paper-ink/save-ink-when-printing) and [printing less overall](/blog/save-paper-ink/eco-friendly-printing).' },
+        { t: 'p', x: 'Duplex halves your sheets, which is roughly a cent a page in paper and a great deal more in storage and weight. On a 24-page academic paper it turns twelve sheets into six; combined with [two pages per sheet](/blog/students/print-journal-articles) it turns twenty-four pages into six sheets. In an office printing 150,000 pages a year, defaulting to duplex saves around 150 reams of paper. Set it as the printer default and the saving happens whether anyone remembers or not, which is covered in [saving ink](/blog/save-ink/save-ink-when-printing) and [printing less overall](/blog/save-ink/eco-friendly-printing).' },
       ],
       faqs: [
         { q: 'Should I flip on long edge or short edge?', a: 'Long edge for portrait documents, which is what you want almost always: the sheets open like a book. Short edge for landscape documents such as slides or two-pages-per-sheet layouts, and for anything you want to bind along the top.' },
@@ -205,7 +205,7 @@ export const savePaperInk: Cluster = {
     },
     {
       slug: 'fit-more-on-a-page',
-      cluster: 'save-paper-ink',
+      cluster: 'save-ink',
       title: 'How to fit more on a printed page without making it unreadable',
       metaTitle: 'How to Fit More on a Printed Page',
       metaDescription:
@@ -228,7 +228,7 @@ export const savePaperInk: Cluster = {
         { t: 'p', x: 'Browsers and PDF readers both offer a scale control, usually as a **Custom** percentage from 10 to 200. Because you are shrinking in two dimensions, the content per sheet grows with the square: at 90 percent you fit about 1.23 times as much, at 80 percent about 1.56 times.' },
         {
           t: 'table',
-          caption: 'What each lever buys on a 20-sheet document. They do not simply add up — apply them in order and re-check the preview.',
+          caption: 'What each lever buys on a 20-sheet document. They do not simply add up, apply them in order and re-check the preview.',
           head: ['Change', 'Sheets saved', 'Readability cost'],
           rows: [
             ['Margins from 1 inch to 0.5 inch', 'About 4', 'None, unless you need a binding margin'],
@@ -280,7 +280,7 @@ export const savePaperInk: Cluster = {
         { t: 'h2', x: 'The cheapest density trick is not printing it' },
         { t: 'p', x: 'Before optimising the layout, look at what is in the document. Cover pages, revision histories, blank separators, appendices nobody reads and a table of contents for an eight-page report are all pure paper. Cutting four pages from a twenty-page document beats every setting on this page and costs nothing in readability.' },
         { t: 'cta', tool: 'delete-pages', x: 'Remove the pages nobody reads before you start shrinking the ones they do.' },
-        { t: 'p', x: 'Once the layout is as tight as it should go, the remaining savings are in [double-sided printing](/blog/save-paper-ink/print-double-sided) and [ink settings](/blog/save-paper-ink/save-ink-when-printing). For slide decks specifically, handout mode does this job better than any scale control — see [printing lecture slides](/blog/students-research/print-lecture-slides).' },
+        { t: 'p', x: 'Once the layout is as tight as it should go, the remaining savings are in [double-sided printing](/blog/save-ink/print-double-sided) and [ink settings](/blog/save-ink/save-ink-when-printing). For slide decks specifically, handout mode does this job better than any scale control, see [printing lecture slides](/blog/students/print-lecture-slides).' },
       ],
       faqs: [
         { q: 'What is the smallest readable font size for printing?', a: 'About 9pt for text you will read continuously, and 7 to 8pt for reference material you only scan. Below 6pt most adults cannot read comfortably without magnification. If your audience includes older readers, treat 11pt as the floor.' },
@@ -294,7 +294,7 @@ export const savePaperInk: Cluster = {
     },
     {
       slug: 'eco-friendly-printing',
-      cluster: 'save-paper-ink',
+      cluster: 'save-ink',
       title: 'How to print less and waste less',
       metaTitle: 'How to Print Less and Waste Less: 10 Habits',
       metaDescription:
@@ -327,7 +327,7 @@ export const savePaperInk: Cluster = {
         { t: 'p', x: 'Almost nobody needs all forty pages. Find the pages that carry what you want and type `12-15`. If the document recurs, delete the dead pages once and keep the short version.' },
         { t: 'cta', tool: 'delete-pages', x: 'Cut the appendices and cover sheets out of a document you print regularly.' },
         { t: 'h2', x: '4. Work PDF-first, with a 24-hour rule' },
-        { t: 'p', x: 'Save to PDF, put it in a folder called "to print", and revisit tomorrow. Much of what you were certain you needed on paper was a passing impulse. What survives 24 hours is worth a sheet; the rest stays searchable and weightless. [Paper versus PDF](/blog/print-web-pages/print-web-page-to-pdf-vs-printer) covers the call.' },
+        { t: 'p', x: 'Save to PDF, put it in a folder called "to print", and revisit tomorrow. Much of what you were certain you needed on paper was a passing impulse. What survives 24 hours is worth a sheet; the rest stays searchable and weightless. [Paper versus PDF](/blog/print/print-web-page-to-pdf-vs-printer) covers the call.' },
         { t: 'cta', tool: 'pdf-reader', x: 'Read it on screen first. Most documents never need to leave the file.' },
         { t: 'h2', x: '5. Print in batches' },
         { t: 'p', x: 'One job of forty pages beats ten of four: no banner sheets between jobs, one trip, nothing left in the tray. Merge a reading list or a set of reports into one file and print once.' },
@@ -352,7 +352,7 @@ export const savePaperInk: Cluster = {
         { t: 'h2', x: '9. Reuse the single-sided misprints' },
         { t: 'p', x: 'Keep a tray of one-sided paper for drafts and notes. It costs nothing, uses paper already made, and is the only step here your printer need not know about.' },
         { t: 'h2', x: '10. Cut the clutter before it reaches the paper' },
-        { t: 'p', x: 'Web pages are the worst offenders: a 600-word article routinely prints as nine sheets of navigation, adverts and related-story grids. Cleaned, it is two. See [printing a web page without ads](/blog/print-web-pages/print-web-page-without-ads), or use the [web page printer](/print).' },
+        { t: 'p', x: 'Web pages are the worst offenders: a 600-word article routinely prints as nine sheets of navigation, adverts and related-story grids. Cleaned, it is two. See [printing a web page without ads](/blog/print/print-web-page-without-ads), or use the [web page printer](/print).' },
         { t: 'h2', x: 'The maths, on a real office' },
         { t: 'p', x: 'Twenty people printing thirty pages each on a working day is 600 a day and roughly 150,000 a year. At an all-in 3.5 cents a page, about $5,250 before the printer lease.' },
         {
@@ -385,7 +385,7 @@ export const savePaperInk: Cluster = {
             'Clear the abandoned-printouts tray weekly and recycle it.',
           ],
         },
-        { t: 'p', x: 'The detail behind each of these lives in [saving ink](/blog/save-paper-ink/save-ink-when-printing), [printing double-sided](/blog/save-paper-ink/print-double-sided) and [fitting more on a page](/blog/save-paper-ink/fit-more-on-a-page).' },
+        { t: 'p', x: 'The detail behind each of these lives in [saving ink](/blog/save-ink/save-ink-when-printing), [printing double-sided](/blog/save-ink/print-double-sided) and [fitting more on a page](/blog/save-ink/fit-more-on-a-page).' },
       ],
       faqs: [
         { q: 'What is the single biggest way to reduce printing waste?', a: 'Setting duplex and greyscale as the printer defaults in the operating system rather than choosing them per job. It halves paper immediately and applies to everyone and every application without anybody having to remember.' },

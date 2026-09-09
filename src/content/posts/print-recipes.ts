@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const printRecipes: Cluster = {
-  slug: 'print-recipes',
+  slug: 'recipes',
   name: 'Printing recipes',
   title: 'How to print recipes without the life story, the ads or the ink bill',
   metaTitle: 'How to Print a Recipe Without the Ads',
@@ -18,7 +18,7 @@ export const printRecipes: Cluster = {
   posts: [
     {
       slug: 'print-recipe-without-ads',
-      cluster: 'print-recipes',
+      cluster: 'recipes',
       title: 'How to print a recipe without the life story and ads',
       metaTitle: 'Print a Recipe Without the Ads or Story',
       metaDescription:
@@ -37,13 +37,13 @@ export const printRecipes: Cluster = {
         { t: 'h2', x: 'Why food blogs are like this' },
         { t: 'p', x: 'It is not vanity. A list of ingredients is not protected by copyright in most countries, so anyone can lift it. The surrounding narrative is protected, and it is what gives the page something original to rank on. Longer pages also carry more advertising, and advertising is what pays for a free recipe. Knowing this makes it easier to be efficient rather than annoyed: the story is the price of the recipe, and you only have to pay it on screen.' },
         { t: 'h2', x: 'Method 1: the site\'s own print button' },
-        { t: 'p', x: 'Most food blogs run their recipes through a plugin — **WP Recipe Maker**, **Tasty Recipes**, **Create by Mediavine** and similar — which puts the recipe in a bordered card with its own small toolbar. That toolbar almost always has a **Print** or **Print Recipe** link, and it is the single best option when it exists.' },
+        { t: 'p', x: 'Most food blogs run their recipes through a plugin, **WP Recipe Maker**, **Tasty Recipes**, **Create by Mediavine** and similar, which puts the recipe in a bordered card with its own small toolbar. That toolbar almost always has a **Print** or **Print Recipe** link, and it is the single best option when it exists.' },
         {
           t: 'steps',
           items: [
             { h: 'Find the recipe card', x: 'Scroll to the bordered box holding the ingredients, or click **Jump to Recipe** at the top of the page, which the same plugins add automatically.' },
             { h: 'Click Print or Print Recipe', x: 'It opens a new tab or window containing only the card: title, times, servings, ingredients, method.' },
-            { h: 'Set the options in that window', x: 'These print views usually offer their own checkboxes — include images, include notes, adjust servings. Untick images to halve the ink.' },
+            { h: 'Set the options in that window', x: 'These print views usually offer their own checkboxes, include images, include notes, adjust servings. Untick images to halve the ink.' },
             { h: 'Scale the servings before printing', x: 'Many cards let you change 4 servings to 6 and rewrite every quantity. Do it here rather than doing arithmetic at the counter.' },
             { h: 'Press Ctrl+P in that window', x: 'Check the preview says one page. If it says two, turn off images or drop the scale to 90 percent.' },
           ],
@@ -58,12 +58,12 @@ export const printRecipes: Cluster = {
             { h: 'Open the cleaner', x: 'Go to the [web page printer](/print) and paste the address in. It extracts the article and drops the navigation, sidebars and ad slots.' },
             { h: 'Delete the story', x: 'Delete mode is on by default. Click the memoir paragraphs, the video embed and the "you might also like" grid to remove them. Click and drag to sweep several blocks at once, and Ctrl+Z to undo.' },
             { h: 'Deal with the pictures', x: 'Open the Style menu and set images to small, or remove them entirely. Keep one photo of the finished dish if the shape or the colour matters.' },
-            { h: 'Print or save', x: 'Press Print for paper, or Download PDF to keep it for a [recipe binder](/blog/print-recipes/make-a-recipe-binder).' },
+            { h: 'Print or save', x: 'Press Print for paper, or Download PDF to keep it for a [recipe binder](/blog/recipes/make-a-recipe-binder).' },
           ],
         },
         { t: 'cta', tool: 'html-to-pdf', x: 'Turn a recipe page into a clean, one-page PDF you can file or print later.' },
         { t: 'h2', x: 'Method 3: select the recipe and print the selection' },
-        { t: 'p', x: 'The fastest trick of all when it works. Drag to select from the word "Ingredients" through the last step of the method, press Ctrl+P, and choose **Selection only** under Pages. Chrome, Firefox and Edge all support it; on Safari use **File → Print Selected Text**. Full detail in [printing only what you selected](/blog/print-web-pages/print-selected-text-only).' },
+        { t: 'p', x: 'The fastest trick of all when it works. Drag to select from the word "Ingredients" through the last step of the method, press Ctrl+P, and choose **Selection only** under Pages. Chrome, Firefox and Edge all support it; on Safari use **File → Print Selected Text**. Full detail in [printing only what you selected](/blog/print/print-selected-text-only).' },
         { t: 'p', x: 'It fails when the recipe card is inside an iframe, or when the site blocks text selection. In both cases fall back to Method 2.' },
         { t: 'h2', x: 'Which method to use' },
         {
@@ -76,7 +76,7 @@ export const printRecipes: Cluster = {
             ['No card, plain blog post', 'Paste the URL into a cleaner', '1-2 pages after deleting the story'],
             ['A paywall or login', 'Reader mode, or select and print the selection', '1-2 pages'],
             ['A recipe inside a video description', 'Copy the text into the cleaner paste box', '1 page'],
-            ['A photo of a handwritten card', '[OCR it](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) first, then print the text', '1 page, searchable'],
+            ['A photo of a handwritten card', '[OCR it](/blog/ocr/how-to-ocr-a-scanned-pdf) first, then print the text', '1 page, searchable'],
           ],
         },
         { t: 'h2', x: 'Make the printout usable in a kitchen' },
@@ -90,9 +90,9 @@ export const printRecipes: Cluster = {
             '**Do not print the comments.** The one useful comment is worth copying into the margin by hand; the other 399 are not worth four sheets.',
           ],
         },
-        { t: 'tip', x: 'If you cook from the same site often, keep the cleaner open in a pinned tab. Paste, delete, print, paste the next one — it removes the hunting-for-the-print-button step entirely.' },
+        { t: 'tip', x: 'If you cook from the same site often, keep the cleaner open in a pinned tab. Paste, delete, print, paste the next one, it removes the hunting-for-the-print-button step entirely.' },
         { t: 'h2', x: 'Save the paper as well as the ads' },
-        { t: 'p', x: 'A cleaned recipe usually lands between two-thirds and a full page. If it spills onto a second page by three lines, drop the print scale to 90 percent rather than accepting a sheet with four lines on it. Combined with turning images off, the difference over a year of cooking is substantial — see [saving ink when printing](/blog/save-paper-ink/save-ink-when-printing) and [printing recipes without pictures](/blog/print-recipes/print-recipe-without-pictures).' },
+        { t: 'p', x: 'A cleaned recipe usually lands between two-thirds and a full page. If it spills onto a second page by three lines, drop the print scale to 90 percent rather than accepting a sheet with four lines on it. Combined with turning images off, the difference over a year of cooking is substantial, see [saving ink when printing](/blog/save-ink/save-ink-when-printing) and [printing recipes without pictures](/blog/recipes/print-recipe-without-pictures).' },
       ],
       faqs: [
         { q: 'How do I print just the recipe and not the whole blog post?', a: 'Use the Print Recipe button inside the recipe card if the site has one, which opens a stripped version containing only the ingredients and method. If not, paste the page address into a printer-friendly tool and delete the story before printing.' },
@@ -106,7 +106,7 @@ export const printRecipes: Cluster = {
     },
     {
       slug: 'print-recipe-without-pictures',
-      cluster: 'print-recipes',
+      cluster: 'recipes',
       title: 'How to print a recipe without the pictures',
       metaTitle: 'How to Print a Recipe Without Pictures',
       metaDescription:
@@ -154,7 +154,7 @@ export const printRecipes: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Shaping and assembly.** Plaited bread, folded dumplings, a layered bake — you cannot tell from words whether you have done it correctly.',
+            '**Shaping and assembly.** Plaited bread, folded dumplings, a layered bake, you cannot tell from words whether you have done it correctly.',
             '**A doneness cue.** The colour of a caramel, the set of a custard, the crumb of a loaf when it is right.',
             '**A cutting or portioning diagram.** How a joint of meat divides, or how a tray bake is scored.',
             '**Unfamiliar ingredients.** A photo of the right kind of chilli or noodle saves a wrong purchase.',
@@ -162,21 +162,21 @@ export const printRecipes: Cluster = {
         },
         { t: 'p', x: 'In a cleaner, that means setting images to small rather than none, then deleting the ones you do not need individually. A small reference photo occupies about a fifth of the page width and prints for a fraction of the cost of a full-width one.' },
         { t: 'h2', x: 'Greyscale rather than nothing' },
-        { t: 'p', x: 'Where a photo shows shape or texture — the plait, the fold, the cut — greyscale carries the information at a fraction of the ink cost. Where a photo shows a colour cue, such as how brown a caramel should be, greyscale destroys the point of including it. Decide per photo, then set the printer to greyscale for the whole job if none of them need colour.' },
+        { t: 'p', x: 'Where a photo shows shape or texture, the plait, the fold, the cut, greyscale carries the information at a fraction of the ink cost. Where a photo shows a colour cue, such as how brown a caramel should be, greyscale destroys the point of including it. Decide per photo, then set the printer to greyscale for the whole job if none of them need colour.' },
         {
           t: 'table',
           head: ['If the photo shows…', 'Print it as'],
           rows: [
             ['A shaping or folding step', 'Greyscale, small'],
-            ['A colour or browning cue', 'Colour, small — or skip it and read the description'],
+            ['A colour or browning cue', 'Colour, small, or skip it and read the description'],
             ['The finished dish, for reference', 'Greyscale, small, one only'],
             ['The blogger\'s kitchen, hands, or table setting', 'Do not print it'],
-            ['An ingredient flat-lay', 'Do not print it — the list is on the page'],
+            ['An ingredient flat-lay', 'Do not print it, the list is on the page'],
           ],
         },
         { t: 'tip', x: 'Print recipes in draft quality by default. Text stays perfectly readable at arm\'s length, pages come out faster, and cartridges last two to three times longer. On most drivers the setting is under Quality or Print Quality, and on many HP printers it is labelled EconoMode.' },
         { t: 'h2', x: 'The one-page target' },
-        { t: 'p', x: 'Aim to have every recipe in your kitchen on one side of one sheet. Images off, text at 14 point, scale at 90 percent if needed. That way a recipe is one thing you can hold, prop up or wipe down, and the [binder you build from them](/blog/print-recipes/make-a-recipe-binder) has a consistent format. If you are also printing weekly, the same settings apply to a [meal plan and shopping list](/blog/print-recipes/meal-plan-printables).' },
+        { t: 'p', x: 'Aim to have every recipe in your kitchen on one side of one sheet. Images off, text at 14 point, scale at 90 percent if needed. That way a recipe is one thing you can hold, prop up or wipe down, and the [binder you build from them](/blog/recipes/make-a-recipe-binder) has a consistent format. If you are also printing weekly, the same settings apply to a [meal plan and shopping list](/blog/recipes/meal-plan-printables).' },
       ],
       faqs: [
         { q: 'How do I print a web page without images?', a: 'Use a printer-friendly tool and set images to None in its style options. Browsers do not have an images-off switch, and unticking Background graphics in the print dialog only removes CSS backgrounds, not the photos inside the article.' },
@@ -190,7 +190,7 @@ export const printRecipes: Cluster = {
     },
     {
       slug: 'make-a-recipe-binder',
-      cluster: 'print-recipes',
+      cluster: 'recipes',
       title: 'How to build a printed recipe binder that survives a kitchen',
       metaTitle: 'Build a Recipe Binder That Survives a Kitchen',
       metaDescription:
@@ -207,8 +207,8 @@ export const printRecipes: Cluster = {
       body: [
         { t: 'p', x: 'A recipe binder fails for predictable reasons: every page a different size and font, no way to find anything, and grease-soaked sheets that come apart within a year. Nine decisions fix all three, and the first one matters more than the other eight combined.' },
         { t: 'h2', x: '1. One format, no exceptions' },
-        { t: 'p', x: 'Every recipe goes in looking the same: same paper size, same font size, title at the top, times and temperature under the title, ingredients then method, source at the bottom. Consistency is what makes a binder scannable — you learn where to look and stop reading the layout each time.' },
-        { t: 'p', x: 'The easiest way to enforce it is to clean each page through the same process before printing. Paste the URL into the [web page printer](/print), delete the story, set the text size, print. It takes a minute and the twentieth recipe looks like the first. Full method in [printing a recipe without the ads](/blog/print-recipes/print-recipe-without-ads).' },
+        { t: 'p', x: 'Every recipe goes in looking the same: same paper size, same font size, title at the top, times and temperature under the title, ingredients then method, source at the bottom. Consistency is what makes a binder scannable, you learn where to look and stop reading the layout each time.' },
+        { t: 'p', x: 'The easiest way to enforce it is to clean each page through the same process before printing. Paste the URL into the [web page printer](/print), delete the story, set the text size, print. It takes a minute and the twentieth recipe looks like the first. Full method in [printing a recipe without the ads](/blog/recipes/print-recipe-without-ads).' },
         { t: 'h2', x: '2. Pick a page size and commit' },
         {
           t: 'table',
@@ -248,12 +248,12 @@ export const printRecipes: Cluster = {
             'Sides, sauces and dressings',
             'Guests and celebrations',
             'Preserving, freezing and batch cooking',
-            'Tried once, undecided — the holding pen',
+            'Tried once, undecided, the holding pen',
           ],
         },
         { t: 'p', x: 'That last tab is the one that keeps the binder honest. A recipe waits there until you have cooked it twice; then it earns a real tab or goes in the bin.' },
         { t: 'h2', x: '7. Keep an index at the front' },
-        { t: 'p', x: 'Tabs get you to a section. An index gets you to a recipe. Keep a simple two-column list — recipe name and section — printed and slipped into the front pocket, and reprint it whenever you have added five or six recipes. Handwrite the additions in between; it takes ten seconds and keeps the index true.' },
+        { t: 'p', x: 'Tabs get you to a section. An index gets you to a recipe. Keep a simple two-column list, recipe name and section, printed and slipped into the front pocket, and reprint it whenever you have added five or six recipes. Handwrite the additions in between; it takes ten seconds and keeps the index true.' },
         { t: 'tip', x: 'Number your sections and write the section number in the corner of each printed page before it goes into a protector. A page that comes out of the binder can then be put back where it belongs without reading it.' },
         { t: 'h2', x: '8. Laminate only what you cook constantly' },
         {
@@ -270,16 +270,16 @@ export const printRecipes: Cluster = {
         },
         { t: 'p', x: 'Laminate the weekly staples and the reference sheets: roasting times, conversions, a bread ratio table. Everything else lives in a protector, where you can pull the page out and write on it.' },
         { t: 'h2', x: '9. Digitise the binder once' },
-        { t: 'p', x: 'Keep the PDFs you printed from, in one folder, named consistently — `chicken-lemon-orzo.pdf` rather than `print_1.pdf`. Then [merge them into a single PDF](/blog/merge-pdf/how-to-merge-pdf-files) once or twice a year as a backup. If the binder gets ruined, you reprint it in an afternoon instead of hunting for forty pages again.' },
+        { t: 'p', x: 'Keep the PDFs you printed from, in one folder, named consistently, `chicken-lemon-orzo.pdf` rather than `print_1.pdf`. Then [merge them into a single PDF](/blog/merge/how-to-merge-pdf-files) once or twice a year as a backup. If the binder gets ruined, you reprint it in an afternoon instead of hunting for forty pages again.' },
         { t: 'cta', tool: 'merge-pdf', x: 'Merge your recipe PDFs into one backup file, in your browser.' },
-        { t: 'p', x: 'For hand-written family recipes, photograph them, [run OCR](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) so the text is searchable, and print a clean typed version for the binder. Keep the original card somewhere dry; the point of the binder is that you stop handling it.' },
+        { t: 'p', x: 'For hand-written family recipes, photograph them, [run OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) so the text is searchable, and print a clean typed version for the binder. Keep the original card somewhere dry; the point of the binder is that you stop handling it.' },
         { t: 'note', x: 'The binder only works if adding to it is easy. Clean, print, protector, tab, index line. If any step needs more than a minute, recipes stop going in and pile up in browser tabs instead.' },
       ],
       faqs: [
         { q: 'What size should recipe pages be for a binder?', a: 'Full-size Letter or A4 sheets are best for most kitchens: largest text, no cutting, and standard protectors and binders. Choose half-letter or A5 for a compact drawer binder, and 4x6 or 5x7 cards only if you already have a card box.' },
         { q: 'Are sheet protectors or laminating better for recipes?', a: 'Sheet protectors for almost everything, because pages can be swapped, corrected and written on. Laminate only the ten or so recipes you cook every month, plus reference sheets such as roasting times and conversions.' },
         { q: 'How big a binder do I need for a recipe collection?', a: 'A two-inch D-ring binder holds roughly 150 to 175 pages in protectors. Start with that size even for a small collection, since a binder that is already full is one you stop adding recipes to.' },
-        { q: 'How should I organise a recipe binder?', a: 'Divide it by how you actually decide what to cook — weeknight, weekend, baking, sides, guests, batch cooking — rather than by cookbook categories. Add a "tried once" section as a holding pen, and keep a printed index at the front.' },
+        { q: 'How should I organise a recipe binder?', a: 'Divide it by how you actually decide what to cook, weeknight, weekend, baking, sides, guests, batch cooking, rather than by cookbook categories. Add a "tried once" section as a holding pen, and keep a printed index at the front.' },
         { q: 'Should I print recipes double-sided to save paper?', a: 'No. Turning a page with sticky hands mid-method is how sheets get ruined, and double-sided pages cannot be reordered. Keep one recipe per side and use the blank reverse for notes on what you changed.' },
       ],
       relatedTools: ['merge-pdf', 'html-to-pdf'],
@@ -287,7 +287,7 @@ export const printRecipes: Cluster = {
     },
     {
       slug: 'meal-plan-printables',
-      cluster: 'print-recipes',
+      cluster: 'recipes',
       title: 'How to make a weekly meal plan and shopping list you can print',
       metaTitle: 'Make a Printable Weekly Meal Plan',
       metaDescription:
@@ -304,14 +304,14 @@ export const printRecipes: Cluster = {
       body: [
         { t: 'p', x: 'A meal plan on a phone gets checked in the supermarket and forgotten in the kitchen. A meal plan on the fridge door gets read by everyone in the house, including the person who was going to ask what is for dinner. That is the whole case for printing it.' },
         { t: 'h2', x: 'What the page needs' },
-        { t: 'p', x: 'One page, landscape, seven columns. Rows only for the meals you genuinely plan — most households plan dinners and nothing else, and a template with three meals a day just produces 14 empty boxes and a feeling of failure.' },
+        { t: 'p', x: 'One page, landscape, seven columns. Rows only for the meals you genuinely plan, most households plan dinners and nothing else, and a template with three meals a day just produces 14 empty boxes and a feeling of failure.' },
         {
           t: 'table',
           caption: 'A weekly plan layout that fits one landscape sheet.',
           head: ['Row', 'Purpose', 'Height'],
           rows: [
             ['Day headers', 'Mon to Sun, with the date', 'Narrow'],
-            ['Dinner', 'The meal you actually plan', 'Tall — two lines of writing'],
+            ['Dinner', 'The meal you actually plan', 'Tall, two lines of writing'],
             ['Lunch or leftovers', 'Often just an arrow from the night before', 'Short'],
             ['Prep ahead', 'Defrost, soak, marinate, take out of the freezer', 'Short'],
             ['Notes', 'Who is out, who is cooking, what needs using up', 'Short'],
@@ -336,13 +336,13 @@ export const printRecipes: Cluster = {
         {
           t: 'ul',
           items: [
-            '**Fruit and vegetables** — usually the first aisle, and the one you buy most of.',
-            '**Meat, fish and chilled** — including dairy and eggs.',
+            '**Fruit and vegetables**, usually the first aisle, and the one you buy most of.',
+            '**Meat, fish and chilled**, including dairy and eggs.',
             '**Bakery**',
-            '**Cupboard** — tins, dried goods, oils, spices, pasta and rice.',
-            '**Frozen** — deliberately near the end so nothing thaws in the trolley.',
-            '**Household and other** — everything that is not food.',
-            '**Already have** — a short column to tick before leaving, which is what stops the fourth jar of cumin.',
+            '**Cupboard**, tins, dried goods, oils, spices, pasta and rice.',
+            '**Frozen**, deliberately near the end so nothing thaws in the trolley.',
+            '**Household and other**, everything that is not food.',
+            '**Already have**, a short column to tick before leaving, which is what stops the fourth jar of cumin.',
           ],
         },
         { t: 'tip', x: 'Leave four blank lines under each heading. A list with no space to add anything gets abandoned the first time someone remembers they need bin bags.' },
@@ -351,7 +351,7 @@ export const printRecipes: Cluster = {
         {
           t: 'steps',
           items: [
-            { h: 'Clean each recipe', x: 'Run each one through the [web page printer](/print), delete the story and the photos, and download it as a PDF. Method in [printing a recipe without the ads](/blog/print-recipes/print-recipe-without-ads).' },
+            { h: 'Clean each recipe', x: 'Run each one through the [web page printer](/print), delete the story and the photos, and download it as a PDF. Method in [printing a recipe without the ads](/blog/recipes/print-recipe-without-ads).' },
             { h: 'Name the files by day', x: '`mon-chicken-orzo.pdf`, `tue-dal.pdf`, and so on. The names decide the order in the next step, so this is worth thirty seconds.' },
             { h: 'Merge them behind the plan', x: 'Open [Merge PDF](/tools/merge-pdf), add the plan first and then the recipes in order, and download the combined file.' },
             { h: 'Number the pages', x: 'Run the merged file through [Page numbers](/tools/page-numbers) so a dropped stack goes back together correctly.' },
@@ -371,12 +371,12 @@ export const printRecipes: Cluster = {
         },
         { t: 'p', x: 'Weeks that worked are the most valuable thing you produce. Note on the fridge copy what got eaten and what did not, and keep the ones that scored well. After a couple of months you are picking a plan rather than writing one, which is where the time saving actually comes from.' },
         { t: 'note', x: 'Print the plan on Sunday morning, not Sunday night. Anything you find on Sunday night that needs defrosting is already a Monday problem.' },
-        { t: 'p', x: 'If the plan and recipe pack grows past a dozen pages, [compress the PDF](/blog/compress-pdf/how-to-compress-a-pdf) before emailing it to whoever else is cooking, and file the printed version in the [recipe binder](/blog/print-recipes/make-a-recipe-binder) so it is easy to repeat.' },
+        { t: 'p', x: 'If the plan and recipe pack grows past a dozen pages, [compress the PDF](/blog/compress/how-to-compress-a-pdf) before emailing it to whoever else is cooking, and file the printed version in the [recipe binder](/blog/recipes/make-a-recipe-binder) so it is easy to repeat.' },
       ],
       faqs: [
         { q: 'What should a printable weekly meal plan include?', a: 'Seven day columns and rows for the meals you actually plan, plus a prep-ahead row for anything that needs defrosting or soaking, and a notes row for who is out or cooking. Keep it to one landscape page so it fits a fridge door.' },
         { q: 'How do I combine several recipes into one PDF?', a: 'Save each cleaned recipe as its own PDF, name the files by day so they sort correctly, then merge them in order with a browser-based merge tool. Add page numbers afterwards so a dropped stack goes back together.' },
-        { q: 'How should I organise a printed shopping list?', a: 'Group it by shop area — fruit and vegetables, chilled, bakery, cupboard, frozen, household — rather than by recipe. Put frozen last so nothing thaws, and leave four blank lines under each heading for additions.' },
+        { q: 'How should I organise a printed shopping list?', a: 'Group it by shop area, fruit and vegetables, chilled, bakery, cupboard, frozen, household, rather than by recipe. Put frozen last so nothing thaws, and leave four blank lines under each heading for additions.' },
         { q: 'Should I print one copy of the meal plan or two?', a: 'Two. The fridge copy stays as the reference all week, and the pocket copy goes to the shop and gets crossed off and thrown away. Printing both at once takes no longer than printing one.' },
         { q: 'How do I fit a weekly planner on one page?', a: 'Use landscape orientation and set your spreadsheet to fit to one page, then keep the rows to the meals you genuinely plan. Dinner cells need about 2 cm of height so there is room to write a dish name and a note.' },
       ],

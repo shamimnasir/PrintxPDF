@@ -42,7 +42,7 @@ export default function WebClipPage() {
   const history = store.getHistory()
 
   useSeo({
-    title: article ? `${article.title} — PrintxPDF` : 'Print Any Web Page Without Ads',
+    title: article ? `${article.title}, PrintxPDF` : 'Print Any Web Page Without Ads',
     description: article
       ? `A clean, printable version of ${article.title}.`.slice(0, 158)
       : 'Paste a URL and get a clean, printable version of any web page. Ads, menus and comment walls removed. Print, save as PDF or email it, free and with no upload.',
@@ -74,7 +74,7 @@ export default function WebClipPage() {
       if (clean.wordCount < 30) throw new Error('We fetched the page but could not find readable article text in it. Try pasting the content instead.')
       store.pushHistory(page.finalUrl, clean.title)
       setArticle(clean)
-      document.title = `${clean.title} — PrintxPDF`
+      document.title = `${clean.title} | PrintxPDF`
     } catch (e) {
       if (stale()) return
       setError((e as Error).message)
@@ -95,7 +95,7 @@ export default function WebClipPage() {
       if (a) {
         setArticle(a)
         setError(null)
-        document.title = `${a.title} — PrintxPDF`
+        document.title = `${a.title} | PrintxPDF`
       }
       return
     }
@@ -104,7 +104,7 @@ export default function WebClipPage() {
       load(u)
     } else {
       setArticle(null)
-      document.title = 'Print any web page — PrintxPDF'
+      document.title = 'Print any web page | PrintxPDF'
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params])
@@ -145,7 +145,7 @@ export default function WebClipPage() {
           <span className="acid-mark">Print just the article.</span>
         </h1>
         <p className="lead">
-          The page is reduced to its article inside your browser — no ads, menus, pop-ups or comment threads. Click
+          The page is reduced to its article inside your browser, no ads, menus, pop-ups or comment threads. Click
           anything else to remove it, then print it, save it as a PDF or PNG, or email it to yourself.
         </p>
       </div>

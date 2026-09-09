@@ -1,7 +1,7 @@
 import type { Cluster } from '../types'
 
 export const signPdf: Cluster = {
-  slug: 'sign-pdf',
+  slug: 'sign',
   name: 'Signing PDFs',
   title: 'How to sign a PDF: signatures, forms and what actually counts',
   metaTitle: 'Sign a PDF Free: Signatures, Forms and the Law',
@@ -18,7 +18,7 @@ export const signPdf: Cluster = {
   posts: [
     {
       slug: 'how-to-sign-a-pdf',
-      cluster: 'sign-pdf',
+      cluster: 'sign',
       title: 'How to sign a PDF without printing it',
       metaTitle: 'How to Sign a PDF Without Printing It',
       metaDescription:
@@ -47,7 +47,7 @@ export const signPdf: Cluster = {
             ['Upload a PNG of your real signature', 'Identical to ink on paper', 'Contracts, offers, anything a client will see'],
           ],
         },
-        { t: 'p', x: 'The uploaded PNG is the one worth setting up once. It takes five minutes, it works in every tool afterwards, and it is the only option that looks like you actually signed. [How to create a clean signature image](/blog/sign-pdf/create-a-signature-image) covers the whole process, including getting the background properly transparent.' },
+        { t: 'p', x: 'The uploaded PNG is the one worth setting up once. It takes five minutes, it works in every tool afterwards, and it is the only option that looks like you actually signed. [How to create a clean signature image](/blog/sign/create-a-signature-image) covers the whole process, including getting the background properly transparent.' },
         { t: 'h2', x: 'Signing the document' },
         {
           t: 'steps',
@@ -63,14 +63,14 @@ export const signPdf: Cluster = {
         { t: 'cta', tool: 'sign-pdf', x: 'Sign a PDF in your browser. Draw, type or upload a signature, then flatten and download.' },
         { t: 'h2', x: 'Why flattening matters' },
         { t: 'p', x: 'A signature added as an annotation is a separate object floating over the page. Anyone who opens the file in Acrobat, Preview or even a browser can click it, drag it somewhere else, or press Delete. Flattening bakes it into the page content stream, at which point it behaves exactly like ink: still visible, no longer an object.' },
-        { t: 'p', x: 'The same applies to filled-in form fields. An unflattened form is a live form, and the next person to open it can retype your answers. See [filling in and signing a PDF form](/blog/sign-pdf/fill-and-sign-a-form) for how the two interact.' },
+        { t: 'p', x: 'The same applies to filled-in form fields. An unflattened form is a live form, and the next person to open it can retype your answers. See [filling in and signing a PDF form](/blog/sign/fill-and-sign-a-form) for how the two interact.' },
         { t: 'warn', x: 'Flattening is one-way. Once a form is flattened the fields are gone and the answers cannot be edited, so keep an unflattened copy if you might need to revise it. Flatten the copy you send, not the copy you keep.' },
         { t: 'h2', x: 'Where the signature line is not obvious' },
         { t: 'p', x: 'Some documents arrive as a flat scan with no fields and no clear line, or as a photograph of a page. Two fixes:' },
         {
           t: 'ul',
           items: [
-            'If it is a **scan of a printed form**, place the signature freely over the image. There are no fields to fill, so a text box is the only way to add typed information. Consider [running OCR](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf) first so the recipient can at least search the document.',
+            'If it is a **scan of a printed form**, place the signature freely over the image. There are no fields to fill, so a text box is the only way to add typed information. Consider [running OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) first so the recipient can at least search the document.',
             'If it arrived as **JPG or HEIC photos** rather than a PDF, [convert the images to a PDF](/tools/jpg-to-pdf) first so the whole thing is one file and the pages stay in order.',
           ],
         },
@@ -88,10 +88,10 @@ export const signPdf: Cluster = {
           ],
         },
         { t: 'h2', x: 'Is this actually valid?' },
-        { t: 'p', x: 'In the United States, the ESIGN Act and state adoptions of UETA give an electronic signature the same legal effect as ink for most commercial and consumer agreements. In the European Union, eIDAS says a signature cannot be denied legal effect merely because it is electronic. There are real exceptions — wills, some property transfers, certain court filings — and higher-assurance signature types exist for high-value work. [Are electronic signatures legally binding?](/blog/sign-pdf/electronic-signature-legally-binding) covers the detail.' },
-        { t: 'note', x: 'For most everyday documents — a rental application, a school form, a supplier agreement, an offer letter — a placed signature image plus a date is exactly what the other side expects and will accept. Save the heavier certificate-based tooling for the cases that genuinely need it.' },
+        { t: 'p', x: 'In the United States, the ESIGN Act and state adoptions of UETA give an electronic signature the same legal effect as ink for most commercial and consumer agreements. In the European Union, eIDAS says a signature cannot be denied legal effect merely because it is electronic. There are real exceptions, wills, some property transfers, certain court filings, and higher-assurance signature types exist for high-value work. [Are electronic signatures legally binding?](/blog/sign/electronic-signature-legally-binding) covers the detail.' },
+        { t: 'note', x: 'For most everyday documents, a rental application, a school form, a supplier agreement, an offer letter, a placed signature image plus a date is exactly what the other side expects and will accept. Save the heavier certificate-based tooling for the cases that genuinely need it.' },
         { t: 'h2', x: 'After signing' },
-        { t: 'p', x: 'Two habits worth keeping. First, check the file size: a signed contract should still be a few hundred kilobytes, and if it has ballooned to 15 MB, something re-rasterised the pages and it is worth compressing before emailing. Second, check what the file says about you — PDF metadata carries author names, software versions and edit timestamps that you may not want to hand over.' },
+        { t: 'p', x: 'Two habits worth keeping. First, check the file size: a signed contract should still be a few hundred kilobytes, and if it has ballooned to 15 MB, something re-rasterised the pages and it is worth compressing before emailing. Second, check what the file says about you, PDF metadata carries author names, software versions and edit timestamps that you may not want to hand over.' },
       ],
       faqs: [
         { q: 'How do I sign a PDF without Adobe Acrobat?', a: 'Use a browser-based signing tool, Preview on macOS, or Markup on iOS. All three let you place a signature image on the page and export a signed file, with no Acrobat licence and no account required.' },
@@ -105,7 +105,7 @@ export const signPdf: Cluster = {
     },
     {
       slug: 'electronic-signature-legally-binding',
-      cluster: 'sign-pdf',
+      cluster: 'sign',
       title: 'Are electronic signatures legally binding?',
       metaTitle: 'Are Electronic Signatures Legally Binding?',
       metaDescription:
@@ -127,11 +127,11 @@ export const signPdf: Cluster = {
         {
           t: 'ul',
           items: [
-            '**ESIGN Act** — the Electronic Signatures in Global and National Commerce Act, signed in 2000, is federal law. It provides that a signature, contract or record may not be denied legal effect solely because it is in electronic form, in transactions affecting interstate or foreign commerce.',
-            '**UETA** — the Uniform Electronic Transactions Act, drafted by the Uniform Law Commission in 1999, is a model law that states adopt individually. It has been enacted in 49 states plus the District of Columbia, Puerto Rico and the US Virgin Islands. New York is the exception and instead has its own Electronic Signatures and Records Act.',
+            '**ESIGN Act**, the Electronic Signatures in Global and National Commerce Act, signed in 2000, is federal law. It provides that a signature, contract or record may not be denied legal effect solely because it is in electronic form, in transactions affecting interstate or foreign commerce.',
+            '**UETA**, the Uniform Electronic Transactions Act, drafted by the Uniform Law Commission in 1999, is a model law that states adopt individually. It has been enacted in 49 states plus the District of Columbia, Puerto Rico and the US Virgin Islands. New York is the exception and instead has its own Electronic Signatures and Records Act.',
           ],
         },
-        { t: 'p', x: 'ESIGN defines an electronic signature broadly: an electronic sound, symbol or process attached to or logically associated with a record and executed or adopted by a person with the intent to sign it. That covers a typed name, a drawn mark, a clicked "I agree" button and a certificate-based digital signature alike. The mechanism is not what makes it valid — intent is.' },
+        { t: 'p', x: 'ESIGN defines an electronic signature broadly: an electronic sound, symbol or process attached to or logically associated with a record and executed or adopted by a person with the intent to sign it. That covers a typed name, a drawn mark, a clicked "I agree" button and a certificate-based digital signature alike. The mechanism is not what makes it valid, intent is.' },
         { t: 'h3', x: 'What ESIGN does not cover' },
         { t: 'p', x: 'The statute carves out specific categories, broadly those where a physical original or a witness has traditionally been required:' },
         {
@@ -190,7 +190,7 @@ export const signPdf: Cluster = {
             ['Anything regulated (health, finance, pharma)', 'Check the sector rule first', 'Qualified signature where required'],
           ],
         },
-        { t: 'p', x: 'For the everyday cases in the first two rows, [signing the PDF in your browser](/blog/sign-pdf/how-to-sign-a-pdf), [filling the fields properly](/blog/sign-pdf/fill-and-sign-a-form) and [flattening](/tools/flatten-pdf) is the whole job. Keep the flattened file and the covering email, and you have a reasonable record.' },
+        { t: 'p', x: 'For the everyday cases in the first two rows, [signing the PDF in your browser](/blog/sign/how-to-sign-a-pdf), [filling the fields properly](/blog/sign/fill-and-sign-a-form) and [flattening](/tools/flatten-pdf) is the whole job. Keep the flattened file and the covering email, and you have a reasonable record.' },
         { t: 'cta', tool: 'sign-pdf', x: 'Sign and flatten a document in your browser, with nothing uploaded to a server.' },
       ],
       faqs: [
@@ -205,7 +205,7 @@ export const signPdf: Cluster = {
     },
     {
       slug: 'create-a-signature-image',
-      cluster: 'sign-pdf',
+      cluster: 'sign',
       title: 'How to create a clean signature image with a transparent background',
       metaTitle: 'Make a Transparent Signature PNG in 5 Minutes',
       metaDescription:
@@ -235,7 +235,7 @@ export const signPdf: Cluster = {
             { h: 'Export as PNG', x: 'Save as PNG-24 with alpha. Never JPG, which has no transparency and will reintroduce a white box.' },
           ],
         },
-        { t: 'warn', x: 'Do not save the finished signature as a JPG. JPEG has no alpha channel, so the transparency is discarded and the file comes back with a solid white rectangle around your signature — plus compression halos along every stroke.' },
+        { t: 'warn', x: 'Do not save the finished signature as a JPG. JPEG has no alpha channel, so the transparency is discarded and the file comes back with a solid white rectangle around your signature, plus compression halos along every stroke.' },
         { t: 'h2', x: 'How big should it be?' },
         { t: 'p', x: 'Size it for the worst case, which is printing. A signature occupies roughly 2 to 3 inches on a printed form, and print wants 300 pixels per inch, so 900 to 1000 pixels wide is the target. Storing it larger costs nothing meaningful and lets you scale down cleanly; storing it at 200 px means it will look soft the first time someone prints the contract.' },
         {
@@ -249,7 +249,7 @@ export const signPdf: Cluster = {
             ['Too small', 'Under 300', 'Visibly pixelated as soon as it is printed'],
           ],
         },
-        { t: 'p', x: 'The same 300 DPI logic applies to everything else you put on a page — see [what resolution you need for printing](/blog/pdf-images/best-image-format-for-print) if you want the arithmetic.' },
+        { t: 'p', x: 'The same 300 DPI logic applies to everything else you put on a page, see [what resolution you need for printing](/blog/images/best-image-format-for-print) if you want the arithmetic.' },
         { t: 'h2', x: 'Capture methods compared' },
         {
           t: 'table',
@@ -269,8 +269,8 @@ export const signPdf: Cluster = {
         { t: 'p', x: 'The real test is to place it on a document with a coloured or shaded background. Any leftover halo shows up immediately there, and nowhere else.' },
         { t: 'cta', tool: 'sign-pdf', x: 'Upload your finished PNG once and reuse it on every document you sign.' },
         { t: 'h2', x: 'Storing it safely' },
-        { t: 'warn', x: 'A signature PNG is a reusable copy of your signature. Anyone with the file can place it on any document. Keep it in an encrypted folder or a password manager rather than a shared drive, do not email it to anyone, and do not post a signed document publicly at full resolution — a signature is easy to extract from a published PDF, as [extracting images from a PDF](/blog/pdf-images/extract-images-from-pdf) shows.' },
-        { t: 'p', x: 'For the same reason, [flatten documents before sending them](/blog/sign-pdf/how-to-sign-a-pdf). A flattened signature is much harder to lift cleanly than an annotation object sitting in its own layer.' },
+        { t: 'warn', x: 'A signature PNG is a reusable copy of your signature. Anyone with the file can place it on any document. Keep it in an encrypted folder or a password manager rather than a shared drive, do not email it to anyone, and do not post a signed document publicly at full resolution, a signature is easy to extract from a published PDF, as [extracting images from a PDF](/blog/images/extract-images-from-pdf) shows.' },
+        { t: 'p', x: 'For the same reason, [flatten documents before sending them](/blog/sign/how-to-sign-a-pdf). A flattened signature is much harder to lift cleanly than an annotation object sitting in its own layer.' },
       ],
       faqs: [
         { q: 'How do I remove the white background from a signature?', a: 'Raise the contrast until the paper is pure white, then delete white to alpha: Color to Alpha in GIMP, Select → Color Range in Photoshop, or Instant Alpha in macOS Preview. Save the result as PNG-24.' },
@@ -284,7 +284,7 @@ export const signPdf: Cluster = {
     },
     {
       slug: 'fill-and-sign-a-form',
-      cluster: 'sign-pdf',
+      cluster: 'sign',
       title: 'How to fill in and sign a PDF form',
       metaTitle: 'How to Fill In and Sign a PDF Form',
       metaDescription:
@@ -329,11 +329,11 @@ export const signPdf: Cluster = {
         {
           t: 'steps',
           items: [
-            { h: 'Open it in a real PDF viewer', x: 'Use the [browser PDF reader](/tools/pdf-reader) or a desktop viewer. Some previewers — inline mail attachments in particular — render the page but ignore the form layer entirely.' },
+            { h: 'Open it in a real PDF viewer', x: 'Use the [browser PDF reader](/tools/pdf-reader) or a desktop viewer. Some previewers, inline mail attachments in particular, render the page but ignore the form layer entirely.' },
             { h: 'Tab through every field first', x: 'Before typing anything, press Tab repeatedly to see how many fields exist and where they are. Forms routinely hide fields in the margins or on a second page.' },
             { h: 'Fill in the text fields', x: 'Type normally. If text disappears as you type, the field has a character limit or a fixed font size set by the author and your answer is too long for the box.' },
-            { h: 'Handle checkboxes and radio buttons', x: 'Click a checkbox to toggle it. Radio buttons in one group are mutually exclusive — selecting one clears the rest, which is intended behaviour, not a bug.' },
-            { h: 'Add the signature', x: 'If there is a dedicated signature field, click it. If not, place a signature image on the line as described in [how to sign a PDF](/blog/sign-pdf/how-to-sign-a-pdf).' },
+            { h: 'Handle checkboxes and radio buttons', x: 'Click a checkbox to toggle it. Radio buttons in one group are mutually exclusive, selecting one clears the rest, which is intended behaviour, not a bug.' },
+            { h: 'Add the signature', x: 'If there is a dedicated signature field, click it. If not, place a signature image on the line as described in [how to sign a PDF](/blog/sign/how-to-sign-a-pdf).' },
             { h: 'Flatten before sending', x: 'Export with **Flatten** enabled so the answers become part of the page instead of remaining editable form values.' },
           ],
         },
@@ -351,7 +351,7 @@ export const signPdf: Cluster = {
             'Work down the page in order so you do not miss a blank, then zoom out and check the whole sheet before exporting.',
           ],
         },
-        { t: 'tip', x: 'If the scan is crooked, straighten it before you start. Text boxes aligned to a rotated form look wrong at every zoom level, and the same deskewing improves OCR — see [getting better OCR results](/blog/ocr-scanned-documents/improve-ocr-accuracy).' },
+        { t: 'tip', x: 'If the scan is crooked, straighten it before you start. Text boxes aligned to a rotated form look wrong at every zoom level, and the same deskewing improves OCR, see [getting better OCR results](/blog/ocr/improve-ocr-accuracy).' },
         { t: 'h2', x: 'Common problems' },
         {
           t: 'table',
@@ -368,7 +368,7 @@ export const signPdf: Cluster = {
         { t: 'h2', x: 'Flattening, and why every form needs it' },
         { t: 'p', x: 'Form values live in a separate layer from the page. Until you flatten, they are data attached to fields, which means three things can go wrong: another viewer may not render them, the recipient can edit them, and a printer may print the blank form instead of your answers. Flattening writes the values into the page content and removes the fields, ending all three problems at once.' },
         { t: 'p', x: 'Run the [flatten tool](/tools/flatten-pdf) on the finished file if your form filler does not offer it directly. Keep an unflattened copy for yourself in case you need to revise an answer, because the operation cannot be undone.' },
-        { t: 'note', x: 'A flattened form is still not the same as a locked document. Flattening stops casual editing of fields and annotations; it does not prevent someone from editing the page content in a full PDF editor. For genuine tamper evidence you need a certificate-based digital signature — see [are electronic signatures legally binding](/blog/sign-pdf/electronic-signature-legally-binding).' },
+        { t: 'note', x: 'A flattened form is still not the same as a locked document. Flattening stops casual editing of fields and annotations; it does not prevent someone from editing the page content in a full PDF editor. For genuine tamper evidence you need a certificate-based digital signature, see [are electronic signatures legally binding](/blog/sign/electronic-signature-legally-binding).' },
         { t: 'h2', x: 'Before you send it back' },
         { t: 'p', x: 'Check the page count, confirm every page that needed initials has them, and open the exported file fresh to see what the recipient will see. If the form was a scan and the recipient may need to search it, [running OCR](/tools/ocr-pdf) first is a courtesy that costs nothing.' },
       ],

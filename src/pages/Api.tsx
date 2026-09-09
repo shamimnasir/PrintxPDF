@@ -33,7 +33,7 @@ const ERRORS: [string, string][] = [
 
 export default function Api() {
   useSeo({
-    title: 'PDF Conversion API — PowerPoint, EPUB and MOBI to PDF',
+    title: 'PDF Conversion API | PowerPoint, EPUB and MOBI to PDF',
     description: 'An HTTPS API that converts PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF. Send a file, get a file back. 5 free conversions a month; the API plan includes 5,000.',
     path: '/api',
     keywords: ['pptx to pdf api', 'pdf to pptx api', 'epub to pdf api', 'mobi to pdf api', 'document conversion api'],
@@ -49,7 +49,7 @@ export default function Api() {
         Convert files, <span className="acid-mark">programmatically.</span>
       </h1>
       <p className="lead">
-        A handful of jobs need a real engine — Office layout, ebook rendering, PDF encryption — so they run on our server instead of in the browser. Send a file with one
+        A handful of jobs need a real engine, Office layout, ebook rendering, PDF encryption, so they run on our server instead of in the browser. Send a file with one
         multipart request and get the converted file back. Files are processed in an isolated container and deleted the moment
         the response is sent.
       </p>

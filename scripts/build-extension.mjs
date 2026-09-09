@@ -292,5 +292,5 @@ copyFileSync(outFile, SITE_COPY)
 
 console.log(`✓ packaged ${files.length} files`)
 for (const file of files) console.log(`    ${file.name} (${file.data.length} bytes)`)
-console.log(`✓ ${outFile} — ${archive.length} bytes`)
-console.log(`✓ ${SITE_COPY} — ${archive.length} bytes`)
+console.log(`✓ ${outFile}, ${archive.length} bytes`)
+console.log(`✓ ${SITE_COPY}, ${archive.length} bytes`)
