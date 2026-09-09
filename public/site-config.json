@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "site": {
     "name": "PrintxPDF",
     "tagline": "Cut the clutter. Own your PDFs.",
@@ -37,14 +37,27 @@
     "fileCardText": "Compress, sign, convert, merge, organize",
     "urlCardTitle": "Print or PDF a web page",
     "urlCardText": "Paste a URL, we strip the ads and clutter",
-    "marquee": ["Northwind Post", "Kestrel Labs", "Harbor Health", "Meridian U", "Tabula Legal", "Orbit Studio", "Bluebell Schools", "Fjord Bank"],
+    "marquee": [
+      "Northwind Post",
+      "Kestrel Labs",
+      "Harbor Health",
+      "Meridian U",
+      "Tabula Legal",
+      "Orbit Studio",
+      "Bluebell Schools",
+      "Fjord Bank"
+    ],
     "showMarquee": true,
     "showHowItWorks": true,
     "showProducts": true,
     "showPrivacy": true
   },
   "pages": {},
-  "tools": { "hidden": [], "featured": [], "overrides": {} },
+  "tools": {
+    "hidden": [],
+    "featured": [],
+    "overrides": {}
+  },
   "seo": {
     "titleTemplate": "%s — PrintxPDF",
     "defaultDescription": "Print web pages without ads and run every common PDF job free in your browser.",
@@ -73,6 +86,17 @@
     "localStats": true,
     "respectDnt": true
   },
-  "code": { "headHtml": "", "bodyEndHtml": "", "css": "", "js": "" },
-  "content": { "hidden": [], "overrides": {} }
+  "code": {
+    "headHtml": "",
+    "bodyEndHtml": "",
+    "css": "",
+    "js": ""
+  },
+  "content": {
+    "hidden": [],
+    "overrides": {}
+  },
+  "billing": {
+    "portalLoginUrl": "https://billing.stripe.com/p/login/test_7sY6oG0XFczs4LedpidnW00"
+  }
 }

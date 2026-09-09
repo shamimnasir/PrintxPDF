@@ -16,10 +16,16 @@
 - Known limits: PPTX/EPUB/MOBI tools are demo UI (need a server); public fetch proxies are rate-limited (worker/ has a self-host fix)
 
 # Phase 2 (2026-09-10): domain, founder, presets, server converters, Stripe
-- [ ] A. printxpdf.com → Vercel: domains add, Cloudflare DNS (A/CNAME, DNS-only), vercel.json redirects, env vars, URL defaults, verify
+- [x] A. printxpdf.com → Vercel: domains add, Cloudflare DNS (A/CNAME, DNS-only), vercel.json redirects, env vars, URL defaults, verify
 - [x] B. Author/founder: config.author, Person schema, /author page, bylines (post/cluster/blog/about/footer), llms.txt, prerender, test
 - [x] C. Design presets: token refactor, [data-design] blocks/paper/studio, presets.ts, admin Design card, boot + fonts, prerender shell, screenshots
 - [ ] D. Worker+container: worker/ scaffold, token/stripe/billing/quota/convert/container/fetch, Dockerfile+server.py, Colima build, smoke test, KV, deploy, secrets, curl verify
 - [ ] E. Billing client + server tools: api.ts, store, Pricing, Account, Header, toolsMeta 'server', GenericTool dispatch, ToolPage, tests; Stripe test products + portal
 - [x] F. Copy/legal cutover: demo strings, Api.tsx docs, Legal billing/privacy, WordPress/Extensions, README/.env.example, prerender/gen-seo bodies
 - [ ] G. Audit: tsc, oxlint, vitest, build, crawler view, browser QA; todo review + lessons; commit/push/deploy
+
+## Runtime facts (2026-09-10)
+- Stripe test (sandbox) products: Pro = prod_VEKYalQF55jvfx / PRICE_PRO=price_1UDrt4CCxH1bzQKtZOK1oBFu ($5/mo). API = prod_VEKaLe2wqVwKem / PRICE_API=price_1UDrvfCCxH1bzQKtspPBVy0f ($29/mo)
+- Cloudflare DNS: A @ 76.76.21.21, CNAME www cname.vercel-dns.com (both DNS only). Vercel: printxpdf.com verified; www cert pending at time of writing.
+- Vercel env (production): VITE_SITE_URL, VITE_API_BASE=https://api.printxpdf.com, VITE_FETCH_PROXY=https://api.printxpdf.com/fetch
+- Stripe TEST customer portal: default config saved (cancel at period end, switch between Pro/API, return URL https://printxpdf.com/account); no-code login link https://billing.stripe.com/p/login/test_7sY6oG0XFczs4LedpidnW00 (replace with the live link at go-live; stored in public/site-config.json billing.portalLoginUrl)

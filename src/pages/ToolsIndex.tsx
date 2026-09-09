@@ -36,7 +36,7 @@ export default function ToolsIndex() {
         {TOOLS.length} tools · {TOOLS.filter((t) => t.status === 'real').length} fully in-browser
       </span>
       <h1>All PDF tools</h1>
-      <p className="lead">Every tool tells you up front whether it runs in your browser, is best-effort, or needs a server we don't have.</p>
+      <p className="lead">Every tool tells you up front whether it runs in your browser, is best-effort, or runs on our server — and what happens to your file when it does.</p>
       <input className="input" style={{ maxWidth: 480, marginBottom: '2rem' }} placeholder="Search tools…" value={q} onChange={(e) => setQ(e.target.value)} />
 
       {cats.map((c) => {

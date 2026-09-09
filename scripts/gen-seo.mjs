@@ -119,7 +119,7 @@ Sitemap: ${SITE}/sitemap.xml
     cfg?.seo?.llmsTxt?.trim() ||
     `# PrintxPDF
 
-> Free browser-based tools for printing web pages without ads and for working with PDF files. Every tool runs client-side in the visitor's browser using pdf-lib, pdf.js and Tesseract.js — files are never uploaded to a server.
+> Free browser-based tools for printing web pages without ads and for working with PDF files. Every browser tool runs client-side using pdf-lib, pdf.js and Tesseract.js, so files stay on the visitor's machine; four conversions (PowerPoint ↔ PDF, EPUB and MOBI → PDF) run on PrintxPDF's own server at api.printxpdf.com and delete the file the moment they finish.
 
 PrintxPDF has two halves: a web-page cleaner that extracts an article with Mozilla Readability and lets you delete anything left before printing or saving as PDF, and ${TOOLS.length} PDF tools covering merge, split, organise, compress, OCR, sign, watermark, convert and QR generation. Four conversions that need a real layout engine (PowerPoint ↔ PDF, EPUB and MOBI → PDF) run on PrintxPDF's own server at api.printxpdf.com: the file is uploaded over HTTPS, converted and deleted immediately. Free for 5 files a month; more on the Pro ($5/month) and API ($29/month) plans.
 

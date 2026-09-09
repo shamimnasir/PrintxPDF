@@ -209,8 +209,9 @@ export default function Home() {
             </div>
             <div>
               <p style={{ margin: 0, fontWeight: 600 }}>
-                This site is plain static files. There is no upload endpoint to leak from. Your PDFs are processed in
-                memory by your own browser using pdf-lib, pdf.js and Tesseract. Close the tab and they are gone.
+                Every browser tool processes your PDFs in memory on your own machine using pdf-lib, pdf.js and Tesseract.
+                Close the tab and they are gone. The four server conversions say so on their page, and delete your file
+                the moment they finish.
               </p>
             </div>
           </div>
