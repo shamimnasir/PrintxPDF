@@ -1,7 +1,18 @@
 /** Minimal Stripe client over plain fetch (no SDK). The secret key never leaves this module. */
 import { ApiError } from './http'
 
-const API = 'https://api.stripe.com/v1'
+const API = 'https://api.stripe.com'
+
+/**
+ * Builds a Stripe request URL. Call sites write the path exactly as Stripe's docs do
+ * ('/v1/checkout/sessions'), and a missing or doubled '/v1' is normalised away, so the base
+ * and the path can never disagree — a doubled prefix produced a 404 that only appeared once a
+ * real key was in place, because every earlier test stopped at 'billing not configured'.
+ */
+export function stripeUrl(method: 'GET' | 'POST', path: string, encoded = ''): string {
+  const url = `${API}/v1/${path.replace(/^\/*(?:v1\/)?/, '')}`
+  return method === 'GET' && encoded ? `${url}?${encoded}` : url
+}
 const STRIPE_VERSION = '2026-08-26.dahlia'
 
 export class StripeError extends Error {
@@ -90,7 +101,7 @@ export async function stripe<T>(
 ): Promise<T> {
   const key = requireStripe(env)
   const encoded = formEncode(params)
-  const url = method === 'GET' && encoded ? `${API}${path}?${encoded}` : `${API}${path}`
+  const url = stripeUrl(method, path, encoded)
   const headers: Record<string, string> = {
     authorization: `Bearer ${key}`,
     'stripe-version': STRIPE_VERSION,

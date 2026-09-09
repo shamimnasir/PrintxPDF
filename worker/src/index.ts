@@ -57,7 +57,9 @@ export default {
     } catch (e) {
       if (e instanceof ApiError) return withCors(errorResponse(e), origin)
       if (e instanceof StripeError) {
-        console.error('stripe error', e.status, e.code)
+        // Stripe's own message names the offending resource ('No such price: …'), which is the
+        // only way to tell a mode mismatch from a permissions gap. It never contains the key.
+        console.error('stripe error', e.status, e.code, e.message, 'keyMode=', env.STRIPE_SECRET_KEY?.includes('_live_') ? 'live' : 'test')
         return withCors(json({ error: 'Payment provider error, try again shortly', code: 'stripe_error' }, 502), origin)
       }
       console.error('unhandled error', e instanceof Error ? (e.stack ?? e.message) : String(e))
