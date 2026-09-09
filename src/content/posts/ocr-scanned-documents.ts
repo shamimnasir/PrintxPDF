@@ -45,7 +45,7 @@ export const ocrScans: Cluster = {
             { h: 'Open the file', x: 'Drop the scanned PDF onto the [OCR tool](/tools/ocr-pdf). Recognition runs locally in your browser, which matters because scans are usually the most sensitive documents anyone owns.' },
             { h: 'Choose the language', x: 'Pick the language the document is written in. This is the single biggest lever on accuracy — the recogniser uses the language model to resolve ambiguous shapes. Select two languages only if the document genuinely mixes them.' },
             { h: 'Let it download the language pack', x: 'Each language is a separate trained data file of roughly 2 to 15 MB, fetched once and then cached. The first run on a new language is slower for this reason.' },
-            { h: 'Wait for the pages', x: 'Budget a few seconds per page on a modern laptop. A 40-page document is a coffee, not a lunch break.' },
+            { h: 'Wait for the pages', x: 'Budget a few seconds per page on a modern laptop. PDFs are capped at the first 30 pages in the browser, so split anything longer with [Split PDF](/tools/split-pdf) and run the parts one at a time.' },
             { h: 'Check a page before you trust it', x: 'Open the result and search for a word you know appears on page one. If it is not found, the language, resolution or orientation is wrong — see [how to get better OCR results](/blog/ocr-scanned-documents/improve-ocr-accuracy).' },
             { h: 'Download', x: 'Export the searchable PDF. Keep the original scan as well until you have confirmed the new file is good.' },
           ],

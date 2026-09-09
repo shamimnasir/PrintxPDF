@@ -1,19 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useVisibleTools } from '../../features/pdf/useTools'
 import { useSiteConfig } from '../../admin/useSiteConfig'
-
-function Wordmark({ name }: { name: string }) {
-  // highlight the "x" when the name contains one (PrintxPDF); otherwise render it plainly
-  const m = name.match(/^(.*?)x(pdf.*)$/i)
-  if (!m) return <span>{name}</span>
-  return (
-    <span>
-      {m[1]}
-      <span className="x">x</span>
-      {m[2]}
-    </span>
-  )
-}
+import { Wordmark, initial } from './Wordmark'
 
 export function Footer() {
   const cfg = useSiteConfig()
@@ -23,7 +11,7 @@ export function Footer() {
       <div className="container grid grid-4">
         <div>
           <div className="logo" style={{ color: 'var(--paper)', marginBottom: '0.75rem' }}>
-            <span className="logo-mark">{cfg.site.name.charAt(0).toUpperCase()}</span>
+            <span className="logo-mark">{initial(cfg.site.name)}</span>
             <Wordmark name={cfg.site.name} />
           </div>
           <p style={{ opacity: 0.8, maxWidth: '30ch' }}>

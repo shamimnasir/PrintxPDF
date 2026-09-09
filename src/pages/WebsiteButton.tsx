@@ -1,8 +1,17 @@
 import { useState } from 'react'
+import { breadcrumbSchema, useSeo } from '../lib/seo'
 import { useToast } from '../components/ui/Toast'
 import { Seg } from '../components/ui/Seg'
 
 export default function WebsiteButton() {
+  useSeo({
+    title: 'Print Button Generator for Any Website',
+    description: 'Generate a copy-paste print and PDF button for any site. Plain HTML with inline styles, so it works in WordPress, Squarespace, Wix, Shopify and static sites.',
+    path: '/website-button',
+    keywords: ['print button html', 'add print button to website', 'print page button code'],
+    schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Print button', path: '/website-button' }])],
+  })
+
   const { toast } = useToast()
   const [label, setLabel] = useState('Print / PDF')
   const [style, setStyle] = useState<'acid' | 'ink' | 'outline'>('acid')

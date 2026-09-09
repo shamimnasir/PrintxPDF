@@ -49,7 +49,7 @@ export const printWebPages: Cluster = {
         },
         { t: 'cta', tool: 'pdf-reader', x: 'Prefer to work with a file you already have? Open it in the free browser PDF reader.' },
         { t: 'h2', x: 'Method 2: Turn on Reader mode first' },
-        { t: 'p', x: 'Every major browser except Chrome ships a reader mode that strips a page down to text and images. Turn it on, then print from inside it.' },
+        { t: 'p', x: 'Most browsers ship a reader mode that strips a page down to text and images. Turn it on, then print from inside it. Chrome is the awkward one: it has a Reading mode side panel, but printing still sends the cluttered page underneath to your printer.' },
         {
           t: 'table',
           caption: 'Reader mode by browser, as of 2026.',
@@ -58,7 +58,7 @@ export const printWebPages: Cluster = {
             ['Safari (macOS/iOS)', 'Click the ☰ icon at the left of the address bar, or press ⌃⌘R', 'Best of the built-in readers. Lets you pick a font and background before printing.'],
             ['Firefox', 'Click the page icon in the address bar, or press F9', 'Reader View has a built-in print button.'],
             ['Microsoft Edge', 'Click "Immersive Reader" in the address bar, or press F9', 'Also offers Read Aloud and picture dictionary.'],
-            ['Google Chrome', 'No stable reader mode', 'Use a printer-friendly tool or an extension instead.'],
+            ['Google Chrome', 'Reading mode in the side panel', 'Reformats for reading but not for printing — Ctrl+P still prints the full page. Use a printer-friendly tool instead.'],
           ],
         },
         { t: 'warn', x: 'Reader mode fails on pages that are not articles: dashboards, order confirmations, forum threads, search results and anything behind a heavy JavaScript app. For those, use Method 1 or Method 3.' },

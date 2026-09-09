@@ -1,14 +1,26 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Area, Card, Color, ListEditor, Num, Text, Toggle } from './fields'
-import { clearHits, discardDraft, exportConfig, getHits, importConfig, setPasscode, updateConfig, type SiteConfig } from './config'
+import { clearHits, discardDraft, exportConfig, getHits, importCarriesCode, importConfig, setPasscode, updateConfig, type SiteConfig } from './config'
+import { inkIsTooLight } from './RuntimeEffects'
 import { useToast } from '../components/ui/Toast'
 import { downloadBlob } from '../lib/download'
 import { TOOLS } from '../features/pdf/toolsMeta'
 import { ALL_POSTS, CLUSTERS } from '../content'
 
 type P = { cfg: SiteConfig }
+
+/** Writes one section of the config. Returns false when the browser refused to store the
+ *  draft, which callers surface so a field never silently snaps back to its old value. */
 const set = <K extends keyof SiteConfig>(k: K, patch: Partial<SiteConfig[K]>) => updateConfig({ [k]: patch } as unknown as Partial<SiteConfig>)
+
+/** Wraps `set` so a storage failure reaches the user instead of being swallowed. */
+function useSet() {
+  const { toast } = useToast()
+  return <K extends keyof SiteConfig>(k: K, patch: Partial<SiteConfig[K]>) => {
+    if (!set(k, patch)) toast('Browser storage is full, so that change was not saved', 'error')
+  }
+}
 
 // ---------------------------------------------------------------- Dashboard
 export function Dashboard({ cfg }: P) {
@@ -89,6 +101,7 @@ export function Dashboard({ cfg }: P) {
 
 // ---------------------------------------------------------------- General
 export function General({ cfg }: P) {
+  const set = useSet()
   return (
     <>
       <Card title="Site identity" desc="Used in the header, footer, page titles, Open Graph tags and structured data.">
@@ -115,12 +128,22 @@ export function General({ cfg }: P) {
 
 // ---------------------------------------------------------------- Appearance
 export function Appearance({ cfg }: P) {
+  const set = useSet()
   return (
     <>
       <Card title="Colours" desc="Applied live as CSS variables. The accent drives buttons, links, badges and highlights.">
         <Color label="Accent" value={cfg.theme.accent} onChange={(v) => set('theme', { accent: v })} />
         <Color label="Text on accent" value={cfg.theme.accentFg} onChange={(v) => set('theme', { accentFg: v })} hint="Keep contrast at 4.5:1 or better against the accent." />
-        <Color label="Ink (dark surfaces, borders)" value={cfg.theme.ink} onChange={(v) => set('theme', { ink: v })} />
+        <Color label="Ink (dark surfaces, borders)" value={cfg.theme.ink} onChange={(v) => set('theme', { ink: v })} hint="Dark mode paints its background from this colour." />
+        {inkIsTooLight(cfg.theme.ink) && (
+          <div className="callout warn" style={{ marginTop: 0 }}>
+            <span className="k">Watch out</span>
+            <p>
+              That ink is too light to sit behind white text, so dark mode keeps its default background and uses your colour
+              for borders only. Pick something darker if you want it applied everywhere.
+            </p>
+          </div>
+        )}
         <Color label="Alert" value={cfg.theme.alarm} onChange={(v) => set('theme', { alarm: v })} />
         <div className="row" style={{ gap: '1rem', marginTop: '1rem' }}>
           <span className="btn btn-acid btn-sm">Accent button</span>
@@ -152,6 +175,7 @@ export function Appearance({ cfg }: P) {
 
 // ---------------------------------------------------------------- Home & pages
 export function Pages({ cfg }: P) {
+  const set = useSet()
   const PAGE_KEYS = [
     ['about', 'About'],
     ['pricing', 'Pricing'],
@@ -209,6 +233,7 @@ export function Pages({ cfg }: P) {
 
 // ---------------------------------------------------------------- Tools
 export function ToolsAdmin({ cfg }: P) {
+  const set = useSet()
   const [q, setQ] = useState('')
   const list = TOOLS.filter((t) => !q || t.name.toLowerCase().includes(q.toLowerCase()))
   const toggle = (slug: string) => {
@@ -261,6 +286,7 @@ export function ToolsAdmin({ cfg }: P) {
 
 // ---------------------------------------------------------------- Content
 export function Content({ cfg }: P) {
+  const set = useSet()
   const [q, setQ] = useState('')
   const posts = ALL_POSTS.filter((p) => !q || `${p.title} ${p.primaryKeyword}`.toLowerCase().includes(q.toLowerCase()))
   const toggle = (slug: string) => {
@@ -322,6 +348,7 @@ export function Content({ cfg }: P) {
 
 // ---------------------------------------------------------------- SEO
 export function Seo({ cfg }: P) {
+  const set = useSet()
   const { toast } = useToast()
   const urls = [
     '/', '/print', '/tools', '/blog', '/pricing', '/about', '/api', '/wordpress', '/website-button', '/extensions/chrome', '/privacy', '/terms',
@@ -371,6 +398,7 @@ export function Seo({ cfg }: P) {
 
 // ---------------------------------------------------------------- Analytics
 export function Analytics({ cfg }: P) {
+  const set = useSet()
   const { toast } = useToast()
   const hits = getHits()
   const now = Date.now()
@@ -437,6 +465,7 @@ export function Analytics({ cfg }: P) {
 
 // ---------------------------------------------------------------- Code
 export function Code({ cfg }: P) {
+  const set = useSet()
   return (
     <>
       <Card title="Custom code" desc="Injected on every page of the live site. Scripts you paste here run with full access to the page.">
@@ -507,10 +536,22 @@ export function Data({ cfg }: P) {
                 const f = e.target.files?.[0]
                 if (!f) return
                 try {
-                  importConfig(await f.text())
+                  const text = await f.text()
+                  // an imported config can carry head/body HTML and JavaScript that this site
+                  // then runs on every page, so it needs the same scrutiny as pasting a script
+                  if (
+                    importCarriesCode(text) &&
+                    !confirm(
+                      'This file contains custom HTML or JavaScript that will run on every page of your site, with access to anything a visitor has open.\n\nOnly continue if you trust where it came from. Import anyway?',
+                    )
+                  ) {
+                    e.target.value = ''
+                    return
+                  }
+                  importConfig(text)
                   toast('Config imported')
                 } catch (err) {
-                  toast(`Invalid file: ${(err as Error).message}`, 'error')
+                  toast(`Could not import: ${(err as Error).message}`, 'error')
                 }
                 e.target.value = ''
               }}

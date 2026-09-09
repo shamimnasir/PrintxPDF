@@ -19,7 +19,7 @@
   text-decoration: none;
 }
 .crumbs a:hover {
-  color: var(--acid);
+  color: var(--link);
   text-decoration: underline;
 }
 
@@ -69,7 +69,7 @@
   margin-bottom: 2rem;
 }
 .post-answer .label {
-  color: var(--acid);
+  color: var(--link);
   margin-bottom: 0.35rem;
 }
 .post-answer p {
@@ -107,25 +107,27 @@
   margin-bottom: 0.5rem;
 }
 .prose a {
-  color: var(--acid);
+  color: var(--link);
   font-weight: 600;
   text-underline-offset: 3px;
 }
 .prose strong {
   font-weight: 800;
 }
+/* the wrapper scrolls, so the table keeps its native semantics for screen readers */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 2px solid transparent;
+}
+.table-scroll:focus-visible {
+  border-color: var(--acid);
+  outline: none;
+}
 .prose .table {
   font-size: 0.92rem;
-  margin: 1.5rem 0;
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-@media (min-width: 700px) {
-  .prose .table {
-    display: table;
-    white-space: normal;
-  }
+  margin: 0;
+  min-width: 32rem;
 }
 
 .steps {
@@ -237,7 +239,7 @@
   font-weight: 600;
 }
 .toc a:hover {
-  color: var(--acid);
+  color: var(--link);
   text-decoration: underline;
 }
 
@@ -306,7 +308,7 @@
   text-decoration: none;
 }
 .post-row:hover .post-row-title {
-  color: var(--acid);
+  color: var(--link);
   text-decoration: underline;
 }
 .post-row-title {

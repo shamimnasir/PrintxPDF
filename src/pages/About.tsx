@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
+import { breadcrumbSchema, useSeo } from '../lib/seo'
 
 export default function About() {
+  useSeo({
+    title: 'About PrintxPDF — Print Less Junk',
+    description: 'PrintxPDF is a browser-only print and PDF toolkit. No upload endpoint exists, so your files never leave your computer. Built with Readability, pdf-lib, pdf.js and Tesseract.',
+    path: '/about',
+    schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }])],
+  })
+
   return (
     <div className="container section" style={{ maxWidth: 820 }}>
       <span className="eyebrow">About</span>

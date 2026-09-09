@@ -95,7 +95,8 @@ export default function SignTool() {
   const [pageNo, setPageNo] = useState(1)
   const stageRef = useRef<HTMLCanvasElement>(null)
   const wrapRef = useRef<HTMLDivElement>(null)
-  const [tab, setTab] = useState<'draw' | 'type' | 'saved'>('draw')
+  const [tab, setTab] = useState<'draw' | 'type' | 'upload' | 'saved'>('draw')
+  const [uploaded, setUploaded] = useState<string | null>(null)
   const [typed, setTyped] = useState('')
   const [font, setFont] = useState('"Brush Script MT", "Snell Roundhand", cursive')
   const [active, setActive] = useState<string | null>(null) // dataUrl to place
@@ -133,7 +134,17 @@ export default function SignTool() {
   const currentSig = () => {
     if (tab === 'draw') return pad.empty ? null : pad.toDataUrl()
     if (tab === 'type') return typedPreview
+    if (tab === 'upload') return uploaded
     return active
+  }
+
+  const onUpload = async (f: File | undefined) => {
+    if (!f) return
+    if (!/^image\//.test(f.type)) return toast('Pick a PNG or JPG image', 'error')
+    const reader = new FileReader()
+    reader.onload = () => setUploaded(reader.result as string)
+    reader.onerror = () => toast('Could not read that image', 'error')
+    reader.readAsDataURL(f)
   }
 
   const onStageClick = (e: React.MouseEvent) => {
@@ -250,7 +261,7 @@ export default function SignTool() {
 
       <div className="card stack">
         <div className="tabs">
-          {(['draw', 'type', 'saved'] as const).map((t) => (
+          {(['draw', 'type', 'upload', 'saved'] as const).map((t) => (
             <button key={t} className={`tab ${tab === t ? 'active' : ''}`} onClick={() => setTab(t)}>
               {t}
             </button>
@@ -279,6 +290,20 @@ export default function SignTool() {
               </div>
             )}
           </>
+        )}
+        {tab === 'upload' && (
+          <div className="stack">
+            <p className="muted" style={{ margin: 0, fontSize: '0.88rem' }}>
+              A PNG with a transparent background sits cleanest on the page. A photo of a signature on white paper works
+              too, but the white block will cover whatever is under it.
+            </p>
+            <input className="input" type="file" accept="image/png,image/jpeg,image/webp" onChange={(e) => onUpload(e.target.files?.[0])} />
+            {uploaded && (
+              <div style={{ border: '2px solid var(--line)', background: '#fff', padding: '0.5rem' }}>
+                <img src={uploaded} alt="Uploaded signature preview" style={{ maxHeight: 90, width: 'auto', margin: '0 auto' }} />
+              </div>
+            )}
+          </div>
         )}
         {tab === 'saved' && (
           <div className="stack">

@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+import { breadcrumbSchema, useSeo } from '../lib/seo'
 
 const BROWSERS: Record<string, { name: string; note: string; steps: string[] }> = {
   chrome: { name: 'Chrome', note: 'Also works in Brave, Opera, Vivaldi and Arc.', steps: ['Open the Chrome Web Store listing', 'Click "Add to Chrome"', 'Pin the PrintxPDF button next to the address bar'] },
@@ -10,6 +11,20 @@ const BROWSERS: Record<string, { name: string; note: string; steps: string[] }> 
 export default function Extensions() {
   const { browser = 'chrome' } = useParams()
   const b = BROWSERS[browser] || BROWSERS.chrome
+
+  useSeo({
+    title: `Print Web Pages Cleanly in ${b.name}`,
+    description: `Print or save any page as a clean PDF in ${b.name}. Reader mode, the print dialog settings that matter, and a bookmarklet that works today with no install.`,
+    path: `/extensions/${browser}`,
+    keywords: [`${b.name.toLowerCase()} print extension`, 'printer friendly extension', 'print without ads'],
+    schema: [
+      breadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Extensions', path: '/extensions/chrome' },
+        { name: b.name, path: `/extensions/${browser}` },
+      ]),
+    ],
+  })
 
   return (
     <>

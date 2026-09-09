@@ -1,6 +1,15 @@
 import { Link } from 'react-router-dom'
+import { breadcrumbSchema, useSeo } from '../lib/seo'
 
 export default function WordPress() {
+  useSeo({
+    title: 'WordPress Print & PDF Button Plugin',
+    description: 'Add a Print, PDF and Email button to every WordPress post. Works with standard themes, custom post types, Gutenberg blocks, Elementor and WooCommerce orders.',
+    path: '/wordpress',
+    keywords: ['wordpress print button', 'wordpress pdf plugin', 'print friendly wordpress'],
+    schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'WordPress', path: '/wordpress' }])],
+  })
+
   return (
     <>
       <section className="section">

@@ -112,19 +112,55 @@ const AUTH_KEY = 'pxp:admin:auth'
 type Plain = Record<string, unknown>
 const isPlain = (v: unknown): v is Plain => !!v && typeof v === 'object' && !Array.isArray(v)
 
-/** Deep merge that lets a partial config override defaults without dropping unknown keys. */
+// keys that would re-parent the merged object or shadow Object.prototype
+const UNSAFE_KEYS = new Set(['__proto__', 'constructor', 'prototype'])
+
+/**
+ * Deep merge that lets a partial config override defaults without dropping unknown keys.
+ * A patch value only replaces the base when it is the same broad type, so an imported file
+ * with `{ marquee: null }` cannot turn an array into null and crash the page that maps it.
+ */
 export function merge<T>(base: T, patch: unknown): T {
-  if (!isPlain(patch) || !isPlain(base)) return (patch === undefined ? base : (patch as T))
+  if (patch === undefined) return base
+  if (!isPlain(patch) || !isPlain(base)) {
+    // type mismatch (array vs object vs scalar) means the patch is not trustworthy
+    if (base !== undefined && base !== null && typeof base !== typeof patch) return base
+    if (Array.isArray(base) !== Array.isArray(patch)) return base
+    return patch as T
+  }
   const out: Plain = { ...base }
   for (const [k, v] of Object.entries(patch)) {
-    out[k] = isPlain(v) && isPlain(out[k]) ? merge(out[k], v) : v
+    if (UNSAFE_KEYS.has(k)) continue
+    out[k] = isPlain(v) && isPlain(out[k]) ? merge(out[k], v) : merge(out[k], v)
   }
   return out as T
+}
+
+/** Strips unsafe keys anywhere in an imported payload before it is trusted. */
+function sanitize(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(sanitize)
+  if (!isPlain(value)) return value
+  const out: Plain = {}
+  for (const [k, v] of Object.entries(value)) {
+    if (UNSAFE_KEYS.has(k)) continue
+    out[k] = sanitize(v)
+  }
+  return out
 }
 
 let published: SiteConfig = DEFAULT_CONFIG
 let current: SiteConfig = DEFAULT_CONFIG
 const listeners = new Set<(c: SiteConfig) => void>()
+
+/** Persists a value, reporting failure instead of throwing (quota, private mode, blocked storage). */
+function writeRaw(key: string, value: unknown): boolean {
+  try {
+    localStorage.setItem(key, JSON.stringify(value))
+    return true
+  } catch {
+    return false
+  }
+}
 
 function readDraft(): Partial<SiteConfig> | null {
   try {
@@ -166,26 +202,39 @@ export function subscribeConfig(fn: (c: SiteConfig) => void) {
 }
 
 /** Saves a partial change into the local draft. */
-export function updateConfig(patch: Partial<SiteConfig>) {
+export function updateConfig(patch: Partial<SiteConfig>): boolean {
   const draft = merge(readDraft() || {}, patch) as Partial<SiteConfig>
   draft.updatedAt = new Date().toISOString().slice(0, 10)
-  try {
-    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft))
-  } catch {
-    return false
-  }
+  if (!writeRaw(DRAFT_KEY, draft)) return false
   recompute()
   return true
 }
 
 export function discardDraft() {
-  localStorage.removeItem(DRAFT_KEY)
+  try {
+    localStorage.removeItem(DRAFT_KEY)
+  } catch {
+    /* storage blocked */
+  }
   recompute()
 }
 
+/** True when the payload contains code that RuntimeEffects will execute on every page. */
+export function importCarriesCode(json: string): boolean {
+  try {
+    const c = (sanitize(JSON.parse(json)) as Partial<SiteConfig>)?.code
+    return !!(c && (c.js?.trim() || c.headHtml?.trim() || c.bodyEndHtml?.trim()))
+  } catch {
+    return false
+  }
+}
+
 export function importConfig(json: string) {
-  const parsed = JSON.parse(json) as Partial<SiteConfig>
-  localStorage.setItem(DRAFT_KEY, JSON.stringify(parsed))
+  const parsed = sanitize(JSON.parse(json)) as Partial<SiteConfig>
+  if (!isPlain(parsed)) throw new Error('That file is not a config object.')
+  // merge against the defaults first so type mismatches are rejected before anything is stored
+  const safe = merge(DEFAULT_CONFIG, parsed)
+  if (!writeRaw(DRAFT_KEY, safe)) throw new Error('Browser storage is full, so the import was not saved.')
   recompute()
   return current
 }
@@ -206,16 +255,39 @@ export function isUnlocked() {
   }
 }
 export function unlock(pass: string) {
-  const expected = localStorage.getItem('pxp:admin:pass') || DEFAULT_PASSCODE
-  if (pass !== expected) return false
-  localStorage.setItem(AUTH_KEY, 'ok')
-  return true
+  try {
+    const expected = localStorage.getItem('pxp:admin:pass') || DEFAULT_PASSCODE
+    if (pass !== expected) return false
+    localStorage.setItem(AUTH_KEY, 'ok')
+    return true
+  } catch {
+    return false
+  }
 }
 export function lock() {
-  localStorage.removeItem(AUTH_KEY)
+  try {
+    localStorage.removeItem(AUTH_KEY)
+  } catch {
+    /* storage blocked */
+  }
 }
 export function setPasscode(next: string) {
-  localStorage.setItem('pxp:admin:pass', next)
+  try {
+    localStorage.setItem('pxp:admin:pass', next)
+  } catch {
+    /* storage blocked */
+  }
+}
+
+/** sessionStorage/localStorage access throws outright when site data is blocked. */
+export function safeStorage(kind: 'local' | 'session') {
+  try {
+    const s = kind === 'local' ? window.localStorage : window.sessionStorage
+    s.getItem('__probe')
+    return s
+  } catch {
+    return null
+  }
 }
 
 // ---------- local analytics ----------

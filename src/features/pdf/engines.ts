@@ -309,13 +309,15 @@ function visualRect(page: import('pdf-lib').PDFPage, fx: number, fy: number, fw:
 // ---------- edit ----------
 export async function watermark(
   file: File,
-  opts: { text: string; size: number; opacity: number; rotation: number; color: 'grey' | 'red' | 'blue' | 'black'; position: 'center' | 'tile' | 'top' | 'bottom' },
+  opts: { text: string; size: number; opacity: number; rotation: number; color: 'grey' | 'red' | 'blue' | 'black'; position: 'center' | 'tile' | 'top' | 'bottom'; pages?: string },
 ): Promise<Output[]> {
   const doc = await open(file)
   const font = await doc.embedFont(StandardFonts.HelveticaBold)
   const colors = { grey: rgb(0.5, 0.5, 0.5), red: rgb(1, 0.23, 0.12), blue: rgb(0.04, 0.24, 1), black: rgb(0, 0, 0) }
   const text = opts.text || 'DRAFT'
-  for (const page of doc.getPages()) {
+  const targets = opts.pages?.trim() ? parseRanges(opts.pages, doc.getPageCount()) : doc.getPageIndices()
+  if (!targets.length) throw new Error('That page range does not match any page in this file')
+  for (const page of targets.map((i) => doc.getPage(i))) {
     const tw = font.widthOfTextAtSize(text, opts.size)
     const th = opts.size
     const { VW, VH } = visualRect(page, 0, 0, 1, 1)
@@ -339,13 +341,15 @@ export async function watermark(
   return [{ name: `${stripExt(file.name)}-watermarked.pdf`, blob: pdfBlob(await doc.save()) }]
 }
 
-export async function pageNumbers(file: File, opts: { position: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-center'; format: 'n' | 'n-of-total' | 'page-n'; size: number; start: number }): Promise<Output[]> {
+export async function pageNumbers(file: File, opts: { position: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-center'; format: 'n' | 'n-of-total' | 'page-n'; size: number; start: number; skipFirst?: number }): Promise<Output[]> {
   const doc = await open(file)
   const font = await doc.embedFont(StandardFonts.Helvetica)
   const pages = doc.getPages()
+  const skip = Math.max(0, Math.floor(opts.skipFirst || 0))
   pages.forEach((page, i) => {
-    const n = i + opts.start
-    const label = opts.format === 'n' ? `${n}` : opts.format === 'page-n' ? `Page ${n}` : `${n} / ${pages.length + opts.start - 1}`
+    if (i < skip) return // leave a cover or title page unnumbered
+    const n = i - skip + opts.start
+    const label = opts.format === 'n' ? `${n}` : opts.format === 'page-n' ? `Page ${n}` : `${n} / ${pages.length - skip + opts.start - 1}`
     const tw = font.widthOfTextAtSize(label, opts.size)
     const { VW, VH } = visualRect(page, 0, 0, 1, 1)
     const vx = opts.position.endsWith('center') ? (VW - tw) / 2 : opts.position.endsWith('right') ? VW - tw - 36 : 36

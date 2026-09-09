@@ -2,15 +2,16 @@ import { useMemo } from 'react'
 import { useSiteConfig } from '../../admin/useSiteConfig'
 import { TOOLS, toolBySlug, type ToolMeta } from './toolsMeta'
 
-/** Applies the admin panel's name/description overrides to a tool. */
+/** Applies the admin panel's overrides. Returns undefined for a tool the admin hid,
+ *  so hidden tools disappear from every surface instead of only the indexes. */
 export function useTool(slug: string): ToolMeta | undefined {
   const cfg = useSiteConfig()
   return useMemo(() => {
     const base = toolBySlug(slug)
-    if (!base) return undefined
+    if (!base || cfg.tools.hidden.includes(slug)) return undefined
     const ov = cfg.tools.overrides[slug]
     return ov ? { ...base, ...ov } : base
-  }, [slug, cfg.tools.overrides])
+  }, [slug, cfg.tools])
 }
 
 /** Every tool the admin has not hidden, with overrides applied and featured tools first. */

@@ -2,12 +2,14 @@ import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { store } from '../../lib/store'
 import { useToast } from '../../components/ui/Toast'
+import { useSeo } from '../../lib/seo'
 
 export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
   const nav = useNavigate()
   const { toast } = useToast()
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
+  useSeo({ title: mode === 'up' ? 'Sign up — PrintxPDF' : 'Log in — PrintxPDF', description: 'A demo account stored only in this browser.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
 
   const submit = (e: FormEvent) => {
     e.preventDefault()

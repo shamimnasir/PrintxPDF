@@ -26,6 +26,7 @@
   --line: var(--ink);
   --card: #ffffff;
   --grid: rgba(11, 11, 15, 0.05);
+  --link: var(--acid); /* body-copy link colour; dark mode lightens it for contrast */
 
   --bw: 3px;
   --shadow: 6px 6px 0 0 var(--line);
@@ -51,6 +52,7 @@
   --line: var(--paper);
   --card: #15151b;
   --grid: rgba(250, 248, 242, 0.07);
+  --link: var(--acid-dim);
   --shadow: 6px 6px 0 0 var(--paper);
   --shadow-sm: 3px 3px 0 0 var(--paper);
   --shadow-acid: 6px 6px 0 0 var(--acid);
@@ -447,10 +449,12 @@ p {
 }
 
 /* ---------- Header ---------- */
-.header {
+.header-stack {
   position: sticky;
   top: 0;
   z-index: 50;
+}
+.header {
   background: var(--bg);
   border-bottom: var(--bw) solid var(--line);
 }

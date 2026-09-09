@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { downloadBlob, formatBytes } from '../../lib/download'
+import { zipBlobs } from '../../lib/zip'
 
 export type Output = { name: string; blob: Blob; note?: string }
 
@@ -17,17 +19,32 @@ export function ProgressBar({ value, msg }: { value: number; msg?: string }) {
   )
 }
 
-export function ResultList({ outputs, title = 'Ready' }: { outputs: Output[]; title?: string }) {
+export function ResultList({ outputs, title = 'Ready', zipName = 'printxpdf-files.zip' }: { outputs: Output[]; title?: string; zipName?: string }) {
+  const [zipping, setZipping] = useState(false)
   if (!outputs.length) return null
   const pdf = outputs.length === 1 && /\.pdf$/i.test(outputs[0].name) ? outputs[0] : null
+
+  const downloadZip = async () => {
+    setZipping(true)
+    try {
+      downloadBlob(await zipBlobs(outputs), zipName)
+    } finally {
+      setZipping(false)
+    }
+  }
   return (
     <div className="card">
       <div className="row between" style={{ marginBottom: '0.75rem' }}>
         <h4 style={{ margin: 0 }}>{title}</h4>
         {outputs.length > 1 && (
-          <button className="btn btn-sm btn-acid" onClick={() => outputs.forEach((r, i) => setTimeout(() => downloadBlob(r.blob, r.name), i * 250))}>
-            Download all ({outputs.length})
-          </button>
+          <div className="row" style={{ gap: '0.4rem' }}>
+            <button className="btn btn-sm btn-acid" disabled={zipping} onClick={downloadZip}>
+              {zipping ? 'Zipping…' : `Download ZIP (${outputs.length})`}
+            </button>
+            <button className="btn btn-sm btn-ghost" onClick={() => outputs.forEach((r, i) => setTimeout(() => downloadBlob(r.blob, r.name), i * 250))}>
+              Separately
+            </button>
+          </div>
         )}
       </div>
       <div className="results">

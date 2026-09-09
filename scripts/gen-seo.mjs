@@ -2,7 +2,7 @@
 // content and tool data. Runs before `vite build` so the files ship with the site.
 //
 // The content modules are plain TypeScript data with no React imports, so we bundle
-// them with esbuild (already installed as a Vite dependency) and import the result.
+// them with esbuild (an explicit devDependency) and import the result.
 
 import { build } from 'esbuild'
 import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
@@ -84,15 +84,28 @@ Allow: /
 Disallow: /admin
 Disallow: /account
 
-# AI crawlers are welcome to read and cite these guides
+# AI crawlers are welcome to read and cite these guides.
+# A crawler obeys only its most specific matching group, so each one repeats the Disallow
+# rules — otherwise these would be the only bots permitted into /admin and /account.
 User-agent: GPTBot
 Allow: /
+Disallow: /admin
+Disallow: /account
+
 User-agent: ClaudeBot
 Allow: /
+Disallow: /admin
+Disallow: /account
+
 User-agent: PerplexityBot
 Allow: /
+Disallow: /admin
+Disallow: /account
+
 User-agent: Google-Extended
 Allow: /
+Disallow: /admin
+Disallow: /account
 
 Sitemap: ${SITE}/sitemap.xml
 `

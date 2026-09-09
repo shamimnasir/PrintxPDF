@@ -57,7 +57,7 @@ export const signPdf: Cluster = {
             { h: 'Place it on the page', x: 'Drag the signature onto the signature line. Drop it so the baseline of your writing sits on the printed rule, not floating above it, and let the descenders cross below slightly the way real ink does.' },
             { h: 'Size it sensibly', x: 'A signature that is roughly two to three times the height of the body text reads as natural. Anything taller looks pasted on. On a standard form, that is usually 150 to 250 px wide on screen.' },
             { h: 'Add the date and any initials', x: 'Use a text box for the date, matched roughly to the form’s font size. Many documents also need initials in the footer of every page, or a printed name under the signature.' },
-            { h: 'Flatten and download', x: 'Turn on **Flatten** before you export. This merges the signature into the page content so it can no longer be selected, dragged or deleted by whoever opens the file next.' },
+            { h: 'Download, then flatten', x: 'Press **Sign & download**. The signature is drawn into the page, not attached as a movable annotation. If the file also has form fields you want frozen, run the result through [Flatten PDF](/tools/flatten-pdf) so nothing can be edited afterwards.' },
           ],
         },
         { t: 'cta', tool: 'sign-pdf', x: 'Sign a PDF in your browser. Draw, type or upload a signature, then flatten and download.' },
@@ -96,7 +96,7 @@ export const signPdf: Cluster = {
       faqs: [
         { q: 'How do I sign a PDF without Adobe Acrobat?', a: 'Use a browser-based signing tool, Preview on macOS, or Markup on iOS. All three let you place a signature image on the page and export a signed file, with no Acrobat licence and no account required.' },
         { q: 'Is a drawn or typed signature legally valid?', a: 'In most jurisdictions, yes, for ordinary commercial agreements. What matters legally is intent to sign and consent to transact electronically, not how the mark was produced. Some document types are excluded, so check anything unusual.' },
-        { q: 'How do I stop someone from moving my signature after I sign?', a: 'Flatten the document before sending it. Flattening merges annotations and form values into the page content, so the signature can no longer be selected, dragged or deleted in any PDF editor.' },
+        { q: 'How do I stop someone from moving my signature after I sign?', a: 'A signature added here is drawn straight into the page content, so it is already part of the page rather than a draggable annotation. If the document also has fillable form fields, run it through [Flatten PDF](/tools/flatten-pdf), which bakes the field values in as well.' },
         { q: 'What size should a signature be on a PDF?', a: 'Roughly two to three times the height of the surrounding body text, which on a typical form is 150 to 250 pixels wide. Sit the baseline of the writing on the printed line rather than floating above it.' },
         { q: 'Can I sign a PDF on my phone?', a: 'Yes. On iOS use Share → Markup → Signature, which lets you sign with a finger or an Apple Pencil and saves the signature for reuse. On Android, a browser signing tool works in Chrome without installing anything.' },
       ],

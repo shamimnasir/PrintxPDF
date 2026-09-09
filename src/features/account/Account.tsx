@@ -4,6 +4,7 @@ import { applyTheme, genApiKey, store, type SavedDoc, type Settings, type Signat
 import { useUser } from './useUser'
 import { useToast } from '../../components/ui/Toast'
 import { downloadBlob } from '../../lib/download'
+import { useSeo } from '../../lib/seo'
 import { Seg } from '../../components/ui/Seg'
 
 const escapeHtml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -270,6 +271,7 @@ function Domains() {
 
 export default function Account() {
   const user = useUser()
+  useSeo({ title: 'Your account — PrintxPDF', description: 'Saved documents, signatures and settings, stored in this browser.', path: '/account', noindex: true })
   if (!user) return <Navigate to="/signin" replace />
   return (
     <div className="container section">

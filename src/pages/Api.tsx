@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { breadcrumbSchema, useSeo } from '../lib/seo'
 import { useUser } from '../features/account/useUser'
 
 const WORKER = `// worker/fetch-proxy.js — deploy with: npx wrangler deploy
@@ -29,6 +30,14 @@ const CURL = `curl -X POST https://api.printxpdf.example/v1/pdf \\
   --output article.pdf`
 
 export default function Api() {
+  useSeo({
+    title: 'PDF API and Self-Hosted Fetch Proxy',
+    description: 'Deploy a one-file Cloudflare Worker so the web-page cleaner fetches reliably from your own domain, plus the specification for a URL-to-PDF API endpoint.',
+    path: '/api',
+    keywords: ['url to pdf api', 'html to pdf api', 'cors proxy worker'],
+    schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'API', path: '/api' }])],
+  })
+
   const user = useUser()
   return (
     <div className="container section">

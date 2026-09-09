@@ -3,20 +3,9 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { TOOLS, CATEGORY_LABEL, type ToolCategory } from '../../features/pdf/toolsMeta'
 import { useUser } from '../../features/account/useUser'
 import { applyTheme, store } from '../../lib/store'
+import { safeStorage } from '../../admin/config'
+import { Wordmark, initial } from './Wordmark'
 import { useSiteConfig } from '../../admin/useSiteConfig'
-
-function Wordmark({ name }: { name: string }) {
-  // highlight the "x" when the name contains one (PrintxPDF); otherwise render it plainly
-  const m = name.match(/^(.*?)x(pdf.*)$/i)
-  if (!m) return <span>{name}</span>
-  return (
-    <span>
-      {m[1]}
-      <span className="x">x</span>
-      {m[2]}
-    </span>
-  )
-}
 
 function NavMenu({ label, children, id, open, setOpen }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void }) {
   const isOpen = open === id
@@ -41,15 +30,28 @@ export function Header() {
   const [menu, setMenu] = useState(false)
   const user = useUser()
   const loc = useLocation()
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
   const [dark, setDark] = useState(() => document.documentElement.getAttribute('data-theme') === 'dark')
   const cfg = useSiteConfig()
-  const [annOpen, setAnnOpen] = useState(() => sessionStorage.getItem('pxp:ann') !== 'closed')
+  const [annOpen, setAnnOpen] = useState(() => safeStorage('session')?.getItem('pxp:ann') !== 'closed')
+  const ann = cfg.announcement
 
   useEffect(() => {
     setOpen(null)
     setMenu(false)
   }, [loc.pathname])
+
+  // sticky offsets (editor toolbar, article sidebar, heading anchors) depend on the real
+  // header height, which changes when the announcement bar is shown or the nav wraps
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const sync = () => document.documentElement.style.setProperty('--header-h', `${Math.round(el.getBoundingClientRect().height)}px`)
+    sync()
+    const ro = new ResizeObserver(sync)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [ann.enabled, annOpen])
 
   const toggleTheme = () => {
     const next = dark ? 'light' : 'dark'
@@ -60,10 +62,9 @@ export function Header() {
 
   const cats = (Object.keys(CATEGORY_LABEL) as ToolCategory[]).filter((c) => c !== 'more')
   const visible = TOOLS.filter((t) => !cfg.tools.hidden.includes(t.slug))
-  const ann = cfg.announcement
 
   return (
-    <>
+    <div className="header-stack" ref={ref}>
       {ann.enabled && annOpen && (
         <div className="announce">
           <div className="container row" style={{ gap: '0.6rem', justifyContent: 'center' }}>
@@ -78,7 +79,7 @@ export function Header() {
                 className="announce-x"
                 aria-label="Dismiss"
                 onClick={() => {
-                  sessionStorage.setItem('pxp:ann', 'closed')
+                  safeStorage('session')?.setItem('pxp:ann', 'closed')
                   setAnnOpen(false)
                 }}
               >
@@ -88,28 +89,40 @@ export function Header() {
           </div>
         </div>
       )}
-      <header ref={ref} className={`header ${menu ? 'menu-open' : ''}`}>
+      <header className={`header ${menu ? 'menu-open' : ''}`}>
       <div className="container header-inner">
         <Link to="/" className="logo" aria-label={`${cfg.site.name} home`}>
-          <span className="logo-mark">{cfg.site.name.charAt(0).toUpperCase()}</span>
+          <span className="logo-mark">{initial(cfg.site.name)}</span>
           <Wordmark name={cfg.site.name} />
         </Link>
 
         <nav id="main-nav" className="nav" aria-label="Main">
           <NavMenu label="PDF Tools" id="tools" open={open} setOpen={setOpen}>
-            {cats.map((c) => (
-              <div key={c} style={{ breakInside: 'avoid' }}>
-                <div className="menu-title">{CATEGORY_LABEL[c]}</div>
-                {visible.filter((t) => t.category === c).map((t) => (
-                  <Link key={t.slug} to={`/tools/${t.slug}`}>
-                    {t.name}
-                  </Link>
-                ))}
-              </div>
-            ))}
+            {cats.map((c) => {
+              const inCat = visible.filter((t) => t.category === c)
+              if (!inCat.length) return null
+              return (
+                <div key={c} style={{ breakInside: 'avoid' }}>
+                  <div className="menu-title">{CATEGORY_LABEL[c]}</div>
+                  {inCat.map((t) => (
+                    <Link key={t.slug} to={`/tools/${t.slug}`}>
+                      {t.name}
+                    </Link>
+                  ))}
+                </div>
+              )
+            })}
             <div style={{ breakInside: 'avoid' }}>
               <div className="menu-title">More</div>
-              <Link to="/tools/qr-code">QR Code Generator</Link>
+              {visible.some((t) => t.category === 'more') &&
+                visible
+                  .filter((t) => t.category === 'more')
+                  .map((t) => (
+                    <Link key={t.slug} to={`/tools/${t.slug}`}>
+                      {t.name}
+                    </Link>
+                  ))}
+              <Link to="/blog">Guides</Link>
               <Link to="/tools">All tools →</Link>
             </div>
           </NavMenu>
@@ -162,6 +175,6 @@ export function Header() {
         </div>
       </div>
       </header>
-    </>
+    </div>
   )
 }

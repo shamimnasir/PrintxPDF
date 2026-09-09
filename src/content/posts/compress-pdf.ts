@@ -57,7 +57,7 @@ export const compressPdf: Cluster = {
             { h: 'Open the compressor', x: 'Go to the [PDF compressor](/tools/compress-pdf) and drop your file on the page. Nothing is uploaded — the file is processed by your own browser, so a confidential contract never leaves your machine.' },
             { h: 'Try lossless first', x: 'Run the structural pass on its own and look at the result. If a 4 MB text document drops to 2.6 MB, stop there. You have paid nothing in quality.' },
             { h: 'Check whether images are the problem', x: 'If lossless barely moved the needle, the weight is in images. Scroll the document: if the pages look like photographs of paper rather than crisp text, it is a scan and image compression is the only lever that matters.' },
-            { h: 'Pick a DPI target', x: 'Choose 150 DPI for anything that will be read on screen, 300 DPI if it will be printed, 72 DPI only for throwaway previews. Halving DPI quarters the pixel count, so 300 to 150 removes about 75 percent of the image data.' },
+            { h: 'Pick a level', x: 'Three choices, not a DPI box. **Light** is lossless: it rewrites the file structure and drops metadata, keeping text selectable. **Medium** re-renders each page at roughly 100 DPI and re-encodes it as JPEG. **Strong** goes to about 72 DPI. Medium and Strong are what shrink scans, at the cost of turning text into pixels.' },
             { h: 'Compare before you commit', x: 'Open the compressed file and zoom to 200 percent on the smallest text on the page. Compression artefacts show up around letter edges before they show anywhere else.' },
             { h: 'Keep the original', x: 'Save the compressed copy under a new name. You cannot un-downsample an image, so the original is your only fallback.' },
           ],
@@ -257,7 +257,7 @@ export const compressPdf: Cluster = {
             ['72', 'Visibly blurry', 'No', 'Fails', 'Do not use for documents'],
           ],
         },
-        { t: 'note', x: 'Do the OCR before you downsample, not after. Recognition accuracy falls off a cliff below about 200 DPI. Run [OCR](/tools/ocr-pdf) on the high-resolution scan, then compress — the text layer it produces is a few kilobytes and survives compression untouched. There is a full guide in [how to OCR a scanned PDF](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf).' },
+        { t: 'warn', x: 'Order matters, and so does the level. Run [OCR](/tools/ocr-pdf) on the high-resolution scan first, because recognition accuracy falls off a cliff below about 200 DPI. Then compress with **Light** only: Light rewrites the file structure and leaves the text layer alone, while Medium and Strong rasterise every page to a JPEG and rebuild the document, which destroys the text layer you just created. There is a full guide in [how to OCR a scanned PDF](/blog/ocr-scanned-documents/how-to-ocr-a-scanned-pdf).' },
         { t: 'h2', x: 'The colour mistake that costs the most' },
         { t: 'p', x: 'Most people scan black text on white paper in 24-bit colour because that is the scanner default. That stores three channels for a page that has one channel of information. Two better options:' },
         {
@@ -285,7 +285,7 @@ export const compressPdf: Cluster = {
       faqs: [
         { q: 'Is there such a thing as truly lossless PDF compression?', a: 'Yes. Font subsetting, packing objects into object streams, compressing the cross-reference table and deleting unreferenced objects are all bit-exact lossless. They typically save 10-30 percent. Anything advertising 90 percent savings on a text PDF is not lossless.' },
         { q: 'What DPI should I compress a PDF to?', a: '150 DPI for on-screen reading, 200 DPI for scanned text you may still print, 300 DPI for anything going to a printer properly. Below 150 the small text starts to soften; below 100 it becomes visibly blurry.' },
-        { q: 'Will compressing a PDF break the OCR text?', a: 'No. The OCR text layer is stored as characters, not pixels, and takes a few kilobytes. Image compression never touches it. Just make sure you run OCR before downsampling, because recognition accuracy drops sharply below 200 DPI.' },
+        { q: 'Will compressing a PDF break the OCR text?', a: 'It depends on the level. **Light** is structural and lossless, so the text layer is untouched. **Medium** and **Strong** rasterise each page to an image and rebuild the file, which removes every text object — the result looks identical but nothing is searchable any more. OCR first, then compress with Light, and check with Ctrl+F before you delete the original.' },
         { q: 'Why does my compressed PDF look blurry when I zoom in?', a: 'The images were downsampled below what your zoom level needs. A 150 DPI page looks perfect at 100 percent and soft at 300 percent. If you need to zoom, keep 300 DPI — or go back to the original file.' },
         { q: 'Does compressing a PDF twice make it smaller?', a: 'A second lossless pass gains nothing. A second lossy pass makes it smaller but stacks JPEG artefacts, and the damage compounds visibly. Always compress the original once at the setting you actually need.' },
       ],

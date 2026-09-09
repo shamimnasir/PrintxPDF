@@ -59,7 +59,7 @@ export const watermarkPdf: Cluster = {
             ['Rotation', '45° (or -45°)', 'Crosses lines of text at an angle instead of running along one line and burying it.'],
             ['Font size', '60-90pt centred, 18-28pt tiled', 'A centred mark should span roughly two-thirds of the page width.'],
             ['Colour', 'Mid grey #808080, or red #C00000 for CONFIDENTIAL', 'Grey stays neutral in greyscale printing. Red signals urgency but prints as dark grey.'],
-            ['Layer', 'Behind the text where possible', 'Keeps body text at full contrast. Draw in front only when the mark must be impossible to miss.'],
+            ['Opacity', 'Around 0.25', 'The mark is drawn over the page, so low opacity is what keeps body text readable. Raise it only when the mark must be impossible to miss.'],
             ['Placement', 'Centred for warnings, tiled for reuse control', 'Tiling survives cropping; a single centred mark does not.'],
           ],
         },
@@ -129,7 +129,7 @@ export const watermarkPdf: Cluster = {
       secondaryKeywords: ['add page numbers to pdf free', 'pdf page numbering', 'page x of y pdf', 'bates numbering pdf', 'start numbering on page 2'],
       entities: ['PDF', 'Adobe Acrobat', 'Bates numbering', 'Helvetica', 'A4', 'US Letter', 'Microsoft Word', 'roman numerals'],
       answer:
-        'To add page numbers to a PDF, open it in a page numbering tool, pick a position such as bottom centre, choose a format such as "1 of 12", set the starting number and the first page to number, then apply. The numbers are drawn onto each page and cannot shift later.',
+        'To add page numbers to a PDF, open it in a page numbering tool, pick a position such as bottom centre, choose a format such as "1 of 12", set the starting number, and say how many opening pages to leave unnumbered. The numbers are drawn onto each page and cannot shift later.',
       body: [
         { t: 'p', x: 'Page numbers in a PDF are not automatic. Unless the original document had them before it was exported, the file is just a stack of pages with no idea what order a human thinks they are in. Add them and three things get easier: printing double-sided without losing your place, referring to a page in an email, and putting a dropped stack back together.' },
         { t: 'h2', x: 'Add numbers in your browser' },
@@ -139,7 +139,7 @@ export const watermarkPdf: Cluster = {
             { h: 'Open the numbering tool', x: 'Go to [Page numbers](/tools/page-numbers) and drop the PDF in. Everything runs locally in the tab.' },
             { h: 'Pick a position', x: 'Bottom centre is the safe default. Bottom outer corner is the right choice for anything printed double-sided and bound.' },
             { h: 'Choose a format', x: 'Plain `7`, `Page 7`, or `7 of 24`. The last one tells a reader immediately whether the document is complete.' },
-            { h: 'Set the first page to number', x: 'If page 1 is a cover, set numbering to begin on page 2 so the cover stays clean.' },
+            { h: 'Skip the cover', x: 'If page 1 is a title page, set **Leave first N pages unnumbered** to 1. The cover stays clean and the next sheet becomes number 1.' },
             { h: 'Set the starting number', x: 'Separate from the above. If this PDF is chapter two of a longer document that ended on page 40, start at 41 so the combined set reads continuously.' },
             { h: 'Check the margin', x: 'The number should sit inside the paper margin, not on top of your text. Around 36 points, which is half an inch, from the bottom edge works for most documents.' },
             { h: 'Apply and download', x: 'Look at pages 1, 2 and the last page before you print anything. Those three catch almost every mistake.' },
@@ -202,7 +202,7 @@ export const watermarkPdf: Cluster = {
       ],
       faqs: [
         { q: 'How do I add page numbers to a PDF for free?', a: 'Use a browser-based page numbering tool: drop the file in, choose a position and format, set the starting number, and download the result. It runs on your own machine, so there is no upload, no account and no watermark on the output.' },
-        { q: 'How do I start page numbering on page 2 of a PDF?', a: 'Set "first page to number" to 2 and "starting number" to 1. The cover page is left blank and the second sheet is printed as page 1, which is the standard convention for reports with a title page.' },
+        { q: 'How do I start page numbering on page 2 of a PDF?', a: 'Set "Leave first N pages unnumbered" to 1 and "Start at" to 1. The cover is left blank and the second sheet prints as page 1, which is the standard convention for a report with a title page.' },
         { q: 'Can I use a "Page 1 of 10" format?', a: 'Yes. Choose the "X of Y" format and the tool fills in the total from the page count of the file you loaded. Merge every part of the document together before numbering, or the total will be wrong on every page.' },
         { q: 'Will page numbers cover my existing footer?', a: 'They can. Move the number to a free corner, increase the margin to 45 points, or scale the page content to about 96 percent to open a clear band along the bottom edge before numbering.' },
         { q: 'Can page numbers be removed from a PDF afterwards?', a: 'They can be deleted in a PDF editor if the file was not flattened, since the number is a separate drawing object. It is far simpler to keep the original unnumbered file and renumber a fresh copy when the document changes.' },

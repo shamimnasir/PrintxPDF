@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CATEGORY_LABEL, type ToolCategory, type ToolMeta } from '../features/pdf/toolsMeta'
 import { useVisibleTools } from '../features/pdf/useTools'
-import { breadcrumbSchema, useSeo } from '../lib/seo'
+import { breadcrumbSchema, SITE_URL, useSeo } from '../lib/seo'
 import { ToolCard } from '../features/pdf/ToolCard'
 import '../features/pdf/tools.css'
 
@@ -25,7 +25,7 @@ export default function ToolsIndex() {
         '@type': 'ItemList',
         name: 'PDF tools',
         numberOfItems: TOOLS.length,
-        itemListElement: TOOLS.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name, description: t.short, url: `/tools/${t.slug}` })),
+        itemListElement: TOOLS.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name, description: t.short, url: `${SITE_URL}/tools/${t.slug}` })),
       },
     ],
   })

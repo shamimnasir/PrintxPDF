@@ -1,4 +1,21 @@
+import { breadcrumbSchema, useSeo } from '../lib/seo'
+
 export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
+  useSeo({
+    title: kind === 'privacy' ? 'Privacy — Nothing Is Uploaded' : 'Terms of Use',
+    description:
+      kind === 'privacy'
+        ? 'PrintxPDF has no server-side application and no upload endpoint. Files are processed in your browser and discarded when you close the tab. No cookies.'
+        : 'Terms for using PrintxPDF: a free, as-is demonstration of browser-based printing and PDF tools. No payment is collected and no paid service is delivered.',
+    path: kind === 'privacy' ? '/privacy' : '/terms',
+    schema: [
+      breadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: kind === 'privacy' ? 'Privacy' : 'Terms', path: kind === 'privacy' ? '/privacy' : '/terms' },
+      ]),
+    ],
+  })
+
   return (
     <div className="container section" style={{ maxWidth: 760 }}>
       <span className="eyebrow">{kind === 'privacy' ? 'Privacy' : 'Terms'}</span>

@@ -37,13 +37,14 @@ export default function ClusterPage() {
             about: cluster.entities.map((e) => ({ '@type': 'Thing', name: e })),
             hasPart: cluster.posts.map((p) => ({ '@type': 'Article', headline: p.title, url: `${SITE_URL}/blog/${cluster.slug}/${p.slug}` })),
           },
-          faqSchema(cluster.posts.map((p) => ({ q: p.title, a: p.answer }))),
+          // the same answers are rendered on the cards below, which Google requires for FAQ markup
+          ...(cluster.posts.length ? [faqSchema(cluster.posts.map((p) => ({ q: p.title, a: p.answer })))] : []),
         ]
       : [],
     noindex: !cluster,
   })
 
-  if (!cluster) return <Navigate to="/blog" replace />
+  if (!cluster || cluster.posts.length === 0) return <Navigate to="/blog" replace />
 
   const others = CLUSTERS.filter((c) => c.slug !== cluster.slug).slice(0, 6)
 
@@ -75,9 +76,7 @@ export default function ClusterPage() {
               </span>
             </div>
             <h3 style={{ fontFamily: 'var(--font-body)', textTransform: 'none', letterSpacing: '-0.01em', fontWeight: 900, fontSize: '1.2rem' }}>{p.title}</h3>
-            <p className="muted" style={{ margin: 0, fontSize: '0.95rem' }}>
-              {p.metaDescription}
-            </p>
+            <p style={{ margin: '0 0 0.5rem', fontSize: '0.95rem' }}>{p.answer}</p>
           </Link>
         ))}
       </div>

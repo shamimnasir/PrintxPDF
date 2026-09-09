@@ -27,7 +27,7 @@ export const CATEGORY_LABEL: Record<ToolCategory, string> = {
 export const TOOLS: ToolMeta[] = [
   // organize
   { slug: 'merge-pdf', name: 'Merge PDF', short: 'Combine files into one', description: 'Combine multiple PDF files into one organized document, in the order you choose.', icon: '⧉', category: 'organize', status: 'real', accept: '.pdf', multiple: true },
-  { slug: 'split-pdf', name: 'Split PDF', short: 'Break into ranges or pages', description: 'Break a PDF into page ranges, single pages, or every N pages. Get a ZIP-free set of downloads.', icon: '✂', category: 'organize', status: 'real', accept: '.pdf' },
+  { slug: 'split-pdf', name: 'Split PDF', short: 'Break into ranges or pages', description: 'Break a PDF into page ranges, single pages, or every N pages. Download the results as one ZIP or separately.', icon: '✂', category: 'organize', status: 'real', accept: '.pdf' },
   { slug: 'organize-pdf', name: 'Organize Pages', short: 'Reorder, rotate, delete', description: 'See every page as a thumbnail. Drag to reorder, rotate any page, delete what you don\'t need.', icon: '▦', category: 'organize', status: 'real', accept: '.pdf', custom: 'organize' },
   { slug: 'rotate-pdf', name: 'Rotate PDF', short: 'Turn all pages', description: 'Rotate every page in a PDF by 90, 180 or 270 degrees.', icon: '⟳', category: 'organize', status: 'real', accept: '.pdf' },
   { slug: 'delete-pages', name: 'Delete Pages', short: 'Remove pages by number', description: 'Remove specific pages or ranges from a PDF.', icon: '⌫', category: 'organize', status: 'real', accept: '.pdf' },
@@ -54,9 +54,9 @@ export const TOOLS: ToolMeta[] = [
   { slug: 'mobi-to-pdf', name: 'MOBI to PDF', short: 'Kindle → PDF', description: 'Turn Kindle MOBI files into clean PDFs you can print, share and read anywhere.', icon: '📖', category: 'convert', status: 'demo', accept: '.mobi' },
 
   // edit & sign
-  { slug: 'sign-pdf', name: 'Sign PDF', short: 'Draw or type a signature', description: 'Add typed or drawn signatures, names and dates. Download a professional file ready to share.', icon: '✍', category: 'edit', status: 'real', accept: '.pdf', custom: 'sign' },
-  { slug: 'add-watermark', name: 'Add Watermark', short: 'Stamp text on pages', description: 'Stamp PDFs with text. Adjust size, opacity, rotation and color to mark drafts, copies and confidential pages.', icon: '◈', category: 'edit', status: 'real', accept: '.pdf' },
-  { slug: 'page-numbers', name: 'Page Numbers', short: 'Add numbering', description: 'Stamp page numbers on every page, in the position and format you choose.', icon: '#', category: 'edit', status: 'real', accept: '.pdf' },
+  { slug: 'sign-pdf', name: 'Sign PDF', short: 'Draw or type a signature', description: 'Draw, type or upload a signature, place it on any page, add a date, and download a file ready to share.', icon: '✍', category: 'edit', status: 'real', accept: '.pdf', custom: 'sign' },
+  { slug: 'add-watermark', name: 'Add Watermark', short: 'Stamp text on pages', description: 'Stamp PDFs with text. Adjust size, opacity, rotation, colour and which pages to mark, for drafts, copies and confidential documents.', icon: '◈', category: 'edit', status: 'real', accept: '.pdf' },
+  { slug: 'page-numbers', name: 'Page Numbers', short: 'Add numbering', description: 'Stamp page numbers in the position and format you choose, and leave a cover page unnumbered.', icon: '#', category: 'edit', status: 'real', accept: '.pdf' },
   { slug: 'edit-metadata', name: 'Edit Metadata', short: 'Title, author, keywords', description: 'Set the title, author, subject and keywords stored inside a PDF.', icon: 'ⓘ', category: 'edit', status: 'real', accept: '.pdf' },
 
   // security

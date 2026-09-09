@@ -6,10 +6,20 @@ import { useSiteConfig } from '../admin/useSiteConfig'
 import { breadcrumbSchema, softwareSchema, useSeo } from '../lib/seo'
 import '../features/pdf/tools.css'
 
+/** Splits "Cut the clutter." into "Cut the " + "clutter." so only the last word is emphasised. */
+function lastWord(text: string): [string, string] {
+  const t = text.trim()
+  if (!t) return ['', '']
+  const i = t.lastIndexOf(' ')
+  return i === -1 ? ['', t] : [t.slice(0, i + 1), t.slice(i + 1)]
+}
+
 export default function Home() {
   const nav = useNavigate()
   const cfg = useSiteConfig()
   const tools = useVisibleTools()
+  const [h1Lead, h1Last] = lastWord(cfg.home.headline1)
+  const [h2Lead, h2Last] = lastWord(cfg.home.headline2)
   useSeo({
     title: `${cfg.site.name} — ${cfg.site.tagline}`,
     description: cfg.site.description,
@@ -50,9 +60,11 @@ export default function Home() {
         <div className="container center">
           <span className="eyebrow">{cfg.home.eyebrow}</span>
           <h1 style={{ maxWidth: '14ch', margin: '0 auto 1rem' }}>
-            <span className="acid-mark">{cfg.home.headline1}</span>
+            {h1Lead}
+            {h1Last && <span className="acid-mark">{h1Last}</span>}
             <br />
-            {cfg.home.headline2}
+            {h2Lead}
+            {h2Last && <span className="alarm">{h2Last}</span>}
           </h1>
           <p className="lead" style={{ margin: '0 auto 2.5rem' }}>{cfg.home.lead}</p>
 

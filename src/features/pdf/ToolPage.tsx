@@ -1,9 +1,8 @@
 import { lazy, Suspense } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { TOOLS } from './toolsMeta'
-import { useTool } from './useTools'
+import { useTool, useVisibleTools } from './useTools'
 import { postsForTool } from '../../content'
-import { breadcrumbSchema, softwareSchema, faqSchema, useSeo } from '../../lib/seo'
+import { breadcrumbSchema, softwareSchema, useSeo } from '../../lib/seo'
 import { StatusBadge, ToolCard } from './ToolCard'
 import { GenericTool } from './GenericTool'
 import './tools.css'
@@ -18,8 +17,8 @@ export default function ToolPage() {
   const { slug = '' } = useParams()
   const tool = useTool(slug)
   const key = slug // remounts the tool UI when the route changes
+  const allTools = useVisibleTools()
   const guides = postsForTool(slug).slice(0, 4)
-  const faqs = guides.map((g) => ({ q: g.title, a: g.answer }))
 
   useSeo({
     title: tool ? `${tool.name} — Free, In Your Browser` : 'Tool not found',
@@ -35,7 +34,6 @@ export default function ToolPage() {
             { name: tool.name, path: `/tools/${tool.slug}` },
           ]),
           softwareSchema({ name: tool.name, description: tool.description, path: `/tools/${tool.slug}` }),
-          ...(faqs.length ? [faqSchema(faqs)] : []),
         ]
       : [],
   })
@@ -51,7 +49,7 @@ export default function ToolPage() {
     )
   }
 
-  const related = TOOLS.filter((t) => t.category === tool.category && t.slug !== tool.slug).slice(0, 4)
+  const related = allTools.filter((t) => t.category === tool.category && t.slug !== tool.slug).slice(0, 4)
 
   return (
     <div className="container">

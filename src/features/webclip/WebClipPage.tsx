@@ -4,6 +4,7 @@ import { fetchArticle } from '../../lib/fetchArticle'
 import { cleanHtml, cleanPastedHtml, type CleanArticle } from '../../lib/readability'
 import { store } from '../../lib/store'
 import { useToast } from '../../components/ui/Toast'
+import { breadcrumbSchema, softwareSchema, useSeo } from '../../lib/seo'
 import { Editor } from './Editor'
 import { SAMPLES, sampleById } from './samples'
 import { POSTS } from '../../pages/blogPosts'
@@ -39,6 +40,26 @@ export default function WebClipPage() {
   const inputRef = useRef<HTMLInputElement>(null)
   const reqId = useRef(0) // ignore results from a fetch the user has already abandoned
   const history = store.getHistory()
+
+  useSeo({
+    title: article ? `${article.title} — PrintxPDF` : 'Print Any Web Page Without Ads',
+    description: article
+      ? `A clean, printable version of ${article.title}.`.slice(0, 158)
+      : 'Paste a URL and get a clean, printable version of any web page. Ads, menus and comment walls removed. Print, save as PDF or email it, free and with no upload.',
+    path: '/print',
+    keywords: ['print web page', 'printer friendly', 'webpage to pdf', 'remove ads before printing'],
+    // the editor view is a working surface for one visitor's URL, not an indexable page
+    noindex: !!article,
+    schema: article
+      ? []
+      : [
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Print a web page', path: '/print' },
+          ]),
+          softwareSchema({ name: 'Web page printer', description: 'Strip ads and clutter from any web page, then print it or save it as a PDF.', path: '/print' }),
+        ],
+  })
 
   const load = async (target: string) => {
     const id = ++reqId.current

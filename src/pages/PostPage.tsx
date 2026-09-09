@@ -14,14 +14,16 @@ const slugify = (s: string) =>
 /** Renders inline markup: **bold**, [text](/path) and `code`. Content is authored by us, not user input. */
 function Rich({ x }: { x: string }) {
   const nodes: React.ReactNode[] = []
-  const re = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(([^)]+)\)|`([^`]+)`/g
+  // link paths may contain balanced parentheses, e.g. /blog/x/y(2)
+  const re = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(((?:[^()]|\([^()]*\))+)\)|`([^`]+)`/g
   let last = 0
   let m: RegExpExecArray | null
   let i = 0
   while ((m = re.exec(x))) {
     if (m.index > last) nodes.push(x.slice(last, m.index))
-    if (m[1]) nodes.push(<strong key={i++}>{m[1]}</strong>)
-    else if (m[2] && m[3])
+    // dispatch on which group matched, not on truthiness — the literal "0" is falsy
+    if (m[1] !== undefined) nodes.push(<strong key={i++}>{m[1]}</strong>)
+    else if (m[2] !== undefined && m[3] !== undefined)
       nodes.push(
         m[3].startsWith('/') ? (
           <Link key={i++} to={m[3]}>
@@ -33,7 +35,7 @@ function Rich({ x }: { x: string }) {
           </a>
         ),
       )
-    else if (m[4]) nodes.push(<code key={i++} className="inline">{m[4]}</code>)
+    else if (m[4] !== undefined) nodes.push(<code key={i++} className="inline">{m[4]}</code>)
     last = re.lastIndex
   }
   if (last < x.length) nodes.push(x.slice(last))
@@ -89,7 +91,8 @@ function BlockView({ b, n }: { b: Block; n: number }) {
       return (
         <ol className="steps">
           {b.items.map((it, i) => (
-            <li key={i} id={`step-${i + 1}`}>
+            // a post may contain several procedures, so anchors are namespaced by block
+            <li key={i} id={`step-${n}-${i + 1}`}>
               <strong>{it.h}</strong>
               <Rich x={it.x} />
             </li>
@@ -98,12 +101,15 @@ function BlockView({ b, n }: { b: Block; n: number }) {
       )
     case 'table':
       return (
+        <div className="table-scroll" tabIndex={0} role="region" aria-label={b.caption || 'Table'}>
         <table className="table">
           {b.caption && <caption className="muted" style={{ captionSide: 'bottom', fontSize: '0.8rem', paddingTop: '0.5rem', textAlign: 'left' }}>{b.caption}</caption>}
           <thead>
             <tr>
               {b.head.map((h) => (
-                <th key={h}>{h}</th>
+                <th key={h} scope="col">
+                  {h}
+                </th>
               ))}
             </tr>
           </thead>
@@ -119,6 +125,7 @@ function BlockView({ b, n }: { b: Block; n: number }) {
             ))}
           </tbody>
         </table>
+        </div>
       )
     case 'note':
     case 'tip':
@@ -162,7 +169,10 @@ export default function PostPage() {
   const allPosts = useAllPosts()
   const valid = post && cluster && post.cluster === cluster.slug
   const path = `/blog/${clusterSlug}/${postSlug}`
-  const steps = post?.body.find((b) => b.t === 'steps')
+  // a post can document more than one procedure; HowTo gets all of them, in order
+  const stepBlocks = (post?.body || []).flatMap((b, i) => (b.t === 'steps' ? [{ block: b, index: i }] : []))
+  const allSteps = stepBlocks.flatMap(({ block }) => block.items)
+  const stepAnchors = stepBlocks.flatMap(({ block, index }) => block.items.map((_, i) => `step-${index}-${i + 1}`))
 
   useSeo({
     title: post?.metaTitle || 'Not found',
@@ -193,7 +203,7 @@ export default function PostPage() {
               readMinutes: post.readMinutes,
             }),
             ...(post.faqs.length ? [faqSchema(post.faqs)] : []),
-            ...(steps && steps.t === 'steps' ? [howToSchema({ title: post.title, description: post.metaDescription, steps: steps.items, path })] : []),
+            ...(allSteps.length ? [howToSchema({ title: post.title, description: post.metaDescription, steps: allSteps, path, anchors: stepAnchors })] : []),
           ]
         : [],
   })

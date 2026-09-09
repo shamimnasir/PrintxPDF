@@ -39,7 +39,7 @@ const FIELDS: Record<string, Field[]> = {
   ],
   'pdf-to-jpg': [
     { key: 'format', label: 'Format', type: 'select', options: [['jpg', 'JPG'], ['png', 'PNG']], default: 'jpg' },
-    { key: 'scale', label: 'Resolution', type: 'select', options: [['1', 'Screen · 72 dpi'], ['2', 'Print · 144 dpi'], ['3', 'High · 216 dpi']], default: '2' },
+    { key: 'scale', label: 'Resolution', type: 'select', options: [['1', 'Screen · 72 dpi'], ['2', 'Draft print · 144 dpi'], ['3', 'Good print · 216 dpi'], ['4.167', 'Full print · 300 dpi']], default: '2' },
     { key: 'pages', label: 'Pages', type: 'text', default: '', placeholder: 'All pages (or e.g. 1-3)' },
   ],
   'jpg-to-pdf': [
@@ -54,12 +54,14 @@ const FIELDS: Record<string, Field[]> = {
     { key: 'opacity', label: 'Opacity', type: 'range', default: 0.25, min: 0.05, max: 1, step: 0.05 },
     { key: 'rotation', label: 'Rotation', type: 'range', default: 35, min: -90, max: 90, step: 5 },
     { key: 'color', label: 'Color', type: 'select', options: [['grey', 'Grey'], ['red', 'Red'], ['blue', 'Blue'], ['black', 'Black']], default: 'grey' },
+    { key: 'pages', label: 'Pages', type: 'text', default: '', placeholder: 'All pages (or e.g. 1, 3-5)', help: 'Leave blank to mark every page.' },
   ],
   'page-numbers': [
     { key: 'position', label: 'Position', type: 'select', options: [['bottom-center', 'Bottom center'], ['bottom-right', 'Bottom right'], ['bottom-left', 'Bottom left'], ['top-right', 'Top right'], ['top-center', 'Top center']], default: 'bottom-center' },
     { key: 'format', label: 'Format', type: 'select', options: [['n', '1, 2, 3'], ['n-of-total', '1 / 12'], ['page-n', 'Page 1']], default: 'n' },
     { key: 'size', label: 'Font size', type: 'number', default: 11, min: 6, max: 36 },
     { key: 'start', label: 'Start at', type: 'number', default: 1, min: 0 },
+    { key: 'skipFirst', label: 'Leave first N pages unnumbered', type: 'number', default: 0, min: 0, help: 'Use 1 to skip a cover page. Numbering then starts on page 2.' },
   ],
   'edit-metadata': [
     { key: 'title', label: 'Title', type: 'text', default: '' },
@@ -174,10 +176,10 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
           out = await E.pdfToExcel(f, onP)
           break
         case 'add-watermark':
-          out = await E.watermark(f, { text: s('text'), size: n('size'), opacity: n('opacity'), rotation: n('rotation'), color: s('color') as 'grey', position: s('position') as 'center' })
+          out = await E.watermark(f, { text: s('text'), size: n('size'), opacity: n('opacity'), rotation: n('rotation'), color: s('color') as 'grey', position: s('position') as 'center', pages: s('pages') })
           break
         case 'page-numbers':
-          out = await E.pageNumbers(f, { position: s('position') as 'bottom-center', format: s('format') as 'n', size: n('size'), start: n('start') })
+          out = await E.pageNumbers(f, { position: s('position') as 'bottom-center', format: s('format') as 'n', size: n('size'), start: n('start'), skipFirst: n('skipFirst') })
           break
         case 'edit-metadata':
           out = await E.setMetadata(f, { title: s('title'), author: s('author'), subject: s('subject'), keywords: s('keywords') })
@@ -250,7 +252,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
             <strong className="alarm">Something went wrong.</strong> {error}
           </div>
         )}
-        <ResultList outputs={results} />
+        <ResultList outputs={results} zipName={`${tool.slug}-output.zip`} />
       </div>
 
       <div className="card stack">

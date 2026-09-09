@@ -1,9 +1,18 @@
 import { Link } from 'react-router-dom'
+import { breadcrumbSchema, useSeo } from '../lib/seo'
 import { useToast } from '../components/ui/Toast'
 import { store } from '../lib/store'
 import { useUser } from '../features/account/useUser'
 
 export default function Pricing() {
+  useSeo({
+    title: 'Pricing — Every Browser Tool Is Free',
+    description: 'Every PDF tool and the web-page cleaner are free forever, because they run in your browser. Pro and API tiers cover the WordPress plugin and server-side jobs.',
+    path: '/pricing',
+    keywords: ['free pdf tools', 'pdf tool pricing'],
+    schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Pricing', path: '/pricing' }])],
+  })
+
   const user = useUser()
   const { toast } = useToast()
   const pick = (plan: 'free' | 'pro') => {
