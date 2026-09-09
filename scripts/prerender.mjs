@@ -469,7 +469,7 @@ async function main() {
     {
       route: '/wordpress',
       title: 'WordPress Print & PDF Button Plugin',
-      description: 'Add a Print, PDF and Email button to every WordPress post. Works with standard themes, custom post types, Gutenberg blocks, Elementor and WooCommerce orders.',
+      description: 'Free plugin that adds Print, PDF and Email buttons to every WordPress post or page: any public post type, shortcode or block editor, no account, no API key.',
       h1: 'A print button your readers will actually use.',
       body: ['Drop a Print, PDF and Email button onto every post and page. Readers get a clean version of your content with the ads, widgets, share bars and comments removed, and they can delete paragraphs, resize text and drop images before printing.'],
       links: [['/blog/publishers-wordpress/add-print-button-to-wordpress', 'How to add a print button to WordPress'], ['/website-button', 'Button generator']],
@@ -518,11 +518,11 @@ async function main() {
     {
       route: '/extension-privacy',
       title: 'Chrome Extension Privacy Policy',
-      description: 'What the PrintxPDF Chrome extension can see and store: the address of the tab you click on, one preference, and nothing else. It sends no data anywhere.',
-      h1: 'It reads one address, when you ask.',
+      description: 'The PrintxPDF Chrome extension collects nothing and sends nothing. It reads the address of the tab you click on, stores one preference, and puts a selection on your clipboard only when you ask.',
+      h1: 'It collects nothing. It sends nothing.',
       body: [
-        'When you click the toolbar button, press the shortcut or use a right-click entry, the extension reads the address of the tab you are on (or the link you right-clicked) and opens it at printxpdf.com. Chrome\'s activeTab permission grants that access for that click and that tab only; it cannot read pages in the background and does not ask for access to all websites. "Print just this selection" copies your selected text to your clipboard inside the page; it is not sent or stored.',
-        'It stores one preference — whether to open the cleaner in a new tab — in Chrome\'s extension storage on your device. It makes no network requests of its own, has no analytics, no advertising and no remote code, and sells or shares nothing. Effective 10 September 2026, version 1.0.0 and later.',
+        'Last updated 10 September 2026. The extension has no server of its own, no account, no analytics, no tracking, no advertising and no third party. It stores two values on your own machine: the "Open in a new tab" preference (chrome.storage.sync, synchronised between your own Chrome profiles by Google) and a timestamp plus a "was the copy blocked?" flag from the last "Print just this selection" (chrome.storage.local) — never the selected text. Both are deleted when you uninstall.',
+        'It reads the address of the tab you are on only when you click the icon, choose a right-click item or press the shortcut (Chrome\'s activeTab permission: one tab, your gesture, no standing access to any website). For "Print just this selection" it turns your selected text into HTML and places it on your clipboard (the clipboardWrite permission); it goes nowhere else. It makes no network requests and contains no remote code. Opening printxpdf.com/print is an ordinary page visit governed by the site privacy policy. We collect no user data, so we sell, share and transfer none, meeting the Chrome Web Store Limited Use requirements; it collects nothing from children; uninstalling removes both values; any change to these practices is published here before it ships.',
       ],
       links: [['/extensions/chrome', 'Chrome extension'], ['/privacy', 'Site privacy policy']],
     },

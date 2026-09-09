@@ -29,6 +29,8 @@ const REQUIRED_FILES = [
   'uninstall.php',
   'LICENSE',
   'assets/printxpdf.css',
+  'assets/printxpdf.js',
+  'assets/printxpdf-admin.css',
   'languages/printxpdf.pot',
 ]
 
@@ -63,16 +65,52 @@ const SANITIZERS = [
   'wp_kses', 'filter_var', 'wp_parse_id_list',
 ]
 
+// Patterns Plugin Check (PCP) and the Plugin Review Team flag. Each entry is
+// [regex, message]; a hit anywhere in a PHP file fails the build.
+const DISCOURAGED = [
+  [/\berror_log\s*\(/, 'error_log() left in the code'],
+  [/\bvar_dump\s*\(/, 'var_dump() left in the code'],
+  [/\bprint_r\s*\(/, 'print_r() left in the code'],
+  [/\bvar_export\s*\(/, 'var_export() left in the code'],
+  [/(?<!wp_)\bjson_encode\s*\(/, 'use wp_json_encode() rather than json_encode()'],
+  [/\bstrip_tags\s*\(/, 'use wp_strip_all_tags() rather than strip_tags()'],
+  [/\bdate\s*\(/, 'use gmdate() or current_time() rather than date()'],
+  [/(?<![_a-z])\btime\s*\(/, 'use current_time() rather than time()'],
+  [/\$wpdb\b/, 'direct database access'],
+  [/\bextract\s*\(/, 'extract() is discouraged'],
+  [/\bserialize\s*\(/, 'serialize() is discouraged'],
+  [/\bmove_uploaded_file\s*\(/, 'file upload handling'],
+  [/\b(fopen|fwrite|file_put_contents|unlink|rename|mkdir)\s*\(/, 'direct filesystem write, use WP_Filesystem'],
+  [/(?<![_a-z])_e\s*\(/, 'use esc_html_e() rather than the unescaped _e()'],
+  [/(?<![_a-z])_ex\s*\(/, 'use an escaped alternative rather than _ex()'],
+  [/<script[\s>]/i, 'inline <script>, enqueue it instead'],
+  [/<style[\s>]/i, 'inline <style>, enqueue it instead'],
+  [/\sstyle\s*=\s*["']/, 'inline style attribute, move it to an enqueued stylesheet'],
+  [/esc_url_raw\s*\(\s*\$?[\w'"]+\s*\)\s*\./, 'esc_url_raw() sanitizes, it does not escape output; use esc_url()'],
+]
+
 const OUTBOUND = [
   'wp_remote_get', 'wp_remote_post', 'wp_remote_head', 'wp_remote_request',
   'curl_init', 'curl_exec', 'curl_setopt', 'fsockopen', 'stream_socket_client',
 ]
 
+// `--draft` packages a zip even when the only outstanding problems are the
+// human steps listed in wordpress-plugin/SUBMISSION.md. A submission build
+// must be run WITHOUT it: those items fail WordPress.org validation.
+const DRAFT = process.argv.includes('--draft')
+
 const failures = []
+const blockers = []
 const notes = []
 
 function fail(message) {
   failures.push(message)
+}
+
+// A human-action item: fatal for a submission build, downgraded under --draft.
+function blocker(message) {
+  if (DRAFT) blockers.push(message)
+  else failures.push(message)
 }
 
 function ok(message) {
@@ -153,6 +191,85 @@ const stableTag = (readme.match(/^Stable tag:\s*(.+)$/m) || [])[1]?.trim()
 if (stableTag !== version) fail(`Stable tag "${stableTag}" does not match plugin Version "${version}"`)
 else ok(`version ${version} matches readme Stable tag`)
 
+// Tags: the directory hard-limits these to 5.
+// https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/
+const tags = ((readme.match(/^Tags:\s*(.*)$/m) || [])[1] || '')
+  .split(',')
+  .map((t) => t.trim())
+  .filter(Boolean)
+if (tags.length === 0) fail('readme.txt Tags is empty')
+else if (tags.length > 5) fail(`readme.txt has ${tags.length} tags, the directory allows at most 5`)
+else ok(`readme.txt has ${tags.length} tag(s), within the limit of 5`)
+
+// Contributors must be real wordpress.org usernames; a placeholder fails
+// submission validation, so refuse to package one.
+const contributors = ((readme.match(/^Contributors:\s*(.*)$/m) || [])[1] || '')
+  .split(',')
+  .map((c) => c.trim())
+  .filter(Boolean)
+if (!contributors.length) {
+  fail('readme.txt Contributors is empty')
+} else if (contributors.some((c) => /todo|xxx|placeholder|your-?username|example/i.test(c))) {
+  blocker(
+    `readme.txt Contributors is still a placeholder (${contributors.join(', ')}). ` +
+      'Set it to a real, existing WordPress.org username before submitting. ' +
+      'See wordpress-plugin/SUBMISSION.md.'
+  )
+} else {
+  ok(`readme.txt Contributors set (${contributors.join(', ')})`)
+}
+
+// Short description: the line under the header block, max 150 chars, no markup.
+const shortDesc = (readme.split(/\n\s*\n/)[1] || '').trim()
+if (!shortDesc) fail('readme.txt has no short description under the header block')
+else if (shortDesc.length > 150) fail(`readme.txt short description is ${shortDesc.length} chars, the limit is 150`)
+else if (shortDesc.startsWith('==')) fail('readme.txt short description is missing (a section starts immediately)')
+else ok(`readme.txt short description is ${shortDesc.length}/150 chars`)
+
+// "Tested up to" must be a real WP version, and reviewers reject stale values.
+const testedUpTo = ((readme.match(/^Tested up to:\s*(.*)$/m) || [])[1] || '').trim()
+if (!/^\d+\.\d+(\.\d+)?$/.test(testedUpTo)) fail(`readme.txt "Tested up to: ${testedUpTo}" is not a WordPress version number`)
+else ok(`readme.txt Tested up to ${testedUpTo}`)
+
+// Guideline 6 / Review Checklist: a plugin that points users at a third-party
+// service MUST disclose it in the readme with links to terms and privacy.
+// https://make.wordpress.org/plugins/handbook/performing-reviews/review-checklist/
+const endpointHost = (mainSrc.match(/PRINTXPDF_ENDPOINT',\s*'https?:\/\/([^/']+)/) || [])[1]
+if (endpointHost) {
+  if (!/^=+\s*External service/im.test(readme)) {
+    fail(`readme.txt has no "External service" section, required because the plugin links to ${endpointHost}`)
+  } else if (!readme.includes(`${endpointHost}/terms`) || !readme.includes(`${endpointHost}/privacy`)) {
+    fail('readme.txt external-service section must link to both the terms of use and the privacy policy')
+  } else if (!readme.includes(endpointHost)) {
+    fail(`readme.txt external-service section does not name ${endpointHost}`)
+  } else {
+    ok(`readme.txt discloses the external service ${endpointHost} with terms and privacy links`)
+  }
+
+  // The same disclosure is required on the Settings page.
+  if (!/External service/.test(mainSrc) || !mainSrc.includes('/terms') || !mainSrc.includes('/privacy')) {
+    fail('the settings screen must repeat the external-service disclosure with terms and privacy links')
+  } else {
+    ok('settings screen repeats the external-service disclosure')
+  }
+}
+
+// Slug consistency: text domain, textdomain path, POT domain, readme, option prefix.
+const textDomain = headers['Text Domain']
+if (textDomain !== SLUG) fail(`Text Domain "${textDomain}" is not the slug "${SLUG}"`)
+if (!new RegExp(`load_plugin_textdomain\\(\\s*'${SLUG}'`).test(mainSrc)) {
+  fail(`load_plugin_textdomain() does not use the '${SLUG}' domain`)
+}
+const potPath = path.join(SRC, 'languages', `${SLUG}.pot`)
+if (existsSync(potPath) && !readFileSync(potPath, 'utf8').includes(`X-Domain: ${SLUG}`)) {
+  fail(`languages/${SLUG}.pot does not declare X-Domain: ${SLUG}`)
+}
+const badDomains = [...mainSrc.matchAll(/(?:__|_e|_x|esc_html__|esc_attr__|esc_html_e|esc_attr_e)\(\s*(?:'[^']*'|"[^"]*")\s*,\s*([^)]+)\)/g)]
+  .map((m) => m[1].trim())
+  .filter((d) => d !== `'${SLUG}'`)
+if (badDomains.length) fail(`i18n calls with a non-literal or wrong text domain: ${[...new Set(badDomains)].join(', ')}`)
+else ok(`every i18n call uses the literal '${SLUG}' text domain`)
+
 const phpFiles = files.filter((f) => f.endsWith('.php'))
 let superglobalHits = 0
 
@@ -189,8 +306,32 @@ for (const rel of phpFiles) {
 
     if (/\becho\s+\$/.test(code)) fail(`${at}: echoing a bare variable, escape it first`)
     if (/<\?=/.test(code)) fail(`${at}: short echo tag, use an escaped echo`)
+
+    // Skip docblock/comment bodies for the discouraged-pattern sweep.
+    if (!/^\s*(\*|\/\*|#)/.test(line)) {
+      for (const [pattern, message] of DISCOURAGED) {
+        if (pattern.test(code)) fail(`${at}: ${message}`)
+      }
+    }
+
+
   })
 }
+
+// Any wp_enqueue_*/wp_register_* call that supplies a src must also supply a
+// version. Re-enqueueing an already-registered handle takes the handle alone
+// and needs no version, so those calls are skipped.
+for (const rel of phpFiles) {
+  const src = readFileSync(path.join(SRC, rel), 'utf8')
+  for (const call of src.matchAll(/wp_(?:register|enqueue)_(?:script|style)\s*\(([\s\S]{0,400}?)\)\s*;/g)) {
+    const args = call[1]
+    const hasSrc = /PRINTXPDF_URL|https?:\/\/|\.(?:css|js)['"]/.test(args)
+    if (hasSrc && !/PRINTXPDF_VERSION|'\d+\.\d+/.test(args)) {
+      fail(`${rel}: asset registered with a src but no version -> ${call[0].split('\n')[0].trim()}`)
+    }
+  }
+}
+if (!failures.some((f) => f.includes('no version'))) ok('every asset registered with a src carries an explicit version')
 
 if (superglobalHits === 0) ok('no $_POST / $_GET / $_REQUEST reads anywhere in the plugin')
 if (!failures.some((f) => f.includes('outbound'))) ok('no outbound HTTP: the plugin never calls out')
@@ -211,6 +352,10 @@ if (has('php')) {
 
 console.log('PrintxPDF WordPress plugin build\n')
 for (const note of notes) console.log(`  ok    ${note}`)
+if (blockers.length) {
+  console.log('')
+  for (const b of blockers) console.log(`  TODO  ${b}`)
+}
 if (failures.length) {
   console.log('')
   for (const f of failures) console.error(`  FAIL  ${f}`)
@@ -269,3 +414,12 @@ console.log(`  ok    archive root is a single ${SLUG}/ directory (${listing.leng
 console.log(`  ok    unzip -t reported no errors`)
 console.log(`\nBuilt  ${path.relative(ROOT, zipPath)}  (${human(size)})`)
 console.log(`Copied ${path.relative(ROOT, publicZip)}`)
+
+if (blockers.length) {
+  console.log('')
+  console.log('  ' + '!'.repeat(72))
+  console.log(`  !!  DRAFT BUILD - NOT SUBMITTABLE. ${blockers.length} human step(s) outstanding.`)
+  console.log('  !!  Fix them, then re-run without --draft before uploading to WordPress.org.')
+  console.log('  !!  See wordpress-plugin/SUBMISSION.md.')
+  console.log('  ' + '!'.repeat(72))
+}

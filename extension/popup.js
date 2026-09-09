@@ -4,15 +4,20 @@
  * No network calls, no remote code, no analytics: it reads the active tab's
  * URL (granted by activeTab when you click the icon) and hands it to
  * https://printxpdf.com/print, where the cleaning and exporting happen.
+ *
+ * Every handler is attached with addEventListener; there is no inline script
+ * and no inline event attribute anywhere in popup.html, so the strict MV3
+ * extension-page CSP is satisfied without a single relaxation.
  */
 
 const SITE = 'https://printxpdf.com'
 const PRINT_URL = `${SITE}/print`
+const PASTE_URL = `${PRINT_URL}?paste=1`
 
 const el = {
   target: document.getElementById('target'),
   clean: document.getElementById('clean'),
-  pdf: document.getElementById('pdf'),
+  paste: document.getElementById('paste'),
   copy: document.getElementById('copy'),
   status: document.getElementById('status'),
   newtab: document.getElementById('newtab'),
@@ -43,22 +48,42 @@ function pretty(url) {
   }
 }
 
+/**
+ * Says, in plain words, why this particular tab cannot be cleaned. Chrome
+ * refuses extensions on its own pages and on the Web Store; file:// pages are
+ * local to the machine, so printxpdf.com could not fetch them either.
+ */
+function whyBlocked(url) {
+  const u = String(url || '')
+  if (/^(chrome|edge|brave|opera|vivaldi|arc):/i.test(u)) return 'Chrome does not let any extension read its own pages.'
+  if (/^about:/i.test(u)) return 'This is a browser page, which no extension may read.'
+  if (/^(chrome-extension|moz-extension):/i.test(u)) return 'This is an extension page, which no extension may read.'
+  if (/^view-source:/i.test(u)) return 'View-source tabs cannot be handed to a web page. Open the page itself instead.'
+  if (/^file:/i.test(u)) return 'Local files are not on the web, so printxpdf.com cannot fetch this one. Use Paste text instead.'
+  if (/^(chromewebstore\.google\.com|chrome\.google\.com\/webstore)/i.test(u.replace(/^https?:\/\//i, ''))) {
+    return 'Chrome blocks every extension on the Web Store.'
+  }
+  if (/^data:/i.test(u)) return 'A data: URL has no address printxpdf.com could open.'
+  return 'This tab has no web address that printxpdf.com can open.'
+}
+
 /* ------------------------------------------------------------------ */
 /* startup                                                            */
 /* ------------------------------------------------------------------ */
 
+/**
+ * activeTab is granted the moment this popup opens, which is what makes
+ * tab.url readable here. No `tabs` permission and no script injection: for the
+ * URL case chrome.tabs.query is the narrowest thing that works.
+ */
 async function readActiveTab() {
-  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
-  activeTab = tab || null
-  if (isPrintable(tab?.url)) return tab.url
-  if (tab?.id == null) return null
-  // activeTab also covers this injection; it only ever reads location.href.
   try {
-    const [hit] = await chrome.scripting.executeScript({ target: { tabId: tab.id }, func: () => location.href })
-    return isPrintable(hit?.result) ? hit.result : null
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
+    activeTab = tab || null
   } catch {
-    return null
+    activeTab = null
   }
+  return isPrintable(activeTab?.url) ? activeTab.url : null
 }
 
 async function restorePreference() {
@@ -106,12 +131,13 @@ async function init() {
     el.target.title = pageUrl
     return
   }
-  el.target.textContent = 'Chrome blocks extensions on this page'
-  el.target.title = 'Browser pages (chrome://, the Web Store, the new tab page) cannot be read by any extension.'
+  // Degrade honestly: say which page this is and leave the paths that still work.
+  const reason = whyBlocked(activeTab?.url)
+  el.target.textContent = reason
+  el.target.title = reason
   el.target.classList.add('blocked')
   el.copy.disabled = true
   el.clean.textContent = 'Open PrintxPDF'
-  el.pdf.disabled = true
 }
 
 /* ------------------------------------------------------------------ */
@@ -138,33 +164,23 @@ el.clean.addEventListener('click', async () => {
   window.close()
 })
 
-el.pdf.addEventListener('click', async () => {
-  if (!pageUrl) return
-  // Same route: the site cleans the page, then its Save PDF button exports it.
-  await openTab(cleanUrlFor(pageUrl))
+el.paste.addEventListener('click', async () => {
+  // Works on every tab, including the ones Chrome keeps extensions away from.
+  await openTab(PASTE_URL)
   window.close()
 })
 
 el.copy.addEventListener('click', async () => {
   if (!pageUrl) return
   const link = cleanUrlFor(pageUrl)
-  let copied = false
   try {
     await navigator.clipboard.writeText(link)
-    copied = true
+    say('Clean link copied to the clipboard.')
   } catch {
-    try {
-      const box = document.createElement('textarea')
-      box.value = link
-      document.body.appendChild(box)
-      box.select()
-      copied = document.execCommand('copy')
-      box.remove()
-    } catch {
-      copied = false
-    }
+    // No silent failure and no second clipboard path to justify: show the link
+    // so it can be selected and copied by hand.
+    say(`Could not reach the clipboard. The link is: ${link}`, 'error')
   }
-  say(copied ? 'Clean link copied to the clipboard.' : 'Could not reach the clipboard.', copied ? 'ok' : 'error')
 })
 
 el.newtab.addEventListener('change', async () => {

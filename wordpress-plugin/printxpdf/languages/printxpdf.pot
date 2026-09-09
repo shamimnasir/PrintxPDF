@@ -1,5 +1,5 @@
 # Copyright (C) 2026 Nasir Uddin Shamim
-# This file is distributed under the GPL-2.0-or-later license.
+# This file is distributed under the GPLv2 or later license.
 msgid ""
 msgstr ""
 "Project-Id-Version: PrintxPDF Print & PDF Button 1.0.0\n"
@@ -7,188 +7,229 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Language: \n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-10T00:00:00+00:00\n"
+"POT-Creation-Date: 2026-09-09T21:31:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: hand-written\n"
+"X-Generator: xgettext\n"
 "X-Domain: printxpdf\n"
 
-#: printxpdf.php:61
+#: printxpdf.php:59
 msgid "Above the content"
 msgstr ""
 
-#: printxpdf.php:62
+#: printxpdf.php:60
 msgid "Below the content"
 msgstr ""
 
-#: printxpdf.php:63
+#: printxpdf.php:61
 msgid "Above and below the content"
 msgstr ""
 
-#: printxpdf.php:64
-msgid "Manual only (shortcode or block)"
+#: printxpdf.php:62
+msgid "Manual only (place the shortcode yourself)"
 msgstr ""
 
-#: printxpdf.php:75
+#: printxpdf.php:73
 msgid "Left"
 msgstr ""
 
-#: printxpdf.php:76
+#: printxpdf.php:74
 msgid "Center"
 msgstr ""
 
-#: printxpdf.php:77
+#: printxpdf.php:75
 msgid "Right"
 msgstr ""
 
-#: printxpdf.php:88 printxpdf.php:395 printxpdf.php:765
+#: printxpdf.php:86 printxpdf.php:393 printxpdf.php:769
 msgid "Print"
 msgstr ""
 
-#: printxpdf.php:89 printxpdf.php:788
+#: printxpdf.php:87 printxpdf.php:792
 msgid "Save as PDF"
 msgstr ""
 
-#: printxpdf.php:90 printxpdf.php:796
+#: printxpdf.php:88 printxpdf.php:800
 msgid "Email"
 msgstr ""
 
-#: printxpdf.php:269
+#: printxpdf.php:267
 msgid "Settings"
 msgstr ""
 
-#: printxpdf.php:289 printxpdf.php:290
+#: printxpdf.php:287 printxpdf.php:288
 msgid "PrintxPDF"
 msgstr ""
 
-#: printxpdf.php:318
+#: printxpdf.php:316
 msgid "Button setup"
 msgstr ""
 
-#: printxpdf.php:324
+#: printxpdf.php:322
 msgid "Placement"
 msgstr ""
 
-#: printxpdf.php:325 printxpdf.php:376
+#: printxpdf.php:323 printxpdf.php:374
 msgid "Buttons to show"
 msgstr ""
 
-#: printxpdf.php:326
+#: printxpdf.php:324
 msgid "Print button label"
 msgstr ""
 
-#: printxpdf.php:327 printxpdf.php:407
+#: printxpdf.php:325 printxpdf.php:405
 msgid "Show on"
 msgstr ""
 
-#: printxpdf.php:328
+#: printxpdf.php:326
 msgid "Alignment"
 msgstr ""
 
-#: printxpdf.php:329
+#: printxpdf.php:327
 msgid "Match my theme"
 msgstr ""
 
-#: printxpdf.php:350
-msgid "Everything below is free and runs in the visitor's browser. The plugin never calls home and never sends your content anywhere."
+#: printxpdf.php:348
+msgid ""
+"Everything below is free and runs in the visitor's browser. The plugin never "
+"calls home and never sends your content anywhere."
 msgstr ""
 
-#: printxpdf.php:365
-msgid "Choose \"Manual only\" if you would rather place the buttons yourself with the shortcode or block."
+#: printxpdf.php:363
+msgid ""
+"Choose \"Manual only\" if you would rather place the buttons yourself with "
+"the shortcode or block."
 msgstr ""
 
-#: printxpdf.php:385
+#: printxpdf.php:383
 msgid "With none ticked, nothing is rendered."
 msgstr ""
 
-#: printxpdf.php:396
-msgid "Leave empty to use the translated default. The PDF and Email buttons keep their own labels."
+#: printxpdf.php:394
+msgid ""
+"Leave empty to use the translated default. The PDF and Email buttons keep "
+"their own labels."
 msgstr ""
 
-#: printxpdf.php:416
+#: printxpdf.php:414
 msgid "Buttons are only added to single posts and pages of the types you tick."
 msgstr ""
 
-#: printxpdf.php:442
+#: printxpdf.php:440
 msgid "Let my theme style the buttons"
 msgstr ""
 
-#: printxpdf.php:444
-msgid "On: the plugin only lays the buttons out and leaves the looks to your theme. Off: the plugin applies its own minimal styling and a small print stylesheet that hides the header, footer, sidebar and comments on the printed page."
+#: printxpdf.php:442
+msgid ""
+"On: the plugin only lays the buttons out and leaves the looks to your theme. "
+"Off: the plugin applies its own minimal styling and a small print stylesheet "
+"that hides the header, footer, sidebar and comments on the printed page."
 msgstr ""
 
-#: printxpdf.php:454
+#: printxpdf.php:452
 msgid "You do not have permission to manage PrintxPDF settings."
 msgstr ""
 
-#: printxpdf.php:458
+#: printxpdf.php:456
 msgid "PrintxPDF Print & PDF Button"
 msgstr ""
 
-#: printxpdf.php:468
+#: printxpdf.php:466
 msgid "Placing the buttons by hand"
 msgstr ""
 
-#: printxpdf.php:469
-msgid "Use the shortcode anywhere a shortcode works, including the Classic editor, the Gutenberg Shortcode block and most page builders:"
+#: printxpdf.php:467
+msgid ""
+"Use the shortcode anywhere a shortcode works, including the Classic editor, "
+"the Gutenberg Shortcode block and most page builders:"
 msgstr ""
 
-#: printxpdf.php:471
+#: printxpdf.php:469
 msgid "All three attributes are optional and fall back to the settings above:"
 msgstr ""
 
-#: printxpdf.php:473
-msgid "In the block editor you can also search the inserter for the PrintxPDF Buttons block."
-msgstr ""
-
-#: printxpdf.php:475
+#: printxpdf.php:472
 msgid "What the buttons do"
 msgstr ""
 
-#: printxpdf.php:477
-msgid "Print opens the browser print dialog straight away. No network request."
+#: printxpdf.php:474
+msgid "Print calls the browser's own print dialog. Nothing leaves the page."
 msgstr ""
 
-#: printxpdf.php:478
-msgid "Save as PDF opens printxpdf.com/print in a new tab with the post URL, where the reader gets a clean, ad-free version to edit and export."
+#: printxpdf.php:475
+msgid ""
+"Save as PDF is a link to the printxpdf.com web service. See the disclosure "
+"below."
 msgstr ""
 
-#: printxpdf.php:479
-msgid "Email opens the reader's own mail app with the title and link filled in. Nothing is sent by your site."
+#: printxpdf.php:476
+msgid ""
+"Email opens the reader's own mail app with the title and link filled in. "
+"Nothing is sent by your site."
 msgstr ""
 
-#: printxpdf.php:482
+#: printxpdf.php:480
+msgid "External service: printxpdf.com"
+msgstr ""
+
+#. translators: %s: the URL of the PrintxPDF web service, rendered as literal text.
+#: printxpdf.php:485
+#, php-format
+msgid ""
+"The \"Save as PDF\" button is a plain link to %s, a third-party web service "
+"operated by the author of this plugin. It is the service that turns a page "
+"into a PDF; this plugin does not generate PDFs itself."
+msgstr ""
+
+#: printxpdf.php:490
+msgid ""
+"The plugin itself never contacts that service. It makes no outbound HTTP "
+"request of any kind, on the front end or in the admin. Data is only "
+"transmitted when a reader clicks the button, at which point the reader's own "
+"browser opens the service in a new tab."
+msgstr ""
+
+#: printxpdf.php:491
+msgid ""
+"What is transmitted at that moment: the public permalink of the post, in the "
+"query string, plus whatever the reader's browser normally sends (IP address, "
+"user agent, referrer). No post content, no site credentials, no visitor data "
+"and no information about your WordPress installation is sent by the plugin."
+msgstr ""
+
+#. translators: 1: opening anchor tag for the terms of service, 2: closing anchor tag, 3: opening anchor tag for the privacy policy, 4: closing anchor tag.
+#: printxpdf.php:496
+#, php-format
+msgid ""
+"Service terms: %1$sprintxpdf.com/terms%2$s. Privacy policy: "
+"%3$sprintxpdf.com/privacy%4$s."
+msgstr ""
+
+#: printxpdf.php:504
+msgid ""
+"No account, registration or API key is required, for you or for your "
+"readers. If you would rather send nobody to the service, untick \"Save as "
+"PDF\" above; the Print and Email buttons work entirely on the reader's own "
+"device."
+msgstr ""
+
+#: printxpdf.php:507
 msgid "Privacy"
 msgstr ""
 
-#: printxpdf.php:483
-msgid "This plugin is free with no paid tier, no API key and no upsell. It makes no outbound HTTP requests of any kind and stores exactly one option in your database."
+#: printxpdf.php:508
+msgid ""
+"This plugin is free with no paid tier and no API key. It sets no cookies, "
+"adds no tracking, registers no users, creates no database tables and stores "
+"exactly one option, which is deleted when you uninstall."
 msgstr ""
 
-#. translators: %s: link to the PrintxPDF pricing page.
-#: printxpdf.php:488
-msgid "PrintxPDF itself is a free browser tool. Its plans are listed at %s for reference only. Nothing on this page is gated."
-msgstr ""
-
-#: printxpdf.php:776
+#: printxpdf.php:780
 msgid "opens in a new tab"
 msgstr ""
 
-#: printxpdf.php:804
+#: printxpdf.php:808
 msgid "Print and PDF options"
-msgstr ""
-
-#: printxpdf.php:901 printxpdf.php:972
-msgid "PrintxPDF Buttons"
-msgstr ""
-
-#: printxpdf.php:902 printxpdf.php:973
-msgid "A Print, Save as PDF and Email button row."
-msgstr ""
-
-#: printxpdf.php:974
-msgid "PrintxPDF buttons. Rendered on the published page."
 msgstr ""

@@ -20,7 +20,7 @@
         <span class="wordmark">Print<span class="x">x</span>PDF</span>
       </header>
 
-      <p class="tagline">Strip the ads, menus and comment walls. Then print or save a PDF.</p>
+      <p class="tagline">Strip the ads, menus and comment walls. Then print or save a PDF on printxpdf.com.</p>
 
       <p class="target" id="target" title="">Reading the current tab…</p>
 
@@ -38,10 +38,10 @@
       </button>
 
       <div class="row">
-        <button class="btn btn-ghost" id="pdf" type="button">
+        <button class="btn btn-ghost" id="paste" type="button" title="Open the paste box on printxpdf.com and paste text yourself">
           <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
             <path
-              d="M12 3v11m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+              d="M9 4.5h6M8 6.5H6.5A1.5 1.5 0 0 0 5 8v11.5A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8a1.5 1.5 0 0 0-1.5-1.5H16M9.5 3h5A1.5 1.5 0 0 1 16 4.5v1A1.5 1.5 0 0 1 14.5 7h-5A1.5 1.5 0 0 1 8 5.5v-1A1.5 1.5 0 0 1 9.5 3Z"
               fill="none"
               stroke="currentColor"
               stroke-width="1.7"
@@ -49,9 +49,9 @@
               stroke-linejoin="round"
             />
           </svg>
-          Save as PDF
+          Paste text
         </button>
-        <button class="btn btn-ghost" id="copy" type="button">
+        <button class="btn btn-ghost" id="copy" type="button" title="Copy a printxpdf.com link for this page">
           <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
             <path
               d="M9 9h9a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 18 21H9a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 9 9Zm-3 6H6a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 6 3h9A1.5 1.5 0 0 1 16.5 4.5V5"
@@ -75,7 +75,7 @@
 
       <footer class="foot">
         <a href="https://printxpdf.com/tools" id="tools" target="_blank" rel="noreferrer">All PrintxPDF tools</a>
-        <span class="shortcut" id="shortcut"></span>
+        <button class="shortcut" id="shortcut" type="button"></button>
       </footer>
     </div>
     <script src="popup.js"></script>

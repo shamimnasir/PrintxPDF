@@ -38,5 +38,5 @@
 - [x] JPG screenshot output on /print
 - [x] Copy rewrite: tagline, meta, hero, how-it-works, products, print page, About, README; fabricated marquee customers removed
 - [x] /extension-privacy page + route + sitemap + prerender (Web Store requirement)
-- [ ] Chrome Web Store readiness audit — agent; WordPress.org readiness audit — agent
+- [x] Chrome Web Store readiness audit (clipboardWrite added, shortcut Alt+Shift+P, single-purpose, CSP declared, STORE_LISTING.md; human: $5 dev account, screenshots) · [x] WordPress.org readiness audit (external-service disclosure, block removed, Tested up to 7.1, full GPL text; human: real Contributors username, artwork, screenshots, PCP run)
 - [ ] Wire src/features/files components into ToolPage once agent 2 releases it; update "four conversions" wording; Api.tsx endpoint table; verify, build, deploy

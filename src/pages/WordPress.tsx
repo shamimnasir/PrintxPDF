@@ -4,7 +4,7 @@ import { breadcrumbSchema, useSeo } from '../lib/seo'
 export default function WordPress() {
   useSeo({
     title: 'WordPress Print & PDF Button Plugin',
-    description: 'Add a Print, PDF and Email button to every WordPress post. Works with standard themes, custom post types, Gutenberg blocks, Elementor and WooCommerce orders.',
+    description: 'Free plugin that adds Print, PDF and Email buttons to every WordPress post or page: any public post type, shortcode or block editor, no account, no API key.',
     path: '/wordpress',
     keywords: ['wordpress print button', 'wordpress pdf plugin', 'print friendly wordpress'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'WordPress', path: '/wordpress' }])],
@@ -58,7 +58,7 @@ export default function WordPress() {
             {[
               ['Upload and activate', 'Plugins → Add New → Upload Plugin, pick the ZIP, activate. Settings → PrintxPDF sets placement, which buttons show and which post types get them.'],
               ['Respects your theme', 'Button placement: top, bottom, or both. Floating or inline. Custom text, icon and colours.'],
-              ['Works everywhere', 'Standard posts, custom post types, WooCommerce products, Elementor and Gutenberg blocks.'],
+              ['Works everywhere', 'Any public post type you tick in the settings — posts, pages, custom types, WooCommerce products. In the block editor, drop it in with the Shortcode block.'],
               ['Clean output', 'Uses the same content extraction as this site: ads, widgets, share bars and comments removed.'],
               ['Reader controls', 'Readers can delete paragraphs, resize text and drop images before they print.'],
               ['Nothing phones home', 'No API key, no account, no tracking, and the plugin makes no outbound requests at all. Print runs in the reader\'s browser.'],

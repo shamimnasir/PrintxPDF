@@ -8,7 +8,7 @@
  * Requires PHP:      7.4
  * Author:            Nasir Uddin Shamim
  * Author URI:        https://printxpdf.com/author/nasir-uddin-shamim
- * License:           GPL-2.0-or-later
+ * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       printxpdf
  * Domain Path:       /languages
@@ -19,8 +19,6 @@
 defined( 'ABSPATH' ) || exit;
 
 define( 'PRINTXPDF_VERSION', '1.0.0' );
-define( 'PRINTXPDF_FILE', __FILE__ );
-define( 'PRINTXPDF_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PRINTXPDF_URL', plugin_dir_url( __FILE__ ) );
 define( 'PRINTXPDF_OPTION', 'printxpdf_settings' );
 define( 'PRINTXPDF_GROUP', 'printxpdf_settings_group' );
@@ -61,7 +59,7 @@ function printxpdf_placements() {
 		'top'    => __( 'Above the content', 'printxpdf' ),
 		'bottom' => __( 'Below the content', 'printxpdf' ),
 		'both'   => __( 'Above and below the content', 'printxpdf' ),
-		'manual' => __( 'Manual only (shortcode or block)', 'printxpdf' ),
+		'manual' => __( 'Manual only (place the shortcode yourself)', 'printxpdf' ),
 	);
 }
 
@@ -376,7 +374,7 @@ function printxpdf_field_buttons() {
 	echo '<legend class="screen-reader-text">' . esc_html__( 'Buttons to show', 'printxpdf' ) . '</legend>';
 	foreach ( printxpdf_button_types() as $key => $label ) {
 		$id = 'printxpdf-buttons-' . $key;
-		echo '<label for="' . esc_attr( $id ) . '" style="display:block;margin-bottom:4px;">';
+		echo '<label class="printxpdf-choice" for="' . esc_attr( $id ) . '">';
 		echo '<input type="checkbox" id="' . esc_attr( $id ) . '" name="' . esc_attr( PRINTXPDF_OPTION ) . '[buttons][' . esc_attr( $key ) . ']" value="1"' . checked( ! empty( $settings['buttons'][ $key ] ), true, false ) . ' /> ';
 		echo esc_html( $label );
 		echo '</label>';
@@ -407,7 +405,7 @@ function printxpdf_field_post_types() {
 	echo '<legend class="screen-reader-text">' . esc_html__( 'Show on', 'printxpdf' ) . '</legend>';
 	foreach ( printxpdf_available_post_types() as $slug => $label ) {
 		$id = 'printxpdf-post-type-' . $slug;
-		echo '<label for="' . esc_attr( $id ) . '" style="display:block;margin-bottom:4px;">';
+		echo '<label class="printxpdf-choice" for="' . esc_attr( $id ) . '">';
 		echo '<input type="checkbox" id="' . esc_attr( $id ) . '" name="' . esc_attr( PRINTXPDF_OPTION ) . '[post_types][]" value="' . esc_attr( $slug ) . '"' . checked( in_array( $slug, $settings['post_types'], true ), true, false ) . ' /> ';
 		echo esc_html( $label );
 		echo '</label>';
@@ -470,26 +468,44 @@ function printxpdf_render_settings_page() {
 		<p><code>[printxpdf]</code></p>
 		<p><?php echo esc_html__( 'All three attributes are optional and fall back to the settings above:', 'printxpdf' ); ?></p>
 		<p><code>[printxpdf buttons="print,pdf" label="Print this" align="center"]</code></p>
-		<p><?php echo esc_html__( 'In the block editor you can also search the inserter for the PrintxPDF Buttons block.', 'printxpdf' ); ?></p>
 
 		<h2><?php echo esc_html__( 'What the buttons do', 'printxpdf' ); ?></h2>
-		<ul style="list-style:disc;margin-left:20px;">
-			<li><?php echo esc_html__( 'Print opens the browser print dialog straight away. No network request.', 'printxpdf' ); ?></li>
-			<li><?php echo esc_html__( 'Save as PDF opens printxpdf.com/print in a new tab with the post URL, where the reader gets a clean, ad-free version to edit and export.', 'printxpdf' ); ?></li>
+		<ul class="printxpdf-list">
+			<li><?php echo esc_html__( 'Print calls the browser\'s own print dialog. Nothing leaves the page.', 'printxpdf' ); ?></li>
+			<li><?php echo esc_html__( 'Save as PDF is a link to the printxpdf.com web service. See the disclosure below.', 'printxpdf' ); ?></li>
 			<li><?php echo esc_html__( 'Email opens the reader\'s own mail app with the title and link filled in. Nothing is sent by your site.', 'printxpdf' ); ?></li>
 		</ul>
 
+		<div class="printxpdf-service">
+			<h2><?php echo esc_html__( 'External service: printxpdf.com', 'printxpdf' ); ?></h2>
+			<p>
+				<?php
+				printf(
+					/* translators: %s: the URL of the PrintxPDF web service, rendered as literal text. */
+					esc_html__( 'The "Save as PDF" button is a plain link to %s, a third-party web service operated by the author of this plugin. It is the service that turns a page into a PDF; this plugin does not generate PDFs itself.', 'printxpdf' ),
+					'<code>' . esc_html( PRINTXPDF_ENDPOINT ) . '</code>'
+				);
+				?>
+			</p>
+			<p><?php echo esc_html__( 'The plugin itself never contacts that service. It makes no outbound HTTP request of any kind, on the front end or in the admin. Data is only transmitted when a reader clicks the button, at which point the reader\'s own browser opens the service in a new tab.', 'printxpdf' ); ?></p>
+			<p><?php echo esc_html__( 'What is transmitted at that moment: the public permalink of the post, in the query string, plus whatever the reader\'s browser normally sends (IP address, user agent, referrer). No post content, no site credentials, no visitor data and no information about your WordPress installation is sent by the plugin.', 'printxpdf' ); ?></p>
+			<p>
+				<?php
+				printf(
+					/* translators: 1: opening anchor tag for the terms of service, 2: closing anchor tag, 3: opening anchor tag for the privacy policy, 4: closing anchor tag. */
+					esc_html__( 'Service terms: %1$sprintxpdf.com/terms%2$s. Privacy policy: %3$sprintxpdf.com/privacy%4$s.', 'printxpdf' ),
+					'<a href="' . esc_url( 'https://printxpdf.com/terms' ) . '" target="_blank" rel="noopener noreferrer">',
+					'</a>',
+					'<a href="' . esc_url( 'https://printxpdf.com/privacy' ) . '" target="_blank" rel="noopener noreferrer">',
+					'</a>'
+				);
+				?>
+			</p>
+			<p><?php echo esc_html__( 'No account, registration or API key is required, for you or for your readers. If you would rather send nobody to the service, untick "Save as PDF" above; the Print and Email buttons work entirely on the reader\'s own device.', 'printxpdf' ); ?></p>
+		</div>
+
 		<h2><?php echo esc_html__( 'Privacy', 'printxpdf' ); ?></h2>
-		<p><?php echo esc_html__( 'This plugin is free with no paid tier, no API key and no upsell. It makes no outbound HTTP requests of any kind and stores exactly one option in your database.', 'printxpdf' ); ?></p>
-		<p>
-			<?php
-			printf(
-				/* translators: %s: link to the PrintxPDF pricing page. */
-				esc_html__( 'PrintxPDF itself is a free browser tool. Its plans are listed at %s for reference only. Nothing on this page is gated.', 'printxpdf' ),
-				'<a href="' . esc_url( 'https://printxpdf.com/pricing' ) . '" target="_blank" rel="noopener">' . esc_html( 'printxpdf.com/pricing' ) . '</a>'
-			);
-			?>
-		</p>
+		<p><?php echo esc_html__( 'This plugin is free with no paid tier and no API key. It sets no cookies, adds no tracking, registers no users, creates no database tables and stores exactly one option, which is deleted when you uninstall.', 'printxpdf' ); ?></p>
 	</div>
 	<?php
 }
@@ -498,48 +514,43 @@ function printxpdf_render_settings_page() {
  * Assets
  * ---------------------------------------------------------------------- */
 
-/**
- * The click handler for the Print button. Delegated, no jQuery, no globals.
- *
- * @return string
- */
-function printxpdf_inline_script() {
-	return <<<'JS'
-( function () {
-	'use strict';
-	document.addEventListener( 'click', function ( event ) {
-		var target = event.target;
-		if ( ! target || typeof target.closest !== 'function' ) {
-			return;
-		}
-		if ( ! target.closest( '.printxpdf-btn-print' ) ) {
-			return;
-		}
-		event.preventDefault();
-		if ( typeof window.print === 'function' ) {
-			window.print();
-		}
-	}, false );
-}() );
-JS;
-}
-
 add_action( 'wp_enqueue_scripts', 'printxpdf_register_assets' );
 
 /**
- * Register the stylesheet and the inline-only script, and enqueue them up
- * front on pages we already know will render a button row.
+ * Register the front-end stylesheet and script, and enqueue them up front on
+ * pages we already know will render a button row. Both are real files with an
+ * explicit version, so caching and minifying plugins can handle them normally.
  *
  * @return void
  */
 function printxpdf_register_assets() {
 	wp_register_style( 'printxpdf', PRINTXPDF_URL . 'assets/printxpdf.css', array(), PRINTXPDF_VERSION );
-	wp_register_script( 'printxpdf', false, array(), PRINTXPDF_VERSION, true );
-	wp_add_inline_script( 'printxpdf', printxpdf_inline_script() );
+	wp_register_script( 'printxpdf', PRINTXPDF_URL . 'assets/printxpdf.js', array(), PRINTXPDF_VERSION, true );
 
 	if ( printxpdf_is_enabled_here() || printxpdf_content_has_marker() ) {
 		printxpdf_enqueue_assets();
 	}
+}
+
+add_action( 'admin_enqueue_scripts', 'printxpdf_admin_assets' );
+
+/**
+ * Load the settings-screen stylesheet, and only there.
+ *
+ * @param string $hook_suffix Current admin screen.
+ * @return void
+ */
+function printxpdf_admin_assets( $hook_suffix ) {
+	if ( 'settings_page_' . PRINTXPDF_PAGE !== $hook_suffix ) {
+		return;
+	}
+
+	wp_enqueue_style(
+		'printxpdf-admin',
+		PRINTXPDF_URL . 'assets/printxpdf-admin.css',
+		array(),
+		PRINTXPDF_VERSION
+	);
 }
 
 /**
@@ -631,8 +642,8 @@ function printxpdf_is_enabled_here() {
 }
 
 /**
- * Does the current post carry a shortcode or block, so assets are worth
- * loading in the head rather than the footer?
+ * Does the current post carry the shortcode, so assets are worth loading in
+ * the head rather than the footer?
  *
  * @return bool
  */
@@ -646,14 +657,7 @@ function printxpdf_content_has_marker() {
 	if ( ! $post || ! isset( $post->post_content ) || '' === $post->post_content ) {
 		return false;
 	}
-	if ( has_shortcode( $post->post_content, 'printxpdf' ) ) {
-		return true;
-	}
-	if ( function_exists( 'has_block' ) && has_block( 'printxpdf/button', $post ) ) {
-		return true;
-	}
-
-	return false;
+	return has_shortcode( $post->post_content, 'printxpdf' );
 }
 
 /**
@@ -875,148 +879,4 @@ function printxpdf_shortcode( $atts ) {
 	}
 
 	return printxpdf_render_row( $args );
-}
-
-/* -------------------------------------------------------------------------
- * Block
- * ---------------------------------------------------------------------- */
-
-add_action( 'init', 'printxpdf_register_block' );
-
-/**
- * Register the server rendered block. No block.json and no build step: the
- * markup comes from the same render function the shortcode uses.
- *
- * @return void
- */
-function printxpdf_register_block() {
-	if ( ! function_exists( 'register_block_type' ) ) {
-		return;
-	}
-
-	register_block_type(
-		'printxpdf/button',
-		array(
-			'api_version'     => 3,
-			'title'           => __( 'PrintxPDF Buttons', 'printxpdf' ),
-			'description'     => __( 'A Print, Save as PDF and Email button row.', 'printxpdf' ),
-			'category'        => 'widgets',
-			'icon'            => 'printer',
-			'keywords'        => array( 'print', 'pdf', 'email' ),
-			'attributes'      => array(
-				'buttons' => array(
-					'type'    => 'string',
-					'default' => '',
-				),
-				'label'   => array(
-					'type'    => 'string',
-					'default' => '',
-				),
-				'align'   => array(
-					'type'    => 'string',
-					'default' => '',
-				),
-			),
-			'render_callback' => 'printxpdf_render_block',
-		)
-	);
-}
-
-/**
- * Server side render callback for printxpdf/button.
- *
- * @param array $attributes Block attributes.
- * @return string
- */
-function printxpdf_render_block( $attributes = array() ) {
-	$attributes = is_array( $attributes ) ? $attributes : array();
-
-	$args = array(
-		'label' => isset( $attributes['label'] ) ? sanitize_text_field( (string) $attributes['label'] ) : '',
-		'align' => isset( $attributes['align'] ) ? sanitize_key( (string) $attributes['align'] ) : '',
-	);
-
-	if ( ! empty( $attributes['buttons'] ) ) {
-		$args['buttons'] = printxpdf_parse_button_list( $attributes['buttons'] );
-	}
-
-	return printxpdf_render_row( $args );
-}
-
-add_action( 'enqueue_block_editor_assets', 'printxpdf_block_editor_assets' );
-
-/**
- * Register the block in the editor. This is plain inline JavaScript against
- * the wp.* globals that WordPress already loads: no bundler, no framework
- * and no build step. It is wrapped in a feature check and a try/catch so a
- * hostile environment can never take the editor down with it.
- *
- * @return void
- */
-function printxpdf_block_editor_assets() {
-	if ( ! wp_script_is( 'wp-blocks', 'registered' ) ) {
-		return;
-	}
-
-	wp_register_script(
-		'printxpdf-block',
-		false,
-		array( 'wp-blocks', 'wp-element', 'wp-block-editor' ),
-		PRINTXPDF_VERSION,
-		true
-	);
-	wp_enqueue_script( 'printxpdf-block' );
-
-	$data = wp_json_encode(
-		array(
-			'title'       => __( 'PrintxPDF Buttons', 'printxpdf' ),
-			'description' => __( 'A Print, Save as PDF and Email button row.', 'printxpdf' ),
-			'preview'     => __( 'PrintxPDF buttons. Rendered on the published page.', 'printxpdf' ),
-		)
-	);
-
-	$script = <<<'JS'
-( function ( wp, data ) {
-	if ( ! wp || ! wp.blocks || ! wp.element || ! wp.blockEditor || ! wp.blocks.registerBlockType ) {
-		return;
-	}
-	try {
-		var el = wp.element.createElement;
-		var useBlockProps = wp.blockEditor.useBlockProps;
-		var style = {
-			border: '1px dashed #757575',
-			borderRadius: '4px',
-			padding: '14px',
-			textAlign: 'center',
-			opacity: '0.8'
-		};
-		wp.blocks.registerBlockType( 'printxpdf/button', {
-			apiVersion: 3,
-			title: data.title,
-			description: data.description,
-			icon: 'printer',
-			category: 'widgets',
-			keywords: [ 'print', 'pdf', 'email' ],
-			attributes: {
-				buttons: { type: 'string', default: '' },
-				label: { type: 'string', default: '' },
-				align: { type: 'string', default: '' }
-			},
-			edit: function () {
-				var props = useBlockProps ? useBlockProps( { style: style } ) : { style: style };
-				return el( 'div', props, data.preview );
-			},
-			save: function () {
-				return null;
-			}
-		} );
-	} catch ( error ) {
-		if ( window.console && window.console.warn ) {
-			window.console.warn( 'PrintxPDF: block registration skipped.', error );
-		}
-	}
-}( window.wp, __PRINTXPDF_DATA__ ) );
-JS;
-
-	wp_add_inline_script( 'printxpdf-block', str_replace( '__PRINTXPDF_DATA__', $data, $script ) );
 }

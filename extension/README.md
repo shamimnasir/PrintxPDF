@@ -12,8 +12,8 @@ requests of its own.
 
 | Surface | What it does |
 | --- | --- |
-| Toolbar popup | "Clean this page", "Save as PDF" (same route; export from the editor), "Copy clean link", and an "Open in a new tab" preference. |
-| Keyboard shortcut | `Ctrl+Shift+Y` / `Command+Shift+Y` → clean the current page. Chrome already owns `Ctrl/Cmd+Shift+P`, so this uses Y. Rebind it at `chrome://extensions/shortcuts`. |
+| Toolbar popup | "Clean this page", "Paste text" (opens the paste box, works even on pages Chrome walls off), "Copy clean link", and an "Open in a new tab" preference. |
+| Keyboard shortcut | `Alt+Shift+P` / `Command+Shift+P` → clean the current page. Rebind it at `chrome://extensions/shortcuts`. |
 | Right-click on a page | **Clean this page for printing** |
 | Right-click on a link | **Clean this link** — cleans the link's target without visiting it first. |
 | Right-click on a selection | **Print just this selection** — see below. |
@@ -47,8 +47,9 @@ the popup says so and offers to open PrintxPDF instead.
 
 | Permission | Why |
 | --- | --- |
-| `activeTab` | Read the URL of the tab you are on, but **only** for the tab you just acted on, and **only** after you click the icon, pick a context-menu item or press the shortcut. The grant expires when you navigate away. |
-| `scripting` | Two one-shot injections: read `location.href` when Chrome withholds `tab.url`, and serialise + copy a selection. There is no persistent content script. |
+| `activeTab` | Read the URL of the tab you are on, but **only** for the tab you just acted on, and **only** after you click the icon, pick a context-menu item or press the shortcut. The grant expires when you navigate away. Read through `chrome.tabs.query`; no `tabs` permission and no injection. |
+| `scripting` | **One** one-shot injection, for "Print just this selection" only: serialise the selection and copy it. There is no persistent content script and no `content_scripts` manifest entry. |
+| `clipboardWrite` | Put that selection on the clipboard. `navigator.clipboard.writeText` first; `document.execCommand('copy')` when a page's permissions policy refuses the async API, which is the path Chrome requires this permission for. Write only, never read. |
 | `contextMenus` | The three right-click items. |
 | `storage` | The "Open in a new tab" checkbox (`storage.sync`) and a short-lived note about the last copied selection (`storage.local`). |
 
@@ -70,6 +71,7 @@ extension/
   popup.html/.css/.js  300px popup, matching the site's "Studio" tokens
   icons/             icon-16/32/48/128.png (generated, real PNGs)
   tools/make-icons.mjs  regenerates the icons; excluded from the package
+  README.md / PRIVACY.md / STORE_LISTING.md  docs; all excluded from the package
 ```
 
 Regenerate the icons after changing the artwork:
@@ -84,32 +86,33 @@ node extension/tools/make-icons.mjs
 node scripts/build-extension.mjs
 ```
 
-That validates the manifest (required keys, MV3, version string, Web Store
-name/description limits, and that every referenced file and icon exists at the
-right pixel size), then writes:
+That validates the manifest (required keys, MV3, a 1-4 integer version string,
+Web Store name/`short_name`/description limits, `default_locale` matching
+`_locales/`, and that every referenced file and icon exists at the right pixel
+size), audits every shipped file for remote code and CSP violations (`eval`,
+`new Function`, `importScripts`, inline `<script>`, inline `on*=` handlers,
+remote `<script src>`/stylesheets/`@import`, `fetch`, `XMLHttpRequest`,
+`WebSocket`) and fails the build on any hit, then writes:
 
 - `dist-extension/printxpdf-extension-v<version>.zip` — upload this
 - `public/downloads/printxpdf-chrome-extension.zip` — the same bytes, for the site
 
 `manifest.json` sits at the archive root; Chrome rejects a zip with a wrapping
-folder. `tools/`, `README.md` and `PRIVACY.md` are excluded from the package.
+folder. `tools/` and every `.md` file are excluded from the package.
 
 ## Submitting to the Chrome Web Store
 
-Not submitted yet. What a submission needs:
+Not submitted yet. **`STORE_LISTING.md` in this folder is the submission pack**:
+the exact text for every dashboard field (listing copy, single purpose, a
+justification per permission, the remote-code declaration, the data-collection
+answers and the privacy-policy URL), the images a human still has to shoot, and
+a step-by-step checklist. Start there.
 
-1. A Chrome Web Store developer account and the one-time **$5** registration fee.
-2. The zip from `dist-extension/` (upload the versioned file; bump
-   `manifest.json`'s `version` for every upload — the store rejects a repeat).
-3. **Store listing**: name, a short description (132 chars max, already enforced
-   by the build script), a detailed description, category (Productivity),
-   language, and the developer's public contact email (verified).
-4. **Graphics**: a 128×128 icon (in the package), at least one 1280×800 or
-   640×400 screenshot (up to five), and optionally a 440×280 small promo tile.
-5. **Privacy tab**: a single-purpose statement ("send the current tab's URL to
-   printxpdf.com so the page can be cleaned for printing"), a justification for
-   each permission — reuse the table above — a "no remote code" declaration, a
-   link to a hosted privacy policy, and the data-collection disclosure: this
-   extension collects **nothing**, so every category is "No".
-6. Review typically takes a few days; permission-light extensions clear faster,
-   which is the other reason there is no `<all_urls>` here.
+Two things are not done and cannot be done from here:
+
+1. **`https://printxpdf.com/extension-privacy` does not exist.** The Web Store
+   requires a live privacy-policy URL. The final text is in `PRIVACY.md`;
+   publishing it is a `src/` change for whoever owns that directory.
+2. **The screenshots.** They have to be taken from a real Chrome window with the
+   extension loaded. `STORE_LISTING.md` section 4 says exactly what each one
+   should show.

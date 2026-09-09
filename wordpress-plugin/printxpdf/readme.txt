@@ -1,34 +1,46 @@
 === PrintxPDF Print & PDF Button ===
-Contributors: nasiruddinshamim
-Tags: print, pdf, print button, printer friendly, save as pdf
+Contributors: TODO-WORDPRESS-ORG-USERNAME
+Tags: print, pdf, print button, printer friendly, email
 Requires at least: 6.0
-Tested up to: 6.7
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 1.0.0
-License: GPL-2.0-or-later
+License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Add a Print, Save as PDF and Email button to your posts and pages. Free, no account, no API key, and the plugin makes no outbound requests.
+Add a Print, Save as PDF and Email button to your posts and pages. Free, no account and no API key.
 
 == Description ==
 
 PrintxPDF adds a small row of buttons to your posts and pages so readers can print a clean copy, save a PDF, or mail themselves the link.
 
-* **Print** opens the browser's own print dialog immediately. No network request, no waiting.
-* **Save as PDF** opens printxpdf.com/print in a new tab with the post URL. There the reader gets a decluttered version of the page, an editor, and Print, PDF, PNG and Email outputs. That processing happens in the reader's browser.
+* **Print** calls the browser's own print dialog. Nothing leaves the page.
+* **Save as PDF** is a link to the printxpdf.com web service, where the reader gets a decluttered version of the page they can edit and export. See "External service" below.
 * **Email** opens the reader's own mail app with the post title and link already filled in. Your site sends nothing.
 
-Everything is free. There is no Pro version, no licence key, no locked feature and no upsell inside the plugin.
+Everything is free. There is no Pro version, no licence key, no locked feature, no trial and no quota.
+
+= External service: printxpdf.com =
+
+**What the service is.** The "Save as PDF" button is an ordinary HTML link pointing at `https://printxpdf.com/print`, a third-party web service operated by the author of this plugin. That service is what turns a web page into a PDF; this plugin does not generate PDFs itself. It is a free service and needs no account, registration or API key, for you or for your readers.
+
+**When data is transmitted.** Never by the plugin. The plugin makes no outbound HTTP request of any kind, on the front end or in the admin, on activation or on any schedule. Data reaches printxpdf.com only at the moment a reader chooses to click the "Save as PDF" button, at which point the reader's own browser navigates to the service in a new tab.
+
+**What is transmitted.** The public permalink of the post, passed in the query string as `?url=<permalink>`, plus whatever the reader's browser normally sends with any navigation: IP address, user agent and referrer. That is all. No post content, no page HTML, no site credentials, no administrator details, no visitor records and no information about your WordPress installation are sent by this plugin.
+
+**Terms and privacy policy.** Service terms of use: [https://printxpdf.com/terms](https://printxpdf.com/terms). Service privacy policy: [https://printxpdf.com/privacy](https://printxpdf.com/privacy).
+
+**Turning it off.** If you would rather send nobody to the service, untick "Save as PDF" in Settings > PrintxPDF. The Print and Email buttons then run entirely on the reader's own device and no third-party service is involved at all.
+
+This disclosure is repeated on the plugin's own settings screen.
 
 = Privacy =
 
-The plugin makes no outbound HTTP requests of any kind. It does not phone home, does not register users, does not set cookies and does not add any tracking. It stores exactly one option in your database and deletes it when you uninstall.
-
-The Save as PDF button is an ordinary link the reader chooses to click. Nothing is sent to printxpdf.com unless a reader clicks it.
+The plugin does not phone home, does not register users, does not set cookies, adds no tracking and creates no database tables. It stores exactly one option and deletes it when you uninstall.
 
 = Lightweight by design =
 
-One PHP file, one small stylesheet and about fifteen lines of inline JavaScript. No jQuery, no framework, no bundled build output, no Composer, no database tables and no cron jobs. Assets load only on the pages that actually render a button.
+One PHP file, one small stylesheet and about twenty lines of JavaScript whose only job is to call `window.print()`. No jQuery, no framework, no bundled build output, no Composer, no cron jobs. Assets load only on the pages that actually render a button.
 
 = Where the buttons appear =
 
@@ -38,7 +50,7 @@ Choose above the content, below the content, both, or manual only. Pick which pu
 
 `[printxpdf buttons="print,pdf" label="Print this page" align="center"]`
 
-The shortcode works in the Classic editor, in the Gutenberg Shortcode block, and in most page builders. There is also a **PrintxPDF Buttons** block in the block inserter.
+The shortcode works in the Classic editor, in the block editor's Shortcode block, and in most page builders.
 
 == Installation ==
 
@@ -50,13 +62,21 @@ Sensible defaults are set on activation: a Print and a Save as PDF button, below
 
 == Frequently Asked Questions ==
 
-= Is any part of this paid? =
-
-No. Every button works for every visitor with no account and no key. PrintxPDF's own plans are listed on printxpdf.com for reference, but nothing in this plugin is gated behind them.
-
 = Does the plugin send my content anywhere? =
 
-No. The plugin performs no outbound HTTP requests. The Save as PDF button is a link a reader may choose to click, which opens printxpdf.com in their own browser tab with the public URL of the post.
+No. The plugin performs no outbound HTTP requests at all. The only third party involved is printxpdf.com, and only when a reader clicks "Save as PDF", which navigates their own browser to that service with the public URL of the post. The full disclosure, including links to the service's terms and privacy policy, is in the Description above and on the settings screen.
+
+= Can I use the plugin without the third-party service? =
+
+Yes. Untick "Save as PDF" in Settings > PrintxPDF. The Print and Email buttons involve no external service whatsoever.
+
+= Is any part of this paid? =
+
+No. Every button works for every visitor with no account and no key. Nothing in this plugin is gated, time-limited or quota-limited.
+
+= How do I add the buttons in the block editor? =
+
+Insert a Shortcode block and put `[printxpdf]` in it. This release ships no custom block of its own.
 
 = Will the buttons print themselves? =
 
@@ -72,7 +92,7 @@ Two things: the plugin's own button styling, and a short print stylesheet that h
 
 = The Print button does nothing =
 
-It calls `window.print()`, which needs JavaScript. If a caching or optimisation plugin is stripping inline scripts, allow the `printxpdf` handle.
+It calls `window.print()`, which needs JavaScript. If an optimisation plugin is deferring or blocking scripts, allow the `printxpdf` handle.
 
 = Can I put the buttons somewhere my theme controls? =
 
@@ -86,8 +106,7 @@ Yes. Every public post type appears as a checkbox on the settings screen.
 
 1. The button row below a post, using the plugin's own minimal styling.
 2. Settings > PrintxPDF, with placement, buttons, post types and alignment.
-
-Screenshot images are supplied with the WordPress.org listing rather than inside the plugin zip.
+3. The external service disclosure on the settings screen.
 
 == Changelog ==
 
@@ -95,7 +114,7 @@ Screenshot images are supplied with the WordPress.org listing rather than inside
 * First release.
 * Print, Save as PDF and Email buttons.
 * Settings screen: placement, which buttons, print button label, post types, alignment and a match-my-theme toggle.
-* `[printxpdf]` shortcode and a server rendered `printxpdf/button` block.
+* `[printxpdf]` shortcode.
 * Print stylesheet that hides the button row and the common theme chrome.
 * Uninstall removes the plugin's single option.
 

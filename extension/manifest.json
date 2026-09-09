@@ -3,10 +3,13 @@
   "name": "PrintxPDF — Print Web Pages Clean",
   "short_name": "PrintxPDF",
   "version": "1.0.0",
-  "description": "Strip ads, menus and comment walls from any page, then print it or save it as a PDF. One click, nothing uploaded.",
+  "description": "Opens the page you are reading in PrintxPDF, which strips it down to the article so you can print it or save a clean PDF.",
   "minimum_chrome_version": "116",
   "homepage_url": "https://printxpdf.com",
-  "permissions": ["activeTab", "contextMenus", "storage", "scripting"],
+  "permissions": ["activeTab", "contextMenus", "storage", "scripting", "clipboardWrite"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_title": "Clean this page for printing",
@@ -24,8 +27,8 @@
   "commands": {
     "clean-current-page": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Y",
-        "mac": "Command+Shift+Y"
+        "default": "Alt+Shift+P",
+        "mac": "Command+Shift+P"
       },
       "description": "Clean the current page for printing"
     }

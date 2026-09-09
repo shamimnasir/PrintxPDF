@@ -19,9 +19,15 @@ const SRC = join(ROOT, 'extension')
 const OUT_DIR = join(ROOT, 'dist-extension')
 const SITE_COPY = join(ROOT, 'public', 'downloads', 'printxpdf-chrome-extension.zip')
 
-/** Development-only files that must not ship inside the package. */
+/**
+ * Development-only files that must not ship inside the package. Documentation
+ * (README, PRIVACY, STORE_LISTING) is for humans and reviewers, not for Chrome:
+ * every byte in the zip is code a reviewer has to read, so keep it to code.
+ */
 const EXCLUDE_DIRS = new Set(['tools', 'node_modules', '.git'])
-const EXCLUDE_FILES = new Set(['README.md', 'PRIVACY.md', '.DS_Store'])
+const EXCLUDE_FILES = new Set(['.DS_Store'])
+/** Anything matching these never ships, whatever it is called. */
+const EXCLUDE_PATTERNS = [/\.md$/i, /\.zip$/i, /\.map$/i, /~$/]
 
 /** Validation failures are user errors, not crashes: say why, exit 1, no stack. */
 const fail = (msg) => {
@@ -46,9 +52,32 @@ function validate() {
     if (manifest[key] == null) fail(`manifest.json is missing "${key}"`)
   }
   if (manifest.manifest_version !== 3) fail(`manifest_version must be 3, found ${manifest.manifest_version}`)
-  if (!/^\d+(\.\d+){0,3}$/.test(manifest.version)) fail(`version "${manifest.version}" is not a Web Store version string`)
+  // 1 to 4 dot-separated integers, each 0..65535 and without a leading zero.
+  const versionPart = /^(0|[1-9]\d{0,4})$/
+  const parts = String(manifest.version).split('.')
+  if (parts.length > 4 || !parts.every((p) => versionPart.test(p) && Number(p) <= 65535)) {
+    fail(`version "${manifest.version}" is not a Web Store version string (1-4 integers, each 0-65535, no leading zeros)`)
+  }
   if (manifest.description.length > 132) fail(`description is ${manifest.description.length} chars; the Web Store caps it at 132`)
   if (manifest.name.length > 75) fail(`name is ${manifest.name.length} chars; the Web Store caps it at 75`)
+  if (manifest.name.length > 45) console.warn(`⚠ name is ${manifest.name.length} chars; listings are truncated in the store around 45`)
+  if (manifest.short_name && manifest.short_name.length > 12) {
+    fail(`short_name is ${manifest.short_name.length} chars; Chrome caps it at 12`)
+  }
+  // default_locale without _locales/ is an outright install error in Chrome.
+  const hasLocales = (() => {
+    try {
+      return statSync(join(SRC, '_locales')).isDirectory()
+    } catch {
+      return false
+    }
+  })()
+  if (manifest.default_locale && !hasLocales) fail('manifest sets default_locale but extension/_locales/ does not exist')
+  if (!manifest.default_locale && hasLocales) fail('extension/_locales/ exists but manifest has no default_locale')
+  // A permission nobody calls is a review question with no good answer.
+  if (manifest.host_permissions?.length) {
+    console.warn(`⚠ host_permissions present (${manifest.host_permissions.join(', ')}); broad patterns slow review sharply`)
+  }
 
   // Every path the manifest points at has to exist inside extension/.
   const referenced = new Set()
@@ -97,10 +126,62 @@ function collect(dir = SRC, acc = []) {
       continue
     }
     if (EXCLUDE_FILES.has(entry.name) || entry.name.startsWith('.')) continue
+    if (EXCLUDE_PATTERNS.some((re) => re.test(entry.name))) continue
     const abs = join(dir, entry.name)
     acc.push({ name: relative(SRC, abs).split(sep).join('/'), data: readFileSync(abs) })
   }
   return acc
+}
+
+/* ------------------------------------------------------------------ */
+/* 2b. prove there is no remote code and no inline handler            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * The Manifest V3 requirements are blunt: no <script> pointing outside the
+ * package, no eval of a remotely fetched string, no interpreter for remote
+ * commands. The strict extension-page CSP also refuses inline scripts and
+ * inline event attributes. Both are cheap to check here, every build, instead
+ * of finding out from a rejection email.
+ * https://developer.chrome.com/docs/webstore/program-policies/mv3-requirements
+ */
+const HTML = /\.html?$/i
+const STYLES = /\.(css|html?)$/i
+const SCRIPTS = /\.(js|mjs)$/i
+const ANY = /\.(js|mjs|html?|css|json)$/i
+
+/** [file-type, pattern, what it is]. Scoped by type so `once = 'x'` in a .js
+ *  file cannot be mistaken for an `onclick=` attribute in markup. */
+const CODE_RULES = [
+  [HTML, /<script\b[^>]*\bsrc\s*=\s*["']?(?:https?:)?\/\//i, 'a <script src> pointing at a remote host'],
+  [HTML, /<script(?![^>]*\bsrc\s*=)[^>]*>[\s\S]*?\S[\s\S]*?<\/script>/i, 'an inline <script> block (the MV3 CSP refuses it)'],
+  [HTML, /<[a-z][^>]*\son(?:click|load|error|change|input|submit|focus|blur|mouse[a-z]+|key[a-z]+|touch[a-z]+)\s*=/i, 'an inline event handler attribute (the MV3 CSP refuses it)'],
+  [HTML, /<link\b[^>]*\bhref\s*=\s*["']?(?:https?:)?\/\//i, 'a remotely hosted stylesheet or font'],
+  [STYLES, /@import\s+(?:url\()?["']?(?:https?:)?\/\//i, 'a remote CSS @import'],
+  [STYLES, /\bsrc\s*:\s*url\(\s*["']?(?:https?:)?\/\//i, 'a remotely hosted @font-face file'],
+  [SCRIPTS, /\beval\s*\(/, 'a call to eval()'],
+  [SCRIPTS, /\bnew\s+Function\s*\(/, 'a call to new Function()'],
+  [SCRIPTS, /\bimportScripts\s*\(/, 'importScripts()'],
+  [SCRIPTS, /\bfetch\s*\(/, 'a fetch() call (this extension makes no network requests)'],
+  [SCRIPTS, /\bnew\s+WebSocket\s*\(/, 'a WebSocket connection'],
+  [SCRIPTS, /\bXMLHttpRequest\b/, 'XMLHttpRequest'],
+  [SCRIPTS, /\bimport\s*\(/, 'a dynamic import()'],
+]
+
+function audit(files) {
+  const findings = []
+  for (const file of files) {
+    if (!ANY.test(file.name)) continue
+    const text = file.data.toString('utf8')
+    for (const [kind, pattern, why] of CODE_RULES) {
+      if (kind.test(file.name) && pattern.test(text)) findings.push(`${file.name}: ${why}`)
+    }
+  }
+  if (findings.length) {
+    for (const finding of findings) console.error(`  ✗ ${finding}`)
+    fail('remote-code / CSP audit failed; the Web Store rejects packages like this')
+  }
+  console.log('✓ no remote code, no inline scripts, no inline event handlers, no network calls')
 }
 
 /* ------------------------------------------------------------------ */
@@ -200,6 +281,7 @@ function zip(files) {
 const manifest = validate()
 const files = collect()
 if (!files.some((f) => f.name === 'manifest.json')) fail('manifest.json must sit at the root of the archive')
+audit(files)
 
 const archive = zip(files)
 mkdirSync(OUT_DIR, { recursive: true })

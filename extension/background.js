@@ -1,13 +1,18 @@
 /**
  * PrintxPDF — MV3 background service worker (module).
  *
- * Everything here is one of three jobs:
+ * Single purpose: hand the page you are reading to printxpdf.com's print
+ * cleaner. Everything here is one of three jobs:
  *   1. put the current tab's URL into https://printxpdf.com/print?url=…
  *   2. put a right-clicked link's URL into the same route
  *   3. copy a selection to the clipboard and open the /print paste box
  *
  * The site is a static, client-side app: it has no ingest API, so a selection
  * travels on the system clipboard rather than through a made-up endpoint.
+ *
+ * MV3 note: every chrome.*.addListener call in this file is made at the top
+ * level, synchronously, so a woken service worker re-registers them before any
+ * event is dispatched. Nothing is registered inside a callback or a promise.
  */
 
 const SITE = 'https://printxpdf.com'
@@ -19,17 +24,16 @@ const MENU_ITEMS = [
   { id: 'printxpdf-selection', title: 'Print just this selection', contexts: ['selection'] },
 ]
 
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.contextMenus.removeAll(() => {
-    for (const item of MENU_ITEMS) chrome.contextMenus.create(item)
-  })
-})
-
 /* ------------------------------------------------------------------ */
 /* helpers                                                            */
 /* ------------------------------------------------------------------ */
 
-/** Only http(s) can be handed to the site; chrome:// and friends cannot. */
+/**
+ * Only http(s) can be handed to the site. chrome://, edge://, about:, file://,
+ * view-source: and the Web Store are all refused here, before anything tries to
+ * read them — no extension may touch those pages, and printxpdf.com could not
+ * fetch them either.
+ */
 function isPrintable(url) {
   return typeof url === 'string' && /^https?:\/\//i.test(url)
 }
@@ -49,26 +53,26 @@ async function preferNewTab() {
 
 async function openTarget(url, tab) {
   if (!(await preferNewTab()) && tab?.id != null) {
-    await chrome.tabs.update(tab.id, { url })
-    return
+    try {
+      await chrome.tabs.update(tab.id, { url })
+      return
+    } catch {
+      /* the tab went away mid-click: fall through and open a new one */
+    }
   }
   await chrome.tabs.create({ url, index: typeof tab?.index === 'number' ? tab.index + 1 : undefined })
 }
 
 /**
- * activeTab hands us tab.url for the tab the user just acted on. If Chrome
- * withheld it (rare, e.g. a tab that has not committed a navigation yet), ask
- * the page itself — the same activeTab grant covers the injection.
+ * activeTab hands us tab.url for the tab the user just acted on. If the event's
+ * tab object arrived without it, re-read the active tab — the same activeTab
+ * grant covers that query, so no `tabs` permission and no injection is needed.
  */
 async function resolveTabUrl(tab) {
   if (isPrintable(tab?.url)) return tab.url
-  if (tab?.id == null) return null
   try {
-    const [hit] = await chrome.scripting.executeScript({
-      target: { tabId: tab.id },
-      func: () => location.href,
-    })
-    return isPrintable(hit?.result) ? hit.result : null
+    const [active] = await chrome.tabs.query({ active: true, currentWindow: true })
+    return isPrintable(active?.url) ? active.url : null
   } catch {
     return null
   }
@@ -100,7 +104,7 @@ async function captureSelection(pageTitle, pageUrl) {
       s.borderRadius = '12px'
       s.background = tone === 'error' ? '#b42318' : '#0f172a'
       s.color = '#ffffff'
-      s.font = '500 13px/1.45 Inter, system-ui, -apple-system, "Segoe UI", sans-serif'
+      s.font = '500 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif'
       s.boxShadow = '0 8px 24px rgba(15, 23, 42, 0.28)'
       s.pointerEvents = 'none'
       document.documentElement.appendChild(el)
@@ -142,7 +146,9 @@ async function captureSelection(pageTitle, pageUrl) {
     await navigator.clipboard.writeText(payload)
     copied = true
   } catch {
-    // Older path: a hidden textarea plus the user gesture that opened the menu.
+    // The async Clipboard API is refused on some pages (an http: origin, a
+    // permissions-policy that blocks clipboard-write). The classic path still
+    // works there, and the clipboardWrite permission is what allows it.
     try {
       const box = document.createElement('textarea')
       box.value = payload
@@ -174,8 +180,8 @@ async function captureSelection(pageTitle, pageUrl) {
 
 async function cleanCurrentPage(tab) {
   const url = await resolveTabUrl(tab)
-  // A chrome:// or Web Store tab cannot be read by any extension; opening the
-  // tool's own entry point is the honest fallback.
+  // A chrome://, file:// or Web Store tab cannot be read by any extension;
+  // opening the tool's own entry point is the honest fallback.
   await openTarget(url ? cleanUrlFor(url) : PRINT_URL, tab)
 }
 
@@ -185,7 +191,8 @@ async function cleanLink(linkUrl, tab) {
 
 async function cleanSelection(tab) {
   let result = { ok: false, reason: 'unavailable', chars: 0 }
-  if (tab?.id != null) {
+  // Restricted pages refuse injection outright; skip the attempt and its error.
+  if (tab?.id != null && isPrintable(tab?.url)) {
     try {
       const [hit] = await chrome.scripting.executeScript({
         target: { tabId: tab.id },
@@ -207,8 +214,14 @@ async function cleanSelection(tab) {
 }
 
 /* ------------------------------------------------------------------ */
-/* wiring                                                             */
+/* wiring — top level only                                            */
 /* ------------------------------------------------------------------ */
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.contextMenus.removeAll(() => {
+    for (const item of MENU_ITEMS) chrome.contextMenus.create(item)
+  })
+})
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   const run =
