@@ -29,3 +29,5 @@
 - Cloudflare DNS: A @ 76.76.21.21, CNAME www cname.vercel-dns.com (both DNS only). Vercel: printxpdf.com verified; www cert pending at time of writing.
 - Vercel env (production): VITE_SITE_URL, VITE_API_BASE=https://api.printxpdf.com, VITE_FETCH_PROXY=https://api.printxpdf.com/fetch
 - Stripe TEST customer portal: default config saved (cancel at period end, switch between Pro/API, return URL https://printxpdf.com/account); no-code login link https://billing.stripe.com/p/login/test_7sY6oG0XFczs4LedpidnW00 (replace with the live link at go-live; stored in public/site-config.json billing.portalLoginUrl)
+- Worker live: printxpdf-api version 78fbceeb (custom domain api.printxpdf.com), container printxpdf-converter a03ecc13 standard-1 max 2, KV e029ac90bf574cdb9076d568b098b513, ENTITLEMENT_SECRET set. Billing returns 503 billing_not_configured until the user runs: cd worker && npx wrangler secret put STRIPE_SECRET_KEY
+- Local DNS on this Mac lags new Cloudflare/Vercel records by ~30 min; verify with curl --resolve <host>:443:<ip>.

@@ -11,3 +11,8 @@ dist
 public/sitemap.xml
 public/robots.txt
 public/llms.txt
+
+# Cloudflare Worker (worker/): local secrets for wrangler dev
+.dev.vars
+.dev.vars.*
+__pycache__/

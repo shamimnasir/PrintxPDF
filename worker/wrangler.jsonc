@@ -1,0 +1,37 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "printxpdf-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-15",
+  "account_id": "f33cea16b206227c1b3a3f64dce73c97",
+  "workers_dev": false,
+  "routes": [{ "pattern": "api.printxpdf.com", "custom_domain": true }],
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "vars": {
+    "SITE_URL": "https://printxpdf.com",
+    "SITE_ORIGINS": "https://printxpdf.com,https://www.printxpdf.com,https://printxpdf.vercel.app,http://localhost:5179",
+    "PRICE_PRO": "price_1UDrt4CCxH1bzQKtZOK1oBFu",
+    "PRICE_API": "price_1UDrvfCCxH1bzQKtspPBVy0f",
+    "QUOTA_FREE": "5",
+    "QUOTA_PRO": "300",
+    "QUOTA_API": "5000",
+    "MAX_UPLOAD_BYTES": "104857600"
+  },
+  "kv_namespaces": [{ "binding": "KV", "id": "e029ac90bf574cdb9076d568b098b513" }],
+  "ratelimits": [
+    { "name": "RL_CONVERT", "namespace_id": "1001", "simple": { "limit": 10, "period": 60 } },
+    { "name": "RL_BILLING", "namespace_id": "1002", "simple": { "limit": 20, "period": 60 } }
+  ],
+  "containers": [
+    {
+      "name": "printxpdf-converter",
+      "class_name": "Converter",
+      "image": "./container/Dockerfile",
+      "image_build_context": "./container",
+      "instance_type": "standard-1",
+      "max_instances": 2
+    }
+  ],
+  "durable_objects": { "bindings": [{ "name": "CONVERTER", "class_name": "Converter" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Converter"] }]
+}
