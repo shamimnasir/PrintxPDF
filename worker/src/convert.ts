@@ -3,18 +3,15 @@ import { getContainer } from '@cloudflare/containers'
 import { authenticate, subscriptionStatus } from './billing'
 import type { Converter } from './container'
 import { ApiError, bearerToken, clientIp, enforceRateLimit, json } from './http'
+import type { Kind } from './kinds'
 import { getUsage, incrementUsage, quotaLimit, type EffectivePlan } from './quota'
 
-export const KINDS = ['ppt-to-pdf', 'pdf-to-ppt', 'epub-to-pdf', 'mobi-to-pdf'] as const
-export type Kind = (typeof KINDS)[number]
+export { KINDS, KIND_INPUT_EXTS, KIND_FIELDS, CONTAINER_ERROR_CODES, isKind } from './kinds'
+export type { Kind } from './kinds'
 
 const MAX_INSTANCES = 2 // keep in sync with containers[0].max_instances in wrangler.jsonc
 const CONVERT_TIMEOUT_MS = 150_000
 const WARM_TIMEOUT_MS = 120_000
-
-export function isKind(v: string): v is Kind {
-  return (KINDS as readonly string[]).includes(v)
-}
 
 function hex(buf: ArrayBuffer): string {
   return Array.from(new Uint8Array(buf), (b) => b.toString(16).padStart(2, '0')).join('')

@@ -1,9 +1,10 @@
-# PrintxPDF converter: LibreOffice (PPT<->PDF) + Calibre (EPUB/MOBI->PDF) behind a
-# stdlib Python HTTP server. Built for linux/amd64 and run by Cloudflare Containers.
+# PrintxPDF converter: LibreOffice (PPT<->PDF, PDF->PDF/A) + Calibre (EPUB/MOBI->PDF)
+# + qpdf (PDF encrypt/decrypt) behind a stdlib Python HTTP server.
+# Built for linux/amd64 and run by Cloudflare Containers.
 FROM debian:bookworm-slim
 ENV DEBIAN_FRONTEND=noninteractive LANG=C.UTF-8 LC_ALL=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      python3 libreoffice-impress calibre xvfb xauth \
+      python3 libreoffice-impress calibre qpdf xvfb xauth \
       fonts-dejavu fonts-liberation fonts-crosextra-carlito fonts-crosextra-caladea fonts-noto-core \
       libgl1 libegl1 libgbm1 libnss3 libasound2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libxtst6 libxi6 libxcb-cursor0 ca-certificates \
     && rm -rf /var/lib/apt/lists/*

@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """PrintxPDF converter service (runs inside the Cloudflare Container).
 
-Python 3 stdlib only. LibreOffice handles PPT<->PDF, Calibre handles EPUB/MOBI->PDF.
-One job at a time: the Worker-side Durable Object leases an instance before it sends
-work here, and the non-blocking lock below is the last line of defence.
+Python 3 stdlib only. LibreOffice handles PPT<->PDF and PDF->PDF/A, Calibre handles
+EPUB/MOBI->PDF, qpdf handles PDF encrypt/decrypt. One job at a time: the Worker-side
+Durable Object leases an instance before it sends work here, and the non-blocking lock
+below is the last line of defence.
+
+Passwords arrive as multipart text fields. They are never written to disk, never placed
+on a command line (qpdf reads its whole argument list from stdin via `@-`, so nothing
+shows up in /proc/*/cmdline) and never logged: `scrub()` masks them in any captured
+output before it is logged or returned to the client.
 """
 import json
 import mmap
@@ -31,10 +37,38 @@ KINDS = {
     'pdf-to-ppt':  {'in': ('.pdf',),                                  'out': 'pptx', 'mime': PPTX_MIME},
     'epub-to-pdf': {'in': ('.epub',),                                 'out': 'pdf',  'mime': 'application/pdf'},
     'mobi-to-pdf': {'in': ('.mobi', '.azw', '.azw3', '.prc'),         'out': 'pdf',  'mime': 'application/pdf'},
+    'protect-pdf': {'in': ('.pdf',),                                  'out': 'pdf',  'mime': 'application/pdf'},
+    'unlock-pdf':  {'in': ('.pdf',),                                  'out': 'pdf',  'mime': 'application/pdf'},
+    'pdf-to-pdfa': {'in': ('.pdf',),                                  'out': 'pdf',  'mime': 'application/pdf'},
+    # output format is chosen per request by the `to` field; 'out'/'mime' here are the defaults
+    'ebook-converter': {'in': ('.epub', '.mobi', '.azw', '.azw3', '.prc', '.fb2', '.txt'), 'out': 'epub', 'mime': 'application/epub+zip'},
+}
+
+# Calibre targets the ebook converter may write, with the MIME type sent back for each
+EBOOK_TARGETS = {
+    'epub': 'application/epub+zip',
+    'mobi': 'application/x-mobipocket-ebook',
+    'azw3': 'application/vnd.amazon.mobi8-ebook',
+    'fb2': 'application/xml',
+    'txt': 'text/plain; charset=utf-8',
 }
 ZIP_EXTS = ('.pptx', '.ppsx', '.odp', '.epub')
 OLE_EXTS = ('.ppt', '.pps')
 MOBI_EXTS = ('.mobi', '.azw', '.azw3', '.prc')
+
+# Which qpdf restriction flags each client-facing permission choice maps to, for 256-bit
+# (AES-256, R6) encryption. Anything not listed keeps qpdf's permissive default, so `all`
+# is the empty tuple. Accessibility extraction is deliberately never disabled.
+PERMISSION_FLAGS = {
+    'all':           (),
+    'no-print':      ('--print=none',),
+    'no-copy':       ('--extract=n',),
+    'no-print-copy': ('--print=none', '--extract=n'),
+}
+# LibreOffice PDF export: SelectPdfVersion 1/2/3 == PDF/A-1b / PDF/A-2b / PDF/A-3b.
+PDFA_VERSIONS = {'1b': 1, '2b': 2, '3b': 3}
+MAX_FIELD_BYTES = 8192
+MAX_PASSWORD_LEN = 500
 
 JOB_LOCK = threading.Lock()
 
@@ -56,6 +90,11 @@ class HttpError(Exception):
 def magic_matches(path, ext):
     with open(path, 'rb') as f:
         head = f.read(1024)
+    if ext == '.epub':
+        # EPUB (OCF) requires a STORED 'mimetype' entry first, so 'application/epub+zip' sits at a
+        # fixed offset right after the 30-byte local header + 8-byte name. Plain 'PK' would also
+        # accept .pptx/.docx and hand Calibre a deck it cannot read.
+        return head[:4] == b'PK\x03\x04' and head[30:38] == b'mimetype' and b'application/epub+zip' in head[38:80]
     if ext in ZIP_EXTS:
         return head[:4] == b'PK\x03\x04'
     if ext in OLE_EXTS:
@@ -64,6 +103,17 @@ def magic_matches(path, ext):
         return b'%PDF' in head
     if ext in MOBI_EXTS:
         return head[60:68] in (b'BOOKMOBI', b'TEXtREAd')
+    if ext == '.fb2':
+        return b'<FictionBook' in head or head.lstrip().startswith(b'<?xml')
+    if ext == '.txt':
+        # text: decodes as UTF-8 (BOM tolerated) and carries no NUL bytes
+        if b'\x00' in head:
+            return False
+        try:
+            head.decode('utf-8-sig')
+            return True
+        except UnicodeDecodeError:
+            return len(head) > 0 and head[-1] >= 0x80  # cut mid-multibyte sequence at the 1 KiB edge
     return False
 
 
@@ -113,6 +163,8 @@ FILENAME_RE = re.compile(
     r'''filename\*=(?:utf-8|iso-8859-1)'[^']*'([^;\r\n]+)|filename="((?:[^"\\]|\\.)*)"|filename=([^;\r\n]+)''',
     re.I,
 )
+# `\b` keeps this from matching the `name=` inside `filename=`.
+FIELD_NAME_RE = re.compile(r'''\bname="((?:[^"\\]|\\.)*)"|\bname=([^;\r\n]+)''', re.I)
 
 
 def multipart_boundary(content_type):
@@ -120,12 +172,37 @@ def multipart_boundary(content_type):
     return m.group(1).encode('latin-1') if m else None
 
 
-def extract_file_part(body_path, boundary, dest):
-    """Copy the first part carrying filename= into dest without slurping the body. Returns the name or None."""
+def part_filename(headers):
+    m = FILENAME_RE.search(headers)
+    if not m:
+        return None
+    if m.group(1):
+        return urllib.parse.unquote(m.group(1).strip()) or 'file'
+    raw = (m.group(2) if m.group(2) is not None else m.group(3) or '').strip()
+    return raw.replace('\\"', '"') or 'file'
+
+
+def part_name(headers):
+    m = FIELD_NAME_RE.search(headers)
+    if not m:
+        return None
+    raw = (m.group(1) if m.group(1) is not None else m.group(2) or '').strip()
+    return raw.replace('\\"', '"') or None
+
+
+def parse_multipart(body_path, boundary, dest):
+    """Walk every part without slurping the body.
+
+    The first part carrying `filename=` is copied byte-exactly into `dest`; every other
+    part that has a `name=` and no filename is decoded as a small UTF-8 text field.
+    Returns (filename or None, {field: value}).
+    """
     marker = b'--' + boundary
+    fields = {}
+    name = None
     size = os.path.getsize(body_path)
     if size == 0:
-        return None
+        return None, fields
     with open(body_path, 'rb') as f, mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as mm:
         pos = mm.find(marker)
         while pos != -1:
@@ -139,33 +216,34 @@ def extract_file_part(body_path, boundary, dest):
             data_start = hdr_end + 4
             nxt = mm.find(b'\r\n' + marker, data_start)
             data_end = size if nxt == -1 else nxt
-            m = FILENAME_RE.search(headers)
-            if m:
-                if m.group(1):
-                    name = urllib.parse.unquote(m.group(1).strip())
-                else:
-                    name = (m.group(2) if m.group(2) is not None else m.group(3) or '').strip().replace('\\"', '"')
+            fname = part_filename(headers)
+            if fname is not None and name is None:
+                name = fname
                 with open(dest, 'wb') as out:
                     i = data_start
                     while i < data_end:
                         j = min(i + CHUNK, data_end)
                         out.write(mm[i:j])
                         i = j
-                return name or 'file'
+            elif fname is None:
+                field = part_name(headers)
+                if field and data_end - data_start <= MAX_FIELD_BYTES:
+                    fields[field] = mm[data_start:data_end].decode('utf-8', 'replace')
             if nxt == -1:
                 break
             pos = nxt + 2
-    return None
+    return name, fields
 
 
 # ---------------------------------------------------------------- conversion
 
-def run(cmd, cwd, env, timeout):
+def run(cmd, cwd, env, timeout, stdin_data=None):
     """Run cmd in its own process group; SIGKILL the whole group on timeout."""
-    p = subprocess.Popen(cmd, cwd=cwd, env=env, stdin=subprocess.DEVNULL,
+    p = subprocess.Popen(cmd, cwd=cwd, env=env,
+                         stdin=subprocess.PIPE if stdin_data is not None else subprocess.DEVNULL,
                          stdout=subprocess.PIPE, stderr=subprocess.STDOUT, start_new_session=True)
     try:
-        out, _ = p.communicate(timeout=timeout)
+        out, _ = p.communicate(input=stdin_data, timeout=timeout)
     except subprocess.TimeoutExpired:
         try:
             os.killpg(p.pid, signal.SIGKILL)
@@ -176,9 +254,203 @@ def run(cmd, cwd, env, timeout):
     return p.returncode, out.decode('utf-8', 'replace')
 
 
-def convert(kind, src, work):
+def scrub(text, secrets):
+    """Mask every secret that could have leaked into captured output before it is logged."""
+    for s in secrets:
+        if s:
+            text = text.replace(s, '***')
+    return text
+
+
+def qpdf(args, work, env, secrets=(), timeout=None):
+    """Run qpdf with its whole argument list piped through stdin (`@-`).
+
+    qpdf reads one argument per line from stdin, so passwords never appear in
+    /proc/<pid>/cmdline, in `ps` output, or in a temporary file.
+    Docs: https://qpdf.readthedocs.io/en/stable/cli.html (@filename arguments)
+    """
+    payload = ('\n'.join(args) + '\n').encode('utf-8')
+    rc, text = run(['qpdf', '@-'], work, env, timeout or JOB_TIMEOUT, stdin_data=payload)
+    return rc, scrub(text, secrets)
+
+
+def qpdf_encryption_state(src, work, env, password=None):
+    """qpdf --requires-password: 0 = a (different) password is needed, 2 = not encrypted,
+    3 = encrypted and the supplied password is correct. Anything else is a real error."""
+    args = ([f'--password={password}'] if password else []) + ['--requires-password', src]
+    rc, text = qpdf(args, work, env, secrets=(password,))
+    return rc, text
+
+
+def protect_args(user, owner, perms, src, out_path):
+    """The qpdf argument list for `protect-pdf`, one argument per line when fed to `qpdf @-`.
+
+    `--encrypt user-password owner-password key-length [restrictions] --`, the positional
+    form. The named `--user-password=`/`--owner-password=`/`--bits=` spelling in the current
+    manual (https://qpdf.readthedocs.io/en/stable/cli.html#option-encrypt) only exists from
+    qpdf 11.7; Debian bookworm ships 11.3.0, which rejects it. The positional form works on
+    both, and because `@-` gives one argument per line a password may contain anything at
+    all, including spaces and leading dashes. The trailing `--` is required either way.
+    """
+    return ['--encrypt', user, owner, '256', *PERMISSION_FLAGS[perms], '--', src, out_path]
+
+
+def unlock_args(pw, src, out_path):
+    return ([f'--password={pw}'] if pw else []) + ['--decrypt', src, out_path]
+
+
+def pdfa_filter_options(level):
+    return json.dumps({'SelectPdfVersion': {'type': 'long', 'value': PDFA_VERSIONS[level]}},
+                      separators=(',', ':'))
+
+
+CONFORMANCE_A = b'<pdfaid:conformance>A</pdfaid:conformance>'
+CONFORMANCE_B = b'<pdfaid:conformance>B</pdfaid:conformance>'
+
+
+def downgrade_conformance(data):
+    """Rewrite a PDF/A `a` conformance claim to `b`.
+
+    LibreOffice 7.4 always exports tagged PDF (UseTaggedPDF=false is ignored), so
+    SelectPdfVersion=1 comes out declaring PDF/A-1**a** even though the client asked for 1b.
+    Every PDF/A-*a* file also satisfies the corresponding *b* level (a = b + tagging and
+    Unicode mapping), so declaring `B` is a weaker claim that the file certainly meets,
+    where `A` asserts an accessibility conformance a PDF-in / Draw-rebuilt structure tree
+    cannot honestly promise. `A` and `B` are the same length and PDF/A requires the
+    document XMP stream to be stored uncompressed and unfiltered, so this is a byte-for-byte
+    substitution that leaves every xref offset intact.
+    """
+    return data.replace(CONFORMANCE_A, CONFORMANCE_B)
+
+
+def validate_protect_fields(fields):
+    """(user, owner, permissions) or an HttpError with a code the client already understands."""
+    user = fields.get('password') or ''
+    if not user:
+        raise HttpError(400, 'password_required', 'A password is required to protect this PDF')
+    owner = fields.get('ownerPassword') or user
+    if len(user) > MAX_PASSWORD_LEN or len(owner) > MAX_PASSWORD_LEN:
+        raise HttpError(400, 'bad_request', f'Password must be at most {MAX_PASSWORD_LEN} characters')
+    perms = fields.get('permissions') or 'all'
+    if perms not in PERMISSION_FLAGS:
+        raise HttpError(400, 'bad_request', f'permissions must be one of {", ".join(sorted(PERMISSION_FLAGS))}')
+    return user, owner, perms
+
+
+def validate_to(fields):
+    """Target format for the ebook converter, or an HttpError."""
+    to = (fields.get('to') or 'epub').strip().lower().lstrip('.')
+    if to not in EBOOK_TARGETS:
+        raise HttpError(400, 'bad_request', f'to must be one of {", ".join(sorted(EBOOK_TARGETS))}')
+    return to
+
+
+def validate_level(fields):
+    level = (fields.get('level') or '1b').strip().lower()
+    if level not in PDFA_VERSIONS:
+        raise HttpError(400, 'bad_request', f'level must be one of {", ".join(sorted(PDFA_VERSIONS))}')
+    return level
+
+
+def unlock_error(rc, password):
+    """qpdf --requires-password rc -> the HttpError to raise, or None to carry on."""
+    if rc != 0:
+        return None
+    if password:
+        return HttpError(400, 'wrong_password', 'That password did not open this PDF')
+    return HttpError(400, 'password_required', 'This PDF needs a password to open')
+
+
+def op_protect(src, work, env, fields):
+    user, owner, perms = validate_protect_fields(fields)
+    # --is-encrypted: 0 = encrypted, 2 = not encrypted. Refuse rather than double-encrypt.
+    rc, _ = run(['qpdf', '--is-encrypted', src], work, env, JOB_TIMEOUT)
+    if rc == 0:
+        raise HttpError(400, 'already_encrypted', 'This PDF is already password-protected')
+    out_path = os.path.join(work, 'out.pdf')
+    rc, text = qpdf(protect_args(user, owner, perms, src, out_path), work, env, secrets=(user, owner))
+    if rc not in (0, 3) or not os.path.isfile(out_path) or os.path.getsize(out_path) == 0:
+        log(f'protect-pdf failed rc={rc}: {text[-400:]!r}')
+        raise HttpError(500, 'conversion_failed', 'Could not protect this PDF',
+                        extra={'detail': text[-800:], 'exit': rc})
+    log(f'protect-pdf ok permissions={perms} owner_supplied={bool(fields.get("ownerPassword"))}')
+    return out_path
+
+
+def op_unlock(src, work, env, fields):
+    pw = fields.get('password') or ''
+    if len(pw) > MAX_PASSWORD_LEN:
+        raise HttpError(400, 'bad_request', f'Password must be at most {MAX_PASSWORD_LEN} characters')
+    rc, _ = qpdf_encryption_state(src, work, env, pw or None)
+    err = unlock_error(rc, pw)
+    if err:
+        raise err
+    # rc 2 means "not encrypted" but is also qpdf's generic error code, so let --decrypt
+    # be the judge: it succeeds on a plain PDF and fails on a genuinely broken one.
+    out_path = os.path.join(work, 'out.pdf')
+    rc2, text = qpdf(unlock_args(pw, src, out_path), work, env, secrets=(pw,))
+    if rc2 not in (0, 3) or not os.path.isfile(out_path) or os.path.getsize(out_path) == 0:
+        log(f'unlock-pdf failed rc={rc2}: {text[-400:]!r}')
+        raise HttpError(500, 'conversion_failed', 'Could not read this PDF',
+                        extra={'detail': text[-800:], 'exit': rc2})
+    log(f'unlock-pdf ok was_encrypted={rc == 3}')
+    return out_path
+
+
+def op_pdfa(src, work, env, fields):
+    level = validate_level(fields)
+    rc, _ = run(['qpdf', '--is-encrypted', src], work, env, JOB_TIMEOUT)
+    if rc == 0:
+        raise HttpError(400, 'password_required', 'This PDF is password-protected; unlock it first')
+    profile = os.path.join(work, 'lo-profile')
+    shutil.copytree(LO_PROFILE, profile, symlinks=True)
+    outdir = os.path.join(work, 'pdfa')
+    os.makedirs(outdir, exist_ok=True)
+    filter_opts = pdfa_filter_options(level)
+    cmd = ['soffice', f'-env:UserInstallation=file://{profile}', '--headless', '--norestore',
+           '--nologo', '--nolockcheck', '--infilter=impress_pdf_import',
+           '--convert-to', f'pdf:draw_pdf_Export:{filter_opts}', '--outdir', outdir, src]
+    rc, text = run(cmd, work, env, JOB_TIMEOUT)
+    out_path = os.path.join(outdir, os.path.splitext(os.path.basename(src))[0] + '.pdf')
+    if rc != 0 or not os.path.isfile(out_path) or os.path.getsize(out_path) == 0:
+        log(f'pdf-to-pdfa failed rc={rc}: {text[-400:]!r}')
+        raise HttpError(500, 'conversion_failed', 'Could not convert this PDF to PDF/A',
+                        extra={'detail': text[-800:], 'exit': rc})
+    with open(out_path, 'rb') as f:
+        data = f.read()
+    fixed = downgrade_conformance(data)
+    downgraded = fixed != data
+    if downgraded:
+        with open(out_path, 'wb') as f:
+            f.write(fixed)
+    log(f'pdf-to-pdfa ok level={level} conformance_downgraded={downgraded}')
+    return out_path
+
+
+def convert(kind, src, work, fields):
     spec = KINDS[kind]
     env = dict(os.environ, HOME=work, TMPDIR=work)
+    if kind == 'protect-pdf':
+        return op_protect(src, work, env, fields), spec['mime'], spec['out']
+    if kind == 'unlock-pdf':
+        return op_unlock(src, work, env, fields), spec['mime'], spec['out']
+    if kind == 'pdf-to-pdfa':
+        return op_pdfa(src, work, env, fields), spec['mime'], spec['out']
+    if kind == 'ebook-converter':
+        to = validate_to(fields)
+        out_path = os.path.join(work, 'out.' + to)
+        env['QTWEBENGINE_CHROMIUM_FLAGS'] = '--no-sandbox --disable-gpu --disable-dev-shm-usage'
+        # no PDF layout flags here: Calibre reflows between ebook containers, so the reader decides the page
+        cmd = ['xvfb-run', '-a', 'ebook-convert', src, out_path]
+        rc, text = run(cmd, work, env, JOB_TIMEOUT)
+        ok = rc == 0 and os.path.isfile(out_path) and os.path.getsize(out_path) > 0
+        if not ok:
+            tail = text[-800:]
+            log(f'{kind} -> {to} failed rc={rc}: {tail!r}')
+            if 'DRM' in text:
+                raise HttpError(415, 'drm_protected', 'This book is DRM-protected and cannot be converted', extra={'detail': tail})
+            raise HttpError(500, 'conversion_failed', 'Conversion failed', extra={'detail': tail, 'exit': rc})
+        return out_path, EBOOK_TARGETS[to], to
     if kind in ('ppt-to-pdf', 'pdf-to-ppt'):
         profile = os.path.join(work, 'lo-profile')
         shutil.copytree(LO_PROFILE, profile, symlinks=True)
@@ -315,11 +587,12 @@ class Handler(BaseHTTPRequestHandler):
             spec = KINDS[kind]
             src_tmp = os.path.join(work, 'upload.bin')
             name = None
+            fields = {}
             if ctype.lower().startswith('multipart/form-data'):
                 boundary = multipart_boundary(ctype)
                 if not boundary:
                     raise HttpError(400, 'bad_request', 'multipart/form-data without boundary')
-                name = extract_file_part(body_path, boundary, src_tmp)
+                name, fields = parse_multipart(body_path, boundary, src_tmp)
                 if name is None:
                     raise HttpError(400, 'bad_request', 'No file part in upload')
                 os.unlink(body_path)
@@ -337,7 +610,7 @@ class Handler(BaseHTTPRequestHandler):
             src = os.path.join(work, 'input' + ext)
             os.rename(src_tmp, src)
             in_size = os.path.getsize(src)
-            out_path, mime, out_ext = convert(kind, src, work)
+            out_path, mime, out_ext = convert(kind, src, work, fields)
             size = os.path.getsize(out_path)
             self.send_response(200)
             self.send_header('content-type', mime)
