@@ -138,15 +138,15 @@ export default function WebClipPage() {
   return (
     <div className="container clip-hero">
       <div style={{ maxWidth: 820 }}>
-        <span className="eyebrow">Web page → clean print</span>
+        <span className="eyebrow">Web page → clean printout</span>
         <h1>
           Paste a link.
           <br />
-          <span className="acid-mark">Lose the junk.</span>
+          <span className="acid-mark">Print just the article.</span>
         </h1>
         <p className="lead">
-          We fetch the page, keep the article, and throw away ads, menus, popups and comment walls. Then you delete
-          anything else with a click, and print, PDF or email the result.
+          The page is reduced to its article inside your browser — no ads, menus, pop-ups or comment threads. Click
+          anything else to remove it, then print it, save it as a PDF or PNG, or email it to yourself.
         </p>
       </div>
 
