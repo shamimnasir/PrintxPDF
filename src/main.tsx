@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App'
@@ -26,12 +26,18 @@ bootConfig().then(() => {
 // Vite's BASE_URL is "/" locally and "/<repo>/" on GitHub Pages
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 
-createRoot(document.getElementById('root')!).render(
+const app = (
   <StrictMode>
     <BrowserRouter basename={basename}>
       <ToastProvider>
         <App />
       </ToastProvider>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
+// Built pages arrive with the real markup already in #root (scripts/prerender.mjs renders the
+// same tree with src/entry-server.tsx), so React attaches to it instead of repainting; the dev
+// server and the bare app shell start from an empty root.
+const root = document.getElementById('root')!
+if (root.hasChildNodes()) hydrateRoot(root, app)
+else createRoot(root).render(app)

@@ -31,10 +31,16 @@ export function Header() {
   const user = useUser()
   const loc = useLocation()
   const ref = useRef<HTMLDivElement>(null)
-  const [dark, setDark] = useState(() => document.documentElement.getAttribute('data-theme') === 'dark')
+  // both start from the static-HTML value and read the browser only after hydration
+  const [dark, setDark] = useState(false)
   const cfg = useSiteConfig()
-  const [annOpen, setAnnOpen] = useState(() => safeStorage('session')?.getItem('pxp:ann') !== 'closed')
+  const [annOpen, setAnnOpen] = useState(true)
   const ann = cfg.announcement
+
+  useEffect(() => {
+    setDark(document.documentElement.getAttribute('data-theme') === 'dark')
+    if (safeStorage('session')?.getItem('pxp:ann') === 'closed') setAnnOpen(false)
+  }, [])
 
   useEffect(() => {
     setOpen(null)

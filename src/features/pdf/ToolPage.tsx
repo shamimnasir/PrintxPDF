@@ -7,6 +7,7 @@ import { isFilled, toolContent } from '../../content/tools'
 import { ToolContentSections, stepAnchor } from './ToolContent'
 import { StatusBadge, ToolCard } from './ToolCard'
 import { GenericTool } from './GenericTool'
+import { ClientOnly } from '../../components/ClientOnly'
 import './tools.css'
 
 const SignTool = lazy(() => import('./custom/SignTool'))
@@ -78,7 +79,10 @@ export default function ToolPage() {
         <p className="lead">{tool.description}</p>
       </div>
 
-      <Suspense fallback={<div className="badge badge-ink">Loading tool…</div>}>
+      {/* the workbench reads files and browser APIs, so it is left out of the static HTML and
+          mounts after hydration; the skeleton keeps the page from jumping meanwhile */}
+      <ClientOnly fallback={<div className="card tool-skeleton" aria-busy="true"><span className="badge badge-ink">Loading tool…</span></div>}>
+      <Suspense fallback={<div className="card tool-skeleton" aria-busy="true"><span className="badge badge-ink">Loading tool…</span></div>}>
         {tool.custom === 'sign' && <SignTool key={key} />}
         {tool.custom === 'reader' && <ReaderTool key={key} />}
         {tool.custom === 'qr' && <QrTool key={key} />}
@@ -95,6 +99,7 @@ export default function ToolPage() {
         {tool.custom === 'unzip' && <UnzipTool key={key} />}
         {!tool.custom && <GenericTool key={key} tool={tool} />}
       </Suspense>
+      </ClientOnly>
 
       {c && <ToolContentSections tool={tool} c={c} />}
 

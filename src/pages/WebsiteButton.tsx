@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { breadcrumbSchema, useSeo } from '../lib/seo'
+import { breadcrumbSchema, useSeo, SITE_URL } from '../lib/seo'
 import { useToast } from '../components/ui/Toast'
 import { Seg } from '../components/ui/Seg'
 
@@ -19,7 +19,7 @@ export default function WebsiteButton() {
   const [icon, setIcon] = useState(true)
 
   const safeLabel = label.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
-  const origin = `${window.location.origin}${import.meta.env.BASE_URL}`.replace(/\/$/, '')
+  const origin = `${SITE_URL}${import.meta.env.BASE_URL}`.replace(/\/$/, '')
   const colors = { acid: ['#2B5BFF', '#FFFFFF'], ink: ['#0B0B0F', '#FFFFFF'], outline: ['transparent', '#0B0B0F'] }[style]
   const pad = { sm: '6px 12px', md: '10px 18px', lg: '14px 26px' }[size]
   const fs = { sm: '12px', md: '14px', lg: '16px' }[size]

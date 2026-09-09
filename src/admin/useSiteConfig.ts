@@ -1,17 +1,11 @@
-import { useEffect, useState } from 'react'
-import { getConfig, subscribeConfig, type SiteConfig } from './config'
+import { useSyncExternalStore } from 'react'
+import { getConfig, getPublished, subscribeConfig, type SiteConfig } from './config'
 
+/**
+ * The live site config. Static rendering and hydration both see the published config;
+ * an admin's unpublished draft is layered on right after hydration, so the HTML written
+ * at build time always matches React's first client render.
+ */
 export function useSiteConfig(): SiteConfig {
-  const [cfg, setCfg] = useState<SiteConfig>(getConfig)
-  useEffect(() => {
-    const unsub = subscribeConfig(setCfg)
-    // bootConfig() can resolve between the first render and this effect (and StrictMode
-    // unsubscribes/resubscribes), so re-read once after subscribing or the published
-    // config is silently ignored for the life of the page.
-    setCfg(getConfig())
-    return () => {
-      unsub()
-    }
-  }, [])
-  return cfg
+  return useSyncExternalStore(subscribeConfig, getConfig, getPublished)
 }

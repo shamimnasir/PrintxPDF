@@ -99,7 +99,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
     links: { linkedin: '', x: '', github: '', website: '' },
   },
   announcement: { enabled: false, text: 'New: OCR now runs fully offline in your browser.', linkText: 'Try it', linkUrl: '/tools/ocr-pdf', dismissible: true },
-  theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0f172a', paper: '#ffffff', alarm: '#ff3b1f', defaultMode: 'system', borderWidth: 1, radius: 12, design: 'studio' },
+  theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0f172a', paper: '#ffffff', alarm: '#ff3b1f', defaultMode: 'light', borderWidth: 1, radius: 12, design: 'studio' },
   home: {
     eyebrow: 'Free · {count} tools · Your files never leave your device',
     headline1: 'Print only what matters.',
@@ -208,8 +208,27 @@ function recompute() {
   listeners.forEach((fn) => fn(current))
 }
 
+/** Installs the published config directly: the static renderer and the inline copy in built pages use this. */
+export function setPublishedConfig(json: Partial<SiteConfig>) {
+  published = merge(DEFAULT_CONFIG, json)
+  booted = true
+  recompute()
+}
+
+// Built pages carry the published config inline, so the first render (and hydration of the
+// static HTML) already sees it; the dev server has no inline copy and fetches instead.
+if (typeof document !== 'undefined') {
+  try {
+    const inline = document.getElementById('pxp-config')?.textContent
+    if (inline) setPublishedConfig(JSON.parse(inline) as Partial<SiteConfig>)
+  } catch {
+    // malformed inline config, the fetch below is the fallback
+  }
+}
+
 /** Fetches the published config once at boot, then layers the local draft on top. */
 export async function bootConfig(): Promise<SiteConfig> {
+  if (booted) return current
   try {
     const res = await fetch(`${import.meta.env.BASE_URL}site-config.json`, { cache: 'no-cache' })
     if (res.ok) {

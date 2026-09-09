@@ -606,3 +606,11 @@
   opacity: 0.4;
   cursor: default;
 }
+
+/* placeholder for the workbench while it mounts after hydration (see ToolPage) */
+.tool-skeleton {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

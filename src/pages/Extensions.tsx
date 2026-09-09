@@ -1,6 +1,9 @@
 import { Navigate, useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { breadcrumbSchema, useSeo } from '../lib/seo'
+import { breadcrumbSchema, useSeo, SITE_URL } from '../lib/seo'
+
+// React refuses javascript: URLs in JSX, so the bookmarklet link gets its href through a ref
+const BOOKMARKLET = `javascript:(function(){window.open('${SITE_URL}${import.meta.env.BASE_URL}print?url='+encodeURIComponent(location.href))})()`
 
 const EXTENSION_ZIP = '/downloads/printxpdf-chrome-extension.zip'
 
@@ -76,7 +79,8 @@ export default function Extensions() {
             <p>Drag this to your bookmarks bar. Click it on any page and the cleaner opens with that page loaded.</p>
             <a
               className="btn btn-acid"
-              href={`javascript:(function(){window.open('${window.location.origin}${import.meta.env.BASE_URL}print?url='+encodeURIComponent(location.href))})()`}
+              href="#bookmarklet"
+              ref={(el) => el?.setAttribute('href', BOOKMARKLET)}
               onClick={(e) => e.preventDefault()}
               draggable
             >
