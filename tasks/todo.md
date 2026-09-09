@@ -33,10 +33,10 @@
 - Local DNS on this Mac lags new Cloudflare/Vercel records by ~30 min; verify with curl --resolve <host>:443:<ip>.
 
 # Phase 3 (2026-09-10): competitor gap closure, copy originality, store readiness
-- [x] Tools vs iLovePDF: edit, crop, forms, redact, compare, scan, pdf→markdown built + browser-verified · [ ] protect, unlock, pdf/a — worker build in flight
-- [x] Tools vs CloudConvert wave 2: image converter (HEIC→JPG), compress image, create/extract ZIP wired + browser-verified · [ ] ebook-converter endpoint once worker/ is free
+- [x] Tools vs iLovePDF: edit, crop, forms, redact, compare, scan, pdf→markdown built + browser-verified · [x] protect, unlock, pdf/a live (qpdf, LibreOffice)
+- [x] Tools vs CloudConvert wave 2: image converter (HEIC→JPG), compress image, create/extract ZIP wired + browser-verified · [x] ebook-converter live (Calibre)
 - [x] JPG screenshot output on /print
 - [x] Copy rewrite: tagline, meta, hero, how-it-works, products, print page, About, README; fabricated marquee customers removed
 - [x] /extension-privacy page + route + sitemap + prerender (Web Store requirement)
 - [x] Chrome Web Store readiness audit (clipboardWrite added, shortcut Alt+Shift+P, single-purpose, CSP declared, STORE_LISTING.md; human: $5 dev account, screenshots) · [x] WordPress.org readiness audit (external-service disclosure, block removed, Tested up to 7.1, full GPL text; human: real Contributors username, artwork, screenshots, PCP run)
-- [x] files components wired into ToolPage; counts self-updating; Api.tsx endpoint table · [ ] final verify, build, deploy after the worker lands
+- [x] files components wired into ToolPage; counts self-updating; Api.tsx endpoint table · [x] verified, built (148 pages, 44 tools), deployed
