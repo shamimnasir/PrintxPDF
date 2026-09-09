@@ -12,7 +12,7 @@ export type ToolMeta = {
   accept: string
   multiple?: boolean
   /** tools with a bespoke UI instead of the generic shell */
-  custom?: 'sign' | 'reader' | 'qr' | 'ocr' | 'organize'
+  custom?: 'sign' | 'reader' | 'qr' | 'ocr' | 'organize' | 'forms' | 'redact' | 'compare' | 'scan' | 'edit' | 'image' | 'compress-image' | 'zip' | 'unzip'
 }
 
 export const CATEGORY_LABEL: Record<ToolCategory, string> = {
@@ -65,6 +65,24 @@ export const TOOLS: ToolMeta[] = [
 
   // more
   { slug: 'qr-code', name: 'QR Code Generator', short: 'Print-ready QR codes', description: 'Create print-ready QR codes for links, WiFi, contact cards, email and SMS. Free, right in your browser.', icon: '▩', category: 'more', status: 'real', accept: '', custom: 'qr' },
+  // ---- added to close the gap with the big PDF suites ----
+  { slug: 'edit-pdf', name: 'Edit PDF', short: 'Add text, images, shapes', description: 'Add text, images, rectangles and freehand drawing to any page, then flatten it into the file. Runs in your browser on your own copy.', icon: '✎', category: 'edit', status: 'real', accept: '.pdf', custom: 'edit' },
+  { slug: 'crop-pdf', name: 'Crop PDF', short: 'Trim the margins', description: 'Cut the white space off every page, or crop to one region. Sets the crop box, so nothing is thrown away and the change is reversible.', icon: '⌗', category: 'edit', status: 'real', accept: '.pdf' },
+  { slug: 'pdf-forms', name: 'Fill PDF Forms', short: 'Detect and fill fields', description: 'Finds the form fields in a PDF, lets you fill them in and can flatten the result so the answers cannot be edited again.', icon: '☑', category: 'edit', status: 'real', accept: '.pdf', custom: 'forms' },
+  { slug: 'redact-pdf', name: 'Redact PDF', short: 'Remove text for good', description: 'Draw over anything sensitive. The covered area is rasterised, so the words underneath are gone from the file rather than hidden behind a black box.', icon: '█', category: 'security', status: 'real', accept: '.pdf', custom: 'redact' },
+  { slug: 'compare-pdf', name: 'Compare PDFs', short: 'Spot what changed', description: 'Put two versions side by side and highlight every pixel that moved, so you can see exactly what changed between drafts.', icon: '⇄', category: 'more', status: 'real', accept: '.pdf', multiple: true, custom: 'compare' },
+  { slug: 'scan-to-pdf', name: 'Scan to PDF', short: 'Camera to document', description: 'Use your phone or webcam as a scanner. Capture page after page, tidy the contrast and save them as one PDF.', icon: '⎙', category: 'convert', status: 'real', accept: 'image/*', multiple: true, custom: 'scan' },
+  { slug: 'pdf-to-markdown', name: 'PDF to Markdown', short: 'PDF → .md', description: 'Turn a PDF into clean Markdown with headings, lists and links kept, ready to paste into notes, a repo or an AI prompt.', icon: 'M', category: 'convert', status: 'real', accept: '.pdf' },
+  { slug: 'protect-pdf', name: 'Protect PDF', short: 'Add a password', description: 'Lock a PDF with a password and AES-256 encryption. Runs on our server because browsers cannot write PDF encryption; the file is deleted the moment it is returned.', icon: '🔒', category: 'security', status: 'server', accept: '.pdf' },
+  { slug: 'unlock-pdf', name: 'Unlock PDF', short: 'Remove a password', description: 'Strip the password from a PDF you have the right to open, so it stops asking every time. Runs on our server and the file is deleted immediately.', icon: '🔓', category: 'security', status: 'server', accept: '.pdf' },
+  { slug: 'pdf-to-pdfa', name: 'PDF to PDF/A', short: 'Archive-safe PDF', description: 'Convert to PDF/A, the ISO format archives and courts ask for, with fonts embedded so it still renders correctly decades from now.', icon: 'A', category: 'convert', status: 'server', accept: '.pdf' },
+  // ---- files and images (browser-only, live in src/features/files) ----
+  { slug: 'image-converter', name: 'Image Converter', short: 'HEIC, PNG, JPG, WebP, SVG', description: 'Convert HEIC photos from an iPhone, plus PNG, JPG, WebP, GIF, BMP and SVG, into PNG, JPG or WebP. Batch as many as you like; nothing is uploaded.', icon: '🖼', category: 'convert', status: 'real', accept: 'image/*,.heic,.heif,.svg', multiple: true, custom: 'image' },
+  { slug: 'compress-image', name: 'Compress Image', short: 'Smaller PNG, JPG, WebP', description: 'Shrink photos and screenshots by re-encoding at a quality you choose and, optionally, a maximum size. See the before and after next to each other before you download.', icon: '⇲', category: 'optimize', status: 'real', accept: 'image/*', multiple: true, custom: 'compress-image' },
+  { slug: 'create-zip', name: 'Create ZIP', short: 'Bundle files into one', description: 'Put any files into a single ZIP archive without installing anything. Built in your browser, so a 200 MB folder never leaves your computer.', icon: '🗜', category: 'more', status: 'real', accept: '*/*', multiple: true, custom: 'zip' },
+  { slug: 'extract-zip', name: 'Extract ZIP', short: 'Open an archive', description: 'See what is inside a ZIP and download single files or all of them, straight from your browser, with no upload and no extra software.', icon: '📂', category: 'more', status: 'real', accept: '.zip', custom: 'unzip' },
+  // ---- ebooks between formats (server: Calibre is already in the container) ----
+  { slug: 'ebook-converter', name: 'Ebook Converter', short: 'EPUB ↔ MOBI ↔ AZW3', description: 'Convert between EPUB, MOBI, AZW3, FB2 and TXT so a book opens on whatever you read with, Kindle included. Runs on our server with Calibre; the file is deleted the moment it is returned.', icon: '📚', category: 'convert', status: 'server', accept: '.epub,.mobi,.azw,.azw3,.fb2,.txt' },
 ]
 
 export const toolBySlug = (slug: string) => TOOLS.find((t) => t.slug === slug)

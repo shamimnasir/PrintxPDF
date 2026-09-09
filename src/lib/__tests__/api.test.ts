@@ -11,6 +11,9 @@ describe('convertRemote', () => {
   it('names the output after the input with the target extension', () => {
     expect(outputName('ppt-to-pdf', 'Q3 deck.pptx')).toBe('Q3 deck.pdf')
     expect(outputName('pdf-to-ppt', 'a.b.pdf')).toBe('a.b.pptx')
+    expect(outputName('protect-pdf', 'deck.pdf')).toBe('deck-protected.pdf')
+    expect(outputName('ebook-converter', 'book.epub', { to: 'mobi' })).toBe('book.mobi')
+    expect(outputName('ebook-converter', 'book.epub', { to: '.azw3' })).toBe('book.azw3')
   })
 
   it('returns the converted blob and parses the usage header', async () => {

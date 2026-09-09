@@ -5,8 +5,8 @@ import { useSiteConfig } from '../admin/useSiteConfig'
 export default function About() {
   const cfg = useSiteConfig()
   useSeo({
-    title: 'About PrintxPDF — Print Less Junk',
-    description: `PrintxPDF is a print and PDF toolkit founded by ${cfg.author.name}. Every browser tool keeps your files on your computer; four heavy conversions run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
+    title: 'About PrintxPDF — Documents You Control',
+    description: `PrintxPDF is a print and PDF toolkit founded by ${cfg.author.name}. Every browser tool keeps your files on your computer; a few heavy jobs run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
     path: '/about',
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]), { '@context': 'https://schema.org', ...orgSchema(cfg.author) }],
   })
@@ -15,14 +15,14 @@ export default function About() {
     <div className="container section" style={{ maxWidth: 820 }}>
       <span className="eyebrow">About</span>
       <h1>
-        Print less junk.
+        Your documents.
         <br />
-        <span className="acid-mark">More of what matters.</span>
+        <span className="acid-mark">Your computer. Your call.</span>
       </h1>
       <p className="lead">
         PrintxPDF is a print-and-PDF toolkit that keeps your files on your own machine. Everything that can run in a browser
-        does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript. Four
-        conversions that need a real layout engine (PowerPoint and ebook formats) run on our own server, and say so on the tool
+        does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript. A few
+        jobs that need a real engine (PowerPoint, ebooks, PDF encryption, PDF/A) run on our own server, and say so on the tool
         page.
       </p>
       <h2 style={{ fontSize: '2rem', marginTop: '3rem' }}>What it does</h2>

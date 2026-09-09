@@ -5,7 +5,7 @@ import { UndoStack } from '../../lib/undoStack'
 import { store } from '../../lib/store'
 import { useToast } from '../../components/ui/Toast'
 import { Seg } from '../../components/ui/Seg'
-import { exportPdf, exportPng, safeFilename, type PageSize } from './exportPdf'
+import { exportPdf, exportImage, safeFilename, type ImageKind, type PageSize } from './exportPdf'
 import './editor.css'
 
 type Mode = null | 'delete' | 'highlight' | 'edit' | 'break' | 'note'
@@ -312,13 +312,13 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
       setBusy(null)
     }
   }
-  const doPng = async () => {
+  const doImage = async (kind: ImageKind) => {
     if (!pageRef.current) return
     setMode(null)
     setBusy('Capturing screenshot…')
     try {
-      await exportPng(pageRef.current, safeFilename(getTitle(), 'png'))
-      toast('Screenshot saved')
+      await exportImage(pageRef.current, safeFilename(getTitle(), kind), kind)
+      toast(`${kind.toUpperCase()} saved`)
     } catch (e) {
       toast(`Screenshot failed: ${(e as Error).message}`, 'error')
     } finally {
@@ -377,7 +377,8 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
           <Tool icon="⎙" label="Print" onClick={doPrint} />
           <Tool icon="⤓" label="PDF" onClick={doPdf} disabled={!!busy} />
           <Tool icon="✉" label="Email" onClick={doEmail} />
-          <Tool icon="▣" label="Screenshot" onClick={doPng} disabled={!!busy} />
+          <Tool icon="▣" label="PNG" onClick={() => doImage('png')} disabled={!!busy} />
+          <Tool icon="▣" label="JPG" onClick={() => doImage('jpg')} disabled={!!busy} />
           <div className="ed-sep" />
           <Tool icon="Aa" label="Style ▾" on={styleOpen} menu className="ed-style-btn" onClick={() => setStyleOpen((o) => !o)} />
           <Tool icon="🗑" label="Delete" danger on={mode === 'delete'} onClick={() => toggleMode('delete')} badge={stack.size} />

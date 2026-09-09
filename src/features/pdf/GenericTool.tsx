@@ -12,6 +12,7 @@ import { useUser } from '../account/useUser'
 type Field =
   | { key: string; label: string; type: 'select'; options: [string, string][]; default: string; help?: string }
   | { key: string; label: string; type: 'text'; default: string; placeholder?: string; help?: string }
+  | { key: string; label: string; type: 'password'; default: string; placeholder?: string; help?: string }
   | { key: string; label: string; type: 'number'; default: number; min?: number; max?: number; step?: number; help?: string }
   | { key: string; label: string; type: 'range'; default: number; min: number; max: number; step: number; help?: string }
 
@@ -72,6 +73,93 @@ const FIELDS: Record<string, Field[]> = {
     { key: 'keywords', label: 'Keywords', type: 'text', default: '', placeholder: 'comma, separated' },
   ],
   'html-to-pdf': [{ key: 'pageSize', label: 'Page size', type: 'select', options: [['A4', 'A4'], ['Letter', 'Letter']], default: 'A4' }],
+  'crop-pdf': [
+    {
+      key: 'mode',
+      label: 'Crop by',
+      type: 'select',
+      options: [['auto', 'Auto-detect content'], ['margins', 'Margins'], ['box', 'Region']],
+      default: 'auto',
+      help: 'Auto trims the white space around whatever is printed. Margins cuts the amount you type off each side. Region keeps the rectangle between those four edges, all measured from the top-left corner of the page.',
+    },
+    { key: 'unit', label: 'Unit', type: 'select', options: [['mm', 'Millimetres'], ['pt', 'Points'], ['percent', 'Percent of the page']], default: 'mm' },
+    { key: 'top', label: 'Top', type: 'number', default: 10, min: 0, step: 1 },
+    { key: 'right', label: 'Right', type: 'number', default: 10, min: 0, step: 1 },
+    { key: 'bottom', label: 'Bottom', type: 'number', default: 10, min: 0, step: 1 },
+    { key: 'left', label: 'Left', type: 'number', default: 10, min: 0, step: 1 },
+    { key: 'pages', label: 'Pages', type: 'text', default: '', placeholder: 'All pages (or e.g. 1, 3-5)' },
+  ],
+  'pdf-to-markdown': [
+    {
+      key: 'headings',
+      label: 'Headings',
+      type: 'select',
+      options: [['yes', 'Detect from font size'], ['no', 'Plain paragraphs only']],
+      default: 'yes',
+      help: 'Lines set noticeably larger than the body text become #, ## or ###.',
+    },
+    { key: 'pageBreaks', label: 'Page breaks', type: 'select', options: [['no', 'One continuous document'], ['yes', 'Rule (---) between pages']], default: 'no' },
+  ],
+  'protect-pdf': [
+    { key: 'password', label: 'Password', type: 'password', default: '', placeholder: 'At least 4 characters', help: 'Needed every time the file is opened. Nobody can recover it for you, so keep a copy.' },
+    { key: 'confirm', label: 'Confirm password', type: 'password', default: '', placeholder: 'Type it again' },
+    {
+      key: 'permissions',
+      label: 'Once open, allow',
+      type: 'select',
+      options: [['all', 'Everything'], ['no-print', 'No printing'], ['no-copy', 'No copying text'], ['no-print-copy', 'No printing or copying']],
+      default: 'all',
+    },
+  ],
+  'unlock-pdf': [
+    { key: 'password', label: 'Password', type: 'password', default: '', placeholder: 'Leave blank if it opens without one', help: 'Only for files you have the right to open. Leave this empty if the PDF opens fine but blocks printing or copying.' },
+  ],
+  'ebook-converter': [
+    {
+      key: 'to',
+      label: 'Convert to',
+      type: 'select',
+      options: [
+        ['epub', 'EPUB (most readers, Apple Books, Kobo)'],
+        ['azw3', 'AZW3 (Kindle)'],
+        ['mobi', 'MOBI (older Kindles)'],
+        ['fb2', 'FB2'],
+        ['txt', 'Plain text'],
+      ],
+      default: 'epub',
+      help: 'Calibre does the conversion on our server. Pick the format your reader opens.',
+    },
+  ],
+  'pdf-to-pdfa': [
+    {
+      key: 'level',
+      label: 'Conformance',
+      type: 'select',
+      options: [['1b', 'PDF/A-1b · widest support'], ['2b', 'PDF/A-2b · recommended'], ['3b', 'PDF/A-3b · allows attachments']],
+      default: '2b',
+      help: 'PDF/A-2b suits almost every archive. Pick 1b only if you were asked for it by name.',
+    },
+  ],
+}
+
+/**
+ * Extra multipart fields for the server tools, validated here so a typo never costs an upload.
+ * Passwords go straight from this object into the request body: they are never logged, shown in an
+ * error, or written into a result note.
+ */
+function serverFields(slug: string, opts: Opts): Record<string, string> | undefined {
+  const s = (k: string) => String(opts[k] ?? '')
+  if (slug === 'protect-pdf') {
+    const password = s('password')
+    if (!password) throw new Error('Enter the password you want the file to ask for.')
+    if (password.length < 4) throw new Error('Use a password of at least 4 characters.')
+    if (password !== s('confirm')) throw new Error('The two passwords do not match. Type the same one twice.')
+    return { password, permissions: s('permissions') || 'all' }
+  }
+  if (slug === 'unlock-pdf') return { password: s('password') }
+  if (slug === 'pdf-to-pdfa') return { level: s('level') || '2b' }
+  if (slug === 'ebook-converter') return { to: s('to') || 'epub' }
+  return undefined
 }
 
 export function GenericTool({ tool }: { tool: ToolMeta }) {
@@ -126,9 +214,11 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
     try {
       if (isConvertKind(tool.slug)) {
         const f = files[0]
+        const fields = serverFields(tool.slug, opts) // validated before a single byte is uploaded
         setProgress({ f: 0, msg: 'Starting the converter…' })
         const r = await convertRemote(tool.slug, f, {
           token: user?.entitlement?.token,
+          fields,
           onProgress: (frac, phase) =>
             onP(phase === 'upload' ? frac * 0.6 : 0.6 + frac * 0.4, phase === 'upload' ? `Uploading… ${Math.round(frac * 100)}%` : 'Converting on the server…'),
         })
@@ -137,6 +227,8 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
         setResults(out)
         toast('Done: 1 file ready')
         downloadBlob(out[0].blob, out[0].name)
+        // the file is in hand, so stop holding the password in component state
+        if (fields && 'password' in fields) setOpts((o) => ({ ...o, password: '', confirm: '' }))
         return
       }
       // engines pull in pdf-lib / pdf.js / jsPDF; load them only when a tool actually runs
@@ -208,6 +300,24 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
         case 'flatten-pdf':
           out = await E.flatten(f)
           break
+        case 'crop-pdf':
+          out = await E.crop(
+            f,
+            {
+              mode: s('mode') as 'margins' | 'auto' | 'box',
+              top: n('top'),
+              right: n('right'),
+              bottom: n('bottom'),
+              left: n('left'),
+              unit: s('unit') as 'mm' | 'pt' | 'percent',
+              pages: s('pages'),
+            },
+            onP,
+          )
+          break
+        case 'pdf-to-markdown':
+          out = await E.pdfToMarkdown(f, { headings: s('headings') !== 'no', pageBreaks: s('pageBreaks') === 'yes' }, onP)
+          break
         default:
           throw new Error('This tool has no browser engine.')
       }
@@ -224,9 +334,14 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
   }
 
   const fields = (FIELDS[tool.slug] || []).filter((fd) => {
-    if (tool.slug !== 'split-pdf') return true
-    if (fd.key === 'ranges') return opts.mode === 'ranges'
-    if (fd.key === 'every') return opts.mode === 'every'
+    if (tool.slug === 'split-pdf') {
+      if (fd.key === 'ranges') return opts.mode === 'ranges'
+      if (fd.key === 'every') return opts.mode === 'every'
+    }
+    if (tool.slug === 'crop-pdf') {
+      // auto-detect measures the page itself, so the unit and the four edges have nothing to say
+      if (['unit', 'top', 'right', 'bottom', 'left'].includes(fd.key)) return opts.mode !== 'auto'
+    }
     return true
   })
   const needsFile = tool.slug !== 'html-to-pdf' || !html.trim()
@@ -284,6 +399,17 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
             )}
             {fd.type === 'text' && (
               <input id={fd.key} className="input" value={String(opts[fd.key])} placeholder={fd.placeholder} onChange={(e) => setOpts({ ...opts, [fd.key]: e.target.value })} />
+            )}
+            {fd.type === 'password' && (
+              <input
+                id={fd.key}
+                className="input"
+                type="password"
+                autoComplete="new-password"
+                value={String(opts[fd.key])}
+                placeholder={fd.placeholder}
+                onChange={(e) => setOpts({ ...opts, [fd.key]: e.target.value })}
+              />
             )}
             {fd.type === 'number' && (
               <input id={fd.key} className="input" type="number" min={fd.min} max={fd.max} step={fd.step} value={Number(opts[fd.key])} onChange={(e) => setOpts({ ...opts, [fd.key]: Number(e.target.value) })} />

@@ -6,7 +6,7 @@ import { useSiteConfig } from '../admin/useSiteConfig'
 import { breadcrumbSchema, softwareSchema, useSeo } from '../lib/seo'
 import '../features/pdf/tools.css'
 
-/** Splits "Cut the clutter." into "Cut the " + "clutter." so only the last word is emphasised. */
+/** Splits a headline like "Print only what matters." into "Print only what " + "matters." so only the last word is emphasised. */
 function lastWord(text: string): [string, string] {
   const t = text.trim()
   if (!t) return ['', '']
@@ -58,7 +58,7 @@ export default function Home() {
     <>
       <section className="section" style={{ paddingBottom: '2rem' }}>
         <div className="container center">
-          <span className="eyebrow">{cfg.home.eyebrow}</span>
+          <span className="eyebrow">{cfg.home.eyebrow.replace('{count}', String(tools.length))}</span>
           <h1 style={{ maxWidth: '14ch', margin: '0 auto 1rem' }}>
             {h1Lead}
             {h1Last && <span className="acid-mark">{h1Last}</span>}
@@ -85,7 +85,7 @@ export default function Home() {
             >
               <div style={{ fontSize: '2.2rem' }}>⬆</div>
               <h3 style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.fileCardTitle}</h3>
-              <p className="muted" style={{ margin: '0 0 0.75rem' }}>{cfg.home.fileCardText}</p>
+              <p className="muted" style={{ margin: '0 0 0.75rem' }}>{cfg.home.fileCardText.replace('{count}', String(tools.length))}</p>
               <span className="btn btn-sm btn-ink" style={{ alignSelf: 'flex-start' }}>
                 Drop a file or click to browse
               </span>
@@ -130,9 +130,9 @@ export default function Home() {
             <div>
               <span className="eyebrow">Popular PDF tools</span>
               <h2 style={{ margin: 0 }}>
-                Everything you do to a PDF,
+                Thirty-nine tools.
                 <br />
-                in one loud place.
+                One tab. Zero uploads.
               </h2>
             </div>
             <Link to="/tools" className="btn">
@@ -153,13 +153,13 @@ export default function Home() {
       <section className="section band-ink">
         <div className="container">
           <span className="eyebrow" style={{ color: 'var(--footer-accent)' }}>
-            How the web printer works
+            How the page cleaner works
           </span>
           <div className="grid grid-3" style={{ marginTop: '1rem' }}>
             {[
-              ['01', 'Paste a link', 'We fetch the page in your browser through a reader proxy and run Mozilla\'s Readability on it. Menus, sidebars, popups and comment sections never make it through.'],
-              ['02', 'Delete what is left', 'Hover any paragraph, image or table and click to remove it. Drag to sweep whole sections. Undo is one key away. Resize text, shrink or drop images.'],
-              ['03', 'Print, PDF, email', 'Print with your browser for crisp text, download a PDF, save a PNG screenshot, or email it to yourself. Nothing touches a server.'],
+              ['01', 'Paste a link', 'The page is fetched and reduced to its article inside your browser. Navigation, sidebars, pop-ups and comment threads are gone before you see it.'],
+              ['02', 'Keep what you want', 'Click any paragraph, image or table to remove it, or drag across a whole section. Resize the text, shrink the images, undo with one key.'],
+              ['03', 'Print, save or send', 'Print with crisp text, save a PDF or a PNG, or email it to yourself. None of it is sent to a server.'],
             ].map(([n, h, p]) => (
               <div key={n} style={{ borderTop: '3px solid var(--footer-accent)', paddingTop: '1rem' }}>
                 <div className="mono" style={{ color: 'var(--footer-accent)', fontSize: '2rem', fontWeight: 600 }}>{n}</div>
@@ -169,7 +169,7 @@ export default function Home() {
             ))}
           </div>
           <Link to="/print" className="btn btn-acid btn-lg" style={{ marginTop: '1rem' }}>
-            Try it on a page →
+            Clean a page now →
           </Link>
         </div>
       </section>
@@ -178,14 +178,14 @@ export default function Home() {
       {cfg.home.showProducts && (
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Everything {cfg.site.name} does</span>
-          <h2>Four products. One idea: cleaner documents, less waste.</h2>
+          <span className="eyebrow">Beyond the website</span>
+          <h2>Take it wherever you work.</h2>
           <div className="grid grid-2" style={{ marginTop: '2rem' }}>
             {[
-              ['PDF tools', 'Create, edit, organize and convert PDFs from the web and your files. Merge, split, sign, watermark, number, compress, OCR. Every one runs locally.', '/tools', 'Start using PDF tools'],
-              ['Browser extension', 'A one-click button in Chrome, Firefox, Safari and Edge that sends the page you are reading straight to the cleaner, no copy-pasting.', '/extensions', 'Get the extension'],
-              ['WordPress plugin', 'Give your readers a Print / PDF / Email button on every post. Installs from the admin, respects your theme, works with WooCommerce.', '/wordpress', 'Explore the plugin'],
-              ['Electronic signatures', 'Draw or type a signature, drop it on any page, add today\'s date, download. Signatures can be saved to your account for next time.', '/tools/sign-pdf', 'Start signing'],
+              ['PDF studio', 'Thirty-nine tools for the whole life of a document: create, edit, fill, organize, protect, redact, compare, convert. Every browser tool runs on your machine.', '/tools', 'Open the tools'],
+              ['Chrome extension', 'One click on any page opens it in the cleaner. Right-click a link or a selection to send just that. It asks for nothing until you click.', '/extensions/chrome', 'Get the extension'],
+              ['WordPress plugin', 'Print, PDF and Email buttons on every post from one small free plugin. No account, no key, and nothing phones home.', '/wordpress', 'See the plugin'],
+              ['Signatures', 'Draw or type a signature, place it on any page, add the date, download. Save it for next time.', '/tools/sign-pdf', 'Sign a PDF'],
             ].map(([h, p, to, cta]) => (
               <div key={h} className="card">
                 <h3>{h}</h3>
@@ -210,7 +210,7 @@ export default function Home() {
             <div>
               <p style={{ margin: 0, fontWeight: 600 }}>
                 Every browser tool processes your PDFs in memory on your own machine using pdf-lib, pdf.js and Tesseract.
-                Close the tab and they are gone. The four server conversions say so on their page, and delete your file
+                Close the tab and they are gone. The few jobs that run on our server say so on their page, and delete your file
                 the moment they finish.
               </p>
             </div>

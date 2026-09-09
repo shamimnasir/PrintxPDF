@@ -97,11 +97,14 @@ export function decodeToken(token: string): { sub: string; email: string; plan: 
 
 // ---------------------------------------------------------------- conversions
 
-export const CONVERT_KINDS = ['ppt-to-pdf', 'pdf-to-ppt', 'epub-to-pdf', 'mobi-to-pdf'] as const
+export const CONVERT_KINDS = ['ppt-to-pdf', 'pdf-to-ppt', 'epub-to-pdf', 'mobi-to-pdf', 'protect-pdf', 'unlock-pdf', 'pdf-to-pdfa', 'ebook-converter'] as const
 export type ConvertKind = (typeof CONVERT_KINDS)[number]
 export const isConvertKind = (s: string): s is ConvertKind => (CONVERT_KINDS as readonly string[]).includes(s)
-const OUT_EXT: Record<ConvertKind, string> = { 'ppt-to-pdf': 'pdf', 'pdf-to-ppt': 'pptx', 'epub-to-pdf': 'pdf', 'mobi-to-pdf': 'pdf' }
-export const outputName = (kind: ConvertKind, input: string) => `${stripExt(input)}.${OUT_EXT[kind]}`
+const OUT_EXT: Record<ConvertKind, string> = { 'ppt-to-pdf': 'pdf', 'pdf-to-ppt': 'pptx', 'epub-to-pdf': 'pdf', 'mobi-to-pdf': 'pdf', 'protect-pdf': 'pdf', 'unlock-pdf': 'pdf', 'pdf-to-pdfa': 'pdf', 'ebook-converter': 'epub' }
+const OUT_SUFFIX: Partial<Record<ConvertKind, string>> = { 'protect-pdf': '-protected', 'unlock-pdf': '-unlocked', 'pdf-to-pdfa': '-pdfa' }
+/** The ebook converter's extension is whatever target the user picked; every other kind is fixed. */
+export const outputName = (kind: ConvertKind, input: string, fields?: Record<string, string>) =>
+  `${stripExt(input)}${OUT_SUFFIX[kind] || ''}.${kind === 'ebook-converter' && fields?.to ? fields.to.replace(/^\./, '') : OUT_EXT[kind]}`
 
 /** Wakes the container so the first real request does not pay the cold start. Fire and forget. */
 export const warmConverter = () => fetch(`${API_BASE}/convert/warm`, { method: 'POST' }).catch(() => undefined)
@@ -147,22 +150,23 @@ const parseUsage = (v: string | null) => {
   return m ? { used: Number(m[1]), limit: Number(m[2]) } : undefined
 }
 
-export type ConvertOptions = { token?: string; onProgress?: (fraction: number, phase: Phase) => void; transport?: Transport; retries?: number }
+export type ConvertOptions = { token?: string; onProgress?: (fraction: number, phase: Phase) => void; transport?: Transport; retries?: number; /** extra multipart fields, e.g. the password for protect-pdf. Never logged. */ fields?: Record<string, string> }
 export type ConvertResult = Output & { usage?: { used: number; limit: number } }
 
 /**
  * Uploads one file and returns the converted one. A 503 means the converter is busy or
  * still waking up, so it waits and tries again a few times before giving up.
  */
-export async function convertRemote(kind: ConvertKind, file: File, { token, onProgress, transport = xhrTransport, retries = 3 }: ConvertOptions = {}): Promise<ConvertResult> {
+export async function convertRemote(kind: ConvertKind, file: File, { token, onProgress, transport = xhrTransport, retries = 3, fields }: ConvertOptions = {}): Promise<ConvertResult> {
   const headers: Record<string, string> = { 'x-file-name': encodeURIComponent(file.name) }
   if (token) headers.authorization = `Bearer ${token}`
   for (let attempt = 0; ; attempt++) {
     const body = new FormData()
     body.append('file', file, file.name)
+    if (fields) for (const [k, v] of Object.entries(fields)) body.append(k, v)
     const res = await transport({ url: `${API_BASE}/convert/${kind}`, body, headers, onProgress })
     if (res.status >= 200 && res.status < 300) {
-      return { name: outputName(kind, file.name), blob: res.blob, usage: parseUsage(res.headers.get('x-pxp-usage')) }
+      return { name: outputName(kind, file.name, fields), blob: res.blob, usage: parseUsage(res.headers.get('x-pxp-usage')) }
     }
     const err = toError(res.status, parseJson(await res.blob.text()))
     if (res.status === 503 && attempt < retries) {
@@ -196,6 +200,12 @@ export function describeError(e: unknown): { message: string; upgrade?: boolean;
       return { message: 'That file is over the 100 MB limit.' }
     case 'drm_protected':
       return { message: 'This ebook is DRM-protected, so it cannot be converted.' }
+    case 'wrong_password':
+      return { message: 'That password did not open the file. Check it and try again.' }
+    case 'password_required':
+      return { message: 'This PDF is password-protected. Enter the password to unlock it.' }
+    case 'already_encrypted':
+      return { message: 'This PDF is already password-protected. Unlock it first, then set a new password.' }
     case 'unsupported_media_type':
       return { message: 'This file type is not supported for this conversion.' }
     case 'rate_limited':

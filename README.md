@@ -1,6 +1,6 @@
 # PrintxPDF
 
-Strip the ads, keep the words. A print-friendly and PDF toolkit with an original brand and a bold cobalt-on-white design. Every browser tool runs client-side; four heavy conversions run on a small Cloudflare container that deletes each file the moment it finishes. Founded and written by Nasir Uddin Shamim.
+Print only what matters, then fix any PDF. A print-and-PDF toolkit with an original brand and a bold cobalt-on-white design. Every browser tool runs client-side; a few heavy jobs — Office layout, ebooks, PDF encryption, PDF/A — run on a small Cloudflare container that deletes each file the moment it finishes. Founded and written by Nasir Uddin Shamim.
 
 **Live:** https://printxpdf.com
 
@@ -20,7 +20,7 @@ Paste a URL. The page is fetched through a reader proxy, run through Mozilla Rea
 Fallbacks that always work: paste HTML/text, upload an `.html` file, or three bundled sample articles.
 
 ### 2. PDF tools — `/tools`
-29 tools. Every one states up front whether it runs in your browser, is best-effort, or runs on our server.
+43 tools. Every one states up front whether it runs in your browser, is best-effort, or runs on our server.
 
 | Engine | Tools |
 |---|---|
@@ -46,7 +46,7 @@ Default passcode `printxpdf` (change it under **Publish & data**).
 | Appearance | accent/ink/alert colours, border width, radius, default colour mode |
 | Pages & home | every hero string, section toggles, marquee, per-page meta overrides |
 | Blog content | edit any post's title, meta tags and short answer; publish/unpublish |
-| Tools | rename, re-describe, hide or feature any of the 29 tools |
+| Tools | rename, re-describe, hide or feature any of the 43 tools |
 | SEO | title template, keywords, robots.txt, llms.txt, verification tokens, sitemap preview |
 | Analytics | GA4 / Plausible / Umami IDs, Do Not Track, local view counts |
 | Custom code | head HTML, body-end HTML, CSS and JS injection |

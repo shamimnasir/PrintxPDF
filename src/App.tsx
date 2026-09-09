@@ -16,6 +16,7 @@ const Blog = lazy(() => import('./pages/Blog'))
 const ClusterPage = lazy(() => import('./pages/ClusterPage'))
 const PostPage = lazy(() => import('./pages/PostPage'))
 const AuthorPage = lazy(() => import('./pages/AuthorPage'))
+const ExtensionPrivacy = lazy(() => import('./pages/ExtensionPrivacy'))
 const AdminApp = lazy(() => import('./admin/AdminApp'))
 const About = lazy(() => import('./pages/About'))
 const Legal = lazy(() => import('./pages/Legal'))
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="tools/:slug" element={<ToolPage />} />
           <Route path="extensions" element={<Extensions />} />
           <Route path="extensions/:browser" element={<Extensions />} />
+          <Route path="extension-privacy" element={<ExtensionPrivacy />} />
           <Route path="wordpress" element={<WordPress />} />
           <Route path="website-button" element={<WebsiteButton />} />
           <Route path="api" element={<Api />} />

@@ -64,6 +64,7 @@ async function main() {
     { loc: '/wordpress', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/website-button', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/extensions/chrome', pri: '0.6', freq: 'monthly', mod: today },
+    { loc: '/extension-privacy', pri: '0.3', freq: 'yearly', mod: today },
     { loc: '/privacy', pri: '0.3', freq: 'yearly', mod: today },
     { loc: '/terms', pri: '0.3', freq: 'yearly', mod: today },
     ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}`, pri: t.status === 'best-effort' ? '0.4' : '0.8', freq: 'monthly', mod: today })),
@@ -119,9 +120,9 @@ Sitemap: ${SITE}/sitemap.xml
     cfg?.seo?.llmsTxt?.trim() ||
     `# PrintxPDF
 
-> Free browser-based tools for printing web pages without ads and for working with PDF files. Every browser tool runs client-side using pdf-lib, pdf.js and Tesseract.js, so files stay on the visitor's machine; four conversions (PowerPoint ↔ PDF, EPUB and MOBI → PDF) run on PrintxPDF's own server at api.printxpdf.com and delete the file the moment they finish.
+> Free browser-based tools for printing web pages without ads and for working with PDF files. Every browser tool runs client-side using pdf-lib, pdf.js and Tesseract.js, so files stay on the visitor's machine; a few server jobs (PowerPoint ↔ PDF, EPUB and MOBI → PDF, password protect/unlock, PDF/A) run on PrintxPDF's own server at api.printxpdf.com and delete the file the moment they finish.
 
-PrintxPDF has two halves: a web-page cleaner that extracts an article with Mozilla Readability and lets you delete anything left before printing or saving as PDF, and ${TOOLS.length} PDF tools covering merge, split, organise, compress, OCR, sign, watermark, convert and QR generation. Four conversions that need a real layout engine (PowerPoint ↔ PDF, EPUB and MOBI → PDF) run on PrintxPDF's own server at api.printxpdf.com: the file is uploaded over HTTPS, converted and deleted immediately. Free for 5 files a month; more on the Pro ($5/month) and API ($29/month) plans.
+PrintxPDF has two halves: a web-page cleaner that extracts an article with Mozilla Readability and lets you delete anything left before printing or saving as PDF, and ${TOOLS.length} PDF tools covering merge, split, organise, compress, OCR, sign, watermark, convert and QR generation. A few jobs that need a real engine (PowerPoint ↔ PDF, EPUB and MOBI → PDF, password protect/unlock, PDF/A) run on PrintxPDF's own server at api.printxpdf.com: the file is uploaded over HTTPS, converted and deleted immediately. Free for 5 files a month; more on the Pro ($5/month) and API ($29/month) plans.
 
 Written and maintained by ${authorName}, founder of PrintxPDF: ${SITE}${authorRoute}
 
@@ -145,7 +146,7 @@ ${c.posts
 - [All tools](${SITE}/tools): the full index with a status badge on each tool.
 - [Print button generator](${SITE}/website-button): a copy-paste HTML snippet that adds a print button to any site.
 - [About the founder](${SITE}${authorRoute}): who writes and maintains these guides.
-- [Privacy](${SITE}/privacy): browser tools never upload; the four server conversions delete the file the moment they finish.
+- [Privacy](${SITE}/privacy): browser tools never upload; the server jobs delete the file the moment they finish.
 `
   await writeFile(path.join(PUBLIC, 'llms.txt'), llms)
 

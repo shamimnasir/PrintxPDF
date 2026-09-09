@@ -395,12 +395,12 @@ async function main() {
   const STATIC_PAGES = [
     {
       route: '/',
-      title: `${cfg?.site?.name || 'PrintxPDF'} — Print Web Pages Clean, Master Your PDFs`,
-      description: cfg?.site?.description || 'Strip ads from web pages before you print, and run every common PDF job in your browser. Free, no upload, no sign-up.',
-      h1: 'Cut the clutter. Own your PDFs.',
+      title: `${cfg?.site?.name || 'PrintxPDF'} — Print Only What Matters. Fix Any PDF.`,
+      description: cfg?.site?.description || 'Turn any web page into a clean printout or PDF, then do everything else to a PDF — merge, sign, compress, OCR, protect, convert — with free tools that run on your own computer. No account, nothing to install.',
+      h1: 'Print only what matters. Fix any PDF.',
       body: [
-        'PrintxPDF does two things. It strips ads, menus, sidebars and comment walls out of any web page so you can print or save just the article. And it runs every common PDF job — merge, split, organise, compress, OCR, sign, watermark, convert — entirely inside your browser.',
-        'Browser tools never upload anything: your files are processed in memory by your own browser using pdf-lib, pdf.js and Tesseract, and are gone when you close the tab. Four conversions that need a real layout engine (PowerPoint and ebook formats) run on our own server, say so on their page, and delete the file the moment they finish.',
+        'PrintxPDF does two things. Paste a link and it keeps just the article — no ads, menus, sidebars or comment threads — so you can print it or save it as a PDF. Drop in a PDF and it does everything else: merge, split, organise, crop, compress, OCR, sign, fill forms, redact, compare, protect and convert, with thirty-nine tools in one place.',
+        'Browser tools never upload anything: your files are processed in memory by your own browser using pdf-lib, pdf.js and Tesseract, and are gone when you close the tab. A few jobs that need a real engine — PowerPoint, ebooks, PDF encryption, PDF/A — run on our own server, say so on their page, and delete the file the moment they finish.',
       ],
       links: [['/print', 'Print a web page'], ['/tools', `All ${TOOLS.length} PDF tools`], ['/blog', 'Guides'], ['/pricing', 'Pricing']],
       schema: [
@@ -410,11 +410,11 @@ async function main() {
     },
     {
       route: '/print',
-      title: 'Print Any Web Page Without Ads',
+      title: 'Print Any Web Page as Just the Article',
       description: 'Paste a URL and get a clean, printable version of any web page. Ads, menus and comment walls removed. Print, save as PDF or email it, free and with no upload.',
-      h1: 'Paste a link. Lose the junk.',
+      h1: 'Paste a link. Print just the article.',
       body: [
-        'Paste a web address and PrintxPDF fetches the page, runs Mozilla Readability over it and shows you just the article. Delete anything left over by clicking it, resize the text, shrink or drop the images, then print, download a PDF, save a PNG or email it to yourself.',
+        'Paste a web address and PrintxPDF fetches the page inside your browser and reduces it to the article itself. Click anything left over to remove it, resize the text, shrink or drop the images, then print, save a PDF or PNG, or email it to yourself.',
         'If a site blocks readers, paste the page source or upload a saved .html file instead. Both always work, because the cleaning happens in your browser.',
       ],
       links: [['/blog/print-web-pages/print-web-page-without-ads', 'How to print a web page without ads'], ['/tools', 'PDF tools']],
@@ -425,18 +425,18 @@ async function main() {
       description: 'Every browser PDF tool is free forever. Pro ($5/mo) adds 300 server conversions a month for PowerPoint and ebook formats; API ($29/mo) adds key-based access with 5,000 a month.',
       h1: 'Free is free.',
       body: [
-        'Every tool that runs in your browser costs nothing and always will. Paid plans cover the four conversions that need a real layout engine on our server — PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF — and the API.',
+        'Every tool that runs in your browser costs nothing and always will. Paid plans cover the handful of jobs that need a real engine on our server — PowerPoint to PDF, PDF to PowerPoint, EPUB and MOBI to PDF, password protect and unlock, and PDF/A — and the API.',
         'Free: all browser tools, 5 server conversions a month, OCR up to 30 pages. Pro, $5 a month: 300 server conversions, OCR up to 200 pages, priority support. API, $29 a month: 5,000 conversions and an access key for the HTTPS API. Payments are handled by Stripe; cancel any time; refund on request within 14 days of the first charge.',
       ],
       links: [['/tools', 'PDF tools'], ['/api', 'API']],
     },
     {
       route: '/about',
-      title: 'About PrintxPDF — Print Less Junk',
-      description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Every browser tool keeps your files on your computer; four heavy conversions run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
-      h1: 'Print less junk. More of what matters.',
+      title: 'About PrintxPDF — Documents You Control',
+      description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Every browser tool keeps your files on your computer; a few heavy jobs run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
+      h1: 'Your documents. Your computer. Your call.',
       body: [
-        `PrintxPDF is a print-and-PDF toolkit founded by ${author.name}. Everything that can run in a browser does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript that keep your files on your own computer. Four conversions that need a real layout engine — PowerPoint and ebook formats — run on our own server and say so on the tool page.`,
+        `PrintxPDF is a print-and-PDF toolkit founded by ${author.name}. Everything that can run in a browser does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript that keep your files on your own computer. A few jobs that need a real engine — PowerPoint, ebooks, PDF encryption, PDF/A — run on our own server and say so on the tool page.`,
         'It removes ads and navigation before you print, lets you edit the result, and exports clean PDFs, PNG screenshots and emails. Built with Mozilla Readability, DOMPurify, pdf-lib, pdf.js, Tesseract.js, jsPDF and html2canvas.',
       ],
       links: [['/privacy', 'Privacy'], ['/blog', 'Guides'], [authorRoute, `Founder: ${author.name}`]],
@@ -485,11 +485,11 @@ async function main() {
     {
       route: '/privacy',
       title: 'Privacy — Your Files Stay on Your Device',
-      description: 'Browser tools never upload your files. Four server conversions send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.',
+      description: 'Browser tools never upload your files. A few server jobs send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.',
       h1: 'Your files stay with you.',
       body: [
         'Every browser tool processes your documents on your own computer, in memory, and discards them when you close the tab. Account data, saved documents, signatures, settings and your access key live in your browser and are never sent to us.',
-        'Two things leave your device. Cleaning a web page by URL sends only the address to our fetch proxy so the page can be retrieved. The four server conversions upload the file over HTTPS to an isolated container, hold it for the length of the job (at most two minutes) and delete it; nothing is kept or logged. Free-tier usage is counted per month against a salted hash of your IP address for 40 days. Payments are hosted by Stripe; we never see card numbers. This site sets no cookies; Stripe sets its own on its pages.',
+        'Two things leave your device. Cleaning a web page by URL sends only the address to our fetch proxy so the page can be retrieved. The server jobs upload the file over HTTPS to an isolated container, hold it for the length of the job (at most two minutes) and delete it; nothing is kept or logged. Free-tier usage is counted per month against a salted hash of your IP address for 40 days. Payments are hosted by Stripe; we never see card numbers. This site sets no cookies; Stripe sets its own on its pages.',
       ],
       links: [['/terms', 'Terms'], ['/about', 'About']],
     },
@@ -513,7 +513,18 @@ async function main() {
         'Click the toolbar button and the page you are on opens in the PrintxPDF cleaner, ready to print, save as PDF or email. Right-click entries clean the current page, a link you are hovering, or just the text you selected. It also works in Brave, Edge, Opera, Vivaldi and Arc, which all run Chrome extensions.',
         'The extension is not in the Chrome Web Store yet, so it installs in developer mode: download the ZIP, unzip it, open chrome://extensions, turn on Developer mode and choose Load unpacked. It asks only for activeTab, contextMenus and storage — it cannot read pages in the background, sends nothing anywhere and contains no analytics. If you would rather install nothing, the bookmarklet on this page does the same job in any browser, including Firefox and Safari.',
       ],
-      links: [['/print', 'Print a web page'], ['/blog/browser-extensions/bookmarklet-vs-extension', 'Bookmarklet vs extension']],
+      links: [['/print', 'Print a web page'], ['/blog/browser-extensions/bookmarklet-vs-extension', 'Bookmarklet vs extension'], ['/extension-privacy', 'Extension privacy policy']],
+    },
+    {
+      route: '/extension-privacy',
+      title: 'Chrome Extension Privacy Policy',
+      description: 'What the PrintxPDF Chrome extension can see and store: the address of the tab you click on, one preference, and nothing else. It sends no data anywhere.',
+      h1: 'It reads one address, when you ask.',
+      body: [
+        'When you click the toolbar button, press the shortcut or use a right-click entry, the extension reads the address of the tab you are on (or the link you right-clicked) and opens it at printxpdf.com. Chrome\'s activeTab permission grants that access for that click and that tab only; it cannot read pages in the background and does not ask for access to all websites. "Print just this selection" copies your selected text to your clipboard inside the page; it is not sent or stored.',
+        'It stores one preference — whether to open the cleaner in a new tab — in Chrome\'s extension storage on your device. It makes no network requests of its own, has no analytics, no advertising and no remote code, and sells or shares nothing. Effective 10 September 2026, version 1.0.0 and later.',
+      ],
+      links: [['/extensions/chrome', 'Chrome extension'], ['/privacy', 'Site privacy policy']],
     },
   ]
 

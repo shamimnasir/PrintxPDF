@@ -41,11 +41,28 @@ export async function exportPdf(el: HTMLElement, filename: string, size: PageSiz
   pdf.save(filename)
 }
 
-export async function exportPng(el: HTMLElement, filename: string) {
-  const canvas = await snapshot(el)
-  const blob = await new Promise<Blob>((res, rej) => canvas.toBlob((b) => (b ? res(b) : rej(new Error('PNG failed'))), 'image/png'))
+export type ImageKind = 'png' | 'jpg'
+
+/** Screenshot of the cleaned page. JPEG has no alpha channel, so transparent areas are painted white
+ *  first — otherwise the browser encodes them as black. */
+export async function exportImage(el: HTMLElement, filename: string, kind: ImageKind = 'png', quality = 0.92) {
+  let canvas = await snapshot(el)
+  if (kind === 'jpg') {
+    const flat = document.createElement('canvas')
+    flat.width = canvas.width
+    flat.height = canvas.height
+    const ctx = flat.getContext('2d')!
+    ctx.fillStyle = '#ffffff'
+    ctx.fillRect(0, 0, flat.width, flat.height)
+    ctx.drawImage(canvas, 0, 0)
+    canvas = flat
+  }
+  const mime = kind === 'jpg' ? 'image/jpeg' : 'image/png'
+  const blob = await new Promise<Blob>((res, rej) => canvas.toBlob((b) => (b ? res(b) : rej(new Error(`${kind.toUpperCase()} failed`))), mime, quality))
   downloadBlob(blob, filename)
 }
+
+export const exportPng = (el: HTMLElement, filename: string) => exportImage(el, filename, 'png')
 
 export function safeFilename(title: string, ext: string) {
   const base = title

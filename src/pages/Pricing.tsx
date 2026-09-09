@@ -8,7 +8,7 @@ import { billing, describeError, type PaidPlan } from '../lib/api'
 const FAQS = [
   {
     q: 'What is a server conversion?',
-    a: 'Four formats need a real layout engine: PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF. For those, your file is sent over HTTPS to our converter, processed with LibreOffice or Calibre, returned to you and deleted immediately. Every other tool runs in your browser and never uploads anything.',
+    a: 'A few jobs need a real engine the browser does not have: PowerPoint to PDF, PDF to PowerPoint, EPUB and MOBI to PDF, password protect and unlock, and PDF/A. For those, your file is sent over HTTPS to our converter, processed with LibreOffice or Calibre, returned to you and deleted immediately. Every other tool runs in your browser and never uploads anything.',
   },
   {
     q: 'Do I need an account to pay?',
@@ -64,7 +64,7 @@ export default function Pricing() {
         <span className="eyebrow">Pricing</span>
         <h1>Free is free.</h1>
         <p className="lead" style={{ margin: '0 auto 3rem' }}>
-          Every tool that runs in your browser costs nothing and always will. Paid plans cover the four conversions that need a
+          Every tool that runs in your browser costs nothing and always will. Paid plans cover the handful of jobs that need a
           real layout engine on our server, and the API.
         </p>
       </div>

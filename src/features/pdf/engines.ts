@@ -281,6 +281,175 @@ export async function pdfToExcel(file: File, onProgress?: Progress): Promise<Out
 }
 
 
+// ---------- PDF → Markdown ----------
+/** One run of text as pdf.js hands it over, already flattened into the reading frame. */
+export type MdItem = { str: string; x: number; y: number; width: number; height: number }
+type MdLine = { text: string; height: number; y: number }
+
+/** Bullet markers people actually use, plus the ASCII stand-ins. */
+const MD_BULLET = /^(?:[•·▪◦‣∙*+]|[-–—])[ \t]+/
+// letters only with a bracket: "a) step" is a list, "e.g. a thing" is a sentence
+const MD_ORDERED = /^(?:\d{1,3}[.)]|[A-Za-z]\))[ \t]+/
+
+/**
+ * The text height most of the document is set in, weighted by how many characters use it, so a
+ * cover page full of huge type cannot outvote the body. Everything else is measured against this.
+ */
+export function modalHeight(items: MdItem[]): number {
+  const tally = new Map<number, number>()
+  for (const it of items) {
+    const chars = it.str.trim().length
+    if (!chars || !(it.height > 0)) continue
+    const bucket = Math.round(it.height * 2) / 2 // half-point buckets
+    tally.set(bucket, (tally.get(bucket) || 0) + chars)
+  }
+  let best = 0
+  let bestChars = 0
+  for (const [h, chars] of tally) {
+    if (chars > bestChars || (chars === bestChars && h < best)) {
+      best = h
+      bestChars = chars
+    }
+  }
+  return best || 12
+}
+
+/** 0 = body text. Thresholds are ratios to the body height, not absolute sizes. */
+export function headingLevel(height: number, body: number): 0 | 1 | 2 | 3 {
+  if (!(body > 0) || !(height > 0)) return 0
+  const r = height / body
+  if (r >= 1.6) return 1
+  if (r >= 1.35) return 2
+  if (r >= 1.15) return 3
+  return 0
+}
+
+/** Markdown-significant characters inside body text, so a PDF that says *not* stays *not*. */
+export const escapeMd = (s: string) => s.replace(/([*_`|])/g, '\\$1').replace(/^#/, '\\#')
+
+/** Soft wrap: a line ending in a hyphen was a broken word, anything else was a space. */
+function softJoin(a: string, b: string): string {
+  if (/[A-Za-z\u00c0-\u024f]-$/.test(a) && /^[A-Za-z\u00c0-\u024f]/.test(b)) return a.slice(0, -1) + b
+  return `${a} ${b}`
+}
+
+/** Items sharing a baseline become one line; inside a line, gaps wider than a fraction of the type size become spaces. */
+function groupLines(items: MdItem[]): MdLine[] {
+  const sorted = items.filter((it) => it.str.length).sort((a, b) => b.y - a.y || a.x - b.x)
+  const lines: MdLine[] = []
+  let bucket: MdItem[] = []
+  const flush = () => {
+    if (!bucket.length) return
+    const byX = [...bucket].sort((a, b) => a.x - b.x)
+    let text = ''
+    let end: number | null = null
+    for (const it of byX) {
+      const gap = end === null ? 0 : it.x - end
+      if (end !== null && !/\s$/.test(text) && !/^\s/.test(it.str) && gap > Math.max(0.6, (it.height || 6) * 0.16)) text += ' '
+      text += it.str
+      end = it.x + (it.width || 0)
+    }
+    const clean = text.replace(/\s+/g, ' ').trim()
+    if (clean) lines.push({ text: clean, height: bucket.reduce((m, it) => Math.max(m, it.height || 0), 0), y: bucket[0].y })
+    bucket = []
+  }
+  for (const it of sorted) {
+    if (bucket.length && Math.abs(bucket[0].y - it.y) > Math.max(1, (bucket[0].height || it.height || 1) * 0.4)) flush()
+    bucket.push(it)
+  }
+  flush()
+  return lines
+}
+
+/**
+ * Geometry → Markdown for one page. Pure, so it is testable without a canvas: line grouping, block
+ * breaks on vertical gaps, heading level from relative type size, list markers, and soft-wrap joining.
+ */
+export function itemsToMarkdown(items: MdItem[], body: number, headings: boolean): string {
+  const lines = groupLines(items)
+  const blocks: string[] = []
+  let open: { prefix: string; text: string } | null = null
+  const close = () => {
+    if (open) blocks.push(open.prefix + open.text)
+    open = null
+  }
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+    const prev = lines[i - 1]
+    // a vertical gap much bigger than the leading means a new paragraph, not a wrapped line
+    const broke = !prev || prev.y - line.y > Math.max(prev.height, line.height, 1) * 1.6
+
+    const level = headings ? headingLevel(line.height, body) : 0
+    if (level) {
+      close()
+      blocks.push(`${'#'.repeat(level)} ${escapeMd(line.text)}`)
+      continue
+    }
+    const ordered = MD_ORDERED.exec(line.text)
+    const bullet = ordered || MD_BULLET.exec(line.text)
+    if (bullet) {
+      close()
+      open = { prefix: ordered ? '1. ' : '- ', text: escapeMd(line.text.slice(bullet[0].length)) }
+      continue
+    }
+    if (!open || broke) {
+      close()
+      open = { prefix: '', text: escapeMd(line.text) }
+      continue
+    }
+    open.text = softJoin(open.text, escapeMd(line.text))
+  }
+  close()
+  // consecutive items of the same kind belong to one tight list, not a run of stray paragraphs
+  const listKind = (s: string) => (s.startsWith('- ') ? '-' : /^\d+\. /.test(s) ? '1' : '')
+  const merged: string[] = []
+  for (const b of blocks.filter(Boolean)) {
+    const last = merged.length ? merged[merged.length - 1] : ''
+    if (last && listKind(last) && listKind(last) === listKind(b)) merged[merged.length - 1] = `${last}\n${b}`
+    else merged.push(b)
+  }
+  return merged.join('\n\n')
+}
+
+/** /Rotate turns the page for the reader but not the text matrices. Translation is irrelevant here, only the axes. */
+function readingFrame(x: number, y: number, rot: number): { x: number; y: number } {
+  if (rot === 90) return { x: y, y: -x }
+  if (rot === 180) return { x: -x, y: -y }
+  if (rot === 270) return { x: -y, y: x }
+  return { x, y }
+}
+
+export async function pdfToMarkdown(file: File, opts: { headings: boolean; pageBreaks: boolean }, onProgress?: Progress): Promise<Output[]> {
+  const pdf = await loadPdf(await readAsArrayBuffer(file))
+  const pages: MdItem[][] = []
+  for (let i = 1; i <= pdf.numPages; i++) {
+    const page = await pdf.getPage(i)
+    const rot = normalizeRotation(page.rotate || 0)
+    const tc = await page.getTextContent()
+    const items: MdItem[] = []
+    for (const it of tc.items) {
+      if (!('str' in it) || !it.str.length) continue
+      const t = it.transform as number[]
+      const p = readingFrame(t[4], t[5], rot)
+      items.push({ str: it.str, x: p.x, y: p.y, width: it.width || 0, height: it.height || Math.hypot(t[2], t[3]) })
+    }
+    pages.push(items)
+    onProgress?.((i / pdf.numPages) * 0.9, `Page ${i} of ${pdf.numPages}`)
+  }
+  const body = modalHeight(pages.flat())
+  const parts = pages.map((p) => itemsToMarkdown(p, body, opts.headings)).filter((s) => s.trim())
+  // a blank line either side of the rule, so it cannot be read as a setext heading for the line above
+  const text = parts.join(opts.pageBreaks ? '\n\n---\n\n' : '\n\n')
+  onProgress?.(1)
+  return [
+    {
+      name: `${stripExt(file.name)}.md`,
+      blob: new Blob([text ? `${text}\n` : ''], { type: 'text/markdown' }),
+      note: text ? undefined : 'No text layer found, so this PDF is a scan or pure images. Run OCR PDF on it first, then convert the searchable copy.',
+    },
+  ]
+}
+
 /**
  * Pages can carry a /Rotate entry. Everything the user sees (pdf.js previews, "bottom-right of the
  * page") is in the rotated, visual frame, while pdf-lib draws in the unrotated user space. This maps a
@@ -305,6 +474,189 @@ function visualRect(page: import('pdf-lib').PDFPage, fx: number, fy: number, fw:
   else if (rot === 270) [x, y] = [W - by, H - bx]
   else [x, y] = [bx, H - by]
   return { x, y, width: vw, height: vh, rotate: degrees(rot), VW, VH }
+}
+
+// ---------- crop ----------
+export type Rect = { x: number; y: number; width: number; height: number }
+export type CropUnit = 'mm' | 'pt' | 'percent'
+export type CropMode = 'margins' | 'auto' | 'box'
+export type CropEdges = { top: number; right: number; bottom: number; left: number }
+
+const PT_PER_MM = 72 / 25.4
+const MIN_SIDE = 1 // pt: a crop box thinner than this is not a page any more
+const AUTO_PAD = 6 // pt of air left around detected content
+const AUTO_SCALE = 1.5 // render scale for the content scan: enough to catch thin rules, cheap enough to be quick
+
+export function normalizeRotation(angle: number): number {
+  return (((Math.round(angle / 90) * 90) % 360) + 360) % 360
+}
+
+/** One edge value in the user's unit → points. `span` is the length of the side it is measured along. */
+export function toPoints(value: number, unit: CropUnit, span: number): number {
+  if (!Number.isFinite(value)) return 0
+  if (unit === 'mm') return value * PT_PER_MM
+  if (unit === 'percent') return (span * value) / 100
+  return value
+}
+
+/** How big the box looks to the reader: /Rotate 90 or 270 swaps the axes. */
+const visualSize = (box: Rect, rot: number) => (rot % 180 ? { VW: box.height, VH: box.width } : { VW: box.width, VH: box.height })
+
+/**
+ * A point in the visual frame (u from the visual left, v down from the visual top, both relative to
+ * `box`) → unrotated PDF user space. Same frame convention as `visualRect` above, kept in one place.
+ */
+function visualPoint(u: number, v: number, box: Rect, rot: number): { x: number; y: number } {
+  const { width: W, height: H } = box
+  if (rot === 90) return { x: box.x + v, y: box.y + u }
+  if (rot === 180) return { x: box.x + W - u, y: box.y + v }
+  if (rot === 270) return { x: box.x + W - v, y: box.y + H - u }
+  return { x: box.x + u, y: box.y + H - v }
+}
+
+const fmtPt = (n: number) => Math.round(n * 10) / 10
+
+/**
+ * The new crop box, in unrotated user space, from edges the user gave in the *visual* frame.
+ * `margins` cuts each edge inwards; `box` reads all four as offsets from the visual top-left corner,
+ * the way a selection rectangle reads. Always computed from the box passed in, so crops compose.
+ */
+export function cropRect(box: Rect, rotation: number, mode: 'margins' | 'box', edges: CropEdges, unit: CropUnit, label = 'this page'): Rect {
+  const rot = normalizeRotation(rotation)
+  const { VW, VH } = visualSize(box, rot)
+  const top = Math.max(0, toPoints(edges.top, unit, VH))
+  const bottom = Math.max(0, toPoints(edges.bottom, unit, VH))
+  const left = Math.max(0, toPoints(edges.left, unit, VW))
+  const right = Math.max(0, toPoints(edges.right, unit, VW))
+  const wanted =
+    mode === 'box'
+      ? { vx: Math.min(left, right), vy: Math.min(top, bottom), vw: Math.abs(right - left), vh: Math.abs(bottom - top) }
+      : { vx: left, vy: top, vw: VW - left - right, vh: VH - top - bottom }
+  // never step outside the box we already have
+  const x0 = Math.min(Math.max(0, wanted.vx), VW)
+  const y0 = Math.min(Math.max(0, wanted.vy), VH)
+  const x1 = Math.max(x0, Math.min(wanted.vx + wanted.vw, VW))
+  const y1 = Math.max(y0, Math.min(wanted.vy + wanted.vh, VH))
+  if (x1 - x0 < MIN_SIDE || y1 - y0 < MIN_SIDE) {
+    throw new Error(
+      mode === 'box'
+        ? `Those edges leave nothing of ${label}. In Region mode all four are measured from the top-left corner, so Right must be larger than Left and Bottom larger than Top.`
+        : `Those margins would erase ${label} (${fmtPt(VW)} × ${fmtPt(VH)} pt). Use smaller values.`,
+    )
+  }
+  const a = visualPoint(x0, y0, box, rot)
+  const b = visualPoint(x1, y1, box, rot)
+  return { x: Math.min(a.x, b.x), y: Math.min(a.y, b.y), width: Math.abs(b.x - a.x), height: Math.abs(b.y - a.y) }
+}
+
+/**
+ * Bounding box of everything that is not page-white in an RGBA bitmap, or null for a blank page.
+ * Alpha is composited over white first, so an antialiased glyph on a transparent canvas counts the
+ * same as one on a white one. Pixel bounds: left/top inclusive, right/bottom exclusive.
+ */
+export function contentBoxFromLuma(
+  data: Uint8ClampedArray | number[],
+  width: number,
+  height: number,
+  tolerance = 10,
+): { left: number; top: number; right: number; bottom: number } | null {
+  let left = width
+  let top = height
+  let right = -1
+  let bottom = -1
+  const cut = 255 - tolerance
+  for (let y = 0; y < height; y++) {
+    const row = y * width * 4
+    for (let x = 0; x < width; x++) {
+      const i = row + x * 4
+      const lum = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2]
+      if (255 - (data[i + 3] / 255) * (255 - lum) >= cut) continue
+      if (x < left) left = x
+      if (x > right) right = x
+      if (y < top) top = y
+      bottom = y
+    }
+  }
+  return right < 0 ? null : { left, top, right: right + 1, bottom: bottom + 1 }
+}
+
+type Bitmap = { data: Uint8ClampedArray; width: number; height: number }
+
+/** Rasterise one page for the content scan. OffscreenCanvas keeps the pixels off the DOM; not every browser has it. */
+async function renderForScan(pdf: Awaited<ReturnType<typeof loadPdf>>, pageNumber: number, scale: number): Promise<Bitmap> {
+  const page = await pdf.getPage(pageNumber)
+  const viewport = page.getViewport({ scale }) // already in the rotated, visual frame
+  const width = Math.max(1, Math.ceil(viewport.width))
+  const height = Math.max(1, Math.ceil(viewport.height))
+  if (typeof OffscreenCanvas !== 'undefined') {
+    const ctx = new OffscreenCanvas(width, height).getContext('2d')
+    if (ctx) {
+      await page.render({ canvas: null, canvasContext: ctx as unknown as CanvasRenderingContext2D, viewport, intent: 'print' }).promise
+      return { data: ctx.getImageData(0, 0, width, height).data, width, height }
+    }
+  }
+  const canvas = document.createElement('canvas')
+  canvas.width = width
+  canvas.height = height
+  const ctx = canvas.getContext('2d')
+  if (!ctx) throw new Error('This browser will not give us a 2D canvas, so the content of the page cannot be measured. Use Margins instead.')
+  await page.render({ canvas, canvasContext: ctx, viewport, intent: 'print' }).promise
+  const data = ctx.getImageData(0, 0, width, height).data
+  canvas.width = 0
+  canvas.height = 0
+  return { data, width, height }
+}
+
+/**
+ * Sets the crop box rather than rewriting page content: nothing is thrown away and re-cropping
+ * composes, because every mode measures from the box the page already has.
+ */
+export async function crop(
+  file: File,
+  opts: { mode: CropMode; top: number; right: number; bottom: number; left: number; unit: CropUnit; pages: string },
+  onProgress?: Progress,
+): Promise<Output[]> {
+  const bytes = await readAsArrayBuffer(file)
+  const doc = await PDFDocument.load(bytes, { ignoreEncryption: true, updateMetadata: false })
+  const targets = opts.pages?.trim() ? parseRanges(opts.pages, doc.getPageCount()) : doc.getPageIndices()
+  if (!targets.length) throw new Error('That page range does not match any page in this file')
+
+  let blanks = 0
+  const pdf = opts.mode === 'auto' ? await loadPdf(bytes) : null
+  for (let k = 0; k < targets.length; k++) {
+    const i = targets[k]
+    const page = doc.getPage(i)
+    const box = page.getCropBox()
+    const rot = normalizeRotation(page.getRotation().angle)
+    let edges: CropEdges = { top: opts.top, right: opts.right, bottom: opts.bottom, left: opts.left }
+    let unit: CropUnit = opts.unit
+    if (pdf) {
+      onProgress?.(k / targets.length, `Measuring page ${i + 1} of ${targets.length}`)
+      const bmp = await renderForScan(pdf, i + 1, AUTO_SCALE)
+      const found = contentBoxFromLuma(bmp.data, bmp.width, bmp.height)
+      if (!found) {
+        blanks++
+        onProgress?.((k + 1) / targets.length, `Page ${i + 1} is blank, left alone`)
+        continue // nothing to crop to; leave the page exactly as it was
+      }
+      // pixels → points in the same visual frame the viewport used, minus a little breathing room
+      edges = {
+        top: found.top / AUTO_SCALE - AUTO_PAD,
+        left: found.left / AUTO_SCALE - AUTO_PAD,
+        right: (bmp.width - found.right) / AUTO_SCALE - AUTO_PAD,
+        bottom: (bmp.height - found.bottom) / AUTO_SCALE - AUTO_PAD,
+      }
+      unit = 'pt'
+    }
+    const r = cropRect(box, rot, opts.mode === 'box' ? 'box' : 'margins', edges, unit, `page ${i + 1}`)
+    page.setCropBox(r.x, r.y, r.width, r.height)
+    onProgress?.((k + 1) / targets.length)
+  }
+  const done = targets.length - blanks
+  const note =
+    `Cropped ${done} page${done === 1 ? '' : 's'}${blanks ? `, left ${blanks} blank page${blanks === 1 ? '' : 's'} alone` : ''}. ` +
+    'The trimmed area is hidden by the crop box, not deleted, so this is reversible.'
+  return [{ name: `${stripExt(file.name)}-cropped.pdf`, blob: pdfBlob(await doc.save()), note }]
 }
 
 // ---------- edit ----------

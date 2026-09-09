@@ -13,6 +13,9 @@ const ENDPOINTS: [string, string, string][] = [
   ['POST /convert/pdf-to-ppt', '.pdf', 'PPTX with editable pages'],
   ['POST /convert/epub-to-pdf', '.epub', 'PDF, A4, page numbers'],
   ['POST /convert/mobi-to-pdf', '.mobi .azw .azw3 .prc', 'PDF, A4, page numbers'],
+  ['POST /convert/protect-pdf', '.pdf + password, ownerPassword?, permissions?', 'AES-256 encrypted PDF'],
+  ['POST /convert/unlock-pdf', '.pdf + password', 'the same PDF without its password'],
+  ['POST /convert/pdf-to-pdfa', '.pdf + level (1b | 2b | 3b)', 'PDF/A for archiving'],
   ['GET /fetch?url=', 'a page URL', 'its HTML, for the web-page cleaner'],
 ]
 
@@ -46,7 +49,7 @@ export default function Api() {
         Convert files, <span className="acid-mark">programmatically.</span>
       </h1>
       <p className="lead">
-        Four conversions need a real layout engine, so they run on our server instead of in the browser. Send a file with one
+        A handful of jobs need a real engine — Office layout, ebook rendering, PDF encryption — so they run on our server instead of in the browser. Send a file with one
         multipart request and get the converted file back. Files are processed in an isolated container and deleted the moment
         the response is sent.
       </p>

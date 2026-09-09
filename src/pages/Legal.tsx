@@ -9,7 +9,7 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
     title: kind === 'privacy' ? 'Privacy — Your Files Stay on Your Device' : 'Terms of Use',
     description:
       kind === 'privacy'
-        ? 'Browser tools never upload your files. Four server conversions send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.'
+        ? 'Browser tools never upload your files. A few server jobs send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.'
         : 'Terms for using PrintxPDF: free browser tools, a free monthly allowance of server conversions, and Pro and API subscriptions billed monthly by Stripe with a 14-day refund on the first charge.',
     path: kind === 'privacy' ? '/privacy' : '/terms',
     schema: [
@@ -27,7 +27,7 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
         <>
           <h1>Your files stay with you.</h1>
           <p className="lead">
-            Every browser tool processes your documents on your own computer. Four conversions run on our server and are deleted
+            Every browser tool processes your documents on your own computer. A few jobs run on our server and are deleted
             the moment they finish.
           </p>
           <h3>What stays on your device</h3>
@@ -42,7 +42,7 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
             proxy) so the page can be retrieved. Only the address is transmitted.
           </p>
           <p>
-            <strong>Server conversions.</strong> PowerPoint → PDF, PDF → PowerPoint, EPUB → PDF and MOBI → PDF upload the file
+            <strong>Server jobs.</strong> PowerPoint to PDF, PDF to PowerPoint, EPUB and MOBI to PDF, password protect and unlock, and PDF/A conversion upload the file
             over HTTPS to our converter, which runs in an isolated container on Cloudflare. The file is held in memory and
             temporary disk for the length of the job (at most two minutes), then deleted. We do not keep copies, and we do not
             log file contents. Free-tier usage is counted per calendar month against a salted hash of your IP address, kept for
