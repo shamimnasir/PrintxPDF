@@ -6,7 +6,8 @@ import { Footer } from './Footer'
 export function Layout() {
   const { pathname, search } = useLocation()
   // the editor view gets no footer so the paper sits on a clean desk
-  const bare = pathname === '/print' && /[?&](url|sample|paste)=/.test(search)
+  const q = new URLSearchParams(search)
+  const bare = pathname === '/print' && (q.has('url') || q.has('sample') || q.has('paste') || q.has('post'))
   return (
     <>
       <Header />

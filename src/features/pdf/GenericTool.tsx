@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropzone, FileList } from '../../components/ui/Dropzone'
 import { useToast } from '../../components/ui/Toast'
-import { downloadBlob, formatBytes } from '../../lib/download'
-import * as E from './engines'
+import { ProgressBar, ResultList } from '../../components/ui/ResultList'
+import { downloadBlob } from '../../lib/download'
+import type { Output } from './engines'
 import type { ToolMeta } from './toolsMeta'
 
 type Field =
@@ -82,14 +83,15 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
   const [opts, setOpts] = useState<Opts>(() => Object.fromEntries((FIELDS[tool.slug] || []).map((f) => [f.key, f.default])))
   const [busy, setBusy] = useState(false)
   const [progress, setProgress] = useState<{ f: number; msg?: string } | null>(null)
-  const [results, setResults] = useState<E.Output[]>([])
+  const [results, setResults] = useState<Output[]>([])
   const [error, setError] = useState<string | null>(null)
   const [html, setHtml] = useState('')
 
   useEffect(() => {
     // pre-fill metadata form from the file
     if (tool.slug === 'edit-metadata' && files[0]) {
-      E.readMetadata(files[0])
+      import('./engines')
+        .then((E) => E.readMetadata(files[0]))
         .then((m) => setOpts((o) => ({ ...o, title: m.title, author: m.author, subject: m.subject, keywords: m.keywords })))
         .catch(() => {})
     }
@@ -117,8 +119,10 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
     const s = (k: string) => String(opts[k] ?? '')
     const n = (k: string) => Number(opts[k] ?? 0)
     try {
+      // engines pull in pdf-lib / pdf.js / jsPDF; load them only when a tool actually runs
+      const E = await import('./engines')
       const f = files[0]
-      let out: E.Output[] = []
+      let out: Output[] = []
       switch (tool.slug) {
         case 'merge-pdf':
           if (files.length < 2) throw new Error('Add at least two PDFs to merge')
@@ -188,7 +192,6 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
           throw new Error('This tool has no browser engine.')
       }
       setResults(out)
-      setProgress({ f: 1 })
       toast(`Done: ${out.length} file${out.length > 1 ? 's' : ''} ready`)
       if (out.length === 1) downloadBlob(out[0].blob, out[0].name)
     } catch (e) {
@@ -241,54 +244,13 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
         <Dropzone accept={tool.accept} multiple={!!tool.multiple} onFiles={addFiles} label={tool.multiple ? 'Drop files here' : 'Drop a file here'} />
         <FileList files={files} onRemove={(i) => setFiles(files.filter((_, k) => k !== i))} onMove={tool.multiple ? move : undefined} />
 
-        {progress && busy && (
-          <div>
-            <div className="progress">
-              <div style={{ width: `${Math.max(4, progress.f * 100)}%` }} />
-            </div>
-            {progress.msg && <div className="mono muted" style={{ fontSize: '0.75rem', marginTop: '0.3rem' }}>{progress.msg}</div>}
-          </div>
-        )}
+        {progress && busy && <ProgressBar value={progress.f} msg={progress.msg} />}
         {error && (
           <div className="card" style={{ borderColor: 'var(--alarm)', boxShadow: '6px 6px 0 0 var(--alarm)' }}>
             <strong className="alarm">Something went wrong.</strong> {error}
           </div>
         )}
-        {results.length > 0 && (
-          <div className="card">
-            <div className="row between" style={{ marginBottom: '0.75rem' }}>
-              <h4 style={{ margin: 0 }}>Ready</h4>
-              {results.length > 1 && (
-                <button className="btn btn-sm btn-acid" onClick={() => results.forEach((r, i) => setTimeout(() => downloadBlob(r.blob, r.name), i * 250))}>
-                  Download all ({results.length})
-                </button>
-              )}
-            </div>
-            <div className="results">
-              {results.map((r) => (
-                <div className="result-row" key={r.name}>
-                  <span className="name">{r.name}</span>
-                  <span className="mono" style={{ fontSize: '0.75rem' }}>
-                    {formatBytes(r.blob.size)}
-                  </span>
-                  <button className="btn btn-sm" onClick={() => downloadBlob(r.blob, r.name)}>
-                    Download
-                  </button>
-                </div>
-              ))}
-            </div>
-            {results[0].note && <p className="muted" style={{ margin: '0.75rem 0 0', fontSize: '0.85rem' }}>{results[0].note}</p>}
-            {results.length === 1 && /\.pdf$/.test(results[0].name) && (
-              <button
-                className="btn btn-sm btn-ghost"
-                style={{ marginTop: '0.75rem' }}
-                onClick={() => window.open(URL.createObjectURL(results[0].blob), '_blank')}
-              >
-                Open in a new tab
-              </button>
-            )}
-          </div>
-        )}
+        <ResultList outputs={results} />
       </div>
 
       <div className="card stack">

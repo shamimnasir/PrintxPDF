@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/Toast'
 import { downloadBlob } from '../../../lib/download'
-import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
-import { reorganize } from '../engines'
+import { canvasToBlob, loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 
-type P = { index: number; rotation: number; src: string }
+type P = { index: number; rotation: number }
 
 export default function OrganizeTool() {
   const { toast } = useToast()
@@ -15,22 +14,52 @@ export default function OrganizeTool() {
   const [dragI, setDragI] = useState<number | null>(null)
   const [overI, setOverI] = useState<number | null>(null)
   const [busy, setBusy] = useState(false)
+  // thumbnail object URLs live outside React state: small strings in state, bytes owned by the browser
+  const thumbs = useRef<Map<number, string>>(new Map())
+  const [, bump] = useState(0)
 
   useEffect(() => {
-    if (!file) return
+    const urls = thumbs.current
+    const revokeAll = () => {
+      urls.forEach((u) => URL.revokeObjectURL(u))
+      urls.clear()
+    }
+    if (!file) {
+      revokeAll()
+      setPages([])
+      return
+    }
+    let cancel = false
     setLoading(true)
+    setPages([])
+    revokeAll()
     ;(async () => {
-      const pdf = await loadPdf(await file.arrayBuffer())
-      const list: P[] = []
-      for (let i = 1; i <= pdf.numPages; i++) {
-        const c = await renderPageToCanvas(pdf, i, 0.35)
-        list.push({ index: i - 1, rotation: 0, src: c.toDataURL('image/jpeg', 0.7) })
-        if (i % 5 === 0) setPages([...list])
+      try {
+        const pdf = await loadPdf(await file.arrayBuffer())
+        const list: P[] = []
+        for (let i = 1; i <= pdf.numPages; i++) {
+          const c = await renderPageToCanvas(pdf, i, 0.35)
+          if (cancel) return
+          const blob = await canvasToBlob(c, 'image/jpeg', 0.7)
+          if (cancel) return
+          urls.set(i - 1, URL.createObjectURL(blob))
+          list.push({ index: i - 1, rotation: 0 })
+          if (i % 5 === 0 || i === pdf.numPages) {
+            setPages([...list])
+            bump((n) => n + 1)
+          }
+        }
+      } catch (e) {
+        if (!cancel) toast(`Could not read that PDF: ${(e as Error).message}`, 'error')
+      } finally {
+        if (!cancel) setLoading(false)
       }
-      setPages(list)
-      setLoading(false)
     })()
-  }, [file])
+    return () => {
+      cancel = true
+      revokeAll()
+    }
+  }, [file, toast])
 
   const rotate = (i: number, d: number) => setPages((p) => p.map((x, k) => (k === i ? { ...x, rotation: (x.rotation + d + 360) % 360 } : x)))
   const remove = (i: number) => setPages((p) => p.filter((_, k) => k !== i))
@@ -46,7 +75,8 @@ export default function OrganizeTool() {
     if (!file || !pages.length) return
     setBusy(true)
     try {
-      const [out] = await reorganize(file, pages.map(({ index, rotation }) => ({ index, rotation })))
+      const { reorganize } = await import('../engines')
+      const [out] = await reorganize(file, pages)
       downloadBlob(out.blob, out.name)
       toast('Organized PDF downloaded')
     } catch (e) {
@@ -64,7 +94,9 @@ export default function OrganizeTool() {
         <div className="row" style={{ gap: '0.5rem' }}>
           <span className="badge badge-acid">{pages.length} pages</span>
           {loading && <span className="badge">Rendering…</span>}
-          <span className="muted" style={{ fontSize: '0.85rem' }}>Drag to reorder</span>
+          <span className="muted" style={{ fontSize: '0.85rem' }}>
+            Drag to reorder
+          </span>
         </div>
         <div className="row" style={{ gap: '0.5rem' }}>
           <button className="btn btn-sm btn-ghost" onClick={() => setPages((p) => [...p].reverse())}>
@@ -84,7 +116,7 @@ export default function OrganizeTool() {
       <div className="thumbs">
         {pages.map((p, i) => (
           <div
-            key={`${p.index}-${i}`}
+            key={p.index}
             className={`thumb ${dragI === i ? 'dragging' : ''} ${overI === i ? 'over' : ''}`}
             draggable
             onDragStart={() => setDragI(i)}
@@ -104,21 +136,21 @@ export default function OrganizeTool() {
             }}
           >
             <span className="n">{p.index + 1}</span>
-            <img src={p.src} alt={`Page ${p.index + 1}`} style={{ transform: `rotate(${p.rotation}deg)` }} />
+            <img src={thumbs.current.get(p.index)} alt={`Page ${p.index + 1}`} style={{ transform: `rotate(${p.rotation}deg)` }} />
             <div className="acts">
-              <button onClick={() => rotate(i, -90)} title="Rotate left">
+              <button onClick={() => rotate(i, -90)} title="Rotate left" aria-label={`Rotate page ${p.index + 1} left`}>
                 ↺
               </button>
-              <button onClick={() => rotate(i, 90)} title="Rotate right">
+              <button onClick={() => rotate(i, 90)} title="Rotate right" aria-label={`Rotate page ${p.index + 1} right`}>
                 ↻
               </button>
-              <button disabled={i === 0} onClick={() => move(i, i - 1)} title="Move left">
+              <button disabled={i === 0} onClick={() => move(i, i - 1)} title="Move left" aria-label={`Move page ${p.index + 1} left`}>
                 ←
               </button>
-              <button disabled={i === pages.length - 1} onClick={() => move(i, i + 1)} title="Move right">
+              <button disabled={i === pages.length - 1} onClick={() => move(i, i + 1)} title="Move right" aria-label={`Move page ${p.index + 1} right`}>
                 →
               </button>
-              <button onClick={() => remove(i)} title="Delete" style={{ color: 'var(--alarm)' }}>
+              <button onClick={() => remove(i)} title="Delete" aria-label={`Delete page ${p.index + 1}`} style={{ color: 'var(--alarm)' }}>
                 ×
               </button>
             </div>

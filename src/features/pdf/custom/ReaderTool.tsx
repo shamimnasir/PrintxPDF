@@ -4,9 +4,11 @@ import { Dropzone } from '../../../components/ui/Dropzone'
 import { downloadBlob } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 
+type Pdf = Awaited<ReturnType<typeof loadPdf>>
+
 export default function ReaderTool() {
   const [file, setFile] = useState<File | null>(null)
-  const [pdf, setPdf] = useState<Awaited<ReturnType<typeof loadPdf>> | null>(null)
+  const [pdf, setPdf] = useState<Pdf | null>(null)
   const [zoom, setZoom] = useState(1.2)
   const [cur, setCur] = useState(1)
   const [meta, setMeta] = useState<{ title?: string; author?: string } | null>(null)
@@ -15,39 +17,59 @@ export default function ReaderTool() {
 
   useEffect(() => {
     if (!file) return
-    file.arrayBuffer().then(loadPdf).then(async (p) => {
-      setPdf(p)
-      setCur(1)
-      try {
-        const m = await p.getMetadata()
-        const info = m.info as { Title?: string; Author?: string }
-        setMeta({ title: info.Title, author: info.Author })
-      } catch {
-        setMeta(null)
-      }
-    })
+    let alive = true
+    file
+      .arrayBuffer()
+      .then(loadPdf)
+      .then(async (p) => {
+        if (!alive) return
+        setPdf(p)
+        setCur(1)
+        try {
+          const m = await p.getMetadata()
+          const info = m.info as { Title?: string; Author?: string }
+          if (alive) setMeta({ title: info.Title, author: info.Author })
+        } catch {
+          if (alive) setMeta(null)
+        }
+      })
+    return () => {
+      alive = false
+    }
   }, [file])
 
-  // render pages + thumbs
+  // thumbnails: rendered once per document
   useEffect(() => {
-    if (!pdf || !mainRef.current || !sideRef.current) return
-    let cancel = false
-    const main = mainRef.current
     const side = sideRef.current
-    main.innerHTML = ''
+    if (!pdf || !side) return
+    let cancel = false
     side.innerHTML = ''
     ;(async () => {
       for (let i = 1; i <= pdf.numPages; i++) {
+        const t = await renderPageToCanvas(pdf, i, 0.25)
         if (cancel) return
+        t.title = `Page ${i}`
+        t.onclick = () => mainRef.current?.querySelector<HTMLCanvasElement>(`canvas[data-page="${i}"]`)?.scrollIntoView({ behavior: 'smooth' })
+        side.appendChild(t)
+      }
+    })()
+    return () => {
+      cancel = true
+    }
+  }, [pdf])
+
+  // pages: re-rendered when zoom changes; a stale render never lands in a cleared list
+  useEffect(() => {
+    const main = mainRef.current
+    if (!pdf || !main) return
+    let cancel = false
+    main.innerHTML = ''
+    ;(async () => {
+      for (let i = 1; i <= pdf.numPages; i++) {
         const c = await renderPageToCanvas(pdf, i, zoom)
+        if (cancel) return
         c.dataset.page = String(i)
         main.appendChild(c)
-        if (zoom === 1.2 || side.childElementCount < pdf.numPages) {
-          const t = await renderPageToCanvas(pdf, i, 0.25)
-          t.title = `Page ${i}`
-          t.onclick = () => main.querySelector<HTMLCanvasElement>(`canvas[data-page="${i}"]`)?.scrollIntoView({ behavior: 'smooth' })
-          side.appendChild(t)
-        }
       }
     })()
     return () => {
@@ -79,6 +101,13 @@ export default function ReaderTool() {
     mainRef.current?.querySelector<HTMLCanvasElement>(`canvas[data-page="${p}"]`)?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const openInTab = () => {
+    if (!file) return
+    const url = URL.createObjectURL(file)
+    window.open(url, '_blank')
+    setTimeout(() => URL.revokeObjectURL(url), 60_000)
+  }
+
   if (!file)
     return (
       <div className="stack" style={{ maxWidth: 720 }}>
@@ -91,28 +120,32 @@ export default function ReaderTool() {
     <div>
       <div className="reader-bar">
         <strong style={{ maxWidth: 320, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{meta?.title || file.name}</strong>
-        {meta?.author && <span className="mono" style={{ opacity: 0.7, fontSize: '0.75rem' }}>{meta.author}</span>}
+        {meta?.author && (
+          <span className="mono" style={{ opacity: 0.7, fontSize: '0.75rem' }}>
+            {meta.author}
+          </span>
+        )}
         <span style={{ flex: 1 }} />
-        <button className="icon-btn" onClick={() => go(cur - 1)}>
+        <button className="icon-btn" onClick={() => go(cur - 1)} aria-label="Previous page">
           ‹
         </button>
         <span className="mono">
           {cur} / {pdf?.numPages || '…'}
         </span>
-        <button className="icon-btn" onClick={() => go(cur + 1)}>
+        <button className="icon-btn" onClick={() => go(cur + 1)} aria-label="Next page">
           ›
         </button>
-        <button className="icon-btn" onClick={() => setZoom((z) => Math.max(0.5, +(z - 0.2).toFixed(1)))}>
+        <button className="icon-btn" onClick={() => setZoom((z) => Math.max(0.5, +(z - 0.2).toFixed(1)))} aria-label="Zoom out">
           −
         </button>
         <span className="mono">{Math.round(zoom * 83)}%</span>
-        <button className="icon-btn" onClick={() => setZoom((z) => Math.min(3, +(z + 0.2).toFixed(1)))}>
+        <button className="icon-btn" onClick={() => setZoom((z) => Math.min(3, +(z + 0.2).toFixed(1)))} aria-label="Zoom in">
           +
         </button>
         <button className="btn btn-sm btn-acid" onClick={() => downloadBlob(file, file.name)}>
           Download
         </button>
-        <button className="btn btn-sm" onClick={() => window.open(URL.createObjectURL(file), '_blank')}>
+        <button className="btn btn-sm" onClick={openInTab}>
           Print
         </button>
         <button className="btn btn-sm btn-ghost" style={{ color: 'var(--paper)' }} onClick={() => setFile(null)}>

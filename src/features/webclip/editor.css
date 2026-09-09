@@ -3,12 +3,12 @@
    ============================================================ */
 
 .ed-wrap {
-  min-height: calc(100vh - 68px);
+  min-height: calc(100vh - var(--header-h));
 }
 
 .ed-toolbar {
   position: sticky;
-  top: 68px;
+  top: var(--header-h);
   z-index: 40;
   background: var(--ink);
   color: var(--paper);
@@ -421,48 +421,6 @@
   font-style: italic;
 }
 
-/* --- input screen --- */
-.clip-hero {
-  padding: clamp(2rem, 6vw, 4rem) 0 2rem;
-}
-.clip-input {
-  display: flex;
-  width: 100%;
-  gap: 0;
-  border: var(--bw) solid var(--line);
-  box-shadow: var(--shadow);
-  background: var(--card);
-}
-.clip-input input {
-  flex: 1 1 auto;
-  width: 100%;
-  border: 0;
-  padding: 1.1rem 1.2rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  background: transparent;
-  outline: none;
-  min-width: 0;
-}
-.clip-input button {
-  border: 0;
-  border-left: var(--bw) solid var(--line);
-  background: var(--acid);
-  color: var(--acid-fg);
-  font-weight: 900;
-  text-transform: uppercase;
-  padding: 0 1.6rem;
-  cursor: pointer;
-  letter-spacing: 0.06em;
-}
-.clip-input button:hover {
-  background: var(--ink);
-  color: #fff;
-}
-.clip-input button:disabled {
-  opacity: 0.6;
-  cursor: wait;
-}
 .sample-card {
   text-decoration: none;
   display: block;
@@ -493,23 +451,27 @@
 }
 
 /* --- PRINT --- */
+/* Only when the editor is mounted (body.pxp-editor-open). Other routes print normally. */
 @media print {
   @page {
     margin: 14mm;
   }
-  body {
+  body.pxp-editor-open {
     background: #fff !important;
   }
-  body > #root > * {
+  body.pxp-editor-open .header,
+  body.pxp-editor-open .footer,
+  body.pxp-editor-open .ed-toolbar,
+  body.pxp-editor-open .ed-hint,
+  body.pxp-editor-open .ed-meta,
+  body.pxp-editor-open .ed-menu,
+  body.pxp-editor-open .toast-wrap {
     display: none !important;
   }
-  body > #root > .ed-print-root {
-    display: block !important;
+  body.pxp-editor-open .ed-desk {
+    padding: 0;
   }
-  .ed-print-root {
-    position: static;
-  }
-  .pxp-page {
+  body.pxp-editor-open .pxp-page {
     width: auto !important;
     max-width: none !important;
     margin: 0 !important;

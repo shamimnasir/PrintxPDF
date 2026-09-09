@@ -17,10 +17,6 @@ export function stripExt(name: string) {
   return name.replace(/\.[^.]+$/, '')
 }
 
-export function readAsArrayBuffer(file: File): Promise<ArrayBuffer> {
-  return file.arrayBuffer()
-}
-
 export function readAsDataURL(file: File): Promise<string> {
   return new Promise((res, rej) => {
     const r = new FileReader()
@@ -28,10 +24,6 @@ export function readAsDataURL(file: File): Promise<string> {
     r.onerror = rej
     r.readAsDataURL(file)
   })
-}
-
-export function readAsText(file: File): Promise<string> {
-  return file.text()
 }
 
 export function formatBytes(n: number) {

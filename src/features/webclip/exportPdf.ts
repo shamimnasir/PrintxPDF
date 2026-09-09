@@ -1,50 +1,42 @@
 import html2canvas from 'html2canvas'
-import { jsPDF } from 'jspdf'
 import { downloadBlob } from '../../lib/download'
+import { canvasToPdf, type PageSize } from '../../lib/canvasToPdf'
 
-export type PageSize = 'A4' | 'Letter'
+export type { PageSize }
 
-// jsPDF page dimensions in mm
-const SIZES: Record<PageSize, [number, number]> = { A4: [210, 297], Letter: [215.9, 279.4] }
+// html2canvas at scale 2 on a very long article can exceed the browser's canvas limits; cap the scale so height stays under ~16k px
+function scaleFor(el: HTMLElement) {
+  const h = el.scrollHeight || el.offsetHeight || 1
+  return Math.max(1, Math.min(2, 16000 / h))
+}
 
 async function snapshot(el: HTMLElement) {
   return html2canvas(el, {
-    scale: 2,
+    scale: scaleFor(el),
     useCORS: true,
     allowTaint: false,
     backgroundColor: '#ffffff',
     logging: false,
     imageTimeout: 8000,
     onclone: (doc) => {
-      // strip editor-only affordances from the clone
-      doc.querySelectorAll('.pxp-hover, .pxp-editing').forEach((n) => n.classList.remove('pxp-hover', 'pxp-editing'))
+      // strip editor-only affordances from the clone; page-break markers become invisible (they drive slicing instead)
+      doc.querySelectorAll('.pxp-hover').forEach((n) => n.classList.remove('pxp-hover'))
+      doc.querySelectorAll('.pxp-pagebreak').forEach((n) => ((n as HTMLElement).style.cssText = 'border:0;margin:0;height:0'))
     },
   })
 }
 
 /** Rasterises the page element and slices it into PDF pages. Images always survive; text is not selectable. */
-export async function exportPdf(el: HTMLElement, filename: string, size: PageSize = 'A4', marginMm = 12) {
-  const canvas = await snapshot(el)
-  const [pw, ph] = SIZES[size]
-  const pdf = new jsPDF({ unit: 'mm', format: size.toLowerCase() as 'a4' | 'letter', orientation: 'portrait' })
-  const usableW = pw - marginMm * 2
-  const usableH = ph - marginMm * 2
-  const pxPerMm = canvas.width / usableW
-  const sliceHeightPx = Math.floor(usableH * pxPerMm)
+/** y offsets (in canvas px) of manual page breaks inside el */
+export function pageBreakOffsets(el: HTMLElement, canvas: HTMLCanvasElement) {
+  const top = el.getBoundingClientRect().top
+  const ratio = canvas.height / (el.getBoundingClientRect().height || 1)
+  return Array.from(el.querySelectorAll<HTMLElement>('.pxp-pagebreak')).map((b) => (b.getBoundingClientRect().top - top) * ratio)
+}
 
-  let y = 0
-  let first = true
-  while (y < canvas.height) {
-    const h = Math.min(sliceHeightPx, canvas.height - y)
-    const slice = document.createElement('canvas')
-    slice.width = canvas.width
-    slice.height = h
-    slice.getContext('2d')!.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h)
-    if (!first) pdf.addPage()
-    pdf.addImage(slice.toDataURL('image/jpeg', 0.92), 'JPEG', marginMm, marginMm, usableW, h / pxPerMm)
-    first = false
-    y += h
-  }
+export async function exportPdf(el: HTMLElement, filename: string, size: PageSize = 'A4') {
+  const canvas = await snapshot(el)
+  const pdf = canvasToPdf(canvas, size, 12, 0.92, pageBreakOffsets(el, canvas))
   pdf.setProperties({ title: filename.replace(/\.pdf$/, ''), creator: 'PrintxPDF' })
   pdf.save(filename)
 }

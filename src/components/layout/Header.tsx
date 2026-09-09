@@ -54,7 +54,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="nav" aria-label="Main">
+        <nav id="main-nav" className="nav" aria-label="Main">
           <NavMenu label="PDF Tools" id="tools" open={open} setOpen={setOpen}>
             {cats.map((c) => (
               <div key={c} style={{ breakInside: 'avoid' }}>
@@ -115,7 +115,7 @@ export function Header() {
               </Link>
             </>
           )}
-          <button className="icon-btn burger" onClick={() => setMenu(!menu)} aria-label="Menu">
+          <button className="icon-btn burger" onClick={() => setMenu(!menu)} aria-label="Menu" aria-expanded={menu} aria-controls="main-nav">
             ≡
           </button>
         </div>

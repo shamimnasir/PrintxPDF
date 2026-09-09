@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Dropzone, FileList } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/Toast'
-import { downloadBlob, formatBytes } from '../../../lib/download'
-import { ocr, type Output } from '../engines'
+import { ProgressBar, ResultList } from '../../../components/ui/ResultList'
+import type { Output } from '../engines'
 
 const LANGS: [string, string][] = [
   ['eng', 'English'],
@@ -35,10 +35,11 @@ export default function OcrTool() {
     setOutputs([])
     setProgress({ f: 0, msg: 'Loading language data (first run downloads ~10 MB)…' })
     try {
+      const { ocr } = await import('../engines')
       const r = await ocr(files[0], lang, (f, msg) => setProgress({ f, msg }))
       setText(r.text)
       setOutputs(r.outputs)
-      toast('OCR complete')
+      toast(r.note ? `OCR complete. ${r.note}` : 'OCR complete')
     } catch (e) {
       toast(`OCR failed: ${(e as Error).message}`, 'error')
     } finally {
@@ -52,14 +53,7 @@ export default function OcrTool() {
       <div className="stack">
         <Dropzone accept=".pdf,.png,.jpg,.jpeg" multiple={false} onFiles={(f) => setFiles(f)} label="Drop a scan or photo" />
         <FileList files={files} onRemove={() => setFiles([])} />
-        {progress && (
-          <div>
-            <div className="progress">
-              <div style={{ width: `${Math.max(4, progress.f * 100)}%` }} />
-            </div>
-            <div className="mono muted" style={{ fontSize: '0.75rem', marginTop: '0.3rem' }}>{progress.msg}</div>
-          </div>
-        )}
+        {progress && <ProgressBar value={progress.f} msg={progress.msg} />}
         {text && (
           <div className="card">
             <div className="row between" style={{ marginBottom: '0.75rem' }}>
@@ -69,18 +63,8 @@ export default function OcrTool() {
               </button>
             </div>
             <textarea className="textarea" style={{ minHeight: 280 }} value={text} readOnly />
-            <div className="results" style={{ marginTop: '1rem' }}>
-              {outputs.map((o) => (
-                <div className="result-row" key={o.name}>
-                  <span className="name">{o.name}</span>
-                  <span className="mono" style={{ fontSize: '0.75rem' }}>
-                    {formatBytes(o.blob.size)}
-                  </span>
-                  <button className="btn btn-sm" onClick={() => downloadBlob(o.blob, o.name)}>
-                    Download
-                  </button>
-                </div>
-              ))}
+            <div style={{ marginTop: '1rem' }}>
+              <ResultList outputs={outputs} title="Downloads" />
             </div>
           </div>
         )}

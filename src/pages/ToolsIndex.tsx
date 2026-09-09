@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { CATEGORY_LABEL, TOOLS, type ToolCategory } from '../features/pdf/toolsMeta'
-import { StatusBadge } from '../features/pdf/ToolPage'
+import { ToolCard } from '../features/pdf/ToolCard'
 import '../features/pdf/tools.css'
 
 export default function ToolsIndex() {
@@ -24,14 +23,7 @@ export default function ToolsIndex() {
             <h2 style={{ fontSize: '1.8rem' }}>{CATEGORY_LABEL[c]}</h2>
             <div className="grid grid-3">
               {list.map((t) => (
-                <Link key={t.slug} to={`/tools/${t.slug}`} className="card card-hover tool-card">
-                  <div className="tool-icon">{t.icon}</div>
-                  <div>
-                    <h4>{t.name}</h4>
-                    <p className="muted" style={{ marginBottom: '0.5rem' }}>{t.short}</p>
-                    <StatusBadge status={t.status} />
-                  </div>
-                </Link>
+                <ToolCard key={t.slug} tool={t} showStatus />
               ))}
             </div>
           </div>

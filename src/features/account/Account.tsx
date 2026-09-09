@@ -4,6 +4,9 @@ import { applyTheme, genApiKey, store, type SavedDoc, type Settings, type Signat
 import { useUser } from './useUser'
 import { useToast } from '../../components/ui/Toast'
 import { downloadBlob } from '../../lib/download'
+import { Seg } from '../../components/ui/Seg'
+
+const escapeHtml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
 const NAV = [
   ['', 'Overview'],
@@ -66,7 +69,7 @@ function Documents() {
             <strong>{d.title}</strong>
             <span className="muted" style={{ marginLeft: '0.5rem', fontSize: '0.8rem' }}>{new Date(d.savedAt).toLocaleString()}</span>
           </span>
-          <button className="btn btn-sm" onClick={() => downloadBlob(new Blob([`<!doctype html><title>${d.title}</title><body style="max-width:720px;margin:2rem auto;font-family:Georgia,serif;line-height:1.55"><h1>${d.title}</h1>${d.html}`], { type: 'text/html' }), `${d.title}.html`)}>
+          <button className="btn btn-sm" onClick={() => downloadBlob(new Blob([`<!doctype html><title>${escapeHtml(d.title)}</title><body style="max-width:720px;margin:2rem auto;font-family:Georgia,serif;line-height:1.55"><h1>${escapeHtml(d.title)}</h1>${d.html}`], { type: 'text/html' }), `${d.title.replace(/[\\/:*?"<>|]+/g, '-')}.html`)}>
             Download HTML
           </button>
           {d.url && (
@@ -158,33 +161,24 @@ function SettingsPage() {
     store.setSettings(s)
     applyTheme(s.theme)
   }, [s])
-  const Seg = <K extends keyof Settings>({ k, options }: { k: K; options: Settings[K][] }) => (
-    <div className="seg">
-      {options.map((o) => (
-        <button key={String(o)} className={s[k] === o ? 'on' : ''} onClick={() => setS({ ...s, [k]: o })}>
-          {String(o)}
-        </button>
-      ))}
-    </div>
-  )
   return (
     <div className="stack" style={{ maxWidth: 520 }}>
       <h2 style={{ fontSize: '2rem' }}>Settings</h2>
       <div>
         <label className="label">Theme</label>
-        <Seg k="theme" options={['light', 'dark', 'system']} />
+        <Seg label="Theme" value={s.theme} options={[['light', 'Light'], ['dark', 'Dark'], ['system', 'System']]} onChange={(theme) => setS({ ...s, theme })} />
       </div>
       <div>
         <label className="label">Default text size</label>
-        <Seg k="defaultTextSize" options={['S', 'M', 'L', 'XL']} />
+        <Seg label="Default text size" value={s.defaultTextSize} options={[['S', 'S'], ['M', 'M'], ['L', 'L'], ['XL', 'XL']]} onChange={(defaultTextSize) => setS({ ...s, defaultTextSize })} />
       </div>
       <div>
         <label className="label">Default image size</label>
-        <Seg k="defaultImageSize" options={['full', 'large', 'small', 'none']} />
+        <Seg label="Default image size" value={s.defaultImageSize} options={[['full', 'Full'], ['large', 'Large'], ['small', 'Small'], ['none', 'None']]} onChange={(defaultImageSize) => setS({ ...s, defaultImageSize })} />
       </div>
       <div>
         <label className="label">Default paper</label>
-        <Seg k="defaultPageSize" options={['A4', 'Letter']} />
+        <Seg label="Default paper" value={s.defaultPageSize} options={[['A4', 'A4'], ['Letter', 'Letter']]} onChange={(defaultPageSize) => setS({ ...s, defaultPageSize })} />
       </div>
       <button
         className="btn btn-sm btn-alarm"
@@ -279,7 +273,7 @@ export default function Account() {
   if (!user) return <Navigate to="/signin" replace />
   return (
     <div className="container section">
-      <div className="tool-grid" style={{ gridTemplateColumns: '240px 1fr' }}>
+      <div className="tool-grid account-grid">
         <nav className="card card-flat stack" style={{ gap: 0, padding: '0.5rem' }}>
           {NAV.map(([p, l]) => (
             <NavLink key={p} to={p} end={p === ''} className={({ isActive }) => `nav-btn ${isActive ? 'is-active' : ''}`} style={({ isActive }) => (isActive ? { background: 'var(--acid)', color: 'var(--ink)', borderColor: 'var(--line)' } : {})}>

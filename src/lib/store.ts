@@ -27,12 +27,14 @@ function read<T>(key: string, fallback: T): T {
     return fallback
   }
 }
-function write(key: string, value: unknown) {
+/** Returns false when the browser refused the write (quota exceeded, private mode). */
+function write(key: string, value: unknown): boolean {
   try {
     localStorage.setItem(key, JSON.stringify(value))
     window.dispatchEvent(new CustomEvent('pxp:store', { detail: key }))
+    return true
   } catch {
-    /* quota / private mode */
+    return false
   }
 }
 
@@ -75,11 +77,11 @@ export const store = {
   },
 
   getDocs: () => read<SavedDoc[]>(KEYS.docs, []),
-  saveDoc(doc: Omit<SavedDoc, 'id' | 'savedAt'>) {
+  /** Returns null when nothing could be persisted (storage quota). */
+  saveDoc(doc: Omit<SavedDoc, 'id' | 'savedAt'>): SavedDoc | null {
     const docs = read<SavedDoc[]>(KEYS.docs, [])
     const d: SavedDoc = { ...doc, id: uid(), savedAt: new Date().toISOString() }
-    write(KEYS.docs, [d, ...docs].slice(0, 50))
-    return d
+    return write(KEYS.docs, [d, ...docs].slice(0, 50)) ? d : null
   },
   deleteDoc(id: string) {
     write(
@@ -89,10 +91,9 @@ export const store = {
   },
 
   getSignatures: () => read<Signature[]>(KEYS.sigs, []),
-  addSignature(name: string, dataUrl: string) {
+  addSignature(name: string, dataUrl: string): Signature | null {
     const s: Signature = { id: uid(), name, dataUrl, createdAt: new Date().toISOString() }
-    write(KEYS.sigs, [s, ...read<Signature[]>(KEYS.sigs, [])])
-    return s
+    return write(KEYS.sigs, [s, ...read<Signature[]>(KEYS.sigs, [])]) ? s : null
   },
   deleteSignature(id: string) {
     write(

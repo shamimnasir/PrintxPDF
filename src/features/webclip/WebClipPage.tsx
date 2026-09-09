@@ -6,6 +6,7 @@ import { store } from '../../lib/store'
 import { useToast } from '../../components/ui/Toast'
 import { Editor } from './Editor'
 import { SAMPLES, sampleById } from './samples'
+import { POSTS } from '../../pages/blogPosts'
 import './editor.css'
 
 type Tab = 'url' | 'paste' | 'file'
@@ -14,7 +15,14 @@ function articleFromSample(id: string): CleanArticle | null {
   const s = sampleById(id)
   if (!s) return null
   const wordCount = s.html.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).length
-  return { title: s.title, byline: s.byline, siteName: s.site, excerpt: s.blurb, html: s.html, url: s.url, wordCount }
+  return { title: s.title, byline: s.byline, siteName: s.site, html: s.html, url: s.url, wordCount }
+}
+
+function articleFromPost(slug: string): CleanArticle | null {
+  const p = POSTS.find((x) => x.slug === slug)
+  if (!p) return null
+  const html = p.body.map((t) => `<p>${t.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</p>`).join('')
+  return { title: p.title, byline: 'PrintxPDF blog', siteName: 'printxpdf', html, url: '', wordCount: p.body.join(' ').split(/\s+/).length, publishedTime: p.date }
 }
 
 export default function WebClipPage() {
@@ -29,13 +37,17 @@ export default function WebClipPage() {
   const [loading, setLoading] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  const reqId = useRef(0) // ignore results from a fetch the user has already abandoned
   const history = store.getHistory()
 
   const load = async (target: string) => {
+    const id = ++reqId.current
+    const stale = () => id !== reqId.current
     setError(null)
     setLoading('Fetching page…')
     try {
-      const page = await fetchArticle(target, setLoading)
+      const page = await fetchArticle(target, (m) => !stale() && setLoading(m))
+      if (stale()) return
       setLoading('Stripping the clutter…')
       const clean = cleanHtml(page)
       if (clean.wordCount < 30) throw new Error('We fetched the page but could not find readable article text in it. Try pasting the content instead.')
@@ -43,10 +55,11 @@ export default function WebClipPage() {
       setArticle(clean)
       document.title = `${clean.title} — PrintxPDF`
     } catch (e) {
+      if (stale()) return
       setError((e as Error).message)
       setArticle(null)
     } finally {
-      setLoading(null)
+      if (!stale()) setLoading(null)
     }
   }
 
@@ -54,9 +67,10 @@ export default function WebClipPage() {
   useEffect(() => {
     const u = params.get('url')
     const s = params.get('sample')
+    const post = params.get('post')
     if (params.get('paste')) return // article already in state from paste/upload
-    if (s) {
-      const a = articleFromSample(s)
+    if (s || post) {
+      const a = s ? articleFromSample(s) : articleFromPost(post!)
       if (a) {
         setArticle(a)
         setError(null)

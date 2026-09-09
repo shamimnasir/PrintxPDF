@@ -38,6 +38,7 @@
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --maxw: 1200px;
+  --header-h: 71px; /* 68px min-height + 3px border */
   color-scheme: light;
 }
 
@@ -653,26 +654,6 @@ p {
   }
 }
 
-/* ---------- Modal ---------- */
-.modal-bg {
-  position: fixed;
-  inset: 0;
-  background: rgba(11, 11, 15, 0.7);
-  z-index: 150;
-  display: grid;
-  place-items: center;
-  padding: 1rem;
-}
-.modal {
-  background: var(--card);
-  border: var(--bw) solid var(--line);
-  box-shadow: var(--shadow);
-  width: min(100%, 560px);
-  max-height: 90vh;
-  overflow: auto;
-  padding: 1.5rem;
-}
-
 /* ---------- Dropzone ---------- */
 .dropzone {
   border: var(--bw) dashed var(--line);
@@ -794,6 +775,48 @@ code.inline {
   font-size: 0.9em;
 }
 
+/* ---------- URL input (home + cleaner) ---------- */
+.clip-hero {
+  padding: clamp(2rem, 6vw, 4rem) 0 2rem;
+}
+.clip-input {
+  display: flex;
+  width: 100%;
+  gap: 0;
+  border: var(--bw) solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--card);
+}
+.clip-input input {
+  flex: 1 1 auto;
+  width: 100%;
+  border: 0;
+  padding: 1.1rem 1.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background: transparent;
+  outline: none;
+  min-width: 0;
+}
+.clip-input button {
+  border: 0;
+  border-left: var(--bw) solid var(--line);
+  background: var(--acid);
+  color: var(--acid-fg);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0 1.6rem;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+}
+.clip-input button:hover {
+  background: var(--ink);
+  color: #fff;
+}
+.clip-input button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
 /* ---------- Tabs ---------- */
 .tabs {
   display: flex;

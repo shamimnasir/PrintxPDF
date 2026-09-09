@@ -4,6 +4,7 @@ import type { CleanArticle } from '../../lib/readability'
 import { UndoStack } from '../../lib/undoStack'
 import { store } from '../../lib/store'
 import { useToast } from '../../components/ui/Toast'
+import { Seg } from '../../components/ui/Seg'
 import { exportPdf, exportPng, safeFilename, type PageSize } from './exportPdf'
 import './editor.css'
 
@@ -16,44 +17,23 @@ type Links = 'keep' | 'strip' | 'footnote'
 
 const BLOCKS = 'p, li, h1, h2, h3, h4, h5, h6, img, figure, table, blockquote, pre, ul, ol, dl, hr, .pxp-note, .pxp-pagebreak'
 
-function printElement(page: HTMLElement) {
-  const root = document.getElementById('root')!
-  const holder = document.createElement('div')
-  holder.className = 'ed-print-root'
-  const clone = page.cloneNode(true) as HTMLElement
-  clone.classList.remove('mode-delete', 'mode-highlight', 'mode-edit', 'mode-break', 'mode-note')
-  clone.querySelectorAll('.pxp-hover').forEach((n) => n.classList.remove('pxp-hover'))
-  clone.querySelectorAll('[contenteditable]').forEach((n) => n.removeAttribute('contenteditable'))
-  holder.appendChild(clone)
-  root.appendChild(holder)
-  const cleanup = () => {
-    holder.remove()
-    window.removeEventListener('afterprint', cleanup)
-  }
-  window.addEventListener('afterprint', cleanup)
-  // Safari fires afterprint unreliably; belt and braces
-  setTimeout(cleanup, 60_000)
-  window.print()
-}
-
-const Tool = ({ icon, label, on, onClick, danger, disabled, badge }: { icon: string; label: string; on?: boolean; onClick: () => void; danger?: boolean; disabled?: boolean; badge?: number }) => (
-<button className={`ed-tool ${on ? 'on' : ''} ${danger ? 'danger' : ''}`} onClick={onClick} disabled={disabled} title={label}>
+const Tool = ({ icon, label, on, onClick, danger, disabled, badge, menu, className }: { icon: string; label: string; on?: boolean; onClick: () => void; danger?: boolean; disabled?: boolean; badge?: number; menu?: boolean; className?: string }) => (
+<button
+  type="button"
+  className={`ed-tool ${on ? 'on' : ''} ${danger ? 'danger' : ''} ${className || ''}`}
+  onClick={onClick}
+  disabled={disabled}
+  title={label}
+  aria-pressed={menu ? undefined : on}
+  aria-expanded={menu ? !!on : undefined}
+  aria-haspopup={menu ? 'menu' : undefined}
+>
   <span className="ic" aria-hidden>
     {icon}
   </span>
   {label}
   {badge ? <span className="ed-count">{badge}</span> : null}
 </button>
-)
-
-const Seg = <T extends string>({ value, options, onChange }: { value: T; options: [T, string][]; onChange: (v: T) => void }) => (
-<div className="seg">
-  {options.map(([v, l]) => (
-    <button key={v} className={v === value ? 'on' : ''} onClick={() => onChange(v)}>
-      {l}
-    </button>
-  ))}
-</div>
 )
 
 export function Editor({ article, onReset }: { article: CleanArticle; onReset: () => void }) {
@@ -85,6 +65,21 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
     if (titleRef.current) titleRef.current.textContent = article.title
     stack.clear()
   }, [article, stack])
+
+  useEffect(() => {
+    document.body.classList.add('pxp-editor-open')
+    return () => document.body.classList.remove('pxp-editor-open')
+  }, [])
+
+  // close the Style menu when clicking anywhere else
+  useEffect(() => {
+    if (!styleOpen) return
+    const onDoc = (e: MouseEvent) => {
+      if (!(e.target as Element).closest('.ed-menu, .ed-style-btn')) setStyleOpen(false)
+    }
+    document.addEventListener('mousedown', onDoc)
+    return () => document.removeEventListener('mousedown', onDoc)
+  }, [styleOpen])
 
   useEffect(() => {
     const unsub = stack.subscribe(() => force((n) => n + 1))
@@ -169,7 +164,10 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
       if (!el) return
       e.preventDefault()
       if (el === titleRef.current) {
+        const before = el.textContent || ''
+        if (!before) return
         el.textContent = ''
+        stack.push({ label: 'Delete title', undo: () => (el.textContent = before), redo: () => (el.textContent = '') })
         return
       }
       // a click is a drag of one; the mousedown already started a batch
@@ -242,6 +240,9 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
       const before = editSnapshot.current
       if (before && (before.body !== body.innerHTML || before.title !== title.textContent)) {
         const after = { body: body.innerHTML, title: title.textContent || '' }
+        // restoring innerHTML replaces every node, so earlier delete/highlight commands would
+        // re-insert into detached parents. Start a fresh history from this edit.
+        stack.clear()
         stack.push({
           label: 'Edit text',
           undo: () => {
@@ -293,9 +294,10 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
   const getTitle = () => titleRef.current?.textContent?.trim() || article.title || 'page'
 
   const doPrint = () => {
-    if (!pageRef.current) return
     setMode(null)
-    setTimeout(() => printElement(pageRef.current!), 50)
+    setStyleOpen(false)
+    // print CSS (editor.css) hides the chrome and prints .pxp-page in place
+    setTimeout(() => window.print(), 50)
   }
   const doPdf = async () => {
     if (!pageRef.current) return
@@ -331,8 +333,8 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
   }
   const doSave = () => {
     if (!store.getUser()) return toast('Sign in to save documents to your account', 'error')
-    store.saveDoc({ title: getTitle(), url: article.url, html: bodyRef.current?.innerHTML || '' })
-    toast('Saved to your account')
+    const saved = store.saveDoc({ title: getTitle(), url: article.url, html: bodyRef.current?.innerHTML || '' })
+    toast(saved ? 'Saved to your account' : 'Could not save: browser storage is full', saved ? 'ok' : 'error')
   }
   const doCopy = async () => {
     try {
@@ -377,7 +379,7 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
           <Tool icon="✉" label="Email" onClick={doEmail} />
           <Tool icon="▣" label="Screenshot" onClick={doPng} disabled={!!busy} />
           <div className="ed-sep" />
-          <Tool icon="Aa" label="Style ▾" on={styleOpen} onClick={() => setStyleOpen((o) => !o)} />
+          <Tool icon="Aa" label="Style ▾" on={styleOpen} menu className="ed-style-btn" onClick={() => setStyleOpen((o) => !o)} />
           <Tool icon="🗑" label="Delete" danger on={mode === 'delete'} onClick={() => toggleMode('delete')} badge={stack.size} />
           <Tool icon="▬" label="Highlight" on={mode === 'highlight'} onClick={() => toggleMode('highlight')} />
           <Tool icon="✎" label="Edit text" on={mode === 'edit'} onClick={() => toggleMode('edit')} />
@@ -392,7 +394,7 @@ export function Editor({ article, onReset }: { article: CleanArticle; onReset: (
           <Tool icon="✕" label="New page" onClick={onReset} />
         </div>
         {styleOpen && (
-          <div className="ed-menu" onClick={(e) => e.stopPropagation()}>
+          <div className="ed-menu" role="menu" aria-label="Style options" onClick={(e) => e.stopPropagation()}>
             <span className="label">Text size</span>
             <Seg value={textSize} options={[['S', 'Small'], ['M', 'Medium'], ['L', 'Large'], ['XL', 'XL']]} onChange={setTextSize} />
             <span className="label">Font</span>

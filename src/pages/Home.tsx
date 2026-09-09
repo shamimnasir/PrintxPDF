@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { TOOLS } from '../features/pdf/toolsMeta'
+import { ToolCard } from '../features/pdf/ToolCard'
 import '../features/pdf/tools.css'
 
 const LOGOS = ['Northwind Post', 'Kestrel Labs', 'Harbor Health', 'Meridian U', 'Tabula Legal', 'Orbit Studio', 'Bluebell Schools', 'Fjord Bank']
@@ -114,13 +115,7 @@ export default function Home() {
             {TOOLS.filter((t) => t.status === 'real')
               .slice(0, 12)
               .map((t) => (
-                <Link key={t.slug} to={`/tools/${t.slug}`} className="card card-hover tool-card">
-                  <div className="tool-icon">{t.icon}</div>
-                  <div>
-                    <h4>{t.name}</h4>
-                    <p className="muted">{t.short}</p>
-                  </div>
-                </Link>
+                <ToolCard key={t.slug} tool={t} />
               ))}
           </div>
         </div>

@@ -1,9 +1,12 @@
 import html2canvas from 'html2canvas'
-import { jsPDF } from 'jspdf'
 import DOMPurify from 'dompurify'
+import { canvasToPdf, type PageSize } from '../../lib/canvasToPdf'
+import { pageBreakOffsets } from '../webclip/exportPdf'
 
 // Renders arbitrary HTML into an off-screen "paper" element styled like the web-clip page, then rasterises.
-export async function exportPdfToBlob(html: string, size: 'A4' | 'Letter' = 'A4'): Promise<Blob> {
+export async function exportPdfToBlob(html: string, size: PageSize = 'A4'): Promise<Blob> {
+  // make sure the paper stylesheet is present even if the editor was never opened
+  await import('../webclip/editor.css')
   const holder = document.createElement('div')
   holder.style.cssText = 'position:fixed;left:-10000px;top:0;width:794px;background:#fff;z-index:-1'
   const page = document.createElement('div')
@@ -15,32 +18,16 @@ export async function exportPdfToBlob(html: string, size: 'A4' | 'Letter' = 'A4'
   page.appendChild(body)
   holder.appendChild(page)
   document.body.appendChild(holder)
-  // make sure the editor stylesheet is present even if the editor was never opened
-  await import('../webclip/editor.css')
   await new Promise((r) => setTimeout(r, 50))
   try {
-    const canvas = await html2canvas(page, { scale: 2, useCORS: true, backgroundColor: '#fff', logging: false })
-    const [pw, ph] = size === 'A4' ? [210, 297] : [215.9, 279.4]
-    const margin = 12
-    const pdf = new jsPDF({ unit: 'mm', format: size.toLowerCase() as 'a4' | 'letter' })
-    const usableW = pw - margin * 2
-    const usableH = ph - margin * 2
-    const pxPerMm = canvas.width / usableW
-    const sliceH = Math.floor(usableH * pxPerMm)
-    let y = 0
-    let first = true
-    while (y < canvas.height) {
-      const h = Math.min(sliceH, canvas.height - y)
-      const c = document.createElement('canvas')
-      c.width = canvas.width
-      c.height = h
-      c.getContext('2d')!.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h)
-      if (!first) pdf.addPage()
-      pdf.addImage(c.toDataURL('image/jpeg', 0.9), 'JPEG', margin, margin, usableW, h / pxPerMm)
-      first = false
-      y += h
-    }
-    return pdf.output('blob')
+    const canvas = await html2canvas(page, {
+      scale: Math.max(1, Math.min(2, 16000 / (page.scrollHeight || 1))),
+      useCORS: true,
+      backgroundColor: '#fff',
+      logging: false,
+      onclone: (doc) => doc.querySelectorAll('.pxp-pagebreak').forEach((n) => ((n as HTMLElement).style.cssText = 'border:0;margin:0;height:0')),
+    })
+    return canvasToPdf(canvas, size, 12, 0.9, pageBreakOffsets(page, canvas)).output('blob')
   } finally {
     holder.remove()
   }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useToast } from '../components/ui/Toast'
+import { Seg } from '../components/ui/Seg'
 
 export default function WebsiteButton() {
   const { toast } = useToast()
@@ -8,15 +9,16 @@ export default function WebsiteButton() {
   const [size, setSize] = useState<'sm' | 'md' | 'lg'>('md')
   const [icon, setIcon] = useState(true)
 
+  const safeLabel = label.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
   const origin = `${window.location.origin}${import.meta.env.BASE_URL}`.replace(/\/$/, '')
-  const colors = { acid: ['#E8FF3A', '#0B0B0F'], ink: ['#0B0B0F', '#E8FF3A'], outline: ['transparent', '#0B0B0F'] }[style]
+  const colors = { acid: ['#2B5BFF', '#FFFFFF'], ink: ['#0B0B0F', '#FFFFFF'], outline: ['transparent', '#0B0B0F'] }[style]
   const pad = { sm: '6px 12px', md: '10px 18px', lg: '14px 26px' }[size]
   const fs = { sm: '12px', md: '14px', lg: '16px' }[size]
 
   const snippet = `<!-- PrintxPDF button -->
 <a href="${origin}/print?url=" class="printxpdf-btn" onclick="this.href='${origin}/print?url='+encodeURIComponent(location.href)" target="_blank" rel="noopener"
    style="display:inline-flex;align-items:center;gap:8px;padding:${pad};font:800 ${fs}/1 system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:${colors[1]};background:${colors[0]};border:3px solid #0B0B0F;box-shadow:4px 4px 0 #0B0B0F">
-  ${icon ? '&#9113; ' : ''}${label}
+  ${icon ? '&#9113; ' : ''}${safeLabel}
 </a>`
 
   return (
@@ -51,23 +53,11 @@ export default function WebsiteButton() {
           </div>
           <div>
             <label className="label">Style</label>
-            <div className="seg">
-              {(['acid', 'ink', 'outline'] as const).map((s) => (
-                <button key={s} className={style === s ? 'on' : ''} onClick={() => setStyle(s)}>
-                  {s}
-                </button>
-              ))}
-            </div>
+            <Seg label="Style" value={style} options={[['acid', 'Cobalt'], ['ink', 'Ink'], ['outline', 'Outline']]} onChange={setStyle} />
           </div>
           <div>
             <label className="label">Size</label>
-            <div className="seg">
-              {(['sm', 'md', 'lg'] as const).map((s) => (
-                <button key={s} className={size === s ? 'on' : ''} onClick={() => setSize(s)}>
-                  {s}
-                </button>
-              ))}
-            </div>
+            <Seg label="Size" value={size} options={[['sm', 'Small'], ['md', 'Medium'], ['lg', 'Large']]} onChange={setSize} />
           </div>
           <label className="check">
             <input type="checkbox" checked={icon} onChange={(e) => setIcon(e.target.checked)} /> Show printer icon

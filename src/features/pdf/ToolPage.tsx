@@ -1,6 +1,7 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { toolBySlug, STATUS_LABEL, TOOLS, type ToolMeta } from './toolsMeta'
+import { toolBySlug, TOOLS } from './toolsMeta'
+import { StatusBadge, ToolCard } from './ToolCard'
 import { GenericTool } from './GenericTool'
 import './tools.css'
 
@@ -10,19 +11,13 @@ const QrTool = lazy(() => import('./custom/QrTool'))
 const OcrTool = lazy(() => import('./custom/OcrTool'))
 const OrganizeTool = lazy(() => import('./custom/OrganizeTool'))
 
-export function StatusBadge({ status }: { status: ToolMeta['status'] }) {
-  const cls = status === 'real' ? 'badge-acid' : status === 'best-effort' ? 'badge-sky' : 'badge-alarm'
-  return <span className={`badge ${cls}`}>{STATUS_LABEL[status]}</span>
-}
-
 export default function ToolPage() {
   const { slug = '' } = useParams()
   const tool = toolBySlug(slug)
-  const [key, setKey] = useState(0)
+  const key = slug // remounts the tool UI when the route changes
   useEffect(() => {
-    setKey((k) => k + 1)
     document.title = tool ? `${tool.name} — PrintxPDF` : 'Tool not found — PrintxPDF'
-  }, [slug, tool])
+  }, [tool])
 
   if (!tool) {
     return (
@@ -63,13 +58,7 @@ export default function ToolPage() {
           <span className="eyebrow">Related tools</span>
           <div className="grid grid-4">
             {related.map((t) => (
-              <Link key={t.slug} to={`/tools/${t.slug}`} className="card card-hover tool-card">
-                <div className="tool-icon">{t.icon}</div>
-                <div>
-                  <h4>{t.name}</h4>
-                  <p className="muted">{t.short}</p>
-                </div>
-              </Link>
+              <ToolCard key={t.slug} tool={t} />
             ))}
           </div>
         </div>

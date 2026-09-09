@@ -6,7 +6,6 @@ export type CleanArticle = {
   title: string
   byline: string
   siteName: string
-  excerpt: string
   html: string
   url: string
   wordCount: number
@@ -73,7 +72,6 @@ export function cleanHtml(page: FetchedPage): CleanArticle {
   let body = ''
   let byline = ''
   let siteName = ''
-  let excerpt = ''
   let publishedTime: string | undefined
 
   if (page.kind === 'markdown') {
@@ -88,10 +86,13 @@ export function cleanHtml(page: FetchedPage): CleanArticle {
     doc.head.prepend(base)
     absolutize(doc, page.finalUrl)
     NOISE_SELECTORS.forEach((sel) => {
+      const fuzzy = sel.includes('*=') // class-substring selectors are the ones that can hit real content
       try {
         doc.querySelectorAll(sel).forEach((el) => {
-          // never nuke the main content container just because a class matched
-          if (el.matches('article, main, [role="main"]')) return
+          // never nuke the main content container (or its ancestors) just because a class matched
+          if (el.matches('article, main, [role="main"]') || el.querySelector('article, main, [role="main"]')) return
+          // a "comments-enabled" content wrapper or a "share-price" table holds real text; leave those to Readability's scoring
+          if (fuzzy && (el.textContent || '').split(/\s+/).length > 150) return
           el.remove()
         })
       } catch {
@@ -108,7 +109,6 @@ export function cleanHtml(page: FetchedPage): CleanArticle {
       title = article.title || ''
       body = article.content
       byline = article.byline || ''
-      excerpt = article.excerpt || ''
       siteName = siteName || article.siteName || ''
     } else {
       title = doc.title
@@ -136,7 +136,9 @@ export function cleanHtml(page: FetchedPage): CleanArticle {
   const root = frag.getElementById('root')!
   root.querySelectorAll('img').forEach((img) => {
     const src = img.getAttribute('src') || ''
-    if (!src || src.startsWith('data:image/gif') || /1x1|pixel|spacer|tracking/i.test(src)) img.remove()
+    // tracker pixels: match on the file name only, not the whole URL (an article about the Pixel phone keeps its photos)
+    const fileName = src.split('?')[0].split('/').pop() || ''
+    if (!src || src.startsWith('data:image/gif') || /^(1x1|pixel|spacer|blank|tracking|beacon)\b/i.test(fileName) || /\/(tracking|beacon|pixel)\//i.test(src)) img.remove()
     else {
       img.setAttribute('loading', 'eager')
       img.setAttribute('referrerpolicy', 'no-referrer')
@@ -153,7 +155,7 @@ export function cleanHtml(page: FetchedPage): CleanArticle {
   const html = root.innerHTML
   const wordCount = (root.textContent || '').trim().split(/\s+/).filter(Boolean).length
 
-  return { title: title || 'Untitled page', byline, siteName, excerpt, html, url: page.finalUrl, wordCount, publishedTime }
+  return { title: title || 'Untitled page', byline, siteName, html, url: page.finalUrl, wordCount, publishedTime }
 }
 
 export function cleanPastedHtml(input: string, title = 'Pasted content'): CleanArticle {

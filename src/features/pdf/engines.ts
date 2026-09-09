@@ -1,10 +1,12 @@
 // All PDF operations run in the browser. Nothing is uploaded anywhere.
 import { PDFDocument, degrees, rgb, StandardFonts, PageSizes } from 'pdf-lib'
-import { jsPDF } from 'jspdf'
 import { loadPdf, renderPageToCanvas, canvasToBlob, extractText } from '../../lib/pdfjs'
-import { readAsArrayBuffer, readAsDataURL, stripExt } from '../../lib/download'
+import { readAsDataURL, stripExt } from '../../lib/download'
 
-export type Output = { name: string; blob: Blob; note?: string }
+const readAsArrayBuffer = (f: File) => f.arrayBuffer()
+
+export type { Output } from '../../components/ui/ResultList'
+import type { Output } from '../../components/ui/ResultList'
 export type Progress = (fraction: number, msg?: string) => void
 
 const pdfBlob = (bytes: Uint8Array) => new Blob([bytes as BlobPart], { type: 'application/pdf' })
@@ -206,19 +208,24 @@ export async function imagesToPdf(files: File[], opts: { fit: 'fit' | 'fill' | '
   return [{ name: 'images.pdf', blob: pdfBlob(await doc.save()) }]
 }
 
-async function transcodeToPng(file: File): Promise<ArrayBuffer> {
+/** Decode any browser-supported image file onto a canvas. */
+export async function fileToCanvas(file: File): Promise<HTMLCanvasElement> {
   const url = await readAsDataURL(file)
   const img = await new Promise<HTMLImageElement>((res, rej) => {
     const i = new Image()
     i.onload = () => res(i)
-    i.onerror = rej
+    i.onerror = () => rej(new Error(`Could not decode ${file.name}`))
     i.src = url
   })
   const c = document.createElement('canvas')
   c.width = img.naturalWidth
   c.height = img.naturalHeight
   c.getContext('2d')!.drawImage(img, 0, 0)
-  return (await canvasToBlob(c, 'image/png')).arrayBuffer()
+  return c
+}
+
+async function transcodeToPng(file: File): Promise<ArrayBuffer> {
+  return (await canvasToBlob(await fileToCanvas(file), 'image/png')).arrayBuffer()
 }
 
 export async function pdfToText(file: File, onProgress?: Progress): Promise<Output[]> {
@@ -272,6 +279,33 @@ export async function pdfToExcel(file: File, onProgress?: Progress): Promise<Out
   return [{ name: `${stripExt(file.name)}.xlsx`, blob: new Blob([out], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), note: 'Lines split on wide gaps into cells. Real table detection needs a server.' }]
 }
 
+
+/**
+ * Pages can carry a /Rotate entry. Everything the user sees (pdf.js previews, "bottom-right of the
+ * page") is in the rotated, visual frame, while pdf-lib draws in the unrotated user space. This maps a
+ * visual rectangle (top-left origin fractions) to unrotated draw params, including the counter-rotation
+ * the content needs so it appears upright.
+ */
+function visualRect(page: import('pdf-lib').PDFPage, fx: number, fy: number, fw: number, fh: number) {
+  const rot = ((page.getRotation().angle % 360) + 360) % 360
+  const { width: W, height: H } = page.getSize()
+  const [VW, VH] = rot % 180 ? [H, W] : [W, H]
+  const left = fx * VW
+  const top = fy * VH
+  const vw = fw * VW
+  const vh = fh * VH
+  // the content's own bottom-left corner, in the visual frame
+  const bx = left
+  const by = top + vh
+  let x: number
+  let y: number
+  if (rot === 90) [x, y] = [by, bx]
+  else if (rot === 180) [x, y] = [W - bx, by]
+  else if (rot === 270) [x, y] = [W - by, H - bx]
+  else [x, y] = [bx, H - by]
+  return { x, y, width: vw, height: vh, rotate: degrees(rot), VW, VH }
+}
+
 // ---------- edit ----------
 export async function watermark(
   file: File,
@@ -282,17 +316,24 @@ export async function watermark(
   const colors = { grey: rgb(0.5, 0.5, 0.5), red: rgb(1, 0.23, 0.12), blue: rgb(0.04, 0.24, 1), black: rgb(0, 0, 0) }
   const text = opts.text || 'DRAFT'
   for (const page of doc.getPages()) {
-    const { width, height } = page.getSize()
     const tw = font.widthOfTextAtSize(text, opts.size)
-    const draw = (x: number, y: number) =>
-      page.drawText(text, { x, y, size: opts.size, font, color: colors[opts.color], opacity: opts.opacity, rotate: degrees(opts.rotation) })
+    const th = opts.size
+    const { VW, VH } = visualRect(page, 0, 0, 1, 1)
+    // (vx, vy) = top-left of the text box in the visual frame, in points
+    const draw = (vx: number, vy: number) => {
+      const r = visualRect(page, vx / VW, vy / VH, tw / VW, th / VH)
+      page.drawText(text, { x: r.x, y: r.y, size: opts.size, font, color: colors[opts.color], opacity: opts.opacity, rotate: degrees(r.rotate.angle + opts.rotation) })
+    }
     if (opts.position === 'tile') {
-      for (let y = 40; y < height; y += opts.size * 4) for (let x = -tw / 2; x < width; x += tw + 80) draw(x, y)
-    } else if (opts.position === 'top') draw((width - tw) / 2, height - opts.size - 24)
-    else if (opts.position === 'bottom') draw((width - tw) / 2, 24)
+      for (let y = 40; y < VH; y += opts.size * 4) for (let x = -tw / 2; x < VW; x += tw + 80) draw(x, y)
+    } else if (opts.position === 'top') draw((VW - tw) / 2, 24)
+    else if (opts.position === 'bottom') draw((VW - tw) / 2, VH - th - 24)
     else {
+      // rotate about the text's centre so it stays centred on the page
       const rad = (opts.rotation * Math.PI) / 180
-      draw(width / 2 - (tw / 2) * Math.cos(rad), height / 2 - (tw / 2) * Math.sin(rad))
+      const cx = VW / 2 - (tw / 2) * Math.cos(rad) + (th / 2) * Math.sin(rad)
+      const cy = VH / 2 + (tw / 2) * Math.sin(rad) + (th / 2) * Math.cos(rad)
+      draw(cx, cy - th)
     }
   }
   return [{ name: `${stripExt(file.name)}-watermarked.pdf`, blob: pdfBlob(await doc.save()) }]
@@ -305,11 +346,12 @@ export async function pageNumbers(file: File, opts: { position: 'bottom-center' 
   pages.forEach((page, i) => {
     const n = i + opts.start
     const label = opts.format === 'n' ? `${n}` : opts.format === 'page-n' ? `Page ${n}` : `${n} / ${pages.length + opts.start - 1}`
-    const { width, height } = page.getSize()
     const tw = font.widthOfTextAtSize(label, opts.size)
-    const x = opts.position.endsWith('center') ? (width - tw) / 2 : opts.position.endsWith('right') ? width - tw - 36 : 36
-    const y = opts.position.startsWith('top') ? height - 36 : 24
-    page.drawText(label, { x, y, size: opts.size, font, color: rgb(0.1, 0.1, 0.1) })
+    const { VW, VH } = visualRect(page, 0, 0, 1, 1)
+    const vx = opts.position.endsWith('center') ? (VW - tw) / 2 : opts.position.endsWith('right') ? VW - tw - 36 : 36
+    const vy = opts.position.startsWith('top') ? 36 - opts.size : VH - 24 - opts.size
+    const r = visualRect(page, vx / VW, vy / VH, tw / VW, opts.size / VH)
+    page.drawText(label, { x: r.x, y: r.y, size: opts.size, font, color: rgb(0.1, 0.1, 0.1), rotate: r.rotate })
   })
   return [{ name: `${stripExt(file.name)}-numbered.pdf`, blob: pdfBlob(await doc.save()) }]
 }
@@ -319,10 +361,9 @@ export async function signPdf(file: File, sig: { png: ArrayBuffer; page: number;
   for (const s of sig) {
     const img = await doc.embedPng(s.png)
     const page = doc.getPage(s.page)
-    const { height } = page.getSize()
-    // incoming coords are top-left based fractions of the page; pdf-lib is bottom-left points
-    const pw = page.getWidth()
-    page.drawImage(img, { x: s.x * pw, y: height - (s.y + s.h) * height, width: s.w * pw, height: s.h * height })
+    // incoming coords are top-left fractions of the page as displayed (rotation applied)
+    const r = visualRect(page, s.x, s.y, s.w, s.h)
+    page.drawImage(img, { x: r.x, y: r.y, width: r.width, height: r.height, rotate: r.rotate })
   }
   return [{ name: `${stripExt(file.name)}-signed.pdf`, blob: pdfBlob(await doc.save()) }]
 }
@@ -359,18 +400,27 @@ export async function removeMetadata(file: File): Promise<Output[]> {
 export async function flatten(file: File): Promise<Output[]> {
   const doc = await open(file)
   let fields = 0
+  let form: ReturnType<typeof doc.getForm> | null = null
   try {
-    const form = doc.getForm()
+    form = doc.getForm()
     fields = form.getFields().length
-    form.flatten()
   } catch {
-    /* no AcroForm */
+    form = null // no AcroForm
+  }
+  if (form && fields) {
+    try {
+      form.flatten()
+    } catch (e) {
+      throw new Error(`Found ${fields} field(s) but could not flatten them: ${(e as Error).message}`)
+    }
   }
   return [{ name: `${stripExt(file.name)}-flat.pdf`, blob: pdfBlob(await doc.save()), note: fields ? `Flattened ${fields} form field(s).` : 'No form fields found; file re-saved.' }]
 }
 
 // ---------- OCR ----------
-export async function ocr(file: File, lang: string, onProgress?: Progress): Promise<{ text: string; outputs: Output[] }> {
+const OCR_PAGE_CAP = 30
+
+export async function ocr(file: File, lang: string, onProgress?: Progress): Promise<{ text: string; outputs: Output[]; note?: string }> {
   const Tesseract = await import('tesseract.js')
   const worker = await Tesseract.createWorker(lang, 1, {
     logger: (m: { status: string; progress: number }) => {
@@ -378,51 +428,47 @@ export async function ocr(file: File, lang: string, onProgress?: Progress): Prom
       else onProgress?.(0, m.status)
     },
   })
-  const images: HTMLCanvasElement[] = []
   const isPdf = /pdf$/i.test(file.type) || /\.pdf$/i.test(file.name)
-  if (isPdf) {
-    const pdf = await loadPdf(await readAsArrayBuffer(file))
-    for (let i = 1; i <= Math.min(pdf.numPages, 30); i++) images.push(await renderPageToCanvas(pdf, i, 2))
-  } else {
-    const url = await readAsDataURL(file)
-    const img = await new Promise<HTMLImageElement>((res, rej) => {
-      const i = new Image()
-      i.onload = () => res(i)
-      i.onerror = rej
-      i.src = url
-    })
-    const c = document.createElement('canvas')
-    c.width = img.naturalWidth
-    c.height = img.naturalHeight
-    c.getContext('2d')!.drawImage(img, 0, 0)
-    images.push(c)
-  }
+  const pdf = isPdf ? await loadPdf(await readAsArrayBuffer(file)) : null
+  const total = pdf ? Math.min(pdf.numPages, OCR_PAGE_CAP) : 1
+  const note = pdf && pdf.numPages > OCR_PAGE_CAP ? `Only the first ${OCR_PAGE_CAP} of ${pdf.numPages} pages were processed in the browser.` : undefined
+
   const texts: string[] = []
   const searchable = await PDFDocument.create()
   const font = await searchable.embedFont(StandardFonts.Helvetica)
-  for (let i = 0; i < images.length; i++) {
-    onProgress?.(0, `Page ${i + 1} of ${images.length}`)
-    const { data } = await worker.recognize(images[i])
-    texts.push(`--- Page ${i + 1} ---\n${data.text.trim()}`)
-    // searchable PDF: page image + invisible text layer
-    const jpg = await canvasToBlob(images[i], 'image/jpeg', 0.85)
-    const img = await searchable.embedJpg(await jpg.arrayBuffer())
-    const page = searchable.addPage([images[i].width / 2, images[i].height / 2])
-    page.drawImage(img, { x: 0, y: 0, width: page.getWidth(), height: page.getHeight() })
-    const lines = (data as unknown as { lines?: { text: string; bbox: { x0: number; y0: number; x1: number; y1: number } }[] }).lines || []
-    for (const line of lines) {
-      const h = (line.bbox.y1 - line.bbox.y0) / 2
-      if (!line.text.trim() || h < 2) continue
-      page.drawText(line.text.trim(), { x: line.bbox.x0 / 2, y: page.getHeight() - line.bbox.y1 / 2, size: Math.max(4, h * 0.8), font, opacity: 0 })
+  try {
+    // one page at a time: render → recognize → embed → drop the canvas, so memory stays flat
+    for (let i = 0; i < total; i++) {
+      onProgress?.(0, `Page ${i + 1} of ${total}`)
+      const canvas = pdf ? await renderPageToCanvas(pdf, i + 1, 2) : await fileToCanvas(file)
+      const { data } = await worker.recognize(canvas, {}, { text: true, blocks: true })
+      texts.push(`--- Page ${i + 1} ---\n${data.text.trim()}`)
+      const jpg = await canvasToBlob(canvas, 'image/jpeg', 0.85)
+      const img = await searchable.embedJpg(await jpg.arrayBuffer())
+      const page = searchable.addPage([canvas.width / 2, canvas.height / 2])
+      page.drawImage(img, { x: 0, y: 0, width: page.getWidth(), height: page.getHeight() })
+      // invisible text layer so the PDF is searchable/selectable
+      const lines = (data.blocks || []).flatMap((b) => b.paragraphs.flatMap((p) => p.lines))
+      for (const line of lines) {
+        const h = (line.bbox.y1 - line.bbox.y0) / 2
+        const t = line.text.trim()
+        if (!t || h < 2) continue
+        const size = Math.max(4, h * 0.8)
+        page.drawText(t.replace(/[^\x20-\x7e\u00a0-\u00ff]/g, '?'), { x: line.bbox.x0 / 2, y: page.getHeight() - line.bbox.y1 / 2, size, font, opacity: 0 })
+      }
+      canvas.width = 0
+      canvas.height = 0
     }
+  } finally {
+    await worker.terminate()
   }
-  await worker.terminate()
   const text = texts.join('\n\n')
   return {
     text,
+    note,
     outputs: [
       { name: `${stripExt(file.name)}-ocr.txt`, blob: new Blob([text], { type: 'text/plain' }) },
-      { name: `${stripExt(file.name)}-searchable.pdf`, blob: pdfBlob(await searchable.save()) },
+      { name: `${stripExt(file.name)}-searchable.pdf`, blob: pdfBlob(await searchable.save()), note },
     ],
   }
 }
@@ -438,7 +484,7 @@ export async function qrSvg(text: string, opts: { dark: string; light: string; m
   return QRCode.toString(text, { type: 'svg', margin: opts.margin, color: { dark: opts.dark, light: opts.light } })
 }
 export async function qrPdf(text: string, label: string): Promise<Blob> {
-  const QRCode = await import('qrcode')
+  const [QRCode, { jsPDF }] = await Promise.all([import('qrcode'), import('jspdf')])
   const url = await QRCode.toDataURL(text, { width: 800, margin: 2 })
   const pdf = new jsPDF({ unit: 'mm', format: 'a4' })
   pdf.addImage(url, 'PNG', 55, 60, 100, 100)

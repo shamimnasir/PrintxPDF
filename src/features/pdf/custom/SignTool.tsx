@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/Toast'
 import { downloadBlob } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
-import { store, type Signature } from '../../../lib/store'
-import { signPdf } from '../engines'
+import { store, uid, type Signature } from '../../../lib/store'
 
 type Placed = { id: string; page: number; x: number; y: number; w: number; h: number; dataUrl: string }
 
@@ -129,9 +128,11 @@ export default function SignTool() {
     }
   }, [pdf, pageNo])
 
+  // encoding a 900×220 PNG on every keystroke is wasteful; memoise per (text, font)
+  const typedPreview = useMemo(() => (typed.trim() ? typedSignature(typed.trim(), font) : null), [typed, font])
   const currentSig = () => {
     if (tab === 'draw') return pad.empty ? null : pad.toDataUrl()
-    if (tab === 'type') return typed.trim() ? typedSignature(typed.trim(), font) : null
+    if (tab === 'type') return typedPreview
     return active
   }
 
@@ -144,7 +145,7 @@ export default function SignTool() {
     const h = w * (r.width / r.height) * 0.35
     const x = Math.min(1 - w, Math.max(0, (e.clientX - r.left) / r.width - w / 2))
     const y = Math.min(1 - h, Math.max(0, (e.clientY - r.top) / r.height - h / 2))
-    setPlaced((p) => [...p, { id: Math.random().toString(36).slice(2), page: pageNo - 1, x, y, w, h, dataUrl: sig }])
+    setPlaced((p) => [...p, { id: uid(), page: pageNo - 1, x, y, w, h, dataUrl: sig }])
   }
 
   const onPointerDown = (e: React.PointerEvent, id: string, resize = false) => {
@@ -180,6 +181,7 @@ export default function SignTool() {
       const sigs = await Promise.all(
         placed.map(async (p) => ({ png: await (await fetch(p.dataUrl)).arrayBuffer(), page: p.page, x: p.x, y: p.y, w: p.w, h: p.h })),
       )
+      const { signPdf } = await import('../engines')
       const [out] = await signPdf(file, sigs)
       downloadBlob(out.blob, out.name)
       toast('Signed PDF downloaded')
@@ -194,9 +196,9 @@ export default function SignTool() {
     const sig = currentSig()
     if (!sig) return toast('Nothing to save yet', 'error')
     if (!store.getUser()) return toast('Sign in to keep signatures across visits', 'error')
-    store.addSignature(typed || `Signature ${saved.length + 1}`, sig)
+    const ok = store.addSignature(typed || `Signature ${saved.length + 1}`, sig)
     setSaved(store.getSignatures())
-    toast('Signature saved to your account')
+    toast(ok ? 'Signature saved to your account' : 'Could not save: browser storage is full', ok ? 'ok' : 'error')
   }
 
   return (
@@ -271,9 +273,9 @@ export default function SignTool() {
               <option value="Georgia, serif">Serif</option>
               <option value="'Archivo Black', sans-serif">Block</option>
             </select>
-            {typed && (
+            {typedPreview && (
               <div style={{ border: '2px solid var(--line)', background: '#fff' }}>
-                <img src={typedSignature(typed, font)} alt="preview" />
+                <img src={typedPreview} alt="preview" />
               </div>
             )}
           </>
@@ -313,7 +315,7 @@ export default function SignTool() {
           disabled={!file}
           onClick={() => {
             const d = typedSignature(new Date().toLocaleDateString(), 'Helvetica, Arial')
-            setPlaced((p) => [...p, { id: Math.random().toString(36).slice(2), page: pageNo - 1, x: 0.6, y: 0.85, w: 0.25, h: 0.045, dataUrl: d }])
+            setPlaced((p) => [...p, { id: uid(), page: pageNo - 1, x: 0.6, y: 0.85, w: 0.25, h: 0.045, dataUrl: d }])
           }}
         >
           Insert today's date

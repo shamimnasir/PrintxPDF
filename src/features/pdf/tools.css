@@ -23,8 +23,12 @@
   gap: 1.5rem;
   align-items: start;
 }
+.account-grid {
+  grid-template-columns: 240px 1fr;
+}
 @media (max-width: 900px) {
-  .tool-grid {
+  .tool-grid,
+  .account-grid {
     grid-template-columns: 1fr;
   }
 }

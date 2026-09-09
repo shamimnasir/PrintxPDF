@@ -24,6 +24,7 @@ export default function QrTool() {
   const [size, setSize] = useState(512)
   const [margin, setMargin] = useState(2)
   const [preview, setPreview] = useState('')
+  const [tooLong, setTooLong] = useState(false)
 
   const set = (k: string, v: string) => setF((o) => ({ ...o, [k]: v }))
 
@@ -47,11 +48,23 @@ export default function QrTool() {
   })()
 
   useEffect(() => {
-    if (!payload || payload === 'https://') return setPreview('')
+    if (!payload || payload === 'https://') {
+      setPreview('')
+      return
+    }
     let alive = true
-    qrPng(payload, { size: 320, dark, light, margin }).then((b) => alive && setPreview(URL.createObjectURL(b)))
+    let url = ''
+    qrPng(payload, { size: 320, dark, light, margin })
+      .then((b) => {
+        if (!alive) return
+        url = URL.createObjectURL(b)
+        setPreview(url)
+        setTooLong(false)
+      })
+      .catch(() => alive && setTooLong(true)) // payload exceeds QR capacity (~2.9k chars)
     return () => {
       alive = false
+      if (url) URL.revokeObjectURL(url)
     }
   }, [payload, dark, light, margin])
 
@@ -143,7 +156,9 @@ export default function QrTool() {
       </div>
 
       <div className="stack">
-        <div className="qr-preview">{preview ? <img src={preview} alt="QR code preview" /> : <span className="muted">Preview appears here</span>}</div>
+        <div className="qr-preview">
+          {tooLong ? <span className="alarm" style={{ fontWeight: 700 }}>Too much content for one QR code. Shorten it.</span> : preview ? <img src={preview} alt="QR code preview" /> : <span className="muted">Preview appears here</span>}
+        </div>
         <button className="btn btn-acid btn-block" onClick={() => dl('png')}>
           Download PNG
         </button>
