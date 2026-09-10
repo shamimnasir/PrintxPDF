@@ -103,9 +103,16 @@ await step('cleaner: sample article and paste mode', async () => {
 
 await step('sign up creates a local account', async () => {
   await page.goto(`${BASE}/signup`)
+  // The button ships disabled and React enables it on mount, so wait for that edge before
+  // touching the form. Clicking as it flips lands on the pre-hydration element and does nothing.
+  await page.waitForFunction(
+    () => {
+      const b = [...document.querySelectorAll('button')].find((x) => /Create account/.test(x.textContent))
+      return !!b && !b.disabled
+    },
+    { timeout: 15000 },
+  )
   await page.getByPlaceholder('you@example.com').fill('audit@example.com')
-  // Click the real button rather than requestSubmit(): it stays disabled until the page has
-  // hydrated, so this waits for the handler to exist instead of racing it and posting natively.
   await page.getByRole('button', { name: 'Create account' }).click()
   await page.waitForURL(/\/account/, { timeout: 15000 })
   const header = await page.locator('.header-right').innerText()

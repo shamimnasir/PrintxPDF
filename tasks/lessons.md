@@ -102,3 +102,8 @@
   owners: long unbreakable tokens, a WordPress hook name and a `WIFI:` QR payload, in body copy.
   `overflow-wrap: break-word` on `body` is the right baseline, since it only splits a word that
   would not have fitted anyway.
+- Measure before blaming performance. Sign-up failed in the audit twice and looked like slow
+  hydration after a heavy cleaner session; measured, hydration was 150-650ms and *faster* warm
+  than cold. The real cause was clicking the button on the exact edge where React enables it, so
+  the click landed on the pre-hydration element and did nothing, reproducing about half the time.
+  Wait for the state change (`waitForFunction` on `!button.disabled`), not for a duration.
