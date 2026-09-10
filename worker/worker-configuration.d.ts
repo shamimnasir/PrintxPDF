@@ -7,10 +7,12 @@ interface __BaseEnv_Env {
 	RL_BILLING: RateLimit;
 	SITE_URL: "https://printxpdf.com";
 	SITE_ORIGINS: "https://printxpdf.com,https://www.printxpdf.com,https://printxpdf.vercel.app,http://localhost:5179";
-	PRICE_PRO: "price_REPLACE_ME";
-	PRICE_API: "price_REPLACE_ME";
+	PRICE_PRO: string;
+	PRICE_LIFETIME: string;
+	PRICE_API: string;
 	QUOTA_FREE: "5";
-	QUOTA_PRO: "300";
+	QUOTA_PRO: string;
+	QUOTA_LIFETIME: string;
 	QUOTA_API: "5000";
 	MAX_UPLOAD_BYTES: "104857600";
 	ENTITLEMENT_SECRET: string;
@@ -28,7 +30,7 @@ type StringifyValues<EnvType extends Record<string, unknown>> = {
 	[Binding in keyof EnvType]: EnvType[Binding] extends string ? EnvType[Binding] : string;
 };
 declare namespace NodeJS {
-	interface ProcessEnv extends StringifyValues<Pick<Cloudflare.Env, "SITE_URL" | "SITE_ORIGINS" | "PRICE_PRO" | "PRICE_API" | "QUOTA_FREE" | "QUOTA_PRO" | "QUOTA_API" | "MAX_UPLOAD_BYTES" | "ENTITLEMENT_SECRET">> {}
+	interface ProcessEnv extends StringifyValues<Pick<Cloudflare.Env, "SITE_URL" | "SITE_ORIGINS" | "PRICE_PRO" | "PRICE_API" | "PRICE_LIFETIME" | "QUOTA_FREE" | "QUOTA_PRO" | "QUOTA_LIFETIME" | "QUOTA_API" | "MAX_UPLOAD_BYTES" | "ENTITLEMENT_SECRET">> {}
 }
 
 // Begin runtime types

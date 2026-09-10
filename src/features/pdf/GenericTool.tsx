@@ -363,7 +363,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
             {errorHint?.upgrade && (
               <div style={{ marginTop: '0.75rem' }}>
                 <Link to="/pricing" className="btn btn-sm btn-acid">
-                  See Pro · $5/month
+                  See Pro · $3.99/month
                 </Link>
               </div>
             )}

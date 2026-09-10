@@ -85,14 +85,24 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
           </p>
           <h3 id="billing">Billing</h3>
           <p>
-            Pro ($5 per month) and API ($29 per month) are billed monthly by Stripe and renew automatically until cancelled.
-            Cancel any time from Account → Subscription; access continues to the end of the period you have paid for, and you
-            are not charged again. Prices exclude any VAT or sales tax Stripe is required to add for your location.
+            Pro ($3.99 per month) and API ($19.99 per month) are billed monthly by Stripe and renew automatically until
+            cancelled. Cancel any time from Account → Subscription; access continues to the end of the period you have paid
+            for, and you are not charged again. There is no trial, so nothing converts into a charge on its own, and there is
+            no cancellation or early termination fee. Prices exclude any VAT or sales tax Stripe is required to add for your
+            location.
+          </p>
+          <p>
+            <strong>Lifetime ($119, paid once).</strong> One payment, no renewal and nothing to cancel. It carries the Pro
+            allowance of 300 server conversions a month, and the browser tools that are free for everyone. "Lifetime" means
+            the working life of the service, not your own: if PrintxPDF ever shuts down we will say so at least 90 days
+            beforehand on this site and by email, and the browser tools will be released so they keep working without us. It
+            covers one person, and is not transferable.
           </p>
           <h3 id="refunds">Refunds</h3>
           <p>
-            If a plan is not what you expected, ask within 14 days of your first charge and we refund it in full. Later months
-            are not refunded, since you can cancel at any time. Contact {contact}.
+            If a monthly plan is not what you expected, ask within 14 days of your first charge and we refund it in full,
+            with no fee kept and no questions asked. Later months are not refunded, since you can cancel at any time and are
+            not charged again. Lifetime has a longer window: 30 days from purchase, refunded in full. Contact {contact}.
           </p>
           <h3>Fair use</h3>
           <p>

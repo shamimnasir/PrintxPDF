@@ -10,10 +10,13 @@
   "vars": {
     "SITE_URL": "https://printxpdf.com",
     "SITE_ORIGINS": "https://printxpdf.com,https://www.printxpdf.com,https://printxpdf.vercel.app,http://localhost:5179",
-    "PRICE_PRO": "price_1UDrt4CCxH1bzQKtZOK1oBFu",
-    "PRICE_API": "price_1UDrvfCCxH1bzQKtspPBVy0f",
+    "PRICE_PRO": "price_1UEDNNCCxH1bzQKtC9bNria5",
+    "PRICE_LIFETIME": "price_1UEDPBCCxH1bzQKt1qii8r36",
+    "PRICE_API": "price_1UEDLpCCxH1bzQKtX2voS2Lj",
     "QUOTA_FREE": "5",
     "QUOTA_PRO": "300",
+    // lifetime buys a one-time payment, so this bound is what keeps it affordable to serve
+    "QUOTA_LIFETIME": "300",
     "QUOTA_API": "5000",
     "MAX_UPLOAD_BYTES": "104857600"
   },

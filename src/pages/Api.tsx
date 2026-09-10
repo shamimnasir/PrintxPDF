@@ -94,8 +94,9 @@ export default function Api() {
             </thead>
             <tbody>
               <tr><td>Free</td><td>5 per IP address</td><td>none</td></tr>
-              <tr><td>Pro · $5</td><td>300</td><td>yes</td></tr>
-              <tr><td>API · $29</td><td>5,000</td><td>yes, valid for one year</td></tr>
+              <tr><td>Pro · $3.99</td><td>300</td><td>yes</td></tr>
+              <tr><td>API · $19.99</td><td>5,000</td><td>yes, valid for one year</td></tr>
+              <tr><td>Lifetime · $119 once</td><td>300</td><td>yes</td></tr>
             </tbody>
           </table>
           <h4 style={{ marginTop: '1.5rem' }}>Your access key</h4>

@@ -22,7 +22,8 @@ export function quotaKey(subject: string): string {
 }
 
 export function quotaLimit(env: Env, plan: EffectivePlan): number {
-  const raw = plan === 'api' ? env.QUOTA_API : plan === 'pro' ? env.QUOTA_PRO : env.QUOTA_FREE
+  const raw =
+    plan === 'api' ? env.QUOTA_API : plan === 'lifetime' ? env.QUOTA_LIFETIME : plan === 'pro' ? env.QUOTA_PRO : env.QUOTA_FREE
   const n = Number(raw)
   return Number.isFinite(n) && n >= 0 ? Math.floor(n) : 0
 }

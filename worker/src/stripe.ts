@@ -52,6 +52,8 @@ export interface StripeCheckoutSession {
   customer_email: string | null
   customer_details: { email: string | null } | null
   subscription: string | StripeSubscription | null
+  payment_status?: string
+  payment_intent?: string | { id: string; status: string } | null
   metadata?: Record<string, string>
 }
 export interface StripeList<T> {

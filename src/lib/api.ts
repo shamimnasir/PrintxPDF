@@ -6,10 +6,10 @@ import type { Output } from '../components/ui/ResultList'
 
 export const API_BASE = ((import.meta.env.VITE_API_BASE as string | undefined) || 'https://api.printxpdf.com').replace(/\/$/, '')
 
-export type Plan = 'free' | 'pro' | 'api'
+export type Plan = 'free' | 'pro' | 'api' | 'lifetime'
 export type PaidPlan = Exclude<Plan, 'free'>
 /** What the Worker hands back after a paid checkout. The token is the user's access key. */
-export type Entitlement = { token: string; plan: PaidPlan; email: string; customerId: string; currentPeriodEnd: number }
+export type Entitlement = { token: string; plan: PaidPlan; email: string; customerId: string; currentPeriodEnd: number | null }
 export type Me = {
   plan: Plan
   active: boolean

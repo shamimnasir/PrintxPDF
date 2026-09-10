@@ -30,7 +30,7 @@ export default function Pricing() {
   const [busy, setBusy] = useState<PaidPlan | null>(null)
   useSeo({
     title: 'Pricing | Free PDF Tools, Pro and API Plans',
-    description: 'Every browser PDF tool is free forever. Pro ($5 a month) adds 300 server conversions a month for PowerPoint and ebooks. API ($29 a month) adds 5,000.',
+    description: 'Every browser PDF tool is free forever. Pro is $3.99 a month for 300 server conversions, API $19.99 for 5,000, or pay $119 once for lifetime.',
     path: '/pricing',
     keywords: ['pdf tool pricing', 'free pdf tools', 'pptx to pdf api', 'epub to pdf api'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Pricing', path: '/pricing' }]), faqSchema(FAQS)],
@@ -68,7 +68,7 @@ export default function Pricing() {
           to run on our server, and the plan for developers.
         </p>
       </div>
-      <div className="grid grid-3">
+      <div className="grid grid-4">
         <div className="card">
           <h3>Free</h3>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: '3rem' }}>$0</div>
@@ -93,7 +93,7 @@ export default function Pricing() {
           <span className="badge badge-acid">Most popular</span>
           <h3 style={{ color: 'var(--acid-dim)', marginTop: '0.5rem' }}>Pro</h3>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: '3rem' }}>
-            $5<span style={{ fontSize: '1rem' }}>/mo</span>
+            $3.99<span style={{ fontSize: '1rem' }}>/mo</span>
           </div>
           <ul style={{ fontWeight: 600, paddingLeft: '1.2rem', minHeight: 190 }}>
             <li>Everything in Free</li>
@@ -102,12 +102,12 @@ export default function Pricing() {
             <li>Scan to searchable text, up to 200 pages per file</li>
             <li>Priority email support</li>
           </ul>
-          {cta('pro', 'Go Pro · $5/month', 'btn-acid')}
+          {cta('pro', 'Go Pro · $3.99/month', 'btn-acid')}
         </div>
         <div className="card">
           <h3>API</h3>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: '3rem' }}>
-            $29<span style={{ fontSize: '1rem' }}>/mo</span>
+            $19.99<span style={{ fontSize: '1rem' }}>/mo</span>
           </div>
           <ul style={{ fontWeight: 600, paddingLeft: '1.2rem', minHeight: 190 }}>
             <li>Everything in Pro</li>
@@ -118,13 +118,38 @@ export default function Pricing() {
               <Link to="/api">Read the developer guide</Link>
             </li>
           </ul>
-          {cta('api', 'Get API access · $29/month', '')}
+          {cta('api', 'Get API access · $19.99/month', '')}
+        </div>
+        <div className="card">
+          <span className="badge">Pay once</span>
+          <h3 style={{ marginTop: '0.5rem' }}>Lifetime</h3>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: '3rem' }}>
+            $119<span style={{ fontSize: '1rem' }}> once</span>
+          </div>
+          <ul style={{ fontWeight: 600, paddingLeft: '1.2rem', minHeight: 190 }}>
+            <li>Everything in Pro, for as long as PrintxPDF runs</li>
+            <li>300 server conversions a month, every month</li>
+            <li>One payment. No renewal, nothing to cancel</li>
+            <li>Pays for itself in about two and a half years</li>
+            <li>Full refund within 30 days</li>
+          </ul>
+          {cta('lifetime', 'Buy once · $119', '')}
         </div>
       </div>
-      <p className="muted center" style={{ marginTop: '2rem', fontSize: '0.85rem', maxWidth: 720, marginLeft: 'auto', marginRight: 'auto' }}>
-        Payments are handled by Stripe, our payment provider; your card details never touch this site. Plans renew monthly and can be cancelled any time
-        from your account. Refund on request within 14 days of your first charge, see the <Link to="/terms#refunds">terms</Link>.
-      </p>
+      <div className="card card-flat" style={{ marginTop: '2.5rem', maxWidth: 820, marginLeft: 'auto', marginRight: 'auto' }}>
+        <span className="label">How we bill</span>
+        <ul style={{ fontWeight: 600, lineHeight: 1.9, margin: '0.6rem 0 0', paddingLeft: '1.2rem' }}>
+          <li>No card and no account to use the free tools. Ever.</li>
+          <li>No trial, so there is nothing that quietly turns into a charge.</li>
+          <li>Cancel yourself in one click. No email to send, nobody talking you out of it.</li>
+          <li>Full refund inside 14 days of a first charge, 30 days on Lifetime. We keep no fee.</li>
+          <li>Your renewal date and the exact amount sit on your account page before it charges.</li>
+        </ul>
+        <p className="muted" style={{ margin: '0.9rem 0 0', fontSize: '0.85rem' }}>
+          Payments run through Stripe, our payment provider, so your card details never touch this site. Monthly plans renew
+          monthly and can be stopped any time. See the <Link to="/terms#refunds">terms</Link>.
+        </p>
+      </div>
 
       <h2 style={{ marginTop: '4rem' }}>Questions</h2>
       <div className="grid grid-2">

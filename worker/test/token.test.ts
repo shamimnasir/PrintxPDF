@@ -54,3 +54,25 @@ describe('token', () => {
     }
   })
 })
+
+describe('lifetime entitlement', () => {
+  it('accepts lifetime as a plan and round-trips the session claim', async () => {
+    const token = await mint(SECRET, { sub: 'cus_abc', email: 'a@b.c', plan: 'lifetime', cs: 'cs_test_123' }, 3600)
+    const claims = await verify(SECRET, token)
+    expect(claims?.plan).toBe('lifetime')
+    expect(claims?.cs).toBe('cs_test_123')
+  })
+  it('leaves the session claim off a subscription token', async () => {
+    const token = await mint(SECRET, { sub: 'cus_abc', email: 'a@b.c', plan: 'pro' }, 3600)
+    const claims = await verify(SECRET, token)
+    expect(claims?.cs).toBeUndefined()
+  })
+  it('a tampered lifetime claim fails the signature', async () => {
+    const token = await mint(SECRET, { sub: 'cus_abc', email: 'a@b.c', plan: 'pro' }, 3600)
+    const [body, sig] = token.slice(4).split('.')
+    const payload = JSON.parse(Buffer.from(body, 'base64url').toString())
+    payload.plan = 'lifetime'
+    const forged = 'pxp_' + Buffer.from(JSON.stringify(payload)).toString('base64url') + '.' + sig
+    expect(await verify(SECRET, forged)).toBeNull()
+  })
+})

@@ -3,13 +3,15 @@
  * Pure Web Crypto, no env access, so it is unit-testable under Node. Never log tokens.
  */
 
-export type Plan = 'pro' | 'api'
+export type Plan = 'pro' | 'api' | 'lifetime'
 
 export interface Claims {
   v: 1
   sub: string
   email: string
   plan: Plan
+  /** Lifetime only: the paid Checkout Session, re-verified against Stripe on use. */
+  cs?: string
   iat: number
   exp: number
 }
@@ -21,7 +23,7 @@ const dec = new TextDecoder()
 export const now = (): number => Math.floor(Date.now() / 1000)
 
 export function isPlan(v: unknown): v is Plan {
-  return v === 'pro' || v === 'api'
+  return v === 'pro' || v === 'api' || v === 'lifetime'
 }
 
 function b64url(bytes: Uint8Array): string {
@@ -45,11 +47,12 @@ async function hmacKey(secret: string, usage: 'sign' | 'verify'): Promise<Crypto
 
 export async function mint(
   secret: string,
-  claims: { sub: string; email: string; plan: Plan },
+  claims: { sub: string; email: string; plan: Plan; cs?: string },
   ttlSec: number,
 ): Promise<string> {
   const iat = now()
   const payload: Claims = { v: 1, sub: claims.sub, email: claims.email, plan: claims.plan, iat, exp: iat + ttlSec }
+  if (claims.cs) payload.cs = claims.cs
   const body = b64url(enc.encode(JSON.stringify(payload)))
   const sig = await crypto.subtle.sign('HMAC', await hmacKey(secret, 'sign'), enc.encode(body))
   return `${PREFIX}${body}.${b64url(new Uint8Array(sig))}`

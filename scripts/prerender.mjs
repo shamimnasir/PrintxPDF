@@ -404,7 +404,7 @@ async function main() {
     {
       route: '/pricing',
       title: 'Pricing | Free PDF Tools, Pro and API Plans',
-      description: 'Every browser PDF tool is free forever. Pro ($5 a month) adds 300 server conversions a month for PowerPoint and ebooks. API ($29 a month) adds 5,000.',
+      description: 'Every browser PDF tool is free forever. Pro is $3.99 a month for 300 server conversions, API $19.99 for 5,000, or pay $119 once for lifetime.',
       h1: 'Free is free.',
     },
     {
