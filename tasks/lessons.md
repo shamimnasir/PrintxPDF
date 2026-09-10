@@ -64,3 +64,35 @@
 - `scripts/audit-site.mjs` is the cheap one to run every time (no browser, seconds): titles,
   descriptions, duplicates, canonicals, h1, alt text, JSON-LD, internal links, sitemap
   coverage, referenced assets. `npm run audit:site` before any deploy.
+
+## 2026-09-11: browser audit pass
+- A CSS rule with one extra element selector can silently outrank a component's own colour.
+  `.prose a { color: var(--link) }` is specificity (0,1,1) and beat `.btn { color: var(--btn-fg) }`
+  at (0,1,0), so every in-article call to action rendered as accent-on-accent: a solid blue pill
+  with no readable label, 188 of them across the blog. When a design token is shared between a
+  text colour and a button background (`--link` and `--btn-bg` are both `--acid` here), any
+  descendant link rule is one specificity point away from erasing a button. Exclude buttons
+  explicitly: `.prose a:not(.btn)`.
+- `grid-template-columns: 1fr` floors at min-content, not zero. The desktop rule already used
+  `minmax(0, 1fr)`; the mobile override forgot it, so a table with `min-width: 32rem` stretched
+  the article column to 710px inside a 390px phone and 72 pages scrolled sideways. Any grid
+  column holding arbitrary content wants `minmax(0, …)`, always.
+- A utility class is only as global as the stylesheet that defines it. `.table-scroll` lived in
+  `blog.css`, which only blog routes import, so `/api` and `/extension-privacy` used the class
+  and got no styles at all. Shared utilities belong in `index.css`.
+- A failing test is not the same as a failing product. Three of four audit failures were the
+  harness racing hydration: `fill()` then `form.requestSubmit()` fires before React attaches
+  `onSubmit`, the browser posts the form natively, and the assertion times out. Click the real
+  button instead, which auto-waits for enabled.
+- But that race is real for visitors too, not only for the harness. A React-only form that is
+  visible before hydration silently does nothing when submitted early. Where the handler's job
+  is just a navigation, give the form a real `action`/`method`/`name` so it works as a plain GET
+  form (the home and cleaner URL boxes now do). Where it cannot work without JS, disable the
+  button until `useHydrated()` is true rather than letting a native post throw the input away.
+- Verify a credential's *shape*, not just its presence. `STRIPE_SECRET_KEY` held a Cloudflare API
+  token (`cfut_…`); the worker happily forwarded it to Stripe, got a 401, and reported
+  "Payment provider error, try again shortly" for days. `requireStripe` now rejects anything that
+  is not `sk_`/`rk_` with its own error code and logs the prefix only.
+- An audit that flags what is merely not loaded yet trains you to ignore it. Lazy images below
+  the fold are `complete === false`, which is not "broken"; only an actual error event or a
+  completed load with zero pixels counts.

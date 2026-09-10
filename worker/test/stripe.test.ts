@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { formEncode, stripeUrl } from '../src/stripe'
+import { formEncode, requireStripe, stripeUrl } from '../src/stripe'
 
 describe('formEncode', () => {
   it('serialises nested params the way Stripe expects', () => {
@@ -43,5 +43,36 @@ describe('stripeUrl', () => {
   it('appends the query only for GET', () => {
     expect(stripeUrl('GET', '/v1/subscriptions', 'customer=cus_1&limit=10')).toBe('https://api.stripe.com/v1/subscriptions?customer=cus_1&limit=10')
     expect(stripeUrl('POST', '/v1/checkout/sessions', 'mode=subscription')).toBe('https://api.stripe.com/v1/checkout/sessions')
+  })
+})
+
+describe('requireStripe', () => {
+  const env = (STRIPE_SECRET_KEY?: string) => ({ STRIPE_SECRET_KEY }) as unknown as Env
+
+  it('accepts the four real key shapes', () => {
+    for (const k of ['sk_test_abc', 'sk_live_abc', 'rk_test_abc', 'rk_live_abc']) {
+      expect(requireStripe(env(k))).toBe(k)
+    }
+  })
+
+  it('reports a missing secret separately from a wrong one', () => {
+    expect(() => requireStripe(env())).toThrow(/not configured/i)
+    expect(() => requireStripe(env(''))).toThrow(/not configured/i)
+  })
+
+  it('rejects a credential pasted from another dashboard rather than sending it to Stripe', () => {
+    // a Cloudflare user API token, which is what actually landed in this secret once
+    expect(() => requireStripe(env('cfut_d53000000000000000000000000037cc'))).toThrow(/misconfigured/i)
+    expect(() => requireStripe(env('pk_live_abc'))).toThrow(/misconfigured/i)
+    expect(() => requireStripe(env('whsec_abc'))).toThrow(/misconfigured/i)
+  })
+
+  it('never puts the key in the error it throws', () => {
+    const secret = 'cfut_d53supersecretvalue37cc'
+    try {
+      requireStripe(env(secret))
+    } catch (e) {
+      expect(String((e as Error).message)).not.toContain(secret)
+    }
   })
 })

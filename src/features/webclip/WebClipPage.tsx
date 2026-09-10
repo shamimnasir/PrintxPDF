@@ -163,11 +163,14 @@ export default function WebClipPage() {
       </div>
 
       <div style={{ maxWidth: 820, marginTop: '1.25rem' }}>
+        {/* the form is a working GET form as well as a React one: submitting before hydration
+            still reaches /print?url=… rather than doing nothing */}
         {tab === 'url' && (
-          <form className="clip-input" onSubmit={submitUrl}>
+          <form className="clip-input" action="/print" method="get" onSubmit={submitUrl}>
             <input
               ref={inputRef}
               type="text"
+              name="url"
               inputMode="url"
               placeholder="https://example.com/some-long-article"
               value={url}

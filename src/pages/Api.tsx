@@ -63,42 +63,46 @@ export default function Api() {
             Without a key you get 5 free conversions a month per internet connection (IP address). Each reply carries <code className="inline">x-pxp-usage: used/limit</code> and a
             <code className="inline">content-disposition</code> file name.
           </p>
-          <table className="table" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
-            <thead>
-              <tr>
-                <th>Endpoint</th>
-                <th>Accepts</th>
-                <th>Returns</th>
-              </tr>
-            </thead>
-            <tbody>
-              {ENDPOINTS.map(([e, a, r]) => (
-                <tr key={e}>
-                  <td className="mono">{e}</td>
-                  <td>{a}</td>
-                  <td>{r}</td>
+          <div className="table-scroll" tabIndex={0} role="region" aria-label="Endpoints">
+            <table className="table" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
+              <thead>
+                <tr>
+                  <th>Endpoint</th>
+                  <th>Accepts</th>
+                  <th>Returns</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {ENDPOINTS.map(([e, a, r]) => (
+                  <tr key={e}>
+                    <td className="mono">{e}</td>
+                    <td>{a}</td>
+                    <td>{r}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="card">
           <h3>Plans and limits</h3>
-          <table className="table" style={{ fontSize: '0.85rem' }}>
-            <thead>
-              <tr>
-                <th>Plan</th>
-                <th>Conversions / month</th>
-                <th>Key</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Free</td><td>5 per IP address</td><td>none</td></tr>
-              <tr><td>Pro · $3.99</td><td>300</td><td>yes</td></tr>
-              <tr><td>API · $19.99</td><td>5,000</td><td>yes, valid for one year</td></tr>
-              <tr><td>Lifetime · $119 once</td><td>300</td><td>yes</td></tr>
-            </tbody>
-          </table>
+          <div className="table-scroll" tabIndex={0} role="region" aria-label="Plans and limits">
+            <table className="table" style={{ fontSize: '0.85rem' }}>
+              <thead>
+                <tr>
+                  <th>Plan</th>
+                  <th>Conversions / month</th>
+                  <th>Key</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Free</td><td>5 per IP address</td><td>none</td></tr>
+                <tr><td>Pro · $3.99</td><td>300</td><td>yes</td></tr>
+                <tr><td>API · $19.99</td><td>5,000</td><td>yes, valid for one year</td></tr>
+                <tr><td>Lifetime · $119 once</td><td>300</td><td>yes</td></tr>
+              </tbody>
+            </table>
+          </div>
           <h4 style={{ marginTop: '1.5rem' }}>Your access key</h4>
           {key ? (
             <>
@@ -119,16 +123,18 @@ export default function Api() {
           <p className="muted" style={{ fontSize: '0.8rem' }}>
             When something fails you get a short JSON reply like <code className="inline">{'{ "error", "code" }'}</code>:
           </p>
-          <table className="table" style={{ fontSize: '0.8rem' }}>
-            <tbody>
-              {ERRORS.map(([c, d]) => (
-                <tr key={c}>
-                  <td className="mono">{c}</td>
-                  <td>{d}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="table-scroll" tabIndex={0} role="region" aria-label="Error codes">
+            <table className="table" style={{ fontSize: '0.8rem' }}>
+              <tbody>
+                {ERRORS.map(([c, d]) => (
+                  <tr key={c}>
+                    <td className="mono">{c}</td>
+                    <td>{d}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 

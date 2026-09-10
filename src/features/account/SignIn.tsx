@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { store } from '../../lib/store'
+import { useHydrated } from '../../components/ClientOnly'
 import { useToast } from '../../components/ui/Toast'
 import { useSeo } from '../../lib/seo'
 
@@ -9,6 +10,9 @@ export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
   const { toast } = useToast()
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
+  // The account is created in this browser, so there is nothing a plain form post could do.
+  // Until React owns the form, submitting would reload the page and throw the typed email away.
+  const hydrated = useHydrated()
   useSeo({ title: mode === 'up' ? 'Sign up, PrintxPDF' : 'Log in, PrintxPDF', description: 'A simple account saved in this browser only. It keeps your saved documents, signatures, settings and your access key together. No password needed.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
 
   const submit = (e: FormEvent) => {
@@ -35,7 +39,7 @@ export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
           <label className="label">Email</label>
           <input className="input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" required />
         </div>
-        <button className="btn btn-acid btn-lg btn-block" type="submit">
+        <button className="btn btn-acid btn-lg btn-block" type={hydrated ? 'submit' : 'button'} disabled={!hydrated}>
           {mode === 'up' ? 'Create account' : 'Log in'}
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.85rem' }}>

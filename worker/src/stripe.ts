@@ -68,10 +68,24 @@ export function hasStripe(env: Env): boolean {
   return typeof env.STRIPE_SECRET_KEY === 'string' && env.STRIPE_SECRET_KEY.length > 0
 }
 
-/** 503 `billing_not_configured` until the STRIPE_SECRET_KEY secret exists. */
+/** Every Stripe key is sk_ (secret) or rk_ (restricted), then test_ or live_. */
+const KEY_SHAPE = /^(?:sk|rk)_(?:test|live)_/
+
+/**
+ * 503 `billing_not_configured` until the STRIPE_SECRET_KEY secret exists, and 503
+ * `billing_key_invalid` when the secret holds something that is not a Stripe key at all. The
+ * second case is worth its own code: a credential pasted from the wrong dashboard otherwise
+ * reaches Stripe, fails 401, and reads exactly like an outage.
+ */
 export function requireStripe(env: Env): string {
   if (!hasStripe(env)) throw new ApiError(503, 'billing_not_configured', 'Billing is not configured yet')
-  return env.STRIPE_SECRET_KEY as string
+  const key = env.STRIPE_SECRET_KEY as string
+  if (!KEY_SHAPE.test(key)) {
+    // The prefix is not secret; the rest of the key is never logged.
+    console.error('STRIPE_SECRET_KEY is not a Stripe key. It starts with', key.slice(0, 5), 'and must start with sk_ or rk_')
+    throw new ApiError(503, 'billing_key_invalid', 'Billing is misconfigured')
+  }
+  return key
 }
 
 export type Param = string | number | boolean | null | undefined | Param[] | { [key: string]: Param }

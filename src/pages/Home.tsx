@@ -95,12 +95,14 @@ export default function Home() {
               </div>
             </label>
 
-            <form className="card" style={{ minHeight: 230, display: 'flex', flexDirection: 'column', justifyContent: 'center' }} onSubmit={go}>
+            {/* action/method/name make this a working GET form on its own, so a visitor who hits
+                Go before the JavaScript has loaded still lands on /print?url=… instead of nothing */}
+            <form className="card" style={{ minHeight: 230, display: 'flex', flexDirection: 'column', justifyContent: 'center' }} action="/print" method="get" onSubmit={go}>
               <div style={{ fontSize: '2.2rem' }}>⌘</div>
               <h3 style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.urlCardTitle}</h3>
               <p className="muted" style={{ margin: '0 0 0.75rem' }}>{cfg.home.urlCardText}</p>
               <div className="clip-input" style={{ boxShadow: 'none' }}>
-                <input type="text" inputMode="url" placeholder="https://example.com/article" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="URL" />
+                <input type="text" name="url" inputMode="url" placeholder="https://example.com/article" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="URL" />
                 <button type="submit">Go</button>
               </div>
               <div className="mono muted" style={{ fontSize: '0.7rem', marginTop: '0.75rem' }}>

@@ -190,7 +190,7 @@ export function describeError(e: unknown): { message: string; upgrade?: boolean;
       return { message: 'Could not reach our server. Check your internet connection and try again.' }
     case 'quota_exceeded':
       return e.status === 402
-        ? { message: `You have used all ${limit ?? 5} free server conversions this month. Pro includes 300 a month for $5.`, upgrade: true }
+        ? { message: `You have used all ${limit ?? 5} free server conversions this month. Pro includes 300 a month for $3.99.`, upgrade: true }
         : { message: `Monthly limit reached (${used ?? '?'} of ${limit ?? '?'}). It resets on the 1st.`, account: true }
     case 'subscription_inactive':
       return { message: 'Your subscription is not active. Manage it from your account.', account: true }
@@ -219,6 +219,10 @@ export function describeError(e: unknown): { message: string; upgrade?: boolean;
       return { message: `Our server could not convert this file.${e.data.detail ? ` (${String(e.data.detail).slice(-160)})` : ''}` }
     case 'billing_not_configured':
       return { message: 'Payments are not switched on yet. Try again soon.' }
+    case 'billing_key_invalid':
+    case 'stripe_error':
+      // Nothing the visitor can do, so give them the way through instead of asking them to retry.
+      return { message: 'Checkout is down for a moment. Email support@printxpdf.com and we will set you up by hand.' }
     default:
       return { message: e.message }
   }

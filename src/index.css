@@ -841,6 +841,17 @@ p {
 }
 
 /* ---------- Tables ---------- */
+/* The wrapper scrolls, so the table keeps its native semantics for screen readers. This lives in
+   the global sheet because pages outside the blog use it too, and it only shipped with blog.css. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: var(--bw-thin) solid transparent;
+}
+.table-scroll:focus-visible {
+  border-color: var(--acid);
+  outline: none;
+}
 .table {
   width: 100%;
   border-collapse: collapse;

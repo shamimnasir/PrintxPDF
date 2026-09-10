@@ -7,6 +7,7 @@ import { mkdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 
 const BASE = (process.env.AUDIT_BASE || 'https://printxpdf.com').replace(/\/$/, '')
+const API = (process.env.AUDIT_API || 'https://api.printxpdf.com').replace(/\/$/, '')
 const OUT = path.resolve(import.meta.dirname, '../audit/out/_features')
 const results = []
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -103,7 +104,9 @@ await step('cleaner: sample article and paste mode', async () => {
 await step('sign up creates a local account', async () => {
   await page.goto(`${BASE}/signup`)
   await page.getByPlaceholder('you@example.com').fill('audit@example.com')
-  await page.locator('form').first().evaluate((f) => f.requestSubmit())
+  // Click the real button rather than requestSubmit(): it stays disabled until the page has
+  // hydrated, so this waits for the handler to exist instead of racing it and posting natively.
+  await page.getByRole('button', { name: 'Create account' }).click()
   await page.waitForURL(/\/account/, { timeout: 15000 })
   const header = await page.locator('.header-right').innerText()
   if (!/audit/.test(header)) throw new Error('header does not show the user')
@@ -140,10 +143,15 @@ await step('sign out returns to guest', async () => {
 
 await step('pricing: Pro button hands off to Stripe Checkout', async () => {
   await page.goto(`${BASE}/pricing`)
+  // Ask the API directly first, so a billing misconfiguration reports its own reason instead of
+  // surfacing as an unexplained navigation timeout.
+  const probe = await page.request.post(`${API}/billing/checkout`, { data: { plan: 'pro' }, headers: { origin: BASE } })
+  const body = await probe.json().catch(() => ({}))
+  if (!probe.ok()) throw new Error(`${API}/billing/checkout -> ${probe.status()} ${body.code || ''} ${body.error || ''}`)
   const btn = page.locator('button, a').filter({ hasText: /Pro/ }).filter({ hasText: /Go|Get|Start|Upgrade/ }).first()
   await btn.click()
   await page.waitForURL(/checkout\.stripe\.com/, { timeout: 30000 })
-  return 'checkout.stripe.com reached (test mode, not paid)'
+  return 'checkout.stripe.com reached'
 })
 
 await step('extensions: bookmarklet and download link', async () => {

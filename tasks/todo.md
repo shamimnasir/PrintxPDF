@@ -141,3 +141,31 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 ### Decisions needed before implementing
 1. Lifetime allowance: 300/mo like Pro means ~36,000 server conversions over ten years for $119. Cap it lower, or bound the number sold?
 2. Ship the proxy fix first, on its own, before the pricing work?
+
+# Phase 5 (2026-09-11): browser audit pass
+- [x] Static audit clean (152 pages, 149 sitemap URLs, 83 assets, 0 issues)
+- [x] New `scripts/audit-layout.mjs` + `npm run audit:layout`: every route at 1280px and 390px in a
+      real browser, checking horizontal overflow (naming the widest offender), broken images,
+      invisible text, em dashes, JS errors and failed requests
+- [x] Fix: in-article CTAs were invisible (accent text on accent background) on 188 blog spots,
+      caused by `.prose a` outranking `.btn`; now `.prose a:not(.btn)`
+- [x] Fix: 72 pages scrolled sideways on a phone; `.post-wrap` mobile column was `1fr`
+      (floors at min-content) instead of `minmax(0, 1fr)`
+- [x] Fix: `.table-scroll` moved from `blog.css` to `index.css`, so `/api` and `/extension-privacy`
+      actually get it; the three `/api` tables are now wrapped and focusable
+- [x] Fix: forms that did nothing when submitted before hydration. Home and cleaner URL boxes are
+      now real GET forms (`action="/print"`, `name="url"`); the account form disables its button
+      until `useHydrated()`
+- [x] Fix: `requireStripe` rejects a secret that is not `sk_`/`rk_` with `billing_key_invalid`,
+      logging the prefix only; 4 new worker tests
+- [x] Fix: stale prices, "$5" in the quota message and "$5/$29" in `llms.txt`, now $3.99/$19.99/$119
+- [x] Fix: `audit-features` signup step clicked through hydration instead of racing it; the pricing
+      step now probes `/billing/checkout` first so a config fault reports its own reason
+- [ ] BLOCKED (user only): `STRIPE_SECRET_KEY` currently holds a Cloudflare API token (`cfut_…`),
+      so every checkout 401s. Needs `cd worker && npx wrangler secret put STRIPE_SECRET_KEY` with
+      the live `sk_live_…`, and the pasted Cloudflare token rolled since it went to Stripe.
+
+## Review
+- 117 client tests, 33 worker tests, tsc and oxlint clean.
+- Live prices verified in the Stripe dashboard: Pro $3.99/mo, API $19.99/mo, Lifetime $119 once.
+- Live customer portal login link returns 200.
