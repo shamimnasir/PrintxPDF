@@ -68,11 +68,14 @@ describe('lifetime entitlement', () => {
     expect(claims?.cs).toBeUndefined()
   })
   it('a tampered lifetime claim fails the signature', async () => {
+    // upgrading pro to lifetime by hand must not survive the HMAC
+    const toB64url = (s: string) => btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+    const fromB64url = (s: string) => atob(s.replace(/-/g, '+').replace(/_/g, '/'))
     const token = await mint(SECRET, { sub: 'cus_abc', email: 'a@b.c', plan: 'pro' }, 3600)
     const [body, sig] = token.slice(4).split('.')
-    const payload = JSON.parse(Buffer.from(body, 'base64url').toString())
+    const payload = JSON.parse(fromB64url(body))
     payload.plan = 'lifetime'
-    const forged = 'pxp_' + Buffer.from(JSON.stringify(payload)).toString('base64url') + '.' + sig
+    const forged = 'pxp_' + toB64url(JSON.stringify(payload)) + '.' + sig
     expect(await verify(SECRET, forged)).toBeNull()
   })
 })
