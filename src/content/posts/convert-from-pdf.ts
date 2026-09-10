@@ -14,7 +14,7 @@ export const convertFromPdf: Cluster = {
   primaryKeyword: 'convert pdf to word',
   entities: ['Microsoft Word', 'Google Docs', 'Microsoft Excel', 'Power Query', 'Adobe Acrobat', 'Microsoft PowerPoint', 'Apple Keynote', 'OCR'],
   icon: '⇄',
-  tools: ['pdf-to-word', 'pdf-to-excel', 'pdf-to-text', 'ocr-pdf'],
+  tools: ['pdf-to-word', 'pdf-to-excel', 'pdf-to-text', 'pdf-to-ppt', 'pdf-to-markdown', 'ocr-pdf'],
   posts: [
     {
       slug: 'pdf-to-word',
@@ -298,21 +298,23 @@ export const convertFromPdf: Cluster = {
       secondaryKeywords: ['pdf to pptx', 'pdf to slides', 'insert pdf into powerpoint', 'pdf to keynote', 'pdf to google slides'],
       entities: ['Microsoft PowerPoint', 'Adobe Acrobat', 'Apple Keynote', 'Google Slides', 'PPTX', 'Photo Album', 'JPEG'],
       answer:
-        'There is no free, reliable way to turn a PDF into slides with editable text boxes, that requires Adobe Acrobat Pro or a server-side converter. The method that always works is to export each PDF page as an image at 150-200 DPI and place one image per slide, which PowerPoint automates with Insert → Photo Album.',
+        'Editable PDF to PowerPoint needs real layout analysis, so it cannot run in a browser tab. PDF to PowerPoint here runs on our server and returns a .pptx with the text in real text boxes, positioned where it sat. It is a best effort reconstruction, so complex layouts need tidying. The always-works fallback is one page image per slide.',
       body: [
-        { t: 'p', x: 'Start with the uncomfortable part, because it saves you an hour of searching.' },
+        { t: 'p', x: 'Start with what the job actually involves, because it explains every result you will get.' },
         { t: 'h2', x: 'Editable PDF to PowerPoint is not a browser job' },
-        { t: 'p', x: 'Producing a .pptx where every heading is a real text box, every bullet is a real bullet and every chart is a real shape means reconstructing a slide layout from glyph coordinates. That is harder than PDF-to-Word, and Word-level results are already imperfect. It needs the same heavyweight layout analysis, and it runs in a desktop application or on a server, not in a browser tab.' },
-        { t: 'p', x: 'Realistically you have three routes to editable slides:' },
+        { t: 'p', x: 'Producing a .pptx where every heading is a real text box, every bullet is a real bullet and every chart is a real shape means reconstructing a slide layout from glyph coordinates. That is harder than PDF-to-Word, and Word-level results are already imperfect. It needs heavyweight layout analysis, which is why it runs in a desktop application or on a server, never in a browser tab.' },
+        { t: 'p', x: 'That is exactly where [PDF to PowerPoint](/tools/pdf-to-ppt) runs. Unlike most tools on this site, it is not a browser job: the file is uploaded over a secure connection, converted on our server, and deleted the moment it finishes. A free account gets 5 server conversions a month, Pro and Lifetime 300, the API plan 5,000, with a 100 MB limit and two minutes per file.' },
+        { t: 'cta', tool: 'pdf-to-ppt', x: 'Rebuild a deck from a PDF, with the text in real text boxes you can edit.' },
+        { t: 'p', x: 'Set your expectations with the word reconstruction. Text lands in boxes positioned where the glyphs sat, which is right far more often than not, but a dense slide with overlapping graphics will need tidying. Judge it on a page or two before you convert a 60-slide deck. Your routes, in the order worth trying:' },
         {
           t: 'ul',
           items: [
             '**Find the original.** If the PDF was exported from PowerPoint, Keynote or Google Slides, the source deck exists somewhere. Ask for it. This is by far the best outcome and people forget to try.',
-            '**Adobe Acrobat Pro.** File → Export To → Microsoft PowerPoint Presentation. It produces genuine editable text boxes and it is the only mainstream tool that does this properly. It is a paid subscription.',
+            '**Convert it.** [PDF to PowerPoint](/tools/pdf-to-ppt) above, or Adobe Acrobat Pro via File → Export To → Microsoft PowerPoint Presentation. Both produce genuine editable text boxes; Acrobat is a paid subscription, ours is free for the first 5 files a month.',
             '**Rebuild it.** [Extract the text](/blog/from-pdf/pdf-to-text), paste it into your own template, and re-create the visuals. For a 12-slide deck this is often faster than cleaning up a bad conversion, and the result matches your branding.',
           ],
         },
-        { t: 'warn', x: 'Sites promising free editable PDF-to-PowerPoint mostly do one of two things: upload your file to a paid backend and watermark the output, or place a picture of each page on a slide and call it a conversion. The second is a perfectly good technique, it is just not what "editable" means.' },
+        { t: 'warn', x: 'Watch what you are actually being given. Some tools place a picture of each page on a slide and call it a conversion. That is a perfectly good technique, covered below, it is just not what "editable" means. Open the result and try clicking a heading: if you cannot put a cursor in it, no conversion happened.' },
         { t: 'h2', x: 'The method that always works: one image per slide' },
         { t: 'p', x: 'If you need to present a PDF, annotate it live, or drop three pages of a report into an existing deck, images are the right answer. The text is not editable, but it looks exactly like the PDF, works on every machine, and takes about two minutes.' },
         {
@@ -348,13 +350,13 @@ export const convertFromPdf: Cluster = {
         { t: 'p', x: 'Forty page images at 200 DPI will produce a .pptx of 60 MB or more, which is past the [email limits](/blog/compress/reduce-pdf-file-size-for-email) of every major service. Two fixes: export at 150 DPI instead of 200, which roughly halves it, and run PowerPoint own compressor, select any image, then **Picture Format → Compress Pictures → Apply to all pictures**, choosing 150 ppi. If the deck is only ever going to be shown from a laptop, that is more than enough.' },
       ],
       faqs: [
-        { q: 'Can I convert a PDF to PowerPoint for free?', a: 'Not into editable text boxes. Free routes give you one image per slide, which looks identical but cannot be edited. Editable conversion requires Adobe Acrobat Pro or a paid server-side converter. If the PDF was exported from a deck, finding that original is the better answer.' },
+        { q: 'Can I convert a PDF to PowerPoint for free?', a: 'Yes, for the first 5 files a month. PDF to PowerPoint runs on our server and returns editable text boxes, and a free account includes 5 server conversions a month. Beyond that, the image-per-slide method costs nothing and always works. If the PDF was exported from a deck, finding that original is still the better answer.' },
         { q: 'How do I insert a PDF into a PowerPoint slide?', a: 'For a static page, export the page as an image and insert it. For a whole document, use Insert → Photo Album with all the page images. For an openable copy, Insert → Object → Create from File embeds the PDF, showing the first page as a thumbnail.' },
         { q: 'What DPI should I export PDF pages at for slides?', a: '150 DPI for on-screen presentation, which is already more than a 1080p projector can show. 200 DPI if the deck will be printed as handouts. 300 DPI multiplies the file size for no visible gain on a screen.' },
         { q: 'Can Google Slides open a PDF?', a: 'No. File → Import slides accepts only .pptx, .ppt and other Google Slides files. Convert the PDF pages to images and insert them with Insert → Image → Upload from computer, one per slide.' },
         { q: 'Why does my converted deck have text in the wrong place?', a: 'The converter inferred text boxes from glyph positions and guessed wrong, which is normal for anything with columns, overlapping graphics or non-rectangular layouts. Either fix the boxes by hand, or switch to the image-per-slide method, which never misplaces anything.' },
       ],
-      relatedTools: ['pdf-to-jpg', 'extract-pages', 'pdf-to-text'],
+      relatedTools: ['pdf-to-ppt', 'pdf-to-jpg', 'extract-pages'],
       relatedPosts: ['pdf-to-text', 'pdf-to-jpg', 'pdf-to-word'],
     },
   ],

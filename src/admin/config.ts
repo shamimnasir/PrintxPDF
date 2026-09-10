@@ -101,10 +101,11 @@ export const DEFAULT_CONFIG: SiteConfig = {
   announcement: { enabled: false, text: 'New: turn scanned pages into searchable text, right in your browser.', linkText: 'Try it', linkUrl: '/tools/ocr-pdf', dismissible: true },
   theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0f172a', paper: '#ffffff', alarm: '#ff3b1f', defaultMode: 'light', borderWidth: 1, radius: 12, design: 'studio' },
   home: {
-    eyebrow: 'Free · {count} tools · Your files never leave your computer',
+    eyebrow: 'Free · {count} tools · No account, no card, no watermark',
     headline1: 'Print only what matters.',
     headline2: 'Fix any PDF.',
-    lead: 'Paste a link and keep just the article: no ads, no menus, no comment threads. Print it or save it as a PDF. Or drop in a PDF and merge, split, sign, shrink, black out private details, make scans searchable or convert it. Everything happens in your browser, nothing is uploaded, and you never have to sign up.',
+    lead:
+      'Paste a link and keep just the article: no ads, no menus, no comment threads. Print it or save it as a PDF. Or drop in a PDF and merge, split, sign, shrink, black out private details, make scans searchable or convert it. Nearly every tool runs inside this tab, so the file never leaves your computer, and the few jobs that need our server say so before you start.',
     fileCardTitle: 'Drop in a file',
     fileCardText: 'Merge, sign, shrink, convert, protect, black out, {count} tools',
     urlCardTitle: 'Print a web page',

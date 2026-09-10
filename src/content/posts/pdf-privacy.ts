@@ -14,7 +14,7 @@ export const pdfPrivacy: Cluster = {
   primaryKeyword: 'pdf privacy',
   entities: ['PDF', 'Adobe Acrobat', 'XMP', 'EXIF', 'AES-256', 'GDPR', 'HIPAA', 'ExifTool', 'ISO 32000'],
   icon: '🔒',
-  tools: ['remove-metadata', 'edit-metadata', 'flatten-pdf', 'pdf-to-jpg'],
+  tools: ['redact-pdf', 'protect-pdf', 'unlock-pdf', 'remove-metadata', 'edit-metadata', 'flatten-pdf'],
   posts: [
     {
       slug: 'remove-metadata-from-pdf',
@@ -152,8 +152,10 @@ export const pdfPrivacy: Cluster = {
           ],
         },
         { t: 'p', x: 'With AES-256 the algorithm is not the weak point, your password is. A six-character password on AES-256 is a six-character password. Use a passphrase of four or more unrelated words, or a generated string of at least 16 characters from a password manager.' },
-        { t: 'h2', x: 'What this site cannot do, honestly' },
-        { t: 'note', x: 'PrintxPDF is a browser-based toolkit that rearranges and rewrites the structure of PDF files. It does not add AES encryption, and no page here will claim otherwise. If you need a genuinely encrypted PDF, use one of the desktop options below, they are free, already installed on most machines, and they produce real encryption.' },
+        { t: 'h2', x: 'Adding a password here, and where the work happens' },
+        { t: 'p', x: 'Most tools on this site run inside your browser tab and never send your file anywhere. Encryption is one of the few jobs that cannot work that way, so [Protect PDF](/tools/protect-pdf) runs on our server instead: the file is uploaded over a secure connection, encrypted with AES-256, sent back, and deleted the moment it finishes. The page says so before you drop a file in, because the difference matters.' },
+        { t: 'note', x: 'Server jobs are metered, unlike the browser tools. A free account gets 5 a month, Pro and Lifetime get 300, and the API plan gets 5,000. Files up to 100 MB, two minutes per job. If you would rather nothing left your machine at all, the desktop routes below are free, already installed on most computers, and produce the same AES-256.' },
+        { t: 'cta', tool: 'protect-pdf', x: 'Encrypt a PDF with AES-256 and a password only your recipient knows.' },
         {
           t: 'steps',
           items: [
@@ -180,18 +182,19 @@ export const pdfPrivacy: Cluster = {
         { t: 'p', x: 'Encryption fits a narrow but real set of cases: a document going to one identified recipient, a file on removable media, an archive on shared storage where the storage administrators should not be able to read it, or a regulatory requirement that names encryption at rest. In each of those, the threat is a party who should never see the content at all.' },
         { t: 'p', x: 'It fits badly where the concern is downstream behaviour by a legitimate recipient. For that, combine a [CONFIDENTIAL watermark](/blog/watermark/add-watermark-to-pdf) naming the recipient with an explicit written restriction. The watermark will not stop anyone either, but it survives forwarding, and it makes a leak traceable in a way that a password never does.' },
         { t: 'h2', x: 'Removing a password you own' },
-        { t: 'p', x: 'If you know the password and want an unprotected working copy, open the file, enter the password, and export or print to a new PDF. In macOS Preview, File → Export as PDF with permissions left empty produces a clean copy. In Acrobat, use Protect → Remove Security. On the command line, `qpdf --decrypt --password=yourpassword in.pdf out.pdf` does it in one step.' },
-        { t: 'tip', x: 'Encrypted PDFs cannot be processed by browser-based tools, including the ones here, because the page content is unreadable until it is decrypted. If you need to [merge](/blog/merge/how-to-merge-pdf-files), split or compress an encrypted file, decrypt it first with the password you hold, do the work, then re-encrypt the result.' },
+        { t: 'p', x: 'If you know the password and want an unprotected working copy, [Unlock PDF](/tools/unlock-pdf) takes the file and the password and returns a clean copy. It runs on our server for the same reason encryption does, and counts against the same monthly allowance. Locally: in macOS Preview, File → Export as PDF with permissions left empty produces a clean copy; in Acrobat, use Protect → Remove Security; on the command line, `qpdf --decrypt --password=yourpassword in.pdf out.pdf` does it in one step.' },
+        { t: 'warn', x: 'Unlocking needs the password. There is no tool here, or anywhere honest, that opens a PDF whose user password you do not know. If you have lost it, the file is the problem, not the tool.' },
+        { t: 'tip', x: 'Encrypted PDFs cannot be processed by browser-based tools, including most of the ones here, because the page content is unreadable until it is decrypted. Run the file through [Unlock PDF](/tools/unlock-pdf) with the password you hold, [merge](/blog/merge/how-to-merge-pdf-files), split or compress the clean copy, then protect the result again.' },
         { t: 'cta', tool: 'remove-metadata', x: 'Whatever you do about passwords, strip the metadata before the file leaves your machine.' },
       ],
       faqs: [
         { q: 'What is the difference between a user password and an owner password?', a: 'A user password is required to open the document and genuinely encrypts the content. An owner password only sets permissions such as printing or copying, leaves the file openable by anyone, and can be stripped by common tools without knowing it.' },
-        { q: 'Can PrintxPDF add a password to my PDF?', a: 'No. The tools here run in your browser and rewrite the structure of a PDF; they do not perform AES encryption. Use macOS Preview, LibreOffice, Microsoft Word, Adobe Acrobat or qpdf, all of which produce genuinely encrypted files.' },
+        { q: 'Can PrintxPDF add a password to my PDF?', a: 'Yes. Protect PDF encrypts a file with AES-256. It is one of the few jobs that runs on our server rather than in your browser, so the file is uploaded over a secure connection and deleted as soon as it is done. macOS Preview, LibreOffice, Microsoft Word, Adobe Acrobat and qpdf all produce the same encryption locally if you prefer nothing to leave your machine.' },
         { q: 'Is AES-256 PDF encryption secure?', a: 'The cipher is sound, so the security of the file comes down to the password. A generated string of at least 16 characters, or a passphrase of four or more unrelated words, is what makes AES-256 meaningful in practice.' },
         { q: 'Can someone remove the print restriction from my PDF?', a: 'Yes, easily, if you only set an owner password. Permission flags are advisory and depend on the reader choosing to honour them. Only a user password, which encrypts the content, actually restricts access.' },
-        { q: 'Why will online PDF tools not open my protected file?', a: 'The page content is encrypted, so a tool cannot read it without the password. Decrypt the file locally with the password you hold, run the operation, and re-encrypt the result afterwards.' },
+        { q: 'Why will online PDF tools not open my protected file?', a: 'The page content is encrypted, so a tool cannot read it without the password. Run it through Unlock PDF with the password you hold, do the work on the clean copy, then protect the result again.' },
       ],
-      relatedTools: ['remove-metadata', 'merge-pdf'],
+      relatedTools: ['protect-pdf', 'unlock-pdf', 'remove-metadata'],
       relatedPosts: ['remove-metadata-from-pdf', 'redact-pdf-properly', 'are-online-pdf-tools-safe'],
     },
     {
@@ -230,8 +233,12 @@ export const pdfPrivacy: Cluster = {
           ],
         },
         { t: 'p', x: 'Note the blur row. Pixelation of a short, known-format string, a name, a licence number, a postcode, is reversible in principle: an attacker pixelates candidate strings the same way and looks for a match. Never blur. Use solid, opaque black.' },
-        { t: 'h2', x: 'The reliable browser method' },
-        { t: 'p', x: 'The idea is simple: make the sensitive area invisible, then destroy the entire text layer by turning every page into a picture of itself. Once a page is an image, there is nothing to select, extract or search, including the words that were under the box.' },
+        { t: 'h2', x: 'The direct route' },
+        { t: 'p', x: 'The idea behind every real redaction is the same: make the sensitive area invisible, then destroy the text layer underneath so there is nothing left to select, extract or search. [Redact PDF](/tools/redact-pdf) does both in one pass. You mark the areas, it removes the text and returns a file where the covered words are genuinely gone. It runs in your browser, so the document you are redacting never leaves your computer, which is the whole point when the reason you are redacting it is that it is sensitive.' },
+        { t: 'cta', tool: 'redact-pdf', x: 'Mark what has to go and have the text removed, not just covered. Nothing is uploaded.' },
+        { t: 'p', x: 'The manual route below does the same job with general-purpose tools. It is worth reading even if you use the one-click version, because it shows exactly what has to happen for a redaction to be real, and the verification steps at the end apply either way.' },
+        { t: 'h2', x: 'The manual method, step by step' },
+        { t: 'p', x: 'Make the sensitive area invisible, then destroy the entire text layer by turning every page into a picture of itself. Once a page is an image, there is nothing to select, extract or search, including the words that were under the box.' },
         {
           t: 'steps',
           items: [
@@ -280,7 +287,7 @@ export const pdfPrivacy: Cluster = {
         { q: 'Is blurring or pixelating a name enough?', a: 'No. Pixelation of short, predictable strings such as names or reference numbers can be reversed by pixelating candidate strings and matching the result. Always use solid, fully opaque black, then remove the underlying content.' },
         { q: 'Does redaction remove the metadata too?', a: 'Not necessarily. Title, Author, Subject and Keywords live outside the page content and can survive the process. Run a metadata removal pass on the final file and check the document properties before sharing it.' },
       ],
-      relatedTools: ['pdf-to-jpg', 'jpg-to-pdf'],
+      relatedTools: ['redact-pdf', 'pdf-to-jpg', 'jpg-to-pdf'],
       relatedPosts: ['remove-metadata-from-pdf', 'watermark-vs-stamp', 'are-online-pdf-tools-safe'],
     },
     {

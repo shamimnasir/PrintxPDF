@@ -107,3 +107,19 @@
   than cold. The real cause was clicking the button on the exact edge where React enables it, so
   the click landed on the pre-hydration element and did nothing, reproducing about half the time.
   Wait for the state change (`waitForFunction` on `!button.disabled`), not for a duration.
+
+## 2026-09-11: content gaps
+- Measure coverage against the data model, not the URLs. "Does the tool slug appear in a post
+  URL" said 26 tools were uncovered; checking `relatedTools` and cluster `tools` said 19, and four
+  of those already had a whole guide written about them that simply never linked the tool.
+- The valuable find was not the missing pages, it was the rotted ones. Three high-intent guides
+  told readers the site could not do a job and named a competitor to go and use instead, because
+  they were written before Protect PDF, Redact PDF and PDF to PowerPoint shipped. A page that
+  ranks for "password protect a pdf" and then sends the reader to Acrobat is worse than no page.
+  Whenever a tool ships, grep the blog for what it used to say was impossible.
+- Parallel subagents in one working tree collide in shared scratch space, and each one sees the
+  others' edits in `git status`. Give them one file each, tell them explicitly not to touch shared
+  files, and do the wiring up yourself afterwards.
+- An automated honesty check has to understand scope. Flagging any post that says "nothing is
+  uploaded" while listing a server tool produced a false positive: the sentence read "with a
+  browser tool the images are processed inside your own tab", which is precise and correct.

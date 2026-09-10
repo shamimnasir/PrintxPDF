@@ -169,3 +169,30 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 - 117 client tests, 33 worker tests, tsc and oxlint clean.
 - Live prices verified in the Stripe dashboard: Pro $3.99/mo, API $19.99/mo, Lifetime $119 once.
 - Live customer portal login link returns 200.
+
+# Phase 6 (2026-09-11): content gaps and conversion copy
+- [x] Measured real coverage: 19 of 44 tools had no blog presence at all (relatedTools or cluster hub)
+- [x] Five new clusters, 20 guides: `edit` (edit/crop/forms/compare), `slides` (PowerPoint both ways),
+      `ebooks` (EPUB/MOBI/formats/DRM), `files` (image convert/compress, zip/unzip),
+      `archive` (PDF/A, scan to PDF, PDF to Markdown, what survives time)
+- [x] Fixed content that had rotted against the product, which mattered more than the new pages:
+      - `privacy/password-protect-pdf` said outright that the site cannot encrypt and sent readers
+        to Acrobat. Protect PDF ships AES-256. Section, FAQ and CTA corrected.
+      - `privacy/redact-pdf-properly` taught a 7-step manual rasterise workaround with no mention
+        of Redact PDF. Now leads with the tool, keeps the manual method as the explainer.
+      - `from-pdf/pdf-to-powerpoint` said editable conversion "requires Adobe Acrobat Pro or a paid
+        server-side converter". We are that converter, free for 5 files a month.
+- [x] Tool coverage now 44/44. 177 prerendered pages, up from 152.
+- [x] Conversion copy: hero no longer overclaims. It said "nothing is uploaded" while listing
+      Protect, a server tool. A promise a careful reader can falsify is worth less than a precise
+      one, and the whole positioning rests on being trusted about this.
+- [x] Home promise row under the hero: free stays free, no trial that turns into a charge, cancel
+      in one click. Billing conduct is the category's verified weak point.
+- [x] Cluster cap in the content test raised 20 -> 24; the hardcoded "not in the future" date now
+      compares against the real current date instead of a literal that expires.
+
+## Review
+- 44/44 tools reachable from the blog, 0 orphans.
+- Static audit clean over 177 pages, 174 sitemap URLs.
+- The three corrected posts were the highest-value change here: each was a high-intent page
+  actively recommending a competitor for a job the product now does.

@@ -111,6 +111,20 @@ export default function Home() {
               </div>
             </form>
           </div>
+
+          {/* The three objections a first-time visitor actually has, answered before they scroll.
+              Billing conduct is the wedge: it is where this category is weakest. */}
+          <ul className="promise-row">
+            <li>
+              <strong>Free tools stay free.</strong> No account, no card, no watermark on anything you make.
+            </li>
+            <li>
+              <strong>No trial that turns into a charge.</strong> There is no trial. Paid plans start only when you pick one.
+            </li>
+            <li>
+              <strong>Cancel in one click.</strong> No email to send, nobody talking you out of it, full refund inside 14 days.
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -134,7 +148,7 @@ export default function Home() {
               <h2 style={{ margin: 0 }}>
                 {tools.length} tools.
                 <br />
-                One tab. Zero uploads.
+                One tab. No account.
               </h2>
             </div>
             <Link to="/tools" className="btn">

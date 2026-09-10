@@ -17,6 +17,11 @@ import { publishersWordpress } from './posts/publishers-wordpress'
 import { savePaperInk } from './posts/save-paper-ink'
 import { qrCodes } from './posts/qr-codes'
 import { browserExtensions } from './posts/browser-extensions'
+import { editPdf } from './posts/edit-pdf'
+import { slidesPdf } from './posts/slides-pdf'
+import { ebooksPdf } from './posts/ebooks-pdf'
+import { imagesArchives } from './posts/images-archives'
+import { archiveDocuments } from './posts/archive-documents'
 
 export const CLUSTERS: Cluster[] = [
   printWebPages,
@@ -37,6 +42,11 @@ export const CLUSTERS: Cluster[] = [
   savePaperInk,
   qrCodes,
   browserExtensions,
+  editPdf,
+  slidesPdf,
+  ebooksPdf,
+  imagesArchives,
+  archiveDocuments,
 ]
 
 export const ALL_POSTS: Post[] = CLUSTERS.flatMap((c) => c.posts)

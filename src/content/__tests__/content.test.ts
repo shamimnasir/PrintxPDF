@@ -5,11 +5,13 @@ import { TOOLS } from '../../features/pdf/toolsMeta'
 const toolSlugs = new Set(TOOLS.map((t) => t.slug))
 const postSlugs = new Set(ALL_POSTS.map((p) => p.slug))
 const clusterSlugs = new Set(CLUSTERS.map((c) => c.slug))
+// a fixed date here fails the day it passes; compare against the real one
+const TODAY = new Date().toISOString().slice(0, 10)
 
 describe('content integrity', () => {
   it('has the promised number of clusters and posts', () => {
     expect(CLUSTERS.length).toBeGreaterThanOrEqual(10)
-    expect(CLUSTERS.length).toBeLessThanOrEqual(20)
+    expect(CLUSTERS.length).toBeLessThanOrEqual(24)
     CLUSTERS.forEach((c) => {
       expect(c.posts.length, `${c.slug} post count`).toBeGreaterThanOrEqual(3)
       expect(c.posts.length, `${c.slug} post count`).toBeLessThanOrEqual(5)
@@ -110,7 +112,7 @@ describe('content integrity', () => {
     const bad: string[] = []
     ALL_POSTS.forEach((p) => {
       if (p.updated < p.published) bad.push(`${p.slug}: updated ${p.updated} before published ${p.published}`)
-      if (p.published > '2026-09-09' || p.updated > '2026-09-09') bad.push(`${p.slug}: dated in the future`)
+      if (p.published > TODAY || p.updated > TODAY) bad.push(`${p.slug}: dated after today (${TODAY})`)
     })
     expect(bad, bad.join('\n')).toEqual([])
   })
