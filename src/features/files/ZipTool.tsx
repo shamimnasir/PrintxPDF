@@ -39,7 +39,7 @@ export default function ZipTool() {
       toast(`${safe}.zip ready (${formatBytes(blob.size)})`)
     } catch (e) {
       const msg = (e as Error).message
-      toast(/memory|allocation|array buffer/i.test(msg) ? 'The browser ran out of memory building this archive. Try fewer or smaller files.' : `Could not build the ZIP: ${msg}`, 'error')
+      toast(/memory|allocation|array buffer/i.test(msg) ? 'Your browser ran out of memory building this ZIP. Try fewer or smaller files.' : `Could not build the ZIP: ${msg}`, 'error')
     } finally {
       setBusy(false)
     }
@@ -48,7 +48,7 @@ export default function ZipTool() {
   return (
     <div className="tool-grid">
       <div className="stack">
-        <Dropzone multiple onFiles={add} label="Drop any files here" hint="any file type, or click to browse" />
+        <Dropzone multiple onFiles={add} label="Drop any files here" hint="any kind of file, or click to choose" />
         <div className="row" style={{ gap: '0.5rem' }}>
           <button className="btn btn-sm" type="button" onClick={() => folderRef.current?.click()}>
             Add a folder
@@ -97,11 +97,11 @@ export default function ZipTool() {
         )}
         {warn && <div className="fx-notice">Over 500 MB. The whole archive is assembled in memory, so a tab with little free RAM may fail. Splitting into two ZIPs is safer.</div>}
         {overCap && <div className="fx-notice">That is {formatBytes(total)}. Browser ZIPs are capped at 1 GB here; remove some files or make two archives.</div>}
-        {busy && <ProgressBar value={0.5} msg="Assembling archive…" />}
+        {busy && <ProgressBar value={0.5} msg="Packing the files…" />}
       </div>
 
       <div className="card stack">
-        <h4 style={{ margin: 0 }}>Archive</h4>
+        <h4 style={{ margin: 0 }}>Your ZIP</h4>
         <div className="fx-field">
           <label className="label" htmlFor="zip-name">
             File name
@@ -115,7 +115,7 @@ export default function ZipTool() {
           {busy ? 'Zipping…' : `Create ZIP${items.length ? ` (${formatBytes(total)})` : ''}`}
         </button>
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-          Files are stored without recompression (photos, PDFs and videos are already compressed), so it is fast and works offline. Duplicate names are renamed automatically; folder paths are kept.
+          Files are packed as they are, without squeezing them further (photos, PDFs and videos are already compressed), so it is fast and works offline. Files with the same name are renamed automatically; folder names are kept.
         </p>
       </div>
     </div>

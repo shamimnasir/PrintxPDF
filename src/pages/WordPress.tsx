@@ -4,7 +4,7 @@ import { breadcrumbSchema, useSeo } from '../lib/seo'
 export default function WordPress() {
   useSeo({
     title: 'WordPress Print & PDF Button Plugin',
-    description: 'Free plugin that adds Print, PDF and Email buttons to every WordPress post or page: any public post type, shortcode or block editor, no account, no API key.',
+    description: 'Free WordPress plugin that adds Print, PDF and Email buttons to every post and page. Works with any theme, needs no account or key, and never contacts anyone.',
     path: '/wordpress',
     keywords: ['wordpress print button', 'wordpress pdf plugin', 'print friendly wordpress'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'WordPress', path: '/wordpress' }])],
@@ -15,7 +15,7 @@ export default function WordPress() {
       <section className="section">
         <div className="container grid grid-2" style={{ alignItems: 'center' }}>
           <div>
-            <span className="eyebrow">WordPress plugin · free, GPL, 15 KB</span>
+            <span className="eyebrow">WordPress plugin · free and open source, 15 KB</span>
             <h1>
               A print button your readers will <span className="acid-mark">actually use.</span>
             </h1>
@@ -32,8 +32,8 @@ export default function WordPress() {
               </Link>
             </div>
             <p className="muted" style={{ marginTop: '0.75rem', fontSize: '0.9rem' }}>
-              One file, no dependencies, no account and no API key. Upload it under Plugins → Add New → Upload Plugin. It is
-              not in the WordPress.org directory yet, so this download is the way to get it.
+              One small file, no account and no key. In WordPress, go to Plugins, then Add New, then Upload Plugin. It is not
+              in the WordPress.org directory yet, so this download is the way to get it.
             </p>
           </div>
           <div className="card card-flat" style={{ background: 'var(--card)' }}>
@@ -56,12 +56,12 @@ export default function WordPress() {
           <h2>What the plugin does</h2>
           <div className="grid grid-3">
             {[
-              ['Upload and activate', 'Plugins → Add New → Upload Plugin, pick the ZIP, activate. Settings → PrintxPDF sets placement, which buttons show and which post types get them.'],
+              ['Upload and activate', 'Go to Plugins, then Add New, then Upload Plugin. Pick the zipped file and activate it. Under Settings, then PrintxPDF, choose where the buttons go, which ones show and which kinds of content get them.'],
               ['Respects your theme', 'Button placement: top, bottom, or both. Floating or inline. Custom text, icon and colours.'],
-              ['Works everywhere', 'Any public post type you tick in the settings, posts, pages, custom types, WooCommerce products. In the block editor, drop it in with the Shortcode block.'],
-              ['Clean output', 'Uses the same content extraction as this site: ads, widgets, share bars and comments removed.'],
+              ['Works everywhere', 'Posts, pages, WooCommerce products or any other kind of content you tick in the settings. Want a button in one exact spot? Paste the short tag we give you (a shortcode) into the post.'],
+              ['Clean output', 'Uses the same page cleaner as this site: ads, widgets, share bars and comments removed.'],
               ['Reader controls', 'Readers can delete paragraphs, resize text and drop images before they print.'],
-              ['Nothing phones home', 'No API key, no account, no tracking, and the plugin makes no outbound requests at all. Print runs in the reader\'s browser.'],
+              ['Nothing is sent anywhere', 'No key, no account, no tracking. The plugin never contacts our server or anyone else. Printing happens in the reader\'s browser.'],
             ].map(([h, p]) => (
               <div key={h} className="card">
                 <h4>{h}</h4>
@@ -87,8 +87,8 @@ export default function WordPress() {
             <h3 style={{ color: 'var(--acid-dim)' }}>Pro</h3>
             <ul style={{ fontWeight: 600, paddingLeft: '1.2rem' }}>
               <li>300 server conversions a month</li>
-              <li>PowerPoint ↔ PDF, EPUB and MOBI → PDF</li>
-              <li>OCR up to 200 pages per file</li>
+              <li>PowerPoint to PDF and back, EPUB and MOBI ebooks to PDF</li>
+              <li>Scan to searchable text, up to 200 pages per file</li>
               <li>Priority email support</li>
             </ul>
             <Link to="/pricing" className="btn btn-acid btn-sm">

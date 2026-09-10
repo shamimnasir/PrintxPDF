@@ -29,7 +29,7 @@ export default function UnzipTool() {
     if (!file) return
     setLoaded(null)
     setError(null)
-    setBusy('Reading archive…')
+    setBusy('Opening the ZIP…')
     try {
       const bytes = new Uint8Array(await file.arrayBuffer())
       const listing = listZip(bytes)
@@ -59,8 +59,8 @@ export default function UnzipTool() {
   const downloadAll = async () => {
     if (!loaded || busy) return
     const files = loaded.listing.entries.filter((e) => !e.isDir && !entryProblem(e))
-    if (!files.length) return toast('No extractable files in this archive', 'error')
-    setBusy('Extracting all…')
+    if (!files.length) return toast('There are no files in this ZIP that can be unpacked', 'error')
+    setBusy('Unpacking everything…')
     setProgress(0)
     const out: { name: string; data: Uint8Array }[] = []
     let failed = 0
@@ -73,10 +73,10 @@ export default function UnzipTool() {
         }
         setProgress((i + 1) / files.length)
       }
-      if (!out.length) return toast('Every entry failed to extract; the archive is probably corrupt.', 'error')
+      if (!out.length) return toast('None of the files could be unpacked; the ZIP is probably damaged.', 'error')
       if (out.length === 1) downloadBlob(new Blob([out[0].data as BlobPart]), baseName(out[0].name))
       else downloadBlob(zipStore(out), `${stripExt(loaded.file.name)}-extracted.zip`)
-      toast(failed ? `${out.length} extracted, ${failed} failed` : `${out.length} file${out.length > 1 ? 's' : ''} extracted`, failed ? 'error' : 'ok')
+      toast(failed ? `${out.length} unpacked, ${failed} failed` : `${out.length} file${out.length > 1 ? 's' : ''} unpacked`, failed ? 'error' : 'ok')
     } finally {
       setBusy(null)
       setProgress(null)
@@ -111,7 +111,7 @@ export default function UnzipTool() {
             ))}
             {loaded.listing.comment && <div className="fx-notice mono">{loaded.listing.comment}</div>}
             {!canInflate() && entries.some((e) => e.method === 8) && (
-              <div className="fx-notice">This browser lacks DecompressionStream, so compressed entries cannot be unpacked here. Stored entries still work. Try a current Chrome, Edge, Firefox or Safari 16.4+.</div>
+              <div className="fx-notice">This browser is too old to unpack the squeezed files inside this ZIP. Files that were packed as they are still work. Try a current Chrome, Edge, Firefox, or Safari 16.4 or newer.</div>
             )}
             <div className="fx-tree" role="list">
               {entries.map((e, i) => {
@@ -140,17 +140,17 @@ export default function UnzipTool() {
       </div>
 
       <div className="card stack">
-        <h4 style={{ margin: 0 }}>Extract</h4>
+        <h4 style={{ margin: 0 }}>Unpack</h4>
         <button className="btn btn-acid btn-lg btn-block" disabled={!loaded || !!busy || !extractable} onClick={downloadAll}>
-          {busy && progress !== null ? 'Extracting…' : extractable > 1 ? `Download all (${extractable}) as ZIP` : 'Download all'}
+          {busy && progress !== null ? 'Unpacking…' : extractable > 1 ? `Download all (${extractable}) as ZIP` : 'Download all'}
         </button>
         {skipped > 0 && (
           <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-            {skipped} entr{skipped > 1 ? 'ies' : 'y'} cannot be extracted (encrypted, ZIP64 or an unsupported compression method) and will be skipped.
+            {skipped} file{skipped > 1 ? 's' : ''} cannot be unpacked (password-protected, over 4 GB, or packed in a way this tool does not support) and will be skipped.
           </p>
         )}
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-          Opens the archive in your browser; nothing is uploaded. Handles stored and deflated entries. Password-protected and ZIP64 (over 4 GB) archives are not supported. Paths with "../" are renamed so files stay in one folder. "Download all" re-packs the files into one ZIP with folders intact.
+          Opens the ZIP in your browser; nothing is uploaded. Password-protected ZIPs and very large ones (over 4 GB) are not supported. For safety, every file is kept inside one folder. "Download all" repacks the files into one ZIP with the folders intact.
         </p>
       </div>
     </div>

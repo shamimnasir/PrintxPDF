@@ -151,7 +151,7 @@ export default function FormsTool() {
       <div className="stack" style={{ maxWidth: 720 }}>
         <Dropzone accept=".pdf" multiple={false} onFiles={(f) => setFile(f[0])} label="Drop a PDF form" />
         <p className="muted">
-          Reads the AcroForm fields inside the file and gives you a real control for each one. Nothing is uploaded.
+          Finds the fillable boxes inside the form and gives you a real box to type in for each one. Nothing is uploaded.
         </p>
       </div>
     )
@@ -170,13 +170,13 @@ export default function FormsTool() {
           </button>
         </div>
 
-        {status === 'loading' && <div className="badge badge-acid">Reading fields…</div>}
+        {status === 'loading' && <div className="badge badge-acid">Looking for boxes to fill…</div>}
 
         {status === 'encrypted' && (
           <div className="tool-notice alarm">
-            <strong>This PDF is password-protected.</strong>
+            <strong>This PDF is locked with a password.</strong>
             <p>
-              The form fields cannot be read until the encryption is removed. Run it through{' '}
+              The boxes cannot be read while the file is locked. Run it through{' '}
               <Link to="/tools/unlock-pdf">Unlock PDF</Link> first, then come back.
             </p>
           </div>
@@ -191,10 +191,10 @@ export default function FormsTool() {
 
         {status === 'none' && (
           <div className="tool-notice">
-            <strong>This PDF has no fillable form fields.</strong>
+            <strong>This PDF has no boxes you can fill in.</strong>
             <p>
-              It is a flat document, the boxes and lines you can see are just drawing, not an AcroForm. To type on it
-              anyway, use <Link to="/tools/edit-pdf">Edit PDF</Link>, which stamps text wherever you click.
+              It is a flat document: the boxes and lines you can see are just drawings, not real form fields. To type
+              on it anyway, use <Link to="/tools/edit-pdf">Edit PDF</Link>, which puts text wherever you click.
             </p>
           </div>
         )}
@@ -248,7 +248,7 @@ export default function FormsTool() {
                   )}
                   {(f.kind === 'button' || f.kind === 'unknown') && (
                     <p className="muted" style={{ margin: 0, fontSize: '0.85rem' }}>
-                      Left as-is; this field type has no value to fill.
+                      Left as it is; this kind of box has nothing to type into.
                     </p>
                   )}
                 </div>
@@ -261,22 +261,22 @@ export default function FormsTool() {
       <div className="card stack">
         <h4 style={{ margin: 0 }}>Save</h4>
         <p className="muted" style={{ margin: 0, fontSize: '0.85rem' }}>
-          {status === 'ready' ? `${editable} editable field(s), ${filled} with a value.` : 'Load a form to see its fields.'}
+          {status === 'ready' ? `${editable} box(es) to fill in, ${filled} filled so far.` : 'Add a form to see its boxes.'}
         </p>
         <button className="btn btn-acid btn-lg btn-block" disabled={status !== 'ready' || !!busy} onClick={() => save(false)}>
-          {busy === 'fill' ? 'Saving…' : 'Save filled'}
+          {busy === 'fill' ? 'Saving…' : 'Save, still editable'}
         </button>
         <button className="btn btn-lg btn-block" disabled={status !== 'ready' || !!busy} onClick={() => save(true)}>
-          {busy === 'flatten' ? 'Flattening…' : 'Save flattened'}
+          {busy === 'flatten' ? 'Locking…' : 'Save and lock the answers'}
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
-          <strong>Filled</strong> keeps the fields live, so the answers can still be changed later.{' '}
-          <strong>Flattened</strong> paints the answers into the page and drops the form, so nobody can edit them, do
-          that last, on a copy. Appearances are regenerated with Helvetica; a form that asks for a font you don't have
-          will look slightly different.
+          <strong>Still editable</strong> keeps the boxes live, so the answers can be changed later.{' '}
+          <strong>Lock the answers</strong> paints them onto the page and removes the boxes, so nobody can change them.
+          Do that last, on a copy. Answers are drawn in a standard font; a form that asks for a font your computer does
+          not have will look slightly different.
         </p>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
-          Option lists that allow several selections are saved with one choice only.
+          Lists that allow more than one choice are saved with a single choice.
         </p>
       </div>
     </div>

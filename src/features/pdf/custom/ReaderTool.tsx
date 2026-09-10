@@ -112,7 +112,7 @@ export default function ReaderTool() {
     return (
       <div className="stack" style={{ maxWidth: 720 }}>
         <Dropzone accept=".pdf" multiple={false} onFiles={(f) => setFile(f[0])} label="Drop a PDF to read" />
-        <p className="muted">Renders with pdf.js. Big files stay big, but nothing is uploaded.</p>
+        <p className="muted">Opens right in your browser. Nothing is uploaded, even big files.</p>
       </div>
     )
 
@@ -157,8 +157,8 @@ export default function ReaderTool() {
         <div ref={mainRef} className="reader-main" />
       </div>
       <p className="muted" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
-        Want to edit it? Try <Link to="/tools/organize-pdf">Organize pages</Link>, <Link to="/tools/sign-pdf">Sign</Link> or{' '}
-        <Link to="/tools/add-watermark">Watermark</Link>.
+        Want to change it? Try <Link to="/tools/organize-pdf">Organize Pages</Link>, <Link to="/tools/sign-pdf">Sign PDF</Link> or{' '}
+        <Link to="/tools/add-watermark">Add Watermark</Link>.
       </p>
     </div>
   )

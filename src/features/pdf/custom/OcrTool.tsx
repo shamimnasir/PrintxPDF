@@ -35,15 +35,15 @@ export default function OcrTool() {
     setBusy(true)
     setText('')
     setOutputs([])
-    setProgress({ f: 0, msg: 'Loading language data (first run downloads ~10 MB)…' })
+    setProgress({ f: 0, msg: 'Loading the language pack (about 10 MB the first time)…' })
     try {
       const { ocr } = await import('../engines')
       const r = await ocr(files[0], lang, (f, msg) => setProgress({ f, msg }), user && user.plan !== 'free' ? 200 : 30)
       setText(r.text)
       setOutputs(r.outputs)
-      toast(r.note ? `OCR complete. ${r.note}` : 'OCR complete')
+      toast(r.note ? `Text recognised. ${r.note}` : 'Text recognised')
     } catch (e) {
-      toast(`OCR failed: ${(e as Error).message}`, 'error')
+      toast(`Could not read the text: ${(e as Error).message}`, 'error')
     } finally {
       setBusy(false)
       setProgress(null)
@@ -59,7 +59,7 @@ export default function OcrTool() {
         {text && (
           <div className="card">
             <div className="row between" style={{ marginBottom: '0.75rem' }}>
-              <h4 style={{ margin: 0 }}>Recognized text</h4>
+              <h4 style={{ margin: 0 }}>Text found in your file</h4>
               <button className="btn btn-sm" onClick={() => navigator.clipboard.writeText(text).then(() => toast('Copied'))}>
                 Copy
               </button>
@@ -74,7 +74,7 @@ export default function OcrTool() {
       <div className="card stack">
         <h4 style={{ margin: 0 }}>Options</h4>
         <div>
-          <label className="label">Language</label>
+          <label className="label">Language of the text</label>
           <select className="select" value={lang} onChange={(e) => setLang(e.target.value)}>
             {LANGS.map(([v, l]) => (
               <option key={v} value={v}>
@@ -84,10 +84,10 @@ export default function OcrTool() {
           </select>
         </div>
         <button className="btn btn-acid btn-lg btn-block" disabled={!files.length || busy} onClick={run}>
-          {busy ? 'Recognizing…' : 'Run OCR'}
+          {busy ? 'Reading the text…' : 'Run OCR'}
         </button>
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-          Powered by Tesseract compiled to WebAssembly. Language packs download once and are cached. PDFs are capped at 30 pages per file on the free plan and 200 on Pro. Output: a .txt and a searchable PDF with an invisible text layer.
+          OCR (turning a picture of text into real, searchable text) runs in your browser, so nothing is uploaded. Each language pack downloads once and is kept for next time. Free plan: up to 30 pages per PDF. Pro: up to 200. You get a plain text file plus a copy of your PDF that you can search, with the text laid invisibly over the scan.
         </p>
       </div>
     </div>

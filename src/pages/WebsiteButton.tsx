@@ -6,7 +6,7 @@ import { Seg } from '../components/ui/Seg'
 export default function WebsiteButton() {
   useSeo({
     title: 'Print Button Generator for Any Website',
-    description: 'Generate a copy-paste print and PDF button for any site. Plain HTML with inline styles, so it works in WordPress, Squarespace, Wix, Shopify and static sites.',
+    description: 'Make a print and PDF button for your website in seconds. Copy one small piece of code and paste it into WordPress, Squarespace, Wix, Shopify or any other site.',
     path: '/website-button',
     keywords: ['print button html', 'add print button to website', 'print page button code'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Print button', path: '/website-button' }])],
@@ -36,7 +36,7 @@ export default function WebsiteButton() {
       <h1>
         A print button for <span className="acid-mark">any site.</span>
       </h1>
-      <p className="lead">Paste one snippet. When a reader clicks it, the current page opens in the PrintxPDF cleaner, ready to print, PDF or email.</p>
+      <p className="lead">Copy one small piece of code and paste it into your site. When a reader clicks the button, the page opens in the PrintxPDF cleaner, ready to print, save as a PDF or email.</p>
 
       <div className="tool-grid" style={{ marginTop: '2rem' }}>
         <div className="stack">
@@ -46,8 +46,8 @@ export default function WebsiteButton() {
           </div>
           <div className="card">
             <div className="row between" style={{ marginBottom: '0.75rem' }}>
-              <span className="label" style={{ margin: 0 }}>Embed code</span>
-              <button className="btn btn-sm btn-acid" onClick={() => navigator.clipboard.writeText(snippet).then(() => toast('Snippet copied'))}>
+              <span className="label" style={{ margin: 0 }}>Code to paste into your site</span>
+              <button className="btn btn-sm btn-acid" onClick={() => navigator.clipboard.writeText(snippet).then(() => toast('Code copied'))}>
                 Copy
               </button>
             </div>
@@ -72,7 +72,7 @@ export default function WebsiteButton() {
             <input type="checkbox" checked={icon} onChange={(e) => setIcon(e.target.checked)} /> Show printer icon
           </label>
           <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-            The button is plain HTML with inline styles, so it works in any CMS, static site or email template that allows links.
+            The button is a plain link with its styling built in, so it works on any website builder, blog or email template that allows links.
           </p>
         </div>
       </div>

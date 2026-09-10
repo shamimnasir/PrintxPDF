@@ -18,7 +18,7 @@ const NAV = [
   ['api-key', 'Access key'],
   ['settings', 'Settings'],
   ['billing', 'Subscription'],
-  ['domains', 'Domains'],
+  ['domains', 'My websites'],
 ]
 
 const planName = (p: Plan) => (p === 'api' ? 'API' : p === 'pro' ? 'Pro' : 'Free')
@@ -213,12 +213,12 @@ function ApiKey() {
     }
   }
   const rotate = async () => {
-    if (!token || !user.entitlement || !confirm('Rotate the key? The current one stops working everywhere, including any API integration.')) return
+    if (!token || !user.entitlement || !confirm('Get a new key? The current one stops working everywhere, including any software you connected with it.')) return
     setBusy(true)
     try {
       const r = await billing.rotate(token)
       store.updateUser({ entitlement: { ...user.entitlement, token: r.token } })
-      toast('Key rotated')
+      toast('New key ready')
     } catch (e) {
       toast(describeError(e).message, 'error')
     } finally {
@@ -232,8 +232,8 @@ function ApiKey() {
       {paid ? (
         <>
           <p className="muted">
-            This key is your subscription. It authenticates the <Link to="/api">API</Link> (as a Bearer header) and restores your plan on
-            another device: paste it under Account → Access key there. Treat it like a password.
+            This key is your subscription. Paste it under Account, then Access key on another device to turn your plan on there.
+            Developers also use it to connect their own software to the <Link to="/api">API</Link>. Treat it like a password.
           </p>
           <pre className="code" style={{ wordBreak: 'break-all', whiteSpace: 'pre-wrap' }}>{token}</pre>
           <div className="row">
@@ -241,7 +241,7 @@ function ApiKey() {
               Copy
             </button>
             <button className="btn btn-sm btn-alarm" disabled={busy} onClick={rotate}>
-              Rotate key
+              Get a new key
             </button>
           </div>
         </>
@@ -291,10 +291,10 @@ function SettingsPage() {
       <button
         className="btn btn-sm btn-alarm"
         onClick={() => {
-          if (!confirm('Delete all local data (account, documents, signatures)?')) return
+          if (!confirm('Delete everything saved in this browser (account, documents, signatures)?')) return
           localStorage.clear()
           store.signOut()
-          toast('Everything wiped')
+          toast('Everything deleted')
         }}
       >
         Delete all my data
@@ -321,7 +321,7 @@ function Billing() {
               {me && <span className={`badge ${me.active ? '' : 'badge-alarm'}`}>{me.active ? (me.cancelAtPeriodEnd ? 'Cancels at period end' : 'Active') : 'Inactive'}</span>}
             </div>
             <p style={{ margin: '0.75rem 0 0' }}>
-              {me?.currentPeriodEnd ? `${me.cancelAtPeriodEnd ? 'Access ends' : 'Next payment'} on ${fmtDate(me.currentPeriodEnd)}.` : error || 'Checking with Stripe…'}
+              {me?.currentPeriodEnd ? `${me.cancelAtPeriodEnd ? 'Access ends' : 'Next payment'} on ${fmtDate(me.currentPeriodEnd)}.` : error || 'Checking your subscription…'}
               {me && ` ${me.usage.used} of ${me.usage.limit} server conversions used this month.`}
             </p>
             {me && (
@@ -336,8 +336,9 @@ function Billing() {
             </button>
           </div>
           <p className="muted" style={{ fontSize: '0.85rem' }}>
-            The Stripe customer portal handles invoices, payment method, plan changes and cancellation. Cancelling keeps access until the
-            end of the paid period. <Link to="/terms#refunds">Refund policy</Link>.
+            Manage subscription opens a secure billing page run by Stripe, our payment provider. There you can see invoices, change
+            your card, switch plan or cancel. If you cancel, you keep access until the end of the period you paid for.{' '}
+            <Link to="/terms#refunds">Refund policy</Link>.
           </p>
         </>
       ) : (
@@ -355,8 +356,8 @@ function Billing() {
           Lost the browser you subscribed in?{' '}
           <a href={cfg.billing.portalLoginUrl} target="_blank" rel="noopener">
             Manage your subscription by email
-          </a>{' '}
-         , Stripe sends a sign-in link to the address you paid with.
+          </a>
+          . Stripe sends a sign-in link to the address you paid with.
         </p>
       )}
     </div>
@@ -372,8 +373,8 @@ function Domains() {
   }
   return (
     <div className="stack" style={{ maxWidth: 560 }}>
-      <h2 style={{ fontSize: '2rem' }}>Manage domains</h2>
-      <p className="muted">Domains where you have installed the <Link to="/website-button">print button</Link>. Kept in this browser for your own reference.</p>
+      <h2 style={{ fontSize: '2rem' }}>My websites</h2>
+      <p className="muted">Websites where you have added the <Link to="/website-button">print button</Link>. This list is saved in this browser only, as a reminder for you.</p>
       <div className="row" style={{ gap: '0.5rem' }}>
         <input className="input" style={{ flex: 1 }} placeholder="example.com" value={v} onChange={(e) => setV(e.target.value)} />
         <button
@@ -406,7 +407,7 @@ export default function Account() {
   const sessionId = params.get('session_id')
   const [activating, setActivating] = useState(!!sessionId)
   const [activationError, setActivationError] = useState<string | null>(null)
-  useSeo({ title: 'Your account | PrintxPDF', description: 'Saved documents, signatures, settings and your subscription.', path: '/account', noindex: true })
+  useSeo({ title: 'Your account | PrintxPDF', description: 'Your PrintxPDF account: your plan, monthly usage, saved documents, signatures and settings, all kept in this browser and never sent anywhere.', path: '/account', noindex: true })
 
   // back from Stripe Checkout: turn the session into an entitlement, then drop the id from the URL
   useEffect(() => {
@@ -417,7 +418,7 @@ export default function Account() {
       .then((e) => {
         if (!alive) return
         store.setEntitlement(e)
-        toast(`${planName(e.plan)} is active. Thank you!`)
+        toast(`${planName(e.plan)} plan is now active. Thank you.`)
         setParams({}, { replace: true })
         setActivating(false)
       })

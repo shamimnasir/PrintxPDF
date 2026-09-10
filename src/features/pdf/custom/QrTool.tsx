@@ -4,6 +4,8 @@ import { downloadBlob } from '../../../lib/download'
 import { qrPdf, qrPng, qrSvg } from '../engines'
 
 type Kind = 'url' | 'text' | 'wifi' | 'email' | 'sms' | 'phone' | 'vcard'
+/** plain tab names; the keys stay as they are because the payload builder switches on them */
+const KIND_LABEL: Record<Kind, string> = { url: 'Web link', text: 'Text', wifi: 'WiFi', email: 'Email', sms: 'Text message', phone: 'Phone call', vcard: 'Contact card' }
 
 // hoisted so typing does not remount the input and lose focus
 function Input({ k, label, placeholder, type = 'text', f, set }: { k: string; label: string; placeholder?: string; type?: string; f: Record<string, string>; set: (k: string, v: string) => void }) {
@@ -69,7 +71,7 @@ export default function QrTool() {
   }, [payload, dark, light, margin])
 
   const dl = async (fmt: 'png' | 'svg' | 'pdf') => {
-    if (!payload) return toast('Fill in the content first', 'error')
+    if (!payload) return toast('Fill in the details first', 'error')
     try {
       if (fmt === 'png') downloadBlob(await qrPng(payload, { size, dark, light, margin }), 'qr-code.png')
       if (fmt === 'svg') downloadBlob(new Blob([await qrSvg(payload, { dark, light, margin })], { type: 'image/svg+xml' }), 'qr-code.svg')
@@ -85,7 +87,7 @@ export default function QrTool() {
         <div className="tabs">
           {(['url', 'text', 'wifi', 'email', 'sms', 'phone', 'vcard'] as Kind[]).map((k) => (
             <button key={k} className={`tab ${kind === k ? 'active' : ''}`} onClick={() => setKind(k)}>
-              {k}
+              {KIND_LABEL[k]}
             </button>
           ))}
         </div>
@@ -98,14 +100,14 @@ export default function QrTool() {
         )}
         {kind === 'wifi' && (
           <>
-            <Input k="ssid" label="Network name (SSID)" f={f} set={set} />
-            <Input k="pass" label="Password" f={f} set={set} />
+            <Input k="ssid" label="WiFi network name" f={f} set={set} />
+            <Input k="pass" label="WiFi password" f={f} set={set} />
             <div className="field" style={{ margin: 0 }}>
-              <label className="label">Security</label>
+              <label className="label">Password type (most networks use WPA)</label>
               <select className="select" value={f.enc} onChange={(e) => set('enc', e.target.value)}>
                 <option value="WPA">WPA / WPA2</option>
                 <option value="WEP">WEP</option>
-                <option value="nopass">Open</option>
+                <option value="nopass">No password</option>
               </select>
             </div>
           </>
@@ -135,21 +137,21 @@ export default function QrTool() {
         )}
         <div className="grid grid-2" style={{ gap: '1rem' }}>
           <div>
-            <label className="label">Dark</label>
+            <label className="label">Code colour</label>
             <input type="color" value={dark} onChange={(e) => setDark(e.target.value)} className="input" style={{ height: 48, padding: 4 }} />
           </div>
           <div>
-            <label className="label">Light</label>
+            <label className="label">Background colour</label>
             <input type="color" value={light} onChange={(e) => setLight(e.target.value)} className="input" style={{ height: 48, padding: 4 }} />
           </div>
         </div>
         <div className="grid grid-2" style={{ gap: '1rem' }}>
           <div>
-            <label className="label">PNG size · {size}px</label>
+            <label className="label">Image size · {size}px</label>
             <input type="range" min={128} max={2048} step={64} value={size} onChange={(e) => setSize(+e.target.value)} style={{ width: '100%', accentColor: 'var(--ink)' }} />
           </div>
           <div>
-            <label className="label">Quiet zone · {margin}</label>
+            <label className="label">White border · {margin}</label>
             <input type="range" min={0} max={8} value={margin} onChange={(e) => setMargin(+e.target.value)} style={{ width: '100%', accentColor: 'var(--ink)' }} />
           </div>
         </div>

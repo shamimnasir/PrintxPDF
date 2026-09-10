@@ -24,17 +24,17 @@ const ERRORS: [string, string][] = [
   ['402 quota_exceeded', 'Free allowance used up; the body has used and limit.'],
   ['402 subscription_inactive', 'The subscription behind the key is cancelled or unpaid.'],
   ['413 too_large', 'Files are limited to 100 MB.'],
-  ['415 unsupported_media_type', 'Wrong file type for that endpoint (checked by magic bytes, not just the extension).'],
-  ['415 drm_protected', 'The ebook is DRM-protected and cannot be converted.'],
+  ['415 unsupported_media_type', 'Wrong file type for that address (we check the file contents, not just the file name).'],
+  ['415 drm_protected', 'The ebook is copy-protected (DRM) and cannot be converted.'],
   ['429 rate_limited / quota_exceeded', 'Slow down, or the paid quota is used up for the month.'],
-  ['503 busy', 'Every converter is working; wait for Retry-After seconds and try again.'],
+  ['503 busy', 'Every converter is busy; wait the number of seconds given in Retry-After and try again.'],
   ['504 timeout', 'The job passed the two-minute limit.'],
 ]
 
 export default function Api() {
   useSeo({
     title: 'PDF Conversion API | PowerPoint, EPUB and MOBI to PDF',
-    description: 'An HTTPS API that converts PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF. Send a file, get a file back. 5 free conversions a month; the API plan includes 5,000.',
+    description: 'A simple web API for developers: send a PowerPoint, EPUB or MOBI file and get a PDF back, or turn a PDF into PowerPoint. 5 free a month; the API plan has 5,000.',
     path: '/api',
     keywords: ['pptx to pdf api', 'pdf to pptx api', 'epub to pdf api', 'mobi to pdf api', 'document conversion api'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'API', path: '/api' }])],
@@ -46,12 +46,12 @@ export default function Api() {
     <div className="container section">
       <span className="eyebrow">PDF API · live at {API_BASE.replace(/^https?:\/\//, '')}</span>
       <h1>
-        Convert files, <span className="acid-mark">programmatically.</span>
+        Convert files <span className="acid-mark">from your own software.</span>
       </h1>
       <p className="lead">
-        A handful of jobs need a real engine, Office layout, ebook rendering, PDF encryption, so they run on our server instead of in the browser. Send a file with one
-        multipart request and get the converted file back. Files are processed in an isolated container and deleted the moment
-        the response is sent.
+        This page is for developers. A handful of jobs (PowerPoint layout, ebooks, PDF passwords) need software a browser does
+        not have, so they run on our server. Your program sends a file in one request and gets the converted file back. Files
+        are handled in a sealed-off workspace and deleted the moment the reply is sent.
       </p>
 
       <div className="grid grid-2" style={{ marginTop: '2rem' }}>
@@ -60,7 +60,7 @@ export default function Api() {
           <h3 style={{ marginTop: '0.75rem' }}>One request</h3>
           <pre className="code">{CURL}</pre>
           <p className="muted" style={{ fontSize: '0.85rem', marginTop: '0.75rem' }}>
-            Without a key you get 5 free conversions a month per IP address. The response carries <code className="inline">x-pxp-usage: used/limit</code> and a
+            Without a key you get 5 free conversions a month per internet connection (IP address). Each reply carries <code className="inline">x-pxp-usage: used/limit</code> and a
             <code className="inline">content-disposition</code> file name.
           </p>
           <table className="table" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
@@ -93,9 +93,9 @@ export default function Api() {
               </tr>
             </thead>
             <tbody>
-              <tr><td>Free</td><td>5 per IP</td><td>none</td></tr>
+              <tr><td>Free</td><td>5 per IP address</td><td>none</td></tr>
               <tr><td>Pro · $5</td><td>300</td><td>yes</td></tr>
-              <tr><td>API · $29</td><td>5,000</td><td>yes, 1-year expiry</td></tr>
+              <tr><td>API · $29</td><td>5,000</td><td>yes, valid for one year</td></tr>
             </tbody>
           </table>
           <h4 style={{ marginTop: '1.5rem' }}>Your access key</h4>
@@ -103,7 +103,7 @@ export default function Api() {
             <>
               <pre className="code" style={{ wordBreak: 'break-all', whiteSpace: 'pre-wrap' }}>{key}</pre>
               <p className="muted" style={{ fontSize: '0.8rem' }}>
-                Pass it as <code className="inline">Authorization: Bearer …</code>. Rotate it from <Link to="/account/api-key">your account</Link> if it leaks.
+                Pass it as <code className="inline">Authorization: Bearer …</code>. If it ever leaks, get a new one from <Link to="/account/api-key">your account</Link>.
               </p>
             </>
           ) : (
@@ -111,12 +111,12 @@ export default function Api() {
               <Link to="/pricing" className="btn btn-sm btn-acid">
                 Get a key
               </Link>{' '}
-              with the Pro or API plan. Keys are shown under Account → Access key.
+              with the Pro or API plan. Keys are shown under Account, then Access key.
             </p>
           )}
           <h4 style={{ marginTop: '1.5rem' }}>Errors</h4>
           <p className="muted" style={{ fontSize: '0.8rem' }}>
-            Failures return JSON <code className="inline">{'{ "error", "code" }'}</code>:
+            When something fails you get a short JSON reply like <code className="inline">{'{ "error", "code" }'}</code>:
           </p>
           <table className="table" style={{ fontSize: '0.8rem' }}>
             <tbody>
@@ -134,7 +134,7 @@ export default function Api() {
       <div className="card card-flat" style={{ marginTop: '2rem' }}>
         <h3>Self-hosting</h3>
         <p style={{ margin: 0 }}>
-          The whole API, including the LibreOffice and Calibre container, is open source in the <code className="inline">worker/</code>{' '}
+          The whole API, including the conversion container, is open source in the <code className="inline">worker/</code>{' '}
           directory of the repository. Deploy it to your own Cloudflare account with <code className="inline">wrangler deploy</code> and point the site at it
           with <code className="inline">VITE_API_BASE</code>.
         </p>

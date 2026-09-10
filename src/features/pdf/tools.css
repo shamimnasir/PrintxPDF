@@ -614,3 +614,11 @@
   align-items: center;
   justify-content: center;
 }
+
+/* editorial half of a tool page: article plus the sticky sidebar shared with guides */
+.tool-content-wrap {
+  margin-top: 2.5rem;
+}
+.tool-content-wrap .tool-content {
+  min-width: 0;
+}

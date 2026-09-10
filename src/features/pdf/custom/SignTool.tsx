@@ -209,7 +209,7 @@ export default function SignTool() {
     if (!store.getUser()) return toast('Sign in to keep signatures across visits', 'error')
     const ok = store.addSignature(typed || `Signature ${saved.length + 1}`, sig)
     setSaved(store.getSignatures())
-    toast(ok ? 'Signature saved to your account' : 'Could not save: browser storage is full', ok ? 'ok' : 'error')
+    toast(ok ? 'Signature saved to your account' : 'Could not save: your browser has run out of space for this site', ok ? 'ok' : 'error')
   }
 
   return (
@@ -294,8 +294,8 @@ export default function SignTool() {
         {tab === 'upload' && (
           <div className="stack">
             <p className="muted" style={{ margin: 0, fontSize: '0.88rem' }}>
-              A PNG with a transparent background sits cleanest on the page. A photo of a signature on white paper works
-              too, but the white block will cover whatever is under it.
+              A PNG with a see-through background sits cleanest on the page. A photo of your signature on white paper
+              works too, but the white block will cover whatever is under it.
             </p>
             <input className="input" type="file" accept="image/png,image/jpeg,image/webp" onChange={(e) => onUpload(e.target.files?.[0])} />
             {uploaded && (

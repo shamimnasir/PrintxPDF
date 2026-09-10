@@ -9,11 +9,11 @@ export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
   const { toast } = useToast()
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  useSeo({ title: mode === 'up' ? 'Sign up, PrintxPDF' : 'Log in, PrintxPDF', description: 'A local account kept in this browser: saved documents, signatures, settings and your access key.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
+  useSeo({ title: mode === 'up' ? 'Sign up, PrintxPDF' : 'Log in, PrintxPDF', description: 'A simple account saved in this browser only. It keeps your saved documents, signatures, settings and your access key together. No password needed.', path: mode === 'up' ? '/signup' : '/signin', noindex: true })
 
   const submit = (e: FormEvent) => {
     e.preventDefault()
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return toast('Enter a valid email', 'error')
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return toast('Please enter a valid email address', 'error')
     store.signIn(email.trim().toLowerCase(), name.trim())
     toast(mode === 'up' ? 'Account created' : 'Welcome back')
     nav('/account')
@@ -21,9 +21,9 @@ export default function SignIn({ mode }: { mode: 'in' | 'up' }) {
 
   return (
     <div className="container section" style={{ maxWidth: 520 }}>
-      <span className="eyebrow">Account · stored in this browser</span>
+      <span className="eyebrow">Account · saved in this browser</span>
       <h1>{mode === 'up' ? 'Sign up' : 'Log in'}</h1>
-      <p className="muted">No password and no email is sent. Your account lives in this browser: it keeps saved documents, signatures and settings together, and holds your access key once you subscribe. Subscribed on another device? Sign in, then paste the key under Account → Access key.</p>
+      <p className="muted">No password, and we never send you an email. Your account is saved in this browser only. It keeps your saved documents, signatures and settings together, and holds your access key once you subscribe. Subscribed on another device? Log in here, then paste the key under Account, then Access key.</p>
       <form className="card stack" onSubmit={submit}>
         {mode === 'up' && (
           <div>

@@ -19,3 +19,7 @@ public/llms.txt
 __pycache__/
 dist-extension/
 dist-wp/
+
+# tool audit (scripts/audit-tools.mjs): downloads, failure shots, run log
+audit/out/
+audit/*.log

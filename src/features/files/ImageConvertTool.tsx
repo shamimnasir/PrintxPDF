@@ -136,7 +136,7 @@ export default function ImageConvertTool() {
         <h4 style={{ margin: 0 }}>Options</h4>
         <div className="fx-field">
           <label className="label">Convert to</label>
-          <div className="fx-seg" role="group" aria-label="Output format">
+          <div className="fx-seg" role="group" aria-label="Convert to">
             {(['jpg', 'png', 'webp'] as OutFormat[])
               .filter((f) => f !== 'webp' || webp !== false)
               .map((f) => (
@@ -147,7 +147,7 @@ export default function ImageConvertTool() {
           </div>
           {webp === false && (
             <p className="muted" style={{ fontSize: '0.75rem', margin: 0 }}>
-              This browser cannot encode WebP, so that option is hidden.
+              This browser cannot make WebP files, so that option is hidden.
             </p>
           )}
         </div>
@@ -162,9 +162,9 @@ export default function ImageConvertTool() {
         {hasSvg && (
           <>
             <div className="fx-field">
-              <label className="label">SVG size</label>
+              <label className="label">Size for SVG drawings</label>
               <div className="fx-inline">
-                <div className="fx-seg" style={{ flex: 1 }} role="group" aria-label="SVG scale">
+                <div className="fx-seg" style={{ flex: 1 }} role="group" aria-label="How many times larger than the drawing">
                   {SVG_SCALES.map((s) => (
                     <button key={s} type="button" aria-pressed={!svgWidth && svgScale === s} onClick={() => {
                       setSvgWidth('')
@@ -180,17 +180,17 @@ export default function ImageConvertTool() {
                   type="number"
                   min={1}
                   max={16384}
-                  placeholder="width px"
+                  placeholder="or width in pixels"
                   value={svgWidth}
                   onChange={(e) => setSvgWidth(e.target.value)}
-                  aria-label="Explicit SVG width in pixels"
+                  aria-label="Exact width in pixels"
                 />
               </div>
             </div>
             {format !== 'jpg' && (
               <label className="fx-check">
                 <input type="checkbox" checked={svgWhite} onChange={(e) => setSvgWhite(e.target.checked)} />
-                White background (instead of transparent)
+                White background (instead of see-through)
               </label>
             )}
           </>
@@ -199,9 +199,9 @@ export default function ImageConvertTool() {
           {busy ? 'Converting…' : `Convert ${files.length || ''} to ${FORMAT_LABEL[format]}`}
         </button>
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-          Runs entirely in your browser; nothing is uploaded. {hasHeic ? 'HEIC photos are decoded with libheif (LGPL) compiled to WebAssembly, loaded on first use (~2 MB). ' : ''}
-          Photo orientation from your phone is preserved. {format === 'jpg' ? 'JPG has no transparency; transparent areas become white.' : ''}
-          {files.length ? ` Total input: ${formatBytes(files.reduce((n, f) => n + f.size, 0))}.` : ''}
+          Everything happens in your browser; nothing is uploaded. {hasHeic ? 'iPhone HEIC photos need a small helper (about 2 MB) that loads the first time you use it. ' : ''}
+          Photos from your phone stay the right way up. {format === 'jpg' ? 'JPG cannot be see-through, so any see-through areas become white.' : ''}
+          {files.length ? ` Total size added: ${formatBytes(files.reduce((n, f) => n + f.size, 0))}.` : ''}
         </p>
       </div>
     </div>

@@ -8,9 +8,9 @@ const BOOKMARKLET = `javascript:(function(){window.open('${SITE_URL}${import.met
 const EXTENSION_ZIP = '/downloads/printxpdf-chrome-extension.zip'
 
 const STEPS = [
-  ['Download the extension', 'A small ZIP, about 20 KB. Unzip it anywhere you will not delete by accident.'],
+  ['Download the extension', 'A small zipped folder, about 20 KB. Unzip it somewhere you will not delete by accident.'],
   ['Open chrome://extensions', 'Paste that into the address bar and turn on "Developer mode" in the top right.'],
-  ['Load unpacked', 'Click "Load unpacked" and pick the folder you just unzipped. Pin PrintxPDF to your toolbar.'],
+  ['Load the folder', 'Click "Load unpacked" and pick the folder you just unzipped. Pin PrintxPDF to your toolbar.'],
 ]
 
 const USES: [string, string][] = [
@@ -18,7 +18,7 @@ const USES: [string, string][] = [
   ['Recipes', 'Skip the backstory. Drag over it to delete, then print the ingredients and the steps.'],
   ['Receipts and confirmations', 'Save order pages and tickets as tidy PDFs for your records.'],
   ['Research', 'Turn documentation and papers into readable PDFs with highlights and notes.'],
-  ['Screenshots', 'Capture the cleaned page as a PNG for slides and messages.'],
+  ['Snapshots', 'Save the cleaned page as an image for slides and messages.'],
   ['Email to self', 'One click opens a prefilled email containing the cleaned text.'],
 ]
 
@@ -26,7 +26,7 @@ export default function Extensions() {
   const { browser } = useParams()
   useSeo({
     title: 'PrintxPDF for Chrome | Print Any Page Clean',
-    description: 'A Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comment walls stripped, ready to print or save as PDF. Free, and it reads nothing until you click it.',
+    description: 'A free Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comments removed, ready to print or save as a PDF.',
     path: '/extensions/chrome',
     keywords: ['chrome print extension', 'print friendly chrome extension', 'save webpage as pdf chrome', 'print without ads'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Chrome extension', path: '/extensions/chrome' }])],
@@ -39,7 +39,7 @@ export default function Extensions() {
     <>
       <section className="section center">
         <div className="container">
-          <span className="eyebrow">Chrome extension · load unpacked</span>
+          <span className="eyebrow">Chrome extension · install by hand</span>
           <h1 style={{ maxWidth: '18ch', margin: '0 auto 1rem' }}>
             Turn any page into a <span className="acid-mark">clean PDF.</span>
           </h1>
@@ -52,11 +52,11 @@ export default function Extensions() {
               Download for Chrome
             </a>
             <Link to="/print" className="btn btn-lg">
-              Or just paste a URL
+              Or just paste a link
             </Link>
           </div>
           <p className="muted" style={{ marginTop: '1rem' }}>
-            Not in the Chrome Web Store yet, so it installs in developer mode for now. The three steps are below.
+            Not in the Chrome Web Store yet, so for now you install it by hand. The three steps are below.
           </p>
         </div>
       </section>
@@ -75,8 +75,8 @@ export default function Extensions() {
             </ol>
           </div>
           <div className="card card-ink">
-            <h3 style={{ color: 'var(--acid-dim)' }}>No install? Use the bookmarklet</h3>
-            <p>Drag this to your bookmarks bar. Click it on any page and the cleaner opens with that page loaded.</p>
+            <h3 style={{ color: 'var(--acid-dim)' }}>No install? Use the bookmark button</h3>
+            <p>Drag this button to your bookmarks bar (a bookmarklet). Click it on any page and the cleaner opens with that page loaded.</p>
             <a
               className="btn btn-acid"
               href="#bookmarklet"
@@ -87,8 +87,8 @@ export default function Extensions() {
               PrintxPDF this page
             </a>
             <p className="mono" style={{ fontSize: '0.7rem', opacity: 0.7, marginTop: '1rem' }}>
-              Works in every browser, including Firefox and Safari. Right-click → copy link, then add a bookmark and paste it
-              as the address.
+              Works in every browser, including Firefox and Safari. Right-click the button, choose copy link, then add a new
+              bookmark and paste it as the address.
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function Extensions() {
             ))}
           </div>
           <p className="muted" style={{ marginTop: '1rem' }}>
-            It deliberately does not request access to all sites, sends nothing anywhere and contains no analytics. The
+            It deliberately does not ask for access to all sites, sends nothing anywhere and contains no tracking. The
             cleaning happens on printxpdf.com in your own browser.
           </p>
         </div>

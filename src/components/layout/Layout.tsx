@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { useHydrated } from '../ClientOnly'
+import { ErrorBoundary } from '../ErrorBoundary'
 
 /** Shown while a route chunk loads, and by app-only routes until they mount after hydration. */
 export function RouteLoading() {
@@ -24,9 +25,11 @@ export function Layout() {
     <>
       <Header />
       <main>
-        <Suspense fallback={<RouteLoading />}>
-          <Outlet />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<RouteLoading />}>
+            <Outlet />
+          </Suspense>
+        </ErrorBoundary>
       </main>
       {!bare && <Footer />}
     </>

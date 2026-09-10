@@ -9,7 +9,7 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
     title: kind === 'privacy' ? 'Privacy, Your Files Stay on Your Device' : 'Terms of Use',
     description:
       kind === 'privacy'
-        ? 'Browser tools never upload your files. A few server jobs send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.'
+        ? 'Browser tools never upload your files. A few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe; no card details stored.'
         : 'Terms for using PrintxPDF: free browser tools, a free monthly allowance of server conversions, and Pro and API subscriptions billed monthly by Stripe with a 14-day refund on the first charge.',
     path: kind === 'privacy' ? '/privacy' : '/terms',
     schema: [
@@ -27,23 +27,23 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
         <>
           <h1>Your files stay with you.</h1>
           <p className="lead">
-            Every browser tool processes your documents on your own computer. A few jobs run on our server and are deleted
-            the moment they finish.
+            Every browser tool works on your documents in your browser, on your own computer, with nothing uploaded. A few
+            jobs run on our server, and those files are deleted the moment they finish.
           </p>
-          <h3>What stays on your device</h3>
+          <h3>What stays on your computer</h3>
           <p>
             Merging, splitting, compressing, signing, OCR, the web-page cleaner and every other browser tool work in your
             browser's memory; the files are discarded when you close the tab. Account data, saved documents, signatures,
-            settings and your access key live in this browser's localStorage and are never sent to us.
+            settings and your access key are saved in this browser only and are never sent to us.
           </p>
-          <h3>What leaves your device</h3>
+          <h3>What leaves your computer</h3>
           <p>
             <strong>Web-page cleaning by URL.</strong> The address you paste is sent to our fetch proxy (or a public reader
             proxy) so the page can be retrieved. Only the address is transmitted.
           </p>
           <p>
             <strong>Server jobs.</strong> PowerPoint to PDF, PDF to PowerPoint, EPUB and MOBI to PDF, password protect and unlock, and PDF/A conversion upload the file
-            over HTTPS to our converter, which runs in an isolated container on Cloudflare. The file is held in memory and
+            over a secure connection to our converter, which runs in a sealed-off workspace on Cloudflare. The file is held in memory and
             temporary disk for the length of the job (at most two minutes), then deleted. We do not keep copies, and we do not
             log file contents. Free-tier usage is counted per calendar month against a salted hash of your IP address, kept for
             40 days; paid usage is counted against your subscription.
@@ -67,8 +67,8 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
         <>
           <h1>Terms, briefly.</h1>
           <p className="lead">
-            PrintxPDF is provided as-is. Browser tools are free. Server conversions have a free monthly allowance and paid
-            plans.
+            PrintxPDF is provided as-is. Browser tools are free. Server conversions (the few jobs that run on our server)
+            come with a free monthly allowance, and paid plans for more.
           </p>
           <h3>Use</h3>
           <p>

@@ -101,7 +101,7 @@ export default function RedactTool() {
       const total = src.getPageCount()
       for (let i = 0; i < total; i++) {
         const mine = boxes.filter((b) => b.page === i)
-        setProgress({ v: i / total, msg: mine.length ? `Rasterising page ${i + 1}…` : `Copying page ${i + 1}…` })
+        setProgress({ v: i / total, msg: mine.length ? `Blacking out page ${i + 1}…` : `Copying page ${i + 1}…` })
         if (!mine.length) {
           const [copied] = await out.copyPages(src, [i])
           out.addPage(copied)
@@ -111,7 +111,7 @@ export default function RedactTool() {
         const vp = page.getViewport({ scale: 1 })
         const c = await renderPageToCanvas(pdf, i + 1, EXPORT_SCALE)
         const ctx = c.getContext('2d')
-        if (!ctx) throw new Error('Canvas is unavailable in this browser')
+        if (!ctx) throw new Error('This browser cannot draw the pages')
         ctx.fillStyle = '#000000'
         for (const b of mine) ctx.fillRect(Math.round(b.x * c.width), Math.round(b.y * c.height), Math.ceil(b.w * c.width), Math.ceil(b.h * c.height))
         const bytes = await (await canvasToBlob(c, 'image/jpeg', 0.88)).arrayBuffer()
@@ -123,9 +123,9 @@ export default function RedactTool() {
       setProgress({ v: 1, msg: 'Saving…' })
       const bytes = await out.save()
       downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(file.name)}-redacted.pdf`)
-      toast(`Redacted ${touched.size} page(s)`)
+      toast(`Blacked out ${touched.size} page(s)`)
     } catch (e) {
-      toast(`Redaction failed: ${(e as Error).message}`, 'error')
+      toast(`Could not black out the pages: ${(e as Error).message}`, 'error')
     } finally {
       setBusy(false)
       setProgress(null)
@@ -137,8 +137,8 @@ export default function RedactTool() {
       <div className="stack" style={{ maxWidth: 720 }}>
         <Dropzone accept=".pdf" multiple={false} onFiles={(f) => setFile(f[0])} label="Drop a PDF to redact" />
         <p className="muted">
-          Drag a box over anything sensitive. On export the covered page is re-rendered as an image with the boxes
-          painted on, so the words underneath stop existing in the file rather than hiding behind a black rectangle.
+          Drag a box over anything private. When you download, each marked page is turned into a picture with the
+          boxes painted on, so the words underneath are really gone from the file, not just hidden behind a black box.
         </p>
       </div>
     )
@@ -155,7 +155,7 @@ export default function RedactTool() {
             <button className="icon-btn" disabled={!pdf || pageNo >= pdf.numPages} onClick={() => setPageNo(pageNo + 1)} aria-label="Next page">
               ›
             </button>
-            <span className="badge badge-acid">Drag to mark</span>
+            <span className="badge badge-acid">Drag a box over what to hide</span>
           </div>
           <div className="row" style={{ gap: '0.5rem' }}>
             <button className="btn btn-sm" onClick={wholePage}>
@@ -176,7 +176,7 @@ export default function RedactTool() {
             <div key={b.id} className="redact-box" style={{ left: `${b.x * 100}%`, top: `${b.y * 100}%`, width: `${b.w * 100}%`, height: `${b.h * 100}%` }}>
               <button
                 className="del"
-                aria-label="Remove this redaction"
+                aria-label="Remove this box"
                 onPointerDown={(e) => e.stopPropagation()}
                 onClick={() => setBoxes((list) => list.filter((x) => x.id !== b.id))}
               >
@@ -189,29 +189,29 @@ export default function RedactTool() {
       </div>
 
       <div className="card stack">
-        <h4 style={{ margin: 0 }}>Redactions</h4>
+        <h4 style={{ margin: 0 }}>Marked areas</h4>
         <p className="muted" style={{ margin: 0, fontSize: '0.85rem' }}>
           {boxes.length} box(es) across {touched.size} page(s).
         </p>
         {progress && <ProgressBar value={progress.v} msg={progress.msg} />}
         <button className="btn btn-acid btn-lg btn-block" disabled={!boxes.length || busy} onClick={run}>
-          {busy ? 'Redacting…' : 'Redact & download'}
+          {busy ? 'Blacking out…' : 'Redact & download'}
         </button>
         <button className="btn btn-sm btn-ghost" disabled={!boxes.length || busy} onClick={() => setBoxes([])}>
           Clear all
         </button>
         <div className="tool-notice">
-          <strong>What this costs you.</strong>
+          <strong>Good to know.</strong>
           <p>
-            Every page you mark is flattened to a {EXPORT_SCALE}× image. Those pages lose their selectable text, their
-            links and their accessibility tags, and the file gets bigger. Pages you don't mark are copied through
-            untouched and keep everything. Run <Link to="/tools/ocr-pdf">OCR</Link> afterwards if you need the redacted
-            pages searchable again.
+            Every page you mark is turned into a sharp picture ({EXPORT_SCALE}× size). On those pages you can no longer
+            select text or click links, and the file gets bigger. Pages you do not mark are copied through untouched.
+            Run <Link to="/tools/ocr-pdf">OCR PDF</Link> afterwards if you need the blacked-out pages searchable again.
           </p>
         </div>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
-          Check the result before sending it: metadata, attachments and bookmarks are not scrubbed by this tool. Use{' '}
-          <Link to="/tools/edit-metadata">Edit metadata</Link> for those.
+          Check the result before sending it. The hidden details stored inside the PDF (title, author, dates), attached
+          files and bookmarks are not cleared by this tool. Use <Link to="/tools/remove-metadata">Remove Metadata</Link>{' '}
+          for those.
         </p>
       </div>
     </div>

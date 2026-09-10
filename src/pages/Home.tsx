@@ -130,7 +130,7 @@ export default function Home() {
             <div>
               <span className="eyebrow">Popular PDF tools</span>
               <h2 style={{ margin: 0 }}>
-                Thirty-nine tools.
+                {tools.length} tools.
                 <br />
                 One tab. Zero uploads.
               </h2>
@@ -157,9 +157,9 @@ export default function Home() {
           </span>
           <div className="grid grid-3" style={{ marginTop: '1rem' }}>
             {[
-              ['01', 'Paste a link', 'The page is fetched and reduced to its article inside your browser. Navigation, sidebars, pop-ups and comment threads are gone before you see it.'],
+              ['01', 'Paste a link', 'We load the page and keep only the article, right in your browser. Menus, sidebars, pop-ups and comment threads are gone before you see it.'],
               ['02', 'Keep what you want', 'Click any paragraph, image or table to remove it, or drag across a whole section. Resize the text, shrink the images, undo with one key.'],
-              ['03', 'Print, save or send', 'Print with crisp text, save a PDF or a PNG, or email it to yourself. None of it is sent to a server.'],
+              ['03', 'Print, save or send', 'Print it with crisp text, save it as a PDF or an image, or email it to yourself. Nothing is uploaded.'],
             ].map(([n, h, p]) => (
               <div key={n} style={{ borderTop: '3px solid var(--footer-accent)', paddingTop: '1rem' }}>
                 <div className="mono" style={{ color: 'var(--footer-accent)', fontSize: '2rem', fontWeight: 600 }}>{n}</div>
@@ -182,9 +182,9 @@ export default function Home() {
           <h2>Take it wherever you work.</h2>
           <div className="grid grid-2" style={{ marginTop: '2rem' }}>
             {[
-              ['PDF studio', 'Thirty-nine tools for the whole life of a document: create, edit, fill, organize, protect, redact, compare, convert. Every browser tool runs on your machine.', '/tools', 'Open the tools'],
-              ['Chrome extension', 'One click on any page opens it in the cleaner. Right-click a link or a selection to send just that. It asks for nothing until you click.', '/extensions/chrome', 'Get the extension'],
-              ['WordPress plugin', 'Print, PDF and Email buttons on every post from one small free plugin. No account, no key, and nothing phones home.', '/wordpress', 'See the plugin'],
+              ['PDF tools', 'Everything a document needs: create, edit, fill in, organize, protect, black out private details, compare, convert. Browser tools never upload your file.', '/tools', 'Open the tools'],
+              ['Chrome extension', 'One click on any page opens it in the page cleaner. Right-click a link or some highlighted text to send just that. It reads nothing until you click.', '/extensions/chrome', 'Get the extension'],
+              ['WordPress plugin', 'Print, PDF and Email buttons on every post from one small free add-on. No account, no key, and it never contacts anyone.', '/wordpress', 'See the plugin'],
               ['Signatures', 'Draw or type a signature, place it on any page, add the date, download. Save it for next time.', '/tools/sign-pdf', 'Sign a PDF'],
             ].map(([h, p, to, cta]) => (
               <div key={h} className="card">
@@ -205,13 +205,13 @@ export default function Home() {
         <div className="container">
           <div className="card card-acid" style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', alignItems: 'center' }}>
             <div>
-              <h2 style={{ margin: 0 }}>Privacy is not a feature. It is the architecture.</h2>
+              <h2 style={{ margin: 0 }}>Privacy is not a feature. It is how the site is built.</h2>
             </div>
             <div>
               <p style={{ margin: 0, fontWeight: 600 }}>
-                Every browser tool processes your PDFs in memory on your own machine using pdf-lib, pdf.js and Tesseract.
-                Close the tab and they are gone. The few jobs that run on our server say so on their page, and delete your file
-                the moment they finish.
+                Every browser tool works on your PDF inside your browser, on your own computer. Nothing is uploaded. Close the
+                tab and the file is gone. The few jobs that need our server say so on their page, send the file over a secure
+                connection, and delete it the moment they finish.
               </p>
             </div>
           </div>

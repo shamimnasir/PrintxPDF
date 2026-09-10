@@ -20,9 +20,9 @@ type Opts = Record<string, string | number>
 
 const FIELDS: Record<string, Field[]> = {
   'split-pdf': [
-    { key: 'mode', label: 'Split by', type: 'select', options: [['ranges', 'Custom ranges'], ['every', 'Every N pages'], ['single', 'Every page']], default: 'ranges' },
-    { key: 'ranges', label: 'Ranges', type: 'text', default: '1-2, 3-', placeholder: '1-3, 4-6, 7-', help: 'Comma-separated. "7-" means page 7 to the end.' },
-    { key: 'every', label: 'N pages per file', type: 'number', default: 2, min: 1 },
+    { key: 'mode', label: 'Split by', type: 'select', options: [['ranges', 'Page ranges I type in'], ['every', 'Every few pages'], ['single', 'One file per page']], default: 'ranges' },
+    { key: 'ranges', label: 'Page ranges', type: 'text', default: '1-2, 3-', placeholder: '1-3, 4-6, 7-', help: 'Separate with commas. "7-" means from page 7 to the end.' },
+    { key: 'every', label: 'Pages per file', type: 'number', default: 2, min: 1 },
   ],
   'rotate-pdf': [
     { key: 'angle', label: 'Rotate', type: 'select', options: [['90', '90° clockwise'], ['180', '180°'], ['270', '90° counter-clockwise']], default: '90' },
@@ -33,44 +33,44 @@ const FIELDS: Record<string, Field[]> = {
   'compress-pdf': [
     {
       key: 'level',
-      label: 'Compression',
+      label: 'How much to shrink',
       type: 'select',
-      options: [['light', 'Light · lossless, keeps text'], ['medium', 'Medium · pages become images'], ['strong', 'Strong · smallest, lower quality']],
+      options: [['light', 'Light · no quality loss, text stays text'], ['medium', 'Medium · pages become pictures'], ['strong', 'Strong · smallest file, lower quality']],
       default: 'light',
-      help: 'Light rewrites the file structure and strips metadata. Medium/Strong rasterise pages, which is what shrinks scans.',
+      help: 'Light tidies up the file and removes hidden details (author, program, keywords) without touching quality. Medium and Strong turn each page into a picture, which is what makes scans much smaller, but the text can no longer be selected or searched.',
     },
   ],
   'pdf-to-jpg': [
-    { key: 'format', label: 'Format', type: 'select', options: [['jpg', 'JPG'], ['png', 'PNG']], default: 'jpg' },
-    { key: 'scale', label: 'Resolution', type: 'select', options: [['1', 'Screen · 72 dpi'], ['2', 'Draft print · 144 dpi'], ['3', 'Good print · 216 dpi'], ['4.167', 'Full print · 300 dpi']], default: '2' },
+    { key: 'format', label: 'Picture type', type: 'select', options: [['jpg', 'JPG'], ['png', 'PNG']], default: 'jpg' },
+    { key: 'scale', label: 'Picture quality', type: 'select', options: [['1', 'For screens · smallest files'], ['2', 'Draft print'], ['3', 'Good print'], ['4.167', 'Best print · largest files']], default: '2', help: 'Higher quality means sharper pictures and bigger files.' },
     { key: 'pages', label: 'Pages', type: 'text', default: '', placeholder: 'All pages (or e.g. 1-3)' },
   ],
   'jpg-to-pdf': [
     { key: 'pageSize', label: 'Page size', type: 'select', options: [['A4', 'A4'], ['Letter', 'Letter'], ['auto', 'Same as image']], default: 'A4' },
-    { key: 'fit', label: 'Image fit', type: 'select', options: [['fit', 'Fit inside margins'], ['fill', 'Fill page'], ['original', 'Original size']], default: 'fit' },
-    { key: 'margin', label: 'Margin (pt)', type: 'number', default: 36, min: 0, max: 144 },
+    { key: 'fit', label: 'How pictures fit', type: 'select', options: [['fit', 'Fit inside the margins'], ['fill', 'Fill the whole page'], ['original', 'Keep the original size']], default: 'fit' },
+    { key: 'margin', label: 'Margin', type: 'number', default: 36, min: 0, max: 144, help: 'In points: 72 points is one inch, about 2.5 cm.' },
   ],
   'add-watermark': [
-    { key: 'text', label: 'Text', type: 'text', default: 'CONFIDENTIAL' },
-    { key: 'position', label: 'Position', type: 'select', options: [['center', 'Center'], ['tile', 'Tiled'], ['top', 'Top'], ['bottom', 'Bottom']], default: 'center' },
-    { key: 'size', label: 'Font size', type: 'range', default: 60, min: 12, max: 160, step: 2 },
-    { key: 'opacity', label: 'Opacity', type: 'range', default: 0.25, min: 0.05, max: 1, step: 0.05 },
-    { key: 'rotation', label: 'Rotation', type: 'range', default: 35, min: -90, max: 90, step: 5 },
-    { key: 'color', label: 'Color', type: 'select', options: [['grey', 'Grey'], ['red', 'Red'], ['blue', 'Blue'], ['black', 'Black']], default: 'grey' },
-    { key: 'pages', label: 'Pages', type: 'text', default: '', placeholder: 'All pages (or e.g. 1, 3-5)', help: 'Leave blank to mark every page.' },
+    { key: 'text', label: 'Words to stamp', type: 'text', default: 'CONFIDENTIAL' },
+    { key: 'position', label: 'Where on the page', type: 'select', options: [['center', 'Middle'], ['tile', 'Repeated all over'], ['top', 'Top'], ['bottom', 'Bottom']], default: 'center' },
+    { key: 'size', label: 'Text size', type: 'range', default: 60, min: 12, max: 160, step: 2 },
+    { key: 'opacity', label: 'How see-through', type: 'range', default: 0.25, min: 0.05, max: 1, step: 0.05, help: 'Lower numbers are fainter; 1 is solid.' },
+    { key: 'rotation', label: 'Angle', type: 'range', default: 35, min: -90, max: 90, step: 5 },
+    { key: 'color', label: 'Colour', type: 'select', options: [['grey', 'Grey'], ['red', 'Red'], ['blue', 'Blue'], ['black', 'Black']], default: 'grey' },
+    { key: 'pages', label: 'Pages', type: 'text', default: '', placeholder: 'All pages (or e.g. 1, 3-5)', help: 'Leave blank to stamp every page.' },
   ],
   'page-numbers': [
     { key: 'position', label: 'Position', type: 'select', options: [['bottom-center', 'Bottom center'], ['bottom-right', 'Bottom right'], ['bottom-left', 'Bottom left'], ['top-right', 'Top right'], ['top-center', 'Top center']], default: 'bottom-center' },
-    { key: 'format', label: 'Format', type: 'select', options: [['n', '1, 2, 3'], ['n-of-total', '1 / 12'], ['page-n', 'Page 1']], default: 'n' },
-    { key: 'size', label: 'Font size', type: 'number', default: 11, min: 6, max: 36 },
-    { key: 'start', label: 'Start at', type: 'number', default: 1, min: 0 },
-    { key: 'skipFirst', label: 'Leave first N pages unnumbered', type: 'number', default: 0, min: 0, help: 'Use 1 to skip a cover page. Numbering then starts on page 2.' },
+    { key: 'format', label: 'Style', type: 'select', options: [['n', '1, 2, 3'], ['n-of-total', '1 / 12'], ['page-n', 'Page 1']], default: 'n' },
+    { key: 'size', label: 'Text size', type: 'number', default: 11, min: 6, max: 36 },
+    { key: 'start', label: 'First number', type: 'number', default: 1, min: 0 },
+    { key: 'skipFirst', label: 'Pages to leave blank at the start', type: 'number', default: 0, min: 0, help: 'Type 1 to leave a cover page without a number. Numbering then starts on page 2.' },
   ],
   'edit-metadata': [
     { key: 'title', label: 'Title', type: 'text', default: '' },
     { key: 'author', label: 'Author', type: 'text', default: '' },
     { key: 'subject', label: 'Subject', type: 'text', default: '' },
-    { key: 'keywords', label: 'Keywords', type: 'text', default: '', placeholder: 'comma, separated' },
+    { key: 'keywords', label: 'Keywords', type: 'text', default: '', placeholder: 'separate with commas' },
   ],
   'html-to-pdf': [{ key: 'pageSize', label: 'Page size', type: 'select', options: [['A4', 'A4'], ['Letter', 'Letter']], default: 'A4' }],
   'crop-pdf': [
@@ -78,11 +78,11 @@ const FIELDS: Record<string, Field[]> = {
       key: 'mode',
       label: 'Crop by',
       type: 'select',
-      options: [['auto', 'Auto-detect content'], ['margins', 'Margins'], ['box', 'Region']],
+      options: [['auto', 'Trim the white space for me'], ['margins', 'Cut an amount off each edge'], ['box', 'Keep one area']],
       default: 'auto',
-      help: 'Auto trims the white space around whatever is printed. Margins cuts the amount you type off each side. Region keeps the rectangle between those four edges, all measured from the top-left corner of the page.',
+      help: 'Trim finds the white space around whatever is on the page and removes it. Cut takes the amount you type off each edge. Keep one area keeps only the rectangle inside those four edges, measured from the top-left corner of the page.',
     },
-    { key: 'unit', label: 'Unit', type: 'select', options: [['mm', 'Millimetres'], ['pt', 'Points'], ['percent', 'Percent of the page']], default: 'mm' },
+    { key: 'unit', label: 'Measured in', type: 'select', options: [['mm', 'Millimetres'], ['pt', 'Points (72 = one inch)'], ['percent', 'Percent of the page']], default: 'mm' },
     { key: 'top', label: 'Top', type: 'number', default: 10, min: 0, step: 1 },
     { key: 'right', label: 'Right', type: 'number', default: 10, min: 0, step: 1 },
     { key: 'bottom', label: 'Bottom', type: 'number', default: 10, min: 0, step: 1 },
@@ -94,25 +94,25 @@ const FIELDS: Record<string, Field[]> = {
       key: 'headings',
       label: 'Headings',
       type: 'select',
-      options: [['yes', 'Detect from font size'], ['no', 'Plain paragraphs only']],
+      options: [['yes', 'Turn larger text into headings'], ['no', 'Plain paragraphs only']],
       default: 'yes',
-      help: 'Lines set noticeably larger than the body text become #, ## or ###.',
+      help: 'Lines noticeably larger than the normal text become headings.',
     },
-    { key: 'pageBreaks', label: 'Page breaks', type: 'select', options: [['no', 'One continuous document'], ['yes', 'Rule (---) between pages']], default: 'no' },
+    { key: 'pageBreaks', label: 'Between pages', type: 'select', options: [['no', 'Nothing, one continuous document'], ['yes', 'A divider line']], default: 'no' },
   ],
   'protect-pdf': [
-    { key: 'password', label: 'Password', type: 'password', default: '', placeholder: 'At least 4 characters', help: 'Needed every time the file is opened. Nobody can recover it for you, so keep a copy.' },
+    { key: 'password', label: 'Password', type: 'password', default: '', placeholder: 'At least 4 characters', help: 'Needed every time the file is opened. Nobody can recover it for you, not even us, so keep a copy somewhere safe.' },
     { key: 'confirm', label: 'Confirm password', type: 'password', default: '', placeholder: 'Type it again' },
     {
       key: 'permissions',
-      label: 'Once open, allow',
+      label: 'Once opened, readers may',
       type: 'select',
-      options: [['all', 'Everything'], ['no-print', 'No printing'], ['no-copy', 'No copying text'], ['no-print-copy', 'No printing or copying']],
+      options: [['all', 'Do everything'], ['no-print', 'Not print'], ['no-copy', 'Not copy text'], ['no-print-copy', 'Not print or copy']],
       default: 'all',
     },
   ],
   'unlock-pdf': [
-    { key: 'password', label: 'Password', type: 'password', default: '', placeholder: 'Leave blank if it opens without one', help: 'Only for files you have the right to open. Leave this empty if the PDF opens fine but blocks printing or copying.' },
+    { key: 'password', label: 'Current password', type: 'password', default: '', placeholder: 'Leave blank if it opens without one', help: 'Only for files you are allowed to open. Leave this empty if the PDF opens fine but blocks printing or copying.' },
   ],
   'ebook-converter': [
     {
@@ -127,17 +127,17 @@ const FIELDS: Record<string, Field[]> = {
         ['txt', 'Plain text'],
       ],
       default: 'epub',
-      help: 'Calibre does the conversion on our server. Pick the format your reader opens.',
+      help: 'Pick the format your reader or app opens. The conversion happens on our server.',
     },
   ],
   'pdf-to-pdfa': [
     {
       key: 'level',
-      label: 'Conformance',
+      label: 'PDF/A version',
       type: 'select',
-      options: [['1b', 'PDF/A-1b · widest support'], ['2b', 'PDF/A-2b · recommended'], ['3b', 'PDF/A-3b · allows attachments']],
+      options: [['1b', 'PDF/A-1b · opens in the most places'], ['2b', 'PDF/A-2b · recommended'], ['3b', 'PDF/A-3b · can carry attached files']],
       default: '2b',
-      help: 'PDF/A-2b suits almost every archive. Pick 1b only if you were asked for it by name.',
+      help: 'PDF/A-2b suits almost every archive. Pick 1b only if someone asked for it by name.',
     },
   ],
 }
@@ -215,7 +215,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
       if (isConvertKind(tool.slug)) {
         const f = files[0]
         const fields = serverFields(tool.slug, opts) // validated before a single byte is uploaded
-        setProgress({ f: 0, msg: 'Starting the converter…' })
+        setProgress({ f: 0, msg: 'Waking up our server…' })
         const r = await convertRemote(tool.slug, f, {
           token: user?.entitlement?.token,
           fields,
@@ -275,7 +275,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
           break
         case 'html-to-pdf': {
           const src = f ? await f.text() : html
-          if (!src.trim()) throw new Error('Upload an .html file or paste markup')
+          if (!src.trim()) throw new Error('Add an .html file or paste the web page code')
           out = await E.htmlToPdf(src, f?.name || 'document', s('pageSize') as 'A4' | 'Letter')
           break
         }
@@ -319,7 +319,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
           out = await E.pdfToMarkdown(f, { headings: s('headings') !== 'no', pageBreaks: s('pageBreaks') === 'yes' }, onP)
           break
         default:
-          throw new Error('This tool has no browser engine.')
+          throw new Error('This tool cannot run in the browser.')
       }
       setResults(out)
       toast(`Done: ${out.length} file${out.length > 1 ? 's' : ''} ready`)
@@ -351,7 +351,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
     <div className="tool-grid">
       <div className="stack">
         {tool.slug === 'html-to-pdf' && (
-          <textarea className="textarea" placeholder="…or paste HTML here" value={html} onChange={(e) => setHtml(e.target.value)} />
+          <textarea className="textarea" placeholder="…or paste the web page code (HTML) here" value={html} onChange={(e) => setHtml(e.target.value)} />
         )}
         <Dropzone accept={tool.accept} multiple={!!tool.multiple} onFiles={addFiles} label={tool.multiple ? 'Drop files here' : 'Drop a file here'} />
         <FileList files={files} onRemove={(i) => setFiles(files.filter((_, k) => k !== i))} onMove={tool.multiple ? move : undefined} />
@@ -359,7 +359,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
         {progress && busy && <ProgressBar value={progress.f} msg={progress.msg} />}
         {error && (
           <div className="card card-alarm">
-            <strong className="alarm">Something went wrong.</strong> {error}
+            <strong className="alarm">That did not work.</strong> {error}
             {errorHint?.upgrade && (
               <div style={{ marginTop: '0.75rem' }}>
                 <Link to="/pricing" className="btn btn-sm btn-acid">
@@ -381,7 +381,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
 
       <div className="card stack">
         <h4 style={{ margin: 0 }}>Options</h4>
-        {fields.length === 0 && <p className="muted" style={{ margin: 0 }}>No options. Add a file and run.</p>}
+        {fields.length === 0 && <p className="muted" style={{ margin: 0 }}>Nothing to set up. Add a file and press the button.</p>}
         {fields.map((fd) => (
           <div className="field" key={fd.key} style={{ margin: 0 }}>
             <label className="label" htmlFor={fd.key}>
@@ -424,7 +424,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
           {busy ? 'Working…' : `Run ${tool.name}`}
         </button>
         <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>
-          {server ? 'Sent over HTTPS to our converter, processed, and deleted immediately. Never stored or logged.' : 'Files never leave this tab. Close it and they are gone.'}
+          {server ? 'Your file goes to our server over a secure connection, is converted, and is deleted right away. We never keep a copy.' : 'Your files stay in this browser tab and are never uploaded. Close the tab and they are gone.'}
         </p>
         {server && (
           <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>

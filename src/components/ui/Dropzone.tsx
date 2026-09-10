@@ -8,7 +8,7 @@ export function Dropzone({
   multiple = true,
   onFiles,
   label = 'Drop files here',
-  hint = 'or click to browse',
+  hint = 'or click to choose a file from your computer',
 }: {
   accept?: string
   multiple?: boolean
@@ -44,12 +44,13 @@ export function Dropzone({
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && ref.current?.click()}
     >
-      <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>⬆</div>
+      <div className="dz-icon" aria-hidden="true">⬆</div>
       <div className="big">{label}</div>
       <div className="muted" style={{ fontWeight: 600 }}>
         {hint}
         {accept ? ` · ${accept.replace(/\./g, '').toUpperCase().replace(/,/g, ' · ')}` : ''}
       </div>
+      <span className="dz-btn">Choose file{multiple ? 's' : ''}</span>
       <input
         ref={ref}
         type="file"

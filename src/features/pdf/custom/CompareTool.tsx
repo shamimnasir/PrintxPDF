@@ -142,7 +142,7 @@ export default function CompareTool() {
         setPercent(r.percent)
         el.replaceChildren(view === 'a' ? r.a : view === 'b' ? r.b : r.diff)
       } catch (e) {
-        if (!cancel) toast(`Could not render page ${page}: ${(e as Error).message}`, 'error')
+        if (!cancel) toast(`Could not draw page ${page}: ${(e as Error).message}`, 'error')
       } finally {
         if (!cancel) setRendering(false)
       }
@@ -155,7 +155,7 @@ export default function CompareTool() {
   const exportDiff = async () => {
     if (!a || !b) return
     setBusy(true)
-    setProgress({ v: 0, msg: 'Building diff…' })
+    setProgress({ v: 0, msg: 'Comparing pages…' })
     try {
       const { PDFDocument } = await import('pdf-lib')
       const doc = await PDFDocument.create()
@@ -170,9 +170,9 @@ export default function CompareTool() {
       setProgress({ v: 1, msg: 'Saving…' })
       const bytes = await doc.save()
       downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(files[0].name)}-vs-${stripExt(files[1].name)}-diff.pdf`)
-      toast('Diff PDF downloaded')
+      toast('Comparison PDF downloaded')
     } catch (e) {
-      toast(`Could not build the diff PDF: ${(e as Error).message}`, 'error')
+      toast(`Could not build the comparison PDF: ${(e as Error).message}`, 'error')
     } finally {
       setBusy(false)
       setProgress(null)
@@ -185,8 +185,8 @@ export default function CompareTool() {
         <Dropzone accept=".pdf" multiple onFiles={(f) => setFiles((prev) => [...prev, ...f].slice(0, 2))} label="Drop two PDFs, old first, new second" />
         <FileList files={files} onRemove={(i) => setFiles((f) => f.filter((_, k) => k !== i))} />
         <p className="muted">
-          Both files are rendered to the same width and compared pixel by pixel. It sees anything that moved, including
-          reflowed lines, it is not a word-level text diff.
+          Both files are drawn at the same size and compared dot by dot. It spots anything that moved, even a line that
+          shifted down a little, so it is not a word-by-word text comparison.
         </p>
       </div>
     )
@@ -203,8 +203,8 @@ export default function CompareTool() {
             <button className="icon-btn" disabled={page >= maxPages} onClick={() => setPage(page + 1)} aria-label="Next page">
               ›
             </button>
-            {percent !== null && <span className="badge badge-acid">{percent.toFixed(2)}% of pixels differ</span>}
-            {rendering && <span className="badge">Rendering…</span>}
+            {percent !== null && <span className="badge badge-acid">{percent.toFixed(2)}% of the page changed</span>}
+            {rendering && <span className="badge">Drawing…</span>}
           </div>
           <button className="btn btn-sm btn-ghost" onClick={() => setFiles([])}>
             Change files
@@ -218,7 +218,7 @@ export default function CompareTool() {
           options={[
             ['a', `A · ${files[0].name.slice(0, 18)}`],
             ['b', `B · ${files[1].name.slice(0, 18)}`],
-            ['diff', 'Diff'],
+            ['diff', 'Changes'],
           ]}
         />
 
@@ -232,24 +232,24 @@ export default function CompareTool() {
         <h4 style={{ margin: 0 }}>Comparison</h4>
         <p className="muted" style={{ margin: 0, fontSize: '0.85rem' }}>
           A has {pagesA} page(s), B has {pagesB}.
-          {pagesA !== pagesB ? ' The page counts differ, so pages past the shorter file are compared against blank.' : ''}
+          {pagesA !== pagesB ? ' They have different page counts, so the extra pages are compared against a blank sheet.' : ''}
         </p>
         <div>
           <label className="label" htmlFor="cmp-tol">
-            Tolerance, {tolerance} / 255 per channel
+            Ignore small differences, {tolerance} / 255
           </label>
           <input id="cmp-tol" type="range" min={0} max={90} value={tolerance} onChange={(e) => setTolerance(Number(e.target.value))} />
           <p className="muted" style={{ margin: '0.3rem 0 0', fontSize: '0.8rem' }}>
-            Raise it to ignore antialiasing noise; lower it to catch faint changes.
+            Raise it to ignore tiny differences in how text is drawn; lower it to catch faint changes.
           </p>
         </div>
         {progress && <ProgressBar value={progress.v} msg={progress.msg} />}
         <button className="btn btn-acid btn-lg btn-block" disabled={busy || !a || !b} onClick={exportDiff}>
-          {busy ? 'Building…' : 'Download the diff as PDF'}
+          {busy ? 'Building…' : 'Download the changes as a PDF'}
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
-          The diff PDF is a picture of each page, one per page of the longer file, with changed pixels tinted in the
-          accent colour. It is a visual record, not an editable document.
+          The download is a picture of each page, one per page of the longer file, with the changed parts tinted in
+          colour. It is a visual record, not a document you can edit.
         </p>
       </div>
     </div>

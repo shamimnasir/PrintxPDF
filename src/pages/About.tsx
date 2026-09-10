@@ -6,7 +6,7 @@ export default function About() {
   const cfg = useSiteConfig()
   useSeo({
     title: 'About PrintxPDF | Documents You Control',
-    description: `PrintxPDF is a print and PDF toolkit founded by ${cfg.author.name}. Every browser tool keeps your files on your computer; a few heavy jobs run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
+    description: `PrintxPDF is a print and PDF toolkit founded by ${cfg.author.name}. Browser tools keep your files on your computer; a few heavy jobs run on our own server and are deleted right after.`,
     path: '/about',
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]), { '@context': 'https://schema.org', ...orgSchema(cfg.author) }],
   })
@@ -20,17 +20,17 @@ export default function About() {
         <span className="acid-mark">Your computer. Your call.</span>
       </h1>
       <p className="lead">
-        PrintxPDF is a print-and-PDF toolkit that keeps your files on your own machine. Everything that can run in a browser
-        does: the web-page cleaner and the merge, split, compress, sign and OCR tools are plain HTML, CSS and JavaScript. A few
-        jobs that need a real engine (PowerPoint, ebooks, PDF encryption, PDF/A) run on our own server, and say so on the tool
-        page.
+        PrintxPDF is a set of print and PDF tools that keep your files on your own computer. Everything that can happen in a
+        browser does: the web-page cleaner and the merge, split, shrink, sign and scan-to-text tools all work without uploading
+        anything. A few jobs that need heavier software (PowerPoint, ebooks, PDF passwords, PDF/A archive files) run on our own
+        server, and say so on the tool page.
       </p>
       <h2 style={{ fontSize: '2rem', marginTop: '3rem' }}>What it does</h2>
       <ul style={{ fontWeight: 600, fontSize: '1.05rem', lineHeight: 1.8 }}>
         <li>Removes ads, navigation and other clutter from web pages before you print or save.</li>
-        <li>Lets you preview and edit the page so you see exactly what you are outputting.</li>
-        <li>Exports clean PDFs, PNG screenshots and emails.</li>
-        <li>Merges, splits, organizes, rotates, compresses, watermarks, numbers, signs and OCRs PDFs in the browser.</li>
+        <li>Lets you preview and edit the page so you see exactly what you will print or save.</li>
+        <li>Saves clean PDFs, image snapshots and emails.</li>
+        <li>Merges, splits, organizes, rotates, shrinks, watermarks, numbers and signs PDFs, and turns scanned pages into searchable text, all in your browser.</li>
       </ul>
       <h2 style={{ fontSize: '2rem', marginTop: '3rem' }}>Founder</h2>
       <div className="card" style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
@@ -46,15 +46,15 @@ export default function About() {
           </Link>
         </div>
       </div>
-      <h2 style={{ fontSize: '2rem', marginTop: '3rem' }}>Built with</h2>
+      <h2 style={{ fontSize: '2rem', marginTop: '3rem' }}>Built with open source tools</h2>
       <div className="grid grid-3">
         {[
-          ['Readability', 'Mozilla\'s reader-mode extractor'],
-          ['DOMPurify', 'Sanitises every page we render'],
-          ['pdf-lib', 'Creates and edits PDF structure'],
-          ['pdf.js', 'Renders pages and extracts text'],
-          ['Tesseract.js', 'OCR compiled to WebAssembly'],
-          ['jsPDF + html2canvas', 'HTML → PDF and screenshots'],
+          ['Reader mode', 'Finds the article on a page and drops the rest'],
+          ['Page cleaning', 'Strips scripts and unsafe content from every page we show'],
+          ['PDF editing', 'Builds and edits PDF files in your browser'],
+          ['PDF viewing', 'Draws pages on screen and pulls out their text'],
+          ['Text recognition', 'Turns pictures of text into real text, on your computer'],
+          ['Page to PDF', 'Turns a web page into a PDF or an image'],
         ].map(([h, p]) => (
           <div key={h} className="card card-flat">
             <strong>{h}</strong>

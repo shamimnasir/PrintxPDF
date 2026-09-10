@@ -188,11 +188,12 @@ export const articleSchema = (a: {
   speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.post-answer', 'h1'] },
 })
 
-export const howToSchema = (h: { title: string; description: string; steps: { h: string; x: string }[]; path: string; anchors: string[] }) => ({
+export const howToSchema = (h: { title: string; description: string; steps: { h: string; x: string }[]; path: string; anchors: string[]; image?: string }) => ({
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: h.title,
   description: h.description,
+  ...(h.image ? { image: h.image } : {}),
   totalTime: 'PT3M',
   estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
   tool: [{ '@type': 'HowToTool', name: 'A web browser' }],

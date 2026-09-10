@@ -93,7 +93,7 @@ export default function OrganizeTool() {
       <div className="row between">
         <div className="row" style={{ gap: '0.5rem' }}>
           <span className="badge badge-acid">{pages.length} pages</span>
-          {loading && <span className="badge">Rendering…</span>}
+          {loading && <span className="badge">Drawing pages…</span>}
           <span className="muted" style={{ fontSize: '0.85rem' }}>
             Drag to reorder
           </span>

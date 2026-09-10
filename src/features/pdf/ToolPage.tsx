@@ -2,7 +2,8 @@ import { lazy, Suspense } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useTool, useVisibleTools } from './useTools'
 import { postsForTool } from '../../content'
-import { breadcrumbSchema, faqSchema, howToSchema, softwareSchema, useSeo } from '../../lib/seo'
+import { breadcrumbSchema, faqSchema, howToSchema, softwareSchema, useSeo, SITE_URL } from '../../lib/seo'
+import { shotAbsoluteUrl } from '../../components/ui/ToolShot'
 import { isFilled, toolContent } from '../../content/tools'
 import { ToolContentSections, stepAnchor } from './ToolContent'
 import { StatusBadge, ToolCard } from './ToolCard'
@@ -49,7 +50,7 @@ export default function ToolPage() {
             { name: tool.name, path: `/tools/${tool.slug}` },
           ]),
           softwareSchema({ name: tool.name, description: c?.metaDescription || tool.description, path: `/tools/${tool.slug}` }),
-          ...(c ? [faqSchema(c.faqs), howToSchema({ title: c.howHeading || `How to use ${tool.name}`, description: c.answer, steps: c.how, path: `/tools/${tool.slug}`, anchors: c.how.map((_, i) => stepAnchor(i + 1)) })] : []),
+          ...(c ? [faqSchema(c.faqs), howToSchema({ title: c.howHeading || `How to use ${tool.name}`, description: c.answer, steps: c.how, path: `/tools/${tool.slug}`, anchors: c.how.map((_, i) => stepAnchor(i + 1)), image: shotAbsoluteUrl(SITE_URL, tool.slug) || undefined })] : []),
         ]
       : [],
   })
@@ -73,7 +74,7 @@ export default function ToolPage() {
         <div className="tool-icon">{tool.icon}</div>
         <div className="row" style={{ gap: '0.5rem', marginBottom: '0.75rem' }}>
           <StatusBadge status={tool.status} />
-          <span className="badge">{tool.status === 'server' ? 'Uploaded · converted · deleted' : 'No upload · runs locally'}</span>
+          <span className="badge">{tool.status === 'server' ? 'Sent securely · converted · deleted' : 'Nothing is uploaded'}</span>
         </div>
         <h1>{tool.name}</h1>
         <p className="lead">{tool.description}</p>
@@ -101,7 +102,7 @@ export default function ToolPage() {
       </Suspense>
       </ClientOnly>
 
-      {c && <ToolContentSections tool={tool} c={c} />}
+      {c && <ToolContentSections tool={tool} c={c} related={related} />}
 
       {guides.length > 0 && (
         <div className="section-tight" style={{ marginTop: '3rem' }}>
@@ -117,7 +118,8 @@ export default function ToolPage() {
         </div>
       )}
 
-      {related.length > 0 && (
+      {/* with editorial content the sidebar lists related tools instead */}
+      {related.length > 0 && !c && (
         <div className="section-tight" style={{ marginTop: '3rem' }}>
           <span className="eyebrow">Related tools</span>
           <div className="grid grid-4">

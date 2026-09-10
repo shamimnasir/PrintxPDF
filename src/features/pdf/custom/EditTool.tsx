@@ -22,8 +22,8 @@ const MODES: [Mode, string, string][] = [
   ['text', 'T', 'Add text'],
   ['image', '▣', 'Place an image'],
   ['rect', '▭', 'Draw a rectangle'],
-  ['ink', '✎', 'Freehand ink'],
-  ['erase', '⌫', 'Erase: click an item to delete it'],
+  ['ink', '✎', 'Draw freehand'],
+  ['erase', '⌫', 'Erase: click an item to remove it'],
 ]
 const UNDO_DEPTH = 40
 
@@ -270,7 +270,7 @@ export default function EditTool() {
       setMode('image')
       toast('Now click the page to place it')
     }
-    img.onerror = () => toast('Could not decode that image', 'error')
+    img.onerror = () => toast('Could not open that image', 'error')
     img.src = src
   }
 
@@ -330,7 +330,7 @@ export default function EditTool() {
       downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(file.name)}-edited.pdf`)
       toast('Edited PDF downloaded')
     } catch (e) {
-      toast(`Could not write the PDF: ${(e as Error).message}`, 'error')
+      toast(`Could not save the PDF: ${(e as Error).message}`, 'error')
     } finally {
       setBusy(false)
     }
@@ -341,8 +341,9 @@ export default function EditTool() {
       <div className="stack" style={{ maxWidth: 720 }}>
         <Dropzone accept=".pdf" multiple={false} onFiles={(f) => setFile(f[0])} label="Drop a PDF to edit" />
         <p className="muted">
-          Add text, images, rectangles and freehand ink on top of the existing pages, then write them into the file.
-          Existing text is not re-typeset: this stamps new content onto the page rather than reflowing the original.
+          Add text, pictures, boxes and freehand drawing on top of the existing pages, then save them into the file.
+          The original text is not retyped: this puts new things on top of the page rather than changing what is
+          already there.
         </p>
       </div>
     )
@@ -536,7 +537,7 @@ export default function EditTool() {
 
         {selected && (selected.kind === 'image' || selected.kind === 'ink') && (
           <p className="muted" style={{ margin: 0, fontSize: '0.85rem' }}>
-            {selected.kind === 'image' ? 'Drag to move, drag the corner square to resize.' : 'Ink strokes cannot be moved; erase and redraw instead.'}
+            {selected.kind === 'image' ? 'Drag to move, drag the corner square to resize.' : 'Freehand lines cannot be moved; erase and draw again instead.'}
           </p>
         )}
 
@@ -573,18 +574,18 @@ export default function EditTool() {
             <div className="row" style={{ gap: '0.75rem' }}>
               <label className="check">
                 <input type="checkbox" checked={fill} onChange={(e) => setFill(e.target.checked)} />
-                Filled rectangles
+                Solid boxes (instead of outlines)
               </label>
             </div>
             <div>
               <label className="label" htmlFor="ed-stroke">
-                Stroke / ink width, {stroke} pt
+                Line width, {stroke} pt
               </label>
               <input id="ed-stroke" type="range" min={1} max={16} value={stroke} onChange={(e) => setStroke(Number(e.target.value))} />
             </div>
             <div>
               <label className="label" htmlFor="ed-op">
-                Rectangle opacity, {Math.round(opacity * 100)}%
+                How see-through boxes are, {Math.round(opacity * 100)}%
               </label>
               <input id="ed-op" type="range" min={5} max={100} value={Math.round(opacity * 100)} onChange={(e) => setOpacity(Number(e.target.value) / 100)} />
             </div>
@@ -600,11 +601,11 @@ export default function EditTool() {
         </div>
 
         <button className="btn btn-acid btn-lg btn-block" disabled={!items.length || busy} onClick={exportPdf}>
-          {busy ? 'Writing…' : `Save & download (${items.length})`}
+          {busy ? 'Saving…' : `Save & download (${items.length})`}
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
-          Ctrl/Cmd+Z undoes the last change. Text is written with Helvetica; other fonts are not embedded. Everything is
-          stamped onto the page, so the original text underneath is untouched, use Redact PDF to remove content.
+          Ctrl/Cmd+Z undoes the last change. Text is written in a standard font. Everything is placed on top of the
+          page, so the original text underneath stays as it is. To remove something for good, use Redact PDF.
         </p>
       </div>
     </div>

@@ -187,7 +187,7 @@ export function describeError(e: unknown): { message: string; upgrade?: boolean;
   const limit = e.data.limit as number | undefined
   switch (e.code) {
     case 'network':
-      return { message: 'Could not reach the converter. Check your connection and try again.' }
+      return { message: 'Could not reach our server. Check your internet connection and try again.' }
     case 'quota_exceeded':
       return e.status === 402
         ? { message: `You have used all ${limit ?? 5} free server conversions this month. Pro includes 300 a month for $5.`, upgrade: true }
@@ -195,30 +195,30 @@ export function describeError(e: unknown): { message: string; upgrade?: boolean;
     case 'subscription_inactive':
       return { message: 'Your subscription is not active. Manage it from your account.', account: true }
     case 'invalid_token':
-      return { message: 'Your access key has expired or is invalid. Open your account to refresh it.', account: true }
+      return { message: 'Your sign-in has expired. Open your account to refresh it.', account: true }
     case 'too_large':
       return { message: 'That file is over the 100 MB limit.' }
     case 'drm_protected':
-      return { message: 'This ebook is DRM-protected, so it cannot be converted.' }
+      return { message: 'This ebook has copy protection (DRM) from the store that sold it, so it cannot be converted.' }
     case 'wrong_password':
       return { message: 'That password did not open the file. Check it and try again.' }
     case 'password_required':
-      return { message: 'This PDF is password-protected. Enter the password to unlock it.' }
+      return { message: 'This PDF needs a password to open. Type the password to unlock it.' }
     case 'already_encrypted':
-      return { message: 'This PDF is already password-protected. Unlock it first, then set a new password.' }
+      return { message: 'This PDF already has a password. Remove it with Unlock PDF first, then set a new one.' }
     case 'unsupported_media_type':
-      return { message: 'This file type is not supported for this conversion.' }
+      return { message: 'This kind of file cannot be converted with this tool.' }
     case 'rate_limited':
       return { message: 'Too many requests. Wait a minute and try again.' }
     case 'busy':
     case 'container_error':
-      return { message: 'The converter is busy or still waking up. Try again in a few seconds.' }
+      return { message: 'Our server is busy or still waking up. Try again in a few seconds.' }
     case 'timeout':
       return { message: 'The conversion took too long (over two minutes). Try a smaller file.' }
     case 'conversion_failed':
-      return { message: `The converter could not process this file.${e.data.detail ? ` (${String(e.data.detail).slice(-160)})` : ''}` }
+      return { message: `Our server could not convert this file.${e.data.detail ? ` (${String(e.data.detail).slice(-160)})` : ''}` }
     case 'billing_not_configured':
-      return { message: 'Billing is not switched on yet. Try again soon.' }
+      return { message: 'Payments are not switched on yet. Try again soon.' }
     default:
       return { message: e.message }
   }

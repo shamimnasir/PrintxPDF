@@ -21,3 +21,21 @@
 - **Adding to a registry breaks the test that enumerates it**: `kind registry › registers every kind` hard-coded the seven prior kinds, so the correct eighth entry failed the suite. That is the test doing its job; update the enumeration in the same change rather than loosening the assertion.
 - **EPUB and Office files share the ZIP signature**: a magic-byte fallback that accepts any `PK` file let a `.pptx` into the ebook converter, where Calibre failed with a 500 instead of a clean 415. EPUB mandates a stored `mimetype` entry first at a fixed offset — check that, not just `PK`.
 - **Gate a deploy on the test run, in the same shell line**: `python -m unittest && vitest && nohup wrangler deploy &` means a red test can never be followed by a push; a separate "deploy" step after a green run a minute earlier can.
+
+## 2026-09-10: "hero flash on every reload"
+- Root cause was structural, not a fallback file: prerendered pages carried a text-only stand-in
+  that the browser painted first, then `createRoot().render()` wiped and repainted. Any
+  "flash on reload" report in a prerendered SPA means: check whether the HTML on disk is the
+  real markup and whether React hydrates it. Fixed with `vite build --ssr` +
+  `react-dom/static` prerender + `hydrateRoot`.
+- `prerenderToNodeStream` outlines any Suspense boundary over ~12 KB into a hidden segment
+  plus a `$RC` swap script even when it finished. Pass `progressiveChunkSize: Infinity` and
+  assert no `<div hidden id="S:` in the output.
+- Everything that reads the browser during render (localStorage user, sessionStorage,
+  `document`, `window.location`) must go through `useSyncExternalStore` with a server
+  snapshot or a `ClientOnly` island, or hydration throws #418 and client-renders the page.
+- `vite preview` serves index.html for every path (no directory indexes); test built
+  pages with `npx serve dist` or the real host.
+- React 19 blocks `javascript:` hrefs in JSX; set a bookmarklet's href through a ref.
+- Vercel with `cleanUrls: true`: a rewrite destination must be the clean URL (`/app`), not
+  `/app.html`, or every unmatched route returns 404.

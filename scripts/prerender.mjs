@@ -377,7 +377,7 @@ async function main() {
     {
       route: '/',
       title: `${cfg?.site?.name || 'PrintxPDF'}, Print Only What Matters. Fix Any PDF.`,
-      description: cfg?.site?.description || 'Turn any web page into a clean printout or PDF, then do everything else to a PDF, merge, sign, compress, OCR, protect, convert, with free tools that run on your own computer. No account, nothing to install.',
+      description: cfg?.site?.description || 'Turn any web page into a clean printout or PDF, then merge, sign, shrink, protect or convert any PDF free in your browser. Nothing is uploaded, no account.',
       h1: 'Print only what matters. Fix any PDF.',
       schema: [
         { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg?.site?.name || 'PrintxPDF', url: SITE, description: cfg?.site?.description || '', publisher: org },
@@ -387,19 +387,19 @@ async function main() {
     {
       route: '/print',
       title: 'Print Any Web Page as Just the Article',
-      description: 'Paste a URL and get a clean, printable version of any web page. Ads, menus and comment walls removed. Print, save as PDF or email it, free and with no upload.',
+      description: 'Paste a link and get a clean, printable version of any web page. Ads, menus and comments removed. Print it, save it as a PDF or email it. Free, nothing uploaded.',
       h1: 'Paste a link. Print just the article.',
     },
     {
       route: '/pricing',
-      title: 'Pricing | Free Browser Tools, Pro Server Conversions',
-      description: 'Every browser PDF tool is free forever. Pro ($5/mo) adds 300 server conversions a month for PowerPoint and ebook formats; API ($29/mo) adds key-based access with 5,000 a month.',
+      title: 'Pricing | Free PDF Tools, Pro and API Plans',
+      description: 'Every browser PDF tool is free forever. Pro ($5 a month) adds 300 server conversions a month for PowerPoint and ebooks. API ($29 a month) adds 5,000.',
       h1: 'Free is free.',
     },
     {
       route: '/about',
       title: 'About PrintxPDF | Documents You Control',
-      description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Every browser tool keeps your files on your computer; a few heavy jobs run on our own server. Built with Readability, pdf-lib, pdf.js and Tesseract.`,
+      description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Browser tools keep your files on your computer; a few heavy jobs run on our own server and are deleted right after.`,
       h1: 'Your documents. Your computer. Your call.',
       schema: [{ '@context': 'https://schema.org', ...org }],
     },
@@ -413,25 +413,25 @@ async function main() {
     {
       route: '/api',
       title: 'PDF Conversion API | PowerPoint, EPUB and MOBI to PDF',
-      description: 'An HTTPS API that converts PowerPoint to PDF, PDF to PowerPoint, EPUB to PDF and MOBI to PDF. Send a file, get a file back. 5 free conversions a month; the API plan includes 5,000.',
-      h1: 'Convert files, programmatically.',
+      description: 'A simple web API for developers: send a PowerPoint, EPUB or MOBI file and get a PDF back, or turn a PDF into PowerPoint. 5 free a month; the API plan has 5,000.',
+      h1: 'Convert files from your own software.',
     },
     {
       route: '/wordpress',
       title: 'WordPress Print & PDF Button Plugin',
-      description: 'Free plugin that adds Print, PDF and Email buttons to every WordPress post or page: any public post type, shortcode or block editor, no account, no API key.',
+      description: 'Free WordPress plugin that adds Print, PDF and Email buttons to every post and page. Works with any theme, needs no account or key, and never contacts anyone.',
       h1: 'A print button your readers will actually use.',
     },
     {
       route: '/website-button',
       title: 'Print Button Generator for Any Website',
-      description: 'Generate a copy-paste print and PDF button for any site. Plain HTML with inline styles, so it works in WordPress, Squarespace, Wix, Shopify and static sites.',
+      description: 'Make a print and PDF button for your website in seconds. Copy one small piece of code and paste it into WordPress, Squarespace, Wix, Shopify or any other site.',
       h1: 'A print button for any site.',
     },
     {
       route: '/privacy',
       title: 'Privacy | Your Files Stay on Your Device',
-      description: 'Browser tools never upload your files. A few server jobs send the file over HTTPS and delete it the moment they finish. Payments run through Stripe; no card data is stored here.',
+      description: 'Browser tools never upload your files. A few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe; no card details stored.',
       h1: 'Your files stay with you.',
     },
     {
@@ -443,12 +443,12 @@ async function main() {
     {
       route: '/extensions/chrome',
       title: 'PrintxPDF for Chrome | Print Any Page Clean',
-      description: 'A Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comment walls stripped, ready to print or save as PDF. Free, and it reads nothing until you click it.',
+      description: 'A free Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comments removed, ready to print or save as a PDF.',
       h1: 'Turn any page into a clean PDF',
     },
     { route: '/signin', title: 'Log in | PrintxPDF', description: 'Log in to PrintxPDF to keep your saved pages, signatures and settings on this device.', h1: 'Log in', noindex: true },
     { route: '/signup', title: 'Sign up | PrintxPDF', description: 'Create a free PrintxPDF account. No password: your saved pages, signatures and settings stay on this device.', h1: 'Sign up', noindex: true },
-    { route: '/account', title: 'Your account | PrintxPDF', description: 'Your PrintxPDF account: plan, usage, saved pages, signatures and settings.', h1: 'Account', noindex: true },
+    { route: '/account', title: 'Your account | PrintxPDF', description: 'Your PrintxPDF account: your plan, monthly usage, saved documents, signatures and settings, all kept in this browser and never sent anywhere.', h1: 'Account', noindex: true },
     {
       route: '/extension-privacy',
       title: 'Chrome Extension Privacy Policy',

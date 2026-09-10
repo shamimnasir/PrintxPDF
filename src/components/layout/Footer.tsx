@@ -42,7 +42,7 @@ export function Footer() {
           <Link to="/print">Print any web page</Link>
           <Link to="/website-button">Print & PDF button</Link>
           <Link to="/wordpress">WordPress plugin</Link>
-          <Link to="/api">PDF API</Link>
+          <Link to="/api">For developers (API)</Link>
           <Link to="/pricing">Pricing</Link>
           <Link to="/extensions/chrome">Chrome extension</Link>
         </div>
@@ -56,7 +56,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container" style={{ marginTop: '2rem', opacity: 0.6, fontSize: '0.8rem' }} >
-        © {new Date().getFullYear()} {cfg.site.name} · Built with pdf-lib, pdf.js, Readability and Tesseract.
+        © {new Date().getFullYear()} {cfg.site.name} · Built with open source tools.
       </div>
     </footer>
   )

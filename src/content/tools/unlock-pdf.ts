@@ -3,23 +3,23 @@ import type { ToolContent } from './types'
 export const unlockPdf: ToolContent = {
   slug: 'unlock-pdf',
   answer:
-    'Unlock a PDF by dropping it into Unlock PDF, entering the password if the file asks for one on opening, and clicking Run. Our server removes the encryption with qpdf, returns a copy that opens without a password and allows printing and copying, then deletes your upload immediately.',
+    'Unlock a PDF by dropping it into Unlock PDF, entering the password if the file asks for one on opening, and clicking Run. Our server removes the lock, sends back a copy that opens without a password and allows printing and copying, then deletes your upload right away.',
   whatHeading: 'What is a locked PDF?',
   what: [
     {
-      term: 'What is a user password on a PDF?',
+      term: 'What is the password to open a PDF?',
       definition:
-        'A user password (also called the open password) is the one a reader demands before showing a single page. The document\'s contents are encrypted with a key derived from it, so without the password there is nothing to read. Unlock PDF needs this password: it decrypts the file with it and saves a copy with no encryption, so the PDF stops asking every time you, a colleague or a document system opens it.',
+        'Some PDFs ask for a password before showing a single page. The contents are scrambled using that password, so without it there is nothing to read. Unlock PDF needs this password: it unscrambles the file with it and saves a copy with no lock, so the PDF stops asking every time you, a colleague or a document system opens it.',
     },
     {
-      term: 'What is an owner password on a PDF?',
+      term: 'What is the password that controls printing and copying?',
       definition:
-        'An owner password protects only the permission flags: printing, copying text, editing, annotating and form filling. A PDF with an owner password and no user password opens normally, but the viewer greys out Print or Copy. Because the content key is not secret in that case, the restrictions can be removed without knowing the owner password at all. Leave the password field empty and Unlock PDF strips them.',
+        'A PDF can carry a second password that only guards the permission settings: printing, copying text, editing, adding notes and filling forms. A file with this password alone opens normally, but the PDF app greys out Print or Copy. Because the content is not truly secret in that case, the limits can be removed without knowing that password at all. Leave the password field empty and Unlock PDF lifts them.',
     },
     {
-      term: 'What encryption do PDFs use?',
+      term: 'What kind of locking do PDFs use?',
       definition:
-        'PDF encryption ranges from the old 40-bit and 128-bit RC4 revisions through 128-bit AES to the current revision 6 AES-256 defined in PDF 2.0. qpdf, which runs on our server, reads every revision. If the correct password is supplied, or none is required, the result is a standard unencrypted PDF with the same pages, fonts, images, bookmarks and form fields, ready for any tool that refuses encrypted input.',
+        'PDF locking has gone through several versions, from old weak scrambling to the strong encryption used today. Our server reads every version. If the correct password is supplied, or none is required, the result is a plain PDF with no lock and the same pages, fonts, pictures, bookmarks and form fields, ready for any tool that refuses locked files.',
     },
   ],
   whyHeading: 'Why unlock a PDF?',
@@ -30,15 +30,15 @@ export const unlockPdf: ToolContent = {
     },
     {
       h: 'Print and copy from a file you own',
-      x: 'Publishers and payroll systems often set owner-only restrictions. If you have the right to the document, unlocking restores Print and Copy in every viewer.',
+      x: 'Publishers and payroll systems often block printing and copying. If you have the right to the document, unlocking restores Print and Copy in every PDF app.',
     },
     {
       h: 'Feed it to other tools',
-      x: 'Merging, splitting, OCR and archiving tools refuse encrypted PDFs. Unlock first, then run [Merge PDF](/tools/merge-pdf), [OCR PDF](/tools/ocr-pdf) or [PDF to PDF/A](/tools/pdf-to-pdfa).',
+      x: 'Merging, splitting, text recognition and archiving tools refuse locked PDFs. Unlock first, then run [Merge PDF](/tools/merge-pdf), [OCR PDF](/tools/ocr-pdf) or [PDF to PDF/A](/tools/pdf-to-pdfa).',
     },
     {
       h: 'Deleted the moment it is returned',
-      x: 'The file goes over HTTPS to an isolated container, qpdf decrypts it, and the upload is removed as soon as the unlocked copy is sent back. The password stays in memory and is never logged.',
+      x: 'The file goes over a secure connection to our server, is unlocked in a sealed-off space, and the upload is removed as soon as the unlocked copy is sent back. The password stays in memory and is never written down.',
     },
   ],
   howHeading: 'How to unlock a PDF, step by step',
@@ -53,36 +53,36 @@ export const unlockPdf: ToolContent = {
     },
     {
       h: 'Run Unlock PDF',
-      x: 'Click **Run Unlock PDF**. The file is sent over HTTPS to our server, where qpdf checks the password, removes the encryption and all restrictions, and returns the result. A wrong password is reported straight away.',
+      x: 'Click **Run Unlock PDF**. The file is sent over a secure connection to our server, which checks the password, removes the lock and all limits, and returns the result. A wrong password is reported straight away.',
     },
     {
       h: 'Download the unlocked PDF',
-      x: 'The copy downloads automatically and the upload is deleted at once. Pages, bookmarks, links and form fields are unchanged; only the encryption is gone.',
+      x: 'The copy downloads automatically and the upload is deleted at once. Pages, bookmarks, links and form fields are unchanged; only the lock is gone.',
     },
   ],
   faqs: [
     {
       q: 'Can you unlock a PDF without the password?',
-      a: 'Only when the file has an owner password alone, meaning it opens without asking but blocks printing or copying. Those restrictions are removed with the field left blank. If the PDF requires a password to open, that password is needed; AES encryption cannot be bypassed, and we do not attempt to guess it.',
+      a: 'Only when the file has just the printing-and-copying password, meaning it opens without asking but blocks printing or copying. Those limits are removed with the field left blank. If the PDF needs a password to open, that password is needed; strong encryption cannot be bypassed, and we do not try to guess it.',
     },
     {
       q: 'Is it legal to unlock a PDF?',
-      a: 'Removing a password from a document you own or are authorised to open, for your own convenience, is normal use. Circumventing protection on someone else\'s document, or to get around a licence, may break the law where you live. Unlock PDF is for files you have the right to open.',
+      a: 'Removing a password from a document you own or are allowed to open, for your own convenience, is normal use. Getting around protection on someone else\'s document, or to dodge a licence, may break the law where you live. Unlock PDF is for files you have the right to open.',
     },
     {
       q: 'What happens if I enter the wrong password?',
-      a: 'The server checks the password with qpdf before doing anything else and returns a clear error saying it did not open the file. Nothing is converted, nothing is kept, and the attempt does not count against your monthly quota.',
+      a: 'The server checks the password before doing anything else and returns a clear error saying it could not open the file. Nothing is converted, nothing is kept, and the attempt does not count against your monthly allowance.',
     },
     {
       q: 'Does unlocking change the content of the PDF?',
-      a: 'No. Text, images, fonts, bookmarks, links, annotations and form fields are copied through unchanged. The only difference is that the encryption dictionary and permission flags are gone, so the file opens directly and every viewer allows printing and copying.',
+      a: 'No. Text, pictures, fonts, bookmarks, links, notes and form fields are copied through unchanged. The only difference is that the lock and the permission settings are gone, so the file opens directly and every PDF app allows printing and copying.',
     },
     {
       q: 'Is my PDF and password stored?',
-      a: 'No. The file is uploaded over HTTPS, decrypted in an isolated container and deleted the moment the unlocked copy is returned. The password is read into memory, handed to qpdf without touching a command line or a log, and discarded. Free for 5 files a month, Pro 300, API 5,000, see [pricing](/pricing).',
+      a: 'No. The file is uploaded over a secure connection, unlocked in a sealed-off space and deleted the moment the unlocked copy is returned. The password is held in memory only, never written to a log, and thrown away. Free for 5 files a month, Pro 300, API 5,000, see [pricing](/pricing).',
     },
   ],
-  entities: ['PDF', 'qpdf', 'AES-256', 'owner password', 'user password', 'Adobe Acrobat', 'ISO 32000'],
+  entities: ['PDF', 'PDF password', 'AES-256', 'PDF permissions', 'Adobe Acrobat', 'ISO 32000'],
   keywords: [
     'unlock pdf',
     'remove password from pdf',
@@ -93,5 +93,5 @@ export const unlockPdf: ToolContent = {
   ],
   metaTitle: 'Unlock PDF: Remove a Password and Restrictions Online',
   metaDescription:
-    'Unlock a PDF on our server with qpdf. Remove the open password or lift print and copy restrictions from a file you own, and it is deleted after download.',
+    'Unlock a PDF on our server. Remove the password to open it, or lift printing and copying limits from a file you own. Your upload is deleted after download.',
 }

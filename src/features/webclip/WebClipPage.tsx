@@ -45,7 +45,7 @@ export default function WebClipPage() {
     title: article ? `${article.title}, PrintxPDF` : 'Print Any Web Page Without Ads',
     description: article
       ? `A clean, printable version of ${article.title}.`.slice(0, 158)
-      : 'Paste a URL and get a clean, printable version of any web page. Ads, menus and comment walls removed. Print, save as PDF or email it, free and with no upload.',
+      : 'Paste a link and get a clean, printable version of any web page. Ads, menus and comments removed. Print it, save it as a PDF or email it. Free, nothing uploaded.',
     path: '/print',
     keywords: ['print web page', 'printer friendly', 'webpage to pdf', 'remove ads before printing'],
     // the editor view is a working surface for one visitor's URL, not an indexable page
@@ -65,13 +65,13 @@ export default function WebClipPage() {
     const id = ++reqId.current
     const stale = () => id !== reqId.current
     setError(null)
-    setLoading('Fetching page…')
+    setLoading('Loading the page…')
     try {
       const page = await fetchArticle(target, (m) => !stale() && setLoading(m))
       if (stale()) return
-      setLoading('Stripping the clutter…')
+      setLoading('Removing the clutter…')
       const clean = cleanHtml(page)
-      if (clean.wordCount < 30) throw new Error('We fetched the page but could not find readable article text in it. Try pasting the content instead.')
+      if (clean.wordCount < 30) throw new Error('We loaded the page but could not find any article text in it. Try pasting the text instead.')
       store.pushHistory(page.finalUrl, clean.title)
       setArticle(clean)
       document.title = `${clean.title} | PrintxPDF`
@@ -115,7 +115,7 @@ export default function WebClipPage() {
     setParams({ url: url.trim() })
   }
   const submitPaste = () => {
-    if (paste.trim().length < 20) return toast('Paste some content first', 'error')
+    if (paste.trim().length < 20) return toast('Paste some text first', 'error')
     const a = cleanPastedHtml(paste, pasteTitle.trim() || 'Pasted content')
     setArticle(a)
     setParams({ paste: '1' })
@@ -145,15 +145,15 @@ export default function WebClipPage() {
           <span className="acid-mark">Print just the article.</span>
         </h1>
         <p className="lead">
-          The page is reduced to its article inside your browser, no ads, menus, pop-ups or comment threads. Click
-          anything else to remove it, then print it, save it as a PDF or PNG, or email it to yourself.
+          We keep only the article and drop the ads, menus, pop-ups and comment threads, right in your browser. Click
+          anything else to remove it, then print it, save it as a PDF or an image, or email it to yourself.
         </p>
       </div>
 
       <div className="tabs" style={{ maxWidth: 820, marginTop: '2rem' }}>
         {(['url', 'paste', 'file'] as Tab[]).map((t) => (
           <button key={t} className={`tab ${tab === t ? 'active' : ''}`} onClick={() => setTab(t)}>
-            {t === 'url' ? 'Web address' : t === 'paste' ? 'Paste HTML or text' : 'Upload .html'}
+            {t === 'url' ? 'Web address' : t === 'paste' ? 'Paste text' : 'Open a saved page'}
           </button>
         ))}
       </div>
@@ -179,7 +179,7 @@ export default function WebClipPage() {
         {tab === 'paste' && (
           <div className="card stack">
             <input className="input" placeholder="Title (optional)" value={pasteTitle} onChange={(e) => setPasteTitle(e.target.value)} />
-            <textarea className="textarea" placeholder="Paste the page source (View Source → copy) or just plain text…" value={paste} onChange={(e) => setPaste(e.target.value)} />
+            <textarea className="textarea" placeholder="Paste the text of the page here, or the page code if you have it…" value={paste} onChange={(e) => setPaste(e.target.value)} />
             <button className="btn btn-acid" onClick={submitPaste}>
               Clean it
             </button>
@@ -187,7 +187,7 @@ export default function WebClipPage() {
         )}
         {tab === 'file' && (
           <div className="card stack">
-            <p style={{ margin: 0 }}>Save any page from your browser (File → Save Page As → HTML only) and drop it here.</p>
+            <p style={{ margin: 0 }}>Save any page from your browser (File, then Save Page As, then choose "Web page, HTML only") and pick that file here.</p>
             <input className="input" type="file" accept=".html,.htm,.txt,.md" onChange={(e) => onFile(e.target.files?.[0])} />
           </div>
         )}
@@ -206,18 +206,18 @@ export default function WebClipPage() {
             </pre>
             <div className="row">
               <button className="btn btn-sm" onClick={() => setTab('paste')}>
-                Paste the content instead
+                Paste the text instead
               </button>
               <button className="btn btn-sm btn-ghost" onClick={() => load(url)}>
-                Retry
+                Try again
               </button>
             </div>
           </div>
         )}
 
         <p className="muted" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
-          Fetching runs entirely in your browser through public reader proxies, so some sites that block bots will
-          refuse. Paste mode always works. <Link to="/api">Self-host the fetcher →</Link>
+          Your browser loads the page through our page fetcher or a public reader service, so a few sites that block
+          automatic visitors will refuse. Pasting the text always works. <Link to="/api">Run your own copy →</Link>
         </p>
       </div>
 

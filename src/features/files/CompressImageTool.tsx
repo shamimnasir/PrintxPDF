@@ -111,7 +111,7 @@ export default function CompressImageTool() {
       setOutputs(outs)
       setNotes(ns)
       if (outs.length) toast(saved > 0 ? `Saved ${formatBytes(saved)} across ${outs.length} file${outs.length > 1 ? 's' : ''}` : 'Nothing got smaller; originals kept')
-      else toast(ns[0] ?? 'Nothing could be compressed', 'error')
+      else toast(ns[0] ?? 'None of the pictures could be made smaller', 'error')
     } finally {
       setBusy(false)
       setProgress(null)
@@ -202,7 +202,7 @@ export default function CompressImageTool() {
         <div className="fx-field">
           <label className="fx-check">
             <input type="checkbox" checked={limit} onChange={(e) => setLimit(e.target.checked)} />
-            Limit longest side
+            Also shrink the picture (longest side, in pixels)
           </label>
           {limit && (
             <div className="fx-inline">
@@ -227,10 +227,10 @@ export default function CompressImageTool() {
           )}
         </div>
         <div className="fx-field">
-          <label className="label">Output format</label>
-          <div className="fx-seg" role="group" aria-label="Output format">
+          <label className="label">Save as</label>
+          <div className="fx-seg" role="group" aria-label="Save as">
             <button type="button" aria-pressed={target === 'keep'} onClick={() => setTarget('keep')}>
-              Keep
+              Same as original
             </button>
             <button type="button" aria-pressed={target === 'jpg'} onClick={() => setTarget('jpg')}>
               JPG
@@ -243,7 +243,7 @@ export default function CompressImageTool() {
           </div>
           {pngWithoutKnob && (
             <p className="muted" style={{ fontSize: '0.75rem', margin: 0 }}>
-              PNG has no quality setting in the browser. Turn on a size limit, or choose JPG{webp ? '/WebP' : ''}, to shrink it.
+              PNG pictures have no quality setting in the browser. Turn on the size limit, or save as JPG{webp ? ' or WebP' : ''}, to make them smaller.
             </p>
           )}
         </div>
@@ -251,7 +251,7 @@ export default function CompressImageTool() {
           {busy ? 'Compressing…' : `Compress ${files.length > 1 ? `${files.length} images` : 'image'}`}
         </button>
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
-          Never makes a file bigger: if re-encoding grows it, you get the original back with a note. Phone photo orientation is preserved. Nothing is uploaded.
+          Never makes a file bigger: if the new version comes out larger, you get the original back with a note. Photos from your phone stay the right way up. Nothing is uploaded.
         </p>
       </div>
     </div>

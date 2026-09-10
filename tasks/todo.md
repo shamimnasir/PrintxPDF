@@ -40,3 +40,12 @@
 - [x] /extension-privacy page + route + sitemap + prerender (Web Store requirement)
 - [x] Chrome Web Store readiness audit (clipboardWrite added, shortcut Alt+Shift+P, single-purpose, CSP declared, STORE_LISTING.md; human: $5 dev account, screenshots) · [x] WordPress.org readiness audit (external-service disclosure, block removed, Tested up to 7.1, full GPL text; human: real Contributors username, artwork, screenshots, PCP run)
 - [x] files components wired into ToolPage; counts self-updating; Api.tsx endpoint table · [x] verified, built (148 pages, 44 tools), deployed
+
+## 2026-09-10 (phase 4): static rendering, audit, submissions
+- [x] Tool pages: What/Why/How/FAQ copy for all 44 tools (4 writers), FAQPage + HowTo schema, llms.txt answers
+- [x] Name-only byline; light mode default; author photo
+- [x] Hero flash on reload: real static render of every page + hydration (entry-server.tsx, ClientOnly islands, inline config, modulepreload per route, /account and /signin as files, shell = header+loading, Vercel rewrite → /app)
+- [x] WordPress.org submission: uploaded, automated scan pass, slug changed to `printxpdf`, awaiting review (email to nus9040@gmail.com)
+- [ ] Chrome Web Store: console cannot be automated; user uploads `public/downloads/printxpdf-chrome-extension.zip` with `extension/STORE_LISTING.md` and `extension/store-assets/*.png`
+- [ ] Full tool audit with Playwright (`scripts/audit-tools.mjs`): every tool run with real fixtures, screenshots into `public/screens/tools`, shown in tool How sections and guide steps
+- [ ] Fix whatever the audit finds, redeploy, verify live

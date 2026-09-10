@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { TOOLS, CATEGORY_LABEL, type ToolCategory } from '../../features/pdf/toolsMeta'
+import { TOOLS, CATEGORY_LABEL, MENUS } from '../../features/pdf/toolsMeta'
 import { useUser } from '../../features/account/useUser'
 import { applyTheme, store } from '../../lib/store'
 import { safeStorage } from '../../admin/config'
 import { Wordmark, initial } from './Wordmark'
 import { useSiteConfig } from '../../admin/useSiteConfig'
 
-function NavMenu({ label, children, id, open, setOpen }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void }) {
+function NavMenu({ label, children, id, open, setOpen, wide }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void; wide?: boolean }) {
   const isOpen = open === id
   return (
     <div
@@ -18,7 +18,7 @@ function NavMenu({ label, children, id, open, setOpen }: { label: string; id: st
       <button className="nav-btn" onClick={() => setOpen(isOpen ? null : id)} aria-expanded={isOpen}>
         {label} <span aria-hidden>▾</span>
       </button>
-      <div className="nav-menu wide" style={id !== 'tools' ? { columns: 1, minWidth: 260 } : undefined}>
+      <div className={`nav-menu ${wide ? 'wide' : ''}`}>
         {children}
       </div>
     </div>
@@ -66,7 +66,6 @@ export function Header() {
     setDark(!dark)
   }
 
-  const cats = (Object.keys(CATEGORY_LABEL) as ToolCategory[]).filter((c) => c !== 'more')
   const visible = TOOLS.filter((t) => !cfg.tools.hidden.includes(t.slug))
 
   return (
@@ -103,35 +102,31 @@ export function Header() {
         </Link>
 
         <nav id="main-nav" className="nav" aria-label="Main">
-          <NavMenu label="PDF Tools" id="tools" open={open} setOpen={setOpen}>
-            {cats.map((c) => {
-              const inCat = visible.filter((t) => t.category === c)
-              if (!inCat.length) return null
-              return (
-                <div key={c} style={{ breakInside: 'avoid' }}>
-                  <div className="menu-title">{CATEGORY_LABEL[c]}</div>
-                  {inCat.map((t) => (
-                    <Link key={t.slug} to={`/tools/${t.slug}`}>
-                      {t.name}
-                    </Link>
-                  ))}
+          {MENUS.map((m) => (
+            <NavMenu key={m.id} label={m.label} id={m.id} open={open} setOpen={setOpen} wide={m.id === 'pdf'}>
+              {m.categories.map((c) => {
+                const inCat = visible.filter((t) => t.category === c)
+                if (!inCat.length) return null
+                return (
+                  <div key={c} style={{ breakInside: 'avoid' }}>
+                    <div className="menu-title">{CATEGORY_LABEL[c]}</div>
+                    {inCat.map((t) => (
+                      <Link key={t.slug} to={`/tools/${t.slug}`}>
+                        {t.name}
+                      </Link>
+                    ))}
+                  </div>
+                )
+              })}
+              {m.id === 'pdf' && (
+                <div style={{ breakInside: 'avoid' }}>
+                  <div className="menu-title">Learn</div>
+                  <Link to="/blog">Guides</Link>
+                  <Link to="/tools">All tools →</Link>
                 </div>
-              )
-            })}
-            <div style={{ breakInside: 'avoid' }}>
-              <div className="menu-title">More</div>
-              {visible.some((t) => t.category === 'more') &&
-                visible
-                  .filter((t) => t.category === 'more')
-                  .map((t) => (
-                    <Link key={t.slug} to={`/tools/${t.slug}`}>
-                      {t.name}
-                    </Link>
-                  ))}
-              <Link to="/blog">Guides</Link>
-              <Link to="/tools">All tools →</Link>
-            </div>
-          </NavMenu>
+              )}
+            </NavMenu>
+          ))}
           <NavMenu label="Website Tools" id="site" open={open} setOpen={setOpen}>
             <Link to="/print">Print any web page</Link>
             <Link to="/website-button">Print & PDF button for your site</Link>

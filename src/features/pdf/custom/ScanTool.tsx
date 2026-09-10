@@ -70,7 +70,7 @@ async function fileToCanvas(file: File): Promise<HTMLCanvasElement> {
     const img = await new Promise<HTMLImageElement>((res, rej) => {
       const i = new Image()
       i.onload = () => res(i)
-      i.onerror = () => rej(new Error(`Could not decode ${file.name}`))
+      i.onerror = () => rej(new Error(`Could not open ${file.name}`))
       i.src = url
     })
     const c = document.createElement('canvas')
@@ -119,12 +119,12 @@ export default function ScanTool() {
   const startCamera = async () => {
     if (!window.isSecureContext) {
       setCam('insecure')
-      setCamMsg('Browsers only hand out the camera over HTTPS (or on localhost).')
+      setCamMsg('The camera only works on a secure (https) web address.')
       return
     }
     if (!navigator.mediaDevices?.getUserMedia) {
       setCam('unsupported')
-      setCamMsg('This browser does not expose getUserMedia.')
+      setCamMsg('This browser cannot use the camera.')
       return
     }
     setCam('starting')
@@ -286,7 +286,7 @@ export default function ScanTool() {
           )}
         </div>
 
-        <Dropzone accept="image/*" multiple onFiles={onFiles} label="Or drop photos of your pages" hint="JPG, PNG, HEIC-converted, anything your browser can decode" />
+        <Dropzone accept="image/*" multiple onFiles={onFiles} label="Or drop photos of your pages" hint="JPG, PNG or any photo your browser can open" />
 
         {pages.length > 0 && (
           <div className="film">
@@ -339,10 +339,10 @@ export default function ScanTool() {
           <label className="label">Apply to every page</label>
           <div className="row" style={{ gap: '0.4rem' }}>
             <button className="btn btn-sm btn-ghost" onClick={() => applyAll('grey', true)}>
-              All greyscale
+              All black & white
             </button>
             <button className="btn btn-sm btn-ghost" onClick={() => applyAll('contrast', true)}>
-              All auto-contrast
+              All sharper contrast
             </button>
             <button
               className="btn btn-sm btn-ghost"
@@ -360,9 +360,10 @@ export default function ScanTool() {
           {busy ? 'Building…' : `Save as PDF (${pages.length})`}
         </button>
         <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
-          Captures and uploads are capped at {MAX_EDGE}px on the longest edge, which is plenty for a readable page and
-          keeps the file small. The thumbnails approximate the filters with CSS; the exact luma stretch is computed at
-          export. Nothing leaves your device, and the camera is released the moment you stop it or leave the page.
+          Photos are kept to {MAX_EDGE} pixels on the longest side, which is plenty for a readable page and keeps the
+          file small. The small previews only roughly show the black & white and contrast effects; the exact result is
+          worked out when you save. Nothing leaves your device, and the camera is switched off the moment you stop it
+          or leave the page.
         </p>
       </div>
     </div>

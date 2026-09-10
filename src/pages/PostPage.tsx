@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useAllPosts, useCluster, usePost } from '../content/usePosts'
 import type { Block } from '../content/types'
@@ -7,6 +8,8 @@ import { useSiteConfig } from '../admin/useSiteConfig'
 import { Avatar } from '../components/ui/Avatar'
 import { AuthorBox } from '../components/ui/AuthorBox'
 import '../content/blog.css'
+import { ToolShot } from '../components/ui/ToolShot'
+import { toolBySlug } from '../features/pdf/toolsMeta'
 
 const slugify = (s: string) =>
   s
@@ -175,6 +178,9 @@ export default function PostPage() {
   const path = `/blog/${clusterSlug}/${postSlug}`
   // a post can document more than one procedure; HowTo gets all of them, in order
   const stepBlocks = (post?.body || []).flatMap((b, i) => (b.t === 'steps' ? [{ block: b, index: i }] : []))
+  // the first tool the guide names illustrates its first procedure
+  const firstSteps = stepBlocks[0]?.index ?? -1
+  const shotTool = post?.relatedTools?.map((t) => toolBySlug(t)).find(Boolean)
   const allSteps = stepBlocks.flatMap(({ block }) => block.items)
   const stepAnchors = stepBlocks.flatMap(({ block, index }) => block.items.map((_, i) => `step-${index}-${i + 1}`))
 
@@ -249,7 +255,10 @@ export default function PostPage() {
 
           <div className="prose">
             {post.body.map((b, i) => (
-              <BlockView key={i} b={b} n={i} />
+              <Fragment key={i}>
+                {i === firstSteps && shotTool && <ToolShot slug={shotTool.slug} caption={`${shotTool.name}, the tool these steps use, with a file loaded.`} />}
+                <BlockView b={b} n={i} />
+              </Fragment>
             ))}
 
             {post.faqs.length > 0 && (

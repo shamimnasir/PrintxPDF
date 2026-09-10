@@ -23,6 +23,20 @@ bootConfig().then(() => {
   applyDesign(preview ?? (isDesignId(d) ? d : 'blocks'))
 })
 
+// A deploy renames every chunk. A tab opened before it fails to import the next route and,
+// without this, React unmounts to a blank page. One reload picks up the new files.
+window.addEventListener('vite:preloadError', (e) => {
+  e.preventDefault()
+  const key = 'pxp:reloaded'
+  try {
+    if (sessionStorage.getItem(key) === location.href) return
+    sessionStorage.setItem(key, location.href)
+  } catch {
+    /* storage blocked: still reload once */
+  }
+  location.reload()
+})
+
 // Vite's BASE_URL is "/" locally and "/<repo>/" on GitHub Pages
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 
