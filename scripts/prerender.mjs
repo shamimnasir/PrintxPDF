@@ -162,6 +162,8 @@ async function main() {
   const hiddenPosts = new Set(cfg?.content?.hidden || [])
   const noindexAll = !!cfg?.seo?.noindexAll
   const shell = await readFile(path.join(DIST, 'index.html'), 'utf8')
+  // real tool screenshots (scripts/audit-tools.mjs) double as the HowTo schema image
+  const SCREENS = JSON.parse(await readFile(path.join(ROOT, 'src/content/tools/screens.json'), 'utf8').catch(() => '{}'))
   SHELL = shell
   MANIFEST = JSON.parse(await readFile(path.join(DIST, '.vite/manifest.json'), 'utf8'))
   CONFIG_JSON = JSON.stringify(cfg)
@@ -314,7 +316,7 @@ async function main() {
     const contentSchema = c
       ? [
           { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faqs.map((f) => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: plain(f.a) } })) },
-          { '@context': 'https://schema.org', '@type': 'HowTo', name: c.howHeading || `How to use ${t.name}`, description: plain(c.answer), totalTime: 'PT2M', estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' }, tool: [{ '@type': 'HowToTool', name: 'A web browser' }], step: c.how.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: plain(s.h), text: plain(s.x), url: `${SITE}${route}#how-step-${i + 1}` })) },
+          { '@context': 'https://schema.org', '@type': 'HowTo', name: c.howHeading || `How to use ${t.name}`, description: plain(c.answer), ...(SCREENS[t.slug] ? { image: `${SITE}/screens/tools/${t.slug}.jpg` } : {}), totalTime: 'PT2M', estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' }, tool: [{ '@type': 'HowToTool', name: 'A web browser' }], step: c.how.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: plain(s.h), text: plain(s.x), url: `${SITE}${route}#how-step-${i + 1}` })) },
         ]
       : []
     const schema = [
