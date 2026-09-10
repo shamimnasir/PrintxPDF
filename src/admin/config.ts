@@ -128,7 +128,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
     indexBlog: true,
     noindexAll: false,
   },
-  analytics: { ga4Id: '', plausibleDomain: '', umamiId: '', umamiSrc: 'https://cloud.umami.is/script.js', localStats: true, respectDnt: true },
+  analytics: { ga4Id: 'G-ZZXBGJ8KPF', plausibleDomain: '', umamiId: '', umamiSrc: 'https://cloud.umami.is/script.js', localStats: true, respectDnt: true },
   code: { headHtml: '', bodyEndHtml: '', css: '', js: '' },
   content: { hidden: [], overrides: {} },
   billing: { portalLoginUrl: '' },
