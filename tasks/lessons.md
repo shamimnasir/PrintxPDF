@@ -50,3 +50,17 @@
   before the toolbar's PDF button and looked like a hung export. Scope selectors to `main`.
 - `vite preview` and the browser pane both mislead (SPA fallback for every path, screenshot
   offset when scrolled); Playwright against `npx serve dist` is the trustworthy harness.
+
+## 2026-09-10: full-suite audit
+- A fix in one dimension can break another silently. Wrapping /print, /signin and /signup in
+  ClientOnly to stop the reload flash also served them to crawlers as an empty "Loading..."
+  shell, and /print is indexable and in the sitemap. ClientOnly is for routes that genuinely
+  cannot render without the browser (/account); everywhere else, keep the markup static and
+  move the browser reads (query string, localStorage) into an effect so the first client
+  render still matches the server.
+- Content rots against the product. Five guide passages still described Firefox/Safari pages
+  and "demo listings" months after those were removed. A dead-internal-link check over the
+  built pages catches the links; only reading the prose catches the stale claims.
+- `scripts/audit-site.mjs` is the cheap one to run every time (no browser, seconds): titles,
+  descriptions, duplicates, canonicals, h1, alt text, JSON-LD, internal links, sitemap
+  coverage, referenced assets. `npm run audit:site` before any deploy.

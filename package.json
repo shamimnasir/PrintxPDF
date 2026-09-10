@@ -9,7 +9,10 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
-    "gen:seo": "node scripts/gen-seo.mjs"
+    "gen:seo": "node scripts/gen-seo.mjs",
+    "audit:site": "node scripts/audit-site.mjs",
+    "audit:tools": "node scripts/audit-tools.mjs",
+    "audit:features": "node scripts/audit-features.mjs"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",

@@ -62,3 +62,11 @@
 - [x] All 8 server kinds run against the deployed container image locally (pptx/pdf/epub/mobi/azw3/protect/unlock/pdfa, wrong password and already-encrypted paths)
 - [x] `scripts/audit-features.mjs`: cleaner (proxy fetch, tiny page, delete, PDF, PNG, sample, save), account, Stripe hand-off, extension, WordPress, button generator, guides, theme, menus, admin, 404; 21/21 pass live
 - [x] Fixed: Compress Medium/Strong never returns a bigger file; short pages no longer rejected by the cleaner; exported PDFs and images keep pictures from other sites (API image relay + html2canvas proxy)
+
+## 2026-09-10 (phase 6): full-suite audit
+- [x] typecheck, 115 unit tests, 26 worker tests, 36 container tests, oxlint, php lint: all green
+- [x] `scripts/audit-site.mjs` added (static integrity over all 151 pages): clean after fixes
+- [x] 44/44 tools with output checks; 21/21 live features
+- [x] Fixed: /print, /signin, /signup served as an empty Loading shell (ClientOnly regression); 5 stale extension passages incl. 2 dead internal links; 6 meta descriptions out of range
+- [x] Deployed and verified live
+- Submissions: WordPress plugin awaiting review (slug `printxpdf`); Chrome extension still needs the user (Web Store console cannot be automated)
