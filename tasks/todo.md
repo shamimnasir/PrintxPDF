@@ -70,3 +70,44 @@
 - [x] Fixed: /print, /signin, /signup served as an empty Loading shell (ClientOnly regression); 5 stale extension passages incl. 2 dead internal links; 6 meta descriptions out of range
 - [x] Deployed and verified live
 - Submissions: WordPress plugin awaiting review (slug `printxpdf`); Chrome extension still needs the user (Web Store console cannot be automated)
+
+## 2026-09-10 (phase 7): pricing, lifetime plan, positioning — PLAN, NOT YET APPROVED
+
+### Competitive facts (researched 2026-09-10, sources in the session)
+| | Cheapest paid | Free tier | Files | Lifetime? |
+| --- | --- | --- | --- | --- |
+| iLovePDF | $7/mo, or $48/yr = $4.00/mo | 15 MB to 400 MB per tool, 1 to 25 tasks a day | uploaded, deleted within 2 hours | no |
+| Smallpdf | ~$15/mo, Teams $12/user/mo | limits no longer published, qualitative wording only | uploaded, 1 hour signed in; **processed docs are reachable by shareable URL by default** | no |
+| PrintFriendly | no consumer plan at all: free + ads. Print Button Pro ~$79/yr per domain buys ad-free + white-label. API $10 to $80 | everything, ad supported | uploaded, 48 hours, URLs screened by third-party AI, usage shared with ad partner Freestar | no |
+| PrintxPDF | proposed $3.99/mo | unlimited browser tools, no account, no watermark, no file cap | **33 of 44 tools never upload** | proposed $119 |
+
+Their users' loudest complaints: ads injected into PrintFriendly PDFs (dominant 1-star theme, 53 one-star reviews on a 20k-install plugin); PrintFriendly's 2026 extension permission grab; iLovePDF surprise charges and refusals to refund; Smallpdf trial auto-renewal charges and undisclosed free limits.
+
+### 0. BLOCKER, fix before any privacy claim ships
+- [ ] `src/lib/fetchArticle.ts` queries **all four proxies at once**, so every URL a user cleans is also sent to allorigins.win, codetabs.com and Jina AI, every time, even though our own proxy answers first. Measured: ours 0.87s; allorigins and codetabs both failed at ~19.7s; jina 3.5s.
+- [ ] `/privacy` says the address goes to "our fetch proxy (or a public reader proxy)". It is "and", always. Materially misleading and it is the policy linked from a Chrome Web Store item now in review.
+- [ ] Fix: try our proxy alone first (6s budget), fall back to the public chain only if it fails. Keeps the reliability the chain was built for, stops the routine broadcast.
+- [ ] Then correct the privacy copy to describe what actually happens, including the 5-minute Cloudflare edge cache.
+
+### 1. Pricing
+- [ ] Stripe test mode: create new prices, Pro $3.99/mo, API $19.99/mo (Stripe prices are immutable, so these are new objects), swap `PRICE_PRO` / `PRICE_API`, redeploy the worker
+- [ ] $3.99 billed monthly undercuts iLovePDF's best annual rate ($4.00/mo) while staying month to month. Say that, do not just say "cheap"
+- [ ] Update Pricing page, Account page, the home and API copy, and the two prerendered descriptions
+
+### 2. Lifetime, $119, category first (nobody in the field offers one)
+- [ ] New one-time price in Stripe; checkout switches to `mode: 'payment'` for this plan only
+- [ ] `worker/src/token.ts`: `Plan` gains `'lifetime'`; claims carry the checkout session id
+- [ ] `worker/src/billing.ts`: `session()` currently rejects everything that is not a subscription; `me()` decides the plan by listing subscriptions, and a lifetime buyer has none, so they would read as free on every request. Verify instead by re-fetching the stored session and checking `payment_status === 'paid'`, cached the same hour a subscription is. Stripe stays the source of truth, no new storage
+- [ ] `worker/src/quota.ts`: allowance for lifetime (decision below)
+- [ ] Client `Plan` type, pricing card, account display
+- [ ] Terms: what "lifetime" means, and a 30-day refund window for a one-time charge (the current 14 days was written for a cancellable subscription)
+
+### 3. Positioning
+- [ ] Lead on what they structurally cannot copy: 33 of 44 tools never upload the file. Uploading is their cost model; they cannot follow without rebuilding
+- [ ] Target the segment that cannot upload at all: legal, medical, HR, finance, anyone under an NDA
+- [ ] Aim a migration page at PrintFriendly's angry users: our WordPress plugin is free, ad-free and unbranded, which is what they charge ~$79/yr for; our extension asks for activeTab only, no host permissions
+- [ ] Never name a competitor in site copy (standing rule)
+
+### Decisions needed before implementing
+1. Lifetime allowance: 300/mo like Pro means ~36,000 server conversions over ten years for $119. Cap it lower, or bound the number sold?
+2. Ship the proxy fix first, on its own, before the pricing work?
