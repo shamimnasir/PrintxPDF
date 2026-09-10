@@ -124,7 +124,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
     robotsTxt: '',
     llmsTxt: '',
     googleVerification: 'slGiktuabKHt-tyfyIWljlwqX3Dj2RoaoKB4sQm1oT4',
-    bingVerification: '',
+    bingVerification: '3EA4638E5CE2DCC578E69827D7CBA6AB',
     indexBlog: true,
     noindexAll: false,
   },
