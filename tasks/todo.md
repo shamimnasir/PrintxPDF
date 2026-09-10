@@ -56,3 +56,9 @@
 - Hero flash root cause was the text-only prerender being wiped by createRoot; fixed structurally (static render + hydrate), not by a fallback tweak.
 - Audit harness is the regression net now: `npx serve dist -l 4175` then `node scripts/audit-tools.mjs`; run it before any deploy that touches tools.
 - Open: Chrome Web Store upload (user), WordPress review pending, Stripe go-live, mobi-to-pdf has no fixture (UI-only in the audit).
+
+## 2026-09-10 (phase 5): second audit, outputs checked
+- [x] `scripts/audit-checks.mjs`: every tool's output opened and compared with its promise (page counts, order, rotation, text, metadata, form values, encryption, sizes); 44/44 pass
+- [x] All 8 server kinds run against the deployed container image locally (pptx/pdf/epub/mobi/azw3/protect/unlock/pdfa, wrong password and already-encrypted paths)
+- [x] `scripts/audit-features.mjs`: cleaner (proxy fetch, tiny page, delete, PDF, PNG, sample, save), account, Stripe hand-off, extension, WordPress, button generator, guides, theme, menus, admin, 404; 21/21 pass live
+- [x] Fixed: Compress Medium/Strong never returns a bigger file; short pages no longer rejected by the cleaner; exported PDFs and images keep pictures from other sites (API image relay + html2canvas proxy)

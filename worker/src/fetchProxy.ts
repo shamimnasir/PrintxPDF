@@ -141,3 +141,41 @@ export async function handleFetch(req: Request, env: Env, url: URL): Promise<Res
     headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300', ...PUBLIC_CORS },
   })
 }
+
+/**
+ * Image relay for the cleaner's PDF and image export: most sites do not send CORS headers on
+ * their pictures, so the browser cannot draw them into a canvas. The relay returns the bytes
+ * with CORS `*` (same SSRF guards, 5 MB cap, images only) so exports keep their pictures.
+ */
+export async function handleImage(req: Request, env: Env, url: URL): Promise<Response> {
+  try {
+    await enforceRateLimit(env.RL_CONVERT, clientIp(req))
+  } catch (e) {
+    if (e instanceof ApiError) throw new ApiError(e.status, e.code, e.message, e.extra, { ...e.headers, ...PUBLIC_CORS })
+    throw e
+  }
+  const target = validateTarget(url.searchParams.get('url'))
+  let upstream: Response
+  try {
+    upstream = await fetch(target.toString(), {
+      headers: { 'user-agent': USER_AGENT, accept: 'image/avif,image/webp,image/*,*/*;q=0.8' },
+      redirect: 'follow',
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+      cf: { cacheTtl: 86400, cacheEverything: true },
+    })
+  } catch (e) {
+    const timedOut = e instanceof Error && e.name === 'TimeoutError'
+    throw new ApiError(502, timedOut ? 'timeout' : 'fetch_failed', timedOut ? 'The image took too long to respond' : 'Could not fetch that image', {}, PUBLIC_CORS)
+  }
+  const type = (upstream.headers.get('content-type') || '').split(';')[0].trim().toLowerCase()
+  if (!upstream.ok || !type.startsWith('image/')) {
+    await upstream.body?.cancel().catch(() => undefined)
+    throw new ApiError(415, 'unsupported_media_type', 'That URL is not an image', {}, PUBLIC_CORS)
+  }
+  if (Number(upstream.headers.get('content-length') ?? '0') > MAX_BYTES) {
+    await upstream.body?.cancel().catch(() => undefined)
+    throw new ApiError(413, 'too_large', 'Image exceeds the 5 MB limit', {}, PUBLIC_CORS)
+  }
+  const bytes = await readCapped(upstream.body, MAX_BYTES)
+  return new Response(bytes, { status: 200, headers: { 'content-type': type, 'cache-control': 'public, max-age=86400', ...PUBLIC_CORS } })
+}

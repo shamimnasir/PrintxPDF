@@ -39,3 +39,14 @@
 - React 19 blocks `javascript:` hrefs in JSX; set a bookmarklet's href through a ref.
 - Vercel with `cleanUrls: true`: a rewrite destination must be the clean URL (`/app`), not
   `/app.html`, or every unmatched route returns 404.
+
+## 2026-09-10: second audit (outputs, not just "it ran")
+- A tool "passing" because a file downloaded is not enough: opening the outputs found Compress
+  Medium returning a larger file than the input on photo PDFs. Check the promise, not the event.
+- html2canvas cannot draw pictures from sites without CORS headers; rewriting `img.src` inside
+  `onclone` does not help (its loader keys on the original URL). Use its `proxy` option with an
+  image relay that returns the bytes with CORS `*` (`/image?url=` on the API).
+- In automation, `getByRole('button', { name: /^PDF/ })` matched the "PDF Tools" nav button
+  before the toolbar's PDF button and looked like a hung export. Scope selectors to `main`.
+- `vite preview` and the browser pane both mislead (SPA fallback for every path, screenshot
+  offset when scrolled); Playwright against `npx serve dist` is the trustworthy harness.

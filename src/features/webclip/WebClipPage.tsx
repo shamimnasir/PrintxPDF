@@ -71,7 +71,7 @@ export default function WebClipPage() {
       if (stale()) return
       setLoading('Removing the clutter…')
       const clean = cleanHtml(page)
-      if (clean.wordCount < 30) throw new Error('We loaded the page but could not find any article text in it. Try pasting the text instead.')
+      if (clean.wordCount < 8) throw new Error('We loaded the page but could not find any article text in it. Try pasting the text instead.')
       store.pushHistory(page.finalUrl, clean.title)
       setArticle(clean)
       document.title = `${clean.title} | PrintxPDF`

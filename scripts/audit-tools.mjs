@@ -8,6 +8,7 @@
 import { chromium } from 'playwright'
 import { mkdir, readFile, writeFile, stat } from 'node:fs/promises'
 import path from 'node:path'
+import { CHECKS } from './audit-checks.mjs'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const BASE = process.env.AUDIT_BASE || 'http://localhost:4175'
@@ -42,9 +43,9 @@ const TOOLS = {
   'rotate-pdf': { files: fx('a.pdf'), success: 'results' },
   'delete-pages': { files: fx('a.pdf'), steps: (page) => page.locator('#pages').fill('2'), success: 'results' },
   'extract-pages': { files: fx('a.pdf'), steps: (page) => page.locator('#pages').fill('1, 3'), success: 'results' },
-  'compress-pdf': { files: fx('a.pdf'), success: 'results' },
+  'compress-pdf': { files: fx('big.pdf'), steps: (page) => page.locator('#level').selectOption('medium'), success: 'results' },
   'repair-pdf': { files: fx('a.pdf'), success: 'results' },
-  'ocr-pdf': { files: fx('a.pdf'), success: 'ocr', timeout: 240000 },
+  'ocr-pdf': { files: fx('a.pdf'), success: 'results', timeout: 240000 },
   'pdf-reader': { files: fx('a.pdf'), run: null, success: 'reader' },
   'pdf-to-jpg': { files: fx('a.pdf'), success: 'results' },
   'jpg-to-pdf': { files: fx('photo.jpg', 'photo.png'), success: 'results' },
@@ -69,7 +70,7 @@ const TOOLS = {
     success: 'download',
   },
   'add-watermark': { files: fx('a.pdf'), success: 'results' },
-  'page-numbers': { files: fx('a.pdf'), success: 'results' },
+  'page-numbers': { files: fx('a.pdf'), steps: (page) => page.locator('#start').fill('101'), success: 'results' },
   'edit-metadata': { files: fx('a.pdf'), steps: (page) => page.locator('#title').fill('Quarterly report 2026'), success: 'results' },
   'flatten-pdf': { files: fx('form.pdf'), success: 'results' },
   'remove-metadata': { files: fx('a.pdf'), success: 'results' },
@@ -187,8 +188,13 @@ async function auditTool(context, slug, t) {
         if (size === 0) throw new Error(`${name} is empty`)
         if (/\.pdf$/i.test(name) && !head.startsWith('%PDF')) throw new Error(`${name} is not a PDF`)
       }
+      // does the output match what the page promises?
+      if (CHECKS[slug]) {
+        const outs = downloads.map((d) => ({ name: d.suggestedFilename(), file: path.join(downloadDir, d.suggestedFilename()) }))
+        result.check = await CHECKS[slug](outs, { fixtures: FIX })
+      }
       result.ok = true
-      result.note = what
+      result.note = what + (result.check ? `; ${result.check}` : '')
     } else {
       if (t.success === 'reader') await page.locator('main .reader').waitFor({ timeout: 60000 })
       result.ok = true

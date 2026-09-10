@@ -3,7 +3,7 @@ import * as billing from './billing'
 import { Converter } from './container'
 import { matchOrigin, preflight, withCors } from './cors'
 import { handleConvert, handleWarm, isKind } from './convert'
-import { handleFetch } from './fetchProxy'
+import { handleFetch, handleImage } from './fetchProxy'
 import { ApiError, errorResponse, json } from './http'
 import { StripeError } from './stripe'
 
@@ -43,6 +43,7 @@ async function route(req: Request, env: Env, ctx: ExecutionContext, url: URL, or
     return method === 'POST' ? handleConvert(req, env, ctx, kind) : methodNotAllowed('POST')
   }
   if (pathname === '/fetch') return method === 'GET' ? handleFetch(req, env, url) : methodNotAllowed('GET')
+  if (pathname === '/image') return method === 'GET' ? handleImage(req, env, url) : methodNotAllowed('GET')
 
   throw new ApiError(404, 'not_found', 'Not found')
 }

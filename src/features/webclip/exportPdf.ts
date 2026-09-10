@@ -1,6 +1,7 @@
 import html2canvas from 'html2canvas'
 import { downloadBlob } from '../../lib/download'
 import { canvasToPdf, type PageSize } from '../../lib/canvasToPdf'
+import { API_BASE } from '../../lib/api'
 
 export type { PageSize }
 
@@ -13,11 +14,14 @@ function scaleFor(el: HTMLElement) {
 async function snapshot(el: HTMLElement) {
   return html2canvas(el, {
     scale: scaleFor(el),
-    useCORS: true,
+    // pictures from other sites rarely allow cross-origin drawing; the API's image relay adds the
+    // header, and html2canvas fetches every cross-origin picture through it (blob, then draw)
+    useCORS: false,
+    proxy: `${API_BASE}/image`,
     allowTaint: false,
     backgroundColor: '#ffffff',
     logging: false,
-    imageTimeout: 8000,
+    imageTimeout: 6000,
     onclone: (doc) => {
       // strip editor-only affordances from the clone; page-break markers become invisible (they drive slicing instead)
       doc.querySelectorAll('.pxp-hover').forEach((n) => n.classList.remove('pxp-hover'))

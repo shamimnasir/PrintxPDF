@@ -119,15 +119,14 @@ export async function reorganize(file: File, pages: { index: number; rotation: n
 // ---------- optimize ----------
 export async function compress(file: File, opts: { level: 'light' | 'medium' | 'strong' }, onProgress?: Progress): Promise<Output[]> {
   const before = file.size
-  if (opts.level === 'light') {
-    // structural only: object streams + drop metadata. Lossless.
-    const doc = await open(file)
-    doc.setProducer('PrintxPDF')
-    doc.setCreator('')
-    doc.setKeywords([])
-    const bytes = await doc.save({ useObjectStreams: true })
-    return [{ name: `${stripExt(file.name)}-compressed.pdf`, blob: pdfBlob(bytes), note: sizeNote(before, bytes.length) }]
-  }
+  const name = `${stripExt(file.name)}-compressed.pdf`
+  // structural only: object streams + drop metadata. Lossless.
+  const doc = await open(file)
+  doc.setProducer('PrintxPDF')
+  doc.setCreator('')
+  doc.setKeywords([])
+  const light = await doc.save({ useObjectStreams: true })
+  if (opts.level === 'light') return [{ name, blob: pdfBlob(light), note: sizeNote(before, light.length) }]
   // lossy: rasterise each page and re-embed as JPEG. Text becomes an image.
   const scale = opts.level === 'medium' ? 1.4 : 1.0
   const quality = opts.level === 'medium' ? 0.72 : 0.55
@@ -144,7 +143,12 @@ export async function compress(file: File, opts: { level: 'light' | 'medium' | '
     onProgress?.(i / pdf.numPages, `Page ${i}/${pdf.numPages}`)
   }
   const bytes = await out.save({ useObjectStreams: true })
-  return [{ name: `${stripExt(file.name)}-compressed.pdf`, blob: pdfBlob(bytes), note: sizeNote(before, bytes.length) + ' Text is now an image; use Light for a lossless pass.' }]
+  // a photo-heavy or already-compressed file can come out bigger as pictures; never hand back
+  // a larger file than the lossless pass would
+  if (bytes.length >= light.length) {
+    return [{ name, blob: pdfBlob(light), note: sizeNote(before, light.length) + ' Turning the pages into pictures would have made this file bigger, so you got the lossless version instead.' }]
+  }
+  return [{ name, blob: pdfBlob(bytes), note: sizeNote(before, bytes.length) + ' Text is now an image; use Light for a lossless pass.' }]
 }
 const sizeNote = (a: number, b: number) => `${(a / 1024).toFixed(0)} KB → ${(b / 1024).toFixed(0)} KB (${b < a ? '-' : '+'}${Math.abs(100 - (b / a) * 100).toFixed(0)}%).`
 
