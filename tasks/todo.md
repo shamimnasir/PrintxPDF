@@ -77,7 +77,7 @@
 | | Cheapest paid | Free tier | Files | Lifetime? |
 | --- | --- | --- | --- | --- |
 | iLovePDF | $7/mo, or $48/yr = $4.00/mo | 15 MB to 400 MB per tool, 1 to 25 tasks a day | uploaded, deleted within 2 hours | no |
-| Smallpdf | ~$15/mo, Teams $12/user/mo | limits no longer published, qualitative wording only | uploaded, 1 hour signed in; **processed docs are reachable by shareable URL by default** | no |
+| Smallpdf | **$12/mo, or $108/yr = $9.00/mo** (a live A/B test shows some US/UK/CA visitors up to 25% more) | **2 conversions a day**, first-party confirmed; batch, OCR-to-Office, Edit Text and Strong Compression blocked | uploaded; 1 hour **only if signed in**, anonymous files kept a "reasonable period" that **extends every time you reopen**; processed docs reachable by shareable URL by default | no |
 | PrintFriendly | no consumer plan at all: free + ads. Print Button Pro ~$79/yr per domain buys ad-free + white-label. API $10 to $80 | everything, ad supported | uploaded, 48 hours, URLs screened by third-party AI, usage shared with ad partner Freestar | no |
 | PrintxPDF | proposed $3.99/mo | unlimited browser tools, no account, no watermark, no file cap | **33 of 44 tools never upload** | proposed $119 |
 
@@ -131,8 +131,12 @@ Then the two supporting pillars:
 
 **Verified free-tier caps worth beating in copy:** iLovePDF free is 15 MB and **one file per task**
 for Office conversions, OCR, PDF/A and Repair; Edit, Redact, Compare, Forms and Crop are one file
-per task on *every* tier including paid. Smallpdf stopped publishing numeric free limits in
-August 2026. Our browser tools have no file cap and no task cap because they cost us nothing.
+per task on *every* tier including paid. Smallpdf free is **2 conversions a day**. Our browser tools
+have no file cap and no task cap because they cost us nothing to run.
+
+**Price ladder, all verified:** Smallpdf $9.00/mo on annual, iLovePDF $4.00/mo on annual, PrintxPDF
+proposed **$3.99/mo billed monthly**. We would be the cheapest in the category while being the only
+one you can leave at the end of any month. Nobody in the category sells a lifetime.
 
 ### Decisions needed before implementing
 1. Lifetime allowance: 300/mo like Pro means ~36,000 server conversions over ten years for $119. Cap it lower, or bound the number sold?
