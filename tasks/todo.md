@@ -46,6 +46,13 @@
 - [x] Name-only byline; light mode default; author photo
 - [x] Hero flash on reload: real static render of every page + hydration (entry-server.tsx, ClientOnly islands, inline config, modulepreload per route, /account and /signin as files, shell = header+loading, Vercel rewrite → /app)
 - [x] WordPress.org submission: uploaded, automated scan pass, slug changed to `printxpdf`, awaiting review (email to nus9040@gmail.com)
-- [ ] Chrome Web Store: console cannot be automated; user uploads `public/downloads/printxpdf-chrome-extension.zip` with `extension/STORE_LISTING.md` and `extension/store-assets/*.png`
-- [ ] Full tool audit with Playwright (`scripts/audit-tools.mjs`): every tool run with real fixtures, screenshots into `public/screens/tools`, shown in tool How sections and guide steps
-- [ ] Fix whatever the audit finds, redeploy, verify live
+- [ ] Chrome Web Store (user): console cannot be automated; user uploads `public/downloads/printxpdf-chrome-extension.zip` with `extension/STORE_LISTING.md` and `extension/store-assets/*.png`
+- [x] Full tool audit with Playwright (`scripts/audit-tools.mjs`): 44/44 pass (server kinds against the live API), screenshots in `public/screens/tools`, shown in tool How sections, guide steps and HowTo schema
+- [x] Menus split into PDF Tools / Convert / Images & Files; hover bridge; byline aligned; upload box restyled; stale-chunk reload + error boundary (blank page after deploy); tool page sidebar
+- [x] Plain-language copy pass (tool pages, tool descriptions, option labels, notices, site pages), no engine names in user-facing text
+- [x] Deployed 2026-09-10, all 44 live tool pages verified (sections, sidebar, screenshot, no hydration errors)
+
+## Review (2026-09-10)
+- Hero flash root cause was the text-only prerender being wiped by createRoot; fixed structurally (static render + hydrate), not by a fallback tweak.
+- Audit harness is the regression net now: `npx serve dist -l 4175` then `node scripts/audit-tools.mjs`; run it before any deploy that touches tools.
+- Open: Chrome Web Store upload (user), WordPress review pending, Stripe go-live, mobi-to-pdf has no fixture (UI-only in the audit).
