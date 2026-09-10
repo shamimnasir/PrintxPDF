@@ -9,8 +9,8 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
     title: kind === 'privacy' ? 'Privacy, Your Files Stay on Your Device' : 'Terms of Use',
     description:
       kind === 'privacy'
-        ? 'Browser tools never upload your files. A few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe; no card details stored.'
-        : 'Terms for using PrintxPDF: free browser tools, a free monthly allowance of server conversions, and Pro and API subscriptions billed monthly by Stripe with a 14-day refund on the first charge.',
+        ? 'Browser tools never upload your files. The few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe.'
+        : 'Terms for using PrintxPDF: free browser tools, a monthly allowance of server conversions, and Pro and API plans billed by Stripe with a 14-day refund.',
     path: kind === 'privacy' ? '/privacy' : '/terms',
     schema: [
       breadcrumbSchema([

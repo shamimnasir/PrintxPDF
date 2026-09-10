@@ -6,7 +6,7 @@ export const printWebPages: Cluster = {
   title: 'How to print any web page without ads, menus or wasted paper',
   metaTitle: 'How to Print a Web Page Without Ads (2026 Guide)',
   metaDescription:
-    'Print any web page without ads, sidebars or navigation. Reader mode, print preview, browser print settings and a free printer-friendly tool that runs in your browser.',
+    'Print any web page without ads, sidebars or menus. Reader mode, print preview, browser settings and a free tool that cleans the page in your browser.',
   intro:
     'A web page is built for scrolling, not for paper. Hitting Ctrl+P usually gives you the article plus three ad slots, a cookie banner, a newsletter box and a comment wall spread over nine sheets. These guides cover every reliable way to strip that clutter first: Chrome and Safari reader modes, browser print settings, print preview tricks, and a free browser-based cleaner that lets you delete anything left over before you print.',
   answer:

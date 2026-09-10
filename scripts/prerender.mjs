@@ -410,7 +410,7 @@ async function main() {
     {
       route: '/about',
       title: 'About PrintxPDF | Documents You Control',
-      description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Browser tools keep your files on your computer; a few heavy jobs run on our own server and are deleted right after.`,
+      description: `PrintxPDF is a print and PDF toolkit founded by ${author.name}. Browser tools keep files on your computer, and server jobs delete them right after.`,
       h1: 'Your documents. Your computer. Your call.',
       schema: [{ '@context': 'https://schema.org', ...org }],
     },
@@ -442,13 +442,13 @@ async function main() {
     {
       route: '/privacy',
       title: 'Privacy | Your Files Stay on Your Device',
-      description: 'Browser tools never upload your files. A few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe; no card details stored.',
+      description: 'Browser tools never upload your files. The few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe.',
       h1: 'Your files stay with you.',
     },
     {
       route: '/terms',
       title: 'Terms of Use',
-      description: 'Terms for using PrintxPDF: free browser tools, a free monthly allowance of server conversions, and Pro and API subscriptions billed monthly by Stripe with a 14-day refund on the first charge.',
+      description: 'Terms for using PrintxPDF: free browser tools, a monthly allowance of server conversions, and Pro and API plans billed by Stripe with a 14-day refund.',
       h1: 'Terms, briefly.',
     },
     {
@@ -457,13 +457,13 @@ async function main() {
       description: 'A free Chrome extension that opens the page you are on in the PrintxPDF cleaner: ads, menus and comments removed, ready to print or save as a PDF.',
       h1: 'Turn any page into a clean PDF',
     },
-    { route: '/signin', title: 'Log in | PrintxPDF', description: 'Log in to PrintxPDF to keep your saved pages, signatures and settings on this device.', h1: 'Log in', noindex: true },
+    { route: '/signin', title: 'Log in | PrintxPDF', description: 'Log in to PrintxPDF to keep your saved pages, signatures and settings on this device. No password is needed and nothing is sent to us.', h1: 'Log in', noindex: true },
     { route: '/signup', title: 'Sign up | PrintxPDF', description: 'Create a free PrintxPDF account. No password: your saved pages, signatures and settings stay on this device.', h1: 'Sign up', noindex: true },
     { route: '/account', title: 'Your account | PrintxPDF', description: 'Your PrintxPDF account: your plan, monthly usage, saved documents, signatures and settings, all kept in this browser and never sent anywhere.', h1: 'Account', noindex: true },
     {
       route: '/extension-privacy',
       title: 'Chrome Extension Privacy Policy',
-      description: 'The PrintxPDF Chrome extension collects nothing and sends nothing. It reads the address of the tab you click on, stores one preference, and puts a selection on your clipboard only when you ask.',
+      description: 'The PrintxPDF Chrome extension collects nothing and sends nothing. It reads the address of the tab you click on and stores one preference on your machine.',
       h1: 'It collects nothing. It sends nothing.',
     },
   ]

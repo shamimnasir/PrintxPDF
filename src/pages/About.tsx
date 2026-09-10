@@ -6,7 +6,7 @@ export default function About() {
   const cfg = useSiteConfig()
   useSeo({
     title: 'About PrintxPDF | Documents You Control',
-    description: `PrintxPDF is a print and PDF toolkit founded by ${cfg.author.name}. Browser tools keep your files on your computer; a few heavy jobs run on our own server and are deleted right after.`,
+    description: `PrintxPDF is a print and PDF toolkit founded by ${cfg.author.name}. Browser tools keep files on your computer, and server jobs delete them right after.`,
     path: '/about',
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]), { '@context': 'https://schema.org', ...orgSchema(cfg.author) }],
   })

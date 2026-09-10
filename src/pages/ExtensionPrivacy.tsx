@@ -8,7 +8,7 @@ import { breadcrumbSchema, useSeo } from '../lib/seo'
 export default function ExtensionPrivacy() {
   useSeo({
     title: 'Chrome Extension Privacy Policy',
-    description: 'The PrintxPDF Chrome extension collects nothing and sends nothing. It reads the address of the tab you click on, stores one preference, and puts a selection on your clipboard only when you ask.',
+    description: 'The PrintxPDF Chrome extension collects nothing and sends nothing. It reads the address of the tab you click on and stores one preference on your machine.',
     path: '/extension-privacy',
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Chrome extension', path: '/extensions/chrome' }, { name: 'Privacy', path: '/extension-privacy' }])],
   })

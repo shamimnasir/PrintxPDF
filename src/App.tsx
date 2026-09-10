@@ -41,7 +41,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="print" element={<ClientOnly fallback={<RouteLoading />}><WebClip /></ClientOnly>} />
+          <Route path="print" element={<WebClip />} />
           <Route path="tools" element={<ToolsIndex />} />
           <Route path="tools/:slug" element={<ToolPage />} />
           <Route path="extensions" element={<Extensions />} />
@@ -58,8 +58,8 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="privacy" element={<Legal kind="privacy" />} />
           <Route path="terms" element={<Legal kind="terms" />} />
-          <Route path="signin" element={<ClientOnly fallback={<RouteLoading />}><SignIn mode="in" /></ClientOnly>} />
-          <Route path="signup" element={<ClientOnly fallback={<RouteLoading />}><SignIn mode="up" /></ClientOnly>} />
+          <Route path="signin" element={<SignIn mode="in" />} />
+          <Route path="signup" element={<SignIn mode="up" />} />
           <Route path="account/*" element={<ClientOnly fallback={<RouteLoading />}><Account /></ClientOnly>} />
           <Route path="admin/*" element={<ClientOnly fallback={<RouteLoading />}><AdminApp /></ClientOnly>} />
           <Route path="*" element={<ClientOnly fallback={<RouteLoading />}><NotFound /></ClientOnly>} />

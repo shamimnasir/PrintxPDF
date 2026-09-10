@@ -31,7 +31,9 @@ export default function WebClipPage() {
   const nav = useNavigate()
   const { toast } = useToast()
   const [tab, setTab] = useState<Tab>('url')
-  const [url, setUrl] = useState(params.get('url') || '')
+  // starts empty so the static landing page and the first client render agree; the effect
+  // below fills it in from ?url= right after hydration
+  const [url, setUrl] = useState('')
   const [paste, setPaste] = useState('')
   const [pasteTitle, setPasteTitle] = useState('')
   const [article, setArticle] = useState<CleanArticle | null>(null)
@@ -39,7 +41,9 @@ export default function WebClipPage() {
   const [error, setError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const reqId = useRef(0) // ignore results from a fetch the user has already abandoned
-  const history = store.getHistory()
+  // localStorage is a browser-only fact, so it is read after hydration, never during the first render
+  const [history, setHistory] = useState<ReturnType<typeof store.getHistory>>([])
+  useEffect(() => setHistory(store.getHistory()), [])
 
   useSeo({
     title: article ? `${article.title}, PrintxPDF` : 'Print Any Web Page Without Ads',
