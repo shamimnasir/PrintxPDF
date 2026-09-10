@@ -60,6 +60,7 @@ async function main() {
     { loc: '/blog', pri: '0.8', freq: 'weekly', mod: today },
     { loc: '/pricing', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/about', pri: '0.5', freq: 'yearly', mod: today },
+    { loc: '/support', pri: '0.6', freq: 'monthly', mod: today },
     { loc: authorRoute, pri: '0.5', freq: 'monthly', mod: today },
     { loc: '/api', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/wordpress', pri: '0.6', freq: 'monthly', mod: today },

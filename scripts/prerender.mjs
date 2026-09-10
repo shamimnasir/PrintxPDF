@@ -422,6 +422,13 @@ async function main() {
       schema: [{ '@context': 'https://schema.org', '@type': 'ProfilePage', url: `${SITE}${authorRoute}`, mainEntity: { ...person, knowsAbout: CLUSTERS.map((c) => c.name) } }],
     },
     {
+      route: '/support',
+      title: 'Support | PrintxPDF Help and Contact',
+      description:
+        'Get help with PrintxPDF: fixes for the most common problems with the PDF tools, the web page cleaner, server conversions, your account and billing.',
+      h1: 'Something not working? Tell us and we will fix it.',
+    },
+    {
       route: '/api',
       title: 'PDF Conversion API | PowerPoint, EPUB and MOBI to PDF',
       description: 'A simple web API for developers: send a PowerPoint, EPUB or MOBI file and get a PDF back, or turn a PDF into PowerPoint. 5 free a month; the API plan has 5,000.',

@@ -49,6 +49,7 @@ export function Footer() {
         <div>
           <h4>Company</h4>
           <Link to="/about">About</Link>
+          <Link to="/support">Support</Link>
           <Link to="/blog">Guides</Link>
           <Link to="/account">Account</Link>
           <Link to="/privacy">Privacy</Link>

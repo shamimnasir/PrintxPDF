@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-import App from './App'
+import App, { preloadRoute } from './App'
 import { applyTheme, store } from './lib/store'
 import { ToastProvider } from './components/ui/Toast'
 import { bootConfig, getConfig } from './admin/config'
@@ -53,5 +53,11 @@ const app = (
 // same tree with src/entry-server.tsx), so React attaches to it instead of repainting; the dev
 // server and the bare app shell start from an empty root.
 const root = document.getElementById('root')!
-if (root.hasChildNodes()) hydrateRoot(root, app)
-else createRoot(root).render(app)
+if (root.hasChildNodes()) {
+  // The server-rendered page is already on screen. Hydrating before this route's chunk has
+  // arrived would suspend on the first render and replace that page with a loading badge, so
+  // wait for the chunk (the shell modulepreloads it) and only then attach.
+  preloadRoute(window.location.pathname.replace(basename, '') || '/').then(() => hydrateRoot(root, app))
+} else {
+  createRoot(root).render(app)
+}
