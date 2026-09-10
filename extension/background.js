@@ -1,5 +1,5 @@
 /**
- * PrintxPDF — MV3 background service worker (module).
+ * PrintxPDF, MV3 background service worker (module).
  *
  * Single purpose: hand the page you are reading to printxpdf.com's print
  * cleaner. Everything here is one of three jobs:
@@ -31,7 +31,7 @@ const MENU_ITEMS = [
 /**
  * Only http(s) can be handed to the site. chrome://, edge://, about:, file://,
  * view-source: and the Web Store are all refused here, before anything tries to
- * read them — no extension may touch those pages, and printxpdf.com could not
+ * read them: no extension may touch those pages, and printxpdf.com could not
  * fetch them either.
  */
 function isPrintable(url) {
@@ -65,7 +65,7 @@ async function openTarget(url, tab) {
 
 /**
  * activeTab hands us tab.url for the tab the user just acted on. If the event's
- * tab object arrived without it, re-read the active tab — the same activeTab
+ * tab object arrived without it, re-read the active tab, the same activeTab
  * grant covers that query, so no `tabs` permission and no injection is needed.
  */
 async function resolveTabUrl(tab) {
@@ -214,7 +214,7 @@ async function cleanSelection(tab) {
 }
 
 /* ------------------------------------------------------------------ */
-/* wiring — top level only                                            */
+/* wiring, top level only                                            */
 /* ------------------------------------------------------------------ */
 
 chrome.runtime.onInstalled.addListener(() => {

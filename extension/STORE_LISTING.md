@@ -1,11 +1,13 @@
-# Chrome Web Store submission pack — PrintxPDF
+# Chrome Web Store submission pack: PrintxPDF
 
 Everything a human has to paste into the Chrome Web Store developer dashboard,
 field by field, plus the images that still have to be produced by hand.
 
-Package to upload: `dist-extension/printxpdf-extension-v1.0.0.zip`
-(produced by `node scripts/build-extension.mjs`; `manifest.json` sits at the
-archive root, and README / PRIVACY / STORE_LISTING / `tools/` are excluded).
+Package to upload: `dist-extension/printxpdf-extension-v1.0.0.zip` (12 KB), produced by
+`node scripts/build-extension.mjs`. The same bytes are copied to
+`public/downloads/printxpdf-chrome-extension.zip`, which the site serves; either file works.
+`manifest.json` sits at the archive root, and README / PRIVACY / STORE_LISTING / `tools/` /
+`store-assets/` are excluded.
 
 Policy sources this pack was checked against:
 
@@ -25,10 +27,10 @@ Policy sources this pack was checked against:
 
 ## 1. Store listing tab
 
-**Item name** (from `manifest.json`, 33 characters)
+**Item name** (from `manifest.json`, 32 characters)
 
 ```
-PrintxPDF — Print Web Pages Clean
+PrintxPDF: Print Web Pages Clean
 ```
 
 **Short description** (the dashboard reuses the manifest `description`; 121 of
@@ -58,18 +60,18 @@ HOW IT WORKS
 
 WHAT YOU CAN DO FROM THE TOOLBAR
 
-• Clean this page — hands the current tab to the cleaner.
-• Paste text — opens the paste box, so you can clean text from a page Chrome
+• Clean this page: hands the current tab to the cleaner.
+• Paste text: opens the paste box, so you can clean text from a page Chrome
   will not let extensions touch, or from anywhere else.
-• Copy clean link — copies a printxpdf.com link for the current page, ready to
+• Copy clean link: copies a printxpdf.com link for the current page, ready to
   send to somebody.
-• Open in a new tab — a preference, on by default, so your reading is not lost.
+• Open in a new tab: a preference, on by default, so your reading is not lost.
 
 WHAT YOU CAN DO FROM THE RIGHT-CLICK MENU
 
 • Clean this page for printing.
-• Clean this link — cleans a link's target without visiting it first.
-• Print just this selection — copies the part you highlighted, with its
+• Clean this link: cleans a link's target without visiting it first.
+• Print just this selection: copies the part you highlighted, with its
   formatting, and opens the paste box so you can print only that.
 
 KEYBOARD SHORTCUT
@@ -84,7 +86,7 @@ no trackers, no third-party libraries and no remote code. It does not ask for
 access to your websites: it uses Chrome's activeTab permission, which gives it
 the address of one tab, only after you click, and only until you navigate away.
 That is why Chrome never warns you that this extension can "read and change all
-your data on all websites" — it cannot.
+your data on all websites". It cannot.
 
 The cleaning itself happens on printxpdf.com, in your own browser. No document is
 uploaded to a server.
@@ -102,8 +104,8 @@ Privacy policy: https://printxpdf.com/extension-privacy
 PrintxPDF has one purpose: to open the page you are currently reading in
 printxpdf.com's print cleaner, so it can be printed or saved as a PDF without
 the ads, navigation and comments. The extension is a launcher and does nothing
-else. Every one of its surfaces — the toolbar popup, the three context-menu
-items and the keyboard shortcut — performs that same action on the current tab,
+else. Every one of its surfaces, the toolbar popup, the three context-menu
+items and the keyboard shortcut, performs that same action on the current tab,
 a right-clicked link, or a text selection. It has no unrelated features
 bundled with it.
 ```
@@ -138,7 +140,7 @@ requests of any kind. The build script (scripts/build-extension.mjs) fails the
 build if any of those patterns appear in a shipped file.
 ```
 
-### Data usage — what user data do you collect?
+### Data usage: what user data do you collect?
 
 Tick **nothing**. Every category is **No**:
 
@@ -172,14 +174,8 @@ device by way of this extension, and neither is retained. The two values in
 https://printxpdf.com/extension-privacy
 ```
 
-> **⚠ ACTION REQUIRED BY ANOTHER ENGINEER.** That page does not exist yet. The
-> Chrome Web Store rejects a submission whose privacy-policy URL 404s, and a
-> policy is mandatory for any item that handles user data (which includes
-> reading a tab's URL). The final text is in `extension/PRIVACY.md`; it needs to
-> be published as a public, non-authenticated page at
-> `https://printxpdf.com/extension-privacy`. That is a `src/` change, which is
-> outside this extension's ownership — whoever owns `src/` must add the route
-> and the prerender entry, and confirm the URL returns 200 before submission.
+> Published and live: <https://printxpdf.com/extension-privacy> returns 200 and mirrors
+> `extension/PRIVACY.md`. Re-check it in a private window right before you submit.
 
 ---
 
@@ -191,30 +187,33 @@ https://printxpdf.com/extension-privacy
 
 ---
 
-## 4. Images a human still has to produce
+## 4. Images
 
-**These cannot be generated here.** Screenshots of a Chrome extension have to be
-taken from a real Chrome window with the extension loaded, and no such window
-exists in this environment. The list below is what the dashboard will ask for.
+All of these are built and sit in `extension/store-assets/`. Two scripts regenerate them:
+`node scripts/build-store-screenshots.mjs` (captures the real pages) and
+`node scripts/build-promo-tiles.mjs` (brand tiles). Nothing here is a mockup: every browser
+frame in a screenshot is a real page as it actually renders.
 
-| Asset | Size | Required? | What it should show |
+| Asset | File | Size | Required? |
 | --- | --- | --- | --- |
-| Store icon | 128×128 PNG | **Yes** | Already in the package: `extension/icons/icon-128.png`. Upload the same file; the dashboard keeps its own copy. Keep ~16px of padding inside the square so it is not clipped in the rounded store frame. |
-| Screenshot 1 | 1280×800 PNG or JPEG | **Yes, at least one** | The money shot: a real cluttered article on the left, the same article cleaned on printxpdf.com on the right, side by side. This is the single most persuasive image and the one reviewers look at first. |
-| Screenshot 2 | 1280×800 | Recommended | The toolbar popup open over a real article, showing the current page's address, "Clean this page", "Paste text" and "Copy clean link". Crop tight so the 300px popup is legible; do not shrink it into a corner. |
-| Screenshot 3 | 1280×800 | Recommended | The right-click menu open on a text selection with "Print just this selection" highlighted. |
-| Screenshot 4 | 1280×800 | Optional | The printxpdf.com print preview / PDF export step, showing the cleaned article in a print dialog. |
-| Small promo tile | 440×280 PNG or JPEG | Optional | The wordmark plus one line of value ("Print any article without the clutter"), on the brand blue `#2b5bff`. No screenshots-in-a-tile, no text smaller than ~18px. |
-| Marquee promo tile | 1400×560 | Optional | Only needed if the item is ever considered for featuring. |
-| YouTube video | link | Optional | Skip for v1. |
+| Store icon | `extension/icons/icon-128.png` | 128x128 | **Yes** |
+| Screenshot 1 | `store-assets/screenshot-1-before-after.png` | 1280x800 | **Yes, at least one.** A real article beside the same article after the cleaner. Upload this first: it is the one reviewers and users look at. |
+| Screenshot 2 | `store-assets/screenshot-1-cleaner.png` | 1280x800 | Recommended. The cleaner open on a real article with the editing toolbar. |
+| Screenshot 3 | `store-assets/screenshot-3-extension-page.png` | 1280x800 | Recommended. The extension's own page, showing what it does and how to install it. |
+| Small promo tile | `store-assets/promo-small-440x280.png` | 440x280 | Optional, but it is what makes the listing look finished. |
+| Marquee promo tile | `store-assets/promo-marquee-1400x560.png` | 1400x560 | Optional. Only used if the item is considered for featuring. |
+| YouTube video | none | link | Skip for v1. |
 
-Rules that apply to all of them: no browser chrome that is not real, no mocked
-UI that the extension does not actually produce, no text that promises a feature
-the extension does not have, and no other company's trademarks. All five
-screenshot slots take 1280×800; 640×400 is accepted but looks soft on modern
-displays, so shoot at 1280×800.
+Not included: a screenshot of the toolbar popup itself. It needs a real Chrome window with the
+extension pinned, and a headless browser cannot give the popup an active http tab, so the popup
+renders its "this tab has no web address" state instead. If you want that shot, load the
+unpacked extension in your own Chrome, open any article, click the icon, and capture the
+1280x800 window. It is optional; `store-assets/screenshot-3-extension-page.png` already shows
+the popup's buttons described in words.
 
----
+`store-assets/screenshot-2-tools.png` is kept in the folder but is **not recommended for this
+listing**: it shows the site's 44-tool grid, which is not what the extension does, and a
+reviewer checking single purpose could read it as unrelated functionality.
 
 ## 5. Submission checklist for the human
 
@@ -224,11 +223,11 @@ displays, so shoot at 1280×800.
    Google account first; the dashboard requires it.
 2. **Verify the contact email** on the account (Account tab → contact email →
    verify). An unverified email blocks publishing.
-3. **Build the package:** `node scripts/build-extension.mjs`, then upload
-   `dist-extension/printxpdf-extension-v1.0.0.zip` via "Add new item".
-4. **Publish the privacy policy page first** (see the warning in section 2) and
-   check that <https://printxpdf.com/extension-privacy> returns 200 in a private
-   window.
+3. **The package is built:** upload `dist-extension/printxpdf-extension-v1.0.0.zip` (or the
+   identical `public/downloads/printxpdf-chrome-extension.zip`) via "Add new item". Rebuild
+   with `node scripts/build-extension.mjs` only if you change the extension source.
+4. **The privacy policy page is live** at <https://printxpdf.com/extension-privacy>. Open it
+   in a private window to confirm before submitting.
 5. **Store listing tab:** paste section 1 of this file. Upload the icon and at
    least one screenshot from section 4.
 6. **Privacy practices tab:** paste section 2, field by field. Tick the three

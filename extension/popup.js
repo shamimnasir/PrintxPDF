@@ -101,8 +101,8 @@ async function showShortcut() {
     const command = commands.find((c) => c.name === 'clean-current-page')
     el.shortcut.textContent = command?.shortcut || 'Set a shortcut'
     el.shortcut.title = command?.shortcut
-      ? 'Keyboard shortcut for "Clean this page" — click to change it'
-      : 'No shortcut assigned — click to set one'
+      ? 'Keyboard shortcut for "Clean this page", click to change it'
+      : 'No shortcut assigned, click to set one'
   } catch {
     el.shortcut.textContent = ''
   }

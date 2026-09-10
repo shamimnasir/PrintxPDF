@@ -1,11 +1,11 @@
-# PrintxPDF — Chrome extension (Manifest V3)
+# PrintxPDF: Chrome extension (Manifest V3)
 
 One click puts the page you are reading into <https://printxpdf.com/print>, where
 Readability strips the ads, menus and comment walls and you can delete blocks,
 resize text and images, then Print, save a PDF or PNG, or email it.
 
 The extension itself is a launcher. All the cleaning and exporting happens on the
-site, in your browser — nothing is uploaded and the extension makes no network
+site, in your browser: nothing is uploaded and the extension makes no network
 requests of its own.
 
 ## What you get
@@ -15,13 +15,13 @@ requests of its own.
 | Toolbar popup | "Clean this page", "Paste text" (opens the paste box, works even on pages Chrome walls off), "Copy clean link", and an "Open in a new tab" preference. |
 | Keyboard shortcut | `Alt+Shift+P` / `Command+Shift+P` → clean the current page. Rebind it at `chrome://extensions/shortcuts`. |
 | Right-click on a page | **Clean this page for printing** |
-| Right-click on a link | **Clean this link** — cleans the link's target without visiting it first. |
-| Right-click on a selection | **Print just this selection** — see below. |
+| Right-click on a link | **Clean this link**: cleans the link's target without visiting it first. |
+| Right-click on a selection | **Print just this selection**: see below. |
 
 ### How the selection item works (and why)
 
 printxpdf.com is a static, client-side site. It has no ingest API, and a query
-string cannot carry a page's worth of selected markup — so the extension does
+string cannot carry a page's worth of selected markup: so the extension does
 not pretend otherwise:
 
 1. It serialises your selection as HTML (absolute `src`/`href`, scripts and
@@ -56,7 +56,7 @@ the popup says so and offers to open PrintxPDF instead.
 **There is no `host_permissions` entry, and no `<all_urls>`.** A launcher that
 only needs the current tab's URL at the moment you ask for it does not need
 standing access to every site you visit. `activeTab` grants exactly that, one
-tab at a time, on your gesture — which means no "Read and change all your data
+tab at a time, on your gesture: which means no "Read and change all your data
 on all websites" warning at install, and a much shorter Web Store review.
 
 No `host_permissions` also means no remote code, no analytics and no background
@@ -94,8 +94,8 @@ size), audits every shipped file for remote code and CSP violations (`eval`,
 remote `<script src>`/stylesheets/`@import`, `fetch`, `XMLHttpRequest`,
 `WebSocket`) and fails the build on any hit, then writes:
 
-- `dist-extension/printxpdf-extension-v<version>.zip` — upload this
-- `public/downloads/printxpdf-chrome-extension.zip` — the same bytes, for the site
+- `dist-extension/printxpdf-extension-v<version>.zip`: upload this
+- `public/downloads/printxpdf-chrome-extension.zip`: the same bytes, for the site
 
 `manifest.json` sits at the archive root; Chrome rejects a zip with a wrapping
 folder. `tools/` and every `.md` file are excluded from the package.

@@ -24,7 +24,9 @@ const SITE_COPY = join(ROOT, 'public', 'downloads', 'printxpdf-chrome-extension.
  * (README, PRIVACY, STORE_LISTING) is for humans and reviewers, not for Chrome:
  * every byte in the zip is code a reviewer has to read, so keep it to code.
  */
-const EXCLUDE_DIRS = new Set(['tools', 'node_modules', '.git'])
+// store-assets holds the listing screenshots and promo tiles: they belong in the dashboard,
+// never inside the uploaded package (they added 237 KB of dead weight when they were included)
+const EXCLUDE_DIRS = new Set(['tools', 'store-assets', 'node_modules', '.git'])
 const EXCLUDE_FILES = new Set(['.DS_Store'])
 /** Anything matching these never ships, whatever it is called. */
 const EXCLUDE_PATTERNS = [/\.md$/i, /\.zip$/i, /\.map$/i, /~$/]
