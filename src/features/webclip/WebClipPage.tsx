@@ -220,8 +220,8 @@ export default function WebClipPage() {
         )}
 
         <p className="muted" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
-          Your browser loads the page through our page fetcher or a public reader service, so a few sites that block
-          automatic visitors will refuse. Pasting the text always works. <Link to="/api">Run your own copy →</Link>
+          Your browser loads the page through our own fetcher, and the cleaning happens here on your device. A few sites
+          block automatic visitors and will refuse; pasting the text always works. <Link to="/api">Run your own copy →</Link>
         </p>
       </div>
 

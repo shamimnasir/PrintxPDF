@@ -37,6 +37,41 @@ describe('fetchArticle proxy chain', () => {
   })
 })
 
+describe('fetchArticle keeps the URL off third parties', () => {
+  const SELF = { name: 'self-hosted', build: (u: string) => `https://api.example.com/fetch?url=${encodeURIComponent(u)}`, kind: 'html' as const }
+  const PUBLIC = [
+    { name: 'allorigins', build: (u: string) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, kind: 'json-contents' as const },
+    { name: 'jina-reader', build: (u: string) => `https://r.jina.ai/${u}`, kind: 'markdown' as const },
+  ]
+
+  it('asks our own proxy alone when it answers, so no public reader ever sees the address', async () => {
+    const calls: string[] = []
+    const fakeFetch = (async (url: string) => {
+      calls.push(url)
+      return new Response(html, { status: 200 })
+    }) as unknown as typeof fetch
+    const page = await fetchArticle('https://example.com/private-report', undefined, fakeFetch, [SELF, ...PUBLIC])
+    expect(page.via).toBe('self-hosted')
+    expect(calls).toHaveLength(1)
+    expect(calls[0]).toContain('api.example.com')
+    expect(calls.join(' ')).not.toMatch(/allorigins|jina/)
+  })
+
+  it('falls back to the public readers only once ours has failed', async () => {
+    const calls: string[] = []
+    const fakeFetch = (async (url: string) => {
+      calls.push(url)
+      if (url.includes('api.example.com')) return new Response('', { status: 502 })
+      if (url.includes('allorigins')) return new Response(JSON.stringify({ contents: html, status: { http_code: 200 } }))
+      return new Response('', { status: 500 })
+    }) as unknown as typeof fetch
+    const page = await fetchArticle('https://example.com/x', undefined, fakeFetch, [SELF, ...PUBLIC])
+    expect(page.via).toBe('allorigins')
+    expect(calls[0]).toContain('api.example.com') // ours was tried first
+    expect(calls).toHaveLength(3)
+  })
+})
+
 describe('markdownToHtml', () => {
   it('converts headings, lists, links and images', () => {
     const { title, html } = markdownToHtml('Title: Hello\n\n# Head\n\n- one\n- two\n\nSee [x](https://x.y) ![alt](https://i.png)')

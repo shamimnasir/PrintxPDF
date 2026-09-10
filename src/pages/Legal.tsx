@@ -38,8 +38,11 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
           </p>
           <h3>What leaves your computer</h3>
           <p>
-            <strong>Web-page cleaning by URL.</strong> The address you paste is sent to our fetch proxy (or a public reader
-            proxy) so the page can be retrieved. Only the address is transmitted.
+            <strong>Web-page cleaning by URL.</strong> The address you paste goes to our own fetch service so the page can be
+            retrieved; only the address is sent, and the cleaning itself happens in your browser. The fetched page may sit in
+            Cloudflare's cache for five minutes so a second person asking for the same page gets it faster. If our service
+            cannot reach the page, and only then, the address is passed to public reader services (AllOrigins, CodeTabs,
+            Jina Reader) run by other companies under their own privacy policies. Nothing else about you is sent either way.
           </p>
           <p>
             <strong>Server jobs.</strong> PowerPoint to PDF, PDF to PowerPoint, EPUB and MOBI to PDF, password protect and unlock, and PDF/A conversion upload the file

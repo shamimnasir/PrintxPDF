@@ -1,7 +1,7 @@
-// Fetch a remote page from the browser. Static hosts can't proxy, so we walk a chain of
-// public CORS-friendly readers and take the first that answers. Each one is rate-limited
-// and occasionally down, hence the chain. A self-hosted Worker (see /worker) is tried first
-// when VITE_FETCH_PROXY is configured.
+// Fetch a remote page from the browser. Our own Worker proxy (VITE_FETCH_PROXY, see /worker)
+// is asked first and alone, so the address a reader pastes normally reaches nobody else. Only
+// if ours fails or stalls do we fall back to public CORS readers, which are rate-limited and
+// often down, so those are raced against each other rather than tried one by one.
 
 export type FetchedPage = { html: string; finalUrl: string; via: string; kind: 'html' | 'markdown' }
 
@@ -19,6 +19,8 @@ const PROXIES: Proxy[] = [
 // how long to keep waiting for a full-HTML proxy after the markdown reader has already answered
 const HTML_GRACE_MS = 2500
 const PROXY_TIMEOUT_MS = 14_000
+// our own proxy answers in about a second; past this we stop waiting and use the public chain
+const SELF_TIMEOUT_MS = 7_000
 
 export function normalizeUrl(input: string) {
   let u = input.trim()
@@ -58,20 +60,17 @@ async function tryProxy(proxy: Proxy, url: string, fetchImpl: typeof fetch): Pro
 }
 
 /**
- * All proxies are queried at once. The first full-HTML answer wins; a markdown answer is used
- * only if no HTML proxy succeeds within a short grace period (or at all). Public proxies stall
- * for 20s+ when overloaded, so waiting on them one by one made every fetch feel broken.
+ * The public readers are queried at once. The first full-HTML answer wins; a markdown answer is
+ * used only if no HTML proxy succeeds within a short grace period (or at all). Public proxies
+ * stall for 20s+ when overloaded, so waiting on them one by one made every fetch feel broken.
  */
-export async function fetchArticle(
-  input: string,
-  onProgress?: (msg: string) => void,
-  fetchImpl: typeof fetch = fetch,
-  proxies: Proxy[] = PROXIES,
+function raceProxies(
+  url: string,
+  proxies: Proxy[],
+  errors: string[],
+  onProgress: ((msg: string) => void) | undefined,
+  fetchImpl: typeof fetch,
 ): Promise<FetchedPage> {
-  const url = normalizeUrl(input)
-  const errors: string[] = []
-  onProgress?.(`Asking ${proxies.length} readers at once…`)
-
   return new Promise<FetchedPage>((resolve, reject) => {
     let settled = false
     let pending = proxies.length
@@ -110,6 +109,36 @@ export async function fetchArticle(
         })
     }
   })
+}
+
+/**
+ * Our own proxy first, alone, so a reader's address is not handed to third parties on every
+ * fetch. Only when ours fails or stalls past SELF_TIMEOUT_MS do the public readers see the URL.
+ */
+export async function fetchArticle(
+  input: string,
+  onProgress?: (msg: string) => void,
+  fetchImpl: typeof fetch = fetch,
+  proxies: Proxy[] = PROXIES,
+): Promise<FetchedPage> {
+  const url = normalizeUrl(input)
+  const errors: string[] = []
+  const own = proxies.find((p) => p.name === 'self-hosted')
+  const rest = proxies.filter((p) => p.name !== 'self-hosted')
+
+  if (own) {
+    onProgress?.('Fetching the page…')
+    try {
+      return await withTimeout(tryProxy(own, url, fetchImpl), SELF_TIMEOUT_MS)
+    } catch (e) {
+      errors.push(`${own.name}: ${(e as Error).message}`)
+    }
+    if (!rest.length) throw new Error(`Could not fetch that page.\n\n${errors.join('\n')}`)
+    onProgress?.('Our reader could not fetch it, trying public readers…')
+  } else {
+    onProgress?.(`Asking ${rest.length} readers at once…`)
+  }
+  return raceProxies(url, rest, errors, onProgress, fetchImpl)
 }
 
 // Very small markdown → HTML for the jina fallback (headings, paragraphs, images, links, lists, bold/italic, code)
