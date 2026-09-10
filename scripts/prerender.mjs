@@ -23,6 +23,7 @@ let BASE = ''
 let DESIGN = 'blocks'
 let DESIGN_FONT = null
 let CONFIG_JSON = '{}'
+let VERIFY_META = ''
 let MANIFEST = {}
 let SHELL = ''
 
@@ -105,6 +106,7 @@ async function loadData() {
 function pageHtml(shell, { route, title, description, canonical, keywords, schema, bodyHtml, published, updated, noindex }) {
   const head = [
     preloadLinks(route),
+    VERIFY_META,
     `<title>${esc(title)}</title>`,
     `<meta name="description" content="${esc(description)}">`,
     canonical ? `<link rel="canonical" href="${esc(canonical)}">` : '',
@@ -167,6 +169,13 @@ async function main() {
   SHELL = shell
   MANIFEST = JSON.parse(await readFile(path.join(DIST, '.vite/manifest.json'), 'utf8'))
   CONFIG_JSON = JSON.stringify(cfg)
+  // site-verification metas are read from the raw HTML by the crawler, so they are baked in here
+  VERIFY_META = [
+    cfg?.seo?.googleVerification && `<meta name="google-site-verification" content="${esc(cfg.seo.googleVerification)}">`,
+    cfg?.seo?.bingVerification && `<meta name="msvalidate.01" content="${esc(cfg.seo.bingVerification)}">`,
+  ]
+    .filter(Boolean)
+    .join('\n    ')
   // the app rendered to HTML (vite build --ssr), so every page ships its real markup and React hydrates it
   const { render } = await import(pathToFileURL(path.join(ROOT, 'dist-ssr/entry-server.js')).href)
   const ssr = async (route) => {

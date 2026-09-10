@@ -123,7 +123,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
     keywords: ['print web page without ads', 'pdf tools', 'merge pdf', 'compress pdf', 'sign pdf', 'ocr pdf'],
     robotsTxt: '',
     llmsTxt: '',
-    googleVerification: '',
+    googleVerification: 'slGiktuabKHt-tyfyIWljlwqX3Dj2RoaoKB4sQm1oT4',
     bingVerification: '',
     indexBlog: true,
     noindexAll: false,
