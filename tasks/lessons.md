@@ -96,3 +96,9 @@
 - An audit that flags what is merely not loaded yet trains you to ignore it. Lazy images below
   the fold are `complete === false`, which is not "broken"; only an actual error event or a
   completed load with zero pixels counts.
+- "Widest element past the edge" is the wrong culprit when that element sits inside an
+  `overflow-x: auto` wrapper: it is clipped and contributes nothing to the document's scrollWidth.
+  Bisecting instead (hide each child, see whether the root overflow disappears) named the real
+  owners: long unbreakable tokens, a WordPress hook name and a `WIFI:` QR payload, in body copy.
+  `overflow-wrap: break-word` on `body` is the right baseline, since it only splits a word that
+  would not have fitted anyway.

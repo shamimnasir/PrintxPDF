@@ -122,6 +122,9 @@ body {
     linear-gradient(90deg, var(--grid) 1px, transparent 1px);
   background-size: 32px 32px;
   -webkit-font-smoothing: antialiased;
+  /* A long URL or a QR payload has nowhere to wrap and would otherwise widen the whole page on a
+     phone. break-word only splits a word that would not fit anyway, so ordinary copy is untouched. */
+  overflow-wrap: break-word;
 }
 
 img,
@@ -891,6 +894,9 @@ code.inline {
   background: var(--bg-3);
   padding: 0.1em 0.35em;
   font-size: 0.9em;
+  /* hook names and URLs have no spaces to break at, so on a phone one of them pushed the whole
+     page sideways; anywhere lets the break happen mid-token rather than past the screen edge */
+  overflow-wrap: anywhere;
 }
 
 /* ---------- URL input (home + cleaner) ---------- */
