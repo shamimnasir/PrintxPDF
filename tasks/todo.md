@@ -102,11 +102,37 @@ Their users' loudest complaints: ads injected into PrintFriendly PDFs (dominant 
 - [ ] Client `Plan` type, pricing card, account display
 - [ ] Terms: what "lifetime" means, and a 30-day refund window for a one-time charge (the current 14 days was written for a cancellable subscription)
 
-### 3. Positioning
-- [ ] Lead on what they structurally cannot copy: 33 of 44 tools never upload the file. Uploading is their cost model; they cannot follow without rebuilding
-- [ ] Target the segment that cannot upload at all: legal, medical, HR, finance, anyone under an NDA
-- [ ] Aim a migration page at PrintFriendly's angry users: our WordPress plugin is free, ad-free and unbranded, which is what they charge ~$79/yr for; our extension asks for activeTab only, no host permissions
+### 3. Positioning (revised after the fuller competitor report)
+
+**The real opening is billing conduct, not price or features.** Segmented review analysis: Smallpdf
+billing mentions are **96% negative (86 mentions)**, iLovePDF billing **100% negative (62)**. Their
+4.9 and 4.7 headline scores are carried by one-off "it merged my PDF" reviews, not by paying
+customers. Verified patterns, both vendors: a $0.78 trial converting to $59.04/month; a 7-day trial
+firing a $108 to $144 annual charge with no reminder; a EUR 34 "early termination fee" kept on a
+same-day cancellation with zero usage; refunds refused by boilerplate; charging continuing months
+after cancellation; a missing cancel button; complaints escalated to Swiss SECO and Quebec OPC.
+iLovePDF advertises a 14-day refund window that reviewers say is not honoured.
+
+PrintxPDF already does the opposite, and most of it is already built:
+- [ ] No card and no account for the free tier, ever (already true)
+- [ ] No trial that silently converts (we have no trial at all)
+- [ ] One-click cancel in the Stripe customer portal (already built, already linked from Account)
+- [ ] Honour the 14-day refund literally, and 30 days on the one-time lifetime charge
+- [ ] Say the renewal date and the exact amount on the account page before it charges
+- [ ] Make this a named promise on /pricing, since it is the loudest verified pain in the category
+
+Then the two supporting pillars:
+- [ ] Files stay on the device: 33 of 44 tools never upload. **Accuracy note:** iLovePDF's paid
+      desktop app does process locally, so the honest claim is "in your browser, free, nothing to
+      install", not "only we do local"
+- [ ] Aim a migration page at PrintFriendly's angry users: our WordPress plugin is free, ad-free and
+      unbranded, which is what they charge ~$79/yr for; our extension asks for activeTab only
 - [ ] Never name a competitor in site copy (standing rule)
+
+**Verified free-tier caps worth beating in copy:** iLovePDF free is 15 MB and **one file per task**
+for Office conversions, OCR, PDF/A and Repair; Edit, Redact, Compare, Forms and Crop are one file
+per task on *every* tier including paid. Smallpdf stopped publishing numeric free limits in
+August 2026. Our browser tools have no file cap and no task cap because they cost us nothing.
 
 ### Decisions needed before implementing
 1. Lifetime allowance: 300/mo like Pro means ~36,000 server conversions over ten years for $119. Cap it lower, or bound the number sold?
