@@ -13,7 +13,8 @@
     "audit:site": "node scripts/audit-site.mjs",
     "audit:tools": "node scripts/audit-tools.mjs",
     "audit:features": "node scripts/audit-features.mjs",
-    "audit:layout": "node scripts/audit-layout.mjs"
+    "audit:layout": "node scripts/audit-layout.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",
