@@ -9,6 +9,39 @@ import { webcrypto as crypto } from 'node:crypto'
 import { createInterface } from 'node:readline/promises'
 import { stdin, stdout } from 'node:process'
 
+/**
+ * Reads without echoing. readline prints every keystroke, which puts the password into the
+ * terminal scrollback and into anything reading that terminal.
+ */
+async function readSecret(prompt) {
+  stdout.write(prompt)
+  const wasRaw = stdin.isRaw
+  if (stdin.isTTY) stdin.setRawMode(true)
+  stdin.resume()
+  let out = ''
+  try {
+    for await (const chunk of stdin) {
+      const s = chunk.toString('utf8')
+      if (s === '\r' || s === '\n' || s === '\u0004') break
+      if (s === '\u0003') {
+        stdout.write('\n')
+        process.exit(130)
+      }
+      // backspace / delete
+      if (s === '\u007f' || s === '\b') {
+        out = out.slice(0, -1)
+        continue
+      }
+      out += s
+    }
+  } finally {
+    if (stdin.isTTY) stdin.setRawMode(wasRaw ?? false)
+    stdin.pause()
+  }
+  stdout.write('\n')
+  return out
+}
+
 // Workers refuse PBKDF2 above 100k iterations, so this is a hard ceiling, not a preference.
 const ITERATIONS = 100_000
 
@@ -20,9 +53,16 @@ async function hash(password) {
   return `pbkdf2$${ITERATIONS}$${b64(salt)}$${b64(new Uint8Array(bits))}`
 }
 
-const rl = createInterface({ input: stdin, output: stdout })
-const password = (await rl.question('New admin password (at least 12 characters): ')).trim()
-rl.close()
+const password = (
+  stdin.isTTY
+    ? await readSecret('New admin password (at least 12 characters, not shown as you type): ')
+    : await (async () => {
+        const rl = createInterface({ input: stdin, output: stdout })
+        const v = await rl.question('New admin password (at least 12 characters): ')
+        rl.close()
+        return v
+      })()
+).trim()
 
 if (password.length < 12) {
   console.error('\nToo short. This password can publish to your repository and deploy your site.')
