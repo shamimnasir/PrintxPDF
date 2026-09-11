@@ -235,3 +235,22 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 - 135 tests (was 117), 52 of them in the Worker. tsc and build clean.
 - Not built, deliberately: new clusters (23 of a max 24, and it would mean the editor rewriting
   index.ts), media uploads, tool CRUD, business dashboard.
+
+# Phase 9 (2026-09-11): full suite audit
+- [x] Ran everything: both typechecks, 135 app + 67 worker tests, build, static audit (177 pages),
+      layout audit (174 routes x desktop and phone), tools audit (44/44), live features (21/21),
+      worker health, CORS, robots, sitemap, noindex.
+- [x] Fixed: the bare homepage answered 200 on all three hosts. `"/:path*"` does not match an empty
+      path, so every route redirected to the apex except the one page most likely to be linked.
+- [x] Fixed: only HSTS was set. Added nosniff, a referrer policy, X-Frame-Options and a
+      Permissions-Policy that deliberately keeps `camera=(self)`, because Scan to PDF calls
+      getUserMedia and the reflexive blanket deny would have broken it with nothing failing in CI.
+- [x] Removed the GitHub Pages workflow: 38 consecutive failures, and succeeding would have been
+      worse than failing.
+
+## Review
+- pdf-reader failed once at 43/44 and passed at 44/44 on a clean run. It was contention with the
+  layout audit's browsers, not a defect; confirmed by running it alone and again in a full sequence
+  rather than assuming.
+- The CORS errors the tools audit logs for server tools are the allowlist working: the audit runs
+  from localhost:4175, which is not an allowed origin.

@@ -156,3 +156,14 @@
 - A client-side gate is a UX affordance, never a security boundary. The old /admin passcode was
   honest about that while it only edited a local draft; the moment publishing could commit to the
   repository, the real check had to move to the Worker and the GitHub token had to stay there.
+
+## 2026-09-11: auditing
+- Check what a header would switch off before adding it. A blanket Permissions-Policy is the
+  reflexive hardening move and it would have silently killed Scan to PDF, which calls getUserMedia.
+  Nothing in CI would have failed; the tool would simply have stopped working.
+- A route pattern is not a URL set. `"/:path*"` looked like it covered everything and did not match
+  the empty root, so the homepage was the single page live on three hosts at once.
+- Do not let a failing run scroll away. Piping an audit through `tail -10` kept the summary and
+  discarded the one FAIL line that said why, which cost a whole second run to recover.
+- One failure in a long suite deserves a second look before it is called a flake, and a second look
+  means reproducing it, not re-reading it.
