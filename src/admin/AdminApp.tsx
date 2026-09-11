@@ -6,6 +6,7 @@ import { useSeo } from '../lib/seo'
 import { useToast } from '../components/ui/Toast'
 import { Analytics, Appearance, Code, Content, Dashboard, Data, General, Pages, Seo, ToolsAdmin } from './sections'
 import { BlogAdmin } from './blog/BlogAdmin'
+import { PromoAdmin } from './PromoAdmin'
 import { hasContentDraft } from './blog/draft'
 import './admin.css'
 
@@ -19,6 +20,7 @@ const NAV = [
   ['tools', '⧉', 'Tools'],
   ['seo', '↗', 'SEO'],
   ['analytics', '▲', 'Analytics'],
+  ['promos', '%', 'Discount codes'],
   ['code', '<>', 'Custom code'],
   ['data', '⤓', 'Publish & data'],
 ] as const
@@ -121,6 +123,7 @@ export default function AdminApp() {
             <Route path="tools" element={<ToolsAdmin cfg={cfg} />} />
             <Route path="seo" element={<Seo cfg={cfg} />} />
             <Route path="analytics" element={<Analytics cfg={cfg} />} />
+            <Route path="promos" element={<PromoAdmin />} />
             <Route path="code" element={<Code cfg={cfg} />} />
             <Route path="data" element={<Data cfg={cfg} />} />
             <Route path="*" element={<Navigate to="/admin" replace />} />

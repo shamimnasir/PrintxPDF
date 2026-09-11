@@ -9,6 +9,17 @@ const SESSION_KEY = 'pxp:admin:session'
 export type AdminSession = { token: string; expiresAt: number }
 export type PublishResult = { sha: string; url: string; branch: string; files: string[] }
 export type PublishIssue = { rule: string; where: string; message: string }
+export type Promo = {
+  id: string
+  code: string
+  percentOff: number | null
+  active: boolean
+  maxRedemptions: number | null
+  timesRedeemed: number
+  expiresAt: number | null
+  appliesTo: string | null
+}
+export type PromoInput = { code: string; percentOff: number; maxRedemptions: number; expiresInDays: number; plan?: 'pro' | 'api' | 'lifetime' | 'any'; firstTimeOnly?: boolean }
 
 export class AdminError extends Error {
   status: number
@@ -95,6 +106,12 @@ export const adminApi = {
 
   signOutEverywhere: () => call<{ ok: true }>('/admin/signout-everywhere', { method: 'POST' }),
 
+  promos: () => call<{ promos: Promo[] }>('/admin/promos'),
+
+  createPromo: (body: PromoInput) => call<Promo>('/admin/promos', { method: 'POST', body: JSON.stringify(body) }),
+
+  deactivatePromo: (id: string) => call<Promo>('/admin/promos/deactivate', { method: 'POST', body: JSON.stringify({ id }) }),
+
   publish: (body: { message: string; clusters?: Record<string, Cluster>; toolSlugs?: string[]; config?: unknown; baseSha?: string }) =>
     call<PublishResult>('/admin/publish', { method: 'POST', body: JSON.stringify(body) }),
 }
@@ -118,6 +135,13 @@ export function describeAdminError(e: unknown): string {
       return 'The content does not pass its own rules, so nothing was published.'
     case 'github_auth':
       return 'The server could not authenticate to GitHub. The publishing token may have expired.'
+    case 'bad_promo_code':
+    case 'bad_promo_percent':
+    case 'bad_promo_redemptions':
+    case 'bad_promo_expiry':
+      return e.message
+    case 'resource_already_exists':
+      return 'That code already exists in Stripe. Pick a different one.'
     case 'rate_limited':
       return 'Too many requests in a row. Wait a minute and try again.'
     default:

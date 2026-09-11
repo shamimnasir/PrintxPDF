@@ -14,6 +14,7 @@
 import { ApiError, clientIp, enforceRateLimit, json, readJsonBody } from './http'
 import { mintSession, verifySession, verifyPassword, storedHashProblem, SESSION_TTL_SEC, now } from './adminAuth'
 import { commitFiles, headSha, type FileWrite, type RepoRef } from './github'
+import { createPromo, deactivatePromo, listPromos, type PromoInput } from './promo'
 import { validateContent, formatIssues } from '../../src/content/validate'
 import type { Cluster } from '../../src/content/types'
 
@@ -168,4 +169,36 @@ export async function publish(req: Request, env: AdminEnv): Promise<Response> {
 
   const result = await commitFiles(repo, files, message, typeof body.baseSha === 'string' ? body.baseSha : undefined)
   return json(result)
+}
+
+// ---------------------------------------------------------------- promotion codes
+
+/**
+ * Only the admin session is checked here, not the publishing config: making a discount code has
+ * nothing to do with GitHub, and requiring a repository token to run a sale would be nonsense.
+ */
+async function requireAdmin(req: Request, env: AdminEnv): Promise<void> {
+  const { ADMIN_SECRET, ADMIN_PASSWORD_HASH } = env
+  if (!ADMIN_SECRET || !ADMIN_PASSWORD_HASH) {
+    throw new ApiError(503, 'admin_not_configured', 'Admin access is not configured on this deployment')
+  }
+  await requireSession(req, env, ADMIN_SECRET)
+}
+
+export async function promosList(req: Request, env: AdminEnv): Promise<Response> {
+  await requireAdmin(req, env)
+  return json({ promos: await listPromos(env) })
+}
+
+export async function promoCreate(req: Request, env: AdminEnv): Promise<Response> {
+  await requireAdmin(req, env)
+  await enforceRateLimit(env.RL_BILLING, `admin-promo:${clientIp(req)}`)
+  const body = await readJsonBody<PromoInput>(req, 4096)
+  return json(await createPromo(env, body as PromoInput))
+}
+
+export async function promoDeactivate(req: Request, env: AdminEnv): Promise<Response> {
+  await requireAdmin(req, env)
+  const body = await readJsonBody<{ id: string }>(req, 1024)
+  return json(await deactivatePromo(env, String(body.id ?? '')))
 }

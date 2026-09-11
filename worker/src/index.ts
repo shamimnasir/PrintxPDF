@@ -50,6 +50,12 @@ async function route(req: Request, env: Env, ctx: ExecutionContext, url: URL, or
   if (pathname === '/admin/login') return method === 'POST' ? admin.login(req, env) : methodNotAllowed('POST')
   if (pathname === '/admin/me') return method === 'GET' ? admin.me(req, env) : methodNotAllowed('GET')
   if (pathname === '/admin/publish') return method === 'POST' ? admin.publish(req, env) : methodNotAllowed('POST')
+  if (pathname === '/admin/promos') {
+    if (method === 'GET') return admin.promosList(req, env)
+    if (method === 'POST') return admin.promoCreate(req, env)
+    methodNotAllowed('GET, POST')
+  }
+  if (pathname === '/admin/promos/deactivate') return method === 'POST' ? admin.promoDeactivate(req, env) : methodNotAllowed('POST')
   if (pathname === '/admin/signout-everywhere') return method === 'POST' ? admin.signOutEverywhere(req, env) : methodNotAllowed('POST')
 
   if (pathname === '/fetch') return method === 'GET' ? handleFetch(req, env, url) : methodNotAllowed('GET')
