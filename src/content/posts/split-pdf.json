@@ -1,0 +1,1082 @@
+{
+  "slug": "split",
+  "name": "Splitting and extracting PDF pages",
+  "title": "How to split a PDF and extract exactly the pages you need",
+  "metaTitle": "How to Split a PDF Free (Pages and Ranges)",
+  "metaDescription": "Split a PDF into single pages or custom ranges, extract only the pages you need, delete the rest, and cut a big file down to fit an email attachment limit.",
+  "intro": "Splitting, extracting and deleting are three names for the same underlying edit: deciding which pages end up in which file. The difference is what you keep. Splitting produces several files, extracting produces one file holding a subset, and deleting produces the original minus a few pages. These guides cover the range syntax every tool uses, the every-N-pages mode, and the specific case that sends most people looking in the first place, a PDF too large to email.",
+  "answer": "Open the PDF in a split tool and choose a mode: single pages, custom ranges such as 1-3,5,8-, or every N pages. Extracting keeps the chosen pages in one new file; splitting produces several files. The original on your disk is never modified by any of them.",
+  "primaryKeyword": "how to split a pdf",
+  "entities": [
+    "Adobe Acrobat",
+    "macOS Preview",
+    "Gmail",
+    "Microsoft Outlook",
+    "qpdf",
+    "ZIP",
+    "Microsoft Print to PDF",
+    "Google Drive"
+  ],
+  "icon": "✂",
+  "tools": [
+    "split-pdf",
+    "extract-pages",
+    "delete-pages",
+    "compress-pdf"
+  ],
+  "posts": [
+    {
+      "slug": "split-pdf-into-pages",
+      "cluster": "split",
+      "title": "How to split a PDF into separate pages or ranges",
+      "metaTitle": "How to Split a PDF Into Pages or Ranges",
+      "metaDescription": "Split a PDF into single pages, custom ranges like 1-3,5,8- or fixed chunks of every N pages. The range syntax explained, plus how the output files are named.",
+      "published": "2026-01-31",
+      "updated": "2026-08-27",
+      "readMinutes": 6,
+      "intent": "howto",
+      "primaryKeyword": "how to split a pdf",
+      "secondaryKeywords": [
+        "split pdf into separate pages",
+        "split pdf by page range",
+        "split pdf every n pages",
+        "divide a pdf into multiple files",
+        "split pdf free"
+      ],
+      "entities": [
+        "Adobe Acrobat",
+        "macOS Preview",
+        "qpdf",
+        "ZIP",
+        "Microsoft Windows",
+        "PDF bookmarks"
+      ],
+      "answer": "Open the PDF in a split tool, choose a mode, and download the results. Three modes cover almost everything: split into single pages, split by custom ranges such as 1-3,5,8-, or split every N pages into equal chunks. Output arrives as separate PDFs or one ZIP archive.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Splitting is the cheapest edit you can make to a PDF. No page is re-rendered; the tool copies the page objects you asked for into new documents and rebuilds each page tree. Text stays selectable, vectors stay sharp, and images are byte-identical to the originals."
+        },
+        {
+          "t": "h2",
+          "x": "The three modes, and when each is right"
+        },
+        {
+          "t": "table",
+          "caption": "Split modes and what they produce from a 40-page file.",
+          "head": [
+            "Mode",
+            "Output",
+            "Use it for"
+          ],
+          "rows": [
+            [
+              "Single pages",
+              "40 files, one page each",
+              "Certificates, tickets, payslips, anything sent to a different person per page"
+            ],
+            [
+              "Custom ranges",
+              "One file per range you type",
+              "Chapters, sections, a report split from its appendix"
+            ],
+            [
+              "Every N pages",
+              "ceil(40 ÷ N) equal chunks",
+              "Fixed-length units: a 4-page form repeated ten times, or size-limited parts"
+            ],
+            [
+              "Extract only",
+              "One file with the pages you chose",
+              "You want a subset, not a set of files"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Splitting step by step"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the tool",
+              "x": "Go to [split PDF](/tools/split-pdf) and drop the file in. It is read in your browser, so a 300 MB file is no slower to load than it is to open in a reader."
+            },
+            {
+              "h": "Choose the mode",
+              "x": "Single pages, custom ranges, or every N pages. If you are not sure, start with custom ranges: it covers the other two."
+            },
+            {
+              "h": "Type the ranges",
+              "x": "Use the syntax below. The preview should show the page count for each output before you commit."
+            },
+            {
+              "h": "Name the outputs",
+              "x": "Most tools use the source filename plus a suffix. Setting a prefix such as `Contract_` up front saves renaming a dozen files afterwards."
+            },
+            {
+              "h": "Download",
+              "x": "One or two files download individually. More than that usually arrives as a single ZIP."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Split a PDF by pages or ranges without uploading it to a server."
+        },
+        {
+          "t": "h2",
+          "x": "The range syntax"
+        },
+        {
+          "t": "p",
+          "x": "Almost every PDF tool, from Acrobat to command-line utilities to browser tools, accepts the same notation. Pages are 1-indexed, meaning the first page is 1, not 0."
+        },
+        {
+          "t": "table",
+          "caption": "Range notation, using a 20-page document as the example.",
+          "head": [
+            "You type",
+            "You get",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "`5`",
+              "Page 5 only",
+              "A single page is a valid range"
+            ],
+            [
+              "`1-3`",
+              "Pages 1, 2 and 3",
+              "Inclusive at both ends"
+            ],
+            [
+              "`8-`",
+              "Pages 8 to 20",
+              "Open-ended means \"to the last page\""
+            ],
+            [
+              "`-4`",
+              "Pages 1 to 4",
+              "Open start means \"from the beginning\""
+            ],
+            [
+              "`1-3,5,8-`",
+              "Three separate outputs",
+              "Commas separate ranges; each becomes its own file"
+            ],
+            [
+              "`1,3,5,7,9`",
+              "Five one-page files, or one file of odd pages",
+              "Depends on whether the tool is splitting or extracting"
+            ],
+            [
+              "`20-15`",
+              "Pages 20 down to 15, reversed",
+              "Some tools accept a descending range; many reject it"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Watch out for documents whose printed page numbers do not match their physical ones. A report with a cover, a blank verso and roman-numbered front matter can have \"page 1\" printed on physical page 7. Range syntax always means the physical position, so count thumbnails, not the numbers on the paper."
+        },
+        {
+          "t": "h2",
+          "x": "Every N pages, with a real example"
+        },
+        {
+          "t": "p",
+          "x": "A 240-page manual made of twelve chapters, each exactly 20 pages, splits into chapters with a single instruction: every 20 pages. You get 12 files without typing 12 ranges. The mode is only useful when the unit really is fixed, so check two boundaries before you trust it: does file 2 start at the top of chapter 2, and does the last file end where the document does? If chapter 4 runs to 21 pages, every subsequent boundary is wrong."
+        },
+        {
+          "t": "p",
+          "x": "The other genuinely useful case is size-limited splitting: a 90 MB scan divided into six 15-page parts so each attachment stays under a mail server ceiling. See [splitting a large PDF for email](/blog/split/split-large-pdf-for-email) for the arithmetic."
+        },
+        {
+          "t": "h2",
+          "x": "Splitting at bookmarks"
+        },
+        {
+          "t": "p",
+          "x": "If the PDF has a proper outline, splitting at top-level bookmarks is far better than counting pages, because the boundaries follow the document's own structure and survive a revision that changes the page count. Not every tool offers it, and it only works when the file actually has bookmarks: a scanned document or a PDF printed from a web page will have none at all."
+        },
+        {
+          "t": "h2",
+          "x": "Why the parts add up to more than the whole"
+        },
+        {
+          "t": "p",
+          "x": "Split a 10 MB PDF into ten files and the total is often 12 to 14 MB. This is expected, not a bug. Fonts, colour profiles and any image used on more than one page are shared resources in the original, stored once. When pages are separated, each output needs its own copy of everything its pages reference. A document with a logo on every page and two embedded font families will duplicate all of it into every part."
+        },
+        {
+          "t": "p",
+          "x": "If total size matters, compress after splitting rather than before. Compression can also de-duplicate identical objects within each part."
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "Shrink the split files before you send or archive them."
+        },
+        {
+          "t": "h2",
+          "x": "Other ways to split"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**macOS Preview**, show thumbnails with ⌥⌘2, select the pages you want and drag them onto the Desktop. macOS creates a new PDF from the selection. Fine for one extraction, tedious for twelve.",
+            "**Print to PDF with a page range**, works everywhere, but re-renders the document. Links, bookmarks and form fields are lost, and the output can be larger than the input.",
+            "**Adobe Acrobat**, Organize Pages → Split, with by-page-count, by-file-size and by-bookmark options. The by-file-size mode is genuinely handy and rare elsewhere.",
+            "**qpdf**, free, offline, scriptable, and the most structurally faithful of the lot."
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# Pages 1-3 into their own file\nqpdf input.pdf --pages input.pdf 1-3 -- part1.pdf\n\n# Every page as its own file: out-01.pdf, out-02.pdf, ...\nqpdf --split-pages input.pdf out.pdf\n\n# Chunks of 20 pages each\nqpdf --split-pages=20 manual.pdf chapter.pdf"
+        },
+        {
+          "t": "h2",
+          "x": "What splitting does not do"
+        },
+        {
+          "t": "p",
+          "x": "It does not remove anything hidden. Content covered by a black rectangle, cropped out of view, or sitting in a layer that is switched off travels with the page into the new file. If you are splitting a document to share only part of it with someone, the pages you keep are still carrying everything they carried before. [Flatten](/tools/flatten-pdf) the output and [remove the metadata](/tools/remove-metadata) before sending."
+        },
+        {
+          "t": "p",
+          "x": "It also does not fix a broken file. A PDF that fails to split usually fails to open properly too. Run it through [repair](/tools/repair-pdf) first, then split the repaired copy."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I split a PDF into individual pages?",
+          "a": "Open the file in a split tool and choose the single pages mode. A 40-page document becomes 40 one-page PDFs, normally delivered as a single ZIP so you are not accepting 40 separate downloads."
+        },
+        {
+          "q": "What does the range 1-3,5,8- mean?",
+          "a": "Three ranges separated by commas: pages 1 to 3, page 5 on its own, and pages 8 to the end of the document. In split mode each range becomes its own file; in extract mode all of them land in one new PDF."
+        },
+        {
+          "q": "Does splitting a PDF reduce the quality?",
+          "a": "No. Pages are copied as objects rather than re-rendered, so text, vectors and images are identical to the source. Quality only changes if you compress the parts afterwards."
+        },
+        {
+          "q": "Can I split a PDF on a Mac without extra software?",
+          "a": "Yes. Open it in Preview, press Option+Command+2 for thumbnails, select the pages you want and drag them to the Desktop. macOS creates a new PDF from the selection. It works well once and gets tedious quickly."
+        },
+        {
+          "q": "Why are my split files bigger in total than the original?",
+          "a": "Fonts, colour profiles and repeated images are stored once in the original but must be copied into each output file. A document with a logo on every page and two embedded fonts will duplicate all of that into every part."
+        }
+      ],
+      "relatedTools": [
+        "split-pdf",
+        "extract-pages",
+        "compress-pdf"
+      ],
+      "relatedPosts": [
+        "extract-pages-from-pdf",
+        "delete-pages-from-pdf",
+        "split-large-pdf-for-email"
+      ]
+    },
+    {
+      "slug": "extract-pages-from-pdf",
+      "cluster": "split",
+      "title": "How to extract specific pages from a PDF",
+      "metaTitle": "How to Extract Pages From a PDF",
+      "metaDescription": "Pull specific pages out of a PDF into a new file. Pick pages by thumbnail or by range, keep them in one document, and leave the original file untouched.",
+      "published": "2026-02-11",
+      "updated": "2026-08-02",
+      "readMinutes": 5,
+      "intent": "howto",
+      "primaryKeyword": "extract pages from pdf",
+      "secondaryKeywords": [
+        "save one page of a pdf",
+        "pull pages out of a pdf",
+        "extract pdf pages free",
+        "get a single page from a pdf",
+        "copy pages to a new pdf"
+      ],
+      "entities": [
+        "Adobe Acrobat",
+        "macOS Preview",
+        "Google Chrome",
+        "Microsoft Print to PDF",
+        "PDF bookmarks",
+        "qpdf"
+      ],
+      "answer": "Open the PDF in an extract tool, tick the pages you want or type a range like 4-9, then download a new PDF containing only those pages. The original is untouched. Extracting differs from splitting: you keep one file with a chosen subset instead of many files.",
+      "body": [
+        {
+          "t": "p",
+          "x": "The three page operations get confused constantly, and choosing the wrong one is why people end up with 47 files they did not want. The distinction is simply what you are left holding."
+        },
+        {
+          "t": "table",
+          "caption": "Extract, split and delete, applied to a 50-page report.",
+          "head": [
+            "Operation",
+            "You specify",
+            "You get",
+            "Original"
+          ],
+          "rows": [
+            [
+              "Extract",
+              "Pages 12-18",
+              "One 7-page PDF",
+              "Unchanged"
+            ],
+            [
+              "Split",
+              "Ranges or a chunk size",
+              "Several PDFs covering the whole document",
+              "Unchanged"
+            ],
+            [
+              "Delete",
+              "Pages 12-18",
+              "One 43-page PDF",
+              "Unchanged, you download a copy"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Extracting, step by step"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the extractor",
+              "x": "Go to [extract pages](/tools/extract-pages) and drop the PDF in. Every page appears as a numbered thumbnail."
+            },
+            {
+              "h": "Select the pages",
+              "x": "Click thumbnails to toggle them, or type a range such as `4-9` or `2,7,15-18`. Selections do not have to be contiguous."
+            },
+            {
+              "h": "Decide on the output shape",
+              "x": "Choose **one combined file** to keep the pages together in order, or **one file per page** if each page is going to a different place."
+            },
+            {
+              "h": "Check the order",
+              "x": "Extraction keeps the original document order regardless of the order you clicked. If you need a different sequence, extract first and then [reorder](/tools/organize-pdf)."
+            },
+            {
+              "h": "Download",
+              "x": "The new file contains only the pages you chose. Nothing was written back to the source."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "Pull out exactly the pages you need and keep the rest of the document intact."
+        },
+        {
+          "t": "h2",
+          "x": "Things people actually extract"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**The signature page** of a long contract, to send back on its own instead of returning 60 pages.",
+            "**One chapter** of a textbook or manual for a class, a meeting or a printout.",
+            "**A single invoice** from a monthly statement batch that arrived as one file.",
+            "**The results section** of a report, when the reviewer asked for the findings and not the methodology.",
+            "**One certificate** from a batch generated for a whole cohort.",
+            "**The two pages that matter** from a 120-page terms document, to quote in an email."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "The print-to-PDF shortcut, and its cost"
+        },
+        {
+          "t": "p",
+          "x": "You can extract pages anywhere without a dedicated tool: open the PDF in any viewer, press **Ctrl+P**, type the page range, and choose **Save as PDF** as the destination. It works on every platform with no software at all."
+        },
+        {
+          "t": "p",
+          "x": "The cost is that this re-renders the document rather than copying it. Compare the two routes before you use it for anything that matters."
+        },
+        {
+          "t": "table",
+          "head": [
+            "",
+            "Extract tool",
+            "Print to PDF with a range"
+          ],
+          "rows": [
+            [
+              "Text stays selectable",
+              "Yes",
+              "Usually, but not guaranteed"
+            ],
+            [
+              "Hyperlinks survive",
+              "Yes",
+              "No"
+            ],
+            [
+              "Bookmarks survive",
+              "Yes, if they point into the kept range",
+              "No"
+            ],
+            [
+              "Form fields stay fillable",
+              "Yes",
+              "No, they are flattened"
+            ],
+            [
+              "Page size preserved exactly",
+              "Yes",
+              "Rescaled to the selected paper size"
+            ],
+            [
+              "File size",
+              "Proportional to the pages kept",
+              "Often larger than the extracted portion"
+            ],
+            [
+              "Available everywhere",
+              "Needs a tool",
+              "Yes, in every PDF viewer"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Print-to-PDF is a perfectly good way to pull one page out of a manual for a colleague. It is a bad way to extract a page from a fillable form, an accessible document, or anything with a table of contents you want to keep working."
+        },
+        {
+          "t": "h2",
+          "x": "macOS Preview and command line"
+        },
+        {
+          "t": "p",
+          "x": "On a Mac, show thumbnails with **⌥⌘2**, ⌘-click the pages you want, and drag the selection onto the Desktop. macOS builds a new PDF from it. For repeatable work, qpdf is exact and scriptable:"
+        },
+        {
+          "t": "code",
+          "x": "# Pages 4-9 into a new file\nqpdf report.pdf --pages report.pdf 4-9 -- section.pdf\n\n# Non-contiguous: pages 2, 7 and 15-18\nqpdf report.pdf --pages report.pdf 2,7,15-18 -- selected.pdf\n\n# Pull the same page range out of every PDF in a folder\nfor f in *.pdf; do qpdf \"$f\" --pages \"$f\" 1 -- \"covers/$f\"; done"
+        },
+        {
+          "t": "warn",
+          "x": "Extracting a page does **not** remove anything hidden on it. Text under a black box, content outside the crop box, comments, and hidden layers all travel into the new file. If the point of extracting was to share less, [flatten](/tools/flatten-pdf) the result and [strip its metadata](/blog/privacy/remove-metadata-from-pdf) before sending it."
+        },
+        {
+          "t": "h2",
+          "x": "What comes with the pages"
+        },
+        {
+          "t": "p",
+          "x": "An extracted file inherits the source document's metadata: title, author, producer, and the creation date of the original rather than of your extraction. If you extracted a single page from a colleague's report, their name is now in your file's author field. Check it with [edit metadata](/tools/edit-metadata), which takes about ten seconds."
+        },
+        {
+          "t": "p",
+          "x": "Bookmarks pointing at pages you did not keep are dropped or left dangling depending on the tool, and printed page numbers do not renumber, so an extracted range that starts at physical page 12 will still say 12 on the first sheet. If that is confusing for the reader, re-apply [page numbers](/tools/page-numbers) to the extract."
+        },
+        {
+          "t": "h2",
+          "x": "Extract, or delete the rest?"
+        },
+        {
+          "t": "p",
+          "x": "They reach the same place from opposite ends, so pick whichever needs less typing. Keeping 6 pages out of 50: extract. Removing 6 pages from 50: [delete those pages](/blog/split/delete-pages-from-pdf). The rule of thumb is to specify the smaller set, because every page you type is a page you can get wrong."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I save just one page of a PDF?",
+          "a": "Open the file in an extract tool, select that single page and download. Alternatively press Ctrl+P, enter the page number in the range box and choose Save as PDF, though that route drops links, bookmarks and form fields."
+        },
+        {
+          "q": "What is the difference between extracting and splitting a PDF?",
+          "a": "Extracting produces one new file containing the pages you chose. Splitting divides the whole document into several files. Extract when you want a subset; split when you need the entire document broken into parts."
+        },
+        {
+          "q": "Does extracting pages change the original PDF?",
+          "a": "No. Extraction reads the source and writes a new file. The original stays on your disk exactly as it was, which is why it is safe to experiment with the range until the output looks right."
+        },
+        {
+          "q": "Can I extract pages that are not next to each other?",
+          "a": "Yes. Type a list such as 2,7,15-18, or click individual thumbnails. The extracted file keeps them in document order, not in the order you selected them."
+        },
+        {
+          "q": "Do extracted pages keep their form fields?",
+          "a": "A proper extract tool preserves fillable fields and their values. Extracting by printing to PDF does not, because printing flattens the form into static page content."
+        }
+      ],
+      "relatedTools": [
+        "extract-pages",
+        "organize-pdf",
+        "edit-metadata"
+      ],
+      "relatedPosts": [
+        "split-pdf-into-pages",
+        "delete-pages-from-pdf",
+        "reorder-pdf-pages"
+      ]
+    },
+    {
+      "slug": "delete-pages-from-pdf",
+      "cluster": "split",
+      "title": "How to delete pages from a PDF",
+      "metaTitle": "How to Delete Pages From a PDF",
+      "metaDescription": "Remove blank pages, cover sheets, ad pages or a whole appendix from a PDF. Delete by thumbnail or page range in your browser, then download the clean file.",
+      "published": "2026-03-24",
+      "updated": "2026-08-08",
+      "readMinutes": 5,
+      "intent": "howto",
+      "primaryKeyword": "delete pages from pdf",
+      "secondaryKeywords": [
+        "remove pages from pdf free",
+        "delete blank pages pdf",
+        "remove a page from a pdf mac",
+        "delete pdf pages without acrobat",
+        "remove cover page pdf"
+      ],
+      "entities": [
+        "Adobe Acrobat",
+        "macOS Preview",
+        "Microsoft Windows",
+        "qpdf",
+        "Google Chrome",
+        "ISO 32000"
+      ],
+      "answer": "Open the PDF in a page editor, select the thumbnails of the pages you want gone or type a range such as 2,5,11-13, then delete and download. Deleting pages from a copy is safe: the original file on your disk is unchanged until you replace it yourself.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Most PDFs arrive with pages nobody wants. A fax cover sheet, a blank verso from a duplex scan, two pages of advertising bound into a magazine article, a 30-page terms appendix on a 4-page invoice. Removing them makes the file smaller, cheaper to print and quicker to read."
+        },
+        {
+          "t": "table",
+          "caption": "What people delete, and how to find it.",
+          "head": [
+            "Unwanted pages",
+            "Where they come from",
+            "How to spot them"
+          ],
+          "rows": [
+            [
+              "Blank backs",
+              "Duplex scanning a single-sided document",
+              "Every even page, and they are the smallest pages in the file"
+            ],
+            [
+              "Cover and fax sheets",
+              "Corporate mail systems and scanners",
+              "Page 1, and sometimes the last page"
+            ],
+            [
+              "Advertising inserts",
+              "Magazine and journal PDFs",
+              "Full-bleed colour pages between article pages"
+            ],
+            [
+              "Terms and conditions",
+              "Invoices, contracts, quotations",
+              "A long uniform block at the end"
+            ],
+            [
+              "Duplicate pages",
+              "A double feed in the scanner",
+              "Two adjacent thumbnails that look identical"
+            ],
+            [
+              "Draft or internal notes",
+              "A report shared before review",
+              "Watermarked or headed differently"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Deleting pages"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the file",
+              "x": "Go to [delete pages](/tools/delete-pages) and drop the PDF in. Thumbnails appear with their page numbers."
+            },
+            {
+              "h": "Select what goes",
+              "x": "Click the pages to mark them for removal, or type a range such as `2,5,11-13`. Shift-click selects a run; Ctrl-click (⌘-click on macOS) adds scattered pages."
+            },
+            {
+              "h": "Look at the preview count",
+              "x": "The tool should show the resulting page count. Removing 6 pages from a 48-page file must leave 42. If it does not, your selection is not what you think it is."
+            },
+            {
+              "h": "Apply and download",
+              "x": "A new file is written. Your original is untouched on disk."
+            },
+            {
+              "h": "Spot-check the seams",
+              "x": "Open the result and look at the pages either side of each deletion. That is where a mis-selected page shows up immediately."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "Remove pages from a PDF in your browser, with no upload and no account."
+        },
+        {
+          "t": "h2",
+          "x": "Finding the blank pages"
+        },
+        {
+          "t": "p",
+          "x": "Scanned blank pages are almost never blank. Dust on the platen, show-through from the printed side, and paper texture all leave marks, so an automatic \"remove blank pages\" filter that tests for pure white will skip most of them. Two better approaches:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Sort by page weight.** A scanned page with text on it might be 180 KB; an empty one is nearer 15 KB. Any tool that shows per-page size makes the blanks obvious.",
+            "**Use the pattern.** A single-sided original scanned in duplex produces blanks at every even page. Select 2, 4, 6, 8 with a range like `2-48` and a step, or simply Ctrl-click the even thumbnails; the regularity makes this quick."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Before deleting anything from a scan, confirm the blanks really are blank. A faint handwritten note or a rubber stamp on the reverse of one page is exactly the thing an automatic filter throws away."
+        },
+        {
+          "t": "h2",
+          "x": "Other ways to do it"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Platform",
+            "Method",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "macOS",
+              "Preview → ⌥⌘2 for thumbnails → select → Delete key",
+              "Then File → Export as PDF for a clean copy"
+            ],
+            [
+              "Windows",
+              "No built-in option",
+              "Edge can view and annotate but not delete pages"
+            ],
+            [
+              "Any browser",
+              "A page editor that runs locally",
+              "Works identically on Windows, Linux and ChromeOS"
+            ],
+            [
+              "Adobe Acrobat",
+              "Organize Pages → select → Delete",
+              "Also has a Delete Blank Pages action"
+            ],
+            [
+              "Command line",
+              "`qpdf in.pdf --pages . 1-4,7-z -- out.pdf`",
+              "Note the inversion: you list what to keep"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "The qpdf idiom is worth internalising because it is the same idea as extracting: rather than naming the pages to remove, you name everything else. `1-4,7-z` keeps pages 1 through 4 and 7 through the end, which deletes pages 5 and 6. The letter `z` means the last page."
+        },
+        {
+          "t": "h2",
+          "x": "What breaks when a page disappears"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Bookmarks pointing at deleted pages** become dead entries that jump nowhere, or vanish, depending on the tool.",
+            "**Internal links** from a table of contents behave the same way.",
+            "**Printed page numbers do not renumber.** The number is drawn into the page content. After deleting page 12, page 13 still says 13. Strip and re-apply them with [page numbers](/tools/page-numbers) if it matters.",
+            "**Digital signatures are invalidated**, because the signed byte range no longer exists.",
+            "**Total page counts in the text go stale.** \"Page 3 of 48\" printed in a footer is just text."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Deleting a page is not redacting it"
+        },
+        {
+          "t": "p",
+          "x": "This one matters. PDF supports **incremental updates**: an editor can append changes to the end of a file rather than rewriting it, which is fast and preserves the ability to undo. The consequence is that a \"deleted\" page can still exist as an orphaned object inside the file, invisible in every viewer but recoverable with a text editor or a forensic tool."
+        },
+        {
+          "t": "p",
+          "x": "If the pages you removed were confidential, that is not good enough. Use a tool that fully rewrites the document rather than appending an update, then [flatten](/tools/flatten-pdf) it and [remove the metadata](/tools/remove-metadata), which can otherwise retain the original page count and modification history."
+        },
+        {
+          "t": "warn",
+          "x": "The same applies to content you covered with a black rectangle. Drawing a box over text hides it visually and leaves the text underneath fully selectable. Deleting the page removes it properly; covering it does not."
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Strip author names, timestamps and edit history before you send a trimmed document."
+        },
+        {
+          "t": "h2",
+          "x": "Delete, or keep what you want?"
+        },
+        {
+          "t": "p",
+          "x": "If you are removing more than about half the document, [extracting the pages you want](/blog/split/extract-pages-from-pdf) is faster and less error-prone: fewer numbers to type means fewer numbers to get wrong. And if the reason you are deleting pages is file size, deleting rarely helps as much as [compression](/tools/compress-pdf), because the weight is usually in the images on the pages you are keeping."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I delete a page from a PDF for free?",
+          "a": "Open the file in a browser-based page editor, click the thumbnail of the page you want removed, and download the result. On a Mac you can also use Preview: show thumbnails with Option+Command+2, select the page and press Delete."
+        },
+        {
+          "q": "Can I delete PDF pages in Windows without installing anything?",
+          "a": "Not with a built-in Windows feature. Edge displays and annotates PDFs but cannot remove pages, and there is no page editor in File Explorer. A browser-based tool is the closest equivalent."
+        },
+        {
+          "q": "How do I remove all the blank pages from a scan?",
+          "a": "Blank scanned pages usually carry speckles, so filters looking for pure white miss them. Sort by page size, since an empty page is a fraction of the weight of one with text, or select every even page if the blanks came from duplex-scanning a single-sided original."
+        },
+        {
+          "q": "Does deleting a page make the PDF smaller?",
+          "a": "Only if the page contained something substantial. Removing a text page from a 30 MB scanned document changes almost nothing; removing a full-page photograph can save several megabytes. Compression usually achieves far more."
+        },
+        {
+          "q": "Is a deleted page really gone from the file?",
+          "a": "Not always. PDFs can be saved as incremental updates that append changes rather than rewriting the file, leaving orphaned objects behind. For confidential pages, use a tool that fully rewrites the document, then flatten it and strip the metadata."
+        }
+      ],
+      "relatedTools": [
+        "delete-pages",
+        "organize-pdf",
+        "remove-metadata"
+      ],
+      "relatedPosts": [
+        "extract-pages-from-pdf",
+        "reorder-pdf-pages",
+        "split-large-pdf-for-email"
+      ]
+    },
+    {
+      "slug": "split-large-pdf-for-email",
+      "cluster": "split",
+      "title": "How to split a large PDF to get under an email size limit",
+      "metaTitle": "Split a Large PDF to Fit an Email Limit",
+      "metaDescription": "Gmail caps attachments at 25MB and Outlook.com at 20MB. Work out whether to compress or split your PDF, then split it into parts that actually arrive.",
+      "published": "2026-04-28",
+      "updated": "2026-08-24",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "split large pdf for email",
+      "secondaryKeywords": [
+        "pdf too large to email",
+        "gmail 25mb attachment limit",
+        "outlook attachment size limit",
+        "send large pdf by email",
+        "reduce pdf size for email"
+      ],
+      "entities": [
+        "Gmail",
+        "Microsoft Outlook",
+        "Google Drive",
+        "OneDrive",
+        "iCloud Mail Drop",
+        "Yahoo Mail",
+        "Proton Mail",
+        "Base64"
+      ],
+      "answer": "Gmail allows 25 MB per message and Outlook.com allows 20 MB, but Base64 encoding inflates attachments by about a third, so aim for 18 MB or less. Compress the PDF first; if it is still too big, split it into numbered parts that each land under that ceiling.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Two numbers decide this: what your provider allows, and what the recipient's provider allows. The smaller of the two wins, and you do not know the second one. That is why the practical target is lower than any published limit."
+        },
+        {
+          "t": "h2",
+          "x": "The limits, and the hidden third"
+        },
+        {
+          "t": "table",
+          "caption": "Attachment limits as of 2026. Sending limits are the ones that bite.",
+          "head": [
+            "Service",
+            "Sending limit",
+            "Receiving limit",
+            "What happens above it"
+          ],
+          "rows": [
+            [
+              "Gmail",
+              "25 MB per message",
+              "Up to 50 MB",
+              "Auto-uploads to Google Drive and inserts a link"
+            ],
+            [
+              "Outlook.com",
+              "20 MB",
+              "20 MB",
+              "Prompts you to use a OneDrive link instead"
+            ],
+            [
+              "Microsoft 365 / Exchange Online",
+              "25 MB by default",
+              "25 MB by default",
+              "Admins can raise it to 150 MB; most do not"
+            ],
+            [
+              "Yahoo Mail",
+              "25 MB",
+              "25 MB",
+              "Rejected"
+            ],
+            [
+              "iCloud Mail",
+              "20 MB",
+              "20 MB",
+              "Mail Drop takes over, up to 5 GB, links expire after 30 days"
+            ],
+            [
+              "Proton Mail",
+              "25 MB total per message",
+              "25 MB",
+              "Rejected"
+            ],
+            [
+              "Most corporate servers",
+              "10-25 MB",
+              "10-25 MB",
+              "Silently bounced, sometimes with no notice to you"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "The hidden third is **encoding overhead**. Email attachments are Base64-encoded for transport, which represents every 3 bytes as 4 characters. That is a 33 percent increase, plus line breaks. A 20 MB PDF becomes about 27 MB on the wire, and a 25 MB stated limit usually applies to the encoded message, not to your file."
+        },
+        {
+          "t": "note",
+          "x": "**Aim for 18 MB per attachment.** That leaves room for Base64 expansion under a 25 MB ceiling, plus headers and the message body. Under a 20 MB ceiling, aim for 14 MB."
+        },
+        {
+          "t": "h2",
+          "x": "Compress first. Almost always."
+        },
+        {
+          "t": "p",
+          "x": "Splitting is a workaround; [compression](/tools/compress-pdf) is a fix. The recipient gets one attachment instead of four, nobody has to reassemble anything, and the document stays whole. Try it first and only split if compression is not enough."
+        },
+        {
+          "t": "p",
+          "x": "How much you can expect to save depends entirely on what is making the file big:"
+        },
+        {
+          "t": "table",
+          "head": [
+            "What is in the PDF",
+            "Typical size before",
+            "After compression",
+            "Why"
+          ],
+          "rows": [
+            [
+              "300 DPI colour scans",
+              "1-3 MB per page",
+              "100-300 KB per page",
+              "Downsampling to 150 DPI plus better image encoding"
+            ],
+            [
+              "Phone photos placed on pages",
+              "3-5 MB per page",
+              "200-500 KB per page",
+              "12 megapixels is far more than a page can show"
+            ],
+            [
+              "Text and vector graphics only",
+              "Under 200 KB per page",
+              "Barely changes",
+              "There is nothing to downsample"
+            ],
+            [
+              "Presentation slides exported to PDF",
+              "500 KB-2 MB per slide",
+              "150-400 KB per slide",
+              "Background images and embedded fonts"
+            ],
+            [
+              "Signed or certified documents",
+              "Any",
+              "Do not compress",
+              "It would invalidate the signature"
+            ]
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "Try compression before splitting. A 60 MB scan usually lands between 5 and 10 MB."
+        },
+        {
+          "t": "h2",
+          "x": "Deciding what to do"
+        },
+        {
+          "t": "table",
+          "caption": "Pick the route that matches the file and the recipient.",
+          "head": [
+            "Situation",
+            "Do this"
+          ],
+          "rows": [
+            [
+              "40 MB of scans, mostly images",
+              "Compress. It will almost certainly fit in one message."
+            ],
+            [
+              "22 MB, already compressed, text-heavy",
+              "Split into two parts of about 11 MB each."
+            ],
+            [
+              "200 MB video-embedded or archival file",
+              "Do not email it. Share a cloud link."
+            ],
+            [
+              "Legal or signed document that must not change",
+              "Split, never compress. Compression re-encodes and breaks signatures."
+            ],
+            [
+              "Recipient is on a corporate server with a 10 MB cap",
+              "Split into 7 MB parts, or use a link."
+            ],
+            [
+              "You do not know the recipient's limit",
+              "Keep each part under 10 MB. It is below every common ceiling."
+            ],
+            [
+              "Recipient asked for one file",
+              "Compress hard, or share a link, and say why."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Splitting it properly"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Work out the chunk size",
+              "x": "Divide the file size by your per-message target. A 68 MB PDF with an 18 MB target needs 4 parts, so round up and aim for 4 or 5."
+            },
+            {
+              "h": "Convert that to pages",
+              "x": "Divide the page count by the number of parts. A 68 MB, 240-page file split into 5 gives 48 pages per part. Use the every-N-pages mode with N = 48."
+            },
+            {
+              "h": "Split at a sensible boundary",
+              "x": "Nudge the boundaries so parts break between chapters or sections rather than mid-sentence. Custom ranges are worth the extra typing here. See [splitting into pages or ranges](/blog/split/split-pdf-into-pages)."
+            },
+            {
+              "h": "Check every part",
+              "x": "Sizes are rarely even, because pages are not equally heavy. One 90-page part of thin text can be smaller than a 20-page part of scans. Verify each file individually against your target."
+            },
+            {
+              "h": "Name them for the recipient",
+              "x": "Use `Report_2026_part1of4.pdf` rather than `Report (1).pdf`. The person on the other end has to work out the order without you."
+            },
+            {
+              "h": "Send in order, one per message",
+              "x": "Say in the first message how many parts there are, and mention how to reassemble them if the recipient needs the whole document."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Split by page count or by custom ranges, with the page count for each part shown before you commit."
+        },
+        {
+          "t": "warn",
+          "x": "Never split a PDF into parts and then compress each part separately if the document is being submitted somewhere official. Page numbering, signatures and any certification will not survive, and a reviewer receiving four unrelated-looking files is a good way to have a submission rejected."
+        },
+        {
+          "t": "h2",
+          "x": "The option most people should take instead"
+        },
+        {
+          "t": "p",
+          "x": "Splitting a document across four emails is a bad experience for whoever receives it. A link is better in almost every case where it is allowed:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Google Drive**, Gmail does this automatically above 25 MB, uploading the file and inserting a link. Check the sharing permission it applies, because the default may be narrower than the recipient needs.",
+            "**OneDrive**, Outlook offers the same thing, and Microsoft 365 accounts include 1 TB.",
+            "**iCloud Mail Drop**, up to 5 GB, built into Apple Mail, links expire after 30 days.",
+            "**WeTransfer and similar**, up to 2 GB on the free tier, no account required for the recipient.",
+            "For anything confidential, check whether your organisation permits these services before using one. Many do not."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Why the PDF is large in the first place"
+        },
+        {
+          "t": "p",
+          "x": "Worth knowing, because it changes what you should do. A 50 MB PDF is almost always one of three things: a scanned document stored at 300 or 600 DPI, a set of pages carrying full-resolution photographs, or an export from design software that embedded every asset at print resolution. All three [compress dramatically](/blog/compress/how-to-compress-a-pdf). A 50 MB PDF that is genuinely mostly text is rare, and usually means the file has accumulated revision history through incremental saves, which a full rewrite clears out."
+        },
+        {
+          "t": "p",
+          "x": "If the file came from a scanner, also run [OCR](/tools/ocr-pdf) while you are at it. It adds a small amount of size and makes the document searchable, which is what the recipient will want next anyway."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the maximum attachment size for Gmail?",
+          "a": "Gmail allows 25 MB for a message you send and can receive up to 50 MB. Above 25 MB it uploads the file to Google Drive and inserts a link instead. Because attachments are Base64-encoded, aim for about 18 MB of actual file to stay under the ceiling."
+        },
+        {
+          "q": "What is the Outlook attachment size limit?",
+          "a": "Outlook.com caps attachments at 20 MB. Microsoft 365 and Exchange Online default to 25 MB, which an administrator can raise to 150 MB, though most organisations leave the default in place."
+        },
+        {
+          "q": "Should I compress or split a large PDF?",
+          "a": "Compress first. It keeps the document as one file, and a scan-heavy PDF typically drops by 80 to 90 percent. Split only when compression is not enough, or when the document is signed or certified and must not be re-encoded."
+        },
+        {
+          "q": "How do I split a PDF into equal parts by file size?",
+          "a": "Divide the total size by your per-message target to get the number of parts, then divide the page count by that number and split every N pages. Check each part afterwards, because pages vary in weight and the split will not be perfectly even."
+        },
+        {
+          "q": "Why does my 24 MB PDF bounce from a 25 MB limit?",
+          "a": "Attachments are Base64-encoded for transport, adding roughly 33 percent, so a 24 MB file travels as about 32 MB. The limit applies to the encoded message including headers, which is why the practical maximum is around 18 MB."
+        }
+      ],
+      "relatedTools": [
+        "split-pdf",
+        "compress-pdf",
+        "ocr-pdf"
+      ],
+      "relatedPosts": [
+        "split-pdf-into-pages",
+        "reduce-pdf-file-size-for-email",
+        "how-to-compress-a-pdf"
+      ]
+    }
+  ]
+}

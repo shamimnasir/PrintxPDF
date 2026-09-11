@@ -212,3 +212,26 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 ## Review
 - Lifetime, Pro and API all render their own name in the header badge and on the account page.
 - Static audit clean over 177 pages. 117 tests.
+
+# Phase 8 (2026-09-11): admin panel that can actually publish
+- [x] Rules extracted from the vitest file into `src/content/validate.ts`: pure, dependency-free,
+      and now run by three callers instead of one. CI asserts the same list is empty, the editor
+      shows it while you type, and the Worker refuses a publish that would fail it. Added a fixture
+      per rule, because a rule nobody has seen fail is a rule trusted on faith.
+- [x] 92 posts migrated from TypeScript to JSON (23 files). Proved lossless by hashing all 179
+      prerendered pages before and after: identical apart from the JS chunk filename, which moved
+      only because index.ts gained the cluster-to-file map.
+- [x] Worker admin API: PBKDF2 password check, 12-hour HMAC sessions on their own secret, rate
+      limiting plus an IP lockout, and a revocation watermark. One atomic commit via the Git Data
+      API rather than one commit per file.
+- [x] Block editor for the body (13 types, reorder, delete), meta fields with live counters, FAQs,
+      and related posts/tools as pickers so a cross-link cannot be typed wrong.
+- [x] Verified in a browser: pushing the description to 191 chars turned the counter red, named the
+      rule, flagged the post in the list, and disabled the publish button.
+
+## Review
+- The GitHub token stays a Worker secret; the browser only ever holds a session that expires.
+- The Worker, not the client, decides which paths a publish may write.
+- 135 tests (was 117), 52 of them in the Worker. tsc and build clean.
+- Not built, deliberately: new clusters (23 of a max 24, and it would mean the editor rewriting
+  index.ts), media uploads, tool CRUD, business dashboard.

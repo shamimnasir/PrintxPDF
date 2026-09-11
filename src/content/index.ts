@@ -1,53 +1,61 @@
 import type { Cluster, Post } from './types'
-import { printWebPages } from './posts/print-web-pages'
-import { savePdf } from './posts/save-webpage-as-pdf'
-import { mergePdf } from './posts/merge-pdf'
-import { splitPdf } from './posts/split-pdf'
-import { compressPdf } from './posts/compress-pdf'
-import { convertFromPdf } from './posts/convert-from-pdf'
-import { convertToPdf } from './posts/convert-to-pdf'
-import { pdfImages } from './posts/pdf-images'
-import { signPdf } from './posts/sign-pdf'
-import { ocrScans } from './posts/ocr-scanned-documents'
-import { watermarkPdf } from './posts/watermark-page-numbers'
-import { pdfPrivacy } from './posts/pdf-privacy'
-import { printRecipes } from './posts/print-recipes'
-import { studentsResearch } from './posts/students-research'
-import { publishersWordpress } from './posts/publishers-wordpress'
-import { savePaperInk } from './posts/save-paper-ink'
-import { qrCodes } from './posts/qr-codes'
-import { browserExtensions } from './posts/browser-extensions'
-import { editPdf } from './posts/edit-pdf'
-import { slidesPdf } from './posts/slides-pdf'
-import { ebooksPdf } from './posts/ebooks-pdf'
-import { imagesArchives } from './posts/images-archives'
-import { archiveDocuments } from './posts/archive-documents'
+import printWebPages from './posts/print-web-pages.json'
+import savePdf from './posts/save-webpage-as-pdf.json'
+import mergePdf from './posts/merge-pdf.json'
+import splitPdf from './posts/split-pdf.json'
+import compressPdf from './posts/compress-pdf.json'
+import convertFromPdf from './posts/convert-from-pdf.json'
+import convertToPdf from './posts/convert-to-pdf.json'
+import pdfImages from './posts/pdf-images.json'
+import signPdf from './posts/sign-pdf.json'
+import ocrScans from './posts/ocr-scanned-documents.json'
+import watermarkPdf from './posts/watermark-page-numbers.json'
+import pdfPrivacy from './posts/pdf-privacy.json'
+import printRecipes from './posts/print-recipes.json'
+import studentsResearch from './posts/students-research.json'
+import publishersWordpress from './posts/publishers-wordpress.json'
+import savePaperInk from './posts/save-paper-ink.json'
+import qrCodes from './posts/qr-codes.json'
+import browserExtensions from './posts/browser-extensions.json'
+import editPdf from './posts/edit-pdf.json'
+import slidesPdf from './posts/slides-pdf.json'
+import ebooksPdf from './posts/ebooks-pdf.json'
+import imagesArchives from './posts/images-archives.json'
+import archiveDocuments from './posts/archive-documents.json'
 
-export const CLUSTERS: Cluster[] = [
-  printWebPages,
-  savePdf,
-  mergePdf,
-  splitPdf,
-  compressPdf,
-  convertFromPdf,
-  convertToPdf,
-  pdfImages,
-  signPdf,
-  ocrScans,
-  watermarkPdf,
-  pdfPrivacy,
-  printRecipes,
-  studentsResearch,
-  publishersWordpress,
-  savePaperInk,
-  qrCodes,
-  browserExtensions,
-  editPdf,
-  slidesPdf,
-  ebooksPdf,
-  imagesArchives,
-  archiveDocuments,
-]
+// Each cluster paired with the file it lives in. The admin editor needs the file name to publish
+// a change back, and deriving it from the slug would be a guess: the `edit` cluster lives in
+// edit-pdf.json.
+const SOURCES: [Cluster, string][] = [
+  [printWebPages, 'print-web-pages'],
+  [savePdf, 'save-webpage-as-pdf'],
+  [mergePdf, 'merge-pdf'],
+  [splitPdf, 'split-pdf'],
+  [compressPdf, 'compress-pdf'],
+  [convertFromPdf, 'convert-from-pdf'],
+  [convertToPdf, 'convert-to-pdf'],
+  [pdfImages, 'pdf-images'],
+  [signPdf, 'sign-pdf'],
+  [ocrScans, 'ocr-scanned-documents'],
+  [watermarkPdf, 'watermark-page-numbers'],
+  [pdfPrivacy, 'pdf-privacy'],
+  [printRecipes, 'print-recipes'],
+  [studentsResearch, 'students-research'],
+  [publishersWordpress, 'publishers-wordpress'],
+  [savePaperInk, 'save-paper-ink'],
+  [qrCodes, 'qr-codes'],
+  [browserExtensions, 'browser-extensions'],
+  [editPdf, 'edit-pdf'],
+  [slidesPdf, 'slides-pdf'],
+  [ebooksPdf, 'ebooks-pdf'],
+  [imagesArchives, 'images-archives'],
+  [archiveDocuments, 'archive-documents'],
+] as unknown as [Cluster, string][]
+
+export const CLUSTERS: Cluster[] = SOURCES.map(([c]) => c)
+
+/** Cluster slug to the JSON file it is stored in, for publishing. */
+export const CLUSTER_FILE: Record<string, string> = Object.fromEntries(SOURCES.map(([c, f]) => [c.slug, f]))
 
 export const ALL_POSTS: Post[] = CLUSTERS.flatMap((c) => c.posts)
 

@@ -5,6 +5,8 @@ import { useSiteConfig } from './useSiteConfig'
 import { useSeo } from '../lib/seo'
 import { useToast } from '../components/ui/Toast'
 import { Analytics, Appearance, Code, Content, Dashboard, Data, General, Pages, Seo, ToolsAdmin } from './sections'
+import { BlogAdmin } from './blog/BlogAdmin'
+import { hasContentDraft } from './blog/draft'
 import './admin.css'
 
 const NAV = [
@@ -12,7 +14,8 @@ const NAV = [
   ['general', '⚙', 'General'],
   ['appearance', '◐', 'Appearance'],
   ['pages', '▤', 'Pages & home'],
-  ['content', '✎', 'Blog content'],
+  ['content', '✎', 'Blog SEO'],
+  ['posts', '✍', 'Write posts'],
   ['tools', '⧉', 'Tools'],
   ['seo', '↗', 'SEO'],
   ['analytics', '▲', 'Analytics'],
@@ -60,7 +63,7 @@ export default function AdminApp() {
   const [open, setOpen] = useState(isUnlocked)
   const cfg = useSiteConfig()
   const { pathname } = useLocation()
-  const draft = hasDraft()
+  const draft = hasDraft() || hasContentDraft()
 
   useSeo({
     title: 'Admin | PrintxPDF',
@@ -114,6 +117,7 @@ export default function AdminApp() {
             <Route path="appearance" element={<Appearance cfg={cfg} />} />
             <Route path="pages" element={<Pages cfg={cfg} />} />
             <Route path="content" element={<Content cfg={cfg} />} />
+            <Route path="posts" element={<BlogAdmin />} />
             <Route path="tools" element={<ToolsAdmin cfg={cfg} />} />
             <Route path="seo" element={<Seo cfg={cfg} />} />
             <Route path="analytics" element={<Analytics cfg={cfg} />} />

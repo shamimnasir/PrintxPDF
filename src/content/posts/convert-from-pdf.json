@@ -1,0 +1,972 @@
+{
+  "slug": "from-pdf",
+  "name": "Converting PDF to other formats",
+  "title": "Converting a PDF to Word, Excel, text and slides",
+  "metaTitle": "Convert PDF to Word, Excel, Text and Slides",
+  "metaDescription": "How to get a PDF back into an editable format: Word, Excel, plain text and slides, what each conversion really preserves, and when the answer is to retype.",
+  "intro": "A PDF stores where each glyph sits on the page, not that a run of glyphs is a heading, a table cell or a bullet. Every conversion out of PDF is therefore a reconstruction: a converter reads coordinates and guesses at structure. That guess is excellent for a single column of body text, decent for a ruled table, and poor for a magazine layout. These guides tell you which conversions are reliable, which need a desktop application, and where retyping is genuinely faster.",
+  "answer": "Converting out of PDF works best when the file has a real text layer and a simple layout. Word and Google Docs both open PDFs directly and rebuild the text well. Tables need column detection or Power Query. Scanned PDFs must be OCR-ed first, and slide conversion needs Acrobat or a desktop app.",
+  "primaryKeyword": "convert pdf to word",
+  "entities": [
+    "Microsoft Word",
+    "Google Docs",
+    "Microsoft Excel",
+    "Power Query",
+    "Adobe Acrobat",
+    "Microsoft PowerPoint",
+    "Apple Keynote",
+    "OCR"
+  ],
+  "icon": "⇄",
+  "tools": [
+    "pdf-to-word",
+    "pdf-to-excel",
+    "pdf-to-text",
+    "pdf-to-ppt",
+    "pdf-to-markdown",
+    "ocr-pdf"
+  ],
+  "posts": [
+    {
+      "slug": "pdf-to-word",
+      "cluster": "from-pdf",
+      "title": "How to convert a PDF to Word and keep the formatting",
+      "metaTitle": "Convert PDF to Word and Keep the Formatting",
+      "metaDescription": "Convert a PDF to an editable Word document using Word itself or Google Docs, why the layout breaks, and what to do when the file is a scan with no text layer.",
+      "published": "2026-01-30",
+      "updated": "2026-08-14",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "convert pdf to word",
+      "secondaryKeywords": [
+        "pdf to word free",
+        "pdf to editable document",
+        "open pdf in word",
+        "pdf to docx",
+        "edit a pdf in word"
+      ],
+      "entities": [
+        "Microsoft Word",
+        "Google Docs",
+        "Adobe Acrobat",
+        "LibreOffice Writer",
+        "DOCX",
+        "OCR",
+        "Google Drive"
+      ],
+      "answer": "Microsoft Word converts PDFs itself: File → Open, choose the PDF, and accept the prompt. Google Docs does the same through Drive. Both rebuild single-column text well and struggle with multi-column layouts, text boxes and tables. If nothing is editable afterwards, the PDF is a scan and needs OCR first.",
+      "body": [
+        {
+          "t": "p",
+          "x": "You do not need a converter website for this. The best PDF-to-Word converter most people already have is Microsoft Word, and the second best is Google Docs. Both are free at the point of use if you already have the software."
+        },
+        {
+          "t": "h2",
+          "x": "Method 1: Let Word do it"
+        },
+        {
+          "t": "p",
+          "x": "Word 2013 and every version since ships with a PDF reflow engine. It reads the PDF, works out paragraphs, headings, lists and tables from the glyph positions, and writes a real .docx."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open Word first",
+              "x": "Do not double-click the PDF, that opens your PDF viewer. Launch Word, then File → Open → Browse."
+            },
+            {
+              "h": "Select the PDF",
+              "x": "Change the file type filter to All Files if the PDF is greyed out, then choose it."
+            },
+            {
+              "h": "Accept the conversion prompt",
+              "x": "Word warns: \"Word will now convert your PDF to an editable Word document. This may take a while.\" Click OK. A 200-page document can take a few minutes."
+            },
+            {
+              "h": "Check the structure immediately",
+              "x": "Turn on the navigation pane (View → Navigation Pane). If your headings appear there, Word recognised the heading styles and the document will behave normally. If it is empty, everything came in as body text."
+            },
+            {
+              "h": "Fix the paragraph marks",
+              "x": "Turn on ¶ (Home → Show/Hide). Converters sometimes insert a paragraph break at every line instead of at every paragraph. Use Find and Replace with ^p^p → §, then ^p → space, then § → ^p to repair it in one pass."
+            },
+            {
+              "h": "Save as .docx",
+              "x": "File → Save As and choose Word Document (*.docx). Until you do this you are still working on a converted view."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Word for Mac supports the same conversion, and so does Word on the web when the file is in OneDrive, right-click the PDF in OneDrive and choose Open in Word. Word for iPad and Android do not convert PDFs."
+        },
+        {
+          "t": "h2",
+          "x": "Method 2: Google Docs"
+        },
+        {
+          "t": "p",
+          "x": "Upload the PDF to Google Drive, right-click it, and choose **Open with → Google Docs**. Drive converts it into a Docs document. This is often better than Word for messy files because Docs is more willing to throw the layout away and give you clean, correctly-ordered text. It is worse for tables, which frequently come through as loose paragraphs."
+        },
+        {
+          "t": "p",
+          "x": "Google Docs also runs OCR automatically on scanned PDFs, up to about the first ten pages, which makes it a fast way to test whether a scan is recoverable at all. Download the result with File → Download → Microsoft Word (.docx)."
+        },
+        {
+          "t": "h2",
+          "x": "Why the layout breaks"
+        },
+        {
+          "t": "p",
+          "x": "This is worth understanding, because it tells you when to stop fighting. A PDF page is a list of drawing instructions: put this glyph at this coordinate in this font at this size. It does not record that three glyphs form a word, that a run of words is a heading, or that a group of lines is a table. All of that is inferred by the converter."
+        },
+        {
+          "t": "table",
+          "caption": "What survives a PDF to Word conversion.",
+          "head": [
+            "Element",
+            "Usually survives",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Single-column body text",
+              "Yes",
+              "Line grouping from coordinates is reliable"
+            ],
+            [
+              "Bold, italic, font size",
+              "Yes",
+              "Stored per text run in the PDF"
+            ],
+            [
+              "Headings as Word styles",
+              "Sometimes",
+              "Inferred from font size jumps; no style names exist in the PDF"
+            ],
+            [
+              "Bulleted and numbered lists",
+              "Sometimes",
+              "Bullets are just characters at a coordinate"
+            ],
+            [
+              "Simple ruled tables",
+              "Often",
+              "Detected from the drawn lines"
+            ],
+            [
+              "Borderless tables",
+              "Rarely",
+              "Nothing marks the cell boundaries"
+            ],
+            [
+              "Two- and three-column layouts",
+              "Rarely",
+              "Reading order is guessed and often interleaves the columns"
+            ],
+            [
+              "Text boxes, pull quotes, sidebars",
+              "No",
+              "Land in arbitrary positions in the flow"
+            ],
+            [
+              "Headers, footers, page numbers",
+              "Poorly",
+              "Repeat as body text on every page"
+            ],
+            [
+              "Vector charts",
+              "As a picture",
+              "No underlying data to rebuild"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Be honest with yourself about the source. A PDF exported from a designer laid-out brochure will never come back as a clean Word file, from any tool at any price. If you need that content, extract the text and rebuild the layout deliberately. It is faster than fixing 400 stray text boxes."
+        },
+        {
+          "t": "h2",
+          "x": "When the PDF is a scan"
+        },
+        {
+          "t": "p",
+          "x": "Test in two seconds: open the PDF and try to drag-select a sentence. If nothing highlights, there is no text layer. The page is a picture and there is nothing for a converter to convert, you will get a Word document containing one image per page."
+        },
+        {
+          "t": "p",
+          "x": "The fix is [OCR](/tools/ocr-pdf), which recognises the characters in the image and writes a real text layer underneath. Do that first, then convert. The full method is in [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf), and [making a PDF searchable](/blog/ocr/make-pdf-searchable) covers the accuracy you can expect."
+        },
+        {
+          "t": "cta",
+          "tool": "ocr-pdf",
+          "x": "No selectable text? Run OCR first, then convert."
+        },
+        {
+          "t": "h2",
+          "x": "What a browser tool can and cannot do"
+        },
+        {
+          "t": "p",
+          "x": "A browser-based converter runs entirely on your machine, which is the right answer for a confidential document you do not want to upload. It reliably recovers the **text content, reading order, and basic paragraph structure**, that is genuinely useful and it is what most people actually need. It cannot reproduce a complex print layout in Word, because doing that well requires the heavy layout-analysis engines that Acrobat and dedicated server converters run."
+        },
+        {
+          "t": "p",
+          "x": "So: use the [browser converter](/tools/pdf-to-word) when you want the words back without uploading anything. Use Acrobat Pro (Export To → Microsoft Word) when the layout genuinely has to be preserved and you have a licence. Anyone claiming pixel-perfect layout conversion in a web page is overselling."
+        },
+        {
+          "t": "table",
+          "caption": "Choosing a method.",
+          "head": [
+            "Situation",
+            "Best option"
+          ],
+          "rows": [
+            [
+              "Plain report, you have Word",
+              "Word File → Open"
+            ],
+            [
+              "Messy file, you want clean text",
+              "Google Docs via Drive"
+            ],
+            [
+              "Confidential document",
+              "Browser converter, no upload"
+            ],
+            [
+              "Layout must be preserved exactly",
+              "Adobe Acrobat Pro, Export To → Word"
+            ],
+            [
+              "Scanned pages",
+              "OCR first, then any of the above"
+            ],
+            [
+              "You only need the words",
+              "[Extract the text](/blog/from-pdf/pdf-to-text) instead"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Before converting a 300-page document, convert the first 10 pages and inspect the result. [Extract a page range](/tools/extract-pages) to make the sample. Five minutes of testing saves an afternoon of cleanup on a method that was never going to work."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I convert a PDF to Word for free?",
+          "a": "Open Word, then File → Open and select the PDF. Word converts it and asks for confirmation. If you do not have Word, upload the PDF to Google Drive and open it with Google Docs, then download as .docx. Both are free with an account you likely already have."
+        },
+        {
+          "q": "Why does my converted Word document look wrong?",
+          "a": "A PDF records glyph positions, not document structure, so the converter has to infer paragraphs, columns and tables. Multi-column layouts, text boxes and borderless tables are guessed badly. Single-column documents convert well; magazine layouts never do."
+        },
+        {
+          "q": "Can I convert a scanned PDF to Word?",
+          "a": "Only after OCR. A scan is a picture of text, so a converter has nothing to read and gives you a Word file with one image per page. Run OCR to create a text layer first, then convert. Expect 95-99 percent accuracy on a clean 300 DPI scan."
+        },
+        {
+          "q": "Is it safe to convert a PDF to Word online?",
+          "a": "Most online converters upload your file to a server, which is unacceptable for contracts, medical records or anything under NDA. A browser-based converter does the work in your own tab so nothing is transmitted. Word and Google Docs are also reasonable if you already trust those accounts."
+        },
+        {
+          "q": "How do I stop each line becoming its own paragraph?",
+          "a": "Turn on formatting marks with Home → Show/Hide ¶. Then run Find and Replace three times: ^p^p to §, then ^p to a single space, then § back to ^p. That collapses line breaks while keeping real paragraph breaks."
+        }
+      ],
+      "relatedTools": [
+        "pdf-to-word",
+        "ocr-pdf",
+        "pdf-to-text"
+      ],
+      "relatedPosts": [
+        "pdf-to-text",
+        "pdf-to-excel",
+        "how-to-ocr-a-scanned-pdf"
+      ]
+    },
+    {
+      "slug": "pdf-to-excel",
+      "cluster": "from-pdf",
+      "title": "How to convert a PDF table into Excel",
+      "metaTitle": "How to Convert a PDF Table Into Excel",
+      "metaDescription": "Get a table out of a PDF into Excel: Power Query From PDF, copy-paste with Text to Columns, text extraction, and how to spot numbers that came in wrong.",
+      "published": "2026-02-25",
+      "updated": "2026-07-22",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "convert pdf to excel",
+      "secondaryKeywords": [
+        "pdf table to excel",
+        "extract table from pdf",
+        "pdf to spreadsheet",
+        "copy table from pdf",
+        "pdf to xlsx"
+      ],
+      "entities": [
+        "Microsoft Excel",
+        "Power Query",
+        "Microsoft 365",
+        "Google Sheets",
+        "Adobe Acrobat",
+        "CSV",
+        "Text to Columns"
+      ],
+      "answer": "On Windows with Microsoft 365, use Data → Get Data → From File → From PDF, which reads tables natively. Otherwise copy the table, paste into Excel, and split it with Data → Text to Columns. Both need a real text layer, scanned tables must be OCR-ed first, and messy tables are often faster to retype.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A table in a PDF is not a table. It is a set of text fragments at coordinates, sometimes with lines drawn around them. Every method below is a different strategy for guessing where the columns are."
+        },
+        {
+          "t": "h2",
+          "x": "Method 1: Power Query (best, Windows only)"
+        },
+        {
+          "t": "p",
+          "x": "Excel has had a native PDF connector since 2020. It is genuinely good: it detects tables page by page, previews each one, and gives you a refreshable query rather than a dead paste."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the connector",
+              "x": "In Excel: **Data → Get Data → From File → From PDF**, then choose the file."
+            },
+            {
+              "h": "Pick your table in the Navigator",
+              "x": "Power Query lists every table it found as Table001, Table002 and so on, plus each Page as a whole. Click each one to preview it on the right."
+            },
+            {
+              "h": "Use Transform Data, not Load",
+              "x": "Click **Transform Data** to open the Power Query Editor. Loading directly usually gives you text columns and a header row stuck in row 1."
+            },
+            {
+              "h": "Promote the headers",
+              "x": "Home → Use First Row as Headers."
+            },
+            {
+              "h": "Set the data types",
+              "x": "Click each column header icon and set Decimal Number, Whole Number or Date. This is the step that catches numbers that came in as text."
+            },
+            {
+              "h": "Close and load",
+              "x": "Home → Close & Load. The table lands in a sheet and can be refreshed with Data → Refresh All if the PDF is replaced."
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "The From PDF connector is Windows-only. It is not available in Excel for Mac, in Excel on the web, or in perpetual-licence Excel 2016 and earlier. On a Mac, use Method 2 or 3."
+        },
+        {
+          "t": "h2",
+          "x": "Method 2: Copy, paste, Text to Columns"
+        },
+        {
+          "t": "p",
+          "x": "The universal method. It works everywhere, including on a Mac, and it is fast for a single table."
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Select the table in your PDF viewer and copy it. Hold **Alt** (Windows) or **Option** (Mac) while dragging in Acrobat and many viewers to make a rectangular selection instead of a flowing one, this alone fixes most column scrambling.",
+            "Paste into Excel. Everything usually lands in column A.",
+            "Select column A, then **Data → Text to Columns**.",
+            "Choose **Delimited** if the values are separated by tabs or commas, or **Fixed width** if the PDF used spaces to align the columns. Fixed width is right more often than people expect for PDF text.",
+            "On step 3 of the wizard, set the column data format. Mark any code, ID or postcode column as **Text** so leading zeros survive.",
+            "Finish, then spot-check the last row and the widest row against the PDF."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Method 3: Extract the text first"
+        },
+        {
+          "t": "p",
+          "x": "For a long report where you want every table, pull the whole text layer out first with the [text extractor](/tools/pdf-to-text), open the .txt in Excel through Data → From Text/CSV, and use Fixed width. This gives you all the pages at once instead of copying table by table, and you can see exactly what the PDF really contains. See [extracting all the text from a PDF](/blog/from-pdf/pdf-to-text) for the details."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Try the browser table extractor, your file stays on your computer."
+        },
+        {
+          "t": "h2",
+          "x": "Choosing a method"
+        },
+        {
+          "t": "table",
+          "caption": "PDF to Excel methods compared.",
+          "head": [
+            "Method",
+            "Platform",
+            "Best for",
+            "Weakness"
+          ],
+          "rows": [
+            [
+              "Power Query From PDF",
+              "Windows, Microsoft 365",
+              "Multi-page tables, recurring reports",
+              "Not on Mac or Excel on the web"
+            ],
+            [
+              "Copy + Text to Columns",
+              "Everywhere",
+              "One table, one time",
+              "Manual, breaks on merged cells"
+            ],
+            [
+              "Browser extractor",
+              "Any browser",
+              "Confidential files, no upload",
+              "Struggles with borderless tables"
+            ],
+            [
+              "Extract text, import fixed width",
+              "Everywhere",
+              "Whole reports at once",
+              "Needs manual column boundaries"
+            ],
+            [
+              "Acrobat Pro Export To → Spreadsheet",
+              "Windows, Mac (paid)",
+              "Complex ruled tables",
+              "Costs money"
+            ],
+            [
+              "Retype it",
+              "Everywhere",
+              "Under about 60 cells, or heavy merged cells",
+              "Your time"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Where the numbers go wrong"
+        },
+        {
+          "t": "p",
+          "x": "This is the part that quietly costs people money. Check every one of these before you build a formula on the result."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Decimal and thousands separators.** A German PDF writes 1.234,56 for one thousand two hundred and thirty-four point five six. Pasted into an English Excel it becomes text, or worse, 1.23456. Fix it in Text to Columns → Advanced, where you can set the decimal and thousands separators explicitly.",
+            "**Negatives in parentheses.** Accounting PDFs write (1,250) for minus 1,250. Excel imports that as text. Replace the parentheses with a leading minus before converting.",
+            "**Trailing minus signs.** Some systems export 1250-. Same problem.",
+            "**Leading zeros.** Product codes like 00734 become 734 unless you set the column format to Text during the import.",
+            "**Dates.** 03/04/2026 is 3 April in most of the world and 4 March in the US. Set the column to Text, check what the PDF meant, then convert deliberately.",
+            "**Hyphenated wrapped text.** Long labels broken across two lines in the PDF arrive as two rows.",
+            "**Footnote markers.** A superscript 1 next to a figure becomes part of the number: 4521 instead of 452."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Always verify with a total. Sum the imported column and compare it to the total printed in the PDF. If they match, your import is almost certainly clean. If they do not, one of the traps above got you, and you have found it in ten seconds rather than after presenting the numbers."
+        },
+        {
+          "t": "h2",
+          "x": "When the table is a scan"
+        },
+        {
+          "t": "p",
+          "x": "If you cannot select the text, no extraction method will work. Run [OCR](/tools/ocr-pdf) first. Be more sceptical of OCR-ed tables than of OCR-ed prose: a misread letter in a paragraph is obvious, but an 8 read as a 3 in a column of figures is invisible and wrong. Check the totals, always."
+        },
+        {
+          "t": "h2",
+          "x": "When to just retype it"
+        },
+        {
+          "t": "p",
+          "x": "A 6-column, 10-row table takes about three minutes to type and is guaranteed correct. Chasing a converter through merged cells, multi-line headers and footnote markers takes twenty and leaves you unsure. If the table has fewer than about 60 cells, or uses merged header cells spanning several columns, retyping wins. Google Sheets, incidentally, has no PDF import at all, you have to go through Google Docs and copy the result across."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I convert a PDF to Excel for free?",
+          "a": "On Windows with Microsoft 365, use Data → Get Data → From File → From PDF, which is built in. Anywhere else, copy the table, paste it into Excel and split it with Data → Text to Columns, or extract the text and import it as fixed-width."
+        },
+        {
+          "q": "Why is my PDF table pasting into one column?",
+          "a": "The PDF used spaces rather than tabs to align the columns, so Excel sees one long string. Select the column and run Data → Text to Columns with the Fixed width option, then drag the break lines to match the columns."
+        },
+        {
+          "q": "Can Excel for Mac import a PDF?",
+          "a": "No. The From PDF connector in Power Query is Windows-only. On a Mac, copy and paste with Text to Columns, extract the text first, or use a browser-based extractor."
+        },
+        {
+          "q": "Why are my imported numbers stored as text?",
+          "a": "Usually a separator mismatch, a currency symbol, a trailing space, a footnote marker, or negatives written in parentheses. Set the column type explicitly during the import and compare your column total against the total printed in the PDF."
+        },
+        {
+          "q": "Can I extract a table from a scanned PDF?",
+          "a": "Only after OCR, and you must verify the result. OCR confuses 8 with 3, 1 with 7 and 0 with O, and in a table of figures those errors are invisible. Always cross-check against a printed total before using the data."
+        }
+      ],
+      "relatedTools": [
+        "pdf-to-excel",
+        "pdf-to-text",
+        "ocr-pdf"
+      ],
+      "relatedPosts": [
+        "pdf-to-text",
+        "pdf-to-word",
+        "how-to-ocr-a-scanned-pdf"
+      ]
+    },
+    {
+      "slug": "pdf-to-text",
+      "cluster": "from-pdf",
+      "title": "How to extract all the text from a PDF",
+      "metaTitle": "How to Extract All the Text From a PDF",
+      "metaDescription": "Pull the full text out of a PDF as a .txt file, test whether a text layer exists, fix reading order and ligature problems, and OCR the files that need it.",
+      "published": "2026-03-27",
+      "updated": "2026-08-02",
+      "readMinutes": 6,
+      "intent": "howto",
+      "primaryKeyword": "extract text from pdf",
+      "secondaryKeywords": [
+        "pdf to text",
+        "copy all text from pdf",
+        "pdf to txt",
+        "get text out of a pdf",
+        "pdf text extraction"
+      ],
+      "entities": [
+        "UTF-8",
+        "OCR",
+        "Poppler",
+        "pdftotext",
+        "Google Docs",
+        "Adobe Acrobat",
+        "Unicode",
+        "ligature"
+      ],
+      "answer": "First test whether the PDF has a text layer: try to select a sentence. If text highlights, drop the file into a text extractor and export a .txt, you get every page at once with the reading order preserved. If nothing highlights, the pages are images and you must run OCR before any extraction will work.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Extracting text is the most reliable conversion out of PDF, because you are throwing the layout away rather than trying to rebuild it. Nothing has to be guessed except the reading order."
+        },
+        {
+          "t": "h2",
+          "x": "First: does the PDF have a text layer?"
+        },
+        {
+          "t": "p",
+          "x": "This one check determines everything that follows."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the PDF",
+              "x": "Any viewer will do, including the one built into your browser."
+            },
+            {
+              "h": "Try to select a sentence",
+              "x": "Click and drag across a line of text. If a blue highlight follows your cursor, there is a text layer."
+            },
+            {
+              "h": "Or search for a word",
+              "x": "Press Ctrl+F and search for a word you can clearly see on the page. Found means text layer; not found means image."
+            },
+            {
+              "h": "Watch for the mixed case",
+              "x": "Many documents have both: a typed cover page with real text and scanned pages inside. Test a page in the middle, not just the first one."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Extracting the text"
+        },
+        {
+          "t": "p",
+          "x": "With a text layer confirmed, drop the file into the [text extractor](/tools/pdf-to-text). It reads the content streams, orders the runs, and gives you a plain .txt you can save, search, paste into a note or feed to a script. The whole thing runs in your browser, so a confidential document is never uploaded."
+        },
+        {
+          "t": "p",
+          "x": "Alternatives that work just as well for a one-off: select all in your PDF viewer with Ctrl+A and paste into a text editor; or upload to Google Drive and open with Google Docs, which also OCRs scanned pages automatically for roughly the first ten pages."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "Extract the full text as a .txt file, entirely in your browser."
+        },
+        {
+          "t": "h2",
+          "x": "What you will need to clean up"
+        },
+        {
+          "t": "table",
+          "caption": "Common artefacts in extracted PDF text and how to fix them.",
+          "head": [
+            "Artefact",
+            "What you see",
+            "Fix"
+          ],
+          "rows": [
+            [
+              "Hyphenation at line ends",
+              "inter-\\nnational",
+              "Find and replace \"-\\n\" with nothing"
+            ],
+            [
+              "Line breaks inside paragraphs",
+              "A break every 70 characters",
+              "Replace double breaks with a marker, single breaks with a space, then restore"
+            ],
+            [
+              "Ligatures",
+              "ﬁ ﬂ ﬀ as single characters",
+              "Replace ﬁ with fi, ﬂ with fl, ﬀ with ff"
+            ],
+            [
+              "Smart quotes and dashes",
+              "“ ” ‘ ’, ",
+              "Replace with straight equivalents if a script needs them"
+            ],
+            [
+              "Repeating headers and footers",
+              "The document title on every page",
+              "Remove with a find-and-replace or a regex"
+            ],
+            [
+              "Column interleaving",
+              "Two columns merged line by line",
+              "Extract with a layout-preserving mode, or crop the columns separately"
+            ],
+            [
+              "Missing spaces",
+              "Wordsrunningtogether",
+              "The PDF positioned glyphs without space characters; needs manual repair"
+            ],
+            [
+              "Mojibake",
+              "□ or Ã© instead of é",
+              "The font has a broken encoding map, OCR the page instead"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Reading order is the one thing extraction still has to guess. A PDF stores drawing operations in whatever order the generator emitted them, which for a two-column page is often column one then column two, but is sometimes interleaved. If your output reads like two conversations mixed together, extract each column separately by cropping the page, or use a layout-aware extractor."
+        },
+        {
+          "t": "h2",
+          "x": "For developers"
+        },
+        {
+          "t": "p",
+          "x": "Poppler ships `pdftotext`, which is the reference implementation and available on every platform. The `-layout` flag preserves the visual column arrangement using spaces, which is exactly what you want before importing into a spreadsheet."
+        },
+        {
+          "t": "code",
+          "x": "# Preserve column layout, best for tables\npdftotext -layout report.pdf report.txt\n\n# Just pages 10 to 20, reading order only\npdftotext -f 10 -l 20 report.pdf excerpt.txt\n\n# UTF-8 output with no page break characters\npdftotext -enc UTF-8 -nopgbrk report.pdf clean.txt"
+        },
+        {
+          "t": "p",
+          "x": "In JavaScript, pdf.js exposes `page.getTextContent()`, which returns each text item with its transform matrix so you can implement your own reading-order logic. In Python, pdfplumber and PyMuPDF both give you words with bounding boxes."
+        },
+        {
+          "t": "h2",
+          "x": "When there is no text layer"
+        },
+        {
+          "t": "p",
+          "x": "A scan needs [OCR](/tools/ocr-pdf) before extraction is possible at all. Three things drive accuracy more than the choice of engine:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Resolution.** 300 DPI is the sweet spot. Below 200 DPI accuracy falls sharply; above 400 DPI you gain almost nothing and slow everything down.",
+            "**Straightness.** A page scanned at three degrees off square measurably hurts recognition. Deskew first.",
+            "**Contrast.** Clean black on white beats a grey photocopy every time. Greyscale scans of text OCR better than colour ones."
+          ]
+        },
+        {
+          "t": "p",
+          "x": "On a clean 300 DPI scan of printed text, expect 98-99.5 percent character accuracy. On a fax, a grey photocopy or a phone photo taken at an angle, expect considerably less. Handwriting is a different problem and general OCR engines do badly at it. See [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf) for the full method."
+        },
+        {
+          "t": "h2",
+          "x": "Text, Word or Excel?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "You want",
+            "Use"
+          ],
+          "rows": [
+            [
+              "The words, to search, quote or feed to a script",
+              "Text extraction"
+            ],
+            [
+              "An editable document to rewrite",
+              "[PDF to Word](/blog/from-pdf/pdf-to-word)"
+            ],
+            [
+              "Numbers in columns",
+              "[PDF to Excel](/blog/from-pdf/pdf-to-excel)"
+            ],
+            [
+              "The pictures rather than the words",
+              "[Extract images](/blog/images/extract-images-from-pdf)"
+            ],
+            [
+              "The original PDF to become searchable",
+              "OCR in place, not extraction"
+            ]
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I copy all the text from a PDF at once?",
+          "a": "Open the PDF, press Ctrl+A to select everything, then Ctrl+C and paste into a text editor. For multi-page documents, a text extractor is more reliable because it walks every page in order and exports a single .txt file."
+        },
+        {
+          "q": "Why can I not select text in my PDF?",
+          "a": "The page is an image, not text. This happens with anything from a scanner, a fax or a phone camera, and occasionally with PDFs exported deliberately as images. Run OCR to add a text layer, then selection and search start working."
+        },
+        {
+          "q": "Why does my extracted text have random line breaks?",
+          "a": "PDF stores each visual line separately with no notion of a paragraph, so extractors emit a break per line. Replace double breaks with a placeholder, replace single breaks with a space, then restore the placeholder to get paragraphs back."
+        },
+        {
+          "q": "Does extracting text from a PDF change the original file?",
+          "a": "No. Extraction reads the file and writes a new .txt. Your PDF is untouched. OCR is different, it adds an invisible text layer to the PDF, which is a modification, so keep a copy of the original."
+        },
+        {
+          "q": "Can I extract text from a password-protected PDF?",
+          "a": "If you can open it with the password, yes, extraction works normally once the document is decrypted in the viewer. If the file has an owner password restricting copying, you must remove that restriction legitimately first, which requires the password."
+        }
+      ],
+      "relatedTools": [
+        "pdf-to-text",
+        "ocr-pdf",
+        "pdf-reader"
+      ],
+      "relatedPosts": [
+        "pdf-to-word",
+        "pdf-to-excel",
+        "make-pdf-searchable"
+      ]
+    },
+    {
+      "slug": "pdf-to-powerpoint",
+      "cluster": "from-pdf",
+      "title": "How to turn a PDF into PowerPoint slides",
+      "metaTitle": "How to Turn a PDF Into PowerPoint Slides",
+      "metaDescription": "Convert a PDF into slides honestly: why editable PDF to PowerPoint needs Acrobat, the one-image-per-slide method that always works, and Keynote and Slides.",
+      "published": "2026-04-16",
+      "updated": "2026-08-21",
+      "readMinutes": 6,
+      "intent": "comparison",
+      "primaryKeyword": "convert pdf to powerpoint",
+      "secondaryKeywords": [
+        "pdf to pptx",
+        "pdf to slides",
+        "insert pdf into powerpoint",
+        "pdf to keynote",
+        "pdf to google slides"
+      ],
+      "entities": [
+        "Microsoft PowerPoint",
+        "Adobe Acrobat",
+        "Apple Keynote",
+        "Google Slides",
+        "PPTX",
+        "Photo Album",
+        "JPEG"
+      ],
+      "answer": "Editable PDF to PowerPoint needs real layout analysis, so it cannot run in a browser tab. PDF to PowerPoint here runs on our server and returns a .pptx with the text in real text boxes, positioned where it sat. It is a best effort reconstruction, so complex layouts need tidying. The always-works fallback is one page image per slide.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Start with what the job actually involves, because it explains every result you will get."
+        },
+        {
+          "t": "h2",
+          "x": "Editable PDF to PowerPoint is not a browser job"
+        },
+        {
+          "t": "p",
+          "x": "Producing a .pptx where every heading is a real text box, every bullet is a real bullet and every chart is a real shape means reconstructing a slide layout from glyph coordinates. That is harder than PDF-to-Word, and Word-level results are already imperfect. It needs heavyweight layout analysis, which is why it runs in a desktop application or on a server, never in a browser tab."
+        },
+        {
+          "t": "p",
+          "x": "That is exactly where [PDF to PowerPoint](/tools/pdf-to-ppt) runs. Unlike most tools on this site, it is not a browser job: the file is uploaded over a secure connection, converted on our server, and deleted the moment it finishes. A free account gets 5 server conversions a month, Pro and Lifetime 300, the API plan 5,000, with a 100 MB limit and two minutes per file."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-ppt",
+          "x": "Rebuild a deck from a PDF, with the text in real text boxes you can edit."
+        },
+        {
+          "t": "p",
+          "x": "Set your expectations with the word reconstruction. Text lands in boxes positioned where the glyphs sat, which is right far more often than not, but a dense slide with overlapping graphics will need tidying. Judge it on a page or two before you convert a 60-slide deck. Your routes, in the order worth trying:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Find the original.** If the PDF was exported from PowerPoint, Keynote or Google Slides, the source deck exists somewhere. Ask for it. This is by far the best outcome and people forget to try.",
+            "**Convert it.** [PDF to PowerPoint](/tools/pdf-to-ppt) above, or Adobe Acrobat Pro via File → Export To → Microsoft PowerPoint Presentation. Both produce genuine editable text boxes; Acrobat is a paid subscription, ours is free for the first 5 files a month.",
+            "**Rebuild it.** [Extract the text](/blog/from-pdf/pdf-to-text), paste it into your own template, and re-create the visuals. For a 12-slide deck this is often faster than cleaning up a bad conversion, and the result matches your branding."
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Watch what you are actually being given. Some tools place a picture of each page on a slide and call it a conversion. That is a perfectly good technique, covered below, it is just not what \"editable\" means. Open the result and try clicking a heading: if you cannot put a cursor in it, no conversion happened."
+        },
+        {
+          "t": "h2",
+          "x": "The method that always works: one image per slide"
+        },
+        {
+          "t": "p",
+          "x": "If you need to present a PDF, annotate it live, or drop three pages of a report into an existing deck, images are the right answer. The text is not editable, but it looks exactly like the PDF, works on every machine, and takes about two minutes."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Set the slide size first",
+              "x": "In PowerPoint: **Design → Slide Size → Custom Slide Size**. Widescreen 16:9 is 13.333 × 7.5 inches; Standard 4:3 is 10 × 7.5 inches. A4 pages are much taller than either, so decide now whether you want letterboxed pages or a cropped fit."
+            },
+            {
+              "h": "Export the PDF pages as images",
+              "x": "Use the [PDF to JPG converter](/tools/pdf-to-jpg) and choose 150 DPI for screen presentation or 200 DPI if the deck will be printed. 300 DPI produces enormous files for no visible benefit on a projector."
+            },
+            {
+              "h": "Check the filenames sort correctly",
+              "x": "You want page-01, page-02 … page-10, not page-1, page-2 … page-10, which sorts 1, 10, 2. Most exporters zero-pad; verify before importing."
+            },
+            {
+              "h": "Import them all at once",
+              "x": "**Insert → Photo Album → New Photo Album → File/Disk**, select every image, set **Picture layout** to \"Fit to slide\", then Create. PowerPoint builds one slide per image in a single step."
+            },
+            {
+              "h": "Delete the title slide",
+              "x": "Photo Album adds a title slide at the front. Remove it unless you want it."
+            },
+            {
+              "h": "Add anything live on top",
+              "x": "Titles, callouts, arrows and a transparent rectangle to dim the parts you are not discussing. The page image is just a background now."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Export every PDF page as an image at the DPI you choose."
+        },
+        {
+          "t": "h2",
+          "x": "The other applications"
+        },
+        {
+          "t": "table",
+          "caption": "PDF to slides, by application.",
+          "head": [
+            "Application",
+            "Direct PDF import",
+            "What to do"
+          ],
+          "rows": [
+            [
+              "PowerPoint (Windows/Mac)",
+              "No",
+              "Insert → Photo Album with page images, or Insert → Object for a single static page"
+            ],
+            [
+              "Apple Keynote",
+              "Partial",
+              "Dragging a PDF in places it as one object; export page images and use Insert → Choose for one per slide"
+            ],
+            [
+              "Google Slides",
+              "No",
+              "File → Import slides accepts .pptx and Slides only. Upload page images and Insert → Image → Upload from computer"
+            ],
+            [
+              "Adobe Acrobat Pro",
+              "Yes, editable",
+              "File → Export To → Microsoft PowerPoint Presentation"
+            ],
+            [
+              "LibreOffice Impress",
+              "No",
+              "LibreOffice opens PDFs in Draw, not Impress. Export images and place them"
+            ],
+            [
+              "Canva",
+              "Yes, as images",
+              "Upload the PDF; each page arrives as a picture, not as editable text"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "PowerPoint has one more trick worth knowing: **Insert → Object → Create from File → Adobe Acrobat Document**. It embeds the PDF as an OLE object you can double-click to open during a presentation. Only the first page shows as a thumbnail, and it breaks if the viewer does not have a PDF application registered, so it is best kept for internal decks."
+        },
+        {
+          "t": "h2",
+          "x": "Only some pages?"
+        },
+        {
+          "t": "p",
+          "x": "Do not convert 90 pages to get 4. [Extract the pages you need](/tools/extract-pages) into a small PDF first, then export those to images. Fewer files to sort, a much smaller deck, and no risk of an internal page appearing in a client presentation. If you need the opposite, everything except a few pages, [delete pages](/tools/delete-pages) instead."
+        },
+        {
+          "t": "h2",
+          "x": "Keeping the deck a sensible size"
+        },
+        {
+          "t": "p",
+          "x": "Forty page images at 200 DPI will produce a .pptx of 60 MB or more, which is past the [email limits](/blog/compress/reduce-pdf-file-size-for-email) of every major service. Two fixes: export at 150 DPI instead of 200, which roughly halves it, and run PowerPoint own compressor, select any image, then **Picture Format → Compress Pictures → Apply to all pictures**, choosing 150 ppi. If the deck is only ever going to be shown from a laptop, that is more than enough."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I convert a PDF to PowerPoint for free?",
+          "a": "Yes, for the first 5 files a month. PDF to PowerPoint runs on our server and returns editable text boxes, and a free account includes 5 server conversions a month. Beyond that, the image-per-slide method costs nothing and always works. If the PDF was exported from a deck, finding that original is still the better answer."
+        },
+        {
+          "q": "How do I insert a PDF into a PowerPoint slide?",
+          "a": "For a static page, export the page as an image and insert it. For a whole document, use Insert → Photo Album with all the page images. For an openable copy, Insert → Object → Create from File embeds the PDF, showing the first page as a thumbnail."
+        },
+        {
+          "q": "What DPI should I export PDF pages at for slides?",
+          "a": "150 DPI for on-screen presentation, which is already more than a 1080p projector can show. 200 DPI if the deck will be printed as handouts. 300 DPI multiplies the file size for no visible gain on a screen."
+        },
+        {
+          "q": "Can Google Slides open a PDF?",
+          "a": "No. File → Import slides accepts only .pptx, .ppt and other Google Slides files. Convert the PDF pages to images and insert them with Insert → Image → Upload from computer, one per slide."
+        },
+        {
+          "q": "Why does my converted deck have text in the wrong place?",
+          "a": "The converter inferred text boxes from glyph positions and guessed wrong, which is normal for anything with columns, overlapping graphics or non-rectangular layouts. Either fix the boxes by hand, or switch to the image-per-slide method, which never misplaces anything."
+        }
+      ],
+      "relatedTools": [
+        "pdf-to-ppt",
+        "pdf-to-jpg",
+        "extract-pages"
+      ],
+      "relatedPosts": [
+        "pdf-to-text",
+        "pdf-to-jpg",
+        "pdf-to-word"
+      ]
+    }
+  ]
+}

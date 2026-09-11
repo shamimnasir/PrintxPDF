@@ -18,7 +18,11 @@
     // lifetime buys a one-time payment, so this bound is what keeps it affordable to serve
     "QUOTA_LIFETIME": "300",
     "QUOTA_API": "5000",
-    "MAX_UPLOAD_BYTES": "104857600"
+    "MAX_UPLOAD_BYTES": "104857600",
+    // Where the admin panel publishes. The token that authorises it is a secret, not a var.
+    "GITHUB_OWNER": "shamimnasir",
+    "GITHUB_REPO": "PrintxPDF",
+    "GITHUB_BRANCH": "main"
   },
   "kv_namespaces": [{ "binding": "KV", "id": "e029ac90bf574cdb9076d568b098b513" }],
   "ratelimits": [

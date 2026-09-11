@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Area, Card, Color, ListEditor, Num, Photo, Text, Toggle } from './fields'
+import { AdminSignIn } from './AdminSignIn'
 import { clearHits, discardDraft, exportConfig, getHits, importCarriesCode, importConfig, setPasscode, updateConfig, type SiteConfig } from './config'
 import { inkIsTooLight } from './RuntimeEffects'
 import { useToast } from '../components/ui/Toast'
@@ -547,7 +548,8 @@ export function Data({ cfg }: P) {
   const json = exportConfig()
   return (
     <>
-      <Card title="Publish your changes" desc="This site is static, so the panel saves a draft in your browser. To make changes live for every visitor, publish the config file into the repository.">
+      <AdminSignIn />
+      <Card title="Publish by hand" desc="The fallback, for when the server is not reachable or publishing is not configured. Signing in above and publishing does all of this for you.">
         <ol style={{ fontWeight: 600, paddingLeft: '1.2rem', lineHeight: 1.8 }}>
           <li>Download <code className="inline">site-config.json</code> below.</li>
           <li>Replace <code className="inline">public/site-config.json</code> in the repository with it.</li>

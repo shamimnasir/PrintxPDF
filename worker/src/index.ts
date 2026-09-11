@@ -1,4 +1,5 @@
 /** printxpdf-api: router, CORS, and the error envelope. Handlers live in the sibling modules. */
+import * as admin from './admin'
 import * as billing from './billing'
 import { Converter } from './container'
 import { matchOrigin, preflight, withCors } from './cors'
@@ -13,6 +14,10 @@ declare global {
   interface Env {
     /** Set with `wrangler secret put STRIPE_SECRET_KEY`; billing returns 503 until then. */
     STRIPE_SECRET_KEY?: string
+    /** Admin panel. Publishing returns 503 until all of these exist. */
+    ADMIN_PASSWORD_HASH?: string
+    ADMIN_SECRET?: string
+    GITHUB_TOKEN?: string
   }
 }
 
@@ -42,6 +47,11 @@ async function route(req: Request, env: Env, ctx: ExecutionContext, url: URL, or
     if (!isKind(kind)) throw new ApiError(404, 'not_found', `Unknown conversion '${kind}'`)
     return method === 'POST' ? handleConvert(req, env, ctx, kind) : methodNotAllowed('POST')
   }
+  if (pathname === '/admin/login') return method === 'POST' ? admin.login(req, env) : methodNotAllowed('POST')
+  if (pathname === '/admin/me') return method === 'GET' ? admin.me(req, env) : methodNotAllowed('GET')
+  if (pathname === '/admin/publish') return method === 'POST' ? admin.publish(req, env) : methodNotAllowed('POST')
+  if (pathname === '/admin/signout-everywhere') return method === 'POST' ? admin.signOutEverywhere(req, env) : methodNotAllowed('POST')
+
   if (pathname === '/fetch') return method === 'GET' ? handleFetch(req, env, url) : methodNotAllowed('GET')
   if (pathname === '/image') return method === 'GET' ? handleImage(req, env, url) : methodNotAllowed('GET')
 

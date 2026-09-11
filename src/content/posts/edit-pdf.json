@@ -1,0 +1,1012 @@
+{
+  "slug": "edit",
+  "name": "Editing a PDF you already have",
+  "title": "How to edit, crop, fill in and compare a PDF",
+  "metaTitle": "How to Edit a PDF Without the Original File",
+  "metaDescription": "Change a word, trim the margins, fill in a form or find what changed between two drafts. Four guides to editing a PDF when the original document is gone.",
+  "intro": "These four guides cover the awkward case: you have a PDF, you need it different, and you do not have the Word or InDesign file it was exported from. That case has real limits. A PDF stores each page as a list of drawing instructions, so a tool can restyle a word, cover a block, shrink the visible area of a page or fill a named field, but nothing can make a paragraph rewrap the way a word processor does. Knowing which edits are cheap and which are impossible saves you an hour of fighting the file.",
+  "answer": "Editing a PDF means changing the file you already have, not the document it came from. You can correct text, add lines, crop pages, fill form fields and compare two versions. You cannot reflow a paragraph, because a PDF stores text as positioned runs rather than as flowing prose.",
+  "primaryKeyword": "how to edit a pdf",
+  "entities": [
+    "Adobe Acrobat",
+    "macOS Preview",
+    "Microsoft Word",
+    "LibreOffice Draw",
+    "AcroForm",
+    "XFA",
+    "CropBox",
+    "PDF 2.0"
+  ],
+  "icon": "✎",
+  "tools": [
+    "edit-pdf",
+    "crop-pdf",
+    "pdf-forms",
+    "compare-pdf"
+  ],
+  "posts": [
+    {
+      "slug": "how-to-edit-a-pdf",
+      "cluster": "edit",
+      "title": "How to edit a PDF, and what editing a PDF cannot do",
+      "metaTitle": "How to Edit a PDF (and What You Cannot Edit)",
+      "metaDescription": "A PDF stores positioned text runs, not paragraphs. Correct a word, add a line or cover a block in your browser, and learn when to go back to the source file.",
+      "published": "2026-02-06",
+      "updated": "2026-08-19",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "how to edit a pdf",
+      "secondaryKeywords": [
+        "edit pdf text free",
+        "change text in a pdf",
+        "edit a pdf without acrobat",
+        "edit pdf in browser",
+        "why can i not edit my pdf"
+      ],
+      "entities": [
+        "Adobe Acrobat",
+        "macOS Preview",
+        "Microsoft Word",
+        "LibreOffice Draw",
+        "PostScript",
+        "Font subsetting"
+      ],
+      "answer": "Open the PDF in an editor, click the text you want to change, and type over it. A PDF stores text as positioned runs rather than as paragraphs, so you can correct a word, add a line or cover a block, but you cannot reflow a paragraph. For bigger changes, edit the source document and export a fresh PDF.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A PDF is not a document in the way a word processor file is. Each page is a list of drawing instructions: put this glyph 72 points from the left edge and 698 points from the bottom, in this font, at 11 points, then the next glyph 6.2 points further along. There are no paragraphs in the file, no line breaks, and no rule that says one line belongs with the line under it. An editor reconstructs plausible lines and blocks by looking at where the glyphs sit. That is why some edits take five seconds and others are simply not possible."
+        },
+        {
+          "t": "h2",
+          "x": "What editing can and cannot do"
+        },
+        {
+          "t": "table",
+          "caption": "Common edits, and what actually happens inside the file.",
+          "head": [
+            "You want to",
+            "Works?",
+            "What happens"
+          ],
+          "rows": [
+            [
+              "Fix a typo in a word",
+              "Yes",
+              "The run of glyphs is redrawn with your text, same font, same position"
+            ],
+            [
+              "Change a date, a price or a name",
+              "Yes",
+              "Same as a typo, as long as the replacement is a similar length"
+            ],
+            [
+              "Add a line of new text",
+              "Yes",
+              "A new text object is drawn on top of the existing page"
+            ],
+            [
+              "Cover something with a white box",
+              "Visually only",
+              "A filled rectangle is drawn over it. The text underneath is untouched"
+            ],
+            [
+              "Delete a sentence and close the gap",
+              "Partly",
+              "The rest of the paragraph does not move up. You are left with a hole"
+            ],
+            [
+              "Add two sentences mid-paragraph",
+              "No",
+              "Nothing rewraps. The new text overruns the margin or collides with the line below"
+            ],
+            [
+              "Change the font of a whole document",
+              "No",
+              "Every glyph would need repositioning. No editor attempts this"
+            ],
+            [
+              "Move a page break",
+              "No",
+              "A page break is not a marker, it is just where one page object ends and the next begins"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Editing text, step by step"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the file",
+              "x": "Go to [edit PDF](/tools/edit-pdf) and drop the PDF in. It is read inside your browser tab, so nothing is uploaded, no account is needed and no quota applies."
+            },
+            {
+              "h": "Check that there is text at all",
+              "x": "Drag your mouse across a line. If a highlight follows the words, the page has real text. If nothing highlights, the page is a picture of text and you need [OCR](/tools/ocr-pdf) before any of this applies."
+            },
+            {
+              "h": "Click the text you want to change",
+              "x": "Most editors give you an editable box around one line or a short run, not the whole paragraph. That box is the honest boundary of what can move."
+            },
+            {
+              "h": "Keep the replacement a similar length",
+              "x": "Changing `12 March` to `14 March` fits. Changing it to `the second Tuesday in April` pushes the line into the margin. Shorten the wording, or put the long version on a new line of its own."
+            },
+            {
+              "h": "Add rather than rewrite",
+              "x": "For anything longer than a phrase, draw a fresh text box in white space or add a short note at the foot of the page. A deliberate-looking addition reads better than a mangled paragraph."
+            },
+            {
+              "h": "Download under a new name",
+              "x": "Save as `Contract_v2.pdf`, not over the original. You will want the untouched file to compare against if something looks wrong later."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "edit-pdf",
+          "x": "Change text, add a line or white out a block, entirely in your browser."
+        },
+        {
+          "t": "h2",
+          "x": "The font problem nobody warns you about"
+        },
+        {
+          "t": "p",
+          "x": "PDFs embed fonts as subsets. Only the glyphs the document actually uses are stored, which is why a 40-page report can carry a full typeface family in under 200 KB. The consequence appears the moment you type a character the document never contained. An accented letter, a pound or euro sign, a curly apostrophe, or an em dash may simply have no glyph in the embedded subset."
+        },
+        {
+          "t": "p",
+          "x": "What you get then depends on the tool: an empty box, a blank space, or a silent fallback to a different font that does not match the rest of the line. The fallback is the dangerous one, because at page width it looks almost right. Either retype the whole line so one consistent font is substituted across it, or reword to avoid the missing character."
+        },
+        {
+          "t": "tip",
+          "x": "Test the character before you commit to the edit. Type it once, zoom to 400 percent, and look at it next to its neighbours. A substituted glyph is obvious close up and nearly invisible at normal zoom."
+        },
+        {
+          "t": "h2",
+          "x": "Scanned pages are pictures, not text"
+        },
+        {
+          "t": "p",
+          "x": "If the PDF came from a scanner, a photocopier or a phone camera, every page is one image. There is nothing to click into, because there are no glyphs, only pixels arranged to look like glyphs. Running [OCR](/tools/ocr-pdf) adds an invisible text layer underneath so the page becomes searchable and copyable, but it does not convert the picture into editable type. The visible words are still part of the image."
+        },
+        {
+          "t": "p",
+          "x": "Editing a scan honestly means covering the old value with a patch the colour of the paper and typing a new value on top. It rarely matches: a scan has a slight rotation, a paper tone that is not pure white, and grain that your crisp new text does not have. For a form, this is fine. For anything a reader will scrutinise, it looks exactly like what it is."
+        },
+        {
+          "t": "warn",
+          "x": "Covering text with a box hides it from your eyes, not from the file. The original characters stay in the page content stream and can still be selected, copied, searched or extracted by anyone who opens the file with the right tool. If the goal is to remove information, use [redact PDF](/tools/redact-pdf), which deletes the underlying content instead of drawing over it."
+        },
+        {
+          "t": "h2",
+          "x": "When to stop editing and go back to the source"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**You still have the original.** A Word, Pages, Google Docs or InDesign file that produced this PDF is always the better place to make a change. Edit it, export again, and you are finished before you would have finished fighting the PDF.",
+            "**The change is bigger than a line.** Rewriting a section, moving a table, inserting a paragraph mid-page: all of these need text to reflow, and reflow is the one thing a PDF page cannot do.",
+            "**You have no original but the document is mostly prose.** Convert it with [PDF to Word](/blog/from-pdf/pdf-to-word), edit properly there, and export a new PDF. The conversion reconstructs paragraphs by guessing from glyph positions, so check tables, columns and headers before you trust it.",
+            "**The file is a form.** Do not edit it, fill it. See [filling in a PDF form](/blog/edit/how-to-fill-in-a-pdf-form).",
+            "**You only want to trim what shows.** That is [cropping](/blog/edit/how-to-crop-a-pdf), not editing, and it is much less destructive."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Other ways to edit a PDF"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tool",
+            "Good at",
+            "Falls down on"
+          ],
+          "rows": [
+            [
+              "Adobe Acrobat Pro",
+              "The most capable text editing, and it will rewrap within a paragraph it recognises",
+              "Paid subscription, and it still cannot reflow text across a page boundary"
+            ],
+            [
+              "LibreOffice Draw",
+              "Free and offline, opens any PDF as movable objects",
+              "Treats each line as a separate object and re-embeds fonts on export, so the layout usually shifts a little"
+            ],
+            [
+              "Microsoft Word",
+              "Opens a PDF by converting it into a document you can genuinely rewrite",
+              "The conversion is a reconstruction. Tables, multi-column layouts and headers frequently come out wrong"
+            ],
+            [
+              "macOS Preview",
+              "Annotations: notes, shapes, freehand, signatures, highlighting",
+              "Cannot change existing text at all, in any version"
+            ],
+            [
+              "A browser editor",
+              "Word-level fixes, added text and whiteout patches with nothing to install",
+              "The same reflow limit as everything else, because it is a limit of the format"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "None of the browser tools in this cluster upload your file. The PDF is read in the tab, changed in memory and written back out by your own machine. Close the tab and nothing remains."
+        },
+        {
+          "t": "h2",
+          "x": "Decide which job you actually have"
+        },
+        {
+          "t": "p",
+          "x": "Correcting a wrong figure in an invoice you cannot regenerate is a two-minute browser edit and always worth doing. Rewriting a page of a report is a document job, and the PDF is the wrong file to be holding while you do it. Most of the frustration people have with PDF editors comes from attempting the second job with tools built for the first. If what you really need is to know what somebody else changed between two versions, do not hunt for it by eye: [compare the two files](/blog/edit/how-to-compare-two-pdfs)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Why can I not edit the text in my PDF?",
+          "a": "Either the page is an image with no text in it, which happens with every scan, or the file is password-restricted against changes. Try selecting a line with your mouse: if nothing highlights, run OCR first. If a highlight appears but the editor refuses, the document has editing restrictions applied."
+        },
+        {
+          "q": "Can I add a paragraph to the middle of a PDF page?",
+          "a": "Not in a way that pushes the following text down. A PDF has no paragraph structure to reflow, so new text is drawn on top of the page and will overlap whatever is already there. Add it in white space, or edit the source document and export again."
+        },
+        {
+          "q": "Why does my edited text look like a different font?",
+          "a": "PDFs embed only the glyphs the document uses. If you type a character that was never in the file, such as an accented letter or a currency symbol, there is no glyph for it and the tool substitutes another font. Retype the whole line so the substitution is at least consistent."
+        },
+        {
+          "q": "Is putting a white box over text the same as deleting it?",
+          "a": "No. The rectangle is drawn over the text, and the text is still in the page content, still selectable and still copyable. Anyone can recover it. Use a redaction tool, which removes the underlying content, for anything confidential."
+        },
+        {
+          "q": "How do I edit a scanned PDF?",
+          "a": "You cannot edit the visible words, because they are pixels. Run OCR to add a searchable text layer, then cover the old value with a patch and type over it. The result never quite matches the scan, so use this for filling gaps rather than for altering a document that will be examined."
+        }
+      ],
+      "relatedTools": [
+        "edit-pdf",
+        "redact-pdf",
+        "ocr-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-crop-a-pdf",
+        "how-to-fill-in-a-pdf-form",
+        "pdf-to-word"
+      ]
+    },
+    {
+      "slug": "how-to-crop-a-pdf",
+      "cluster": "edit",
+      "title": "How to crop a PDF, and why cropping hides nothing",
+      "metaTitle": "How to Crop a PDF (and Why It Hides Nothing)",
+      "metaDescription": "Trim wide margins and scanner edges from a PDF in your browser. Cropping sets a smaller CropBox, it does not delete what is outside, so it hides nothing.",
+      "published": "2026-03-17",
+      "updated": "2026-07-30",
+      "readMinutes": 6,
+      "intent": "howto",
+      "primaryKeyword": "how to crop a pdf",
+      "secondaryKeywords": [
+        "crop pdf margins",
+        "remove white border from pdf",
+        "crop scanned pdf edges",
+        "crop pdf free online",
+        "trim pdf page size"
+      ],
+      "entities": [
+        "CropBox",
+        "MediaBox",
+        "TrimBox",
+        "Adobe Acrobat",
+        "macOS Preview",
+        "ISO 32000"
+      ],
+      "answer": "Open the PDF in a crop tool, drag the frame to the area you want to keep, choose whether it applies to one page or all of them, and download. Cropping sets a smaller CropBox, the rectangle a viewer draws. Everything outside it stays in the file, so cropping never hides sensitive content.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Cropping a PDF does not cut anything out. Every page carries at least two rectangles: the MediaBox, which is the sheet of paper the page was laid out on, and the CropBox, which is the part a viewer chooses to draw. Cropping sets a smaller CropBox. The ink outside it is still in the file, still selectable by anything that ignores the box, and one instruction away from coming back."
+        },
+        {
+          "t": "h2",
+          "x": "The page boxes, in plain terms"
+        },
+        {
+          "t": "table",
+          "caption": "Every page has a MediaBox. The rest are optional and mostly matter to commercial printers.",
+          "head": [
+            "Box",
+            "What it means",
+            "Who uses it"
+          ],
+          "rows": [
+            [
+              "MediaBox",
+              "The full sheet the page was designed on. A4 is 595 x 842 points",
+              "Required. Every PDF page has one"
+            ],
+            [
+              "CropBox",
+              "The region a viewer displays and prints. Defaults to the MediaBox",
+              "This is the one cropping changes"
+            ],
+            [
+              "BleedBox",
+              "Slightly larger than the finished page, so ink can run off the trimmed edge",
+              "Print production"
+            ],
+            [
+              "TrimBox",
+              "The finished page after the guillotine has cut it",
+              "Print production"
+            ],
+            [
+              "ArtBox",
+              "The meaningful artwork, ignoring surrounding white space",
+              "Rarely set, rarely honoured"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "PDF measures everything in points, where 72 points is one inch. A4 is 595 x 842 points and US Letter is 612 x 792, which is why an A4 document printed on Letter loses a strip from the bottom. Most crop tools show you the numbers; taking 40 points off each side of an A4 page leaves 515 x 762, roughly 18 cm by 27 cm."
+        },
+        {
+          "t": "h2",
+          "x": "Cropping, step by step"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the file",
+              "x": "Go to [crop PDF](/tools/crop-pdf) and drop the PDF in. Everything happens in your browser tab: the file is not uploaded, and no quota applies."
+            },
+            {
+              "h": "Set the frame from a busy page, not the cover",
+              "x": "A frame measured on a sparse title page will clip a heading or a page number on a denser one. Find the page with the widest table or the longest header and set the frame there."
+            },
+            {
+              "h": "Leave a margin of 6 to 10 points beyond the ink",
+              "x": "Cropping flush to the text looks cramped in print and risks clipping the descender of a `g` or a `y`. A few points of air costs nothing."
+            },
+            {
+              "h": "Choose the scope",
+              "x": "All pages, a page range, or odd and even pages separately. Odd and even matters for a scanned book, where the gutter shadow falls on the right of one page and the left of the next."
+            },
+            {
+              "h": "Check the extremes before you commit",
+              "x": "Look at page 1, the last page, and any page with a full-width image or a landscape table. Those are where a uniform crop goes wrong."
+            },
+            {
+              "h": "Download the cropped copy",
+              "x": "A new file is written and the original on your disk is unchanged, so you can redo the crop with different numbers as many times as you like."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Trim margins and scan edges from every page at once, without uploading the file."
+        },
+        {
+          "t": "h2",
+          "x": "Cropping is not hiding"
+        },
+        {
+          "t": "warn",
+          "x": "Resetting the CropBox back to the MediaBox is a single operation available in many free tools, and every pixel and every character you cropped away reappears intact. Text outside the crop can also be selected and copied without changing anything at all, because it is still in the page content stream. Cropping is a display setting, not a deletion."
+        },
+        {
+          "t": "p",
+          "x": "This catches people out in specific, repeatable ways. A letterhead cropped off a reused document still carries the home address. A running header cropped away still carries the internal project name. A bank statement cropped to remove the balance column still contains every figure. If the reason you are cropping is that something in the margin should not be seen by the recipient, cropping is the wrong tool. Use [redact PDF](/tools/redact-pdf), which removes the content itself, and see [redacting a PDF properly](/blog/privacy/redact-pdf-properly) for how to check that it worked."
+        },
+        {
+          "t": "h2",
+          "x": "What people crop, and why"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Scanner edges.** A black or grey border where the lid was open, or a strip of desk in a phone photo. This is the single most common reason.",
+            "**The gutter shadow of a book scan**, a dark curved band down the inner edge of each page that also wastes toner when printed.",
+            "**Wide journal margins.** Academic PDFs often carry 5 cm of white on both sides. Crop them and the text is noticeably larger on a phone or an e-reader.",
+            "**A letterhead or footer** on a document being reused for another purpose.",
+            "**Slide handouts** exported with a thick white border around each slide.",
+            "**A receipt printed onto A4**, where the actual content occupies the top eighth of the page."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cropping does not make the file smaller"
+        },
+        {
+          "t": "p",
+          "x": "Hide two thirds of every page and the file size barely moves, because the glyphs and the image data outside the box are all still stored. A 40 MB scan cropped hard is still about 40 MB. If size is what you are after, [compress](/tools/compress-pdf) it instead."
+        },
+        {
+          "t": "p",
+          "x": "There is one exception worth knowing. Some compressors re-render each page image to the visible area and genuinely discard the rest, in which case cropping before compressing does save real space. You cannot tell in advance which behaviour yours has, so just look at the output size: if a heavy crop plus compression beats compression alone, your tool rasterises to the crop box."
+        },
+        {
+          "t": "h2",
+          "x": "Printing a cropped PDF"
+        },
+        {
+          "t": "p",
+          "x": "A cropped page is a smaller page, and your printer driver has to decide what to do with it on an A4 sheet. It will either centre it with a wide border or scale it up to fill the paper. Scaling up is normally what you want, since making the text bigger was usually the point, but it enlarges scanner noise and any grain along with the words."
+        },
+        {
+          "t": "note",
+          "x": "Choose the behaviour deliberately in the print dialog rather than accepting the default. **Fit to printable area** scales the cropped page up; **Actual size** or **100%** keeps it at its cropped dimensions and leaves a border. If you are printing to save paper, see [fitting more on a page](/blog/save-ink/fit-more-on-a-page)."
+        },
+        {
+          "t": "h2",
+          "x": "Straighten first, crop second"
+        },
+        {
+          "t": "p",
+          "x": "A scan sitting 1.5 degrees off square cannot be cropped cleanly. Any rectangle tight enough to cut the black edge from one side will clip text on the other, because the text is not parallel to the frame. Deskew the pages first, or, if the file came from a phone scanning app, simply re-capture the page with the app holding the edges square. Two minutes of rescanning beats twenty minutes of crop arithmetic."
+        },
+        {
+          "t": "tip",
+          "x": "If you plan to do both, run [OCR](/tools/ocr-pdf) before cropping. Most OCR engines read the full page image and ignore the crop box, so cropping first does not stop them picking up a margin note. Cropping afterwards leaves the recognised text layer intact."
+        },
+        {
+          "t": "h2",
+          "x": "Other ways to crop"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Route",
+            "How",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "macOS Preview",
+              "Select the rectangle with the marquee tool, then press ⌘K",
+              "Applies to the current page only unless you select all thumbnails first"
+            ],
+            [
+              "Adobe Acrobat Pro",
+              "Edit PDF, then Crop Pages, with numeric margins and a page range",
+              "Lets you set the boxes individually, and shows the point values"
+            ],
+            [
+              "A browser crop tool",
+              "Drag a frame, apply to all pages, download",
+              "Works the same on Windows, macOS, Linux and ChromeOS"
+            ],
+            [
+              "Print to PDF with scaling",
+              "Not really cropping, it re-renders the page",
+              "Loses links, bookmarks and form fields. Avoid for anything structured"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Whichever route you take, open the result and page through it once at full width before you send it. A crop is uniform and a document is not, and the page that breaks the frame is almost always one you did not look at."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Does cropping a PDF delete the content outside the crop?",
+          "a": "No. Cropping sets a smaller CropBox, which is only the region a viewer draws. The text and images outside it remain in the file and can be restored by resetting the box, or copied out without restoring anything at all."
+        },
+        {
+          "q": "Can I use cropping to hide confidential information?",
+          "a": "No, and this is the most important thing to know about cropping. Hidden content is still present and recoverable. Use a redaction tool that removes the underlying text and image data, then check the result by selecting all the text on the page."
+        },
+        {
+          "q": "How do I crop every page of a PDF at once?",
+          "a": "Set the frame on the page with the widest content, then choose the apply-to-all-pages option before downloading. For a scanned book, crop odd and even pages separately, because the gutter shadow sits on opposite sides."
+        },
+        {
+          "q": "Why is my cropped PDF the same file size?",
+          "a": "Because nothing was removed. The glyphs and image data outside the crop are still stored. To reduce size, compress the file. Some compressors re-render pages to the visible area, which is the only case where cropping helps the size."
+        },
+        {
+          "q": "How do I crop a PDF on a Mac?",
+          "a": "Open it in Preview, drag a selection rectangle with the marquee tool, and press Command+K. It affects only the current page unless you show thumbnails and select all pages first, which is easy to forget."
+        }
+      ],
+      "relatedTools": [
+        "crop-pdf",
+        "redact-pdf",
+        "compress-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-edit-a-pdf",
+        "redact-pdf-properly",
+        "how-to-ocr-a-scanned-pdf"
+      ]
+    },
+    {
+      "slug": "how-to-fill-in-a-pdf-form",
+      "cluster": "edit",
+      "title": "How to fill in a PDF form, fillable or flat",
+      "metaTitle": "How to Fill In a PDF Form (Fillable or Scanned)",
+      "metaDescription": "Tell a real fillable form from a scan that only looks like one, fill in either, and flatten your answers so they do not arrive blank at the other end.",
+      "published": "2026-04-14",
+      "updated": "2026-08-31",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "how to fill in a pdf form",
+      "secondaryKeywords": [
+        "fillable pdf form",
+        "cannot type in pdf form",
+        "fill in a scanned form",
+        "flatten pdf form answers",
+        "pdf form fields not showing"
+      ],
+      "entities": [
+        "AcroForm",
+        "XFA",
+        "Adobe Acrobat Reader",
+        "macOS Preview",
+        "FDF",
+        "PDF 2.0"
+      ],
+      "answer": "Click where an answer belongs. If a cursor appears and Tab jumps to the next box, the file has real form fields: type into them and save. If nothing responds, the page is a flat picture of a form, so add your own text boxes on top. Flatten the result before sending it, or your answers may arrive blank.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Two files can look identical on screen and be completely different documents. One has form fields: named boxes that the PDF itself defines, each with a type, a value and somewhere to store what you type. The other is a picture of a form, with the lines and boxes drawn as artwork and nothing at all to click. What you do next depends entirely on which one you have, and there is a test that takes two seconds."
+        },
+        {
+          "t": "h2",
+          "x": "The two-second test"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Click where an answer should go. A real field shows a text cursor and usually tints itself pale blue or grey.",
+            "Press **Tab**. In a real form, focus jumps to the next field in the order the designer set. In a flat one, nothing moves.",
+            "Try to select the label text with your mouse. If the words `Full name` highlight, the page has real text, though that on its own does not mean it has fields.",
+            "Look at the top of the viewer. Most show a coloured bar saying the document contains fillable form fields, or asking you to fill out the form."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Three kinds of form"
+        },
+        {
+          "t": "table",
+          "caption": "Identify the kind first. Everything else follows from it.",
+          "head": [
+            "Kind",
+            "How you recognise it",
+            "How you fill it"
+          ],
+          "rows": [
+            [
+              "AcroForm",
+              "Fields highlight, Tab moves between them. The standard form type since 1996",
+              "Type into the fields, then save or download"
+            ],
+            [
+              "XFA form",
+              "A grey page reading \"Please wait... if this message is not eventually replaced\"",
+              "Adobe Acrobat or Reader on a desktop computer. Nothing else can open it"
+            ],
+            [
+              "Flat form",
+              "Nothing responds to a click. Usually a scan, often very slightly crooked",
+              "Draw your own text on top of the page image"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "XFA deserves a warning of its own. It was an Adobe extension used by a number of government and banking forms in the 2000s, it was removed from the PDF 2.0 standard, and no browser, no phone, no macOS Preview and no third-party viewer renders it. If you see that grey message, the only route is Adobe Acrobat Reader on Windows or macOS. There is no workaround and no online tool that fixes it."
+        },
+        {
+          "t": "h2",
+          "x": "Filling a real fillable form"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the form",
+              "x": "Go to [PDF forms](/tools/pdf-forms) and drop the file in. The fields are detected and outlined so you can see how many there are. The file stays in your browser and is never uploaded."
+            },
+            {
+              "h": "Work in Tab order, not in reading order",
+              "x": "The designer set a tab sequence. Following it is the reliable way to avoid missing a field tucked into a corner, which is the usual reason a form comes back rejected."
+            },
+            {
+              "h": "Watch the field types",
+              "x": "A text field takes anything. A checkbox toggles. A radio group allows exactly one of several. A dropdown offers a fixed list, and a value you type that is not on the list is discarded silently by some viewers."
+            },
+            {
+              "h": "Respect the field limits",
+              "x": "Text fields can carry a character limit or a comb format, one character per little box. If your entry truncates at 20 characters, that is the field doing what it was told, not the tool failing."
+            },
+            {
+              "h": "Check every required field",
+              "x": "Required fields are usually outlined in red once you try to submit or print. Look for them before you finish, because some viewers never surface the warning at all."
+            },
+            {
+              "h": "Download the filled copy",
+              "x": "Keep this version. It is the one you can still correct."
+            },
+            {
+              "h": "Flatten a second copy for sending",
+              "x": "See the section below. This is the step most people skip and it is the one that causes forms to arrive empty."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "Fill in form fields in your browser, with nothing uploaded and no sign-in."
+        },
+        {
+          "t": "h2",
+          "x": "Filling a flat form or a scan"
+        },
+        {
+          "t": "p",
+          "x": "Here you are not filling fields, because there are none. You are drawing text on top of a picture, using [edit PDF](/tools/edit-pdf) or the text tool in any annotator. The mechanics are easy; the difference between a form that looks filled in and one that looks defaced is entirely in the details."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Zoom to at least 200 percent** before placing each entry, so the text sits on the ruled line rather than floating above or straddling it.",
+            "**Match the size roughly.** On a page scanned at its original dimensions, 10 to 12 point sits about right against printed form labels.",
+            "**Use a plain font.** A handwriting font on a printed form reads as an attempt to fake handwriting, which is worse than obvious typing.",
+            "**Use black, not dark grey.** Scanned forms are often photocopied again at the other end, and grey text at 10 point can vanish.",
+            "**For a signature, use [sign PDF](/tools/sign-pdf)** rather than typing your name in a script font. See [how to sign a PDF](/blog/sign/how-to-sign-a-pdf) for what actually counts as a signature.",
+            "**Print a test copy** if the form is going to be posted. Text that looks fine on screen can land on top of a printed line."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Flatten before you send it"
+        },
+        {
+          "t": "p",
+          "x": "A filled AcroForm keeps your answers as field values, held separately from the page content. That has three consequences, and all three bite people regularly. The recipient can change your answers, because the fields are still editable. A viewer that does not render form fields shows the form blank. And a surprising number of mail apps, phone previews and document management systems are exactly such viewers."
+        },
+        {
+          "t": "p",
+          "x": "Flattening merges the field values into the page as ordinary drawn content. After that, the answers are part of the page itself, the boxes are no longer editable, and every viewer in existence shows them, because there is nothing special left to render. Run the filled file through [flatten PDF](/tools/flatten-pdf) and send that copy."
+        },
+        {
+          "t": "warn",
+          "x": "Flattening is one way. You cannot get the fields back afterwards. Keep the unflattened version on your own disk in case you need to correct an answer, and send only the flattened one."
+        },
+        {
+          "t": "h2",
+          "x": "When something goes wrong"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Symptom",
+            "Cause",
+            "Fix"
+          ],
+          "rows": [
+            [
+              "The recipient says the form arrived blank",
+              "Not flattened, and their viewer ignores form fields",
+              "Flatten and resend"
+            ],
+            [
+              "It prints blank but looks filled on screen",
+              "The print setting is not including form fields or annotations",
+              "Flatten, or enable \"Document and markups\" in the print dialog"
+            ],
+            [
+              "You cannot type into any field",
+              "The form is read-only, or the document has editing restrictions",
+              "Check for a padlock icon. If it is password-restricted, see [unlock PDF](/tools/unlock-pdf)"
+            ],
+            [
+              "Text truncates in the middle of a word",
+              "The field has a maximum character count",
+              "Abbreviate, or use a continuation sheet if the form allows one"
+            ],
+            [
+              "A date is rejected as invalid",
+              "The field runs a format script expecting a specific pattern",
+              "Try dd/mm/yyyy and mm/dd/yyyy. The form rarely tells you which it wants"
+            ],
+            [
+              "Answers look odd in Acrobat after saving in Preview",
+              "macOS Preview writes form data in a non-standard way",
+              "Fill in a browser tool or Acrobat instead, and flatten before sending"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "If you fill the same form repeatedly, save one completed copy with the unchanging answers already in place and reuse it. That is far quicker than any autofill feature, and it does not store your details anywhere."
+        },
+        {
+          "t": "h2",
+          "x": "What to do with the finished form"
+        },
+        {
+          "t": "p",
+          "x": "Sequence matters. Fill the fields, then sign, then flatten, then send. Signing after flattening is fine; flattening after signing invalidates a digital signature, because flattening rewrites the page content that the signature covered. If you are attaching the form to an email and it is a large scan, [compress it](/tools/compress-pdf) last of all, and check that the text you typed is still legible afterwards."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I tell if a PDF form is fillable?",
+          "a": "Click where an answer should go and press Tab. If a cursor appears and focus jumps to the next box, the file has real form fields. If nothing responds, it is a flat page and you will need to add text on top of it yourself."
+        },
+        {
+          "q": "Why can I not type into my PDF form?",
+          "a": "Three common reasons: the file is a scan with no fields at all, the fields are marked read-only by the designer, or the document has editing restrictions applied with a password. A grey page asking you to wait means it is an XFA form, which only Adobe Acrobat Reader on a desktop can open."
+        },
+        {
+          "q": "Why did my filled form arrive blank?",
+          "a": "Because the answers were stored as form field values rather than as page content, and the recipient opened it in a viewer that ignores form fields. Flatten the file before sending, which merges the answers into the page so every viewer shows them."
+        },
+        {
+          "q": "Can I fill in a scanned form without printing it?",
+          "a": "Yes. Add your own text boxes on top of the page image, zoomed in enough to place each entry on the ruled line. Use a plain black font at about 10 to 12 point, and add a signature image rather than typing your name in a script face."
+        },
+        {
+          "q": "Should I flatten a PDF form before emailing it?",
+          "a": "Yes, in almost every case. Flattening locks the answers into the page so nobody can change them and no viewer can fail to display them. Keep an unflattened copy for yourself, because flattening cannot be undone."
+        }
+      ],
+      "relatedTools": [
+        "pdf-forms",
+        "flatten-pdf",
+        "sign-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-edit-a-pdf",
+        "how-to-sign-a-pdf",
+        "fill-and-sign-a-form"
+      ]
+    },
+    {
+      "slug": "how-to-compare-two-pdfs",
+      "cluster": "edit",
+      "title": "How to compare two PDFs and find what changed",
+      "metaTitle": "How to Compare Two PDFs and Find the Changes",
+      "metaDescription": "Find what changed between two drafts of a contract. How visual page comparison and text comparison differ, what each one catches, and what both of them miss.",
+      "published": "2026-05-22",
+      "updated": "2026-09-02",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "compare two pdfs",
+      "secondaryKeywords": [
+        "pdf diff tool",
+        "find differences between two pdfs",
+        "compare two versions of a contract",
+        "compare pdf documents free",
+        "what changed between two drafts"
+      ],
+      "entities": [
+        "Microsoft Word",
+        "Google Docs",
+        "LibreOffice",
+        "Adobe Acrobat Pro",
+        "pdftotext",
+        "diff"
+      ],
+      "answer": "Load both files into a comparison tool, older on the left and newer on the right, and step through the pages it flags. A visual comparison shows where the pixels differ, so it catches moved or restyled content. A text comparison diffs the words, so it survives text shifting between pages. Use both if the change matters.",
+      "body": [
+        {
+          "t": "p",
+          "x": "There are two entirely different ways to compare PDFs and they answer different questions. A visual comparison renders both files to images and highlights where the pixels differ, which is how you catch a moved logo, a changed colour or a redrawn chart. A text comparison pulls the words out of both files and diffs them word by word, which is how you catch `shall` becoming `may`. Neither on its own tells you everything that changed."
+        },
+        {
+          "t": "h2",
+          "x": "What each method catches"
+        },
+        {
+          "t": "table",
+          "caption": "Run the same pair of files through both methods and you get two different lists.",
+          "head": [
+            "Change",
+            "Visual page comparison",
+            "Text comparison"
+          ],
+          "rows": [
+            [
+              "A word changed inside a clause",
+              "Yes, if the page did not shift",
+              "Yes, and it names the word"
+            ],
+            [
+              "A figure changed in a table",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "A paragraph inserted, pushing text down",
+              "Flags every page after it",
+              "Yes, shown cleanly as an insertion"
+            ],
+            [
+              "A logo or an image moved 3 mm",
+              "Yes",
+              "No"
+            ],
+            [
+              "A font, a size or a colour changed",
+              "Yes",
+              "No"
+            ],
+            [
+              "A chart redrawn from different data",
+              "Yes",
+              "Only if the labels changed"
+            ],
+            [
+              "A page removed",
+              "Yes, as a cascade of differences",
+              "Yes"
+            ],
+            [
+              "A comment or annotation added",
+              "Usually not",
+              "No"
+            ],
+            [
+              "Metadata: author, dates, producer",
+              "No",
+              "No"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Comparing two files, step by step"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Name the files before you start",
+              "x": "`Contract_v3_ours.pdf` and `Contract_v4_theirs.pdf` beats `contract.pdf` and `contract (1).pdf`. Half the mistakes in this job come from comparing in the wrong direction."
+            },
+            {
+              "h": "Load both into the tool",
+              "x": "Open [compare PDF](/tools/compare-pdf), put the older file on the left and the newer on the right. Both stay in your browser: nothing is uploaded and no quota is used."
+            },
+            {
+              "h": "Check the page counts first",
+              "x": "If they differ, a page was added or removed, and every page after that point will look changed even where the words are identical. Deal with that before reading anything else."
+            },
+            {
+              "h": "Step through the flagged pages",
+              "x": "Look at what is highlighted rather than at how much is highlighted. A page that is 90 percent red usually means the text shifted, not that 90 percent of it was rewritten."
+            },
+            {
+              "h": "Read each changed passage in the document itself",
+              "x": "A diff shows you where to look. It does not tell you what the change means, and a two-word change can invert a clause."
+            },
+            {
+              "h": "Write the differences down as a list",
+              "x": "Five specific numbered changes are something you can send back to the other side. A screenshot of a highlighted page is not."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "compare-pdf",
+          "x": "Compare two versions page by page in your browser, with neither file leaving your computer."
+        },
+        {
+          "t": "h2",
+          "x": "The page-shift problem"
+        },
+        {
+          "t": "p",
+          "x": "This is the failure everyone hits first. Add two sentences to the second paragraph of a 40-page contract and everything below moves down. If that pushes one line over onto the next page, then page 3 of the new file holds the content that was on page 2 of the old one, and so on to the end. A page-by-page visual comparison dutifully reports 38 changed pages for one real change, and it is not wrong: those pages genuinely do differ from their counterparts."
+        },
+        {
+          "t": "p",
+          "x": "The way out is a text comparison, which treats each document as one continuous stream of words and does not care which page they landed on. As a rule: use text mode for anything wordy, a contract, a policy, a report, and visual mode for anything designed, a brochure, a form layout, a slide deck, a drawing."
+        },
+        {
+          "t": "note",
+          "x": "A quick check when only visual mode is available: compare the last page of both files first. If the last pages match, nothing shifted anywhere, and a page-by-page comparison is trustworthy across the whole document."
+        },
+        {
+          "t": "h2",
+          "x": "What a comparison will not tell you"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "**Comments and annotations** sit in a layer above the page and many tools render the page without them, so a reviewer note added or deleted goes unreported.",
+            "**Metadata** is invisible on the page: author name, creation and modification dates, and the software that produced the file. Check it with [edit metadata](/tools/edit-metadata), and see [removing metadata](/blog/privacy/remove-metadata-from-pdf) for what it can reveal.",
+            "**Hidden layers and cropped content** are not drawn, so they are not diffed. A change made outside the crop box is invisible to a visual comparison.",
+            "**Form field values** may or may not be included, depending on whether the tool flattens each page before rendering it.",
+            "**Embedded attachments** inside the PDF are never compared.",
+            "**Signature validity** is a fact about the file, not about the page, and no page comparison reports it.",
+            "**Which version is authoritative.** Only the people involved know that, and a diff cannot help you."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Scanned documents compare badly"
+        },
+        {
+          "t": "p",
+          "x": "Two scans of the same physical page are never the same image. The feed rollers pull the paper a fraction differently, the lamp ages, the sheet sits at 0.3 degrees to the glass. A pixel comparison lights up the entire page and tells you nothing. If both files are scans, run [OCR](/tools/ocr-pdf) on each and compare the recognised text instead. That is imperfect, because OCR misreads characters and will invent differences of its own, but a list of forty suspicious words beats a page that is uniformly red."
+        },
+        {
+          "t": "warn",
+          "x": "Never rely on a comparison to prove that nothing changed in a legal or regulatory document. A tool reports what it can detect. The absence of a reported difference is not evidence of an identical document, particularly where annotations, metadata, attachments or content outside the crop box are involved."
+        },
+        {
+          "t": "h2",
+          "x": "If you still have the source documents"
+        },
+        {
+          "t": "p",
+          "x": "Compare those instead, every time. **Microsoft Word** has Review then Compare, which produces a proper tracked-changes document with each change attributed. **Google Docs** keeps File then Version history, which shows exactly who changed what and when. **LibreOffice** has Edit then Track Changes then Compare Document. All three beat comparing exported PDFs, because they work on the text the author actually edited rather than on a picture of it."
+        },
+        {
+          "t": "p",
+          "x": "If you only have the PDFs but you want the words rather than the layout, extract the text from both and diff it with tools you may already have. [PDF to text](/tools/pdf-to-text) will do the extraction in your browser, or on a Mac or Linux machine:"
+        },
+        {
+          "t": "code",
+          "x": "# Extract plain text from both files, keeping the layout\npdftotext -layout old.pdf old.txt\npdftotext -layout new.pdf new.txt\n\n# Line-by-line differences\ndiff -u old.txt new.txt\n\n# Word-by-word, which reads much better for prose\ngit diff --no-index --word-diff old.txt new.txt"
+        },
+        {
+          "t": "h2",
+          "x": "Before you reply to the other side"
+        },
+        {
+          "t": "p",
+          "x": "Do one last pass with the tool switched off. Open both files side by side and check the three things a diff is worst at: the signature block, the numbers in any schedule or annex, and the dates. Those are short, easy to alter, and exactly the places where a highlighted difference on a busy page is easy to scroll past. Then send your numbered list, quoting the old wording and the new wording for each item, so nobody has to run the comparison again to understand what you found."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I find the differences between two PDF files?",
+          "a": "Load both into a comparison tool with the older version on the left. It renders both and highlights where they differ. Check the page counts first: if they are different, text has shifted and every page after the change will be flagged even where the words are identical."
+        },
+        {
+          "q": "Why does the comparison show every page as changed?",
+          "a": "Almost always because content was inserted or removed and everything below it moved. Each page now holds different text from the page it is being compared against. Switch to a text comparison, which compares words rather than pages and is unaffected by the shift."
+        },
+        {
+          "q": "Can I compare two scanned PDFs?",
+          "a": "Not visually, in any useful way. Two scans of the same page differ pixel by pixel because of feed and alignment variation, so the whole page is flagged. Run OCR on both and compare the recognised text, accepting that OCR errors will produce some false differences."
+        },
+        {
+          "q": "Does comparing PDFs find changed metadata or comments?",
+          "a": "No. Comparison works on what is drawn on the page. Author names, timestamps, producing software, embedded attachments and, in most tools, annotations are all invisible to it. Check metadata separately if it matters."
+        },
+        {
+          "q": "Is it better to compare the PDFs or the original documents?",
+          "a": "The originals, whenever you have them. Word, Google Docs and LibreOffice all compare documents at the level of the text the author edited and attribute each change. Comparing PDFs is what you do when the source files are not available."
+        }
+      ],
+      "relatedTools": [
+        "compare-pdf",
+        "pdf-to-text",
+        "edit-metadata"
+      ],
+      "relatedPosts": [
+        "how-to-edit-a-pdf",
+        "how-to-crop-a-pdf",
+        "remove-metadata-from-pdf"
+      ]
+    }
+  ]
+}

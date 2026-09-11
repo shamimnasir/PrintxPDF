@@ -159,3 +159,51 @@ what `POST /convert/warm` is for (call it when the user lands on a converter pag
 - Right after a deploy the new hostname can take a few minutes to reach every resolver; to test early,
   `curl --resolve api.printxpdf.com:443:<cloudflare ip from dig>`.
 - Free-tier quota is keyed by a salted IP hash; everyone behind one NAT shares it.
+
+## Admin panel and publishing
+
+The panel at `/admin` edits a draft in the browser. Publishing it commits to GitHub and Vercel
+rebuilds, so the change reaches crawlers as prerendered HTML rather than only live visitors.
+
+Three secrets turn publishing on. Until all three exist, `/admin/publish` answers 503 and the
+panel says so, while the manual download-and-commit route keeps working.
+
+```bash
+# 1. A password only you know. The script prints a PBKDF2 hash; the password is never stored.
+node scripts/admin-password.mjs
+cd worker && npx wrangler secret put ADMIN_PASSWORD_HASH
+
+# 2. Signs admin sessions. Separate from ENTITLEMENT_SECRET on purpose: a customer's paid
+#    entitlement must never be presentable as an admin session.
+openssl rand -base64 48 | npx wrangler secret put ADMIN_SECRET
+
+# 3. A fine-grained GitHub PAT, scoped to this repository alone, Contents: read and write.
+#    Nothing else. Create it at github.com/settings/personal-access-tokens
+npx wrangler secret put GITHUB_TOKEN
+
+npx wrangler deploy
+```
+
+`GITHUB_OWNER`, `GITHUB_REPO` and `GITHUB_BRANCH` are plain vars in `wrangler.jsonc`.
+
+### What the endpoints do
+
+| Route | Purpose |
+| --- | --- |
+| `POST /admin/login` | Password in, 12-hour session out. Rate limited, and locks out an IP for 15 minutes after 10 failures. |
+| `GET /admin/me` | Confirms the session and returns the commit a draft should be published against. |
+| `POST /admin/publish` | Re-runs the content rules, then writes one atomic commit. |
+| `POST /admin/signout-everywhere` | Moves a watermark so every outstanding session stops working at once. |
+
+### Why it is shaped this way
+
+The GitHub token never reaches the browser. A stolen admin session expires the same day and can
+only call these four routes; a stolen token would not expire and could rewrite the repository.
+
+This module decides every path that gets written: the client sends content, never filenames, so an
+authenticated session still cannot reach `.github/workflows` or the source of the site. Writes are
+confined to `src/content/posts/*.json` and `public/site-config.json`.
+
+The content rules in `src/content/validate.ts` run in the browser so a writer sees a problem while
+typing, and again here because a client-side check protects nothing. A publish that would fail CI
+is refused with a 422 listing what is wrong, so the build cannot be broken from the panel.

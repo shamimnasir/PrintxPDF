@@ -142,3 +142,17 @@
 - An undefined custom property fails silently and inherits. `var(--muted)` where the token is
   `--fg-muted` left body text at full strength with no warning anywhere. Worth a one-line check
   that every `var(--x)` used in the stylesheet is also defined in it.
+
+## 2026-09-11: admin publishing
+- Rules that only CI can run get enforced too late. Moving the 12 content rules into a plain
+  module let the editor show a violation as it is typed and let the Worker refuse it at the door,
+  with CI unchanged. Worth doing the moment a rule needs a second caller.
+- Prove a data migration, do not eyeball it. Hashing all 179 prerendered pages before and after
+  the TypeScript-to-JSON move turned "looks fine" into a fact, and it caught that the only
+  difference was a chunk filename rather than any content.
+- Check the normaliser before trusting a comparison. The first byte-identical check "failed"
+  because the regex for asset hashes did not allow the hyphen inside `Account-4-B3Roc4.js`. The
+  tool was wrong, not the migration.
+- A client-side gate is a UX affordance, never a security boundary. The old /admin passcode was
+  honest about that while it only edited a local draft; the moment publishing could commit to the
+  repository, the real check had to move to the Worker and the GitHub token had to stay there.
