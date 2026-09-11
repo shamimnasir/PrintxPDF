@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { hashPassword, verifyPassword, mintSession, verifySession, now } from '../src/adminAuth'
+import { hashPassword, verifyPassword, storedHashProblem, mintSession, verifySession, now, MAX_PBKDF2_ITERATIONS } from '../src/adminAuth'
 import { mint } from '../src/token'
 
 const SECRET = 'admin-test-secret-0123456789abcdef'
@@ -26,8 +26,25 @@ describe('admin password', () => {
     expect(stored).not.toContain('hunter2')
   })
 
+  it('stays within the iteration count this runtime allows', async () => {
+    // Workers reject PBKDF2 above 100k. Node does not, so without this assertion the mismatch
+    // only shows up in production as a 500 on every login.
+    expect(MAX_PBKDF2_ITERATIONS).toBeLessThanOrEqual(100_000)
+    const stored = await hashPassword('a password')
+    expect(Number(stored.split('$')[1])).toBeLessThanOrEqual(100_000)
+    expect(storedHashProblem(stored)).toBeNull()
+  })
+
+  it('reports an unusable stored hash rather than failing inside crypto', async () => {
+    expect(storedHashProblem(`pbkdf2$200000$c2FsdA==$aGFzaA==`)).toMatch(/above the 100000/)
+    expect(storedHashProblem('nonsense')).toMatch(/not in the expected format/)
+    expect(storedHashProblem('pbkdf2$5$c2FsdA==$aGFzaA==')).toMatch(/invalid iteration count/)
+    // and it is still refused by the comparison itself, not merely reported
+    expect(await verifyPassword('anything', 'pbkdf2$200000$c2FsdA==$aGFzaA==')).toBe(false)
+  })
+
   it('refuses a malformed or hostile stored hash instead of throwing', async () => {
-    for (const bad of ['', 'nonsense', 'pbkdf2$x$y$z', 'pbkdf2$200000$!!!$!!!', 'md5$1$a$b', 'pbkdf2$1$a$b']) {
+    for (const bad of ['', 'nonsense', 'pbkdf2$x$y$z', 'pbkdf2$200000$!!!$!!!', 'md5$1$a$b', 'pbkdf2$1$a$b', 'pbkdf2$200000$c2FsdA==$aGFzaA==']) {
       expect(await verifyPassword('anything', bad), bad).toBe(false)
     }
   })

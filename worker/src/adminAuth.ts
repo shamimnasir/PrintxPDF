@@ -21,7 +21,13 @@ const dec = new TextDecoder()
 
 /** Twelve hours: long enough to write a post, short enough that a stolen token expires the same day. */
 export const SESSION_TTL_SEC = 12 * 60 * 60
-const PBKDF2_ITERATIONS = 200_000
+/**
+ * Workers refuse PBKDF2 above 100k iterations ("iteration counts above 100000 are not supported"),
+ * so this is the ceiling, not a preference. Node has no such cap, which is why a unit test alone
+ * did not catch it; the assertion below keeps the two in step.
+ */
+export const MAX_PBKDF2_ITERATIONS = 100_000
+const PBKDF2_ITERATIONS = MAX_PBKDF2_ITERATIONS
 
 export const now = (): number => Math.floor(Date.now() / 1000)
 
@@ -54,6 +60,21 @@ export async function hashPassword(password: string, salt?: Uint8Array, iteratio
 }
 
 /**
+ * Why a stored hash cannot be used, or null when it is fine. Checked before verifying so an
+ * unusable hash reports itself instead of surfacing as a 500 on every login attempt.
+ */
+export function storedHashProblem(stored: string): string | null {
+  const parts = stored.split('$')
+  if (parts.length !== 4 || parts[0] !== 'pbkdf2') return 'The stored password hash is not in the expected format'
+  const iterations = Number(parts[1])
+  if (!Number.isInteger(iterations) || iterations < 1000) return 'The stored password hash has an invalid iteration count'
+  if (iterations > MAX_PBKDF2_ITERATIONS) {
+    return `The stored password hash uses ${iterations} iterations, above the ${MAX_PBKDF2_ITERATIONS} this runtime allows. Regenerate it with scripts/admin-password.mjs and upload it again.`
+  }
+  return null
+}
+
+/**
  * Compares in constant time. A plain `===` on the derived hash leaks how many leading bytes were
  * right, which is enough to reconstruct it one byte at a time given enough attempts.
  */
@@ -61,7 +82,7 @@ export async function verifyPassword(password: string, stored: string): Promise<
   const parts = stored.split('$')
   if (parts.length !== 4 || parts[0] !== 'pbkdf2') return false
   const iterations = Number(parts[1])
-  if (!Number.isInteger(iterations) || iterations < 1000 || iterations > 5_000_000) return false
+  if (!Number.isInteger(iterations) || iterations < 1000 || iterations > MAX_PBKDF2_ITERATIONS) return false
   let salt: Uint8Array
   let expected: Uint8Array
   try {

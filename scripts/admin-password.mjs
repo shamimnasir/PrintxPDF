@@ -9,7 +9,8 @@ import { webcrypto as crypto } from 'node:crypto'
 import { createInterface } from 'node:readline/promises'
 import { stdin, stdout } from 'node:process'
 
-const ITERATIONS = 200_000
+// Workers refuse PBKDF2 above 100k iterations, so this is a hard ceiling, not a preference.
+const ITERATIONS = 100_000
 
 async function hash(password) {
   const salt = crypto.getRandomValues(new Uint8Array(16))

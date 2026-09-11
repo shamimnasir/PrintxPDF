@@ -12,7 +12,7 @@
  *    or by accident.
  */
 import { ApiError, clientIp, enforceRateLimit, json, readJsonBody } from './http'
-import { mintSession, verifySession, verifyPassword, SESSION_TTL_SEC, now } from './adminAuth'
+import { mintSession, verifySession, verifyPassword, storedHashProblem, SESSION_TTL_SEC, now } from './adminAuth'
 import { commitFiles, headSha, type FileWrite, type RepoRef } from './github'
 import { validateContent, formatIssues } from '../../src/content/validate'
 import type { Cluster } from '../../src/content/types'
@@ -80,6 +80,11 @@ export async function login(req: Request, env: AdminEnv): Promise<Response> {
   if (fails >= LOCKOUT_AFTER) {
     throw new ApiError(429, 'locked_out', 'Too many failed attempts. Try again later.', {}, { 'retry-after': String(LOCKOUT_SEC) })
   }
+
+  // A hash this runtime cannot evaluate would otherwise fail inside the crypto call and reach the
+  // client as a bare 500, which says nothing about what to do next.
+  const problem = storedHashProblem(hash)
+  if (problem) throw new ApiError(503, 'admin_password_hash_unsupported', problem)
 
   const body = await readJsonBody<{ password: string }>(req, 4096)
   const password = typeof body.password === 'string' ? body.password : ''
