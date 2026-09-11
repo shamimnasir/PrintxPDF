@@ -80,6 +80,13 @@ export const billing = {
   rotate: (token: string) => call<{ token: string }>('/billing/rotate', post(undefined, bearer(token))),
 }
 
+/** What each plan is called in the interface. Lifetime was missing from three separate
+ *  ternaries and a paying customer saw their plan as "Free", so it lives in one place now. */
+export const PLAN_LABEL: Record<Plan, string> = { free: 'Free', pro: 'Pro', api: 'API', lifetime: 'Lifetime' }
+
+/** Server conversions included each month. Lifetime buys the Pro allowance, permanently. */
+export const PLAN_QUOTA: Record<Plan, number> = { free: 5, pro: 300, api: 5000, lifetime: 300 }
+
 /** The key's payload is plain base64url JSON; only the signature is secret. Never trust it for access, the server does. */
 export function decodeToken(token: string): { sub: string; email: string; plan: PaidPlan; exp: number } | null {
   try {
@@ -87,8 +94,11 @@ export function decodeToken(token: string): { sub: string; email: string; plan: 
     const payload = token.slice(4).split('.')[0]
     const json = atob(payload.replace(/-/g, '+').replace(/_/g, '/').padEnd(Math.ceil(payload.length / 4) * 4, '='))
     const c = JSON.parse(json) as { sub?: unknown; email?: unknown; plan?: unknown; exp?: unknown }
-    return typeof c.sub === 'string' && (c.plan === 'pro' || c.plan === 'api')
-      ? { sub: c.sub, email: String(c.email || ''), plan: c.plan, exp: Number(c.exp || 0) }
+    // Every paid plan, lifetime included. Missing it here rejected a paying customer's own key
+    // as malformed when they tried to restore the plan on a second device.
+    const paid: PaidPlan[] = ['pro', 'api', 'lifetime']
+    return typeof c.sub === 'string' && paid.includes(c.plan as PaidPlan)
+      ? { sub: c.sub, email: String(c.email || ''), plan: c.plan as PaidPlan, exp: Number(c.exp || 0) }
       : null
   } catch {
     return null

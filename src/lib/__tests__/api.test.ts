@@ -73,6 +73,11 @@ describe('decodeToken', () => {
   it('reads plan and customer from the payload without verifying it', () => {
     const payload = btoa(JSON.stringify({ v: 1, sub: 'cus_1', email: 'a@b.c', plan: 'pro', iat: 1, exp: 2 })).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
     expect(decodeToken(`pxp_${payload}.sig`)).toMatchObject({ sub: 'cus_1', plan: 'pro', email: 'a@b.c' })
+    // a lifetime key is a paid key: rejecting it locked a paying customer out of their own plan
+    const life = btoa(JSON.stringify({ v: 1, sub: 'cus_2', email: 'l@b.c', plan: 'lifetime', exp: 9e9 })).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+    expect(decodeToken(`pxp_${life}.sig`)).toMatchObject({ sub: 'cus_2', plan: 'lifetime', email: 'l@b.c' })
+    const bogus = btoa(JSON.stringify({ v: 1, sub: 'cus_3', email: 'x@b.c', plan: 'free', exp: 9e9 })).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+    expect(decodeToken(`pxp_${bogus}.sig`)).toBeNull()
   })
   it('rejects anything that is not a key', () => {
     expect(decodeToken('nope')).toBeNull()

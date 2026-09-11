@@ -113,6 +113,7 @@ export function General({ cfg }: P) {
         <Text label="Contact email" value={cfg.site.email} onChange={(v) => set('site', { email: v })} />
         <Text label="GitHub URL" value={cfg.site.github} onChange={(v) => set('site', { github: v })} />
         <Text label="X / Twitter handle" value={cfg.site.twitter} onChange={(v) => set('site', { twitter: v })} placeholder="@handle" />
+        <Text label="Operating company" value={cfg.site.company} onChange={(v) => set('site', { company: v })} hint="The legal entity. Shown in the footer and the legal pages, and it is the name buyers see on the payment page." />
         <Text label="Footer note" value={cfg.site.footerNote} onChange={(v) => set('site', { footerNote: v })} />
       </Card>
 

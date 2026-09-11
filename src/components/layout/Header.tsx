@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { PLAN_LABEL } from '../../lib/api'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { TOOLS, CATEGORY_LABEL, MENUS } from '../../features/pdf/toolsMeta'
 import { useUser } from '../../features/account/useUser'
@@ -151,7 +152,7 @@ export function Header() {
                 {user.name}
                 {user.plan !== 'free' && (
                   <span className="badge badge-acid" style={{ marginLeft: '0.4rem' }}>
-                    {user.plan === 'api' ? 'API' : 'Pro'}
+                    {PLAN_LABEL[user.plan]}
                   </span>
                 )}
               </Link>

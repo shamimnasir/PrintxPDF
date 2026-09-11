@@ -21,6 +21,12 @@ export function Footer() {
           <p className="mono" style={{ fontSize: '0.7rem', opacity: 0.6 }}>
             {cfg.site.footerNote}
           </p>
+          {cfg.site.company && (
+            /* Named here because the payment page shows this company, not the site name */
+            <p className="mono" style={{ fontSize: '0.7rem', opacity: 0.6 }}>
+              {cfg.site.name} is a sister concern of {cfg.site.company}.
+            </p>
+          )}
           <p className="mono" style={{ fontSize: '0.7rem', opacity: 0.6 }}>
             Founded by{' '}
             <Link to={authorPath(cfg.author)} style={{ color: 'inherit' }}>

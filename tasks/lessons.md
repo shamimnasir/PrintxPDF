@@ -123,3 +123,22 @@
 - An automated honesty check has to understand scope. Flagging any post that says "nothing is
   uploaded" while listing a server tool produced a false positive: the sentence read "with a
   browser tool the images are processed inside your own tab", which is precise and correct.
+
+## 2026-09-11: launch review
+- A tier added late is a tier nobody exercised. Lifetime shipped in the pricing table and in the
+  worker, but the client forgot it in four places: `decodeToken` accepted only 'pro' and 'api', so
+  a paying customer restoring on a second device was told their own key "does not look like a
+  PrintxPDF access key"; `planName` had no lifetime case and fell through to 'Free', so the
+  account page told a customer who paid $119 that they were on the free plan; the header badge and
+  the tool usage line both hard-coded `plan === 'api' ? 'API' : 'Pro'`. The same fact derived in
+  four ternaries drifts. One `PLAN_LABEL` / `PLAN_QUOTA` record now owns it.
+- A promise repeated in four places is four places to contradict yourself. The refund window was
+  "14 days, 30 on Lifetime" in Terms and on the pricing card, and plain "14 days" in the pricing
+  FAQ, both Support mentions and the home promise row. Under-promising still breaks trust when the
+  customer reads the generous version first.
+- Grep the copy for what a feature used to be. A guide still described the extension listings as a
+  "design demo" whose "install buttons do nothing" long after the extension was downloadable and
+  submitted to the store.
+- An undefined custom property fails silently and inherits. `var(--muted)` where the token is
+  `--fg-muted` left body text at full strength with no warning anywhere. Worth a one-line check
+  that every `var(--x)` used in the stylesheet is also defined in it.

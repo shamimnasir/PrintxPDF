@@ -122,7 +122,7 @@ export default function Home() {
               <strong>No trial that turns into a charge.</strong> There is no trial. Paid plans start only when you pick one.
             </li>
             <li>
-              <strong>Cancel in one click.</strong> No email to send, nobody talking you out of it, full refund inside 14 days.
+              <strong>Cancel in one click.</strong> No email to send, nobody talking you out of it, full refund inside 14 days, 30 on Lifetime.
             </li>
           </ul>
         </div>

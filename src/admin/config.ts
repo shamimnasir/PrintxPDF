@@ -21,6 +21,8 @@ export type SiteConfig = {
     email: string
     twitter: string
     github: string
+    /** the legal entity that operates the site, named at checkout and in the terms */
+    company: string
     footerNote: string
   }
   /** the person credited on every guide and in Organization.founder */
@@ -89,6 +91,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
     email: 'support@printxpdf.com',
     twitter: '',
     github: 'https://github.com/shamimnasir/PrintxPDF',
+    company: 'LateNightBirds LLC',
     footerNote: 'Independent project. Not affiliated with any other print or PDF service.',
   },
   author: {

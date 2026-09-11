@@ -64,14 +64,26 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
             is ever measured.
           </p>
           <h3>Contact</h3>
+          <h3>Who holds what</h3>
+          <p>
+            {cfg.site.name} is operated by {cfg.site.company}. The little we hold is described above; payment records sit
+            with Stripe, our payment provider, under their own privacy policy, and {cfg.site.company} is the name that
+            appears on your card statement.
+          </p>
           <p>Questions about your data: {contact}.</p>
         </>
       ) : (
         <>
           <h1>Terms, briefly.</h1>
           <p className="lead">
-            PrintxPDF is provided as-is. Browser tools are free. Server conversions (the few jobs that run on our server)
-            come with a free monthly allowance, and paid plans for more.
+            {cfg.site.name} is provided as-is. Browser tools are free. Server conversions (the few jobs that run on our
+            server) come with a free monthly allowance, and paid plans for more.
+          </p>
+          <h3>Who you are dealing with</h3>
+          <p>
+            {cfg.site.name} is operated by {cfg.site.company}, a sister concern. That is the name on your card statement and
+            on the payment page, so if you see {cfg.site.company} on a receipt, it is us. Write to {contact} about anything,
+            including billing.
           </p>
           <h3>Use</h3>
           <p>

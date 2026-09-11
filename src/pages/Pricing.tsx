@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: 'Is there a refund?',
-    a: 'Yes, on request within 14 days of your first charge. After that, cancel any time and you will not be charged again.',
+    a: 'Yes, on request within 14 days of your first charge, or within 30 days of buying Lifetime. After that, cancel any time and you will not be charged again.',
   },
 ]
 

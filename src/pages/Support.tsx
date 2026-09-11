@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'A server conversion failed or timed out',
-    a: 'Server jobs accept files up to 100 MB and get two minutes to finish. Very large decks and ebooks can run out of time. Free accounts get 5 conversions a month, Pro 300 and API 5,000; if you are out, the tool says so rather than failing quietly.',
+    a: 'Server jobs accept files up to 100 MB and get two minutes to finish. Very large decks and ebooks can run out of time. Free accounts get 5 conversions a month, Pro and Lifetime 300, API 5,000; if you are out, the tool says so rather than failing quietly.',
   },
   {
     q: 'I moved to a new computer and lost my Pro plan',
@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: 'Can I get a refund?',
-    a: 'Yes. Ask within 14 days of your first charge and we refund it in full, no questions and no fee. Email us; we do not make you argue for it.',
+    a: 'Yes. Ask within 14 days of your first charge, or within 30 days of buying Lifetime, and we refund it in full, no questions and no fee. Email us; we do not make you argue for it.',
   },
   {
     q: 'Does the extension or the WordPress plugin send you anything?',
@@ -104,7 +104,7 @@ export default function Support() {
           <li>No card and no account to use the free tools. Ever.</li>
           <li>No trial that turns into a charge, because there is no trial.</li>
           <li>Cancel yourself in one click. No email, no retention script.</li>
-          <li>Full refund inside 14 days of a first charge, no fee kept.</li>
+          <li>Full refund inside 14 days of a first charge, 30 days on Lifetime, no fee kept.</li>
           <li>The renewal date and the exact amount are on your account page before it charges.</li>
         </ul>
       </div>

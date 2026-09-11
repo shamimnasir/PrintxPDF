@@ -196,3 +196,19 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 - Static audit clean over 177 pages, 174 sitemap URLs.
 - The three corrected posts were the highest-value change here: each was a high-intent page
   actively recommending a competitor for a job the product now does.
+
+# Phase 7 (2026-09-11): launch review
+- [x] Footer, Terms and Privacy name the operating company (LateNightBirds LLC), which is also the
+      name buyers see on the Stripe payment page. New `site.company` config field, editable in admin.
+- [x] LAUNCH BLOCKER: the Lifetime tier was broken in the client. `decodeToken` rejected lifetime
+      keys, `planName` reported lifetime as "Free", and two more places labelled it "Pro".
+      Centralised into PLAN_LABEL / PLAN_QUOTA with a regression test.
+- [x] Refund window aligned across Terms, Pricing card, Pricing FAQ, Support x2 and the home row.
+- [x] Extension guide no longer calls the working extension "a design demo".
+- [x] `.promise-row` used an undefined token (`--muted` vs `--fg-muted`); stylesheet swept for others.
+- [x] Verified: 44 tools claimed = 44 in nav = 44 on /tools; all 44 tool pages disclose browser vs
+      server correctly with zero mismatches; OCR's advertised page limits are genuinely enforced.
+
+## Review
+- Lifetime, Pro and API all render their own name in the header badge and on the account page.
+- Static audit clean over 177 pages. 117 tests.

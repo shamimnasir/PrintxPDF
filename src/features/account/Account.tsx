@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Navigate, Route, Routes, useSearchParams } from 'react-router-dom'
 import { applyTheme, store, type SavedDoc, type Settings, type Signature } from '../../lib/store'
-import { ApiError, billing, decodeToken, describeError, type Me, type PaidPlan, type Plan } from '../../lib/api'
+import { ApiError, billing, decodeToken, describeError, PLAN_LABEL, type Me, type PaidPlan, type Plan } from '../../lib/api'
 import { useSiteConfig } from '../../admin/useSiteConfig'
 import { useUser } from './useUser'
 import { useToast } from '../../components/ui/Toast'
@@ -21,7 +21,7 @@ const NAV = [
   ['domains', 'My websites'],
 ]
 
-const planName = (p: Plan) => (p === 'api' ? 'API' : p === 'pro' ? 'Pro' : 'Free')
+const planName = (p: Plan) => PLAN_LABEL[p] ?? 'Free'
 const fmtDate = (unix?: number) => (unix ? new Date(unix * 1000).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '')
 
 /** Asks the API for the live subscription state and keeps the local plan and key in step with it. */

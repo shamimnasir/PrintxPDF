@@ -6,7 +6,7 @@ import { ProgressBar, ResultList } from '../../components/ui/ResultList'
 import { downloadBlob } from '../../lib/download'
 import type { Output } from './engines'
 import type { ToolMeta } from './toolsMeta'
-import { convertRemote, describeError, isConvertKind, warmConverter } from '../../lib/api'
+import { convertRemote, describeError, isConvertKind, PLAN_LABEL, PLAN_QUOTA, warmConverter } from '../../lib/api'
 import { useUser } from '../account/useUser'
 
 type Field =
@@ -431,7 +431,7 @@ export function GenericTool({ tool }: { tool: ToolMeta }) {
             {usage
               ? `${usage.used} of ${usage.limit} conversions used this month.`
               : user && user.plan !== 'free'
-                ? `${user.plan === 'api' ? 'API' : 'Pro'} plan · ${user.plan === 'api' ? '5,000' : '300'} conversions a month.`
+                ? `${PLAN_LABEL[user.plan]} plan · ${PLAN_QUOTA[user.plan].toLocaleString('en-US')} conversions a month.`
                 : 'Free: 5 conversions a month. Pro: 300.'}
           </p>
         )}
