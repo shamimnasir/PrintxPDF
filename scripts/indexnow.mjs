@@ -91,5 +91,5 @@ const MEANING = {
   429: 'too many requests: slow down',
 }
 const text = await res.text().catch(() => '')
-console.log(`\n${res.status} ${MEANING[res.status] ?? res.statusText}${text ? ` — ${text.slice(0, 200)}` : ''}`)
+console.log(`\n${res.status} ${MEANING[res.status] ?? res.statusText}${text ? `: ${text.slice(0, 200)}` : ''}`)
 process.exit(res.status === 200 || res.status === 202 ? 0 : 1)
