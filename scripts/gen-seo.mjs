@@ -22,7 +22,8 @@ async function loadData() {
     entry,
     `export { CLUSTERS, ALL_POSTS } from ${JSON.stringify(path.join(ROOT, 'src/content/index.ts'))}
      export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
-     export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}`,
+     export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}
+     export { TOOL_ALIASES } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliases.ts'))}`,
   )
   await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
   const mod = await import(pathToFileURL(out).href)
@@ -43,7 +44,7 @@ async function siteConfig() {
 const iso = (d) => new Date(d).toISOString().slice(0, 10)
 
 async function main() {
-  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT } = await loadData()
+  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, TOOL_ALIASES } = await loadData()
   const cfg = await siteConfig()
   const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.com').replace(/\/$/, '')
   const hiddenTools = new Set(cfg?.tools?.hidden || [])
@@ -70,6 +71,7 @@ async function main() {
     { loc: '/privacy', pri: '0.3', freq: 'yearly', mod: today },
     { loc: '/terms', pri: '0.3', freq: 'yearly', mod: today },
     ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}`, pri: t.status === 'best-effort' ? '0.4' : '0.8', freq: 'monthly', mod: today })),
+    ...TOOL_ALIASES.map((a) => ({ loc: `/tools/${a.slug}`, pri: '0.8', freq: 'monthly', mod: today })),
     ...CLUSTERS.map((c) => ({ loc: `/blog/${c.slug}`, pri: '0.7', freq: 'monthly', mod: today })),
     ...ALL_POSTS.filter((p) => !hiddenPosts.has(p.slug)).map((p) => ({ loc: `/blog/${p.cluster}/${p.slug}`, pri: '0.7', freq: 'monthly', mod: iso(p.updated) })),
   ]
@@ -132,6 +134,9 @@ Written and maintained by ${authorName}, founder of PrintxPDF: ${SITE}${authorRo
 ${TOOLS.filter((t) => !hiddenTools.has(t.slug) && (t.status === 'real' || t.status === 'server'))
   .map((t) => `- [${t.name}](${SITE}/tools/${t.slug}): ${t.short}. ${TOOL_CONTENT[t.slug]?.answer?.trim() || t.description}`)
   .join('\n')}
+
+## Image conversion pages
+${TOOL_ALIASES.map((a) => `- [${a.name}](${SITE}/tools/${a.slug}): ${a.answer}`).join('\n')}
 
 ## Guides
 ${CLUSTERS.map(

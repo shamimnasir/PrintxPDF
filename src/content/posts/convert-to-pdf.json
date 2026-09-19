@@ -720,7 +720,7 @@
         "iOS",
         "DPI"
       ],
-      "answer": "Drop your JPG or PNG files into an image-to-PDF tool, put them in the right order, and pick a page size. Choose A4 or Letter with each image fitted to the page for documents, and 300 DPI if the result will be printed. HEIC files from an iPhone must be converted to JPEG first in most browsers.",
+      "answer": "Drop your JPG, PNG or HEIC files into an image-to-PDF tool, put them in the right order, and pick a page size. Choose A4 or Letter with each image fitted to the page for documents, and 300 DPI if the result will be printed. If another app refuses HEIC, convert it with the [HEIC to JPG converter](/tools/heic-to-jpg) first.",
       "body": [
         {
           "t": "p",
@@ -835,7 +835,7 @@
           "items": [
             "**JPEG**, the right choice for photographs and camera scans. Already compressed, so the PDF stays small.",
             "**PNG**, right for screenshots, diagrams and anything with sharp text or flat colour. Lossless, so it produces a larger PDF; a full-page PNG screenshot can be several megabytes.",
-            "**HEIC**, the iPhone default. **Chrome and Firefox cannot decode HEIC**, so a browser tool usually cannot read it directly. Two fixes: on the iPhone, Settings → Camera → Formats → **Most Compatible** makes the camera shoot JPEG from then on; or, for photos you already have, sharing them out of Photos to a Mac or Windows machine converts them to JPEG in transit.",
+            "**HEIC**, the iPhone default. PrintxPDF can decode HEIC in the browser, so you can use it directly in the [JPG to PDF tool](/tools/jpg-to-pdf). If another app refuses the file, use the [HEIC to JPG converter](/tools/heic-to-jpg). To avoid HEIC for new photos, set iPhone Settings → Camera → Formats → **Most Compatible** so the camera shoots JPEG.",
             "**TIFF**, common from office scanners and often multi-page. Convert to JPEG or PNG first; browser support is effectively nil.",
             "**WebP and AVIF**, decode fine in modern browsers, so they work if your tool supports them."
           ]
@@ -917,7 +917,7 @@
         },
         {
           "q": "Why can I not upload HEIC photos?",
-          "a": "Chrome and Firefox cannot decode HEIC, so browser-based tools cannot read the files. Set your iPhone to Settings → Camera → Formats → Most Compatible so it shoots JPEG, or copy the existing photos to a computer, which converts them to JPEG during the transfer."
+          "a": "PrintxPDF can decode HEIC in the browser, so you can use the photos directly in the JPG to PDF tool. If another app refuses them, use the [HEIC to JPG converter](/tools/heic-to-jpg). For future photos, set iPhone Settings → Camera → Formats to Most Compatible so it shoots JPEG."
         },
         {
           "q": "What resolution do I need for a PDF I will print?",

@@ -5,6 +5,8 @@ import { postsForTool } from '../../content'
 import { breadcrumbSchema, faqSchema, howToSchema, softwareSchema, useSeo, SITE_URL } from '../../lib/seo'
 import { shotAbsoluteUrl } from '../../components/ui/ToolShot'
 import { isFilled, toolContent } from '../../content/tools'
+import { toolAliasBySlug } from '../../content/toolAliases'
+import { toolAliasContent } from '../../content/toolAliasContent'
 import { ToolContentSections, stepAnchor } from './ToolContent'
 import { StatusBadge, ToolCard } from './ToolCard'
 import { GenericTool } from './GenericTool'
@@ -29,28 +31,30 @@ const UnzipTool = lazy(() => import('../files/UnzipTool'))
 
 export default function ToolPage() {
   const { slug = '' } = useParams()
-  const tool = useTool(slug)
+  const alias = toolAliasBySlug(slug)
+  const baseSlug = alias?.baseSlug || slug
+  const tool = useTool(baseSlug)
   const key = slug // remounts the tool UI when the route changes
   const allTools = useVisibleTools()
-  const guides = postsForTool(slug).slice(0, 4)
-  const content = toolContent(slug)
+  const guides = postsForTool(baseSlug).slice(0, 4)
+  const content = alias ? toolAliasContent(alias) : toolContent(slug)
   const c = isFilled(content) ? content : undefined
 
   useSeo({
     title: tool ? c?.metaTitle || `${tool.name} | ${tool.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}` : 'Tool not found',
     description: tool ? c?.metaDescription || `${tool.description} ${tool.status === 'server' ? 'Free for 5 files a month, no sign-up.' : 'No upload, no sign-up: it runs entirely in your browser.'}`.slice(0, 158) : '',
     path: `/tools/${slug}`,
-    keywords: tool ? [...(c?.keywords || []), tool.name.toLowerCase(), `${tool.name.toLowerCase()} free`, `${tool.name.toLowerCase()} online`] : [],
+    keywords: tool ? [...(c?.keywords || []), (alias?.name || tool.name).toLowerCase(), `${(alias?.name || tool.name).toLowerCase()} free`, `${(alias?.name || tool.name).toLowerCase()} online`] : [],
     noindex: !tool,
     schema: tool
       ? [
           breadcrumbSchema([
             { name: 'Home', path: '/' },
             { name: 'Tools', path: '/tools' },
-            { name: tool.name, path: `/tools/${tool.slug}` },
+            { name: alias?.name || tool.name, path: `/tools/${slug}` },
           ]),
-          softwareSchema({ name: tool.name, description: c?.metaDescription || tool.description, path: `/tools/${tool.slug}` }),
-          ...(c ? [faqSchema(c.faqs), howToSchema({ title: c.howHeading || `How to use ${tool.name}`, description: c.answer, steps: c.how, path: `/tools/${tool.slug}`, anchors: c.how.map((_, i) => stepAnchor(i + 1)), image: shotAbsoluteUrl(SITE_URL, tool.slug) || undefined })] : []),
+          softwareSchema({ name: alias?.name || tool.name, description: c?.metaDescription || tool.description, path: `/tools/${slug}` }),
+          ...(c ? [faqSchema(c.faqs), howToSchema({ title: c.howHeading || `How to use ${alias?.name || tool.name}`, description: c.answer, steps: c.how, path: `/tools/${slug}`, anchors: c.how.map((_, i) => stepAnchor(i + 1)), image: shotAbsoluteUrl(SITE_URL, tool.slug) || undefined })] : []),
         ]
       : [],
   })
@@ -76,8 +80,8 @@ export default function ToolPage() {
           <StatusBadge status={tool.status} />
           <span className="badge">{tool.status === 'server' ? 'Sent securely · converted · deleted' : 'Nothing is uploaded'}</span>
         </div>
-        <h1>{tool.name}</h1>
-        <p className="lead">{tool.description}</p>
+        <h1>{alias?.name || tool.name}</h1>
+        <p className="lead">{alias?.answer || tool.description}</p>
       </div>
 
       {/* the workbench reads files and browser APIs, so it is left out of the static HTML and
@@ -94,7 +98,7 @@ export default function ToolPage() {
         {tool.custom === 'redact' && <RedactTool key={key} />}
         {tool.custom === 'compare' && <CompareTool key={key} />}
         {tool.custom === 'scan' && <ScanTool key={key} />}
-        {tool.custom === 'image' && <ImageConvertTool key={key} />}
+        {tool.custom === 'image' && <ImageConvertTool key={key} initialFormat={alias?.target} />}
         {tool.custom === 'compress-image' && <CompressImageTool key={key} />}
         {tool.custom === 'zip' && <ZipTool key={key} />}
         {tool.custom === 'unzip' && <UnzipTool key={key} />}
@@ -103,6 +107,20 @@ export default function ToolPage() {
       </ClientOnly>
 
       {c && <ToolContentSections tool={tool} c={c} related={related} />}
+
+      {(alias || tool.slug === 'image-converter') && (
+        <div className="section-tight" style={{ marginTop: '3rem' }}>
+          <span className="eyebrow">More image conversions</span>
+          <div className="grid grid-3">
+            {['heic-to-jpg', 'heic-to-png', 'heic-to-webp', 'png-to-jpg', 'jpg-to-png', 'webp-to-jpg', 'webp-to-png', 'svg-to-png', 'svg-to-jpg']
+              .filter((s) => s !== slug)
+              .map((s) => {
+                const a = toolAliasBySlug(s)
+                return a ? <Link key={s} to={`/tools/${s}`} className="card card-hover" style={{ textDecoration: 'none' }}><h4>{a.name}</h4><p className="muted" style={{ margin: 0 }}>{a.source} to {a.target.toUpperCase()} in your browser.</p></Link> : null
+              })}
+          </div>
+        </div>
+      )}
 
       {guides.length > 0 && (
         <div className="section-tight" style={{ marginTop: '3rem' }}>

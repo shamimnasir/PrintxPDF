@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { Post } from '../../content/types'
 import { TOOLS } from '../../features/pdf/toolsMeta'
+import { TOOL_ALIASES } from '../../content/toolAliases'
 import { validateContent, LIMITS, type Issue } from '../../content/validate'
 import { useToast } from '../../components/ui/Toast'
 import { Card } from '../fields'
@@ -12,7 +13,7 @@ import { PostEditor } from './PostEditor'
 import { RulePanel } from './RulePanel'
 import { addPost, blankPost, changedClusters, changedFiles, deletePost, discardDraft, draftClusters, findPost, onDraftChange, savePost } from './draft'
 
-const TOOL_SLUGS = TOOLS.map((t) => t.slug)
+const TOOL_SLUGS = [...TOOLS.map((t) => t.slug), ...TOOL_ALIASES.map((a) => a.slug)]
 const today = () => new Date().toISOString().slice(0, 10)
 
 export function BlogAdmin() {

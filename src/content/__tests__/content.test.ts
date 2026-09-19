@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { ALL_POSTS, CLUSTERS, postBySlug } from '..'
 import { TOOLS } from '../../features/pdf/toolsMeta'
+import { TOOL_ALIASES } from '../toolAliases'
 import { formatIssues, validateContent, type Issue } from '../validate'
 
 // The rules themselves live in ../validate so the admin editor and the Worker enforce exactly what
@@ -8,7 +9,7 @@ import { formatIssues, validateContent, type Issue } from '../validate'
 // failure still points at one thing rather than at a wall of unrelated output.
 // A fixed date here fails the day it passes; compare against the real one.
 const TODAY = new Date().toISOString().slice(0, 10)
-const ISSUES: Issue[] = validateContent(CLUSTERS, TOOLS.map((t) => t.slug), TODAY)
+const ISSUES: Issue[] = validateContent(CLUSTERS, [...TOOLS.map((t) => t.slug), ...TOOL_ALIASES.map((a) => a.slug)], TODAY)
 const only = (...rules: string[]) => formatIssues(ISSUES.filter((i) => rules.includes(i.rule)))
 
 describe('content integrity', () => {

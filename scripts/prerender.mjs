@@ -95,6 +95,8 @@ async function loadData() {
     `export { CLUSTERS, ALL_POSTS } from ${JSON.stringify(path.join(ROOT, 'src/content/index.ts'))}
      export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
      export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}
+     export { TOOL_ALIASES } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliases.ts'))}
+     export { toolAliasContent } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliasContent.ts'))}
      export { fontHref, isDesignId } from ${JSON.stringify(path.join(ROOT, 'src/design/presets.ts'))}`,
   )
   await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
@@ -149,7 +151,7 @@ async function writeRoute(route, html) {
 }
 
 async function main() {
-  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, fontHref, isDesignId } = await loadData()
+  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, TOOL_ALIASES, toolAliasContent, fontHref, isDesignId } = await loadData()
   let cfg = {}
   try {
     cfg = JSON.parse(await readFile(path.join(ROOT, 'public/site-config.json'), 'utf8'))
@@ -355,6 +357,38 @@ async function main() {
     ].filter(Boolean)
     const bodyHtml = await ssr(route)
     await writeRoute(route, pageHtml(shell, { route, noindex: noindexAll, title: c?.metaTitle || `${t.name} | ${t.status === 'server' ? 'Free Online Converter' : 'Free, In Your Browser'}`, description: c?.metaDescription || `${t.description} ${t.status === 'server' ? 'Free for 5 files a month.' : 'No upload, no sign-up.'}`.slice(0, 158), canonical: `${SITE}${route}`, keywords: [t.name.toLowerCase(), `${t.name.toLowerCase()} free`, `${t.name.toLowerCase()} online`], schema, bodyHtml }))
+    count++
+  }
+
+  // ---------- format-specific image conversion landing pages ----------
+  for (const a of TOOL_ALIASES) {
+    const base = TOOLS.find((t) => t.slug === a.baseSlug)
+    if (!base || hiddenTools.has(base.slug)) continue
+    const route = `/tools/${a.slug}`
+    const c = toolAliasContent(a)
+    const schema = [
+      crumbs([
+        { name: 'Home', path: '/' },
+        { name: 'Tools', path: '/tools' },
+        { name: a.name, path: route },
+      ]),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: a.name,
+        description: a.metaDescription,
+        url: `${SITE}${route}`,
+        applicationCategory: 'UtilitiesApplication',
+        operatingSystem: 'Any (web browser)',
+        browserRequirements: 'Requires JavaScript',
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        publisher,
+      },
+      { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faqs.map((f) => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: plain(f.a) } })) },
+      { '@context': 'https://schema.org', '@type': 'HowTo', name: c.howHeading, description: plain(c.answer), ...(SCREENS[base.slug] ? { image: `${SITE}/screens/tools/${base.slug}.jpg` } : {}), totalTime: 'PT2M', estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' }, tool: [{ '@type': 'HowToTool', name: 'A web browser' }], step: c.how.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: plain(s.h), text: plain(s.x), url: `${SITE}${route}#how-step-${i + 1}` })) },
+    ]
+    const bodyHtml = await ssr(route)
+    await writeRoute(route, pageHtml(shell, { route, noindex: noindexAll, title: a.metaTitle, description: a.metaDescription, canonical: `${SITE}${route}`, keywords: a.keywords, schema, bodyHtml }))
     count++
   }
 

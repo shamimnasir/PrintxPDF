@@ -10,10 +10,10 @@ type Done = { name: string; before: number; after: number; url: string; width: n
 
 const SVG_SCALES = [1, 2, 3] as const
 
-export default function ImageConvertTool() {
+export default function ImageConvertTool({ initialFormat = 'jpg' }: { initialFormat?: OutFormat } = {}) {
   const { toast } = useToast()
   const [files, setFiles] = useState<File[]>([])
-  const [format, setFormat] = useState<OutFormat>('jpg')
+  const [format, setFormat] = useState<OutFormat>(initialFormat)
   const [quality, setQuality] = useState(0.9)
   const [svgScale, setSvgScale] = useState<number>(2)
   const [svgWidth, setSvgWidth] = useState('')
