@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ToolCard } from '../features/pdf/ToolCard'
 import { useVisibleTools } from '../features/pdf/useTools'
 import { useSiteConfig } from '../admin/useSiteConfig'
+import { ToolShot } from '../components/ui/ToolShot'
 import { breadcrumbSchema, softwareSchema, useSeo } from '../lib/seo'
 import '../features/pdf/tools.css'
 
@@ -139,6 +140,25 @@ export default function Home() {
         </div>
       </div>
       )}
+
+      <section className="section" style={{ paddingBottom: '1rem' }}>
+        <div className="container">
+          <div className="card card-acid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.1fr) minmax(280px, 0.9fr)', gap: '2rem', alignItems: 'center' }}>
+            <div>
+              <span className="eyebrow">New · Privacy-first PDF Editor</span>
+              <h2 style={{ margin: '0.5rem 0 0.75rem' }}>Edit, sign and prepare PDFs without uploading them.</h2>
+              <p style={{ fontWeight: 600, maxWidth: '54ch' }}>
+                Add text, highlights, comments, signatures and fillable fields, reorder pages, delete pages, then download the result. Your original file stays unchanged in your browser.
+              </p>
+              <div className="row" style={{ gap: '0.6rem', flexWrap: 'wrap' }}>
+                <Link to="/tools/edit-pdf" className="btn btn-ink">Open the PDF editor</Link>
+                <Link to="/blog/edit/how-to-edit-a-pdf" className="btn">See how it works</Link>
+              </div>
+            </div>
+            <ToolShot slug="edit-pdf" caption="One local editor for annotations, fields, signatures and page work." />
+          </div>
+        </div>
+      </section>
 
       <section className="section">
         <div className="container">

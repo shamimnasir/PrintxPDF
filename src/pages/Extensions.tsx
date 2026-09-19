@@ -19,7 +19,7 @@ const USES: [string, string][] = [
   ['Recipes', 'Skip the backstory. Drag over it to delete, then print the ingredients and the steps.'],
   ['Receipts and confirmations', 'Save order pages and tickets as tidy PDFs for your records.'],
   ['Research', 'Turn documentation and papers into readable PDFs with highlights and notes.'],
-  ['Snapshots', 'Save the cleaned page as an image for slides and messages.'],
+    ['Snapshots', 'Capture the visible tab locally, including logged-in pages that the web fetcher cannot read. The screenshot never passes through PrintxPDF.'],
   ['Email to self', 'One click opens a prefilled email containing the cleaned text.'],
 ]
 

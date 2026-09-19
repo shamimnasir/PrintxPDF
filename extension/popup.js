@@ -19,6 +19,7 @@ const el = {
   target: document.getElementById('target'),
   clean: document.getElementById('clean'),
   editpdf: document.getElementById('editpdf'),
+  capture: document.getElementById('capture'),
   paste: document.getElementById('paste'),
   copy: document.getElementById('copy'),
   status: document.getElementById('status'),
@@ -183,6 +184,16 @@ el.editpdf.addEventListener('click', async () => {
   if (!pageUrl) return
   await openTab(`${EDIT_URL}?url=${encodeURIComponent(pageUrl)}`)
   window.close()
+})
+
+el.capture.addEventListener('click', async () => {
+  try {
+    const dataUrl = await chrome.tabs.captureVisibleTab(activeTab?.windowId, { format: 'png' })
+    await chrome.downloads.download({ url: dataUrl, filename: `printxpdf-capture-${new Date().toISOString().slice(0, 10)}.png`, saveAs: true })
+    say('Screenshot saved locally. It was not uploaded.')
+  } catch {
+    say('Chrome could not capture this tab. Try a normal web page, not a browser settings page.', 'error')
+  }
 })
 
 el.paste.addEventListener('click', async () => {
