@@ -404,7 +404,10 @@
   border-radius: inherit;
 }
 .edit-stage[data-mode='text'],
-.edit-stage[data-mode='image'] {
+.edit-stage[data-mode='image'],
+.edit-stage[data-mode='signature'],
+.edit-stage[data-mode='note'],
+.edit-stage[data-mode='field'] {
   cursor: copy;
 }
 .edit-stage[data-mode='rect'],
@@ -422,6 +425,24 @@
   white-space: pre;
   line-height: 1.2;
   transform-origin: top left;
+}
+.edit-note {
+  padding: 0.35rem;
+  background: #ffe566;
+  border: 1px solid #a47f00;
+  color: #1f1b08;
+  font: 700 0.75rem/1.25 system-ui, sans-serif;
+  overflow: hidden;
+}
+.edit-field {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.4rem;
+  background: rgba(219, 228, 255, 0.72);
+  border: 2px dashed var(--acid);
+  color: var(--ink);
+  font: 600 0.7rem/1.2 var(--font-mono);
+  overflow: hidden;
 }
 .edit-item.sel {
   outline: var(--bw-thin) dashed var(--alarm);
@@ -452,6 +473,49 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+.edit-pages-panel {
+  max-height: 280px;
+  overflow: auto;
+}
+.edit-page-thumbs {
+  display: flex;
+  gap: 0.65rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.1rem;
+}
+.edit-page-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 0 0 76px;
+}
+.edit-page-thumb {
+  position: relative;
+  display: block;
+  width: 70px;
+  padding: 3px;
+  border: var(--bw-thin) solid var(--line);
+  background: #fff;
+  cursor: pointer;
+}
+.edit-page-thumb.active {
+  outline: 3px solid var(--acid);
+}
+.edit-page-thumb canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.edit-page-thumb span {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  padding: 0.05rem 0.25rem;
+  background: var(--acid);
+  color: var(--acid-fg);
+  font: 700 0.65rem var(--font-mono);
 }
 
 /* ---- forms ---- */

@@ -15,15 +15,20 @@ type TextItem = Base & { kind: 'text'; x: number; y: number; text: string; size:
 type ImageItem = Base & { kind: 'image'; x: number; y: number; w: number; h: number; src: string }
 type RectItem = Base & { kind: 'rect'; x: number; y: number; w: number; h: number; color: string; fill: boolean; opacity: number; border: number }
 type InkItem = Base & { kind: 'ink'; pts: Pt[]; color: string; width: number }
-type Item = TextItem | ImageItem | RectItem | InkItem
-type Mode = 'select' | 'text' | 'image' | 'rect' | 'highlight' | 'ink' | 'erase'
+type NoteItem = Base & { kind: 'note'; x: number; y: number; w: number; h: number; text: string }
+type FieldItem = Base & { kind: 'field'; x: number; y: number; w: number; h: number; fieldType: 'text' | 'checkbox'; name: string }
+type Item = TextItem | ImageItem | RectItem | InkItem | NoteItem | FieldItem
+type Mode = 'select' | 'text' | 'image' | 'signature' | 'rect' | 'highlight' | 'note' | 'field' | 'ink' | 'erase'
 
 const MODES: [Mode, string, string][] = [
   ['select', '➤', 'Select and move'],
   ['text', 'T', 'Add text'],
   ['image', '▣', 'Place an image'],
+  ['signature', '✍', 'Place a signature image'],
   ['rect', '▭', 'Draw a rectangle'],
   ['highlight', '▰', 'Highlight an area'],
+  ['note', '▱', 'Add a comment note'],
+  ['field', '☑', 'Add a fillable field'],
   ['ink', '✎', 'Draw freehand'],
   ['erase', '⌫', 'Erase: click an item to remove it'],
 ]
@@ -31,17 +36,39 @@ const UNDO_DEPTH = 40
 
 const clamp01 = (n: number) => Math.min(1, Math.max(0, n))
 
+function PageThumb({ pdf, page, active, onClick }: { pdf: Pdf; page: number; active: boolean; onClick: () => void }) {
+  const ref = useRef<HTMLCanvasElement>(null)
+  useEffect(() => {
+    let alive = true
+    renderPageToCanvas(pdf, page + 1, 0.22).then((canvas) => {
+      if (!alive || !ref.current) return
+      ref.current.width = canvas.width
+      ref.current.height = canvas.height
+      ref.current.getContext('2d')?.drawImage(canvas, 0, 0)
+    })
+    return () => {
+      alive = false
+    }
+  }, [pdf, page])
+  return (
+    <button type="button" className={`edit-page-thumb ${active ? 'active' : ''}`} onClick={onClick} aria-label={`Go to page ${page + 1}`}>
+      <canvas ref={ref} />
+      <span>{page + 1}</span>
+    </button>
+  )
+}
+
 export default function EditTool() {
   const { toast } = useToast()
   const [params] = useSearchParams()
   const [file, setFile] = useState<File | null>(null)
   const [pdf, setPdf] = useState<Pdf | null>(null)
   const [pageNo, setPageNo] = useState(1)
+  const [pageOrder, setPageOrder] = useState<number[]>([])
   /** page size in points as displayed, needed to convert point sizes to screen pixels */
   const [dims, setDims] = useState<{ vw: number; vh: number }>({ vw: 612, vh: 792 })
   const [stageW, setStageW] = useState(0)
   const [items, setItems] = useState<Item[]>([])
-  const [deletedPages, setDeletedPages] = useState<Set<number>>(new Set())
   const [mode, setMode] = useState<Mode>('text')
   const [sel, setSel] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
@@ -92,8 +119,8 @@ export default function EditTool() {
         if (!alive) return
         setPdf(p)
         setPageNo(1)
+        setPageOrder(Array.from({ length: p.numPages }, (_, i) => i))
         setItems([])
-        setDeletedPages(new Set())
         history.current = []
         setCanUndo(false)
       })
@@ -124,13 +151,14 @@ export default function EditTool() {
   // ---- page render ----
   useEffect(() => {
     if (!pdf) return
+    const sourcePage = pageOrder[pageNo - 1] ?? 0
     let cancel = false
     ;(async () => {
-      const page = await pdf.getPage(pageNo)
+      const page = await pdf.getPage(sourcePage + 1)
       const vp = page.getViewport({ scale: 1 })
       if (cancel) return
       setDims({ vw: vp.width, vh: vp.height })
-      const c = await renderPageToCanvas(pdf, pageNo, 1.4)
+      const c = await renderPageToCanvas(pdf, sourcePage + 1, 1.4)
       if (cancel || !canvasRef.current) return
       const s = canvasRef.current
       s.width = c.width
@@ -140,7 +168,7 @@ export default function EditTool() {
     return () => {
       cancel = true
     }
-  }, [pdf, pageNo])
+  }, [pdf, pageNo, pageOrder])
 
   // ---- stage width, so point sizes can be shown at the right pixel size ----
   useEffect(() => {
@@ -173,7 +201,8 @@ export default function EditTool() {
   }, [undo, sel, push])
 
   const pxPerPt = stageW && dims.vw ? stageW / dims.vw : 1
-  const pageItems = items.filter((i) => i.page === pageNo - 1)
+  const sourcePage = pageOrder[pageNo - 1] ?? 0
+  const pageItems = items.filter((i) => i.page === sourcePage)
   const selected = items.find((i) => i.id === sel) || null
 
   const frac = (e: { clientX: number; clientY: number }) => {
@@ -189,7 +218,7 @@ export default function EditTool() {
   const onStageDown = (e: React.PointerEvent) => {
     if (!pdf || drag.current) return
     const p = frac(e)
-    const page = pageNo - 1
+    const page = sourcePage
     if (mode === 'text' || mode === 'highlight') {
       if (mode === 'highlight') {
         draft.current = { kind: 'rect', x: p.x, y: p.y }
@@ -201,11 +230,21 @@ export default function EditTool() {
       push((list) => [...list, { id, kind: 'text', page, x: p.x, y: p.y, text: 'New text', size, color, bold }])
       setSel(id)
       setMode('select')
-    } else if (mode === 'image') {
+    } else if (mode === 'image' || mode === 'signature') {
       if (!pending) return toast('Choose an image in the panel first', 'error')
       const w = 0.3
       const id = uid()
       push((list) => [...list, { id, kind: 'image', page, x: clamp01(p.x - w / 2), y: p.y, w, h: (w * dims.vw) / dims.vh / pending.aspect, src: pending.src }])
+      setSel(id)
+      setMode('select')
+    } else if (mode === 'note') {
+      const id = uid()
+      push((list) => [...list, { id, kind: 'note', page, x: p.x, y: p.y, w: 0.24, h: 0.12, text: 'Comment' }])
+      setSel(id)
+      setMode('select')
+    } else if (mode === 'field') {
+      const id = uid()
+      push((list) => [...list, { id, kind: 'field', page, x: p.x, y: p.y, w: 0.34, h: 0.055, fieldType: 'text', name: `field_${list.length + 1}` }])
       setSel(id)
       setMode('select')
     } else if (mode === 'rect') {
@@ -228,7 +267,7 @@ export default function EditTool() {
         list.map((i) => {
           if (i.id !== id) return i
           if (i.kind === 'ink') return i
-          if (resize && (i.kind === 'image' || i.kind === 'rect')) {
+          if (resize && (i.kind === 'image' || i.kind === 'rect' || i.kind === 'note' || i.kind === 'field')) {
             return { ...i, w: Math.max(0.02, p.x - i.x), h: Math.max(0.02, p.y - i.y) }
           }
           if (i.kind === 'text') return { ...i, x: clamp01(p.x - dx), y: clamp01(p.y - dy) }
@@ -259,14 +298,14 @@ export default function EditTool() {
       draft.current = null
       if (draftRect && draftRect.w > 0.01 && draftRect.h > 0.01) {
         const id = uid()
-        push((list) => [...list, { id, kind: 'rect', page: pageNo - 1, ...draftRect, color, fill, opacity, border: stroke }])
+        push((list) => [...list, { id, kind: 'rect', page: sourcePage, ...draftRect, color, fill, opacity, border: stroke }])
         setSel(id)
       }
       setDraftRect(null)
       return
     }
     if (draftInk) {
-      if (draftInk.length > 1) push((list) => [...list, { id: uid(), kind: 'ink', page: pageNo - 1, pts: draftInk, color, width: stroke }])
+      if (draftInk.length > 1) push((list) => [...list, { id: uid(), kind: 'ink', page: sourcePage, pts: draftInk, color, width: stroke }])
       setDraftInk(null)
     }
   }
@@ -296,8 +335,8 @@ export default function EditTool() {
     const img = new Image()
     img.onload = () => {
       setPending({ src, aspect: img.naturalWidth / img.naturalHeight })
-      setMode('image')
-      toast('Now click the page to place it')
+      setMode(mode === 'signature' ? 'signature' : 'image')
+      toast(mode === 'signature' ? 'Now click the page to place the signature' : 'Now click the page to place it')
     }
     img.onerror = () => toast('Could not open that image', 'error')
     img.src = src
@@ -305,19 +344,19 @@ export default function EditTool() {
 
   // ---- export ----
   const exportPdf = async () => {
-    if (!file || (!items.length && !deletedPages.size)) return
+    if (!file || !items.length) return
     setBusy(true)
     try {
       const { PDFDocument, StandardFonts, rgb, degrees, LineCapStyle } = await import('pdf-lib')
-      const doc = await PDFDocument.load(await file.arrayBuffer(), { ignoreEncryption: true, updateMetadata: false })
+      const source = await PDFDocument.load(await file.arrayBuffer(), { ignoreEncryption: true, updateMetadata: false })
+      const doc = await PDFDocument.create()
+      const copied = await doc.copyPages(source, pageOrder.length ? pageOrder : Array.from({ length: source.getPageCount() }, (_, i) => i))
+      copied.forEach((page) => doc.addPage(page))
       const regular = await doc.embedFont(StandardFonts.Helvetica)
       const heavy = await doc.embedFont(StandardFonts.HelveticaBold)
-      const count = doc.getPageCount()
-      if (deletedPages.size >= count) throw new Error('Keep at least one page in the PDF.')
-      ;[...deletedPages].sort((a, b) => b - a).forEach((page) => doc.removePage(page))
       for (const it of items) {
-        if (deletedPages.has(it.page) || it.page >= count) continue
-        const pageIndex = it.page - [...deletedPages].filter((p) => p < it.page).length
+        const pageIndex = (pageOrder.length ? pageOrder : Array.from({ length: source.getPageCount() }, (_, i) => i)).indexOf(it.page)
+        if (pageIndex < 0) continue
         const page = doc.getPage(pageIndex)
         const { VW, VH } = visualRect(page, 0, 0, 1, 1)
         if (it.kind === 'text') {
@@ -349,6 +388,20 @@ export default function EditTool() {
             borderWidth: it.fill ? 0 : it.border,
             borderOpacity: it.fill ? undefined : it.opacity,
           })
+        } else if (it.kind === 'note') {
+          const r = visualRect(page, it.x, it.y, it.w, it.h)
+          page.drawRectangle({ x: r.x, y: r.y, width: r.width, height: r.height, color: rgb(1, 0.92, 0.35), opacity: 0.9, borderColor: rgb(0.65, 0.5, 0), borderWidth: 1 })
+          page.drawText(it.text, { x: r.x + 6, y: r.y + r.height - 16, size: 11, font: regular, color: rgb(0.12, 0.12, 0.12) })
+        } else if (it.kind === 'field') {
+          const r = visualRect(page, it.x, it.y, it.w, it.h)
+          const form = doc.getForm()
+          if (it.fieldType === 'checkbox') {
+            const checkbox = form.createCheckBox(it.name)
+            checkbox.addToPage(page, { x: r.x, y: r.y, width: r.width, height: r.height })
+          } else {
+            const field = form.createTextField(it.name)
+            field.addToPage(page, { x: r.x, y: r.y, width: r.width, height: r.height, borderWidth: 1 })
+          }
         } else {
           const [cr, cg, cb] = hexToRgb01(it.color)
           for (let i = 1; i < it.pts.length; i++) {
@@ -388,18 +441,18 @@ export default function EditTool() {
             <button className="icon-btn" disabled={pageNo <= 1} onClick={() => setPageNo(pageNo - 1)} aria-label="Previous page">
               ‹
             </button>
-            <span className="mono">Page {pageNo} / {pdf?.numPages ?? '…'}</span>
-            <button className="icon-btn" disabled={!pdf || pageNo >= pdf.numPages} onClick={() => setPageNo(pageNo + 1)} aria-label="Next page">
+            <span className="mono">Page {pageNo} / {pageOrder.length || pdf?.numPages || '…'}</span>
+            <button className="icon-btn" disabled={!pdf || pageNo >= pageOrder.length} onClick={() => setPageNo(pageNo + 1)} aria-label="Next page">
               ›
             </button>
             <span className="badge">{pageItems.length} on this page</span>
             {pdf && (
               <button
                 className="btn btn-sm btn-ghost"
-                disabled={pdf.numPages - deletedPages.size <= 1 || deletedPages.has(pageNo - 1)}
+                disabled={pageOrder.length <= 1}
                 onClick={() => {
-                  setDeletedPages((prev) => new Set([...prev, pageNo - 1]))
-                  setPageNo((n) => (n < (pdf?.numPages || 1) ? n + 1 : Math.max(1, n - 1)))
+                  setPageOrder((order) => order.filter((_, i) => i !== pageNo - 1))
+                  setPageNo((n) => Math.min(n, Math.max(1, pageOrder.length - 1)))
                   setSel(null)
                 }}
               >
@@ -457,6 +510,20 @@ export default function EditTool() {
                       {l || ' '}
                     </span>
                   ))}
+                </div>
+              )
+            if (it.kind === 'note')
+              return (
+                <div key={it.id} className={`edit-item edit-note ${isSel ? 'sel' : ''}`} style={{ left: `${it.x * 100}%`, top: `${it.y * 100}%`, width: `${it.w * 100}%`, height: `${it.h * 100}%` }} onPointerDown={(e) => onItemDown(e, it)}>
+                  {it.text}
+                  {isSel && mode === 'select' && <span className="edit-handle" onPointerDown={(e) => onItemDown(e, it, true)} />}
+                </div>
+              )
+            if (it.kind === 'field')
+              return (
+                <div key={it.id} className={`edit-item edit-field ${isSel ? 'sel' : ''}`} style={{ left: `${it.x * 100}%`, top: `${it.y * 100}%`, width: `${it.w * 100}%`, height: `${it.h * 100}%` }} onPointerDown={(e) => onItemDown(e, it)}>
+                  {it.fieldType === 'checkbox' ? '☐' : it.name}
+                  {isSel && mode === 'select' && <span className="edit-handle" onPointerDown={(e) => onItemDown(e, it, true)} />}
                 </div>
               )
             return (
@@ -529,6 +596,24 @@ export default function EditTool() {
         </div>
       </div>
 
+      <div className="stack">
+      <div className="card stack edit-pages-panel">
+        <div className="row between">
+          <h4 style={{ margin: 0 }}>Pages</h4>
+          <span className="muted" style={{ fontSize: '0.8rem' }}>Drag order with arrows</span>
+        </div>
+        <div className="edit-page-thumbs">
+          {pageOrder.map((page, i) => (
+            <div key={page} className="edit-page-entry">
+              <PageThumb pdf={pdf!} page={page} active={i === pageNo - 1} onClick={() => setPageNo(i + 1)} />
+              <div className="row" style={{ gap: '0.25rem' }}>
+                <button className="icon-btn" disabled={i === 0} onClick={() => setPageOrder((order) => { const next = [...order]; [next[i - 1], next[i]] = [next[i], next[i - 1]]; return next })} aria-label="Move page up">↑</button>
+                <button className="icon-btn" disabled={i === pageOrder.length - 1} onClick={() => setPageOrder((order) => { const next = [...order]; [next[i], next[i + 1]] = [next[i + 1], next[i]]; return next })} aria-label="Move page down">↓</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="card stack">
         <h4 style={{ margin: 0 }}>{selected ? 'Selected item' : 'New item style'}</h4>
 
@@ -577,6 +662,27 @@ export default function EditTool() {
               </label>
               <input id="ed-ro" type="range" min={5} max={100} value={Math.round(selected.opacity * 100)} onChange={(e) => patch(selected.id, { opacity: Number(e.target.value) / 100 })} />
             </div>
+          </>
+        )}
+
+        {selected && selected.kind === 'note' && (
+          <div>
+            <label className="label" htmlFor="ed-note">Comment</label>
+            <textarea id="ed-note" className="textarea" value={selected.text} onChange={(e) => patch(selected.id, { text: e.target.value })} />
+          </div>
+        )}
+
+        {selected && selected.kind === 'field' && (
+          <>
+            <div>
+              <label className="label" htmlFor="ed-field-name">Field name</label>
+              <input id="ed-field-name" className="input" value={selected.name} onChange={(e) => patch(selected.id, { name: e.target.value.replace(/[^a-zA-Z0-9_]/g, '_') })} />
+            </div>
+            <label className="label" htmlFor="ed-field-type">Field type</label>
+            <select id="ed-field-type" className="input" value={selected.fieldType} onChange={(e) => patch(selected.id, { fieldType: e.target.value })}>
+              <option value="text">Text field</option>
+              <option value="checkbox">Checkbox</option>
+            </select>
           </>
         )}
 
@@ -639,7 +745,7 @@ export default function EditTool() {
 
         <div>
           <label className="label" htmlFor="ed-img">
-            Image to place
+            Image or signature to place
           </label>
           <input id="ed-img" className="input" type="file" accept="image/png,image/jpeg" onChange={(e) => pickImage(e.target.files?.[0])} />
           {pending && <p className="muted" style={{ margin: '0.4rem 0 0', fontSize: '0.8rem' }}>Ready, click the page to drop it in.</p>}
@@ -648,10 +754,11 @@ export default function EditTool() {
         <button className="btn btn-acid btn-lg btn-block" disabled={!items.length || busy} onClick={exportPdf}>
           {busy ? 'Saving…' : `Save & download (${items.length})`}
         </button>
-          <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
+        <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
             Ctrl/Cmd+Z undoes the last change. Text is written in a standard font. Everything is placed on top of the
           page, so the original text underneath stays as it is. Highlights and page deletion are included in the saved PDF. To remove sensitive text for good, use Redact PDF.
         </p>
+      </div>
       </div>
     </div>
   )
