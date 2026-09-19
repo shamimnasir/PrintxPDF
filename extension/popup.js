@@ -12,11 +12,13 @@
 
 const SITE = 'https://printxpdf.com'
 const PRINT_URL = `${SITE}/print`
+const EDIT_URL = `${SITE}/tools/edit-pdf`
 const PASTE_URL = `${PRINT_URL}?paste=1`
 
 const el = {
   target: document.getElementById('target'),
   clean: document.getElementById('clean'),
+  editpdf: document.getElementById('editpdf'),
   paste: document.getElementById('paste'),
   copy: document.getElementById('copy'),
   status: document.getElementById('status'),
@@ -29,6 +31,14 @@ let pageUrl = null
 
 const isPrintable = (url) => typeof url === 'string' && /^https?:\/\//i.test(url)
 const cleanUrlFor = (target) => `${PRINT_URL}?url=${encodeURIComponent(target)}`
+const isPdfUrl = (url) => {
+  try {
+    const u = new URL(url)
+    return isPrintable(url) && /\.pdf$/i.test(u.pathname)
+  } catch {
+    return false
+  }
+}
 
 function say(message, tone) {
   el.status.textContent = message
@@ -129,6 +139,11 @@ async function init() {
   if (pageUrl) {
     el.target.textContent = pretty(pageUrl)
     el.target.title = pageUrl
+    if (isPdfUrl(pageUrl)) {
+      el.editpdf.hidden = false
+      el.clean.textContent = 'Edit this PDF'
+      el.clean.title = 'Open the same PDF editor used on printxpdf.com'
+    }
     return
   }
   // Degrade honestly: say which page this is and leave the paths that still work.
@@ -160,7 +175,13 @@ async function openTab(url) {
 }
 
 el.clean.addEventListener('click', async () => {
-  await openTab(pageUrl ? cleanUrlFor(pageUrl) : PRINT_URL)
+  await openTab(pageUrl ? (isPdfUrl(pageUrl) ? `${EDIT_URL}?url=${encodeURIComponent(pageUrl)}` : cleanUrlFor(pageUrl)) : PRINT_URL)
+  window.close()
+})
+
+el.editpdf.addEventListener('click', async () => {
+  if (!pageUrl) return
+  await openTab(`${EDIT_URL}?url=${encodeURIComponent(pageUrl)}`)
   window.close()
 })
 

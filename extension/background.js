@@ -17,6 +17,7 @@
 
 const SITE = 'https://printxpdf.com'
 const PRINT_URL = `${SITE}/print`
+const EDIT_URL = `${SITE}/tools/edit-pdf`
 
 const MENU_ITEMS = [
   { id: 'printxpdf-page', title: 'Clean this page for printing', contexts: ['page'] },
@@ -40,6 +41,14 @@ function isPrintable(url) {
 
 function cleanUrlFor(target) {
   return `${PRINT_URL}?url=${encodeURIComponent(target)}`
+}
+
+function isPdfUrl(url) {
+  try {
+    return isPrintable(url) && /\.pdf$/i.test(new URL(url).pathname)
+  } catch {
+    return false
+  }
 }
 
 async function preferNewTab() {
@@ -182,7 +191,7 @@ async function cleanCurrentPage(tab) {
   const url = await resolveTabUrl(tab)
   // A chrome://, file:// or Web Store tab cannot be read by any extension;
   // opening the tool's own entry point is the honest fallback.
-  await openTarget(url ? cleanUrlFor(url) : PRINT_URL, tab)
+  await openTarget(url ? (isPdfUrl(url) ? `${EDIT_URL}?url=${encodeURIComponent(url)}` : cleanUrlFor(url)) : PRINT_URL, tab)
 }
 
 async function cleanLink(linkUrl, tab) {

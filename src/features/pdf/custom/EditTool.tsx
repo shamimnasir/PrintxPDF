@@ -5,6 +5,7 @@ import { downloadBlob, readAsDataURL, stripExt } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { uid } from '../../../lib/store'
 import { hexToRgb01, visualRect } from './pdfGeom'
+import { useSearchParams } from 'react-router-dom'
 
 type Pdf = Awaited<ReturnType<typeof loadPdf>>
 type Pt = { x: number; y: number }
@@ -15,13 +16,14 @@ type ImageItem = Base & { kind: 'image'; x: number; y: number; w: number; h: num
 type RectItem = Base & { kind: 'rect'; x: number; y: number; w: number; h: number; color: string; fill: boolean; opacity: number; border: number }
 type InkItem = Base & { kind: 'ink'; pts: Pt[]; color: string; width: number }
 type Item = TextItem | ImageItem | RectItem | InkItem
-type Mode = 'select' | 'text' | 'image' | 'rect' | 'ink' | 'erase'
+type Mode = 'select' | 'text' | 'image' | 'rect' | 'highlight' | 'ink' | 'erase'
 
 const MODES: [Mode, string, string][] = [
   ['select', '➤', 'Select and move'],
   ['text', 'T', 'Add text'],
   ['image', '▣', 'Place an image'],
   ['rect', '▭', 'Draw a rectangle'],
+  ['highlight', '▰', 'Highlight an area'],
   ['ink', '✎', 'Draw freehand'],
   ['erase', '⌫', 'Erase: click an item to remove it'],
 ]
@@ -31,6 +33,7 @@ const clamp01 = (n: number) => Math.min(1, Math.max(0, n))
 
 export default function EditTool() {
   const { toast } = useToast()
+  const [params] = useSearchParams()
   const [file, setFile] = useState<File | null>(null)
   const [pdf, setPdf] = useState<Pdf | null>(null)
   const [pageNo, setPageNo] = useState(1)
@@ -38,6 +41,7 @@ export default function EditTool() {
   const [dims, setDims] = useState<{ vw: number; vh: number }>({ vw: 612, vh: 792 })
   const [stageW, setStageW] = useState(0)
   const [items, setItems] = useState<Item[]>([])
+  const [deletedPages, setDeletedPages] = useState<Set<number>>(new Set())
   const [mode, setMode] = useState<Mode>('text')
   const [sel, setSel] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
@@ -89,6 +93,7 @@ export default function EditTool() {
         setPdf(p)
         setPageNo(1)
         setItems([])
+        setDeletedPages(new Set())
         history.current = []
         setCanUndo(false)
       })
@@ -97,6 +102,24 @@ export default function EditTool() {
       alive = false
     }
   }, [file, toast])
+
+  // The extension hands PDF URLs to this same editor. Fetching is client-side, and a
+  // server that blocks cross-origin reads gets an honest error instead of a second editor.
+  useEffect(() => {
+    const url = params.get('url')
+    if (!url || file) return
+    let alive = true
+    fetch(url)
+      .then((r) => {
+        if (!r.ok) throw new Error(`The PDF returned ${r.status}`)
+        return r.blob()
+      })
+      .then((blob) => alive && setFile(new File([blob], url.split('/').pop()?.split('?')[0] || 'document.pdf', { type: 'application/pdf' })))
+      .catch((e) => alive && toast(`Could not open that PDF URL: ${(e as Error).message}. Download it, then drop the file here.`, 'error'))
+    return () => {
+      alive = false
+    }
+  }, [file, params, toast])
 
   // ---- page render ----
   useEffect(() => {
@@ -167,7 +190,13 @@ export default function EditTool() {
     if (!pdf || drag.current) return
     const p = frac(e)
     const page = pageNo - 1
-    if (mode === 'text') {
+    if (mode === 'text' || mode === 'highlight') {
+      if (mode === 'highlight') {
+        draft.current = { kind: 'rect', x: p.x, y: p.y }
+        setDraftRect({ x: p.x, y: p.y, w: 0, h: 0 })
+        ;(e.currentTarget as Element).setPointerCapture(e.pointerId)
+        return
+      }
       const id = uid()
       push((list) => [...list, { id, kind: 'text', page, x: p.x, y: p.y, text: 'New text', size, color, bold }])
       setSel(id)
@@ -276,7 +305,7 @@ export default function EditTool() {
 
   // ---- export ----
   const exportPdf = async () => {
-    if (!file || !items.length) return
+    if (!file || (!items.length && !deletedPages.size)) return
     setBusy(true)
     try {
       const { PDFDocument, StandardFonts, rgb, degrees, LineCapStyle } = await import('pdf-lib')
@@ -284,9 +313,12 @@ export default function EditTool() {
       const regular = await doc.embedFont(StandardFonts.Helvetica)
       const heavy = await doc.embedFont(StandardFonts.HelveticaBold)
       const count = doc.getPageCount()
+      if (deletedPages.size >= count) throw new Error('Keep at least one page in the PDF.')
+      ;[...deletedPages].sort((a, b) => b - a).forEach((page) => doc.removePage(page))
       for (const it of items) {
-        if (it.page >= count) continue
-        const page = doc.getPage(it.page)
+        if (deletedPages.has(it.page) || it.page >= count) continue
+        const pageIndex = it.page - [...deletedPages].filter((p) => p < it.page).length
+        const page = doc.getPage(pageIndex)
         const { VW, VH } = visualRect(page, 0, 0, 1, 1)
         if (it.kind === 'text') {
           const [cr, cg, cb] = hexToRgb01(it.color)
@@ -361,6 +393,19 @@ export default function EditTool() {
               ›
             </button>
             <span className="badge">{pageItems.length} on this page</span>
+            {pdf && (
+              <button
+                className="btn btn-sm btn-ghost"
+                disabled={pdf.numPages - deletedPages.size <= 1 || deletedPages.has(pageNo - 1)}
+                onClick={() => {
+                  setDeletedPages((prev) => new Set([...prev, pageNo - 1]))
+                  setPageNo((n) => (n < (pdf?.numPages || 1) ? n + 1 : Math.max(1, n - 1)))
+                  setSel(null)
+                }}
+              >
+                Delete page
+              </button>
+            )}
           </div>
           <div className="row" style={{ gap: '0.5rem' }}>
             <button className="btn btn-sm btn-ghost" onClick={undo} disabled={!canUndo}>
@@ -447,9 +492,9 @@ export default function EditTool() {
                 top: `${draftRect.y * 100}%`,
                 width: `${draftRect.w * 100}%`,
                 height: `${draftRect.h * 100}%`,
-                background: fill ? color : 'transparent',
-                opacity,
-                border: fill ? 'none' : `${Math.max(1, stroke * pxPerPt)}px solid ${color}`,
+                background: mode === 'highlight' ? '#ffe566' : fill ? color : 'transparent',
+                opacity: mode === 'highlight' ? 0.45 : opacity,
+                border: mode === 'highlight' || fill ? 'none' : `${Math.max(1, stroke * pxPerPt)}px solid ${color}`,
               }}
             />
           )}
@@ -603,9 +648,9 @@ export default function EditTool() {
         <button className="btn btn-acid btn-lg btn-block" disabled={!items.length || busy} onClick={exportPdf}>
           {busy ? 'Saving…' : `Save & download (${items.length})`}
         </button>
-        <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
-          Ctrl/Cmd+Z undoes the last change. Text is written in a standard font. Everything is placed on top of the
-          page, so the original text underneath stays as it is. To remove something for good, use Redact PDF.
+          <p className="muted" style={{ margin: 0, fontSize: '0.8rem' }}>
+            Ctrl/Cmd+Z undoes the last change. Text is written in a standard font. Everything is placed on top of the
+          page, so the original text underneath stays as it is. Highlights and page deletion are included in the saved PDF. To remove sensitive text for good, use Redact PDF.
         </p>
       </div>
     </div>

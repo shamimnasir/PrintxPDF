@@ -173,6 +173,9 @@ body {
   font-size: 12px;
   cursor: pointer;
 }
+.btn + .btn {
+  margin-top: 0.45rem;
+}
 .check input {
   width: 14px;
   height: 14px;
