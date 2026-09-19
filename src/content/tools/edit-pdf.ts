@@ -3,7 +3,7 @@ import type { ToolContent } from './types'
 export const editPdf: ToolContent = {
   slug: 'edit-pdf',
   answer:
-    'Edit PDF lets you add text, place PNG or JPG pictures, draw boxes and draw freehand on any page of a PDF, then saves them into the file. It puts new things on top of the existing page; the original text is not retyped or moved. Free, in your browser, nothing uploaded.',
+    'Edit PDF lets you add text, place PNG or JPG pictures, highlight areas, draw boxes and draw freehand on any page, delete unwanted pages, then save the result. It puts new things on top of the existing page; the original text is not retyped or moved. Free, in your browser, nothing uploaded.',
   whatHeading: 'What does editing a PDF mean?',
   what: [
     {
@@ -21,16 +21,17 @@ export const editPdf: ToolContent = {
   why: [
     { h: 'Fill in a form that has no fillable fields', x: 'Scanned or plain forms cannot be typed into by a PDF app. Click where the answer goes, type it, and download a file that looks filled.' },
     { h: 'Add a logo or stamp', x: 'Place a PNG or JPG, drag it into position, resize it from the corner, and it becomes part of the page.' },
-    { h: 'Mark up a draft', x: 'Highlight a clause with a see-through box, circle a figure by hand, add a note in red. Nothing to install.' },
+    { h: 'Mark up a draft', x: 'Highlight a clause with a see-through yellow marker, circle a figure by hand, or add a text note. Nothing to install.' },
+    { h: 'Remove unwanted pages', x: 'Delete a page from the toolbar before saving. The remaining pages keep their original order.' },
     { h: 'Edits are written into the page', x: 'Items are drawn into the page itself, not attached as removable notes, so every PDF app shows them and nobody can switch them off.' },
     { h: 'Private and free', x: 'The PDF and the pictures you place stay in the tab. No upload, no account, no watermark.' },
   ],
   howHeading: 'How to edit a PDF, step by step',
   how: [
     { h: 'Open Edit PDF and drop your file.', x: 'Drag one PDF onto the drop zone. The first page appears in the editor; use the arrows beside Page 1 / N to move through the document.' },
-    { h: 'Pick a tool from the toolbar.', x: 'The toolbar offers **Select and move**, **Add text**, **Place an image**, **Draw a rectangle**, **Freehand ink** and **Erase**. The panel on the right sets the style for new items: text size from 6 to 72 pt, colour, Bold, Filled rectangles, line width, and how see-through a rectangle is.' },
+    { h: 'Pick a tool from the toolbar.', x: 'The toolbar offers **Select and move**, **Add text**, **Place an image**, **Draw a rectangle**, **Highlight**, **Freehand ink** and **Erase**. The panel on the right sets the style for new items: text size from 6 to 72 pt, colour, Bold, Filled rectangles, line width, and opacity.' },
     { h: 'Click the page to add an item.', x: 'With Add text, click where the words go; a New text item appears and you edit its wording in the panel. For a picture, choose a PNG or JPG under Image to place, then click the page. For a rectangle, drag out the shape. For freehand ink, draw with the mouse or a finger.' },
-    { h: 'Adjust or remove.', x: 'Switch to Select and move to drag any item, or drag the corner square of a picture or rectangle to resize it. The panel shows the selected item and a Delete this item button; Erase deletes whatever you click. Undo, or Ctrl/Cmd+Z, steps back through the last forty changes.' },
+    { h: 'Adjust or remove.', x: 'Switch to Select and move to drag any item, or drag the corner square of a picture or rectangle to resize it. Use Delete page to remove the current page. The panel shows the selected item and a Delete this item button; Erase deletes whatever you click. Undo, or Ctrl/Cmd+Z, steps back through the last forty changes.' },
     { h: 'Click Save & download.', x: 'The button shows how many items will be written. They are drawn into the page and `name-edited.pdf` downloads. Your original file is unchanged, so keep it if you may want to edit again.' },
   ],
   faqs: [
@@ -44,7 +45,7 @@ export const editPdf: ToolContent = {
     },
     {
       q: 'Are the edits permanent?',
-      a: 'Yes. Text, pictures, boxes and freehand lines are drawn into the page of the downloaded file rather than attached as removable notes, so every PDF app shows them and they cannot be hidden or deleted from a reader. Your original is untouched, so edit a copy if you may need the clean version.',
+      a: 'Yes. Text, pictures, highlights, boxes and freehand lines are drawn into the page of the downloaded file rather than attached as removable notes, so every PDF app shows them and they cannot be hidden or deleted from a reader. Deleted pages are omitted from the downloaded copy. Your original is untouched, so edit a copy if you may need the clean version.',
     },
     {
       q: 'Can I add a picture such as a logo or a signature?',
@@ -57,6 +58,6 @@ export const editPdf: ToolContent = {
   ],
   entities: ['PDF', 'Edit PDF', 'Add text to PDF', 'PNG', 'JPEG', 'Annotation', 'Adobe Acrobat'],
   keywords: ['edit pdf', 'edit pdf online free', 'add text to pdf', 'add image to pdf', 'write on a pdf', 'edit pdf without uploading', 'draw on pdf'],
-  metaTitle: 'Edit PDF Online Free | Add Text, Pictures, Shapes',
-  metaDescription: 'Edit a PDF in your browser, free: add text, pictures, boxes and freehand drawing to any page and save them into the file. Nothing is uploaded or stored.',
+  metaTitle: 'Edit PDF Online Free | Add Text, Highlight, Delete Pages',
+  metaDescription: 'Edit PDFs free in your browser: add text, pictures, highlights, shapes and freehand marks, delete pages, then download. Nothing is uploaded.',
 }
