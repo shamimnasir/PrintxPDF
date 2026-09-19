@@ -43,7 +43,7 @@ Turn any web page into a clean printout or PDF, then merge, sign, shrink or conv
 
 **Medium (300 chars):**
 PrintxPDF strips the ads, menus and comment threads out of any web page so you can print or save
-just the article. It also carries 46 PDF tools: merge, split, sign, compress, OCR, redact, convert
+just the article. It also carries 44 PDF tools: merge, split, sign, compress, OCR, redact, convert
 and more. Most run entirely in your browser, so the file never leaves your computer. No account, no
 watermark.
 
@@ -74,5 +74,5 @@ The browser tools are free with no account, no card and no watermark, and they s
 ## Before submitting anywhere
 
 Screenshots live in `public/screens/tools/`, which are per-tool shots; a before and after of the page cleaner still needs taking. Lead with the page cleaner (before and after) rather than a
-tool grid: the cleaner is the thing nobody else does well, and a grid of 46 icons looks like every
+tool grid: the cleaner is the thing nobody else does well, and a grid of 44 icons looks like every
 other PDF site.
