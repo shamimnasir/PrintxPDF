@@ -145,7 +145,10 @@ async function auditTool(context, slug, t) {
     await page.locator('main h1').waitFor()
     // the workbench mounts after hydration
     await page.locator('main .dropzone, main input[type=file], main .tabs').first().waitFor({ timeout: 30000 })
-    if (t.files?.length) {
+    const canAttachFiles = t.files?.length
+      ? !t.uiOnly || (await Promise.all(t.files.map(async (file) => stat(file).then(() => true).catch(() => false)))).every(Boolean)
+      : false
+    if (canAttachFiles) {
       const input = page.locator('main input[type=file]').nth(t.input || 0)
       await input.setInputFiles(t.files)
       await sleep(600)
