@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { PLAN_LABEL } from '../../lib/api'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { TOOLS, CATEGORY_LABEL, MENUS } from '../../features/pdf/toolsMeta'
+import { TOOL_ALIASES } from '../../content/toolAliases'
 import { useUser } from '../../features/account/useUser'
 import { applyTheme, store } from '../../lib/store'
 import { safeStorage } from '../../admin/config'
@@ -69,6 +70,7 @@ export function Header() {
   }
 
   const visible = TOOLS.filter((t) => !cfg.tools.hidden.includes(t.slug))
+  const toolBySlug = new Map(TOOLS.map((t) => [t.slug, t]))
 
   return (
     <div className="header-stack" ref={ref}>
@@ -105,7 +107,7 @@ export function Header() {
 
         <nav id="main-nav" className="nav" aria-label="Main">
           {MENUS.map((m) => (
-            <NavMenu key={m.id} label={m.label} id={m.id} open={open} setOpen={setOpen} wide={m.id === 'pdf'}>
+            <NavMenu key={m.id} label={m.label} id={m.id} open={open} setOpen={setOpen} wide>
               {m.categories.map((c) => {
                 const inCat = visible.filter((t) => t.category === c)
                 if (!inCat.length) return null
@@ -120,6 +122,23 @@ export function Header() {
                   </div>
                 )
               })}
+              {(() => {
+                const aliases = TOOL_ALIASES.filter((alias) => {
+                  const base = toolBySlug.get(alias.baseSlug)
+                  return Boolean(base && !cfg.tools.hidden.includes(base.slug) && m.categories.includes(base.category))
+                })
+                if (!aliases.length) return null
+                return (
+                  <div style={{ breakInside: 'avoid' }}>
+                    <div className="menu-title">Popular searches</div>
+                    {aliases.map((alias) => (
+                      <Link key={alias.slug} to={`/tools/${alias.slug}`}>
+                        {alias.name}
+                      </Link>
+                    ))}
+                  </div>
+                )
+              })()}
               {m.id === 'pdf' && (
                 <div style={{ breakInside: 'avoid' }}>
                   <div className="menu-title">Learn</div>
