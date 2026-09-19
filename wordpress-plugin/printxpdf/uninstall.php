@@ -16,15 +16,15 @@ delete_option( 'printxpdf_settings' );
 
 // On multisite the option is stored per site, so clear each one.
 if ( is_multisite() ) {
-	$site_ids = get_sites(
+	$printxpdf_site_ids = get_sites(
 		array(
 			'fields' => 'ids',
 			'number' => 0,
 		)
 	);
 
-	foreach ( $site_ids as $site_id ) {
-		switch_to_blog( (int) $site_id );
+	foreach ( $printxpdf_site_ids as $printxpdf_site_id ) {
+		switch_to_blog( (int) $printxpdf_site_id );
 		delete_option( 'printxpdf_settings' );
 		restore_current_blog();
 	}

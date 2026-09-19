@@ -1,50 +1,31 @@
 # Submitting PrintxPDF to the WordPress.org plugin directory
 
-**Status: NOT SUBMITTED.** Nothing in this repository has been uploaded to WordPress.org.
-No account has been created, no ZIP has been sent, no SVN repository exists yet.
-Everything below is a human task list.
+**Status: SUBMITTED, review in progress.** WordPress.org account `affglad` has an
+active pending review for this plugin. The corrected package and directory assets
+are ready for the next review round.
 
-The plugin code, `readme.txt`, POT file and packaging are ready. Three things are
-not, and cannot be done by an automated agent:
-
-1. A real WordPress.org account and username (see [Blocker 1](#blocker-1--the-contributors-username)).
-2. The listing artwork — icon, banner (see [Blocker 2](#blocker-2--listing-artwork)).
-3. Real screenshots taken from a running site (see [Blocker 3](#blocker-3--screenshots)).
-
-`node scripts/build-wp-plugin.mjs` **fails on purpose** while Blocker 1 is outstanding.
-Use `--draft` to package a test ZIP anyway; never submit a draft build.
+`node scripts/build-wp-plugin.mjs` builds the review package at
+`dist-wp/printxpdf-wordpress-plugin-v1.0.0.zip` and copies the website download.
 
 ---
 
-## Blocker 1 — the `Contributors` username
+## Ownership verification requested by the reviewer
 
-`wordpress-plugin/printxpdf/readme.txt` currently reads:
+`wordpress-plugin/printxpdf/readme.txt` reads:
 
 ```
-Contributors: TODO-WORDPRESS-ORG-USERNAME
+Contributors: affglad
 ```
 
-That is a deliberate placeholder. `Contributors` must be a comma-separated list of
-**WordPress.org usernames that actually exist** (case sensitive, profile slug only —
-not a display name, not an email address). A username that does not resolve fails
-directory validation and the listing shows a contributor with no profile or avatar.
+`affglad` is the WordPress.org username used for the pending submission.
 
-To fix:
+The reviewer asked for the exact DNS TXT value `wordpressorg-affglad-verification`
+at the root of `printxpdf.com`, or an equivalent domain-email ownership proof.
 
-1. Create or sign in to an account at <https://login.wordpress.org/register>.
-   Note the **username**, which is the last path segment of
-   `https://profiles.wordpress.org/<username>/`.
-2. Replace the placeholder in `readme.txt` with that username.
-3. Re-run `node scripts/build-wp-plugin.mjs` (no `--draft`). It must exit 0.
-
-The build linter refuses any value matching `todo`, `xxx`, `placeholder`,
-`your-username` or `example`.
-
-## Blocker 2 — listing artwork
+## Directory artwork
 
 These images live in the SVN `assets/` directory, **not** inside the plugin ZIP.
-They must be produced by a human (or a designer); an agent cannot make brand artwork
-that a reviewer will accept as representative.
+The prepared assets are in this repository's `wordpress-plugin/assets/` directory.
 
 | File | Size | Notes |
 | --- | --- | --- |
@@ -56,7 +37,7 @@ that a reviewer will accept as representative.
 `.jpg` is accepted for banners; `icon.svg` is accepted in place of the two PNGs.
 Artwork must be family friendly and must not use anyone else's trademarks or logos.
 
-## Blocker 3 — screenshots
+## Directory screenshots
 
 `readme.txt` declares three screenshots. Each numbered item must have a matching
 image file in the SVN `assets/` directory or the listing shows a broken image.
@@ -67,9 +48,7 @@ image file in the SVN `assets/` directory or the listing shows a broken image.
 | 2. Settings > PrintxPDF, with placement, buttons, post types and alignment. | `screenshot-2.png` |
 | 3. The external service disclosure on the settings screen. | `screenshot-3.png` |
 
-Take these from a real WordPress install with the plugin active. If you ship fewer
-images, delete the surplus numbered lines from `== Screenshots ==` first — the
-caption list and the files must correspond exactly.
+These were captured from a real WordPress Playground install with the plugin active.
 
 ## Also verify before submitting
 

@@ -257,8 +257,10 @@ if (endpointHost) {
 // Slug consistency: text domain, textdomain path, POT domain, readme, option prefix.
 const textDomain = headers['Text Domain']
 if (textDomain !== SLUG) fail(`Text Domain "${textDomain}" is not the slug "${SLUG}"`)
-if (!new RegExp(`load_plugin_textdomain\\(\\s*'${SLUG}'`).test(mainSrc)) {
-  fail(`load_plugin_textdomain() does not use the '${SLUG}' domain`)
+if (/load_plugin_textdomain\s*\(/.test(mainSrc)) {
+  fail('load_plugin_textdomain() is unnecessary for WordPress.org-hosted plugins and should be removed')
+} else {
+  ok('translations rely on WordPress.org automatic loading')
 }
 const potPath = path.join(SRC, 'languages', `${SLUG}.pot`)
 if (existsSync(potPath) && !readFileSync(potPath, 'utf8').includes(`X-Domain: ${SLUG}`)) {

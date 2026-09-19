@@ -6,6 +6,7 @@ import { breadcrumbSchema, useSeo, SITE_URL } from '../lib/seo'
 const BOOKMARKLET = `javascript:(function(){window.open('${SITE_URL}${import.meta.env.BASE_URL}print?url='+encodeURIComponent(location.href))})()`
 
 const EXTENSION_ZIP = '/downloads/printxpdf-chrome-extension.zip'
+const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/printxpdf-%E2%80%94-print-web-pag/fhccenlandobeakkffmmjmpnlgeaibmn'
 
 const STEPS = [
   ['Download the extension', 'A small zipped folder, about 20 KB. Unzip it somewhere you will not delete by accident.'],
@@ -48,15 +49,18 @@ export default function Extensions() {
             email. Also works in Brave, Edge, Opera, Vivaldi and Arc, which all run Chrome extensions.
           </p>
           <div className="row" style={{ justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <a className="btn btn-acid btn-lg" href={EXTENSION_ZIP} download>
-              Download for Chrome
+            <a className="btn btn-acid btn-lg" href={CHROME_STORE_URL} target="_blank" rel="noopener noreferrer">
+              Install from Chrome Web Store
+            </a>
+            <a className="btn btn-lg" href={EXTENSION_ZIP} download>
+              Download manually
             </a>
             <Link to="/print" className="btn btn-lg">
               Or just paste a link
             </Link>
           </div>
           <p className="muted" style={{ marginTop: '1rem' }}>
-            Not in the Chrome Web Store yet, so for now you install it by hand. The three steps are below.
+            The store listing is the easiest install path. Manual installation is available below for developers and other Chromium browsers.
           </p>
         </div>
       </section>

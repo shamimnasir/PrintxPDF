@@ -239,17 +239,6 @@ function printxpdf_activate() {
 	add_option( PRINTXPDF_OPTION, printxpdf_defaults() );
 }
 
-add_action( 'init', 'printxpdf_load_textdomain' );
-
-/**
- * Load translations.
- *
- * @return void
- */
-function printxpdf_load_textdomain() {
-	load_plugin_textdomain( 'printxpdf', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-}
-
 add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'printxpdf_action_links' );
 
 /**
