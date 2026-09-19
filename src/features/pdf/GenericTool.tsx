@@ -162,10 +162,10 @@ function serverFields(slug: string, opts: Opts): Record<string, string> | undefi
   return undefined
 }
 
-export function GenericTool({ tool }: { tool: ToolMeta }) {
+export function GenericTool({ tool, initialOptions }: { tool: ToolMeta; initialOptions?: Record<string, string | number> }) {
   const { toast } = useToast()
   const [files, setFiles] = useState<File[]>([])
-  const [opts, setOpts] = useState<Opts>(() => Object.fromEntries((FIELDS[tool.slug] || []).map((f) => [f.key, f.default])))
+  const [opts, setOpts] = useState<Opts>(() => ({ ...Object.fromEntries((FIELDS[tool.slug] || []).map((f) => [f.key, f.default])), ...initialOptions }))
   const [busy, setBusy] = useState(false)
   const [progress, setProgress] = useState<{ f: number; msg?: string } | null>(null)
   const [results, setResults] = useState<Output[]>([])

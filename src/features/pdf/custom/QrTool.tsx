@@ -17,9 +17,9 @@ function Input({ k, label, placeholder, type = 'text', f, set }: { k: string; la
   )
 }
 
-export default function QrTool() {
+export default function QrTool({ initialKind = 'url' }: { initialKind?: Kind } = {}) {
   const { toast } = useToast()
-  const [kind, setKind] = useState<Kind>('url')
+  const [kind, setKind] = useState<Kind>(initialKind)
   const [f, setF] = useState<Record<string, string>>({ url: 'https://', text: '', ssid: '', pass: '', enc: 'WPA', email: '', subject: '', body: '', phone: '', sms: '', name: '', org: '', tel: '', vmail: '', site: '' })
   const [dark, setDark] = useState('#0b0b0f')
   const [light, setLight] = useState('#ffffff')

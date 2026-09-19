@@ -5,7 +5,7 @@ import { postsForTool } from '../../content'
 import { breadcrumbSchema, faqSchema, howToSchema, softwareSchema, useSeo, SITE_URL } from '../../lib/seo'
 import { shotAbsoluteUrl } from '../../components/ui/ToolShot'
 import { isFilled, toolContent } from '../../content/tools'
-import { toolAliasBySlug } from '../../content/toolAliases'
+import { TOOL_ALIASES, toolAliasBySlug } from '../../content/toolAliases'
 import { toolAliasContent } from '../../content/toolAliasContent'
 import { ToolContentSections, stepAnchor } from './ToolContent'
 import { StatusBadge, ToolCard } from './ToolCard'
@@ -90,7 +90,7 @@ export default function ToolPage() {
       <Suspense fallback={<div className="card tool-skeleton" aria-busy="true"><span className="badge badge-ink">Loading tool…</span></div>}>
         {tool.custom === 'sign' && <SignTool key={key} />}
         {tool.custom === 'reader' && <ReaderTool key={key} />}
-        {tool.custom === 'qr' && <QrTool key={key} />}
+        {tool.custom === 'qr' && <QrTool key={key} initialKind={alias?.defaultOption?.key === 'kind' ? alias.defaultOption.value as 'wifi' | 'vcard' : 'url'} />}
         {tool.custom === 'ocr' && <OcrTool key={key} />}
         {tool.custom === 'organize' && <OrganizeTool key={key} />}
         {tool.custom === 'edit' && <EditTool key={key} />}
@@ -102,22 +102,22 @@ export default function ToolPage() {
         {tool.custom === 'compress-image' && <CompressImageTool key={key} />}
         {tool.custom === 'zip' && <ZipTool key={key} />}
         {tool.custom === 'unzip' && <UnzipTool key={key} />}
-        {!tool.custom && <GenericTool key={key} tool={tool} />}
+        {!tool.custom && <GenericTool key={key} tool={tool} initialOptions={alias?.defaultOption ? { [alias.defaultOption.key]: alias.defaultOption.value } : undefined} />}
       </Suspense>
       </ClientOnly>
 
       {c && <ToolContentSections tool={tool} c={c} related={related} />}
 
-      {(alias || tool.slug === 'image-converter') && (
+      {TOOL_ALIASES.some((a) => a.baseSlug === tool.slug) && (
         <div className="section-tight" style={{ marginTop: '3rem' }}>
-          <span className="eyebrow">More image conversions</span>
+          <span className="eyebrow">More ways to use this tool</span>
           <div className="grid grid-3">
-            {['heic-to-jpg', 'heic-to-png', 'heic-to-webp', 'png-to-jpg', 'jpg-to-png', 'webp-to-jpg', 'webp-to-png', 'svg-to-png', 'svg-to-jpg']
-              .filter((s) => s !== slug)
-              .map((s) => {
-                const a = toolAliasBySlug(s)
-                return a ? <Link key={s} to={`/tools/${s}`} className="card card-hover" style={{ textDecoration: 'none' }}><h4>{a.name}</h4><p className="muted" style={{ margin: 0 }}>{a.source} to {a.target.toUpperCase()} in your browser.</p></Link> : null
-              })}
+            {TOOL_ALIASES.filter((a) => a.baseSlug === tool.slug && a.slug !== slug).map((a) => (
+              <Link key={a.slug} to={`/tools/${a.slug}`} className="card card-hover" style={{ textDecoration: 'none' }}>
+                <h4>{a.name}</h4>
+                <p className="muted" style={{ margin: 0 }}>{a.metaDescription}</p>
+              </Link>
+            ))}
           </div>
         </div>
       )}

@@ -2,14 +2,15 @@ import type { OutFormat } from '../features/files/engines'
 
 export type ToolAlias = {
   slug: string
-  baseSlug: 'image-converter'
-  source: string
-  target: OutFormat
+  baseSlug: string
+  source?: string
+  target?: OutFormat
   name: string
   metaTitle: string
   metaDescription: string
   answer: string
   keywords: string[]
+  defaultOption?: { key: string; value: string }
 }
 
 /** Search-intent landing pages for real image-conversion paths supported by Image Converter. */
@@ -113,8 +114,132 @@ export const TOOL_ALIASES: ToolAlias[] = [
     answer: 'Convert an SVG logo or drawing into a JPG for forms, email, or apps that do not accept vector files. Choose the output size and quality, and transparent areas become white.',
     keywords: ['svg to jpg', 'svg to jpg converter', 'convert svg to jpeg', 'svg jpg online', 'svg logo to jpg'],
   },
+  {
+    slug: 'pdf-to-png', baseSlug: 'pdf-to-jpg', name: 'PDF to PNG Converter',
+    metaTitle: 'PDF to PNG Converter, Free Online',
+    metaDescription: 'Convert PDF pages to PNG images in your browser. Choose page quality, export selected pages, and keep your file on your device.',
+    answer: 'Convert every page of a PDF into a PNG image for screenshots, documents, slides, or transparent graphics. Choose the resolution and download the pages in your browser.',
+    keywords: ['pdf to png', 'pdf to png converter', 'convert pdf to png', 'pdf page to png', 'pdf png online'],
+    defaultOption: { key: 'format', value: 'png' },
+  },
+  {
+    slug: 'docx-to-pdf', baseSlug: 'word-to-pdf', name: 'DOCX to PDF Converter',
+    metaTitle: 'DOCX to PDF Converter, Free Online',
+    metaDescription: 'Convert DOCX Word files to PDF in your browser. Keep text, images and links in a shareable file without uploading the document.',
+    answer: 'Turn a DOCX Word document into a PDF that is easier to share, print, and open on any device. The conversion runs in your browser and keeps the document on your computer.',
+    keywords: ['docx to pdf', 'docx to pdf converter', 'convert docx to pdf', 'word document to pdf', 'docx pdf online'],
+  },
+  {
+    slug: 'xlsx-to-pdf', baseSlug: 'excel-to-pdf', name: 'XLSX to PDF Converter',
+    metaTitle: 'XLSX to PDF Converter, Free Online',
+    metaDescription: 'Convert XLSX spreadsheets to PDF in your browser. Export sheets for sharing or printing without uploading your workbook.',
+    answer: 'Convert an XLSX Excel workbook into a PDF for sharing, printing, or filing. PrintxPDF reads the sheets in your browser and creates a clean PDF without an account.',
+    keywords: ['xlsx to pdf', 'xlsx to pdf converter', 'convert xlsx to pdf', 'excel workbook to pdf', 'spreadsheet to pdf'],
+  },
+  {
+    slug: 'pptx-to-pdf', baseSlug: 'ppt-to-pdf', name: 'PPTX to PDF Converter',
+    metaTitle: 'PPTX to PDF Converter, Free Online',
+    metaDescription: 'Convert PPTX PowerPoint presentations to PDF securely. Upload one deck, get a shareable PDF, and let the server delete the source after conversion.',
+    answer: 'Convert a PPTX PowerPoint presentation into a PDF that is ready to present, print, or send. The server handles the conversion over HTTPS and deletes the source after it returns the PDF.',
+    keywords: ['pptx to pdf', 'pptx to pdf converter', 'convert powerpoint to pdf', 'powerpoint presentation to pdf', 'pptx pdf online'],
+  },
+  {
+    slug: 'pdf-to-pptx', baseSlug: 'pdf-to-ppt', name: 'PDF to PPTX Converter',
+    metaTitle: 'PDF to PPTX Converter, Free Online',
+    metaDescription: 'Convert PDF files to editable PowerPoint PPTX slides. Secure server conversion returns a deck and deletes the uploaded PDF after the job.',
+    answer: 'Turn a PDF into a PPTX PowerPoint deck with editable text boxes where the layout can be reconstructed. The file is converted securely and deleted after the result is returned.',
+    keywords: ['pdf to pptx', 'pdf to powerpoint', 'pdf to pptx converter', 'convert pdf to powerpoint', 'pdf slides online'],
+  },
+  {
+    slug: 'pdf-to-docx', baseSlug: 'pdf-to-word', name: 'PDF to DOCX Converter',
+    metaTitle: 'PDF to DOCX Converter, Free Online',
+    metaDescription: 'Convert PDF text into an editable DOCX Word file in your browser. Keep the words, then tidy layout where your document needs it.',
+    answer: 'Convert a text-based PDF into a DOCX Word document you can edit. This browser tool prioritises readable text and warns when the original PDF layout, images, or columns cannot be preserved.',
+    keywords: ['pdf to docx', 'pdf to docx converter', 'convert pdf to word', 'pdf editable word', 'pdf word online'],
+  },
+  {
+    slug: 'pdf-to-xlsx', baseSlug: 'pdf-to-excel', name: 'PDF to XLSX Converter',
+    metaTitle: 'PDF to XLSX Converter, Free Online',
+    metaDescription: 'Extract text from PDF pages into an XLSX workbook. Each page becomes a sheet, with no upload and no account required.',
+    answer: 'Extract text from a PDF into an XLSX spreadsheet. Each page becomes a worksheet and wide gaps or tabs become cells, which is useful for simple tables and lists.',
+    keywords: ['pdf to xlsx', 'pdf to xlsx converter', 'convert pdf to excel', 'pdf spreadsheet converter', 'pdf table to xlsx'],
+  },
+  {
+    slug: 'password-protect-pdf', baseSlug: 'protect-pdf', name: 'Password Protect PDF',
+    metaTitle: 'Password Protect PDF, Free Online',
+    metaDescription: 'Add a password and strong encryption to a PDF. Secure server conversion deletes the file after returning the protected document.',
+    answer: 'Password protect a PDF with strong encryption and optional print or copy restrictions. The protected file is returned over HTTPS, and the uploaded source is deleted after conversion.',
+    keywords: ['password protect pdf', 'protect pdf with password', 'encrypt pdf online', 'lock pdf with password', 'pdf password tool'],
+  },
+  {
+    slug: 'remove-pdf-password', baseSlug: 'unlock-pdf', name: 'Remove PDF Password',
+    metaTitle: 'Remove PDF Password, Free Online',
+    metaDescription: 'Remove a password from a PDF you are allowed to open. Secure conversion returns an unlocked copy and deletes the uploaded file.',
+    answer: 'Remove an opening password or usage restriction from a PDF you are authorised to use. Enter the current password when needed, then download the unlocked copy.',
+    keywords: ['remove pdf password', 'unlock pdf', 'remove password from pdf', 'decrypt pdf online', 'pdf password remover'],
+  },
+  {
+    slug: 'fillable-pdf', baseSlug: 'pdf-forms', name: 'Fillable PDF Form Filler',
+    metaTitle: 'Fillable PDF Form Filler, Free Online',
+    metaDescription: 'Fill and save interactive PDF forms in your browser. Type into detected fields, review the answers, and download without uploading the file.',
+    answer: 'Fill interactive PDF form fields in your browser, review the answers, and download a completed copy. Your form stays on your device until you choose to save it.',
+    keywords: ['fillable pdf', 'fill pdf form', 'pdf form filler', 'fill out pdf online', 'fillable form online'],
+  },
+  {
+    slug: 'annotate-pdf', baseSlug: 'edit-pdf', name: 'Annotate PDF Online',
+    metaTitle: 'Annotate PDF Online, Free in Your Browser',
+    metaDescription: 'Annotate a PDF with text, shapes, images, and freehand marks. Edit a local copy in your browser and download the finished file.',
+    answer: 'Annotate a PDF with notes, text, shapes, pictures, and freehand drawing. Everything is placed on your local copy in the browser, then saved as a downloadable PDF.',
+    keywords: ['annotate pdf', 'annotate pdf online', 'pdf markup tool', 'add notes to pdf', 'draw on pdf online'],
+  },
+  {
+    slug: 'extract-text-from-pdf', baseSlug: 'pdf-to-text', name: 'Extract Text from PDF',
+    metaTitle: 'Extract Text from PDF, Free Online',
+    metaDescription: 'Extract selectable text from a PDF into a TXT file. Run it in your browser, search the result, and keep the original document private.',
+    answer: 'Extract selectable text from every page of a PDF into a plain TXT file. The tool keeps the reading order as well as it can and runs locally without uploading the document.',
+    keywords: ['extract text from pdf', 'pdf text extractor', 'copy text from pdf', 'pdf to txt', 'extract pdf text online'],
+  },
+  {
+    slug: 'wifi-qr-code', baseSlug: 'qr-code', name: 'WiFi QR Code Generator',
+    metaTitle: 'WiFi QR Code Generator, Free and Printable',
+    metaDescription: 'Create a WiFi QR code for guests to scan. Choose the network type, size, and colours, then download PNG, SVG, or print-ready PDF.',
+    answer: 'Create a scannable WiFi QR code with your network name, password, and security type. Download a crisp SVG, PNG, or print-ready PDF without sending the details to a server.',
+    keywords: ['wifi qr code', 'wifi qr code generator', 'wireless password qr', 'guest wifi qr code', 'wifi qr printable'],
+    defaultOption: { key: 'kind', value: 'wifi' },
+  },
+  {
+    slug: 'vcard-qr-code', baseSlug: 'qr-code', name: 'vCard QR Code Generator',
+    metaTitle: 'vCard QR Code Generator, Free Contact QR',
+    metaDescription: 'Create a QR code for a contact card with name, phone, email, and website. Download SVG, PNG, or PDF for cards and signs.',
+    answer: 'Create a contact-card QR code that opens a vCard on a phone. Add a name, organisation, phone, email, and website, then download a print-ready SVG, PNG, or PDF.',
+    keywords: ['vcard qr code', 'contact qr code', 'business card qr code', 'qr code contact generator', 'digital business card qr'],
+    defaultOption: { key: 'kind', value: 'vcard' },
+  },
+  {
+    slug: 'epub-to-mobi', baseSlug: 'ebook-converter', name: 'EPUB to MOBI Converter',
+    metaTitle: 'EPUB to MOBI Converter, Free Online',
+    metaDescription: 'Convert EPUB ebooks to MOBI for older Kindle readers. Secure server conversion returns the ebook and deletes the uploaded source.',
+    answer: 'Convert an EPUB ebook to MOBI for older Kindle software and readers. Choose MOBI in the ebook converter, upload the book securely, and download the result when it is ready.',
+    keywords: ['epub to mobi', 'epub to mobi converter', 'convert epub for kindle', 'epub kindle converter', 'ebook to mobi'],
+    defaultOption: { key: 'to', value: 'mobi' },
+  },
+  {
+    slug: 'mobi-to-epub', baseSlug: 'ebook-converter', name: 'MOBI to EPUB Converter',
+    metaTitle: 'MOBI to EPUB Converter, Free Online',
+    metaDescription: 'Convert MOBI ebooks to EPUB for Apple Books, Kobo, and other readers. Secure server conversion deletes the source after the result is returned.',
+    answer: 'Convert a MOBI ebook to EPUB for Apple Books, Kobo, Android readers, and modern ebook apps. The server converts the file securely and deletes the source after delivery.',
+    keywords: ['mobi to epub', 'mobi to epub converter', 'convert kindle book to epub', 'mobi ebook converter', 'kindle to epub'],
+    defaultOption: { key: 'to', value: 'epub' },
+  },
+  {
+    slug: 'azw3-to-epub', baseSlug: 'ebook-converter', name: 'AZW3 to EPUB Converter',
+    metaTitle: 'AZW3 to EPUB Converter, Free Online',
+    metaDescription: 'Convert AZW3 ebooks to EPUB for compatible readers. Upload securely, choose EPUB, and download the converted book after the server job finishes.',
+    answer: 'Convert an AZW3 ebook to EPUB when you need to read it in a non-Kindle app. Select EPUB, send the file over HTTPS, and download the converted book when ready.',
+    keywords: ['azw3 to epub', 'azw3 to epub converter', 'convert azw3 ebook', 'kindle azw3 converter', 'azw3 ebook to epub'],
+    defaultOption: { key: 'to', value: 'epub' },
+  },
 ]
 
 const ALIASES = new Map(TOOL_ALIASES.map((alias) => [alias.slug, alias]))
 export const toolAliasBySlug = (slug: string) => ALIASES.get(slug)
-

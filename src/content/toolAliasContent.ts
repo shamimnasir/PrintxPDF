@@ -1,10 +1,25 @@
 import type { ToolAlias } from './toolAliases'
+import { toolContent } from './tools'
 import type { ToolContent } from './tools/types'
 
 const formatName = (format: ToolAlias['target']) => (format === 'jpg' ? 'JPG' : format === 'png' ? 'PNG' : 'WebP')
 
 /** Builds focused editorial content for a format-specific landing page without duplicating tool UI. */
 export function toolAliasContent(alias: ToolAlias): ToolContent {
+  if (!alias.source || !alias.target) {
+    const base = toolContent(alias.baseSlug)
+    if (!base) throw new Error(`No base content for ${alias.baseSlug}`)
+    return {
+      ...base,
+      slug: alias.slug,
+      answer: alias.answer,
+      metaTitle: alias.metaTitle,
+      metaDescription: alias.metaDescription,
+      keywords: alias.keywords,
+      whatHeading: `What is ${alias.name}?`,
+      howHeading: `How to use ${alias.name}`,
+    }
+  }
   const target = formatName(alias.target)
   const source = alias.source
   const isLossless = alias.target === 'png'
@@ -48,4 +63,3 @@ export function toolAliasContent(alias: ToolAlias): ToolContent {
     metaDescription: alias.metaDescription,
   }
 }
-
