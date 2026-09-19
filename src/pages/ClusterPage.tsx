@@ -3,6 +3,7 @@ import { CLUSTERS } from '../content'
 import { useCluster } from '../content/usePosts'
 import { useTool } from '../features/pdf/useTools'
 import { ToolCard } from '../features/pdf/ToolCard'
+import { ToolShotGallery } from '../components/ui/ToolShot'
 import { authorPath, breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useSiteConfig } from '../admin/useSiteConfig'
 import { Avatar } from '../components/ui/Avatar'
@@ -101,6 +102,7 @@ export default function ClusterPage() {
               <ClusterTool key={t} slug={t} />
             ))}
           </div>
+          <ToolShotGallery slugs={cluster.tools} heading="See the recommended tools in action" />
         </>
       )}
 

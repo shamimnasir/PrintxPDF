@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import screens from '../../content/tools/screens.json'
 import { toolBySlug } from '../../features/pdf/toolsMeta'
 
@@ -17,5 +18,28 @@ export function ToolShot({ slug, caption }: { slug: string; caption?: string }) 
       <img src={shotUrl(slug)!} alt={`${tool.name} in PrintxPDF with a file loaded, options on the right and the run button below`} width={s.w} height={s.h} loading="lazy" decoding="async" />
       <figcaption className="muted">{caption || `${tool.name}, running in the browser with a file loaded.`}</figcaption>
     </figure>
+  )
+}
+
+/** Show every tool a guide recommends, using the same verified screenshots as the tool pages. */
+export function ToolShotGallery({ slugs, heading = 'See the tools in action' }: { slugs: string[]; heading?: string }) {
+  const tools = slugs.map((slug) => ({ slug, tool: toolBySlug(slug), shot: SHOTS[slug] })).filter((x) => x.tool && x.shot) as { slug: string; tool: NonNullable<ReturnType<typeof toolBySlug>>; shot: { w: number; h: number } }[]
+  if (!tools.length) return null
+  return (
+    <section className="tool-shot-gallery" aria-labelledby="tool-shot-gallery-heading">
+      <h2 id="tool-shot-gallery-heading">{heading}</h2>
+      <div className="tool-shot-grid">
+        {tools.map(({ slug, tool, shot }) => (
+          <figure className="tool-shot" key={slug}>
+            <Link to={`/tools/${slug}`} aria-label={`Open ${tool.name}`}>
+              <img src={shotUrl(slug)!} alt={`${tool.name} in PrintxPDF with a file loaded, options visible and the run button ready`} width={shot.w} height={shot.h} loading="lazy" decoding="async" />
+            </Link>
+            <figcaption className="muted">
+              <Link to={`/tools/${slug}`}>{tool.name}</Link>, ready to use in your browser.
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
   )
 }

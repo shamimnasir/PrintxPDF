@@ -1255,6 +1255,28 @@ code.inline {
   font-size: 0.8rem;
   margin-top: 0.5rem;
 }
+.tool-shot-gallery {
+  margin: 2.5rem 0;
+}
+.tool-shot-gallery > h2 {
+  margin-top: 0;
+}
+.tool-shot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.tool-shot-grid .tool-shot {
+  margin: 0;
+}
+.tool-shot-grid .tool-shot figcaption {
+  min-height: 2.25rem;
+}
+@media (max-width: 700px) {
+  .tool-shot-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ---------- Home promise row ---------- */
 /* The billing and privacy objections answered under the hero, before the first scroll. */
