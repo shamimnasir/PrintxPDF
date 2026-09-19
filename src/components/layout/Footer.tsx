@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useVisibleTools } from '../../features/pdf/useTools'
 import { useSiteConfig } from '../../admin/useSiteConfig'
-import { Wordmark, initial } from './Wordmark'
+import { Wordmark } from './Wordmark'
+import { BrandMark } from './BrandMark'
 import { authorPath } from '../../lib/seo'
 
 export function Footer() {
@@ -12,7 +13,7 @@ export function Footer() {
       <div className="container grid grid-4">
         <div>
           <div className="logo" style={{ color: 'var(--footer-fg)', marginBottom: '0.75rem' }}>
-            <span className="logo-mark">{initial(cfg.site.name)}</span>
+            <BrandMark />
             <Wordmark name={cfg.site.name} />
           </div>
           <p style={{ opacity: 0.8, maxWidth: '30ch' }}>

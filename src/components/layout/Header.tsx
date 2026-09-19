@@ -5,7 +5,8 @@ import { TOOLS, CATEGORY_LABEL, MENUS } from '../../features/pdf/toolsMeta'
 import { useUser } from '../../features/account/useUser'
 import { applyTheme, store } from '../../lib/store'
 import { safeStorage } from '../../admin/config'
-import { Wordmark, initial } from './Wordmark'
+import { Wordmark } from './Wordmark'
+import { BrandMark } from './BrandMark'
 import { useSiteConfig } from '../../admin/useSiteConfig'
 
 function NavMenu({ label, children, id, open, setOpen, wide }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void; wide?: boolean }) {
@@ -98,7 +99,7 @@ export function Header() {
       <header className={`header ${menu ? 'menu-open' : ''}`}>
       <div className="container header-inner">
         <Link to="/" className="logo" aria-label={`${cfg.site.name} home`}>
-          <span className="logo-mark">{initial(cfg.site.name)}</span>
+          <BrandMark />
           <Wordmark name={cfg.site.name} />
         </Link>
 

@@ -546,6 +546,16 @@ p {
   font-size: 1rem;
   color: var(--acid-fg);
 }
+.brand-mark {
+  display: block;
+  flex: 0 0 auto;
+  color: var(--acid);
+  filter: drop-shadow(3px 3px 0 var(--line));
+}
+.footer .brand-mark {
+  color: var(--acid);
+  --brand-paper: var(--footer-bg);
+}
 .logo .x {
   color: var(--alarm);
 }
