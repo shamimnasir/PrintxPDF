@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useAllPosts, useCluster, usePost } from '../content/usePosts'
 import type { Block } from '../content/types'
-import { useTool } from '../features/pdf/useTools'
+import { useTool, useVisibleTools } from '../features/pdf/useTools'
 import { articleSchema, authorPath, breadcrumbSchema, faqSchema, howToSchema, useSeo } from '../lib/seo'
 import { useSiteConfig } from '../admin/useSiteConfig'
 import { Avatar } from '../components/ui/Avatar'
@@ -172,6 +172,7 @@ export default function PostPage() {
   const post = usePost(postSlug)
   const cluster = useCluster(clusterSlug)
   const allPosts = useAllPosts()
+  const visibleTools = useVisibleTools()
   const cfg = useSiteConfig()
   const valid = post && cluster && post.cluster === cluster.slug
   const path = `/blog/${clusterSlug}/${postSlug}`
@@ -219,6 +220,7 @@ export default function PostPage() {
 
   const headings = post.body.filter((b): b is Extract<Block, { t: 'h2' }> => b.t === 'h2')
   const related = post.relatedPosts.map((s) => allPosts.find((p) => p.slug === s)).filter((p) => !!p)
+  const relatedUsesServer = post.relatedTools.some((slug) => visibleTools.some((tool) => tool.slug === slug && tool.status === 'server'))
 
   return (
     <div className="container section">
@@ -322,7 +324,9 @@ export default function PostPage() {
                 ))}
               </div>
               <p style={{ fontSize: '0.8rem', opacity: 0.8, margin: '0.75rem 0 0' }}>
-                Runs in your browser. No sign-up, no upload.
+                {relatedUsesServer
+                  ? 'Each tool tells you whether it runs locally or uses our secure converter. No sign-up.'
+                  : 'Runs in your browser. No sign-up, no upload.'}
               </p>
             </div>
           )}

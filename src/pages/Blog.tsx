@@ -42,8 +42,8 @@ export default function Blog() {
         and <span className="acid-mark">fix any document.</span>
       </h1>
       <p className="lead" style={{ marginBottom: '2.5rem' }}>
-        Plain-English guides to printing web pages without the clutter and getting PDFs to behave. Every method here works
-        in a normal browser, free, with no upload.
+        Plain-English guides to printing web pages without the clutter and getting PDFs to behave. Most methods run
+        locally in a normal browser; every guide tells you when a job needs our secure converter.
       </p>
       <p className="muted" style={{ marginTop: '-1.5rem', marginBottom: '2.5rem' }}>
         Written and maintained by <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link>, founder of {cfg.site.name}.

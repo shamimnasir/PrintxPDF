@@ -36,7 +36,7 @@ export function Footer() {
           </p>
         </div>
         <div>
-          <h4>PDF tools</h4>
+          <h2>PDF tools</h2>
           {tools.slice(0, 9).map((t) => (
             <Link key={t.slug} to={`/tools/${t.slug}`}>
               {t.name}
@@ -45,7 +45,7 @@ export function Footer() {
           <Link to="/tools">All tools →</Link>
         </div>
         <div>
-          <h4>Website tools</h4>
+          <h2>Website tools</h2>
           <Link to="/print">Print any web page</Link>
           <Link to="/website-button">Print & PDF button</Link>
           <Link to="/wordpress">WordPress plugin</Link>
@@ -54,7 +54,7 @@ export function Footer() {
           <Link to="/extensions/chrome">Chrome extension</Link>
         </div>
         <div>
-          <h4>Company</h4>
+          <h2>Company</h2>
           <Link to="/about">About</Link>
           <Link to="/support">Support</Link>
           <Link to="/blog">Guides</Link>

@@ -11,8 +11,8 @@ export default function ToolsIndex() {
   const cats = Object.keys(CATEGORY_LABEL) as ToolCategory[]
   const match = (t: ToolMeta) => !q || `${t.name} ${t.short} ${t.description}`.toLowerCase().includes(q.toLowerCase())
   useSeo({
-    title: `All ${TOOLS.length} PDF Tools | Free, In Your Browser`,
-    description: `Merge, split, shrink, convert, sign and watermark PDFs, and make scans searchable, free. ${TOOLS.length} tools that work in your browser with no upload and no sign-up.`,
+    title: `All ${TOOLS.length} PDF Tools | Free, Clear Privacy Labels`,
+    description: `Merge, split, shrink, convert, sign and watermark PDFs, and make scans searchable, free. Most tools run in your browser; every server tool is clearly labelled.`,
     path: '/tools',
     keywords: ['free pdf tools', 'merge pdf', 'compress pdf', 'pdf converter', 'sign pdf online'],
     schema: [

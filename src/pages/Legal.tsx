@@ -6,7 +6,7 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
   const cfg = useSiteConfig()
   const contact = cfg.site.email ? <a href={`mailto:${cfg.site.email}`}>{cfg.site.email}</a> : <Link to="/account">your account page</Link>
   useSeo({
-    title: kind === 'privacy' ? 'Privacy, Your Files Stay on Your Device' : 'Terms of Use',
+    title: kind === 'privacy' ? 'Privacy, Clear Labels for Every File' : 'Terms of Use',
     description:
       kind === 'privacy'
         ? 'Browser tools never upload your files. The few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe.'
@@ -25,16 +25,16 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
       <span className="eyebrow">{kind === 'privacy' ? 'Privacy' : 'Terms'}</span>
       {kind === 'privacy' ? (
         <>
-          <h1>Your files stay with you.</h1>
+          <h1>Know where every file goes.</h1>
           <p className="lead">
-            Every browser tool works on your documents in your browser, on your own computer, with nothing uploaded. A few
-            jobs run on our server, and those files are deleted the moment they finish.
+            Most tools process documents in your browser on your own computer. A clearly labelled set of conversions runs
+            on our server; those files are deleted when processing finishes.
           </p>
           <h3>What stays on your computer</h3>
           <p>
-            Merging, splitting, compressing, signing, OCR, the web-page cleaner and every other browser tool work in your
-            browser's memory; the files are discarded when you close the tab. Account data, saved documents, signatures,
-            settings and your access key are saved in this browser only and are never sent to us.
+            Tools labelled as local, including merging, splitting, compressing, signing, OCR and the web-page cleaner,
+            process your files in the browser's memory; the files are discarded when you close the tab. Account data,
+            saved documents, signatures, settings and your access key are saved in this browser only and are never sent to us.
           </p>
           <h3>What leaves your computer</h3>
           <p>

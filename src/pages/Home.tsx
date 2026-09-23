@@ -85,7 +85,7 @@ export default function Home() {
               }}
             >
               <div style={{ fontSize: '2.2rem' }}>⬆</div>
-              <h3 style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.fileCardTitle}</h3>
+              <h2 className="home-action-title" style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.fileCardTitle}</h2>
               <p className="muted" style={{ margin: '0 0 0.75rem' }}>{cfg.home.fileCardText.replace('{count}', String(tools.length))}</p>
               <span className="btn btn-sm btn-ink" style={{ alignSelf: 'flex-start' }}>
                 Drop a file or click to browse
@@ -100,7 +100,7 @@ export default function Home() {
                 Go before the JavaScript has loaded still lands on /print?url=… instead of nothing */}
             <form className="card" style={{ minHeight: 230, display: 'flex', flexDirection: 'column', justifyContent: 'center' }} action="/print" method="get" onSubmit={go}>
               <div style={{ fontSize: '2.2rem' }}>⌘</div>
-              <h3 style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.urlCardTitle}</h3>
+              <h2 className="home-action-title" style={{ margin: '0.5rem 0 0.25rem' }}>{cfg.home.urlCardTitle}</h2>
               <p className="muted" style={{ margin: '0 0 0.75rem' }}>{cfg.home.urlCardText}</p>
               <div className="clip-input" style={{ boxShadow: 'none' }}>
                 <input type="text" name="url" inputMode="url" placeholder="https://example.com/article" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="URL" />
@@ -155,7 +155,7 @@ export default function Home() {
                 <Link to="/blog/edit/how-to-edit-a-pdf" className="btn">See how it works</Link>
               </div>
             </div>
-            <ToolShot slug="edit-pdf" caption="One local editor for annotations, fields, signatures and page work." />
+            <ToolShot slug="edit-pdf" compact caption="One local editor for annotations, fields, signatures and page work." />
           </div>
         </div>
       </section>
@@ -195,7 +195,7 @@ export default function Home() {
             {[
               ['01', 'Paste a link', 'We load the page and keep only the article, right in your browser. Menus, sidebars, pop-ups and comment threads are gone before you see it.'],
               ['02', 'Keep what you want', 'Click any paragraph, image or table to remove it, or drag across a whole section. Resize the text, shrink the images, undo with one key.'],
-              ['03', 'Print, save or send', 'Print it with crisp text, save it as a PDF or an image, or email it to yourself. Nothing is uploaded.'],
+              ['03', 'Print, save or send', 'Print it with crisp text, save it as a PDF or an image, or email it to yourself. Your edits stay in this browser.'],
             ].map(([n, h, p]) => (
               <div key={n} style={{ borderTop: '3px solid var(--footer-accent)', paddingTop: '1rem' }}>
                 <div className="mono" style={{ color: 'var(--footer-accent)', fontSize: '2rem', fontWeight: 600 }}>{n}</div>
@@ -245,9 +245,8 @@ export default function Home() {
             </div>
             <div>
               <p style={{ margin: 0, fontWeight: 600 }}>
-                Every browser tool works on your PDF inside your browser, on your own computer. Nothing is uploaded. Close the
-                tab and the file is gone. The few jobs that need our server say so on their page, send the file over a secure
-                connection, and delete it the moment they finish.
+                Most tools process your PDF in your browser, on your computer. Jobs that require our server are labelled
+                before you upload; those files travel over a secure connection and are deleted when processing finishes.
               </p>
             </div>
           </div>

@@ -41,7 +41,9 @@ export const DESIGNS: Record<DesignId, DesignPreset> = {
     name: 'Studio',
     tagline: 'Classic SaaS: soft shadows, rounded cards, cool greys.',
     theme: { accent: '#2b5bff', accentFg: '#ffffff', ink: '#0f172a', borderWidth: 1, radius: 12 },
-    googleFamilies: ['Inter:wght@400;500;600;700;800'],
+    // The system UI stack is visually equivalent here and removes two render-blocking requests
+    // plus a font swap from the public site's default design.
+    googleFamilies: [],
     swatch: { bg: '#f6f8fb', card: '#ffffff', ink: '#0f172a', accent: '#2b5bff', fontDisplay: "'Inter', system-ui, sans-serif" },
   },
 }

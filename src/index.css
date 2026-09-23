@@ -310,6 +310,9 @@ p {
   background: var(--acid);
   color: var(--acid-fg);
 }
+.card-acid .muted {
+  color: inherit;
+}
 .card-ink {
   background: var(--ink);
   color: var(--paper);
@@ -695,10 +698,14 @@ p {
 .footer a:hover {
   color: var(--footer-accent);
 }
-.footer h4 {
+.footer h2 {
   color: var(--footer-accent);
   font-size: 0.9rem;
   letter-spacing: calc(var(--ls-wide) * 5 / 6);
+}
+
+.home-action-title {
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
 }
 .footer .muted {
   color: var(--footer-muted);

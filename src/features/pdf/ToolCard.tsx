@@ -13,7 +13,7 @@ export function ToolCard({ tool, showStatus = false }: { tool: ToolMeta; showSta
         {tool.icon}
       </div>
       <div>
-        <h4>{tool.name}</h4>
+        <h3>{tool.name}</h3>
         <p className="muted" style={showStatus ? { marginBottom: '0.5rem' } : undefined}>
           {tool.short}
         </p>

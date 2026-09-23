@@ -123,7 +123,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
   tools: { hidden: [], featured: [], overrides: {} },
   seo: {
     titleTemplate: '%s | PrintxPDF',
-    defaultDescription: 'Print web pages without ads and do every common PDF job free in your browser. Nothing is uploaded and you never need an account.',
+    defaultDescription: 'Print web pages without ads and do every common PDF job free. Most tools run locally in your browser; server tools are clearly labelled. No account required.',
     keywords: ['print web page without ads', 'pdf tools', 'merge pdf', 'compress pdf', 'sign pdf', 'ocr pdf'],
     robotsTxt: '',
     llmsTxt: '',

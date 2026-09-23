@@ -178,6 +178,8 @@ export function RuntimeEffects() {
     const dnt = a.respectDnt && (navigator.doNotTrack === '1' || (window as { doNotTrack?: string }).doNotTrack === '1')
     if (dnt) return
     const added: HTMLScriptElement[] = []
+    let cancelled = false
+    let idle = 0
     const add = (attrs: Record<string, string>, inline?: string) => {
       const s = document.createElement('script')
       Object.entries(attrs).forEach(([k, v]) => s.setAttribute(k, v))
@@ -185,13 +187,26 @@ export function RuntimeEffects() {
       document.head.appendChild(s)
       added.push(s)
     }
-    if (a.ga4Id) {
-      add({ async: '', src: `https://www.googletagmanager.com/gtag/js?id=${a.ga4Id}` })
-      add({}, `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${a.ga4Id}');`)
+    const load = () => {
+      if (cancelled) return
+      if (a.ga4Id) {
+        add({ async: '', src: `https://www.googletagmanager.com/gtag/js?id=${a.ga4Id}` })
+        add({}, `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${a.ga4Id}');`)
+      }
+      if (a.plausibleDomain) add({ defer: '', 'data-domain': a.plausibleDomain, src: 'https://plausible.io/js/script.js' })
+      if (a.umamiId && a.umamiSrc) add({ defer: '', src: a.umamiSrc, 'data-website-id': a.umamiId })
     }
-    if (a.plausibleDomain) add({ defer: '', 'data-domain': a.plausibleDomain, src: 'https://plausible.io/js/script.js' })
-    if (a.umamiId && a.umamiSrc) add({ defer: '', src: a.umamiSrc, 'data-website-id': a.umamiId })
-    return () => added.forEach((s) => s.remove())
+    const schedule = () => {
+      idle = window.requestIdleCallback(load, { timeout: 3000 })
+    }
+    if (document.readyState === 'complete') schedule()
+    else window.addEventListener('load', schedule, { once: true })
+    return () => {
+      cancelled = true
+      window.removeEventListener('load', schedule)
+      if (idle) window.cancelIdleCallback(idle)
+      added.forEach((s) => s.remove())
+    }
   }, [a.ga4Id, a.plausibleDomain, a.umamiId, a.umamiSrc, a.respectDnt])
 
   // ---------- pageviews ----------
