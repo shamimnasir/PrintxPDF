@@ -15,6 +15,11 @@
     <!-- The default design uses the visitor's system fonts. This keeps text visible immediately,
          avoids a render-blocking third-party request and still leaves the optional design presets
          free to load their own face when an administrator explicitly selects one. -->
+    <!-- Google AdSense. It lives here rather than in the admin panel's Head HTML field because
+         that field is injected after hydration, and the AdSense crawler reads the served HTML.
+         prerender.mjs builds every page from this shell, so one line covers all of them.
+         Note: this sets advertising cookies, which is why /privacy says so. -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7964685388872167" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="root"></div>

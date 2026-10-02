@@ -57,7 +57,17 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
             subscription is active.
           </p>
           <h3>Cookies</h3>
-          <p>This site sets none. Stripe sets its own cookies on its checkout and portal pages.</p>
+          <p>
+            The tools themselves set none, and nothing about a file you open is ever put in one. Two other things do.
+            Analytics sets a pair of cookies that count visits and tell a returning browser from a new one. Google AdSense,
+            which pays for the free tools, sets its own for ad selection and for capping how often you see the same one.
+            Stripe sets its own on its checkout and portal pages.
+          </p>
+          <p>
+            You can refuse all of them in your browser and every tool on this site still works, because the tools do not
+            depend on any of them. <a href="https://adssettings.google.com">Google's ad settings</a> control the
+            advertising ones across every site that uses them, not just this one.
+          </p>
           <h3>Analytics</h3>
           <p>
             Only if the site owner enables a provider, and never when your browser sends Do Not Track. Nothing about your files
