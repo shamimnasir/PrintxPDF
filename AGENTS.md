@@ -7,7 +7,7 @@ is; this file explains how to change it without breaking things that have broken
 
 ```bash
 npm run dev            # vite, port 5179
-npm run build          # gen-seo -> tsc -> vite -> ssr build -> prerender. 177 static pages.
+npm run build          # gen-seo -> tsc -> vite -> ssr build -> prerender. 221 static pages.
 npm test               # 135 tests
 npm run lint           # oxlint
 npx tsc --noEmit -p tsconfig.app.json
@@ -56,7 +56,12 @@ customer saw their plan as Free. Add a plan in one place.
 **Workers cap PBKDF2 at 100,000 iterations.** Node does not, so a unit test will happily pass
 something the runtime refuses. `MAX_PBKDF2_ITERATIONS` in `worker/src/adminAuth.ts` is a ceiling.
 
-**Prerendering is the SEO surface.** 177 pages are baked at build time. Anything that only appears
+**A tag a crawler must see goes in `index.html`, not the admin panel.** The panel's Head HTML
+field is mounted after hydration by `RuntimeEffects.tsx`, so a verification or ad tag put there is
+invisible to anything that reads the served HTML. `prerender.mjs` builds every page from the
+`index.html` shell, so one line there covers all of them.
+
+**Prerendering is the SEO surface.** 221 pages are baked at build time. Anything that only appears
 after hydration is invisible to crawlers. When changing the content pipeline, prove the output did
 not shift: hash `dist/**/*.html` before and after, normalising asset filenames
 (`/assets/NAME-HASH.js`), and compare.
