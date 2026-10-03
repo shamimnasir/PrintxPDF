@@ -1,0 +1,255 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "excel-to-pdf",
+      "title": "Chuyển bảng tính Excel sang PDF vừa khổ giấy",
+      "slug": "excel-to-pdf",
+      "tool": "excel-to-pdf",
+      "description": "Đặt vùng in, hướng trang, tỷ lệ và tiêu đề lặp trước khi xuất bảng tính thành PDF.",
+      "metaDescription": "Chuyển Excel sang PDF gọn gàng. Chọn vùng in, khổ giấy và tỷ lệ để cột, hàng cùng trang tính dễ đọc.",
+      "faqs": [
+        { "q": "Làm sao để bảng Excel không bị tràn sang nhiều trang?", "a": "Đặt vùng in, chọn hướng ngang nếu phù hợp và dùng tùy chọn vừa chiều rộng, rồi kiểm tra chữ có còn dễ đọc không." },
+        { "q": "Có nên thu cả trang tính vào một trang không?", "a": "Chỉ khi bảng nhỏ. Trang tính lớn có thể thành chữ li ti nếu ép toàn bộ vào một tờ." },
+        { "q": "PDF có giữ công thức Excel không?", "a": "PDF thường hiển thị giá trị đã tính, không giữ công thức có thể chỉnh sửa như tệp bảng tính." }
+      ],
+      "body": [
+        { "t": "p", "x": "Trước khi chuyển bảng tính Excel sang PDF, hãy quyết định người đọc cần xem toàn bộ sheet hay một báo cáo đã định dạng. Cột thừa và vùng trống có thể tạo nhiều trang không cần thiết. Lưu một bản XLSX riêng, đặt vùng in và kiểm tra bản xem trước trước khi xuất. PDF giúp chia sẻ ổn định hơn, nhưng không giữ khả năng sửa công thức như Excel." },
+        { "t": "h2", "x": "Chọn vùng cần in" },
+        { "t": "p", "x": "Đặt vùng in quanh bảng, bỏ các cột phụ và hàng trống nếu chúng không cần cho báo cáo. Xác nhận sheet ẩn, bộ lọc và hàng tổng có được đưa vào không. Nếu workbook có nhiều sheet, quyết định sheet nào cần xuất và thứ tự trang. Hãy xem tiêu đề cột có lặp lại ở trang sau để người đọc nhận biết dữ liệu." },
+        { "t": "h2", "x": "Chỉnh khổ giấy và tỷ lệ" },
+        { "t": "p", "x": "Chọn A4 hoặc Letter theo giấy thực tế. Bảng nhiều cột thường phù hợp hướng ngang, nhưng hướng dọc có thể dễ đọc cho danh sách dài. Thử vừa tất cả cột trên một trang ngang, giữ chiều cao tự động; tránh ép cả sheet lớn vào một trang vì chữ sẽ quá nhỏ. Điều chỉnh lề vừa với vùng in của máy." },
+        { "t": "h2", "x": "Đặt ngắt trang và đầu trang" },
+        { "t": "p", "x": "Dùng ngắt trang thủ công để không tách một nhóm hàng liên quan hoặc phần tổng kết khỏi dữ liệu. Thêm số trang, ngày báo cáo hoặc tên sheet nếu cần, nhưng đừng đưa mã khách hàng nhạy cảm vào chân trang không cần thiết. Kiểm tra màu nền, đường viền và định dạng số vì chúng có thể khác khi in đen trắng." },
+        { "t": "h2", "x": "Xuất và đối chiếu dữ liệu" },
+        { "t": "p", "x": "Mở PDF sau khi xuất, đọc các trang ở kích thước thực tế và kiểm tra cột đầu cuối, số âm, đơn vị cùng tổng. PDF thường ghi lại kết quả hiển thị chứ không giữ công thức hay bộ lọc hoạt động. Nếu người nhận cần phân tích, gửi thêm tệp bảng tính đã được phép chia sẻ. Đặt tên bản PDF có ngày hoặc số phiên bản." },
+        { "t": "cta", "tool": "excel-to-pdf", "x": "Đặt vùng in và kiểm tra từng trang PDF trước khi gửi." }
+      ]
+    },
+    {
+      "topic": "html-to-pdf",
+      "title": "Chuyển tệp HTML thành PDF",
+      "slug": "html-to-pdf",
+      "tool": "html-to-pdf",
+      "description": "Chọn tệp HTML đã lưu hoặc mã trang, kiểm tra tài nguyên và tạo PDF có thể đọc, in hoặc lưu hồ sơ.",
+      "metaDescription": "Chuyển HTML sang PDF bằng cách tải tệp đã lưu hoặc dán mã. Kiểm tra CSS, ảnh, phông và liên kết trong bản xuất.",
+      "faqs": [
+        { "q": "Tôi có thể dán mã HTML để tạo PDF không?", "a": "Công cụ hỗ trợ tệp HTML đã lưu hoặc nội dung mã theo lựa chọn của trang. Xem trước đầu ra trước khi tải." },
+        { "q": "Ảnh và CSS có được giữ lại không?", "a": "Chỉ tài nguyên có thể truy cập và được tải đúng mới xuất hiện; đường dẫn tương đối hoặc script có thể không chạy." },
+        { "q": "PDF HTML có giống hệt trình duyệt không?", "a": "Không đảm bảo. CSS in, phông, khổ giấy và nội dung động có thể tạo bố cục khác." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chuyển HTML sang PDF giúp tạo bản tĩnh từ một tệp trang web đã lưu hoặc đoạn mã. Kết quả phụ thuộc HTML, CSS, ảnh và phông mà trình chuyển đổi có thể truy cập. Một trang tương tác chạy tốt trong trình duyệt có thể mất nút, script hoặc nội dung tải động trong PDF. Trước khi chuyển, xác định phần nào phải xuất hiện và giữ tệp HTML nguồn." },
+        { "t": "h2", "x": "Chuẩn bị tệp và tài nguyên" },
+        { "t": "p", "x": "Nếu dùng tệp HTML đã lưu, kiểm tra ảnh, stylesheet và phông nằm ở đâu. Đường dẫn tương đối chỉ hoạt động khi cấu trúc thư mục được giữ. Tài nguyên trên mạng có thể yêu cầu đăng nhập, bị chặn hoặc đã thay đổi. Không đưa mã chứa khóa, token hoặc thông tin cá nhân vào một công cụ mà bạn chưa được phép sử dụng." },
+        { "t": "h2", "x": "Chuyển mã hoặc trang đã lưu" },
+        { "t": "p", "x": "Chọn tệp HTML hoặc dán mã theo cách công cụ hỗ trợ. Thiết lập khổ giấy, hướng trang và lề để nội dung vừa trang. CSS dành cho in có thể ẩn thanh điều hướng hoặc điều chỉnh kích thước, trong khi một số thuộc tính màn hình không chuyển trực tiếp. Xem trước để phát hiện ảnh mất, chữ tràn và bảng bị chia." },
+        { "t": "h2", "x": "Kiểm tra phông và bố cục" },
+        { "t": "p", "x": "Mở PDF mới, xác nhận dấu tiếng Việt, tiêu đề, liên kết và thứ tự đọc. Phông web có thể không tải hoặc bị thay thế; nếu trang dùng phông riêng, kiểm tra quyền và tính khả dụng. Bảng rộng có thể cần hướng ngang hoặc chia trang. Thử chọn một câu để biết văn bản còn tìm kiếm được hay đã bị raster hóa thành ảnh." },
+        { "t": "h2", "x": "Hiểu bản PDF là ảnh chụp" },
+        { "t": "p", "x": "PDF ghi lại phần nội dung được dựng ở thời điểm chuyển đổi, không nhất thiết giữ dữ liệu trực tiếp, biểu mẫu hoạt động, script hay cập nhật tương lai. So sánh đầu ra với trang hoặc tệp gốc, đặc biệt khi dùng làm hồ sơ. Ghi ngày tạo và nguồn trong tên hoặc ghi chú, đồng thời tôn trọng bản quyền của hình ảnh và nội dung." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Chuyển HTML, rồi xem lại tài nguyên và từng trang PDF." }
+      ]
+    },
+    {
+      "topic": "images-to-pdf",
+      "title": "Gộp ảnh JPG, PNG và WebP thành một PDF",
+      "slug": "images-to-pdf",
+      "tool": "jpg-to-pdf",
+      "description": "Sắp xếp ảnh, đặt hướng và kích thước trang, sau đó tạo một PDF dễ xem và chia sẻ.",
+      "metaDescription": "Gộp JPG, PNG và WebP thành PDF. Chọn thứ tự ảnh, khổ trang, hướng và lề rồi kiểm tra chất lượng bản kết quả.",
+      "faqs": [
+        { "q": "Có thể kết hợp nhiều định dạng ảnh trong một PDF không?", "a": "Công cụ hỗ trợ các định dạng được liệt kê trên trang; kiểm tra tệp đầu vào nếu định dạng không mở được." },
+        { "q": "Làm sao đổi thứ tự trang ảnh?", "a": "Sắp xếp hình thu nhỏ trước khi tạo PDF và mở lại để kiểm tra trang đầu cuối." },
+        { "q": "PDF tạo từ ảnh có tìm kiếm được không?", "a": "Thông thường không. Ảnh vẫn là hình; cần OCR nếu muốn nhận dạng và tìm văn bản." }
+      ],
+      "body": [
+        { "t": "p", "x": "Gộp ảnh JPG, PNG và WebP vào một PDF giúp gửi bộ hóa đơn, bản quét, ảnh sản phẩm hoặc tài liệu nhiều trang dễ dàng hơn. Trước khi thêm ảnh, xác định thứ tự mong muốn và loại trang đầu ra. Tạo bản sao của ảnh gốc, nhất là khi chúng là bằng chứng, ảnh hiện trường hoặc hồ sơ quan trọng." },
+        { "t": "h2", "x": "Sắp xếp và chọn ảnh" },
+        { "t": "p", "x": "Thêm đúng ảnh, bỏ bản trùng và kéo hình thu nhỏ theo trình tự đọc. Nếu tên file có số như 1, 2, 10, đừng giả định hệ thống tự xếp đúng thứ tự. Xoay ảnh nằm ngang hoặc lộn ngược trước khi xuất. Kiểm tra mỗi ảnh có đủ bốn góc và không cắt mất ngày, chữ ký hoặc chú thích." },
+        { "t": "h2", "x": "Chọn khổ giấy và lề" },
+        { "t": "p", "x": "Chọn khổ A4 hoặc Letter nếu PDF sẽ được in; chọn vừa khung hoặc giữ tỷ lệ nếu chủ yếu đọc trên màn hình. Ảnh có tỷ lệ khác nhau có thể tạo lề trắng hoặc bị cắt khi lấp đầy trang. Ưu tiên giữ toàn bộ nội dung quan trọng thay vì phóng lớn đến sát mép. Xem trước từng trang khi ảnh có kích thước không đồng nhất." },
+        { "t": "h2", "x": "Giữ chất lượng phù hợp" },
+        { "t": "p", "x": "JPG thường phù hợp ảnh chụp nhưng đã dùng nén mất dữ liệu. PNG tốt cho văn bản quét, biểu đồ và cạnh sắc. WebP có thể giảm dung lượng nhưng khả năng mở trên phần mềm cũ khác nhau. PDF mới có thể nhúng ảnh với kích thước lớn; nếu cần nén sau, kiểm tra chữ và màu. Không phóng ảnh nhỏ lên nhiều lần rồi mong có thêm chi tiết." },
+        { "t": "h2", "x": "Kiểm tra và chia sẻ" },
+        { "t": "p", "x": "Mở PDF sau khi tạo, đếm trang, xác nhận thứ tự, hướng, lề và độ nét. Vì trang là ảnh, người đọc thường không thể tìm hoặc chọn chữ; chạy OCR nếu chức năng đó cần thiết và soát kết quả. Kiểm tra thông tin riêng tư trong ảnh và tên tệp trước khi gửi. Lưu bản PDF với tên mô tả nội dung và ngày." },
+        { "t": "cta", "tool": "jpg-to-pdf", "x": "Sắp xếp hình thu nhỏ rồi gộp ảnh thành một PDF." }
+      ]
+    },
+    {
+      "topic": "convert-png-to-pdf",
+      "title": "Chuyển ảnh PNG thành tài liệu PDF",
+      "slug": "convert-png-to-pdf",
+      "tool": "jpg-to-pdf",
+      "description": "Đưa một hoặc nhiều ảnh PNG vào PDF, giữ tỷ lệ và chọn kích thước trang phù hợp.",
+      "metaDescription": "Chuyển PNG sang PDF để gửi hoặc in. Chọn thứ tự, khổ giấy, lề và kiểm tra chất lượng hình trước khi chia sẻ.",
+      "faqs": [
+        { "q": "PNG có bị chuyển thành JPG khi tạo PDF không?", "a": "Điều này phụ thuộc công cụ. Kiểm tra chính sách xuất và độ rõ của đường nét trong PDF kết quả." },
+        { "q": "Nền trong suốt của PNG sẽ ra sao?", "a": "Nền có thể được làm phẳng trên màu nền trang PDF. Xem trước để xác nhận nền không che nội dung." },
+        { "q": "Có thể đưa nhiều PNG vào một PDF không?", "a": "Có nếu công cụ nhận nhiều ảnh; sắp xếp hình thu nhỏ trước để xác định thứ tự trang." }
+      ],
+      "body": [
+        { "t": "p", "x": "PNG thường được dùng cho ảnh chụp màn hình, biểu đồ, hình có chữ và logo. Chuyển chúng thành PDF giúp đóng gói nhiều hình thành tài liệu dễ gửi, in hoặc lưu. Trước khi bắt đầu, kiểm tra kích thước pixel, tỷ lệ và nền trong suốt. PDF có thể làm phẳng độ trong suốt lên màu nền, vì vậy hãy xem bản xem trước." },
+        { "t": "h2", "x": "Chọn ảnh và thứ tự" },
+        { "t": "p", "x": "Thêm một PNG hoặc nhiều ảnh theo thứ tự cần đọc. Với bộ trang quét, đánh số file nhất quán và kiểm tra hình thu nhỏ để tránh xếp trang 10 trước trang 2. Xoay ảnh bị lệch và bỏ bản trùng. Nếu ảnh chứa chữ ký hoặc chứng cứ, giữ file gốc không chỉnh sửa để làm đối chiếu." },
+        { "t": "h2", "x": "Điều chỉnh trang PDF" },
+        { "t": "p", "x": "Chọn khổ giấy, hướng trang và lề phù hợp với mục đích. Giữ tỷ lệ ảnh để tránh méo logo hoặc biểu đồ. Vừa với trang có thể tạo khoảng trắng; lấp đầy trang có thể cắt cạnh. Hãy xem trước ảnh ngang và dọc, nhất là khi một PDF có nhiều loại hình khác nhau." },
+        { "t": "h2", "x": "Bảo toàn độ rõ" },
+        { "t": "p", "x": "PNG thường giữ cạnh nét, nhưng ảnh có kích thước pixel thấp vẫn có thể mờ khi in lớn. Không thể tạo thêm chi tiết chỉ bằng cách phóng ảnh. Nếu đầu ra lớn, cân nhắc giảm kích thước hợp lý hoặc nén bản sao, rồi kiểm tra chữ nhỏ và đường mảnh. Tệp PDF có thể lớn nếu mỗi PNG có nhiều điểm ảnh." },
+        { "t": "h2", "x": "Xác nhận nền và khả năng truy cập" },
+        { "t": "p", "x": "Mở PDF và kiểm tra nền trong suốt, màu, lề, thứ tự và số trang. Văn bản bên trong ảnh PNG thường không thể tìm kiếm; dùng OCR nếu cần, đồng thời rà soát tên và số. Đặt tên tệp rõ ràng và kiểm tra quyền chia sẻ nếu hình chứa dữ liệu riêng tư. Giữ ảnh nguồn cho đến khi bản PDF được chấp thuận." },
+        { "t": "cta", "tool": "jpg-to-pdf", "x": "Chuyển PNG thành PDF và xác nhận nền cùng tỷ lệ ảnh." }
+      ]
+    },
+    {
+      "topic": "pdf-to-jpg",
+      "title": "Chuyển trang PDF sang JPG hoặc PNG",
+      "slug": "pdf-to-jpg",
+      "tool": "pdf-to-jpg",
+      "description": "Chọn trang, định dạng và độ phân giải để xuất ảnh cho màn hình, email hoặc bản in.",
+      "metaDescription": "Chuyển trang PDF thành JPG hoặc PNG, đặt DPI theo mục đích và kiểm tra độ rõ cùng dung lượng ảnh đầu ra.",
+      "faqs": [
+        { "q": "Nên dùng bao nhiêu DPI để chuyển PDF thành ảnh?", "a": "Chọn mức theo kích thước và mục đích; 300 DPI thường là điểm tham khảo cho in, còn màn hình có thể cần thấp hơn." },
+        { "q": "JPG hay PNG phù hợp hơn cho trang có chữ?", "a": "PNG thường giữ cạnh chữ sắc hơn; JPG có thể nhỏ hơn với ảnh chụp." },
+        { "q": "Có thể xuất riêng một trang không?", "a": "Chọn trang hoặc phạm vi trước khi xuất, rồi mở ảnh để xác nhận đúng trang." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chuyển trang PDF thành ảnh là quá trình dựng toàn bộ trang ở độ phân giải chọn trước. Hãy xác định ảnh sẽ dùng trên màn hình, trong email, slide hay bản in. Trang có chữ nhỏ cần độ phân giải cao hơn hình thu nhỏ, nhưng ảnh quá lớn có thể khó gửi. Giữ PDF gốc vì ảnh thường mất lớp chữ và liên kết." },
+        { "t": "h2", "x": "Chọn độ phân giải" },
+        { "t": "p", "x": "Độ phân giải quyết định số pixel được tạo cho mỗi trang. Dùng mức vừa đủ với kích thước hiển thị hoặc in; 300 DPI thường phù hợp cho in ở kích thước thực. Mức cao hơn làm tệp tăng nhanh. Nếu PDF nguồn chứa ảnh nhỏ hoặc mờ, tăng DPI không khôi phục thông tin chưa có." },
+        { "t": "h2", "x": "JPG hay PNG" },
+        { "t": "p", "x": "JPG sử dụng nén mất dữ liệu và thường phù hợp trang nhiều ảnh chụp. PNG giữ cạnh sắc cho chữ, sơ đồ, đường kẻ và logo, nhưng có thể lớn hơn. Nếu cần hình trong suốt, nhớ rằng trang PDF thường có nền và công cụ có thể xuất trên nền trắng. Thử từng định dạng trên một trang đại diện trước khi xử lý cả tài liệu." },
+        { "t": "h2", "x": "Xuất trang cần thiết" },
+        { "t": "p", "x": "Chọn PDF, định dạng, chất lượng và số trang. Xem trước kích thước ảnh nếu công cụ hiển thị. Với nhiều trang, tải các ảnh riêng hoặc gói ZIP theo khả năng của sản phẩm. Kiểm tra tên và thứ tự file sau khi giải nén; số trang in trong tài liệu không luôn bằng chỉ số của trình xem." },
+        { "t": "h2", "x": "Mở ảnh và xác minh" },
+        { "t": "p", "x": "Phóng to chữ nhỏ, xem đường nét và kiểm tra trang đầu cuối. Nếu ảnh dùng để trích dẫn, OCR hoặc in, so sánh với PDF nguồn. Ảnh không còn văn bản có thể chọn; chạy OCR nếu cần tìm kiếm nhưng phải soát lỗi. Xem dữ liệu riêng tư trong ảnh và chỉ chia sẻ phạm vi cần thiết." },
+        { "t": "cta", "tool": "pdf-to-jpg", "x": "Xuất trang cần dùng và kiểm tra ở đúng kích thước sử dụng." }
+      ]
+    },
+    {
+      "topic": "extract-images-from-pdf",
+      "title": "Trích ảnh gốc được nhúng trong PDF",
+      "slug": "extract-images-from-pdf",
+      "tool": "pdf-to-jpg",
+      "description": "Phân biệt lấy ảnh gốc với kết xuất cả trang, rồi kiểm tra kích thước pixel và màu sau khi tải.",
+      "metaDescription": "Lấy ảnh nhúng trong PDF thay vì chụp màn hình cả trang. Kiểm tra định dạng, độ phân giải và giới hạn của ảnh gốc.",
+      "faqs": [
+        { "q": "Trích ảnh có giống xuất trang PDF thành ảnh không?", "a": "Không. Trích ảnh lấy đối tượng ảnh nhúng; xuất trang dựng cả trang gồm chữ, hình và nền." },
+        { "q": "Vì sao ảnh trích ra nhỏ hoặc mờ?", "a": "PDF có thể nhúng ảnh độ phân giải thấp hoặc phóng nó lên khi trình bày trên trang." },
+        { "q": "Có thể lấy biểu đồ vector thành ảnh gốc không?", "a": "Biểu đồ vector có thể không phải đối tượng ảnh; cần kết xuất trang hoặc vùng đó ở độ phân giải phù hợp." }
+      ],
+      "body": [
+        { "t": "p", "x": "Lấy hình từ PDF có thể là trích đối tượng ảnh được nhúng hoặc kết xuất toàn trang thành một hình mới. Trích ảnh hữu ích khi bạn cần ảnh chụp hoặc logo gốc; kết xuất phù hợp khi muốn giữ cả chữ, bố cục và nền. Trước khi chọn, xác định bạn cần tài nguyên hình riêng hay bản sao trực quan của trang." },
+        { "t": "h2", "x": "Hiểu nội dung được nhúng" },
+        { "t": "p", "x": "PDF có thể chứa ảnh JPG, dữ liệu không mất, ảnh đơn sắc hoặc nhiều mảnh ghép. Một logo cũng có thể được vẽ bằng đường vector thay vì ảnh bitmap. Vì vậy, công cụ trích ảnh có thể không tìm thấy mọi thứ đang nhìn thấy. Các ảnh đã bị nén hoặc giảm kích thước khi tạo PDF sẽ không lấy lại được chất lượng cao hơn." },
+        { "t": "h2", "x": "Trích đối tượng ảnh" },
+        { "t": "p", "x": "Mở PDF trong công cụ hỗ trợ trích ảnh và xem danh sách đối tượng được phát hiện. Kiểm tra kích thước pixel, định dạng và trang nguồn trước khi tải. Một trang có thể chứa nhiều hình nhỏ, còn ảnh nền lớn có thể bao trùm cả trang. Dùng tên file có số trang để biết nguồn và giữ đúng thứ tự." },
+        { "t": "h2", "x": "Khi nên kết xuất trang" },
+        { "t": "p", "x": "Nếu đối tượng là biểu đồ vector, sơ đồ hoặc chữ trang trí, hãy kết xuất trang hoặc vùng cần dùng ở DPI phù hợp. Cách này đưa tất cả thành một hình nhưng không giữ nội dung riêng biệt. Chọn PNG cho đường nét và văn bản; chọn JPG cho ảnh chụp nếu dung lượng quan trọng. Mở ảnh ở kích thước thực để kiểm tra." },
+        { "t": "h2", "x": "Kiểm tra màu và quyền sử dụng" },
+        { "t": "p", "x": "Ảnh trích có thể ở hệ màu CMYK hoặc dùng mặt nạ trong suốt, khiến màu hiển thị khác trình đọc PDF. So sánh trên nhiều ứng dụng trước khi công bố. Việc trích được hình không đồng nghĩa bạn có quyền tái sử dụng nó. Kiểm tra giấy phép, nguồn và thông tin nhúng trước khi đưa ảnh lên website hoặc tài liệu công khai." },
+        { "t": "cta", "tool": "pdf-to-jpg", "x": "Chọn trích ảnh gốc hoặc kết xuất trang tùy nội dung cần dùng." }
+      ]
+    },
+    {
+      "topic": "pdf-to-png-transparent",
+      "title": "Chọn PNG hay JPG khi xuất trang PDF",
+      "slug": "pdf-to-png-transparent",
+      "tool": "pdf-to-jpg",
+      "description": "So sánh độ nét, dung lượng, màu và độ trong suốt để chọn định dạng ảnh phù hợp với nội dung PDF.",
+      "metaDescription": "Chọn PNG hoặc JPG cho trang PDF: hiểu độ nét của chữ, dung lượng ảnh và vì sao nền PDF thường không trở nên trong suốt.",
+      "faqs": [
+        { "q": "PNG có trong suốt khi xuất một trang PDF không?", "a": "Không nhất thiết. Trang PDF thường được dựng trên nền trắng; nền trong suốt phụ thuộc công cụ và nội dung nguồn." },
+        { "q": "PNG có luôn tốt hơn JPG không?", "a": "Không. PNG sắc nét cho chữ và đường nét; JPG thường nhỏ hơn với ảnh chụp nhiều màu." },
+        { "q": "Định dạng nào phù hợp để in?", "a": "Cả hai có thể in; ưu tiên độ phân giải đủ và kiểm tra mẫu ở kích thước thật." }
+      ],
+      "body": [
+        { "t": "p", "x": "PNG và JPG đều có thể lưu trang PDF thành ảnh, nhưng cách nén và loại nội dung phù hợp khác nhau. PNG thường giữ cạnh chữ, bảng và đường nét rõ vì không dùng cùng kiểu nén mất dữ liệu. JPG thường giảm dung lượng tốt với ảnh chụp có nhiều sắc độ. Hãy chọn dựa trên việc ảnh sẽ xem, gửi hay in." },
+        { "t": "h2", "x": "Khi PNG phù hợp" },
+        { "t": "p", "x": "Trang có chữ nhỏ, logo, biểu đồ, ảnh chụp màn hình hoặc đường kẻ thường giữ nét hơn ở PNG. Nhược điểm là mỗi trang có thể tạo tệp lớn, nhất là ở độ phân giải cao. Nếu trang chủ yếu là văn bản, nén PNG thành JPG có thể tạo viền mờ quanh chữ. So sánh một vùng chi tiết trước khi chọn định dạng cho cả bộ." },
+        { "t": "h2", "x": "Khi JPG phù hợp" },
+        { "t": "p", "x": "Trang nhiều ảnh chụp và màu chuyển nhẹ có thể nhỏ hơn đáng kể ở JPG. Điều chỉnh chất lượng vừa đủ để giữ chi tiết quan trọng. Nén lặp lại làm giảm chất lượng thêm; giữ PDF gốc làm nguồn tốt nhất. JPG không hỗ trợ nền trong suốt, vì vậy vùng trống thường được hiển thị thành một màu nền." },
+        { "t": "h2", "x": "Nền trong suốt có giới hạn" },
+        { "t": "p", "x": "Tên chủ đề có thể khiến người dùng nghĩ xuất PDF sang PNG tự động tạo nền alpha. Thực tế, trang PDF thường được kết xuất trên nền trắng hoặc nền được định nghĩa trong tệp. Tính trong suốt phụ thuộc trình kết xuất và cấu trúc trang. Nếu cần logo nền trong suốt, trích đối tượng ảnh gốc hoặc xuất riêng tài nguyên phù hợp thay vì kết xuất toàn trang." },
+        { "t": "h2", "x": "Chọn DPI và kiểm tra" },
+        { "t": "p", "x": "DPI cao tạo nhiều pixel và tệp lớn hơn. Chọn theo kích thước sử dụng, không chỉ chọn mức cao nhất. Mở ảnh ở kích thước thực, kiểm tra chữ, đường mảnh, màu và nền. Nếu in, tạo trang mẫu trên đúng giấy. Lưu định dạng nguồn và ghi rõ ảnh là bản kết xuất, không phải PDF chỉnh sửa được." },
+        { "t": "cta", "tool": "pdf-to-jpg", "x": "Thử PNG và JPG trên một trang đại diện trước khi xuất toàn bộ." }
+      ]
+    },
+    {
+      "topic": "best-image-format-for-print",
+      "title": "Chọn định dạng và độ phân giải ảnh để in",
+      "slug": "best-image-format-for-print",
+      "tool": "pdf-to-jpg",
+      "description": "Chọn PNG hoặc JPG theo nội dung, đặt độ phân giải theo kích thước in và kiểm tra bản thử trên giấy.",
+      "metaDescription": "Chọn định dạng và DPI phù hợp để in ảnh rõ. So sánh PNG, JPG, kích thước điểm ảnh và kết quả bản thử.",
+      "faqs": [
+        { "q": "300 DPI có luôn cần thiết không?", "a": "Không. DPI cần thiết phụ thuộc kích thước in, khoảng cách xem và chất lượng nguồn." },
+        { "q": "In văn bản dạng ảnh nên dùng PNG hay JPG?", "a": "PNG thường giữ cạnh chữ rõ hơn; JPG phù hợp hơn với ảnh chụp nếu nén ở chất lượng tốt." },
+        { "q": "Tăng DPI có làm ảnh mờ rõ hơn không?", "a": "Không. Kết xuất ở mức cao không khôi phục chi tiết vắng mặt trong tệp nguồn." }
+      ],
+      "body": [
+        { "t": "p", "x": "Ảnh in rõ hay mờ phụ thuộc kích thước điểm ảnh, kích thước in, khoảng cách xem và nội dung. Không có một con số DPI đúng cho mọi công việc. Logo nhỏ, văn bản và sơ đồ cần cạnh rõ; ảnh chụp có thể chịu được nén khác. Trước khi gửi số lượng lớn, tính kích thước đầu ra và in thử đúng loại giấy." },
+        { "t": "h2", "x": "Hiểu DPI và số điểm ảnh" },
+        { "t": "p", "x": "DPI mô tả số điểm trên mỗi inch khi in. Một ảnh 3000 pixel rộng ở 300 DPI có thể in khoảng 10 inch mà không cần nội suy. Nếu kéo lớn hơn, độ nét giảm. Tăng DPI của ảnh nhỏ chỉ thêm pixel bằng nội suy, không tạo lại chi tiết gốc. Kiểm tra kích thước pixel trước khi đặt kích thước giấy." },
+        { "t": "h2", "x": "Chọn PNG hay JPG" },
+        { "t": "p", "x": "PNG phù hợp chữ, nét vẽ, biểu đồ và hình cần cạnh sắc; nó thường giữ dữ liệu lossless nhưng dung lượng lớn. JPG phù hợp ảnh chụp và chuyển sắc, nơi nén có thể khó nhận thấy nếu chất lượng đủ cao. JPG nén lại nhiều lần có thể làm hỏng chi tiết. Giữ bản gốc và thử cả hai khi kích thước file quan trọng." },
+        { "t": "h2", "x": "Kết xuất trang PDF" },
+        { "t": "p", "x": "Khi chuyển trang PDF thành ảnh, chọn DPI dựa trên kích thước in mong muốn. 300 DPI là mốc tham khảo phổ biến cho tài liệu cần đọc gần; poster xem từ xa có thể dùng mức khác theo nhà in. Ảnh nguồn bên trong PDF vẫn có giới hạn riêng, nên kết xuất độ phân giải rất cao có thể chỉ tạo tệp lớn mà không làm ảnh sắc hơn." },
+        { "t": "h2", "x": "In thử và kiểm tra" },
+        { "t": "p", "x": "Xem ảnh ở tỷ lệ 100 phần trăm và in một trang đại diện bằng máy hoặc dịch vụ dự kiến. Kiểm tra chữ nhỏ, viền, màu, vùng cắt và lề không in được. Cài đặt màn hình không thể thay thế bản thử trên giấy. Lưu hồ sơ DPI, kích thước cuối và định dạng để lần sau có thể tái tạo đúng." },
+        { "t": "cta", "tool": "pdf-to-jpg", "x": "Chọn DPI theo kích thước in rồi kiểm tra một trang mẫu." }
+      ]
+    },
+    {
+      "topic": "convert-pdf-pages-to-images-for-print-and-web",
+      "title": "Xuất trang PDF thành ảnh cho web hoặc bản in",
+      "slug": "convert-pdf-pages-to-images-for-print-and-web",
+      "tool": "image-converter",
+      "description": "Chọn định dạng, DPI và phạm vi trang theo nơi sử dụng, sau đó kiểm tra dung lượng và chất lượng.",
+      "metaDescription": "Chuyển PDF thành ảnh cho website hoặc máy in. Chọn JPG/PNG, DPI và kích thước phù hợp rồi kiểm tra đầu ra.",
+      "faqs": [
+        { "q": "Dùng cùng một ảnh cho web và in được không?", "a": "Có thể, nhưng bản web thường cần ít pixel hơn. Xuất riêng giúp cân bằng tải nhanh và độ nét khi in." },
+        { "q": "JPG hay PNG tốt hơn cho web?", "a": "JPG thường nhẹ cho ảnh chụp; PNG thích hợp với chữ và hình có đường nét." },
+        { "q": "Xuất PDF thành ảnh có giữ liên kết không?", "a": "Ảnh phẳng thường không giữ liên kết hoạt động hay lớp chữ tìm kiếm được." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một trang PDF có thể được kết xuất thành ảnh để đăng website, chèn vào slide hoặc gửi nhà in. Mục đích quyết định định dạng, số điểm ảnh và dung lượng. Bản web cần tải nhanh ở màn hình; bản in cần đủ chi tiết ở kích thước thật. Giữ PDF gốc và tạo các phiên bản ảnh riêng thay vì dùng một tệp khổng lồ cho mọi nơi." },
+        { "t": "h2", "x": "Chuẩn bị trang cần xuất" },
+        { "t": "p", "x": "Chọn trang bằng số trình xem, kiểm tra thứ tự và xác nhận trang không bị cắt. Nếu PDF có khổ giấy trộn lẫn, xem riêng từng trang. Loại bỏ trang không cần thiết trước khi xuất hàng loạt. Kiểm tra dữ liệu cá nhân, bình luận và mã hồ sơ xuất hiện trong ảnh vì ảnh không che được thông tin đã nhìn thấy." },
+        { "t": "h2", "x": "Thiết lập cho website" },
+        { "t": "p", "x": "Bản web thường hiển thị ở chiều rộng giới hạn nên không cần DPI in. Chọn kích thước pixel phù hợp màn hình, nén ảnh chụp khi dung lượng quan trọng và giữ PNG cho chữ hoặc sơ đồ. Xem ảnh trên điện thoại và máy tính, kiểm tra văn bản nhỏ có đọc được. Nếu người dùng cần phóng to hoặc truy cập nội dung, cung cấp thêm PDF có lớp chữ." },
+        { "t": "h2", "x": "Thiết lập cho máy in" },
+        { "t": "p", "x": "Tính độ phân giải từ kích thước in. 300 DPI thường là điểm khởi đầu cho tài liệu xem gần, nhưng yêu cầu nhà in có thể khác. Trang nhiều chữ thường cần PNG hoặc PDF trực tiếp để giữ nét; JPG phù hợp hơn với ảnh chụp. Kiểm tra lề, vùng tràn và màu trên bản thử thay vì chỉ nhìn màn hình." },
+        { "t": "h2", "x": "Xác nhận và quản lý phiên bản" },
+        { "t": "p", "x": "Mở từng ảnh đầu ra, kiểm tra chiều xoay, màu, chữ và dung lượng. Ảnh phẳng không giữ liên kết hoạt động, văn bản tìm kiếm hay biểu mẫu PDF. Đặt tên có trang, mục đích và kích thước để người khác không nhầm bản web với bản in. Lưu lại cài đặt xuất và giữ nguồn để có thể tạo lại khi nội dung thay đổi." },
+        { "t": "cta", "tool": "image-converter", "x": "Xuất riêng bản web và bản in, rồi kiểm tra chất lượng thực tế." }
+      ]
+    },
+    {
+      "topic": "how-to-sign-a-pdf",
+      "title": "Ký PDF điện tử mà không cần in giấy",
+      "slug": "how-to-sign-a-pdf",
+      "tool": "sign-pdf",
+      "description": "Đọc tài liệu, chọn cách ký, đặt chữ ký và xác nhận quy định của người nhận trước khi gửi.",
+      "metaDescription": "Ký PDF trên thiết bị mà không cần in. So sánh chữ ký vẽ, chữ ký hình ảnh và ký số, đồng thời kiểm tra yêu cầu pháp lý.",
+      "faqs": [
+        { "q": "Chữ ký vẽ trong PDF có luôn hợp pháp không?", "a": "Không có câu trả lời chung cho mọi quốc gia và giao dịch. Hãy kiểm tra luật áp dụng, loại tài liệu và yêu cầu của bên nhận." },
+        { "q": "Chữ ký điện tử có giống chữ ký số không?", "a": "Không. Chữ ký số thường dùng chứng thư và mật mã để xác minh danh tính hoặc tính toàn vẹn; chữ ký vẽ chỉ là dấu hiệu trực quan." },
+        { "q": "Tôi có nên gửi PDF đã ký qua email không?", "a": "Làm theo yêu cầu của bên nhận và dùng kênh chia sẻ phù hợp với độ nhạy của tài liệu." }
+      ],
+      "body": [
+        { "t": "p", "x": "Bạn có thể ký PDF bằng cách vẽ, gõ tên hoặc đặt ảnh chữ ký, nhưng phương thức phù hợp tùy tài liệu và người nhận. Chữ ký hiển thị không tự chứng minh danh tính hay phát hiện mọi thay đổi. Trước khi ký, đọc toàn bộ nội dung, xác nhận phiên bản đúng và hỏi bên yêu cầu nếu họ cần chữ ký số, chứng thư hoặc dịch vụ ký có nhật ký xác minh." },
+        { "t": "h2", "x": "Phân biệt chữ ký điện tử và chữ ký số" },
+        { "t": "p", "x": "Chữ ký điện tử là khái niệm rộng cho dữ liệu dùng để thể hiện sự đồng ý. Một chữ ký vẽ hoặc gõ có thể được dùng trong một số quy trình, nhưng mức chứng cứ và hiệu lực phụ thuộc luật cùng hoàn cảnh. Chữ ký số thường dùng chứng thư và mật mã để liên kết người ký với phiên bản tài liệu. Đừng xem ảnh chữ ký là tương đương chữ ký số." },
+        { "t": "h2", "x": "Chuẩn bị tài liệu" },
+        { "t": "p", "x": "Mở PDF, kiểm tra từng trang, phần đính kèm và điều khoản trước khi đặt chữ ký. Đảm bảo không còn chỗ trống chưa được điền có thể thay đổi ý nghĩa. Xác nhận tên người ký, vai trò, ngày và thứ tự các bên. Nếu hợp đồng yêu cầu nhân chứng, công chứng hoặc nền tảng cụ thể, làm theo quy trình đó thay vì dùng một công cụ tạo hình chữ ký." },
+        { "t": "h2", "x": "Đặt chữ ký và lưu bản mới" },
+        { "t": "p", "x": "Chọn công cụ ký, vẽ hoặc nhập chữ ký theo hướng dẫn, rồi đặt đúng vùng trên trang. Không che nội dung, số trang hoặc chữ ký của người khác. Thêm ngày chỉ khi quy trình yêu cầu. Lưu thành bản mới, không ghi đè nguồn. Mở lại đầu ra để xem chữ ký hiển thị, văn bản còn đọc được và không có trang nào bị bỏ." },
+        { "t": "h2", "x": "Xác minh, gửi và bảo quản" },
+        { "t": "p", "x": "Kiểm tra bên nhận chấp nhận loại ký nào, có cần gửi qua nền tảng có nhật ký hay không và họ muốn định dạng tệp nào. Luật như ESIGN ở Hoa Kỳ hoặc eIDAS tại EU có phạm vi và điều kiện riêng, không bảo đảm mọi ảnh chữ ký đều đủ cho mọi giao dịch. Lưu bản đã gửi, ngày gửi và xác nhận nhận theo chính sách. Bảo vệ tệp khỏi chia sẻ nhầm." },
+        { "t": "cta", "tool": "sign-pdf", "x": "Ký bản PDF đã kiểm tra và xác nhận yêu cầu của người nhận trước khi gửi." }
+      ]
+    }
+  ]
+}
