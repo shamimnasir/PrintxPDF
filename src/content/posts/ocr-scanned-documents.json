@@ -1018,6 +1018,48 @@
         "make-pdf-searchable",
         "best-image-format-for-print"
       ]
+    },
+    {
+      "slug": "make-searchable-pdf-from-scanned-paper",
+      "cluster": "ocr",
+      "title": "How to make a searchable PDF from scanned paper",
+      "metaTitle": "Make a Searchable PDF From Scanned Paper",
+      "metaDescription": "Scan paper, add a searchable text layer with OCR, and check the recognized words against the image before you rely on the digital copy.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "make searchable pdf from scanned paper",
+      "secondaryKeywords": ["searchable PDF from scan", "OCR paper documents", "make scanned PDF text searchable", "scan paper to searchable PDF", "PDF OCR accuracy"],
+      "entities": ["optical character recognition", "OCR text layer", "DPI", "PDF scan", "text extraction", "image cleanup", "language recognition", "document review"],
+      "answer": "To make scanned paper searchable, capture clear pages, place them in a PDF, run OCR to add a text layer, and test search and copy on the output. OCR can misread small, skewed, faint or handwritten text, so compare important names, numbers and dates with the page image before using the recognized text.",
+      "body": [
+        {"t":"p","x":"A scanned PDF can look like a normal document while containing only page photographs. Search, copy and screen readers have no words to work with until optical character recognition (OCR) identifies text in those images. OCR adds a searchable text layer; it does not turn a poor scan into a perfect source document."},
+        {"t":"h2","x":"Capture a clean source first"},
+        {"t":"p","x":"Place the paper flat, include all four edges, avoid shadows and glare, and capture pages in order. If you are using a phone camera, hold it parallel to the page and use enough light to keep letters sharp. For an existing PDF, open it and zoom in: if letters break into visible pixels or a page leans sharply, OCR quality may suffer. A very low-resolution scan can make similar characters such as 3 and 8 hard to distinguish."},
+        {"t":"steps","items":[
+          {"h":"Scan pages into a PDF","x":"Use a scanner or the [Scan to PDF](/tools/scan-to-pdf) tool with your camera. Review the edges and page order before saving."},
+          {"h":"Make a working copy","x":"Keep an untouched copy of the image-only source. OCR may append or rebuild page content, so preserve the scan if exact visual evidence matters."},
+          {"h":"Run OCR","x":"Open [OCR PDF](/tools/ocr-pdf), choose the scan and start recognition. Wait for the output file to finish before closing the tab."},
+          {"h":"Test the text layer","x":"Search for a word visible on page one, select a sentence, and copy it to a text editor. Use [Extract Text](/tools/pdf-to-markdown) or another text output when you need the recognized words outside the PDF."},
+          {"h":"Verify high-impact details","x":"Compare names, dates, totals, account numbers, citations and negative signs against the image. Correct errors in a separate document rather than assuming OCR is authoritative."}
+        ]},
+        {"t":"cta","tool":"ocr-pdf","x":"Add a searchable text layer to scanned pages, then verify what the recognizer read."},
+        {"t":"h2","x":"Understand what the OCR result contains"},
+        {"t":"p","x":"OCR typically places recognized words so they line up with the image. Depending on the source and tool, the output may be searchable without being comfortably editable. Tables, columns, handwriting, stamps, vertical text and unusual fonts are difficult because the software must infer reading order and character shapes. Exported words may have different line breaks from the visual page."},
+        {"t":"p","x":"For a workflow that needs editable prose, try [PDF to Word](/tools/pdf-to-word) after OCR and review the document structure. For tables, [PDF to Excel](/tools/pdf-to-excel) may help with simple rows, but it does not guarantee spreadsheet cells match the original. If you need text for notes or documentation, [PDF to Markdown](/tools/pdf-to-markdown) is a plain-text-oriented option. All extractions need checking."},
+        {"t":"h2","x":"Improve recognition before trying again"},
+        {"t":"p","x":"Start with a sharper, straighter scan rather than repeatedly running the same blurry image. Remove dark borders, increase contrast where it helps, and split a very large file into smaller groups if the device runs short of memory. Keep the original page size when possible. Excessive sharpening can make punctuation and small print worse, so compare a test page before processing a large archive."},
+        {"t":"warn","x":"OCR is not a translation tool and cannot reliably reconstruct missing text. It may also produce different results for languages or scripts the recognizer does not support. For legal, medical, financial or identity records, have a person verify every field that could affect a decision."},
+        {"t":"p","x":"If you only need a subset, [extract the pages first](/tools/extract-pages) and OCR that smaller file. For more about searchable scans, see [make a PDF searchable](/blog/ocr/make-pdf-searchable), [improve OCR accuracy](/blog/ocr/improve-ocr-accuracy), and [extracting text from a PDF](/blog/from-pdf/pdf-to-text). The important end test is practical: can you find, select and copy the words you need, and do they match the page?"}
+      ],
+      "faqs": [
+        {"q":"Does OCR make scanned text editable?","a":"OCR recognizes text and may add a searchable layer. It does not guarantee a well-formatted editable document. Use a conversion tool for editing and inspect its layout."},
+        {"q":"Why can I see words but not search them in my PDF?","a":"The page may be a flat image without a text layer. Run OCR on a copy, then search for a word you can clearly see."},
+        {"q":"Can I trust OCR for numbers and names?","a":"Not without checking. Similar characters, faint printing and skew can cause errors. Verify high-impact details visually against the original scan."}
+      ],
+      "relatedTools": ["ocr-pdf","scan-to-pdf","extract-pages","pdf-to-markdown","pdf-to-word"],
+      "relatedPosts": ["how-to-ocr-a-scanned-pdf","extract-text-from-image","make-pdf-searchable","improve-ocr-accuracy","pdf-to-text","print-journal-articles"]
     }
   ]
 }

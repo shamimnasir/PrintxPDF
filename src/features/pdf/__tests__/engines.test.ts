@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { PDFDocument } from 'pdf-lib'
+import { PDFDocument, PDFName } from 'pdf-lib'
 import {
   parseRanges,
   merge,
@@ -85,6 +85,19 @@ describe('pdf-lib engines', () => {
     const [clean] = await removeMetadata(mf)
     const cm = await readMetadata(new File([await clean.blob.arrayBuffer()], 'c.pdf'))
     expect(cm.title).toBe('')
+  })
+  it('removes a document-level XMP metadata stream', async () => {
+    const f = await pdfFile('x.pdf', 1)
+    const doc = await PDFDocument.load(await f.arrayBuffer())
+    const xmp = doc.context.register(doc.context.stream('<x:xmpmeta>private author</x:xmpmeta>', { Type: PDFName.of('Metadata'), Subtype: PDFName.of('XML') }))
+    doc.catalog.set(PDFName.of('Metadata'), xmp)
+    const saved = await doc.save()
+    const withXmp = new File([saved.buffer.slice(saved.byteOffset, saved.byteOffset + saved.byteLength) as ArrayBuffer], 'with-xmp.pdf', { type: 'application/pdf' })
+
+    const [clean] = await removeMetadata(withXmp)
+    const sanitized = await PDFDocument.load(await clean.blob.arrayBuffer())
+    expect(sanitized.catalog.has(PDFName.of('Metadata'))).toBe(false)
+    expect(await pageCount(clean.blob)).toBe(1)
   })
 })
 

@@ -1046,6 +1046,158 @@
         "compress-pdf-without-losing-quality",
         "reduce-pdf-file-size-for-email"
       ]
+    },
+    {
+      "slug": "compress-pdf-for-email-outlook-gmail",
+      "cluster": "compress",
+      "title": "How to shrink a PDF for Gmail, Outlook and email",
+      "metaTitle": "Shrink a PDF for Gmail or Outlook Email",
+      "metaDescription": "Make a PDF small enough to email without guessing. Check the attachment limit, compress images, split the file and verify the delivered copy.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 5,
+      "intent": "troubleshooting",
+      "primaryKeyword": "reduce pdf size for email",
+      "secondaryKeywords": [
+        "pdf too large to email",
+        "compress pdf for gmail",
+        "compress pdf for outlook",
+        "email a large pdf",
+        "split pdf for email attachment"
+      ],
+      "entities": [
+        "Gmail",
+        "Microsoft Outlook",
+        "PDF",
+        "ZIP",
+        "Cloud storage",
+        "DPI",
+        "JPEG",
+        "Attachment limit"
+      ],
+      "answer": "To email a PDF that is too large, first check your mail provider’s current attachment limit, then compress the PDF and inspect whether the text and images remain clear. If it is still too large, split it into smaller files or use the recipient-approved file-sharing service. Do not assume ZIP will shrink already-compressed images.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A PDF can be too large because its pages contain high-resolution photos or scans, because it carries unused objects, or because it has many pages. The right fix depends on which is responsible. Check the mail provider’s current limit before changing the document, since limits and organization policies can vary."
+        },
+        {
+          "t": "h2",
+          "x": "A safe sequence to reduce the attachment"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Check the current limit",
+              "x": "Look up the attachment limit for your mail account and the recipient’s organization. Leave room for email encoding overhead; a file close to the stated maximum can still fail."
+            },
+            {
+              "h": "Compress the PDF",
+              "x": "Use [Compress PDF](/tools/compress-pdf), then inspect small print, photographs and scanned signatures at normal viewing size."
+            },
+            {
+              "h": "Remove pages the recipient does not need",
+              "x": "Extract a useful page range with [Extract Pages](/tools/extract-pages), but keep the complete original separately."
+            },
+            {
+              "h": "Split if compression is not enough",
+              "x": "Split the PDF into clearly named parts and make sure each part stays under the recipient’s limit."
+            },
+            {
+              "h": "Use an approved sharing route",
+              "x": "For very large or confidential documents, use the organization’s approved cloud sharing method and restrict access as needed."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "Try reducing the PDF size in your browser and check the output before attaching it."
+        },
+        {
+          "t": "h2",
+          "x": "Why a ZIP archive may not help"
+        },
+        {
+          "t": "p",
+          "x": "PDFs often already compress their text and images internally. Putting a PDF into a ZIP can therefore save little or nothing. A PDF containing uncompressed scans may shrink more, but a photo-heavy PDF may not. Compare the sizes before sending."
+        },
+        {
+          "t": "h2",
+          "x": "Choose quality based on what the PDF is for"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Document",
+            "What to protect",
+            "Possible approach"
+          ],
+          "rows": [
+            [
+              "Text report",
+              "Readable fonts and charts",
+              "Try structural compression first"
+            ],
+            [
+              "Scanned paperwork",
+              "Small text, stamps and signatures",
+              "Lower image resolution cautiously and inspect each page"
+            ],
+            [
+              "Photography portfolio",
+              "Image detail and colour",
+              "Keep a high-quality master; share a separate smaller copy"
+            ],
+            [
+              "Legal or signed record",
+              "Original bytes, signatures and evidence",
+              "Do not modify the authoritative signed original"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Compression or editing can invalidate a digital signature. Keep the signed original untouched and do not treat a compressed copy as the authoritative signed record."
+        },
+        {
+          "t": "p",
+          "x": "If the recipient only needs a few pages, extract those pages instead of sending the whole file. If the PDF contains sensitive information, use the right access controls and avoid sending passwords in the same email as the attachment."
+        },
+        {
+          "t": "p",
+          "x": "Email limits are not always the only constraint. A company gateway may impose a lower maximum than the sender mailbox, and a recipient may block certain file types or encrypted archives. If delivery fails after compression, compare the exact error with the attachment size and ask whether a secure share link is accepted. Avoid renaming a compressed copy over the source until you have checked its pages and text. For records with signatures, approvals or legal retention requirements, keep the original separately and treat the compressed version as a convenience copy only."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I email a PDF that is too large?",
+          "a": "Check the current limit, compress the file, remove pages the recipient does not need, then split it or use an approved file-sharing service if it remains too large. Inspect the compressed file before sending."
+        },
+        {
+          "q": "Will zipping a PDF make it smaller?",
+          "a": "Sometimes, but often only slightly because PDFs already compress many streams and images. Test the ZIP size rather than assuming it will help."
+        },
+        {
+          "q": "Can I compress a digitally signed PDF?",
+          "a": "Editing or optimizing a signed PDF may invalidate its signature. Preserve the original signed file and ask the signer or records owner before creating a modified copy."
+        },
+        {
+          "q": "How small should a PDF be for email?",
+          "a": "Use the current limit for your mail provider and account, and leave margin for encoding overhead and recipient limits. There is no single size that is safe for every mail system."
+        }
+      ],
+      "relatedTools": [
+        "compress-pdf",
+        "split-pdf",
+        "extract-pages"
+      ],
+      "relatedPosts": [
+        "reduce-pdf-file-size-for-email",
+        "split-large-pdf-for-email",
+        "how-to-compress-a-pdf"
+      ]
     }
   ]
 }

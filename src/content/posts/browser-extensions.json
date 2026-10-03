@@ -888,6 +888,48 @@
         "firefox-print-addon",
         "print-button-any-website"
       ]
+    },
+    {
+      "slug": "save-webpage-as-clean-pdf-chrome",
+      "cluster": "extensions",
+      "title": "How to save a web page as a clean PDF in Chrome",
+      "metaTitle": "Save a Clean Web Page as PDF in Chrome",
+      "metaDescription": "Save an article without ads or menus, check the page boundaries, and choose whether to print, keep a PDF, or make images for sharing in Chrome.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 6,
+      "intent": "howto",
+      "primaryKeyword": "save webpage as clean pdf chrome",
+      "secondaryKeywords": ["Chrome save article as PDF", "print web page without ads", "clean webpage to PDF", "Chrome print only article", "web page PDF margins"],
+      "entities": ["Google Chrome", "PrintxPDF Chrome extension", "Reader mode", "print preview", "PDF", "headers and footers", "page margins", "PDF reader"],
+      "answer": "To save only an article from Chrome, open the page in PrintxPDF's cleaner or use the Chrome extension, remove any leftover blocks, then choose Print or Download PDF. Check the preview for cut-off text and page breaks. Chrome's own Save as PDF prints the page layout, which can include ads and navigation.",
+      "body": [
+        {"t":"p","x":"Chrome's built-in Save as PDF is convenient, but it prints the page the publisher designed for scrolling. That can include a large navigation header, sidebars, cookie banners and advertising. A cleaner first removes the clutter, then Chrome or the browser tool handles the PDF output. The Chrome extension opens the same web-page cleaner workflow; it does not silently change the original website."},
+        {"t":"h2","x":"Use the extension from the page you want to keep"},
+        {"t":"steps","items":[
+          {"h":"Open the article","x":"Load the page fully and make sure the main text and images have appeared. Pages behind a login or account wall may not be readable by an outside fetcher."},
+          {"h":"Start PrintxPDF","x":"Use the [Chrome extension page](/extensions/chrome) to open the cleaner for the current web address, or visit the [web page cleaner](/print) and paste the URL yourself."},
+          {"h":"Review the extracted article","x":"The cleaner tries to identify the main article. Check headings, tables, code samples and captions. Extraction is best effort, so use Paste text or your own copy if a site blocks the fetch or the article is not detected."},
+          {"h":"Remove or restyle leftover blocks","x":"Delete extra elements, adjust text size and image treatment, and undo any accidental removal. The original page on the publisher's site is unchanged."},
+          {"h":"Choose an output","x":"Print for paper or the system print dialog, or download a PDF. If you need an image output, first save the PDF and use [PDF to JPG](/tools/pdf-to-jpg) on selected pages."}
+        ]},
+        {"t":"cta","tool":"pdf-reader","x":"Open and inspect the finished PDF in your browser before sharing or printing it."},
+        {"t":"h2","x":"Check the print preview instead of trusting the button"},
+        {"t":"p","x":"In Chrome's print dialog, Destination controls the printer or Save as PDF. Pages lets you omit an unwanted final page; Scale and Margins can help when a heading or table is close to the edge. Turn browser headers and footers off if you do not want the page title, URL or date printed. Check every page thumbnail at the final paper size. A preview is especially important for recipes, technical instructions and tables that may split across pages."},
+        {"t":"h2","x":"If the result still contains the whole website"},
+        {"t":"p","x":"A page may resist extraction when it is a dashboard, search result, forum, single-page app or content shown only after signing in. Try a normal browser reading view if the page offers one, or select and paste the article text into the cleaner. Some sites block automated fetches; repeatedly retrying does not bypass their access rules. For text you are permitted to copy, [paste text into the cleaner](/print) is the reliable fallback."},
+        {"t":"h2","x":"Keep the output readable and reasonably small"},
+        {"t":"p","x":"Removing navigation often shortens a printout, but it does not guarantee the fewest pages. Reduce the font only until it remains comfortable to read, and remove decorative images only if they are not part of the explanation. If you later need a smaller attachment, run [Compress PDF](/tools/compress-pdf) and compare the output at normal zoom. Compression quality depends on the document; photographs can look softer after image downsampling."},
+        {"t":"warn","x":"Only save or distribute material you have permission to keep. A clean layout is not a copyright license, and a page fetched by the tool may be processed by a third-party reader service if the primary fetch cannot access it. See the [privacy details](/privacy) before cleaning sensitive URLs."},
+        {"t":"p","x":"For more control, compare the [Chrome extension with other ways to print](/blog/extensions/print-friendly-extension-chrome), then see the practical guide to [printing any web page without ads](/blog/print/print-web-page-without-ads). If the web page is actually a PDF link, use the browser PDF reader directly rather than the article cleaner."}
+      ],
+      "faqs": [
+        {"q":"Does Chrome's Save as PDF remove advertisements?","a":"No. It normally prints the webpage's print layout. Clean the page first with the PrintxPDF extension or cleaner, then use the print dialog to save the result."},
+        {"q":"Why does the cleaner say it could not find article text?","a":"The page may block automated fetching or may not be an article. Use the paste-text option for content you are allowed to copy, or print the page normally."},
+        {"q":"Can I save the cleaned article as a JPG?","a":"Save it as a PDF first, then convert the PDF pages to JPG. A long article may produce multiple images, one for each page."}
+      ],
+      "relatedTools": ["html-to-pdf","compress-pdf","pdf-to-jpg","pdf-reader"],
+      "relatedPosts": ["print-friendly-extension-chrome","print-web-page-without-ads","bookmarklet-vs-extension","html-to-pdf","save-ink-when-printing","cite-a-web-page"]
     }
   ]
 }

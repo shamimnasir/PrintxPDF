@@ -76,7 +76,7 @@ export default function LocalizedGuidePage() {
         <nav className="crumbs" aria-label="Breadcrumb">
           <Link to="/">{pack.homeLabel}</Link> <span aria-hidden="true">/</span> <span>{pack.hubTitle}</span>
         </nav>
-        <div className="post-wrap">
+        <div className="localized-guide-content">
           <span className="eyebrow">{pack.name}</span>
           <h1>{pack.hubTitle}</h1>
           <p className="lead">{pack.hubIntro}</p>
@@ -106,9 +106,9 @@ export default function LocalizedGuidePage() {
       <nav className="crumbs" aria-label="Breadcrumb">
         <Link to="/">{pack.homeLabel}</Link> <span aria-hidden="true">/</span> <Link to={guidePath(pack)}>{pack.hubTitle}</Link> <span aria-hidden="true">/</span> <span>{guide.title}</span>
       </nav>
-      <article className="post-wrap">
+      <article className="localized-guide-content">
         <span className="eyebrow">{pack.readLabel} · {pack.name}</span>
-        <h1>{guide.title}</h1>
+        <h1 className="localized-guide-title" lang={pack.locale}>{guide.title}</h1>
         <p className="post-meta muted">{pack.updated}</p>
         <div className="post-answer">
           <span className="label">{pack.readLabel}</span>

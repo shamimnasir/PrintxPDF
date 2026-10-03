@@ -51,6 +51,21 @@
   font-size: clamp(2rem, 4.2vw, 3.4rem);
   margin-bottom: 0.75rem;
 }
+.localized-guide-title {
+  max-width: 18ch;
+  min-width: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+  text-wrap: balance;
+}
+.localized-guide-content {
+  width: min(100%, 900px);
+  min-width: 0;
+  margin-inline: auto;
+}
 .post-meta {
   display: flex;
   flex-wrap: wrap;

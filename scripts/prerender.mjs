@@ -42,7 +42,7 @@ const ROUTE_MODULES = [
   [/^\/api$/, 'src/pages/Api.tsx'],
   [/^\/pricing$/, 'src/pages/Pricing.tsx'],
   [/^\/blog$/, 'src/pages/Blog.tsx'],
-  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella)(\/[^/]+)?$/, 'src/pages/LocalizedGuidePage.tsx'],
+  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella|bn\/guides|vi\/guides|zh-cn\/guides)(\/[^/]+)?$/, 'src/pages/LocalizedGuidePage.tsx'],
   [/^\/blog\/[^/]+$/, 'src/pages/ClusterPage.tsx'],
   [/^\/blog\/[^/]+\/[^/]+$/, 'src/pages/PostPage.tsx'],
   [/^\/author\//, 'src/pages/AuthorPage.tsx'],

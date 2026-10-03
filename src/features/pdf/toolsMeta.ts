@@ -70,7 +70,7 @@ export const TOOLS: ToolMeta[] = [
 
   // security
   { slug: 'flatten-pdf', name: 'Flatten PDF', short: 'Lock form answers in place', description: 'Turn filled-in form boxes into fixed text so the answers can no longer be changed. A good last step before you send or file a form.', icon: '▭', category: 'security', status: 'real', accept: '.pdf' },
-  { slug: 'remove-metadata', name: 'Remove Metadata', short: 'Wipe hidden personal details', description: 'Wipe the hidden details stored inside a PDF, such as the author name, the program that made it, keywords and dates, before you share it.', icon: '⌀', category: 'security', status: 'real', accept: '.pdf' },
+  { slug: 'remove-metadata', name: 'Remove Metadata', short: 'Clear PDF properties and document XMP', description: 'Clear the standard author, title, app and date fields plus document-level XMP. Embedded photo details and comments are not changed.', icon: '⌀', category: 'security', status: 'real', accept: '.pdf' },
 
   // more
   { slug: 'qr-code', name: 'QR Code Generator', short: 'Print-ready QR codes', description: 'Make a QR code for a web link, WiFi login, contact card, email or text message. Free, made in your browser and ready to print.', icon: '▩', category: 'files', status: 'real', accept: '', custom: 'qr' },

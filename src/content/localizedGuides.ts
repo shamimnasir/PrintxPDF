@@ -5,6 +5,13 @@ export type LanguagePack = Omit<(typeof data)[number], 'dir'> & { dir: 'ltr' | '
 
 export const LANGUAGE_PACKS = data as LanguagePack[]
 
+export const LANGUAGE_DIRECTORY = LANGUAGE_PACKS.map((pack) => ({
+  locale: pack.locale,
+  name: pack.nativeName,
+  path: `/${pack.locale.toLowerCase()}/${pack.hub}`,
+  active: true,
+}))
+
 export const guidePath = (pack: LanguagePack, slug?: string) =>
   `/${pack.locale.toLowerCase()}/${pack.hub}${slug ? `/${slug}` : ''}`
 
@@ -37,10 +44,17 @@ export function localizedContentIssues(): string[] {
       urls.add(route)
       if (!guide.title || !guide.answer || !guide.metaDescription) issues.push(`${route} is missing SEO or answer copy`)
       if (guide.metaTitle.length > 65) issues.push(`${route} meta title exceeds 65 characters`)
-      if (guide.metaDescription.length < 100 || guide.metaDescription.length > 165) issues.push(`${route} meta description must be 100 to 165 characters`)
+      const cjk = /[\u3400-\u9fff]/u.test(`${guide.title} ${guide.answer}`)
+      const descriptionMin = cjk ? 45 : 100
+      if (guide.metaDescription.length < descriptionMin || guide.metaDescription.length > 165) issues.push(`${route} meta description must be ${descriptionMin} to 165 characters`)
       if (guide.faqs.length < 3) issues.push(`${route} needs at least three visible FAQs`)
-      const words = guide.sections.flatMap((s) => [s.heading, ...s.paragraphs, ...(s.steps || []).flatMap((step) => [step.heading, step.text])]).join(' ').trim().split(/\s+/).filter(Boolean).length
-      if (words < 250) issues.push(`${route} has only ${words} body words, needs at least 250`)
+      const body = guide.sections.flatMap((s) => [s.heading, ...s.paragraphs, ...(s.steps || []).flatMap((step) => [step.heading, step.text])]).join(' ')
+      const hasCjk = /[\u3400-\u9fff]/u.test(body)
+      const words = body.trim().split(/\s+/).filter(Boolean).length
+      const cjkCharacters = [...body.replace(/\s/g, '')].length
+      if (hasCjk ? cjkCharacters < 800 : words < 250) {
+        issues.push(`${route} has ${hasCjk ? `${cjkCharacters} CJK characters` : `${words} body words`}, needs ${hasCjk ? 'at least 800 CJK characters' : 'at least 250 words'}`)
+      }
       if (!guide.tool || !guide.ctaLabel) issues.push(`${route} needs a real tool and localized CTA`)
       for (const prose of [guide.title, guide.answer, ...guide.sections.flatMap((s) => [s.heading, ...s.paragraphs, ...(s.steps || []).flatMap((step) => [step.heading, step.text])]), ...guide.faqs.flatMap((f) => [f.q, f.a])]) {
         if (prose.includes(String.fromCharCode(0x2014))) issues.push(`${route} contains an em dash`)

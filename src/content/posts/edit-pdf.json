@@ -1007,6 +1007,49 @@
         "how-to-crop-a-pdf",
         "remove-metadata-from-pdf"
       ]
+    },
+    {
+      "slug": "annotate-pdf-without-changing-original-text",
+      "cluster": "edit",
+      "title": "How to annotate a PDF without changing its original text",
+      "metaTitle": "Annotate a PDF Without Rewriting Its Text",
+      "metaDescription": "Add notes, highlights, shapes and signatures over a PDF. Learn what overlay editing preserves, what it cannot rewrite, and when to redact or flatten.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "annotate pdf without changing original text",
+      "secondaryKeywords": ["add notes to a PDF", "overlay PDF editor", "highlight PDF text", "sign PDF with annotation", "flatten PDF annotations"],
+      "entities": ["PDF annotation", "content stream", "PDF overlay", "comments", "digital signature", "form fields", "redaction", "flattening"],
+      "answer": "To annotate without rewriting a PDF's original text, open it in an overlay editor and add text, highlights, drawings, shapes or a signature on top of the page. The source text stays underneath. Use true redaction when information must be removed, and flatten a review copy only when you want annotations to become fixed page content.",
+      "body": [
+        {"t":"p","x":"PDF editing can mean two different things. One kind changes the document's original text objects, fonts and layout. Another places a new review layer over the existing page. PrintxPDF's editor takes the second approach on purpose: it is useful for notes, signatures and visual markup without pretending to reconstruct the source text. Your edits are additions, not a silent rewrite."},
+        {"t":"h2","x":"Add a review layer to a copy"},
+        {"t":"steps","items":[
+          {"h":"Keep an untouched original","x":"Duplicate the file first if it is a contract, signed record or document that may need to be compared later."},
+          {"h":"Open the overlay editor","x":"Go to [Edit PDF](/tools/edit-pdf), choose the file and wait for its pages to render. The tool processes the PDF in your browser."},
+          {"h":"Choose a markup tool","x":"Add text, highlight an area, draw, place a shape, or remove an overlay. Click and drag on the page to position the item, then adjust it before saving."},
+          {"h":"Add a signature only when appropriate","x":"Place a typed or drawn signature as visible page content. This is not the same as a certificate-based digital signature that cryptographically verifies identity and later changes."},
+          {"h":"Save and inspect the new copy","x":"Reopen the result, inspect every affected page, and compare it to the source. Do not discard the source just because the overlay looks right."}
+        ]},
+        {"t":"cta","tool":"edit-pdf","x":"Add visible review marks while leaving the source PDF text in place."},
+        {"t":"h2","x":"What an overlay preserves, and what it does not"},
+        {"t":"p","x":"An overlay can add visible information while avoiding the difficult job of finding and rewriting arbitrary text inside a PDF. It is a good fit for comments, a date, a label, a highlight or a reviewer's signature mark. It does not correct a typo in the underlying paragraph, update a linked table of contents or reflow the page. Someone may still be able to select or copy the original content beneath the mark."},
+        {"t":"h2","x":"Use the right operation for the job"},
+        {"t":"table","head":["Your goal","Better fit","Important limit"],"rows":[["Add a visible note or highlight","[Edit PDF](/tools/edit-pdf)","Original page text remains underneath."],["Fill an interactive field","[Fill PDF forms](/tools/pdf-forms)","Flat scans may not contain real fields."],["Remove sensitive words","[Redact PDF](/tools/redact-pdf)","Verify the removed text cannot be selected or extracted."],["Make annotations non-editable","[Flatten PDF](/tools/flatten-pdf)","Flattening changes how the copy behaves; keep the editable source."],["Compare two revisions","[Compare PDFs](/tools/compare-pdf)","A visual comparison is not a legal authenticity check."]] },
+        {"t":"h2","x":"Comments are not a privacy control"},
+        {"t":"p","x":"A comment or text box can be an annotation object, a graphic, or content from the original page. Merely drawing a black rectangle over a name leaves the name underneath. When the goal is privacy, use actual redaction and verify the result by selecting text, searching, and extracting text from the output. The guide [how to redact a PDF properly](/blog/privacy/redact-pdf-properly) walks through those checks."},
+        {"t":"warn","x":"A visible signature image is not automatically an electronic or digital signature with identity verification. For a legally significant workflow, use the signing method required by the parties and keep the original signed record."},
+        {"t":"p","x":"For form workflows, use [fill in a PDF form](/blog/edit/how-to-fill-in-a-pdf-form). To add trustable review history, compare against the source with [PDF comparison](/blog/edit/how-to-compare-two-pdfs) and retain both files with clear version names."},
+        {"t":"p","x":"Before sharing, also check what is outside the visible page. Author and application properties are separate from annotations; [remove metadata](/tools/remove-metadata) clears standard document properties and document-level XMP, but does not erase comments, attachments or text under a visual overlay. Treat edit, redact and metadata cleanup as separate steps."}
+      ],
+      "faqs": [
+        {"q":"Does overlay editing replace the existing PDF text?","a":"No. PrintxPDF's editor adds a layer above the page. It does not rewrite or reflow arbitrary original PDF text."},
+        {"q":"Can I hide text with a black rectangle?","a":"A shape only covers what you see. Use a redaction tool that removes the underlying content, then verify the result by selecting or extracting text."},
+        {"q":"Is a drawn signature a digital signature?","a":"It creates a visible signature mark but does not provide certificate-based identity verification or tamper evidence. Use the signing method required for your document."}
+      ],
+      "relatedTools": ["edit-pdf","redact-pdf","pdf-forms","flatten-pdf","sign-pdf"],
+      "relatedPosts": ["how-to-edit-a-pdf","how-to-crop-a-pdf","how-to-fill-in-a-pdf-form","how-to-compare-two-pdfs","redact-pdf-properly","sign-pdf-without-printing","annotate-pdf-for-study"]
     }
   ]
 }

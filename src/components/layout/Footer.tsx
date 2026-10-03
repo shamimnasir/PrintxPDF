@@ -4,6 +4,7 @@ import { useSiteConfig } from '../../admin/useSiteConfig'
 import { Wordmark } from './Wordmark'
 import { BrandMark } from './BrandMark'
 import { authorPath } from '../../lib/seo'
+import { LANGUAGE_DIRECTORY } from '../../content/localizedGuides'
 
 export function Footer() {
   const cfg = useSiteConfig()
@@ -59,10 +60,9 @@ export function Footer() {
           <Link to="/contact">Contact</Link>
           <Link to="/support">Support</Link>
           <Link to="/blog">Guides</Link>
-          <Link to="/es/guias">Guías en español</Link>
-          <Link to="/pt-br/guias">Guias em português</Link>
-          <Link to="/hi/guides">हिंदी गाइड</Link>
-          <Link to="/ar/adella">أدلة PDF بالعربية</Link>
+          {LANGUAGE_DIRECTORY.filter((language) => language.active).map((language) => (
+            <Link key={language.locale} to={language.path} lang={language.locale}>{language.name}</Link>
+          ))}
           <Link to="/account">Account</Link>
           <Link to="/privacy">Privacy</Link>
           <Link to="/terms">Terms</Link>

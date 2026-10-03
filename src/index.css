@@ -639,6 +639,20 @@ p {
   color: var(--fg-muted);
   padding: 0.5rem 0.7rem 0.2rem;
 }
+.nav-menu .language-coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.7rem;
+  color: var(--fg-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.nav-menu .language-coming-soon small {
+  font-size: 0.65rem;
+  font-weight: 500;
+}
 .header-right {
   margin-left: auto;
   display: flex;

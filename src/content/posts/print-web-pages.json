@@ -745,6 +745,134 @@
         "print-web-page-without-ads",
         "reduce-pdf-file-size-for-email"
       ]
+    },
+    {
+      "slug": "print-website-page-cut-off",
+      "cluster": "print",
+      "title": "Why a web page prints cut off and how to fix it",
+      "metaTitle": "Fix a Web Page That Prints Cut Off",
+      "metaDescription": "Fix web pages that print with clipped text, blank pages or missing sections. Check scale, margins, page breaks, background images and print styles.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 5,
+      "intent": "troubleshooting",
+      "primaryKeyword": "web page printing cut off",
+      "secondaryKeywords": [
+        "website prints cut off",
+        "web page print problems",
+        "print page missing content",
+        "chrome print cuts off right side",
+        "fix website print layout"
+      ],
+      "entities": [
+        "Google Chrome",
+        "Mozilla Firefox",
+        "Safari",
+        "Microsoft Edge",
+        "CSS Paged Media",
+        "Print preview",
+        "Paper size",
+        "Scale"
+      ],
+      "answer": "When a web page prints cut off, open print preview, confirm paper size and orientation, lower scale slightly, and check margins. If the page still clips, simplify the page with a reader or clean-print view, remove unwanted blocks, or save to PDF first and inspect the result. Site print styles can also hide, resize or reposition content.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A page that looks fine on screen can print badly because a browser has to map a flexible layout onto fixed sheets of paper. Wide tables, sticky sidebars, cookie banners and site-specific print CSS can all push content outside the printable area."
+        },
+        {
+          "t": "h2",
+          "x": "Check these settings first"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open print preview",
+              "x": "Use the browser’s print dialog and wait for the preview to finish rendering before changing settings."
+            },
+            {
+              "h": "Match paper and orientation",
+              "x": "Choose the actual paper size, such as A4 or Letter. Use landscape only when the content is genuinely wider than a portrait sheet."
+            },
+            {
+              "h": "Reduce scale a little",
+              "x": "If the right edge is clipped, try a modestly smaller scale or fit-to-page option. Very small scaling can make text unreadable, so inspect the preview."
+            },
+            {
+              "h": "Set margins and headers",
+              "x": "Try default or minimum margins and disable browser headers and footers if they consume space. Do not reduce margins below what the printer can physically print."
+            },
+            {
+              "h": "Save a PDF preview",
+              "x": "Choose Save as PDF and review page breaks, blank pages and clipped sections before sending it to a physical printer."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "Create a PDF copy of a web page and inspect the pages before printing."
+        },
+        {
+          "t": "h2",
+          "x": "When print preview still looks wrong"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "A table wider than the paper may need landscape orientation or a smaller scale.",
+            "Content loaded only after scrolling may not appear until the page has finished loading.",
+            "Background colours and images can be disabled by default in browser print dialogs.",
+            "Some sites intentionally use print CSS that hides navigation or changes layout.",
+            "A page with fixed-position elements may repeat or overlap those elements on every sheet."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Make a cleaner copy before printing"
+        },
+        {
+          "t": "p",
+          "x": "If advertisements, menus or sticky overlays are taking space, a reader or clean-print view can produce a simpler page. Check the result carefully because extraction can omit text from unusual layouts or pages behind login, and some sites block automated fetching. For those pages, browser print preview remains the more reliable fallback."
+        },
+        {
+          "t": "p",
+          "x": "For more troubleshooting, see [common web page printing problems](/blog/print/fix-web-page-printing-problems) and [how to print a page without ads](/blog/print/print-web-page-without-ads). A saved PDF also makes it easier to [remove pages you do not need](/tools/delete-pages) before printing."
+        },
+        {
+          "t": "p",
+          "x": "The browser preview helps separate a layout problem from a printer problem. If the saved PDF already has clipped text, adjust page scale, orientation, margins or the site content before printing. If the PDF looks correct but paper output is clipped, check the printer driver paper size, tray setting and non-printable margins. A4 and Letter differ in both dimensions, so a mismatch can shift a page even when the preview seems close. For a long article, remove repeated navigation and sidebars before printing, then inspect the first and last page plus every page where a table crosses a break."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Why is the right side of a web page cut off when I print?",
+          "a": "The page may be wider than the selected paper or printable area. Try landscape orientation, reduce the scale slightly, or use a reader view that removes wide navigation and sidebars."
+        },
+        {
+          "q": "Why are parts of the web page missing from print preview?",
+          "a": "The site may hide elements with print-specific CSS, lazy-load content that has not loaded yet, or require background graphics to be enabled. Scroll through the page, wait for images, then review print settings."
+        },
+        {
+          "q": "How do I stop a web page from printing blank pages?",
+          "a": "Check the preview for page breaks and very tall fixed elements. Try default scale, disable headers and footers, and save to PDF to confirm whether the blank pages originate in the browser layout or printer driver."
+        },
+        {
+          "q": "Can I print a webpage without ads?",
+          "a": "A reader or clean-print view can remove many ads and navigation elements, but no extraction method works on every site. Review the cleaned copy and use the browser’s print dialog when the site blocks fetching."
+        }
+      ],
+      "relatedTools": [
+        "html-to-pdf",
+        "pdf-reader",
+        "delete-pages"
+      ],
+      "relatedPosts": [
+        "fix-web-page-printing-problems",
+        "print-web-page-without-ads",
+        "print-web-page-to-pdf-vs-printer"
+      ]
     }
   ]
 }

@@ -336,8 +336,8 @@ export const TOOL_ALIASES: ToolAlias[] = [
   {
     slug: 'remove-author-from-pdf', baseSlug: 'remove-metadata', name: 'Remove Author from PDF',
     metaTitle: 'Remove Author from PDF Metadata, Free',
-    metaDescription: 'Remove the author name and other hidden PDF metadata before sharing. Clean the file in your browser without uploading it.',
-    answer: 'Remove the author name, application, dates, and other hidden metadata from a PDF before sharing. The cleaned copy is created in your browser and stays on your device.',
+    metaDescription: 'Clear an author name and document-level PDF metadata before sharing. The browser tool does not upload the file or inspect photo metadata, comments, or attachments.',
+    answer: 'Clear the author name and standard properties plus document-level XMP from a PDF before sharing. This browser tool does not inspect metadata inside photos, comments, attachments, or other page content.',
     keywords: ['remove author from pdf', 'delete pdf author', 'pdf author metadata', 'remove name from pdf properties', 'clean pdf metadata'],
   },
   {

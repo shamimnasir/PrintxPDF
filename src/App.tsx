@@ -52,7 +52,7 @@ const ROUTES: [RegExp, keyof typeof load][] = [
   [/^\/about$/, 'About'],
   [/^\/support$/, 'Support'],
   [/^\/contact$/, 'Contact'],
-  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella)(\/[^/]+)?$/, 'LocalizedGuidePage'],
+  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella|bn\/guides|vi\/guides|zh-cn\/guides)(\/[^/]+)?$/, 'LocalizedGuidePage'],
   [/^\/(privacy|terms)$/, 'Legal'],
   [/^\/(signin|signup)$/, 'SignIn'],
   [/^\/account/, 'Account'],

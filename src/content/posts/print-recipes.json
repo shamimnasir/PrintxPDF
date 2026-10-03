@@ -989,6 +989,47 @@
         "print-recipe-without-ads",
         "how-to-merge-pdf-files"
       ]
+    },
+    {
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "cluster": "recipes",
+      "title": "How to make a PDF from Word, Excel, PowerPoint or an ebook",
+      "metaTitle": "Make a PDF From Word, Excel, PowerPoint or EPUB",
+      "metaDescription": "Choose the right conversion route for a Word file, spreadsheet, slide deck or ebook, then check fonts, page breaks, worksheets and reading order.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 7,
+      "intent": "howto",
+      "primaryKeyword": "make pdf from word excel powerpoint or ebook",
+      "secondaryKeywords": ["convert Word document to PDF", "Excel workbook to PDF", "PowerPoint slides to PDF", "EPUB to PDF converter", "check PDF conversion layout"],
+      "entities": ["DOCX", "XLSX", "PPTX", "EPUB", "MOBI", "fonts", "page breaks", "PDF/A"],
+      "answer": "Choose a converter for the source format, create a separate PDF copy, then inspect page breaks, fonts, worksheets, images and links. Word and Excel conversions run in the browser; PowerPoint and ebook conversions upload files to the PrintxPDF server, so check privacy and account limits before using those routes.",
+      "body": [
+        {"t":"p","x":"A PDF is useful when the recipient needs a stable layout rather than an editable source. The best route depends on what you start with: Word pages, spreadsheet sheets, presentation slides and ebook chapters each have different layout rules. Make a copy of the source first, and do not assume a successful download means that page breaks or fonts are correct."},
+        {"t":"h2","x":"Choose a converter for your source file"},
+        {"t":"table","head":["Source","Tool","What to inspect"],"rows":[["DOCX Word document","[Word to PDF](/tools/word-to-pdf)","Fonts, headings, page breaks, images and links."],["XLSX workbook","[Excel to PDF](/tools/excel-to-pdf)","Which sheets are included, print area, scaling and small cells."],["PPTX slide deck","[PowerPoint to PDF](/tools/ppt-to-pdf)","Slide size, fonts, diagrams, notes and animations that become static."],["EPUB ebook","[EPUB to PDF](/tools/epub-to-pdf)","Chapter order, reflowed pages, links and image placement."]] },
+        {"t":"steps","items":[
+          {"h":"Keep the editable source","x":"Duplicate the original Word, Excel, PowerPoint or ebook file so conversion does not replace the version you can still edit."},
+          {"h":"Use the matching conversion tool","x":"Choose the source-specific tool from the table. Avoid changing the file extension by renaming it; that does not convert its contents."},
+          {"h":"Check the disclosure before upload","x":"Word to PDF and Excel to PDF run in the browser. PowerPoint and ebook jobs are server conversions and upload the file over HTTPS for processing. Do not send confidential files unless your organization allows that service."},
+          {"h":"Inspect every page or sheet","x":"Compare the result to the source. Look at the first and last pages, headings near page breaks, diagrams, selected workbook sheets and any narrow table columns."},
+          {"h":"Save a clearly named copy","x":"Use a filename that identifies the version and purpose without exposing private information. Keep both the editable source and the verified PDF when your workflow requires them."}
+        ]},
+        {"t":"cta","tool":"word-to-pdf","x":"Convert a DOCX document to a PDF copy in your browser."},
+        {"t":"h2","x":"Why spreadsheets need a separate check"},
+        {"t":"p","x":"A workbook may contain several sheets, hidden rows, formulas, charts and print areas. A PDF is a fixed page view, not a live spreadsheet. Before conversion, set the print area and scaling in the source application when possible, hide sheets that should not be distributed, and confirm the resulting page count. Tiny text caused by fitting a wide sheet onto one page is often worse than splitting the table across several readable pages."},
+        {"t":"h2","x":"Why presentations and ebooks can change"},
+        {"t":"p","x":"A presentation's transitions and animations cannot work in a static PDF. Decide whether you need one frame per slide, speaker notes or a handout layout before converting. EPUB text reflows to different screens, while a PDF fixes one page design, so a converted ebook may not preserve the original reading experience. For ebook formats and other source types, [Ebook Converter](/tools/ebook-converter) handles several conversions; [MOBI to PDF](/tools/mobi-to-pdf) is another route for a compatible file."},
+        {"t":"warn","x":"Some document and ebook conversions are server processed. The PDF tools page labels these before use. Avoid uploading medical, financial, legal, student or client records to a service unless its handling meets your rules. Check the [privacy policy](/privacy) and keep the original source."},
+        {"t":"p","x":"If the resulting PDF must satisfy an archival standard, first confirm the receiving organization's exact requirement, then review [PDF/A and long-term preservation](/blog/archive/what-is-pdfa). For PDFs made from scanned pages rather than office files, use [OCR](/tools/ocr-pdf) only when a searchable text layer is needed and verify the recognition."}
+      ],
+      "faqs": [
+        {"q":"Can I make a PDF from Word without uploading the document?","a":"The PrintxPDF Word to PDF tool processes DOCX in the browser. Other conversions, including PowerPoint and ebook formats, are server processed and do upload the file for conversion."},
+        {"q":"Will every Excel worksheet appear in the PDF?","a":"Check the export and the source workbook's print settings. A workbook can contain hidden sheets or print areas that do not match what you expect."},
+        {"q":"Does converting an EPUB to PDF preserve reflow?","a":"No. PDF pages have a fixed layout, while EPUB is designed to reflow to different screen sizes. Inspect the output and keep the original ebook."}
+      ],
+      "relatedTools": ["word-to-pdf","excel-to-pdf","ppt-to-pdf","epub-to-pdf","ebook-converter"],
+      "relatedPosts": ["word-to-pdf","excel-to-pdf","html-to-pdf","pdf-to-powerpoint","what-is-pdfa","convert-powerpoint-to-pdf"]
     }
   ]
 }

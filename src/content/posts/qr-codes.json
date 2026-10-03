@@ -303,7 +303,7 @@
       "updated": "2026-07-24",
       "readMinutes": 6,
       "intent": "howto",
-      "primaryKeyword": "wifi qr code",
+      "primaryKeyword": "convert wifi to qr code",
       "secondaryKeywords": [
         "wifi qr code generator",
         "wifi qr code format",
@@ -321,7 +321,7 @@
         "Apple Camera",
         "Wi-Fi Alliance"
       ],
-      "answer": "A WiFi QR code encodes the plain text WIFI:T:WPA;S:NetworkName;P:Password;; and phones turn it into a one-tap join prompt. iPhones running iOS 11 or later and Android 10 or later read it with the built-in camera, so no app is needed on either side.",
+      "answer": "To convert WiFi to a QR code, enter the network name, password and security type in a WiFi QR generator. It encodes the WIFI:T:WPA;S:NetworkName;P:Password;; format, which supported iPhones and Android phones scan with their built-in cameras. The code exposes the password as plain text, so use a guest network.",
       "body": [
         {
           "t": "p",
@@ -1136,6 +1136,47 @@
         "qr-code-size-for-print",
         "wifi-qr-code"
       ]
+    },
+    {
+      "slug": "make-wifi-qr-code-printable-handout",
+      "cluster": "qr",
+      "title": "How to make a Wi-Fi QR code and add it to a printable PDF",
+      "metaTitle": "Make a Wi-Fi QR Code for a Printable Handout",
+      "metaDescription": "Create a Wi-Fi QR code for guests, add clear connection instructions to a handout, and test the printed code with more than one phone before sharing.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 6,
+      "intent": "howto",
+      "primaryKeyword": "make wifi qr code printable handout",
+      "secondaryKeywords": ["Wi-Fi QR code for guests", "print Wi-Fi password QR code", "add QR code to PDF", "Wi-Fi QR code generator", "test QR code before printing"],
+      "entities": ["Wi-Fi", "SSID", "WPA2", "WPA3", "QR code", "quiet zone", "SVG", "PDF handout"],
+      "answer": "Choose the Wi-Fi network name and security type, enter its password in a QR generator, and download the code. Add it to a one-page handout with a short manual connection fallback, then test the printed copy from several phones. Anyone who can scan the code may obtain the network credentials, so share it only where intended.",
+      "body": [
+        {"t":"p","x":"A Wi-Fi QR code saves guests from typing a long network password, but it also makes that password easy to share. The code usually contains the network name, security type and password as readable text encoded in a standard payload. Treat the printed code as a credential, not as decoration, and avoid posting it somewhere public if the network is private."},
+        {"t":"h2","x":"Create the code with the exact network settings"},
+        {"t":"steps","items":[
+          {"h":"Confirm the network details","x":"Copy the SSID exactly, including spaces and capitalization. Confirm whether the network uses WPA/WPA2, WPA3, or no password with the person who manages it."},
+          {"h":"Generate the Wi-Fi payload","x":"Open [Wi-Fi QR Code](/tools/qr-code), choose Wi-Fi, enter the network name and password, and select the correct security option. Avoid a leading or trailing space accidentally copied into either field."},
+          {"h":"Download a sharp version","x":"Download the vector SVG if the layout tool accepts it, or use the PNG at its original pixel size. Do not enlarge a tiny raster code until its square modules become blurry."},
+          {"h":"Build the handout","x":"Place the code on a simple page with the network name, a brief scan instruction and a manual-connection fallback. Keep clear white space around the code and enough contrast between dark modules and the background."},
+          {"h":"Test the physical print","x":"Print at the actual size, then scan it using at least two different phones. Try the code from the distance guests will use and verify the device joins the intended network."}
+        ]},
+        {"t":"cta","tool":"qr-code","x":"Create a Wi-Fi code in your browser, then test it before distributing the handout."},
+        {"t":"h2","x":"Make the page useful even when scanning fails"},
+        {"t":"p","x":"A printed sheet can be photographed, damaged or scanned by a phone that cannot join the network automatically. Include the SSID and a way for an authorized host to provide the password, but do not print the secret in plain text if the handout may be seen by strangers. For a public venue, consider a separate guest network with limited access instead of exposing your main network."},
+        {"t":"p","x":"If the code itself is a transparent PNG, put it into a page with a document editor or use [JPG to PDF](/tools/jpg-to-pdf) only if you have converted the art to JPG and do not need transparency. When you export a full-page image for a screen, [PDF to JPG](/tools/pdf-to-jpg) can render the handout, though the image no longer has selectable text."},
+        {"t":"h2","x":"Troubleshoot a code that will not scan"},
+        {"t":"p","x":"Check that the Wi-Fi security type matches the access point and that the password has no typo. Increase the printed code size, restore a clear border around it, and remove logos or patterns that cover the modules. Avoid low contrast, glossy glare and curved surfaces. A denser payload needs more room; the QR code size guide explains print dimensions and quiet zones."},
+        {"t":"warn","x":"Do not publish a private Wi-Fi password in an open website, public directory or social post. Anyone who can read the page or scan a clear photo may be able to join. If credentials change, replace or remove every printed and digital copy of the old code."},
+        {"t":"p","x":"For alternate payloads and layout advice, read [how to make a QR code for print](/blog/qr/qr-code-for-print), [choosing the right print size](/blog/qr/qr-code-size-for-print), and [Wi-Fi QR code basics](/blog/qr/wifi-qr-code). Keep the network access intentional, and verify the finished handout instead of trusting a screen preview."}
+      ],
+      "faqs": [
+        {"q":"Can someone read my Wi-Fi password from the QR code?","a":"Yes. A standard Wi-Fi QR code encodes the network details needed to connect. Treat a copy of the code like a copy of the password."},
+        {"q":"Why does a phone scan the code but not connect?","a":"The SSID, password or security type may be wrong, the network may be out of range, or the phone may not support its security settings. Verify the details with the network owner."},
+        {"q":"What size should I print a Wi-Fi QR code?","a":"Use a size that scans reliably at the intended distance, maintain a clear quiet zone and test a physical print. Dense codes generally need more room than short web links."}
+      ],
+      "relatedTools": ["qr-code","jpg-to-pdf","pdf-to-jpg","create-zip","extract-zip"],
+      "relatedPosts": ["qr-code-for-print","qr-code-size-for-print","wifi-qr-code","make-a-recipe-binder","save-webpage-as-clean-pdf-chrome","add-watermark-to-pdf"]
     }
   ]
 }

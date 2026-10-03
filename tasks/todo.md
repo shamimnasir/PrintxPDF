@@ -198,8 +198,8 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
   actively recommending a competitor for a job the product now does.
 
 ## Phase 10 (2026-10-03): international SEO and AdSense readiness
-- [x] Built a four-locale pilot (Spanish, Brazilian Portuguese, Hindi, Arabic) with 12
-      task guides plus four hubs, covering PDF merge, compression and images-to-PDF.
+- [x] Expanded the locale pilot to seven languages: Spanish, Brazilian Portuguese, Hindi,
+      Arabic, Bangla, Vietnamese, and Simplified Chinese, with 21 task guides and seven hubs.
 - [x] Added statically prerendered localized URLs, locale/direction attributes, canonical and
       reciprocal hreflang, structured data, sitemap and llms.txt coverage, and in-site links.
 - [x] Added visible content checks for length, metadata, FAQs, tool links, locale/topic parity,
@@ -217,6 +217,34 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
       `affglad` and the SVN password from the WordPress.org profile.
 - [ ] After deployment, check new URLs in Search Console and track query/impression data by
       locale. Do not report rankings or search volume without measured data.
+
+## Phase 11 (2026-10-03): Search Console SEO audit and localization expansion
+- [x] Search Console (last 3 months): 12 clicks, 333 impressions, 3.6% CTR, average position
+      42.8. Top observed queries include metadata redaction in PDF (38 impressions), Wi-Fi QR
+      conversion (13), AZW3 to EPUB (10), and extract pages from PDF free (10).
+- [x] Search Console indexing report (last updated Sep 21): 4 indexed, 174 not indexed; 159
+      discovered but not indexed, 15 crawled but not indexed. No security or manual-action issue.
+- [x] Search Console Links report currently shows 0 external links and 192 internal links.
+- [x] Added an AZW3-to-EPUB guide for observed demand and clarified that metadata cleanup is
+      separate from page-content redaction. Added seven practical English guides for observed
+      conversion and document workflows.
+- [x] Added Bangla, Vietnamese and Simplified Chinese guides and exposed all seven locale hubs
+      in the primary language menu and footer. Fixed the localized article's two-column layout.
+- [x] Fixed duplicate language links caused by appending locales already present in the data.
+- [x] Added ten practical guides across the existing 23 clusters. Together they link to all 44
+      tools and extend content coverage without inventing additional clusters.
+- [x] Removed PDF catalog-level XMP metadata in the metadata-cleanup tool and added a regression
+      test. Tightened copy to state exactly which metadata is removed and which is not.
+- [x] Final local build generates 268 prerendered pages and 265 sitemap URLs. Static audit clean;
+      rendered audit checked 265 routes at desktop and phone widths with no issues; tool audit
+      passed 44/44; IndexNow accepted the 265 URL notification. Tests and diff checks pass.
+- [ ] After deployment, resubmit /sitemap.xml in Search Console (currently last read Sep 30 with
+      218 discovered pages), then request inspection of priority new URLs. Google decides when
+      and whether to index them.
+- [ ] Avoid bulk low-quality directory submissions. Google classifies low-quality directory links
+      created to manipulate ranking as link spam; pursue relevant product listings and genuine
+      editorial references instead. A SaaSHub submission is relevant but requires an account and
+      acceptance of its terms; defer the final submit unless separately authorized.
 
 # Phase 7 (2026-09-11): launch review
 - [x] Footer, Terms and Privacy name the operating company (LateNightBirds LLC), which is also the

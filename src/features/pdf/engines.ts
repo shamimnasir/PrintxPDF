@@ -1,6 +1,6 @@
 // Every operation here runs in the browser and uploads nothing. The four server-backed
 // conversions (PowerPoint and ebook formats) live in src/lib/api.ts instead.
-import { PDFDocument, degrees, rgb, StandardFonts, PageSizes } from 'pdf-lib'
+import { PDFDocument, degrees, rgb, StandardFonts, PageSizes, PDFName } from 'pdf-lib'
 import { loadPdf, renderPageToCanvas, canvasToBlob, extractText } from '../../lib/pdfjs'
 import { readAsDataURL, stripExt } from '../../lib/download'
 
@@ -755,6 +755,9 @@ export async function removeMetadata(file: File): Promise<Output[]> {
   doc.setCreator('')
   doc.setCreationDate(new Date(0))
   doc.setModificationDate(new Date(0))
+  // XMP is a separate metadata stream in the catalog. Clearing the document-info
+  // dictionary alone leaves it attached, where readers and forensic tools can find it.
+  doc.catalog.delete(PDFName.of('Metadata'))
   return [{ name: `${stripExt(file.name)}-clean.pdf`, blob: pdfBlob(await doc.save()) }]
 }
 

@@ -41,6 +41,7 @@
       "primaryKeyword": "how to remove metadata from a pdf",
       "secondaryKeywords": [
         "pdf metadata removal",
+        "metadata redaction in pdf",
         "remove author name from pdf",
         "strip pdf metadata",
         "hidden data in pdf",
@@ -56,7 +57,7 @@
         "macOS Preview",
         "Quartz PDFContext"
       ],
-      "answer": "To remove metadata from a PDF, open it in a metadata tool and clear the Title, Author, Subject, Keywords, Creator and Producer fields along with the XMP block, then save. Embedded image EXIF and GPS data survive that step, so rasterise or re-encode the images if photos are involved.",
+      "answer": "For metadata redaction in a PDF, clear the document properties and document-level XMP, then check embedded photos and other content separately. PrintxPDF's browser tool clears standard title, author, subject, keyword, creator, producer and date fields plus catalog XMP. Photo EXIF, comments and attachments need separate review.",
       "body": [
         {
           "t": "p",
@@ -146,11 +147,11 @@
             },
             {
               "h": "Clear the XMP block as well",
-              "x": "XMP is a second copy of the metadata stored as XML. A tool that clears only the document info dictionary leaves the XMP behind, and readers will still show the old author."
+              "x": "XMP is a second set of metadata stored as XML. Remove Metadata clears the document-level XMP stream as well as the standard properties. It does not inspect photo EXIF or metadata embedded in other page content, so handle those separately if they could identify someone."
             },
             {
               "h": "Decide about the dates",
-              "x": "Creation and modification dates are not always removable without breaking readers. Where the tool allows it, blanking or normalising them removes the time zone hint."
+              "x": "Remove Metadata resets the creation and modification dates to the earliest PDF date value. This is a placeholder, not the real creation date, and it does not remove dates recorded inside photos or other content."
             },
             {
               "h": "Handle embedded photos",
@@ -158,7 +159,7 @@
             },
             {
               "h": "Save and verify",
-              "x": "Reopen the saved file and press Ctrl+D again. If a field is still populated, the tool wrote a new copy but left the old object in the file, try again with a tool that rewrites the document rather than appending to it."
+              "x": "Reopen the saved copy and press Ctrl+D again, then check whether the source contains photos or attachments that carry their own metadata. This tool clears document properties and catalog XMP, not metadata embedded in those items."
             }
           ]
         },
@@ -263,7 +264,7 @@
         },
         {
           "q": "Does removing metadata change how the PDF looks?",
-          "a": "No. Metadata is stored separately from the page content, so clearing it leaves every page pixel-identical. Only the document properties panel changes, along with what search tools can index about the file."
+          "a": "No. Clearing standard document properties and the catalog XMP stream does not alter the visible page content. This tool does not change EXIF embedded inside images, comments or attachments."
         },
         {
           "q": "Can GPS data really be inside a PDF?",
@@ -550,6 +551,7 @@
       "primaryKeyword": "how to redact a pdf",
       "secondaryKeywords": [
         "redact pdf properly",
+        "metadata redaction in pdf",
         "black box pdf not redacted",
         "permanently remove text from pdf",
         "verify pdf redaction",
@@ -637,6 +639,14 @@
         {
           "t": "h2",
           "x": "The direct route"
+        },
+        {
+          "t": "h2",
+          "x": "Metadata redaction is a separate step"
+        },
+        {
+          "t": "p",
+          "x": "Removing visible names from page content does not remove the PDF's document metadata. Author, title, subject, keywords, timestamps, comments, bookmarks, attachments and embedded image data can still disclose information. If you searched for metadata redaction in a PDF, treat it as two checks: redact the page content, then use [Remove Metadata](/tools/remove-metadata) to clear document properties and review what else remains. Redaction and metadata cleanup solve different problems, so do not rely on one as a substitute for the other."
         },
         {
           "t": "p",
@@ -1054,6 +1064,158 @@
         "remove-metadata-from-pdf",
         "redact-pdf-properly",
         "password-protect-pdf"
+      ]
+    },
+    {
+      "slug": "remove-pdf-password",
+      "cluster": "privacy",
+      "title": "How to remove a password from a PDF you own",
+      "metaTitle": "Remove a Password From Your PDF",
+      "metaDescription": "Remove a PDF open password when you know it and have permission. Learn the difference between opening and owner restrictions, and keep the unlocked file safe.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 5,
+      "intent": "howto",
+      "primaryKeyword": "remove password from pdf",
+      "secondaryKeywords": [
+        "unlock pdf with password",
+        "remove pdf password online",
+        "pdf asks password to open",
+        "remove pdf security restrictions",
+        "unlock a pdf I own"
+      ],
+      "entities": [
+        "PDF encryption",
+        "PDF owner password",
+        "PDF user password",
+        "AES",
+        "Adobe Acrobat",
+        "PDF permissions",
+        "Password manager",
+        "Digital signature"
+      ],
+      "answer": "If you own the PDF or have permission and know its password, open it with the password and use a PDF tool that supports unlocking to save an unprotected copy. An open password is different from restrictions on printing or editing. Do not try to bypass protection on files you are not authorized to access, and store the unlocked copy carefully.",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF security can require a password to open a file or apply restrictions after it opens. Those are different controls. This guide covers authorized removal when you know the password and have the right to make an unlocked copy."
+        },
+        {
+          "t": "h2",
+          "x": "Unlock a PDF when you know the password"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Confirm authorization",
+              "x": "Make sure you own the file or the document owner has allowed you to remove its protection."
+            },
+            {
+              "h": "Keep a protected original",
+              "x": "Duplicate the file before changing security so you can return to the source if the copy is damaged or needed for records."
+            },
+            {
+              "h": "Enter the current password",
+              "x": "Open [Unlock PDF](/tools/unlock-pdf), choose the file and enter the password you were given. The protected conversion runs on the server, so the file is uploaded for processing."
+            },
+            {
+              "h": "Save and verify the unlocked copy",
+              "x": "Download the output, reopen it and confirm the pages render. Store it in an access-controlled location and remove extra copies when they are no longer needed."
+            },
+            {
+              "h": "Apply new protection if needed",
+              "x": "If the file still needs confidentiality, create a new password-protected copy and share the password through a separate channel."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "unlock-pdf",
+          "x": "Unlock a PDF when you know its password and are authorized to change the file."
+        },
+        {
+          "t": "h2",
+          "x": "Open password and permissions are not the same"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Protection",
+            "What it does",
+            "What to do"
+          ],
+          "rows": [
+            [
+              "Open password",
+              "Prevents opening without a secret",
+              "Ask the owner for the password; then make an authorized copy"
+            ],
+            [
+              "Owner or permissions password",
+              "May restrict printing, copying or editing in compatible readers",
+              "Ask the owner for an unrestricted copy or the permissions password"
+            ],
+            [
+              "Digital signature",
+              "Detects changes to the signed document",
+              "Do not modify the authoritative signed copy"
+            ],
+            [
+              "DRM or managed document",
+              "May rely on an account, service or organization policy",
+              "Use the approved account or request access from the owner"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "What if you do not know the password?"
+        },
+        {
+          "t": "p",
+          "x": "Ask the sender or document owner to provide the password or an authorized accessible copy. Check your password manager and the original message. A tool cannot legitimately recover a strong encryption secret from the PDF, and attempts to bypass controls may violate law, policy or someone else’s rights."
+        },
+        {
+          "t": "warn",
+          "x": "Removing protection creates a less restricted file. Avoid uploading confidential, regulated or client documents to a server unless your organization permits that service. This particular conversion is one of the site tools that sends the file to the PrintxPDF conversion service for processing."
+        },
+        {
+          "t": "p",
+          "x": "For files you still intend to protect, see [how PDF password protection works](/blog/privacy/password-protect-pdf). Password protection is not a substitute for careful sharing or access controls."
+        },
+        {
+          "t": "p",
+          "x": "After unlocking, confirm what protection was removed by closing the file and opening the downloaded copy again. Check whether printing or copying is now allowed only if you are authorized to change those permissions. A successful download does not make the document safe to share: the new copy may be readable by anyone who receives it. Use a clear filename that does not expose confidential details, store it only where intended, and delete temporary copies according to your organization rules. If the PDF is a signed record, preserve the signed original because an unlocked or otherwise modified copy can no longer prove the same signature state."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I remove a PDF password without knowing it?",
+          "a": "Do not bypass a password on a file unless you are authorized. Ask the owner for the password or an unrestricted copy. Strong encryption is designed so the secret cannot simply be read from the PDF."
+        },
+        {
+          "q": "Why does my PDF open but still block printing or copying?",
+          "a": "It may have owner or permissions restrictions rather than an open password. Ask the owner for the permissions password or a version with the access you need."
+        },
+        {
+          "q": "Will removing a password invalidate a digital signature?",
+          "a": "Changes to a signed document can invalidate or alter signature status. Preserve the original signed PDF and do not treat an unlocked copy as the authoritative signed record."
+        },
+        {
+          "q": "Is an unlocked PDF safe to email?",
+          "a": "It no longer requires the removed password to open, so anyone who gets the file may read it. Use an approved secure sharing method for sensitive documents, or protect the new copy and send its password separately."
+        }
+      ],
+      "relatedTools": [
+        "unlock-pdf",
+        "protect-pdf",
+        "remove-metadata"
+      ],
+      "relatedPosts": [
+        "password-protect-pdf",
+        "are-online-pdf-tools-safe",
+        "remove-metadata-from-pdf"
       ]
     }
   ]

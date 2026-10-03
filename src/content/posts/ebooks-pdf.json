@@ -28,6 +28,53 @@
   ],
   "posts": [
     {
+      "slug": "convert-azw3-to-epub",
+      "cluster": "ebooks",
+      "title": "How to convert AZW3 to EPUB without losing the book",
+      "metaTitle": "Convert AZW3 to EPUB: What Works and What Does Not",
+      "metaDescription": "Convert a DRM-free AZW3 Kindle ebook to EPUB for other readers. Check copy protection first, choose the right output, then verify chapters and images.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 6,
+      "intent": "howto",
+      "primaryKeyword": "convert azw3 to epub",
+      "secondaryKeywords": [
+        "azw3 to epub converter",
+        "convert azw to epub",
+        "kindle book to epub",
+        "azw3 file reader",
+        "drm free ebook conversion"
+      ],
+      "entities": ["AZW3", "EPUB", "Amazon Kindle", "DRM", "Calibre", "Kobo", "Apple Books", "ebook-converter"],
+      "answer": "A DRM-free AZW3 ebook can be converted to EPUB with an ebook converter. First confirm the file opens outside the store app and is not encrypted. Then choose EPUB, convert, and check chapter order, images, and fonts. Store-bought Kindle books are often protected and cannot be converted by this or any other legitimate converter.",
+      "body": [
+        {"t":"p","x":"AZW3 is Amazon's Kindle format for reflowable books. EPUB is the widely supported alternative used by Kobo, Apple Books, Android reading apps and many library systems. Converting a file you already own in an unprotected format can make it easier to read on another device, but the file extension alone does not tell you whether conversion is possible."},
+        {"t":"h2","x":"Check for copy protection first"},
+        {"t":"p","x":"Many purchased Kindle books are encrypted with digital rights management (DRM) and tied to the Amazon account or app that downloaded them. A converter cannot read an encrypted book without its authorized decryption key. Do not upload a protected book to random converter sites or try to bypass the store's restrictions. A personal document, a public-domain download, or a book explicitly supplied DRM-free may convert normally."},
+        {"t":"steps","items":[
+          {"h":"Locate a DRM-free AZW3 file","x":"Use a file you are entitled to convert. If it only opens in the Kindle app or is described as protected, stop here and use the store's supported reading options."},
+          {"h":"Open the ebook converter","x":"Choose [Ebook Converter](/tools/ebook-converter), select AZW3 as the input and EPUB as the output. This conversion runs on our server: the file is uploaded securely for processing and deleted when the job completes. The current per-file limit and monthly allowance are shown in the tool and [pricing](/pricing)."},
+          {"h":"Convert and download the EPUB","x":"Wait for conversion to finish before closing the page, then save the returned EPUB to a folder you control."},
+          {"h":"Open it in the reader you plan to use","x":"Check the table of contents, first and last chapters, a page with images, and any footnotes. Ebook layouts reflow, so page breaks and page numbers from the AZW3 do not carry over."},
+          {"h":"Keep the original file","x":"Save the source AZW3 beside the EPUB until you know the new copy is complete. Conversion can change fonts, tables, and layout even when all the text survives."}
+        ]},
+        {"t":"cta","tool":"ebook-converter","x":"Convert a DRM-free AZW3 book to EPUB for compatible ebook readers."},
+        {"t":"h2","x":"AZW and AZW3 are not quite the same"},
+        {"t":"p","x":"AZW is commonly based on older MOBI technology; AZW3, also called KF8, supports richer styling. Both extensions may be attached to protected Kindle downloads, so neither guarantees a convertible file. If you have an older .azw file, try the converter only when you know it is DRM-free. For general format differences, see [our ebook format guide](/blog/ebooks/ebook-formats-explained)."},
+        {"t":"h2","x":"What may change in EPUB"},
+        {"t":"ul","items":["The words and chapter sequence should remain, but inspect the table of contents and chapter breaks.","Embedded fonts may be substituted if the reader or converter cannot use them.","Images can be resized or omitted if they use unsupported features.","Fixed page numbers do not survive because EPUB text reflows to the reader's screen.","DRM does not disappear as a side effect: protected inputs are not supported." ]},
+        {"t":"note","x":"If you need a fixed layout for printing or citation, EPUB is not the right destination. Convert the DRM-free source to PDF instead and choose a page size, then inspect the result. Our [EPUB to PDF guide](/blog/ebooks/convert-epub-to-pdf) explains those trade-offs."}
+      ],
+      "faqs": [
+        {"q":"How do I convert AZW3 to EPUB?","a":"Use an ebook converter with a DRM-free AZW3 file, select EPUB as the output, convert, then check chapters and images in an EPUB reader. Protected Kindle books cannot be converted."},
+        {"q":"Can I convert a Kindle book I bought from Amazon?","a":"Many purchased Kindle books are DRM-protected and tied to your account. Those files cannot be converted by this tool. Use Amazon's supported apps and devices, or choose a title the publisher provides without DRM."},
+        {"q":"Can I convert AZW to EPUB too?","a":"A DRM-free AZW file may convert. AZW and AZW3 extensions do not indicate whether a file is protected, so verify that you have an unencrypted file before using a converter."},
+        {"q":"Will the EPUB look exactly like the AZW3?","a":"Not necessarily. EPUB text reflows to fit each screen, so fixed page breaks and page numbers change. Check the table of contents, images, footnotes, and fonts after conversion."}
+      ],
+      "relatedTools": ["ebook-converter"],
+      "relatedPosts": ["ebook-formats-explained", "ebook-drm-explained", "convert-mobi-to-pdf"]
+    },
+    {
       "slug": "convert-epub-to-pdf",
       "cluster": "ebooks",
       "title": "How to convert an EPUB to PDF, and what you give up",

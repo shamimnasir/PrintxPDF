@@ -9,6 +9,7 @@ import { safeStorage } from '../../admin/config'
 import { Wordmark } from './Wordmark'
 import { BrandMark } from './BrandMark'
 import { useSiteConfig } from '../../admin/useSiteConfig'
+import { LANGUAGE_DIRECTORY } from '../../content/localizedGuides'
 
 function NavMenu({ label, children, id, open, setOpen, wide }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void; wide?: boolean }) {
   const isOpen = open === id
@@ -153,6 +154,18 @@ export function Header() {
             <Link to="/website-button">Print & PDF button for your site</Link>
             <Link to="/wordpress">WordPress plugin</Link>
             <Link to="/api">PDF API</Link>
+          </NavMenu>
+          <NavMenu label="Language" id="language" open={open} setOpen={setOpen}>
+            <div className="menu-title">Guides by language</div>
+            {LANGUAGE_DIRECTORY.map((language) => language.active ? (
+              <Link key={language.locale} to={language.path} lang={language.locale}>
+                {language.name}
+              </Link>
+            ) : (
+              <span key={language.locale} className="language-coming-soon" aria-disabled="true" title="Guides are not available in this language yet">
+                {language.name} <small>Coming soon</small>
+              </span>
+            ))}
           </NavMenu>
           <NavLink to="/extensions/chrome" className="nav-btn">
             Chrome

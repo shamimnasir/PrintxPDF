@@ -999,6 +999,48 @@
         "delete-pages-from-pdf",
         "extract-pages-from-pdf"
       ]
+    },
+    {
+      "slug": "combine-pdf-files-custom-page-order",
+      "cluster": "merge",
+      "title": "How to combine PDF files in a custom page order",
+      "metaTitle": "Combine PDFs and Put Pages in the Right Order",
+      "metaDescription": "Build one PDF packet from several files, rearrange pages, remove extras and check the final order before you share or print it.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 6,
+      "intent": "howto",
+      "primaryKeyword": "combine pdf files custom page order",
+      "secondaryKeywords": ["merge PDF files in order", "rearrange pages after merging PDF", "combine scanned PDFs", "move PDF pages", "remove pages from merged PDF"],
+      "entities": ["PDF page tree", "page thumbnails", "document packet", "page rotation", "bookmarks", "file size", "PDF reader", "page range"],
+      "answer": "To combine PDFs in a custom order, list the files in the sequence you want, merge them, then inspect the page thumbnails and move, rotate, extract or delete pages as needed. Save a new copy, check page count and orientation, and open the output before sending it. Keep the originals until the packet is verified.",
+      "body": [
+        {"t":"p","x":"A packet assembled from separate scans or forms often needs more than a merge. A cover may belong first, a signature page last, and one blank scan may need to go. Plan the sequence before editing, then check it page by page. The tools below work locally in your browser, so the PDFs are not uploaded."},
+        {"t":"h2","x":"Plan the order before you combine files"},
+        {"t":"p","x":"Rename copies with simple prefixes such as 01-cover, 02-form and 03-attachment, or write the intended order on a checklist. Filenames help you keep track, but do not prove that the contents are correct. Open each source and identify its page count, orientation and any password or digital signature that could be affected by saving a new file."},
+        {"t":"steps","items":[
+          {"h":"Add the source PDFs","x":"Open [Merge PDF](/tools/merge-pdf), add the files and arrange the file order before running the merge. The first input starts the output unless you move it."},
+          {"h":"Inspect the merged sequence","x":"Check thumbnails and scroll through the output, not only the first and last pages. Look for duplicated covers, reversed scans, blank pages and landscape pages mixed into a portrait packet."},
+          {"h":"Reorder individual pages","x":"For page-level changes, use [Organize Pages](/tools/organize-pdf) and drag pages into the intended order. Rotate sideways scans with [Rotate PDF](/tools/rotate-pdf)."},
+          {"h":"Remove or separate pages","x":"Use [Delete Pages](/tools/delete-pages) for unwanted pages, [Extract Pages](/tools/extract-pages) to keep a selected range in a separate file, or [Split PDF](/tools/split-pdf) to divide the packet into groups."},
+          {"h":"Save and verify a new copy","x":"Confirm the page count and order, then open the final PDF in a reader. Keep original files until the recipient has the right document and your retention policy allows cleanup."}
+        ]},
+        {"t":"cta","tool":"merge-pdf","x":"Combine several PDFs in the sequence you choose, then verify the result."},
+        {"t":"h2","x":"Merge, organize, extract or split?"},
+        {"t":"table","head":["Need","Use","Result"],"rows":[["Append entire PDFs","Merge PDF","One file with all pages in input order."],["Move a few pages around","Organize Pages","One file with the same pages in a new order."],["Keep selected pages only","Extract Pages","A new PDF containing the chosen pages."],["Remove pages from the source copy","Delete Pages","A new PDF without the specified pages."],["Divide into multiple files","Split PDF","Several outputs based on page ranges or split settings."]] },
+        {"t":"h2","x":"Check details that a file list cannot show"},
+        {"t":"p","x":"A successful merge only tells you that a file was produced. It does not tell you whether page numbers are sequential, a form still works, bookmarks point to the right place, or a digital signature remains valid. Inspect page labels, visible numbering and form fields. A signature that was valid in a source can be invalidated by merging or saving, so retain the original signed PDF when its status matters."},
+        {"t":"p","x":"If the packet combines scans, make text searchable with [OCR](/tools/ocr-pdf) on a copy, then verify names and amounts against the images. If the file is too large to email, [compress it](/tools/compress-pdf) only after checking the intended quality. Keep a readable source because image-heavy documents may become softer after compression."},
+        {"t":"warn","x":"Page removal is not the same as redaction. Deleting a page removes that page from the output, but it does not remove sensitive content that appears on another page or in comments, attachments or metadata. Use redaction and metadata tools for those separate risks."},
+        {"t":"p","x":"For a narrower task, see [extract pages from a PDF](/blog/split/extract-pages-from-pdf), [delete PDF pages](/blog/split/delete-pages-from-pdf), and [combine PDF files](/blog/merge/how-to-merge-pdf-files). A repeatable packet checklist prevents the common error: sending a technically valid PDF with the wrong order."}
+      ],
+      "faqs": [
+        {"q":"Can I rearrange pages after merging PDFs?","a":"Yes. Create the merged copy, then use a page organizer to drag pages into the final sequence and save another copy."},
+        {"q":"Does merging PDFs reduce their size?","a":"No. The output usually contains the content from every input. Use a separate compression step if the result is too large, then check image quality."},
+        {"q":"Will a digital signature survive a merge?","a":"A merge changes the document and can invalidate or alter signature status. Preserve the original signed files and verify signatures with the appropriate reader."}
+      ],
+      "relatedTools": ["merge-pdf","split-pdf","organize-pdf","rotate-pdf","delete-pages"],
+      "relatedPosts": ["how-to-merge-pdf-files","extract-pages-from-pdf","delete-pages-from-pdf","split-pdf-into-pages","reorder-pdf-pages"]
     }
   ]
 }

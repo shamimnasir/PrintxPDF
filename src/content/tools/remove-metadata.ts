@@ -3,7 +3,7 @@ import type { ToolContent } from './types'
 export const removeMetadata: ToolContent = {
   slug: 'remove-metadata',
   answer:
-    'Remove Metadata clears the hidden details saved inside a PDF: the title, author, subject, keywords, the app that made it, and the creation and edit dates. You download a clean copy. Everything runs in your browser, so the document is never uploaded, and it is free with no account.',
+    'Remove Metadata clears standard PDF document properties and the document-level XMP stream, including title, author, subject, keywords, creator, producer and dates. It does not remove metadata embedded inside photos or other content. You download a new copy; everything runs in your browser.',
   whatHeading: 'What is PDF metadata?',
   what: [
     {
@@ -14,7 +14,7 @@ export const removeMetadata: ToolContent = {
     {
       term: 'Where does a PDF keep these details?',
       definition:
-        'A PDF stores these details in a small block near the end of the file, called the document information block. This tool sets every text entry in it to empty and both dates to the earliest date a PDF can hold, so nothing personal or historical remains there. Some design and publishing apps also add a second, longer block of details, called XMP. That block is not rewritten; see the questions below.',
+        'A PDF can store details in its document information block and in a separate document-level XMP stream. This tool clears both, including title, author, subject, keywords, creator, producer and dates. It does not inspect or remove EXIF or XMP data embedded in photographs, comments, attachments or other page content.',
     },
   ],
   whyHeading: 'Why remove metadata from a PDF?',
@@ -28,18 +28,18 @@ export const removeMetadata: ToolContent = {
   howHeading: 'How to remove PDF metadata, step by step',
   how: [
     { h: 'Open Remove Metadata and drop your PDF', x: 'Drop one file. There are no options; every field is cleared.' },
-    { h: 'Click Run Remove Metadata', x: 'Title, author, subject and keywords are emptied, along with the creator and producer fields (the apps that made and saved the file), and the creation and edit dates are reset.' },
+    { h: 'Click Run Remove Metadata', x: 'Title, author, subject, keywords, creator and producer are cleared, both document dates are reset, and the document-level XMP stream is removed.' },
     { h: 'Download the clean copy', x: 'The file arrives as `name-clean.pdf`.' },
     { h: 'Check the result', x: 'Open it in [PDF Reader](/tools/pdf-reader): the top bar shows the file name instead of a title and no author. For a full check, view the file properties in a desktop PDF app.' },
   ],
   faqs: [
     {
       q: 'What exactly does Remove Metadata delete?',
-      a: 'The document information fields: Title, Author, Subject, Keywords, Creator and Producer, all set to empty, plus the creation and last-edited dates, reset to 1 January 1970. Page content, pictures, links, bookmarks and form fields are unchanged.',
+      a: 'It clears Title, Author, Subject, Keywords, Creator and Producer, resets the creation and modification dates, and removes the document-level XMP stream. Page text and images, comments, attachments, bookmarks and form fields are not changed.',
     },
     {
       q: 'Does it remove XMP metadata?',
-      a: 'Not directly. If the file carries an XMP block, a second set of details typically added by design and publishing software, it is left in place and may still hold the old title or author. Check the file properties in a desktop PDF app after cleaning, and if details remain, export the PDF again from its source without them.',
+      a: 'It removes the document-level XMP stream in the PDF catalog. It does not inspect metadata embedded inside photos or other page content, so check those separately when location or provenance could identify someone.',
     },
     {
       q: 'Does it remove comments, hidden text or attachments?',

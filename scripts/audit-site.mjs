@@ -57,7 +57,9 @@ for (const [route, { html }] of pages) {
   }
   if (!desc) add(route, 'no-description', '')
   else {
-    if (desc.length < 100 || desc.length > 165) add(route, 'description-length', `${desc.length} chars`)
+    const cjkDescription = /[\u3400-\u9fff]/u.test(desc)
+    const minimumDescriptionLength = cjkDescription ? 45 : 100
+    if (desc.length < minimumDescriptionLength || desc.length > 165) add(route, 'description-length', `${desc.length} chars`)
     if (!noindex) descriptions.set(desc, [...(descriptions.get(desc) || []), route])
   }
   if (!noindex) {

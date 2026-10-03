@@ -900,6 +900,158 @@
         "convert-an-image-format",
         "are-online-pdf-tools-safe"
       ]
+    },
+    {
+      "slug": "heic-to-jpg-iphone",
+      "cluster": "files",
+      "title": "How to convert HEIC to JPG on iPhone, Mac and Windows",
+      "metaTitle": "Convert HEIC to JPG on iPhone, Mac and Windows",
+      "metaDescription": "Convert iPhone HEIC photos to JPG for websites, email and Windows. Learn when to convert, how to preserve the original and what quality settings mean.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "readMinutes": 5,
+      "intent": "howto",
+      "primaryKeyword": "convert heic to jpg",
+      "secondaryKeywords": [
+        "heic to jpg online",
+        "iphone photo to jpg",
+        "convert heif to jpeg",
+        "open heic on windows",
+        "change iphone photos to jpg"
+      ],
+      "entities": [
+        "HEIC",
+        "HEIF",
+        "JPEG",
+        "iPhone",
+        "iOS",
+        "macOS Preview",
+        "Windows Photos",
+        "EXIF"
+      ],
+      "answer": "To convert an iPhone HEIC photo to JPG, open the image in an image converter, choose JPG, check the preview and download the converted copy. Keep the original HEIC because JPG uses lossy compression. For future iPhone photos, Camera settings can switch capture to Most Compatible, which generally saves JPEG instead.",
+      "body": [
+        {
+          "t": "p",
+          "x": "HEIC is a photo format used by many recent iPhones. It can store a good-looking image in less space than a comparable JPEG, but some upload forms, older Windows apps and print workflows do not accept it. Converting creates a broadly compatible copy; it does not repair or improve the source photo."
+        },
+        {
+          "t": "h2",
+          "x": "Convert an existing photo"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Choose the photo",
+              "x": "Open [HEIC to JPG](/tools/heic-to-jpg), select one or more HEIC photos, and wait for the local preview to appear."
+            },
+            {
+              "h": "Select JPG",
+              "x": "Choose JPG as the output. Use a high quality setting when the image will be printed or carefully reviewed; a smaller setting is usually adequate for a form or message."
+            },
+            {
+              "h": "Check the output",
+              "x": "Open the converted file and confirm that it is the right orientation and that fine details look acceptable. Keep the original until the recipient confirms the JPG works."
+            },
+            {
+              "h": "Use the right next step",
+              "x": "If a service accepts PDF but not image uploads, create a PDF from the photos with [JPG to PDF](/tools/jpg-to-pdf). If it accepts JPG, send the converted image directly."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "heic-to-jpg",
+          "x": "Convert HEIC photos to JPG in your browser without sending the images to our server."
+        },
+        {
+          "t": "h2",
+          "x": "Change the format for new iPhone photos"
+        },
+        {
+          "t": "p",
+          "x": "On supported iPhones, open Settings, Camera, Formats and choose Most Compatible to prefer JPEG capture. This setting affects new photos, not the HEIC files already in your library. Menu wording can vary by iOS version. Keeping High Efficiency is reasonable when storage matters and the people or services receiving the files support HEIC."
+        },
+        {
+          "t": "h2",
+          "x": "What conversion changes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Question",
+            "Practical answer"
+          ],
+          "rows": [
+            [
+              "Does JPG work in more places?",
+              "Usually. JPEG is supported by most browsers, forms, office apps and print workflows."
+            ],
+            [
+              "Does JPG preserve every original pixel exactly?",
+              "No. JPEG is lossy. Keep the HEIC original if fidelity matters."
+            ],
+            [
+              "Does renaming .heic to .jpg convert it?",
+              "No. Renaming changes only the label, not the encoded image."
+            ],
+            [
+              "Can metadata be affected?",
+              "Yes. Metadata handling varies by converter and settings. Review location and camera metadata before sharing sensitive photos."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "If a conversion fails"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Try one photo first, especially if the original is unusually large or uses a newer HEIF variant.",
+            "Make sure the file is a still image, not a video or a motion-photo sidecar.",
+            "Download the converted output instead of changing its extension by hand.",
+            "For a sensitive image, prefer a local conversion route and inspect metadata before sharing."
+          ]
+        },
+        {
+          "t": "p",
+          "x": "HEIC-to-JPG conversion is different from [combining photos into a PDF](/blog/to-pdf/images-to-pdf): use JPG when the recipient asks for an image, and PDF when a document-style bundle is more useful."
+        },
+        {
+          "t": "p",
+          "x": "A conversion creates another image file; it does not replace the photograph in your library unless you choose to delete the source yourself. Compare the JPG with the HEIC at the same zoom, especially around hair, foliage and small text in photographed documents. If colours look different, check whether the source uses a wide colour profile or high dynamic range and whether the target app supports it. For a photo submission, follow the receiving service instructions about maximum dimensions and file size. If it rejects the JPG, check the actual file format and size rather than repeatedly changing the extension. Keep a backup until the upload is accepted."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do I change HEIC to JPG on an iPhone?",
+          "a": "For an existing photo, use an image converter and choose JPG, or use an iOS share/export route that offers a compatible format. To prefer JPG for future captures, check Settings, Camera, Formats, Most Compatible. Existing HEIC files do not change automatically."
+        },
+        {
+          "q": "Will converting HEIC to JPG reduce photo quality?",
+          "a": "JPEG uses lossy compression, so some image data can be discarded. Keep the original HEIC and select a high quality output when detail matters. Avoid converting the same JPG repeatedly."
+        },
+        {
+          "q": "Can I just rename a HEIC file to JPG?",
+          "a": "No. The file remains HEIC internally, and software that checks the image encoding may reject it. Use a converter that decodes the HEIC image and writes a real JPEG file."
+        },
+        {
+          "q": "Is HEIC the same as HEIF?",
+          "a": "HEIF is the broader image container format family. HEIC commonly refers to HEIF images that use HEVC image coding. Apps often use the terms loosely, so compatibility depends on the actual encoded file and the receiving software."
+        }
+      ],
+      "relatedTools": [
+        "heic-to-jpg",
+        "image-converter",
+        "jpg-to-pdf"
+      ],
+      "relatedPosts": [
+        "convert-an-image-format",
+        "images-to-pdf",
+        "remove-metadata-from-pdf"
+      ]
     }
   ]
 }
