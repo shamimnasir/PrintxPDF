@@ -1,0 +1,257 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "make-wifi-qr-code-printable-handout",
+      "title": "Tạo mã QR Wi-Fi và đưa vào tài liệu PDF có thể in",
+      "slug": "make-wifi-qr-code-printable-handout",
+      "tool": "qr-code",
+      "description": "Tạo mã truy cập mạng khách, trình bày hướng dẫn rõ ràng và kiểm tra bản in trước khi phát.",
+      "metaDescription": "Tạo mã QR Wi-Fi cho khách rồi bố trí vào PDF có thể in, bảo vệ thông tin mạng và thử quét bản giấy trước khi chia sẻ.",
+      "faqs": [
+        { "q": "Có thể đưa mã QR Wi-Fi vào PDF không?", "a": "Có. Lưu mã dưới dạng ảnh rõ nét, chèn vào tài liệu và giữ đủ vùng trắng để máy ảnh quét." },
+        { "q": "Có nên ghi mật khẩu trên tờ hướng dẫn?", "a": "Chỉ khi chủ mạng cho phép và vị trí phát hành phù hợp; mã QR cũng có thể chứa thông tin đăng nhập." },
+        { "q": "Làm sao thử mã trước khi in nhiều bản?", "a": "In mẫu đúng kích thước, quét bằng điện thoại chưa kết nối mạng và xác nhận quyền truy cập đúng." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một tờ hướng dẫn Wi-Fi có mã QR giúp khách kết nối nhanh, nhưng tài liệu đó cũng phát tán quyền truy cập mạng. Trước tiên hãy xin phép người quản lý và dùng mạng khách tách biệt nếu có. Không đặt mã cho mạng nội bộ ở sảnh, quầy hoặc phòng họp công cộng. Tạo mã, thêm hướng dẫn ngắn vào tài liệu, rồi thử kết nối trên giấy thật trước khi in số lượng lớn." },
+        { "t": "h2", "x": "Tạo mã với thông tin đúng" },
+        { "t": "p", "x": "Xác nhận tên mạng, kiểu bảo mật và mật khẩu chính xác, kể cả ký tự viết hoa hoặc dấu câu. Chỉ bật lựa chọn mạng ẩn khi cấu hình router thực sự yêu cầu. Mã có thể chứa dữ liệu đăng nhập, vì vậy không tải lên công cụ không đáng tin và không đăng hình mã công khai nếu quyền truy cập bị giới hạn. Khi thông tin thay đổi, mã in cũ phải được thu hồi." },
+        { "t": "h2", "x": "Dàn trang PDF rõ ràng" },
+        { "t": "p", "x": "Đặt mã trên trang có nền sáng, độ tương phản cao và vùng yên tĩnh xung quanh. Thêm tiêu đề ngắn, tên mạng nếu phù hợp và chỉ dẫn cho người không thể quét. Chữ phải đủ lớn để đọc từ vị trí sử dụng. Đừng đặt logo, đường viền hoặc chữ đè lên mô-đun mã. Giữ hình vuông, không kéo giãn khi chèn vào tài liệu." },
+        { "t": "h2", "x": "Thử khả năng quét và kết nối" },
+        { "t": "p", "x": "In một bản đúng kích thước và chất liệu dự kiến. Dùng thiết bị chưa từng tham gia mạng để quét, sau đó kiểm tra xem thiết bị được kết nối đúng SSID. Thử nhiều điện thoại nếu đối tượng dùng iOS và Android. Kiểm tra ánh sáng, phản chiếu và khoảng cách. Nếu quét được nhưng kết nối thất bại, xem lại bảo mật hoặc mật khẩu, không chỉ tăng kích thước mã." },
+        { "t": "h2", "x": "Phát hành và thay thế an toàn" },
+        { "t": "p", "x": "Phát tờ hướng dẫn đúng nơi dành cho khách và thu hồi bản cũ khi đổi thông tin. Nếu mất kiểm soát ai đã nhận tài liệu, cân nhắc đổi mật khẩu mạng khách theo chính sách. Không dùng chung quyền truy cập cho nhân viên và khách. Lưu bản PDF không chứa bản nháp hoặc mật khẩu văn bản dư thừa, và hạn chế người có thể truy cập tệp gốc." },
+        { "t": "cta", "tool": "qr-code", "x": "Tạo mã Wi-Fi được phép chia sẻ, sau đó thử bản PDF in ra." }
+      ]
+    },
+    {
+      "topic": "print-friendly-extension-chrome",
+      "title": "Tùy chọn in trang web dễ đọc hơn trong Google Chrome",
+      "slug": "print-friendly-extension-chrome",
+      "tool": "html-to-pdf",
+      "description": "Dùng chế độ in của Chrome hoặc tiện ích phù hợp để bỏ phần thừa và lưu trang thành PDF.",
+      "metaDescription": "Tìm hiểu cách dùng bản xem trước in của Chrome, lưu website thành PDF và xử lý trang có quảng cáo hoặc nội dung động.",
+      "faqs": [
+        { "q": "Chrome có thể lưu trang web thành PDF không?", "a": "Có. Trong hộp thoại in của trình duyệt, chọn đích lưu dưới dạng PDF nếu thiết bị hỗ trợ." },
+        { "q": "Vì sao bản in vẫn có quảng cáo?", "a": "Không phải website nào cũng có kiểu in riêng; nội dung động hoặc trang nhiều cột có thể không chuyển đổi sạch." },
+        { "q": "Tiện ích in có truy cập dữ liệu website không?", "a": "Quyền tùy tiện ích khác nhau. Đọc quyền truy cập, nhà phát triển và chính sách riêng tư trước khi cài." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chrome có thể in trang web ra máy in hoặc lưu thành PDF, nhưng kết quả phụ thuộc cách website được xây dựng. Trang bài viết thường có thể in rõ, trong khi bảng điều khiển, trang đăng nhập và nội dung tải động có thể mất thành phần hoặc sắp xếp sai. Bắt đầu bằng hộp thoại xem trước của trình duyệt. Nếu bạn thường xuyên cần loại bỏ menu và quảng cáo, cân nhắc tiện ích chuyên dụng sau khi kiểm tra quyền truy cập." },
+        { "t": "h2", "x": "Dùng chức năng in tích hợp" },
+        { "t": "p", "x": "Mở hộp thoại in từ menu Chrome hoặc phím tắt của hệ điều hành. Chọn máy in hoặc đích lưu PDF, đặt khổ giấy, hướng và phạm vi trang. Xem trước từng trang để tìm phần bị cắt, trang trắng hoặc phông chữ quá nhỏ. Một số website có nút in riêng; dùng nút đó khi nó tạo bố cục tốt hơn, nhưng vẫn xem lại kết quả trước khi gửi." },
+        { "t": "h2", "x": "Khi nào nên dùng tiện ích" },
+        { "t": "p", "x": "Tiện ích có thể cung cấp chế độ bài viết, loại bỏ phần gây xao nhãng hoặc lưu trang theo mẫu. Trước khi cài, đọc tên nhà phát triển, ngày cập nhật, đánh giá và danh sách quyền. Quyền đọc dữ liệu trên website có thể rộng hơn mức cần thiết, vì vậy chỉ chọn nguồn đáng tin và tắt hoặc gỡ tiện ích không còn dùng. Tránh đưa nội dung riêng tư vào dịch vụ ngoài mà chưa hiểu cách xử lý." },
+        { "t": "h2", "x": "Xử lý nội dung không xuất hiện" },
+        { "t": "p", "x": "Một số trang chỉ tải nội dung sau khi cuộn, đăng nhập hoặc tương tác. Hoàn tất thao tác hợp lệ trước khi in, nhưng không cố vượt qua quyền truy cập. Nếu trang chặn chức năng in hoặc phụ thuộc iframe, công cụ trình duyệt có thể không đọc được nội dung. Sao chép phần bạn được phép sử dụng vào tài liệu cá nhân hoặc dùng chức năng xuất chính thức của website." },
+        { "t": "h2", "x": "Kiểm tra PDF sau khi lưu" },
+        { "t": "p", "x": "Mở tệp vừa tạo, phóng to chữ và kiểm tra liên kết, bảng, hình, đầu trang cùng số trang. Xác nhận URL nguồn hoặc ngày được giữ lại nếu cần tham khảo. Tài liệu có thông tin nhạy cảm cần được lưu ở vị trí phù hợp. Nếu PDF chỉ là ảnh hoặc văn bản không chọn được, có thể cần OCR và kiểm tra lỗi nhận dạng trước khi dùng tiếp." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Tạo bản PDF của trang web rồi kiểm tra bố cục trước khi lưu." }
+      ]
+    },
+    {
+      "topic": "firefox-print-addon",
+      "title": "Cách in trang web tốt hơn trong Firefox",
+      "slug": "firefox-print-addon",
+      "tool": "pdf-reader",
+      "description": "Xem trước trang, chọn phạm vi và kiểm tra tiện ích trước khi cấp quyền truy cập.",
+      "metaDescription": "Cải thiện bản in từ Firefox bằng cách kiểm tra xem trước, chọn trang phù hợp và hiểu quyền của tiện ích hỗ trợ in.",
+      "faqs": [
+        { "q": "Firefox có thể lưu website thành PDF không?", "a": "Tùy hệ điều hành và đích in khả dụng; dùng hộp thoại in rồi kiểm tra các lựa chọn lưu." },
+        { "q": "Tiện ích có thể làm trang sạch hơn không?", "a": "Một số tiện ích tạo chế độ đọc hoặc loại phần thừa, nhưng kết quả và quyền truy cập khác nhau." },
+        { "q": "Làm gì khi bản in thiếu hình?", "a": "Chờ hình tải xong, kiểm tra tùy chọn nền và thử chức năng in riêng của trang." }
+      ],
+      "body": [
+        { "t": "p", "x": "Firefox hỗ trợ in trang web qua hộp thoại của trình duyệt, còn một số hệ thống cung cấp lựa chọn lưu thành PDF. Bản in cuối phụ thuộc website, hệ điều hành và trình điều khiển máy in. Nếu trang có nhiều quảng cáo hoặc cột, xem trước để biết nội dung nào bị bỏ hoặc tràn trang. Tiện ích đọc hoặc in có thể giúp một số website, nhưng hãy cân nhắc quyền riêng tư và kiểm tra chất lượng trước khi dựa vào nó." },
+        { "t": "h2", "x": "Bắt đầu với hộp thoại in" },
+        { "t": "p", "x": "Mở chức năng in của Firefox và xem danh sách máy in hoặc đích PDF trên thiết bị. Chọn khổ giấy, hướng, tỷ lệ và phạm vi cần in. Tùy chọn nền có thể ảnh hưởng màu sắc nhưng không nên làm mất ý nghĩa của biểu đồ. Kiểm tra đầu và cuối tài liệu, vì phần chân trang hoặc liên kết có thể được xử lý khác nhau giữa các phiên bản." },
+        { "t": "h2", "x": "Thử chế độ đọc khi phù hợp" },
+        { "t": "p", "x": "Nếu trang có chế độ đọc tích hợp, đó có thể là cách nhanh để tập trung vào bài viết. Tuy nhiên, chế độ này có thể bỏ bảng, hình chú thích, công thức hoặc phần tương tác. So sánh nội dung với trang gốc trước khi lưu. Với biểu mẫu hoặc bảng dữ liệu, bản gốc có thể cần thiết hơn chế độ đọc." },
+        { "t": "h2", "x": "Đánh giá tiện ích cẩn thận" },
+        { "t": "p", "x": "Đọc quyền mà tiện ích yêu cầu, danh tính nhà phát triển và lịch sử cập nhật. Nếu tiện ích có thể đọc dữ liệu mọi website, đừng bật trên trang tài chính, y tế hoặc tài khoản riêng tư trừ khi có lý do đáng tin cậy. Chỉ cài từ nguồn chính thức của trình duyệt và gỡ công cụ không còn cần. Kiểm tra chính sách dữ liệu thay vì chỉ dựa vào lời quảng cáo về quyền riêng tư." },
+        { "t": "h2", "x": "Giải quyết trang bị thiếu hoặc cắt" },
+        { "t": "p", "x": "Đợi hình và phông chữ tải xong, cuộn qua phần nội dung tải trễ rồi mở lại xem trước. Thử hướng giấy khác hoặc tỷ lệ hợp lý nếu bảng quá rộng. Nếu website chặn in, dùng tính năng xuất được cung cấp hoặc lưu phần nội dung bạn có quyền sử dụng theo cách thủ công. Không xem lỗi in là quyền để vượt qua đăng nhập hay hạn chế truy cập." },
+        { "t": "h2", "x": "Xác minh bản đã lưu" },
+        { "t": "p", "x": "Mở PDF trong trình đọc và kiểm tra chất lượng chữ, hình ảnh, liên kết, số trang và nguồn. Tìm trang trắng hoặc nội dung lặp. Nếu bản lưu cần được dùng làm hồ sơ chính thức, xác nhận ngày và phiên bản. Khi tài liệu bị lỗi, thay đổi một cài đặt mỗi lần để biết nguyên nhân thay vì tạo nhiều bản khó phân biệt." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Mở PDF đã lưu và xác minh nội dung trước khi chia sẻ." }
+      ]
+    },
+    {
+      "topic": "safari-print-extension",
+      "title": "In trang web tốt hơn từ Safari trên Mac và iPhone",
+      "slug": "safari-print-extension",
+      "tool": "pdf-reader",
+      "description": "Dùng bản xem trước và chức năng chia sẻ phù hợp, đồng thời kiểm tra quyền của tiện ích Safari.",
+      "metaDescription": "Lưu hoặc in trang từ Safari trên Mac và iPhone bằng chức năng hệ thống, kiểm tra bố cục và thận trọng với tiện ích mở rộng.",
+      "faqs": [
+        { "q": "Có thể lưu trang Safari thành PDF không?", "a": "Các tùy chọn phụ thuộc phiên bản và thiết bị; dùng menu in hoặc chia sẻ rồi xác minh tệp đầu ra." },
+        { "q": "Có cần tiện ích để in trang web không?", "a": "Thường không. Thử chức năng in và chia sẻ tích hợp trước khi cài thêm phần mềm." },
+        { "q": "Tiện ích Safari có quyền đọc trang web không?", "a": "Quyền tùy cấu hình; xem quyền website được phép và chỉ cấp phạm vi cần thiết." }
+      ],
+      "body": [
+        { "t": "p", "x": "Safari trên Mac và iPhone có các chức năng in hoặc chia sẻ trang, nhưng giao diện và tùy chọn lưu phụ thuộc phiên bản hệ điều hành. Trước khi cài tiện ích, thử chức năng tích hợp và xem trước kết quả. Một website có thể bố trí khác giữa màn hình điện thoại và máy tính, nên kiểm tra đúng thiết bị bạn sẽ dùng. Nếu trang chứa nội dung cá nhân, cân nhắc vị trí lưu tệp và người có thể truy cập." },
+        { "t": "h2", "x": "In hoặc lưu trên Mac" },
+        { "t": "p", "x": "Mở lệnh in của Safari và chọn máy in hoặc tùy chọn xuất phù hợp trong hộp thoại hệ thống. Kiểm tra phạm vi trang, khổ giấy và hướng. Xem trước để tìm nội dung bị cắt hoặc thành phần giao diện không cần. Tùy phiên bản macOS, đường dẫn lưu PDF có thể nằm trong menu của hộp thoại. Sau khi lưu, mở tệp và xác nhận đúng nội dung." },
+        { "t": "h2", "x": "Lưu trên iPhone" },
+        { "t": "p", "x": "Dùng menu chia sẻ hoặc lệnh in có sẵn trong phiên bản iOS của bạn. Xem trước trang và chọn phương thức lưu mà hệ thống cung cấp. Các bước cụ thể có thể thay đổi theo phiên bản; kiểm tra tên lựa chọn trên thiết bị thay vì làm theo hướng dẫn cũ nguyên xi. Sau khi lưu vào Tệp hoặc vị trí khác, mở bản PDF để xem chữ và hình còn đầy đủ." },
+        { "t": "h2", "x": "Khi nào cần tiện ích mở rộng" },
+        { "t": "p", "x": "Tiện ích có thể hỗ trợ lọc nội dung hoặc tạo bố cục đọc dễ hơn, nhưng chúng có thể yêu cầu quyền truy cập trang web. Cài từ nguồn đáng tin, xem danh sách quyền và giới hạn website được phép khi nền tảng hỗ trợ. Không bật tiện ích trên trang nhạy cảm nếu chức năng không cần thiết. Gỡ bỏ công cụ khi không còn dùng và xem xét cập nhật định kỳ." },
+        { "t": "h2", "x": "Kiểm tra tệp và khả năng truy cập" },
+        { "t": "p", "x": "Mở PDF trên thiết bị khác nếu tài liệu sẽ được gửi cho người khác. Kiểm tra liên kết, hình, bảng, thứ tự và khả năng chọn văn bản. Nếu trang chỉ có ảnh hoặc bản PDF không tìm kiếm được, có thể cần OCR và hiệu đính. Không gửi tài liệu có thông tin riêng qua kênh không phù hợp; kiểm tra người nhận và quyền chia sẻ trước." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Mở và kiểm tra PDF đã lưu từ Safari trước khi gửi đi." }
+      ]
+    },
+    {
+      "topic": "bookmarklet-vs-extension",
+      "title": "Bookmarklet hay tiện ích trình duyệt: nên chọn cách nào?",
+      "slug": "bookmarklet-vs-extension",
+      "tool": "html-to-pdf",
+      "description": "So sánh mức tiện lợi, quyền truy cập, cập nhật và giới hạn tương thích trước khi chọn.",
+      "metaDescription": "So sánh bookmarklet và tiện ích trình duyệt theo quyền truy cập, tính năng, bảo trì và khả năng hoạt động trên thiết bị của bạn.",
+      "faqs": [
+        { "q": "Bookmarklet có an toàn hơn tiện ích không?", "a": "Không mặc định. Mã bookmarklet cũng chạy trong trang hiện tại; chỉ dùng nguồn bạn hiểu và tin cậy." },
+        { "q": "Tiện ích có nhiều quyền hơn bookmarklet không?", "a": "Có thể. Quyền cụ thể phụ thuộc tiện ích, trình duyệt và cấu hình người dùng." },
+        { "q": "Cách nào phù hợp cho tác vụ in thường xuyên?", "a": "Chọn công cụ được duy trì, có quyền tối thiểu và kiểm thử với các trang bạn cần xử lý." }
+      ],
+      "body": [
+        { "t": "p", "x": "Bookmarklet là dấu trang chứa một đoạn mã chạy khi bạn nhấn vào, còn tiện ích là phần mềm trình duyệt được cài đặt với tính năng và quyền riêng. Cả hai có thể giúp xử lý trang web, nhưng không có lựa chọn nào tự động an toàn hoặc phù hợp hơn trong mọi trường hợp. Xác định tác vụ, quyền cần thiết, thiết bị sử dụng và khả năng bảo trì trước khi cài hoặc lưu mã." },
+        { "t": "h2", "x": "Điểm mạnh của bookmarklet" },
+        { "t": "p", "x": "Bookmarklet thường dễ lưu và chạy theo yêu cầu, không cần cài gói tiện ích đầy đủ. Tuy nhiên, chúng có thể bị giới hạn bởi chính sách bảo mật của website, trình duyệt hoặc thiết bị di động. Đoạn mã không rõ nguồn có thể đọc hoặc thay đổi nội dung trang đang mở. Không thêm bookmarklet từ nguồn lạ chỉ vì hướng dẫn hứa hẹn xử lý nhanh." },
+        { "t": "h2", "x": "Điểm mạnh và rủi ro của tiện ích" },
+        { "t": "p", "x": "Tiện ích có thể cung cấp giao diện, cài đặt và cập nhật tập trung. Đổi lại, nó có thể yêu cầu quyền đọc hoặc thay đổi dữ liệu website. Đọc đúng phạm vi quyền, chính sách riêng tư, nhà phát triển và lịch sử phát hành. Tải từ kho chính thức, rà soát sau cập nhật và gỡ tiện ích không còn cần. Đánh giá tích cực không thay thế việc xem xét quyền." },
+        { "t": "h2", "x": "So sánh với cách làm tích hợp" },
+        { "t": "p", "x": "Nếu trình duyệt hoặc website đã có chức năng in hay xuất PDF đáp ứng nhu cầu, cách tích hợp thường giảm thêm mã và quyền truy cập. Khi cần dọn trang, thử chế độ đọc hoặc CSS in trước. Công cụ ngoài chỉ đáng dùng khi lợi ích cụ thể vượt rủi ro về quyền riêng tư và bảo trì." },
+        { "t": "h2", "x": "Chọn và kiểm thử có trách nhiệm" },
+        { "t": "p", "x": "Thử trên trang công khai không nhạy cảm trước, so sánh kết quả và quan sát dữ liệu nào công cụ có thể đọc. Kiểm tra bàn phím, khả năng tắt và cách xử lý khi trang không tương thích. Đừng chạy mã trên email, ngân hàng hoặc trang quản trị khi không chắc nó làm gì. Với công việc định kỳ, ưu tiên dự án được duy trì và có mô tả rõ ràng về luồng dữ liệu." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Tạo PDF từ trang thử và kiểm tra kết quả trước khi dùng thường xuyên." }
+      ]
+    },
+    {
+      "topic": "save-webpage-as-clean-pdf-chrome",
+      "title": "Lưu trang web sạch thành PDF trong Chrome",
+      "slug": "save-webpage-as-clean-pdf-chrome",
+      "tool": "html-to-pdf",
+      "description": "Dọn nội dung hợp lệ, dùng xem trước in và xác minh tệp PDF trước khi lưu trữ.",
+      "metaDescription": "Lưu trang web sạch thành PDF trong Chrome bằng bản xem trước, lựa chọn in phù hợp và kiểm tra hình ảnh, liên kết cùng nguồn.",
+      "faqs": [
+        { "q": "Làm sao lưu website thành PDF bằng Chrome?", "a": "Mở lệnh in, chọn đích lưu PDF nếu có trên hệ thống và xem trước trước khi lưu." },
+        { "q": "Chrome có bỏ quảng cáo tự động không?", "a": "Không phải lúc nào cũng vậy. Kết quả phụ thuộc stylesheet in của website hoặc công cụ đọc được phép." },
+        { "q": "Có thể lưu trang đăng nhập không?", "a": "Chỉ lưu nội dung mà bạn được phép truy cập; bảo vệ tệp nếu nó chứa thông tin cá nhân." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chrome cho phép in trang web hoặc lưu thành PDF trên nhiều cấu hình máy tính. Để có bản gọn, trước tiên dùng chế độ in hoặc chế độ đọc do website cung cấp. Trang động, nội dung tải khi cuộn và bố cục nhiều cột có thể không xuất hiện như mong muốn. Luôn xem trước, chọn phạm vi phù hợp và mở lại tệp sau khi lưu để kiểm tra chất lượng." },
+        { "t": "h2", "x": "Chuẩn bị trang trước khi lưu" },
+        { "t": "p", "x": "Chờ nội dung chính, hình và bảng tải xong. Cuộn qua phần trang cần lưu nếu website tải theo từng đoạn. Dùng nút bản in của trang nếu nó bỏ được menu và quảng cáo mà vẫn giữ nội dung. Không vượt qua màn hình đăng nhập, tường phí hoặc giới hạn truy cập; chỉ lưu tài liệu bạn có quyền xem và sử dụng." },
+        { "t": "h2", "x": "Thiết lập xem trước" },
+        { "t": "p", "x": "Mở hộp thoại in của Chrome, chọn đích PDF khả dụng và kiểm tra khổ giấy, lề, hướng, tỷ lệ cùng nền. Chọn trang cần thiết thay vì xuất mọi thứ. Duyệt từng trang để phát hiện phần bị cắt, chữ quá nhỏ, trang trắng hoặc bảng tràn. Nếu nội dung nằm ngang, thử hướng giấy khác hoặc điều chỉnh một lựa chọn mỗi lần." },
+        { "t": "h2", "x": "Xử lý website khó in" },
+        { "t": "p", "x": "Nếu trang chứa nhiều thành phần gây nhiễu, dùng chế độ đọc tích hợp hoặc công cụ hợp lệ mà bạn tin cậy. Tiện ích có thể cần quyền đọc nội dung, nên xem xét quyền và chính sách trước. Trang tài khoản hoặc ứng dụng web đôi khi không hỗ trợ in vì nội dung chỉ tồn tại trong phiên hoạt động; dùng chức năng xuất chính thức nếu có." },
+        { "t": "h2", "x": "Lưu và xác minh PDF" },
+        { "t": "p", "x": "Đặt tên tệp có ngày hoặc nguồn nếu cần lưu trữ, rồi mở lại để kiểm tra chữ chọn được, liên kết, hình và thứ tự trang. Ghi lại nguồn và ngày truy cập khi tài liệu dùng nghiên cứu. Nếu PDF chứa thông tin cá nhân, chọn nơi lưu có kiểm soát và xác nhận người nhận trước khi chia sẻ. Không mặc định bản PDF là bản lưu hợp pháp cho mọi loại nội dung." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Chuyển trang thử thành PDF và rà soát từng trang trước khi lưu." }
+      ]
+    },
+    {
+      "topic": "how-to-edit-a-pdf",
+      "title": "Cách chỉnh sửa PDF và giới hạn của việc chỉnh sửa",
+      "slug": "how-to-edit-a-pdf",
+      "tool": "edit-pdf",
+      "description": "Chọn giữa chú thích phủ, điền biểu mẫu và chuyển đổi nội dung; phân biệt với sửa chữ gốc.",
+      "metaDescription": "Tìm hiểu cách thêm chú thích, chữ ký hoặc nội dung phủ lên PDF và khi nào cần biên tập lại tệp nguồn thay vì sửa chữ gốc.",
+      "faqs": [
+        { "q": "Chỉnh sửa PDF có luôn thay đổi chữ gốc không?", "a": "Không. Nhiều công cụ chỉ thêm lớp phủ; chúng không viết lại đối tượng chữ ban đầu trong PDF." },
+        { "q": "Làm sao điền biểu mẫu PDF?", "a": "Dùng trường biểu mẫu nếu có hoặc thêm chú thích vào bản sao, rồi kiểm tra dữ liệu trước khi lưu." },
+        { "q": "Che chữ bằng hình chữ nhật có xóa được dữ liệu không?", "a": "Không nhất thiết. Hình phủ có thể che phần nhìn thấy nhưng dữ liệu gốc vẫn còn trong tệp." }
+      ],
+      "body": [
+        { "t": "p", "x": "“Chỉnh sửa PDF” có thể chỉ nhiều việc khác nhau: thêm chữ hoặc ghi chú lên trên trang, điền trường biểu mẫu, ký, sắp xếp trang hoặc thay đổi trực tiếp văn bản gốc. Công cụ chú thích thường thêm một lớp mới mà không sửa đối tượng chữ bên dưới. Điều đó hữu ích cho nhận xét và đánh dấu, nhưng không tương đương biên tập tệp nguồn. Hãy xác định mục tiêu trước và giữ bản gốc để có thể khôi phục." },
+        { "t": "h2", "x": "Chọn loại chỉnh sửa phù hợp" },
+        { "t": "p", "x": "Để nhận xét, dùng ghi chú, đánh dấu hoặc hình vẽ. Để thêm nội dung mới, dùng công cụ chữ phủ hoặc chữ ký khi được phép. Biểu mẫu có trường tương tác nên được điền vào đúng trường; biểu mẫu phẳng có thể cần chú thích đặt thủ công. Nếu cần sửa câu chữ gốc, bảng hoặc bố cục, tìm tệp nguồn như DOCX hoặc thiết kế ban đầu để chỉnh sửa rồi xuất PDF lại." },
+        { "t": "h2", "x": "Làm việc trên bản sao" },
+        { "t": "p", "x": "Tạo bản sao trước khi sửa, đặt tên rõ và giữ phiên bản gốc an toàn. Kiểm tra quyền đối với tài liệu và tránh tải nội dung nhạy cảm lên dịch vụ không phù hợp. Khi thêm chú thích, đặt chúng không che nội dung quan trọng, dùng màu có độ tương phản và nhập văn bản dễ đọc. Với tài liệu nhiều trang, xác nhận mọi thay đổi nằm đúng trang." },
+        { "t": "h2", "x": "Không nhầm lớp phủ với biên tập văn bản" },
+        { "t": "p", "x": "Một hộp màu trắng kèm chữ mới có thể làm trang trông như đã sửa, nhưng chữ cũ có thể vẫn được tìm kiếm, sao chép hoặc trích xuất. Nếu tài liệu cần sửa chính thức, hãy thay đổi tệp nguồn và tạo PDF mới hoặc dùng công cụ sửa nội dung thực sự. Kiểm tra bằng cách tìm, chọn và sao chép văn bản trước khi phân phối." },
+        { "t": "h2", "x": "Xử lý thông tin cần xóa an toàn" },
+        { "t": "p", "x": "Không dùng hình chữ nhật, bút đánh dấu đen hoặc lớp phủ để xóa thông tin mật. Dùng chức năng redaction thực sự, áp dụng và lưu bản đã làm phẳng theo quy trình phù hợp, sau đó thử tìm và trích xuất đoạn bị che. Xóa metadata nhạy cảm nếu cần. Với tài liệu pháp lý hoặc dữ liệu cá nhân, xác minh bằng quy trình bảo mật của tổ chức trước khi gửi." },
+        { "t": "cta", "tool": "edit-pdf", "x": "Thêm chú thích lên bản sao PDF và kiểm tra tệp đã lưu." }
+      ]
+    },
+    {
+      "topic": "how-to-crop-a-pdf",
+      "title": "Cách cắt trang PDF và vì sao cắt không xóa nội dung",
+      "slug": "how-to-crop-a-pdf",
+      "tool": "crop-pdf",
+      "description": "Điều chỉnh vùng hiển thị cho gọn nhưng hiểu rằng vùng ngoài khung có thể vẫn tồn tại.",
+      "metaDescription": "Cắt lề PDF để trình bày gọn hơn, đồng thời hiểu rằng thay đổi khung xem không nhất thiết xóa dữ liệu ngoài vùng cắt.",
+      "faqs": [
+        { "q": "Cắt PDF có xóa phần bị cắt không?", "a": "Không nhất thiết. Nhiều thao tác chỉ đổi khung hiển thị và nội dung ngoài khung vẫn có thể tồn tại." },
+        { "q": "Cắt có làm giảm kích thước tệp không?", "a": "Không luôn. Nó có thể thay đổi vùng trang mà không loại bỏ dữ liệu ảnh hoặc chữ bên ngoài." },
+        { "q": "Làm sao xóa nội dung riêng tư khỏi mép trang?", "a": "Dùng redaction đúng cách hoặc loại bỏ dữ liệu trong tệp nguồn; không dựa vào crop để bảo mật." }
+      ],
+      "body": [
+        { "t": "p", "x": "Cắt trang PDF có thể loại bỏ lề thừa khỏi vùng nhìn thấy, căn nội dung vào khổ giấy hoặc làm tài liệu dễ đọc trên màn hình. Nhưng crop thường điều chỉnh khung trang thay vì xóa dữ liệu bên ngoài. Người khác có thể khôi phục vùng bị ẩn bằng công cụ khác hoặc thay đổi khung xem. Vì vậy, cắt là thao tác bố cục, không phải biện pháp bảo mật." },
+        { "t": "h2", "x": "Xác định trang và vùng cắt" },
+        { "t": "p", "x": "Kiểm tra kích thước, hướng và lề của từng trang. Chọn một vùng giữ đủ chữ, số trang, dấu chú thích và phần thông tin cần thiết. Tài liệu quét có thể lệch trang hoặc có lề khác nhau, nên áp dụng cùng một khung cho mọi trang đôi khi cắt mất nội dung. Xem trước nhiều trang trước khi lưu thay đổi." },
+        { "t": "h2", "x": "Giữ bản gốc và xem lại" },
+        { "t": "p", "x": "Làm việc trên bản sao, lưu tệp với tên dễ phân biệt và mở lại sau khi xuất. Kiểm tra trang đầu, cuối và vài trang ở giữa. Xác nhận chữ không bị chạm mép, ảnh không bị cắt và khổ giấy phù hợp khi in. Nếu tài liệu dùng cho hồ sơ chính thức, giữ nguyên bản gốc theo quy định lưu trữ." },
+        { "t": "h2", "x": "Đừng dùng crop để che bí mật" },
+        { "t": "p", "x": "Nếu số tài khoản, tên hoặc chữ ký nằm ngoài vùng hiển thị sau khi cắt, chúng vẫn có thể nằm trong dữ liệu PDF. Dùng công cụ redaction thực sự để xóa nội dung cần bảo vệ, áp dụng thay đổi rồi xác minh bằng tìm kiếm, sao chép và trích xuất. Cũng xem metadata, lớp ẩn và chú thích. Hình chữ nhật phủ lên trang không tương đương xóa dữ liệu." },
+        { "t": "h2", "x": "Khi cần thay đổi tệp nguồn" },
+        { "t": "p", "x": "Nếu crop làm mất tiêu đề, số trang hoặc bố cục, chỉnh lại tài liệu gốc nếu có thể. Với bản quét, việc sửa nguồn có thể yêu cầu quét lại hoặc tạo trang mới. Đừng phóng lớn một phần nhỏ quá mức vì độ phân giải thấp sẽ làm chữ mờ. Cân đối vùng xem, khả năng đọc và mục đích sử dụng trước khi chia sẻ." },
+        { "t": "cta", "tool": "crop-pdf", "x": "Cắt lề cho dễ xem, rồi xác minh đây không phải bước xóa dữ liệu." }
+      ]
+    },
+    {
+      "topic": "how-to-fill-in-a-pdf-form",
+      "title": "Cách điền biểu mẫu PDF, dù là biểu mẫu tương tác hay phẳng",
+      "slug": "how-to-fill-in-a-pdf-form",
+      "tool": "pdf-forms",
+      "description": "Nhận biết trường biểu mẫu, điền bản sao và kiểm tra dữ liệu trước khi gửi.",
+      "metaDescription": "Điền biểu mẫu PDF có trường tương tác hoặc thêm nội dung vào bản phẳng, rồi kiểm tra chữ ký và dữ liệu trước khi gửi.",
+      "faqs": [
+        { "q": "Vì sao tôi không thể nhấn vào trường PDF?", "a": "Tệp có thể là bản quét hoặc biểu mẫu đã làm phẳng, không còn trường tương tác." },
+        { "q": "Có thể ký bằng cách gõ tên không?", "a": "Điều đó phụ thuộc yêu cầu pháp lý và quy trình nhận tài liệu; xác nhận loại chữ ký được chấp nhận." },
+        { "q": "Nên lưu biểu mẫu đã điền ở đâu?", "a": "Chọn vị trí an toàn phù hợp vì biểu mẫu có thể chứa dữ liệu cá nhân hoặc tài chính." }
+      ],
+      "body": [
+        { "t": "p", "x": "Biểu mẫu PDF có thể chứa trường có thể nhấn và nhập, hoặc chỉ là trang phẳng cần đặt chữ lên trên. Trước khi bắt đầu, xác nhận bạn có đúng phiên bản biểu mẫu và biết cách nộp được yêu cầu. Tạo bản sao nếu biểu mẫu là bản duy nhất, rồi kiểm tra trường nào bắt buộc. Điền chính xác, xem lại dữ liệu và bảo vệ tệp vì nó có thể chứa thông tin cá nhân." },
+        { "t": "h2", "x": "Nhận biết biểu mẫu tương tác" },
+        { "t": "p", "x": "Thử nhấn vào vùng nhập liệu hoặc dùng phím Tab để di chuyển qua các trường. Nếu con trỏ xuất hiện, nhập dữ liệu và kiểm tra thứ tự trường. Một số biểu mẫu có hộp chọn, danh sách và trường ngày cần định dạng cụ thể. Lưu bản nháp rồi mở lại để chắc dữ liệu được giữ; trình xem khác nhau có thể hiển thị trường không giống nhau." },
+        { "t": "h2", "x": "Điền biểu mẫu phẳng" },
+        { "t": "p", "x": "Nếu trang là ảnh quét hoặc không có trường, dùng công cụ thêm chữ để đặt nội dung lên vùng phù hợp. Phóng to để căn chữ, chọn kích thước tương tự phần còn lại và không che nhãn. Với ô vuông, dùng dấu đánh dấu dễ nhận biết. Kiểm tra các trang có vùng ký tên và ngày, tránh thêm chữ vào phần hướng dẫn." },
+        { "t": "h2", "x": "Chữ ký và tệp đính kèm" },
+        { "t": "p", "x": "Yêu cầu ký có thể khác nhau: chữ ký điện tử, chữ ký số có chứng thư hoặc chữ ký viết tay. Hỏi bên nhận loại nào được chấp nhận thay vì giả định hình ảnh chữ ký là đủ. Nếu cần đính kèm tài liệu, dùng đúng định dạng và phiên bản mới nhất. Không sửa điều khoản hoặc trường đã điền sẵn khi chưa được phép." },
+        { "t": "h2", "x": "Rà soát và gửi an toàn" },
+        { "t": "p", "x": "Kiểm tra họ tên, ngày, số tham chiếu, mọi trường bắt buộc và tính dễ đọc sau khi lưu. Mở tệp trên trình đọc khác nếu có thể để phát hiện font hoặc trường bị mất. Đặt tên tệp phù hợp, gửi đến đúng địa chỉ và dùng kênh bảo mật mà tổ chức yêu cầu. Xóa bản nháp khỏi thiết bị dùng chung theo quy trình bảo vệ dữ liệu." },
+        { "t": "cta", "tool": "pdf-forms", "x": "Điền bản sao PDF rồi xem lại toàn bộ trường trước khi gửi." }
+      ]
+    },
+    {
+      "topic": "how-to-compare-two-pdfs",
+      "title": "Cách so sánh hai tệp PDF và tìm nội dung đã thay đổi",
+      "slug": "how-to-compare-two-pdfs",
+      "tool": "compare-pdf",
+      "description": "Kiểm tra cả thay đổi văn bản lẫn hình ảnh, đồng thời xác nhận phiên bản và trang tương ứng.",
+      "metaDescription": "So sánh hai PDF để tìm thay đổi bằng cách xác minh phiên bản, căn chỉnh trang và kiểm tra cả văn bản lẫn khác biệt hình ảnh.",
+      "faqs": [
+        { "q": "So sánh PDF có phát hiện mọi thay đổi không?", "a": "Không chắc. OCR, font, bố cục và ảnh quét có thể khiến thay đổi bị bỏ sót hoặc báo sai." },
+        { "q": "Có cần cùng số trang ở hai tệp không?", "a": "Không, nhưng trang được thêm hoặc xóa có thể làm lệch đối chiếu; xác nhận thứ tự trước." },
+        { "q": "Có nên tải hợp đồng nhạy cảm lên công cụ trực tuyến?", "a": "Chỉ khi chính sách của bạn cho phép và bạn hiểu cách dịch vụ xử lý, lưu và xóa tài liệu." }
+      ],
+      "body": [
+        { "t": "p", "x": "So sánh hai PDF giúp tìm sửa đổi trong hợp đồng, báo cáo, bản nháp hoặc tài liệu xuất bản. Công cụ có thể so chữ, lớp ảnh hoặc từng trang, nhưng không phải phương pháp nào cũng nhận ra mọi thay đổi. Tệp quét, thay font hoặc dịch chuyển nhỏ có thể tạo cảnh báo thừa; thay đổi nằm trong hình ảnh có thể không được so văn bản. Xác định đúng hai phiên bản và kiểm tra kết quả quan trọng bằng mắt." },
+        { "t": "h2", "x": "Xác nhận tệp và phiên bản" },
+        { "t": "p", "x": "Kiểm tra tên, ngày, nguồn và số trang trước khi tải hai tệp vào công cụ. Giữ một bản gốc không chỉnh sửa và tạo bản làm việc riêng. Nếu tài liệu có thông tin nhạy cảm, ưu tiên quy trình được tổ chức phê duyệt và tìm hiểu nơi tệp được xử lý. Không dùng dịch vụ bên ngoài khi chính sách cấm hoặc chưa rõ điều khoản lưu trữ." },
+        { "t": "h2", "x": "Chọn phương pháp đối chiếu" },
+        { "t": "p", "x": "So chữ phù hợp PDF có văn bản chọn được; so ảnh hữu ích khi bố cục hoặc hình ảnh thay đổi. OCR có thể hỗ trợ bản quét nhưng dễ nhầm dấu, số hoặc bảng. Nếu công cụ cho phép, xác định cách căn trang khi có phần được thêm hoặc xóa. Đọc hướng dẫn để hiểu màu đánh dấu và loại khác biệt nào được tính." },
+        { "t": "h2", "x": "Rà soát khác biệt có ý nghĩa" },
+        { "t": "p", "x": "Tập trung vào con số, ngày, tên, điều khoản, chú thích và nội dung bị xóa. Xác nhận thay đổi thực sự tồn tại trong tài liệu chứ không phải khác nhau do font hoặc nén. Với bảng, kiểm tra hàng và cột thay đổi. Nếu có trang thêm mới, bảo đảm đối chiếu vẫn căn đúng giữa hai phiên bản." },
+        { "t": "h2", "x": "Lưu báo cáo và xác minh thủ công" },
+        { "t": "p", "x": "Lưu kết quả so sánh cùng tên hai tệp và thời điểm kiểm tra. Đừng coi báo cáo tự động là kiểm toán pháp lý hoặc bảo đảm không có sửa đổi. Đọc các trang quan trọng cạnh nhau và ghi lại người phê duyệt nếu quy trình yêu cầu. Khi cần chứng minh tính toàn vẹn, dùng hệ thống quản lý phiên bản hoặc chữ ký số được tổ chức chấp nhận." },
+        { "t": "cta", "tool": "compare-pdf", "x": "So sánh hai bản PDF rồi xác minh các khác biệt quan trọng." }
+      ]
+    }
+  ]
+}
