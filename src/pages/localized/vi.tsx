@@ -1,13 +1,4 @@
-import data from '../../content/localized-posts/vi.json'
-import batch1 from '../../content/localized-posts/vi-chatgpt-1.json'
-import batch2 from '../../content/localized-posts/vi-chatgpt-2.json'
-import batch3 from '../../content/localized-posts/vi-chatgpt-3.json'
-import batch4 from '../../content/localized-posts/vi-chatgpt-4.json'
-import batch5 from '../../content/localized-posts/vi-chatgpt-5.json'
-import batch6 from '../../content/localized-posts/vi-chatgpt-6.json'
-import batch7 from '../../content/localized-posts/vi-chatgpt-7.json'
-import batch8 from '../../content/localized-posts/vi-chatgpt-8.json'
-import batch9 from '../../content/localized-posts/vi-chatgpt-9.json'
-import batch10 from '../../content/localized-posts/vi-chatgpt-10.json'
+import { LANGUAGE_PACKS } from '../../content/localizedGuidesFull'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-export default createLocalizedGuidesPage('vi', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides])
+const pack = LANGUAGE_PACKS.find((item) => item.locale === 'vi')
+export default createLocalizedGuidesPage('vi', pack?.guides || [])

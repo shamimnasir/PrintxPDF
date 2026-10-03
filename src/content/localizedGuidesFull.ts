@@ -55,6 +55,7 @@ import viBatch7 from './localized-posts/vi-chatgpt-7.json'
 import viBatch8 from './localized-posts/vi-chatgpt-8.json'
 import viBatch9 from './localized-posts/vi-chatgpt-9.json'
 import viBatch10 from './localized-posts/vi-chatgpt-10.json'
+import viBatch11 from './localized-posts/vi-chatgpt-11.json'
 import zhPosts from './localized-posts/zh-CN.json'
 import { LANGUAGE_PACKS as basePacks, guidePath, normalizeLocalizedGuides } from './localizedGuides'
 import type { LanguagePack, LocalizedGuide } from './localizedGuides'
@@ -73,6 +74,7 @@ translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch8.guid
 translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch9.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch10.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch11.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'vi', guides: normalizeLocalizedGuides(viBatch11.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 
 export const LANGUAGE_PACKS: LanguagePack[] = basePacks.map((pack) => {
   const guides = new Map(pack.guides.map((guide) => [guide.topic, guide]))
