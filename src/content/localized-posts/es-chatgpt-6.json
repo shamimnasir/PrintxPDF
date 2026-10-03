@@ -1,0 +1,655 @@
+{
+  "locale": "es",
+  "guides": [
+    {
+      "topic": "pdf-to-jpg",
+      "title": "Cómo convertir páginas PDF a imágenes JPG o PNG",
+      "slug": "pdf-to-jpg",
+      "tool": "pdf-to-jpg",
+      "description": "Exporta páginas o rangos y comprueba resolución, calidad y nombres de archivo.",
+      "metaDescription": "Convierte páginas PDF a JPG o PNG, elige rango y resolución y revisa bordes, texto y color antes de publicar o imprimir.",
+      "faqs": [
+        {
+          "q": "¿JPG o PNG para una página PDF?",
+          "a": "JPG puede convenir para fotos; PNG suele conservar mejor texto y gráficos con bordes definidos."
+        },
+        {
+          "q": "¿Puedo convertir solo algunas páginas?",
+          "a": "Sí, muchas herramientas aceptan un rango; confirma la selección y el orden de salida."
+        },
+        {
+          "q": "¿Las imágenes reemplazan al PDF?",
+          "a": "No. Pierden funciones como texto seleccionable, enlaces y estructura multipágina."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Convertir páginas PDF a imágenes puede servir para insertar una página en una presentación, crear una vista previa o subir contenido a una plataforma que no acepta PDF. El formato de salida y la resolución influyen en legibilidad, tamaño y color. Conserva el PDF original y exporta solo las páginas necesarias. Antes de convertir, decide si el archivo se verá en pantalla, se imprimirá o se publicará en línea."
+        },
+        {
+          "t": "h2",
+          "x": "Selecciona páginas y formato"
+        },
+        {
+          "t": "p",
+          "x": "Elige páginas concretas o un rango y verifica cómo se cuentan las páginas si el documento tiene numeración impresa distinta. JPG funciona bien con fotografías, pero aplica compresión con pérdida; PNG suele mantener mejor letras y líneas. Si la herramienta ofrece otros formatos, compara compatibilidad con el sistema de destino."
+        },
+        {
+          "t": "h2",
+          "x": "Ajusta la resolución al uso"
+        },
+        {
+          "t": "p",
+          "x": "Una imagen pequeña puede bastar para una miniatura web, pero mostrará píxeles al ampliar o imprimir. Una resolución alta genera archivos pesados. Exporta una página de prueba y comprueba el texto más pequeño a tamaño real. No amplíes una imagen más allá del detalle que contiene el PDF original."
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba apariencia y nombres"
+        },
+        {
+          "t": "p",
+          "x": "Abre cada imagen y revisa bordes, rotación, contraste y color. Comprueba que no falten encabezados, pies o notas. Usa nombres secuenciales para mantener el orden al enviar varias páginas. Si la página incluye transparencia u objetos vectoriales, ten en cuenta que la imagen rasterizada puede aplanar esos elementos."
+        },
+        {
+          "t": "h2",
+          "x": "Comparte con el contexto adecuado"
+        },
+        {
+          "t": "p",
+          "x": "Una imagen ya no permite seleccionar texto ni seguir necesariamente los enlaces del PDF. Si alguien debe buscar, citar o revisar el contenido, comparte también la versión PDF cuando sea apropiado. Comprueba derechos y permisos, y protege las imágenes con información privada. Guarda las exportaciones separadas del original para no confundirlas."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Exporta una página de prueba y verifica el detalle en su tamaño final."
+        }
+      ]
+    },
+    {
+      "topic": "extract-images-from-pdf",
+      "title": "Cómo extraer imágenes originales de un PDF",
+      "slug": "extract-images-from-pdf",
+      "tool": "pdf-to-jpg",
+      "description": "Distingue recursos incrustados de capturas de página y comprueba calidad y derechos.",
+      "metaDescription": "Extrae imágenes de un PDF y comprueba resolución, transparencia y derechos; evita capturar una página completa si necesitas el recurso original.",
+      "faqs": [
+        {
+          "q": "¿Extraer una imagen conserva su resolución original?",
+          "a": "Depende de cómo se creó el PDF y de si la imagen fue comprimida al incorporarla."
+        },
+        {
+          "q": "¿Una captura de página es igual a extraer la imagen?",
+          "a": "No. La captura rasteriza texto, fondo y gráficos en una sola imagen."
+        },
+        {
+          "q": "¿Puedo reutilizar cualquier imagen extraída?",
+          "a": "No necesariamente. Comprueba los derechos y la licencia del documento original."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un PDF puede contener imágenes incrustadas, gráficos vectoriales o páginas completas escaneadas. Extraer un recurso original puede preservar más calidad que hacer una captura de pantalla, pero depende de cómo se construyó el documento. Define si necesitas una fotografía, un logotipo o una imagen completa de página. Conserva el PDF fuente y revisa la licencia antes de reutilizar el contenido."
+        },
+        {
+          "t": "h2",
+          "x": "Identifica el tipo de contenido"
+        },
+        {
+          "t": "p",
+          "x": "Amplía la imagen dentro del PDF y observa si el texto que la rodea se comporta por separado. Una foto insertada suele ser un objeto; un escaneo puede ser una sola imagen que cubre toda la página. Un diagrama vectorial quizá no exista como archivo de imagen convencional. La herramienta de extracción puede ofrecer solo una rasterización de la página."
+        },
+        {
+          "t": "h2",
+          "x": "Extrae o rasteriza según el propósito"
+        },
+        {
+          "t": "p",
+          "x": "Si necesitas el recurso incrustado, usa una opción de extracción que lo conserve y verifica dimensiones, color y transparencia. Si solo necesitas una vista para presentación, exporta la página a imagen con resolución suficiente. Evita capturas de pantalla para impresión o edición si el PDF contiene una fuente de mayor calidad."
+        },
+        {
+          "t": "h2",
+          "x": "Verifica calidad y contexto"
+        },
+        {
+          "t": "p",
+          "x": "Abre el archivo extraído y comprueba bordes, orientación, perfil de color y tamaño. Una imagen puede haber sido comprimida o reducida antes de llegar al PDF. Revisa si su contexto incluye pie de figura, atribución o leyenda que debas conservar. Si se reutiliza separada del documento, añade la fuente o los derechos aplicables."
+        },
+        {
+          "t": "h2",
+          "x": "Protege los datos del documento"
+        },
+        {
+          "t": "p",
+          "x": "Un recurso puede contener información privada aunque la página completa parezca inocua. No cargues documentos sensibles en un servicio desconocido y limita quién recibe las imágenes. La extracción técnica no concede derechos de publicación. Conserva una copia del PDF original y no sobrescribas los recursos sin guardar su procedencia."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Extrae una copia de prueba y revisa sus dimensiones y calidad."
+        }
+      ]
+    },
+    {
+      "topic": "pdf-to-png-transparent",
+      "title": "PNG o JPG para páginas PDF: cuál elegir",
+      "slug": "pdf-to-png-transparent",
+      "tool": "pdf-to-jpg",
+      "description": "Elige según transparencia, fotografía, texto, tamaño de archivo y compatibilidad.",
+      "metaDescription": "Compara PNG y JPG para exportar páginas PDF: transparencia, nitidez, compresión y tamaño según el uso final. en pantalla o papel",
+      "faqs": [
+        {
+          "q": "¿PNG admite fondos transparentes?",
+          "a": "Puede admitir transparencia, pero una página PDF exportada quizá se aplane sobre un fondo."
+        },
+        {
+          "q": "¿JPG es adecuado para texto?",
+          "a": "Puede introducir artefactos en letras y líneas finas; prueba PNG si la claridad del texto importa."
+        },
+        {
+          "q": "¿Cuál crea archivos menores?",
+          "a": "Depende del contenido. JPG suele ser compacto para fotos, mientras PNG puede crecer con imágenes complejas."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Al convertir una página PDF en imagen, PNG y JPG producen resultados distintos. PNG puede conservar bordes nítidos y transparencia cuando el flujo la admite; JPG suele crear archivos más pequeños para fotografías, pero usa compresión con pérdida. Ninguna opción es siempre mejor. Piensa en el tipo de contenido, el tamaño de salida y la aplicación donde se mostrará. Mantén el PDF original para conservar texto y enlaces."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo elegir PNG"
+        },
+        {
+          "t": "p",
+          "x": "PNG puede ser apropiado para capturas, diagramas, texto, gráficos planos o elementos que necesiten fondo transparente. La transparencia depende de las opciones de exportación y puede aplanarse al representar una página completa. Comprueba bordes y tamaño del archivo, sobre todo si el documento tiene fotografías o degradados."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo elegir JPG"
+        },
+        {
+          "t": "p",
+          "x": "JPG suele funcionar bien con fotografías y vistas previas donde el tamaño importa. Ajusta calidad con moderación: una compresión fuerte puede crear bloques alrededor de letras y líneas. No conviertas repetidamente una imagen JPG, porque cada guardado puede añadir pérdida. Guarda una fuente de mayor calidad para volver a exportar."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba dimensiones y resolución"
+        },
+        {
+          "t": "p",
+          "x": "El formato no puede recuperar detalle que no estaba en el PDF ni sustituye una resolución adecuada. Exporta una página con texto pequeño y otra con una foto. Amplía para examinar defectos y también mira el tamaño real de visualización. Para imprimir, prueba en papel; para web, verifica que la plataforma admita el formato."
+        },
+        {
+          "t": "h2",
+          "x": "Conserva compatibilidad y significado"
+        },
+        {
+          "t": "p",
+          "x": "Comprueba que el fondo, los colores y el orden de página sean correctos en el destino. Añade texto alternativo o una descripción cuando la imagen se publique para un público amplio. Si necesitas copiar texto o conservar vínculos, comparte el PDF además de la imagen. Respeta derechos y evita difundir contenido privado."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Exporta muestras en PNG y JPG y compara nitidez y tamaño."
+        }
+      ]
+    },
+    {
+      "topic": "best-image-format-for-print",
+      "title": "Qué resolución y formato de imagen necesitas para imprimir",
+      "slug": "best-image-format-for-print",
+      "tool": "pdf-to-jpg",
+      "description": "Calcula según tamaño impreso y detalle, y realiza una prueba con la impresora prevista.",
+      "metaDescription": "Elige resolución y formato de imagen para imprimir según tamaño, distancia de lectura y detalle, y comprueba la salida en papel.",
+      "faqs": [
+        {
+          "q": "¿Qué resolución necesito para imprimir?",
+          "a": "Depende del tamaño físico, la distancia de lectura y la calidad deseada; prueba al tamaño final."
+        },
+        {
+          "q": "¿JPG sirve para una imagen impresa?",
+          "a": "Puede servir para fotografías si la calidad es suficiente; gráficos con texto pueden necesitar otro formato."
+        },
+        {
+          "q": "¿Puedo aumentar la resolución de una imagen pequeña?",
+          "a": "Puedes interpolar píxeles, pero eso no recupera el detalle original que falta."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Una imagen que se ve bien en una pantalla puede imprimirse borrosa si tiene pocos píxeles para el tamaño físico elegido. La resolución adecuada depende de dimensiones, distancia de lectura, tipo de impresora y detalle. El formato también influye: las fotografías toleran compresión distinta a los logotipos o gráficos con texto. Conserva el archivo de mayor calidad y haz una prueba antes de imprimir una tirada completa."
+        },
+        {
+          "t": "h2",
+          "x": "Relaciona píxeles con tamaño impreso"
+        },
+        {
+          "t": "p",
+          "x": "Calcula si la cantidad de píxeles alcanza para el ancho y alto en papel. No existe una cifra universal porque una pancarta se mira desde lejos y una fotografía pequeña se observa de cerca. Revisa el tamaño efectivo en el software de impresión, no solo la resolución indicada por el archivo. Ampliar artificialmente no recrea letras o detalles perdidos."
+        },
+        {
+          "t": "h2",
+          "x": "Escoge el formato según la imagen"
+        },
+        {
+          "t": "p",
+          "x": "JPG puede ser práctico para fotografías; PNG conserva bordes y puede admitir transparencia. Si el original es vectorial, conserva el formato vectorial cuando el flujo de impresión lo permita. Una conversión a imagen rasterizada puede hacer que texto y líneas finas pierdan nitidez. Comprueba que el perfil de color sea compatible con impresora y papel."
+        },
+        {
+          "t": "h2",
+          "x": "Haz una prueba real"
+        },
+        {
+          "t": "p",
+          "x": "Imprime una sección con el texto más pequeño, un degradado y un área de color. Evalúa a la distancia prevista y revisa recorte y orientación. La pantalla está retroiluminada y no representa exactamente la apariencia del papel. Ajusta brillo, escala o calidad solo después de comparar una muestra."
+        },
+        {
+          "t": "h2",
+          "x": "Prepara el archivo final"
+        },
+        {
+          "t": "p",
+          "x": "Usa dimensiones correctas, no estires la imagen y deja margen de seguridad para el área imprimible. Verifica que no haya compresión adicional al exportar o enviar al servicio de impresión. Guarda el archivo listo y el original por separado. Obtén permiso para reproducir imágenes protegidas y proporciona las especificaciones solicitadas por el impresor."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Exporta una muestra y evalúa el detalle en el papel previsto."
+        }
+      ]
+    },
+    {
+      "topic": "convert-pdf-pages-to-images-for-print-and-web",
+      "title": "Convertir páginas PDF a JPG o PNG para imprimir y publicar en web",
+      "slug": "convert-pdf-pages-to-images-for-print-and-web",
+      "tool": "image-converter",
+      "description": "Usa ajustes distintos para pantalla e impresión y conserva una versión PDF con estructura.",
+      "metaDescription": "Prepara páginas PDF como JPG o PNG para web o impresión, con resolución distinta según destino y verificación del detalle final.",
+      "faqs": [
+        {
+          "q": "¿Puedo usar la misma imagen para web e impresión?",
+          "a": "A veces, pero las necesidades de dimensiones y resolución suelen ser diferentes."
+        },
+        {
+          "q": "¿Qué formato es más ligero para publicar?",
+          "a": "JPG suele ser compacto para fotos; PNG puede convenir a texto y gráficos, según contenido."
+        },
+        {
+          "q": "¿Las imágenes mantienen accesibilidad del PDF?",
+          "a": "No automáticamente. Texto, enlaces y estructura se pierden al rasterizar la página."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Convertir un PDF a imágenes permite publicar una página como vista previa o preparar material para un sistema que no acepta PDF. El archivo destinado a web y el destinado a impresión suelen requerir tamaños diferentes. La rasterización elimina texto seleccionable, enlaces y estructura. Conserva el PDF fuente y crea imágenes derivadas solo para el uso necesario."
+        },
+        {
+          "t": "h2",
+          "x": "Define el destino antes de exportar"
+        },
+        {
+          "t": "p",
+          "x": "Para una web, el ancho en pantalla, velocidad de descarga y compresión importan. Para impresión, el tamaño físico y los detalles finos son prioritarios. No exportes todas las páginas en resolución máxima si solo necesitas una miniatura. Determina si el sitio acepta JPG, PNG u otro formato y si recomprime las imágenes al subirlas."
+        },
+        {
+          "t": "h2",
+          "x": "Elige formato y resolución"
+        },
+        {
+          "t": "p",
+          "x": "JPG puede reducir peso en páginas fotográficas; PNG suele mantener texto y diagramas nítidos. Prueba ambos si el contenido mezcla fotos con letras. Ajusta dimensiones según el uso real y conserva proporción. Una imagen demasiado pequeña se pixelará al ampliar, mientras una muy grande puede ralentizar la página o el correo."
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba páginas y contexto"
+        },
+        {
+          "t": "p",
+          "x": "Revisa recorte, orientación, color, encabezados y pies. Añade una descripción accesible si publicas la imagen en web, y no dependas de texto dentro de la imagen como única forma de comunicar información. Mantén enlaces o una alternativa PDF cuando el usuario necesite copiar texto o navegar por el documento."
+        },
+        {
+          "t": "h2",
+          "x": "Cuida privacidad y derechos"
+        },
+        {
+          "t": "p",
+          "x": "Verifica que puedes publicar el contenido, revisa datos personales y elimina metadatos innecesarios. Las imágenes pueden exponer detalles que no eran visibles en la miniatura. Guarda las versiones con nombres claros, conserva una copia de calidad y utiliza el canal de procesamiento permitido para documentos privados."
+        },
+        {
+          "t": "cta",
+          "tool": "image-converter",
+          "x": "Crea una versión para el destino previsto y revísala antes de publicarla."
+        }
+      ]
+    },
+    {
+      "topic": "remove-metadata-from-pdf",
+      "title": "Cómo eliminar metadatos ocultos de un PDF antes de compartirlo",
+      "slug": "remove-metadata-from-pdf",
+      "tool": "remove-metadata",
+      "description": "Inspecciona propiedades, comentarios y datos adjuntos y valida una copia limpia.",
+      "metaDescription": "Revisa y elimina metadatos de un PDF antes de compartirlo, sin confundir esa limpieza con redacción del contenido visible o privado.",
+      "faqs": [
+        {
+          "q": "¿Qué metadatos puede incluir un PDF?",
+          "a": "Puede guardar título, autor, fechas, software de creación, comentarios y otros datos asociados."
+        },
+        {
+          "q": "¿Eliminar metadatos borra texto oculto?",
+          "a": "No necesariamente. Capas, comentarios, adjuntos y contenido bajo formas requieren inspección específica."
+        },
+        {
+          "q": "¿La limpieza invalida una firma?",
+          "a": "Modificar un PDF firmado puede afectar su validez; comprueba la firma y las reglas aplicables."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un PDF puede contener propiedades que no aparecen en la página, como autor, título, programa de creación o fechas. También puede guardar comentarios, capas, formularios y archivos adjuntos. Revisar esos elementos antes de compartir ayuda a reducir filtraciones accidentales, pero borrar metadatos no equivale a redactar información visible ni garantiza que el documento sea anónimo. Trabaja con una copia y sigue la política de tu organización."
+        },
+        {
+          "t": "h2",
+          "x": "Inspecciona propiedades y contenido adicional"
+        },
+        {
+          "t": "p",
+          "x": "Abre las propiedades del documento y revisa título, autor, palabras clave y fechas. Comprueba comentarios, anotaciones, formularios, capas, enlaces y adjuntos. Busca texto oculto o cambios controlados que no deban divulgarse. El contenido puede estar almacenado dentro del PDF incluso si no aparece en la vista normal."
+        },
+        {
+          "t": "h2",
+          "x": "Elimina lo que no sea necesario"
+        },
+        {
+          "t": "p",
+          "x": "Usa una función de inspección o limpieza que indique qué datos se eliminarán. Conserva metadatos requeridos para archivo, autoría o cumplimiento. No elimines elementos en un original de evidencia o expediente sin autorización. Si el PDF tiene una firma digital, cualquier cambio posterior puede invalidarla; verifica el estado antes y después."
+        },
+        {
+          "t": "h2",
+          "x": "Diferencia metadatos de redacción"
+        },
+        {
+          "t": "p",
+          "x": "Eliminar el nombre del autor no borra un número de identificación que se ve en una página. Una caja superpuesta tampoco elimina texto subyacente. Usa redacción para retirar contenido confidencial, luego comprueba mediante búsqueda, copia y extracción que ya no esté presente. Inspecciona también anotaciones y capas."
+        },
+        {
+          "t": "h2",
+          "x": "Valida la copia para compartir"
+        },
+        {
+          "t": "p",
+          "x": "Guarda un archivo distinto y ábrelo en otro lector. Revisa propiedades, páginas, formularios, comentarios y adjuntos. Confirma que el destinatario necesita la versión limpiada y usa un medio seguro. Mantén el original según los plazos de conservación, no más tiempo del permitido ni menos de lo requerido."
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Limpia una copia y comprueba las propiedades antes de enviarla."
+        }
+      ]
+    },
+    {
+      "topic": "password-protect-pdf",
+      "title": "Cómo proteger un PDF con contraseña y qué protección ofrece",
+      "slug": "password-protect-pdf",
+      "tool": "protect-pdf",
+      "description": "Configura una contraseña robusta, comprueba permisos y comparte la clave por separado.",
+      "metaDescription": "Protege un PDF con contraseña, entiende límites de permisos y cifrado y comprueba que el destinatario pueda abrirlo correctamente.",
+      "faqs": [
+        {
+          "q": "¿Una contraseña impide todas las copias?",
+          "a": "No. Los permisos pueden limitar algunas acciones, pero no son una garantía contra capturas o filtraciones."
+        },
+        {
+          "q": "¿Cómo comparto la contraseña?",
+          "a": "Usa un canal separado y confiable, no la incluyas en el mismo mensaje que el archivo."
+        },
+        {
+          "q": "¿La protección evita que se lea el PDF sin clave?",
+          "a": "Depende del tipo de cifrado, la contraseña y la compatibilidad del lector; prueba el resultado."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Una contraseña puede restringir la apertura de un PDF o limitar ciertas acciones, según el cifrado y el lector. No convierte el documento en invulnerable ni evita que una persona autorizada haga capturas o comparta una copia. Define qué riesgo quieres reducir y sigue las normas de tu organización. Trabaja con una copia y conserva la contraseña en un gestor seguro."
+        },
+        {
+          "t": "h2",
+          "x": "Elige una contraseña robusta"
+        },
+        {
+          "t": "p",
+          "x": "Usa una frase larga y única, no datos personales fáciles de adivinar. Evita reutilizar la clave de una cuenta importante. Si el lector diferencia entre contraseña de apertura y permisos, comprende qué controla cada una. Una contraseña olvidada puede impedir acceso incluso a personas autorizadas, así que establece un proceso seguro de recuperación."
+        },
+        {
+          "t": "h2",
+          "x": "Configura y prueba la protección"
+        },
+        {
+          "t": "p",
+          "x": "Aplica la protección a una copia, cierra el documento y vuelve a abrirlo para confirmar que solicita la clave. Comprueba compatibilidad con el lector del destinatario y prueba las restricciones relevantes. No asumas que un ajuste impide toda impresión o copia; las capacidades varían y algunos lectores no aplican las limitaciones de la misma forma."
+        },
+        {
+          "t": "h2",
+          "x": "Comparte la clave por separado"
+        },
+        {
+          "t": "p",
+          "x": "Envía el PDF y la contraseña por canales diferentes, como un gestor seguro o una comunicación verificada. Confirma la identidad del destinatario y no dejes la clave en el mismo correo. Si compartes un enlace, configura permisos y caducidad cuando estén disponibles. No publiques la contraseña en un chat grupal con acceso amplio."
+        },
+        {
+          "t": "h2",
+          "x": "Mantén una política de acceso"
+        },
+        {
+          "t": "p",
+          "x": "Decide quién necesita leer el documento, cuándo debe caducar el acceso y cómo se retirará. Para información muy sensible, considera controles de acceso administrados en vez de confiar solo en la contraseña del PDF. Conserva originales conforme a la política y no añadas cifrado a formatos que deban cumplir un perfil de archivo incompatible."
+        },
+        {
+          "t": "cta",
+          "tool": "protect-pdf",
+          "x": "Protege una copia y verifica la contraseña antes de compartirla."
+        }
+      ]
+    },
+    {
+      "topic": "redact-pdf-properly",
+      "title": "Cómo redactar un PDF para eliminar texto de verdad",
+      "slug": "redact-pdf-properly",
+      "tool": "redact-pdf",
+      "description": "Usa redacción permanente y verifica texto, imágenes, anotaciones y metadatos antes de enviar.",
+      "metaDescription": "Redacta información confidencial de un PDF con eliminación permanente y comprueba que no pueda buscarse, copiarse o recuperarse.",
+      "faqs": [
+        {
+          "q": "¿Puedo tapar texto con un rectángulo negro?",
+          "a": "No es seguro. El texto puede seguir dentro y recuperarse quitando o moviendo la forma."
+        },
+        {
+          "q": "¿Qué debo comprobar después de redactar?",
+          "a": "Busca y copia el texto oculto, revisa capas y propiedades y abre una copia aplanada en otro lector."
+        },
+        {
+          "q": "¿La redacción se puede deshacer?",
+          "a": "Una redacción aplicada correctamente elimina contenido; conserva el original controlado antes de empezar."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Redactar un PDF significa eliminar de forma permanente información confidencial, no solo ocultarla en pantalla. Dibujar un rectángulo negro o cubrir palabras con una imagen puede dejar el texto original seleccionable, buscable o extraíble. Usa una herramienta de redacción real, aplícala al archivo y valida el resultado. Trabaja en una copia segura y conserva el original según las reglas de retención aplicables."
+        },
+        {
+          "t": "h2",
+          "x": "Localiza todas las apariciones"
+        },
+        {
+          "t": "p",
+          "x": "Busca el nombre, número o término que debe eliminarse y revisa cada página manualmente. El mismo dato puede aparecer en encabezados, pies, comentarios, formularios, capas o propiedades. Comprueba imágenes y texto OCR. Marca exactamente qué debe desaparecer para evitar eliminar información necesaria o dejar una aparición olvidada."
+        },
+        {
+          "t": "h2",
+          "x": "Aplica una redacción permanente"
+        },
+        {
+          "t": "p",
+          "x": "Usa la función identificada como redacción y confirma los cambios antes de guardarlos. Algunas herramientas requieren aplicar o finalizar las marcas para que el contenido se borre realmente. No uses resaltador, recorte o una forma superpuesta como sustituto. Guarda un archivo nuevo y no sobrescribas la única copia del original."
+        },
+        {
+          "t": "h2",
+          "x": "Verifica que los datos no se recuperen"
+        },
+        {
+          "t": "p",
+          "x": "Cierra y vuelve a abrir el PDF. Busca las palabras redactadas, intenta seleccionar y copiar el área y revisa extracción de texto y propiedades. Comprueba capas, comentarios y adjuntos. Usa un segundo lector cuando sea posible. Si el contenido aparece, no distribuyas el documento; repite el procedimiento con una herramienta adecuada."
+        },
+        {
+          "t": "h2",
+          "x": "Controla las copias y la distribución"
+        },
+        {
+          "t": "p",
+          "x": "El archivo redactado puede conservar metadatos u otras páginas sensibles. Inspecciona el documento completo, no solo las marcas negras. Comparte por un canal seguro y limita destinatarios. Mantén la copia fuente protegida según la política de conservación y registra quién aprobó la redacción cuando se trate de un proceso formal."
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "Redacta una copia y confirma que el texto ya no se puede encontrar."
+        }
+      ]
+    },
+    {
+      "topic": "are-online-pdf-tools-safe",
+      "title": "¿Son seguras las herramientas PDF en línea? Qué ocurre con tu archivo",
+      "slug": "are-online-pdf-tools-safe",
+      "tool": "merge-pdf",
+      "description": "Comprueba dónde se procesa el archivo, cuánto se conserva y qué datos pueden quedar expuestos.",
+      "metaDescription": "Evalúa la seguridad de una herramienta PDF en línea revisando procesamiento, retención, cifrado, permisos y sensibilidad del documento.",
+      "faqs": [
+        {
+          "q": "¿Una conexión HTTPS garantiza que el archivo se borre?",
+          "a": "No. HTTPS protege el tránsito, pero la retención depende de la política y arquitectura del servicio."
+        },
+        {
+          "q": "¿Puedo usar un convertidor gratuito con datos médicos?",
+          "a": "Solo si la política y las obligaciones aplicables lo permiten y conoces el procesamiento del archivo."
+        },
+        {
+          "q": "¿Qué opción es más privada?",
+          "a": "Depende. Una herramienta local evita enviar el archivo, pero también debes confiar en el software y dispositivo."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "La seguridad de una herramienta PDF depende de más que el candado del navegador o la palabra “privado” en una página. Debes saber si el archivo se procesa localmente o se envía a un servidor, quién puede acceder, cuánto tiempo se conserva y cómo se elimina. Evalúa la sensibilidad del documento y la política aplicable antes de cargarlo. Un servicio gratuito no es automáticamente inseguro, pero tampoco queda verificado por ser conocido."
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba el flujo de datos"
+        },
+        {
+          "t": "p",
+          "x": "Busca información clara sobre carga, almacenamiento, registros, copias temporales y eliminación. HTTPS cifra el tránsito, pero no explica qué sucede después de recibir el archivo. Revisa si hay subprocesadores o ubicaciones de procesamiento relevantes para tu organización. Si no puedes encontrar una respuesta clara, no subas documentos confidenciales."
+        },
+        {
+          "t": "h2",
+          "x": "Considera el tipo de documento"
+        },
+        {
+          "t": "p",
+          "x": "Un folleto público tiene un riesgo distinto a un contrato, expediente médico, identificación o nómina. Para datos regulados, utiliza herramientas aprobadas y consulta al responsable de privacidad o seguridad. Evita cargar material de un cliente en una cuenta personal. Quita datos de ejemplo si solo necesitas probar una función."
+        },
+        {
+          "t": "h2",
+          "x": "Compara procesamiento local y remoto"
+        },
+        {
+          "t": "p",
+          "x": "El procesamiento local puede mantener el archivo en tu dispositivo, pero debes confiar en el código, el navegador y el equipo. El procesamiento remoto puede ofrecer conversiones que dependen de un servidor; comprueba políticas y controles. También considera extensiones, permisos del navegador, sincronización en la nube y copias que quedan en descargas."
+        },
+        {
+          "t": "h2",
+          "x": "Reduce exposición y valida la salida"
+        },
+        {
+          "t": "p",
+          "x": "Usa solo páginas necesarias, anonimiza una copia cuando esté autorizado y elimina archivos temporales. Comprueba la salida y cierra sesiones en dispositivos compartidos. Para transferir resultados, limita permisos y confirma destinatarios. La seguridad también incluye el almacenamiento posterior y la eliminación, no solo el momento de convertir."
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Prueba la herramienta con documentos no sensibles y revisa su política antes de cargar información privada."
+        }
+      ]
+    },
+    {
+      "topic": "remove-pdf-password",
+      "title": "Cómo quitar la contraseña de un PDF que te pertenece",
+      "slug": "remove-pdf-password",
+      "tool": "unlock-pdf",
+      "description": "Confirma que tienes autorización y utiliza la contraseña conocida en una copia del archivo.",
+      "metaDescription": "Quita la contraseña de un PDF propio con acceso autorizado, conserva el original protegido y verifica permisos y contenido después.",
+      "faqs": [
+        {
+          "q": "¿Puedo quitar una contraseña sin conocerla?",
+          "a": "Esta guía se refiere a archivos que puedes abrir y tienes permiso para modificar; no ayuda a eludir acceso."
+        },
+        {
+          "q": "¿La copia sin contraseña mantiene todas las funciones?",
+          "a": "Comprueba formularios, firmas, marcadores y restricciones porque guardar una copia puede modificarlos."
+        },
+        {
+          "q": "¿Debo dejar el PDF sin protección?",
+          "a": "Solo si la política lo permite; almacénalo y compártelo de forma segura."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Quitar una contraseña puede facilitar el acceso a un PDF propio cuando conoces la clave y estás autorizado a modificarlo. No es una forma de acceder a documentos ajenos ni de eludir controles. Antes, confirma quién es propietario, cuál es el propósito y si debes conservar la protección. Trabaja en una copia y guarda el original cifrado en un lugar seguro."
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba que tienes acceso y permiso"
+        },
+        {
+          "t": "p",
+          "x": "Abre el archivo con la contraseña conocida y revisa las condiciones aplicables. Un documento de trabajo puede estar sujeto a políticas internas incluso si puedes abrirlo. Si olvidaste la clave, pide una copia autorizada al propietario o al administrador. No cargues un archivo protegido en un servicio desconocido para intentar obtener acceso."
+        },
+        {
+          "t": "h2",
+          "x": "Guarda una copia sin protección"
+        },
+        {
+          "t": "p",
+          "x": "Usa la función de guardar o desbloquear de una herramienta autorizada, y crea un archivo nuevo. Verifica si elimina solo la contraseña de apertura o también cambia restricciones. No sobrescribas el original por si necesitas restaurar la protección. Si la herramienta envía el archivo a un servidor, comprueba la política de datos."
+        },
+        {
+          "t": "h2",
+          "x": "Verifica el documento resultante"
+        },
+        {
+          "t": "p",
+          "x": "Abre la copia y comprueba texto, páginas, formularios, enlaces, firmas y marcadores. Una modificación puede invalidar firmas digitales o cambiar metadatos. Si el archivo es un expediente, documenta qué versión se liberó y por qué. Confirma que el destinatario pueda utilizar el lector previsto."
+        },
+        {
+          "t": "h2",
+          "x": "Protege el archivo después"
+        },
+        {
+          "t": "p",
+          "x": "Si el documento contiene datos personales, no lo dejes en una carpeta pública o dispositivo compartido. Considera volver a protegerlo con una política adecuada o usar permisos administrados. Comparte la clave por un medio separado cuando corresponda y elimina copias temporales según las reglas de conservación."
+        },
+        {
+          "t": "cta",
+          "tool": "unlock-pdf",
+          "x": "Desbloquea solo una copia que puedas abrir y estés autorizado a modificar."
+        }
+      ]
+    }
+  ]
+}
