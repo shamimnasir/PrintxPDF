@@ -1,0 +1,254 @@
+{
+  "locale": "bn",
+  "guides": [
+    {
+      "topic": "save-ink-when-printing",
+      "title": "প্রিন্ট করার সময় কালি বাঁচানোর উপায়",
+      "slug": "save-ink-when-printing",
+      "tool": "pdf-to-text",
+      "description": "Draft mode, grayscale, print range ও page layout ঠিক করে কালি ও কাগজ বাঁচান। গুরুত্বপূর্ণ text এবং chart যেন readable থাকে তা পরীক্ষা করুন।",
+      "metaDescription": "Draft mode, grayscale, print range ও page layout ঠিক করে কালি ও কাগজ বাঁচান। গুরুত্বপূর্ণ text এবং chart যেন readable থাকে তা পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "Grayscale print করলে কালি কমে?", "a": "Colour ink কমতে পারে, তবে printer ও document setting অনুযায়ী ফল আলাদা।" },
+        { "q": "Draft mode কি সব নথিতে ঠিক?", "a": "Review copy-তে চলতে পারে, কিন্তু fine text বা final copy-তে sample test করুন।" },
+        { "q": "এক পৃষ্ঠায় বেশি content রাখলে কালি কমে?", "a": "Page কমলে paper বাঁচে, তবে text unreadable ছোট হতে পারে। Preview-তে পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "প্রিন্টের কালি বাঁচাতে কেবল draft mode নয়, কোন পৃষ্ঠা প্রয়োজন এবং document কেমন layout-এ ছাপা হবে তা ঠিক করুন। অপ্রয়োজনীয় cover, blank page, advertisement ও duplicated section বাদ দিন। Draft বা economy setting internal review copy-তে কার্যকর হতে পারে, কিন্তু final report-এ fine print বা chart ফিকে হতে পারে। Sample page পরীক্ষা করে setting বেছে নিন।" },
+        { "t": "h2", "x": "Print range ও grayscale" },
+        { "t": "p", "x": "শুধু প্রয়োজনীয় page print করুন এবং multiple pages per sheet ব্যবহার করলে লেখা পড়া যায় কি না দেখুন। Colour document-এ grayscale বেছে নিলে colour cartridge কম ব্যবহার হতে পারে। কিন্তু chart যদি শুধু রঙ দিয়ে category দেখায়, grayscale-এ pattern বা label আলাদা করে দিন।" },
+        { "t": "h2", "x": "Draft mode ও font" },
+        { "t": "p", "x": "Printer-এর economy mode ব্যবহার করে test করুন। Text-এর edge, barcode, QR এবং signature যেন স্পষ্ট থাকে। Heavy background বা solid banner print stylesheet-এ বাদ দিতে পারেন। Publicly submitted document বা signed form-এ required format কম মানের করে দেবেন না।" },
+        { "t": "h2", "x": "Duplex ও maintenance" },
+        { "t": "p", "x": "দুই পিঠে print করলে page count কমে, তবে binding margin রাখুন। Printer nozzle cleaning বারবার চালালে কালি লাগে, তাই প্রয়োজন না থাকলে routine maintenance print এড়ান। Output কাগজে final text ও page order দেখুন।" },
+        { "t": "p", "x": "Office printer-এ default colour setting পরীক্ষা করুন, কারণ grayscale নির্বাচন করলেও printer driver আলাদা behaviour দেখাতে পারে। Device-specific economy setting manual-এ দেখে নিন এবং নিয়মিত nozzle cleaning প্রয়োজন কি না status যাচাই করুন।" },
+        { "t": "p", "x": "Paper tray-তে ভুল কাগজ থাকলে print settings সঠিক হলেও ফল ভিন্ন হতে পারে। Job পাঠানোর আগে tray label এবং selected size মিলিয়ে নিন।" },
+        { "t": "cta", "tool": "pdf-to-text", "x": "Print-এর আগে PDF text পরীক্ষা করে অপ্রয়োজনীয় page বাদ দিন।" }
+      ]
+    },
+    {
+      "topic": "print-double-sided",
+      "title": "Duplex printer ছাড়াও দুই পিঠে প্রিন্ট করার নিয়ম",
+      "slug": "print-double-sided",
+      "tool": "organize-pdf",
+      "description": "Automatic duplex setting বা manual odd/even page cycle দিয়ে দুই পিঠে print করুন। Flip direction, page order ও test sheet পরীক্ষা করুন।",
+      "metaDescription": "Automatic duplex setting বা manual odd/even page cycle দিয়ে দুই পিঠে print করুন। Flip direction, page order ও test sheet পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "Duplex printer না থাকলে দুই পিঠে print করা যাবে?", "a": "হ্যাঁ, odd ও even page আলাদা batch-এ manual print করা যায়, printer অনুযায়ী feed direction পরীক্ষা করতে হবে।" },
+        { "q": "Long edge flip নাকি short edge?", "a": "Portrait document-এ সাধারণত long edge, landscape বা calendar-এ short edge লাগতে পারে। Test page করুন।" },
+        { "q": "ভুল page উল্টো হলে কী করব?", "a": "Printer manual ও paper tray direction অনুসারে re-feed করুন, আগে এক sheet-এ test করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "দুই পিঠে print করলে paper usage কমে এবং document কম মোটা হয়। Printer-এ duplex option থাকলে print dialog-এ long-edge বা short-edge flip বেছে নিতে হয়। Duplex option না থাকলেও odd page ও even page আলাদা করে print করে manualভাবে কাগজ ঘুরিয়ে দ্বিতীয় batch দেওয়া যায়। Printer ভেদে feed direction আলাদা, তাই পুরো document পাঠানোর আগে এক বা দুই পৃষ্ঠায় পরীক্ষা করুন।" },
+        { "t": "h2", "x": "Automatic duplex setting" },
+        { "t": "p", "x": "Print dialog-এ two-sided বা duplex চালু করুন। Portrait document বইয়ের মতো উল্টাতে long edge বেছে নিন। Calendar বা landscape handout-এ short edge উপযুক্ত হতে পারে। Preview-তে front ও back heading একই orientation-এ আছে কি না দেখুন।" },
+        { "t": "h2", "x": "Manual odd ও even page" },
+        { "t": "p", "x": "প্রথমে odd page print করুন। Stack ঠিক ক্রমে সাজিয়ে tray-তে ফেরত দিন এবং orientation note করুন। তারপর even page print করুন। Printer page order reverse করলে option সংশোধন করুন। এক sheet test না করে সব page re-feed করবেন না, কারণ উল্টো side বা page sequence ভুল হতে পারে।" },
+        { "t": "h2", "x": "Margin, paper ও safety" },
+        { "t": "p", "x": "Binding-এর জন্য inner margin রাখুন এবং দুই side-এ text overlap করছে কি না দেখুন। Paper jam হলে printer manual অনুযায়ী jam সরান। Final stack-এ page number ও front/back sequence পরীক্ষা করুন। Sensitive document shared printer থেকে দ্রুত সংগ্রহ করুন।" },
+        { "t": "p", "x": "Manual duplex চলাকালে কাগজের stack মিশে গেলে আবার page number মিলিয়ে নিন। Printer-এ আগে থেকে paper tray-তে sheet আছে কি না দেখুন এবং finished document staple করার আগে front/back orientation পড়ুন।" },
+        { "t": "p", "x": "Paper curl বা jam হলে একবারে কম sheet দিন এবং কাগজ সঠিকভাবে tray-তে বসান। Print শেষ হলে stack-এর page order ও orientation আলাদা করে যাচাই করুন।" },
+        { "t": "cta", "tool": "organize-pdf", "x": "Print-এর আগে PDF page order যাচাই করে duplex setting test করুন।" }
+      ]
+    },
+    {
+      "topic": "fit-more-on-a-page",
+      "title": "পড়তে অসুবিধা না করে এক পৃষ্ঠায় বেশি content বসান",
+      "slug": "fit-more-on-a-page",
+      "tool": "excel-to-pdf",
+      "description": "Margin, orientation, scale ও pages-per-sheet সামঞ্জস্য করে content fit করুন। Font ছোট হয়ে যাচ্ছে কি না print preview ও sample-এ যাচাই করুন।",
+      "metaDescription": "Margin, orientation, scale ও pages-per-sheet সামঞ্জস্য করে content fit করুন। Font ছোট হয়ে যাচ্ছে কি না print preview ও sample-এ যাচাই করুন।",
+      "faqs": [
+        { "q": "সব content এক পাতায় fit করা উচিত?", "a": "না। এতে text খুব ছোট হতে পারে। Width fit করে height আলাদা page-এ যেতে দিন।" },
+        { "q": "দুই পৃষ্ঠা এক sheet-এ রাখলে পড়া যাবে?", "a": "Screen ও print test করে দেখুন; dense table বা small text-এ এটি ঠিক নাও হতে পারে।" },
+        { "q": "Margin কত কমাব?", "a": "Printer-এর printable area এবং document content অনুযায়ী বদলান; preview ও test sheet দেখুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "এক পৃষ্ঠায় বেশি content fit করলে paper বাঁচতে পারে, কিন্তু scale অতিরিক্ত কমলে পড়া কঠিন হয়। প্রথমে content-এর অপ্রয়োজনীয় অংশ বাদ দিন, তারপর page orientation, margin ও scaling পরিবর্তন করুন। Spreadsheet-এ সব column width-এ fit করে height বহু পৃষ্ঠায় যেতে দেওয়া প্রায়ই ভালো। “Fit entire sheet on one page” option অনেক row-কে অতি ছোট করতে পারে।" },
+        { "t": "h2", "x": "Scale-এর আগে layout" },
+        { "t": "p", "x": "Wide content-এর জন্য landscape orientation চেষ্টা করুন। Margin printer-এর সীমা মেনে ছোট করুন। Repeated header এবং logical page break রাখুন। Font size কমানোর আগে column width বা whitespace সমন্বয় করুন। Print preview-তে table boundary ও page count দেখুন।" },
+        { "t": "h2", "x": "Pages per sheet" },
+        { "t": "p", "x": "দুই বা চার page per sheet handout-এ উপযোগী হতে পারে, কিন্তু reference document-এর ছোট লেখা অস্পষ্ট হবে। Print sample ধরে স্বাভাবিক দূরত্বে পড়ুন। Slide handout হলে note space প্রয়োজন কি না ঠিক করুন।" },
+        { "t": "h2", "x": "পাঠযোগ্যতা ও accessibility" },
+        { "t": "p", "x": "Zoom preview-তে title, data label, footnote ও contrast পরীক্ষা করুন। শুধু কাগজ বাঁচানোর জন্য accessibility text খুব ছোট করবেন না। বড় অক্ষর দরকার এমন user-এর জন্য digital copy দিন। Final output এবং page count যাচাই করে তারপর print করুন।" },
+        { "t": "p", "x": "Spreadsheet বড় হলে worksheet-কে section-এ ভাগ করে আলাদা readable page তৈরি করুন। Summary page-এ key total রাখুন, যাতে reader ক্ষুদ্র data পড়তে না হয়। Final print copy-তে formula result ও original values মিলিয়ে নিন।" },
+        { "t": "p", "x": "Text size নিয়ে সন্দেহ থাকলে colleague-কে normal reading distance-এ sample পড়তে দিন। Screen zoom নয়, paper-এ readability দিয়ে final layout ঠিক করুন। হাতে note লেখার জায়গাও পর্যাপ্ত কি না দেখুন।" },
+        { "t": "cta", "tool": "excel-to-pdf", "x": "Spreadsheet PDF export-এ scaling preview করে readable page বেছে নিন, তারপর print করুন।" }
+      ]
+    },
+    {
+      "topic": "eco-friendly-printing",
+      "title": "কম প্রিন্ট করে কাগজ ও অপচয় কমান",
+      "slug": "eco-friendly-printing",
+      "tool": "pdf-reader",
+      "description": "Digital workflow, duplex, print range ও recycled paper দিয়ে waste কমান। প্রয়োজনীয় printed record ও accessibility requirement বজায় রাখুন।",
+      "metaDescription": "Digital workflow, duplex, print range ও recycled paper দিয়ে waste কমান। প্রয়োজনীয় printed record ও accessibility requirement বজায় রাখুন।",
+      "faqs": [
+        { "q": "Duplex print কি paper use অর্ধেক করে?", "a": "দুই পিঠ ব্যবহার করলে sheet কমতে পারে, তবে document ও printer setting অনুযায়ী ফল বদলায়।" },
+        { "q": "সব document digital রাখব?", "a": "আইন, workflow, accessibility বা user need paper copy চাইতে পারে। Policy অনুসরণ করুন।" },
+        { "q": "Draft mode কি eco-friendly?", "a": "Review copy-তে ink কমাতে পারে, কিন্তু readability ও final quality পরীক্ষা জরুরি।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Printing-এর পরিবেশগত প্রভাব কমাতে আগে প্রশ্ন করুন কাগজের কপি সত্যিই দরকার কি না। Review, reference এবং collaboration অনেক সময় digital document-এ করা যায়। তবু signed form, accessibility need বা official record-এর জন্য paper দরকার হতে পারে। অপ্রয়োজনীয় print বাদ দিয়ে, প্রয়োজনীয় copy-তে duplex, page range ও suitable layout ব্যবহার করুন। Sustainability মানে শুধু print বন্ধ করা নয়; accessible workflow-ও বজায় রাখা।" },
+        { "t": "h2", "x": "Print করার আগে" },
+        { "t": "p", "x": "Blank page, duplicate copy, hidden slide এবং ad বাদ দিন। Print preview দেখুন। Digital review link ব্যবহার করলে access control ও retention policy বজায় রাখুন। User paper format চাইলে বিকল্পকে অসম্মান করবেন না।" },
+        { "t": "h2", "x": "কাগজ ও ink দক্ষতা" },
+        { "t": "p", "x": "Duplex print, grayscale এবং recycled-content paper বিবেচনা করুন। Draft mode internal copy-তে test করুন। Pages per sheet ব্যবহারে text readable কি না দেখুন। Printer cartridge recycling program থাকলে manufacturer-এর নিয়ম অনুসরণ করুন।" },
+        { "t": "h2", "x": "Responsible records" },
+        { "t": "p", "x": "Paper record তৈরি হলে retention schedule মেনে নিরাপদে রাখুন অথবা অনুমোদিত recycling করুন। Confidential page সাধারণ recycling bin-এ দেবেন না। Digital record-এর backup ও metadata-ও পরিচালনা করুন। Team policy নির্ধারণে actual print volume মাপুন এবং অপ্রয়োজনীয় batch শনাক্ত করুন।" },
+        { "t": "p", "x": "দপ্তরে shared printer quota থাকলে policy অনুযায়ী print job schedule করুন। প্রয়োজনীয় paper record-এর জন্য duplicate print এড়ান। Digital-only workflow বেছে নিলে staff training, device access এবং backup দায়িত্ব নির্দিষ্ট করুন।" },
+        { "t": "p", "x": "Digital workflow-এ ব্যবহারকারীর কাছে paper access না থাকলে alternative format দিন। Organization-এর legal record ও accessibility commitment একসঙ্গে বিবেচনা করে waste reduction target নির্ধারণ করুন। Quarterly print usage review করলে সাশ্রয়ের ক্ষেত্র স্পষ্ট হতে পারে।" },
+        { "t": "cta", "tool": "pdf-reader", "x": "Print করার আগে preview দেখে অপ্রয়োজনীয় page বাদ দিন এবং যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "save-webpage-as-pdf-chrome",
+      "title": "যেকোনো browser-এ webpage-কে PDF হিসেবে save করুন",
+      "slug": "save-webpage-as-pdf-chrome",
+      "tool": "html-to-pdf",
+      "description": "Chrome-সহ browser-এর print dialog দিয়ে webpage PDF করুন। Page setup, header/footer, dynamic content ও final file যাচাই করুন।",
+      "metaDescription": "Chrome-সহ browser-এর print dialog দিয়ে webpage PDF করুন। Page setup, header/footer, dynamic content ও final file যাচাই করুন।",
+      "faqs": [
+        { "q": "Chrome-এ webpage PDF কীভাবে save করব?", "a": "Print dialog খুলে destination-এ Save as PDF বেছে preview দেখে সেভ করুন।" },
+        { "q": "সব browser-এ menu একই?", "a": "না। Browser ও OS অনুযায়ী wording আলাদা, তবে print-to-file option সাধারণত থাকে।" },
+        { "q": "Dynamic content PDF-এ থাকবে?", "a": "Page load ও print stylesheet অনুযায়ী থাকতে পারে বা বাদ পড়তে পারে। Output পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Chrome, Firefox, Safari এবং অন্য browser-এ print dialog দিয়ে webpage PDF হিসেবে save করা যায়। সাধারণভাবে Ctrl+P বা Mac-এ Command+P চাপুন, destination হিসেবে Save as PDF বা system-এর PDF option বেছে নিন, তারপর Save করুন। Browser-এর version এবং operating system অনুযায়ী নাম ভিন্ন হতে পারে। Page সম্পূর্ণ load হওয়ার পর কাজ করুন, বিশেষ করে lazy-loaded image বা dynamic feed থাকলে।" },
+        { "t": "h2", "x": "Page setup ও preview" },
+        { "t": "p", "x": "Paper size, orientation, scale, margin, background graphics এবং page range ঠিক করুন। Header/footer-এ URL ও date দরকার কি না স্থির করুন। Preview-তে first, middle ও last page দেখুন। Text কাটা, image missing বা blank page থাকলে setting বদলান।" },
+        { "t": "h2", "x": "Clean print বা Reader mode" },
+        { "t": "p", "x": "Navigation ও ad বাদ দিতে browser Reader mode বা trusted clean-page tool ব্যবহার করা যায়। Result-এ title, body, caption এবং link আছে কি না পরীক্ষা করুন। Login wall বা subscription restriction পাশ কাটাবেন না।" },
+        { "t": "h2", "x": "Save, reopen ও share" },
+        { "t": "p", "x": "Meaningful filename এবং folder বেছে PDF save করুন। File reopen করে text search, link, page order ও output size দেখুন। Research বা record-এর জন্য source URL ও capture date লিখে রাখুন। Sensitive account information বা paid content share করার আগে permission ও privacy policy যাচাই করুন।" },
+        { "t": "p", "x": "Browser profile-এ printer destination restricted থাকলে system administrator-এর নিয়ম মানুন। Workstation-এর download folder shared হলে saved copy অন্য user দেখতে পারে, তাই secure destination নির্বাচন করুন। PDF edit করার জন্য source webpage-এর উপযুক্ত export source-ও রাখুন।" },
+        { "t": "p", "x": "File save-এর পরে document properties-এ page size ও title দেখুন। Recipient-কে PDF পাঠানোর সময় link ও attachment কোনটি authoritative তা message-এ স্পষ্ট করে বলুন।" },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Browser print dialog-এ Save as PDF বেছে final output পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "save-webpage-as-pdf-iphone",
+      "title": "iPhone ও iPad-এ webpage-কে PDF হিসেবে save করুন",
+      "slug": "save-webpage-as-pdf-iphone",
+      "tool": "merge-pdf",
+      "description": "iPhone বা iPad share ও print preview দিয়ে webpage PDF করুন। Page range, destination folder এবং saved copy পরীক্ষা করুন।",
+      "metaDescription": "iPhone বা iPad share ও print preview দিয়ে webpage PDF করুন। Page range, destination folder এবং saved copy পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "iPhone-এ webpage PDF করার built-in উপায় আছে?", "a": "Safari বা অন্য browser-এর share/print flow-এ PDF save option থাকতে পারে; iOS version দেখুন।" },
+        { "q": "Safari Reader সব page-এ কাজ করে?", "a": "না। Page article হিসেবে শনাক্ত না হলে Reader control অনুপস্থিত থাকতে পারে।" },
+        { "q": "PDF কোথায় save হয়েছে বুঝব কীভাবে?", "a": "Files app-এ chosen folder খুলে file name ও page preview যাচাই করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "iPhone বা iPad-এ webpage PDF করতে browser-এর Share menu থেকে Print বা Save to Files workflow ব্যবহার করা যায়। iOS version ও browser অনুযায়ী ধাপ বদলায়। Safari Reader view article text সহজ করে দিতে পারে, যদি page সমর্থিত হয়। PDF save হওয়ার আগে preview-তে page count, image এবং content সম্পূর্ণ আছে কি না দেখুন।" },
+        { "t": "h2", "x": "Share ও print preview" },
+        { "t": "p", "x": "Share button থেকে Print খুলুন। Preview thumbnail-এ page দেখুন এবং প্রয়োজন হলে paper range ঠিক করুন। iOS-এ preview থেকে PDF খোলা বা share করার gesture version অনুসারে আলাদা হতে পারে। Files-এ save করার পরে folder ও filename স্পষ্টভাবে নির্বাচন করুন।" },
+        { "t": "h2", "x": "Reader view ও dynamic page" },
+        { "t": "p", "x": "Reader control দেখা গেলে text size ও background ঠিক করুন। Account dashboard, search result বা dynamic feed সম্পূর্ণ article-এর মতো capture নাও হতে পারে। Page load শেষ হওয়ার জন্য অপেক্ষা করুন এবং original page-এর সঙ্গে output তুলনা করুন।" },
+        { "t": "h2", "x": "Share করার আগে check" },
+        { "t": "p", "x": "PDF খুলে link, page order ও readability দেখুন। iCloud বা অন্য cloud folder-এ sync হলে access permission যাচাই করুন। ব্যক্তিগত account page PDF-এ রয়ে যেতে পারে। প্রয়োজন না হলে file secure folder-এ রাখুন এবং public sharing বন্ধ রাখুন।" },
+        { "t": "p", "x": "iCloud folder share করা থাকলে PDF অন্য family member বা colleague-ও দেখতে পারে। Save destination বাছার আগে folder permission দেখুন। Screen-এ preview এবং downloaded file-এর page count মিলিয়ে নিন; preview থেকে save করা হয়েছে বলেই সব পৃষ্ঠা ঠিক আছে ধরে নেবেন না।" },
+        { "t": "p", "x": "Files app-এ location service বা sync status দেখতে পারেন। Offline অবস্থায় file খুলে page render হচ্ছে কি না পরীক্ষা করুন। PDF প্রয়োজন না থাকলে duplicate copy তৈরি না করে original bookmark বা webpage link-ও রাখতে পারেন।" },
+        { "t": "cta", "tool": "merge-pdf", "x": "iPhone-এ PDF save করে Files-এ খুলে content পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "full-page-screenshot",
+      "title": "ওয়েবসাইটের পুরো পৃষ্ঠার screenshot নিন",
+      "slug": "full-page-screenshot",
+      "tool": "jpg-to-pdf",
+      "description": "Browser full-page capture দিয়ে দীর্ঘ webpage সংরক্ষণ করুন। Sticky header, lazy image, dynamic content ও screenshot readability পরীক্ষা করুন।",
+      "metaDescription": "Browser full-page capture দিয়ে দীর্ঘ webpage সংরক্ষণ করুন। Sticky header, lazy image, dynamic content ও screenshot readability পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "Full-page screenshot সব content ধরে?", "a": "সবসময় নয়। Lazy image, infinite scroll ও dynamic module বাদ পড়তে পারে।" },
+        { "q": "Screenshot PDF নাকি image হিসেবে রাখব?", "a": "Visual proof-এর জন্য image; multi-page reading ও annotation-এর জন্য PDF সুবিধাজনক হতে পারে।" },
+        { "q": "Screenshot-এ ব্যক্তিগত তথ্য থাকলে?", "a": "Share করার আগে review করুন এবং প্রয়োজনমতো approved redaction ব্যবহার করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Full-page screenshot দীর্ঘ webpage-কে এক লম্বা image বা কয়েকটি capture-এ ধরে। Bug report, design reference বা content record-এ এটি উপকারী, তবে selectable text ও link সাধারণত থাকে না। Capture করার আগে page সম্পূর্ণ load করুন। Lazy-loaded image এলে নিচে scroll করে আবার উপরে যান, যেন প্রয়োজনীয় section load হয়েছে। Infinite scroll page সীমাহীন হলে capture scope নির্ধারণ করুন।" },
+        { "t": "h2", "x": "Browser capture tool" },
+        { "t": "p", "x": "Browser built-in screenshot বা developer tool-এ full-page capture option থাকতে পারে। Browser version অনুসারে menu location বদলায়। Mobile app-এ scrolling screenshot থাকলে device instructions অনুসরণ করুন। Capture-এর আগে cookie banner বা popup content ঢাকছে কি না দেখুন।" },
+        { "t": "h2", "x": "Sticky element ও dynamic content" },
+        { "t": "p", "x": "Sticky header capture-এ বারবার দেখা দিতে পারে। Carousel, video, chat widget বা ad ভিন্ন সময়ের frame দেখাতে পারে। Capture খুলে duplicate block, missing image, horizontal cutoff এবং text resolution পরীক্ষা করুন। গুরুত্বপূর্ণ detail পড়ার জন্য এক লম্বা image zoom করতে অসুবিধা হতে পারে।" },
+        { "t": "h2", "x": "Record, PDF ও privacy" },
+        { "t": "p", "x": "Visual record দরকার হলে capture date ও source URL নথিভুক্ত করুন। কয়েকটি screenshot PDF-এ রাখতে পারেন, কিন্তু OCR ছাড়া text search হবে না। Account page-এ personal detail থাকলে share বা ticket-এ পাঠানোর আগে approved redaction করুন। Website-এর copyright ও access rule মেনে capture রাখুন।" },
+        { "t": "p", "x": "High-density display থেকে export করা screenshot-ও giant image হতে পারে। প্রয়োজন হলে resize করুন, তবে ছোট লেখা পড়া যায় কি না দেখুন। Screenshot-এ browser tab, notification বা personal avatar ধরা পড়েছে কি না share করার আগে review করুন।" },
+        { "t": "p", "x": "Capture-এ horizontal content বাদ পড়লে page-এর zoom কমিয়ে আলাদা viewport capture করুন। Multiple screenshot-কে sequence-এ রাখলে overlap বা gap আছে কি না তুলনা করুন। Browser chrome ও page content-এর boundary পরিষ্কার রাখা report reader-কে সাহায্য করে।" },
+        { "t": "cta", "tool": "jpg-to-pdf", "x": "Full-page capture তৈরি করে প্রয়োজন হলে image-গুলো PDF-এ সাজান।" }
+      ]
+    },
+    {
+      "topic": "archive-web-pages",
+      "title": "ভবিষ্যতের জন্য webpage archive করুন",
+      "slug": "archive-web-pages",
+      "tool": "html-to-pdf",
+      "description": "Webpage archive করার আগে URL, timestamp, PDF বা screenshot format এবং link dependency বুঝুন। নিয়মিত record-এর জন্য retention plan রাখুন।",
+      "metaDescription": "Webpage archive করার আগে URL, timestamp, PDF বা screenshot format এবং link dependency বুঝুন। নিয়মিত record-এর জন্য retention plan রাখুন।",
+      "faqs": [
+        { "q": "PDF কি webpage-এর স্থায়ী archive?", "a": "না। PDF কিছু দৃশ্যমান content ধরে, কিন্তু link, script ও interactive feature পরে বদলাতে পারে।" },
+        { "q": "Archive করার সময় কী metadata রাখব?", "a": "Original URL, capture date, page title, owner ও প্রয়োজনীয় context লিখুন।" },
+        { "q": "Public archive service সব page রাখতে পারে?", "a": "না। Login, robots rule, dynamic data ও access restriction সীমাবদ্ধতা তৈরি করতে পারে।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Webpage archive করার উদ্দেশ্য হতে পারে research reference, compliance record, design history বা নিজের কাজের backup। Print-to-PDF একটি সহজ snapshot দেয়, কিন্তু তা পুরো website archive নয়। Dynamic content, login-only page, video, interaction ও external link এতে অনুপস্থিত থাকতে পারে। Record-এর প্রয়োজন ও legal context বুঝে capture method বেছে নিন।" },
+        { "t": "h2", "x": "Capture metadata" },
+        { "t": "p", "x": "Original URL, page title, author, organization এবং capture date নোট করুন। Page পরিবর্তনশীল হলে capture time-ও লিখুন। PDF-এ URL header বা footer থাকলে পরে source খুঁজে পাওয়া সহজ। File name-এ topic ও date রাখুন, তবে private identifier প্রকাশ করবেন না।" },
+        { "t": "h2", "x": "PDF, screenshot ও archive" },
+        { "t": "p", "x": "PDF reading ও text search-এ সুবিধা দিতে পারে, যদি page text-based হয়। Screenshot visual appearance ধরে, কিন্তু text extraction সীমিত। Formal web archive service linked resource ও provenance ধরে রাখতে পারে, তবে সব site বা protected page capture সম্ভব নয়। Organization policy অনুসারে authoritative record নির্ধারণ করুন।" },
+        { "t": "h2", "x": "Retention ও rights" },
+        { "t": "p", "x": "Archived copy-তে copyright, personal data বা confidential information থাকতে পারে। Access সীমিত করুন এবং retention schedule মানুন। প্রয়োজনীয় backup ও integrity check রাখুন। PDF copy source webpage-এর authenticity বা legal admissibility নিজে থেকে প্রমাণ করে না; এমন ব্যবহার হলে বিশেষজ্ঞের পরামর্শ নিন।" },
+        { "t": "p", "x": "আর্কাইভ ফাইলের checksum রাখলে পরবর্তী সময়ে accidental change শনাক্ত করা যায়। Team drive-এ শুধু capture রাখবেন না; প্রয়োজন অনুযায়ী metadata index তৈরি করুন। Link rot, ownership ও retention period review করার জন্য দায়িত্বপ্রাপ্ত person বা review date নির্ধারণ করুন।" },
+        { "t": "p", "x": "Archive format ও filename standard লিখিত থাকলে team member-রা একই নিয়মে capture তৈরি করতে পারে। Source owner বদলালে contact ও rights note update করুন। Public capture tool-এর terms archive record-এর দীর্ঘমেয়াদি access প্রভাবিত করতে পারে।" },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Webpage PDF করে URL ও capture date-সহ archive record রাখুন।" }
+      ]
+    },
+    {
+      "topic": "save-dynamic-webpage-as-pdf-and-verify",
+      "title": "Dynamic webpage-কে যাচাইযোগ্য PDF হিসেবে save করুন",
+      "slug": "save-dynamic-webpage-as-pdf-and-verify",
+      "tool": "pdf-to-text",
+      "description": "Dynamic page PDF করার আগে সব data load হতে দিন। Timestamp, source URL, page coverage ও extracted text দিয়ে capture যাচাই করুন।",
+      "metaDescription": "Dynamic page PDF করার আগে সব data load হতে দিন। Timestamp, source URL, page coverage ও extracted text দিয়ে capture যাচাই করুন।",
+      "faqs": [
+        { "q": "Dynamic page PDF-এ অসম্পূর্ণ কেন?", "a": "Lazy loading, scripts, pagination বা login state capture-এর সময় data বাদ দিতে পারে।" },
+        { "q": "PDF capture যাচাই করতে কী রাখব?", "a": "Source URL, capture time, page range এবং relevant record ID লিখুন।" },
+        { "q": "PDF কি dynamic page-এর authenticity প্রমাণ করে?", "a": "না। এটি snapshot; authoritative evidence প্রয়োজন হলে প্রতিষ্ঠানের record procedure অনুসরণ করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Dashboard, report page বা feed-এর data script, account state এবং সময় অনুযায়ী বদলাতে পারে। Browser print dialog-এ সঙ্গে সঙ্গে গেলে কিছু table বা chart এখনও load নাও হতে পারে। Capture-এর আগে refresh করে প্রয়োজনীয় section load করুন, filter state লিখে রাখুন এবং page preview পরীক্ষা করুন। PDF snapshot তথ্য প্রদর্শন করে, কিন্তু source server data-এর integrity নিজে থেকে প্রমাণ করে না।" },
+        { "t": "h2", "x": "Capture-এর আগে page স্থির করুন" },
+        { "t": "p", "x": "Date range, filter, selected tab ও account context নির্ধারণ করুন। Lazy-loaded row থাকলে নিচ পর্যন্ত scroll করুন। Pagination-এর প্রতিটি page দরকার কি না ঠিক করুন। Chart tooltip বা hover detail থাকলে সেগুলো আলাদা করে capture করতে হতে পারে।" },
+        { "t": "h2", "x": "PDF capture ও provenance" },
+        { "t": "p", "x": "Print preview-তে table heading, total এবং footer দেখা যাচ্ছে কি না দেখুন। PDF save করার পরে source URL, capture timestamp, filter এবং record identifier লিখুন। প্রয়োজন হলে screenshot বা exported CSV-ও পাশাপাশি সংরক্ষণ করুন। Sensitive dashboard হলে approved storage ও access control মানুন।" },
+        { "t": "h2", "x": "Content verification" },
+        { "t": "p", "x": "PDF reopen করে expected row count, total এবং page sequence তুলনা করুন। Text extraction বা search দিয়ে key identifier যাচাই করুন, তবে table structure text output-এ ভেঙে যেতে পারে। গুরুত্বপূর্ণ business বা legal record-এর জন্য official export বা audit log ব্যবহার করুন; browser print-কে একমাত্র evidence ভাববেন না।" },
+        { "t": "p", "x": "যদি report-এ totals থাকে, export করা data বা official dashboard value-এর সঙ্গে reconciliation করুন। Capture করার সময় user account ও filter state record করুন, কিন্তু password বা access token PDF-এ রাখবেন না। Reviewer-কে কী যাচাই করা হয়েছে তা সংক্ষেপে জানান।" },
+        { "t": "cta", "tool": "pdf-to-text", "x": "PDF text ও page count যাচাই করে source capture note সংরক্ষণ করুন।" }
+      ]
+    },
+    {
+      "topic": "how-to-sign-a-pdf",
+      "title": "প্রিন্ট না করে PDF-এ স্বাক্ষর করার উপায়",
+      "slug": "how-to-sign-a-pdf",
+      "tool": "sign-pdf",
+      "description": "PDF-এ typed, drawn বা image signature যোগ করুন। Recipient-এর গ্রহণযোগ্য পদ্ধতি ও legal requirement আগে নিশ্চিত করুন।",
+      "metaDescription": "PDF-এ typed, drawn বা image signature যোগ করুন। Recipient-এর গ্রহণযোগ্য পদ্ধতি ও legal requirement আগে নিশ্চিত করুন।",
+      "faqs": [
+        { "q": "Typed signature কি সবসময় আইনত বৈধ?", "a": "আইন, transaction ও identity verification অনুযায়ী ভিন্ন। Recipient-এর নিয়ম যাচাই করুন।" },
+        { "q": "Drawn signature আর digital certificate signature এক?", "a": "না। Certificate-backed digital signature cryptographic identity ও document integrity যাচাই করতে পারে।" },
+        { "q": "স্বাক্ষরিত PDF edit করা যাবে?", "a": "পরিবর্তনে signature invalid হতে পারে। Signed original অক্ষত রাখুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF-এ স্বাক্ষর যোগ করতে হলে আগে recipient কী ধরনের signature গ্রহণ করে তা জেনে নিন। Typed name, হাতে আঁকা mark, image signature এবং certificate-backed digital signature একই জিনিস নয়। কিছু সাধারণ workflow-তে typed বা drawn signature যথেষ্ট হতে পারে, কিন্তু regulated, cross-border বা high-value transaction-এ identity verification ও audit trail প্রয়োজন হতে পারে। স্থানীয় আইন ও contract-এর শর্ত যাচাই করুন।" },
+        { "t": "h2", "x": "Signature type বেছে নিন" },
+        { "t": "p", "x": "Typed name দ্রুত এবং পড়তে সহজ, drawn mark হাতে লেখা দেখায়, আর saved image reusable visual mark দেয়। Certificate-backed signature cryptographicভাবে identity ও signed content-এর সঙ্গে যুক্ত হতে পারে। Recipient যদি নির্দিষ্ট e-sign platform ব্যবহার করতে বলে, সেই channel-ই নিন।" },
+        { "t": "h2", "x": "PDF-এ mark বসানো" },
+        { "t": "p", "x": "সঠিক page ও signature field-এ নাম, date এবং প্রয়োজনীয় initials বসান। Mark যেন line বা instruction ঢেকে না ফেলে। Output save করার পরে অন্য viewer-এ খুলে signature appearance এবং form value পরীক্ষা করুন।" },
+        { "t": "h2", "x": "Legal ও privacy review" },
+        { "t": "p", "x": "একটি image signature copy করে অন্য নথিতে বসানো যায়, তাই এটি একা strong identity proof নাও হতে পারে। Signed copy change করলে validation status নষ্ট হতে পারে। Original blank form, signed copy এবং email trail নিরাপদে রাখুন। Sensitive agreement online service-এ process করার আগে policy দেখুন।" },
+        { "t": "p", "x": "যদি সাক্ষীর signature, initials বা date field থাকে, প্রতিটি আলাদাভাবে পূরণ করুন। File name-এ signed status লিখলে draft-এর সঙ্গে গুলিয়ে যাবে না। Signature image-এর access নিয়ন্ত্রণ করুন, কারণ এটি reusable visual mark এবং identity verification-এর বিকল্প নয়।" },
+        { "t": "p", "x": "E-sign platform audit certificate দিলে সেটিও signed package-এর সঙ্গে সংরক্ষণ করুন। Email-এ signed file পাঠানোর পর delivery confirmation রাখুন এবং recipient-এর final acknowledgement সংগ্রহ করুন। কেবল screen-এ signature image দেখা legal acceptance-এর পূর্ণ প্রমাণ নয়।" },
+        { "t": "cta", "tool": "sign-pdf", "x": "PDF-এ signature বসিয়ে recipient-এর requirement অনুযায়ী output যাচাই করুন।" }
+      ]
+    }
+  ]
+}

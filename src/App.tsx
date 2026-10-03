@@ -27,7 +27,13 @@ const load = {
   Legal: () => import('./pages/Legal'),
   Support: () => import('./pages/Support'),
   Contact: () => import('./pages/Contact'),
-  LocalizedGuidePage: () => import('./pages/LocalizedGuidePage'),
+  LocalizedEs: () => import('./pages/localized/es'),
+  LocalizedPt: () => import('./pages/localized/pt-BR'),
+  LocalizedHi: () => import('./pages/localized/hi'),
+  LocalizedAr: () => import('./pages/localized/ar'),
+  LocalizedBn: () => import('./pages/localized/bn'),
+  LocalizedVi: () => import('./pages/localized/vi'),
+  LocalizedZh: () => import('./pages/localized/zh-CN'),
   SignIn: () => import('./features/account/SignIn'),
   Account: () => import('./features/account/Account'),
   NotFound: () => import('./pages/NotFound'),
@@ -52,7 +58,13 @@ const ROUTES: [RegExp, keyof typeof load][] = [
   [/^\/about$/, 'About'],
   [/^\/support$/, 'Support'],
   [/^\/contact$/, 'Contact'],
-  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella|bn\/guides|vi\/guides|zh-cn\/guides)(\/[^/]+)?$/, 'LocalizedGuidePage'],
+  [/^\/es\/guias(?:\/[^/]+)?$/, 'LocalizedEs'],
+  [/^\/pt-br\/guias(?:\/[^/]+)?$/, 'LocalizedPt'],
+  [/^\/hi\/guides(?:\/[^/]+)?$/, 'LocalizedHi'],
+  [/^\/ar\/adella(?:\/[^/]+)?$/, 'LocalizedAr'],
+  [/^\/bn\/guides(?:\/[^/]+)?$/, 'LocalizedBn'],
+  [/^\/vi\/guides(?:\/[^/]+)?$/, 'LocalizedVi'],
+  [/^\/zh-cn\/guides(?:\/[^/]+)?$/, 'LocalizedZh'],
   [/^\/(privacy|terms)$/, 'Legal'],
   [/^\/(signin|signup)$/, 'SignIn'],
   [/^\/account/, 'Account'],
@@ -106,7 +118,13 @@ const About = page('About')
 const Legal = page<{ kind: 'privacy' | 'terms' }>('Legal')
 const Support = page('Support')
 const Contact = page('Contact')
-const LocalizedGuidePage = page('LocalizedGuidePage')
+const LocalizedEs = page('LocalizedEs')
+const LocalizedPt = page('LocalizedPt')
+const LocalizedHi = page('LocalizedHi')
+const LocalizedAr = page('LocalizedAr')
+const LocalizedBn = page('LocalizedBn')
+const LocalizedVi = page('LocalizedVi')
+const LocalizedZh = page('LocalizedZh')
 const SignIn = page<{ mode: 'in' | 'up' }>('SignIn')
 const Account = page('Account')
 const NotFound = page('NotFound')
@@ -144,8 +162,20 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="support" element={<Support />} />
           <Route path="contact" element={<Contact />} />
-          <Route path=":locale/:hub" element={<LocalizedGuidePage />} />
-          <Route path=":locale/:hub/:slug" element={<LocalizedGuidePage />} />
+          <Route path="es/guias" element={<LocalizedEs />} />
+          <Route path="es/guias/:slug" element={<LocalizedEs />} />
+          <Route path="pt-br/guias" element={<LocalizedPt />} />
+          <Route path="pt-br/guias/:slug" element={<LocalizedPt />} />
+          <Route path="hi/guides" element={<LocalizedHi />} />
+          <Route path="hi/guides/:slug" element={<LocalizedHi />} />
+          <Route path="ar/adella" element={<LocalizedAr />} />
+          <Route path="ar/adella/:slug" element={<LocalizedAr />} />
+          <Route path="bn/guides" element={<LocalizedBn />} />
+          <Route path="bn/guides/:slug" element={<LocalizedBn />} />
+          <Route path="vi/guides" element={<LocalizedVi />} />
+          <Route path="vi/guides/:slug" element={<LocalizedVi />} />
+          <Route path="zh-cn/guides" element={<LocalizedZh />} />
+          <Route path="zh-cn/guides/:slug" element={<LocalizedZh />} />
           <Route path="privacy" element={<Legal kind="privacy" />} />
           <Route path="terms" element={<Legal kind="terms" />} />
           <Route path="signin" element={<SignIn mode="in" />} />

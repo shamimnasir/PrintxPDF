@@ -1,12 +1,54 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { languagePack, guideAlternates, guidePath, hubAlternates } from '../content/localizedGuides'
+import { guideAlternates, guidePath, hubAlternates } from '../content/localizedGuides'
+import type { LanguagePack } from '../content/localizedGuides'
 import { breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useTool } from '../features/pdf/useTools'
+import type { Block } from '../content/types'
 import '../content/blog.css'
 
-export default function LocalizedGuidePage() {
+function InlineCopy({ text }: { text: string }) {
+  const nodes: React.ReactNode[] = []
+  let last = 0
+  let match: RegExpExecArray | null
+  let key = 0
+  // Keep internal tool and guide links navigable inside translated copy.
+  const links = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(((?:[^()]|\([^()]*\))+?)\)|`([^`]+)`/g
+  while ((match = links.exec(text))) {
+    if (match.index > last) nodes.push(text.slice(last, match.index))
+    if (match[1] !== undefined) nodes.push(<strong key={key++}>{match[1]}</strong>)
+    else if (match[2] !== undefined && match[3] !== undefined) nodes.push(match[3].startsWith('/')
+      ? <Link key={key++} to={match[3]}>{match[2]}</Link>
+      : <a key={key++} href={match[3]} target="_blank" rel="noopener noreferrer">{match[2]}</a>)
+    else if (match[4] !== undefined) nodes.push(<code key={key++} className="inline">{match[4]}</code>)
+    last = links.lastIndex
+  }
+  if (last < text.length) nodes.push(text.slice(last))
+  return <>{nodes}</>
+}
+
+function LocalizedBlock({ block }: { block: Block }) {
+  switch (block.t) {
+    case 'p': return <p><InlineCopy text={block.x} /></p>
+    case 'h2': return <h2>{block.x}</h2>
+    case 'h3': return <h3>{block.x}</h3>
+    case 'ul': return <ul>{block.items.map((item, i) => <li key={i}><InlineCopy text={item} /></li>)}</ul>
+    case 'ol': return <ol>{block.items.map((item, i) => <li key={i}><InlineCopy text={item} /></li>)}</ol>
+    case 'steps': return <ol className="steps">{block.items.map((item, i) => <li key={i}><strong>{item.h}</strong><InlineCopy text={item.x} /></li>)}</ol>
+    case 'table': return <div className="table-scroll" tabIndex={0}><table className="table">{block.caption && <caption>{block.caption}</caption>}<thead><tr>{block.head.map((item) => <th key={item} scope="col">{item}</th>)}</tr></thead><tbody>{block.rows.map((row, i) => <tr key={i}>{row.map((item, j) => <td key={j}><InlineCopy text={item} /></td>)}</tr>)}</tbody></table></div>
+    case 'note':
+    case 'tip':
+    case 'warn': return <aside className={`callout ${block.t}`}><p><InlineCopy text={block.x} /></p></aside>
+    case 'quote': return <blockquote><InlineCopy text={block.x} /></blockquote>
+    case 'code': return <pre className="code">{block.x}</pre>
+    case 'cta': return <p><InlineCopy text={block.x} /> <Link to={`/tools/${block.tool}`}>{block.tool}</Link></p>
+  }
+}
+
+const toolDirectoryLabel: Record<string, string> = { es: 'Todas las herramientas', 'pt-BR': 'Todas as ferramentas', hi: 'सभी टूल', ar: 'كل الأدوات', bn: 'সব টুল', vi: 'Tất cả công cụ', 'zh-CN': '查看所有工具' }
+
+export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
   const { locale = '', hub = '', slug } = useParams()
-  const pack = languagePack(locale, hub)
+  const matchingRoute = pack.locale.toLowerCase() === locale.toLowerCase() && pack.hub === hub
   const guide = pack?.guides.find((item) => item.slug === slug)
   const path = pack ? guidePath(pack, guide?.slug) : `/${locale}/${hub}${slug ? `/${slug}` : ''}`
   const tool = useTool(guide?.tool || '')
@@ -17,8 +59,8 @@ export default function LocalizedGuidePage() {
     description: guide?.metaDescription || pack?.hubDescription || '',
     path,
     type: guide ? 'article' : 'website',
-    published: guide ? '2026-10-03' : undefined,
-    updated: guide ? '2026-10-03' : undefined,
+    published: guide ? guide.published || '2026-10-03' : undefined,
+    updated: guide ? guide.updated || '2026-10-03' : undefined,
     keywords: guide ? [guide.keyword, ...guide.secondaryKeywords] : [],
     lang: pack?.locale || 'en',
     dir: pack?.dir || 'ltr',
@@ -46,8 +88,8 @@ export default function LocalizedGuidePage() {
                 description: guide.metaDescription,
                 abstract: guide.answer,
                 mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${path}` },
-                datePublished: '2026-10-03',
-                dateModified: '2026-10-03',
+                datePublished: guide.published || '2026-10-03',
+                dateModified: guide.updated || '2026-10-03',
                 author: { '@type': 'Organization', name: 'PrintxPDF' },
                 publisher: { '@type': 'Organization', name: 'PrintxPDF', url: SITE_URL },
                 keywords: [guide.keyword, ...guide.secondaryKeywords].join(', '),
@@ -68,7 +110,7 @@ export default function LocalizedGuidePage() {
       : [],
   })
 
-  if (!pack) return <Navigate to="/blog" replace />
+  if (!matchingRoute) return <Navigate to="/blog" replace />
 
   if (!guide) {
     return (
@@ -95,7 +137,7 @@ export default function LocalizedGuidePage() {
             ))}
           </div>
           <p className="muted" style={{ marginTop: '1.5rem' }}>{pack.toolNote}</p>
-          <p><Link to="/blog">English guides</Link></p>
+          <p><Link to="/tools">{toolDirectoryLabel[pack.locale] || 'All tools'}</Link> · <Link to="/blog">English guides</Link></p>
         </div>
       </div>
     )
@@ -115,7 +157,7 @@ export default function LocalizedGuidePage() {
           <p>{guide.answer}</p>
         </div>
         <div className="prose">
-          {guide.sections.map((section) => (
+          {guide.body ? guide.body.map((block, index) => <LocalizedBlock key={index} block={block} />) : guide.sections?.map((section) => (
             <section key={section.heading}>
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
@@ -144,7 +186,7 @@ export default function LocalizedGuidePage() {
             ))}
           </div>
         </section>
-        <p style={{ marginTop: '2rem' }}><Link to={guidePath(pack)}>{pack.backLabel}</Link> · <Link to="/blog">English guides</Link></p>
+        <p style={{ marginTop: '2rem' }}><Link to={`/tools/${guide.tool}`}>{tool?.name || guide.tool}</Link> · <Link to="/tools">{toolDirectoryLabel[pack.locale] || 'All tools'}</Link> · <Link to={guidePath(pack)}>{pack.backLabel}</Link> · <Link to="/blog">English guides</Link></p>
       </article>
     </div>
   )

@@ -42,7 +42,13 @@ const ROUTE_MODULES = [
   [/^\/api$/, 'src/pages/Api.tsx'],
   [/^\/pricing$/, 'src/pages/Pricing.tsx'],
   [/^\/blog$/, 'src/pages/Blog.tsx'],
-  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella|bn\/guides|vi\/guides|zh-cn\/guides)(\/[^/]+)?$/, 'src/pages/LocalizedGuidePage.tsx'],
+  [/^\/es\/guias(?:\/[^/]+)?$/, 'src/pages/localized/es.tsx'],
+  [/^\/pt-br\/guias(?:\/[^/]+)?$/, 'src/pages/localized/pt-BR.tsx'],
+  [/^\/hi\/guides(?:\/[^/]+)?$/, 'src/pages/localized/hi.tsx'],
+  [/^\/ar\/adella(?:\/[^/]+)?$/, 'src/pages/localized/ar.tsx'],
+  [/^\/bn\/guides(?:\/[^/]+)?$/, 'src/pages/localized/bn.tsx'],
+  [/^\/vi\/guides(?:\/[^/]+)?$/, 'src/pages/localized/vi.tsx'],
+  [/^\/zh-cn\/guides(?:\/[^/]+)?$/, 'src/pages/localized/zh-CN.tsx'],
   [/^\/blog\/[^/]+$/, 'src/pages/ClusterPage.tsx'],
   [/^\/blog\/[^/]+\/[^/]+$/, 'src/pages/PostPage.tsx'],
   [/^\/author\//, 'src/pages/AuthorPage.tsx'],
@@ -98,7 +104,8 @@ async function loadData() {
      export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
      export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}
      export { TOOL_ALIASES } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliases.ts'))}
-     export { LANGUAGE_PACKS, guidePath, guideAlternates, hubAlternates } from ${JSON.stringify(path.join(ROOT, 'src/content/localizedGuides.ts'))}
+     export { LANGUAGE_PACKS, guidePath } from ${JSON.stringify(path.join(ROOT, 'src/content/localizedGuidesFull.ts'))}
+     export { guideAlternates, hubAlternates } from ${JSON.stringify(path.join(ROOT, 'src/content/localizedGuides.ts'))}
      export { toolAliasContent } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliasContent.ts'))}
      export { fontHref, isDesignId } from ${JSON.stringify(path.join(ROOT, 'src/design/presets.ts'))}`,
   )

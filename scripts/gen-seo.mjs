@@ -24,7 +24,7 @@ async function loadData() {
      export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
      export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}
      export { TOOL_ALIASES } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliases.ts'))}
-     export { LANGUAGE_PACKS, guidePath } from ${JSON.stringify(path.join(ROOT, 'src/content/localizedGuides.ts'))}`,
+     export { LANGUAGE_PACKS, guidePath } from ${JSON.stringify(path.join(ROOT, 'src/content/localizedGuidesFull.ts'))}`,
   )
   await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
   const mod = await import(pathToFileURL(out).href)

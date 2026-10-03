@@ -1,0 +1,251 @@
+{
+  "locale": "bn",
+  "guides": [
+    {
+      "topic": "word-to-pdf",
+      "title": "Font ঠিক রেখে Word-কে PDF-এ রূপান্তর করুন",
+      "slug": "word-to-pdf",
+      "tool": "word-to-pdf",
+      "description": "DOCX থেকে PDF বানিয়ে font, page break, image, table ও link পরীক্ষা করুন। অন্য device-এ একই রকম দেখানোর জন্য প্রয়োজনীয় ধাপগুলো দেখুন।",
+      "metaDescription": "DOCX থেকে PDF বানিয়ে font, page break, image, table ও link পরীক্ষা করুন। অন্য device-এ একই রকম দেখানোর জন্য প্রয়োজনীয় ধাপগুলো দেখুন।",
+      "faqs": [
+        { "q": "PDF-এ font কেন বদলে যায়?", "a": "Font embed না থাকলে বা converter-এর কাছে না থাকলে বিকল্প font দেখা যেতে পারে। Source DOCX-এ font ও license পরীক্ষা করুন।" },
+        { "q": "PDF কি Word-এর মতো সম্পাদনাযোগ্য?", "a": "PDF সাধারণত final viewing ও printing-এর জন্য; মূল content সম্পাদনায় DOCX সংরক্ষণ করুন।" },
+        { "q": "রূপান্তরের পর কী পরীক্ষা করব?", "a": "Page break, heading, image, table, বাংলা glyph, hyperlink এবং page count মিলিয়ে নিন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Word document-কে PDF-এ রূপান্তর করলে layout বিভিন্ন device-এ স্থিতিশীলভাবে ভাগ করা যায়। তবে ফল source file, font availability এবং export method-এর ওপর নির্ভর করে। বিশেষ font অন্য computer-এ না থাকলে বিকল্প font বসে line break বদলাতে পারে। DOCX-এর সঙ্গে মূল ছবি ও embedded chart ঠিক আছে কি না আগে নিশ্চিত করুন। রূপান্তরকে শেষ ধাপ ভাবার আগে তৈরি PDF খুলে যাচাই করুন।" },
+        { "t": "h2", "x": "Source document প্রস্তুত" },
+        { "t": "p", "x": "Track changes গ্রহণ বা বাতিল করুন, comment প্রয়োজন হলে সরান, এবং heading style ধারাবাহিক রাখুন। Page orientation, paper size, margin ও header/footer ঠিক করুন। বাংলা font ব্যবহার করলে target device-এ glyph সঠিক দেখা যায় কি না পরীক্ষা করুন। Font embedding প্রয়োজন হতে পারে, তবে font license শর্ত মানুন।" },
+        { "t": "h2", "x": "Export এবং visual check" },
+        { "t": "p", "x": "DOCX conversion করে প্রথম, মাঝের ও শেষ পৃষ্ঠা দেখুন। Table ভেঙেছে কি না, image crop হয়েছে কি না, page number ধারাবাহিক কি না যাচাই করুন। PDF-এ বাংলা ও ইংরেজি মিশ্র line-এর punctuation বা spacing অস্বাভাবিক হতে পারে। গুরুত্বপূর্ণ link-এ click করে নিশ্চিত হন যে সেগুলো সঠিক ঠিকানায় যায়।" },
+        { "t": "h2", "x": "Final copy ও নিরাপত্তা" },
+        { "t": "p", "x": "PDF গ্রহণযোগ্য হলে সেটিকে final নামে সেভ করুন, কিন্তু DOCX মূল কপি সম্পাদনার জন্য রাখুন। Personal বা confidential document server-এ upload করার আগে প্রতিষ্ঠানের অনুমতি যাচাই করুন। Signature থাকা নথিকে পরিবর্তন করে export করলে signature status বদলাতে পারে।" },
+        { "t": "p", "x": "Collaborator-কে পাঠালে PDF version-এর তারিখ বা revision number লিখুন। এতে Word source ও exported copy আলাদা করে শনাক্ত করা যায়। সরকারি বা আদালতে জমা দেওয়ার আগে তাদের গ্রহণযোগ্য file format ও signature policy পড়ুন।" },
+        { "t": "cta", "tool": "word-to-pdf", "x": "Word document PDF করুন, তারপর সব পৃষ্ঠার font ও layout পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "excel-to-pdf",
+      "title": "Excel spreadsheet এমনভাবে PDF করুন যাতে সবকিছু পৃষ্ঠায় ধরে",
+      "slug": "excel-to-pdf",
+      "tool": "excel-to-pdf",
+      "description": "Spreadsheet PDF করার আগে print area, paper size, scaling, orientation এবং repeated header ঠিক করুন, যাতে table ছোট বা কাটা না যায়।",
+      "metaDescription": "Spreadsheet PDF করার আগে print area, paper size, scaling, orientation এবং repeated header ঠিক করুন, যাতে table ছোট বা কাটা না যায়।",
+      "faqs": [
+        { "q": "পুরো spreadsheet এক পৃষ্ঠায় fit করব?", "a": "চওড়া sheet-এর ক্ষেত্রে এক পৃষ্ঠায় fit করলে লেখা খুব ছোট হতে পারে। Width fit করে height আলাদা পৃষ্ঠায় যেতে দিন।" },
+        { "q": "PDF-এ column কাটা গেলে কী করব?", "a": "Print area, landscape orientation, margin বা scaling বদলে preview আবার দেখুন।" },
+        { "q": "Spreadsheet-এর formula কি PDF-এ থাকে?", "a": "PDF সাধারণত দৃশ্যমান ফল দেখায়; editable formula ও data-এর জন্য workbook সংরক্ষণ করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Excel sheet-কে PDF-এ নেওয়ার আগে print layout ঠিক করা জরুরি। Default setting-এ অনেক column আলাদা page-এ ভাগ হতে পারে, আবার পুরো sheet এক পৃষ্ঠায় fit করলে লেখা পড়া অসম্ভব ছোট হতে পারে। কোন অংশ পাঠাতে হবে তা নির্ধারণ করে print area সেট করুন। Workbook-এর original কপি রাখুন, কারণ PDF সাধারণত formula বা filter সংরক্ষণ করে না।" },
+        { "t": "h2", "x": "Page size ও orientation" },
+        { "t": "p", "x": "Column বেশি হলে landscape orientation চেষ্টা করুন। কাগজের মাপ recipient বা printer-এর সঙ্গে মিলিয়ে নিন। Margin সামান্য কমানো যেতে পারে, কিন্তু printable area ছাড়ালে border কেটে যেতে পারে। Print preview-তে দেখুন row ও column যথাযথ পৃষ্ঠায় ভাগ হয়েছে কি না।" },
+        { "t": "h2", "x": "Scaling ও repeated heading" },
+        { "t": "p", "x": "Fit all columns on one page সাধারণত width বাঁচায়, কিন্তু height-কে এক পৃষ্ঠায় বাধ্য করবেন না যদি এতে font ছোট হয়। বহু পৃষ্ঠার report-এ header row প্রতিটি পৃষ্ঠায় repeat করুন, যাতে column-এর অর্থ হারায় না। Page break preview-তে বড় table logical জায়গায় ভাঙুন।" },
+        { "t": "h2", "x": "PDF-এ তথ্য যাচাই" },
+        { "t": "p", "x": "Export-এর পরে প্রতিটি page খুলে total, currency, date, hidden row এবং chart দেখুন। Excel formula PDF-এ সাধারণত ফলাফল হিসেবে আসে, editable calculation হিসেবে নয়। Workbook ও PDF-এর version মিলিয়ে রাখুন এবং ভুল recipient-কে পাঠাবেন না। Sensitive data থাকলে print area-এর বাইরে লুকানো sheet বা column গোপন আছে কি না নিশ্চিত করুন।" },
+        { "t": "p", "x": "দীর্ঘ workbook-এ প্রতিটি sheet-এর print setting আলাদা হতে পারে। Export dialog-এ active sheet, selected cells না entire workbook নির্বাচন হয়েছে দেখুন। Workbook-টি final version হিসেবে save করে তারপর PDF export করুন, যাতে দুই কপির তথ্য এক থাকে।" },
+        { "t": "p", "x": "শেষে worksheet title এবং page number পাঠকের বোঝার জন্য যথেষ্ট কি না দেখুন।" },
+        { "t": "cta", "tool": "excel-to-pdf", "x": "Spreadsheet PDF করার আগে print area ও page preview ঠিক করুন।" }
+      ]
+    },
+    {
+      "topic": "html-to-pdf",
+      "title": "HTML ফাইলকে PDF-এ রূপান্তরের ধাপ",
+      "slug": "html-to-pdf",
+      "tool": "html-to-pdf",
+      "description": "HTML page বা file PDF করলে CSS, image, font ও page break যাচাই করুন। Print stylesheet এবং output preview দিয়ে layout ঠিক রাখুন।",
+      "metaDescription": "HTML page বা file PDF করলে CSS, image, font ও page break যাচাই করুন। Print stylesheet এবং output preview দিয়ে layout ঠিক রাখুন।",
+      "faqs": [
+        { "q": "HTML থেকে PDF হলে CSS থাকবে?", "a": "Print media CSS সমর্থিত হলে অনেক style থাকে, তবে browser বা converter ভেদে পার্থক্য হতে পারে।" },
+        { "q": "External image PDF-এ নেই কেন?", "a": "Image URL inaccessible, blocked বা page capture-এর সময় load শেষ না হলে এটি বাদ পড়তে পারে।" },
+        { "q": "Page break কীভাবে নিয়ন্ত্রণ করব?", "a": "Print stylesheet-এ break rule ব্যবহার করুন এবং PDF export-এর পরে page preview পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "HTML থেকে PDF বানালে web layout-কে নির্দিষ্ট পৃষ্ঠার কাগজে রূপান্তর করা হয়। Screen page-এর অসীম vertical space থাকলেও PDF-তে page size, margin এবং page break নির্ধারিত। Local HTML file-এ CSS ও image relative path দিয়ে যুক্ত থাকলে conversion tool সেগুলো খুঁজে পাবে কি না পরীক্ষা করুন। Public webpage হলে content load হতে সময় দিন, তারপর PDF নিন।" },
+        { "t": "h2", "x": "Print stylesheet ও page setup" },
+        { "t": "p", "x": "CSS-এ print media rule দিয়ে navigation, button বা decorative element বাদ দেওয়া যায়। Heading-কে paragraph থেকে আলাদা page-এ রেখে দেবেন না। Table row split হওয়া ঠেকাতে প্রয়োজনীয় break rule ব্যবহার করুন, তবে সব browser একইভাবে CSS মানে না। Paper size, margin এবং scale নির্ধারণ করুন।" },
+        { "t": "h2", "x": "Image, font ও link পরীক্ষা" },
+        { "t": "p", "x": "External image বা web font network-এ না এলে PDF-এ বিকল্প বা ফাঁকা স্থান আসতে পারে। সব asset load হয়েছে কি না অপেক্ষা করুন। Output-এ link সক্রিয় আছে কি না পরীক্ষা করুন। বাংলা text-এর font fallback হলে যুক্তাক্ষর ও line height দেখুন। PDF-এ ছাপা হওয়ার সময় color background বাদ পড়তে পারে।" },
+        { "t": "h2", "x": "Output সংরক্ষণ ও পর্যালোচনা" },
+        { "t": "p", "x": "PDF তৈরি হলে page count, heading, footer এবং source content মিলিয়ে নিন। Dynamic table বা feed capture-এর সময়ে অসম্পূর্ণ হতে পারে। Account page-এ ব্যক্তিগত তথ্য থাকলে online converter-এ upload করবেন না। Content-এর অনুমতি ও copyright মেনে copy সংরক্ষণ করুন এবং প্রয়োজন হলে original URL ও capture date লিখে রাখুন।" },
+        { "t": "p", "x": "Page footer-এ source URL বা capture date দরকার হলে আগে ঠিক করুন। External CSS load না হলে PDF-এ plain styling দেখা যেতে পারে। Local file process করার সময় linked asset একই folder structure-এ রাখা ও path পরীক্ষা করা প্রয়োজন।" },
+        { "t": "cta", "tool": "html-to-pdf", "x": "HTML থেকে PDF তৈরি করে page break ও resource পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "images-to-pdf",
+      "title": "JPG, PNG ও WebP ছবি এক PDF-এ যুক্ত করুন",
+      "slug": "images-to-pdf",
+      "tool": "jpg-to-pdf",
+      "description": "বিভিন্ন image format সাজিয়ে একটি PDF বানান। ক্রম, page size, orientation ও ছবি crop ঠিক করে final file পরীক্ষা করুন।",
+      "metaDescription": "বিভিন্ন image format সাজিয়ে একটি PDF বানান। ক্রম, page size, orientation ও ছবি crop ঠিক করে final file পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "JPG, PNG ও WebP এক PDF-এ যায়?", "a": "সমর্থিত image format হলে একই document-এ যোগ করা যায়; conversion-এর আগে file খুলে দেখা উচিত।" },
+        { "q": "ছবির order কীভাবে ঠিক করব?", "a": "Upload করার আগে file name number দিন বা thumbnail list-এ ক্রম drag করে preview করুন।" },
+        { "q": "PDF-এ ছবি ঝাপসা কেন?", "a": "Source image resolution কম, page-এ অতিরিক্ত বড় করা, অথবা export quality কম হওয়ার কারণে ঝাপসা হতে পারে।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Receipt, photo, screenshot বা scan আলাদা image file হলে একটি PDF-এ রাখা সহজে share ও print করা যায়। JPG photo-র জন্য, PNG text বা sharp graphic-এর জন্য, এবং WebP web image-এর জন্য ব্যবহৃত হয়। Conversion-এর আগে সব file সঠিক orientation-এ আছে কি না দেখুন। PDF তৈরির পরে এক image সাধারণত একটি page হতে পারে, তাই ক্রম ও paper dimension আগে নির্ধারণ করুন।" },
+        { "t": "h2", "x": "Upload order ও page size" },
+        { "t": "p", "x": "File name-এ 01, 02-এর মতো number দিলে order সহজ হয়। Tool-এ thumbnail reorder থাকলে drag করে ঠিক করুন। Portrait photo-কে landscape page-এ রাখলে বড় margin আসতে পারে। Fit, fill বা crop option-এ কোন অংশ বাদ যাবে তা preview-তে পরীক্ষা করুন।" },
+        { "t": "h2", "x": "Resolution ও file size" },
+        { "t": "p", "x": "Small screenshot-কে বড় page-এ টানলে pixelation দেখা যায়। Print দরকার হলে source image-এর pixel dimension ও printer output চিন্তা করুন। JPG পুনরায় encode হলে quality কিছুটা কমতে পারে। PNG-তে text ও line sharp থাকে, কিন্তু file size বেশি হতে পারে। বড় photo set হলে final PDF email limit অতিক্রম করছে কি না দেখুন।" },
+        { "t": "h2", "x": "সম্পূর্ণ PDF যাচাই" },
+        { "t": "p", "x": "প্রতিটি page খুলে crop, orientation, border এবং missing image পরীক্ষা করুন। Personal receipt বা ID card থাকলে share permission দেখুন। PDF output তৈরি হলেও source image আলাদা করে রাখুন। Recipient-এর কাছে searchable text দরকার হলে image-only PDF যথেষ্ট নয়; OCR প্রয়োজন হতে পারে এবং OCR ফল যাচাই করতে হবে।" },
+        { "t": "p", "x": "প্রতিটি ছবি যদি আলাদা করে print করতে হয়, uniform page size বেছে নিন। Photo album হলে original aspect ratio ধরে রাখা crop-এর চেয়ে গুরুত্বপূর্ণ হতে পারে। Share করার আগে filename, page sequence এবং file permission একবার দেখে নিন।" },
+        { "t": "cta", "tool": "jpg-to-pdf", "x": "ছবি সাজিয়ে PDF বানান, তারপর প্রতিটি page preview করুন।" }
+      ]
+    },
+    {
+      "topic": "convert-png-to-pdf",
+      "title": "PNG ছবিকে PDF-এ রূপান্তর করার সহজ নিয়ম",
+      "slug": "convert-png-to-pdf",
+      "tool": "jpg-to-pdf",
+      "description": "PNG screenshot, chart বা scan-কে PDF-এ নিয়ে page size, transparency, image order এবং output quality যাচাই করুন।",
+      "metaDescription": "PNG screenshot, chart বা scan-কে PDF-এ নিয়ে page size, transparency, image order এবং output quality যাচাই করুন।",
+      "faqs": [
+        { "q": "PNG-এর transparent background PDF-এ থাকবে?", "a": "সব converter transparency একইভাবে ধরে না। PDF preview-তে background রঙ ও প্রান্ত যাচাই করুন।" },
+        { "q": "একাধিক PNG একটি PDF হবে?", "a": "হ্যাঁ, multi-image converter-এ সব file যোগ করে order নির্ধারণ করতে পারেন।" },
+        { "q": "PNG-কে PDF করলে লেখা search করা যাবে?", "a": "না, PNG image হলে text সাধারণত searchable নয়। প্রয়োজনে OCR চালিয়ে যাচাই করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PNG সাধারণত screenshot, diagram, logo ও scan-এর জন্য উপযোগী। এগুলো PDF-এ রূপান্তর করলে নানা image এক document-এ রাখা যায় এবং print করা সহজ হয়। তবে PNG থেকে PDF করলেই text selectable বা searchable হয় না; image পিক্সেল হিসেবেই থাকবে। যদি transparent background থাকে, converter সেটিকে সাদা বা অন্য রঙে flatten করতে পারে। Original file রেখে রূপান্তর করুন।" },
+        { "t": "h2", "x": "একটি বা একাধিক PNG" },
+        { "t": "p", "x": "একটি PNG হলে page size নির্ধারণ করে image fit করুন। একাধিক হলে file name-এ ক্রম দিন, অথবা upload list-এ সাজান। Receipt বা form-এর ক্ষেত্রে পৃষ্ঠা উল্টো না হয় দেখুন। Page orientation source image-এর সঙ্গে না মিললে crop বা বড় margin হতে পারে।" },
+        { "t": "h2", "x": "স্বচ্ছতা ও image detail" },
+        { "t": "p", "x": "Logo বা icon-এ transparency দরকার হলে PDF-এ background কেমন হয়েছে দেখুন। Fine line এবং ছোট বাংলা text zoom করে পরীক্ষা করুন। PNG lossless হলেও PDF conversion resolution কমাতে পারে বা page dimension-এ fit করার সময় resize করতে পারে। বড় পৃষ্ঠা print হবে কি না অনুযায়ী source resolution বেছে নিন।" },
+        { "t": "h2", "x": "পাঠযোগ্যতা ও sharing" },
+        { "t": "p", "x": "PDF খোলার পর প্রতিটি page-এর image, margin ও order পরীক্ষা করুন। Text search দরকার হলে OCR চালিয়ে output মিলিয়ে নিন, কারণ OCR Bengali glyph বা সংখ্যা ভুল চিনতে পারে। Sensitive scan upload করার আগে service handling policy পড়ুন। Recipient চাইলে PNG original-ও আলাদাভাবে দিন।" },
+        { "t": "p", "x": "যদি PNG-তে transparency গুরুত্বপূর্ণ হয়, transparent source-টি আলাদা রাখুন। Flattened PDF preview-তে সাদা background প্রত্যাশিত কি না নিশ্চিত করুন। Screenshot-এ address bar বা ব্যক্তিগত message থাকলে share করার আগে তা অনুমোদিতভাবে crop বা redact করুন।" },
+        { "t": "p", "x": "Logo-র মতো ছোট graphic হলে page-এ অনুপাত ঠিক আছে কি না দেখুন।" },
+        { "t": "cta", "tool": "jpg-to-pdf", "x": "PNG file PDF-এ নিন এবং image quality ও transparency যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "convert-azw3-to-epub",
+      "title": "বইয়ের লেখা না হারিয়ে AZW3 থেকে EPUB-এ রূপান্তর",
+      "slug": "convert-azw3-to-epub",
+      "tool": "ebook-converter",
+      "description": "নিজের অধিকার থাকা DRM-মুক্ত AZW3 বই EPUB-এ রূপান্তর করুন। chapter, cover, font ও metadata যাচাই করুন এবং অনুমতি ছাড়া protection এড়াবেন না।",
+      "metaDescription": "নিজের অধিকার থাকা DRM-মুক্ত AZW3 বই EPUB-এ রূপান্তর করুন। chapter, cover, font ও metadata যাচাই করুন এবং অনুমতি ছাড়া protection এড়াবেন না।",
+      "faqs": [
+        { "q": "সব AZW3 file কি EPUB হয়?", "a": "শুধু converter সমর্থিত এবং DRM-মুক্ত file সাধারণত রূপান্তরযোগ্য। DRM bypass-এ এই নির্দেশিকা সহায়তা করে না।" },
+        { "q": "রূপান্তরে cover বা chapter হারাতে পারে?", "a": "হ্যাঁ, metadata বা navigation ভিন্নভাবে আসতে পারে। EPUB reader-এ table of contents ও cover পরীক্ষা করুন।" },
+        { "q": "EPUB সব Kindle-এ চলে?", "a": "Device ও software support ভিন্ন হতে পারে; আপনার reader-এর বর্তমান format compatibility যাচাই করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "AZW3 হলো কিছু Kindle বইয়ে ব্যবহৃত ebook format, আর EPUB বহু ebook reader ও publishing workflow-তে প্রচলিত। আপনি যে বইয়ের file ব্যবহারের অধিকার রাখেন এবং যা DRM-মুক্ত, সেটি EPUB-এ রূপান্তরের আগে backup করুন। DRM বা access control থাকলে তা পাশ কাটানোর চেষ্টা না করে বই বিক্রেতা বা publisher-এর অনুমোদিত বিকল্প দেখুন। Legal ও contract rule অঞ্চলভেদে ভিন্ন হতে পারে।" },
+        { "t": "h2", "x": "Metadata ও chapter structure" },
+        { "t": "p", "x": "রূপান্তরের পরে author, title, cover এবং language ঠিক আছে কি না দেখুন। Table of contents থেকে chapter খুলে পরীক্ষা করুন। Heading স্তর, footnote, hyperlink ও image caption বইয়ের reading order-এ সঠিক থাকা দরকার। বিশেষ symbol, বাংলা যুক্তাক্ষর ও italic text কয়েকটি পৃষ্ঠায় পরীক্ষা করুন।" },
+        { "t": "h2", "x": "Reader-এ পরীক্ষা" },
+        { "t": "p", "x": "EPUB একটি reflowable format হওয়ায় পাঠক font size ও screen width বদলালে text নতুনভাবে সাজায়। একাধিক reader-এ file খুলে line break, image size, table এবং chapter navigation পরীক্ষা করুন। AZW3-তে থাকা font EPUB-এ embedded নাও হতে পারে; বিকল্প font এলে glyph ও spacing যাচাই করুন।" },
+        { "t": "h2", "x": "মূল বই ও অধিকার সংরক্ষণ" },
+        { "t": "p", "x": "রূপান্তর কপি তৈরি করে, বইয়ের অধিকার বা redistribution permission দেয় না। Public share বা upload করার আগে publisher-এর license পড়ুন। Metadata-তে ভুল থাকলে সংশোধন করে নিজের library-তে রাখুন। PrintxPDF ebook conversion server-এ করে, তাই ব্যক্তিগত বা licensed file upload-এর অনুমতি আগে যাচাই করুন।" },
+        { "t": "p", "x": "Device-এ বইটি পড়তে না পারলে file extension বদলানো যথেষ্ট নাও হতে পারে। App-এর supported format list ও publisher account-এর download option দেখুন। Conversion output-এর title language metadata reader library-তে সঠিকভাবে সাজাতে সাহায্য করে।" },
+        { "t": "p", "x": "প্রয়োজনে sample chapter দিয়ে workflow পরীক্ষা করুন, পুরো library একসঙ্গে convert করবেন না।" },
+        { "t": "cta", "tool": "ebook-converter", "x": "অনুমোদিত DRM-মুক্ত AZW3 file EPUB-এ রূপান্তর করে reader-এ পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "convert-epub-to-pdf",
+      "title": "EPUB-কে PDF-এ রূপান্তর করলে কী সুবিধা ও সীমাবদ্ধতা",
+      "slug": "convert-epub-to-pdf",
+      "tool": "epub-to-pdf",
+      "description": "Reflowable EPUB-কে fixed-page PDF করলে page size, font, image ও table of contents যাচাই করুন। পাঠের সুবিধা ও format-এর trade-off বুঝুন।",
+      "metaDescription": "Reflowable EPUB-কে fixed-page PDF করলে page size, font, image ও table of contents যাচাই করুন। পাঠের সুবিধা ও format-এর trade-off বুঝুন।",
+      "faqs": [
+        { "q": "EPUB থেকে PDF করলে layout একই থাকে?", "a": "না। EPUB screen অনুযায়ী reflow করে, PDF fixed page; তাই পৃষ্ঠা সংখ্যা ও line break বদলে যায়।" },
+        { "q": "PDF print করার জন্য ভালো?", "a": "Fixed page layout print-এ সুবিধাজনক হতে পারে, তবে font size ও margin আগে ঠিক করুন।" },
+        { "q": "DRM-যুক্ত EPUB convert করা যাবে?", "a": "এই workflow DRM বা access restriction bypass করার জন্য নয়। Publisher-এর অনুমোদিত export ব্যবহার করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "EPUB সাধারণত পাঠকের পর্দায় text reflow করে, আর PDF নির্দিষ্ট কাগজের পৃষ্ঠায় content স্থির রাখে। EPUB-কে PDF-এ বদলালে print বা page reference সহজ হতে পারে, কিন্তু screen-এর flexible font size ও reflow সুবিধা কমে যায়। বইটি DRM-মুক্ত এবং আপনার কাছে conversion-এর অধিকার আছে কি না আগে যাচাই করুন। Restricted file-এর সুরক্ষা পাশ কাটাতে এই নির্দেশিকা নয়।" },
+        { "t": "h2", "x": "Page size ও typography" },
+        { "t": "p", "x": "A4, Letter বা অন্য page size নির্বাচন reader ও print-এর প্রয়োজন অনুসারে করুন। Font খুব ছোট হলে print-এ পড়া কঠিন, খুব বড় হলে page count বেড়ে যেতে পারে। বাংলা font সঠিকভাবে embed হয়েছে কি না দেখুন। chapter heading নতুন page-এ শুরু করা হবে কি না এবং margin-এ binding space রাখা দরকার কি না ঠিক করুন।" },
+        { "t": "h2", "x": "Images, tables ও navigation" },
+        { "t": "p", "x": "EPUB-এর cover, illustration, table ও hyperlink PDF-এ কেমন এসেছে পরীক্ষা করুন। Long table page-এর মাঝখানে ভাঙতে পারে এবং image resolution কম হতে পারে। Table of contents bookmark হিসেবে রূপান্তরিত হয়েছে কি না দেখুন। Page number তৈরি হলে chapter reference-এর সঙ্গে তা মিলিয়ে নিন।" },
+        { "t": "h2", "x": "কোন format রাখবেন" },
+        { "t": "p", "x": "বিভিন্ন screen-এ পড়া বা accessibility-এর জন্য EPUB উপযোগী থাকতে পারে; fixed page-এ print ও উদ্ধৃতির জন্য PDF সুবিধাজনক হতে পারে। উভয় copy রাখলে file name-এ format ও version আলাদা করুন। Conversion-এর পরে page-by-page preview করুন এবং redistribution license মেনে চলুন।" },
+        { "t": "p", "x": "PrintxPDF ebook converter সার্ভারে কাজ করে। Licensed বা ব্যক্তিগত বই upload করার আগে provider-এর অনুমোদন ও privacy rule যাচাই করুন।" },
+        { "t": "p", "x": "যদি বইটি print করার জন্য convert করেন, chapter-এর শুরু এবং paragraph indentation preview-তে পড়ুন। Long quotation, footnote এবং bibliography page edge-এ কাটা যাচ্ছে কি না দেখুন। Reader-এর reflow setting আর PDF-এর fixed layout এক নয়, তাই font এবং page dimension নিজে ঠিক করতে হতে পারে।" },
+        { "t": "cta", "tool": "epub-to-pdf", "x": "EPUB থেকে PDF বানিয়ে page size ও বইয়ের গঠন যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "convert-mobi-to-pdf",
+      "title": "MOBI ebook-কে PDF-এ রূপান্তরের আগে যা জানবেন",
+      "slug": "convert-mobi-to-pdf",
+      "tool": "mobi-to-pdf",
+      "description": "অনুমোদিত MOBI ebook PDF করলে page size, font, image ও contents পরীক্ষা করুন। DRM এবং redistribution restriction মানুন।",
+      "metaDescription": "অনুমোদিত MOBI ebook PDF করলে page size, font, image ও contents পরীক্ষা করুন। DRM এবং redistribution restriction মানুন।",
+      "faqs": [
+        { "q": "MOBI থেকে PDF করলে page count একই থাকবে?", "a": "না। MOBI reflowable হতে পারে; PDF-এর paper size ও font নির্ধারণ করে নতুন page count।" },
+        { "q": "সব MOBI বই রূপান্তর করা যায়?", "a": "না। DRM, file variant বা damaged content বাধা হতে পারে। Restriction এড়িয়ে যাওয়ার নির্দেশনা এখানে নেই।" },
+        { "q": "রূপান্তরের পরে কী পড়ব?", "a": "Cover, chapter order, image, footnote, font এবং page break পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "MOBI হলো পুরনো ebook format, যা কিছু পাঠক ও library-তে দেখা যায়। PDF-এ রূপান্তর print বা fixed-page reference-এর জন্য সহায়ক হতে পারে, কিন্তু text reflow-এর নমনীয়তা হারায়। নিজের ব্যবহারের অধিকার থাকা DRM-মুক্ত বই দিয়ে কাজ করুন। বিক্রেতা বা publisher-এর restriction bypass করবেন না; অনুমোদিত export বা support channel ব্যবহার করুন।" },
+        { "t": "h2", "x": "রূপান্তরের আগে file পরীক্ষা" },
+        { "t": "p", "x": "MOBI file সুস্থভাবে খুলছে কি না দেখুন এবং cover, chapter list ও language metadata যাচাই করুন। File-এ DRM থাকলে conversion tool কাজ নাও করতে পারে, এবং restriction পাশ কাটানোর চেষ্টা করা উচিত নয়। Source file-এর আলাদা backup রাখুন।" },
+        { "t": "h2", "x": "PDF layout বেছে নিন" },
+        { "t": "p", "x": "Page dimension, font size, margin ও line spacing ঠিক করুন। বড় font পড়তে সুবিধা দেয়, কিন্তু document দীর্ঘ হয়। বাংলা text বা বিশেষ symbol থাকলে কয়েকটি chapter খুলে glyph পরীক্ষা করুন। Image ও footnote body text-এর সঙ্গে যুক্ত আছে কি না দেখুন।" },
+        { "t": "h2", "x": "Output যাচাই ও সংরক্ষণ" },
+        { "t": "p", "x": "PDF-এর contents bookmark, chapter heading এবং page break দেখুন। বইয়ের মাঝামাঝি একটি page খুলুন, কারণ প্রথম পৃষ্ঠা ঠিক থাকলেও পরে formatting সমস্যা হতে পারে। PDF কপি private library-তে রাখুন; license না থাকলে অন্যকে distribute বা public repository-তে upload করবেন না।" },
+        { "t": "p", "x": "PrintxPDF ebook conversion সার্ভারে চালায়। File upload-এর আগে আপনার অধিকার এবং privacy requirement যাচাই করুন।" },
+        { "t": "p", "x": "পুরোনো MOBI file-এ encoding সমস্যা থাকলে conversion-এর আগে publisher-এর নতুন download version খুঁজুন। File-এর author এবং source note সংরক্ষণ করলে library-তে provenance বোঝা যায়। Output-কে public website-এ দেওয়ার আগে copyright holder-এর permission নিন।" },
+        { "t": "p", "x": "পুরো বইয়ের বদলে একটি chapter দিয়ে export quality পরীক্ষা করলে সময় বাঁচতে পারে।" },
+        { "t": "cta", "tool": "mobi-to-pdf", "x": "অনুমোদিত MOBI বই PDF করে chapter ও layout পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "ebook-formats-explained",
+      "title": "EPUB, MOBI, AZW3, PDF ও plain text ebook ফরম্যাট",
+      "slug": "ebook-formats-explained",
+      "tool": "ebook-converter",
+      "description": "EPUB, MOBI, AZW3, PDF ও plain text-এর পার্থক্য জানুন। আপনার reader, print ও accessibility প্রয়োজন অনুযায়ী format নির্বাচন করুন।",
+      "metaDescription": "EPUB, MOBI, AZW3, PDF ও plain text-এর পার্থক্য জানুন। আপনার reader, print ও accessibility প্রয়োজন অনুযায়ী format নির্বাচন করুন।",
+      "faqs": [
+        { "q": "সব ebook reader কি EPUB খুলতে পারে?", "a": "অনেক reader পারে, তবে device, app, store policy ও DRM support আলাদা হতে পারে।" },
+        { "q": "PDF কি ebook পড়ার জন্য উপযোগী?", "a": "Fixed page ও print reference-এর জন্য ভালো হতে পারে, কিন্তু ছোট screen-এ zoom ও scroll দরকার হতে পারে।" },
+        { "q": "Format বদলালে কি DRM চলে যায়?", "a": "না। DRM একটি আলাদা access restriction। এখানে protection bypass করার পরামর্শ দেওয়া হচ্ছে না।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Ebook format বেছে নেওয়ার সময় device compatibility, page layout, text resizing, search এবং print প্রয়োজন ভাবুন। EPUB reflowable হওয়ায় screen size অনুযায়ী লেখা সাজায়। PDF fixed page, যা printed page ও citation ধরে রাখে। MOBI পুরনো Kindle ecosystem-এ ব্যবহৃত হয়েছে, আর AZW3 কিছু Kindle বইয়ের format। Plain text খুব সরল, কিন্তু styling ও image সীমিত। Store-specific DRM format-এর বাইরে আলাদা বাধা তৈরি করে।" },
+        { "t": "h2", "x": "Reflowable format: EPUB ও plain text" },
+        { "t": "p", "x": "EPUB-এ chapter, style, image ও metadata থাকতে পারে এবং reader font size বদলালে content নতুনভাবে সাজাতে পারে। এটি ফোন ও e-reader-এ সুবিধাজনক। Plain text সহজে search এবং copy করা যায়, কিন্তু heading design, illustration ও layout থাকে না। বাংলা text-এ Unicode encoding ও font support পরীক্ষা করা জরুরি।" },
+        { "t": "h2", "x": "Fixed-page ও device-specific format" },
+        { "t": "p", "x": "PDF নির্দিষ্ট page size এবং line position ধরে, তাই print বা official reference-এ উপযোগী। ছোট screen-এ zoom প্রয়োজন হতে পারে। MOBI এবং AZW3-এর support device ও software version অনুযায়ী বদলেছে। পুরনো format নতুন reader-এ নাও চলতে পারে। Device বা bookstore-এর বর্তমান compatibility document পড়ুন।" },
+        { "t": "h2", "x": "DRM, accessibility ও conversion" },
+        { "t": "p", "x": "DRM format নয়, এটি copying বা access সীমিত করার ব্যবস্থা। Conversion service DRM bypass করার উদ্দেশ্যে ব্যবহার করবেন না। Accessibility-এর জন্য navigation, selectable text, reading order এবং screen reader support দেখুন। Format বদলালে cover, contents ও font পরীক্ষা করুন। নিজের ব্যবহারের অধিকার নিশ্চিত করুন এবং license মেনে চলুন।" },
+        { "t": "p", "x": "ফাইলের extension একা format চেনার জন্য যথেষ্ট নয়, কারণ ভুল নাম দেওয়া বা পুরোনো variant থাকতে পারে। Trusted reader-এ file খুলে metadata দেখুন। Device কিনতে গেলে vendor-এর format support-এর পাশাপাশি accessibility, dictionary ও library sync-ও বিবেচনা করুন।" },
+        { "t": "cta", "tool": "ebook-converter", "x": "শুধু অনুমোদিত DRM-মুক্ত ebook format রূপান্তর করে reader-এ পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "ebook-drm-explained",
+      "title": "কেন কিছু ebook এক ফরম্যাট থেকে অন্যটিতে রূপান্তর করা যায় না",
+      "slug": "ebook-drm-explained",
+      "tool": "epub-to-pdf",
+      "description": "DRM, device authorization ও publisher license কীভাবে ebook conversion সীমিত করে তা জানুন। বৈধ export ও accessibility বিকল্প দেখুন।",
+      "metaDescription": "DRM, device authorization ও publisher license কীভাবে ebook conversion সীমিত করে তা জানুন। বৈধ export ও accessibility বিকল্প দেখুন।",
+      "faqs": [
+        { "q": "DRM কী?", "a": "Digital rights management হলো access বা copying নিয়ন্ত্রণের প্রযুক্তি, যা ebook file-এর সঙ্গে প্রযোজ্য license যুক্ত করতে পারে।" },
+        { "q": "আমি কেনা বই নিজের মতো convert করতে পারি?", "a": "আইন ও license দেশভেদে আলাদা। Store-এর terms এবং স্থানীয় নিয়ম যাচাই করুন; bypass নির্দেশনা এখানে নেই।" },
+        { "q": "পাঠের জন্য অন্য format দরকার হলে কী করব?", "a": "Publisher বা store-এর official export, accessibility support অথবা compatible reader-এর সাহায্য নিন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "কোনো ebook conversion না হলে কারণটি শুধু format incompatibility নাও হতে পারে। Digital rights management বা DRM file-কে account, authorized app বা device-এর সঙ্গে যুক্ত করতে পারে। Publisher license-এ printing, copying ও format transfer-এর সীমা থাকতে পারে। আইন, exception এবং contract দেশভেদে আলাদা, তাই নিজের অঞ্চলের নিয়ম এবং বিক্রেতার terms যাচাই করুন। এই নির্দেশিকা DRM সরানো বা bypass করার পদ্ধতি দেয় না।" },
+        { "t": "h2", "x": "Format restriction ও file error আলাদা করুন" },
+        { "t": "p", "x": "DRM-free file-ও damaged, অসম্পূর্ণ download বা unsupported variant হওয়ায় convert নাও হতে পারে। Authorized app-এ বইটি খুলে দেখা যায় কি না পরীক্ষা করুন। Error message সংরক্ষণ করুন এবং বিক্রেতার support-এ যোগাযোগ করুন। অন্য format কেনার option থাকলে license-এর শর্ত বুঝে নিন।" },
+        { "t": "h2", "x": "বৈধ বিকল্প" },
+        { "t": "p", "x": "Publisher বা bookstore যদি EPUB, PDF বা accessible edition সরবরাহ করে, সেই official copy ব্যবহার করুন। Print-on-demand বা in-app export সুবিধা আছে কি না দেখুন। Device বদলালে একই account-এ authorized reader install করা যেতে পারে। Accessibility প্রয়োজন হলে customer support-কে screen reader বা alternative-format service সম্পর্কে জিজ্ঞেস করুন।" },
+        { "t": "h2", "x": "Privacy ও library ব্যবস্থাপনা" },
+        { "t": "p", "x": "Ebook file third-party conversion site-এ upload করার আগে license, privacy policy এবং publisher restriction পড়ুন। Account credential বা protected file কোনো অচেনা service-এ দেবেন না। বৈধভাবে export করা copy-ও license-এর বাইরে share করবেন না। Personal library-তে format, purchase source এবং receipt-এর তথ্য রাখলে ভবিষ্যতে support পাওয়া সহজ হয়।" },
+        { "t": "p", "x": "আপনি যদি disability accommodation চান, publisher, bookstore বা library-কে alternative edition সম্পর্কে লিখুন। অনেক ক্ষেত্রে অনুমোদিত accessible copy পাওয়া যায়। কেনা বইয়ের license, receipt এবং support correspondence নিরাপদে রাখুন, যাতে format restriction নিয়ে প্রশ্ন হলে যথাযথ সাহায্য চাইতে পারেন।" },
+        { "t": "cta", "tool": "epub-to-pdf", "x": "রূপান্তরের আগে publisher-এর অনুমোদিত, DRM-মুক্ত source file ব্যবহার করুন।" }
+      ]
+    }
+  ]
+}

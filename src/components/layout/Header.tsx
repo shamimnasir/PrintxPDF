@@ -72,6 +72,7 @@ export function Header() {
 
   const visible = TOOLS.filter((t) => !cfg.tools.hidden.includes(t.slug))
   const toolBySlug = new Map(TOOLS.map((t) => [t.slug, t]))
+  const currentLanguage = LANGUAGE_DIRECTORY.find((language) => loc.pathname === language.path || loc.pathname.startsWith(`${language.path}/`))
 
   return (
     <div className="header-stack" ref={ref}>
@@ -155,11 +156,12 @@ export function Header() {
             <Link to="/wordpress">WordPress plugin</Link>
             <Link to="/api">PDF API</Link>
           </NavMenu>
-          <NavMenu label="Language" id="language" open={open} setOpen={setOpen}>
-            <div className="menu-title">Guides by language</div>
+          <NavMenu label={currentLanguage?.shortName || 'En'} id="language" open={open} setOpen={setOpen}>
+            <div className="menu-title">Browse guides</div>
+            <Link to="/" lang="en" aria-label="English guides">En</Link>
             {LANGUAGE_DIRECTORY.map((language) => language.active ? (
-              <Link key={language.locale} to={language.path} lang={language.locale}>
-                {language.name}
+              <Link key={language.locale} to={language.path} lang={language.locale} aria-label={`${language.name} guides`}>
+                {language.shortName}
               </Link>
             ) : (
               <span key={language.locale} className="language-coming-soon" aria-disabled="true" title="Guides are not available in this language yet">

@@ -1,0 +1,256 @@
+{
+  "locale": "bn",
+  "guides": [
+    {
+      "topic": "delete-pages-from-pdf",
+      "title": "PDF থেকে page মুছে নতুন copy যাচাই করুন",
+      "slug": "delete-pages-from-pdf",
+      "tool": "delete-pages",
+      "description": "Blank page, cover বা অপ্রয়োজনীয় appendix বাদ দিন। Page number ও final document order মিলিয়ে নিন।",
+      "metaDescription": "Blank page, cover বা অপ্রয়োজনীয় appendix বাদ দিন। Page number ও final document order মিলিয়ে নিন এবং sensitive content-কে redaction ছাড়া লুকাবেন না।",
+      "faqs": [
+        { "q": "PDF থেকে page delete করলে original বদলায়?", "a": "সাধারণ workflow নতুন copy তৈরি করে; তবুও original backup রেখে কাজ করুন।" },
+        { "q": "Delete page কি text redaction?", "a": "না। Page deletion পুরো page বাদ দেয়; অন্য page-এর sensitive text সরায় না।" },
+        { "q": "Signature status বদলাতে পারে?", "a": "হ্যাঁ। PDF পরিবর্তনে digital signature invalid বা modified দেখাতে পারে।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF-এ blank scan, পুরনো cover page, duplicate বা অপ্রয়োজনীয় appendix থাকলে সেগুলো delete করে ছোট copy বানানো যায়। শুরু করার আগে original সংরক্ষণ করুন এবং যেসব page বাদ দিতে চান তার list লিখুন। Viewer-এর page index ও page-এর printed number আলাদা হতে পারে, তাই thumbnail এবং title দেখে নিশ্চিত হন। Delete page operation কোনো page-এর ভেতরের text মুছে দেয় না।" },
+        { "t": "h2", "x": "সঠিক page শনাক্ত করুন" },
+        { "t": "p", "x": "Thumbnail view-তে page-এর প্রথম ও শেষ অংশ পড়ুন। একই রকম form বা invoice থাকলে date, account reference এবং section title মিলিয়ে নিন। একাধিক page বাদ দিলে range আবার পরীক্ষা করুন। ভুল page select হলে output তৈরি করার আগে selection বাতিল করুন।" },
+        { "t": "h2", "x": "Output order পরীক্ষা" },
+        { "t": "p", "x": "Delete শেষে নতুন PDF খুলে page count, first page, last page এবং section boundary পরীক্ষা করুন। Printed page number বা contents page-এ পুরনো reference থাকতে পারে। Bookmark ও hyperlink কাজ করছে কি না দেখুন। File name-এ revision label দিন যাতে original-এর সঙ্গে গুলিয়ে না যায়।" },
+        { "t": "h2", "x": "Sensitive content ও signed file" },
+        { "t": "p", "x": "অন্য page-এ থাকা ব্যক্তিগত তথ্য গোপন করতে black shape বা crop ব্যবহার করবেন না; verified redaction দরকার। Digital signature থাকলে delete operation signature status বদলাতে পারে। Official বা signed record-এ পরিবর্তনের আগে owner এবং recipient-এর নিয়ম জানুন।" },
+        { "t": "h2", "x": "ভুল হলে কীভাবে ফিরবেন" },
+        { "t": "p", "x": "Page বাদ দেওয়ার পরে যদি contents, cross-reference বা appendix numbering আর না মেলে, output-টি final হিসেবে পাঠাবেন না। Original থেকে আবার শুরু করে page range ধীরে নির্বাচন করুন এবং প্রতিটি বাদ পড়া page-এর thumbnail পরীক্ষা করুন। দীর্ঘ নথিতে একবারে অনেক page না মুছে ছোট group-এ কাজ করলে ভুল ধরা সহজ হয়। Review copy-তে পরিবর্তনের তারিখ ও উদ্দেশ্য লিখুন, যাতে সহকর্মী বুঝতে পারেন কেন page কমেছে। Archive বা legal record বদলানোর আগে প্রতিষ্ঠানের document-retention policy দেখুন।" },
+        { "t": "cta", "tool": "delete-pages", "x": "অপ্রয়োজনীয় page মুছে নতুন PDF reopen করে order যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "split-large-pdf-for-email",
+      "title": "Email limit-এর নিচে আনতে বড় PDF ভাগ করুন",
+      "slug": "split-large-pdf-for-email",
+      "tool": "split-pdf",
+      "description": "Email limit ছাড়ালে PDF compress, chapter-এ split বা secure link পাঠানোর মধ্যে বেছে নিন। Final size ও recipient access পরীক্ষা করুন।",
+      "metaDescription": "Email limit ছাড়ালে PDF compress, chapter-এ split বা secure link পাঠানোর মধ্যে বেছে নিন। Final size ও recipient access পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "Email provider-এর attachment limit কত?", "a": "Account ও organization policy অনুযায়ী বদলায়। বর্তমান provider help এবং recipient limit দেখুন।" },
+        { "q": "File ভাগ করব নাকি compress?", "a": "Image-heavy PDF compress হতে পারে; independent section থাকলে logical range-এ ভাগ করা যায়।" },
+        { "q": "কয়েকটি part আলাদা email দেব?", "a": "Recipient ও total message limit বিবেচনা করুন; file name-এ order স্পষ্ট লিখুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "বড় PDF email-এ attach না হলে প্রথমে আপনার provider এবং recipient-এর বর্তমান size limit দেখুন। Encoding-এর কারণে send করার সময় attachment-এর মোট আকার বাড়তে পারে, তাই সীমার নিচে margin রাখুন। File compress করা, section অনুযায়ী split করা বা access-controlled sharing link পাঠানোর মধ্যে বেছে নিন। Original document অক্ষত রাখুন এবং পরিবর্তিত copy আলাদা নামে সংরক্ষণ করুন।" },
+        { "t": "h2", "x": "Compression নাকি split" },
+        { "t": "p", "x": "High-resolution scan বা photo থাকলে compression বেশি সাশ্রয় দিতে পারে। কিন্তু ছোট text বা seal blur হলে original ব্যবহার করুন। Report-এর chapter স্বাধীন হলে chapter boundary-তে split করুন। এক document অখণ্ড থাকা জরুরি হলে secure link সুবিধাজনক হতে পারে।" },
+        { "t": "h2", "x": "Logical part তৈরি" },
+        { "t": "p", "x": "Table, paragraph বা signature page-এর মাঝখানে ভাগ করবেন না। File name-এ part 01 of 03 এবং page range লিখুন। প্রতিটি output খুলে first ও last page দেখুন। Recipient-কে কোন ক্রমে খুলতে হবে এবং সব part এসেছে কি না জানান।" },
+        { "t": "h2", "x": "Secure delivery" },
+        { "t": "p", "x": "Cloud link দিলে নির্দিষ্ট recipient-কে permission দিন, public access নয়। Expiry ও download setting থাকলে policy অনুসারে ব্যবহার করুন। Sensitive document upload-এর আগে institution-approved service নিন। Email পাঠানোর আগে address, attachment count ও final size পরীক্ষা করুন।" },
+        { "t": "h2", "x": "পাঠানোর আগে recipient check" },
+        { "t": "p", "x": "প্রতিটি part-এর নাম ধারাবাহিক রাখুন এবং cover note-এ মোট কয়টি file পাঠানো হয়েছে তা জানান। Recipient-এর mail gateway attachment block করে কি না আগে জেনে নিন। Password-সহ archive পাঠালে password একই email-এ না দিয়ে প্রতিষ্ঠানের অনুমোদিত আলাদা channel ব্যবহার করুন। File split করার পরে page range, bookmarks এবং form field-ও sample-এ দেখুন, কারণ কিছু workflow-তে interactive feature ঠিকমতো নাও থাকতে পারে। Send করার আগে recipient-এর নাম, address, access permission ও expiry যাচাই করুন।" },
+        { "t": "cta", "tool": "split-pdf", "x": "PDF logical section-এ ভাগ করে প্রতিটি part-এর size ও page পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "print-journal-articles",
+      "title": "Journal article ও গবেষণাপত্র পরিষ্কারভাবে প্রিন্ট করুন",
+      "slug": "print-journal-articles",
+      "tool": "pdf-reader",
+      "description": "Paper, duplex, binding margin ও page-per-sheet setting ঠিক করে গবেষণাপত্র print করুন। Table ও footnote sample-এ পরীক্ষা করুন।",
+      "metaDescription": "Paper, duplex, binding margin ও page-per-sheet setting ঠিক করে গবেষণাপত্র print করুন। Table ও footnote sample-এ পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "দুই page এক sheet-এ print করব?", "a": "দ্রুত পড়ায় paper বাঁচে, কিন্তু ছোট table ও footnote অস্পষ্ট হতে পারে।" },
+        { "q": "Double-sided article print করা যায়?", "a": "হ্যাঁ। Flip direction ও binding margin দেখে sample page পরীক্ষা করুন।" },
+        { "q": "Scanned journal PDF search করা যায়?", "a": "Text layer না থাকলে OCR দরকার হতে পারে; citation ও number যাচাই করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Journal article-এ dense text, equation, footnote ও table থাকে। Print setting বেছে নেওয়ার আগে নথিটি close reading, annotation, classroom handout নাকি archival copy-এর জন্য তা স্থির করুন। Publisher-এর অনুমোদিত PDF ব্যবহার করুন এবং subscription বা copyright restriction মানুন। Two pages per sheet paper কমায়, কিন্তু ছোট footnote বা mathematical notation পড়া কঠিন করতে পারে। Representative page sample print করুন।" },
+        { "t": "h2", "x": "Duplex ও binding margin" },
+        { "t": "p", "x": "Double-sided print চালু করলে flip direction পরীক্ষা করুন, বিশেষত landscape page থাকলে। Binder বা staple করলে inner margin বাড়ান যাতে text বাঁধাইয়ের ভেতরে না যায়। Printer-এর edge limit-ও বিবেচনা করুন।" },
+        { "t": "h2", "x": "Page per sheet ও grayscale" },
+        { "t": "p", "x": "এক sheet-এ দুই page দ্রুত review-এর জন্য উপযোগী হতে পারে। তিন বা চার page হলে ছোট text এবং data figure পরীক্ষা করুন। Grayscale সাশ্রয়ী, তবে chart শুধুমাত্র colour দিয়ে পার্থক্য করলে legend বা label হারাতে পারে।" },
+        { "t": "h2", "x": "Citation, table ও sample" },
+        { "t": "p", "x": "Sample-এ ordinary paragraph, table, figure এবং citation page রাখুন। Page number ও journal header ঠিক আছে কি না দেখুন। OCR ব্যবহার করলে title, author, DOI এবং data value মূল PDF থেকে যাচাই করুন। Print করা copy-তে personal research note থাকলে share করার আগে review করুন।" },
+        { "t": "h2", "x": "পড়ার উপযোগী কপি" },
+        { "t": "p", "x": "নিবন্ধে colour figure থাকলে grayscale copy-তে রেখা, pattern, marker এবং caption আলাদা বোঝা যায় কি না দেখুন। Publisher-এর PDF-এ font embedding বা crop সমস্যা থাকলে print dialog-এ fit option পরীক্ষা করুন, তবে content কেটে যায় এমন scale ব্যবহার করবেন না। ব্যক্তিগত পড়ার জন্য annotation করলে মূল প্রকাশিত file অপরিবর্তিত রাখুন। Class বা team-এ বিতরণের আগে license, access condition ও অনুমতির সীমা যাচাই করুন। Printed page-এর পাশে citation লিখে রাখলে পরের গবেষণায় source খুঁজে পাওয়া সহজ হয়।" },
+        { "t": "cta", "tool": "pdf-reader", "x": "Article PDF খুলে print preview ও representative page পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "annotate-pdf-for-study",
+      "title": "পড়াশোনার জন্য PDF-এ কার্যকর annotation দিন",
+      "slug": "annotate-pdf-for-study",
+      "tool": "edit-pdf",
+      "description": "একটি সহজ colour key, নিজের ভাষার note ও প্রশ্ন ব্যবহার করে PDF annotate করুন। Exported copy ও মূল text যাচাই করুন।",
+      "metaDescription": "একটি সহজ colour key, নিজের ভাষার note ও প্রশ্ন ব্যবহার করে PDF annotate করুন। Exported copy ও মূল text যাচাই করুন।",
+      "faqs": [
+        { "q": "সব paragraph highlight করা ঠিক?", "a": "না। মূল ধারণা বা প্রশ্ন চিহ্নিত করুন; অতিরিক্ত highlight review কঠিন করে।" },
+        { "q": "PDF annotation অন্য device-এ দেখা যাবে?", "a": "Export copy অন্য viewer-এ খুলে comment ও highlight আছে কি না পরীক্ষা করুন।" },
+        { "q": "OCR annotation-এর জন্য দরকার?", "a": "Annotation করা যায়, তবে scanned page-এ text search করতে OCR প্রয়োজন হতে পারে।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Study PDF-এ annotation দিলে key idea, প্রশ্ন, definition ও নিজের ব্যাখ্যা পরে খুঁজে পাওয়া সহজ হয়। Highlight সব লাইনে না দিয়ে কয়েকটি নির্দিষ্ট রঙের অর্থ স্থির করুন, যেমন ধারণা, প্রশ্ন এবং পরীক্ষার বিষয়। Margin note-এ নিজের ভাষায় summary লিখুন। PrintxPDF editor overlay annotation যোগ করে; এটি PDF-এর original text rewrite করে না।" },
+        { "t": "h2", "x": "একটি ছোট colour system" },
+        { "t": "p", "x": "দুই বা তিনটি রঙের বেশি না রাখলে system মনে রাখা সহজ। Colour-only distinction-এর পাশাপাশি symbol বা note যোগ করুন, যাতে grayscale print বা colour-vision difference-এ অর্থ হারায় না। গুরুত্বপূর্ণ সূত্রের পাশে page reference লিখুন।" },
+        { "t": "h2", "x": "নিজের ভাষায় note" },
+        { "t": "p", "x": "Paragraph কপি করার বদলে এক বাক্যে মূল point লিখুন এবং নিজের প্রশ্ন যোগ করুন। Section শেষ হলে PDF বন্ধ করে note দেখে ধারণা recall করুন। OCR text হলে formula, Bengali যুক্তাক্ষর ও technical name মিলিয়ে নিন।" },
+        { "t": "h2", "x": "Save ও review" },
+        { "t": "p", "x": "Original PDF অক্ষত রেখে annotated copy-তে save করুন। অন্য PDF reader-এ খুলে note, highlight ও page alignment দেখুন। Share করার আগে personal study note বা instructor comment আছে কি না review করুন। Annotation redaction নয়; sensitive text গোপন করতে আলাদা verified redaction workflow দরকার।" },
+        { "t": "h2", "x": "পুনরাবৃত্তির জন্য review routine" },
+        { "t": "p", "x": "একটি chapter পড়ার পরে screen থেকে চোখ সরিয়ে নিজের note দিয়ে মূল ধারণা ব্যাখ্যা করুন। ব্যাখ্যা অসম্পূর্ণ হলে কেবল সেই section-এ ফিরে গিয়ে নতুন প্রশ্ন লিখুন। পরীক্ষার প্রস্তুতিতে definition, evidence এবং নিজের উদাহরণ আলাদা চিহ্নিত করলে revision দ্রুত হয়। Group study-তে annotation share করার আগে ব্যক্তিগত মন্তব্য মুছে দিন। Export করা file-এর page size, selectable text এবং note location অন্য device-এ পরীক্ষা করুন। OCR-এ ভুল থাকলে annotation ভুল শব্দের পাশে বসতে পারে, তাই scan quality-ও যাচাই করুন।" },
+        { "t": "cta", "tool": "edit-pdf", "x": "PDF-এ note ও highlight যোগ করে exported copy অন্য viewer-এ পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "cite-a-web-page",
+      "title": "APA, MLA ও Chicago style-এ webpage cite করুন",
+      "slug": "cite-a-web-page",
+      "tool": "html-to-pdf",
+      "description": "APA 7, MLA 9 ও Chicago citation-এ author, title, date ও URL মিলিয়ে নিন। Style guide ও institution-এর নির্দেশনা অনুসরণ করুন।",
+      "metaDescription": "APA 7, MLA 9 ও Chicago citation-এ author, title, date ও URL মিলিয়ে নিন। Style guide ও institution-এর নির্দেশনা অনুসরণ করুন।",
+      "faqs": [
+        { "q": "Webpage cite করতে access date লাগবে?", "a": "Style ও page type অনুসারে বদলায়। বর্তমান guide ও instructor-এর instruction দেখুন।" },
+        { "q": "Author না থাকলে কী লিখব?", "a": "Citation style-এর fallback rule অনুসরণ করুন; কোনো author অনুমান করে বসাবেন না।" },
+        { "q": "PDF capture কি citation-এর বিকল্প?", "a": "না। Citation-এ original source URL ও প্রয়োজনীয় bibliographic detail থাকে।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Webpage citation তৈরির আগে instructor, publisher বা organization কোন style চায় তা জেনে নিন। APA 7, MLA 9 এবং Chicago 17 author, page title, website name, date এবং URL-এর ক্রম ও punctuation একভাবে ব্যবহার করে না। এই guide সাধারণ workflow, formal citation advice নয়। Official style manual-এর বর্তমান সংস্করণ দেখুন এবং website-এর bibliographic information সরাসরি page থেকে সংগ্রহ করুন।" },
+        { "t": "h2", "x": "Page data সংগ্রহ" },
+        { "t": "p", "x": "Author বা organization, title, site name, publication বা update date এবং canonical URL লিখে নিন। Footer-এর copyright year-কে page publication date ধরে নেবেন না। Author অনুপস্থিত হলে style guide-এর rule অনুসরণ করুন; search result snippet দিয়ে citation বানাবেন না।" },
+        { "t": "h2", "x": "APA, MLA ও Chicago তুলনা" },
+        { "t": "p", "x": "APA-তে date ও site name-এর বিন্যাস নির্দিষ্ট। MLA-তে container এবং access date কিছু পরিবর্তনশীল page-এ প্রয়োজন হতে পারে। Chicago-তে note-bibliography ও author-date দুই system আছে। Edition এবং instructor instruction মেলান।" },
+        { "t": "h2", "x": "Source snapshot ও accuracy" },
+        { "t": "p", "x": "Page পরে বদলাতে পারে বলে research policy অনুমতি দিলে PDF snapshot ও capture date রাখুন। Snapshot citation-এর জায়গা নেয় না। URL redirect, DOI বা archived record থাকলে official source verify করুন। Rights মেনে content quote করুন এবং reference list-এর punctuation শেষবার proofread করুন।" },
+        { "t": "p", "x": "Official references: [APA webpage reference example](https://apastyle.apa.org/style-grammar-guidelines/references/examples/webpage-website-references), [MLA Style Center](https://style.mla.org/), এবং [Chicago citation guide](https://www.chicagomanualofstyle.org/tools_citationguide.html)।" },
+        { "t": "h2", "x": "Citation-এর সঙ্গে প্রমাণ রাখুন" },
+        { "t": "p", "x": "Reference list-এর প্রতিটি URL খুলে দেখুন সেটি একই লেখক ও একই page-এ যায় কি না। Broken link হলে search result থেকে অনুমান না করে website-এর মূল navigation বা institutional archive ব্যবহার করুন। Dynamic dashboard, news page এবং undated resource-এ access date প্রয়োজন হতে পারে, তবে নির্দিষ্ট style-এর নিয়মই চূড়ান্ত। Citation manager ব্যবহার করলে auto-format-কে অন্ধভাবে গ্রহণ করবেন না। Author-এর নাম, capitalization, italic, punctuation এবং DOI-র format হাতে proofread করুন। শিক্ষক বা journal-এর house style সাধারণ manual-এর চেয়ে নির্দিষ্ট নির্দেশ দিতে পারে।" },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Webpage snapshot রাখুন, তবে citation-এ original URL উল্লেখ করুন।" }
+      ]
+    },
+    {
+      "topic": "print-lecture-slides",
+      "title": "ষাটটি slide নষ্ট না করে lecture handout প্রিন্ট করুন",
+      "slug": "print-lecture-slides",
+      "tool": "ppt-to-pdf",
+      "description": "Animation build, slide-per-page layout, duplex ও notes space পরিকল্পনা করে lecture handout ছাপুন। Dense slide sample-এ পরীক্ষা করুন।",
+      "metaDescription": "Animation build, slide-per-page layout, duplex ও notes space পরিকল্পনা করে lecture handout ছাপুন। Dense slide sample-এ পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "এক page-এ কয়টি lecture slide রাখব?", "a": "3 বা 6 slide সাধারণ বিকল্প; ছোট text হলে কম slide রাখুন।" },
+        { "q": "Animation step কি আলাদা slide হয়?", "a": "কিছু print workflow build step আলাদা করে; final state export হয়েছে কি না দেখুন।" },
+        { "q": "Lecture note space কীভাবে রাখব?", "a": "Notes layout বা margin area বেছে sample print করে লেখার জায়গা পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "ষাট slide-এর lecture handout-এ paper কমাতে এক sheet-এ কয়েকটি slide রাখা যায়। তবে আগে দেখুন animation build বা incremental diagram প্রতিটি ধাপে নতুন slide তৈরি করেছে কি না। Print-এর জন্য static final state দরকার হতে পারে, কিন্তু animation ধাপে অর্থপূর্ণ instruction থাকলে তা অন্ধভাবে বাদ দেবেন না। Presentation owner-এর সঙ্গে final sequence নিশ্চিত করে handout PDF তৈরি করুন।" },
+        { "t": "h2", "x": "Slide count ও notes layout" },
+        { "t": "p", "x": "Three-up layout note line ও বড় thumbnail দেয়। Six-up layout paper কমায়, কিন্তু chart label ছোট হতে পারে। Nine-up কেবল quick overview-এর জন্য মানানসই হতে পারে। Dense বা equation-heavy page-এর জন্য প্রতি sheet-এ কম slide রাখুন।" },
+        { "t": "h2", "x": "Animation build ও page order" },
+        { "t": "p", "x": "Export preview-তে duplicate text বা repeated diagram আছে কি না দেখুন। Final build একবার রাখা দরকার কি না স্থির করুন। Slide number ও presentation order মিলিয়ে নিন। Handout page layout row-wise নাকি column-wise তা audience-এর reading flow-তে পরীক্ষা করুন।" },
+        { "t": "h2", "x": "Duplex ও sample print" },
+        { "t": "p", "x": "Double-sided printing-এর আগে flip direction test করুন। Paper size, margin, grayscale এবং notes line দেখুন। এক পৃষ্ঠা print করে স্বাভাবিক দূরত্বে পড়ুন। Copyright notice ও course information বজায় রাখুন; lecture material-এর distribution rule মানুন।" },
+        { "t": "h2", "x": "Audience ও access বিবেচনা" },
+        { "t": "p", "x": "যাদের জন্য handout তৈরি করছেন তাদের কাছে আলোচনার note দরকার, নাকি শুধু reference copy, তা জেনে layout বেছে নিন। Low-vision reader-এর জন্য ছোট thumbnail একা যথেষ্ট নয়; বড় slide বা accessible digital presentation-ও দিন। Colour chart-এ label ও shape ব্যবহার করুন যাতে অর্থ শুধু রঙের ওপর নির্ভর না করে। Page order handout-এ বদলে গেলে slide number দৃশ্যমান রাখুন। Course material-এর distribution policy মানুন এবং student name বা private comment export হয়েছে কি না পরীক্ষা করুন।" },
+        { "t": "cta", "tool": "ppt-to-pdf", "x": "Handout PDF বানিয়ে slide count, build step ও readability sample-এ যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "add-watermark-to-pdf",
+      "title": "PDF-এ watermark যোগ করুন, content ঢেকে নয়",
+      "slug": "add-watermark-to-pdf",
+      "tool": "add-watermark",
+      "description": "Draft বা confidential watermark-এর opacity, rotation ও position ঠিক করুন। মনে রাখুন, watermark access control বা redaction নয়।",
+      "metaDescription": "Draft বা confidential watermark-এর opacity, rotation ও position ঠিক করুন। মনে রাখুন, watermark access control বা redaction নয়।",
+      "faqs": [
+        { "q": "Watermark কি PDF copy হওয়া ঠেকায়?", "a": "না। এটি দৃশ্যমান label, encryption বা access restriction নয়।" },
+        { "q": "Watermark কতটা ফিকে হওয়া উচিত?", "a": "পড়া যায় কিন্তু মূল text ঢাকে না এমন opacity-তে sample page পরীক্ষা করুন।" },
+        { "q": "Sensitive text ঢাকতে watermark ব্যবহার করব?", "a": "না। প্রকৃত redaction tool ব্যবহার করে output search ও copy test করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "Watermark PDF-এ DRAFT, SAMPLE বা CONFIDENTIAL-এর মতো status দৃশ্যমান করতে পারে। Text, opacity, rotation, size এবং কোন page-এ বসবে তা বেছে নিন। Watermark মূল content-এর ওপর থাকে, তাই খুব opaque হলে paragraph, table, signature বা chart ঢেকে যেতে পারে। Original PDF সংরক্ষণ করুন এবং watermark করা copy-কে access protection বা redaction বলে উপস্থাপন করবেন না।" },
+        { "t": "h2", "x": "Text ও placement" },
+        { "t": "p", "x": "Watermark সংক্ষিপ্ত এবং সত্য তথ্যপূর্ণ রাখুন। Diagonal centre placement দৃশ্যমান হতে পারে, কিন্তু dense page-এ পাঠযোগ্যতা কমায়। Corner বা footer position পরীক্ষা করুন। প্রথম, table-heavy এবং signature page preview-তে দেখুন।" },
+        { "t": "h2", "x": "Opacity ও page range" },
+        { "t": "p", "x": "কম opacity-তে মূল text পড়া সহজ থাকে, কিন্তু watermark অতিরিক্ত ফিকে হলে print-এ হারাতে পারে। Page range নির্দিষ্ট হলে সঠিক page বাদ পড়েছে কি না দেখুন। Black-and-white sample print-এ label দেখা যায় কি না যাচাই করুন।" },
+        { "t": "h2", "x": "Security সীমা" },
+        { "t": "p", "x": "Watermark copy আটকায় না এবং underlying content মুছে না। Password protection বা permissions আলাদা control। Sensitive information অপসারণে verified redaction ব্যবহার করুন, তারপর search, copy এবং metadata পরীক্ষা করুন। Signed document watermark করলে signature modified দেখাতে পারে।" },
+        { "t": "h2", "x": "Version ও audience স্পষ্ট করুন" },
+        { "t": "p", "x": "DRAFT label দিলে কোন version বা তারিখের draft বোঝানো হচ্ছে তা filename বা cover note-এ দিন। Confidential label ব্যবহার করার আগে recipient group এবং sharing policy নির্ধারণ করুন; label একা গোপনীয়তা নিশ্চিত করে না। Public release-এর পরে পুরনো confidential watermark ভুল ধারণা তৈরি করতে পারে, তাই final copy আলাদা করে তৈরি করুন। Watermark repeat pattern text selection বা OCR-এ বাধা দিচ্ছে কি না দেখুন। Internal review-এ কে label প্রয়োগ করেছে এবং কোন version অনুমোদিত, তার record রাখুন।" },
+        { "t": "cta", "tool": "add-watermark", "x": "Watermark বসিয়ে মূল লেখা ও প্রতিটি page-এর readability যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "add-page-numbers-to-pdf",
+      "title": "PDF-এ page number যোগ করুন এবং cover বাদ দিন",
+      "slug": "add-page-numbers-to-pdf",
+      "tool": "page-numbers",
+      "description": "Position, margin, start number ও cover exclusion ঠিক করে PDF page number যোগ করুন। Contents page ও total count পরীক্ষা করুন।",
+      "metaDescription": "Position, margin, start number ও cover exclusion ঠিক করে PDF page number যোগ করুন। Contents page ও total count পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "Cover page-এ number না দিয়ে কীভাবে শুরু করব?", "a": "Page exclusion বা start-page option ব্যবহার করে পরের page-এ numbering শুরু করুন।" },
+        { "q": "Page number format কী বেছে নেব?", "a": "Recipient বা style guide অনুযায়ী সংখ্যা বা page of total format ব্যবহার করুন।" },
+        { "q": "PDF-এ আগে number থাকলে?", "a": "Existing footer দেখে duplicate numbering এড়ান এবং sample page-এ পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF page number report, manual, handout বা application-এর reference সহজ করে। আগে page-এ printed number আছে কি না দেখুন এবং viewer index-এর সঙ্গে তা তুলনা করুন। Cover page বাদ দিলে পরের page 1 নাকি 2 থেকে শুরু হবে, style guide বা organization-এর নিয়মে নির্ধারিত হতে পারে। Number position, font, margin, start number এবং total count ঠিক করে export করুন।" },
+        { "t": "h2", "x": "Position ও margin" },
+        { "t": "p", "x": "Footer-এর পাশে, নিচে বা corner-এ number বসতে পারে। Existing footer, footnote, signature ও printer margin থেকে দূরে রাখুন। Landscape page এবং ভিন্ন page size-এ একই position ঠিক আছে কি না দেখুন।" },
+        { "t": "h2", "x": "Cover ও numbering convention" },
+        { "t": "p", "x": "Cover বাদ দেওয়া, Roman numeral দিয়ে preliminary page নম্বর এবং main content-এ 1 থেকে শুরু করা কিছু document-এ প্রচলিত। আপনার style guide অনুসরণ করুন। “Page 3 of 20” format ব্যবহার করলে total count attachment ও appendix-সহ কি না নির্ধারণ করুন।" },
+        { "t": "h2", "x": "Output review" },
+        { "t": "p", "x": "First, second, middle ও final page পরীক্ষা করুন। Contents page-এর reference updated আছে কি না দেখুন। Duplicate number বা overlapping text থাকলে output আবার তৈরি করুন। Signed PDF-এ page number যোগ করলে digital signature status বদলাতে পারে।" },
+        { "t": "h2", "x": "ভিন্ন page size ও appendix" },
+        { "t": "p", "x": "একই PDF-এ portrait ও landscape page থাকলে number-এর orientation ও corner position একরকম দেখায় কি না পরীক্ষা করুন। Appendix যোগ বা বাদ দিলে total count এবং contents reference আবার হিসাব করুন। Blank page ইচ্ছাকৃতভাবে রাখা হয়েছে কি না বুঝুন, কারণ duplex printing-এ chapter শুরু ঠিক পাশে রাখার জন্য তা দরকার হতে পারে। Draft-এ numbering final করার আগে structure স্থির করুন। Accessible document-এ visible page number এবং PDF-এর internal page label ভিন্ন হলে navigation-ও পরীক্ষা করুন।" },
+        { "t": "cta", "tool": "page-numbers", "x": "Page number যোগ করে start value, cover exclusion ও placement পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "add-header-footer-pdf",
+      "title": "PDF page-এ header বা footer যোগ করুন",
+      "slug": "add-header-footer-pdf",
+      "tool": "edit-pdf",
+      "description": "PDF-এ title, date বা reference footer বসান। Margin, cover exclusion ও text overlap পরীক্ষা করুন।",
+      "metaDescription": "PDF-এ title, date বা reference footer বসান। Margin, cover exclusion ও text overlap পরীক্ষা করে privacy ও readability নিশ্চিত করুন।",
+      "faqs": [
+        { "q": "Header-এ কী রাখা উচিত?", "a": "Short title, section name বা প্রয়োজনীয় reference দিন; sensitive data এড়িয়ে চলুন।" },
+        { "q": "Cover page-এ header বাদ দেওয়া যাবে?", "a": "হ্যাঁ, page range বা exclusion option থাকলে ব্যবহার করে preview করুন।" },
+        { "q": "Header/footer text মূল content বদলায়?", "a": "Overlay text যোগ হয়; original text rewrite নাও হতে পারে। Export copy পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF-এর header বা footer-এ title, department, date, document ID অথবা page reference যোগ করলে print copy চিনতে সুবিধা হয়। Text ছোট ও সংক্ষিপ্ত রাখুন। Header/footer যোগ করা মূল body text rewrite করার সমান নয়; overlay হিসেবে যুক্ত হতে পারে। Original file রেখে নতুন version তৈরি করুন। Sensitive identifier বা ব্যক্তিগত তথ্য অপ্রয়োজনীয়ভাবে প্রতি page-এ ছাপাবেন না।" },
+        { "t": "h2", "x": "Margin ও placement" },
+        { "t": "p", "x": "Existing heading, body text, footnote ও page number-এর সঙ্গে overlap এড়ান। Top ও bottom margin-এর printable area মনে রাখুন। Landscape page এবং different size-এ placement পুনরায় পরীক্ষা করুন। Header readable হলেও body-এর চেয়ে বেশি prominent যেন না হয়।" },
+        { "t": "h2", "x": "Page range ও cover" },
+        { "t": "p", "x": "Cover page বাদ দিতে চাইলে range setting বা page exclusion ব্যবহার করুন। Long report-এ section title header-এ রাখা যেতে পারে, তবে section পরিবর্তনের পরে label বদলায় কি না যাচাই করুন। Date auto-generated হলে timezone ও update behaviour বুঝুন।" },
+        { "t": "h2", "x": "Export ও final check" },
+        { "t": "p", "x": "PDF reopen করে first, middle, last এবং সবচেয়ে crowded page দেখুন। Print sample-এ line কাটা যাচ্ছে কি না দেখুন। Header/footer overlay text search-এ আসে কি না tool অনুযায়ী ভিন্ন হতে পারে। Digital signature থাকলে modification status যাচাই করুন।" },
+        { "t": "h2", "x": "Consistency ও privacy" },
+        { "t": "p", "x": "বড় report-এ section অনুযায়ী header বদলালে প্রতিটি chapter-এর প্রথম page এবং পরের page sample করুন। Document ID বা client name header-এ রাখলে PDF-এর প্রতিটি printed copy-তে তা ছড়িয়ে যায়, তাই প্রয়োজন ও privacy policy বিচার করুন। Date field automatic হলে export-এর পরে সঠিক দিন এসেছে কি না দেখুন। Page size ভিন্ন হলে font ও alignment একই মাপে থাকে কি না যাচাই করুন। Final recipient-এর জন্য filename-এ revision এবং approval status দিন, কিন্তু header-এ অতিরিক্ত internal detail প্রকাশ করবেন না।" },
+        { "t": "cta", "tool": "edit-pdf", "x": "PDF-এ header বা footer overlay যোগ করে সব page preview করুন।" }
+      ]
+    },
+    {
+      "topic": "watermark-vs-stamp",
+      "title": "Watermark, stamp নাকি redaction: কোনটি ব্যবহার করবেন?",
+      "slug": "watermark-vs-stamp",
+      "tool": "redact-pdf",
+      "description": "Watermark status জানায়, stamp event record করে, redaction content সরায়। নিরাপদ document workflow-এ সঠিক mark বেছে নিন।",
+      "metaDescription": "Watermark status জানায়, stamp event record করে, redaction content সরায়। নিরাপদ document workflow-এ সঠিক mark বেছে নিন।",
+      "faqs": [
+        { "q": "Watermark আর stamp কি একই?", "a": "না। Watermark সাধারণত বড় status label; stamp নির্দিষ্ট approval বা date mark করতে পারে।" },
+        { "q": "Redaction কীভাবে আলাদা?", "a": "সঠিক redaction selected content সরায়; visual box বা watermark তা করে না।" },
+        { "q": "Approved stamp কি digital signature?", "a": "না। Stamp visual workflow mark, cryptographic identity verification নয়।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF workflow-তে watermark, stamp এবং redaction দেখতে mark-এর মতো হলেও কাজ আলাদা। Watermark পুরো document-এর status জানাতে পারে, যেমন DRAFT। Stamp নির্দিষ্ট page-এ RECEIVED বা REVIEWED-এর মতো action বোঝাতে পারে। Redaction sensitive content সরিয়ে sanitized copy তৈরির জন্য। ভুল mark বেছে নিলে তথ্য ফাঁস হতে পারে অথবা approval সম্পর্কে ভুল ধারণা তৈরি হয়।" },
+        { "t": "h2", "x": "Watermark status জানায়" },
+        { "t": "p", "x": "Watermark সাধারণত বড় ও repeated text, যা reader-কে draft, confidential বা sample status জানায়। এটি document খোলা, copy বা print করা আটকায় না। Text যেন মূল content ঢেকে না ফেলে, opacity ও position sample page-এ পরীক্ষা করুন।" },
+        { "t": "h2", "x": "Stamp action চিহ্নিত করে" },
+        { "t": "p", "x": "Stamp নির্দিষ্ট event বা review state দেখাতে পারে। RECEIVED বা APPROVED কেবল তখন ব্যবহার করুন যখন event বাস্তবে ঘটেছে এবং operator অনুমোদিত। Visual stamp একা signer-এর identity বা cryptographic integrity প্রমাণ করে না।" },
+        { "t": "h2", "x": "Redaction দিয়ে content সরান" },
+        { "t": "p", "x": "Sensitive text ঢাকতে black shape, crop বা opaque watermark যথেষ্ট নয়। Verified redaction apply করে নতুন copy reopen করুন। Search, select, copy, comments, metadata ও attachments পরীক্ষা করুন। Original unredacted source access-limited রেখে release copy আলাদা নাম দিন।" },
+        { "t": "h2", "x": "কোনো mark ব্যবহারের আগে" },
+        { "t": "p", "x": "Organization-এর approval workflow থাকলে mark প্রয়োগের আগে role, date format এবং allowed wording জেনে নিন। Received stamp receipt record হতে পারে, কিন্তু legal acceptance বা payment confirmation বোঝায় কি না আলাদা policy নির্ধারণ করে। Draft watermark সরাতে final copy তৈরি করার সময় সব page পরীক্ষা করুন। Redaction-এর ক্ষেত্রে reviewer দ্বিতীয়বার output যাচাই করুন এবং release copy-তে embedded file, comment, form data ও metadata আছে কি না দেখুন। মূল document সীমিত access-এ রাখুন এবং release version-এর checksum বা version log সংরক্ষণ প্রয়োজন কি না বিবেচনা করুন।" },
+        { "t": "cta", "tool": "redact-pdf", "x": "তথ্য গোপন করতে visual mark নয়, redaction apply ও verify করুন।" }
+      ]
+    }
+  ]
+}

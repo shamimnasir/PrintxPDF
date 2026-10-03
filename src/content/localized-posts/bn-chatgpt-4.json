@@ -1,0 +1,244 @@
+{
+  "locale": "bn",
+  "guides": [
+    {
+      "topic": "how-to-edit-a-pdf",
+      "title": "PDF কীভাবে সম্পাদনা করবেন এবং কোন পরিবর্তন সম্ভব নয়",
+      "slug": "how-to-edit-a-pdf",
+      "tool": "edit-pdf",
+      "description": "PDF-এ text overlay, highlight, note ও shape যোগ করুন। Original text rewrite করার সীমা বুঝে editable source সংরক্ষণ করুন।",
+      "metaDescription": "PDF-এ text overlay, highlight, note ও shape যোগ করুন। Original text rewrite করার সীমা বুঝে editable source সংরক্ষণ করুন এবং পরিবর্তিত copy পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "PDF-এর পুরনো লেখা সরাসরি বদলানো যায়?", "a": "কিছু editor চেষ্টা করে, কিন্তু font ও layout-এর কারণে ফল বদলাতে পারে। PrintxPDF editor মূল text rewrite না করে annotation overlay যোগ করে।" },
+        { "q": "Annotation কি original PDF বদলায়?", "a": "Overlay tool সাধারণত নতুন annotated copy তৈরি করে। মূল file সংরক্ষণ করুন এবং output আলাদা করে খুলে দেখুন।" },
+        { "q": "PDF থেকে তথ্য লুকাতে shape ব্যবহার করব?", "a": "না। Shape বা highlight content সরায় না। Sensitive text সরাতে verified redaction tool ব্যবহার করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF সম্পাদনা বলতে কয়েক ধরনের কাজ বোঝাতে পারে: text overlay, annotation, page reorder, form fill বা মূল text rewrite। সব tool সব ধরনের editing করে না। PrintxPDF-এর editor হলো overlay editor, যেখানে আপনি মূল PDF-এর ওপর নতুন text, highlight, shape, note বা signature বসাতে পারেন। এটি মূল text-কে গোপনে rewrite করার দাবি করে না। যদি paragraph-এর source text বদলানো দরকার হয়, মূল DOCX বা অন্য editable file-এ ফিরে গিয়ে নতুন PDF export করাই সাধারণত পরিষ্কার পদ্ধতি।" },
+        { "t": "h2", "x": "Overlay ও original text editing আলাদা" },
+        { "t": "p", "x": "Overlay editor মূল পৃষ্ঠার ওপর দৃশ্যমান নতুন উপাদান বসায়। এতে comment, highlight বা অতিরিক্ত নির্দেশ যোগ করা যায়, কিন্তু নিচের text নিজে থেকেই মুছে যায় না। Original text editing করতে font, spacing, line wrap ও page layout পুনর্গঠন করতে হয়। Scan করা পৃষ্ঠায় OCR ছাড়াও text নেই, তাই সেখানে সম্পাদনা আরও আলাদা।" },
+        { "t": "h2", "x": "সাধারণ annotation যোগ করুন" },
+        { "t": "p", "x": "PDF খুলে page নির্বাচন করুন, তারপর text, pen, highlight, note বা shape tool বেছে নিন। নতুন text ছোট ও পাঠযোগ্য রাখুন। Signature বা form content বসালে সঠিক page ও field-এর সঙ্গে মেলে কি না দেখুন। Undo দিয়ে ভুল সংশোধন করুন। প্রতিটি page-এ উপাদান বসানোর পর zoom বদলে অবস্থান যাচাই করুন।" },
+        { "t": "h2", "x": "Download-এর পরে যাচাই" },
+        { "t": "p", "x": "নতুন copy খুলে annotation, page order, original text, form value এবং signature দেখুন। Overlay ব্যবহার করে sensitive information ঢেকে রাখা নিরাপদ redaction নয়। তথ্য মুছে ফেলার দরকার হলে Redact PDF workflow নিন এবং output থেকে text search বা select করে যাচাই করুন। Original আলাদা রাখুন, যাতে ভুল হলে ফিরে যেতে পারেন।" },
+        { "t": "cta", "tool": "edit-pdf", "x": "PDF-এ annotation ও overlay যোগ করুন, তারপর exported copy পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "how-to-crop-a-pdf",
+      "title": "PDF crop করার নিয়ম এবং কেন crop তথ্য লুকায় না",
+      "slug": "how-to-crop-a-pdf",
+      "tool": "crop-pdf",
+      "description": "PDF page-এর দৃশ্যমান সীমানা crop করে print বা display ঠিক করুন। মনে রাখুন, crop করা অংশ file থেকে মুছে যায় না।",
+      "metaDescription": "PDF page-এর দৃশ্যমান সীমানা crop করে print বা display ঠিক করুন। মনে রাখুন, crop করা অংশ file থেকে মুছে যায় না। গোপন তথ্য মুছতে redaction দরকার।",
+      "faqs": [
+        { "q": "PDF crop করলে বাইরে থাকা লেখা মুছে যায়?", "a": "না। Crop সাধারণত দৃশ্যমান page area বদলায়, কিন্তু বাদ পড়া content file-এ থেকে যেতে পারে।" },
+        { "q": "Crop কি page size ছোট করে?", "a": "এটি crop box বদলাতে পারে; print dimension ও document structure output-এ যাচাই করুন।" },
+        { "q": "ব্যক্তিগত নম্বর লুকাতে crop করব?", "a": "না। নিরাপদে সরাতে redaction ব্যবহার করুন, তারপর output search ও copy করে পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF crop করে margin, scan-এর কালো border বা অতিরিক্ত সাদা জায়গা কমানো যায়। Crop tool page-এর কোন অংশ দেখা বা print হবে তা নির্ধারণ করতে পারে। কিন্তু crop করা অঞ্চল file-এর ভেতরে থেকেই যেতে পারে। তাই এটি visual cleanup, privacy protection নয়। গোপন নাম, account number বা medical detail লুকানোর জন্য crop ব্যবহার করবেন না। প্রয়োজন হলে redaction করে ফল যাচাই করুন।" },
+        { "t": "h2", "x": "কেন crop দরকার হতে পারে" },
+        { "t": "p", "x": "Scan করা page-এ টেবিলের পাশে কালো edge থাকতে পারে। কোনো document-এ scan area-এর চারদিকে অতিরিক্ত margin থাকলে crop printing-এ page-এর ব্যবহারযোগ্যতা বাড়ায়। প্রতিটি পৃষ্ঠায় একই crop দরকার কি না পরীক্ষা করুন। ভিন্ন orientation বা size-এর page একসঙ্গে থাকলে এক setting সব page-এ উপযুক্ত নাও হতে পারে।" },
+        { "t": "h2", "x": "Crop area ঠিক করুন" },
+        { "t": "p", "x": "Preview-তে content edge ধরে crop box টানুন। লেখা, page number, footnote, signature বা stamp যেন কাটা না যায়। কয়েকটি page-এ test করুন, বিশেষ করে প্রথম এবং সবচেয়ে ঘন page। Save-এর আগে print preview দেখলে crop-এর ফলে text too close to edge হয়েছে কি না বোঝা যায়।" },
+        { "t": "h2", "x": "Privacy-র জন্য redaction" },
+        { "t": "p", "x": "যদি কোনো তথ্য সত্যিই সরাতে হয়, redaction tool ব্যবহার করুন, শুধু black rectangle বা crop নয়। Redact করার পরে নতুন PDF খুলে sensitive phrase search করুন এবং copy/paste দিয়ে পরীক্ষা করুন। Metadata, comments ও attachment-ও দেখুন। মূল নথি নিরাপদে রাখুন এবং বিতরণের জন্য আলাদা sanitized copy তৈরি করুন।" },
+        { "t": "p", "x": "Scan-এর border crop করলে document-এর origin বা stamp বাদ পড়ছে কি না দেখুন। Page size বদলালে পরবর্তী print-এ scaling আলাদা হতে পারে। Legal filing বা archival copy হলে crop করার আগে acceptance rule জেনে নিন এবং পরিবর্তিত file-এর নাম স্পষ্ট রাখুন।" },
+        { "t": "cta", "tool": "crop-pdf", "x": "প্রয়োজনমতো page crop করুন, তবে গোপন তথ্য সরাতে redaction বেছে নিন।" }
+      ]
+    },
+    {
+      "topic": "how-to-fill-in-a-pdf-form",
+      "title": "Fillable ও flat PDF form পূরণের নিয়ম",
+      "slug": "how-to-fill-in-a-pdf-form",
+      "tool": "pdf-forms",
+      "description": "Fillable field থাকলে সেগুলো পূরণ করুন, flat form হলে overlay ব্যবহার করুন। Save করে field, checkbox ও signature যাচাই করুন।",
+      "metaDescription": "Fillable field থাকলে সেগুলো পূরণ করুন, flat form হলে overlay ব্যবহার করুন। Save করে field, checkbox ও signature যাচাই করুন।",
+      "faqs": [
+        { "q": "কেন PDF form-এ টাইপ করা যায় না?", "a": "Form flat scan হতে পারে, field disabled থাকতে পারে, অথবা viewer form support নাও করতে পারে।" },
+        { "q": "Flat form-এ তথ্য বসাতে পারি?", "a": "হ্যাঁ, overlay text tool দিয়ে বসানো যেতে পারে, তবে alignment ও recipient-এর নিয়ম যাচাই করুন।" },
+        { "q": "Filled PDF পাঠানোর আগে কী দেখব?", "a": "সব field, checkbox, date, signature, page order ও final file reopen করে পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF form দুই রকম হতে পারে। Fillable form-এ text field, checkbox, dropdown বা signature field থাকে। Flat form হলো সাধারণ page image বা text, যেখানে সরাসরি field থাকে না। Fillable form হলে উপযুক্ত viewer-এ field-এ click করে তথ্য লিখুন। Flat form হলে overlay text tool দিয়ে সঠিক জায়গায় লিখতে হয়। কোনো field না চললে আগে form restriction ও viewer support যাচাই করুন।" },
+        { "t": "h2", "x": "Fillable field পূরণ" },
+        { "t": "p", "x": "নাম, address, date এবং number নির্দিষ্ট format-এ লিখুন। Required field ও checkbox চিহ্নিত করুন। Dropdown-এ সঠিক option বেছে নিন। Save করার পরে PDF বন্ধ করে আবার খুলুন, কারণ কিছু viewer-এ data save না হলে field ফাঁকা দেখাতে পারে।" },
+        { "t": "h2", "x": "Flat form-এ text বসানো" },
+        { "t": "p", "x": "Page zoom বাড়িয়ে field-এর জায়গা বুঝুন। Text overlay ব্যবহার করলে font size, baseline এবং box-এর সীমানা মিলিয়ে নিন। দীর্ঘ উত্তর ছোট font-এ জোর করে ঢোকাবেন না; form provider-এর নির্দেশনা অনুসারে আলাদা attachment লাগতে পারে। Checkbox ও signature আলাদাভাবে পরীক্ষা করুন।" },
+        { "t": "h2", "x": "স্বাক্ষর ও জমা" },
+        { "t": "p", "x": "Typed, drawn বা certificate-backed digital signature এক জিনিস নয়। Form issuer কী ধরনের signature গ্রহণ করে তা জেনে নিন। Filled copy export করে প্রতিটি page খুলুন, field overlap, missing data, signature status এবং page count দেখুন। Original blank form সংরক্ষণ করুন এবং recipient-কে সঠিক file পাঠান।" },
+        { "t": "p", "x": "যদি form-এ date format অস্পষ্ট হয়, issuer-এর নির্দেশনা জিজ্ঞাসা করুন। Required field ফাঁকা রেখে submit করলে processing থেমে যেতে পারে। Export করা file-এর নাম applicant ও date দিয়ে রাখুন, তবে shared folder-এ sensitive identifier যোগ করবেন না। জমা দেওয়ার প্রমাণ বা confirmation number আলাদা record-এ রাখুন।" },
+        { "t": "cta", "tool": "pdf-forms", "x": "PDF form পূরণ করে download-এর পরে প্রতিটি field পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "how-to-compare-two-pdfs",
+      "title": "দুটি PDF তুলনা করে পরিবর্তন খুঁজে বের করুন",
+      "slug": "how-to-compare-two-pdfs",
+      "tool": "compare-pdf",
+      "description": "দুই সংস্করণের text ও page পাশাপাশি দেখে পরিবর্তন চিহ্নিত করুন। Page reorder, scan এবং OCR-এর সীমা বুঝে গুরুত্বপূর্ণ পার্থক্য যাচাই করুন।",
+      "metaDescription": "দুই সংস্করণের text ও page পাশাপাশি দেখে পরিবর্তন চিহ্নিত করুন। Page reorder, scan এবং OCR-এর সীমা বুঝে গুরুত্বপূর্ণ পার্থক্য যাচাই করুন।",
+      "faqs": [
+        { "q": "PDF comparison কি সব পরিবর্তন ধরতে পারে?", "a": "না। Scan, formatting shift, image change বা page reorder স্বয়ংক্রিয় comparison-এ বাদ পড়তে পারে।" },
+        { "q": "দুটি file-এর page count আলাদা হলে?", "a": "Page mapping এক-একভাবে নাও মিলতে পারে। Added বা removed page আলাদাভাবে পরীক্ষা করুন।" },
+        { "q": "কোন সংস্করণটি চূড়ান্ত বুঝব কীভাবে?", "a": "File name, version history, approval record এবং author-এর confirmation দেখে source নির্ধারণ করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "দুটি PDF তুলনা করলে contract, policy, report বা proof-এর পরিবর্তন পর্যালোচনা করা সহজ হয়। Automated comparison text, page image বা pixel difference দেখাতে পারে, কিন্তু কোনো পদ্ধতিই নিখুঁত নয়। File-এর নাম এবং version date আগে যাচাই করুন, তারপর original ও revised copy নির্বাচন করুন। Comparison result-কে review aid ভাবুন, final legal বা editorial সিদ্ধান্ত নয়।" },
+        { "t": "h2", "x": "তুলনার আগে প্রস্তুতি" },
+        { "t": "p", "x": "দুটি file খুলে page orientation, scan quality এবং page count দেখুন। PDF-এ selectable text থাকলে text comparison কার্যকর হতে পারে। Image-only scan হলে OCR দরকার হতে পারে এবং OCR নিজেই ভুল করতে পারে। নাম, date ও approval record থেকে সঠিক baseline file চিহ্নিত করুন।" },
+        { "t": "h2", "x": "Difference report পড়া" },
+        { "t": "p", "x": "Added, removed বা moved text চিহ্নিত অংশে মনোযোগ দিন। Font change বা line wrap অনেক visual difference তৈরি করতে পারে, যদিও অর্থ অপরিবর্তিত। Page numbering বদলালে একই subject-এর page map ভিন্ন হতে পারে। Number, amount, date, negation এবং clause carefully যাচাই করুন, কারণ ছোট পরিবর্তনও গুরুত্বপূর্ণ হতে পারে।" },
+        { "t": "h2", "x": "Manual review ও record" },
+        { "t": "p", "x": "কোনো page বাদ পড়েছে কি না সম্পূর্ণ নথি scan করুন। Difference report save করে reviewer, date এবং সিদ্ধান্ত নথিভুক্ত করুন। Confidential document হলে অনুমোদিত compare workflow ব্যবহার করুন। Review শেষে confirmed copy আলাদা নামে রাখুন এবং অস্পষ্ট পরিবর্তন author বা owner-কে জিজ্ঞাসা করুন।" },
+        { "t": "p", "x": "পর্যালোচনা শেষে কী পরিবর্তন গ্রহণ করা হয়েছে তা লিখিতভাবে রাখুন। এতে পরের reviewer একই পার্থক্য আবার তদন্ত করতে হয় না। Comparison copy মূল নথি নয়, তাই recordkeeping policy অনুসারে source ও report সংরক্ষণ করুন। Unresolved প্রশ্ন থাকলে সংশ্লিষ্ট owner-কে নির্দিষ্ট page ও clause উল্লেখ করে পাঠান।" },
+        { "t": "cta", "tool": "compare-pdf", "x": "দুই PDF তুলনা করুন এবং গুরুত্বপূর্ণ পরিবর্তন হাতে যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "annotate-pdf-without-changing-original-text",
+      "title": "Original text না বদলে PDF-এ annotation দিন",
+      "slug": "annotate-pdf-without-changing-original-text",
+      "tool": "edit-pdf",
+      "description": "মূল PDF text অপরিবর্তিত রেখে note, highlight, drawing ও comment overlay যোগ করুন। Annotation layer ও redaction-এর পার্থক্য জানুন।",
+      "metaDescription": "মূল PDF text অপরিবর্তিত রেখে note, highlight, drawing ও comment overlay যোগ করুন। Annotation layer ও redaction-এর পার্থক্য জানুন।",
+      "faqs": [
+        { "q": "Annotation দিলে মূল লেখা বদলায়?", "a": "Overlay annotation মূল লেখা rewrite করে না, তবে exported copy-তে নতুন visible content যোগ হয়।" },
+        { "q": "Highlight কি text মুছে দিতে পারে?", "a": "না। Highlight শুধু চিহ্নিত করে। Sensitive text মুছতে verified redaction দরকার।" },
+        { "q": "Annotation অন্য reader-এ দেখা যাবে?", "a": "সাধারণত flattened বা embedded হলে দেখা যায়, তবে export করা copy অন্য PDF reader-এ পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF-এর মূল শব্দ না বদলে reviewer comment, highlight, arrow, signature বা অতিরিক্ত text বসানো যায়। PrintxPDF-এর overlay editor এই ধরনের non-destructive markup-এ কাজ করে; এটি original PDF paragraph rewrite করে না। মূল file অক্ষত রেখে annotated copy তৈরি করুন। Source text বদলানো দরকার হলে editable DOCX বা মূল authoring file-এ ফিরে গিয়ে আবার export করাই ভালো।" },
+        { "t": "h2", "x": "কোন annotation ব্যবহার করবেন" },
+        { "t": "p", "x": "Highlight গুরুত্বপূর্ণ বাক্য চিহ্নিত করে, note পাশে ব্যাখ্যা দেয়, আর arrow বা shape review comment-কে নির্দিষ্ট অংশের সঙ্গে যুক্ত করে। Drawing tool-এ freehand mark করা যায়। Markup সংযত রাখুন এবং colour meaning স্থির রাখুন। Page number ও zoom যাচাই করুন যেন note ভুল বাক্যের পাশে না যায়।" },
+        { "t": "h2", "x": "নতুন copy পরীক্ষা" },
+        { "t": "p", "x": "Save বা export শেষে নতুন PDF অন্য viewer-এ খুলুন। Annotation দেখা যাচ্ছে, original text select হয়, এবং page order একই আছে কি না পরীক্ষা করুন। কিছু app comment-কে sidecar file-এ রাখে, তাই শুধু editor-এ দেখা গেলেই যথেষ্ট নয়। Reviewer-কে পাঠানোর আগে comments-এ ব্যক্তিগত তথ্য আছে কি না পড়ুন।" },
+        { "t": "h2", "x": "Privacy ও redaction" },
+        { "t": "p", "x": "Highlight, opaque shape বা note sensitive text সরায় না। Visual cover-এর নিচে text থাকতে পারে। সত্যিই তথ্য মুছতে redaction ব্যবহার করুন এবং copy, search ও metadata দিয়ে যাচাই করুন। Original text অপরিবর্তিত রাখার অর্থ এই নয় যে exported copy content ছাড়া রয়েছে; markup-ও তার appearance বদলায়।" },
+        { "t": "p", "x": "Team review হলে annotation colour-এর অর্থ ও reviewer-এর initials নির্ধারণ করে নিন। Flatten করলে comment editing বন্ধ হতে পারে, তাই editable review copy ও final flattened copy আলাদাভাবে রাখুন। Recipient-এর কাছে কোন সংস্করণ যাবে তা নাম এবং message-এ স্পষ্ট করুন।" },
+        { "t": "cta", "tool": "edit-pdf", "x": "Original text অক্ষত রেখে annotation যোগ করুন এবং নতুন copy পরীক্ষা করুন।" }
+      ]
+    },
+    {
+      "topic": "convert-an-image-format",
+      "title": "JPG, PNG, WebP ও AVIF-এর মধ্যে ছবি রূপান্তর",
+      "slug": "convert-an-image-format",
+      "tool": "image-converter",
+      "description": "কাজ অনুযায়ী JPG, PNG, WebP বা AVIF বেছে নিন। Transparency, quality, browser support এবং output image পরীক্ষা করুন।",
+      "metaDescription": "কাজ অনুযায়ী JPG, PNG, WebP বা AVIF বেছে নিন। Transparency, quality, browser support এবং output image পরীক্ষা করুন।",
+      "faqs": [
+        { "q": "কোন format সবচেয়ে ছোট?", "a": "ছবি ও quality setting অনুযায়ী ফল বদলায়। WebP বা AVIF ছোট হতে পারে, কিন্তু target platform support যাচাই করুন।" },
+        { "q": "JPG transparency রাখতে পারে?", "a": "না। Transparent অংশ সাধারণত solid background-এ flatten হয়; alpha channel দরকার হলে PNG বা supported alternative নিন।" },
+        { "q": "বারবার convert করলে quality কমে?", "a": "Lossy format বারবার save করলে degradation হতে পারে। Original source থেকে final format তৈরি করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "ছবির format বেছে নেওয়া নির্ভর করে ছবিটি কোথায় ব্যবহার হবে তার ওপর। JPG photograph-এর জন্য প্রচলিত ও ছোট হতে পারে, PNG sharp text, icon ও transparency ধরে, WebP ওয়েবে ভালো compression দেয়, আর AVIF আরও ছোট হতে পারে কিন্তু পুরোনো app-এ support অনিশ্চিত। Format বদলানোর আগে original copy রাখুন। শুধু extension rename করলে প্রকৃত conversion হয় না।" },
+        { "t": "h2", "x": "Transparency ও detail" },
+        { "t": "p", "x": "PNG-তে alpha transparency থাকতে পারে। JPG-তে transparent pixel নেই, তাই background রঙ বেছে flatten করতে হয়। Logo বা graphic convert করলে edge পরীক্ষা করুন। Photograph-এ JPG quality কমালে file ছোট হয়, কিন্তু fine texture হারাতে পারে। Screenshot-এ text line ও chart label zoom করে দেখুন।" },
+        { "t": "h2", "x": "Compatibility ও file size" },
+        { "t": "p", "x": "Website, CMS বা recipient-এর software কোন format নেয় তা আগে জানুন। AVIF ও WebP browser-এ চলে, কিন্তু কিছু desktop workflow-তে extra conversion লাগতে পারে। একই ছবির output dimension এবং file size তুলনা করুন। Color profile পরিবর্তিত হলে skin tone বা brand color ভিন্ন হতে পারে।" },
+        { "t": "h2", "x": "Output যাচাই ও privacy" },
+        { "t": "p", "x": "নতুন file খুলে orientation, crop, color এবং transparency দেখুন। প্রয়োজনীয় metadata বা camera information থাকবে কি না নির্ধারণ করুন। Sensitive photo-তে location data থাকতে পারে, তাই sharing-এর আগে metadata policy দেখুন। PrintxPDF image conversion browser-এ চলে; download করার পর ফাইলটি সঠিক destination-এ save হয়েছে নিশ্চিত করুন।" },
+        { "t": "p", "x": "Social media platform নিজে image আবার compress করতে পারে। Upload-এর পরে live preview-তে colour ও sharpness দেখুন। Source ও derived copy আলাদা folder-এ রাখলে ভবিষ্যতে format পরিবর্তন করতে নতুন করে lossy file থেকে শুরু করতে হবে না।" },
+        { "t": "cta", "tool": "image-converter", "x": "উপযুক্ত output format বেছে ছবি convert করে preview করুন।" }
+      ]
+    },
+    {
+      "topic": "compress-an-image",
+      "title": "ছবি দেখতে খারাপ না করে file size কমান",
+      "slug": "compress-an-image",
+      "tool": "compress-image",
+      "description": "Image compression-এ quality ও dimension সামঞ্জস্য করুন। Before/after preview দেখে প্রয়োজনীয় ব্যবহার অনুযায়ী output সংরক্ষণ করুন।",
+      "metaDescription": "Image compression-এ quality ও dimension সামঞ্জস্য করুন। Before/after preview দেখে প্রয়োজনীয় ব্যবহার অনুযায়ী output সংরক্ষণ করুন।",
+      "faqs": [
+        { "q": "Quality কত রাখব?", "a": "ব্যবহার অনুযায়ী sample দেখুন। Website thumbnail এবং print master-এর প্রয়োজন এক নয়।" },
+        { "q": "Resolution কমালে image ঝাপসা হবে?", "a": "Display dimension-এর তুলনায় খুব ছোট করলে zoom বা print-এ pixelation দেখা দিতে পারে।" },
+        { "q": "Compression কি original overwrite করে?", "a": "Output আলাদা file হিসেবে রাখুন এবং আসল source সংরক্ষণ করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "বড় image website slow করতে পারে, email পাঠাতে বাধা দেয় বা storage নেয়। Compression file size কমায়, কিন্তু খুব aggressive setting detail নষ্ট করতে পারে। প্রথমে ছবিটি কোথায় দেখা হবে জানুন: mobile screen, website hero, document attachment, নাকি printed poster। সেই অনুযায়ী pixel dimension ও quality নির্ধারণ করুন। Original master copy কখনো overwrite করবেন না।" },
+        { "t": "h2", "x": "Pixel dimension ও quality" },
+        { "t": "p", "x": "ওয়েবের জন্য display size-এর চেয়ে অনেক বড় image থাকলে dimension কমানো যায়। Print-এর ক্ষেত্রে final size ও resolution প্রয়োজন অনুযায়ী রাখুন। JPG quality কমালে compression artifact, banding এবং detail loss হতে পারে। PNG graphic compress করলে ফল আলাদা। Before/after preview-তে text edge, hair, gradient এবং shadow পরীক্ষা করুন।" },
+        { "t": "h2", "x": "Format অনুযায়ী সিদ্ধান্ত" },
+        { "t": "p", "x": "Photo হলে WebP বা AVIF web delivery-তে ছোট হতে পারে, তবে compatibility দেখুন। Transparent logo PNG-তে রাখলে background অক্ষত থাকে। JPG-তে convert করতে গেলে transparent অংশ flatten হবে। Color profile ও orientation ঠিক আছে কি না output image-এ দেখুন।" },
+        { "t": "h2", "x": "Batch ও final check" },
+        { "t": "p", "x": "অনেক ছবি একসঙ্গে compress করলে representative sample দিয়ে setting পরীক্ষা করুন। সব ছবিতে একই quality মানাবে না। Output folder-এ original ও compressed version আলাদা নাম দিন। ফাইলের আকার, dimension এবং display quality তুলনা করুন। Website-এ upload করার পরে actual page-এ load ও crop পরীক্ষা করুন।" },
+        { "t": "p", "x": "Accessibility বা evidence-এর জন্য detail জরুরি হলে compressed copy-কে একমাত্র record বানাবেন না। Original resolution সংরক্ষণ করুন এবং reduced version-এর filename-এ dimension বা use case লিখুন। এতে printed output বা later audit-এর জন্য উপযুক্ত file বেছে নেওয়া সহজ হয়। Brand asset-এর color profile থাকলে তা অক্ষত কি না পরীক্ষা করুন।" },
+        { "t": "cta", "tool": "compress-image", "x": "Quality ও dimension ঠিক করে image compress করুন এবং ফল তুলনা করুন।" }
+      ]
+    },
+    {
+      "topic": "how-to-make-a-zip-file",
+      "title": "ZIP file বানানোর উপায় এবং কখন এটি কাজে আসে না",
+      "slug": "how-to-make-a-zip-file",
+      "tool": "create-zip",
+      "description": "একাধিক file ZIP-এ গুছিয়ে পাঠান, structure ও নাম পরীক্ষা করুন। ZIP সব file ছোট করে না, বিশেষ করে ছবি ও video।",
+      "metaDescription": "একাধিক file ZIP-এ গুছিয়ে পাঠান, structure ও নাম পরীক্ষা করুন। ZIP সব file ছোট করে না, বিশেষ করে ছবি ও video।",
+      "faqs": [
+        { "q": "ZIP করলে সব ধরনের file ছোট হয়?", "a": "না। JPG, MP4 বা অন্য compressed format-এর আকার খুব কম নাও হতে পারে।" },
+        { "q": "ZIP-এ folder structure থাকে?", "a": "Archive তৈরির setting অনুযায়ী থাকে। তৈরি file খুলে structure যাচাই করুন।" },
+        { "q": "ZIP কি password protection দেয়?", "a": "সব ZIP workflow encryption দেয় না। Sensitive data-তে approved encrypted sharing ব্যবহার করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "ZIP archive অনেক file-কে একটি package-এ রাখে, যাতে share, backup বা download সহজ হয়। Text, code ও spreadsheet-এর মতো file compression-এ ছোট হতে পারে। কিন্তু JPG, MP4, PDF বা অন্য আগে থেকেই compressed file-এ সাশ্রয় সামান্য হতে পারে। ZIP-কে folder organization ও bundling হিসেবেও ভাবুন, সবসময় size reduction নয়।" },
+        { "t": "h2", "x": "Archive তৈরির আগে সাজান" },
+        { "t": "p", "x": "অপ্রয়োজনীয় temporary file বাদ দিয়ে descriptive filename দিন। একাধিক project থাকলে folder structure ঠিক করুন। Recipient-কে কোন file আগে খুলতে হবে তা README-তে জানাতে পারেন। Duplicate এবং hidden file আছে কি না দেখুন। Confidential content থাকলে archive তৈরি করলেই তা secure হয় না।" },
+        { "t": "h2", "x": "ZIP তৈরি ও পরীক্ষা" },
+        { "t": "p", "x": "Tool-এ একাধিক file নির্বাচন করে archive তৈরি করুন। Output খুলে file count, name এবং directory structure মিলিয়ে নিন। Extraction test করলে archive damaged নয় বোঝা যায়। Email-এ পাঠালে মোট size limit দেখুন। অনেক ছবি বা video থাকলে ZIP-এর বদলে secure storage link বেশি সুবিধাজনক হতে পারে।" },
+        { "t": "h2", "x": "Security ও recipient" },
+        { "t": "p", "x": "ZIP password বা strong encryption না থাকলে archive-কে encrypted মনে করবেন না। Access-controlled service বা প্রতিষ্ঠানের approved method ব্যবহার করুন। ভুল recipient-কে archive পাঠালে ভেতরের সব file প্রকাশ পেতে পারে, তাই address ও contents দুইবার পরীক্ষা করুন।" },
+        { "t": "p", "x": "Recipient ZIP খুলতে না পারলে operating system ও archive utility-এর compatibility জেনে নিন। খুব বড় folder হলে ছোট অংশে ভাগ করা ব্যবহারিক হতে পারে, কিন্তু part ordering লিখে দিন। একটি README-তে file description ও contact point দিলে archive ব্যবহার করা সহজ হয়। Sent archive-এর একটি copy নিজের project record-এ রাখুন। Archive যদি business submission হয়, তার contents-এর inventory-ও রেখে দিন।" },
+        { "t": "cta", "tool": "create-zip", "x": "নির্বাচিত file ZIP করুন এবং archive খুলে content যাচাই করুন।" }
+      ]
+    },
+    {
+      "topic": "how-to-open-a-zip-file",
+      "title": "যেকোনো device-এ ZIP file খোলার নিয়ম",
+      "slug": "how-to-open-a-zip-file",
+      "tool": "extract-zip",
+      "description": "ZIP archive খুলে file list, path ও content পরীক্ষা করুন। অচেনা archive-এর executable file চালানোর আগে উৎস যাচাই করুন।",
+      "metaDescription": "ZIP archive খুলে file list, path ও content পরীক্ষা করুন। অচেনা archive-এর executable file চালানোর আগে উৎস যাচাই করুন।",
+      "faqs": [
+        { "q": "ZIP খুলতে আলাদা app লাগে?", "a": "অনেক desktop ও mobile system ZIP extract করতে পারে; browser tool-ও archive খুলতে পারে।" },
+        { "q": "ZIP password চাইলে কী করব?", "a": "যিনি archive পাঠিয়েছেন তার কাছ থেকে password নিরাপদ channel-এ নিন। Bypass চেষ্টা করবেন না।" },
+        { "q": "Extract করার আগে file দেখা যায়?", "a": "অনেক tool file list দেখায়। অচেনা file না খুলে আগে archive source ও contents যাচাই করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "ZIP একটি compressed archive, যার ভেতরে এক বা একাধিক file ও folder থাকতে পারে। Windows, macOS, অনেক Linux desktop এবং mobile device-এ built-in extraction option থাকে। Browser-based ZIP reader দিয়েও contents দেখা যায়। Archive খোলার আগে sender-এর পরিচয় নিশ্চিত করুন, বিশেষ করে email attachment হলে। ZIP নিজে নিরাপত্তার নিশ্চয়তা দেয় না; এর ভেতরে ক্ষতিকর file থাকতে পারে।" },
+        { "t": "h2", "x": "File list আগে দেখুন" },
+        { "t": "p", "x": "Archive খুলে path, file name, extension এবং size পরীক্ষা করুন। অপ্রত্যাশিত executable বা script file থাকলে চালাবেন না। Folder structure অদ্ভুত জায়গায় extract হওয়ার সম্ভাবনা থাকলে একটি নতুন নির্দিষ্ট folder বেছে নিন। Password চাইলে sender-এর কাছ থেকে আলাদা নিরাপদ উপায়ে নিন।" },
+        { "t": "h2", "x": "Device-এ extract" },
+        { "t": "p", "x": "Desktop-এ context menu থেকে Extract নির্বাচন করা যায়। ফোনে Files বা archive app ব্যবহার করুন। Browser tool-এ file upload করে list ও selected item ডাউনলোড করা যেতে পারে। Sensitive archive online service-এ দেওয়ার আগে প্রতিষ্ঠানের policy দেখুন।" },
+        { "t": "h2", "x": "সমস্যা হলে করণীয়" },
+        { "t": "p", "x": "Archive corrupt হলে আবার download করুন এবং file size sender-এর সঙ্গে মিলিয়ে নিন। Password-protected বা unsupported compression হলে sender-কে standard ZIP পুনরায় দিতে বলুন। Extract করার পরে malware scan করুন যদি source অজানা হয়। প্রয়োজন নেই এমন ফাইল delete করার আগে contents বোঝার জন্য owner-এর সঙ্গে যোগাযোগ করুন।" },
+        { "t": "p", "x": "Extract করার সময় archive-এর top-level folder অক্ষত রাখা কাজে লাগতে পারে, যাতে অনেক file এক directory-তে ছড়িয়ে না পড়ে। Destination folder-এ পর্যাপ্ত storage আছে কি না দেখুন। Extract শেষে প্রয়োজনীয় document খুলুন, তারপর অপ্রয়োজনীয় temporary copy নিরাপদে মুছুন। Original archive প্রয়োজন হলে সেটিও সংরক্ষণ করুন। Mobile-এ storage কম থাকলে আগে file list দেখে অপ্রয়োজনীয় item বাদ দিন।" },
+        { "t": "cta", "tool": "extract-zip", "x": "ZIP খুলে file list দেখুন এবং প্রয়োজনীয় content নিরাপদে extract করুন।" }
+      ]
+    },
+    {
+      "topic": "heic-to-jpg-iphone",
+      "title": "iPhone, Mac ও Windows-এ HEIC-কে JPG করুন",
+      "slug": "heic-to-jpg-iphone",
+      "tool": "image-converter",
+      "description": "iPhone-এর HEIC photo JPG-তে বদলে Windows, web বা legacy app-এ ব্যবহার করুন। Batch conversion, quality ও metadata যাচাই করুন।",
+      "metaDescription": "iPhone-এর HEIC photo JPG-তে বদলে Windows, web বা legacy app-এ ব্যবহার করুন। Batch conversion, quality ও metadata যাচাই করুন।",
+      "faqs": [
+        { "q": "HEIC-কে JPG করলে quality কমে?", "a": "JPG lossy format, তাই quality setting অনুযায়ী কিছু detail কমতে পারে। Original HEIC সংরক্ষণ করুন।" },
+        { "q": "iPhone থেকেই compatibility photo তোলা যায়?", "a": "Camera settings-এ Most Compatible option আছে কি না বর্তমান iOS documentation-এ দেখুন। এতে ভবিষ্যৎ photo format বদলাতে পারে।" },
+        { "q": "HEIC conversion-এ location metadata থাকবে?", "a": "Tool অনুযায়ী metadata রাখা বা বাদ পড়তে পারে। Share করার আগে metadata ও location privacy পরীক্ষা করুন।" }
+      ],
+      "body": [
+        { "t": "p", "x": "iPhone-এ HEIC photo কম storage ব্যবহার করতে পারে, কিন্তু পুরনো Windows app, website বা form JPG চাইতে পারে। তখন image converter দিয়ে একটি বা একাধিক HEIC-কে JPG-তে বদলানো যায়। JPG lossy format হওয়ায় export quality নির্বাচন গুরুত্বপূর্ণ। Original HEIC আলাদা রাখুন, যাতে ভবিষ্যতে উচ্চ মানের source পাওয়া যায়। শুধু file extension বদলালে image format রূপান্তর হয় না।" },
+        { "t": "h2", "x": "iPhone থেকে source নেওয়া" },
+        { "t": "p", "x": "Files বা Photos থেকে image export করার সময় photo সঠিকভাবে download হয়েছে কি না দেখুন। কিছু share workflow compatibility copy তৈরি করতে পারে। Camera format settings বদলানোর আগে মনে রাখুন নতুন capture-এর file size বাড়তে পারে। পুরনো photo স্বয়ংক্রিয়ভাবে JPG হয়ে যায় না।" },
+        { "t": "h2", "x": "Batch convert ও quality" },
+        { "t": "p", "x": "অনেক photo হলে multi-file conversion সময় বাঁচায়। Export quality খুব কম না রেখে representative photo পরীক্ষা করুন। Portrait, night shot এবং ছোট লেখা থাকা screenshot আলাদা করে দেখুন। Orientation, colour ও dimension source-এর সঙ্গে মেলে কি না যাচাই করুন।" },
+        { "t": "h2", "x": "Windows, Mac ও privacy" },
+        { "t": "p", "x": "Windows-এ output JPG সাধারণ image viewer-এ চলার কথা, তবু recipient-এর app requirement দেখুন। Mac Preview-তেও conversion করা যায়। Online converter ব্যবহার করলে personal photo বা location metadata সম্পর্কে policy দেখুন। Download শেষে JPG খুলে এবং file name মিলিয়ে তারপর share করুন।" },
+        { "t": "p", "x": "JPG পাঠালে receiving site-এর maximum dimension বা file size limit মিলিয়ে নিন। Photo-তে ব্যক্তির মুখ, বাড়ির ঠিকানা বা geolocation থাকতে পারে। Public sharing-এর আগে প্রয়োজনমতো metadata পরিষ্কার করুন এবং recipient ঠিক কি copy দরকার তা জেনে নিন। Original HEIC নিরাপদ location-এ backup করুন। Cloud backup-এ কোন format উঠছে তাও আপনার storage settings-এ দেখে নিন।" },
+        { "t": "cta", "tool": "image-converter", "x": "HEIC photo JPG-তে বদলান এবং quality ও metadata যাচাই করুন।" }
+      ]
+    }
+  ]
+}
