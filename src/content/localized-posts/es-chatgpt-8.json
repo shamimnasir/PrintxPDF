@@ -1,0 +1,655 @@
+{
+  "locale": "es",
+  "guides": [
+    {
+      "topic": "add-print-button-to-wordpress",
+      "title": "Cómo añadir un botón de impresión a WordPress",
+      "slug": "add-print-button-to-wordpress",
+      "tool": "html-to-pdf",
+      "description": "Usa una función o complemento confiable y prueba estilos, accesibilidad y plantillas reales.",
+      "metaDescription": "Añade un botón de impresión a WordPress y comprueba permisos, CSS de impresión, compatibilidad del tema y accesibilidad.",
+      "faqs": [
+        {
+          "q": "¿Necesito un complemento para añadir un botón?",
+          "a": "No siempre. Puedes usar una función existente o código propio revisado y mantenido."
+        },
+        {
+          "q": "¿El botón puede guardar también como PDF?",
+          "a": "Puede abrir el diálogo del navegador, donde el usuario elige impresora o guardado si está disponible."
+        },
+        {
+          "q": "¿Qué debo probar después de instalarlo?",
+          "a": "Prueba entradas, páginas, móvil, teclado, vista previa y cambios del tema."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un botón de impresión en WordPress permite que los visitantes preparen una copia en papel o PDF de un artículo. Antes de instalar un complemento, comprueba si el tema o el sistema ya ofrece esa función. El botón debe aparecer donde sea útil, tener una etiqueta clara y no abrir el diálogo sin acción del usuario. El resultado depende de la plantilla y de las reglas CSS para impresión."
+        },
+        {
+          "t": "h2",
+          "x": "Elige cómo implementarlo"
+        },
+        {
+          "t": "p",
+          "x": "Un complemento puede facilitar configuración y actualizaciones, mientras que código propio puede reducir dependencias si se mantiene correctamente. Revisa quién mantiene el complemento, compatibilidad, fecha de actualización, permisos y política de privacidad. No instales varias soluciones que añadan el mismo botón. Si escribes código, evita modificar directamente el tema padre porque una actualización podría sobrescribirlo."
+        },
+        {
+          "t": "h2",
+          "x": "Diseña una experiencia accesible"
+        },
+        {
+          "t": "p",
+          "x": "Usa un botón con nombre comprensible, contraste suficiente y soporte para teclado. Asegura que el foco sea visible y que el texto explique si se abrirá la impresión del navegador. No hagas que aparezca automáticamente al cargar la página. En móvil, prueba que el control sea fácil de tocar y no tape el contenido."
+        },
+        {
+          "t": "h2",
+          "x": "Crea estilos de impresión"
+        },
+        {
+          "t": "p",
+          "x": "Oculta navegación, anuncios y controles que no funcionan en papel, pero conserva título, autor, contenido, referencias y enlaces útiles. Mantén tablas dentro del ancho, evita separar encabezados de sus párrafos y comprueba colores en escala de grises. Si usas un complemento de limpieza, verifica que no elimine imágenes, avisos legales o texto necesario."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba el sitio antes de publicar"
+        },
+        {
+          "t": "p",
+          "x": "Revisa varias entradas, páginas, imágenes, tablas y formularios. Comprueba Chrome, Firefox y Safari si son relevantes para tu audiencia, además de dispositivos móviles. Repite la prueba después de cambiar tema o complemento. Confirma que el botón no afecte la velocidad ni el diseño normal y que las páginas privadas no se impriman accidentalmente."
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "Prueba la página de WordPress en una vista PDF antes de activar el botón."
+        }
+      ]
+    },
+    {
+      "topic": "print-stylesheet-css",
+      "title": "Cómo crear una hoja CSS de impresión que funcione",
+      "slug": "print-stylesheet-css",
+      "tool": "html-to-pdf",
+      "description": "Oculta controles no imprimibles, controla anchos y saltos y valida componentes reales.",
+      "metaDescription": "Crea CSS para impresión con reglas claras de visibilidad, ancho y saltos de página, y prueba contenido web en distintos navegadores.",
+      "faqs": [
+        {
+          "q": "¿Qué es una hoja de estilo print?",
+          "a": "Son reglas CSS aplicadas al medio de impresión para adaptar la página a papel o PDF."
+        },
+        {
+          "q": "¿Debo ocultar todas las imágenes?",
+          "a": "No. Conserva imágenes informativas, diagramas y pies de foto necesarios."
+        },
+        {
+          "q": "¿Las reglas print funcionan igual en todos los navegadores?",
+          "a": "Hay diferencias; prueba los navegadores y tamaños de papel relevantes para tus usuarios."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Una hoja de estilo para impresión adapta una página web cuando el usuario imprime o guarda como PDF. Permite ocultar navegación, anuncios y botones, ajustar tipografía y definir saltos de página. Una regla global puede mejorar el aspecto, pero también esconder contenido importante. Empieza identificando qué debe conservarse y prueba con páginas reales, no solo con una maqueta sencilla."
+        },
+        {
+          "t": "h2",
+          "x": "Define una jerarquía imprimible"
+        },
+        {
+          "t": "p",
+          "x": "Conserva título, autor, fecha, cuerpo, subtítulos, pies y referencias. Elimina controles, menús, banners y elementos que requieren interacción. No escondas información únicamente porque ocupe espacio. Si una imagen explica un paso o muestra un gráfico, mantenla y asegúrate de que tenga tamaño adecuado y texto alternativo en la página digital."
+        },
+        {
+          "t": "h2",
+          "x": "Controla dimensiones y contraste"
+        },
+        {
+          "t": "p",
+          "x": "Usa medidas apropiadas para papel, tipografía legible y márgenes compatibles con impresoras comunes. Evita anchos fijos que provoquen recortes. No dependas de un fondo de color para transmitir estados; usa etiquetas y bordes visibles en escala de grises. Las tablas amplias pueden necesitar orientación horizontal, división por secciones o un resumen alternativo."
+        },
+        {
+          "t": "h2",
+          "x": "Gestiona saltos de página"
+        },
+        {
+          "t": "p",
+          "x": "Evita dejar un encabezado aislado al final de una hoja y procura mantener juntas las filas relacionadas. Las reglas de salto varían entre motores de navegador, por lo que deben tratarse como una ayuda y no como garantía absoluta. Comprueba documentos largos, páginas con listas y bloques de código."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba y mantén las reglas"
+        },
+        {
+          "t": "p",
+          "x": "Revisa vista previa en varios navegadores, A4 y Carta, páginas cortas y largas, tablas, imágenes y encabezados. Cambia una regla a la vez y confirma que la web normal no se vea afectada. Repite pruebas después de actualizar el tema o componentes. Un botón de impresión útil necesita contenido correcto y CSS accesible, no solo un aspecto limpio."
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "Renderiza una página de prueba y revisa los saltos de impresión."
+        }
+      ]
+    },
+    {
+      "topic": "printer-friendly-website-design",
+      "title": "Cómo diseñar una web que también se imprima bien",
+      "slug": "printer-friendly-website-design",
+      "tool": "qr-code",
+      "description": "Prioriza estructura, legibilidad y contenido esencial tanto en pantalla como en papel.",
+      "metaDescription": "Diseña páginas web fáciles de imprimir con jerarquía clara, texto legible, imágenes útiles y reglas que eviten recortes.",
+      "faqs": [
+        {
+          "q": "¿Una web adaptable también imprime bien?",
+          "a": "No siempre. El diseño para pantalla necesita reglas adicionales para páginas y márgenes de papel."
+        },
+        {
+          "q": "¿Qué elementos se suelen ocultar al imprimir?",
+          "a": "Menús, anuncios y botones interactivos, siempre que no contengan información esencial."
+        },
+        {
+          "q": "¿Debo ofrecer una versión PDF?",
+          "a": "Puede ser útil para documentos estables, pero mantén la página web accesible y actualizada."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un sitio web puede verse excelente en móvil y aun así producir una impresión difícil de leer. La experiencia en papel requiere jerarquía, contraste, anchos razonables y control de páginas. Considera desde el diseño qué necesitará alguien que guarde el artículo o lo lea sin conexión. No asumas que ocultar todo salvo el texto principal es suficiente: enlaces, notas, etiquetas y fuentes también aportan contexto."
+        },
+        {
+          "t": "h2",
+          "x": "Organiza el contenido semánticamente"
+        },
+        {
+          "t": "p",
+          "x": "Usa títulos jerárquicos, párrafos breves, listas con estructura y tablas con encabezados. Conserva fecha, autor y referencias en la vista impresa cuando sean relevantes. No uses solo color para transmitir advertencias. El contenido con una jerarquía clara puede leerse mejor en papel y con tecnologías de asistencia."
+        },
+        {
+          "t": "h2",
+          "x": "Adapta la interfaz a papel"
+        },
+        {
+          "t": "p",
+          "x": "Oculta menús, ventanas emergentes, publicidad y controles interactivos que no tengan utilidad física. Mantén botones de acción solo si pueden convertirse en una instrucción útil. Ajusta el ancho al papel y conserva márgenes seguros. Las imágenes informativas deben seguir presentes, con pies y contraste suficientes."
+        },
+        {
+          "t": "h2",
+          "x": "Cuida tablas y páginas largas"
+        },
+        {
+          "t": "p",
+          "x": "Evita tablas más anchas que el papel y repite encabezados cuando sea posible. Mantén juntas las filas o secciones relacionadas, pero no impongas saltos rígidos que creen grandes espacios en blanco. Ofrece un resumen o formato alternativo para gráficos complejos. Prueba artículos con distinto volumen de texto."
+        },
+        {
+          "t": "h2",
+          "x": "Evalúa la salida real"
+        },
+        {
+          "t": "p",
+          "x": "Usa vista previa en varios navegadores y tamaños de página. Comprueba texto, enlaces, imágenes, códigos QR y avisos importantes. Un código QR debe permanecer nítido, tener zona libre y abrir un destino vigente; añade una etiqueta que indique su finalidad. Repite pruebas tras cambiar contenido o tema y escucha comentarios de lectores que imprimen."
+        },
+        {
+          "t": "cta",
+          "tool": "qr-code",
+          "x": "Crea un QR legible para la versión impresa y prueba el destino."
+        }
+      ]
+    },
+    {
+      "topic": "print-button-any-website",
+      "title": "Cómo añadir un botón de impresión o PDF a cualquier sitio web",
+      "slug": "print-button-any-website",
+      "tool": "html-to-pdf",
+      "description": "Diseña una acción clara y accesible y comprueba la vista de impresión en diferentes páginas.",
+      "metaDescription": "Añade un botón para imprimir o guardar PDF en una web con acción explícita, CSS adecuado y pruebas de accesibilidad.",
+      "faqs": [
+        {
+          "q": "¿El botón genera un archivo PDF automáticamente?",
+          "a": "Normalmente abre el diálogo del navegador; la opción de guardar depende del dispositivo."
+        },
+        {
+          "q": "¿Debe abrirse la impresión al cargar la página?",
+          "a": "No. El usuario debe iniciar la acción para evitar una experiencia inesperada."
+        },
+        {
+          "q": "¿Cómo excluyo menús de la impresión?",
+          "a": "Usa reglas CSS de impresión y comprueba que el contenido principal permanezca completo."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un botón de impresión puede ayudar en artículos, recetas, recibos o instrucciones que el usuario quiere conservar. En la mayoría de sitios, la acción abre el diálogo de impresión del navegador; desde allí la persona elige una impresora o guarda PDF si el sistema lo permite. Diseña una etiqueta que explique la acción y no prometas un PDF idéntico en todos los equipos. La salida depende del navegador y de los estilos de la página."
+        },
+        {
+          "t": "h2",
+          "x": "Coloca el botón con propósito"
+        },
+        {
+          "t": "p",
+          "x": "Ubícalo cerca del contenido y evita repetirlo en cada bloque si una acción basta. Usa un control accesible por teclado, con foco visible y un nombre que anuncie qué ocurrirá. No abras automáticamente el cuadro al entrar o al desplazarse. En móvil, comprueba tamaño y separación para evitar toques accidentales."
+        },
+        {
+          "t": "h2",
+          "x": "Prepara estilos de impresión"
+        },
+        {
+          "t": "p",
+          "x": "Oculta navegación, publicidad y controles que no se usan en papel, pero conserva el texto, las imágenes informativas, autoría y fuentes. Define ancho y márgenes adecuados, prevé tablas y saltos y mantén contraste en blanco y negro. Los estilos no deben ocultar alertas, condiciones o datos que cambien el sentido del contenido."
+        },
+        {
+          "t": "h2",
+          "x": "Ten en cuenta páginas dinámicas"
+        },
+        {
+          "t": "p",
+          "x": "Contenido que aparece al interactuar, anuncios diferidos o formularios pueden comportarse distinto en la vista de impresión. Espera a que el material autorizado haya cargado y prueba páginas largas y cortas. No uses el botón como una forma de evadir restricciones de acceso. Si la web ofrece exportación oficial, puede ser más completa."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba el resultado"
+        },
+        {
+          "t": "p",
+          "x": "Revisa vista previa en navegadores relevantes, papel A4 y Carta, teclado, lector de pantalla y móvil. Comprueba que se mantengan enlaces y texto seleccionable al guardar PDF. Si se imprime información privada, asegúrate de que el usuario puede controlar qué aparece. Mantén CSS de impresión junto al código del sitio y vuelve a probar tras actualizaciones."
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "Comprueba una página web de prueba antes de ofrecer la acción de impresión."
+        }
+      ]
+    },
+    {
+      "topic": "repurpose-pdf-for-accessible-publishing-formats",
+      "title": "Cómo reutilizar PDF en formatos de publicación accesibles",
+      "slug": "repurpose-pdf-for-accessible-publishing-formats",
+      "tool": "pdf-to-excel",
+      "description": "Evalúa texto, estructura y orden de lectura antes de convertir para otras plataformas.",
+      "metaDescription": "Reutiliza contenido PDF en Word, HTML o datos accesibles revisando estructura, orden de lectura, tablas e imágenes tras convertir.",
+      "faqs": [
+        {
+          "q": "¿Convertir a Word hace accesible el PDF?",
+          "a": "No automáticamente. Debes revisar estilos, orden, texto alternativo y navegación del archivo de salida."
+        },
+        {
+          "q": "¿Los PDF escaneados se pueden reutilizar?",
+          "a": "OCR puede reconocer texto, pero hace falta corregir errores y reconstruir la estructura."
+        },
+        {
+          "q": "¿Qué formato debo elegir?",
+          "a": "Depende del destino: edición, web, datos tabulares o lectura con tecnologías de asistencia."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Reutilizar un PDF en Word, HTML o una hoja de cálculo puede ampliar la forma en que se consulta su contenido, pero cambiar de formato no garantiza accesibilidad. El PDF puede tener texto como imagen, encabezados sin estructura, tablas complejas o un orden de lectura distinto al visual. Identifica el uso previsto y conserva una copia fuente para comparar. Si el documento es oficial, consulta los criterios del receptor."
+        },
+        {
+          "t": "h2",
+          "x": "Analiza texto y estructura"
+        },
+        {
+          "t": "p",
+          "x": "Comprueba si el texto se puede seleccionar, si hay títulos y si el lector sigue el orden correcto. Un escaneo requiere OCR, que puede confundir símbolos, cifras y acentos. Revisa tablas, columnas, notas y pies. No tomes la apariencia visual como prueba de que una tecnología de asistencia leerá el contenido correctamente."
+        },
+        {
+          "t": "h2",
+          "x": "Elige el formato de salida"
+        },
+        {
+          "t": "p",
+          "x": "Word puede facilitar la edición, HTML la publicación web y una hoja de cálculo el análisis de datos tabulares. Cada destino necesita estructura propia. Para una tabla, valida encabezados y valores; para web, usa títulos semánticos y enlaces descriptivos; para edición, aplica estilos en lugar de formato manual. Algunas funciones no se pueden reconstruir automáticamente."
+        },
+        {
+          "t": "h2",
+          "x": "Corrige y valida la salida"
+        },
+        {
+          "t": "p",
+          "x": "Compara páginas y datos importantes con el PDF original. Revisa orden de lectura, texto alternativo, idioma, encabezados, listas y contraste. Prueba teclado y lector de pantalla si está disponible. Elimina contenido duplicado o texto reconocido erróneamente. Guarda la versión fuente y registra las correcciones críticas."
+        },
+        {
+          "t": "h2",
+          "x": "Respeta privacidad y derechos"
+        },
+        {
+          "t": "p",
+          "x": "Confirma que puedes reproducir y modificar el material. Para datos sensibles, utiliza herramientas aprobadas y limita el acceso a los archivos. OCR o conversión no concede permiso de redistribución. Mantén la procedencia y comparte la versión adecuada para el público y las normas que apliquen."
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Convierte una tabla de prueba y valida encabezados y datos antes de reutilizarla."
+        }
+      ]
+    },
+    {
+      "topic": "qr-code-for-print",
+      "title": "Cómo crear un código QR que se escanee en papel",
+      "slug": "qr-code-for-print",
+      "tool": "qr-code",
+      "description": "Usa un destino estable, contraste alto, tamaño suficiente y pruebas sobre el material final.",
+      "metaDescription": "Crea códigos QR listos para imprimir con URL estable, tamaño según distancia, contraste claro y pruebas en el papel real.",
+      "faqs": [
+        {
+          "q": "¿Qué tamaño debe tener un código QR impreso?",
+          "a": "Depende de distancia y densidad; prueba a la escala y distancia reales de uso."
+        },
+        {
+          "q": "¿Puedo cambiar los colores del QR?",
+          "a": "Sí, pero conserva contraste fuerte y valida el resultado en varios teléfonos."
+        },
+        {
+          "q": "¿Debo dejar espacio blanco alrededor?",
+          "a": "Sí. La zona libre ayuda a la cámara a distinguir el código del diseño cercano."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un código QR impreso conecta una página de papel con una acción digital, como abrir instrucciones o registrar una asistencia. Para que funcione, el destino debe estar activo y el código debe ser legible por la cámara. Diseña para las condiciones reales: tamaño, distancia, material y luz. No te fíes solo de que el código se escanee desde la pantalla de diseño."
+        },
+        {
+          "t": "h2",
+          "x": "Elige un destino estable"
+        },
+        {
+          "t": "p",
+          "x": "Usa una URL que controles y mantén la página vigente mientras el impreso circule. Abre el enlace en un teléfono sin sesión iniciada y comprueba que sea cómodo en pantalla pequeña. Evita redirecciones que expiren o servicios que inserten publicidad. Si usas seguimiento, informa y aplica las reglas de privacidad correspondientes."
+        },
+        {
+          "t": "h2",
+          "x": "Diseña tamaño y contraste"
+        },
+        {
+          "t": "p",
+          "x": "La distancia de escaneo y la densidad de datos afectan el tamaño. Un código con URL larga puede ser más complejo y necesitar más espacio. Mantén módulos nítidos, proporción cuadrada y una zona libre alrededor. Usa contraste suficiente y evita reflejos en papel brillante. No tapes partes con logos sin probar."
+        },
+        {
+          "t": "h2",
+          "x": "Añade una instrucción comprensible"
+        },
+        {
+          "t": "p",
+          "x": "Incluye una etiqueta que explique qué se abrirá, por ejemplo, “Escanea para consultar el manual”. Ofrece una URL legible o alternativa cuando alguien no pueda escanear. No prometas una función que requiere iniciar sesión sin indicarlo. El destino debe corresponder al contexto del folleto o cartel."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba el impreso antes de producirlo"
+        },
+        {
+          "t": "p",
+          "x": "Imprime una muestra a tamaño real y escanéala con varios teléfonos desde la distancia prevista. Comprueba distintos ángulos y luz. Confirma que el enlace va a la página correcta y que el papel no corta la zona blanca. Si falla, simplifica URL, aumenta tamaño o ajusta contraste antes de imprimir en volumen."
+        },
+        {
+          "t": "cta",
+          "tool": "qr-code",
+          "x": "Genera un código y prueba una copia impresa en condiciones reales."
+        }
+      ]
+    },
+    {
+      "topic": "wifi-qr-code",
+      "title": "Cómo crear un código QR de Wi-Fi para invitados",
+      "slug": "wifi-qr-code",
+      "tool": "qr-code",
+      "description": "Comparte una red de invitados autorizada y protege el acceso al enrutador y a dispositivos internos.",
+      "metaDescription": "Crea un QR de Wi-Fi para invitados con datos correctos, red separada y prueba de conexión antes de imprimirlo.",
+      "faqs": [
+        {
+          "q": "¿Un QR de Wi-Fi muestra la contraseña?",
+          "a": "Puede contener datos para conectarse; trata el código como una credencial de acceso."
+        },
+        {
+          "q": "¿Debo usar la red principal?",
+          "a": "Usa una red de invitados separada cuando esté disponible y autorizada."
+        },
+        {
+          "q": "¿Cómo compruebo el código?",
+          "a": "Escanéalo con un dispositivo que no tenga la red guardada y confirma la conexión."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un QR de Wi-Fi permite que visitantes se conecten sin teclear una contraseña, pero también distribuye acceso a la red. Pide autorización al administrador y usa una red de invitados aislada si existe. No publiques un código que conecte a equipos internos, sistemas de pago o dispositivos administrativos. Si cambian las credenciales, las copias impresas anteriores deben retirarse."
+        },
+        {
+          "t": "h2",
+          "x": "Confirma el SSID y la seguridad"
+        },
+        {
+          "t": "p",
+          "x": "Escribe con cuidado el nombre de red, tipo de seguridad y contraseña. Los espacios, mayúsculas y símbolos importan. Activa la opción de red oculta solo si el administrador la configuró así. El formato QR puede almacenar los datos de conexión dentro del patrón, por eso no compartas el archivo original públicamente."
+        },
+        {
+          "t": "h2",
+          "x": "Protege la red de invitados"
+        },
+        {
+          "t": "p",
+          "x": "Configura límites adecuados para invitados y evita que accedan a dispositivos internos cuando la infraestructura lo permita. Sigue las reglas del lugar de trabajo, hotel o establecimiento. Ubica el cartel solo en zonas donde se permite el acceso y cambia credenciales si el código se difunde fuera del público previsto."
+        },
+        {
+          "t": "h2",
+          "x": "Diseña el cartel legible"
+        },
+        {
+          "t": "p",
+          "x": "Mantén el código grande, cuadrado y con contraste claro. Añade una etiqueta con el nombre de red si es apropiado y una instrucción para conectarse. Conserva una alternativa manual para personas que no pueden escanear. No incluyas la contraseña escrita en el cartel si no es necesario."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba antes de imprimir"
+        },
+        {
+          "t": "p",
+          "x": "Escanea una prueba impresa con un dispositivo que no recuerde la red. Verifica que se conecte al SSID correcto y que se apliquen las restricciones previstas. Prueba iOS y Android si ambos se usan. Guarda el archivo de impresión en un lugar restringido y elimina borradores con la clave real."
+        },
+        {
+          "t": "cta",
+          "tool": "qr-code",
+          "x": "Crea un QR solo para una red que tienes permiso de compartir y verifica la conexión."
+        }
+      ]
+    },
+    {
+      "topic": "qr-code-size-for-print",
+      "title": "Qué tamaño debe tener un QR: regla práctica según distancia",
+      "slug": "qr-code-size-for-print",
+      "tool": "qr-code",
+      "description": "Dimensiona según distancia, densidad y material y valida con una prueba impresa real.",
+      "metaDescription": "Determina el tamaño de un QR impreso según distancia de escaneo, complejidad, material y resultado probado en papel.",
+      "faqs": [
+        {
+          "q": "¿Existe un tamaño mínimo para cualquier QR?",
+          "a": "No. Distancia, contenido, cámara y calidad de impresión cambian el tamaño necesario."
+        },
+        {
+          "q": "¿Un QR más grande siempre escanea mejor?",
+          "a": "A menudo ayuda, pero también importan enfoque, contraste, zona libre y superficie."
+        },
+        {
+          "q": "¿Puedo probar el tamaño en pantalla?",
+          "a": "La pantalla no reproduce textura, reflejos ni escala del impreso; prueba el papel final."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "El tamaño ideal de un QR depende de la distancia a la que se escaneará, la cantidad de datos, la nitidez de impresión y la cámara. Un código de tarjeta personal se usa de cerca; un póster puede escanearse desde varios metros. Las fórmulas orientativas ayudan a diseñar, pero una prueba física es más fiable. Mantén el destino estable y utiliza el tamaño más pequeño que haya superado pruebas reales."
+        },
+        {
+          "t": "h2",
+          "x": "Calcula desde la distancia de uso"
+        },
+        {
+          "t": "p",
+          "x": "Observa dónde estará el impreso y a qué distancia se acercará el teléfono. Aumenta tamaño si se escanea desde lejos, con poca luz o sobre una superficie curva. Coloca el código a una altura y orientación cómodas. No lo pongas detrás de vidrio reflectante sin validar el brillo."
+        },
+        {
+          "t": "h2",
+          "x": "Considera cantidad de datos"
+        },
+        {
+          "t": "p",
+          "x": "Un enlace largo produce un patrón más denso, que puede ser más difícil de escanear cuando se imprime pequeño. Usa una URL clara y estable, no incluyas datos innecesarios. El nivel de corrección de errores puede aumentar complejidad, así que no añadas elementos decorativos sin probar el resultado."
+        },
+        {
+          "t": "h2",
+          "x": "Mantén zona libre y contraste"
+        },
+        {
+          "t": "p",
+          "x": "Deja espacio blanco alrededor para que el lector detecte el límite. Conserva un contraste fuerte entre módulos y fondo y no deformes la imagen. Papel brillante, tintas pálidas, textura o impresión de baja calidad pueden reducir la lectura. Mantén el código lejos de pliegues y líneas de corte."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba a escala final"
+        },
+        {
+          "t": "p",
+          "x": "Imprime una muestra en el material previsto y escanéala desde varias distancias y teléfonos. Confirma que abre el destino correcto y carga con rapidez. Si falla, aumenta dimensiones, simplifica URL o mejora el contraste. Vuelve a probar tras ajustar el diseño; no publiques una tirada grande sin validar."
+        },
+        {
+          "t": "cta",
+          "tool": "qr-code",
+          "x": "Imprime una muestra y mide el escaneo desde la distancia real."
+        }
+      ]
+    },
+    {
+      "topic": "qr-code-on-business-card",
+      "title": "Cómo poner un código QR en una tarjeta o folleto",
+      "slug": "qr-code-on-business-card",
+      "tool": "qr-code",
+      "description": "Enlaza a una página móvil útil, añade una llamada clara y prueba el tamaño de impresión.",
+      "metaDescription": "Añade un QR a una tarjeta de visita o folleto con destino móvil, etiqueta clara, contraste y prueba en papel real.",
+      "faqs": [
+        {
+          "q": "¿Qué debe abrir el QR de una tarjeta?",
+          "a": "Elige un destino útil, como datos de contacto, portfolio o página de producto que controles."
+        },
+        {
+          "q": "¿Necesito escribir “escanea aquí”?",
+          "a": "Una etiqueta que explique el resultado ayuda a que las personas decidan si escanear."
+        },
+        {
+          "q": "¿Puedo poner el logo dentro del QR?",
+          "a": "Puede afectar la lectura; mantén los módulos despejados y prueba todos los dispositivos objetivo."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un QR en una tarjeta o folleto puede abrir un perfil, guardar un contacto, mostrar un menú o dirigir a una página de campaña. Elige un destino concreto y útil en teléfono. No envíes a una página genérica que no responda a la expectativa creada por el material impreso. Mantén la URL durante la vida útil de las tarjetas y verifica que el contenido siga actualizado."
+        },
+        {
+          "t": "h2",
+          "x": "Elige una página de destino"
+        },
+        {
+          "t": "p",
+          "x": "Comprueba que cargue rápido y no requiera un inicio de sesión inesperado. La página debe funcionar en pantallas pequeñas y ofrecer la acción prometida. Si el QR apunta a un formulario, informa qué datos se solicitan. Usa un dominio que controles y evita redirecciones temporales o servicios que puedan dejar de funcionar."
+        },
+        {
+          "t": "h2",
+          "x": "Ajusta diseño y jerarquía"
+        },
+        {
+          "t": "p",
+          "x": "Ubica el QR sin competir con nombre, teléfono y dirección. Añade texto como “Escanea para guardar el contacto” y conserva un espacio libre alrededor. El tamaño debe ajustarse a la distancia de lectura y al material. No estires ni recortes el patrón para que encaje con un espacio estrecho."
+        },
+        {
+          "t": "h2",
+          "x": "Considera privacidad y mantenimiento"
+        },
+        {
+          "t": "p",
+          "x": "Si el QR incluye seguimiento, revisa las obligaciones de privacidad y minimiza datos. Controla el destino, elimina campañas vencidas o redirige a información vigente. Evita enlaces intermediarios sin garantías. Una tarjeta puede permanecer circulando durante años, así que define qué hará el enlace si la oferta termina."
+        },
+        {
+          "t": "h2",
+          "x": "Haz una prueba de imprenta"
+        },
+        {
+          "t": "p",
+          "x": "Imprime al tamaño final y escanea con varios teléfonos desde una distancia normal. Comprueba corte, color, contraste y carga de destino. Prueba también bajo luz de oficina y exterior. Si alguien debe introducir la URL manualmente, facilita una dirección corta como alternativa. Corrige y repite la prueba antes de producir el lote."
+        },
+        {
+          "t": "cta",
+          "tool": "qr-code",
+          "x": "Crea el código y escanéalo desde una tarjeta de prueba antes de imprimir muchas."
+        }
+      ]
+    },
+    {
+      "topic": "make-wifi-qr-code-printable-handout",
+      "title": "Cómo crear un QR de Wi-Fi y añadirlo a un PDF imprimible",
+      "slug": "make-wifi-qr-code-printable-handout",
+      "tool": "qr-code",
+      "description": "Incluye instrucciones simples en un documento y protege el archivo que almacena credenciales de red.",
+      "metaDescription": "Crea un QR de Wi-Fi y colócalo en un PDF imprimible con instrucciones, contraste y prueba de acceso seguro. con acceso controlado",
+      "faqs": [
+        {
+          "q": "¿Puedo incluir el QR de Wi-Fi en un PDF?",
+          "a": "Sí, inserta una imagen nítida y conserva espacio libre para que pueda escanearse."
+        },
+        {
+          "q": "¿Un PDF con QR protege la contraseña?",
+          "a": "No. Quien pueda ver el código puede intentar conectarse a la red asociada."
+        },
+        {
+          "q": "¿Qué hago cuando cambia la clave?",
+          "a": "Retira los materiales antiguos, actualiza el QR y vuelve a probar el documento nuevo."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Un PDF con QR de Wi-Fi puede funcionar como tarjeta de acceso o guía de bienvenida. El documento impreso es fácil de distribuir, así que trata el código como una credencial. Confirma con el administrador que la red se puede compartir y usa una red de invitados aislada cuando sea posible. No coloques el QR de una red interna en un espacio público."
+        },
+        {
+          "t": "h2",
+          "x": "Crea el código con datos autorizados"
+        },
+        {
+          "t": "p",
+          "x": "Verifica SSID, tipo de cifrado y contraseña antes de generar. El patrón puede contener datos de conexión, por eso no subas el archivo QR a un sitio desconocido. No intentes modificar la red ni generar acceso sin autorización. Si cambian las credenciales, los carteles anteriores dejan de ser válidos y deben reemplazarse."
+        },
+        {
+          "t": "h2",
+          "x": "Diseña una hoja legible"
+        },
+        {
+          "t": "p",
+          "x": "Inserta una imagen de alta calidad y conserva proporción cuadrada. Deja zona libre, fondo claro y contraste suficiente. Añade título, nombre de red si procede e instrucciones breves. Ofrece un método alternativo a quien no pueda escanear, pero evita imprimir la contraseña junto al QR sin necesidad."
+        },
+        {
+          "t": "h2",
+          "x": "Controla cómo se distribuye el PDF"
+        },
+        {
+          "t": "p",
+          "x": "Guarda el documento en una ubicación restringida y comparte solo con el personal que prepara impresiones. No lo publiques en una web abierta si el acceso está destinado a un grupo pequeño. Retira versiones antiguas del almacenamiento compartido y limita copias. Usa la política de seguridad del sitio o negocio."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba el archivo y el papel"
+        },
+        {
+          "t": "p",
+          "x": "Abre el PDF y verifica dimensiones, nitidez, márgenes y que no se haya estirado el código. Imprime una muestra y escanéala con un dispositivo que no tenga guardada la red. Confirma que conecta al SSID esperado y que los permisos de invitado funcionan. Destruye las muestras con credenciales si ya no se necesitan."
+        },
+        {
+          "t": "cta",
+          "tool": "qr-code",
+          "x": "Genera un QR autorizado y valida el PDF impreso antes de compartirlo."
+        }
+      ]
+    }
+  ]
+}
