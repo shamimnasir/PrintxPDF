@@ -1,5 +1,6 @@
 import esPosts from './localized-posts/es.json'
 import esBatch1 from './localized-posts/es-chatgpt-1.json'
+import esBatch2 from './localized-posts/es-chatgpt-2.json'
 import ptPosts from './localized-posts/pt-BR.json'
 import hiPosts from './localized-posts/hi.json'
 import hiBatch1 from './localized-posts/hi-chatgpt-1.json'
@@ -50,7 +51,7 @@ import { LANGUAGE_PACKS as basePacks, guidePath, normalizeLocalizedGuides } from
 import type { LanguagePack, LocalizedGuide } from './localizedGuides'
 export { guidePath } from './localizedGuides'
 
-const translations: { locale: string; guides: LocalizedGuide[] }[] = [esPosts, esBatch1, ptPosts, { ...hiPosts, guides: [...hiPosts.guides, ...hiBatch1.guides, ...hiBatch2.guides, ...hiBatch3.guides, ...hiBatch4.guides, ...hiBatch5.guides, ...hiBatch6.guides, ...hiBatch7.guides, ...hiBatch8.guides] }, { ...arPosts, guides: [...arPosts.guides, ...arBatch1.guides, ...arBatch2.guides, ...arBatch3.guides, ...arBatch4.guides, ...arBatch5.guides, ...arBatch6.guides, ...arBatch7.guides, ...arBatch8.guides, ...arBatch9.guides, ...arBatch10.guides, ...arBatch11.guides] }, { ...bnPosts, guides: [...bnPosts.guides, ...bnBatch1.guides, ...bnBatch2.guides, ...bnBatch3.guides, ...bnBatch4.guides, ...bnBatch5.guides, ...bnBatch6.guides, ...bnBatch7.guides, ...bnBatch8.guides, ...bnBatch9.guides, ...bnBatch10.guides, ...bnBatch11.guides] }, { ...viPosts, guides: [...viPosts.guides, ...viBatch1.guides, ...viBatch2.guides, ...viBatch3.guides, ...viBatch4.guides, ...viBatch5.guides, ...viBatch6.guides, ...viBatch7.guides, ...viBatch8.guides, ...viBatch9.guides, ...viBatch10.guides] }, zhPosts]
+const translations: { locale: string; guides: LocalizedGuide[] }[] = [esPosts, esBatch1, esBatch2, ptPosts, { ...hiPosts, guides: [...hiPosts.guides, ...hiBatch1.guides, ...hiBatch2.guides, ...hiBatch3.guides, ...hiBatch4.guides, ...hiBatch5.guides, ...hiBatch6.guides, ...hiBatch7.guides, ...hiBatch8.guides] }, { ...arPosts, guides: [...arPosts.guides, ...arBatch1.guides, ...arBatch2.guides, ...arBatch3.guides, ...arBatch4.guides, ...arBatch5.guides, ...arBatch6.guides, ...arBatch7.guides, ...arBatch8.guides, ...arBatch9.guides, ...arBatch10.guides, ...arBatch11.guides] }, { ...bnPosts, guides: [...bnPosts.guides, ...bnBatch1.guides, ...bnBatch2.guides, ...bnBatch3.guides, ...bnBatch4.guides, ...bnBatch5.guides, ...bnBatch6.guides, ...bnBatch7.guides, ...bnBatch8.guides, ...bnBatch9.guides, ...bnBatch10.guides, ...bnBatch11.guides] }, { ...viPosts, guides: [...viPosts.guides, ...viBatch1.guides, ...viBatch2.guides, ...viBatch3.guides, ...viBatch4.guides, ...viBatch5.guides, ...viBatch6.guides, ...viBatch7.guides, ...viBatch8.guides, ...viBatch9.guides, ...viBatch10.guides] }, zhPosts]
   .map((entry) => ({ ...entry, guides: normalizeLocalizedGuides(entry.guides as (Partial<LocalizedGuide> & { description?: string })[]) }))
 
 export const LANGUAGE_PACKS: LanguagePack[] = basePacks.map((pack) => {
