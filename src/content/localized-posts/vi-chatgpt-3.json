@@ -1,0 +1,255 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "reduce-pdf-file-size-for-email",
+      "title": "Giảm dung lượng PDF để gửi email",
+      "slug": "reduce-pdf-file-size-for-email",
+      "tool": "compress-pdf",
+      "description": "Kiểm tra nguyên nhân làm tệp lớn, nén trên bản sao và xác nhận chữ cùng hình vẫn rõ trước khi đính kèm.",
+      "metaDescription": "Giảm dung lượng PDF để gửi email bằng cách tối ưu ảnh hoặc chia tệp. Kiểm tra chất lượng và giới hạn của người nhận trước khi gửi.",
+      "faqs": [
+        { "q": "Làm sao giảm PDF xuống dưới giới hạn email?", "a": "Thử nén ảnh, loại bỏ dữ liệu không cần thiết hoặc chia tài liệu theo chương, rồi kiểm tra giới hạn của cả hai bên." },
+        { "q": "Nén có làm chữ PDF mờ không?", "a": "Nén ảnh có thể ảnh hưởng chữ nhỏ trong bản quét. So sánh trang mẫu ở kích thước đọc bình thường." },
+        { "q": "Nên gửi nhiều phần hay liên kết?", "a": "Chọn cách theo chính sách bảo mật, giới hạn thư và cách người nhận cần sử dụng tài liệu." }
+      ],
+      "body": [
+        { "t": "p", "x": "Nếu PDF quá lớn để đính kèm, trước tiên hãy xem giới hạn thư hiện tại của nhà cung cấp và tổ chức nhận. Đừng chỉ dựa vào con số trên mạng vì giới hạn có thể thay đổi theo tài khoản. Nội dung mã hóa cũng làm thư lớn hơn một chút. Mục tiêu là giảm dung lượng nhưng vẫn giữ được chữ, hình, dấu và thông tin cần thiết." },
+        { "t": "h2", "x": "Tìm phần chiếm nhiều dung lượng" },
+        { "t": "p", "x": "Một tài liệu có nhiều trang văn bản thường nhỏ hơn một bộ ảnh quét màu. Ảnh chụp độ phân giải cao, nhiều lớp hình, tệp đính kèm nhúng hoặc phông chữ có thể làm tệp tăng đáng kể. Nếu PDF được tạo từ máy quét, kiểm tra xem nó có lớp chữ OCR hay chỉ chứa ảnh. Không chuyển toàn bộ văn bản thành ảnh chỉ để giảm kích thước." },
+        { "t": "h2", "x": "Nén theo cách sử dụng" },
+        { "t": "p", "x": "Tài liệu chỉ xem trên màn hình thường không cần ảnh có độ phân giải như bản in khổ lớn. Chọn mức nén phù hợp, xuất bản sao mới và so sánh hai tệp. Phóng to chữ nhỏ, biểu đồ và con dấu để chắc chắn chúng còn rõ. Nén mất dữ liệu có thể tạo vết quanh ký tự và làm mã QR khó quét, vì vậy đừng chỉ xét dung lượng cuối." },
+        { "t": "h2", "x": "Chia theo phần khi cần" },
+        { "t": "p", "x": "Nếu tài liệu có chương độc lập, chia tại ranh giới chương thay vì cắt giữa bảng hoặc biểu mẫu. Đặt tên có thứ tự, ghi phạm vi trang và báo tổng số phần cho người nhận. Nếu họ cần xem toàn bộ, một liên kết riêng tư có thể thuận tiện hơn nhiều tệp đính kèm. Chỉ dùng dịch vụ lưu trữ được chính sách của bạn cho phép." },
+        { "t": "h2", "x": "Xác nhận trước khi gửi" },
+        { "t": "p", "x": "Mở lại PDF sau khi nén hoặc chia, kiểm tra số trang, chữ tìm kiếm được, liên kết, biểu mẫu và trang cuối. Đối chiếu địa chỉ người nhận, tên tệp và dung lượng từng thư. Giữ bản gốc ở vị trí an toàn. Nếu hồ sơ có chữ ký số hoặc yêu cầu lưu trữ chính thức, việc nén có thể làm thay đổi trạng thái hoặc thuộc tính, nên hỏi bên nhận trước khi phát hành." },
+        { "t": "cta", "tool": "compress-pdf", "x": "Nén bản sao PDF và xác nhận chất lượng trước khi đính kèm." }
+      ]
+    },
+    {
+      "topic": "compress-pdf-without-losing-quality",
+      "title": "Nén PDF mà vẫn giữ chất lượng dễ đọc",
+      "slug": "compress-pdf-without-losing-quality",
+      "tool": "compress-pdf",
+      "description": "Chọn mức tối ưu dựa trên ảnh và mục đích dùng, rồi so sánh các trang mẫu thay vì chỉ nhìn dung lượng.",
+      "metaDescription": "Giảm dung lượng PDF mà hạn chế mất chất lượng. Tìm hiểu ảnh, độ phân giải và cách kiểm tra chữ, biểu đồ cùng bản in.",
+      "faqs": [
+        { "q": "Có thể nén PDF mà không giảm chất lượng không?", "a": "Một số tối ưu không làm mất dữ liệu, nhưng giảm độ phân giải hoặc dùng JPG chất lượng thấp có thể làm hình ảnh thay đổi." },
+        { "q": "Nên chọn PNG hay JPG trong PDF?", "a": "PNG giữ cạnh chữ và sơ đồ sắc nét; JPG thường nhỏ hơn với ảnh chụp nhưng có thể làm mờ chi tiết." },
+        { "q": "Làm sao so sánh chất lượng sau nén?", "a": "Mở hai phiên bản cạnh nhau, phóng to cùng một vùng và in thử trang có chữ nhỏ hoặc hình quan trọng." }
+      ],
+      "body": [
+        { "t": "p", "x": "Không có một mức nén phù hợp cho mọi PDF. Tệp văn bản thuần có thể gần như không giảm thêm, trong khi tài liệu ảnh quét có thể nhỏ hơn nhiều nếu giảm độ phân giải. Trước khi chỉnh, xác định người đọc sẽ xem trên điện thoại, máy tính hay bản in. Giữ một bản nguồn không sửa để có thể quay lại nếu đầu ra bị mờ." },
+        { "t": "h2", "x": "Phân biệt nén không mất dữ liệu và có mất dữ liệu" },
+        { "t": "p", "x": "Một số phương pháp loại bỏ dữ liệu dư thừa mà vẫn giữ nội dung hình ảnh chính xác. Phương pháp khác giảm số điểm ảnh hoặc thay ảnh bằng định dạng nén mất dữ liệu để tiết kiệm nhiều hơn. Tệp nhỏ hơn không tự động đồng nghĩa tốt hơn. Hãy kiểm tra công cụ đang áp dụng loại nén nào và nó có thể thay đổi lớp chữ, phông hoặc metadata không." },
+        { "t": "h2", "x": "Chọn hình ảnh theo nội dung" },
+        { "t": "p", "x": "Ảnh chụp thường chịu được nén JPG ở mức vừa phải, nhưng chữ, đường kẻ, logo và sơ đồ có thể xuất hiện viền mờ. PNG phù hợp khi cần giữ cạnh rõ, dù dung lượng có thể lớn. Với ảnh quét văn bản, thử giảm màu hoặc độ phân giải một cách thận trọng. Không giảm đến mức dấu tiếng Việt, số tài khoản hoặc mã vạch khó đọc." },
+        { "t": "h2", "x": "So sánh trên các trang đại diện" },
+        { "t": "p", "x": "Chọn ít nhất ba trang: một trang văn bản nhỏ, một trang có ảnh và một trang nhiều bảng hoặc chữ ký. Mở bản gốc và bản nén ở cùng mức phóng đại, kiểm tra nét chữ và vùng tối. Nếu tệp sẽ được in, in một trang thử trên cùng loại giấy và máy. Bản xem trên màn hình có thể che giấu lỗi xuất hiện khi in." },
+        { "t": "h2", "x": "Kiểm tra chức năng và lưu phiên bản" },
+        { "t": "p", "x": "Sau khi nén, xác nhận có thể tìm kiếm và chọn văn bản nếu trước đó tài liệu hỗ trợ. Kiểm tra liên kết, dấu trang, biểu mẫu, chú thích và chữ ký số. Một số quy trình làm phẳng lớp hoặc loại bỏ nội dung tương tác. Đặt tên tệp phân biệt, ghi ngày và dung lượng mới, rồi giữ nguồn cho đến khi bản tối ưu được chấp nhận." },
+        { "t": "cta", "tool": "compress-pdf", "x": "Thử mức nén vừa phải rồi kiểm tra trang chữ, ảnh và bảng." }
+      ]
+    },
+    {
+      "topic": "why-is-my-pdf-so-large",
+      "title": "Vì sao tệp PDF của tôi quá lớn?",
+      "slug": "why-is-my-pdf-so-large",
+      "tool": "compress-pdf",
+      "description": "Tìm ảnh quét, hình lớn, phông nhúng hoặc dữ liệu phụ đang làm tăng dung lượng trước khi tối ưu.",
+      "metaDescription": "Tìm hiểu tám nguyên nhân PDF lớn: ảnh quét, độ phân giải cao, hình lặp, phông, lớp và tệp nhúng, cùng cách kiểm tra.",
+      "faqs": [
+        { "q": "PDF nhiều trang có luôn lớn không?", "a": "Không. Văn bản có thể rất gọn; vài ảnh độ phân giải cao đôi khi lớn hơn cả tài liệu dài." },
+        { "q": "Ảnh quét có làm PDF tăng dung lượng không?", "a": "Có. Ảnh màu nhiều điểm ảnh thường cần nhiều dữ liệu, đặc biệt khi quét ở độ phân giải cao." },
+        { "q": "Xóa metadata có giảm nhiều dung lượng không?", "a": "Thông thường không đáng kể so với ảnh, nhưng có thể hữu ích cho quyền riêng tư hoặc chuẩn hóa hồ sơ." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một PDF 5 trang có thể lớn hơn báo cáo 100 trang nếu nó chứa ảnh chụp lớn. Số trang không phải yếu tố duy nhất quyết định kích thước. Tệp có thể chứa ảnh màu, phông nhúng, nhiều phiên bản của hình, lớp chú thích, biểu mẫu hoặc tài liệu đính kèm. Hãy tìm nguyên nhân trước khi nén để tránh làm giảm chất lượng không cần thiết." },
+        { "t": "h2", "x": "Ảnh quét và độ phân giải" },
+        { "t": "p", "x": "Máy quét ở độ phân giải cao tạo nhiều điểm ảnh hơn cho mỗi trang. Quét màu cũng thường lớn hơn thang xám hoặc trắng đen. Bản lưu trữ, bản đọc trên màn hình và bản in có thể cần cài đặt khác nhau. Kiểm tra độ rõ của chữ và dấu trước khi hạ độ phân giải. Nếu bản nguồn đã mờ, tăng DPI khi xuất không khôi phục được chi tiết." },
+        { "t": "h2", "x": "Ảnh và đồ họa chưa được tối ưu" },
+        { "t": "p", "x": "Ảnh chụp có thể được nhúng nguyên kích thước máy ảnh dù hiển thị rất nhỏ trên trang. Hình PNG có nền trong suốt, ảnh trùng hoặc đồ họa không được tái sử dụng cũng có thể chiếm chỗ. Công cụ tối ưu đôi khi giảm kích thước bằng cách thay đổi ảnh, nhưng cần kiểm tra biểu đồ, logo và mã QR sau đó." },
+        { "t": "h2", "x": "Phông, lớp và tệp đính kèm" },
+        { "t": "p", "x": "PDF có thể nhúng toàn bộ phông chữ để hiển thị nhất quán, giữ nhiều phiên bản nội dung hoặc chứa tệp đính kèm và biểu mẫu. Lớp chú thích, dữ liệu chỉnh sửa và cấu trúc tài liệu cũng làm tăng dung lượng. Không xóa các thành phần này nếu người nhận cần chúng. Hãy đọc thuộc tính tài liệu hoặc dùng công cụ phân tích PDF đáng tin cậy để xác định phần lớn." },
+        { "t": "h2", "x": "Chọn cách giảm phù hợp" },
+        { "t": "p", "x": "Thử nén ảnh, tối ưu lưu trữ, bỏ tệp nhúng không cần hoặc tách chương nếu nội dung độc lập. Sau mỗi lần xuất, so sánh kích thước và đọc bản mới ở mức phóng đại thực tế. Kiểm tra lớp chữ, liên kết, biểu mẫu và dấu trang. Nếu PDF là hồ sơ đã ký, pháp lý hoặc cần lưu trữ, tham khảo quy định trước khi làm phẳng hay thay đổi cấu trúc." },
+        { "t": "cta", "tool": "compress-pdf", "x": "Xác định phần chiếm dung lượng trước khi chọn mức nén." }
+      ]
+    },
+    {
+      "topic": "compress-pdf-for-email-outlook-gmail",
+      "title": "Gửi PDF qua Gmail hoặc Outlook khi tệp quá lớn",
+      "slug": "compress-pdf-for-email-outlook-gmail",
+      "tool": "compress-pdf",
+      "description": "Kiểm tra giới hạn tài khoản và người nhận, rồi chọn nén, chia phần hoặc liên kết riêng tư thay vì đoán dung lượng.",
+      "metaDescription": "Tệp PDF vượt giới hạn Gmail hoặc Outlook? Kiểm tra hướng dẫn hiện tại, nén hoặc chia tệp và xác nhận quyền chia sẻ an toàn.",
+      "faqs": [
+        { "q": "Gmail cho phép đính kèm tệp lớn đến mức nào?", "a": "Giới hạn có thể thay đổi theo loại tài khoản và thời điểm. Xem trợ giúp chính thức của Gmail trước khi gửi." },
+        { "q": "Outlook xử lý tệp quá lớn như thế nào?", "a": "Giới hạn phụ thuộc cấu hình, ứng dụng và tổ chức. Tùy chọn liên kết đám mây cũng cần quyền truy cập phù hợp." },
+        { "q": "Có nên chia PDF thành nhiều email không?", "a": "Chỉ khi các phần có ý nghĩa và người nhận có thể ghép đúng. Đặt tên tuần tự và báo tổng số phần." }
+      ],
+      "body": [
+        { "t": "p", "x": "Khi Gmail hoặc Outlook từ chối một PDF lớn, hãy kiểm tra hướng dẫn hiện tại của tài khoản, ứng dụng và tổ chức. Giới hạn gửi của người gửi không đảm bảo người nhận cũng nhận được tệp cùng kích thước. Mã hóa và nội dung thư làm tăng dung lượng, vì vậy cần chừa khoảng an toàn. Bạn có thể nén PDF, chia theo chương hoặc gửi liên kết có kiểm soát." },
+        { "t": "h2", "x": "Xác nhận giới hạn thực tế" },
+        { "t": "p", "x": "Tìm trang trợ giúp chính thức của dịch vụ thay vì dùng một con số cũ từ bài viết không rõ ngày. Tài khoản cơ quan có thể áp dụng quy tắc riêng và người nhận có thể dùng nhà cung cấp khác. Nếu thông báo lỗi không nói rõ giới hạn, hỏi quản trị viên hoặc người nhận trước khi thử đi thử lại. Đừng gửi tài liệu nhạy cảm tới địa chỉ thay thế chưa được xác minh." },
+        { "t": "h2", "x": "Nén khi ảnh chiếm nhiều dung lượng" },
+        { "t": "p", "x": "Nếu tài liệu có ảnh quét hoặc ảnh chụp lớn, thử mức nén vừa phải trên bản sao. Mở PDF sau khi xuất và kiểm tra chữ nhỏ, dấu, bảng, ảnh và chữ ký. Không hạ chất lượng chỉ để đạt một con số nếu kết quả khó đọc. Khi văn bản là phần chính, nén mạnh có thể giảm rất ít mà vẫn làm hình xấu hơn." },
+        { "t": "h2", "x": "Chia tài liệu theo nội dung" },
+        { "t": "p", "x": "Chia thành chương hoặc nhóm trang có thể đọc riêng. Không cắt giữa bảng, biểu mẫu hoặc chữ ký. Đặt tên như 01-tren-03 và ghi khoảng trang trên tên hoặc thư đi kèm. Mở từng tệp để kiểm tra trước sau, rồi xác nhận người nhận nhận đủ các phần. Nhiều email tạo nguy cơ thiếu tệp hoặc đảo thứ tự." },
+        { "t": "h2", "x": "Dùng liên kết chia sẻ an toàn" },
+        { "t": "p", "x": "Liên kết lưu trữ có thể thuận tiện hơn, nhưng hãy giới hạn quyền vào đúng người nhận, kiểm tra thời hạn và tránh truy cập công khai. Chỉ tải tài liệu lên dịch vụ được chính sách tổ chức cho phép. Nếu tài liệu cần mật khẩu, gửi thông tin truy cập qua kênh riêng theo quy định. Trước khi gửi, xác nhận người nhận, phiên bản tệp và quyền mở liên kết." },
+        { "t": "cta", "tool": "compress-pdf", "x": "Kiểm tra giới hạn hiện tại rồi chọn nén, chia hoặc chia sẻ có kiểm soát." }
+      ]
+    },
+    {
+      "topic": "pdf-to-word",
+      "title": "Chuyển PDF sang Word và giữ bố cục tốt nhất có thể",
+      "slug": "pdf-to-word",
+      "tool": "pdf-to-word",
+      "description": "Xác định PDF có văn bản thật hay ảnh quét, chuyển đổi rồi sửa lại bố cục trong tài liệu Word.",
+      "metaDescription": "Chuyển PDF sang Word, hiểu vì sao cột, bảng và hình có thể lệch, và kiểm tra giới hạn trước khi dùng tệp DOCX.",
+      "faqs": [
+        { "q": "PDF chuyển sang Word có giữ nguyên định dạng không?", "a": "Không phải lúc nào. Cột, bảng, phông và khoảng cách có thể thay đổi vì PDF ưu tiên hiển thị chứ không lưu cấu trúc chỉnh sửa như Word." },
+        { "q": "PDF quét có chuyển đổi được không?", "a": "Cần OCR để nhận dạng chữ trước; hãy kiểm tra lại con số, tên riêng và dấu tiếng Việt." },
+        { "q": "Công cụ PDF sang Word giữ ảnh không?", "a": "Tùy công cụ. Một số chỉ chuyển lớp văn bản, vì vậy hãy xác nhận phạm vi và cách xử lý trước khi chọn tệp." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chuyển PDF sang Word giúp chỉnh sửa văn bản, nhưng không đảm bảo bản DOCX giống hoàn toàn trang gốc. PDF lưu cách đặt nội dung trên trang; Word cần cấu trúc đoạn, cột, bảng và hình để người dùng sửa. Trước khi bắt đầu, xác định tài liệu có lớp chữ thật hay chỉ là ảnh quét, và giữ bản PDF nguồn để đối chiếu." },
+        { "t": "h2", "x": "Kiểm tra loại PDF" },
+        { "t": "p", "x": "Thử chọn một câu trong trình đọc PDF. Nếu không thể chọn, tài liệu có thể là ảnh và cần OCR. OCR hữu ích nhưng dễ nhầm chữ có dấu, số, dấu câu và bố cục cột. Với biểu mẫu hoặc bảng phức tạp, chọn công cụ có thể giữ cấu trúc phù hợp thay vì chỉ lấy văn bản tuần tự." },
+        { "t": "h2", "x": "Chuyển đổi trên bản sao" },
+        { "t": "p", "x": "Dùng công cụ PDF sang Word, chọn tệp và xem lại thông tin về quyền riêng tư cùng giới hạn. Công cụ khác nhau về nơi xử lý và tính năng, nên đừng giả định mọi tài liệu đều ở lại trên thiết bị. Tạo DOCX mới, đặt tên rõ ràng và không ghi đè nguồn. Nếu tài liệu chứa thông tin cá nhân, chỉ dùng dịch vụ đã được phép." },
+        { "t": "h2", "x": "Sửa bố cục sau khi xuất" },
+        { "t": "p", "x": "Mở DOCX trong trình soạn thảo và kiểm tra thứ tự đoạn, ngắt trang, tiêu đề, cột, bảng, hình và chú thích. Bảng có thể biến thành các dòng rời hoặc cột có thể nhập chung. So sánh từng trang với PDF, nhất là trang có công thức, chữ ký hoặc ký tự đặc biệt. Kiểm tra tên, ngày và số tiền vì chúng cần chính xác." },
+        { "t": "h2", "x": "Xác nhận tệp Word dùng được" },
+        { "t": "p", "x": "Lưu DOCX, đóng và mở lại để đảm bảo không bị hỏng. Kiểm tra phông thay thế trên thiết bị khác và xem người nhận có thể sửa nội dung như mong đợi không. Chuyển đổi không tạo ra cấu trúc ngữ nghĩa hoàn hảo từ PDF. Với hồ sơ chính thức, giữ bản PDF đã phê duyệt và ghi rõ DOCX là bản làm việc." },
+        { "t": "cta", "tool": "pdf-to-word", "x": "Chuyển PDF sang DOCX rồi so sánh từng trang với bản nguồn." }
+      ]
+    },
+    {
+      "topic": "pdf-to-excel",
+      "title": "Chuyển bảng PDF sang Excel để phân tích",
+      "slug": "pdf-to-excel",
+      "tool": "pdf-to-excel",
+      "description": "Xác nhận PDF chứa bảng có cấu trúc, chuyển đổi trên bản sao và kiểm tra cột, hàng cùng giá trị số.",
+      "metaDescription": "Đưa bảng từ PDF sang Excel, xử lý đường kẻ và ô gộp, rồi xác minh dữ liệu trước khi dùng công thức hoặc báo cáo.",
+      "faqs": [
+        { "q": "Có thể chuyển mọi bảng PDF sang Excel không?", "a": "Không. Bảng ảnh quét, bố cục phức tạp hoặc chỉ dùng đường kẻ trang trí có thể không được nhận dạng thành ô đúng." },
+        { "q": "PDF quét cần OCR trước không?", "a": "Thường cần nhận dạng chữ trước, sau đó vẫn phải kiểm tra hàng, cột, dấu thập phân và ký hiệu." },
+        { "q": "Dữ liệu Excel xuất ra có chính xác không?", "a": "Không nên giả định. So sánh tổng, đơn vị và một số dòng với PDF gốc trước khi tính toán." }
+      ],
+      "body": [
+        { "t": "p", "x": "Bảng trong PDF thường được thiết kế để đọc và in, không phải để phân tích dữ liệu. Chuyển sang Excel có thể tiết kiệm thời gian nhập tay, nhưng kết quả phụ thuộc cách bảng được tạo. Trước khi sử dụng, xác định tiêu đề cột, đơn vị, số trang và tổng kiểm tra để biết dữ liệu có được đặt đúng ô hay không." },
+        { "t": "h2", "x": "Bảng văn bản và ảnh quét" },
+        { "t": "p", "x": "Nếu có thể chọn từng giá trị trong PDF, công cụ có cơ hội đọc được văn bản. Nếu không, cần OCR và kết quả có thể nhầm số 0 với chữ O, dấu phẩy thập phân hoặc dấu âm. Đường kẻ dọc và ngang đôi khi chỉ là nét vẽ, không phải ranh giới ô. Đừng dựa vào hình thức mà nghĩ dữ liệu đã được cấu trúc." },
+        { "t": "h2", "x": "Chuyển một bản sao" },
+        { "t": "p", "x": "Tạo bảng tính mới từ PDF và xem trước số hàng, cột cùng trang được xử lý. Công cụ có thể đặt mỗi trang thành một sheet hoặc chuyển văn bản thành các dòng. Đọc thông tin giới hạn và quyền riêng tư; tài liệu tài chính hoặc cá nhân chỉ nên qua dịch vụ được phê duyệt. Giữ PDF gốc để đối chiếu." },
+        { "t": "h2", "x": "Sửa cấu trúc bảng" },
+        { "t": "p", "x": "Trong Excel, xác nhận tiêu đề, ô gộp, hàng tổng và đơn vị. Một hàng dài có thể bị tách thành nhiều hàng; số âm hoặc phần trăm có thể mất định dạng. Chuẩn hóa kiểu số sau khi chắc chắn dấu thập phân đúng với vùng ngôn ngữ. Không xóa cột chỉ vì chúng trông trống trước khi kiểm tra khoảng trắng hoặc dữ liệu ẩn." },
+        { "t": "h2", "x": "Đối chiếu trước khi phân tích" },
+        { "t": "p", "x": "So sánh các hàng đầu, giữa và cuối với PDF. Cộng thử cột tiền hoặc số lượng rồi đối chiếu tổng in trên nguồn. Kiểm tra ngày, mã sản phẩm và số có số 0 ở đầu. Lưu phiên bản đã sửa riêng, ghi nguồn dữ liệu và không xem bảng chuyển đổi là bản ghi có thẩm quyền cho đến khi người có trách nhiệm xác minh." },
+        { "t": "cta", "tool": "pdf-to-excel", "x": "Chuyển bảng, rồi đối chiếu các giá trị và tổng với PDF gốc." }
+      ]
+    },
+    {
+      "topic": "pdf-to-text",
+      "title": "Trích toàn bộ văn bản từ PDF",
+      "slug": "pdf-to-text",
+      "tool": "pdf-to-text",
+      "description": "Lấy lớp văn bản có sẵn hoặc chạy OCR cho bản quét, sau đó kiểm tra thứ tự đọc và ký tự.",
+      "metaDescription": "Trích chữ từ PDF thành văn bản để tìm kiếm hoặc tái sử dụng. Phân biệt PDF có lớp chữ với ảnh quét và kiểm tra OCR.",
+      "faqs": [
+        { "q": "Vì sao sao chép từ PDF ra chữ bị lộn xộn?", "a": "PDF có thể lưu vị trí ký tự theo cách không phản ánh thứ tự đọc, đặc biệt với cột hoặc bảng." },
+        { "q": "PDF ảnh quét có trích văn bản được không?", "a": "Cần OCR để nhận dạng chữ từ ảnh. Kết quả phải được kiểm tra lại." },
+        { "q": "Trích văn bản có giữ hình và bảng không?", "a": "Tệp văn bản thuần thường không giữ bố cục, ảnh hoặc cấu trúc bảng như PDF." }
+      ],
+      "body": [
+        { "t": "p", "x": "Trích văn bản từ PDF hữu ích khi cần tìm từ, lập chỉ mục, trích dẫn hoặc tái sử dụng một đoạn. Kết quả phụ thuộc việc tệp có lớp chữ chọn được hay chỉ là ảnh. PDF cũng có thể đặt ký tự ở tọa độ riêng thay vì lưu thành dòng đọc liên tục, nên văn bản xuất ra đôi khi có thứ tự khác với mắt nhìn trên trang." },
+        { "t": "h2", "x": "Kiểm tra lớp chữ" },
+        { "t": "p", "x": "Mở PDF và thử chọn một câu. Nếu không thể chọn, có thể tài liệu được quét thành ảnh và cần OCR. Nếu có thể chọn nhưng sao chép bị đảo cột hoặc mất dấu, cấu trúc hoặc phông mã hóa có thể gây vấn đề. Lưu bản gốc và thử trên một trang trước khi trích tài liệu dài." },
+        { "t": "h2", "x": "Trích nội dung thành tệp văn bản" },
+        { "t": "p", "x": "Chọn PDF trong công cụ, xem phạm vi trang và xuất tệp văn bản. Đọc thông tin về nơi xử lý và giới hạn trước khi chọn hồ sơ nhạy cảm. Tệp văn bản thuần thường bỏ hình, bảng, lề, màu và vị trí. Nếu cần giữ bố cục, chọn định dạng tài liệu khác hoặc giữ PDF bên cạnh văn bản trích." },
+        { "t": "h2", "x": "Dùng OCR cho ảnh quét" },
+        { "t": "p", "x": "OCR nhận dạng ký tự trong ảnh và tạo lớp văn bản có thể tìm kiếm. Độ chính xác phụ thuộc độ nét, độ nghiêng, ngôn ngữ và chất lượng giấy. Sau khi chạy, kiểm tra tên riêng, ngày, số tiền, dấu tiếng Việt, công thức và ký hiệu. Với tài liệu nhiều cột, so sánh từng phần để chắc chắn các dòng không bị trộn." },
+        { "t": "h2", "x": "Xác minh trước khi sử dụng" },
+        { "t": "p", "x": "Tìm một số cụm ở đầu, giữa và cuối tài liệu rồi so với trang nguồn. Đừng trích dẫn hoặc tính toán chỉ từ OCR chưa kiểm chứng. Xóa dữ liệu cá nhân khỏi bản văn bản nếu không cần, đặt tên tệp có nguồn và ngày, và giữ PDF gốc. Với hồ sơ cần chứng minh nguyên trạng, bản trích chữ không thay thế tài liệu gốc." },
+        { "t": "cta", "tool": "pdf-to-text", "x": "Trích văn bản rồi đối chiếu với trang gốc, nhất là số liệu và tên riêng." }
+      ]
+    },
+    {
+      "topic": "pdf-to-powerpoint",
+      "title": "Chuyển PDF thành các trang chiếu PowerPoint",
+      "slug": "pdf-to-powerpoint",
+      "tool": "pdf-to-ppt",
+      "description": "Chuyển từng trang PDF thành slide, hiểu giới hạn chỉnh sửa và kiểm tra bố cục trên máy tính trình chiếu.",
+      "metaDescription": "Chuyển PDF sang PowerPoint để trình chiếu hoặc chỉnh sửa. Mỗi trang có thể thành một slide; kiểm tra chữ, hình và quyền riêng tư.",
+      "faqs": [
+        { "q": "PDF chuyển sang PowerPoint có chỉnh sửa được không?", "a": "Tùy phương thức. Có đầu ra mỗi trang là ảnh, có đầu ra dùng các đối tượng riêng; hãy thử một trang." },
+        { "q": "Hoạt ảnh có được tạo lại từ PDF không?", "a": "Không. PDF thường chỉ giữ trạng thái trang tĩnh, không chứa các bước hoạt ảnh gốc." },
+        { "q": "Tệp chuyển đổi có được xử lý ở máy chủ không?", "a": "Công cụ này gửi tệp lên máy chủ để chuyển đổi rồi xóa sau khi xử lý theo thông tin sản phẩm; không dùng tệp nhạy cảm nếu chính sách không cho phép." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chuyển PDF thành PowerPoint có thể giúp trình chiếu tài liệu hoặc chỉnh sửa lại nội dung, nhưng cách chuyển đổi ảnh hưởng lớn đến khả năng sửa. Một số công cụ đặt nguyên trang PDF thành hình trên slide; cách khác cố tạo đối tượng văn bản và hình riêng. Cả hai không tự khôi phục hoạt ảnh, ghi chú diễn giả hoặc cấu trúc slide ban đầu." },
+        { "t": "h2", "x": "Chọn mục đích trước khi chuyển" },
+        { "t": "p", "x": "Nếu chỉ cần trình bày nguyên trạng, một slide cho mỗi trang có thể giữ diện mạo nhưng chữ trong ảnh không sửa riêng được. Nếu muốn biên tập, kiểm tra xem công cụ có nhận dạng chữ, hình và bố cục thành đối tượng hay không. Đầu ra tự động có thể sai cột, phông, khoảng cách và màu, nên cần thời gian chỉnh sửa sau đó." },
+        { "t": "h2", "x": "Kiểm tra cách xử lý tệp" },
+        { "t": "p", "x": "Công cụ PDF sang PowerPoint của PrintxPDF gửi tệp qua kết nối bảo mật đến máy chủ, chuyển đổi và xóa tệp sau khi xử lý theo mô tả sản phẩm. Đây không phải xử lý hoàn toàn trên thiết bị. Nếu tài liệu chứa thông tin cá nhân, công việc bí mật hoặc dữ liệu khách hàng, chỉ tiếp tục khi chính sách tổ chức cho phép và bạn hiểu điều khoản hiện hành." },
+        { "t": "h2", "x": "Chuyển và sửa slide" },
+        { "t": "p", "x": "Tải bản PDF phù hợp, chọn chuyển đổi và lưu tệp PPTX mới. Mở trong PowerPoint hoặc ứng dụng tương thích. Xem khổ slide, hướng trang, font thay thế, ký tự tiếng Việt và ảnh. Nếu mỗi trang là ảnh, có thể thêm chú thích phía trên nhưng nội dung nguồn không sửa được. Nếu có đối tượng văn bản, kiểm tra thứ tự đọc và các nhóm bị ghép." },
+        { "t": "h2", "x": "Thử trình chiếu và bảo quản nguồn" },
+        { "t": "p", "x": "Chạy thử toàn bộ slide trên màn hình hoặc máy chiếu dự kiến. Kiểm tra chữ nhỏ, tương phản, cắt lề và trang bị xoay. So sánh với PDF ở những trang có bảng và biểu đồ. Giữ PDF gốc làm nguồn đáng tin cậy, đặt tên phiên bản PPTX rõ ràng và xem xét quyền tác giả trước khi phân phối nội dung chuyển đổi." },
+        { "t": "cta", "tool": "pdf-to-ppt", "x": "Chuyển PDF, mở thử PPTX và kiểm tra từng slide trước khi trình chiếu." }
+      ]
+    },
+    {
+      "topic": "pdf-to-jpg-pages",
+      "title": "Chuyển một số trang PDF sang JPG",
+      "slug": "pdf-to-jpg-pages",
+      "tool": "pdf-to-jpg",
+      "description": "Chọn trang cần xuất, đặt độ phân giải cho màn hình hoặc in và xác nhận tên cùng thứ tự ảnh.",
+      "metaDescription": "Chuyển trang PDF được chọn sang JPG hoặc PNG. Chọn DPI theo mục đích, so sánh chất lượng và tránh ảnh quá lớn.",
+      "faqs": [
+        { "q": "Có thể chuyển riêng một trang PDF sang JPG không?", "a": "Có. Chọn số trang hoặc khoảng trang trước khi xuất nếu công cụ hỗ trợ." },
+        { "q": "Nên chọn JPG hay PNG?", "a": "JPG thường nhỏ hơn cho ảnh chụp; PNG phù hợp với chữ, đường nét và biểu đồ cần cạnh sắc." },
+        { "q": "DPI nào phù hợp để in?", "a": "300 DPI thường dùng cho bản in rõ ở kích thước thực, nhưng chất lượng còn phụ thuộc nguồn và kích thước trang." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chuyển một số trang PDF sang ảnh hữu ích khi cần đưa biểu đồ vào slide, gửi một trang qua tin nhắn hoặc đăng hình minh họa. Hãy chọn rõ trang nào cần xuất và mục đích sử dụng trước khi đặt độ phân giải. Ảnh JPG có thể nhỏ hơn, nhưng nén mất dữ liệu đôi khi làm cạnh chữ mờ. PNG thường giữ đường nét rõ hơn." },
+        { "t": "h2", "x": "Chọn trang và độ phân giải" },
+        { "t": "p", "x": "Dựa vào số thứ tự trong trình xem, không chỉ số in trên tài liệu, rồi chọn một trang hoặc một phạm vi. Màn hình thường cần độ phân giải thấp hơn in. Với bản in, 300 DPI là điểm tham khảo phổ biến, nhưng phóng lớn không tạo thêm chi tiết nếu PDF nguồn có ảnh mờ. Kiểm tra kích thước pixel và dung lượng dự kiến trước khi xuất toàn bộ." },
+        { "t": "h2", "x": "Chọn định dạng theo nội dung" },
+        { "t": "p", "x": "JPG phù hợp hơn với ảnh chụp có nhiều sắc độ và có thể tạo tệp nhỏ. PNG phù hợp với trang nhiều văn bản, sơ đồ, logo hoặc đường kẻ vì không làm mờ cạnh theo cùng cách. Ảnh JPG không hỗ trợ nền trong suốt. Nếu định gửi qua email, thử một trang đại diện rồi kiểm tra kích thước và độ đọc." },
+        { "t": "h2", "x": "Xuất ảnh và xác nhận thứ tự" },
+        { "t": "p", "x": "Chọn PDF, định dạng và trang cần chuyển, sau đó lưu ảnh đầu ra. Nhiều trang thường được đặt tên theo số trang hoặc đóng gói thành ZIP. Mở từng ảnh, phóng to chữ nhỏ và xác nhận không bị xoay hay cắt. Nếu tên file không giữ thứ tự, đổi tên chúng bằng số có cùng độ dài để dễ sắp xếp." },
+        { "t": "h2", "x": "Hiểu giới hạn của ảnh" },
+        { "t": "p", "x": "Ảnh trang không còn văn bản có thể chọn hoặc liên kết hoạt động như PDF. Nếu cần tìm kiếm hoặc sao chép, giữ PDF hoặc dùng OCR trên ảnh sau khi xuất. Cân nhắc dữ liệu cá nhân trong biểu đồ hay chân trang trước khi chia sẻ công khai. Lưu ảnh trong thư mục có tên nguồn và ngày để tránh nhầm với phiên bản khác." },
+        { "t": "cta", "tool": "pdf-to-jpg", "x": "Chọn đúng trang, xuất ảnh và kiểm tra chất lượng ở kích thước sử dụng." }
+      ]
+    },
+    {
+      "topic": "word-to-pdf",
+      "title": "Chuyển Word sang PDF mà vẫn giữ phông và bố cục",
+      "slug": "word-to-pdf",
+      "tool": "word-to-pdf",
+      "description": "Kiểm tra khổ giấy, phông, hình và ngắt trang trong tài liệu Word trước khi xuất PDF.",
+      "metaDescription": "Chuyển DOCX sang PDF để chia sẻ bố cục ổn định hơn. Kiểm tra phông, liên kết, hình và trang trước khi gửi.",
+      "faqs": [
+        { "q": "PDF có giữ nguyên trang Word trên mọi máy không?", "a": "Thường ổn định hơn DOCX, nhưng phông nhúng, vùng in và cách xuất vẫn có thể ảnh hưởng kết quả." },
+        { "q": "Nên xuất PDF từ Word hay dùng công cụ chuyển đổi?", "a": "Chức năng xuất chính thức thường giữ nhiều định dạng Word hơn; công cụ khác có thể hữu ích nếu không có ứng dụng." },
+        { "q": "Làm sao kiểm tra phông bị thay thế?", "a": "Mở PDF trên thiết bị khác và kiểm tra các trang có ký tự đặc biệt, bảng hoặc kiểu chữ riêng." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chuyển tài liệu Word sang PDF giúp người nhận xem bố cục ổn định hơn và giảm nguy cơ vô tình sửa nội dung. Tuy vậy, PDF đầu ra vẫn phụ thuộc khổ giấy, phông, lề, hình và cách ngắt trang của tài liệu. Trước khi xuất, lưu bản DOCX và kiểm tra các trang quan trọng ở chế độ xem in." },
+        { "t": "h2", "x": "Kiểm tra tài liệu Word trước" },
+        { "t": "p", "x": "Xác nhận khổ giấy A4 hoặc Letter, lề, hướng trang và vùng đầu chân trang. Tìm dòng bị đẩy sang trang riêng, tiêu đề nằm cuối trang hoặc bảng bị chia bất hợp lý. Kiểm tra phông tiếng Việt, ký hiệu, công thức và hình. Nếu tài liệu dùng phông không phổ biến, hãy xác nhận quyền sử dụng và khả năng nhúng phông." },
+        { "t": "h2", "x": "Xuất PDF từ ứng dụng hoặc công cụ" },
+        { "t": "p", "x": "Nếu có Word hoặc trình soạn thảo tương thích, dùng chức năng Xuất hoặc Lưu thành PDF để giữ kiểu định dạng. Khi dùng công cụ chuyển đổi, xem tài liệu về giới hạn file, nơi xử lý và quyền riêng tư. Chọn bản DOCX cần xuất, tạo tệp riêng và không ghi đè nguồn. Với hồ sơ nhạy cảm, chỉ dùng phần mềm được tổ chức chấp thuận." },
+        { "t": "h2", "x": "Xác nhận bố cục và văn bản" },
+        { "t": "p", "x": "Mở PDF mới, xem từng trang và phóng to các bảng, hình, tiêu đề cùng chú thích. Thử tìm một từ có dấu để xác nhận văn bản tiếng Việt được mã hóa đúng. Bấm thử liên kết quan trọng và kiểm tra số trang. Đảm bảo không có bình luận nội bộ hoặc nội dung theo dõi sửa đổi cần loại bỏ trước khi chia sẻ." },
+        { "t": "h2", "x": "Lưu đúng phiên bản" },
+        { "t": "p", "x": "Đặt tên PDF rõ ràng với phiên bản hoặc ngày, rồi so sánh với DOCX trước khi gửi. PDF thích hợp cho đọc và in, nhưng không thay thế tài liệu gốc khi người nhận cần chỉnh sửa. Lưu cả hai theo chính sách của bạn và kiểm tra dung lượng, quyền truy cập, thông tin cá nhân ở metadata. Nếu đầu ra sẽ được in, in thử một trang đại diện." },
+        { "t": "cta", "tool": "word-to-pdf", "x": "Xuất PDF rồi mở lại để kiểm tra phông, trang và liên kết." }
+      ]
+    }
+  ]
+}
