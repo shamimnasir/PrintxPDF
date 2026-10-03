@@ -1,0 +1,255 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "annotate-pdf-without-changing-original-text",
+      "title": "Chú thích PDF mà không sửa văn bản gốc",
+      "slug": "annotate-pdf-without-changing-original-text",
+      "tool": "edit-pdf",
+      "description": "Thêm nhận xét trên một lớp riêng, giữ tệp nguồn và kiểm tra bản chú thích trước khi chia sẻ.",
+      "metaDescription": "Thêm ghi chú, đánh dấu và nhận xét lên PDF mà không viết lại văn bản gốc; giữ bản sao và kiểm tra lớp chú thích khi xuất.",
+      "faqs": [
+        { "q": "Chú thích có làm thay đổi văn bản PDF gốc không?", "a": "Nhiều công cụ thêm lớp chú thích riêng, nhưng hãy kiểm tra cách lưu của công cụ cụ thể." },
+        { "q": "Người khác có thể sửa hoặc xóa chú thích không?", "a": "Có thể, tùy cách chú thích được lưu. Làm phẳng tệp có thể hạn chế sửa đổi nhưng không bảo đảm bảo mật." },
+        { "q": "Chú thích có phải là redaction không?", "a": "Không. Đánh dấu hoặc phủ lên chữ không xóa dữ liệu gốc khỏi tệp." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chú thích PDF giúp thêm nhận xét, đánh dấu, mũi tên hoặc chữ ký mà không cần biên tập lại nội dung nguồn. Nhiều trình sửa lưu các thao tác này như lớp phủ độc lập, nhờ đó văn bản bên dưới có thể vẫn được chọn và tìm kiếm. Cách này phù hợp khi duyệt bản nháp hoặc học tập, nhưng không tương đương sửa chữ gốc. Giữ bản PDF chưa chỉnh sửa để đối chiếu và kiểm tra cách công cụ xuất chú thích." },
+        { "t": "h2", "x": "Chọn loại chú thích" },
+        { "t": "p", "x": "Dùng ghi chú cho phản hồi dài, đánh dấu cho đoạn cần chú ý và mũi tên để chỉ vị trí cụ thể. Viết ngắn gọn, dùng màu có ý nghĩa nhất quán và tránh che chữ. Nếu người nhận cần phản hồi, đặt câu hỏi cụ thể và thêm số trang để dễ trao đổi. Với tài liệu có nhiều người cộng tác, thống nhất quy ước màu hoặc tên người nhận xét." },
+        { "t": "h2", "x": "Giữ văn bản nguồn nguyên vẹn" },
+        { "t": "p", "x": "Làm việc trên một bản sao và không thay thế tệp gốc. Sau khi lưu, thử chọn, tìm kiếm hoặc sao chép văn bản nền để xác nhận nội dung vẫn giữ nguyên. Cách xử lý chú thích khác nhau giữa công cụ; một số có thể làm phẳng vào trang. Nếu cần biên tập câu chữ ban đầu, mở tệp nguồn thay vì che chữ cũ rồi đặt chữ mới." },
+        { "t": "h2", "x": "Kiểm tra bản xuất" },
+        { "t": "p", "x": "Mở tệp xuất trong trình đọc khác và xem mọi trang có đánh dấu. Kiểm tra phông chữ, vị trí ghi chú và khả năng in. Xác nhận tệp không thiếu lớp hoặc hiển thị chú thích sai thứ tự. Nếu người nhận cần tiếp tục chỉnh sửa, giữ chú thích có thể chỉnh sửa; nếu cần bản trình bày cố định, làm phẳng theo yêu cầu nhưng lưu bản làm việc riêng." },
+        { "t": "h2", "x": "Bảo mật và chia sẻ" },
+        { "t": "p", "x": "Chú thích có thể tiết lộ tên người dùng, thời gian hoặc nội dung trao đổi. Kiểm tra metadata và danh sách chú thích trước khi gửi ra ngoài. Không che thông tin bí mật bằng hình hoặc nét đánh dấu; dùng redaction thật và xác minh dữ liệu đã bị xóa. Chọn kênh chia sẻ phù hợp với mức nhạy cảm của tài liệu." },
+        { "t": "cta", "tool": "edit-pdf", "x": "Thêm chú thích vào bản sao và kiểm tra văn bản nguồn vẫn nguyên vẹn." }
+      ]
+    },
+    {
+      "topic": "convert-powerpoint-to-pdf",
+      "title": "Chuyển bản trình bày PowerPoint sang PDF",
+      "slug": "convert-powerpoint-to-pdf",
+      "tool": "ppt-to-pdf",
+      "description": "Xuất slide cùng kích thước trang phù hợp, rồi kiểm tra font, ảnh và liên kết.",
+      "metaDescription": "Chuyển PowerPoint thành PDF để chia sẻ hoặc in, kiểm tra font chữ, hiệu ứng, ghi chú và kích thước slide trước khi gửi.",
+      "faqs": [
+        { "q": "PDF có giữ hiệu ứng chuyển động trong PowerPoint không?", "a": "Không. PDF thường lưu các trang tĩnh, không giữ hoạt ảnh hoặc chuyển cảnh tương tác." },
+        { "q": "Có thể đưa ghi chú diễn giả vào PDF không?", "a": "Tùy tùy chọn xuất; kiểm tra bố cục ghi chú trước khi phát hành vì chúng có thể chứa nội dung riêng." },
+        { "q": "Vì sao font trong PDF khác bản trình bày?", "a": "Font có thể không được nhúng hoặc không tương thích; kiểm tra font được phép nhúng và mở lại PDF." }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF giúp người nhận xem slide với bố cục ổn định hơn và dễ in, nhưng không giữ đầy đủ tính tương tác của PowerPoint. Hoạt ảnh, video, chuyển cảnh và một số liên kết có thể không hoạt động như trong bài trình bày. Trước khi xuất, quyết định có cần ghi chú diễn giả, nhiều slide trên một trang hoặc kích thước giấy khác hay không. Luôn mở PDF sau chuyển đổi để rà soát từng trang." },
+        { "t": "h2", "x": "Chuẩn bị tệp PowerPoint" },
+        { "t": "p", "x": "Kiểm tra kích thước slide, font, hình ảnh và các thành phần bị tràn. Xóa bản nháp hoặc ghi chú nội bộ không dành cho người nhận. Nếu có video hay hoạt ảnh quan trọng, cân nhắc gửi kèm bản trình bày hoặc đường dẫn đến nội dung tương tác theo chính sách chia sẻ. Giữ bản nguồn để chỉnh sửa sau này." },
+        { "t": "h2", "x": "Chọn cách xuất" },
+        { "t": "p", "x": "Dùng chức năng xuất hoặc lưu PDF của ứng dụng PowerPoint nếu có, rồi chọn phạm vi slide, chất lượng và bố cục. Nếu dùng công cụ chuyển đổi khác, xác nhận nơi xử lý tệp và chính sách dữ liệu vì bản trình bày có thể chứa nội dung chưa công bố. Tùy chọn handout nhiều slide tiết kiệm giấy nhưng làm chữ nhỏ hơn; thử xem người nhận có thể đọc." },
+        { "t": "h2", "x": "Kiểm tra trang sau chuyển đổi" },
+        { "t": "p", "x": "Đối chiếu slide đầu, cuối, trang có biểu đồ và trang nhiều cột. Kiểm tra font thay thế, ảnh bị mờ, màu, liên kết và ghi chú. Mở PDF trên thiết bị khác nếu tài liệu sẽ được trình chiếu hoặc in ở nơi khác. Đảm bảo số slide, tiêu đề và thứ tự đúng. Nếu bố cục thay đổi, sửa tệp nguồn rồi xuất lại thay vì chỉnh chắp vá trong PDF." },
+        { "t": "h2", "x": "Chia sẻ và in có trách nhiệm" },
+        { "t": "p", "x": "Chỉ chia sẻ PDF với người được phép xem và chọn kênh phù hợp. Nếu cần in, kiểm tra khổ giấy, hướng trang và lượng mực. Không coi PDF là bảo đảm chống sao chép hoặc thay đổi. Khi cần chữ ký hay bản phát hành chính thức, dùng quy trình phê duyệt và quản lý phiên bản của tổ chức." },
+        { "t": "cta", "tool": "ppt-to-pdf", "x": "Chuyển bản sao slide thành PDF rồi soát lại từng trang." }
+      ]
+    },
+    {
+      "topic": "convert-pdf-to-powerpoint",
+      "title": "Chuyển PDF trở lại thành bản trình bày có thể biên tập",
+      "slug": "convert-pdf-to-powerpoint",
+      "tool": "pdf-to-ppt",
+      "description": "Hiểu giới hạn tái tạo bố cục, kiểm tra OCR và soát từng slide sau chuyển đổi.",
+      "metaDescription": "Chuyển PDF sang PowerPoint khi cần tái sử dụng nội dung, nhưng kiểm tra font, ảnh, bảng và bố cục vì kết quả không luôn giống bản gốc.",
+      "faqs": [
+        { "q": "Chuyển PDF sang PowerPoint có khôi phục tệp gốc không?", "a": "Thường không. Công cụ chỉ suy đoán slide từ trang PDF và có thể làm mất cấu trúc ban đầu." },
+        { "q": "PDF quét có chuyển thành chữ được không?", "a": "Có thể cần OCR trước, nhưng cần kiểm tra lỗi nhận dạng, nhất là số và ký hiệu." },
+        { "q": "Có giữ được hoạt ảnh không?", "a": "Thông thường không, vì PDF thường không chứa dữ liệu chuyển động của bản trình bày gốc." }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF được thiết kế để giữ trang hiển thị, không nhất thiết lưu cấu trúc slide, lớp, ghi chú hay hoạt ảnh của bản PowerPoint ban đầu. Khi chuyển ngược, phần mềm phải suy đoán vùng chữ, hình và bố cục. Kết quả có thể hữu ích để tái sử dụng nội dung, nhưng hiếm khi khôi phục chính xác tệp nguồn. Nếu có thể, xin bản gốc từ tác giả trước khi chuyển đổi." },
+        { "t": "h2", "x": "Kiểm tra loại PDF" },
+        { "t": "p", "x": "Thử chọn văn bản trong PDF. Nếu trang là ảnh quét, cần OCR để nhận dạng chữ và chất lượng phụ thuộc độ phân giải, ngôn ngữ cùng độ nghiêng. Kiểm tra quyền sử dụng tài liệu trước khi chuyển. Tệp có dữ liệu nhạy cảm chỉ nên đưa vào công cụ được tổ chức phê duyệt; xem dịch vụ xử lý tệp ở đâu và lưu trong bao lâu." },
+        { "t": "h2", "x": "Chọn phương pháp chuyển đổi" },
+        { "t": "p", "x": "Công cụ có thể tạo mỗi trang thành một hình nền, hoặc tách văn bản và đối tượng thành thành phần riêng. Cách đầu giữ giao diện gần hơn nhưng khó chỉnh sửa; cách sau cho phép sửa nhưng bố cục có thể lệch. Chọn theo mục đích. Nếu cần thuyết trình tương tác, có thể phải dựng lại slide thay vì cố biến mọi thành phần PDF thành đối tượng." },
+        { "t": "h2", "x": "Hiệu đính nội dung và trình bày" },
+        { "t": "p", "x": "Mở từng slide, đối chiếu với trang PDF và kiểm tra ngắt dòng, font, ký hiệu, biểu đồ cùng hình ảnh. Soát kỹ số liệu và tiêu đề; OCR có thể nhầm ký tự gần giống. Xác nhận tỷ lệ trang, lề và thứ tự. Thay hình nền không rõ bằng tệp nguồn chất lượng cao nếu được phép. Xóa thành phần trùng hoặc vùng chữ rỗng do công cụ tạo." },
+        { "t": "h2", "x": "Lưu phiên bản và quyền tác giả" },
+        { "t": "p", "x": "Lưu PDF ban đầu và bản chuyển đổi dưới tên riêng, ghi rõ ngày và công cụ nếu cần kiểm toán. Không trình bày nội dung chuyển đổi như thể đó là bản PowerPoint nguyên gốc đã được tác giả xác nhận. Tôn trọng quyền tác giả và điều khoản cấp phép khi tái sử dụng slide. Trước khi phát hành, kiểm tra toàn bộ bài trình bày trên thiết bị hoặc ứng dụng người nhận sẽ dùng." },
+        { "t": "cta", "tool": "pdf-to-ppt", "x": "Chuyển một bản PDF thử nghiệm rồi kiểm tra kỹ các slide tạo ra." }
+      ]
+    },
+    {
+      "topic": "print-slide-handouts",
+      "title": "In handout slide mà không lãng phí nhiều giấy",
+      "slug": "print-slide-handouts",
+      "tool": "ppt-to-pdf",
+      "description": "Chọn số slide mỗi trang, ghi chú và khoảng trống viết tay theo nhu cầu người học.",
+      "metaDescription": "In handout nhiều slide trên mỗi trang để tiết kiệm giấy, nhưng kiểm tra chữ, ghi chú và khoảng trống viết trước khi phát.",
+      "faqs": [
+        { "q": "Nên in bao nhiêu slide trên một trang?", "a": "Chọn số lượng người đọc vẫn xem được chữ; thử trước vì độ chi tiết của slide khác nhau." },
+        { "q": "Có nên in ghi chú diễn giả cho người học?", "a": "Chỉ khi cần và sau khi kiểm tra ghi chú không chứa nội dung riêng hoặc nội bộ." },
+        { "q": "Handout PDF có giữ được liên kết không?", "a": "Tùy cách xuất. Mở tệp và thử các liên kết quan trọng trước khi chia sẻ." }
+      ],
+      "body": [
+        { "t": "p", "x": "Handout nhiều slide trên một tờ có thể giảm giấy và giúp người học ghi chú cạnh nội dung. Nhưng càng nhiều slide trên mỗi trang thì chữ và biểu đồ càng nhỏ. Xác định người nhận sẽ đọc gần hay xa, có cần ghi chú và tài liệu dùng để tham khảo hay làm bài tập. Tạo bản thử trên khổ giấy thật trước khi in cả lớp." },
+        { "t": "h2", "x": "Chọn số slide phù hợp" },
+        { "t": "p", "x": "Hai hoặc ba slide trên một trang có thể giữ độ đọc tốt hơn cho nội dung nhiều chi tiết; bốn hoặc sáu thường phù hợp slide đơn giản và tài liệu xem gần. Đây chỉ là điểm bắt đầu, không phải quy tắc cố định. Kiểm tra chữ nhỏ nhất, công thức, biểu đồ và chú giải ở kích thước thật. Nếu phải phóng to liên tục, giảm số slide mỗi trang." },
+        { "t": "h2", "x": "Quyết định cách đặt ghi chú" },
+        { "t": "p", "x": "Bố cục có dòng ghi chú hoặc vùng trống phù hợp khi người học cần viết tay. Bản có ghi chú diễn giả chứa nội dung khác slide và có thể lộ lời nhắc nội bộ; kiểm tra kỹ trước khi dùng. Nếu bài có hoạt động, dành diện tích cho câu trả lời thay vì tối đa hóa số hình thu nhỏ." },
+        { "t": "h2", "x": "Xuất thành PDF để kiểm tra" },
+        { "t": "p", "x": "Xuất handout PDF từ ứng dụng trình bày hoặc tạo PDF trước rồi sắp trang theo nhu cầu. Kiểm tra thứ tự slide, lề, tiêu đề, liên kết và trang trắng. Hình nền tối có thể tiêu hao nhiều mực; tạo phiên bản trắng phù hợp nếu nó không làm mất thông tin. Xác nhận mọi slide cần thiết xuất hiện và nội dung không bị cắt ở mép." },
+        { "t": "h2", "x": "In thử và chọn hai mặt" },
+        { "t": "p", "x": "In một trang mẫu để đánh giá cỡ chữ, độ tương phản và vùng ghi chú. In hai mặt có thể giảm giấy, nhưng cần chọn cạnh lật đúng và bảo đảm nội dung mặt sau không xuyên quá nhiều. Cân nhắc nhu cầu tiếp cận: một số người cần bản chữ lớn hơn hoặc bản số có thể phóng to. Chuẩn bị định dạng thay thế nếu cần." },
+        { "t": "cta", "tool": "ppt-to-pdf", "x": "Tạo PDF handout thử và đánh giá kích thước chữ trước khi in." }
+      ]
+    },
+    {
+      "topic": "slides-that-print-well",
+      "title": "Thiết kế slide trình chiếu vẫn dễ đọc khi in",
+      "slug": "slides-that-print-well",
+      "tool": "ppt-to-pdf",
+      "description": "Dùng chữ rõ, tương phản và biểu đồ có nhãn để slide hoạt động cả trên màn chiếu lẫn giấy.",
+      "metaDescription": "Thiết kế slide dễ in với kiểu chữ rõ, độ tương phản, khoảng trắng và biểu đồ có nhãn; thử handout trước khi phát.",
+      "faqs": [
+        { "q": "Slide tối có nên in nguyên nền không?", "a": "Thường tốn mực và có thể khó đọc; tạo biến thể nền sáng nếu giữ được ý nghĩa." },
+        { "q": "Có nên dùng chữ nhỏ để chứa thêm nội dung?", "a": "Không. Chữ nhỏ khó đọc trên giấy và thường báo hiệu slide có quá nhiều thông tin." },
+        { "q": "Làm sao biểu đồ vẫn dễ hiểu khi in đen trắng?", "a": "Thêm nhãn trực tiếp, kiểu đường hoặc mẫu phân biệt, không dựa riêng vào màu sắc." }
+      ],
+      "body": [
+        { "t": "p", "x": "Slide thường được xem trên màn chiếu lớn, nhưng bản handout có thể được in trên giấy nhỏ. Cỡ chữ, màu và chi tiết nhìn tốt trên màn hình có thể mất đi khi thu nhỏ hoặc in đen trắng. Thiết kế tốt cho cả hai mục đích bằng cách trình bày một ý chính mỗi slide, dùng chữ dễ đọc và không phụ thuộc hoàn toàn vào màu sắc. In thử trước khi chốt bộ tài liệu." },
+        { "t": "h2", "x": "Giữ phân cấp và độ đọc" },
+        { "t": "p", "x": "Dùng tiêu đề ngắn mô tả thông điệp, phần thân đủ lớn và khoảng trắng để nội dung không chen chúc. Thay đoạn dài bằng ý chính, nhưng không bỏ điều kiện hoặc dữ liệu cần thiết. Kiểm tra khi thu nhỏ thành nhiều slide trên một trang; nếu chữ biến thành nét khó đọc, giảm số slide mỗi trang hoặc làm lại bố cục." },
+        { "t": "h2", "x": "Thiết kế màu cho giấy" },
+        { "t": "p", "x": "Nền trắng hoặc sáng thường tiết kiệm mực hơn vùng tối phủ kín. Giữ độ tương phản giữa chữ và nền, đồng thời kiểm tra bản thang xám. Với biểu đồ, thêm nhãn, kiểu đường hoặc hình dạng khác nhau để dữ liệu vẫn phân biệt được khi màu mất. Hình trang trí không cần thiết có thể bỏ khỏi phiên bản in." },
+        { "t": "h2", "x": "Tránh chi tiết bị cắt" },
+        { "t": "p", "x": "Đặt nội dung chính tránh mép, vì máy in và khổ giấy có vùng không in được. Kiểm tra hình nền, chú thích và chân trang trong bản xem trước. Dùng hình đủ độ phân giải nhưng tránh ảnh nền lớn làm nặng và tốn mực. Bảng nên có tiêu đề rõ; không thu nhỏ bảng rộng đến mức người đọc không thể theo dõi." },
+        { "t": "h2", "x": "Xuất và kiểm tra bản handout" },
+        { "t": "p", "x": "Xuất PDF, mở tệp và kiểm tra slide đầu, cuối, biểu đồ, hình ảnh và liên kết. In trang mẫu trên giấy thường để đánh giá tương phản và chữ nhỏ nhất. Thử bố cục ghi chú hoặc nhiều slide nếu phù hợp với mục đích. Cung cấp bản số có thể phóng to cho người không thuận tiện đọc bản in, đồng thời bảo đảm tài liệu số cũng có cấu trúc dễ tiếp cận." },
+        { "t": "cta", "tool": "ppt-to-pdf", "x": "Xuất slide thành PDF rồi xem bản in ở kích thước thật." }
+      ]
+    },
+    {
+      "topic": "convert-azw3-to-epub",
+      "title": "Chuyển AZW3 sang EPUB mà vẫn giữ sách dễ đọc",
+      "slug": "convert-azw3-to-epub",
+      "tool": "ebook-converter",
+      "description": "Kiểm tra quyền và DRM, giữ bản gốc, rồi soát mục lục cùng định dạng sau chuyển đổi.",
+      "metaDescription": "Chuyển AZW3 sang EPUB khi bạn có quyền và tệp không bị DRM cản trở, sau đó kiểm tra mục lục, chương và hình ảnh.",
+      "faqs": [
+        { "q": "Mọi tệp AZW3 đều chuyển được sang EPUB không?", "a": "Không. DRM, lỗi tệp hoặc tính năng đặc thù có thể ngăn chuyển đổi hoặc làm mất nội dung." },
+        { "q": "Chuyển đổi có giữ định dạng chính xác không?", "a": "Không đảm bảo. Font, bố cục cố định, chú thích và hình có thể thay đổi giữa định dạng." },
+        { "q": "Có nên tải sách lên công cụ chuyển đổi trực tuyến?", "a": "Chỉ khi bạn có quyền, dịch vụ đáng tin và cách xử lý tệp phù hợp với yêu cầu riêng tư." }
+      ],
+      "body": [
+        { "t": "p", "x": "AZW3 và EPUB là các định dạng ebook có cách tổ chức nội dung và hỗ trợ thiết bị khác nhau. Chuyển đổi có thể giúp đọc trên ứng dụng tương thích, nhưng không phải lúc nào cũng giữ bố cục, font, ghi chú hay mục lục. Trước hết xác nhận bạn có quyền chuyển tệp và nó không bị bảo vệ kỹ thuật hạn chế. Giữ bản gốc nguyên vẹn để có thể quay lại nếu kết quả lỗi." },
+        { "t": "h2", "x": "Kiểm tra tệp và quyền sử dụng" },
+        { "t": "p", "x": "Xác định nguồn ebook, giấy phép và điều khoản của nhà cung cấp. DRM có thể hạn chế chuyển đổi; không cố vượt qua cơ chế bảo vệ. Nếu tệp thuộc thư viện hoặc dịch vụ thuê bao, việc tải xuống không nhất thiết cấp quyền chuyển đổi hoặc phân phối. Dùng tệp không nhạy cảm và công cụ phù hợp với chính sách quyền riêng tư của bạn." },
+        { "t": "h2", "x": "Chọn cấu hình EPUB" },
+        { "t": "p", "x": "EPUB thường điều chỉnh văn bản theo màn hình, trong khi tài liệu có bố cục cố định có thể cần cách xử lý khác. Nếu công cụ cho chọn, giữ ngôn ngữ, tiêu đề, tên tác giả và cấu trúc chương. Không ép font hoặc lề quá mức nếu người đọc cần điều chỉnh cỡ chữ. Lưu tệp kết quả ở thư mục riêng và đặt tên phân biệt với nguồn." },
+        { "t": "h2", "x": "Kiểm tra mục lục và nội dung" },
+        { "t": "p", "x": "Mở EPUB trên trình đọc mục tiêu. Kiểm tra bìa, mục lục, liên kết trong sách, ký tự đặc biệt, chú thích và ảnh. So sánh một số đoạn ở đầu, giữa và cuối với AZW3. Xác nhận chương không bị đảo và đoạn văn không mất. Nếu nội dung có bảng hoặc công thức, kiểm tra kỹ vì tái bố trí có thể làm chúng khó đọc." },
+        { "t": "h2", "x": "Giữ sách cá nhân, không phát tán trái phép" },
+        { "t": "p", "x": "Tệp đã chuyển vẫn chịu điều khoản và quyền tác giả áp dụng cho ebook. Không chia sẻ công khai hoặc bán lại bản chuyển đổi nếu bạn không có quyền. Lưu bản gốc và EPUB riêng, sao lưu có kiểm soát, rồi xóa bản thử không cần thiết. Nếu chuyển đổi thất bại do bảo vệ kỹ thuật, hãy tìm phiên bản được nhà cung cấp hỗ trợ thay vì tìm cách phá khóa." },
+        { "t": "cta", "tool": "ebook-converter", "x": "Chuyển ebook bạn có quyền sử dụng rồi kiểm tra trên trình đọc mục tiêu." }
+      ]
+    },
+    {
+      "topic": "convert-epub-to-pdf",
+      "title": "Chuyển EPUB sang PDF và hiểu những gì có thể mất",
+      "slug": "convert-epub-to-pdf",
+      "tool": "epub-to-pdf",
+      "description": "Chọn khổ trang, kiểm tra nội dung tái bố trí và tôn trọng hạn chế bản quyền hoặc DRM.",
+      "metaDescription": "Chuyển EPUB thành PDF để in hoặc lưu, chọn khổ trang dễ đọc và kiểm tra chương, hình ảnh cùng ngắt trang sau xuất.",
+      "faqs": [
+        { "q": "PDF có thể giữ cách chữ tự co giãn của EPUB không?", "a": "Không. PDF dùng trang cố định, nên thay đổi cỡ chữ linh hoạt của EPUB sẽ mất." },
+        { "q": "Có thể in mọi ebook sau khi chuyển không?", "a": "Không nhất thiết; DRM hoặc điều khoản của nhà xuất bản có thể giới hạn chuyển đổi và in." },
+        { "q": "Làm sao tránh chương bị tách xấu?", "a": "Chọn khổ và lề phù hợp, sau đó kiểm tra ngắt trang, mục lục và các tiêu đề chương." }
+      ],
+      "body": [
+        { "t": "p", "x": "EPUB được thiết kế để nội dung tái bố trí theo màn hình và cỡ chữ, còn PDF cố định từng trang. Chuyển ebook sang PDF có thể thuận tiện để in, trích dẫn hoặc lưu theo bố cục nhất quán, nhưng làm mất khả năng co giãn vốn có của ebook. Hình, bảng và chương có thể dàn trang khác. Kiểm tra quyền sử dụng và hạn chế DRM trước khi chuyển hoặc in." },
+        { "t": "h2", "x": "Chọn mục đích và khổ giấy" },
+        { "t": "p", "x": "Nếu mục đích là đọc trên điện thoại, EPUB thường phù hợp hơn vì có thể điều chỉnh chữ. Nếu cần bản in, chọn khổ trang, lề và cỡ chữ dễ đọc. Đừng ép nhiều nội dung vào một trang chỉ để giảm số tờ. Xác định có cần bìa, trang tiêu đề, số trang và mục lục hay không." },
+        { "t": "h2", "x": "Kiểm tra ebook trước khi xuất" },
+        { "t": "p", "x": "Mở EPUB và xác nhận mục lục, chương, hình minh họa cùng ký tự đặc biệt hiển thị đúng. Kiểm tra tệp không hỏng và nội dung có thể truy cập hợp lệ. DRM hoặc lỗi cấu trúc có thể khiến công cụ từ chối hoặc tạo PDF không đầy đủ. Không vượt qua biện pháp bảo vệ; tìm định dạng chính thức do nhà cung cấp hỗ trợ." },
+        { "t": "h2", "x": "Rà soát PDF sau chuyển đổi" },
+        { "t": "p", "x": "Mở tệp PDF và kiểm tra chương đầu, giữa, cuối, trang có hình và đoạn có liên kết. Tìm tiêu đề nằm cuối trang, trang trắng, văn bản tràn hoặc hình mờ. Thử tìm kiếm và chọn văn bản nếu bạn cần trích xuất. Kiểm tra mục lục có liên kết đúng và số trang khớp sau khi thay đổi khổ." },
+        { "t": "h2", "x": "Giữ quyền và tôn trọng nội dung" },
+        { "t": "p", "x": "Bản chuyển đổi không làm thay đổi quyền tác giả hoặc điều khoản cấp phép. Dùng PDF trong phạm vi được phép, không phát tán công khai hay bán lại khi chưa được cấp quyền. Bảo vệ tệp nếu có nội dung cá nhân hoặc tài liệu nội bộ. Giữ bản EPUB gốc để đọc lại trên thiết bị có thể điều chỉnh chữ." },
+        { "t": "cta", "tool": "epub-to-pdf", "x": "Tạo PDF từ ebook hợp lệ rồi kiểm tra bố cục từng chương." }
+      ]
+    },
+    {
+      "topic": "convert-mobi-to-pdf",
+      "title": "Cách chuyển tệp MOBI sang PDF",
+      "slug": "convert-mobi-to-pdf",
+      "tool": "mobi-to-pdf",
+      "description": "Kiểm tra DRM và quyền, chọn bố cục trang rồi xác minh nội dung sau chuyển đổi.",
+      "metaDescription": "Chuyển MOBI sang PDF để in hoặc lưu trữ khi được phép, sau đó kiểm tra font, chương, mục lục và hình minh họa.",
+      "faqs": [
+        { "q": "MOBI có luôn chuyển sang PDF được không?", "a": "Không. DRM, định dạng cũ hoặc tệp hỏng có thể cản trở chuyển đổi." },
+        { "q": "PDF có giữ cách đọc linh hoạt của ebook không?", "a": "Không hoàn toàn. PDF cố định trang và không thay đổi bố cục như ebook tái bố trí." },
+        { "q": "Có cần kiểm tra bản PDF sau khi chuyển không?", "a": "Có. Xem mục lục, ký tự đặc biệt, ảnh và ngắt trang để phát hiện mất nội dung." }
+      ],
+      "body": [
+        { "t": "p", "x": "MOBI là định dạng ebook thường gặp ở các thư viện sách số cũ, còn PDF trình bày nội dung theo từng trang cố định. Chuyển đổi có thể hữu ích khi bạn cần in hoặc lưu bố cục, nhưng PDF không thay thế trải nghiệm đọc co giãn trên thiết bị nhỏ. Xác nhận nguồn tệp và quyền chuyển đổi trước. Một số ebook có DRM hoặc cấu trúc riêng khiến công cụ không thể xử lý hợp lệ." },
+        { "t": "h2", "x": "Xác minh quyền và tình trạng tệp" },
+        { "t": "p", "x": "Đọc điều khoản nhà xuất bản hoặc dịch vụ đã cung cấp sách. Nếu tệp thuê bao hoặc được bảo vệ kỹ thuật, không tìm cách phá hạn chế. Mở MOBI trong trình đọc tương thích để xác nhận nội dung và mục lục. Sao lưu tệp gốc, tránh đổi đuôi tên tệp vì điều đó không chuyển đổi định dạng." },
+        { "t": "h2", "x": "Chọn thiết lập trang" },
+        { "t": "p", "x": "Chọn khổ giấy phù hợp với mục đích, cỡ chữ có thể đọc và lề đủ rộng. Đặt tiêu đề chương và ngắt trang sao cho người đọc theo dõi được. Nếu công cụ cung cấp tùy chọn giữ ảnh hoặc bìa, xem trước để tránh làm tệp quá nặng hoặc mờ. Không tối ưu chỉ cho số trang thấp nhất." },
+        { "t": "h2", "x": "Soát lỗi sau chuyển đổi" },
+        { "t": "p", "x": "Mở PDF và kiểm tra bìa, mục lục, chương, ký tự có dấu, chú thích cùng hình ảnh. So sánh một số trang với bản MOBI. Kiểm tra tiêu đề có bị tách khỏi nội dung, bảng có tràn và liên kết có còn hoạt động. Nếu lỗi xuất hiện, điều chỉnh cài đặt hoặc dùng nguồn chính thức khác; không phát hành bản thiếu trang." },
+        { "t": "h2", "x": "Lưu và chia sẻ có trách nhiệm" },
+        { "t": "p", "x": "Đặt tên PDF rõ ràng và giữ riêng với bản MOBI gốc. Nếu tệp có nội dung nhạy cảm, chọn nơi lưu phù hợp và giới hạn người nhận. Không chia sẻ sách có bản quyền vượt phạm vi cấp phép. Với mục đích đọc thường ngày, cân nhắc tiếp tục dùng định dạng ebook để điều chỉnh chữ và giảm nhu cầu in." },
+        { "t": "cta", "tool": "mobi-to-pdf", "x": "Chuyển bản MOBI được phép sử dụng và rà soát PDF đầu ra." }
+      ]
+    },
+    {
+      "topic": "ebook-formats-explained",
+      "title": "Giải thích các định dạng ebook: EPUB, MOBI, AZW3, PDF và TXT",
+      "slug": "ebook-formats-explained",
+      "tool": "ebook-converter",
+      "description": "So sánh khả năng tái bố trí, bố cục cố định, tương thích và quyền bảo vệ nội dung.",
+      "metaDescription": "So sánh EPUB, MOBI, AZW3, PDF và văn bản thuần theo khả năng đọc, bố cục, thiết bị hỗ trợ, cách chuyển đổi và hạn chế DRM.",
+      "faqs": [
+        { "q": "Định dạng ebook nào phù hợp để đọc trên điện thoại?", "a": "Định dạng tái bố trí như EPUB thường cho phép điều chỉnh chữ, nhưng hỗ trợ tùy ứng dụng." },
+        { "q": "PDF có phải ebook tốt nhất để in không?", "a": "PDF giữ bố cục trang cố định, nhưng cần kiểm tra khổ giấy và độ đọc trước khi in." },
+        { "q": "Đổi phần mở rộng có chuyển định dạng không?", "a": "Không. Đổi tên tệp không chuyển cấu trúc nội dung và có thể làm tệp không mở được." }
+      ],
+      "body": [
+        { "t": "p", "x": "Định dạng ebook ảnh hưởng cách văn bản co giãn, hình ảnh hiển thị, tệp mở trên thiết bị nào và việc có thể in hay không. EPUB thường được thiết kế để tái bố trí; PDF giữ trang cố định; MOBI và AZW3 xuất hiện trong một số hệ sinh thái sách điện tử; TXT chỉ lưu chữ cơ bản. Không có định dạng tốt nhất cho mọi sách. Chọn theo nội dung, thiết bị và quyền sử dụng." },
+        { "t": "h2", "x": "EPUB và định dạng tái bố trí" },
+        { "t": "p", "x": "EPUB thường cho phép trình đọc thay đổi cỡ chữ, khoảng dòng và lề. Đây là ưu điểm trên điện thoại và màn hình nhỏ, nhưng bố cục có thể khác giữa ứng dụng. Sách có bảng, công thức hoặc hình phức tạp cần được kiểm tra. Một số EPUB dùng bố cục cố định, vì vậy không phải tệp nào cũng co giãn giống nhau." },
+        { "t": "h2", "x": "MOBI và AZW3" },
+        { "t": "p", "x": "MOBI là định dạng cũ được một số thư viện ebook sử dụng; AZW3 là định dạng liên quan đến thiết bị và dịch vụ Kindle. Hỗ trợ phụ thuộc thiết bị, ứng dụng và phiên bản. Một tệp có thể được bảo vệ DRM, khiến chuyển đổi hoặc mở bên ngoài hệ sinh thái bị giới hạn. Kiểm tra nguồn và chính sách thay vì giả định phần mở rộng nói hết quyền sử dụng." },
+        { "t": "h2", "x": "PDF và văn bản thuần" },
+        { "t": "p", "x": "PDF giữ bố cục, vị trí hình và phân trang ổn định, thuận tiện cho tài liệu tham khảo hoặc in. Đổi lại, chữ khó điều chỉnh trên màn hình nhỏ. TXT tương thích rộng và nhẹ nhưng mất kiểu chữ, bảng, liên kết có cấu trúc và ảnh. Chọn PDF khi hình thức trang quan trọng; chọn văn bản đơn giản khi nội dung chữ là chính." },
+        { "t": "h2", "x": "Chuyển đổi và tương thích" },
+        { "t": "p", "x": "Chuyển đổi định dạng không đảm bảo giữ font, mục lục, ghi chú, hình và liên kết. Tạo bản sao, kiểm tra quyền, dùng công cụ phù hợp rồi mở tệp trên thiết bị mục tiêu. Không đổi phần mở rộng bằng tay để giả lập chuyển đổi. DRM hoặc hỏng cấu trúc có thể khiến thao tác không thể thực hiện hợp lệ; tìm bản phân phối chính thức tương thích." },
+        { "t": "cta", "tool": "ebook-converter", "x": "Kiểm tra định dạng ebook và chuyển tệp bạn có quyền sử dụng." }
+      ]
+    },
+    {
+      "topic": "ebook-drm-explained",
+      "title": "Vì sao một số ebook không thể chuyển đổi",
+      "slug": "ebook-drm-explained",
+      "tool": "epub-to-pdf",
+      "description": "Tìm hiểu DRM, giới hạn định dạng và cách chọn bản tải hoặc định dạng chính thức.",
+      "metaDescription": "Tìm hiểu vì sao DRM, giấy phép, tệp lỗi hoặc bố cục đặc thù có thể ngăn chuyển ebook và những lựa chọn hợp lệ tiếp theo.",
+      "faqs": [
+        { "q": "DRM là gì trong ebook?", "a": "Đó là cơ chế kiểm soát truy cập hoặc sử dụng nội dung số theo cấu hình của nhà cung cấp." },
+        { "q": "Tệp mua rồi có thể chuyển sang định dạng bất kỳ không?", "a": "Không nhất thiết; quyền chuyển đổi phụ thuộc giấy phép, khu vực và điều khoản nền tảng." },
+        { "q": "Nên làm gì khi công cụ từ chối ebook?", "a": "Dùng ứng dụng chính thức, tìm định dạng được hỗ trợ hoặc liên hệ nhà cung cấp để được trợ giúp." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một ebook có thể không chuyển đổi được vì được bảo vệ DRM, dùng cấu trúc không tương thích, bị lỗi hoặc chứa nội dung có bố cục phức tạp. DRM có thể giới hạn thiết bị và thao tác theo giấy phép của nhà cung cấp. Việc bạn có thể đọc sách trong một ứng dụng không đồng nghĩa được phép chuyển hoặc phân phối nó. Khi công cụ báo lỗi, xác định nguyên nhân và tìm phương án chính thức thay vì cố vượt qua cơ chế bảo vệ." },
+        { "t": "h2", "x": "Phân biệt DRM với lỗi tệp" },
+        { "t": "p", "x": "Thông báo từ ứng dụng có thể cho biết tệp bị khóa, không được hỗ trợ hoặc hỏng. Xác nhận bạn đã tải đúng tệp hoàn chỉnh và dùng ứng dụng đọc tương thích. Nếu sách mở bình thường trong phần mềm của nhà cung cấp nhưng không xuất được, hạn chế có thể đến từ quyền hoặc DRM. Nếu không mở ở đâu, tải lại qua nguồn chính thức hoặc liên hệ hỗ trợ." },
+        { "t": "h2", "x": "Kiểm tra quyền và giấy phép" },
+        { "t": "p", "x": "Xem điều khoản mua, mượn hoặc thuê bao để biết thiết bị và định dạng được hỗ trợ. Quy định có thể khác theo nhà xuất bản, quốc gia và nền tảng. Không cho rằng thanh toán đã loại bỏ mọi giới hạn sao chép. Với sách thư viện, quyền mượn thường gắn với ứng dụng hoặc thời hạn; tôn trọng ngày hết hạn và hướng dẫn của thư viện." },
+        { "t": "h2", "x": "Tìm lựa chọn hợp lệ" },
+        { "t": "p", "x": "Tìm nút tải xuống chính thức, định dạng mở khác do nhà xuất bản cung cấp hoặc phiên bản dành cho thiết bị của bạn. Liên hệ nơi bán nếu cần tệp cho khả năng tiếp cận hoặc đọc ngoại tuyến. Một số dịch vụ có ứng dụng đọc tích hợp các tính năng phóng to, đọc thành tiếng hoặc đồng bộ ghi chú mà không cần chuyển đổi." },
+        { "t": "h2", "x": "Bảo vệ tài khoản và dữ liệu" },
+        { "t": "p", "x": "Tránh tải ebook lên website lạ có thể lưu bản sao hoặc thông tin tài khoản. Không cài phần mềm hứa phá khóa vì có thể chứa mã độc hoặc đánh cắp dữ liệu. Dùng nguồn hỗ trợ chính thức và chỉ chia sẻ tệp khi giấy phép cho phép. Nếu cần PDF cho mục đích hợp pháp, hỏi nhà cung cấp về định dạng truy cập được thay vì làm mất quyền bảo vệ." },
+        { "t": "cta", "tool": "epub-to-pdf", "x": "Chuyển đổi chỉ khi nhà cung cấp và giấy phép cho phép." }
+      ]
+    }
+  ]
+}

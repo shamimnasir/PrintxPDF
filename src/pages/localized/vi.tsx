@@ -8,5 +8,6 @@ import batch6 from '../../content/localized-posts/vi-chatgpt-6.json'
 import batch7 from '../../content/localized-posts/vi-chatgpt-7.json'
 import batch8 from '../../content/localized-posts/vi-chatgpt-8.json'
 import batch9 from '../../content/localized-posts/vi-chatgpt-9.json'
+import batch10 from '../../content/localized-posts/vi-chatgpt-10.json'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-export default createLocalizedGuidesPage('vi', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides])
+export default createLocalizedGuidesPage('vi', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides])
