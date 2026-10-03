@@ -1,3 +1,4 @@
-import data from '../../content/localized-posts/zh-CN.json'
+import { LANGUAGE_PACKS } from '../../content/localizedGuidesFull'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-export default createLocalizedGuidesPage('zh-CN', data.guides)
+const pack = LANGUAGE_PACKS.find((item) => item.locale === 'zh-CN')
+export default createLocalizedGuidesPage('zh-CN', pack?.guides || [])

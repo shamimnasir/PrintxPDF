@@ -45,6 +45,7 @@ function LocalizedBlock({ block }: { block: Block }) {
 }
 
 const toolDirectoryLabel: Record<string, string> = { es: 'Todas las herramientas', 'pt-BR': 'Todas as ferramentas', hi: 'सभी टूल', ar: 'كل الأدوات', bn: 'সব টুল', vi: 'Tất cả công cụ', 'zh-CN': '查看所有工具' }
+const localizedToolPath = (slug: string) => slug === 'website-to-pdf' ? '/print' : `/tools/${slug}`
 
 export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
   const { locale = '', hub = '', slug } = useParams()
@@ -171,7 +172,7 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
         </div>
         <div className="inline-cta">
           <p>{guide.ctaLabel}</p>
-          <Link to={`/tools/${guide.tool}`} className="btn btn-acid">{guide.ctaLabel} →</Link>
+          <Link to={localizedToolPath(guide.tool)} className="btn btn-acid">{guide.ctaLabel} →</Link>
           {tool && <span className="muted">{tool.name}</span>}
         </div>
         <p className="muted">{pack.toolNote}</p>
