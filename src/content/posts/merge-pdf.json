@@ -546,18 +546,18 @@
     {
       "slug": "combine-images-and-pdfs",
       "cluster": "merge",
-      "title": "How to combine images and PDFs into one document",
-      "metaTitle": "Combine Images and PDFs Into One File",
-      "metaDescription": "Turn JPG, PNG and HEIC photos into PDF pages and merge them with your PDFs. Fix rotation, pick a page size, and keep a receipt batch small enough to email.",
+      "title": "How to add scanned images to an existing PDF",
+      "metaTitle": "Add Scanned Images to an Existing PDF",
+      "metaDescription": "Convert supported images into PDF pages, then merge them with an existing document. Set page size, check rotation and review the final order before sharing.",
       "published": "2026-03-18",
-      "updated": "2026-08-14",
+      "updated": "2026-10-03",
       "readMinutes": 6,
       "intent": "howto",
-      "primaryKeyword": "combine images and pdf",
+      "primaryKeyword": "add images to an existing pdf",
       "secondaryKeywords": [
         "merge jpg and pdf",
-        "photos to pdf",
-        "heic to pdf",
+        "add scans to pdf",
+        "merge images with pdf pages",
         "combine receipts into one pdf",
         "scan multiple pages to one pdf"
       ],
@@ -571,7 +571,7 @@
         "US Letter",
         "Adobe Acrobat"
       ],
-      "answer": "Convert the images to PDF pages first, then merge them with your existing PDFs. A JPG, PNG or HEIC becomes a one-page PDF sized to the image, and once every input is a PDF you can drag all of them into a single ordered document and download one file.",
+      "answer": "Convert JPG, PNG or WebP images to PDF pages first, then merge that PDF with your existing PDFs. The JPG to PDF tool does not accept HEIC directly, so convert HEIC to JPG first. Once each input is a PDF, arrange the files and download one combined document.",
       "body": [
         {
           "t": "p",
@@ -594,11 +594,11 @@
             },
             {
               "h": "Pick a page size",
-              "x": "Choose **Fit to image** to make each page exactly the size of the photo, or **A4 / Letter** to place each image on a standard sheet. Fit to image is right for screenshots; a standard sheet is right for anything that will be printed."
+              "x": "Under Page size, choose **A4**, **Letter** or **Same as image**. Then choose **Fit inside margins**, **Fill page** or **Original size**. Fit inside margins keeps the whole picture visible; Fill page can crop its edges."
             },
             {
-              "h": "Set the orientation handling",
-              "x": "Auto-rotate uses the EXIF orientation tag so photos taken sideways come out upright. Turn it off only if a specific image is being rotated incorrectly."
+              "h": "Check image orientation",
+              "x": "The converter does not offer an EXIF auto-rotate switch. Open the output and check each page; if one is sideways, rotate it with [Organize Pages](/tools/organize-pdf) or [Rotate PDF](/tools/rotate-pdf)."
             },
             {
               "h": "Convert",
@@ -609,7 +609,7 @@
         {
           "t": "cta",
           "tool": "jpg-to-pdf",
-          "x": "Convert JPG, PNG, HEIC and WebP images into PDF pages in your browser."
+          "x": "Convert JPG, PNG and WebP images into PDF pages in your browser. Convert HEIC to JPG first."
         },
         {
           "t": "h2",
@@ -617,7 +617,7 @@
         },
         {
           "t": "p",
-          "x": "Since iOS 11, iPhones save photos as HEIC by default, a container using HEVC compression that stores a similar-quality image in roughly half the bytes of JPEG. PDF has no native support for it, so a HEIC has to be decoded and re-encoded before it can become a page. Any converter that accepts HEIC is doing that for you."
+          "x": "The JPG to PDF tool accepts JPG, PNG and WebP, not HEIC. Convert HEIC images with [HEIC to JPG](/tools/heic-to-jpg) first, then add the resulting JPG files. The conversion changes the image format, so check the converted file before assembling a document."
         },
         {
           "t": "p",
@@ -629,7 +629,7 @@
         },
         {
           "t": "p",
-          "x": "With every input now a PDF, open [merge PDF](/tools/merge-pdf), drop them all in, drag the cards into order and merge. A typical expense claim ends up as: cover letter PDF, then the receipts PDF built from photos, then the bank statement extract. One file, one attachment, one thing for the person on the other end to open."
+          "x": "With every input now a PDF, open [Merge PDF](/tools/merge-pdf), add the files in the intended sequence, check the order shown, and run the merge. A typical expense claim might contain a cover letter, receipt pages and a statement. Review the output before sending it."
         },
         {
           "t": "h2",
@@ -677,7 +677,7 @@
         },
         {
           "t": "p",
-          "x": "A modern phone photo is around 12 megapixels, which is well above what a printed page can resolve. Placing it at full resolution wastes several megabytes per page for detail nobody will ever see. Downsampling to 300 DPI for print, or 150 DPI for a document that will only be read on screen, typically cuts the file by 70 to 90 percent."
+          "x": "Image pixel dimensions affect how sharp a page looks when printed. The JPG to PDF tool does not provide a DPI or image-resampling setting, so prepare a smaller copy in an image editor if you need to reduce resolution before conversion. Keep the original, and inspect a test page at the intended print size."
         },
         {
           "t": "h2",
@@ -685,14 +685,14 @@
         },
         {
           "t": "p",
-          "x": "Twelve phone photos of receipts at about 3.5 MB each gives roughly 42 MB of source images. Converted straight to PDF pages at full resolution, the document lands near 40 MB, which will bounce off a 25 MB Gmail attachment limit. Three fixes, in order of how much you should reach for them:"
+          "x": "The output size depends on the number and dimensions of the source images. Email and workplace upload limits vary, so check the current limit for the account or portal you are using. If the PDF is too large, make a backup and try the options below:"
         },
         {
           "t": "ol",
           "items": [
-            "Downsample to 150 DPI during conversion. Receipts are text on white; 150 DPI is legible and roughly quarters the size.",
-            "Convert to greyscale. A receipt has no meaningful colour and greyscale cuts another third.",
-            "Run the merged file through [compression](/tools/compress-pdf), which typically brings 40 MB down to 3 to 6 MB."
+            "Resize or convert copies of the source photos in an image editor before making the PDF. This JPG to PDF tool does not offer a DPI or grayscale option, so check that small receipt text remains readable.",
+            "Use the browser's print or image tools only if their output is suitable; compare the result with the original before discarding anything.",
+            "Try [Compress PDF](/tools/compress-pdf) on a copy. Medium and Strong turn pages into images, which can reduce size but removes selectable text and may lower detail."
           ]
         },
         {
@@ -722,7 +722,7 @@
           "rows": [
             [
               "Expense claim from phone photos",
-              "Crop → JPG to PDF at 150 DPI greyscale → merge → OCR → compress"
+              "Check/crop copies → JPG to PDF → merge → OCR if searchable text is needed → compare compression on a copy"
             ],
             [
               "Signed contract, scan mixed with the original",
@@ -758,7 +758,7 @@
         },
         {
           "q": "Can I merge HEIC photos from my iPhone into a PDF?",
-          "a": "Yes, if the converter decodes HEIC. It is re-encoded during conversion because PDF has no native HEIC support. Alternatively set Settings, Camera, Formats to Most Compatible so the phone shoots JPEG instead."
+          "a": "Not directly with PrintxPDF's JPG to PDF tool, which accepts JPG, PNG and WebP. Convert HEIC to JPG with [HEIC to JPG](/tools/heic-to-jpg), then create PDF pages and merge them. On iPhone, Most Compatible camera format saves future photos as JPEG."
         },
         {
           "q": "What resolution should I use for images in a PDF?",
@@ -766,7 +766,7 @@
         },
         {
           "q": "Why is my photo sideways in the PDF?",
-          "a": "The camera stored the image upright but recorded the rotation in an EXIF orientation tag, and the converter ignored it. Enable auto-rotate during conversion, or rotate the finished page in a PDF page editor, which writes the rotation into the page itself."
+          "a": "The JPG to PDF tool does not expose an EXIF auto-rotate setting. Check the output and rotate a sideways page with [Organize Pages](/tools/organize-pdf) or [Rotate PDF](/tools/rotate-pdf)."
         },
         {
           "q": "How do I scan several pages into a single PDF?",

@@ -695,32 +695,32 @@
     {
       "slug": "images-to-pdf",
       "cluster": "to-pdf",
-      "title": "How to combine photos and scans into one PDF",
-      "metaTitle": "Combine Photos and Scans Into One PDF",
-      "metaDescription": "Turn JPG, PNG and HEIC photos into one PDF: page size, orientation, ordering, the DPI you need for printing, and the right settings for receipts and scans.",
+      "title": "How to combine JPG, PNG and WebP images into one PDF",
+      "metaTitle": "Combine JPG, PNG and WebP Images Into One PDF",
+      "metaDescription": "Put JPG, PNG or WebP images in order, choose A4, Letter or image-sized pages, and make one PDF. Check the result before sharing.",
       "published": "2026-05-07",
-      "updated": "2026-08-27",
+      "updated": "2026-10-03",
       "readMinutes": 7,
       "intent": "howto",
-      "primaryKeyword": "combine images into one pdf",
+      "primaryKeyword": "combine jpg png webp images into one pdf",
       "secondaryKeywords": [
         "jpg to pdf",
         "photos to pdf",
         "scan to pdf",
         "multiple images to one pdf",
-        "heic to pdf"
+        "JPG to PDF page order"
       ],
       "entities": [
         "JPEG",
         "PNG",
-        "HEIC",
+        "WebP",
         "macOS Preview",
         "Microsoft Print to PDF",
         "A4",
         "iOS",
         "DPI"
       ],
-      "answer": "Drop your JPG, PNG or HEIC files into an image-to-PDF tool, put them in the right order, and pick a page size. Choose A4 or Letter with each image fitted to the page for documents, and 300 DPI if the result will be printed. If another app refuses HEIC, convert it with the [HEIC to JPG converter](/tools/heic-to-jpg) first.",
+      "answer": "Add JPG, PNG or WebP images to the [JPG to PDF tool](/tools/jpg-to-pdf), reorder them with the on-screen arrows, then choose A4, Letter or Same as image. Each picture becomes its own page. HEIC is not supported by this tool, so convert HEIC to JPG first.",
       "body": [
         {
           "t": "p",
@@ -746,8 +746,8 @@
             ],
             [
               "Receipts and small slips",
-              "A4, several per page",
-              "Fit, or tile 2-4 per sheet to save paper"
+              "A4 or Letter",
+              "One image per page; combine images into a layout elsewhere to tile"
             ],
             [
               "Photo album or portfolio",
@@ -761,8 +761,8 @@
             ],
             [
               "Presentation handout",
-              "A4 landscape",
-              "Fit to page"
+              "A4 or Letter",
+              "Check the fit; use a landscape page layout elsewhere if needed"
             ]
           ]
         },
@@ -816,7 +816,7 @@
         },
         {
           "t": "p",
-          "x": "A modern phone photo is typically 4032 × 3024 pixels, which is more than enough for a 300 DPI A4 page. A screenshot from a laptop is often 1440 × 900, which fills an A4 page at only about 110 DPI, fine on screen, soft on paper. You cannot add detail that was never captured, so scan or photograph at the resolution you need from the start."
+          "x": "The tool places image pixels into a PDF page; it cannot add detail that the source image does not contain. A large phone photo usually has enough pixels for a printed page, while a small screenshot may look soft when enlarged. If print sharpness matters, inspect the source image dimensions and make a test print rather than relying on a DPI setting this tool does not provide."
         },
         {
           "t": "h2",
@@ -824,7 +824,7 @@
         },
         {
           "t": "p",
-          "x": "This is where most people lose ten minutes. Files named `page1.jpg` through `page10.jpg` sort as 1, 10, 2, 3 in almost every file browser, because the sort is alphabetical. Rename with zero padding, `page01`, `page02` … `page10`, and everything falls into place automatically. Phone photos named IMG_0001 onwards are already padded and sort correctly by capture time."
+          "x": "File browsers can sort `page1.jpg` through `page10.jpg` as 1, 10, 2, 3. Zero-padding names (`page01`, `page02`) helps when selecting files, but still confirm the sequence inside the tool. Use its move arrows to set the final page order."
         },
         {
           "t": "h2",
@@ -835,9 +835,9 @@
           "items": [
             "**JPEG**, the right choice for photographs and camera scans. Already compressed, so the PDF stays small.",
             "**PNG**, right for screenshots, diagrams and anything with sharp text or flat colour. Lossless, so it produces a larger PDF; a full-page PNG screenshot can be several megabytes.",
-            "**HEIC**, the iPhone default. PrintxPDF can decode HEIC in the browser, so you can use it directly in the [JPG to PDF tool](/tools/jpg-to-pdf). If another app refuses the file, use the [HEIC to JPG converter](/tools/heic-to-jpg). To avoid HEIC for new photos, set iPhone Settings → Camera → Formats → **Most Compatible** so the camera shoots JPEG.",
-            "**TIFF**, common from office scanners and often multi-page. Convert to JPEG or PNG first; browser support is effectively nil.",
-            "**WebP and AVIF**, decode fine in modern browsers, so they work if your tool supports them."
+            "**HEIC**, common on iPhones, is not accepted by this JPG to PDF tool. Convert it with [HEIC to JPG](/tools/heic-to-jpg), then add the resulting JPG files. To make future iPhone photos more widely compatible, choose Settings → Camera → Formats → **Most Compatible**.",
+            "**TIFF**, sometimes produced by office scanners, is not accepted by this tool. Convert it to JPG or PNG first. A multi-page TIFF needs a converter that preserves each frame, or an export from the scanner software.",
+            "**WebP** is accepted by this tool. AVIF is not listed as a supported input format, so convert it to JPG or PNG first."
           ]
         },
         {
@@ -853,15 +853,15 @@
             },
             {
               "h": "Open the converter",
-              "x": "Go to the [JPG to PDF tool](/tools/jpg-to-pdf) and drop the whole folder in at once. Everything is processed in your browser, so a scanned passport or bank statement is never uploaded."
+              "x": "Go to the [JPG to PDF tool](/tools/jpg-to-pdf) and add your JPG, PNG or WebP files. The PDF is built in your browser. HEIC and AVIF need conversion to a supported format first."
             },
             {
               "h": "Check and fix the order",
-              "x": "Drag any thumbnail that landed in the wrong place before generating the file."
+              "x": "Use the move arrows beside each file to set its position, then confirm the displayed order before generating the PDF."
             },
             {
-              "h": "Set page size and orientation",
-              "x": "A4 or Letter for documents. Choose auto-orientation so a landscape photo gets a landscape page instead of being shrunk to fit a portrait one."
+              "h": "Set the page size and fit",
+              "x": "Under Page size, choose A4, Letter or Same as image, then choose how the image fits. There is no separate DPI or auto-orientation control, so check the page size and fit before downloading."
             },
             {
               "h": "Generate and check",
@@ -869,14 +869,14 @@
             },
             {
               "h": "Compress if it is going by email",
-              "x": "Twenty phone photos make a 60 MB PDF. Run it through the [compressor](/tools/compress-pdf) at 150 DPI first, see [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email)."
+              "x": "If the finished file is too large, try the [PDF compressor](/tools/compress-pdf). Its Medium and Strong settings turn pages into images, so compare legibility and keep your original. See [ways to reduce a PDF for email](/blog/compress/reduce-pdf-file-size-for-email)."
             }
           ]
         },
         {
           "t": "cta",
           "tool": "jpg-to-pdf",
-          "x": "Combine JPG and PNG files into a single PDF, in the right order."
+          "x": "Combine JPG, PNG and WebP images into a PDF, with controls for page size, image fit, margins and order. HEIC files need conversion first."
         },
         {
           "t": "h2",
@@ -912,12 +912,12 @@
       ],
       "faqs": [
         {
-          "q": "How do I combine multiple JPG files into one PDF?",
-          "a": "Drop them all into an image-to-PDF tool, drag them into the right order, choose A4 or Letter as the page size, and generate. On macOS you can also select the files in Finder and use Quick Actions → Create PDF; on Windows, right-click → Print → Microsoft Print to PDF."
+              "q": "How do I combine multiple JPG files into one PDF?",
+          "a": "Add the JPG files to the [JPG to PDF tool](/tools/jpg-to-pdf), use the move arrows to set their order, choose A4, Letter or Same as image, and run it. Each image becomes a separate page. On macOS, Finder also offers Quick Actions → Create PDF; on Windows, use Print → Microsoft Print to PDF."
         },
         {
           "q": "Why can I not upload HEIC photos?",
-          "a": "PrintxPDF can decode HEIC in the browser, so you can use the photos directly in the JPG to PDF tool. If another app refuses them, use the [HEIC to JPG converter](/tools/heic-to-jpg). For future photos, set iPhone Settings → Camera → Formats to Most Compatible so it shoots JPEG."
+          "a": "The JPG to PDF tool accepts JPG, PNG and WebP, not HEIC. Convert HEIC photos with [HEIC to JPG](/tools/heic-to-jpg) first, or change the iPhone camera format to Most Compatible for future photos."
         },
         {
           "q": "What resolution do I need for a PDF I will print?",

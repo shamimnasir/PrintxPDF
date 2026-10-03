@@ -1,15 +1,14 @@
 {
   "slug": "compress",
   "name": "Compressing PDF files",
-  "title": "How to compress a PDF: make files smaller without wrecking them",
-  "metaTitle": "How to Compress a PDF for Free (2026 Guide)",
-  "metaDescription": "Compress a PDF in your browser for free. Lossless structural compression, image downsampling, DPI targets, email size limits and why your PDF got so big.",
-  "intro": "A PDF gets big for one of two reasons: it contains large images, or it contains a lot of accumulated structural junk. The fix is different for each. Structural compression rewrites the file, subsets fonts, drops orphaned objects, packs the cross-reference table, and never touches a pixel. Image compression downsamples photos and scans to a target DPI, which is where the real savings live. These guides cover both, plus the email limits that started the problem.",
-  "answer": "Compress a PDF by choosing between two methods. Lossless structural compression subsets fonts and removes unused objects, typically saving 10-30 percent with zero visible change. Image downsampling re-encodes embedded photos at a lower DPI, which can cut a scanned document by 80-95 percent but is not reversible.",
+  "title": "Compress PDFs online: choose a quality preset or diagnose a large file",
+  "metaTitle": "Compress PDF Online: Choose a Quality Preset",
+  "metaDescription": "Compare three PDF compression presets, keep text searchable when needed, and learn when to split a large file or use a sharing link.",
+  "intro": "PDFs can be large because of images, fonts, metadata or saved document structure. PrintxPDF offers three compression presets: Light keeps the text layer, while Medium and Strong turn pages into images. There is no custom DPI or grayscale control. These guides explain the trade-offs, how to diagnose a large file and when a scanner setting, page split or sharing link is a better fit.",
+  "answer": "In PrintxPDF, choose Light to keep text selectable. Medium and Strong turn pages into images and can reduce detail. The tool has no custom DPI or grayscale controls, so test on a copy and keep the original. Split the file or share a link if compression is not suitable.",
   "primaryKeyword": "how to compress a pdf",
   "entities": [
     "PDF",
-    "Adobe Acrobat",
     "Ghostscript",
     "Gmail",
     "Microsoft Outlook",
@@ -31,9 +30,9 @@
       "cluster": "compress",
       "title": "How to compress a PDF file for free",
       "metaTitle": "How to Compress a PDF File for Free",
-      "metaDescription": "Compress a PDF for free in your browser. When lossless structural compression is enough, when to downsample images, and how much each method actually saves.",
+      "metaDescription": "Compress a PDF in your browser with Light, Medium or Strong. Learn which keeps searchable text, which turns pages into images, and how to check the result.",
       "published": "2026-01-22",
-      "updated": "2026-08-18",
+      "updated": "2026-10-03",
       "readMinutes": 7,
       "intent": "howto",
       "primaryKeyword": "how to compress a pdf",
@@ -46,7 +45,6 @@
       ],
       "entities": [
         "PDF",
-        "Adobe Acrobat",
         "Ghostscript",
         "macOS Preview",
         "JPEG",
@@ -54,11 +52,11 @@
         "DPI",
         "qpdf"
       ],
-      "answer": "To compress a PDF for free, open it in a browser-based compressor and pick one of two methods. Lossless structural compression subsets fonts and strips unused objects without touching a pixel. Image downsampling re-encodes photos at a lower DPI. Text documents shrink 10-30 percent; scans can drop by 90.",
+      "answer": "Open the browser-based compressor and choose Light to keep text selectable, or test Medium or Strong on a copy if image-only pages are acceptable. Size reduction depends on the PDF. PrintxPDF does not offer custom DPI or grayscale settings.",
       "body": [
         {
           "t": "p",
-          "x": "Every PDF compressor on the internet does one of two things, or both. Knowing which one your file needs is the whole game, because applying the wrong one either does nothing or ruins your document."
+          "x": "Compression can rewrite document structure, change image data, or do both. The right option depends on what is inside the PDF and what you need to preserve. PrintxPDF's browser tool presents three presets rather than separate technical controls."
         },
         {
           "t": "h2",
@@ -66,56 +64,56 @@
         },
         {
           "t": "p",
-          "x": "**Structural (lossless) compression** rewrites the plumbing of the file. It packs small objects into object streams, replaces the cross-reference table with a compressed cross-reference stream, deletes objects nothing points to any more, and subsets embedded fonts so only the glyphs you actually used are stored. Nothing you can see changes. Every pixel and every character survives exactly."
+          "x": "**Structural compression** changes how PDF data is stored without rasterizing page content. A structural pass may reduce overhead, but its operations and savings depend on the tool and source file. PrintxPDF's **Light** preset writes object streams and updates standard document metadata; it does not promise custom image downsampling or a fixed percentage reduction."
         },
         {
           "t": "p",
-          "x": "**Image (lossy) compression** re-encodes the pictures inside the PDF. It downsamples them to a target resolution and pushes them through JPEG at a chosen quality. This is where the big numbers come from, and it is a one-way door: the discarded pixels are gone."
+          "x": "**Image-based compression** renders pages as pictures. It can reduce some scans, but searchable text becomes pixels and fine detail can be lost. PrintxPDF's **Medium** and **Strong** presets use this approach; they do not expose a DPI or JPEG-quality selector."
         },
         {
           "t": "table",
-          "caption": "What each method does to a typical file.",
+          "caption": "Common compression operations and the trade-offs to check.",
           "head": [
             "Method",
             "What it changes",
-            "Typical saving",
+            "What to expect",
             "Reversible"
           ],
           "rows": [
             [
               "Font subsetting",
               "Stores only the glyphs used",
-              "50 KB - 8 MB per font",
+              "Depends on fonts and the tool",
               "Yes, visually identical"
             ],
             [
               "Object streams + xref streams",
               "Packs metadata objects together",
-              "5-15 percent",
+              "Varies with the file",
               "Yes"
             ],
             [
               "Removing orphaned objects",
               "Deletes unreferenced data left by edits",
-              "0-40 percent",
+              "Varies with the file",
               "Yes"
             ],
             [
               "Image downsampling",
               "Reduces pixel dimensions to a target DPI",
-              "60-95 percent on scans",
+              "Can reduce size, but removes searchable text",
               "No"
             ],
             [
               "JPEG re-encoding",
               "Lowers image quality to 60-80",
-              "30-70 percent on photos",
+              "Depends on the source and quality setting",
               "No"
             ],
             [
               "Flattening layers and forms",
               "Merges annotations into the page",
-              "5-20 percent",
+              "Depends on the document",
               "No"
             ]
           ]
@@ -129,19 +127,19 @@
           "items": [
             {
               "h": "Open the compressor",
-              "x": "Go to the [PDF compressor](/tools/compress-pdf) and drop your file on the page. Nothing is uploaded, the file is processed by your own browser, so a confidential contract never leaves your machine."
+              "x": "Open [Compress PDF](/tools/compress-pdf) and choose a file. This tool runs in your browser, so the file is not uploaded to our server. Keep an original copy before changing anything."
             },
             {
-              "h": "Try lossless first",
-              "x": "Run the structural pass on its own and look at the result. If a 4 MB text document drops to 2.6 MB, stop there. You have paid nothing in quality."
+              "h": "Choose Light when text matters",
+              "x": "Select **Light** if you need to search, select or copy text. The size change varies; a clean or already-compressed PDF may shrink very little."
             },
             {
               "h": "Check whether images are the problem",
-              "x": "If lossless barely moved the needle, the weight is in images. Scroll the document: if the pages look like photographs of paper rather than crisp text, it is a scan and image compression is the only lever that matters."
+              "x": "If Light barely changes the size, the file may be dominated by images or already-compressed data. Consider whether converting pages into pictures is acceptable before using a stronger preset."
             },
             {
               "h": "Pick a level",
-              "x": "Three choices, not a DPI box. **Light** is lossless: it rewrites the file structure and drops metadata, keeping text selectable. **Medium** re-renders each page at roughly 100 DPI and re-encodes it as JPEG. **Strong** goes to about 72 DPI. Medium and Strong are what shrink scans, at the cost of turning text into pixels."
+              "x": "Choose **Light** to keep text selectable. **Medium** and **Strong** render each page as an image, so text is no longer searchable or selectable and fine detail may change. The tool does not expose a DPI setting; compare a copy before using a stronger preset."
             },
             {
               "h": "Compare before you commit",
@@ -156,7 +154,7 @@
         {
           "t": "cta",
           "tool": "compress-pdf",
-          "x": "Compress a PDF in your browser. No upload, no account, no watermark."
+          "x": "Compare Light, Medium and Strong in your browser. Keep the original and inspect the result before sharing."
         },
         {
           "t": "h2",
@@ -212,7 +210,7 @@
         },
         {
           "t": "note",
-          "x": "300 DPI is the standard for printing because it is roughly the point at which the human eye stops resolving individual dots at normal reading distance. Going above it for a document that will only be emailed is pure waste."
+          "x": "These DPI figures are a reference for preparing scans, not controls in PrintxPDF's compressor. To change scan resolution, use scanner or image software before making the PDF. Choose based on the smallest text, expected print size and any OCR needs."
         },
         {
           "t": "h2",
@@ -235,11 +233,11 @@
         },
         {
           "t": "p",
-          "x": "A clean, text-only PDF exported straight from Word or LaTeX is already near-optimal. Expect 5-15 percent, not 80. If a compressor promises to shrink a 900 KB text PDF to 90 KB, it is rasterising your pages into images, which destroys the text layer and makes the file unsearchable. Check afterwards: press Ctrl+F and search for a word you can see. If nothing is found, your text layer is gone."
+          "x": "A clean, text-only PDF may already be compact, so compression can make little difference. A much smaller output may have been rasterized, which can remove searchable text. Check the result by selecting text or using Ctrl+F to find a visible word."
         },
         {
           "t": "warn",
-          "x": "Never compress a signed PDF. Any change to the bytes invalidates the digital signature. Compress first, then [sign the PDF](/blog/sign/how-to-sign-a-pdf), never the other way around."
+          "x": "Rewriting a signed or certified PDF can invalidate its digital signature. Preserve the signed original. If a smaller unsigned copy is acceptable, make a separate copy and check the recipient's requirements first."
         },
         {
           "t": "h2",
@@ -253,7 +251,6 @@
           "t": "ul",
           "items": [
             "**macOS Preview**, File → Export, then set Quartz Filter to \"Reduce File Size\". It is aggressive and slightly crude, but it is already installed.",
-            "**Adobe Acrobat Pro**, File → Save as Other → Reduced Size PDF, or Tools → Optimize PDF for per-image-type control over downsampling.",
             "**Ghostscript**, free, scriptable and the engine behind many online compressors."
           ]
         },
@@ -267,7 +264,7 @@
         },
         {
           "t": "p",
-          "x": "Compression has a floor. A 400-page scanned manual is not going to fit in an email no matter what you do. At that point you have two honest options: split it into parts, or send a link. See [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email) for the size limits of every major mail service, and [why your PDF is so large](/blog/compress/why-is-my-pdf-so-large) if you want to attack the cause instead of the symptom."
+          "x": "Compression has limits. If a scan is still too large, split it into parts or use an approved sharing link. See [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email) for current provider guidance, and [why your PDF is so large](/blog/compress/why-is-my-pdf-so-large) to diagnose the source."
         },
         {
           "t": "cta",
@@ -278,23 +275,23 @@
       "faqs": [
         {
           "q": "Does compressing a PDF reduce quality?",
-          "a": "Only if it downsamples images. Structural compression, font subsetting, object streams, removing unused objects, is completely lossless and changes nothing you can see. Image downsampling does lose detail permanently, which is why you should always keep the original file."
+          "a": "Light does not rasterize pages, so text remains selectable. Medium and Strong convert pages into images and can reduce fine detail. Keep the original and compare the output before sharing."
         },
         {
           "q": "How much can a PDF be compressed?",
-          "a": "A text-only PDF usually gives 10-30 percent. A colour scan at 600 DPI can drop 90-95 percent when downsampled to 150 DPI. A PDF full of photographs sits in between, typically 40-70 percent depending on the JPEG quality you accept."
+          "a": "There is no reliable percentage for every PDF. A text document, a scan and a photo-heavy file respond differently, and already-compressed PDFs may barely shrink. Compare output size and readability."
         },
         {
           "q": "Is it safe to compress a PDF online?",
-          "a": "It depends entirely on whether the file is uploaded. Most online compressors send your document to a server. A browser-based compressor runs the same algorithms in your own browser tab, so the file never leaves your computer, the safer choice for anything confidential."
+          "a": "Compress PDF processes the file in your browser and does not upload it to our server. This statement applies to this tool; other services may use a different processing method."
         },
         {
           "q": "Why did compressing my PDF make it bigger?",
-          "a": "Usually because the images were already JPEG-compressed and the tool re-encoded them at a higher quality than the original, or because it added a new revision instead of rewriting the file. Run a lossless structural pass instead, which rewrites cleanly."
+          "a": "A PDF can contain data that does not compress further, or an image-based result may not be smaller for that source. PrintxPDF returns the Light result instead when Medium or Strong would produce a larger file."
         },
         {
           "q": "Can I compress a PDF without losing the text layer?",
-          "a": "Yes. Any tool doing genuine PDF compression keeps text as text. If your file comes back unsearchable, the tool rasterised the pages into images. Test by pressing Ctrl+F and searching for a visible word."
+          "a": "Yes. Choose **Light** in PrintxPDF to keep the text layer. **Medium** and **Strong** render pages as images. Test the result with text selection or search, and keep the original."
         }
       ],
       "relatedTools": [
@@ -312,16 +309,15 @@
       "slug": "reduce-pdf-file-size-for-email",
       "cluster": "compress",
       "title": "How to reduce a PDF file size for email",
-      "metaTitle": "Reduce PDF File Size for Email: Limits + Fixes",
-      "metaDescription": "Attachment limits for Gmail, Outlook, iCloud and Yahoo, why a 24 MB file still bounces, and four ways to get a large PDF into an email that actually sends.",
+      "metaTitle": "Reduce a PDF for Email: Compress, Split or Share",
+      "metaDescription": "Compare compression, page extraction, splitting or a link for a large PDF. Check the sender and recipient limits before sending.",
       "published": "2026-02-14",
-      "updated": "2026-07-30",
+      "updated": "2026-10-03",
       "readMinutes": 6,
       "intent": "howto",
       "primaryKeyword": "reduce pdf file size for email",
       "secondaryKeywords": [
         "pdf too large to email",
-        "gmail attachment limit",
         "compress pdf for email",
         "email attachment size limit",
         "send large pdf"
@@ -336,11 +332,11 @@
         "Exchange Online",
         "Yahoo Mail"
       ],
-      "answer": "Compress the PDF to a 150 DPI target first, which is enough for on-screen reading and usually gets a scan under 5 MB. Gmail and Yahoo cap attachments at 25 MB, Outlook.com and iCloud Mail at 20 MB, and MIME encoding adds about 33 percent, so aim below 18 MB.",
+      "answer": "Check your mail provider's current limit first. PrintxPDF offers Light compression, which keeps text selectable, and Medium or Strong, which turn pages into images. The tool has no custom DPI or grayscale controls; split the file or use an approved sharing link if compression is not enough.",
       "body": [
         {
           "t": "p",
-          "x": "The bounce message says \"message too large\" and gives you no number to work with. Here are the real numbers, and what to do when your file is over them."
+          "x": "An email bounce may only say \"message too large.\" Limits depend on the sender, recipient and account type, so check the provider's current help page before changing a document. Here are common published limits and safer next steps."
         },
         {
           "t": "h2",
@@ -348,71 +344,57 @@
         },
         {
           "t": "table",
-          "caption": "Attachment limits for major mail services, 2026. \"Real file size\" accounts for MIME encoding overhead.",
+          "caption": "Published sending limits checked October 2026. Workspace and business accounts may have administrator-set limits.",
           "head": [
             "Service",
             "Stated limit",
-            "Safe real file size",
             "Larger files"
           ],
           "rows": [
             [
-              "Gmail",
-              "25 MB per message",
-              "~18 MB",
-              "Auto-offers a Google Drive link"
+              "[Personal Gmail](https://support.google.com/mail/answer/6584)",
+              "25 MB total attachments",
+              "Gmail can replace oversize attachments with a Google Drive link"
             ],
             [
-              "Outlook.com",
-              "20 MB per message",
-              "~14 MB",
-              "OneDrive link"
+              "[Outlook.com](https://support.microsoft.com/en-us/outlook/reduce-attachment-size-to-send-large-files-with-outlook)",
+              "20 MB email size limit",
+              "Share through OneDrive or another approved service"
             ],
             [
               "Microsoft 365 / Exchange Online",
-              "25 MB default, admin-configurable to 150 MB",
-              "~18 MB unless raised",
-              "OneDrive or SharePoint link"
+              "Set by organization policy",
+              "Check with the administrator or use an approved file-sharing link"
             ],
             [
-              "iCloud Mail",
-              "20 MB per message",
-              "~14 MB",
-              "Mail Drop, up to 5 GB, link expires in 30 days"
+              "[iCloud Mail](https://support.apple.com/en-us/102198)",
+              "20 MB; Mail Drop supports messages up to 5 GB",
+              "Mail Drop links are available for up to 30 days"
             ],
             [
-              "Yahoo Mail",
-              "25 MB per message",
-              "~18 MB",
-              "Cloud link"
+              "[Yahoo Mail](https://help.yahoo.com/kb/message-size-limits-yahoo-mail-sln5673.html)",
+              "25 MB total attached files",
+              "Use a file-sharing link if the recipient can access it"
             ],
             [
-              "Proton Mail",
-              "25 MB per message",
-              "~18 MB",
-              "Proton Drive link"
+              "[Proton Mail](https://proton.me/support/attaching-multiple-documents-to-a-message)",
+              "25 MB outgoing attachments",
+              "Share using Proton Drive or another service"
             ],
             [
-              "Typical corporate gateway",
-              "10 MB",
-              "~7 MB",
-              "Ask IT, or use a file share"
-            ],
-            [
-              "WeTransfer (free)",
-              "2 GB per transfer",
-              "2 GB",
-              "Not email, a download link"
+              "Work or school mail",
+              "Varies by administrator and recipient system",
+              "Check both organizations' rules before sending"
             ]
           ]
         },
         {
           "t": "note",
-          "x": "Email attachments are encoded in base64 before they travel, which turns every 3 bytes into 4. That is roughly 33 percent overhead. A 24 MB PDF becomes about 32 MB on the wire and will be rejected by a 25 MB limit. This is why your \"under the limit\" file bounced."
+          "x": "Email encoding can add roughly one-third to an attachment's transmitted size, but providers do not all describe or enforce their limits the same way. Leave room for the message and check the sender's interface and the recipient's rules rather than relying on a universal safe-size calculation."
         },
         {
           "t": "warn",
-          "x": "The recipient limit matters too, and you cannot see it. Sending 20 MB from Gmail to someone whose employer caps inbound mail at 10 MB fails silently or bounces hours later. For anything above 10 MB, a link is more reliable than an attachment."
+          "x": "The recipient may have a lower limit than the sender, especially at work or school. If you cannot confirm it, a sharing link with the right access permissions is often more reliable than a large attachment."
         },
         {
           "t": "h2",
@@ -426,16 +408,16 @@
               "x": "Right-click the file → Properties on Windows, or Get Info on macOS. Use the size in MB, not the \"size on disk\"."
             },
             {
-              "h": "Run a lossless pass",
-              "x": "Open the [PDF compressor](/tools/compress-pdf) and compress without downsampling. If that alone clears the limit, you are done and nothing was degraded."
+              "h": "Try Light compression first",
+              "x": "Open [Compress PDF](/tools/compress-pdf) and choose **Light**. It keeps the text selectable and avoids converting pages to images, though the file-size reduction depends on the PDF. Keep the original."
             },
             {
-              "h": "Downsample to 150 DPI",
-              "x": "If it is still too big, target 150 DPI. That is sharp on any screen and on most office printers, and it is the single biggest win for scanned documents."
+              "h": "Decide whether image-only pages are acceptable",
+              "x": "The tool's **Medium** and **Strong** options turn each page into an image. They do not offer a custom DPI setting, and the resulting text may no longer be searchable or selectable. Test a copy and inspect fine print before using either level."
             },
             {
-              "h": "Drop colour if the source is text",
-              "x": "A black-and-white scan stored as 24-bit colour is carrying three channels of nothing. Converting to greyscale typically removes another 60 percent."
+              "h": "Use a separate image workflow only if needed",
+              "x": "Compress PDF does not include a grayscale or per-image resolution control. If the scan is still too large, adjust a copy with your scanner or image software, or split the document instead."
             },
             {
               "h": "Re-check and send",
@@ -446,7 +428,7 @@
         {
           "t": "cta",
           "tool": "compress-pdf",
-          "x": "Compress the PDF in your browser first, the file never leaves your computer."
+          "x": "Compare Light, Medium and Strong on a copy. Medium and Strong convert pages to images, so inspect text and detail before sharing."
         },
         {
           "t": "h2",
@@ -454,7 +436,7 @@
         },
         {
           "t": "p",
-          "x": "A 60 MB report will not compress to 18 MB without becoming unreadable. Splitting is the honest alternative: send chapters 1-3 in one mail and 4-6 in another, or send only the pages the recipient asked for. Use [extract pages](/tools/extract-pages) when you need a specific range, or the [splitter](/tools/split-pdf) to cut at chapter boundaries. There is a full walkthrough in [splitting a large PDF for email](/blog/split/split-large-pdf-for-email)."
+          "x": "A large report may not shrink enough without losing detail. Splitting is an alternative: send chapters separately or share only the requested pages. Use [Extract Pages](/tools/extract-pages) for a specific range, or [Split PDF](/tools/split-pdf) for separate files. See [splitting a large PDF for email](/blog/split/split-large-pdf-for-email)."
         },
         {
           "t": "h2",
@@ -463,10 +445,10 @@
         {
           "t": "ul",
           "items": [
-            "**Google Drive**, in Gmail, click the Drive icon in the compose toolbar. Gmail offers this automatically once your attachment exceeds 25 MB. Set sharing to \"Anyone with the link\" or the recipient gets a permission-request loop.",
+            "**Google Drive**, in Gmail, use the Drive button or accept Gmail's prompt for an oversize attachment. Choose the narrowest sharing permission that lets the intended recipient open the file.",
             "**OneDrive**, in Outlook, Insert → Link → Browse this computer, then choose \"Upload and share\". Recipients outside your tenant may need the link set to \"Anyone\".",
-            "**iCloud Mail Drop**, Apple Mail offers this at 20 MB. Files stay available for 30 days and do not count against your iCloud storage.",
-            "**WeTransfer**, no account needed on the free tier, 2 GB per transfer, and the recipient gets a plain download page. Good for one-off sends to people outside your organisation."
+            "**iCloud Mail Drop**, Apple Mail can offer this when a message exceeds the provider limit. Apple allows Mail Drop messages up to 5 GB; links can be downloaded for up to 30 days.",
+            "For other services, use a file-sharing option approved for the recipient and check its current size, expiry and access rules."
           ]
         },
         {
@@ -483,29 +465,29 @@
         },
         {
           "t": "p",
-          "x": "If the file only got large because it is a scan, the deeper fix is on the scanner: 200 DPI greyscale for text documents, 300 DPI colour only when the colour matters. See [why your PDF is so large](/blog/compress/why-is-my-pdf-so-large) for the rest of the causes."
+          "x": "If the file is a scan, adjust resolution or colour in the scanner settings before creating the PDF. Choose settings that keep small text readable, and save a new copy rather than overwriting the original. See [why your PDF is so large](/blog/compress/why-is-my-pdf-so-large) for other causes."
         }
       ],
       "faqs": [
         {
           "q": "What is the maximum PDF size I can email?",
-          "a": "Gmail and Yahoo allow 25 MB per message, Outlook.com and iCloud Mail 20 MB, and many corporate gateways cap at 10 MB. Because base64 encoding adds about 33 percent, keep the actual file under 18 MB for a 25 MB limit and under 14 MB for a 20 MB limit."
+          "a": "Limits vary by service and account type. Personal Gmail and Yahoo Mail publish a 25 MB outgoing limit, Outlook.com publishes a 20 MB email limit, and iCloud Mail allows 20 MB or up to 5 GB through Mail Drop. Work and school administrators may set different limits. Check current provider guidance and leave room for message overhead."
         },
         {
           "q": "Why does my 20 MB PDF fail to send on a 25 MB limit?",
-          "a": "Attachments are base64-encoded for transport, which inflates them by roughly a third. A 20 MB file becomes about 27 MB on the wire. Add the message body and headers and it crosses a 25 MB limit."
+          "a": "Email encoding can add roughly one-third to an attachment's transmitted size, but providers handle their published limits differently. The recipient's account may also have a lower cap. Check both sides or send a permitted sharing link."
         },
         {
           "q": "How do I email a PDF that is 100 MB?",
-          "a": "Do not attach it. Upload it to Google Drive, OneDrive, Dropbox or WeTransfer and send the link. If the recipient insists on an attachment, split the PDF into parts under 18 MB each and send several messages."
+          "a": "Use a sharing service approved by the recipient, such as Google Drive, OneDrive or Dropbox, and set access for the intended person. If attachments are required, ask the recipient for a per-message limit and split the PDF into files that leave room below that limit."
         },
         {
           "q": "Does zipping a PDF make it smaller?",
-          "a": "Barely. PDF content streams are already Flate-compressed, so a ZIP typically saves 2-5 percent. Zipping is useful for bundling several files into one attachment, not for reducing size."
+          "a": "Usually very little, because many PDF contents are already compressed. ZIP is more useful for bundling several files than shrinking one PDF. Compare the archive size before sending it."
         },
         {
           "q": "What DPI should I use for a PDF I am emailing?",
-          "a": "150 DPI. It is crisp on any screen, prints acceptably on an office laser printer, and cuts a 600 DPI scan by roughly 94 percent. Use 300 DPI only when the recipient will print the document properly."
+          "a": "There is no single DPI target for every document. Choose scan resolution based on the smallest text, print size and whether OCR is needed. PrintxPDF's compressor does not expose a DPI setting."
         }
       ],
       "relatedTools": [
@@ -524,9 +506,9 @@
       "cluster": "compress",
       "title": "How to compress a PDF without losing quality",
       "metaTitle": "Compress a PDF Without Losing Quality",
-      "metaDescription": "What lossless PDF compression really means, which DPI target is safe for print and screen, and how to shrink a file without visible damage to text or scans.",
+      "metaDescription": "Learn what lossless PDF compression preserves, when image-based compression affects text, and how to choose settings for a scan without risking the original.",
       "published": "2026-03-19",
-      "updated": "2026-08-11",
+      "updated": "2026-10-03",
       "readMinutes": 7,
       "intent": "comparison",
       "primaryKeyword": "compress pdf without losing quality",
@@ -542,11 +524,10 @@
         "Flate",
         "JBIG2",
         "CCITT Group 4",
-        "Adobe Acrobat",
         "Ghostscript",
         "DPI"
       ],
-      "answer": "Truly lossless PDF compression means font subsetting, object streams and removing unused objects, it changes nothing visible and saves 10-30 percent. Anything beyond that downsamples images. For documents you will only read on screen, 150 DPI is visually indistinguishable from 300 and saves about 75 percent.",
+      "answer": "To preserve selectable text with PrintxPDF, choose Light. Medium and Strong render pages as images and may reduce detail. The compressor has no custom DPI control; change scan resolution in scanner or image software, keep the original, and compare the result.",
       "body": [
         {
           "t": "p",
@@ -648,7 +629,7 @@
         },
         {
           "t": "p",
-          "x": "A scanned page is a photograph. There is no lossless way to make a photograph meaningfully smaller. The question is how much resolution you can give up before it shows, and the honest answer depends on the destination."
+          "x": "A scanned page is a picture. Reducing its pixels can save space but loses detail. The right resolution depends on the destination and smallest text. The DPI table below is general scanning guidance, not a setting in PrintxPDF's compressor."
         },
         {
           "t": "table",
@@ -707,7 +688,7 @@
         },
         {
           "t": "warn",
-          "x": "Order matters, and so does the level. Run [OCR](/tools/ocr-pdf) on the high-resolution scan first, because recognition accuracy falls off a cliff below about 200 DPI. Then compress with **Light** only: Light rewrites the file structure and leaves the text layer alone, while Medium and Strong rasterise every page to a JPEG and rebuild the document, which destroys the text layer you just created. There is a full guide in [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+          "x": "If the PDF needs OCR, start with a clear source scan and run [OCR](/tools/ocr-pdf). Then choose **Light** in PrintxPDF to keep the searchable text layer. **Medium** and **Strong** turn pages into images, so they remove selectable and searchable text. Check the result with Ctrl+F and keep your original. See [how to OCR a scanned PDF](/blog/ocr/how-to-ocr-a-scanned-pdf)."
         },
         {
           "t": "h2",
@@ -736,16 +717,16 @@
               "x": "Copy the file before you touch it. Everything below is reversible only if you still have the source."
             },
             {
-              "h": "Run the lossless pass alone",
-              "x": "In the [compressor](/tools/compress-pdf), compress structurally with no image changes. Note the new size. If it is small enough, stop."
+              "h": "Choose Light",
+              "x": "In [Compress PDF](/tools/compress-pdf), choose **Light**. It does not rasterize pages and keeps text selectable. Note the new size; if it meets your needs, stop here."
             },
             {
               "h": "Decide the destination",
-              "x": "Screen only → 150 DPI. Will be printed → 300 DPI. Will be archived or re-OCR-ed → leave the images alone entirely."
+              "x": "A screen-only copy may need less resolution than a print or OCR copy. This tool does not change DPI, so set resolution when scanning or preparing an image copy."
             },
             {
               "h": "Downsample once",
-              "x": "Apply image compression to the original, not to an already-compressed copy. Compressing a JPEG twice stacks the artefacts."
+              "x": "If scanner or image software offers resampling, work from the original scan and export a separate copy. Recompressing lossy images repeatedly can add visible artefacts."
             },
             {
               "h": "Inspect at 400 percent",
@@ -760,29 +741,29 @@
         {
           "t": "cta",
           "tool": "compress-pdf",
-          "x": "Run a lossless pass first and see how far it gets you."
+          "x": "Use Light to keep text selectable; keep the original before trying image-based compression."
         },
         {
           "t": "p",
-          "x": "If lossless gets you nowhere and downsampling would hurt, the file is simply big. Split it, or send a link. See [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email) for the practical limits."
+          "x": "If Light does not reduce the size enough and image-based compression would hurt readability, split the file or use a sharing link. See [reducing a PDF for email](/blog/compress/reduce-pdf-file-size-for-email) for current provider guidance."
         }
       ],
       "faqs": [
         {
           "q": "Is there such a thing as truly lossless PDF compression?",
-          "a": "Yes. Font subsetting, packing objects into object streams, compressing the cross-reference table and deleting unreferenced objects are all bit-exact lossless. They typically save 10-30 percent. Anything advertising 90 percent savings on a text PDF is not lossless."
+          "a": "Yes. Some structural operations do not alter visible page content, but savings depend on the PDF and the tool. PrintxPDF's Light preset does not rasterize pages and does not guarantee a fixed reduction percentage."
         },
         {
           "q": "What DPI should I compress a PDF to?",
-          "a": "150 DPI for on-screen reading, 200 DPI for scanned text you may still print, 300 DPI for anything going to a printer properly. Below 150 the small text starts to soften; below 100 it becomes visibly blurry."
+          "a": "It depends on the smallest text and intended use. 150 to 300 DPI can be a useful scan range, but print and OCR requirements vary. PrintxPDF does not have a DPI selector; change scan settings before creating the PDF."
         },
         {
           "q": "Will compressing a PDF break the OCR text?",
-          "a": "It depends on the level. **Light** is structural and lossless, so the text layer is untouched. **Medium** and **Strong** rasterise each page to an image and rebuild the file, which removes every text object, the result looks identical but nothing is searchable any more. OCR first, then compress with Light, and check with Ctrl+F before you delete the original."
+          "a": "It depends on the preset. **Light** does not rasterize pages, so text stays selectable. **Medium** and **Strong** turn each page into an image, which removes selectable text. OCR first if needed, choose Light, and check with Ctrl+F before sharing."
         },
         {
           "q": "Why does my compressed PDF look blurry when I zoom in?",
-          "a": "The images were downsampled below what your zoom level needs. A 150 DPI page looks perfect at 100 percent and soft at 300 percent. If you need to zoom, keep 300 DPI, or go back to the original file."
+          "a": "An image-based preset may reduce fine detail, especially when you zoom in. Keep the original and compare at the size the recipient will read or print. The tool does not let you select an exact DPI."
         },
         {
           "q": "Does compressing a PDF twice make it smaller?",
@@ -807,7 +788,7 @@
       "metaTitle": "Why Is My PDF So Large? 8 Causes and Fixes",
       "metaDescription": "Eight things that make a PDF huge: scanned pages, unsubsetted fonts, duplicated images, incremental saves, uncropped photos, form fields and colour profiles.",
       "published": "2026-04-08",
-      "updated": "2026-08-25",
+      "updated": "2026-10-03",
       "readMinutes": 8,
       "intent": "troubleshooting",
       "primaryKeyword": "why is my pdf so large",
@@ -819,9 +800,7 @@
       ],
       "entities": [
         "PDF",
-        "Adobe InDesign",
         "Microsoft Word",
-        "Adobe Acrobat",
         "XMP",
         "ICC profile",
         "JPEG",
@@ -867,7 +846,7 @@
         },
         {
           "t": "p",
-          "x": "**Fix:** run a structural compression pass, which subsets fonts as part of the rewrite. In Acrobat you can confirm the state under File → Properties → Fonts: subset fonts are labelled \"Embedded Subset\"."
+          "x": "**Fix:** use a PDF optimizer that explicitly supports font subsetting, then inspect font properties in a desktop PDF reader. PrintxPDF's Light preset does not perform font subsetting."
         },
         {
           "t": "h2",
@@ -1050,14 +1029,14 @@
     {
       "slug": "compress-pdf-for-email-outlook-gmail",
       "cluster": "compress",
-      "title": "How to shrink a PDF for Gmail, Outlook and email",
-      "metaTitle": "Shrink a PDF for Gmail or Outlook Email",
-      "metaDescription": "Make a PDF small enough to email without guessing. Check the attachment limit, compress images, split the file and verify the delivered copy.",
+      "title": "Gmail and Outlook PDF attachment limits: what to do",
+      "metaTitle": "Gmail and Outlook PDF Attachment Limits",
+      "metaDescription": "Check your mailbox and recipient limits, then choose whether to compress or split a PDF or use an approved sharing link. Limits vary by account and workplace.",
       "published": "2026-10-03",
       "updated": "2026-10-03",
       "readMinutes": 5,
       "intent": "troubleshooting",
-      "primaryKeyword": "reduce pdf size for email",
+      "primaryKeyword": "gmail outlook pdf attachment limits",
       "secondaryKeywords": [
         "pdf too large to email",
         "compress pdf for gmail",

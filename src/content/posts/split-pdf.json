@@ -777,9 +777,9 @@
       "cluster": "split",
       "title": "How to split a large PDF to get under an email size limit",
       "metaTitle": "Split a Large PDF to Fit an Email Limit",
-      "metaDescription": "Gmail caps attachments at 25MB and Outlook.com at 20MB. Work out whether to compress or split your PDF, then split it into parts that actually arrive.",
+      "metaDescription": "Compare compression, chapter-based splitting and sharing links when a PDF is too large to email. Learn how message encoding affects attachment size.",
       "published": "2026-04-28",
-      "updated": "2026-08-24",
+      "updated": "2026-10-03",
       "readMinutes": 7,
       "intent": "howto",
       "primaryKeyword": "split large pdf for email",
@@ -800,11 +800,11 @@
         "Proton Mail",
         "Base64"
       ],
-      "answer": "Gmail allows 25 MB per message and Outlook.com allows 20 MB, but Base64 encoding inflates attachments by about a third, so aim for 18 MB or less. Compress the PDF first; if it is still too big, split it into numbered parts that each land under that ceiling.",
+      "answer": "Check the current sending limit for your account and the recipient's limit. Try Light compression to keep text selectable; Medium and Strong turn pages into images. If the file remains too large, split it into numbered parts or use an approved sharing link.",
       "body": [
         {
           "t": "p",
-          "x": "Two numbers decide this: what your provider allows, and what the recipient's provider allows. The smaller of the two wins, and you do not know the second one. That is why the practical target is lower than any published limit."
+          "x": "Your provider and the recipient's provider can enforce different limits. The lower one applies, and work or school accounts may have administrator-set rules. Check the current help page and leave room for the message itself."
         },
         {
           "t": "h2",
@@ -812,65 +812,57 @@
         },
         {
           "t": "table",
-          "caption": "Attachment limits as of 2026. Sending limits are the ones that bite.",
+          "caption": "Published sending limits checked October 2026. Business and school accounts may have custom policies.",
           "head": [
             "Service",
             "Sending limit",
-            "Receiving limit",
             "What happens above it"
           ],
           "rows": [
             [
-              "Gmail",
-              "25 MB per message",
-              "Up to 50 MB",
-              "Auto-uploads to Google Drive and inserts a link"
+              "[Personal Gmail](https://support.google.com/mail/answer/6584)",
+              "25 MB total attachments",
+              "Gmail may replace oversize attachments with a Google Drive link"
             ],
             [
-              "Outlook.com",
-              "20 MB",
-              "20 MB",
-              "Prompts you to use a OneDrive link instead"
+              "[Outlook.com](https://support.microsoft.com/en-us/outlook/reduce-attachment-size-to-send-large-files-with-outlook)",
+              "20 MB email size limit",
+              "Use OneDrive or another approved sharing service"
             ],
             [
               "Microsoft 365 / Exchange Online",
-              "25 MB by default",
-              "25 MB by default",
-              "Admins can raise it to 150 MB; most do not"
+              "Set by organization policy",
+              "Check with the administrator or use an approved file-sharing link"
             ],
             [
-              "Yahoo Mail",
-              "25 MB",
-              "25 MB",
-              "Rejected"
+              "[Yahoo Mail](https://help.yahoo.com/kb/message-size-limits-yahoo-mail-sln5673.html)",
+              "25 MB total attached files",
+              "Use a file-sharing link if the recipient can access it"
             ],
             [
-              "iCloud Mail",
-              "20 MB",
-              "20 MB",
-              "Mail Drop takes over, up to 5 GB, links expire after 30 days"
+              "[iCloud Mail](https://support.apple.com/en-us/102198)",
+              "20 MB; up to 5 GB with Mail Drop",
+              "Mail Drop links are available for up to 30 days"
             ],
             [
-              "Proton Mail",
-              "25 MB total per message",
-              "25 MB",
-              "Rejected"
+              "[Proton Mail](https://proton.me/support/attaching-multiple-documents-to-a-message)",
+              "25 MB outgoing attachments",
+              "Share using Proton Drive or another service"
             ],
             [
-              "Most corporate servers",
-              "10-25 MB",
-              "10-25 MB",
-              "Silently bounced, sometimes with no notice to you"
+              "Work or school mail",
+              "Varies by administrator and recipient system",
+              "Check both organizations' rules before sending"
             ]
           ]
         },
         {
           "t": "p",
-          "x": "The hidden third is **encoding overhead**. Email attachments are Base64-encoded for transport, which represents every 3 bytes as 4 characters. That is a 33 percent increase, plus line breaks. A 20 MB PDF becomes about 27 MB on the wire, and a 25 MB stated limit usually applies to the encoded message, not to your file."
+          "x": "Email encoding can add roughly one-third to an attachment's transmitted size, but providers do not all describe or enforce limits the same way. Leave room for the message and check the sender's interface and the recipient's rules instead of treating one file-size target as universal."
         },
         {
           "t": "note",
-          "x": "**Aim for 18 MB per attachment.** That leaves room for Base64 expansion under a 25 MB ceiling, plus headers and the message body. Under a 20 MB ceiling, aim for 14 MB."
+          "x": "There is no safe file-size target that applies to every provider. Use the limit for the sender's account, leave room for message overhead, and ask the recipient if their system has a lower cap."
         },
         {
           "t": "h2",
@@ -882,53 +874,39 @@
         },
         {
           "t": "p",
-          "x": "How much you can expect to save depends entirely on what is making the file big:"
+          "x": "The PrintxPDF compressor has three presets, not a custom DPI or grayscale control. The result depends on the source PDF:"
         },
         {
           "t": "table",
           "head": [
-            "What is in the PDF",
-            "Typical size before",
-            "After compression",
-            "Why"
+            "Preset",
+            "What it does",
+            "Best fit"
           ],
           "rows": [
             [
-              "300 DPI colour scans",
-              "1-3 MB per page",
-              "100-300 KB per page",
-              "Downsampling to 150 DPI plus better image encoding"
+              "Light",
+              "Tidies the PDF without rasterizing pages; text stays selectable",
+              "Documents where search, copy and sharp text matter"
             ],
             [
-              "Phone photos placed on pages",
-              "3-5 MB per page",
-              "200-500 KB per page",
-              "12 megapixels is far more than a page can show"
+              "Medium",
+              "Turns pages into images; may reduce a scan, but text is no longer selectable",
+              "A copy when reducing size matters more than searchable text"
             ],
             [
-              "Text and vector graphics only",
-              "Under 200 KB per page",
-              "Barely changes",
-              "There is nothing to downsample"
+              "Strong",
+              "Turns pages into images at a stronger setting; detail may be reduced",
+              "A copy for visual sharing when a smaller output is needed"
             ],
             [
-              "Presentation slides exported to PDF",
-              "500 KB-2 MB per slide",
-              "150-400 KB per slide",
-              "Background images and embedded fonts"
-            ],
-            [
-              "Signed or certified documents",
-              "Any",
-              "Do not compress",
-              "It would invalidate the signature"
             ]
           ]
         },
         {
           "t": "cta",
           "tool": "compress-pdf",
-          "x": "Try compression before splitting. A 60 MB scan usually lands between 5 and 10 MB."
+          "x": "Compare the three compression presets on a copy. Size reduction varies; Medium and Strong convert text and pages into images."
         },
         {
           "t": "h2",
@@ -944,11 +922,11 @@
           "rows": [
             [
               "40 MB of scans, mostly images",
-              "Compress. It will almost certainly fit in one message."
+              "Try Light first; compare Medium or Strong on a copy if searchable text is not required. Check the output size."
             ],
             [
-              "22 MB, already compressed, text-heavy",
-              "Split into two parts of about 11 MB each."
+              "Already-compressed PDF that exceeds the confirmed cap",
+              "Split it into parts sized for the sender and recipient limits, leaving room for the message."
             ],
             [
               "200 MB video-embedded or archival file",
@@ -959,12 +937,12 @@
               "Split, never compress. Compression re-encodes and breaks signatures."
             ],
             [
-              "Recipient is on a corporate server with a 10 MB cap",
-              "Split into 7 MB parts, or use a link."
+              "Recipient uses a company or school email system",
+              "Ask for its limit or use an approved sharing link."
             ],
             [
               "You do not know the recipient's limit",
-              "Keep each part under 10 MB. It is below every common ceiling."
+              "Ask the recipient or choose a suitably conservative size; no one target fits all systems."
             ],
             [
               "Recipient asked for one file",
@@ -981,7 +959,7 @@
           "items": [
             {
               "h": "Work out the chunk size",
-              "x": "Divide the file size by your per-message target. A 68 MB PDF with an 18 MB target needs 4 parts, so round up and aim for 4 or 5."
+              "x": "Choose a per-message target below the confirmed limit, allowing room for message overhead. Divide the file size by that target and round up to estimate the number of parts."
             },
             {
               "h": "Convert that to pages",
@@ -1025,10 +1003,10 @@
         {
           "t": "ul",
           "items": [
-            "**Google Drive**, Gmail does this automatically above 25 MB, uploading the file and inserting a link. Check the sharing permission it applies, because the default may be narrower than the recipient needs.",
+            "**Google Drive**, Gmail can replace attachments over its limit with a Drive link. Check the sharing permission before sending.",
             "**OneDrive**, Outlook offers the same thing, and Microsoft 365 accounts include 1 TB.",
             "**iCloud Mail Drop**, up to 5 GB, built into Apple Mail, links expire after 30 days.",
-            "**WeTransfer and similar**, up to 2 GB on the free tier, no account required for the recipient.",
+            "Other file-sharing services may work too; check their current size, expiry and access rules.",
             "For anything confidential, check whether your organisation permits these services before using one. Many do not."
           ]
         },
@@ -1048,15 +1026,15 @@
       "faqs": [
         {
           "q": "What is the maximum attachment size for Gmail?",
-          "a": "Gmail allows 25 MB for a message you send and can receive up to 50 MB. Above 25 MB it uploads the file to Google Drive and inserts a link instead. Because attachments are Base64-encoded, aim for about 18 MB of actual file to stay under the ceiling."
+          "a": "Personal Gmail allows up to 25 MB in total attachments. Gmail can replace oversize attachments with a Google Drive link. Work and school accounts may have administrator-set limits, and the recipient's system may be lower."
         },
         {
           "q": "What is the Outlook attachment size limit?",
-          "a": "Outlook.com caps attachments at 20 MB. Microsoft 365 and Exchange Online default to 25 MB, which an administrator can raise to 150 MB, though most organisations leave the default in place."
+          "a": "Microsoft publishes a 20 MB email-size limit for Outlook.com. Microsoft 365 and Exchange limits can depend on organization settings, so check with the administrator or use an approved sharing link."
         },
         {
           "q": "Should I compress or split a large PDF?",
-          "a": "Compress first. It keeps the document as one file, and a scan-heavy PDF typically drops by 80 to 90 percent. Split only when compression is not enough, or when the document is signed or certified and must not be re-encoded."
+          "a": "Try Light compression if you need text to stay searchable and selectable. Medium and Strong turn pages into images, with size reduction depending on the source. Split or use a sharing link if you cannot accept that trade-off. Preserve signed originals because rewriting can invalidate signatures."
         },
         {
           "q": "How do I split a PDF into equal parts by file size?",
@@ -1064,7 +1042,7 @@
         },
         {
           "q": "Why does my 24 MB PDF bounce from a 25 MB limit?",
-          "a": "Attachments are Base64-encoded for transport, adding roughly 33 percent, so a 24 MB file travels as about 32 MB. The limit applies to the encoded message including headers, which is why the practical maximum is around 18 MB."
+          "a": "Encoding can increase the transmitted size, and some limits include the message body or are set by the recipient's organization. Check both systems rather than relying on one universal file-size calculation."
         }
       ],
       "relatedTools": [

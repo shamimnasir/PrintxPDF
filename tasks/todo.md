@@ -312,3 +312,16 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
   rather than assuming.
 - The CORS errors the tools audit logs for server tools are the allowlist working: the audit runs
   from localhost:4175, which is not an allowed origin.
+
+## Phase 11 (2026-10-03): linguistic SEO and content-truth audit
+- [x] Corrected guide copy that claimed direct HEIC-to-PDF support, EXIF auto-rotation, DPI and
+      grayscale controls that the live JPG-to-PDF tool does not offer. Instructions now match its
+      accepted formats and visible controls, including exact English labels on translated pages.
+- [x] Clarified the compressor's Light, Medium and Strong behavior across the guide cluster; removed
+      invented savings guarantees and custom resolution claims.
+- [x] Rechecked mail-size guidance against current provider help pages; removed universal safe-size
+      thresholds and marked business limits as account-specific.
+- [x] Reduced overlapping guide intents, corrected misleading search snippets, fixed metadata
+      lengths and refreshed dates for materially edited posts.
+- [x] Verified 138 app tests, typecheck, production build (268 prerendered pages) and static site
+      audit (268 pages, 265 sitemap URLs, no issues). Lint exits cleanly with existing React advisories.
