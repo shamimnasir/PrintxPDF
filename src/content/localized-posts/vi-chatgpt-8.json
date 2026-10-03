@@ -1,0 +1,255 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "print-button-any-website",
+      "title": "Thêm nút in hoặc lưu PDF cho bất kỳ website nào",
+      "slug": "print-button-any-website",
+      "tool": "html-to-pdf",
+      "description": "Thiết kế nút in dễ thấy, kiểm tra CSS in và giữ nội dung quan trọng trên nhiều trang.",
+      "metaDescription": "Thêm nút in hoặc lưu PDF cho website bằng liên kết dễ dùng, CSS in phù hợp và kiểm thử trên máy tính lẫn điện thoại.",
+      "faqs": [
+        { "q": "Nút in trên website nên gọi chức năng nào?", "a": "Thông thường dùng cửa sổ in của trình duyệt để người đọc chọn máy in hoặc lưu thành PDF." },
+        { "q": "Có cần plugin để thêm nút in không?", "a": "Không nhất thiết. Có thể dùng chức năng có sẵn của hệ quản trị nội dung hoặc mã tùy chỉnh đã được kiểm tra." },
+        { "q": "Làm sao tránh in cả menu và quảng cáo?", "a": "Tạo stylesheet dành cho print để ẩn thành phần điều hướng và giữ phần bài viết cùng nguồn cần thiết." }
+      ],
+      "body": [
+        { "t": "p", "x": "Nút in hữu ích khi khách truy cập muốn lưu hóa đơn, hướng dẫn, bài viết hoặc biểu mẫu trên giấy. Trước khi thêm, xác định nội dung chính cần xuất hiện và những thành phần nên bỏ như điều hướng, quảng cáo, nút chia sẻ hay cửa sổ bật lên. Trải nghiệm tốt không chỉ là nút hoạt động: bản in phải đọc được, giữ liên kết có ích và không cắt mất thông tin quan trọng. Hãy thử cả in giấy lẫn lưu PDF vì hai cách có thể làm lộ lỗi bố cục khác nhau." },
+        { "t": "h2", "x": "Chọn cách triển khai phù hợp" },
+        { "t": "p", "x": "Nếu website dùng CMS, kiểm tra chức năng hoặc phần mở rộng chính thức trước khi thêm mã. Với mã tùy chỉnh, dùng nút có nhãn rõ và gọi hộp thoại in của trình duyệt khi người dùng chủ động nhấn. Tránh tự mở hộp thoại lúc trang tải, vì điều đó gây bất ngờ và làm phiền người dùng. Đặt nút gần nội dung cần in, bảo đảm có thể dùng bằng bàn phím và tên truy cập mô tả đúng hành động." },
+        { "t": "h2", "x": "Tạo stylesheet dành cho in" },
+        { "t": "p", "x": "Trong quy tắc print, ẩn thanh điều hướng, quảng cáo, nút tương tác và thành phần không có ý nghĩa trên giấy. Giữ tiêu đề, nội dung, tên tác giả, ngày, chú thích ảnh và đường dẫn nguồn. Dùng màu chữ đủ tương phản khi in đen trắng, cỡ chữ dễ đọc và lề hợp lý. Tránh thu nhỏ toàn bộ trang để ép vừa khổ giấy. Với bảng dài, giữ hàng tiêu đề và tránh tách các hàng quan trọng nếu trình duyệt hỗ trợ." },
+        { "t": "h2", "x": "Kiểm thử trên nhiều trang" },
+        { "t": "p", "x": "Xem trước một bài ngắn, một bài dài, trang có ảnh, bảng và nội dung động. Kiểm tra khổ A4 và Letter, hướng giấy, ngắt trang, đầu trang và chân trang. Xác nhận các liên kết quan trọng được giữ hoặc được thể hiện theo cách hữu ích. Thử Chrome, Firefox và Safari nếu đối tượng truy cập dùng các trình duyệt đó. Kiểm tra cả màn hình nhỏ để nút dễ chạm và không che nội dung." },
+        { "t": "h2", "x": "Bảo trì và quyền truy cập" },
+        { "t": "p", "x": "Sau khi giao diện hoặc theme thay đổi, chạy lại bộ trang thử vì class CSS có thể đã đổi. Không đưa dữ liệu cá nhân hoặc nội dung chỉ dành cho tài khoản vào bản in công khai ngoài ý muốn. Ghi rõ nút sẽ mở hộp thoại in của trình duyệt thay vì cam kết tạo tệp giống hệt trên mọi thiết bị. Một luồng đơn giản, có thể dùng bằng bàn phím và được kiểm thử thường đáng tin hơn một tiện ích nhiều hiệu ứng." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Kiểm tra trang mẫu trước khi lưu thành PDF hoặc gửi in." }
+      ]
+    },
+    {
+      "topic": "repurpose-pdf-for-accessible-publishing-formats",
+      "title": "Chuyển PDF thành định dạng xuất bản dễ tiếp cận",
+      "slug": "repurpose-pdf-for-accessible-publishing-formats",
+      "tool": "pdf-to-word",
+      "description": "Kiểm tra cấu trúc, thứ tự đọc và khả năng chọn văn bản trước khi chuyển đổi PDF.",
+      "metaDescription": "Chuyển PDF sang định dạng dễ tiếp cận bằng cách kiểm tra văn bản, thứ tự đọc, tiêu đề, bảng và hình ảnh thay vì chỉ đổi phần mở rộng.",
+      "faqs": [
+        { "q": "Chuyển PDF sang Word có tự làm tài liệu dễ tiếp cận không?", "a": "Không. Cần kiểm tra cấu trúc tiêu đề, thứ tự đọc, văn bản thay thế và khả năng điều hướng sau khi chuyển." },
+        { "q": "PDF quét ảnh cần bước nào?", "a": "Cần OCR để nhận dạng chữ, rồi soát lỗi và cấu trúc vì nhận dạng tự động có thể sai." },
+        { "q": "Có thể bỏ qua kiểm tra thủ công không?", "a": "Không nên. Bảng, cột, chú thích và thứ tự đọc thường cần người dùng xác minh." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chuyển một PDF sang DOCX, HTML hoặc định dạng khác chỉ thay đổi cách lưu nội dung; thao tác đó không tự bảo đảm tài liệu dễ tiếp cận. PDF có thể chứa văn bản ảnh, cấu trúc tiêu đề bị mất, thứ tự đọc sai hoặc biểu đồ thiếu mô tả. Hãy bắt đầu từ mục đích xuất bản: người đọc cần đọc trên thiết bị hỗ trợ, tìm kiếm, phóng to, tái sử dụng hay in? Chọn định dạng phù hợp và giữ lại tệp gốc để đối chiếu." },
+        { "t": "h2", "x": "Kiểm tra PDF nguồn" },
+        { "t": "p", "x": "Thử chọn và sao chép một đoạn văn. Nếu không chọn được, tài liệu có thể là ảnh quét và cần OCR. Kiểm tra tiêu đề, danh sách, bảng, chú thích, liên kết và thứ tự cột. Một tài liệu có vẻ đúng khi nhìn bằng mắt vẫn có thể được đọc sai bởi công nghệ hỗ trợ. Lưu ý ngôn ngữ chính và các thuật ngữ đặc biệt để sửa lỗi nhận dạng sau chuyển đổi." },
+        { "t": "h2", "x": "Chọn định dạng đầu ra" },
+        { "t": "p", "x": "DOCX phù hợp khi cần biên tập tiếp; HTML có thể thuận tiện cho web và điều hướng; văn bản thuần phù hợp nội dung đơn giản nhưng làm mất bố cục. Nếu cần giữ tính năng biểu mẫu, bảng phức tạp hoặc cấu trúc ngữ nghĩa, có thể phải tái tạo thủ công thay vì chỉ chuyển đổi. Đừng giả định mọi định dạng đầu ra đều giữ dấu trang, liên kết, chú thích hay thứ tự đọc." },
+        { "t": "h2", "x": "Sửa cấu trúc sau khi chuyển" },
+        { "t": "p", "x": "Trong tài liệu biên tập, áp dụng kiểu tiêu đề theo cấp bậc thay vì chỉ làm chữ đậm hoặc lớn hơn. Dùng danh sách có cấu trúc, tiêu đề cho bảng và văn bản thay thế hữu ích cho hình mang thông tin. Đặt thứ tự các khối đúng với cách đọc dự kiến. Kiểm tra liên kết có tên mô tả, ngôn ngữ tài liệu chính xác và nội dung không phụ thuộc riêng vào màu sắc." },
+        { "t": "h2", "x": "Kiểm thử bằng nhiều cách" },
+        { "t": "p", "x": "Soát nội dung với PDF gốc, nhất là số liệu, ký hiệu, bảng, chân trang và dấu câu. Thử điều hướng bằng bàn phím, đọc qua trình đọc màn hình nếu có điều kiện và phóng to văn bản. Kiểm tra tài liệu trên thiết bị khác để nhận ra lỗi bố cục. Nếu tài liệu công khai hoặc pháp lý, áp dụng tiêu chuẩn và quy trình kiểm toán phù hợp với tổ chức của bạn; chuyển đổi tự động không thay thế việc đánh giá." },
+        { "t": "cta", "tool": "pdf-to-word", "x": "Chuyển đổi bản sao PDF, rồi kiểm tra cấu trúc và khả năng đọc." }
+      ]
+    },
+    {
+      "topic": "save-ink-when-printing",
+      "title": "Cách tiết kiệm mực khi in tài liệu",
+      "slug": "save-ink-when-printing",
+      "tool": "pdf-to-text",
+      "description": "Giảm nền màu và bản in thừa mà vẫn giữ chữ, biểu đồ và nội dung cần dùng.",
+      "metaDescription": "Tiết kiệm mực khi in bằng cách chọn trang cần thiết, bỏ nền trang trí, dùng bản xem trước và điều chỉnh chất lượng phù hợp.",
+      "faqs": [
+        { "q": "Chế độ nháp có tiết kiệm mực không?", "a": "Nhiều máy in dùng ít mực hơn ở chế độ nháp, nhưng kết quả phụ thuộc thiết bị và nội dung." },
+        { "q": "Có nên in đen trắng mọi tài liệu?", "a": "Chỉ khi màu không mang thông tin thiết yếu; hãy giữ biểu đồ hoặc cảnh báo cần phân biệt màu." },
+        { "q": "In hai mặt có tiết kiệm mực không?", "a": "Nó chủ yếu tiết kiệm giấy. Mức dùng mực thay đổi theo nội dung và cài đặt máy in." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chi phí mực có thể tăng nhanh khi in trang web nhiều nền màu, ảnh lớn hoặc nội dung không cần thiết. Bắt đầu bằng câu hỏi liệu bản giấy có thật sự cần không; lưu PDF hoặc chia sẻ liên kết có thể đáp ứng nhu cầu mà không tiêu hao vật tư. Khi cần in, chọn đúng trang, xem trước bố cục và bỏ phần trang trí không phục vụ mục đích. Các cài đặt tiết kiệm khác nhau theo máy in, nên thử một trang trước khi in cả bộ." },
+        { "t": "h2", "x": "Chuẩn bị nội dung trước khi in" },
+        { "t": "p", "x": "Dùng bản in thân thiện nếu website có nút đó, hoặc chọn chế độ chỉ in nội dung. Bỏ menu, quảng cáo, ảnh nền và phần bình luận nếu không cần. Với PDF, xác định trang quan trọng và tránh in toàn bộ tệp theo thói quen. Bản xem trước giúp phát hiện trang trắng, lề lớn hoặc chữ bị cắt để không phải in lại." },
+        { "t": "h2", "x": "Chọn cài đặt tiết kiệm hợp lý" },
+        { "t": "p", "x": "Chọn đen trắng hoặc thang xám khi màu không truyền tải thông tin thiết yếu. Chế độ nháp hay tiết kiệm mực thường phù hợp bản đọc nội bộ, nhưng có thể làm chữ nhỏ hoặc hình nhạt khó đọc. Giảm độ phân giải khi chỉ cần bản tham khảo, không áp dụng máy móc cho mã QR, sơ đồ chi tiết hay bản cần lưu trữ. Chọn hai mặt để giảm giấy, nhưng kiểm tra hướng lật và độ xuyên mực." },
+        { "t": "h2", "x": "Giảm vùng phủ mực" },
+        { "t": "p", "x": "Nền đậm, ảnh phủ kín trang và vùng màu lớn thường dùng nhiều mực hơn văn bản. Nếu bạn kiểm soát tài liệu nguồn, tạo phiên bản nền trắng, chữ rõ và biểu đồ có nhãn. Không xóa màu duy nhất biểu thị trạng thái hoặc mức độ quan trọng; thay bằng nhãn hay hoa văn để bản đen trắng vẫn dễ hiểu. Phông chữ tiết kiệm mực chỉ tạo khác biệt tùy trường hợp và có thể làm giảm khả năng đọc." },
+        { "t": "h2", "x": "Theo dõi kết quả thực tế" },
+        { "t": "p", "x": "Ghi lại loại giấy, chế độ và số trang để so sánh kết quả giữa các lần in. Bảo trì đầu phun và dùng vật tư đúng thông số có thể tránh bản in lỗi phải làm lại. Nếu tài liệu có dữ liệu nhạy cảm, kiểm tra máy in và khay nhận trước khi gửi lệnh. Mục tiêu là giảm phần không cần thiết mà vẫn giữ thông tin dễ đọc, chứ không phải làm bản in mờ đến mức phải in lại." },
+        { "t": "cta", "tool": "pdf-to-text", "x": "Kiểm tra nội dung PDF và chỉ in những trang bạn cần." }
+      ]
+    },
+    {
+      "topic": "print-double-sided",
+      "title": "Cách in hai mặt, kể cả khi máy in không tự đảo giấy",
+      "slug": "print-double-sided",
+      "tool": "organize-pdf",
+      "description": "Chọn cạnh lật đúng, kiểm tra thứ tự trang và dùng in thủ công có bản thử an toàn.",
+      "metaDescription": "In hai mặt đúng chiều bằng cách chọn cạnh lật, kiểm tra hướng giấy và thử một bản trước khi in toàn bộ tài liệu.",
+      "faqs": [
+        { "q": "Lật cạnh dài hay cạnh ngắn?", "a": "Tài liệu dọc kiểu sách thường lật cạnh dài; trang ngang hoặc kiểu lịch có thể cần cạnh ngắn." },
+        { "q": "Máy in không có đảo mặt tự động thì làm sao?", "a": "In một tập trang, nạp lại theo hướng đã thử rồi in tập còn lại; chiều nạp tùy máy." },
+        { "q": "Vì sao mặt sau bị ngược?", "a": "Thường do chọn sai cạnh lật hoặc nạp giấy lại sai hướng. Ghi nhớ hướng sau bản thử." }
+      ],
+      "body": [
+        { "t": "p", "x": "In hai mặt có thể giảm lượng giấy và làm tài liệu gọn hơn, nhưng cài đặt lật sai sẽ khiến mặt sau bị ngược. Trước tiên xác định tài liệu dạng dọc hay ngang và người đọc sẽ lật như sách hay lật theo mép trên. Tên tùy chọn có thể khác nhau giữa trình điều khiển máy in. Luôn in thử một hoặc hai tờ, vì đường giấy và cách nạp lại khác nhau theo thiết bị." },
+        { "t": "h2", "x": "Chọn cạnh lật" },
+        { "t": "p", "x": "Với tài liệu dọc đọc như sách, lật cạnh dài thường giữ mặt sau đúng chiều. Với trang ngang hoặc tài liệu cần lật từ mép trên, cạnh ngắn thường phù hợp hơn. Tuy vậy, hãy xem biểu tượng minh họa trong hộp thoại và thử trước khi chạy số lượng lớn. Nếu trang được xoay hỗn hợp, kiểm tra từng loại trang vì cùng một thiết lập có thể không hợp toàn bộ tài liệu." },
+        { "t": "h2", "x": "In thủ công khi không có duplex" },
+        { "t": "p", "x": "Một số trình in cho phép in riêng trang lẻ rồi trang chẵn theo thứ tự đảo hoặc xuôi. In một vài trang mẫu, đánh dấu mặt và mép trên, rồi ghi lại hướng đặt giấy lại vào khay. Cài đặt tùy chọn lật theo cạnh dài/ngắn vẫn có thể xuất hiện ở bước in thủ công. Đừng giả định tất cả máy đều yêu cầu cùng một thao tác nạp lại: cơ chế kéo giấy khác nhau." },
+        { "t": "h2", "x": "Tránh lỗi thứ tự và trang trắng" },
+        { "t": "p", "x": "Kiểm tra số trang đầu, trang cuối và việc tài liệu có trang trắng cố ý để mở đầu chương hay không. Khi in hai tập riêng, chọn chính xác phạm vi lẻ và chẵn; nếu có đảo thứ tự trang, xác minh lại tập chẵn trước khi ghép. Với tài liệu cần đóng gáy, để lề trong đủ rộng và xem trước để chắc phần chữ không nằm sát mép đóng." },
+        { "t": "h2", "x": "Bảo đảm bản in dùng được" },
+        { "t": "p", "x": "Kiểm tra độ xuyên mực, nhất là giấy mỏng hoặc tài liệu có ảnh tối. Giấy dày hơn có thể cải thiện kết quả nhưng làm tăng chi phí. Với biểu mẫu cần viết tay, dành khoảng trống và xác nhận mực không in ở mặt sau làm khó đọc. Lưu cấu hình đã biết của máy để lần tới dễ tái sử dụng, nhưng vẫn kiểm tra khi đổi giấy hoặc máy in." },
+        { "t": "cta", "tool": "organize-pdf", "x": "Sắp xếp và kiểm tra thứ tự trang trước khi in hai mặt." }
+      ]
+    },
+    {
+      "topic": "fit-more-on-a-page",
+      "title": "Cách đặt nhiều nội dung hơn trên một trang mà vẫn dễ đọc",
+      "slug": "fit-more-on-a-page",
+      "tool": "excel-to-pdf",
+      "description": "Điều chỉnh khổ giấy, lề và tỷ lệ vừa phải; tránh thu nhỏ chữ hoặc bảng quá mức.",
+      "metaDescription": "Đưa thêm nội dung lên một trang bằng cách chỉnh lề, hướng giấy và tỷ lệ có kiểm soát, đồng thời giữ chữ đủ lớn để đọc.",
+      "faqs": [
+        { "q": "Có nên chọn vừa toàn bộ trang tính vào một trang?", "a": "Chỉ với bảng nhỏ. Bảng lớn thường thành chữ quá nhỏ; nên lặp tiêu đề và chia trang hợp lý." },
+        { "q": "Nên đổi hướng giấy khi nào?", "a": "Dùng ngang khi bảng có nhiều cột, nhưng xác nhận chữ vẫn dễ đọc và không sát mép." },
+        { "q": "Giảm lề có giúp vừa trang không?", "a": "Có thể, nhưng máy in có vùng không in được. Kiểm tra bản xem trước và thông số thiết bị." }
+      ],
+      "body": [
+        { "t": "p", "x": "Khi bảng tính hoặc tài liệu tràn sang nhiều trang, phản xạ thu nhỏ toàn bộ thường khiến chữ khó đọc. Tốt hơn là tìm nguyên nhân: cột thừa, lề lớn, hướng giấy chưa phù hợp hay ngắt trang đặt sai. Đặt mục tiêu rõ ràng, chẳng hạn giữ bảng so sánh trên một trang ngang, thay vì ép mọi nội dung vào một tờ. Hãy đánh giá theo kích thước in thật và khả năng đọc, không chỉ theo màn hình xem trước." },
+        { "t": "h2", "x": "Loại bỏ khoảng trống không cần" },
+        { "t": "p", "x": "Ẩn hoặc bỏ các hàng, cột không dùng và xóa vùng in dư. Với nội dung web, chọn chế độ chỉ in để loại điều hướng và quảng cáo. Điều chỉnh lề trong phạm vi máy in hỗ trợ, nhưng không đặt chữ sát mép vì nhiều thiết bị có vùng không in được. Xác định trang nào cần xuất hiện cùng nhau; chia thành nhiều trang có chủ đích tốt hơn là thu nhỏ mọi thứ." },
+        { "t": "h2", "x": "Chọn khổ và hướng giấy" },
+        { "t": "p", "x": "Trang ngang thường phù hợp bảng nhiều cột, còn trang dọc thuận tiện cho đoạn văn và danh sách. Kiểm tra khổ giấy thật trong khay để tránh co giãn tự động. Nếu bảng chỉ hơi tràn, có thể giảm lề hoặc điều chỉnh một vài cột; đừng thay đổi cỡ chữ toàn tài liệu trước khi thử. Giữ tiêu đề cột và nhãn hàng dễ đọc để người xem hiểu mối quan hệ giữa dữ liệu." },
+        { "t": "h2", "x": "Chia trang thông minh" },
+        { "t": "p", "x": "Đặt ngắt trang trước phần mới, tránh tách tiêu đề khỏi nội dung hoặc để một hàng bảng bị chia đôi. Với bảng nhiều trang, lặp hàng tiêu đề để người đọc không phải quay lại trang đầu. Trong bảng tính, chỉ định vùng in và xem từng trang trong chế độ xem ngắt trang. Với PDF, chia hoặc sắp xếp trang trước khi gửi in nếu thứ tự hiện tại không hợp lý." },
+        { "t": "h2", "x": "Kiểm tra tính dễ đọc" },
+        { "t": "p", "x": "Xem bản ở kích thước thật hoặc in một trang thử. Xác nhận chữ nhỏ nhất đọc được, đường kẻ đủ tương phản, biểu đồ còn nhãn và nội dung không bị cắt. In nhiều trang trên một mặt có thể tiết kiệm giấy cho slide, nhưng không phù hợp tài liệu cần đọc chi tiết. Nếu người đọc phải phóng to hoặc dùng kính, ưu tiên khả năng đọc hơn số trang." },
+        { "t": "cta", "tool": "excel-to-pdf", "x": "Xuất bảng tính thành PDF rồi xem trước từng trang." }
+      ]
+    },
+    {
+      "topic": "eco-friendly-printing",
+      "title": "Cách in ít hơn và giảm lãng phí giấy",
+      "slug": "eco-friendly-printing",
+      "tool": "pdf-reader",
+      "description": "Ưu tiên bản số khi phù hợp, in đúng phạm vi và chọn vật liệu theo nhu cầu thực tế.",
+      "metaDescription": "Giảm lãng phí khi in bằng cách thay bản giấy không cần thiết bằng PDF, chọn đúng trang và kiểm tra cài đặt trước khi in.",
+      "faqs": [
+        { "q": "Lưu PDF có luôn tốt hơn in giấy không?", "a": "Không phải mọi trường hợp. Cân nhắc khả năng truy cập, thời gian lưu trữ, thiết bị và nhu cầu đọc của người nhận." },
+        { "q": "In hai mặt có giảm tác động môi trường không?", "a": "Nó giảm lượng giấy cho nhiều tài liệu, nhưng hãy kiểm tra khả năng đọc và yêu cầu lưu trữ." },
+        { "q": "Có nên dùng giấy tái chế cho mọi việc?", "a": "Chọn loại phù hợp với máy in và mục đích; kiểm tra định lượng, độ bền và hướng dẫn tái chế tại địa phương." }
+      ],
+      "body": [
+        { "t": "p", "x": "Giảm tác động từ việc in bắt đầu bằng cách tránh những bản giấy không cần thiết. Với tài liệu có thể đọc trên thiết bị, lưu PDF hoặc chia sẻ liên kết có kiểm soát truy cập. Nhưng bản số cũng cần thiết bị và điện, còn một số người cần tài liệu giấy vì khả năng tiếp cận hoặc công việc thực tế. Hãy chọn theo mục đích, thời gian sử dụng và người nhận, thay vì áp dụng một quy tắc duy nhất cho mọi tài liệu." },
+        { "t": "h2", "x": "Rà soát trước khi bấm in" },
+        { "t": "p", "x": "Dùng bản xem trước để phát hiện trang trắng, lề lỗi và phần quảng cáo hoặc menu không cần. Chọn phạm vi trang cụ thể, in bản thử khi tài liệu dài và lưu cấu hình đúng cho lần sau. Với nội dung web, dùng bản in gọn nếu có. Tránh in nhiều bản chỉ để chia sẻ khi người nhận có thể xem tệp số an toàn và thuận tiện." },
+        { "t": "h2", "x": "Dùng giấy và mực vừa đủ" },
+        { "t": "p", "x": "In hai mặt khi tài liệu phù hợp, nhưng kiểm tra độ xuyên mực và yêu cầu ghi chú. Chọn giấy có thông số tương thích với máy và mục đích; giấy tái chế có nhiều loại khác nhau nên không phải loại nào cũng chạy tốt trong mọi khay. Chế độ thang xám hoặc nháp có thể giảm vật tư, nhưng không làm mờ cảnh báo, sơ đồ hoặc nội dung cần lưu trữ lâu dài." },
+        { "t": "h2", "x": "Tái sử dụng và xử lý đúng" },
+        { "t": "p", "x": "Giấy chỉ in một mặt có thể dùng làm giấy nháp nếu không chứa dữ liệu nhạy cảm. Tài liệu có thông tin cá nhân cần được xử lý theo chính sách bảo mật, không đưa vào khay tái sử dụng công khai. Tách giấy, hộp mực và vật tư theo chương trình thu hồi hoặc quy định nơi bạn sinh sống. Không tự ý nạp lại hộp mực nếu nhà sản xuất cảnh báo hoặc việc đó ảnh hưởng an toàn thiết bị." },
+        { "t": "h2", "x": "Đo lường thay đổi có ích" },
+        { "t": "p", "x": "Theo dõi số trang và số bản in theo nhóm công việc để biết nơi nào có thể giảm. Thay đổi một quy trình tại một thời điểm, chẳng hạn mặc định xem trước hoặc in hai mặt cho tài liệu nội bộ. Thu nhận ý kiến từ người cần bản giấy để không vô tình tạo rào cản truy cập. Mục tiêu thực tế là giảm phần in thừa, giữ khả năng đọc và tuân thủ yêu cầu vận hành." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Mở và rà soát PDF trước khi quyết định lưu số hay in giấy." }
+      ]
+    },
+    {
+      "topic": "qr-code-for-print",
+      "title": "Tạo mã QR có thể quét được từ bản in",
+      "slug": "qr-code-for-print",
+      "tool": "qr-code",
+      "description": "Chọn URL ổn định, tạo vùng yên tĩnh và thử quét ở kích thước in dự kiến.",
+      "metaDescription": "Tạo mã QR dễ quét trên giấy bằng URL ổn định, kích thước phù hợp, độ tương phản cao và thử nghiệm trước khi in hàng loạt.",
+      "faqs": [
+        { "q": "Mã QR trên tờ rơi nên lớn bao nhiêu?", "a": "Kích thước phụ thuộc khoảng cách quét và độ phức tạp; hãy thử bản in ở đúng khoảng cách người dùng sẽ đứng." },
+        { "q": "Có thể đặt logo lên mã QR không?", "a": "Có thể làm giảm khả năng quét. Nếu dùng, giữ vùng dữ liệu nguyên vẹn và thử trên nhiều điện thoại." },
+        { "q": "Vì sao mã QR in ra không quét được?", "a": "Nguyên nhân thường gồm mã quá nhỏ, thiếu tương phản, bị cắt vùng trắng hoặc URL sai." }
+      ],
+      "body": [
+        { "t": "p", "x": "Mã QR trên bao bì, poster hoặc tài liệu chỉ hữu ích nếu máy ảnh nhận ra nó nhanh chóng. Trước khi tạo mã, xác định nội dung đích và bảo đảm URL hoạt động ổn định. Dùng địa chỉ HTTPS dễ kiểm tra, hạn chế URL dài nếu công cụ tạo mã làm tăng mật độ điểm. Mã càng phức tạp thì thường càng cần kích thước lớn và bản in sắc nét. Đừng đánh giá chỉ từ bản xem trước trên màn hình." },
+        { "t": "h2", "x": "Bảo đảm URL và trang đích" },
+        { "t": "p", "x": "Mở URL trên điện thoại ở trạng thái chưa đăng nhập để xác nhận người nhận truy cập được. Kiểm tra chuyển hướng, lỗi chính tả và nội dung trên màn hình nhỏ. Nếu dùng liên kết chiến dịch, duy trì trang đích trong suốt thời gian tài liệu còn lưu hành. Tránh dịch vụ chuyển hướng không rõ chủ sở hữu hoặc đường dẫn có thể hết hạn mà không có kế hoạch thay thế." },
+        { "t": "h2", "x": "Giữ độ tương phản và vùng trắng" },
+        { "t": "p", "x": "Nền sáng và mã tối có độ tương phản cao thường dễ đọc hơn màu tương tự nhau. Để vùng yên tĩnh trống xung quanh mã; không đặt chữ, đường viền hoặc hình ảnh sát các ô dữ liệu. Không kéo giãn mã theo một chiều. Nếu thêm màu thương hiệu hay logo, giữ nguyên mô-đun cần thiết và kiểm thử kỹ vì trang trí có thể làm bộ quét nhầm." },
+        { "t": "h2", "x": "Chọn kích thước theo khoảng cách" },
+        { "t": "p", "x": "Một mã nhỏ trên danh thiếp được quét ở khoảng cách gần, còn poster có thể được quét từ xa hơn. In mẫu đúng kích thước dự kiến, đặt tại vị trí sử dụng và thử bằng nhiều điện thoại hoặc ứng dụng camera phổ biến. Nếu phải đưa thiết bị sát giấy hoặc thử nhiều lần, tăng kích thước, cải thiện độ tương phản hoặc đơn giản hóa URL trước khi in số lượng lớn." },
+        { "t": "h2", "x": "Kiểm tra chất lượng bản in" },
+        { "t": "p", "x": "Xem mã ở độ phân giải thật, không chỉ phóng to trên màn hình. Kiểm tra mực không lem, đường cắt không chạm vùng trắng và chất liệu không phản chiếu quá mạnh. Quét bản thử sau khi in để phát hiện thay đổi do máy in hoặc giấy. Đặt nhãn ngắn như “Quét để xem hướng dẫn” để người dùng biết mục đích và có lựa chọn nhập URL thủ công." },
+        { "t": "cta", "tool": "qr-code", "x": "Tạo mã QR rồi thử quét bản in trước khi phát hành." }
+      ]
+    },
+    {
+      "topic": "wifi-qr-code",
+      "title": "Tạo mã QR Wi-Fi để khách kết nối mạng",
+      "slug": "wifi-qr-code",
+      "tool": "qr-code",
+      "description": "Tạo mã kết nối tiện lợi nhưng giới hạn quyền truy cập và bảo vệ thông tin mạng.",
+      "metaDescription": "Tạo mã QR Wi-Fi cho khách với tên mạng, loại bảo mật chính xác và cách chia sẻ an toàn, rồi thử quét trước khi in.",
+      "faqs": [
+        { "q": "Mã QR Wi-Fi có làm lộ mật khẩu không?", "a": "Có thể. Người quét có thể kết nối và một số định dạng mã chứa thông tin xác thực, nên hãy dùng mạng khách riêng." },
+        { "q": "Mạng ẩn có dùng QR được không?", "a": "Một số công cụ hỗ trợ cờ mạng ẩn, nhưng cần nhập chính xác thông tin và kiểm tra trên thiết bị thực." },
+        { "q": "Nên đặt mã Wi-Fi ở đâu?", "a": "Chỉ đặt nơi khách được phép truy cập; tránh chia sẻ công khai nếu mã kết nối vào mạng nội bộ." }
+      ],
+      "body": [
+        { "t": "p", "x": "Mã QR Wi-Fi giúp khách nhập thông tin mạng nhanh hơn, nhưng nó cũng là cách chia sẻ quyền truy cập. Trước khi tạo mã, hỏi quản trị mạng xem có mạng khách tách biệt hay không. Không nên in thông tin của mạng dùng cho thiết bị quản trị, máy chủ hoặc dữ liệu nội bộ rồi đặt ở khu vực công cộng. Ai có thể quét mã có thể kết nối theo cấu hình mạng, vì vậy hãy cân nhắc đổi mật khẩu khi quyền truy cập không còn phù hợp." },
+        { "t": "h2", "x": "Chuẩn bị thông tin chính xác" },
+        { "t": "p", "x": "Ghi đúng tên mạng (SSID), loại bảo mật và mật khẩu, lưu ý chữ hoa, khoảng trắng và ký tự đặc biệt. Chọn tùy chọn mạng ẩn chỉ khi bộ định tuyến thực sự không phát tên mạng. Công cụ tạo QR có thể mã hóa thông tin trực tiếp vào hình, nên không đưa dữ liệu mạng vào dịch vụ không đáng tin cậy. Tạo mã trên thiết bị phù hợp và xử lý tệp như một thông tin truy cập." },
+        { "t": "h2", "x": "Dùng mạng khách riêng" },
+        { "t": "p", "x": "Mạng dành cho khách nên được cấu hình để giới hạn khả năng truy cập thiết bị nội bộ nếu bộ định tuyến hỗ trợ. Kiểm tra chính sách của nơi làm việc, quán hoặc cơ sở lưu trú trước khi chia sẻ. Đặt mã ở nơi phù hợp, không chụp và đăng công khai nếu mạng không dành cho mọi người. Nếu mật khẩu thay đổi, thu hồi bản in cũ và tạo mã mới." },
+        { "t": "h2", "x": "Thiết kế bản in rõ ràng" },
+        { "t": "p", "x": "Giữ mã đủ lớn, có vùng trắng xung quanh và độ tương phản cao. Kèm tên mạng hoặc hướng dẫn ngắn cho người không thể quét. Đừng in mật khẩu dạng văn bản bên cạnh nếu không cần, vì điều đó làm lộ thông tin trực tiếp. Chọn vị trí có ánh sáng tốt và tránh bề mặt phản chiếu." },
+        { "t": "h2", "x": "Thử kết nối trước khi chia sẻ" },
+        { "t": "p", "x": "Quét bản thử bằng một thiết bị chưa từng kết nối mạng để xác nhận tên, mật khẩu và kiểu bảo mật đúng. Kiểm tra trên cả iOS và Android nếu người dùng có thể sử dụng hai loại. Nếu kết nối thất bại, xác minh định dạng bảo mật và ký tự đặc biệt, không chỉ tạo lại cùng một mã. Hủy bản nháp chứa thông tin thật an toàn và chỉ phát hành mã đã được chủ mạng cho phép." },
+        { "t": "cta", "tool": "qr-code", "x": "Tạo mã Wi-Fi sau khi xác nhận bạn được phép chia sẻ mạng." }
+      ]
+    },
+    {
+      "topic": "qr-code-size-for-print",
+      "title": "Mã QR nên lớn bao nhiêu? Quy tắc theo khoảng cách",
+      "slug": "qr-code-size-for-print",
+      "tool": "qr-code",
+      "description": "Chọn kích thước dựa trên khoảng cách quét, độ phức tạp và chất lượng in thực tế.",
+      "metaDescription": "Chọn kích thước mã QR cho bản in theo khoảng cách quét, mật độ dữ liệu, vùng trắng và kết quả thử trên giấy thật.",
+      "faqs": [
+        { "q": "Có một kích thước tối thiểu cho mọi mã QR không?", "a": "Không. Khoảng cách, độ phức tạp, camera và chất lượng in đều ảnh hưởng khả năng quét." },
+        { "q": "Mã QR lớn hơn có luôn tốt hơn không?", "a": "Kích thước lớn thường dễ quét hơn nhưng cần cân đối với bố cục và khoảng cách sử dụng." },
+        { "q": "Khoảng trắng quanh mã có tính vào kích thước không?", "a": "Vùng yên tĩnh bao quanh cần được giữ, nhưng bản thân mô-đun mã phải đủ rõ và không bị biến dạng." }
+      ],
+      "body": [
+        { "t": "p", "x": "Không có một kích thước duy nhất phù hợp mọi mã QR. Mã trên danh thiếp được quét ở cự ly gần; mã trên bảng treo tường cần được nhận diện từ xa hơn. Độ dài URL và mức sửa lỗi ảnh hưởng mật độ mô-đun, trong khi giấy, mực và camera cũng thay đổi kết quả. Công thức kinh nghiệm có thể giúp lên bản nháp, nhưng thử in trong điều kiện thật mới là cách đáng tin cậy để chọn kích thước." },
+        { "t": "h2", "x": "Bắt đầu từ khoảng cách quét" },
+        { "t": "p", "x": "Xác định người dùng sẽ cầm tài liệu hay đứng cách poster vài bước. Tăng kích thước khi khoảng cách lớn, ánh sáng kém hoặc camera cần lấy nét xa. Với bảng chỉ dẫn, đặt mã ở tầm nhìn thuận tiện và tránh vị trí khuất. Thử quét từ nhiều vị trí thay vì chỉ đưa điện thoại sát mã." },
+        { "t": "h2", "x": "Tính đến độ phức tạp của mã" },
+        { "t": "p", "x": "URL dài hoặc dữ liệu lớn tạo ra nhiều ô hơn, khiến mã khó đọc khi thu nhỏ. Dùng địa chỉ đích ổn định và ngắn gọn, tránh mã hóa văn bản thừa. Mức sửa lỗi cao có thể giúp chịu được một phần hư hại, nhưng cũng làm mã dày hơn. Không che ô dữ liệu bằng logo nếu chưa thử kỹ." },
+        { "t": "h2", "x": "Giữ vùng trắng và tỷ lệ chính xác" },
+        { "t": "p", "x": "Để một vùng yên tĩnh không có chữ hoặc đường viền xung quanh mã. Giữ tỷ lệ vuông, không kéo giãn, cắt hoặc làm mờ khi dàn trang. Dùng nền tương phản rõ và tránh giấy bóng gây chói. Nếu in màu, kiểm tra kết quả sau khi mực khô vì màu thực tế có thể khác thiết kế." },
+        { "t": "h2", "x": "Lập quy trình thử trước khi in nhiều" },
+        { "t": "p", "x": "In đúng kích thước dự kiến trên vật liệu thật. Quét bằng nhiều điện thoại, ứng dụng camera và khoảng cách sử dụng. Mã phải mở đúng trang đích mà không yêu cầu đăng nhập ngoài dự kiến. Nếu quét chậm, tăng kích thước, rút ngắn URL, cải thiện tương phản hoặc đổi vật liệu. Chỉ đặt in số lượng lớn sau khi bản thử vượt qua kiểm tra." },
+        { "t": "cta", "tool": "qr-code", "x": "Tạo mã QR và kiểm tra bản in ở khoảng cách sử dụng thực tế." }
+      ]
+    },
+    {
+      "topic": "qr-code-on-business-card",
+      "title": "Cách đặt mã QR trên danh thiếp hoặc tờ rơi",
+      "slug": "qr-code-on-business-card",
+      "tool": "qr-code",
+      "description": "Chọn trang đích hữu ích, giữ mã đủ lớn và thử bản in trước khi chia sẻ.",
+      "metaDescription": "Đặt mã QR trên danh thiếp hoặc tờ rơi với nhãn rõ, URL ổn định, khoảng trắng và kích thước dễ quét trên giấy in thực tế.",
+      "faqs": [
+        { "q": "Mã QR trên danh thiếp nên mở trang nào?", "a": "Chọn đích có ích như hồ sơ liên hệ hoặc trang giới thiệu, và bảo đảm nó hoạt động trên điện thoại." },
+        { "q": "Có nên ghi lời kêu gọi cạnh mã không?", "a": "Có. Một nhãn ngắn giải thích mã sẽ mở gì giúp người nhận quyết định có quét hay không." },
+        { "q": "Mã QR nhỏ trên danh thiếp có quét được không?", "a": "Có thể, nhưng cần thử kích thước thật, vật liệu và điện thoại; không thu nhỏ chỉ để vừa thiết kế." }
+      ],
+      "body": [
+        { "t": "p", "x": "Mã QR trên danh thiếp hoặc tờ rơi nối bản in với một hành động trên điện thoại, chẳng hạn mở hồ sơ, xem thực đơn hay đăng ký sự kiện. Chọn một trang đích duy nhất, hữu ích và thân thiện với màn hình nhỏ. Tránh gửi người nhận đến trang chủ chung chung nếu có thể cung cấp nội dung cụ thể hơn. URL cần ổn định lâu dài vì tài liệu giấy có thể được giữ lại sau khi chiến dịch kết thúc." },
+        { "t": "h2", "x": "Chọn mục tiêu và quyền riêng tư" },
+        { "t": "p", "x": "Quyết định mã dùng để chia sẻ thông tin liên hệ, danh mục sản phẩm hay biểu mẫu. Kiểm tra người dùng không phải cung cấp dữ liệu nhạy cảm ngoài dự kiến. Nếu có theo dõi chiến dịch, thông báo theo quy định áp dụng và chỉ thu thập dữ liệu cần thiết. Thử trang đích khi chưa đăng nhập và trên điện thoại để tìm lỗi chuyển hướng hoặc nội dung bị che." },
+        { "t": "h2", "x": "Thiết kế bố cục có thứ bậc" },
+        { "t": "p", "x": "Đặt mã ở vị trí dễ nhận thấy nhưng không lấn át tên, chức danh và cách liên hệ. Thêm nhãn cụ thể như “Quét để lưu liên hệ” thay vì chỉ ghi “Quét tôi”. Giữ khoảng trắng xung quanh và không đặt chữ, logo hoặc đường cắt quá gần mô-đun. Chọn kích thước theo khoảng cách quét, không chỉ theo diện tích còn trống." },
+        { "t": "h2", "x": "Dùng mã có thể duy trì" },
+        { "t": "p", "x": "Nếu có thể, dùng URL trên tên miền bạn kiểm soát và giữ chuyển hướng hoạt động khi trang thay đổi. Tránh dịch vụ mã QR không rõ chính sách hết hạn hoặc quảng cáo chen giữa. Lưu bản gốc có độ phân giải phù hợp và ghi lại trang đích. Với tài liệu có thời hạn như sự kiện, xác định trước điều gì sẽ xuất hiện sau khi đăng ký đóng." },
+        { "t": "h2", "x": "Kiểm thử mẫu thật" },
+        { "t": "p", "x": "In trên đúng giấy và kích thước dự kiến. Quét bằng nhiều thiết bị, kiểm tra tốc độ mở trang và xác nhận mã không bị cắt khi xén thành phẩm. Thử dưới ánh sáng trong nhà và ngoài trời nếu phù hợp. Hỏi một người chưa biết trang đích để xem nhãn có đủ rõ. Nếu mã khó quét, tăng kích thước hoặc cải thiện tương phản thay vì thêm đồ họa." },
+        { "t": "cta", "tool": "qr-code", "x": "Tạo mã QR cho trang đích rồi thử trên bản in thật." }
+      ]
+    }
+  ]
+}
