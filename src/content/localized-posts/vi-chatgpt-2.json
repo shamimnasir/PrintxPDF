@@ -1,0 +1,255 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "how-to-merge-pdf-files",
+      "title": "Cách gộp nhiều tệp PDF thành một tài liệu",
+      "slug": "how-to-merge-pdf-files",
+      "tool": "merge-pdf",
+      "description": "Chọn PDF, sắp xếp thứ tự, gộp thành bản mới và mở lại để kiểm tra trang, dấu trang cùng biểu mẫu.",
+      "metaDescription": "Gộp PDF miễn phí theo đúng thứ tự. Chuẩn bị tên tệp, chọn tài liệu, sắp xếp trang và kiểm tra bản đã gộp trước khi chia sẻ.",
+      "faqs": [
+        { "q": "Gộp PDF có làm thay đổi tệp gốc không?", "a": "Quy trình thường tạo một tệp mới, nhưng hãy giữ bản gốc cho đến khi xác nhận bản gộp mở đúng." },
+        { "q": "Có thể đổi thứ tự trước khi gộp không?", "a": "Có. Kéo hoặc sắp xếp các tệp theo thứ tự mong muốn rồi kiểm tra bản xem trước." },
+        { "q": "Chữ ký số còn hợp lệ sau khi gộp không?", "a": "Việc chỉnh sửa PDF có thể làm trạng thái chữ ký thay đổi. Hãy xác minh chữ ký và hỏi đơn vị nhận trước khi sửa hồ sơ đã ký." }
+      ],
+      "body": [
+        { "t": "p", "x": "Gộp nhiều PDF thành một tệp giúp tạo hồ sơ hoàn chỉnh, gửi một lần hoặc đọc tài liệu theo một thứ tự liên tục. Trước khi bắt đầu, đặt tên các tệp dễ nhận biết, xác định thứ tự cuối cùng và giữ một bản sao của từng nguồn. Đặc biệt chú ý trang bìa, phụ lục, biểu mẫu và trang có chữ ký để không vô tình bỏ sót phần quan trọng." },
+        { "t": "h2", "x": "Chuẩn bị và chọn tài liệu" },
+        { "t": "p", "x": "Kiểm tra từng PDF có mở được và đúng phiên bản không. Nếu tệp đang được tải lên từ máy tính dùng chung, xác nhận bạn có quyền xử lý và lưu chúng ở vị trí phù hợp. Không đưa hồ sơ nhạy cảm lên dịch vụ mà tổ chức chưa phê duyệt. Tệp quét có thể có kích thước lớn, nên kiểm tra dung lượng và cân nhắc nén riêng trước khi gộp." },
+        { "t": "h2", "x": "Sắp xếp đúng thứ tự" },
+        { "t": "p", "x": "Thêm các PDF vào công cụ gộp rồi sắp xếp từ trang mở đầu đến phần kết thúc. Không chỉ dựa vào tên tệp nếu thứ tự như 1, 10, 2 có thể bị xếp sai. Dùng bản xem trước để kiểm tra tài liệu đầu tiên, trang chuyển tiếp và phụ lục. Nếu cần trộn trang từ nhiều nguồn, đổi thứ tự trang trước khi tạo tệp cuối." },
+        { "t": "h2", "x": "Tạo tệp và xác minh" },
+        { "t": "p", "x": "Tạo bản mới, mở lại trong trình đọc PDF và xem số trang, nội dung đầu cuối, dấu trang, liên kết cùng hướng trang. Tìm một vài từ đặc trưng từ mỗi tài liệu nguồn để xác nhận văn bản vẫn tồn tại. Biểu mẫu tương tác, lớp chú thích, phông chữ và metadata có thể được xử lý khác nhau giữa các công cụ, vì vậy hãy kiểm tra các tính năng bạn thực sự cần." },
+        { "t": "h2", "x": "Lưu và chia sẻ có kiểm soát" },
+        { "t": "p", "x": "Đặt tên bản gộp có ngày hoặc số phiên bản, rồi giữ nguyên các nguồn cho đến khi người nhận xác nhận. Chữ ký điện tử và chứng nhận có thể bị đánh dấu đã sửa khi trang được kết hợp. Nếu hồ sơ cần giữ tính toàn vẹn pháp lý, hỏi bên phát hành hoặc người nhận xem có chấp nhận bản đã gộp không. Trước khi gửi, kiểm tra người nhận, quyền truy cập và các trang có thông tin riêng tư." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Gộp PDF theo thứ tự đã chọn và mở lại bản kết quả để rà soát." }
+      ]
+    },
+    {
+      "topic": "merge-pdf-without-acrobat",
+      "title": "Gộp PDF không cần Adobe Acrobat",
+      "slug": "merge-pdf-without-acrobat",
+      "tool": "merge-pdf",
+      "description": "Dùng công cụ gộp PDF thay thế, phần mềm có sẵn hoặc lệnh dòng. Chọn phương án phù hợp với độ nhạy và chính sách dữ liệu.",
+      "metaDescription": "Gộp PDF mà không cần Acrobat bằng công cụ web, phần mềm miễn phí hoặc công cụ dòng lệnh. So sánh quyền riêng tư và cách kiểm tra đầu ra.",
+      "faqs": [
+        { "q": "Có cần trả phí để gộp PDF không?", "a": "Không nhất thiết. Có công cụ miễn phí và phần mềm mã nguồn mở, nhưng hãy xem giới hạn, quảng cáo và cách xử lý tệp." },
+        { "q": "Tệp nhạy cảm có nên gộp bằng website không?", "a": "Chỉ dùng dịch vụ được tổ chức cho phép và đọc chính sách xử lý dữ liệu. Nếu không chắc, chọn phần mềm được phê duyệt tại chỗ." },
+        { "q": "Tệp đã gộp có giống hoàn toàn Acrobat không?", "a": "Không phải lúc nào. Dấu trang, biểu mẫu, lớp, chữ ký và metadata phụ thuộc vào PDF nguồn và cách công cụ xử lý." }
+      ],
+      "body": [
+        { "t": "p", "x": "Adobe Acrobat không phải lựa chọn duy nhất để gộp PDF. Bạn có thể dùng công cụ web, ứng dụng miễn phí có sẵn trên hệ điều hành hoặc phần mềm dòng lệnh. Lựa chọn phù hợp phụ thuộc vào việc tài liệu có nhạy cảm không, bạn cần giữ biểu mẫu hay dấu trang không, và chính sách của cơ quan hoặc khách hàng yêu cầu gì." },
+        { "t": "h2", "x": "Công cụ trên trình duyệt" },
+        { "t": "p", "x": "Công cụ web thuận tiện khi bạn muốn sắp xếp nhanh mà không cài ứng dụng. Tuy nhiên, cách xử lý tệp khác nhau: có dịch vụ tải tệp lên máy chủ, có công cụ xử lý trong trình duyệt. Đừng suy ra điều đó chỉ từ trang quảng cáo. Đọc trang quyền riêng tư, kiểm tra tính năng cụ thể và chỉ chọn tệp không nhạy cảm nếu chưa xác minh được cách dữ liệu được xử lý." },
+        { "t": "h2", "x": "Ứng dụng miễn phí và mã nguồn mở" },
+        { "t": "p", "x": "Một số ứng dụng máy tính cho phép nhập PDF, đổi thứ tự rồi xuất tệp mới. Hệ điều hành cũng có thể có bản xem trước hoặc công cụ quản lý trang, nhưng không phải phiên bản nào cũng hỗ trợ gộp. Phần mềm nguồn mở cung cấp thêm lựa chọn, song cần tải từ trang chính thức, kiểm tra bản phát hành và cập nhật bảo mật thay vì lấy tệp cài từ kho không rõ nguồn." },
+        { "t": "h2", "x": "Dòng lệnh cho công việc lặp lại" },
+        { "t": "p", "x": "Nếu bạn quen terminal, các tiện ích PDF có thể gộp tệp theo một danh sách đã xác định và giúp xử lý nhiều hồ sơ nhất quán. Trước khi chạy, đọc hướng dẫn, thử trên bản sao và chắc chắn đường dẫn đầu ra không ghi đè nguồn. Công việc tự động hóa nên ghi log tên tệp, trạng thái và lỗi để phát hiện tài liệu bị thiếu hoặc hỏng." },
+        { "t": "h2", "x": "Kiểm tra khác biệt sau khi gộp" },
+        { "t": "p", "x": "Sau khi chọn phương án, mở bản kết quả và kiểm tra số trang, thứ tự, dấu trang, form, chú thích, liên kết và khả năng tìm kiếm. Chữ ký số có thể không còn xác thực như trước. Dịch vụ miễn phí có thể giới hạn kích thước, số lượt hoặc chèn watermark; hãy kiểm tra điều khoản trước khi dùng trong công việc. Lưu bản nguồn và ghi lại công cụ hoặc phiên bản nếu hồ sơ cần kiểm toán." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Chọn công cụ phù hợp với chính sách dữ liệu rồi xác minh bản PDF đã gộp." }
+      ]
+    },
+    {
+      "topic": "combine-images-and-pdfs",
+      "title": "Thêm ảnh quét vào một tệp PDF hiện có",
+      "slug": "combine-images-and-pdfs",
+      "tool": "merge-pdf",
+      "description": "Chuyển ảnh sang trang PDF, chỉnh hướng và kích thước, rồi kết hợp với tài liệu hiện có theo đúng thứ tự.",
+      "metaDescription": "Thêm ảnh chụp hoặc ảnh quét vào PDF hiện có. Chuyển ảnh thành trang, kiểm tra thứ tự, độ nét và kích thước trước khi gộp.",
+      "faqs": [
+        { "q": "Có thể chèn ảnh vào giữa PDF không?", "a": "Có. Tạo trang từ ảnh, đặt trang tại vị trí cần thiết rồi xuất một tệp mới." },
+        { "q": "Nên dùng JPG hay PNG?", "a": "Ảnh chụp thường phù hợp với JPG; văn bản quét và hình có cạnh rõ thường giữ nét tốt hơn với PNG." },
+        { "q": "Ảnh thêm vào có văn bản tìm kiếm được không?", "a": "Không tự động. Trang ảnh có thể cần OCR nếu bạn muốn tìm hoặc chọn văn bản." }
+      ],
+      "body": [
+        { "t": "p", "x": "Bạn có thể bổ sung trang đã chụp hoặc quét vào giữa một tài liệu PDF bằng cách chuyển ảnh thành trang PDF rồi gộp theo thứ tự. Trước tiên, xác định ảnh cần đứng trước hay sau trang nào. Tạo bản sao của PDF gốc và ảnh nguồn, nhất là khi đó là hóa đơn, hồ sơ học tập hoặc giấy tờ cần giữ bản nguyên trạng." },
+        { "t": "h2", "x": "Chuẩn bị ảnh" },
+        { "t": "p", "x": "Đặt giấy trên nền phẳng, chụp đủ bốn góc và tránh bóng đổ. Cắt viền thừa nhưng đừng cắt dấu, chữ ký hoặc số trang. JPG thường tiết kiệm dung lượng với ảnh chụp; PNG giữ cạnh chữ và sơ đồ sắc hơn. Nếu ảnh bị nghiêng, xoay hoặc chỉnh phối cảnh trước khi chuyển đổi. Tăng độ phân giải không thể khôi phục chi tiết đã mất từ ảnh mờ." },
+        { "t": "h2", "x": "Chuyển ảnh thành trang PDF" },
+        { "t": "p", "x": "Dùng công cụ tạo PDF từ ảnh hoặc chức năng quét trên điện thoại. Chọn khổ giấy phù hợp như A4 hoặc Letter, đặt hướng dọc hay ngang đúng với tài liệu và xem trước từng ảnh. Nếu các trang có kích thước khác nhau, cân nhắc đồng nhất để đọc thuận tiện. Đừng nén quá mạnh vì chữ nhỏ và dấu tiếng Việt dễ bị nhòe." },
+        { "t": "h2", "x": "Chèn vào đúng vị trí" },
+        { "t": "p", "x": "Mở công cụ gộp hoặc sắp xếp trang, thêm PDF hiện có và tệp trang ảnh, rồi kéo trang mới đến vị trí mong muốn. Xác nhận trang quét không bị đặt cuối tài liệu do thứ tự chọn tệp. Nếu chỉ cần một vài trang từ tài liệu lớn, trích riêng phạm vi trước khi gộp để giảm nhầm lẫn." },
+        { "t": "h2", "x": "Xác nhận chất lượng và văn bản" },
+        { "t": "p", "x": "Mở bản mới và kiểm tra trang đứng trước, trang ảnh và trang sau nó. Xem độ tương phản, chiều xoay, lề và thứ tự số trang. Ảnh không có lớp chữ nên không thể tìm kiếm; OCR có thể tạo lớp văn bản nhưng cần soát lỗi nhận dạng, đặc biệt với tên riêng và con số. Giữ ảnh gốc và PDF cũ cho đến khi bản kết hợp được chấp nhận." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Tạo trang PDF từ ảnh rồi gộp chúng vào đúng vị trí trong tài liệu." }
+      ]
+    },
+    {
+      "topic": "reorder-pdf-pages",
+      "title": "Đổi thứ tự, xoay hoặc xóa trang PDF",
+      "slug": "reorder-pdf-pages",
+      "tool": "organize-pdf",
+      "description": "Dùng hình thu nhỏ để sắp xếp, xoay và bỏ trang, sau đó kiểm tra toàn bộ cấu trúc và chữ ký.",
+      "metaDescription": "Sắp xếp lại, xoay hoặc xóa trang PDF bằng hình thu nhỏ. Giữ bản gốc và kiểm tra số trang, mục lục cùng nội dung cuối.",
+      "faqs": [
+        { "q": "Đổi thứ tự trang có sửa tệp gốc không?", "a": "Công cụ thường tạo bản xuất mới. Hãy giữ nguồn ban đầu cho đến khi xác nhận kết quả." },
+        { "q": "Xoay trang chỉ đổi cách xem hay đổi dữ liệu?", "a": "Tùy công cụ, xoay có thể thay đổi hướng trang trong tệp mới. Mở trên trình đọc khác để kiểm tra." },
+        { "q": "Có nên sửa PDF đã ký không?", "a": "Việc đổi trang có thể làm chữ ký số mất hiệu lực hoặc báo đã sửa. Hãy hỏi bên phát hành trước." }
+      ],
+      "body": [
+        { "t": "p", "x": "Hình thu nhỏ giúp bạn xem bố cục tổng thể để sắp xếp, xoay hoặc bỏ trang PDF. Trước khi chỉnh, lưu một bản sao và xác định thứ tự đúng bằng tiêu đề, số trang in, ngày hoặc nội dung của từng trang. Số thứ tự trong trình xem có thể khác số in ở chân trang, đặc biệt khi tài liệu có trang bìa hoặc phần phụ lục." },
+        { "t": "h2", "x": "Sắp xếp lại trang" },
+        { "t": "p", "x": "Mở chế độ quản lý trang và kéo hình thu nhỏ đến vị trí mong muốn. Với tài liệu dài, chia việc thành từng chương và xác nhận điểm bắt đầu, kết thúc sau mỗi lần thay đổi. Tránh dựa hoàn toàn vào tên ảnh quét vì tên có thể không phản ánh nội dung. Kiểm tra trang chuyển giữa các phần để đảm bảo câu, bảng hoặc phụ lục không bị ngắt sai." },
+        { "t": "h2", "x": "Xoay trang bị lệch" },
+        { "t": "p", "x": "Chọn trang nằm ngang hoặc bị lộn ngược rồi dùng thao tác xoay phù hợp. Một số trình đọc chỉ xoay tạm thời trong phiên xem, còn công cụ chỉnh sửa có thể lưu hướng mới vào tệp. Sau khi xuất, đóng và mở lại PDF, kiểm tra trên một ứng dụng khác và in thử nếu trang cần đưa lên giấy." },
+        { "t": "h2", "x": "Xóa trang không cần thiết" },
+        { "t": "p", "x": "Chỉ bỏ trang trắng, bản trùng hoặc phần không còn thuộc tài liệu. Trước khi xóa, soát tiêu đề, dấu, chữ ký và phụ lục để không loại bỏ bản ghi quan trọng. Sau thao tác, số trang của mục lục, tham chiếu nội bộ và dấu trang có thể không còn đúng. Cập nhật chúng nếu công cụ và quy trình cho phép." },
+        { "t": "h2", "x": "Rà soát và lưu phiên bản" },
+        { "t": "p", "x": "Mở bản xuất mới, kiểm tra trang đầu, giữa và cuối, tổng số trang, hướng đọc, liên kết và biểu mẫu. Chữ ký điện tử có thể bị vô hiệu khi cấu trúc trang thay đổi. Đặt tên file có nhãn phiên bản để phân biệt với nguồn. Với hồ sơ chính thức, xác nhận tổ chức cho phép chỉnh sửa và ghi lại ai đã thực hiện thay đổi." },
+        { "t": "cta", "tool": "organize-pdf", "x": "Sắp xếp trang bằng hình thu nhỏ và mở lại tệp để kiểm tra." }
+      ]
+    },
+    {
+      "topic": "combine-pdf-files-custom-page-order",
+      "title": "Gộp PDF theo thứ tự trang tùy chỉnh",
+      "slug": "combine-pdf-files-custom-page-order",
+      "tool": "merge-pdf",
+      "description": "Trích trang cần dùng từ từng tệp, đặt chúng theo trình tự tự chọn và kiểm tra ranh giới giữa các nguồn.",
+      "metaDescription": "Gộp trang từ nhiều PDF theo thứ tự tùy chỉnh. Lập danh sách trang, sắp xếp bản xem trước và xác minh tài liệu cuối.",
+      "faqs": [
+        { "q": "Có thể trộn trang từ nhiều tệp khác nhau không?", "a": "Có. Trích các trang cần dùng hoặc thêm từng tệp rồi sắp xếp mọi trang trong bản xem trước." },
+        { "q": "Làm sao giữ thứ tự khi có nhiều trang?", "a": "Lập danh sách nguồn và số trang trước, dùng tên file có số thứ tự, rồi kiểm tra các điểm chuyển." },
+        { "q": "Dấu trang sẽ tự cập nhật không?", "a": "Không phải lúc nào. Mở bản cuối, kiểm tra dấu trang, mục lục và tham chiếu sau khi đổi cấu trúc." }
+      ],
+      "body": [
+        { "t": "p", "x": "Khi cần ghép phần chọn lọc từ báo cáo, hợp đồng hoặc tài liệu quét, thứ tự tệp ban đầu thường không đủ. Bạn có thể trích các trang cần thiết rồi sắp xếp thành một PDF mới theo trình tự riêng. Trước khi bắt đầu, hãy viết danh sách trang theo nguồn, ví dụ hồ sơ A trang 1, hồ sơ B trang 4 đến 6, rồi hồ sơ A trang 2." },
+        { "t": "h2", "x": "Lập kế hoạch thứ tự" },
+        { "t": "p", "x": "Ghi tên từng nguồn, số trang trong trình xem và số trang in nếu có. Điều đó giúp phân biệt trang 5 của PDF với trang có số in 5. Đặt tên bản trích theo thứ tự, nhưng không phụ thuộc vào tên file mà bỏ qua việc xem hình thu nhỏ. Với hồ sơ cần đối chiếu, ghi lý do chọn trang để người khác hiểu trình tự mới." },
+        { "t": "h2", "x": "Trích và sắp xếp" },
+        { "t": "p", "x": "Dùng công cụ trích trang để tạo các phần cần thiết hoặc đưa các tệp vào công cụ tổ chức trang. Kéo từng trang đến đúng vị trí, kiểm tra phần đầu và cuối của mỗi nguồn. Nếu một trang có phụ lục hoặc mặt sau, xác nhận trang liên quan không bị bỏ lại. Bản xem trước nên thể hiện đúng thứ tự mà người nhận sẽ đọc." },
+        { "t": "h2", "x": "Theo dõi khác biệt về định dạng" },
+        { "t": "p", "x": "Các PDF có thể khác khổ giấy, hướng, chất lượng quét và phông. Sau khi gộp, xem các trang chuyển giữa nguồn để phát hiện trang bị xoay, chữ quá nhỏ hoặc vùng cắt khác nhau. Nếu một nguồn bị mờ, đừng cố phóng to rồi coi đó là bản rõ; hãy yêu cầu bản tốt hơn khi có thể. Kiểm tra các trang biểu mẫu và chú thích." },
+        { "t": "h2", "x": "Xác minh tài liệu hoàn chỉnh" },
+        { "t": "p", "x": "Mở tệp cuối, đếm trang và đối chiếu danh sách đã lập. Tìm một từ hoặc số liệu trong mỗi nguồn để kiểm tra văn bản còn tìm kiếm được. Dấu trang, liên kết mục lục và chữ ký có thể không còn tương ứng sau khi sắp xếp. Lưu bản nguồn riêng, đặt tên đầu ra rõ ràng và ghi chú các trang đã trích để có thể tái lập quy trình." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Lập thứ tự trang trước, sau đó gộp và kiểm tra từng điểm chuyển." }
+      ]
+    },
+    {
+      "topic": "split-pdf-into-pages",
+      "title": "Tách PDF thành từng trang hoặc từng khoảng",
+      "slug": "split-pdf-into-pages",
+      "tool": "split-pdf",
+      "description": "Tạo tệp riêng cho mỗi trang hoặc chia theo phạm vi, sau đó kiểm tra tên và thứ tự đầu ra.",
+      "metaDescription": "Tách PDF thành từng trang, chương hoặc khoảng trang. Lập phạm vi trước và mở các tệp đầu ra để xác nhận nội dung.",
+      "faqs": [
+        { "q": "Có thể lưu mỗi trang thành một PDF riêng không?", "a": "Có, nếu công cụ hỗ trợ chế độ một trang mỗi tệp. Kiểm tra tên file và số trang sau khi xuất." },
+        { "q": "Tách PDF có làm giảm chất lượng không?", "a": "Thông thường chỉ phân chia các trang, nhưng hãy kiểm tra đầu ra vì một số công cụ có thể chuyển đổi hoặc nén nội dung." },
+        { "q": "Tách tệp đã ký có ảnh hưởng gì?", "a": "Chữ ký có thể báo đã thay đổi hoặc không xác thực trong các phần mới. Hãy hỏi đơn vị nhận trước khi xử lý." }
+      ],
+      "body": [
+        { "t": "p", "x": "Tách PDF hữu ích khi bạn chỉ cần gửi một chương, chia bộ hồ sơ thành phần nhỏ hoặc tạo một tệp cho mỗi trang. Trước khi xuất, quyết định bạn cần các trang riêng lẻ hay một vài khoảng liên tục. Giữ tệp gốc và lập danh sách trang để tránh bỏ sót hoặc gửi nhầm phần. Nếu dữ liệu nhạy cảm, dùng công cụ được tổ chức cho phép." },
+        { "t": "h2", "x": "Tách từng trang hay theo khoảng" },
+        { "t": "p", "x": "Chế độ từng trang thường tạo nhiều PDF nhỏ, còn phạm vi cho phép nhóm trang 1 đến 5 hoặc 12 đến 18 thành các phần có ý nghĩa. Chọn theo cách người nhận cần đọc và giới hạn kích thước của kênh gửi. Đừng tách giữa hai mặt của một biểu mẫu hoặc giữa phần giải thích và bảng liên quan nếu chúng cần được đọc cùng nhau." },
+        { "t": "h2", "x": "Nhập phạm vi cẩn thận" },
+        { "t": "p", "x": "Đối chiếu số trang trong trình xem với số in trên tài liệu. Bìa, trang giới thiệu và phụ lục làm hai cách đánh số khác nhau. Xác nhận dấu phẩy, dấu gạch nối và thứ tự các phạm vi theo cú pháp công cụ yêu cầu. Xem trước trang đầu và cuối của từng phần trước khi bắt đầu xử lý số lượng lớn." },
+        { "t": "h2", "x": "Đặt tên các tệp kết quả" },
+        { "t": "p", "x": "Dùng tên có số thứ tự và khoảng trang, ví dụ phan-01-trang-1-den-5. Cách đặt tên này giúp người nhận ghép đúng thứ tự và phát hiện tệp thiếu. Nếu mỗi trang được xuất riêng, dùng số có cùng độ dài như 001, 002 để danh sách không xếp 10 trước 2. Tránh ghi đè file gốc hoặc bản trước." },
+        { "t": "h2", "x": "Kiểm tra đầu ra và quyền truy cập" },
+        { "t": "p", "x": "Mở từng phần, đếm trang và kiểm tra nội dung đầu cuối. Tìm văn bản, xem hình, biểu mẫu, chú thích và liên kết nếu cần. Chữ ký số có thể mất hiệu lực do tài liệu đã bị thay đổi. Nếu gửi qua liên kết chia sẻ, đặt quyền đúng người nhận, ngày hết hạn phù hợp và không bật truy cập công khai cho tài liệu riêng tư." },
+        { "t": "cta", "tool": "split-pdf", "x": "Chọn trang hoặc khoảng rõ ràng rồi xác minh từng tệp sau khi tách." }
+      ]
+    },
+    {
+      "topic": "extract-pages-from-pdf",
+      "title": "Trích các trang cụ thể từ PDF",
+      "slug": "extract-pages-from-pdf",
+      "tool": "extract-pages",
+      "description": "Chọn số trang cần giữ, tạo tài liệu mới và xác nhận trang được trích không thiếu nội dung liên quan.",
+      "metaDescription": "Trích một hoặc nhiều trang từ PDF mà vẫn giữ tài liệu nguồn. Kiểm tra số trang, thứ tự, biểu mẫu và chữ ký trong bản mới.",
+      "faqs": [
+        { "q": "Trích trang có xóa chúng khỏi PDF gốc không?", "a": "Thường không. Công cụ tạo bản mới, nhưng hãy giữ nguồn và xác minh trước khi xóa bất cứ tệp nào." },
+        { "q": "Có thể trích các trang không liền nhau không?", "a": "Nhiều công cụ hỗ trợ danh sách hoặc nhiều khoảng; hãy kiểm tra cú pháp và thứ tự đầu ra." },
+        { "q": "Trang trích có chứa liên kết đến phần còn lại không?", "a": "Liên kết hoặc dấu trang nội bộ có thể trỏ đến trang không còn trong bản trích. Mở thử trước khi chia sẻ." }
+      ],
+      "body": [
+        { "t": "p", "x": "Trích trang tạo một PDF mới chỉ gồm những phần bạn chọn, hữu ích để chia sẻ chương, biểu mẫu hoặc trang tham khảo mà không gửi cả tài liệu. Đây là thao tác khác với xóa trang khỏi nguồn. Hãy bảo quản PDF gốc, xác định phạm vi bằng cả nội dung lẫn số thứ tự, và kiểm tra trang mở đầu cùng trang kết thúc trước khi tạo bản trích." },
+        { "t": "h2", "x": "Xác định đúng các trang" },
+        { "t": "p", "x": "Số trong trình xem thường đếm từ trang đầu, trong khi số in có thể bắt đầu sau bìa hoặc dùng chữ số La Mã. Dùng tiêu đề, tên chương và hình thu nhỏ để xác nhận từng trang. Khi cần nhiều đoạn không liên tiếp, ghi danh sách trước để tránh bỏ qua phụ lục hoặc trang có điều kiện quan trọng." },
+        { "t": "h2", "x": "Chọn cách trích" },
+        { "t": "p", "x": "Chọn một trang, một khoảng liên tục hoặc nhiều khoảng theo định dạng của công cụ. Nếu thứ tự đầu ra phải khác nguồn, xác nhận công cụ có cho sắp xếp lại hay không. Tạo bản mới thay vì ghi đè, đặt tên giải thích mục đích và lưu nó vào nơi có quyền truy cập phù hợp. Với tài liệu nhạy cảm, không tải lên dịch vụ chưa được phê duyệt." },
+        { "t": "h2", "x": "Kiểm tra liên kết và nội dung phụ" },
+        { "t": "p", "x": "Mở PDF được trích và xem số trang, văn bản, hình, trường biểu mẫu và chú thích. Dấu trang hoặc liên kết nội bộ có thể vẫn trỏ đến trang trong tài liệu gốc nên trở thành liên kết không hữu ích. Mục lục có thể tham chiếu đến nội dung không được đưa vào bản trích. Cập nhật ghi chú kèm theo để người nhận hiểu đây là một phần tài liệu." },
+        { "t": "h2", "x": "Bản gốc, chữ ký và phát hành" },
+        { "t": "p", "x": "Tách trang có thể làm thay đổi cấu trúc hoặc trạng thái chữ ký số. Nếu bản gốc là hồ sơ đã ký, hỏi bên phát hành trước khi trích và ghi rõ bản nào được coi là chính thức. Kiểm tra thông tin cá nhân trên các trang được chọn; trích đúng trang không đồng nghĩa đã xóa dữ liệu ẩn. Giữ bản gốc an toàn và kiểm tra người nhận trước khi gửi." },
+        { "t": "cta", "tool": "extract-pages", "x": "Tạo bản PDF mới từ phạm vi đã chọn và xác minh nội dung của nó." }
+      ]
+    },
+    {
+      "topic": "delete-pages-from-pdf",
+      "title": "Xóa trang thừa khỏi PDF và kiểm tra bản mới",
+      "slug": "delete-pages-from-pdf",
+      "tool": "delete-pages",
+      "description": "Loại trang trắng hoặc bản trùng, giữ bản gốc và kiểm tra mục lục, số trang cùng chữ ký sau khi xuất.",
+      "metaDescription": "Xóa trang khỏi PDF bằng hình thu nhỏ, rồi mở lại để kiểm tra thứ tự, số trang, tham chiếu và trạng thái chữ ký.",
+      "faqs": [
+        { "q": "Xóa trang có làm thay đổi tệp gốc không?", "a": "Thông thường công cụ tạo bản mới. Hãy giữ nguồn cho đến khi xác nhận tài liệu đầu ra." },
+        { "q": "Xóa trang có che được dữ liệu nhạy cảm không?", "a": "Không nếu dữ liệu còn xuất hiện ở trang khác. Dùng quy trình che dữ liệu đã xác minh khi cần loại bỏ nội dung." },
+        { "q": "Chữ ký số có còn hợp lệ sau khi xóa trang?", "a": "Chỉnh sửa cấu trúc có thể làm chữ ký báo đã thay đổi hoặc không hợp lệ; hãy hỏi bên nhận." }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF có thể chứa trang trắng, bìa cũ, bản trùng hoặc phụ lục không còn cần thiết. Xóa trang giúp tạo một bản gọn hơn, nhưng cần kiểm tra kỹ để không loại bỏ phần có giá trị. Lưu nguồn riêng và lập danh sách trang dự kiến bỏ trước khi thao tác. Số trong trình xem và số in ở cuối trang có thể khác nhau." },
+        { "t": "h2", "x": "Nhận diện trang cần bỏ" },
+        { "t": "p", "x": "Duyệt hình thu nhỏ, đọc tiêu đề và xem trang ngay trước hoặc sau trang định xóa. Với các biểu mẫu giống nhau, so sánh ngày, mã hồ sơ và tên người để tránh bỏ nhầm. Nếu xóa nhiều trang, kiểm tra lại từng phạm vi. Hủy lựa chọn khi không chắc, thay vì dựa vào vị trí trang mà không xem nội dung." },
+        { "t": "h2", "x": "Tạo bản mới và xem cấu trúc" },
+        { "t": "p", "x": "Xuất thành tệp mới với tên phiên bản rõ ràng. Mở lại và kiểm tra tổng số trang, trang đầu, trang cuối, điểm chuyển giữa các chương và thứ tự phụ lục. Mục lục, dấu trang và liên kết có thể vẫn ghi số hoặc vị trí cũ. Sửa tham chiếu khi cần và thông báo cho người nhận nếu nội dung đã thay đổi." },
+        { "t": "h2", "x": "Đừng nhầm xóa trang với che dữ liệu" },
+        { "t": "p", "x": "Xóa một trang không loại bỏ cùng thông tin nếu nó còn ở nơi khác trong tài liệu. Hình chữ nhật đen hoặc cắt lề cũng không phải cách xóa an toàn. Khi cần loại bỏ dữ liệu nhạy cảm khỏi mọi lớp, áp dụng công cụ redaction thích hợp rồi tìm, chọn và sao chép thử nội dung để xác minh." },
+        { "t": "h2", "x": "Xử lý hồ sơ đã ký" },
+        { "t": "p", "x": "Chữ ký điện tử có thể được gắn với các byte hoặc cấu trúc cụ thể của tệp. Việc xóa trang đôi khi khiến ứng dụng báo tài liệu đã sửa, ngay cả khi mục đích chỉ là loại bỏ trang thừa. Với hồ sơ pháp lý, thuế hoặc lưu trữ chính thức, hỏi chủ sở hữu và người nhận trước khi thay đổi, và giữ một bản gốc không chỉnh sửa." },
+        { "t": "cta", "tool": "delete-pages", "x": "Bỏ đúng trang, rồi mở PDF mới để kiểm tra toàn bộ thứ tự." }
+      ]
+    },
+    {
+      "topic": "split-large-pdf-for-email",
+      "title": "Chia PDF lớn để gửi email",
+      "slug": "split-large-pdf-for-email",
+      "tool": "split-pdf",
+      "description": "So sánh nén, chia theo chương và liên kết chia sẻ. Kiểm tra giới hạn gửi cùng quyền truy cập của người nhận.",
+      "metaDescription": "Chia PDF lớn thành phần hợp lý để gửi email. Kiểm tra giới hạn nhà cung cấp, kích thước tệp và quyền truy cập trước khi gửi.",
+      "faqs": [
+        { "q": "Giới hạn tệp đính kèm email là bao nhiêu?", "a": "Giới hạn thay đổi theo nhà cung cấp, tài khoản và chính sách tổ chức. Kiểm tra hướng dẫn hiện tại của cả người gửi lẫn người nhận." },
+        { "q": "Nên nén hay chia PDF?", "a": "Nén phù hợp với tài liệu có ảnh lớn; chia theo chương phù hợp khi các phần có thể đọc riêng." },
+        { "q": "Gửi các phần trong một hay nhiều email?", "a": "Xem giới hạn tổng thư, đặt tên tệp có thứ tự và báo cho người nhận tổng số phần." }
+      ],
+      "body": [
+        { "t": "p", "x": "Khi PDF vượt giới hạn đính kèm, trước hết hãy kiểm tra quy định hiện tại của nhà cung cấp và tổ chức nhận. Kích thước thư có thể tăng khi mã hóa tệp đính kèm, nên đừng đặt đầu ra sát giới hạn. Bạn có thể nén PDF, chia tài liệu tại các chương hợp lý hoặc dùng liên kết chia sẻ có kiểm soát. Giữ bản gốc và tạo bản gửi riêng." },
+        { "t": "h2", "x": "Chọn nén hay chia" },
+        { "t": "p", "x": "Tệp nhiều ảnh quét có thể giảm đáng kể khi nén, nhưng chữ nhỏ, con dấu và hình có thể mờ. Kiểm tra trang mẫu ở mức phóng đại bình thường trước khi gửi. Nếu tài liệu có các chương độc lập, chia theo ranh giới nội dung sẽ dễ sử dụng hơn. Nếu người nhận cần toàn bộ tài liệu như một khối thống nhất, cân nhắc liên kết riêng tư thay vì tách." },
+        { "t": "h2", "x": "Tạo các phần dễ ghép lại" },
+        { "t": "p", "x": "Không chia giữa bảng, biểu mẫu nhiều trang, đoạn văn hoặc trang chữ ký. Đặt tên theo thứ tự như 01-tren-03 và ghi phạm vi trang. Mở từng phần, xác nhận trang đầu cuối và dung lượng. Người nhận cần biết thứ tự đọc, tổng số file và phần nào còn thiếu nếu một thư không đến." },
+        { "t": "h2", "x": "Gửi liên kết có kiểm soát" },
+        { "t": "p", "x": "Nếu dùng kho đám mây, chỉ cấp quyền cho đúng người nhận, không bật công khai nếu không cần. Đặt thời hạn hoặc giới hạn tải khi chính sách cho phép. Tài liệu nhạy cảm chỉ nên đưa lên dịch vụ được tổ chức chấp thuận. Nếu gửi nhiều email, dùng tiêu đề phân biệt và đối chiếu số phần để tránh tạo chuỗi thư khó theo dõi." },
+        { "t": "h2", "x": "Kiểm tra lần cuối" },
+        { "t": "p", "x": "Xác minh địa chỉ người nhận, số tệp đính kèm và dung lượng của từng thư. Kiểm tra quyền mở của liên kết bằng tài khoản hoặc quy trình phù hợp. Nếu tệp được bảo vệ bằng mật khẩu, gửi thông tin truy cập qua kênh riêng theo chính sách. Sau khi gửi, xác nhận người nhận nhận đủ các phần và lưu lại bản cuối đã phát hành." },
+        { "t": "cta", "tool": "split-pdf", "x": "Chia theo chương, đặt tên theo thứ tự và kiểm tra mỗi phần trước khi gửi." }
+      ]
+    },
+    {
+      "topic": "how-to-compress-a-pdf",
+      "title": "Cách nén PDF để giảm dung lượng tệp",
+      "slug": "how-to-compress-a-pdf",
+      "tool": "compress-pdf",
+      "description": "Giảm dung lượng ảnh, bỏ dữ liệu không cần thiết và thử nhiều mức nén để cân bằng chất lượng với kích thước.",
+      "metaDescription": "Nén PDF để gửi email hoặc tải nhanh hơn. Chọn cách giảm ảnh phù hợp và kiểm tra chữ, hình, liên kết sau khi xuất.",
+      "faqs": [
+        { "q": "Nén PDF có làm giảm chất lượng không?", "a": "Có thể, nhất là khi hạ độ phân giải ảnh hoặc dùng nén mất dữ liệu. Mở các trang mẫu để so sánh." },
+        { "q": "Vì sao PDF vẫn lớn sau khi nén?", "a": "Tệp có thể chứa ảnh đã tối ưu, phông chữ, dữ liệu nhúng hoặc ảnh quét cần nhiều dung lượng." },
+        { "q": "Có thể nén PDF mà không tải lên không?", "a": "Tùy công cụ. Hãy xác minh nơi xử lý thực tế và chính sách quyền riêng tư trước khi chọn tài liệu nhạy cảm." }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF thường lớn vì ảnh quét độ phân giải cao, ảnh chụp, phông nhúng hoặc dữ liệu không còn cần thiết. Nén có thể giúp gửi email nhanh hơn và tiết kiệm lưu trữ, nhưng mức giảm tùy nội dung. Trước khi tối ưu, giữ bản gốc và xác định mục đích đầu ra: xem trên màn hình, in, lưu trữ hay chia sẻ qua giới hạn dung lượng." },
+        { "t": "h2", "x": "Tìm nguyên nhân khiến tệp lớn" },
+        { "t": "p", "x": "Tài liệu chỉ có văn bản thường vốn đã nhỏ; ảnh quét màu và ảnh chụp thường chiếm phần lớn dung lượng. Có thể có nhiều bản ảnh lặp, phông chữ nhúng hoặc tệp đính kèm bên trong. Nếu PDF là bản quét, cần cân bằng độ rõ chữ với dung lượng. Đừng chuyển toàn bộ trang thành ảnh nếu bạn muốn giữ văn bản có thể tìm kiếm." },
+        { "t": "h2", "x": "Chọn mức nén theo mục đích" },
+        { "t": "p", "x": "Xem trên điện thoại thường không cần cùng độ phân giải như in khổ lớn. Tài liệu ảnh nhiều màu có thể dùng nén mạnh hơn, nhưng chữ nhỏ, con dấu và sơ đồ cần giữ rõ. Nếu công cụ có các mức thấp, trung bình và cao, thử trên bản sao rồi phóng to phần chi tiết. Không dựa chỉ vào con số phần trăm mà bỏ qua chất lượng." },
+        { "t": "h2", "x": "Nén và kiểm tra bản xuất" },
+        { "t": "p", "x": "Chạy công cụ trên bản sao, lưu tệp mới và so sánh kích thước trước sau. Mở bản nén, tìm một câu, phóng to ảnh và xem trang đầu, giữa, cuối. Kiểm tra liên kết, biểu mẫu, dấu trang và khả năng chọn văn bản. Một số công cụ loại bỏ metadata hoặc thay đổi cấu trúc, điều này có thể không phù hợp với hồ sơ cần giữ nguyên." },
+        { "t": "h2", "x": "Bảo vệ dữ liệu và chọn phương án khác" },
+        { "t": "p", "x": "Đọc cách công cụ xử lý tệp, đặc biệt khi tài liệu chứa thông tin cá nhân hoặc bí mật công việc. Dịch vụ miễn phí có thể giới hạn lượt hoặc yêu cầu tải lên máy chủ. Nếu nén không đủ, chia PDF theo chương hoặc gửi liên kết riêng tư. Lưu bản gốc ở vị trí an toàn và đặt tên cho bản tối ưu để không nhầm lẫn." },
+        { "t": "cta", "tool": "compress-pdf", "x": "Nén một bản sao và so sánh độ rõ với dung lượng trước khi phát hành." }
+      ]
+    }
+  ]
+}
