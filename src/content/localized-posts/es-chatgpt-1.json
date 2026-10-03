@@ -1,0 +1,225 @@
+{
+  "locale": "es",
+  "guides": [
+    {
+      "topic": "what-is-pdfa", "title": "Qué es PDF/A y cuándo conviene usarlo", "slug": "what-is-pdfa", "tool": "pdf-to-pdfa",
+      "description": "Conoce el formato de archivo PDF/A, sus límites y cómo validar un documento antes de conservarlo.",
+      "metaDescription": "Descubre qué aporta PDF/A al archivado, qué dependencias elimina y cómo comprobar la conformidad antes de guardar un documento a largo plazo.",
+      "faqs": [
+        { "q": "¿PDF/A es lo mismo que un PDF normal?", "a": "Es una variante normalizada para conservación; restringe funciones que pueden depender de recursos externos o cambiar con el tiempo." },
+        { "q": "¿Convertir a PDF/A garantiza que el archivo dure para siempre?", "a": "No. Ayuda a reducir dependencias, pero también hacen falta copias de seguridad, controles de integridad y migraciones cuando cambian los estándares." },
+        { "q": "¿Se puede proteger con contraseña un PDF/A?", "a": "El cifrado no suele ser compatible con los perfiles PDF/A; conserva una copia de acceso controlado conforme a la política de tu organización." }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF/A es una familia de perfiles PDF pensada para conservar documentos de forma fiable durante mucho tiempo. Un PDF corriente puede depender de una fuente instalada en el ordenador, contenido externo o funciones interactivas que un lector futuro quizá no admita. PDF/A reduce esos riesgos al exigir que el documento sea más autosuficiente y limitar ciertas funciones. No cambia la extensión: el archivo sigue siendo un PDF, pero debe cumplir las condiciones de un perfil concreto. Antes de convertir, identifica quién recibirá el documento y qué estándar exige." },
+        { "t": "h2", "x": "Qué cambia en un archivo de archivo" },
+        { "t": "p", "x": "Los perfiles PDF/A suelen requerir que las fuentes utilizadas estén incorporadas y que la información de color y metadatos necesaria quede descrita dentro del documento. También restringen elementos que dificultan una representación estable, como el cifrado, ciertas acciones o dependencias externas. Las reglas exactas dependen de la versión y del nivel de conformidad. Por eso, no basta con cambiar el nombre del archivo ni con confiar en que una exportación muestre una casilla marcada." },
+        { "t": "h2", "x": "Cuándo puede ser útil" },
+        { "t": "p", "x": "Administraciones, bibliotecas, equipos legales y departamentos de registros pueden solicitar PDF/A para expedientes que deben seguir legibles. También puede ser útil para informes aprobados, facturas o documentación que se conserva según una política formal. No todos los PDF necesitan conversión: para compartir una presentación o guardar una copia de lectura, un PDF normal puede ser suficiente. Confirma primero el perfil requerido, ya que un sistema receptor puede aceptar solo una variante determinada." },
+        { "t": "h2", "x": "Convierte y valida, no solo exportes" },
+        { "t": "p", "x": "Guarda una copia del original y convierte un duplicado. Después ejecuta una validación PDF/A independiente y revisa las fuentes, los colores, las imágenes, los formularios y las firmas. La conversión puede señalar elementos incompatibles o modificar la apariencia; compara páginas representativas con el original. Un archivo que abre no necesariamente cumple el estándar. Registra el perfil usado y el resultado del validador cuando la política documental lo exija." },
+        { "t": "h2", "x": "Planifica la conservación completa" },
+        { "t": "p", "x": "PDF/A no sustituye las copias de seguridad, el control de acceso ni la verificación periódica de integridad. Conserva más de una copia en ubicaciones adecuadas, documenta el origen y la fecha de captura y revisa los soportes con el tiempo. Si el perfil deja de ser aceptado o una herramienta futura lo requiere, una migración controlada puede ser necesaria. La preservación es un proceso, no una sola conversión." },
+        { "t": "cta", "tool": "pdf-to-pdfa", "x": "Convierte una copia y valida que cumpla el perfil PDF/A que necesitas." }
+      ]
+    },
+    {
+      "topic": "scan-paper-to-pdf", "title": "Cómo escanear documentos en papel a PDF con el móvil", "slug": "scan-paper-to-pdf", "tool": "scan-to-pdf",
+      "description": "Prepara la página, captura con buena luz y comprueba el texto antes de compartir el PDF.",
+      "metaDescription": "Escanea documentos en papel a PDF con el móvil: prepara la página, evita sombras, verifica los bordes y revisa el OCR antes de compartir.",
+      "faqs": [
+        { "q": "¿Una foto del documento ya es un PDF escaneado?", "a": "Es una imagen. Puedes guardarla dentro de un PDF y aplicar OCR si necesitas buscar o seleccionar el texto." },
+        { "q": "¿Qué resolución necesito?", "a": "Depende del tamaño y del texto; prueba una captura nítida y comprueba que letras pequeñas y sellos se distingan." },
+        { "q": "¿Debo usar OCR?", "a": "Sí, si necesitas buscar o copiar texto, pero corrige manualmente nombres, cifras y caracteres que el reconocimiento pueda confundir." }
+      ],
+      "body": [
+        { "t": "p", "x": "Un teléfono puede digitalizar recibos, formularios y páginas sueltas sin un escáner dedicado, siempre que la captura sea legible. Coloca el papel sobre una superficie plana y contrastada, limpia la cámara y usa luz uniforme para evitar sombras. Mantén el móvil paralelo a la página y encuadra los cuatro bordes. La detección automática puede recortar de más si hay una mesa o fondo irregular, así que revisa cada página antes de guardar el PDF." },
+        { "t": "h2", "x": "Prepara el documento y la cámara" },
+        { "t": "p", "x": "Alisa pliegues, retira clips cuando sea seguro y ordena las páginas. Evita reflejos en papel brillante y sombras de la mano. Sostén el teléfono firme; si la cámara inclina la página, corrige la perspectiva durante el recorte. Para documentos largos, conserva el orden original y comprueba que ninguna hoja se haya repetido o quedado fuera. Si el contenido es confidencial, utiliza una aplicación o flujo de trabajo autorizado y guarda el resultado en un lugar seguro." },
+        { "t": "h2", "x": "Elige el color y el recorte" },
+        { "t": "p", "x": "El modo color conserva sellos, resaltados y anotaciones; escala de grises o blanco y negro puede reducir el tamaño, pero a veces borra trazos finos. Elige según el uso posterior. Comprueba que no falten firmas, números de página o notas marginales. No recortes datos que deban conservarse como prueba o registro. Para un lote, compara varias páginas: el mismo ajuste puede funcionar para una hoja y no para otra." },
+        { "t": "h2", "x": "Añade OCR y revisa errores" },
+        { "t": "p", "x": "OCR intenta convertir los píxeles en texto seleccionable y permite búsquedas, pero no es infalible. Verifica nombres propios, números de expediente, importes, fechas y caracteres parecidos. Conserva la imagen original como referencia cuando el texto tenga valor legal o financiero. Si una página está torcida, borrosa o escrita a mano, vuelve a capturarla en lugar de confiar en una capa de texto defectuosa." },
+        { "t": "h2", "x": "Guarda un PDF práctico y seguro" },
+        { "t": "p", "x": "Asigna un nombre con fecha y tema, comprueba el número de páginas y abre el PDF en otro lector antes de enviarlo. Si contiene datos personales, limita el acceso y usa el canal solicitado por el destinatario. No confundas recortar visualmente con eliminar información: las partes fuera del marco pueden seguir dentro del archivo. Para ocultar datos, utiliza una función de redacción real y verifica el resultado." },
+        { "t": "cta", "tool": "scan-to-pdf", "x": "Convierte las páginas escaneadas en un PDF y revisa cada una." }
+      ]
+    },
+    {
+      "topic": "convert-pdf-to-markdown", "title": "Cómo convertir un PDF a Markdown y revisar el resultado", "slug": "convert-pdf-to-markdown", "tool": "pdf-to-markdown",
+      "description": "Extrae estructura reutilizable y comprueba títulos, tablas, enlaces y caracteres especiales.",
+      "metaDescription": "Convierte PDF a Markdown para reutilizar contenido, pero verifica encabezados, tablas, enlaces, columnas y errores de OCR en el archivo resultante.",
+      "faqs": [
+        { "q": "¿La conversión conserva exactamente el diseño?", "a": "No. Markdown prioriza estructura textual sencilla y no reproduce con precisión páginas, tipografía o columnas complejas." },
+        { "q": "¿Se puede convertir un PDF escaneado?", "a": "Necesita OCR antes o durante la extracción; revisa el texto reconocido porque puede contener errores." },
+        { "q": "¿Las tablas pasan bien a Markdown?", "a": "Las tablas simples pueden convertirse, pero las celdas combinadas o complejas suelen necesitar corrección manual." }
+      ],
+      "body": [
+        { "t": "p", "x": "Markdown es un formato de texto ligero que representa títulos, listas, enlaces y algunos tipos de tabla con marcas sencillas. Convertir un PDF a Markdown puede facilitar la edición, búsqueda o publicación del contenido, pero no conserva el diseño de página con precisión. El PDF puede contener columnas, notas, fórmulas, tablas complejas o solo imágenes escaneadas. Define qué partes necesitas reutilizar y guarda el original para comprobar la extracción." },
+        { "t": "h2", "x": "Comprueba si el PDF contiene texto" },
+        { "t": "p", "x": "Intenta seleccionar una frase en el lector. Si no se puede, el documento puede ser una imagen y necesitar OCR. Comprueba el idioma y la calidad de la captura antes de extraer. El texto digital también puede estar almacenado en un orden extraño cuando el PDF usa varias columnas o posiciona cada palabra de forma independiente. Esa estructura afecta directamente el Markdown generado." },
+        { "t": "h2", "x": "Extrae y reconstruye la jerarquía" },
+        { "t": "p", "x": "Después de convertir, revisa si los encabezados aparecen como niveles coherentes y si los párrafos están en el orden correcto. Algunos PDF usan tamaños visuales en vez de etiquetas semánticas, por lo que una conversión automática puede confundir subtítulos con texto normal. Corrige listas, numeración, citas y saltos de línea repetidos. Conserva referencias y notas que el lector necesitará para interpretar el contenido." },
+        { "t": "h2", "x": "Revisa tablas, enlaces y símbolos" },
+        { "t": "p", "x": "Compara las tablas con el PDF, especialmente columnas, valores negativos, unidades y encabezados. Las celdas fusionadas no tienen una representación Markdown sencilla y quizá debas reformatearlas. Prueba enlaces y verifica caracteres acentuados, símbolos matemáticos y guiones. Si el documento incluye código, compara espacios y signos de puntuación para evitar alterar su significado." },
+        { "t": "h2", "x": "Usa el texto respetando los derechos" },
+        { "t": "p", "x": "La extracción técnica no concede permiso para republicar el material. Confirma la licencia, atribuye la fuente cuando sea necesario y evita compartir contenido protegido fuera de los usos permitidos. Para documentos internos o personales, utiliza un flujo compatible con las reglas de privacidad de tu organización. Guarda el Markdown con una referencia al PDF original y registra cualquier corrección importante." },
+        { "t": "cta", "tool": "pdf-to-markdown", "x": "Extrae el Markdown y compáralo con el PDF fuente antes de reutilizarlo." }
+      ]
+    },
+    {
+      "topic": "will-this-file-still-open", "title": "¿Se podrá abrir este archivo dentro de veinte años?", "slug": "will-this-file-still-open", "tool": "pdf-to-pdfa",
+      "description": "Evalúa dependencias, estándares, copias y controles de integridad para conservar documentos.",
+      "metaDescription": "Mejora la posibilidad de abrir un documento dentro de veinte años con formatos sostenibles, copias verificadas, metadatos y migraciones planificadas.",
+      "faqs": [
+        { "q": "¿Guardar un PDF garantiza que seguirá abriéndose?", "a": "No. También importan la integridad del archivo, los medios de almacenamiento, el software y la disponibilidad de formatos." },
+        { "q": "¿PDF/A resuelve todos los riesgos de conservación?", "a": "Reduce algunas dependencias, pero no reemplaza copias de seguridad, verificación ni planificación de migración." },
+        { "q": "¿Cada cuánto debo revisar un archivo antiguo?", "a": "Sigue una política basada en el riesgo, el valor del documento y la vida útil de los soportes." }
+      ],
+      "body": [
+        { "t": "p", "x": "Nadie puede garantizar hoy que cualquier archivo se abrirá dentro de veinte años. El documento puede corromperse, el soporte dejar de funcionar, el software desaparecer o el formato perder compatibilidad. Puedes reducir esos riesgos si eliges formatos documentados, guardas copias independientes y revisas periódicamente la integridad. Para documentos importantes, conserva contexto suficiente para identificar el origen, la fecha, la versión y la relación con otros expedientes." },
+        { "t": "h2", "x": "Elige un formato sostenible" },
+        { "t": "p", "x": "Usa formatos ampliamente documentados y adecuados al tipo de contenido. PDF/A puede ser útil para documentos de página fija que necesitan representación estable, mientras que datos estructurados quizá requieran conservar además un formato editable. No conviertas todo automáticamente: una conversión puede perder formularios, capas, comentarios o funciones. Guarda el original cuando sea importante y registra el formato de conservación elegido." },
+        { "t": "h2", "x": "Mantén copias e integridad" },
+        { "t": "p", "x": "Guarda varias copias en ubicaciones o sistemas independientes y comprueba que se puedan recuperar. Una suma de verificación permite detectar cambios accidentales; vuelve a calcularla siguiendo una política documentada. No dependas de un solo ordenador, una sola cuenta o una carpeta sincronizada como única protección. Controla quién puede borrar o modificar los archivos y conserva registros de cambios cuando el valor del documento lo requiera." },
+        { "t": "h2", "x": "Conserva metadatos y contexto" },
+        { "t": "p", "x": "Un archivo sin contexto puede ser técnicamente legible pero difícil de entender. Registra título, autor u origen, fecha, versión, formato, relación con el expediente y restricciones de acceso. Mantén un inventario que permita localizar cada copia. Evita depender de nombres ambiguos como final-final2.pdf y no guardes información sensible en metadatos sin revisar quién podrá verla." },
+        { "t": "h2", "x": "Planifica migraciones controladas" },
+        { "t": "p", "x": "Revisa formatos y soportes según su riesgo, no esperes a que una aplicación antigua deje de funcionar. Si migras, compara muestras, valida los nuevos archivos y conserva evidencia del proceso. Para expedientes regulados, sigue la política legal y documental aplicable. La conservación a largo plazo combina tecnología, procesos y responsabilidad; ninguna extensión de archivo resuelve todo por sí sola." },
+        { "t": "cta", "tool": "pdf-to-pdfa", "x": "Prepara una copia PDF/A y valida el perfil antes de archivarla." }
+      ]
+    },
+    {
+      "topic": "prepare-pdf-for-long-term-archive", "title": "Cómo preparar un PDF para conservarlo a largo plazo", "slug": "prepare-pdf-for-long-term-archive", "tool": "repair-pdf",
+      "description": "Revisa calidad, metadatos, formato, integridad y copias antes de incorporar un documento al archivo.",
+      "metaDescription": "Prepara un PDF para archivo duradero verificando legibilidad, metadatos, conformidad, integridad, acceso y copias de seguridad independientes.",
+      "faqs": [
+        { "q": "¿Debo convertir todos los documentos a PDF/A?", "a": "No necesariamente. Define los formatos según el contenido, el uso y la política de conservación de tu organización." },
+        { "q": "¿Puedo archivar solo la copia PDF?", "a": "Si el original editable es relevante, conserva también ese archivo y documenta su relación con el PDF." },
+        { "q": "¿Qué metadatos son útiles?", "a": "Título, origen, fecha, versión, responsable, restricciones y vínculo con el expediente, evitando datos personales innecesarios." }
+      ],
+      "body": [
+        { "t": "p", "x": "Preparar un PDF para conservarlo implica más que guardarlo en una carpeta. Primero comprueba que el documento esté completo, sea legible y corresponda a la versión aprobada. Identifica su valor, el plazo de retención y quién debe poder consultarlo. Una estrategia adecuada puede requerir conservar tanto el PDF como el archivo fuente, según el contenido y las reglas de tu organización. Documenta las decisiones para que otra persona pueda entenderlas más adelante." },
+        { "t": "h2", "x": "Revisa el contenido y la calidad" },
+        { "t": "p", "x": "Abre el PDF en más de un lector si es posible. Comprueba páginas en blanco, rotación, imágenes, firmas, enlaces, fuentes y selección de texto. Si el documento proviene de un escaneo, revisa la nitidez y aplica OCR cuando la búsqueda sea necesaria. Compara datos críticos con la fuente y no asumas que el reconocimiento automático es exacto. Conserva la captura original si forma parte de la evidencia." },
+        { "t": "h2", "x": "Añade metadatos y contexto" },
+        { "t": "p", "x": "Registra título, procedencia, fecha de creación o captura, versión y relación con el expediente. Añade la clasificación de acceso y retención conforme a la política aplicable. Elimina metadatos personales que no deban divulgarse, pero no borres información necesaria para la autenticidad o la gestión. Usa nombres de archivo consistentes y un inventario que permita encontrar el documento." },
+        { "t": "h2", "x": "Valida el formato elegido" },
+        { "t": "p", "x": "Si se requiere PDF/A, especifica la versión y nivel que pide el archivo receptor. Convierte una copia, ejecuta un validador y revisa cualquier cambio visual o pérdida funcional. Guarda el resultado de validación. La conformidad técnica no demuestra por sí sola que el contenido sea auténtico o esté completo; conserva la cadena de custodia y aprobaciones cuando correspondan." },
+        { "t": "h2", "x": "Protege y supervisa el archivo" },
+        { "t": "p", "x": "Mantén copias independientes, permisos adecuados y controles para detectar modificaciones o pérdida. Prueba las restauraciones, no solo la existencia de una copia. Programa revisiones de formatos y soportes y migra de forma documentada cuando sea necesario. Respeta las reglas de retención y eliminación: conservar indefinidamente también puede crear riesgos de privacidad y cumplimiento." },
+        { "t": "cta", "tool": "repair-pdf", "x": "Revisa una copia PDF y valida el archivo antes de incorporarlo al repositorio." }
+      ]
+    },
+    {
+      "topic": "print-friendly-extension-chrome", "title": "Opciones para imprimir páginas web en Google Chrome", "slug": "print-friendly-extension-chrome", "tool": "html-to-pdf",
+      "description": "Prueba la impresión integrada y evalúa con cuidado extensiones que simplifican páginas web.",
+      "metaDescription": "Imprime o guarda páginas web desde Chrome, revisa la vista previa y evalúa los permisos antes de instalar una extensión de impresión.",
+      "faqs": [
+        { "q": "¿Chrome puede guardar una página como PDF?", "a": "Sí, en la ventana de impresión puedes elegir una opción para guardar como PDF si está disponible en tu sistema." },
+        { "q": "¿Una extensión eliminará todos los anuncios?", "a": "No siempre. La compatibilidad depende del sitio, el contenido dinámico y la extensión instalada." },
+        { "q": "¿Qué permisos debo revisar?", "a": "Comprueba si puede leer o modificar datos de los sitios web y limita el acceso cuando el navegador lo permita." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chrome incluye una vista de impresión que permite enviar una página a una impresora o guardarla como PDF según el sistema. La página final depende del CSS de impresión del sitio, por lo que pueden aparecer menús, anuncios, espacios vacíos o texto recortado. Empieza por la función integrada y revisa la vista previa. Si necesitas simplificar páginas con frecuencia, una extensión puede ayudar, pero también puede tener acceso al contenido que visitas." },
+        { "t": "h2", "x": "Prueba primero la impresión integrada" },
+        { "t": "p", "x": "Abre la opción de imprimir de Chrome, elige el destino y comprueba tamaño de papel, orientación, márgenes y páginas. Recorre la vista previa para encontrar imágenes ausentes, encabezados repetidos o texto demasiado pequeño. Si el sitio ofrece un botón de impresión o modo de lectura, compáralo con la vista estándar. Para contenido interactivo, utiliza la opción de exportación oficial cuando exista." },
+        { "t": "h2", "x": "Cuándo tiene sentido una extensión" },
+        { "t": "p", "x": "Una extensión puede ocultar elementos accesorios o presentar una vista de artículo, pero no todas funcionan con aplicaciones, páginas protegidas o contenido que aparece al desplazarse. Antes de instalar, revisa quién la publica, cuándo se actualizó y qué permisos solicita. Lee la política de privacidad y evita habilitar acceso amplio en páginas bancarias, médicas o de administración si no hace falta." },
+        { "t": "h2", "x": "Guarda el contenido de forma correcta" },
+        { "t": "p", "x": "Espera a que el contenido legítimo termine de cargar y comprueba que puedes acceder a él. No uses extensiones para eludir inicios de sesión, suscripciones o restricciones del sitio. Si una página impide la impresión, busca una función oficial de descarga o guarda una copia del contenido que tengas derecho a conservar. Protege el PDF si contiene datos personales o internos." },
+        { "t": "h2", "x": "Comprueba el PDF resultante" },
+        { "t": "p", "x": "Abre el archivo guardado y revisa el orden, las imágenes, las tablas, los enlaces y la selección de texto. Comprueba el título, el origen y la fecha si la copia servirá como referencia. Si el archivo es una imagen escaneada, OCR puede facilitar la búsqueda, pero necesita corrección. Elimina copias temporales cuando ya no sean necesarias y comparte solo con los destinatarios adecuados." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Genera un PDF de prueba y revisa el resultado antes de guardarlo." }
+      ]
+    },
+    {
+      "topic": "firefox-print-addon", "title": "Cómo imprimir mejor desde Firefox", "slug": "firefox-print-addon", "tool": "pdf-reader",
+      "description": "Ajusta la vista previa, usa la vista de lectura cuando convenga y revisa complementos antes de instalarlos.",
+      "metaDescription": "Mejora la impresión desde Firefox con una vista previa cuidadosa, ajustes de página y una revisión de permisos para cualquier complemento.",
+      "faqs": [
+        { "q": "¿Firefox permite guardar una página como PDF?", "a": "Las opciones disponibles dependen del sistema operativo y de los destinos de impresión configurados." },
+        { "q": "¿La vista de lectura siempre es mejor para imprimir?", "a": "No. Puede omitir tablas, imágenes, fórmulas o contenido interactivo que sí necesitas conservar." },
+        { "q": "¿Cómo elijo un complemento de impresión?", "a": "Revisa editor, permisos, actualizaciones y política de datos; instala solo desde el catálogo oficial." }
+      ],
+      "body": [
+        { "t": "p", "x": "Firefox puede imprimir páginas web mediante el cuadro de impresión del navegador, aunque las opciones para guardar PDF varían entre sistemas. El diseño depende de las reglas del sitio y de la configuración de la impresora. Antes de añadir un complemento, prueba la vista previa y, cuando corresponda, la vista de lectura. Una herramienta adicional puede simplificar algunas páginas, pero también necesita permisos y puede no funcionar con contenido dinámico." },
+        { "t": "h2", "x": "Ajusta las opciones de impresión" },
+        { "t": "p", "x": "Abre la ventana de impresión y selecciona la impresora o destino disponible. Comprueba orientación, escala, márgenes, páginas y opciones de fondo. Revisa tanto el comienzo como el final de la vista previa para detectar partes recortadas o páginas en blanco. Si una tabla se extiende demasiado, prueba orientación horizontal o guarda una copia para examinarla con más detalle." },
+        { "t": "h2", "x": "Usa la vista de lectura con criterio" },
+        { "t": "p", "x": "La vista de lectura puede reducir elementos de navegación y dejar el texto principal, pero quizá omita imágenes con información, notas o tablas. Compara el resultado con la página original antes de guardar. Para páginas de datos, formularios o aplicaciones, la vista normal o una exportación oficial puede conservar más información." },
+        { "t": "h2", "x": "Evalúa complementos y permisos" },
+        { "t": "p", "x": "Consulta el nombre del editor, la fecha de actualización, la descripción de permisos y la política de tratamiento de datos. Instala complementos desde el catálogo oficial del navegador y evita conceder acceso general si no es necesario. Un complemento que puede leer páginas podría encontrar información de sesiones privadas. Desactívalo en sitios sensibles o elimínalo cuando termine su utilidad." },
+        { "t": "h2", "x": "Resuelve páginas incompletas" },
+        { "t": "p", "x": "Espera a que carguen las imágenes y desplázate para activar contenido diferido antes de abrir la vista previa. Comprueba si el sitio ofrece una descarga propia. Si hay una restricción de impresión, no intentes sortearla; solicita una copia autorizada o usa la opción de exportación indicada por el propietario. Después, abre el PDF y verifica texto, enlaces y orden." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Abre el PDF guardado y comprueba que todas las páginas sean legibles." }
+      ]
+    },
+    {
+      "topic": "safari-print-extension", "title": "Cómo imprimir mejor desde Safari en Mac y iPhone", "slug": "safari-print-extension", "tool": "pdf-reader",
+      "description": "Usa las opciones del sistema, revisa el PDF guardado y limita cuidadosamente los permisos de extensiones.",
+      "metaDescription": "Imprime o guarda páginas web desde Safari en Mac y iPhone, revisa el resultado y comprueba los permisos antes de usar extensiones.",
+      "faqs": [
+        { "q": "¿Safari puede guardar páginas como PDF?", "a": "Las opciones dependen de la versión de macOS o iOS; revisa los menús de impresión y compartir disponibles." },
+        { "q": "¿Necesito una extensión para imprimir desde Safari?", "a": "Normalmente no. Prueba primero las funciones integradas del sistema y del propio sitio web." },
+        { "q": "¿Qué debo verificar en una extensión de Safari?", "a": "Revisa su editor, política de privacidad y acceso a sitios web, y habilítala solo donde haga falta." }
+      ],
+      "body": [
+        { "t": "p", "x": "Safari en Mac y iPhone permite compartir o imprimir páginas, aunque el recorrido exacto depende de la versión del sistema. Las páginas pueden verse distintas en una pantalla pequeña y la vista de impresión puede omitir componentes dinámicos. Empieza con las opciones incluidas y revisa el resultado antes de instalar una extensión. Si guardas información personal, protege el PDF y evita compartirlo desde una ubicación pública o sincronizada sin control." },
+        { "t": "h2", "x": "Imprime o exporta desde un Mac" },
+        { "t": "p", "x": "Abre el cuadro de impresión de Safari y selecciona la impresora o una opción de PDF disponible en el sistema. Revisa orientación, tamaño, márgenes y páginas. Usa la vista previa para comprobar imágenes, tablas y el texto final. Los menús cambian entre versiones de macOS, así que confirma la opción en tu dispositivo. Después de guardar, vuelve a abrir el archivo y comprueba que no falten páginas." },
+        { "t": "h2", "x": "Guarda una página desde iPhone" },
+        { "t": "p", "x": "Usa el menú de compartir o imprimir disponible en tu versión de iOS. Revisa la vista previa y selecciona un destino seguro, como una ubicación de archivos adecuada. La interfaz puede variar, por lo que es mejor verificar el nombre de la acción en el dispositivo actual. Abre el PDF guardado para comprobar que el contenido se pueda leer y que los enlaces importantes funcionen." },
+        { "t": "h2", "x": "Decide si hace falta una extensión" },
+        { "t": "p", "x": "Una extensión puede simplificar artículos o ajustar páginas, pero podría solicitar acceso al contenido que visitas. Instálala desde una fuente oficial, revisa quién la mantiene y limita los sitios autorizados cuando sea posible. No habilites acceso innecesario en banca, salud o cuentas de trabajo. Elimina extensiones que ya no uses y revisa sus permisos tras actualizaciones importantes." },
+        { "t": "h2", "x": "Verifica y protege el archivo" },
+        { "t": "p", "x": "Abre el PDF en otro lector o dispositivo. Comprueba texto seleccionable, imágenes, enlaces, orientación y páginas. Si el contenido se guardó como imagen, OCR puede ayudar con búsquedas, pero revisa el reconocimiento. Antes de enviarlo, elimina copias temporales y confirma que el destinatario tenga permiso. Utiliza el canal de transferencia indicado para documentos confidenciales." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Revisa el PDF guardado desde Safari antes de compartirlo." }
+      ]
+    },
+    {
+      "topic": "bookmarklet-vs-extension", "title": "Bookmarklet o extensión del navegador: cuál elegir", "slug": "bookmarklet-vs-extension", "tool": "html-to-pdf",
+      "description": "Compara comodidad, permisos, mantenimiento y exposición de datos antes de usar una herramienta.",
+      "metaDescription": "Compara bookmarklets y extensiones por permisos, privacidad, mantenimiento y compatibilidad para elegir una forma segura de imprimir páginas.",
+      "faqs": [
+        { "q": "¿Un bookmarklet es automáticamente más seguro?", "a": "No. También ejecuta código en la página y podría leer o modificar su contenido." },
+        { "q": "¿Las extensiones piden más permisos?", "a": "Depende del producto. Revisa los permisos reales y limita el acceso cuando el navegador lo permita." },
+        { "q": "¿Cuál conviene para imprimir páginas con frecuencia?", "a": "Elige una herramienta mantenida que necesite pocos permisos y funcione con tus páginas de prueba." }
+      ],
+      "body": [
+        { "t": "p", "x": "Un bookmarklet es un marcador que ejecuta código cuando lo activas; una extensión es un componente instalado en el navegador con funciones y permisos declarados. Ambos pueden ayudar a limpiar o imprimir páginas, pero ninguno es seguro por definición. Evalúa quién escribió el código, qué datos puede leer y si la tarea ya está cubierta por el navegador o el sitio. No ejecutes herramientas desconocidas en páginas privadas." },
+        { "t": "h2", "x": "Ventajas y límites de un bookmarklet" },
+        { "t": "p", "x": "Un bookmarklet puede ser rápido y no requiere instalar una aplicación completa. Sin embargo, su código se ejecuta sobre la pestaña activa y puede verse limitado por las reglas de seguridad del sitio o del navegador. En algunos móviles no es cómodo utilizarlo. Antes de guardarlo, inspecciona su origen y entiende qué hace; no pegues código en la barra de direcciones solo porque una página promete una solución sencilla." },
+        { "t": "h2", "x": "Permisos de una extensión" },
+        { "t": "p", "x": "Las extensiones suelen ofrecer interfaz, ajustes y actualizaciones, pero pueden solicitar permiso para leer o cambiar datos de páginas web. Comprueba si el permiso es temporal, por sitio o global. Revisa el editor, las actualizaciones y la política de privacidad. Instala desde el catálogo oficial, desactiva el acceso en sitios sensibles y elimina lo que ya no necesites." },
+        { "t": "h2", "x": "Considera primero las funciones integradas" },
+        { "t": "p", "x": "La impresión del navegador, el modo de lectura o la opción de descarga del propio sitio pueden resolver la tarea sin añadir código o permisos. Para limpiar una página, prueba una vista de impresión y compara el resultado. Si el contenido requiere autenticación o una función especial, usa una exportación autorizada en vez de una herramienta que intente extraerlo por fuera." },
+        { "t": "h2", "x": "Prueba de forma controlada" },
+        { "t": "p", "x": "Utiliza primero una página pública sin información sensible. Comprueba qué modifica la herramienta, cómo se desactiva y qué ocurre si el sitio no es compatible. Para uso recurrente, elige un proyecto mantenido y documentado. No confundas una valoración alta con una auditoría de seguridad. Si debes procesar información de trabajo, sigue el procedimiento aprobado por tu organización." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Prueba una página pública y revisa el PDF antes de elegir una solución habitual." }
+      ]
+    },
+    {
+      "topic": "save-webpage-as-clean-pdf-chrome", "title": "Cómo guardar una página web limpia como PDF en Chrome", "slug": "save-webpage-as-clean-pdf-chrome", "tool": "html-to-pdf",
+      "description": "Prepara la página, ajusta la vista de impresión y comprueba el PDF antes de archivarlo.",
+      "metaDescription": "Guarda una página web como PDF en Chrome: prepara el contenido, ajusta la vista previa y comprueba enlaces, imágenes y datos de origen.",
+      "faqs": [
+        { "q": "¿Cómo guardo una página como PDF en Chrome?", "a": "Abre Imprimir, elige Guardar como PDF si aparece y revisa la vista previa antes de guardar." },
+        { "q": "¿Chrome elimina anuncios automáticamente?", "a": "No siempre. Depende del CSS de impresión, de la página y de las funciones de simplificación disponibles." },
+        { "q": "¿Puedo guardar una página de una cuenta privada?", "a": "Solo si tienes autorización y acceso legítimo; protege el archivo porque puede contener datos personales." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chrome puede guardar una página web como PDF desde el cuadro de impresión, aunque el resultado depende del diseño del sitio. Una página con anuncios, menús, tablas anchas o contenido que se carga al desplazarse puede salir incompleta. Espera a que se carguen las partes que tienes permiso para ver y abre la vista previa. Si el sitio ofrece una versión de impresión, compárala antes de guardar." },
+        { "t": "h2", "x": "Prepara una copia limpia" },
+        { "t": "p", "x": "Cierra avisos que no deban aparecer, selecciona el modo de impresión propio del sitio si existe y desplázate por la página para activar el contenido diferido. No intentes eludir restricciones de acceso o suscripciones. Si la página requiere una cuenta, guarda solo información que estés autorizado a conservar y revisa si existe una función oficial de exportación." },
+        { "t": "h2", "x": "Configura la vista previa" },
+        { "t": "p", "x": "Abre Imprimir en Chrome, elige Guardar como PDF si está disponible y ajusta papel, orientación, escala, márgenes y páginas. Recorre las miniaturas para encontrar texto cortado, espacios vacíos o imágenes ausentes. Una tabla ancha puede necesitar orientación horizontal; reducir demasiado la escala vuelve ilegible el contenido. Cambia una opción a la vez para entender su efecto." },
+        { "t": "h2", "x": "Usa herramientas de simplificación con cuidado" },
+        { "t": "p", "x": "El modo de lectura o una extensión puede retirar elementos accesorios, pero también podría quitar notas, gráficos o contexto. Antes de instalar una herramienta, revisa los permisos y el tratamiento de datos. Evita procesar cuentas financieras, documentos médicos o paneles de trabajo con extensiones que no hayas evaluado. Para una página difícil, la opción oficial del sitio es preferible cuando conserva mejor el contenido." },
+        { "t": "h2", "x": "Valida el PDF guardado" },
+        { "t": "p", "x": "Abre el archivo y revisa orden de páginas, enlaces, tablas, imágenes y texto seleccionable. Registra la URL y la fecha si necesitarás citar la página después. Si guardas datos personales, limita el acceso y elimina copias temporales innecesarias. Una captura archivada no reemplaza necesariamente una fuente web y puede quedar desactualizada; anota la fecha de consulta." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Genera un PDF de prueba y revisa cada página antes de archivarlo." }
+      ]
+    }
+  ]
+}

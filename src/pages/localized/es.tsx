@@ -1,3 +1,4 @@
-import data from '../../content/localized-posts/es.json'
+import { LANGUAGE_PACKS } from '../../content/localizedGuidesFull'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-export default createLocalizedGuidesPage('es', data.guides)
+const pack = LANGUAGE_PACKS.find((item) => item.locale === 'es')
+export default createLocalizedGuidesPage('es', pack?.guides || [])
