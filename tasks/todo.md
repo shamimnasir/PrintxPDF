@@ -238,13 +238,22 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 - [x] Final local build generates 268 prerendered pages and 265 sitemap URLs. Static audit clean;
       rendered audit checked 265 routes at desktop and phone widths with no issues; tool audit
       passed 44/44; IndexNow accepted the 265 URL notification. Tests and diff checks pass.
-- [ ] After deployment, resubmit /sitemap.xml in Search Console (currently last read Sep 30 with
-      218 discovered pages), then request inspection of priority new URLs. Google decides when
-      and whether to index them.
-- [ ] Avoid bulk low-quality directory submissions. Google classifies low-quality directory links
-      created to manipulate ranking as link spam; pursue relevant product listings and genuine
-      editorial references instead. A SaaSHub submission is relevant but requires an account and
-      acceptance of its terms; defer the final submit unless separately authorized.
+- [x] Deployed to `main` (commit a0a1b48). Production sitemap responds 200 and contains 265 URLs;
+      a newly added archive guide returns its dedicated prerendered title and H1.
+- [x] Resubmitted `/sitemap.xml` in the verified Search Console profile. Status is Success, but
+      the report still shows its prior read date (Sep 30) and 218 discovered pages until Google
+      processes the new submission.
+- [x] Requested priority crawling for the metadata-removal, AZW3-to-EPUB and Wi-Fi QR guides.
+      Search Console accepted all three into its priority crawl queue; this is not an indexing
+      guarantee. The first inspection reported each URL as unknown to Google with no sitemap yet
+      attributed, consistent with Google's not-yet-refreshed sitemap report.
+- [x] Re-notified IndexNow after deployment: 265 URLs, key verified live, endpoint returned 200.
+      IndexNow does not notify Google.
+- [ ] Earn relevant external references. Search Console previously reported zero external links.
+      Do not mass-submit low-quality directories: Google's spam policy treats manipulative,
+      low-quality directory links as link spam. A directory checked during this audit required
+      account registration; another displayed a human challenge. Neither was submitted or bypassed.
+      Prioritize genuine editorial, partner, community and product-discovery mentions.
 
 # Phase 7 (2026-09-11): launch review
 - [x] Footer, Terms and Privacy name the operating company (LateNightBirds LLC), which is also the
