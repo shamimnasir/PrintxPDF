@@ -9,6 +9,7 @@ import esBatch7 from './localized-posts/es-chatgpt-7.json'
 import esBatch8 from './localized-posts/es-chatgpt-8.json'
 import esBatch9 from './localized-posts/es-chatgpt-9.json'
 import esBatch10 from './localized-posts/es-chatgpt-10.json'
+import esBatch11 from './localized-posts/es-chatgpt-11.json'
 import ptPosts from './localized-posts/pt-BR.json'
 import hiPosts from './localized-posts/hi.json'
 import hiBatch1 from './localized-posts/hi-chatgpt-1.json'
@@ -71,6 +72,7 @@ translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch7.guid
 translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch8.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch9.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch10.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch11.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 
 export const LANGUAGE_PACKS: LanguagePack[] = basePacks.map((pack) => {
   const guides = new Map(pack.guides.map((guide) => [guide.topic, guide]))
