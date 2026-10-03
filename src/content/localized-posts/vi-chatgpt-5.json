@@ -1,0 +1,256 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "electronic-signature-legally-binding",
+      "title": "Chữ ký điện tử có giá trị pháp lý không?",
+      "slug": "electronic-signature-legally-binding",
+      "tool": "sign-pdf",
+      "description": "Hiệu lực phụ thuộc quốc gia, loại giao dịch, ý định ký và quy trình xác minh. Kiểm tra luật cùng yêu cầu của bên nhận.",
+      "metaDescription": "Tìm hiểu khi nào chữ ký điện tử có thể được công nhận. Phân biệt chữ ký vẽ và chữ ký số, đồng thời kiểm tra luật áp dụng.",
+      "faqs": [
+        { "q": "Chữ ký điện tử có luôn hợp pháp không?", "a": "Không có quy tắc chung cho mọi nơi và mọi tài liệu. Luật, loại giao dịch, ý định và khả năng chứng minh đều có thể quan trọng." },
+        { "q": "Ảnh chữ ký có giống chữ ký số không?", "a": "Không. Ảnh là dấu hiệu nhìn thấy; chữ ký số thường dùng chứng thư và mật mã để liên kết danh tính với dữ liệu." },
+        { "q": "Tôi nên kiểm tra điều gì trước khi ký?", "a": "Xác nhận luật áp dụng, người nhận chấp nhận phương thức nào, hồ sơ chứng minh cần lưu và tài liệu có yêu cầu công chứng hay không." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chữ ký điện tử có thể được chấp nhận trong nhiều giao dịch, nhưng không nên khẳng định mọi chữ ký đều hợp pháp trong mọi trường hợp. Kết quả phụ thuộc luật của quốc gia hoặc vùng lãnh thổ, loại tài liệu, ý định của người ký và cách chứng minh danh tính cùng sự đồng ý. Một chữ ký vẽ trên PDF có thể hữu ích trong quy trình đơn giản nhưng không tự tạo bằng chứng mật mã." },
+        { "t": "h2", "x": "Phân biệt các dạng chữ ký" },
+        { "t": "p", "x": "Chữ ký điện tử là thuật ngữ rộng, có thể bao gồm tên được gõ, thao tác bấm đồng ý, chữ ký vẽ hoặc quy trình ký qua nền tảng. Chữ ký số thường dùng khóa và chứng thư để liên kết người ký với nội dung cụ thể, đồng thời giúp phát hiện thay đổi. Ảnh chữ ký trong PDF chỉ mô tả diện mạo; ai có quyền sửa tệp có thể thêm hoặc di chuyển nó." },
+        { "t": "h2", "x": "Luật áp dụng có thể khác nhau" },
+        { "t": "p", "x": "Tại Hoa Kỳ, luật ESIGN quy định một số nguyên tắc cho chữ ký và hồ sơ điện tử trong giao dịch thuộc phạm vi áp dụng, đồng thời có điều kiện và ngoại lệ. Liên minh châu Âu có khung eIDAS với các loại chữ ký điện tử và quy tắc riêng. Những ví dụ này không thay thế tư vấn pháp lý, và nhiều quốc gia khác có luật riêng. Xác định nơi các bên hoạt động và luật trong hợp đồng." },
+        { "t": "p", "x": "Nguồn chính thức: [15 U.S.C. § 7001, Electronic Signatures in Global and National Commerce](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title15-section7001) và [Quy định EU số 910/2014 về eIDAS](https://eur-lex.europa.eu/eli/reg/2014/910)." },
+        { "t": "h2", "x": "Tăng khả năng chứng minh" },
+        { "t": "p", "x": "Một quy trình đáng tin cậy có thể lưu bản tài liệu đã trình bày, thời điểm, phương thức xác thực, ý định đồng ý và nhật ký gửi nhận. Không phải giao dịch nào cũng cần cùng mức bằng chứng. Với hợp đồng có rủi ro cao, tài liệu nhân sự, bất động sản hoặc thủ tục công, hỏi chuyên gia tại nơi áp dụng và làm theo nền tảng được yêu cầu." },
+        { "t": "h2", "x": "Kiểm tra người nhận trước khi ký" },
+        { "t": "p", "x": "Xác nhận họ chấp nhận chữ ký vẽ, chữ ký qua email hay cần chứng thư số. Kiểm tra tài liệu đầy đủ, không còn chỗ trống có thể thay đổi điều khoản, và lưu bản cuối cùng cùng biên nhận theo chính sách. PrintxPDF có thể đặt chữ ký hiển thị trên PDF; công cụ này không xác nhận tư cách pháp lý hay chứng minh danh tính của người ký." },
+        { "t": "cta", "tool": "sign-pdf", "x": "Đọc tài liệu và xác nhận yêu cầu của bên nhận trước khi đặt chữ ký." }
+      ]
+    },
+    {
+      "topic": "create-a-signature-image",
+      "title": "Tạo chữ ký viết tay rõ ràng để đặt vào PDF",
+      "slug": "create-a-signature-image",
+      "tool": "sign-pdf",
+      "description": "Vẽ hoặc nhập chữ ký theo quy trình được phép, đặt đúng vị trí và bảo vệ hình ảnh khỏi sử dụng trái phép.",
+      "metaDescription": "Tạo dấu chữ ký dễ đọc để thêm vào PDF, chọn nét và kích thước phù hợp, đồng thời hiểu giới hạn của ảnh chữ ký.",
+      "faqs": [
+        { "q": "Ảnh chữ ký có phải chữ ký số không?", "a": "Không. Ảnh là phần hiển thị trên trang, không tự xác minh danh tính hoặc phát hiện mọi thay đổi của tệp." },
+        { "q": "Có thể dùng cùng một ảnh chữ ký cho mọi tài liệu không?", "a": "Chỉ khi quy trình của bạn cho phép. Một số giao dịch yêu cầu xác thực, nền tảng hoặc cách ký khác." },
+        { "q": "Làm sao bảo vệ ảnh chữ ký?", "a": "Không lưu ở thư mục công khai, chỉ cấp quyền cần thiết và không chia sẻ bản có thể tái sử dụng tùy tiện." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một dấu chữ ký viết tay có thể giúp hoàn thiện PDF trong quy trình chấp nhận chữ ký hiển thị. Bạn có thể vẽ trực tiếp bằng chuột hoặc màn hình cảm ứng, hoặc chọn cách nhập chữ nếu công cụ hỗ trợ. Ảnh chữ ký không tương đương chữ ký số và không tự chứng minh người có tên đã đồng ý. Hãy kiểm tra quy định của người nhận trước." },
+        { "t": "h2", "x": "Chuẩn bị nét ký dễ đọc" },
+        { "t": "p", "x": "Dùng nền sáng, bút có độ tương phản và kích thước đủ để nét không đứt. Viết tên theo cách bạn thường ký, không thêm số giấy tờ hoặc dữ liệu nhạy cảm vào hình. Trên màn hình cảm ứng, phóng vùng vẽ vừa đủ và thử một bản nháp trước. Nếu dùng ảnh chụp chữ ký giấy, cắt sát phần ký nhưng giữ nguyên nét và không chỉnh sửa khiến ý nghĩa sai lệch." },
+        { "t": "h2", "x": "Đặt chữ ký vào PDF" },
+        { "t": "p", "x": "Mở PDF đúng phiên bản, chọn công cụ ký và đặt dấu vào vị trí dành riêng. Thay đổi kích thước vừa khung mà không che điều khoản, ngày, số trang hoặc chữ ký khác. Xem trang ở mức phóng đại thực tế và kiểm tra cả đầu cuối tài liệu. Lưu thành tệp mới, giữ bản nguồn và không để chữ ký nằm trên trang không liên quan." },
+        { "t": "h2", "x": "Nền trong suốt và chất lượng" },
+        { "t": "p", "x": "Một ảnh chữ ký có nền trắng có thể tạo ô vuông trên giấy màu hoặc PDF có nền. Tính trong suốt phụ thuộc định dạng và công cụ, vì vậy hãy xem bản xem trước trên nền của tài liệu thay vì giả định ảnh đã trong suốt. Nét quá mảnh có thể biến mất khi in, còn nét quá dày làm chữ khó nhận ra. In thử nếu bản cuối sẽ được gửi bằng giấy." },
+        { "t": "h2", "x": "Bảo vệ hình và lưu bằng chứng" },
+        { "t": "p", "x": "Hình chữ ký có thể bị sao chép và đặt vào tài liệu khác. Lưu ở nơi chỉ người cần dùng mới truy cập, xóa bản nháp khỏi máy dùng chung và tránh gửi qua kênh công khai. Khi giao dịch cần bằng chứng, dùng quy trình ký có xác thực và nhật ký thay vì chỉ ảnh. Kiểm tra luật, chính sách cơ quan và yêu cầu người nhận." },
+        { "t": "cta", "tool": "sign-pdf", "x": "Đặt dấu chữ ký trong vùng cho phép rồi kiểm tra bản PDF mới." }
+      ]
+    },
+    {
+      "topic": "fill-and-sign-a-form",
+      "title": "Điền và ký biểu mẫu PDF",
+      "slug": "fill-and-sign-a-form",
+      "tool": "sign-pdf",
+      "description": "Điền trường, kiểm tra dữ liệu, ký đúng vị trí và lưu bản mới theo hướng dẫn của đơn vị nhận.",
+      "metaDescription": "Điền biểu mẫu PDF, xác nhận trường và lựa chọn, sau đó ký và kiểm tra kỹ tệp đã lưu an toàn trước khi gửi.",
+      "faqs": [
+        { "q": "PDF không có ô điền thì phải làm sao?", "a": "Bạn có thể dùng công cụ thêm văn bản nếu được phép, nhưng hãy xác nhận đơn vị nhận chấp nhận cách điền đó." },
+        { "q": "Ký trước khi điền hết biểu mẫu có được không?", "a": "Không nên. Hãy điền, rà soát nội dung và chắc chắn không còn trường bắt buộc trước khi ký." },
+        { "q": "Làm sao biết biểu mẫu đã lưu đúng?", "a": "Đóng rồi mở lại tệp, kiểm tra trường, dấu chọn, chữ ký và trang cuối." }
+      ],
+      "body": [
+        { "t": "p", "x": "Biểu mẫu PDF có thể có trường nhập sẵn hoặc chỉ là trang trống để in. Trước khi điền, xác nhận đây là phiên bản mới nhất và đọc hướng dẫn của cơ quan nhận. Chuẩn bị tên, ngày và tài liệu tham chiếu để nhập chính xác. Giữ tệp gốc, lưu bản điền riêng và không ký cho đến khi các trường bắt buộc đã được kiểm tra." },
+        { "t": "h2", "x": "Điền trường tương tác" },
+        { "t": "p", "x": "Mở biểu mẫu trong trình đọc hỗ trợ trường PDF, nhấn từng ô và nhập dữ liệu theo định dạng yêu cầu. Dùng phím Tab để di chuyển nhưng quan sát xem tiêu điểm có bỏ qua trường nào không. Đánh dấu lựa chọn phù hợp, không chọn nhiều ô nếu chỉ được phép một. Một số trường có thể bị giới hạn ký tự hoặc không tự mở rộng." },
+        { "t": "h2", "x": "Biểu mẫu không có trường" },
+        { "t": "p", "x": "Nếu PDF là bản quét hoặc biểu mẫu phẳng, dùng công cụ thêm văn bản chỉ khi quy trình chấp nhận. Canh dòng, kích thước chữ và dấu tiếng Việt để câu trả lời nằm trong vùng. Nếu phải nhập số tài khoản hoặc dữ liệu nhạy cảm, tránh lưu vào thiết bị hoặc dịch vụ không được phép. Liên hệ đơn vị phát hành nếu biểu mẫu bị lỗi." },
+        { "t": "h2", "x": "Rà soát trước khi ký" },
+        { "t": "p", "x": "Đọc từng trường, kiểm tra chính tả, số liệu, ngày tháng và lựa chọn. Xem trang phụ lục, ô xác nhận, điều khoản và phần dành cho nhân chứng. Đảm bảo không có câu trả lời bị cắt hoặc nằm nhầm dòng. Chữ ký có thể làm việc sửa đổi sau đó khó khăn hoặc khiến trạng thái tài liệu thay đổi." },
+        { "t": "h2", "x": "Ký, lưu và gửi an toàn" },
+        { "t": "p", "x": "Đặt chữ ký ở vị trí chỉ định và thêm ngày nếu yêu cầu. Lưu tệp mới với tên phiên bản rõ ràng, đóng rồi mở lại để xác nhận trường vẫn còn. Xem yêu cầu chữ ký của người nhận, vì chữ ký vẽ và chữ ký số có mức xác minh khác nhau. Gửi qua kênh được chấp thuận và giữ bản xác nhận theo chính sách." },
+        { "t": "cta", "tool": "sign-pdf", "x": "Điền đầy đủ, kiểm tra lại rồi ký và mở lại bản PDF đã lưu." }
+      ]
+    },
+    {
+      "topic": "sign-pdf-without-printing",
+      "title": "Ký PDF không cần in: chữ gõ, chữ vẽ hay chữ ký số?",
+      "slug": "sign-pdf-without-printing",
+      "tool": "sign-pdf",
+      "description": "So sánh cách gõ tên, vẽ chữ ký và dùng chứng thư số theo mức xác minh mà tài liệu yêu cầu.",
+      "metaDescription": "Ký PDF không in giấy bằng chữ gõ, chữ vẽ hoặc chữ ký số. So sánh tính tiện lợi, khả năng xác minh và yêu cầu người nhận.",
+      "faqs": [
+        { "q": "Cách ký PDF nào an toàn nhất?", "a": "Tùy rủi ro và quy trình. Chữ ký số có thể thêm xác minh mật mã, còn chữ ký vẽ chủ yếu là hình thức hiển thị." },
+        { "q": "Chữ ký gõ tên có được chấp nhận không?", "a": "Một số quy trình chấp nhận, số khác yêu cầu cách xác thực hoặc chữ ký riêng. Hỏi bên nhận trước." },
+        { "q": "Có phải in PDF để chữ ký có giá trị không?", "a": "Không phải trong mọi quy trình, nhưng luật và yêu cầu tài liệu khác nhau. Xác nhận tại nơi áp dụng." }
+      ],
+      "body": [
+        { "t": "p", "x": "Bạn không nhất thiết phải in mọi PDF để ký, nhưng phương thức phù hợp phụ thuộc tài liệu, người nhận và luật áp dụng. Gõ tên nhanh, vẽ chữ ký giống nét tay, còn chữ ký số thường thêm cơ chế xác minh bằng chứng thư. Ba cách không có mức xác thực giống nhau. Hãy hỏi bên yêu cầu ký loại nào trước khi hoàn tất." },
+        { "t": "h2", "x": "Gõ tên vào tài liệu" },
+        { "t": "p", "x": "Chữ được gõ rõ và dễ đọc, phù hợp biểu mẫu chấp nhận xác nhận điện tử đơn giản. Tuy nhiên, nó có thể ít giống chữ ký viết tay và người khác có thể gõ cùng tên. Không dùng kiểu chữ trang trí để tạo ấn tượng rằng nó là chữ ký số. Kiểm tra quy trình nhận có yêu cầu ghi nhận thời gian, email hoặc xác minh danh tính không." },
+        { "t": "h2", "x": "Vẽ hoặc đặt hình chữ ký" },
+        { "t": "p", "x": "Vẽ bằng chuột, màn hình cảm ứng hoặc chèn hình có thể tạo dấu nhìn giống nét ký. Đây là cách tiện lợi cho tài liệu rủi ro thấp khi người nhận cho phép. Hình chữ ký có thể bị sao chép hoặc di chuyển, nên nó không tự chứng minh ai ký hay nội dung chưa bị thay đổi. Bảo vệ ảnh và lưu bản gửi." },
+        { "t": "h2", "x": "Chữ ký số có chứng thư" },
+        { "t": "p", "x": "Chữ ký số có thể dùng chứng thư số và mật mã để gắn danh tính với phiên bản tài liệu, cũng như báo khi tệp bị sửa sau đó. Việc tạo và xác minh thường cần phần mềm hoặc nhà cung cấp tương thích. Chứng thư hết hạn, thu hồi hoặc không được tin cậy có thể ảnh hưởng xác thực. Kiểm tra trạng thái trong trình đọc hỗ trợ chữ ký." },
+        { "t": "h2", "x": "Chọn đúng quy trình" },
+        { "t": "p", "x": "Hỏi người nhận về nền tảng, loại chữ ký, xác thực danh tính và cách lưu biên nhận. Một số hồ sơ cần công chứng, nhân chứng hoặc quy trình giấy đặc biệt. Luật như ESIGN của Hoa Kỳ hoặc eIDAS của EU có phạm vi riêng, không tạo câu trả lời chung cho mọi nước. Công cụ PrintxPDF đặt dấu chữ ký hiển thị, không phát hành chứng thư số." },
+        { "t": "cta", "tool": "sign-pdf", "x": "Chọn phương thức được bên nhận chấp nhận và xác minh bản PDF sau khi ký." }
+      ]
+    },
+    {
+      "topic": "how-to-ocr-a-scanned-pdf",
+      "title": "OCR PDF scan để tìm kiếm và sao chép văn bản",
+      "slug": "how-to-ocr-a-scanned-pdf",
+      "tool": "ocr-pdf",
+      "description": "Nhận dạng chữ trên trang ảnh, tạo lớp văn bản tìm kiếm được và rà soát kết quả OCR trước khi sử dụng.",
+      "metaDescription": "Chạy OCR cho PDF scan, tìm từ khóa và kiểm tra lỗi nhận dạng trong tên, số liệu, dấu tiếng Việt và bảng.",
+      "faqs": [
+        { "q": "Làm sao biết PDF đã có OCR?", "a": "Thử chọn một câu hoặc tìm từ cụ thể. Nếu không thể, PDF có thể chỉ chứa ảnh trang." },
+        { "q": "OCR có nhận dạng chính xác mọi chữ không?", "a": "Không. Chất lượng ảnh, độ nghiêng, phông và ngôn ngữ ảnh hưởng kết quả. Cần kiểm tra lại." },
+        { "q": "OCR có thay ảnh gốc không?", "a": "Thông thường nó thêm hoặc tạo lớp văn bản; giữ bản nguồn và xác minh đầu ra trước khi thay thế." }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF scan có thể trông như văn bản nhưng thực chất là ảnh của từng trang. OCR phân tích điểm ảnh để nhận dạng ký tự và tạo lớp chữ có thể tìm kiếm, chọn hoặc sao chép. Kết quả không phải lúc nào cũng chính xác. Trước khi xử lý, kiểm tra trang có đủ nét, đúng chiều và ngôn ngữ phù hợp, đồng thời giữ nguyên bản quét ban đầu." },
+        { "t": "h2", "x": "Kiểm tra PDF hiện có lớp chữ không" },
+        { "t": "p", "x": "Mở tệp và thử chọn một câu, sao chép vào văn bản hoặc tìm một từ đặc trưng. Nếu không có kết quả, có thể PDF chỉ chứa ảnh. Nếu chữ chọn được nhưng sai thứ tự hoặc thiếu dấu, tệp có thể đã có OCR chất lượng thấp. Chạy lại trên bản sao và so sánh trước sau." },
+        { "t": "h2", "x": "Chuẩn bị bản quét" },
+        { "t": "p", "x": "Ảnh rõ, thẳng và có độ tương phản tốt giúp nhận dạng chính xác hơn. Xoay trang nằm ngang, cắt lề đen vừa đủ và tránh làm mất dấu hoặc chữ viết tay. Tăng độ phân giải không khôi phục nội dung đã mờ. Với tài liệu nhiều ngôn ngữ, chọn ngôn ngữ nhận dạng đúng nếu có tùy chọn." },
+        { "t": "h2", "x": "Chạy OCR trên một bản sao" },
+        { "t": "p", "x": "Chọn PDF trong công cụ OCR và xem giới hạn dung lượng cùng cách xử lý. OCR PDF của PrintxPDF chạy trong trình duyệt theo mô tả công cụ, không tải tệp lên máy chủ cho thao tác OCR này. Đợi xử lý xong và tải đầu ra riêng. Tài liệu nhiều trang có thể mất thời gian; tránh đóng tab trước khi hoàn tất." },
+        { "t": "h2", "x": "Rà soát kết quả nhận dạng" },
+        { "t": "p", "x": "Mở PDF mới, tìm từ khóa ở đầu, giữa và cuối. Kiểm tra dấu tiếng Việt, tên riêng, ngày, số tiền, ký hiệu và bảng. OCR có thể nhầm 0 với O hoặc bỏ dấu khi ảnh mờ. Nếu cần trích dữ liệu quan trọng, đối chiếu từng giá trị với ảnh gốc. Giữ cả hai phiên bản và ghi rõ bản nào đã OCR." },
+        { "t": "cta", "tool": "ocr-pdf", "x": "Tạo lớp chữ bằng OCR rồi kiểm tra kết quả với ảnh nguồn." }
+      ]
+    },
+    {
+      "topic": "extract-text-from-image",
+      "title": "Lấy văn bản từ ảnh hoặc ảnh chụp bằng OCR",
+      "slug": "extract-text-from-image",
+      "tool": "ocr-pdf",
+      "description": "Dùng OCR để nhận dạng chữ trong ảnh, kiểm tra ngôn ngữ và sửa các lỗi trước khi sao chép hoặc lưu.",
+      "metaDescription": "Trích chữ từ ảnh, ảnh chụp màn hình hoặc bản quét bằng OCR. Cải thiện độ rõ và kiểm tra kết quả trước khi sử dụng.",
+      "faqs": [
+        { "q": "OCR có thể đọc chữ viết tay không?", "a": "Một số hệ thống nhận dạng một phần, nhưng độ chính xác thấp hơn chữ in và cần kiểm tra thủ công." },
+        { "q": "Ảnh mờ có trích chữ được không?", "a": "Có thể, nhưng kết quả dễ sai. Làm thẳng, tăng tương phản phù hợp và dùng ảnh nguồn rõ hơn nếu có." },
+        { "q": "Có thể OCR tiếng Việt không?", "a": "Kết quả phụ thuộc công cụ, bộ ngôn ngữ và chất lượng dấu trong ảnh. Soát kỹ chữ có dấu." }
+      ],
+      "body": [
+        { "t": "p", "x": "OCR biến chữ nhìn thấy trong ảnh thành văn bản có thể tìm kiếm hoặc sao chép. Bạn có thể dùng nó cho ảnh chụp màn hình, biên nhận, bảng thông báo hoặc trang tài liệu đã quét. OCR không đọc ý nghĩa như con người và có thể nhầm chữ gần giống nhau. Giữ ảnh nguồn, nhất là khi nội dung liên quan số liệu, hợp đồng hoặc thông tin quan trọng." },
+        { "t": "h2", "x": "Chọn ảnh đầu vào rõ" },
+        { "t": "p", "x": "Chữ cần đủ lớn, sắc nét và có tương phản với nền. Đặt giấy phẳng, chụp đủ ánh sáng, tránh bóng và giữ camera song song mặt giấy. Cắt vùng thừa nhưng không cắt dấu tiếng Việt hay ký hiệu. Nếu ảnh nghiêng, xoay thẳng trước khi nhận dạng. Nén ảnh quá mạnh có thể làm nét chữ biến thành khối." },
+        { "t": "h2", "x": "Chạy nhận dạng và chọn ngôn ngữ" },
+        { "t": "p", "x": "Tải ảnh hoặc PDF vào công cụ OCR theo định dạng được hỗ trợ. Nếu có tùy chọn ngôn ngữ, chọn ngôn ngữ thực tế của nội dung; bộ nhận dạng sai ngôn ngữ có thể làm dấu và từ mượn méo. Công cụ OCR của PrintxPDF chạy trong trình duyệt theo mô tả sản phẩm. Đợi kết quả rồi xuất hoặc sao chép văn bản." },
+        { "t": "h2", "x": "Sửa lỗi và giữ cấu trúc" },
+        { "t": "p", "x": "So sánh đầu ra với ảnh, kiểm tra tên riêng, địa chỉ, ngày, số tiền và dấu câu. Bảng có thể bị nối thành một chuỗi, còn nhiều cột có thể đọc sai thứ tự. Chữ viết tay, font trang trí và nền có hoa văn thường khó nhận dạng. Chỉnh thủ công chỉ sau khi xác nhận từ nguồn để không tự đoán từ bị thiếu." },
+        { "t": "h2", "x": "Bảo mật và lưu bản ghi" },
+        { "t": "p", "x": "Ảnh có thể chứa mã, thông tin liên lạc hoặc dữ liệu sức khỏe. Chỉ xử lý trong môi trường phù hợp với chính sách của bạn và không chia sẻ văn bản trích xuất rộng hơn mức cần thiết. Lưu ngày nhận dạng, tên nguồn và phiên bản đã rà soát. OCR hữu ích cho tìm kiếm nhưng không thay thế ảnh gốc hay bản chụp có giá trị chứng cứ." },
+        { "t": "cta", "tool": "ocr-pdf", "x": "Nhận dạng ảnh rồi soát từng giá trị với nguồn ban đầu." }
+      ]
+    },
+    {
+      "topic": "make-pdf-searchable",
+      "title": "Kiểm tra PDF có tìm kiếm được và tạo lớp OCR",
+      "slug": "make-pdf-searchable",
+      "tool": "ocr-pdf",
+      "description": "Thử tìm hoặc chọn chữ trong PDF, chạy OCR nếu cần và xác minh lớp văn bản mới.",
+      "metaDescription": "Kiểm tra PDF có văn bản tìm kiếm được không, dùng OCR cho bản quét và xác minh dấu, số liệu cùng thứ tự đọc.",
+      "faqs": [
+        { "q": "PDF nhìn thấy chữ nhưng không tìm được vì sao?", "a": "Trang có thể là ảnh scan không có lớp văn bản. OCR cần tạo lớp nhận dạng." },
+        { "q": "Làm sao biết OCR thành công?", "a": "Thử tìm vài từ ở các trang khác nhau và chọn văn bản để kiểm tra thứ tự cùng dấu." },
+        { "q": "PDF tìm kiếm được có luôn dễ truy cập không?", "a": "Không. Cần cấu trúc, thứ tự đọc, tiêu đề và văn bản thay thế phù hợp cho yêu cầu trợ năng." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một PDF có thể hiển thị trang chữ rõ nhưng không cho tìm hoặc sao chép nếu mỗi trang chỉ là ảnh. Để kiểm tra, dùng chức năng tìm trong trình đọc và thử chọn một câu. Nếu không có kết quả, có thể cần OCR. Tính tìm kiếm không đồng nghĩa tài liệu đã có cấu trúc trợ năng hoặc lớp văn bản chính xác." },
+        { "t": "h2", "x": "Kiểm tra lớp văn bản" },
+        { "t": "p", "x": "Tìm một từ xuất hiện rõ ở trang đầu, giữa và cuối. Thử kéo chọn câu và sao chép vào trình soạn thảo. Nếu chỉ chọn được cả trang như một hình, PDF có thể là bản scan. Nếu văn bản chọn được nhưng sai dấu hoặc thứ tự, lớp OCR cũ có thể không tốt. Ghi lại trang nào bị lỗi trước khi xử lý." },
+        { "t": "h2", "x": "Tạo lớp nhận dạng" },
+        { "t": "p", "x": "Chạy OCR trên bản sao của PDF scan. Công cụ phân tích ảnh, nhận dạng ký tự và gắn văn bản vào trang để tìm kiếm. Kết quả phụ thuộc chất lượng ảnh, ngôn ngữ và kiểu chữ. PDF OCR của PrintxPDF được mô tả là xử lý ngay trong trình duyệt, nhưng luôn xem thông tin sản phẩm hiện hành trước khi chọn tài liệu nhạy cảm." },
+        { "t": "h2", "x": "Xác minh độ chính xác" },
+        { "t": "p", "x": "Tìm nhiều từ, chọn một đoạn và so sánh thứ tự với ảnh. Kiểm tra dấu tiếng Việt, số, tên người và ký hiệu đặc biệt. OCR có thể tạo lớp chữ lệch khỏi vị trí, khiến trình đọc màn hình đọc không đúng. Sửa trên nguồn hoặc chạy lại với ảnh tốt hơn, không dựa vào một kết quả tìm kiếm duy nhất." },
+        { "t": "h2", "x": "Tính tìm kiếm và khả năng truy cập" },
+        { "t": "p", "x": "PDF tìm kiếm được giúp tra cứu nhanh, nhưng tài liệu truy cập được còn cần thứ tự đọc, tiêu đề, ngôn ngữ và mô tả hình phù hợp. OCR có thể là bước đầu chứ không giải quyết toàn bộ cấu trúc. Giữ ảnh gốc, bản OCR và ghi chú phiên bản. Nếu tài liệu là hồ sơ chính thức, hỏi đơn vị lưu trữ về chuẩn đầu ra cần dùng." },
+        { "t": "cta", "tool": "ocr-pdf", "x": "Chạy OCR rồi thử tìm và chọn văn bản trên nhiều trang." }
+      ]
+    },
+    {
+      "topic": "improve-ocr-accuracy",
+      "title": "Cải thiện độ chính xác OCR cho bản quét khó đọc",
+      "slug": "improve-ocr-accuracy",
+      "tool": "ocr-pdf",
+      "description": "Làm thẳng, tăng độ tương phản và chọn ngôn ngữ đúng; sau đó rà soát lỗi với ảnh gốc.",
+      "metaDescription": "Cải thiện OCR bằng cách chụp rõ, chỉnh nghiêng, chọn ngôn ngữ và kiểm tra tên, dấu cùng dữ liệu số quan trọng.",
+      "faqs": [
+        { "q": "Yếu tố nào làm OCR sai nhiều?", "a": "Ảnh mờ, nghiêng, thiếu sáng, chữ nhỏ, nền nhiễu và chọn sai ngôn ngữ đều có thể ảnh hưởng." },
+        { "q": "Tăng DPI có luôn sửa OCR không?", "a": "Không. Nó giúp khi bản quét ban đầu có đủ chi tiết; không phục hồi thông tin đã bị mất." },
+        { "q": "Cần kiểm tra phần nào sau OCR?", "a": "Soát tên riêng, số tài khoản, ngày, dấu tiếng Việt, công thức, bảng và các trường có hậu quả cao." }
+      ],
+      "body": [
+        { "t": "p", "x": "OCR phụ thuộc mạnh vào chất lượng ảnh đưa vào. Trang nghiêng, chữ nhỏ, nền xám, bóng đổ và độ tương phản thấp khiến bộ nhận dạng khó phân biệt ký tự. Trước khi chạy lại nhiều lần, cải thiện ảnh nguồn và thử một trang đại diện. Luôn giữ bản quét gốc vì các thao tác làm sạch có thể xóa nét mảnh hoặc dấu." },
+        { "t": "h2", "x": "Cải thiện lúc chụp hoặc quét" },
+        { "t": "p", "x": "Đặt giấy phẳng, giữ thiết bị song song, dùng ánh sáng đều và tránh bóng. Chọn độ phân giải đủ để chữ nhỏ có nhiều điểm ảnh, nhưng không mặc định mức tối đa sẽ tốt hơn. Làm sạch kính quét và chọn chế độ thang xám nếu màu nền không mang thông tin. Bảo đảm dấu tiếng Việt không bị cắt khỏi vùng chữ." },
+        { "t": "h2", "x": "Chỉnh ảnh trước khi OCR" },
+        { "t": "p", "x": "Xoay trang đúng chiều, làm thẳng đường văn bản và cắt viền đen vừa phải. Tăng tương phản có thể giúp chữ tách khỏi nền, nhưng quá mức sẽ làm nét mảnh biến mất. Khử nhiễu nhẹ cho giấy có đốm; giữ lại dấu nhỏ và dấu câu. Thử trên bản sao rồi so sánh bằng mắt với ảnh gốc." },
+        { "t": "h2", "x": "Chọn ngôn ngữ và bố cục" },
+        { "t": "p", "x": "Nếu công cụ cho chọn ngôn ngữ, khớp với văn bản thực tế. Tài liệu có tiếng Việt cùng tiếng Anh có thể cần kiểm tra cả hai nhóm từ. Bảng, cột và ghi chú bên lề dễ bị đọc lẫn thứ tự. Chạy từng phần riêng nếu bố cục rất phức tạp và ghép kết quả sau khi đã xác minh." },
+        { "t": "h2", "x": "Rà soát theo mức độ rủi ro" },
+        { "t": "p", "x": "Đối chiếu tên, ngày, số tiền, số hồ sơ, công thức và địa chỉ với ảnh. Một lỗi nhỏ trong số liệu có thể gây hậu quả lớn hơn lỗi ở đoạn mô tả. Ghi lại trang cần sửa và chỉnh theo nguồn chứ không suy đoán. Giữ bản OCR, ảnh gốc và lịch sử sửa đổi nếu kết quả dùng cho nghiên cứu hoặc công việc chính thức." },
+        { "t": "cta", "tool": "ocr-pdf", "x": "Cải thiện ảnh nguồn, chạy OCR lại và xác minh các trường quan trọng." }
+      ]
+    },
+    {
+      "topic": "make-searchable-pdf-from-scanned-paper",
+      "title": "Tạo PDF tìm kiếm được từ giấy đã quét",
+      "slug": "make-searchable-pdf-from-scanned-paper",
+      "tool": "ocr-pdf",
+      "description": "Quét giấy ngay ngắn, chạy OCR để thêm lớp chữ và kiểm tra văn bản nhận dạng ở từng phần.",
+      "metaDescription": "Quét giấy thành PDF có thể tìm kiếm bằng OCR. Chọn độ phân giải phù hợp, làm thẳng trang và xác minh kết quả.",
+      "faqs": [
+        { "q": "PDF scan và PDF tìm kiếm được khác nhau thế nào?", "a": "Bản scan có thể chỉ là ảnh; bản OCR thường có thêm lớp văn bản nhận dạng để tìm kiếm." },
+        { "q": "Độ phân giải nào nên dùng khi quét?", "a": "Chọn theo cỡ chữ và lưu trữ; thử mẫu vì DPI cao làm tệp lớn mà không luôn tăng độ chính xác." },
+        { "q": "Có thể OCR cả tài liệu nhiều ngôn ngữ không?", "a": "Có thể, nhưng cấu hình ngôn ngữ và chất lượng nhận dạng tùy công cụ. Kiểm tra từng ngôn ngữ." }
+      ],
+      "body": [
+        { "t": "p", "x": "Để biến giấy thành PDF tìm kiếm được, trước hết quét trang thành ảnh rồi dùng OCR tạo lớp chữ. Một bản PDF chỉ gồm ảnh vẫn nhìn giống tài liệu nhưng không thể tìm từ thông thường. Chất lượng phụ thuộc thiết bị, giấy, độ tương phản và ngôn ngữ. Lập kế hoạch đặt tên, thứ tự trang và lưu bản gốc trước khi xử lý." },
+        { "t": "h2", "x": "Quét trang giấy đúng cách" },
+        { "t": "p", "x": "Đặt giấy thẳng, không che góc và chọn độ phân giải đủ cho cỡ chữ. Tránh ánh sáng không đều khi dùng điện thoại. Xem trước để phát hiện trang bị ngược, mất mép hoặc có bóng. Nếu tài liệu có hai mặt, kiểm tra thứ tự trước khi ghép. Tách trang có nội dung riêng nếu máy quét tự thêm trang trắng." },
+        { "t": "h2", "x": "Tạo PDF từ ảnh quét" },
+        { "t": "p", "x": "Sắp xếp ảnh theo thứ tự, chọn khổ giấy và gộp thành PDF. Giữ ảnh nguồn hoặc bản sao chưa OCR. Tên file nên chứa loại tài liệu và ngày quét, nhưng tránh thông tin nhận dạng nhạy cảm nếu thư mục được chia sẻ. Mở PDF và kiểm tra số trang trước khi chạy OCR để bảo đảm không thiếu mặt sau." },
+        { "t": "h2", "x": "Chạy OCR và kiểm tra" },
+        { "t": "p", "x": "Chạy công cụ OCR trên PDF mới. Theo mô tả hiện hành, OCR PDF của PrintxPDF hoạt động trong trình duyệt. Sau khi xử lý, tìm từ ở đầu, giữa và cuối, rồi chọn văn bản để xác nhận thứ tự đọc. Soát dấu tiếng Việt, tên riêng, số liệu và dấu câu; OCR không thể bảo đảm mọi ký tự đúng." },
+        { "t": "h2", "x": "Lưu hồ sơ và bảo vệ thông tin" },
+        { "t": "p", "x": "Giữ cả bản scan và bản OCR cho đến khi kiểm tra xong. Ghi rõ bản nào có lớp chữ và ai đã rà soát. Nếu giấy tờ chứa thông tin cá nhân, phân quyền thư mục và dùng cách lưu trữ theo chính sách tổ chức. OCR làm tệp dễ tìm hơn nhưng không tự mã hóa, xóa thông tin ẩn hoặc xác nhận nội dung là chính xác." },
+        { "t": "cta", "tool": "ocr-pdf", "x": "Quét, gộp trang, chạy OCR rồi kiểm tra chữ với bản giấy." }
+      ]
+    },
+    {
+      "topic": "add-watermark-to-pdf",
+      "title": "Thêm watermark vào PDF mà không che nội dung",
+      "slug": "add-watermark-to-pdf",
+      "tool": "add-watermark",
+      "description": "Chọn chữ, độ mờ, góc xoay và phạm vi trang, rồi xác nhận dấu không cản trở việc đọc.",
+      "metaDescription": "Thêm watermark như DRAFT hoặc CONFIDENTIAL vào PDF, điều chỉnh độ mờ và vị trí, đồng thời hiểu giới hạn bảo mật.",
+      "faqs": [
+        { "q": "Watermark có ngăn người khác sao chép PDF không?", "a": "Không. Đây là dấu hiển thị, không phải mã hóa hoặc kiểm soát quyền truy cập." },
+        { "q": "Watermark có che được thông tin nhạy cảm không?", "a": "Không. Dùng quy trình redaction đã xác minh để loại bỏ dữ liệu thay vì đặt chữ lên trên." },
+        { "q": "Có thể đặt watermark trên một số trang không?", "a": "Nhiều công cụ cho chọn phạm vi; kiểm tra trang đầu, giữa và cuối sau khi xuất." }
+      ],
+      "body": [
+        { "t": "p", "x": "Watermark giúp người đọc nhận biết trạng thái tài liệu bằng chữ như DRAFT, SAMPLE hoặc CONFIDENTIAL. Đây là nội dung phủ trên trang, không thay thế mã hóa, quyền truy cập hoặc quy trình redaction. Chọn từ ngữ đúng với trạng thái thật và giữ PDF gốc trước khi xuất. Một watermark quá đậm có thể che đoạn văn, chữ ký và biểu đồ." },
+        { "t": "h2", "x": "Chọn nội dung và phạm vi" },
+        { "t": "p", "x": "Dùng cụm từ ngắn và nhất quán, không đặt nhãn bảo mật nếu tổ chức chưa xác định mức độ. Chọn toàn bộ trang hay một phạm vi cụ thể. Mở hình thu nhỏ để đảm bảo bìa, phụ lục và trang ký được xử lý đúng. Nếu trạng thái thay đổi, tạo bản final sạch thay vì chỉ thêm watermark chồng lên nhãn cũ." },
+        { "t": "h2", "x": "Điều chỉnh độ mờ và góc" },
+        { "t": "p", "x": "PrintxPDF cho phép chọn kích thước, màu, góc, độ trong và trang áp dụng. Bắt đầu với độ mờ thấp, xem trang có chữ dày và trang có chữ ký. Đặt dấu ở vùng ít ảnh hưởng nội dung, nhưng vẫn đủ nhìn khi in. Thử bản đen trắng vì màu nhạt trên màn hình có thể mất khi in." },
+        { "t": "h2", "x": "Watermark không phải bảo mật" },
+        { "t": "p", "x": "Watermark không ngăn tải, sao chép, in hoặc chụp màn hình. Nó cũng không xóa lớp chữ bên dưới. Nếu cần giới hạn truy cập, dùng giải pháp quyền hoặc mã hóa phù hợp. Nếu phải loại bỏ dữ liệu cá nhân, áp dụng redaction thực sự rồi tìm, chọn và sao chép thử để xác nhận nội dung không còn." },
+        { "t": "h2", "x": "Kiểm tra bản xuất" },
+        { "t": "p", "x": "Mở lại PDF, kiểm tra trang đầu, giữa, cuối và những trang có bảng hoặc chữ ký. Xác nhận nội dung vẫn dễ đọc, nhãn đúng trạng thái và không còn watermark trùng. Sửa đổi có thể ảnh hưởng chữ ký số. Đặt tên phiên bản rõ ràng và chỉ chia sẻ với người có quyền xem." },
+        { "t": "cta", "tool": "add-watermark", "x": "Thêm nhãn vừa đủ nhìn rồi kiểm tra mọi trang trước khi gửi." }
+      ]
+    }
+  ]
+}
