@@ -1,0 +1,256 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "make-a-recipe-binder",
+      "title": "Làm sổ công thức in giấy bền khi dùng trong bếp",
+      "slug": "make-a-recipe-binder",
+      "tool": "merge-pdf",
+      "description": "Chuẩn hóa thẻ công thức, in giấy phù hợp, sắp xếp mục lục và đóng thành quyển dễ lau chùi.",
+      "metaDescription": "Tạo sổ công thức in giấy dễ dùng trong bếp bằng cách chuẩn hóa trang, sắp thứ tự, thêm mục lục, chọn giấy phù hợp và bảo vệ trang khỏi vết bẩn.",
+      "faqs": [
+        { "q": "Nên dùng giấy nào cho sổ công thức?", "a": "Giấy vừa đủ dày để viết nhưng không quá cứng; chọn bìa hoặc tấm bảo vệ có thể lau theo cách đóng quyển." },
+        { "q": "Có nên in hai mặt không?", "a": "Có thể tiết kiệm giấy, nhưng kiểm tra lật trang, khoảng ghi chú và ảnh công thức trước." },
+        { "q": "Làm sao sắp xếp công thức dễ tìm?", "a": "Chia theo món hoặc dịp, đánh số trang và thêm mục lục theo tên công thức." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một sổ công thức in giấy hữu ích khi bạn nấu ăn với tay ướt, muốn ghi chú khẩu phần hoặc không muốn mang thiết bị vào bếp. Trước khi in, thu thập công thức bạn có quyền lưu, chuẩn hóa tiêu đề và đơn vị, rồi sắp theo nhóm như món chính, món chay, bánh hoặc đồ uống. Giữ URL và tên tác giả bên cạnh bản lưu để tìm lại nguồn." },
+        { "t": "h2", "x": "Chuẩn hóa từng trang" },
+        { "t": "p", "x": "Đặt tên công thức, số khẩu phần, thời gian chuẩn bị và nấu ở vị trí dễ nhìn. Tách nguyên liệu khỏi các bước, giữ nhiệt độ lò và cảnh báo dị ứng rõ ràng. Nếu thay đổi lượng nguyên liệu, kiểm tra lại đơn vị và thời gian vì không phải công thức nào cũng tăng tỷ lệ tuyến tính. Dành một khoảng ghi chú nếu bạn thường sửa cách nêm." },
+        { "t": "h2", "x": "Tạo PDF và xếp thứ tự" },
+        { "t": "p", "x": "Lưu từng công thức thành PDF hoặc chuyển ảnh chụp thành trang PDF, sau đó gộp theo mục lục. Đặt tên file có số thứ tự để nhóm không bị xáo trộn. Xem lại các trang ảnh và trang văn bản vì kích thước, lề có thể khác. Nếu công cụ không hỗ trợ mục lục tự động, tạo một trang chỉ mục riêng và cập nhật sau khi sắp xếp." },
+        { "t": "h2", "x": "Chọn cách in và đóng quyển" },
+        { "t": "p", "x": "In một mặt nếu bạn cần chỗ ghi ở mặt sau hoặc muốn thay trang riêng lẻ. In hai mặt tiết kiệm giấy nhưng cần kiểm tra hướng lật và lề đóng gáy. Giấy dày hơn giảm thấm mực, còn túi bảo vệ hoặc bìa trong có thể lau dễ hơn. Chọn vòng gáy cho phép mở phẳng trên bàn bếp và thay trang khi công thức đổi." },
+        { "t": "h2", "x": "Kiểm tra trước khi dùng" },
+        { "t": "p", "x": "Đọc thử chữ ở kích thước in, kiểm tra ảnh minh họa, số trang và mục lục. Đảm bảo mọi nguyên liệu và bước nấu đều nằm trong quyển. Lưu PDF gốc trong một thư mục có sao lưu để in lại. Chỉ phân phối bản sao theo quyền của website hoặc tác giả; sổ dùng cá nhân khác với việc bán lại bộ sưu tập." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Gộp các công thức theo mục lục rồi kiểm tra trang trước khi in." }
+      ]
+    },
+    {
+      "topic": "meal-plan-printables",
+      "title": "Tạo kế hoạch bữa ăn và danh sách mua sắm để in",
+      "slug": "meal-plan-printables",
+      "tool": "merge-pdf",
+      "description": "Lập thực đơn theo tuần, gom nguyên liệu vào danh sách mua và in một trang dễ ghi chú.",
+      "metaDescription": "Tạo lịch bữa ăn tuần có thể in, chuyển công thức thành danh sách mua sắm và để khoảng trống cho thay đổi.",
+      "faqs": [
+        { "q": "Kế hoạch bữa ăn nên có những cột nào?", "a": "Thường gồm ngày, bữa, món và ghi chú; thêm danh sách mua sắm nếu bạn cần theo dõi nguyên liệu." },
+        { "q": "Làm sao tránh mua thừa nguyên liệu?", "a": "Gộp nguyên liệu trùng, tính khẩu phần và kiểm tra thứ đã có ở nhà trước khi đi mua." },
+        { "q": "Nên in kế hoạch bao lâu một lần?", "a": "Nhiều người lập theo tuần; chọn chu kỳ phù hợp lịch sinh hoạt và điều kiện bảo quản thực phẩm." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một kế hoạch bữa ăn in giấy giúp cả nhà biết hôm nay ăn gì và giảm việc quyết định vào phút cuối. Bắt đầu bằng lịch thực tế, số người ăn và những buổi tối bận rộn. Chọn vài món quen, thêm món mới ở ngày có đủ thời gian và để khoảng trống cho thay đổi. Mẫu in nên dễ đọc trên tủ lạnh hoặc trong sổ." },
+        { "t": "h2", "x": "Lập thực đơn theo lịch" },
+        { "t": "p", "x": "Tạo hàng cho ngày và cột cho bữa cần lên kế hoạch. Ghi tên món ngắn, liên kết hoặc số trang công thức, cùng ghi chú rã đông hay chuẩn bị trước. Sắp món dùng chung nguyên liệu gần nhau để giảm lãng phí, nhưng vẫn cân bằng dinh dưỡng theo hướng dẫn bạn tin cậy. Kế hoạch gia đình có nhu cầu đặc biệt nên dựa trên chuyên gia phù hợp." },
+        { "t": "h2", "x": "Gom danh sách mua sắm" },
+        { "t": "p", "x": "Đọc từng công thức và cộng lượng nguyên liệu trùng. Chia danh sách theo khu vực như rau, đồ khô, lạnh hoặc gia vị để dễ mua. Kiểm tra tủ lạnh và kho trước khi ghi số lượng. Nếu đổi khẩu phần, tính lại lượng và để ý đơn vị. Dành ô đánh dấu để không mua lặp khi đã chọn món thay thế." },
+        { "t": "h2", "x": "Tạo bản PDF dễ in" },
+        { "t": "p", "x": "Đặt vùng in quanh kế hoạch và danh sách, chọn khổ giấy và lề hợp lý. Bảng quá rộng có thể cần hướng ngang hoặc cỡ chữ lớn hơn. Kiểm tra ô ghi chú còn chỗ viết tay và đường lưới vẫn nhìn được khi in đen trắng. Nếu có nhiều trang, thêm ngày bắt đầu tuần để tránh dùng nhầm bản cũ." },
+        { "t": "h2", "x": "Cập nhật mà không lãng phí" },
+        { "t": "p", "x": "In một bản thử trước khi tạo nhiều bản. Lưu mẫu có thể sửa và PDF đã phát hành riêng. Khi thay món, cập nhật danh sách mua và kiểm tra nguyên liệu dễ hỏng. Không xem lịch in là lời khuyên dinh dưỡng hoặc y tế; hãy điều chỉnh theo nhu cầu và hướng dẫn chuyên môn của gia đình." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Gộp kế hoạch và công thức tham khảo thành PDF tuần để in." }
+      ]
+    },
+    {
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "title": "Tạo PDF từ Word, Excel, PowerPoint hoặc ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "description": "Chọn công cụ theo định dạng nguồn, kiểm tra bố cục và xác nhận giới hạn bản quyền hoặc DRM.",
+      "metaDescription": "Tạo PDF từ DOCX, bảng tính, slide và ebook bằng công cụ phù hợp. Kiểm tra bố cục, font, trang và quyền chuyển đổi.",
+      "faqs": [
+        { "q": "Có thể chuyển mọi ebook sang PDF không?", "a": "Không. Ebook có DRM hoặc giấy phép hạn chế có thể không cho phép chuyển đổi." },
+        { "q": "Nên chuyển Excel sang PDF thế nào?", "a": "Đặt vùng in, khổ giấy và tỷ lệ trước, rồi kiểm tra cột và trang trong bản xem trước." },
+        { "q": "PDF có giữ mọi tính năng của PowerPoint không?", "a": "PDF thường giữ trang tĩnh nhưng không giữ hoạt ảnh, ghi chú diễn giả hoặc các tương tác gốc." }
+      ],
+      "body": [
+        { "t": "p", "x": "Tạo PDF từ tài liệu Office hoặc ebook giúp chia sẻ bản xem ổn định, nhưng mỗi định dạng nguồn có điểm cần kiểm tra riêng. Word phụ thuộc phông và ngắt trang, Excel cần vùng in, PowerPoint chuyển từng slide thành trang, còn ebook có thể có DRM. Chọn công cụ theo tệp đầu vào và giữ bản gốc có thể chỉnh sửa." },
+        { "t": "h2", "x": "Word và tài liệu văn bản" },
+        { "t": "p", "x": "Trước khi xuất DOCX, kiểm tra khổ giấy, lề, tiêu đề, bảng và hình. Dùng chức năng Xuất PDF của trình soạn thảo nếu có, hoặc công cụ Word sang PDF phù hợp. Mở tệp mới và kiểm tra phông tiếng Việt, liên kết, số trang cùng bình luận có cần loại bỏ. PDF không thay thế DOCX khi người nhận phải chỉnh sửa." },
+        { "t": "h2", "x": "Excel và PowerPoint" },
+        { "t": "p", "x": "Trong Excel, đặt vùng in, chọn hướng trang và tránh ép bảng lớn thành chữ quá nhỏ. Trong PowerPoint, xem lại khổ slide, màu và hiệu ứng; PDF thường chỉ giữ trạng thái tĩnh nên hoạt ảnh và ghi chú diễn giả có thể không xuất hiện. Mở mọi trang sau khi chuyển và so sánh biểu đồ, số liệu cùng phần chân trang." },
+        { "t": "h2", "x": "Ebook và quyền chuyển đổi" },
+        { "t": "p", "x": "Một số ebook không bị khóa có thể chuyển bằng công cụ tương thích, nhưng DRM và điều khoản cấp phép có thể hạn chế việc chuyển đổi hoặc phân phối. Không tìm cách vượt qua bảo vệ kỹ thuật. Kiểm tra định dạng nguồn, font nhúng và cách xử lý trang. Bản PDF có thể làm thay đổi bố cục, đánh số hoặc khả năng đọc trên màn hình nhỏ." },
+        { "t": "h2", "x": "Rà soát tệp và quyền riêng tư" },
+        { "t": "p", "x": "Đặt tên tệp theo phiên bản, mở lại, tìm một cụm chữ và kiểm tra trang đầu cuối. Đọc thông tin xử lý của công cụ trước khi chọn tài liệu nhạy cảm, vì một số chuyển đổi được thực hiện trên máy chủ. Chỉ chia sẻ nội dung bạn có quyền sử dụng và giữ nguồn theo chính sách. Tạo bản thử trước khi gửi hàng loạt." },
+        { "t": "cta", "tool": "word-to-pdf", "x": "Chọn bộ chuyển đổi theo nguồn rồi kiểm tra tệp PDF sau khi tạo." }
+      ]
+    },
+    {
+      "topic": "print-journal-articles",
+      "title": "In bài báo khoa học và tài liệu nghiên cứu rõ ràng",
+      "slug": "print-journal-articles",
+      "tool": "pdf-reader",
+      "description": "Chọn in hai mặt, lề đóng gáy và số trang trên mỗi tờ dựa vào kích thước chữ cùng biểu đồ.",
+      "metaDescription": "In bài báo khoa học với chữ, bảng và chú thích dễ đọc. Kiểm tra in hai mặt, lề đóng gáy và bản mẫu trước khi lưu trữ tài liệu nghiên cứu.",
+      "faqs": [
+        { "q": "Có nên in hai trang trên một mặt giấy không?", "a": "Cách đó tiết kiệm giấy nhưng có thể làm chú thích và công thức quá nhỏ." },
+        { "q": "In hai mặt có cần lề khác không?", "a": "Nếu đóng gáy, tăng lề trong và thử hướng lật trên trang mẫu." },
+        { "q": "Bản scan bài báo có tìm kiếm được không?", "a": "Nếu không có lớp văn bản, OCR có thể giúp tìm kiếm nhưng cần kiểm tra citation và số liệu." }
+      ],
+      "body": [
+        { "t": "p", "x": "Bài báo khoa học thường có chữ dày, công thức, chú thích, hình và bảng. Chọn cài đặt in dựa vào việc bạn đọc kỹ, ghi chú, dùng trong lớp hay lưu hồ sơ. Dùng PDF được phép truy cập từ nhà xuất bản hoặc thư viện, và tuân thủ giới hạn bản quyền. In thử một trang đại diện trước khi in cả số tạp chí." },
+        { "t": "h2", "x": "In hai mặt và lề đóng gáy" },
+        { "t": "p", "x": "In hai mặt tiết kiệm giấy, nhưng chọn đúng cạnh lật để trang sau không bị ngược. Nếu đóng gáy hoặc kẹp, tăng lề phía trong để chữ không bị che. Tài liệu có trang ngang cần xem riêng. Máy in có vùng không in sát mép, vì vậy đừng đặt chú thích hoặc số trang quá gần cạnh." },
+        { "t": "h2", "x": "Nhiều trang trên một tờ" },
+        { "t": "p", "x": "Hai trang trên một tờ hữu ích cho bản xem nhanh, nhưng bốn hoặc sáu trang có thể khiến công thức và chú thích khó đọc. Kiểm tra kích thước ở khoảng cách sử dụng thực tế. Nếu bài có bảng rộng, in riêng trang đó ở kích thước lớn thay vì thu toàn bộ tài liệu." },
+        { "t": "h2", "x": "Màu, xám và giấy" },
+        { "t": "p", "x": "Grayscale tiết kiệm mực nhưng biểu đồ phân biệt dữ liệu chỉ bằng màu có thể mất ý nghĩa. Xem legend, kiểu đường và chú thích sau khi chuyển sang đen trắng. Chọn giấy đủ rõ chữ nhỏ nhưng tránh loại quá dày nếu tài liệu dài. Nếu cần lưu trữ lâu, làm theo hướng dẫn của thư viện hoặc nhà xuất bản." },
+        { "t": "h2", "x": "Rà soát và ghi chú nghiên cứu" },
+        { "t": "p", "x": "Bản mẫu nên gồm đoạn văn, hình, bảng và trang citation. Xác nhận tiêu đề, DOI, tên tác giả và số trang đọc được. Nếu dùng OCR cho PDF scan, đối chiếu số liệu với hình gốc. Ghi chú nghiên cứu cá nhân có thể chứa ý tưởng chưa công bố; xem lại trước khi chia sẻ bản đã đánh dấu." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Mở bài báo PDF, xem bản in trước và thử một trang đại diện." }
+      ]
+    },
+    {
+      "topic": "annotate-pdf-for-study",
+      "title": "Ghi chú và đánh dấu PDF để học tập hiệu quả",
+      "slug": "annotate-pdf-for-study",
+      "tool": "edit-pdf",
+      "description": "Dùng bảng màu nhỏ, câu hỏi và tóm tắt bằng lời của mình, rồi kiểm tra bản xuất trên trình đọc khác.",
+      "metaDescription": "Đánh dấu PDF để học: chọn màu có quy tắc, viết ghi chú ngắn, sắp xếp nhận xét và kiểm tra chú thích sau khi xuất để ôn tập dễ dàng.",
+      "faqs": [
+        { "q": "Có nên tô sáng mọi đoạn quan trọng không?", "a": "Không. Chọn ý chính, bằng chứng hoặc câu hỏi để phần đánh dấu vẫn có giá trị khi ôn." },
+        { "q": "Ghi chú có xuất hiện trên thiết bị khác không?", "a": "Tùy cách lưu. Mở bản xuất trong trình đọc khác để kiểm tra highlight và ghi chú." },
+        { "q": "Chú thích có sửa văn bản PDF gốc không?", "a": "Không nhất thiết. PrintxPDF Editor thêm lớp phủ chú thích, không viết lại chữ nguồn." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chú thích PDF giúp bạn tìm lại ý chính, câu hỏi, định nghĩa và mối liên hệ khi ôn tập. Trước khi đánh dấu, chọn vài màu với ý nghĩa cố định và giữ cách dùng nhất quán. PrintxPDF Editor thêm văn bản, highlight và nét vẽ dạng lớp phủ; nó không viết lại nội dung chữ gốc trong PDF. Giữ bản nguồn riêng và lưu bản học có chú thích." },
+        { "t": "h2", "x": "Tạo hệ thống màu đơn giản" },
+        { "t": "p", "x": "Dùng một màu cho khái niệm, màu khác cho câu hỏi hoặc bằng chứng, và hạn chế số lượng để dễ nhớ. Thêm ký hiệu hoặc chữ viết bên cạnh nếu người đọc không phân biệt được màu. Đừng tô cả đoạn dài vì mọi câu sẽ trông có độ quan trọng ngang nhau. Đánh dấu đúng câu hỗ trợ việc tự kiểm tra." },
+        { "t": "h2", "x": "Viết ghi chú bằng lời của mình" },
+        { "t": "p", "x": "Thay vì chép nguyên văn, ghi một câu tóm tắt hoặc câu hỏi mà bạn cần trả lời. Gắn ghi chú với trang và đề mục để tìm lại nhanh. Sau mỗi phần, đóng PDF và thử giải thích nội dung dựa trên ghi chú. OCR trên bản scan có thể nhầm dấu hoặc công thức, nên so sánh chú thích với hình gốc." },
+        { "t": "h2", "x": "Dùng công cụ lớp phủ" },
+        { "t": "p", "x": "Mở PDF trong editor, chọn công cụ văn bản, highlight hoặc vẽ và đặt chú thích đúng vị trí. Kiểm tra lớp phủ không che công thức, hình hoặc chữ nguồn. Nếu tài liệu có nhiều trang, xem cả trang có kích thước và hướng khác nhau. Lưu ra bản mới, không ghi đè bản xuất bản chính thức." },
+        { "t": "h2", "x": "Ôn tập và chia sẻ có chọn lọc" },
+        { "t": "p", "x": "Mở bản đã chú thích trong trình đọc khác để xác nhận vị trí, màu và ghi chú được lưu. Chia sẻ bản có chú thích có thể tiết lộ câu hỏi riêng, nhận xét về giảng viên hoặc ghi chú cá nhân. Xóa phần riêng tư trước khi gửi nhóm. Chú thích không phải redaction và không che an toàn nội dung cần loại bỏ." },
+        { "t": "cta", "tool": "edit-pdf", "x": "Thêm lớp ghi chú, sau đó mở bản xuất để kiểm tra vị trí." }
+      ]
+    },
+    {
+      "topic": "cite-a-web-page",
+      "title": "Trích dẫn trang web theo APA, MLA hoặc Chicago",
+      "slug": "cite-a-web-page",
+      "tool": "html-to-pdf",
+      "description": "Ghi tác giả, tiêu đề, tên website, ngày và URL, rồi định dạng theo đúng phiên bản hướng dẫn.",
+      "metaDescription": "Trích dẫn website theo APA 7, MLA 9 hoặc Chicago. Kiểm tra tác giả, ngày xuất bản, URL và hướng dẫn của trường.",
+      "faqs": [
+        { "q": "Có phải luôn ghi ngày truy cập không?", "a": "Tùy phong cách và loại trang. Kiểm tra phiên bản hướng dẫn và yêu cầu giảng viên." },
+        { "q": "Trang không có tác giả thì ghi ai?", "a": "Làm theo quy tắc của phong cách trích dẫn; không tự đoán tên người viết." },
+        { "q": "Lưu website thành PDF có thay thế citation không?", "a": "Không. PDF là bản lưu, còn trích dẫn cần thông tin nguồn và URL theo chuẩn." }
+      ],
+      "body": [
+        { "t": "p", "x": "Trước khi trích dẫn một trang web, xác nhận bài được yêu cầu theo APA, MLA hay Chicago và phiên bản nào. Mỗi kiểu sắp xếp tác giả, tiêu đề, tên website, ngày và URL khác nhau. Ghi thông tin trực tiếp từ trang, không chỉ dựa vào kết quả tìm kiếm. Hướng dẫn của giảng viên hoặc tạp chí có thể bổ sung quy tắc riêng." },
+        { "t": "h2", "x": "Thu thập thông tin nguồn" },
+        { "t": "p", "x": "Ghi tác giả cá nhân hoặc tổ chức, tiêu đề trang, tên website, ngày xuất bản hoặc cập nhật và URL chính. Đừng dùng năm bản quyền ở chân trang như ngày xuất bản của bài. Nếu không thấy tác giả hoặc ngày, tìm hướng dẫn xử lý trường hợp thiếu thay vì tự thêm thông tin." },
+        { "t": "h2", "x": "So sánh phong cách" },
+        { "t": "p", "x": "APA thường nhấn mạnh ngày và tên website theo cấu trúc riêng. MLA tổ chức nguồn theo container và có thể yêu cầu ngày truy cập trong trường hợp phù hợp. Chicago có hệ chú thích-thư mục và hệ tác giả-ngày. Quy tắc thay đổi theo phiên bản, loại nội dung và yêu cầu nơi nộp, nên không trộn mẫu từ các trang hướng dẫn khác nhau." },
+        { "t": "h2", "x": "Lưu bản tham khảo" },
+        { "t": "p", "x": "Nếu trang có thể thay đổi, lưu PDF hoặc ghi chú ngày truy cập để tiện đối chiếu sau này. Bản PDF không thay thế trích dẫn và có thể thiếu bình luận, nội dung tương tác hoặc cập nhật. Dùng URL nguồn trong citation và kiểm tra liên kết còn truy cập được. Trích dẫn đúng giúp người đọc tìm lại tài liệu đã dùng." },
+        { "t": "p", "x": "Tham khảo chính thức: [ví dụ APA cho trang web](https://apastyle.apa.org/style-grammar-guidelines/references/examples/webpage-website-references), [MLA Style Center](https://style.mla.org/) và [hướng dẫn trích dẫn Chicago](https://www.chicagomanualofstyle.org/tools_citationguide.html)." },
+        { "t": "h2", "x": "Soát dấu câu và dữ liệu" },
+        { "t": "p", "x": "Kiểm tra chữ hoa, dấu nghiêng, dấu câu, tên tổ chức và URL từng mục. Trình quản lý citation có thể tự định dạng nhưng đôi khi nhập sai metadata. Mở trang nguồn, so sánh với bản ghi và kiểm tra hướng dẫn mới nhất trước khi nộp. Không trích dẫn nội dung bạn chưa thực sự đọc hoặc không thể xác nhận." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Lưu bản trang nếu cần, nhưng trích dẫn nguồn gốc theo đúng chuẩn." }
+      ]
+    },
+    {
+      "topic": "print-lecture-slides",
+      "title": "In handout bài giảng mà không lãng phí hàng chục trang",
+      "slug": "print-lecture-slides",
+      "tool": "ppt-to-pdf",
+      "description": "Chọn số slide mỗi tờ, chỗ ghi chú và in hai mặt; kiểm tra hiệu ứng cùng trang có chữ nhỏ.",
+      "metaDescription": "In slide bài giảng thành handout tiết kiệm giấy nhưng vẫn đọc được. Kiểm tra thứ tự, hiệu ứng, khoảng ghi chú và bản in thử trước khi phát cho lớp.",
+      "faqs": [
+        { "q": "Nên in mấy slide trên một trang?", "a": "Ba hoặc sáu slide là lựa chọn thường gặp, nhưng slide nhiều chữ cần ít hình hơn để dễ đọc." },
+        { "q": "Slide có hiệu ứng xuất ra sao?", "a": "PDF thường giữ trạng thái tĩnh, không giữ các bước animation hoặc ghi chú diễn giả." },
+        { "q": "Làm sao để có chỗ ghi chú?", "a": "Chọn bố cục handout có dòng ghi chú hoặc chừa khoảng trống và thử in một tờ." }
+      ],
+      "body": [
+        { "t": "p", "x": "Bài giảng có hàng chục slide có thể in thành handout nhiều slide mỗi mặt giấy, nhưng cần cân bằng giữa tiết kiệm và khả năng đọc. Trước khi xuất, xác nhận có hiệu ứng build tạo nhiều trạng thái trung gian không. PDF thường lưu trang tĩnh, vì vậy quyết định trạng thái nào cần người học xem và giữ lại ghi chú quan trọng." },
+        { "t": "h2", "x": "Chọn bố cục handout" },
+        { "t": "p", "x": "Ba slide trên một trang thường cho hình lớn và chỗ ghi chú; sáu slide giảm số tờ nhưng chữ và biểu đồ nhỏ hơn. Bố cục chín hình chỉ hợp xem tổng quan. Với công thức, biểu đồ dày hoặc chữ chú thích, chọn ít slide hơn. Xem từng trang để chắc thứ tự đọc hàng ngang hay cột dọc không bị nhầm." },
+        { "t": "h2", "x": "Xử lý hiệu ứng và ghi chú" },
+        { "t": "p", "x": "Nếu animation tiết lộ sơ đồ theo từng bước, handout chỉ nên chứa trạng thái cuối hoặc các bước cần thiết theo mục tiêu bài học. Xuất thử và kiểm tra có trang trùng hay thiếu. Ghi chú diễn giả thường không tự xuất theo slide; nếu lớp cần chúng, chọn bố cục ghi chú riêng và xem quyền chia sẻ nội dung." },
+        { "t": "h2", "x": "Đặt khổ giấy và in hai mặt" },
+        { "t": "p", "x": "Chọn A4 hoặc Letter, hướng trang và lề theo máy in. In hai mặt để tiết kiệm giấy nhưng thử cạnh lật trước. Grayscale có thể làm mất khác biệt giữa chuỗi màu; thêm nhãn hoặc kiểu nét nếu có thể. Giữ số slide nhìn thấy để học viên tham chiếu khi hỏi." },
+        { "t": "h2", "x": "In mẫu và tuân thủ quyền sử dụng" },
+        { "t": "p", "x": "In một tờ có slide nhiều chữ, hình và biểu đồ rồi đọc ở khoảng cách thực tế. Kiểm tra tên giảng viên, số trang và thông báo bản quyền. Tài liệu khóa học có thể có quy định phân phối; không đăng handout công khai nếu chưa được phép. Bản PDF có thể gửi điện tử khi học viên cần phóng to hoặc dùng công nghệ hỗ trợ." },
+        { "t": "cta", "tool": "ppt-to-pdf", "x": "Tạo bản PDF handout rồi kiểm tra bố cục trước khi in hàng loạt." }
+      ]
+    },
+    {
+      "topic": "add-print-button-to-wordpress",
+      "title": "Thêm nút in vào website WordPress",
+      "slug": "add-print-button-to-wordpress",
+      "tool": "html-to-pdf",
+      "description": "Chọn vị trí nút, đảm bảo CSS in giữ nội dung cần thiết và kiểm tra cách trang hoạt động trên di động.",
+      "metaDescription": "Thêm nút in vào bài WordPress, kiểm tra plugin hoặc mã tùy chỉnh, kiểu CSS in và bản xem trước trên nhiều trang.",
+      "faqs": [
+        { "q": "Có cần plugin để thêm nút in WordPress không?", "a": "Không nhất thiết. Plugin tiện quản lý, còn mã tùy chỉnh cần kiểm thử và bảo trì." },
+        { "q": "Nút in có tự bỏ quảng cáo không?", "a": "Không. Kết quả phụ thuộc stylesheet in; cần ẩn các phần không muốn in và giữ nội dung bài." },
+        { "q": "Làm sao kiểm tra nút trên điện thoại?", "a": "Thử thao tác in hoặc lưu PDF trên trình duyệt di động và xem lại trang xuất." }
+      ],
+      "body": [
+        { "t": "p", "x": "Nút in trên bài WordPress giúp người đọc mở hộp thoại in hoặc lưu trang thành PDF. Trước khi cài plugin hay thêm mã, xác định người dùng cần in toàn trang hay chỉ nội dung bài viết. Nút đơn thuần không tự tạo bố cục sạch; CSS dành cho in quyết định menu, quảng cáo, ảnh và thanh bên có xuất hiện hay không." },
+        { "t": "h2", "x": "Chọn plugin hoặc mã tùy chỉnh" },
+        { "t": "p", "x": "Plugin có thể cung cấp nút và tùy chọn mà không phải tự duy trì nhiều mã. Kiểm tra ngày cập nhật, tương thích phiên bản WordPress, quyền yêu cầu và chính sách hỗ trợ. Mã tùy chỉnh có thể nhẹ hơn nhưng cần thử sau khi đổi theme hoặc plugin. Sao lưu site và thử trên môi trường staging trước khi cập nhật trực tiếp." },
+        { "t": "h2", "x": "Đặt nút dễ tìm" },
+        { "t": "p", "x": "Đặt nút gần tiêu đề hoặc cuối bài, dùng nhãn rõ như In bài này. Nút phải có trạng thái bàn phím, nhãn truy cập và vùng bấm đủ lớn trên màn hình cảm ứng. Tránh đặt cạnh quảng cáo hoặc nút đăng ký nếu người đọc có thể bấm nhầm. Xác nhận nó không xuất hiện trong bản giấy nếu không cần." },
+        { "t": "h2", "x": "Viết CSS in phù hợp" },
+        { "t": "p", "x": "Ẩn menu, footer điều hướng, popup và phần quảng cáo khi in; giữ tiêu đề, tác giả, ngày, bài viết, hình có ý nghĩa và nguồn. Tránh ẩn các cảnh báo hoặc chú thích. Đặt màu và lề phù hợp với giấy, cho phép bảng rộng chuyển trang và tránh chia tiêu đề khỏi đoạn đầu. Kiểm tra cả trang có mã, bảng và ảnh." },
+        { "t": "h2", "x": "Kiểm thử và duy trì" },
+        { "t": "p", "x": "Thử nút trên desktop và điện thoại, mở bản xem trước, kiểm tra ngắt trang, liên kết và khả năng đọc đen trắng. Nội dung động hoặc paywall có thể không giống trên giấy. Sau khi cập nhật theme, kiểm thử lại. Nêu rõ nút mở hộp thoại trình duyệt hay tạo tệp PDF riêng, tránh hứa tính năng mà plugin không cung cấp." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Thử xuất một trang WordPress và rà CSS in trước khi triển khai nút." }
+      ]
+    },
+    {
+      "topic": "print-stylesheet-css",
+      "title": "Viết CSS in để trang web có bố cục rõ trên giấy",
+      "slug": "print-stylesheet-css",
+      "tool": "html-to-pdf",
+      "description": "Dùng media print để ẩn giao diện phụ, định dạng chữ và kiểm tra điểm ngắt trang.",
+      "metaDescription": "Tạo stylesheet CSS in cho bài viết, menu và bảng. Kiểm tra @media print, màu nền và ngắt trang trong bản xem trước.",
+      "faqs": [
+        { "q": "@media print dùng để làm gì?", "a": "Nó áp dụng quy tắc CSS khi trang được in hoặc xuất qua hộp thoại in của trình duyệt." },
+        { "q": "Có nên đặt mọi phần tử thành màu đen không?", "a": "Không nếu màu truyền đạt ý nghĩa. Hãy bảo đảm độ tương phản và có nhãn hoặc kiểu khác hỗ trợ." },
+        { "q": "Làm sao ngăn tiêu đề bị tách khỏi nội dung?", "a": "Dùng quy tắc ngắt trang phù hợp và kiểm tra trên nhiều trình duyệt cùng khổ giấy." }
+      ],
+      "body": [
+        { "t": "p", "x": "Stylesheet in giúp chuyển bố cục màn hình thành trang giấy dễ đọc. CSS có thể ẩn menu, popup và thanh điều hướng, nhưng cần giữ nội dung, hình, chú thích và nguồn quan trọng. Thử bản xem trước trên trình duyệt mục tiêu vì hỗ trợ thuộc tính và cách phân trang có thể khác. In thử giúp phát hiện vấn đề mà màn hình không thể hiện." },
+        { "t": "h2", "x": "Tách quy tắc in" },
+        { "t": "p", "x": "Dùng khối @media print để áp dụng định dạng riêng khi in. Ẩn phần tử giao diện bằng lớp cụ thể thay vì chọn rộng mọi thẻ, tránh vô tình xóa chú thích hoặc nội dung lồng bên trong. Đặt nền trắng nếu phù hợp, màu chữ có độ tương phản và cỡ chữ đọc được. Không mặc định mọi thiết bị có cùng lề." },
+        { "t": "h2", "x": "Giữ nội dung và đường dẫn" },
+        { "t": "p", "x": "Ẩn quảng cáo, điều hướng, nút tương tác và thành phần không liên quan. Giữ tiêu đề, tác giả, ngày, bài, chú thích ảnh, bảng và trích dẫn. Cân nhắc hiển thị URL sau liên kết nếu người đọc cần biết nguồn. Không ẩn nội dung chỉ vì nó tương tác trên màn hình nếu người đọc cần câu trả lời đó." },
+        { "t": "h2", "x": "Kiểm soát ngắt trang" },
+        { "t": "p", "x": "Dùng thuộc tính break-before, break-after hoặc break-inside một cách thận trọng để giữ tiêu đề với đoạn đầu và tránh chia bảng ở vị trí khó đọc. Trình duyệt có thể bỏ qua một số quy tắc khi không còn chỗ. Bảng rộng cần hướng ngang hoặc cuộn không tồn tại trên giấy, nên cung cấp cách hiển thị thay thế." },
+        { "t": "h2", "x": "Kiểm thử nhiều nội dung" },
+        { "t": "p", "x": "Xem trang dài, trang có ảnh, bảng, liên kết và nội dung động. Kiểm tra đen trắng, khổ A4 hoặc Letter, tiêu đề, số trang và chân trang. Tránh phụ thuộc duy nhất vào màu để truyền đạt trạng thái. Đọc PDF xuất ra bằng văn bản chọn được và thử liên kết. Cập nhật CSS cùng theme rồi chạy lại bộ kiểm thử in." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Xuất trang mẫu và kiểm tra CSS in ở các trường hợp thực tế." }
+      ]
+    },
+    {
+      "topic": "printer-friendly-website-design",
+      "title": "Thiết kế website thân thiện với máy in",
+      "slug": "printer-friendly-website-design",
+      "tool": "html-to-pdf",
+      "description": "Tạo bố cục in gọn, giữ thông tin thiết yếu và đảm bảo nội dung không chỉ dựa vào màu hoặc tương tác.",
+      "metaDescription": "Thiết kế trang web dễ in bằng CSS, kiểu chữ, ngắt trang và bản xem trước. Giữ bảng, nguồn cùng nội dung có ý nghĩa.",
+      "faqs": [
+        { "q": "Trang in nên ẩn phần nào?", "a": "Thường ẩn điều hướng, popup và quảng cáo, nhưng giữ nội dung, chú thích và nguồn cần thiết." },
+        { "q": "Có nên bỏ tất cả hình ảnh không?", "a": "Không. Giữ hình truyền đạt thông tin, sơ đồ và chú thích; bỏ hình trang trí nếu không cần." },
+        { "q": "Làm sao đánh giá trải nghiệm in?", "a": "Dùng bản xem trước ở nhiều khổ giấy, kiểm tra độ đọc, ngắt trang và lượng giấy." }
+      ],
+      "body": [
+        { "t": "p", "x": "Một website thân thiện với máy in giúp người đọc giữ nội dung quan trọng mà không mang theo mọi menu, banner và popup. Bố cục in nên rõ ràng trên giấy trắng đen, dùng cỡ chữ dễ đọc và giữ nguồn cùng ngày khi phù hợp. Đừng xem bản in là bản sao đầy đủ của ứng dụng: video, nút và nội dung động có thể không xuất hiện." },
+        { "t": "h2", "x": "Thiết kế cấu trúc nội dung" },
+        { "t": "p", "x": "Dùng tiêu đề có thứ bậc, đoạn văn ngắn và nhãn rõ để người đọc theo dõi khi không có điều hướng trên màn hình. Giữ tên tác giả, ngày, thông tin bản quyền và liên kết nguồn nếu cần. Bảng nên có tiêu đề cột lặp lại khi sang trang. Không dựa chỉ vào màu nền để phân biệt cảnh báo hoặc trạng thái." },
+        { "t": "h2", "x": "Tối ưu CSS dành cho in" },
+        { "t": "p", "x": "Trong media print, ẩn menu, thanh bên, quảng cáo và nút không hoạt động trên giấy. Giữ hình ảnh có giá trị thông tin, chú thích và văn bản thay thế phù hợp. Chọn màu có độ tương phản khi in thang xám, tôn trọng vùng lề và giới hạn chiều rộng. Không ép nội dung rộng thành chữ quá nhỏ." },
+        { "t": "h2", "x": "Ngắt trang và phương tiện" },
+        { "t": "p", "x": "Tránh để tiêu đề nằm cuối trang hoặc tách một hàng bảng quan trọng. Dùng quy tắc ngắt trang có chọn lọc, nhưng kiểm tra trên nhiều trình duyệt vì máy in có thể xử lý khác. Video nên có URL hoặc tóm tắt, và nội dung chỉ mở bằng thao tác cần được thể hiện trong bản in theo cách khác." },
+        { "t": "h2", "x": "Thử nghiệm với người đọc thật" },
+        { "t": "p", "x": "Xem trước ở A4 và Letter, in thử trang dài, bảng rộng, ảnh và liên kết. Kiểm tra độ tương phản, lượng giấy, ngắt trang và khả năng đọc ở khoảng cách bình thường. Người dùng có thể lưu PDF thay vì in giấy, nên xác nhận văn bản vẫn chọn được và link còn hoạt động. Thu thập phản hồi rồi cập nhật CSS sau khi theme đổi." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Kiểm tra trang mẫu thành PDF để đánh giá bố cục in." }
+      ]
+    }
+  ]
+}
