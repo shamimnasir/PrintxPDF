@@ -1,0 +1,602 @@
+[
+  {
+    "locale": "es",
+    "name": "Español",
+    "nativeName": "Español",
+    "hub": "guias",
+    "dir": "ltr",
+    "hubTitle": "Guías de PDF en español",
+    "hubDescription": "Respuestas prácticas en español para unir y comprimir PDF y convertir fotos a PDF, con herramientas gratuitas y pasos claros.",
+    "hubIntro": "Guías prácticas para las tareas de PDF que más se repiten: reunir documentos, reducir el tamaño para compartirlos y convertir fotos en un archivo ordenado. Cada artículo explica qué conserva la herramienta, qué cambia y cómo comprobar el resultado. El procesamiento local se indica para cada herramienta compatible.",
+    "hubAnswer": "Encuentra instrucciones en español para unir varios PDF, comprimir un documento y convertir fotos JPG, PNG o WebP en páginas PDF. Las guías enlazan con las herramientas de PrintxPDF y explican sus límites antes de descargar el archivo.",
+    "toolNote": "El texto de esta guía está en español. La interfaz de la herramienta enlazada puede mostrar algunos controles en inglés.",
+    "homeLabel": "Inicio",
+    "backLabel": "Todas las guías en español",
+    "readLabel": "Guía práctica",
+    "faqsLabel": "Preguntas frecuentes",
+    "guideLabel": "Leer la guía",
+    "updated": "Actualizado el 3 de octubre de 2026",
+    "guides": [
+      {
+        "topic": "merge-pdf",
+        "slug": "unir-pdf",
+        "keyword": "unir PDF online gratis",
+        "secondaryKeywords": ["juntar varios PDF en uno", "combinar archivos PDF", "unir PDF sin subir archivos"],
+        "title": "Cómo unir varios PDF en un solo archivo",
+        "metaTitle": "Unir PDF online gratis y en el orden que quieras",
+        "metaDescription": "Aprende a unir varios PDF en un solo archivo, ordenar los documentos y conservar la calidad de cada página antes de compartir el resultado.",
+        "answer": "Para unir varios PDF, añade dos o más archivos, ordénalos de la portada al anexo y ejecuta la combinación. PrintxPDF copia las páginas en el navegador sin volver a dibujarlas, así que conserva el texto seleccionable y la calidad original. Revisa el orden y los formularios antes de compartir el archivo final.",
+        "tool": "merge-pdf",
+        "ctaLabel": "Unir archivos PDF",
+        "sections": [
+          {
+            "heading": "Cuándo conviene juntar varios PDF",
+            "paragraphs": [
+              "Un solo PDF es más fácil de enviar, archivar e imprimir que una cadena de adjuntos. Es útil para entregar una solicitud con su identificación, reunir facturas del mismo mes, combinar un informe con sus anexos o cargar un expediente en un portal que solo acepta un archivo. Antes de unir nada, decide el orden de lectura: normalmente portada, documento principal y anexos al final.",
+              "Combinar no significa reducir el tamaño. La herramienta coloca las páginas completas de cada archivo en un documento nuevo. No elimina páginas repetidas, no corrige páginas giradas y no reorganiza automáticamente el contenido. Si quieres mover páginas individuales, primero puedes terminar la unión y después abrir Organizar páginas. Los marcadores del documento y la configuración de campos rellenables no siempre acompañan a las páginas, así que conserva los originales si esas funciones importan."
+            ]
+          },
+          {
+            "heading": "Pasos para unir archivos PDF",
+            "paragraphs": ["La combinación se ejecuta en la pestaña del navegador. No se necesita una cuenta para la herramienta."],
+            "steps": [
+              {"heading": "Selecciona los archivos", "text": "Abre Unir PDF y elige al menos dos documentos PDF. Puedes arrastrarlos a la zona de selección o buscarlos en tu dispositivo. Comprueba que no hayas incluido un borrador o un archivo equivocado."},
+              {"heading": "Organiza el orden", "text": "Usa las flechas para poner los archivos en la secuencia deseada. El documento de arriba aparece primero en el resultado. Si el orden de las páginas es importante, revisa los nombres antes de continuar."},
+              {"heading": "Combina y verifica", "text": "Inicia la unión y descarga el archivo creado. Ábrelo y comprueba la primera página, la última, la numeración y que los anexos estén en el lugar correcto antes de enviarlo."}
+            ]
+          },
+          {
+            "heading": "Calidad, privacidad y problemas habituales",
+            "paragraphs": [
+              "La unión copia páginas, no las convierte en capturas de pantalla. Por eso, el texto que ya se podía seleccionar suele seguir siendo seleccionable, y no se introduce una pérdida de nitidez por el proceso de combinación. El archivo final sí puede ocupar más espacio que uno de los originales porque reúne todas las páginas y puede repetir recursos internos, como fuentes que estaban guardadas por separado.",
+              "En esta herramienta de navegador, los PDF se procesan localmente en la pestaña y no se suben al servidor. Aun así, cerrar la pestaña antes de descargar el resultado interrumpe tu trabajo, así que espera a que termine. Si un archivo protegido no se combina correctamente, puede requerir que lo desbloquees con una contraseña que tengas derecho a usar. Si una casilla de formulario deja de ser interactiva, guarda el original y aplana el formulario antes de combinarlo la próxima vez. Para enviar documentos confidenciales, revisa también el destinatario y el nombre del archivo."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "¿Unir PDF reduce la calidad?", "a": "No vuelve a dibujar las páginas ni las convierte en imágenes. El texto y las ilustraciones conservan la calidad que ya tenían en los archivos de origen."},
+          {"q": "¿Puedo cambiar el orden de los PDF?", "a": "Sí. Coloca los archivos en el orden deseado antes de ejecutar la unión. Para reordenar páginas individuales, usa Organizar páginas después."},
+          {"q": "¿Mis documentos se suben a un servidor?", "a": "La herramienta Unir PDF los procesa en el navegador. Los archivos se mantienen en tu dispositivo durante la operación."}
+        ]
+      },
+      {
+        "topic": "compress-pdf",
+        "slug": "comprimir-pdf",
+        "keyword": "comprimir PDF para enviar por correo",
+        "secondaryKeywords": ["reducir tamaño PDF", "comprimir PDF gratis online", "PDF demasiado grande para adjuntar"],
+        "title": "Cómo comprimir un PDF sin perder texto seleccionable",
+        "metaTitle": "Comprimir PDF y reducir su tamaño antes de enviarlo",
+        "metaDescription": "Reduce el tamaño de un PDF para adjuntarlo o subirlo. Compara las opciones que conservan texto con las que convierten cada página en imagen.",
+        "answer": "Para reducir un PDF, empieza por la compresión ligera si necesitas conservar texto, enlaces y búsquedas. Si el documento es un escaneo con muchas fotografías, los modos más fuertes pueden reducirlo más, pero convierten las páginas en imágenes. Compara el tamaño final y revisa que siga siendo legible antes de reemplazar el original.",
+        "tool": "compress-pdf",
+        "ctaLabel": "Comprimir un PDF",
+        "sections": [
+          {
+            "heading": "Primero identifica por qué el PDF pesa tanto",
+            "paragraphs": [
+              "Un PDF puede ser grande por fotografías, páginas escaneadas a alta resolución, fuentes incrustadas o datos que quedaron dentro del archivo. No existe un porcentaje de reducción garantizado: depende del contenido y de cómo se creó el documento. Un archivo de texto puede cambiar poco, mientras que un escaneo en color puede beneficiarse mucho más de reducir la resolución de sus páginas.",
+              "Antes de comprimir, consulta el límite exacto del portal o del correo. Algunos sitios publican un máximo por archivo y otros un límite para todos los adjuntos. Guarda una copia del original. Si el archivo contiene texto que tendrás que buscar, copiar o citar, elige una opción que preserve la capa de texto. Si solo importa compartir una copia visual más pequeña, puedes probar un nivel más fuerte, pero compara el resultado con el original."
+            ]
+          },
+          {
+            "heading": "Qué nivel elegir",
+            "paragraphs": [
+              "La opción ligera reorganiza datos del PDF sin convertir las páginas en imágenes. Es la primera opción para contratos, informes y documentos con enlaces o texto que debe seguir siendo seleccionable. A veces ahorra poco, especialmente si el tamaño proviene de fotografías ya comprimidas.",
+              "Los niveles medio y fuerte rasterizan las páginas: cada hoja se guarda como una imagen dentro del PDF. Eso puede reducir bastante un escaneo pesado, pero el texto deja de ser seleccionable, buscable o copiable; también pueden perderse enlaces, marcadores y campos rellenables. No uses esos niveles para reemplazar el único original de un documento que deba conservar funciones accesibles. Si el resultado sigue demasiado grande, divide el documento por secciones o pregunta al destinatario si acepta un enlace seguro en lugar de un adjunto."
+            ],
+            "steps": [
+              {"heading": "Carga el PDF", "text": "Abre Comprimir PDF y selecciona el archivo. Para un documento importante, deja el original sin modificar en otra carpeta."},
+              {"heading": "Empieza con Ligera", "text": "Escoge el modo ligero si necesitas buscar o copiar texto. Si se trata de un escaneo y el ahorro no basta, prueba un nivel más fuerte con una copia."},
+              {"heading": "Compara y revisa", "text": "Mira el tamaño antes y después, abre el PDF resultante y comprueba una página con letra pequeña y otra con imágenes. Conserva la versión que cumpla el límite sin sacrificar legibilidad."}
+            ]
+          },
+          {
+            "heading": "Cómo comprobar que la compresión funcionó",
+            "paragraphs": [
+              "No te fíes solo del nombre del archivo. Comprueba que el resultado está por debajo del límite indicado y abre varias páginas al nivel de zoom que usará el destinatario. Busca una frase conocida para confirmar si el texto sigue siendo seleccionable. Si el documento contiene tablas, firmas, códigos QR o sellos, revísalos con especial atención porque los detalles finos se notan primero al reducir la resolución.",
+              "La compresión de PrintxPDF ocurre en el navegador. No se necesita cuenta para usar la herramienta y el archivo no se envía al servidor. El dispositivo debe tener memoria suficiente para procesar todas las páginas, por lo que un escaneo muy largo puede tardar. Si el PDF no baja lo necesario con el modo ligero, no hay que insistir a ciegas: usa una copia, compara el modo medio y acepta el cambio de texto a imagen solo si es adecuado para tu propósito."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "¿Cómo reduzco un PDF para enviarlo por correo?", "a": "Comprueba el límite del correo, prueba primero la compresión ligera y revisa el tamaño final. Si el documento es un escaneo, un nivel fuerte puede reducir más a costa de convertir las páginas en imágenes."},
+          {"q": "¿La compresión fuerte mantiene el texto seleccionable?", "a": "No. Los modos medio y fuerte guardan cada página como imagen. Usa Ligera si necesitas seleccionar, buscar o copiar texto."},
+          {"q": "¿Cuánto se puede reducir un PDF?", "a": "No hay un porcentaje fijo. Un PDF de texto y un escaneo fotográfico se comprimen de manera distinta; compara el tamaño y la legibilidad del archivo que obtengas."}
+        ]
+      },
+      {
+        "topic": "images-to-pdf",
+        "slug": "convertir-fotos-a-pdf",
+        "keyword": "convertir fotos a PDF desde el móvil",
+        "secondaryKeywords": ["JPG a PDF online", "pasar varias imágenes a un PDF", "convertir PNG a PDF"],
+        "title": "Cómo convertir varias fotos en un solo PDF",
+        "metaTitle": "Convertir fotos JPG y PNG a PDF en un solo archivo",
+        "metaDescription": "Pasa varias fotos JPG, PNG o WebP a un PDF multipágina. Ordena las imágenes y elige A4, Carta o tamaño de imagen.",
+        "answer": "Para convertir fotos a PDF, selecciona imágenes JPG, PNG o WebP, ordénalas y elige el tamaño de página adecuado. La herramienta crea una página por imagen y las reúne en un único PDF desde el navegador. Usa Ajustar para imprimir sin recortar y revisa orientación, márgenes y legibilidad antes de enviarlo.",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "Convertir imágenes a PDF",
+        "sections": [
+          {
+            "heading": "Cuándo convertir fotos a PDF",
+            "paragraphs": [
+              "Un PDF multipágina resulta práctico para enviar recibos, páginas fotografiadas de un formulario, notas de una pizarra o imágenes de un expediente como un solo adjunto. El destinatario puede desplazarse por las páginas en orden y, si necesita imprimirlas, el tamaño A4 o Carta establece un formato de papel conocido. Esta herramienta admite imágenes JPG, PNG y WebP. No convierte automáticamente una fotografía en texto editable, así que una imagen de un documento seguirá siendo una imagen dentro del PDF.",
+              "Revisa las fotos antes de cargarlas. Endereza las que estén inclinadas, vuelve a tomar las que tengan reflejos y comprueba que los bordes no corten información. Una foto borrosa no se vuelve nítida por guardarla en PDF. Si necesitas conservar la imagen original, guarda también una copia separada: crear el PDF organiza las páginas, pero no reemplaza tu archivo fotográfico."
+            ]
+          },
+          {
+            "heading": "Pasos para crear el PDF",
+            "paragraphs": ["Cada imagen seleccionada se convierte en una página independiente. El orden de la lista determina el orden de lectura del documento."],
+            "steps": [
+              {"heading": "Selecciona JPG, PNG o WebP", "text": "Abre la herramienta y añade una o varias imágenes. Si usas el móvil, localiza primero las fotos correctas para no incluir capturas privadas por error."},
+              {"heading": "Ordena las páginas", "text": "Mueve las imágenes hasta que la primera sea la portada o la primera hoja del documento. La secuencia final sigue la lista que aparece en pantalla."},
+              {"heading": "Elige papel y ajuste", "text": "Usa A4 o Carta para imprimir. Ajustar dentro de los márgenes conserva la imagen completa; Rellenar puede recortar partes. El tamaño de imagen es útil para ver el PDF en pantalla."},
+              {"heading": "Descarga y revisa", "text": "Genera el PDF y ábrelo. Confirma que todas las páginas estén presentes, que la orientación sea correcta y que el texto fotografiado se pueda leer."}
+            ]
+          },
+          {
+            "heading": "Tamaño de página, calidad y privacidad",
+            "paragraphs": [
+              "Para una entrega impresa, A4 es habitual en muchos países y Carta se usa ampliamente en Estados Unidos y Canadá. Ajustar dentro de los márgenes reduce la imagen para que quepa sin cortar bordes. Rellenar ocupa más superficie, pero puede recortar la parte que sobresale. El tamaño de imagen mantiene la página cerca de las dimensiones de la foto y puede ser más cómodo para lectura digital.",
+              "Las imágenes se insertan en el PDF y cada una ocupa su propia página. La herramienta no combina varias fotos en una cuadrícula en la misma hoja. El proceso se ejecuta localmente en el navegador y no sube las imágenes al servidor. Cuando el archivo incluya identificaciones o datos sensibles, revisa qué imágenes seleccionaste y comparte el PDF solo con el destinatario previsto. Si necesitas un PDF más pequeño, puedes probar Comprimir PDF después, recordando que los modos medio y fuerte convierten texto y páginas en imágenes."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "¿Puedo poner varias fotos en un solo PDF?", "a": "Sí. Añade varias imágenes y la herramienta crea un PDF con una página por imagen, siguiendo el orden de la lista."},
+          {"q": "¿Cómo evito que la foto se corte al imprimir?", "a": "Selecciona A4 o Carta y el ajuste para encajar dentro de los márgenes. La opción Rellenar puede recortar los bordes de la imagen."},
+          {"q": "¿La herramienta acepta fotos del teléfono?", "a": "Sí, si están en JPG, PNG o WebP. La guía no promete soporte para HEIC en este convertidor; convierte primero el formato si tus fotos están en HEIC."}
+        ]
+      }
+    ]
+  },
+  {
+    "locale": "pt-BR",
+    "name": "Português do Brasil",
+    "nativeName": "Português",
+    "hub": "guias",
+    "dir": "ltr",
+    "hubTitle": "Guias de PDF em português",
+    "hubDescription": "Guias práticos em português para juntar e comprimir PDFs e converter fotos em PDF, com passos claros e ferramentas gratuitas.",
+    "hubIntro": "Tutoriais para tarefas comuns com PDF: reunir documentos, diminuir o tamanho antes de compartilhar e transformar fotos em um arquivo organizado. Cada guia explica o que a ferramenta mantém, o que pode mudar e como conferir o resultado. O processamento local é informado para cada ferramenta compatível.",
+    "hubAnswer": "Veja como juntar vários PDFs, reduzir o tamanho de um documento e converter fotos JPG, PNG ou WebP em páginas PDF. Os guias levam às ferramentas do PrintxPDF e esclarecem limites importantes antes do download.",
+    "toolNote": "Este guia está em português. Alguns controles da ferramenta aberta pelo link ainda podem aparecer em inglês.",
+    "homeLabel": "Início",
+    "backLabel": "Todos os guias em português",
+    "readLabel": "Guia prático",
+    "faqsLabel": "Perguntas frequentes",
+    "guideLabel": "Ler o guia",
+    "updated": "Atualizado em 3 de outubro de 2026",
+    "guides": [
+      {
+        "topic": "merge-pdf",
+        "slug": "juntar-pdf",
+        "keyword": "juntar PDF online grátis",
+        "secondaryKeywords": ["unir vários PDFs em um só", "combinar arquivos PDF", "juntar PDF sem enviar arquivo"],
+        "title": "Como juntar vários PDFs em um único arquivo",
+        "metaTitle": "Juntar PDF online grátis e escolher a ordem",
+        "metaDescription": "Aprenda a juntar vários PDFs em um único arquivo, organizar a sequência e preservar a qualidade das páginas antes de compartilhar.",
+        "answer": "Para juntar PDFs, selecione dois ou mais arquivos, organize a ordem e inicie a combinação. O PrintxPDF copia as páginas no navegador sem redesenhá-las, preservando o texto selecionável e a qualidade original. Confira a sequência e os formulários antes de compartilhar o novo documento.",
+        "tool": "merge-pdf",
+        "ctaLabel": "Juntar arquivos PDF",
+        "sections": [
+          {
+            "heading": "Quando juntar vários PDFs",
+            "paragraphs": [
+              "Um único documento é mais simples de enviar, arquivar e imprimir do que vários anexos separados. Isso ajuda a entregar um formulário com os comprovantes, reunir notas fiscais de um mês, combinar um relatório com seus anexos ou enviar um processo a um portal que aceita apenas um arquivo. Antes de começar, defina a ordem de leitura. Em geral, coloque a capa primeiro, o documento principal em seguida e os anexos no final.",
+              "Juntar não significa reduzir o tamanho nem reorganizar as páginas automaticamente. A ferramenta coloca as páginas completas de cada arquivo no novo PDF. Ela não remove páginas duplicadas, não corrige páginas giradas e não combina várias páginas em uma folha. Se você precisar mover páginas individuais, use Organizar páginas depois. Marcadores e campos de formulário pertencem à estrutura do documento e podem não continuar funcionais. Mantenha os originais caso precise dessas funções."
+            ]
+          },
+          {
+            "heading": "Passo a passo para juntar PDFs",
+            "paragraphs": ["A combinação acontece na aba do navegador. Não é necessário criar uma conta para usar a ferramenta."],
+            "steps": [
+              {"heading": "Escolha os arquivos", "text": "Abra Juntar PDF e selecione pelo menos dois arquivos PDF. Você pode arrastá-los para a área de seleção ou procurá-los no dispositivo. Confira se não incluiu uma versão antiga ou um arquivo incorreto."},
+              {"heading": "Organize a sequência", "text": "Use as setas para colocar os arquivos na ordem desejada. O item no topo aparece primeiro no resultado. Confira os nomes antes de continuar se a sequência for importante."},
+              {"heading": "Combine e confira", "text": "Inicie a união e baixe o novo arquivo. Abra o PDF e confira a primeira e a última página, a numeração e a posição dos anexos antes de enviar."}
+            ]
+          },
+          {
+            "heading": "Qualidade, privacidade e erros comuns",
+            "paragraphs": [
+              "A ferramenta copia as páginas; não as transforma em capturas de tela. Por isso, o texto que já podia ser selecionado costuma continuar selecionável, sem perda de nitidez causada pela combinação. O arquivo final pode ficar maior do que qualquer arquivo original porque reúne todas as páginas e pode repetir recursos internos, como fontes que estavam armazenadas separadamente.",
+              "Nesta ferramenta de navegador, os PDFs são processados localmente na aba e não são enviados ao servidor. Aguarde o processamento terminar antes de fechar a aba. Um arquivo protegido por senha talvez precise ser desbloqueado com uma senha que você tenha autorização para usar. Se um campo de formulário deixar de ser interativo, preserve o original e achate o formulário antes de juntar os arquivos na próxima vez. Para documentos confidenciais, confira também o destinatário e o nome do arquivo antes do compartilhamento."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "Juntar PDFs diminui a qualidade?", "a": "Não. As páginas são copiadas, em vez de redesenhadas como imagens. O texto e as ilustrações mantêm a qualidade dos arquivos originais."},
+          {"q": "Posso mudar a ordem dos PDFs?", "a": "Sim. Organize os arquivos antes de iniciar a combinação. Para mudar a ordem de páginas individuais, use Organizar páginas depois."},
+          {"q": "Meus arquivos são enviados para um servidor?", "a": "A ferramenta Juntar PDF processa os documentos no navegador. Os arquivos permanecem no seu dispositivo durante a operação."}
+        ]
+      },
+      {
+        "topic": "compress-pdf",
+        "slug": "comprimir-pdf",
+        "keyword": "comprimir PDF para enviar por email",
+        "secondaryKeywords": ["diminuir tamanho do PDF", "comprimir PDF grátis online", "PDF grande para anexar"],
+        "title": "Como comprimir PDF sem perder o texto selecionável",
+        "metaTitle": "Comprimir PDF para reduzir o tamanho do arquivo",
+        "metaDescription": "Reduza o tamanho de um PDF para anexar ou enviar. Compare opções que mantêm o texto com níveis que convertem cada página em imagem.",
+        "answer": "Para reduzir um PDF, comece pela compressão leve quando precisar manter texto, links e pesquisa. Se o arquivo for um escaneamento com muitas fotos, os níveis mais fortes podem reduzir mais, mas transformam as páginas em imagens. Compare o tamanho final e confira a leitura antes de substituir o original.",
+        "tool": "compress-pdf",
+        "ctaLabel": "Comprimir um PDF",
+        "sections": [
+          {
+            "heading": "Descubra por que o PDF está grande",
+            "paragraphs": [
+              "Um PDF pode ocupar muito espaço por causa de fotografias, páginas escaneadas em alta resolução, fontes incorporadas ou informações guardadas dentro do arquivo. Não existe uma porcentagem de redução garantida. O resultado depende do conteúdo e de como o documento foi criado. Um arquivo de texto pode mudar pouco; um escaneamento colorido pode diminuir mais quando a resolução das páginas é reduzida.",
+              "Confira o limite exato do e-mail ou portal antes de comprimir. Alguns serviços limitam cada anexo; outros limitam o conjunto. Guarde uma cópia do original. Se você precisa pesquisar, copiar ou citar o texto, escolha uma opção que preserve a camada de texto. Se o objetivo for apenas compartilhar uma cópia visual menor, teste um nível mais forte em uma cópia e compare o resultado."
+            ]
+          },
+          {
+            "heading": "Qual nível de compressão escolher",
+            "paragraphs": [
+              "A opção Leve reorganiza dados do PDF sem transformar as páginas em imagens. É a primeira escolha para contratos, relatórios e documentos com links ou texto que deve continuar selecionável. Ela pode economizar pouco quando o tamanho vem de fotos que já estão comprimidas.",
+              "Os níveis Médio e Forte rasterizam as páginas: cada folha passa a ser uma imagem dentro do PDF. Isso pode reduzir bastante um escaneamento pesado, mas o texto deixa de ser selecionável, pesquisável ou copiável. Links, marcadores e campos de formulário também podem desaparecer. Não use esses níveis para substituir o único original de um documento que precisa manter recursos acessíveis. Se o arquivo ainda estiver grande, considere dividir o documento ou confirmar com o destinatário se um link seguro é aceito."
+            ],
+            "steps": [
+              {"heading": "Selecione o arquivo", "text": "Abra Comprimir PDF e escolha o documento. Mantenha o original em outra pasta se ele for importante."},
+              {"heading": "Comece pelo modo Leve", "text": "Use Leve se precisar pesquisar ou copiar texto. Em um escaneamento grande, teste um nível mais forte em uma cópia."},
+              {"heading": "Compare e confira", "text": "Veja o tamanho antes e depois, abra o resultado e confira uma página com letras pequenas e outra com imagens. Guarde a versão que atende ao limite sem prejudicar a leitura."}
+            ]
+          },
+          {
+            "heading": "Como verificar se a compressão deu certo",
+            "paragraphs": [
+              "Não confie apenas no nome do arquivo. Confira se o resultado ficou abaixo do limite e abra algumas páginas no nível de zoom que o destinatário usará. Tente selecionar uma frase para descobrir se o texto continua pesquisável. Se houver tabelas, assinaturas, códigos QR ou carimbos, verifique-os com cuidado: os detalhes menores são afetados primeiro quando a resolução cai.",
+              "A compressão do PrintxPDF ocorre no navegador e não exige uma conta. O arquivo não é enviado ao servidor. O dispositivo precisa ter memória suficiente para processar todas as páginas, então um escaneamento muito longo pode levar mais tempo. Se o modo Leve não reduzir o suficiente, use uma cópia e compare o modo Médio. Só aceite que o texto vire imagem quando essa troca fizer sentido para o uso do documento."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "Como reduzir PDF para enviar por e-mail?", "a": "Confira o limite do serviço, teste primeiro o modo Leve e verifique o tamanho final. Em um escaneamento, um nível forte pode reduzir mais, mas converte as páginas em imagens."},
+          {"q": "A compressão Forte mantém o texto selecionável?", "a": "Não. Os níveis Médio e Forte guardam cada página como imagem. Escolha Leve para continuar selecionando, pesquisando ou copiando texto."},
+          {"q": "Quanto dá para reduzir um PDF?", "a": "Não existe um percentual fixo. Arquivos de texto e escaneamentos com fotos têm resultados diferentes; compare o tamanho e a legibilidade do arquivo final."}
+        ]
+      },
+      {
+        "topic": "images-to-pdf",
+        "slug": "converter-fotos-para-pdf",
+        "keyword": "converter fotos em PDF pelo celular",
+        "secondaryKeywords": ["JPG para PDF online", "várias imagens em um PDF", "converter PNG em PDF"],
+        "title": "Como transformar várias fotos em um único PDF",
+        "metaTitle": "Converter fotos JPG e PNG para PDF em um arquivo",
+        "metaDescription": "Transforme fotos JPG, PNG ou WebP em um PDF com várias páginas. Organize as imagens e escolha A4, Carta ou o tamanho da foto.",
+        "answer": "Para converter fotos em PDF, selecione imagens JPG, PNG ou WebP, coloque-as na ordem certa e escolha o tamanho da página. A ferramenta cria uma página para cada imagem e reúne tudo em um PDF no navegador. Use Ajustar para imprimir sem cortar e confira orientação, margens e leitura antes de enviar.",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "Converter imagens para PDF",
+        "sections": [
+          {
+            "heading": "Quando converter fotos para PDF",
+            "paragraphs": [
+              "Um PDF com várias páginas é útil para enviar recibos, fotos das folhas de um formulário, anotações de um quadro ou imagens de um processo em um único anexo. O destinatário pode percorrer as páginas na ordem e imprimir em um formato conhecido, como A4 ou Carta. Esta ferramenta aceita imagens JPG, PNG e WebP. Ela não transforma automaticamente a foto em texto editável: uma página fotografada continua sendo uma imagem dentro do PDF.",
+              "Confira as fotos antes de convertê-las. Endireite imagens inclinadas, tire outra foto se houver reflexo e veja se nenhuma informação foi cortada. Uma imagem borrada não fica nítida só por ser salva como PDF. Se precisar manter as fotos originais, guarde uma cópia separada. A conversão organiza as páginas, mas não substitui os arquivos de imagem que você enviou."
+            ]
+          },
+          {
+            "heading": "Passos para criar o PDF",
+            "paragraphs": ["Cada imagem selecionada vira uma página independente. A ordem da lista define a ordem de leitura do documento."],
+            "steps": [
+              {"heading": "Selecione JPG, PNG ou WebP", "text": "Abra a ferramenta e adicione uma ou várias imagens. No celular, localize as fotos corretas para não incluir capturas privadas por engano."},
+              {"heading": "Organize as páginas", "text": "Mova as imagens até a primeira ser a capa ou a primeira folha. O PDF final segue a sequência mostrada na lista."},
+              {"heading": "Escolha o papel e o ajuste", "text": "Use A4 ou Carta para imprimir. Ajustar dentro das margens mostra a imagem inteira; Preencher pode cortar partes. O tamanho da imagem pode ser melhor para leitura na tela."},
+              {"heading": "Baixe e confira", "text": "Gere o PDF e abra o arquivo. Confirme se todas as páginas estão presentes, se a orientação está certa e se o texto fotografado pode ser lido."}
+            ]
+          },
+          {
+            "heading": "Tamanho da página, qualidade e privacidade",
+            "paragraphs": [
+              "Para impressão, A4 é comum no Brasil e em muitos outros países. Carta é usada amplamente nos Estados Unidos e no Canadá. Ajustar dentro das margens reduz a imagem para que ela caiba sem cortar bordas. Preencher ocupa mais espaço da folha, mas pode cortar o que ultrapassa a página. O tamanho da imagem mantém a página próxima das dimensões da foto e pode funcionar melhor para consulta digital.",
+              "Cada imagem vira uma página; a ferramenta não coloca várias fotos lado a lado na mesma folha. O processo ocorre localmente no navegador e não envia as imagens ao servidor. Se o arquivo incluir documentos pessoais, revise a seleção e compartilhe o PDF apenas com quem deve recebê-lo. Se precisar diminuir o PDF depois, você pode testar Comprimir PDF, lembrando que os modos Médio e Forte convertem texto e páginas em imagens."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "Posso colocar várias fotos em um PDF só?", "a": "Sim. Adicione várias imagens e a ferramenta cria um PDF com uma página para cada foto, na ordem escolhida."},
+          {"q": "Como impedir que a foto seja cortada na impressão?", "a": "Escolha A4 ou Carta e use o ajuste para caber dentro das margens. A opção Preencher pode cortar as bordas da imagem."},
+          {"q": "O conversor aceita fotos do celular?", "a": "Aceita arquivos JPG, PNG ou WebP. Este conversor não declara suporte a HEIC; se suas fotos estiverem nesse formato, converta-as primeiro."}
+        ]
+      }
+    ]
+  },
+  {
+    "locale": "hi",
+    "name": "Hindi",
+    "nativeName": "हिन्दी",
+    "hub": "guides",
+    "dir": "ltr",
+    "hubTitle": "हिन्दी में PDF गाइड",
+    "hubDescription": "PDF जोड़ने, फ़ाइल का आकार घटाने और फ़ोटो से PDF बनाने के आसान हिन्दी निर्देश और मुफ़्त ऑनलाइन टूल। गुणवत्ता जाँचें और अपनी फ़ाइलें साझा करने से पहले सही तरीका चुनें।",
+    "hubIntro": "PDF के रोज़मर्रा के कामों के लिए सरल हिन्दी गाइड: कई दस्तावेज़ जोड़ना, भेजने से पहले फ़ाइल छोटी करना और फ़ोटो को क्रम में PDF बनाना। हर लेख बताता है कि टूल क्या सुरक्षित रखता है, क्या बदल सकता है और डाउनलोड से पहले परिणाम कैसे जाँचें। समर्थित टूल में प्रोसेसिंग आपके ब्राउज़र में होती है।",
+    "hubAnswer": "यहाँ हिन्दी में PDF merge, PDF compress और JPG, PNG या WebP फ़ोटो को PDF में बदलने के निर्देश मिलेंगे। हर गाइड PrintxPDF टूल तक पहुँचाती है और फ़ाइल डाउनलोड करने से पहले ज़रूरी सीमाएँ बताती है।",
+    "toolNote": "यह गाइड हिन्दी में है। लिंक से खुलने वाले टूल के कुछ बटन या विकल्प अभी अंग्रेज़ी में दिख सकते हैं।",
+    "homeLabel": "मुखपृष्ठ",
+    "backLabel": "सभी हिन्दी गाइड",
+    "readLabel": "काम की गाइड",
+    "faqsLabel": "अक्सर पूछे जाने वाले सवाल",
+    "guideLabel": "गाइड पढ़ें",
+    "updated": "अपडेट: 3 अक्टूबर 2026",
+    "guides": [
+      {
+        "topic": "merge-pdf",
+        "slug": "pdf-merge-kaise-kare",
+        "keyword": "PDF merge kaise kare",
+        "secondaryKeywords": ["PDF file jodna online", "एक से ज़्यादा PDF जोड़ें", "PDF बिना upload किए जोड़ना"],
+        "title": "कई PDF फ़ाइलों को एक दस्तावेज़ में कैसे जोड़ें",
+        "metaTitle": "PDF Merge कैसे करें और पेज का क्रम तय करें",
+        "metaDescription": "कई PDF को एक फ़ाइल में जोड़ना सीखें। दस्तावेज़ों का क्रम चुनें और शेयर करने से पहले पेज, टेक्स्ट और फ़ॉर्म जाँचें।",
+        "answer": "PDF merge करने के लिए दो या अधिक फ़ाइलें चुनें, उन्हें सही क्रम में रखें और merge शुरू करें। PrintxPDF पेजों को दोबारा image नहीं बनाता, बल्कि ब्राउज़र में कॉपी करता है, इसलिए टेक्स्ट और मूल स्पष्टता बनी रहती है। नई फ़ाइल भेजने से पहले क्रम और form fields जाँचें।",
+        "tool": "merge-pdf",
+        "ctaLabel": "PDF फ़ाइलें जोड़ें",
+        "sections": [
+          {
+            "heading": "कई PDF को एक फ़ाइल में कब जोड़ें",
+            "paragraphs": [
+              "एक ही PDF भेजना, संभालना और प्रिंट करना कई अलग attachments से आसान हो सकता है। उदाहरण के लिए आवेदन के साथ पहचान-पत्र जोड़ना, एक महीने की रसीदें इकट्ठा करना, रिपोर्ट के बाद उसके परिशिष्ट लगाना, या ऐसे पोर्टल पर जमा करना जहाँ केवल एक फ़ाइल स्वीकार होती है। शुरू करने से पहले पढ़ने का क्रम तय करें। आम तौर पर कवर पेज पहले, मुख्य दस्तावेज़ उसके बाद और परिशिष्ट अंत में रखे जाते हैं।",
+              "PDF जोड़ने से फ़ाइल अपने-आप छोटी नहीं होती और पेजों का क्रम भी अपने-आप नहीं समझा जाता। टूल हर स्रोत PDF के पूरे पेज नई फ़ाइल में रखता है। यह डुप्लिकेट पेज नहीं हटाता, तिरछे पेज ठीक नहीं करता और कई पेजों को एक शीट में नहीं रखता। अलग-अलग पेज आगे-पीछे करने हों तो बाद में Organize Pages खोलें। बुकमार्क और भरने योग्य फ़ॉर्म दस्तावेज़ की अलग संरचना हैं, इसलिए उनकी सुविधा बनी रहे, इसकी गारंटी नहीं है। ज़रूरत हो तो मूल फ़ाइलें सुरक्षित रखें।"
+            ]
+          },
+          {
+            "heading": "PDF merge करने के चरण",
+            "paragraphs": ["यह काम ब्राउज़र के tab में होता है। टूल इस्तेमाल करने के लिए account बनाने की ज़रूरत नहीं है।"],
+            "steps": [
+              {"heading": "PDF चुनें", "text": "Merge PDF खोलें और कम-से-कम दो PDF फ़ाइलें चुनें। उन्हें drop area में खींचें या अपने डिवाइस में खोजें। पुराना draft या गलत फ़ाइल शामिल न हो, यह देख लें।"},
+              {"heading": "क्रम तय करें", "text": "तीर वाले नियंत्रण से फ़ाइलों को सही जगह रखें। सूची में सबसे ऊपर की फ़ाइल परिणाम में सबसे पहले आएगी। क्रम महत्वपूर्ण हो तो आगे बढ़ने से पहले नाम जाँचें।"},
+              {"heading": "जोड़ें और जाँचें", "text": "Merge शुरू करें और बनी हुई PDF डाउनलोड करें। भेजने से पहले पहली और आख़िरी शीट, पेज नंबर और परिशिष्ट का स्थान जाँचने के लिए फ़ाइल खोलें।"}
+            ]
+          },
+          {
+            "heading": "क्वालिटी, privacy और आम दिक्कतें",
+            "paragraphs": [
+              "यह टूल पेज कॉपी करता है, screenshot में नहीं बदलता। इसलिए पहले से selectable टेक्स्ट आम तौर पर selectable रहता है और merge की वजह से अक्षर धुँधले नहीं होते। नई PDF बड़ी हो सकती है, क्योंकि उसमें सभी पेज जुड़ते हैं और अलग-अलग फ़ाइलों में रखे font जैसे resources दोहराए जा सकते हैं।",
+              "इस browser tool में PDF उसी tab के अंदर प्रोसेस होती है और server पर upload नहीं की जाती। काम पूरा होने तक tab खुला रहने दें। Password-protected फ़ाइल में सामग्री पढ़ने के लिए पहले ऐसा पासवर्ड चाहिए जिसे इस्तेमाल करने का आपको अधिकार हो। Merge के बाद कोई form field काम न करे तो मूल फ़ाइल बचाकर रखें और अगली बार जोड़ने से पहले form flatten करें। निजी दस्तावेज़ भेजते समय recipient और फ़ाइल का नाम भी ध्यान से जाँचें।"
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "PDF merge करने पर quality कम होती है?", "a": "नहीं। पेज image की तरह दोबारा नहीं बनाए जाते। टेक्स्ट और चित्र अपनी मूल फ़ाइलों जैसी स्पष्टता रखते हैं।"},
+          {"q": "क्या PDF फ़ाइलों का क्रम बदल सकता हूँ?", "a": "हाँ। Merge शुरू करने से पहले फ़ाइलों को सही क्रम में रखें। अलग-अलग पेज का क्रम बदलने के लिए बाद में Organize Pages इस्तेमाल करें।"},
+          {"q": "क्या मेरी PDF किसी server पर upload होती है?", "a": "Merge PDF टूल फ़ाइलों को ब्राउज़र में प्रोसेस करता है। काम के दौरान वे आपके डिवाइस पर ही रहती हैं।"}
+        ]
+      },
+      {
+        "topic": "compress-pdf",
+        "slug": "pdf-compress-kaise-kare",
+        "keyword": "PDF compress kaise kare",
+        "secondaryKeywords": ["PDF size kaise kam kare", "ईमेल के लिए PDF छोटी करें", "PDF compressor online free"],
+        "title": "PDF छोटी कैसे करें और टेक्स्ट searchable कैसे रखें",
+        "metaTitle": "PDF Compress करें और फ़ाइल का आकार घटाएँ",
+        "metaDescription": "ईमेल या portal के लिए PDF छोटी करें। टेक्स्ट बचाने वाले हल्के mode और पेज को image बनाने वाले गहरे mode का अंतर जानें।",
+        "answer": "PDF का आकार घटाने के लिए पहले हल्का compression चुनें, यदि टेक्स्ट, लिंक और search की सुविधा चाहिए। फोटो वाले scan में ज़्यादा compression से फ़ाइल छोटी हो सकती है, लेकिन हर पेज image बन जाता है। परिणाम का आकार और पढ़ने की स्पष्टता जाँचकर ही original बदलें।",
+        "tool": "compress-pdf",
+        "ctaLabel": "PDF का आकार घटाएँ",
+        "sections": [
+          {
+            "heading": "पहले पता करें PDF बड़ी क्यों है",
+            "paragraphs": [
+              "PDF में बड़े फोटो, high-resolution scan, embedded fonts या छिपी हुई जानकारी फ़ाइल का आकार बढ़ा सकती है। हर PDF के लिए एक जैसा reduction तय नहीं होता। नतीजा दस्तावेज़ और उसे बनाने के तरीके पर निर्भर करता है। साधारण text वाली फ़ाइल थोड़ी ही छोटी हो सकती है, जबकि रंगीन scan की resolution घटाने पर आकार अधिक घट सकता है।",
+              "Compression से पहले ईमेल या portal की सही सीमा देखें। कुछ services हर attachment की सीमा देती हैं और कुछ सभी फ़ाइलों की कुल सीमा। मूल PDF की copy रखें। अगर टेक्स्ट ढूँढना, कॉपी करना या उद्धृत करना ज़रूरी है, तो ऐसा mode चुनें जो text layer बचाए। अगर केवल देखने योग्य छोटी copy चाहिए, तो अलग copy पर ज़्यादा compression आज़माएँ और दोनों को मिलाकर पढ़ें।"
+            ]
+          },
+          {
+            "heading": "कौन सा compression mode चुनें",
+            "paragraphs": [
+              "Light mode PDF की अंदरूनी जानकारी को व्यवस्थित करता है, पर पेज को image नहीं बनाता। Contract, report, link या searchable text वाले दस्तावेज़ के लिए पहले यही आज़माएँ। अगर फ़ाइल का आकार पहले से compressed फोटो के कारण है, तो इससे बहुत कम फ़र्क पड़ सकता है।",
+              "Medium और Strong mode हर पेज को image में बदलते हैं। इससे भारी scan काफ़ी छोटा हो सकता है, पर text selectable, searchable या copy करने योग्य नहीं रहता। Link, bookmark और भरने वाले form भी खो सकते हैं। ऐसे mode से अपने एकमात्र मूल दस्तावेज़ को replace न करें, यदि accessibility या text extraction ज़रूरी है। फ़ाइल फिर भी बड़ी हो तो दस्तावेज़ को हिस्सों में बाँटने या सुरक्षित link भेजने की अनुमति पूछने पर विचार करें।"
+            ],
+            "steps": [
+              {"heading": "PDF फ़ाइल चुनें", "text": "Compress PDF खोलें और दस्तावेज़ चुनें। महत्वपूर्ण फ़ाइल की original copy अलग जगह रखें।"},
+              {"heading": "पहले Light आज़माएँ", "text": "Text search या copy चाहिए तो Light चुनें। बड़ा scan हो और कमी पर्याप्त न हो तो copy पर Medium आज़माएँ।"},
+              {"heading": "आकार और पढ़ने की जाँच करें", "text": "पहले और बाद का आकार देखें। परिणाम में छोटे अक्षर और फोटो खोलकर जाँचें। सीमा पूरी करने वाली और साफ़ पढ़ी जाने वाली version रखें।"}
+            ]
+          },
+          {
+            "heading": "Compression के बाद क्या जाँचें",
+            "paragraphs": [
+              "केवल फ़ाइल के नाम पर भरोसा न करें। देखें कि नई PDF मांगी गई size limit से नीचे है। कुछ पेज उस zoom पर खोलें जिस पर recipient पढ़ेगा। एक वाक्य को select करके देखें कि text searchable बचा या नहीं। तालिका, हस्ताक्षर, QR code या मुहर वाले पेज ध्यान से जाँचें, क्योंकि resolution कम होने पर बारीक चीज़ें पहले प्रभावित होती हैं।",
+              "PrintxPDF का compression ब्राउज़र में चलता है और इसके लिए account की ज़रूरत नहीं है। फ़ाइल server पर upload नहीं होती। बहुत लंबा scan प्रोसेस करने में device की memory और समय लग सकता है। Light से पर्याप्त कमी न मिले तो original के बजाय copy पर Medium जाँचें। Text को image में बदलने की कीमत तभी स्वीकारें जब दस्तावेज़ के काम के लिए यह ठीक हो।"
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "ईमेल में भेजने के लिए PDF छोटी कैसे करूँ?", "a": "ईमेल की attachment limit देखें, पहले Light mode चलाएँ और नया आकार जाँचें। Scan हो तो अधिक compression आज़माया जा सकता है, लेकिन पेज image बन सकते हैं।"},
+          {"q": "Strong compression में टेक्स्ट select हो सकता है?", "a": "नहीं। Medium और Strong हर पेज को image के रूप में रखते हैं। Text select या search करना हो तो Light चुनें।"},
+          {"q": "PDF कितने प्रतिशत छोटी होगी?", "a": "एक तय प्रतिशत नहीं है। Text document और photo scan का परिणाम अलग होता है, इसलिए final size और साफ़ पढ़ने की क्षमता दोनों देखें।"}
+        ]
+      },
+      {
+        "topic": "images-to-pdf",
+        "slug": "photo-se-pdf-kaise-banaye",
+        "keyword": "photo se PDF kaise banaye",
+        "secondaryKeywords": ["JPG to PDF online", "मोबाइल की फोटो से PDF", "कई फोटो एक PDF में"],
+        "title": "कई फ़ोटो को एक PDF में कैसे बदलें",
+        "metaTitle": "मोबाइल की JPG और PNG फ़ोटो से PDF बनाएँ",
+        "metaDescription": "JPG, PNG या WebP फ़ोटो को कई पेज वाली PDF में बदलें। तस्वीरों का क्रम रखें और A4, Letter या image size चुनें।",
+        "answer": "फ़ोटो से PDF बनाने के लिए JPG, PNG या WebP तस्वीरें चुनें, उनका क्रम तय करें और पेज का आकार चुनें। टूल ब्राउज़र में हर तस्वीर का अलग पेज बनाकर उन्हें एक PDF में जोड़ता है। Print के लिए Fit चुनें और भेजने से पहले दिशा, margins और readability जाँचें।",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "फ़ोटो से PDF बनाएँ",
+        "sections": [
+          {
+            "heading": "फ़ोटो को PDF में कब बदलें",
+            "paragraphs": [
+              "कई पेज की PDF में रसीदें, form की फोटो, whiteboard notes या आवेदन से जुड़े कागज़ एक attachment में भेजे जा सकते हैं। Recipient पेजों को चुने हुए क्रम में देख सकता है और A4 या Letter जैसे सामान्य paper size पर print कर सकता है। यह टूल JPG, PNG और WebP image लेता है। यह तस्वीर के अक्षरों को अपने-आप editable text में नहीं बदलता, इसलिए photographed page PDF में image ही रहती है।",
+              "Convert करने से पहले फोटो देखें। तिरछी तस्वीर सीधी करें, reflection हो तो दोबारा लें और जाँचें कि किनारे पर कोई ज़रूरी जानकारी कट तो नहीं रही। धुँधली फोटो PDF में रखने से साफ़ नहीं होती। अगर मूल फोटो भी चाहिए तो अलग copy रखें। Conversion पेजों को एक document में व्यवस्थित करता है, आपके source image को replace नहीं करता।"
+            ]
+          },
+          {
+            "heading": "PDF बनाने के चरण",
+            "paragraphs": ["चुनी गई हर तस्वीर अलग पेज बनती है। सूची का क्रम ही PDF में पढ़ने का क्रम होगा।"],
+            "steps": [
+              {"heading": "JPG, PNG या WebP चुनें", "text": "टूल खोलकर एक या कई तस्वीरें जोड़ें। मोबाइल पर सही फोटो चुनें ताकि निजी screenshot गलती से शामिल न हो।"},
+              {"heading": "पेज क्रम में रखें", "text": "तस्वीरें इस तरह रखें कि पहली cover या दस्तावेज़ का पहला पेज हो। बनी हुई PDF सूची के क्रम का पालन करती है।"},
+              {"heading": "Paper size और fit चुनें", "text": "Print के लिए A4 या Letter चुनें। Fit तस्वीर को काटे बिना margins के भीतर रखता है। Fill में किनारे कट सकते हैं। Screen पर देखने के लिए Image size ठीक हो सकता है।"},
+              {"heading": "डाउनलोड और जाँचें", "text": "PDF बनाएँ और खोलकर देखें। सभी पेज, दिशा और फोटो में लिखे शब्दों की स्पष्टता जाँचें।"}
+            ]
+          },
+          {
+            "heading": "पेज आकार, quality और privacy",
+            "paragraphs": [
+              "भारत और कई देशों में print के लिए A4 सामान्य आकार है। Letter का इस्तेमाल अमेरिका और कनाडा में अधिक होता है। Fit within margins तस्वीर को बिना किनारा काटे पेज में समेटता है। Fill पेज को ज़्यादा भरता है, पर बाहर निकला हिस्सा काट सकता है। Image size फ़ोटो के आकार के करीब पेज बनाता है और digital reading के लिए बेहतर हो सकता है।",
+              "हर तस्वीर अपना पेज बनती है। यह टूल कई फोटो को एक पेज पर collage की तरह नहीं रखता। काम ब्राउज़र में स्थानीय रूप से होता है और तस्वीरें server पर upload नहीं होतीं। निजी दस्तावेज़ शामिल हों तो चुनी हुई फ़ोटो जाँचें और PDF सही व्यक्ति को ही भेजें। बाद में PDF छोटा करना हो तो Compress PDF आज़माएँ, पर ध्यान रखें Medium और Strong mode text तथा पेज को image में बदलते हैं।"
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "क्या कई फ़ोटो को एक PDF में रख सकते हैं?", "a": "हाँ। कई तस्वीरें जोड़ें। टूल चुने गए क्रम में हर तस्वीर के लिए एक पेज बनाता है।"},
+          {"q": "Print में फ़ोटो कटने से कैसे बचाएँ?", "a": "A4 या Letter चुनें और Fit within margins इस्तेमाल करें। Fill विकल्प तस्वीर के किनारे काट सकता है।"},
+          {"q": "क्या मोबाइल की फ़ोटो convert हो सकती है?", "a": "हाँ, यदि फ़ाइल JPG, PNG या WebP में है। इस converter में HEIC support घोषित नहीं है, इसलिए पहले उसे समर्थित format में बदलें।"}
+        ]
+      }
+    ]
+  },
+  {
+    "locale": "ar",
+    "name": "العربية",
+    "nativeName": "العربية",
+    "hub": "adella",
+    "dir": "rtl",
+    "hubTitle": "أدلة PDF باللغة العربية",
+    "hubDescription": "خطوات واضحة بالعربية لدمج ملفات PDF وضغطها وتحويل الصور إلى PDF باستخدام أدوات مجانية، مع نصائح للحفاظ على الجودة ومراجعة الملف قبل مشاركته.",
+    "hubIntro": "أدلة عملية لأكثر المهام شيوعاً مع ملفات PDF: جمع المستندات، تقليل الحجم قبل الإرسال، وتحويل الصور إلى ملف مرتب. يوضح كل دليل ما الذي تحتفظ به الأداة وما الذي قد يتغير وكيفية فحص النتيجة. وتُذكر المعالجة المحلية للأدوات التي تدعمها.",
+    "hubAnswer": "تعرّف على طريقة دمج ملفات PDF وضغطها وتحويل صور JPG أو PNG أو WebP إلى صفحات PDF. تربط الأدلة بأدوات PrintxPDF وتشرح القيود المهمة قبل تنزيل الملف الناتج.",
+    "toolNote": "هذا الدليل باللغة العربية. قد تظهر بعض عناصر التحكم في الأداة المرتبطة باللغة الإنجليزية حالياً.",
+    "homeLabel": "الرئيسية",
+    "backLabel": "جميع الأدلة العربية",
+    "readLabel": "دليل عملي",
+    "faqsLabel": "الأسئلة الشائعة",
+    "guideLabel": "اقرأ الدليل",
+    "updated": "آخر تحديث: 3 أكتوبر 2026",
+    "guides": [
+      {
+        "topic": "merge-pdf",
+        "slug": "damj-pdf",
+        "keyword": "دمج ملفات PDF في ملف واحد",
+        "secondaryKeywords": ["جمع ملفات PDF أونلاين", "ترتيب ملفات PDF", "دمج PDF بدون رفع الملفات"],
+        "title": "كيفية دمج عدة ملفات PDF في ملف واحد",
+        "metaTitle": "دمج ملفات PDF أونلاين مع اختيار الترتيب",
+        "metaDescription": "تعلّم دمج عدة ملفات PDF في ملف واحد، وترتيب المستندات والحفاظ على جودة الصفحات قبل مشاركة الملف الناتج.",
+        "answer": "لدمج ملفات PDF، اختر ملفين أو أكثر، ورتبها ثم ابدأ الدمج. تنسخ PrintxPDF الصفحات داخل المتصفح دون إعادة رسمها، لذلك تبقى جودة النص والصور كما في الأصل. افتح الملف الناتج وتحقق من ترتيب الصفحات والحقول قبل مشاركته.",
+        "tool": "merge-pdf",
+        "ctaLabel": "دمج ملفات PDF",
+        "sections": [
+          {
+            "heading": "متى تجمع ملفات PDF في مستند واحد؟",
+            "paragraphs": [
+              "يسهل إرسال ملف واحد وأرشفته وطباعته مقارنة بعدة مرفقات منفصلة. يفيد ذلك عند جمع طلب مع مستندات الهوية، أو فواتير شهر واحد، أو تقرير مع ملاحقه، أو رفع ملف إلى بوابة لا تقبل إلا مرفقاً واحداً. قبل الدمج حدد ترتيب القراءة. غالباً تأتي صفحة الغلاف أولاً، ثم المستند الرئيسي، ثم الملاحق في النهاية.",
+              "دمج الملفات لا يعني ضغطها ولا ترتيب صفحاتها تلقائياً. تضع الأداة صفحات كل ملف كاملة في ملف جديد. لا تحذف الصفحات المكررة ولا تصلح الصفحات المقلوبة ولا تضع عدة صفحات على ورقة واحدة. إذا أردت تحريك صفحات منفردة، استخدم أداة تنظيم الصفحات بعد الدمج. أما الإشارات المرجعية وحقول النماذج فهي جزء من بنية المستند وقد لا تبقى تفاعلية. احتفظ بالملفات الأصلية إذا كانت هذه الميزات مهمة."
+            ]
+          },
+          {
+            "heading": "خطوات دمج ملفات PDF",
+            "paragraphs": ["تتم المعالجة في علامة تبويب المتصفح، ولا تحتاج إلى إنشاء حساب لاستخدام الأداة."],
+            "steps": [
+              {"heading": "اختر الملفات", "text": "افتح أداة دمج PDF واختر ملفين على الأقل. اسحب الملفات إلى منطقة الاختيار أو تصفح جهازك. تأكد من عدم اختيار مسودة قديمة أو ملف غير مقصود."},
+              {"heading": "رتب التسلسل", "text": "استخدم الأسهم لوضع الملفات بالترتيب المطلوب. يظهر الملف الموجود أعلى القائمة أولاً في النتيجة. راجع أسماء الملفات قبل المتابعة إذا كان التسلسل مهماً."},
+              {"heading": "ادمج وافحص النتيجة", "text": "ابدأ الدمج ونزّل الملف الجديد. افتحه وتحقق من الصفحة الأولى والأخيرة والترقيم ومكان الملاحق قبل الإرسال."}
+            ]
+          },
+          {
+            "heading": "الجودة والخصوصية والمشكلات الشائعة",
+            "paragraphs": [
+              "تنسخ الأداة الصفحات ولا تحولها إلى لقطات شاشة. لذلك يبقى النص الذي كان قابلاً للتحديد قابلاً لذلك عادة، ولا تقل حدة الصور بسبب عملية الدمج. قد يصبح الملف الجديد أكبر من أي ملف منفرد لأنه يجمع كل الصفحات وقد يكرر بعض الموارد الداخلية مثل الخطوط المخزنة في كل ملف على حدة.",
+              "تعالج أداة المتصفح ملفات PDF محلياً داخل علامة التبويب ولا ترفعها إلى الخادم. انتظر اكتمال العملية قبل إغلاق علامة التبويب. قد يحتاج الملف المحمي بكلمة مرور إلى كلمة مرور يحق لك استخدامها قبل معالجته. إذا توقف حقل نموذج عن العمل، احتفظ بالأصل واستخدم تسطيح النموذج قبل دمج الملفات في المرة التالية. وعند مشاركة مستندات سرية، تحقق من المستلم واسم الملف أيضاً."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "هل يؤدي دمج PDF إلى تقليل الجودة؟", "a": "لا. تنسخ الأداة الصفحات بدلاً من إعادة رسمها كصور، لذلك تحتفظ النصوص والصور بجودتها الأصلية."},
+          {"q": "هل يمكن تغيير ترتيب ملفات PDF؟", "a": "نعم. رتب الملفات قبل بدء الدمج. ولتغيير ترتيب صفحات منفردة استخدم أداة تنظيم الصفحات بعد ذلك."},
+          {"q": "هل تُرفع ملفاتي إلى خادم؟", "a": "تعالج أداة دمج PDF الملفات داخل المتصفح، وتبقى على جهازك أثناء العملية."}
+        ]
+      },
+      {
+        "topic": "compress-pdf",
+        "slug": "daght-pdf",
+        "keyword": "ضغط PDF لتقليل حجم الملف",
+        "secondaryKeywords": ["تقليل حجم ملف PDF", "ضغط PDF للبريد الإلكتروني", "ضغط PDF مجاناً أونلاين"],
+        "title": "كيفية ضغط ملف PDF مع الحفاظ على النص",
+        "metaTitle": "ضغط PDF وتقليل حجم الملف قبل إرساله",
+        "metaDescription": "قلل حجم PDF للإرسال أو الرفع. قارن بين الخيارات التي تحتفظ بالنص ومستويات الضغط التي تحول الصفحات إلى صور.",
+        "answer": "لتقليل حجم PDF، ابدأ بالضغط الخفيف إذا كنت تحتاج إلى النص والروابط والبحث. قد تصغر الملفات الممسوحة ضوئياً أكثر مع المستويات الأقوى، لكنها تحول الصفحات إلى صور. قارن الحجم الناتج وافحص وضوحه قبل استبدال النسخة الأصلية.",
+        "tool": "compress-pdf",
+        "ctaLabel": "ضغط ملف PDF",
+        "sections": [
+          {
+            "heading": "اعرف أولاً سبب كبر حجم الملف",
+            "paragraphs": [
+              "قد يكبر ملف PDF بسبب الصور، أو المسح الضوئي بدقة عالية، أو الخطوط المضمنة، أو بيانات مخفية محفوظة داخل الملف. لا توجد نسبة تصغير مضمونة لكل الملفات؛ فالنتيجة تعتمد على محتوى المستند وطريقة إنشائه. قد يتغير ملف نصي قليلاً فقط، بينما يستفيد مسح ضوئي ملون من خفض دقة الصفحات بدرجة أكبر.",
+              "تحقق من الحد الأقصى للبوابة أو البريد قبل الضغط. بعض الخدمات تحدد حجماً لكل مرفق، وأخرى تحدد الحجم الإجمالي. احتفظ بنسخة من الملف الأصلي. إذا كنت تحتاج إلى البحث عن النص أو نسخه أو الاقتباس منه، اختر وضعاً يحافظ على طبقة النص. وإذا كان المطلوب نسخة مرئية أصغر فقط، جرّب مستوى أقوى على نسخة منفصلة وقارنها بالأصل."
+            ]
+          },
+          {
+            "heading": "أي مستوى ضغط تختار؟",
+            "paragraphs": [
+              "يعيد الوضع الخفيف تنظيم بيانات PDF من دون تحويل الصفحات إلى صور. جربه أولاً للعقود والتقارير والملفات التي تحتوي على روابط أو نص يجب أن يبقى قابلاً للتحديد. وقد لا يخفض الحجم كثيراً إذا كانت الصور مضغوطة مسبقاً وهي سبب الحجم الكبير.",
+              "يحّول الوضعان المتوسط والقوي الصفحات إلى صور داخل PDF. قد يقلل ذلك ملفاً ممسوحاً ضوئياً بدرجة كبيرة، لكن النص لن يبقى قابلاً للتحديد أو البحث أو النسخ. وقد تختفي الروابط والإشارات المرجعية وحقول النماذج أيضاً. لا تستبدل النسخة الوحيدة من مستند تحتاج ميزات الوصول فيها بهذه المستويات. وإذا بقي الملف كبيراً، فكر في تقسيمه أو اسأل المستلم إن كان يقبل رابطاً آمناً بدلاً من المرفق."
+            ],
+            "steps": [
+              {"heading": "اختر ملف PDF", "text": "افتح أداة ضغط PDF وحدد المستند. احتفظ بنسخة أصلية في مجلد آخر إذا كان مهماً."},
+              {"heading": "ابدأ بالوضع الخفيف", "text": "اختر الخفيف إذا كنت تحتاج إلى البحث في النص أو نسخه. إذا كان الملف مسحاً ضوئياً كبيراً، جرب مستوى أقوى على نسخة."},
+              {"heading": "قارن وافحص", "text": "قارن الحجم قبل العملية وبعدها. افتح صفحة فيها نص صغير وأخرى فيها صور، ثم احتفظ بالنسخة التي تناسب الحد المطلوب وتظل واضحة."}
+            ]
+          },
+          {
+            "heading": "كيف تتحقق من نجاح الضغط؟",
+            "paragraphs": [
+              "لا تعتمد على اسم الملف وحده. تأكد من أن الحجم الجديد أقل من الحد المطلوب، وافتح عدة صفحات عند مستوى التكبير الذي سيستخدمه المستلم. حاول تحديد جملة لمعرفة ما إذا كان النص قابلاً للبحث. وافحص الجداول والتوقيعات ورموز QR والأختام جيداً لأن التفاصيل الدقيقة تتأثر أولاً عند خفض الدقة.",
+              "تجري عملية الضغط في متصفحك ولا تتطلب حساباً، ولا يُرفع الملف إلى الخادم. قد يستغرق المستند الممسوح ضوئياً والطويل وقتاً أطول حسب ذاكرة الجهاز. إذا لم يحقق الوضع الخفيف النتيجة المطلوبة، فاختبر الوضع المتوسط على نسخة. لا تقبل تحويل النص إلى صورة إلا إذا كانت هذه المقايضة مناسبة لاستخدامك للمستند."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "كيف أقلل حجم PDF لإرساله بالبريد؟", "a": "تحقق من حد المرفقات، وجرب الوضع الخفيف أولاً، ثم افحص الحجم الناتج. قد يقل حجم المسح الضوئي أكثر مع مستوى قوي، لكن الصفحات ستتحول إلى صور."},
+          {"q": "هل يبقى النص قابلاً للتحديد بعد الضغط القوي؟", "a": "لا. يحفظ المستويان المتوسط والقوي كل صفحة كصورة. اختر الوضع الخفيف إذا كنت تحتاج إلى تحديد النص أو البحث فيه أو نسخه."},
+          {"q": "كم يمكن تقليل حجم PDF؟", "a": "لا توجد نسبة ثابتة. تختلف النتيجة بين ملف نصي ومسح ضوئي مليء بالصور، لذا افحص الحجم والوضوح معاً."}
+        ]
+      },
+      {
+        "topic": "images-to-pdf",
+        "slug": "sowar-ila-pdf",
+        "keyword": "تحويل الصور إلى PDF من الهاتف",
+        "secondaryKeywords": ["JPG إلى PDF أونلاين", "جمع صور في ملف PDF", "تحويل PNG إلى PDF"],
+        "title": "كيفية تحويل عدة صور إلى ملف PDF واحد",
+        "metaTitle": "حوّل صور JPG وPNG إلى PDF متعدد الصفحات",
+        "metaDescription": "حوّل صور JPG أو PNG أو WebP إلى PDF متعدد الصفحات. رتب الصور واختر A4 أو Letter أو حجم الصورة قبل الإرسال أو الطباعة.",
+        "answer": "لتحويل الصور إلى PDF، اختر صور JPG أو PNG أو WebP ورتبها ثم حدد حجم الصفحة. تنشئ الأداة صفحة لكل صورة وتجمعها في ملف PDF داخل المتصفح. اختر الملاءمة للطباعة دون قص، وافحص الاتجاه والهوامش ووضوح النص قبل الإرسال.",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "تحويل الصور إلى PDF",
+        "sections": [
+          {
+            "heading": "متى تحول الصور إلى PDF؟",
+            "paragraphs": [
+              "يفيد PDF متعدد الصفحات عند إرسال الإيصالات أو صور أوراق نموذج أو ملاحظات لوحة أو صفحات ملف كملحق واحد. يمكن للمستلم تصفح الصفحات بالترتيب وطباعتها على حجم ورق معروف مثل A4 أو Letter. تقبل الأداة صور JPG وPNG وWebP. لكنها لا تحول الصورة تلقائياً إلى نص قابل للتحرير؛ فالصفحة المصورة تظل صورة داخل ملف PDF.",
+              "افحص الصور قبل التحويل. صحح ميل الصورة وأعد التقاطها عند وجود انعكاس، وتأكد من عدم قص أي معلومة عند الحواف. لن تصبح الصورة الضبابية أوضح لمجرد حفظها كـ PDF. إذا كنت تحتاج إلى الصور الأصلية أيضاً، احتفظ بنسخة منفصلة منها. التحويل يجمع الصفحات وينظمها ولا يستبدل ملفات الصور التي اخترتها."
+            ]
+          },
+          {
+            "heading": "خطوات إنشاء ملف PDF",
+            "paragraphs": ["تتحول كل صورة إلى صفحة مستقلة. ويحدد ترتيب الصور في القائمة ترتيب القراءة في الملف الناتج."],
+            "steps": [
+              {"heading": "اختر صور JPG أو PNG أو WebP", "text": "افتح الأداة وأضف صورة واحدة أو عدة صور. على الهاتف اختر الصور المطلوبة فقط حتى لا تضيف لقطة شاشة خاصة بالخطأ."},
+              {"heading": "رتب الصفحات", "text": "انقل الصور حتى تكون الغلاف أو الصفحة الأولى في المقدمة. يتبع PDF الترتيب المعروض في القائمة."},
+              {"heading": "اختر حجم الورق والملاءمة", "text": "استخدم A4 أو Letter للطباعة. تحافظ الملاءمة داخل الهوامش على الصورة كاملة؛ أما الملء فقد يقص الأطراف. وقد يناسب حجم الصورة القراءة على الشاشة."},
+              {"heading": "نزّل وافحص", "text": "أنشئ PDF وافتحه. تحقق من وجود الصفحات كلها ومن الاتجاه ومن وضوح النص المصور."}
+            ]
+          },
+          {
+            "heading": "حجم الصفحة والجودة والخصوصية",
+            "paragraphs": [
+              "يشيع مقاس A4 للطباعة في بلدان كثيرة، بينما يستخدم مقاس Letter على نطاق واسع في الولايات المتحدة وكندا. تقلص الملاءمة داخل الهوامش الصورة حتى لا تقص حوافها. أما خيار الملء فيشغل مساحة أكبر لكنه قد يقص ما يتجاوز حدود الصفحة. ويبقي حجم الصورة الصفحة قريبة من أبعاد الصورة الأصلية، وقد يكون مناسباً للقراءة الرقمية.",
+              "تتحول كل صورة إلى صفحة منفصلة، ولا تضع الأداة عدة صور جنباً إلى جنب في صفحة واحدة. تجري المعالجة محلياً في المتصفح ولا تُرفع الصور إلى الخادم. راجع الصور المختارة إذا كانت تتضمن مستندات شخصية، وشارك PDF مع المستلم المقصود فقط. وإذا أردت تصغير الملف لاحقاً، يمكنك تجربة أداة ضغط PDF، مع الانتباه إلى أن المستويين المتوسط والقوي يحولان النص والصفحات إلى صور."
+            ]
+          }
+        ],
+        "faqs": [
+          {"q": "هل يمكن وضع عدة صور في ملف PDF واحد؟", "a": "نعم. أضف عدة صور، فتنشئ الأداة صفحة لكل صورة وفق الترتيب الذي اخترته."},
+          {"q": "كيف أمنع قص الصورة عند الطباعة؟", "a": "اختر A4 أو Letter واستخدم الملاءمة داخل الهوامش. قد يقص خيار الملء حواف الصورة."},
+          {"q": "هل يقبل المحول صور الهاتف؟", "a": "نعم إذا كانت بصيغة JPG أو PNG أو WebP. لا تعلن هذه الأداة دعم HEIC؛ حوّل الصور إلى صيغة مدعومة أولاً إذا كانت بهذا التنسيق."}
+        ]
+      }
+    ]
+  }
+]

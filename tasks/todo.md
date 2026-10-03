@@ -197,6 +197,27 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 - The three corrected posts were the highest-value change here: each was a high-intent page
   actively recommending a competitor for a job the product now does.
 
+## Phase 10 (2026-10-03): international SEO and AdSense readiness
+- [x] Built a four-locale pilot (Spanish, Brazilian Portuguese, Hindi, Arabic) with 12
+      task guides plus four hubs, covering PDF merge, compression and images-to-PDF.
+- [x] Added statically prerendered localized URLs, locale/direction attributes, canonical and
+      reciprocal hreflang, structured data, sitemap and llms.txt coverage, and in-site links.
+- [x] Added visible content checks for length, metadata, FAQs, tool links, locale/topic parity,
+      duplicate URLs and em dashes. The content describes English UI controls honestly.
+- [x] Added /contact and linked it from the site footer. Rewrote privacy/cookie disclosures to
+      accurately describe active GA4, Do Not Track behavior, local storage, Stripe, and future
+      AdSense behavior. Preserved the AdSense publisher tag added on the updated remote main.
+- [x] Checked WordPress email: plugin approved 2026-09-25, but public listing still awaits its
+      first SVN commit and release tag. `svn` is not installed in this workspace; see
+      `wordpress-plugin/SUBMISSION.md`.
+- [ ] Owner: verify AdSense Auto Ads/ad-serving settings and configure the appropriate consent
+      message. Google requires a certified IAB TCF CMP for personalized ads to EEA, UK and Swiss
+      users.
+- [ ] Owner: create the first SVN release for the approved WordPress plugin using username
+      `affglad` and the SVN password from the WordPress.org profile.
+- [ ] After deployment, check new URLs in Search Console and track query/impression data by
+      locale. Do not report rankings or search volume without measured data.
+
 # Phase 7 (2026-09-11): launch review
 - [x] Footer, Terms and Privacy name the operating company (LateNightBirds LLC), which is also the
       name buyers see on the Stripe payment page. New `site.company` config field, editable in admin.

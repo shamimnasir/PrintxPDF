@@ -3,6 +3,7 @@ import { useAllPosts, useClusters } from '../content/usePosts'
 import { authorPath, authorPerson, breadcrumbSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useSiteConfig } from '../admin/useSiteConfig'
 import '../content/blog.css'
+import { LANGUAGE_PACKS, guidePath } from '../content/localizedGuides'
 
 export default function Blog() {
   const CLUSTERS = useClusters()
@@ -48,6 +49,13 @@ export default function Blog() {
       <p className="muted" style={{ marginTop: '-1.5rem', marginBottom: '2.5rem' }}>
         Written and maintained by <Link to={authorPath(cfg.author)}>{cfg.author.name}</Link>, founder of {cfg.site.name}.
       </p>
+
+      <section aria-labelledby="language-guides" style={{ marginBottom: '3rem' }}>
+        <h2 id="language-guides">Guides in other languages</h2>
+        <div className="row" style={{ gap: '0.75rem', flexWrap: 'wrap' }}>
+          {LANGUAGE_PACKS.map((pack) => <Link key={pack.locale} className="btn btn-sm" to={guidePath(pack)} lang={pack.locale}>{pack.nativeName}</Link>)}
+        </div>
+      </section>
 
       <div className="grid grid-3">
         {CLUSTERS.map((c) => (

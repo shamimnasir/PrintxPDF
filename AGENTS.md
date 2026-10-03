@@ -7,8 +7,8 @@ is; this file explains how to change it without breaking things that have broken
 
 ```bash
 npm run dev            # vite, port 5179
-npm run build          # gen-seo -> tsc -> vite -> ssr build -> prerender. 221 static pages.
-npm test               # 135 tests
+npm run build          # gen-seo -> tsc -> vite -> ssr build -> prerender. 238 static pages.
+npm test               # 137 tests
 npm run lint           # oxlint
 npx tsc --noEmit -p tsconfig.app.json
 
@@ -61,7 +61,7 @@ field is mounted after hydration by `RuntimeEffects.tsx`, so a verification or a
 invisible to anything that reads the served HTML. `prerender.mjs` builds every page from the
 `index.html` shell, so one line there covers all of them.
 
-**Prerendering is the SEO surface.** 221 pages are baked at build time. Anything that only appears
+**Prerendering is the SEO surface.** 238 pages are baked at build time. Anything that only appears
 after hydration is invisible to crawlers. When changing the content pipeline, prove the output did
 not shift: hash `dist/**/*.html` before and after, normalising asset filenames
 (`/assets/NAME-HASH.js`), and compare.

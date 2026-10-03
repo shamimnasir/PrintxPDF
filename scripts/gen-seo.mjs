@@ -23,7 +23,8 @@ async function loadData() {
     `export { CLUSTERS, ALL_POSTS } from ${JSON.stringify(path.join(ROOT, 'src/content/index.ts'))}
      export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
      export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}
-     export { TOOL_ALIASES } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliases.ts'))}`,
+     export { TOOL_ALIASES } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliases.ts'))}
+     export { LANGUAGE_PACKS, guidePath } from ${JSON.stringify(path.join(ROOT, 'src/content/localizedGuides.ts'))}`,
   )
   await build({ entryPoints: [entry], bundle: true, format: 'esm', platform: 'node', outfile: out, logLevel: 'silent' })
   const mod = await import(pathToFileURL(out).href)
@@ -44,7 +45,7 @@ async function siteConfig() {
 const iso = (d) => new Date(d).toISOString().slice(0, 10)
 
 async function main() {
-  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, TOOL_ALIASES } = await loadData()
+  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, TOOL_ALIASES, LANGUAGE_PACKS, guidePath } = await loadData()
   const cfg = await siteConfig()
   const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.com').replace(/\/$/, '')
   const hiddenTools = new Set(cfg?.tools?.hidden || [])
@@ -62,6 +63,7 @@ async function main() {
     { loc: '/pricing', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/about', pri: '0.5', freq: 'yearly', mod: today },
     { loc: '/support', pri: '0.6', freq: 'monthly', mod: today },
+    { loc: '/contact', pri: '0.5', freq: 'yearly', mod: today },
     { loc: authorRoute, pri: '0.5', freq: 'monthly', mod: today },
     { loc: '/api', pri: '0.6', freq: 'monthly', mod: today },
     { loc: '/wordpress', pri: '0.6', freq: 'monthly', mod: today },
@@ -74,6 +76,10 @@ async function main() {
     ...TOOL_ALIASES.map((a) => ({ loc: `/tools/${a.slug}`, pri: '0.8', freq: 'monthly', mod: today })),
     ...CLUSTERS.map((c) => ({ loc: `/blog/${c.slug}`, pri: '0.7', freq: 'monthly', mod: today })),
     ...ALL_POSTS.filter((p) => !hiddenPosts.has(p.slug)).map((p) => ({ loc: `/blog/${p.cluster}/${p.slug}`, pri: '0.7', freq: 'monthly', mod: iso(p.updated) })),
+    ...LANGUAGE_PACKS.flatMap((pack) => [
+      { loc: guidePath(pack), pri: '0.7', freq: 'monthly', mod: today },
+      ...pack.guides.map((guide) => ({ loc: guidePath(pack, guide.slug), pri: '0.7', freq: 'monthly', mod: today })),
+    ]),
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -153,7 +159,11 @@ ${c.posts
 - [All tools](${SITE}/tools): the full index with a status badge on each tool.
 - [Print button generator](${SITE}/website-button): a copy-paste HTML snippet that adds a print button to any site.
 - [About the founder](${SITE}${authorRoute}): who writes and maintains these guides.
-- [Privacy](${SITE}/privacy): browser tools never upload; the server jobs delete the file the moment they finish.
+- [Contact](${SITE}/contact): direct support, privacy and billing contact details.
+- [Privacy](${SITE}/privacy): explains local browser processing, the eight server conversion uploads, analytics, cookies and third-party services.
+
+## Guías en otros idiomas
+${LANGUAGE_PACKS.map((pack) => `- [${pack.hubTitle}](${SITE}${guidePath(pack)}): ${pack.hubDescription}\n${pack.guides.map((guide) => `  - [${guide.title}](${SITE}${guidePath(pack, guide.slug)}): ${guide.metaDescription}`).join('\n')}`).join('\n')}
 `
   await writeFile(path.join(PUBLIC, 'llms.txt'), llms)
 

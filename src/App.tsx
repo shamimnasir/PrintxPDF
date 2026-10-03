@@ -26,6 +26,8 @@ const load = {
   About: () => import('./pages/About'),
   Legal: () => import('./pages/Legal'),
   Support: () => import('./pages/Support'),
+  Contact: () => import('./pages/Contact'),
+  LocalizedGuidePage: () => import('./pages/LocalizedGuidePage'),
   SignIn: () => import('./features/account/SignIn'),
   Account: () => import('./features/account/Account'),
   NotFound: () => import('./pages/NotFound'),
@@ -49,6 +51,8 @@ const ROUTES: [RegExp, keyof typeof load][] = [
   [/^\/author\//, 'AuthorPage'],
   [/^\/about$/, 'About'],
   [/^\/support$/, 'Support'],
+  [/^\/contact$/, 'Contact'],
+  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella)(\/[^/]+)?$/, 'LocalizedGuidePage'],
   [/^\/(privacy|terms)$/, 'Legal'],
   [/^\/(signin|signup)$/, 'SignIn'],
   [/^\/account/, 'Account'],
@@ -101,6 +105,8 @@ const AdminApp = page('AdminApp')
 const About = page('About')
 const Legal = page<{ kind: 'privacy' | 'terms' }>('Legal')
 const Support = page('Support')
+const Contact = page('Contact')
+const LocalizedGuidePage = page('LocalizedGuidePage')
 const SignIn = page<{ mode: 'in' | 'up' }>('SignIn')
 const Account = page('Account')
 const NotFound = page('NotFound')
@@ -137,6 +143,9 @@ export default function App() {
           <Route path="author/:slug" element={<AuthorPage />} />
           <Route path="about" element={<About />} />
           <Route path="support" element={<Support />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path=":locale/:hub" element={<LocalizedGuidePage />} />
+          <Route path=":locale/:hub/:slug" element={<LocalizedGuidePage />} />
           <Route path="privacy" element={<Legal kind="privacy" />} />
           <Route path="terms" element={<Legal kind="terms" />} />
           <Route path="signin" element={<SignIn mode="in" />} />

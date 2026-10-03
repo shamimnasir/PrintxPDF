@@ -1,15 +1,34 @@
 # Submitting PrintxPDF to the WordPress.org plugin directory
 
-**Status: SUBMITTED, review in progress.** WordPress.org account `affglad` has an
-active pending review for this plugin. The corrected package and directory assets
-are ready for the next review round.
+**Status: APPROVED on September 25, 2026. Not yet publicly listed.** WordPress.org
+approved the `printxpdf` slug for account `affglad`. Approval only granted SVN
+commit access; the public listing is created after the first source commit and tag.
+The public plugin URL currently redirects to WordPress.org search, so do not describe
+the plugin as published yet. The review thread no longer needs a corrected ZIP.
 
 `node scripts/build-wp-plugin.mjs` builds the review package at
 `dist-wp/printxpdf-wordpress-plugin-v1.0.0.zip` and copies the website download.
 
 ---
 
-## Ownership verification requested by the reviewer
+## Review outcome and first release status
+
+The review email requested brand/ownership clarification and removal of an
+unnecessary `load_plugin_textdomain()` call. The submission was subsequently approved,
+so those questions are resolved for this approved slug. Do not resubmit under another
+account or request another slug.
+
+The SVN repository is:
+
+`https://plugins.svn.wordpress.org/printxpdf/`
+
+The approved WordPress.org account is `affglad` (case-sensitive). SVN authentication
+uses the WordPress.org username and an SVN password generated from the account
+profile, not the account email or normal password. A first SVN release is still an
+outstanding owner action. This checkout does not currently have the `svn` executable;
+the public upload has not been attempted from this machine.
+
+## Historical ownership verification requested during review
 
 `wordpress-plugin/printxpdf/readme.txt` reads:
 
@@ -19,8 +38,9 @@ Contributors: affglad
 
 `affglad` is the WordPress.org username used for the pending submission.
 
-The reviewer asked for the exact DNS TXT value `wordpressorg-affglad-verification`
-at the root of `printxpdf.com`, or an equivalent domain-email ownership proof.
+The reviewer offered the DNS TXT value `wordpressorg-affglad-verification` as one
+possible proof while the submission was pending. The later approval supersedes this
+pending-review checklist; do not add DNS records solely on the basis of this old note.
 
 ## Directory artwork
 
@@ -86,7 +106,7 @@ The archive contains exactly one top-level directory, `printxpdf/`. Confirm with
 
 Do **not** put icons, banners or screenshots in this ZIP. They go in SVN `assets/`.
 
-## Step 2 — submit for review
+## Historical step 2 — submit for review
 
 1. Go to <https://wordpress.org/plugins/developers/add/> while signed in.
 2. Upload the ZIP. The uploader runs an automated check immediately and will reject
@@ -104,7 +124,7 @@ term in the display name, the fix is to edit `Plugin Name:` in **both**
 `printxpdf/printxpdf.php` and the `=== ... ===` line of `readme.txt` so they match.
 <https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/>
 
-## Step 3 — wait for the review
+## Historical step 3 — wait for the review
 
 - An automated confirmation email arrives at once. That is **not** approval.
 - A human review follows. Expect days to several weeks; the queue length varies and
@@ -116,7 +136,7 @@ term in the display name, the fix is to edit `Plugin Name:` in **both**
   `https://plugins.svn.wordpress.org/printxpdf/`
   Nothing is public until you commit code to SVN.
 
-## Step 4 — first SVN commit
+## Remaining step — first SVN release
 
 ```sh
 svn checkout https://plugins.svn.wordpress.org/printxpdf/ printxpdf-svn

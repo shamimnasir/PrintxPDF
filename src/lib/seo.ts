@@ -54,6 +54,9 @@ type Seo = {
   /** one or more JSON-LD graphs */
   schema?: Record<string, unknown>[]
   noindex?: boolean
+  lang?: string
+  dir?: 'ltr' | 'rtl'
+  alternates?: { lang: string; url: string }[]
 }
 
 /** Every meta tag this hook owns. Anything not supplied for a route is removed, so state
@@ -72,6 +75,7 @@ const MANAGED = [
   'meta[name="twitter:description"]',
   'meta[property="article:published_time"]',
   'meta[property="article:modified_time"]',
+  'link[rel="alternate"][hreflang]',
 ]
 
 function setMeta(selector: string, attrs: Record<string, string>) {
@@ -105,22 +109,32 @@ function upsertLink(rel: string, href: string) {
  * off their serialised form rather than object identity, otherwise every unrelated
  * re-render would tear down and rebuild the structured data.
  */
-export function useSeo({ title, description, path, type = 'website', published, updated, keywords, schema, noindex }: Seo) {
+export function useSeo({ title, description, path, type = 'website', published, updated, keywords, schema, noindex, lang = 'en', dir = 'ltr', alternates = [] }: Seo) {
   const schemaKey = schema ? JSON.stringify(schema) : ''
   const keywordsKey = keywords?.join(',') || ''
+  const alternatesKey = JSON.stringify(alternates)
 
   useEffect(() => {
     const url = `${SITE_URL}${path}`
     document.title = title
+    document.documentElement.lang = lang
+    document.documentElement.dir = dir
 
     // clear everything this hook owns before writing the new route's tags
-    MANAGED.forEach((sel) => document.head.querySelector(sel)?.remove())
+    MANAGED.forEach((sel) => document.head.querySelectorAll(sel).forEach((node) => node.remove()))
     document.querySelectorAll('script[data-seo-jsonld]').forEach((n) => n.remove())
 
     setMeta('meta[name="description"]', { name: 'description', content: description })
     if (keywordsKey) setMeta('meta[name="keywords"]', { name: 'keywords', content: keywordsKey })
     setMeta('meta[name="robots"]', { name: 'robots', content: noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1' })
     upsertLink('canonical', url)
+    ;(JSON.parse(alternatesKey) as { lang: string; url: string }[]).forEach(({ lang: alternateLang, url: alternateUrl }) => {
+      const link = document.createElement('link')
+      link.rel = 'alternate'
+      link.hreflang = alternateLang
+      link.href = alternateUrl
+      document.head.appendChild(link)
+    })
 
     setMeta('meta[property="og:title"]', { property: 'og:title', content: title })
     setMeta('meta[property="og:description"]', { property: 'og:description', content: description })
@@ -142,7 +156,7 @@ export function useSeo({ title, description, path, type = 'website', published, 
         document.head.appendChild(s)
       }
     }
-  }, [title, description, path, type, published, updated, keywordsKey, schemaKey, noindex])
+  }, [title, description, path, type, published, updated, keywordsKey, schemaKey, noindex, lang, dir, alternatesKey])
 }
 
 export const breadcrumbSchema = (trail: { name: string; path: string }[]) => ({
@@ -169,6 +183,7 @@ export const articleSchema = (a: {
   answer: string
   readMinutes: number
   author?: AuthorInfo
+  inLanguage?: string
 }) => ({
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -182,7 +197,7 @@ export const articleSchema = (a: {
   publisher: orgSchema(a.author),
   keywords: a.keywords.join(', '),
   timeRequired: `PT${a.readMinutes}M`,
-  inLanguage: 'en',
+  inLanguage: a.inLanguage || 'en',
   isAccessibleForFree: true,
   // tells assistants which part of the page is the citable answer
   speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.post-answer', 'h1'] },

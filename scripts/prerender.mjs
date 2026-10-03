@@ -42,11 +42,13 @@ const ROUTE_MODULES = [
   [/^\/api$/, 'src/pages/Api.tsx'],
   [/^\/pricing$/, 'src/pages/Pricing.tsx'],
   [/^\/blog$/, 'src/pages/Blog.tsx'],
+  [/^\/(es\/guias|pt-br\/guias|hi\/guides|ar\/adella)(\/[^/]+)?$/, 'src/pages/LocalizedGuidePage.tsx'],
   [/^\/blog\/[^/]+$/, 'src/pages/ClusterPage.tsx'],
   [/^\/blog\/[^/]+\/[^/]+$/, 'src/pages/PostPage.tsx'],
   [/^\/author\//, 'src/pages/AuthorPage.tsx'],
   [/^\/about$/, 'src/pages/About.tsx'],
   [/^\/(privacy|terms)$/, 'src/pages/Legal.tsx'],
+  [/^\/contact$/, 'src/pages/Contact.tsx'],
   [/^\/(signin|signup)$/, 'src/features/account/SignIn.tsx'],
   [/^\/account/, 'src/features/account/Account.tsx'],
 ]
@@ -96,6 +98,7 @@ async function loadData() {
      export { TOOLS } from ${JSON.stringify(path.join(ROOT, 'src/features/pdf/toolsMeta.ts'))}
      export { TOOL_CONTENT } from ${JSON.stringify(path.join(ROOT, 'src/content/tools/index.ts'))}
      export { TOOL_ALIASES } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliases.ts'))}
+     export { LANGUAGE_PACKS, guidePath, guideAlternates, hubAlternates } from ${JSON.stringify(path.join(ROOT, 'src/content/localizedGuides.ts'))}
      export { toolAliasContent } from ${JSON.stringify(path.join(ROOT, 'src/content/toolAliasContent.ts'))}
      export { fontHref, isDesignId } from ${JSON.stringify(path.join(ROOT, 'src/design/presets.ts'))}`,
   )
@@ -105,13 +108,14 @@ async function loadData() {
   return mod
 }
 
-function pageHtml(shell, { route, title, description, canonical, keywords, schema, bodyHtml, published, updated, noindex }) {
+function pageHtml(shell, { route, title, description, canonical, keywords, schema, bodyHtml, published, updated, noindex, lang = 'en', dir = 'ltr', alternates = [] }) {
   const head = [
     preloadLinks(route),
     VERIFY_META,
     `<title>${esc(title)}</title>`,
     `<meta name="description" content="${esc(description)}">`,
     canonical ? `<link rel="canonical" href="${esc(canonical)}">` : '',
+    ...alternates.map((a) => `<link rel="alternate" hreflang="${esc(a.lang)}" href="${esc(a.url)}">`),
     keywords?.length ? `<meta name="keywords" content="${esc(keywords.join(', '))}">` : '',
     `<meta name="robots" content="${noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'}">`,
     `<meta property="og:title" content="${esc(title)}">`,
@@ -137,7 +141,7 @@ function pageHtml(shell, { route, title, description, canonical, keywords, schem
   // the published config, inline, so the first client render matches this HTML (src/admin/config.ts reads it)
   const configScript = `<script id="pxp-config" type="application/json">${CONFIG_JSON.replace(/</g, '\\u003c')}</script>\n    `
   return shell
-    .replace(/<html([^>]*)>/, (_m, attrs) => `<html${attrs.replace(/\s*data-design="[^"]*"/, '')} data-design="${DESIGN}">`)
+    .replace(/<html([^>]*)>/, (_m, attrs) => `<html${attrs.replace(/\s*data-design="[^"]*"/, '').replace(/\s*lang="[^"]*"/, '').replace(/\s*dir="[^"]*"/, '')} lang="${esc(lang)}"${dir === 'rtl' ? ' dir="rtl"' : ''} data-design="${DESIGN}">`)
     .replace(/<title>[\s\S]*?<\/title>/, '')
     .replace(/<meta name="description"[^>]*>/, '')
     .replace('</head>', `  ${fontLink}${configScript}${head}\n  </head>`)
@@ -151,7 +155,7 @@ async function writeRoute(route, html) {
 }
 
 async function main() {
-  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, TOOL_ALIASES, toolAliasContent, fontHref, isDesignId } = await loadData()
+  const { CLUSTERS, ALL_POSTS, TOOLS, TOOL_CONTENT, TOOL_ALIASES, toolAliasContent, LANGUAGE_PACKS, guidePath, guideAlternates, hubAlternates, fontHref, isDesignId } = await loadData()
   let cfg = {}
   try {
     cfg = JSON.parse(await readFile(path.join(ROOT, 'public/site-config.json'), 'utf8'))
@@ -263,6 +267,33 @@ async function main() {
       pageHtml(shell, { route, noindex: noindexAll, title: p.metaTitle, description: p.metaDescription, canonical: `${SITE}${route}`, keywords: [p.primaryKeyword, ...p.secondaryKeywords], schema, bodyHtml, published: p.published, updated: p.updated }),
     )
     count++
+  }
+
+  // ---------- localized guide pilot ----------
+  // Each locale has its own static HTML, canonical URL and reciprocal hreflang set.
+  for (const pack of LANGUAGE_PACKS) {
+    const hubRoute = guidePath(pack)
+    const hubAlternatesForSite = hubAlternates(SITE)
+    const hubBody = await ssr(hubRoute)
+    const hubSchema = [
+      crumbs([{ name: pack.homeLabel, path: '/' }, { name: pack.hubTitle, path: hubRoute }]),
+      { '@context': 'https://schema.org', '@type': 'CollectionPage', name: pack.hubTitle, description: pack.hubDescription, url: `${SITE}${hubRoute}`, inLanguage: pack.locale, hasPart: pack.guides.map((g) => ({ '@type': 'Article', headline: g.title, url: `${SITE}${guidePath(pack, g.slug)}` })) },
+    ]
+    await writeRoute(hubRoute, pageHtml(shell, { route: hubRoute, noindex: noindexAll, title: pack.hubTitle, description: pack.hubDescription, canonical: `${SITE}${hubRoute}`, schema: hubSchema, bodyHtml: hubBody, lang: pack.locale, dir: pack.dir, alternates: hubAlternatesForSite }))
+    count++
+
+    for (const guide of pack.guides) {
+      const route = guidePath(pack, guide.slug)
+      const alternates = guideAlternates(guide.topic, SITE)
+      const bodyHtml = await ssr(route)
+      const schema = [
+        crumbs([{ name: pack.homeLabel, path: '/' }, { name: pack.hubTitle, path: hubRoute }, { name: guide.title, path: route }]),
+        { '@context': 'https://schema.org', '@type': 'Article', headline: guide.title, description: guide.metaDescription, abstract: guide.answer, mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}${route}` }, datePublished: '2026-10-03', dateModified: '2026-10-03', author: person, publisher: org, keywords: [guide.keyword, ...guide.secondaryKeywords].join(', '), inLanguage: pack.locale, isAccessibleForFree: true },
+        { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: guide.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+      ]
+      await writeRoute(route, pageHtml(shell, { route, noindex: noindexAll, title: guide.metaTitle, description: guide.metaDescription, canonical: `${SITE}${route}`, keywords: [guide.keyword, ...guide.secondaryKeywords], schema, bodyHtml, published: '2026-10-03', updated: '2026-10-03', lang: pack.locale, dir: pack.dir, alternates }))
+      count++
+    }
   }
 
   // ---------- cluster pillars ----------
@@ -463,6 +494,12 @@ async function main() {
       h1: 'Something not working? Tell us and we will fix it.',
     },
     {
+      route: '/contact',
+      title: 'Contact PrintxPDF Support',
+      description: 'Contact the PrintxPDF team for product questions, accessibility issues, privacy requests, technical support, or billing help. Email support directly.',
+      h1: 'Talk to a person.',
+    },
+    {
       route: '/api',
       title: 'PDF Conversion API | PowerPoint, EPUB and MOBI to PDF',
       description: 'A simple web API for developers: send a PowerPoint, EPUB or MOBI file and get a PDF back, or turn a PDF into PowerPoint. 5 free a month; the API plan has 5,000.',
@@ -482,9 +519,9 @@ async function main() {
     },
     {
       route: '/privacy',
-      title: 'Privacy | Your Files Stay on Your Device',
-      description: 'Browser tools never upload your files. The few server jobs send the file over a secure connection and delete it right after. Payments run through Stripe.',
-      h1: 'Your files stay with you.',
+      title: 'Privacy and Cookie Policy | PrintxPDF',
+      description: 'Learn what PrintxPDF collects, how Google Analytics and cookies work, when files are processed locally or by our server, and how to contact us about privacy.',
+      h1: 'Privacy and cookies.',
     },
     {
       route: '/terms',

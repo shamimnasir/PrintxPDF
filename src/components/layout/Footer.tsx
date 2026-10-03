@@ -56,8 +56,13 @@ export function Footer() {
         <div>
           <h2>Company</h2>
           <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
           <Link to="/support">Support</Link>
           <Link to="/blog">Guides</Link>
+          <Link to="/es/guias">Guías en español</Link>
+          <Link to="/pt-br/guias">Guias em português</Link>
+          <Link to="/hi/guides">हिंदी गाइड</Link>
+          <Link to="/ar/adella">أدلة PDF بالعربية</Link>
           <Link to="/account">Account</Link>
           <Link to="/privacy">Privacy</Link>
           <Link to="/terms">Terms</Link>

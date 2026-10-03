@@ -154,12 +154,27 @@ Grouped so the reasoning is findable. Each commit message explains why, not just
 
 ## State at handover
 
-Green: both typechecks, 135 app tests, 67 Worker tests, build at 177 pages, static audit clean,
-layout audit clean over 174 routes at two widths, tools audit 44/44, live features 21/21.
-
-Both deploys are current. The working tree is clean.
+At the original handover: both typechecks, 135 app tests, 67 Worker tests, build at 177 pages,
+static audit clean, layout audit clean over 174 routes at two widths, tools audit 44/44, live
+features 21/21. The status below and in `tasks/todo.md` records changes since that snapshot.
 
 ## Open items
+
+**WordPress.org plugin approved, first release still pending.** The review email approved
+`printxpdf` for `affglad` on September 25, 2026. Approval did not publish it: an initial
+commit and tag to `https://plugins.svn.wordpress.org/printxpdf/` are still required. See
+[`wordpress-plugin/SUBMISSION.md`](../wordpress-plugin/SUBMISSION.md) for the release steps.
+The current workspace does not have an SVN client installed.
+
+**AdSense consent setup.** The site privacy policy and footer now identify analytics,
+contact and policy details. The publisher tag is present in `index.html`, which feeds
+the prerendered pages. The account's Auto Ads and consent-message settings still need
+verification. Configure the appropriate consent flow before personalized ads are served
+to users in the EEA, UK or Switzerland.
+
+**Localized search pilot.** Four language hubs and twelve localized task guides were
+added for Spanish, Brazilian Portuguese, Hindi and Arabic. After deployment, inspect the
+URLs in Search Console and evaluate measured query data before expanding the pilot.
 
 **Roll the Cloudflare API token.** It was pasted into `STRIPE_SECRET_KEY` by mistake, so the Worker
 forwarded it to `api.stripe.com` on every checkout attempt before the real key replaced it. It has
