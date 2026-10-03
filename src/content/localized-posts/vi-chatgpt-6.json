@@ -1,0 +1,255 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "add-page-numbers-to-pdf",
+      "title": "Thêm số trang vào PDF và bỏ số ở trang bìa",
+      "slug": "add-page-numbers-to-pdf",
+      "tool": "page-numbers",
+      "description": "Chọn vị trí, lề, số bắt đầu và trang bìa để đánh số nhất quán, rồi kiểm tra mục lục.",
+      "metaDescription": "Thêm số trang PDF, chọn vị trí và số bắt đầu, bỏ trang bìa nếu cần rồi kiểm tra toàn bộ tài liệu đúng cách.",
+      "faqs": [
+        { "q": "Làm sao không đánh số trang bìa?", "a": "Dùng tùy chọn bỏ trang đầu hoặc phạm vi trang, rồi kiểm tra số hiển thị ở trang kế tiếp." },
+        { "q": "Nên dùng dạng số trang nào?", "a": "Chọn cách ghi theo hướng dẫn tài liệu, chẳng hạn số đơn hoặc trang trên tổng số." },
+        { "q": "PDF đã có số trang thì sao?", "a": "Kiểm tra chân trang cũ để tránh số trùng và cập nhật mục lục nếu số thay đổi." }
+      ],
+      "body": [
+        { "t": "p", "x": "Số trang giúp người đọc tham chiếu báo cáo, hợp đồng, giáo trình và bộ hồ sơ. Trước khi thêm, kiểm tra PDF có số in sẵn hay chỉ có số thứ tự trong trình xem. Quyết định trang bìa có hiển thị số hay không và nội dung chính bắt đầu từ số mấy. Ghi lại quy ước của tổ chức hoặc hướng dẫn xuất bản để áp dụng nhất quán." },
+        { "t": "h2", "x": "Chọn vị trí và lề" },
+        { "t": "p", "x": "Đặt số ở chân trang hoặc góc dễ nhìn nhưng tránh vùng chữ, chú thích, chữ ký và lề không in được. Tài liệu có trang ngang hoặc nhiều khổ giấy cần kiểm tra riêng vì cùng một vị trí tương đối có thể trông khác. Chọn cỡ chữ đủ đọc và màu tương phản, không quá nổi bật so với nội dung chính." },
+        { "t": "h2", "x": "Thiết lập trang bắt đầu" },
+        { "t": "p", "x": "Nếu bỏ số ở bìa, dùng tùy chọn bỏ trang đầu khi có. Trang kế tiếp có thể hiển thị số 1 hoặc số 2 tùy quy ước. Tài liệu học thuật đôi khi dùng số La Mã cho phần đầu và số thường cho nội dung chính. Đừng suy đoán định dạng; kiểm tra yêu cầu của đơn vị nhận." },
+        { "t": "h2", "x": "Tránh số trùng và lệch mục lục" },
+        { "t": "p", "x": "PDF có chân trang cũ hoặc số Bates thì thêm một lớp số mới có thể tạo nội dung chồng. Xem các trang đầu, giữa và cuối, rồi kiểm tra trang phụ lục. Mục lục, tham chiếu và liên kết nội bộ có thể cần cập nhật nếu trang bị thêm, xóa hoặc sắp xếp lại. Số hiển thị không tự đồng bộ với nội dung cũ." },
+        { "t": "h2", "x": "Mở lại và xác nhận" },
+        { "t": "p", "x": "Tạo bản mới, đóng và mở lại bằng trình đọc PDF. Kiểm tra số bắt đầu, tổng trang, hướng trang và độ tương phản ở chế độ xem cùng bản in thử. Chữ ký số có thể đổi trạng thái sau khi chỉnh sửa. Đặt tên phiên bản mới, giữ nguồn ban đầu và hỏi bên nhận nếu hồ sơ đã được ký hoặc phát hành." },
+        { "t": "cta", "tool": "page-numbers", "x": "Đánh số trang rồi kiểm tra trang đầu, giữa và cuối." }
+      ]
+    },
+    {
+      "topic": "add-header-footer-pdf",
+      "title": "Thêm đầu trang hoặc chân trang vào PDF",
+      "slug": "add-header-footer-pdf",
+      "tool": "page-numbers",
+      "description": "Đặt tiêu đề, ngày hoặc tham chiếu ngắn ở lề, tránh chồng lên nội dung và thông tin riêng tư.",
+      "metaDescription": "Thêm đầu trang hoặc chân trang cho PDF, kiểm tra lề, trang bìa và phần nội dung bị chồng trước khi gửi.",
+      "faqs": [
+        { "q": "Đầu trang nên chứa thông tin gì?", "a": "Thường chỉ cần tiêu đề ngắn, tên phần hoặc mã tham chiếu cần thiết; tránh dữ liệu riêng tư không cần thiết." },
+        { "q": "Có thể bỏ đầu trang ở trang bìa không?", "a": "Nếu công cụ hỗ trợ phạm vi trang, loại trừ bìa và xác nhận trong bản xem trước." },
+        { "q": "Đầu trang có sửa chữ gốc của PDF không?", "a": "Thường là nội dung phủ thêm; việc chỉnh sửa văn bản gốc phụ thuộc công cụ và cấu trúc PDF." }
+      ],
+      "body": [
+        { "t": "p", "x": "Đầu trang hoặc chân trang có thể cho biết tên tài liệu, phiên bản, ngày phát hành hay mã tham chiếu trên mỗi trang. Giữ nội dung ngắn để không lấn át phần đọc. Trước khi sửa, lưu bản nguồn và xác định trang nào cần áp dụng. Thêm thông tin lên mọi trang cũng có thể làm lộ mã nội bộ hoặc tên khách hàng khi tài liệu được in." },
+        { "t": "h2", "x": "Chọn nội dung tối thiểu" },
+        { "t": "p", "x": "Dùng tiêu đề ngắn, tên chương hoặc tham chiếu đã được phép chia sẻ. Tránh ghi email cá nhân, số hồ sơ nhạy cảm hoặc trạng thái bảo mật nếu không cần. Nếu ngày được tạo tự động, xác nhận múi giờ và thời điểm chính xác. Đầu trang không nên khiến người đọc nghĩ một bản nháp đã được phê duyệt." },
+        { "t": "h2", "x": "Canh lề và trang đặc biệt" },
+        { "t": "p", "x": "Đặt chữ trong vùng in, tránh tiêu đề, chú thích, số trang và chữ ký. Xem trang ngang, trang có kích thước khác và trang bìa riêng. Nếu muốn bỏ bìa, chọn phạm vi chính xác và kiểm tra trang bắt đầu. Kích thước chữ nên đủ đọc nhưng không lớn hơn nội dung chính." },
+        { "t": "h2", "x": "Dùng công cụ và tạo bản mới" },
+        { "t": "p", "x": "Chọn công cụ hỗ trợ lớp phủ văn bản hoặc đầu trang, nhập nội dung, thiết lập vị trí và xuất thành tệp mới. Page Numbers của PrintxPDF tập trung vào đánh số trang; nếu cần đầu trang tùy ý, xác nhận công cụ hiện tại hỗ trợ trước khi dựa vào nó. Một lớp phủ không nhất thiết sửa cấu trúc văn bản PDF ban đầu." },
+        { "t": "h2", "x": "Kiểm tra mọi loại trang" },
+        { "t": "p", "x": "Mở PDF kết quả và xem trang đầu, giữa, cuối, trang dày chữ và trang ngang. In thử để chắc rằng máy in không cắt phần chân trang. Thử tìm văn bản vừa thêm nếu điều đó quan trọng, vì lớp phủ có thể không được lập chỉ mục giống chữ gốc. Giữ bản nguồn, ghi phiên bản và xác minh chữ ký số nếu có." },
+        { "t": "cta", "tool": "page-numbers", "x": "Kiểm tra công cụ phù hợp rồi thêm nội dung lề mà không che trang." }
+      ]
+    },
+    {
+      "topic": "watermark-vs-stamp",
+      "title": "Watermark, dấu xác nhận hay redaction: chọn đúng cách",
+      "slug": "watermark-vs-stamp",
+      "tool": "add-watermark",
+      "description": "Watermark báo trạng thái, dấu ghi nhận một thao tác, còn redaction loại bỏ nội dung nhạy cảm khỏi bản phát hành.",
+      "metaDescription": "Phân biệt watermark, dấu xác nhận và redaction trong PDF. Biết cách nào báo trạng thái và cách nào thực sự loại bỏ nội dung.",
+      "faqs": [
+        { "q": "Watermark và dấu stamp có giống nhau không?", "a": "Không hẳn. Watermark thường là nhãn trạng thái nổi bật; stamp đánh dấu sự kiện cụ thể như đã nhận." },
+        { "q": "Hình chữ nhật đen có phải redaction không?", "a": "Không nếu nó chỉ phủ lên chữ. Xác nhận văn bản đã bị loại bỏ bằng cách tìm và sao chép thử." },
+        { "q": "Dấu APPROVED có phải chữ ký số không?", "a": "Không. Dấu trực quan không tự xác minh danh tính hoặc tính toàn vẹn bằng mật mã." }
+      ],
+      "body": [
+        { "t": "p", "x": "Watermark, dấu stamp và redaction đều có thể thay đổi cách một trang PDF trông như thế nào, nhưng chúng giải quyết vấn đề khác nhau. Watermark thường báo trạng thái của cả tài liệu như DRAFT. Stamp có thể ghi nhận một hành động tại vị trí cụ thể. Redaction được dùng để loại bỏ nội dung nhạy cảm khỏi bản phát hành. Chọn sai có thể gây rò rỉ hoặc hiểu nhầm về phê duyệt." },
+        { "t": "h2", "x": "Watermark truyền đạt trạng thái" },
+        { "t": "p", "x": "Nhãn lớn hoặc lặp lại như CONFIDENTIAL có thể nhắc người xem xử lý tài liệu theo quy định. Nó không ngăn mở, sao chép, in hoặc chia sẻ. Chọn độ mờ để chữ nền vẫn đọc được, và gỡ nhãn cũ khi phát hành bản cuối. Watermark cũng không thay thế quyền kiểm soát truy cập hay mã hóa." },
+        { "t": "h2", "x": "Stamp ghi nhận sự kiện" },
+        { "t": "p", "x": "Dấu RECEIVED, REVIEWED hoặc ngày tháng có thể đánh dấu một bước công việc nếu người áp dụng được phép. Dấu hình ảnh đơn thuần không xác minh ai thực hiện hành động và không tạo chữ ký điện tử. Chỉ dùng nhãn APPROVED khi phê duyệt đã xảy ra theo đúng quy trình, không dùng để gợi ý trạng thái chưa được xác nhận." },
+        { "t": "h2", "x": "Redaction loại bỏ nội dung" },
+        { "t": "p", "x": "Một hộp màu đen vẽ trên chữ có thể chỉ che phần nhìn thấy, trong khi văn bản vẫn nằm bên dưới. Redaction đúng phải loại bỏ hoặc làm phẳng nội dung đã chọn theo phương thức có thể kiểm tra. Sau đó tìm, chọn, sao chép và rà metadata để chắc dữ liệu không còn trong bản phát hành. Giữ nguồn chưa redaction ở nơi có kiểm soát." },
+        { "t": "h2", "x": "Thứ tự và kiểm tra" },
+        { "t": "p", "x": "Xác định trước mục tiêu: báo trạng thái, ghi một sự kiện hay xóa dữ liệu. Tạo bản mới, áp dụng đúng công cụ và kiểm tra trên trình đọc khác. Chữ ký số có thể báo tài liệu đã sửa. Nếu rủi ro tiết lộ cao, nhờ người thứ hai xác minh bản đã làm sạch trước khi gửi." },
+        { "t": "cta", "tool": "add-watermark", "x": "Dùng watermark để báo trạng thái; dùng redaction đã xác minh để loại bỏ thông tin." }
+      ]
+    },
+    {
+      "topic": "remove-metadata-from-pdf",
+      "title": "Xóa metadata PDF trước khi chia sẻ",
+      "slug": "remove-metadata-from-pdf",
+      "tool": "remove-metadata",
+      "description": "Xóa các trường thuộc tính tài liệu và XMP, đồng thời nhớ rằng ảnh nhúng và chú thích cần được kiểm tra riêng.",
+      "metaDescription": "Xóa tên tác giả, tiêu đề, ứng dụng và dữ liệu XMP khỏi PDF. Kiểm tra giới hạn vì ảnh nhúng và chú thích không tự biến mất.",
+      "faqs": [
+        { "q": "Metadata PDF có thể chứa thông tin gì?", "a": "Có thể có tên tác giả, tiêu đề, ứng dụng tạo tệp, ngày và dữ liệu XMP ở cấp tài liệu." },
+        { "q": "Xóa metadata có xóa bình luận hoặc ảnh không?", "a": "Không nhất thiết. Công cụ Remove Metadata xóa các trường tài liệu và XMP, nhưng ảnh nhúng và chú thích cần xử lý riêng." },
+        { "q": "Metadata có phải nội dung hiển thị trên trang không?", "a": "Thường không. Nó nằm trong thuộc tính tệp và có thể xem bằng trình đọc hoặc công cụ kiểm tra." }
+      ],
+      "body": [
+        { "t": "p", "x": "PDF có thể chứa thuộc tính không xuất hiện trên trang, như tên tác giả, tiêu đề, ứng dụng tạo tệp hoặc ngày sửa. Trước khi chia sẻ, xem xét liệu các trường đó có tiết lộ thông tin không cần thiết. Metadata khác với chữ, hình, bình luận và dữ liệu nhúng. Xóa thuộc tính tài liệu không tự làm sạch mọi thông tin ẩn trong tệp." },
+        { "t": "h2", "x": "Kiểm tra thuộc tính hiện có" },
+        { "t": "p", "x": "Mở thuộc tính PDF trong trình đọc hoặc công cụ kiểm tra để xem tiêu đề, tác giả và ứng dụng. Một số trường có thể trống hoặc do phần mềm tự đặt. Tệp có thể lưu XMP ngoài các thuộc tính chuẩn. Ghi lại những gì cần xóa trước khi tạo bản mới, đặc biệt khi tài liệu thuộc hồ sơ cần bảo toàn lịch sử." },
+        { "t": "h2", "x": "Xóa metadata tài liệu" },
+        { "t": "p", "x": "Chạy công cụ Remove Metadata của PrintxPDF trên bản sao. Công cụ xóa các trường tác giả, tiêu đề, ứng dụng, ngày chuẩn và XMP cấp tài liệu theo mô tả. Nó không thay đổi chi tiết EXIF trong ảnh nhúng hoặc nội dung bình luận. Nếu những thành phần đó quan trọng, cần kiểm tra và xử lý bằng quy trình riêng." },
+        { "t": "h2", "x": "Kiểm tra nội dung khác" },
+        { "t": "p", "x": "Mở bản đã làm sạch, xem lại thuộc tính và kiểm tra bình luận, tệp đính kèm, trường biểu mẫu cùng tên hiển thị trên trang. Metadata có thể khác nhau giữa công cụ. Một bản scan có thể chứa tên người trong hình, dù thuộc tính đã bị xóa. Khi cần loại bỏ văn bản hiển thị, dùng redaction thay vì chỉ xóa metadata." },
+        { "t": "h2", "x": "Lưu an toàn và chia sẻ đúng" },
+        { "t": "p", "x": "Đặt tên bản phát hành riêng, giữ nguồn theo chính sách và không ghi đè hồ sơ cần nguyên trạng. Xóa metadata không mã hóa PDF và không ngăn người nhận sao chép hoặc chuyển tiếp. Kiểm tra tệp cuối trên ứng dụng khác, xác nhận thông tin không còn và dùng kênh chia sẻ có quyền truy cập phù hợp." },
+        { "t": "cta", "tool": "remove-metadata", "x": "Xóa metadata tài liệu rồi kiểm tra ảnh, bình luận và thuộc tính còn lại." }
+      ]
+    },
+    {
+      "topic": "password-protect-pdf",
+      "title": "Đặt mật khẩu bảo vệ PDF và hiểu giới hạn",
+      "slug": "password-protect-pdf",
+      "tool": "protect-pdf",
+      "description": "Mã hóa PDF bằng mật khẩu đủ mạnh, gửi mật khẩu qua kênh riêng và xác nhận người nhận mở được.",
+      "metaDescription": "Đặt mật khẩu mở PDF bằng mã hóa, chọn mật khẩu mạnh và chia sẻ riêng. Hiểu rằng bảo vệ không thay thế quản lý quyền truy cập.",
+      "faqs": [
+        { "q": "Mật khẩu PDF có mã hóa tệp không?", "a": "Công cụ Protect PDF dùng mã hóa để khóa việc mở tệp theo mô tả sản phẩm." },
+        { "q": "Có nên gửi mật khẩu trong cùng email không?", "a": "Không nên nếu bạn cần giảm rủi ro người lạ đọc thư; dùng kênh riêng được chính sách cho phép." },
+        { "q": "Mật khẩu có ngăn chụp màn hình không?", "a": "Không. Người mở hợp lệ vẫn có thể chụp, in hoặc chia sẻ nội dung theo những cách khác." }
+      ],
+      "body": [
+        { "t": "p", "x": "Đặt mật khẩu mở PDF có thể giúp ngăn người không có mật khẩu đọc nội dung ở cấp tệp. Nó không đảm bảo người nhận hợp lệ sẽ không sao chép, chụp màn hình hoặc chuyển tiếp sau khi mở. Trước khi mã hóa, giữ bản nguồn ở vị trí an toàn và chọn mật khẩu dài, khó đoán, không trùng tài khoản khác." },
+        { "t": "h2", "x": "Chọn mật khẩu mạnh" },
+        { "t": "p", "x": "Dùng chuỗi dài hoặc cụm từ riêng, tránh tên, ngày sinh, tên công ty hay mẫu bàn phím phổ biến. Không tái sử dụng mật khẩu đã dùng trên email hoặc dịch vụ khác. Nếu tổ chức có quy tắc quản lý thông tin đăng nhập, làm theo quy tắc đó và dùng kho mật khẩu được phép." },
+        { "t": "h2", "x": "Mã hóa bản PDF" },
+        { "t": "p", "x": "Công cụ Protect PDF của PrintxPDF gửi tệp lên máy chủ qua kết nối bảo mật để mã hóa, rồi xóa tệp sau khi trả kết quả theo mô tả sản phẩm. Đây không phải thao tác hoàn toàn trong trình duyệt. Nếu tài liệu nhạy cảm và tổ chức không cho phép xử lý trên máy chủ, đừng tải lên; chọn công cụ được phê duyệt tại chỗ." },
+        { "t": "h2", "x": "Chia sẻ mật khẩu riêng" },
+        { "t": "p", "x": "Gửi tệp qua kênh đã xác minh và truyền mật khẩu qua phương thức riêng được tổ chức chấp thuận. Không ghi mật khẩu trong cùng email hoặc tin nhắn đính kèm tệp nếu muốn tách hai yếu tố. Xác nhận người nhận mở được bằng cách thử quy trình với họ, nhưng không yêu cầu họ gửi lại mật khẩu." },
+        { "t": "h2", "x": "Kiểm tra bản mã hóa" },
+        { "t": "p", "x": "Đóng và mở lại PDF, nhập đúng mật khẩu và kiểm tra trang, văn bản cùng hình. Đảm bảo người nhận biết phải dùng mật khẩu nào và có thể mở trên ứng dụng phù hợp. Mã hóa không thay thế quyền cấp tài khoản, thời hạn chia sẻ, sao lưu hoặc chính sách lưu trữ. Giữ bản không mã hóa giới hạn quyền truy cập." },
+        { "t": "cta", "tool": "protect-pdf", "x": "Mã hóa bản sao và gửi mật khẩu qua kênh riêng." }
+      ]
+    },
+    {
+      "topic": "redact-pdf-properly",
+      "title": "Redaction PDF đúng cách để chữ nhạy cảm thực sự biến mất",
+      "slug": "redact-pdf-properly",
+      "tool": "redact-pdf",
+      "description": "Đánh dấu vùng cần bỏ, áp dụng redaction và xác minh bằng tìm kiếm, chọn, sao chép cùng kiểm tra metadata.",
+      "metaDescription": "Redact PDF bằng cách loại bỏ nội dung, không chỉ phủ hộp đen. Kiểm tra văn bản, chú thích và dữ liệu ẩn trước khi gửi.",
+      "faqs": [
+        { "q": "Vẽ hình chữ nhật đen có đủ để redaction không?", "a": "Không nếu chữ vẫn nằm dưới lớp phủ. Cần áp dụng thao tác loại bỏ và xác minh đầu ra." },
+        { "q": "Làm sao kiểm tra redaction thành công?", "a": "Tìm, chọn, sao chép và thử trích văn bản từ vùng đã che, đồng thời kiểm tra chú thích và metadata." },
+        { "q": "Có nên giữ bản gốc chưa redaction không?", "a": "Có thể cần giữ theo chính sách, nhưng phải giới hạn quyền và không nhầm nó với bản phát hành đã làm sạch." }
+      ],
+      "body": [
+        { "t": "p", "x": "Redaction dùng để loại bỏ nội dung nhạy cảm khỏi bản PDF phát hành. Chỉ vẽ hình đen hoặc phủ một lớp mờ không đảm bảo chữ bên dưới đã bị xóa; người nhận có thể chọn, sao chép hoặc trích văn bản. Hãy làm trên bản sao, xác định mọi vị trí cần xử lý và kiểm tra tệp đầu ra bằng nhiều cách trước khi chia sẻ." },
+        { "t": "h2", "x": "Lập danh sách thông tin cần bỏ" },
+        { "t": "p", "x": "Tìm tên, địa chỉ, số tài khoản, chữ ký, mã định danh và mọi biến thể xuất hiện trong văn bản, hình ảnh, chú thích hoặc phụ lục. Kiểm tra cả tiêu đề, chân trang và trang đính kèm. Nếu thông tin bị lặp, một vùng redaction không đủ. Nhờ người thứ hai rà soát danh sách trước khi áp dụng nếu hậu quả tiết lộ cao." },
+        { "t": "h2", "x": "Áp dụng redaction thực sự" },
+        { "t": "p", "x": "Dùng công cụ Redact PDF của PrintxPDF để đánh dấu và áp dụng vùng cần che. Theo mô tả, phần được phủ sẽ chuyển thành hình ảnh nên chữ bên dưới bị loại khỏi tệp, không chỉ giấu sau hộp đen. Làm việc trên bản sao và không đặt thêm lớp phủ khác sau khi áp dụng để tránh nhầm trạng thái." },
+        { "t": "h2", "x": "Xác minh sau khi áp dụng" },
+        { "t": "p", "x": "Đóng rồi mở lại bản redacted. Tìm từng từ nhạy cảm, thử chọn hoặc sao chép vùng bị che và dùng công cụ trích văn bản nếu có. Kiểm tra bình luận, biểu mẫu, tệp đính kèm, lớp ẩn và metadata. Xem hình ảnh từng trang để đảm bảo vùng đúng đã được làm sạch mà không xóa nội dung cần giữ." },
+        { "t": "h2", "x": "Phát hành đúng bản" },
+        { "t": "p", "x": "Đặt tên rõ ràng là bản phát hành đã redaction, phân biệt với nguồn chưa xử lý. Giữ nguồn theo quy định nhưng giới hạn quyền truy cập nghiêm ngặt. Không gửi bản gốc nhầm qua email hoặc liên kết. Nếu hồ sơ thuộc quy trình pháp lý hoặc tuân thủ, làm theo tiêu chuẩn của tổ chức và lưu lại người đã xác minh đầu ra." },
+        { "t": "cta", "tool": "redact-pdf", "x": "Áp dụng redaction, mở lại và thử tìm hoặc sao chép nội dung đã che." }
+      ]
+    },
+    {
+      "topic": "are-online-pdf-tools-safe",
+      "title": "Công cụ PDF trực tuyến có an toàn không?",
+      "slug": "are-online-pdf-tools-safe",
+      "tool": "merge-pdf",
+      "description": "Mức an toàn phụ thuộc từng công cụ, nơi xử lý, dữ liệu và chính sách. Kiểm tra thông tin cụ thể trước khi chọn tệp.",
+      "metaDescription": "Đánh giá an toàn công cụ PDF trực tuyến bằng cách kiểm tra nơi xử lý, thời gian lưu, xóa tệp và loại tài liệu.",
+      "faqs": [
+        { "q": "Mọi công cụ PDF trực tuyến có tải tệp lên không?", "a": "Không. Một số chạy trong trình duyệt, một số gửi lên máy chủ. Xác minh từng công cụ cụ thể." },
+        { "q": "Có nên dùng công cụ web cho hồ sơ nhạy cảm?", "a": "Chỉ khi cách xử lý đáp ứng chính sách, nghĩa vụ pháp lý và mức độ rủi ro của tài liệu." },
+        { "q": "Xóa tệp sau khi xử lý có loại bỏ mọi rủi ro không?", "a": "Không hoàn toàn. Cần cân nhắc truyền tải, quyền truy cập, bản sao và quy trình xử lý tổng thể." }
+      ],
+      "body": [
+        { "t": "p", "x": "Không thể đánh giá tất cả công cụ PDF trực tuyến như một nhóm duy nhất. Một số thao tác chạy trong trình duyệt, một số cần máy chủ, và chính sách lưu tệp khác nhau. An toàn phụ thuộc độ nhạy tài liệu, cách truyền, quyền truy cập, thời gian lưu và mức kiểm soát của tổ chức. Hãy kiểm tra công cụ cụ thể trước khi chọn tệp, không chỉ nhìn biểu tượng ổ khóa." },
+        { "t": "h2", "x": "Xác định nơi xử lý" },
+        { "t": "p", "x": "Đọc mô tả tính năng và thông tin riêng tư để biết tệp có rời thiết bị không. Trong PrintxPDF, Merge PDF và OCR PDF được mô tả là xử lý trong trình duyệt; Protect PDF và Unlock PDF gửi tệp qua kết nối bảo mật đến máy chủ rồi xóa sau khi trả kết quả. Mỗi công cụ có thể khác, nên xác nhận nội dung hiện hành thay vì suy rộng từ một công cụ sang toàn bộ trang." },
+        { "t": "h2", "x": "Đọc chính sách lưu và xóa" },
+        { "t": "p", "x": "Tìm thời gian lưu, mục đích xử lý, việc chia sẻ với nhà cung cấp và cách yêu cầu xóa. Kết nối mã hóa bảo vệ dữ liệu khi truyền nhưng không tự trả lời mọi câu hỏi về quyền truy cập hoặc sao lưu. Tránh tải tài liệu lên dịch vụ chưa được cơ quan của bạn phê duyệt, đặc biệt với hồ sơ khách hàng hoặc sức khỏe." },
+        { "t": "h2", "x": "Phân loại tệp trước khi dùng" },
+        { "t": "p", "x": "Tài liệu công khai có thể có rủi ro thấp hơn hợp đồng chưa công bố, giấy tờ định danh hoặc dữ liệu tài chính. Áp dụng quy định phân loại của tổ chức, loại thông tin không cần thiết và giới hạn quyền người nhận. Nếu không chắc, chọn phần mềm nội bộ đã được đánh giá hoặc hỏi quản trị viên bảo mật trước khi sử dụng dịch vụ bên ngoài." },
+        { "t": "h2", "x": "Kiểm tra kết quả và chia sẻ" },
+        { "t": "p", "x": "Dù công cụ xử lý ở đâu, mở PDF đầu ra, kiểm tra quyền riêng tư, metadata, chữ ký, liên kết và nội dung đã xử lý. Xóa bản tải về không cần thiết khỏi thiết bị dùng chung, nhưng giữ hồ sơ chính thức theo chính sách. Dùng liên kết chia sẻ riêng, xác minh đúng người nhận và không công bố tệp nhạy cảm qua URL mở." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Kiểm tra cách xử lý của đúng công cụ trước khi chọn tài liệu." }
+      ]
+    },
+    {
+      "topic": "remove-pdf-password",
+      "title": "Gỡ mật khẩu khỏi PDF do bạn sở hữu hoặc được phép mở",
+      "slug": "remove-pdf-password",
+      "tool": "unlock-pdf",
+      "description": "Chỉ gỡ khóa khi bạn được phép mở tệp, nhập đúng mật khẩu và lưu bản mở khóa an toàn.",
+      "metaDescription": "Gỡ mật khẩu PDF mà bạn sở hữu hoặc có quyền xử lý. Hiểu giới hạn công cụ máy chủ và bảo vệ bản đầu ra.",
+      "faqs": [
+        { "q": "Có thể gỡ mọi mật khẩu PDF không?", "a": "Không. Tệp có thể yêu cầu mật khẩu mở, giới hạn quyền hoặc dùng cấu hình không được công cụ hỗ trợ." },
+        { "q": "Tôi có thể mở khóa PDF của người khác không?", "a": "Chỉ khi bạn có quyền và thông tin xác thực phù hợp. Không vượt qua bảo vệ của tài liệu không thuộc quyền của bạn." },
+        { "q": "Tệp mở khóa được xử lý ở đâu?", "a": "Unlock PDF của PrintxPDF gửi tệp qua kết nối bảo mật đến máy chủ và xóa sau khi trả kết quả theo mô tả sản phẩm." }
+      ],
+      "body": [
+        { "t": "p", "x": "Gỡ mật khẩu PDF có thể thuận tiện nếu bạn sở hữu tài liệu hoặc được phép xử lý và muốn tránh nhập mật khẩu lặp lại. Chỉ tiếp tục khi bạn có quyền và mật khẩu hợp lệ. Một số tệp có mật khẩu mở, một số có hạn chế quyền, và công cụ không thể hỗ trợ mọi cấu hình. Giữ nguồn mã hóa cho đến khi xác nhận bản đầu ra." },
+        { "t": "h2", "x": "Xác nhận quyền và loại bảo vệ" },
+        { "t": "p", "x": "Hỏi chủ sở hữu hoặc người gửi nếu không rõ quyền sử dụng. Nhập mật khẩu đúng trong trình đọc để xác định loại yêu cầu. Đừng cố vượt qua mật khẩu hoặc hạn chế của tài liệu bạn không có quyền mở. Nếu tài liệu thuộc hồ sơ công việc, tuân thủ chính sách lưu trữ và bảo mật của tổ chức." },
+        { "t": "h2", "x": "Dùng công cụ phù hợp" },
+        { "t": "p", "x": "Chọn Unlock PDF, tải tệp được phép xử lý và nhập mật khẩu theo hướng dẫn. Công cụ của PrintxPDF gửi tệp qua kết nối bảo mật lên máy chủ để xử lý và xóa sau khi trả tệp theo mô tả sản phẩm. Đây không phải xử lý hoàn toàn trên thiết bị. Nếu chính sách cấm máy chủ bên ngoài, dùng giải pháp được phê duyệt tại chỗ." },
+        { "t": "h2", "x": "Kiểm tra bản đã mở khóa" },
+        { "t": "p", "x": "Mở tệp mới, kiểm tra trang, biểu mẫu, chú thích, liên kết và khả năng tìm kiếm. Xác nhận yêu cầu mật khẩu đã được gỡ đúng mức, nhưng đừng làm mất kiểm soát truy cập nếu tài liệu cần bảo vệ. Một bản không mã hóa có thể bị mở bởi người có được tệp, nên lưu ở nơi riêng và tránh gửi bằng liên kết công khai." },
+        { "t": "h2", "x": "Quản lý phiên bản an toàn" },
+        { "t": "p", "x": "Đặt tên riêng cho bản mới, phân biệt với nguồn và giới hạn quyền tải. Nếu cần chia sẻ, xác minh người nhận và dùng kênh đã được chấp thuận. Xóa bản tạm khỏi thiết bị dùng chung khi không còn cần, đồng thời giữ tài liệu chính thức theo thời hạn lưu trữ. Nếu bản đầu ra lỗi, dừng và hỏi chủ sở hữu thay vì thử công cụ không rõ nguồn." },
+        { "t": "cta", "tool": "unlock-pdf", "x": "Chỉ mở khóa PDF bạn được phép xử lý rồi kiểm tra đầu ra." }
+      ]
+    },
+    {
+      "topic": "print-recipe-without-ads",
+      "title": "In công thức nấu ăn không có quảng cáo và phần giới thiệu dài",
+      "slug": "print-recipe-without-ads",
+      "tool": "html-to-pdf",
+      "description": "Dùng nút in công thức hoặc chế độ đọc, giữ nguyên nguyên liệu, nhiệt độ và thời gian trước khi in.",
+      "metaDescription": "In riêng công thức nấu ăn không có quảng cáo, menu hoặc câu chuyện dài. Kiểm tra nguyên liệu và hướng dẫn trước khi in.",
+      "faqs": [
+        { "q": "Trang công thức có nút in riêng không?", "a": "Nhiều trang có nút In hoặc chế độ công thức. Xem trước để chắc nút giữ đủ nguyên liệu và bước làm." },
+        { "q": "Chế độ đọc có giữ công thức không?", "a": "Có thể giữ nội dung chính nhưng đôi lúc bỏ bảng nguyên liệu, ảnh hoặc ghi chú quan trọng." },
+        { "q": "Lưu công thức thành PDF có ích gì?", "a": "Bạn có thể đọc ngoại tuyến và in sau, nhưng bản PDF chỉ ghi lại nội dung tại thời điểm lưu." }
+      ],
+      "body": [
+        { "t": "p", "x": "Trang công thức có thể chứa quảng cáo, câu chuyện, menu và bình luận dài trước phần nguyên liệu. Nếu chỉ cần nấu, hãy tìm nút In công thức hoặc chế độ Recipe Card của trang. Trước khi bỏ nội dung khác, xác nhận phần nguyên liệu, khẩu phần, nhiệt độ lò, thời gian và các bước vẫn còn đủ để làm món ăn." },
+        { "t": "h2", "x": "Dùng nút in của trang" },
+        { "t": "p", "x": "Nhiều website đặt nút in cạnh thẻ công thức. Nút này thường mở bố cục rút gọn riêng, có thể cho chọn số khẩu phần hoặc bỏ ảnh. Xem bản xem trước để chắc định lượng đã thay đổi đúng và không thiếu ghi chú dị ứng. Nếu nút mở cửa sổ mới bị chặn, cho phép popup chỉ khi bạn tin trang và hiểu hành động." },
+        { "t": "h2", "x": "Chế độ đọc hoặc trang in gọn" },
+        { "t": "p", "x": "Nếu không có nút in, thử Reader Mode của trình duyệt hoặc chế độ in gọn để ẩn quảng cáo và menu. Các chế độ này có thể bỏ bảng, hình minh họa hoặc ghi chú. Cuộn xuống phần công thức trước khi mở lệnh in để tải nội dung. Không dùng công cụ ngoài cho trang đăng nhập hoặc nội dung riêng tư nếu chưa kiểm tra quyền." },
+        { "t": "h2", "x": "Chọn chỉ phần công thức" },
+        { "t": "p", "x": "Nếu trang cho chọn vùng, đánh dấu từ nguyên liệu đến bước cuối và xác nhận bản xem trước chỉ chứa phần đó. Nếu không, sao chép nội dung cần thiết vào tài liệu cá nhân, giữ tên công thức, nguồn và liên kết. Không chỉnh sửa lượng nguyên liệu bằng mắt khi chế độ khẩu phần đã đổi; kiểm tra đơn vị và thời gian nấu." },
+        { "t": "h2", "x": "In hoặc lưu thành PDF" },
+        { "t": "p", "x": "Chọn khổ giấy, giảm lề vừa phải và xem số trang. Chữ phải đọc được ở bếp, kể cả khi giấy bị đặt xa hoặc ánh sáng yếu. Lưu PDF nếu muốn tìm lại ngoại tuyến, đặt tên theo món và ngày. Tôn trọng quyền của tác giả; bản in cá nhân khác với việc phân phối lại bộ sưu tập công thức." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "In thẻ công thức hoặc lưu bản gọn sau khi kiểm tra đầy đủ bước nấu." }
+      ]
+    },
+    {
+      "topic": "print-recipe-without-pictures",
+      "title": "In công thức không có ảnh để tiết kiệm giấy và mực",
+      "slug": "print-recipe-without-pictures",
+      "tool": "html-to-pdf",
+      "description": "Ẩn ảnh hoặc dùng thẻ công thức rút gọn, nhưng giữ những hình minh họa có tác dụng hướng dẫn.",
+      "metaDescription": "In công thức nấu ăn không có ảnh bằng nút in, chế độ đọc hoặc bản xem trước. Giữ lại hình thật sự cần cho thao tác.",
+      "faqs": [
+        { "q": "Làm sao bỏ ảnh khi in trang công thức?", "a": "Dùng nút in riêng, tùy chọn bỏ ảnh hoặc Reader Mode nếu trang hỗ trợ." },
+        { "q": "Có nên bỏ mọi hình minh họa không?", "a": "Không nếu ảnh chỉ ra độ chín, kích thước cắt hoặc cách gấp mà văn bản không mô tả." },
+        { "q": "Ảnh biến mất trong bản xem trước nhưng lại in không?", "a": "Kiểm tra lại tùy chọn nền, chế độ trình duyệt và xem một trang thử trước khi in nhiều bản." }
+      ],
+      "body": [
+        { "t": "p", "x": "Ảnh công thức có thể làm trang in dài, dùng nhiều mực màu và che phần cần đọc trong lúc nấu. Nếu bạn chỉ cần danh sách nguyên liệu và các bước, dùng nút in rút gọn hoặc tùy chọn bỏ hình. Tuy nhiên một số ảnh giải thích kỹ thuật, độ chín hoặc cách tạo hình, vì vậy không nên xóa máy móc mọi minh họa." },
+        { "t": "h2", "x": "Tìm chế độ chỉ in công thức" },
+        { "t": "p", "x": "Bấm nút In cạnh thẻ công thức và xem có tùy chọn bỏ ảnh hay không. Một số trang cho điều chỉnh khẩu phần, kích thước chữ và ảnh trước khi mở hộp thoại. Kiểm tra nhiệt độ, thời gian, định lượng và ghi chú dị ứng vẫn còn. Nếu thẻ công thức không tải, thử làm mới hoặc dùng chức năng in của trình duyệt." },
+        { "t": "h2", "x": "Ẩn ảnh qua trình duyệt" },
+        { "t": "p", "x": "Chế độ đọc có thể loại bỏ ảnh trang trí và giữ văn bản. Trong bản xem trước, kiểm tra các bước có tham chiếu như nhìn màu vàng nâu hoặc nếp gấp không. Khi ảnh mang thông tin, giữ lại ảnh nhỏ hoặc ghi chú bằng chữ nếu tác giả đã cung cấp. Đừng in một phiên bản không đủ hướng dẫn rồi dựa vào phỏng đoán." },
+        { "t": "h2", "x": "Giảm mực mà không mất khả năng đọc" },
+        { "t": "p", "x": "Chọn đen trắng nếu màu không mang ý nghĩa, giảm lề vừa phải và in hai mặt khi thích hợp. Chữ không nên nhỏ đến mức khó đọc khi đặt trên bàn bếp. Nếu chỉ cần nấu một lần, lưu PDF gọn rồi in đúng số trang. Bản xem trước giúp phát hiện quảng cáo, khoảng trắng và ảnh còn sót." },
+        { "t": "h2", "x": "Lưu nguồn và chia sẻ" },
+        { "t": "p", "x": "Ghi tên món, tác giả hoặc website cùng ngày lưu để tìm lại nguồn. Trang có thể cập nhật nguyên liệu sau đó, nên PDF là bản chụp tại một thời điểm. Nếu chia sẻ cho người khác, xác nhận bản sao có đủ ngữ cảnh và không bỏ sót cảnh báo an toàn thực phẩm. Tôn trọng quyền tác giả và điều khoản của website." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Bỏ ảnh trang trí nhưng giữ minh họa cần thiết cho thao tác." }
+      ]
+    }
+  ]
+}
