@@ -1,0 +1,255 @@
+{
+  "locale": "vi",
+  "guides": [
+    {
+      "topic": "print-web-page-without-ads",
+      "title": "Cách in trang web không có quảng cáo và thanh bên",
+      "slug": "print-web-page-without-ads",
+      "tool": "pdf-reader",
+      "description": "Loại bỏ quảng cáo, menu và nội dung phụ trước khi in bài viết. So sánh chế độ đọc, bản xem trước và trang in gọn để chọn cách phù hợp.",
+      "metaDescription": "Tìm cách in trang web không có quảng cáo, banner hoặc thanh bên. Dùng chế độ đọc, bản xem trước in và PrintxPDF để giữ lại nội dung chính.",
+      "faqs": [
+        { "q": "Làm sao in một trang web mà không in quảng cáo?", "a": "Thử chế độ đọc của trình duyệt hoặc chế độ in gọn, sau đó mở bản xem trước để xác nhận quảng cáo và thanh bên đã biến mất." },
+        { "q": "Chế độ đọc có làm mất hình ảnh trong bài không?", "a": "Có thể. Hãy xem trước các hình cần thiết, chú thích và bảng trước khi lưu hoặc in." },
+        { "q": "Trang web yêu cầu đăng nhập có dùng được công cụ làm sạch không?", "a": "Một số trang chặn trình lấy nội dung bên ngoài. Khi đó, hãy dùng chế độ đọc hoặc lệnh in ngay trong trình duyệt." }
+      ],
+      "body": [
+        { "t": "p", "x": "Quảng cáo, thanh điều hướng và khung đăng ký có thể khiến một bài viết dài tốn nhiều giấy hơn nội dung thực sự cần đọc. Trước khi in, hãy xác định phần nào cần giữ: tiêu đề, tác giả, ngày đăng, hình minh họa, bảng và nguồn tham khảo. Một bản in gọn thường dễ đọc hơn, nhưng không nên loại bỏ thông tin làm thay đổi ý nghĩa của bài viết." },
+        { "t": "h2", "x": "Thử chế độ đọc của trình duyệt" },
+        { "t": "p", "x": "Chrome, Firefox, Edge và Safari có các cách hiển thị bài viết ít chi tiết phụ hơn, dù tên và vị trí nút có thể khác theo phiên bản. Mở chế độ đọc, kiểm tra tiêu đề và các mục chính, rồi dùng lệnh in của trình duyệt. Nếu nút đọc không xuất hiện, trang có thể không cung cấp cấu trúc bài viết phù hợp hoặc nội dung được tải động." },
+        { "t": "h2", "x": "Dùng bản xem trước trước khi in" },
+        { "t": "p", "x": "Nhấn Ctrl+P trên Windows hoặc Linux, hoặc Cmd+P trên Mac. Trong bản xem trước, chọn khổ giấy đúng, bật hai mặt nếu máy hỗ trợ và giảm tỷ lệ vừa phải khi trang bị cắt. Không giảm chữ đến mức khó đọc. Xem từng trang để phát hiện trang trắng, hình bị mất hoặc phần cuối bị chuyển sang trang riêng." },
+        { "t": "h2", "x": "Tạo một bản sạch khi chế độ đọc không đủ" },
+        { "t": "p", "x": "Một công cụ chuyển trang web sang bản thân thiện với máy in có thể giữ lại bài viết và bỏ menu, quảng cáo hoặc cửa sổ bật lên. Dán địa chỉ công khai của bài vào công cụ, chờ nội dung được dựng, rồi xem toàn bộ kết quả. Trang có trả phí, yêu cầu đăng nhập hoặc chặn yêu cầu tự động có thể không hoạt động; khi đó hãy dùng chế độ đọc hoặc sao chép phần văn bản bạn được phép sử dụng." },
+        { "t": "h2", "x": "Kiểm tra trước khi chia sẻ" },
+        { "t": "p", "x": "Nếu bài có bảng, chú thích ảnh, liên kết hoặc trích dẫn, hãy mở PDF sau khi lưu và kiểm tra chúng vẫn đọc được. Nội dung trên web có thể thay đổi; bản in chỉ ghi lại một thời điểm. Tuân thủ bản quyền và điều khoản của trang, nhất là khi phát bản sao cho lớp học hoặc nhóm làm việc. Ghi lại tiêu đề, tác giả, URL và ngày truy cập nếu bạn cần trích dẫn." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Tạo bản in gọn, sau đó kiểm tra từng trang trong bản xem trước." }
+      ]
+    },
+    {
+      "topic": "print-selected-text-only",
+      "title": "Chỉ in phần văn bản đã chọn trên trang web",
+      "slug": "print-selected-text-only",
+      "tool": "html-to-pdf",
+      "description": "Chọn đoạn cần giữ, dùng lệnh in theo vùng chọn nếu trình duyệt hỗ trợ và kiểm tra bản xem trước để tránh in nhầm toàn trang.",
+      "metaDescription": "In riêng đoạn văn bản bạn đã chọn trong Chrome, Firefox, Edge hoặc Safari. Cách xử lý khi tùy chọn vùng chọn không xuất hiện.",
+      "faqs": [
+        { "q": "Có thể chỉ in văn bản được bôi chọn không?", "a": "Một số trình duyệt cung cấp tùy chọn vùng chọn trong hộp thoại in; cách khác là sao chép đoạn được phép sang tài liệu mới." },
+        { "q": "Safari có in được phần văn bản đã chọn không?", "a": "Tùy phiên bản và ứng dụng, mục in vùng chọn có thể nằm trong menu Tệp hoặc không hiện. Hãy xem trước kết quả trước khi xác nhận." },
+        { "q": "Vì sao trình duyệt vẫn in cả trang?", "a": "Trang có thể không nhận vùng chọn, hộp thoại đã đặt lại tùy chọn hoặc nội dung nằm trong khung riêng. Thử chế độ đọc hay tài liệu mới." }
+      ],
+      "body": [
+        { "t": "p", "x": "Khi chỉ cần một công thức, đoạn hướng dẫn hoặc phần trích dẫn, in cả trang sẽ lãng phí giấy và có thể đưa nội dung không liên quan vào bản sao. Hãy chọn chính xác đoạn văn bản trước khi mở lệnh in. Việc hỗ trợ in vùng chọn khác nhau giữa trình duyệt, hệ điều hành và phiên bản, vì vậy bước quan trọng nhất là xác nhận phạm vi trong bản xem trước." },
+        { "t": "h2", "x": "Chọn đúng đoạn trên trang" },
+        { "t": "p", "x": "Dùng chuột hoặc bàn phím để đánh dấu từ đầu đến cuối đoạn cần lấy. Nếu đoạn nằm trong bảng, hộp bình luận hoặc trình đọc tích hợp, hãy kiểm tra vùng tô sáng có bao gồm đầy đủ hàng, ký hiệu và chú thích không. Một số trang tự cuộn hoặc tải thêm nội dung khi bạn chọn; đợi trang ổn định rồi mới mở hộp thoại in." },
+        { "t": "h2", "x": "Mở lệnh in và xem phạm vi" },
+        { "t": "p", "x": "Nhấn Ctrl+P trên Windows hoặc Cmd+P trên Mac. Tìm mục Phạm vi trang hoặc Selection only nếu trình duyệt cung cấp. Không nhầm với lựa chọn số trang, vì mục đó thường chỉ nhận các trang đã phân trang. Bản xem trước nên chỉ có phần được chọn; nếu vẫn thấy toàn bộ trang, hủy hộp thoại thay vì in thử." },
+        { "t": "h2", "x": "Cách thay thế an toàn" },
+        { "t": "p", "x": "Nếu trình duyệt không có tùy chọn vùng chọn, hãy sao chép đoạn bạn có quyền sử dụng vào trình soạn thảo văn bản, giữ lại thông tin tác giả và địa chỉ nguồn, rồi in tài liệu đó. Chế độ đọc có thể giúp bỏ menu nhưng thường giữ toàn bộ bài viết, không chỉ phần được chọn. Tránh dùng ảnh chụp màn hình nếu bạn cần văn bản có thể tìm kiếm hoặc trích dẫn chính xác." },
+        { "t": "h2", "x": "Kiểm tra định dạng và quyền sử dụng" },
+        { "t": "p", "x": "Sau khi lưu PDF, mở lại để xác nhận ký tự đặc biệt, dấu tiếng Việt, số trang và liên kết còn đúng. Đoạn được trích có thể mất phần ngữ cảnh; thêm tiêu đề ngắn hoặc ghi chú nguồn để người đọc biết nó lấy từ đâu. Việc có thể chọn và in nội dung không đồng nghĩa bạn được phép phân phối lại toàn bộ tài liệu có bản quyền." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Chọn đoạn cần thiết, rồi xác nhận bản xem trước chỉ chứa phần đó." }
+      ]
+    },
+    {
+      "topic": "fix-web-page-printing-problems",
+      "title": "Sửa lỗi trang web in trắng, thiếu ảnh hoặc chữ quá nhỏ",
+      "slug": "fix-web-page-printing-problems",
+      "tool": "pdf-reader",
+      "description": "Kiểm tra khổ giấy, tỷ lệ, nền, ảnh và kiểu CSS in để xử lý các lỗi thường gặp trước khi gửi tài liệu cho máy in.",
+      "metaDescription": "Khắc phục trang web in bị trắng, cắt chữ, mất ảnh hoặc phông quá nhỏ. Làm lần lượt các bước kiểm tra trong trình duyệt.",
+      "faqs": [
+        { "q": "Tại sao trang web in ra giấy trắng?", "a": "Trang có thể dùng nội dung tải động, CSS ẩn khi in hoặc khung nhúng. Chờ nội dung tải xong, thử chế độ đọc hoặc lưu PDF để kiểm tra." },
+        { "q": "Làm gì khi chữ hoặc hình bị cắt ở mép?", "a": "Chọn đúng khổ giấy, thử ngang, giảm tỷ lệ từng chút và kiểm tra lề trong bản xem trước." },
+        { "q": "Vì sao màu nền không xuất hiện khi in?", "a": "Trình duyệt thường tắt đồ họa nền để tiết kiệm mực. Chỉ bật lại khi màu nền mang thông tin cần thiết." }
+      ],
+      "body": [
+        { "t": "p", "x": "Lỗi in trang web thường xuất phát từ khác biệt giữa màn hình và giấy: trang rộng hơn khổ giấy, nền bị tắt, ảnh chưa tải hoặc trang không có kiểu CSS dành cho in. Trước khi thay đổi nhiều cài đặt, hãy mở bản xem trước và ghi nhận lỗi cụ thể. Một thay đổi mỗi lần giúp bạn biết nguyên nhân, tránh làm chữ nhỏ hơn hoặc tạo thêm trang trắng." },
+        { "t": "h2", "x": "Văn bản bị cắt hoặc quá rộng" },
+        { "t": "p", "x": "Xác nhận khổ giấy trong hộp thoại khớp với giấy đang nạp, chẳng hạn A4 hoặc Letter. Nếu bảng rộng, thử hướng ngang; nếu chỉ tràn nhẹ, giảm tỷ lệ vài phần trăm và xem lại kích thước chữ. Lề quá hẹp cũng có thể khiến máy in cắt mép. Chọn lề mặc định hoặc tối thiểu mà thiết bị hỗ trợ, không kéo nội dung ra ngoài vùng in." },
+        { "t": "h2", "x": "Trang trắng hoặc thiếu phần nội dung" },
+        { "t": "p", "x": "Đợi ảnh, biểu đồ và nội dung tải xong trước khi mở lệnh in. Trang dùng tab, khung nhúng hoặc nội dung chỉ xuất hiện sau thao tác có thể không đưa mọi phần vào bản in. Hãy cuộn qua bài một lần, mở các mục cần thiết rồi xem lại từng trang. Nếu vẫn trắng, thử chế độ đọc hoặc lưu trang thành PDF bằng chức năng tích hợp của trình duyệt." },
+        { "t": "h2", "x": "Ảnh nền, màu sắc và chữ nhỏ" },
+        { "t": "p", "x": "Tùy chọn đồ họa nền có thể khôi phục màu, nhưng làm tăng lượng mực và không phải lúc nào cũng cần thiết. Nếu chữ quá nhỏ, tăng cỡ chữ của trang hoặc bỏ chế độ nhiều trang trên một tờ. Tránh phóng to khiến tiêu đề tràn dòng và tạo trang mới. In thử một trang có ảnh, bảng và đoạn văn trước khi in tài liệu dài." },
+        { "t": "h2", "x": "Khi trang web vẫn không in đúng" },
+        { "t": "p", "x": "Trang có thể được thiết kế chỉ để xem trên màn hình, hoặc cố ý chặn việc lấy nội dung. Bạn có thể dùng bản thân thiện với máy in nếu trang công khai cho phép, hoặc sao chép phần văn bản cần thiết vào tài liệu của mình. Đối với thông tin quan trọng, so sánh bản PDF với trang gốc và ghi chú những phần không được lưu. Cập nhật trình duyệt hoặc thử một trình duyệt khác nếu lỗi chỉ xuất hiện ở một ứng dụng." },
+        { "t": "cta", "tool": "pdf-reader", "x": "Kiểm tra bản xem trước và chỉ điều chỉnh một cài đặt mỗi lần." }
+      ]
+    },
+    {
+      "topic": "print-web-page-to-pdf-vs-printer",
+      "title": "Nên in trang web ra giấy hay lưu thành PDF?",
+      "slug": "print-web-page-to-pdf-vs-printer",
+      "tool": "compress-pdf",
+      "description": "Chọn giấy cho việc đọc và ghi chú ngoại tuyến; chọn PDF khi cần tìm kiếm, chia sẻ hoặc lưu hồ sơ có ngày tháng.",
+      "metaDescription": "So sánh in trang web ra giấy với lưu PDF theo chi phí, khả năng tìm kiếm, lưu trữ, chia sẻ và cách giữ lại nội dung cần thiết.",
+      "faqs": [
+        { "q": "Lưu PDF có tốt hơn in giấy không?", "a": "Không có lựa chọn tốt nhất cho mọi tình huống. PDF dễ tìm và chia sẻ; giấy thuận tiện khi cần đọc hoặc ghi chú không dùng màn hình." },
+        { "q": "PDF có thể tìm kiếm được không?", "a": "Thường có nếu trang chứa văn bản thật được giữ lại. Bản quét hoặc ảnh có thể cần OCR và cần kiểm tra lại kết quả." },
+        { "q": "Bản PDF có lưu toàn bộ trang web không?", "a": "Không. Nó là ảnh chụp nội dung hiển thị tại thời điểm lưu, không nhất thiết gồm script, bình luận, tài khoản hoặc nội dung tương lai." }
+      ],
+      "body": [
+        { "t": "p", "x": "Chọn in ra giấy hay lưu PDF tùy vào cách bạn sẽ dùng nội dung sau đó. Giấy phù hợp khi cần đọc lâu, đánh dấu bằng tay, mang vào cuộc họp hoặc đặt trong hồ sơ vật lý. PDF phù hợp khi cần tìm kiếm, gửi cho người khác, lưu trên thiết bị hoặc in lại sau này. Hãy cân nhắc quyền riêng tư, chi phí mực và khả năng cập nhật của trang." },
+        { "t": "h2", "x": "Khi bản giấy hữu ích hơn" },
+        { "t": "p", "x": "Giấy có thể giúp tập trung khi đọc tài liệu dài mà không muốn bị thông báo làm gián đoạn. Bạn có thể ghi chú bên lề, đánh dấu đoạn quan trọng và mang theo khi không có pin hoặc kết nối. Với biểu mẫu cần ký tay hay bảng cần thảo luận nhóm, bản giấy đôi khi dễ dùng hơn. Trước khi in, bỏ quảng cáo và trang thừa, chọn in hai mặt nếu phù hợp và xem trước để giảm lãng phí." },
+        { "t": "h2", "x": "Khi nên lưu PDF" },
+        { "t": "p", "x": "PDF có thể lưu văn bản chọn được, liên kết và bố cục cơ bản, nhờ đó bạn tìm từ khóa hoặc gửi một bản nhẹ hơn giấy. Nó hữu ích cho hồ sơ có ngày tháng, tài liệu cần tham chiếu hoặc nội dung muốn in sau. Đặt tên tệp có tiêu đề và ngày lưu, giữ thư mục rõ ràng, đồng thời kiểm tra trang cuối và các liên kết trước khi coi đó là bản lưu hoàn chỉnh." },
+        { "t": "h2", "x": "Một PDF không phải bản sao lưu hoàn chỉnh" },
+        { "t": "p", "x": "PDF chỉ ghi lại những gì được đưa vào lúc xuất. Video, nội dung ẩn, bình luận đăng nhập, chức năng tương tác và các cập nhật sau đó có thể không có trong tệp. Trang có thể đổi hoặc biến mất, vì vậy một bản PDF không thay thế kho lưu trữ web chính thức hay hồ sơ có chữ ký. Nếu cần chứng minh phiên bản đã xem, lưu ngày truy cập và địa chỉ trang cùng tệp." },
+        { "t": "h2", "x": "Chọn theo chi phí và quyền truy cập" },
+        { "t": "p", "x": "In giấy phát sinh chi phí giấy, mực, bảo trì và không dễ cập nhật. PDF giảm vật liệu nhưng cần thiết bị, sao lưu và kiểm soát quyền truy cập. Tài liệu nhạy cảm không nên được gửi qua liên kết công khai. Nếu lưu PDF dài hạn, giữ bản gốc khi được phép, kiểm tra khả năng mở lại và tạo thêm bản sao dự phòng tại nơi an toàn." },
+        { "t": "cta", "tool": "compress-pdf", "x": "Lưu PDF khi cần tìm kiếm và in giấy khi cần đọc hoặc ghi chú trực tiếp." }
+      ]
+    },
+    {
+      "topic": "print-website-page-cut-off",
+      "title": "Sửa trang web bị cắt khi in",
+      "slug": "print-website-page-cut-off",
+      "tool": "html-to-pdf",
+      "description": "Kiểm tra khổ giấy, hướng trang, tỷ lệ và lề để khôi phục phần nội dung bị cắt khỏi bản in.",
+      "metaDescription": "Trang web in bị cắt mất chữ hoặc hình? Kiểm tra khổ giấy, hướng trang, tỷ lệ, lề và kiểu in trước khi xuất PDF.",
+      "faqs": [
+        { "q": "Tại sao trang web bị cắt khi in?", "a": "Nội dung có thể rộng hơn giấy, dùng vùng in ngoài lề, hoặc bị CSS của trang ẩn và định vị lại." },
+        { "q": "Nên giảm tỷ lệ xuống bao nhiêu?", "a": "Hãy giảm từng bước nhỏ và đọc thử chữ ở kích thước thực tế. Không có một tỷ lệ đúng cho mọi trang." },
+        { "q": "Lưu PDF trước có sửa được lỗi cắt không?", "a": "Có thể giúp kiểm tra bố cục, nhưng PDF cũng có thể giữ nguyên lỗi. Hãy mở lại và xem từng trang." }
+      ],
+      "body": [
+        { "t": "p", "x": "Khi lề phải, bảng hoặc dòng cuối bị cắt, đừng in nhiều bản để thử ngẫu nhiên. Mở bản xem trước và xác định phần nào mất: cạnh ngang, đầu trang, chân trang hay một khối nằm giữa trang. Lỗi thường do khổ giấy không khớp, trang web quá rộng, tỷ lệ quá lớn hoặc kiểu CSS in được viết chưa tốt. Sau mỗi thay đổi, hãy xem lại tất cả trang." },
+        { "t": "h2", "x": "Khớp khổ giấy và hướng trang" },
+        { "t": "p", "x": "Kiểm tra hộp thoại đang chọn A4, Letter hoặc khổ giấy thực tế nào. Nếu bảng có nhiều cột hoặc hình rộng, thử hướng ngang; văn bản thông thường thường dễ đọc hơn ở hướng dọc. Chọn lề mà máy in hỗ trợ. Một số máy không thể in sát mép, dù bản xem trước trên màn hình trông như vừa khít." },
+        { "t": "h2", "x": "Điều chỉnh tỷ lệ và lề" },
+        { "t": "p", "x": "Thử tùy chọn Vừa với chiều rộng hoặc giảm tỷ lệ từng ít một, chẳng hạn từ 100 xuống 95 phần trăm. Kiểm tra tiêu đề và chữ chú thích ở cỡ đọc bình thường; thu nhỏ quá nhiều khiến trang vừa giấy nhưng không còn sử dụng được. Nếu chỉ một bảng rộng bị tràn, cân nhắc lưu riêng bảng hoặc chuyển tài liệu sang hướng ngang thay vì thu nhỏ toàn bài." },
+        { "t": "h2", "x": "Kiểm tra ngắt trang" },
+        { "t": "p", "x": "Danh sách, ảnh và bảng có thể bị chia giữa hai trang. Xem phần đầu và cuối mỗi trang, bật nền nếu thông tin dựa vào màu sắc, và thử ẩn đầu trang hoặc chân trang do trình duyệt thêm. Nếu một khối vẫn tràn, dùng chế độ đọc hoặc bản in gọn để loại bỏ thanh bên và menu trước khi in." },
+        { "t": "h2", "x": "Lưu thành PDF và xác nhận" },
+        { "t": "p", "x": "Chọn lưu dưới dạng PDF, mở lại tệp và phóng to vùng từng bị cắt. Kiểm tra văn bản có thể tìm kiếm, liên kết, bảng và số trang. Một số trang web dùng chiều rộng cố định hoặc CSS riêng nên cài đặt trình duyệt không thể sửa hoàn toàn. Trong trường hợp đó, dùng bản thân thiện với máy in hoặc liên hệ chủ trang nếu nội dung cần lưu chính xác." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Chọn khổ giấy đúng và xác nhận vùng mép trong bản xem trước." }
+      ]
+    },
+    {
+      "topic": "save-webpage-as-pdf-chrome",
+      "title": "Lưu trang web thành PDF trong Chrome và trình duyệt khác",
+      "slug": "save-webpage-as-pdf-chrome",
+      "tool": "html-to-pdf",
+      "description": "Mở hộp thoại in, chọn Lưu thành PDF và đặt phạm vi trang. Sau đó kiểm tra văn bản, liên kết và bố cục của tệp.",
+      "metaDescription": "Hướng dẫn lưu trang web thành PDF trên Chrome, Safari, Firefox và Edge bằng lệnh in, chọn trang và giữ liên kết có thể nhấp.",
+      "faqs": [
+        { "q": "Phím tắt để lưu trang web thành PDF là gì?", "a": "Thông thường Ctrl+P trên Windows hoặc Linux và Cmd+P trên Mac mở hộp thoại in, nơi có thể chọn đích PDF." },
+        { "q": "PDF có giữ liên kết trên trang không?", "a": "Thường có, nhưng hãy mở tệp đã lưu và bấm thử liên kết quan trọng trước khi chia sẻ." },
+        { "q": "Tôi có thể lưu một số trang của trang web không?", "a": "Có, nếu nội dung đã được chia thành trang. Nhập phạm vi trong hộp thoại và xác nhận bản xem trước." }
+      ],
+      "body": [
+        { "t": "p", "x": "Lưu một trang web thành PDF giúp giữ lại bản có thể đọc ngoại tuyến và thường vẫn tìm kiếm được văn bản. Trên máy tính, mở trang cần lưu, nhấn Ctrl+P trên Windows hoặc Linux, hoặc Cmd+P trên Mac. Trong mục đích đến, chọn Lưu thành PDF rồi kiểm tra bản xem trước. Trên một số hệ điều hành, tên tùy chọn và vị trí nút có thể khác." },
+        { "t": "h2", "x": "Chuẩn bị trang trước khi lưu" },
+        { "t": "p", "x": "Cuộn qua bài để tải ảnh hoặc nội dung xuất hiện khi cuộn. Mở các phần có thể thu gọn nếu chúng cần có trong bản lưu. Nếu quảng cáo, menu hoặc cửa sổ bật lên chiếm chỗ, thử chế độ đọc hoặc bản in gọn. Với nội dung đăng nhập hoặc paywall, tôn trọng quyền truy cập và không cố vượt qua biện pháp bảo vệ của trang." },
+        { "t": "h2", "x": "Chọn đích PDF và phạm vi" },
+        { "t": "p", "x": "Trong hộp thoại in, chọn Lưu thành PDF hoặc tùy chọn PDF tương ứng của hệ điều hành. Chọn đúng khổ giấy, hướng trang, lề và số trang. Nếu chỉ cần một phần, nhập phạm vi hiện trên bản xem trước. Không giả định rằng một trang cuộn dài tương ứng với một trang PDF; trình duyệt tự phân trang theo nội dung và kích thước giấy." },
+        { "t": "h2", "x": "Giữ khả năng đọc và liên kết" },
+        { "t": "p", "x": "Kiểm tra văn bản có chọn được không, hình ảnh có tải đủ và bảng có bị tách không. Bật nền chỉ khi màu hoặc hình nền mang thông tin cần thiết vì tùy chọn này có thể tốn mực khi in sau. Liên kết thường vẫn hoạt động trong PDF, nhưng không phải trang nào cũng xuất đúng. Mở tệp trong một trình đọc khác và thử các địa chỉ quan trọng." },
+        { "t": "h2", "x": "Đặt tên, lưu và biết giới hạn" },
+        { "t": "p", "x": "Chọn tên dễ nhận ra, chẳng hạn tiêu đề rút gọn kèm ngày lưu, rồi đặt tệp vào thư mục phù hợp. PDF là bản chụp tại thời điểm tạo, không bao gồm mọi script, bình luận riêng tư, video hay thay đổi xảy ra sau đó. Nếu dùng làm nguồn nghiên cứu, lưu URL gốc, tác giả và ngày truy cập bên cạnh bản PDF." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Dùng lệnh in của trình duyệt, chọn PDF và mở lại tệp để kiểm tra." }
+      ]
+    },
+    {
+      "topic": "save-webpage-as-pdf-iphone",
+      "title": "Lưu trang web thành PDF trên iPhone và iPad",
+      "slug": "save-webpage-as-pdf-iphone",
+      "tool": "merge-pdf",
+      "description": "Dùng menu Chia sẻ của Safari hoặc bản xem trước in để lưu trang vào Tệp. Kiểm tra nội dung dài và phạm vi trước khi gửi.",
+      "metaDescription": "Lưu trang web thành PDF trên iPhone hoặc iPad bằng Safari, menu Chia sẻ, Tệp và bản chụp Toàn trang khi cần.",
+      "faqs": [
+        { "q": "Lưu trang Safari thành PDF trên iPhone thế nào?", "a": "Mở Chia sẻ, chọn Tùy chọn định dạng PDF nếu có, rồi lưu bản xuất vào ứng dụng Tệp." },
+        { "q": "Ảnh chụp Toàn trang có phải là PDF không?", "a": "Tùy phiên bản iOS, Safari có thể cho lưu ảnh chụp dài thành PDF; đó là một cách khác với bản xuất từ hộp thoại in." },
+        { "q": "PDF trên iPhone có chứa nội dung tải động không?", "a": "Chỉ nội dung đang được hiển thị và đưa vào bản xuất mới có thể xuất hiện. Hãy mở từng trang sau khi lưu." }
+      ],
+      "body": [
+        { "t": "p", "x": "iPhone và iPad có thể lưu trang web để đọc ngoại tuyến hoặc chia sẻ dưới dạng PDF. Trên Safari, mở trang, chạm nút Chia sẻ và xem các tùy chọn bên dưới tiêu đề trang. Nếu có định dạng PDF, chọn nó rồi lưu vào ứng dụng Tệp. Tên menu thay đổi theo phiên bản iOS, vì vậy hãy kiểm tra biểu tượng và phần xem trước thay vì dựa vào một đường dẫn menu cố định." },
+        { "t": "h2", "x": "Lưu qua menu Chia sẻ" },
+        { "t": "p", "x": "Mở đúng URL, đợi nội dung và hình ảnh quan trọng tải xong, rồi chạm Chia sẻ. Chọn PDF nếu có, sau đó dùng Lưu vào Tệp để chọn thư mục. Trước khi hoàn tất, đặt tên tệp dễ tìm. Nếu menu không hiện tùy chọn PDF, mở thêm mục Tùy chọn hoặc thử lệnh in của Safari." },
+        { "t": "h2", "x": "Dùng bản xem trước in" },
+        { "t": "p", "x": "Trong menu Chia sẻ, chọn In để xem bố cục. Một số phiên bản cho phép mở rộng bản xem trước trang bằng thao tác chụm hai ngón tay, rồi chia sẻ hoặc lưu tệp PDF. Xem số trang, phần bị cắt và nội dung ở cuối trang. Nếu trang dài, cuộn bản xem trước để chắc chắn những phần cần thiết đều được đưa vào." },
+        { "t": "h2", "x": "Ảnh chụp Toàn trang và giới hạn" },
+        { "t": "p", "x": "Khi chụp màn hình trong Safari, có thể xuất hiện lựa chọn Màn hình hoặc Toàn trang. Toàn trang thường tạo tài liệu dài, hữu ích cho trang hướng dẫn hoặc biên nhận, nhưng không giống bản PDF giữ lại văn bản và liên kết theo cách của lệnh in. Đừng dùng ảnh chụp để thay thế hồ sơ gốc có chữ ký hoặc dữ liệu tương tác." },
+        { "t": "h2", "x": "Kiểm tra tệp trước khi chia sẻ" },
+        { "t": "p", "x": "Mở PDF trong Tệp hoặc một trình đọc khác. Xác nhận tiêu đề, văn bản tiếng Việt, hình, liên kết và trang cuối đều đúng. Trang yêu cầu đăng nhập có thể chỉ lưu phần đang hiển thị, không lưu thông tin ẩn hoặc nội dung sau này. Nếu gửi tài liệu có dữ liệu cá nhân, chọn kênh chia sẻ có quyền truy cập phù hợp và xóa bản sao không cần thiết khỏi thiết bị dùng chung." },
+        { "t": "cta", "tool": "merge-pdf", "x": "Lưu vào Tệp rồi mở lại để xác nhận bản PDF có đủ trang." }
+      ]
+    },
+    {
+      "topic": "full-page-screenshot",
+      "title": "Chụp ảnh toàn bộ trang web đang cuộn",
+      "slug": "full-page-screenshot",
+      "tool": "jpg-to-pdf",
+      "description": "Dùng chức năng chụp toàn trang của trình duyệt để tạo ảnh dài. Chọn PDF khi cần văn bản có thể tìm kiếm hoặc bản lưu dễ đọc hơn.",
+      "metaDescription": "Chụp toàn bộ trang web bằng công cụ tích hợp của Chrome, Firefox, Edge hoặc Safari, rồi kiểm tra chiều cao và khả năng đọc của ảnh.",
+      "faqs": [
+        { "q": "Chrome có chụp toàn bộ trang web được không?", "a": "Có thể dùng chức năng chụp của Công cụ dành cho nhà phát triển hoặc tiện ích được tin cậy; tên lệnh thay đổi theo phiên bản." },
+        { "q": "Ảnh toàn trang có tốt hơn PDF không?", "a": "Ảnh giữ lại hình thức trực quan, còn PDF từ lệnh in thường phù hợp hơn để tìm kiếm và chọn văn bản." },
+        { "q": "Ảnh chụp có lưu nội dung ẩn hoặc đăng nhập không?", "a": "Không nhất thiết. Nó chỉ ghi lại nội dung được hiển thị và có thể bỏ lỡ khung động hoặc vùng chưa tải." }
+      ],
+      "body": [
+        { "t": "p", "x": "Ảnh chụp toàn trang ghi lại nhiều phần dọc của một website trong một hình ảnh dài, thay vì chỉ vùng đang nhìn thấy. Cách này hữu ích khi cần minh họa giao diện, lưu trạng thái trực quan hoặc gửi bằng chứng về bố cục. Tuy nhiên ảnh rất cao có thể khó đọc, không giữ văn bản dễ tìm kiếm và có thể bỏ lỡ nội dung chưa tải." },
+        { "t": "h2", "x": "Chuẩn bị trang để chụp" },
+        { "t": "p", "x": "Đóng banner không cần thiết, đợi hình tải xong và cuộn gần hết trang một lần để kích hoạt nội dung tải theo vị trí. Nếu trang có nội dung cá nhân hoặc tên tài khoản, xem lại trước khi chia sẻ. Trạng thái đăng nhập, popup và thanh cuộn có thể xuất hiện trong ảnh. Một số trang dùng hoạt ảnh hoặc danh sách ảo hóa nên không thể chụp chính xác bằng một lần tự động." },
+        { "t": "h2", "x": "Chọn công cụ chụp phù hợp" },
+        { "t": "p", "x": "Firefox và Edge thường có chức năng chụp trang tích hợp; Chrome có thể cung cấp lệnh chụp toàn kích thước qua Công cụ dành cho nhà phát triển. Giao diện thay đổi theo phiên bản và hệ điều hành. Nếu dùng tiện ích, chỉ cài từ cửa hàng chính thức, xem quyền truy cập và giới hạn quyền đọc dữ liệu trang. Không cấp quyền rộng cho một ảnh chụp đơn giản nếu không cần." },
+        { "t": "h2", "x": "Kiểm tra hình dài" },
+        { "t": "p", "x": "Mở ảnh ở kích thước thật để xem chữ nhỏ còn đọc được, phần đầu và chân trang có đủ, và các vùng ghép không bị lặp hoặc đứt. Dùng PNG khi chữ và giao diện cần sắc nét; JPG có thể giảm kích thước với ảnh nhiều màu nhưng gây mờ cạnh chữ. Nếu muốn in, cân nhắc chia ảnh thành trang hoặc chuyển sang PDF rồi kiểm tra ngắt trang." },
+        { "t": "h2", "x": "Khi PDF là lựa chọn tốt hơn" },
+        { "t": "p", "x": "Nếu bạn cần tìm kiếm, trích dẫn hoặc đọc văn bản bằng công nghệ hỗ trợ, bản PDF từ lệnh in thường hữu ích hơn ảnh dài. Ảnh chụp cho thấy giao diện tại một thời điểm nhưng không chứng minh nội dung trang sẽ không thay đổi. Với nghiên cứu, lưu URL, ngày chụp và tên trang. Với dữ liệu riêng tư, che hoặc loại bỏ thông tin nhạy cảm bằng quy trình an toàn trước khi gửi." },
+        { "t": "cta", "tool": "jpg-to-pdf", "x": "Chọn ảnh toàn trang khi cần bằng chứng trực quan; dùng PDF khi cần tìm kiếm văn bản." }
+      ]
+    },
+    {
+      "topic": "archive-web-pages",
+      "title": "Lưu trữ trang web để có thể đọc lại sau này",
+      "slug": "archive-web-pages",
+      "tool": "html-to-pdf",
+      "description": "Kết hợp bản PDF, ảnh chụp và dịch vụ lưu trữ web công khai. Mỗi cách giữ lại một phần khác nhau của trang.",
+      "metaDescription": "Lưu trang web bằng PDF, ảnh chụp hoặc Wayback Machine. Hiểu mỗi bản ghi lưu được gì và cách ghi lại ngày truy cập, URL.",
+      "faqs": [
+        { "q": "Lưu PDF có đủ để lưu trữ một trang web không?", "a": "Không phải lúc nào. PDF giữ phần nội dung được in nhưng thường không lưu script, bình luận, dữ liệu đăng nhập hay thay đổi tương lai." },
+        { "q": "Wayback Machine có lưu mọi trang không?", "a": "Không. Trang có thể chặn thu thập, yêu cầu đăng nhập, dùng nội dung động hoặc chưa được lưu." },
+        { "q": "Nên lưu URL và ngày truy cập ở đâu?", "a": "Ghi chúng trong tên tệp, ghi chú hoặc hồ sơ đi kèm để người khác nhận ra nguồn và thời điểm tạo bản sao." }
+      ],
+      "body": [
+        { "t": "p", "x": "Trang web có thể bị sửa hoặc biến mất, nên lưu trữ đúng cách cần hơn một bản sao duy nhất. PDF dễ đọc ngoại tuyến, ảnh chụp ghi lại hình thức, còn dịch vụ lưu trữ web có thể giữ tài nguyên và địa chỉ công khai. Không cách nào đảm bảo bảo tồn mọi chức năng. Hãy xác định bạn cần chứng minh điều gì: nội dung, giao diện, ngày truy cập hay khả năng tương tác." },
+        { "t": "h2", "x": "Lưu bản PDF để đọc" },
+        { "t": "p", "x": "Dùng chức năng in của trình duyệt và chọn Lưu thành PDF. Cuộn để tải nội dung, kiểm tra mọi trang và đảm bảo văn bản có thể chọn khi điều đó quan trọng. Lưu URL gốc, tiêu đề, tác giả nếu có và ngày truy cập trong ghi chú. PDF thường không bao gồm video, phần bình luận tải động, thông tin đăng nhập hoặc mọi script của trang." },
+        { "t": "h2", "x": "Tạo ảnh chụp làm bằng chứng trực quan" },
+        { "t": "p", "x": "Ảnh chụp toàn trang hữu ích khi cần thể hiện bố cục, banner hoặc vị trí của nội dung. Nó có thể khó đọc ở kích thước thật và không chứa văn bản tìm kiếm được. Đặt ảnh kèm PDF trong cùng thư mục, ghi ngày tạo và không cắt bỏ chi tiết cần thiết để hiểu bối cảnh. Nếu trang hiển thị dữ liệu cá nhân, kiểm tra quyền chia sẻ trước khi lưu công khai." },
+        { "t": "h2", "x": "Thử kho lưu trữ công khai" },
+        { "t": "p", "x": "Wayback Machine cho phép gửi một địa chỉ để lưu bản công khai nếu trang có thể truy cập và dịch vụ chấp nhận. Paywall, trang đăng nhập, nội dung phụ thuộc script hoặc quy tắc chặn có thể làm bản lưu thiếu. Không đưa URL chứa token riêng tư, mã truy cập hoặc thông tin cá nhân vào dịch vụ công khai. Mở bản lưu để kiểm tra ảnh, liên kết và ngày được ghi nhận." },
+        { "t": "h2", "x": "Bảo quản bản ghi dài hạn" },
+        { "t": "p", "x": "Dùng tên tệp ổn định, giữ bản gốc không sửa và tạo thêm bản sao dự phòng ở vị trí phù hợp. Nếu hồ sơ có yêu cầu pháp lý, nghiên cứu hoặc tuân thủ, làm theo chính sách lưu trữ của đơn vị thay vì coi PDF cá nhân là bản ghi chính thức. Ghi rõ công cụ đã dùng, thời điểm lưu và những phần không được đưa vào tệp để tránh tuyên bố quá mức." },
+        { "t": "cta", "tool": "html-to-pdf", "x": "Lưu PDF đọc được, ghi URL và ngày truy cập, rồi kiểm tra các trang đã tạo." }
+      ]
+    },
+    {
+      "topic": "save-dynamic-webpage-as-pdf-and-verify",
+      "title": "Lưu trang web động thành PDF và kiểm tra bản đã lưu",
+      "slug": "save-dynamic-webpage-as-pdf-and-verify",
+      "tool": "pdf-to-text",
+      "description": "Đợi nội dung tải, lưu bằng chế độ in và kiểm tra văn bản, liên kết, trang bị ngắt cũng như phần không có trong bản chụp.",
+      "metaDescription": "Lưu trang web động thành PDF, xác nhận văn bản và ngắt trang, rồi ghi rõ những script, bình luận hoặc cập nhật mà PDF không giữ lại.",
+      "faqs": [
+        { "q": "PDF có giữ được trang web động không?", "a": "Nó thường giữ nội dung được hiển thị trong lúc xuất, không giữ đầy đủ script, trạng thái tài khoản hoặc hành vi tương tác." },
+        { "q": "Tôi nên đợi bao lâu trước khi lưu?", "a": "Đợi những phần cần thiết tải xong, cuộn qua trang và mở các mục quan trọng rồi kiểm tra bản xem trước." },
+        { "q": "Làm sao biết văn bản trong PDF còn tìm kiếm được?", "a": "Thử chọn một câu và tìm một từ đặc trưng trong trình đọc PDF; bản quét có thể cần OCR." }
+      ],
+      "body": [
+        { "t": "p", "x": "Trang web động có thể tải nội dung sau khi mở, thay đổi theo thao tác hoặc chỉ hiện một phần khi cuộn. PDF tạo từ lệnh in là bản chụp những gì công cụ nhận được tại thời điểm đó, không phải bản sao đầy đủ của ứng dụng web. Trước khi lưu, đợi nội dung cần thiết xuất hiện, mở mục có thể thu gọn và cuộn để tải ảnh." },
+        { "t": "h2", "x": "Chuẩn bị trang trước khi xuất" },
+        { "t": "p", "x": "Đóng popup, mở tab cần thiết và xác nhận đúng tài khoản hoặc trang công khai đang xem. Nếu tài liệu cần giữ có nút tải thêm, bảng phân trang hoặc nội dung ẩn sau thao tác, hãy mở chúng trước khi in. Tránh đưa thông tin nhạy cảm vào dịch vụ bên ngoài và không tìm cách vượt qua paywall. Ghi nhận URL và ngày truy cập nếu cần làm hồ sơ." },
+        { "t": "h2", "x": "Lưu qua lệnh in" },
+        { "t": "p", "x": "Nhấn Ctrl+P hoặc Cmd+P rồi chọn Lưu thành PDF. Chọn khổ giấy và hướng trang hợp với bảng. Kiểm tra bản xem trước để tìm trang trắng, phần lặp lại, thanh điều hướng hoặc nội dung mất. Nếu trang dài, xem cuối tài liệu chứ không chỉ trang đầu. Khi chế độ in gọn không hiển thị nội dung cần thiết, thử chế độ đọc hoặc bản xuất chính thức của trang." },
+        { "t": "h2", "x": "Xác minh văn bản và liên kết" },
+        { "t": "p", "x": "Mở PDF trong trình đọc và thử chọn một câu. Tìm tên, ngày hoặc từ khóa để xác nhận lớp văn bản tồn tại. Bấm thử các liên kết quan trọng, kiểm tra tiêu đề, bảng và số liệu so với trang đang mở. Với bản quét hoặc ảnh, OCR có thể tạo văn bản tìm kiếm nhưng dễ nhầm dấu, ký hiệu và số; so sánh kết quả với hình gốc." },
+        { "t": "h2", "x": "Ghi rõ những gì PDF không lưu" },
+        { "t": "p", "x": "PDF thường không chứa script, nút hoạt động, bình luận chưa tải, trạng thái tài khoản hoặc các cập nhật sau này. Một bản lưu có thể bỏ qua nội dung được tải trong khung riêng. Nếu tính toàn vẹn quan trọng, lưu thêm ảnh chụp hoặc tham chiếu đến kho lưu trữ phù hợp, và làm theo quy định của tổ chức. Đặt tên tệp có ngày, giữ nguồn và không trình bày bản chụp như hồ sơ toàn diện khi nó không phải." },
+        { "t": "cta", "tool": "pdf-to-text", "x": "Mở lại PDF, thử tìm từ khóa và kiểm tra từng trang trước khi sử dụng." }
+      ]
+    }
+  ]
+}
