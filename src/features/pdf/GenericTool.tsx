@@ -35,7 +35,7 @@ const FIELDS: Record<string, Field[]> = {
       key: 'level',
       label: 'How much to shrink',
       type: 'select',
-      options: [['light', 'Light · no quality loss, text stays text'], ['medium', 'Medium · pages become pictures'], ['strong', 'Strong · smallest file, lower quality']],
+      options: [['light', 'Light · keeps text selectable'], ['medium', 'Medium · pages become images'], ['strong', 'Strong · smallest, lower quality']],
       default: 'light',
       help: 'Light tidies up the file and removes hidden details (author, program, keywords) without touching quality. Medium and Strong turn each page into a picture, which is what makes scans much smaller, but the text can no longer be selected or searched.',
     },
