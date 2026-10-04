@@ -10,6 +10,7 @@ import { Wordmark } from './Wordmark'
 import { BrandMark } from './BrandMark'
 import { useSiteConfig } from '../../admin/useSiteConfig'
 import { LANGUAGE_DIRECTORY } from '../../content/localizedGuides'
+import { LANGUAGE_PACKS as FULL_LANGUAGE_PACKS, guidePath as localizedGuidePath } from '../../content/localizedGuidesFull'
 
 function NavMenu({ label, children, id, open, setOpen, wide }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void; wide?: boolean }) {
   const isOpen = open === id
@@ -72,7 +73,19 @@ export function Header() {
 
   const visible = TOOLS.filter((t) => !cfg.tools.hidden.includes(t.slug))
   const toolBySlug = new Map(TOOLS.map((t) => [t.slug, t]))
-  const currentLanguage = LANGUAGE_DIRECTORY.find((language) => loc.pathname === language.path || loc.pathname.startsWith(`${language.path}/`))
+  const currentLocalizedRoute = loc.pathname.match(/^\/([^/]+)\/([^/]+)(?:\/([^/]+))?\/?$/)
+  const currentLocalizedPack = currentLocalizedRoute
+    ? FULL_LANGUAGE_PACKS.find((pack) => pack.locale.toLowerCase() === currentLocalizedRoute[1].toLowerCase() && pack.hub === currentLocalizedRoute[2])
+    : undefined
+  const currentLocalizedGuide = currentLocalizedRoute?.[3]
+    ? currentLocalizedPack?.guides.find((guide) => guide.slug === currentLocalizedRoute[3])
+    : undefined
+  const englishGuideSlug = loc.pathname.match(/^\/blog\/(?:[^/]+\/)?([^/]+)\/?$/)?.[1]
+  const englishGuideTopic = englishGuideSlug
+    ? FULL_LANGUAGE_PACKS.flatMap((pack) => pack.guides).find((guide) => guide.slug === englishGuideSlug || guide.topic === englishGuideSlug)?.topic
+    : undefined
+  const currentGuideTopic = currentLocalizedGuide?.topic ?? englishGuideTopic
+  const currentLanguage = LANGUAGE_DIRECTORY.find((language) => language.locale === currentLocalizedPack?.locale)
 
   return (
     <div className="header-stack" ref={ref}>
@@ -160,7 +173,16 @@ export function Header() {
             <div className="menu-title">Browse guides</div>
             <Link to="/" lang="en" aria-label="English guides">En</Link>
             {LANGUAGE_DIRECTORY.map((language) => language.active ? (
-              <Link key={language.locale} to={language.path} lang={language.locale} aria-label={`${language.name} guides`}>
+              <Link
+                key={language.locale}
+                to={(() => {
+                  const targetPack = FULL_LANGUAGE_PACKS.find((pack) => pack.locale === language.locale)
+                  const equivalent = currentGuideTopic ? targetPack?.guides.find((guide) => guide.topic === currentGuideTopic) : undefined
+                  return targetPack ? localizedGuidePath(targetPack, equivalent?.slug) : language.path
+                })()}
+                lang={language.locale}
+                aria-label={`${language.name} guides`}
+              >
                 {language.shortName}
               </Link>
             ) : (

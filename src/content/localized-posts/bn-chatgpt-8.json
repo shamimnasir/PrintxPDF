@@ -9,20 +9,20 @@
       "description": "WordPress page-এ print button যোগ করে browser print dialog চালান। Theme, accessibility, security ও mobile আচরণ পরীক্ষা করুন।",
       "metaDescription": "WordPress page-এ print button যোগ করে browser print dialog চালান। Theme, accessibility, security ও mobile আচরণ পরীক্ষা করুন।",
       "faqs": [
-        { "q": "WordPress-এ print button plugin দরকার?", "a": "সবসময় নয়। Theme বা ছোট, নিরাপদ script দিয়ে browser print action যুক্ত করা যেতে পারে।" },
-        { "q": "Print button কি clean page বানাবে?", "a": "না, button সাধারণত print dialog খোলে। Layout নিয়ন্ত্রণে print stylesheet দরকার।" },
-        { "q": "Plugin বাছার আগে কী দেখব?", "a": "Update history, permission, compatibility, accessibility ও privacy disclosure দেখুন।" }
+        {"q":"WordPress-এ print button plugin দরকার?","a":"সবসময় নয়। Theme বা ছোট, নিরাপদ script দিয়ে browser print action যুক্ত করা যেতে পারে।"},
+        {"q":"Print button কি clean page বানাবে?","a":"না, button সাধারণত print dialog খোলে। Layout নিয়ন্ত্রণে print stylesheet দরকার।"},
+        {"q":"Plugin বাছার আগে কী দেখব?","a":"Update history, permission, compatibility, accessibility ও privacy disclosure দেখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "WordPress article, recipe বা resource page-এ print button visitor-কে browser print dialog খুলতে সাহায্য করে। Button নিজে page clean করে না; print layout theme-এর CSS এবং browser-এর ওপর নির্ভর করে। Button placement, accessible label ও print stylesheet একসঙ্গে পরিকল্পনা করুন। Staging site-এ test করুন, কারণ plugin বা theme update production site-এ conflict তৈরি করতে পারে।" },
-        { "t": "h2", "x": "Button কোথায় ও কী করবে" },
-        { "t": "p", "x": "Button article title-এর কাছে বা share control-এর পাশে রাখুন। Keyboard দিয়ে focus করা যায় এবং screen reader-এ অর্থপূর্ণ label শোনা যায় কি না দেখুন। Button standard browser print dialog চালাবে, নাকি PDF generation service call করবে তা স্পষ্ট করুন। Server conversion থাকলে privacy notice ও data flow লিখুন।" },
-        { "t": "h2", "x": "Print stylesheet তৈরি" },
-        { "t": "p", "x": "Print media CSS-এ navigation, ad, sticky header ও interactive control hide করা যায়। Main article, caption, source link এবং author detail রাখুন। Page break heading ও table-এর মাঝখানে ঠেকানোর চেষ্টা করুন। Color background বাদ পড়লেও information বোঝা যায় কি না contrast পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Plugin নিরাপত্তা ও test" },
-        { "t": "p", "x": "Plugin update, support, permission ও changelog পরীক্ষা করুন। Production-এর আগে mobile, desktop, keyboard navigation এবং browser variation test করুন। WordPress backup রাখুন এবং plugin conflict হলে rollback plan রাখুন। Site visitor login বা account content print করলে sensitive page cache বা public expose হচ্ছে কি না security review করুন।" },
-        { "t": "p", "x": "Button-এর analytics দরকার হলে privacy notice ও consent requirement বিবেচনা করুন। Print event collect করা user-এর content collect করার সমান নয়, তবুও data minimization মানুন। Release-এর পরে production page ও cache plugin-এর সঙ্গে function ঠিক আছে কি না আবার test করুন।" },
-        { "t": "cta", "tool": "html-to-pdf", "x": "WordPress-এর print action staging-এ test করে preview যাচাই করুন।" }
+        {"t":"p","x":"WordPress article, recipe বা resource page-এ print button visitor-কে browser print dialog খুলতে সাহায্য করে। Button নিজে page clean করে না; print layout theme-এর CSS এবং browser-এর ওপর নির্ভর করে। Button placement, accessible label ও print stylesheet একসঙ্গে পরিকল্পনা করুন। Staging site-এ test করুন, কারণ plugin বা theme update production site-এ conflict তৈরি করতে পারে।"},
+        {"t":"h2","x":"Button কোথায় ও কী করবে"},
+        {"t":"p","x":"Button article title-এর কাছে বা share control-এর পাশে রাখুন। Keyboard দিয়ে focus করা যায় এবং screen reader-এ অর্থপূর্ণ label শোনা যায় কি না দেখুন। Button standard browser print dialog চালাবে, নাকি PDF generation service call করবে তা স্পষ্ট করুন। Server conversion থাকলে privacy notice ও data flow লিখুন।"},
+        {"t":"h2","x":"Print stylesheet তৈরি"},
+        {"t":"p","x":"Print media CSS-এ navigation, ad, sticky header ও interactive control hide করা যায়। Main article, caption, source link এবং author detail রাখুন। Page break heading ও table-এর মাঝখানে ঠেকানোর চেষ্টা করুন। Color background বাদ পড়লেও information বোঝা যায় কি না contrast পরীক্ষা করুন।"},
+        {"t":"h2","x":"Plugin নিরাপত্তা ও test"},
+        {"t":"p","x":"Plugin update, support, permission ও changelog পরীক্ষা করুন। Production-এর আগে mobile, desktop, keyboard navigation এবং browser variation test করুন। WordPress backup রাখুন এবং plugin conflict হলে rollback plan রাখুন। Site visitor login বা account content print করলে sensitive page cache বা public expose হচ্ছে কি না security review করুন।"},
+        {"t":"p","x":"Button-এর analytics দরকার হলে privacy notice ও consent requirement বিবেচনা করুন। Print event collect করা user-এর content collect করার সমান নয়, তবুও data minimization মানুন। Release-এর পরে production page ও cache plugin-এর সঙ্গে function ঠিক আছে কি না আবার test করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"html-to-pdf","x":"WordPress-এর print action staging-এ test করে preview যাচাই করুন।"}
       ]
     },
     {
@@ -33,20 +33,20 @@
       "description": "@media print CSS দিয়ে navigation সরান, text readable রাখুন এবং page break নিয়ন্ত্রণ করুন। একাধিক browser-এ print preview পরীক্ষা করুন।",
       "metaDescription": "@media print CSS দিয়ে navigation সরান, text readable রাখুন এবং page break নিয়ন্ত্রণ করুন। একাধিক browser-এ print preview পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Print stylesheet কোথায় লিখব?", "a": "Theme stylesheet বা child theme-এ @media print rule রাখুন, যাতে update-এ পরিবর্তন হারায় না।" },
-        { "q": "কোন element সাধারণত hide করব?", "a": "Navigation, ads, popup, floating control এবং nonessential form control hide করা যায়।" },
-        { "q": "Page break rule সব browser-এ একই?", "a": "না। Modern CSS সমর্থন তুলনামূলক ভালো, তবু browser ও printer-এ preview পরীক্ষা করুন।" }
+        {"q":"Print stylesheet কোথায় লিখব?","a":"Theme stylesheet বা child theme-এ @media print rule রাখুন, যাতে update-এ পরিবর্তন হারায় না।"},
+        {"q":"কোন element সাধারণত hide করব?","a":"Navigation, ads, popup, floating control এবং nonessential form control hide করা যায়।"},
+        {"q":"Page break rule সব browser-এ একই?","a":"না। Modern CSS সমর্থন তুলনামূলক ভালো, তবু browser ও printer-এ preview পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Print stylesheet web page-কে screen layout থেকে paper বা PDF layout-এ রূপান্তর করে। @media print block-এ navigation, advertisement, popup, floating action এবং decorative background সরানো যায়। Main content ও source information অক্ষত রাখা গুরুত্বপূর্ণ। CSS rule-গুলো browser এবং printer ভেদে ভিন্ন হতে পারে, তাই automated test-এর সঙ্গে বাস্তব print preview-ও দেখুন।" },
-        { "t": "h2", "x": "প্রয়োজনীয় content লক্ষ্য করুন" },
-        { "t": "p", "x": "Article title, author, date, body, caption, table এবং link রাখুন। Button বা form control প্রয়োজন না হলে hide করুন। Display none দিলে screen reader বা print selection-এর আচরণ বদলায় কি না বিবেচনা করুন। Header/footer-এর URL ও page number browser নিজে যোগ করতে পারে, যা setting থেকে নিয়ন্ত্রিত হয়।" },
-        { "t": "h2", "x": "Typography ও page break" },
-        { "t": "p", "x": "Print font size পড়ার মতো রাখুন এবং line length অতিরিক্ত wide হতে দেবেন না। Heading-এর পর page break পড়া ঠেকাতে break-after বা break-inside rule পরীক্ষা করুন। Table row এবং image এক page-এ রাখতে কিছু CSS সাহায্য করে, তবে browser সেগুলো সবসময় মানে না।" },
-        { "t": "h2", "x": "Browser-এ cross-test" },
-        { "t": "p", "x": "Chrome, Firefox ও Safari preview-তে page count, image, link এবং color দেখুন। Paper size, margin, background graphics ও scale বদলে test করুন। Long page-এ blank sheet বা cut-off text আছে কি না দেখুন। WordPress হলে child theme বা documented custom CSS-এ rule রাখুন, core theme file সরাসরি edit করবেন না।" },
-        { "t": "p", "x": "Print stylesheet-এর regression test-এ long article, table, recipe card ও image-heavy page রাখুন। Theme update হলে browser preview পুনরায় তুলনা করুন। CSS selector বেশি broad হলে footer বা legal notice-ও ভুলে hide হতে পারে, তাই test case-এ সেই block যুক্ত করুন।" },
-        { "t": "cta", "tool": "html-to-pdf", "x": "Print CSS প্রয়োগ করে PDF preview ও page break পরীক্ষা করুন।" }
+        {"t":"p","x":"Print stylesheet web page-কে screen layout থেকে paper বা PDF layout-এ রূপান্তর করে। @media print block-এ navigation, advertisement, popup, floating action এবং decorative background সরানো যায়। Main content ও source information অক্ষত রাখা গুরুত্বপূর্ণ। CSS rule-গুলো browser এবং printer ভেদে ভিন্ন হতে পারে, তাই automated test-এর সঙ্গে বাস্তব print preview-ও দেখুন।"},
+        {"t":"h2","x":"প্রয়োজনীয় content লক্ষ্য করুন"},
+        {"t":"p","x":"Article title, author, date, body, caption, table এবং link রাখুন। Button বা form control প্রয়োজন না হলে hide করুন। Display none দিলে screen reader বা print selection-এর আচরণ বদলায় কি না বিবেচনা করুন। Header/footer-এর URL ও page number browser নিজে যোগ করতে পারে, যা setting থেকে নিয়ন্ত্রিত হয়।"},
+        {"t":"h2","x":"Typography ও page break"},
+        {"t":"p","x":"Print font size পড়ার মতো রাখুন এবং line length অতিরিক্ত wide হতে দেবেন না। Heading-এর পর page break পড়া ঠেকাতে break-after বা break-inside rule পরীক্ষা করুন। Table row এবং image এক page-এ রাখতে কিছু CSS সাহায্য করে, তবে browser সেগুলো সবসময় মানে না।"},
+        {"t":"h2","x":"Browser-এ cross-test"},
+        {"t":"p","x":"Chrome, Firefox ও Safari preview-তে page count, image, link এবং color দেখুন। Paper size, margin, background graphics ও scale বদলে test করুন। Long page-এ blank sheet বা cut-off text আছে কি না দেখুন। WordPress হলে child theme বা documented custom CSS-এ rule রাখুন, core theme file সরাসরি edit করবেন না।"},
+        {"t":"p","x":"Print stylesheet-এর regression test-এ long article, table, recipe card ও image-heavy page রাখুন। Theme update হলে browser preview পুনরায় তুলনা করুন। CSS selector বেশি broad হলে footer বা legal notice-ও ভুলে hide হতে পারে, তাই test case-এ সেই block যুক্ত করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"html-to-pdf","x":"Print CSS প্রয়োগ করে PDF preview ও page break পরীক্ষা করুন।"}
       ]
     },
     {
@@ -57,20 +57,20 @@
       "description": "Print-friendly website-এ মূল content, readable typography ও কম ink-ব্যবহার নিশ্চিত করুন। Responsive screen design-এর পাশাপাশি print layout পরীক্ষা করুন।",
       "metaDescription": "Print-friendly website-এ মূল content, readable typography ও কম ink-ব্যবহার নিশ্চিত করুন। Responsive screen design-এর পাশাপাশি print layout পরীক্ষা করুন।",
       "faqs": [
-        { "q": "সব website page print করা উচিত?", "a": "যে content visitor সংরক্ষণ বা reference করতে চাইতে পারে, সেখানে print layout উপকারী হতে পারে।" },
-        { "q": "Background image print-এ রাখা উচিত?", "a": "সাধারণত decorative background বাদ দিয়ে contrast ও ink usage বিবেচনা করুন।" },
-        { "q": "Mobile print layout কীভাবে পরীক্ষা করব?", "a": "Mobile browser থেকে PDF বা printer destination বেছে preview ও page order দেখুন।" }
+        {"q":"সব website page print করা উচিত?","a":"যে content visitor সংরক্ষণ বা reference করতে চাইতে পারে, সেখানে print layout উপকারী হতে পারে।"},
+        {"q":"Background image print-এ রাখা উচিত?","a":"সাধারণত decorative background বাদ দিয়ে contrast ও ink usage বিবেচনা করুন।"},
+        {"q":"Mobile print layout কীভাবে পরীক্ষা করব?","a":"Mobile browser থেকে PDF বা printer destination বেছে preview ও page order দেখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Printer-friendly design visitor-কে article, guide, recipe বা receipt কাগজে বা PDF-এ নিতে দেয়। Screen layout-এ বড় navigation, animation ও background image থাকতে পারে, যা print-এ অপ্রয়োজনীয়। Print-specific CSS দিয়ে মূল content, heading, figure caption, citation এবং contact detail রাখা যায়। শুধু desktop browser নয়, mobile device এবং বিভিন্ন page length-এ output পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Content hierarchy ও typography" },
-        { "t": "p", "x": "Heading hierarchy স্পষ্ট, paragraph সংক্ষিপ্ত এবং link readable রাখুন। Print version-এ hyperlink-এর destination URL দেখানো দরকার কি না ঠিক করুন। Table-এর header প্রতিটি page-এ repeat হতে পারে কি না পরীক্ষা করুন। Body text paper-এ খুব ছোট বা line spacing খুব ঘন করবেন না।" },
-        { "t": "h2", "x": "Ink ও page layout" },
-        { "t": "p", "x": "Decorative background, shadow, sticky bar এবং ad print stylesheet-এ বাদ দিন। Color ছাড়া chart-এর label বোঝা যায় কি না দেখুন। Page break rule দিয়ে heading-এর এক লাইন একা page-এর নিচে পড়ে থাকা কমান। Image প্রয়োজন হলে width নিয়ন্ত্রণ করুন এবং high-resolution asset ব্যবহার করুন।" },
-        { "t": "h2", "x": "Test ও accessibility" },
-        { "t": "p", "x": "Browser preview-তে first, middle এবং last page দেখুন। Keyboard-only user-এর print button focus পায় কি না নিশ্চিত করুন। Screen reader label পরিষ্কার রাখুন। Visitor যদি content archive করতে চান, stable URL ও capture date পাওয়ার ব্যবস্থা থাকতে পারে। Privacy বা account page-এর personalized data যেন অন্য কারও print cache-এ না যায় তা পরীক্ষা করুন।" },
-        { "t": "p", "x": "Site owner হিসেবে print copy visitor-এর private dashboard বা purchase data প্রকাশ করছে কি না threat model-এ দেখুন। Authenticated page cache অন্য user-কে দেওয়া হলে data leak হতে পারে। User testing-এ keyboard navigation ও print output একসঙ্গে পর্যবেক্ষণ করুন।" },
-        { "t": "cta", "tool": "qr-code", "x": "প্রিন্টের জন্য page preview করুন এবং প্রয়োজনে paper copy-তে URL বা QR রাখুন।" }
+        {"t":"p","x":"Printer-friendly design visitor-কে article, guide, recipe বা receipt কাগজে বা PDF-এ নিতে দেয়। Screen layout-এ বড় navigation, animation ও background image থাকতে পারে, যা print-এ অপ্রয়োজনীয়। Print-specific CSS দিয়ে মূল content, heading, figure caption, citation এবং contact detail রাখা যায়। শুধু desktop browser নয়, mobile device এবং বিভিন্ন page length-এ output পরীক্ষা করুন।"},
+        {"t":"h2","x":"Content hierarchy ও typography"},
+        {"t":"p","x":"Heading hierarchy স্পষ্ট, paragraph সংক্ষিপ্ত এবং link readable রাখুন। Print version-এ hyperlink-এর destination URL দেখানো দরকার কি না ঠিক করুন। Table-এর header প্রতিটি page-এ repeat হতে পারে কি না পরীক্ষা করুন। Body text paper-এ খুব ছোট বা line spacing খুব ঘন করবেন না।"},
+        {"t":"h2","x":"Ink ও page layout"},
+        {"t":"p","x":"Decorative background, shadow, sticky bar এবং ad print stylesheet-এ বাদ দিন। Color ছাড়া chart-এর label বোঝা যায় কি না দেখুন। Page break rule দিয়ে heading-এর এক লাইন একা page-এর নিচে পড়ে থাকা কমান। Image প্রয়োজন হলে width নিয়ন্ত্রণ করুন এবং high-resolution asset ব্যবহার করুন।"},
+        {"t":"h2","x":"Test ও accessibility"},
+        {"t":"p","x":"Browser preview-তে first, middle এবং last page দেখুন। Keyboard-only user-এর print button focus পায় কি না নিশ্চিত করুন। Screen reader label পরিষ্কার রাখুন। Visitor যদি content archive করতে চান, stable URL ও capture date পাওয়ার ব্যবস্থা থাকতে পারে। Privacy বা account page-এর personalized data যেন অন্য কারও print cache-এ না যায় তা পরীক্ষা করুন।"},
+        {"t":"p","x":"Site owner হিসেবে print copy visitor-এর private dashboard বা purchase data প্রকাশ করছে কি না threat model-এ দেখুন। Authenticated page cache অন্য user-কে দেওয়া হলে data leak হতে পারে। User testing-এ keyboard navigation ও print output একসঙ্গে পর্যবেক্ষণ করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"qr-code","x":"প্রিন্টের জন্য page preview করুন এবং প্রয়োজনে paper copy-তে URL বা QR রাখুন।"}
       ]
     },
     {
@@ -81,20 +81,20 @@
       "description": "Browser print action, extension বা site integration বেছে নিন। Button label, page privacy, accessibility ও PDF preview পরীক্ষা করুন।",
       "metaDescription": "Browser print action, extension বা site integration বেছে নিন। Button label, page privacy, accessibility ও PDF preview পরীক্ষা করুন।",
       "faqs": [
-        { "q": "যেকোনো site-এ custom print button বসানো যায়?", "a": "শুধু site owner বা developer site code বদলাতে পারে। Visitor browser print বা extension ব্যবহার করতে পারেন।" },
-        { "q": "Print button কি PDF তৈরি করে?", "a": "Browser print dialog-এ Save as PDF থাকলে user তা বেছে নিতে পারেন।" },
-        { "q": "Account page print করা নিরাপদ?", "a": "Shared device ও service policy বিবেচনা করুন; ব্যক্তিগত তথ্যের কপি নিরাপদে রাখুন।" }
+        {"q":"যেকোনো site-এ custom print button বসানো যায়?","a":"শুধু site owner বা developer site code বদলাতে পারে। Visitor browser print বা extension ব্যবহার করতে পারেন।"},
+        {"q":"Print button কি PDF তৈরি করে?","a":"Browser print dialog-এ Save as PDF থাকলে user তা বেছে নিতে পারেন।"},
+        {"q":"Account page print করা নিরাপদ?","a":"Shared device ও service policy বিবেচনা করুন; ব্যক্তিগত তথ্যের কপি নিরাপদে রাখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "কোনো website-এ print button যোগ করার ক্ষমতা নির্ভর করে আপনি site owner, developer নাকি visitor। Site owner হলে button standard browser print চালাতে পারে, আর print stylesheet page clean করে। Visitor হলে site code বদলানো যায় না; browser menu, Reader view বা extension ব্যবহার করুন। PDF export button যদি server conversion চালায়, তা user-কে স্পষ্টভাবে জানাতে হবে।" },
-        { "t": "h2", "x": "Site owner-এর button" },
-        { "t": "p", "x": "Button-এর accessible label ও keyboard focus নিশ্চিত করুন। Print CSS-এ navigation ও decorative block hide করে article content রাখুন। Button action standard print dialog খুলবে কি custom PDF generator চালাবে তা নির্দিষ্ট করুন। API বা third-party service file upload করলে privacy disclosure দিন।" },
-        { "t": "h2", "x": "Visitor-এর browser option" },
-        { "t": "p", "x": "Ctrl+P বা Command+P দিয়ে print dialog খোলা যায়। Save as PDF থাকলে local copy বানান। Reader mode clutter কমাতে পারে। Extension install করার আগে publisher, permissions, update history এবং privacy policy পড়ুন। Login, payment বা medical page তৃতীয় পক্ষের service-এ দেবেন না।" },
-        { "t": "h2", "x": "Preview ও safe sharing" },
-        { "t": "p", "x": "PDF output-এ heading, chart, table, link ও page break দেখুন। Account number বা address visible থাকলে share করার আগে review করুন। Public link তৈরি করলে access সীমিত করুন। Website owner হিসেবে analytics বা print log collect করলে visitor-কে privacy notice দিন এবং প্রয়োজনের বেশি data রাখবেন না।" },
-        { "t": "p", "x": "Site owner হলে button-এর loading, error এবং print cancel-এর আচরণ ঠিক করুন। Visitor হিসেবে feature না পেলে browser নিজস্ব print dialog সবসময় বিকল্প হতে পারে। Extension সরালে বা permission বন্ধ করলে page content কীভাবে ব্যবহৃত হয় তা পরিষ্কারভাবে বোঝা উচিত।" },
-        { "t": "cta", "tool": "html-to-pdf", "x": "Print dialog থেকে PDF তৈরি করুন এবং sharing-এর আগে content যাচাই করুন।" }
+        {"t":"p","x":"কোনো website-এ print button যোগ করার ক্ষমতা নির্ভর করে আপনি site owner, developer নাকি visitor। Site owner হলে button standard browser print চালাতে পারে, আর print stylesheet page clean করে। Visitor হলে site code বদলানো যায় না; browser menu, Reader view বা extension ব্যবহার করুন। PDF export button যদি server conversion চালায়, তা user-কে স্পষ্টভাবে জানাতে হবে।"},
+        {"t":"h2","x":"Site owner-এর button"},
+        {"t":"p","x":"Button-এর accessible label ও keyboard focus নিশ্চিত করুন। Print CSS-এ navigation ও decorative block hide করে article content রাখুন। Button action standard print dialog খুলবে কি custom PDF generator চালাবে তা নির্দিষ্ট করুন। API বা third-party service file upload করলে privacy disclosure দিন।"},
+        {"t":"h2","x":"Visitor-এর browser option"},
+        {"t":"p","x":"Ctrl+P বা Command+P দিয়ে print dialog খোলা যায়। Save as PDF থাকলে local copy বানান। Reader mode clutter কমাতে পারে। Extension install করার আগে publisher, permissions, update history এবং privacy policy পড়ুন। Login, payment বা medical page তৃতীয় পক্ষের service-এ দেবেন না।"},
+        {"t":"h2","x":"Preview ও safe sharing"},
+        {"t":"p","x":"PDF output-এ heading, chart, table, link ও page break দেখুন। Account number বা address visible থাকলে share করার আগে review করুন। Public link তৈরি করলে access সীমিত করুন। Website owner হিসেবে analytics বা print log collect করলে visitor-কে privacy notice দিন এবং প্রয়োজনের বেশি data রাখবেন না।"},
+        {"t":"p","x":"Site owner হলে button-এর loading, error এবং print cancel-এর আচরণ ঠিক করুন। Visitor হিসেবে feature না পেলে browser নিজস্ব print dialog সবসময় বিকল্প হতে পারে। Extension সরালে বা permission বন্ধ করলে page content কীভাবে ব্যবহৃত হয় তা পরিষ্কারভাবে বোঝা উচিত। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"html-to-pdf","x":"Print dialog থেকে PDF তৈরি করুন এবং sharing-এর আগে content যাচাই করুন।"}
       ]
     },
     {
@@ -105,20 +105,20 @@
       "description": "PDF-কে HTML, Word, text বা spreadsheet-এ পুনর্ব্যবহার করার আগে reading order, tags, OCR ও caption পরীক্ষা করুন। Accessibility যাচাই অপরিহার্য।",
       "metaDescription": "PDF-কে HTML, Word, text বা spreadsheet-এ পুনর্ব্যবহার করার আগে reading order, tags, OCR ও caption পরীক্ষা করুন। Accessibility যাচাই অপরিহার্য।",
       "faqs": [
-        { "q": "PDF conversion করলে document accessible হয়?", "a": "না। Conversion-এর পরে structure, heading, reading order ও alternative text পরীক্ষা করতে হয়।" },
-        { "q": "Scan করা PDF কীভাবে accessible করব?", "a": "OCR text তৈরি করতে পারে, তবে manual correction ও semantic structure যোগ করতে হয়।" },
-        { "q": "Accessible source format কোনটি?", "a": "প্রয়োজন অনুযায়ী semantic HTML, structured DOCX বা properly tagged PDF বেছে নিন।" }
+        {"q":"PDF conversion করলে document accessible হয়?","a":"না। Conversion-এর পরে structure, heading, reading order ও alternative text পরীক্ষা করতে হয়।"},
+        {"q":"Scan করা PDF কীভাবে accessible করব?","a":"OCR text তৈরি করতে পারে, তবে manual correction ও semantic structure যোগ করতে হয়।"},
+        {"q":"Accessible source format কোনটি?","a":"প্রয়োজন অনুযায়ী semantic HTML, structured DOCX বা properly tagged PDF বেছে নিন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF থেকে অন্য format তৈরি করলেই accessibility নিশ্চিত হয় না। Screen reader-এর reading order, heading hierarchy, link text, table header, image alternative text এবং keyboard access আলাদাভাবে পরীক্ষা করতে হয়। PDF tagged থাকলে কিছু structure পাওয়া যেতে পারে, কিন্তু export tool তা সবসময় ধরে রাখতে পারে না। Source document সম্ভব হলে semantic HTML বা properly structured Word-এ পুনর্গঠন করুন।" },
-        { "t": "h2", "x": "PDF structure পরীক্ষা" },
-        { "t": "p", "x": "Heading tag, reading order, document language, table semantics ও alt text আছে কি না দেখুন। Scanned page হলে OCR text layer লাগতে পারে। OCR output-এ বাংলা character, number ও punctuation যাচাই করুন। Image-based chart-এর text summary আলাদাভাবে লিখুন।" },
-        { "t": "h2", "x": "Target format নির্বাচন" },
-        { "t": "p", "x": "Web publishing-এর জন্য semantic HTML responsive এবং screen reader friendly হতে পারে। Editable collaboration-এ structured DOCX সুবিধা দেয়। Data table হলে spreadsheet ব্যবহার করুন, তবে header ও data type ঠিক রাখুন। Print layout অপরিহার্য হলে tagged PDF বজায় রেখে accessibility checker চালান।" },
-        { "t": "h2", "x": "User test ও version control" },
-        { "t": "p", "x": "Keyboard navigation, zoom এবং screen reader দিয়ে target format পরীক্ষা করুন। Image-only text, colour-only meaning ও ambiguous link label সংশোধন করুন। Original PDF, converted source এবং accessible output-এর version আলাদা রাখুন। প্রতিষ্ঠানের accessibility standard ও স্থানীয় বিধি অনুসরণ করুন; automated checker একাই compliance নিশ্চিত করে না।" },
-        { "t": "p", "x": "Alt text সংক্ষিপ্ত কিন্তু অর্থবহ রাখুন, এবং decorative image screen reader থেকে hide করুন। Converted output-এর contrast ও zoom behaviour পরীক্ষা করুন। Disability accommodation-এর formal requirement থাকলে accessibility specialist বা organization policy-এর সঙ্গে ফল যাচাই করুন। Final format-এ keyboard-only user task complete করতে পারে কি না দেখুন।" },
-        { "t": "cta", "tool": "pdf-to-excel", "x": "Data table PDF থেকে export করে structure ও reading order যাচাই করুন।" }
+        {"t":"p","x":"PDF থেকে অন্য format তৈরি করলেই accessibility নিশ্চিত হয় না। Screen reader-এর reading order, heading hierarchy, link text, table header, image alternative text এবং keyboard access আলাদাভাবে পরীক্ষা করতে হয়। PDF tagged থাকলে কিছু structure পাওয়া যেতে পারে, কিন্তু export tool তা সবসময় ধরে রাখতে পারে না। Source document সম্ভব হলে semantic HTML বা properly structured Word-এ পুনর্গঠন করুন।"},
+        {"t":"h2","x":"PDF structure পরীক্ষা"},
+        {"t":"p","x":"Heading tag, reading order, document language, table semantics ও alt text আছে কি না দেখুন। Scanned page হলে OCR text layer লাগতে পারে। OCR output-এ বাংলা character, number ও punctuation যাচাই করুন। Image-based chart-এর text summary আলাদাভাবে লিখুন।"},
+        {"t":"h2","x":"Target format নির্বাচন"},
+        {"t":"p","x":"Web publishing-এর জন্য semantic HTML responsive এবং screen reader friendly হতে পারে। Editable collaboration-এ structured DOCX সুবিধা দেয়। Data table হলে spreadsheet ব্যবহার করুন, তবে header ও data type ঠিক রাখুন। Print layout অপরিহার্য হলে tagged PDF বজায় রেখে accessibility checker চালান।"},
+        {"t":"h2","x":"User test ও version control"},
+        {"t":"p","x":"Keyboard navigation, zoom এবং screen reader দিয়ে target format পরীক্ষা করুন। Image-only text, colour-only meaning ও ambiguous link label সংশোধন করুন। Original PDF, converted source এবং accessible output-এর version আলাদা রাখুন। প্রতিষ্ঠানের accessibility standard ও স্থানীয় বিধি অনুসরণ করুন; automated checker একাই compliance নিশ্চিত করে না।"},
+        {"t":"p","x":"Alt text সংক্ষিপ্ত কিন্তু অর্থবহ রাখুন, এবং decorative image screen reader থেকে hide করুন। Converted output-এর contrast ও zoom behaviour পরীক্ষা করুন। Disability accommodation-এর formal requirement থাকলে accessibility specialist বা organization policy-এর সঙ্গে ফল যাচাই করুন। Final format-এ keyboard-only user task complete করতে পারে কি না দেখুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"pdf-to-excel","x":"Data table PDF থেকে export করে structure ও reading order যাচাই করুন।"}
       ]
     },
     {
@@ -129,20 +129,20 @@
       "description": "Print QR code-এর contrast, quiet zone, size ও destination পরীক্ষা করুন। বাস্তব printer ও phone দিয়ে scan test করুন।",
       "metaDescription": "Print QR code-এর contrast, quiet zone, size ও destination পরীক্ষা করুন। বাস্তব printer ও phone দিয়ে scan test করুন।",
       "faqs": [
-        { "q": "QR code-এর minimum print size কত?", "a": "Scan distance, error correction ও printer quality-র ওপর নির্ভর করে। বাস্তব sample পরীক্ষা করুন।" },
-        { "q": "রঙিন QR code scan হয়?", "a": "হতে পারে, তবে foreground ও background-এর contrast যথেষ্ট থাকা জরুরি।" },
-        { "q": "Print-এর আগে কী test করব?", "a": "Actual print থেকে একাধিক phone দিয়ে destination scan করুন এবং URL ঠিক কি না দেখুন।" }
+        {"q":"QR code-এর minimum print size কত?","a":"Scan distance, error correction ও printer quality-র ওপর নির্ভর করে। বাস্তব sample পরীক্ষা করুন।"},
+        {"q":"রঙিন QR code scan হয়?","a":"হতে পারে, তবে foreground ও background-এর contrast যথেষ্ট থাকা জরুরি।"},
+        {"q":"Print-এর আগে কী test করব?","a":"Actual print থেকে একাধিক phone দিয়ে destination scan করুন এবং URL ঠিক কি না দেখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "QR code কাগজে থাকলে reader-কে camera দিয়ে scan করে link বা তথ্য খুলতে হয়। Screen-এ বড় দেখালেও print-এ ছোট, blurry বা low-contrast হলে scan ব্যর্থ হতে পারে। Destination URL স্থিতিশীল ও সঠিক কি না আগে পরীক্ষা করুন। তারপর print dimension, printer resolution, paper finish এবং viewing distance অনুযায়ী code তৈরি করুন। QR-কে কেবল decorative pattern হিসেবে ব্যবহার করবেন না।" },
-        { "t": "h2", "x": "Contrast ও quiet zone" },
-        { "t": "p", "x": "Dark module ও light background-এর contrast বেশি রাখুন। চারপাশের quiet zone যেন text, border বা image দিয়ে ঢেকে না যায়। Inverted colour বা gradient scanner compatibility কমাতে পারে। Brand colour দরকার হলে black-and-white copy-ও test করুন।" },
-        { "t": "h2", "x": "Size ও print quality" },
-        { "t": "p", "x": "Flyer, poster ও business card-এ viewing distance ভিন্ন। দূরের poster-এ code বড় রাখুন। Printer-এর resolution ও paper texture দেখে pixelated edge এড়ান। PDF export-এ vector format পাওয়া গেলে ব্যবহার করুন; raster হলে যথেষ্ট resolution দিন।" },
-        { "t": "h2", "x": "বাস্তব scan test" },
-        { "t": "p", "x": "Final size-এ test print করে একাধিক phone camera দিয়ে scan করুন। Link browser-এ খোলে কি না, mobile page responsive কি না এবং redirect নিরাপদ কি না দেখুন। Campaign URL বদলাতে পারে, তাই code reprint লাগবে কি না আগেই পরিকল্পনা করুন।" },
-        { "t": "p", "x": "Event-এ code scan করতে হলে Wi-Fi ও landing page live আছে কি না আগে পরীক্ষা করুন। Printed QR-এর URL QR image-এর পাশে লেখা থাকলে attendee camera খুলতে না পারলেও ঠিকানা টাইপ করতে পারে। QR generator-এর output high quality-তে export করুন এবং page layout-এ code compress হচ্ছে কি না দেখুন। Scan-এর পরে landing page-এ required action সহজে খুঁজে পাওয়া উচিত।" },
-        { "t": "cta", "tool": "qr-code", "x": "QR code তৈরি করে actual print থেকে phone দিয়ে scan যাচাই করুন।" }
+        {"t":"p","x":"QR code কাগজে থাকলে reader-কে camera দিয়ে scan করে link বা তথ্য খুলতে হয়। Screen-এ বড় দেখালেও print-এ ছোট, blurry বা low-contrast হলে scan ব্যর্থ হতে পারে। Destination URL স্থিতিশীল ও সঠিক কি না আগে পরীক্ষা করুন। তারপর print dimension, printer resolution, paper finish এবং viewing distance অনুযায়ী code তৈরি করুন। QR-কে কেবল decorative pattern হিসেবে ব্যবহার করবেন না।"},
+        {"t":"h2","x":"Contrast ও quiet zone"},
+        {"t":"p","x":"Dark module ও light background-এর contrast বেশি রাখুন। চারপাশের quiet zone যেন text, border বা image দিয়ে ঢেকে না যায়। Inverted colour বা gradient scanner compatibility কমাতে পারে। Brand colour দরকার হলে black-and-white copy-ও test করুন।"},
+        {"t":"h2","x":"Size ও print quality"},
+        {"t":"p","x":"Flyer, poster ও business card-এ viewing distance ভিন্ন। দূরের poster-এ code বড় রাখুন। Printer-এর resolution ও paper texture দেখে pixelated edge এড়ান। PDF export-এ vector format পাওয়া গেলে ব্যবহার করুন; raster হলে যথেষ্ট resolution দিন।"},
+        {"t":"h2","x":"বাস্তব scan test"},
+        {"t":"p","x":"Final size-এ test print করে একাধিক phone camera দিয়ে scan করুন। Link browser-এ খোলে কি না, mobile page responsive কি না এবং redirect নিরাপদ কি না দেখুন। Campaign URL বদলাতে পারে, তাই code reprint লাগবে কি না আগেই পরিকল্পনা করুন।"},
+        {"t":"p","x":"Event-এ code scan করতে হলে Wi-Fi ও landing page live আছে কি না আগে পরীক্ষা করুন। Printed QR-এর URL QR image-এর পাশে লেখা থাকলে attendee camera খুলতে না পারলেও ঠিকানা টাইপ করতে পারে। QR generator-এর output high quality-তে export করুন এবং page layout-এ code compress হচ্ছে কি না দেখুন। Scan-এর পরে landing page-এ required action সহজে খুঁজে পাওয়া উচিত। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"qr-code","x":"QR code তৈরি করে actual print থেকে phone দিয়ে scan যাচাই করুন।"}
       ]
     },
     {
@@ -153,20 +153,20 @@
       "description": "Wi-Fi QR code দিয়ে অতিথিকে network-এ যুক্ত হতে দিন। Network name, encryption ও password privacy যাচাই করুন।",
       "metaDescription": "Wi-Fi QR code দিয়ে অতিথিকে network-এ যুক্ত হতে দিন। Network name, encryption ও password privacy যাচাই করুন।",
       "faqs": [
-        { "q": "Wi-Fi QR scan করলে কী হয়?", "a": "Compatible phone network name ও credential পড়ে join prompt দেখাতে পারে। Device behavior আলাদা হতে পারে।" },
-        { "q": "QR code-এ password থাকে?", "a": "Wi-Fi configuration QR-এ credential থাকতে পারে। তাই এটি public place-এ লাগালে network security বিবেচনা করুন।" },
-        { "q": "Guest network ব্যবহার কেন ভালো?", "a": "Guest network visitor device-কে internal device থেকে আলাদা রাখতে সহায়তা করতে পারে। Router policy দেখুন।" }
+        {"q":"Wi-Fi QR scan করলে কী হয়?","a":"Compatible phone network name ও credential পড়ে join prompt দেখাতে পারে। Device behavior আলাদা হতে পারে।"},
+        {"q":"QR code-এ password থাকে?","a":"Wi-Fi configuration QR-এ credential থাকতে পারে। তাই এটি public place-এ লাগালে network security বিবেচনা করুন।"},
+        {"q":"Guest network ব্যবহার কেন ভালো?","a":"Guest network visitor device-কে internal device থেকে আলাদা রাখতে সহায়তা করতে পারে। Router policy দেখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Wi-Fi QR code guest-কে network name ও password হাতে টাইপ না করে join করতে সাহায্য করে। কিছু phone camera QR থেকে Wi-Fi configuration চিনে network prompt দেখায়। এই code-এ network credential থাকতে পারে, তাই code যেখানে লাগাবেন তার access বিবেচনা করুন। অতিথিদের জন্য আলাদা guest network ব্যবহার করা অনেক home ও business-এ নিরাপদ পছন্দ হতে পারে; router vendor-এর নির্দেশনা দেখুন।" },
-        { "t": "h2", "x": "Network তথ্য নিশ্চিত" },
-        { "t": "p", "x": "SSID হুবহু লিখুন, hidden network হলে option বেছে নিন এবং encryption type router setting-এর সঙ্গে মেলান। Password-এ special character থাকলে generator সেগুলো ঠিকভাবে encode করছে কি না পরীক্ষা করুন। ভুল তথ্য থাকলে QR দেখতে ঠিক হলেও connection হবে না।" },
-        { "t": "h2", "x": "Credential privacy" },
-        { "t": "p", "x": "QR code-এ password থাকতে পারে বলে lobby, public social media বা অনিয়ন্ত্রিত printer-এ সাবধানে দিন। Internal network-এর বদলে guest SSID তৈরি করুন এবং router-এ guest isolation বা expiry option আছে কি না দেখুন। Password বদলালে printed code নতুন করে বানাতে হবে।" },
-        { "t": "h2", "x": "Print ও device test" },
-        { "t": "p", "x": "Final size-এ print করে iPhone ও Android device দিয়ে test করুন। Join prompt-এ সঠিক network name আসে কি না দেখুন। Paper fade বা glare scan বাধা দিচ্ছে কি না পরীক্ষা করুন। Code-এর পাশে network-এর নাম লিখলে user ভুল QR বেছে নেয় না।" },
-        { "t": "p", "x": "Guest network-এর password নিয়মিত rotate হলে handout-এর দায়িত্বপ্রাপ্ত person নির্ধারণ করুন। নতুন copy distribute করার পরে পুরনো print সংগ্রহ করুন। Router firmware এবং guest isolation setting-ও সময়মতো review করুন; QR handout network security configuration-এর বিকল্প নয়। Staff-কে expiry বা revocation process বুঝিয়ে দিন এবং পরিবর্তনের record রাখুন। Public notice board নিয়মিত পরিদর্শন করুন।" },
-        { "t": "cta", "tool": "qr-code", "x": "Wi-Fi QR তৈরি করে test device দিয়ে join flow পরীক্ষা করুন।" }
+        {"t":"p","x":"Wi-Fi QR code guest-কে network name ও password হাতে টাইপ না করে join করতে সাহায্য করে। কিছু phone camera QR থেকে Wi-Fi configuration চিনে network prompt দেখায়। এই code-এ network credential থাকতে পারে, তাই code যেখানে লাগাবেন তার access বিবেচনা করুন। অতিথিদের জন্য আলাদা guest network ব্যবহার করা অনেক home ও business-এ নিরাপদ পছন্দ হতে পারে; router vendor-এর নির্দেশনা দেখুন।"},
+        {"t":"h2","x":"Network তথ্য নিশ্চিত"},
+        {"t":"p","x":"SSID হুবহু লিখুন, hidden network হলে option বেছে নিন এবং encryption type router setting-এর সঙ্গে মেলান। Password-এ special character থাকলে generator সেগুলো ঠিকভাবে encode করছে কি না পরীক্ষা করুন। ভুল তথ্য থাকলে QR দেখতে ঠিক হলেও connection হবে না।"},
+        {"t":"h2","x":"Credential privacy"},
+        {"t":"p","x":"QR code-এ password থাকতে পারে বলে lobby, public social media বা অনিয়ন্ত্রিত printer-এ সাবধানে দিন। Internal network-এর বদলে guest SSID তৈরি করুন এবং router-এ guest isolation বা expiry option আছে কি না দেখুন। Password বদলালে printed code নতুন করে বানাতে হবে।"},
+        {"t":"h2","x":"Print ও device test"},
+        {"t":"p","x":"Final size-এ print করে iPhone ও Android device দিয়ে test করুন। Join prompt-এ সঠিক network name আসে কি না দেখুন। Paper fade বা glare scan বাধা দিচ্ছে কি না পরীক্ষা করুন। Code-এর পাশে network-এর নাম লিখলে user ভুল QR বেছে নেয় না।"},
+        {"t":"p","x":"Guest network-এর password নিয়মিত rotate হলে handout-এর দায়িত্বপ্রাপ্ত person নির্ধারণ করুন। নতুন copy distribute করার পরে পুরনো print সংগ্রহ করুন। Router firmware এবং guest isolation setting-ও সময়মতো review করুন; QR handout network security configuration-এর বিকল্প নয়। Staff-কে expiry বা revocation process বুঝিয়ে দিন এবং পরিবর্তনের record রাখুন। Public notice board নিয়মিত পরিদর্শন করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"qr-code","x":"Wi-Fi QR তৈরি করে test device দিয়ে join flow পরীক্ষা করুন।"}
       ]
     },
     {
@@ -177,20 +177,20 @@
       "description": "Scan distance, module density, print resolution ও quiet zone ধরে QR size নির্ধারণ করুন। Final dimension-এ একাধিক ফোনে test করুন।",
       "metaDescription": "Scan distance, module density, print resolution ও quiet zone ধরে QR size নির্ধারণ করুন। Final dimension-এ একাধিক ফোনে test করুন।",
       "faqs": [
-        { "q": "একটি universal QR size আছে?", "a": "না। Scan distance, code complexity, paper ও camera অনুযায়ী প্রয়োজনীয় size বদলায়।" },
-        { "q": "QR code বড় করলে সবসময় scan ভালো হবে?", "a": "সাধারণত সহজ হয়, তবে contrast, focus, quiet zone এবং print clarity-ও দরকার।" },
-        { "q": "প্রিন্টে quiet zone কী?", "a": "QR-এর চারপাশের ফাঁকা border, যা scanner-কে code boundary চিনতে সাহায্য করে।" }
+        {"q":"একটি universal QR size আছে?","a":"না। Scan distance, code complexity, paper ও camera অনুযায়ী প্রয়োজনীয় size বদলায়।"},
+        {"q":"QR code বড় করলে সবসময় scan ভালো হবে?","a":"সাধারণত সহজ হয়, তবে contrast, focus, quiet zone এবং print clarity-ও দরকার।"},
+        {"q":"প্রিন্টে quiet zone কী?","a":"QR-এর চারপাশের ফাঁকা border, যা scanner-কে code boundary চিনতে সাহায্য করে।"}
       ],
       "body": [
-        { "t": "p", "x": "QR code-এর জন্য একটিমাত্র print size সব কাজে উপযুক্ত নয়। Business card হাতের কাছে থাকে, কিন্তু event poster দূর থেকে scan করতে হয়। Code-এর module count বেশি হলে একই physical size-এ প্রতিটি square ছোট হয়। তাই scan distance, camera, print resolution, contrast এবং quiet zone একসঙ্গে বিবেচনা করুন। Design শেষ মনে হলেও actual size-এ proof না দেখে mass print দেবেন না।" },
-        { "t": "h2", "x": "Distance ও code complexity" },
-        { "t": "p", "x": "দূর থেকে scan করতে হলে code বড় এবং destination data সংক্ষিপ্ত রাখুন। Long URL code density বাড়াতে পারে। URL shortener ব্যবহার করলে domain বিশ্বস্ত ও স্থিতিশীল কি না যাচাই করুন। QR-এর পাশে short human-readable link দিলে camera access না থাকলেও user যেতে পারে।" },
-        { "t": "h2", "x": "Print dimension ও quiet zone" },
-        { "t": "p", "x": "Layout software-এ QR-এর final width ও height মাপুন। চারপাশে blank space রাখুন এবং border বা text দিয়ে quiet zone ঢাকবেন না। Low-resolution screenshot stretch করলে edge ঝাপসা হয়; original high-resolution বা vector output নিন। Glossy paper glare scan কমাতে পারে।" },
-        { "t": "h2", "x": "Proof এবং scan test" },
-        { "t": "p", "x": "একটি copy actual paper-এ print করে বিভিন্ন angle ও phone camera দিয়ে test করুন। স্বাভাবিক scan distance-এ code দ্রুত detect হয় কি না দেখুন। Code resized বা cropped হলে পুনরায় test করুন। Destination link, language, mobile layout ও redirect ঠিক আছে কি না শেষবার যাচাই করুন।" },
-        { "t": "p", "x": "Bleed ও trim-এর কারণে final design crop হলে quiet zone ছোট হয়ে যেতে পারে। Printer mark থাকলেও QR edge যেন cut line-এর কাছে না পড়ে। Print vendor-এর proof-এ পুরো code square এবং clear border দেখা যাচ্ছে কি না অনুমোদনের আগে পরীক্ষা করুন।" },
-        { "t": "cta", "tool": "qr-code", "x": "QR dimension নির্ধারণ করে actual-size print থেকে scan test করুন।" }
+        {"t":"p","x":"QR code-এর জন্য একটিমাত্র print size সব কাজে উপযুক্ত নয়। Business card হাতের কাছে থাকে, কিন্তু event poster দূর থেকে scan করতে হয়। Code-এর module count বেশি হলে একই physical size-এ প্রতিটি square ছোট হয়। তাই scan distance, camera, print resolution, contrast এবং quiet zone একসঙ্গে বিবেচনা করুন। Design শেষ মনে হলেও actual size-এ proof না দেখে mass print দেবেন না।"},
+        {"t":"h2","x":"Distance ও code complexity"},
+        {"t":"p","x":"দূর থেকে scan করতে হলে code বড় এবং destination data সংক্ষিপ্ত রাখুন। Long URL code density বাড়াতে পারে। URL shortener ব্যবহার করলে domain বিশ্বস্ত ও স্থিতিশীল কি না যাচাই করুন। QR-এর পাশে short human-readable link দিলে camera access না থাকলেও user যেতে পারে।"},
+        {"t":"h2","x":"Print dimension ও quiet zone"},
+        {"t":"p","x":"Layout software-এ QR-এর final width ও height মাপুন। চারপাশে blank space রাখুন এবং border বা text দিয়ে quiet zone ঢাকবেন না। Low-resolution screenshot stretch করলে edge ঝাপসা হয়; original high-resolution বা vector output নিন। Glossy paper glare scan কমাতে পারে।"},
+        {"t":"h2","x":"Proof এবং scan test"},
+        {"t":"p","x":"একটি copy actual paper-এ print করে বিভিন্ন angle ও phone camera দিয়ে test করুন। স্বাভাবিক scan distance-এ code দ্রুত detect হয় কি না দেখুন। Code resized বা cropped হলে পুনরায় test করুন। Destination link, language, mobile layout ও redirect ঠিক আছে কি না শেষবার যাচাই করুন।"},
+        {"t":"p","x":"Bleed ও trim-এর কারণে final design crop হলে quiet zone ছোট হয়ে যেতে পারে। Printer mark থাকলেও QR edge যেন cut line-এর কাছে না পড়ে। Print vendor-এর proof-এ পুরো code square এবং clear border দেখা যাচ্ছে কি না অনুমোদনের আগে পরীক্ষা করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"qr-code","x":"QR dimension নির্ধারণ করে actual-size print থেকে scan test করুন।"}
       ]
     },
     {
@@ -201,20 +201,20 @@
       "description": "Card বা flyer-এ QR code বসিয়ে margin, scan size, URL destination ও fallback text যাচাই করুন। Design-এর readability বজায় রাখুন।",
       "metaDescription": "Card বা flyer-এ QR code বসিয়ে margin, scan size, URL destination ও fallback text যাচাই করুন। Design-এর readability বজায় রাখুন।",
       "faqs": [
-        { "q": "Business card-এ QR code খুব ছোট হতে পারে?", "a": "হতে পারে। Card-এর actual print-এ একাধিক phone দিয়ে scan করে size যাচাই করুন।" },
-        { "q": "QR-এর পাশে কী লেখা রাখব?", "a": "একটি সংক্ষিপ্ত call to action ও প্রয়োজনে human-readable URL দিন।" },
-        { "q": "Flyer-এ QR link বদলালে?", "a": "Static QR বদলানো যায় না। Redirect domain ব্যবহারে destination update সম্ভব হলেও provider নির্ভরতা বিবেচনা করুন।" }
+        {"q":"Business card-এ QR code খুব ছোট হতে পারে?","a":"হতে পারে। Card-এর actual print-এ একাধিক phone দিয়ে scan করে size যাচাই করুন।"},
+        {"q":"QR-এর পাশে কী লেখা রাখব?","a":"একটি সংক্ষিপ্ত call to action ও প্রয়োজনে human-readable URL দিন।"},
+        {"q":"Flyer-এ QR link বদলালে?","a":"Static QR বদলানো যায় না। Redirect domain ব্যবহারে destination update সম্ভব হলেও provider নির্ভরতা বিবেচনা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Business card-এ QR code contact page, portfolio বা booking form খুলতে পারে। Flyer-এ event details বা signup link দেওয়া যায়। Code তৈরি করার আগে destination mobile-এ ঠিকভাবে চলে কি না দেখুন এবং URL স্থায়ী রাখুন। Card ছোট হওয়ায় QR-কে অতিরিক্ত ক্ষুদ্র করলে scan ব্যর্থ হতে পারে। Design margin, text এবং code-এর quiet zone একসঙ্গে বিবেচনা করুন।" },
-        { "t": "h2", "x": "Destination ও call to action" },
-        { "t": "p", "x": "QR-এর পাশে Scan to view portfolio-এর মতো পরিষ্কার নির্দেশনা দিন। Link HTTPS, mobile-friendly এবং ভুল redirect ছাড়া কাজ করে কি না দেখুন। Business card বদলানোর সম্ভাবনা থাকলে durable landing page ব্যবহার করুন। QR-এর পাশাপাশি short URL থাকলে user manualভাবে লিখতে পারে।" },
-        { "t": "h2", "x": "Layout, contrast ও size" },
-        { "t": "p", "x": "Code-কে trim edge-এর খুব কাছে রাখবেন না। Dark foreground ও light background রাখুন। Logo overlay করলে error correction ও scan reliability test করুন। Print file-এ QR vector বা উচ্চ resolution-এ export করুন। Card-এর actual physical size-এ proof তৈরি করুন।" },
-        { "t": "h2", "x": "Print proof ও maintenance" },
-        { "t": "p", "x": "একাধিক phone ও camera app দিয়ে printed card scan করুন। Link destination এবং page load test করুন। Reprint-এর আগে পুরনো QR campaign বা page সরানো হয়েছে কি না দেখুন। Flyer event শেষে outdated হলে তুলে ফেলুন বা destination-এ updated status দিন।" },
-        { "t": "p", "x": "Card-এর একপাশে contact text এবং অন্যপাশে QR রাখলে scan area বড় করা যায়। User-এর কাছে QR scan permission না থাকলেও short URL থাকবে। Rebrand বা campaign update হলে পুরনো business card এখনও ব্যবহার হচ্ছে কি না বিবেচনা করে destination সচল রাখুন। Outdated page-এ redirect বা updated contact detail দিন।" },
-        { "t": "cta", "tool": "qr-code", "x": "Business card বা flyer-এর QR তৈরি করে printed proof-এ scan করুন।" }
+        {"t":"p","x":"Business card-এ QR code contact page, portfolio বা booking form খুলতে পারে। Flyer-এ event details বা signup link দেওয়া যায়। Code তৈরি করার আগে destination mobile-এ ঠিকভাবে চলে কি না দেখুন এবং URL স্থায়ী রাখুন। Card ছোট হওয়ায় QR-কে অতিরিক্ত ক্ষুদ্র করলে scan ব্যর্থ হতে পারে। Design margin, text এবং code-এর quiet zone একসঙ্গে বিবেচনা করুন।"},
+        {"t":"h2","x":"Destination ও call to action"},
+        {"t":"p","x":"QR-এর পাশে Scan to view portfolio-এর মতো পরিষ্কার নির্দেশনা দিন। Link HTTPS, mobile-friendly এবং ভুল redirect ছাড়া কাজ করে কি না দেখুন। Business card বদলানোর সম্ভাবনা থাকলে durable landing page ব্যবহার করুন। QR-এর পাশাপাশি short URL থাকলে user manualভাবে লিখতে পারে।"},
+        {"t":"h2","x":"Layout, contrast ও size"},
+        {"t":"p","x":"Code-কে trim edge-এর খুব কাছে রাখবেন না। Dark foreground ও light background রাখুন। Logo overlay করলে error correction ও scan reliability test করুন। Print file-এ QR vector বা উচ্চ resolution-এ export করুন। Card-এর actual physical size-এ proof তৈরি করুন।"},
+        {"t":"h2","x":"Print proof ও maintenance"},
+        {"t":"p","x":"একাধিক phone ও camera app দিয়ে printed card scan করুন। Link destination এবং page load test করুন। Reprint-এর আগে পুরনো QR campaign বা page সরানো হয়েছে কি না দেখুন। Flyer event শেষে outdated হলে তুলে ফেলুন বা destination-এ updated status দিন।"},
+        {"t":"p","x":"Card-এর একপাশে contact text এবং অন্যপাশে QR রাখলে scan area বড় করা যায়। User-এর কাছে QR scan permission না থাকলেও short URL থাকবে। Rebrand বা campaign update হলে পুরনো business card এখনও ব্যবহার হচ্ছে কি না বিবেচনা করে destination সচল রাখুন। Outdated page-এ redirect বা updated contact detail দিন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"qr-code","x":"Business card বা flyer-এর QR তৈরি করে printed proof-এ scan করুন।"}
       ]
     },
     {
@@ -225,20 +225,20 @@
       "description": "Guest Wi-Fi QR code-সহ handout তৈরি করে network name, connection steps, print clarity ও password exposure পরীক্ষা করুন।",
       "metaDescription": "Guest Wi-Fi QR code-সহ handout তৈরি করে network name, connection steps, print clarity ও password exposure পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Wi-Fi handout public জায়গায় রাখা যাবে?", "a": "শুধু guest network-এর জন্য এবং আপনার security policy অনুমতি দিলে রাখুন।" },
-        { "q": "QR scan না হলে কীভাবে connect করবে?", "a": "Handout-এ SSID ও password দেখানোর সিদ্ধান্ত policy অনুযায়ী নিন; এতে credential exposure বাড়তে পারে।" },
-        { "q": "Password বদলালে handout কী করব?", "a": "পুরনো copy সরিয়ে নতুন QR ও updated instructions print করুন।" }
+        {"q":"Wi-Fi handout public জায়গায় রাখা যাবে?","a":"শুধু guest network-এর জন্য এবং আপনার security policy অনুমতি দিলে রাখুন।"},
+        {"q":"QR scan না হলে কীভাবে connect করবে?","a":"Handout-এ SSID ও password দেখানোর সিদ্ধান্ত policy অনুযায়ী নিন; এতে credential exposure বাড়তে পারে।"},
+        {"q":"Password বদলালে handout কী করব?","a":"পুরনো copy সরিয়ে নতুন QR ও updated instructions print করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Office, event space বা guest room-এ Wi-Fi QR code-সহ handout visitor-কে network-এ যুক্ত হতে সাহায্য করতে পারে। Handout-এ network-এর নাম, scan instruction এবং সমস্যা হলে contact point রাখা যায়। QR configuration-এ password থাকতে পারে, তাই এটি শুধু guest network-এর জন্য ব্যবহার করুন। Public counter-এ রাখা হবে কি না তা IT বা network owner-এর সঙ্গে ঠিক করুন।" },
-        { "t": "h2", "x": "Guest network প্রস্তুত" },
-        { "t": "p", "x": "Router-এ visitor-এর জন্য আলাদা SSID তৈরি করুন। Guest device internal printer, server বা management interface দেখতে পায় কি না administrator-এর সঙ্গে যাচাই করুন। Network password বদলালে QR পুনরায় তৈরি করতে হবে। Temporary event হলে access schedule বা expiry plan নির্ধারণ করুন।" },
-        { "t": "h2", "x": "Handout content ও design" },
-        { "t": "p", "x": "Network name বড় অক্ষরে লিখুন এবং QR-এর পাশে স্পষ্ট Scan to join নির্দেশ দিন। QR code যথেষ্ট বড়, high contrast এবং quiet zone-সহ রাখুন। Phone camera না চললে কার সঙ্গে যোগাযোগ করবে তা জানান। SSID ও credential print করা policy-তে অনুমোদিত কি না নিশ্চিত করুন।" },
-        { "t": "h2", "x": "Printed test ও removal" },
-        { "t": "p", "x": "Actual-size copy print করে বিভিন্ন mobile device-এ scan করুন। Visitor prompt সঠিক network দেখায় কি না পরীক্ষা করুন। Room বা event শেষ হলে পুরনো handout সরান। Password update হলে outdated paper copy destroy করুন এবং নতুন version date দিয়ে চিহ্নিত করুন।" },
-        { "t": "p", "x": "Handout-এ print date বা version রাখলে staff পুরনো কপি শনাক্ত করতে পারে। QR code-এর পাশে network name মিলিয়ে দিন, তবে password public print করার আগে security owner-এর অনুমতি নিন। অতিথিকে network terms বা acceptable use notice দেখাতে হলে সেটি QR destination বা paper-এ যুক্ত করুন।" },
-        { "t": "cta", "tool": "qr-code", "x": "Wi-Fi QR তৈরি করে guest handout print ও device-এ test করুন।" }
+        {"t":"p","x":"Office, event space বা guest room-এ Wi-Fi QR code-সহ handout visitor-কে network-এ যুক্ত হতে সাহায্য করতে পারে। Handout-এ network-এর নাম, scan instruction এবং সমস্যা হলে contact point রাখা যায়। QR configuration-এ password থাকতে পারে, তাই এটি শুধু guest network-এর জন্য ব্যবহার করুন। Public counter-এ রাখা হবে কি না তা IT বা network owner-এর সঙ্গে ঠিক করুন।"},
+        {"t":"h2","x":"Guest network প্রস্তুত"},
+        {"t":"p","x":"Router-এ visitor-এর জন্য আলাদা SSID তৈরি করুন। Guest device internal printer, server বা management interface দেখতে পায় কি না administrator-এর সঙ্গে যাচাই করুন। Network password বদলালে QR পুনরায় তৈরি করতে হবে। Temporary event হলে access schedule বা expiry plan নির্ধারণ করুন।"},
+        {"t":"h2","x":"Handout content ও design"},
+        {"t":"p","x":"Network name বড় অক্ষরে লিখুন এবং QR-এর পাশে স্পষ্ট Scan to join নির্দেশ দিন। QR code যথেষ্ট বড়, high contrast এবং quiet zone-সহ রাখুন। Phone camera না চললে কার সঙ্গে যোগাযোগ করবে তা জানান। SSID ও credential print করা policy-তে অনুমোদিত কি না নিশ্চিত করুন।"},
+        {"t":"h2","x":"Printed test ও removal"},
+        {"t":"p","x":"Actual-size copy print করে বিভিন্ন mobile device-এ scan করুন। Visitor prompt সঠিক network দেখায় কি না পরীক্ষা করুন। Room বা event শেষ হলে পুরনো handout সরান। Password update হলে outdated paper copy destroy করুন এবং নতুন version date দিয়ে চিহ্নিত করুন।"},
+        {"t":"p","x":"Handout-এ print date বা version রাখলে staff পুরনো কপি শনাক্ত করতে পারে। QR code-এর পাশে network name মিলিয়ে দিন, তবে password public print করার আগে security owner-এর অনুমতি নিন। অতিথিকে network terms বা acceptable use notice দেখাতে হলে সেটি QR destination বা paper-এ যুক্ত করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"qr-code","x":"Wi-Fi QR তৈরি করে guest handout print ও device-এ test করুন।"}
       ]
     }
   ]

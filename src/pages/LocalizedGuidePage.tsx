@@ -1,8 +1,9 @@
-import { Link, Navigate, useParams } from 'react-router-dom'
-import { guideAlternates, guidePath, hubAlternates } from '../content/localizedGuides'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
+import { LANGUAGE_PACKS, guidePath } from '../content/localizedGuidesFull'
 import type { LanguagePack } from '../content/localizedGuides'
 import { breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useTool } from '../features/pdf/useTools'
+import { TOOLS } from '../features/pdf/toolsMeta'
 import type { Block } from '../content/types'
 import '../content/blog.css'
 
@@ -17,7 +18,7 @@ function InlineCopy({ text }: { text: string }) {
     if (match.index > last) nodes.push(text.slice(last, match.index))
     if (match[1] !== undefined) nodes.push(<strong key={key++}>{match[1]}</strong>)
     else if (match[2] !== undefined && match[3] !== undefined) nodes.push(match[3].startsWith('/')
-      ? <Link key={key++} to={match[3]}>{match[2]}</Link>
+      ? <Link key={key++} to={contentLinkTarget(match[3])}>{match[2]}</Link>
       : <a key={key++} href={match[3]} target="_blank" rel="noopener noreferrer">{match[2]}</a>)
     else if (match[4] !== undefined) nodes.push(<code key={key++} className="inline">{match[4]}</code>)
     last = links.lastIndex
@@ -40,20 +41,52 @@ function LocalizedBlock({ block }: { block: Block }) {
     case 'warn': return <aside className={`callout ${block.t}`}><p><InlineCopy text={block.x} /></p></aside>
     case 'quote': return <blockquote><InlineCopy text={block.x} /></blockquote>
     case 'code': return <pre className="code">{block.x}</pre>
-    case 'cta': return <p><InlineCopy text={block.x} /> <Link to={`/tools/${block.tool}`}>{block.tool}</Link></p>
+    case 'cta': return <p><InlineCopy text={block.x} /> <Link to={localizedToolPath(block.tool)}>{block.tool}</Link></p>
   }
 }
 
 const toolDirectoryLabel: Record<string, string> = { es: 'Todas las herramientas', 'pt-BR': 'Todas as ferramentas', hi: 'सभी टूल', ar: 'كل الأدوات', bn: 'সব টুল', vi: 'Tất cả công cụ', 'zh-CN': '查看所有工具' }
-const localizedToolPath = (slug: string) => slug === 'website-to-pdf' ? '/print' : `/tools/${slug}`
+const localizedToolPath = (slug: string) => {
+  if (slug === 'website-to-pdf') return '/print'
+  const aliases: Record<string, string> = { 'image-convert': 'image-converter', 'heic-to-jpg': 'image-converter', zip: 'create-zip', unzip: 'extract-zip' }
+  return `/tools/${aliases[slug] || slug}`
+}
+
+function contentLinkTarget(href: string): string {
+  const knownTools = new Set(TOOLS.map((tool) => tool.slug))
+  const localizedGuide = href.match(/^\/([^/]+)\/([^/]+)\/([^/]+)\/?$/)
+  if (localizedGuide) {
+    const pack = LANGUAGE_PACKS.find((language) => language.locale.toLowerCase() === localizedGuide[1].toLowerCase() && language.hub === localizedGuide[2])
+    if (pack) {
+      const imageSlug = /^(?:sowar-ila-pdf|chobi-theke-pdf|convertir-fotos-a-pdf|photo-se-pdf-kaise-banaye|converter-fotos-para-pdf|chuyen-anh-sang-pdf|tupian-zhuan-pdf)$/.test(localizedGuide[3])
+      const guide = pack.guides.find((item) => item.slug === localizedGuide[3]) || (imageSlug ? pack.guides.find((item) => item.topic === 'images-to-pdf') : undefined)
+      return guide ? guidePath(pack, guide.slug) : guidePath(pack)
+    }
+  }
+  if (href.startsWith('/tools/')) return knownTools.has(href.slice('/tools/'.length).replace(/\/$/, '')) ? href : '/tools'
+  if (href.startsWith('/टूल्स/')) return '/tools'
+  if (href.startsWith('/ब्लॉग/')) return '/blog'
+  if (href.startsWith('/एक्सटेंशन/')) return '/extensions/chrome'
+  if (href === '/प्रिंट' || href === '/print') return '/print'
+  if (href === '/वेबसाइट-बटन' || href === '/botão do site') return '/website-button'
+  if (href.startsWith('/मूल्य')) return '/pricing'
+  if (href.startsWith('/गोपनीयता')) return '/privacy'
+  if (href.trim().startsWith('/ ')) return '/privacy'
+  return href
+}
 
 export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
-  const { locale = '', hub = '', slug } = useParams()
-  const matchingRoute = pack.locale.toLowerCase() === locale.toLowerCase() && pack.hub === hub
+  const { slug } = useParams()
+  const location = useLocation()
+  const hubPath = guidePath(pack)
+  const matchingRoute = location.pathname === hubPath || location.pathname.startsWith(`${hubPath}/`)
   const guide = pack?.guides.find((item) => item.slug === slug)
-  const path = pack ? guidePath(pack, guide?.slug) : `/${locale}/${hub}${slug ? `/${slug}` : ''}`
+  const path = guidePath(pack, guide?.slug)
   const tool = useTool(guide?.tool || '')
-  const alternates = guide ? guideAlternates(guide.topic, SITE_URL) : pack ? hubAlternates(SITE_URL) : []
+  const alternates = LANGUAGE_PACKS.map((language) => {
+    const equivalent = guide && language.guides.find((item) => item.topic === guide.topic)
+    return { lang: language.locale, url: `${SITE_URL}${guide ? guidePath(language, equivalent?.slug) : guidePath(language)}` }
+  })
 
   useSeo({
     title: guide?.metaTitle || pack?.hubTitle || 'Not found',

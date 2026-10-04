@@ -9,20 +9,20 @@
       "description": "Recipe page থেকে মূল ingredients ও instructions রেখে বিজ্ঞাপন ও অপ্রাসঙ্গিক অংশ বাদ দিন। Print preview-তে পরিমাণ ও ধাপ যাচাই করুন।",
       "metaDescription": "Recipe page থেকে মূল ingredients ও instructions রেখে বিজ্ঞাপন ও অপ্রাসঙ্গিক অংশ বাদ দিন। Print preview-তে পরিমাণ ও ধাপ যাচাই করুন।",
       "faqs": [
-        { "q": "Recipe site-এর বিজ্ঞাপন ছাড়া প্রিন্ট করব কীভাবে?", "a": "Browser Reader বা clean-print feature ব্যবহার করে preview দেখুন; সব site-এ একইভাবে কাজ নাও করতে পারে।" },
-        { "q": "Ingredients কেন clean copy-তে নেই?", "a": "Recipe page dynamic বা structured হতে পারে। Print করার আগে ingredient list ও serving size মিলিয়ে নিন।" },
-        { "q": "Recipe PDF family-র সঙ্গে share করতে পারি?", "a": "ব্যক্তিগত use ও sharing-এর ক্ষেত্রে recipe site-এর copyright ও terms মেনে চলুন।" }
+        {"q":"Recipe site-এর বিজ্ঞাপন ছাড়া প্রিন্ট করব কীভাবে?","a":"Browser Reader বা clean-print feature ব্যবহার করে preview দেখুন; সব site-এ একইভাবে কাজ নাও করতে পারে।"},
+        {"q":"Ingredients কেন clean copy-তে নেই?","a":"Recipe page dynamic বা structured হতে পারে। Print করার আগে ingredient list ও serving size মিলিয়ে নিন।"},
+        {"q":"Recipe PDF family-র সঙ্গে share করতে পারি?","a":"ব্যক্তিগত use ও sharing-এর ক্ষেত্রে recipe site-এর copyright ও terms মেনে চলুন।"}
       ],
       "body": [
-        { "t": "p", "x": "অনেক recipe page-এ ব্যক্তিগত গল্প, newsletter prompt, ad এবং related recipe-এর কারণে মূল ingredients খুঁজতে সময় লাগে। পরিষ্কার কপি print করতে browser-এর Reader view, print stylesheet বা clean-page feature ব্যবহার করুন। তবে clean view-তে recipe card-এর structured তথ্য বাদ পড়তে পারে। প্রিন্টের আগে serving size, ingredients এবং oven temperature-এর মতো গুরুত্বপূর্ণ তথ্য মূল পৃষ্ঠার সঙ্গে তুলনা করুন।" },
-        { "t": "h2", "x": "Recipe অংশ শনাক্ত" },
-        { "t": "p", "x": "Recipe title-এর নিচে serving বা yield এবং prep time আছে কি না দেখুন। Ingredient-এর পরিমাণ, unit এবং instruction-এর ক্রম লিখে রাখুন। Page-এর গল্পে অতিরিক্ত tips বা ingredient substitution থাকলে রান্নার জন্য তা দরকার কি না ঠিক করুন। শুধু বিজ্ঞাপন বাদ দিতে গিয়ে recipe author-এর safety note বাদ দেবেন না।" },
-        { "t": "h2", "x": "Clean copy তৈরি ও preview" },
-        { "t": "p", "x": "PrintxPDF extension মূল content আলাদা করার চেষ্টা করতে পারে, কিন্তু সাইটের layout অনুযায়ী ফল বদলায়। Clean করার পরে ingredient list, numbered step, temperature এবং cook time পরীক্ষা করুন। Browser print dialog-এ scale ও margin ঠিক করুন। Recipe card page break-এর দুই পাশে ভাগ হয়ে গেলে font size বা paper setting বদলান।" },
-        { "t": "h2", "x": "রান্নাঘরে ব্যবহার" },
-        { "t": "p", "x": "Kitchen-এ কপি রাখলে page laminate বা protector-এ রাখা সুবিধাজনক হতে পারে। Original URL ও author-এর নাম ছোট note-এ রাখুন, যাতে পরে সংশোধিত recipe খুঁজে পাওয়া যায়। Personal use-এর বাইরে পুনঃপ্রকাশ বা mass distribution করার আগে site-এর permission দেখুন।" },
-        { "t": "p", "x": "Print copy রান্নাঘরে রাখলে recipe-তে লেখা allergen বা ingredient substitution সহজে চোখে পড়ার মতো করে রাখুন। কাগজের কপি পুরনো হলে date দেখে update করুন। মূল page-এর author credit বাদ দেবেন না, কারণ পরিচয় ও context পরে recipe যাচাই করতে কাজে লাগে।" },
-        { "t": "cta", "tool": "html-to-pdf", "x": "Recipe page পরিষ্কার করে ingredients ও ধাপ যাচাইয়ের পর print করুন।" }
+        {"t":"p","x":"অনেক recipe page-এ ব্যক্তিগত গল্প, newsletter prompt, ad এবং related recipe-এর কারণে মূল ingredients খুঁজতে সময় লাগে। পরিষ্কার কপি print করতে browser-এর Reader view, print stylesheet বা clean-page feature ব্যবহার করুন। তবে clean view-তে recipe card-এর structured তথ্য বাদ পড়তে পারে। প্রিন্টের আগে serving size, ingredients এবং oven temperature-এর মতো গুরুত্বপূর্ণ তথ্য মূল পৃষ্ঠার সঙ্গে তুলনা করুন।"},
+        {"t":"h2","x":"Recipe অংশ শনাক্ত"},
+        {"t":"p","x":"Recipe title-এর নিচে serving বা yield এবং prep time আছে কি না দেখুন। Ingredient-এর পরিমাণ, unit এবং instruction-এর ক্রম লিখে রাখুন। Page-এর গল্পে অতিরিক্ত tips বা ingredient substitution থাকলে রান্নার জন্য তা দরকার কি না ঠিক করুন। শুধু বিজ্ঞাপন বাদ দিতে গিয়ে recipe author-এর safety note বাদ দেবেন না।"},
+        {"t":"h2","x":"Clean copy তৈরি ও preview"},
+        {"t":"p","x":"PrintxPDF extension মূল content আলাদা করার চেষ্টা করতে পারে, কিন্তু সাইটের layout অনুযায়ী ফল বদলায়। Clean করার পরে ingredient list, numbered step, temperature এবং cook time পরীক্ষা করুন। Browser print dialog-এ scale ও margin ঠিক করুন। Recipe card page break-এর দুই পাশে ভাগ হয়ে গেলে font size বা paper setting বদলান।"},
+        {"t":"h2","x":"রান্নাঘরে ব্যবহার"},
+        {"t":"p","x":"Kitchen-এ কপি রাখলে page laminate বা protector-এ রাখা সুবিধাজনক হতে পারে। Original URL ও author-এর নাম ছোট note-এ রাখুন, যাতে পরে সংশোধিত recipe খুঁজে পাওয়া যায়। Personal use-এর বাইরে পুনঃপ্রকাশ বা mass distribution করার আগে site-এর permission দেখুন।"},
+        {"t":"p","x":"Print copy রান্নাঘরে রাখলে recipe-তে লেখা allergen বা ingredient substitution সহজে চোখে পড়ার মতো করে রাখুন। কাগজের কপি পুরনো হলে date দেখে update করুন। মূল page-এর author credit বাদ দেবেন না, কারণ পরিচয় ও context পরে recipe যাচাই করতে কাজে লাগে। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"html-to-pdf","x":"Recipe page পরিষ্কার করে ingredients ও ধাপ যাচাইয়ের পর print করুন।"}
       ]
     },
     {
@@ -33,20 +33,20 @@
       "description": "Recipe page থেকে ছবি বাদ দিয়ে ingredients ও instructions-সহ ছোট কপি তৈরি করুন। ধাপের ছবি গুরুত্বপূর্ণ কি না আগে যাচাই করুন।",
       "metaDescription": "Recipe page থেকে ছবি বাদ দিয়ে ingredients ও instructions-সহ ছোট কপি তৈরি করুন। ধাপের ছবি গুরুত্বপূর্ণ কি না আগে যাচাই করুন।",
       "faqs": [
-        { "q": "ছবি বাদ দিলে recipe steps থাকবে?", "a": "থাকতে পারে, তবে clean print-এর পরে সম্পূর্ণ instruction ও recipe card পরীক্ষা করুন।" },
-        { "q": "ছবির recipe step কি জরুরি?", "a": "Dough consistency বা decorating-এর মতো ধাপে ছবি সহায়ক হতে পারে, সেগুলো রাখার কথা বিবেচনা করুন।" },
-        { "q": "PDF করলে কি file ছোট হবে?", "a": "ছবি বাদ দিলে size কমতে পারে, তবে page layout ও print setting-ও প্রভাব ফেলে।" }
+        {"q":"ছবি বাদ দিলে recipe steps থাকবে?","a":"থাকতে পারে, তবে clean print-এর পরে সম্পূর্ণ instruction ও recipe card পরীক্ষা করুন।"},
+        {"q":"ছবির recipe step কি জরুরি?","a":"Dough consistency বা decorating-এর মতো ধাপে ছবি সহায়ক হতে পারে, সেগুলো রাখার কথা বিবেচনা করুন।"},
+        {"q":"PDF করলে কি file ছোট হবে?","a":"ছবি বাদ দিলে size কমতে পারে, তবে page layout ও print setting-ও প্রভাব ফেলে।"}
       ],
       "body": [
-        { "t": "p", "x": "Recipe page-এর বড় photograph সুন্দর হলেও kitchen copy-তে সবসময় দরকার হয় না। Print বা PDF-এ ছবি বাদ দিলে কালি ও page কম লাগতে পারে। তবে কিছু recipe-তে texture, dough stage, knife cut বা decoration ছবি দিয়ে বোঝানো হয়। কোন image বাদ দেবেন তা বেছে নেওয়ার আগে instruction-এর সঙ্গে মিলিয়ে দেখুন। Text-only copy-তেও ingredients, time এবং serving detail থাকতে হবে।" },
-        { "t": "h2", "x": "কোন ছবি রাখবেন" },
-        { "t": "p", "x": "Hero photo বাদ দিলেও ধাপে গুরুত্বপূর্ণ reference image রাখতে পারেন। Recipe site-এর step-by-step ছবি থাকলে কোনটি technique বোঝায় তা শনাক্ত করুন। Image বাদ পড়লে instruction-এ visual cue যথেষ্ট স্পষ্ট কি না পড়ুন। না হলে author-এর মূল recipe page bookmark করে রাখুন।" },
-        { "t": "h2", "x": "ছবি ছাড়া page layout" },
-        { "t": "p", "x": "Clean-page extension বা browser print preview দিয়ে image visibility কমানো যায়। Result-এ blank space বা awkward page break আছে কি না দেখুন। Scale, margin এবং font size এমন রাখুন যাতে রান্নার সময় দাঁড়িয়ে পড়া সহজ হয়। যদি PDF তৈরি করেন, page count এবং ingredient list-এর শেষে কাটা text পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Print এবং storage" },
-        { "t": "p", "x": "একটি test page print করে contrast ও font size দেখুন। Text-only copy কালি বাঁচাতে পারে, কিন্তু color-coded instruction থাকলে grayscale-এ অর্থ বদলাতে পারে। Recipe-এর title ও source URL রাখুন, যেন একই নামের recipe গুলিয়ে না যায়। Copyright এবং personal-use সীমা মেনে copy সংরক্ষণ করুন।" },
-        { "t": "p", "x": "Roughly কত কপি ছাপবেন তা ভেবে paper setting নিন। একাধিক recipe এক document-এ রাখলে divider বা page title দিয়ে আলাদা করুন। কপি kitchen-এ ব্যবহারের আগে একটি full recipe পড়ে দেখুন যাতে photo বাদ গেলেও কোনো measurement বা timing হারায়নি।" },
-        { "t": "cta", "tool": "html-to-pdf", "x": "ছবিহীন recipe copy তৈরি করে ingredients ও ধাপ print preview-তে দেখুন।" }
+        {"t":"p","x":"Recipe page-এর বড় photograph সুন্দর হলেও kitchen copy-তে সবসময় দরকার হয় না। Print বা PDF-এ ছবি বাদ দিলে কালি ও page কম লাগতে পারে। তবে কিছু recipe-তে texture, dough stage, knife cut বা decoration ছবি দিয়ে বোঝানো হয়। কোন image বাদ দেবেন তা বেছে নেওয়ার আগে instruction-এর সঙ্গে মিলিয়ে দেখুন। Text-only copy-তেও ingredients, time এবং serving detail থাকতে হবে।"},
+        {"t":"h2","x":"কোন ছবি রাখবেন"},
+        {"t":"p","x":"Hero photo বাদ দিলেও ধাপে গুরুত্বপূর্ণ reference image রাখতে পারেন। Recipe site-এর step-by-step ছবি থাকলে কোনটি technique বোঝায় তা শনাক্ত করুন। Image বাদ পড়লে instruction-এ visual cue যথেষ্ট স্পষ্ট কি না পড়ুন। না হলে author-এর মূল recipe page bookmark করে রাখুন।"},
+        {"t":"h2","x":"ছবি ছাড়া page layout"},
+        {"t":"p","x":"Clean-page extension বা browser print preview দিয়ে image visibility কমানো যায়। Result-এ blank space বা awkward page break আছে কি না দেখুন। Scale, margin এবং font size এমন রাখুন যাতে রান্নার সময় দাঁড়িয়ে পড়া সহজ হয়। যদি PDF তৈরি করেন, page count এবং ingredient list-এর শেষে কাটা text পরীক্ষা করুন।"},
+        {"t":"h2","x":"Print এবং storage"},
+        {"t":"p","x":"একটি test page print করে contrast ও font size দেখুন। Text-only copy কালি বাঁচাতে পারে, কিন্তু color-coded instruction থাকলে grayscale-এ অর্থ বদলাতে পারে। Recipe-এর title ও source URL রাখুন, যেন একই নামের recipe গুলিয়ে না যায়। Copyright এবং personal-use সীমা মেনে copy সংরক্ষণ করুন।"},
+        {"t":"p","x":"Roughly কত কপি ছাপবেন তা ভেবে paper setting নিন। একাধিক recipe এক document-এ রাখলে divider বা page title দিয়ে আলাদা করুন। কপি kitchen-এ ব্যবহারের আগে একটি full recipe পড়ে দেখুন যাতে photo বাদ গেলেও কোনো measurement বা timing হারায়নি। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"html-to-pdf","x":"ছবিহীন recipe copy তৈরি করে ingredients ও ধাপ print preview-তে দেখুন।"}
       ]
     },
     {
@@ -57,20 +57,20 @@
       "description": "Recipe PDF গুছিয়ে tab, index ও page numbering-সহ kitchen binder বানান। Print এবং spill protection পরিকল্পনা করুন।",
       "metaDescription": "Recipe PDF গুছিয়ে tab, index ও page numbering-সহ kitchen binder বানান। Print এবং spill protection পরিকল্পনা করুন।",
       "faqs": [
-        { "q": "কোন paper recipe binder-এর জন্য ভালো?", "a": "প্রিন্টার, readability এবং binder protector অনুযায়ী বেছে নিন; প্রথমে একটি sample page পরীক্ষা করুন।" },
-        { "q": "PDF merge-এর পরে section divider যোগ করা যায়?", "a": "হ্যাঁ, divider page তৈরি করে recipe-র আগে যুক্ত করা যায়। Final order preview করুন।" },
-        { "q": "একই recipe-এর সংশোধন কীভাবে রাখব?", "a": "তারিখ বা version নোট করুন এবং পুরনো copy-কে current হিসেবে ভুল না বোঝাতে archive করুন।" }
+        {"q":"কোন paper recipe binder-এর জন্য ভালো?","a":"প্রিন্টার, readability এবং binder protector অনুযায়ী বেছে নিন; প্রথমে একটি sample page পরীক্ষা করুন।"},
+        {"q":"PDF merge-এর পরে section divider যোগ করা যায়?","a":"হ্যাঁ, divider page তৈরি করে recipe-র আগে যুক্ত করা যায়। Final order preview করুন।"},
+        {"q":"একই recipe-এর সংশোধন কীভাবে রাখব?","a":"তারিখ বা version নোট করুন এবং পুরনো copy-কে current হিসেবে ভুল না বোঝাতে archive করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "একটি ভালো recipe binder-এ শুধু অনেক পৃষ্ঠা থাকে না; দ্রুত খুঁজে পাওয়া, পড়া এবং রান্নার সময় সুরক্ষিত থাকার ব্যবস্থা থাকে। Recipe PDF বা scan-গুলোকে category অনুযায়ী সাজান, যেমন breakfast, main dish, baking এবং sauce। Binder-এর capacity দেখে page count পরিকল্পনা করুন। Divider, contents page এবং page number যোগ করলে রান্নার সময় উল্টে খোঁজা সহজ হয়। Original digital file আলাদা রাখুন।" },
-        { "t": "h2", "x": "Category ও index" },
-        { "t": "p", "x": "পরিবারের ব্যবহার অনুযায়ী section বেছে নিন, শুধু cookbook-এর সাধারণ category নয়। প্রতিটি recipe-র title, source, serving size এবং page number index-এ লিখুন। Alphabetical list বা meal type অনুযায়ী তালিকা করা যায়। Duplicate recipe বাদ দিয়ে সংশোধিত version কোনটি তা নির্ধারণ করুন।" },
-        { "t": "h2", "x": "PDF ও print প্রস্তুতি" },
-        { "t": "p", "x": "Digital recipe file merge করলে section divider ও cover page সঠিক জায়গায় রাখুন। Page size ও orientation একরকম কি না দেখুন। Text খুব ছোট হলে কাগজে test করুন। Binding margin রেখে print করুন এবং page number index-এর সঙ্গে মেলান।" },
-        { "t": "h2", "x": "Kitchen-friendly protection" },
-        { "t": "p", "x": "Plastic sleeve বা wipe-clean cover ব্যবহার করলে রান্নার ছিটা থেকে page রক্ষা পায়। Binder stove বা পানির পাশে রাখবেন না। হাতে লেখা পরিবর্তন থাকলে পরে digital master-এ update করুন এবং date লিখুন। Recipe web source হলে link বা capture date রাখুন, কারণ online page বদলাতে পারে।" },
-        { "t": "p", "x": "দাগ পড়া recipe replace করার জন্য clean PDF copy রাখুন। Binder-এর pocket-এ shopping note বা handwritten adjustment রাখা যায়, তবে final verified recipe-র সঙ্গে গুলিয়ে ফেলবেন না। Family member-দের কাছ থেকে update নিলে কে পরিবর্তন করেছে এবং কোন তারিখে তা চিহ্নিত করুন। Divider tab-এর label index-এর নামের সঙ্গে একই রাখুন।" },
-        { "t": "cta", "tool": "merge-pdf", "x": "Recipe PDF সাজিয়ে merge করুন, তারপর binder-এর index-এর সঙ্গে page order মেলান।" }
+        {"t":"p","x":"একটি ভালো recipe binder-এ শুধু অনেক পৃষ্ঠা থাকে না; দ্রুত খুঁজে পাওয়া, পড়া এবং রান্নার সময় সুরক্ষিত থাকার ব্যবস্থা থাকে। Recipe PDF বা scan-গুলোকে category অনুযায়ী সাজান, যেমন breakfast, main dish, baking এবং sauce। Binder-এর capacity দেখে page count পরিকল্পনা করুন। Divider, contents page এবং page number যোগ করলে রান্নার সময় উল্টে খোঁজা সহজ হয়। Original digital file আলাদা রাখুন।"},
+        {"t":"h2","x":"Category ও index"},
+        {"t":"p","x":"পরিবারের ব্যবহার অনুযায়ী section বেছে নিন, শুধু cookbook-এর সাধারণ category নয়। প্রতিটি recipe-র title, source, serving size এবং page number index-এ লিখুন। Alphabetical list বা meal type অনুযায়ী তালিকা করা যায়। Duplicate recipe বাদ দিয়ে সংশোধিত version কোনটি তা নির্ধারণ করুন।"},
+        {"t":"h2","x":"PDF ও print প্রস্তুতি"},
+        {"t":"p","x":"Digital recipe file merge করলে section divider ও cover page সঠিক জায়গায় রাখুন। Page size ও orientation একরকম কি না দেখুন। Text খুব ছোট হলে কাগজে test করুন। Binding margin রেখে print করুন এবং page number index-এর সঙ্গে মেলান।"},
+        {"t":"h2","x":"Kitchen-friendly protection"},
+        {"t":"p","x":"Plastic sleeve বা wipe-clean cover ব্যবহার করলে রান্নার ছিটা থেকে page রক্ষা পায়। Binder stove বা পানির পাশে রাখবেন না। হাতে লেখা পরিবর্তন থাকলে পরে digital master-এ update করুন এবং date লিখুন। Recipe web source হলে link বা capture date রাখুন, কারণ online page বদলাতে পারে।"},
+        {"t":"p","x":"দাগ পড়া recipe replace করার জন্য clean PDF copy রাখুন। Binder-এর pocket-এ shopping note বা handwritten adjustment রাখা যায়, তবে final verified recipe-র সঙ্গে গুলিয়ে ফেলবেন না। Family member-দের কাছ থেকে update নিলে কে পরিবর্তন করেছে এবং কোন তারিখে তা চিহ্নিত করুন। Divider tab-এর label index-এর নামের সঙ্গে একই রাখুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"merge-pdf","x":"Recipe PDF সাজিয়ে merge করুন, তারপর binder-এর index-এর সঙ্গে page order মেলান।"}
       ]
     },
     {
@@ -81,20 +81,20 @@
       "description": "সপ্তাহের recipe, serving ও pantry inventory মিলিয়ে meal plan PDF সাজান। Shopping list-কে বিভাগভিত্তিক করে print করুন।",
       "metaDescription": "সপ্তাহের recipe, serving ও pantry inventory মিলিয়ে meal plan PDF সাজান। Shopping list-কে বিভাগভিত্তিক করে print করুন।",
       "faqs": [
-        { "q": "Meal plan কীভাবে shopping list কমায়?", "a": "একই ingredient একাধিক recipe-তে ব্যবহার করে এবং pantry stock আগে দেখে duplicate purchase কমানো যায়।" },
-        { "q": "List-এ কত দিনের খাবার রাখব?", "a": "আপনার household schedule ও ingredient freshness অনুযায়ী এক সপ্তাহ বা কম সময় দিয়ে শুরু করুন।" },
-        { "q": "Plan কি PDF-এ print করতেই হবে?", "a": "না, digital list-ও ব্যবহার করা যায়। Paper plan fridge বা kitchen-এ দৃশ্যমান রাখতে সুবিধা দেয়।" }
+        {"q":"Meal plan কীভাবে shopping list কমায়?","a":"একই ingredient একাধিক recipe-তে ব্যবহার করে এবং pantry stock আগে দেখে duplicate purchase কমানো যায়।"},
+        {"q":"List-এ কত দিনের খাবার রাখব?","a":"আপনার household schedule ও ingredient freshness অনুযায়ী এক সপ্তাহ বা কম সময় দিয়ে শুরু করুন।"},
+        {"q":"Plan কি PDF-এ print করতেই হবে?","a":"না, digital list-ও ব্যবহার করা যায়। Paper plan fridge বা kitchen-এ দৃশ্যমান রাখতে সুবিধা দেয়।"}
       ],
       "body": [
-        { "t": "p", "x": "সাপ্তাহিক meal plan ব্যস্ত দিনে কী রান্না হবে তা আগেই ঠিক করে এবং grocery shopping-এ অপ্রয়োজনীয় কেনাকাটা কমাতে পারে। প্রথমে পরিবারের schedule, পছন্দ, allergy এবং pantry-তে থাকা উপকরণ দেখুন। তারপর recipe বেছে servings মিলিয়ে shopping list তৈরি করুন। Printable plan এমনভাবে সাজান যাতে meal, prep note এবং ingredient এক নজরে পড়া যায়। পরিকল্পনাটি flexible রাখুন, কারণ schedule বদলাতে পারে।" },
-        { "t": "h2", "x": "সপ্তাহের খাবার বাছুন" },
-        { "t": "p", "x": "Busy দিনে সহজ recipe এবং অবসর দিনে বেশি প্রস্তুতি লাগে এমন খাবার রাখুন। একই herb, vegetable বা grain একাধিক meal-এ ব্যবহার করলে waste কমতে পারে। Leftover-এর নিরাপদ সংরক্ষণ ও reheating নিয়মও পরিকল্পনায় রাখুন। Allergy বা dietary restriction থাকলে label পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Shopping list সাজানো" },
-        { "t": "p", "x": "Produce, dairy, pantry এবং frozen section ধরে list ভাগ করুন। Recipe-র পরিমাণ household serving অনুযায়ী হিসাব করুন। বাড়িতে থাকা ingredient বাদ দিন এবং প্রয়োজনীয় brand বা size লিখুন। Meal plan ও shopping list একই page-এ ধরাতে font ছোট করবেন না।" },
-        { "t": "h2", "x": "Printable PDF তৈরি" },
-        { "t": "p", "x": "Plan ও list আলাদা document-এ থাকলে merge করে এক PDF বানাতে পারেন। Week date স্পষ্ট রাখুন এবং পুরনো list-কে current plan ভেবে ব্যবহার করবেন না। Print preview-তে checkbox, handwriting space এবং page break দেখুন। Digital copy নিরাপদে রাখলে পরের সপ্তাহে template পুনর্ব্যবহার করা যায়।" },
-        { "t": "p", "x": "Week শেষে কোন meal বাস্তবে রান্না হয়েছে এবং কোন ingredient অবশিষ্ট তা note করুন। পরের plan এই অভিজ্ঞতা দিয়ে বদলালে খাবার নষ্ট কমে। Print copy-তে pencil দিয়ে পরিবর্তন করার জায়গা রাখুন অথবা digital version edit করে নতুন date দিয়ে export করুন। List-এ household-এর shared pantry item-ও অন্তর্ভুক্ত করুন।" },
-        { "t": "cta", "tool": "merge-pdf", "x": "Meal plan ও shopping list এক PDF-এ সাজিয়ে print করুন।" }
+        {"t":"p","x":"সাপ্তাহিক meal plan ব্যস্ত দিনে কী রান্না হবে তা আগেই ঠিক করে এবং grocery shopping-এ অপ্রয়োজনীয় কেনাকাটা কমাতে পারে। প্রথমে পরিবারের schedule, পছন্দ, allergy এবং pantry-তে থাকা উপকরণ দেখুন। তারপর recipe বেছে servings মিলিয়ে shopping list তৈরি করুন। Printable plan এমনভাবে সাজান যাতে meal, prep note এবং ingredient এক নজরে পড়া যায়। পরিকল্পনাটি flexible রাখুন, কারণ schedule বদলাতে পারে।"},
+        {"t":"h2","x":"সপ্তাহের খাবার বাছুন"},
+        {"t":"p","x":"Busy দিনে সহজ recipe এবং অবসর দিনে বেশি প্রস্তুতি লাগে এমন খাবার রাখুন। একই herb, vegetable বা grain একাধিক meal-এ ব্যবহার করলে waste কমতে পারে। Leftover-এর নিরাপদ সংরক্ষণ ও reheating নিয়মও পরিকল্পনায় রাখুন। Allergy বা dietary restriction থাকলে label পরীক্ষা করুন।"},
+        {"t":"h2","x":"Shopping list সাজানো"},
+        {"t":"p","x":"Produce, dairy, pantry এবং frozen section ধরে list ভাগ করুন। Recipe-র পরিমাণ household serving অনুযায়ী হিসাব করুন। বাড়িতে থাকা ingredient বাদ দিন এবং প্রয়োজনীয় brand বা size লিখুন। Meal plan ও shopping list একই page-এ ধরাতে font ছোট করবেন না।"},
+        {"t":"h2","x":"Printable PDF তৈরি"},
+        {"t":"p","x":"Plan ও list আলাদা document-এ থাকলে merge করে এক PDF বানাতে পারেন। Week date স্পষ্ট রাখুন এবং পুরনো list-কে current plan ভেবে ব্যবহার করবেন না। Print preview-তে checkbox, handwriting space এবং page break দেখুন। Digital copy নিরাপদে রাখলে পরের সপ্তাহে template পুনর্ব্যবহার করা যায়।"},
+        {"t":"p","x":"Week শেষে কোন meal বাস্তবে রান্না হয়েছে এবং কোন ingredient অবশিষ্ট তা note করুন। পরের plan এই অভিজ্ঞতা দিয়ে বদলালে খাবার নষ্ট কমে। Print copy-তে pencil দিয়ে পরিবর্তন করার জায়গা রাখুন অথবা digital version edit করে নতুন date দিয়ে export করুন। List-এ household-এর shared pantry item-ও অন্তর্ভুক্ত করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"merge-pdf","x":"Meal plan ও shopping list এক PDF-এ সাজিয়ে print করুন।"}
       ]
     },
     {
@@ -105,20 +105,20 @@
       "description": "Source format অনুযায়ী Word, Excel, PowerPoint বা ebook-কে PDF করুন। Font, page layout, slide ও chapter পরীক্ষা করুন।",
       "metaDescription": "Source format অনুযায়ী Word, Excel, PowerPoint বা ebook-কে PDF করুন। Font, page layout, slide ও chapter পরীক্ষা করুন।",
       "faqs": [
-        { "q": "কোন format আগে PDF করব?", "a": "আপনার source app-এর export এবং প্রয়োজনীয় layout অনুযায়ী উপযুক্ত converter বেছে নিন।" },
-        { "q": "PowerPoint ও Excel একভাবে export হয়?", "a": "না। Spreadsheet-এ print area ও slide deck-এ slide size এবং handout setting গুরুত্বপূর্ণ।" },
-        { "q": "Ebook conversion সবসময় অনুমোদিত?", "a": "না। DRM ও license restriction থাকতে পারে; কেবল অনুমোদিত source ব্যবহার করুন।" }
+        {"q":"কোন format আগে PDF করব?","a":"আপনার source app-এর export এবং প্রয়োজনীয় layout অনুযায়ী উপযুক্ত converter বেছে নিন।"},
+        {"q":"PowerPoint ও Excel একভাবে export হয়?","a":"না। Spreadsheet-এ print area ও slide deck-এ slide size এবং handout setting গুরুত্বপূর্ণ।"},
+        {"q":"Ebook conversion সবসময় অনুমোদিত?","a":"না। DRM ও license restriction থাকতে পারে; কেবল অনুমোদিত source ব্যবহার করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Word, Excel, PowerPoint এবং ebook-এর layout ও structure আলাদা, তাই প্রত্যেক format-কে PDF করার নিয়মও ভিন্ন। Word page break ও font ধরে রাখার চেষ্টা করে; Excel print area ও worksheet scaling-এর ওপর নির্ভর করে; PowerPoint slide-কে page করে; ebook reflowable chapter থেকে fixed page তৈরি করতে পারে। Source file আগে save করুন, তারপর target use অনুযায়ী export option বেছে নিন।" },
-        { "t": "h2", "x": "Word ও Excel" },
-        { "t": "p", "x": "Word-এ font, heading, margin, page number এবং tracked changes ঠিক করুন। Excel-এ print area, paper size, orientation এবং repeated header set করুন। এক sheet এক পাতায় fit করলে লেখা খুব ছোট হয় কি না preview-তে দেখুন। Formula এবং data edit করার জন্য workbook copy রাখুন, কারণ PDF সাধারণত visible result ধরে।" },
-        { "t": "h2", "x": "PowerPoint ও ebook" },
-        { "t": "p", "x": "PowerPoint export-এর আগে slide size, font, speaker note এবং animation step পরীক্ষা করুন। Ebook PDF করলে page size ও font স্থির হয়, কিন্তু text reflow কমে যায়। DRM-যুক্ত বইয়ের protection পাশ কাটাবেন না। Store বা publisher-এর অনুমোদিত export ও license দেখুন।" },
-        { "t": "h2", "x": "Final PDF review" },
-        { "t": "p", "x": "PDF খোলার পর first, middle ও last page দেখুন। Table, chart, hyperlink, signature, images এবং page count মিলিয়ে নিন। বাংলা text-এ যুক্তাক্ষর ও mixed English number পরীক্ষা করুন। Original editable source রেখে PDF-কে distribution copy হিসেবে আলাদা নাম দিন।" },
-        { "t": "p", "x": "প্রতিটি converter-এর file-size limit ও server processing notice আলাদা হতে পারে। Sensitive company report বা licensed ebook হলে upload-এর আগে অনুমোদন নিন। Final PDF-এর পাশে source version রেখে দিলে ভবিষ্যৎ update-এ কোনটি সম্পাদনা করতে হবে তা পরিষ্কার থাকে। Archive location-ও note করুন, যাতে team পরে copy খুঁজে পায়।" },
-        { "t": "cta", "tool": "word-to-pdf", "x": "Source format অনুযায়ী converter ব্যবহার করুন এবং final PDF পরীক্ষা করুন।" }
+        {"t":"p","x":"Word, Excel, PowerPoint এবং ebook-এর layout ও structure আলাদা, তাই প্রত্যেক format-কে PDF করার নিয়মও ভিন্ন। Word page break ও font ধরে রাখার চেষ্টা করে; Excel print area ও worksheet scaling-এর ওপর নির্ভর করে; PowerPoint slide-কে page করে; ebook reflowable chapter থেকে fixed page তৈরি করতে পারে। Source file আগে save করুন, তারপর target use অনুযায়ী export option বেছে নিন।"},
+        {"t":"h2","x":"Word ও Excel"},
+        {"t":"p","x":"Word-এ font, heading, margin, page number এবং tracked changes ঠিক করুন। Excel-এ print area, paper size, orientation এবং repeated header set করুন। এক sheet এক পাতায় fit করলে লেখা খুব ছোট হয় কি না preview-তে দেখুন। Formula এবং data edit করার জন্য workbook copy রাখুন, কারণ PDF সাধারণত visible result ধরে।"},
+        {"t":"h2","x":"PowerPoint ও ebook"},
+        {"t":"p","x":"PowerPoint export-এর আগে slide size, font, speaker note এবং animation step পরীক্ষা করুন। Ebook PDF করলে page size ও font স্থির হয়, কিন্তু text reflow কমে যায়। DRM-যুক্ত বইয়ের protection পাশ কাটাবেন না। Store বা publisher-এর অনুমোদিত export ও license দেখুন।"},
+        {"t":"h2","x":"Final PDF review"},
+        {"t":"p","x":"PDF খোলার পর first, middle ও last page দেখুন। Table, chart, hyperlink, signature, images এবং page count মিলিয়ে নিন। বাংলা text-এ যুক্তাক্ষর ও mixed English number পরীক্ষা করুন। Original editable source রেখে PDF-কে distribution copy হিসেবে আলাদা নাম দিন।"},
+        {"t":"p","x":"প্রতিটি converter-এর file-size limit ও server processing notice আলাদা হতে পারে। Sensitive company report বা licensed ebook হলে upload-এর আগে অনুমোদন নিন। Final PDF-এর পাশে source version রেখে দিলে ভবিষ্যৎ update-এ কোনটি সম্পাদনা করতে হবে তা পরিষ্কার থাকে। Archive location-ও note করুন, যাতে team পরে copy খুঁজে পায়।"},
+        {"t":"cta","tool":"word-to-pdf","x":"Source format অনুযায়ী converter ব্যবহার করুন এবং final PDF পরীক্ষা করুন।"}
       ]
     },
     {
@@ -129,20 +129,20 @@
       "description": "Reader view বা clean-print mode-এ webpage থেকে clutter বাদ দিন। Main text, caption, link এবং source detail রেখে PDF বা কাগজে print করুন।",
       "metaDescription": "Reader view বা clean-print mode-এ webpage থেকে clutter বাদ দিন। Main text, caption, link এবং source detail রেখে PDF বা কাগজে print করুন।",
       "faqs": [
-        { "q": "সব webpage-এ ad বাদ যাবে?", "a": "না। Dynamic layout বা site restriction-এর কারণে কিছু content শনাক্ত নাও হতে পারে।" },
-        { "q": "Article-এর ছবি হারালে কী করব?", "a": "Clean preview-তে caption ও figure আছে কি না দেখুন; প্রয়োজনে standard print ব্যবহার করুন।" },
-        { "q": "Ad বাদ দিয়ে page share করতে পারি?", "a": "আপনার personal use, copyright ও website terms মেনে print বা share করুন।" }
+        {"q":"সব webpage-এ ad বাদ যাবে?","a":"না। Dynamic layout বা site restriction-এর কারণে কিছু content শনাক্ত নাও হতে পারে।"},
+        {"q":"Article-এর ছবি হারালে কী করব?","a":"Clean preview-তে caption ও figure আছে কি না দেখুন; প্রয়োজনে standard print ব্যবহার করুন।"},
+        {"q":"Ad বাদ দিয়ে page share করতে পারি?","a":"আপনার personal use, copyright ও website terms মেনে print বা share করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "বিজ্ঞাপন, sticky navigation, cookie banner এবং popup কাগজে অপ্রয়োজনীয় page তৈরি করতে পারে। Reader view বা print-friendly mode article-এর মূল অংশে মনোযোগ দিতে সাহায্য করে। কিন্তু clean mode সব website-এ সমান কাজ করে না। Paywall, login এবং script-rendered content থাকলে কিছু text অনুপস্থিত হতে পারে। Print-এর আগে preview-তে article শুরু থেকে শেষ পর্যন্ত আছে কি না পড়ুন।" },
-        { "t": "h2", "x": "Browser-এর print option" },
-        { "t": "p", "x": "Browser print dialog খুলে preview, page range, scale এবং header/footer দেখুন। Site-এর print CSS থাকলে তা ad ও menu বাদ দিতে পারে। Background graphics off করলে ink বাঁচে, কিন্তু chart বা shaded note হারাতে পারে। প্রয়োজন অনুযায়ী page setting বদলান।" },
-        { "t": "h2", "x": "Clean-page tool ব্যবহার" },
-        { "t": "p", "x": "PrintxPDF extension মূল text আলাদা করার চেষ্টা করে। Result-এ heading, paragraph, caption, citation ও link আছে কি না পরীক্ষা করুন। Tool article শনাক্ত না করলে text paste বা browser print বিকল্প হতে পারে। Access control বা subscription restriction পাশ কাটানোর উদ্দেশ্যে ব্যবহার করবেন না।" },
-        { "t": "h2", "x": "PDF তৈরি ও যাচাই" },
-        { "t": "p", "x": "Save as PDF করে নতুন file reopen করুন। Page count, paragraph break, image এবং link মিলিয়ে নিন। গবেষণা reference হলে original URL ও capture date লিখে রাখুন। Copyright ও website terms অনুসারে personal copy রাখুন এবং public redistribution-এর আগে permission যাচাই করুন।" },
-        { "t": "p", "x": "Clean copy-তে author, publication date এবং reference link থাকলে research-এ উৎস যাচাই সহজ হয়। Print করার সময় article title ও capture date header-এ রাখুন কি না ঠিক করুন। এগুলো বাদ দিলে পরে কাগজটি কোন page থেকে এসেছে বুঝতে অসুবিধা হতে পারে। Notes-এর জন্য পাশে margin চাই কি না preview-তে দেখুন।" },
-        { "t": "cta", "tool": "pdf-reader", "x": "Clean preview পরীক্ষা করে webpage-টি PDF বা কাগজে প্রিন্ট করুন।" }
+        {"t":"p","x":"বিজ্ঞাপন, sticky navigation, cookie banner এবং popup কাগজে অপ্রয়োজনীয় page তৈরি করতে পারে। Reader view বা print-friendly mode article-এর মূল অংশে মনোযোগ দিতে সাহায্য করে। কিন্তু clean mode সব website-এ সমান কাজ করে না। Paywall, login এবং script-rendered content থাকলে কিছু text অনুপস্থিত হতে পারে। Print-এর আগে preview-তে article শুরু থেকে শেষ পর্যন্ত আছে কি না পড়ুন।"},
+        {"t":"h2","x":"Browser-এর print option"},
+        {"t":"p","x":"Browser print dialog খুলে preview, page range, scale এবং header/footer দেখুন। Site-এর print CSS থাকলে তা ad ও menu বাদ দিতে পারে। Background graphics off করলে ink বাঁচে, কিন্তু chart বা shaded note হারাতে পারে। প্রয়োজন অনুযায়ী page setting বদলান।"},
+        {"t":"h2","x":"Clean-page tool ব্যবহার"},
+        {"t":"p","x":"PrintxPDF extension মূল text আলাদা করার চেষ্টা করে। Result-এ heading, paragraph, caption, citation ও link আছে কি না পরীক্ষা করুন। Tool article শনাক্ত না করলে text paste বা browser print বিকল্প হতে পারে। Access control বা subscription restriction পাশ কাটানোর উদ্দেশ্যে ব্যবহার করবেন না।"},
+        {"t":"h2","x":"PDF তৈরি ও যাচাই"},
+        {"t":"p","x":"Save as PDF করে নতুন file reopen করুন। Page count, paragraph break, image এবং link মিলিয়ে নিন। গবেষণা reference হলে original URL ও capture date লিখে রাখুন। Copyright ও website terms অনুসারে personal copy রাখুন এবং public redistribution-এর আগে permission যাচাই করুন।"},
+        {"t":"p","x":"Clean copy-তে author, publication date এবং reference link থাকলে research-এ উৎস যাচাই সহজ হয়। Print করার সময় article title ও capture date header-এ রাখুন কি না ঠিক করুন। এগুলো বাদ দিলে পরে কাগজটি কোন page থেকে এসেছে বুঝতে অসুবিধা হতে পারে। Notes-এর জন্য পাশে margin চাই কি না preview-তে দেখুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"pdf-reader","x":"Clean preview পরীক্ষা করে webpage-টি PDF বা কাগজে প্রিন্ট করুন।"}
       ]
     },
     {
@@ -153,20 +153,20 @@
       "description": "কেবল প্রয়োজনীয় text বা section নির্বাচন করে print dialog-এ selection option ব্যবহার করুন। Preview-তে context এবং missing heading দেখুন।",
       "metaDescription": "কেবল প্রয়োজনীয় text বা section নির্বাচন করে print dialog-এ selection option ব্যবহার করুন। Preview-তে context এবং missing heading দেখুন।",
       "faqs": [
-        { "q": "সব browser selection-only print সমর্থন করে?", "a": "সমর্থন browser ও page implementation অনুযায়ী ভিন্ন। Print preview পরীক্ষা করুন।" },
-        { "q": "নির্বাচিত text-এর heading বাদ পড়লে?", "a": "Heading-সহ আবার selection করুন বা clean-page tool দিয়ে পুরো article তৈরি করুন।" },
-        { "q": "Selected text কি hyperlink ধরে?", "a": "কিছু link থাকতে পারে, কিন্তু output PDF-এ click করে সঠিকতা পরীক্ষা করুন।" }
+        {"q":"সব browser selection-only print সমর্থন করে?","a":"সমর্থন browser ও page implementation অনুযায়ী ভিন্ন। Print preview পরীক্ষা করুন।"},
+        {"q":"নির্বাচিত text-এর heading বাদ পড়লে?","a":"Heading-সহ আবার selection করুন বা clean-page tool দিয়ে পুরো article তৈরি করুন।"},
+        {"q":"Selected text কি hyperlink ধরে?","a":"কিছু link থাকতে পারে, কিন্তু output PDF-এ click করে সঠিকতা পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "কোনো দীর্ঘ page-এর শুধু একটি paragraph, table বা নির্দেশনা দরকার হলে নির্বাচিত অংশ print করা যায়। Text highlight করে browser-এর print dialog খুলুন; সেখানে Selection বা selected content option থাকলে বেছে নিন। সব browser এবং website এ feature একইভাবে দেয় না। Preview-তে selected text সম্পূর্ণ আছে এবং context হারায়নি তা নিশ্চিত করুন।" },
-        { "t": "h2", "x": "সঠিক অংশ নির্বাচন" },
-        { "t": "p", "x": "Paragraph-এর সঙ্গে প্রয়োজনীয় heading, footnote বা citation-ও select করুন। Table-এর সব row ও column ধরা হয়েছে কি না পরীক্ষা করুন। Selection খুব ছোট হলে source বা subject বোঝা কঠিন হতে পারে। Reference-এর জন্য URL বা page title রাখার প্রয়োজন আছে কি না ঠিক করুন।" },
-        { "t": "h2", "x": "Print preview ব্যবহার" },
-        { "t": "p", "x": "Print dialog-এ selected area option থাকলে সেটি বেছে page preview দেখুন। Browser selection option না দিলে copy করে অনুমোদিত document-এ paste করা যেতে পারে, তবে attribution ও formatting ঠিক রাখুন। PDF-এ save করলে crop, line break এবং hyperlink পরীক্ষা করুন।" },
-        { "t": "h2", "x": "ব্যবহার ও নথিভুক্তকরণ" },
-        { "t": "p", "x": "নির্বাচিত অংশের সঙ্গে capture date রাখলে পরিবর্তনশীল webpage-এর উৎস পরে শনাক্ত করা সহজ হয়। Personal notes বা study use-এর বাইরে content reuse করার আগে copyright ও license দেখুন। Sensitive account page থেকে text print করার সময় shared printer tray-তে কপি ফেলে যাবেন না।" },
-        { "t": "p", "x": "Browser যদি selection print support না করে, selected section copy করে local document-এ paste করুন এবং source attribution দিন। Paste-এর পরে bullet, quotation mark ও link পরীক্ষা করুন। Personal study note হলেও public article-এর বড় অংশ বিতরণে copyright restriction থাকতে পারে। Section-এর capture date ও page title আলাদা note-এ রাখুন। Selection শুরু ও শেষের sentence সম্পূর্ণ হয়েছে কি না আবার পড়ুন।" },
-        { "t": "cta", "tool": "html-to-pdf", "x": "নির্বাচিত text প্রিন্ট করে final page ও context যাচাই করুন।" }
+        {"t":"p","x":"কোনো দীর্ঘ page-এর শুধু একটি paragraph, table বা নির্দেশনা দরকার হলে নির্বাচিত অংশ print করা যায়। Text highlight করে browser-এর print dialog খুলুন; সেখানে Selection বা selected content option থাকলে বেছে নিন। সব browser এবং website এ feature একইভাবে দেয় না। Preview-তে selected text সম্পূর্ণ আছে এবং context হারায়নি তা নিশ্চিত করুন।"},
+        {"t":"h2","x":"সঠিক অংশ নির্বাচন"},
+        {"t":"p","x":"Paragraph-এর সঙ্গে প্রয়োজনীয় heading, footnote বা citation-ও select করুন। Table-এর সব row ও column ধরা হয়েছে কি না পরীক্ষা করুন। Selection খুব ছোট হলে source বা subject বোঝা কঠিন হতে পারে। Reference-এর জন্য URL বা page title রাখার প্রয়োজন আছে কি না ঠিক করুন।"},
+        {"t":"h2","x":"Print preview ব্যবহার"},
+        {"t":"p","x":"Print dialog-এ selected area option থাকলে সেটি বেছে page preview দেখুন। Browser selection option না দিলে copy করে অনুমোদিত document-এ paste করা যেতে পারে, তবে attribution ও formatting ঠিক রাখুন। PDF-এ save করলে crop, line break এবং hyperlink পরীক্ষা করুন।"},
+        {"t":"h2","x":"ব্যবহার ও নথিভুক্তকরণ"},
+        {"t":"p","x":"নির্বাচিত অংশের সঙ্গে capture date রাখলে পরিবর্তনশীল webpage-এর উৎস পরে শনাক্ত করা সহজ হয়। Personal notes বা study use-এর বাইরে content reuse করার আগে copyright ও license দেখুন। Sensitive account page থেকে text print করার সময় shared printer tray-তে কপি ফেলে যাবেন না।"},
+        {"t":"p","x":"Browser যদি selection print support না করে, selected section copy করে local document-এ paste করুন এবং source attribution দিন। Paste-এর পরে bullet, quotation mark ও link পরীক্ষা করুন। Personal study note হলেও public article-এর বড় অংশ বিতরণে copyright restriction থাকতে পারে। Section-এর capture date ও page title আলাদা note-এ রাখুন। Selection শুরু ও শেষের sentence সম্পূর্ণ হয়েছে কি না আবার পড়ুন।"},
+        {"t":"cta","tool":"html-to-pdf","x":"নির্বাচিত text প্রিন্ট করে final page ও context যাচাই করুন।"}
       ]
     },
     {
@@ -177,21 +177,22 @@
       "description": "Blank output, missing image, tiny text ও broken page break-এর কারণ শনাক্ত করুন। Browser preview, scale ও page setup পরীক্ষা করুন।",
       "metaDescription": "Blank output, missing image, tiny text ও broken page break-এর কারণ শনাক্ত করুন। Browser preview, scale ও page setup পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Webpage print preview blank কেন?", "a": "Script-rendered page, popup বা print stylesheet সমস্যা হতে পারে। Page load শেষ করে আবার চেষ্টা করুন।" },
-        { "q": "প্রিন্টে লেখা খুব ছোট হলে?", "a": "Scale, orientation বা paper size বদলান; সব content এক পাতায় fit করতে বাধ্য করবেন না।" },
-        { "q": "ছবি print-এ নেই কেন?", "a": "Lazy loading, blocked resource বা background graphics setting-এর কারণে image বাদ পড়তে পারে।" }
+        {"q":"Webpage print preview blank কেন?","a":"Script-rendered page, popup বা print stylesheet সমস্যা হতে পারে। Page load শেষ করে আবার চেষ্টা করুন।"},
+        {"q":"প্রিন্টে লেখা খুব ছোট হলে?","a":"Scale, orientation বা paper size বদলান; সব content এক পাতায় fit করতে বাধ্য করবেন না।"},
+        {"q":"ছবি print-এ নেই কেন?","a":"Lazy loading, blocked resource বা background graphics setting-এর কারণে image বাদ পড়তে পারে।"}
       ],
       "body": [
-        { "t": "p", "x": "Webpage print সমস্যা নানা কারণে হতে পারে: page load অসম্পূর্ণ, print stylesheet ত্রুটিপূর্ণ, image lazy-loaded অথবা scale ভুল। প্রথমে browser preview খুলে সমস্যা screen print-এর আগেই আছে কি না দেখুন। Page refresh করে content load হওয়ার জন্য অপেক্ষা করুন। Blank preview হলে অন্য browser বা PDF save route দিয়ে test করুন, তবে login restriction এড়িয়ে যাওয়ার চেষ্টা করবেন না।" },
-        { "t": "h2", "x": "Blank বা কাটা page" },
-        { "t": "p", "x": "Blank page এলে print dialog বন্ধ করে page সম্পূর্ণ load করুন। Pop-up content বা embedded viewer আলাদাভাবে খুলতে হতে পারে। Page cut off হলে orientation, paper size, margin এবং scale বদলান। Table বা code block ভেঙে গেলে landscape বা print-friendly view ব্যবহার করুন।" },
-        { "t": "h2", "x": "Missing image ও background" },
-        { "t": "p", "x": "নিচে scroll করে সব lazy-loaded image load হতে দিন। Background graphics বন্ধ থাকলে colored panel বা image বাদ যেতে পারে। Privacy extension বা content blocker resource আটকাচ্ছে কি না অনুমোদিতভাবে পরীক্ষা করুন। Preview-তে image ফেরত এলে print setting পুনরায় নিন।" },
-        { "t": "h2", "x": "Tiny text ও page break" },
-        { "t": "p", "x": "এক পাতায় সব content fit করার ফলে font ছোট হলে height scaling বন্ধ করুন বা page range ভাগ করুন। Browser zoom, paper size ও margin পরীক্ষা করুন। তৈরি PDF reopen করে first, middle, final page এবং link দেখুন। Printer driver update প্রয়োজন কি না IT support-এর কাছে জিজ্ঞাসা করুন।" },
-        { "t": "p", "x": "সব browser window একসঙ্গে বন্ধ করার আগে preview-তে setting পরিবর্তনের ফল দেখুন। Printer offline বা wrong tray নির্বাচিত থাকলেও blank output মনে হতে পারে। Test page সফল হলে বাকি page পাঠান, আর সমস্যা থাকলে printer queue ও driver status যাচাই করুন।" },
-        { "t": "cta", "tool": "pdf-reader", "x": "PDF preview পরীক্ষা করে scale, margin ও page range সংশোধন করুন।" }
-      ]
+        {"t":"p","x":"Webpage print সমস্যা নানা কারণে হতে পারে: page load অসম্পূর্ণ, print stylesheet ত্রুটিপূর্ণ, image lazy-loaded অথবা scale ভুল। প্রথমে browser preview খুলে সমস্যা screen print-এর আগেই আছে কি না দেখুন। Page refresh করে content load হওয়ার জন্য অপেক্ষা করুন। Blank preview হলে অন্য browser বা PDF save route দিয়ে test করুন, তবে login restriction এড়িয়ে যাওয়ার চেষ্টা করবেন না।"},
+        {"t":"h2","x":"Blank বা কাটা page"},
+        {"t":"p","x":"Blank page এলে print dialog বন্ধ করে page সম্পূর্ণ load করুন। Pop-up content বা embedded viewer আলাদাভাবে খুলতে হতে পারে। Page cut off হলে orientation, paper size, margin এবং scale বদলান। Table বা code block ভেঙে গেলে landscape বা print-friendly view ব্যবহার করুন।"},
+        {"t":"h2","x":"Missing image ও background"},
+        {"t":"p","x":"নিচে scroll করে সব lazy-loaded image load হতে দিন। Background graphics বন্ধ থাকলে colored panel বা image বাদ যেতে পারে। Privacy extension বা content blocker resource আটকাচ্ছে কি না অনুমোদিতভাবে পরীক্ষা করুন। Preview-তে image ফেরত এলে print setting পুনরায় নিন।"},
+        {"t":"h2","x":"Tiny text ও page break"},
+        {"t":"p","x":"এক পাতায় সব content fit করার ফলে font ছোট হলে height scaling বন্ধ করুন বা page range ভাগ করুন। Browser zoom, paper size ও margin পরীক্ষা করুন। তৈরি PDF reopen করে first, middle, final page এবং link দেখুন। Printer driver update প্রয়োজন কি না IT support-এর কাছে জিজ্ঞাসা করুন।"},
+        {"t":"p","x":"সব browser window একসঙ্গে বন্ধ করার আগে preview-তে setting পরিবর্তনের ফল দেখুন। Printer offline বা wrong tray নির্বাচিত থাকলেও blank output মনে হতে পারে। Test page সফল হলে বাকি page পাঠান, আর সমস্যা থাকলে printer queue ও driver status যাচাই করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"pdf-reader","x":"PDF preview পরীক্ষা করে scale, margin ও page range সংশোধন করুন।"}
+      ],
+      "metaTitle": "Webpage প্রিন্ট না হলে blank page, missing image ও ছোট text…"
     },
     {
       "topic": "print-web-page-to-pdf-vs-printer",
@@ -201,20 +202,20 @@
       "description": "Reference, distribution ও paper use অনুযায়ী PDF save বা printer বেছে নিন। File size, readability, privacy ও archive বিবেচনা করুন।",
       "metaDescription": "Reference, distribution ও paper use অনুযায়ী PDF save বা printer বেছে নিন। File size, readability, privacy ও archive বিবেচনা করুন।",
       "faqs": [
-        { "q": "PDF save আর print কি একই result?", "a": "PDF হলো digital copy; printer physical page তৈরি করে। দুই ক্ষেত্রেই layout ও color ভিন্ন হতে পারে।" },
-        { "q": "Webpage PDF archive হিসেবে রাখব?", "a": "Reference-এর জন্য রাখা যায়, তবে source URL, date, permission ও retention policy নথিভুক্ত করুন।" },
-        { "q": "Print-এর আগে PDF compress করব?", "a": "শুধু প্রয়োজন হলে। Compression-এর পরে detail ও text readability পরীক্ষা করুন।" }
+        {"q":"PDF save আর print কি একই result?","a":"PDF হলো digital copy; printer physical page তৈরি করে। দুই ক্ষেত্রেই layout ও color ভিন্ন হতে পারে।"},
+        {"q":"Webpage PDF archive হিসেবে রাখব?","a":"Reference-এর জন্য রাখা যায়, তবে source URL, date, permission ও retention policy নথিভুক্ত করুন।"},
+        {"q":"Print-এর আগে PDF compress করব?","a":"শুধু প্রয়োজন হলে। Compression-এর পরে detail ও text readability পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Webpage-কে PDF হিসেবে save করলে digital reference, attachment বা searchable record পাওয়া যায়। Printer-এ দিলে কাগজে পড়া, sign করা বা meeting-এ ব্যবহার করা যায়। কোনটি বেছে নেবেন তা উদ্দেশ্য, accessibility, privacy এবং print quality-র ওপর নির্ভর করে। PDF save মানে archive নিশ্চয়তা নয়; content বদলাতে পারে এবং link পরে অচল হতে পারে।" },
-        { "t": "h2", "x": "PDF কখন উপকারী" },
-        { "t": "p", "x": "PDF share করা, annotation যোগ করা বা পরে পড়ার জন্য উপযোগী। Save as PDF-এ page preview, URL header এবং paper size দেখুন। File search করা যাবে কি না পরীক্ষা করুন। Long-term evidence হলে capture date ও original URL note করুন।" },
-        { "t": "h2", "x": "কাগজে print কখন দরকার" },
-        { "t": "p", "x": "Handwritten notes, form completion, meeting packet বা screen-free reading-এর জন্য paper copy সুবিধা দেয়। Printer-এ color, duplex, paper size ও margin বেছে নিন। Sensitive document হলে shared printer-এ output পড়ে আছে কি না খেয়াল করুন।" },
-        { "t": "h2", "x": "Size, privacy ও sustainability" },
-        { "t": "p", "x": "Digital file attachment limit ছাড়ালে compress বা approved link ব্যবহার করুন। Compression পরে image clarity পরীক্ষা করুন। Paper দরকার না হলে digital copy কাগজ বাঁচাতে পারে, তবে backup ও secure access ভাবুন। Online page capture করার আগে terms ও copyright মানুন।" },
-        { "t": "p", "x": "কিছু record paper-এ sign বা annotate করা লাগে, আবার digital copy search ও archive-এ সুবিধা দেয়। দুই কপি তৈরি করলে কোনটি final তা label করুন। একই information দুই জায়গায় update না হলে version mismatch হতে পারে, তাই master copy নির্ধারণ করুন। Recipient-এর কাছে যে format দরকার তা পাঠানোর আগে নিশ্চিত করুন। Digital archive-এ backup ও access permission-ও ঠিক রাখুন।" },
-        { "t": "cta", "tool": "compress-pdf", "x": "PDF save করলে share করার আগে প্রয়োজনমতো file size কমিয়ে পরীক্ষা করুন।" }
+        {"t":"p","x":"Webpage-কে PDF হিসেবে save করলে digital reference, attachment বা searchable record পাওয়া যায়। Printer-এ দিলে কাগজে পড়া, sign করা বা meeting-এ ব্যবহার করা যায়। কোনটি বেছে নেবেন তা উদ্দেশ্য, accessibility, privacy এবং print quality-র ওপর নির্ভর করে। PDF save মানে archive নিশ্চয়তা নয়; content বদলাতে পারে এবং link পরে অচল হতে পারে।"},
+        {"t":"h2","x":"PDF কখন উপকারী"},
+        {"t":"p","x":"PDF share করা, annotation যোগ করা বা পরে পড়ার জন্য উপযোগী। Save as PDF-এ page preview, URL header এবং paper size দেখুন। File search করা যাবে কি না পরীক্ষা করুন। Long-term evidence হলে capture date ও original URL note করুন।"},
+        {"t":"h2","x":"কাগজে print কখন দরকার"},
+        {"t":"p","x":"Handwritten notes, form completion, meeting packet বা screen-free reading-এর জন্য paper copy সুবিধা দেয়। Printer-এ color, duplex, paper size ও margin বেছে নিন। Sensitive document হলে shared printer-এ output পড়ে আছে কি না খেয়াল করুন।"},
+        {"t":"h2","x":"Size, privacy ও sustainability"},
+        {"t":"p","x":"Digital file attachment limit ছাড়ালে compress বা approved link ব্যবহার করুন। Compression পরে image clarity পরীক্ষা করুন। Paper দরকার না হলে digital copy কাগজ বাঁচাতে পারে, তবে backup ও secure access ভাবুন। Online page capture করার আগে terms ও copyright মানুন।"},
+        {"t":"p","x":"কিছু record paper-এ sign বা annotate করা লাগে, আবার digital copy search ও archive-এ সুবিধা দেয়। দুই কপি তৈরি করলে কোনটি final তা label করুন। একই information দুই জায়গায় update না হলে version mismatch হতে পারে, তাই master copy নির্ধারণ করুন। Recipient-এর কাছে যে format দরকার তা পাঠানোর আগে নিশ্চিত করুন। Digital archive-এ backup ও access permission-ও ঠিক রাখুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"compress-pdf","x":"PDF save করলে share করার আগে প্রয়োজনমতো file size কমিয়ে পরীক্ষা করুন।"}
       ]
     },
     {
@@ -225,20 +226,20 @@
       "description": "Cut-off content ঠিক করতে paper size, orientation, margin ও scale সামঞ্জস্য করুন। Table এবং wide content preview-তে পরীক্ষা করুন।",
       "metaDescription": "Cut-off content ঠিক করতে paper size, orientation, margin ও scale সামঞ্জস্য করুন। Table এবং wide content preview-তে পরীক্ষা করুন।",
       "faqs": [
-        { "q": "ডান পাশের content কেটে যায় কেন?", "a": "Wide table বা fixed-width layout paper area ছাড়িয়ে যেতে পারে। Landscape বা scale পরিবর্তন করুন।" },
-        { "q": "Margin কমালে সব ঠিক হবে?", "a": "সব printer edge-to-edge print করে না। Printable area ও paper setting মানতে হবে।" },
-        { "q": "PDF save করলে cut-off ঠিক হবে?", "a": "PDF-ও একই page layout নিতে পারে। Save করার আগে preview এবং final output দেখুন।" }
+        {"q":"ডান পাশের content কেটে যায় কেন?","a":"Wide table বা fixed-width layout paper area ছাড়িয়ে যেতে পারে। Landscape বা scale পরিবর্তন করুন।"},
+        {"q":"Margin কমালে সব ঠিক হবে?","a":"সব printer edge-to-edge print করে না। Printable area ও paper setting মানতে হবে।"},
+        {"q":"PDF save করলে cut-off ঠিক হবে?","a":"PDF-ও একই page layout নিতে পারে। Save করার আগে preview এবং final output দেখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "ওয়েব পৃষ্ঠা কাগজের তুলনায় চওড়া হলে table, image বা শেষ কয়েকটি word ডান পাশে কেটে যেতে পারে। Print button চাপার আগে preview খুলুন। Paper size ঠিক আছে কি না, portrait না landscape প্রয়োজন, এবং scale কত তা দেখুন। PDF save করলেও একই clipping হতে পারে, কারণ virtual page printer-এর মতোই fixed dimension ব্যবহার করে।" },
-        { "t": "h2", "x": "Paper size ও orientation" },
-        { "t": "p", "x": "আপনার printer-এ যে paper আছে, dialog-এ সেটিই নির্বাচন করুন। Wide table বা landscape chart-এর জন্য orientation ঘোরান। A4 ও Letter-এর width আলাদা, তাই ভুল selection clipping ঘটাতে পারে। Margin সামান্য কমান, কিন্তু printer-এর non-printable edge মনে রাখুন।" },
-        { "t": "h2", "x": "Scale ও wide content" },
-        { "t": "p", "x": "Fit to page বা custom scale ব্যবহার করলে সব column দেখা যেতে পারে, তবে লেখা ছোট হওয়ার ঝুঁকি আছে। Table-এর section আলাদা page range-এ print করা যায় কি না দেখুন। Browser Reader বা clean mode layout সরল করতে পারে, কিন্তু content আবার পরীক্ষা করুন।" },
-        { "t": "h2", "x": "PDF output পরীক্ষা" },
-        { "t": "p", "x": "Save as PDF দিয়ে output তৈরি করে first ও widest page খুলুন। Right edge, footer, caption এবং link দেখুন। Print shop-এ দিলে sample proof নিন। Page readability না থাকলে screenshot crop করে পাঠানোর বদলে source table-কে উপযুক্ত document format-এ export করুন।" },
-        { "t": "p", "x": "Content ধারাবাহিকভাবে কাটা গেলে website-এর print view বা article Reader mode চেষ্টা করুন। Extra-wide chart-কে landscape page-এ রাখুন। কেবল screenshot নিয়ে crop করলে পাশের data বাদ পড়তে পারে, তাই মূল source-এ export option থাকলে সেটি ব্যবহার করুন। শেষবার preview-তে header এবং page number দেখা যাচ্ছে কি না পরীক্ষা করুন। Output-এ chart legend ও footnote অক্ষত আছে কি না দেখুন।" },
-        { "t": "cta", "tool": "html-to-pdf", "x": "Scale ও orientation বদলে PDF preview-তে কাটা content ঠিক হয়েছে কি না দেখুন।" }
+        {"t":"p","x":"ওয়েব পৃষ্ঠা কাগজের তুলনায় চওড়া হলে table, image বা শেষ কয়েকটি word ডান পাশে কেটে যেতে পারে। Print button চাপার আগে preview খুলুন। Paper size ঠিক আছে কি না, portrait না landscape প্রয়োজন, এবং scale কত তা দেখুন। PDF save করলেও একই clipping হতে পারে, কারণ virtual page printer-এর মতোই fixed dimension ব্যবহার করে।"},
+        {"t":"h2","x":"Paper size ও orientation"},
+        {"t":"p","x":"আপনার printer-এ যে paper আছে, dialog-এ সেটিই নির্বাচন করুন। Wide table বা landscape chart-এর জন্য orientation ঘোরান। A4 ও Letter-এর width আলাদা, তাই ভুল selection clipping ঘটাতে পারে। Margin সামান্য কমান, কিন্তু printer-এর non-printable edge মনে রাখুন।"},
+        {"t":"h2","x":"Scale ও wide content"},
+        {"t":"p","x":"Fit to page বা custom scale ব্যবহার করলে সব column দেখা যেতে পারে, তবে লেখা ছোট হওয়ার ঝুঁকি আছে। Table-এর section আলাদা page range-এ print করা যায় কি না দেখুন। Browser Reader বা clean mode layout সরল করতে পারে, কিন্তু content আবার পরীক্ষা করুন।"},
+        {"t":"h2","x":"PDF output পরীক্ষা"},
+        {"t":"p","x":"Save as PDF দিয়ে output তৈরি করে first ও widest page খুলুন। Right edge, footer, caption এবং link দেখুন। Print shop-এ দিলে sample proof নিন। Page readability না থাকলে screenshot crop করে পাঠানোর বদলে source table-কে উপযুক্ত document format-এ export করুন।"},
+        {"t":"p","x":"Content ধারাবাহিকভাবে কাটা গেলে website-এর print view বা article Reader mode চেষ্টা করুন। Extra-wide chart-কে landscape page-এ রাখুন। কেবল screenshot নিয়ে crop করলে পাশের data বাদ পড়তে পারে, তাই মূল source-এ export option থাকলে সেটি ব্যবহার করুন। শেষবার preview-তে header এবং page number দেখা যাচ্ছে কি না পরীক্ষা করুন। Output-এ chart legend ও footnote অক্ষত আছে কি না দেখুন।"},
+        {"t":"cta","tool":"html-to-pdf","x":"Scale ও orientation বদলে PDF preview-তে কাটা content ঠিক হয়েছে কি না দেখুন।"}
       ]
     }
   ]

@@ -58,6 +58,16 @@ import viBatch10 from './localized-posts/vi-chatgpt-10.json'
 import viBatch11 from './localized-posts/vi-chatgpt-11.json'
 import zhPosts from './localized-posts/zh-CN.json'
 import zhBatch1 from './localized-posts/zh-CN-chatgpt-1.json'
+import zhBatch2 from './localized-posts/zh-CN-chatgpt-2.json'
+import zhBatch3 from './localized-posts/zh-CN-chatgpt-3.json'
+import zhBatch4 from './localized-posts/zh-CN-chatgpt-4.json'
+import zhBatch5 from './localized-posts/zh-CN-chatgpt-5.json'
+import zhBatch6 from './localized-posts/zh-CN-chatgpt-6.json'
+import zhBatch7 from './localized-posts/zh-CN-chatgpt-7.json'
+import zhBatch8 from './localized-posts/zh-CN-chatgpt-8.json'
+import zhBatch9 from './localized-posts/zh-CN-chatgpt-9.json'
+import zhBatch10 from './localized-posts/zh-CN-chatgpt-10.json'
+import zhBatch11 from './localized-posts/zh-CN-chatgpt-11.json'
 import { LANGUAGE_PACKS as basePacks, guidePath, normalizeLocalizedGuides } from './localizedGuides'
 import type { LanguagePack, LocalizedGuide } from './localizedGuides'
 export { guidePath } from './localizedGuides'
@@ -77,6 +87,16 @@ translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch10.gui
 translations.push({ locale: 'es', guides: normalizeLocalizedGuides(esBatch11.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'vi', guides: normalizeLocalizedGuides(viBatch11.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch1.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch2.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch3.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch4.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch5.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch6.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch7.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch8.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch9.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch10.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch11.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 
 export const LANGUAGE_PACKS: LanguagePack[] = basePacks.map((pack) => {
   const guides = new Map(pack.guides.map((guide) => [guide.topic, guide]))

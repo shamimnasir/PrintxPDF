@@ -9,20 +9,20 @@
       "description": "কয়েকটি PDF এক নথিতে merge করে সঠিক ক্রম, page orientation, bookmark ও final size পরীক্ষা করুন।",
       "metaDescription": "কয়েকটি PDF এক নথিতে merge করে সঠিক ক্রম, page orientation, bookmark ও final size পরীক্ষা করুন। মূল file আলাদা রাখুন এবং merged copy খুলে দেখুন।",
       "faqs": [
-        { "q": "Merge করলে PDF-এর quality কমে?", "a": "সাধারণত page content অপরিবর্তিত থাকতে পারে, তবে tool output পরীক্ষা করুন এবং image ও text clarity দেখুন।" },
-        { "q": "Merge করার আগে page order ঠিক করব কীভাবে?", "a": "Upload list-এ file reorder করুন এবং প্রতিটি file-এর page range আগে লিখে রাখুন।" },
-        { "q": "Password-protected PDF merge করা যায়?", "a": "Permission ও password প্রয়োজন হতে পারে। আপনি অনুমোদিত হলে password দিন, restriction bypass করবেন না।" }
+        {"q":"Merge করলে PDF-এর quality কমে?","a":"সাধারণত page content অপরিবর্তিত থাকতে পারে, তবে tool output পরীক্ষা করুন এবং image ও text clarity দেখুন।"},
+        {"q":"Merge করার আগে page order ঠিক করব কীভাবে?","a":"Upload list-এ file reorder করুন এবং প্রতিটি file-এর page range আগে লিখে রাখুন।"},
+        {"q":"Password-protected PDF merge করা যায়?","a":"Permission ও password প্রয়োজন হতে পারে। আপনি অনুমোদিত হলে password দিন, restriction bypass করবেন না।"}
       ],
       "body": [
-        { "t": "p", "x": "একাধিক PDF merge করে report, receipt, application বা project document এক file-এ রাখা যায়। কাজ শুরুর আগে কোন file আগে এবং কোনটি শেষে থাকবে তার তালিকা বানান। Filename-এ number যোগ করলে order বোঝা সহজ হয়। প্রতিটি source page ঠিক আছে কি না দেখুন এবং duplicate বা blank page চিহ্নিত করুন। Merge-এর পরে একটি নতুন output তৈরি হবে, তাই original file আলাদা রেখে কাজ করুন।" },
-        { "t": "h2", "x": "সঠিক order ও page selection" },
-        { "t": "p", "x": "Tool-এ file যোগ করার পরে thumbnail বা list ধরে order ঠিক করুন। কোনো source file-এ অপ্রাসঙ্গিক page থাকলে merge-এর আগে প্রয়োজনমতো বাদ দিন। Page number printed number থেকে আলাদা হতে পারে, তাই thumbnail ও document title দেখে মিলিয়ে নিন। Mixed portrait ও landscape page থাকলে output-এ rotation স্বাভাবিক আছে কি না যাচাই করুন।" },
-        { "t": "h2", "x": "Merged file যাচাই" },
-        { "t": "p", "x": "Output খুলে total page count হিসাবের সঙ্গে মেলে কি না দেখুন। প্রথম ও শেষ page, file boundary এবং মাঝের transition পরীক্ষা করুন। Bookmark, hyperlink, form field বা digital signature merge-এর পরে বদলাতে পারে। Page size ও text selectability যাচাই করুন। Merged file বড় হলে compression আলাদাভাবে বিবেচনা করুন, কিন্তু clarity পরীক্ষা না করে জোরালো compression দেবেন না।" },
-        { "t": "h2", "x": "Privacy এবং recordkeeping" },
-        { "t": "p", "x": "ব্যক্তিগত বা business file online service-এ upload করার আগে policy দেখুন। Merge করা file নতুন distribution copy, তাই কাকে পাঠাবেন এবং এতে সব page থাকা উচিত কি না নিশ্চিত করুন। Signed source-এর original কপি রাখুন; merge করা version-এ signature verification বদলাতে পারে। Final name-এ project ও version লিখে রাখুন।" },
-        { "t": "p", "x": "যদি combined document-এ cover page, table of contents বা divider page দরকার হয়, সেগুলো আগে তৈরি করে sequence-এ রাখুন। Recipient-কে সংক্ষিপ্ত message-এ merged file-এর contents জানান। এতে বড় attachment খুলে কোন অংশ কোথায় আছে খুঁজতে সময় কম লাগে।" },
-        { "t": "cta", "tool": "merge-pdf", "x": "PDF যোগ করে order ঠিক করুন, তারপর merged file খুলে পরীক্ষা করুন।" }
+        {"t":"p","x":"একাধিক PDF merge করে report, receipt, application বা project document এক file-এ রাখা যায়। কাজ শুরুর আগে কোন file আগে এবং কোনটি শেষে থাকবে তার তালিকা বানান। Filename-এ number যোগ করলে order বোঝা সহজ হয়। প্রতিটি source page ঠিক আছে কি না দেখুন এবং duplicate বা blank page চিহ্নিত করুন। Merge-এর পরে একটি নতুন output তৈরি হবে, তাই original file আলাদা রেখে কাজ করুন।"},
+        {"t":"h2","x":"সঠিক order ও page selection"},
+        {"t":"p","x":"Tool-এ file যোগ করার পরে thumbnail বা list ধরে order ঠিক করুন। কোনো source file-এ অপ্রাসঙ্গিক page থাকলে merge-এর আগে প্রয়োজনমতো বাদ দিন। Page number printed number থেকে আলাদা হতে পারে, তাই thumbnail ও document title দেখে মিলিয়ে নিন। Mixed portrait ও landscape page থাকলে output-এ rotation স্বাভাবিক আছে কি না যাচাই করুন।"},
+        {"t":"h2","x":"Merged file যাচাই"},
+        {"t":"p","x":"Output খুলে total page count হিসাবের সঙ্গে মেলে কি না দেখুন। প্রথম ও শেষ page, file boundary এবং মাঝের transition পরীক্ষা করুন। Bookmark, hyperlink, form field বা digital signature merge-এর পরে বদলাতে পারে। Page size ও text selectability যাচাই করুন। Merged file বড় হলে compression আলাদাভাবে বিবেচনা করুন, কিন্তু clarity পরীক্ষা না করে জোরালো compression দেবেন না।"},
+        {"t":"h2","x":"Privacy এবং recordkeeping"},
+        {"t":"p","x":"ব্যক্তিগত বা business file online service-এ upload করার আগে policy দেখুন। Merge করা file নতুন distribution copy, তাই কাকে পাঠাবেন এবং এতে সব page থাকা উচিত কি না নিশ্চিত করুন। Signed source-এর original কপি রাখুন; merge করা version-এ signature verification বদলাতে পারে। Final name-এ project ও version লিখে রাখুন।"},
+        {"t":"p","x":"যদি combined document-এ cover page, table of contents বা divider page দরকার হয়, সেগুলো আগে তৈরি করে sequence-এ রাখুন। Recipient-কে সংক্ষিপ্ত message-এ merged file-এর contents জানান। এতে বড় attachment খুলে কোন অংশ কোথায় আছে খুঁজতে সময় কম লাগে।"},
+        {"t":"cta","tool":"merge-pdf","x":"PDF যোগ করে order ঠিক করুন, তারপর merged file খুলে পরীক্ষা করুন।"}
       ]
     },
     {
@@ -33,21 +33,21 @@
       "description": "Browser-based PDF merger দিয়ে file order ঠিক করে এক নথি বানান। Upload policy, password এবং final output যাচাই করুন।",
       "metaDescription": "Browser-based PDF merger দিয়ে file order ঠিক করে এক নথি বানান। Upload policy, password এবং final output যাচাই করুন।",
       "faqs": [
-        { "q": "Acrobat ছাড়া PDF merge করা যায়?", "a": "হ্যাঁ। Desktop operating system বা browser-based tool ব্যবহার করা যায়, তবে features ও privacy আলাদা।" },
-        { "q": "Browser merger-এ upload নিরাপদ?", "a": "Service policy ও data handling যাচাই করে নিন। Confidential document হলে প্রতিষ্ঠানের অনুমোদিত local tool ব্যবহার করুন।" },
-        { "q": "Merge-এর পর original file মুছে ফেলব?", "a": "না। Final output পরীক্ষা না করা পর্যন্ত এবং retention rule অনুযায়ী source সংরক্ষণ করুন।" }
+        {"q":"Acrobat ছাড়া PDF merge করা যায়?","a":"হ্যাঁ। Desktop operating system বা browser-based tool ব্যবহার করা যায়, তবে features ও privacy আলাদা।"},
+        {"q":"Browser merger-এ upload নিরাপদ?","a":"Service policy ও data handling যাচাই করে নিন। Confidential document হলে প্রতিষ্ঠানের অনুমোদিত local tool ব্যবহার করুন।"},
+        {"q":"Merge-এর পর original file মুছে ফেলব?","a":"না। Final output পরীক্ষা না করা পর্যন্ত এবং retention rule অনুযায়ী source সংরক্ষণ করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF একত্র করতে Adobe Acrobat একমাত্র পথ নয়। Desktop software, operating system utility বা online service-এ merge সুবিধা থাকতে পারে। Tool বেছে নেওয়ার সময় প্রয়োজনীয় page reorder, batch size, password support এবং privacy বিবেচনা করুন। Browser merger দ্রুত, তবে file server-এ যায় কি না policy-তে পড়ুন। Highly confidential নথির জন্য অনুমোদিত local option নিরাপদ হতে পারে।" },
-        { "t": "h2", "x": "File প্রস্তুত করুন" },
-        { "t": "p", "x": "প্রতিটি PDF খুলে page count ও orientation যাচাই করুন। File name-এর শুরুতে ক্রম সংখ্যা দিলে order ভুল হওয়ার সম্ভাবনা কমে। Duplicate document, draft বা blank scan আছে কি না দেখুন। Password-protected file হলে access করার অধিকার ও password আছে কি না নিশ্চিত করুন।" },
-        { "t": "h2", "x": "Merge এবং review" },
-        { "t": "p", "x": "Source file upload বা select করে list সাজান, তারপর merged copy তৈরি করুন। Output-এ page boundary, table, image, bookmark এবং hyperlink দেখুন। Page সংখ্যা প্রত্যাশিত কি না হিসাব করুন। Online service ব্যবহার করলে transfer complete না হওয়া পর্যন্ত tab বন্ধ করবেন না এবং download শেষে file খুলে দেখুন।" },
-        { "t": "h2", "x": "সঠিক workflow নির্বাচন" },
-        { "t": "p", "x": "এককালীন সাধারণ কাজে free utility যথেষ্ট হতে পারে। Team workflow-তে audit trail, access control, retention এবং policy approval প্রয়োজন হতে পারে। Digital signature-যুক্ত file merge করলে signature status বদলাতে পারে, তাই original signed document রেখে recipient-এর নির্দেশনা নিন। Final merged copy কেবল প্রয়োজনীয় লোকের সঙ্গে share করুন।" },
-        { "t": "p", "x": "একবারের কাজ হলে browser tool সুবিধাজনক হতে পারে, কিন্তু frequent regulated workflow-তে locally approved desktop software বা enterprise service বেশি মানানসই। Version, access এবং deletion policy না জেনে client file online service-এ দেবেন না।" },
-        { "t": "p", "x": "Feature list পড়ার সময় batch processing, maximum file size এবং supported encryption-ও দেখুন। কাজ শেষে source file এবং output-এর version আলাদা করে রাখুন।" },
-        { "t": "cta", "tool": "merge-pdf", "x": "Acrobat ছাড়াই PDF merge করে order এবং output যাচাই করুন।" }
+        {"t":"p","x":"PDF একত্র করতে Adobe Acrobat একমাত্র পথ নয়। Desktop software, operating system utility বা online service-এ merge সুবিধা থাকতে পারে। Tool বেছে নেওয়ার সময় প্রয়োজনীয় page reorder, batch size, password support এবং privacy বিবেচনা করুন। Browser merger দ্রুত, তবে file server-এ যায় কি না policy-তে পড়ুন। Highly confidential নথির জন্য অনুমোদিত local option নিরাপদ হতে পারে।"},
+        {"t":"h2","x":"File প্রস্তুত করুন"},
+        {"t":"p","x":"প্রতিটি PDF খুলে page count ও orientation যাচাই করুন। File name-এর শুরুতে ক্রম সংখ্যা দিলে order ভুল হওয়ার সম্ভাবনা কমে। Duplicate document, draft বা blank scan আছে কি না দেখুন। Password-protected file হলে access করার অধিকার ও password আছে কি না নিশ্চিত করুন।"},
+        {"t":"h2","x":"Merge এবং review"},
+        {"t":"p","x":"Source file upload বা select করে list সাজান, তারপর merged copy তৈরি করুন। Output-এ page boundary, table, image, bookmark এবং hyperlink দেখুন। Page সংখ্যা প্রত্যাশিত কি না হিসাব করুন। Online service ব্যবহার করলে transfer complete না হওয়া পর্যন্ত tab বন্ধ করবেন না এবং download শেষে file খুলে দেখুন।"},
+        {"t":"h2","x":"সঠিক workflow নির্বাচন"},
+        {"t":"p","x":"এককালীন সাধারণ কাজে free utility যথেষ্ট হতে পারে। Team workflow-তে audit trail, access control, retention এবং policy approval প্রয়োজন হতে পারে। Digital signature-যুক্ত file merge করলে signature status বদলাতে পারে, তাই original signed document রেখে recipient-এর নির্দেশনা নিন। Final merged copy কেবল প্রয়োজনীয় লোকের সঙ্গে share করুন।"},
+        {"t":"p","x":"একবারের কাজ হলে browser tool সুবিধাজনক হতে পারে, কিন্তু frequent regulated workflow-তে locally approved desktop software বা enterprise service বেশি মানানসই। Version, access এবং deletion policy না জেনে client file online service-এ দেবেন না।"},
+        {"t":"p","x":"Feature list পড়ার সময় batch processing, maximum file size এবং supported encryption-ও দেখুন। কাজ শেষে source file এবং output-এর version আলাদা করে রাখুন।"},
+        {"t":"cta","tool":"merge-pdf","x":"Acrobat ছাড়াই PDF merge করে order এবং output যাচাই করুন।"}
       ]
     },
     {
@@ -58,21 +58,21 @@
       "description": "JPG বা PNG scan-কে PDF page বানিয়ে বিদ্যমান নথির সঙ্গে যুক্ত করুন। Page order, size, orientation এবং OCR-এর প্রয়োজন যাচাই করুন।",
       "metaDescription": "JPG বা PNG scan-কে PDF page বানিয়ে বিদ্যমান নথির সঙ্গে যুক্ত করুন। Page order, size, orientation এবং OCR-এর প্রয়োজন যাচাই করুন।",
       "faqs": [
-        { "q": "Image সরাসরি PDF-এর সঙ্গে merge হয়?", "a": "প্রথমে image-কে PDF page করা লাগতে পারে। এরপর page sequence ঠিক করে merge করুন।" },
-        { "q": "Image page searchable হবে?", "a": "না, image-only page-এ OCR ছাড়া text search সাধারণত চলে না। OCR output যাচাই করুন।" },
-        { "q": "Scan page-এর size আলাদা হলে?", "a": "Fit বা crop preview করে মূল aspect ratio ও গুরুত্বপূর্ণ প্রান্ত অক্ষত রাখুন।" }
+        {"q":"Image সরাসরি PDF-এর সঙ্গে merge হয়?","a":"প্রথমে image-কে PDF page করা লাগতে পারে। এরপর page sequence ঠিক করে merge করুন।"},
+        {"q":"Image page searchable হবে?","a":"না, image-only page-এ OCR ছাড়া text search সাধারণত চলে না। OCR output যাচাই করুন।"},
+        {"q":"Scan page-এর size আলাদা হলে?","a":"Fit বা crop preview করে মূল aspect ratio ও গুরুত্বপূর্ণ প্রান্ত অক্ষত রাখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "কাগজে পাওয়া receipt, signed form বা অতিরিক্ত নোটকে বিদ্যমান PDF report-এর সঙ্গে রাখতে হলে scan image আগে page হিসেবে প্রস্তুত করুন। JPG বা PNG-কে PDF-এ রূপান্তর করে তারপর merge করলে file order নিয়ন্ত্রণ করা যায়। Scan-এর লেখা image হিসেবেই থাকবে, তাই text search বা selection দরকার হলে OCR-এর প্রয়োজন হতে পারে। Original scan ও existing PDF দুটিই আলাদা রাখুন।" },
-        { "t": "h2", "x": "Scan পরিষ্কার করুন" },
-        { "t": "p", "x": "প্রান্ত crop, rotation এবং contrast ঠিক করুন। নথির সিল, signature, date বা ছোট লেখা যেন কাটা না যায় দেখুন। Image resolution কম হলে বড় page-এ বসালে pixelation হবে। একাধিক scan-এর filename number দিয়ে সাজান এবং উল্টো পৃষ্ঠা আছে কি না পরীক্ষা করুন।" },
-        { "t": "h2", "x": "PDF page বানিয়ে merge" },
-        { "t": "p", "x": "Image converter-এ page size ও fit option দেখে PDF তৈরি করুন। তারপর existing PDF ও নতুন page file merge করে সঠিক জায়গায় বসান। Output-এর page count মিলিয়ে দেখুন এবং scan attachment মূল document-এর পরে বা নির্ধারিত section-এ আছে কি না যাচাই করুন।" },
-        { "t": "h2", "x": "Searchability ও গোপনীয়তা" },
-        { "t": "p", "x": "Image page text-searchable করতে OCR চালান, তবে নাম, account number এবং amount হাতে যাচাই করুন। Medical বা legal document হলে OCR ভুল ঝুঁকিপূর্ণ হতে পারে। Scan-এ ব্যক্তিগত তথ্য থাকলে upload policy পড়ুন এবং final PDF সঠিক recipient-কে দিন।" },
-        { "t": "p", "x": "Scan থেকে নতুন PDF page-এর date বা source label দরকার হলে footer বা cover note হিসেবে যোগ করুন। এটি আলাদা করা page-এর provenance বোঝায়। তবে label যেন original evidence ঢেকে না দেয়, এবং court বা official submission-এর নিয়ম ভঙ্গ না করে তা নিশ্চিত করুন।" },
-        { "t": "p", "x": "Merged result print করতে হলে scan page-এর paper size ও orientation মূল document-এর সঙ্গে মানানসই করুন।" },
-        { "t": "cta", "tool": "jpg-to-pdf", "x": "Scan image-কে PDF page বানিয়ে মূল নথির সঙ্গে merge করুন।" }
+        {"t":"p","x":"কাগজে পাওয়া receipt, signed form বা অতিরিক্ত নোটকে বিদ্যমান PDF report-এর সঙ্গে রাখতে হলে scan image আগে page হিসেবে প্রস্তুত করুন। JPG বা PNG-কে PDF-এ রূপান্তর করে তারপর merge করলে file order নিয়ন্ত্রণ করা যায়। Scan-এর লেখা image হিসেবেই থাকবে, তাই text search বা selection দরকার হলে OCR-এর প্রয়োজন হতে পারে। Original scan ও existing PDF দুটিই আলাদা রাখুন।"},
+        {"t":"h2","x":"Scan পরিষ্কার করুন"},
+        {"t":"p","x":"প্রান্ত crop, rotation এবং contrast ঠিক করুন। নথির সিল, signature, date বা ছোট লেখা যেন কাটা না যায় দেখুন। Image resolution কম হলে বড় page-এ বসালে pixelation হবে। একাধিক scan-এর filename number দিয়ে সাজান এবং উল্টো পৃষ্ঠা আছে কি না পরীক্ষা করুন।"},
+        {"t":"h2","x":"PDF page বানিয়ে merge"},
+        {"t":"p","x":"Image converter-এ page size ও fit option দেখে PDF তৈরি করুন। তারপর existing PDF ও নতুন page file merge করে সঠিক জায়গায় বসান। Output-এর page count মিলিয়ে দেখুন এবং scan attachment মূল document-এর পরে বা নির্ধারিত section-এ আছে কি না যাচাই করুন।"},
+        {"t":"h2","x":"Searchability ও গোপনীয়তা"},
+        {"t":"p","x":"Image page text-searchable করতে OCR চালান, তবে নাম, account number এবং amount হাতে যাচাই করুন। Medical বা legal document হলে OCR ভুল ঝুঁকিপূর্ণ হতে পারে। Scan-এ ব্যক্তিগত তথ্য থাকলে upload policy পড়ুন এবং final PDF সঠিক recipient-কে দিন।"},
+        {"t":"p","x":"Scan থেকে নতুন PDF page-এর date বা source label দরকার হলে footer বা cover note হিসেবে যোগ করুন। এটি আলাদা করা page-এর provenance বোঝায়। তবে label যেন original evidence ঢেকে না দেয়, এবং court বা official submission-এর নিয়ম ভঙ্গ না করে তা নিশ্চিত করুন।"},
+        {"t":"p","x":"Merged result print করতে হলে scan page-এর paper size ও orientation মূল document-এর সঙ্গে মানানসই করুন।"},
+        {"t":"cta","tool":"jpg-to-pdf","x":"Scan image-কে PDF page বানিয়ে মূল নথির সঙ্গে merge করুন।"}
       ]
     },
     {
@@ -83,21 +83,21 @@
       "description": "Thumbnail view-তে PDF page reorder, rotate ও delete করুন। পরিবর্তনের পরে page count, reading flow, bookmark এবং signature পরীক্ষা করুন।",
       "metaDescription": "Thumbnail view-তে PDF page reorder, rotate ও delete করুন। পরিবর্তনের পরে page count, reading flow, bookmark এবং signature পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Page rearrange করলে content বদলায়?", "a": "সাধারণত page order বদলায়, text rewrite হয় না; তবে document structure output-এ পরীক্ষা করুন।" },
-        { "q": "একটি page rotate করলে সব page ঘুরবে?", "a": "Tool-এ selected page বা all page option থাকতে পারে। Download-এর পরে প্রতিটি orientation দেখুন।" },
-        { "q": "Delete করা page কি restore করা যাবে?", "a": "নতুন copy থেকে নাও যেতে পারে। কাজ শুরুর আগে original PDF-এর backup রাখুন।" }
+        {"q":"Page rearrange করলে content বদলায়?","a":"সাধারণত page order বদলায়, text rewrite হয় না; তবে document structure output-এ পরীক্ষা করুন।"},
+        {"q":"একটি page rotate করলে সব page ঘুরবে?","a":"Tool-এ selected page বা all page option থাকতে পারে। Download-এর পরে প্রতিটি orientation দেখুন।"},
+        {"q":"Delete করা page কি restore করা যাবে?","a":"নতুন copy থেকে নাও যেতে পারে। কাজ শুরুর আগে original PDF-এর backup রাখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এর page organization দিয়ে scan-এর ভুল order ঠিক করা, sideways page ঘোরানো বা blank page বাদ দেওয়া যায়। Thumbnail view-তে পুরো document দেখা সহজ, কিন্তু page number ও printed number ভিন্ন হতে পারে। শুরুতে original file-এর backup নিন এবং কোন page কোথায় যাবে তার তালিকা করুন। Signed বা official record পরিবর্তন করার আগে recipient-এর নিয়ম দেখুন।" },
-        { "t": "h2", "x": "Thumbnail-এ page reorder" },
-        { "t": "p", "x": "Thumbnail drag করে নতুন জায়গায় নিন। Chapter page, cover এবং appendix-এর sequence মিলিয়ে দেখুন। একাধিক page move করলে first ও last page position আবার পরীক্ষা করুন। Bookmark বা internal link পুরনো page location দেখাতে পারে, তাই output-এ সেগুলো খুলে দেখুন।" },
-        { "t": "h2", "x": "Rotation ও deletion" },
-        { "t": "p", "x": "Sideways scan select করে 90-degree step-এ rotate করুন। Page readable orientation-এ আছে কি না full preview দেখুন। Delete করার আগে page content এবং printed numbering নিশ্চিত করুন। একটি duplicate বা blank page মুছে ফেলার পর remaining page count expected total-এর সঙ্গে মেলান।" },
-        { "t": "h2", "x": "Output ও record" },
-        { "t": "p", "x": "Reorganized PDF download করে first, middle এবং final page খুলুন। Signature panel বা form field থাকলে status পরীক্ষা করুন, কারণ document modification signature invalid করতে পারে। New file-কে revision name দিন এবং original নিরাপদে রাখুন। Confidential file browser service-এ দেওয়ার আগে privacy policy যাচাই করুন।" },
-        { "t": "p", "x": "Page organize করার পর document-এর content list বা index থাকলে সংশ্লিষ্ট page reference update করুন। কিছু internal hyperlink পুরনো position-এ থাকতে পারে। Output-এর সঙ্গে একটি change note রাখলে সহকর্মী বুঝবেন কোন page কেন সরানো বা rotate করা হয়েছে।" },
-        { "t": "p", "x": "একটি ভুল page পরিবর্তন হলে আবার backup থেকে শুরু করুন, যাতে অজান্তে original-এর ওপর কাজ না চলে।" },
-        { "t": "cta", "tool": "organize-pdf", "x": "Thumbnail দিয়ে page সাজান, ঘোরান বা বাদ দিন, তারপর output পরীক্ষা করুন।" }
+        {"t":"p","x":"PDF-এর page organization দিয়ে scan-এর ভুল order ঠিক করা, sideways page ঘোরানো বা blank page বাদ দেওয়া যায়। Thumbnail view-তে পুরো document দেখা সহজ, কিন্তু page number ও printed number ভিন্ন হতে পারে। শুরুতে original file-এর backup নিন এবং কোন page কোথায় যাবে তার তালিকা করুন। Signed বা official record পরিবর্তন করার আগে recipient-এর নিয়ম দেখুন।"},
+        {"t":"h2","x":"Thumbnail-এ page reorder"},
+        {"t":"p","x":"Thumbnail drag করে নতুন জায়গায় নিন। Chapter page, cover এবং appendix-এর sequence মিলিয়ে দেখুন। একাধিক page move করলে first ও last page position আবার পরীক্ষা করুন। Bookmark বা internal link পুরনো page location দেখাতে পারে, তাই output-এ সেগুলো খুলে দেখুন।"},
+        {"t":"h2","x":"Rotation ও deletion"},
+        {"t":"p","x":"Sideways scan select করে 90-degree step-এ rotate করুন। Page readable orientation-এ আছে কি না full preview দেখুন। Delete করার আগে page content এবং printed numbering নিশ্চিত করুন। একটি duplicate বা blank page মুছে ফেলার পর remaining page count expected total-এর সঙ্গে মেলান।"},
+        {"t":"h2","x":"Output ও record"},
+        {"t":"p","x":"Reorganized PDF download করে first, middle এবং final page খুলুন। Signature panel বা form field থাকলে status পরীক্ষা করুন, কারণ document modification signature invalid করতে পারে। New file-কে revision name দিন এবং original নিরাপদে রাখুন। Confidential file browser service-এ দেওয়ার আগে privacy policy যাচাই করুন।"},
+        {"t":"p","x":"Page organize করার পর document-এর content list বা index থাকলে সংশ্লিষ্ট page reference update করুন। কিছু internal hyperlink পুরনো position-এ থাকতে পারে। Output-এর সঙ্গে একটি change note রাখলে সহকর্মী বুঝবেন কোন page কেন সরানো বা rotate করা হয়েছে।"},
+        {"t":"p","x":"একটি ভুল page পরিবর্তন হলে আবার backup থেকে শুরু করুন, যাতে অজান্তে original-এর ওপর কাজ না চলে।"},
+        {"t":"cta","tool":"organize-pdf","x":"Thumbnail দিয়ে page সাজান, ঘোরান বা বাদ দিন, তারপর output পরীক্ষা করুন।"}
       ]
     },
     {
@@ -108,20 +108,20 @@
       "description": "একাধিক source PDF থেকে প্রয়োজনীয় page range বেছে custom order তৈরি করুন। Final sequence ও source reference যাচাই করুন।",
       "metaDescription": "একাধিক source PDF থেকে প্রয়োজনীয় page range বেছে custom order তৈরি করুন। Final sequence ও source reference যাচাই করুন।",
       "faqs": [
-        { "q": "File merge-এর পরে page order বদলাতে পারি?", "a": "হ্যাঁ, merge করার আগে file list সাজান বা শেষে page organizer ব্যবহার করুন।" },
-        { "q": "Source page number কীভাবে track করব?", "a": "একটি mapping note রাখুন, যেখানে source filename ও মূল page number থাকবে।" },
-        { "q": "Custom merge-এ bookmark থাকবে?", "a": "Tool ভেদে bookmark আচরণ আলাদা। Merged output-এ bookmark ও link পরীক্ষা করুন।" }
+        {"q":"File merge-এর পরে page order বদলাতে পারি?","a":"হ্যাঁ, merge করার আগে file list সাজান বা শেষে page organizer ব্যবহার করুন।"},
+        {"q":"Source page number কীভাবে track করব?","a":"একটি mapping note রাখুন, যেখানে source filename ও মূল page number থাকবে।"},
+        {"q":"Custom merge-এ bookmark থাকবে?","a":"Tool ভেদে bookmark আচরণ আলাদা। Merged output-এ bookmark ও link পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "প্রকল্পে বিভিন্ন PDF থেকে নির্দিষ্ট page নিয়ে নতুন sequence দরকার হতে পারে, যেমন cover, proposal, appendix এবং receipt। শুধু file order merge করলে প্রয়োজনীয় page range মিলবে না। Source filename ও page number নিয়ে একটি mapping list তৈরি করুন। Printed page label নয়, thumbnail ও document section দেখে source page শনাক্ত করুন।" },
-        { "t": "h2", "x": "Source range নথিভুক্ত করুন" },
-        { "t": "p", "x": "প্রতিটি source PDF-এ কোন page নিতে হবে এবং কোন ক্রমে রাখতে হবে লিখুন। Page count ও internal numbering আলাদা হলে দুই নম্বরই note করুন। Duplicate page বা revision copy বাদ দিন। Source document-এর version/date লিখে রাখুন, যাতে ভুল copy ব্যবহার না হয়।" },
-        { "t": "h2", "x": "Merge এবং custom sequence" },
-        { "t": "p", "x": "প্রয়োজনীয় page আলাদা করে extract করে custom order-এ merge করুন, অথবা merge-এর পরে organizer-এ thumbnail drag করুন। Output-এ section boundary, orientation এবং page transition দেখুন। Page number ধারাবাহিক করতে প্রয়োজন হলে আলাদা numbering যোগ করুন, কিন্তু printed original labels মুছবেন না যদি reference দরকার হয়।" },
-        { "t": "h2", "x": "Review log ও privacy" },
-        { "t": "p", "x": "Final page count expected total-এর সঙ্গে মিলিয়ে নিন। Source page mapping সংরক্ষণ করুন যাতে reviewer প্রতিটি অংশ trace করতে পারে। Merge করা file-এ confidential page accidentally যোগ হয়েছে কি না দেখুন। Digital signature বা official record থাকলে original রেখে recipient-এর নির্দেশনা ছাড়া পরিবর্তিত copy-কে মূল বলে উপস্থাপন করবেন না।" },
-        { "t": "p", "x": "Review team-কে mapping list-ও দিন, যদি তারা source page trace করতে চায়। এতে একটি table বা attachment কোন original file থেকে এসেছে জানা থাকে। কাজ শেষ হলে temporary extract copy সরিয়ে রাখুন, তবে retention rule অনুযায়ী প্রয়োজনীয় source record মুছবেন না।" },
-        { "t": "cta", "tool": "merge-pdf", "x": "Custom sequence-এ PDF page একত্র করুন এবং mapping তালিকার সঙ্গে তুলনা করুন।" }
+        {"t":"p","x":"প্রকল্পে বিভিন্ন PDF থেকে নির্দিষ্ট page নিয়ে নতুন sequence দরকার হতে পারে, যেমন cover, proposal, appendix এবং receipt। শুধু file order merge করলে প্রয়োজনীয় page range মিলবে না। Source filename ও page number নিয়ে একটি mapping list তৈরি করুন। Printed page label নয়, thumbnail ও document section দেখে source page শনাক্ত করুন।"},
+        {"t":"h2","x":"Source range নথিভুক্ত করুন"},
+        {"t":"p","x":"প্রতিটি source PDF-এ কোন page নিতে হবে এবং কোন ক্রমে রাখতে হবে লিখুন। Page count ও internal numbering আলাদা হলে দুই নম্বরই note করুন। Duplicate page বা revision copy বাদ দিন। Source document-এর version/date লিখে রাখুন, যাতে ভুল copy ব্যবহার না হয়।"},
+        {"t":"h2","x":"Merge এবং custom sequence"},
+        {"t":"p","x":"প্রয়োজনীয় page আলাদা করে extract করে custom order-এ merge করুন, অথবা merge-এর পরে organizer-এ thumbnail drag করুন। Output-এ section boundary, orientation এবং page transition দেখুন। Page number ধারাবাহিক করতে প্রয়োজন হলে আলাদা numbering যোগ করুন, কিন্তু printed original labels মুছবেন না যদি reference দরকার হয়।"},
+        {"t":"h2","x":"Review log ও privacy"},
+        {"t":"p","x":"Final page count expected total-এর সঙ্গে মিলিয়ে নিন। Source page mapping সংরক্ষণ করুন যাতে reviewer প্রতিটি অংশ trace করতে পারে। Merge করা file-এ confidential page accidentally যোগ হয়েছে কি না দেখুন। Digital signature বা official record থাকলে original রেখে recipient-এর নির্দেশনা ছাড়া পরিবর্তিত copy-কে মূল বলে উপস্থাপন করবেন না।"},
+        {"t":"p","x":"Review team-কে mapping list-ও দিন, যদি তারা source page trace করতে চায়। এতে একটি table বা attachment কোন original file থেকে এসেছে জানা থাকে। কাজ শেষ হলে temporary extract copy সরিয়ে রাখুন, তবে retention rule অনুযায়ী প্রয়োজনীয় source record মুছবেন না। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"merge-pdf","x":"Custom sequence-এ PDF page একত্র করুন এবং mapping তালিকার সঙ্গে তুলনা করুন।"}
       ]
     },
     {
@@ -132,20 +132,20 @@
       "description": "OCR দিয়ে scan image-এ text layer যোগ করুন। পরিষ্কার capture, সঠিক language এবং name, number ও table-এর manual review জরুরি।",
       "metaDescription": "OCR দিয়ে scan image-এ text layer যোগ করুন। পরিষ্কার capture, সঠিক language এবং name, number ও table-এর manual review জরুরি।",
       "faqs": [
-        { "q": "OCR কি scanned page-কে আসল text বানায়?", "a": "OCR image-এর ওপর recognized text layer তৈরি করে; ভুল থাকতে পারে এবং visual image সাধারণত থাকে।" },
-        { "q": "বাংলা scan-এ OCR কাজ করে?", "a": "Language support ও scan quality অনুযায়ী ফল বদলায়। যুক্তাক্ষর, সংখ্যা ও punctuation হাতে যাচাই করুন।" },
-        { "q": "OCR-এর পরে file searchable কি না দেখব?", "a": "একটি পরিচিত শব্দ search ও copy করে original page-এর সঙ্গে তুলনা করুন।" }
+        {"q":"OCR কি scanned page-কে আসল text বানায়?","a":"OCR image-এর ওপর recognized text layer তৈরি করে; ভুল থাকতে পারে এবং visual image সাধারণত থাকে।"},
+        {"q":"বাংলা scan-এ OCR কাজ করে?","a":"Language support ও scan quality অনুযায়ী ফল বদলায়। যুক্তাক্ষর, সংখ্যা ও punctuation হাতে যাচাই করুন।"},
+        {"q":"OCR-এর পরে file searchable কি না দেখব?","a":"একটি পরিচিত শব্দ search ও copy করে original page-এর সঙ্গে তুলনা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Scanned PDF দেখতে text document-এর মতো হলেও প্রতিটি page কেবল image হতে পারে। OCR বা optical character recognition image-এর অক্ষর চিনে searchable text layer যোগ করে। OCR accuracy নির্ভর করে resolution, contrast, page angle, language এবং typeface-এর ওপর। পরিষ্কার scan দিয়ে শুরু করুন। OCR ফলকে নির্ভুল source ধরে নেবেন না, বিশেষ করে legal name, amount, date বা medical detail হলে।" },
-        { "t": "h2", "x": "Scan প্রস্তুত করুন" },
-        { "t": "p", "x": "Page সোজা, আলো সমান এবং অক্ষর যথেষ্ট বড় রাখুন। Shadow, skew, folded edge এবং background noise accuracy কমায়। একাধিক ভাষা থাকলে OCR tool-এ সঠিক language নির্বাচন করুন। Image খুব কম resolution হলে নতুন scan করা ভালো, কারণ শুধু contrast বদলে অনুপস্থিত detail ফিরিয়ে আনা যায় না।" },
-        { "t": "h2", "x": "OCR চালান ও পরীক্ষা করুন" },
-        { "t": "p", "x": "OCR শেষ হলে পরিচিত শব্দ search করুন এবং text copy করে দেখুন। বাংলা যুক্তাক্ষর, কারচিহ্ন, punctuation এবং numerals original-এর সঙ্গে মিলান। Table row order ও column alignment দেখুন। OCR text visually লুকানো layer হতে পারে, তাই screen-এ page ঠিক দেখালেই extraction সঠিক ধরে নেবেন না।" },
-        { "t": "h2", "x": "Privacy ও downstream ব্যবহার" },
-        { "t": "p", "x": "OCR searchable data তৈরি করে, ফলে নথির ভেতরের sensitive শব্দ খুঁজে পাওয়া আরও সহজ হতে পারে। Share করার আগে privacy review করুন। PrintxPDF OCR browser-এ চলে, তবুও input ও output file নিরাপদে রাখুন। Text extraction বা indexing-এর আগে permission যাচাই করুন।" },
-        { "t": "p", "x": "OCR tool একাধিক language সমর্থন করলে একই page-এ ব্যবহৃত script নির্বাচন করুন। শুধু English বেছে নিলে বাংলা শব্দের character mapping ভুল হতে পারে। বড় batch চালানোর আগে কয়েকটি page sample হিসেবে প্রক্রিয়া করুন এবং confidence কম এমন অংশ হাতে পরীক্ষা করুন।" },
-        { "t": "cta", "tool": "ocr-pdf", "x": "Scan-এ OCR চালিয়ে কয়েকটি শব্দ search ও copy করে ফল যাচাই করুন।" }
+        {"t":"p","x":"Scanned PDF দেখতে text document-এর মতো হলেও প্রতিটি page কেবল image হতে পারে। OCR বা optical character recognition image-এর অক্ষর চিনে searchable text layer যোগ করে। OCR accuracy নির্ভর করে resolution, contrast, page angle, language এবং typeface-এর ওপর। পরিষ্কার scan দিয়ে শুরু করুন। OCR ফলকে নির্ভুল source ধরে নেবেন না, বিশেষ করে legal name, amount, date বা medical detail হলে।"},
+        {"t":"h2","x":"Scan প্রস্তুত করুন"},
+        {"t":"p","x":"Page সোজা, আলো সমান এবং অক্ষর যথেষ্ট বড় রাখুন। Shadow, skew, folded edge এবং background noise accuracy কমায়। একাধিক ভাষা থাকলে OCR tool-এ সঠিক language নির্বাচন করুন। Image খুব কম resolution হলে নতুন scan করা ভালো, কারণ শুধু contrast বদলে অনুপস্থিত detail ফিরিয়ে আনা যায় না।"},
+        {"t":"h2","x":"OCR চালান ও পরীক্ষা করুন"},
+        {"t":"p","x":"OCR শেষ হলে পরিচিত শব্দ search করুন এবং text copy করে দেখুন। বাংলা যুক্তাক্ষর, কারচিহ্ন, punctuation এবং numerals original-এর সঙ্গে মিলান। Table row order ও column alignment দেখুন। OCR text visually লুকানো layer হতে পারে, তাই screen-এ page ঠিক দেখালেই extraction সঠিক ধরে নেবেন না।"},
+        {"t":"h2","x":"Privacy ও downstream ব্যবহার"},
+        {"t":"p","x":"OCR searchable data তৈরি করে, ফলে নথির ভেতরের sensitive শব্দ খুঁজে পাওয়া আরও সহজ হতে পারে। Share করার আগে privacy review করুন। PrintxPDF OCR browser-এ চলে, তবুও input ও output file নিরাপদে রাখুন। Text extraction বা indexing-এর আগে permission যাচাই করুন।"},
+        {"t":"p","x":"OCR tool একাধিক language সমর্থন করলে একই page-এ ব্যবহৃত script নির্বাচন করুন। শুধু English বেছে নিলে বাংলা শব্দের character mapping ভুল হতে পারে। বড় batch চালানোর আগে কয়েকটি page sample হিসেবে প্রক্রিয়া করুন এবং confidence কম এমন অংশ হাতে পরীক্ষা করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"ocr-pdf","x":"Scan-এ OCR চালিয়ে কয়েকটি শব্দ search ও copy করে ফল যাচাই করুন।"}
       ]
     },
     {
@@ -156,21 +156,21 @@
       "description": "Photo, screenshot বা scan থেকে OCR দিয়ে text নিন। Image পরিষ্কার করুন এবং গুরুত্বপূর্ণ নাম, সংখ্যা ও line break পরীক্ষা করুন।",
       "metaDescription": "Photo, screenshot বা scan থেকে OCR দিয়ে text নিন। Image পরিষ্কার করুন এবং গুরুত্বপূর্ণ নাম, সংখ্যা ও line break পরীক্ষা করুন।",
       "faqs": [
-        { "q": "যেকোনো photo থেকে text পাওয়া যাবে?", "a": "Image readable হতে হবে। Blur, glare, handwriting ও low contrast OCR-কে বাধা দিতে পারে।" },
-        { "q": "OCR কি handwriting চিনতে পারে?", "a": "কিছু service handwriting support করে, কিন্তু নির্ভুলতা printed text-এর তুলনায় কম হতে পারে।" },
-        { "q": "Extracted text ব্যবহারের আগে কী যাচাই করব?", "a": "নাম, তারিখ, amount, punctuation এবং line order original image-এর সঙ্গে মিলিয়ে নিন।" }
+        {"q":"যেকোনো photo থেকে text পাওয়া যাবে?","a":"Image readable হতে হবে। Blur, glare, handwriting ও low contrast OCR-কে বাধা দিতে পারে।"},
+        {"q":"OCR কি handwriting চিনতে পারে?","a":"কিছু service handwriting support করে, কিন্তু নির্ভুলতা printed text-এর তুলনায় কম হতে পারে।"},
+        {"q":"Extracted text ব্যবহারের আগে কী যাচাই করব?","a":"নাম, তারিখ, amount, punctuation এবং line order original image-এর সঙ্গে মিলিয়ে নিন।"}
       ],
       "body": [
-        { "t": "p", "x": "কোনো screenshot, poster, paper form বা signboard-এ লেখা থাকলে সেটি হাতে টাইপ না করে OCR দিয়ে text নেওয়া যেতে পারে। OCR tool image-এর shape দেখে অক্ষর অনুমান করে। পরিষ্কার printed text-এ ফল ভালো হতে পারে; handwriting, cursive font, glare বা tilted photo-তে ভুল বেশি হয়। Image-এর text extract করার অধিকার ও privacy বিবেচনা করুন, বিশেষ করে ID বা private message হলে।" },
-        { "t": "h2", "x": "Image capture উন্নত করুন" },
-        { "t": "p", "x": "Camera সোজা রাখুন, subject-এ focus করুন এবং shadow বা glare কমান। Text crop করার সময় অক্ষরের চারপাশে সামান্য margin রাখুন। Image খুব ছোট হলে original resolution ব্যবহার করুন। Mixed Bangla ও English text থাকলে language option দেখে নিন।" },
-        { "t": "h2", "x": "OCR ফল সংশোধন" },
-        { "t": "p", "x": "Output-এ line order, paragraph break এবং bullet পরীক্ষা করুন। 0/O, 1/I, comma/decimal এবং বাংলা কারচিহ্ন ভুল হতে পারে। Table থাকলে row ও column manually reconstruct করুন। Searchable copy-তে এমন error থাকলে পরবর্তী reader ভুল তথ্য পেতে পারে, তাই review না করে official কাজে ব্যবহার করবেন না।" },
-        { "t": "h2", "x": "File ও data handling" },
-        { "t": "p", "x": "Original image অক্ষত রাখুন এবং extracted text আলাদা file-এ save করুন। OCR output plain text হলে ছবি বা diagram-এর context অনুপস্থিত থাকতে পারে। Sensitive image upload করার আগে tool-এর data handling বুঝুন। Publicly share করার সময় personal detail বা location information সরিয়ে দিন।" },
-        { "t": "p", "x": "Poster বা signboard-এ logo, icon এবং layout-ও অর্থের অংশ হতে পারে, তাই extracted text একা context দেয় না। প্রয়োজনে source image-এর সঙ্গে OCR text সংযুক্ত রাখুন। Share করার আগে extracted information-এর copyright এবং personal data বিবেচনা করুন।" },
-        { "t": "p", "x": "যদি text অন্য application-এ paste করেন, destination-এ Unicode ঠিক দেখায় কি না পুনরায় পরীক্ষা করুন।" },
-        { "t": "cta", "tool": "ocr-pdf", "x": "Image-এ OCR চালিয়ে extracted text মূল ছবির সঙ্গে যাচাই করুন।" }
+        {"t":"p","x":"কোনো screenshot, poster, paper form বা signboard-এ লেখা থাকলে সেটি হাতে টাইপ না করে OCR দিয়ে text নেওয়া যেতে পারে। OCR tool image-এর shape দেখে অক্ষর অনুমান করে। পরিষ্কার printed text-এ ফল ভালো হতে পারে; handwriting, cursive font, glare বা tilted photo-তে ভুল বেশি হয়। Image-এর text extract করার অধিকার ও privacy বিবেচনা করুন, বিশেষ করে ID বা private message হলে।"},
+        {"t":"h2","x":"Image capture উন্নত করুন"},
+        {"t":"p","x":"Camera সোজা রাখুন, subject-এ focus করুন এবং shadow বা glare কমান। Text crop করার সময় অক্ষরের চারপাশে সামান্য margin রাখুন। Image খুব ছোট হলে original resolution ব্যবহার করুন। Mixed Bangla ও English text থাকলে language option দেখে নিন।"},
+        {"t":"h2","x":"OCR ফল সংশোধন"},
+        {"t":"p","x":"Output-এ line order, paragraph break এবং bullet পরীক্ষা করুন। 0/O, 1/I, comma/decimal এবং বাংলা কারচিহ্ন ভুল হতে পারে। Table থাকলে row ও column manually reconstruct করুন। Searchable copy-তে এমন error থাকলে পরবর্তী reader ভুল তথ্য পেতে পারে, তাই review না করে official কাজে ব্যবহার করবেন না।"},
+        {"t":"h2","x":"File ও data handling"},
+        {"t":"p","x":"Original image অক্ষত রাখুন এবং extracted text আলাদা file-এ save করুন। OCR output plain text হলে ছবি বা diagram-এর context অনুপস্থিত থাকতে পারে। Sensitive image upload করার আগে tool-এর data handling বুঝুন। Publicly share করার সময় personal detail বা location information সরিয়ে দিন।"},
+        {"t":"p","x":"Poster বা signboard-এ logo, icon এবং layout-ও অর্থের অংশ হতে পারে, তাই extracted text একা context দেয় না। প্রয়োজনে source image-এর সঙ্গে OCR text সংযুক্ত রাখুন। Share করার আগে extracted information-এর copyright এবং personal data বিবেচনা করুন।"},
+        {"t":"p","x":"যদি text অন্য application-এ paste করেন, destination-এ Unicode ঠিক দেখায় কি না পুনরায় পরীক্ষা করুন।"},
+        {"t":"cta","tool":"ocr-pdf","x":"Image-এ OCR চালিয়ে extracted text মূল ছবির সঙ্গে যাচাই করুন।"}
       ]
     },
     {
@@ -181,20 +181,20 @@
       "description": "OCR-এর আগে scan সোজা, পরিষ্কার ও যথেষ্ট resolution-এ নিন। Language নির্বাচন করে নাম, সংখ্যা এবং table হাতে যাচাই করুন।",
       "metaDescription": "OCR-এর আগে scan সোজা, পরিষ্কার ও যথেষ্ট resolution-এ নিন। Language নির্বাচন করে নাম, সংখ্যা এবং table হাতে যাচাই করুন।",
       "faqs": [
-        { "q": "OCR-এ skewed page কীভাবে ঠিক করব?", "a": "OCR-এর আগে page deskew বা rotate করুন, তারপর preview-তে text line সমান্তরাল কি না দেখুন।" },
-        { "q": "সবচেয়ে বেশি ভুল কোন তথ্যতে হয়?", "a": "ছোট font, সংখ্যা, punctuation, যুক্তাক্ষর এবং low-contrast text ভুল হওয়ার ঝুঁকি বেশি।" },
-        { "q": "OCR accuracy কি 100 শতাংশ হতে পারে?", "a": "গ্যারান্টি নেই। Scan quality ও language অনুযায়ী output হাতে যাচাই করা দরকার।" }
+        {"q":"OCR-এ skewed page কীভাবে ঠিক করব?","a":"OCR-এর আগে page deskew বা rotate করুন, তারপর preview-তে text line সমান্তরাল কি না দেখুন।"},
+        {"q":"সবচেয়ে বেশি ভুল কোন তথ্যতে হয়?","a":"ছোট font, সংখ্যা, punctuation, যুক্তাক্ষর এবং low-contrast text ভুল হওয়ার ঝুঁকি বেশি।"},
+        {"q":"OCR accuracy কি 100 শতাংশ হতে পারে?","a":"গ্যারান্টি নেই। Scan quality ও language অনুযায়ী output হাতে যাচাই করা দরকার।"}
       ],
       "body": [
-        { "t": "p", "x": "OCR ফল ভালো করতে software setting-এর পাশাপাশি source scan উন্নত করা জরুরি। পৃষ্ঠা বাঁকা, ফিকে, ছায়াযুক্ত বা কম resolution হলে অক্ষর ভুল শনাক্ত হতে পারে। OCR-এর আগে page crop ও deskew করুন, পর্যাপ্ত contrast রাখুন এবং সঠিক language নির্বাচন করুন। বাংলা scan-এ যুক্তাক্ষর, কারচিহ্ন, punctuation ও English number বিশেষভাবে পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Capture quality ঠিক করুন" },
-        { "t": "p", "x": "কাগজ স্ক্যান করার সময় camera সোজা রাখুন এবং সমান আলো দিন। Shadow, glare, folded edge ও হাতের লেখা যতটা সম্ভব এড়িয়ে চলুন। Printed page হলে প্রয়োজনীয় resolution ব্যবহার করুন। খুব বেশি sharpen করলে অক্ষরের চারপাশে noise তৈরি হতে পারে। Crop-এ অক্ষরের অংশ কাটা যাচ্ছে কি না দেখুন।" },
-        { "t": "h2", "x": "Language ও layout" },
-        { "t": "p", "x": "OCR engine-এ page-এর language বা script নির্বাচন করুন। বাংলা ও English মিশ্র নথিতে কোন language support আছে তা দেখুন। বহু column, table ও footnote reading order ভাঙতে পারে। Page orientation ঠিক করে representative sample চালান, তারপর পুরো batch process করুন।" },
-        { "t": "h2", "x": "পরিমাপযোগ্য review" },
-        { "t": "p", "x": "নাম, account number, date, amount এবং legal clause original scan-এর সঙ্গে মিলিয়ে পড়ুন। Table-এর row ও column ধরে যাচাই করুন। Search test দিয়ে পরিচিত শব্দ খুঁজুন এবং copy/paste করে character encoding পরীক্ষা করুন। ভুল পাওয়া গেলে OCR setting বা scan উন্নত করে সংশোধিত output তৈরি করুন।" },
-        { "t": "p", "x": "একই নথির দুটি ভাষায় OCR লাগলে page অনুযায়ী language option পরীক্ষা করুন। Output-এর নাম এবং processing date লিখে রাখুন। ভবিষ্যতে scan বদলে গেলে আগে তৈরি করা text layer কোন image থেকে এসেছে তা এই record দিয়ে বোঝা যাবে। Review শেষে sample ও corrected page archive করুন।" },
-        { "t": "cta", "tool": "ocr-pdf", "x": "Scan পরিষ্কার করে OCR চালান এবং গুরুত্বপূর্ণ তথ্য হাতে যাচাই করুন।" }
+        {"t":"p","x":"OCR ফল ভালো করতে software setting-এর পাশাপাশি source scan উন্নত করা জরুরি। পৃষ্ঠা বাঁকা, ফিকে, ছায়াযুক্ত বা কম resolution হলে অক্ষর ভুল শনাক্ত হতে পারে। OCR-এর আগে page crop ও deskew করুন, পর্যাপ্ত contrast রাখুন এবং সঠিক language নির্বাচন করুন। বাংলা scan-এ যুক্তাক্ষর, কারচিহ্ন, punctuation ও English number বিশেষভাবে পরীক্ষা করুন।"},
+        {"t":"h2","x":"Capture quality ঠিক করুন"},
+        {"t":"p","x":"কাগজ স্ক্যান করার সময় camera সোজা রাখুন এবং সমান আলো দিন। Shadow, glare, folded edge ও হাতের লেখা যতটা সম্ভব এড়িয়ে চলুন। Printed page হলে প্রয়োজনীয় resolution ব্যবহার করুন। খুব বেশি sharpen করলে অক্ষরের চারপাশে noise তৈরি হতে পারে। Crop-এ অক্ষরের অংশ কাটা যাচ্ছে কি না দেখুন।"},
+        {"t":"h2","x":"Language ও layout"},
+        {"t":"p","x":"OCR engine-এ page-এর language বা script নির্বাচন করুন। বাংলা ও English মিশ্র নথিতে কোন language support আছে তা দেখুন। বহু column, table ও footnote reading order ভাঙতে পারে। Page orientation ঠিক করে representative sample চালান, তারপর পুরো batch process করুন।"},
+        {"t":"h2","x":"পরিমাপযোগ্য review"},
+        {"t":"p","x":"নাম, account number, date, amount এবং legal clause original scan-এর সঙ্গে মিলিয়ে পড়ুন। Table-এর row ও column ধরে যাচাই করুন। Search test দিয়ে পরিচিত শব্দ খুঁজুন এবং copy/paste করে character encoding পরীক্ষা করুন। ভুল পাওয়া গেলে OCR setting বা scan উন্নত করে সংশোধিত output তৈরি করুন।"},
+        {"t":"p","x":"একই নথির দুটি ভাষায় OCR লাগলে page অনুযায়ী language option পরীক্ষা করুন। Output-এর নাম এবং processing date লিখে রাখুন। ভবিষ্যতে scan বদলে গেলে আগে তৈরি করা text layer কোন image থেকে এসেছে তা এই record দিয়ে বোঝা যাবে। Review শেষে sample ও corrected page archive করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"ocr-pdf","x":"Scan পরিষ্কার করে OCR চালান এবং গুরুত্বপূর্ণ তথ্য হাতে যাচাই করুন।"}
       ]
     },
     {
@@ -205,20 +205,20 @@
       "description": "কাগজ capture, PDF assembly ও OCR দিয়ে searchable document তৈরি করুন। Page order, recognized text এবং accessibility পরীক্ষা করুন।",
       "metaDescription": "কাগজ capture, PDF assembly ও OCR দিয়ে searchable document তৈরি করুন। Page order, recognized text এবং accessibility পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Searchable PDF বানাতে scan-এর পরে কী করব?", "a": "OCR চালিয়ে text layer যোগ করুন, তারপর search ও copy করে output যাচাই করুন।" },
-        { "q": "কাগজের লেখা কি PDF-এ editable হবে?", "a": "OCR search ও extraction-এর জন্য text চিনতে পারে, কিন্তু original page image পুরোপুরি edit হয় না।" },
-        { "q": "Scan-এর সব page searchable হবে?", "a": "প্রতিটি page-এ OCR result পরীক্ষা করুন; mixed PDF-এ কিছু page image-only থেকে যেতে পারে।" }
+        {"q":"Searchable PDF বানাতে scan-এর পরে কী করব?","a":"OCR চালিয়ে text layer যোগ করুন, তারপর search ও copy করে output যাচাই করুন।"},
+        {"q":"কাগজের লেখা কি PDF-এ editable হবে?","a":"OCR search ও extraction-এর জন্য text চিনতে পারে, কিন্তু original page image পুরোপুরি edit হয় না।"},
+        {"q":"Scan-এর সব page searchable হবে?","a":"প্রতিটি page-এ OCR result পরীক্ষা করুন; mixed PDF-এ কিছু page image-only থেকে যেতে পারে।"}
       ],
       "body": [
-        { "t": "p", "x": "কাগজের নথি scan করে PDF করলে মূল চেহারা সংরক্ষিত থাকে, কিন্তু image-only file-এ text search করা যায় না। OCR image-এ দেখা অক্ষর শনাক্ত করে একটি text layer যোগ করে। প্রথমে কাগজ পরিষ্কার ও সমতল করুন, তারপর page একই orientation-এ scan করুন। একাধিক sheet-এর ক্রম ধরে রাখুন। Scan শেষে PDF তৈরি করে OCR চালান এবং output-কে searchable হিসেবে ব্যবহার করার আগে যাচাই করুন।" },
-        { "t": "h2", "x": "Capture ও page assembly" },
-        { "t": "p", "x": "সমান আলো, sharp focus এবং পুরো page frame-এ রাখুন। Edge কাটলে নতুন scan করুন। Receipt বা form-এর পেছনের page থাকলে সেটিও capture করুন। ফাইলগুলো page order অনুযায়ী সাজিয়ে PDF বানান। Duplicate, upside-down অথবা blank page আছে কি না দেখুন।" },
-        { "t": "h2", "x": "OCR-এ language সেট করুন" },
-        { "t": "p", "x": "PDF OCR tool-এ গিয়ে উপযুক্ত language নির্বাচন করুন। Bengali ও English একসঙ্গে থাকলে mixed-script support দেখুন। Text ছোট বা fainter হলে output-এ ভুল বাড়তে পারে। Representative page দিয়ে শুরু করে ফল ঠিক মনে হলে পূর্ণ নথিতে OCR চালান।" },
-        { "t": "h2", "x": "Searchable result verify" },
-        { "t": "p", "x": "নথির পরিচিত শব্দ search করুন, text select করে copy করুন এবং original image-এর সঙ্গে তুলনা করুন। Date, serial number ও amount হাতে যাচাই করুন। Accessibility-র জন্য reading order ও heading tag আলাদা বিষয়। Searchable copy তৈরি হলে sensitive text আরও discoverable হয়, তাই access control বজায় রাখুন।" },
-        { "t": "p", "x": "Archive-এ দিলে searchable PDF-এর সঙ্গে original unprocessed scan ও OCR settings রাখা উপকারী হতে পারে। এতে পরে recognized text ভুল পাওয়া গেলে source image দিয়ে পুনরায় পরীক্ষা সম্ভব। Personal information থাকলে searchable copy-র access সীমিত করুন এবং প্রয়োজন অনুযায়ী retention policy মানুন।" },
-        { "t": "cta", "tool": "ocr-pdf", "x": "Paper scan-এ OCR যোগ করুন এবং page অনুযায়ী search পরীক্ষা করুন।" }
+        {"t":"p","x":"কাগজের নথি scan করে PDF করলে মূল চেহারা সংরক্ষিত থাকে, কিন্তু image-only file-এ text search করা যায় না। OCR image-এ দেখা অক্ষর শনাক্ত করে একটি text layer যোগ করে। প্রথমে কাগজ পরিষ্কার ও সমতল করুন, তারপর page একই orientation-এ scan করুন। একাধিক sheet-এর ক্রম ধরে রাখুন। Scan শেষে PDF তৈরি করে OCR চালান এবং output-কে searchable হিসেবে ব্যবহার করার আগে যাচাই করুন।"},
+        {"t":"h2","x":"Capture ও page assembly"},
+        {"t":"p","x":"সমান আলো, sharp focus এবং পুরো page frame-এ রাখুন। Edge কাটলে নতুন scan করুন। Receipt বা form-এর পেছনের page থাকলে সেটিও capture করুন। ফাইলগুলো page order অনুযায়ী সাজিয়ে PDF বানান। Duplicate, upside-down অথবা blank page আছে কি না দেখুন।"},
+        {"t":"h2","x":"OCR-এ language সেট করুন"},
+        {"t":"p","x":"PDF OCR tool-এ গিয়ে উপযুক্ত language নির্বাচন করুন। Bengali ও English একসঙ্গে থাকলে mixed-script support দেখুন। Text ছোট বা fainter হলে output-এ ভুল বাড়তে পারে। Representative page দিয়ে শুরু করে ফল ঠিক মনে হলে পূর্ণ নথিতে OCR চালান।"},
+        {"t":"h2","x":"Searchable result verify"},
+        {"t":"p","x":"নথির পরিচিত শব্দ search করুন, text select করে copy করুন এবং original image-এর সঙ্গে তুলনা করুন। Date, serial number ও amount হাতে যাচাই করুন। Accessibility-র জন্য reading order ও heading tag আলাদা বিষয়। Searchable copy তৈরি হলে sensitive text আরও discoverable হয়, তাই access control বজায় রাখুন।"},
+        {"t":"p","x":"Archive-এ দিলে searchable PDF-এর সঙ্গে original unprocessed scan ও OCR settings রাখা উপকারী হতে পারে। এতে পরে recognized text ভুল পাওয়া গেলে source image দিয়ে পুনরায় পরীক্ষা সম্ভব। Personal information থাকলে searchable copy-র access সীমিত করুন এবং প্রয়োজন অনুযায়ী retention policy মানুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"ocr-pdf","x":"Paper scan-এ OCR যোগ করুন এবং page অনুযায়ী search পরীক্ষা করুন।"}
       ]
     },
     {
@@ -229,22 +229,22 @@
       "description": "PDF-এ text select ও search করে text layer যাচাই করুন। Image-only scan হলে OCR চালিয়ে ফলের নির্ভুলতা পরীক্ষা করুন।",
       "metaDescription": "PDF-এ text select ও search করে text layer যাচাই করুন। Image-only scan হলে OCR চালিয়ে ফলের নির্ভুলতা পরীক্ষা করুন।",
       "faqs": [
-        { "q": "PDF searchable কি না দ্রুত পরীক্ষা করব?", "a": "একটি দৃশ্যমান শব্দ select বা Ctrl+F দিয়ে search করুন। ফল না এলে image-only scan হতে পারে।" },
-        { "q": "Searchable PDF কি screen reader-এ accessible?", "a": "Searchable text সহায়তা করে, তবে reading order, tags, headings ও alt text-ও দরকার হতে পারে।" },
-        { "q": "OCR-এর পরে visual page বদলায়?", "a": "অনেক ক্ষেত্রে image appearance থাকে, তবে output খুলে text alignment ও page appearance পরীক্ষা করুন।" }
+        {"q":"PDF searchable কি না দ্রুত পরীক্ষা করব?","a":"একটি দৃশ্যমান শব্দ select বা Ctrl+F দিয়ে search করুন। ফল না এলে image-only scan হতে পারে।"},
+        {"q":"Searchable PDF কি screen reader-এ accessible?","a":"Searchable text সহায়তা করে, তবে reading order, tags, headings ও alt text-ও দরকার হতে পারে।"},
+        {"q":"OCR-এর পরে visual page বদলায়?","a":"অনেক ক্ষেত্রে image appearance থাকে, তবে output খুলে text alignment ও page appearance পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এ কোনো শব্দ select করে অন্য document-এ paste করার চেষ্টা করুন, অথবা Ctrl+F/Command+F দিয়ে search করুন। যদি দৃশ্যমান শব্দ মেলে না, file-টি image-only scan হতে পারে। Searchable PDF-এ text layer থাকে, যা search, copy, accessibility এবং archiving-এ সাহায্য করে। তবে OCR layer থাকলেই পুরো PDF accessible বা accurate হয় না।" },
-        { "t": "h2", "x": "Text layer পরীক্ষা" },
-        { "t": "p", "x": "বিভিন্ন পৃষ্ঠার একটি শব্দ search করুন। একটি শব্দ পাওয়া মানে সব page সঠিক হয়েছে এমন নয়। Copy করে line break, character encoding এবং punctuation দেখুন। Image-only page ও text page একই PDF-এ থাকতে পারে।" },
-        { "t": "h2", "x": "OCR দিয়ে search যোগ" },
-        { "t": "p", "x": "OCR tool-এ উপযুক্ত language নির্বাচন করে document চালান। Scan skew বা low contrast হলে আগে image quality উন্নত করুন। Output-এ নমুনা শব্দ search, copy এবং original scan-এর সঙ্গে মিলিয়ে দেখুন। Number ও proper name বিশেষভাবে যাচাই করুন।" },
-        { "t": "h2", "x": "Accessibility ও archive" },
-        { "t": "p", "x": "Searchable text screen reader-কে সহায়তা করতে পারে, কিন্তু tags, heading hierarchy, reading order ও contrast-ও গুরুত্বপূর্ণ। Archive জমা দিলে গ্রহণকারীর standard অনুসরণ করুন। Sensitive document OCR করার পর text index তৈরি হয়, তাই privacy review করুন এবং final copy সীমিত access-এ রাখুন।" },
-        { "t": "p", "x": "একটি PDF-এ কিছু page text-based এবং কিছু page image-only হলে OCR-এর পরে দুই ধরনের page sample দেখুন। Search result পেলে সেটি সঠিক page ও paragraph-এ গেছে কি না দেখুন। Searchability-র কারণে confidential শব্দ সহজে discoverable হতে পারে, তাই access control বজায় রাখুন।" },
-        { "t": "p", "x": "একটি searchable file তৈরি করতে page order, language tag এবং document title-ও ঠিক রাখুন। এতে পরে search result বোঝা সহজ হয়।" },
-        { "t": "p", "x": "যদি OCR layer সঠিক না হয়, language setting বা scan preparation সংশোধন করে আবার test করুন। পুরনো ভুল result রেখে confusion তৈরি করবেন না; সংশোধিত copy-কে version দিয়ে আলাদা রাখুন।" },
-        { "t": "cta", "tool": "ocr-pdf", "x": "OCR যোগ করে কয়েকটি page-এ search ও select পরীক্ষা করুন।" }
+        {"t":"p","x":"PDF-এ কোনো শব্দ select করে অন্য document-এ paste করার চেষ্টা করুন, অথবা Ctrl+F/Command+F দিয়ে search করুন। যদি দৃশ্যমান শব্দ মেলে না, file-টি image-only scan হতে পারে। Searchable PDF-এ text layer থাকে, যা search, copy, accessibility এবং archiving-এ সাহায্য করে। তবে OCR layer থাকলেই পুরো PDF accessible বা accurate হয় না।"},
+        {"t":"h2","x":"Text layer পরীক্ষা"},
+        {"t":"p","x":"বিভিন্ন পৃষ্ঠার একটি শব্দ search করুন। একটি শব্দ পাওয়া মানে সব page সঠিক হয়েছে এমন নয়। Copy করে line break, character encoding এবং punctuation দেখুন। Image-only page ও text page একই PDF-এ থাকতে পারে।"},
+        {"t":"h2","x":"OCR দিয়ে search যোগ"},
+        {"t":"p","x":"OCR tool-এ উপযুক্ত language নির্বাচন করে document চালান। Scan skew বা low contrast হলে আগে image quality উন্নত করুন। Output-এ নমুনা শব্দ search, copy এবং original scan-এর সঙ্গে মিলিয়ে দেখুন। Number ও proper name বিশেষভাবে যাচাই করুন।"},
+        {"t":"h2","x":"Accessibility ও archive"},
+        {"t":"p","x":"Searchable text screen reader-কে সহায়তা করতে পারে, কিন্তু tags, heading hierarchy, reading order ও contrast-ও গুরুত্বপূর্ণ। Archive জমা দিলে গ্রহণকারীর standard অনুসরণ করুন। Sensitive document OCR করার পর text index তৈরি হয়, তাই privacy review করুন এবং final copy সীমিত access-এ রাখুন।"},
+        {"t":"p","x":"একটি PDF-এ কিছু page text-based এবং কিছু page image-only হলে OCR-এর পরে দুই ধরনের page sample দেখুন। Search result পেলে সেটি সঠিক page ও paragraph-এ গেছে কি না দেখুন। Searchability-র কারণে confidential শব্দ সহজে discoverable হতে পারে, তাই access control বজায় রাখুন।"},
+        {"t":"p","x":"একটি searchable file তৈরি করতে page order, language tag এবং document title-ও ঠিক রাখুন। এতে পরে search result বোঝা সহজ হয়।"},
+        {"t":"p","x":"যদি OCR layer সঠিক না হয়, language setting বা scan preparation সংশোধন করে আবার test করুন। পুরনো ভুল result রেখে confusion তৈরি করবেন না; সংশোধিত copy-কে version দিয়ে আলাদা রাখুন।"},
+        {"t":"cta","tool":"ocr-pdf","x":"OCR যোগ করে কয়েকটি page-এ search ও select পরীক্ষা করুন।"}
       ]
     }
   ]

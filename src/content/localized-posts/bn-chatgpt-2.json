@@ -9,20 +9,20 @@
       "description": "PDF কমপ্রেস করে ইমেইল বা ওয়েবের জন্য ছোট করুন। হালকা ও শক্তিশালী compression-এর পার্থক্য বুঝে পাঠযোগ্যতা যাচাই করুন।",
       "metaDescription": "PDF কমপ্রেস করে ইমেইল বা ওয়েবের জন্য ছোট করুন। হালকা ও শক্তিশালী compression-এর পার্থক্য বুঝে পাঠযোগ্যতা, text selection এবং ছবির মান যাচাই করুন।",
       "faqs": [
-        { "q": "PDF কমপ্রেস করলে কি লেখা ঝাপসা হয়?", "a": "হালকা compression-এ text সাধারণত অক্ষত থাকে। শক্তিশালী mode ছবিকে কম রেজোলিউশনে নিতে পারে, তাই ফল পরীক্ষা করুন।" },
-        { "q": "কেন কমপ্রেস করার পরও ফাইল ছোট হয় না?", "a": "ফাইলে text ও vector থাকলে কমানোর সুযোগ কম হতে পারে। ছবি আগে থেকেই কমপ্রেস থাকলেও ফল সীমিত হয়।" },
-        { "q": "মূল PDF মুছে ফেলব?", "a": "না। নতুন ফাইল খুলে যাচাই করার পরও প্রয়োজন হলে মূল কপি সংরক্ষণ করুন।" }
+        {"q":"PDF কমপ্রেস করলে কি লেখা ঝাপসা হয়?","a":"হালকা compression-এ text সাধারণত অক্ষত থাকে। শক্তিশালী mode ছবিকে কম রেজোলিউশনে নিতে পারে, তাই ফল পরীক্ষা করুন।"},
+        {"q":"কেন কমপ্রেস করার পরও ফাইল ছোট হয় না?","a":"ফাইলে text ও vector থাকলে কমানোর সুযোগ কম হতে পারে। ছবি আগে থেকেই কমপ্রেস থাকলেও ফল সীমিত হয়।"},
+        {"q":"মূল PDF মুছে ফেলব?","a":"না। নতুন ফাইল খুলে যাচাই করার পরও প্রয়োজন হলে মূল কপি সংরক্ষণ করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "বড় PDF ইমেইলে পাঠানো, ওয়েবসাইটে আপলোড বা ফোনে খোলা কঠিন হতে পারে। Compression ফাইলের আকার কমায়, কিন্তু সব PDF একইভাবে ছোট করা যায় না। নথিতে উচ্চ-রেজোলিউশনের scan বা ছবি থাকলে compression বেশি কাজে দেয়; text ও vector-ভিত্তিক নথিতে পার্থক্য কম হতে পারে। প্রথমে original copy রাখুন, তারপর হালকা compression দিয়ে শুরু করুন। লক্ষ্য শুধু ক্ষুদ্রতম ফাইল নয়, ব্যবহারযোগ্য পাঠযোগ্যতাও।" },
-        { "t": "h2", "x": "সঠিক compression mode বাছুন" },
-        { "t": "p", "x": "হালকা mode সাধারণত text নির্বাচনযোগ্য রাখে এবং ছবির detail বেশি সংরক্ষণ করে। শক্তিশালী mode ছবি পুনরায় sample করতে বা page-কে image-এ পরিণত করতে পারে, ফলে ফাইল আরও ছোট হলেও search, copy এবং accessibility কমতে পারে। কোনটি দরকার তা কাজের ওপর নির্ভর করে। কাগজে ছাপা হবে এমন চার্ট, স্বাক্ষর বা ছোট অক্ষরের ক্ষেত্রে বেশি compression ঝুঁকিপূর্ণ।" },
-        { "t": "h2", "x": "ফলাফল পরীক্ষা করুন" },
-        { "t": "p", "x": "নতুন ফাইলের আকার original-এর সঙ্গে তুলনা করুন। zoom করে ছোট লেখা, table, chart ও ছবির প্রান্ত পরীক্ষা করুন। একটি বাক্য select বা search করে দেখুন text layer আছে কি না। পৃষ্ঠা সংখ্যা ও ক্রমও মিলিয়ে নিন। ইমেইল বা portal-এর size limit-এর নিচে নামল কি না নিশ্চিত করুন, কারণ delivery-র সময় attachment encoding কিছু অতিরিক্ত জায়গা নিতে পারে।" },
-        { "t": "h2", "x": "গোপনীয়তা ও ব্যবহার" },
-        { "t": "p", "x": "কাজের নথি বা ব্যক্তিগত তথ্য থাকলে upload করার আগে প্রতিষ্ঠানের privacy নীতি যাচাই করুন। PrintxPDF compression service file server-এ প্রক্রিয়া করে; অতএব সংবেদনশীল নথির জন্য অনুমোদিত workflow বেছে নিন। সফল download-এর পরে ফাইলটি খুলে পরীক্ষা করুন এবং original প্রয়োজনমতো নিরাপদে রাখুন।" },
-        { "t": "p", "x": "যদি ফল প্রত্যাশার চেয়ে বড় থাকে, বারবার compression না করে file-এ ছবি বা অপ্রয়োজনীয় page আছে কি না দেখুন। প্রয়োজনে recipient-এর সঙ্গে বিকল্প format নিয়ে আলোচনা করুন।" },
-        { "t": "cta", "tool": "compress-pdf", "x": "PDF-এর হালকা compression চালিয়ে পাঠযোগ্যতা ও নতুন file size তুলনা করুন।" }
+        {"t":"p","x":"বড় PDF ইমেইলে পাঠানো, ওয়েবসাইটে আপলোড বা ফোনে খোলা কঠিন হতে পারে। Compression ফাইলের আকার কমায়, কিন্তু সব PDF একইভাবে ছোট করা যায় না। নথিতে উচ্চ-রেজোলিউশনের scan বা ছবি থাকলে compression বেশি কাজে দেয়; text ও vector-ভিত্তিক নথিতে পার্থক্য কম হতে পারে। প্রথমে original copy রাখুন, তারপর হালকা compression দিয়ে শুরু করুন। লক্ষ্য শুধু ক্ষুদ্রতম ফাইল নয়, ব্যবহারযোগ্য পাঠযোগ্যতাও।"},
+        {"t":"h2","x":"সঠিক compression mode বাছুন"},
+        {"t":"p","x":"হালকা mode সাধারণত text নির্বাচনযোগ্য রাখে এবং ছবির detail বেশি সংরক্ষণ করে। শক্তিশালী mode ছবি পুনরায় sample করতে বা page-কে image-এ পরিণত করতে পারে, ফলে ফাইল আরও ছোট হলেও search, copy এবং accessibility কমতে পারে। কোনটি দরকার তা কাজের ওপর নির্ভর করে। কাগজে ছাপা হবে এমন চার্ট, স্বাক্ষর বা ছোট অক্ষরের ক্ষেত্রে বেশি compression ঝুঁকিপূর্ণ।"},
+        {"t":"h2","x":"ফলাফল পরীক্ষা করুন"},
+        {"t":"p","x":"নতুন ফাইলের আকার original-এর সঙ্গে তুলনা করুন। zoom করে ছোট লেখা, table, chart ও ছবির প্রান্ত পরীক্ষা করুন। একটি বাক্য select বা search করে দেখুন text layer আছে কি না। পৃষ্ঠা সংখ্যা ও ক্রমও মিলিয়ে নিন। ইমেইল বা portal-এর size limit-এর নিচে নামল কি না নিশ্চিত করুন, কারণ delivery-র সময় attachment encoding কিছু অতিরিক্ত জায়গা নিতে পারে।"},
+        {"t":"h2","x":"গোপনীয়তা ও ব্যবহার"},
+        {"t":"p","x":"কাজের নথি বা ব্যক্তিগত তথ্য থাকলে upload করার আগে প্রতিষ্ঠানের privacy নীতি যাচাই করুন। PrintxPDF compression service file server-এ প্রক্রিয়া করে; অতএব সংবেদনশীল নথির জন্য অনুমোদিত workflow বেছে নিন। সফল download-এর পরে ফাইলটি খুলে পরীক্ষা করুন এবং original প্রয়োজনমতো নিরাপদে রাখুন।"},
+        {"t":"p","x":"যদি ফল প্রত্যাশার চেয়ে বড় থাকে, বারবার compression না করে file-এ ছবি বা অপ্রয়োজনীয় page আছে কি না দেখুন। প্রয়োজনে recipient-এর সঙ্গে বিকল্প format নিয়ে আলোচনা করুন।"},
+        {"t":"cta","tool":"compress-pdf","x":"PDF-এর হালকা compression চালিয়ে পাঠযোগ্যতা ও নতুন file size তুলনা করুন।"}
       ]
     },
     {
@@ -33,20 +33,20 @@
       "description": "ইমেইলের attachment সীমার মধ্যে PDF আনতে image compression, page size এবং নিরাপদ file sharing-এর বিকল্প তুলনা করুন।",
       "metaDescription": "ইমেইলের attachment সীমার মধ্যে PDF আনতে image compression, page size এবং নিরাপদ file sharing-এর বিকল্প তুলনা করুন। পাঠানোর আগে recipient ও ফাইল পরীক্ষা করুন।",
       "faqs": [
-        { "q": "ইমেইল attachment-এর নির্দিষ্ট size limit কত?", "a": "সেবাভেদে সীমা ও পরিবর্তন হতে পারে। আপনার email provider এবং প্রাপকের সংস্থার বর্তমান নির্দেশনা দেখুন।" },
-        { "q": "PDF ছোট না হলে কী করব?", "a": "বিশ্বাসযোগ্য access control-সহ cloud link বিবেচনা করুন, অথবা যুক্তিসঙ্গত অধ্যায়ভিত্তিক অংশে ভাগ করুন।" },
-        { "q": "PDF compress করা কি নিরাপদ?", "a": "Compression ফাইল ছোট করে, কিন্তু privacy নিশ্চিত করে না। সংবেদনশীল নথি অনুমোদিত সেবাতেই প্রক্রিয়া করুন।" }
+        {"q":"ইমেইল attachment-এর নির্দিষ্ট size limit কত?","a":"সেবাভেদে সীমা ও পরিবর্তন হতে পারে। আপনার email provider এবং প্রাপকের সংস্থার বর্তমান নির্দেশনা দেখুন।"},
+        {"q":"PDF ছোট না হলে কী করব?","a":"বিশ্বাসযোগ্য access control-সহ cloud link বিবেচনা করুন, অথবা যুক্তিসঙ্গত অধ্যায়ভিত্তিক অংশে ভাগ করুন।"},
+        {"q":"PDF compress করা কি নিরাপদ?","a":"Compression ফাইল ছোট করে, কিন্তু privacy নিশ্চিত করে না। সংবেদনশীল নথি অনুমোদিত সেবাতেই প্রক্রিয়া করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "ইমেইলে বড় PDF সংযুক্ত করতে গেলে attachment limit-এর কারণে message ফেরত আসতে পারে। প্রথমে আপনার provider এবং প্রাপকের প্রতিষ্ঠানের বর্তমান limit যাচাই করুন; সেবা ও account type অনুসারে নিয়ম বদলায়। ইমেইল transport-এর encoding-এর কারণে পাঠানোর সময় file size কিছুটা বাড়তেও পারে। তাই limit-এর একেবারে কাছাকাছি না গিয়ে margin রাখুন। তারপর original file নিরাপদে রেখে ছোট কপি তৈরি করুন।" },
-        { "t": "h2", "x": "ছবিযুক্ত PDF আগে কমপ্রেস করুন" },
-        { "t": "p", "x": "Scanned page ও বড় photograph file-এর অধিকাংশ জায়গা নিতে পারে। Compression চালানোর আগে ঠিক করুন প্রিন্টে কত detail দরকার। হালকা mode দিয়ে শুরু করে লেখা select হয় কি না দেখুন। জোরালো compression নিলে chart, seal ও ছোট অক্ষর zoom করে পড়ুন। কিছু না বুঝলে কমপ্রেস করা copy পাঠাবেন না; উচ্চ মানের original ব্যবহার করুন।" },
-        { "t": "h2", "x": "ভাগ করা নাকি link পাঠানো" },
-        { "t": "p", "x": "লম্বা report-এর স্বাধীন chapter থাকলে logical page range-এ ভাগ করুন এবং ফাইলের নাম part 1 of 3-এর মতো দিন। মাঝখানে sentence বা table কেটে দেবেন না। পুরো নথি একসঙ্গে থাকা জরুরি হলে অনুমোদিত cloud service-এ link পাঠানো যেতে পারে। Access শুধুমাত্র নির্দিষ্ট recipient-কে দিন এবং link expiry থাকলে ব্যবহার করুন। Public link দিয়ে confidential file শেয়ার করবেন না।" },
-        { "t": "h2", "x": "শেষবারের যাচাই" },
-        { "t": "p", "x": "নতুন copy খুলে page count, order, text, signature এবং attachment মিলিয়ে নিন। Recipient-এর address সাবধানে দেখুন, তারপর file attach হয়েছে কি না নিশ্চিত করুন। কাজের নীতি যদি upload নিষিদ্ধ করে, website compressor ব্যবহার না করে প্রতিষ্ঠানের অনুমোদিত desktop tool নিন।" },
-        { "t": "p", "x": "Work account হলে administrator নির্দিষ্ট file transfer portal দিতে পারে। ব্যক্তিগত cloud drive-এ কাজের নথি কপি করবেন না যদি policy অনুমতি না দেয়।" },
-        { "t": "cta", "tool": "compress-pdf", "x": "ইমেইলের limit যাচাই করে PDF compress করুন এবং final copy পরীক্ষা করুন।" }
+        {"t":"p","x":"ইমেইলে বড় PDF সংযুক্ত করতে গেলে attachment limit-এর কারণে message ফেরত আসতে পারে। প্রথমে আপনার provider এবং প্রাপকের প্রতিষ্ঠানের বর্তমান limit যাচাই করুন; সেবা ও account type অনুসারে নিয়ম বদলায়। ইমেইল transport-এর encoding-এর কারণে পাঠানোর সময় file size কিছুটা বাড়তেও পারে। তাই limit-এর একেবারে কাছাকাছি না গিয়ে margin রাখুন। তারপর original file নিরাপদে রেখে ছোট কপি তৈরি করুন।"},
+        {"t":"h2","x":"ছবিযুক্ত PDF আগে কমপ্রেস করুন"},
+        {"t":"p","x":"Scanned page ও বড় photograph file-এর অধিকাংশ জায়গা নিতে পারে। Compression চালানোর আগে ঠিক করুন প্রিন্টে কত detail দরকার। হালকা mode দিয়ে শুরু করে লেখা select হয় কি না দেখুন। জোরালো compression নিলে chart, seal ও ছোট অক্ষর zoom করে পড়ুন। কিছু না বুঝলে কমপ্রেস করা copy পাঠাবেন না; উচ্চ মানের original ব্যবহার করুন।"},
+        {"t":"h2","x":"ভাগ করা নাকি link পাঠানো"},
+        {"t":"p","x":"লম্বা report-এর স্বাধীন chapter থাকলে logical page range-এ ভাগ করুন এবং ফাইলের নাম part 1 of 3-এর মতো দিন। মাঝখানে sentence বা table কেটে দেবেন না। পুরো নথি একসঙ্গে থাকা জরুরি হলে অনুমোদিত cloud service-এ link পাঠানো যেতে পারে। Access শুধুমাত্র নির্দিষ্ট recipient-কে দিন এবং link expiry থাকলে ব্যবহার করুন। Public link দিয়ে confidential file শেয়ার করবেন না।"},
+        {"t":"h2","x":"শেষবারের যাচাই"},
+        {"t":"p","x":"নতুন copy খুলে page count, order, text, signature এবং attachment মিলিয়ে নিন। Recipient-এর address সাবধানে দেখুন, তারপর file attach হয়েছে কি না নিশ্চিত করুন। কাজের নীতি যদি upload নিষিদ্ধ করে, website compressor ব্যবহার না করে প্রতিষ্ঠানের অনুমোদিত desktop tool নিন।"},
+        {"t":"p","x":"Work account হলে administrator নির্দিষ্ট file transfer portal দিতে পারে। ব্যক্তিগত cloud drive-এ কাজের নথি কপি করবেন না যদি policy অনুমতি না দেয়। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"compress-pdf","x":"ইমেইলের limit যাচাই করে PDF compress করুন এবং final copy পরীক্ষা করুন।"}
       ]
     },
     {
@@ -57,20 +57,20 @@
       "description": "কম ক্ষতিতে PDF ছোট করার জন্য compression mode, image resolution ও text-layer সংরক্ষণ বুঝুন। প্রতিটি গুরুত্বপূর্ণ পৃষ্ঠা zoom করে দেখুন।",
       "metaDescription": "কম ক্ষতিতে PDF ছোট করার জন্য compression mode, image resolution ও text-layer সংরক্ষণ বুঝুন। ছবির detail ও text search পরীক্ষা করে সিদ্ধান্ত নিন।",
       "faqs": [
-        { "q": "একেবারে গুণমান না হারিয়ে file ছোট করা যায়?", "a": "যদি file-এ compressible data থাকে তবেই কিছু lossless reduction সম্ভব; বড় সাশ্রয়ে image quality কমতে পারে।" },
-        { "q": "OCR text কি compression-এ নষ্ট হয়?", "a": "কিছু mode page-কে image করলে searchable text layer হারাতে পারে। compress করার পর search ও select পরীক্ষা করুন।" },
-        { "q": "কোন quality level বেছে নেব?", "a": "পর্দায় পড়া, archive বা high-resolution print-এর উদ্দেশ্য অনুযায়ী বেছে নিয়ে sample page পরীক্ষা করুন।" }
+        {"q":"একেবারে গুণমান না হারিয়ে file ছোট করা যায়?","a":"যদি file-এ compressible data থাকে তবেই কিছু lossless reduction সম্ভব; বড় সাশ্রয়ে image quality কমতে পারে।"},
+        {"q":"OCR text কি compression-এ নষ্ট হয়?","a":"কিছু mode page-কে image করলে searchable text layer হারাতে পারে। compress করার পর search ও select পরীক্ষা করুন।"},
+        {"q":"কোন quality level বেছে নেব?","a":"পর্দায় পড়া, archive বা high-resolution print-এর উদ্দেশ্য অনুযায়ী বেছে নিয়ে sample page পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF ছোট করার সময় file size এবং visual quality-এর মধ্যে একটি সমঝোতা থাকতে পারে। Text, vector drawing এবং আগে থেকেই compressed image-সহ নথি থেকে বেশি সাশ্রয় নাও হতে পারে। High-resolution scan-এ reduction বেশি সম্ভব, তবে অক্ষর, stamp বা সূক্ষ্ম রেখা ঝাপসা হওয়ার ঝুঁকি থাকে। Original copy রেখে একটি test version তৈরি করুন, যাতে প্রয়োজন হলে আগের অবস্থায় ফেরা যায়।" },
-        { "t": "h2", "x": "Lossless আর image compression" },
-        { "t": "p", "x": "Lossless optimization থাকলে data বাদ না দিয়েও কিছু structure পরিষ্কার করা সম্ভব, কিন্তু সাশ্রয় সীমিত। Image downsampling বা quality কমালে বেশি জায়গা বাঁচে, তবে pixel detail কমে। Scan-এ বাংলা অক্ষরের মাথার রেখা, ছোট সংখ্যা বা signature গুরুত্বপূর্ণ হলে জোরালো setting ব্যবহার করবেন না। কোন mode কী বদলায় তা tool-এর description থেকে বুঝে নিন।" },
-        { "t": "h2", "x": "বাস্তব পৃষ্ঠায় পরীক্ষা করুন" },
-        { "t": "p", "x": "প্রথমে dense text, table, photograph এবং signature থাকা পৃষ্ঠা খুলুন। 100 শতাংশ ও আরও বেশি zoom-এ অক্ষর এবং রেখা পরীক্ষা করুন। text copy ও search করে দেখুন file text-based আছে কি না। Grayscale বা color conversion করলে chart-এর অর্থ বদলেছে কি না দেখুন। কাগজে জমা দিতে হলে একটি sample print করাও উপকারী।" },
-        { "t": "h2", "x": "সঠিক copy বিতরণ করুন" },
-        { "t": "p", "x": "যে copy প্রাপকের প্রয়োজন পূরণ করে সেটি বেছে নিন, শুধু সবচেয়ে ছোটটি নয়। File size, page count এবং document appearance যাচাই করে তারপর email বা upload করুন। PDF-এর digital signature compression-এ invalid হতে পারে, তাই signed document-এ পরিবর্তনের আগে recipient-এর সঙ্গে কথা বলুন। সংবেদনশীল file server-এ পাঠানোর আগে data handling policy পড়ুন।" },
-        { "t": "p", "x": "ভিন্ন device-এ খুলেও output দেখুন, কারণ screen brightness বা zoom quality সম্পর্কে ভুল ধারণা দিতে পারে। প্রয়োজন হলে print copy পরীক্ষা করে final নির্বাচন করুন।" },
-        { "t": "cta", "tool": "compress-pdf", "x": "একটি হালকা compression দিয়ে শুরু করুন এবং একই পৃষ্ঠায় মান তুলনা করুন।" }
+        {"t":"p","x":"PDF ছোট করার সময় file size এবং visual quality-এর মধ্যে একটি সমঝোতা থাকতে পারে। Text, vector drawing এবং আগে থেকেই compressed image-সহ নথি থেকে বেশি সাশ্রয় নাও হতে পারে। High-resolution scan-এ reduction বেশি সম্ভব, তবে অক্ষর, stamp বা সূক্ষ্ম রেখা ঝাপসা হওয়ার ঝুঁকি থাকে। Original copy রেখে একটি test version তৈরি করুন, যাতে প্রয়োজন হলে আগের অবস্থায় ফেরা যায়।"},
+        {"t":"h2","x":"Lossless আর image compression"},
+        {"t":"p","x":"Lossless optimization থাকলে data বাদ না দিয়েও কিছু structure পরিষ্কার করা সম্ভব, কিন্তু সাশ্রয় সীমিত। Image downsampling বা quality কমালে বেশি জায়গা বাঁচে, তবে pixel detail কমে। Scan-এ বাংলা অক্ষরের মাথার রেখা, ছোট সংখ্যা বা signature গুরুত্বপূর্ণ হলে জোরালো setting ব্যবহার করবেন না। কোন mode কী বদলায় তা tool-এর description থেকে বুঝে নিন।"},
+        {"t":"h2","x":"বাস্তব পৃষ্ঠায় পরীক্ষা করুন"},
+        {"t":"p","x":"প্রথমে dense text, table, photograph এবং signature থাকা পৃষ্ঠা খুলুন। 100 শতাংশ ও আরও বেশি zoom-এ অক্ষর এবং রেখা পরীক্ষা করুন। text copy ও search করে দেখুন file text-based আছে কি না। Grayscale বা color conversion করলে chart-এর অর্থ বদলেছে কি না দেখুন। কাগজে জমা দিতে হলে একটি sample print করাও উপকারী।"},
+        {"t":"h2","x":"সঠিক copy বিতরণ করুন"},
+        {"t":"p","x":"যে copy প্রাপকের প্রয়োজন পূরণ করে সেটি বেছে নিন, শুধু সবচেয়ে ছোটটি নয়। File size, page count এবং document appearance যাচাই করে তারপর email বা upload করুন। PDF-এর digital signature compression-এ invalid হতে পারে, তাই signed document-এ পরিবর্তনের আগে recipient-এর সঙ্গে কথা বলুন। সংবেদনশীল file server-এ পাঠানোর আগে data handling policy পড়ুন।"},
+        {"t":"p","x":"ভিন্ন device-এ খুলেও output দেখুন, কারণ screen brightness বা zoom quality সম্পর্কে ভুল ধারণা দিতে পারে। প্রয়োজন হলে print copy পরীক্ষা করে final নির্বাচন করুন।"},
+        {"t":"cta","tool":"compress-pdf","x":"একটি হালকা compression দিয়ে শুরু করুন এবং একই পৃষ্ঠায় মান তুলনা করুন।"}
       ]
     },
     {
@@ -81,20 +81,20 @@
       "description": "বড় PDF-এর সাধারণ কারণ: উচ্চমানের ছবি, embedded font, অপ্রয়োজনীয় page, attachment, scan ও revision data। কারণ ধরে file ছোট করুন।",
       "metaDescription": "বড় PDF-এর সাধারণ কারণ: উচ্চমানের ছবি, embedded font, অপ্রয়োজনীয় page, attachment, scan ও revision data। কারণ ধরে file ছোট করুন এবং ফল যাচাই করুন।",
       "faqs": [
-        { "q": "সবচেয়ে বেশি জায়গা সাধারণত কী নেয়?", "a": "অনেক নথিতে high-resolution photo বা scan বড় অংশ নেয়, তবে embedded media ও attachment-ও দায়ী হতে পারে।" },
-        { "q": "PDF খুললে ছোট দেখালেও file বড় কেন?", "a": "Page-এ দৃশ্যমান না থাকা embedded font, attachment, metadata বা retained revision data file-এ থাকতে পারে।" },
-        { "q": "সব বড় PDF কি compress করা যাবে?", "a": "না। ফাইলের বিষয়বস্তু ও আগের compression অনুসারে সম্ভাব্য সাশ্রয় নির্ভর করে।" }
+        {"q":"সবচেয়ে বেশি জায়গা সাধারণত কী নেয়?","a":"অনেক নথিতে high-resolution photo বা scan বড় অংশ নেয়, তবে embedded media ও attachment-ও দায়ী হতে পারে।"},
+        {"q":"PDF খুললে ছোট দেখালেও file বড় কেন?","a":"Page-এ দৃশ্যমান না থাকা embedded font, attachment, metadata বা retained revision data file-এ থাকতে পারে।"},
+        {"q":"সব বড় PDF কি compress করা যাবে?","a":"না। ফাইলের বিষয়বস্তু ও আগের compression অনুসারে সম্ভাব্য সাশ্রয় নির্ভর করে।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এর পৃষ্ঠা সংখ্যা কম হলেও file বড় হতে পারে, কারণ প্রতিটি পৃষ্ঠায় অনেক high-resolution image বা embedded resource থাকতে পারে। কারণ না জেনে জোরালো compression করলে অক্ষর বা ছবি ক্ষতিগ্রস্ত হতে পারে। প্রথমে document-এর ধরন বুঝুন: photo scan, ডিজাইনভিত্তিক report, presentation, নাকি text document। তারপর উপযুক্ত সমাধান নিন এবং original অক্ষত রাখুন।" },
-        { "t": "h2", "x": "ছবি, scan ও font" },
-        { "t": "p", "x": "বড় photograph, 600 DPI scan বা অসংকুচিত image file-এর আকার দ্রুত বাড়ায়। উৎস document-এ একই ছবি একাধিকবার embedded থাকলেও আকার বাড়তে পারে। Embedded font দেখতে নয়, কিন্তু অন্য device-এ বিন্যাস ধরে রাখতে দরকার। Font বাদ দিলে PDF ছোট হতে পারে, কিন্তু text বদলে যেতে পারে। তাই প্রয়োজন না জেনে font remove করবেন না।" },
-        { "t": "h2", "x": "অতিরিক্ত পৃষ্ঠা ও গোপন resource" },
-        { "t": "p", "x": "Blank page, duplicate scan বা অপ্রয়োজনীয় appendix থাকলে page organization দিয়ে বাদ দেওয়ার আগে original copy রাখুন। PDF-এর ভেতরে attachment, form data, comment, embedded video অথবা hidden layer থাকতে পারে। এগুলো ব্যবহারকারীর চোখে না পড়লেও file size যোগ করে। sensitive metadata পরিষ্কার করার আগে তা document-এর recordkeeping rule-এ প্রয়োজন কি না যাচাই করুন।" },
-        { "t": "h2", "x": "কারণ অনুযায়ী কমান" },
-        { "t": "p", "x": "Image-heavy file হলে হালকা compression পরীক্ষা করুন। একাধিক scan page হলে অপ্রয়োজনীয় page বাদ দিন। Presentation PDF হলে export-এর সময় image quality ও page size উপযুক্ত রাখুন। Convert বা optimize করার পর file size ছাড়াও text search, link, signature এবং image clarity যাচাই করুন। ফল সামান্য হলে বারবার compression চালিয়ে মান নষ্ট করবেন না।" },
-        { "t": "p", "x": "ইমেইল পাঠানোর আগে attachment size-এর পাশাপাশি PDF-এর page count-ও নোট করুন। প্রাপক একই নামে পুরনো copy পেলে confusion হতে পারে, তাই version বা compressed লেখা স্পষ্টভাবে যোগ করুন।" },
-        { "t": "cta", "tool": "compress-pdf", "x": "প্রথমে compression পরীক্ষা করে before ও after file size তুলনা করুন।" }
+        {"t":"p","x":"PDF-এর পৃষ্ঠা সংখ্যা কম হলেও file বড় হতে পারে, কারণ প্রতিটি পৃষ্ঠায় অনেক high-resolution image বা embedded resource থাকতে পারে। কারণ না জেনে জোরালো compression করলে অক্ষর বা ছবি ক্ষতিগ্রস্ত হতে পারে। প্রথমে document-এর ধরন বুঝুন: photo scan, ডিজাইনভিত্তিক report, presentation, নাকি text document। তারপর উপযুক্ত সমাধান নিন এবং original অক্ষত রাখুন।"},
+        {"t":"h2","x":"ছবি, scan ও font"},
+        {"t":"p","x":"বড় photograph, 600 DPI scan বা অসংকুচিত image file-এর আকার দ্রুত বাড়ায়। উৎস document-এ একই ছবি একাধিকবার embedded থাকলেও আকার বাড়তে পারে। Embedded font দেখতে নয়, কিন্তু অন্য device-এ বিন্যাস ধরে রাখতে দরকার। Font বাদ দিলে PDF ছোট হতে পারে, কিন্তু text বদলে যেতে পারে। তাই প্রয়োজন না জেনে font remove করবেন না।"},
+        {"t":"h2","x":"অতিরিক্ত পৃষ্ঠা ও গোপন resource"},
+        {"t":"p","x":"Blank page, duplicate scan বা অপ্রয়োজনীয় appendix থাকলে page organization দিয়ে বাদ দেওয়ার আগে original copy রাখুন। PDF-এর ভেতরে attachment, form data, comment, embedded video অথবা hidden layer থাকতে পারে। এগুলো ব্যবহারকারীর চোখে না পড়লেও file size যোগ করে। sensitive metadata পরিষ্কার করার আগে তা document-এর recordkeeping rule-এ প্রয়োজন কি না যাচাই করুন।"},
+        {"t":"h2","x":"কারণ অনুযায়ী কমান"},
+        {"t":"p","x":"Image-heavy file হলে হালকা compression পরীক্ষা করুন। একাধিক scan page হলে অপ্রয়োজনীয় page বাদ দিন। Presentation PDF হলে export-এর সময় image quality ও page size উপযুক্ত রাখুন। Convert বা optimize করার পর file size ছাড়াও text search, link, signature এবং image clarity যাচাই করুন। ফল সামান্য হলে বারবার compression চালিয়ে মান নষ্ট করবেন না।"},
+        {"t":"p","x":"ইমেইল পাঠানোর আগে attachment size-এর পাশাপাশি PDF-এর page count-ও নোট করুন। প্রাপক একই নামে পুরনো copy পেলে confusion হতে পারে, তাই version বা compressed লেখা স্পষ্টভাবে যোগ করুন।"},
+        {"t":"cta","tool":"compress-pdf","x":"প্রথমে compression পরীক্ষা করে before ও after file size তুলনা করুন।"}
       ]
     },
     {
@@ -105,21 +105,21 @@
       "description": "Gmail ও Outlook-এর attachment limit পরিবর্তনশীল। আপনার account ও recipient-এর limit যাচাই করে compress বা নিরাপদ link বেছে নিন।",
       "metaDescription": "Gmail ও Outlook-এর attachment limit পরিবর্তনশীল। আপনার account ও recipient-এর limit যাচাই করে compress বা নিরাপদ link বেছে নিন।",
       "faqs": [
-        { "q": "Gmail-এ সর্বোচ্চ কত বড় file attach করা যায়?", "a": "সীমা account এবং Google-এর বর্তমান নিয়মের ওপর নির্ভর করে। পাঠানোর আগে Gmail-এর official help দেখুন।" },
-        { "q": "Outlook-এ limit কত?", "a": "Outlook client, provider ও organization policy অনুযায়ী সীমা আলাদা হতে পারে। Microsoft-এর বর্তমান নির্দেশনা এবং administrator policy দেখুন।" },
-        { "q": "File limit ছাড়ালে কী করব?", "a": "অনুমোদিত cloud sharing link ব্যবহার করুন বা নথি compress বা logical অংশে ভাগ করুন। Access recipient-এর মধ্যে সীমিত রাখুন।" }
+        {"q":"Gmail-এ সর্বোচ্চ কত বড় file attach করা যায়?","a":"সীমা account এবং Google-এর বর্তমান নিয়মের ওপর নির্ভর করে। পাঠানোর আগে Gmail-এর official help দেখুন।"},
+        {"q":"Outlook-এ limit কত?","a":"Outlook client, provider ও organization policy অনুযায়ী সীমা আলাদা হতে পারে। Microsoft-এর বর্তমান নির্দেশনা এবং administrator policy দেখুন।"},
+        {"q":"File limit ছাড়ালে কী করব?","a":"অনুমোদিত cloud sharing link ব্যবহার করুন বা নথি compress বা logical অংশে ভাগ করুন। Access recipient-এর মধ্যে সীমিত রাখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Gmail বা Outlook-এ attachment পাঠানোর আগে সর্বোচ্চ আকারের নিয়ম আপনার account-এ যাচাই করুন। Personal account, work account, mail gateway এবং recipient organization-এ limit এক নাও হতে পারে, এবং provider-এর নীতি সময়ের সঙ্গে বদলায়। Message ফেরত এলে কেবল একই file বারবার পাঠাবেন না। attachment compress করা, নথি ভাগ করা অথবা অনুমোদিত cloud link দেওয়ার মধ্যে বেছে নিন।" },
-        { "t": "h2", "x": "Attachment limit পরীক্ষা" },
-        { "t": "p", "x": "Gmail ব্যবহার করলে Google-এর official help-এ বর্তমান attachment size এবং Drive sharing আচরণ দেখুন। Outlook হলে Microsoft Support এবং প্রতিষ্ঠানের administrator policy যাচাই করুন। attachment encoding-এ message-এর মোট আকার বাড়তে পারে, তাই limit-এর নিচে buffer রাখুন। Recipient-এর mail server আরও ছোট সীমা প্রয়োগ করতে পারে।" },
-        { "t": "h2", "x": "প্রথমে নিরাপদ compression চেষ্টা" },
-        { "t": "p", "x": "ছবি বা scan-সমৃদ্ধ PDF হলে light compression দিয়ে শুরু করুন। নতুন file খুলে ছোট লেখা, chart এবং signature দেখুন। শক্তিশালী compression-এ text layer হারাতে পারে। স্বাক্ষরিত বা আইনি নথি compress করার আগে recipient-এর অনুমতি নিন, কারণ পরিবর্তনে digital signature invalid হতে পারে।" },
-        { "t": "h2", "x": "Cloud link বা কয়েকটি অংশ" },
-        { "t": "p", "x": "পুরো document একসঙ্গে থাকা জরুরি হলে অনুমোদিত cloud storage ব্যবহার করে নির্দিষ্ট recipient-কে access দিন। Link public করবেন না যদি নথিতে ব্যক্তিগত তথ্য থাকে। ভাগ করতে হলে chapter বা page range অনুযায়ী পরিষ্কার নামে file তৈরি করুন, কোনো অনুচ্ছেদ বা table-এর মাঝখানে নয়।" },
-        { "t": "p", "x": "Official source: Google Gmail attachment help https://support.google.com/mail/answer/6584 এবং Microsoft Outlook attachment size guidance https://support.microsoft.com/office/ . নিয়ম account ও policy অনুযায়ী যাচাই করুন।" },
-        { "t": "p", "x": "External partner-কে link পাঠালে কোন account দিয়ে তারা খুলবে তা আগেই নিশ্চিত করুন। Access না থাকলে shared drive-এর approved request process ব্যবহার করুন; link forwarding সবার জন্য উন্মুক্ত করবেন না।" },
-        { "t": "cta", "tool": "compress-pdf", "x": "বর্তমান email limit যাচাই করে PDF ছোট করার চেষ্টা করুন।" }
+        {"t":"p","x":"Gmail বা Outlook-এ attachment পাঠানোর আগে সর্বোচ্চ আকারের নিয়ম আপনার account-এ যাচাই করুন। Personal account, work account, mail gateway এবং recipient organization-এ limit এক নাও হতে পারে, এবং provider-এর নীতি সময়ের সঙ্গে বদলায়। Message ফেরত এলে কেবল একই file বারবার পাঠাবেন না। attachment compress করা, নথি ভাগ করা অথবা অনুমোদিত cloud link দেওয়ার মধ্যে বেছে নিন।"},
+        {"t":"h2","x":"Attachment limit পরীক্ষা"},
+        {"t":"p","x":"Gmail ব্যবহার করলে Google-এর official help-এ বর্তমান attachment size এবং Drive sharing আচরণ দেখুন। Outlook হলে Microsoft Support এবং প্রতিষ্ঠানের administrator policy যাচাই করুন। attachment encoding-এ message-এর মোট আকার বাড়তে পারে, তাই limit-এর নিচে buffer রাখুন। Recipient-এর mail server আরও ছোট সীমা প্রয়োগ করতে পারে।"},
+        {"t":"h2","x":"প্রথমে নিরাপদ compression চেষ্টা"},
+        {"t":"p","x":"ছবি বা scan-সমৃদ্ধ PDF হলে light compression দিয়ে শুরু করুন। নতুন file খুলে ছোট লেখা, chart এবং signature দেখুন। শক্তিশালী compression-এ text layer হারাতে পারে। স্বাক্ষরিত বা আইনি নথি compress করার আগে recipient-এর অনুমতি নিন, কারণ পরিবর্তনে digital signature invalid হতে পারে।"},
+        {"t":"h2","x":"Cloud link বা কয়েকটি অংশ"},
+        {"t":"p","x":"পুরো document একসঙ্গে থাকা জরুরি হলে অনুমোদিত cloud storage ব্যবহার করে নির্দিষ্ট recipient-কে access দিন। Link public করবেন না যদি নথিতে ব্যক্তিগত তথ্য থাকে। ভাগ করতে হলে chapter বা page range অনুযায়ী পরিষ্কার নামে file তৈরি করুন, কোনো অনুচ্ছেদ বা table-এর মাঝখানে নয়।"},
+        {"t":"p","x":"Official source: Google Gmail attachment help https://support.google.com/mail/answer/6584 এবং Microsoft Outlook attachment size guidance https://support.microsoft.com/office/ . নিয়ম account ও policy অনুযায়ী যাচাই করুন।"},
+        {"t":"p","x":"External partner-কে link পাঠালে কোন account দিয়ে তারা খুলবে তা আগেই নিশ্চিত করুন। Access না থাকলে shared drive-এর approved request process ব্যবহার করুন; link forwarding সবার জন্য উন্মুক্ত করবেন না।"},
+        {"t":"cta","tool":"compress-pdf","x":"বর্তমান email limit যাচাই করে PDF ছোট করার চেষ্টা করুন।"}
       ]
     },
     {
@@ -130,21 +130,21 @@
       "description": "PDF-কে DOCX-এ রূপান্তর করে text, column, table ও image যাচাই করুন। Scan হলে OCR দরকার হতে পারে এবং বিন্যাস হাতে ঠিক করতে হতে পারে।",
       "metaDescription": "PDF-কে DOCX-এ রূপান্তর করে text, column, table ও image যাচাই করুন। Scan হলে OCR দরকার হতে পারে এবং বিন্যাস হাতে ঠিক করতে হতে পারে।",
       "faqs": [
-        { "q": "PDF থেকে Word-এ layout কি একই থাকে?", "a": "সবসময় নয়। জটিল column, table, font ও page break রূপান্তরের পর বদলাতে পারে।" },
-        { "q": "Scanned PDF Word-এ convert করা যায়?", "a": "OCR ছাড়া এটি image হিসেবে থাকতে পারে। OCR প্রয়োগের পর বিশেষ করে সংখ্যা ও নাম পরীক্ষা করুন।" },
-        { "q": "Digital signature কি DOCX-এ থাকে?", "a": "রূপান্তরে মূল PDF signature-এর নিশ্চয়তা থাকে না। Signed PDF আলাদা সংরক্ষণ করুন এবং recipient-এর নিয়ম জেনে নিন।" }
+        {"q":"PDF থেকে Word-এ layout কি একই থাকে?","a":"সবসময় নয়। জটিল column, table, font ও page break রূপান্তরের পর বদলাতে পারে।"},
+        {"q":"Scanned PDF Word-এ convert করা যায়?","a":"OCR ছাড়া এটি image হিসেবে থাকতে পারে। OCR প্রয়োগের পর বিশেষ করে সংখ্যা ও নাম পরীক্ষা করুন।"},
+        {"q":"Digital signature কি DOCX-এ থাকে?","a":"রূপান্তরে মূল PDF signature-এর নিশ্চয়তা থাকে না। Signed PDF আলাদা সংরক্ষণ করুন এবং recipient-এর নিয়ম জেনে নিন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF ভাগ করে দেখা ও শেয়ার করার জন্য উপযোগী, কিন্তু text সম্পাদনা করতে Word document দরকার হতে পারে। PDF থেকে DOCX conversion-এ software page-এ থাকা text ও layout অনুমান করে editable structure তৈরি করে। সোজা paragraph তুলনামূলক ভালো আসতে পারে, কিন্তু বহু column, footnote, table, form এবং ছবির চারপাশের text বদলে যেতে পারে। Conversion-কে finished document নয়, editing-এর প্রথম ধাপ ভাবুন।" },
-        { "t": "h2", "x": "প্রথমে PDF-এর ধরন দেখুন" },
-        { "t": "p", "x": "PDF-এ text select করা গেলে সরাসরি conversion সম্ভব হতে পারে। সব page যদি image হয়, OCR প্রয়োজন। OCR ভুল অক্ষর বা সংখ্যা দিতে পারে, বিশেষ করে বাংলা-ইংরেজি মিশ্র লেখা, formula এবং low-quality scan-এ। Password-protected file হলে আপনি অনুমোদিত কি না নিশ্চিত করুন এবং সঠিক password ব্যবহার করুন।" },
-        { "t": "h2", "x": "বিন্যাস ও content সম্পাদনা" },
-        { "t": "p", "x": "DOCX খুলে heading hierarchy, paragraph order, table, bullet এবং page break পরীক্ষা করুন। দুই column-এর লেখা একটির পর আরেকটি ভুলভাবে আসতে পারে। ছবি বা chart-কে সঠিক caption-এর সঙ্গে যুক্ত করুন। Header ও footer-এ পুরনো page number থাকলে ঠিক করুন। বানান পরীক্ষক চালান, তবে ব্যক্তিনাম, amount ও technical term হাতে মিলিয়ে নিন।" },
-        { "t": "h2", "x": "মৌলিক ও স্বাক্ষরিত কপি রাখুন" },
-        { "t": "p", "x": "Original PDF আলাদা রাখুন, বিশেষ করে document signed বা official record হলে। Conversion-এর ফলে digital signature যাচাই অকার্যকর হতে পারে এবং নতুন Word copy আইনগত মূল নথি নাও হতে পারে। কাজ শেষ হলে DOCX থেকে একটি PDF export করুন, দুই format পাশাপাশি খুলে গুরুত্বপূর্ণ তথ্য তুলনা করুন।" },
-        { "t": "p", "x": "PrintxPDF PDF-to-Word conversion সার্ভারে করে। গোপন নথি upload করার আগে প্রতিষ্ঠানের অনুমোদিত ব্যবস্থাপনা ব্যবহার করুন।" },
-        { "t": "p", "x": "Document-এ tracked changes বা comments দরকার হলে conversion-এর পরে সেগুলো নতুন করে যোগ করুন। PDF-এ hidden revision history থাকলেও তা Word-এ আসবে ধরে নেওয়া ঠিক নয়।" },
-        { "t": "cta", "tool": "pdf-to-word", "x": "PDF-কে DOCX করে বিন্যাস ও গুরুত্বপূর্ণ তথ্য হাতে যাচাই করুন।" }
+        {"t":"p","x":"PDF ভাগ করে দেখা ও শেয়ার করার জন্য উপযোগী, কিন্তু text সম্পাদনা করতে Word document দরকার হতে পারে। PDF থেকে DOCX conversion-এ software page-এ থাকা text ও layout অনুমান করে editable structure তৈরি করে। সোজা paragraph তুলনামূলক ভালো আসতে পারে, কিন্তু বহু column, footnote, table, form এবং ছবির চারপাশের text বদলে যেতে পারে। Conversion-কে finished document নয়, editing-এর প্রথম ধাপ ভাবুন।"},
+        {"t":"h2","x":"প্রথমে PDF-এর ধরন দেখুন"},
+        {"t":"p","x":"PDF-এ text select করা গেলে সরাসরি conversion সম্ভব হতে পারে। সব page যদি image হয়, OCR প্রয়োজন। OCR ভুল অক্ষর বা সংখ্যা দিতে পারে, বিশেষ করে বাংলা-ইংরেজি মিশ্র লেখা, formula এবং low-quality scan-এ। Password-protected file হলে আপনি অনুমোদিত কি না নিশ্চিত করুন এবং সঠিক password ব্যবহার করুন।"},
+        {"t":"h2","x":"বিন্যাস ও content সম্পাদনা"},
+        {"t":"p","x":"DOCX খুলে heading hierarchy, paragraph order, table, bullet এবং page break পরীক্ষা করুন। দুই column-এর লেখা একটির পর আরেকটি ভুলভাবে আসতে পারে। ছবি বা chart-কে সঠিক caption-এর সঙ্গে যুক্ত করুন। Header ও footer-এ পুরনো page number থাকলে ঠিক করুন। বানান পরীক্ষক চালান, তবে ব্যক্তিনাম, amount ও technical term হাতে মিলিয়ে নিন।"},
+        {"t":"h2","x":"মৌলিক ও স্বাক্ষরিত কপি রাখুন"},
+        {"t":"p","x":"Original PDF আলাদা রাখুন, বিশেষ করে document signed বা official record হলে। Conversion-এর ফলে digital signature যাচাই অকার্যকর হতে পারে এবং নতুন Word copy আইনগত মূল নথি নাও হতে পারে। কাজ শেষ হলে DOCX থেকে একটি PDF export করুন, দুই format পাশাপাশি খুলে গুরুত্বপূর্ণ তথ্য তুলনা করুন।"},
+        {"t":"p","x":"PrintxPDF PDF-to-Word conversion সার্ভারে করে। গোপন নথি upload করার আগে প্রতিষ্ঠানের অনুমোদিত ব্যবস্থাপনা ব্যবহার করুন।"},
+        {"t":"p","x":"Document-এ tracked changes বা comments দরকার হলে conversion-এর পরে সেগুলো নতুন করে যোগ করুন। PDF-এ hidden revision history থাকলেও তা Word-এ আসবে ধরে নেওয়া ঠিক নয়।"},
+        {"t":"cta","tool":"pdf-to-word","x":"PDF-কে DOCX করে বিন্যাস ও গুরুত্বপূর্ণ তথ্য হাতে যাচাই করুন।"}
       ]
     },
     {
@@ -155,21 +155,21 @@
       "description": "PDF table থেকে Excel sheet বানিয়ে column, decimal, date ও merged cell যাচাই করুন। Scanned table-এ OCR ভুল পরীক্ষা করা জরুরি।",
       "metaDescription": "PDF table থেকে Excel sheet বানিয়ে column, decimal, date ও merged cell যাচাই করুন। Scanned table-এ OCR ভুল পরীক্ষা করা জরুরি।",
       "faqs": [
-        { "q": "PDF table কি Excel-এ ঠিক একই রকম হয়?", "a": "সবসময় নয়। line, spacing এবং merged cell-কে column হিসেবে শনাক্ত করতে রূপান্তরকারী ভুল করতে পারে।" },
-        { "q": "Scanned table কীভাবে convert করব?", "a": "OCR দিয়ে শুরু করতে হতে পারে। প্রতিটি সংখ্যা ও heading মূল scan-এর সঙ্গে মিলিয়ে নিন।" },
-        { "q": "রূপান্তরের পরে total কেন বদলায়?", "a": "Decimal separator, negative sign বা digit ভুল ধরা পড়তে পারে। Formula চালানোর আগে source data যাচাই করুন।" }
+        {"q":"PDF table কি Excel-এ ঠিক একই রকম হয়?","a":"সবসময় নয়। line, spacing এবং merged cell-কে column হিসেবে শনাক্ত করতে রূপান্তরকারী ভুল করতে পারে।"},
+        {"q":"Scanned table কীভাবে convert করব?","a":"OCR দিয়ে শুরু করতে হতে পারে। প্রতিটি সংখ্যা ও heading মূল scan-এর সঙ্গে মিলিয়ে নিন।"},
+        {"q":"রূপান্তরের পরে total কেন বদলায়?","a":"Decimal separator, negative sign বা digit ভুল ধরা পড়তে পারে। Formula চালানোর আগে source data যাচাই করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এ থাকা আর্থিক, inventory বা গবেষণার table Excel-এ নিলে sort, filter এবং calculation করা সহজ হয়। কিন্তু PDF table কোনো spreadsheet নয়। সফটওয়্যার দৃশ্যমান alignment দেখে row ও column অনুমান করে, তাই merged cell, wrapped text, repeated header এবং decimal point ভুল হতে পারে। রূপান্তরিত workbook ব্যবহার করার আগে source PDF-এর সঙ্গে তথ্য মিলিয়ে নিন।" },
-        { "t": "h2", "x": "Selectable text নাকি scanned image" },
-        { "t": "p", "x": "একটি cell-এর text copy করে দেখুন। কাজ করলে table text-based; না হলে scanned image হতে পারে এবং OCR দরকার। Low-resolution scan-এ 0 ও O, 1 ও I, comma ও decimal point গুলিয়ে যায়। OCR ফলকে কখনোই যাচাই ছাড়া financial calculation-এ ব্যবহার করবেন না।" },
-        { "t": "h2", "x": "Column ও data type পরীক্ষা" },
-        { "t": "p", "x": "Excel-এ প্রতিটি header, row count এবং গুরুত্বপূর্ণ identifier তুলনা করুন। তারিখ text হিসেবে এসেছে কি না, leading zero হারিয়েছে কি না, negative number-এর sign ঠিক আছে কি না দেখুন। Amount-এর decimal এবং হাজার separator আপনার locale অনুযায়ী ব্যাখ্যা হয়েছে কি না নিশ্চিত করুন। Table এক sheet-এ না এসে কয়েকটি sheet হলে নাম দিন এবং ধারাবাহিকতা লিখে রাখুন।" },
-        { "t": "h2", "x": "Formula চালানোর আগে মিলিয়ে নিন" },
-        { "t": "p", "x": "কয়েকটি row হাতে যোগ করে PDF-এর total-এর সঙ্গে মিলান। প্রয়োজন হলে Excel formula নতুন করে তৈরি করুন, কিন্তু converted data অক্ষত রেখে আলাদা sheet-এ কাজ করুন। Workbook save করার আগে hidden row, footnote এবং printed page heading দেখুন। মূল PDF নিরাপদে রেখে editable copy-তে পরিবর্তনের history লিখে রাখুন।" },
-        { "t": "p", "x": "PrintxPDF conversion সার্ভারে সম্পন্ন হয়; আর্থিক বা গোপন নথির ক্ষেত্রে upload policy যাচাই করুন।" },
-        { "t": "p", "x": "Audit বা accounting কাজে source page-এর reference column যোগ করা উপকারী। এতে পরবর্তী reviewer সহজে বুঝবেন workbook-এর কোন row PDF-এর কোন স্থানের তথ্য থেকে এসেছে।" },
-        { "t": "cta", "tool": "pdf-to-excel", "x": "PDF table-কে spreadsheet-এ বদলে data যাচাই করুন, তারপর formula ব্যবহার করুন।" }
+        {"t":"p","x":"PDF-এ থাকা আর্থিক, inventory বা গবেষণার table Excel-এ নিলে sort, filter এবং calculation করা সহজ হয়। কিন্তু PDF table কোনো spreadsheet নয়। সফটওয়্যার দৃশ্যমান alignment দেখে row ও column অনুমান করে, তাই merged cell, wrapped text, repeated header এবং decimal point ভুল হতে পারে। রূপান্তরিত workbook ব্যবহার করার আগে source PDF-এর সঙ্গে তথ্য মিলিয়ে নিন।"},
+        {"t":"h2","x":"Selectable text নাকি scanned image"},
+        {"t":"p","x":"একটি cell-এর text copy করে দেখুন। কাজ করলে table text-based; না হলে scanned image হতে পারে এবং OCR দরকার। Low-resolution scan-এ 0 ও O, 1 ও I, comma ও decimal point গুলিয়ে যায়। OCR ফলকে কখনোই যাচাই ছাড়া financial calculation-এ ব্যবহার করবেন না।"},
+        {"t":"h2","x":"Column ও data type পরীক্ষা"},
+        {"t":"p","x":"Excel-এ প্রতিটি header, row count এবং গুরুত্বপূর্ণ identifier তুলনা করুন। তারিখ text হিসেবে এসেছে কি না, leading zero হারিয়েছে কি না, negative number-এর sign ঠিক আছে কি না দেখুন। Amount-এর decimal এবং হাজার separator আপনার locale অনুযায়ী ব্যাখ্যা হয়েছে কি না নিশ্চিত করুন। Table এক sheet-এ না এসে কয়েকটি sheet হলে নাম দিন এবং ধারাবাহিকতা লিখে রাখুন।"},
+        {"t":"h2","x":"Formula চালানোর আগে মিলিয়ে নিন"},
+        {"t":"p","x":"কয়েকটি row হাতে যোগ করে PDF-এর total-এর সঙ্গে মিলান। প্রয়োজন হলে Excel formula নতুন করে তৈরি করুন, কিন্তু converted data অক্ষত রেখে আলাদা sheet-এ কাজ করুন। Workbook save করার আগে hidden row, footnote এবং printed page heading দেখুন। মূল PDF নিরাপদে রেখে editable copy-তে পরিবর্তনের history লিখে রাখুন।"},
+        {"t":"p","x":"PrintxPDF conversion সার্ভারে সম্পন্ন হয়; আর্থিক বা গোপন নথির ক্ষেত্রে upload policy যাচাই করুন।"},
+        {"t":"p","x":"Audit বা accounting কাজে source page-এর reference column যোগ করা উপকারী। এতে পরবর্তী reviewer সহজে বুঝবেন workbook-এর কোন row PDF-এর কোন স্থানের তথ্য থেকে এসেছে।"},
+        {"t":"cta","tool":"pdf-to-excel","x":"PDF table-কে spreadsheet-এ বদলে data যাচাই করুন, তারপর formula ব্যবহার করুন।"}
       ]
     },
     {
@@ -180,20 +180,20 @@
       "description": "PDF-এর searchable text বের করে Unicode, reading order, column ও page break পরীক্ষা করুন। Image-only scan হলে OCR-এর সীমাবদ্ধতা বুঝুন।",
       "metaDescription": "PDF-এর searchable text বের করে Unicode, reading order, column ও page break পরীক্ষা করুন। Image-only scan হলে OCR-এর সীমাবদ্ধতা বুঝুন।",
       "faqs": [
-        { "q": "কেন কিছু PDF থেকে text পাওয়া যায় না?", "a": "সেগুলো image scan হতে পারে বা copy restriction থাকতে পারে। অনুমোদিত হলে OCR ব্যবহার করে ফল যাচাই করুন।" },
-        { "q": "Text বের করলে page layout থাকবে?", "a": "সাধারণ text output সাধারণত visual layout ধরে রাখে না; heading ও column order হাতে ঠিক করতে হতে পারে।" },
-        { "q": "বাংলা text ভেঙে গেলে কী করব?", "a": "Unicode support-সহ output tool বেছে নিন এবং অন্য text editor-এ খুলে character encoding পরীক্ষা করুন।" }
+        {"q":"কেন কিছু PDF থেকে text পাওয়া যায় না?","a":"সেগুলো image scan হতে পারে বা copy restriction থাকতে পারে। অনুমোদিত হলে OCR ব্যবহার করে ফল যাচাই করুন।"},
+        {"q":"Text বের করলে page layout থাকবে?","a":"সাধারণ text output সাধারণত visual layout ধরে রাখে না; heading ও column order হাতে ঠিক করতে হতে পারে।"},
+        {"q":"বাংলা text ভেঙে গেলে কী করব?","a":"Unicode support-সহ output tool বেছে নিন এবং অন্য text editor-এ খুলে character encoding পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF থেকে plain text বের করা search, quote, translation, archiving বা note-taking-এ সহায়ক। PDF-এর text layer থাকলে extraction দ্রুত হতে পারে। তবে plain text পৃষ্ঠার visual layout রাখে না। দুই column-এর paragraph একসঙ্গে মিশে যেতে পারে, header ও page number মূল লেখার মাঝে ঢুকতে পারে, আর table-এর ঘর ভেঙে যেতে পারে। Output-কে প্রাথমিক data ধরে পড়ে সংশোধন করুন।" },
-        { "t": "h2", "x": "কেন extraction ব্যর্থ হয়" },
-        { "t": "p", "x": "Scanned PDF-তে পৃষ্ঠা ছবি, selectable character নয়। Optical character recognition বা OCR প্রয়োজন হতে পারে। Text extraction restriction থাকলে file owner বা publisher-এর অনুমতি যাচাই করুন। Font mapping ভুল বা পুরনো হলে অক্ষরের বদলে অদ্ভুত symbol আসতে পারে। বাংলা যুক্তাক্ষর এবং মিশ্র script বিশেষভাবে পরীক্ষা করুন।" },
-        { "t": "h2", "x": "ক্রম, encoding ও page break" },
-        { "t": "p", "x": "Text editor-এ output খুলে Unicode ঠিক আছে কি না দেখুন। Heading ও paragraph-এর মধ্যে line break অস্বাভাবিক হলে tidy করুন, তবে original page reference মুছে ফেলবেন না যদি উদ্ধৃতি দরকার হয়। Footnote, bibliography এবং list numbering সঠিক paragraph-এর সঙ্গে আছে কি না তুলনা করুন। একাধিক column হলে প্রতিটি page আলাদাভাবে যাচাই করা সুবিধাজনক।" },
-        { "t": "h2", "x": "উদ্ধৃতি ও নিরাপদ ব্যবহার" },
-        { "t": "p", "x": "গুরুত্বপূর্ণ নাম, তারিখ, legal clause বা amount original PDF থেকে সরাসরি যাচাই করুন। OCR punctuation ও number ভুল করতে পারে। Extracted text শেয়ার করার আগে copyright এবং privacy rule মেনে চলুন। PDF ফাইলে account, medical বা business data থাকলে অনুমোদিত local process বিবেচনা করুন।" },
-        { "t": "p", "x": "Output-কে অন্য ভাষায় translate বা AI prompt-এ দেওয়ার আগে প্রতিষ্ঠানের তথ্যনীতি দেখুন। Extracted plain text-এ page image বা diagram-এর তথ্য নাও থাকতে পারে, তাই শুধু text-কে পূর্ণ নথি মনে করবেন না।" },
-        { "t": "cta", "tool": "pdf-to-text", "x": "PDF থেকে text বের করুন এবং original page-এর সঙ্গে ফল মিলিয়ে নিন।" }
+        {"t":"p","x":"PDF থেকে plain text বের করা search, quote, translation, archiving বা note-taking-এ সহায়ক। PDF-এর text layer থাকলে extraction দ্রুত হতে পারে। তবে plain text পৃষ্ঠার visual layout রাখে না। দুই column-এর paragraph একসঙ্গে মিশে যেতে পারে, header ও page number মূল লেখার মাঝে ঢুকতে পারে, আর table-এর ঘর ভেঙে যেতে পারে। Output-কে প্রাথমিক data ধরে পড়ে সংশোধন করুন।"},
+        {"t":"h2","x":"কেন extraction ব্যর্থ হয়"},
+        {"t":"p","x":"Scanned PDF-তে পৃষ্ঠা ছবি, selectable character নয়। Optical character recognition বা OCR প্রয়োজন হতে পারে। Text extraction restriction থাকলে file owner বা publisher-এর অনুমতি যাচাই করুন। Font mapping ভুল বা পুরনো হলে অক্ষরের বদলে অদ্ভুত symbol আসতে পারে। বাংলা যুক্তাক্ষর এবং মিশ্র script বিশেষভাবে পরীক্ষা করুন।"},
+        {"t":"h2","x":"ক্রম, encoding ও page break"},
+        {"t":"p","x":"Text editor-এ output খুলে Unicode ঠিক আছে কি না দেখুন। Heading ও paragraph-এর মধ্যে line break অস্বাভাবিক হলে tidy করুন, তবে original page reference মুছে ফেলবেন না যদি উদ্ধৃতি দরকার হয়। Footnote, bibliography এবং list numbering সঠিক paragraph-এর সঙ্গে আছে কি না তুলনা করুন। একাধিক column হলে প্রতিটি page আলাদাভাবে যাচাই করা সুবিধাজনক।"},
+        {"t":"h2","x":"উদ্ধৃতি ও নিরাপদ ব্যবহার"},
+        {"t":"p","x":"গুরুত্বপূর্ণ নাম, তারিখ, legal clause বা amount original PDF থেকে সরাসরি যাচাই করুন। OCR punctuation ও number ভুল করতে পারে। Extracted text শেয়ার করার আগে copyright এবং privacy rule মেনে চলুন। PDF ফাইলে account, medical বা business data থাকলে অনুমোদিত local process বিবেচনা করুন।"},
+        {"t":"p","x":"Output-কে অন্য ভাষায় translate বা AI prompt-এ দেওয়ার আগে প্রতিষ্ঠানের তথ্যনীতি দেখুন। Extracted plain text-এ page image বা diagram-এর তথ্য নাও থাকতে পারে, তাই শুধু text-কে পূর্ণ নথি মনে করবেন না। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"pdf-to-text","x":"PDF থেকে text বের করুন এবং original page-এর সঙ্গে ফল মিলিয়ে নিন।"}
       ]
     },
     {
@@ -204,21 +204,21 @@
       "description": "PDF page-কে PowerPoint slide-এ বদলে image, text ও layout পরীক্ষা করুন। Editable content, OCR এবং presentation ratio-এর সীমা বুঝুন।",
       "metaDescription": "PDF page-কে PowerPoint slide-এ বদলে image, text ও layout পরীক্ষা করুন। Editable content, OCR এবং presentation ratio-এর সীমা বুঝুন।",
       "faqs": [
-        { "q": "PDF থেকে বানানো slide কি সম্পাদনাযোগ্য?", "a": "কিছু conversion প্রতিটি page-কে image করে রাখে। Text ও shape editable কি না output-এ পরীক্ষা করুন।" },
-        { "q": "PowerPoint layout কেন বদলে যায়?", "a": "PDF page size, font এবং presentation aspect ratio আলাদা হতে পারে; ফলে crop বা ফাঁকা margin দেখা যায়।" },
-        { "q": "PDF scan হলে slide-এ text পাব?", "a": "OCR ছাড়া scan image-ই থাকতে পারে। OCR text ব্যবহার করলে spelling ও number মিলিয়ে নিন।" }
+        {"q":"PDF থেকে বানানো slide কি সম্পাদনাযোগ্য?","a":"কিছু conversion প্রতিটি page-কে image করে রাখে। Text ও shape editable কি না output-এ পরীক্ষা করুন।"},
+        {"q":"PowerPoint layout কেন বদলে যায়?","a":"PDF page size, font এবং presentation aspect ratio আলাদা হতে পারে; ফলে crop বা ফাঁকা margin দেখা যায়।"},
+        {"q":"PDF scan হলে slide-এ text পাব?","a":"OCR ছাড়া scan image-ই থাকতে পারে। OCR text ব্যবহার করলে spelling ও number মিলিয়ে নিন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এর প্রতিটি পৃষ্ঠা PowerPoint slide-এ নেওয়া presentation পুনর্ব্যবহার বা meeting-এ page দেখাতে কাজে লাগে। কিন্তু PDF-to-PPT conversion সবসময় মূল design-এর editable slide তৈরি করে না। কোনো tool সম্পূর্ণ page-কে image হিসেবে রাখে, অন্যটি text ও shape আলাদা করার চেষ্টা করে। ফল ব্যবহারের আগে slide খুলে editing সম্ভব কি না পরীক্ষা করুন এবং original PDF সংরক্ষণ করুন।" },
-        { "t": "h2", "x": "Page ratio ও slide size" },
-        { "t": "p", "x": "PDF page-এর ratio A4 বা letter হতে পারে, কিন্তু presentation সাধারণত widescreen। রূপান্তরের পর পাশে ফাঁকা জায়গা, crop বা অস্বাভাবিক scale দেখা যেতে পারে। Slide size পরিবর্তনের আগে গুরুত্বপূর্ণ content কাটা যাচ্ছে কি না দেখুন। Landscape ও portrait page মিশ্র থাকলে আলাদাভাবে সংশোধন লাগতে পারে।" },
-        { "t": "h2", "x": "Text ও graphics সম্পাদনা" },
-        { "t": "p", "x": "Text select করে font, line break, table এবং bullet পরীক্ষা করুন। বাংলা font বদলে গেলে যুক্তাক্ষর ও spacing দেখুন। ছবির মান যথেষ্ট কি না zoom করে দেখুন; PDF থেকে বড় করলে jagged edge হতে পারে। Scan page-কে editable text করতে OCR দরকার, কিন্তু OCR ভুল মুছে বা যোগ করতে পারে।" },
-        { "t": "h2", "x": "Presentation-ready কপি তৈরি" },
-        { "t": "p", "x": "একটি slide-এ অতিরিক্ত paragraph থাকলে সংক্ষিপ্ত করুন এবং মূল document-এর citation বা page reference রাখুন। Presenter note থাকলে আলাদা যোগ করুন। সব slide full-screen preview করুন, তারপর PDF export করে font, color ও link যাচাই করুন। আইনগত বা signed source-কে পরিবর্তিত slide দিয়ে প্রতিস্থাপন করবেন না।" },
-        { "t": "p", "x": "PrintxPDF PDF-to-PowerPoint conversion সার্ভারে চালায়। গোপন file upload করার আগে অনুমোদিত process ব্যবহার করুন।" },
-        { "t": "p", "x": "Projector-এ চালানোর আগে presentation পুরো screen-এ দেখুন। ছোট লেখা থাকলে slide redesign করুন, শুধু zoom করে সমস্যা লুকাবেন না। File share করার সময় PPTX ও reference PDF-এর version মিলিয়ে রাখুন।" },
-        { "t": "cta", "tool": "pdf-to-ppt", "x": "PDF থেকে slide তৈরি করে presentation-এ প্রতিটি page পরীক্ষা করুন।" }
+        {"t":"p","x":"PDF-এর প্রতিটি পৃষ্ঠা PowerPoint slide-এ নেওয়া presentation পুনর্ব্যবহার বা meeting-এ page দেখাতে কাজে লাগে। কিন্তু PDF-to-PPT conversion সবসময় মূল design-এর editable slide তৈরি করে না। কোনো tool সম্পূর্ণ page-কে image হিসেবে রাখে, অন্যটি text ও shape আলাদা করার চেষ্টা করে। ফল ব্যবহারের আগে slide খুলে editing সম্ভব কি না পরীক্ষা করুন এবং original PDF সংরক্ষণ করুন।"},
+        {"t":"h2","x":"Page ratio ও slide size"},
+        {"t":"p","x":"PDF page-এর ratio A4 বা letter হতে পারে, কিন্তু presentation সাধারণত widescreen। রূপান্তরের পর পাশে ফাঁকা জায়গা, crop বা অস্বাভাবিক scale দেখা যেতে পারে। Slide size পরিবর্তনের আগে গুরুত্বপূর্ণ content কাটা যাচ্ছে কি না দেখুন। Landscape ও portrait page মিশ্র থাকলে আলাদাভাবে সংশোধন লাগতে পারে।"},
+        {"t":"h2","x":"Text ও graphics সম্পাদনা"},
+        {"t":"p","x":"Text select করে font, line break, table এবং bullet পরীক্ষা করুন। বাংলা font বদলে গেলে যুক্তাক্ষর ও spacing দেখুন। ছবির মান যথেষ্ট কি না zoom করে দেখুন; PDF থেকে বড় করলে jagged edge হতে পারে। Scan page-কে editable text করতে OCR দরকার, কিন্তু OCR ভুল মুছে বা যোগ করতে পারে।"},
+        {"t":"h2","x":"Presentation-ready কপি তৈরি"},
+        {"t":"p","x":"একটি slide-এ অতিরিক্ত paragraph থাকলে সংক্ষিপ্ত করুন এবং মূল document-এর citation বা page reference রাখুন। Presenter note থাকলে আলাদা যোগ করুন। সব slide full-screen preview করুন, তারপর PDF export করে font, color ও link যাচাই করুন। আইনগত বা signed source-কে পরিবর্তিত slide দিয়ে প্রতিস্থাপন করবেন না।"},
+        {"t":"p","x":"PrintxPDF PDF-to-PowerPoint conversion সার্ভারে চালায়। গোপন file upload করার আগে অনুমোদিত process ব্যবহার করুন।"},
+        {"t":"p","x":"Projector-এ চালানোর আগে presentation পুরো screen-এ দেখুন। ছোট লেখা থাকলে slide redesign করুন, শুধু zoom করে সমস্যা লুকাবেন না। File share করার সময় PPTX ও reference PDF-এর version মিলিয়ে রাখুন।"},
+        {"t":"cta","tool":"pdf-to-ppt","x":"PDF থেকে slide তৈরি করে presentation-এ প্রতিটি page পরীক্ষা করুন।"}
       ]
     },
     {
@@ -229,20 +229,20 @@
       "description": "পুরো PDF নয়, নির্দিষ্ট পৃষ্ঠা JPG করুন। Resolution, quality ও output size বেছে নেওয়ার পরে text এবং image clarity পরীক্ষা করুন।",
       "metaDescription": "পুরো PDF নয়, নির্দিষ্ট পৃষ্ঠা JPG করুন। Resolution, quality ও output size বেছে নেওয়ার পরে text এবং image clarity পরীক্ষা করুন।",
       "faqs": [
-        { "q": "একটি নির্দিষ্ট PDF page JPG করা যায়?", "a": "হ্যাঁ, page range বা নির্বাচিত page ব্যবহার করার option থাকলে প্রয়োজনীয় পৃষ্ঠা বেছে নিন।" },
-        { "q": "JPG text search করা যায়?", "a": "না, JPG raster image। Searchable text দরকার হলে PDF রাখুন বা OCR প্রয়োগ করুন।" },
-        { "q": "JPG quality কোনটি বেছে নেব?", "a": "Screen sharing, website অথবা printing-এর প্রয়োজন অনুযায়ী resolution ও quality ঠিক করে sample পরীক্ষা করুন।" }
+        {"q":"একটি নির্দিষ্ট PDF page JPG করা যায়?","a":"হ্যাঁ, page range বা নির্বাচিত page ব্যবহার করার option থাকলে প্রয়োজনীয় পৃষ্ঠা বেছে নিন।"},
+        {"q":"JPG text search করা যায়?","a":"না, JPG raster image। Searchable text দরকার হলে PDF রাখুন বা OCR প্রয়োগ করুন।"},
+        {"q":"JPG quality কোনটি বেছে নেব?","a":"Screen sharing, website অথবা printing-এর প্রয়োজন অনুযায়ী resolution ও quality ঠিক করে sample পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "কখনও পুরো PDF পাঠানোর দরকার হয় না; একটি chart, cover page বা অনুমোদিত excerpt JPG image হিসেবে শেয়ার করা সহজ। JPG প্রতিটি page-কে bitmap-এ রূপান্তর করে, তাই text আর স্বাভাবিকভাবে select বা search করা যায় না। প্রথমে page number নিশ্চিত করুন। PDF viewer-এর page count ও printed page number আলাদা হতে পারে, বিশেষ করে cover বা introductory page থাকলে।" },
-        { "t": "h2", "x": "Page range নির্বাচন" },
-        { "t": "p", "x": "যে page দরকার তা thumbnail দেখে চিহ্নিত করুন। একাধিক নির্বাচিত page হলে output file-এর নাম ও order পরিষ্কার রাখুন। Page range ঠিক আছে কি না download-এর আগে preview দেখুন। কোনো নথিতে sensitive content থাকলে export image-এ আশেপাশের অপ্রয়োজনীয় তথ্য রয়ে গেছে কি না পরীক্ষা করুন। Image conversion privacy redaction-এর বিকল্প নয়।" },
-        { "t": "h2", "x": "Resolution ও image quality" },
-        { "t": "p", "x": "Web preview-তে কম resolution চলতে পারে, কিন্তু print বা zoom-এর জন্য বেশি resolution দরকার। খুব বড় image email ও storage-এ সমস্যা করে। JPEG quality কমালে file size কমে, তবে text edge ও ছোট symbol ঝাপসা হতে পারে। Dense table বা fine print থাকা page-এ sample তৈরি করে পরীক্ষা করুন।" },
-        { "t": "h2", "x": "কখন PNG বা PDF রাখবেন" },
-        { "t": "p", "x": "Flat color, diagram বা screenshot-এ PNG কখনও ভালো হতে পারে; photograph-এর ক্ষেত্রে JPG ছোট হতে পারে। Searchable document, selectable text বা digital signature দরকার হলে original PDF-ই উপযুক্ত। JPG তৈরি হলে page orientation, crop এবং readability দেখুন। তারপর recipient-এর প্রয়োজন অনুযায়ী সঠিক format পাঠান।" },
-        { "t": "p", "x": "দীর্ঘ PDF-এ নির্বাচিত page extract করার আগে recipient-এর প্রয়োজনীয় section নিশ্চিত করুন। File name-এ ক্রম রাখুন এবং ভুল page export হয়েছে কি না প্রতিটি image খুলে পরীক্ষা করুন।" },
-        { "t": "cta", "tool": "pdf-to-jpg", "x": "নির্বাচিত page JPG করে quality ও resolution পরীক্ষা করুন।" }
+        {"t":"p","x":"কখনও পুরো PDF পাঠানোর দরকার হয় না; একটি chart, cover page বা অনুমোদিত excerpt JPG image হিসেবে শেয়ার করা সহজ। JPG প্রতিটি page-কে bitmap-এ রূপান্তর করে, তাই text আর স্বাভাবিকভাবে select বা search করা যায় না। প্রথমে page number নিশ্চিত করুন। PDF viewer-এর page count ও printed page number আলাদা হতে পারে, বিশেষ করে cover বা introductory page থাকলে।"},
+        {"t":"h2","x":"Page range নির্বাচন"},
+        {"t":"p","x":"যে page দরকার তা thumbnail দেখে চিহ্নিত করুন। একাধিক নির্বাচিত page হলে output file-এর নাম ও order পরিষ্কার রাখুন। Page range ঠিক আছে কি না download-এর আগে preview দেখুন। কোনো নথিতে sensitive content থাকলে export image-এ আশেপাশের অপ্রয়োজনীয় তথ্য রয়ে গেছে কি না পরীক্ষা করুন। Image conversion privacy redaction-এর বিকল্প নয়।"},
+        {"t":"h2","x":"Resolution ও image quality"},
+        {"t":"p","x":"Web preview-তে কম resolution চলতে পারে, কিন্তু print বা zoom-এর জন্য বেশি resolution দরকার। খুব বড় image email ও storage-এ সমস্যা করে। JPEG quality কমালে file size কমে, তবে text edge ও ছোট symbol ঝাপসা হতে পারে। Dense table বা fine print থাকা page-এ sample তৈরি করে পরীক্ষা করুন।"},
+        {"t":"h2","x":"কখন PNG বা PDF রাখবেন"},
+        {"t":"p","x":"Flat color, diagram বা screenshot-এ PNG কখনও ভালো হতে পারে; photograph-এর ক্ষেত্রে JPG ছোট হতে পারে। Searchable document, selectable text বা digital signature দরকার হলে original PDF-ই উপযুক্ত। JPG তৈরি হলে page orientation, crop এবং readability দেখুন। তারপর recipient-এর প্রয়োজন অনুযায়ী সঠিক format পাঠান।"},
+        {"t":"p","x":"দীর্ঘ PDF-এ নির্বাচিত page extract করার আগে recipient-এর প্রয়োজনীয় section নিশ্চিত করুন। File name-এ ক্রম রাখুন এবং ভুল page export হয়েছে কি না প্রতিটি image খুলে পরীক্ষা করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"pdf-to-jpg","x":"নির্বাচিত page JPG করে quality ও resolution পরীক্ষা করুন।"}
       ]
     }
   ]

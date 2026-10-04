@@ -9,20 +9,20 @@
       "description": "PDF page JPG বা PNG-তে export করে print, web বা message-এ ব্যবহার করুন। Page range, resolution ও output clarity পরীক্ষা করুন।",
       "metaDescription": "PDF page JPG বা PNG-তে export করে print, web বা message-এ ব্যবহার করুন। Page range, resolution ও output clarity পরীক্ষা করুন।",
       "faqs": [
-        { "q": "JPG নাকি PNG বেছে নেব?", "a": "Photo ও ছোট web file-এর জন্য JPG, sharp text ও flat graphic-এর জন্য PNG উপযোগী হতে পারে।" },
-        { "q": "PDF থেকে image searchable থাকবে?", "a": "না। Raster image-এ text search করতে OCR প্রয়োজন হতে পারে।" },
-        { "q": "কোন resolution ব্যবহার করব?", "a": "Screen ও print-এর প্রয়োজন অনুযায়ী বেছে নিন; sample output-এ ছোট লেখা ও রেখা পরীক্ষা করুন।" }
+        {"q":"JPG নাকি PNG বেছে নেব?","a":"Photo ও ছোট web file-এর জন্য JPG, sharp text ও flat graphic-এর জন্য PNG উপযোগী হতে পারে।"},
+        {"q":"PDF থেকে image searchable থাকবে?","a":"না। Raster image-এ text search করতে OCR প্রয়োজন হতে পারে।"},
+        {"q":"কোন resolution ব্যবহার করব?","a":"Screen ও print-এর প্রয়োজন অনুযায়ী বেছে নিন; sample output-এ ছোট লেখা ও রেখা পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF page-কে JPG বা PNG-তে রূপান্তর করলে presentation slide, website, chat বা image-based workflow-তে ব্যবহার করা সহজ হয়। প্রতিটি page raster image-এ পরিণত হয়, ফলে text আর স্বাভাবিকভাবে select বা search করা যায় না। শুরুতে নির্দিষ্ট page range বেছে নিন এবং source PDF-এর original কপি রাখুন। Full document image-এ রূপান্তর করলে file size অনেক বেড়ে যেতে পারে।" },
-        { "t": "h2", "x": "JPG ও PNG-এর ব্যবহার" },
-        { "t": "p", "x": "JPG photograph বা gradient-সমৃদ্ধ page-এ ছোট output দিতে পারে, তবে repeated lossy save detail নষ্ট করে। PNG text, diagram এবং flat colour ধরে রাখতে পারে, কিন্তু file বড় হতে পারে। Transparent background দরকার হলে PDF page render কীভাবে transparency নেয় তা preview-তে পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Page ও resolution নির্বাচন" },
-        { "t": "p", "x": "সব page দরকার না হলে কেবল প্রয়োজনীয় page export করুন। Web thumbnail-এর resolution এবং printed handout-এর প্রয়োজন আলাদা। বেশি resolution output বড় করে, খুব কম resolution ছোট লেখাকে অস্পষ্ট করে। Chart label, signature ও fine line আছে এমন page দিয়ে sample পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Conversion শেষে যাচাই" },
-        { "t": "p", "x": "Image খুলে orientation, crop, colour এবং page order দেখুন। File name-এ page number রাখলে ধারাবাহিকতা বজায় থাকে। Text search প্রয়োজন হলে original PDF রাখুন অথবা OCR চালিয়ে result যাচাই করুন। Public sharing-এর আগে image-এ দৃশ্যমান personal information এবং copyright permission পরীক্ষা করুন।" },
-        { "t": "p", "x": "Webpage thumbnail দরকার হলে সব পৃষ্ঠা export না করে key page নির্বাচন করুন। File naming-এ document short title ও page number রাখলে পরে মিলিয়ে পাওয়া যায়। শেষ output অন্য image viewer-এ খুলে দেখুন, কারণ browser preview file corrupt কি না বোঝায় না। Mobile screen-এ zoom করেও small label পরিষ্কার কি না দেখে নিন।" },
-        { "t": "cta", "tool": "pdf-to-jpg", "x": "PDF page export করে format ও resolution অনুযায়ী preview দেখুন।" }
+        {"t":"p","x":"PDF page-কে JPG বা PNG-তে রূপান্তর করলে presentation slide, website, chat বা image-based workflow-তে ব্যবহার করা সহজ হয়। প্রতিটি page raster image-এ পরিণত হয়, ফলে text আর স্বাভাবিকভাবে select বা search করা যায় না। শুরুতে নির্দিষ্ট page range বেছে নিন এবং source PDF-এর original কপি রাখুন। Full document image-এ রূপান্তর করলে file size অনেক বেড়ে যেতে পারে।"},
+        {"t":"h2","x":"JPG ও PNG-এর ব্যবহার"},
+        {"t":"p","x":"JPG photograph বা gradient-সমৃদ্ধ page-এ ছোট output দিতে পারে, তবে repeated lossy save detail নষ্ট করে। PNG text, diagram এবং flat colour ধরে রাখতে পারে, কিন্তু file বড় হতে পারে। Transparent background দরকার হলে PDF page render কীভাবে transparency নেয় তা preview-তে পরীক্ষা করুন।"},
+        {"t":"h2","x":"Page ও resolution নির্বাচন"},
+        {"t":"p","x":"সব page দরকার না হলে কেবল প্রয়োজনীয় page export করুন। Web thumbnail-এর resolution এবং printed handout-এর প্রয়োজন আলাদা। বেশি resolution output বড় করে, খুব কম resolution ছোট লেখাকে অস্পষ্ট করে। Chart label, signature ও fine line আছে এমন page দিয়ে sample পরীক্ষা করুন।"},
+        {"t":"h2","x":"Conversion শেষে যাচাই"},
+        {"t":"p","x":"Image খুলে orientation, crop, colour এবং page order দেখুন। File name-এ page number রাখলে ধারাবাহিকতা বজায় থাকে। Text search প্রয়োজন হলে original PDF রাখুন অথবা OCR চালিয়ে result যাচাই করুন। Public sharing-এর আগে image-এ দৃশ্যমান personal information এবং copyright permission পরীক্ষা করুন।"},
+        {"t":"p","x":"Webpage thumbnail দরকার হলে সব পৃষ্ঠা export না করে key page নির্বাচন করুন। File naming-এ document short title ও page number রাখলে পরে মিলিয়ে পাওয়া যায়। শেষ output অন্য image viewer-এ খুলে দেখুন, কারণ browser preview file corrupt কি না বোঝায় না। Mobile screen-এ zoom করেও small label পরিষ্কার কি না দেখে নিন।"},
+        {"t":"cta","tool":"pdf-to-jpg","x":"PDF page export করে format ও resolution অনুযায়ী preview দেখুন।"}
       ]
     },
     {
@@ -33,20 +33,20 @@
       "description": "PDF-এর embedded image export করুন বা page render থেকে আলাদা করুন। Original resolution, crop ও copyright সীমা যাচাই করুন।",
       "metaDescription": "PDF-এর embedded image export করুন বা page render থেকে আলাদা করুন। Original resolution, crop ও copyright সীমা যাচাই করুন।",
       "faqs": [
-        { "q": "PDF থেকে original resolution image পাব?", "a": "কখনও embedded image সরাসরি পাওয়া যায়, তবে tool বা source PDF image resize করে থাকতে পারে।" },
-        { "q": "Page-কে JPG করা আর image extract কি এক?", "a": "না। Page render করলে পুরো page image হয়; extraction নির্দিষ্ট embedded image বের করতে পারে।" },
-        { "q": "Extracted image অন্য কাজে ব্যবহার করতে পারি?", "a": "PDF-এ থাকলেই reuse permission বোঝায় না। Copyright ও license যাচাই করুন।" }
+        {"q":"PDF থেকে original resolution image পাব?","a":"কখনও embedded image সরাসরি পাওয়া যায়, তবে tool বা source PDF image resize করে থাকতে পারে।"},
+        {"q":"Page-কে JPG করা আর image extract কি এক?","a":"না। Page render করলে পুরো page image হয়; extraction নির্দিষ্ট embedded image বের করতে পারে।"},
+        {"q":"Extracted image অন্য কাজে ব্যবহার করতে পারি?","a":"PDF-এ থাকলেই reuse permission বোঝায় না। Copyright ও license যাচাই করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এ photograph, chart, logo বা illustration থাকতে পারে। Embedded image extract করা আর পুরো page JPG-তে render করা এক কাজ নয়। Direct extraction original resource দিতে পারে; page rendering-এ text ও সব visual এক raster image-এ মিশে যায়। কোন ফল দরকার তা আগে ঠিক করুন। PDF-এর image যদি আগে থেকেই low resolution হয়, export করলে detail ফিরে আসবে না।" },
-        { "t": "h2", "x": "Embedded image বনাম page image" },
-        { "t": "p", "x": "একটি figure আলাদা দরকার হলে image extraction উপযোগী। সম্পূর্ণ page-এর layout দরকার হলে PDF-to-JPG বা PNG render করুন। Page render করলে caption ও surrounding text-ও image-এ থাকবে। Crop করলে context বা copyright attribution কেটে ফেলবেন না।" },
-        { "t": "h2", "x": "Resolution ও colour profile" },
-        { "t": "p", "x": "Exported file-এর pixel dimension original PDF-এর embedded resource-এর চেয়ে কম হতে পারে। Print-এর জন্য final output size-এ পরীক্ষা করুন। Colour profile বদলে গেলে brand colour বা photograph tone ভিন্ন হতে পারে। Transparent image থাকলে background কেমন export হয়েছে দেখুন।" },
-        { "t": "h2", "x": "License ও file handling" },
-        { "t": "p", "x": "PDF-এ image থাকা মানেই সেটি পুনর্ব্যবহারের অনুমতি নয়। Publisher, photographer বা license terms যাচাই করুন। Extracted image-এ ব্যক্তিগত বা proprietary data থাকতে পারে। নিরাপদ folder-এ রাখুন, source document reference লিখুন এবং public upload-এর আগে rights নিশ্চিত করুন।" },
-        { "t": "p", "x": "যদি PDF encrypted হয় বা export restriction থাকে, document owner-এর কাছ থেকে অনুমতি ও উপযুক্ত copy নিন। Conversion access restriction পাশ কাটানোর উপায় নয়। Image বের হওয়ার পর source page reference লিখে রাখুন এবং ব্যবহারের অধিকার নিশ্চিত করুন। Extracted asset-এর পাশে attribution প্রয়োজন হলে সেটিও নথিভুক্ত করুন। Needed crop বা context আলাদা করে ব্যাখ্যা করুন। Sample image যে resolution-এ export হয়েছে তা recipient-কে জানাতে পারেন।" },
-        { "t": "cta", "tool": "pdf-to-jpg", "x": "প্রয়োজন অনুযায়ী embedded image বা page render export করুন।" }
+        {"t":"p","x":"PDF-এ photograph, chart, logo বা illustration থাকতে পারে। Embedded image extract করা আর পুরো page JPG-তে render করা এক কাজ নয়। Direct extraction original resource দিতে পারে; page rendering-এ text ও সব visual এক raster image-এ মিশে যায়। কোন ফল দরকার তা আগে ঠিক করুন। PDF-এর image যদি আগে থেকেই low resolution হয়, export করলে detail ফিরে আসবে না।"},
+        {"t":"h2","x":"Embedded image বনাম page image"},
+        {"t":"p","x":"একটি figure আলাদা দরকার হলে image extraction উপযোগী। সম্পূর্ণ page-এর layout দরকার হলে PDF-to-JPG বা PNG render করুন। Page render করলে caption ও surrounding text-ও image-এ থাকবে। Crop করলে context বা copyright attribution কেটে ফেলবেন না।"},
+        {"t":"h2","x":"Resolution ও colour profile"},
+        {"t":"p","x":"Exported file-এর pixel dimension original PDF-এর embedded resource-এর চেয়ে কম হতে পারে। Print-এর জন্য final output size-এ পরীক্ষা করুন। Colour profile বদলে গেলে brand colour বা photograph tone ভিন্ন হতে পারে। Transparent image থাকলে background কেমন export হয়েছে দেখুন।"},
+        {"t":"h2","x":"License ও file handling"},
+        {"t":"p","x":"PDF-এ image থাকা মানেই সেটি পুনর্ব্যবহারের অনুমতি নয়। Publisher, photographer বা license terms যাচাই করুন। Extracted image-এ ব্যক্তিগত বা proprietary data থাকতে পারে। নিরাপদ folder-এ রাখুন, source document reference লিখুন এবং public upload-এর আগে rights নিশ্চিত করুন।"},
+        {"t":"p","x":"যদি PDF encrypted হয় বা export restriction থাকে, document owner-এর কাছ থেকে অনুমতি ও উপযুক্ত copy নিন। Conversion access restriction পাশ কাটানোর উপায় নয়। Image বের হওয়ার পর source page reference লিখে রাখুন এবং ব্যবহারের অধিকার নিশ্চিত করুন। Extracted asset-এর পাশে attribution প্রয়োজন হলে সেটিও নথিভুক্ত করুন। Needed crop বা context আলাদা করে ব্যাখ্যা করুন। Sample image যে resolution-এ export হয়েছে তা recipient-কে জানাতে পারেন।"},
+        {"t":"cta","tool":"pdf-to-jpg","x":"প্রয়োজন অনুযায়ী embedded image বা page render export করুন।"}
       ]
     },
     {
@@ -57,20 +57,20 @@
       "description": "PDF page image করার সময় PNG ও JPG তুলনা করুন। Text edge, photo detail, transparency এবং file size অনুযায়ী format বেছে নিন।",
       "metaDescription": "PDF page image করার সময় PNG ও JPG তুলনা করুন। Text edge, photo detail, transparency এবং file size অনুযায়ী format বেছে নিন।",
       "faqs": [
-        { "q": "PDF থেকে PNG transparent হবে?", "a": "Page-এ সাদা background থাকলে export-এ সেটি সাধারণত সাদাই থাকে। Transparency tool support ও source content-এর ওপর নির্ভর করে।" },
-        { "q": "JPG কি text-এর জন্য উপযুক্ত?", "a": "JPG text-এ compression artifact দিতে পারে। PNG ছোট text ও sharp edge ভালো ধরে রাখতে পারে।" },
-        { "q": "কোন format file size কমায়?", "a": "Photo-তে JPG প্রায়ই ছোট হয়, আর flat text page-এ PNG মান ধরে রাখতে পারে; বাস্তব output তুলনা করুন।" }
+        {"q":"PDF থেকে PNG transparent হবে?","a":"Page-এ সাদা background থাকলে export-এ সেটি সাধারণত সাদাই থাকে। Transparency tool support ও source content-এর ওপর নির্ভর করে।"},
+        {"q":"JPG কি text-এর জন্য উপযুক্ত?","a":"JPG text-এ compression artifact দিতে পারে। PNG ছোট text ও sharp edge ভালো ধরে রাখতে পারে।"},
+        {"q":"কোন format file size কমায়?","a":"Photo-তে JPG প্রায়ই ছোট হয়, আর flat text page-এ PNG মান ধরে রাখতে পারে; বাস্তব output তুলনা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF page-কে image-এ রূপান্তরের সময় JPG ও PNG-এর মধ্যে বেছে নেওয়া হয় content এবং ব্যবহার অনুযায়ী। JPG lossy compression দিয়ে photograph ছোট রাখতে পারে। PNG lossless pixel data ধরে, তাই ছোট text, chart line বা interface screenshot পরিষ্কার রাখতে সহায়তা করে। Page image-এ পরিণত হলে selectable text থাকে না। Searchable document দরকার হলে original PDF-ই রাখুন।" },
-        { "t": "h2", "x": "PNG কখন ভালো" },
-        { "t": "p", "x": "Page-এ diagram, sharp font, thin line বা flat background থাকলে PNG পরীক্ষা করুন। Repeated save-এ JPG-এর মতো অতিরিক্ত compression artifact তৈরি হয় না। তবে image dimension বড় হলে PNG file অনেক বড় হতে পারে। Transparent export দরকার হলে source page ও conversion tool transparency সমর্থন করে কি না দেখুন।" },
-        { "t": "h2", "x": "JPG কখন ব্যবহার" },
-        { "t": "p", "x": "Photograph-heavy page, email preview বা webpage-এ JPG ছোট হতে পারে। Quality slider থাকলে sample page-এ text edge, gradient, shadow এবং photo detail দেখুন। Compression বেশি হলে halo বা block artifact দেখা যায়। File size কমানোর জন্য resolution কমানো আর quality কমানো আলাদা বিষয়, দুটিই পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Use case ধরে final নির্বাচন" },
-        { "t": "p", "x": "Website, messaging app বা print workflow-এর allowed format দেখুন। Small web preview-তে JPG চললেও archival copy হিসেবে image-কে PDF-তে রাখার প্রয়োজন হতে পারে। Output খুলে page order, crop, resolution এবং background মিলিয়ে নিন। Rights ও privacy বিবেচনা করে শুধু প্রয়োজনীয় page share করুন।" },
-        { "t": "p", "x": "Transparent logo page-এর ওপর আছে, নাকি source document-এ সত্যিকারের alpha channel আছে, তা আলাদা করে বুঝুন। Exported page-এ surrounding white page থাকলে background transparent হবে না। প্রয়োজনীয় result না পেলে embedded image extraction ব্যবহার করুন।" },
-        { "t": "cta", "tool": "pdf-to-jpg", "x": "একটি page PNG ও JPG দুইভাবে export করে content অনুযায়ী বেছে নিন।" }
+        {"t":"p","x":"PDF page-কে image-এ রূপান্তরের সময় JPG ও PNG-এর মধ্যে বেছে নেওয়া হয় content এবং ব্যবহার অনুযায়ী। JPG lossy compression দিয়ে photograph ছোট রাখতে পারে। PNG lossless pixel data ধরে, তাই ছোট text, chart line বা interface screenshot পরিষ্কার রাখতে সহায়তা করে। Page image-এ পরিণত হলে selectable text থাকে না। Searchable document দরকার হলে original PDF-ই রাখুন।"},
+        {"t":"h2","x":"PNG কখন ভালো"},
+        {"t":"p","x":"Page-এ diagram, sharp font, thin line বা flat background থাকলে PNG পরীক্ষা করুন। Repeated save-এ JPG-এর মতো অতিরিক্ত compression artifact তৈরি হয় না। তবে image dimension বড় হলে PNG file অনেক বড় হতে পারে। Transparent export দরকার হলে source page ও conversion tool transparency সমর্থন করে কি না দেখুন।"},
+        {"t":"h2","x":"JPG কখন ব্যবহার"},
+        {"t":"p","x":"Photograph-heavy page, email preview বা webpage-এ JPG ছোট হতে পারে। Quality slider থাকলে sample page-এ text edge, gradient, shadow এবং photo detail দেখুন। Compression বেশি হলে halo বা block artifact দেখা যায়। File size কমানোর জন্য resolution কমানো আর quality কমানো আলাদা বিষয়, দুটিই পরীক্ষা করুন।"},
+        {"t":"h2","x":"Use case ধরে final নির্বাচন"},
+        {"t":"p","x":"Website, messaging app বা print workflow-এর allowed format দেখুন। Small web preview-তে JPG চললেও archival copy হিসেবে image-কে PDF-তে রাখার প্রয়োজন হতে পারে। Output খুলে page order, crop, resolution এবং background মিলিয়ে নিন। Rights ও privacy বিবেচনা করে শুধু প্রয়োজনীয় page share করুন।"},
+        {"t":"p","x":"Transparent logo page-এর ওপর আছে, নাকি source document-এ সত্যিকারের alpha channel আছে, তা আলাদা করে বুঝুন। Exported page-এ surrounding white page থাকলে background transparent হবে না। প্রয়োজনীয় result না পেলে embedded image extraction ব্যবহার করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"pdf-to-jpg","x":"একটি page PNG ও JPG দুইভাবে export করে content অনুযায়ী বেছে নিন।"}
       ]
     },
     {
@@ -81,20 +81,20 @@
       "description": "Print size, viewing distance ও image content অনুযায়ী resolution ঠিক করুন। JPEG, PNG ও PDF output sample print করে যাচাই করুন।",
       "metaDescription": "Print size, viewing distance ও image content অনুযায়ী resolution ঠিক করুন। JPEG, PNG ও PDF output sample print করে যাচাই করুন।",
       "faqs": [
-        { "q": "প্রিন্টের জন্য কত DPI দরকার?", "a": "কাগজের মাপ, printer ও viewing distance-এর ওপর নির্ভর করে। Print provider-এর specification দেখুন।" },
-        { "q": "JPEG না PNG প্রিন্টে ভালো?", "a": "Photo-তে high-quality JPEG ব্যবহার হতে পারে, text ও flat graphic-এ PNG বা PDF উপযোগী হতে পারে।" },
-        { "q": "Screen preview যথেষ্ট?", "a": "না। Color, scale এবং sharpness বিচার করতে sample print করা সবচেয়ে কার্যকর।" }
+        {"q":"প্রিন্টের জন্য কত DPI দরকার?","a":"কাগজের মাপ, printer ও viewing distance-এর ওপর নির্ভর করে। Print provider-এর specification দেখুন।"},
+        {"q":"JPEG না PNG প্রিন্টে ভালো?","a":"Photo-তে high-quality JPEG ব্যবহার হতে পারে, text ও flat graphic-এ PNG বা PDF উপযোগী হতে পারে।"},
+        {"q":"Screen preview যথেষ্ট?","a":"না। Color, scale এবং sharpness বিচার করতে sample print করা সবচেয়ে কার্যকর।"}
       ],
       "body": [
-        { "t": "p", "x": "Print-এর জন্য image resolution নির্ভর করে final print dimension, printer, কাগজ এবং দেখার দূরত্বের ওপর। একক DPI সংখ্যা সব কাজের জন্য যথেষ্ট নয়। Poster দূর থেকে দেখা হয়, ছোট brochure কাছে ধরে পড়া হয়। Source image-এর pixel dimension ও desired physical size মিলিয়ে নিন। Printer বা print shop-এর specification থাকলে সেটিকেই অগ্রাধিকার দিন।" },
-        { "t": "h2", "x": "Format নির্বাচন" },
-        { "t": "p", "x": "Photograph-এ high-quality JPEG ছোট file দিতে পারে। Logo, chart ও sharp text-এ PNG compression artifact কমায়। Page layout এবং font সংরক্ষণের জন্য PDF অনেক সময় বেশি উপযুক্ত, কারণ page dimension স্থির থাকে। Transparent background লাগলে format support ও printer workflow যাচাই করুন।" },
-        { "t": "h2", "x": "Color ও resolution পরীক্ষা" },
-        { "t": "p", "x": "Monitor color ও printed color এক নাও হতে পারে। Color profile embed করা আছে কি না এবং printer সেটি কীভাবে handle করে জানুন। Image বড় করে export করলে pixelation দেখা যায়। 100 শতাংশ zoom-এ ছোট text, hairline এবং gradient দেখুন।" },
-        { "t": "h2", "x": "Sample print এবং delivery" },
-        { "t": "p", "x": "বড় batch-এর আগে representative page বা crop print করুন। Crop mark, bleed, margin এবং orientation print provider-এর সঙ্গে মিলিয়ে নিন। Color important হলে proof নিন। File পাঠানোর আগে output format, page count ও dimension নিশ্চিত করুন।" },
-        { "t": "p", "x": "Print shop-এ পাঠালে তাদের preferred PDF preset, bleed ও color profile জেনে নিন। Print proof-এ লেখা আর logo পরীক্ষা করে তারপর বড় run অনুমোদন করুন। Screen-এ ভালো দেখানো file কাগজে একই দেখাবে এমন নয়। Proof-এ trim line ও edge-এ কাটা অংশও পরীক্ষা করুন। Final approval date এবং print batch নথিভুক্ত করুন। কাগজের ধরন ও finish-ও proof-এ মিলিয়ে নিন।" },
-        { "t": "cta", "tool": "pdf-to-jpg", "x": "PDF page image করে print dimension ও sharpness sample-এ পরীক্ষা করুন।" }
+        {"t":"p","x":"Print-এর জন্য image resolution নির্ভর করে final print dimension, printer, কাগজ এবং দেখার দূরত্বের ওপর। একক DPI সংখ্যা সব কাজের জন্য যথেষ্ট নয়। Poster দূর থেকে দেখা হয়, ছোট brochure কাছে ধরে পড়া হয়। Source image-এর pixel dimension ও desired physical size মিলিয়ে নিন। Printer বা print shop-এর specification থাকলে সেটিকেই অগ্রাধিকার দিন।"},
+        {"t":"h2","x":"Format নির্বাচন"},
+        {"t":"p","x":"Photograph-এ high-quality JPEG ছোট file দিতে পারে। Logo, chart ও sharp text-এ PNG compression artifact কমায়। Page layout এবং font সংরক্ষণের জন্য PDF অনেক সময় বেশি উপযুক্ত, কারণ page dimension স্থির থাকে। Transparent background লাগলে format support ও printer workflow যাচাই করুন।"},
+        {"t":"h2","x":"Color ও resolution পরীক্ষা"},
+        {"t":"p","x":"Monitor color ও printed color এক নাও হতে পারে। Color profile embed করা আছে কি না এবং printer সেটি কীভাবে handle করে জানুন। Image বড় করে export করলে pixelation দেখা যায়। 100 শতাংশ zoom-এ ছোট text, hairline এবং gradient দেখুন।"},
+        {"t":"h2","x":"Sample print এবং delivery"},
+        {"t":"p","x":"বড় batch-এর আগে representative page বা crop print করুন। Crop mark, bleed, margin এবং orientation print provider-এর সঙ্গে মিলিয়ে নিন। Color important হলে proof নিন। File পাঠানোর আগে output format, page count ও dimension নিশ্চিত করুন।"},
+        {"t":"p","x":"Print shop-এ পাঠালে তাদের preferred PDF preset, bleed ও color profile জেনে নিন। Print proof-এ লেখা আর logo পরীক্ষা করে তারপর বড় run অনুমোদন করুন। Screen-এ ভালো দেখানো file কাগজে একই দেখাবে এমন নয়। Proof-এ trim line ও edge-এ কাটা অংশও পরীক্ষা করুন। Final approval date এবং print batch নথিভুক্ত করুন। কাগজের ধরন ও finish-ও proof-এ মিলিয়ে নিন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"pdf-to-jpg","x":"PDF page image করে print dimension ও sharpness sample-এ পরীক্ষা করুন।"}
       ]
     },
     {
@@ -105,20 +105,20 @@
       "description": "Print ও web-এর আলাদা লক্ষ্য অনুযায়ী PDF page image করুন। Resolution, compression, crop এবং upload size পরীক্ষা করুন।",
       "metaDescription": "Print ও web-এর আলাদা লক্ষ্য অনুযায়ী PDF page image করুন। Resolution, compression, crop এবং upload size পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Web ও print-এর জন্য একই image ব্যবহার করব?", "a": "দুই ব্যবহারের dimension ও quality আলাদা হতে পারে। প্রয়োজনমতো পৃথক output তৈরি করুন।" },
-        { "q": "PDF page web-এ image হিসেবে দেওয়া ভালো?", "a": "শুধু preview বা graphic দরকার হলে হতে পারে; text ও accessibility-এর জন্য PDF বা HTML রাখুন।" },
-        { "q": "সব page image করা উচিত?", "a": "না। প্রয়োজনীয় page বেছে নিলে size ও sharing সহজ হয়।" }
+        {"q":"Web ও print-এর জন্য একই image ব্যবহার করব?","a":"দুই ব্যবহারের dimension ও quality আলাদা হতে পারে। প্রয়োজনমতো পৃথক output তৈরি করুন।"},
+        {"q":"PDF page web-এ image হিসেবে দেওয়া ভালো?","a":"শুধু preview বা graphic দরকার হলে হতে পারে; text ও accessibility-এর জন্য PDF বা HTML রাখুন।"},
+        {"q":"সব page image করা উচিত?","a":"না। প্রয়োজনীয় page বেছে নিলে size ও sharing সহজ হয়।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF page image করলে website, slide deck বা print shop-এ ব্যবহার করা যায়। তবে web preview-র জন্য ছোট image যথেষ্ট হলেও print-এর জন্য বেশি resolution প্রয়োজন হতে পারে। একই export setting দুই কাজে ব্যবহার করলে web file অপ্রয়োজনীয় বড় হয় বা print output ঝাপসা হয়। তাই use case আলাদা করে পরিকল্পনা করুন এবং original PDF সংরক্ষণ করুন।" },
-        { "t": "h2", "x": "Web output" },
-        { "t": "p", "x": "Web thumbnail বা preview-তে JPG photo page-এ ছোট হতে পারে, আর PNG text-heavy page sharp রাখে। Image dimension page container-এর সঙ্গে মিলিয়ে নিন। File size কমাতে optimize করুন, কিন্তু text readability এবং mobile display পরীক্ষা করুন। SEO ও accessibility-এর জন্য image-এর পাশে text content বা descriptive alt text দিন।" },
-        { "t": "h2", "x": "Print output" },
-        { "t": "p", "x": "Print dimension ও provider specification অনুযায়ী resolution বেছে নিন। Color chart, small annotation ও thin line sample print করুন। Page crop বা bleed লাগবে কি না জেনে নিন। Page size original PDF-এর সঙ্গে মেলে কি না পরীক্ষা করুন, বিশেষত booklet বা poster workflow-তে।" },
-        { "t": "h2", "x": "Format ও quality" },
-        { "t": "p", "x": "Photograph-এ JPG কার্যকর হতে পারে; diagram ও text-এ PNG বিবেচনা করুন। বহু page একসঙ্গে export করলে filename-এ page number রাখুন। Output image-এ sensitive data আছে কি না এবং share permission আছে কি না নিশ্চিত করুন। Web upload-এর পরে live page-এ crop, loading ও sharpness দেখুন।" },
-        { "t": "p", "x": "Web-এ PDF link দিলে visitor zoom, search ও copy করতে পারে; image preview হলে সেই সুবিধা নেই। তাই image-কে document-এর একমাত্র সংস্করণ বানাবেন না। প্রয়োজন হলে accessible text version ও downloadable source পাশাপাশি দিন। Alt text-এ image কী বোঝায় তা সংক্ষেপে লিখুন।" },
-        { "t": "cta", "tool": "image-converter", "x": "PDF page image করে web ও print-এর জন্য আলাদা output পরীক্ষা করুন।" }
+        {"t":"p","x":"PDF page image করলে website, slide deck বা print shop-এ ব্যবহার করা যায়। তবে web preview-র জন্য ছোট image যথেষ্ট হলেও print-এর জন্য বেশি resolution প্রয়োজন হতে পারে। একই export setting দুই কাজে ব্যবহার করলে web file অপ্রয়োজনীয় বড় হয় বা print output ঝাপসা হয়। তাই use case আলাদা করে পরিকল্পনা করুন এবং original PDF সংরক্ষণ করুন।"},
+        {"t":"h2","x":"Web output"},
+        {"t":"p","x":"Web thumbnail বা preview-তে JPG photo page-এ ছোট হতে পারে, আর PNG text-heavy page sharp রাখে। Image dimension page container-এর সঙ্গে মিলিয়ে নিন। File size কমাতে optimize করুন, কিন্তু text readability এবং mobile display পরীক্ষা করুন। SEO ও accessibility-এর জন্য image-এর পাশে text content বা descriptive alt text দিন।"},
+        {"t":"h2","x":"Print output"},
+        {"t":"p","x":"Print dimension ও provider specification অনুযায়ী resolution বেছে নিন। Color chart, small annotation ও thin line sample print করুন। Page crop বা bleed লাগবে কি না জেনে নিন। Page size original PDF-এর সঙ্গে মেলে কি না পরীক্ষা করুন, বিশেষত booklet বা poster workflow-তে।"},
+        {"t":"h2","x":"Format ও quality"},
+        {"t":"p","x":"Photograph-এ JPG কার্যকর হতে পারে; diagram ও text-এ PNG বিবেচনা করুন। বহু page একসঙ্গে export করলে filename-এ page number রাখুন। Output image-এ sensitive data আছে কি না এবং share permission আছে কি না নিশ্চিত করুন। Web upload-এর পরে live page-এ crop, loading ও sharpness দেখুন।"},
+        {"t":"p","x":"Web-এ PDF link দিলে visitor zoom, search ও copy করতে পারে; image preview হলে সেই সুবিধা নেই। তাই image-কে document-এর একমাত্র সংস্করণ বানাবেন না। প্রয়োজন হলে accessible text version ও downloadable source পাশাপাশি দিন। Alt text-এ image কী বোঝায় তা সংক্ষেপে লিখুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"image-converter","x":"PDF page image করে web ও print-এর জন্য আলাদা output পরীক্ষা করুন।"}
       ]
     },
     {
@@ -129,20 +129,20 @@
       "description": "PDF metadata-তে author, title, software ও তারিখ থাকতে পারে। প্রয়োজনীয় record রেখে output metadata ও content আলাদাভাবে পরীক্ষা করুন।",
       "metaDescription": "PDF metadata-তে author, title, software ও তারিখ থাকতে পারে। প্রয়োজনীয় record রেখে output metadata ও content আলাদাভাবে পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Metadata মুছলে page-এর লেখা মুছে যায়?", "a": "না। Metadata cleanup page content redaction নয় এবং text বা image সরায় না।" },
-        { "q": "কোন metadata private হতে পারে?", "a": "Author name, title, application, timestamps বা custom field প্রকাশ পেতে পারে। File inspect করুন।" },
-        { "q": "Metadata removal কি PDF সম্পূর্ণ anonymous করে?", "a": "না। Visible content, link, comments, attachment বা signature-এ পরিচয় থাকতে পারে।" }
+        {"q":"Metadata মুছলে page-এর লেখা মুছে যায়?","a":"না। Metadata cleanup page content redaction নয় এবং text বা image সরায় না।"},
+        {"q":"কোন metadata private হতে পারে?","a":"Author name, title, application, timestamps বা custom field প্রকাশ পেতে পারে। File inspect করুন।"},
+        {"q":"Metadata removal কি PDF সম্পূর্ণ anonymous করে?","a":"না। Visible content, link, comments, attachment বা signature-এ পরিচয় থাকতে পারে।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এর visible page-এর বাইরে properties বা metadata-তে author, title, subject, software, creation date এবং custom field থাকতে পারে। Share করার আগে document properties দেখুন এবং কোন তথ্য সরানো উচিত তা নির্ধারণ করুন। Metadata removal কেবল properties পরিষ্কার করে; page text, image, comment বা attachment নিজে থেকে মুছে না। প্রয়োজনীয় archival information থাকলে cleanup-এর আগে record copy সংরক্ষণ করুন।" },
-        { "t": "h2", "x": "কোন তথ্য আছে পরীক্ষা" },
-        { "t": "p", "x": "PDF reader-এর document properties খুলে author, title, keyword এবং timestamps দেখুন। File-এ attachment, comment, form value বা hidden layer আছে কি না দেখুন। Metadata-তে কাজের নাম বা ব্যক্তিগত user name থাকলেও visible page-এ একই তথ্য থাকতে পারে। উদ্দেশ্য অনুযায়ী review করুন।" },
-        { "t": "h2", "x": "Metadata পরিষ্কার ও verify" },
-        { "t": "p", "x": "Metadata removal tool চালিয়ে output আলাদা নামে সংরক্ষণ করুন। নতুন PDF-এর properties আবার খুলে fields যাচাই করুন। তারপর page content, link, comments এবং attachments আলাদাভাবে দেখুন। Sensitive word সরাতে redaction লাগে; crop বা property cleanup যথেষ্ট নয়।" },
-        { "t": "h2", "x": "Signature ও retention" },
-        { "t": "p", "x": "Metadata বদলালে digital signature status প্রভাবিত হতে পারে। Signed original আলাদা রাখুন এবং recipient-এর policy জেনে নিন। Business record-এ metadata retention বাধ্যতামূলক হতে পারে; প্রতিষ্ঠানের নিয়মের বিরুদ্ধে cleanup করবেন না। Public distribution copy ও archive master আলাদা পরিচালনা করুন।" },
-        { "t": "p", "x": "Metadata scrub করার পরে accessible text, reading order বা required provenance হারিয়েছে কি না যাচাই করুন। Public copy এবং internal master আলাদা রাখতে পারেন। Share link, filename এবং email body-তেও ব্যক্তিগত তথ্য আছে কি না মনে রাখুন। File-এর visible property view-ও পুনরায় খুলে দেখুন। Export tool কোনো warning দিলে তা নথিভুক্ত করুন। Share destination-এর preview-তেও file test করুন।" },
-        { "t": "cta", "tool": "remove-metadata", "x": "PDF metadata পরিষ্কার করে output properties ও visible content যাচাই করুন।" }
+        {"t":"p","x":"PDF-এর visible page-এর বাইরে properties বা metadata-তে author, title, subject, software, creation date এবং custom field থাকতে পারে। Share করার আগে document properties দেখুন এবং কোন তথ্য সরানো উচিত তা নির্ধারণ করুন। Metadata removal কেবল properties পরিষ্কার করে; page text, image, comment বা attachment নিজে থেকে মুছে না। প্রয়োজনীয় archival information থাকলে cleanup-এর আগে record copy সংরক্ষণ করুন।"},
+        {"t":"h2","x":"কোন তথ্য আছে পরীক্ষা"},
+        {"t":"p","x":"PDF reader-এর document properties খুলে author, title, keyword এবং timestamps দেখুন। File-এ attachment, comment, form value বা hidden layer আছে কি না দেখুন। Metadata-তে কাজের নাম বা ব্যক্তিগত user name থাকলেও visible page-এ একই তথ্য থাকতে পারে। উদ্দেশ্য অনুযায়ী review করুন।"},
+        {"t":"h2","x":"Metadata পরিষ্কার ও verify"},
+        {"t":"p","x":"Metadata removal tool চালিয়ে output আলাদা নামে সংরক্ষণ করুন। নতুন PDF-এর properties আবার খুলে fields যাচাই করুন। তারপর page content, link, comments এবং attachments আলাদাভাবে দেখুন। Sensitive word সরাতে redaction লাগে; crop বা property cleanup যথেষ্ট নয়।"},
+        {"t":"h2","x":"Signature ও retention"},
+        {"t":"p","x":"Metadata বদলালে digital signature status প্রভাবিত হতে পারে। Signed original আলাদা রাখুন এবং recipient-এর policy জেনে নিন। Business record-এ metadata retention বাধ্যতামূলক হতে পারে; প্রতিষ্ঠানের নিয়মের বিরুদ্ধে cleanup করবেন না। Public distribution copy ও archive master আলাদা পরিচালনা করুন।"},
+        {"t":"p","x":"Metadata scrub করার পরে accessible text, reading order বা required provenance হারিয়েছে কি না যাচাই করুন। Public copy এবং internal master আলাদা রাখতে পারেন। Share link, filename এবং email body-তেও ব্যক্তিগত তথ্য আছে কি না মনে রাখুন। File-এর visible property view-ও পুনরায় খুলে দেখুন। Export tool কোনো warning দিলে তা নথিভুক্ত করুন। Share destination-এর preview-তেও file test করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"remove-metadata","x":"PDF metadata পরিষ্কার করে output properties ও visible content যাচাই করুন।"}
       ]
     },
     {
@@ -153,21 +153,21 @@
       "description": "PDF-এ opening password দিয়ে access সীমিত করুন। Strong passphrase আলাদা channel-এ দিন এবং encryption limitation বুঝুন।",
       "metaDescription": "PDF-এ opening password দিয়ে access সীমিত করুন। Strong passphrase আলাদা channel-এ দিন এবং encryption limitation বুঝুন।",
       "faqs": [
-        { "q": "PDF password কি পুরোপুরি নিরাপদ করে?", "a": "এটি opening access-এ বাধা দেয়, কিন্তু password sharing, endpoint security বা authorized copy ঠেকায় না।" },
-        { "q": "Password কীভাবে পাঠাব?", "a": "PDF যে channel-এ পাঠান, password অন্য নিরাপদ channel-এ পাঠান।" },
-        { "q": "Password ভুলে গেলে কী হবে?", "a": "Recovery নাও সম্ভব হতে পারে। Recipient নিশ্চিত করে এবং password নিরাপদে সংরক্ষণ করে পাঠান।" }
+        {"q":"PDF password কি পুরোপুরি নিরাপদ করে?","a":"এটি opening access-এ বাধা দেয়, কিন্তু password sharing, endpoint security বা authorized copy ঠেকায় না।"},
+        {"q":"Password কীভাবে পাঠাব?","a":"PDF যে channel-এ পাঠান, password অন্য নিরাপদ channel-এ পাঠান।"},
+        {"q":"Password ভুলে গেলে কী হবে?","a":"Recovery নাও সম্ভব হতে পারে। Recipient নিশ্চিত করে এবং password নিরাপদে সংরক্ষণ করে পাঠান।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এ opening password দিলে সঠিক password ছাড়া document খোলা কঠিন হয়। এটি access control-এর একটি স্তর, সম্পূর্ণ data protection নয়। Password recipient-এর কাছে গেলে তারা file খুলে copy বা screenshot করতে পারে। File upload ও share করার আগে প্রতিষ্ঠানের security policy এবং encryption standard দেখুন। Original unprotected copy retention rule অনুযায়ী সুরক্ষিত স্থানে রাখুন।" },
-        { "t": "h2", "x": "Strong passphrase তৈরি" },
-        { "t": "p", "x": "দীর্ঘ, অনুমান করা কঠিন এবং অন্য account-এ পুনর্ব্যবহার না করা passphrase নিন। Password-এ document name, birthday বা company name ব্যবহার করবেন না। Password manager-এ সংরক্ষণ করা যায়, তবে access policy মেনে চলুন। Tool-এর encryption capability কী তা official documentation-এ যাচাই করুন।" },
-        { "t": "h2", "x": "আলাদা channel-এ পাঠানো" },
-        { "t": "p", "x": "PDF email করলে password একই email thread-এ পাঠালে সুবিধার সঙ্গে ঝুঁকিও বাড়ে। Recipient-কে ফোন বা অনুমোদিত messaging channel-এ জানাতে পারেন। ভুল recipient নির্বাচন হলে password-সহ file দুটিই exposed হতে পারে। Link sharing permission থাকলে নির্দিষ্ট ব্যক্তিকে access দিন।" },
-        { "t": "h2", "x": "খোলা ও পরীক্ষা" },
-        { "t": "p", "x": "Protected file download করে বন্ধ করুন, তারপর আবার খুলে password prompt আসে কি না পরীক্ষা করুন। সঠিক passphrase দিয়ে খুলে page ও content যাচাই করুন। Signed PDF protect করলে signature বদলাতে পারে। Password না হারাতে recipient-এর সঙ্গে delivery এবং retention ব্যবস্থা ঠিক করুন।" },
-        { "t": "p", "x": "PrintxPDF password protection সার্ভারে সম্পন্ন হয়। Restricted document upload করার অনুমতি ও service policy আগে যাচাই করুন।" },
-        { "t": "p", "x": "Password ভুল করে ভুল recipient-কে দিলে document অনিচ্ছাকৃতভাবে access পেতে পারে। পাঠানোর আগে attachment ও email address আলাদা করে যাচাই করুন। Password পরিবর্তন দরকার হলে নতুন protected copy তৈরি করে আগের copy-র access নিয়ন্ত্রণ করুন। Delivery receipt বা acknowledgement নিন, যদি workflow-তে প্রয়োজন হয়।" },
-        { "t": "cta", "tool": "protect-pdf", "x": "Opening password যোগ করে file বন্ধ ও পুনরায় খুলে পরীক্ষা করুন।" }
+        {"t":"p","x":"PDF-এ opening password দিলে সঠিক password ছাড়া document খোলা কঠিন হয়। এটি access control-এর একটি স্তর, সম্পূর্ণ data protection নয়। Password recipient-এর কাছে গেলে তারা file খুলে copy বা screenshot করতে পারে। File upload ও share করার আগে প্রতিষ্ঠানের security policy এবং encryption standard দেখুন। Original unprotected copy retention rule অনুযায়ী সুরক্ষিত স্থানে রাখুন।"},
+        {"t":"h2","x":"Strong passphrase তৈরি"},
+        {"t":"p","x":"দীর্ঘ, অনুমান করা কঠিন এবং অন্য account-এ পুনর্ব্যবহার না করা passphrase নিন। Password-এ document name, birthday বা company name ব্যবহার করবেন না। Password manager-এ সংরক্ষণ করা যায়, তবে access policy মেনে চলুন। Tool-এর encryption capability কী তা official documentation-এ যাচাই করুন।"},
+        {"t":"h2","x":"আলাদা channel-এ পাঠানো"},
+        {"t":"p","x":"PDF email করলে password একই email thread-এ পাঠালে সুবিধার সঙ্গে ঝুঁকিও বাড়ে। Recipient-কে ফোন বা অনুমোদিত messaging channel-এ জানাতে পারেন। ভুল recipient নির্বাচন হলে password-সহ file দুটিই exposed হতে পারে। Link sharing permission থাকলে নির্দিষ্ট ব্যক্তিকে access দিন।"},
+        {"t":"h2","x":"খোলা ও পরীক্ষা"},
+        {"t":"p","x":"Protected file download করে বন্ধ করুন, তারপর আবার খুলে password prompt আসে কি না পরীক্ষা করুন। সঠিক passphrase দিয়ে খুলে page ও content যাচাই করুন। Signed PDF protect করলে signature বদলাতে পারে। Password না হারাতে recipient-এর সঙ্গে delivery এবং retention ব্যবস্থা ঠিক করুন।"},
+        {"t":"p","x":"PrintxPDF password protection সার্ভারে সম্পন্ন হয়। Restricted document upload করার অনুমতি ও service policy আগে যাচাই করুন।"},
+        {"t":"p","x":"Password ভুল করে ভুল recipient-কে দিলে document অনিচ্ছাকৃতভাবে access পেতে পারে। পাঠানোর আগে attachment ও email address আলাদা করে যাচাই করুন। Password পরিবর্তন দরকার হলে নতুন protected copy তৈরি করে আগের copy-র access নিয়ন্ত্রণ করুন। Delivery receipt বা acknowledgement নিন, যদি workflow-তে প্রয়োজন হয়। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"protect-pdf","x":"Opening password যোগ করে file বন্ধ ও পুনরায় খুলে পরীক্ষা করুন।"}
       ]
     },
     {
@@ -178,20 +178,20 @@
       "description": "কালো rectangle নয়, প্রকৃত redaction ব্যবহার করে sensitive PDF content সরান। Search, copy, metadata ও attachment দিয়ে ফল যাচাই করুন।",
       "metaDescription": "কালো rectangle নয়, প্রকৃত redaction ব্যবহার করে sensitive PDF content সরান। Search, copy, metadata ও attachment দিয়ে ফল যাচাই করুন।",
       "faqs": [
-        { "q": "কালো box কি text মুছে দেয়?", "a": "সাধারণ shape শুধু ঢাকে। Text নিচে থাকতে পারে এবং copy বা search করা যেতে পারে।" },
-        { "q": "Redaction-এর পরে কী পরীক্ষা করব?", "a": "Output reopen করে search, select, copy, metadata, comments ও attachment পরীক্ষা করুন।" },
-        { "q": "Original redacted file overwrite করব?", "a": "না। Original access সীমিত রেখে আলাদা sanitized copy তৈরি ও পরীক্ষা করুন।" }
+        {"q":"কালো box কি text মুছে দেয়?","a":"সাধারণ shape শুধু ঢাকে। Text নিচে থাকতে পারে এবং copy বা search করা যেতে পারে।"},
+        {"q":"Redaction-এর পরে কী পরীক্ষা করব?","a":"Output reopen করে search, select, copy, metadata, comments ও attachment পরীক্ষা করুন।"},
+        {"q":"Original redacted file overwrite করব?","a":"না। Original access সীমিত রেখে আলাদা sanitized copy তৈরি ও পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এ sensitive name, account number, address বা case detail প্রকাশ না করা প্রয়োজন হলে প্রকৃত redaction করুন। কালো rectangle, highlight বা crop content সরায় না; text layer বা underlying image-এ তথ্য থেকে যেতে পারে। Redaction tool নির্বাচিত area বা text সরিয়ে sanitized copy তৈরি করে। কাজের আগে original নিরাপদে সংরক্ষণ করুন এবং কোন তথ্য সরাতে হবে তার তালিকা করুন।" },
-        { "t": "h2", "x": "Redaction area চিহ্নিত" },
-        { "t": "p", "x": "প্রতিটি page-এ sensitive information নির্বাচন করুন। একই তথ্য header, footer, comment, attachment বা metadata-তেও আছে কি না খুঁজুন। Name-এর spelling variant ও ID-এর শেষ কয়েক digit-ও search করুন। ভুল করে প্রয়োজনীয় label বা clause যেন না মুছে যায় তা reviewer দিয়ে যাচাই করান।" },
-        { "t": "h2", "x": "Apply করে independent test" },
-        { "t": "p", "x": "Redaction apply করে নতুন file তৈরি করুন। PDF বন্ধ করে reopen করুন। Removed word search করুন, text select করে copy করুন এবং page-কে image export করে দেখুন। Properties, comments, form fields ও attachments পরীক্ষা করুন। Visual black mark আছে মানেই redaction সম্পূর্ণ হয়েছে নয়।" },
-        { "t": "h2", "x": "Sanitized copy বিতরণ" },
-        { "t": "p", "x": "নতুন file পরিষ্কার নামে save করুন এবং ভুলবশত original পাঠাবেন না। Recipient-কে প্রয়োজনীয় copy দিন, source নয়। আইনগত বা public-record process হলে প্রতিষ্ঠানের redaction policy ও reviewer approval অনুসরণ করুন। Sensitive original-এর access control বজায় রাখুন।" },
-        { "t": "p", "x": "Redaction workflow-এ reviewer-এর নাম, date এবং final verification result নথিভুক্ত করা উপকারী। এতে প্রকাশিত copy কীভাবে প্রস্তুত হয়েছে তা audit করা যায়। Original unredacted file-এ access সীমিত রাখুন এবং retention period মেনে সংরক্ষণ করুন। Redaction criteria-র checklist-ও case record-এ রাখুন। Approved release copy-তে accidental restoration সম্ভব কি না পরীক্ষা করুন।" },
-        { "t": "cta", "tool": "redact-pdf", "x": "Redaction apply করে নতুন PDF-এ search ও copy test চালান।" }
+        {"t":"p","x":"PDF-এ sensitive name, account number, address বা case detail প্রকাশ না করা প্রয়োজন হলে প্রকৃত redaction করুন। কালো rectangle, highlight বা crop content সরায় না; text layer বা underlying image-এ তথ্য থেকে যেতে পারে। Redaction tool নির্বাচিত area বা text সরিয়ে sanitized copy তৈরি করে। কাজের আগে original নিরাপদে সংরক্ষণ করুন এবং কোন তথ্য সরাতে হবে তার তালিকা করুন।"},
+        {"t":"h2","x":"Redaction area চিহ্নিত"},
+        {"t":"p","x":"প্রতিটি page-এ sensitive information নির্বাচন করুন। একই তথ্য header, footer, comment, attachment বা metadata-তেও আছে কি না খুঁজুন। Name-এর spelling variant ও ID-এর শেষ কয়েক digit-ও search করুন। ভুল করে প্রয়োজনীয় label বা clause যেন না মুছে যায় তা reviewer দিয়ে যাচাই করান।"},
+        {"t":"h2","x":"Apply করে independent test"},
+        {"t":"p","x":"Redaction apply করে নতুন file তৈরি করুন। PDF বন্ধ করে reopen করুন। Removed word search করুন, text select করে copy করুন এবং page-কে image export করে দেখুন। Properties, comments, form fields ও attachments পরীক্ষা করুন। Visual black mark আছে মানেই redaction সম্পূর্ণ হয়েছে নয়।"},
+        {"t":"h2","x":"Sanitized copy বিতরণ"},
+        {"t":"p","x":"নতুন file পরিষ্কার নামে save করুন এবং ভুলবশত original পাঠাবেন না। Recipient-কে প্রয়োজনীয় copy দিন, source নয়। আইনগত বা public-record process হলে প্রতিষ্ঠানের redaction policy ও reviewer approval অনুসরণ করুন। Sensitive original-এর access control বজায় রাখুন।"},
+        {"t":"p","x":"Redaction workflow-এ reviewer-এর নাম, date এবং final verification result নথিভুক্ত করা উপকারী। এতে প্রকাশিত copy কীভাবে প্রস্তুত হয়েছে তা audit করা যায়। Original unredacted file-এ access সীমিত রাখুন এবং retention period মেনে সংরক্ষণ করুন। Redaction criteria-র checklist-ও case record-এ রাখুন। Approved release copy-তে accidental restoration সম্ভব কি না পরীক্ষা করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"redact-pdf","x":"Redaction apply করে নতুন PDF-এ search ও copy test চালান।"}
       ]
     },
     {
@@ -202,20 +202,20 @@
       "description": "Online PDF tool ব্যবহারের আগে processing location, retention, deletion, encryption ও privacy policy যাচাই করুন। Sensitive file-এর জন্য approved workflow নিন।",
       "metaDescription": "Online PDF tool ব্যবহারের আগে processing location, retention, deletion, encryption ও privacy policy যাচাই করুন। Sensitive file-এর জন্য approved workflow নিন।",
       "faqs": [
-        { "q": "সব online PDF tool কি file upload করে?", "a": "না। কিছু browser-এ process করে, কিছু server-এ পাঠায়। Tool-এর স্পষ্ট processing label ও policy দেখুন।" },
-        { "q": "HTTPS থাকলে কি document গোপন?", "a": "HTTPS transit-এ encryption দেয়; এটি service-এর retention, access বা server-side handling নিজে থেকে ব্যাখ্যা করে না।" },
-        { "q": "Sensitive PDF কীভাবে process করব?", "a": "আপনার organization অনুমোদিত offline বা managed tool ব্যবহার করুন এবং retention policy অনুসরণ করুন।" }
+        {"q":"সব online PDF tool কি file upload করে?","a":"না। কিছু browser-এ process করে, কিছু server-এ পাঠায়। Tool-এর স্পষ্ট processing label ও policy দেখুন।"},
+        {"q":"HTTPS থাকলে কি document গোপন?","a":"HTTPS transit-এ encryption দেয়; এটি service-এর retention, access বা server-side handling নিজে থেকে ব্যাখ্যা করে না।"},
+        {"q":"Sensitive PDF কীভাবে process করব?","a":"আপনার organization অনুমোদিত offline বা managed tool ব্যবহার করুন এবং retention policy অনুসরণ করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Online PDF tool নিরাপদ কি না নির্ভর করে কাজটি কোথায় হয়, file কতক্ষণ রাখা হয়, কে access করতে পারে এবং কী data handling policy আছে তার ওপর। কিছু tool browser-এর ভেতরেই process করতে পারে, অন্যগুলো server-এ file upload করে। HTTPS থাকলে network transit সুরক্ষিত হতে পারে, কিন্তু service-এর retention বা use সম্পর্কে আলাদা তথ্য দরকার।" },
-        { "t": "h2", "x": "Processing model যাচাই" },
-        { "t": "p", "x": "Tool page-এ local বা server processing label পড়ুন। Conversion, protection বা ebook workflow server ব্যবহার করলে upload-এর আগে organization-এর অনুমতি নিন। Browser-only বললেও browser extension, telemetry এবং device security বিবেচনা করুন। Tool যেটুকু দরকার তার বাইরে permission চায় কি না দেখুন।" },
-        { "t": "h2", "x": "Retention ও deletion" },
-        { "t": "p", "x": "Privacy policy-তে upload, temporary storage, automatic deletion, backup এবং support access-এর সময়সীমা খুঁজুন। Deletion claim বুঝুন, তবে sensitive file এমন service-এ না দেওয়াই ভালো যার policy আপনার requirement মেটায় না। Account বা bank data থাকলে organization-approved route অনুসরণ করুন।" },
-        { "t": "h2", "x": "ঝুঁকি কমিয়ে ব্যবহার" },
-        { "t": "p", "x": "প্রয়োজন ছাড়া personal data দেবেন না। Output download করে পরীক্ষা করুন এবং shared computer থেকে স্থানীয় copy সরান। Password এবং PDF আলাদা channel-এ পাঠান। Legal, health, financial বা client document-এর ক্ষেত্রে IT বা privacy team-কে জিজ্ঞাসা করুন। Public link তৈরি হলে access সীমিত ও expiry নির্ধারণ করুন।" },
-        { "t": "p", "x": "File upload করার আগে site domain, contact information, privacy policy এবং tool-এর actual processing label একসঙ্গে যাচাই করুন। Browser-এ কাজ বলা থাকলেও shared device, browser extension এবং download folder নিরাপদ রাখতে হবে। কোনো সন্দেহ থাকলে offline approved tool বেছে নিন। Password reuse এড়িয়ে চলুন এবং file transfer complete হয়েছে কি না নিশ্চিত করুন।" },
-        { "t": "cta", "tool": "merge-pdf", "x": "প্রতিটি কাজের আগে tool-এর processing ও privacy তথ্য যাচাই করুন।" }
+        {"t":"p","x":"Online PDF tool নিরাপদ কি না নির্ভর করে কাজটি কোথায় হয়, file কতক্ষণ রাখা হয়, কে access করতে পারে এবং কী data handling policy আছে তার ওপর। কিছু tool browser-এর ভেতরেই process করতে পারে, অন্যগুলো server-এ file upload করে। HTTPS থাকলে network transit সুরক্ষিত হতে পারে, কিন্তু service-এর retention বা use সম্পর্কে আলাদা তথ্য দরকার।"},
+        {"t":"h2","x":"Processing model যাচাই"},
+        {"t":"p","x":"Tool page-এ local বা server processing label পড়ুন। Conversion, protection বা ebook workflow server ব্যবহার করলে upload-এর আগে organization-এর অনুমতি নিন। Browser-only বললেও browser extension, telemetry এবং device security বিবেচনা করুন। Tool যেটুকু দরকার তার বাইরে permission চায় কি না দেখুন।"},
+        {"t":"h2","x":"Retention ও deletion"},
+        {"t":"p","x":"Privacy policy-তে upload, temporary storage, automatic deletion, backup এবং support access-এর সময়সীমা খুঁজুন। Deletion claim বুঝুন, তবে sensitive file এমন service-এ না দেওয়াই ভালো যার policy আপনার requirement মেটায় না। Account বা bank data থাকলে organization-approved route অনুসরণ করুন।"},
+        {"t":"h2","x":"ঝুঁকি কমিয়ে ব্যবহার"},
+        {"t":"p","x":"প্রয়োজন ছাড়া personal data দেবেন না। Output download করে পরীক্ষা করুন এবং shared computer থেকে স্থানীয় copy সরান। Password এবং PDF আলাদা channel-এ পাঠান। Legal, health, financial বা client document-এর ক্ষেত্রে IT বা privacy team-কে জিজ্ঞাসা করুন। Public link তৈরি হলে access সীমিত ও expiry নির্ধারণ করুন।"},
+        {"t":"p","x":"File upload করার আগে site domain, contact information, privacy policy এবং tool-এর actual processing label একসঙ্গে যাচাই করুন। Browser-এ কাজ বলা থাকলেও shared device, browser extension এবং download folder নিরাপদ রাখতে হবে। কোনো সন্দেহ থাকলে offline approved tool বেছে নিন। Password reuse এড়িয়ে চলুন এবং file transfer complete হয়েছে কি না নিশ্চিত করুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"merge-pdf","x":"প্রতিটি কাজের আগে tool-এর processing ও privacy তথ্য যাচাই করুন।"}
       ]
     },
     {
@@ -226,21 +226,21 @@
       "description": "আপনার access থাকা PDF-এর password জানা থাকলে অনুমোদিতভাবে unlock করুন। Recipient policy, source copy ও output security যাচাই করুন।",
       "metaDescription": "আপনার access থাকা PDF-এর password জানা থাকলে অনুমোদিতভাবে unlock করুন। Recipient policy, source copy ও output security যাচাই করুন।",
       "faqs": [
-        { "q": "Password না জানলে PDF unlock করা যাবে?", "a": "এই নির্দেশিকা password bypass-এ সহায়তা করে না। Owner বা issuer-এর সঙ্গে যোগাযোগ করুন।" },
-        { "q": "Unlock করার পর file secure থাকে?", "a": "Password protection সরলে যে কেউ file খুলতে পারে। Sharing-এর আগে access control বিবেচনা করুন।" },
-        { "q": "আমি কি যেকোনো password-যুক্ত PDF খুলতে পারি?", "a": "শুধু আপনার অনুমোদিত file ও সঠিক credential দিয়ে কাজ করুন; আইন ও license মানুন।" }
+        {"q":"Password না জানলে PDF unlock করা যাবে?","a":"এই নির্দেশিকা password bypass-এ সহায়তা করে না। Owner বা issuer-এর সঙ্গে যোগাযোগ করুন।"},
+        {"q":"Unlock করার পর file secure থাকে?","a":"Password protection সরলে যে কেউ file খুলতে পারে। Sharing-এর আগে access control বিবেচনা করুন।"},
+        {"q":"আমি কি যেকোনো password-যুক্ত PDF খুলতে পারি?","a":"শুধু আপনার অনুমোদিত file ও সঠিক credential দিয়ে কাজ করুন; আইন ও license মানুন।"}
       ],
       "body": [
-        { "t": "p", "x": "নিজের PDF-এ password protection আর প্রয়োজন না হলে, এবং password আপনার জানা থাকলে, অনুমোদিত unlock workflow ব্যবহার করা যায়। Owner, employer বা issuer-এর permission নিশ্চিত করুন। এই নির্দেশিকা password ভাঙা বা restriction bypass করার পদ্ধতি নয়। File-এ business বা personal data থাকলে unprotected copy কোথায় রাখা হবে তা আগে ঠিক করুন।" },
-        { "t": "h2", "x": "Unlock করার আগে" },
-        { "t": "p", "x": "Password দিয়ে PDF খুলে file-এর পরিচয় ও content যাচাই করুন। Original protected file আলাদা backup রাখুন। Recipient-এর submission rule password-protected document গ্রহণ করে কি না জানুন। Signed PDF পরিবর্তন করলে signature validation invalid হতে পারে; প্রয়োজনীয় original signature record সংরক্ষণ করুন।" },
-        { "t": "h2", "x": "অনুমোদিত credential দিয়ে কাজ" },
-        { "t": "p", "x": "Unlock tool-এ file এবং সঠিক password দিন। Processing server-এ হলে upload permission ও privacy policy যাচাই করুন। ভুল password বারবার অনুমান করবেন না। Password আপনার কাছে না থাকলে document owner বা issuing organization-এর কাছে যোগাযোগ করুন।" },
-        { "t": "h2", "x": "Output নিরাপদে পরিচালনা" },
-        { "t": "p", "x": "নতুন PDF খুলে page, text, link এবং signature status পরীক্ষা করুন। Password protection সরেছে কি না properties বা reopening দিয়ে যাচাই করুন। Unprotected copy email বা shared folder-এ দিলে প্রয়োজনীয় লোকদের মধ্যেই access সীমিত রাখুন। Password আর দরকার না হলে secure password manager থেকে সংশ্লিষ্ট entry policy অনুযায়ী সরান।" },
-        { "t": "p", "x": "PrintxPDF PDF unlock সার্ভারে চালায়। কেবল অনুমোদিত file এবং credential ব্যবহার করুন; সংবেদনশীল নথির জন্য policy যাচাই করুন।" },
-        { "t": "p", "x": "কোনো কোম্পানি বা institution-এর নথি হলে unlock copy shared drive-এ দেওয়ার আগে owner-এর অনুমোদন নিন। Password remove করার পরে file access log বা distribution list update করতে হতে পারে। Unprotected output-এর backup encrypted storage-এ রাখুন।" },
-        { "t": "cta", "tool": "unlock-pdf", "x": "নিজের অনুমোদিত PDF সঠিক password দিয়ে unlock করে output যাচাই করুন।" }
+        {"t":"p","x":"নিজের PDF-এ password protection আর প্রয়োজন না হলে, এবং password আপনার জানা থাকলে, অনুমোদিত unlock workflow ব্যবহার করা যায়। Owner, employer বা issuer-এর permission নিশ্চিত করুন। এই নির্দেশিকা password ভাঙা বা restriction bypass করার পদ্ধতি নয়। File-এ business বা personal data থাকলে unprotected copy কোথায় রাখা হবে তা আগে ঠিক করুন।"},
+        {"t":"h2","x":"Unlock করার আগে"},
+        {"t":"p","x":"Password দিয়ে PDF খুলে file-এর পরিচয় ও content যাচাই করুন। Original protected file আলাদা backup রাখুন। Recipient-এর submission rule password-protected document গ্রহণ করে কি না জানুন। Signed PDF পরিবর্তন করলে signature validation invalid হতে পারে; প্রয়োজনীয় original signature record সংরক্ষণ করুন।"},
+        {"t":"h2","x":"অনুমোদিত credential দিয়ে কাজ"},
+        {"t":"p","x":"Unlock tool-এ file এবং সঠিক password দিন। Processing server-এ হলে upload permission ও privacy policy যাচাই করুন। ভুল password বারবার অনুমান করবেন না। Password আপনার কাছে না থাকলে document owner বা issuing organization-এর কাছে যোগাযোগ করুন।"},
+        {"t":"h2","x":"Output নিরাপদে পরিচালনা"},
+        {"t":"p","x":"নতুন PDF খুলে page, text, link এবং signature status পরীক্ষা করুন। Password protection সরেছে কি না properties বা reopening দিয়ে যাচাই করুন। Unprotected copy email বা shared folder-এ দিলে প্রয়োজনীয় লোকদের মধ্যেই access সীমিত রাখুন। Password আর দরকার না হলে secure password manager থেকে সংশ্লিষ্ট entry policy অনুযায়ী সরান।"},
+        {"t":"p","x":"PrintxPDF PDF unlock সার্ভারে চালায়। কেবল অনুমোদিত file এবং credential ব্যবহার করুন; সংবেদনশীল নথির জন্য policy যাচাই করুন।"},
+        {"t":"p","x":"কোনো কোম্পানি বা institution-এর নথি হলে unlock copy shared drive-এ দেওয়ার আগে owner-এর অনুমোদন নিন। Password remove করার পরে file access log বা distribution list update করতে হতে পারে। Unprotected output-এর backup encrypted storage-এ রাখুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"unlock-pdf","x":"নিজের অনুমোদিত PDF সঠিক password দিয়ে unlock করে output যাচাই করুন।"}
       ]
     }
   ]

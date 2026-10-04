@@ -9,19 +9,19 @@
       "description": "Electronic signature-এর গ্রহণযোগ্যতা দেশ, transaction, identity ও recordkeeping-এর ওপর নির্ভর করে। Recipient এবং স্থানীয় আইন যাচাই করুন।",
       "metaDescription": "Electronic signature-এর গ্রহণযোগ্যতা দেশ, transaction, identity ও recordkeeping-এর ওপর নির্ভর করে। Recipient এবং স্থানীয় আইন যাচাই করুন।",
       "faqs": [
-        { "q": "Electronic signature কি সব দেশে বৈধ?", "a": "নিয়ম দেশ ও transaction অনুযায়ী বদলায়। কিছু record-এ বিশেষ formalities বা exception থাকতে পারে।" },
-        { "q": "Typed নাম কি digital certificate signature?", "a": "না। Typed, drawn ও certificate-backed signature-এর identity assurance আলাদা।" },
-        { "q": "কী ধরনের signature দরকার বুঝব কীভাবে?", "a": "Recipient, contract, local law এবং organization policy থেকে নির্দিষ্ট requirement জেনে নিন।" }
+        {"q":"Electronic signature কি সব দেশে বৈধ?","a":"নিয়ম দেশ ও transaction অনুযায়ী বদলায়। কিছু record-এ বিশেষ formalities বা exception থাকতে পারে।"},
+        {"q":"Typed নাম কি digital certificate signature?","a":"না। Typed, drawn ও certificate-backed signature-এর identity assurance আলাদা।"},
+        {"q":"কী ধরনের signature দরকার বুঝব কীভাবে?","a":"Recipient, contract, local law এবং organization policy থেকে নির্দিষ্ট requirement জেনে নিন।"}
       ],
       "body": [
-        { "t": "p", "x": "Electronic signature অনেক digital workflow-তে ব্যবহৃত হয়, কিন্তু আইনগত প্রভাব নির্ভর করে দেশ, transaction, document type, সম্মতি, identity evidence এবং record retention-এর ওপর। একটি typed নাম, আঁকা mark বা scan করা signature সবসময় certificate-backed digital signature-এর সমান নয়। কিছু agreement-এ electronic record গ্রহণ করা হতে পারে, অন্য ক্ষেত্রে witness, notarization, government form বা নির্দিষ্ট signing platform দরকার হতে পারে। তাই কোনো গুরুত্বপূর্ণ document-এ স্বাক্ষরের আগে recipient-এর শর্ত ও স্থানীয় আইন যাচাই করুন।" },
-        { "t": "h2", "x": "Signature method-এর পার্থক্য" },
-        { "t": "p", "x": "Typed name বা drawn signature visual acknowledgement দিতে পারে। Image signature reusable হওয়ায় আলাদা identity evidence দরকার হতে পারে। Digital certificate signature cryptographic identity ও document integrity যাচাই করতে সক্ষম হতে পারে। E-sign platform timestamp, consent record ও audit trail যোগ করতে পারে, তবে service ও implementation অনুযায়ী detail বদলায়।" },
-        { "t": "h2", "x": "Jurisdiction ও document requirement" },
-        { "t": "p", "x": "যুক্তরাষ্ট্রে ESIGN Act কিছু interstate বা foreign commerce transaction-এ electronic form-এর কারণে record বা signature অকার্যকর ঘোষণা না করার নিয়ম দেয়, তবে exception ও সম্মতির শর্ত আছে। ইউরোপীয় ইউনিয়নের eIDAS electronic signature-এর বিভিন্ন স্তর ও qualified signature-এর বিধান দেয়। এগুলো শুধু উদাহরণ, আপনার দেশের আইন নয়। [US 15 USC 7001](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title15-section7001) এবং [EU eIDAS Regulation 910/2014](https://eur-lex.europa.eu/eli/reg/2014/910) মূল উৎসে পড়ুন।" },
-        { "t": "h2", "x": "Evidence সংরক্ষণ ও PDF" },
-        { "t": "p", "x": "Signed copy, consent trail, timestamp, certificate validation এবং delivery confirmation document অনুযায়ী সংরক্ষণ করুন। PDF-এ visual mark বসানো sign workflow-এর সব evidence ধরে না। Signature-এর পরে file edit করলে validation status বদলাতে পারে। Original এবং signed copy আলাদা রাখুন; গুরুত্বপূর্ণ transaction-এ legal professional বা signing provider-এর সহায়তা নিন।" },
-        { "t": "cta", "tool": "sign-pdf", "x": "PDF-এ signature যোগ করার আগে recipient-এর method ও legal requirement নিশ্চিত করুন।" }
+        {"t":"p","x":"Electronic signature অনেক digital workflow-তে ব্যবহৃত হয়, কিন্তু আইনগত প্রভাব নির্ভর করে দেশ, transaction, document type, সম্মতি, identity evidence এবং record retention-এর ওপর। একটি typed নাম, আঁকা mark বা scan করা signature সবসময় certificate-backed digital signature-এর সমান নয়। কিছু agreement-এ electronic record গ্রহণ করা হতে পারে, অন্য ক্ষেত্রে witness, notarization, government form বা নির্দিষ্ট signing platform দরকার হতে পারে। তাই কোনো গুরুত্বপূর্ণ document-এ স্বাক্ষরের আগে recipient-এর শর্ত ও স্থানীয় আইন যাচাই করুন।"},
+        {"t":"h2","x":"Signature method-এর পার্থক্য"},
+        {"t":"p","x":"Typed name বা drawn signature visual acknowledgement দিতে পারে। Image signature reusable হওয়ায় আলাদা identity evidence দরকার হতে পারে। Digital certificate signature cryptographic identity ও document integrity যাচাই করতে সক্ষম হতে পারে। E-sign platform timestamp, consent record ও audit trail যোগ করতে পারে, তবে service ও implementation অনুযায়ী detail বদলায়।"},
+        {"t":"h2","x":"Jurisdiction ও document requirement"},
+        {"t":"p","x":"যুক্তরাষ্ট্রে ESIGN Act কিছু interstate বা foreign commerce transaction-এ electronic form-এর কারণে record বা signature অকার্যকর ঘোষণা না করার নিয়ম দেয়, তবে exception ও সম্মতির শর্ত আছে। ইউরোপীয় ইউনিয়নের eIDAS electronic signature-এর বিভিন্ন স্তর ও qualified signature-এর বিধান দেয়। এগুলো শুধু উদাহরণ, আপনার দেশের আইন নয়। [US 15 USC 7001](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title15-section7001) এবং [EU eIDAS Regulation 910/2014](https://eur-lex.europa.eu/eli/reg/2014/910) মূল উৎসে পড়ুন।"},
+        {"t":"h2","x":"Evidence সংরক্ষণ ও PDF"},
+        {"t":"p","x":"Signed copy, consent trail, timestamp, certificate validation এবং delivery confirmation document অনুযায়ী সংরক্ষণ করুন। PDF-এ visual mark বসানো sign workflow-এর সব evidence ধরে না। Signature-এর পরে file edit করলে validation status বদলাতে পারে। Original এবং signed copy আলাদা রাখুন; গুরুত্বপূর্ণ transaction-এ legal professional বা signing provider-এর সহায়তা নিন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"sign-pdf","x":"PDF-এ signature যোগ করার আগে recipient-এর method ও legal requirement নিশ্চিত করুন।"}
       ]
     },
     {
@@ -32,20 +32,20 @@
       "description": "সাদা কাগজে signature এঁকে পরিষ্কার image তৈরি করুন। Crop, contrast, file privacy ও recipient-এর acceptance পরীক্ষা করুন।",
       "metaDescription": "সাদা কাগজে signature এঁকে পরিষ্কার image তৈরি করুন। Crop, contrast, file privacy ও recipient-এর acceptance পরীক্ষা করুন।",
       "faqs": [
-        { "q": "কোন format-এ signature image রাখব?", "a": "PNG transparency রাখতে পারে, তবে tool-এর accepted format ও preview দেখুন।" },
-        { "q": "Signature image কি পরিচয় যাচাই করে?", "a": "না। এটি visual mark; identity বা document integrity-এর cryptographic প্রমাণ নয়।" },
-        { "q": "Saved signature image নিরাপদে রাখব কীভাবে?", "a": "Limited-access folder বা approved password manager storage ব্যবহার করুন এবং public share এড়ান।" }
+        {"q":"কোন format-এ signature image রাখব?","a":"PNG transparency রাখতে পারে, তবে tool-এর accepted format ও preview দেখুন।"},
+        {"q":"Signature image কি পরিচয় যাচাই করে?","a":"না। এটি visual mark; identity বা document integrity-এর cryptographic প্রমাণ নয়।"},
+        {"q":"Saved signature image নিরাপদে রাখব কীভাবে?","a":"Limited-access folder বা approved password manager storage ব্যবহার করুন এবং public share এড়ান।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-এ reuse করার জন্য signature image তৈরি করতে পরিষ্কার সাদা কাগজ ও গাঢ় ink দিয়ে স্বাক্ষর করুন। ভালো আলোতে সরাসরি উপরে থেকে ছবি তুলুন বা scanner ব্যবহার করুন। চারপাশের ফাঁকা অংশ crop করুন, কিন্তু signature-এর stroke কাটবেন না। Background transparent চাইলে PNG format ও tool support যাচাই করুন। Signature image একটি reusable visual mark; এটি নিজে থেকে signer-এর পরিচয় বা document-এর integrity প্রমাণ করে না।" },
-        { "t": "h2", "x": "Image capture ও cleanup" },
-        { "t": "p", "x": "ছায়া, glare, paper texture ও camera tilt কমান। Crop-এর পরে letter edge, dot ও flourish আছে কি না zoom করে দেখুন। Contrast বাড়ালে ink পরিষ্কার হতে পারে, কিন্তু সূক্ষ্ম stroke হারালে original image থেকে নতুন export করুন। প্রয়োজনের চেয়ে বেশি sharpen বা smoothing প্রয়োগ করবেন না।" },
-        { "t": "h2", "x": "PDF-এ position পরীক্ষা" },
-        { "t": "p", "x": "Image signature বসানোর আগে recipient এই পদ্ধতি নেয় কি না জেনে নিন। সঠিক signature line, document version ও date field নির্বাচন করুন। Image-এর আকার, baseline এবং surrounding text ঠিক আছে কি না দেখুন। Export করা PDF অন্য viewer-এ খুলে mark স্পষ্ট দেখা যায় কি না পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Signature data সুরক্ষা" },
-        { "t": "p", "x": "Signature image ব্যবহারকারীর পরিচয়ের সঙ্গে যুক্ত হতে পারে। এটি public website বা shared folder-এ রাখবেন না। Approved storage-এ access সীমিত করুন এবং sensitive agreement-এ image-only mark-এর বদলে authenticated e-sign workflow বিবেচনা করুন। Signed PDF পরিবর্তন হলে validation status প্রভাবিত হতে পারে।" },
-        { "t": "p", "x": "Transparent edge ঠিকভাবে crop হলে signature line-এর background-এর সঙ্গে মিশে যেতে পারে। তবে output-এ background white হয়ে গেছে কি না দেখুন। Image-এর একাধিক copy public drive-এ রাখবেন না; প্রয়োজনে নতুন signature image তৈরি করে পুরনো file access বন্ধ করুন।" },
-        { "t": "cta", "tool": "sign-pdf", "x": "পরিষ্কার signature image তৈরি করে অনুমোদিত PDF-এ বসান ও output পরীক্ষা করুন।" }
+        {"t":"p","x":"PDF-এ reuse করার জন্য signature image তৈরি করতে পরিষ্কার সাদা কাগজ ও গাঢ় ink দিয়ে স্বাক্ষর করুন। ভালো আলোতে সরাসরি উপরে থেকে ছবি তুলুন বা scanner ব্যবহার করুন। চারপাশের ফাঁকা অংশ crop করুন, কিন্তু signature-এর stroke কাটবেন না। Background transparent চাইলে PNG format ও tool support যাচাই করুন। Signature image একটি reusable visual mark; এটি নিজে থেকে signer-এর পরিচয় বা document-এর integrity প্রমাণ করে না।"},
+        {"t":"h2","x":"Image capture ও cleanup"},
+        {"t":"p","x":"ছায়া, glare, paper texture ও camera tilt কমান। Crop-এর পরে letter edge, dot ও flourish আছে কি না zoom করে দেখুন। Contrast বাড়ালে ink পরিষ্কার হতে পারে, কিন্তু সূক্ষ্ম stroke হারালে original image থেকে নতুন export করুন। প্রয়োজনের চেয়ে বেশি sharpen বা smoothing প্রয়োগ করবেন না।"},
+        {"t":"h2","x":"PDF-এ position পরীক্ষা"},
+        {"t":"p","x":"Image signature বসানোর আগে recipient এই পদ্ধতি নেয় কি না জেনে নিন। সঠিক signature line, document version ও date field নির্বাচন করুন। Image-এর আকার, baseline এবং surrounding text ঠিক আছে কি না দেখুন। Export করা PDF অন্য viewer-এ খুলে mark স্পষ্ট দেখা যায় কি না পরীক্ষা করুন।"},
+        {"t":"h2","x":"Signature data সুরক্ষা"},
+        {"t":"p","x":"Signature image ব্যবহারকারীর পরিচয়ের সঙ্গে যুক্ত হতে পারে। এটি public website বা shared folder-এ রাখবেন না। Approved storage-এ access সীমিত করুন এবং sensitive agreement-এ image-only mark-এর বদলে authenticated e-sign workflow বিবেচনা করুন। Signed PDF পরিবর্তন হলে validation status প্রভাবিত হতে পারে।"},
+        {"t":"p","x":"Transparent edge ঠিকভাবে crop হলে signature line-এর background-এর সঙ্গে মিশে যেতে পারে। তবে output-এ background white হয়ে গেছে কি না দেখুন। Image-এর একাধিক copy public drive-এ রাখবেন না; প্রয়োজনে নতুন signature image তৈরি করে পুরনো file access বন্ধ করুন।"},
+        {"t":"cta","tool":"sign-pdf","x":"পরিষ্কার signature image তৈরি করে অনুমোদিত PDF-এ বসান ও output পরীক্ষা করুন।"}
       ]
     },
     {
@@ -56,20 +56,20 @@
       "description": "PDF field পূরণ, checkbox নির্বাচন, date ও signature যোগ করে final copy পুনরায় খুলে যাচাই করুন।",
       "metaDescription": "PDF field পূরণ, checkbox নির্বাচন, date ও signature যোগ করে final copy পুনরায় খুলে যাচাই করুন। Issuer-এর নির্দেশনা ও required attachment মিলিয়ে নিন।",
       "faqs": [
-        { "q": "PDF form-এ টাইপ করা না গেলে?", "a": "এটি flat scan হতে পারে। অনুমতি থাকলে overlay text ব্যবহার করুন বা issuer-এর fillable version চান।" },
-        { "q": "সব signature method গ্রহণ করা হয়?", "a": "না। Form issuer-এর requirement-এ typed, image বা digital certificate method নির্দিষ্ট থাকতে পারে।" },
-        { "q": "Form submit-এর আগে কী পরীক্ষা করব?", "a": "Required field, checkbox, date, attachment, signature এবং output file reopen করে দেখুন।" }
+        {"q":"PDF form-এ টাইপ করা না গেলে?","a":"এটি flat scan হতে পারে। অনুমতি থাকলে overlay text ব্যবহার করুন বা issuer-এর fillable version চান।"},
+        {"q":"সব signature method গ্রহণ করা হয়?","a":"না। Form issuer-এর requirement-এ typed, image বা digital certificate method নির্দিষ্ট থাকতে পারে।"},
+        {"q":"Form submit-এর আগে কী পরীক্ষা করব?","a":"Required field, checkbox, date, attachment, signature এবং output file reopen করে দেখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF form পূরণ করার আগে document-এর blank source copy সংরক্ষণ করুন। Fillable PDF-এ text field, checkbox বা dropdown-এ click করে তথ্য দেওয়া যায়। Flat বা scanned form-এ field নাও থাকতে পারে, তখন overlay text বসাতে হয় অথবা issuer-এর editable copy চাইতে হয়। Name, date, address ও amount নির্দিষ্ট format-এ পূরণ করুন। Signature বসানোর পদ্ধতি form issuer-এর নির্দেশনার সঙ্গে মেলে কি না যাচাই করুন।" },
-        { "t": "h2", "x": "Field ও checkbox পূরণ" },
-        { "t": "p", "x": "Required field এবং conditional question দেখুন। Checkbox selected হলে স্পষ্ট mark আছে কি না নিশ্চিত করুন। Date format day/month/year না month/day/year, তা form instruction থেকে বুঝুন। Dropdown option ভুল হলে issuer-এর সঙ্গে যোগাযোগ করুন; text overlay দিয়ে field বদলালে machine-readable value নাও হতে পারে।" },
-        { "t": "h2", "x": "Flat form-এ text বসানো" },
-        { "t": "p", "x": "Overlay text ব্যবহার করলে field-এর মধ্যে alignment, font size এবং line spacing ঠিক রাখুন। Long response-এর জন্য field সীমা অতিক্রম করবেন না। Signature ও date আলাদা করে বসান। Scan-এর skew বা crop থাকলে text line-এর সঙ্গে ঠিকমতো মেলে কি না preview দেখুন।" },
-        { "t": "h2", "x": "স্বাক্ষর ও submission check" },
-        { "t": "p", "x": "PDF বন্ধ করে আবার খুলে field value ও signature দেখা যাচ্ছে কি না পরীক্ষা করুন। Recipient-এর upload portal বা email instruction অনুসরণ করুন। Signed copy edit করলে signature validation বদলাতে পারে। Blank source, final submitted copy এবং confirmation receipt নিরাপদে রাখুন।" },
-        { "t": "p", "x": "যদি form issuer handwritten original চায়, electronic overlay গ্রহণযোগ্য ধরে নেবেন না। Submission portal-এর file format, maximum size ও naming rule দেখুন। PDF-এর copy recipient-এর কাছে পাঠানোর আগে applicant-এর consent ও personal data handling policy মেনে চলুন।" },
-        { "t": "cta", "tool": "sign-pdf", "x": "Form পূরণ করে signature যোগ করুন এবং submit-এর আগে copy reopen করুন।" }
+        {"t":"p","x":"PDF form পূরণ করার আগে document-এর blank source copy সংরক্ষণ করুন। Fillable PDF-এ text field, checkbox বা dropdown-এ click করে তথ্য দেওয়া যায়। Flat বা scanned form-এ field নাও থাকতে পারে, তখন overlay text বসাতে হয় অথবা issuer-এর editable copy চাইতে হয়। Name, date, address ও amount নির্দিষ্ট format-এ পূরণ করুন। Signature বসানোর পদ্ধতি form issuer-এর নির্দেশনার সঙ্গে মেলে কি না যাচাই করুন।"},
+        {"t":"h2","x":"Field ও checkbox পূরণ"},
+        {"t":"p","x":"Required field এবং conditional question দেখুন। Checkbox selected হলে স্পষ্ট mark আছে কি না নিশ্চিত করুন। Date format day/month/year না month/day/year, তা form instruction থেকে বুঝুন। Dropdown option ভুল হলে issuer-এর সঙ্গে যোগাযোগ করুন; text overlay দিয়ে field বদলালে machine-readable value নাও হতে পারে।"},
+        {"t":"h2","x":"Flat form-এ text বসানো"},
+        {"t":"p","x":"Overlay text ব্যবহার করলে field-এর মধ্যে alignment, font size এবং line spacing ঠিক রাখুন। Long response-এর জন্য field সীমা অতিক্রম করবেন না। Signature ও date আলাদা করে বসান। Scan-এর skew বা crop থাকলে text line-এর সঙ্গে ঠিকমতো মেলে কি না preview দেখুন।"},
+        {"t":"h2","x":"স্বাক্ষর ও submission check"},
+        {"t":"p","x":"PDF বন্ধ করে আবার খুলে field value ও signature দেখা যাচ্ছে কি না পরীক্ষা করুন। Recipient-এর upload portal বা email instruction অনুসরণ করুন। Signed copy edit করলে signature validation বদলাতে পারে। Blank source, final submitted copy এবং confirmation receipt নিরাপদে রাখুন।"},
+        {"t":"p","x":"যদি form issuer handwritten original চায়, electronic overlay গ্রহণযোগ্য ধরে নেবেন না। Submission portal-এর file format, maximum size ও naming rule দেখুন। PDF-এর copy recipient-এর কাছে পাঠানোর আগে applicant-এর consent ও personal data handling policy মেনে চলুন। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"sign-pdf","x":"Form পূরণ করে signature যোগ করুন এবং submit-এর আগে copy reopen করুন।"}
       ]
     },
     {
@@ -80,21 +80,21 @@
       "description": "PDF-এ typed, drawn বা image signature বসিয়ে print এড়ান। Recipient কী method গ্রহণ করে এবং signed copy কীভাবে যাচাই হবে জানুন।",
       "metaDescription": "PDF-এ typed, drawn বা image signature বসিয়ে print এড়ান। Recipient কী method গ্রহণ করে এবং signed copy কীভাবে যাচাই হবে জানুন।",
       "faqs": [
-        { "q": "PDF sign করতে print করা বাধ্যতামূলক?", "a": "সব workflow-তে নয়। Recipient-এর গ্রহণযোগ্য e-sign method ও স্থানীয় rule যাচাই করুন।" },
-        { "q": "Drawn signature কি legally binding?", "a": "প্রভাব jurisdiction ও transaction অনুযায়ী বদলায়। এটি legal advice নয়; প্রয়োজন হলে বিশেষজ্ঞের পরামর্শ নিন।" },
-        { "q": "Signature-এর পরে PDF edit করব?", "a": "পরিবর্তনে signature validation নষ্ট হতে পারে। স্বাক্ষরের আগে তথ্য final করুন।" }
+        {"q":"PDF sign করতে print করা বাধ্যতামূলক?","a":"সব workflow-তে নয়। Recipient-এর গ্রহণযোগ্য e-sign method ও স্থানীয় rule যাচাই করুন।"},
+        {"q":"Drawn signature কি legally binding?","a":"প্রভাব jurisdiction ও transaction অনুযায়ী বদলায়। এটি legal advice নয়; প্রয়োজন হলে বিশেষজ্ঞের পরামর্শ নিন।"},
+        {"q":"Signature-এর পরে PDF edit করব?","a":"পরিবর্তনে signature validation নষ্ট হতে পারে। স্বাক্ষরের আগে তথ্য final করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF প্রিন্ট না করে sign করা যায়, যদি document owner বা recipient electronic signature গ্রহণ করে। Sign PDF tool-এ typed name, আঁকা signature বা অনুমোদিত image বসানো যেতে পারে। তবে visual signature এবং certificate-backed digital signature-এর security ও evidence আলাদা। Contract, government filing বা high-value transaction-এ নির্দিষ্ট e-sign provider, witness বা identity check লাগতে পারে। আগে recipient-এর instructions ও local requirement দেখুন।" },
-        { "t": "h2", "x": "Sign করার আগে document final" },
-        { "t": "p", "x": "সব field পূরণ, attachment সংযুক্ত এবং term review শেষ করুন। Blank line বা ভুল version থাকলে signing থামিয়ে সংশোধিত copy নিন। Page number, signer capacity এবং date format দেখুন। Signature-এর পরে edit করলে integrity status বদলাতে পারে।" },
-        { "t": "h2", "x": "Method ও identity" },
-        { "t": "p", "x": "Typed mark convenience দেয়, drawn mark handwriting-এর মতো, আর image mark reusable হতে পারে। Certificate বা e-sign platform signer identity, timestamp ও audit evidence দিতে পারে। Recipient যদি platform link পাঠায়, সেই authorized flow অনুসরণ করুন।" },
-        { "t": "h2", "x": "Export, delivery ও record" },
-        { "t": "p", "x": "Signed PDF download করে অন্য viewer-এ খুলুন। Signature position, date ও page integrity পরীক্ষা করুন। Recipient-কে সঠিক file পাঠিয়ে delivery confirmation রাখুন। Signed original ও supporting evidence access-controlled folder-এ রাখুন। গুরুত্বপূর্ণ আইনি প্রশ্ন থাকলে local professional-এর সঙ্গে পরামর্শ করুন।" },
-        { "t": "p", "x": "Recipient platform-এ signer identity verify, email confirm বা SMS code দিতে হতে পারে। এই step বাদ দেবেন না, কারণ তা audit record-এর অংশ হতে পারে। Signature workflow complete হলে download link-এর expiry দেখুন এবং প্রয়োজনীয় signed copy-কে approved archive-এ সরান।" },
-        { "t": "p", "x": "Sign request ভুল email-এ গেলে support team-কে দ্রুত জানান এবং platform-এ request cancel করা যায় কি না দেখুন। Signer নিজের copy download করেছে কি না নিশ্চিত করুন। Audit record ও delivery evidence organization-এর retention policy অনুযায়ী রাখুন।" },
-        { "t": "cta", "tool": "sign-pdf", "x": "PDF-এ অনুমোদিত signature method ব্যবহার করে signed copy পরীক্ষা করুন।" }
+        {"t":"p","x":"PDF প্রিন্ট না করে sign করা যায়, যদি document owner বা recipient electronic signature গ্রহণ করে। Sign PDF tool-এ typed name, আঁকা signature বা অনুমোদিত image বসানো যেতে পারে। তবে visual signature এবং certificate-backed digital signature-এর security ও evidence আলাদা। Contract, government filing বা high-value transaction-এ নির্দিষ্ট e-sign provider, witness বা identity check লাগতে পারে। আগে recipient-এর instructions ও local requirement দেখুন।"},
+        {"t":"h2","x":"Sign করার আগে document final"},
+        {"t":"p","x":"সব field পূরণ, attachment সংযুক্ত এবং term review শেষ করুন। Blank line বা ভুল version থাকলে signing থামিয়ে সংশোধিত copy নিন। Page number, signer capacity এবং date format দেখুন। Signature-এর পরে edit করলে integrity status বদলাতে পারে।"},
+        {"t":"h2","x":"Method ও identity"},
+        {"t":"p","x":"Typed mark convenience দেয়, drawn mark handwriting-এর মতো, আর image mark reusable হতে পারে। Certificate বা e-sign platform signer identity, timestamp ও audit evidence দিতে পারে। Recipient যদি platform link পাঠায়, সেই authorized flow অনুসরণ করুন।"},
+        {"t":"h2","x":"Export, delivery ও record"},
+        {"t":"p","x":"Signed PDF download করে অন্য viewer-এ খুলুন। Signature position, date ও page integrity পরীক্ষা করুন। Recipient-কে সঠিক file পাঠিয়ে delivery confirmation রাখুন। Signed original ও supporting evidence access-controlled folder-এ রাখুন। গুরুত্বপূর্ণ আইনি প্রশ্ন থাকলে local professional-এর সঙ্গে পরামর্শ করুন।"},
+        {"t":"p","x":"Recipient platform-এ signer identity verify, email confirm বা SMS code দিতে হতে পারে। এই step বাদ দেবেন না, কারণ তা audit record-এর অংশ হতে পারে। Signature workflow complete হলে download link-এর expiry দেখুন এবং প্রয়োজনীয় signed copy-কে approved archive-এ সরান।"},
+        {"t":"p","x":"Sign request ভুল email-এ গেলে support team-কে দ্রুত জানান এবং platform-এ request cancel করা যায় কি না দেখুন। Signer নিজের copy download করেছে কি না নিশ্চিত করুন। Audit record ও delivery evidence organization-এর retention policy অনুযায়ী রাখুন।"},
+        {"t":"cta","tool":"sign-pdf","x":"PDF-এ অনুমোদিত signature method ব্যবহার করে signed copy পরীক্ষা করুন।"}
       ]
     },
     {
@@ -105,46 +105,46 @@
       "description": "PPT বা PPTX-কে PDF করলে slide size, font, animation step, image ও handout layout পরীক্ষা করুন।",
       "metaDescription": "PPT বা PPTX-কে PDF করলে slide size, font, animation step, image ও handout layout পরীক্ষা করুন। Speaker notes ও confidential slide-ও review করুন।",
       "faqs": [
-        { "q": "PowerPoint animation PDF-এ থাকবে?", "a": "PDF সাধারণত static page রাখে; animation step ও transition হারাতে পারে।" },
-        { "q": "PDF-এ font বদলে গেলে কী করব?", "a": "Source deck-এ font availability ও embedding option পরীক্ষা করে পুনরায় export করুন।" },
-        { "q": "Handout PDF কীভাবে বানাব?", "a": "Export option-এ এক page-এ একাধিক slide বা notes layout বেছে preview করুন।" }
+        {"q":"PowerPoint animation PDF-এ থাকবে?","a":"PDF সাধারণত static page রাখে; animation step ও transition হারাতে পারে।"},
+        {"q":"PDF-এ font বদলে গেলে কী করব?","a":"Source deck-এ font availability ও embedding option পরীক্ষা করে পুনরায় export করুন।"},
+        {"q":"Handout PDF কীভাবে বানাব?","a":"Export option-এ এক page-এ একাধিক slide বা notes layout বেছে preview করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PowerPoint presentation-কে PDF করলে slide স্থির page হিসেবে share, print বা archive করা যায়। কিন্তু animation, transition, embedded video এবং presenter interaction PDF-এ একইভাবে থাকে না। Export-এর আগে slide size, orientation, font ও image ঠিক আছে কি না দেখুন। Audience-এর কাছে শুধু slide দরকার, নাকি notes-সহ handout দরকার, তা স্থির করে layout বেছে নিন।" },
-        { "t": "h2", "x": "Presentation export" },
-        { "t": "p", "x": "এক page-এ একটি slide হলে full-screen presentation-এর মতো দেখা যায়। Font availability ও embedded media-এর fallback পরীক্ষা করুন। বাংলা glyph, quotation, chart label ও hyperlink export-এর পরে মিলিয়ে নিন।" },
-        { "t": "h2", "x": "Handout ও print" },
-        { "t": "p", "x": "এক sheet-এ 2, 3 বা 6 slide রাখলে paper বাঁচে, কিন্তু text ছোট হতে পারে। Notes line দরকার হলে handout layout বেছে নিন। Print preview-তে page count, margin ও slide order দেখুন।" },
-        { "t": "h2", "x": "Output ও privacy" },
-        { "t": "p", "x": "PDF reopen করে slide master element, hidden slide, speaker note ও confidential content আছে কি না যাচাই করুন। PrintxPDF PowerPoint conversion server-এ করে, তাই business deck upload-এর আগে policy অনুমতি দেখুন। Original PPTX সম্পাদনার জন্য রাখুন।" },
-        { "t": "p", "x": "Export setting-এ hidden slide include করা হবে কি না নির্বাচন করুন। Audience handout-এ internal presenter note বা rehearsal instruction প্রকাশ হচ্ছে কি না নিশ্চিত করুন। PDF file size বড় হলে compressed image ব্যবহার করা যেতে পারে, তবে chart label স্পষ্ট আছে কি না পরীক্ষা করুন।" },
-        { "t": "p", "x": "Presenter-এর computer-এ থাকা missing font converter-এর server-এ নাও থাকতে পারে। Brand font দরকার হলে slide source-এ supported embedding বা substitute font ব্যবহার করুন। Video link-এর বদলে QR বা short URL যোগ করলে PDF audience-ও related media খুলতে পারে।" },
-        { "t": "cta", "tool": "ppt-to-pdf", "x": "Presentation PDF করে slide order ও layout পরীক্ষা করুন।" }
+        {"t":"p","x":"PowerPoint presentation-কে PDF করলে slide স্থির page হিসেবে share, print বা archive করা যায়। কিন্তু animation, transition, embedded video এবং presenter interaction PDF-এ একইভাবে থাকে না। Export-এর আগে slide size, orientation, font ও image ঠিক আছে কি না দেখুন। Audience-এর কাছে শুধু slide দরকার, নাকি notes-সহ handout দরকার, তা স্থির করে layout বেছে নিন।"},
+        {"t":"h2","x":"Presentation export"},
+        {"t":"p","x":"এক page-এ একটি slide হলে full-screen presentation-এর মতো দেখা যায়। Font availability ও embedded media-এর fallback পরীক্ষা করুন। বাংলা glyph, quotation, chart label ও hyperlink export-এর পরে মিলিয়ে নিন।"},
+        {"t":"h2","x":"Handout ও print"},
+        {"t":"p","x":"এক sheet-এ 2, 3 বা 6 slide রাখলে paper বাঁচে, কিন্তু text ছোট হতে পারে। Notes line দরকার হলে handout layout বেছে নিন। Print preview-তে page count, margin ও slide order দেখুন।"},
+        {"t":"h2","x":"Output ও privacy"},
+        {"t":"p","x":"PDF reopen করে slide master element, hidden slide, speaker note ও confidential content আছে কি না যাচাই করুন। PrintxPDF PowerPoint conversion server-এ করে, তাই business deck upload-এর আগে policy অনুমতি দেখুন। Original PPTX সম্পাদনার জন্য রাখুন।"},
+        {"t":"p","x":"Export setting-এ hidden slide include করা হবে কি না নির্বাচন করুন। Audience handout-এ internal presenter note বা rehearsal instruction প্রকাশ হচ্ছে কি না নিশ্চিত করুন। PDF file size বড় হলে compressed image ব্যবহার করা যেতে পারে, তবে chart label স্পষ্ট আছে কি না পরীক্ষা করুন।"},
+        {"t":"p","x":"Presenter-এর computer-এ থাকা missing font converter-এর server-এ নাও থাকতে পারে। Brand font দরকার হলে slide source-এ supported embedding বা substitute font ব্যবহার করুন। Video link-এর বদলে QR বা short URL যোগ করলে PDF audience-ও related media খুলতে পারে। কাজ শেষে একটি কপি রাখুন এবং ফলাফলটি আপনার উদ্দেশ্য পূরণ করছে কি না যাচাই করুন।"},
+        {"t":"cta","tool":"ppt-to-pdf","x":"Presentation PDF করে slide order ও layout পরীক্ষা করুন।"}
       ]
     },
     {
       "topic": "convert-pdf-to-powerpoint",
-      "title": "PDF-কে PowerPoint slide-এ রূপান্তর করুন",
+      "title": "PDF-কে PowerPoint slide-এ রূপান্তর ও সম্পাদনা যাচাই",
       "slug": "convert-pdf-to-powerpoint",
       "tool": "pdf-to-ppt",
       "description": "PDF page-কে PPT slide-এ নিয়ে text, image ও layout পরীক্ষা করুন। OCR, editable element ও aspect ratio-এর সীমা জানুন।",
       "metaDescription": "PDF page-কে PPT slide-এ নিয়ে text, image ও layout পরীক্ষা করুন। OCR, editable element ও aspect ratio-এর সীমা জানুন।",
       "faqs": [
-        { "q": "Converted slide কি editable?", "a": "কিছু tool page-কে image করে; text ও shape আলাদা সম্পাদনাযোগ্য কি না পরীক্ষা করুন।" },
-        { "q": "PDF scan হলে কী হবে?", "a": "Slide-এ image আসতে পারে। Editable text দরকার হলে OCR ও manual correction লাগতে পারে।" },
-        { "q": "Slide ratio কেন বদলায়?", "a": "PDF page size ও presentation aspect ratio আলাদা হতে পারে। Crop ও margin পরীক্ষা করুন।" }
+        {"q":"Converted slide কি editable?","a":"কিছু tool page-কে image করে; text ও shape আলাদা সম্পাদনাযোগ্য কি না পরীক্ষা করুন।"},
+        {"q":"PDF scan হলে কী হবে?","a":"Slide-এ image আসতে পারে। Editable text দরকার হলে OCR ও manual correction লাগতে পারে।"},
+        {"q":"Slide ratio কেন বদলায়?","a":"PDF page size ও presentation aspect ratio আলাদা হতে পারে। Crop ও margin পরীক্ষা করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF-কে PowerPoint-এ রূপান্তর করলে page-গুলো slide হিসেবে ব্যবহার করা যায়। তবে conversion থেকে মূল authoring file সবসময় ফেরত পাওয়া যায় না। Tool প্রতিটি page-কে image হিসেবে বসাতে পারে, অথবা text ও shape আলাদা করার চেষ্টা করতে পারে। PDF scan হলে OCR দরকার হতে পারে। Output deck-কে editable presentation ভাবার আগে text, object এবং page ratio পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Aspect ratio ও crop" },
-        { "t": "p", "x": "PDF A4 বা Letter page হতে পারে, আর presentation widescreen। Slide size পরিবর্তনের পরে content crop, stretch বা ফাঁকা margin হতে পারে। Title, chart, footnote ও signature page edge থেকে সরে গেছে কি না দেখুন।" },
-        { "t": "h2", "x": "Text, image ও OCR" },
-        { "t": "p", "x": "Text select করে font ও line break পরীক্ষা করুন। Image-ভিত্তিক page editable text দেয় না। OCR চালালে বাংলা অক্ষর, সংখ্যা, table ও symbol মিলিয়ে নিন। High resolution image zoom-এ sharp কি না দেখুন।" },
-        { "t": "h2", "x": "Presentation review" },
-        { "t": "p", "x": "Slide show mode-এ সব page দেখুন। প্রয়োজনমতো content নতুন করে সাজান, source attribution দিন এবং output PDF export করে তুলনা করুন। Confidential PDF server-এ upload করার আগে permission যাচাই করুন; PrintxPDF PDF-to-PPT conversion server processing ব্যবহার করে।" },
-        { "t": "p", "x": "Conversion এর পরে deck-এর authoring source বা license note হারিয়ে যেতে পারে। Original author ও publication date প্রয়োজন হলে note-এ রাখুন। PDF-এর element order, hidden layer এবং links সব নতুন slide-এ নাও আসতে পারে, তাই presentation ব্যবহারের আগে content owner-এর অনুমোদন নিন।" },
-        { "t": "p", "x": "PDF-এ page label বা section number থাকলে slide order বদলানোর আগে সেই reference বুঝে নিন। Font substitute হলে layout পুনর্গঠন করুন; সব element একসঙ্গে group থাকলে edit সীমিত হতে পারে। Presentation-এ নতুন chart data বা claim যোগ করলে source attribution বজায় রাখুন।" },
-        { "t": "cta", "tool": "pdf-to-ppt", "x": "PDF থেকে slide তৈরি করে editable content ও visual layout যাচাই করুন।" }
+        {"t":"p","x":"PDF-কে PowerPoint-এ রূপান্তর করলে page-গুলো slide হিসেবে ব্যবহার করা যায়। তবে conversion থেকে মূল authoring file সবসময় ফেরত পাওয়া যায় না। Tool প্রতিটি page-কে image হিসেবে বসাতে পারে, অথবা text ও shape আলাদা করার চেষ্টা করতে পারে। PDF scan হলে OCR দরকার হতে পারে। Output deck-কে editable presentation ভাবার আগে text, object এবং page ratio পরীক্ষা করুন।"},
+        {"t":"h2","x":"Aspect ratio ও crop"},
+        {"t":"p","x":"PDF A4 বা Letter page হতে পারে, আর presentation widescreen। Slide size পরিবর্তনের পরে content crop, stretch বা ফাঁকা margin হতে পারে। Title, chart, footnote ও signature page edge থেকে সরে গেছে কি না দেখুন।"},
+        {"t":"h2","x":"Text, image ও OCR"},
+        {"t":"p","x":"Text select করে font ও line break পরীক্ষা করুন। Image-ভিত্তিক page editable text দেয় না। OCR চালালে বাংলা অক্ষর, সংখ্যা, table ও symbol মিলিয়ে নিন। High resolution image zoom-এ sharp কি না দেখুন।"},
+        {"t":"h2","x":"Presentation review"},
+        {"t":"p","x":"Slide show mode-এ সব page দেখুন। প্রয়োজনমতো content নতুন করে সাজান, source attribution দিন এবং output PDF export করে তুলনা করুন। Confidential PDF server-এ upload করার আগে permission যাচাই করুন; PrintxPDF PDF-to-PPT conversion server processing ব্যবহার করে।"},
+        {"t":"p","x":"Conversion এর পরে deck-এর authoring source বা license note হারিয়ে যেতে পারে। Original author ও publication date প্রয়োজন হলে note-এ রাখুন। PDF-এর element order, hidden layer এবং links সব নতুন slide-এ নাও আসতে পারে, তাই presentation ব্যবহারের আগে content owner-এর অনুমোদন নিন।"},
+        {"t":"p","x":"PDF-এ page label বা section number থাকলে slide order বদলানোর আগে সেই reference বুঝে নিন। Font substitute হলে layout পুনর্গঠন করুন; সব element একসঙ্গে group থাকলে edit সীমিত হতে পারে। Presentation-এ নতুন chart data বা claim যোগ করলে source attribution বজায় রাখুন।"},
+        {"t":"cta","tool":"pdf-to-ppt","x":"PDF থেকে slide তৈরি করে editable content ও visual layout যাচাই করুন।"}
       ]
     },
     {
@@ -155,21 +155,21 @@
       "description": "এক page-এ একাধিক slide, notes line ও duplex setting বেছে handout তৈরি করুন। Font ও diagram sample print-এ যাচাই করুন।",
       "metaDescription": "এক page-এ একাধিক slide, notes line ও duplex setting বেছে handout তৈরি করুন। Font ও diagram sample print-এ যাচাই করুন।",
       "faqs": [
-        { "q": "Handout-এ কয়টি slide রাখব?", "a": "3 বা 6 slide সাধারণ বিকল্প; content density ও readability দেখে বেছে নিন।" },
-        { "q": "Speaker notes কি handout-এ আসে?", "a": "Export layout option-এ notes page বা notes line নির্বাচন করলে আসতে পারে।" },
-        { "q": "Slide handout duplex print করা যায়?", "a": "হ্যাঁ, printer duplex সমর্থন করলে flip direction পরীক্ষা করে print করুন।" }
+        {"q":"Handout-এ কয়টি slide রাখব?","a":"3 বা 6 slide সাধারণ বিকল্প; content density ও readability দেখে বেছে নিন।"},
+        {"q":"Speaker notes কি handout-এ আসে?","a":"Export layout option-এ notes page বা notes line নির্বাচন করলে আসতে পারে।"},
+        {"q":"Slide handout duplex print করা যায়?","a":"হ্যাঁ, printer duplex সমর্থন করলে flip direction পরীক্ষা করে print করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "Presentation handout audience-কে slide reference ও note নেওয়ার জায়গা দেয়। এক page-এ 3 বা 6 slide রাখলে paper কম লাগে, কিন্তু ছোট label পড়া যায় কি না পরীক্ষা করুন। 3-slide layout notes line দিতে পারে; 6-slide layout compact হতে পারে। Slide-এর content এবং session-এর উদ্দেশ্য দেখে নির্বাচন করুন। Export-এর আগে animation build-এর duplicate page আছে কি না দেখুন।" },
-        { "t": "h2", "x": "Layout ও notes" },
-        { "t": "p", "x": "Handout setting-এ slide count, page direction, border ও notes line বেছে নিন। Dense chart থাকলে প্রতি page-এ কম slide রাখুন। Notes page ব্যবহার করলে slide-এর নিচে text space পাওয়া যেতে পারে। Print preview-তে first এবং busiest page দেখুন।" },
-        { "t": "h2", "x": "Duplex, paper ও order" },
-        { "t": "p", "x": "Double-sided printing paper বাঁচায়, কিন্তু binding বা fold-এর জন্য margin রাখুন। Printer flip direction test করুন। Slide order presentation sequence-এর সঙ্গে মেলে কি না দেখুন, বিশেষ করে handout layout row-wise নাকি column-wise সাজানো।" },
-        { "t": "h2", "x": "Readability ও distribution" },
-        { "t": "p", "x": "Sample handout normal viewing distance-এ পড়ুন। Colour-only chart grayscale-এ অস্পষ্ট হলে label বা pattern যোগ করুন। Copyright, speaker notes এবং confidential slide handout-এ প্রকাশ হচ্ছে কি না পর্যালোচনা করুন। Final PDF output audience-এর প্রয়োজন ও accessibility format পূরণ করে কি না নিশ্চিত করুন।" },
-        { "t": "p", "x": "Audience-এর কাছে digital handout দিলে tag structure ও selectable text প্রয়োজন কি না বিবেচনা করুন। File name-এ session date ও version যোগ করুন। Printer-এ batch পাঠানোর আগে toner, tray এবং duplex orientation নিশ্চিত করুন; ভুল হলে সব কপি আবার print করতে হয়।" },
-        { "t": "p", "x": "Participant-দের হাতে note নিতে হলে blank margin বা lined area রাখুন। Presenter deck-এ hidden appendix থাকলে handout-এ তা থাকা দরকার কি না owner-এর সঙ্গে নিশ্চিত করুন। Session শেষে participant list বা confidential slide handout সংগ্রহের নিয়মও আগে ঠিক করুন।" },
-        { "t": "cta", "tool": "ppt-to-pdf", "x": "Handout PDF export করে sample page print ও readability পরীক্ষা করুন।" }
+        {"t":"p","x":"Presentation handout audience-কে slide reference ও note নেওয়ার জায়গা দেয়। এক page-এ 3 বা 6 slide রাখলে paper কম লাগে, কিন্তু ছোট label পড়া যায় কি না পরীক্ষা করুন। 3-slide layout notes line দিতে পারে; 6-slide layout compact হতে পারে। Slide-এর content এবং session-এর উদ্দেশ্য দেখে নির্বাচন করুন। Export-এর আগে animation build-এর duplicate page আছে কি না দেখুন।"},
+        {"t":"h2","x":"Layout ও notes"},
+        {"t":"p","x":"Handout setting-এ slide count, page direction, border ও notes line বেছে নিন। Dense chart থাকলে প্রতি page-এ কম slide রাখুন। Notes page ব্যবহার করলে slide-এর নিচে text space পাওয়া যেতে পারে। Print preview-তে first এবং busiest page দেখুন।"},
+        {"t":"h2","x":"Duplex, paper ও order"},
+        {"t":"p","x":"Double-sided printing paper বাঁচায়, কিন্তু binding বা fold-এর জন্য margin রাখুন। Printer flip direction test করুন। Slide order presentation sequence-এর সঙ্গে মেলে কি না দেখুন, বিশেষ করে handout layout row-wise নাকি column-wise সাজানো।"},
+        {"t":"h2","x":"Readability ও distribution"},
+        {"t":"p","x":"Sample handout normal viewing distance-এ পড়ুন। Colour-only chart grayscale-এ অস্পষ্ট হলে label বা pattern যোগ করুন। Copyright, speaker notes এবং confidential slide handout-এ প্রকাশ হচ্ছে কি না পর্যালোচনা করুন। Final PDF output audience-এর প্রয়োজন ও accessibility format পূরণ করে কি না নিশ্চিত করুন।"},
+        {"t":"p","x":"Audience-এর কাছে digital handout দিলে tag structure ও selectable text প্রয়োজন কি না বিবেচনা করুন। File name-এ session date ও version যোগ করুন। Printer-এ batch পাঠানোর আগে toner, tray এবং duplex orientation নিশ্চিত করুন; ভুল হলে সব কপি আবার print করতে হয়।"},
+        {"t":"p","x":"Participant-দের হাতে note নিতে হলে blank margin বা lined area রাখুন। Presenter deck-এ hidden appendix থাকলে handout-এ তা থাকা দরকার কি না owner-এর সঙ্গে নিশ্চিত করুন। Session শেষে participant list বা confidential slide handout সংগ্রহের নিয়মও আগে ঠিক করুন।"},
+        {"t":"cta","tool":"ppt-to-pdf","x":"Handout PDF export করে sample page print ও readability পরীক্ষা করুন।"}
       ]
     },
     {
@@ -180,21 +180,21 @@
       "description": "বড় type, contrast, safe margin ও print-friendly colour ব্যবহার করে slide design করুন। PDF export ও sample print পরীক্ষা করুন।",
       "metaDescription": "বড় type, contrast, safe margin ও print-friendly colour ব্যবহার করে slide design করুন। PDF export ও sample print পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Dark background print-এ ভালো?", "a": "এতে ink বেশি লাগতে পারে এবং grayscale-এ contrast নষ্ট হতে পারে। Sample দেখুন।" },
-        { "q": "Slide-এর font কত বড় রাখব?", "a": "Handout layout ও page size অনুযায়ী readability test করে নির্ধারণ করুন।" },
-        { "q": "Colour chart সাদা-কালোতে বোঝা যাবে?", "a": "Label, pattern বা shape যোগ করলে শুধু colour-এর ওপর নির্ভর করতে হয় না।" }
+        {"q":"Dark background print-এ ভালো?","a":"এতে ink বেশি লাগতে পারে এবং grayscale-এ contrast নষ্ট হতে পারে। Sample দেখুন।"},
+        {"q":"Slide-এর font কত বড় রাখব?","a":"Handout layout ও page size অনুযায়ী readability test করে নির্ধারণ করুন।"},
+        {"q":"Colour chart সাদা-কালোতে বোঝা যাবে?","a":"Label, pattern বা shape যোগ করলে শুধু colour-এর ওপর নির্ভর করতে হয় না।"}
       ],
       "body": [
-        { "t": "p", "x": "Slide projector বা monitor-এ ভালো দেখালেও paper handout-এ লেখা ও chart ছোট হতে পারে। Print-friendly slide-এ বড় heading, সংক্ষিপ্ত bullet, শক্তিশালী contrast এবং পর্যাপ্ত whitespace রাখুন। Dark background ও decorative image ink বাড়াতে পারে। Slide ratio কাগজের ratio থেকে আলাদা হওয়ায় margin বা blank area তৈরি হতে পারে। Export-এর পরে actual handout layout পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Text size ও hierarchy" },
-        { "t": "p", "x": "প্রতিটি slide-এ এক বা দুইটি মূল ধারণা রাখুন। Body text খুব ছোট করবেন না; handout-এ এক page-এ কয়েকটি slide এলে size আরও কমে যায়। Heading, label ও footnote-কে hierarchy অনুযায়ী সাজান। বাংলা font ও English term মিশ্র হলে line break পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Colour ও graphics" },
-        { "t": "p", "x": "Light background ও dark text সাধারণত paper-এ পরিষ্কার। Chart-এ category শুধু red/green বা রঙ দিয়ে বোঝাবেন না; label, pattern বা marker ব্যবহার করুন। Image resolution ও crop পরীক্ষা করুন। Grayscale sample-এ essential content বোঝা যায় কি না দেখুন।" },
-        { "t": "h2", "x": "Export ও proof" },
-        { "t": "p", "x": "PDF export করে first, busiest ও final slide খুলুন। Page size, margin, note line ও handout count মিলিয়ে নিন। একটি sample print করে normal light-এ পড়ুন। প্রয়োজন হলে deck সংশোধন করে নতুন PDF বানান এবং পুরনো version আলাদা archive করুন।" },
-        { "t": "p", "x": "Slide-এ source citation বা speaker attribution থাকলে print version-এ দৃশ্যমান রাখুন। Slide deck-এ hidden backup slide থাকলে PDF export-এ accidental inclusion হয়েছে কি না দেখুন। Presenter-এর original editable file ও final print copy আলাদা version label-এ সংরক্ষণ করুন।" },
-        { "t": "p", "x": "Slide-এ full-slide photo থাকলে print page-এ crop ও colour cast sample করুন। Print budget কম হলে slide count কমিয়ে content hierarchy নতুন করে সাজান, font ছোট করবেন না। Colour vision difference বিবেচনা করে chart-এর legend ও pattern দৃশ্যমান রাখুন।" },
-        { "t": "cta", "tool": "ppt-to-pdf", "x": "Slide PDF করে handout preview ও sample print যাচাই করুন।" }
+        {"t":"p","x":"Slide projector বা monitor-এ ভালো দেখালেও paper handout-এ লেখা ও chart ছোট হতে পারে। Print-friendly slide-এ বড় heading, সংক্ষিপ্ত bullet, শক্তিশালী contrast এবং পর্যাপ্ত whitespace রাখুন। Dark background ও decorative image ink বাড়াতে পারে। Slide ratio কাগজের ratio থেকে আলাদা হওয়ায় margin বা blank area তৈরি হতে পারে। Export-এর পরে actual handout layout পরীক্ষা করুন।"},
+        {"t":"h2","x":"Text size ও hierarchy"},
+        {"t":"p","x":"প্রতিটি slide-এ এক বা দুইটি মূল ধারণা রাখুন। Body text খুব ছোট করবেন না; handout-এ এক page-এ কয়েকটি slide এলে size আরও কমে যায়। Heading, label ও footnote-কে hierarchy অনুযায়ী সাজান। বাংলা font ও English term মিশ্র হলে line break পরীক্ষা করুন।"},
+        {"t":"h2","x":"Colour ও graphics"},
+        {"t":"p","x":"Light background ও dark text সাধারণত paper-এ পরিষ্কার। Chart-এ category শুধু red/green বা রঙ দিয়ে বোঝাবেন না; label, pattern বা marker ব্যবহার করুন। Image resolution ও crop পরীক্ষা করুন। Grayscale sample-এ essential content বোঝা যায় কি না দেখুন।"},
+        {"t":"h2","x":"Export ও proof"},
+        {"t":"p","x":"PDF export করে first, busiest ও final slide খুলুন। Page size, margin, note line ও handout count মিলিয়ে নিন। একটি sample print করে normal light-এ পড়ুন। প্রয়োজন হলে deck সংশোধন করে নতুন PDF বানান এবং পুরনো version আলাদা archive করুন।"},
+        {"t":"p","x":"Slide-এ source citation বা speaker attribution থাকলে print version-এ দৃশ্যমান রাখুন। Slide deck-এ hidden backup slide থাকলে PDF export-এ accidental inclusion হয়েছে কি না দেখুন। Presenter-এর original editable file ও final print copy আলাদা version label-এ সংরক্ষণ করুন।"},
+        {"t":"p","x":"Slide-এ full-slide photo থাকলে print page-এ crop ও colour cast sample করুন। Print budget কম হলে slide count কমিয়ে content hierarchy নতুন করে সাজান, font ছোট করবেন না। Colour vision difference বিবেচনা করে chart-এর legend ও pattern দৃশ্যমান রাখুন।"},
+        {"t":"cta","tool":"ppt-to-pdf","x":"Slide PDF করে handout preview ও sample print যাচাই করুন।"}
       ]
     },
     {
@@ -205,21 +205,21 @@
       "description": "প্রতি page আলাদা file বা নির্দিষ্ট range-এ PDF split করুন। Order, file name, signature ও page count যাচাই করুন।",
       "metaDescription": "প্রতি page আলাদা file বা নির্দিষ্ট range-এ PDF split করুন। Order, file name, signature ও page count যাচাই করুন।",
       "faqs": [
-        { "q": "প্রতি page আলাদা PDF করা যায়?", "a": "Split tool-এ single-page output option থাকলে করা যায়; output file count পরীক্ষা করুন।" },
-        { "q": "Split করলে digital signature থাকে?", "a": "Document পরিবর্তনে signature validation প্রভাবিত হতে পারে। Original signed file রাখুন।" },
-        { "q": "একাধিক range একবারে split করা যায়?", "a": "Tool-এর option ও page range format অনুযায়ী সম্ভব; প্রতিটি output খুলে যাচাই করুন।" }
+        {"q":"প্রতি page আলাদা PDF করা যায়?","a":"Split tool-এ single-page output option থাকলে করা যায়; output file count পরীক্ষা করুন।"},
+        {"q":"Split করলে digital signature থাকে?","a":"Document পরিবর্তনে signature validation প্রভাবিত হতে পারে। Original signed file রাখুন।"},
+        {"q":"একাধিক range একবারে split করা যায়?","a":"Tool-এর option ও page range format অনুযায়ী সম্ভব; প্রতিটি output খুলে যাচাই করুন।"}
       ],
       "body": [
-        { "t": "p", "x": "একটি বড় PDF-কে প্রতি page আলাদা file, কয়েকটি chapter বা নির্দিষ্ট page range-এ ভাগ করলে email, review বা file organization সহজ হয়। আগে original PDF-এর backup রাখুন। Viewer page index এবং printed page number আলাদা হতে পারে, তাই split range নির্ধারণে thumbnail ও section heading মিলিয়ে নিন। File name-এ original title, part number এবং page range রাখুন।" },
-        { "t": "h2", "x": "Split strategy নির্বাচন" },
-        { "t": "p", "x": "প্রতি page আলাদা output দরকার হলে single-page mode ব্যবহার করুন। Chapter ভাগ করলে section boundary-তে range দিন। Email attachment-এর জন্য ভাগ করলে message size limit এবং encoding buffer হিসাব করুন। একটি paragraph বা table-এর মাঝখানে split এড়িয়ে চলুন।" },
-        { "t": "h2", "x": "Output naming ও sequence" },
-        { "t": "p", "x": "Part 01, 02 এভাবে filename সাজান যাতে alphabetical order-এ ক্রম ঠিক থাকে। একাধিক output তৈরি হলে file count expected page range-এর সঙ্গে মেলান। প্রতিটি part খুলে first ও last page পরীক্ষা করুন।" },
-        { "t": "h2", "x": "Signature ও sensitive data" },
-        { "t": "p", "x": "Split করার ফলে digital signature বা internal bookmark invalid হতে পারে। Signed original সংরক্ষণ করুন এবং recipient-এর requirement জানুন। প্রত্যেক output-এ প্রয়োজনীয় data আছে কি না ও অপ্রয়োজনীয় confidential page বাদ পড়েছে কি না পরীক্ষা করুন।" },
-        { "t": "p", "x": "Split output mail করলে recipient-কে part count এবং merge order জানান। ZIP-এ একসঙ্গে পাঠাতে পারেন, কিন্তু archive খুলে প্রতিটি PDF আছে কি না পরীক্ষা করুন। File names-এ শুধু “final” না লিখে date ও range রাখলে ভবিষ্যতে confusion কমে।" },
-        { "t": "p", "x": "Output folder-এ একবারে অনেক file হলে empty placeholder বা zero-byte item আছে কি না দেখুন। Split-এর পরে source file checksum বা file size note করা যেতে পারে। নতুন part recipient-এর কাছে গেলে মূল complete PDF কোথায় থাকবে তা জানিয়ে দিন।" },
-        { "t": "cta", "tool": "split-pdf", "x": "PDF range split করে প্রতিটি output ও filename যাচাই করুন।" }
+        {"t":"p","x":"একটি বড় PDF-কে প্রতি page আলাদা file, কয়েকটি chapter বা নির্দিষ্ট page range-এ ভাগ করলে email, review বা file organization সহজ হয়। আগে original PDF-এর backup রাখুন। Viewer page index এবং printed page number আলাদা হতে পারে, তাই split range নির্ধারণে thumbnail ও section heading মিলিয়ে নিন। File name-এ original title, part number এবং page range রাখুন।"},
+        {"t":"h2","x":"Split strategy নির্বাচন"},
+        {"t":"p","x":"প্রতি page আলাদা output দরকার হলে single-page mode ব্যবহার করুন। Chapter ভাগ করলে section boundary-তে range দিন। Email attachment-এর জন্য ভাগ করলে message size limit এবং encoding buffer হিসাব করুন। একটি paragraph বা table-এর মাঝখানে split এড়িয়ে চলুন।"},
+        {"t":"h2","x":"Output naming ও sequence"},
+        {"t":"p","x":"Part 01, 02 এভাবে filename সাজান যাতে alphabetical order-এ ক্রম ঠিক থাকে। একাধিক output তৈরি হলে file count expected page range-এর সঙ্গে মেলান। প্রতিটি part খুলে first ও last page পরীক্ষা করুন।"},
+        {"t":"h2","x":"Signature ও sensitive data"},
+        {"t":"p","x":"Split করার ফলে digital signature বা internal bookmark invalid হতে পারে। Signed original সংরক্ষণ করুন এবং recipient-এর requirement জানুন। প্রত্যেক output-এ প্রয়োজনীয় data আছে কি না ও অপ্রয়োজনীয় confidential page বাদ পড়েছে কি না পরীক্ষা করুন।"},
+        {"t":"p","x":"Split output mail করলে recipient-কে part count এবং merge order জানান। ZIP-এ একসঙ্গে পাঠাতে পারেন, কিন্তু archive খুলে প্রতিটি PDF আছে কি না পরীক্ষা করুন। File names-এ শুধু “final” না লিখে date ও range রাখলে ভবিষ্যতে confusion কমে।"},
+        {"t":"p","x":"Output folder-এ একবারে অনেক file হলে empty placeholder বা zero-byte item আছে কি না দেখুন। Split-এর পরে source file checksum বা file size note করা যেতে পারে। নতুন part recipient-এর কাছে গেলে মূল complete PDF কোথায় থাকবে তা জানিয়ে দিন।"},
+        {"t":"cta","tool":"split-pdf","x":"PDF range split করে প্রতিটি output ও filename যাচাই করুন।"}
       ]
     },
     {
@@ -230,21 +230,21 @@
       "description": "নির্দিষ্ট page বা range extract করে নতুন PDF বানান। Printed numbering, page order ও confidential information পরীক্ষা করুন।",
       "metaDescription": "নির্দিষ্ট page বা range extract করে নতুন PDF বানান। Printed numbering, page order ও confidential information পরীক্ষা করুন।",
       "faqs": [
-        { "q": "Extract page কি original থেকে মুছে যায়?", "a": "না। Extraction সাধারণত selected page-এর নতুন copy বানায়।" },
-        { "q": "Printed page number না viewer number ব্যবহার করব?", "a": "দুটো মিলিয়ে দেখুন; cover page থাকলে numbering আলাদা হতে পারে।" },
-        { "q": "Extract করা page signed থাকবে?", "a": "নতুন file creation digital signature validation পরিবর্তন করতে পারে। Original signed copy রাখুন।" }
+        {"q":"Extract page কি original থেকে মুছে যায়?","a":"না। Extraction সাধারণত selected page-এর নতুন copy বানায়।"},
+        {"q":"Printed page number না viewer number ব্যবহার করব?","a":"দুটো মিলিয়ে দেখুন; cover page থাকলে numbering আলাদা হতে পারে।"},
+        {"q":"Extract করা page signed থাকবে?","a":"নতুন file creation digital signature validation পরিবর্তন করতে পারে। Original signed copy রাখুন।"}
       ],
       "body": [
-        { "t": "p", "x": "PDF থেকে কয়েকটি প্রয়োজনীয় page আলাদা করে নতুন file বানালে report, appendix, receipt বা form share করা সহজ হয়। Extraction সাধারণত selected page-এর copy তৈরি করে এবং original অক্ষত রাখে। তবু কাজের আগে backup নিন। Reader-এর page index আর document-এ printed number আলাদা হতে পারে, তাই title ও thumbnail মিলিয়ে সঠিক পৃষ্ঠা নির্বাচন করুন।" },
-        { "t": "h2", "x": "Page range বেছে নেওয়া" },
-        { "t": "p", "x": "একটি page, ধারাবাহিক range বা tool-supported nonconsecutive page বেছে নিন। Range লিখে আবার পরীক্ষা করুন। Page-এর শুরু ও শেষ content দেখে নিশ্চিত করুন, বিশেষ করে একই ধরনের form page থাকলে। Output order reading flow-এর সঙ্গে মেলে কি না preview করুন।" },
-        { "t": "h2", "x": "Extracted PDF পরীক্ষা" },
-        { "t": "p", "x": "Download করা file খুলে page count, orientation, link, table, bookmark ও form field দেখুন। Digital signature status বদলাতে পারে, তাই signed record-এ original file authoritative রাখুন। Extracted copy-কে source page range দিয়ে নাম দিন।" },
-        { "t": "h2", "x": "Privacy এবং distribution" },
-        { "t": "p", "x": "Share করার আগে নির্বাচিত page-এ প্রয়োজনের বেশি personal data আছে কি না দেখুন। Page extraction অন্য page-এর hidden content মুছে ফেলে, কিন্তু selected page-এর text redaction করে না। তথ্য লুকাতে redaction লাগবে। Recipient ও access permission নিশ্চিত করুন।" },
-        { "t": "p", "x": "প্রাপক যদি extracted section-কে পূর্ণ record ভেবে নিতে পারেন, cover note-এ এটি excerpt এবং কোন source থেকে এসেছে তা লিখুন। Original page number পুনরায় number করা হলে source numbering আলাদা উল্লেখ করুন। এতে উদ্ধৃতি ও audit-এ নির্ভুলতা বজায় থাকে।" },
-        { "t": "p", "x": "Page extract করার পরে মূল file-এর page number ও নতুন file-এর page index আলাদা note করুন। এতে reviewer নির্দিষ্ট অংশে দ্রুত ফিরতে পারবেন। Extraction tool output flatten বা modify করেছে কি না document properties ও visual page দেখে বুঝুন।" },
-        { "t": "cta", "tool": "extract-pages", "x": "প্রয়োজনীয় page extract করে নতুন PDF-এর ক্রম ও content যাচাই করুন।" }
+        {"t":"p","x":"PDF থেকে কয়েকটি প্রয়োজনীয় page আলাদা করে নতুন file বানালে report, appendix, receipt বা form share করা সহজ হয়। Extraction সাধারণত selected page-এর copy তৈরি করে এবং original অক্ষত রাখে। তবু কাজের আগে backup নিন। Reader-এর page index আর document-এ printed number আলাদা হতে পারে, তাই title ও thumbnail মিলিয়ে সঠিক পৃষ্ঠা নির্বাচন করুন।"},
+        {"t":"h2","x":"Page range বেছে নেওয়া"},
+        {"t":"p","x":"একটি page, ধারাবাহিক range বা tool-supported nonconsecutive page বেছে নিন। Range লিখে আবার পরীক্ষা করুন। Page-এর শুরু ও শেষ content দেখে নিশ্চিত করুন, বিশেষ করে একই ধরনের form page থাকলে। Output order reading flow-এর সঙ্গে মেলে কি না preview করুন।"},
+        {"t":"h2","x":"Extracted PDF পরীক্ষা"},
+        {"t":"p","x":"Download করা file খুলে page count, orientation, link, table, bookmark ও form field দেখুন। Digital signature status বদলাতে পারে, তাই signed record-এ original file authoritative রাখুন। Extracted copy-কে source page range দিয়ে নাম দিন।"},
+        {"t":"h2","x":"Privacy এবং distribution"},
+        {"t":"p","x":"Share করার আগে নির্বাচিত page-এ প্রয়োজনের বেশি personal data আছে কি না দেখুন। Page extraction অন্য page-এর hidden content মুছে ফেলে, কিন্তু selected page-এর text redaction করে না। তথ্য লুকাতে redaction লাগবে। Recipient ও access permission নিশ্চিত করুন।"},
+        {"t":"p","x":"প্রাপক যদি extracted section-কে পূর্ণ record ভেবে নিতে পারেন, cover note-এ এটি excerpt এবং কোন source থেকে এসেছে তা লিখুন। Original page number পুনরায় number করা হলে source numbering আলাদা উল্লেখ করুন। এতে উদ্ধৃতি ও audit-এ নির্ভুলতা বজায় থাকে।"},
+        {"t":"p","x":"Page extract করার পরে মূল file-এর page number ও নতুন file-এর page index আলাদা note করুন। এতে reviewer নির্দিষ্ট অংশে দ্রুত ফিরতে পারবেন। Extraction tool output flatten বা modify করেছে কি না document properties ও visual page দেখে বুঝুন।"},
+        {"t":"cta","tool":"extract-pages","x":"প্রয়োজনীয় page extract করে নতুন PDF-এর ক্রম ও content যাচাই করুন।"}
       ]
     }
   ]
