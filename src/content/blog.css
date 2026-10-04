@@ -273,8 +273,42 @@
 }
 
 .faq-item {
-  border-bottom: var(--bw-thin) solid var(--bg-3);
-  padding: 1rem 0;
+  padding: 1.15rem 1.35rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.faq-item[open] {
+  padding-bottom: 1.3rem;
+}
+.faq-item > summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  min-width: 0;
+  line-height: 1.45;
+  list-style: none;
+}
+.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item > summary::before {
+  content: '';
+  flex: 0 0 0.55rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-top: 0.48em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 160ms ease;
+}
+.faq-item[open] > summary::before {
+  transform: rotate(45deg);
+}
+.faq-item > p {
+  margin: 0.65rem 0 0 1.25rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
 }
 .faq-item:last-child {
   border-bottom: 0;
