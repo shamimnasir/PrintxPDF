@@ -26,6 +26,36 @@ let CONFIG_JSON = '{}'
 let VERIFY_META = ''
 let MANIFEST = {}
 let SHELL = ''
+const GUIDE_ART_FILES = {
+  documents: 'document-guide-cover.jpg', print: 'web-to-print-cover.jpg', conversion: 'file-conversion-cover.jpg',
+  scan: 'scan-ocr-cover.jpg', privacy: 'document-privacy-cover.jpg', qr: 'qr-print-cover.jpg',
+}
+const GUIDE_ART_TOOLS = {
+  documents: ['edit-pdf', 'pdf-forms', 'pdf-reader', 'sign-pdf', 'merge-pdf', 'split-pdf', 'organize-pdf', 'rotate-pdf', 'delete-pages', 'extract-pages', 'crop-pdf', 'page-numbers', 'add-watermark', 'compare-pdf', 'repair-pdf'],
+  print: ['html-to-pdf', 'website-to-pdf'],
+  conversion: ['image-converter', 'jpg-to-pdf', 'pdf-to-jpg', 'pdf-to-word', 'word-to-pdf', 'pdf-to-excel', 'excel-to-pdf', 'pdf-to-ppt', 'ppt-to-pdf', 'ebook-converter', 'epub-to-pdf', 'mobi-to-pdf', 'create-zip', 'extract-zip', 'pdf-to-pdfa', 'compress-pdf', 'compress-image', 'pdf-to-markdown', 'pdf-to-text'],
+  scan: ['ocr-pdf', 'scan-to-pdf'], privacy: ['redact-pdf', 'protect-pdf', 'unlock-pdf', 'remove-metadata'], qr: ['qr-code'],
+}
+const GUIDE_ART_CLUSTERS = {
+  documents: ['merge', 'split', 'edit', 'sign', 'watermark-page-numbers'],
+  print: ['print', 'save-pdf', 'recipes', 'students', 'publishers', 'save-ink', 'extensions'],
+  conversion: ['from-pdf', 'to-pdf', 'images', 'files', 'archive', 'slides', 'ebooks', 'compress'],
+  scan: ['ocr'], privacy: ['privacy'], qr: ['qr'],
+}
+const GUIDE_IMAGE_ALT = {
+  documents: 'Blank pages, a blue document folder and a pen', print: 'A web page being prepared for clean printing',
+  conversion: 'An image and documents being converted into a file', scan: 'A paper document being scanned and inspected',
+  privacy: 'A private document protected by a blue padlock', qr: 'A printed QR code being scanned by a phone',
+}
+const guideImage = (art) => `/images/guides/${GUIDE_ART_FILES[art] || GUIDE_ART_FILES.documents}`
+const guideArtForTool = (tool) => Object.entries(GUIDE_ART_TOOLS).find(([, tools]) => tools.includes(tool))?.[0] || 'documents'
+const guideArtForCluster = (cluster) => Object.entries(GUIDE_ART_CLUSTERS).find(([, clusters]) => clusters.includes(cluster))?.[0] || 'documents'
+const LOCALE_IMAGE_ALT = {
+  en: 'Blank pages, a blue document folder and a pen',
+  es: 'Hojas en blanco, una carpeta azul y un bolígrafo',
+  'pt-BR': 'Folhas em branco, uma pasta azul e uma caneta', hi: 'खाली पन्ने, नीला दस्तावेज़ फ़ोल्डर और एक पेन',
+  ar: 'أوراق فارغة ومجلد أزرق وقلم', bn: 'সাদা কাগজ, নীল ডকুমेंट ফোল্ডার ও একটি কলম', vi: 'Giấy trắng, bìa hồ sơ xanh và một cây bút', 'zh-CN': '空白纸张、蓝色文件夹和一支笔',
+}
 
 // Which lazy route module renders a path (mirrors the routes in src/App.tsx). Its chunk and
 // the chunks it imports are preloaded from the page head, so the route hydrates as soon as
@@ -115,7 +145,7 @@ async function loadData() {
   return mod
 }
 
-function pageHtml(shell, { route, title, description, canonical, keywords, schema, bodyHtml, published, updated, noindex, lang = 'en', dir = 'ltr', alternates = [] }) {
+function pageHtml(shell, { route, title, description, canonical, keywords, schema, bodyHtml, published, updated, noindex, lang = 'en', dir = 'ltr', alternates = [], image, imageAlt }) {
   const head = [
     preloadLinks(route),
     VERIFY_META,
@@ -130,9 +160,12 @@ function pageHtml(shell, { route, title, description, canonical, keywords, schem
     `<meta property="og:url" content="${esc(canonical)}">`,
     `<meta property="og:type" content="${published ? 'article' : 'website'}">`,
     `<meta property="og:site_name" content="PrintxPDF">`,
+    image ? `<meta property="og:image" content="${esc(image)}">` : '',
+    image ? `<meta property="og:image:alt" content="${esc(imageAlt || GUIDE_IMAGE_ALT.documents)}">` : '',
     `<meta name="twitter:card" content="summary_large_image">`,
     `<meta name="twitter:title" content="${esc(title)}">`,
     `<meta name="twitter:description" content="${esc(description)}">`,
+    image ? `<meta name="twitter:image" content="${esc(image)}">` : '',
     published ? `<meta property="article:published_time" content="${esc(published)}">` : '',
     updated ? `<meta property="article:modified_time" content="${esc(updated)}">` : '',
     ...(schema || []).map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`),
@@ -239,6 +272,7 @@ async function main() {
         '@type': 'Article',
         headline: p.title,
         description: p.metaDescription,
+        image: `${SITE}${guideImage(guideArtForCluster(p.cluster))}`,
         abstract: plain(p.answer),
         mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}${route}` },
         datePublished: p.published,
@@ -261,6 +295,7 @@ async function main() {
         '@type': 'HowTo',
         name: p.title,
         description: p.metaDescription,
+        image: `${SITE}${guideImage(guideArtForCluster(p.cluster))}`,
         totalTime: 'PT3M',
         estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
         step: allSteps.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: plain(s.h), text: plain(s.x), url: `${SITE}${route}#${stepAnchors[i]}` })),
@@ -271,7 +306,7 @@ async function main() {
 
     await writeRoute(
       route,
-      pageHtml(shell, { route, noindex: noindexAll, title: p.metaTitle, description: p.metaDescription, canonical: `${SITE}${route}`, keywords: [p.primaryKeyword, ...p.secondaryKeywords], schema, bodyHtml, published: p.published, updated: p.updated }),
+      pageHtml(shell, { route, noindex: noindexAll, title: p.metaTitle, description: p.metaDescription, canonical: `${SITE}${route}`, keywords: [p.primaryKeyword, ...p.secondaryKeywords], schema, bodyHtml, published: p.published, updated: p.updated, image: `${SITE}${guideImage(guideArtForCluster(p.cluster))}`, imageAlt: GUIDE_IMAGE_ALT[guideArtForCluster(p.cluster)] }),
     )
     count++
   }
@@ -286,7 +321,7 @@ async function main() {
       crumbs([{ name: pack.homeLabel, path: '/' }, { name: pack.hubTitle, path: hubRoute }]),
       { '@context': 'https://schema.org', '@type': 'CollectionPage', name: pack.hubTitle, description: pack.hubDescription, url: `${SITE}${hubRoute}`, inLanguage: pack.locale, hasPart: pack.guides.map((g) => ({ '@type': 'Article', headline: g.title, url: `${SITE}${guidePath(pack, g.slug)}` })) },
     ]
-    await writeRoute(hubRoute, pageHtml(shell, { route: hubRoute, noindex: noindexAll, title: pack.hubTitle, description: pack.hubDescription, canonical: `${SITE}${hubRoute}`, schema: hubSchema, bodyHtml: hubBody, lang: pack.locale, dir: pack.dir, alternates: hubAlternatesForSite }))
+    await writeRoute(hubRoute, pageHtml(shell, { route: hubRoute, noindex: noindexAll, title: pack.hubTitle, description: pack.hubDescription, canonical: `${SITE}${hubRoute}`, schema: hubSchema, bodyHtml: hubBody, lang: pack.locale, dir: pack.dir, alternates: hubAlternatesForSite, image: `${SITE}${guideImage('documents')}`, imageAlt: LOCALE_IMAGE_ALT[pack.locale] }))
     count++
 
     for (const guide of pack.guides) {
@@ -295,10 +330,10 @@ async function main() {
       const bodyHtml = await ssr(route)
       const schema = [
         crumbs([{ name: pack.homeLabel, path: '/' }, { name: pack.hubTitle, path: hubRoute }, { name: guide.title, path: route }]),
-        { '@context': 'https://schema.org', '@type': 'Article', headline: guide.title, description: guide.metaDescription, abstract: guide.answer, mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}${route}` }, datePublished: '2026-10-03', dateModified: '2026-10-03', author: person, publisher: org, keywords: [guide.keyword, ...guide.secondaryKeywords].join(', '), inLanguage: pack.locale, isAccessibleForFree: true },
+        { '@context': 'https://schema.org', '@type': 'Article', headline: guide.title, description: guide.metaDescription, image: `${SITE}${guideImage(guideArtForTool(guide.tool))}`, abstract: guide.answer, mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}${route}` }, datePublished: '2026-10-03', dateModified: '2026-10-03', author: person, publisher: org, keywords: [guide.keyword, ...guide.secondaryKeywords].join(', '), inLanguage: pack.locale, isAccessibleForFree: true },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: guide.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
       ]
-      await writeRoute(route, pageHtml(shell, { route, noindex: noindexAll, title: guide.metaTitle, description: guide.metaDescription, canonical: `${SITE}${route}`, keywords: [guide.keyword, ...guide.secondaryKeywords], schema, bodyHtml, published: '2026-10-03', updated: '2026-10-03', lang: pack.locale, dir: pack.dir, alternates }))
+      await writeRoute(route, pageHtml(shell, { route, noindex: noindexAll, title: guide.metaTitle, description: guide.metaDescription, canonical: `${SITE}${route}`, keywords: [guide.keyword, ...guide.secondaryKeywords], schema, bodyHtml, published: '2026-10-03', updated: '2026-10-03', lang: pack.locale, dir: pack.dir, alternates, image: `${SITE}${guideImage(guideArtForTool(guide.tool))}`, imageAlt: GUIDE_IMAGE_ALT[guideArtForTool(guide.tool)] }))
       count++
     }
   }
@@ -317,6 +352,7 @@ async function main() {
         '@type': 'CollectionPage',
         name: c.title,
         description: c.metaDescription,
+        image: `${SITE}${guideImage(guideArtForCluster(c.slug))}`,
         url: `${SITE}${route}`,
         about: c.entities.map((e) => ({ '@type': 'Thing', name: e })),
         hasPart: c.posts.map((p) => ({ '@type': 'Article', headline: p.title, url: `${SITE}/blog/${c.slug}/${p.slug}` })),
@@ -328,7 +364,7 @@ async function main() {
       },
     ]
     const bodyHtml = await ssr(route)
-    await writeRoute(route, pageHtml(shell, { route, noindex: noindexAll, title: c.metaTitle, description: c.metaDescription, canonical: `${SITE}${route}`, keywords: [c.primaryKeyword, ...c.entities], schema, bodyHtml }))
+    await writeRoute(route, pageHtml(shell, { route, noindex: noindexAll, title: c.metaTitle, description: c.metaDescription, canonical: `${SITE}${route}`, keywords: [c.primaryKeyword, ...c.entities], schema, bodyHtml, image: `${SITE}${guideImage(guideArtForCluster(c.slug))}`, imageAlt: GUIDE_IMAGE_ALT[guideArtForCluster(c.slug)] }))
     count++
   }
 
@@ -348,8 +384,9 @@ async function main() {
             { name: 'Home', path: '/' },
             { name: 'Guides', path: '/blog' },
           ]),
-          { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'PrintxPDF guides', url: `${SITE}/blog`, hasPart: CLUSTERS.map((c) => ({ '@type': 'WebPage', name: c.title, url: `${SITE}/blog/${c.slug}` })) },
+          { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'PrintxPDF guides', url: `${SITE}/blog`, image: `${SITE}${guideImage('documents')}`, hasPart: CLUSTERS.map((c) => ({ '@type': 'WebPage', name: c.title, url: `${SITE}/blog/${c.slug}` })) },
         ],
+        image: `${SITE}${guideImage('documents')}`,
         bodyHtml,
       }),
     )

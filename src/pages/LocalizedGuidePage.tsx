@@ -4,6 +4,8 @@ import type { LanguagePack } from '../content/localizedGuides'
 import { breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useTool } from '../features/pdf/useTools'
 import { TOOLS } from '../features/pdf/toolsMeta'
+import { ToolShot } from '../components/ui/ToolShot'
+import { GuideCover, guideCoverAlt, guideCoverUrl, guideToolArt } from '../components/ui/GuideCover'
 import type { Block } from '../content/types'
 import '../content/blog.css'
 
@@ -95,6 +97,8 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
     type: guide ? 'article' : 'website',
     published: guide ? guide.published || '2026-10-03' : undefined,
     updated: guide ? guide.updated || '2026-10-03' : undefined,
+    image: guide ? guideCoverUrl(guideToolArt(guide.tool)) : undefined,
+    imageAlt: guide ? guideCoverAlt(pack?.locale, guideToolArt(guide.tool)) : undefined,
     keywords: guide ? [guide.keyword, ...guide.secondaryKeywords] : [],
     lang: pack?.locale || 'en',
     dir: pack?.dir || 'ltr',
@@ -120,6 +124,7 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
                 '@type': 'Article',
                 headline: guide.title,
                 description: guide.metaDescription,
+                image: `${SITE_URL}${guideCoverUrl(guideToolArt(guide.tool))}`,
                 abstract: guide.answer,
                 mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${path}` },
                 datePublished: guide.published || '2026-10-03',
@@ -162,7 +167,8 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
           </div>
           <div className="grid grid-2" style={{ marginTop: '2rem' }}>
             {pack.guides.map((item) => (
-              <Link key={item.slug} to={guidePath(pack, item.slug)} className="card card-hover" style={{ textDecoration: 'none' }}>
+              <Link key={item.slug} to={guidePath(pack, item.slug)} className="card card-hover localized-guide-card" style={{ textDecoration: 'none' }}>
+                <GuideCover locale={pack.locale} compact art={guideToolArt(item.tool)} />
                 <span className="badge badge-acid">{item.keyword}</span>
                 <h2 style={{ fontSize: '1.35rem', marginTop: '0.8rem' }}>{item.title}</h2>
                 <p>{item.answer}</p>
@@ -186,10 +192,12 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
         <span className="eyebrow">{pack.readLabel} · {pack.name}</span>
         <h1 className="localized-guide-title" lang={pack.locale}>{guide.title}</h1>
         <p className="post-meta muted">{pack.updated}</p>
+        <GuideCover locale={pack.locale} art={guideToolArt(guide.tool)} />
         <div className="post-answer">
           <span className="label">{pack.readLabel}</span>
           <p>{guide.answer}</p>
         </div>
+        <ToolShot slug={guide.tool} caption={guide.ctaLabel} />
         <div className="prose">
           {guide.body ? guide.body.map((block, index) => <LocalizedBlock key={index} block={block} />) : guide.sections?.map((section) => (
             <section key={section.heading}>

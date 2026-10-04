@@ -57,6 +57,8 @@ type Seo = {
   lang?: string
   dir?: 'ltr' | 'rtl'
   alternates?: { lang: string; url: string }[]
+  image?: string
+  imageAlt?: string
 }
 
 /** Every meta tag this hook owns. Anything not supplied for a route is removed, so state
@@ -70,9 +72,12 @@ const MANAGED = [
   'meta[property="og:url"]',
   'meta[property="og:type"]',
   'meta[property="og:site_name"]',
+  'meta[property="og:image"]',
+  'meta[property="og:image:alt"]',
   'meta[name="twitter:card"]',
   'meta[name="twitter:title"]',
   'meta[name="twitter:description"]',
+  'meta[name="twitter:image"]',
   'meta[property="article:published_time"]',
   'meta[property="article:modified_time"]',
   'link[rel="alternate"][hreflang]',
@@ -109,7 +114,7 @@ function upsertLink(rel: string, href: string) {
  * off their serialised form rather than object identity, otherwise every unrelated
  * re-render would tear down and rebuild the structured data.
  */
-export function useSeo({ title, description, path, type = 'website', published, updated, keywords, schema, noindex, lang = 'en', dir = 'ltr', alternates = [] }: Seo) {
+export function useSeo({ title, description, path, type = 'website', published, updated, keywords, schema, noindex, lang = 'en', dir = 'ltr', alternates = [], image, imageAlt }: Seo) {
   const schemaKey = schema ? JSON.stringify(schema) : ''
   const keywordsKey = keywords?.join(',') || ''
   const alternatesKey = JSON.stringify(alternates)
@@ -141,6 +146,12 @@ export function useSeo({ title, description, path, type = 'website', published, 
     setMeta('meta[property="og:url"]', { property: 'og:url', content: url })
     setMeta('meta[property="og:type"]', { property: 'og:type', content: type })
     setMeta('meta[property="og:site_name"]', { property: 'og:site_name', content: SITE_NAME })
+    if (image) {
+      const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`
+      setMeta('meta[property="og:image"]', { property: 'og:image', content: imageUrl })
+      setMeta('meta[property="og:image:alt"]', { property: 'og:image:alt', content: imageAlt || 'Blank pages, a blue document folder and a pen' })
+      setMeta('meta[name="twitter:image"]', { name: 'twitter:image', content: imageUrl })
+    }
     setMeta('meta[name="twitter:card"]', { name: 'twitter:card', content: 'summary_large_image' })
     setMeta('meta[name="twitter:title"]', { name: 'twitter:title', content: title })
     setMeta('meta[name="twitter:description"]', { name: 'twitter:description', content: description })
@@ -156,7 +167,7 @@ export function useSeo({ title, description, path, type = 'website', published, 
         document.head.appendChild(s)
       }
     }
-  }, [title, description, path, type, published, updated, keywordsKey, schemaKey, noindex, lang, dir, alternatesKey])
+  }, [title, description, path, type, published, updated, keywordsKey, schemaKey, noindex, lang, dir, alternatesKey, image, imageAlt])
 }
 
 export const breadcrumbSchema = (trail: { name: string; path: string }[]) => ({
@@ -184,11 +195,13 @@ export const articleSchema = (a: {
   readMinutes: number
   author?: AuthorInfo
   inLanguage?: string
+  image?: string
 }) => ({
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: a.title,
   description: a.description,
+  ...(a.image ? { image: a.image } : {}),
   abstract: a.answer,
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${a.path}` },
   datePublished: a.published,

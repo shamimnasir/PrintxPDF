@@ -4,6 +4,7 @@ import { useCluster } from '../content/usePosts'
 import { useTool } from '../features/pdf/useTools'
 import { ToolCard } from '../features/pdf/ToolCard'
 import { ToolShotGallery } from '../components/ui/ToolShot'
+import { GuideCover, guideClusterArt } from '../components/ui/GuideCover'
 import { authorPath, breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useSiteConfig } from '../admin/useSiteConfig'
 import { Avatar } from '../components/ui/Avatar'
@@ -82,6 +83,7 @@ export default function ClusterPage() {
       <div className="grid grid-2">
         {cluster.posts.map((p) => (
           <Link key={p.slug} to={`/blog/${cluster.slug}/${p.slug}`} className="card card-hover" style={{ textDecoration: 'none' }}>
+            <GuideCover compact art={guideClusterArt(cluster.slug)} />
             <div className="row" style={{ gap: '0.4rem', marginBottom: '0.5rem' }}>
               <span className="badge badge-acid">{p.intent === 'howto' ? 'How-to' : p.intent === 'comparison' ? 'Comparison' : p.intent === 'troubleshooting' ? 'Fix it' : p.intent === 'listicle' ? 'List' : 'Explainer'}</span>
               <span className="mono muted" style={{ fontSize: '0.7rem' }}>

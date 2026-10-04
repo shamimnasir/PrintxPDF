@@ -27,6 +27,11 @@ describe('author attribution', () => {
     expect(a.publisher.founder?.name).toBe('Nasir Uddin Shamim')
   })
 
+  it('includes a featured image in Article metadata when supplied', () => {
+    const a = articleSchema({ title: 'T', description: 'D', path: '/blog/x/y', published: '2026-01-01', updated: '2026-02-01', keywords: [], answer: 'A', readMinutes: 1, image: `${SITE_URL}/images/guides/cover.jpg` })
+    expect(a.image).toBe(`${SITE_URL}/images/guides/cover.jpg`)
+  })
+
   it('falls back to the organisation when no author is supplied', () => {
     const a = articleSchema({ title: 'T', description: 'D', path: '/p', published: '2026-01-01', updated: '2026-02-01', keywords: [], answer: 'A', readMinutes: 1 }) as { author: { '@type': string } }
     expect(a.author['@type']).toBe('Organization')
