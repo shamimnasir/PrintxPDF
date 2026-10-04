@@ -12,7 +12,7 @@ export function ToolCard({ tool, showStatus = false }: { tool: ToolMeta; showSta
       <div className="tool-icon" aria-hidden>
         {tool.icon}
       </div>
-      <div>
+      <div className="tool-card-copy">
         <h3>{tool.name}</h3>
         <p className="muted" style={showStatus ? { marginBottom: '0.5rem' } : undefined}>
           {tool.short}
