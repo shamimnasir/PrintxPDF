@@ -9,7 +9,7 @@ import { Avatar } from '../components/ui/Avatar'
 import { AuthorBox } from '../components/ui/AuthorBox'
 import '../content/blog.css'
 import { ToolShotGallery } from '../components/ui/ToolShot'
-import { GuideCover, guideClusterArt, guideCoverUrl } from '../components/ui/GuideCover'
+import { GuideCover, guideCoverAlt, guideCoverUrl } from '../components/ui/GuideCover'
 
 const slugify = (s: string) =>
   s
@@ -189,7 +189,8 @@ export default function PostPage() {
     type: 'article',
     published: post?.published,
     updated: post?.updated,
-    image: guideCoverUrl(guideClusterArt(cluster?.slug)),
+    image: post ? guideCoverUrl(post.slug) : undefined,
+    imageAlt: post ? guideCoverAlt('en', post.slug, post.title) : undefined,
     keywords: post ? [post.primaryKeyword, ...post.secondaryKeywords] : [],
     noindex: !valid,
     schema:
@@ -209,12 +210,12 @@ export default function PostPage() {
               updated: post.updated,
               keywords: [post.primaryKeyword, ...post.secondaryKeywords, ...post.entities],
               answer: post.answer,
-              image: `${SITE_URL}${guideCoverUrl(guideClusterArt(cluster.slug))}`,
+              image: `${SITE_URL}${guideCoverUrl(post.slug)}`,
               readMinutes: post.readMinutes,
               author: cfg.author,
             }),
             ...(post.faqs.length ? [faqSchema(post.faqs)] : []),
-            ...(allSteps.length ? [howToSchema({ title: post.title, description: post.metaDescription, steps: allSteps, path, anchors: stepAnchors, image: `${SITE_URL}${guideCoverUrl(guideClusterArt(cluster.slug))}` })] : []),
+            ...(allSteps.length ? [howToSchema({ title: post.title, description: post.metaDescription, steps: allSteps, path, anchors: stepAnchors, image: `${SITE_URL}${guideCoverUrl(post.slug)}` })] : []),
           ]
         : [],
   })
@@ -247,7 +248,7 @@ export default function PostPage() {
               <span>{post.readMinutes} min read</span>
               <span>{cluster.name}</span>
             </div>
-            <GuideCover art={guideClusterArt(cluster.slug)} />
+            <GuideCover topic={post.slug} title={post.title} />
           </header>
 
           <div className="post-answer">

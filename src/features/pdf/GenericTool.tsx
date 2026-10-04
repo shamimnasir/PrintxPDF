@@ -379,8 +379,14 @@ export function GenericTool({ tool, initialOptions }: { tool: ToolMeta; initialO
         <ResultList outputs={results} zipName={`${tool.slug}-output.zip`} />
       </div>
 
-      <div className="card stack">
-        <h4 style={{ margin: 0 }}>Options</h4>
+      <div className="card stack conversion-settings">
+        <div className="conversion-panel-head">
+          <span className="conversion-step" aria-hidden="true">2</span>
+          <div>
+            <h4>Set your options</h4>
+            <p>Fine-tune how your file is processed.</p>
+          </div>
+        </div>
         {fields.length === 0 && <p className="muted" style={{ margin: 0 }}>Nothing to set up. Add a file and press the button.</p>}
         {fields.map((fd) => (
           <div className="field" key={fd.key} style={{ margin: 0 }}>

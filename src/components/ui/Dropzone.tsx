@@ -24,6 +24,11 @@ export function Dropzone({
     const files = Array.from(list)
     onFiles(multiple ? files : files.slice(0, 1))
   }
+  const acceptLabel = accept
+    ?.split(',')
+    .map((type) => type.trim().replace(/^\./, '').toUpperCase())
+    .filter(Boolean)
+    .join(' · ')
   const onDrop = (e: DragEvent) => {
     e.preventDefault()
     setOver(false)
@@ -34,6 +39,7 @@ export function Dropzone({
     <div
       className={`dropzone ${over ? 'over' : ''}`}
       onClick={() => ref.current?.click()}
+      aria-label={`${label}. ${hint}${acceptLabel ? `. Accepted formats: ${acceptLabel}` : ''}`}
       onDragOver={(e) => {
         e.preventDefault()
         setOver(true)
@@ -42,15 +48,21 @@ export function Dropzone({
       onDrop={onDrop}
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => e.key === 'Enter' && ref.current?.click()}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          ref.current?.click()
+        }
+      }}
     >
-      <div className="dz-icon" aria-hidden="true">⬆</div>
+      <div className="dz-kicker"><span className="dz-step">1</span> Add your file</div>
+      <div className="dz-icon" aria-hidden="true">↑</div>
       <div className="big">{label}</div>
-      <div className="muted" style={{ fontWeight: 600 }}>
+      <div className="muted dz-hint">
         {hint}
-        {accept ? ` · ${accept.replace(/\./g, '').toUpperCase().replace(/,/g, ' · ')}` : ''}
+        {acceptLabel ? <span className="dz-formats">{acceptLabel}</span> : null}
       </div>
-      <span className="dz-btn">Choose file{multiple ? 's' : ''}</span>
+      <span className="dz-btn">Choose file{multiple ? 's' : ''}<span className="dz-btn-arrow" aria-hidden="true">↗</span></span>
       <input
         ref={ref}
         type="file"

@@ -4,7 +4,7 @@ import { authorPath, authorPerson, breadcrumbSchema, SITE_URL, useSeo } from '..
 import { useSiteConfig } from '../admin/useSiteConfig'
 import '../content/blog.css'
 import { LANGUAGE_PACKS, guidePath } from '../content/localizedGuides'
-import { GuideCover, guideClusterArt } from '../components/ui/GuideCover'
+import { GuideCover } from '../components/ui/GuideCover'
 
 export default function Blog() {
   const CLUSTERS = useClusters()
@@ -61,7 +61,7 @@ export default function Blog() {
       <div className="grid grid-3">
         {CLUSTERS.map((c) => (
           <Link key={c.slug} to={`/blog/${c.slug}`} className="card card-hover cluster-card">
-            <GuideCover compact art={guideClusterArt(c.slug)} />
+            <GuideCover compact topic={c.posts[0].slug} title={c.posts[0].title} />
             <div className="row" style={{ gap: '0.6rem', marginBottom: '0.5rem' }}>
               <span className="tool-icon" style={{ width: 40, height: 40, fontSize: '1.1rem', margin: 0 }} aria-hidden>
                 {c.icon}

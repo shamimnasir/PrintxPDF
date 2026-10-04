@@ -132,8 +132,14 @@ export default function ImageConvertTool({ initialFormat = 'jpg' }: { initialFor
         <ResultList outputs={outputs} title="Converted" zipName={`printxpdf-images-${format}.zip`} />
       </div>
 
-      <div className="card stack">
-        <h4 style={{ margin: 0 }}>Options</h4>
+      <div className="card stack conversion-settings">
+        <div className="conversion-panel-head">
+          <span className="conversion-step" aria-hidden="true">2</span>
+          <div>
+            <h4>Choose your output</h4>
+            <p>Pick the format and image quality you need.</p>
+          </div>
+        </div>
         <div className="fx-field">
           <label className="label">Convert to</label>
           <div className="fx-seg" role="group" aria-label="Convert to">

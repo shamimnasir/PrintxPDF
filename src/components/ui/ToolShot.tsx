@@ -19,7 +19,11 @@ export function ToolShot({ slug, caption, compact = false }: { slug: string; cap
   return (
     <figure className="tool-shot">
       <img src={compactSrc || shotUrl(slug)!} alt={`${tool.name} in PrintxPDF with a file loaded, options on the right and the run button below`} width={width} height={height} loading="lazy" decoding="async" />
-      <figcaption className="muted">{caption || `${tool.name}, running in the browser with a file loaded.`}</figcaption>
+      <figcaption className="muted">
+        <Link to={`/tools/${tool.slug}`} aria-label={caption ? `${caption}: ${tool.name} tool page` : `Open ${tool.name} tool page`}>
+          {caption || `${tool.name}, running in the browser with a file loaded.`}
+        </Link>
+      </figcaption>
     </figure>
   )
 }
