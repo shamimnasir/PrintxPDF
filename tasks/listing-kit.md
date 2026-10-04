@@ -49,7 +49,7 @@ watermark.
 
 **Long:**
 PrintxPDF does two things. Paste a link and it keeps only the article, dropping the ads, navigation
-and comment threads, so a recipe prints on one page instead of six. Drop in a PDF and you get 46
+and comment threads, so a recipe prints on one page instead of six. Drop in a PDF and you get 44
 tools: merge, split, organise, compress, sign, add page numbers, OCR a scan into searchable text,
 black out private details, convert to and from Word, Excel, PowerPoint, images and ebooks.
 

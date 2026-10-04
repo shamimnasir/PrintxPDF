@@ -1,6 +1,6 @@
 # PrintxPDF
 
-Print only what matters, then fix any PDF. A print-and-PDF toolkit with an original brand and a bold cobalt-on-white design. Every browser tool runs client-side; a few heavy jobs, Office layout, ebooks, PDF encryption, PDF/A, run on a small Cloudflare container that deletes each file the moment it finishes. Founded and written by Nasir Uddin Shamim.
+Print only what matters, then fix any PDF. A print-and-PDF toolkit with an original brand and a bold cobalt-on-white design. Most tools run in the browser; eight conversion and security tools use a Cloudflare container and delete each file after processing. Founded and written by Nasir Uddin Shamim.
 
 **Live:** https://printxpdf.com
 
@@ -20,7 +20,21 @@ Paste a URL. The page is fetched through a reader proxy, run through Mozilla Rea
 Fallbacks that always work: paste HTML/text, upload an `.html` file, or three bundled sample articles.
 
 ### 2. PDF tools, `/tools`
-43 tools. Every one states up front whether it runs in your browser, is best-effort, or runs on our server.
+44 tools. Every one states up front whether it runs in your browser, is best-effort, or runs on our server.
+
+#### Direct links to every tool
+
+These are the canonical pages for the individual tools, grouped by the job they do.
+
+**Organize PDFs:** [Merge PDF](https://printxpdf.com/tools/merge-pdf) · [Split PDF](https://printxpdf.com/tools/split-pdf) · [Organize Pages](https://printxpdf.com/tools/organize-pdf) · [Rotate PDF](https://printxpdf.com/tools/rotate-pdf) · [Delete Pages](https://printxpdf.com/tools/delete-pages) · [Extract Pages](https://printxpdf.com/tools/extract-pages)
+
+**Optimize and read:** [Compress PDF](https://printxpdf.com/tools/compress-pdf) · [Repair PDF](https://printxpdf.com/tools/repair-pdf) · [OCR PDF](https://printxpdf.com/tools/ocr-pdf) · [PDF Reader](https://printxpdf.com/tools/pdf-reader)
+
+**Convert documents:** [PDF to JPG](https://printxpdf.com/tools/pdf-to-jpg) · [JPG to PDF](https://printxpdf.com/tools/jpg-to-pdf) · [Word to PDF](https://printxpdf.com/tools/word-to-pdf) · [Excel to PDF](https://printxpdf.com/tools/excel-to-pdf) · [HTML to PDF](https://printxpdf.com/tools/html-to-pdf) · [PDF to Text](https://printxpdf.com/tools/pdf-to-text) · [PDF to Word](https://printxpdf.com/tools/pdf-to-word) · [PDF to Excel](https://printxpdf.com/tools/pdf-to-excel) · [PDF to PowerPoint](https://printxpdf.com/tools/pdf-to-ppt) · [PowerPoint to PDF](https://printxpdf.com/tools/ppt-to-pdf) · [EPUB to PDF](https://printxpdf.com/tools/epub-to-pdf) · [MOBI to PDF](https://printxpdf.com/tools/mobi-to-pdf) · [Scan to PDF](https://printxpdf.com/tools/scan-to-pdf) · [PDF to Markdown](https://printxpdf.com/tools/pdf-to-markdown) · [PDF to PDF/A](https://printxpdf.com/tools/pdf-to-pdfa) · [Ebook Converter](https://printxpdf.com/tools/ebook-converter)
+
+**Edit, sign and protect:** [Sign PDF](https://printxpdf.com/tools/sign-pdf) · [Add Watermark](https://printxpdf.com/tools/add-watermark) · [Page Numbers](https://printxpdf.com/tools/page-numbers) · [Edit Metadata](https://printxpdf.com/tools/edit-metadata) · [Flatten PDF](https://printxpdf.com/tools/flatten-pdf) · [Remove Metadata](https://printxpdf.com/tools/remove-metadata) · [Edit PDF](https://printxpdf.com/tools/edit-pdf) · [Crop PDF](https://printxpdf.com/tools/crop-pdf) · [Fill PDF Forms](https://printxpdf.com/tools/pdf-forms) · [Redact PDF](https://printxpdf.com/tools/redact-pdf) · [Compare PDFs](https://printxpdf.com/tools/compare-pdf) · [Protect PDF](https://printxpdf.com/tools/protect-pdf) · [Unlock PDF](https://printxpdf.com/tools/unlock-pdf)
+
+**Images, QR codes and files:** [QR Code Generator](https://printxpdf.com/tools/qr-code) · [Image Converter](https://printxpdf.com/tools/image-converter) · [Compress Image](https://printxpdf.com/tools/compress-image) · [Create ZIP](https://printxpdf.com/tools/create-zip) · [Extract ZIP](https://printxpdf.com/tools/extract-zip)
 
 | Engine | Tools |
 |---|---|
@@ -31,13 +45,13 @@ Fallbacks that always work: paste HTML/text, upload an `.html` file, or three bu
 | `jsPDF` + `html2canvas` | HTML→PDF, images→PDF, QR→PDF |
 | `qrcode` | QR generator (URL, WiFi, vCard, email, SMS, phone) |
 
-PowerPoint ↔ PDF and EPUB/MOBI → PDF need a real layout engine, so they run on `api.printxpdf.com`, LibreOffice + Calibre in a Cloudflare container, source in `worker/`. Free for 5 files a month per IP; the Pro ($5/mo, 300) and API ($29/mo, 5,000) plans lift that.
+PowerPoint ↔ PDF and EPUB/MOBI → PDF need a real layout engine, so they run on `api.printxpdf.com`, LibreOffice + Calibre in a Cloudflare container, source in `worker/`.
 
 ### 3. Content, `/blog`
 18 topic clusters, 72 guides, built as typed data in `src/content/posts/`. Each post carries the metadata Google wants and the shape LLMs want: a 40-60 word extractable answer, explicit entities, FAQs and comparison tables.
 
 ### 4. Admin panel, `/admin`
-Default passcode `printxpdf` (change it under **Publish & data**).
+The admin panel is at `/admin`. Publishing is protected by the Worker-side session and repository token; do not put credentials in this README.
 
 | Section | Controls |
 |---|---|
@@ -46,7 +60,7 @@ Default passcode `printxpdf` (change it under **Publish & data**).
 | Appearance | accent/ink/alert colours, border width, radius, default colour mode |
 | Pages & home | every hero string, section toggles, marquee, per-page meta overrides |
 | Blog content | edit any post's title, meta tags and short answer; publish/unpublish |
-| Tools | rename, re-describe, hide or feature any of the 43 tools |
+| Tools | rename, re-describe, hide or feature any of the 44 tools |
 | SEO | title template, keywords, robots.txt, llms.txt, verification tokens, sitemap preview |
 | Analytics | GA4 / Plausible / Umami IDs, Do Not Track, local view counts |
 | Custom code | head HTML, body-end HTML, CSS and JS injection |

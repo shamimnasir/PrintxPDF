@@ -249,7 +249,10 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
       attributed, consistent with Google's not-yet-refreshed sitemap report.
 - [x] Re-notified IndexNow after deployment: 265 URLs, key verified live, endpoint returned 200.
       IndexNow does not notify Google.
-- [ ] Earn relevant external references. Search Console previously reported zero external links.
+- [x] Added a categorized directory of all 44 canonical tool pages to the public project README,
+      creating a useful first-party reference from the GitHub repository to every tool URL. This
+      is not an independent editorial backlink and should not be counted as earned authority.
+- [ ] Earn independent relevant external references. Search Console previously reported zero external links.
       Do not mass-submit low-quality directories: Google's spam policy treats manipulative,
       low-quality directory links as link spam. A directory checked during this audit required
       account registration; another displayed a human challenge. Neither was submitted or bypassed.
