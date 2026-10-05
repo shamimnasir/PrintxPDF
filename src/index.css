@@ -766,12 +766,13 @@ p {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  border: 1.5px dashed color-mix(in srgb, var(--acid) 58%, var(--line));
+  border: 2px dashed color-mix(in srgb, var(--acid) 68%, var(--line));
   border-radius: calc(var(--radius) + 10px);
   background:
-    radial-gradient(ellipse at 50% -12%, color-mix(in srgb, var(--acid) 16%, transparent), transparent 64%),
-    linear-gradient(145deg, color-mix(in srgb, var(--card) 94%, var(--bg-2)), var(--card));
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 78%), 0 14px 36px -26px color-mix(in srgb, var(--ink) 34%, transparent);
+    radial-gradient(ellipse at 8% 0%, color-mix(in srgb, var(--acid) 15%, transparent), transparent 48%),
+    radial-gradient(ellipse at 100% 100%, color-mix(in srgb, #8b5cf6 10%, transparent), transparent 48%),
+    linear-gradient(140deg, color-mix(in srgb, var(--acid) 5%, var(--card)), var(--card) 52%, color-mix(in srgb, #8b5cf6 4%, var(--card)));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 82%), 0 0 0 1px color-mix(in srgb, var(--acid) 5%, transparent), 0 18px 42px -28px color-mix(in srgb, var(--acid) 58%, transparent);
   padding: clamp(1.75rem, 4vw, 3rem) 1.5rem;
   text-align: center;
   cursor: pointer;
@@ -791,9 +792,10 @@ p {
   transform: translateY(-2px);
   border-color: var(--acid);
   background:
-    radial-gradient(ellipse at 50% -12%, color-mix(in srgb, var(--acid) 20%, transparent), transparent 66%),
-    linear-gradient(145deg, color-mix(in srgb, var(--card) 94%, var(--bg-2)), var(--card));
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--acid) 10%, transparent), 0 20px 42px -24px color-mix(in srgb, var(--acid) 48%, transparent);
+    radial-gradient(ellipse at 8% 0%, color-mix(in srgb, var(--acid) 21%, transparent), transparent 50%),
+    radial-gradient(ellipse at 100% 100%, color-mix(in srgb, #8b5cf6 15%, transparent), transparent 48%),
+    linear-gradient(140deg, color-mix(in srgb, var(--acid) 7%, var(--card)), var(--card) 52%, color-mix(in srgb, #8b5cf6 6%, var(--card)));
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--acid) 12%, transparent), 0 22px 46px -25px color-mix(in srgb, var(--acid) 56%, transparent);
 }
 .dropzone:focus-visible {
   outline: 2px solid var(--acid);
@@ -839,6 +841,12 @@ p {
   justify-content: center;
   gap: 0.45rem;
   margin-bottom: 0.8rem;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.28rem 0.72rem 0.28rem 0.35rem;
+  border: 1px solid color-mix(in srgb, var(--acid) 19%, var(--line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--acid) 8%, var(--card));
   color: var(--fg-muted);
   font-size: 0.72rem;
   font-weight: 800;
@@ -1265,7 +1273,7 @@ code.inline {
 }
 [data-design='paper'] .dropzone:hover,
 [data-design='paper'] .dropzone.over {
-  background: var(--bg-2);
+  background: color-mix(in srgb, var(--acid) 9%, var(--card));
   color: var(--fg);
   border-color: var(--acid);
 }
@@ -1375,7 +1383,7 @@ code.inline {
 }
 [data-design='studio'] .dropzone:hover,
 [data-design='studio'] .dropzone.over {
-  background: var(--mark-bg);
+  background: color-mix(in srgb, var(--acid) 11%, var(--card));
   color: var(--fg);
   border-color: var(--acid);
 }
