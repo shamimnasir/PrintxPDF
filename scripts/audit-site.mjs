@@ -41,13 +41,29 @@ const isKnown = (r) => known.has(r) || SHELL_ROUTES.some((re) => re.test(r))
 
 const titles = new Map()
 const descriptions = new Map()
+const hreflangByRoute = new Map()
+
+const expectedLocale = (route) => {
+  const match = /^\/(es|pt-br|hi|ar|bn|vi|zh-cn)\//i.exec(route)
+  if (!match) return null
+  return ({ es: 'es', 'pt-br': 'pt-BR', hi: 'hi', ar: 'ar', bn: 'bn', vi: 'vi', 'zh-cn': 'zh-CN' })[match[1].toLowerCase()]
+}
 
 for (const [route, { html }] of pages) {
   const title = /<title>([\s\S]*?)<\/title>/.exec(html)?.[1]?.trim()
   const desc = attr(tagsOf(html, 'meta').find((t) => /name="description"/.test(t)) || '', 'content')
   const canonical = attr(tagsOf(html, 'link').find((t) => /rel="canonical"/.test(t)) || '', 'href')
+  const htmlTag = /<html\b[^>]*>/i.exec(html)?.[0] || ''
+  const lang = attr(htmlTag, 'lang')
   const robots = attr(tagsOf(html, 'meta').find((t) => /name="robots"/.test(t)) || '', 'content')
   const noindex = /noindex/.test(robots || '')
+  const alternates = tagsOf(html, 'link')
+    .filter((tag) => /rel="alternate"/.test(tag) && /hreflang=/.test(tag))
+    .map((tag) => ({ lang: attr(tag, 'hreflang'), url: attr(tag, 'href') }))
+    .filter((item) => item.lang && item.url)
+  hreflangByRoute.set(route, { lang, canonical, alternates })
+
+  if (expectedLocale(route) && lang !== expectedLocale(route)) add(route, 'html-lang-mismatch', `${lang || '(missing)'} should be ${expectedLocale(route)}`)
 
   // ---------- head ----------
   if (!title) add(route, 'no-title', '')
@@ -95,6 +111,39 @@ for (const [route, { html }] of pages) {
     const target = href.split('#')[0].split('?')[0].replace(/\/$/, '') || '/'
     if (/\.(pdf|zip|xml|txt|jpg|png|svg|webmanifest)$/.test(target)) continue
     if (!isKnown(target)) add(route, 'dead-internal-link', href)
+  }
+}
+
+// Hreflang is a reciprocal URL set: every URL needs its self-reference and each target
+// must point back to the source in that page's own language.
+for (const [route, page] of hreflangByRoute) {
+  if (!page.alternates.length) continue
+  const languages = page.alternates.map((item) => item.lang.toLowerCase())
+  if (new Set(languages).size !== languages.length) add(route, 'duplicate-hreflang-language', languages.join(', '))
+  const self = page.alternates.some((item) => item.url === page.canonical && item.lang.toLowerCase() === (page.lang || '').toLowerCase())
+  if (!self) add(route, 'hreflang-missing-self', `${page.lang || '(missing)'} ${page.canonical || ''}`)
+  for (const alternate of page.alternates) {
+    let targetRoute
+    try {
+      const targetUrl = new URL(alternate.url)
+      if (targetUrl.origin !== SITE) {
+        add(route, 'hreflang-offsite-target', alternate.url)
+        continue
+      }
+      targetRoute = targetUrl.pathname.replace(/\/$/, '') || '/'
+    } catch {
+      add(route, 'hreflang-invalid-url', alternate.url)
+      continue
+    }
+    const target = hreflangByRoute.get(targetRoute)
+    if (!target) {
+      add(route, 'hreflang-target-missing', alternate.url)
+      continue
+    }
+    if (target.canonical !== alternate.url) add(route, 'hreflang-canonical-mismatch', `${alternate.url} canonical=${target.canonical || '(missing)'}`)
+    if (alternate.lang.toLowerCase() !== 'x-default' && !target.alternates.some((back) => back.lang.toLowerCase() === (page.lang || '').toLowerCase() && back.url === page.canonical)) {
+      add(route, 'hreflang-not-reciprocal', `${alternate.lang} ${alternate.url}`)
+    }
   }
 }
 

@@ -38,6 +38,7 @@ was removed in [`7525fb6`](https://github.com/shamimnasir/PrintxPDF/commit/7525f
 | Site | https://printxpdf.com | Vercel, auto-deploys from `main` |
 | `www` and `*.vercel.app` | | 308 to the apex, including the bare root |
 | API | https://api.printxpdf.com | Cloudflare Worker `printxpdf-api` |
+| WordPress plugin | https://wordpress.org/plugins/printxpdf/ | WordPress.org directory listing, version 1.0.0 |
 | Health | https://api.printxpdf.com/health | `{"ok":true,"version":"1.0.0"}` |
 | Admin | https://printxpdf.com/admin | `noindex`, absent from the sitemap |
 | Sitemap | https://printxpdf.com/sitemap.xml | 174 URLs |
@@ -160,11 +161,10 @@ features 21/21. The status below and in `tasks/todo.md` records changes since th
 
 ## Open items
 
-**WordPress.org plugin approved, first release still pending.** The review email approved
-`printxpdf` for `affglad` on September 25, 2026. Approval did not publish it: an initial
-commit and tag to `https://plugins.svn.wordpress.org/printxpdf/` are still required. See
-[`wordpress-plugin/SUBMISSION.md`](../wordpress-plugin/SUBMISSION.md) for the release steps.
-The current workspace does not have an SVN client installed.
+**WordPress.org plugin is live.** PrintxPDF was approved for `affglad` on September 25, 2026,
+then released on October 5, 2026. Initial trunk commit: r3728871. Version 1.0.0 tag: r3728877.
+The public listing is https://wordpress.org/plugins/printxpdf/. Release notes and remaining QA
+checks are in [`wordpress-plugin/SUBMISSION.md`](../wordpress-plugin/SUBMISSION.md).
 
 **AdSense consent setup.** The site privacy policy and footer now identify analytics,
 contact and policy details. The publisher tag is present in `index.html`, which feeds

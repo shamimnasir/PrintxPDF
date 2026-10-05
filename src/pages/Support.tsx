@@ -49,7 +49,7 @@ const FAQS = [
   },
   {
     q: 'Does the extension or the WordPress plugin send you anything?',
-    a: 'No. The Chrome extension reads the address of the tab only when you click it, stores one preference on your machine, and makes no network requests of its own. The WordPress plugin never contacts our server. Neither has analytics or trackers.',
+    a: 'The Chrome extension reads the tab address only when you click it and makes no network requests of its own. The WordPress plugin makes no background requests or tracking calls. If a reader clicks its Save as PDF button, their browser opens PrintxPDF with the public post URL. The plugin does not send the post content, credentials or visitor records.',
   },
 ]
 

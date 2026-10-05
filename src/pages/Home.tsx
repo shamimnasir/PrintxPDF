@@ -220,7 +220,7 @@ export default function Home() {
             {[
               ['PDF tools', 'Everything a document needs: create, edit, fill in, organize, protect, black out private details, compare, convert. Browser tools never upload your file.', '/tools', 'Open the tools'],
               ['Chrome extension', 'One click on any page opens it in the page cleaner. Right-click a link or some highlighted text to send just that. It reads nothing until you click.', '/extensions/chrome', 'Get the extension'],
-              ['WordPress plugin', 'Print, PDF and Email buttons on every post from one small free add-on. No account, no key, and it never contacts anyone.', '/wordpress', 'See the plugin'],
+              ['WordPress plugin', 'Install the free plugin from WordPress.org. Add Print, Save as PDF and Email buttons, with no plugin account or API key.', '/wordpress', 'Get the plugin'],
               ['Signatures', 'Draw or type a signature, place it on any page, add the date, download. Save it for next time.', '/tools/sign-pdf', 'Sign a PDF'],
             ].map(([h, p, to, cta]) => (
               <div key={h} className="card">

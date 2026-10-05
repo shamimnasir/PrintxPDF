@@ -4,7 +4,7 @@ import { breadcrumbSchema, useSeo } from '../lib/seo'
 export default function WordPress() {
   useSeo({
     title: 'WordPress Print & PDF Button Plugin',
-    description: 'Free WordPress plugin that adds Print, PDF and Email buttons to every post and page. Works with any theme, needs no account or key, and never contacts anyone.',
+    description: 'Install the free PrintxPDF plugin from WordPress.org. Add Print, Save as PDF and Email buttons to posts and pages, with no plugin account or API key.',
     path: '/wordpress',
     keywords: ['wordpress print button', 'wordpress pdf plugin', 'print friendly wordpress'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'WordPress', path: '/wordpress' }])],
@@ -15,7 +15,7 @@ export default function WordPress() {
       <section className="section">
         <div className="container grid grid-2" style={{ alignItems: 'center' }}>
           <div>
-            <span className="eyebrow">WordPress plugin · free and open source, 15 KB</span>
+            <span className="eyebrow">Free and open source · listed in the WordPress.org directory</span>
             <h1>
               A print button your readers will <span className="acid-mark">actually use.</span>
             </h1>
@@ -24,16 +24,19 @@ export default function WordPress() {
               you get fewer "can you send me a PDF" emails.
             </p>
             <div className="row">
-              <a href="/downloads/printxpdf-wordpress-plugin.zip" className="btn btn-acid btn-lg" download>
-                Download the plugin
+              <a href="https://wordpress.org/plugins/printxpdf/" className="btn btn-acid btn-lg" target="_blank" rel="noopener noreferrer">
+                Install from WordPress.org
+              </a>
+              <a href="/downloads/printxpdf-wordpress-plugin.zip" className="btn btn-lg" download>
+                Download ZIP instead
               </a>
               <Link to="/website-button" className="btn btn-lg">
                 Not on WordPress?
               </Link>
             </div>
             <p className="muted" style={{ marginTop: '0.75rem', fontSize: '0.9rem' }}>
-              One small file, no account and no key. In WordPress, go to Plugins, then Add New, then Upload Plugin. It is not
-              in the WordPress.org directory yet, so this download is the way to get it.
+              Find PrintxPDF in the official plugin directory, then choose Install Now and Activate. The ZIP is available
+              as an alternative for manual installation.
             </p>
           </div>
           <div className="card card-flat" style={{ background: 'var(--card)' }}>
@@ -56,12 +59,12 @@ export default function WordPress() {
           <h2>What the plugin does</h2>
           <div className="grid grid-3">
             {[
-              ['Upload and activate', 'Go to Plugins, then Add New, then Upload Plugin. Pick the zipped file and activate it. Under Settings, then PrintxPDF, choose where the buttons go, which ones show and which kinds of content get them.'],
+              ['Install and activate', 'In WordPress, search Plugins for PrintxPDF, then choose Install Now and Activate. To install from the ZIP instead, use Plugins, Add New, then Upload Plugin. Under Settings, then PrintxPDF, choose placement, buttons and post types.'],
               ['Respects your theme', 'Button placement: top, bottom, or both. Floating or inline. Custom text, icon and colours.'],
               ['Works everywhere', 'Posts, pages, WooCommerce products or any other kind of content you tick in the settings. Want a button in one exact spot? Paste the short tag we give you (a shortcode) into the post.'],
-              ['Clean output', 'Uses the same page cleaner as this site: ads, widgets, share bars and comments removed.'],
-              ['Reader controls', 'Readers can delete paragraphs, resize text and drop images before they print.'],
-              ['Nothing is sent anywhere', 'No key, no account, no tracking. The plugin never contacts our server or anyone else. Printing happens in the reader\'s browser.'],
+              ['Clean output', 'The optional Save as PDF link opens PrintxPDF, where readers can create a cleaner version of the public page.'],
+              ['Reader controls', 'On PrintxPDF, readers can remove page elements and adjust the clean view before printing or saving.'],
+              ['No background calls', 'The plugin makes no automatic network requests or tracking calls. If a reader clicks Save as PDF, their browser opens PrintxPDF with that page\'s public URL.'],
             ].map(([h, p]) => (
               <div key={h} className="card">
                 <h4>{h}</h4>

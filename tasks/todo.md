@@ -55,7 +55,7 @@
 ## Review (2026-09-10)
 - Hero flash root cause was the text-only prerender being wiped by createRoot; fixed structurally (static render + hydrate), not by a fallback tweak.
 - Audit harness is the regression net now: `npx serve dist -l 4175` then `node scripts/audit-tools.mjs`; run it before any deploy that touches tools.
-- Open: Chrome Web Store upload (user), WordPress review pending, Stripe go-live, mobi-to-pdf has no fixture (UI-only in the audit).
+- Historical snapshot: Chrome Web Store upload (user), WordPress review pending, Stripe go-live, mobi-to-pdf has no fixture (UI-only in the audit).
 
 ## 2026-09-10 (phase 5): second audit, outputs checked
 - [x] `scripts/audit-checks.mjs`: every tool's output opened and compared with its promise (page counts, order, rotation, text, metadata, form values, encryption, sizes); 44/44 pass
@@ -69,7 +69,7 @@
 - [x] 44/44 tools with output checks; 21/21 live features
 - [x] Fixed: /print, /signin, /signup served as an empty Loading shell (ClientOnly regression); 5 stale extension passages incl. 2 dead internal links; 6 meta descriptions out of range
 - [x] Deployed and verified live
-- Submissions: WordPress plugin awaiting review (slug `printxpdf`); Chrome extension still needs the user (Web Store console cannot be automated)
+- Historical snapshot: WordPress plugin awaiting review (slug `printxpdf`); Chrome extension still needs the user (Web Store console cannot be automated)
 
 ## 2026-09-10 (phase 7): pricing, lifetime plan, positioning — PLAN, NOT YET APPROVED
 
@@ -207,14 +207,13 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
 - [x] Added /contact and linked it from the site footer. Rewrote privacy/cookie disclosures to
       accurately describe active GA4, Do Not Track behavior, local storage, Stripe, and future
       AdSense behavior. Preserved the AdSense publisher tag added on the updated remote main.
-- [x] Checked WordPress email: plugin approved 2026-09-25, but public listing still awaits its
-      first SVN commit and release tag. `svn` is not installed in this workspace; see
-      `wordpress-plugin/SUBMISSION.md`.
+- [x] Checked WordPress email: plugin approved 2026-09-25. The first public release was committed
+      to SVN on 2026-10-05 (trunk r3728871, tag r3728877); listing: https://wordpress.org/plugins/printxpdf/.
 - [ ] Owner: verify AdSense Auto Ads/ad-serving settings and configure the appropriate consent
       message. Google requires a certified IAB TCF CMP for personalized ads to EEA, UK and Swiss
       users.
-- [ ] Owner: create the first SVN release for the approved WordPress plugin using username
-      `affglad` and the SVN password from the WordPress.org profile.
+- [x] Owner: create the first SVN release for the approved WordPress plugin using username
+      `affglad`; trunk r3728871 and tag r3728877 are live.
 - [ ] After deployment, check new URLs in Search Console and track query/impression data by
       locale. Do not report rankings or search volume without measured data.
 
@@ -257,6 +256,27 @@ one you can leave at the end of any month. Nobody in the category sells a lifeti
       low-quality directory links as link spam. A directory checked during this audit required
       account registration; another displayed a human challenge. Neither was submitted or bypassed.
       Prioritize genuine editorial, partner, community and product-discovery mentions.
+
+## Phase 12 (2026-10-04): backlink and full SEO audit
+- [x] Submitted one product listing each to The Free Tools Directory and The Tool Directory.
+      Both acknowledged editorial review; neither is a live backlink yet. No paid placement,
+      CAPTCHA workaround, or duplicate submission for all 44 tools.
+- [x] Added `docs/BACKLINK-PLAN.md` with vetted opportunities, prerequisites, submission status,
+      and an editorial outreach plan for specific tool pages.
+- [x] Corrected reciprocal hreflang annotations across English, Spanish, Portuguese, Hindi,
+      Bangla, Vietnamese, Chinese and Arabic guide hubs and articles. The static audit now checks
+      uniqueness, canonical targets, self-links and reciprocity.
+- [x] Removed build-date `lastmod` claims from unchanged sitemap pages, and omitted ignored
+      `priority` and `changefreq` fields. Kept meaningful article update dates only.
+- [x] Compacted `llms.txt` to point to language hubs and the sitemap instead of listing every
+      translated guide individually.
+- [x] Verified production build and static audit: 1,031 pages, 1,028 sitemap URLs, no issues.
+      Representative browser audit checked 17 routes at desktop and mobile sizes; one external
+      ad-quality tracker was reported as a broken image on the Hindi hub, not a site asset.
+- [ ] Await editorial review of the two free directory submissions; pending does not mean a link.
+- [ ] Publish these local changes before requesting IndexNow and checking Search Console again.
+- [ ] Refresh Search Console's links report after publish; the last known report is dated
+      2026-09-21 and is not a current measurement.
 
 # Phase 7 (2026-09-11): launch review
 - [x] Footer, Terms and Privacy name the operating company (LateNightBirds LLC), which is also the

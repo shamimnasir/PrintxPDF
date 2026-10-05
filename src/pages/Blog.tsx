@@ -3,7 +3,7 @@ import { useAllPosts, useClusters } from '../content/usePosts'
 import { authorPath, authorPerson, breadcrumbSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useSiteConfig } from '../admin/useSiteConfig'
 import '../content/blog.css'
-import { LANGUAGE_PACKS, guidePath } from '../content/localizedGuides'
+import { LANGUAGE_PACKS, guidePath, hubAlternates } from '../content/localizedGuides'
 import { GuideCover } from '../components/ui/GuideCover'
 
 export default function Blog() {
@@ -15,6 +15,7 @@ export default function Blog() {
     title: 'Printing & PDF Guides | PrintxPDF Blog',
     description: `${ALL_POSTS.length} free, plain-English guides: print web pages without ads, merge and shrink PDFs, sign documents, make scans searchable and more. All in your browser.`,
     path: '/blog',
+    alternates: hubAlternates(SITE_URL),
     keywords: ['pdf tutorials', 'how to print a web page', 'pdf guides', 'printer friendly'],
     schema: [
       breadcrumbSchema([

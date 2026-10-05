@@ -55,14 +55,18 @@ export function Dropzone({
         }
       }}
     >
-      <div className="dz-kicker"><span className="dz-step">1</span> Add your file</div>
-      <div className="dz-icon" aria-hidden="true">↑</div>
+      <div className="dz-kicker"><span className="dz-step">1</span> Start with a file</div>
+      <div className="dz-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" focusable="false">
+          <path d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 14.5v4A2.5 2.5 0 0 0 7.5 21h9a2.5 2.5 0 0 0 2.5-2.5v-4" />
+        </svg>
+      </div>
       <div className="big">{label}</div>
       <div className="muted dz-hint">
         {hint}
         {acceptLabel ? <span className="dz-formats">{acceptLabel}</span> : null}
       </div>
-      <span className="dz-btn">Choose file{multiple ? 's' : ''}<span className="dz-btn-arrow" aria-hidden="true">↗</span></span>
+      <span className="dz-btn">Browse file{multiple ? 's' : ''}<span className="dz-btn-arrow" aria-hidden="true">↗</span></span>
       <input
         ref={ref}
         type="file"

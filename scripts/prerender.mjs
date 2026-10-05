@@ -306,7 +306,7 @@ async function main() {
 
     await writeRoute(
       route,
-      pageHtml(shell, { route, noindex: noindexAll, title: p.metaTitle, description: p.metaDescription, canonical: `${SITE}${route}`, keywords: [p.primaryKeyword, ...p.secondaryKeywords], schema, bodyHtml, published: p.published, updated: p.updated, image: `${SITE}${guideImage(guideArtForCluster(p.cluster))}`, imageAlt: GUIDE_IMAGE_ALT[guideArtForCluster(p.cluster)] }),
+      pageHtml(shell, { route, noindex: noindexAll, title: p.metaTitle, description: p.metaDescription, canonical: `${SITE}${route}`, keywords: [p.primaryKeyword, ...p.secondaryKeywords], schema, bodyHtml, published: p.published, updated: p.updated, alternates: guideAlternates(p.slug, SITE, LANGUAGE_PACKS), image: `${SITE}${guideImage(guideArtForCluster(p.cluster))}`, imageAlt: GUIDE_IMAGE_ALT[guideArtForCluster(p.cluster)] }),
     )
     count++
   }
@@ -326,7 +326,7 @@ async function main() {
 
     for (const guide of pack.guides) {
       const route = guidePath(pack, guide.slug)
-      const alternates = guideAlternates(guide.topic, SITE)
+      const alternates = guideAlternates(guide.topic, SITE, LANGUAGE_PACKS)
       const bodyHtml = await ssr(route)
       const schema = [
         crumbs([{ name: pack.homeLabel, path: '/' }, { name: pack.hubTitle, path: hubRoute }, { name: guide.title, path: route }]),
@@ -379,6 +379,7 @@ async function main() {
         title: 'Printing & PDF Guides | PrintxPDF Blog',
         description: `${ALL_POSTS.length} free guides on printing web pages without ads, merging and compressing PDFs, e-signatures, OCR and more.`,
         canonical: `${SITE}${route}`,
+        alternates: hubAlternates(SITE),
         schema: [
           crumbs([
             { name: 'Home', path: '/' },
@@ -552,7 +553,7 @@ async function main() {
     {
       route: '/wordpress',
       title: 'WordPress Print & PDF Button Plugin',
-      description: 'Free WordPress plugin that adds Print, PDF and Email buttons to every post and page. Works with any theme, needs no account or key, and never contacts anyone.',
+      description: 'Install the free PrintxPDF plugin from WordPress.org. Add Print, Save as PDF and Email buttons to posts and pages, with no plugin account or API key.',
       h1: 'A print button your readers will actually use.',
     },
     {

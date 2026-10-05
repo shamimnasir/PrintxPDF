@@ -1,4 +1,5 @@
 import data from './localized-guides.json'
+import { ALL_POSTS } from './index'
 
 export type LocalizedGuide = {
   topic: string
@@ -61,13 +62,24 @@ export function languagePack(locale: string, hub: string): LanguagePack | undefi
   return LANGUAGE_PACKS.find((p) => p.locale.toLowerCase() === locale.toLowerCase() && p.hub === hub)
 }
 
-export function guideAlternates(topic: string, site = 'https://printxpdf.com'): { lang: string; url: string }[] {
-  return LANGUAGE_PACKS.map((pack) => {
+export function guideAlternates(topic: string, site = 'https://printxpdf.com', packs: LanguagePack[] = LANGUAGE_PACKS): { lang: string; url: string }[] {
+  const base = site.replace(/\/$/, '')
+  const english = ALL_POSTS.find((post) => post.slug === topic)
+  const alternates = packs.map((pack) => {
     const guide = pack.guides.find((item) => item.topic === topic)
-    return { lang: pack.locale, url: `${site.replace(/\/$/, '')}${guidePath(pack, guide?.slug || topic)}` }
+    return { lang: pack.locale, url: `${base}${guidePath(pack, guide?.slug || topic)}` }
   })
+  if (!english) return alternates
+  const englishUrl = `${base}/blog/${english.cluster}/${english.slug}`
+  return [{ lang: 'en', url: englishUrl }, ...alternates, { lang: 'x-default', url: englishUrl }]
 }
 
 export function hubAlternates(site = 'https://printxpdf.com'): { lang: string; url: string }[] {
-  return LANGUAGE_PACKS.map((pack) => ({ lang: pack.locale, url: `${site.replace(/\/$/, '')}${guidePath(pack)}` }))
+  const base = site.replace(/\/$/, '')
+  const englishUrl = `${base}/blog`
+  return [
+    { lang: 'en', url: englishUrl },
+    ...LANGUAGE_PACKS.map((pack) => ({ lang: pack.locale, url: `${base}${guidePath(pack)}` })),
+    { lang: 'x-default', url: englishUrl },
+  ]
 }

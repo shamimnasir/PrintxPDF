@@ -50,41 +50,41 @@ async function main() {
   const SITE = (process.env.VITE_SITE_URL || cfg?.site?.url || 'https://printxpdf.com').replace(/\/$/, '')
   const hiddenTools = new Set(cfg?.tools?.hidden || [])
   const hiddenPosts = new Set(cfg?.content?.hidden || [])
-  const today = iso(Date.now())
   const authorName = cfg?.author?.name || 'Nasir Uddin Shamim'
   const authorRoute = `/author/${String(authorName).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`
 
   // ---------- sitemap ----------
   const urls = [
-    { loc: '/', pri: '1.0', freq: 'weekly', mod: today },
-    { loc: '/print', pri: '0.9', freq: 'monthly', mod: today },
-    { loc: '/tools', pri: '0.9', freq: 'weekly', mod: today },
-    { loc: '/blog', pri: '0.8', freq: 'weekly', mod: today },
-    { loc: '/pricing', pri: '0.6', freq: 'monthly', mod: today },
-    { loc: '/about', pri: '0.5', freq: 'yearly', mod: today },
-    { loc: '/support', pri: '0.6', freq: 'monthly', mod: today },
-    { loc: '/contact', pri: '0.5', freq: 'yearly', mod: today },
-    { loc: authorRoute, pri: '0.5', freq: 'monthly', mod: today },
-    { loc: '/api', pri: '0.6', freq: 'monthly', mod: today },
-    { loc: '/wordpress', pri: '0.6', freq: 'monthly', mod: today },
-    { loc: '/website-button', pri: '0.6', freq: 'monthly', mod: today },
-    { loc: '/extensions/chrome', pri: '0.6', freq: 'monthly', mod: today },
-    { loc: '/extension-privacy', pri: '0.3', freq: 'yearly', mod: today },
-    { loc: '/privacy', pri: '0.3', freq: 'yearly', mod: today },
-    { loc: '/terms', pri: '0.3', freq: 'yearly', mod: today },
-    ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}`, pri: t.status === 'best-effort' ? '0.4' : '0.8', freq: 'monthly', mod: today })),
-    ...TOOL_ALIASES.map((a) => ({ loc: `/tools/${a.slug}`, pri: '0.8', freq: 'monthly', mod: today })),
-    ...CLUSTERS.map((c) => ({ loc: `/blog/${c.slug}`, pri: '0.7', freq: 'monthly', mod: today })),
-    ...ALL_POSTS.filter((p) => !hiddenPosts.has(p.slug)).map((p) => ({ loc: `/blog/${p.cluster}/${p.slug}`, pri: '0.7', freq: 'monthly', mod: iso(p.updated) })),
+    { loc: '/' },
+    { loc: '/print' },
+    { loc: '/tools' },
+    { loc: '/blog' },
+    { loc: '/pricing' },
+    { loc: '/about' },
+    { loc: '/support' },
+    { loc: '/contact' },
+    { loc: authorRoute },
+    { loc: '/api' },
+    { loc: '/wordpress' },
+    { loc: '/website-button' },
+    { loc: '/extensions/chrome' },
+    { loc: '/extension-privacy' },
+    { loc: '/privacy' },
+    { loc: '/terms' },
+    ...TOOLS.filter((t) => !hiddenTools.has(t.slug)).map((t) => ({ loc: `/tools/${t.slug}` })),
+    ...TOOL_ALIASES.map((a) => ({ loc: `/tools/${a.slug}` })),
+    ...CLUSTERS.map((c) => ({ loc: `/blog/${c.slug}` })),
+    // These dates come from editorial metadata. Do not synthesize today's date at build time.
+    ...ALL_POSTS.filter((p) => !hiddenPosts.has(p.slug)).map((p) => ({ loc: `/blog/${p.cluster}/${p.slug}`, mod: iso(p.updated) })),
     ...LANGUAGE_PACKS.flatMap((pack) => [
-      { loc: guidePath(pack), pri: '0.7', freq: 'monthly', mod: today },
-      ...pack.guides.map((guide) => ({ loc: guidePath(pack, guide.slug), pri: '0.7', freq: 'monthly', mod: today })),
+      { loc: guidePath(pack) },
+      ...pack.guides.map((guide) => ({ loc: guidePath(pack, guide.slug) })),
     ]),
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url>\n    <loc>${SITE}${u.loc}</loc>\n    <lastmod>${u.mod}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`).join('\n')}
+${urls.map((u) => `  <url>\n    <loc>${SITE}${u.loc}</loc>${u.mod ? `\n    <lastmod>${u.mod}</lastmod>` : ''}\n  </url>`).join('\n')}
 </urlset>
 `
   await writeFile(path.join(PUBLIC, 'sitemap.xml'), sitemap)
@@ -162,8 +162,13 @@ ${c.posts
 - [Contact](${SITE}/contact): direct support, privacy and billing contact details.
 - [Privacy](${SITE}/privacy): explains local browser processing, the eight server conversion uploads, analytics, cookies and third-party services.
 
-## Guías en otros idiomas
-${LANGUAGE_PACKS.map((pack) => `- [${pack.hubTitle}](${SITE}${guidePath(pack)}): ${pack.hubDescription}\n${pack.guides.map((guide) => `  - [${guide.title}](${SITE}${guidePath(pack, guide.slug)}): ${guide.metaDescription}`).join('\n')}`).join('\n')}
+## Guides in other languages
+Each language hub links to its translated guides and tool pages. Use the sitemap for the complete URL inventory.
+${LANGUAGE_PACKS.map((pack) => `- [${pack.hubTitle}](${SITE}${guidePath(pack)}): ${pack.hubDescription}`).join('\n')}
+
+## Crawling and full page inventory
+- [Sitemap](${SITE}/sitemap.xml): canonical site URLs, including every tool page and translated guide.
+- [Robots rules](${SITE}/robots.txt): public crawl rules for search and assistant crawlers.
 `
   await writeFile(path.join(PUBLIC, 'llms.txt'), llms)
 

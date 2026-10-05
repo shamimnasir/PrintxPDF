@@ -1,10 +1,10 @@
-# Submitting PrintxPDF to the WordPress.org plugin directory
+# PrintxPDF WordPress.org release and maintenance
 
-**Status: APPROVED on September 25, 2026. Not yet publicly listed.** WordPress.org
-approved the `printxpdf` slug for account `affglad`. Approval only granted SVN
-commit access; the public listing is created after the first source commit and tag.
-The public plugin URL currently redirects to WordPress.org search, so do not describe
-the plugin as published yet. The review thread no longer needs a corrected ZIP.
+**Status: LIVE on October 5, 2026.** WordPress.org approved the `printxpdf` slug for
+account `affglad`. The first release is published at
+https://wordpress.org/plugins/printxpdf/. SVN trunk was committed as revision 3728871
+and version 1.0.0 was tagged as revision 3728877. The listing currently serves version
+1.0.0 and reports fewer than 10 active installations.
 
 `node scripts/build-wp-plugin.mjs` builds the review package at
 `dist-wp/printxpdf-wordpress-plugin-v1.0.0.zip` and copies the website download.
@@ -24,9 +24,8 @@ The SVN repository is:
 
 The approved WordPress.org account is `affglad` (case-sensitive). SVN authentication
 uses the WordPress.org username and an SVN password generated from the account
-profile, not the account email or normal password. A first SVN release is still an
-outstanding owner action. This checkout does not currently have the `svn` executable;
-the public upload has not been attempted from this machine.
+profile, not the account email or normal password. The initial release is complete;
+future releases should follow the version and tagging procedure below.
 
 ## Historical ownership verification requested during review
 
@@ -36,7 +35,7 @@ the public upload has not been attempted from this machine.
 Contributors: affglad
 ```
 
-`affglad` is the WordPress.org username used for the pending submission.
+`affglad` is the WordPress.org username used for the approved listing.
 
 The reviewer offered the DNS TXT value `wordpressorg-affglad-verification` as one
 possible proof while the submission was pending. The later approval supersedes this
@@ -70,11 +69,11 @@ image file in the SVN `assets/` directory or the listing shows a broken image.
 
 These were captured from a real WordPress Playground install with the plugin active.
 
-## Also verify before submitting
+## Release validation and remaining compatibility checks
 
-- **`Tested up to: 7.1`** — this was set to the current WordPress release. Actually
-  install and exercise the plugin on WordPress 7.1 before you submit. Never set this
-  above the current stable release (or current RC, if one exists).
+- **`Tested up to: 7.1`** — the public directory currently displays 7.1.2, its current
+  patch release. Only change this field to a newer major/minor series after testing the
+  plugin against that series; never claim a version that has not been tested.
   <https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/>
 - **Run Plugin Check.** Install the official
   [Plugin Check (PCP)](https://wordpress.org/plugins/plugin-check/) plugin on a test
@@ -134,9 +133,10 @@ term in the display name, the fix is to edit `Plugin Name:` in **both**
   submission. Each round trip restarts the wait.
 - Approval mail contains your SVN URL:
   `https://plugins.svn.wordpress.org/printxpdf/`
-  Nothing is public until you commit code to SVN.
+  At that stage, nothing was public until the first SVN commit and tag. That initial
+  release is now live at https://wordpress.org/plugins/printxpdf/.
 
-## Remaining step — first SVN release
+## First SVN release (completed)
 
 ```sh
 svn checkout https://plugins.svn.wordpress.org/printxpdf/ printxpdf-svn
@@ -186,7 +186,11 @@ svn commit -m "Tag 1.0.0"
 The build linter enforces the version/stable-tag match; keeping the tagged copy in
 sync is on you. <https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/>
 
-The directory rebuilds within ~15 minutes of a commit.
+The initial trunk commit completed at r3728871 and the `1.0.0` tag at r3728877 on
+October 5, 2026. The listing is live at https://wordpress.org/plugins/printxpdf/.
+
+The commands above are retained as a record of the release process. Do not repeat the
+initial-release commit or tag; use the later-version process below for future updates.
 
 ## Releasing later versions
 

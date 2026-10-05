@@ -1,5 +1,6 @@
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { LANGUAGE_PACKS, guidePath } from '../content/localizedGuidesFull'
+import { guideAlternates, hubAlternates } from '../content/localizedGuides'
 import type { LanguagePack } from '../content/localizedGuides'
 import { breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useTool } from '../features/pdf/useTools'
@@ -85,10 +86,7 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
   const guide = pack?.guides.find((item) => item.slug === slug)
   const path = guidePath(pack, guide?.slug)
   const tool = useTool(guide?.tool || '')
-  const alternates = LANGUAGE_PACKS.map((language) => {
-    const equivalent = guide && language.guides.find((item) => item.topic === guide.topic)
-    return { lang: language.locale, url: `${SITE_URL}${guide ? guidePath(language, equivalent?.slug) : guidePath(language)}` }
-  })
+  const alternates = guide ? guideAlternates(guide.topic, SITE_URL, LANGUAGE_PACKS) : hubAlternates(SITE_URL)
 
   useSeo({
     title: guide?.metaTitle || pack?.hubTitle || 'Not found',

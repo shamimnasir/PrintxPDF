@@ -765,57 +765,80 @@ p {
 .dropzone {
   position: relative;
   overflow: hidden;
-  border: 2px dashed color-mix(in srgb, var(--acid) 68%, var(--line));
-  border-radius: calc(var(--radius) + 6px);
-  background: radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--acid) 12%, transparent), transparent 72%), var(--card);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 65%), 0 8px 24px rgb(17 34 68 / 5%);
-  padding: clamp(1.5rem, 4vw, 2.75rem) 1.5rem;
+  isolation: isolate;
+  border: 1.5px dashed color-mix(in srgb, var(--acid) 58%, var(--line));
+  border-radius: calc(var(--radius) + 10px);
+  background:
+    radial-gradient(ellipse at 50% -12%, color-mix(in srgb, var(--acid) 16%, transparent), transparent 64%),
+    linear-gradient(145deg, color-mix(in srgb, var(--card) 94%, var(--bg-2)), var(--card));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 78%), 0 14px 36px -26px color-mix(in srgb, var(--ink) 34%, transparent);
+  padding: clamp(1.75rem, 4vw, 3rem) 1.5rem;
   text-align: center;
   cursor: pointer;
-  transition: background 0.18s, transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.dropzone::before {
+  position: absolute;
+  z-index: -1;
+  inset: 9px;
+  border: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  border-radius: calc(var(--radius) + 4px);
+  content: '';
+  pointer-events: none;
 }
 .dropzone:hover,
 .dropzone:focus-visible {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   border-color: var(--acid);
-  background: radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--acid) 17%, transparent), transparent 72%), var(--card);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--acid) 12%, transparent), 0 14px 32px -16px color-mix(in srgb, var(--acid) 45%, transparent);
+  background:
+    radial-gradient(ellipse at 50% -12%, color-mix(in srgb, var(--acid) 20%, transparent), transparent 66%),
+    linear-gradient(145deg, color-mix(in srgb, var(--card) 94%, var(--bg-2)), var(--card));
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--acid) 10%, transparent), 0 20px 42px -24px color-mix(in srgb, var(--acid) 48%, transparent);
 }
 .dropzone:focus-visible {
   outline: 2px solid var(--acid);
   outline-offset: 3px;
 }
 .dropzone .dz-icon {
-  width: 58px;
-  height: 58px;
-  margin: 0 auto 0.75rem;
-  border: 1px solid color-mix(in srgb, var(--acid) 28%, transparent);
-  border-radius: 18px;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 1rem;
+  border: 1px solid color-mix(in srgb, var(--acid) 34%, transparent);
+  border-radius: 21px;
   display: grid;
   place-items: center;
-  font-size: 1.7rem;
-  font-weight: 800;
-  background: color-mix(in srgb, var(--acid) 12%, var(--card));
+  background: linear-gradient(145deg, color-mix(in srgb, var(--acid) 17%, var(--card)), color-mix(in srgb, var(--acid) 7%, var(--card)));
   color: var(--acid);
-  box-shadow: 0 5px 14px -8px color-mix(in srgb, var(--acid) 75%, transparent);
-  transition: transform 0.18s, background 0.18s, color 0.18s;
+  box-shadow: 0 8px 20px -12px color-mix(in srgb, var(--acid) 80%, transparent), inset 0 1px 0 rgb(255 255 255 / 72%);
+  transition: transform 0.2s, background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.dropzone .dz-icon svg {
+  width: 30px;
+  height: 30px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .dropzone:hover .dz-icon,
 .dropzone.over .dz-icon {
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.04);
   background: var(--acid);
   color: var(--acid-fg);
+  box-shadow: 0 10px 22px -10px color-mix(in srgb, var(--acid) 85%, transparent);
 }
 .dropzone.over {
   border-color: var(--acid);
   border-style: solid;
+  background: color-mix(in srgb, var(--acid) 7%, var(--card));
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--acid) 12%, transparent), 0 20px 42px -24px color-mix(in srgb, var(--acid) 52%, transparent);
 }
 .dropzone .dz-kicker {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: var(--fg-muted);
   font-size: 0.72rem;
   font-weight: 800;
@@ -835,15 +858,15 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  margin-top: 1rem;
-  padding: 0.65rem 1rem;
-  border: 1px solid color-mix(in srgb, var(--acid) 28%, transparent);
-  border-radius: 999px;
+  margin-top: 1.2rem;
+  padding: 0.78rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--acid) 20%, transparent);
+  border-radius: calc(var(--radius) + 2px);
   background: var(--acid);
   color: var(--acid-fg);
   font-weight: 800;
   font-size: 0.9rem;
-  box-shadow: 0 5px 14px -7px color-mix(in srgb, var(--acid) 75%, transparent);
+  box-shadow: 0 8px 18px -10px color-mix(in srgb, var(--acid) 82%, transparent), inset 0 1px 0 rgb(255 255 255 / 22%);
   transition: transform 0.18s, box-shadow 0.18s;
 }
 .dropzone:hover .dz-btn,
