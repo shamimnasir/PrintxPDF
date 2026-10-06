@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useToast } from '../../../components/ui/Toast'
+import { useToast } from '../../../components/ui/toastContext'
 import { downloadBlob } from '../../../lib/download'
 import { qrPdf, qrPng, qrSvg } from '../engines'
 
@@ -25,8 +25,8 @@ export default function QrTool({ initialKind = 'url' }: { initialKind?: Kind } =
   const [light, setLight] = useState('#ffffff')
   const [size, setSize] = useState(512)
   const [margin, setMargin] = useState(2)
-  const [preview, setPreview] = useState('')
-  const [tooLong, setTooLong] = useState(false)
+  const [previewResult, setPreviewResult] = useState<{ payload: string; url: string } | null>(null)
+  const [tooLongFor, setTooLongFor] = useState<string | null>(null)
 
   const set = (k: string, v: string) => setF((o) => ({ ...o, [k]: v }))
 
@@ -48,22 +48,21 @@ export default function QrTool({ initialKind = 'url' }: { initialKind?: Kind } =
         return `BEGIN:VCARD\nVERSION:3.0\nN:${f.name}\nFN:${f.name}\nORG:${f.org}\nTEL:${f.tel}\nEMAIL:${f.vmail}\nURL:${f.site}\nEND:VCARD`
     }
   })()
+  const preview = payload && payload !== 'https://' && previewResult?.payload === payload ? previewResult.url : ''
+  const tooLong = tooLongFor === payload
 
   useEffect(() => {
-    if (!payload || payload === 'https://') {
-      setPreview('')
-      return
-    }
+    if (!payload || payload === 'https://') return
     let alive = true
     let url = ''
     qrPng(payload, { size: 320, dark, light, margin })
       .then((b) => {
         if (!alive) return
         url = URL.createObjectURL(b)
-        setPreview(url)
-        setTooLong(false)
+        setPreviewResult({ payload, url })
+        setTooLongFor(null)
       })
-      .catch(() => alive && setTooLong(true)) // payload exceeds QR capacity (~2.9k chars)
+      .catch(() => alive && setTooLongFor(payload)) // payload exceeds QR capacity (~2.9k chars)
     return () => {
       alive = false
       if (url) URL.revokeObjectURL(url)

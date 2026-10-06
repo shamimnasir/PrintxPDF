@@ -11,4 +11,5 @@ import batch9 from '../../content/localized-posts/ar-chatgpt-9.json'
 import batch10 from '../../content/localized-posts/ar-chatgpt-10.json'
 import batch11 from '../../content/localized-posts/ar-chatgpt-11.json'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-export default createLocalizedGuidesPage('ar', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides, ...batch11.guides])
+const ArabicGuidesPage = createLocalizedGuidesPage('ar', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides, ...batch11.guides])
+export default ArabicGuidesPage

@@ -1,7 +1,6 @@
 import { useRef, useState, type DragEvent } from 'react'
 
 import { formatBytes } from '../../lib/download'
-export { formatBytes }
 
 export function Dropzone({
   accept,

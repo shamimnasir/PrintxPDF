@@ -4,7 +4,7 @@ import { applyTheme, store, type SavedDoc, type Settings, type Signature } from 
 import { ApiError, billing, decodeToken, describeError, PLAN_LABEL, type Me, type PaidPlan, type Plan } from '../../lib/api'
 import { useSiteConfig } from '../../admin/useSiteConfig'
 import { useUser } from './useUser'
-import { useToast } from '../../components/ui/Toast'
+import { useToast } from '../../components/ui/toastContext'
 import { downloadBlob } from '../../lib/download'
 import { useSeo } from '../../lib/seo'
 import { Seg } from '../../components/ui/Seg'

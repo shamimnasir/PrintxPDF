@@ -1,4 +1,15 @@
-import { LANGUAGE_PACKS } from '../../content/localizedGuidesFull'
+import data from '../../content/localized-posts/zh-CN.json'
+import batch1 from '../../content/localized-posts/zh-CN-chatgpt-1.json'
+import batch2 from '../../content/localized-posts/zh-CN-chatgpt-2.json'
+import batch3 from '../../content/localized-posts/zh-CN-chatgpt-3.json'
+import batch4 from '../../content/localized-posts/zh-CN-chatgpt-4.json'
+import batch5 from '../../content/localized-posts/zh-CN-chatgpt-5.json'
+import batch6 from '../../content/localized-posts/zh-CN-chatgpt-6.json'
+import batch7 from '../../content/localized-posts/zh-CN-chatgpt-7.json'
+import batch8 from '../../content/localized-posts/zh-CN-chatgpt-8.json'
+import batch9 from '../../content/localized-posts/zh-CN-chatgpt-9.json'
+import batch10 from '../../content/localized-posts/zh-CN-chatgpt-10.json'
+import batch11 from '../../content/localized-posts/zh-CN-chatgpt-11.json'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-const pack = LANGUAGE_PACKS.find((item) => item.locale === 'zh-CN')
-export default createLocalizedGuidesPage('zh-CN', pack?.guides || [])
+const ChineseGuidesPage = createLocalizedGuidesPage('zh-CN', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides, ...batch11.guides])
+export default ChineseGuidesPage

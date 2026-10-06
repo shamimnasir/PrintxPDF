@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
-import { useToast } from '../../../components/ui/Toast'
+import { useToast } from '../../../components/ui/toastContext'
 import { downloadBlob } from '../../../lib/download'
 import { canvasToBlob, loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 
-type P = { index: number; rotation: number }
+type P = { index: number; rotation: number; thumbnailUrl: string }
 
 export default function OrganizeTool() {
   const { toast } = useToast()
@@ -14,25 +14,18 @@ export default function OrganizeTool() {
   const [dragI, setDragI] = useState<number | null>(null)
   const [overI, setOverI] = useState<number | null>(null)
   const [busy, setBusy] = useState(false)
-  // thumbnail object URLs live outside React state: small strings in state, bytes owned by the browser
-  const thumbs = useRef<Map<number, string>>(new Map())
-  const [, bump] = useState(0)
+  const chooseFile = (next: File | null) => {
+    setFile(next)
+    setPages([])
+    setLoading(Boolean(next))
+    setDragI(null)
+    setOverI(null)
+  }
 
   useEffect(() => {
-    const urls = thumbs.current
-    const revokeAll = () => {
-      urls.forEach((u) => URL.revokeObjectURL(u))
-      urls.clear()
-    }
-    if (!file) {
-      revokeAll()
-      setPages([])
-      return
-    }
+    if (!file) return
     let cancel = false
-    setLoading(true)
-    setPages([])
-    revokeAll()
+    const urls: string[] = []
     ;(async () => {
       try {
         const pdf = await loadPdf(await file.arrayBuffer())
@@ -42,11 +35,11 @@ export default function OrganizeTool() {
           if (cancel) return
           const blob = await canvasToBlob(c, 'image/jpeg', 0.7)
           if (cancel) return
-          urls.set(i - 1, URL.createObjectURL(blob))
-          list.push({ index: i - 1, rotation: 0 })
+          const thumbnailUrl = URL.createObjectURL(blob)
+          urls.push(thumbnailUrl)
+          list.push({ index: i - 1, rotation: 0, thumbnailUrl })
           if (i % 5 === 0 || i === pdf.numPages) {
             setPages([...list])
-            bump((n) => n + 1)
           }
         }
       } catch (e) {
@@ -57,7 +50,7 @@ export default function OrganizeTool() {
     })()
     return () => {
       cancel = true
-      revokeAll()
+      urls.forEach((url) => URL.revokeObjectURL(url))
     }
   }, [file, toast])
 
@@ -76,7 +69,7 @@ export default function OrganizeTool() {
     setBusy(true)
     try {
       const { reorganize } = await import('../engines')
-      const [out] = await reorganize(file, pages)
+      const [out] = await reorganize(file, pages.map(({ index, rotation }) => ({ index, rotation })))
       downloadBlob(out.blob, out.name)
       toast('Organized PDF downloaded')
     } catch (e) {
@@ -86,7 +79,7 @@ export default function OrganizeTool() {
     }
   }
 
-  if (!file) return <Dropzone accept=".pdf" multiple={false} onFiles={(f) => setFile(f[0])} label="Drop a PDF to organize" />
+  if (!file) return <Dropzone accept=".pdf" multiple={false} onFiles={(f) => chooseFile(f[0])} label="Drop a PDF to organize" />
 
   return (
     <div className="stack">
@@ -105,7 +98,7 @@ export default function OrganizeTool() {
           <button className="btn btn-sm btn-ghost" onClick={() => setPages((p) => p.map((x) => ({ ...x, rotation: (x.rotation + 90) % 360 })))}>
             Rotate all
           </button>
-          <button className="btn btn-sm btn-ghost" onClick={() => setFile(null)}>
+          <button className="btn btn-sm btn-ghost" onClick={() => chooseFile(null)}>
             Change file
           </button>
           <button className="btn btn-sm btn-acid" disabled={busy || loading || !pages.length} onClick={apply}>
@@ -136,7 +129,7 @@ export default function OrganizeTool() {
             }}
           >
             <span className="n">{p.index + 1}</span>
-            <img src={thumbs.current.get(p.index)} alt={`Page ${p.index + 1}`} style={{ transform: `rotate(${p.rotation}deg)` }} />
+            <img src={p.thumbnailUrl} alt={`Page ${p.index + 1}`} style={{ transform: `rotate(${p.rotation}deg)` }} />
             <div className="acts">
               <button onClick={() => rotate(i, -90)} title="Rotate left" aria-label={`Rotate page ${p.index + 1} left`}>
                 ↺

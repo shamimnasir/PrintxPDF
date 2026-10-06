@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
-import { useToast } from '../../../components/ui/Toast'
+import { useToast } from '../../../components/ui/toastContext'
 import { downloadBlob, readAsDataURL, stripExt } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { uid } from '../../../lib/store'

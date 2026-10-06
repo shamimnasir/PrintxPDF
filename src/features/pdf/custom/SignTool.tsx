@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
-import { useToast } from '../../../components/ui/Toast'
+import { useToast } from '../../../components/ui/toastContext'
 import { downloadBlob } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { store, uid, type Signature } from '../../../lib/store'
@@ -89,7 +89,7 @@ function typedSignature(text: string, font: string) {
 
 export default function SignTool() {
   const { toast } = useToast()
-  const pad = useSignaturePad()
+  const { ref: padRef, onDown, onMove, onUp, clear, empty: padEmpty, toDataUrl } = useSignaturePad()
   const [file, setFile] = useState<File | null>(null)
   const [pdf, setPdf] = useState<Awaited<ReturnType<typeof loadPdf>> | null>(null)
   const [pageNo, setPageNo] = useState(1)
@@ -132,7 +132,7 @@ export default function SignTool() {
   // encoding a 900×220 PNG on every keystroke is wasteful; memoise per (text, font)
   const typedPreview = useMemo(() => (typed.trim() ? typedSignature(typed.trim(), font) : null), [typed, font])
   const currentSig = () => {
-    if (tab === 'draw') return pad.empty ? null : pad.toDataUrl()
+    if (tab === 'draw') return padEmpty ? null : toDataUrl()
     if (tab === 'type') return typedPreview
     if (tab === 'upload') return uploaded
     return active
@@ -269,8 +269,8 @@ export default function SignTool() {
         </div>
         {tab === 'draw' && (
           <>
-            <canvas ref={pad.ref} className="sig-pad" onPointerDown={pad.onDown} onPointerMove={pad.onMove} onPointerUp={pad.onUp} onPointerLeave={pad.onUp} />
-            <button className="btn btn-sm btn-ghost" onClick={pad.clear}>
+            <canvas ref={padRef} className="sig-pad" onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerLeave={onUp} />
+            <button className="btn btn-sm btn-ghost" onClick={clear}>
               Clear
             </button>
           </>

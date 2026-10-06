@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { breadcrumbSchema, useSeo, SITE_URL } from '../lib/seo'
-import { useToast } from '../components/ui/Toast'
+import { useToast } from '../components/ui/toastContext'
 import { Seg } from '../components/ui/Seg'
 
 export default function WebsiteButton() {

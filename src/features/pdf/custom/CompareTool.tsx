@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Dropzone, FileList } from '../../../components/ui/Dropzone'
 import { ProgressBar } from '../../../components/ui/ResultList'
 import { Seg } from '../../../components/ui/Seg'
-import { useToast } from '../../../components/ui/Toast'
+import { useToast } from '../../../components/ui/toastContext'
 import { downloadBlob, stripExt } from '../../../lib/download'
 import { canvasToBlob, loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { tokenRgb } from './pdfGeom'
@@ -96,11 +96,7 @@ export default function CompareTool() {
   const maxPages = Math.max(pagesA, pagesB)
 
   useEffect(() => {
-    if (files.length < 2) {
-      setA(null)
-      setB(null)
-      return
-    }
+    if (files.length < 2) return
     let alive = true
     Promise.all([files[0].arrayBuffer().then(loadPdf), files[1].arrayBuffer().then(loadPdf)])
       .then(([x, y]) => {
@@ -179,11 +175,25 @@ export default function CompareTool() {
     }
   }
 
+  const addFiles = (incoming: File[]) => {
+    setFiles((previous) => [...previous, ...incoming].slice(0, 2))
+    setA(null)
+    setB(null)
+    setPage(1)
+  }
+
+  const removeFile = (index: number) => {
+    setFiles((previous) => previous.filter((_, i) => i !== index))
+    setA(null)
+    setB(null)
+    setPage(1)
+  }
+
   if (files.length < 2)
     return (
       <div className="stack" style={{ maxWidth: 720 }}>
-        <Dropzone accept=".pdf" multiple onFiles={(f) => setFiles((prev) => [...prev, ...f].slice(0, 2))} label="Drop two PDFs, old first, new second" />
-        <FileList files={files} onRemove={(i) => setFiles((f) => f.filter((_, k) => k !== i))} />
+        <Dropzone accept=".pdf" multiple onFiles={addFiles} label="Drop two PDFs, old first, new second" />
+        <FileList files={files} onRemove={removeFile} />
         <p className="muted">
           Both files are drawn at the same size and compared dot by dot. It spots anything that moved, even a line that
           shifted down a little, so it is not a word-by-word text comparison.
@@ -206,7 +216,7 @@ export default function CompareTool() {
             {percent !== null && <span className="badge badge-acid">{percent.toFixed(2)}% of the page changed</span>}
             {rendering && <span className="badge">Drawing…</span>}
           </div>
-          <button className="btn btn-sm btn-ghost" onClick={() => setFiles([])}>
+          <button className="btn btn-sm btn-ghost" onClick={() => { setFiles([]); setA(null); setB(null); setPage(1) }}>
             Change files
           </button>
         </div>

@@ -1,12 +1,13 @@
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
-import { LANGUAGE_PACKS, guidePath } from '../content/localizedGuidesFull'
+import { LANGUAGE_ROUTES, localizedGuidePath as guidePath } from '../content/localizedGuideRoutes'
 import { guideAlternates, hubAlternates } from '../content/localizedGuides'
 import type { LanguagePack } from '../content/localizedGuides'
 import { breadcrumbSchema, faqSchema, SITE_URL, useSeo } from '../lib/seo'
 import { useTool } from '../features/pdf/useTools'
 import { TOOLS } from '../features/pdf/toolsMeta'
 import { ToolShot } from '../components/ui/ToolShot'
-import { GuideCover, guideCoverAlt, guideCoverUrl } from '../components/ui/GuideCover'
+import { GuideCover } from '../components/ui/GuideCover'
+import { guideCoverAlt, guideCoverUrl } from '../components/ui/guideCoverUtils'
 import type { Block } from '../content/types'
 import '../content/blog.css'
 
@@ -59,7 +60,7 @@ function contentLinkTarget(href: string): string {
   const knownTools = new Set(TOOLS.map((tool) => tool.slug))
   const localizedGuide = href.match(/^\/([^/]+)\/([^/]+)\/([^/]+)\/?$/)
   if (localizedGuide) {
-    const pack = LANGUAGE_PACKS.find((language) => language.locale.toLowerCase() === localizedGuide[1].toLowerCase() && language.hub === localizedGuide[2])
+    const pack = LANGUAGE_ROUTES.find((language) => language.locale.toLowerCase() === localizedGuide[1].toLowerCase() && language.hub === localizedGuide[2])
     if (pack) {
       const imageSlug = /^(?:sowar-ila-pdf|chobi-theke-pdf|convertir-fotos-a-pdf|photo-se-pdf-kaise-banaye|converter-fotos-para-pdf|chuyen-anh-sang-pdf|tupian-zhuan-pdf)$/.test(localizedGuide[3])
       const guide = pack.guides.find((item) => item.slug === localizedGuide[3]) || (imageSlug ? pack.guides.find((item) => item.topic === 'images-to-pdf') : undefined)
@@ -86,7 +87,7 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
   const guide = pack?.guides.find((item) => item.slug === slug)
   const path = guidePath(pack, guide?.slug)
   const tool = useTool(guide?.tool || '')
-  const alternates = guide ? guideAlternates(guide.topic, SITE_URL, LANGUAGE_PACKS) : hubAlternates(SITE_URL)
+  const alternates = guide ? guideAlternates(guide.topic, SITE_URL, LANGUAGE_ROUTES) : hubAlternates(SITE_URL)
 
   useSeo({
     title: guide?.metaTitle || pack?.hubTitle || 'Not found',

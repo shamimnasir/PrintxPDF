@@ -1,16 +1,25 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Area, Card, Color, ListEditor, Num, Photo, Text, Toggle } from './fields'
 import { AdminSignIn } from './AdminSignIn'
 import { clearHits, discardDraft, exportConfig, getHits, importCarriesCode, importConfig, setPasscode, updateConfig, type SiteConfig } from './config'
-import { inkIsTooLight } from './RuntimeEffects'
-import { useToast } from '../components/ui/Toast'
+import { inkIsTooLight } from './runtimeUtils'
+import { useToast } from '../components/ui/toastContext'
 import { downloadBlob } from '../lib/download'
 import { TOOLS } from '../features/pdf/toolsMeta'
 import { ALL_POSTS, CLUSTERS } from '../content'
 import { DESIGNS, DESIGN_IDS } from '../design/presets'
 
 type P = { cfg: SiteConfig }
+
+function useNow() {
+  const [now, setNow] = useState(() => Date.now())
+  useEffect(() => {
+    const timer = window.setInterval(() => setNow(Date.now()), 60_000)
+    return () => window.clearInterval(timer)
+  }, [])
+  return now
+}
 
 /** Writes one section of the config. Returns false when the browser refused to store the
  *  draft, which callers surface so a field never silently snaps back to its old value. */
@@ -27,7 +36,7 @@ function useSet() {
 // ---------------------------------------------------------------- Dashboard
 export function Dashboard({ cfg }: P) {
   const hits = getHits()
-  const now = Date.now()
+  const now = useNow()
   const last7 = hits.filter((h) => now - h.t < 7 * 864e5)
   const byPath = useMemo(() => {
     const m = new Map<string, number>()
@@ -450,7 +459,7 @@ export function Analytics({ cfg }: P) {
   const set = useSet()
   const { toast } = useToast()
   const hits = getHits()
-  const now = Date.now()
+  const now = useNow()
   const days = Array.from({ length: 14 }, (_, i) => {
     const d = new Date(now - (13 - i) * 864e5)
     const key = d.toISOString().slice(0, 10)

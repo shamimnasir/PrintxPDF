@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Dropzone, FileList } from '../../components/ui/Dropzone'
-import { useToast } from '../../components/ui/Toast'
+import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar, ResultList, type Output } from '../../components/ui/ResultList'
 import { formatBytes } from '../../lib/download'
 import { FORMAT_LABEL, compressImage, formatDelta, formatOf, isHeic, isImageFile, outName, supportsWebpEncode, type CompressResult } from './engines'

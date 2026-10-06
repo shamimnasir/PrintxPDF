@@ -53,6 +53,19 @@ async function main() {
   const authorName = cfg?.author?.name || 'Nasir Uddin Shamim'
   const authorRoute = `/author/${String(authorName).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`
 
+  // The site-wide language picker needs route mappings, not every guide's multi-kilobyte body.
+  // Keep this generated index small so Header never pulls all translations into the entry chunk.
+  const languageRoutes = {
+    englishGuides: ALL_POSTS.map(({ slug, cluster }) => ({ slug, cluster })),
+    packs: LANGUAGE_PACKS.map((pack) => ({
+      locale: pack.locale,
+      hub: pack.hub,
+      nativeName: pack.nativeName,
+      guides: pack.guides.map(({ topic, slug }) => ({ topic, slug })),
+    })),
+  }
+  await writeFile(path.join(ROOT, 'src/content/localized-guide-routes.json'), JSON.stringify(languageRoutes))
+
   // ---------- sitemap ----------
   const urls = [
     { loc: '/' },

@@ -4,7 +4,7 @@
 // this browser. Publishing changes the repository and deploys the site, so it is gated on the
 // Worker instead: a password it holds the hash of, and a session that expires the same day.
 import { useEffect, useState, type FormEvent } from 'react'
-import { useToast } from '../components/ui/Toast'
+import { useToast } from '../components/ui/toastContext'
 import { adminApi, describeAdminError, readSession } from './adminApi'
 import { Card } from './fields'
 
@@ -16,20 +16,25 @@ export function AdminSignIn() {
   const [busy, setBusy] = useState(false)
 
   useEffect(() => {
-    if (!session) return setRepo(null)
+    if (!session) return
+    let active = true
     adminApi
       .me()
-      .then((r) => setRepo({ branch: r.branch, headSha: r.headSha }))
+      .then((r) => active && setRepo({ branch: r.branch, headSha: r.headSha }))
       .catch(() => {
+        if (!active) return
         setSession(null)
-        setRepo(null)
       })
+    return () => {
+      active = false
+    }
   }, [session])
 
   const submit = async (e: FormEvent) => {
     e.preventDefault()
     setBusy(true)
     try {
+      setRepo(null)
       setSession(await adminApi.login(password))
       setPassword('')
       toast('Signed in. You can publish for the next twelve hours.')
@@ -59,6 +64,7 @@ export function AdminSignIn() {
               onClick={() => {
                 adminApi.signOut()
                 setSession(null)
+                setRepo(null)
               }}
             >
               Sign out
@@ -71,6 +77,7 @@ export function AdminSignIn() {
                   await adminApi.signOutEverywhere()
                   adminApi.signOut()
                   setSession(null)
+                  setRepo(null)
                   toast('Every session ended')
                 } catch (err) {
                   toast(describeAdminError(err), 'error')

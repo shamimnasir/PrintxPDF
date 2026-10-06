@@ -1,9 +1,5 @@
-import { createContext, useCallback, useContext, useState, type ReactNode } from 'react'
-
-type Toast = { id: number; text: string; kind: 'ok' | 'error' }
-type Ctx = { toast: (text: string, kind?: Toast['kind']) => void }
-
-const ToastCtx = createContext<Ctx>({ toast: () => {} })
+import { useCallback, useState, type ReactNode } from 'react'
+import { ToastCtx, type Toast } from './toastContext'
 
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<Toast[]>([])
@@ -25,5 +21,3 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     </ToastCtx.Provider>
   )
 }
-
-export const useToast = () => useContext(ToastCtx)

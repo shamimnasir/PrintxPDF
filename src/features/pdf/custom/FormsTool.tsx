@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropzone } from '../../../components/ui/Dropzone'
-import { useToast } from '../../../components/ui/Toast'
+import { useToast } from '../../../components/ui/toastContext'
 import { downloadBlob, formatBytes, stripExt } from '../../../lib/download'
 
 type FieldKind = 'text' | 'check' | 'radio' | 'dropdown' | 'optionlist' | 'button' | 'unknown'
@@ -63,15 +63,16 @@ export default function FormsTool() {
   const [error, setError] = useState('')
   const [busy, setBusy] = useState<'' | 'fill' | 'flatten'>('')
 
-  useEffect(() => {
-    if (!file) {
-      setFields(null)
-      setStatus('idle')
-      return
-    }
-    let alive = true
-    setStatus('loading')
+  const chooseFile = (next: File | null) => {
+    setFile(next)
+    setFields(null)
+    setStatus(next ? 'loading' : 'idle')
     setError('')
+  }
+
+  useEffect(() => {
+    if (!file) return
+    let alive = true
     readFields(file)
       .then((f) => {
         if (!alive) return
@@ -149,7 +150,7 @@ export default function FormsTool() {
   if (!file)
     return (
       <div className="stack" style={{ maxWidth: 720 }}>
-        <Dropzone accept=".pdf" multiple={false} onFiles={(f) => setFile(f[0])} label="Drop a PDF form" />
+        <Dropzone accept=".pdf" multiple={false} onFiles={(f) => chooseFile(f[0])} label="Drop a PDF form" />
         <p className="muted">
           Finds the fillable boxes inside the form and gives you a real box to type in for each one. Nothing is uploaded.
         </p>
@@ -165,7 +166,7 @@ export default function FormsTool() {
         <div className="row between">
           <span className="badge badge-ink">{file.name}</span>
           <span className="mono" style={{ fontSize: '0.75rem' }}>{formatBytes(file.size)}</span>
-          <button className="btn btn-sm btn-ghost" onClick={() => setFile(null)}>
+          <button className="btn btn-sm btn-ghost" onClick={() => chooseFile(null)}>
             Change file
           </button>
         </div>

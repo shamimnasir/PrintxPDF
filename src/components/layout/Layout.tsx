@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { useHydrated } from '../ClientOnly'
+import { useHydrated } from '../useHydrated'
 import { ErrorBoundary } from '../ErrorBoundary'
 
 /** Shown while a route chunk loads, and by app-only routes until they mount after hydration. */

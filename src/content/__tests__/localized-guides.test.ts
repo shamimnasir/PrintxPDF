@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { LANGUAGE_PACKS, localizedContentIssues } from '../localizedGuidesFull'
 import { guideAlternates, guidePath, hubAlternates } from '../localizedGuides'
+import { LANGUAGE_ROUTES, localizedGuidePath } from '../localizedGuideRoutes'
 import { TOOLS } from '../../features/pdf/toolsMeta'
 import { ALL_POSTS } from '..'
 
@@ -27,13 +28,13 @@ describe('localized guides', () => {
   it('includes the English canonical page and every translated equivalent in reciprocal hreflang data', () => {
     const englishGuide = ALL_POSTS[0]
     const englishUrl = `https://printxpdf.com/blog/${englishGuide.cluster}/${englishGuide.slug}`
-    const alternates = guideAlternates(englishGuide.slug, 'https://printxpdf.com', LANGUAGE_PACKS)
+    const alternates = guideAlternates(englishGuide.slug, 'https://printxpdf.com', LANGUAGE_ROUTES)
     expect(alternates).toContainEqual({ lang: 'en', url: englishUrl })
     expect(alternates).toContainEqual({ lang: 'x-default', url: englishUrl })
     expect(alternates).toHaveLength(LANGUAGE_PACKS.length + 2)
-    for (const pack of LANGUAGE_PACKS) {
+    for (const pack of LANGUAGE_ROUTES) {
       const translated = pack.guides.find((guide) => guide.topic === englishGuide.slug)
-      expect(alternates).toContainEqual({ lang: pack.locale, url: `https://printxpdf.com${guidePath(pack, translated?.slug)}` })
+      expect(alternates).toContainEqual({ lang: pack.locale, url: `https://printxpdf.com${localizedGuidePath(pack, translated?.slug)}` })
     }
   })
 
@@ -42,5 +43,15 @@ describe('localized guides', () => {
     expect(alternates).toContainEqual({ lang: 'en', url: 'https://printxpdf.com/blog' })
     expect(alternates).toContainEqual({ lang: 'x-default', url: 'https://printxpdf.com/blog' })
     expect(alternates).toHaveLength(LANGUAGE_PACKS.length + 2)
+  })
+
+  it('keeps the site-wide language route index complete without shipping guide bodies', () => {
+    expect(LANGUAGE_ROUTES).toHaveLength(LANGUAGE_PACKS.length)
+    for (const pack of LANGUAGE_PACKS) {
+      const routes = LANGUAGE_ROUTES.find((item) => item.locale === pack.locale)
+      expect(routes?.guides.map(({ topic, slug }) => ({ topic, slug }))).toEqual(pack.guides.map(({ topic, slug }) => ({ topic, slug })))
+      expect(routes?.guides.every((guide) => !('body' in guide))).toBe(true)
+      expect(localizedGuidePath(routes!, routes!.guides[0].slug)).toBe(guidePath(pack, pack.guides[0].slug))
+    }
   })
 })

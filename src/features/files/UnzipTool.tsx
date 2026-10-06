@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Dropzone } from '../../components/ui/Dropzone'
-import { useToast } from '../../components/ui/Toast'
+import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar } from '../../components/ui/ResultList'
 import { downloadBlob, formatBytes, stripExt } from '../../lib/download'
 import { zipStore } from '../../lib/zip'

@@ -5,7 +5,7 @@ import type { Post } from '../../content/types'
 import { TOOLS } from '../../features/pdf/toolsMeta'
 import { TOOL_ALIASES } from '../../content/toolAliases'
 import { validateContent, LIMITS, type Issue } from '../../content/validate'
-import { useToast } from '../../components/ui/Toast'
+import { useToast } from '../../components/ui/toastContext'
 import { Card } from '../fields'
 import { adminApi, describeAdminError, readSession } from '../adminApi'
 import { exportConfig } from '../config'
@@ -20,14 +20,14 @@ export function BlogAdmin() {
   const { toast } = useToast()
   const [editing, setEditing] = useState<string | null>(null)
   const [draft, setDraft] = useState<Post | null>(null)
-  const [tick, setTick] = useState(0)
+  const [, setTick] = useState(0)
   const [busy, setBusy] = useState(false)
   const [signedIn, setSignedIn] = useState(() => !!readSession())
 
   useEffect(() => onDraftChange(() => setTick((n) => n + 1)), [])
 
-  const clusters = useMemo(draftClusters, [tick])
-  const changed = useMemo(changedFiles, [tick])
+  const clusters = draftClusters()
+  const changed = changedFiles()
   const issues: Issue[] = useMemo(() => validateContent(clusters, TOOL_SLUGS, today()), [clusters])
   const issuesFor = (slug: string) => issues.filter((i) => i.where === slug)
 

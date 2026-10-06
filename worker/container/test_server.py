@@ -253,9 +253,15 @@ class EbookTarget(unittest.TestCase):
     def test_fb2_and_txt_magic(self):
         import tempfile, os
         with tempfile.TemporaryDirectory() as d:
-            fb2 = os.path.join(d, 'a.fb2'); open(fb2, 'wb').write(b'<?xml version="1.0"?><FictionBook>')
-            txt = os.path.join(d, 'a.txt'); open(txt, 'wb').write('plain text with caf\u00e9'.encode('utf-8'))
-            bin_ = os.path.join(d, 'b.txt'); open(bin_, 'wb').write(b'MZ\x00\x00binary')
+            fb2 = os.path.join(d, 'a.fb2')
+            with open(fb2, 'wb') as f:
+                f.write(b'<?xml version="1.0"?><FictionBook>')
+            txt = os.path.join(d, 'a.txt')
+            with open(txt, 'wb') as f:
+                f.write('plain text with caf\u00e9'.encode('utf-8'))
+            bin_ = os.path.join(d, 'b.txt')
+            with open(bin_, 'wb') as f:
+                f.write(b'MZ\x00\x00binary')
             self.assertTrue(server.magic_matches(fb2, '.fb2'))
             self.assertTrue(server.magic_matches(txt, '.txt'))
             self.assertFalse(server.magic_matches(bin_, '.txt'))

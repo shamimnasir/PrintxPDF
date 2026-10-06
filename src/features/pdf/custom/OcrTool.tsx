@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Dropzone, FileList } from '../../../components/ui/Dropzone'
-import { useToast } from '../../../components/ui/Toast'
+import { useToast } from '../../../components/ui/toastContext'
 import { ProgressBar, ResultList } from '../../../components/ui/ResultList'
 import type { Output } from '../engines'
 import { useUser } from '../../account/useUser'

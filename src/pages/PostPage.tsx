@@ -9,9 +9,10 @@ import { Avatar } from '../components/ui/Avatar'
 import { AuthorBox } from '../components/ui/AuthorBox'
 import '../content/blog.css'
 import { ToolShotGallery } from '../components/ui/ToolShot'
-import { GuideCover, guideCoverAlt, guideCoverUrl } from '../components/ui/GuideCover'
+import { GuideCover } from '../components/ui/GuideCover'
+import { guideCoverAlt, guideCoverUrl } from '../components/ui/guideCoverUtils'
 import { guideAlternates } from '../content/localizedGuides'
-import { LANGUAGE_PACKS } from '../content/localizedGuidesFull'
+import { LANGUAGE_ROUTES } from '../content/localizedGuideRoutes'
 
 const slugify = (s: string) =>
   s
@@ -188,7 +189,7 @@ export default function PostPage() {
     title: post?.metaTitle || 'Not found',
     description: post?.metaDescription || '',
     path,
-    alternates: post ? guideAlternates(post.slug, SITE_URL, LANGUAGE_PACKS) : [],
+    alternates: post ? guideAlternates(post.slug, SITE_URL, LANGUAGE_ROUTES) : [],
     type: 'article',
     published: post?.published,
     updated: post?.updated,

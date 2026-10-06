@@ -4,7 +4,7 @@ import { useSiteConfig } from '../../admin/useSiteConfig'
 import { Wordmark } from './Wordmark'
 import { BrandMark } from './BrandMark'
 import { authorPath } from '../../lib/seo'
-import { LANGUAGE_DIRECTORY } from '../../content/localizedGuides'
+import { LANGUAGE_DIRECTORY } from '../../content/localizedGuideRoutes'
 
 export function Footer() {
   const cfg = useSiteConfig()

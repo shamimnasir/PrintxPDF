@@ -29,8 +29,8 @@ function useKnownRoutes() {
 export function PostEditor({ post, onChange, onDone, onDelete }: { post: Post; onChange: (p: Post) => void; onDone: () => void; onDelete?: () => void }) {
   const [tab, setTab] = useState<'meta' | 'body' | 'faqs' | 'links'>('meta')
   const known = useKnownRoutes()
-  const clusters = useMemo(draftClusters, [])
-  const allPosts = useMemo(draftPosts, [])
+  const clusters = useMemo(() => draftClusters(), [])
+  const allPosts = useMemo(() => draftPosts(), [])
 
   const issues: Issue[] = useMemo(() => {
     const ctx = buildContext(clusters, TOOLS.map((t) => t.slug), new Date().toISOString().slice(0, 10))

@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { ALL_POSTS } from '../../../content'
-import { guideCoverAlt, guideCoverUrl } from '../GuideCover'
+import { guideCoverAlt, guideCoverUrl } from '../guideCoverUtils'
 
 describe('guide artwork mapping', () => {
   it('gives every English guide a distinct, existing image', () => {

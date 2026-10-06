@@ -4,7 +4,7 @@
 // single plan. A promotion code is typed in by customers on the live checkout page, so the cost of
 // a careless one is real money, and the Worker refuses anything uncapped or unexpiring anyway.
 import { useEffect, useState } from 'react'
-import { useToast } from '../components/ui/Toast'
+import { useToast } from '../components/ui/toastContext'
 import { adminApi, describeAdminError, readSession, type Promo, type PromoInput } from './adminApi'
 import { Card, Field, Num, Toggle } from './fields'
 

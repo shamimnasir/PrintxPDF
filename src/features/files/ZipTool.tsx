@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from 'react'
 import { Dropzone } from '../../components/ui/Dropzone'
-import { useToast } from '../../components/ui/Toast'
+import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar } from '../../components/ui/ResultList'
 import { downloadBlob, formatBytes } from '../../lib/download'
 import { zipBlobs } from '../../lib/zip'

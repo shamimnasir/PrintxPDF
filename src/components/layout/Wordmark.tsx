@@ -11,5 +11,3 @@ export function Wordmark({ name }: { name: string }) {
     </span>
   )
 }
-
-export const initial = (name: string) => (name.trim() || 'P').charAt(0).toUpperCase()

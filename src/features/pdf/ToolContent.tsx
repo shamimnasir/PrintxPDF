@@ -4,10 +4,8 @@ import type { ToolContent } from '../../content/tools'
 import { Rich } from '../../pages/PostPage'
 import { ToolShot } from '../../components/ui/ToolShot'
 import { ToolCard } from './ToolCard'
+import { stepAnchor } from './toolContentUtils'
 import '../../content/blog.css'
-
-/** Anchor id for HowTo step n of a tool, shared with the prerenderer and the HowTo schema. */
-export const stepAnchor = (n: number) => `how-step-${n}`
 
 /** The editorial half of a tool page: what, why, how, FAQ. Rendered under the tool itself. */
 export function ToolContentSections({ tool, c, related = [] }: { tool: ToolMeta; c: ToolContent; related?: ToolMeta[] }) {

@@ -1,5 +1,5 @@
 import data from './localized-guides.json'
-import { ALL_POSTS } from './index'
+import { ENGLISH_GUIDE_ROUTES, LANGUAGE_ROUTES, localizedGuidePath } from './localizedGuideRoutes'
 
 export type LocalizedGuide = {
   topic: string
@@ -55,19 +55,19 @@ export const LANGUAGE_DIRECTORY = LANGUAGE_PACKS.map((pack) => ({
   active: true,
 }))
 
-export const guidePath = (pack: LanguagePack, slug?: string) =>
-  `/${pack.locale.toLowerCase()}/${pack.hub}${slug ? `/${slug}` : ''}`
+export const guidePath = (pack: Pick<LanguagePack, 'locale' | 'hub'>, slug?: string) =>
+  localizedGuidePath(pack, slug)
 
 export function languagePack(locale: string, hub: string): LanguagePack | undefined {
   return LANGUAGE_PACKS.find((p) => p.locale.toLowerCase() === locale.toLowerCase() && p.hub === hub)
 }
 
-export function guideAlternates(topic: string, site = 'https://printxpdf.com', packs: LanguagePack[] = LANGUAGE_PACKS): { lang: string; url: string }[] {
+export function guideAlternates(topic: string, site = 'https://printxpdf.com', packs = LANGUAGE_ROUTES): { lang: string; url: string }[] {
   const base = site.replace(/\/$/, '')
-  const english = ALL_POSTS.find((post) => post.slug === topic)
+  const english = ENGLISH_GUIDE_ROUTES.find((post) => post.slug === topic)
   const alternates = packs.map((pack) => {
     const guide = pack.guides.find((item) => item.topic === topic)
-    return { lang: pack.locale, url: `${base}${guidePath(pack, guide?.slug || topic)}` }
+    return { lang: pack.locale, url: `${base}${localizedGuidePath(pack, guide?.slug || topic)}` }
   })
   if (!english) return alternates
   const englishUrl = `${base}/blog/${english.cluster}/${english.slug}`
@@ -79,7 +79,7 @@ export function hubAlternates(site = 'https://printxpdf.com'): { lang: string; u
   const englishUrl = `${base}/blog`
   return [
     { lang: 'en', url: englishUrl },
-    ...LANGUAGE_PACKS.map((pack) => ({ lang: pack.locale, url: `${base}${guidePath(pack)}` })),
+    ...LANGUAGE_ROUTES.map((pack) => ({ lang: pack.locale, url: `${base}${localizedGuidePath(pack)}` })),
     { lang: 'x-default', url: englishUrl },
   ]
 }

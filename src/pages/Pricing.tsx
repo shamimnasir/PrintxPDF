@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { breadcrumbSchema, faqSchema, useSeo } from '../lib/seo'
-import { useToast } from '../components/ui/Toast'
+import { useToast } from '../components/ui/toastContext'
 import { useUser } from '../features/account/useUser'
 import { billing, describeError, type PaidPlan } from '../lib/api'
 

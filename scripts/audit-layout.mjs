@@ -108,8 +108,11 @@ for (const view of VIEWS) {
     page.on('requestfailed', onRequestFailed)
 
     try {
-      await page.goto(`${BASE}${route}`, { waitUntil: 'networkidle', timeout: 45000 })
-      await page.waitForTimeout(400)
+      // Do not wait for load or networkidle: third-party ads and analytics can delay both long
+      // after the initial document is usable. Deferred app scripts have run by DOMContentLoaded;
+      // the short settling window lets hydration update the server-rendered page before inspection.
+      await page.goto(`${BASE}${route}`, { waitUntil: 'domcontentloaded', timeout: 20000 })
+      await page.waitForTimeout(100)
       const r = await page.evaluate(inspect)
 
       if (r.overflow) {

@@ -1,4 +1,15 @@
-import { LANGUAGE_PACKS } from '../../content/localizedGuidesFull'
+import data from '../../content/localized-posts/es.json'
+import batch1 from '../../content/localized-posts/es-chatgpt-1.json'
+import batch2 from '../../content/localized-posts/es-chatgpt-2.json'
+import batch3 from '../../content/localized-posts/es-chatgpt-3.json'
+import batch4 from '../../content/localized-posts/es-chatgpt-4.json'
+import batch5 from '../../content/localized-posts/es-chatgpt-5.json'
+import batch6 from '../../content/localized-posts/es-chatgpt-6.json'
+import batch7 from '../../content/localized-posts/es-chatgpt-7.json'
+import batch8 from '../../content/localized-posts/es-chatgpt-8.json'
+import batch9 from '../../content/localized-posts/es-chatgpt-9.json'
+import batch10 from '../../content/localized-posts/es-chatgpt-10.json'
+import batch11 from '../../content/localized-posts/es-chatgpt-11.json'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-const pack = LANGUAGE_PACKS.find((item) => item.locale === 'es')
-export default createLocalizedGuidesPage('es', pack?.guides || [])
+const SpanishGuidesPage = createLocalizedGuidesPage('es', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides, ...batch11.guides])
+export default SpanishGuidesPage

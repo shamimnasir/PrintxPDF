@@ -1,16 +1,15 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { PLAN_LABEL } from '../../lib/api'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { TOOLS, CATEGORY_LABEL, MENUS } from '../../features/pdf/toolsMeta'
 import { TOOL_ALIASES } from '../../content/toolAliases'
 import { useUser } from '../../features/account/useUser'
 import { applyTheme, store } from '../../lib/store'
-import { safeStorage } from '../../admin/config'
+import { dismissAnnouncement, getAnnouncementSnapshot, getThemeSnapshot, subscribeAnnouncement, subscribeTheme } from './headerState'
 import { Wordmark } from './Wordmark'
 import { BrandMark } from './BrandMark'
 import { useSiteConfig } from '../../admin/useSiteConfig'
-import { LANGUAGE_DIRECTORY } from '../../content/localizedGuides'
-import { LANGUAGE_PACKS as FULL_LANGUAGE_PACKS, guidePath as localizedGuidePath } from '../../content/localizedGuidesFull'
+import { LANGUAGE_DIRECTORY, LANGUAGE_ROUTES, localizedGuidePath } from '../../content/localizedGuideRoutes'
 
 function NavMenu({ label, children, id, open, setOpen, wide }: { label: string; id: string; children: React.ReactNode; open: string | null; setOpen: (v: string | null) => void; wide?: boolean }) {
   const isOpen = open === id
@@ -31,26 +30,19 @@ function NavMenu({ label, children, id, open, setOpen, wide }: { label: string; 
 }
 
 export function Header() {
-  const [open, setOpen] = useState<string | null>(null)
-  const [menu, setMenu] = useState(false)
-  const user = useUser()
   const loc = useLocation()
+  const [openState, setOpenState] = useState<{ id: string | null; path: string }>({ id: null, path: loc.pathname })
+  const open = openState.path === loc.pathname ? openState.id : null
+  const setOpen = (id: string | null) => setOpenState({ id, path: loc.pathname })
+  const [menuState, setMenuState] = useState<{ open: boolean; path: string }>({ open: false, path: loc.pathname })
+  const menu = menuState.path === loc.pathname && menuState.open
+  const setMenu = (value: boolean) => setMenuState({ open: value, path: loc.pathname })
+  const user = useUser()
   const ref = useRef<HTMLDivElement>(null)
-  // both start from the static-HTML value and read the browser only after hydration
-  const [dark, setDark] = useState(false)
+  const dark = useSyncExternalStore(subscribeTheme, getThemeSnapshot, () => false)
   const cfg = useSiteConfig()
-  const [annOpen, setAnnOpen] = useState(true)
+  const annOpen = useSyncExternalStore(subscribeAnnouncement, getAnnouncementSnapshot, () => true)
   const ann = cfg.announcement
-
-  useEffect(() => {
-    setDark(document.documentElement.getAttribute('data-theme') === 'dark')
-    if (safeStorage('session')?.getItem('pxp:ann') === 'closed') setAnnOpen(false)
-  }, [])
-
-  useEffect(() => {
-    setOpen(null)
-    setMenu(false)
-  }, [loc.pathname])
 
   // sticky offsets (editor toolbar, article sidebar, heading anchors) depend on the real
   // header height, which changes when the announcement bar is shown or the nav wraps
@@ -68,21 +60,20 @@ export function Header() {
     const next = dark ? 'light' : 'dark'
     store.setSettings({ theme: next })
     applyTheme(next)
-    setDark(!dark)
   }
 
   const visible = TOOLS.filter((t) => !cfg.tools.hidden.includes(t.slug))
   const toolBySlug = new Map(TOOLS.map((t) => [t.slug, t]))
   const currentLocalizedRoute = loc.pathname.match(/^\/([^/]+)\/([^/]+)(?:\/([^/]+))?\/?$/)
   const currentLocalizedPack = currentLocalizedRoute
-    ? FULL_LANGUAGE_PACKS.find((pack) => pack.locale.toLowerCase() === currentLocalizedRoute[1].toLowerCase() && pack.hub === currentLocalizedRoute[2])
+    ? LANGUAGE_ROUTES.find((pack) => pack.locale.toLowerCase() === currentLocalizedRoute[1].toLowerCase() && pack.hub === currentLocalizedRoute[2])
     : undefined
   const currentLocalizedGuide = currentLocalizedRoute?.[3]
     ? currentLocalizedPack?.guides.find((guide) => guide.slug === currentLocalizedRoute[3])
     : undefined
   const englishGuideSlug = loc.pathname.match(/^\/blog\/(?:[^/]+\/)?([^/]+)\/?$/)?.[1]
   const englishGuideTopic = englishGuideSlug
-    ? FULL_LANGUAGE_PACKS.flatMap((pack) => pack.guides).find((guide) => guide.slug === englishGuideSlug || guide.topic === englishGuideSlug)?.topic
+    ? LANGUAGE_ROUTES.flatMap((pack) => pack.guides).find((guide) => guide.slug === englishGuideSlug || guide.topic === englishGuideSlug)?.topic
     : undefined
   const currentGuideTopic = currentLocalizedGuide?.topic ?? englishGuideTopic
   const currentLanguage = LANGUAGE_DIRECTORY.find((language) => language.locale === currentLocalizedPack?.locale)
@@ -103,8 +94,7 @@ export function Header() {
                 className="announce-x"
                 aria-label="Dismiss"
                 onClick={() => {
-                  safeStorage('session')?.setItem('pxp:ann', 'closed')
-                  setAnnOpen(false)
+                  dismissAnnouncement()
                 }}
               >
                 ×
@@ -176,7 +166,7 @@ export function Header() {
               <Link
                 key={language.locale}
                 to={(() => {
-                  const targetPack = FULL_LANGUAGE_PACKS.find((pack) => pack.locale === language.locale)
+                  const targetPack = LANGUAGE_ROUTES.find((pack) => pack.locale === language.locale)
                   const equivalent = currentGuideTopic ? targetPack?.guides.find((guide) => guide.topic === currentGuideTopic) : undefined
                   return targetPack ? localizedGuidePath(targetPack, equivalent?.slug) : language.path
                 })()}

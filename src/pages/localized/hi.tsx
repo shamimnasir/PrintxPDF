@@ -8,4 +8,5 @@ import batch6 from '../../content/localized-posts/hi-chatgpt-6.json'
 import batch7 from '../../content/localized-posts/hi-chatgpt-7.json'
 import batch8 from '../../content/localized-posts/hi-chatgpt-8.json'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-export default createLocalizedGuidesPage('hi', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides])
+const HindiGuidesPage = createLocalizedGuidesPage('hi', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides])
+export default HindiGuidesPage
