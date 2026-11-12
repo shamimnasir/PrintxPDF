@@ -18,6 +18,8 @@ All five are drafted in `src/content/posts/merge-pdf.json` and pass the content-
 4. How to split a large PDF for email
 5. How to split a PDF on iPhone, Android, Windows, and Mac
 
+The first Split PDF article is drafted and content-validated: `split-pdf-without-adobe-free`.
+
 Every article must: answer the query in the first 60–100 words; use question-led headings; include a 3–5 step workflow, an honest comparison table, four to five concise FAQs, internal links to the featured tool and two related tools, and a privacy-first CTA. It must state that PrintxPDF processes this browser-local workflow in the tab, with no account, watermark, or card required.
 
 ## Coverage rule
