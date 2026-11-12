@@ -1070,27 +1070,156 @@
       "intent": "howto",
       "localize": false,
       "primaryKeyword": "remove AI metadata from image",
-      "secondaryKeywords": ["remove C2PA metadata", "remove Content Credentials", "strip image metadata", "remove EXIF from image", "remove ChatGPT image metadata"],
-      "entities": ["EXIF", "IPTC", "XMP", "C2PA", "Content Credentials", "JPEG", "PNG", "WebP"],
+      "secondaryKeywords": [
+        "remove C2PA metadata",
+        "remove Content Credentials",
+        "strip image metadata",
+        "remove EXIF from image",
+        "remove ChatGPT image metadata"
+      ],
+      "entities": [
+        "EXIF",
+        "IPTC",
+        "XMP",
+        "C2PA",
+        "Content Credentials",
+        "JPEG",
+        "PNG",
+        "WebP"
+      ],
       "answer": "To remove common AI-related image metadata, create a new image file from the visible pixels rather than editing the original file in place. A fresh PNG, JPG or WebP copy drops common EXIF, IPTC, XMP and embedded C2PA or Content Credentials records, but it does not remove visible watermarks or labels.",
       "body": [
-        {"t":"p","x":"An image can carry two kinds of information: the pixels you can see, and data attached to the file that you cannot. A camera may add its model, capture time and location. An editor may add an author name and workflow notes. Some AI image systems may add a provenance record, often called Content Credentials. They are different things, but they travel together when you send the original file."},
-        {"t":"h2","x":"What AI image metadata can include"},
-        {"t":"table","caption":"Common data stored alongside image pixels.","head":["Kind of data","Examples","Visible in the picture?"],"rows":[["EXIF","Camera model, date, orientation, GPS location","No"],["IPTC and XMP","Author, title, keywords, editor or workflow details","No"],["C2PA / Content Credentials","An embedded provenance record about creation or edits","No"],["Visible marks","Watermark, caption, AI label or logo drawn into the picture","Yes"]]},
-        {"t":"p","x":"The distinction matters. File metadata can be left behind when a new file is encoded from the pixels. A visible mark is part of the pixels themselves, so a metadata tool should not claim to remove it. Altering or hiding a visible mark is a different image-editing task and can change the picture's meaning."},
-        {"t":"h2","x":"Remove metadata by creating a fresh copy"},
-        {"t":"steps","items":[{"h":"Keep the original","x":"Save the source somewhere safe before making a sharing copy. Metadata can be useful for your own archive, even when it is not appropriate to send it on."},{"h":"Open AI Metadata Remover","x":"Go to [AI Metadata Remover](/tools/remove-ai-metadata) and add PNG, JPG, WebP or HEIC images. The file is read in your browser and is not uploaded to PrintxPDF."},{"h":"Choose the output format","x":"Choose PNG if preserving the decoded pixels and transparency matters most. Choose JPG for ordinary photos when broad compatibility is the priority. WebP can keep transparency and is useful for web delivery."},{"h":"Make and inspect the clean copy","x":"Click Remove metadata, then download the new file. It is rebuilt from visible pixels, so common EXIF, IPTC, XMP and embedded C2PA or Content Credentials records are not copied across."}]},
-        {"t":"cta","tool":"remove-ai-metadata","x":"Make a metadata-free image copy locally. Your original stays untouched and your file is never uploaded."},
-        {"t":"h2","x":"What this does not remove"},
-        {"t":"warn","x":"This tool does not remove watermarks, captions, logos, text prompts rendered into the picture, or an AI label you can see. Those are pixels, not metadata. It also cannot remove information a service keeps in its own account records or elsewhere outside the downloaded image file."},
-        {"t":"p","x":"A new file can also change how the image is encoded. PNG is the best choice when you need exact decoded pixels. JPG and WebP use compression, so inspect a detailed area before using a sharing copy for print, evidence or production work. For a photo that needs to be smaller as well, use [Compress Image](/tools/compress-image) after you have kept a clean archival original."},
-        {"t":"h2","x":"When a metadata-free copy is useful"},
-        {"t":"ul","items":["Sharing a phone photo without its camera model, date or possible location details.","Sending a draft image outside an editorial or design workflow without its embedded author and workflow fields.","Preparing a web image where a fresh, smaller delivery format is useful alongside a retained original.","Making a distribution copy while preserving the original file and its provenance in a controlled archive."]},
-        {"t":"p","x":"Removing metadata is a privacy and file-handling choice, not proof that an image was or was not made with a particular tool. Treat provenance records as one source of context, keep originals where records matter, and do not use a stripped copy to misrepresent the origin of work."}
+        {
+          "t": "p",
+          "x": "An image can carry two kinds of information: the pixels you can see, and data attached to the file that you cannot. A camera may add its model, capture time and location. An editor may add an author name and workflow notes. Some AI image systems may add a provenance record, often called Content Credentials. They are different things, but they travel together when you send the original file."
+        },
+        {
+          "t": "h2",
+          "x": "What AI image metadata can include"
+        },
+        {
+          "t": "table",
+          "caption": "Common data stored alongside image pixels.",
+          "head": [
+            "Kind of data",
+            "Examples",
+            "Visible in the picture?"
+          ],
+          "rows": [
+            [
+              "EXIF",
+              "Camera model, date, orientation, GPS location",
+              "No"
+            ],
+            [
+              "IPTC and XMP",
+              "Author, title, keywords, editor or workflow details",
+              "No"
+            ],
+            [
+              "C2PA / Content Credentials",
+              "An embedded provenance record about creation or edits",
+              "No"
+            ],
+            [
+              "Visible marks",
+              "Watermark, caption, AI label or logo drawn into the picture",
+              "Yes"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "The distinction matters. File metadata can be left behind when a new file is encoded from the pixels. A visible mark is part of the pixels themselves, so a metadata tool should not claim to remove it. Altering or hiding a visible mark is a different image-editing task and can change the picture's meaning."
+        },
+        {
+          "t": "h2",
+          "x": "Remove metadata by creating a fresh copy"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Keep the original",
+              "x": "Save the source somewhere safe before making a sharing copy. Metadata can be useful for your own archive, even when it is not appropriate to send it on."
+            },
+            {
+              "h": "Open AI Metadata Remover",
+              "x": "Go to [AI Metadata Remover](/tools/remove-ai-metadata) and add PNG, JPG, WebP or HEIC images. The file is read in your browser and is not uploaded to PrintxPDF."
+            },
+            {
+              "h": "Choose the output format",
+              "x": "Choose PNG if preserving the decoded pixels and transparency matters most. Choose JPG for ordinary photos when broad compatibility is the priority. WebP can keep transparency and is useful for web delivery."
+            },
+            {
+              "h": "Make and inspect the clean copy",
+              "x": "Click Remove metadata, then download the new file. It is rebuilt from visible pixels, so common EXIF, IPTC, XMP and embedded C2PA or Content Credentials records are not copied across."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-ai-metadata",
+          "x": "Make a metadata-free image copy locally. Your original stays untouched and your file is never uploaded."
+        },
+        {
+          "t": "h2",
+          "x": "What this does not remove"
+        },
+        {
+          "t": "warn",
+          "x": "This tool does not remove watermarks, captions, logos, text prompts rendered into the picture, or an AI label you can see. Those are pixels, not metadata. It also cannot remove information a service keeps in its own account records or elsewhere outside the downloaded image file."
+        },
+        {
+          "t": "p",
+          "x": "A new file can also change how the image is encoded. PNG is the best choice when you need exact decoded pixels. JPG and WebP use compression, so inspect a detailed area before using a sharing copy for print, evidence or production work. For a photo that needs to be smaller as well, use [Compress Image](/tools/compress-image) after you have kept a clean archival original."
+        },
+        {
+          "t": "h2",
+          "x": "When a metadata-free copy is useful"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Sharing a phone photo without its camera model, date or possible location details.",
+            "Sending a draft image outside an editorial or design workflow without its embedded author and workflow fields.",
+            "Preparing a web image where a fresh, smaller delivery format is useful alongside a retained original.",
+            "Making a distribution copy while preserving the original file and its provenance in a controlled archive."
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Removing metadata is a privacy and file-handling choice, not proof that an image was or was not made with a particular tool. Treat provenance records as one source of context, keep originals where records matter, and do not use a stripped copy to misrepresent the origin of work."
+        }
       ],
-      "faqs":[{"q":"Does this remove ChatGPT, Claude or Gemini image metadata?","a":"It removes common embedded metadata that survives browser decoding, including EXIF, IPTC, XMP and C2PA or Content Credentials records where they are stored in the image file. Providers differ, so it cannot remove a visible label or data held outside the downloaded file."},{"q":"Will it remove an AI watermark?","a":"No. A visible watermark or label is part of the pixels. This tool creates a clean file copy without common embedded metadata; it does not alter visible content."},{"q":"Are images uploaded?","a":"No. The source is decoded and the new file is encoded inside your browser. PrintxPDF does not receive the image."},{"q":"Which output should I choose?","a":"Choose PNG for transparency or exact decoded pixels, JPG for widely compatible photographs, and WebP for modern web delivery. Keep the original regardless of the format you share."}],
-      "relatedTools":["remove-ai-metadata","image-converter","compress-image"],
-      "relatedPosts":["convert-an-image-format","compress-an-image","remove-metadata-from-pdf"]
+      "faqs": [
+        {
+          "q": "Does this remove ChatGPT, Claude or Gemini image metadata?",
+          "a": "It removes common embedded metadata that survives browser decoding, including EXIF, IPTC, XMP and C2PA or Content Credentials records where they are stored in the image file. Providers differ, so it cannot remove a visible label or data held outside the downloaded file."
+        },
+        {
+          "q": "Will it remove an AI watermark?",
+          "a": "No. A visible watermark or label is part of the pixels. This tool creates a clean file copy without common embedded metadata; it does not alter visible content."
+        },
+        {
+          "q": "Are images uploaded?",
+          "a": "No. The source is decoded and the new file is encoded inside your browser. PrintxPDF does not receive the image."
+        },
+        {
+          "q": "Which output should I choose?",
+          "a": "Choose PNG for transparency or exact decoded pixels, JPG for widely compatible photographs, and WebP for modern web delivery. Keep the original regardless of the format you share."
+        }
+      ],
+      "relatedTools": [
+        "remove-ai-metadata",
+        "image-converter",
+        "compress-image"
+      ],
+      "relatedPosts": [
+        "convert-an-image-format",
+        "compress-an-image",
+        "remove-metadata-from-pdf"
+      ]
     },
     {
       "slug": "content-credentials-c2pa-explained",
@@ -1104,26 +1233,626 @@
       "intent": "informational",
       "localize": false,
       "primaryKeyword": "Content Credentials C2PA metadata",
-      "secondaryKeywords": ["what is C2PA", "what are Content Credentials", "AI image provenance metadata", "C2PA image metadata", "remove Content Credentials"],
-      "entities": ["C2PA", "Content Credentials", "EXIF", "XMP", "JPEG", "PNG", "WebP"],
-      "answer": "Content Credentials are a type of provenance record that can be embedded in or associated with a media file using the C2PA standard. They can describe actions recorded by participating tools, but they are not a universal detector of AI-generated images and can be lost when a file is converted, resized or re-encoded.",
-      "body":[
-        {"t":"p","x":"Content Credentials are often discussed as though they are a permanent stamp inside every AI image. They are not. They are a provenance system: participating tools can record information about a media asset and attach or associate that record with the file. Whether a record exists, what it says and whether it survives sharing depends on the tool and the route the file takes."},
-        {"t":"h2","x":"C2PA and Content Credentials in plain language"},
-        {"t":"p","x":"C2PA is the technical standard behind many Content Credentials implementations. In practical terms, it gives compatible software a way to carry signed assertions about a file's history. A record might identify an application, state that edits were made, or point to a manifest associated with the asset. It is not the same as a pixel watermark, and it is not a universal verdict about whether an image is real, edited or AI-generated."},
-        {"t":"table","caption":"Three concepts that are commonly mixed together.","head":["Thing","Where it lives","What it can tell you"],"rows":[["Visible label or watermark","In the pixels","What is visibly printed or drawn on the image"],["EXIF / XMP / IPTC","Metadata fields in the file","Camera, author, title, dates or workflow information"],["C2PA / Content Credentials","A provenance record embedded in or associated with the asset","Claims recorded by participating tools, when the record is present and valid"]]},
-        {"t":"h2","x":"Why provenance records can disappear"},
-        {"t":"p","x":"Many ordinary file operations create a new image: a crop, screenshot, export, social-media upload, format conversion or compression pass. A new encoder may copy pixels but not copy every metadata block and provenance record. That does not prove anyone intended to remove the record; it only means the new file is not byte-for-byte the original. For evidence, recordkeeping or licensing work, keep the original asset and its source context rather than relying on a forwarded copy."},
-        {"t":"h2","x":"How a metadata-free image copy works"},
-        {"t":"steps","items":[{"h":"Separate the source from the sharing copy","x":"Keep the original file, then make a second copy for the destination. This preserves the source for any workflow that needs its metadata or provenance."},{"h":"Rebuild the copy from the visible pixels","x":"[AI Metadata Remover](/tools/remove-ai-metadata) decodes the image in your browser and writes a new PNG, JPG or WebP. Common embedded metadata and provenance blocks are not carried into the new file."},{"h":"Use the result honestly","x":"A clean copy is appropriate for privacy or delivery requirements. It is not a basis for claiming that an image has a different origin or history than it does."}]},
-        {"t":"cta","tool":"remove-ai-metadata","x":"Create a local sharing copy without common embedded image metadata. Keep the original when provenance matters."},
-        {"t":"h2","x":"What to do when provenance matters"},
-        {"t":"ul","items":["Keep the original file, rather than only a message-app or social-media copy.","Record the source, date received and relevant permissions alongside the original.","Use the software or service that supplied the record to inspect it when possible.","Do not treat the absence of a credential as proof of how an image was made.","Use a separate, clearly named delivery copy when privacy or platform requirements call for one."]},
-        {"t":"note","x":"Metadata removal is different from image editing. It leaves the intended visible picture alone while producing a new file. If you need a different file format or size too, see [how to convert an image format](/blog/files/convert-an-image-format) and [how to compress an image](/blog/files/compress-an-image)."}
+      "secondaryKeywords": [
+        "what is C2PA",
+        "what are Content Credentials",
+        "AI image provenance metadata",
+        "C2PA image metadata",
+        "remove Content Credentials"
       ],
-      "faqs":[{"q":"Are Content Credentials proof that an image was made by AI?","a":"No. They are provenance records from participating tools. A record may describe creation or editing actions, but its presence or absence is not a universal determination of an image's origin."},{"q":"Can C2PA metadata be removed by converting an image?","a":"A conversion or re-encoding can produce a new file without the original metadata and provenance blocks. That is why originals should be retained whenever provenance, licensing or evidence matters."},{"q":"Does a metadata-free copy change the visible image?","a":"The tool rebuilds the output from visible pixels. PNG preserves decoded pixels and transparency; JPG and WebP use compression, so check the result if fine detail is important."},{"q":"Should I delete the original after stripping metadata?","a":"Usually no. Keep the original separately, especially when it is your record of where an image came from or what its original metadata contained."}],
-      "relatedTools":["remove-ai-metadata","image-converter","compress-image"],
-      "relatedPosts":["remove-ai-metadata-from-images","convert-an-image-format","compress-an-image"]
+      "entities": [
+        "C2PA",
+        "Content Credentials",
+        "EXIF",
+        "XMP",
+        "JPEG",
+        "PNG",
+        "WebP"
+      ],
+      "answer": "Content Credentials are a type of provenance record that can be embedded in or associated with a media file using the C2PA standard. They can describe actions recorded by participating tools, but they are not a universal detector of AI-generated images and can be lost when a file is converted, resized or re-encoded.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Content Credentials are often discussed as though they are a permanent stamp inside every AI image. They are not. They are a provenance system: participating tools can record information about a media asset and attach or associate that record with the file. Whether a record exists, what it says and whether it survives sharing depends on the tool and the route the file takes."
+        },
+        {
+          "t": "h2",
+          "x": "C2PA and Content Credentials in plain language"
+        },
+        {
+          "t": "p",
+          "x": "C2PA is the technical standard behind many Content Credentials implementations. In practical terms, it gives compatible software a way to carry signed assertions about a file's history. A record might identify an application, state that edits were made, or point to a manifest associated with the asset. It is not the same as a pixel watermark, and it is not a universal verdict about whether an image is real, edited or AI-generated."
+        },
+        {
+          "t": "table",
+          "caption": "Three concepts that are commonly mixed together.",
+          "head": [
+            "Thing",
+            "Where it lives",
+            "What it can tell you"
+          ],
+          "rows": [
+            [
+              "Visible label or watermark",
+              "In the pixels",
+              "What is visibly printed or drawn on the image"
+            ],
+            [
+              "EXIF / XMP / IPTC",
+              "Metadata fields in the file",
+              "Camera, author, title, dates or workflow information"
+            ],
+            [
+              "C2PA / Content Credentials",
+              "A provenance record embedded in or associated with the asset",
+              "Claims recorded by participating tools, when the record is present and valid"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Why provenance records can disappear"
+        },
+        {
+          "t": "p",
+          "x": "Many ordinary file operations create a new image: a crop, screenshot, export, social-media upload, format conversion or compression pass. A new encoder may copy pixels but not copy every metadata block and provenance record. That does not prove anyone intended to remove the record; it only means the new file is not byte-for-byte the original. For evidence, recordkeeping or licensing work, keep the original asset and its source context rather than relying on a forwarded copy."
+        },
+        {
+          "t": "h2",
+          "x": "How a metadata-free image copy works"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Separate the source from the sharing copy",
+              "x": "Keep the original file, then make a second copy for the destination. This preserves the source for any workflow that needs its metadata or provenance."
+            },
+            {
+              "h": "Rebuild the copy from the visible pixels",
+              "x": "[AI Metadata Remover](/tools/remove-ai-metadata) decodes the image in your browser and writes a new PNG, JPG or WebP. Common embedded metadata and provenance blocks are not carried into the new file."
+            },
+            {
+              "h": "Use the result honestly",
+              "x": "A clean copy is appropriate for privacy or delivery requirements. It is not a basis for claiming that an image has a different origin or history than it does."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-ai-metadata",
+          "x": "Create a local sharing copy without common embedded image metadata. Keep the original when provenance matters."
+        },
+        {
+          "t": "h2",
+          "x": "What to do when provenance matters"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Keep the original file, rather than only a message-app or social-media copy.",
+            "Record the source, date received and relevant permissions alongside the original.",
+            "Use the software or service that supplied the record to inspect it when possible.",
+            "Do not treat the absence of a credential as proof of how an image was made.",
+            "Use a separate, clearly named delivery copy when privacy or platform requirements call for one."
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Metadata removal is different from image editing. It leaves the intended visible picture alone while producing a new file. If you need a different file format or size too, see [how to convert an image format](/blog/files/convert-an-image-format) and [how to compress an image](/blog/files/compress-an-image)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Are Content Credentials proof that an image was made by AI?",
+          "a": "No. They are provenance records from participating tools. A record may describe creation or editing actions, but its presence or absence is not a universal determination of an image's origin."
+        },
+        {
+          "q": "Can C2PA metadata be removed by converting an image?",
+          "a": "A conversion or re-encoding can produce a new file without the original metadata and provenance blocks. That is why originals should be retained whenever provenance, licensing or evidence matters."
+        },
+        {
+          "q": "Does a metadata-free copy change the visible image?",
+          "a": "The tool rebuilds the output from visible pixels. PNG preserves decoded pixels and transparency; JPG and WebP use compression, so check the result if fine detail is important."
+        },
+        {
+          "q": "Should I delete the original after stripping metadata?",
+          "a": "Usually no. Keep the original separately, especially when it is your record of where an image came from or what its original metadata contained."
+        }
+      ],
+      "relatedTools": [
+        "remove-ai-metadata",
+        "image-converter",
+        "compress-image"
+      ],
+      "relatedPosts": [
+        "remove-ai-metadata-from-images",
+        "convert-an-image-format",
+        "compress-an-image"
+      ]
+    },
+    {
+      "cluster": "files",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "entities": [
+        "AI-generated image",
+        "EXIF",
+        "XMP metadata",
+        "C2PA",
+        "browser privacy"
+      ],
+      "relatedTools": [
+        "remove-ai-metadata",
+        "remove-metadata",
+        "image-converter"
+      ],
+      "relatedPosts": [
+        "remove-ai-metadata-from-images",
+        "content-credentials-c2pa-explained",
+        "remove-metadata-from-pdf"
+      ],
+      "slug": "does-chatgpt-add-metadata-to-images",
+      "title": "Does ChatGPT add metadata to generated images?",
+      "metaTitle": "Does ChatGPT Add Image Metadata?",
+      "metaDescription": "Learn what AI image metadata can contain and create a clean copy free, with no signup and private in-browser processing.",
+      "primaryKeyword": "does ChatGPT add metadata to images",
+      "secondaryKeywords": [
+        "ChatGPT image metadata",
+        "AI image EXIF data",
+        "remove generated image metadata",
+        "clean image copy"
+      ],
+      "answer": "AI image files can contain metadata or provenance information depending on the tool, export path, and file format. Do not assume every image has the same fields. If you need a shareable copy without common metadata containers, make a new copy with PrintxPDF’s AI Metadata Remover, then review both the visible image and the destination.",
+      "opening": "ChatGPT-generated images may carry metadata depending on how they were created, saved, exported, and later edited. The only reliable way to know is to inspect the actual file; labels and metadata can vary by format and workflow. When you need a clean copy for ordinary sharing, PrintxPDF’s AI Metadata Remover makes a new image in your browser without common metadata containers, signup, or watermarks.",
+      "stepsHeading": "How to create a metadata-clean AI image copy",
+      "compareHeading": "Inspect, clean, or preserve the source?",
+      "limits": "This tool removes common metadata by creating a new image file. It cannot guarantee removal of every possible hidden signal across every format, platform, or future detection method. It also cannot prove an image is human-made, AI-made, authentic, licensed, or safe to publish. Treat the result as a sharing copy, not a forensic conclusion.",
+      "faqs": [
+        {
+          "q": "Do all ChatGPT images contain metadata?",
+          "a": "No. Metadata depends on the file format, generation path, export method, and later edits. Inspect the specific file rather than relying on a general assumption."
+        },
+        {
+          "q": "Will removing metadata change the image appearance?",
+          "a": "A re-saved copy is intended to preserve the visible image, but always compare the downloaded file before publishing or printing."
+        },
+        {
+          "q": "Can metadata removal remove a visible AI label?",
+          "a": "No. A visible label is part of the pixels. It requires an image-editing decision and may be subject to platform or licensing rules."
+        },
+        {
+          "q": "Should I keep the original AI image?",
+          "a": "Yes when you may need provenance, licensing, workflow history, or a higher-quality source. Share the clean copy separately."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "ChatGPT-generated images may carry metadata depending on how they were created, saved, exported, and later edited. The only reliable way to know is to inspect the actual file; labels and metadata can vary by format and workflow. When you need a clean copy for ordinary sharing, PrintxPDF’s AI Metadata Remover makes a new image in your browser without common metadata containers, signup, or watermarks."
+        },
+        {
+          "t": "h2",
+          "x": "How to create a metadata-clean AI image copy"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Save a copy first",
+              "x": "Keep the original in case you need its provenance, edit history, or source record later."
+            },
+            {
+              "h": "Open AI Metadata Remover",
+              "x": "Add the image to [AI Metadata Remover](/tools/remove-ai-metadata) in a current browser tab."
+            },
+            {
+              "h": "Create a clean copy",
+              "x": "Choose the output where offered, process the file, and download the new image. The original is not overwritten."
+            },
+            {
+              "h": "Check the result",
+              "x": "Open the output, compare the visible pixels, and inspect the intended sharing destination before posting or sending."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-ai-metadata",
+          "x": "Create a metadata-clean image copy in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Inspect, clean, or preserve the source?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Approach",
+            "What it changes",
+            "When it fits"
+          ],
+          "rows": [
+            [
+              "Re-save through AI Metadata Remover",
+              "Creates a new image without common metadata containers",
+              "Share a clean copy when the image itself is safe to share."
+            ],
+            [
+              "Edit metadata fields",
+              "Changes selected properties",
+              "Correct author or caption details without a full clean copy."
+            ],
+            [
+              "Blur or crop visible content",
+              "Changes pixels",
+              "Hide visible labels, faces, or sensitive surroundings."
+            ],
+            [
+              "Keep the original",
+              "Changes nothing",
+              "Retain provenance, workflow, or evidentiary details."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Metadata removal is not image anonymization"
+        },
+        {
+          "t": "p",
+          "x": "A clean metadata copy can still reveal information through its pixels. A visible watermark, caption, location sign, reflected screen, filename shown in a screenshot, or recognizable person is not metadata. Removing EXIF, XMP, or common AI provenance data does not alter those visible clues. Review the image at full size and use a separate editing process when the picture itself needs changes."
+        },
+        {
+          "t": "h2",
+          "x": "Why local browser processing matters"
+        },
+        {
+          "t": "p",
+          "x": "Images can include private interiors, client work, IDs, or unreleased campaign assets. For this standard workflow, PrintxPDF processes the file locally in the browser instead of routinely sending it to a server. That reduces an unnecessary copy outside your device. It does not replace your organization’s privacy policy, and it does not make an image appropriate to share with an untrusted recipient."
+        },
+        {
+          "t": "h2",
+          "x": "Know what the output can and cannot prove"
+        },
+        {
+          "t": "p",
+          "x": "This tool removes common metadata by creating a new image file. It cannot guarantee removal of every possible hidden signal across every format, platform, or future detection method. It also cannot prove an image is human-made, AI-made, authentic, licensed, or safe to publish. Treat the result as a sharing copy, not a forensic conclusion."
+        },
+        {
+          "t": "h2",
+          "x": "A practical sharing checklist"
+        },
+        {
+          "t": "p",
+          "x": "Before publishing, confirm the recipient needs the image, the visible content is acceptable, and the downloaded copy is the one you selected. Keep the original separately if you may need to show its source or edit history later. If the file is too large for a platform, use [Image Converter](/tools/image-converter) on a copy and check quality before posting."
+        }
+      ]
+    },
+    {
+      "cluster": "files",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "entities": [
+        "AI-generated image",
+        "EXIF",
+        "XMP metadata",
+        "C2PA",
+        "browser privacy"
+      ],
+      "relatedTools": [
+        "remove-ai-metadata",
+        "remove-metadata",
+        "image-converter"
+      ],
+      "relatedPosts": [
+        "remove-ai-metadata-from-images",
+        "content-credentials-c2pa-explained",
+        "remove-metadata-from-pdf"
+      ],
+      "slug": "remove-gemini-image-metadata-before-sharing",
+      "title": "How to remove Gemini image metadata before sharing",
+      "metaTitle": "Remove Gemini Image Metadata Before Sharing",
+      "metaDescription": "Remove common Gemini image metadata from a shareable copy free, no signup, no watermark, and private in your browser.",
+      "primaryKeyword": "remove Gemini image metadata",
+      "secondaryKeywords": [
+        "Gemini image metadata removal",
+        "remove AI image EXIF",
+        "clean Gemini image copy",
+        "private metadata remover"
+      ],
+      "answer": "To remove common metadata from a Gemini image before sharing, keep the original, create a separate clean copy in PrintxPDF’s AI Metadata Remover, download it, and inspect the output. This browser-local workflow removes common metadata containers but does not remove visible labels, pixels, or every possible forensic signal.",
+      "opening": "Before you share a Gemini image outside your team, decide whether the recipient needs its source metadata. If not, make a separate copy for distribution rather than changing the only original. PrintxPDF’s AI Metadata Remover creates a clean sharing copy locally in your browser. It is free for core use, needs no account, and does not add a watermark.",
+      "stepsHeading": "How to clean a Gemini image before sharing",
+      "compareHeading": "Which copy should you send?",
+      "limits": "A metadata-clean copy is not an invisibility cloak. Screenshots, file names, browser history, reposts, and platform-side records can still establish context. The tool does not erase visible content or guarantee that a recipient cannot infer how an image was made. It only addresses common metadata containers in the resulting file.",
+      "faqs": [
+        {
+          "q": "Can I remove Gemini metadata without an account?",
+          "a": "Yes. PrintxPDF’s standard browser-local AI metadata-removal workflow does not require a signup or card."
+        },
+        {
+          "q": "Does this remove Content Credentials from every file?",
+          "a": "It removes common metadata containers through a new image copy, but no tool should promise every signal is removable from every format or platform."
+        },
+        {
+          "q": "Can I use the cleaned image commercially?",
+          "a": "Metadata removal does not grant copyright, license, or platform rights. Check the applicable terms and the source of the image."
+        },
+        {
+          "q": "Does the original Gemini image change?",
+          "a": "No. The workflow creates a downloaded copy, so you can retain the original separately."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Before you share a Gemini image outside your team, decide whether the recipient needs its source metadata. If not, make a separate copy for distribution rather than changing the only original. PrintxPDF’s AI Metadata Remover creates a clean sharing copy locally in your browser. It is free for core use, needs no account, and does not add a watermark."
+        },
+        {
+          "t": "h2",
+          "x": "How to clean a Gemini image before sharing"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Save a copy first",
+              "x": "Keep the original in case you need its provenance, edit history, or source record later."
+            },
+            {
+              "h": "Open AI Metadata Remover",
+              "x": "Add the image to [AI Metadata Remover](/tools/remove-ai-metadata) in a current browser tab."
+            },
+            {
+              "h": "Create a clean copy",
+              "x": "Choose the output where offered, process the file, and download the new image. The original is not overwritten."
+            },
+            {
+              "h": "Check the result",
+              "x": "Open the output, compare the visible pixels, and inspect the intended sharing destination before posting or sending."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-ai-metadata",
+          "x": "Create a metadata-clean image copy in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Which copy should you send?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Approach",
+            "What it changes",
+            "When it fits"
+          ],
+          "rows": [
+            [
+              "Re-save through AI Metadata Remover",
+              "Creates a new image without common metadata containers",
+              "Share a clean copy when the image itself is safe to share."
+            ],
+            [
+              "Edit metadata fields",
+              "Changes selected properties",
+              "Correct author or caption details without a full clean copy."
+            ],
+            [
+              "Blur or crop visible content",
+              "Changes pixels",
+              "Hide visible labels, faces, or sensitive surroundings."
+            ],
+            [
+              "Keep the original",
+              "Changes nothing",
+              "Retain provenance, workflow, or evidentiary details."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Metadata removal is not image anonymization"
+        },
+        {
+          "t": "p",
+          "x": "A clean metadata copy can still reveal information through its pixels. A visible watermark, caption, location sign, reflected screen, filename shown in a screenshot, or recognizable person is not metadata. Removing EXIF, XMP, or common AI provenance data does not alter those visible clues. Review the image at full size and use a separate editing process when the picture itself needs changes."
+        },
+        {
+          "t": "h2",
+          "x": "Why local browser processing matters"
+        },
+        {
+          "t": "p",
+          "x": "Images can include private interiors, client work, IDs, or unreleased campaign assets. For this standard workflow, PrintxPDF processes the file locally in the browser instead of routinely sending it to a server. That reduces an unnecessary copy outside your device. It does not replace your organization’s privacy policy, and it does not make an image appropriate to share with an untrusted recipient."
+        },
+        {
+          "t": "h2",
+          "x": "Know what the output can and cannot prove"
+        },
+        {
+          "t": "p",
+          "x": "A metadata-clean copy is not an invisibility cloak. Screenshots, file names, browser history, reposts, and platform-side records can still establish context. The tool does not erase visible content or guarantee that a recipient cannot infer how an image was made. It only addresses common metadata containers in the resulting file."
+        },
+        {
+          "t": "h2",
+          "x": "A practical sharing checklist"
+        },
+        {
+          "t": "p",
+          "x": "Before publishing, confirm the recipient needs the image, the visible content is acceptable, and the downloaded copy is the one you selected. Keep the original separately if you may need to show its source or edit history later. If the file is too large for a platform, use [Image Converter](/tools/image-converter) on a copy and check quality before posting."
+        }
+      ]
+    },
+    {
+      "cluster": "files",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "entities": [
+        "AI-generated image",
+        "EXIF",
+        "XMP metadata",
+        "C2PA",
+        "browser privacy"
+      ],
+      "relatedTools": [
+        "remove-ai-metadata",
+        "remove-metadata",
+        "image-converter"
+      ],
+      "relatedPosts": [
+        "remove-ai-metadata-from-images",
+        "content-credentials-c2pa-explained",
+        "remove-metadata-from-pdf"
+      ],
+      "slug": "remove-ai-image-metadata-for-client-delivery",
+      "title": "Remove AI image metadata for client delivery",
+      "metaTitle": "Remove AI Image Metadata for Client Delivery",
+      "metaDescription": "Prepare a clean AI image delivery copy free, no signup, no watermark, with private in-browser metadata removal.",
+      "primaryKeyword": "remove AI image metadata for client delivery",
+      "secondaryKeywords": [
+        "client image delivery privacy",
+        "clean image metadata",
+        "remove image provenance data",
+        "AI asset handoff"
+      ],
+      "answer": "For client delivery, keep your original asset, create a clean distribution copy, inspect the visible image and file name, then send only the approved version. PrintxPDF’s AI Metadata Remover handles common metadata containers locally in your browser, but it does not change visible labels or replace a client’s disclosure and licensing requirements.",
+      "opening": "Client delivery is a good reason to separate the master asset from the file you send. The master may contain export details, workflow context, or provenance information that the recipient does not need. PrintxPDF’s AI Metadata Remover creates a separate sharing copy in your browser, giving you a simple privacy step without signup, hidden trial terms, or a watermark.",
+      "stepsHeading": "How to prepare a clean image delivery copy",
+      "compareHeading": "Master asset or delivery asset?",
+      "limits": "Metadata removal should be part of a delivery checklist, not the whole checklist. It does not remove an embedded visible credit, change usage rights, or satisfy a contract that requires disclosure of AI assistance. Agree on file format, color profile, naming, rights, and delivery method before sending the finished asset.",
+      "faqs": [
+        {
+          "q": "Should I remove metadata from every client image?",
+          "a": "Only when it fits the delivery agreement and your recordkeeping needs. Keep a master copy with workflow context when it may be useful later."
+        },
+        {
+          "q": "Does metadata removal reduce image quality?",
+          "a": "The output is intended as a normal shareable image copy, but inspect the downloaded file at the needed size before delivery."
+        },
+        {
+          "q": "Can I remove visible watermarks with this tool?",
+          "a": "No. Visible watermarks are pixels, not metadata. Removing or altering them may require permission and a separate editing workflow."
+        },
+        {
+          "q": "What else should I check before client delivery?",
+          "a": "Check the visible content, dimensions, format, color, filename, license, disclosure requirements, and the recipient’s preferred secure delivery channel."
+        }
+      ],
+      "body": [
+        {
+          "t": "p",
+          "x": "Client delivery is a good reason to separate the master asset from the file you send. The master may contain export details, workflow context, or provenance information that the recipient does not need. PrintxPDF’s AI Metadata Remover creates a separate sharing copy in your browser, giving you a simple privacy step without signup, hidden trial terms, or a watermark."
+        },
+        {
+          "t": "h2",
+          "x": "How to prepare a clean image delivery copy"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Save a copy first",
+              "x": "Keep the original in case you need its provenance, edit history, or source record later."
+            },
+            {
+              "h": "Open AI Metadata Remover",
+              "x": "Add the image to [AI Metadata Remover](/tools/remove-ai-metadata) in a current browser tab."
+            },
+            {
+              "h": "Create a clean copy",
+              "x": "Choose the output where offered, process the file, and download the new image. The original is not overwritten."
+            },
+            {
+              "h": "Check the result",
+              "x": "Open the output, compare the visible pixels, and inspect the intended sharing destination before posting or sending."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-ai-metadata",
+          "x": "Create a metadata-clean image copy in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Master asset or delivery asset?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Approach",
+            "What it changes",
+            "When it fits"
+          ],
+          "rows": [
+            [
+              "Re-save through AI Metadata Remover",
+              "Creates a new image without common metadata containers",
+              "Share a clean copy when the image itself is safe to share."
+            ],
+            [
+              "Edit metadata fields",
+              "Changes selected properties",
+              "Correct author or caption details without a full clean copy."
+            ],
+            [
+              "Blur or crop visible content",
+              "Changes pixels",
+              "Hide visible labels, faces, or sensitive surroundings."
+            ],
+            [
+              "Keep the original",
+              "Changes nothing",
+              "Retain provenance, workflow, or evidentiary details."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Metadata removal is not image anonymization"
+        },
+        {
+          "t": "p",
+          "x": "A clean metadata copy can still reveal information through its pixels. A visible watermark, caption, location sign, reflected screen, filename shown in a screenshot, or recognizable person is not metadata. Removing EXIF, XMP, or common AI provenance data does not alter those visible clues. Review the image at full size and use a separate editing process when the picture itself needs changes."
+        },
+        {
+          "t": "h2",
+          "x": "Why local browser processing matters"
+        },
+        {
+          "t": "p",
+          "x": "Images can include private interiors, client work, IDs, or unreleased campaign assets. For this standard workflow, PrintxPDF processes the file locally in the browser instead of routinely sending it to a server. That reduces an unnecessary copy outside your device. It does not replace your organization’s privacy policy, and it does not make an image appropriate to share with an untrusted recipient."
+        },
+        {
+          "t": "h2",
+          "x": "Know what the output can and cannot prove"
+        },
+        {
+          "t": "p",
+          "x": "Metadata removal should be part of a delivery checklist, not the whole checklist. It does not remove an embedded visible credit, change usage rights, or satisfy a contract that requires disclosure of AI assistance. Agree on file format, color profile, naming, rights, and delivery method before sending the finished asset."
+        },
+        {
+          "t": "h2",
+          "x": "A practical sharing checklist"
+        },
+        {
+          "t": "p",
+          "x": "Before publishing, confirm the recipient needs the image, the visible content is acceptable, and the downloaded copy is the one you selected. Keep the original separately if you may need to show its source or edit history later. If the file is too large for a platform, use [Image Converter](/tools/image-converter) on a copy and check quality before posting."
+        }
+      ]
     }
   ]
 }
