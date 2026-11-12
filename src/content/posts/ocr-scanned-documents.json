@@ -1143,6 +1143,40 @@
         {
           "t": "p",
           "x": "If you only need a subset, [extract the pages first](/tools/extract-pages) and OCR that smaller file. For more about searchable scans, see [make a PDF searchable](/blog/ocr/make-pdf-searchable), [improve OCR accuracy](/blog/ocr/improve-ocr-accuracy), and [extracting text from a PDF](/blog/from-pdf/pdf-to-text). The important end test is practical: can you find, select and copy the words you need, and do they match the page?"
+        },
+        {
+          "t": "h2",
+          "x": "Scan quality versus OCR-ready PDF"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Source",
+            "OCR result",
+            "Best next step"
+          ],
+          "rows": [
+            [
+              "Sharp, straight scan",
+              "Usually accurate text layer",
+              "Test names and numbers."
+            ],
+            [
+              "Blurry or skewed page",
+              "More recognition errors",
+              "Re-scan at better quality."
+            ],
+            [
+              "Handwriting",
+              "Limited recognition",
+              "Check manually against the image."
+            ],
+            [
+              "Clean digital PDF",
+              "OCR may be unnecessary",
+              "Test text selection first."
+            ]
+          ]
         }
       ],
       "faqs": [
@@ -1157,6 +1191,10 @@
         {
           "q": "Can I trust OCR for numbers and names?",
           "a": "Not without checking. Similar characters, faint printing and skew can cause errors. Verify high-impact details visually against the original scan."
+        },
+        {
+          "q": "What scan quality is best for searchable PDFs?",
+          "a": "Use a sharp, straight scan with clear contrast and readable type. Check the OCR output against names, dates, amounts, and any other high-risk details."
         }
       ],
       "relatedTools": [
