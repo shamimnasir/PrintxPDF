@@ -877,6 +877,40 @@
         {
           "t": "p",
           "x": "The browser preview helps separate a layout problem from a printer problem. If the saved PDF already has clipped text, adjust page scale, orientation, margins or the site content before printing. If the PDF looks correct but paper output is clipped, check the printer driver paper size, tray setting and non-printable margins. A4 and Letter differ in both dimensions, so a mismatch can shift a page even when the preview seems close. For a long article, remove repeated navigation and sidebars before printing, then inspect the first and last page plus every page where a table crosses a break."
+        },
+        {
+          "t": "h2",
+          "x": "Fix cut-off printing or save a clean PDF?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Problem",
+            "Best first step",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Content clipped at edge",
+              "Adjust print scale and margins",
+              "The page may fit without changing content."
+            ],
+            [
+              "Ads and navigation waste space",
+              "Use Web Page Cleaner",
+              "A clean layout removes nonessential elements."
+            ],
+            [
+              "Complex page breaks",
+              "Save PDF and review pages",
+              "You can inspect the final print layout before paper is used."
+            ],
+            [
+              "Site control is available",
+              "Add print CSS",
+              "A site owner can define a durable print layout."
+            ]
+          ]
         }
       ],
       "faqs": [
