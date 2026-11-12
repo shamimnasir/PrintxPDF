@@ -566,6 +566,65 @@
           "t": "cta",
           "tool": "pdf-reader",
           "x": "Got a PDF that prints badly? Open it in the reader and check the page size first."
+        },
+        {
+          "t": "h2",
+          "x": "Diagnose a web printing problem before retrying"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Preview before printing",
+              "x": "Use print preview or save a PDF to identify where the layout breaks."
+            },
+            {
+              "h": "Check scale and margins",
+              "x": "Reset browser scaling, choose sensible margins, and verify paper size."
+            },
+            {
+              "h": "Remove page clutter",
+              "x": "Use [Print any web page](/) when ads, menus, or pop-ups create unwanted breaks."
+            },
+            {
+              "h": "Inspect the final PDF",
+              "x": "Check the first, middle, and final page before using paper or sharing the file."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Print settings versus clean-page tools"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Issue",
+            "First option",
+            "When to use another approach"
+          ],
+          "rows": [
+            [
+              "Content clipped",
+              "Scale and margin adjustment",
+              "Use a clean-page tool if page clutter causes overflow."
+            ],
+            [
+              "Ads or navigation print",
+              "Clean-page workflow",
+              "Use print CSS if you control the site."
+            ],
+            [
+              "Incorrect paper layout",
+              "Change orientation and paper size",
+              "Save PDF to review before printing."
+            ],
+            [
+              "Dynamic content missing",
+              "Wait for page load and save PDF",
+              "Use a supported capture workflow for complex pages."
+            ]
+          ]
         }
       ],
       "faqs": [

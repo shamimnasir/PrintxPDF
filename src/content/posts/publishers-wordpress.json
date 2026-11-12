@@ -1200,6 +1200,40 @@
         {
           "t": "p",
           "x": "For document delivery on a website, see [adding a print button to WordPress](/blog/publishers/add-print-button-to-wordpress) and [printer-friendly page design](/blog/publishers/printer-friendly-website-design). For ebook-specific limits, read [ebook formats explained](/blog/ebooks/ebook-formats-explained) and [DRM and conversion](/blog/ebooks/ebook-drm-explained)."
+        },
+        {
+          "t": "h2",
+          "x": "PDF, accessible HTML, or tagged document?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Format",
+            "Best for",
+            "Accessibility consideration"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Fixed visual record",
+              "Needs proper tags and reading order for assistive technology."
+            ],
+            [
+              "HTML",
+              "Responsive reading on the web",
+              "Supports reflow, landmarks, and semantic headings."
+            ],
+            [
+              "Markdown",
+              "Source text and documentation",
+              "Requires good heading structure and an accessible renderer."
+            ],
+            [
+              "Accessible source document",
+              "Editing and future export",
+              "Keep it as the maintainable origin."
+            ]
+          ]
         }
       ],
       "faqs": [
@@ -1214,6 +1248,10 @@
         {
           "q": "Does PDF to PowerPoint recreate the original presentation?",
           "a": "It produces a starting deck, not the original editable source. Review text, diagrams, fonts, layout and objects before using or publishing it."
+        },
+        {
+          "q": "Should I keep the original document after repurposing a PDF?",
+          "a": "Yes. Keep the editable source when possible. It is easier to correct reading order, headings, alt text, and future updates before exporting a new accessible format."
         }
       ],
       "relatedTools": [
