@@ -124,6 +124,35 @@
         {
           "t": "note",
           "x": "If you need a fixed layout for printing or citation, EPUB is not the right destination. Convert the DRM-free source to PDF instead and choose a page size, then inspect the result. Our [EPUB to PDF guide](/blog/ebooks/convert-epub-to-pdf) explains those trade-offs."
+        },
+        {
+          "t": "h2",
+          "x": "AZW3 to EPUB versus PDF conversion"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Output",
+            "Best for",
+            "Trade-off"
+          ],
+          "rows": [
+            [
+              "EPUB",
+              "Reflowable reading on compatible apps",
+              "Layout can adapt across screens."
+            ],
+            [
+              "PDF",
+              "Fixed pages and printing",
+              "Text does not reflow for small screens."
+            ],
+            [
+              "Original AZW3",
+              "Kindle-compatible source",
+              "May not open outside supported Kindle workflows."
+            ]
+          ]
         }
       ],
       "faqs": [
@@ -145,6 +174,7 @@
         }
       ],
       "relatedTools": [
+        "ebook-converter",
         "ebook-converter"
       ],
       "relatedPosts": [
