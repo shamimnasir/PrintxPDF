@@ -1663,6 +1663,662 @@
         "make-pdf-searchable",
         "how-to-merge-pdf-files"
       ]
+    },
+    {
+      "slug": "crop-pdf-margins-for-printing",
+      "cluster": "edit",
+      "title": "How to crop PDF margins for printing",
+      "metaTitle": "How to crop PDF margins for printing",
+      "metaDescription": "How to crop PDF margins for printing free, with no signup, no watermark, and private in-browser PDF processing.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "crop PDF margins for printing",
+      "secondaryKeywords": [
+        "crop PDF pages free",
+        "trim PDF margins",
+        "crop PDF online",
+        "private PDF cropper"
+      ],
+      "entities": [
+        "PDF",
+        "crop box",
+        "page margin",
+        "browser privacy",
+        "document redaction"
+      ],
+      "answer": "To crop PDF margins for printing, make a copy, set a safe crop boundary, inspect page headers and footers, then print a test page. PrintxPDF lets you crop standard PDFs in your browser without signup or a watermark.",
+      "body": [
+        {
+          "t": "p",
+          "x": "For printing, excessive white space can waste paper or make a worksheet look unfinished. Cropping a PDF adjusts the visible page area; it is useful for trimming white margins, scanner edges, or an unwanted border. PrintxPDF performs this standard task in the browser tab with no signup, card, or watermark. Keep the original file because cropping is a presentation change, not a way to remove sensitive content."
+        },
+        {
+          "t": "h2",
+          "x": "How to crop PDF pages in your browser"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Keep the source copy",
+              "x": "Duplicate or retain the original PDF before changing page appearance."
+            },
+            {
+              "h": "Open Crop PDF",
+              "x": "Add the file to [Crop PDF](/tools/crop-pdf) from your browser."
+            },
+            {
+              "h": "Set the crop area",
+              "x": "Drag the boundary or enter the required margins. Use a consistent setting for pages that should match."
+            },
+            {
+              "h": "Apply and download",
+              "x": "Create the cropped copy and save it with a clear name."
+            },
+            {
+              "h": "Inspect the output",
+              "x": "Open several pages at normal zoom to confirm that no headings, page numbers, signatures, or tables were cut off."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Trim PDF pages in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Cropping versus other PDF changes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Goal",
+            "Best tool",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Trim visible margins",
+              "Crop PDF",
+              "A new viewable page area."
+            ],
+            [
+              "Remove a page entirely",
+              "Delete Pages",
+              "A copy without the selected page."
+            ],
+            [
+              "Hide confidential text",
+              "Redact PDF",
+              "A deliberate redaction workflow."
+            ],
+            [
+              "Change page order",
+              "Organize PDF",
+              "The same pages in a new sequence."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cropping does not erase hidden content"
+        },
+        {
+          "t": "p",
+          "x": "Cropping changes the page boundary that a reader displays. It is not a security feature and must not be treated as redaction. Content outside the visible crop can remain in the file and may be recoverable or exposed by another viewer. When information must not be disclosed, use [Redact PDF](/tools/redact-pdf) and verify the redacted output. For document properties, use [Remove Metadata](/tools/remove-metadata) when policy requires it."
+        },
+        {
+          "t": "h2",
+          "x": "Keep pages consistent for printing"
+        },
+        {
+          "t": "p",
+          "x": "A crop that looks fine on one page can cut into a footer or signature block on another. Check a page from the beginning, middle, and end of the document. For scans, page edges can shift from sheet to sheet. Make a small test output first if a document has uneven margins, charts close to the edge, or mixed page sizes."
+        },
+        {
+          "t": "h2",
+          "x": "Why process private documents locally"
+        },
+        {
+          "t": "p",
+          "x": "Forms, invoices, applications, and records may contain more information than the recipient needs. Browser-local crop processing avoids adding a routine file transfer to this simple preparation step. You still control where the downloaded result goes, so review file names and page content before emailing, printing, or uploading it."
+        },
+        {
+          "t": "h2",
+          "x": "Finish with a review copy"
+        },
+        {
+          "t": "p",
+          "x": "Open the new PDF before sharing it. Check page count, orientation, and text near each trimmed edge. If the cropped file becomes part of a larger packet, use [Merge PDF](/tools/merge-pdf) only after you confirm each component. Keep the untouched source until the job is accepted."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I crop a PDF for free?",
+          "a": "Yes. Add the PDF, set the visible page area, download the copy, and inspect it. PrintxPDF’s core crop workflow does not require signup."
+        },
+        {
+          "q": "Does cropping remove text from a PDF?",
+          "a": "No. Cropping changes the visible area and should not be used to hide sensitive content. Use proper redaction for information that must not be recoverable."
+        },
+        {
+          "q": "Can I crop every page of a PDF?",
+          "a": "Yes. Apply a consistent crop when pages share the same margins, then inspect pages throughout the file for shifted content."
+        },
+        {
+          "q": "Will cropping change the original PDF?",
+          "a": "No. Save the output as a separate file and retain the original until you have checked the cropped result."
+        }
+      ],
+      "relatedTools": [
+        "crop-pdf",
+        "redact-pdf",
+        "remove-metadata",
+        "merge-pdf",
+        "organize-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-crop-a-pdf",
+        "remove-metadata-from-pdf",
+        "how-to-merge-pdf-files",
+        "delete-pages-from-pdf"
+      ]
+    },
+    {
+      "slug": "crop-scanned-pdf-pages",
+      "cluster": "edit",
+      "title": "How to crop scanned PDF pages",
+      "metaTitle": "How to crop scanned PDF pages",
+      "metaDescription": "Crop scanned PDF pages free with no signup, no watermark, and private in-browser processing for clean, print-ready documents.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "crop scanned PDF pages",
+      "secondaryKeywords": [
+        "crop PDF pages free",
+        "trim PDF margins",
+        "crop PDF online",
+        "private PDF cropper"
+      ],
+      "entities": [
+        "PDF",
+        "crop box",
+        "page margin",
+        "browser privacy",
+        "document redaction"
+      ],
+      "answer": "To crop scanned PDF pages, use a consistent boundary for the scanner edge, check pages with skew or shifted paper, and download a separate copy. Cropping improves presentation but does not improve scan readability or erase information outside the visible area.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Scanned PDFs often show dark scanner borders, uneven margins, or a little extra paper around each page. Cropping a PDF adjusts the visible page area; it is useful for trimming white margins, scanner edges, or an unwanted border. PrintxPDF performs this standard task in the browser tab with no signup, card, or watermark. Keep the original file because cropping is a presentation change, not a way to remove sensitive content."
+        },
+        {
+          "t": "h2",
+          "x": "How to crop PDF pages in your browser"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Keep the source copy",
+              "x": "Duplicate or retain the original PDF before changing page appearance."
+            },
+            {
+              "h": "Open Crop PDF",
+              "x": "Add the file to [Crop PDF](/tools/crop-pdf) from your browser."
+            },
+            {
+              "h": "Set the crop area",
+              "x": "Drag the boundary or enter the required margins. Use a consistent setting for pages that should match."
+            },
+            {
+              "h": "Apply and download",
+              "x": "Create the cropped copy and save it with a clear name."
+            },
+            {
+              "h": "Inspect the output",
+              "x": "Open several pages at normal zoom to confirm that no headings, page numbers, signatures, or tables were cut off."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Trim PDF pages in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Cropping versus other PDF changes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Goal",
+            "Best tool",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Trim visible margins",
+              "Crop PDF",
+              "A new viewable page area."
+            ],
+            [
+              "Remove a page entirely",
+              "Delete Pages",
+              "A copy without the selected page."
+            ],
+            [
+              "Hide confidential text",
+              "Redact PDF",
+              "A deliberate redaction workflow."
+            ],
+            [
+              "Change page order",
+              "Organize PDF",
+              "The same pages in a new sequence."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cropping does not erase hidden content"
+        },
+        {
+          "t": "p",
+          "x": "Cropping changes the page boundary that a reader displays. It is not a security feature and must not be treated as redaction. Content outside the visible crop can remain in the file and may be recoverable or exposed by another viewer. When information must not be disclosed, use [Redact PDF](/tools/redact-pdf) and verify the redacted output. For document properties, use [Remove Metadata](/tools/remove-metadata) when policy requires it."
+        },
+        {
+          "t": "h2",
+          "x": "Keep pages consistent for printing"
+        },
+        {
+          "t": "p",
+          "x": "A crop that looks fine on one page can cut into a footer or signature block on another. Check a page from the beginning, middle, and end of the document. For scans, page edges can shift from sheet to sheet. Make a small test output first if a document has uneven margins, charts close to the edge, or mixed page sizes."
+        },
+        {
+          "t": "h2",
+          "x": "Why process private documents locally"
+        },
+        {
+          "t": "p",
+          "x": "Forms, invoices, applications, and records may contain more information than the recipient needs. Browser-local crop processing avoids adding a routine file transfer to this simple preparation step. You still control where the downloaded result goes, so review file names and page content before emailing, printing, or uploading it."
+        },
+        {
+          "t": "h2",
+          "x": "Finish with a review copy"
+        },
+        {
+          "t": "p",
+          "x": "Open the new PDF before sharing it. Check page count, orientation, and text near each trimmed edge. If the cropped file becomes part of a larger packet, use [Merge PDF](/tools/merge-pdf) only after you confirm each component. Keep the untouched source until the job is accepted."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I crop a PDF for free?",
+          "a": "Yes. Add the PDF, set the visible page area, download the copy, and inspect it. PrintxPDF’s core crop workflow does not require signup."
+        },
+        {
+          "q": "Does cropping remove text from a PDF?",
+          "a": "No. Cropping changes the visible area and should not be used to hide sensitive content. Use proper redaction for information that must not be recoverable."
+        },
+        {
+          "q": "Can I crop every page of a PDF?",
+          "a": "Yes. Apply a consistent crop when pages share the same margins, then inspect pages throughout the file for shifted content."
+        },
+        {
+          "q": "Will cropping change the original PDF?",
+          "a": "No. Save the output as a separate file and retain the original until you have checked the cropped result."
+        }
+      ],
+      "relatedTools": [
+        "crop-pdf",
+        "redact-pdf",
+        "remove-metadata",
+        "merge-pdf",
+        "organize-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-crop-a-pdf",
+        "remove-metadata-from-pdf",
+        "how-to-merge-pdf-files",
+        "delete-pages-from-pdf"
+      ]
+    },
+    {
+      "slug": "crop-pdf-without-adobe",
+      "cluster": "edit",
+      "title": "How to crop a PDF without Adobe",
+      "metaTitle": "How to crop a PDF without Adobe",
+      "metaDescription": "Crop a PDF without Adobe free, with no signup, no watermark, and private in-browser processing for clean print layouts.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "crop PDF without Adobe",
+      "secondaryKeywords": [
+        "crop PDF pages free",
+        "trim PDF margins",
+        "crop PDF online",
+        "private PDF cropper"
+      ],
+      "entities": [
+        "PDF",
+        "crop box",
+        "page margin",
+        "browser privacy",
+        "document redaction"
+      ],
+      "answer": "You can crop a PDF without Adobe by opening a browser-based crop tool, choosing the visible page area, creating a copy, and checking the result. PrintxPDF handles standard cropping privately in your browser with no account or watermark.",
+      "body": [
+        {
+          "t": "p",
+          "x": "You do not need desktop software just to trim a page boundary. Cropping a PDF adjusts the visible page area; it is useful for trimming white margins, scanner edges, or an unwanted border. PrintxPDF performs this standard task in the browser tab with no signup, card, or watermark. Keep the original file because cropping is a presentation change, not a way to remove sensitive content."
+        },
+        {
+          "t": "h2",
+          "x": "How to crop PDF pages in your browser"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Keep the source copy",
+              "x": "Duplicate or retain the original PDF before changing page appearance."
+            },
+            {
+              "h": "Open Crop PDF",
+              "x": "Add the file to [Crop PDF](/tools/crop-pdf) from your browser."
+            },
+            {
+              "h": "Set the crop area",
+              "x": "Drag the boundary or enter the required margins. Use a consistent setting for pages that should match."
+            },
+            {
+              "h": "Apply and download",
+              "x": "Create the cropped copy and save it with a clear name."
+            },
+            {
+              "h": "Inspect the output",
+              "x": "Open several pages at normal zoom to confirm that no headings, page numbers, signatures, or tables were cut off."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Trim PDF pages in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Cropping versus other PDF changes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Goal",
+            "Best tool",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Trim visible margins",
+              "Crop PDF",
+              "A new viewable page area."
+            ],
+            [
+              "Remove a page entirely",
+              "Delete Pages",
+              "A copy without the selected page."
+            ],
+            [
+              "Hide confidential text",
+              "Redact PDF",
+              "A deliberate redaction workflow."
+            ],
+            [
+              "Change page order",
+              "Organize PDF",
+              "The same pages in a new sequence."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cropping does not erase hidden content"
+        },
+        {
+          "t": "p",
+          "x": "Cropping changes the page boundary that a reader displays. It is not a security feature and must not be treated as redaction. Content outside the visible crop can remain in the file and may be recoverable or exposed by another viewer. When information must not be disclosed, use [Redact PDF](/tools/redact-pdf) and verify the redacted output. For document properties, use [Remove Metadata](/tools/remove-metadata) when policy requires it."
+        },
+        {
+          "t": "h2",
+          "x": "Keep pages consistent for printing"
+        },
+        {
+          "t": "p",
+          "x": "A crop that looks fine on one page can cut into a footer or signature block on another. Check a page from the beginning, middle, and end of the document. For scans, page edges can shift from sheet to sheet. Make a small test output first if a document has uneven margins, charts close to the edge, or mixed page sizes."
+        },
+        {
+          "t": "h2",
+          "x": "Why process private documents locally"
+        },
+        {
+          "t": "p",
+          "x": "Forms, invoices, applications, and records may contain more information than the recipient needs. Browser-local crop processing avoids adding a routine file transfer to this simple preparation step. You still control where the downloaded result goes, so review file names and page content before emailing, printing, or uploading it."
+        },
+        {
+          "t": "h2",
+          "x": "Finish with a review copy"
+        },
+        {
+          "t": "p",
+          "x": "Open the new PDF before sharing it. Check page count, orientation, and text near each trimmed edge. If the cropped file becomes part of a larger packet, use [Merge PDF](/tools/merge-pdf) only after you confirm each component. Keep the untouched source until the job is accepted."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I crop a PDF for free?",
+          "a": "Yes. Add the PDF, set the visible page area, download the copy, and inspect it. PrintxPDF’s core crop workflow does not require signup."
+        },
+        {
+          "q": "Does cropping remove text from a PDF?",
+          "a": "No. Cropping changes the visible area and should not be used to hide sensitive content. Use proper redaction for information that must not be recoverable."
+        },
+        {
+          "q": "Can I crop every page of a PDF?",
+          "a": "Yes. Apply a consistent crop when pages share the same margins, then inspect pages throughout the file for shifted content."
+        },
+        {
+          "q": "Will cropping change the original PDF?",
+          "a": "No. Save the output as a separate file and retain the original until you have checked the cropped result."
+        }
+      ],
+      "relatedTools": [
+        "crop-pdf",
+        "redact-pdf",
+        "remove-metadata",
+        "merge-pdf",
+        "organize-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-crop-a-pdf",
+        "remove-metadata-from-pdf",
+        "how-to-merge-pdf-files",
+        "delete-pages-from-pdf"
+      ]
+    },
+    {
+      "slug": "crop-pdf-pages-to-same-size",
+      "cluster": "edit",
+      "title": "How to crop PDF pages to the same size",
+      "metaTitle": "How to crop PDF pages to the same size",
+      "metaDescription": "How to crop PDF pages to the same size free, with no signup, no watermark, and private in-browser PDF processing.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "crop PDF pages to the same size",
+      "secondaryKeywords": [
+        "crop PDF pages free",
+        "trim PDF margins",
+        "crop PDF online",
+        "private PDF cropper"
+      ],
+      "entities": [
+        "PDF",
+        "crop box",
+        "page margin",
+        "browser privacy",
+        "document redaction"
+      ],
+      "answer": "To crop PDF pages to the same visible size, choose a safe common boundary, apply it consistently, and inspect the first, middle, and final pages. Keep originals because documents with mixed layouts may need different crop settings.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Uniform page edges can make a packet easier to print, bind, or read on screen. Cropping a PDF adjusts the visible page area; it is useful for trimming white margins, scanner edges, or an unwanted border. PrintxPDF performs this standard task in the browser tab with no signup, card, or watermark. Keep the original file because cropping is a presentation change, not a way to remove sensitive content."
+        },
+        {
+          "t": "h2",
+          "x": "How to crop PDF pages in your browser"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Keep the source copy",
+              "x": "Duplicate or retain the original PDF before changing page appearance."
+            },
+            {
+              "h": "Open Crop PDF",
+              "x": "Add the file to [Crop PDF](/tools/crop-pdf) from your browser."
+            },
+            {
+              "h": "Set the crop area",
+              "x": "Drag the boundary or enter the required margins. Use a consistent setting for pages that should match."
+            },
+            {
+              "h": "Apply and download",
+              "x": "Create the cropped copy and save it with a clear name."
+            },
+            {
+              "h": "Inspect the output",
+              "x": "Open several pages at normal zoom to confirm that no headings, page numbers, signatures, or tables were cut off."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Trim PDF pages in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Cropping versus other PDF changes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Goal",
+            "Best tool",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Trim visible margins",
+              "Crop PDF",
+              "A new viewable page area."
+            ],
+            [
+              "Remove a page entirely",
+              "Delete Pages",
+              "A copy without the selected page."
+            ],
+            [
+              "Hide confidential text",
+              "Redact PDF",
+              "A deliberate redaction workflow."
+            ],
+            [
+              "Change page order",
+              "Organize PDF",
+              "The same pages in a new sequence."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cropping does not erase hidden content"
+        },
+        {
+          "t": "p",
+          "x": "Cropping changes the page boundary that a reader displays. It is not a security feature and must not be treated as redaction. Content outside the visible crop can remain in the file and may be recoverable or exposed by another viewer. When information must not be disclosed, use [Redact PDF](/tools/redact-pdf) and verify the redacted output. For document properties, use [Remove Metadata](/tools/remove-metadata) when policy requires it."
+        },
+        {
+          "t": "h2",
+          "x": "Keep pages consistent for printing"
+        },
+        {
+          "t": "p",
+          "x": "A crop that looks fine on one page can cut into a footer or signature block on another. Check a page from the beginning, middle, and end of the document. For scans, page edges can shift from sheet to sheet. Make a small test output first if a document has uneven margins, charts close to the edge, or mixed page sizes."
+        },
+        {
+          "t": "h2",
+          "x": "Why process private documents locally"
+        },
+        {
+          "t": "p",
+          "x": "Forms, invoices, applications, and records may contain more information than the recipient needs. Browser-local crop processing avoids adding a routine file transfer to this simple preparation step. You still control where the downloaded result goes, so review file names and page content before emailing, printing, or uploading it."
+        },
+        {
+          "t": "h2",
+          "x": "Finish with a review copy"
+        },
+        {
+          "t": "p",
+          "x": "Open the new PDF before sharing it. Check page count, orientation, and text near each trimmed edge. If the cropped file becomes part of a larger packet, use [Merge PDF](/tools/merge-pdf) only after you confirm each component. Keep the untouched source until the job is accepted."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I crop a PDF for free?",
+          "a": "Yes. Add the PDF, set the visible page area, download the copy, and inspect it. PrintxPDF’s core crop workflow does not require signup."
+        },
+        {
+          "q": "Does cropping remove text from a PDF?",
+          "a": "No. Cropping changes the visible area and should not be used to hide sensitive content. Use proper redaction for information that must not be recoverable."
+        },
+        {
+          "q": "Can I crop every page of a PDF?",
+          "a": "Yes. Apply a consistent crop when pages share the same margins, then inspect pages throughout the file for shifted content."
+        },
+        {
+          "q": "Will cropping change the original PDF?",
+          "a": "No. Save the output as a separate file and retain the original until you have checked the cropped result."
+        }
+      ],
+      "relatedTools": [
+        "crop-pdf",
+        "redact-pdf",
+        "remove-metadata",
+        "merge-pdf",
+        "organize-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-crop-a-pdf",
+        "remove-metadata-from-pdf",
+        "how-to-merge-pdf-files",
+        "delete-pages-from-pdf"
+      ]
     }
   ]
 }
