@@ -773,22 +773,21 @@
       ]
     },
     {
-      "slug": "split-large-pdf-for-email",
+      "slug": "split-pdf-for-email-attachment-limit",
       "cluster": "split",
-      "title": "How to split a large PDF to get under an email size limit",
-      "metaTitle": "Split a Large PDF to Fit an Email Limit",
+      "title": "How to split PDFs for an email attachment limit",
+      "metaTitle": "Split PDFs for Email Attachment Limits",
       "metaDescription": "Compare compression, chapter-based splitting and sharing links when a PDF is too large to email. Learn how message encoding affects attachment size.",
       "published": "2026-04-28",
       "updated": "2026-10-03",
       "readMinutes": 7,
       "intent": "howto",
-      "primaryKeyword": "split large pdf for email",
+      "primaryKeyword": "split PDF for email attachment limit",
       "secondaryKeywords": [
-        "pdf too large to email",
-        "gmail 25mb attachment limit",
-        "outlook attachment size limit",
-        "send large pdf by email",
-        "reduce pdf size for email"
+        "PDF attachment too large",
+        "email attachment size limit",
+        "split document for email",
+        "send PDF in parts"
       ],
       "entities": [
         "Gmail",
@@ -800,7 +799,7 @@
         "Proton Mail",
         "Base64"
       ],
-      "answer": "Check the current sending limit for your account and the recipient's limit. Try Light compression to keep text selectable; Medium and Strong turn pages into images. If the file remains too large, split it into numbered parts or use an approved sharing link.",
+      "answer": "To fit a PDF under an email attachment limit, check the exact limit, split the file into logical page ranges, and leave headroom for email encoding. PrintxPDF lets you create ordered PDF parts in your browser without signup or a watermark, while preserving the original file.",
       "body": [
         {
           "t": "p",
@@ -899,8 +898,7 @@
               "Turns pages into images at a stronger setting; detail may be reduced",
               "A copy for visual sharing when a smaller output is needed"
             ],
-            [
-            ]
+            []
           ]
         },
         {
@@ -1057,10 +1055,784 @@
       ]
     },
     {
-      "slug":"split-pdf-without-adobe-free","cluster":"split","title":"How to split PDF pages without Adobe for free","metaTitle":"Split PDF Pages Without Adobe for Free","metaDescription":"Split PDF pages free without Adobe. No signup, no watermark, and private in-browser processing for your PDF files.","published":"2026-11-12","updated":"2026-11-12","readMinutes":5,"intent":"howto","localize":false,"primaryKeyword":"split PDF without Adobe","secondaryKeywords":["split PDF free","separate PDF pages without Acrobat","private PDF splitter","split PDF no signup"],"entities":["PDF","Adobe Acrobat","page range","web browser","document privacy"],"answer":"To split a PDF without Adobe, open a browser-based splitter, choose the page ranges or individual pages you need, create the separate files, and check the downloads. PrintxPDF runs standard splitting in your browser, so the PDF stays on your computer. It is free, needs no signup, and adds no watermark.","body":[{"t":"p","x":"You do not need Adobe Acrobat to separate a PDF into smaller files. Choose the pages or ranges you need, create the outputs, and keep the original untouched. PrintxPDF processes standard splits in your browser tab, which is useful for contracts, statements, forms, and scans that should not be sent to a processing server. There is no account, card, watermark, or trial timer."},{"t":"h2","x":"How to split a PDF without Adobe"},{"t":"steps","items":[{"h":"Open Split PDF","x":"Go to [Split PDF](/tools/split-pdf) and add the document from your computer. Keep the original as your reference copy."},{"h":"Choose the pages or ranges","x":"Enter a range such as 1-3, select single pages, or use a repeated split size depending on the output you need."},{"h":"Create the separate files","x":"Run the split. The tool makes new PDFs from the selected pages while leaving your source document unchanged."},{"h":"Open every output","x":"Check the first and last page of each file, especially where a range ends. Confirm no page was skipped, duplicated, or rotated incorrectly."}]},{"t":"cta","tool":"split-pdf","x":"Split PDFs free in your browser. No signup, no watermark, and your files stay in your tab."},{"t":"h2","x":"Split, extract, delete, or organize pages?"},{"t":"table","head":["Need","Tool","Result"],"rows":[["Make several files from one PDF","Split PDF","Separate outputs by range or split rule."],["Keep just selected pages","Extract Pages","One new PDF containing only the pages you choose."],["Remove pages from a working copy","Delete Pages","A new PDF without those pages."],["Move pages into a different order","Organize Pages","The same document in a new sequence."]]},{"t":"h2","x":"Use the right page range before you split"},{"t":"p","x":"Page labels printed on a document do not always match the PDF viewer’s page count. A cover sheet, blank page, or appendix can make printed page 1 appear as PDF page 2. Check thumbnails before entering a range. If the document is a scan, look for a page number in the image rather than relying only on the viewer counter."},{"t":"h2","x":"Keep private information out of the wrong output"},{"t":"p","x":"Splitting is useful when someone needs only a portion of a packet, but it does not redact information on pages you keep. Comments, document properties, attachments, and visible content need separate handling. Use [Remove Metadata](/tools/remove-metadata) for standard document properties when appropriate, and use a real redaction workflow for information that must be removed from the file."},{"t":"h2","x":"Why browser-local splitting matters"},{"t":"p","x":"A PDF can contain pay records, client data, application materials, or health information. Browser-local processing means a routine page split happens on the device in front of you rather than through a third-party upload queue. Still inspect each output before sharing. If the PDFs are image-heavy and too large for email, use [Compress PDF](/tools/compress-pdf) on a copy, then check that small text and signatures remain readable."},{"t":"warn","x":"A digital signature can be affected when a file is changed or saved as a new output. Preserve signed originals and verify recipient requirements before relying on a split copy as the signed record."}],"faqs":[{"q":"Can I split a PDF without Adobe Acrobat?","a":"Yes. Choose the pages or ranges in a browser splitter, create the separate files, and check the downloads. PrintxPDF does this free with no signup or watermark."},{"q":"Will splitting change my original PDF?","a":"No. The tool creates new outputs from the selected pages. Keep the original until you confirm every new file has the correct pages."},{"q":"Can I split a PDF into single pages?","a":"Yes. Select the option or ranges that create one output per page, then download the resulting files individually or as a group."},{"q":"Does splitting a PDF remove metadata?","a":"No. Splitting changes page grouping, not every hidden document field. Use a dedicated metadata-removal step when your sharing policy requires it."}],"relatedTools":["split-pdf","extract-pages","delete-pages","organize-pdf","remove-metadata"],"relatedPosts":["split-pdf-into-pages","extract-pages-from-pdf","delete-pages-from-pdf","remove-metadata-from-pdf"]
+      "slug": "split-pdf-without-adobe-free",
+      "cluster": "split",
+      "title": "How to split PDF pages without Adobe for free",
+      "metaTitle": "Split PDF Pages Without Adobe for Free",
+      "metaDescription": "Split PDF pages free without Adobe. No signup, no watermark, and private in-browser processing for your PDF files.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "split PDF without Adobe",
+      "secondaryKeywords": [
+        "split PDF free",
+        "separate PDF pages without Acrobat",
+        "private PDF splitter",
+        "split PDF no signup"
+      ],
+      "entities": [
+        "PDF",
+        "Adobe Acrobat",
+        "page range",
+        "web browser",
+        "document privacy"
+      ],
+      "answer": "To split a PDF without Adobe, open a browser-based splitter, choose the page ranges or individual pages you need, create the separate files, and check the downloads. PrintxPDF runs standard splitting in your browser, so the PDF stays on your computer. It is free, needs no signup, and adds no watermark.",
+      "body": [
+        {
+          "t": "p",
+          "x": "You do not need Adobe Acrobat to separate a PDF into smaller files. Choose the pages or ranges you need, create the outputs, and keep the original untouched. PrintxPDF processes standard splits in your browser tab, which is useful for contracts, statements, forms, and scans that should not be sent to a processing server. There is no account, card, watermark, or trial timer."
+        },
+        {
+          "t": "h2",
+          "x": "How to split a PDF without Adobe"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open Split PDF",
+              "x": "Go to [Split PDF](/tools/split-pdf) and add the document from your computer. Keep the original as your reference copy."
+            },
+            {
+              "h": "Choose the pages or ranges",
+              "x": "Enter a range such as 1-3, select single pages, or use a repeated split size depending on the output you need."
+            },
+            {
+              "h": "Create the separate files",
+              "x": "Run the split. The tool makes new PDFs from the selected pages while leaving your source document unchanged."
+            },
+            {
+              "h": "Open every output",
+              "x": "Check the first and last page of each file, especially where a range ends. Confirm no page was skipped, duplicated, or rotated incorrectly."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Split PDFs free in your browser. No signup, no watermark, and your files stay in your tab."
+        },
+        {
+          "t": "h2",
+          "x": "Split, extract, delete, or organize pages?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Need",
+            "Tool",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Make several files from one PDF",
+              "Split PDF",
+              "Separate outputs by range or split rule."
+            ],
+            [
+              "Keep just selected pages",
+              "Extract Pages",
+              "One new PDF containing only the pages you choose."
+            ],
+            [
+              "Remove pages from a working copy",
+              "Delete Pages",
+              "A new PDF without those pages."
+            ],
+            [
+              "Move pages into a different order",
+              "Organize Pages",
+              "The same document in a new sequence."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Use the right page range before you split"
+        },
+        {
+          "t": "p",
+          "x": "Page labels printed on a document do not always match the PDF viewer’s page count. A cover sheet, blank page, or appendix can make printed page 1 appear as PDF page 2. Check thumbnails before entering a range. If the document is a scan, look for a page number in the image rather than relying only on the viewer counter."
+        },
+        {
+          "t": "h2",
+          "x": "Keep private information out of the wrong output"
+        },
+        {
+          "t": "p",
+          "x": "Splitting is useful when someone needs only a portion of a packet, but it does not redact information on pages you keep. Comments, document properties, attachments, and visible content need separate handling. Use [Remove Metadata](/tools/remove-metadata) for standard document properties when appropriate, and use a real redaction workflow for information that must be removed from the file."
+        },
+        {
+          "t": "h2",
+          "x": "Why browser-local splitting matters"
+        },
+        {
+          "t": "p",
+          "x": "A PDF can contain pay records, client data, application materials, or health information. Browser-local processing means a routine page split happens on the device in front of you rather than through a third-party upload queue. Still inspect each output before sharing. If the PDFs are image-heavy and too large for email, use [Compress PDF](/tools/compress-pdf) on a copy, then check that small text and signatures remain readable."
+        },
+        {
+          "t": "warn",
+          "x": "A digital signature can be affected when a file is changed or saved as a new output. Preserve signed originals and verify recipient requirements before relying on a split copy as the signed record."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I split a PDF without Adobe Acrobat?",
+          "a": "Yes. Choose the pages or ranges in a browser splitter, create the separate files, and check the downloads. PrintxPDF does this free with no signup or watermark."
+        },
+        {
+          "q": "Will splitting change my original PDF?",
+          "a": "No. The tool creates new outputs from the selected pages. Keep the original until you confirm every new file has the correct pages."
+        },
+        {
+          "q": "Can I split a PDF into single pages?",
+          "a": "Yes. Select the option or ranges that create one output per page, then download the resulting files individually or as a group."
+        },
+        {
+          "q": "Does splitting a PDF remove metadata?",
+          "a": "No. Splitting changes page grouping, not every hidden document field. Use a dedicated metadata-removal step when your sharing policy requires it."
+        }
+      ],
+      "relatedTools": [
+        "split-pdf",
+        "extract-pages",
+        "delete-pages",
+        "organize-pdf",
+        "remove-metadata"
+      ],
+      "relatedPosts": [
+        "split-pdf-into-pages",
+        "extract-pages-from-pdf",
+        "delete-pages-from-pdf",
+        "remove-metadata-from-pdf"
+      ]
     },
     {
-      "slug":"split-one-pdf-into-separate-files","cluster":"split","title":"How to split one PDF into separate files","metaTitle":"Split One PDF Into Separate Files Free","metaDescription":"Split one PDF into separate files free, with no signup, no watermark, and private in-browser processing for your documents.","published":"2026-11-12","updated":"2026-11-12","readMinutes":5,"intent":"howto","localize":false,"primaryKeyword":"split one PDF into separate files","secondaryKeywords":["separate PDF into multiple files","split PDF by page range","make separate PDF files","PDF splitter free"],"entities":["PDF","page range","document packet","web browser","PDF pages"],"answer":"To split one PDF into separate files, choose the page ranges that belong together, create a new output for each range, and check every download. PrintxPDF splits standard PDFs in your browser, so the document stays on your computer. It is free, requires no signup, and does not add a watermark.","body":[{"t":"p","x":"One large PDF often needs to become several smaller files: one invoice per customer, one chapter per student, or one attachment per form. Pick the ranges before you begin, create the separate outputs, and check them before sharing. PrintxPDF does this in your browser tab, so routine splitting does not require an upload, an account, a card, or a watermark."},{"t":"h2","x":"How to split one PDF into multiple files"},{"t":"steps","items":[{"h":"Mark the ranges you need","x":"Write down the groups before you change the document. For example, pages 1-4, 5-8, and 9-12 can become three separate files."},{"h":"Open Split PDF","x":"Add the file to [Split PDF](/tools/split-pdf). The original stays unchanged while you make new copies."},{"h":"Set the split points","x":"Choose page ranges or a repeated page count. Check thumbnail pages if printed numbering does not match the PDF viewer count."},{"h":"Create the outputs","x":"Run the split and save the separate downloads. Give each file a clear name before emailing or filing it."},{"h":"Check each result","x":"Open the first and last page of every output. Confirm the range starts and ends at the intended place."}]},{"t":"cta","tool":"split-pdf","x":"Split one PDF into separate files free in your browser. No signup and no watermark."},{"t":"h2","x":"Choose ranges that match the job"},{"t":"table","head":["Goal","Example range","Result"],"rows":[["Separate chapters","1-12, 13-27","One PDF per chapter."],["Send only an appendix","41-56","A smaller supporting document."],["Make one file per form","1, 2, 3","One output for each page."],["Break up a large packet","Every 10 pages","Several easier-to-send files."]]},{"t":"h2","x":"Split files safely before you share them"},{"t":"p","x":"Use clear filenames such as application-main.pdf and application-appendix.pdf. That avoids a common mistake: the correct pages are split, but the wrong file gets attached to an email. Keep the source PDF until the recipient confirms the right material arrived. If you only need selected pages in one smaller file, [Extract Pages](/tools/extract-pages) may be simpler than creating several outputs."},{"t":"h2","x":"What splitting does not remove"},{"t":"p","x":"A page split changes which pages are grouped together. It does not remove metadata, comments, attached files, or private text still visible on pages you keep. Use [Remove Metadata](/tools/remove-metadata) for standard document properties when appropriate. Use true redaction, not a black shape or crop, when information must no longer be recoverable from a distribution copy."},{"t":"h2","x":"Keep confidential PDFs local"},{"t":"p","x":"Splitting is common for financial statements, client files, student records, and scanned forms. Browser-local processing keeps the routine page operation on the device you are using. Still inspect the output, especially where sensitive information may cross a page boundary. Confirm filenames, page counts, visual quality, and the intended recipient before sending any document externally. If a separate PDF is too large for email, use [Compress PDF](/tools/compress-pdf) on a working copy and check that text and images remain readable."}],"faqs":[{"q":"Can I split one PDF into many files?","a":"Yes. Set the page ranges or individual pages you need, then create separate outputs. Check each result before sharing it."},{"q":"Will splitting a PDF change the original?","a":"No. The splitter creates new files. Keep the source until you have verified page order and that every output contains the intended pages."},{"q":"Can I split a PDF by every few pages?","a":"Yes. Choose a repeated split size when each output should have the same number of pages, then inspect the final group if the total is not evenly divisible."},{"q":"Does splitting remove private metadata?","a":"No. Splitting changes page groups, not all hidden document data. Use a dedicated metadata-removal step when your sharing requirements call for it."}],"relatedTools":["split-pdf","extract-pages","remove-metadata","compress-pdf","organize-pdf"],"relatedPosts":["split-pdf-into-pages","extract-pages-from-pdf","delete-pages-from-pdf","remove-metadata-from-pdf"]
+      "slug": "split-one-pdf-into-separate-files",
+      "cluster": "split",
+      "title": "How to split one PDF into separate files",
+      "metaTitle": "Split One PDF Into Separate Files Free",
+      "metaDescription": "Split one PDF into separate files free, with no signup, no watermark, and private in-browser processing for your documents.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "split one PDF into separate files",
+      "secondaryKeywords": [
+        "separate PDF into multiple files",
+        "split PDF by page range",
+        "make separate PDF files",
+        "PDF splitter free"
+      ],
+      "entities": [
+        "PDF",
+        "page range",
+        "document packet",
+        "web browser",
+        "PDF pages"
+      ],
+      "answer": "To split one PDF into separate files, choose the page ranges that belong together, create a new output for each range, and check every download. PrintxPDF splits standard PDFs in your browser, so the document stays on your computer. It is free, requires no signup, and does not add a watermark.",
+      "body": [
+        {
+          "t": "p",
+          "x": "One large PDF often needs to become several smaller files: one invoice per customer, one chapter per student, or one attachment per form. Pick the ranges before you begin, create the separate outputs, and check them before sharing. PrintxPDF does this in your browser tab, so routine splitting does not require an upload, an account, a card, or a watermark."
+        },
+        {
+          "t": "h2",
+          "x": "How to split one PDF into multiple files"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Mark the ranges you need",
+              "x": "Write down the groups before you change the document. For example, pages 1-4, 5-8, and 9-12 can become three separate files."
+            },
+            {
+              "h": "Open Split PDF",
+              "x": "Add the file to [Split PDF](/tools/split-pdf). The original stays unchanged while you make new copies."
+            },
+            {
+              "h": "Set the split points",
+              "x": "Choose page ranges or a repeated page count. Check thumbnail pages if printed numbering does not match the PDF viewer count."
+            },
+            {
+              "h": "Create the outputs",
+              "x": "Run the split and save the separate downloads. Give each file a clear name before emailing or filing it."
+            },
+            {
+              "h": "Check each result",
+              "x": "Open the first and last page of every output. Confirm the range starts and ends at the intended place."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Split one PDF into separate files free in your browser. No signup and no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Choose ranges that match the job"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Goal",
+            "Example range",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Separate chapters",
+              "1-12, 13-27",
+              "One PDF per chapter."
+            ],
+            [
+              "Send only an appendix",
+              "41-56",
+              "A smaller supporting document."
+            ],
+            [
+              "Make one file per form",
+              "1, 2, 3",
+              "One output for each page."
+            ],
+            [
+              "Break up a large packet",
+              "Every 10 pages",
+              "Several easier-to-send files."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Split files safely before you share them"
+        },
+        {
+          "t": "p",
+          "x": "Use clear filenames such as application-main.pdf and application-appendix.pdf. That avoids a common mistake: the correct pages are split, but the wrong file gets attached to an email. Keep the source PDF until the recipient confirms the right material arrived. If you only need selected pages in one smaller file, [Extract Pages](/tools/extract-pages) may be simpler than creating several outputs."
+        },
+        {
+          "t": "h2",
+          "x": "What splitting does not remove"
+        },
+        {
+          "t": "p",
+          "x": "A page split changes which pages are grouped together. It does not remove metadata, comments, attached files, or private text still visible on pages you keep. Use [Remove Metadata](/tools/remove-metadata) for standard document properties when appropriate. Use true redaction, not a black shape or crop, when information must no longer be recoverable from a distribution copy."
+        },
+        {
+          "t": "h2",
+          "x": "Keep confidential PDFs local"
+        },
+        {
+          "t": "p",
+          "x": "Splitting is common for financial statements, client files, student records, and scanned forms. Browser-local processing keeps the routine page operation on the device you are using. Still inspect the output, especially where sensitive information may cross a page boundary. Confirm filenames, page counts, visual quality, and the intended recipient before sending any document externally. If a separate PDF is too large for email, use [Compress PDF](/tools/compress-pdf) on a working copy and check that text and images remain readable."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I split one PDF into many files?",
+          "a": "Yes. Set the page ranges or individual pages you need, then create separate outputs. Check each result before sharing it."
+        },
+        {
+          "q": "Will splitting a PDF change the original?",
+          "a": "No. The splitter creates new files. Keep the source until you have verified page order and that every output contains the intended pages."
+        },
+        {
+          "q": "Can I split a PDF by every few pages?",
+          "a": "Yes. Choose a repeated split size when each output should have the same number of pages, then inspect the final group if the total is not evenly divisible."
+        },
+        {
+          "q": "Does splitting remove private metadata?",
+          "a": "No. Splitting changes page groups, not all hidden document data. Use a dedicated metadata-removal step when your sharing requirements call for it."
+        }
+      ],
+      "relatedTools": [
+        "split-pdf",
+        "extract-pages",
+        "remove-metadata",
+        "compress-pdf",
+        "organize-pdf"
+      ],
+      "relatedPosts": [
+        "split-pdf-into-pages",
+        "extract-pages-from-pdf",
+        "delete-pages-from-pdf",
+        "remove-metadata-from-pdf"
+      ]
+    },
+    {
+      "slug": "extract-specific-pages-from-pdf-free",
+      "cluster": "split",
+      "title": "How to extract specific pages from a PDF for free",
+      "metaTitle": "Extract Specific Pages From a PDF Free",
+      "metaDescription": "Extract specific PDF pages free with no signup, no watermark, and private in-browser processing for sensitive documents.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "extract specific pages from PDF",
+      "secondaryKeywords": [
+        "save selected PDF pages",
+        "extract PDF pages free",
+        "separate pages from PDF",
+        "keep pages from PDF"
+      ],
+      "entities": [
+        "PDF",
+        "page range",
+        "page thumbnail",
+        "PDF extraction",
+        "document privacy"
+      ],
+      "answer": "To extract specific pages from a PDF, identify the page numbers you need, select those pages or ranges, create a new PDF, and check the download. PrintxPDF lets you do this in your browser without signup or a watermark. The original remains unchanged, while the new PDF contains only the pages you chose.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Extracting pages is the clean way to make a smaller PDF from a larger packet. Keep the cover and relevant appendix, save only the invoice pages, or send a few pages from a report without forwarding the whole document. PrintxPDF creates the selected-page copy in your browser tab. No account, card, watermark, or standard-file upload is needed."
+        },
+        {
+          "t": "h2",
+          "x": "How to extract selected pages from a PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Find the pages you need",
+              "x": "Open the PDF and note the viewer page numbers. Check whether a cover or blank page makes them differ from printed numbering."
+            },
+            {
+              "h": "Open Extract Pages",
+              "x": "Add the file to [Extract Pages](/tools/extract-pages). Keep the original open or nearby while selecting ranges."
+            },
+            {
+              "h": "Enter the page range",
+              "x": "Choose individual pages, a continuous range, or several groups where the tool supports it. Review the selection before you create the copy."
+            },
+            {
+              "h": "Create the new PDF",
+              "x": "Generate the output and download it. The source file is not overwritten."
+            },
+            {
+              "h": "Inspect the output",
+              "x": "Check the first and last page, page orientation, and whether the selected pages include every attachment or signature the recipient needs."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "Keep only the PDF pages you need. Free, private in-browser processing, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Extract pages, split a file, or delete pages?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Task",
+            "Best tool",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Keep selected pages in one new file",
+              "Extract Pages",
+              "A compact PDF containing the chosen pages."
+            ],
+            [
+              "Create several separate outputs",
+              "Split PDF",
+              "Multiple files divided by range or rule."
+            ],
+            [
+              "Remove pages from a working copy",
+              "Delete Pages",
+              "A new version without the pages."
+            ],
+            [
+              "Change page order",
+              "Organize Pages",
+              "The same pages in a different sequence."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Check page numbers before sharing"
+        },
+        {
+          "t": "p",
+          "x": "A recipient may ask for pages 10 through 14, but the PDF viewer can count a title page and a blank page that the printed document does not. Inspect thumbnails and visible labels before extracting. For scanned documents, verify the number printed in the image. A one-page error can omit the signature page, an attachment, or the final total. Save the original until the recipient confirms the shorter file is complete."
+        },
+        {
+          "t": "h2",
+          "x": "Extraction is not redaction"
+        },
+        {
+          "t": "p",
+          "x": "An extracted copy includes everything carried by the pages you keep. It does not erase private text, comments, document properties, or embedded attachments within those pages. Use [Remove Metadata](/tools/remove-metadata) when your policy requires clean document properties. Use a verified redaction workflow when content must no longer be recoverable. Do not rely on cropping or a black shape to remove sensitive material."
+        },
+        {
+          "t": "h2",
+          "x": "Keep sensitive files local and review the result"
+        },
+        {
+          "t": "p",
+          "x": "Extracting pages often happens with applications, statements, client records, or contracts. Browser-local processing avoids an unnecessary third-party file transfer for this routine job. Still review the new PDF before sending it. If it is too large for email, use [Compress PDF](/tools/compress-pdf) on a copy and check that images, signatures, and small text remain readable at normal zoom."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I extract only a few pages from a PDF?",
+          "a": "Yes. Select individual pages or a range, create a new PDF, and download the copy. The original document remains unchanged."
+        },
+        {
+          "q": "Can I extract non-consecutive PDF pages?",
+          "a": "Use the tool’s page-selection syntax or make separate extracts for each group. Check the output to confirm every required page is included."
+        },
+        {
+          "q": "Does extracting pages remove metadata?",
+          "a": "No. It creates a new page selection but does not promise to remove document properties or other hidden data. Use a separate metadata-removal step if needed."
+        },
+        {
+          "q": "Can I extract pages without uploading my PDF?",
+          "a": "PrintxPDF processes standard extraction in the browser tab, so the file remains on your device for this workflow."
+        }
+      ],
+      "relatedTools": [
+        "extract-pages",
+        "split-pdf",
+        "delete-pages",
+        "organize-pdf",
+        "remove-metadata"
+      ],
+      "relatedPosts": [
+        "extract-pages-from-pdf",
+        "split-pdf-into-pages",
+        "delete-pages-from-pdf",
+        "remove-metadata-from-pdf"
+      ]
+    },
+    {
+      "cluster": "split",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "entities": [
+        "PDF",
+        "page range",
+        "email attachment",
+        "document privacy",
+        "file size"
+      ],
+      "slug": "split-large-pdf-for-email",
+      "title": "How to split a large PDF for email",
+      "metaTitle": "Split a Large PDF for Email Free",
+      "metaDescription": "Split a large PDF for email free, with no signup, no watermark, and private in-browser processing before you send it.",
+      "primaryKeyword": "split large PDF for email",
+      "secondaryKeywords": [
+        "reduce PDF email attachment",
+        "split PDF by page range",
+        "email PDF size limit",
+        "send large PDF file"
+      ],
+      "answer": "To split a large PDF for email, divide it into logical page ranges, download each smaller file, and check its size before attaching it. PrintxPDF lets you split standard PDFs in your browser without signup or a watermark, so you can make manageable attachments while keeping the original intact.",
+      "body": [
+        {
+          "t": "p",
+          "x": "If an email rejects a PDF because the attachment is too large, splitting it is often safer than repeatedly compressing it. Divide the document into useful sections, such as pages 1–20 and 21–40, so the recipient can follow the order. PrintxPDF splits standard files inside your browser tab. That means there is no account, card, watermark, or routine cloud upload standing between you and a smaller attachment."
+        },
+        {
+          "t": "h2",
+          "x": "How to split a large PDF into email-sized files"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Check the attachment limit",
+              "x": "Look at the limit for your mail service and leave room for message text and encoding overhead. A 20 MB limit does not always mean a 20 MB file will send."
+            },
+            {
+              "h": "Choose sensible page ranges",
+              "x": "Break at chapters, invoices, or named sections rather than at arbitrary points. Write down each range so the files stay ordered."
+            },
+            {
+              "h": "Split the PDF",
+              "x": "Open [Split PDF](/tools/split-pdf), add the file, enter the ranges, and create the smaller copies. The source PDF remains unchanged."
+            },
+            {
+              "h": "Check each output",
+              "x": "Open the first and last page of every file. Confirm the ranges do not overlap or leave out a page."
+            },
+            {
+              "h": "Attach or share securely",
+              "x": "Name files in sequence, such as report-part-01.pdf. If the information is sensitive, use an approved secure-sharing method instead of ordinary email."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Make email-sized PDF parts in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Should you split or compress a PDF for email?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Situation",
+            "Best option",
+            "Why"
+          ],
+          "rows": [
+            [
+              "The file has clear sections",
+              "Split PDF",
+              "Each attachment remains easy to read and route."
+            ],
+            [
+              "Every page must stay together",
+              "Compress PDF",
+              "Reduce file size while preserving one document."
+            ],
+            [
+              "Only a few pages matter",
+              "Extract Pages",
+              "Send a focused copy instead of the full packet."
+            ],
+            [
+              "The PDF contains private records",
+              "Protect PDF",
+              "Apply a password only when the recipient can receive it safely."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Keep the files easy to reassemble"
+        },
+        {
+          "t": "p",
+          "x": "Give every part a predictable name. Include a short subject, a part number, and the total count: proposal-part-01-of-03.pdf. In your message, say how many attachments the recipient should expect. This avoids the common mistake of sending part two without part one or making a busy recipient wonder whether a file is missing."
+        },
+        {
+          "t": "h2",
+          "x": "Do not confuse splitting with privacy protection"
+        },
+        {
+          "t": "p",
+          "x": "Splitting changes the packaging, not the sensitivity of the pages. Each output can still contain document properties, comments, or confidential text. Before sharing outside your organization, use [Remove Metadata](/tools/remove-metadata) when appropriate and use a proper redaction process for information that must not be visible. A password can help control access, but it is not a substitute for removing data the recipient should never receive."
+        },
+        {
+          "t": "h2",
+          "x": "Why browser-local processing helps with sensitive attachments"
+        },
+        {
+          "t": "p",
+          "x": "Large PDFs often contain statements, tax records, contracts, or medical paperwork. Processing a routine page split locally avoids adding another third party to that file’s journey. Review each downloaded part before emailing it, especially if pages contain scans, signatures, or small tables. If one part is still too large, compress a copy with [Compress PDF](/tools/compress-pdf) and inspect it at normal zoom before sending."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What size PDF can I email?",
+          "a": "It depends on the email provider and recipient system. Check the stated limit and keep each attachment comfortably below it because email encoding adds overhead."
+        },
+        {
+          "q": "Will splitting a PDF reduce image quality?",
+          "a": "No. Splitting divides pages into separate PDFs; it does not intentionally recompress their images. Use compression only when smaller file sizes are required."
+        },
+        {
+          "q": "Can I split a PDF into equal-sized files?",
+          "a": "You can split by page count, then check the file sizes. Pages with large scans or images can make equal page ranges produce unequal attachment sizes."
+        },
+        {
+          "q": "Is splitting a PDF enough to remove private data?",
+          "a": "No. It creates smaller documents but does not promise to remove text, metadata, or comments. Review and clean the copies before sharing."
+        }
+      ],
+      "relatedTools": [
+        "split-pdf",
+        "compress-pdf",
+        "extract-pages",
+        "remove-metadata",
+        "protect-pdf"
+      ],
+      "relatedPosts": [
+        "split-pdf-into-pages",
+        "extract-specific-pages-from-pdf-free",
+        "compress-pdf-without-losing-quality",
+        "remove-metadata-from-pdf"
+      ]
+    },
+    {
+      "cluster": "split",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "entities": [
+        "PDF",
+        "page range",
+        "email attachment",
+        "document privacy",
+        "file size"
+      ],
+      "slug": "split-pdf-on-phone-or-computer",
+      "title": "How to split a PDF on phone or computer",
+      "metaTitle": "Split a PDF on Phone or Computer Free",
+      "metaDescription": "Split a PDF on phone or computer free, no signup or watermark, with private in-browser processing on your device.",
+      "primaryKeyword": "split PDF on phone or computer",
+      "secondaryKeywords": [
+        "split PDF on iPhone",
+        "split PDF on Android",
+        "split PDF on Windows",
+        "split PDF on Mac"
+      ],
+      "answer": "You can split a PDF on a phone or computer by opening a browser-based splitter, choosing page ranges, creating the copies, and checking the downloads. PrintxPDF works in a modern browser with no signup or watermark for standard jobs, so the same steps work across devices.",
+      "body": [
+        {
+          "t": "p",
+          "x": "You do not need separate instructions for every device just to divide a PDF. On a phone, tablet, Windows PC, or Mac, the reliable pattern is the same: use a modern browser, choose the pages, create the outputs, and inspect them before sharing. PrintxPDF keeps standard PDF splitting in your browser tab. That offers a straightforward way to handle everyday documents without an account, a credit card, a watermark, or a routine upload to a file-processing service."
+        },
+        {
+          "t": "h2",
+          "x": "How to split a PDF on any device"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open the PDF splitter in your browser",
+              "x": "Go to [Split PDF](/tools/split-pdf) using the browser already on your phone or computer. Close other memory-heavy tabs if the file is large."
+            },
+            {
+              "h": "Choose the file from your device",
+              "x": "Select the PDF from Downloads, Files, iCloud Drive, Google Drive, or another location available through the device picker."
+            },
+            {
+              "h": "Set the split rule",
+              "x": "Choose individual pages, ranges, or a repeat interval. Confirm the page numbering with thumbnails before continuing."
+            },
+            {
+              "h": "Create and download the parts",
+              "x": "Generate the copies and save them somewhere you can find later. On a phone, watch for the browser download notification."
+            },
+            {
+              "h": "Open the results",
+              "x": "Check page order, orientation, and file names before attaching the PDFs to a message or uploading them elsewhere."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Split PDF pages from your current browser. Free, private in-browser, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "What changes between phone and computer?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Device",
+            "What to watch",
+            "Helpful habit"
+          ],
+          "rows": [
+            [
+              "iPhone or iPad",
+              "Downloads may save in Files rather than Photos",
+              "Use a clear file name before sharing."
+            ],
+            [
+              "Android phone or tablet",
+              "The file picker can show multiple storage locations",
+              "Confirm the selected PDF before processing."
+            ],
+            [
+              "Windows computer",
+              "Several downloads can accumulate in one folder",
+              "Create a dated folder for the output parts."
+            ],
+            [
+              "Mac",
+              "Files can open from Finder, iCloud Drive, or Downloads",
+              "Preview each part with Quick Look before sending."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Use smaller ranges on a phone when needed"
+        },
+        {
+          "t": "p",
+          "x": "A long scanned PDF can use more memory than a phone has available. If the browser becomes slow, divide the task into smaller ranges rather than retrying the whole document. Keep the source file on the device, name the outputs in order, and confirm the final page of one part meets the first page of the next. This is especially helpful for course packs, scanned records, and image-heavy reports."
+        },
+        {
+          "t": "h2",
+          "x": "Choose the right PDF action before you start"
+        },
+        {
+          "t": "p",
+          "x": "Split PDF is for making several files. If you only need to retain a few pages, [Extract Pages](/tools/extract-pages) is more direct. If unwanted pages should disappear from a working copy, use [Delete Pages](/tools/delete-pages). If page order is the real problem, [Organize PDF](/tools/organize-pdf) is the better fit. Picking the right task avoids extra downloads and accidental omissions."
+        },
+        {
+          "t": "h2",
+          "x": "Review privacy and sharing on mobile devices"
+        },
+        {
+          "t": "p",
+          "x": "Phone sharing menus make it easy to send the wrong file to the wrong app. Open the output first, verify the pages, then choose the destination. Splitting does not erase metadata or confidential content inside the pages. For documents that leave your control, consider [Remove Metadata](/tools/remove-metadata), and use an approved encrypted channel when required. Browser-local processing reduces unnecessary transfers during the split, but safe sharing still depends on the destination you choose."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I split a PDF on an iPhone?",
+          "a": "Yes. Open a browser-based splitter, choose the PDF from Files or another location, set page ranges, and save the output files through the download prompt."
+        },
+        {
+          "q": "Can I split a PDF on Android?",
+          "a": "Yes. Use a modern browser, select the PDF through the Android file picker, choose your page ranges, then download and inspect each part."
+        },
+        {
+          "q": "Does splitting a PDF work on Mac and Windows?",
+          "a": "Yes. The same browser workflow works on both platforms. Check the output folder and open each PDF once before sharing."
+        },
+        {
+          "q": "Do I need an app to split a PDF on my phone?",
+          "a": "No. A browser-based tool can handle standard splitting without installing an app, as long as your browser and device have enough available storage and memory."
+        }
+      ],
+      "relatedTools": [
+        "split-pdf",
+        "extract-pages",
+        "delete-pages",
+        "organize-pdf",
+        "remove-metadata"
+      ],
+      "relatedPosts": [
+        "split-pdf-into-pages",
+        "extract-specific-pages-from-pdf-free",
+        "split-large-pdf-for-email",
+        "delete-pages-from-pdf"
+      ]
     }
   ]
 }
