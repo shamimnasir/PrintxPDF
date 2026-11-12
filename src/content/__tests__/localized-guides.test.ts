@@ -18,7 +18,7 @@ describe('localized guides', () => {
   })
 
   it('translates every English guide into every supported language', () => {
-    const englishGuideTopics = new Set(ALL_POSTS.map((post) => post.slug))
+    const englishGuideTopics = new Set(ALL_POSTS.filter((post) => post.localize !== false).map((post) => post.slug))
     for (const pack of LANGUAGE_PACKS) {
       const translatedTopics = new Set(pack.guides.map((guide) => guide.topic))
       for (const topic of englishGuideTopics) expect(translatedTopics.has(topic), `${pack.locale}: ${topic}`).toBe(true)

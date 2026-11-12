@@ -1,11 +1,11 @@
 {
   "slug": "files",
   "name": "Images, compression and ZIP archives",
-  "title": "Image formats, image compression and ZIP files, explained simply",
-  "metaTitle": "Convert Images, Compress Photos and Zip Files",
-  "metaDescription": "Convert an image between JPG, PNG, WebP and AVIF, compress a photo without wrecking it, and make or open a ZIP file. All of it runs in your browser.",
-  "intro": "Not every file job is a PDF job. Sometimes a form wants a JPG and you have a PNG. Sometimes a website refuses a 9 MB photograph and wants it under 2 MB. Sometimes you need to send eleven files to someone who can only accept one attachment. These four guides cover the everyday file work that surrounds documents: changing an image format, making a picture smaller without it looking chewed, and packing or unpacking a ZIP archive. All four tools run inside your browser tab, so the files never leave your computer and no monthly quota applies to any of them.",
-  "answer": "Use an image converter to change a picture between JPG, PNG, WebP and AVIF, an image compressor to cut its file size, and a ZIP tool to pack many files into one or unpack one you were sent. All four run in your browser, so nothing is uploaded and there is no limit on how often you use them.",
+  "title": "Image formats, metadata, compression and ZIP files, explained simply",
+  "metaTitle": "Convert Images, Remove Metadata, Compress and Zip Files",
+  "metaDescription": "Convert image formats, create a metadata-free copy, compress photos, or make and open ZIP files. Everything runs locally in your browser.",
+  "intro": "Not every file job is a PDF job. Sometimes a form wants a JPG and you have a PNG. Sometimes a website refuses a 9 MB photograph and wants it under 2 MB. Sometimes you want to share pixels without camera details or an embedded provenance record. Sometimes you need to send eleven files to someone who can only accept one attachment. These guides cover the everyday file work that surrounds documents: changing an image format, making a metadata-free copy, making a picture smaller without it looking chewed, and packing or unpacking a ZIP archive. These tools run inside your browser tab, so the files never leave your computer and no monthly quota applies to any of them.",
+  "answer": "Use an image converter to change a picture between JPG, PNG and WebP, an image metadata remover to make a clean copy without common embedded records, an image compressor to cut its file size, and a ZIP tool to pack or unpack files. Everything runs in your browser, so nothing is uploaded.",
   "primaryKeyword": "convert and compress images and zip files",
   "entities": [
     "JPEG",
@@ -19,14 +19,19 @@
     "Android",
     "Adobe Photoshop",
     "7-Zip",
-    "Gmail"
+    "Gmail",
+    "EXIF",
+    "XMP",
+    "C2PA",
+    "Content Credentials"
   ],
   "icon": "📦",
   "tools": [
     "image-converter",
     "compress-image",
     "create-zip",
-    "extract-zip"
+    "extract-zip",
+    "remove-ai-metadata"
   ],
   "posts": [
     {
@@ -1052,6 +1057,73 @@
         "images-to-pdf",
         "remove-metadata-from-pdf"
       ]
+    },
+    {
+      "slug": "remove-ai-metadata-from-images",
+      "cluster": "files",
+      "title": "How to remove AI metadata from an image without changing the visible picture",
+      "metaTitle": "Remove AI Metadata From Images Without Uploading",
+      "metaDescription": "Create a clean image copy without common EXIF, XMP, IPTC or C2PA metadata. Learn what is removed, what stays visible, and how to check it.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 6,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "remove AI metadata from image",
+      "secondaryKeywords": ["remove C2PA metadata", "remove Content Credentials", "strip image metadata", "remove EXIF from image", "remove ChatGPT image metadata"],
+      "entities": ["EXIF", "IPTC", "XMP", "C2PA", "Content Credentials", "JPEG", "PNG", "WebP"],
+      "answer": "To remove common AI-related image metadata, create a new image file from the visible pixels rather than editing the original file in place. A fresh PNG, JPG or WebP copy drops common EXIF, IPTC, XMP and embedded C2PA or Content Credentials records, but it does not remove visible watermarks or labels.",
+      "body": [
+        {"t":"p","x":"An image can carry two kinds of information: the pixels you can see, and data attached to the file that you cannot. A camera may add its model, capture time and location. An editor may add an author name and workflow notes. Some AI image systems may add a provenance record, often called Content Credentials. They are different things, but they travel together when you send the original file."},
+        {"t":"h2","x":"What AI image metadata can include"},
+        {"t":"table","caption":"Common data stored alongside image pixels.","head":["Kind of data","Examples","Visible in the picture?"],"rows":[["EXIF","Camera model, date, orientation, GPS location","No"],["IPTC and XMP","Author, title, keywords, editor or workflow details","No"],["C2PA / Content Credentials","An embedded provenance record about creation or edits","No"],["Visible marks","Watermark, caption, AI label or logo drawn into the picture","Yes"]]},
+        {"t":"p","x":"The distinction matters. File metadata can be left behind when a new file is encoded from the pixels. A visible mark is part of the pixels themselves, so a metadata tool should not claim to remove it. Altering or hiding a visible mark is a different image-editing task and can change the picture's meaning."},
+        {"t":"h2","x":"Remove metadata by creating a fresh copy"},
+        {"t":"steps","items":[{"h":"Keep the original","x":"Save the source somewhere safe before making a sharing copy. Metadata can be useful for your own archive, even when it is not appropriate to send it on."},{"h":"Open AI Metadata Remover","x":"Go to [AI Metadata Remover](/tools/remove-ai-metadata) and add PNG, JPG, WebP or HEIC images. The file is read in your browser and is not uploaded to PrintxPDF."},{"h":"Choose the output format","x":"Choose PNG if preserving the decoded pixels and transparency matters most. Choose JPG for ordinary photos when broad compatibility is the priority. WebP can keep transparency and is useful for web delivery."},{"h":"Make and inspect the clean copy","x":"Click Remove metadata, then download the new file. It is rebuilt from visible pixels, so common EXIF, IPTC, XMP and embedded C2PA or Content Credentials records are not copied across."}]},
+        {"t":"cta","tool":"remove-ai-metadata","x":"Make a metadata-free image copy locally. Your original stays untouched and your file is never uploaded."},
+        {"t":"h2","x":"What this does not remove"},
+        {"t":"warn","x":"This tool does not remove watermarks, captions, logos, text prompts rendered into the picture, or an AI label you can see. Those are pixels, not metadata. It also cannot remove information a service keeps in its own account records or elsewhere outside the downloaded image file."},
+        {"t":"p","x":"A new file can also change how the image is encoded. PNG is the best choice when you need exact decoded pixels. JPG and WebP use compression, so inspect a detailed area before using a sharing copy for print, evidence or production work. For a photo that needs to be smaller as well, use [Compress Image](/tools/compress-image) after you have kept a clean archival original."},
+        {"t":"h2","x":"When a metadata-free copy is useful"},
+        {"t":"ul","items":["Sharing a phone photo without its camera model, date or possible location details.","Sending a draft image outside an editorial or design workflow without its embedded author and workflow fields.","Preparing a web image where a fresh, smaller delivery format is useful alongside a retained original.","Making a distribution copy while preserving the original file and its provenance in a controlled archive."]},
+        {"t":"p","x":"Removing metadata is a privacy and file-handling choice, not proof that an image was or was not made with a particular tool. Treat provenance records as one source of context, keep originals where records matter, and do not use a stripped copy to misrepresent the origin of work."}
+      ],
+      "faqs":[{"q":"Does this remove ChatGPT, Claude or Gemini image metadata?","a":"It removes common embedded metadata that survives browser decoding, including EXIF, IPTC, XMP and C2PA or Content Credentials records where they are stored in the image file. Providers differ, so it cannot remove a visible label or data held outside the downloaded file."},{"q":"Will it remove an AI watermark?","a":"No. A visible watermark or label is part of the pixels. This tool creates a clean file copy without common embedded metadata; it does not alter visible content."},{"q":"Are images uploaded?","a":"No. The source is decoded and the new file is encoded inside your browser. PrintxPDF does not receive the image."},{"q":"Which output should I choose?","a":"Choose PNG for transparency or exact decoded pixels, JPG for widely compatible photographs, and WebP for modern web delivery. Keep the original regardless of the format you share."}],
+      "relatedTools":["remove-ai-metadata","image-converter","compress-image"],
+      "relatedPosts":["convert-an-image-format","compress-an-image","remove-metadata-from-pdf"]
+    },
+    {
+      "slug": "content-credentials-c2pa-explained",
+      "cluster": "files",
+      "title": "What are Content Credentials and C2PA image metadata?",
+      "metaTitle": "Content Credentials and C2PA Image Metadata Explained",
+      "metaDescription": "Learn what C2PA and Content Credentials records are, where they live in image files, why they can disappear, and what a metadata-free copy changes.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 7,
+      "intent": "informational",
+      "localize": false,
+      "primaryKeyword": "Content Credentials C2PA metadata",
+      "secondaryKeywords": ["what is C2PA", "what are Content Credentials", "AI image provenance metadata", "C2PA image metadata", "remove Content Credentials"],
+      "entities": ["C2PA", "Content Credentials", "EXIF", "XMP", "JPEG", "PNG", "WebP"],
+      "answer": "Content Credentials are a type of provenance record that can be embedded in or associated with a media file using the C2PA standard. They can describe actions recorded by participating tools, but they are not a universal detector of AI-generated images and can be lost when a file is converted, resized or re-encoded.",
+      "body":[
+        {"t":"p","x":"Content Credentials are often discussed as though they are a permanent stamp inside every AI image. They are not. They are a provenance system: participating tools can record information about a media asset and attach or associate that record with the file. Whether a record exists, what it says and whether it survives sharing depends on the tool and the route the file takes."},
+        {"t":"h2","x":"C2PA and Content Credentials in plain language"},
+        {"t":"p","x":"C2PA is the technical standard behind many Content Credentials implementations. In practical terms, it gives compatible software a way to carry signed assertions about a file's history. A record might identify an application, state that edits were made, or point to a manifest associated with the asset. It is not the same as a pixel watermark, and it is not a universal verdict about whether an image is real, edited or AI-generated."},
+        {"t":"table","caption":"Three concepts that are commonly mixed together.","head":["Thing","Where it lives","What it can tell you"],"rows":[["Visible label or watermark","In the pixels","What is visibly printed or drawn on the image"],["EXIF / XMP / IPTC","Metadata fields in the file","Camera, author, title, dates or workflow information"],["C2PA / Content Credentials","A provenance record embedded in or associated with the asset","Claims recorded by participating tools, when the record is present and valid"]]},
+        {"t":"h2","x":"Why provenance records can disappear"},
+        {"t":"p","x":"Many ordinary file operations create a new image: a crop, screenshot, export, social-media upload, format conversion or compression pass. A new encoder may copy pixels but not copy every metadata block and provenance record. That does not prove anyone intended to remove the record; it only means the new file is not byte-for-byte the original. For evidence, recordkeeping or licensing work, keep the original asset and its source context rather than relying on a forwarded copy."},
+        {"t":"h2","x":"How a metadata-free image copy works"},
+        {"t":"steps","items":[{"h":"Separate the source from the sharing copy","x":"Keep the original file, then make a second copy for the destination. This preserves the source for any workflow that needs its metadata or provenance."},{"h":"Rebuild the copy from the visible pixels","x":"[AI Metadata Remover](/tools/remove-ai-metadata) decodes the image in your browser and writes a new PNG, JPG or WebP. Common embedded metadata and provenance blocks are not carried into the new file."},{"h":"Use the result honestly","x":"A clean copy is appropriate for privacy or delivery requirements. It is not a basis for claiming that an image has a different origin or history than it does."}]},
+        {"t":"cta","tool":"remove-ai-metadata","x":"Create a local sharing copy without common embedded image metadata. Keep the original when provenance matters."},
+        {"t":"h2","x":"What to do when provenance matters"},
+        {"t":"ul","items":["Keep the original file, rather than only a message-app or social-media copy.","Record the source, date received and relevant permissions alongside the original.","Use the software or service that supplied the record to inspect it when possible.","Do not treat the absence of a credential as proof of how an image was made.","Use a separate, clearly named delivery copy when privacy or platform requirements call for one."]},
+        {"t":"note","x":"Metadata removal is different from image editing. It leaves the intended visible picture alone while producing a new file. If you need a different file format or size too, see [how to convert an image format](/blog/files/convert-an-image-format) and [how to compress an image](/blog/files/compress-an-image)."}
+      ],
+      "faqs":[{"q":"Are Content Credentials proof that an image was made by AI?","a":"No. They are provenance records from participating tools. A record may describe creation or editing actions, but its presence or absence is not a universal determination of an image's origin."},{"q":"Can C2PA metadata be removed by converting an image?","a":"A conversion or re-encoding can produce a new file without the original metadata and provenance blocks. That is why originals should be retained whenever provenance, licensing or evidence matters."},{"q":"Does a metadata-free copy change the visible image?","a":"The tool rebuilds the output from visible pixels. PNG preserves decoded pixels and transparency; JPG and WebP use compression, so check the result if fine detail is important."},{"q":"Should I delete the original after stripping metadata?","a":"Usually no. Keep the original separately, especially when it is your record of where an image came from or what its original metadata contained."}],
+      "relatedTools":["remove-ai-metadata","image-converter","compress-image"],
+      "relatedPosts":["remove-ai-metadata-from-images","convert-an-image-format","compress-an-image"]
     }
   ]
 }

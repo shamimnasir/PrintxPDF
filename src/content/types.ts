@@ -43,6 +43,8 @@ export type Post = {
   faqs: Faq[]
   relatedTools: string[]
   relatedPosts: string[]
+  /** Newly published English guides can opt into translation in a later localization release. */
+  localize?: boolean
 }
 
 export type Cluster = {
