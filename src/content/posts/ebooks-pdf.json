@@ -1059,6 +1059,36 @@
         {
           "t": "p",
           "x": "If the file is clean and unprotected, the conversion is undramatic: pick a page size and download a PDF. Start with [converting an EPUB to PDF](/blog/ebooks/convert-epub-to-pdf), or read [ebook formats explained](/blog/ebooks/ebook-formats-explained) first if you are not sure what you are holding. And if you are wondering what happens to a file you do upload, [are online PDF tools safe](/blog/privacy/are-online-pdf-tools-safe) answers it directly."
+        },
+        {
+          "t": "h2",
+          "x": "How to check whether an ebook can be converted"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Identify the file format",
+              "x": "Check whether you have a DRM-free MOBI, PRC, AZW, or AZW3 file rather than a KFX file or store-only download."
+            },
+            {
+              "h": "Confirm your rights",
+              "x": "Review the license and use only material you are allowed to convert or copy."
+            },
+            {
+              "h": "Try the supported converter",
+              "x": "Use [MOBI to PDF](/tools/mobi-to-pdf) only for compatible, DRM-free books."
+            },
+            {
+              "h": "Read the result message",
+              "x": "A protected or unsupported book returns an error rather than a converted file."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "mobi-to-pdf",
+          "x": "Convert supported DRM-free ebooks with clear server-processing notice. Free core access, no watermark."
         }
       ],
       "faqs": [
