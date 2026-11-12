@@ -1212,6 +1212,332 @@
         "pdf-to-text",
         "print-journal-articles"
       ]
+    },
+    {
+      "slug": "scan-multiple-pages-to-one-pdf-phone",
+      "cluster": "ocr",
+      "title": "How to scan multiple pages to one PDF on a phone",
+      "metaTitle": "How to scan multiple pages to one PDF on a phone",
+      "metaDescription": "How to scan multiple pages to one PDF on a phone free, no signup, no watermark, and private in-browser capture from a phone camera or existing photos.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "scan multiple pages to one PDF phone",
+      "secondaryKeywords": [
+        "scan to PDF free",
+        "phone scanner PDF",
+        "camera document scan",
+        "private PDF scanner"
+      ],
+      "entities": [
+        "PDF scan",
+        "phone camera",
+        "OCR",
+        "A4 paper",
+        "browser privacy"
+      ],
+      "answer": "To scan multiple pages into one PDF on a phone, capture or choose clear page photos, put them in order, create the PDF, and inspect every page before sharing. PrintxPDF handles standard scanning locally in the browser.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A phone can make a practical multi-page document scan when each page is captured carefully and checked before delivery."
+        },
+        {
+          "t": "h2",
+          "x": "How to scan pages into one PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Prepare the page and light",
+              "x": "Place the document flat, use even light, and avoid shadows or glare."
+            },
+            {
+              "h": "Open Scan to PDF",
+              "x": "Use [Scan to PDF](/tools/scan-to-pdf) in your phone or computer browser."
+            },
+            {
+              "h": "Capture or add each page",
+              "x": "Take a new photo or choose clear existing images, then place pages in the correct order."
+            },
+            {
+              "h": "Choose the page setting",
+              "x": "Select A4, Letter, or fit-to-image and use greyscale or contrast settings only when they improve readability."
+            },
+            {
+              "h": "Create and check the PDF",
+              "x": "Download the PDF, open it, and inspect page order, edges, and small text before sharing."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "scan-to-pdf",
+          "x": "Turn document photos into a PDF in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Phone scan versus ordinary photo"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Method",
+            "Best for",
+            "Check before sharing"
+          ],
+          "rows": [
+            [
+              "Scan to PDF",
+              "Multiple pages in one document",
+              "Order, crop, orientation, and page size."
+            ],
+            [
+              "Single camera photo",
+              "One quick visual reference",
+              "Glare, blur, and background clutter."
+            ],
+            [
+              "Flatbed scanner",
+              "High-fidelity records",
+              "Resolution and page alignment."
+            ],
+            [
+              "OCR after scanning",
+              "Searchable text copy",
+              "Recognition of names, numbers, and handwriting."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Capture quality determines the result"
+        },
+        {
+          "t": "p",
+          "x": "A PDF cannot restore letters that were blurred, cropped, or hidden by glare in the photo. Hold the camera parallel to the page, include all edges, and retake a page that looks soft at normal zoom. Receipts and small print benefit from good contrast. If the scan will be used as a record, keep the original photo or source document until the PDF has been checked and accepted."
+        },
+        {
+          "t": "h2",
+          "x": "Scanning is not OCR"
+        },
+        {
+          "t": "p",
+          "x": "A scanned PDF usually contains page images, not selectable text. It can look correct and still be impossible to search or copy from. Use [OCR PDF](/tools/ocr-pdf) on a working copy when readers need a text layer. Check names, dates, amounts, and other high-risk details because recognition can make mistakes, particularly with handwriting, blur, or unusual layouts."
+        },
+        {
+          "t": "h2",
+          "x": "Local browser processing for sensitive pages"
+        },
+        {
+          "t": "p",
+          "x": "Forms, receipts, IDs, and signed documents can be private. Scan to PDF runs in the browser, so ordinary capture and assembly do not require routine uploads. You still decide where to save the downloaded file and who receives it. Use an approved secure delivery path if the content is sensitive, and review every page before attaching it to a message."
+        },
+        {
+          "t": "h2",
+          "x": "Make the final PDF easy to use"
+        },
+        {
+          "t": "p",
+          "x": "Give the document a clear filename and check page count and orientation. If a packet needs additional PDF pages, use [Merge PDF](/tools/merge-pdf) after reviewing each part. If only selected pages should be shared, [Extract Pages](/tools/extract-pages) can make a smaller copy. Keep the original source until the final PDF is confirmed complete. Retake any unclear source image before you finalize the PDF."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I scan to PDF for free?",
+          "a": "Yes. Capture or add document photos, arrange pages, create the PDF, and download it without signup or a watermark."
+        },
+        {
+          "q": "Can I scan multiple pages into one PDF?",
+          "a": "Yes. Add each page, put them in order, choose the page setting, then create a single PDF."
+        },
+        {
+          "q": "Will a scanned PDF be searchable?",
+          "a": "Not by default. A scan is an image-based PDF. Run OCR on a copy if you need selectable and searchable text."
+        },
+        {
+          "q": "Is Scan to PDF private?",
+          "a": "The standard scan workflow runs in the browser, so pages are not routinely uploaded for capture or assembly."
+        }
+      ],
+      "relatedTools": [
+        "scan-to-pdf",
+        "ocr-pdf",
+        "merge-pdf",
+        "extract-pages"
+      ],
+      "relatedPosts": [
+        "make-searchable-pdf-from-scanned-paper",
+        "make-pdf-searchable",
+        "how-to-merge-pdf-files",
+        "extract-specific-pages-from-pdf-free"
+      ]
+    },
+    {
+      "slug": "turn-document-photos-into-pdf",
+      "cluster": "ocr",
+      "title": "How to turn document photos into a PDF",
+      "metaTitle": "How to turn document photos into a PDF",
+      "metaDescription": "How to turn document photos into a PDF free, no signup, no watermark, and private in-browser capture from a phone camera or existing photos.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "turn document photos into PDF",
+      "secondaryKeywords": [
+        "scan to PDF free",
+        "phone scanner PDF",
+        "camera document scan",
+        "private PDF scanner"
+      ],
+      "entities": [
+        "PDF scan",
+        "phone camera",
+        "OCR",
+        "A4 paper",
+        "browser privacy"
+      ],
+      "answer": "To turn document photos into a PDF, add clear images, order them, choose an appropriate page size, create the PDF, and check the final pages. A good source photo matters more than any later conversion setting.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Photos of receipts, forms, and paper notes become easier to send and file when they are assembled into one PDF."
+        },
+        {
+          "t": "h2",
+          "x": "How to scan pages into one PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Prepare the page and light",
+              "x": "Place the document flat, use even light, and avoid shadows or glare."
+            },
+            {
+              "h": "Open Scan to PDF",
+              "x": "Use [Scan to PDF](/tools/scan-to-pdf) in your phone or computer browser."
+            },
+            {
+              "h": "Capture or add each page",
+              "x": "Take a new photo or choose clear existing images, then place pages in the correct order."
+            },
+            {
+              "h": "Choose the page setting",
+              "x": "Select A4, Letter, or fit-to-image and use greyscale or contrast settings only when they improve readability."
+            },
+            {
+              "h": "Create and check the PDF",
+              "x": "Download the PDF, open it, and inspect page order, edges, and small text before sharing."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "scan-to-pdf",
+          "x": "Turn document photos into a PDF in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Phone scan versus ordinary photo"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Method",
+            "Best for",
+            "Check before sharing"
+          ],
+          "rows": [
+            [
+              "Scan to PDF",
+              "Multiple pages in one document",
+              "Order, crop, orientation, and page size."
+            ],
+            [
+              "Single camera photo",
+              "One quick visual reference",
+              "Glare, blur, and background clutter."
+            ],
+            [
+              "Flatbed scanner",
+              "High-fidelity records",
+              "Resolution and page alignment."
+            ],
+            [
+              "OCR after scanning",
+              "Searchable text copy",
+              "Recognition of names, numbers, and handwriting."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Capture quality determines the result"
+        },
+        {
+          "t": "p",
+          "x": "A PDF cannot restore letters that were blurred, cropped, or hidden by glare in the photo. Hold the camera parallel to the page, include all edges, and retake a page that looks soft at normal zoom. Receipts and small print benefit from good contrast. If the scan will be used as a record, keep the original photo or source document until the PDF has been checked and accepted."
+        },
+        {
+          "t": "h2",
+          "x": "Scanning is not OCR"
+        },
+        {
+          "t": "p",
+          "x": "A scanned PDF usually contains page images, not selectable text. It can look correct and still be impossible to search or copy from. Use [OCR PDF](/tools/ocr-pdf) on a working copy when readers need a text layer. Check names, dates, amounts, and other high-risk details because recognition can make mistakes, particularly with handwriting, blur, or unusual layouts."
+        },
+        {
+          "t": "h2",
+          "x": "Local browser processing for sensitive pages"
+        },
+        {
+          "t": "p",
+          "x": "Forms, receipts, IDs, and signed documents can be private. Scan to PDF runs in the browser, so ordinary capture and assembly do not require routine uploads. You still decide where to save the downloaded file and who receives it. Use an approved secure delivery path if the content is sensitive, and review every page before attaching it to a message."
+        },
+        {
+          "t": "h2",
+          "x": "Make the final PDF easy to use"
+        },
+        {
+          "t": "p",
+          "x": "Give the document a clear filename and check page count and orientation. If a packet needs additional PDF pages, use [Merge PDF](/tools/merge-pdf) after reviewing each part. If only selected pages should be shared, [Extract Pages](/tools/extract-pages) can make a smaller copy. Keep the original source until the final PDF is confirmed complete. Retake any unclear source image before you finalize the PDF."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I scan to PDF for free?",
+          "a": "Yes. Capture or add document photos, arrange pages, create the PDF, and download it without signup or a watermark."
+        },
+        {
+          "q": "Can I scan multiple pages into one PDF?",
+          "a": "Yes. Add each page, put them in order, choose the page setting, then create a single PDF."
+        },
+        {
+          "q": "Will a scanned PDF be searchable?",
+          "a": "Not by default. A scan is an image-based PDF. Run OCR on a copy if you need selectable and searchable text."
+        },
+        {
+          "q": "Is Scan to PDF private?",
+          "a": "The standard scan workflow runs in the browser, so pages are not routinely uploaded for capture or assembly."
+        }
+      ],
+      "relatedTools": [
+        "scan-to-pdf",
+        "ocr-pdf",
+        "merge-pdf",
+        "extract-pages"
+      ],
+      "relatedPosts": [
+        "make-searchable-pdf-from-scanned-paper",
+        "make-pdf-searchable",
+        "how-to-merge-pdf-files",
+        "extract-specific-pages-from-pdf-free"
+      ]
     }
   ]
 }
