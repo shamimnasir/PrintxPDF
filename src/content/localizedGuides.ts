@@ -65,9 +65,11 @@ export function languagePack(locale: string, hub: string): LanguagePack | undefi
 export function guideAlternates(topic: string, site = 'https://printxpdf.com', packs = LANGUAGE_ROUTES): { lang: string; url: string }[] {
   const base = site.replace(/\/$/, '')
   const english = ENGLISH_GUIDE_ROUTES.find((post) => post.slug === topic)
-  const alternates = packs.map((pack) => {
+  // Do not advertise a locale route until its translation exists. A guessed fallback URL creates
+  // broken hreflang targets for newly published English guides.
+  const alternates = packs.flatMap((pack) => {
     const guide = pack.guides.find((item) => item.topic === topic)
-    return { lang: pack.locale, url: `${base}${localizedGuidePath(pack, guide?.slug || topic)}` }
+    return guide ? [{ lang: pack.locale, url: `${base}${localizedGuidePath(pack, guide.slug)}` }] : []
   })
   if (!english) return alternates
   const englishUrl = `${base}/blog/${english.cluster}/${english.slug}`
