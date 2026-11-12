@@ -19,7 +19,8 @@
     "edit-pdf",
     "redact-pdf",
     "remove-metadata",
-    "compare-pdf"
+    "compare-pdf",
+    "edit-metadata"
   ],
   "posts": [
     {
@@ -838,6 +839,169 @@
         "make-pdf-searchable",
         "edit-pdf-without-adobe-free",
         "convert-pdf-to-markdown-for-notes"
+      ]
+    },
+    {
+      "slug": "change-pdf-author-title-and-keywords",
+      "cluster": "edit-advanced",
+      "title": "How to change a PDF author, title, and keywords",
+      "metaTitle": "Change PDF Author, Title, and Keywords",
+      "metaDescription": "Edit PDF author, title, and keywords free, with no signup, no watermark, and private in-browser metadata editing.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "change PDF author title and keywords",
+      "secondaryKeywords": [
+        "edit PDF metadata",
+        "change PDF author",
+        "PDF title metadata",
+        "PDF keywords"
+      ],
+      "entities": [
+        "PDF metadata",
+        "author",
+        "title",
+        "keywords",
+        "document privacy"
+      ],
+      "answer": "To change PDF metadata, open a copy in a metadata editor, replace the title, author, subject, or keywords, download the updated file, and verify the visible document remains correct. PrintxPDF edits standard PDF metadata locally in your browser without signup or a watermark.",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF metadata helps file managers, readers, and document systems identify a file, even though it may not appear on the page. Correcting a title, author, subject, or keywords can make an approved PDF easier to find and classify. Work on a copy, use accurate descriptive values, and review the result before sharing it. PrintxPDF edits standard PDF metadata in your browser, without an account, card, watermark, or routine upload."
+        },
+        {
+          "t": "h2",
+          "x": "How to change PDF title, author, and keywords"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Keep the original file",
+              "x": "Save an untouched copy when provenance, signatures, or the original source details matter."
+            },
+            {
+              "h": "Open Edit Metadata",
+              "x": "Add the PDF to [Edit Metadata](/tools/edit-metadata) in your browser."
+            },
+            {
+              "h": "Review current values",
+              "x": "Check title, author, subject, and keywords before changing them. Use accurate, approved descriptions."
+            },
+            {
+              "h": "Save a new copy",
+              "x": "Download the edited PDF with a clear version name."
+            },
+            {
+              "h": "Verify the result",
+              "x": "Open the PDF and check that visible pages are unchanged and metadata displays as intended in a reader or file manager."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "edit-metadata",
+          "x": "Edit PDF metadata in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Edit metadata or remove it?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Goal",
+            "Best tool",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Correct a title or author",
+              "Edit Metadata",
+              "Updates selected standard fields."
+            ],
+            [
+              "Share with fewer standard properties",
+              "Remove Metadata",
+              "Creates a copy without standard document properties."
+            ],
+            [
+              "Hide confidential text",
+              "Redact PDF",
+              "Removes visible content using a redaction workflow."
+            ],
+            [
+              "Rename the downloaded file",
+              "Your file manager",
+              "Changes the filename, not embedded PDF metadata."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Use accurate metadata for document management"
+        },
+        {
+          "t": "p",
+          "x": "A clear title and subject can help a PDF appear correctly in search results, document repositories, and reader tabs. Use names that describe the document rather than internal drafts or temporary labels. Avoid inserting sensitive personal information merely to make a file easier to identify. When a receiving system sets metadata rules, follow that system rather than guessing about its preferred format."
+        },
+        {
+          "t": "h2",
+          "x": "Editing metadata does not remove every hidden detail"
+        },
+        {
+          "t": "p",
+          "x": "Changing standard fields such as author and title is not a forensic cleansing process. A PDF can contain other data in comments, attachments, form fields, images, revision history, or nonstandard metadata structures. Use [Remove Metadata](/tools/remove-metadata) when the policy calls for a cleaner distribution copy, and inspect the output. Use [Redact PDF](/tools/redact-pdf) when visible content must not be shared."
+        },
+        {
+          "t": "h2",
+          "x": "Browser-local changes for private records"
+        },
+        {
+          "t": "p",
+          "x": "Metadata can reveal internal project names, staff identities, or workflow details. Browser-local editing avoids an unnecessary upload for standard metadata changes. You still decide which output file to share and where it is stored. Review the PDF and its visible pages before sending it, especially when the source contains client, financial, medical, or legal information."
+        },
+        {
+          "t": "h2",
+          "x": "Keep records and versions clear"
+        },
+        {
+          "t": "p",
+          "x": "Use a descriptive filename alongside accurate embedded metadata, then keep the original when it serves a recordkeeping purpose. If a PDF is signed or subject to retention requirements, check whether updating metadata affects the record process before editing it. Store the updated delivery copy separately so a future reviewer can distinguish the source from the corrected metadata version."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I change PDF metadata for free?",
+          "a": "Yes. Edit standard fields such as title, author, subject, and keywords in the browser, then download the updated copy without signup."
+        },
+        {
+          "q": "Does changing PDF metadata change visible page text?",
+          "a": "No. Standard metadata fields are separate from visible page content. Review the downloaded PDF to confirm the pages remain as expected."
+        },
+        {
+          "q": "Can I remove all hidden PDF data by editing metadata?",
+          "a": "No. Editing selected fields is different from removing standard properties or redacting page content. Use the appropriate privacy tool for the data involved."
+        },
+        {
+          "q": "Is Edit Metadata private?",
+          "a": "Standard metadata editing runs in the browser tab, so the PDF is not routinely uploaded for processing."
+        }
+      ],
+      "relatedTools": [
+        "edit-metadata",
+        "remove-metadata",
+        "redact-pdf",
+        "pdf-reader"
+      ],
+      "relatedPosts": [
+        "remove-metadata-from-pdf",
+        "redact-pdf-properly",
+        "edit-pdf-without-adobe-free",
+        "change-text-in-pdf-without-changing-layout"
       ]
     }
   ]
