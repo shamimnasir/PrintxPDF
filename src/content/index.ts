@@ -23,6 +23,11 @@ import ebooksPdf from './posts/ebooks-pdf.json'
 import imagesArchives from './posts/images-archives.json'
 import archiveDocuments from './posts/archive-documents.json'
 import editAdvanced from './posts/edit-pdf-advanced.json'
+import archiveExpansion from './posts/archive-expansion.json'
+import privacyExpansion from './posts/privacy-expansion.json'
+import editingExpansion from './posts/editing-expansion.json'
+import conversionExpansion from './posts/conversion-expansion.json'
+import webPrintExpansion from './posts/web-print-expansion.json'
 
 // Each cluster paired with the file it lives in. The admin editor needs the file name to publish
 // a change back, and deriving it from the slug would be a guess: the `edit` cluster lives in
@@ -52,6 +57,11 @@ const SOURCES: [Cluster, string][] = [
   [imagesArchives, 'images-archives'],
   [archiveDocuments, 'archive-documents'],
   [editAdvanced, 'edit-pdf-advanced'],
+  [archiveExpansion, 'archive-expansion'],
+  [privacyExpansion, 'privacy-expansion'],
+  [editingExpansion, 'editing-expansion'],
+  [conversionExpansion, 'conversion-expansion'],
+  [webPrintExpansion, 'web-print-expansion'],
 ] as unknown as [Cluster, string][]
 
 export const CLUSTERS: Cluster[] = SOURCES.map(([c]) => c)

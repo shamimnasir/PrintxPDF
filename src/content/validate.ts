@@ -22,7 +22,7 @@ const BROWSERS = ['chrome', 'firefox', 'safari', 'edge']
 
 export const LIMITS = {
   clustersMin: 10,
-  clustersMax: 24,
+  clustersMax: 36,
   postsPerClusterMin: 3,
   postsPerClusterMax: 12,
   metaTitleMax: 65,
