@@ -1766,6 +1766,332 @@
         "extract-specific-pages-from-pdf-free",
         "remove-metadata-from-pdf"
       ]
+    },
+    {
+      "slug": "convert-pdf-to-markdown-for-notes",
+      "cluster": "from-pdf",
+      "title": "How to convert a PDF to Markdown for notes",
+      "metaTitle": "How to convert a PDF to Markdown for notes",
+      "metaDescription": "How to convert a PDF to Markdown for notes free, no signup, no watermark, with private in-browser extraction from text-based PDF documents.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "convert PDF to Markdown for notes",
+      "secondaryKeywords": [
+        "PDF to Markdown free",
+        "convert PDF to MD",
+        "extract PDF text",
+        "PDF notes conversion"
+      ],
+      "entities": [
+        "PDF",
+        "Markdown",
+        "OCR",
+        "plain text",
+        "browser privacy"
+      ],
+      "answer": "To turn a text-based PDF into notes, convert it to Markdown, review its headings and lists, then edit the text in your notes app. Keep the PDF when page layout or visual evidence matters.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Markdown is useful when a PDF needs to become editable notes rather than remain a fixed page."
+        },
+        {
+          "t": "h2",
+          "x": "How to convert a text PDF to Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Check whether text can be selected",
+              "x": "Try selecting a sentence in the PDF. If it is a scan, OCR a working copy first."
+            },
+            {
+              "h": "Open PDF to Markdown",
+              "x": "Add the file to [PDF to Markdown](/tools/pdf-to-markdown) in your browser."
+            },
+            {
+              "h": "Create the Markdown file",
+              "x": "Run the conversion. Larger text becomes headings, bullets become lists, and lines are joined into paragraphs."
+            },
+            {
+              "h": "Read the output",
+              "x": "Open the MD file in a text editor, notes app, or Markdown viewer and check headings, lists, and key terms."
+            },
+            {
+              "h": "Keep the PDF source",
+              "x": "Retain the original when layout, signatures, charts, or visual evidence matters."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Turn a text PDF into Markdown in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "PDF versus Markdown for different jobs"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Format",
+            "Best for",
+            "Main trade-off"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Fixed layout and printing",
+              "Harder to revise or compare as text."
+            ],
+            [
+              "Markdown",
+              "Notes, docs, and version history",
+              "Does not preserve page layout."
+            ],
+            [
+              "Plain text",
+              "Simple extraction",
+              "Loses heading and list structure."
+            ],
+            [
+              "OCR PDF",
+              "Searchable scans",
+              "Recognition still needs checking."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown preserves structure, not page design"
+        },
+        {
+          "t": "p",
+          "x": "A PDF records positions on a page, not semantic sections in the way a source document does. PDF to Markdown uses practical layout clues: larger lines become headings, bullets become lists, and ordinary lines become paragraphs. This is useful for notes and documentation, but it cannot reproduce complex columns, charts, footnotes, precise typography, or visual placement. Treat the Markdown output as a reusable text copy, not a visual replacement for the PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Review important text before using it"
+        },
+        {
+          "t": "p",
+          "x": "Check names, dates, numbers, links, headings, and lists against the PDF before publishing, summarizing, or feeding the content into another system. A line break can change meaning, and a table may need manual reformatting. For scanned pages, OCR recognition can introduce errors. Keep the original PDF available so each material detail can be checked in its visual context."
+        },
+        {
+          "t": "h2",
+          "x": "Local extraction for private documents"
+        },
+        {
+          "t": "p",
+          "x": "Internal reports, research notes, and unpublished drafts may contain private material. The standard conversion reads the PDF in your browser tab, avoiding a routine upload to an extraction service. You still choose where the Markdown file is stored or pasted. Review the output before sharing it because text that is easy to copy is also easy to redistribute."
+        },
+        {
+          "t": "h2",
+          "x": "Use the source format when layout matters"
+        },
+        {
+          "t": "p",
+          "x": "Use Markdown when you need editable text, documentation, or a clean input for a notes system. Use the original PDF for print design, signatures, official records, and page references. If a scan needs text recognition first, use [OCR PDF](/tools/ocr-pdf). If you need a simple searchable text file rather than headings and lists, [PDF to Text](/tools/pdf-to-text) is a better fit."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I convert PDF to Markdown for free?",
+          "a": "Yes. Text-based PDFs can be converted to Markdown in the browser without signup or a watermark. Review the structure before using the result."
+        },
+        {
+          "q": "Can scanned PDFs convert to Markdown?",
+          "a": "Not directly. Run OCR on a working copy first, then convert the recognized text and check it against the scanned page."
+        },
+        {
+          "q": "Does Markdown keep PDF page layout?",
+          "a": "No. Markdown preserves useful headings, lists, and paragraphs, but not fixed pages, typography, or complex visual layout."
+        },
+        {
+          "q": "Is PDF to Markdown private?",
+          "a": "The standard workflow reads the file in your browser tab, so it is not routinely uploaded for conversion."
+        }
+      ],
+      "relatedTools": [
+        "pdf-to-markdown",
+        "ocr-pdf",
+        "pdf-to-text",
+        "remove-metadata"
+      ],
+      "relatedPosts": [
+        "pdf-to-excel",
+        "make-pdf-searchable",
+        "remove-metadata-from-pdf",
+        "convert-pdf-pages-to-images-for-print-and-web"
+      ]
+    },
+    {
+      "slug": "convert-scanned-pdf-to-markdown",
+      "cluster": "from-pdf",
+      "title": "How to convert a scanned PDF to Markdown",
+      "metaTitle": "How to convert a scanned PDF to Markdown",
+      "metaDescription": "How to convert a scanned PDF to Markdown free, no signup, no watermark, with private in-browser extraction from text-based PDF documents.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "convert scanned PDF to Markdown",
+      "secondaryKeywords": [
+        "PDF to Markdown free",
+        "convert PDF to MD",
+        "extract PDF text",
+        "PDF notes conversion"
+      ],
+      "entities": [
+        "PDF",
+        "Markdown",
+        "OCR",
+        "plain text",
+        "browser privacy"
+      ],
+      "answer": "To convert a scanned PDF to Markdown, OCR a working copy first, then extract the recognized text and review it against the scan. OCR errors and page layout still need manual checking.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A scan is a picture of a page, so it needs text recognition before a Markdown converter can identify paragraphs and headings."
+        },
+        {
+          "t": "h2",
+          "x": "How to convert a text PDF to Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Check whether text can be selected",
+              "x": "Try selecting a sentence in the PDF. If it is a scan, OCR a working copy first."
+            },
+            {
+              "h": "Open PDF to Markdown",
+              "x": "Add the file to [PDF to Markdown](/tools/pdf-to-markdown) in your browser."
+            },
+            {
+              "h": "Create the Markdown file",
+              "x": "Run the conversion. Larger text becomes headings, bullets become lists, and lines are joined into paragraphs."
+            },
+            {
+              "h": "Read the output",
+              "x": "Open the MD file in a text editor, notes app, or Markdown viewer and check headings, lists, and key terms."
+            },
+            {
+              "h": "Keep the PDF source",
+              "x": "Retain the original when layout, signatures, charts, or visual evidence matters."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Turn a text PDF into Markdown in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "PDF versus Markdown for different jobs"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Format",
+            "Best for",
+            "Main trade-off"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Fixed layout and printing",
+              "Harder to revise or compare as text."
+            ],
+            [
+              "Markdown",
+              "Notes, docs, and version history",
+              "Does not preserve page layout."
+            ],
+            [
+              "Plain text",
+              "Simple extraction",
+              "Loses heading and list structure."
+            ],
+            [
+              "OCR PDF",
+              "Searchable scans",
+              "Recognition still needs checking."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown preserves structure, not page design"
+        },
+        {
+          "t": "p",
+          "x": "A PDF records positions on a page, not semantic sections in the way a source document does. PDF to Markdown uses practical layout clues: larger lines become headings, bullets become lists, and ordinary lines become paragraphs. This is useful for notes and documentation, but it cannot reproduce complex columns, charts, footnotes, precise typography, or visual placement. Treat the Markdown output as a reusable text copy, not a visual replacement for the PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Review important text before using it"
+        },
+        {
+          "t": "p",
+          "x": "Check names, dates, numbers, links, headings, and lists against the PDF before publishing, summarizing, or feeding the content into another system. A line break can change meaning, and a table may need manual reformatting. For scanned pages, OCR recognition can introduce errors. Keep the original PDF available so each material detail can be checked in its visual context."
+        },
+        {
+          "t": "h2",
+          "x": "Local extraction for private documents"
+        },
+        {
+          "t": "p",
+          "x": "Internal reports, research notes, and unpublished drafts may contain private material. The standard conversion reads the PDF in your browser tab, avoiding a routine upload to an extraction service. You still choose where the Markdown file is stored or pasted. Review the output before sharing it because text that is easy to copy is also easy to redistribute."
+        },
+        {
+          "t": "h2",
+          "x": "Use the source format when layout matters"
+        },
+        {
+          "t": "p",
+          "x": "Use Markdown when you need editable text, documentation, or a clean input for a notes system. Use the original PDF for print design, signatures, official records, and page references. If a scan needs text recognition first, use [OCR PDF](/tools/ocr-pdf). If you need a simple searchable text file rather than headings and lists, [PDF to Text](/tools/pdf-to-text) is a better fit."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I convert PDF to Markdown for free?",
+          "a": "Yes. Text-based PDFs can be converted to Markdown in the browser without signup or a watermark. Review the structure before using the result."
+        },
+        {
+          "q": "Can scanned PDFs convert to Markdown?",
+          "a": "Not directly. Run OCR on a working copy first, then convert the recognized text and check it against the scanned page."
+        },
+        {
+          "q": "Does Markdown keep PDF page layout?",
+          "a": "No. Markdown preserves useful headings, lists, and paragraphs, but not fixed pages, typography, or complex visual layout."
+        },
+        {
+          "q": "Is PDF to Markdown private?",
+          "a": "The standard workflow reads the file in your browser tab, so it is not routinely uploaded for conversion."
+        }
+      ],
+      "relatedTools": [
+        "pdf-to-markdown",
+        "ocr-pdf",
+        "pdf-to-text",
+        "remove-metadata"
+      ],
+      "relatedPosts": [
+        "pdf-to-excel",
+        "make-pdf-searchable",
+        "remove-metadata-from-pdf",
+        "convert-pdf-pages-to-images-for-print-and-web"
+      ]
     }
   ]
 }
