@@ -1685,6 +1685,169 @@
         "remove-metadata-from-pdf",
         "will-this-file-still-open"
       ]
+    },
+    {
+      "slug": "convert-pdf-to-pdfa-for-archive",
+      "cluster": "archive",
+      "title": "How to convert a PDF to PDF/A for an archive",
+      "metaTitle": "Convert PDF to PDF/A for an Archive",
+      "metaDescription": "Convert a PDF to PDF/A for archiving with clear server-processing notice, source preservation, and post-conversion checks.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "convert PDF to PDF/A for archive",
+      "secondaryKeywords": [
+        "PDF/A archive copy",
+        "PDF preservation format",
+        "PDF/A conversion",
+        "long term PDF archive"
+      ],
+      "entities": [
+        "PDF/A",
+        "PDF",
+        "ISO 19005",
+        "document archive",
+        "source record"
+      ],
+      "answer": "To make a PDF/A archive copy, preserve the original, confirm the required PDF/A profile, convert an approved working copy, then compare the result against the source. PrintxPDF’s PDF/A conversion is server processed and clearly labelled, so use it only when that processing is approved.",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF/A is a preservation-oriented PDF profile, not a magic guarantee that a document will remain correct or accessible forever. Use it when an archive, court, university, or records policy asks for it. Preserve the original first, confirm the exact profile required, and compare the converted result before filing it. PrintxPDF labels PDF/A conversion as server processed: the file is sent over a secure connection, converted, and deleted after completion."
+        },
+        {
+          "t": "h2",
+          "x": "How to create a PDF/A archive copy"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Preserve the original record",
+              "x": "Keep the source PDF unchanged, especially if it is signed, regulated, or needed as evidence."
+            },
+            {
+              "h": "Confirm the PDF/A requirement",
+              "x": "Ask whether the receiving archive requires PDF/A-1b, PDF/A-2b, or another specific profile."
+            },
+            {
+              "h": "Use an approved working copy",
+              "x": "Open [PDF to PDF/A](/tools/pdf-to-pdfa) only when server processing is allowed for the document."
+            },
+            {
+              "h": "Compare the converted PDF",
+              "x": "Check page count, fonts, images, forms, signatures, and searchable text against the source."
+            },
+            {
+              "h": "Store conversion notes",
+              "x": "Record the profile, date, source identifier, and any changes required by your archive process."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-pdfa",
+          "x": "Create an archive-ready PDF/A copy with clear server-processing notice. Free core access, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Original PDF versus PDF/A archive copy"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Copy",
+            "Purpose",
+            "What to keep"
+          ],
+          "rows": [
+            [
+              "Original PDF",
+              "Provenance and source evidence",
+              "Keep unchanged when policy or signatures matter."
+            ],
+            [
+              "Working copy",
+              "Conversion and review",
+              "Document the changes made."
+            ],
+            [
+              "PDF/A copy",
+              "Long-term layout preservation",
+              "Record the required profile and validation check."
+            ],
+            [
+              "Access copy",
+              "Routine distribution",
+              "Apply approved privacy and access controls."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF/A conversion can change features"
+        },
+        {
+          "t": "p",
+          "x": "PDF/A restricts features such as encryption and external dependencies so a file is more self-contained. That can affect interactive forms, JavaScript, media, transparency, fonts, or signatures. A successful conversion does not prove that every feature is preserved or that the archive will accept the file. Inspect the output at normal zoom and use the receiving organization’s validator or submission process when one is specified."
+        },
+        {
+          "t": "h2",
+          "x": "Use server processing deliberately"
+        },
+        {
+          "t": "p",
+          "x": "Most PrintxPDF tools work locally in the browser, but PDF/A conversion needs a server-side font and color engine. The site states this before use. Do not upload confidential, restricted, or regulated records unless the processing is approved for your situation. The upload is deleted after conversion, but your organization’s rules still determine whether this method is suitable."
+        },
+        {
+          "t": "h2",
+          "x": "Keep preservation and privacy separate"
+        },
+        {
+          "t": "p",
+          "x": "PDF/A focuses on long-term rendering, not on removing confidential material. A converted file can still contain visible sensitive text, document properties, attachments, or other information. Use [Remove Metadata](/tools/remove-metadata) for a separate distribution-copy metadata step when policy requires it, and use verified redaction for content that must not be visible. Preserve the original record separately."
+        },
+        {
+          "t": "h2",
+          "x": "Review before filing"
+        },
+        {
+          "t": "p",
+          "x": "Open the PDF/A output, compare representative pages with the source, and verify the receiving system accepts the profile. Check names, dates, totals, images, signatures, and page order. Store the original, the archive copy, and the conversion notes according to the retention policy. This makes a later review possible even when a future viewer or archive system changes."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is PDF/A better than PDF for archives?",
+          "a": "PDF/A is designed for long-term preservation requirements, but it is not automatically required or better for every document. Follow the receiving archive’s stated profile."
+        },
+        {
+          "q": "Does PDF/A conversion change the original file?",
+          "a": "No. Convert a working copy and retain the original source, especially when signatures, evidence, or provenance matter."
+        },
+        {
+          "q": "Is PDF to PDF/A processed in the browser?",
+          "a": "No. PDF/A conversion is server processed and clearly labelled because it requires a font and color engine. Files are deleted after conversion."
+        },
+        {
+          "q": "Does PDF/A remove metadata or private text?",
+          "a": "No. PDF/A is about preservation constraints. Use separate metadata-removal or redaction steps when needed."
+        }
+      ],
+      "relatedTools": [
+        "pdf-to-pdfa",
+        "remove-metadata",
+        "pdf-reader",
+        "repair-pdf"
+      ],
+      "relatedPosts": [
+        "what-is-pdfa",
+        "prepare-pdf-for-long-term-archive",
+        "will-this-file-still-open",
+        "remove-metadata-from-pdf"
+      ]
     }
   ]
 }
