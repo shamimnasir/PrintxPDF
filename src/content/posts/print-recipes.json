@@ -1150,6 +1150,10 @@
         {
           "q": "Does converting an EPUB to PDF preserve reflow?",
           "a": "No. PDF pages have a fixed layout, while EPUB is designed to reflow to different screen sizes. Inspect the output and keep the original ebook."
+        },
+        {
+          "q": "Should I check a PDF after converting it?",
+          "a": "Yes. Open the PDF and check page breaks, tables, images, headings, and small text before sending or printing. Keep the editable source for future revisions."
         }
       ],
       "relatedTools": [
