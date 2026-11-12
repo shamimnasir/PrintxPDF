@@ -14,6 +14,7 @@
     "audit:tools": "node scripts/audit-tools.mjs",
     "audit:features": "node scripts/audit-features.mjs",
     "audit:layout": "node scripts/audit-layout.mjs",
+    "audit:aeo": "node scripts/audit-aeo.mjs",
     "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
