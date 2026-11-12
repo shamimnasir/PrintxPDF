@@ -44,11 +44,12 @@ import { unlockPdf } from './unlock-pdf'
 import { pdfToPdfa } from './pdf-to-pdfa'
 import { imageConverter } from './image-converter'
 import { compressImage } from './compress-image'
+import { removeAiMetadata } from './remove-ai-metadata'
 import { createZip } from './create-zip'
 import { extractZip } from './extract-zip'
 import { ebookConverter } from './ebook-converter'
 
-const ALL: ToolContent[] = [mergePdf, splitPdf, organizePdf, rotatePdf, deletePages, extractPages, compressPdf, repairPdf, ocrPdf, pdfReader, pdfToJpg, jpgToPdf, wordToPdf, excelToPdf, htmlToPdf, pdfToText, pdfToWord, pdfToExcel, pdfToPpt, pptToPdf, epubToPdf, mobiToPdf, signPdf, addWatermark, pageNumbers, editMetadata, flattenPdf, removeMetadata, qrCode, editPdf, cropPdf, pdfForms, redactPdf, comparePdf, scanToPdf, pdfToMarkdown, protectPdf, unlockPdf, pdfToPdfa, imageConverter, compressImage, createZip, extractZip, ebookConverter]
+const ALL: ToolContent[] = [mergePdf, splitPdf, organizePdf, rotatePdf, deletePages, extractPages, compressPdf, repairPdf, ocrPdf, pdfReader, pdfToJpg, jpgToPdf, wordToPdf, excelToPdf, htmlToPdf, pdfToText, pdfToWord, pdfToExcel, pdfToPpt, pptToPdf, epubToPdf, mobiToPdf, signPdf, addWatermark, pageNumbers, editMetadata, flattenPdf, removeMetadata, qrCode, editPdf, cropPdf, pdfForms, redactPdf, comparePdf, scanToPdf, pdfToMarkdown, protectPdf, unlockPdf, pdfToPdfa, imageConverter, compressImage, removeAiMetadata, createZip, extractZip, ebookConverter]
 
 export const TOOL_CONTENT: Record<string, ToolContent> = Object.fromEntries(ALL.map((c) => [c.slug, c]))
 export const toolContent = (slug: string): ToolContent | undefined => TOOL_CONTENT[slug]

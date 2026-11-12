@@ -27,6 +27,7 @@ const ScanTool = lazy(() => import('./custom/ScanTool'))
 // file and image tools live outside the PDF feature so their decoders never load with it
 const ImageConvertTool = lazy(() => import('../files/ImageConvertTool'))
 const CompressImageTool = lazy(() => import('../files/CompressImageTool'))
+const RemoveImageMetadataTool = lazy(() => import('../files/RemoveImageMetadataTool'))
 const ZipTool = lazy(() => import('../files/ZipTool'))
 const UnzipTool = lazy(() => import('../files/UnzipTool'))
 
@@ -101,6 +102,7 @@ export default function ToolPage() {
         {tool.custom === 'scan' && <ScanTool key={key} />}
         {tool.custom === 'image' && <ImageConvertTool key={key} initialFormat={alias?.target} />}
         {tool.custom === 'compress-image' && <CompressImageTool key={key} />}
+        {tool.custom === 'remove-image-metadata' && <RemoveImageMetadataTool key={key} />}
         {tool.custom === 'zip' && <ZipTool key={key} />}
         {tool.custom === 'unzip' && <UnzipTool key={key} />}
         {!tool.custom && <GenericTool key={key} tool={tool} initialOptions={alias?.defaultOption ? { [alias.defaultOption.key]: alias.defaultOption.value } : undefined} />}

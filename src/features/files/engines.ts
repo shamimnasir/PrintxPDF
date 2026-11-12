@@ -248,6 +248,21 @@ export async function convertImage(file: File, opts: ConvertOptions): Promise<Co
   }
 }
 
+/**
+ * Decode pixels and encode a new image file. Canvas encoders do not carry source EXIF, IPTC,
+ * XMP, C2PA/Content Credentials or format-specific ancillary chunks into the new file.
+ */
+export async function removeImageMetadata(file: File, format: OutFormat): Promise<ConvertResult> {
+  const d = await decodeAny(file)
+  try {
+    const canvas = drawToCanvas(d, { background: format === 'jpg' ? '#ffffff' : null })
+    const blob = await canvasToBlob(canvas, OUT_MIME[format], format === 'png' ? undefined : 0.92)
+    return { blob, width: canvas.width, height: canvas.height }
+  } finally {
+    d.close()
+  }
+}
+
 export type CompressOptions = {
   quality: number
   /** longest side cap, null = off */

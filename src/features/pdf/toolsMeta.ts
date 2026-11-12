@@ -12,7 +12,7 @@ export type ToolMeta = {
   accept: string
   multiple?: boolean
   /** tools with a bespoke UI instead of the generic shell */
-  custom?: 'sign' | 'reader' | 'qr' | 'ocr' | 'organize' | 'forms' | 'redact' | 'compare' | 'scan' | 'edit' | 'image' | 'compress-image' | 'zip' | 'unzip'
+  custom?: 'sign' | 'reader' | 'qr' | 'ocr' | 'organize' | 'forms' | 'redact' | 'compare' | 'scan' | 'edit' | 'image' | 'compress-image' | 'remove-image-metadata' | 'zip' | 'unzip'
 }
 
 export const CATEGORY_LABEL: Record<ToolCategory, string> = {
@@ -88,6 +88,7 @@ export const TOOLS: ToolMeta[] = [
   // ---- files and images (browser-only, live in src/features/files) ----
   { slug: 'image-converter', name: 'Image Converter', short: 'HEIC, PNG, JPG, WebP, SVG', description: 'Convert iPhone photos (HEIC) and PNG, JPG, WebP, GIF, BMP or SVG pictures into PNG, JPG or WebP. Do as many as you like at once; nothing is uploaded.', icon: '🖼', category: 'image', status: 'real', accept: 'image/*,.heic,.heif,.svg', multiple: true, custom: 'image' },
   { slug: 'compress-image', name: 'Compress Image', short: 'Make pictures smaller', description: 'Shrink photos and screenshots by choosing a quality level and, if you like, a maximum size. See the before and after side by side before you download.', icon: '⇲', category: 'image', status: 'real', accept: 'image/*', multiple: true, custom: 'compress-image' },
+  { slug: 'remove-ai-metadata', name: 'AI Metadata Remover', short: 'Strip image metadata and AI provenance', description: 'Create a fresh image copy without EXIF, IPTC, XMP and embedded AI provenance records. It runs locally in your browser; visible pixels are kept.', icon: '◌', category: 'image', status: 'real', accept: 'image/*,.heic,.heif', multiple: true, custom: 'remove-image-metadata' },
   { slug: 'create-zip', name: 'Create ZIP', short: 'Pack files into one ZIP', description: 'Put any files into one ZIP file (a single package that holds many files) without installing anything. It is built in your browser, so even a 200 MB folder never leaves your computer.', icon: '🗜', category: 'files', status: 'real', accept: '*/*', multiple: true, custom: 'zip' },
   { slug: 'extract-zip', name: 'Extract ZIP', short: 'Open a ZIP file', description: 'See what is inside a ZIP file and download one file or all of them, right in your browser. No upload, no extra software.', icon: '📂', category: 'files', status: 'real', accept: '.zip', custom: 'unzip' },
   // ---- ebooks between formats (server: Calibre is already in the container) ----
