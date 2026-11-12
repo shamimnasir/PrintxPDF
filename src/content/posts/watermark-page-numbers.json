@@ -1210,6 +1210,169 @@
         "remove-metadata-from-pdf",
         "redact-pdf-properly"
       ]
+    },
+    {
+      "slug": "add-page-numbers-to-merged-pdf",
+      "cluster": "watermark",
+      "title": "How to add page numbers to a merged PDF",
+      "metaTitle": "Add Page Numbers to a Merged PDF",
+      "metaDescription": "Add page numbers to a merged PDF free, no signup, no watermark, and private in-browser processing for final document packets.",
+      "published": "2026-11-12",
+      "updated": "2026-11-12",
+      "readMinutes": 5,
+      "intent": "howto",
+      "localize": false,
+      "primaryKeyword": "add page numbers to merged PDF",
+      "secondaryKeywords": [
+        "number PDF pages free",
+        "page numbering PDF packet",
+        "PDF footer page numbers",
+        "merge and number PDF"
+      ],
+      "entities": [
+        "PDF",
+        "page number",
+        "merged document",
+        "footer",
+        "browser privacy"
+      ],
+      "answer": "To add page numbers to a merged PDF, finish the page order first, create a numbered copy, inspect the first and final pages, then share the reviewed version. PrintxPDF adds standard page numbers locally in your browser with no signup or watermark.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Page numbers make a merged PDF easier to review, cite, print, and discuss. Add them only after the document order is final, because splitting, deleting, or merging more pages afterward can make the sequence misleading. PrintxPDF adds standard page numbers in your browser tab, with no account, card, watermark, or routine upload. Keep the unnumbered source copy until the final packet is accepted."
+        },
+        {
+          "t": "h2",
+          "x": "How to add page numbers to a merged PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Finish the page order",
+              "x": "Use [Merge PDF](/tools/merge-pdf) or organize pages first, then confirm the packet is complete."
+            },
+            {
+              "h": "Open Page Numbers",
+              "x": "Add the final PDF to [Page Numbers](/tools/page-numbers) in your browser."
+            },
+            {
+              "h": "Choose placement and range",
+              "x": "Use a readable header or footer position and avoid areas used for signatures, labels, or existing footnotes."
+            },
+            {
+              "h": "Create a numbered copy",
+              "x": "Download a separate file with a clear version name."
+            },
+            {
+              "h": "Inspect the output",
+              "x": "Check the first, middle, and last pages for the correct sequence and unobscured content."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "page-numbers",
+          "x": "Add page numbers in your tab. Free, no signup, no watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Number pages before or after merging?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Workflow",
+            "Best choice",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Several PDFs become one packet",
+              "Merge first, then number",
+              "Creates one continuous sequence."
+            ],
+            [
+              "Each appendix needs separate numbering",
+              "Number each file first",
+              "Keeps independent sections distinct."
+            ],
+            [
+              "Pages need reordering",
+              "Organize before numbering",
+              "Avoids misleading numbers."
+            ],
+            [
+              "Only a few pages should be sent",
+              "Extract pages first",
+              "Numbers reflect the smaller delivery copy."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Choose placement that does not hide information"
+        },
+        {
+          "t": "p",
+          "x": "Footer numbering is often easiest to read, but not every PDF leaves room at the bottom. Check pages with tables, signatures, exhibits, drawings, and scanned forms. A number placed over a total, a barcode, or a signature line can create a real problem. Use a consistent location and review pages from throughout the packet rather than relying only on the cover page."
+        },
+        {
+          "t": "h2",
+          "x": "Page numbers are not version control"
+        },
+        {
+          "t": "p",
+          "x": "A page number tells a reader where they are in one file. It does not show whether the document is the current approved version or whether a page was changed after review. Use descriptive filenames, revision labels, and an approved source of record. If a draft needs a visible status, use [Add Watermark](/tools/add-watermark) on a separate distribution copy."
+        },
+        {
+          "t": "h2",
+          "x": "Local processing for review packets"
+        },
+        {
+          "t": "p",
+          "x": "Merged reports, contracts, applications, and client files can contain private details. Browser-local page numbering avoids an unnecessary transfer for this routine finalization step. You still control where the output is saved and sent, so review the completed PDF before delivery and use the required secure channel for sensitive material."
+        },
+        {
+          "t": "h2",
+          "x": "Keep the source until acceptance"
+        },
+        {
+          "t": "p",
+          "x": "Save the original merged file and the numbered delivery copy separately. If a recipient requests an added page or a different sequence, create a new final version instead of trying to patch a previously distributed file. This keeps the page numbering accurate and makes it easier to identify which document was actually reviewed."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I add page numbers to a PDF for free?",
+          "a": "Yes. Add the final PDF, choose a position, create a numbered copy, and download it without signup or a watermark."
+        },
+        {
+          "q": "Should I merge PDFs before adding page numbers?",
+          "a": "Usually yes when you need one continuous sequence across the whole packet. Merge and review the order first, then add numbers."
+        },
+        {
+          "q": "Will page numbers change my original PDF?",
+          "a": "No. The tool creates a separate numbered copy. Keep the unnumbered source until the final version is accepted."
+        },
+        {
+          "q": "Can I add page numbers to a scanned PDF?",
+          "a": "Yes. Page numbers can be placed on image-based pages, but review placement so they do not cover important scan content."
+        }
+      ],
+      "relatedTools": [
+        "page-numbers",
+        "merge-pdf",
+        "organize-pdf",
+        "add-watermark"
+      ],
+      "relatedPosts": [
+        "how-to-merge-pdf-files",
+        "add-watermark-to-pdf",
+        "split-pdf-into-pages",
+        "watermark-vs-stamp"
+      ]
     }
   ]
 }
