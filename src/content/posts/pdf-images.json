@@ -1249,6 +1249,10 @@
         {
           "q": "Will the image keep selectable text?",
           "a": "No. A rendered page image is pixels, so text is not selectable. Keep the original PDF or use OCR when a scan needs a searchable layer."
+        },
+        {
+          "q": "Should I use PNG or JPG for PDF pages?",
+          "a": "Use PNG when sharp text, diagrams, or transparency matters. Use JPG for photographs or smaller web files. Check the final image at the intended display or print size."
         }
       ],
       "relatedTools": [
