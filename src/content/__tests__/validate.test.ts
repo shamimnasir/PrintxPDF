@@ -84,7 +84,7 @@ describe('validateContent', () => {
 
   it('catches a cluster with the wrong number of posts', () => {
     expect(rules(clusters(cluster({ posts: [post()] })))).toContain('posts-per-cluster')
-    expect(rules(clusters(cluster({ posts: Array.from({ length: 8 }, (_, i) => post({ slug: `p${i}` })) })))).toContain('posts-per-cluster')
+    expect(rules(clusters(cluster({ posts: Array.from({ length: 13 }, (_, i) => post({ slug: `p${i}` })) })))).toContain('posts-per-cluster')
   })
 
   it('catches duplicate slugs', () => {

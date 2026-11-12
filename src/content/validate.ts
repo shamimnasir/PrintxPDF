@@ -24,7 +24,7 @@ export const LIMITS = {
   clustersMin: 10,
   clustersMax: 24,
   postsPerClusterMin: 3,
-  postsPerClusterMax: 7,
+  postsPerClusterMax: 12,
   metaTitleMax: 65,
   metaDescriptionMin: 110,
   metaDescriptionMax: 158,
