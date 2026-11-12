@@ -364,6 +364,40 @@
         {
           "t": "p",
           "x": "The same trick works for PDFs: choose **Save as PDF** as your printer destination instead of a physical printer. You get a one-page PDF containing only the selection, which is ideal for filing receipts or quoting a source in a report. See [saving a web page as a PDF](/blog/save-pdf/save-webpage-as-pdf-chrome) for the full walkthrough."
+        },
+        {
+          "t": "h2",
+          "x": "Print selection, reader view, or clean page?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Method",
+            "Best for",
+            "Limitation"
+          ],
+          "rows": [
+            [
+              "Print selected text",
+              "A short passage from one page",
+              "May lose surrounding context or source details."
+            ],
+            [
+              "Reader view",
+              "A simple article",
+              "Can omit layout or interactive content."
+            ],
+            [
+              "PrintxPDF Web Page Cleaner",
+              "A clean page or PDF copy",
+              "Review the cleaned result before printing."
+            ],
+            [
+              "Screenshot",
+              "A visual reference",
+              "Text is not cleanly searchable or selectable."
+            ]
+          ]
         }
       ],
       "faqs": [
