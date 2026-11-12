@@ -1011,36 +1011,159 @@
       "readMinutes": 6,
       "intent": "howto",
       "primaryKeyword": "combine pdf files custom page order",
-      "secondaryKeywords": ["merge PDF files in order", "rearrange pages after merging PDF", "combine scanned PDFs", "move PDF pages", "remove pages from merged PDF"],
-      "entities": ["PDF page tree", "page thumbnails", "document packet", "page rotation", "bookmarks", "file size", "PDF reader", "page range"],
+      "secondaryKeywords": [
+        "merge PDF files in order",
+        "rearrange pages after merging PDF",
+        "combine scanned PDFs",
+        "move PDF pages",
+        "remove pages from merged PDF"
+      ],
+      "entities": [
+        "PDF page tree",
+        "page thumbnails",
+        "document packet",
+        "page rotation",
+        "bookmarks",
+        "file size",
+        "PDF reader",
+        "page range"
+      ],
       "answer": "To combine PDFs in a custom order, list the files in the sequence you want, merge them, then inspect the page thumbnails and move, rotate, extract or delete pages as needed. Save a new copy, check page count and orientation, and open the output before sending it. Keep the originals until the packet is verified.",
       "body": [
-        {"t":"p","x":"A packet assembled from separate scans or forms often needs more than a merge. A cover may belong first, a signature page last, and one blank scan may need to go. Plan the sequence before editing, then check it page by page. The tools below work locally in your browser, so the PDFs are not uploaded."},
-        {"t":"h2","x":"Plan the order before you combine files"},
-        {"t":"p","x":"Rename copies with simple prefixes such as 01-cover, 02-form and 03-attachment, or write the intended order on a checklist. Filenames help you keep track, but do not prove that the contents are correct. Open each source and identify its page count, orientation and any password or digital signature that could be affected by saving a new file."},
-        {"t":"steps","items":[
-          {"h":"Add the source PDFs","x":"Open [Merge PDF](/tools/merge-pdf), add the files and arrange the file order before running the merge. The first input starts the output unless you move it."},
-          {"h":"Inspect the merged sequence","x":"Check thumbnails and scroll through the output, not only the first and last pages. Look for duplicated covers, reversed scans, blank pages and landscape pages mixed into a portrait packet."},
-          {"h":"Reorder individual pages","x":"For page-level changes, use [Organize Pages](/tools/organize-pdf) and drag pages into the intended order. Rotate sideways scans with [Rotate PDF](/tools/rotate-pdf)."},
-          {"h":"Remove or separate pages","x":"Use [Delete Pages](/tools/delete-pages) for unwanted pages, [Extract Pages](/tools/extract-pages) to keep a selected range in a separate file, or [Split PDF](/tools/split-pdf) to divide the packet into groups."},
-          {"h":"Save and verify a new copy","x":"Confirm the page count and order, then open the final PDF in a reader. Keep original files until the recipient has the right document and your retention policy allows cleanup."}
-        ]},
-        {"t":"cta","tool":"merge-pdf","x":"Combine several PDFs in the sequence you choose, then verify the result."},
-        {"t":"h2","x":"Merge, organize, extract or split?"},
-        {"t":"table","head":["Need","Use","Result"],"rows":[["Append entire PDFs","Merge PDF","One file with all pages in input order."],["Move a few pages around","Organize Pages","One file with the same pages in a new order."],["Keep selected pages only","Extract Pages","A new PDF containing the chosen pages."],["Remove pages from the source copy","Delete Pages","A new PDF without the specified pages."],["Divide into multiple files","Split PDF","Several outputs based on page ranges or split settings."]] },
-        {"t":"h2","x":"Check details that a file list cannot show"},
-        {"t":"p","x":"A successful merge only tells you that a file was produced. It does not tell you whether page numbers are sequential, a form still works, bookmarks point to the right place, or a digital signature remains valid. Inspect page labels, visible numbering and form fields. A signature that was valid in a source can be invalidated by merging or saving, so retain the original signed PDF when its status matters."},
-        {"t":"p","x":"If the packet combines scans, make text searchable with [OCR](/tools/ocr-pdf) on a copy, then verify names and amounts against the images. If the file is too large to email, [compress it](/tools/compress-pdf) only after checking the intended quality. Keep a readable source because image-heavy documents may become softer after compression."},
-        {"t":"warn","x":"Page removal is not the same as redaction. Deleting a page removes that page from the output, but it does not remove sensitive content that appears on another page or in comments, attachments or metadata. Use redaction and metadata tools for those separate risks."},
-        {"t":"p","x":"For a narrower task, see [extract pages from a PDF](/blog/split/extract-pages-from-pdf), [delete PDF pages](/blog/split/delete-pages-from-pdf), and [combine PDF files](/blog/merge/how-to-merge-pdf-files). A repeatable packet checklist prevents the common error: sending a technically valid PDF with the wrong order."}
+        {
+          "t": "p",
+          "x": "A packet assembled from separate scans or forms often needs more than a merge. A cover may belong first, a signature page last, and one blank scan may need to go. Plan the sequence before editing, then check it page by page. The tools below work locally in your browser, so the PDFs are not uploaded."
+        },
+        {
+          "t": "h2",
+          "x": "Plan the order before you combine files"
+        },
+        {
+          "t": "p",
+          "x": "Rename copies with simple prefixes such as 01-cover, 02-form and 03-attachment, or write the intended order on a checklist. Filenames help you keep track, but do not prove that the contents are correct. Open each source and identify its page count, orientation and any password or digital signature that could be affected by saving a new file."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Add the source PDFs",
+              "x": "Open [Merge PDF](/tools/merge-pdf), add the files and arrange the file order before running the merge. The first input starts the output unless you move it."
+            },
+            {
+              "h": "Inspect the merged sequence",
+              "x": "Check thumbnails and scroll through the output, not only the first and last pages. Look for duplicated covers, reversed scans, blank pages and landscape pages mixed into a portrait packet."
+            },
+            {
+              "h": "Reorder individual pages",
+              "x": "For page-level changes, use [Organize Pages](/tools/organize-pdf) and drag pages into the intended order. Rotate sideways scans with [Rotate PDF](/tools/rotate-pdf)."
+            },
+            {
+              "h": "Remove or separate pages",
+              "x": "Use [Delete Pages](/tools/delete-pages) for unwanted pages, [Extract Pages](/tools/extract-pages) to keep a selected range in a separate file, or [Split PDF](/tools/split-pdf) to divide the packet into groups."
+            },
+            {
+              "h": "Save and verify a new copy",
+              "x": "Confirm the page count and order, then open the final PDF in a reader. Keep original files until the recipient has the right document and your retention policy allows cleanup."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Combine several PDFs in the sequence you choose, then verify the result."
+        },
+        {
+          "t": "h2",
+          "x": "Merge, organize, extract or split?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Need",
+            "Use",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Append entire PDFs",
+              "Merge PDF",
+              "One file with all pages in input order."
+            ],
+            [
+              "Move a few pages around",
+              "Organize Pages",
+              "One file with the same pages in a new order."
+            ],
+            [
+              "Keep selected pages only",
+              "Extract Pages",
+              "A new PDF containing the chosen pages."
+            ],
+            [
+              "Remove pages from the source copy",
+              "Delete Pages",
+              "A new PDF without the specified pages."
+            ],
+            [
+              "Divide into multiple files",
+              "Split PDF",
+              "Several outputs based on page ranges or split settings."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Check details that a file list cannot show"
+        },
+        {
+          "t": "p",
+          "x": "A successful merge only tells you that a file was produced. It does not tell you whether page numbers are sequential, a form still works, bookmarks point to the right place, or a digital signature remains valid. Inspect page labels, visible numbering and form fields. A signature that was valid in a source can be invalidated by merging or saving, so retain the original signed PDF when its status matters."
+        },
+        {
+          "t": "p",
+          "x": "If the packet combines scans, make text searchable with [OCR](/tools/ocr-pdf) on a copy, then verify names and amounts against the images. If the file is too large to email, [compress it](/tools/compress-pdf) only after checking the intended quality. Keep a readable source because image-heavy documents may become softer after compression."
+        },
+        {
+          "t": "warn",
+          "x": "Page removal is not the same as redaction. Deleting a page removes that page from the output, but it does not remove sensitive content that appears on another page or in comments, attachments or metadata. Use redaction and metadata tools for those separate risks."
+        },
+        {
+          "t": "p",
+          "x": "For a narrower task, see [extract pages from a PDF](/blog/split/extract-pages-from-pdf), [delete PDF pages](/blog/split/delete-pages-from-pdf), and [combine PDF files](/blog/merge/how-to-merge-pdf-files). A repeatable packet checklist prevents the common error: sending a technically valid PDF with the wrong order."
+        }
       ],
       "faqs": [
-        {"q":"Can I rearrange pages after merging PDFs?","a":"Yes. Create the merged copy, then use a page organizer to drag pages into the final sequence and save another copy."},
-        {"q":"Does merging PDFs reduce their size?","a":"No. The output usually contains the content from every input. Use a separate compression step if the result is too large, then check image quality."},
-        {"q":"Will a digital signature survive a merge?","a":"A merge changes the document and can invalidate or alter signature status. Preserve the original signed files and verify signatures with the appropriate reader."}
+        {
+          "q": "Can I rearrange pages after merging PDFs?",
+          "a": "Yes. Create the merged copy, then use a page organizer to drag pages into the final sequence and save another copy."
+        },
+        {
+          "q": "Does merging PDFs reduce their size?",
+          "a": "No. The output usually contains the content from every input. Use a separate compression step if the result is too large, then check image quality."
+        },
+        {
+          "q": "Will a digital signature survive a merge?",
+          "a": "A merge changes the document and can invalidate or alter signature status. Preserve the original signed files and verify signatures with the appropriate reader."
+        },
+        {
+          "q": "Can I reorder PDF pages before merging files?",
+          "a": "Yes. Arrange pages in the intended sequence, then merge the final files. Open the output and check the first, middle, and last pages before sharing."
+        }
       ],
-      "relatedTools": ["merge-pdf","split-pdf","organize-pdf","rotate-pdf","delete-pages"],
-      "relatedPosts": ["how-to-merge-pdf-files","extract-pages-from-pdf","delete-pages-from-pdf","split-pdf-into-pages","reorder-pdf-pages"]
+      "relatedTools": [
+        "merge-pdf",
+        "split-pdf",
+        "organize-pdf",
+        "rotate-pdf",
+        "delete-pages"
+      ],
+      "relatedPosts": [
+        "how-to-merge-pdf-files",
+        "extract-pages-from-pdf",
+        "delete-pages-from-pdf",
+        "split-pdf-into-pages",
+        "reorder-pdf-pages"
+      ]
     },
     {
       "slug": "merge-pdf-without-adobe-free",
@@ -1054,27 +1177,148 @@
       "intent": "howto",
       "localize": false,
       "primaryKeyword": "merge PDF files without Adobe",
-      "secondaryKeywords": ["merge PDF free", "combine PDF files without Acrobat", "private PDF merger", "merge PDF no signup"],
-      "entities": ["PDF", "Adobe Acrobat", "web browser", "PDF page order", "document packet"],
+      "secondaryKeywords": [
+        "merge PDF free",
+        "combine PDF files without Acrobat",
+        "private PDF merger",
+        "merge PDF no signup"
+      ],
+      "entities": [
+        "PDF",
+        "Adobe Acrobat",
+        "web browser",
+        "PDF page order",
+        "document packet"
+      ],
       "answer": "To merge PDF files without Adobe, open a browser-based merger, add the documents in the order you want, combine them, and download the new file. PrintxPDF runs this job in your browser, so the PDFs stay on your computer. It is free, needs no signup, adds no watermark, and keeps the original files unchanged.",
       "body": [
-        {"t":"p","x":"You do not need Adobe Acrobat to put several PDFs into one file. Add the documents to PrintxPDF, set their order, merge them, and download a new copy. The work happens in your browser tab, which matters for bank statements, contracts, medical records, or anything you do not want sitting on a third-party upload server. There is no account, card, watermark, or trial timer."},
-        {"t":"h2","x":"How to merge PDF files without Adobe"},
-        {"t":"steps","items":[{"h":"Open Merge PDF","x":"Go to [Merge PDF](/tools/merge-pdf). Add two or more PDFs from your computer. Your source files are not changed."},{"h":"Set the document order","x":"Move files until the list matches the order you want. Put a cover first, attachments after the main document, and signed pages where they belong before combining."},{"h":"Merge the files","x":"Choose Merge PDF. PrintxPDF builds one new document locally in the browser instead of sending the pages to a server."},{"h":"Check the new PDF","x":"Open the downloaded copy and confirm the page count, order, and orientation. Keep the sources until the final packet has been accepted."}]},
-        {"t":"cta","tool":"merge-pdf","x":"Merge PDFs free in your browser. No signup, no watermark, and your files stay in your tab."},
-        {"t":"h2","x":"Compare a browser merger with Adobe and cloud upload tools"},
-        {"t":"table","head":["Option","Cost and access","Where the file is processed","Best fit"],"rows":[["PrintxPDF Merge PDF","Free, no signup, no watermark","In your browser tab","Private everyday merges"],["Adobe Acrobat","Paid desktop plan or trial","On your device","Teams already using Acrobat"],["Typical cloud merger","Often requires upload or limits","A third-party server","Only when you accept that processing"]]},
-        {"t":"h2","x":"Keep the page order correct before you send the file"},
-        {"t":"p","x":"Merging preserves each input document as a block. If a two-page attachment needs to sit between pages in another PDF, merge first and use [Organize Pages](/tools/organize-pdf) to move individual pages. Use [Rotate PDF](/tools/rotate-pdf) for sideways scans, or [Delete Pages](/tools/delete-pages) to remove an accidental blank page. Check every transition between source files, not only the first and last page."},
-        {"t":"h2","x":"What merging does not do"},
-        {"t":"p","x":"A merge combines pages. It does not make a scan searchable, repair a damaged PDF, remove a password, or make the result smaller. Run [OCR PDF](/tools/ocr-pdf) when scans need searchable text. Use [Compress PDF](/tools/compress-pdf) after the merge only if email size is a problem, and inspect photographs and small text before sharing the compressed version."},
-        {"t":"warn","x":"A signed PDF can show as changed after it is merged or saved into a new document. Preserve the original signed copy and verify any signature requirement with the recipient before using a merged version as the record."},
-        {"t":"h2","x":"Why local browser processing matters"},
-        {"t":"p","x":"A PDF can contain more than its visible pages: names, addresses, account details, comments, and metadata. Processing a routine merge in the browser means the document stays on the machine you are using. That is simpler than uploading a sensitive file to an unknown service, waiting for a download, and hoping its retention policy matches your needs. For information that should not travel at all, browser-local processing is the practical default."}
+        {
+          "t": "p",
+          "x": "You do not need Adobe Acrobat to put several PDFs into one file. Add the documents to PrintxPDF, set their order, merge them, and download a new copy. The work happens in your browser tab, which matters for bank statements, contracts, medical records, or anything you do not want sitting on a third-party upload server. There is no account, card, watermark, or trial timer."
+        },
+        {
+          "t": "h2",
+          "x": "How to merge PDF files without Adobe"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open Merge PDF",
+              "x": "Go to [Merge PDF](/tools/merge-pdf). Add two or more PDFs from your computer. Your source files are not changed."
+            },
+            {
+              "h": "Set the document order",
+              "x": "Move files until the list matches the order you want. Put a cover first, attachments after the main document, and signed pages where they belong before combining."
+            },
+            {
+              "h": "Merge the files",
+              "x": "Choose Merge PDF. PrintxPDF builds one new document locally in the browser instead of sending the pages to a server."
+            },
+            {
+              "h": "Check the new PDF",
+              "x": "Open the downloaded copy and confirm the page count, order, and orientation. Keep the sources until the final packet has been accepted."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Merge PDFs free in your browser. No signup, no watermark, and your files stay in your tab."
+        },
+        {
+          "t": "h2",
+          "x": "Compare a browser merger with Adobe and cloud upload tools"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Option",
+            "Cost and access",
+            "Where the file is processed",
+            "Best fit"
+          ],
+          "rows": [
+            [
+              "PrintxPDF Merge PDF",
+              "Free, no signup, no watermark",
+              "In your browser tab",
+              "Private everyday merges"
+            ],
+            [
+              "Adobe Acrobat",
+              "Paid desktop plan or trial",
+              "On your device",
+              "Teams already using Acrobat"
+            ],
+            [
+              "Typical cloud merger",
+              "Often requires upload or limits",
+              "A third-party server",
+              "Only when you accept that processing"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Keep the page order correct before you send the file"
+        },
+        {
+          "t": "p",
+          "x": "Merging preserves each input document as a block. If a two-page attachment needs to sit between pages in another PDF, merge first and use [Organize Pages](/tools/organize-pdf) to move individual pages. Use [Rotate PDF](/tools/rotate-pdf) for sideways scans, or [Delete Pages](/tools/delete-pages) to remove an accidental blank page. Check every transition between source files, not only the first and last page."
+        },
+        {
+          "t": "h2",
+          "x": "What merging does not do"
+        },
+        {
+          "t": "p",
+          "x": "A merge combines pages. It does not make a scan searchable, repair a damaged PDF, remove a password, or make the result smaller. Run [OCR PDF](/tools/ocr-pdf) when scans need searchable text. Use [Compress PDF](/tools/compress-pdf) after the merge only if email size is a problem, and inspect photographs and small text before sharing the compressed version."
+        },
+        {
+          "t": "warn",
+          "x": "A signed PDF can show as changed after it is merged or saved into a new document. Preserve the original signed copy and verify any signature requirement with the recipient before using a merged version as the record."
+        },
+        {
+          "t": "h2",
+          "x": "Why local browser processing matters"
+        },
+        {
+          "t": "p",
+          "x": "A PDF can contain more than its visible pages: names, addresses, account details, comments, and metadata. Processing a routine merge in the browser means the document stays on the machine you are using. That is simpler than uploading a sensitive file to an unknown service, waiting for a download, and hoping its retention policy matches your needs. For information that should not travel at all, browser-local processing is the practical default."
+        }
       ],
-      "faqs":[{"q":"Can I merge PDF files without Adobe Acrobat?","a":"Yes. Add the PDFs to a browser merger, order them, create the new file, and inspect it before sharing. PrintxPDF does this in your browser with no signup or watermark."},{"q":"Is it safe to merge confidential PDFs online?","a":"Check where the service processes files. PrintxPDF performs standard merges locally in the browser, so the PDFs do not leave your computer for this task."},{"q":"Will merging PDFs change the originals?","a":"No. The tool creates a separate output file. Keep the originals until you verify page order, readability, and any signature requirements in the merged copy."},{"q":"Can I rearrange pages after merging?","a":"Yes. Use a page organizer after merging to move individual pages, rotate scans, or remove pages that do not belong in the final packet."}],
-      "relatedTools": ["merge-pdf","organize-pdf","rotate-pdf","compress-pdf","ocr-pdf"],
-      "relatedPosts": ["how-to-merge-pdf-files","combine-pdf-files-custom-page-order","reorder-pdf-pages","compress-pdf-without-losing-quality"]
+      "faqs": [
+        {
+          "q": "Can I merge PDF files without Adobe Acrobat?",
+          "a": "Yes. Add the PDFs to a browser merger, order them, create the new file, and inspect it before sharing. PrintxPDF does this in your browser with no signup or watermark."
+        },
+        {
+          "q": "Is it safe to merge confidential PDFs online?",
+          "a": "Check where the service processes files. PrintxPDF performs standard merges locally in the browser, so the PDFs do not leave your computer for this task."
+        },
+        {
+          "q": "Will merging PDFs change the originals?",
+          "a": "No. The tool creates a separate output file. Keep the originals until you verify page order, readability, and any signature requirements in the merged copy."
+        },
+        {
+          "q": "Can I rearrange pages after merging?",
+          "a": "Yes. Use a page organizer after merging to move individual pages, rotate scans, or remove pages that do not belong in the final packet."
+        }
+      ],
+      "relatedTools": [
+        "merge-pdf",
+        "organize-pdf",
+        "rotate-pdf",
+        "compress-pdf",
+        "ocr-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-merge-pdf-files",
+        "combine-pdf-files-custom-page-order",
+        "reorder-pdf-pages",
+        "compress-pdf-without-losing-quality"
+      ]
     },
     {
       "slug": "merge-pdf-files-in-order",
@@ -1088,26 +1332,149 @@
       "intent": "howto",
       "localize": false,
       "primaryKeyword": "merge PDF files in order",
-      "secondaryKeywords": ["combine PDF files in order", "merge PDFs in a specific order", "arrange PDF pages before merging", "merge PDF page order"],
-      "entities": ["PDF", "page order", "document packet", "page thumbnails", "PDF merger"],
+      "secondaryKeywords": [
+        "combine PDF files in order",
+        "merge PDFs in a specific order",
+        "arrange PDF pages before merging",
+        "merge PDF page order"
+      ],
+      "entities": [
+        "PDF",
+        "page order",
+        "document packet",
+        "page thumbnails",
+        "PDF merger"
+      ],
       "answer": "To merge PDF files in a specific order, put the files in the order you want before combining them, create the new PDF, then inspect every transition between documents. PrintxPDF lets you arrange the inputs and merge them locally in your browser, free with no signup or watermark. Use a page organizer afterward if individual pages need moving.",
       "body": [
-        {"t":"p","x":"The correct order is the job when you are building a contract packet, application, court filing, or set of receipts. Start by arranging whole files before merging. Then inspect the completed PDF page by page. PrintxPDF performs the merge in your browser tab, so ordinary document merges stay on your computer. There is no account, card, watermark, or trial to manage."},
-        {"t":"h2","x":"How to combine PDF files in the right order"},
-        {"t":"steps","items":[{"h":"Name or review each source","x":"Open the files and identify their role: cover, main document, appendix, signed page, or receipt. A simple 01, 02, 03 prefix helps avoid selecting the wrong copy."},{"h":"Add files to Merge PDF","x":"Open [Merge PDF](/tools/merge-pdf) and add every source. Place them in the intended sequence before you merge."},{"h":"Create the combined file","x":"Run the merge. The output follows the input-file order, and the originals remain unchanged on your device."},{"h":"Inspect every boundary","x":"Open the new PDF. Check the last page of each source and the first page of the next one for duplicates, missing pages, sideways scans, and incorrect attachments."},{"h":"Fix individual pages if needed","x":"Use [Organize Pages](/tools/organize-pdf) to move a page, [Rotate PDF](/tools/rotate-pdf) for a scan, or [Delete Pages](/tools/delete-pages) for an unwanted blank."}]},
-        {"t":"cta","tool":"merge-pdf","x":"Arrange and merge PDF files free in your browser. No signup, no watermark, and nothing uploaded."},
-        {"t":"h2","x":"File order versus page order"},
-        {"t":"table","head":["Situation","Best tool","Why"],"rows":[["Whole documents belong one after another","Merge PDF","Keeps every file as a block in the order you set."],["One page belongs between two files","Organize Pages","Moves individual pages after the merge."],["A page is upside down","Rotate PDF","Changes orientation without rebuilding the packet."],["A blank or duplicate page slipped in","Delete Pages","Creates a clean output without that page."]]},
-        {"t":"h2","x":"Check the order before a recipient finds the mistake"},
-        {"t":"p","x":"A PDF can be technically valid and still be the wrong packet. Count pages, compare section breaks with your checklist, and inspect page numbers where sources use their own numbering. For scanned records, inspect dates, signatures, and totals at 100 percent zoom. If the combined document must be searchable, run [OCR PDF](/tools/ocr-pdf) on a working copy and verify important names and figures against the page image."},
-        {"t":"h2","x":"Keep sensitive documents local while you assemble them"},
-        {"t":"p","x":"Order problems often involve the most sensitive files: identification documents, invoices, reports, and signed forms. Browser-local processing means the files do not need to sit on a third-party upload service just to be assembled. Keep the originals, build a separate distribution copy, and remove document metadata when policy requires it. A merge does not automatically remove hidden author fields, comments, or embedded information."},
-        {"t":"warn","x":"Do not treat deleting a page as redaction. If private information appears elsewhere in the document, use a verified redaction workflow. Keep the original and check the final copy before you send it."},
-        {"t":"p","x":"For the next step, see [how to merge PDF files](/blog/merge/how-to-merge-pdf-files), [reorder PDF pages](/blog/merge/reorder-pdf-pages), and [extract PDF pages](/blog/split/extract-pages-from-pdf). The reliable workflow is simple: order, merge, inspect, then share."}
+        {
+          "t": "p",
+          "x": "The correct order is the job when you are building a contract packet, application, court filing, or set of receipts. Start by arranging whole files before merging. Then inspect the completed PDF page by page. PrintxPDF performs the merge in your browser tab, so ordinary document merges stay on your computer. There is no account, card, watermark, or trial to manage."
+        },
+        {
+          "t": "h2",
+          "x": "How to combine PDF files in the right order"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Name or review each source",
+              "x": "Open the files and identify their role: cover, main document, appendix, signed page, or receipt. A simple 01, 02, 03 prefix helps avoid selecting the wrong copy."
+            },
+            {
+              "h": "Add files to Merge PDF",
+              "x": "Open [Merge PDF](/tools/merge-pdf) and add every source. Place them in the intended sequence before you merge."
+            },
+            {
+              "h": "Create the combined file",
+              "x": "Run the merge. The output follows the input-file order, and the originals remain unchanged on your device."
+            },
+            {
+              "h": "Inspect every boundary",
+              "x": "Open the new PDF. Check the last page of each source and the first page of the next one for duplicates, missing pages, sideways scans, and incorrect attachments."
+            },
+            {
+              "h": "Fix individual pages if needed",
+              "x": "Use [Organize Pages](/tools/organize-pdf) to move a page, [Rotate PDF](/tools/rotate-pdf) for a scan, or [Delete Pages](/tools/delete-pages) for an unwanted blank."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Arrange and merge PDF files free in your browser. No signup, no watermark, and nothing uploaded."
+        },
+        {
+          "t": "h2",
+          "x": "File order versus page order"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Situation",
+            "Best tool",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Whole documents belong one after another",
+              "Merge PDF",
+              "Keeps every file as a block in the order you set."
+            ],
+            [
+              "One page belongs between two files",
+              "Organize Pages",
+              "Moves individual pages after the merge."
+            ],
+            [
+              "A page is upside down",
+              "Rotate PDF",
+              "Changes orientation without rebuilding the packet."
+            ],
+            [
+              "A blank or duplicate page slipped in",
+              "Delete Pages",
+              "Creates a clean output without that page."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Check the order before a recipient finds the mistake"
+        },
+        {
+          "t": "p",
+          "x": "A PDF can be technically valid and still be the wrong packet. Count pages, compare section breaks with your checklist, and inspect page numbers where sources use their own numbering. For scanned records, inspect dates, signatures, and totals at 100 percent zoom. If the combined document must be searchable, run [OCR PDF](/tools/ocr-pdf) on a working copy and verify important names and figures against the page image."
+        },
+        {
+          "t": "h2",
+          "x": "Keep sensitive documents local while you assemble them"
+        },
+        {
+          "t": "p",
+          "x": "Order problems often involve the most sensitive files: identification documents, invoices, reports, and signed forms. Browser-local processing means the files do not need to sit on a third-party upload service just to be assembled. Keep the originals, build a separate distribution copy, and remove document metadata when policy requires it. A merge does not automatically remove hidden author fields, comments, or embedded information."
+        },
+        {
+          "t": "warn",
+          "x": "Do not treat deleting a page as redaction. If private information appears elsewhere in the document, use a verified redaction workflow. Keep the original and check the final copy before you send it."
+        },
+        {
+          "t": "p",
+          "x": "For the next step, see [how to merge PDF files](/blog/merge/how-to-merge-pdf-files), [reorder PDF pages](/blog/merge/reorder-pdf-pages), and [extract PDF pages](/blog/split/extract-pages-from-pdf). The reliable workflow is simple: order, merge, inspect, then share."
+        }
       ],
-      "faqs":[{"q":"Can I choose the order before merging PDFs?","a":"Yes. Arrange the input files in the required sequence before running the merge. The output follows that file order, so review it before creating the final copy."},{"q":"Can I move one page after merging PDFs?","a":"Yes. Merge the documents first, then use a page organizer to move one page, rotate a scan, or remove a duplicate without rebuilding every source file."},{"q":"Do I need an account to merge PDFs in order?","a":"No. PrintxPDF’s browser-local Merge PDF tool is free, has no signup requirement, and does not place a watermark on the result."},{"q":"Will merging change the original files?","a":"No. The merge produces a new PDF. Keep source documents until you have checked the final packet and no longer need the originals."}],
-      "relatedTools": ["merge-pdf","organize-pdf","rotate-pdf","delete-pages","ocr-pdf"],
-      "relatedPosts": ["how-to-merge-pdf-files","combine-pdf-files-custom-page-order","reorder-pdf-pages","extract-pages-from-pdf"]
+      "faqs": [
+        {
+          "q": "Can I choose the order before merging PDFs?",
+          "a": "Yes. Arrange the input files in the required sequence before running the merge. The output follows that file order, so review it before creating the final copy."
+        },
+        {
+          "q": "Can I move one page after merging PDFs?",
+          "a": "Yes. Merge the documents first, then use a page organizer to move one page, rotate a scan, or remove a duplicate without rebuilding every source file."
+        },
+        {
+          "q": "Do I need an account to merge PDFs in order?",
+          "a": "No. PrintxPDF’s browser-local Merge PDF tool is free, has no signup requirement, and does not place a watermark on the result."
+        },
+        {
+          "q": "Will merging change the original files?",
+          "a": "No. The merge produces a new PDF. Keep source documents until you have checked the final packet and no longer need the originals."
+        }
+      ],
+      "relatedTools": [
+        "merge-pdf",
+        "organize-pdf",
+        "rotate-pdf",
+        "delete-pages",
+        "ocr-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-merge-pdf-files",
+        "combine-pdf-files-custom-page-order",
+        "reorder-pdf-pages",
+        "extract-pages-from-pdf"
+      ]
     },
     {
       "slug": "merge-pdf-without-uploading-files",
@@ -1121,26 +1488,149 @@
       "intent": "howto",
       "localize": false,
       "primaryKeyword": "merge PDF without uploading",
-      "secondaryKeywords": ["merge PDF locally", "private PDF merger", "merge confidential PDF files", "merge PDF no upload"],
-      "entities": ["PDF", "browser processing", "document privacy", "PDF metadata", "cloud upload"],
-      "answer": "To merge PDF files without uploading them, use a browser-local merger that reads and writes the PDF inside your tab. Add the files, set their order, merge them, and download the new copy. PrintxPDF performs standard PDF merges locally, so sensitive files stay on your computer. It is free, requires no signup, and adds no watermark.",
-      "body":[
-        {"t":"p","x":"A PDF merger does not need to be an upload service. For a standard merge, PrintxPDF processes the files in the browser tab you are using and creates a separate combined copy on your computer. That is useful when the documents contain account numbers, medical information, contracts, client work, or anything else you should not place in an unknown cloud queue. No account, card, watermark, or fake free trial is involved."},
-        {"t":"h2","x":"How to merge PDFs privately in your browser"},
-        {"t":"steps","items":[{"h":"Keep the original files","x":"Work with copies when the documents are important. A merge creates a new output, but keeping sources makes it easy to correct an order mistake."},{"h":"Open Merge PDF","x":"Use [Merge PDF](/tools/merge-pdf) and add the documents from your device. The standard merge runs in your browser tab."},{"h":"Arrange the input order","x":"Put files in the intended sequence before merging. Check attachment names and page counts so the right version is included."},{"h":"Merge and download the copy","x":"Create the combined PDF, download it, and open it in a reader to confirm every section and page transition."},{"h":"Apply only the follow-up tools you need","x":"Use [Organize Pages](/tools/organize-pdf) for page-level changes, [Remove Metadata](/tools/remove-metadata) when policy calls for clean document properties, and [Compress PDF](/tools/compress-pdf) only if the output is too large."}]},
-        {"t":"cta","tool":"merge-pdf","x":"Merge PDFs locally in your browser. Free, no signup, no watermark, and no standard-file upload."},
-        {"t":"h2","x":"Why local processing matters for confidential PDFs"},
-        {"t":"p","x":"An upload-based PDF tool receives a copy of your file before it can do any work. That can be acceptable under an approved business agreement, but it is not the only option. Browser-local processing keeps the file on the device you control for this type of task. It reduces one avoidable transfer and makes the workflow simpler for sensitive everyday documents."},
-        {"t":"h2","x":"Local merge versus a cloud PDF merger"},
-        {"t":"table","head":["Question","Browser-local merge","Typical cloud merge"],"rows":[["Where is the PDF processed?","Inside the browser tab","After upload to a remote service"],["Account needed?","No for PrintxPDF core tools","Often optional or required"],["Watermark risk?","No PrintxPDF watermark","Varies by provider and plan"],["Best use","Private routine document assembly","Workflows already approved for cloud processing"]]},
-        {"t":"h2","x":"Metadata and visible content are separate privacy questions"},
-        {"t":"p","x":"Keeping a file local does not automatically remove what is inside it. A PDF can retain author fields, titles, timestamps, comments, attachments, and visible private information. Use [Remove Metadata](/tools/remove-metadata) for standard document properties and catalog XMP when appropriate. Use true redaction for content that must no longer be recoverable, then inspect the output. Do not confuse hiding a page, drawing a black box, or deleting a page with verified redaction."},
-        {"t":"h2","x":"Verify the result before sharing"},
-        {"t":"p","x":"Open the output, check the page count, and inspect key pages at normal reading size. If scans need text search, use [OCR PDF](/tools/ocr-pdf) on a copy and verify critical names and figures. If a signature is important, keep the original signed document because creating a merged copy can affect signature status. Privacy is strongest when you keep originals, make an intentional distribution copy, and check exactly what that copy contains."}
+      "secondaryKeywords": [
+        "merge PDF locally",
+        "private PDF merger",
+        "merge confidential PDF files",
+        "merge PDF no upload"
       ],
-      "faqs":[{"q":"Are my PDFs uploaded when I use PrintxPDF Merge PDF?","a":"Standard PDF merging runs inside the browser tab, so the files stay on your device for that task. The page identifies tools that require server processing separately."},{"q":"Can I merge bank statements or contracts privately?","a":"A browser-local merge avoids sending the files to a processing server. Keep originals, check the combined copy, and remove metadata or redact content separately if your sharing policy requires it."},{"q":"Does merging PDFs remove metadata?","a":"No. Merging combines pages; it does not promise to remove document properties or embedded information. Use a dedicated metadata-removal step when needed."},{"q":"Will a merged PDF keep digital signatures valid?","a":"A new merged document can affect signature status. Preserve original signed files and verify the recipient’s requirements before relying on the combined copy."}],
-      "relatedTools":["merge-pdf","organize-pdf","remove-metadata","compress-pdf","ocr-pdf"],
-      "relatedPosts":["how-to-merge-pdf-files","remove-metadata-from-pdf","are-online-pdf-tools-safe","combine-pdf-files-custom-page-order"]
+      "entities": [
+        "PDF",
+        "browser processing",
+        "document privacy",
+        "PDF metadata",
+        "cloud upload"
+      ],
+      "answer": "To merge PDF files without uploading them, use a browser-local merger that reads and writes the PDF inside your tab. Add the files, set their order, merge them, and download the new copy. PrintxPDF performs standard PDF merges locally, so sensitive files stay on your computer. It is free, requires no signup, and adds no watermark.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A PDF merger does not need to be an upload service. For a standard merge, PrintxPDF processes the files in the browser tab you are using and creates a separate combined copy on your computer. That is useful when the documents contain account numbers, medical information, contracts, client work, or anything else you should not place in an unknown cloud queue. No account, card, watermark, or fake free trial is involved."
+        },
+        {
+          "t": "h2",
+          "x": "How to merge PDFs privately in your browser"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Keep the original files",
+              "x": "Work with copies when the documents are important. A merge creates a new output, but keeping sources makes it easy to correct an order mistake."
+            },
+            {
+              "h": "Open Merge PDF",
+              "x": "Use [Merge PDF](/tools/merge-pdf) and add the documents from your device. The standard merge runs in your browser tab."
+            },
+            {
+              "h": "Arrange the input order",
+              "x": "Put files in the intended sequence before merging. Check attachment names and page counts so the right version is included."
+            },
+            {
+              "h": "Merge and download the copy",
+              "x": "Create the combined PDF, download it, and open it in a reader to confirm every section and page transition."
+            },
+            {
+              "h": "Apply only the follow-up tools you need",
+              "x": "Use [Organize Pages](/tools/organize-pdf) for page-level changes, [Remove Metadata](/tools/remove-metadata) when policy calls for clean document properties, and [Compress PDF](/tools/compress-pdf) only if the output is too large."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Merge PDFs locally in your browser. Free, no signup, no watermark, and no standard-file upload."
+        },
+        {
+          "t": "h2",
+          "x": "Why local processing matters for confidential PDFs"
+        },
+        {
+          "t": "p",
+          "x": "An upload-based PDF tool receives a copy of your file before it can do any work. That can be acceptable under an approved business agreement, but it is not the only option. Browser-local processing keeps the file on the device you control for this type of task. It reduces one avoidable transfer and makes the workflow simpler for sensitive everyday documents."
+        },
+        {
+          "t": "h2",
+          "x": "Local merge versus a cloud PDF merger"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Question",
+            "Browser-local merge",
+            "Typical cloud merge"
+          ],
+          "rows": [
+            [
+              "Where is the PDF processed?",
+              "Inside the browser tab",
+              "After upload to a remote service"
+            ],
+            [
+              "Account needed?",
+              "No for PrintxPDF core tools",
+              "Often optional or required"
+            ],
+            [
+              "Watermark risk?",
+              "No PrintxPDF watermark",
+              "Varies by provider and plan"
+            ],
+            [
+              "Best use",
+              "Private routine document assembly",
+              "Workflows already approved for cloud processing"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Metadata and visible content are separate privacy questions"
+        },
+        {
+          "t": "p",
+          "x": "Keeping a file local does not automatically remove what is inside it. A PDF can retain author fields, titles, timestamps, comments, attachments, and visible private information. Use [Remove Metadata](/tools/remove-metadata) for standard document properties and catalog XMP when appropriate. Use true redaction for content that must no longer be recoverable, then inspect the output. Do not confuse hiding a page, drawing a black box, or deleting a page with verified redaction."
+        },
+        {
+          "t": "h2",
+          "x": "Verify the result before sharing"
+        },
+        {
+          "t": "p",
+          "x": "Open the output, check the page count, and inspect key pages at normal reading size. If scans need text search, use [OCR PDF](/tools/ocr-pdf) on a copy and verify critical names and figures. If a signature is important, keep the original signed document because creating a merged copy can affect signature status. Privacy is strongest when you keep originals, make an intentional distribution copy, and check exactly what that copy contains."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Are my PDFs uploaded when I use PrintxPDF Merge PDF?",
+          "a": "Standard PDF merging runs inside the browser tab, so the files stay on your device for that task. The page identifies tools that require server processing separately."
+        },
+        {
+          "q": "Can I merge bank statements or contracts privately?",
+          "a": "A browser-local merge avoids sending the files to a processing server. Keep originals, check the combined copy, and remove metadata or redact content separately if your sharing policy requires it."
+        },
+        {
+          "q": "Does merging PDFs remove metadata?",
+          "a": "No. Merging combines pages; it does not promise to remove document properties or embedded information. Use a dedicated metadata-removal step when needed."
+        },
+        {
+          "q": "Will a merged PDF keep digital signatures valid?",
+          "a": "A new merged document can affect signature status. Preserve original signed files and verify the recipient’s requirements before relying on the combined copy."
+        }
+      ],
+      "relatedTools": [
+        "merge-pdf",
+        "organize-pdf",
+        "remove-metadata",
+        "compress-pdf",
+        "ocr-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-merge-pdf-files",
+        "remove-metadata-from-pdf",
+        "are-online-pdf-tools-safe",
+        "combine-pdf-files-custom-page-order"
+      ]
     },
     {
       "slug": "merge-pdf-files-on-phone-or-computer",
@@ -1154,26 +1644,146 @@
       "intent": "howto",
       "localize": false,
       "primaryKeyword": "merge PDF files on phone",
-      "secondaryKeywords": ["merge PDF on iPhone", "merge PDF on Android", "merge PDF on Windows", "merge PDF on Mac"],
-      "entities": ["iPhone", "Android", "Windows", "macOS", "web browser", "PDF"],
-      "answer": "To merge PDF files on a phone or computer, open a browser-based merger, select the PDFs from your device, arrange them, create the combined copy, and check the download. PrintxPDF works in current browsers on iPhone, Android, Windows, Mac, Linux, and ChromeOS. It is free, needs no signup, adds no watermark, and processes standard merges in your browser.",
-      "body":[
-        {"t":"p","x":"You can merge PDFs from a phone, tablet, laptop, or desktop without installing Adobe. Open PrintxPDF in a current browser, select the PDFs, put them in order, and download the combined copy. Standard merges run in the browser tab, so the files stay on your device. That gives the same straightforward workflow on iPhone, Android, Windows, macOS, Linux, and ChromeOS."},
-        {"t":"h2","x":"How to merge PDFs on any device"},
-        {"t":"steps","items":[{"h":"Open PrintxPDF in your browser","x":"Use Safari on iPhone or iPad, Chrome on Android or Windows, Edge on Windows, or your preferred current browser on Mac, Linux, or ChromeOS."},{"h":"Choose the PDF files","x":"Open [Merge PDF](/tools/merge-pdf) and select files from Files, Downloads, Finder, or your device picker. Add every document that belongs in the packet."},{"h":"Set the order","x":"Arrange files before merging. On a small screen, work slowly and confirm each filename so an attachment is not placed before the main document."},{"h":"Merge and save","x":"Create the combined PDF, then save or share the new download. Open it once before sending it to confirm page order and orientation."}]},
-        {"t":"cta","tool":"merge-pdf","x":"Merge PDFs free from your browser. No app install, signup, or watermark."},
-        {"t":"h2","x":"Phone and desktop PDF merging compared"},
-        {"t":"table","head":["Device","Where you pick files","Practical tip"],"rows":[["iPhone or iPad","Files picker","Keep source PDFs in one folder before starting."],["Android phone or tablet","System file picker","Check Download and Drive locations carefully."],["Windows or Mac","File Explorer or Finder","Rename working copies with simple order numbers."],["Linux or ChromeOS","Browser file picker","Keep the tab open until the download finishes."]]},
-        {"t":"h2","x":"Avoid common phone merge mistakes"},
-        {"t":"p","x":"A phone makes it easy to select an old download with a similar name. Open each source first when the packet matters. Check that scans are upright and that no page is duplicated. Use [Organize Pages](/tools/organize-pdf) after merging if one page needs moving. Use [Rotate PDF](/tools/rotate-pdf) for sideways scans rather than re-photographing the document."},
-        {"t":"h2","x":"Keep the sharing copy separate from the original"},
-        {"t":"p","x":"Merging creates a new PDF; it does not replace the sources. That is useful on a phone because you can retain the original receipt, form, or signed page while sending only the assembled copy. If the output is too large for email, use [Compress PDF](/tools/compress-pdf) after checking readability. If scans need search, run [OCR PDF](/tools/ocr-pdf) and verify important text."},
-        {"t":"h2","x":"Why browser-local processing helps on mobile"},
-        {"t":"p","x":"Phone documents are often personal: identity papers, bills, appointment forms, and photos of records. Processing a standard merge inside the browser avoids an extra upload to a processing service. Keep the browser updated, use your own device where possible, and lock the phone before handing it to someone else. Local processing is useful, but it does not replace sensible device security or a careful final human review of what you share."}
+      "secondaryKeywords": [
+        "merge PDF on iPhone",
+        "merge PDF on Android",
+        "merge PDF on Windows",
+        "merge PDF on Mac"
       ],
-      "faqs":[{"q":"Can I merge PDFs on an iPhone without an app?","a":"Yes. Open a browser-based merger, choose files through the iPhone file picker, arrange them, and save the combined download. PrintxPDF does not require an account or app installation."},{"q":"Can I merge PDFs on Android?","a":"Yes. Use a current browser, select PDFs from the Android file picker, set the order, merge them, and check the download before sharing."},{"q":"Does merging PDFs on a phone upload the files?","a":"PrintxPDF processes standard merges in the browser tab, so the files stay on the device for that workflow. Tools requiring a server are labeled separately."},{"q":"Can I fix a sideways scanned page after merging?","a":"Yes. Open the combined copy in a page organizer or rotation tool, rotate the affected page, save a new copy, and inspect it before sharing."}],
-      "relatedTools":["merge-pdf","organize-pdf","rotate-pdf","compress-pdf","ocr-pdf"],
-      "relatedPosts":["how-to-merge-pdf-files","combine-pdf-files-custom-page-order","reorder-pdf-pages","compress-pdf-for-email-outlook-gmail"]
+      "entities": [
+        "iPhone",
+        "Android",
+        "Windows",
+        "macOS",
+        "web browser",
+        "PDF"
+      ],
+      "answer": "To merge PDF files on a phone or computer, open a browser-based merger, select the PDFs from your device, arrange them, create the combined copy, and check the download. PrintxPDF works in current browsers on iPhone, Android, Windows, Mac, Linux, and ChromeOS. It is free, needs no signup, adds no watermark, and processes standard merges in your browser.",
+      "body": [
+        {
+          "t": "p",
+          "x": "You can merge PDFs from a phone, tablet, laptop, or desktop without installing Adobe. Open PrintxPDF in a current browser, select the PDFs, put them in order, and download the combined copy. Standard merges run in the browser tab, so the files stay on your device. That gives the same straightforward workflow on iPhone, Android, Windows, macOS, Linux, and ChromeOS."
+        },
+        {
+          "t": "h2",
+          "x": "How to merge PDFs on any device"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Open PrintxPDF in your browser",
+              "x": "Use Safari on iPhone or iPad, Chrome on Android or Windows, Edge on Windows, or your preferred current browser on Mac, Linux, or ChromeOS."
+            },
+            {
+              "h": "Choose the PDF files",
+              "x": "Open [Merge PDF](/tools/merge-pdf) and select files from Files, Downloads, Finder, or your device picker. Add every document that belongs in the packet."
+            },
+            {
+              "h": "Set the order",
+              "x": "Arrange files before merging. On a small screen, work slowly and confirm each filename so an attachment is not placed before the main document."
+            },
+            {
+              "h": "Merge and save",
+              "x": "Create the combined PDF, then save or share the new download. Open it once before sending it to confirm page order and orientation."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Merge PDFs free from your browser. No app install, signup, or watermark."
+        },
+        {
+          "t": "h2",
+          "x": "Phone and desktop PDF merging compared"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Device",
+            "Where you pick files",
+            "Practical tip"
+          ],
+          "rows": [
+            [
+              "iPhone or iPad",
+              "Files picker",
+              "Keep source PDFs in one folder before starting."
+            ],
+            [
+              "Android phone or tablet",
+              "System file picker",
+              "Check Download and Drive locations carefully."
+            ],
+            [
+              "Windows or Mac",
+              "File Explorer or Finder",
+              "Rename working copies with simple order numbers."
+            ],
+            [
+              "Linux or ChromeOS",
+              "Browser file picker",
+              "Keep the tab open until the download finishes."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Avoid common phone merge mistakes"
+        },
+        {
+          "t": "p",
+          "x": "A phone makes it easy to select an old download with a similar name. Open each source first when the packet matters. Check that scans are upright and that no page is duplicated. Use [Organize Pages](/tools/organize-pdf) after merging if one page needs moving. Use [Rotate PDF](/tools/rotate-pdf) for sideways scans rather than re-photographing the document."
+        },
+        {
+          "t": "h2",
+          "x": "Keep the sharing copy separate from the original"
+        },
+        {
+          "t": "p",
+          "x": "Merging creates a new PDF; it does not replace the sources. That is useful on a phone because you can retain the original receipt, form, or signed page while sending only the assembled copy. If the output is too large for email, use [Compress PDF](/tools/compress-pdf) after checking readability. If scans need search, run [OCR PDF](/tools/ocr-pdf) and verify important text."
+        },
+        {
+          "t": "h2",
+          "x": "Why browser-local processing helps on mobile"
+        },
+        {
+          "t": "p",
+          "x": "Phone documents are often personal: identity papers, bills, appointment forms, and photos of records. Processing a standard merge inside the browser avoids an extra upload to a processing service. Keep the browser updated, use your own device where possible, and lock the phone before handing it to someone else. Local processing is useful, but it does not replace sensible device security or a careful final human review of what you share."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I merge PDFs on an iPhone without an app?",
+          "a": "Yes. Open a browser-based merger, choose files through the iPhone file picker, arrange them, and save the combined download. PrintxPDF does not require an account or app installation."
+        },
+        {
+          "q": "Can I merge PDFs on Android?",
+          "a": "Yes. Use a current browser, select PDFs from the Android file picker, set the order, merge them, and check the download before sharing."
+        },
+        {
+          "q": "Does merging PDFs on a phone upload the files?",
+          "a": "PrintxPDF processes standard merges in the browser tab, so the files stay on the device for that workflow. Tools requiring a server are labeled separately."
+        },
+        {
+          "q": "Can I fix a sideways scanned page after merging?",
+          "a": "Yes. Open the combined copy in a page organizer or rotation tool, rotate the affected page, save a new copy, and inspect it before sharing."
+        }
+      ],
+      "relatedTools": [
+        "merge-pdf",
+        "organize-pdf",
+        "rotate-pdf",
+        "compress-pdf",
+        "ocr-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-merge-pdf-files",
+        "combine-pdf-files-custom-page-order",
+        "reorder-pdf-pages",
+        "compress-pdf-for-email-outlook-gmail"
+      ]
     },
     {
       "slug": "merge-scanned-pdfs-into-one-searchable-file",
@@ -1187,26 +1797,144 @@
       "intent": "howto",
       "localize": false,
       "primaryKeyword": "merge scanned PDFs into one searchable file",
-      "secondaryKeywords": ["combine scanned PDFs", "merge OCR PDFs", "make merged PDF searchable", "combine scanned documents"],
-      "entities": ["PDF", "OCR", "scanned document", "searchable text", "PDF merger"],
-      "answer": "To merge scanned PDFs into one searchable file, combine the scans in the correct order, then run OCR on the merged copy and verify important text. PrintxPDF lets you merge PDFs in your browser, then make the combined scan searchable without signup or a watermark. Keep the original scans until the text result has been checked.",
-      "body":[
-        {"t":"p","x":"A scanned PDF usually contains pictures of pages, not text you can search or copy. First combine the scans into one correctly ordered document. Then run OCR, which reads the page images and adds a searchable text layer. PrintxPDF keeps these browser-based steps in your tab for standard files, so private scans do not need to be uploaded for routine merging and text recognition."},
-        {"t":"h2","x":"How to merge scans and make the PDF searchable"},
-        {"t":"steps","items":[{"h":"Check each scan before combining","x":"Open the source PDFs and check page orientation, legibility, and order. Re-scan very dark, blurry, or cropped pages before building the final packet."},{"h":"Merge the scanned PDFs","x":"Use [Merge PDF](/tools/merge-pdf) to add the files in sequence. Create a new combined copy and confirm no pages are missing or duplicated."},{"h":"Run OCR on the merged copy","x":"Open [OCR PDF](/tools/ocr-pdf), add the combined scan, and create searchable text. OCR reads what it can see; it does not repair a poor scan."},{"h":"Verify high-risk text","x":"Search for a distinctive name, date, amount, or reference number. Compare the extracted text against the page image before relying on it for records or search."},{"h":"Save an intentional final copy","x":"Keep the original image-based scan as a reference. Use the searchable version for finding and reading, and compress a separate copy only when email size requires it."}]},
-        {"t":"cta","tool":"merge-pdf","x":"Combine scanned PDFs free in your browser, then make the final copy searchable with OCR."},
-        {"t":"h2","x":"Merge first or OCR first?"},
-        {"t":"table","head":["Workflow","Best when","Trade-off"],"rows":[["Merge, then OCR","All scans use similar language and quality","One OCR job and one searchable output."],["OCR each scan, then merge","Separate files need individual checking","More review work, but errors are easier to isolate."],["Merge only","You only need a visual packet","Text remains unsearchable and cannot be copied reliably."]]},
-        {"t":"h2","x":"Improve OCR before you run it"},
-        {"t":"p","x":"OCR accuracy depends on the scan, not on a magic setting. Straight pages, even lighting, dark text, and enough resolution give the reader a better chance. A phone photo taken at an angle can turn 8 into 3, O into 0, and a signature into noise. Correct the page orientation with [Rotate PDF](/tools/rotate-pdf), remove accidental blanks with [Delete Pages](/tools/delete-pages), and inspect every page that contains a name, number, or date that matters."},
-        {"t":"h2","x":"What a searchable scan does and does not prove"},
-        {"t":"p","x":"A searchable layer makes a document easier to find, copy, and review. It does not make the OCR output an authoritative transcription. For legal, financial, medical, or archival decisions, compare the relevant information with the image of the original page. Keep source scans and name files clearly so the searchable delivery copy is never confused with the source record."},
-        {"t":"h2","x":"Privacy and file-size checks after OCR"},
-        {"t":"p","x":"The merged file may contain sensitive records. Browser-local processing reduces unnecessary file transfer, but you should still check what the output contains before sharing. OCR can increase file size because it adds a text layer. Use [Compress PDF](/tools/compress-pdf) only after you confirm search works and pages remain readable. Remove document metadata separately when your privacy policy calls for it; OCR and merging do not automatically clear those fields."}
+      "secondaryKeywords": [
+        "combine scanned PDFs",
+        "merge OCR PDFs",
+        "make merged PDF searchable",
+        "combine scanned documents"
       ],
-      "faqs":[{"q":"Can I merge scanned PDFs and make them searchable?","a":"Yes. Merge the files in the correct order, then run OCR on the combined copy. Check important words and numbers against the scan before relying on the searchable text."},{"q":"Should I OCR before or after merging scans?","a":"Merging first is usually simpler when files have similar quality and language. OCR each scan first when you need to review or troubleshoot results separately."},{"q":"Does OCR change the original scanned PDF?","a":"No. Use a working copy. OCR creates a separate searchable result, while the original image-based scan remains available for comparison."},{"q":"Why does OCR get names or numbers wrong?","a":"Skewed pages, blur, low resolution, handwriting, unusual fonts, and poor contrast can cause recognition errors. Re-scan or manually verify high-risk information."}],
-      "relatedTools":["merge-pdf","ocr-pdf","rotate-pdf","delete-pages","compress-pdf"],
-      "relatedPosts":["how-to-merge-pdf-files","how-to-ocr-a-scanned-pdf","make-pdf-searchable","make-searchable-pdf-from-scanned-paper"]
+      "entities": [
+        "PDF",
+        "OCR",
+        "scanned document",
+        "searchable text",
+        "PDF merger"
+      ],
+      "answer": "To merge scanned PDFs into one searchable file, combine the scans in the correct order, then run OCR on the merged copy and verify important text. PrintxPDF lets you merge PDFs in your browser, then make the combined scan searchable without signup or a watermark. Keep the original scans until the text result has been checked.",
+      "body": [
+        {
+          "t": "p",
+          "x": "A scanned PDF usually contains pictures of pages, not text you can search or copy. First combine the scans into one correctly ordered document. Then run OCR, which reads the page images and adds a searchable text layer. PrintxPDF keeps these browser-based steps in your tab for standard files, so private scans do not need to be uploaded for routine merging and text recognition."
+        },
+        {
+          "t": "h2",
+          "x": "How to merge scans and make the PDF searchable"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Check each scan before combining",
+              "x": "Open the source PDFs and check page orientation, legibility, and order. Re-scan very dark, blurry, or cropped pages before building the final packet."
+            },
+            {
+              "h": "Merge the scanned PDFs",
+              "x": "Use [Merge PDF](/tools/merge-pdf) to add the files in sequence. Create a new combined copy and confirm no pages are missing or duplicated."
+            },
+            {
+              "h": "Run OCR on the merged copy",
+              "x": "Open [OCR PDF](/tools/ocr-pdf), add the combined scan, and create searchable text. OCR reads what it can see; it does not repair a poor scan."
+            },
+            {
+              "h": "Verify high-risk text",
+              "x": "Search for a distinctive name, date, amount, or reference number. Compare the extracted text against the page image before relying on it for records or search."
+            },
+            {
+              "h": "Save an intentional final copy",
+              "x": "Keep the original image-based scan as a reference. Use the searchable version for finding and reading, and compress a separate copy only when email size requires it."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Combine scanned PDFs free in your browser, then make the final copy searchable with OCR."
+        },
+        {
+          "t": "h2",
+          "x": "Merge first or OCR first?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Workflow",
+            "Best when",
+            "Trade-off"
+          ],
+          "rows": [
+            [
+              "Merge, then OCR",
+              "All scans use similar language and quality",
+              "One OCR job and one searchable output."
+            ],
+            [
+              "OCR each scan, then merge",
+              "Separate files need individual checking",
+              "More review work, but errors are easier to isolate."
+            ],
+            [
+              "Merge only",
+              "You only need a visual packet",
+              "Text remains unsearchable and cannot be copied reliably."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Improve OCR before you run it"
+        },
+        {
+          "t": "p",
+          "x": "OCR accuracy depends on the scan, not on a magic setting. Straight pages, even lighting, dark text, and enough resolution give the reader a better chance. A phone photo taken at an angle can turn 8 into 3, O into 0, and a signature into noise. Correct the page orientation with [Rotate PDF](/tools/rotate-pdf), remove accidental blanks with [Delete Pages](/tools/delete-pages), and inspect every page that contains a name, number, or date that matters."
+        },
+        {
+          "t": "h2",
+          "x": "What a searchable scan does and does not prove"
+        },
+        {
+          "t": "p",
+          "x": "A searchable layer makes a document easier to find, copy, and review. It does not make the OCR output an authoritative transcription. For legal, financial, medical, or archival decisions, compare the relevant information with the image of the original page. Keep source scans and name files clearly so the searchable delivery copy is never confused with the source record."
+        },
+        {
+          "t": "h2",
+          "x": "Privacy and file-size checks after OCR"
+        },
+        {
+          "t": "p",
+          "x": "The merged file may contain sensitive records. Browser-local processing reduces unnecessary file transfer, but you should still check what the output contains before sharing. OCR can increase file size because it adds a text layer. Use [Compress PDF](/tools/compress-pdf) only after you confirm search works and pages remain readable. Remove document metadata separately when your privacy policy calls for it; OCR and merging do not automatically clear those fields."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Can I merge scanned PDFs and make them searchable?",
+          "a": "Yes. Merge the files in the correct order, then run OCR on the combined copy. Check important words and numbers against the scan before relying on the searchable text."
+        },
+        {
+          "q": "Should I OCR before or after merging scans?",
+          "a": "Merging first is usually simpler when files have similar quality and language. OCR each scan first when you need to review or troubleshoot results separately."
+        },
+        {
+          "q": "Does OCR change the original scanned PDF?",
+          "a": "No. Use a working copy. OCR creates a separate searchable result, while the original image-based scan remains available for comparison."
+        },
+        {
+          "q": "Why does OCR get names or numbers wrong?",
+          "a": "Skewed pages, blur, low resolution, handwriting, unusual fonts, and poor contrast can cause recognition errors. Re-scan or manually verify high-risk information."
+        }
+      ],
+      "relatedTools": [
+        "merge-pdf",
+        "ocr-pdf",
+        "rotate-pdf",
+        "delete-pages",
+        "compress-pdf"
+      ],
+      "relatedPosts": [
+        "how-to-merge-pdf-files",
+        "how-to-ocr-a-scanned-pdf",
+        "make-pdf-searchable",
+        "make-searchable-pdf-from-scanned-paper"
+      ]
     }
   ]
 }
