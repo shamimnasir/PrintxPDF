@@ -5,7 +5,7 @@ import { ApiError, billing, decodeToken, describeError, PLAN_LABEL, type Me, typ
 import { useSiteConfig } from '../../admin/useSiteConfig'
 import { useUser } from './useUser'
 import { useToast } from '../../components/ui/toastContext'
-import { downloadBlob, resetBrowserGeneration } from '../../lib/download'
+import { downloadBlob } from '../../lib/download'
 import { useSeo } from '../../lib/seo'
 import { Seg } from '../../components/ui/Seg'
 
@@ -343,7 +343,7 @@ function Billing() {
         </>
       ) : (
         <>
-          <p className="muted">You are on the free plan: every browser tool, plus 5 server conversions a month.</p>
+          <p className="muted">You are on the free plan: 10 generated files per browser tool on this device, plus 5 server conversions a month.</p>
           <div className="row">
             <Link to="/pricing" className="btn btn-acid">
               See Pro and API plans
@@ -418,7 +418,6 @@ export default function Account() {
       .then((e) => {
         if (!alive) return
         store.setEntitlement(e)
-        for (const tool of ['web-page-cleaner', 'image-converter', 'compress-image', 'remove-image-metadata', 'ocr-pdf', 'edit-pdf', 'redact-pdf', 'compare-pdf', 'pdf-forms', 'organize-pdf', 'sign-pdf', 'scan-to-pdf', 'qr-code', 'create-zip', 'extract-zip']) resetBrowserGeneration(tool)
         toast(`${planName(e.plan)} plan is now active. Thank you.`)
         const pendingReturn = localStorage.getItem('pxp:pending-return')
         if (pendingReturn?.startsWith('/')) {

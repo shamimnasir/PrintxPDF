@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Dropzone } from '../../components/ui/Dropzone'
 import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar } from '../../components/ui/ResultList'
-import { downloadBlob, formatBytes, stripExt } from '../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles, downloadGeneratedZip, formatBytes, stripExt } from '../../lib/download'
 import { zipStore } from '../../lib/zip'
 import { ZipError, baseName, canInflate, listZip, readZipEntry, type ZipEntryInfo, type ZipListing } from './unzip'
 import './files.css'
@@ -45,10 +45,11 @@ export default function UnzipTool() {
 
   const downloadOne = async (entry: ZipEntryInfo) => {
     if (!loaded || busy) return
+    if (!canGenerateBrowserFiles('extract-zip', 1)) return
     setBusy(`Extracting ${baseName(entry.safeName)}…`)
     try {
       const data = await readZipEntry(loaded.bytes, entry)
-      downloadBlob(new Blob([data as BlobPart]), baseName(entry.safeName))
+      downloadGeneratedFiles([{ blob: new Blob([data as BlobPart]), name: baseName(entry.safeName) }], 'extract-zip')
     } catch (e) {
       toast((e as Error).message, 'error')
     } finally {
@@ -60,6 +61,7 @@ export default function UnzipTool() {
     if (!loaded || busy) return
     const files = loaded.listing.entries.filter((e) => !e.isDir && !entryProblem(e))
     if (!files.length) return toast('There are no files in this ZIP that can be unpacked', 'error')
+    if (!canGenerateBrowserFiles('extract-zip', files.length)) return
     setBusy('Unpacking everything…')
     setProgress(0)
     const out: { name: string; data: Uint8Array }[] = []
@@ -74,8 +76,8 @@ export default function UnzipTool() {
         setProgress((i + 1) / files.length)
       }
       if (!out.length) return toast('None of the files could be unpacked; the ZIP is probably damaged.', 'error')
-      if (out.length === 1) downloadBlob(new Blob([out[0].data as BlobPart]), baseName(out[0].name))
-      else downloadBlob(zipStore(out), `${stripExt(loaded.file.name)}-extracted.zip`)
+      if (out.length === 1) downloadGeneratedFiles([{ blob: new Blob([out[0].data as BlobPart]), name: baseName(out[0].name) }], 'extract-zip')
+      else downloadGeneratedZip(zipStore(out), `${stripExt(loaded.file.name)}-extracted.zip`, 'extract-zip', out.length)
       toast(failed ? `${out.length} unpacked, ${failed} failed` : `${out.length} file${out.length > 1 ? 's' : ''} unpacked`, failed ? 'error' : 'ok')
     } finally {
       setBusy(null)

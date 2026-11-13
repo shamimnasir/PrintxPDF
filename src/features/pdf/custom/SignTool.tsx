@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/toastContext'
-import { canGenerateBrowserFiles, downloadBlob } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { store, uid, type Signature } from '../../../lib/store'
 
@@ -195,7 +195,7 @@ export default function SignTool() {
       )
       const { signPdf } = await import('../engines')
       const [out] = await signPdf(file, sigs)
-      downloadBlob(out.blob, out.name, 'sign-pdf')
+      downloadGeneratedFiles([out], 'sign-pdf')
       toast('Signed PDF downloaded')
     } catch (e) {
       toast((e as Error).message, 'error')

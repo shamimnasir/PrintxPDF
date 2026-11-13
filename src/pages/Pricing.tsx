@@ -39,7 +39,7 @@ export default function Pricing() {
   const [busy, setBusy] = useState<PaidPlan | null>(null)
   useSeo({
     title: 'Pricing | Free PDF Tools, Pro and API Plans',
-    description: 'Every browser PDF tool is free forever. Pro is $3.99 a month for 300 server conversions, API $19.99 for 5,000, or pay $119 once for lifetime.',
+    description: 'Get 10 free generated files per browser tool. Pro is $3.99 a month for unlimited browser generations and 300 server conversions.',
     path: '/pricing',
     keywords: ['pdf tool pricing', 'free pdf tools', 'pptx to pdf api', 'epub to pdf api'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Pricing', path: '/pricing' }]), faqSchema(FAQS)],
@@ -51,9 +51,15 @@ export default function Pricing() {
   const limitedTool = TOOL_NAMES[limitedToolKey] || limitedToolKey.replace(/-/g, ' ') || 'selected tool'
   const returnTo = new URLSearchParams(location.search).get('return') || '/tools'
   useEffect(() => {
-    if (!browserLimitReached) return
+    if (!browserLimitReached) {
+      try { localStorage.removeItem('pxp:pending-return') } catch { /* no storage */ }
+      return
+    }
     try {
-      localStorage.setItem('pxp:pending-return', returnTo.startsWith('/') ? returnTo : '/tools')
+      const safeReturn = returnTo.startsWith('/') && !returnTo.startsWith('//') && !returnTo.startsWith('/pricing') && !returnTo.startsWith('/account')
+        ? returnTo
+        : '/tools'
+      localStorage.setItem('pxp:pending-return', safeReturn)
     } catch {
       // The user's pricing choice remains available without storage.
     }

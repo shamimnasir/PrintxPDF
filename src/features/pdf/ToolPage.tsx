@@ -11,6 +11,7 @@ import { ToolContentSections } from './ToolContent'
 import { stepAnchor } from './toolContentUtils'
 import { StatusBadge, ToolCard } from './ToolCard'
 import { GenericTool } from './GenericTool'
+import { BrowserQuota } from './BrowserQuota'
 import { ClientOnly } from '../../components/ClientOnly'
 import './tools.css'
 
@@ -85,6 +86,8 @@ export default function ToolPage() {
         <h1>{alias?.name || tool.name}</h1>
         <p className="lead">{alias?.answer || tool.description}</p>
       </div>
+
+      {tool.status !== 'server' && <BrowserQuota tool={baseSlug} />}
 
       {/* the workbench reads files and browser APIs, so it is left out of the static HTML and
           mounts after hydration; the skeleton keeps the page from jumping meanwhile */}

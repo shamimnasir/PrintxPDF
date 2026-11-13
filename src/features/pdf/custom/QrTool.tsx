@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useToast } from '../../../components/ui/toastContext'
-import { canGenerateBrowserFiles, downloadBlob } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles } from '../../../lib/download'
 import { qrPdf, qrPng, qrSvg } from '../engines'
 
 type Kind = 'url' | 'text' | 'wifi' | 'email' | 'sms' | 'phone' | 'vcard'
@@ -73,9 +73,9 @@ export default function QrTool({ initialKind = 'url' }: { initialKind?: Kind } =
     if (!payload) return toast('Fill in the details first', 'error')
     if (!canGenerateBrowserFiles('qr-code')) return
     try {
-      if (fmt === 'png') downloadBlob(await qrPng(payload, { size, dark, light, margin }), 'qr-code.png', 'qr-code')
-      if (fmt === 'svg') downloadBlob(new Blob([await qrSvg(payload, { dark, light, margin })], { type: 'image/svg+xml' }), 'qr-code.svg', 'qr-code')
-      if (fmt === 'pdf') downloadBlob(await qrPdf(payload, kind === 'url' ? f.url : kind), 'qr-code.pdf', 'qr-code')
+      if (fmt === 'png') downloadGeneratedFiles([{ blob: await qrPng(payload, { size, dark, light, margin }), name: 'qr-code.png' }], 'qr-code')
+      if (fmt === 'svg') downloadGeneratedFiles([{ blob: new Blob([await qrSvg(payload, { dark, light, margin })], { type: 'image/svg+xml' }), name: 'qr-code.svg' }], 'qr-code')
+      if (fmt === 'pdf') downloadGeneratedFiles([{ blob: await qrPdf(payload, kind === 'url' ? f.url : kind), name: 'qr-code.pdf' }], 'qr-code')
     } catch (e) {
       toast((e as Error).message, 'error')
     }

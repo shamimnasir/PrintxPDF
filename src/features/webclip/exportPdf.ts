@@ -1,5 +1,5 @@
 import html2canvas from 'html2canvas'
-import { canGenerateBrowserFiles, downloadBlob } from '../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles } from '../../lib/download'
 import { canvasToPdf, type PageSize } from '../../lib/canvasToPdf'
 import { API_BASE } from '../../lib/api'
 
@@ -43,7 +43,7 @@ export async function exportPdf(el: HTMLElement, filename: string, size: PageSiz
   const canvas = await snapshot(el)
   const pdf = canvasToPdf(canvas, size, 12, 0.92, pageBreakOffsets(el, canvas))
   pdf.setProperties({ title: filename.replace(/\.pdf$/, ''), creator: 'PrintxPDF' })
-  downloadBlob(pdf.output('blob'), filename, 'web-page-cleaner')
+  downloadGeneratedFiles([{ blob: pdf.output('blob'), name: filename }], 'web-page-cleaner')
 }
 
 export type ImageKind = 'png' | 'jpg'
@@ -65,7 +65,7 @@ export async function exportImage(el: HTMLElement, filename: string, kind: Image
   }
   const mime = kind === 'jpg' ? 'image/jpeg' : 'image/png'
   const blob = await new Promise<Blob>((res, rej) => canvas.toBlob((b) => (b ? res(b) : rej(new Error(`${kind.toUpperCase()} failed`))), mime, quality))
-  downloadBlob(blob, filename, 'web-page-cleaner')
+  downloadGeneratedFiles([{ blob, name: filename }], 'web-page-cleaner')
 }
 
 export const exportPng = (el: HTMLElement, filename: string) => exportImage(el, filename, 'png')

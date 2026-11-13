@@ -4,7 +4,7 @@ import { useToast } from '../../../components/ui/toastContext'
 import { ProgressBar, ResultList } from '../../../components/ui/ResultList'
 import type { Output } from '../engines'
 import { useUser } from '../../account/useUser'
-import { browserGenerationStatus, canGenerateBrowserFiles } from '../../../lib/download'
+import { canGenerateBrowserFiles } from '../../../lib/download'
 
 const LANGS: [string, string][] = [
   ['eng', 'English'],
@@ -41,8 +41,8 @@ export default function OcrTool() {
     try {
       const { ocr } = await import('../engines')
       const r = await ocr(files[0], lang, (f, msg) => setProgress({ f, msg }), user && user.plan !== 'free' ? 200 : 30)
-      setText(r.text)
       setOutputs(r.outputs)
+      setText(r.text)
       toast(r.note ? `Text recognised. ${r.note}` : 'Text recognised')
     } catch (e) {
       toast(`Could not read the text: ${(e as Error).message}`, 'error')
@@ -68,7 +68,7 @@ export default function OcrTool() {
             </div>
             <textarea className="textarea" style={{ minHeight: 280 }} value={text} readOnly />
             <div style={{ marginTop: '1rem' }}>
-          <ResultList outputs={outputs} title="Downloads" toolKey="ocr-pdf" />
+              <ResultList outputs={outputs} title="Downloads" toolKey="ocr-pdf" />
             </div>
           </div>
         )}
@@ -88,7 +88,6 @@ export default function OcrTool() {
         <button className="btn btn-acid btn-lg btn-block" disabled={!files.length || busy} onClick={run}>
           {busy ? 'Reading the text…' : 'Run OCR'}
         </button>
-        {(() => { const q = browserGenerationStatus('ocr-pdf'); return <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>{q.paid ? 'Pro plan · unlimited browser generations.' : `${q.remaining} of 10 free files left for this tool on this device.`}</p> })()}
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
           OCR (turning a picture of text into real, searchable text) runs in your browser, so nothing is uploaded. Each language pack downloads once and is kept for next time. Free plan: up to 30 pages per PDF. Pro: up to 200. You get a plain text file plus a copy of your PDF that you can search, with the text laid invisibly over the scan.
         </p>

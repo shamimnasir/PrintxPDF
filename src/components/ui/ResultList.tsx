@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { canDownloadGeneratedFiles, downloadBlob, downloadGeneratedFiles, downloadGeneratedZip, formatBytes } from '../../lib/download'
+import { browserGenerationStatus, canDownloadGeneratedFiles, downloadBlob, downloadGeneratedFiles, downloadGeneratedZip, formatBytes } from '../../lib/download'
 import { zipBlobs } from '../../lib/zip'
 
 export type Output = { name: string; blob: Blob; note?: string }
@@ -76,6 +76,7 @@ export function ResultList({ outputs, title = 'Ready', zipName = 'printxpdf-file
           Open in a new tab
         </button>
       )}
+      {toolKey && (() => { const q = browserGenerationStatus(toolKey); return <p className="mono muted" style={{ fontSize: '0.7rem', margin: '0.75rem 0 0' }}>{q.paid ? 'Pro plan · unlimited browser generations.' : `${q.remaining} of 10 free file downloads left for this tool on this device.`}</p> })()}
     </div>
   )
 }

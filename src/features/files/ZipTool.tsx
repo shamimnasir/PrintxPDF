@@ -2,7 +2,7 @@ import { useMemo, useRef, useState } from 'react'
 import { Dropzone } from '../../components/ui/Dropzone'
 import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar } from '../../components/ui/ResultList'
-import { canGenerateBrowserFiles, downloadBlob, formatBytes } from '../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles, formatBytes } from '../../lib/download'
 import { zipBlobs } from '../../lib/zip'
 import './files.css'
 
@@ -36,7 +36,7 @@ export default function ZipTool() {
     try {
       const blob = await zipBlobs(items.map((i) => ({ name: i.path, blob: i.file })))
       const safe = (name.trim() || 'archive').replace(/[\\/:*?"<>|]/g, '_').replace(/\.zip$/i, '')
-      downloadBlob(blob, `${safe}.zip`, 'create-zip')
+      downloadGeneratedFiles([{ blob, name: `${safe}.zip` }], 'create-zip')
       toast(`${safe}.zip ready (${formatBytes(blob.size)})`)
     } catch (e) {
       const msg = (e as Error).message

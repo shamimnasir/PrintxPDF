@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropzone } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/toastContext'
-import { canGenerateBrowserFiles, downloadBlob, formatBytes, stripExt } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles, formatBytes, stripExt } from '../../../lib/download'
 
 type FieldKind = 'text' | 'check' | 'radio' | 'dropdown' | 'optionlist' | 'button' | 'unknown'
 type Field = {
@@ -139,7 +139,7 @@ export default function FormsTool() {
       form.updateFieldAppearances(font)
       if (flattenIt) form.flatten()
       const bytes = await doc.save()
-      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(file.name)}-${flattenIt ? 'flattened' : 'filled'}.pdf`, 'pdf-forms')
+      downloadGeneratedFiles([{ blob: new Blob([bytes as BlobPart], { type: 'application/pdf' }), name: `${stripExt(file.name)}-${flattenIt ? 'flattened' : 'filled'}.pdf` }], 'pdf-forms')
       toast(skipped.length ? `Saved ${applied} field(s); ${skipped.length} could not be set` : `Saved ${applied} field(s)`, skipped.length ? 'error' : 'ok')
     } catch (e) {
       toast(`Could not save: ${(e as Error).message}`, 'error')

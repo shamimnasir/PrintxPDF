@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Dropzone, FileList } from '../../components/ui/Dropzone'
 import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar, ResultList, type Output } from '../../components/ui/ResultList'
-import { browserGenerationStatus, canGenerateBrowserFiles, downloadBlob, formatBytes } from '../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles, formatBytes } from '../../lib/download'
 import { FORMAT_LABEL, convertImage, formatDelta, isHeic, isImageFile, isSvg, outName, supportsWebpEncode, type OutFormat } from './engines'
 import './files.css'
 
@@ -87,7 +87,7 @@ export default function ImageConvertTool({ initialFormat = 'jpg' }: { initialFor
       setOutputs(outs)
       const failed = results.filter((r) => r.error).length
       if (outs.length === 1 && files.length === 1) {
-        downloadBlob(outs[0].blob, outs[0].name, 'image-converter')
+        downloadGeneratedFiles(outs, 'image-converter')
         toast(`Converted to ${FORMAT_LABEL[format]}. Download started.`)
       } else if (outs.length) {
         toast(`Converted ${outs.length} of ${files.length} image${files.length > 1 ? 's' : ''}${failed ? `, ${failed} failed` : ''}`, failed ? 'error' : 'ok')
@@ -205,7 +205,6 @@ export default function ImageConvertTool({ initialFormat = 'jpg' }: { initialFor
         <button className="btn btn-acid btn-lg btn-block" disabled={!files.length || busy} onClick={run}>
           {busy ? 'Converting…' : `Convert ${files.length || ''} to ${FORMAT_LABEL[format]}`}
         </button>
-        {(() => { const q = browserGenerationStatus('image-converter'); return <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>{q.paid ? 'Pro plan · unlimited browser generations.' : `${q.remaining} of 10 free files left for this tool on this device.`}</p> })()}
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
           Everything happens in your browser; nothing is uploaded. {hasHeic ? 'iPhone HEIC photos need a small helper (about 2 MB) that loads the first time you use it. ' : ''}
           Photos from your phone stay the right way up. {format === 'jpg' ? 'JPG cannot be see-through, so any see-through areas become white.' : ''}

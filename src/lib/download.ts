@@ -35,7 +35,7 @@ function setGenerationCount(tool: string, count: number) {
   }
 }
 
-export function downloadBlob(blob: Blob, filename: string, generationTool = currentTool()): boolean {
+export function downloadBlob(blob: Blob, filename: string, generationTool = ''): boolean {
   const paid = currentPlan() !== 'free'
   const tool = generationTool
   const count = tool ? generationCount(tool) : 0
@@ -58,7 +58,9 @@ export function downloadBlob(blob: Blob, filename: string, generationTool = curr
 
 export function downloadGeneratedFiles(items: { blob: Blob; name: string }[], tool: string): boolean {
   if (!canGenerateBrowserFiles(tool, items.length)) return false
-  for (const item of items) downloadBlob(item.blob, item.name, tool)
+  const paid = currentPlan() !== 'free'
+  if (!paid) setGenerationCount(tool, generationCount(tool) + items.length)
+  for (const [index, item] of items.entries()) setTimeout(() => downloadBlob(item.blob, item.name), index * 250)
   return true
 }
 
@@ -66,7 +68,7 @@ export function downloadGeneratedZip(blob: Blob, filename: string, tool: string,
   if (!canGenerateBrowserFiles(tool, files)) return false
   const paid = currentPlan() !== 'free'
   if (!paid) setGenerationCount(tool, generationCount(tool) + files)
-  return downloadBlob(blob, filename, '')
+  return downloadBlob(blob, filename)
 }
 
 export function resetBrowserGeneration(tool: string) {

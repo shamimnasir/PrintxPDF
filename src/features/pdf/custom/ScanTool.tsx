@@ -3,7 +3,7 @@ import { Dropzone } from '../../../components/ui/Dropzone'
 import { ProgressBar } from '../../../components/ui/ResultList'
 import { Seg } from '../../../components/ui/Seg'
 import { useToast } from '../../../components/ui/toastContext'
-import { canGenerateBrowserFiles, downloadBlob } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadGeneratedFiles } from '../../../lib/download'
 import { canvasToBlob } from '../../../lib/pdfjs'
 import { uid } from '../../../lib/store'
 import { capCanvas } from './pdfGeom'
@@ -234,7 +234,7 @@ export default function ScanTool() {
       }
       setProgress({ v: 1, msg: 'Saving…' })
       const bytes = await doc.save()
-      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), 'scan.pdf', 'scan-to-pdf')
+      downloadGeneratedFiles([{ blob: new Blob([bytes as BlobPart], { type: 'application/pdf' }), name: 'scan.pdf' }], 'scan-to-pdf')
       toast(`Saved ${pages.length} page(s)`)
     } catch (e) {
       toast(`Could not build the PDF: ${(e as Error).message}`, 'error')
