@@ -38,7 +38,7 @@ export const pdfToJpg: ToolContent = {
     { h: 'Run PDF to JPG and download', x: 'Click **Run PDF to JPG**. A single page downloads straight away. For several pages, choose **Download ZIP** or **Separately** in the results list. Each file is named after the PDF and its page number.' },
   ],
   faqs: [
-    { q: 'Is PDF to JPG free, and does it add a watermark?', a: 'Yes, it is free with no sign-up and no watermark. The conversion runs in your browser, so there is no waiting line, no file limit tied to an account, and nothing to delete afterwards.' },
+    { q: 'Is PDF to JPG free, and does it add a watermark?', a: 'Yes. You can generate 10 free image files per browser tool on this device, with no sign-up or watermark. The conversion runs in your browser, so your PDF is not uploaded.' },
     { q: 'Which sharpness should I choose for PDF to JPG?', a: 'Use 72 dpi for a quick preview or a small thumbnail, 144 dpi for slides and screens, 216 dpi for good-looking prints, and 300 dpi when a printer or publisher asks for print quality. A 300 dpi A4 page is roughly 2480 by 3508 dots.' },
     { q: 'Does the tool upload my PDF?', a: 'No. The pages are drawn and the pictures are built inside your browser tab. Close the tab and nothing remains. This makes the tool safe for contracts, bank statements and unpublished work.' },
     { q: 'Can I convert just one page of a PDF to JPG?', a: 'Yes. Type the page number in the **Pages** field, for example `4`, or a range such as `2-3`. Only those pages are made, which is faster and avoids a pile of pictures you do not need.' },

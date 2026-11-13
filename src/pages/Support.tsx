@@ -136,7 +136,7 @@ export default function Support() {
         <Link to="/pricing" className="card card-hover" style={{ textDecoration: 'none' }}>
           <h4 style={{ marginBottom: '0.3rem' }}>Plans and limits</h4>
           <p className="muted" style={{ margin: 0, fontSize: '0.9rem' }}>
-            What is free forever, and what the paid plans add.
+            What you can do free, what is limited, and what paid plans add.
           </p>
         </Link>
         <Link to="/privacy" className="card card-hover" style={{ textDecoration: 'none' }}>

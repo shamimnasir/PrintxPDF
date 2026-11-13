@@ -51,7 +51,7 @@ export const removeMetadata: ToolContent = {
     },
     {
       q: 'Is it free and private?',
-      a: 'Yes. No account, no upload, no limit. The file is processed in your browser and the original on your disk is never touched; you download a new copy.',
+      a: 'Yes. The first 10 metadata-free PDFs per tool on this device are free. No account is needed and the file is processed in your browser. Your original stays unchanged; you download a new copy.',
     },
   ],
   entities: ['PDF metadata', 'Document information', 'XMP', 'Author field', 'File properties', 'GDPR', 'Document sanitisation'],

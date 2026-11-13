@@ -23,7 +23,7 @@ export const repairPdf: ToolContent = {
     { h: 'Rescue a cut-off download', x: 'A file cut off part-way often still holds every page that made it. Repair recovers those pages into a file that opens normally.' },
     { h: 'Make a strict app happy', x: 'Files that open in one app but fail in another usually have a sloppy structure. A clean rewrite fixes the difference.' },
     { h: 'Keep a broken contract private', x: 'A damaged file is still a private file. The rebuild happens inside the tab and nothing is uploaded.' },
-    { h: 'Nothing to install, free', x: 'No desktop app, no account, no limit. Drop the file, run, download.' },
+    { h: 'Nothing to install', x: 'No desktop app or account. Generate up to 10 repaired files with this tool on this device for free: drop the file, run the repair, then download the new copy.' },
   ],
   howHeading: 'How to repair a PDF, step by step',
   how: [

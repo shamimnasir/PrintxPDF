@@ -42,7 +42,7 @@ export const jpgToPdf: ToolContent = {
     { q: 'Can I put several images on one page?', a: 'Not with this tool: each image becomes its own page. If you need several pictures side by side on one page, combine them in an image editor first and then convert that single combined picture.' },
     { q: 'Can I change the order of the pages?', a: 'Yes. After dropping the files, use the move arrows in the file list to reorder them before you run the conversion. The PDF follows that order exactly. You can also remove a file from the list.' },
     { q: 'What page size should I use for phone photos?', a: 'Choose **Same as image** if the PDF is only for screens; each page will match the photo. Choose A4 or Letter with **Fit inside margins** if anyone will print it, since a phone photo is taller and narrower than a sheet of paper.' },
-    { q: 'Is there a limit on the number of images?', a: 'There is no fixed limit. Because the PDF is built in your browser, the practical ceiling is memory: a few hundred phone photos is fine on a laptop, while thousands of large scans may be slow. Nothing is uploaded, so there is no monthly quota.' },
+    { q: 'Is there a limit on the number of images?', a: 'There is no fixed page cap, but the browser tab’s memory limits how many images it can handle at once. Free use allows 10 generated PDF files per tool on this device. Your images are processed locally and are not uploaded.' },
   ],
   entities: ['JPG', 'JPEG', 'PNG', 'WebP', 'PDF', 'A4', 'Letter'],
   keywords: ['jpg to pdf', 'convert jpg to pdf free', 'combine images into one pdf', 'png to pdf', 'image to pdf converter', 'jpg to pdf a4', 'photos to pdf online'],

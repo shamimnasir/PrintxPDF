@@ -62,7 +62,7 @@ export const createZip: ToolContent = {
     },
     {
       q: 'Is there a size limit?',
-      a: 'Yes, 1 GB per ZIP, because it is built in your browser\'s memory. Above 500 MB you are warned that a browser with little free memory may fail; splitting into two ZIPs is safer. There is no limit on the number of files.',
+      a: 'Yes. The ZIP is created in your browser, with a 1 GB archive size ceiling. You can generate 10 ZIP files per tool on this device for free. Above 500 MB, a browser with little free memory may fail, so splitting into smaller archives is safer.',
     },
     {
       q: 'Are my files uploaded anywhere?',

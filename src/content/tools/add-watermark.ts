@@ -52,7 +52,7 @@ export const addWatermark: ToolContent = {
     },
     {
       q: 'Is it free and private?',
-      a: 'Yes. The tool runs in your browser with no upload, no account and no limit on how many files you stamp. The original file on your computer is never changed; you always get a new copy.',
+      a: 'Yes. You can generate 10 free stamped files per browser tool on this device. The tool runs locally with no upload or account. The original is never changed; you get a new copy.',
     },
   ],
   entities: ['Watermark', 'PDF', 'Draft watermark', 'Confidential marking', 'Opacity', 'Page stamp'],

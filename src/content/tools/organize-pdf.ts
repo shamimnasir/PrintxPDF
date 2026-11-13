@@ -23,7 +23,7 @@ export const organizePdf: ToolContent = {
     { h: 'Fix scans in one go', x: 'A two-sided scan that came out reversed, a wide page lying on its side and a blank back page are all handled in the same grid, with one download at the end.' },
     { h: 'No quality loss', x: 'Pages are copied, not redrawn. Rotation is a note on the page, so even a sharp scan keeps every dot it had.' },
     { h: 'Private for confidential files', x: 'Previews are drawn on your machine and the rebuilt PDF is written there too. Nothing is uploaded, so nothing needs deleting from a server.' },
-    { h: 'Free with no page cap', x: 'There is no account and no limit on pages beyond the memory of your browser tab.' },
+    { h: 'Free for 10 generated files', x: 'No account is needed. You can generate 10 files with this tool on this device; page count is limited by the memory available in your browser tab.' },
   ],
   howHeading: 'How to organize PDF pages, step by step',
   how: [

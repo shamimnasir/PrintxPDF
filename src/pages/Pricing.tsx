@@ -39,7 +39,7 @@ export default function Pricing() {
   const [busy, setBusy] = useState<PaidPlan | null>(null)
   useSeo({
     title: 'Pricing | Free PDF Tools, Pro and API Plans',
-    description: 'Get 10 free generated files per browser tool. Pro is $3.99 a month for unlimited browser generations and 300 server conversions.',
+    description: '10 free files per browser tool, plus 5 server conversions monthly. Pro: unlimited browser generations and 300 server conversions for $3.99/month.',
     path: '/pricing',
     keywords: ['pdf tool pricing', 'free pdf tools', 'pptx to pdf api', 'epub to pdf api'],
     schema: [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Pricing', path: '/pricing' }]), faqSchema(FAQS)],
@@ -102,7 +102,7 @@ export default function Pricing() {
           <h3>Free</h3>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: '3rem' }}>$0</div>
           <ul style={{ fontWeight: 600, paddingLeft: '1.2rem', minHeight: 190 }}>
-            <li>10 generated files per browser tool</li>
+            <li>10 generated files per browser tool on this device</li>
             <li>Web-page cleaner and print button</li>
             <li>5 server conversions a month</li>
             <li>Scan to searchable text, up to 30 pages per file</li>

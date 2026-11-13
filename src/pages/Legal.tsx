@@ -103,7 +103,7 @@ export default function Legal({ kind }: { kind: 'privacy' | 'terms' }) {
           </p>
           <h3 id="billing">Billing</h3>
           <p>
-            Pro ($3.99 per month) and API ($19.99 per month) are billed monthly by Stripe and renew automatically until
+            The free plan includes 10 generated files per browser tool on this device and 5 server conversions per month. Pro ($3.99 per month) and API ($19.99 per month) are billed monthly by Stripe and renew automatically until
             cancelled. Cancel any time from Account → Subscription; access continues to the end of the period you have paid
             for, and you are not charged again. There is no trial, so nothing converts into a charge on its own, and there is
             no cancellation or early termination fee. Prices exclude any VAT or sales tax Stripe is required to add for your

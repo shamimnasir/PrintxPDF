@@ -153,7 +153,7 @@
         },
         {
           "t": "note",
-          "x": "Server conversions are metered. Free accounts get 5 a month, Pro and Lifetime get 300, and API keys get 5,000. Browser tools such as [compress PDF](/tools/compress-pdf) and [images to PDF](/tools/jpg-to-pdf) do not count against any of that, because nothing is uploaded in the first place."
+          "x": "Server conversions are metered separately. Free use includes 5 server conversions a month and 10 generated files per browser tool on this device. Pro includes 300 server conversions a month and unlimited browser generations. [Compress PDF](/tools/compress-pdf) and [images to PDF](/tools/jpg-to-pdf) run locally; their browser-file allowance is separate from server conversions."
         },
         {
           "t": "h2",
@@ -464,7 +464,7 @@
         },
         {
           "q": "How many conversions can I run?",
-          "a": "Free accounts get 5 server conversions a month, Pro and Lifetime 300, and API keys 5,000. Files up to 100 MB are accepted and each job runs for up to two minutes. Browser tools such as compressing a PDF do not use any of that allowance."
+          "a": "Free use includes 5 server conversions a month and 10 generated files per browser tool on this device. Pro and Lifetime include 300 server conversions a month and unlimited browser generations; API plans include 5,000 server conversions. Server jobs accept files up to 100 MB and run for up to two minutes. Browser tools have a separate per-tool file allowance."
         }
       ],
       "relatedTools": [
@@ -614,7 +614,7 @@
         },
         {
           "t": "note",
-          "x": "Converting a deck is a server job: the file is uploaded over a secure connection, converted on our server, and deleted the moment it finishes. Free accounts get 5 of those a month, Pro and Lifetime 300, and API keys 5,000. Compressing the resulting PDF runs inside your browser and uploads nothing, so it never touches that allowance."
+          "x": "Converting a deck is a server job: the file is uploaded over a secure connection, converted on our server, and deleted the moment it finishes. Free use includes 5 server conversions a month; Pro and Lifetime include 300, and API plans include 5,000. Compressing the resulting PDF runs inside your browser and uploads nothing, so it uses the separate 10-files-per-tool free allowance instead."
         },
         {
           "t": "h2",
