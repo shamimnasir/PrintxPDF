@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { downloadBlob, formatBytes } from '../../lib/download'
+import { canDownloadGeneratedFiles, downloadBlob, downloadGeneratedFiles, downloadGeneratedZip, formatBytes } from '../../lib/download'
 import { zipBlobs } from '../../lib/zip'
 
 export type Output = { name: string; blob: Blob; note?: string }
@@ -19,15 +19,18 @@ export function ProgressBar({ value, msg }: { value: number; msg?: string }) {
   )
 }
 
-export function ResultList({ outputs, title = 'Ready', zipName = 'printxpdf-files.zip' }: { outputs: Output[]; title?: string; zipName?: string }) {
+export function ResultList({ outputs, title = 'Ready', zipName = 'printxpdf-files.zip', toolKey }: { outputs: Output[]; title?: string; zipName?: string; toolKey?: string }) {
   const [zipping, setZipping] = useState(false)
   if (!outputs.length) return null
   const pdf = outputs.length === 1 && /\.pdf$/i.test(outputs[0].name) ? outputs[0] : null
 
   const downloadZip = async () => {
+    if (toolKey && !canDownloadGeneratedFiles(toolKey, outputs.length)) return
     setZipping(true)
     try {
-      downloadBlob(await zipBlobs(outputs), zipName)
+      const blob = await zipBlobs(outputs)
+      if (toolKey) downloadGeneratedZip(blob, zipName, toolKey, outputs.length)
+      else downloadBlob(blob, zipName)
     } finally {
       setZipping(false)
     }
@@ -41,7 +44,10 @@ export function ResultList({ outputs, title = 'Ready', zipName = 'printxpdf-file
             <button className="btn btn-sm btn-acid" disabled={zipping} onClick={downloadZip}>
               {zipping ? 'Zipping…' : `Download ZIP (${outputs.length})`}
             </button>
-            <button className="btn btn-sm btn-ghost" onClick={() => outputs.forEach((r, i) => setTimeout(() => downloadBlob(r.blob, r.name), i * 250))}>
+            <button className="btn btn-sm btn-ghost" onClick={() => {
+              if (toolKey) downloadGeneratedFiles(outputs, toolKey)
+              else outputs.forEach((r, i) => setTimeout(() => downloadBlob(r.blob, r.name), i * 250))
+            }}>
               Separately
             </button>
           </div>
@@ -54,7 +60,7 @@ export function ResultList({ outputs, title = 'Ready', zipName = 'printxpdf-file
             <span className="mono" style={{ fontSize: '0.75rem' }}>
               {formatBytes(r.blob.size)}
             </span>
-            <button className="btn btn-sm" onClick={() => downloadBlob(r.blob, r.name)}>
+            <button className="btn btn-sm" onClick={() => { if (toolKey) downloadGeneratedFiles([r], toolKey); else downloadBlob(r.blob, r.name) }}>
               Download
             </button>
           </div>

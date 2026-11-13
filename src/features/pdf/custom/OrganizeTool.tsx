@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/toastContext'
-import { downloadBlob } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadBlob } from '../../../lib/download'
 import { canvasToBlob, loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 
 type P = { index: number; rotation: number; thumbnailUrl: string }
@@ -66,11 +66,12 @@ export default function OrganizeTool() {
 
   const apply = async () => {
     if (!file || !pages.length) return
+    if (!canGenerateBrowserFiles('organize-pdf')) return
     setBusy(true)
     try {
       const { reorganize } = await import('../engines')
       const [out] = await reorganize(file, pages.map(({ index, rotation }) => ({ index, rotation })))
-      downloadBlob(out.blob, out.name)
+      downloadBlob(out.blob, out.name, 'organize-pdf')
       toast('Organized PDF downloaded')
     } catch (e) {
       toast((e as Error).message, 'error')

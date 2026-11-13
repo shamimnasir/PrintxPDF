@@ -3,7 +3,7 @@ import { Dropzone } from '../../../components/ui/Dropzone'
 import { ProgressBar } from '../../../components/ui/ResultList'
 import { Seg } from '../../../components/ui/Seg'
 import { useToast } from '../../../components/ui/toastContext'
-import { downloadBlob } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadBlob } from '../../../lib/download'
 import { canvasToBlob } from '../../../lib/pdfjs'
 import { uid } from '../../../lib/store'
 import { capCanvas } from './pdfGeom'
@@ -203,6 +203,7 @@ export default function ScanTool() {
   const applyAll = (key: 'grey' | 'contrast', on: boolean) => setPages((p) => p.map((x) => ({ ...x, [key]: on })))
 
   const exportPdf = async () => {
+    if (!canGenerateBrowserFiles('scan-to-pdf')) return
     if (!pages.length) return
     setBusy(true)
     setProgress({ v: 0, msg: 'Building…' })
@@ -233,7 +234,7 @@ export default function ScanTool() {
       }
       setProgress({ v: 1, msg: 'Saving…' })
       const bytes = await doc.save()
-      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), 'scan.pdf')
+      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), 'scan.pdf', 'scan-to-pdf')
       toast(`Saved ${pages.length} page(s)`)
     } catch (e) {
       toast(`Could not build the PDF: ${(e as Error).message}`, 'error')

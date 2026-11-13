@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Dropzone, FileList } from '../../components/ui/Dropzone'
 import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar, ResultList, type Output } from '../../components/ui/ResultList'
-import { formatBytes } from '../../lib/download'
+import { browserGenerationStatus, canGenerateBrowserFiles, formatBytes } from '../../lib/download'
 import { FORMAT_LABEL, formatDelta, formatOf, isImageFile, outName, removeImageMetadata, supportsWebpEncode, type OutFormat } from './engines'
 import './files.css'
 
@@ -38,6 +38,7 @@ export default function RemoveImageMetadataTool() {
 
   const run = async () => {
     if (!files.length || busy) return
+    if (!canGenerateBrowserFiles('remove-image-metadata', files.length)) return
     setBusy(true); setDone([]); setOutputs([])
     const results: Done[] = []
     const outs: Output[] = []
@@ -67,7 +68,7 @@ export default function RemoveImageMetadataTool() {
       <FileList files={files} onRemove={(i) => { setDone([]); setOutputs([]); setFiles((current) => current.filter((_, j) => j !== i)) }} />
       {progress && <ProgressBar value={progress.f} msg={progress.msg} />}
       {done.length > 0 && <div className="card stack"><h4 style={{ margin: 0 }}>Clean copies</h4>{done.map((item) => <div className="row" key={item.name} style={{ justifyContent: 'space-between', gap: '1rem' }}><span>{item.name}</span><span className="muted">{item.error || `${item.width}×${item.height} · ${formatDelta(item.before, item.after)}`}</span></div>)}</div>}
-      <ResultList outputs={outputs} title="Metadata-free images" zipName="printxpdf-clean-images.zip" />
+      <ResultList outputs={outputs} title="Metadata-free images" zipName="printxpdf-clean-images.zip" toolKey="remove-image-metadata" />
     </div>
     <div className="card stack conversion-settings">
       <div className="conversion-panel-head"><span className="conversion-step" aria-hidden="true">2</span><div><h4>Make a clean copy</h4><p>The output is rebuilt from visible pixels, not edited in place.</p></div></div>
@@ -75,6 +76,7 @@ export default function RemoveImageMetadataTool() {
       <div className="fx-notice"><strong>What is removed:</strong> EXIF camera, GPS and date fields; IPTC and XMP descriptions; and embedded provenance records such as C2PA / Content Credentials that are stored as metadata. <strong>What stays:</strong> the visible image. PNG and WebP preserve transparency; JPG puts transparent areas on white.</div>
       <div className="fx-notice">This cannot remove watermarks, labels, text, or other marks visible in the pixels. A new file is made locally in your browser; nothing is uploaded.</div>
       <button className="btn btn-acid btn-lg btn-block" disabled={!files.length || busy} onClick={run}>{busy ? 'Removing metadata…' : `Remove metadata from ${files.length || ''} image${files.length === 1 ? '' : 's'}`}</button>
+      {(() => { const q = browserGenerationStatus('remove-image-metadata'); return <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>{q.paid ? 'Pro plan · unlimited browser generations.' : `${q.remaining} of 10 free files left for this tool on this device.`}</p> })()}
       {files.length > 0 && <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>Total size added: {formatBytes(files.reduce((total, file) => total + file.size, 0))}.</p>}
     </div>
   </div>

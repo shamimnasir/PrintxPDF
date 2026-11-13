@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Dropzone, FileList } from '../../components/ui/Dropzone'
 import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar, ResultList, type Output } from '../../components/ui/ResultList'
-import { formatBytes } from '../../lib/download'
+import { browserGenerationStatus, canGenerateBrowserFiles, formatBytes } from '../../lib/download'
 import { FORMAT_LABEL, compressImage, formatDelta, formatOf, isHeic, isImageFile, outName, supportsWebpEncode, type CompressResult } from './engines'
 import './files.css'
 
@@ -89,6 +89,7 @@ export default function CompressImageTool() {
 
   const run = async () => {
     if (!files.length || busy) return
+    if (!canGenerateBrowserFiles('compress-image', files.length)) return
     setBusy(true)
     setOutputs([])
     const outs: Output[] = []
@@ -188,7 +189,7 @@ export default function CompressImageTool() {
             ))}
           </div>
         )}
-        <ResultList outputs={outputs} title="Compressed" zipName="printxpdf-compressed.zip" />
+        <ResultList outputs={outputs} title="Compressed" zipName="printxpdf-compressed.zip" toolKey="compress-image" />
       </div>
 
       <div className="card stack">
@@ -250,6 +251,7 @@ export default function CompressImageTool() {
         <button className="btn btn-acid btn-lg btn-block" disabled={!files.length || busy} onClick={run}>
           {busy ? 'Compressing…' : `Compress ${files.length > 1 ? `${files.length} images` : 'image'}`}
         </button>
+        {(() => { const q = browserGenerationStatus('compress-image'); return <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>{q.paid ? 'Pro plan · unlimited browser generations.' : `${q.remaining} of 10 free files left for this tool on this device.`}</p> })()}
         <p className="muted" style={{ fontSize: '0.8rem', margin: 0 }}>
           Never makes a file bigger: if the new version comes out larger, you get the original back with a note. Photos from your phone stay the right way up. Nothing is uploaded.
         </p>

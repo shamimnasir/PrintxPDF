@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Dropzone } from '../../../components/ui/Dropzone'
 import { ProgressBar } from '../../../components/ui/ResultList'
 import { useToast } from '../../../components/ui/toastContext'
-import { downloadBlob, stripExt } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadBlob, stripExt } from '../../../lib/download'
 import { canvasToBlob, loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { uid } from '../../../lib/store'
 
@@ -92,6 +92,7 @@ export default function RedactTool() {
 
   const run = async () => {
     if (!file || !pdf || !boxes.length) return
+    if (!canGenerateBrowserFiles('redact-pdf')) return
     setBusy(true)
     setProgress({ v: 0, msg: 'Preparing…' })
     try {
@@ -122,7 +123,7 @@ export default function RedactTool() {
       }
       setProgress({ v: 1, msg: 'Saving…' })
       const bytes = await out.save()
-      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(file.name)}-redacted.pdf`)
+      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(file.name)}-redacted.pdf`, 'redact-pdf')
       toast(`Blacked out ${touched.size} page(s)`)
     } catch (e) {
       toast(`Could not black out the pages: ${(e as Error).message}`, 'error')

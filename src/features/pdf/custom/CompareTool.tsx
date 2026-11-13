@@ -3,7 +3,7 @@ import { Dropzone, FileList } from '../../../components/ui/Dropzone'
 import { ProgressBar } from '../../../components/ui/ResultList'
 import { Seg } from '../../../components/ui/Seg'
 import { useToast } from '../../../components/ui/toastContext'
-import { downloadBlob, stripExt } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadBlob, stripExt } from '../../../lib/download'
 import { canvasToBlob, loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { tokenRgb } from './pdfGeom'
 
@@ -150,6 +150,7 @@ export default function CompareTool() {
 
   const exportDiff = async () => {
     if (!a || !b) return
+    if (!canGenerateBrowserFiles('compare-pdf')) return
     setBusy(true)
     setProgress({ v: 0, msg: 'Comparing pages…' })
     try {
@@ -165,7 +166,7 @@ export default function CompareTool() {
       }
       setProgress({ v: 1, msg: 'Saving…' })
       const bytes = await doc.save()
-      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(files[0].name)}-vs-${stripExt(files[1].name)}-diff.pdf`)
+      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(files[0].name)}-vs-${stripExt(files[1].name)}-diff.pdf`, 'compare-pdf')
       toast('Comparison PDF downloaded')
     } catch (e) {
       toast(`Could not build the comparison PDF: ${(e as Error).message}`, 'error')

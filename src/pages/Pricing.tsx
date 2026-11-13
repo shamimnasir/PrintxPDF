@@ -5,6 +5,14 @@ import { useToast } from '../components/ui/toastContext'
 import { useUser } from '../features/account/useUser'
 import { billing, describeError, type PaidPlan } from '../lib/api'
 
+const TOOL_NAMES: Record<string, string> = {
+  'web-page-cleaner': 'Print any web page', 'image-converter': 'Image converter', 'compress-image': 'Compress image',
+  'remove-image-metadata': 'Remove image metadata', 'ocr-pdf': 'OCR PDF', 'edit-pdf': 'PDF editor',
+  'redact-pdf': 'Redact PDF', 'compare-pdf': 'Compare PDF', 'pdf-forms': 'PDF forms', 'organize-pdf': 'Organize PDF',
+  'sign-pdf': 'Sign PDF', 'scan-to-pdf': 'Scan to PDF', 'qr-code': 'QR code generator', 'create-zip': 'Create ZIP',
+  'extract-zip': 'Extract ZIP',
+}
+
 const FAQS = [
   {
     q: 'What is a server conversion?',
@@ -39,6 +47,8 @@ export default function Pricing() {
 
   const current = user?.plan || 'free'
   const browserLimitReached = new URLSearchParams(location.search).get('reason') === 'browser-limit'
+  const limitedToolKey = new URLSearchParams(location.search).get('tool') || ''
+  const limitedTool = TOOL_NAMES[limitedToolKey] || limitedToolKey.replace(/-/g, ' ') || 'selected tool'
   const returnTo = new URLSearchParams(location.search).get('return') || '/tools'
   useEffect(() => {
     if (!browserLimitReached) return
@@ -73,19 +83,20 @@ export default function Pricing() {
     <div className="container section">
       <div className="center">
         <span className="eyebrow">Pricing</span>
-        <h1>{browserLimitReached ? 'You’ve used 10 free browser downloads.' : 'Free is free.'}</h1>
+        <h1>{browserLimitReached ? `You’ve used 10 free files in ${limitedTool}.` : 'Free is free.'}</h1>
         <p className="lead" style={{ margin: '0 auto 3rem' }}>
           {browserLimitReached
-            ? 'Your files still stay on your device. Choose Pro to keep generating and downloading without a monthly browser-tool limit.'
+            ? 'Your files still stay on your device. Choose Pro to keep generating and downloading without a limit in this tool.'
             : 'Every tool that works in your browser costs nothing and always will. Paid plans cover the handful of jobs that have to run on our server, and the plan for developers.'}
         </p>
+        {browserLimitReached && <p className="muted" style={{ margin: '-2rem auto 3rem', maxWidth: 680 }}>Free use includes 10 generated files per tool on this device. Other tools keep their own separate allowance.</p>}
       </div>
       <div className="grid grid-4">
         <div className="card">
           <h3>Free</h3>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: '3rem' }}>$0</div>
           <ul style={{ fontWeight: 600, paddingLeft: '1.2rem', minHeight: 190 }}>
-            <li>All browser PDF tools, unlimited</li>
+            <li>10 generated files per browser tool</li>
             <li>Web-page cleaner and print button</li>
             <li>5 server conversions a month</li>
             <li>Scan to searchable text, up to 30 pages per file</li>
@@ -108,7 +119,7 @@ export default function Pricing() {
             $3.99<span style={{ fontSize: '1rem' }}>/mo</span>
           </div>
           <ul style={{ fontWeight: 600, paddingLeft: '1.2rem', minHeight: 190 }}>
-            <li>Everything in Free</li>
+            <li>Unlimited browser tool generations</li>
             <li>300 server conversions a month</li>
             <li>PowerPoint to PDF and back, EPUB and MOBI ebooks to PDF</li>
             <li>Scan to searchable text, up to 200 pages per file</li>

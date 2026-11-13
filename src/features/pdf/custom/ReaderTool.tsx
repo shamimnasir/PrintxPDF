@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropzone } from '../../../components/ui/Dropzone'
-import { downloadBlob } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 
 type Pdf = Awaited<ReturnType<typeof loadPdf>>
@@ -141,9 +140,6 @@ export default function ReaderTool() {
         <span className="mono">{Math.round(zoom * 83)}%</span>
         <button className="icon-btn" onClick={() => setZoom((z) => Math.min(3, +(z + 0.2).toFixed(1)))} aria-label="Zoom in">
           +
-        </button>
-        <button className="btn btn-sm btn-acid" onClick={() => downloadBlob(file, file.name)}>
-          Download
         </button>
         <button className="btn btn-sm" onClick={openInTab}>
           Print

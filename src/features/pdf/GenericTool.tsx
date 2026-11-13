@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Dropzone, FileList } from '../../components/ui/Dropzone'
 import { useToast } from '../../components/ui/toastContext'
 import { ProgressBar, ResultList } from '../../components/ui/ResultList'
-import { downloadBlob } from '../../lib/download'
+import { browserGenerationStatus, canGenerateBrowserFiles, downloadBlob } from '../../lib/download'
 import type { Output } from './engines'
 import type { ToolMeta } from './toolsMeta'
 import { convertRemote, describeError, isConvertKind, PLAN_LABEL, PLAN_QUOTA, warmConverter } from '../../lib/api'
@@ -203,6 +203,8 @@ export function GenericTool({ tool, initialOptions }: { tool: ToolMeta; initialO
     })
 
   const run = async () => {
+    if (!server && !canGenerateBrowserFiles(tool.slug, 1)) return
+    if (!server && ['split-pdf', 'pdf-to-jpg'].includes(tool.slug) && !canGenerateBrowserFiles(tool.slug, 2)) return
     setBusy(true)
     setError(null)
     setErrorHint(null)
@@ -323,7 +325,7 @@ export function GenericTool({ tool, initialOptions }: { tool: ToolMeta; initialO
       }
       setResults(out)
       toast(`Done: ${out.length} file${out.length > 1 ? 's' : ''} ready`)
-      if (out.length === 1) downloadBlob(out[0].blob, out[0].name)
+      if (out.length === 1) downloadBlob(out[0].blob, out[0].name, tool.slug)
     } catch (e) {
       const d = describeError(e)
       setError(d.message)
@@ -376,7 +378,7 @@ export function GenericTool({ tool, initialOptions }: { tool: ToolMeta; initialO
             )}
           </div>
         )}
-        <ResultList outputs={results} zipName={`${tool.slug}-output.zip`} />
+        <ResultList outputs={results} zipName={`${tool.slug}-output.zip`} toolKey={server ? undefined : tool.slug} />
       </div>
 
       <div className="card stack conversion-settings">
@@ -441,6 +443,12 @@ export function GenericTool({ tool, initialOptions }: { tool: ToolMeta; initialO
                 : <>Free: 5 conversions a month. <Link to="/pricing">Pro: 300 for $3.99/month →</Link></>}
           </p>
         )}
+        {!server && (() => {
+          const quota = browserGenerationStatus(tool.slug)
+          return <p className="mono muted" style={{ fontSize: '0.7rem', margin: 0 }}>
+            {quota.paid ? 'Pro plan · unlimited browser generations.' : `${quota.remaining} of 10 free files left for this tool on this device.`}
+          </p>
+        })()}
       </div>
     </div>
   )

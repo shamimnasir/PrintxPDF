@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Dropzone } from '../../../components/ui/Dropzone'
 import { useToast } from '../../../components/ui/toastContext'
-import { downloadBlob, readAsDataURL, stripExt } from '../../../lib/download'
+import { canGenerateBrowserFiles, downloadBlob, readAsDataURL, stripExt } from '../../../lib/download'
 import { loadPdf, renderPageToCanvas } from '../../../lib/pdfjs'
 import { uid } from '../../../lib/store'
 import { hexToRgb01, visualRect } from './pdfGeom'
@@ -344,6 +344,7 @@ export default function EditTool() {
 
   // ---- export ----
   const exportPdf = async () => {
+    if (!canGenerateBrowserFiles('edit-pdf')) return
     if (!file || !items.length) return
     setBusy(true)
     try {
@@ -412,7 +413,7 @@ export default function EditTool() {
         }
       }
       const bytes = await doc.save()
-      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(file.name)}-edited.pdf`)
+      downloadBlob(new Blob([bytes as BlobPart], { type: 'application/pdf' }), `${stripExt(file.name)}-edited.pdf`, 'edit-pdf')
       toast('Edited PDF downloaded')
     } catch (e) {
       toast(`Could not save the PDF: ${(e as Error).message}`, 'error')
