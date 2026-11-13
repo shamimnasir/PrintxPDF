@@ -126,6 +126,17 @@ export default function Home() {
               <strong>Cancel in one click.</strong> No email to send, nobody talking you out of it, full refund inside 14 days, 30 on Lifetime.
             </li>
           </ul>
+
+          <div className="card card-ink" style={{ maxWidth: 980, margin: '1.5rem auto 0', textAlign: 'left', display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto', gap: '1.5rem', alignItems: 'center' }}>
+            <div>
+              <span className="eyebrow" style={{ color: 'var(--acid-dim)' }}>When you need the server</span>
+              <h2 style={{ color: 'white', margin: '0.4rem 0 0.45rem' }}>Browser tools stay unlimited. Pro covers the jobs browsers cannot.</h2>
+              <p style={{ color: 'rgba(255,255,255,.78)', margin: 0, maxWidth: '62ch' }}>
+                PowerPoint, ebook, PDF/A and password conversions get 5 free runs each month. If you do this work regularly, Pro gives you 300 server conversions for $3.99/month, with no watermark and no lock-in.
+              </p>
+            </div>
+            <Link to="/pricing" className="btn btn-acid">See the simple plans →</Link>
+          </div>
         </div>
       </section>
 

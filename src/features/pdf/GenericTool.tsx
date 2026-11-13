@@ -438,7 +438,7 @@ export function GenericTool({ tool, initialOptions }: { tool: ToolMeta; initialO
               ? `${usage.used} of ${usage.limit} conversions used this month.`
               : user && user.plan !== 'free'
                 ? `${PLAN_LABEL[user.plan]} plan · ${PLAN_QUOTA[user.plan].toLocaleString('en-US')} conversions a month.`
-                : 'Free: 5 conversions a month. Pro: 300.'}
+                : <>Free: 5 conversions a month. <Link to="/pricing">Pro: 300 for $3.99/month →</Link></>}
           </p>
         )}
       </div>
