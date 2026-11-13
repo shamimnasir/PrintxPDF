@@ -1,4 +1,43 @@
-export function downloadBlob(blob: Blob, filename: string) {
+const FREE_GENERATION_LIMIT = 10
+const GENERATION_KEY = 'pxp:browser-generations'
+const ACCOUNT_PATHS = new Set(['/account', '/account/billing', '/signin', '/signup'])
+
+function currentPlan(): string {
+  try {
+    return JSON.parse(localStorage.getItem('pxp:user') || 'null')?.plan || 'free'
+  } catch {
+    return 'free'
+  }
+}
+
+function generationCount(): number {
+  try {
+    return Number(localStorage.getItem(GENERATION_KEY) || 0)
+  } catch {
+    return 0
+  }
+}
+
+function setGenerationCount(count: number) {
+  try {
+    localStorage.setItem(GENERATION_KEY, String(count))
+    window.dispatchEvent(new CustomEvent('pxp:generation', { detail: count }))
+  } catch {
+    // Keep browser tools usable when local storage is unavailable.
+  }
+}
+
+export function downloadBlob(blob: Blob, filename: string): boolean {
+  const paid = currentPlan() !== 'free'
+  const count = generationCount()
+  if (!paid && count >= FREE_GENERATION_LIMIT) {
+    const returnTo = `${window.location.pathname}${window.location.search}`
+    if (!ACCOUNT_PATHS.has(window.location.pathname)) {
+      window.location.assign(`/pricing?reason=browser-limit&return=${encodeURIComponent(returnTo)}`)
+    }
+    return false
+  }
+  if (!paid) setGenerationCount(count + 1)
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
@@ -7,6 +46,7 @@ export function downloadBlob(blob: Blob, filename: string) {
   a.click()
   a.remove()
   setTimeout(() => URL.revokeObjectURL(url), 10_000)
+  return true
 }
 
 export function downloadBytes(bytes: Uint8Array, filename: string, type = 'application/pdf') {

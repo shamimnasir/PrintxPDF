@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { breadcrumbSchema, faqSchema, useSeo } from '../lib/seo'
 import { useToast } from '../components/ui/toastContext'
 import { useUser } from '../features/account/useUser'
@@ -25,6 +25,7 @@ const FAQS = [
 ]
 
 export default function Pricing() {
+  const location = useLocation()
   const user = useUser()
   const { toast } = useToast()
   const [busy, setBusy] = useState<PaidPlan | null>(null)
@@ -37,6 +38,16 @@ export default function Pricing() {
   })
 
   const current = user?.plan || 'free'
+  const browserLimitReached = new URLSearchParams(location.search).get('reason') === 'browser-limit'
+  const returnTo = new URLSearchParams(location.search).get('return') || '/tools'
+  useEffect(() => {
+    if (!browserLimitReached) return
+    try {
+      localStorage.setItem('pxp:pending-return', returnTo.startsWith('/') ? returnTo : '/tools')
+    } catch {
+      // The user's pricing choice remains available without storage.
+    }
+  }, [browserLimitReached, returnTo])
   const buy = async (plan: PaidPlan) => {
     setBusy(plan)
     try {
@@ -62,10 +73,11 @@ export default function Pricing() {
     <div className="container section">
       <div className="center">
         <span className="eyebrow">Pricing</span>
-        <h1>Free is free.</h1>
+        <h1>{browserLimitReached ? 'You’ve used 10 free browser downloads.' : 'Free is free.'}</h1>
         <p className="lead" style={{ margin: '0 auto 3rem' }}>
-          Every tool that works in your browser costs nothing and always will. Paid plans cover the handful of jobs that have
-          to run on our server, and the plan for developers.
+          {browserLimitReached
+            ? 'Your files still stay on your device. Choose Pro to keep generating and downloading without a monthly browser-tool limit.'
+            : 'Every tool that works in your browser costs nothing and always will. Paid plans cover the handful of jobs that have to run on our server, and the plan for developers.'}
         </p>
       </div>
       <div className="grid grid-4">

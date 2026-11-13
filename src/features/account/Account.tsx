@@ -419,6 +419,12 @@ export default function Account() {
         if (!alive) return
         store.setEntitlement(e)
         toast(`${planName(e.plan)} plan is now active. Thank you.`)
+        const pendingReturn = localStorage.getItem('pxp:pending-return')
+        if (pendingReturn?.startsWith('/')) {
+          localStorage.removeItem('pxp:pending-return')
+          window.location.replace(pendingReturn)
+          return
+        }
         setParams({}, { replace: true })
         setActivating(false)
       })
