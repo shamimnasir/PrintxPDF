@@ -381,6 +381,177 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-mobi-to-pdf",
+        "slug": "convert-mobi-to-pdf",
+        "title": "Cómo convertir un archivo MOBI a PDF",
+        "metaTitle": "Cómo convertir un archivo MOBI a PDF",
+        "metaDescription": "Convierte MOBI a PDF con páginas fijas. Elige tamaño y márgenes; revisa las imágenes, que pueden verse borrosas en archivos MOBI antiguos.",
+        "keyword": "convertir MOBI a PDF",
+        "secondaryKeywords": [
+          "convertir MOBI a PDF",
+          "convertidor MOBI a PDF",
+          "MOBI a EPUB"
+        ],
+        "answer": "MOBI es un formato antiguo de Kindle y no incluye páginas fijas. Para convertir un archivo compatible, súbelo a MOBI a PDF, elige el tamaño de página y los márgenes y descarga el PDF. Usa solo libros sin DRM que tengas derecho a convertir. Revisa primero las imágenes: suelen verse suaves porque MOBI guardaba copias pequeñas para pantallas antiguas.",
+        "tool": "mobi-to-pdf",
+        "ctaLabel": "Convertir MOBI a PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "MOBI es un formato antiguo de Kindle y no incluye páginas fijas. Para convertir un archivo compatible, súbelo a MOBI a PDF, elige el tamaño de página y los márgenes y descarga el PDF. Usa solo libros sin DRM que tengas derecho a convertir. Revisa primero las imágenes: suelen verse suaves porque MOBI guardaba copias pequeñas para pantallas antiguas."
+          },
+          {
+            "t": "h2",
+            "x": "De dónde vienen ahora los archivos MOBI"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Copias antiguas de bibliotecas Kindle, paquetes de ebooks comprados hace años, archivos de dominio público y conversiones propias de Calibre. PRC suele ser el mismo contenedor con otra extensión.",
+              "Amazon dejó de aceptar MOBI en Kindle Direct Publishing en 2021 y en Send to Kindle a finales de 2022. Los archivos nuevos son poco habituales."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "Un archivo .azw puede parecer MOBI, pero suele incluir protección de Amazon. AZW3 es el formato posterior que lo reemplazó. Si el archivo termina en .azw, .azw3 o .kfx, consulta [formatos de ebook](/blog/ebooks/ebook-formats-explained)."
+          },
+          {
+            "t": "h2",
+            "x": "MOBI es una fuente menos completa que EPUB"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Formato",
+              "Texto",
+              "Imágenes",
+              "Tablas",
+              "Fuentes"
+            ],
+            "rows": [
+              [
+                "MOBI",
+                "Suele conservarse bien",
+                "A menudo baja resolución",
+                "Pueden desordenarse",
+                "Compatibilidad limitada"
+              ],
+              [
+                "EPUB",
+                "Suele conservarse bien",
+                "Mejor calidad de origen",
+                "Suelen conservarse mejor",
+                "Se usan si son compatibles"
+              ]
+            ]
+          },
+          {
+            "t": "tip",
+            "x": "Si tienes el mismo libro en MOBI y EPUB, convierte el EPUB. Conserva mejor imágenes, tablas y estilos, y el proceso tarda lo mismo."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo convertir MOBI paso a paso"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Comprueba el tamaño",
+                "x": "Una novela MOBI suele ocupar entre 200 KB y 3 MB. Un archivo de pocos KB puede ser un token de descarga, no un libro."
+              },
+              {
+                "h": "Abre MOBI a PDF",
+                "x": "Ve a [MOBI a PDF](/tools/mobi-to-pdf). El archivo se sube por conexión segura, se convierte en el servidor y se elimina al terminar. Máximo 100 MB y dos minutos por tarea. Las cuentas gratuitas tienen cinco conversiones al mes; Pro y Lifetime, 300; la API, 5.000."
+              },
+              {
+                "h": "Elige el tamaño de página",
+                "x": "Usa A4 o Carta para imprimir y A5 o 6 × 9 pulgadas para leer en pantalla."
+              },
+              {
+                "h": "Ajusta márgenes y letra",
+                "x": "Empieza con 20 mm y 11 pt. Para una carpeta, aumenta el margen interior a 25 mm."
+              },
+              {
+                "h": "Convierte y revisa las imágenes",
+                "x": "Comprueba primero una ilustración. El texto suele quedar bien, pero una imagen pequeña no gana detalle al convertirla."
+              },
+              {
+                "h": "Añade números de página",
+                "x": "Usa [Números de página](/tools/page-numbers) para mantener en orden una copia impresa."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "mobi-to-pdf",
+            "x": "Convierte un MOBI Kindle antiguo en PDF para imprimir, anotar y guardar."
+          },
+          {
+            "t": "h2",
+            "x": "Por qué las imágenes se ven borrosas"
+          },
+          {
+            "t": "p",
+            "x": "Los primeros Kindle tenían pantallas pequeñas en escala de grises. MOBI se diseñó para esas pantallas, por lo que muchas ilustraciones se redujeron antes de guardarse. El convertidor solo puede usar los píxeles incluidos. Ampliar una imagen de 450 píxeles a una página A4 aumenta el desenfoque."
+          },
+          {
+            "t": "p",
+            "x": "No hay una mejora fiable dentro de la conversión. Si los diagramas importan, busca una versión EPUB de mejor calidad o el PDF del editor. Los filtros de enfoque no pueden recuperar detalle que no existe."
+          },
+          {
+            "t": "h2",
+            "x": "Cuándo conviene convertir a EPUB"
+          },
+          {
+            "t": "p",
+            "x": "Si necesitas leer el libro en una aplicación moderna, quizá EPUB sea mejor que PDF. Convierte MOBI a EPUB con el [convertidor de ebooks](/tools/ebook-converter). EPUB permite reajustar el texto; PDF es mejor para imprimir, citar páginas o anotar. Evita conversiones repetidas porque cada paso puede perder formato."
+          },
+          {
+            "t": "h2",
+            "x": "Qué hacer si el archivo no abre"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Un archivo de tienda que nunca se abrió fuera de su aplicación probablemente tiene DRM. Los archivos con extensión incorrecta pueden ser ZIP o PDF; comprueba la firma del archivo. Una descarga truncada puede fallar a mitad de la conversión. AZW suele incluir protección de Amazon."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Conserva el original y revisa el PDF"
+          },
+          {
+            "t": "p",
+            "x": "Conserva el MOBI original y revisa el PDF antes de imprimirlo o compartirlo. El [Lector de PDF](/tools/pdf-reader) funciona en la pestaña sin subir el archivo. Para estudiar el libro, consulta [cómo anotar un PDF para estudiar](/blog/students/annotate-pdf-for-study)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cómo abro un archivo MOBI?",
+            "a": "Los Kindle antiguos y Calibre abren MOBI. Muchas aplicaciones actuales ya no lo admiten. Convertirlo a EPUB o PDF suele ser más sencillo que buscar un lector antiguo."
+          },
+          {
+            "q": "¿Qué diferencia hay entre MOBI y AZW3?",
+            "a": "MOBI es más antiguo y tiene poco soporte de estilos. AZW3, también llamado KF8, admite estilos, fuentes y tablas con mayor fidelidad y suele ser una mejor fuente."
+          },
+          {
+            "q": "¿Por qué las imágenes quedan borrosas?",
+            "a": "A menudo ya eran pequeñas en el MOBI, que se creó para pantallas Kindle antiguas de baja resolución. La conversión no puede añadir detalle ausente."
+          },
+          {
+            "q": "¿Puedo convertir un MOBI comprado en Kindle?",
+            "a": "Solo si no tiene DRM y tienes derecho a convertirlo. La mayoría de los libros protegidos no se pueden abrir en este conversor."
+          },
+          {
+            "q": "¿Un archivo PRC es lo mismo que MOBI?",
+            "a": "Casi siempre. PRC es una extensión anterior para el mismo contenedor Palm. Un convertidor MOBI suele tratarlo igual."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -762,6 +933,177 @@
           {
             "q": "Posso converter um ebook emprestado da biblioteca?",
             "a": "Geralmente, não. Muitos empréstimos digitais têm proteção e ficam vinculados à conta. Um EPUB sem DRM que você tenha direito de converter pode ser processado."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-mobi-to-pdf",
+        "slug": "convert-mobi-to-pdf",
+        "title": "Como converter um arquivo MOBI para PDF",
+        "metaTitle": "Como converter um arquivo MOBI para PDF",
+        "metaDescription": "Converta MOBI em PDF com páginas fixas. Escolha tamanho e margens; confira as imagens, que podem ficar desfocadas em MOBIs antigos.",
+        "keyword": "converter MOBI para PDF",
+        "secondaryKeywords": [
+          "converter MOBI para PDF",
+          "conversor MOBI para PDF",
+          "MOBI para EPUB"
+        ],
+        "answer": "MOBI é um formato antigo do Kindle e não tem páginas fixas. Para converter um arquivo compatível, envie-o para MOBI para PDF, escolha o tamanho da página e as margens e baixe o PDF. Use apenas livros sem DRM que você tenha direito de converter. Confira as imagens primeiro: elas podem ficar suaves porque o MOBI guardava cópias pequenas para telas antigas.",
+        "tool": "mobi-to-pdf",
+        "ctaLabel": "Converter MOBI para PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "MOBI é um formato antigo do Kindle e não tem páginas fixas. Para converter um arquivo compatível, envie-o para MOBI para PDF, escolha o tamanho da página e as margens e baixe o PDF. Use apenas livros sem DRM que você tenha direito de converter. Confira as imagens primeiro: elas podem ficar suaves porque o MOBI guardava cópias pequenas para telas antigas."
+          },
+          {
+            "t": "h2",
+            "x": "De onde vêm os arquivos MOBI hoje"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Backups de bibliotecas Kindle antigas, pacotes de ebooks comprados há anos, arquivos de domínio público e conversões feitas no Calibre. PRC costuma ser o mesmo contêiner com outra extensão.",
+              "A Amazon deixou de aceitar MOBI no Kindle Direct Publishing em 2021 e no Send to Kindle no fim de 2022. Novos arquivos são raros."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "Um arquivo .azw pode parecer MOBI, mas costuma incluir proteção da Amazon. AZW3 é o formato mais novo que o substituiu. Se o arquivo termina em .azw, .azw3 ou .kfx, veja [formatos de ebook](/blog/ebooks/ebook-formats-explained)."
+          },
+          {
+            "t": "h2",
+            "x": "MOBI é uma fonte inferior ao EPUB"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Formato",
+              "Texto",
+              "Imagens",
+              "Tabelas",
+              "Fontes"
+            ],
+            "rows": [
+              [
+                "MOBI",
+                "Geralmente preservado",
+                "Muitas vezes baixa resolução",
+                "Podem se desorganizar",
+                "Compatibilidade limitada"
+              ],
+              [
+                "EPUB",
+                "Geralmente preservado",
+                "Melhor fonte original",
+                "Costumam ficar melhores",
+                "Usadas quando compatíveis"
+              ]
+            ]
+          },
+          {
+            "t": "tip",
+            "x": "Se você tem o mesmo livro em MOBI e EPUB, converta o EPUB. Ele preserva melhor imagens, tabelas e estilos, e o processo leva o mesmo tempo."
+          },
+          {
+            "t": "h2",
+            "x": "Como converter MOBI passo a passo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Confira o tamanho",
+                "x": "Um romance MOBI costuma ter 200 KB a 3 MB. Um arquivo com poucos KB pode ser um token de download, não um livro."
+              },
+              {
+                "h": "Abra MOBI para PDF",
+                "x": "Acesse [MOBI para PDF](/tools/mobi-to-pdf). O arquivo é enviado por conexão segura, processado no servidor e apagado ao terminar. Limite de 100 MB e dois minutos por tarefa. Contas grátis têm cinco conversões mensais; Pro e Lifetime, 300; API, 5.000."
+              },
+              {
+                "h": "Escolha o tamanho da página",
+                "x": "Use A4 ou Carta para imprimir e A5 ou 15 × 23 cm para ler na tela."
+              },
+              {
+                "h": "Ajuste margens e fonte",
+                "x": "Comece com 20 mm e 11 pt. Para fichário, aumente a margem interna para 25 mm."
+              },
+              {
+                "h": "Converta e confira as imagens",
+                "x": "Veja primeiro uma ilustração. O texto costuma ficar bom, mas uma imagem pequena não ganha detalhes na conversão."
+              },
+              {
+                "h": "Adicione números de página",
+                "x": "Use [Números de página](/tools/page-numbers) para manter uma cópia impressa em ordem."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "mobi-to-pdf",
+            "x": "Converta um MOBI antigo do Kindle em PDF para imprimir, anotar e guardar."
+          },
+          {
+            "t": "h2",
+            "x": "Por que as imagens ficam desfocadas"
+          },
+          {
+            "t": "p",
+            "x": "Os primeiros Kindles tinham telas pequenas em tons de cinza. O MOBI foi criado para elas, então muitas ilustrações foram reduzidas antes de serem salvas. O conversor só usa os pixels disponíveis. Ampliar uma imagem de 450 pixels para uma página A4 aumenta o desfoque."
+          },
+          {
+            "t": "p",
+            "x": "Não há melhoria confiável durante a conversão. Se diagramas forem importantes, procure uma edição EPUB melhor ou o PDF da editora. Filtros de nitidez não recuperam detalhes inexistentes."
+          },
+          {
+            "t": "h2",
+            "x": "Quando EPUB é o destino melhor"
+          },
+          {
+            "t": "p",
+            "x": "Se você quer ler em um app moderno, EPUB pode ser melhor que PDF. Converta MOBI para EPUB com o [conversor de ebooks](/tools/ebook-converter). EPUB permite ajustar o texto; PDF serve melhor para imprimir, citar páginas ou anotar. Evite conversões repetidas: cada etapa pode perder formatação."
+          },
+          {
+            "t": "h2",
+            "x": "O que fazer se o arquivo não abrir"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Um arquivo de loja que nunca abriu fora do próprio app provavelmente tem DRM. Arquivos com extensão errada podem ser ZIP ou PDF; confira a assinatura do arquivo. Um download incompleto pode falhar no meio. AZW costuma ter proteção da Amazon."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Guarde o original e confira o PDF"
+          },
+          {
+            "t": "p",
+            "x": "Guarde o MOBI original e confira o PDF antes de imprimir ou compartilhar. O [Leitor de PDF](/tools/pdf-reader) funciona na aba sem enviar o arquivo. Para estudar, veja [como anotar um PDF para estudo](/blog/students/annotate-pdf-for-study)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Como abrir um arquivo MOBI?",
+            "a": "Kindles antigos e Calibre abrem MOBI. Muitos apps atuais não aceitam mais o formato. Converter para EPUB ou PDF costuma ser mais simples do que procurar um leitor antigo."
+          },
+          {
+            "q": "Qual é a diferença entre MOBI e AZW3?",
+            "a": "MOBI é antigo e tem pouco suporte a estilos. AZW3, também chamado KF8, aceita estilos, fontes e tabelas com mais fidelidade e costuma ser uma fonte melhor."
+          },
+          {
+            "q": "Por que as imagens ficam borradas?",
+            "a": "Elas já podem ser pequenas no MOBI, que foi criado para telas Kindle antigas de baixa resolução. A conversão não adiciona detalhes que faltam."
+          },
+          {
+            "q": "Posso converter um MOBI comprado na Kindle Store?",
+            "a": "Somente se não tiver DRM e você tiver direito de converter. A maioria dos livros protegidos não pode ser aberta pelo conversor."
+          },
+          {
+            "q": "Arquivo PRC é igual a MOBI?",
+            "a": "Quase sempre. PRC é uma extensão antiga para o mesmo contêiner Palm. Um conversor MOBI costuma tratá-lo da mesma forma."
           }
         ],
         "published": "2026-11-15",
@@ -1151,6 +1493,177 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-mobi-to-pdf",
+        "slug": "convert-mobi-to-pdf",
+        "title": "MOBI फ़ाइल को PDF में कैसे बदलें",
+        "metaTitle": "MOBI फ़ाइल को PDF में कैसे बदलें",
+        "metaDescription": "MOBI को स्थिर पेज वाले PDF में बदलें। पेज और मार्जिन चुनें; पुराने MOBI की तस्वीरें धुंधली हो सकती हैं।",
+        "keyword": "MOBI को PDF में बदलें",
+        "secondaryKeywords": [
+          "MOBI को PDF में बदलें",
+          "MOBI PDF कन्वर्टर",
+          "MOBI से EPUB"
+        ],
+        "answer": "MOBI पुराना Kindle फ़ॉर्मैट है और इसमें स्थिर पेज नहीं होते। समर्थित फ़ाइल बदलने के लिए उसे MOBI से PDF टूल में डालें, पेज आकार और मार्जिन चुनें और PDF डाउनलोड करें। केवल ऐसी DRM-मुक्त किताब बदलें जिसका अधिकार आपके पास हो। पहले चित्र देखें: पुराने MOBI में छोटी तस्वीरें थीं, इसलिए वे नरम दिख सकती हैं।",
+        "tool": "mobi-to-pdf",
+        "ctaLabel": "MOBI से PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "MOBI पुराना Kindle फ़ॉर्मैट है और इसमें स्थिर पेज नहीं होते। समर्थित फ़ाइल बदलने के लिए उसे MOBI से PDF टूल में डालें, पेज आकार और मार्जिन चुनें और PDF डाउनलोड करें। केवल ऐसी DRM-मुक्त किताब बदलें जिसका अधिकार आपके पास हो। पहले चित्र देखें: पुराने MOBI में छोटी तस्वीरें थीं, इसलिए वे नरम दिख सकती हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "आज MOBI फ़ाइलें कहाँ से आती हैं"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "पुरानी Kindle लाइब्रेरी के बैकअप, पुराने ebook बंडल, सार्वजनिक डोमेन फ़ाइलें और Calibre से किए अपने कन्वर्ज़न। PRC अक्सर उसी कंटेनर का पुराना एक्सटेंशन है।",
+              "Amazon ने 2021 में Kindle Direct Publishing और 2022 के अंत में Send to Kindle पर MOBI स्वीकारना बंद किया। नई MOBI फ़ाइलें अब कम मिलती हैं।"
+            ]
+          },
+          {
+            "t": "note",
+            "x": ".azw फ़ाइल MOBI जैसी दिख सकती है, लेकिन उसमें Amazon सुरक्षा हो सकती है। AZW3 नया फ़ॉर्मैट है जिसने MOBI की जगह ली। .azw, .azw3 या .kfx के लिए [ebook फ़ॉर्मैट](/blog/ebooks/ebook-formats-explained) देखें।"
+          },
+          {
+            "t": "h2",
+            "x": "MOBI, EPUB से कमजोर स्रोत है"
+          },
+          {
+            "t": "table",
+            "head": [
+              "फ़ॉर्मैट",
+              "पाठ",
+              "चित्र",
+              "तालिकाएँ",
+              "फ़ॉन्ट"
+            ],
+            "rows": [
+              [
+                "MOBI",
+                "अक्सर ठीक रहता है",
+                "कम रिज़ॉल्यूशन हो सकता है",
+                "बिखर सकते हैं",
+                "सीमित समर्थन"
+              ],
+              [
+                "EPUB",
+                "अक्सर ठीक रहता है",
+                "बेहतर मूल गुणवत्ता",
+                "आमतौर पर बेहतर",
+                "समर्थन होने पर उपयोग"
+              ]
+            ]
+          },
+          {
+            "t": "tip",
+            "x": "यदि वही किताब MOBI और EPUB दोनों में है, तो EPUB बदलें। उसमें चित्र, तालिकाएँ और स्टाइल बेहतर रहते हैं; समय समान लगता है।"
+          },
+          {
+            "t": "h2",
+            "x": "MOBI को PDF में बदलने के चरण"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "सबसे पहले फ़ाइल का आकार देखें",
+                "x": "उपन्यास वाली MOBI फ़ाइल आम तौर पर 200 KB से 3 MB होती है। कुछ KB की फ़ाइल किताब नहीं, डाउनलोड टोकन हो सकती है।"
+              },
+              {
+                "h": "MOBI से PDF खोलें",
+                "x": "[MOBI से PDF](/tools/mobi-to-pdf) पर जाएँ। फ़ाइल सुरक्षित कनेक्शन से सर्वर पर भेजी जाती है, बदली जाती है और काम पूरा होते ही मिटती है। सीमा 100 MB और हर काम के लिए दो मिनट है। मुफ़्त में महीने के पाँच कन्वर्ज़न; Pro और Lifetime में 300; API में 5,000।"
+              },
+              {
+                "h": "पेज आकार चुनें",
+                "x": "प्रिंट के लिए A4 या US Letter; स्क्रीन के लिए A5 या 6 × 9 इंच चुनें।"
+              },
+              {
+                "h": "मार्जिन और फ़ॉन्ट तय करें",
+                "x": "20 mm मार्जिन और 11 pt फ़ॉन्ट से शुरू करें। बाइंडर के लिए अंदर का मार्जिन 25 mm करें।"
+              },
+              {
+                "h": "कन्वर्ट करें और चित्र पहले देखें",
+                "x": "पहले कोई चित्र जाँचें। पाठ ठीक रह सकता है, पर छोटी तस्वीर को कन्वर्ज़न में अतिरिक्त विवरण नहीं मिलता।"
+              },
+              {
+                "h": "पेज नंबर जोड़ें",
+                "x": "प्रिंट कॉपी को क्रम में रखने के लिए [पेज नंबर](/tools/page-numbers) जोड़ें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "mobi-to-pdf",
+            "x": "पुरानी Kindle MOBI को प्रिंट, नोट और सहेजने योग्य PDF बनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "तस्वीरें धुंधली क्यों होती हैं"
+          },
+          {
+            "t": "p",
+            "x": "पहले Kindle में छोटी ग्रेस्केल स्क्रीन थी। MOBI उसी के लिए बना था, इसलिए चित्र सहेजने से पहले छोटे कर दिए जाते थे। कन्वर्टर फ़ाइल में मौजूद पिक्सेल ही इस्तेमाल कर सकता है। 450 पिक्सेल की तस्वीर को A4 पर फैलाने से धुंधलापन बढ़ता है।"
+          },
+          {
+            "t": "p",
+            "x": "कन्वर्ज़न के दौरान इसका भरोसेमंद सुधार नहीं है। यदि डायग्राम जरूरी हों, बेहतर EPUB या प्रकाशक का PDF खोजें। शार्पनिंग फ़िल्टर खोया हुआ विवरण वापस नहीं ला सकते।"
+          },
+          {
+            "t": "h2",
+            "x": "कब EPUB बेहतर विकल्प है"
+          },
+          {
+            "t": "p",
+            "x": "आधुनिक रीडर ऐप में पढ़ना है तो PDF के बजाय EPUB बेहतर हो सकता है। [Ebook कन्वर्टर](/tools/ebook-converter) से MOBI को EPUB करें। EPUB में पाठ आकार बदलता है; PDF प्रिंट, पेज उद्धृत करने या टिप्पणी के लिए है। कई बार कन्वर्ट करने से फ़ॉर्मैटिंग खो सकती है।"
+          },
+          {
+            "t": "h2",
+            "x": "फ़ाइल न खुले तो क्या करें"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "दुकान से खरीदी फ़ाइल जो सिर्फ अपने ऐप में खुलती है, उसमें DRM हो सकता है। गलत एक्सटेंशन वाली फ़ाइल ZIP या PDF हो सकती है; फ़ाइल के शुरुआती चिन्ह देखें। अधूरा डाउनलोड बीच में विफल हो सकता है। AZW में Amazon सुरक्षा हो सकती है।"
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "मूल फ़ाइल रखें और PDF जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "MOBI मूल फ़ाइल रखें और PDF को प्रिंट या साझा करने से पहले देखें। [PDF Reader](/tools/pdf-reader) टैब में चलता है और फ़ाइल अपलोड नहीं करता। पढ़ाई के लिए [PDF पर टिप्पणी कैसे करें](/blog/students/annotate-pdf-for-study) देखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "MOBI फ़ाइल कैसे खोलूँ?",
+            "a": "पुराने Kindle और Calibre MOBI खोलते हैं। कई मौजूदा ऐप अब इसे नहीं खोलते। पुराने रीडर खोजने से आसान इसे EPUB या PDF में बदलना हो सकता है।"
+          },
+          {
+            "q": "MOBI और AZW3 में क्या अंतर है?",
+            "a": "MOBI पुराना है और स्टाइल कम संभालता है। AZW3 यानी KF8 बेहतर स्टाइल, फ़ॉन्ट और तालिकाएँ संभालता है, इसलिए रूपांतरण के लिए बेहतर स्रोत है।"
+          },
+          {
+            "q": "MOBI से PDF करने पर चित्र धुंधले क्यों होते हैं?",
+            "a": "चित्र पहले से छोटे हो सकते हैं। MOBI पुराने कम-रिज़ॉल्यूशन Kindle स्क्रीन के लिए बना था। कन्वर्ज़न गायब विवरण नहीं जोड़ सकता।"
+          },
+          {
+            "q": "क्या Kindle Store से खरीदा MOBI बदल सकता हूँ?",
+            "a": "केवल DRM-मुक्त फ़ाइल, जिसे बदलने का अधिकार हो। अधिकांश सुरक्षित किताबें इस टूल में नहीं खुलेंगी।"
+          },
+          {
+            "q": "क्या PRC फ़ाइल MOBI जैसी है?",
+            "a": "लगभग हमेशा। PRC उसी Palm कंटेनर का पुराना एक्सटेंशन है और MOBI कन्वर्टर इसे समान रूप से लेता है।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -1532,6 +2045,177 @@
           {
             "q": "هل يمكن تحويل كتاب مستعار من المكتبة؟",
             "a": "غالبًا لا. تكون كتب المكتبات الرقمية محمية ومرتبطة بالحساب. يمكن معالجة EPUB الخالي من DRM إذا كان لديك حق تحويله."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-mobi-to-pdf",
+        "slug": "convert-mobi-to-pdf",
+        "title": "كيفية تحويل ملف MOBI إلى PDF",
+        "metaTitle": "كيفية تحويل ملف MOBI إلى PDF",
+        "metaDescription": "حوّل ملفات MOBI القديمة إلى PDF مجانًا للطباعة أو القراءة. اختر حجم الورق والهوامش؛ قد تكون الصور منخفضة الدقة. يُعالج الملف بأمان ويُحذف بعد التحويل.",
+        "keyword": "تحويل MOBI إلى PDF",
+        "secondaryKeywords": [
+          "تحويل MOBI إلى PDF",
+          "محول MOBI إلى PDF",
+          "MOBI إلى EPUB"
+        ],
+        "answer": "MOBI تنسيق Kindle قديم ولا يحتوي على صفحات ثابتة. لتحويل ملف مدعوم، ارفعه إلى أداة MOBI إلى PDF، واختر حجم الصفحة والهوامش ثم نزّل PDF. حوّل الكتب الخالية من DRM التي تملك حق استخدامها فقط. افحص الصور أولًا؛ فقد تبدو باهتة لأن MOBI حفظ نسخًا صغيرة للشاشات القديمة.",
+        "tool": "mobi-to-pdf",
+        "ctaLabel": "MOBI إلى PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "MOBI تنسيق Kindle قديم ولا يحتوي على صفحات ثابتة. لتحويل ملف مدعوم، ارفعه إلى أداة MOBI إلى PDF، واختر حجم الصفحة والهوامش ثم نزّل PDF. حوّل الكتب الخالية من DRM التي تملك حق استخدامها فقط. افحص الصور أولًا؛ فقد تبدو باهتة لأن MOBI حفظ نسخًا صغيرة للشاشات القديمة."
+          },
+          {
+            "t": "h2",
+            "x": "مصادر ملفات MOBI اليوم"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "نسخ احتياطية لمكتبات Kindle قديمة، وحزم كتب اشتريت منذ سنوات، وكتب ملكية عامة، وملفات حُوّلت عبر Calibre. غالبًا ما يكون PRC الحاوية نفسها بامتداد أقدم.",
+              "أوقفت Amazon قبول MOBI في Kindle Direct Publishing عام 2021 وفي Send to Kindle أواخر 2022. الملفات الجديدة نادرة."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "قد يبدو ملف .azw كأنه MOBI لكنه غالبًا محمي من Amazon. حل AZW3 محل MOBI لاحقًا. إذا انتهى الملف بـ .azw أو .azw3 أو .kfx فراجع [تنسيقات الكتب الإلكترونية](/blog/ebooks/ebook-formats-explained)."
+          },
+          {
+            "t": "h2",
+            "x": "MOBI مصدر أضعف من EPUB"
+          },
+          {
+            "t": "table",
+            "head": [
+              "التنسيق",
+              "النص",
+              "الصور",
+              "الجداول",
+              "الخطوط"
+            ],
+            "rows": [
+              [
+                "MOBI",
+                "غالبًا واضح",
+                "دقة منخفضة في كثير من الملفات",
+                "قد تتبعثر",
+                "دعم محدود"
+              ],
+              [
+                "EPUB",
+                "غالبًا واضح",
+                "مصدر صور أفضل",
+                "تُحفظ عادةً بشكل أفضل",
+                "تُستخدم عند التوافق"
+              ]
+            ]
+          },
+          {
+            "t": "tip",
+            "x": "إذا توفر الكتاب نفسه بصيغتي MOBI وEPUB، فحوّل EPUB. فهو يحفظ الصور والجداول والأنماط بصورة أفضل والوقت مماثل."
+          },
+          {
+            "t": "h2",
+            "x": "خطوات تحويل MOBI إلى PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "تحقق من الحجم أولًا",
+                "x": "يتراوح حجم رواية MOBI عادةً بين 200 كيلوبايت و3 ميغابايت. قد يكون الملف الأصغر ببضعة كيلوبايت رمز تنزيل لا كتابًا."
+              },
+              {
+                "h": "افتح أداة MOBI إلى PDF",
+                "x": "انتقل إلى [MOBI إلى PDF](/tools/mobi-to-pdf). يُرسل الملف عبر اتصال آمن ويُعالج على الخادم ثم يُحذف فور انتهاء المهمة. الحد 100 ميغابايت ودقيقتان لكل مهمة. الحساب المجاني خمس تحويلات شهريًا؛ Pro وLifetime ثلاثمئة؛ ومفتاح API خمسة آلاف."
+              },
+              {
+                "h": "اختر حجم الصفحة",
+                "x": "استخدم A4 أو Letter للطباعة وA5 أو 6 × 9 بوصات للقراءة على الشاشة."
+              },
+              {
+                "h": "اضبط الهوامش والخط",
+                "x": "ابدأ بهوامش 20 مم وخط 11 نقطة. زد الهامش الداخلي إلى 25 مم للملفات داخل مجلد."
+              },
+              {
+                "h": "حوّل الملف وافحص الصور أولًا",
+                "x": "افحص رسمًا توضيحيًا أولًا. قد يكون النص جيدًا، لكن التحويل لا يضيف تفاصيل إلى صورة صغيرة."
+              },
+              {
+                "h": "أضف أرقام الصفحات",
+                "x": "استخدم [أرقام الصفحات](/tools/page-numbers) للحفاظ على ترتيب النسخة المطبوعة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "mobi-to-pdf",
+            "x": "حوّل ملف Kindle MOBI قديمًا إلى PDF للطباعة والتعليق والحفظ."
+          },
+          {
+            "t": "h2",
+            "x": "لماذا تبدو الصور ضبابية"
+          },
+          {
+            "t": "p",
+            "x": "استخدمت أجهزة Kindle الأولى شاشة رمادية صغيرة. صُمم MOBI لها، لذا صُغّرت الرسوم التوضيحية قبل حفظها. لا يستطيع المحول استخدام سوى وحدات البكسل الموجودة في الملف. تكبير صورة بعرض 450 بكسل على صفحة A4 يزيد الضبابية."
+          },
+          {
+            "t": "p",
+            "x": "لا توجد طريقة موثوقة لتحسين الصور أثناء التحويل. إذا كانت الرسوم مهمة، فابحث عن نسخة EPUB أفضل أو PDF من الناشر. مرشحات زيادة الحدة لا تستعيد تفاصيل غير موجودة."
+          },
+          {
+            "t": "h2",
+            "x": "متى يكون EPUB خيارًا أفضل"
+          },
+          {
+            "t": "p",
+            "x": "إذا أردت القراءة في تطبيق حديث، فقد يكون EPUB أفضل من PDF. حوّل MOBI إلى EPUB عبر [محول الكتب الإلكترونية](/tools/ebook-converter). يتيح EPUB تغيير حجم النص؛ أما PDF فيناسب الطباعة واقتباس أرقام الصفحات والتعليق. تجنب التحويلات المتكررة لأن كل خطوة قد تفقد بعض التنسيق."
+          },
+          {
+            "t": "h2",
+            "x": "ما العمل إذا لم يفتح الملف"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "قد يحتوي الملف المشتَرى الذي لم يُفتح إلا في تطبيق المتجر على DRM. قد تكون الملفات ذات الامتداد الخاطئ ZIP أو PDF؛ افحص توقيع الملف. وقد يفشل التنزيل غير المكتمل في منتصف التحويل. غالبًا ما يتضمن AZW حماية Amazon."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بالأصل وافحص PDF"
+          },
+          {
+            "t": "p",
+            "x": "احتفظ بملف MOBI الأصلي وافحص PDF قبل الطباعة أو المشاركة. يعمل [قارئ PDF](/tools/pdf-reader) داخل التبويب دون رفع الملف. وللدراسة، راجع [كيفية التعليق على PDF للدراسة](/blog/students/annotate-pdf-for-study)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "كيف أفتح ملف MOBI؟",
+            "a": "تفتح أجهزة Kindle القديمة وCalibre ملفات MOBI. كثير من التطبيقات الحالية لم تعد تدعمه؛ غالبًا ما يكون التحويل إلى EPUB أو PDF أسهل من البحث عن قارئ قديم."
+          },
+          {
+            "q": "ما الفرق بين MOBI وAZW3؟",
+            "a": "MOBI أقدم ودعمه للأنماط محدود. أما AZW3، المعروف أيضًا باسم KF8، فيدعم الأنماط والخطوط والجداول بصورة أفضل، لذا فهو مصدر تحويل أفضل."
+          },
+          {
+            "q": "لماذا تصبح الصور ضبابية بعد تحويل MOBI إلى PDF؟",
+            "a": "قد تكون الصور صغيرة أصلًا لأن MOBI صُمم لشاشات Kindle القديمة منخفضة الدقة. لا يضيف التحويل تفاصيل غير موجودة."
+          },
+          {
+            "q": "هل يمكن تحويل MOBI اشتريته من Kindle Store؟",
+            "a": "فقط إذا كان خاليًا من DRM وكان لديك حق تحويله. معظم الكتب المحمية لا تفتح في الأداة."
+          },
+          {
+            "q": "هل ملف PRC هو نفسه MOBI؟",
+            "a": "في معظم الحالات نعم. PRC امتداد قديم لحاوية Palm نفسها، ويتعامل معه محول MOBI بالطريقة ذاتها."
           }
         ],
         "published": "2026-11-15",
@@ -1921,6 +2605,177 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-mobi-to-pdf",
+        "slug": "convert-mobi-to-pdf",
+        "title": "MOBI ফাইল PDF-এ রূপান্তরের উপায়",
+        "metaTitle": "MOBI ফাইল PDF-এ রূপান্তরের উপায়",
+        "metaDescription": "পুরোনো MOBI বিনামূল্যে PDF করে প্রিন্ট বা পড়ুন। পৃষ্ঠার আকার ও মার্জিন বাছুন; ছবি কম রেজোলিউশনের হতে পারে। নিরাপদ সার্ভার প্রসেসের পর ফাইল মুছে যায়।",
+        "keyword": "MOBI থেকে PDF করুন",
+        "secondaryKeywords": [
+          "MOBI থেকে PDF করুন",
+          "MOBI PDF কনভার্টার",
+          "MOBI থেকে EPUB"
+        ],
+        "answer": "MOBI পুরোনো Kindle ফরম্যাট, এতে স্থির পৃষ্ঠা নেই। সমর্থিত ফাইল বদলাতে MOBI থেকে PDF টুলে দিন, পৃষ্ঠার আকার ও মার্জিন বেছে PDF নামান। কেবল অধিকার থাকা DRM-মুক্ত বই ব্যবহার করুন। আগে ছবি দেখুন: পুরোনো MOBI ছোট স্ক্রিনের জন্য ছোট ছবি রাখত, তাই সেগুলো অস্পষ্ট হতে পারে।",
+        "tool": "mobi-to-pdf",
+        "ctaLabel": "MOBI থেকে PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "MOBI পুরোনো Kindle ফরম্যাট, এতে স্থির পৃষ্ঠা নেই। সমর্থিত ফাইল বদলাতে MOBI থেকে PDF টুলে দিন, পৃষ্ঠার আকার ও মার্জিন বেছে PDF নামান। কেবল অধিকার থাকা DRM-মুক্ত বই ব্যবহার করুন। আগে ছবি দেখুন: পুরোনো MOBI ছোট স্ক্রিনের জন্য ছোট ছবি রাখত, তাই সেগুলো অস্পষ্ট হতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "এখনকার MOBI ফাইল কোথা থেকে আসে"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "পুরোনো Kindle লাইব্রেরির ব্যাকআপ, বহু বছর আগের ইবুক বান্ডেল, পাবলিক ডোমেইন বই এবং Calibre দিয়ে নিজের করা কনভার্সন। PRC সাধারণত একই কনটেইনারের পুরোনো এক্সটেনশন।",
+              "Amazon ২০২১ সালে Kindle Direct Publishing এবং ২০২২ সালের শেষে Send to Kindle-এ MOBI নেওয়া বন্ধ করেছে। নতুন MOBI ফাইল এখন বিরল।"
+            ]
+          },
+          {
+            "t": "note",
+            "x": ".azw ফাইল MOBI-এর মতো দেখালেও এতে Amazon সুরক্ষা থাকতে পারে। পরে AZW3 MOBI-কে প্রতিস্থাপন করে। ফাইল .azw, .azw3 বা .kfx হলে [ইবুক ফরম্যাট](/blog/ebooks/ebook-formats-explained) দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "MOBI, EPUB-এর চেয়ে দুর্বল উৎস"
+          },
+          {
+            "t": "table",
+            "head": [
+              "ফরম্যাট",
+              "লেখা",
+              "ছবি",
+              "টেবিল",
+              "ফন্ট"
+            ],
+            "rows": [
+              [
+                "MOBI",
+                "সাধারণত ঠিক থাকে",
+                "প্রায়ই কম রেজোলিউশন",
+                "এলোমেলো হতে পারে",
+                "সীমিত সমর্থন"
+              ],
+              [
+                "EPUB",
+                "সাধারণত ঠিক থাকে",
+                "ভালো মূল মান",
+                "সাধারণত ভালো থাকে",
+                "সমর্থিত হলে ব্যবহৃত"
+              ]
+            ]
+          },
+          {
+            "t": "tip",
+            "x": "একই বই MOBI ও EPUB—দুই ফরম্যাটে থাকলে EPUB কনভার্ট করুন। এতে ছবি, টেবিল ও স্টাইল ভালো থাকে; সময়ও সমান লাগে।"
+          },
+          {
+            "t": "h2",
+            "x": "ধাপে ধাপে MOBI PDF করুন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "প্রথমে ফাইলের আকার দেখুন",
+                "x": "উপন্যাসের MOBI সাধারণত ২০০ KB থেকে ৩ MB হয়। কয়েক KB ফাইল বই নয়, ডাউনলোড টোকেন হতে পারে।"
+              },
+              {
+                "h": "MOBI থেকে PDF খুলুন",
+                "x": "[MOBI থেকে PDF](/tools/mobi-to-pdf) খুলুন। নিরাপদ সংযোগে ফাইল পাঠিয়ে সার্ভারে প্রসেস করা হয় এবং কাজ শেষে মুছে ফেলা হয়। সীমা ১০০ MB এবং প্রতি কাজে দুই মিনিট। ফ্রি অ্যাকাউন্টে মাসে পাঁচটি; Pro ও Lifetime-এ ৩০০; API-তে ৫,০০০টি।"
+              },
+              {
+                "h": "পৃষ্ঠার আকার বাছুন",
+                "x": "প্রিন্টে A4 বা US Letter, স্ক্রিনে পড়তে A5 বা 6 × 9 ইঞ্চি নিন।"
+              },
+              {
+                "h": "মার্জিন ও ফন্ট ঠিক করুন",
+                "x": "২০ mm মার্জিন ও ১১ pt ফন্ট দিয়ে শুরু করুন। বাইন্ডারের জন্য ভেতরের মার্জিন ২৫ mm করুন।"
+              },
+              {
+                "h": "কনভার্ট করে আগে ছবি দেখুন",
+                "x": "প্রথমে একটি ছবি দেখুন। লেখা ঠিক থাকতে পারে, কিন্তু ছোট ছবিতে রূপান্তর নতুন বিস্তারিত যোগ করতে পারে না।"
+              },
+              {
+                "h": "পৃষ্ঠা নম্বর দিন",
+                "x": "প্রিন্ট কপি সঠিক ক্রমে রাখতে [পৃষ্ঠা নম্বর](/tools/page-numbers) দিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "mobi-to-pdf",
+            "x": "পুরোনো Kindle MOBI PDF করে প্রিন্ট, টীকা ও সংরক্ষণ করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ছবি ঝাপসা হয় কেন"
+          },
+          {
+            "t": "p",
+            "x": "প্রথম দিকের Kindle-এ ছোট ধূসর পর্দা ছিল। MOBI সেই পর্দার জন্য তৈরি; তাই ছবি ফাইলে রাখার আগেই ছোট করা হতো। কনভার্টার ফাইলে থাকা পিক্সেলই ব্যবহার করতে পারে। ৪৫০ পিক্সেলের ছবি A4 পাতায় বড় করলে ঝাপসা আরও চোখে পড়ে।"
+          },
+          {
+            "t": "p",
+            "x": "রূপান্তরের সময় নির্ভরযোগ্যভাবে ছবি ভালো করার উপায় নেই। ডায়াগ্রাম গুরুত্বপূর্ণ হলে উন্নত EPUB বা প্রকাশকের PDF খুঁজুন। শার্পেনিং ফিল্টার হারানো বিবরণ ফিরিয়ে আনে না।"
+          },
+          {
+            "t": "h2",
+            "x": "কখন EPUB ভালো পছন্দ"
+          },
+          {
+            "t": "p",
+            "x": "আধুনিক রিডার অ্যাপে পড়তে চাইলে PDF-এর বদলে EPUB ভালো হতে পারে। [Ebook Converter](/tools/ebook-converter) দিয়ে MOBI থেকে EPUB করুন। EPUB-এ ফন্টের আকার বদলায়; PDF প্রিন্ট, পৃষ্ঠা উদ্ধৃতি বা টীকার জন্য ভালো। একাধিকবার কনভার্ট করলে বিন্যাস হারাতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "ফাইল না খুললে কী করবেন"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "দোকান থেকে কেনা বই শুধু নিজের অ্যাপে খুললে তাতে DRM থাকতে পারে। ভুল এক্সটেনশনের ফাইল আসলে ZIP বা PDF হতে পারে; ফাইলের শুরু পরীক্ষা করুন। অসম্পূর্ণ ডাউনলোড মাঝপথে ব্যর্থ হতে পারে। AZW-তে Amazon সুরক্ষা থাকতে পারে।"
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "মূল ফাইল রাখুন এবং PDF দেখুন"
+          },
+          {
+            "t": "p",
+            "x": "MOBI মূল ফাইল রাখুন এবং প্রিন্ট বা শেয়ারের আগে PDF দেখুন। [PDF Reader](/tools/pdf-reader) ট্যাবে চলে, ফাইল আপলোড করে না। পড়াশোনার জন্য [PDF-এ টীকা করার উপায়](/blog/students/annotate-pdf-for-study) দেখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "MOBI ফাইল কীভাবে খুলব?",
+            "a": "পুরোনো Kindle ও Calibre MOBI খোলে। অনেক বর্তমান অ্যাপ আর এটি সমর্থন করে না। পুরোনো রিডার খোঁজার চেয়ে EPUB বা PDF-এ কনভার্ট করা সহজ।"
+          },
+          {
+            "q": "MOBI আর AZW3-এর পার্থক্য কী?",
+            "a": "MOBI পুরোনো ও স্টাইল সীমিতভাবে সমর্থন করে। AZW3 বা KF8 স্টাইল, ফন্ট ও টেবিল ভালো সামলায়, তাই রূপান্তরের ভালো উৎস।"
+          },
+          {
+            "q": "MOBI PDF করলে ছবি ঝাপসা হয় কেন?",
+            "a": "পুরোনো কম রেজোলিউশনের Kindle পর্দার জন্য ছবিগুলো MOBI-তেই ছোট থাকতে পারে। কনভার্টার অনুপস্থিত বিবরণ যোগ করতে পারে না।"
+          },
+          {
+            "q": "Kindle Store থেকে কেনা MOBI কি বদলানো যাবে?",
+            "a": "শুধু DRM-মুক্ত এবং রূপান্তরের অধিকার থাকলে। অধিকাংশ সুরক্ষিত বই এই টুলে খুলবে না।"
+          },
+          {
+            "q": "PRC ফাইল কি MOBI-এর মতো?",
+            "a": "প্রায় সব ক্ষেত্রেই। PRC একই Palm কনটেইনারের পুরোনো এক্সটেনশন; MOBI কনভার্টার সাধারণত একইভাবে ধরে।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -2306,6 +3161,177 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-mobi-to-pdf",
+        "slug": "convert-mobi-to-pdf",
+        "title": "Cách chuyển tệp MOBI sang PDF",
+        "metaTitle": "Cách chuyển tệp MOBI sang PDF",
+        "metaDescription": "Chuyển MOBI sang PDF miễn phí để in hoặc đọc. Chọn khổ giấy, lề; ảnh trong MOBI cũ có thể mờ sau khi xử lý máy chủ an toàn.",
+        "keyword": "chuyển MOBI sang PDF",
+        "secondaryKeywords": [
+          "chuyển MOBI sang PDF",
+          "công cụ MOBI sang PDF",
+          "MOBI sang EPUB"
+        ],
+        "answer": "MOBI là định dạng Kindle cũ và không có trang cố định. Để chuyển tệp được hỗ trợ, tải lên công cụ MOBI sang PDF, chọn khổ giấy và lề rồi tải PDF xuống. Chỉ chuyển sách không DRM mà bạn có quyền sử dụng. Hãy kiểm tra ảnh trước: ảnh thường mềm vì MOBI lưu bản nhỏ cho màn hình đời cũ.",
+        "tool": "mobi-to-pdf",
+        "ctaLabel": "Chuyển MOBI sang PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "MOBI là định dạng Kindle cũ và không có trang cố định. Để chuyển tệp được hỗ trợ, tải lên công cụ MOBI sang PDF, chọn khổ giấy và lề rồi tải PDF xuống. Chỉ chuyển sách không DRM mà bạn có quyền sử dụng. Hãy kiểm tra ảnh trước: ảnh thường mềm vì MOBI lưu bản nhỏ cho màn hình đời cũ."
+          },
+          {
+            "t": "h2",
+            "x": "Nguồn gốc tệp MOBI hiện nay"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Bản sao thư viện Kindle cũ, gói ebook mua từ lâu, sách miễn phí bản quyền và tệp tự chuyển bằng Calibre. PRC thường là cùng vùng chứa với phần mở rộng cũ.",
+              "Amazon ngừng nhận MOBI trên Kindle Direct Publishing năm 2021 và Send to Kindle cuối năm 2022. Tệp MOBI mới hiện ít gặp."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "Tệp .azw trông giống MOBI nhưng thường có bảo vệ Amazon. AZW3 là định dạng mới thay thế MOBI. Nếu tệp kết thúc bằng .azw, .azw3 hoặc .kfx, xem [định dạng ebook](/blog/ebooks/ebook-formats-explained)."
+          },
+          {
+            "t": "h2",
+            "x": "MOBI là nguồn kém hơn EPUB"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Định dạng",
+              "Văn bản",
+              "Ảnh",
+              "Bảng",
+              "Phông"
+            ],
+            "rows": [
+              [
+                "MOBI",
+                "Thường giữ tốt",
+                "Hay có độ phân giải thấp",
+                "Có thể bị xô lệch",
+                "Hỗ trợ hạn chế"
+              ],
+              [
+                "EPUB",
+                "Thường giữ tốt",
+                "Nguồn ảnh tốt hơn",
+                "Thường giữ tốt hơn",
+                "Dùng nếu tương thích"
+              ]
+            ]
+          },
+          {
+            "t": "tip",
+            "x": "Nếu có cùng sách ở MOBI và EPUB, hãy chuyển EPUB. EPUB giữ ảnh, bảng và kiểu chữ tốt hơn trong cùng thời gian."
+          },
+          {
+            "t": "h2",
+            "x": "Cách chuyển MOBI sang PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Kiểm tra dung lượng trước",
+                "x": "MOBI chứa tiểu thuyết thường khoảng 200 KB đến 3 MB. Tệp chỉ vài KB có thể là mã tải xuống, không phải sách."
+              },
+              {
+                "h": "Mở MOBI sang PDF",
+                "x": "Vào [MOBI sang PDF](/tools/mobi-to-pdf). Tệp được gửi qua kết nối an toàn, xử lý trên máy chủ và xóa ngay sau khi hoàn thành. Tối đa 100 MB và hai phút mỗi tác vụ. Tài khoản miễn phí có năm lượt mỗi tháng; Pro và Lifetime có 300; API có 5.000."
+              },
+              {
+                "h": "Chọn khổ giấy",
+                "x": "Chọn A4 hoặc Letter để in; A5 hoặc 6 × 9 inch để đọc trên màn hình."
+              },
+              {
+                "h": "Đặt lề và cỡ chữ",
+                "x": "Bắt đầu với lề 20 mm và chữ 11 pt. Nếu đóng gáy, tăng lề trong lên 25 mm."
+              },
+              {
+                "h": "Chuyển đổi và xem ảnh trước",
+                "x": "Kiểm tra một hình minh họa đầu tiên. Văn bản có thể ổn, nhưng ảnh nhỏ không có thêm chi tiết sau khi chuyển."
+              },
+              {
+                "h": "Thêm số trang",
+                "x": "Dùng [Số trang](/tools/page-numbers) để xếp đúng thứ tự bản in."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "mobi-to-pdf",
+            "x": "Chuyển MOBI Kindle cũ sang PDF để in, ghi chú và lưu."
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao hình ảnh bị mờ"
+          },
+          {
+            "t": "p",
+            "x": "Kindle đời đầu có màn hình nhỏ đơn sắc. MOBI được tạo cho thiết bị đó nên hình minh họa thường bị thu nhỏ trước khi lưu. Bộ chuyển đổi chỉ dùng được số điểm ảnh có trong tệp. Phóng ảnh 450 pixel lên trang A4 chỉ làm ảnh mờ hơn."
+          },
+          {
+            "t": "p",
+            "x": "Không có cách cải thiện đáng tin cậy trong lúc chuyển đổi. Nếu sơ đồ quan trọng, hãy tìm bản EPUB chất lượng hơn hoặc PDF của nhà xuất bản. Bộ lọc làm nét không thể khôi phục chi tiết đã mất."
+          },
+          {
+            "t": "h2",
+            "x": "Khi nào nên chuyển sang EPUB"
+          },
+          {
+            "t": "p",
+            "x": "Nếu cần đọc bằng ứng dụng hiện đại, EPUB có thể phù hợp hơn PDF. Chuyển MOBI sang EPUB bằng [Công cụ chuyển đổi ebook](/tools/ebook-converter). EPUB cho phép đổi cỡ chữ; PDF hợp hơn để in, trích dẫn số trang hoặc ghi chú. Tránh chuyển nhiều bước vì mỗi lần có thể làm mất định dạng."
+          },
+          {
+            "t": "h2",
+            "x": "Cách xử lý khi tệp không mở được"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Tệp mua ở cửa hàng mà chỉ mở trong ứng dụng riêng có thể có DRM. Tệp sai phần mở rộng có thể thực ra là ZIP hoặc PDF; hãy xem chữ ký tệp. Tải chưa hoàn tất có thể lỗi giữa chừng. AZW thường có bảo vệ của Amazon."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Giữ tệp gốc và kiểm tra PDF"
+          },
+          {
+            "t": "p",
+            "x": "Giữ MOBI gốc và kiểm tra PDF trước khi in hoặc chia sẻ. [Trình đọc PDF](/tools/pdf-reader) chạy trong tab và không tải tệp lên. Nếu học từ sách, xem [cách ghi chú PDF để học](/blog/students/annotate-pdf-for-study)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Mở tệp MOBI thế nào?",
+            "a": "Kindle cũ và Calibre mở được MOBI. Nhiều ứng dụng hiện nay không còn hỗ trợ. Chuyển sang EPUB hoặc PDF thường đơn giản hơn tìm ứng dụng cũ."
+          },
+          {
+            "q": "MOBI khác AZW3 thế nào?",
+            "a": "MOBI cũ và hỗ trợ kiểu chữ hạn chế. AZW3, còn gọi KF8, hỗ trợ stylesheet, phông nhúng và bảng tốt hơn, nên là nguồn chuyển đổi tốt hơn."
+          },
+          {
+            "q": "Vì sao ảnh mờ sau khi chuyển MOBI sang PDF?",
+            "a": "Ảnh thường đã nhỏ trong MOBI dành cho màn hình Kindle cũ độ phân giải thấp. Chuyển đổi không thể thêm chi tiết không có trong tệp."
+          },
+          {
+            "q": "Có chuyển được MOBI mua từ Kindle Store không?",
+            "a": "Chỉ khi tệp không DRM và bạn có quyền chuyển. Phần lớn sách được bảo vệ không mở được bằng công cụ này."
+          },
+          {
+            "q": "Tệp PRC có giống MOBI không?",
+            "a": "Hầu như luôn giống. PRC là phần mở rộng cũ của cùng định dạng Palm. Bộ chuyển đổi MOBI thường xử lý như nhau."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -2687,6 +3713,177 @@
           {
             "q": "可以转换图书馆借阅的电子书吗？",
             "a": "通常不可以。图书馆电子书常受保护并绑定账户。你有权转换的无 DRM EPUB 则可以处理。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-mobi-to-pdf",
+        "slug": "convert-mobi-to-pdf",
+        "title": "如何将 MOBI 文件转为 PDF",
+        "metaTitle": "如何将 MOBI 文件转为 PDF",
+        "metaDescription": "免费将 MOBI 转为 PDF 以便打印或阅读。选择纸张和页边距；旧 MOBI 中的图片可能模糊。文件经安全服务器处理后删除。",
+        "keyword": "MOBI 转 PDF",
+        "secondaryKeywords": [
+          "MOBI 转 PDF",
+          "MOBI 转 PDF 工具",
+          "MOBI 转 EPUB"
+        ],
+        "answer": "MOBI 是旧 Kindle 格式，没有固定页面。要转换受支持的文件，请上传到 MOBI 转 PDF 工具，选择页面尺寸和页边距，然后下载 PDF。仅转换无 DRM 且你有权处理的电子书。请先检查图片：旧 MOBI 为早期屏幕保存的小图，转换后可能显得模糊。",
+        "tool": "mobi-to-pdf",
+        "ctaLabel": "MOBI 转 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "MOBI 是旧 Kindle 格式，没有固定页面。要转换受支持的文件，请上传到 MOBI 转 PDF 工具，选择页面尺寸和页边距，然后下载 PDF。仅转换无 DRM 且你有权处理的电子书。请先检查图片：旧 MOBI 为早期屏幕保存的小图，转换后可能显得模糊。"
+          },
+          {
+            "t": "h2",
+            "x": "现在的 MOBI 文件来自哪里"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "旧 Kindle 图书馆备份、多年前购买的电子书合集、公版书文件，以及用 Calibre 自行转换的文件。PRC 通常是同一容器的旧扩展名。",
+              "Amazon 于 2021 年停止在 Kindle Direct Publishing 接收 MOBI，并于 2022 年末停止 Send to Kindle 接收。新 MOBI 文件已不常见。"
+            ]
+          },
+          {
+            "t": "note",
+            "x": ".azw 文件看似 MOBI，但通常带有 Amazon 保护。AZW3 是后来取代 MOBI 的格式。如果文件扩展名为 .azw、.azw3 或 .kfx，请查看[电子书格式说明](/blog/ebooks/ebook-formats-explained)。"
+          },
+          {
+            "t": "h2",
+            "x": "MOBI 不如 EPUB 适合作为转换源"
+          },
+          {
+            "t": "table",
+            "head": [
+              "格式",
+              "文字",
+              "图片",
+              "表格",
+              "字体"
+            ],
+            "rows": [
+              [
+                "MOBI",
+                "通常保留较好",
+                "分辨率常较低",
+                "可能错乱",
+                "支持有限"
+              ],
+              [
+                "EPUB",
+                "通常保留较好",
+                "原始质量较好",
+                "通常保留更完整",
+                "兼容时可使用"
+              ]
+            ]
+          },
+          {
+            "t": "tip",
+            "x": "如果同一本书同时有 MOBI 和 EPUB，请转换 EPUB。EPUB 更能保留图片、表格和样式，耗时相同。"
+          },
+          {
+            "t": "h2",
+            "x": "如何逐步将 MOBI 转为 PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "先检查文件大小",
+                "x": "包含小说的 MOBI 通常约 200 KB 到 3 MB。只有几 KB 的文件可能是下载令牌，而非书籍。"
+              },
+              {
+                "h": "打开 MOBI 转 PDF",
+                "x": "访问 [MOBI 转 PDF](/tools/mobi-to-pdf)。文件通过安全连接上传，在服务器转换并于完成后立即删除。上限 100 MB，每项任务最长两分钟。免费账户每月五次；Pro 和 Lifetime 为 300 次；API 为 5,000 次。"
+              },
+              {
+                "h": "选择页面尺寸",
+                "x": "打印选 A4 或 US Letter；屏幕阅读可选 A5 或 6 × 9 英寸。"
+              },
+              {
+                "h": "设置页边距和字号",
+                "x": "可从 20 毫米页边距和 11 pt 字号开始。装订时将内侧页边距加至 25 毫米。"
+              },
+              {
+                "h": "转换后先检查图片",
+                "x": "先看一张插图。文字通常没问题，但小图不会因转换而增加细节。"
+              },
+              {
+                "h": "添加页码",
+                "x": "使用[页码工具](/tools/page-numbers)，让打印页保持顺序。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "mobi-to-pdf",
+            "x": "将旧 Kindle MOBI 转为 PDF，方便打印、批注和保存。"
+          },
+          {
+            "t": "h2",
+            "x": "图片为什么会模糊"
+          },
+          {
+            "t": "p",
+            "x": "早期 Kindle 使用小型灰度屏幕。MOBI 为此设计，很多插图在存入文件前已缩小。转换器只能使用文件中已有的像素。将 450 像素的图片放大到 A4 页面，只会让模糊更明显。"
+          },
+          {
+            "t": "p",
+            "x": "转换过程没有可靠方式修复低分辨率图片。如果图表很重要，请找质量更好的 EPUB 或出版商 PDF。锐化滤镜无法恢复文件中不存在的细节。"
+          },
+          {
+            "t": "h2",
+            "x": "何时应转为 EPUB"
+          },
+          {
+            "t": "p",
+            "x": "如果想用现代阅读应用，EPUB 可能比 PDF 更合适。可通过 [电子书转换器](/tools/ebook-converter)将 MOBI 转为 EPUB。EPUB 可调整字号；PDF 更适合打印、引用页码或批注。避免连续多次转换，以免逐步丢失格式。"
+          },
+          {
+            "t": "h2",
+            "x": "文件无法打开时如何处理"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "只在商店应用中打开过的购买文件可能带有 DRM。扩展名错误的文件也可能实际是 ZIP 或 PDF；检查文件签名。未下载完整的文件可能在转换中途失败。AZW 通常带有 Amazon 保护。"
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "保留原件并检查 PDF"
+          },
+          {
+            "t": "p",
+            "x": "保留 MOBI 原件，并在打印或分享前检查 PDF。[PDF 阅读器](/tools/pdf-reader)在浏览器标签页本地运行，不上传文件。若要学习标注，可看[如何为学习批注 PDF](/blog/students/annotate-pdf-for-study)。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "如何打开 MOBI 文件？",
+            "a": "旧 Kindle 和 Calibre 可以打开 MOBI。许多当前应用已不支持该格式。转换为 EPUB 或 PDF 通常比寻找旧阅读器更简单。"
+          },
+          {
+            "q": "MOBI 和 AZW3 有什么区别？",
+            "a": "MOBI 较旧，样式支持有限。AZW3 又称 KF8，能更好支持样式表、嵌入字体和表格，通常是更好的转换源。"
+          },
+          {
+            "q": "为什么 MOBI 转 PDF 后图片模糊？",
+            "a": "图片在 MOBI 中可能已经很小，因为该格式面向早期低分辨率 Kindle 屏幕。转换无法补回文件里没有的细节。"
+          },
+          {
+            "q": "可以转换 Kindle 商店购买的 MOBI 吗？",
+            "a": "只有文件没有 DRM 且你有权转换时才可以。大多数受保护的书无法由此工具打开。"
+          },
+          {
+            "q": "PRC 文件和 MOBI 一样吗？",
+            "a": "几乎总是一样。PRC 是同一 Palm 容器格式的旧扩展名，MOBI 转换器通常会按相同方式处理。"
           }
         ],
         "published": "2026-11-15",
