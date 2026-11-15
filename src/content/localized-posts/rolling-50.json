@@ -7957,6 +7957,87 @@
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf"
         ]
+      },
+      {
+        "topic": "crop-pdf-for-binding",
+        "slug": "crop-pdf-for-binding",
+        "cluster": "editing-expansion",
+        "tool": "crop-pdf",
+        "title": "Cómo recortar un PDF para encuadernarlo",
+        "metaTitle": "Cómo recortar un PDF para encuadernarlo",
+        "metaDescription": "Prepara un PDF para encuadernar con márgenes revisados y páginas legibles. Recorta en tu navegador, gratis, sin cuenta ni marca de agua.",
+        "answer": "Para preparar un PDF para encuadernar, comprueba primero qué borde ocupará el lomo y conserva suficiente espacio interior para que el texto no quede atrapado. Recortar elimina espacio visible, no añade margen. Usa Recortar PDF para ajustar los bordes exteriores o el área visible, descarga una copia y revisa la vista de impresión antes de encuadernar.",
+        "sections": [
+          {
+            "heading": "Recorta con cuidado y conserva el margen del lomo",
+            "paragraphs": [
+              "Para preparar un PDF para encuadernar, comprueba primero qué borde ocupará el lomo y conserva suficiente espacio interior para que el texto no quede atrapado. Recortar elimina espacio visible, no añade margen. Usa Recortar PDF para ajustar los bordes exteriores o el área visible, descarga una copia y revisa la vista de impresión antes de encuadernar."
+            ],
+            "steps": [
+              {
+                "heading": "Conserva el archivo original",
+                "text": "Guarda una copia antes de recortar. El recorte cambia el marco visible del PDF; puede deshacerse, pero conservar el original facilita comparar y recuperar el diseño."
+              },
+              {
+                "heading": "Mide el margen interior",
+                "text": "Decide si encuadernarás por la izquierda, derecha o arriba. No recortes ese borde a ciegas; el encuadernado puede tapar texto cercano al lomo. Si falta margen, vuelve al documento fuente y crea espacio antes de exportar."
+              },
+              {
+                "heading": "Abre Recortar PDF",
+                "text": "Carga el archivo en [Recortar PDF](/tools/crop-pdf). Usa Márgenes para quitar una cantidad conocida o Región para conservar un rectángulo. Auto-detect recorta el espacio blanco alrededor del contenido, así que no lo uses si quieres mantener un borde amplio para la encuadernación."
+              },
+              {
+                "heading": "Revisa las páginas",
+                "text": "Aplica el ajuste a las páginas necesarias, descarga el nuevo PDF y mira páginas pares e impares, tablas, números y notas al pie en la vista de impresión."
+              }
+            ]
+          },
+          {
+            "heading": "Qué hace realmente el recorte PDF",
+            "paragraphs": [
+              "El recorte de PDF cambia el área que los lectores muestran e imprimen. El contenido exterior al marco sigue dentro del archivo y puede volver a mostrarse al restablecer el recorte. Por eso, recortar mejora el encuadre, pero no elimina contenido sensible ni crea margen adicional para el lomo.",
+              "Para encuadernación en el lado izquierdo, normalmente se necesita espacio interior suficiente en cada página. En un documento a doble cara, el margen interior alterna de lado entre páginas pares e impares. Comprueba las dos caras y usa el diseño de página del documento fuente si necesitas ampliar el margen.",
+              "Si solo quieres quitar bordes de escaneo, recorta los cuatro lados de forma moderada. El modo Márgenes aplica una medida fija; Región conserva las coordenadas que definas; Auto-detect busca contenido no blanco y puede dejar intactas páginas vacías o con fondos que llegan al borde.",
+              "Recortar se ejecuta en tu navegador y genera un archivo independiente sin volver a dibujar el contenido. Revisa que el texto cercano al lomo no quede demasiado apretado. Si ocultas por accidente datos, recuerda que siguen en el archivo: para eliminarlos de forma permanente usa [Redactar PDF](/tools/redact-pdf). Puedes consultar el resultado con [PDF Reader](/tools/pdf-reader)."
+            ]
+          }
+        ],
+        "ctaLabel": "Prepara tu PDF gratis en el navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿Recortar un PDF crea margen para encuadernar?",
+            "a": "No. Recortar reduce el área visible y puede quitar espacio que necesitas en el lomo. Para añadir margen interior, vuelve al archivo fuente y ajusta el diseño de página antes de exportar. Después revisa páginas pares e impares y una prueba impresa."
+          },
+          {
+            "q": "¿El contenido recortado se elimina?",
+            "a": "No. La herramienta cambia el marco visible y el contenido exterior suele seguir en el PDF. Un editor puede restablecer el marco y mostrarlo. El recorte es un cambio de diseño, no una medida de privacidad; usa Redactar PDF para retirar contenido sensible."
+          },
+          {
+            "q": "¿Puedo recortar páginas diferentes con ajustes distintos?",
+            "a": "Sí. Puedes limitar el recorte a números o rangos de página. Esto sirve cuando solo ciertas páginas tienen bordes de escaneo. Revisa la numeración de posición dentro del archivo, que puede diferir de los números impresos."
+          },
+          {
+            "q": "¿Se reduce el tamaño del archivo al recortar?",
+            "a": "Normalmente no, porque el contenido oculto permanece. Para reducir el peso, usa [Comprimir PDF](/tools/compress-pdf). Para eliminar páginas completas, usa [Eliminar páginas](/tools/delete-pages)."
+          }
+        ],
+        "keywords": [
+          "cómo recortar un pdf para encuadernarlo",
+          "crop PDF for binding",
+          "PDF binding margins"
+        ],
+        "relatedTools": [
+          "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -15908,6 +15989,87 @@
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf"
         ]
+      },
+      {
+        "topic": "crop-pdf-for-binding",
+        "slug": "crop-pdf-for-binding",
+        "cluster": "editing-expansion",
+        "tool": "crop-pdf",
+        "title": "Como recortar um PDF para encadernação",
+        "metaTitle": "Como recortar um PDF para encadernação",
+        "metaDescription": "Prepare um PDF para encadernar com margens revisadas e páginas legíveis. Recorte no navegador, grátis, sem conta nem marca-d’água.",
+        "answer": "Para preparar um PDF para encadernação, confira primeiro qual borda ficará junto à lombada e mantenha espaço interno suficiente para o texto não ficar preso. Recortar remove área visível; não cria margem. Use Recortar PDF para ajustar as bordas externas ou a área exibida, baixe uma cópia e revise a visualização de impressão antes de encadernar.",
+        "sections": [
+          {
+            "heading": "Recorte com cuidado e preserve a margem da lombada",
+            "paragraphs": [
+              "Para preparar um PDF para encadernação, confira primeiro qual borda ficará junto à lombada e mantenha espaço interno suficiente para o texto não ficar preso. Recortar remove área visível; não cria margem. Use Recortar PDF para ajustar as bordas externas ou a área exibida, baixe uma cópia e revise a visualização de impressão antes de encadernar."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o arquivo original",
+                "text": "Salve uma cópia antes de recortar. O recorte altera o quadro visível do PDF; pode ser desfeito, mas manter o original facilita comparar e recuperar o layout."
+              },
+              {
+                "heading": "Meça a margem interna",
+                "text": "Decida se a encadernação será à esquerda, à direita ou em cima. Não recorte essa borda sem conferir: a lombada pode cobrir texto perto dela. Se faltar espaço, volte ao documento de origem e ajuste a página antes de exportar."
+              },
+              {
+                "heading": "Abra Recortar PDF",
+                "text": "Carregue o arquivo em [Recortar PDF](/tools/crop-pdf). Use Margens para remover uma medida conhecida ou Região para manter um retângulo. Auto-detect corta o espaço branco em volta do conteúdo, então não use se precisar preservar uma margem larga para a encadernação."
+              },
+              {
+                "heading": "Confira as páginas",
+                "text": "Aplique o ajuste às páginas necessárias, baixe o novo PDF e veja páginas pares e ímpares, tabelas, números e notas na visualização de impressão."
+              }
+            ]
+          },
+          {
+            "heading": "O que o recorte de PDF realmente faz",
+            "paragraphs": [
+              "O recorte muda a área que leitores e impressoras exibem. O conteúdo fora do quadro continua dentro do arquivo e pode reaparecer se o recorte for redefinido. Por isso, recortar melhora o enquadramento, mas não remove conteúdo sensível nem cria margem adicional para a lombada.",
+              "Para encadernar à esquerda, normalmente é preciso espaço interno suficiente em cada página. Em documentos frente e verso, a margem interna alterna de lado entre páginas pares e ímpares. Confira os dois lados e use o layout do documento de origem se precisar ampliar essa margem.",
+              "Se quiser apenas tirar bordas da digitalização, recorte os lados com cuidado. Margens usa uma medida fixa; Região mantém o retângulo definido; Auto-detect procura conteúdo não branco e pode deixar páginas vazias ou com fundos que chegam à borda sem alteração.",
+              "Recortar funciona no navegador e gera um arquivo separado sem redesenhar o conteúdo. Confira se o texto perto da lombada não ficou apertado. Se esconder dados por engano, lembre-se de que eles continuam no arquivo: use [Redigir PDF](/tools/redact-pdf) para removê-los de forma permanente. Consulte o resultado no [Leitor de PDF](/tools/pdf-reader)."
+            ]
+          }
+        ],
+        "ctaLabel": "Prepare seu PDF grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "Recortar PDF cria margem para encadernação?",
+            "a": "Não. Recortar reduz a área visível e pode remover o espaço que você precisa na lombada. Para adicionar margem interna, volte ao arquivo de origem e ajuste o layout antes de exportar. Depois confira páginas pares e ímpares e uma prova impressa."
+          },
+          {
+            "q": "O conteúdo recortado é removido?",
+            "a": "Não. A ferramenta altera o quadro visível, mas o conteúdo externo normalmente continua no PDF. Um editor pode redefinir o quadro e exibi-lo. Recorte é ajuste de layout, não medida de privacidade; use Redigir PDF para retirar conteúdo sensível."
+          },
+          {
+            "q": "Posso recortar páginas diferentes com ajustes distintos?",
+            "a": "Sim. Você pode limitar o recorte a números ou intervalos de páginas. Isso ajuda quando somente algumas folhas têm bordas de digitalização. Confira a posição no arquivo, que pode ser diferente do número impresso."
+          },
+          {
+            "q": "O recorte reduz o tamanho do arquivo?",
+            "a": "Normalmente não, pois o conteúdo oculto continua no PDF. Para reduzir o tamanho, use [Compactar PDF](/tools/compress-pdf). Para excluir páginas inteiras, use [Excluir páginas](/tools/delete-pages)."
+          }
+        ],
+        "keywords": [
+          "como recortar um pdf para encadernação",
+          "crop PDF for binding",
+          "PDF binding margins"
+        ],
+        "relatedTools": [
+          "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -23858,6 +24020,87 @@
           "remove-blank-pdf-pages",
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf"
+        ]
+      },
+      {
+        "topic": "crop-pdf-for-binding",
+        "slug": "crop-pdf-for-binding",
+        "cluster": "editing-expansion",
+        "tool": "crop-pdf",
+        "title": "बाइंडिंग के लिए PDF कैसे क्रॉप करें",
+        "metaTitle": "बाइंडिंग के लिए PDF कैसे क्रॉप करें",
+        "metaDescription": "बाइंडिंग के लिए PDF तैयार करें: मार्जिन जांचें और पेज पढ़ने योग्य रखें। ब्राउज़र में मुफ्त क्रॉप करें, बिना खाते या वॉटरमार्क के।",
+        "answer": "बाइंडिंग के लिए PDF तैयार करते समय पहले तय करें कि कौन सा किनारा रीढ़ के पास होगा और अंदर इतना स्थान रखें कि टेक्स्ट बंधाई में न दबे। क्रॉप करने से दिखने वाला क्षेत्र घटता है, अतिरिक्त मार्जिन नहीं बनता। Crop PDF से बाहरी किनारे समायोजित करें, नई कॉपी डाउनलोड करें और बाइंड करने से पहले प्रिंट प्रीव्यू जांचें।",
+        "sections": [
+          {
+            "heading": "सावधानी से क्रॉप करें और बाइंडिंग मार्जिन रखें",
+            "paragraphs": [
+              "बाइंडिंग के लिए PDF तैयार करते समय पहले तय करें कि कौन सा किनारा रीढ़ के पास होगा और अंदर इतना स्थान रखें कि टेक्स्ट बंधाई में न दबे। क्रॉप करने से दिखने वाला क्षेत्र घटता है, अतिरिक्त मार्जिन नहीं बनता। Crop PDF से बाहरी किनारे समायोजित करें, नई कॉपी डाउनलोड करें और बाइंड करने से पहले प्रिंट प्रीव्यू जांचें।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल फ़ाइल रखें",
+                "text": "क्रॉप करने से पहले बिना बदलाव वाली कॉपी सेव करें। इससे दिखने वाला PDF फ्रेम बदलता है; इसे वापस किया जा सकता है, लेकिन मूल फ़ाइल तुलना और बहाली में मदद करती है।"
+              },
+              {
+                "heading": "अंदर का मार्जिन नापें",
+                "text": "तय करें कि बाइंडिंग बाएं, दाएं या ऊपर होगी। बिना जांचे उस किनारे को क्रॉप न करें; रीढ़ के पास का टेक्स्ट ढक सकता है। जगह कम हो तो मूल दस्तावेज़ में मार्जिन बढ़ाकर फिर एक्सपोर्ट करें।"
+              },
+              {
+                "heading": "Crop PDF खोलें",
+                "text": "फ़ाइल [Crop PDF](/tools/crop-pdf) में खोलें। तय मात्रा हटाने के लिए Margins और आयताकार हिस्सा रखने के लिए Region चुनें। Auto-detect सामग्री के आसपास की सफेदी काटता है, इसलिए बाइंडिंग के लिए चौड़ा किनारा बचाना हो तो इसे न चुनें।"
+              },
+              {
+                "heading": "पेज जांचें",
+                "text": "जरूरी पेजों पर सेटिंग लगाएं, नया PDF डाउनलोड करें और प्रिंट प्रीव्यू में दोनों तरफ के पेज, तालिकाएं, नंबर और फुटनोट जांचें।"
+              }
+            ]
+          },
+          {
+            "heading": "PDF क्रॉप वास्तव में क्या करता है",
+            "paragraphs": [
+              "PDF क्रॉप करने से रीडर और प्रिंटर द्वारा दिखाया जाने वाला क्षेत्र बदलता है। फ्रेम के बाहर की सामग्री फ़ाइल में रह सकती है और क्रॉप रीसेट करने पर फिर दिखाई दे सकती है। इसलिए क्रॉप लेआउट सुधारता है, लेकिन संवेदनशील सामग्री नहीं हटाता और बाइंडिंग के लिए नया मार्जिन नहीं जोड़ता।",
+              "बाईं ओर बाइंडिंग के लिए आम तौर पर हर पेज में अंदर की ओर पर्याप्त जगह चाहिए। दो-तरफा दस्तावेज़ में अंदर का मार्जिन सम और विषम पन्नों पर अलग तरफ आता है। दोनों तरफ जांचें; मार्जिन बढ़ाना हो तो स्रोत दस्तावेज़ का पेज लेआउट बदलें।",
+              "स्कैन के किनारे हटाने के लिए चारों तरफ थोड़ा क्रॉप करें। Margins तय माप काटता है; Region आपके दिए आयत को रखता है; Auto-detect गैर-सफेद सामग्री ढूंढता है और खाली पेज या किनारे तक पहुंची पृष्ठभूमि को वैसा ही छोड़ सकता है।",
+              "Crop PDF ब्राउज़र में चलता है और सामग्री को दोबारा बनाए बिना अलग आउटपुट फ़ाइल बनाता है। जांचें कि रीढ़ के पास टेक्स्ट बहुत तंग न हो। क्रॉप से छिपा डेटा फ़ाइल में रह सकता है; स्थायी रूप से हटाने के लिए [Redact PDF](/tools/redact-pdf) इस्तेमाल करें। परिणाम [PDF Reader](/tools/pdf-reader) में देखें।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में PDF मुफ्त तैयार करें, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "क्या PDF क्रॉप करने से बाइंडिंग मार्जिन बनता है?",
+            "a": "नहीं। क्रॉप दिखने वाला क्षेत्र घटाता है और रीढ़ के लिए जरूरी जगह भी काट सकता है। अंदर का मार्जिन बढ़ाने के लिए स्रोत दस्तावेज़ में पेज लेआउट बदलकर फिर एक्सपोर्ट करें। उसके बाद दोनों तरफ के पेज और प्रिंट नमूना जांचें।"
+          },
+          {
+            "q": "क्या क्रॉप की गई सामग्री हट जाती है?",
+            "a": "नहीं। टूल दिखने वाला फ्रेम बदलता है, बाहर की सामग्री आमतौर पर फ़ाइल में रहती है और फ्रेम रीसेट करने पर दिख सकती है। क्रॉप गोपनीयता उपाय नहीं है। संवेदनशील सामग्री हटाने के लिए Redact PDF इस्तेमाल करें।"
+          },
+          {
+            "q": "क्या अलग पेज अलग तरह क्रॉप कर सकता हूं?",
+            "a": "हां। चुने हुए पेज नंबर या रेंज तक क्रॉप सीमित करें। यह तब उपयोगी है जब केवल कुछ स्कैन पेजों के किनारे बड़े हों। फ़ाइल की स्थिति देखें; वह छपे हुए पेज नंबर से अलग हो सकती है।"
+          },
+          {
+            "q": "क्या क्रॉप करने से फ़ाइल छोटी होती है?",
+            "a": "आमतौर पर नहीं, क्योंकि छिपी सामग्री बनी रहती है। आकार घटाने के लिए [Compress PDF](/tools/compress-pdf) चलाएं। पूरे पेज हटाने के लिए [Delete Pages](/tools/delete-pages) उपयोग करें।"
+          }
+        ],
+        "keywords": [
+          "बाइंडिंग के लिए pdf कैसे क्रॉप करें",
+          "crop PDF for binding",
+          "PDF binding margins"
+        ],
+        "relatedTools": [
+          "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
@@ -31818,6 +32061,87 @@
           "remove-blank-pdf-pages",
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf"
+        ]
+      },
+      {
+        "topic": "crop-pdf-for-binding",
+        "slug": "crop-pdf-for-binding",
+        "cluster": "editing-expansion",
+        "tool": "crop-pdf",
+        "title": "كيفية قص PDF للتجليد",
+        "metaTitle": "كيفية قص PDF للتجليد",
+        "metaDescription": "جهّز PDF للتجليد مع مراجعة الهوامش ووضوح الصفحات. قصّه في المتصفح مجاناً، بلا حساب أو علامة مائية. استخدمه مجاناً مباشرة في المتصفح، من دون تسجيل أو رفع الملف.",
+        "answer": "لإعداد PDF للتجليد، حدّد أولاً الحافة التي ستصبح قرب الكعب واترك هامشاً داخلياً كافياً كي لا ينحشر النص عند التجليد. القص يقلل المساحة الظاهرة ولا يضيف هامشاً. استخدم Crop PDF لضبط الحواف الخارجية أو إطار العرض، ثم نزّل نسخة وراجع معاينة الطباعة قبل التجليد.",
+        "sections": [
+          {
+            "heading": "اقصص بحذر واترك هامش الكعب",
+            "paragraphs": [
+              "لإعداد PDF للتجليد، حدّد أولاً الحافة التي ستصبح قرب الكعب واترك هامشاً داخلياً كافياً كي لا ينحشر النص عند التجليد. القص يقلل المساحة الظاهرة ولا يضيف هامشاً. استخدم Crop PDF لضبط الحواف الخارجية أو إطار العرض، ثم نزّل نسخة وراجع معاينة الطباعة قبل التجليد."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بالأصل",
+                "text": "احفظ نسخة غير معدّلة قبل القص. يغيّر القص الإطار الظاهر للـPDF ويمكن التراجع عنه، لكن الأصل يسهل المقارنة واستعادة التصميم."
+              },
+              {
+                "heading": "قِس الهامش الداخلي",
+                "text": "قرر إن كان التجليد يساراً أو يميناً أو أعلى. لا تقص تلك الحافة دون فحص؛ فقد يغطي الكعب النص القريب منها. إذا لم توجد مساحة كافية، عد إلى المستند المصدر وعدّل تخطيط الصفحة قبل التصدير."
+              },
+              {
+                "heading": "افتح Crop PDF",
+                "text": "حمّل الملف في [Crop PDF](/tools/crop-pdf). استخدم Margins لإزالة قياس معلوم أو Region للإبقاء على مستطيل. يزيل Auto-detect البياض حول المحتوى، فلا تستخدمه إن أردت إبقاء هامش عريض للتجليد."
+              },
+              {
+                "heading": "راجع الصفحات",
+                "text": "طبّق الضبط على الصفحات المطلوبة، ونزّل PDF الجديد وافحص الصفحات الفردية والزوجية والجداول والأرقام والحواشي في معاينة الطباعة."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي يفعله قص PDF فعلياً",
+            "paragraphs": [
+              "يغيّر القص المساحة التي تعرضها قارئات PDF وتطبعها. تبقى المحتويات خارج الإطار داخل الملف ويمكن إظهارها بإعادة ضبط القص. لذلك يحسن القص التأطير، لكنه لا يزيل محتوى حساساً ولا ينشئ هامشاً إضافياً للكعب.",
+              "يتطلب التجليد من اليسار عادة مساحة داخلية كافية في كل صفحة. في الطباعة على الوجهين يتناوب موضع الهامش الداخلي بين الصفحات الفردية والزوجية. افحص الوجهين وعدّل تخطيط المستند المصدر إذا احتجت إلى هامش أوسع.",
+              "إذا أردت إزالة حواف المسح فقط، فاقصص الجوانب بحذر. يزيل Margins قياساً ثابتاً، ويحافظ Region على مستطيل تحدده، ويبحث Auto-detect عن المحتوى غير الأبيض وقد يترك الصفحات الفارغة أو الخلفيات الممتدة إلى الحافة كما هي.",
+              "تعمل Crop PDF في المتصفح وتنشئ ملفاً منفصلاً دون إعادة رسم المحتوى. تأكد من عدم تضييق النص قرب الكعب. المحتوى المخفي بالقص يظل في الملف؛ لإزالته نهائياً استخدم [Redact PDF](/tools/redact-pdf). افحص النتيجة في [PDF Reader](/tools/pdf-reader)."
+            ]
+          }
+        ],
+        "ctaLabel": "جهّز PDF مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "هل ينشئ قص PDF هامشاً للتجليد؟",
+            "a": "لا. يقلل القص المساحة الظاهرة وقد يزيل المساحة التي تحتاجها عند الكعب. لإضافة هامش داخلي، عد إلى الملف المصدر واضبط تخطيط الصفحة قبل التصدير. ثم افحص الصفحات الفردية والزوجية واطبع عينة."
+          },
+          {
+            "q": "هل يُحذف المحتوى المقصوص؟",
+            "a": "لا. يغيّر القص الإطار الظاهر، لكن المحتوى الخارجي يبقى عادة في الملف ويمكن كشفه بإعادة ضبط الإطار. القص ليس إجراءً للخصوصية. لإزالة محتوى حساس، استخدم Redact PDF."
+          },
+          {
+            "q": "هل أستطيع قص صفحات مختلفة بإعدادات مختلفة؟",
+            "a": "نعم. يمكنك تحديد أرقام صفحات أو نطاقات. يفيد ذلك عندما تكون الحواف واسعة في بعض صفحات المسح فقط. راجع موضع الصفحة في الملف، فقد يختلف عن الرقم المطبوع."
+          },
+          {
+            "q": "هل يقلل القص حجم الملف؟",
+            "a": "غالباً لا، لأن المحتوى المخفي يبقى. لتصغير الملف استخدم [Compress PDF](/tools/compress-pdf)، ولحذف صفحات كاملة استخدم [Delete Pages](/tools/delete-pages)."
+          }
+        ],
+        "keywords": [
+          "كيفية قص pdf للتجليد",
+          "crop PDF for binding",
+          "PDF binding margins"
+        ],
+        "relatedTools": [
+          "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
@@ -39782,6 +40106,87 @@
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf"
         ]
+      },
+      {
+        "topic": "crop-pdf-for-binding",
+        "slug": "crop-pdf-for-binding",
+        "cluster": "editing-expansion",
+        "tool": "crop-pdf",
+        "title": "বাঁধাইয়ের জন্য PDF কীভাবে ক্রপ করবেন",
+        "metaTitle": "বাঁধাইয়ের জন্য PDF কীভাবে ক্রপ করবেন",
+        "metaDescription": "মার্জিন যাচাই করে এবং পৃষ্ঠা পাঠযোগ্য রেখে বাঁধাইয়ের জন্য PDF তৈরি করুন। ব্রাউজারে বিনামূল্যে ক্রপ করুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "answer": "বাঁধাইয়ের জন্য PDF তৈরির আগে ঠিক করুন কোন ধারটি মেরুদণ্ডের পাশে থাকবে এবং ভেতরে পর্যাপ্ত জায়গা রাখুন, যাতে লেখা বাঁধাইয়ে চাপা না পড়ে। ক্রপ দৃশ্যমান এলাকা কমায়; নতুন মার্জিন যোগ করে না। Crop PDF দিয়ে বাইরের ধার বা দৃশ্যমান ক্ষেত্র ঠিক করুন, নতুন কপি নামান এবং বাঁধাইয়ের আগে প্রিন্ট প্রিভিউ দেখুন।",
+        "sections": [
+          {
+            "heading": "সতর্কভাবে ক্রপ করুন, বাঁধাইয়ের মার্জিন রাখুন",
+            "paragraphs": [
+              "বাঁধাইয়ের জন্য PDF তৈরির আগে ঠিক করুন কোন ধারটি মেরুদণ্ডের পাশে থাকবে এবং ভেতরে পর্যাপ্ত জায়গা রাখুন, যাতে লেখা বাঁধাইয়ে চাপা না পড়ে। ক্রপ দৃশ্যমান এলাকা কমায়; নতুন মার্জিন যোগ করে না। Crop PDF দিয়ে বাইরের ধার বা দৃশ্যমান ক্ষেত্র ঠিক করুন, নতুন কপি নামান এবং বাঁধাইয়ের আগে প্রিন্ট প্রিভিউ দেখুন।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল ফাইল রাখুন",
+                "text": "ক্রপের আগে অপরিবর্তিত কপি সংরক্ষণ করুন। ক্রপ PDF-এর দৃশ্যমান ফ্রেম বদলায় এবং ফিরিয়ে আনা যায়, তবে তুলনা ও পুনরুদ্ধারে মূলটি সহজ।"
+              },
+              {
+                "heading": "ভেতরের মার্জিন মাপুন",
+                "text": "বাঁধাই বাম, ডান নাকি ওপরে হবে ঠিক করুন। না দেখে সেই ধার ক্রপ করবেন না; মেরুদণ্ডের কাছে লেখা ঢেকে যেতে পারে। জায়গা কম হলে উৎস নথির পেজ লেআউট বদলে আবার এক্সপোর্ট করুন।"
+              },
+              {
+                "heading": "Crop PDF খুলুন",
+                "text": "ফাইল [Crop PDF](/tools/crop-pdf)-এ দিন। নির্দিষ্ট পরিমাণ কাটতে Margins, আয়তাকার অংশ রাখতে Region নিন। Auto-detect বিষয়বস্তুর চারপাশের সাদা অংশ কাটে, তাই বাঁধাইয়ের চওড়া মার্জিন রাখতে হলে এটি ব্যবহার করবেন না।"
+              },
+              {
+                "heading": "পৃষ্ঠা পরীক্ষা করুন",
+                "text": "দরকারি পৃষ্ঠায় সেটিং দিন, নতুন PDF নামান এবং প্রিন্ট প্রিভিউতে জোড়-বিজোড় পৃষ্ঠা, টেবিল, নম্বর ও ফুটনোট দেখুন।"
+              }
+            ]
+          },
+          {
+            "heading": "PDF ক্রপ আসলে কী করে",
+            "paragraphs": [
+              "ক্রপ করলে PDF রিডার ও প্রিন্টারে দেখা যায় এমন এলাকা বদলায়। ফ্রেমের বাইরের বিষয়বস্তু ফাইলে থেকে যায় এবং ক্রপ রিসেট করলে আবার দেখা যেতে পারে। তাই ক্রপ দৃশ্য ঠিক করে, কিন্তু সংবেদনশীল বিষয়বস্তু মুছে না এবং বাঁধাইয়ের অতিরিক্ত মার্জিনও তৈরি করে না।",
+              "বাম পাশে বাঁধাইয়ের জন্য সাধারণত প্রতিটি পাতায় ভেতরের দিকে যথেষ্ট জায়গা লাগে। দুই পাশে ছাপা নথিতে জোড় ও বিজোড় পৃষ্ঠায় ভেতরের মার্জিনের দিক পাল্টায়। দুই দিক পরীক্ষা করুন; জায়গা বাড়াতে উৎস নথির লেআউট ব্যবহার করুন।",
+              "শুধু স্ক্যানের ধার কাটতে চাইলে চারপাশে সংযতভাবে ক্রপ করুন। Margins নির্দিষ্ট মাপ কাটে; Region আপনার নির্ধারিত আয়তক্ষেত্র রাখে; Auto-detect অ-সাদা বিষয়বস্তু খুঁজে এবং ফাঁকা পৃষ্ঠা বা ধার ছোঁয়া ব্যাকগ্রাউন্ড অপরিবর্তিত রাখতে পারে।",
+              "Crop PDF ব্রাউজারে চলে এবং বিষয়বস্তু নতুন করে না এঁকে আলাদা ফাইল তৈরি করে। মেরুদণ্ডের কাছে লেখা বেশি সরু হয়ে গেছে কি না দেখুন। ক্রপে লুকানো তথ্য ফাইলে থাকতে পারে; স্থায়ীভাবে মুছতে [Redact PDF](/tools/redact-pdf) নিন। ফলাফল [PDF Reader](/tools/pdf-reader)-এ যাচাই করুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে PDF প্রস্তুত করুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "PDF ক্রপ করলে কি বাঁধাইয়ের মার্জিন তৈরি হয়?",
+            "a": "না। ক্রপ দৃশ্যমান অংশ ছোট করে এবং মেরুদণ্ডের জন্য দরকারি জায়গাও কেটে দিতে পারে। ভেতরের মার্জিন যোগ করতে উৎস ফাইলে পেজ লেআউট বদলে এক্সপোর্ট করুন। তারপর জোড়-বিজোড় পৃষ্ঠা ও প্রিন্ট নমুনা দেখুন।"
+          },
+          {
+            "q": "ক্রপ করা বিষয়বস্তু কি মুছে যায়?",
+            "a": "না। ক্রপ দৃশ্যমান ফ্রেম বদলায়, কিন্তু বাইরের বিষয়বস্তু সাধারণত ফাইলে থাকে এবং ফ্রেম রিসেট করলে দেখা যায়। এটি গোপনীয়তা ব্যবস্থা নয়। সংবেদনশীল বিষয়বস্তু সরাতে Redact PDF ব্যবহার করুন।"
+          },
+          {
+            "q": "বিভিন্ন পৃষ্ঠা আলাদা করে ক্রপ করা যায়?",
+            "a": "হ্যাঁ। নির্দিষ্ট পৃষ্ঠা নম্বর বা রেঞ্জে ক্রপ সীমিত করুন। কিছু স্ক্যান পাতায়ই বড় ধার থাকলে এটি কাজে আসে। ফাইলের অবস্থান-নম্বর দেখুন, যা ছাপা নম্বর থেকে আলাদা হতে পারে।"
+          },
+          {
+            "q": "ক্রপ করলে কি ফাইল ছোট হয়?",
+            "a": "সাধারণত না, কারণ লুকানো বিষয়বস্তু ফাইলে থাকে। আকার কমাতে [Compress PDF](/tools/compress-pdf) ব্যবহার করুন। পুরো পৃষ্ঠা সরাতে [Delete Pages](/tools/delete-pages) নিন।"
+          }
+        ],
+        "keywords": [
+          "বাঁধাইয়ের জন্য pdf কীভাবে ক্রপ করবেন",
+          "crop PDF for binding",
+          "PDF binding margins"
+        ],
+        "relatedTools": [
+          "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -47732,6 +48137,87 @@
           "remove-blank-pdf-pages",
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf"
+        ]
+      },
+      {
+        "topic": "crop-pdf-for-binding",
+        "slug": "crop-pdf-for-binding",
+        "cluster": "editing-expansion",
+        "tool": "crop-pdf",
+        "title": "Cách cắt PDF để đóng gáy",
+        "metaTitle": "Cách cắt PDF để đóng gáy",
+        "metaDescription": "Chuẩn bị PDF để đóng gáy bằng cách kiểm tra lề và giữ trang dễ đọc. Cắt trong trình duyệt miễn phí, không cần tài khoản hay watermark.",
+        "answer": "Để chuẩn bị PDF đóng gáy, trước tiên hãy xác định cạnh nào nằm sát gáy và chừa đủ lề trong để chữ không bị che. Cắt trang làm giảm vùng hiển thị, không thêm lề. Dùng Crop PDF để chỉnh cạnh ngoài hoặc khung hiển thị, tải một bản mới và xem trước khi in trước khi đóng gáy.",
+        "sections": [
+          {
+            "heading": "Cắt cẩn thận và chừa lề gáy",
+            "paragraphs": [
+              "Để chuẩn bị PDF đóng gáy, trước tiên hãy xác định cạnh nào nằm sát gáy và chừa đủ lề trong để chữ không bị che. Cắt trang làm giảm vùng hiển thị, không thêm lề. Dùng Crop PDF để chỉnh cạnh ngoài hoặc khung hiển thị, tải một bản mới và xem trước khi in trước khi đóng gáy."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ bản gốc",
+                "text": "Lưu một bản chưa chỉnh sửa trước khi cắt. Cắt thay đổi khung nhìn của PDF và có thể hoàn tác, nhưng bản gốc giúp so sánh và khôi phục dễ hơn."
+              },
+              {
+                "heading": "Đo lề trong",
+                "text": "Xác định đóng gáy bên trái, phải hay trên. Đừng cắt cạnh đó khi chưa kiểm tra vì gáy có thể che chữ gần mép. Nếu thiếu chỗ, hãy quay lại tài liệu nguồn và chỉnh bố cục trang trước khi xuất lại."
+              },
+              {
+                "heading": "Mở Crop PDF",
+                "text": "Tải tệp vào [Crop PDF](/tools/crop-pdf). Dùng Margins để cắt một lượng cố định hoặc Region để giữ một hình chữ nhật. Auto-detect cắt khoảng trắng quanh nội dung, vì vậy đừng dùng nếu cần giữ lề rộng để đóng gáy."
+              },
+              {
+                "heading": "Kiểm tra trang",
+                "text": "Áp dụng thiết lập cho trang cần thiết, tải PDF mới và xem trang chẵn lẻ, bảng, số trang, chú thích trong bản xem trước khi in."
+              }
+            ]
+          },
+          {
+            "heading": "Cắt PDF thực sự thay đổi điều gì",
+            "paragraphs": [
+              "Cắt PDF thay đổi vùng mà trình đọc hiển thị và máy in in ra. Nội dung ngoài khung vẫn nằm trong tệp và có thể xuất hiện lại nếu đặt lại khung cắt. Vì vậy, cắt giúp chỉnh bố cục nhưng không xóa nội dung nhạy cảm hoặc tạo thêm lề gáy.",
+              "Đóng gáy bên trái thường cần đủ lề trong trên từng trang. Với tài liệu in hai mặt, lề trong đổi bên giữa trang chẵn và lẻ. Hãy kiểm tra cả hai mặt và chỉnh bố cục trong tài liệu nguồn nếu cần thêm khoảng trống.",
+              "Nếu chỉ muốn bỏ viền quét, hãy cắt nhẹ các cạnh. Margins cắt một lượng cố định; Region giữ hình chữ nhật bạn chỉ định; Auto-detect tìm nội dung không trắng và có thể bỏ qua trang trống hoặc nền chạy sát mép.",
+              "Crop PDF chạy trong trình duyệt và tạo tệp đầu ra riêng mà không vẽ lại nội dung. Kiểm tra chữ gần gáy có quá sát không. Nội dung bị cắt vẫn có thể còn trong tệp; để xóa vĩnh viễn, dùng [Redact PDF](/tools/redact-pdf). Xem kết quả bằng [PDF Reader](/tools/pdf-reader)."
+            ]
+          }
+        ],
+        "ctaLabel": "Chuẩn bị PDF miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Cắt PDF có tạo lề đóng gáy không?",
+            "a": "Không. Cắt làm nhỏ vùng hiển thị và có thể lấy mất khoảng trống cần ở gáy. Để thêm lề trong, quay lại tệp nguồn, chỉnh bố cục trang rồi xuất lại. Sau đó kiểm tra trang chẵn lẻ và một bản in thử."
+          },
+          {
+            "q": "Nội dung bị cắt có bị xóa không?",
+            "a": "Không. Công cụ đổi khung hiển thị, còn nội dung bên ngoài thường vẫn ở trong tệp và có thể lộ ra khi đặt lại khung. Cắt không phải biện pháp bảo mật. Dùng Redact PDF để loại bỏ nội dung nhạy cảm."
+          },
+          {
+            "q": "Có thể cắt từng trang theo cách khác nhau không?",
+            "a": "Có. Giới hạn thao tác vào các số trang hoặc khoảng trang cụ thể. Cách này hữu ích khi chỉ một số trang quét có viền rộng. Hãy dùng vị trí trong tệp vì số này có thể khác số in."
+          },
+          {
+            "q": "Cắt có làm tệp nhỏ hơn không?",
+            "a": "Thường là không vì nội dung ẩn vẫn còn. Để giảm dung lượng, dùng [Compress PDF](/tools/compress-pdf). Để bỏ cả trang, dùng [Delete Pages](/tools/delete-pages)."
+          }
+        ],
+        "keywords": [
+          "cách cắt pdf để đóng gáy",
+          "crop PDF for binding",
+          "PDF binding margins"
+        ],
+        "relatedTools": [
+          "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
@@ -55692,6 +56178,87 @@
           "remove-blank-pdf-pages",
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf"
+        ]
+      },
+      {
+        "topic": "crop-pdf-for-binding",
+        "slug": "crop-pdf-for-binding",
+        "cluster": "editing-expansion",
+        "tool": "crop-pdf",
+        "title": "如何为装订裁剪 PDF",
+        "metaTitle": "如何为装订裁剪 PDF",
+        "metaDescription": "检查页边距并确保页面易读，为装订准备 PDF。在浏览器中免费裁剪，无需账户，也没有水印。 可直接在浏览器中免费处理，无需注册或上传文件。",
+        "answer": "准备装订 PDF 时，先确定哪一侧靠近书脊，并为内侧保留足够空白，避免文字被装订遮住。裁剪会缩小可见区域，不会增加页边距。使用 Crop PDF 调整外边缘或可见框，下载新副本，并在装订前检查打印预览。",
+        "sections": [
+          {
+            "heading": "谨慎裁剪并保留书脊边距",
+            "paragraphs": [
+              "准备装订 PDF 时，先确定哪一侧靠近书脊，并为内侧保留足够空白，避免文字被装订遮住。裁剪会缩小可见区域，不会增加页边距。使用 Crop PDF 调整外边缘或可见框，下载新副本，并在装订前检查打印预览。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原文件",
+                "text": "裁剪前保存未修改的副本。裁剪会更改 PDF 的可见框，虽然可恢复，但原件便于比较和还原。"
+              },
+              {
+                "heading": "测量内侧边距",
+                "text": "确定装订在左侧、右侧还是顶部。未检查前不要裁掉这条边，书脊可能遮住附近的文字。如果空间不足，请回到源文档调整页面布局后重新导出。"
+              },
+              {
+                "heading": "打开 Crop PDF",
+                "text": "在 [Crop PDF](/tools/crop-pdf) 中加载文件。使用 Margins 按固定尺寸裁切，或使用 Region 保留矩形区域。Auto-detect 会裁掉内容周围的白边；若要保留装订边距，不要使用它。"
+              },
+              {
+                "heading": "检查页面",
+                "text": "对需要的页面应用设置，下载新 PDF，并在打印预览中检查正反页、表格、页码和脚注。"
+              }
+            ]
+          },
+          {
+            "heading": "PDF 裁剪实际会改变什么",
+            "paragraphs": [
+              "裁剪会更改 PDF 阅读器显示和打印机输出的页面区域。可见框之外的内容仍可能留在文件中，重置裁剪后会再次显示。因此，裁剪可调整版面，但不能删除敏感内容，也不会为书脊增加额外空白。",
+              "左侧装订通常需要每页内侧留出足够空间。双面文档的内侧边距会在奇数页和偶数页之间换边。检查正反两面；若要增加空间，请在源文档中调整页面布局。",
+              "若只想去除扫描边框，请谨慎裁剪各边。Margins 按固定尺寸裁切；Region 保留指定矩形；Auto-detect 查找非白色内容，空白页或背景延伸到边缘时可能不会裁剪。",
+              "Crop PDF 在浏览器中运行，生成单独的输出文件，不会重新绘制内容。请检查靠近书脊的文字是否过于拥挤。被裁掉的内容仍可能在文件中；要永久移除，请使用 [Redact PDF](/tools/redact-pdf)。可在 [PDF Reader](/tools/pdf-reader) 中检查结果。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费准备 PDF，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "裁剪 PDF 会增加装订边距吗？",
+            "a": "不会。裁剪会缩小可见区域，还可能裁掉书脊所需的空间。要增加内侧边距，请回到源文件调整页面布局并重新导出，然后检查奇数页、偶数页和打印样张。"
+          },
+          {
+            "q": "裁掉的内容会被删除吗？",
+            "a": "不会。工具只改变可见框，框外内容通常仍在文件中，重置边框后可能重新显示。裁剪不是隐私保护措施。要移除敏感内容，请使用 Redact PDF。"
+          },
+          {
+            "q": "可以为不同页面设置不同裁剪吗？",
+            "a": "可以。你可以只对指定页码或范围应用裁剪。当只有部分扫描页有较宽边框时，这很有用。请使用文件中的页面位置，它可能与印刷页码不同。"
+          },
+          {
+            "q": "裁剪会让文件变小吗？",
+            "a": "通常不会，因为隐藏内容仍保留在文件中。要缩小文件，请用 [Compress PDF](/tools/compress-pdf)。要移除整页，请用 [Delete Pages](/tools/delete-pages)。"
+          }
+        ],
+        "keywords": [
+          "如何为装订裁剪 pdf",
+          "crop PDF for binding",
+          "PDF binding margins"
+        ],
+        "relatedTools": [
+          "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
