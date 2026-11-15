@@ -2639,6 +2639,150 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "create-zip-for-email-attachments",
+        "slug": "create-zip-for-email-attachments",
+        "title": "Crear un ZIP para adjuntar archivos a un correo",
+        "metaTitle": "Crear un ZIP para adjuntar archivos a un correo",
+        "metaDescription": "Agrupa archivos en un ZIP gratis desde el navegador, sin registro ni marca de agua. Comprueba tamaño, contenido y límites del correo.",
+        "keyword": "crear ZIP para adjuntos de correo",
+        "secondaryKeywords": [
+          "crear ZIP online",
+          "comprimir archivos gratis",
+          "ZIP de carpeta en navegador",
+          "enviar varios archivos por email"
+        ],
+        "answer": "Para crear un ZIP para adjuntar a un correo, reúne los archivos finales, prepara un único paquete ZIP, revisa su contenido y tamaño y adjúntalo si respeta el límite del servicio de correo. El ZIP mantiene juntas las carpetas, pero puede no reducir archivos ya comprimidos.",
+        "tool": "create-zip",
+        "ctaLabel": "Crear ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "Enviar muchos archivos relacionados por separado facilita olvidar un adjunto o perder el orden de las carpetas. Un ZIP los reúne en un solo archivo y puede conservar la estructura del proyecto. Antes de adjuntarlo, comprueba el límite de tamaño del correo y si el destinatario puede extraer archivos ZIP."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo crear un archivo ZIP en el navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Reúne los archivos finales",
+                "x": "Pon solo los archivos y carpetas aprobados en un lugar y usa nombres claros."
+              },
+              {
+                "h": "Abre Crear ZIP",
+                "x": "Añade archivos o una carpeta a [Crear ZIP](/tools/create-zip) en el navegador."
+              },
+              {
+                "h": "Nombra el ZIP",
+                "x": "Usa un nombre descriptivo que ayude al destinatario a entender el contenido."
+              },
+              {
+                "h": "Crea y descarga",
+                "x": "Genera el ZIP y guárdalo. El flujo estándar se procesa en el navegador."
+              },
+              {
+                "h": "Revisa el paquete y el tamaño",
+                "x": "Abre el ZIP, comprueba su contenido y compara el tamaño con el límite de tu correo antes de adjuntarlo."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Agrupa archivos en un ZIP privado desde la pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "ZIP o adjuntos separados"
+          },
+          {
+            "t": "table",
+            "caption": "Elige según los archivos y el destinatario.",
+            "head": [
+              "Método",
+              "Mejor para",
+              "Ten en cuenta"
+            ],
+            "rows": [
+              [
+                "Archivo ZIP",
+                "Muchos archivos o carpetas relacionados",
+                "El destinatario debe poder extraerlo; el ZIP no cifra los datos."
+              ],
+              [
+                "Adjuntos separados",
+                "Pocos documentos individuales",
+                "Puede perderse el orden y la estructura de carpetas."
+              ],
+              [
+                "Enlace de nube",
+                "Archivos grandes o colaboración continua",
+                "Revisa el acceso, la retención y los permisos."
+              ],
+              [
+                "Combinar PDF",
+                "Varias páginas PDF en un documento de lectura",
+                "Solo admite archivos PDF."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "¿Un ZIP hará que los adjuntos pesen menos?"
+          },
+          {
+            "t": "p",
+            "x": "No necesariamente. Crear ZIP agrupa archivos y mantiene las carpetas, pero no vuelve a comprimir cada formato. PDF, fotos, vídeos, documentos de Office y ZIP existentes suelen estar comprimidos. El paquete puede ahorrar poco espacio y aun superar el límite del correo. Comprueba el tamaño final; si es demasiado grande, utiliza un método de transferencia aprobado en vez de dividir o renombrar archivos a ciegas."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa el paquete antes de enviarlo"
+          },
+          {
+            "t": "p",
+            "x": "Abre el ZIP y comprueba nombres, estructura y que no se haya colado ningún borrador o archivo privado. Confirma el correo del destinatario y que puede extraer ZIP. Un ZIP es un contenedor, no un sistema de control de acceso ni cifrado. Si los archivos son confidenciales, usa un método seguro aprobado y sigue la política de tu organización."
+          },
+          {
+            "t": "h2",
+            "x": "Por qué ayuda crear el ZIP en el navegador"
+          },
+          {
+            "t": "p",
+            "x": "Las carpetas de proyectos, los archivos de clientes, los documentos fiscales y las fotos personales pueden ser sensibles. Crear ZIP se ejecuta en el navegador, así que los archivos no se suben normalmente solo para agruparlos. Tú eliges dónde guardar y compartir la descarga. Conserva la carpeta original hasta que el destinatario confirme que recibió y pudo abrir el paquete completo."
+          },
+          {
+            "t": "h2",
+            "x": "Elige el formato adecuado para el destinatario"
+          },
+          {
+            "t": "p",
+            "x": "Si solo necesita unas páginas PDF, [Extraer páginas](/tools/extract-pages) puede crear una entrega más pequeña. Si varios PDF deben leerse como un documento, usa [Combinar PDF](/tools/merge-pdf) en lugar de un ZIP. Para archivos demasiado grandes para el correo, consulta el servicio de intercambio aprobado por tu equipo. Guarda una copia de la carpeta original y verifica que el ZIP se extrae correctamente antes de borrar la fuente."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Puedo crear un ZIP gratis para adjuntarlo a un correo?",
+            "a": "Sí. Añade archivos o una carpeta, crea el ZIP y descárgalo. Crear ZIP de PrintxPDF no requiere registro."
+          },
+          {
+            "q": "¿El ZIP evita el límite de tamaño del correo?",
+            "a": "No. El archivo ZIP sigue contando para el límite de adjuntos. Como muchos archivos ya están comprimidos, el tamaño puede cambiar poco."
+          },
+          {
+            "q": "¿Un ZIP protege los adjuntos con contraseña?",
+            "a": "No en el flujo estándar de Crear ZIP. Un ZIP agrupa archivos, pero no es un sistema de acceso seguro ni cifrado."
+          },
+          {
+            "q": "¿El destinatario podrá abrir mi ZIP?",
+            "a": "La mayoría de los sistemas actuales pueden extraer ZIP, pero confirma que el destinatario tenga una herramienta compatible y que la estructura se haya conservado."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -5272,6 +5416,150 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "create-zip-for-email-attachments",
+        "slug": "create-zip-for-email-attachments",
+        "title": "Criar um ZIP para anexar arquivos ao e-mail",
+        "metaTitle": "Criar um ZIP para anexar arquivos ao e-mail",
+        "metaDescription": "Agrupe arquivos em um ZIP grátis no navegador, sem cadastro ou marca d’água. Confira tamanho, conteúdo e limite do e-mail.",
+        "keyword": "criar ZIP para anexos de e-mail",
+        "secondaryKeywords": [
+          "criar ZIP online",
+          "compactar arquivos grátis",
+          "ZIP de pasta no navegador",
+          "enviar vários arquivos por e-mail"
+        ],
+        "answer": "Para criar um ZIP para anexar a um e-mail, reúna os arquivos finais, monte um único pacote ZIP, confira o conteúdo e o tamanho e anexe-o se couber no limite do serviço. O ZIP mantém as pastas juntas, mas pode não reduzir arquivos já compactados.",
+        "tool": "create-zip",
+        "ctaLabel": "Criar ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "Enviar vários arquivos relacionados separadamente facilita esquecer um anexo ou perder a organização das pastas. Um ZIP reúne tudo em um único arquivo e pode preservar a estrutura do projeto. Antes de anexar, confira o limite de tamanho do e-mail e se o destinatário consegue extrair arquivos ZIP."
+          },
+          {
+            "t": "h2",
+            "x": "Como criar um arquivo ZIP no navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Reúna os arquivos finais",
+                "x": "Coloque apenas os arquivos e pastas aprovados em um só lugar e use nomes claros."
+              },
+              {
+                "h": "Abra Criar ZIP",
+                "x": "Adicione arquivos ou uma pasta em [Criar ZIP](/tools/create-zip) no navegador."
+              },
+              {
+                "h": "Dê um nome ao ZIP",
+                "x": "Use um nome descritivo para o destinatário entender o que o pacote contém."
+              },
+              {
+                "h": "Crie e baixe",
+                "x": "Gere o ZIP e salve-o. O fluxo padrão é processado no navegador."
+              },
+              {
+                "h": "Confira pacote e tamanho",
+                "x": "Abra o ZIP, revise o conteúdo e compare o tamanho com o limite do e-mail antes de anexar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Agrupe arquivos em um ZIP privado na sua aba. Grátis, sem cadastro ou marca d’água."
+          },
+          {
+            "t": "h2",
+            "x": "ZIP ou anexos separados"
+          },
+          {
+            "t": "table",
+            "caption": "Escolha conforme os arquivos e o destinatário.",
+            "head": [
+              "Método",
+              "Ideal para",
+              "Atenção"
+            ],
+            "rows": [
+              [
+                "Arquivo ZIP",
+                "Muitos arquivos ou pastas relacionados",
+                "O destinatário precisa extrair; ZIP não criptografa os dados."
+              ],
+              [
+                "Anexos separados",
+                "Poucos documentos individuais",
+                "A ordem e a estrutura podem se perder."
+              ],
+              [
+                "Link de nuvem",
+                "Arquivos grandes ou colaboração contínua",
+                "Revise acesso, retenção e permissões."
+              ],
+              [
+                "Combinar PDF",
+                "Várias páginas PDF em um documento de leitura",
+                "Funciona apenas com PDFs."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Um ZIP deixa os anexos menores?"
+          },
+          {
+            "t": "p",
+            "x": "Nem sempre. Criar ZIP agrupa arquivos e mantém as pastas, mas não compacta novamente cada formato. PDFs, fotos, vídeos, documentos do Office e ZIPs existentes geralmente já são compactados. O pacote pode economizar pouco espaço e ainda ultrapassar o limite do e-mail. Confira o tamanho final; se for grande demais, use um método de transferência aprovado em vez de dividir ou renomear arquivos sem critério."
+          },
+          {
+            "t": "h2",
+            "x": "Confira o pacote antes de enviar"
+          },
+          {
+            "t": "p",
+            "x": "Abra o ZIP e verifique nomes, estrutura e se nenhum rascunho ou arquivo privado entrou por engano. Confirme o endereço do destinatário e se ele pode extrair ZIP. ZIP é um contêiner, não um controle de acesso nem criptografia. Para arquivos confidenciais, use um método seguro aprovado e siga a política da organização."
+          },
+          {
+            "t": "h2",
+            "x": "Por que criar o ZIP no navegador ajuda"
+          },
+          {
+            "t": "p",
+            "x": "Pastas de projeto, arquivos de clientes, documentos fiscais e fotos pessoais podem ser sensíveis. Criar ZIP roda no navegador, então os arquivos não são enviados rotineiramente só para agrupamento. Você escolhe onde salvar e compartilhar o download. Mantenha a pasta original até o destinatário confirmar que recebeu e conseguiu abrir o pacote completo."
+          },
+          {
+            "t": "h2",
+            "x": "Escolha o formato certo para o destinatário"
+          },
+          {
+            "t": "p",
+            "x": "Se a pessoa precisa apenas de algumas páginas PDF, [Extrair páginas](/tools/extract-pages) pode criar uma entrega menor. Se vários PDFs devem ser lidos como um documento, use [Combinar PDF](/tools/merge-pdf) em vez de ZIP. Para arquivos grandes demais para o e-mail, consulte o serviço de transferência aprovado pela equipe. Guarde uma cópia da pasta fonte e confirme que o ZIP é extraído antes de apagar o original."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Posso criar um ZIP grátis para anexar ao e-mail?",
+            "a": "Sim. Adicione arquivos ou uma pasta, crie o ZIP e baixe. O Criar ZIP da PrintxPDF não exige cadastro."
+          },
+          {
+            "q": "O ZIP evita o limite de tamanho do e-mail?",
+            "a": "Não. O arquivo ZIP ainda conta para o limite de anexos. Como muitos arquivos já são compactados, o tamanho pode mudar pouco."
+          },
+          {
+            "q": "O ZIP protege os anexos com senha?",
+            "a": "Não no fluxo padrão do Criar ZIP. Um ZIP agrupa arquivos, mas não é um sistema seguro de acesso ou criptografia."
+          },
+          {
+            "q": "O destinatário conseguirá abrir meu ZIP?",
+            "a": "A maioria dos sistemas atuais extrai ZIP, mas confirme se o destinatário tem uma ferramenta compatível e se a estrutura foi preservada."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -7901,6 +8189,150 @@
           {
             "q": "क्या ZIP बनाना निजी है?",
             "a": "सामान्य Create ZIP प्रक्रिया ब्राउज़र में चलती है; सिर्फ पैक करने के लिए फ़ाइलें नियमित रूप से अपलोड नहीं होतीं।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "create-zip-for-email-attachments",
+        "slug": "create-zip-for-email-attachments",
+        "title": "ईमेल अटैचमेंट के लिए ZIP फ़ाइल कैसे बनाएँ",
+        "metaTitle": "ईमेल अटैचमेंट के लिए ZIP फ़ाइल कैसे बनाएँ",
+        "metaDescription": "ब्राउज़र में मुफ़्त ZIP बनाएँ—साइनअप या वॉटरमार्क नहीं। ईमेल भेजने से पहले फ़ाइल आकार और अटैचमेंट सीमा जाँचें। ZIP हर फ़ाइल को छोटा नहीं करता।",
+        "keyword": "ईमेल अटैचमेंट के लिए ZIP बनाना",
+        "secondaryKeywords": [
+          "ऑनलाइन ZIP बनाना",
+          "फ़ाइलें मुफ़्त ZIP करना",
+          "ब्राउज़र में ZIP फ़ोल्डर",
+          "कई फ़ाइलें ईमेल करना"
+        ],
+        "answer": "ईमेल अटैचमेंट के लिए ZIP बनाने हेतु अंतिम फ़ाइलें एकत्र करें, एक ZIP पैकेज बनाएँ, सामग्री और आकार जाँचें और ईमेल सेवा की सीमा में हो तभी संलग्न करें। ZIP फ़ोल्डर साथ रखता है, लेकिन पहले से संपीड़ित फ़ाइलों का आकार शायद न घटाए।",
+        "tool": "create-zip",
+        "ctaLabel": "ZIP बनाएँ",
+        "body": [
+          {
+            "t": "p",
+            "x": "कई संबंधित फ़ाइलें अलग-अलग भेजने से अटैचमेंट छूट सकता है या फ़ोल्डर क्रम बिगड़ सकता है। ZIP उन्हें एक फ़ाइल में रखता है और प्रोजेक्ट की संरचना बचा सकता है। संलग्न करने से पहले ईमेल आकार सीमा और यह जाँचें कि प्राप्तकर्ता ZIP निकाल सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "ब्राउज़र में ZIP फ़ाइल कैसे बनाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "अंतिम फ़ाइलें एकत्र करें",
+                "x": "केवल स्वीकृत फ़ाइलें और फ़ोल्डर एक जगह रखें और स्पष्ट नाम दें।"
+              },
+              {
+                "h": "ZIP बनाएँ खोलें",
+                "x": "ब्राउज़र में [ZIP बनाएँ](/tools/create-zip) खोलकर फ़ाइलें या फ़ोल्डर जोड़ें।"
+              },
+              {
+                "h": "ZIP का नाम रखें",
+                "x": "वर्णनात्मक नाम चुनें जिससे प्राप्तकर्ता पैकेज समझ सके।"
+              },
+              {
+                "h": "बनाएँ और डाउनलोड करें",
+                "x": "ZIP बनाएँ और सहेजें। सामान्य प्रक्रिया ब्राउज़र के भीतर रहती है।"
+              },
+              {
+                "h": "पैकेज और आकार जाँचें",
+                "x": "ZIP खोलकर सामग्री देखें और संलग्न करने से पहले ईमेल सीमा से आकार मिलाएँ।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "अपने टैब में फ़ाइलों को निजी ZIP में पैक करें। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP या अलग-अलग अटैचमेंट"
+          },
+          {
+            "t": "table",
+            "caption": "फ़ाइलों और प्राप्तकर्ता के अनुसार चुनें।",
+            "head": [
+              "तरीका",
+              "किसके लिए अच्छा",
+              "क्या ध्यान रखें"
+            ],
+            "rows": [
+              [
+                "ZIP फ़ाइल",
+                "कई संबंधित फ़ाइलें या फ़ोल्डर",
+                "प्राप्तकर्ता को निकालना आना चाहिए; ZIP डेटा एन्क्रिप्ट नहीं करता।"
+              ],
+              [
+                "अलग अटैचमेंट",
+                "कुछ दस्तावेज़",
+                "क्रम और फ़ोल्डर संरचना खो सकती है।"
+              ],
+              [
+                "क्लाउड लिंक",
+                "बड़ी फ़ाइलें या जारी सहयोग",
+                "पहुँच, अवधि और अनुमतियाँ जाँचें।"
+              ],
+              [
+                "PDF जोड़ें",
+                "कई PDF पृष्ठ एक दस्तावेज़ में",
+                "केवल PDF के लिए।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "क्या ZIP अटैचमेंट का आकार घटाएगा?"
+          },
+          {
+            "t": "p",
+            "x": "ज़रूरी नहीं। ZIP फ़ाइलें जोड़ता और फ़ोल्डर संरचना रखता है, पर हर फ़ॉर्मैट को दोबारा संपीड़ित नहीं करता। PDF, फ़ोटो, वीडियो, Office दस्तावेज़ और मौजूदा ZIP अक्सर पहले से संपीड़ित हैं। पैकेज थोड़ा ही छोटा हो सकता है और ईमेल सीमा से फिर भी बड़ा रह सकता है। अंतिम आकार जाँचें; बहुत बड़ा हो तो टीम की स्वीकृत ट्रांसफ़र सेवा लें। फ़ाइलें मनमाने ढंग से बाँटें या नाम न बदलें।"
+          },
+          {
+            "t": "h2",
+            "x": "भेजने से पहले पैकेज जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "ZIP खोलकर नाम, फ़ोल्डर संरचना और यह देखें कि कोई ड्राफ़्ट या निजी फ़ाइल गलती से शामिल तो नहीं हुई। प्राप्तकर्ता का पता और ZIP निकाल पाने की क्षमता जाँचें। ZIP एक कंटेनर है, पहुँच नियंत्रण या एन्क्रिप्शन नहीं। गोपनीय फ़ाइलों के लिए स्वीकृत सुरक्षित तरीका और संगठन की नीति अपनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "ब्राउज़र में ZIP बनाना क्यों मददगार है"
+          },
+          {
+            "t": "p",
+            "x": "प्रोजेक्ट फ़ोल्डर, ग्राहक सामग्री, कर रिकॉर्ड और निजी तस्वीरें संवेदनशील हो सकती हैं। ZIP बनाएँ ब्राउज़र में चलता है, इसलिए सिर्फ पैक करने के लिए फ़ाइलें नियमित रूप से अपलोड नहीं होतीं। डाउनलोड कहाँ सहेजना और साझा करना है, यह आप तय करते हैं। मूल फ़ोल्डर तब तक रखें जब तक प्राप्तकर्ता पूरा पैकेज पाकर खोलने की पुष्टि न करे।"
+          },
+          {
+            "t": "h2",
+            "x": "प्राप्तकर्ता के लिए सही फ़ॉर्मैट चुनें"
+          },
+          {
+            "t": "p",
+            "x": "यदि प्राप्तकर्ता को कुछ PDF पृष्ठ चाहिए, तो [पृष्ठ निकालें](/tools/extract-pages) छोटा पैकेज बना सकता है। कई PDF एक दस्तावेज़ की तरह पढ़ने हों तो ZIP के बजाय [PDF जोड़ें](/tools/merge-pdf)। ईमेल सीमा से बड़ी फ़ाइल के लिए टीम की स्वीकृत ट्रांसफ़र सेवा देखें। मूल फ़ोल्डर रखें और स्रोत मिटाने से पहले ZIP निकालकर जाँचें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या ईमेल अटैचमेंट के लिए ZIP मुफ़्त बना सकता हूँ?",
+            "a": "हाँ। फ़ाइलें या फ़ोल्डर जोड़ें, ZIP बनाएँ और डाउनलोड करें। PrintxPDF ZIP निर्माण में साइनअप नहीं माँगता।"
+          },
+          {
+            "q": "क्या ZIP ईमेल की आकार सीमा से बचाता है?",
+            "a": "नहीं। ZIP भी अटैचमेंट सीमा में गिना जाता है। पहले से संपीड़ित फ़ाइलों का आकार थोड़ा ही बदल सकता है।"
+          },
+          {
+            "q": "क्या ZIP पासवर्ड से अटैचमेंट सुरक्षित करता है?",
+            "a": "सामान्य Create ZIP प्रक्रिया में नहीं। ZIP फ़ाइलें समूहित करता है, सुरक्षित पहुँच या एन्क्रिप्शन नहीं देता।"
+          },
+          {
+            "q": "क्या प्राप्तकर्ता मेरा ZIP खोल पाएगा?",
+            "a": "अधिकांश आधुनिक सिस्टम ZIP निकालते हैं, फिर भी संगत टूल और संरचना की पुष्टि करें।"
           }
         ],
         "published": "2026-11-15",
@@ -10543,6 +10975,150 @@
           {
             "q": "هل إنشاء ZIP خاص؟",
             "a": "تعمل عملية إنشاء ZIP المعتادة في المتصفح؛ ولا تُرفع الملفات عادة لمجرد تجميعها."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "create-zip-for-email-attachments",
+        "slug": "create-zip-for-email-attachments",
+        "title": "إنشاء ملف ZIP لمرفقات البريد الإلكتروني",
+        "metaTitle": "إنشاء ملف ZIP لمرفقات البريد الإلكتروني",
+        "metaDescription": "أنشئ ملف ZIP مجاناً داخل المتصفح بلا تسجيل أو علامة مائية. افحص حجم الملفات وحدود البريد قبل الإرسال. يساعد ZIP على جمع المرفقات، لكنه لا يصغّر كل الملفات.",
+        "keyword": "إنشاء ZIP لمرفقات البريد",
+        "secondaryKeywords": [
+          "إنشاء ZIP عبر الإنترنت",
+          "ضغط الملفات مجاناً",
+          "ZIP مجلد في المتصفح",
+          "إرسال ملفات متعددة بالبريد"
+        ],
+        "answer": "لإنشاء ZIP للمرفقات، اجمع الملفات النهائية وأنشئ حزمة واحدة، ثم افحص محتواها وحجمها وأرفقها إذا كان حجمها ضمن حد خدمة البريد. يحافظ ZIP على المجلدات معاً، لكنه قد لا يقلل حجم الملفات المضغوطة مسبقاً.",
+        "tool": "create-zip",
+        "ctaLabel": "إنشاء ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "إرسال ملفات مترابطة كثيرة كل على حدة يزيد احتمال نسيان مرفق أو فقدان تنظيم المجلدات. يجمعها ZIP في ملف واحد وقد يحافظ على بنية المشروع. قبل الإرفاق، تحقق من حد حجم البريد ومن قدرة المستلم على فك ZIP."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية إنشاء ملف ZIP في المتصفح"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "اجمع الملفات النهائية",
+                "x": "ضع الملفات والمجلدات المعتمدة فقط في مكان واحد واستخدم أسماء واضحة."
+              },
+              {
+                "h": "افتح إنشاء ZIP",
+                "x": "أضف الملفات أو المجلد إلى [إنشاء ZIP](/tools/create-zip) في المتصفح."
+              },
+              {
+                "h": "سمّ ملف ZIP",
+                "x": "اختر اسماً وصفياً يساعد المستلم على فهم محتويات الحزمة."
+              },
+              {
+                "h": "أنشئ الملف ونزّله",
+                "x": "أنشئ ZIP واحفظه. تتم المعالجة المعتادة داخل المتصفح."
+              },
+              {
+                "h": "افحص الحزمة والحجم",
+                "x": "افتح ZIP وراجع المحتوى وقارن الحجم بحد البريد قبل الإرفاق."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "اجمع الملفات في ZIP خاص داخل علامة التبويب. مجاناً وبلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "ZIP أم مرفقات منفصلة؟"
+          },
+          {
+            "t": "table",
+            "caption": "اختر وفق الملفات والمستلم.",
+            "head": [
+              "الطريقة",
+              "الأنسب لـ",
+              "ما يجب الانتباه إليه"
+            ],
+            "rows": [
+              [
+                "ملف ZIP",
+                "ملفات أو مجلدات مترابطة كثيرة",
+                "على المستلم فك الضغط؛ ZIP لا يشفر البيانات."
+              ],
+              [
+                "مرفقات منفصلة",
+                "مستندات قليلة",
+                "قد يضيع الترتيب وبنية المجلدات."
+              ],
+              [
+                "رابط سحابي",
+                "ملفات كبيرة أو تعاون مستمر",
+                "راجع الوصول والاحتفاظ والأذونات."
+              ],
+              [
+                "دمج PDF",
+                "صفحات PDF متعددة في مستند قراءة",
+                "يعمل مع PDF فقط."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "هل يقلل ZIP حجم المرفقات؟"
+          },
+          {
+            "t": "p",
+            "x": "ليس بالضرورة. يجمع ZIP الملفات ويحافظ على المجلدات لكنه لا يعيد ضغط كل صيغة. ملفات PDF والصور والفيديو ومستندات Office وملفات ZIP الموجودة تكون مضغوطة غالباً. قد يوفر الملف مساحة قليلة ويظل أكبر من حد البريد. افحص الحجم النهائي؛ وإذا كان كبيراً فاستخدم خدمة نقل معتمدة بدلاً من تقسيم الملفات أو تغيير أسمائها عشوائياً."
+          },
+          {
+            "t": "h2",
+            "x": "راجع الحزمة قبل الإرسال"
+          },
+          {
+            "t": "p",
+            "x": "افتح ZIP وتحقق من الأسماء والبنية ومن عدم دخول مسودة أو ملف خاص بالخطأ. تحقق من عنوان المستلم وقدرته على فك ZIP. ZIP حاوية وليس نظام تحكم بالوصول أو تشفير. للملفات السرية، استخدم طريقة آمنة معتمدة واتبع سياسة مؤسستك."
+          },
+          {
+            "t": "h2",
+            "x": "لماذا يفيد إنشاء ZIP في المتصفح؟"
+          },
+          {
+            "t": "p",
+            "x": "قد تكون مجلدات المشاريع وأصول العملاء والسجلات الضريبية والصور الشخصية حساسة. تعمل أداة إنشاء ZIP في المتصفح، فلا يلزم رفع الملفات عادة لمجرد تجميعها. أنت تختار مكان حفظ التنزيل ومشاركته. احتفظ بالمجلد الأصلي حتى يؤكد المستلم استلام الحزمة كاملة وقدرته على فتحها."
+          },
+          {
+            "t": "h2",
+            "x": "اختر الصيغة المناسبة للمستلم"
+          },
+          {
+            "t": "p",
+            "x": "إذا احتاج المستلم صفحات PDF قليلة فقط، فقد تنشئ [استخراج الصفحات](/tools/extract-pages) تسليماً أصغر. وإذا أراد قراءة عدة ملفات PDF كمستند واحد، فاستخدم [دمج PDF](/tools/merge-pdf) بدلاً من ZIP. للملفات التي تتجاوز حد البريد، راجع خدمة النقل المعتمدة لدى فريقك. احتفظ بنسخة من المجلد الأصلي وتحقق من استخراج ZIP قبل حذف المصدر."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يمكن إنشاء ZIP مجاناً لإرفاقه بالبريد؟",
+            "a": "نعم. أضف الملفات أو المجلد وأنشئ ZIP ونزّله. لا تتطلب أداة PrintxPDF تسجيلاً."
+          },
+          {
+            "q": "هل يتجاوز ZIP حد حجم البريد؟",
+            "a": "لا. يظل ملف ZIP ضمن حد المرفقات، وقد يتغير حجم الملفات المضغوطة أصلاً قليلاً فقط."
+          },
+          {
+            "q": "هل يحمي ZIP المرفقات بكلمة مرور؟",
+            "a": "لا في المسار المعتاد لإنشاء ZIP. يجمع الملفات لكنه لا يوفر تحكماً آمناً بالوصول أو تشفيراً."
+          },
+          {
+            "q": "هل يستطيع المستلم فتح ملف ZIP؟",
+            "a": "تستطيع معظم الأنظمة الحديثة فك ZIP، لكن تحقق من توفر أداة متوافقة ومن بقاء بنية المجلدات."
           }
         ],
         "published": "2026-11-15",
@@ -13192,6 +13768,150 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "create-zip-for-email-attachments",
+        "slug": "create-zip-for-email-attachments",
+        "title": "ইমেইল অ্যাটাচমেন্টের জন্য ZIP ফাইল তৈরি",
+        "metaTitle": "ইমেইল অ্যাটাচমেন্টের জন্য ZIP ফাইল তৈরি",
+        "metaDescription": "ব্রাউজারে বিনামূল্যে ZIP বানান; সাইনআপ বা ওয়াটারমার্ক নেই। ইমেইল পাঠানোর আগে আকার, বিষয় ও সীমা পরীক্ষা করুন।",
+        "keyword": "ইমেইল অ্যাটাচমেন্টের জন্য ZIP তৈরি",
+        "secondaryKeywords": [
+          "অনলাইনে ZIP তৈরি",
+          "বিনামূল্যে ফাইল ZIP",
+          "ব্রাউজারে ফোল্ডার ZIP",
+          "একাধিক ফাইল ইমেইল করা"
+        ],
+        "answer": "ইমেইল অ্যাটাচমেন্টের জন্য ZIP তৈরি করতে চূড়ান্ত ফাইলগুলো একত্র করুন, একটি ZIP প্যাকেজ বানান, বিষয় ও আকার পরীক্ষা করুন এবং ইমেইল পরিষেবার সীমার মধ্যে থাকলে সংযুক্ত করুন। ZIP ফোল্ডারগুলো একসঙ্গে রাখে, কিন্তু আগে থেকেই কমপ্রেস করা ফাইলের আকার কম নাও করতে পারে।",
+        "tool": "create-zip",
+        "ctaLabel": "ZIP তৈরি করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "অনেক সম্পর্কিত ফাইল আলাদাভাবে পাঠালে অ্যাটাচমেন্ট বাদ পড়তে পারে বা ফোল্ডারের বিন্যাস হারাতে পারে। ZIP সেগুলোকে একটি ফাইলে গুছিয়ে প্রকল্পের কাঠামো রাখতে পারে। সংযুক্ত করার আগে ইমেইলের আকারসীমা এবং প্রাপক ZIP খুলতে পারবেন কি না দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্রাউজারে ZIP ফাইল কীভাবে তৈরি করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "চূড়ান্ত ফাইল একত্র করুন",
+                "x": "শুধু অনুমোদিত ফাইল ও ফোল্ডার এক জায়গায় রাখুন এবং স্পষ্ট নাম দিন।"
+              },
+              {
+                "h": "ZIP তৈরি খুলুন",
+                "x": "ব্রাউজারে [ZIP তৈরি](/tools/create-zip) খুলে ফাইল বা ফোল্ডার যোগ করুন।"
+              },
+              {
+                "h": "ZIP-এর নাম দিন",
+                "x": "বর্ণনামূলক নাম দিন যাতে প্রাপক প্যাকেজের বিষয় বুঝতে পারেন।"
+              },
+              {
+                "h": "তৈরি করে ডাউনলোড করুন",
+                "x": "ZIP তৈরি করে সংরক্ষণ করুন। সাধারণ প্রক্রিয়াটি ব্রাউজারেই হয়।"
+              },
+              {
+                "h": "প্যাকেজ ও আকার দেখুন",
+                "x": "ZIP খুলে বিষয় পরীক্ষা করুন এবং সংযুক্তির আগে ইমেইল সীমার সঙ্গে আকার মিলিয়ে নিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "আপনার ট্যাবে ফাইলগুলো ব্যক্তিগত ZIP-এ গুছিয়ে নিন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP নাকি আলাদা অ্যাটাচমেন্ট"
+          },
+          {
+            "t": "table",
+            "caption": "ফাইল ও প্রাপকের ধরন অনুযায়ী বেছে নিন।",
+            "head": [
+              "পদ্ধতি",
+              "কোন কাজে ভালো",
+              "যা খেয়াল রাখবেন"
+            ],
+            "rows": [
+              [
+                "ZIP ফাইল",
+                "অনেক সম্পর্কিত ফাইল বা ফোল্ডার",
+                "প্রাপককে extract করতে হবে; ZIP তথ্য এনক্রিপ্ট করে না।"
+              ],
+              [
+                "আলাদা অ্যাটাচমেন্ট",
+                "কয়েকটি আলাদা নথি",
+                "ক্রম ও ফোল্ডারের বিন্যাস হারাতে পারে।"
+              ],
+              [
+                "ক্লাউড লিংক",
+                "বড় ফাইল বা চলমান সহযোগিতা",
+                "প্রবেশাধিকার, সংরক্ষণকাল ও অনুমতি দেখুন।"
+              ],
+              [
+                "PDF মার্জ",
+                "একটি পড়ার নথিতে কয়েকটি PDF পৃষ্ঠা",
+                "শুধু PDF-এর জন্য।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ZIP কি ইমেইল অ্যাটাচমেন্ট ছোট করে?"
+          },
+          {
+            "t": "p",
+            "x": "অবশ্যই নয়। ZIP ফাইল গুছিয়ে ফোল্ডারের কাঠামো রাখে, কিন্তু প্রতিটি ফরম্যাট আবার কমপ্রেস করে না। PDF, ছবি, ভিডিও, Office নথি ও পুরোনো ZIP সাধারণত আগেই কমপ্রেস করা। তাই সামান্য জায়গা বাঁচলেও প্যাকেজ ইমেইল সীমা ছাড়াতে পারে। চূড়ান্ত আকার দেখুন; বড় হলে নির্বিচারে ফাইল ভাগ বা নাম বদল না করে দলের অনুমোদিত ট্রান্সফার সেবা ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "পাঠানোর আগে প্যাকেজ দেখুন"
+          },
+          {
+            "t": "p",
+            "x": "ZIP খুলে নাম, ফোল্ডারের বিন্যাস এবং কোনো খসড়া বা ব্যক্তিগত ফাইল ভুল করে ঢুকেছে কি না দেখুন। প্রাপকের ঠিকানা ও ZIP খোলার সক্ষমতা নিশ্চিত করুন। ZIP হলো ধারক, প্রবেশাধিকার নিয়ন্ত্রণ বা এনক্রিপশন নয়। গোপন ফাইলের জন্য অনুমোদিত নিরাপদ পদ্ধতি ও প্রতিষ্ঠানের নীতি মানুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্রাউজারে ZIP বানানো কেন সহায়ক"
+          },
+          {
+            "t": "p",
+            "x": "প্রকল্পের ফোল্ডার, ক্লায়েন্টের ফাইল, করের নথি ও ব্যক্তিগত ছবি সংবেদনশীল হতে পারে। ZIP তৈরি ব্রাউজারে চলে, তাই শুধু গুছানোর জন্য ফাইল নিয়মিত আপলোড হয় না। ডাউনলোড কোথায় রাখবেন তা আপনি বেছে নেন। প্রাপক পুরো প্যাকেজ পেয়ে খুলতে পারার নিশ্চয়তা না দেওয়া পর্যন্ত মূল ফোল্ডার রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রাপকের জন্য সঠিক ফরম্যাট বেছে নিন"
+          },
+          {
+            "t": "p",
+            "x": "প্রাপকের কেবল কয়েকটি PDF পৃষ্ঠা লাগলে [পৃষ্ঠা এক্সট্র্যাক্ট](/tools/extract-pages) ছোট ডেলিভারি বানাতে পারে। একাধিক PDF এক নথিতে পড়তে হলে [PDF মার্জ](/tools/merge-pdf) ব্যবহার করুন। ইমেইল সীমা ছাড়ালে দলের অনুমোদিত ট্রান্সফার সেবা দেখুন। মূল ফোল্ডারের কপি রাখুন এবং উৎস মুছার আগে ZIP খুলে পরীক্ষা করুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ইমেইলে পাঠাতে বিনামূল্যে ZIP করা যায়?",
+            "a": "হ্যাঁ। ফাইল বা ফোল্ডার যোগ করুন, ZIP তৈরি করে ডাউনলোড করুন। PrintxPDF-এ সাইনআপ লাগে না।"
+          },
+          {
+            "q": "ZIP কি ইমেইলের আকারসীমা এড়ায়?",
+            "a": "না। ZIP-ও অ্যাটাচমেন্ট সীমায় গণনা হয়। আগে থেকে কমপ্রেস করা ফাইলের আকার সামান্যই বদলাতে পারে।"
+          },
+          {
+            "q": "ZIP কি পাসওয়ার্ড দিয়ে অ্যাটাচমেন্ট সুরক্ষিত করে?",
+            "a": "সাধারণ ZIP তৈরি প্রক্রিয়ায় নয়। ZIP ফাইল গুছিয়ে রাখে, নিরাপদ প্রবেশাধিকার বা এনক্রিপশন দেয় না।"
+          },
+          {
+            "q": "প্রাপক কি ZIP খুলতে পারবেন?",
+            "a": "অধিকাংশ আধুনিক সিস্টেম ZIP খুলতে পারে; তবু উপযুক্ত টুল ও ফোল্ডার বিন্যাস ঠিক আছে কি না নিশ্চিত করুন।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -15821,6 +16541,150 @@
           {
             "q": "Tạo ZIP có riêng tư không?",
             "a": "Quy trình Tạo ZIP tiêu chuẩn chạy trong trình duyệt; tệp không được tải lên thường xuyên chỉ để đóng gói."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "create-zip-for-email-attachments",
+        "slug": "create-zip-for-email-attachments",
+        "title": "Cách tạo ZIP để đính kèm email",
+        "metaTitle": "Cách tạo ZIP để đính kèm email",
+        "metaDescription": "Tạo ZIP miễn phí trong trình duyệt, không đăng ký, không hình mờ. Kiểm tra dung lượng, nội dung và giới hạn email.",
+        "keyword": "tạo ZIP cho tệp đính kèm email",
+        "secondaryKeywords": [
+          "tạo ZIP trực tuyến",
+          "nén tệp miễn phí",
+          "ZIP thư mục trong trình duyệt",
+          "gửi nhiều tệp qua email"
+        ],
+        "answer": "Để tạo ZIP đính kèm email, hãy tập hợp các tệp cuối, tạo một gói ZIP, kiểm tra nội dung và dung lượng rồi đính kèm nếu không vượt giới hạn email. ZIP giữ các thư mục cùng nhau nhưng có thể không giảm dung lượng của tệp đã nén.",
+        "tool": "create-zip",
+        "ctaLabel": "Tạo ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "Gửi nhiều tệp liên quan riêng lẻ dễ khiến bạn quên đính kèm một tệp hoặc làm mất cách sắp xếp thư mục. ZIP gom chúng vào một tệp và có thể giữ cấu trúc dự án. Trước khi đính kèm, hãy kiểm tra giới hạn dung lượng email và khả năng giải nén ZIP của người nhận."
+          },
+          {
+            "t": "h2",
+            "x": "Cách tạo tệp ZIP trong trình duyệt"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Tập hợp tệp cuối",
+                "x": "Chỉ đặt tệp và thư mục đã duyệt ở cùng một nơi, dùng tên rõ ràng."
+              },
+              {
+                "h": "Mở Tạo ZIP",
+                "x": "Thêm tệp hoặc thư mục vào [Tạo ZIP](/tools/create-zip) trong trình duyệt."
+              },
+              {
+                "h": "Đặt tên ZIP",
+                "x": "Dùng tên mô tả để người nhận hiểu gói chứa nội dung gì."
+              },
+              {
+                "h": "Tạo và tải xuống",
+                "x": "Tạo ZIP rồi lưu lại. Quy trình tiêu chuẩn chạy trong trình duyệt."
+              },
+              {
+                "h": "Kiểm tra gói và dung lượng",
+                "x": "Mở ZIP, xem nội dung và so sánh dung lượng với giới hạn email trước khi đính kèm."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Gom tệp vào ZIP riêng tư ngay trong tab. Miễn phí, không đăng ký, không hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "ZIP hay tệp đính kèm riêng lẻ?"
+          },
+          {
+            "t": "table",
+            "caption": "Chọn theo tệp và người nhận.",
+            "head": [
+              "Cách gửi",
+              "Phù hợp với",
+              "Lưu ý"
+            ],
+            "rows": [
+              [
+                "Tệp ZIP",
+                "Nhiều tệp hoặc thư mục liên quan",
+                "Người nhận cần giải nén; ZIP không mã hóa dữ liệu."
+              ],
+              [
+                "Tệp đính kèm riêng",
+                "Một vài tài liệu",
+                "Thứ tự và cấu trúc thư mục có thể mất."
+              ],
+              [
+                "Liên kết đám mây",
+                "Tệp lớn hoặc cộng tác liên tục",
+                "Xem lại quyền truy cập, lưu trữ và quyền chia sẻ."
+              ],
+              [
+                "Gộp PDF",
+                "Nhiều trang PDF thành tài liệu đọc",
+                "Chỉ áp dụng cho PDF."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ZIP có làm nhỏ tệp đính kèm email không?"
+          },
+          {
+            "t": "p",
+            "x": "Không hẳn. ZIP gom tệp và giữ thư mục nhưng không nén lại mọi định dạng. PDF, ảnh, video, tài liệu Office và ZIP hiện có thường đã được nén. Gói có thể chỉ nhỏ hơn một chút và vẫn vượt giới hạn email. Hãy kiểm tra dung lượng cuối; nếu quá lớn, dùng dịch vụ chuyển tệp đã được nhóm phê duyệt thay vì tự ý chia hoặc đổi tên tệp."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra gói trước khi gửi"
+          },
+          {
+            "t": "p",
+            "x": "Mở ZIP và kiểm tra tên, cấu trúc thư mục, bảo đảm không có bản nháp hay tệp riêng tư bị thêm nhầm. Xác nhận địa chỉ người nhận và họ có thể giải nén ZIP. ZIP là vùng chứa, không phải kiểm soát truy cập hay mã hóa. Với tệp mật, hãy dùng cách chia sẻ an toàn được duyệt và theo chính sách tổ chức."
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao tạo ZIP trong trình duyệt hữu ích"
+          },
+          {
+            "t": "p",
+            "x": "Thư mục dự án, tài sản khách hàng, hồ sơ thuế và ảnh cá nhân có thể nhạy cảm. Tạo ZIP chạy trong trình duyệt, nên không cần tải tệp lên thường xuyên chỉ để đóng gói. Bạn chọn nơi lưu và chia sẻ bản tải xuống. Giữ thư mục gốc đến khi người nhận xác nhận đã nhận và mở được toàn bộ gói."
+          },
+          {
+            "t": "h2",
+            "x": "Chọn định dạng phù hợp với người nhận"
+          },
+          {
+            "t": "p",
+            "x": "Nếu người nhận chỉ cần vài trang PDF, [Trích xuất trang](/tools/extract-pages) có thể tạo gói nhỏ hơn. Nếu cần đọc nhiều PDF như một tài liệu, hãy [Gộp PDF](/tools/merge-pdf) thay vì ZIP. Với tệp vượt giới hạn email, dùng dịch vụ chuyển tệp được nhóm chấp thuận. Giữ bản sao thư mục gốc và kiểm tra khả năng giải nén trước khi xóa nguồn."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Tôi có thể tạo ZIP miễn phí để đính kèm email không?",
+            "a": "Có. Thêm tệp hoặc thư mục, tạo ZIP rồi tải xuống. Tạo ZIP của PrintxPDF không cần đăng ký."
+          },
+          {
+            "q": "ZIP có vượt giới hạn dung lượng email không?",
+            "a": "Không. Tệp ZIP vẫn tính vào giới hạn đính kèm. Tệp vốn đã nén có thể chỉ giảm rất ít."
+          },
+          {
+            "q": "ZIP có bảo vệ tệp đính kèm bằng mật khẩu không?",
+            "a": "Không trong quy trình Tạo ZIP tiêu chuẩn. ZIP gom tệp nhưng không cung cấp kiểm soát truy cập an toàn hay mã hóa."
+          },
+          {
+            "q": "Người nhận có mở được ZIP không?",
+            "a": "Phần lớn hệ thống hiện nay giải nén được ZIP, nhưng hãy xác nhận họ có công cụ tương thích và cấu trúc còn nguyên."
           }
         ],
         "published": "2026-11-15",
@@ -18463,6 +19327,150 @@
           {
             "q": "创建 ZIP 是私密的吗？",
             "a": "标准创建 ZIP 流程在浏览器中运行；不会仅为打包而常规上传文件。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "create-zip-for-email-attachments",
+        "slug": "create-zip-for-email-attachments",
+        "title": "如何创建 ZIP 文件作为邮件附件",
+        "metaTitle": "如何创建 ZIP 文件作为邮件附件",
+        "metaDescription": "在浏览器中免费创建 ZIP，无需注册或水印。发送前检查文件大小和邮件附件限制。适合整理附件，不保证压缩所有文件。",
+        "keyword": "创建 ZIP 作为邮件附件",
+        "secondaryKeywords": [
+          "在线创建 ZIP",
+          "免费压缩文件",
+          "浏览器压缩文件夹",
+          "通过邮件发送多个文件"
+        ],
+        "answer": "要创建 ZIP 作为邮件附件，请收集最终文件，生成一个 ZIP 包，检查内容和大小，并确认未超过邮件服务限制后再附加。ZIP 可以将文件夹放在一起，但未必能缩小已经压缩过的文件。",
+        "tool": "create-zip",
+        "ctaLabel": "创建 ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "将许多相关文件分别发送，容易漏掉附件或丢失文件夹结构。ZIP 可以把文件放进一个包里，并保留项目结构。附加前，请检查邮件大小限制以及接收者能否解压 ZIP。"
+          },
+          {
+            "t": "h2",
+            "x": "如何在浏览器中创建 ZIP 文件"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "收集最终文件",
+                "x": "只把已批准的文件和文件夹放在一起，并使用清晰的名称。"
+              },
+              {
+                "h": "打开创建 ZIP",
+                "x": "在浏览器中将文件或文件夹添加到[创建 ZIP](/tools/create-zip)。"
+              },
+              {
+                "h": "为 ZIP 命名",
+                "x": "使用描述性名称，方便接收者了解压缩包内容。"
+              },
+              {
+                "h": "创建并下载",
+                "x": "生成 ZIP 并保存。标准流程在浏览器内完成。"
+              },
+              {
+                "h": "检查压缩包和大小",
+                "x": "打开 ZIP 检查内容，并在附加前与邮件限制对比文件大小。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "在浏览器标签页中将文件打包为私密 ZIP。免费、免注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP 还是单独附件？"
+          },
+          {
+            "t": "table",
+            "caption": "根据文件和接收者选择方式。",
+            "head": [
+              "方式",
+              "适合场景",
+              "注意事项"
+            ],
+            "rows": [
+              [
+                "ZIP 文件",
+                "多个相关文件或文件夹",
+                "接收者需要解压；ZIP 不会加密数据。"
+              ],
+              [
+                "单独附件",
+                "少量独立文档",
+                "顺序和文件夹结构可能丢失。"
+              ],
+              [
+                "云端分享链接",
+                "大文件或持续协作",
+                "检查访问权限、保留期限和分享设置。"
+              ],
+              [
+                "合并 PDF",
+                "将多个 PDF 页面合并成阅读文档",
+                "仅适用于 PDF。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ZIP 会让邮件附件变小吗？"
+          },
+          {
+            "t": "p",
+            "x": "不一定。ZIP 会打包文件并保留文件夹，但不会重新压缩每种格式。PDF、照片、视频、Office 文档和已有 ZIP 通常已经压缩过。压缩包可能只小一点，仍然超过邮件限制。请检查最终大小；如果太大，请使用团队批准的文件传输服务，不要随意拆分或重命名文件。"
+          },
+          {
+            "t": "h2",
+            "x": "发送前检查压缩包"
+          },
+          {
+            "t": "p",
+            "x": "打开 ZIP 检查文件名和文件夹结构，确认没有误放草稿或私密源文件。核对收件人地址，并确认对方可以解压 ZIP。ZIP 是文件容器，不是访问控制或加密机制。涉及机密时，请使用获批的安全分享方式，并遵守组织政策。"
+          },
+          {
+            "t": "h2",
+            "x": "为什么在浏览器中创建 ZIP 有帮助"
+          },
+          {
+            "t": "p",
+            "x": "项目文件夹、客户素材、税务记录和个人照片都可能很敏感。创建 ZIP 在浏览器中运行，因此无需为了打包而常规上传文件。下载保存和分享位置由你决定。请保留原始文件夹，直到接收者确认收到并能打开完整压缩包。"
+          },
+          {
+            "t": "h2",
+            "x": "为接收者选择合适的格式"
+          },
+          {
+            "t": "p",
+            "x": "如果接收者只需要几页 PDF，[提取页面](/tools/extract-pages)可以创建较小的交付文件。如果要把多个 PDF 作为一份文档阅读，请使用[合并 PDF](/tools/merge-pdf)，而不是 ZIP。若文件超过邮件限制，请使用团队批准的文件传输服务。保留原文件夹副本，并在删除源文件前确认 ZIP 可以正确解压。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "可以免费创建 ZIP 作为邮件附件吗？",
+            "a": "可以。添加文件或文件夹，创建 ZIP 并下载。PrintxPDF 创建 ZIP 无需注册。"
+          },
+          {
+            "q": "ZIP 可以绕过邮件大小限制吗？",
+            "a": "不能。ZIP 文件仍计入附件大小限制。已经压缩过的文件可能只会变小一点。"
+          },
+          {
+            "q": "ZIP 会用密码保护附件吗？",
+            "a": "标准创建 ZIP 流程不会。ZIP 只能打包文件，不能提供安全访问控制或加密。"
+          },
+          {
+            "q": "接收者能打开我的 ZIP 吗？",
+            "a": "大多数现代系统都可以解压 ZIP，但请确认接收者有兼容工具且文件夹结构完整。"
           }
         ],
         "published": "2026-11-15",
