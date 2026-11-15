@@ -7877,6 +7877,86 @@
           "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
         ]
+      },
+      {
+        "topic": "rotate-scanned-pdf-correctly",
+        "slug": "rotate-scanned-pdf-correctly",
+        "cluster": "editing-expansion",
+        "tool": "rotate-pdf",
+        "title": "Cómo girar correctamente un PDF escaneado",
+        "metaTitle": "Cómo girar correctamente un PDF escaneado",
+        "metaDescription": "Gira páginas escaneadas 90°, 180° o 270° y guarda la orientación en el PDF. Gratis en tu navegador, sin cuenta ni marca de agua.",
+        "answer": "Para girar un PDF escaneado, elige el ángulo y las páginas que necesitan corrección, guarda una copia nueva y comprueba que cada hoja se lee en la orientación esperada. La rotación se guarda en el archivo, no es solo un cambio temporal de vista. PrintxPDF procesa el PDF en el navegador y no vuelve a dibujar las páginas, por lo que no reduce su calidad.",
+        "sections": [
+          {
+            "heading": "Cómo girar un PDF escaneado paso a paso",
+            "paragraphs": [
+              "Para girar un PDF escaneado, elige el ángulo y las páginas que necesitan corrección, guarda una copia nueva y comprueba que cada hoja se lee en la orientación esperada. La rotación se guarda en el archivo, no es solo un cambio temporal de vista. PrintxPDF procesa el PDF en el navegador y no vuelve a dibujar las páginas, por lo que no reduce su calidad."
+            ],
+            "steps": [
+              {
+                "heading": "Conserva el original",
+                "text": "Guarda el PDF sin cambios para poder corregir una rotación equivocada."
+              },
+              {
+                "heading": "Identifica páginas y dirección",
+                "text": "Usa miniaturas para ver qué hojas están de lado. La herramienta cuenta desde la primera página, no según el número impreso."
+              },
+              {
+                "heading": "Abre Girar PDF",
+                "text": "Carga el archivo en [Girar PDF](/tools/rotate-pdf), selecciona 90° en sentido horario, 180° o 90° antihorario. Deja el campo de páginas vacío para girarlas todas, o introduce por ejemplo 1, 3-5."
+              },
+              {
+                "heading": "Descarga y revisa",
+                "text": "Guarda el PDF nuevo y confirma en un lector y en la vista de impresión que las páginas quedan derechas."
+              }
+            ]
+          },
+          {
+            "heading": "Qué revisar después de girar",
+            "paragraphs": [
+              "La rotación guardada modifica un ajuste de orientación de cada página. Los lectores PDF y las impresoras aplican ese ajuste al mostrar o imprimir la hoja. No es lo mismo que rotar temporalmente desde el menú de vista, que puede desaparecer al cerrar el documento.",
+              "Las páginas escaneadas suelen necesitar giros de 90 grados si se colocaron de lado en el escáner. Si la imagen está inclinada unos pocos grados, un giro de cuarto de vuelta no la endereza; tendrás que volver a escanear o usar una herramienta de recorte y corrección adecuada.",
+              "Puedes girar solo páginas anchas, como una tabla en las páginas 3 a 5, y mantener vertical el resto del informe. Usa números de posición del archivo. Una portada puede hacer que la numeración impresa no coincida con la posición.",
+              "Girar PDF funciona localmente en la pestaña del navegador. La herramienta escribe un archivo de salida independiente y deja intacto el original. La rotación no elimina metadatos ni oculta información; para eso, usa [Eliminar metadatos PDF](/tools/remove-metadata). Si quieres ajustar miniaturas página por página, prueba [Organizar PDF](/tools/organize-pdf)."
+            ]
+          }
+        ],
+        "ctaLabel": "Gira tu PDF gratis en el navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿La rotación queda guardada permanentemente?",
+            "a": "Sí. El PDF descargado almacena el nuevo ajuste, así que otros lectores, convertidores y cuadros de impresión mostrarán la hoja con esa orientación. El original no cambia. Ejecutar el giro contrario permite volver a la orientación previa."
+          },
+          {
+            "q": "¿Girar un PDF reduce la calidad?",
+            "a": "No. El contenido no se vuelve a dibujar ni comprimir. Solo cambia el ajuste de orientación, por lo que las imágenes escaneadas conservan detalle y el texto sigue seleccionable."
+          },
+          {
+            "q": "¿Puedo girar solo una página?",
+            "a": "Sí. Escribe su posición en el campo, por ejemplo 4. También puedes usar rangos como 2-3. Para girar páginas distintas en direcciones distintas, Organizar PDF permite ver y ajustar cada miniatura."
+          },
+          {
+            "q": "¿Se puede girar unos pocos grados?",
+            "a": "No con la rotación PDF estándar, que usa cuartos de vuelta: 90°, 180° o 270°. Para corregir una imagen ligeramente torcida, vuelve a escanearla o ajusta el recorte con una herramienta adecuada."
+          }
+        ],
+        "keywords": [
+          "cómo girar correctamente un pdf escaneado",
+          "rotate scanned pdf",
+          "rotate pdf page free"
+        ],
+        "relatedTools": [
+          "rotate-pdf",
+          "organize-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages",
+          "add-cover-page-to-pdf"
+        ]
       }
     ]
   },
@@ -15748,6 +15828,86 @@
           "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
         ]
+      },
+      {
+        "topic": "rotate-scanned-pdf-correctly",
+        "slug": "rotate-scanned-pdf-correctly",
+        "cluster": "editing-expansion",
+        "tool": "rotate-pdf",
+        "title": "Como girar corretamente um PDF digitalizado",
+        "metaTitle": "Como girar corretamente um PDF digitalizado",
+        "metaDescription": "Gire páginas digitalizadas em 90°, 180° ou 270° e salve a orientação no PDF. Grátis no navegador, sem conta nem marca-d’água.",
+        "answer": "Para girar um PDF digitalizado, escolha o ângulo e as páginas que precisam de correção, salve uma nova cópia e confira se cada folha está na orientação esperada. A rotação fica gravada no arquivo, não é apenas uma mudança temporária de visualização. O PrintxPDF processa o PDF no navegador e não redesenha as páginas, portanto não reduz a qualidade.",
+        "sections": [
+          {
+            "heading": "Como girar um PDF digitalizado passo a passo",
+            "paragraphs": [
+              "Para girar um PDF digitalizado, escolha o ângulo e as páginas que precisam de correção, salve uma nova cópia e confira se cada folha está na orientação esperada. A rotação fica gravada no arquivo, não é apenas uma mudança temporária de visualização. O PrintxPDF processa o PDF no navegador e não redesenha as páginas, portanto não reduz a qualidade."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o original",
+                "text": "Salve o PDF sem alterações para corrigir uma rotação errada."
+              },
+              {
+                "heading": "Identifique as páginas e a direção",
+                "text": "Use miniaturas para ver quais folhas estão de lado. A ferramenta conta desde a primeira página, não pela numeração impressa."
+              },
+              {
+                "heading": "Abra Girar PDF",
+                "text": "Carregue o arquivo em [Girar PDF](/tools/rotate-pdf), escolha 90° no sentido horário, 180° ou 90° anti-horário. Deixe o campo de páginas vazio para girar todas ou informe, por exemplo, 1, 3-5."
+              },
+              {
+                "heading": "Baixe e confira",
+                "text": "Salve o novo PDF e confirme em um leitor e na visualização de impressão que as páginas ficaram na posição correta."
+              }
+            ]
+          },
+          {
+            "heading": "O que conferir depois de girar",
+            "paragraphs": [
+              "A rotação salva altera uma configuração de orientação em cada página. Leitores de PDF e impressoras aplicam essa configuração ao mostrar ou imprimir a folha. Isso é diferente de girar temporariamente pelo menu de visualização, que pode ser esquecido ao fechar o documento.",
+              "Páginas digitalizadas costumam precisar de giros de 90 graus quando foram colocadas de lado no scanner. Se a imagem estiver inclinada apenas alguns graus, um quarto de volta não a endireitará; será preciso digitalizar novamente ou usar uma ferramenta apropriada para corrigir a inclinação.",
+              "Você pode girar apenas páginas largas, como uma tabela nas páginas 3 a 5, e manter o restante do relatório na vertical. Use posições do arquivo. Uma capa pode fazer a numeração impressa divergir da posição real.",
+              "Girar PDF funciona localmente na aba do navegador. A ferramenta grava um arquivo de saída separado e preserva o original. A rotação não remove metadados nem oculta informações; para isso, use [Remover metadados do PDF](/tools/remove-metadata). Para ajustar páginas pelas miniaturas, use [Organizar PDF](/tools/organize-pdf)."
+            ]
+          }
+        ],
+        "ctaLabel": "Gire seu PDF grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "A rotação fica salva permanentemente?",
+            "a": "Sim. O PDF baixado guarda a nova configuração, então leitores, conversores e telas de impressão mostram a página na orientação escolhida. O original não muda. Uma rotação contrária pode restaurar a posição anterior."
+          },
+          {
+            "q": "Girar um PDF reduz a qualidade?",
+            "a": "Não. O conteúdo não é redesenhado nem recomprimido. Só muda a configuração de orientação, então imagens digitalizadas preservam detalhes e o texto continua selecionável."
+          },
+          {
+            "q": "Posso girar apenas uma página?",
+            "a": "Sim. Informe a posição no campo, por exemplo 4. Também é possível usar intervalos como 2-3. Para girar páginas diferentes em direções distintas, Organizar PDF permite visualizar e ajustar cada miniatura."
+          },
+          {
+            "q": "Posso girar alguns graus?",
+            "a": "Não com a rotação padrão de PDF, que usa quartos de volta: 90°, 180° ou 270°. Para corrigir uma imagem levemente inclinada, digitalize novamente ou ajuste o recorte com uma ferramenta adequada."
+          }
+        ],
+        "keywords": [
+          "como girar corretamente um pdf digitalizado",
+          "rotate scanned pdf",
+          "rotate pdf page free"
+        ],
+        "relatedTools": [
+          "rotate-pdf",
+          "organize-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages",
+          "add-cover-page-to-pdf"
+        ]
       }
     ]
   },
@@ -23618,6 +23778,86 @@
           "add-cover-page-to-pdf",
           "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "rotate-scanned-pdf-correctly",
+        "slug": "rotate-scanned-pdf-correctly",
+        "cluster": "editing-expansion",
+        "tool": "rotate-pdf",
+        "title": "स्कैन किए गए PDF को सही तरीके से कैसे घुमाएं",
+        "metaTitle": "स्कैन किए गए PDF को सही तरीके से कैसे घुमाएं",
+        "metaDescription": "स्कैन किए गए पेज 90°, 180° या 270° घुमाएं और दिशा PDF में सेव करें। ब्राउज़र में मुफ्त, बिना खाते या वॉटरमार्क के।",
+        "answer": "स्कैन किए गए PDF को घुमाने के लिए कोण और सुधार वाले पेज चुनें, नई कॉपी सेव करें और जांचें कि हर शीट सही दिशा में पढ़ी जा रही है। रोटेशन फ़ाइल में सेव होता है, केवल अस्थायी व्यू नहीं। PrintxPDF ब्राउज़र में PDF प्रोसेस करता है और पेजों को दोबारा नहीं बनाता, इसलिए गुणवत्ता कम नहीं होती।",
+        "sections": [
+          {
+            "heading": "स्कैन PDF को चरणों में घुमाएं",
+            "paragraphs": [
+              "स्कैन किए गए PDF को घुमाने के लिए कोण और सुधार वाले पेज चुनें, नई कॉपी सेव करें और जांचें कि हर शीट सही दिशा में पढ़ी जा रही है। रोटेशन फ़ाइल में सेव होता है, केवल अस्थायी व्यू नहीं। PrintxPDF ब्राउज़र में PDF प्रोसेस करता है और पेजों को दोबारा नहीं बनाता, इसलिए गुणवत्ता कम नहीं होती।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल फ़ाइल रखें",
+                "text": "गलत दिशा होने पर सुधार के लिए बिना बदला PDF सुरक्षित रखें।"
+              },
+              {
+                "heading": "पेज और दिशा पहचानें",
+                "text": "थंबनेल देखकर पता लगाएं कि कौन से पेज किनारे पर हैं। टूल पहले पेज से गिनता है, छपे नंबर से नहीं।"
+              },
+              {
+                "heading": "Girar PDF खोलें",
+                "text": "फ़ाइल [Rotate PDF](/tools/rotate-pdf) में खोलें और 90° clockwise, 180° या 90° counter-clockwise चुनें। सभी पेज घुमाने के लिए पेज फ़ील्ड खाली रखें, या 1, 3-5 जैसे नंबर लिखें।"
+              },
+              {
+                "heading": "डाउनलोड और जांचें",
+                "text": "नया PDF सेव करें। PDF Reader और प्रिंट प्रीव्यू में पुष्टि करें कि पेज सही दिशा में हैं।"
+              }
+            ]
+          },
+          {
+            "heading": "घुमाने के बाद क्या जांचें",
+            "paragraphs": [
+              "सेव किया गया रोटेशन हर पेज की दिशा सेटिंग बदलता है। PDF रीडर और प्रिंटर पेज दिखाते या प्रिंट करते समय यह सेटिंग लागू करते हैं। यह View मेन्यू से अस्थायी घुमाव से अलग है, जो दस्तावेज़ बंद करने पर हट सकता है।",
+              "स्कैन किए पेज स्कैनर में तिरछे रखे हों तो अक्सर 90 डिग्री घुमाने की जरूरत होती है। अगर इमेज कुछ डिग्री झुकी हो, तो quarter-turn उसे सीधा नहीं करेगा। दोबारा स्कैन करें या झुकाव सुधारने वाला उपयुक्त टूल इस्तेमाल करें।",
+              "आप केवल चौड़े पेज, जैसे रिपोर्ट के पेज 3 से 5 की तालिका, घुमा सकते हैं और बाकी पेज सीधे रख सकते हैं। फ़ाइल की स्थिति वाले नंबर डालें। कवर होने पर छपा हुआ पेज नंबर और स्थिति अलग हो सकते हैं।",
+              "Rotate PDF ब्राउज़र टैब में स्थानीय रूप से चलता है। यह अलग आउटपुट फ़ाइल बनाता है और मूल को नहीं बदलता। रोटेशन मेटाडेटा नहीं हटाता और सामग्री नहीं छिपाता। इसके लिए [Remove PDF Metadata](/tools/remove-metadata) इस्तेमाल करें। पेजों के थंबनेल से चयन के लिए [Organize PDF](/tools/organize-pdf) खोलें।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में PDF मुफ्त घुमाएं, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "क्या घुमाव हमेशा के लिए सेव होता है?",
+            "a": "हां। डाउनलोड की गई PDF में नई दिशा सेटिंग रहती है, इसलिए दूसरे रीडर, कन्वर्टर और प्रिंट डायलॉग भी उसी दिशा में पेज दिखाते हैं। मूल फ़ाइल नहीं बदलती। विपरीत दिशा का घुमाव करके वापस किया जा सकता है।"
+          },
+          {
+            "q": "क्या PDF घुमाने से गुणवत्ता घटती है?",
+            "a": "नहीं। सामग्री फिर से नहीं बनाई या कंप्रेस की जाती। केवल दिशा सेटिंग बदलती है, इसलिए स्कैन की डिटेल बनी रहती है और टेक्स्ट चुना जा सकता है।"
+          },
+          {
+            "q": "क्या केवल एक पेज घुमा सकता हूं?",
+            "a": "हां। Pages फ़ील्ड में उसकी स्थिति लिखें, जैसे 4। 2-3 जैसी रेंज भी चलती है। अलग-अलग पेज अलग दिशा में घुमाने के लिए Organize PDF में थंबनेल देखकर सेट करें।"
+          },
+          {
+            "q": "क्या कुछ डिग्री ही घुमा सकता हूं?",
+            "a": "PDF की मानक रोटेशन केवल quarter-turn है: 90°, 180° या 270°। हल्की तिरछी स्कैन इमेज सीधी करने के लिए दोबारा स्कैन करें या सही सुधार टूल इस्तेमाल करें।"
+          }
+        ],
+        "keywords": [
+          "स्कैन किए गए pdf को सही तरीके से कैसे घुमाएं",
+          "rotate scanned pdf",
+          "rotate pdf page free"
+        ],
+        "relatedTools": [
+          "rotate-pdf",
+          "organize-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages",
+          "add-cover-page-to-pdf"
         ]
       }
     ]
@@ -31498,6 +31738,86 @@
           "add-cover-page-to-pdf",
           "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "rotate-scanned-pdf-correctly",
+        "slug": "rotate-scanned-pdf-correctly",
+        "cluster": "editing-expansion",
+        "tool": "rotate-pdf",
+        "title": "كيفية تدوير PDF ممسوح ضوئياً بشكل صحيح",
+        "metaTitle": "كيفية تدوير PDF ممسوح ضوئياً بشكل صحيح",
+        "metaDescription": "دوّر صفحات PDF الممسوحة 90° أو 180° أو 270° واحفظ الاتجاه في الملف. مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "answer": "لتدوير PDF ممسوح ضوئياً، اختر الزاوية والصفحات التي تحتاج إلى تصحيح، واحفظ نسخة جديدة ثم تحقق من اتجاه القراءة. يُحفظ التدوير في الملف وليس مجرد تغيير مؤقت في العرض. تعالج PrintxPDF الملف في المتصفح ولا تعيد رسم الصفحات، لذلك لا تقلل الجودة.",
+        "sections": [
+          {
+            "heading": "تدوير PDF ممسوح خطوة بخطوة",
+            "paragraphs": [
+              "لتدوير PDF ممسوح ضوئياً، اختر الزاوية والصفحات التي تحتاج إلى تصحيح، واحفظ نسخة جديدة ثم تحقق من اتجاه القراءة. يُحفظ التدوير في الملف وليس مجرد تغيير مؤقت في العرض. تعالج PrintxPDF الملف في المتصفح ولا تعيد رسم الصفحات، لذلك لا تقلل الجودة."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بالأصل",
+                "text": "احفظ نسخة غير معدّلة لتصحيح أي تدوير خاطئ."
+              },
+              {
+                "heading": "حدّد الصفحات والاتجاه",
+                "text": "استخدم الصور المصغرة لمعرفة الصفحات الجانبية. يبدأ العد من الصفحة الأولى، لا من الرقم المطبوع."
+              },
+              {
+                "heading": "افتح Rotate PDF",
+                "text": "حمّل الملف في [Rotate PDF](/tools/rotate-pdf) واختر 90° مع عقارب الساعة أو 180° أو 90° عكسها. اترك خانة الصفحات فارغة لتدوير الكل، أو أدخل مثلاً 1, 3-5."
+              },
+              {
+                "heading": "نزّل وراجع",
+                "text": "احفظ PDF الجديد وتحقق في قارئ PDF ومعاينة الطباعة من أن الصفحات أصبحت بالاتجاه الصحيح."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي يجب مراجعته بعد التدوير",
+            "paragraphs": [
+              "يغيّر التدوير المحفوظ إعداد اتجاه الصفحة. تطبق قارئات PDF والطابعات هذا الإعداد عند العرض أو الطباعة. وهو يختلف عن التدوير المؤقت في قائمة العرض، الذي قد يختفي عند إغلاق الملف.",
+              "تحتاج الصفحات الممسوحة غالباً إلى تدوير 90 درجة إذا وُضعت جانبياً في الماسح. أما إذا كانت الصورة مائلة بضع درجات فقط، فلن يصلحها ربع دورة؛ أعد المسح أو استخدم أداة مناسبة لتصحيح الميل.",
+              "يمكنك تدوير الصفحات العريضة وحدها، مثل جدول في الصفحات 3 إلى 5، وترك بقية التقرير عمودياً. أدخل مواضع الصفحات في الملف. قد يجعل الغلاف الرقم المطبوع مختلفاً عن الموضع.",
+              "تعمل Rotate PDF محلياً في علامة تبويب المتصفح. تنشئ ملف إخراج منفصلاً وتترك الأصل كما هو. لا يزيل التدوير البيانات الوصفية ولا يخفي المعلومات؛ استخدم [Remove PDF Metadata](/tools/remove-metadata) لذلك. وللاختيار من الصور المصغرة، افتح [Organize PDF](/tools/organize-pdf)."
+            ]
+          }
+        ],
+        "ctaLabel": "دوّر PDF مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "هل يبقى التدوير محفوظاً؟",
+            "a": "نعم. يحتفظ PDF المنزّل بإعداد الاتجاه، لذلك تعرضه القارئات والمحوّلات ونوافذ الطباعة بالاتجاه الجديد. لا يتغير الملف الأصلي. ويمكن استخدام التدوير المعاكس للعودة إلى الوضع السابق."
+          },
+          {
+            "q": "هل يقلل التدوير جودة PDF؟",
+            "a": "لا. لا يعاد رسم المحتوى أو ضغطه. يتغير إعداد الاتجاه فقط، لذا تحتفظ الصور الممسوحة بتفاصيلها ويبقى النص قابلاً للتحديد."
+          },
+          {
+            "q": "هل يمكن تدوير صفحة واحدة فقط؟",
+            "a": "نعم. أدخل موضعها في خانة الصفحات، مثل 4. وتقبل الأداة نطاقات مثل 2-3. لتدوير صفحات مختلفة بزوايا مختلفة، استخدم Organize PDF لرؤية كل صورة مصغرة وتعديلها."
+          },
+          {
+            "q": "هل يمكن التدوير بضع درجات؟",
+            "a": "لا. تدوير PDF القياسي يكون بربع دورة: 90° أو 180° أو 270°. لتصحيح ميل بسيط في المسح، أعد مسحه أو استخدم أداة ملائمة لتعديل الميل."
+          }
+        ],
+        "keywords": [
+          "كيفية تدوير pdf ممسوح ضوئياً بشكل صحيح",
+          "rotate scanned pdf",
+          "rotate pdf page free"
+        ],
+        "relatedTools": [
+          "rotate-pdf",
+          "organize-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages",
+          "add-cover-page-to-pdf"
         ]
       }
     ]
@@ -39382,6 +39702,86 @@
           "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
         ]
+      },
+      {
+        "topic": "rotate-scanned-pdf-correctly",
+        "slug": "rotate-scanned-pdf-correctly",
+        "cluster": "editing-expansion",
+        "tool": "rotate-pdf",
+        "title": "স্ক্যান করা PDF সঠিকভাবে কীভাবে ঘোরাবেন",
+        "metaTitle": "স্ক্যান করা PDF সঠিকভাবে কীভাবে ঘোরাবেন",
+        "metaDescription": "স্ক্যান করা পৃষ্ঠা 90°, 180° বা 270° ঘুরিয়ে দিক PDF-এ সংরক্ষণ করুন। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "answer": "স্ক্যান করা PDF ঘোরাতে কোণ ও যে পৃষ্ঠাগুলো ঠিক করতে হবে তা বেছে নিন, নতুন কপি সংরক্ষণ করুন এবং প্রতিটি পৃষ্ঠা সঠিক দিকে পড়া যায় কি না দেখুন। ঘোরানোর সেটিং ফাইলে সংরক্ষিত হয়, এটি সাময়িক ভিউ পরিবর্তন নয়। PrintxPDF ব্রাউজারে ফাইল প্রক্রিয়া করে এবং পৃষ্ঠা নতুন করে আঁকে না, তাই মান কমে না।",
+        "sections": [
+          {
+            "heading": "ধাপে ধাপে স্ক্যান PDF ঘোরান",
+            "paragraphs": [
+              "স্ক্যান করা PDF ঘোরাতে কোণ ও যে পৃষ্ঠাগুলো ঠিক করতে হবে তা বেছে নিন, নতুন কপি সংরক্ষণ করুন এবং প্রতিটি পৃষ্ঠা সঠিক দিকে পড়া যায় কি না দেখুন। ঘোরানোর সেটিং ফাইলে সংরক্ষিত হয়, এটি সাময়িক ভিউ পরিবর্তন নয়। PrintxPDF ব্রাউজারে ফাইল প্রক্রিয়া করে এবং পৃষ্ঠা নতুন করে আঁকে না, তাই মান কমে না।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল ফাইল রাখুন",
+                "text": "ভুল ঘোরানো হলে সংশোধনের জন্য অপরিবর্তিত PDF সংরক্ষণ করুন।"
+              },
+              {
+                "heading": "পৃষ্ঠা ও দিক শনাক্ত করুন",
+                "text": "থাম্বনেইল দেখে কোন পৃষ্ঠা পাশ ফিরে আছে বুঝুন। টুল প্রথম পৃষ্ঠা থেকে গোনে, ছাপা নম্বর থেকে নয়।"
+              },
+              {
+                "heading": "Rotate PDF খুলুন",
+                "text": "ফাইল [Rotate PDF](/tools/rotate-pdf)-এ দিন এবং 90° clockwise, 180° বা 90° counter-clockwise বেছে নিন। সব পৃষ্ঠা ঘোরাতে পৃষ্ঠা ঘর ফাঁকা রাখুন, অথবা 1, 3-5 লিখুন।"
+              },
+              {
+                "heading": "ডাউনলোড ও পরীক্ষা করুন",
+                "text": "নতুন PDF সংরক্ষণ করে PDF Reader ও প্রিন্ট প্রিভিউতে পৃষ্ঠার দিক ঠিক আছে কি না দেখুন।"
+              }
+            ]
+          },
+          {
+            "heading": "ঘোরানোর পর কী পরীক্ষা করবেন",
+            "paragraphs": [
+              "সংরক্ষিত ঘোরানো প্রতিটি পৃষ্ঠার orientation সেটিং বদলায়। PDF রিডার ও প্রিন্টার দেখানো বা ছাপার সময় সেটিংটি মেনে চলে। View মেনুতে সাময়িকভাবে ঘোরানো আলাদা; ফাইল বন্ধ করলে তা হারিয়ে যেতে পারে।",
+              "স্ক্যানারে পৃষ্ঠা পাশ করে রাখা হলে স্ক্যান করা পাতায় প্রায়ই 90 ডিগ্রি ঘোরানোর দরকার হয়। ছবি কয়েক ডিগ্রি কাত হলে quarter-turn সেটিকে সোজা করবে না। আবার স্ক্যান করুন বা কাত ঠিক করার উপযুক্ত টুল নিন।",
+              "রিপোর্টের 3 থেকে 5 নম্বর পৃষ্ঠার চওড়া টেবিলের মতো শুধু ল্যান্ডস্কেপ পৃষ্ঠা ঘুরিয়ে বাকি অংশ সোজা রাখা যায়। ফাইলের অবস্থান-নম্বর দিন। কভার থাকলে ছাপা নম্বর অবস্থানের সঙ্গে মিলবে না।",
+              "Rotate PDF ব্রাউজার ট্যাবে স্থানীয়ভাবে চলে। এটি আলাদা আউটপুট ফাইল তৈরি করে, মূলটি অপরিবর্তিত রাখে। ঘোরানো মেটাডেটা সরায় না বা তথ্য লুকায় না; এর জন্য [Remove PDF Metadata](/tools/remove-metadata) ব্যবহার করুন। থাম্বনেইল ধরে আলাদা পৃষ্ঠা ঠিক করতে [Organize PDF](/tools/organize-pdf) নিন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে PDF ঘোরান, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "ঘোরানো কি স্থায়ীভাবে সংরক্ষিত হয়?",
+            "a": "হ্যাঁ। ডাউনলোড করা PDF-এ নতুন দিকের সেটিং থাকে, তাই অন্য রিডার, কনভার্টার ও প্রিন্ট ডায়ালগেও পৃষ্ঠা সেইভাবে দেখা যায়। মূল ফাইল বদলায় না। বিপরীত দিকে ঘুরিয়ে আগের অবস্থায় ফেরা যায়।"
+          },
+          {
+            "q": "PDF ঘোরালে কি মান কমে?",
+            "a": "না। বিষয়বস্তু নতুন করে আঁকা বা সংকুচিত হয় না। শুধু দিকের সেটিং বদলায়, তাই স্ক্যানের বিস্তারিত থাকে এবং টেক্সট নির্বাচনযোগ্য থাকে।"
+          },
+          {
+            "q": "শুধু একটি পৃষ্ঠা ঘোরাতে পারি?",
+            "a": "হ্যাঁ। Pages ঘরে অবস্থান লিখুন, যেমন 4। 2-3-এর মতো রেঞ্জও চলে। আলাদা পৃষ্ঠার আলাদা দিক ঠিক করতে Organize PDF-এ থাম্বনেইল দেখুন।"
+          },
+          {
+            "q": "কয়েক ডিগ্রি ঘোরানো যাবে?",
+            "a": "না। PDF-এর মানক ঘোরানো quarter-turn: 90°, 180° বা 270°। সামান্য কাত স্ক্যান ঠিক করতে পুনরায় স্ক্যান করুন অথবা উপযুক্ত tilt-correction টুল ব্যবহার করুন।"
+          }
+        ],
+        "keywords": [
+          "স্ক্যান করা pdf সঠিকভাবে কীভাবে ঘোরাবেন",
+          "rotate scanned pdf",
+          "rotate pdf page free"
+        ],
+        "relatedTools": [
+          "rotate-pdf",
+          "organize-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages",
+          "add-cover-page-to-pdf"
+        ]
       }
     ]
   },
@@ -47252,6 +47652,86 @@
           "add-cover-page-to-pdf",
           "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "rotate-scanned-pdf-correctly",
+        "slug": "rotate-scanned-pdf-correctly",
+        "cluster": "editing-expansion",
+        "tool": "rotate-pdf",
+        "title": "Cách xoay PDF đã quét đúng hướng",
+        "metaTitle": "Cách xoay PDF đã quét đúng hướng",
+        "metaDescription": "Xoay trang quét 90°, 180° hoặc 270° và lưu hướng trong PDF. Miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "answer": "Để xoay PDF đã quét, chọn góc và các trang cần sửa, lưu một bản mới rồi kiểm tra từng trang theo hướng đọc. Hướng xoay được lưu trong tệp, không chỉ là thay đổi chế độ xem tạm thời. PrintxPDF xử lý PDF trong trình duyệt và không vẽ lại trang, nên chất lượng không giảm.",
+        "sections": [
+          {
+            "heading": "Xoay PDF đã quét từng bước",
+            "paragraphs": [
+              "Để xoay PDF đã quét, chọn góc và các trang cần sửa, lưu một bản mới rồi kiểm tra từng trang theo hướng đọc. Hướng xoay được lưu trong tệp, không chỉ là thay đổi chế độ xem tạm thời. PrintxPDF xử lý PDF trong trình duyệt và không vẽ lại trang, nên chất lượng không giảm."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ bản gốc",
+                "text": "Lưu một bản chưa chỉnh sửa để sửa nếu xoay sai."
+              },
+              {
+                "heading": "Xác định trang và hướng",
+                "text": "Dùng hình thu nhỏ để tìm trang bị nằm ngang. Công cụ đếm từ trang đầu, không theo số in trên trang."
+              },
+              {
+                "heading": "Mở Rotate PDF",
+                "text": "Tải tệp vào [Rotate PDF](/tools/rotate-pdf), chọn 90° theo chiều kim đồng hồ, 180° hoặc 90° ngược chiều. Để trống ô trang để xoay tất cả hoặc nhập, ví dụ 1, 3-5."
+              },
+              {
+                "heading": "Tải xuống và kiểm tra",
+                "text": "Lưu PDF mới rồi xác nhận hướng trang trong PDF Reader và bản xem trước khi in."
+              }
+            ]
+          },
+          {
+            "heading": "Cần kiểm tra gì sau khi xoay",
+            "paragraphs": [
+              "Hướng xoay đã lưu thay đổi thuộc tính hướng của từng trang. Trình đọc PDF và máy in áp dụng thuộc tính này khi hiển thị hoặc in. Cách này khác với xoay tạm trong menu xem, vốn có thể mất khi đóng tài liệu.",
+              "Trang quét thường cần xoay 90 độ nếu bị đặt nằm nghiêng trong máy quét. Nếu ảnh chỉ lệch vài độ, xoay một phần tư vòng sẽ không làm thẳng ảnh; hãy quét lại hoặc dùng công cụ chỉnh độ nghiêng phù hợp.",
+              "Bạn có thể chỉ xoay các trang ngang, chẳng hạn bảng ở trang 3 đến 5, và giữ phần còn lại theo chiều dọc. Nhập vị trí trang trong tệp. Bìa có thể khiến số in khác vị trí thực tế.",
+              "Rotate PDF chạy cục bộ trong tab trình duyệt. Công cụ tạo tệp đầu ra riêng và giữ nguyên bản gốc. Xoay trang không xóa siêu dữ liệu hoặc che nội dung; dùng [Remove PDF Metadata](/tools/remove-metadata) để xử lý siêu dữ liệu. Muốn chọn trang theo hình thu nhỏ, hãy dùng [Organize PDF](/tools/organize-pdf)."
+            ]
+          }
+        ],
+        "ctaLabel": "Xoay PDF miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Xoay trang có được lưu vĩnh viễn không?",
+            "a": "Có. PDF tải xuống lưu thuộc tính hướng mới, nên trình đọc, bộ chuyển đổi và hộp thoại in khác cũng hiển thị trang theo hướng đó. Bản gốc không đổi. Xoay theo hướng ngược lại để khôi phục vị trí trước."
+          },
+          {
+            "q": "Xoay PDF có làm giảm chất lượng không?",
+            "a": "Không. Nội dung không được vẽ lại hay nén lại. Chỉ thuộc tính hướng thay đổi, nên ảnh quét giữ chi tiết và văn bản vẫn chọn được."
+          },
+          {
+            "q": "Tôi có thể xoay một trang không?",
+            "a": "Có. Nhập vị trí trang, ví dụ 4. Các khoảng như 2-3 cũng dùng được. Để xoay các trang theo hướng khác nhau, Organize PDF cho phép xem và chỉnh từng hình thu nhỏ."
+          },
+          {
+            "q": "Có thể xoay vài độ không?",
+            "a": "Không bằng phép xoay PDF chuẩn, vốn dùng góc phần tư: 90°, 180° hoặc 270°. Để sửa ảnh quét lệch nhẹ, hãy quét lại hoặc dùng công cụ chỉnh nghiêng thích hợp."
+          }
+        ],
+        "keywords": [
+          "cách xoay pdf đã quét đúng hướng",
+          "rotate scanned pdf",
+          "rotate pdf page free"
+        ],
+        "relatedTools": [
+          "rotate-pdf",
+          "organize-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages",
+          "add-cover-page-to-pdf"
         ]
       }
     ]
@@ -55132,6 +55612,86 @@
           "add-cover-page-to-pdf",
           "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "rotate-scanned-pdf-correctly",
+        "slug": "rotate-scanned-pdf-correctly",
+        "cluster": "editing-expansion",
+        "tool": "rotate-pdf",
+        "title": "如何正确旋转扫描版 PDF",
+        "metaTitle": "如何正确旋转扫描版 PDF",
+        "metaDescription": "将扫描页旋转 90°、180° 或 270°，并把方向保存到 PDF。浏览器内免费处理，无需账户，也没有水印。",
+        "answer": "要旋转扫描版 PDF，请选择需要修正的角度和页面，保存新副本，并检查每页是否符合阅读方向。旋转设置会写入文件，不只是临时改变视图。PrintxPDF 在浏览器中处理 PDF，不会重新绘制页面，因此不会降低质量。",
+        "sections": [
+          {
+            "heading": "逐步旋转扫描版 PDF",
+            "paragraphs": [
+              "要旋转扫描版 PDF，请选择需要修正的角度和页面，保存新副本，并检查每页是否符合阅读方向。旋转设置会写入文件，不只是临时改变视图。PrintxPDF 在浏览器中处理 PDF，不会重新绘制页面，因此不会降低质量。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原文件",
+                "text": "保存未修改的 PDF，以便纠正错误的旋转。"
+              },
+              {
+                "heading": "确认页面和方向",
+                "text": "查看缩略图，找出横向或倒置的页面。工具从文件第一页开始计数，不使用页面上印刷的数字。"
+              },
+              {
+                "heading": "打开 Rotate PDF",
+                "text": "在 [Rotate PDF](/tools/rotate-pdf) 中加载文件，选择顺时针 90°、180° 或逆时针 90°。旋转全部页面时留空页码栏；只旋转部分页面可输入 1, 3-5 等范围。"
+              },
+              {
+                "heading": "下载并检查",
+                "text": "保存新的 PDF，并在 PDF Reader 和打印预览中确认页面方向正确。"
+              }
+            ]
+          },
+          {
+            "heading": "旋转后检查什么",
+            "paragraphs": [
+              "保存旋转会更改每页的方向设置。PDF 阅读器和打印机在显示或打印时会应用该设置。这不同于“视图”菜单中的临时旋转，后者可能在关闭文档时消失。",
+              "扫描页在扫描仪中横放时，通常需要旋转 90 度。如果图像只倾斜了几度，四分之一圈无法校正倾斜；请重新扫描，或使用适合的倾斜校正工具。",
+              "你可以只旋转横向页面，例如报告第 3 至 5 页的宽表格，并让其余页面保持竖向。输入文件中的页面位置。若有封面，印刷页码可能与实际位置不同。",
+              "Rotate PDF 在浏览器标签页中本地运行。它会生成单独的输出文件，原件保持不变。旋转不会删除元数据或隐藏内容；可用 [Remove PDF Metadata](/tools/remove-metadata) 处理元数据。若想按缩略图逐页调整，可用 [Organize PDF](/tools/organize-pdf)。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费旋转 PDF，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "旋转方向会永久保存吗？",
+            "a": "会。下载的 PDF 会保存新的方向设置，因此其他阅读器、转换器和打印对话框也会按新方向显示页面。原文件不变。再次使用相反方向旋转可恢复原方向。"
+          },
+          {
+            "q": "旋转 PDF 会降低画质吗？",
+            "a": "不会。页面内容不会重新绘制或压缩，只会更改方向设置，因此扫描图像保留细节，文本仍可选择。"
+          },
+          {
+            "q": "可以只旋转一页吗？",
+            "a": "可以。在页面栏输入位置，例如 4。也支持 2-3 这样的范围。要以不同方向旋转多个页面，可用 Organize PDF 查看并逐页调整缩略图。"
+          },
+          {
+            "q": "可以只旋转几度吗？",
+            "a": "标准 PDF 旋转只支持四分之一圈，即 90°、180° 或 270°。若要修正轻微倾斜的扫描图，请重新扫描或使用合适的倾斜校正工具。"
+          }
+        ],
+        "keywords": [
+          "如何正确旋转扫描版 pdf",
+          "rotate scanned pdf",
+          "rotate pdf page free"
+        ],
+        "relatedTools": [
+          "rotate-pdf",
+          "organize-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages",
+          "add-cover-page-to-pdf"
         ]
       }
     ]
