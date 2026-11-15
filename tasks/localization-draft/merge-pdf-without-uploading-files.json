@@ -1,0 +1,917 @@
+{
+  "topic": "merge-pdf-without-uploading-files",
+  "sourceCluster": "merge",
+  "tool": "merge-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo unir archivos PDF sin subirlos",
+      "metaTitle": "Unir PDF sin subir archivos | Gratis y privado",
+      "metaDescription": "Une PDF en tu navegador sin subirlos. Gratis, sin registro ni marca de agua, con procesamiento local para tus documentos.",
+      "keyword": "unir PDF sin subir archivos",
+      "secondaryKeywords": [
+        "unir PDF localmente",
+        "combinador PDF privado",
+        "unir PDF confidencial",
+        "combinar PDF sin nube"
+      ],
+      "answer": "Para unir PDF sin subirlos, usa una herramienta que procese los archivos dentro de tu navegador. Añade los documentos, ordénalos, crea una copia combinada y revísala antes de compartirla. PrintxPDF procesa las uniones estándar en tu pestaña: tus archivos permanecen en el dispositivo. Es gratis, no pide registro y no añade marcas de agua.",
+      "ctaLabel": "Unir PDF en privado en el navegador",
+      "body": [
+        {
+          "t": "p",
+          "x": "Unir PDF no requiere enviar el archivo a un servicio en la nube. PrintxPDF procesa las uniones estándar en la pestaña del navegador y crea una copia combinada en tu equipo. Esto resulta útil con extractos bancarios, datos médicos, contratos o documentos de clientes que no quieres colocar en una cola de procesamiento ajena. No necesitas cuenta ni tarjeta; no hay marca de agua ni una prueba que termine en un cobro."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo unir PDF de forma privada en el navegador"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Conserva los originales",
+              "x": "Si los documentos son importantes, trabaja con copias. Así podrás corregir el orden sin perder las fuentes."
+            },
+            {
+              "h": "Abre Unir PDF",
+              "x": "Ve a [Unir PDF](/tools/merge-pdf) y añade los archivos desde tu dispositivo. La unión estándar se procesa en la pestaña."
+            },
+            {
+              "h": "Ordena y combina",
+              "x": "Coloca los documentos en la secuencia correcta, revisa nombres y páginas, y crea el PDF combinado."
+            },
+            {
+              "h": "Descarga y comprueba",
+              "x": "Abre el resultado, revisa el número de páginas y mira las transiciones entre documentos."
+            },
+            {
+              "h": "Haz los ajustes necesarios",
+              "x": "Usa [Organizar páginas](/tools/organize-pdf) para mover páginas, [Eliminar metadatos](/tools/remove-metadata) si debes limpiar las propiedades y [Comprimir PDF](/tools/compress-pdf) si el archivo pesa demasiado."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Une PDF localmente: gratis, sin registro, sin marca de agua y sin subir los archivos en una unión estándar."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué importa el procesamiento local"
+        },
+        {
+          "t": "p",
+          "x": "Una herramienta en la nube debe recibir una copia antes de procesarla. Eso puede ser válido si tu organización ha aprobado al proveedor y sus condiciones. Pero no es la única opción. El procesamiento en el navegador evita una transferencia innecesaria para esta tarea y mantiene el archivo en el dispositivo que controlas. Comprueba siempre los requisitos de tu empresa o de tu sector antes de tratar documentos regulados."
+        },
+        {
+          "t": "h2",
+          "x": "Unir PDF en el navegador o en la nube"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Aspecto",
+            "Procesamiento local",
+            "Unión en la nube"
+          ],
+          "rows": [
+            [
+              "Dónde se procesa",
+              "En la pestaña del navegador",
+              "Después de subirlo al servicio"
+            ],
+            [
+              "Cuenta",
+              "No se necesita para las herramientas básicas de PrintxPDF",
+              "Puede ser opcional o necesaria"
+            ],
+            [
+              "Marca de agua",
+              "PrintxPDF no añade ninguna",
+              "Depende del proveedor y del plan"
+            ],
+            [
+              "Uso adecuado",
+              "Unir documentos cotidianos con privacidad",
+              "Flujos aprobados para servicios en la nube"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Los metadatos y el contenido visible son cosas distintas"
+        },
+        {
+          "t": "p",
+          "x": "Que el PDF no salga de tu equipo durante la unión no significa que el documento quede limpio. Puede conservar autor, título, fechas, comentarios, archivos adjuntos o información privada visible. Usa [Eliminar metadatos](/tools/remove-metadata) para limpiar las propiedades estándar cuando corresponda. Si debes ocultar contenido, aplica una redacción real y verifícala. Una página eliminada o un rectángulo negro superpuesto no garantizan que el texto sea irrecuperable."
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba el PDF antes de compartirlo"
+        },
+        {
+          "t": "p",
+          "x": "Abre la copia, comprueba el total de páginas y revisa las páginas importantes a tamaño normal. Si necesitas buscar texto en un escaneo, ejecuta [OCR PDF](/tools/ocr-pdf) sobre una copia y verifica nombres y cifras. Conserva los originales firmados: al crear un PDF combinado puede cambiar el estado de las firmas. El flujo más seguro es guardar las fuentes, preparar una copia para compartir y revisar qué contiene."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿PrintxPDF sube mis archivos al unir PDF?",
+          "a": "La unión estándar se procesa dentro de la pestaña del navegador y los archivos permanecen en tu dispositivo para esa tarea. La página identifica por separado las herramientas que requieren procesamiento en servidor."
+        },
+        {
+          "q": "¿Puedo unir extractos bancarios o contratos en privado?",
+          "a": "El procesamiento local evita enviar los archivos a un servidor de procesamiento para unirlos. Guarda los originales y revisa la copia. Si tu política lo pide, elimina metadatos o redacta el contenido por separado."
+        },
+        {
+          "q": "¿Unir PDF elimina los metadatos?",
+          "a": "No. La unión combina páginas, pero no garantiza que elimine las propiedades del documento ni la información incrustada. Usa una herramienta específica para eliminar metadatos cuando sea necesario."
+        },
+        {
+          "q": "¿Las firmas digitales siguen siendo válidas tras unir los archivos?",
+          "a": "Crear un documento combinado puede afectar al estado de las firmas. Conserva los archivos firmados originales y confirma los requisitos del destinatario antes de confiar en la copia."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como unir PDFs sem fazer upload",
+      "metaTitle": "Una PDFs sem upload: grátis e privado",
+      "metaDescription": "Una PDFs no navegador sem enviar arquivos. Grátis, sem cadastro ou marca-d'água, com processamento local.",
+      "keyword": "unir PDF sem fazer upload",
+      "secondaryKeywords": [
+        "unir PDF localmente",
+        "unir PDF privado",
+        "juntar PDF confidencial",
+        "unir PDF sem nuvem"
+      ],
+      "answer": "Para unir PDFs sem fazer upload, use uma ferramenta que processe os arquivos dentro do navegador. Adicione os documentos, organize a ordem, crie uma cópia única e confira antes de compartilhar. O PrintxPDF processa uniões padrão na própria aba: os arquivos ficam no seu dispositivo. É grátis, não exige cadastro e não coloca marca-d'água.",
+      "ctaLabel": "Una PDFs com privacidade no navegador",
+      "body": [
+        {
+          "t": "p",
+          "x": "Juntar PDFs não exige enviar o arquivo para um serviço na nuvem. O PrintxPDF processa uniões padrão na aba do navegador e cria uma cópia no seu computador. Isso ajuda com extratos bancários, dados médicos, contratos e arquivos de clientes que você não quer colocar na fila de processamento de terceiros. Não precisa de conta ou cartão; não há marca-d'água nem teste que depois vire cobrança."
+        },
+        {
+          "t": "h2",
+          "x": "Como unir PDFs com privacidade no navegador"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarde os originais",
+              "x": "Se os documentos forem importantes, trabalhe com cópias. Assim você pode corrigir a ordem sem perder os arquivos de origem."
+            },
+            {
+              "h": "Abra Unir PDF",
+              "x": "Acesse [Unir PDF](/tools/merge-pdf) e adicione os arquivos do dispositivo. A união padrão é processada na aba."
+            },
+            {
+              "h": "Organize e una",
+              "x": "Coloque os documentos na sequência certa, confira nomes e páginas e gere o PDF combinado."
+            },
+            {
+              "h": "Baixe e confira",
+              "x": "Abra o resultado, confira o total de páginas e verifique a passagem entre documentos."
+            },
+            {
+              "h": "Faça os ajustes necessários",
+              "x": "Use [Organizar páginas](/tools/organize-pdf) para mover páginas, [Remover metadados](/tools/remove-metadata) para limpar propriedades quando necessário e [Compactar PDF](/tools/compress-pdf) se o arquivo ficar grande."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Una PDFs localmente: grátis, sem cadastro, sem marca-d'água e sem upload na união padrão."
+        },
+        {
+          "t": "h2",
+          "x": "Por que o processamento local importa"
+        },
+        {
+          "t": "p",
+          "x": "Uma ferramenta na nuvem precisa receber uma cópia do arquivo antes de processá-lo. Isso pode ser adequado quando sua organização aprovou o fornecedor e os termos. Mas não é a única opção. O processamento no navegador evita uma transferência desnecessária nessa tarefa e mantém o arquivo no dispositivo que você controla. Confira as regras da sua empresa ou do seu setor antes de lidar com documentos regulados."
+        },
+        {
+          "t": "h2",
+          "x": "União local ou na nuvem"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Questão",
+            "Processamento local",
+            "União na nuvem"
+          ],
+          "rows": [
+            [
+              "Onde o PDF é processado?",
+              "Na aba do navegador",
+              "Depois do envio ao serviço"
+            ],
+            [
+              "Precisa de conta?",
+              "Não para as ferramentas básicas do PrintxPDF",
+              "Pode ser opcional ou obrigatória"
+            ],
+            [
+              "Tem marca-d'água?",
+              "O PrintxPDF não adiciona",
+              "Varia conforme fornecedor e plano"
+            ],
+            [
+              "Melhor uso",
+              "Montar documentos rotineiros com privacidade",
+              "Fluxos aprovados para processamento em nuvem"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Metadados e conteúdo visível são questões diferentes"
+        },
+        {
+          "t": "p",
+          "x": "Manter o PDF no dispositivo durante a união não significa que ele esteja limpo. O arquivo pode manter autor, título, datas, comentários, anexos e informações privadas visíveis. Use [Remover metadados](/tools/remove-metadata) para limpar as propriedades padrão quando for apropriado. Se precisar ocultar conteúdo, use uma redação real e verifique o resultado. Excluir uma página ou cobrir texto com um retângulo preto não garante que ele não possa ser recuperado."
+        },
+        {
+          "t": "h2",
+          "x": "Confira antes de compartilhar"
+        },
+        {
+          "t": "p",
+          "x": "Abra a cópia, confira o número de páginas e examine as páginas importantes em tamanho normal. Se precisar pesquisar texto em digitalizações, use [OCR PDF](/tools/ocr-pdf) em uma cópia e verifique nomes e números. Guarde os originais assinados: criar um PDF combinado pode afetar o status das assinaturas. O fluxo mais seguro é manter as fontes, criar uma cópia para compartilhar e conferir o conteúdo."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "O PrintxPDF faz upload dos arquivos ao unir PDFs?",
+          "a": "A união padrão acontece dentro da aba do navegador e os arquivos permanecem no seu dispositivo durante a tarefa. A página identifica separadamente as ferramentas que precisam de processamento em servidor."
+        },
+        {
+          "q": "Posso unir extratos bancários ou contratos com privacidade?",
+          "a": "O processamento local evita enviar os arquivos a um servidor para uni-los. Guarde os originais e confira a cópia. Se a sua política exigir, remova metadados ou redija o conteúdo separadamente."
+        },
+        {
+          "q": "Unir PDFs remove metadados?",
+          "a": "Não. A união combina páginas, mas não garante a remoção das propriedades do documento ou de informações incorporadas. Use uma ferramenta própria para remover metadados quando necessário."
+        },
+        {
+          "q": "As assinaturas digitais continuam válidas depois da união?",
+          "a": "Criar um documento combinado pode alterar o status das assinaturas. Preserve os arquivos originais assinados e confirme os requisitos do destinatário antes de confiar na cópia."
+        }
+      ]
+    },
+    "hi": {
+      "title": "PDF फ़ाइलें अपलोड किए बिना कैसे जोड़ें",
+      "metaTitle": "PDF बिना अपलोड जोड़ें: मुफ़्त और निजी",
+      "metaDescription": "ब्राउज़र में PDF जोड़ें, फ़ाइलें अपलोड किए बिना। मुफ़्त, बिना साइनअप या वॉटरमार्क, स्थानीय प्रोसेसिंग के साथ।",
+      "keyword": "PDF बिना अपलोड जोड़ें",
+      "secondaryKeywords": [
+        "स्थानीय रूप से PDF जोड़ें",
+        "निजी PDF मर्जर",
+        "गोपनीय PDF जोड़ें",
+        "क्लाउड के बिना PDF जोड़ें"
+      ],
+      "answer": "PDF अपलोड किए बिना जोड़ने के लिए ऐसी ब्राउज़र टूल चुनें जो फ़ाइलों को उसी टैब में प्रोसेस करे। दस्तावेज़ जोड़ें, क्रम तय करें, नई संयुक्त कॉपी बनाएँ और साझा करने से पहले जाँचें। PrintxPDF सामान्य PDF मर्ज आपके ब्राउज़र में करता है, इसलिए फ़ाइलें आपके डिवाइस पर रहती हैं। यह मुफ़्त है, साइनअप नहीं माँगता और वॉटरमार्क नहीं लगाता।",
+      "ctaLabel": "ब्राउज़र में निजी तौर पर PDF जोड़ें",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF जोड़ने के लिए फ़ाइल को क्लाउड सेवा पर भेजना ज़रूरी नहीं। PrintxPDF सामान्य मर्ज आपके ब्राउज़र टैब में करता है और आपके कंप्यूटर पर एक नई संयुक्त कॉपी बनाता है। यह बैंक स्टेटमेंट, स्वास्थ्य जानकारी, अनुबंध या ग्राहक दस्तावेज़ के लिए उपयोगी है, जिन्हें आप किसी अनजान सेवा की प्रोसेसिंग कतार में नहीं रखना चाहते। खाता या कार्ड नहीं चाहिए; वॉटरमार्क नहीं और ऐसा परीक्षण नहीं जो बाद में शुल्क बन जाए।"
+        },
+        {
+          "t": "h2",
+          "x": "ब्राउज़र में PDF निजी रूप से कैसे जोड़ें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "मूल फ़ाइलें सुरक्षित रखें",
+              "x": "महत्वपूर्ण दस्तावेज़ों पर काम करते समय कॉपी इस्तेमाल करें। क्रम सुधारने के लिए स्रोत फ़ाइलें उपलब्ध रहेंगी।"
+            },
+            {
+              "h": "PDF जोड़ने वाली टूल खोलें",
+              "x": "[PDF जोड़ें](/tools/merge-pdf) खोलें और डिवाइस से फ़ाइलें चुनें। सामान्य मर्ज टैब में होता है।"
+            },
+            {
+              "h": "क्रम लगाकर मर्ज करें",
+              "x": "फ़ाइलों को सही क्रम में रखें, नाम और पेज संख्या जाँचें, फिर संयुक्त PDF बनाएँ।"
+            },
+            {
+              "h": "डाउनलोड करके जाँचें",
+              "x": "आउटपुट खोलें, कुल पेज गिनें और हर दस्तावेज़ के बीच की शुरुआत और अंत देखें।"
+            },
+            {
+              "h": "ज़रूरत के बदलाव करें",
+              "x": "पेज खिसकाने के लिए [पेज व्यवस्थित करें](/tools/organize-pdf), गुण हटाने के लिए [मेटाडेटा हटाएँ](/tools/remove-metadata), और बड़ी फ़ाइल के लिए [PDF संपीड़ित करें](/tools/compress-pdf) इस्तेमाल करें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "PDF स्थानीय रूप से जोड़ें: मुफ़्त, बिना साइनअप, बिना वॉटरमार्क और सामान्य मर्ज में बिना अपलोड।"
+        },
+        {
+          "t": "h2",
+          "x": "स्थानीय प्रोसेसिंग क्यों मायने रखती है"
+        },
+        {
+          "t": "p",
+          "x": "क्लाउड टूल को काम शुरू करने से पहले आपकी फ़ाइल की कॉपी मिलती है। संगठन ने सेवा और उसकी शर्तों को मंज़ूरी दी हो तो यह ठीक हो सकता है, पर यही एकमात्र तरीका नहीं है। ब्राउज़र में प्रोसेसिंग इस काम के लिए एक अनावश्यक डेटा ट्रांसफर घटाती है और फ़ाइल आपके नियंत्रण वाले डिवाइस पर रहती है। विनियमित दस्तावेज़ों के लिए अपनी संस्था के नियम भी देखें।"
+        },
+        {
+          "t": "h2",
+          "x": "स्थानीय मर्ज और क्लाउड मर्ज की तुलना"
+        },
+        {
+          "t": "table",
+          "head": [
+            "सवाल",
+            "ब्राउज़र में स्थानीय मर्ज",
+            "आम क्लाउड मर्ज"
+          ],
+          "rows": [
+            [
+              "PDF कहाँ प्रोसेस होती है?",
+              "ब्राउज़र टैब में",
+              "सेवा पर अपलोड होने के बाद"
+            ],
+            [
+              "खाता चाहिए?",
+              "PrintxPDF की मूल टूल के लिए नहीं",
+              "वैकल्पिक या आवश्यक हो सकता है"
+            ],
+            [
+              "वॉटरमार्क?",
+              "PrintxPDF नहीं लगाता",
+              "सेवा और प्लान पर निर्भर"
+            ],
+            [
+              "उपयोग",
+              "निजी रोज़मर्रा के दस्तावेज़ जोड़ना",
+              "स्वीकृत क्लाउड कार्यप्रवाह"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "मेटाडेटा और दिखने वाली सामग्री अलग बातें हैं"
+        },
+        {
+          "t": "p",
+          "x": "स्थानीय मर्ज का अर्थ यह नहीं कि PDF से सारी निजी जानकारी हट गई। उसमें लेखक, शीर्षक, तारीख, टिप्पणी, अटैचमेंट या दिखाई देने वाली संवेदनशील सामग्री बच सकती है। ज़रूरत होने पर मानक गुण साफ़ करने के लिए [मेटाडेटा हटाएँ](/tools/remove-metadata) इस्तेमाल करें। सामग्री छिपाने के लिए वास्तविक रेडैक्शन करें और आउटपुट जाँचें। पेज हटाना या काला बॉक्स चढ़ाना इस बात की गारंटी नहीं कि पाठ वापस नहीं पाया जा सकता।"
+        },
+        {
+          "t": "h2",
+          "x": "साझा करने से पहले परिणाम जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "कॉपी खोलें, पेज संख्या मिलाएँ और मुख्य पन्नों को सामान्य आकार पर देखें। स्कैन में खोज योग्य पाठ चाहिए तो कॉपी पर [PDF OCR](/tools/ocr-pdf) चलाएँ और नाम तथा आँकड़े जाँचें। हस्ताक्षरित मूल फ़ाइलें रखें, क्योंकि नया संयुक्त दस्तावेज़ हस्ताक्षर की स्थिति बदल सकता है। स्रोत बचाकर रखें, साझा करने की अलग कॉपी बनाएँ और भेजने से पहले उसकी सामग्री की पुष्टि करें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PrintxPDF PDF जोड़ते समय फ़ाइल अपलोड करता है?",
+          "a": "सामान्य मर्ज ब्राउज़र टैब में होता है और इस काम के लिए फ़ाइलें आपके डिवाइस पर रहती हैं। जिन टूल को सर्वर प्रोसेसिंग चाहिए, उन्हें पेज पर अलग से बताया जाता है।"
+        },
+        {
+          "q": "क्या मैं बैंक स्टेटमेंट या अनुबंध निजी रूप से जोड़ सकता हूँ?",
+          "a": "स्थानीय प्रोसेसिंग मर्ज के लिए फ़ाइलों को प्रोसेसिंग सर्वर पर भेजने से बचाती है। मूल रखें और कॉपी जाँचें। नियम कहें तो मेटाडेटा हटाएँ या सामग्री अलग से रेडैक्ट करें।"
+        },
+        {
+          "q": "क्या PDF जोड़ने से मेटाडेटा हट जाता है?",
+          "a": "नहीं। मर्ज पेजों को जोड़ता है, लेकिन दस्तावेज़ के गुण या एम्बेडेड जानकारी हटाने का वादा नहीं करता। ज़रूरत पर मेटाडेटा हटाने वाली अलग टूल इस्तेमाल करें।"
+        },
+        {
+          "q": "क्या मर्ज के बाद डिजिटल हस्ताक्षर मान्य रहते हैं?",
+          "a": "संयुक्त PDF बनाने से हस्ताक्षर की स्थिति प्रभावित हो सकती है। मूल हस्ताक्षरित फ़ाइलें सुरक्षित रखें और कॉपी पर भरोसा करने से पहले प्राप्तकर्ता की शर्तें जाँचें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية دمج ملفات PDF دون رفعها",
+      "metaTitle": "دمج PDF دون رفع الملفات مجاناً وبخصوصية",
+      "metaDescription": "ادمج ملفات PDF في المتصفح دون رفعها. مجاناً، بلا تسجيل أو علامة مائية، مع معالجة محلية.",
+      "keyword": "دمج PDF دون رفع الملفات",
+      "secondaryKeywords": [
+        "دمج PDF محلياً",
+        "أداة دمج PDF خاصة",
+        "دمج ملفات PDF سرية",
+        "دمج PDF دون سحابة"
+      ],
+      "answer": "لدمج ملفات PDF دون رفعها، استخدم أداة تعالج الملفات داخل المتصفح. أضف المستندات، رتّبها، أنشئ نسخة موحدة ثم افحصها قبل مشاركتها. يعالج PrintxPDF عمليات الدمج القياسية في علامة التبويب، فتظل الملفات على جهازك. الخدمة مجانية ولا تتطلب تسجيلاً ولا تضيف علامة مائية.",
+      "ctaLabel": "ادمج PDF بخصوصية داخل المتصفح",
+      "body": [
+        {
+          "t": "p",
+          "x": "لا يتطلب دمج ملفات PDF إرسالها إلى خدمة سحابية. يعالج PrintxPDF عمليات الدمج القياسية في علامة تبويب المتصفح وينشئ نسخة موحدة جديدة على جهازك. يفيد ذلك مع كشوف الحسابات والمعلومات الطبية والعقود وملفات العملاء التي لا تريد وضعها في قائمة انتظار لدى جهة غير معروفة. لا تحتاج إلى حساب أو بطاقة، ولا توجد علامة مائية أو تجربة تتحول لاحقاً إلى رسوم."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية دمج PDF بخصوصية في المتصفح"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احتفظ بالملفات الأصلية",
+              "x": "اعمل على نسخ إذا كانت المستندات مهمة، حتى تتمكن من تصحيح الترتيب دون فقد المصادر."
+            },
+            {
+              "h": "افتح أداة دمج PDF",
+              "x": "انتقل إلى [دمج PDF](/tools/merge-pdf) وأضف الملفات من جهازك. تتم عملية الدمج القياسية داخل علامة التبويب."
+            },
+            {
+              "h": "رتّب الملفات وادمجها",
+              "x": "ضع المستندات بالترتيب المطلوب، وتحقق من الأسماء وعدد الصفحات، ثم أنشئ النسخة المجمعة."
+            },
+            {
+              "h": "نزّل النتيجة وافحصها",
+              "x": "افتح الملف الناتج، وتحقق من إجمالي الصفحات ومن الانتقال بين المستندات."
+            },
+            {
+              "h": "أجرِ التعديلات المطلوبة فقط",
+              "x": "استخدم [تنظيم الصفحات](/tools/organize-pdf) لنقل صفحة، و[إزالة البيانات الوصفية](/tools/remove-metadata) لتنظيف خصائص المستند عند الحاجة، و[ضغط PDF](/tools/compress-pdf) إذا كان الملف كبيراً."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ادمج PDF محلياً في المتصفح: مجاناً، بلا تسجيل أو علامة مائية أو رفع في الدمج القياسي."
+        },
+        {
+          "t": "h2",
+          "x": "لماذا تهم المعالجة المحلية"
+        },
+        {
+          "t": "p",
+          "x": "تحتاج أداة سحابية إلى استلام نسخة من الملف قبل معالجته. قد يكون ذلك مناسباً إذا وافقت مؤسستك على المزوّد وشروطه، لكنه ليس الخيار الوحيد. تقلل المعالجة داخل المتصفح نقلاً غير ضروري لهذا العمل وتُبقي الملف على جهاز تتحكم فيه. راجع قواعد مؤسستك أو قطاعك قبل التعامل مع مستندات خاضعة للأنظمة."
+        },
+        {
+          "t": "h2",
+          "x": "الدمج المحلي مقارنة بالدمج السحابي"
+        },
+        {
+          "t": "table",
+          "head": [
+            "السؤال",
+            "المعالجة المحلية",
+            "الدمج السحابي المعتاد"
+          ],
+          "rows": [
+            [
+              "أين تتم معالجة PDF؟",
+              "داخل علامة تبويب المتصفح",
+              "بعد رفعها إلى الخدمة"
+            ],
+            [
+              "هل يلزم حساب؟",
+              "لا لأدوات PrintxPDF الأساسية",
+              "قد يكون اختيارياً أو مطلوباً"
+            ],
+            [
+              "هل توجد علامة مائية؟",
+              "لا يضيفها PrintxPDF",
+              "يختلف حسب المزوّد والخطة"
+            ],
+            [
+              "الاستخدام الأنسب",
+              "تجميع مستندات يومية بخصوصية",
+              "سير عمل معتمد للمعالجة السحابية"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "البيانات الوصفية والمحتوى الظاهر مسألتان مختلفتان"
+        },
+        {
+          "t": "p",
+          "x": "بقاء الملف محلياً أثناء الدمج لا يعني إزالة كل ما يحتويه. قد يحتفظ PDF باسم المؤلف والعنوان والتواريخ والتعليقات والمرفقات أو بمعلومات خاصة ظاهرة. استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) لتنظيف الخصائص المعتادة عند الحاجة. لإخفاء محتوى، استخدم تنقيحاً حقيقياً وافحص الناتج. حذف صفحة أو وضع مستطيل أسود فوق النص لا يضمن استحالة استعادته."
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من النتيجة قبل مشاركتها"
+        },
+        {
+          "t": "p",
+          "x": "افتح النسخة وتحقق من عدد الصفحات وافحص الصفحات المهمة بحجم القراءة المعتاد. إذا احتجت إلى البحث في المسح الضوئي، شغّل [OCR PDF](/tools/ocr-pdf) على نسخة وتحقق من الأسماء والأرقام. احتفظ بالملفات الموقعة الأصلية، إذ قد يؤثر إنشاء ملف موحد في حالة التوقيع. أبقِ المصادر وأنشئ نسخة للمشاركة وافحص محتواها قبل الإرسال."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يرفع PrintxPDF ملفاتي عند دمج PDF؟",
+          "a": "تتم عملية الدمج القياسية داخل علامة تبويب المتصفح، فتظل الملفات على جهازك لهذه المهمة. تُبيّن الصفحة بشكل منفصل الأدوات التي تحتاج إلى معالجة على الخادم."
+        },
+        {
+          "q": "هل يمكنني دمج كشوف الحسابات أو العقود بخصوصية؟",
+          "a": "تتفادى المعالجة المحلية إرسال الملفات إلى خادم للدمج. احتفظ بالأصول وافحص النسخة. أزل البيانات الوصفية أو نقّح المحتوى بشكل منفصل إذا تطلبت سياستك ذلك."
+        },
+        {
+          "q": "هل يزيل دمج PDF البيانات الوصفية؟",
+          "a": "لا. يجمع الدمج الصفحات ولا يضمن حذف خصائص المستند أو المعلومات المضمّنة. استخدم أداة مخصصة لإزالة البيانات الوصفية عند الحاجة."
+        },
+        {
+          "q": "هل تظل التوقيعات الرقمية صالحة بعد الدمج؟",
+          "a": "قد يؤثر إنشاء مستند موحد في حالة التوقيعات. احتفظ بالملفات الموقعة الأصلية وتحقق من متطلبات المستلم قبل الاعتماد على النسخة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "ফাইল আপলোড না করে PDF কীভাবে একত্র করবেন",
+      "metaTitle": "আপলোড ছাড়া PDF একত্র করুন: বিনামূল্যে ও ব্যক্তিগত",
+      "metaDescription": "ব্রাউজারে PDF একত্র করুন, ফাইল আপলোড ছাড়াই। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া, স্থানীয় প্রক্রিয়াকরণে।",
+      "keyword": "আপলোড ছাড়া PDF একত্র",
+      "secondaryKeywords": [
+        "স্থানীয়ভাবে PDF একত্র",
+        "ব্যক্তিগত PDF মার্জার",
+        "গোপন PDF একত্র",
+        "ক্লাউড ছাড়া PDF মার্জ"
+      ],
+      "answer": "ফাইল আপলোড না করে PDF একত্র করতে এমন ব্রাউজার টুল ব্যবহার করুন যা একই ট্যাবে ফাইল প্রক্রিয়া করে। নথি যোগ করুন, ক্রম সাজান, নতুন কপি তৈরি করুন এবং শেয়ারের আগে পরীক্ষা করুন। PrintxPDF সাধারণ PDF মার্জ ব্রাউজারেই করে, তাই ফাইল আপনার ডিভাইসে থাকে। এটি বিনামূল্যে, সাইনআপ লাগে না এবং ওয়াটারমার্ক দেয় না।",
+      "ctaLabel": "ব্রাউজারে ব্যক্তিগতভাবে PDF একত্র করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF একত্র করতে ফাইল ক্লাউড সেবায় পাঠানো জরুরি নয়। PrintxPDF সাধারণ মার্জ আপনার ব্রাউজার ট্যাবে করে এবং কম্পিউটারে নতুন একটি কপি বানায়। ব্যাংক বিবরণী, চিকিৎসার তথ্য, চুক্তি বা গ্রাহকের নথি অচেনা কোনো পরিষেবার প্রসেসিং কিউতে না দিতে চাইলে এটি কাজে আসে। অ্যাকাউন্ট বা কার্ড লাগে না; ওয়াটারমার্ক নেই, পরে টাকা কাটে এমন ট্রায়ালও নেই।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্রাউজারে ব্যক্তিগতভাবে PDF একত্র করার ধাপ"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "মূল ফাইল রেখে দিন",
+              "x": "গুরুত্বপূর্ণ নথি হলে কপি দিয়ে কাজ করুন। এতে ক্রম ভুল হলে মূল ফাইল হারাবেন না।"
+            },
+            {
+              "h": "PDF একত্র টুল খুলুন",
+              "x": "[PDF একত্র করুন](/tools/merge-pdf) খুলে ডিভাইস থেকে ফাইল যোগ করুন। সাধারণ মার্জ ট্যাবেই হয়।"
+            },
+            {
+              "h": "ক্রম সাজিয়ে একত্র করুন",
+              "x": "ফাইল সঠিক ক্রমে রাখুন, নাম ও পৃষ্ঠা সংখ্যা মিলিয়ে সম্মিলিত PDF তৈরি করুন।"
+            },
+            {
+              "h": "ডাউনলোড করে যাচাই করুন",
+              "x": "ফলাফল খুলে মোট পৃষ্ঠা এবং এক নথি থেকে অন্য নথিতে যাওয়ার অংশগুলো দেখুন।"
+            },
+            {
+              "h": "প্রয়োজনমতো সংশোধন করুন",
+              "x": "পৃষ্ঠা সরাতে [পৃষ্ঠা সাজান](/tools/organize-pdf), বৈশিষ্ট্য মুছতে [মেটাডেটা সরান](/tools/remove-metadata), আর ফাইল বড় হলে [PDF সংকুচিত করুন](/tools/compress-pdf) ব্যবহার করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "PDF স্থানীয়ভাবে একত্র করুন: বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া, সাধারণ মার্জে আপলোড ছাড়াই।"
+        },
+        {
+          "t": "h2",
+          "x": "স্থানীয় প্রক্রিয়াকরণ কেন গুরুত্বপূর্ণ"
+        },
+        {
+          "t": "p",
+          "x": "ক্লাউড টুল কাজের আগে ফাইলের কপি পায়। প্রতিষ্ঠান সেবাদাতা ও শর্ত অনুমোদন করলে তা গ্রহণযোগ্য হতে পারে, তবে এটিই একমাত্র উপায় নয়। ব্রাউজারে প্রক্রিয়াকরণ এই কাজে অপ্রয়োজনীয় স্থানান্তর কমায় এবং ফাইল আপনার নিয়ন্ত্রণের ডিভাইসে রাখে। নিয়ন্ত্রিত নথির জন্য প্রতিষ্ঠানের নীতিও যাচাই করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "স্থানীয় ও ক্লাউড PDF মার্জের তুলনা"
+        },
+        {
+          "t": "table",
+          "head": [
+            "বিষয়",
+            "স্থানীয় প্রক্রিয়াকরণ",
+            "সাধারণ ক্লাউড মার্জ"
+          ],
+          "rows": [
+            [
+              "PDF কোথায় কাজ হয়?",
+              "ব্রাউজার ট্যাবে",
+              "সেবায় আপলোডের পরে"
+            ],
+            [
+              "অ্যাকাউন্ট লাগবে?",
+              "PrintxPDF-এর মূল টুলে লাগে না",
+              "ঐচ্ছিক বা বাধ্যতামূলক হতে পারে"
+            ],
+            [
+              "ওয়াটারমার্ক?",
+              "PrintxPDF যোগ করে না",
+              "সেবা ও পরিকল্পনা অনুযায়ী"
+            ],
+            [
+              "উপযোগিতা",
+              "ব্যক্তিগতভাবে দৈনন্দিন নথি জোড়া",
+              "অনুমোদিত ক্লাউড কাজের ধারা"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "মেটাডেটা ও দৃশ্যমান তথ্য আলাদা বিষয়"
+        },
+        {
+          "t": "p",
+          "x": "মার্জের সময় ফাইল ডিভাইসে থাকলেই PDF থেকে সব তথ্য মুছে যায় না। লেখক, শিরোনাম, তারিখ, মন্তব্য, সংযুক্তি বা দৃশ্যমান ব্যক্তিগত তথ্য থেকে যেতে পারে। দরকার হলে সাধারণ বৈশিষ্ট্য মুছতে [মেটাডেটা সরান](/tools/remove-metadata) ব্যবহার করুন। তথ্য লুকাতে প্রকৃত রিড্যাকশন করুন এবং ফল যাচাই করুন। পৃষ্ঠা মুছে ফেলা বা কালো বাক্স বসানো পুনরুদ্ধার ঠেকানোর নিশ্চয়তা নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "শেয়ারের আগে ফলাফল যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "কপি খুলে পৃষ্ঠার সংখ্যা মিলিয়ে গুরুত্বপূর্ণ পৃষ্ঠা স্বাভাবিক আকারে দেখুন। স্ক্যানের লেখা খুঁজতে হলে কপিতে [PDF OCR](/tools/ocr-pdf) চালিয়ে নাম ও সংখ্যা যাচাই করুন। স্বাক্ষরিত মূল ফাইল রাখুন; সম্মিলিত কপি বানালে স্বাক্ষরের অবস্থা বদলাতে পারে। মূল রেখে শেয়ারের আলাদা কপি বানান এবং পাঠানোর আগে তাতে কী আছে পরীক্ষা করুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PrintxPDF কি PDF একত্র করার সময় ফাইল আপলোড করে?",
+          "a": "সাধারণ মার্জ ব্রাউজার ট্যাবে হয়, তাই এই কাজের সময় ফাইল আপনার ডিভাইসে থাকে। সার্ভার প্রসেসিং লাগে এমন টুল পৃষ্ঠায় আলাদা করে চিহ্নিত করা হয়।"
+        },
+        {
+          "q": "ব্যাংক বিবরণী বা চুক্তি কি ব্যক্তিগতভাবে একত্র করা যায়?",
+          "a": "স্থানীয় প্রক্রিয়াকরণ মার্জের জন্য ফাইল প্রসেসিং সার্ভারে পাঠানো এড়ায়। মূল রাখুন ও কপি পরীক্ষা করুন। নীতি চাইলে মেটাডেটা সরান বা বিষয়বস্তু আলাদাভাবে রিড্যাক্ট করুন।"
+        },
+        {
+          "q": "PDF একত্র করলে কি মেটাডেটা মুছে যায়?",
+          "a": "না। মার্জ পৃষ্ঠা জোড়ে, কিন্তু নথির বৈশিষ্ট্য বা এমবেড করা তথ্য মুছে ফেলার নিশ্চয়তা দেয় না। প্রয়োজন হলে আলাদা মেটাডেটা অপসারণ টুল ব্যবহার করুন।"
+        },
+        {
+          "q": "মার্জের পর ডিজিটাল স্বাক্ষর কি বৈধ থাকে?",
+          "a": "সম্মিলিত নথি বানালে স্বাক্ষরের অবস্থা প্রভাবিত হতে পারে। মূল স্বাক্ষরিত ফাইল রাখুন এবং কপির ওপর নির্ভর করার আগে প্রাপকের শর্ত যাচাই করুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách gộp PDF mà không tải tệp lên",
+      "metaTitle": "Gộp PDF không tải lên: miễn phí và riêng tư",
+      "metaDescription": "Gộp PDF trong trình duyệt mà không tải tệp lên. Miễn phí, không đăng ký, không dấu mờ, xử lý cục bộ.",
+      "keyword": "gộp PDF không tải tệp lên",
+      "secondaryKeywords": [
+        "gộp PDF cục bộ",
+        "công cụ gộp PDF riêng tư",
+        "gộp PDF bảo mật",
+        "gộp PDF không cần đám mây"
+      ],
+      "answer": "Để gộp PDF mà không tải tệp lên, hãy dùng công cụ xử lý tệp ngay trong trình duyệt. Thêm tài liệu, sắp xếp thứ tự, tạo bản PDF mới rồi kiểm tra trước khi chia sẻ. PrintxPDF xử lý các thao tác gộp tiêu chuẩn trong thẻ trình duyệt, nên tệp ở lại trên thiết bị. Công cụ miễn phí, không cần đăng ký và không thêm dấu mờ.",
+      "ctaLabel": "Gộp PDF riêng tư ngay trong trình duyệt",
+      "body": [
+        {
+          "t": "p",
+          "x": "Gộp PDF không nhất thiết phải gửi tệp lên dịch vụ đám mây. PrintxPDF xử lý thao tác gộp tiêu chuẩn trong thẻ trình duyệt và tạo một bản kết hợp mới trên máy tính của bạn. Cách này hữu ích với sao kê ngân hàng, thông tin y tế, hợp đồng hoặc hồ sơ khách hàng mà bạn không muốn đưa vào hàng đợi xử lý của một dịch vụ lạ. Không cần tài khoản hay thẻ, không có dấu mờ và không có bản dùng thử biến thành khoản phí."
+        },
+        {
+          "t": "h2",
+          "x": "Cách gộp PDF riêng tư trong trình duyệt"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Giữ lại tệp gốc",
+              "x": "Nếu tài liệu quan trọng, hãy làm việc trên bản sao để có thể sửa thứ tự mà không mất nguồn."
+            },
+            {
+              "h": "Mở công cụ Gộp PDF",
+              "x": "Truy cập [Gộp PDF](/tools/merge-pdf) và thêm tài liệu từ thiết bị. Thao tác gộp tiêu chuẩn chạy trong thẻ."
+            },
+            {
+              "h": "Sắp xếp rồi gộp",
+              "x": "Đặt tệp theo thứ tự mong muốn, kiểm tra tên và số trang rồi tạo PDF kết hợp."
+            },
+            {
+              "h": "Tải xuống và kiểm tra",
+              "x": "Mở kết quả, kiểm tra tổng số trang và các điểm chuyển giữa tài liệu."
+            },
+            {
+              "h": "Chỉ thực hiện bước bổ sung cần thiết",
+              "x": "Dùng [Sắp xếp trang](/tools/organize-pdf) để chuyển trang, [Xóa siêu dữ liệu](/tools/remove-metadata) để làm sạch thuộc tính khi cần và [Nén PDF](/tools/compress-pdf) nếu tệp quá lớn."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Gộp PDF cục bộ trong trình duyệt: miễn phí, không đăng ký, không dấu mờ và không tải lên với thao tác tiêu chuẩn."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao xử lý cục bộ quan trọng"
+        },
+        {
+          "t": "p",
+          "x": "Công cụ đám mây phải nhận một bản sao tệp trước khi xử lý. Cách đó có thể phù hợp nếu tổ chức của bạn đã phê duyệt nhà cung cấp và điều khoản, nhưng không phải lựa chọn duy nhất. Xử lý trong trình duyệt tránh một lần truyền tệp không cần thiết cho tác vụ này và giữ tệp trên thiết bị bạn kiểm soát. Hãy kiểm tra quy định của tổ chức khi làm việc với tài liệu được quản lý."
+        },
+        {
+          "t": "h2",
+          "x": "Gộp cục bộ và gộp trên đám mây"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Câu hỏi",
+            "Xử lý cục bộ",
+            "Gộp đám mây thông thường"
+          ],
+          "rows": [
+            [
+              "PDF được xử lý ở đâu?",
+              "Trong thẻ trình duyệt",
+              "Sau khi tải lên dịch vụ"
+            ],
+            [
+              "Có cần tài khoản?",
+              "Không với công cụ cơ bản PrintxPDF",
+              "Có thể tùy chọn hoặc bắt buộc"
+            ],
+            [
+              "Có dấu mờ?",
+              "PrintxPDF không thêm",
+              "Tùy nhà cung cấp và gói"
+            ],
+            [
+              "Phù hợp với",
+              "Ghép tài liệu thường ngày một cách riêng tư",
+              "Quy trình đã được duyệt cho đám mây"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Siêu dữ liệu và nội dung hiển thị là hai vấn đề riêng"
+        },
+        {
+          "t": "p",
+          "x": "Giữ tệp trên thiết bị khi gộp không tự động xóa thông tin bên trong PDF. Tệp có thể còn tên tác giả, tiêu đề, ngày tháng, bình luận, tệp đính kèm và thông tin riêng tư đang hiển thị. Dùng [Xóa siêu dữ liệu](/tools/remove-metadata) để làm sạch thuộc tính thông thường khi phù hợp. Nếu cần che nội dung, hãy dùng thao tác biên tập xóa thật và kiểm tra kết quả. Xóa trang hoặc phủ hình chữ nhật đen không bảo đảm văn bản không thể khôi phục."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra kết quả trước khi chia sẻ"
+        },
+        {
+          "t": "p",
+          "x": "Mở bản mới, kiểm tra số trang và xem các trang quan trọng ở kích thước đọc bình thường. Nếu cần tìm chữ trong bản quét, dùng [OCR PDF](/tools/ocr-pdf) trên một bản sao rồi xác minh tên và số liệu. Giữ lại tệp gốc đã ký vì tạo bản gộp có thể ảnh hưởng trạng thái chữ ký. Hãy giữ nguồn, tạo bản riêng để chia sẻ và xem kỹ nội dung trước khi gửi."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PrintxPDF có tải tệp lên khi tôi gộp PDF không?",
+          "a": "Thao tác gộp tiêu chuẩn chạy trong thẻ trình duyệt, nên tệp ở lại trên thiết bị trong lúc thực hiện. Trang công cụ ghi rõ riêng những tác vụ cần xử lý trên máy chủ."
+        },
+        {
+          "q": "Tôi có thể gộp sao kê ngân hàng hoặc hợp đồng riêng tư không?",
+          "a": "Xử lý cục bộ tránh gửi tệp tới máy chủ xử lý để gộp. Hãy giữ bản gốc và kiểm tra bản kết hợp. Nếu chính sách yêu cầu, hãy xóa siêu dữ liệu hoặc biên tập nội dung riêng."
+        },
+        {
+          "q": "Gộp PDF có xóa siêu dữ liệu không?",
+          "a": "Không. Gộp chỉ kết hợp các trang và không bảo đảm xóa thuộc tính tài liệu hoặc thông tin nhúng. Hãy dùng công cụ xóa siêu dữ liệu riêng khi cần."
+        },
+        {
+          "q": "Chữ ký số có còn hợp lệ sau khi gộp không?",
+          "a": "Tạo tài liệu kết hợp có thể ảnh hưởng trạng thái chữ ký. Hãy giữ tệp gốc đã ký và xác nhận yêu cầu của người nhận trước khi dựa vào bản gộp."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何不上传文件就合并 PDF",
+      "metaTitle": "不上传文件合并 PDF：免费且私密",
+      "metaDescription": "在浏览器中合并 PDF，无需上传。免费、无需注册、无水印，并在本地处理文件。",
+      "keyword": "不上传合并 PDF",
+      "secondaryKeywords": [
+        "本地合并 PDF",
+        "私密 PDF 合并工具",
+        "合并机密 PDF",
+        "无需云端合并 PDF"
+      ],
+      "answer": "要在不上传文件的情况下合并 PDF，请使用在浏览器标签页内处理文件的工具。添加文档、排列顺序、生成新的合并副本，并在分享前检查。PrintxPDF 在浏览器中本地执行标准合并，因此文件留在你的设备上。工具免费、无需注册，也不会添加水印。",
+      "ctaLabel": "在浏览器中私密合并 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "合并 PDF 不一定要先把文件发到云端服务。PrintxPDF 在浏览器标签页中处理标准合并，并在你的电脑上生成一份新的合并副本。对于银行对账单、医疗信息、合同或客户文件，这种方式很有用，因为你不必把它们放进陌生服务的处理队列。无需账户或银行卡，没有水印，也没有结束后收费的试用期。"
+        },
+        {
+          "t": "h2",
+          "x": "如何在浏览器中私密合并 PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "保留原始文件",
+              "x": "重要文档请使用副本操作。这样即使顺序有误，也能重新制作而不丢失源文件。"
+            },
+            {
+              "h": "打开合并 PDF 工具",
+              "x": "进入[合并 PDF](/tools/merge-pdf)，从设备添加文件。标准合并在当前标签页内处理。"
+            },
+            {
+              "h": "排列并合并",
+              "x": "按需要排列文件，核对文件名和页数，然后生成合并后的 PDF。"
+            },
+            {
+              "h": "下载并检查",
+              "x": "打开结果，核对总页数，并查看每份文档之间的衔接处。"
+            },
+            {
+              "h": "只做需要的后续处理",
+              "x": "用[整理页面](/tools/organize-pdf)移动页面；需要清理属性时用[移除元数据](/tools/remove-metadata)；文件太大时再用[压缩 PDF](/tools/compress-pdf)。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "在浏览器本地合并 PDF：免费、无需注册、无水印，标准合并无需上传。"
+        },
+        {
+          "t": "h2",
+          "x": "本地处理为何重要"
+        },
+        {
+          "t": "p",
+          "x": "云端工具必须先收到文件副本才能处理。如果你的组织批准了服务商及其条款，这种方式可能合适，但它不是唯一选择。浏览器本地处理可减少这项任务中一次不必要的文件传输，让文件留在你能控制的设备上。处理受监管的文档时，也要遵守所在组织的规则。"
+        },
+        {
+          "t": "h2",
+          "x": "本地合并与云端合并对比"
+        },
+        {
+          "t": "table",
+          "head": [
+            "问题",
+            "浏览器本地处理",
+            "常见云端合并"
+          ],
+          "rows": [
+            [
+              "PDF 在哪里处理？",
+              "浏览器标签页内",
+              "上传到服务之后"
+            ],
+            [
+              "需要账户吗？",
+              "PrintxPDF 基础工具无需账户",
+              "可能可选，也可能必须注册"
+            ],
+            [
+              "会有水印吗？",
+              "PrintxPDF 不添加水印",
+              "取决于服务商和套餐"
+            ],
+            [
+              "适用场景",
+              "私密整理日常文档",
+              "已批准的云端处理流程"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "元数据和可见内容是两类隐私问题"
+        },
+        {
+          "t": "p",
+          "x": "合并时文件留在本地，并不代表 PDF 内的信息会自动清除。文件可能保留作者、标题、日期、批注、附件或可见的私人内容。需要时可用[移除元数据](/tools/remove-metadata)清理常见文档属性。如果要隐藏正文内容，请使用真正的涂黑处理并检查结果。删除页面或叠加黑色方框，都不能保证文字无法恢复。"
+        },
+        {
+          "t": "h2",
+          "x": "分享前检查合并结果"
+        },
+        {
+          "t": "p",
+          "x": "打开新文件，核对页数，并以正常阅读大小检查重要页面。如果扫描件需要文字搜索，可在副本上运行[PDF OCR](/tools/ocr-pdf)，然后核实姓名和数字。保留已签名的原始文件，因为合并可能影响签名状态。保留源文件，另建分享副本，并在发送前确认副本的实际内容。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PrintxPDF 合并 PDF 时会上传我的文件吗？",
+          "a": "标准合并在浏览器标签页内完成，因此文件在这项操作中留在你的设备上。需要服务器处理的工具会在页面上单独标明。"
+        },
+        {
+          "q": "可以私密地合并银行对账单或合同吗？",
+          "a": "本地处理可避免为了合并而把文件发到处理服务器。保留原件并检查副本。如果政策要求，请另行移除元数据或涂黑敏感内容。"
+        },
+        {
+          "q": "合并 PDF 会移除元数据吗？",
+          "a": "不会。合并只组合页面，不保证移除文档属性或嵌入信息。需要时请使用专门的元数据移除工具。"
+        },
+        {
+          "q": "合并后数字签名还有效吗？",
+          "a": "生成合并文档可能影响签名状态。请保留已签名的原始文件，并在依赖合并副本前确认接收方的要求。"
+        }
+      ]
+    }
+  }
+}
