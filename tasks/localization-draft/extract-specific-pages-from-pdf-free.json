@@ -1,0 +1,921 @@
+{
+  "topic": "extract-specific-pages-from-pdf-free",
+  "sourceCluster": "split",
+  "tool": "extract-pages",
+  "languages": {
+    "es": {
+      "title": "Cómo extraer páginas concretas de un PDF gratis",
+      "metaTitle": "Extraer páginas concretas de un PDF gratis",
+      "metaDescription": "Extrae páginas de un PDF gratis, sin registro ni marca de agua, con procesamiento privado en el navegador.",
+      "keyword": "extraer páginas concretas de un PDF",
+      "secondaryKeywords": [
+        "guardar páginas PDF seleccionadas",
+        "extraer páginas PDF gratis",
+        "separar páginas PDF",
+        "conservar páginas de PDF"
+      ],
+      "answer": "Para extraer páginas concretas de un PDF, identifica los números que necesitas, selecciónalos, crea un PDF nuevo y revisa la descarga. PrintxPDF lo hace en el navegador sin registro ni marca de agua. El archivo original no cambia y la nueva copia contiene solo las páginas elegidas.",
+      "ctaLabel": "Conserva solo las páginas PDF que necesitas",
+      "body": [
+        {
+          "t": "p",
+          "x": "Extraer páginas es una forma sencilla de crear un PDF pequeño a partir de un paquete grande. Puedes conservar la portada y el anexo pertinente, guardar solo las facturas o enviar unas páginas de un informe. PrintxPDF crea la copia con las páginas elegidas en tu navegador. No necesitas cuenta ni tarjeta, no hay marca de agua y no se suben archivos estándar."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo extraer páginas seleccionadas de un PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Localiza las páginas necesarias",
+              "x": "Abre el PDF y anota los números del visor. Comprueba si la portada o una página vacía hace que difieran de los números impresos."
+            },
+            {
+              "h": "Abre Extraer páginas",
+              "x": "Añade el archivo a [Extraer páginas](/tools/extract-pages). Conserva el original abierto o a mano mientras eliges los rangos."
+            },
+            {
+              "h": "Indica las páginas o rangos",
+              "x": "Elige páginas individuales, un rango continuo o varios grupos si la herramienta lo permite. Revisa la selección antes de crear la copia."
+            },
+            {
+              "h": "Crea el nuevo PDF",
+              "x": "Genera el resultado y descárgalo. El archivo fuente no se sobrescribe."
+            },
+            {
+              "h": "Inspecciona el resultado",
+              "x": "Comprueba la primera y la última página, la orientación y que estén los anexos o firmas que necesita el destinatario."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "Conserva las páginas PDF que necesitas. Gratis, privado en el navegador, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "¿Extraer páginas, dividir el archivo o eliminar páginas?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tarea",
+            "Herramienta adecuada",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Conservar páginas elegidas en un archivo",
+              "Extraer páginas",
+              "PDF compacto con las páginas seleccionadas."
+            ],
+            [
+              "Crear varios archivos separados",
+              "Dividir PDF",
+              "Varios archivos por rango o regla."
+            ],
+            [
+              "Quitar páginas de una copia",
+              "Eliminar páginas",
+              "Una versión nueva sin esas páginas."
+            ],
+            [
+              "Cambiar el orden de página",
+              "Organizar páginas",
+              "Las mismas páginas en otra secuencia."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba los números antes de compartir"
+        },
+        {
+          "t": "p",
+          "x": "El destinatario puede pedir las páginas 10 a 14, pero el visor puede contar una portada y una página vacía que no forman parte de la numeración impresa. Revisa las miniaturas y las etiquetas visibles. En documentos escaneados, comprueba los números dentro de la imagen. Un error de una página puede omitir una firma, un anexo o el total final. Conserva el original hasta confirmar que el archivo breve está completo."
+        },
+        {
+          "t": "h2",
+          "x": "Extraer no es redactar información"
+        },
+        {
+          "t": "p",
+          "x": "La copia extraída conserva todo lo que contienen las páginas elegidas. No elimina texto privado, comentarios, propiedades del documento ni adjuntos incrustados en esas páginas. Usa [Eliminar metadatos](/tools/remove-metadata) cuando debas limpiar las propiedades. Para que el contenido no se pueda recuperar, usa una redacción verificada. Recortar la página o poner una forma negra no basta."
+        },
+        {
+          "t": "h2",
+          "x": "Mantén los archivos delicados en tu dispositivo y revisa la copia"
+        },
+        {
+          "t": "p",
+          "x": "Extraer páginas suele hacerse con solicitudes, extractos, expedientes de clientes y contratos. El procesamiento en el navegador evita transferir el archivo a un tercero para esta tarea rutinaria. Aun así, revisa el PDF antes de enviarlo. Si pesa demasiado para el correo, usa [Comprimir PDF](/tools/compress-pdf) en una copia y comprueba que imágenes, firmas y texto pequeño sigan legibles."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo extraer solo unas páginas de un PDF?",
+          "a": "Sí. Selecciona páginas sueltas o un rango, crea un PDF nuevo y descarga la copia. El documento original permanece intacto."
+        },
+        {
+          "q": "¿Puedo extraer páginas no consecutivas?",
+          "a": "Usa la sintaxis de selección de páginas o crea una extracción por cada grupo. Revisa el resultado para confirmar que están todas las páginas necesarias."
+        },
+        {
+          "q": "¿Extraer páginas elimina los metadatos?",
+          "a": "No. Crea una selección nueva de páginas, pero no garantiza la eliminación de propiedades ni otros datos ocultos. Usa un paso de metadatos aparte si hace falta."
+        },
+        {
+          "q": "¿Puedo extraer páginas sin subir el PDF?",
+          "a": "PrintxPDF procesa la extracción estándar en la pestaña del navegador, por lo que el archivo permanece en tu dispositivo durante este flujo."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como extrair páginas específicas de um PDF grátis",
+      "metaTitle": "Extraia páginas específicas de PDF grátis",
+      "metaDescription": "Extraia páginas específicas de PDF grátis, sem cadastro ou marca-d'água, com processamento privado no navegador.",
+      "keyword": "extrair páginas específicas de PDF",
+      "secondaryKeywords": [
+        "salvar páginas PDF selecionadas",
+        "extrair páginas de PDF grátis",
+        "separar páginas de PDF",
+        "manter páginas do PDF"
+      ],
+      "answer": "Para extrair páginas específicas de um PDF, identifique os números necessários, selecione-os, crie um PDF novo e confira o download. O PrintxPDF faz isso no navegador sem cadastro ou marca-d'água. O arquivo original não muda, e a nova cópia contém somente as páginas escolhidas.",
+      "ctaLabel": "Mantenha só as páginas PDF necessárias",
+      "body": [
+        {
+          "t": "p",
+          "x": "Extrair páginas é uma forma simples de criar um PDF menor a partir de um pacote grande. Você pode manter a capa e o apêndice relevante, salvar apenas as faturas ou enviar algumas páginas de um relatório. O PrintxPDF cria uma cópia com as páginas selecionadas no navegador. Não precisa de conta ou cartão, não há marca-d'água e arquivos padrão não são enviados."
+        },
+        {
+          "t": "h2",
+          "x": "Como extrair páginas selecionadas de um PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Encontre as páginas necessárias",
+              "x": "Abra o PDF e anote os números mostrados pelo leitor. Veja se capa ou página em branco os diferencia da numeração impressa."
+            },
+            {
+              "h": "Abra Extrair páginas",
+              "x": "Adicione o arquivo em [Extrair páginas](/tools/extract-pages). Deixe o original aberto ou por perto ao selecionar os intervalos."
+            },
+            {
+              "h": "Informe as páginas ou faixas",
+              "x": "Escolha páginas individuais, uma faixa contínua ou vários grupos se a ferramenta permitir. Revise a seleção antes de criar a cópia."
+            },
+            {
+              "h": "Crie o novo PDF",
+              "x": "Gere e baixe o resultado. O arquivo de origem não é sobrescrito."
+            },
+            {
+              "h": "Inspecione o resultado",
+              "x": "Confira a primeira e a última página, a orientação e se todos os anexos e assinaturas necessários estão incluídos."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "Mantenha só as páginas de PDF necessárias. Grátis, privado no navegador, sem cadastro ou marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "Extrair páginas, dividir o arquivo ou excluir páginas?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tarefa",
+            "Ferramenta indicada",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Manter páginas escolhidas em um arquivo",
+              "Extrair páginas",
+              "PDF compacto com as páginas selecionadas."
+            ],
+            [
+              "Criar vários arquivos separados",
+              "Dividir PDF",
+              "Vários arquivos por faixa ou regra."
+            ],
+            [
+              "Remover páginas de uma cópia",
+              "Excluir páginas",
+              "Nova versão sem essas páginas."
+            ],
+            [
+              "Mudar a ordem das páginas",
+              "Organizar páginas",
+              "As mesmas páginas em outra sequência."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Confira os números antes de compartilhar"
+        },
+        {
+          "t": "p",
+          "x": "O destinatário pode pedir as páginas 10 a 14, mas o leitor pode contar uma capa e uma página em branco que não aparecem na numeração impressa. Confira as miniaturas e os números visíveis. Em documentos digitalizados, veja o número na imagem. Um erro de uma página pode excluir uma assinatura, um apêndice ou o total final. Guarde o original até confirmar que a cópia menor está completa."
+        },
+        {
+          "t": "h2",
+          "x": "Extrair não é redigir informações"
+        },
+        {
+          "t": "p",
+          "x": "A cópia extraída mantém tudo que existe nas páginas escolhidas. Ela não apaga texto privado, comentários, propriedades do documento ou anexos incorporados nessas páginas. Use [Remover metadados](/tools/remove-metadata) para limpar propriedades quando necessário. Para impedir a recuperação de conteúdo, use redação verificada. Recortar a página ou cobrir com uma forma preta não basta."
+        },
+        {
+          "t": "h2",
+          "x": "Mantenha arquivos sensíveis no dispositivo e confira a cópia"
+        },
+        {
+          "t": "p",
+          "x": "A extração costuma ser feita em solicitações, extratos, arquivos de clientes e contratos. O processamento no navegador evita transferir o arquivo para terceiros nessa tarefa rotineira. Mesmo assim, confira o PDF antes de enviar. Se ficar grande demais para o e-mail, use [Compactar PDF](/tools/compress-pdf) em uma cópia e verifique se imagens, assinaturas e textos pequenos continuam legíveis."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso extrair apenas algumas páginas de um PDF?",
+          "a": "Sim. Selecione páginas individuais ou uma faixa, crie um PDF novo e baixe a cópia. O original permanece intacto."
+        },
+        {
+          "q": "Posso extrair páginas não consecutivas?",
+          "a": "Use a sintaxe de seleção da ferramenta ou faça uma extração para cada grupo. Confira o resultado para garantir que todas as páginas necessárias foram incluídas."
+        },
+        {
+          "q": "Extrair páginas remove metadados?",
+          "a": "Não. A ferramenta cria uma nova seleção de páginas, mas não promete remover propriedades ou outros dados ocultos. Use uma etapa separada para metadados quando necessário."
+        },
+        {
+          "q": "Posso extrair páginas sem enviar o PDF?",
+          "a": "O PrintxPDF processa a extração padrão na aba do navegador, então o arquivo permanece no dispositivo durante esse fluxo."
+        }
+      ]
+    },
+    "hi": {
+      "title": "PDF से खास पेज मुफ़्त में कैसे निकालें",
+      "metaTitle": "PDF से खास पेज मुफ़्त निकालें",
+      "metaDescription": "PDF से खास पेज मुफ़्त निकालें। साइनअप या वॉटरमार्क नहीं, ब्राउज़र में निजी प्रोसेसिंग।",
+      "keyword": "PDF से खास पेज निकालें",
+      "secondaryKeywords": [
+        "चुने PDF पेज सहेजें",
+        "PDF पेज मुफ़्त निकालें",
+        "PDF से पेज अलग करें",
+        "PDF के पेज रखें"
+      ],
+      "answer": "PDF से खास पेज निकालने के लिए आवश्यक पेज नंबर पहचानें, पेज या रेंज चुनें, नया PDF बनाएँ और डाउनलोड जाँचें। PrintxPDF यह काम ब्राउज़र में बिना साइनअप या वॉटरमार्क करता है। मूल फ़ाइल नहीं बदलती; नई PDF में केवल चुने हुए पेज होते हैं।",
+      "ctaLabel": "केवल ज़रूरी PDF पेज रखें",
+      "body": [
+        {
+          "t": "p",
+          "x": "बड़े दस्तावेज़ से छोटी PDF बनाने के लिए पेज निकालना साफ़ तरीका है। कवर और ज़रूरी परिशिष्ट रखें, केवल इनवॉइस पेज सहेजें या रिपोर्ट के कुछ पेज भेजें। PrintxPDF चुने पेजों की कॉपी ब्राउज़र टैब में बनाता है। खाते या कार्ड की ज़रूरत नहीं, वॉटरमार्क नहीं और सामान्य फ़ाइल अपलोड नहीं होती।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF से चुने हुए पेज कैसे निकालें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "ज़रूरी पेज ढूँढ़ें",
+              "x": "PDF खोलें और रीडर में दिखे पेज नंबर लिखें। देखें कि कवर या खाली पेज के कारण ये छपे नंबरों से अलग तो नहीं।"
+            },
+            {
+              "h": "पेज निकालने वाली टूल खोलें",
+              "x": "फ़ाइल [पेज निकालें](/tools/extract-pages) में जोड़ें। रेंज चुनते समय मूल फ़ाइल खुली या पास रखें।"
+            },
+            {
+              "h": "पेज या रेंज दर्ज करें",
+              "x": "अलग पेज, लगातार रेंज या टूल उपलब्ध हो तो कई समूह चुनें। कॉपी बनाने से पहले चयन देखें।"
+            },
+            {
+              "h": "नई PDF बनाएँ",
+              "x": "आउटपुट बनाएँ और डाउनलोड करें। स्रोत फ़ाइल पर लिखकर उसे बदला नहीं जाता।"
+            },
+            {
+              "h": "आउटपुट जाँचें",
+              "x": "पहला और आखिरी पेज, दिशा, तथा पाने वाले के लिए ज़रूरी परिशिष्ट और हस्ताक्षर जाँचें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "केवल ज़रूरी PDF पेज रखें। मुफ़्त निजी ब्राउज़र प्रोसेसिंग, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "पेज निकालें, फ़ाइल बाँटें या पेज हटाएँ?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "काम",
+            "सही टूल",
+            "परिणाम"
+          ],
+          "rows": [
+            [
+              "चुने पेज एक नई फ़ाइल में रखना",
+              "पेज निकालें",
+              "चुने पेजों वाली छोटी PDF।"
+            ],
+            [
+              "कई अलग आउटपुट बनाना",
+              "PDF बाँटें",
+              "रेंज या नियम के हिसाब से कई फ़ाइलें।"
+            ],
+            [
+              "वर्किंग कॉपी से पेज हटाना",
+              "पेज हटाएँ",
+              "उन पेजों के बिना नई फ़ाइल।"
+            ],
+            [
+              "पेज क्रम बदलना",
+              "पेज व्यवस्थित करें",
+              "वही पेज नए क्रम में।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "साझा करने से पहले पेज नंबर जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "प्राप्तकर्ता पेज 10 से 14 माँग सकता है, लेकिन PDF रीडर कवर और खाली पेज भी गिनता है जो छपी संख्या में शामिल न हों। थंबनेल और दिखाई देने वाले नंबर देखें। स्कैन में छवि के अंदर का नंबर जाँचें। एक पेज की गलती से हस्ताक्षर पेज, परिशिष्ट या अंतिम कुल छूट सकता है। छोटी फ़ाइल पूरी होने की पुष्टि तक मूल रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "पेज निकालना रेडैक्शन नहीं है"
+        },
+        {
+          "t": "p",
+          "x": "निकाली गई कॉपी चुने पेजों की सभी सामग्री रखती है। यह निजी पाठ, टिप्पणियाँ, दस्तावेज़ गुण या उन पेजों के अटैचमेंट नहीं मिटाती। ज़रूरत होने पर [मेटाडेटा हटाएँ](/tools/remove-metadata) चलाएँ। किसी जानकारी को वापस न पाया जा सके, तो सत्यापित रेडैक्शन करें। क्रॉप या काला आकार पर्याप्त नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "संवेदनशील फ़ाइलें डिवाइस पर रखें और आउटपुट जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "पेज निकालना अक्सर आवेदन, स्टेटमेंट, ग्राहक रिकॉर्ड या अनुबंध के लिए किया जाता है। ब्राउज़र प्रोसेसिंग इस सामान्य काम में तीसरे पक्ष को फ़ाइल भेजने से बचाती है। फिर भी भेजने से पहले PDF जाँचें। ईमेल के लिए बड़ी हो तो कॉपी पर [PDF संपीड़ित करें](/tools/compress-pdf) और देखें कि चित्र, हस्ताक्षर व छोटा पाठ स्पष्ट हैं।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF से कुछ पेज ही निकाल सकता हूँ?",
+          "a": "हाँ। अलग पेज या रेंज चुनें, नई PDF बनाएँ और कॉपी डाउनलोड करें। मूल दस्तावेज़ नहीं बदलता।"
+        },
+        {
+          "q": "क्या गैर-लगातार पेज निकाल सकता हूँ?",
+          "a": "टूल के पेज चयन नियम का उपयोग करें या हर समूह के लिए अलग आउटपुट बनाएँ। जाँचें कि सभी आवश्यक पेज शामिल हैं।"
+        },
+        {
+          "q": "क्या पेज निकालने से मेटाडेटा हटता है?",
+          "a": "नहीं। इससे पेजों की नई कॉपी बनती है, लेकिन दस्तावेज़ गुण या अन्य छिपा डेटा हटने की गारंटी नहीं। ज़रूरत पर मेटाडेटा अलग से हटाएँ।"
+        },
+        {
+          "q": "क्या PDF अपलोड किए बिना पेज निकाल सकता हूँ?",
+          "a": "PrintxPDF सामान्य निष्कर्षण ब्राउज़र टैब में करता है, इसलिए इस प्रक्रिया में फ़ाइल आपके डिवाइस पर रहती है।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية استخراج صفحات محددة من PDF مجاناً",
+      "metaTitle": "استخراج صفحات محددة من PDF مجاناً",
+      "metaDescription": "استخرج صفحات PDF مجاناً، بلا تسجيل أو علامة مائية، مع معالجة خاصة داخل المتصفح.",
+      "keyword": "استخراج صفحات محددة من PDF",
+      "secondaryKeywords": [
+        "حفظ صفحات PDF المختارة",
+        "استخراج صفحات PDF مجاناً",
+        "فصل صفحات من PDF",
+        "الاحتفاظ بصفحات من PDF"
+      ],
+      "answer": "لاستخراج صفحات محددة من PDF، حدد أرقام الصفحات المطلوبة، واختر الصفحات أو النطاقات، وأنشئ PDF جديداً ثم افحص التنزيل. يتيح PrintxPDF ذلك في المتصفح بلا تسجيل أو علامة مائية. يبقى الملف الأصلي كما هو، وتحتوي النسخة الجديدة على الصفحات التي اخترتها فقط.",
+      "ctaLabel": "احتفظ بصفحات PDF التي تحتاجها فقط",
+      "body": [
+        {
+          "t": "p",
+          "x": "استخراج الصفحات طريقة مباشرة لإنشاء PDF أصغر من حزمة كبيرة. احتفظ بالغلاف والملحق المطلوب، أو احفظ صفحات الفواتير فقط، أو أرسل صفحات محددة من تقرير دون إرسال المستند كله. ينشئ PrintxPDF نسخة بالصفحات المختارة داخل المتصفح. لا تحتاج إلى حساب أو بطاقة، ولا توجد علامة مائية ولا رفع للملفات القياسية."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية استخراج صفحات محددة من PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "حدد الصفحات المطلوبة",
+              "x": "افتح PDF وسجل أرقام العارض. تحقق مما إذا كان الغلاف أو الصفحة الفارغة يجعلها تختلف عن الترقيم المطبوع."
+            },
+            {
+              "h": "افتح أداة استخراج الصفحات",
+              "x": "أضف الملف إلى [استخراج الصفحات](/tools/extract-pages). أبقِ الأصل مفتوحاً أو قريباً أثناء اختيار النطاقات."
+            },
+            {
+              "h": "أدخل الصفحات أو النطاقات",
+              "x": "اختر صفحات منفردة أو نطاقاً متصلاً أو عدة مجموعات إذا أتاحت الأداة ذلك. راجع الاختيار قبل إنشاء النسخة."
+            },
+            {
+              "h": "أنشئ PDF جديداً",
+              "x": "أنشئ الناتج ونزّله. لا يُستبدل ملف المصدر."
+            },
+            {
+              "h": "افحص الناتج",
+              "x": "تحقق من الصفحة الأولى والأخيرة واتجاه الصفحات، ومن وجود المرفقات أو التوقيعات التي يحتاجها المستلم."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "احتفظ بصفحات PDF المطلوبة فقط. مجاناً، بخصوصية في المتصفح، بلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "هل تستخرج الصفحات أم تقسّم الملف أم تحذف صفحات؟"
+        },
+        {
+          "t": "table",
+          "head": [
+            "المهمة",
+            "الأداة الأنسب",
+            "النتيجة"
+          ],
+          "rows": [
+            [
+              "الاحتفاظ بصفحات مختارة في ملف واحد",
+              "استخراج الصفحات",
+              "PDF موجز بالصفحات المحددة."
+            ],
+            [
+              "إنشاء عدة ملفات منفصلة",
+              "تقسيم PDF",
+              "ملفات متعددة حسب النطاق أو القاعدة."
+            ],
+            [
+              "إزالة صفحات من نسخة عمل",
+              "حذف الصفحات",
+              "نسخة جديدة دون تلك الصفحات."
+            ],
+            [
+              "تغيير ترتيب الصفحات",
+              "تنظيم الصفحات",
+              "الصفحات نفسها بترتيب مختلف."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من أرقام الصفحات قبل المشاركة"
+        },
+        {
+          "t": "p",
+          "x": "قد يطلب المستلم الصفحات 10 إلى 14، لكن العارض قد يحسب صفحة عنوان وصفحة فارغة لا تظهران في الترقيم المطبوع. افحص الصور المصغرة والعناوين الظاهرة. في المستندات الممسوحة، تحقق من الرقم المطبوع داخل الصورة. قد يؤدي خطأ صفحة واحدة إلى حذف صفحة توقيع أو ملحق أو الإجمالي النهائي. احتفظ بالأصل حتى يؤكد المستلم اكتمال النسخة الأصغر."
+        },
+        {
+          "t": "h2",
+          "x": "استخراج الصفحات ليس تنقيحاً"
+        },
+        {
+          "t": "p",
+          "x": "تحتوي النسخة المستخرجة على كل ما تحمله الصفحات المختارة. لا يمحو ذلك النص الخاص أو التعليقات أو خصائص المستند أو المرفقات المضمنة في تلك الصفحات. استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) لتنظيف الخصائص عند الحاجة. ولمنع استرجاع المعلومات، استخدم تنقيحاً تم التحقق منه. لا يكفي القص أو وضع شكل أسود."
+        },
+        {
+          "t": "h2",
+          "x": "أبقِ الملفات الحساسة محلية وافحص النتيجة"
+        },
+        {
+          "t": "p",
+          "x": "يشيع استخراج الصفحات من الطلبات والكشوف وسجلات العملاء والعقود. تتجنب المعالجة المحلية نقل الملف إلى جهة أخرى لهذه المهمة الروتينية. افحص PDF الجديد مع ذلك قبل إرساله. إذا كان كبيراً للبريد، فاستخدم [ضغط PDF](/tools/compress-pdf) على نسخة وتأكد من وضوح الصور والتوقيعات والنص الصغير."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكنني استخراج بضع صفحات فقط من PDF؟",
+          "a": "نعم. اختر صفحات منفردة أو نطاقاً، وأنشئ PDF جديداً ونزّل النسخة. يبقى المستند الأصلي دون تغيير."
+        },
+        {
+          "q": "هل يمكن استخراج صفحات PDF غير متتالية؟",
+          "a": "استخدم صيغة اختيار الصفحات في الأداة أو أنشئ عملية استخراج منفصلة لكل مجموعة. افحص الناتج للتأكد من وجود كل الصفحات المطلوبة."
+        },
+        {
+          "q": "هل يزيل استخراج الصفحات البيانات الوصفية؟",
+          "a": "لا. ينشئ اختياراً جديداً للصفحات ولا يضمن حذف خصائص المستند أو البيانات المخفية الأخرى. استخدم خطوة منفصلة للبيانات الوصفية عند الحاجة."
+        },
+        {
+          "q": "هل يمكن استخراج الصفحات دون رفع PDF؟",
+          "a": "يعالج PrintxPDF الاستخراج القياسي في علامة تبويب المتصفح، فيبقى الملف على جهازك خلال هذا المسار."
+        }
+      ]
+    },
+    "bn": {
+      "title": "PDF থেকে নির্দিষ্ট পৃষ্ঠা বিনামূল্যে কীভাবে বের করবেন",
+      "metaTitle": "PDF থেকে নির্দিষ্ট পৃষ্ঠা বিনামূল্যে বের করুন",
+      "metaDescription": "PDF থেকে নির্দিষ্ট পৃষ্ঠা বিনামূল্যে বের করুন। সাইনআপ বা ওয়াটারমার্ক নেই, ব্রাউজারে ব্যক্তিগত প্রক্রিয়া।",
+      "keyword": "PDF থেকে নির্দিষ্ট পৃষ্ঠা বের করুন",
+      "secondaryKeywords": [
+        "নির্বাচিত PDF পৃষ্ঠা সেভ",
+        "PDF পৃষ্ঠা বিনামূল্যে বের",
+        "PDF থেকে পৃষ্ঠা আলাদা",
+        "PDF-এর পৃষ্ঠা রাখুন"
+      ],
+      "answer": "PDF থেকে নির্দিষ্ট পৃষ্ঠা বের করতে প্রয়োজনীয় পৃষ্ঠা নম্বর চিহ্নিত করুন, পৃষ্ঠা বা রেঞ্জ বাছুন, নতুন PDF বানান এবং ডাউনলোড দেখুন। PrintxPDF ব্রাউজারে কাজটি করে, সাইনআপ বা ওয়াটারমার্ক ছাড়া। মূল ফাইল বদলায় না; নতুন PDF-এ শুধু নির্বাচিত পৃষ্ঠা থাকে।",
+      "ctaLabel": "শুধু দরকারি PDF পৃষ্ঠা রাখুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "বড় প্যাকেট থেকে ছোট PDF তৈরির সহজ উপায় হলো পৃষ্ঠা বের করা। প্রচ্ছদ ও দরকারি পরিশিষ্ট রাখুন, শুধু চালানের পৃষ্ঠা সেভ করুন বা রিপোর্টের কয়েকটি পৃষ্ঠা পাঠান। PrintxPDF ব্রাউজার ট্যাবে নির্বাচিত পৃষ্ঠার কপি বানায়। অ্যাকাউন্ট বা কার্ড লাগে না, ওয়াটারমার্ক নেই, সাধারণ ফাইল আপলোডও হয় না।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF থেকে নির্বাচিত পৃষ্ঠা কীভাবে বের করবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "প্রয়োজনীয় পৃষ্ঠা খুঁজুন",
+              "x": "PDF খুলে ভিউয়ারের পৃষ্ঠা নম্বর লিখুন। প্রচ্ছদ বা ফাঁকা পৃষ্ঠা থাকলে ছাপা নম্বরের সঙ্গে পার্থক্য আছে কি না দেখুন।"
+            },
+            {
+              "h": "পৃষ্ঠা বের করার টুল খুলুন",
+              "x": "[পৃষ্ঠা বের করুন](/tools/extract-pages)-এ ফাইল যোগ করুন। রেঞ্জ বাছার সময় মূল ফাইল খুলে রাখুন বা কাছে রাখুন।"
+            },
+            {
+              "h": "পৃষ্ঠা বা রেঞ্জ দিন",
+              "x": "আলাদা পৃষ্ঠা, ধারাবাহিক রেঞ্জ বা টুল সমর্থন করলে একাধিক গ্রুপ বাছুন। কপি তৈরির আগে নির্বাচন দেখুন।"
+            },
+            {
+              "h": "নতুন PDF তৈরি করুন",
+              "x": "ফল তৈরি করে ডাউনলোড করুন। উৎস ফাইলের ওপর নতুন কিছু লেখা হয় না।"
+            },
+            {
+              "h": "আউটপুট পরীক্ষা করুন",
+              "x": "প্রথম ও শেষ পৃষ্ঠা, পৃষ্ঠার দিক এবং প্রাপকের দরকারি সংযুক্তি বা স্বাক্ষর আছে কি না দেখুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "শুধু দরকারি PDF পৃষ্ঠা রাখুন। বিনামূল্যে, ব্যক্তিগত ব্রাউজার প্রক্রিয়া, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "পৃষ্ঠা বের, ফাইল ভাগ, নাকি পৃষ্ঠা মুছবেন?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "কাজ",
+            "উপযুক্ত টুল",
+            "ফলাফল"
+          ],
+          "rows": [
+            [
+              "নির্বাচিত পৃষ্ঠা একটি নতুন ফাইলে রাখা",
+              "পৃষ্ঠা বের করুন",
+              "নির্বাচিত পৃষ্ঠার ছোট PDF।"
+            ],
+            [
+              "একাধিক আলাদা ফাইল তৈরি",
+              "PDF ভাগ করুন",
+              "রেঞ্জ বা নিয়মে ভাগ করা কয়েকটি ফাইল।"
+            ],
+            [
+              "কপি থেকে পৃষ্ঠা বাদ দেওয়া",
+              "পৃষ্ঠা মুছুন",
+              "সেই পৃষ্ঠা ছাড়া নতুন সংস্করণ।"
+            ],
+            [
+              "পৃষ্ঠা ক্রম বদলানো",
+              "পৃষ্ঠা সাজান",
+              "একই পৃষ্ঠা অন্য ক্রমে।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "শেয়ারের আগে পৃষ্ঠা নম্বর যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "প্রাপক 10 থেকে 14 নম্বর পৃষ্ঠা চাইতে পারেন, কিন্তু PDF ভিউয়ার এমন প্রচ্ছদ বা ফাঁকা পৃষ্ঠাও গোনে যা মুদ্রিত নম্বরে নেই। থাম্বনেইল ও দৃশ্যমান নম্বর দেখুন। স্ক্যান করা নথিতে ছবির ভেতরের নম্বর মিলিয়ে নিন। একটি পৃষ্ঠা ভুল হলে স্বাক্ষরের পাতা, সংযুক্তি বা শেষ মোট বাদ যেতে পারে। ছোট ফাইল সম্পূর্ণ কি না নিশ্চিত না হওয়া পর্যন্ত মূল রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "পৃষ্ঠা বের করা রিড্যাকশন নয়"
+        },
+        {
+          "t": "p",
+          "x": "নির্বাচিত পৃষ্ঠার সব বিষয় নতুন কপিতে থাকে। এতে ব্যক্তিগত লেখা, মন্তব্য, নথির বৈশিষ্ট্য বা পৃষ্ঠায় যুক্ত সংযুক্তি মুছে যায় না। দরকার হলে [মেটাডেটা সরান](/tools/remove-metadata) দিয়ে বৈশিষ্ট্য পরিষ্কার করুন। তথ্য পুনরুদ্ধার ঠেকাতে যাচাইকৃত রিড্যাকশন করুন। ক্রপ বা কালো আকৃতি যথেষ্ট নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "সংবেদনশীল ফাইল ডিভাইসে রাখুন এবং ফল দেখুন"
+        },
+        {
+          "t": "p",
+          "x": "আবেদন, বিবরণী, গ্রাহকের রেকর্ড বা চুক্তি থেকে প্রায়ই পৃষ্ঠা বের করা হয়। ব্রাউজারে কাজ করলে এই সাধারণ প্রক্রিয়ায় ফাইল তৃতীয় পক্ষের কাছে পাঠাতে হয় না। তবু পাঠানোর আগে নতুন PDF দেখুন। ইমেইলের জন্য বড় হলে কপিতে [PDF সংকুচিত করুন](/tools/compress-pdf) এবং ছবি, স্বাক্ষর ও ছোট লেখা পড়া যায় কি না দেখুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF থেকে কয়েকটি পৃষ্ঠা মাত্র বের করা যায়?",
+          "a": "হ্যাঁ। আলাদা পৃষ্ঠা বা রেঞ্জ বেছে নতুন PDF বানিয়ে কপি ডাউনলোড করুন। মূল নথি অপরিবর্তিত থাকে।"
+        },
+        {
+          "q": "PDF থেকে পরপর নয় এমন পৃষ্ঠা বের করা যাবে?",
+          "a": "টুলের পৃষ্ঠা নির্বাচন পদ্ধতি ব্যবহার করুন বা প্রতিটি গ্রুপ আলাদাভাবে বের করুন। সব দরকারি পৃষ্ঠা আছে কি না যাচাই করুন।"
+        },
+        {
+          "q": "পৃষ্ঠা বের করলে কি মেটাডেটা মুছে যায়?",
+          "a": "না। নতুন পৃষ্ঠা নির্বাচন তৈরি হয়, কিন্তু নথির বৈশিষ্ট্য বা অন্য লুকানো তথ্য মুছে যাওয়ার নিশ্চয়তা নেই। দরকার হলে আলাদা ধাপে মেটাডেটা সরান।"
+        },
+        {
+          "q": "PDF আপলোড না করে পৃষ্ঠা বের করতে পারি?",
+          "a": "PrintxPDF সাধারণ পৃষ্ঠা বের করার কাজ ব্রাউজার ট্যাবে করে, তাই এই প্রক্রিয়ায় ফাইল ডিভাইসে থাকে।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách trích xuất trang cụ thể từ PDF miễn phí",
+      "metaTitle": "Trích xuất trang cụ thể từ PDF miễn phí",
+      "metaDescription": "Trích xuất trang PDF miễn phí, không đăng ký, không dấu mờ, xử lý riêng tư trong trình duyệt.",
+      "keyword": "trích xuất trang cụ thể từ PDF",
+      "secondaryKeywords": [
+        "lưu trang PDF đã chọn",
+        "trích xuất trang PDF miễn phí",
+        "tách trang khỏi PDF",
+        "giữ lại trang PDF"
+      ],
+      "answer": "Để trích xuất trang cụ thể từ PDF, hãy xác định số trang cần lấy, chọn trang hoặc khoảng trang, tạo PDF mới rồi kiểm tra bản tải xuống. PrintxPDF xử lý trong trình duyệt, không cần đăng ký hay có dấu mờ. Tệp gốc không đổi; bản mới chỉ chứa các trang bạn chọn.",
+      "ctaLabel": "Chỉ giữ lại các trang PDF cần thiết",
+      "body": [
+        {
+          "t": "p",
+          "x": "Trích xuất trang là cách gọn để tạo PDF nhỏ hơn từ một bộ tài liệu lớn. Giữ trang bìa và phụ lục liên quan, chỉ lưu các trang hóa đơn hoặc gửi vài trang của báo cáo mà không chuyển toàn bộ tài liệu. PrintxPDF tạo bản sao của trang đã chọn trong thẻ trình duyệt. Không cần tài khoản hay thẻ, không dấu mờ và không tải tệp tiêu chuẩn lên máy chủ."
+        },
+        {
+          "t": "h2",
+          "x": "Cách trích xuất trang đã chọn từ PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Tìm các trang cần lấy",
+              "x": "Mở PDF và ghi số trang trong trình đọc. Kiểm tra trang bìa hoặc trang trắng có làm số này khác số in hay không."
+            },
+            {
+              "h": "Mở công cụ Trích xuất trang",
+              "x": "Thêm tệp vào [Trích xuất trang](/tools/extract-pages). Giữ bản gốc mở hoặc ở gần khi chọn khoảng."
+            },
+            {
+              "h": "Nhập trang hoặc khoảng trang",
+              "x": "Chọn trang riêng lẻ, một khoảng liên tục hoặc nhiều nhóm nếu công cụ hỗ trợ. Xem lại lựa chọn trước khi tạo bản sao."
+            },
+            {
+              "h": "Tạo PDF mới",
+              "x": "Tạo đầu ra và tải xuống. Tệp nguồn không bị ghi đè."
+            },
+            {
+              "h": "Kiểm tra đầu ra",
+              "x": "Xem trang đầu, trang cuối, chiều trang và các phụ lục hoặc chữ ký người nhận cần."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "Chỉ giữ trang PDF bạn cần. Miễn phí, xử lý riêng tư trong trình duyệt, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Nên trích xuất, chia tệp hay xóa trang?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Nhiệm vụ",
+            "Công cụ phù hợp",
+            "Kết quả"
+          ],
+          "rows": [
+            [
+              "Giữ trang chọn trong một tệp mới",
+              "Trích xuất trang",
+              "PDF gọn chỉ có trang đã chọn."
+            ],
+            [
+              "Tạo nhiều tệp riêng",
+              "Chia PDF",
+              "Nhiều tệp chia theo khoảng hoặc quy tắc."
+            ],
+            [
+              "Bỏ trang khỏi bản làm việc",
+              "Xóa trang",
+              "Phiên bản mới không còn trang đó."
+            ],
+            [
+              "Đổi thứ tự trang",
+              "Sắp xếp trang",
+              "Các trang cũ theo trình tự mới."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra số trang trước khi chia sẻ"
+        },
+        {
+          "t": "p",
+          "x": "Người nhận có thể yêu cầu trang 10 đến 14, nhưng trình đọc PDF có thể tính cả trang tiêu đề và trang trắng không có trong số in. Xem hình thu nhỏ và nhãn trang. Với tài liệu scan, xác minh số in trên ảnh. Sai một trang có thể bỏ sót trang ký, phụ lục hoặc tổng số cuối. Giữ bản gốc đến khi người nhận xác nhận bản ngắn đã đủ."
+        },
+        {
+          "t": "h2",
+          "x": "Trích xuất không phải biên tập xóa thông tin"
+        },
+        {
+          "t": "p",
+          "x": "Bản trích xuất giữ mọi thứ có trên trang được chọn. Nó không xóa chữ riêng tư, bình luận, thuộc tính tài liệu hoặc tệp đính kèm nhúng trong trang. Dùng [Xóa siêu dữ liệu](/tools/remove-metadata) để làm sạch thuộc tính thông thường khi cần. Nếu nội dung phải không thể khôi phục, hãy dùng quy trình biên tập xóa đã xác minh. Cắt trang hoặc phủ hình đen là chưa đủ."
+        },
+        {
+          "t": "h2",
+          "x": "Giữ tệp nhạy cảm trên thiết bị và kiểm tra kết quả"
+        },
+        {
+          "t": "p",
+          "x": "Trích xuất trang thường dùng với hồ sơ, sao kê, tệp khách hàng và hợp đồng. Xử lý trong trình duyệt tránh truyền tệp cho bên thứ ba trong tác vụ thông thường này. Dù vậy, hãy xem PDF mới trước khi gửi. Nếu tệp quá lớn để gửi email, dùng [Nén PDF](/tools/compress-pdf) trên bản sao và kiểm tra hình ảnh, chữ ký, chữ nhỏ còn rõ."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Tôi có thể chỉ trích xuất vài trang từ PDF không?",
+          "a": "Có. Chọn từng trang hoặc một khoảng, tạo PDF mới và tải bản sao xuống. Tài liệu gốc vẫn nguyên vẹn."
+        },
+        {
+          "q": "Tôi có thể trích xuất các trang không liền nhau không?",
+          "a": "Dùng cú pháp chọn trang của công cụ hoặc tạo từng bản trích xuất riêng cho mỗi nhóm. Kiểm tra đầu ra để chắc rằng đã đủ trang."
+        },
+        {
+          "q": "Trích xuất trang có xóa siêu dữ liệu không?",
+          "a": "Không. Thao tác tạo lựa chọn trang mới nhưng không bảo đảm xóa thuộc tính tài liệu hay dữ liệu ẩn khác. Hãy xử lý siêu dữ liệu riêng nếu cần."
+        },
+        {
+          "q": "Có thể trích xuất trang mà không tải PDF lên không?",
+          "a": "PrintxPDF xử lý thao tác trích xuất tiêu chuẩn trong thẻ trình duyệt nên tệp ở lại trên thiết bị trong quy trình này."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何免费从 PDF 中提取指定页面",
+      "metaTitle": "免费提取 PDF 中的指定页面",
+      "metaDescription": "免费提取 PDF 指定页面。无需注册、无水印，在浏览器中私密处理敏感文档，安全快捷，直接在线处理。",
+      "keyword": "从 PDF 提取指定页面",
+      "secondaryKeywords": [
+        "保存选中的 PDF 页面",
+        "免费提取 PDF 页面",
+        "从 PDF 分离页面",
+        "保留 PDF 中的页面"
+      ],
+      "answer": "要从 PDF 中提取指定页面，请确定所需页码，选择页面或范围，创建新 PDF 并检查下载结果。PrintxPDF 可在浏览器中完成，无需注册或水印。原文件不会改变，新副本只包含你选择的页面。",
+      "ctaLabel": "只保留需要的 PDF 页面",
+      "body": [
+        {
+          "t": "p",
+          "x": "从大型文件包中制作较小 PDF，提取页面是直接的方法。你可以保留封面和相关附录，只保存发票页，或只发送报告中的几页。PrintxPDF 在浏览器标签页中创建所选页面的副本。无需账户或银行卡，没有水印，标准文件无需上传。"
+        },
+        {
+          "t": "h2",
+          "x": "如何从 PDF 中提取选定页面"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "找出需要的页面",
+              "x": "打开 PDF，记下阅读器显示的页码。检查封面或空白页是否导致页码与印刷编号不同。"
+            },
+            {
+              "h": "打开提取页面工具",
+              "x": "将文件添加到[提取页面](/tools/extract-pages)。选择范围时，把原文件打开或放在手边。"
+            },
+            {
+              "h": "输入页码或范围",
+              "x": "选择单页、连续范围，或在工具支持时选择多个页面组。生成副本前先检查选项。"
+            },
+            {
+              "h": "创建新的 PDF",
+              "x": "生成并下载结果。源文件不会被覆盖。"
+            },
+            {
+              "h": "检查输出文件",
+              "x": "确认第一页、最后一页、页面方向，以及收件人需要的附件或签名是否包含在内。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "extract-pages",
+          "x": "只保留需要的 PDF 页面。免费、浏览器私密处理，无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "应该提取、拆分还是删除页面？"
+        },
+        {
+          "t": "table",
+          "head": [
+            "任务",
+            "适用工具",
+            "结果"
+          ],
+          "rows": [
+            [
+              "在一个新文件中保留选定页面",
+              "提取页面",
+              "只含所选页面的精简 PDF。"
+            ],
+            [
+              "创建多个独立文件",
+              "拆分 PDF",
+              "按范围或规则拆成多个文件。"
+            ],
+            [
+              "从工作副本中移除页面",
+              "删除页面",
+              "不含这些页面的新版本。"
+            ],
+            [
+              "改变页面顺序",
+              "整理页面",
+              "相同页面按不同顺序排列。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "分享前检查页码"
+        },
+        {
+          "t": "p",
+          "x": "收件人可能要第 10 至 14 页，但 PDF 阅读器可能把标题页和空白页也计入，而印刷页码没有这些页。请查看缩略图和可见标记。扫描文件要核对图像中实际印出的页码。少取一页可能会漏掉签字页、附件或最终总计。收件人确认短版文件完整前，请保留原件。"
+        },
+        {
+          "t": "h2",
+          "x": "提取页面不等于涂黑内容"
+        },
+        {
+          "t": "p",
+          "x": "提取副本会保留所选页面上的所有内容。它不会清除这些页面中的私人文字、批注、文档属性或嵌入附件。需要时用[移除元数据](/tools/remove-metadata)清理常见属性。要让内容无法恢复，请使用经过验证的涂黑流程。裁剪页面或盖上黑色形状都不够。"
+        },
+        {
+          "t": "h2",
+          "x": "让敏感文件留在本地并检查结果"
+        },
+        {
+          "t": "p",
+          "x": "提取页面常用于申请材料、对账单、客户记录或合同。本地处理可避免为这项日常任务把文件传给第三方。发送前仍要检查新 PDF。如果文件太大无法邮件发送，可在副本上使用[压缩 PDF](/tools/compress-pdf)，并确认图像、签名和小字仍然清晰。"
+        },
+        {
+          "t": "p",
+          "x": "如果页面范围来自有目录的长文档，请检查章节标题和页眉，不要只按阅读器页码判断。接收方需要签署文件时，先确认应发送抽取副本还是原始签署文件；生成新 PDF 可能影响数字签名的验证状态。请保留来源文件，并为新副本使用容易识别的名称。对于身份证号码或账户信息，确认这些内容确实应该出现在交付文件中。提取操作只选择页面，不会自动遮盖其中的文字或清除文件属性。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以只从 PDF 中提取几页吗？",
+          "a": "可以。选择单页或范围，创建新的 PDF 并下载副本。原文档保持不变。"
+        },
+        {
+          "q": "可以提取不连续的 PDF 页面吗？",
+          "a": "使用工具的页面选择语法，或为每组单独提取。检查输出，确认包含所有需要的页面。"
+        },
+        {
+          "q": "提取页面会移除元数据吗？",
+          "a": "不会。它会创建新的页面选择，但不保证移除文档属性或其他隐藏数据。需要时请另行移除元数据。"
+        },
+        {
+          "q": "可以不上传 PDF 就提取页面吗？",
+          "a": "PrintxPDF 在浏览器标签页内处理标准提取，因此此流程中文件留在你的设备上。"
+        }
+      ]
+    }
+  }
+}
