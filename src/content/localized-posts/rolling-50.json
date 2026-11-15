@@ -6154,6 +6154,152 @@
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist"
         ]
+      },
+      {
+        "topic": "redaction-vs-black-boxes",
+        "slug": "redaction-vs-black-boxes",
+        "cluster": "privacy-expansion",
+        "title": "Redactar un PDF vs cubrirlo con cajas negras",
+        "metaTitle": "Redactar un PDF vs cubrirlo con cajas negras",
+        "metaDescription": "Aprende por qué una caja negra no elimina el texto y cómo revisar una redacción real. Gratis y privado en el navegador.",
+        "primaryKeyword": "redactar PDF vs caja negra",
+        "secondaryKeywords": [
+          "redact PDF safely",
+          "black box PDF redaction",
+          "remove hidden PDF text"
+        ],
+        "answer": "Una caja negra dibujada sobre texto normalmente solo lo tapa: el contenido original puede seguir seleccionándose o copiándose. Una redacción real elimina el contenido marcado de la copia compartida. PrintxPDF Redact PDF convierte cada página marcada en una imagen con las áreas cubiertas; las páginas sin marcas se conservan. Revisa la salida y limpia por separado metadatos, adjuntos y comentarios si corresponde.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Cubrir texto con un rectángulo negro no es lo mismo que redactarlo. En muchos editores, el rectángulo queda encima y el texto original sigue en el archivo. La herramienta Redact PDF de PrintxPDF trata las cajas como marcas y reconstruye las páginas marcadas como imágenes con el negro integrado; las páginas sin marcas se copian. Revisa cada área y el documento final. La redacción cambia el archivo, así que conserva el original protegido y comparte solo la copia verificada."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo redactar correctamente un PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Trabaja sobre una copia",
+                "x": "Conserva el original restringido y crea una copia para la divulgación."
+              },
+              {
+                "h": "Marca cada dato que debe desaparecer",
+                "x": "En [Redact PDF](/tools/redact-pdf), dibuja manualmente una caja sobre cada texto o imagen privada; no es una búsqueda automática."
+              },
+              {
+                "h": "Revisa las marcas y las páginas",
+                "x": "Comprueba bordes, nombres, cifras y todas las apariciones; cubre una página completa si no debe divulgarse."
+              },
+              {
+                "h": "Genera y revisa la copia redactada",
+                "x": "Descarga el resultado, abre las páginas marcadas y confirma que la caja quedó integrada y que el texto no se puede seleccionar."
+              },
+              {
+                "h": "Limpia otros elementos por separado",
+                "x": "Revisa metadatos, comentarios, adjuntos y marcadores; usa [Eliminar metadatos](/tools/remove-metadata) para las propiedades estándar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "redact-pdf",
+            "x": "Redacta una copia en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Caja negra superpuesta vs redacción real"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Método",
+              "Qué ocurre con el texto",
+              "Riesgo o límite"
+            ],
+            "rows": [
+              [
+                "Rectángulo superpuesto",
+                "El texto original puede seguir debajo.",
+                "Puede seleccionarse, copiarse o mostrarse al quitar la forma."
+              ],
+              [
+                "Redacción real",
+                "El contenido marcado se elimina de la copia de salida.",
+                "Revisa que no falte texto por cubrir y que otras copias estén protegidas."
+              ],
+              [
+                "Redact PDF de PrintxPDF",
+                "Las páginas marcadas se reconstruyen como imágenes con la caja integrada.",
+                "Pierden búsqueda directa en esas páginas; las demás se copian."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Por qué una caja negra puede ser insegura"
+          },
+          {
+            "t": "p",
+            "x": "Un rectángulo dibujado en un PDF puede ser una capa de anotación o un objeto gráfico encima del texto. Si el contenido inferior permanece, alguien podría seleccionarlo, copiarlo, buscarlo o eliminar la forma superior con otro editor. La apariencia negra no demuestra que la información haya desaparecido. No compartas el archivo hasta comprobar qué contiene realmente la copia."
+          },
+          {
+            "t": "h2",
+            "x": "Qué hace Redact PDF de PrintxPDF"
+          },
+          {
+            "t": "p",
+            "x": "La herramienta te pide dibujar las áreas manualmente. Al exportar, cada página marcada se convierte en una imagen con las cajas negras pintadas; el texto de origen de esas páginas no se conserva como texto seleccionable. Las páginas sin marcas se copian sin reconstruir. Revisa todas las páginas y marca cada aparición, incluidos encabezados, pies, tablas, imágenes y duplicados. El proceso es manual; no encuentra automáticamente palabras en todo el documento."
+          },
+          {
+            "t": "h2",
+            "x": "Qué debes comprobar después de redactar"
+          },
+          {
+            "t": "p",
+            "x": "Abre la copia de salida y confirma que los cuadros cubren todo el dato, sin dejar caracteres en los bordes. Intenta seleccionar o buscar el texto redactado y verifica las demás páginas. Las páginas marcadas quedan como imágenes y ya no se buscan directamente; el [OCR PDF](/tools/ocr-pdf) puede recuperar el texto visible, pero las zonas negras no deberían aportar texto. El resultado se reconstruye y puede afectar calidad o tamaño."
+          },
+          {
+            "t": "h2",
+            "x": "La redacción no elimina todos los datos ocultos"
+          },
+          {
+            "t": "p",
+            "x": "La herramienta no limpia por sí sola título, autor, fechas, marcadores, comentarios ni adjuntos. Revisa esos elementos aparte y usa [Eliminar metadatos](/tools/remove-metadata) para propiedades estándar y XMP del documento. No sustituye la revisión de imágenes incrustadas, archivos adjuntos o contenido en otras páginas. Mantén el original bajo acceso controlado y comparte la copia solo después de una segunda revisión."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Una caja negra elimina el texto de un PDF?",
+            "a": "No necesariamente. En muchos editores solo se dibuja encima y el texto puede seguir seleccionándose o copiándose. Comprueba que se eliminó del archivo de salida."
+          },
+          {
+            "q": "¿Cómo redacta PrintxPDF las páginas?",
+            "a": "Las marcas se dibujan manualmente. Cada página marcada se reconstruye como imagen con las cajas integradas; las páginas no marcadas se copian. Revisa todas las apariciones."
+          },
+          {
+            "q": "¿Puedo buscar texto en una página redactada?",
+            "a": "No directamente en las páginas marcadas, que quedan como imágenes. OCR puede reconocer el texto visible; las áreas negras no deben aportar caracteres. Conserva la copia original por separado."
+          },
+          {
+            "q": "¿Redactar elimina metadatos y adjuntos?",
+            "a": "No. Revisa metadatos, comentarios, marcadores y adjuntos por separado. Remove Metadata limpia propiedades estándar y XMP del documento, pero no todos los demás elementos ocultos."
+          }
+        ],
+        "relatedTools": [
+          "redact-pdf",
+          "remove-metadata",
+          "ocr-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "preserving-signed-pdfs",
+          "share-draft-pdf-safely",
+          "pdf-review-copy-checklist"
+        ]
       }
     ]
   },
@@ -12302,6 +12448,152 @@
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist"
         ]
+      },
+      {
+        "topic": "redaction-vs-black-boxes",
+        "slug": "redaction-vs-black-boxes",
+        "cluster": "privacy-expansion",
+        "title": "Redigir um PDF vs cobrir com caixas pretas",
+        "metaTitle": "Redigir um PDF vs cobrir com caixas pretas",
+        "metaDescription": "Entenda por que uma caixa preta não apaga o texto e como revisar uma redação real. Grátis e privado no navegador.",
+        "primaryKeyword": "redigir PDF vs caixa preta",
+        "secondaryKeywords": [
+          "redact PDF safely",
+          "black box PDF redaction",
+          "remove hidden PDF text"
+        ],
+        "answer": "Uma caixa preta desenhada sobre o texto normalmente só o cobre: o conteúdo original pode continuar selecionável ou copiável. Uma redação real remove o conteúdo marcado da cópia compartilhada. O Redact PDF do PrintxPDF transforma cada página marcada em uma imagem com as áreas pretas incorporadas; páginas sem marcações são copiadas. Revise a saída e limpe metadados, anexos e comentários separadamente quando necessário.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Cobrir texto com um retângulo preto não é o mesmo que redigi-lo. Em muitos editores, o retângulo fica por cima e o texto original permanece no arquivo. A ferramenta Redact PDF do PrintxPDF trata as caixas como marcações e reconstrói as páginas marcadas como imagens com o preto incorporado; páginas sem marcação são copiadas. Confira cada área e o documento final. A redação altera o arquivo, então preserve o original protegido e compartilhe somente a cópia verificada."
+          },
+          {
+            "t": "h2",
+            "x": "Como redigir um PDF corretamente"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Trabalhe em uma cópia",
+                "x": "Preserve o original com acesso restrito e crie uma cópia para divulgação."
+              },
+              {
+                "h": "Marque cada dado que precisa desaparecer",
+                "x": "No [Redact PDF](/tools/redact-pdf), desenhe manualmente uma caixa sobre cada texto ou imagem privada; não há busca automática."
+              },
+              {
+                "h": "Revise as marcações e páginas",
+                "x": "Confira bordas, nomes, números e todas as ocorrências; cubra uma página inteira se ela não puder ser divulgada."
+              },
+              {
+                "h": "Gere e confira a cópia redigida",
+                "x": "Baixe o resultado, abra as páginas marcadas e confirme que a caixa foi incorporada e o texto não pode ser selecionado."
+              },
+              {
+                "h": "Limpe outros itens separadamente",
+                "x": "Confira metadados, comentários, anexos e marcadores; use [Remover metadados](/tools/remove-metadata) para propriedades padrão."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "redact-pdf",
+            "x": "Redija uma cópia na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Caixa preta sobreposta vs redação real"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Método",
+              "O que ocorre com o texto",
+              "Risco ou limite"
+            ],
+            "rows": [
+              [
+                "Retângulo sobreposto",
+                "O texto original pode continuar por baixo.",
+                "Pode ser selecionado, copiado ou revelado ao remover a forma."
+              ],
+              [
+                "Redação real",
+                "O conteúdo marcado é removido da cópia de saída.",
+                "Confira se não faltou cobrir texto e proteja outras cópias."
+              ],
+              [
+                "Redact PDF do PrintxPDF",
+                "Páginas marcadas são reconstruídas como imagens com a caixa incorporada.",
+                "Perdem a busca direta nessas páginas; as demais são copiadas."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Por que uma caixa preta pode ser insegura"
+          },
+          {
+            "t": "p",
+            "x": "Um retângulo desenhado em PDF pode ser uma anotação ou objeto gráfico acima do texto. Se o conteúdo inferior continuar, alguém pode selecioná-lo, copiá-lo, pesquisá-lo ou remover a forma superior em outro editor. A aparência preta não prova que a informação desapareceu. Não compartilhe o arquivo até conferir o conteúdo real da cópia."
+          },
+          {
+            "t": "h2",
+            "x": "O que o Redact PDF do PrintxPDF faz"
+          },
+          {
+            "t": "p",
+            "x": "A ferramenta pede que você desenhe as áreas manualmente. Na exportação, cada página marcada vira uma imagem com as caixas pretas incorporadas; o texto original dessas páginas não permanece como texto selecionável. Páginas sem marcações são copiadas sem reconstrução. Revise todas as páginas e marque cada ocorrência, inclusive cabeçalhos, rodapés, tabelas, imagens e repetições. O processo é manual; ele não encontra palavras automaticamente no documento inteiro."
+          },
+          {
+            "t": "h2",
+            "x": "O que conferir depois de redigir"
+          },
+          {
+            "t": "p",
+            "x": "Abra a cópia de saída e confirme que as caixas cobrem todo o dado sem deixar caracteres nas bordas. Tente selecionar ou pesquisar o texto redigido e confira as outras páginas. Páginas marcadas viram imagens e não são pesquisáveis diretamente; o [OCR PDF](/tools/ocr-pdf) pode reconhecer o texto visível, mas as áreas pretas não devem gerar texto. A saída é reconstruída e pode mudar qualidade ou tamanho."
+          },
+          {
+            "t": "h2",
+            "x": "A redação não remove todos os dados ocultos"
+          },
+          {
+            "t": "p",
+            "x": "A ferramenta não limpa por si só título, autor, datas, marcadores, comentários ou anexos. Confira esses itens separadamente e use [Remover metadados](/tools/remove-metadata) para propriedades padrão e XMP do documento. Isso não substitui a revisão de imagens incorporadas, anexos ou conteúdo em outras páginas. Mantenha o original com acesso controlado e compartilhe a cópia somente após uma segunda revisão."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Uma caixa preta apaga o texto de um PDF?",
+            "a": "Não necessariamente. Em muitos editores ela apenas fica por cima, e o texto pode continuar selecionável ou copiável. Confirme que ele foi removido do arquivo de saída."
+          },
+          {
+            "q": "Como o PrintxPDF redige as páginas?",
+            "a": "As marcações são desenhadas manualmente. Cada página marcada é reconstruída como imagem com as caixas incorporadas; páginas sem marcação são copiadas. Revise todas as ocorrências."
+          },
+          {
+            "q": "Posso pesquisar texto em uma página redigida?",
+            "a": "Não diretamente nas páginas marcadas, que viram imagens. O OCR pode reconhecer texto visível; as áreas pretas não devem gerar caracteres. Guarde a cópia original separada."
+          },
+          {
+            "q": "A redação remove metadados e anexos?",
+            "a": "Não. Confira metadados, comentários, marcadores e anexos separadamente. Remove Metadata limpa propriedades padrão e XMP do documento, mas não todos os demais itens ocultos."
+          }
+        ],
+        "relatedTools": [
+          "redact-pdf",
+          "remove-metadata",
+          "ocr-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "preserving-signed-pdfs",
+          "share-draft-pdf-safely",
+          "pdf-review-copy-checklist"
+        ]
       }
     ]
   },
@@ -18449,6 +18741,152 @@
           "archive-copy-vs-backup",
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "redaction-vs-black-boxes",
+        "slug": "redaction-vs-black-boxes",
+        "cluster": "privacy-expansion",
+        "title": "PDF में रेडैक्शन बनाम काले बॉक्स लगाना",
+        "metaTitle": "PDF में रेडैक्शन बनाम काले बॉक्स लगाना",
+        "metaDescription": "जानें कि काला बॉक्स टेक्स्ट क्यों नहीं मिटाता और सही रेडैक्शन कैसे जाँचें। मुफ़्त, निजी ब्राउज़र में।",
+        "primaryKeyword": "PDF रेडैक्शन बनाम काला बॉक्स",
+        "secondaryKeywords": [
+          "redact PDF safely",
+          "black box PDF redaction",
+          "remove hidden PDF text"
+        ],
+        "answer": "टेक्स्ट पर बनाया गया काला बॉक्स आम तौर पर उसे केवल ढकता है; मूल सामग्री चुनने या कॉपी करने योग्य रह सकती है। सही रेडैक्शन साझा की जाने वाली कॉपी से चिह्नित सामग्री हटाता है। PrintxPDF Redact PDF चिह्नित हर पेज को कवर किए गए क्षेत्रों सहित छवि बनाता है; बिना निशान वाले पेज कॉपी रहते हैं। आउटपुट जाँचें और जरूरत पर मेटाडेटा, अटैचमेंट व टिप्पणियाँ अलग से साफ़ करें।",
+        "body": [
+          {
+            "t": "p",
+            "x": "टेक्स्ट पर काला आयत रखना उसे रेडैक्ट करने जैसा नहीं है। कई संपादकों में आयत ऊपर रहता है और मूल टेक्स्ट फ़ाइल में बचा रहता है। PrintxPDF Redact PDF में बॉक्स निशान हैं; निर्यात पर चिह्नित पेज काले बॉक्स सहित छवियों के रूप में दोबारा बनते हैं और बिना निशान वाले पेज कॉपी होते हैं। हर क्षेत्र और अंतिम दस्तावेज़ जाँचें। रेडैक्शन फ़ाइल बदलता है, इसलिए मूल सुरक्षित रखें और केवल सत्यापित कॉपी साझा करें।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF को सही तरीके से कैसे रेडैक्ट करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "कॉपी पर काम करें",
+                "x": "मूल को नियंत्रित पहुँच में रखें और साझा करने के लिए अलग कॉपी बनाएँ।"
+              },
+              {
+                "h": "हर हटाए जाने वाले हिस्से को चिह्नित करें",
+                "x": "[Redact PDF](/tools/redact-pdf) में निजी टेक्स्ट या चित्र पर हाथ से बॉक्स बनाएँ; यह स्वचालित खोज नहीं करता।"
+              },
+              {
+                "h": "निशान और सभी पेज जाँचें",
+                "x": "किनारे, नाम, अंक और हर दोहराव देखें; कोई पेज साझा नहीं करना हो तो पूरा पेज ढकें।"
+              },
+              {
+                "h": "रेडैक्टेड कॉपी बनाएँ और जाँचें",
+                "x": "परिणाम डाउनलोड कर चिह्नित पेज खोलें; पुष्टि करें कि बॉक्स पेज में जुड़ा है और टेक्स्ट चुना नहीं जा सकता।"
+              },
+              {
+                "h": "बाकी चीज़ें अलग से साफ़ करें",
+                "x": "मेटाडेटा, टिप्पणियाँ, अटैचमेंट और बुकमार्क देखें; मानक गुणों के लिए [Remove Metadata](/tools/remove-metadata) उपयोग करें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "redact-pdf",
+            "x": "अपने टैब में कॉपी रेडैक्ट करें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "ऊपरी काला बॉक्स बनाम सही रेडैक्शन"
+          },
+          {
+            "t": "table",
+            "head": [
+              "तरीका",
+              "टेक्स्ट के साथ क्या होता है",
+              "जोखिम या सीमा"
+            ],
+            "rows": [
+              [
+                "ऊपर रखा आयत",
+                "मूल टेक्स्ट नीचे बचा रह सकता है।",
+                "आकार हटाने पर टेक्स्ट चुना, कॉपी या दिखाया जा सकता है।"
+              ],
+              [
+                "सही रेडैक्शन",
+                "आउटपुट कॉपी से चिह्नित सामग्री हटती है।",
+                "जाँचें कि कोई हिस्सा छूटा नहीं और दूसरी कॉपी सुरक्षित हों।"
+              ],
+              [
+                "PrintxPDF Redact PDF",
+                "चिह्नित पेज बॉक्स सहित छवि के रूप में दोबारा बनते हैं।",
+                "उन पेजों पर सीधी खोज नहीं; बाकी पेज कॉपी होते हैं।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "काला बॉक्स असुरक्षित क्यों हो सकता है"
+          },
+          {
+            "t": "p",
+            "x": "PDF पर बनाया आयत टेक्स्ट के ऊपर एक एनोटेशन या ग्राफ़िक ऑब्जेक्ट हो सकता है। नीचे की सामग्री बची हो तो दूसरा व्यक्ति उसे चुन, कॉपी, खोज या दूसरे संपादक में ऊपर का आकार हटाकर पढ़ सकता है। काला दिखना यह साबित नहीं करता कि जानकारी मिट गई। कॉपी की वास्तविक सामग्री जाँचे बिना फ़ाइल साझा न करें।"
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF Redact PDF क्या करता है"
+          },
+          {
+            "t": "p",
+            "x": "टूल में आप क्षेत्रों को हाथ से चिह्नित करते हैं। निर्यात पर हर चिह्नित पेज काले बॉक्स सहित छवि बनता है; उन पेजों का मूल टेक्स्ट चयन योग्य टेक्स्ट के रूप में नहीं रहता। बिना निशान वाले पेज दोबारा नहीं बनाए जाते, सीधे कॉपी होते हैं। सभी पेज देखें और हर जगह निशान लगाएँ, जैसे शीर्षक, पादलेख, तालिका, चित्र और दोहराव। प्रक्रिया मैनुअल है; यह पूरे दस्तावेज़ में शब्द खुद नहीं ढूँढता।"
+          },
+          {
+            "t": "h2",
+            "x": "रेडैक्शन के बाद क्या जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "आउटपुट कॉपी खोलें और देखें कि बॉक्स पूरा डेटा ढकता है तथा किनारों पर अक्षर नहीं बचे। रेडैक्टेड टेक्स्ट को चुनने या खोजने की कोशिश करें और दूसरे पेज भी जाँचें। चिह्नित पेज छवियाँ बनते हैं, इसलिए सीधे खोज योग्य नहीं रहते; [OCR PDF](/tools/ocr-pdf) दिखने वाला टेक्स्ट पहचान सकता है, पर काले क्षेत्रों से टेक्स्ट नहीं मिलना चाहिए। पुनर्निर्माण गुणवत्ता या आकार बदल सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "रेडैक्शन हर छिपी चीज़ नहीं हटाता"
+          },
+          {
+            "t": "p",
+            "x": "टूल अपने आप शीर्षक, लेखक, तारीख, बुकमार्क, टिप्पणी या अटैचमेंट साफ़ नहीं करता। इन चीज़ों की अलग समीक्षा करें और मानक गुण व दस्तावेज़ XMP के लिए [Remove Metadata](/tools/remove-metadata) लें। इससे एम्बेडेड चित्र, अटैचमेंट या अन्य पेज की सामग्री नहीं हटती। मूल को नियंत्रित पहुँच में रखें और दूसरी समीक्षा के बाद ही कॉपी साझा करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या काला बॉक्स PDF टेक्स्ट मिटा देता है?",
+            "a": "जरूरी नहीं। कई संपादकों में बॉक्स केवल ऊपर रहता है और टेक्स्ट चुना या कॉपी किया जा सकता है। आउटपुट फ़ाइल में हटने की पुष्टि करें।"
+          },
+          {
+            "q": "PrintxPDF पेज को कैसे रेडैक्ट करता है?",
+            "a": "निशान हाथ से बनाए जाते हैं। चिह्नित पेज बॉक्स सहित छवि में फिर बनते हैं; बिना निशान वाले पेज कॉपी रहते हैं। हर जगह की जाँच करें।"
+          },
+          {
+            "q": "क्या रेडैक्टेड पेज पर टेक्स्ट खोज सकता हूँ?",
+            "a": "चिह्नित पेजों में सीधे नहीं, क्योंकि वे छवियाँ हैं। OCR दिखने वाला टेक्स्ट पहचान सकता है; काले क्षेत्रों से अक्षर नहीं आने चाहिए। मूल अलग रखें।"
+          },
+          {
+            "q": "क्या रेडैक्शन मेटाडेटा और अटैचमेंट हटाता है?",
+            "a": "नहीं। मेटाडेटा, टिप्पणियाँ, बुकमार्क और अटैचमेंट अलग से जाँचें। Remove Metadata मानक गुण और दस्तावेज़ XMP साफ़ करता है, लेकिन बाकी छिपी चीज़ें नहीं।"
+          }
+        ],
+        "relatedTools": [
+          "redact-pdf",
+          "remove-metadata",
+          "ocr-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "preserving-signed-pdfs",
+          "share-draft-pdf-safely",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
@@ -24606,6 +25044,152 @@
           "archive-copy-vs-backup",
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "redaction-vs-black-boxes",
+        "slug": "redaction-vs-black-boxes",
+        "cluster": "privacy-expansion",
+        "title": "تنقيح PDF مقابل تغطيته بمربعات سوداء",
+        "metaTitle": "تنقيح PDF مقابل تغطيته بمربعات سوداء",
+      "metaDescription": "تعرف على سبب أن المربع الأسود لا يحذف النص وكيفية التحقق من التنقيح. استخدم أداة PrintxPDF المجانية والخاصة داخل المتصفح لتنقيح ملفات PDF بأمان.",
+        "primaryKeyword": "تنقيح PDF مقابل مربع أسود",
+        "secondaryKeywords": [
+          "redact PDF safely",
+          "black box PDF redaction",
+          "remove hidden PDF text"
+        ],
+        "answer": "المربع الأسود المرسوم فوق النص يخفيه غالباً فقط؛ وقد يظل المحتوى الأصلي قابلاً للتحديد أو النسخ. التنقيح الحقيقي يزيل المحتوى المحدد من النسخة التي ستشاركها. تحول أداة Redact PDF من PrintxPDF كل صفحة محددة إلى صورة مع دمج المناطق السوداء، بينما تنسخ الصفحات غير المحددة. راجع الناتج ونظف البيانات الوصفية والمرفقات والتعليقات بشكل منفصل عند الحاجة.",
+        "body": [
+          {
+            "t": "p",
+            "x": "تغطية النص بمستطيل أسود لا تعني تنقيحه. في كثير من المحررات يبقى المستطيل فوق النص الأصلي داخل الملف. تتعامل أداة Redact PDF من PrintxPDF مع المربعات كعلامات، ثم تعيد إنشاء الصفحات المحددة كصور مدمجة السواد؛ أما الصفحات غير المحددة فتُنسخ كما هي. افحص كل منطقة والملف النهائي. يغير التنقيح الملف، لذا احتفظ بالأصل بأمان وشارك النسخة التي تم التحقق منها فقط."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية تنقيح PDF بشكل صحيح"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "اعمل على نسخة",
+                "x": "احتفظ بالأصل بصلاحيات مقيدة وأنشئ نسخة للإفصاح."
+              },
+              {
+                "h": "حدد كل ما يجب إزالته",
+                "x": "في [تنقيح PDF](/tools/redact-pdf)، ارسم مربعاً يدوياً فوق كل نص أو صورة خاصة؛ لا توجد عملية بحث تلقائية."
+              },
+              {
+                "h": "راجع العلامات وكل الصفحات",
+                "x": "تحقق من الحواف والأسماء والأرقام وكل تكرار؛ غط الصفحة كاملة إذا لم يكن مسموحاً بنشرها."
+              },
+              {
+                "h": "أنشئ النسخة المنقحة وافحصها",
+                "x": "نزّل الناتج وافتح الصفحات المحددة وتأكد من دمج المربع وعدم إمكان تحديد النص."
+              },
+              {
+                "h": "نظف العناصر الأخرى بشكل منفصل",
+                "x": "راجع البيانات الوصفية والتعليقات والمرفقات والعلامات المرجعية؛ استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) للخصائص القياسية."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "redact-pdf",
+            "x": "نقّح نسخة في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "مربع أسود فوق النص مقابل التنقيح الحقيقي"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الطريقة",
+              "ما يحدث للنص",
+              "المخاطر أو الحدود"
+            ],
+            "rows": [
+              [
+                "مستطيل فوق النص",
+                "قد يبقى النص الأصلي تحته.",
+                "قد يُحدد أو يُنسخ أو يظهر عند حذف الشكل."
+              ],
+              [
+                "التنقيح الحقيقي",
+                "يزيل المحتوى المحدد من نسخة الإخراج.",
+                "تحقق من عدم ترك جزء مكشوف واحم النسخ الأخرى."
+              ],
+              [
+                "Redact PDF من PrintxPDF",
+                "تعاد الصفحات المحددة كصور مع دمج المربع.",
+                "يتعذر البحث المباشر في تلك الصفحات؛ وتُنسخ الصفحات الأخرى."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "لماذا قد يكون المربع الأسود غير آمن"
+          },
+          {
+            "t": "p",
+            "x": "قد يكون المستطيل المرسوم في PDF تعليقاً أو عنصراً رسوميّاً فوق النص. إذا بقي المحتوى تحته، يمكن لشخص تحديده أو نسخه أو البحث عنه أو حذف الشكل العلوي بمحرر آخر. المظهر الأسود لا يثبت اختفاء المعلومات. لا تشارك الملف قبل فحص محتوى النسخة فعلياً."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي تفعله أداة Redact PDF من PrintxPDF"
+          },
+          {
+            "t": "p",
+            "x": "ترسم المناطق يدوياً. عند التصدير تتحول كل صفحة محددة إلى صورة مع دمج المربعات السوداء؛ ولا يبقى نص المصدر في تلك الصفحات كنص قابل للتحديد. تُنسخ الصفحات غير المحددة دون إعادة بناء. راجع جميع الصفحات وحدد كل ظهور، بما في ذلك العناوين والتذييلات والجداول والصور والتكرارات. الإجراء يدوي ولا يبحث تلقائياً عن الكلمات في المستند كله."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي يجب فحصه بعد التنقيح"
+          },
+          {
+            "t": "p",
+            "x": "افتح نسخة الإخراج وتأكد من تغطية المربع للمعلومة كاملة دون بقاء أحرف عند الحواف. حاول تحديد النص المنقح أو البحث عنه وافحص الصفحات الأخرى. تصبح الصفحات المحددة صوراً ولا يمكن البحث فيها مباشرة؛ يمكن لـ [OCR PDF](/tools/ocr-pdf) التعرف على النص الظاهر، لكن ينبغي ألا تنتج المناطق السوداء نصاً. قد تتغير الجودة أو الحجم عند إعادة البناء."
+          },
+          {
+            "t": "h2",
+            "x": "التنقيح لا يزيل كل البيانات المخفية"
+          },
+          {
+            "t": "p",
+            "x": "لا تمسح الأداة العنوان أو المؤلف أو التواريخ أو العلامات المرجعية أو التعليقات أو المرفقات تلقائياً. راجع هذه العناصر منفصلة واستخدم [إزالة البيانات الوصفية](/tools/remove-metadata) للخصائص القياسية وXMP للمستند. ولا يغني ذلك عن فحص الصور المضمنة والمرفقات والمحتوى في الصفحات الأخرى. احتفظ بالأصل بصلاحيات مقيدة ولا تشارك النسخة إلا بعد مراجعة ثانية."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يحذف المربع الأسود نص PDF؟",
+            "a": "ليس بالضرورة. في كثير من المحررات يوضع فوق النص فقط، وقد يظل النص قابلاً للتحديد أو النسخ. تحقق من حذفه من ملف الإخراج."
+          },
+          {
+            "q": "كيف تنقح PrintxPDF الصفحات؟",
+            "a": "ترسم العلامات يدوياً. تعاد الصفحات المحددة كصور مع دمج المربعات؛ وتُنسخ الصفحات غير المحددة. راجع كل ظهور للمعلومة."
+          },
+          {
+            "q": "هل يمكن البحث في الصفحة المنقحة؟",
+            "a": "لا مباشرة في الصفحات المحددة لأنها صور. قد يتعرف OCR على النص الظاهر، لكن لا ينبغي أن ينتج أحرفاً من المناطق السوداء. احتفظ بالأصل منفصلاً."
+          },
+          {
+            "q": "هل يزيل التنقيح البيانات الوصفية والمرفقات؟",
+            "a": "لا. راجع البيانات الوصفية والتعليقات والعلامات والمرفقات بشكل منفصل. تمسح أداة إزالة البيانات الوصفية الخصائص القياسية وXMP للمستند، لا بقية العناصر المخفية."
+          }
+        ],
+        "relatedTools": [
+          "redact-pdf",
+          "remove-metadata",
+          "ocr-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "preserving-signed-pdfs",
+          "share-draft-pdf-safely",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
@@ -30767,6 +31351,152 @@
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist"
         ]
+      },
+      {
+        "topic": "redaction-vs-black-boxes",
+        "slug": "redaction-vs-black-boxes",
+        "cluster": "privacy-expansion",
+        "title": "PDF রেড্যাকশন বনাম কালো বাক্স দিয়ে ঢেকে দেওয়া",
+        "metaTitle": "PDF রেড্যাকশন বনাম কালো বাক্স দিয়ে ঢেকে দেওয়া",
+        "metaDescription": "কালো বাক্স কেন লেখা মুছে না এবং নিরাপদ রেড্যাকশন কীভাবে যাচাই করবেন জানুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত।",
+        "primaryKeyword": "PDF রেড্যাকশন বনাম কালো বাক্স",
+        "secondaryKeywords": [
+          "redact PDF safely",
+          "black box PDF redaction",
+          "remove hidden PDF text"
+        ],
+        "answer": "লেখার ওপর আঁকা কালো বাক্স সাধারণত শুধু ঢেকে রাখে; মূল লেখা নির্বাচন বা কপি করা যেতে পারে। প্রকৃত রেড্যাকশনে শেয়ার করা কপি থেকে চিহ্নিত তথ্য মুছে যায়। PrintxPDF Redact PDF চিহ্নিত প্রতিটি পৃষ্ঠা কালো অংশসহ ছবিতে রূপান্তর করে; চিহ্নহীন পৃষ্ঠা কপি হয়। ফল যাচাই করুন এবং প্রয়োজনে মেটাডেটা, সংযুক্তি ও মন্তব্য আলাদাভাবে পরিষ্কার করুন।",
+        "body": [
+          {
+            "t": "p",
+            "x": "লেখার ওপর কালো আয়তক্ষেত্র বসানো মানেই রেড্যাকশন নয়। অনেক এডিটরে আয়তক্ষেত্র ওপরে থাকে, আর মূল লেখা ফাইলে থেকে যায়। PrintxPDF Redact PDF-এ বাক্স চিহ্ন হিসেবে ব্যবহৃত হয়; রপ্তানির সময় চিহ্নিত পৃষ্ঠা কালো অংশসহ ছবিতে নতুন করে তৈরি হয় এবং অচিহ্নিত পৃষ্ঠা কপি হয়। প্রতিটি অংশ ও চূড়ান্ত নথি পরীক্ষা করুন। রেড্যাকশন ফাইল বদলে দেয়, তাই মূলটি সুরক্ষিত রাখুন এবং যাচাইকৃত কপিই শেয়ার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF সঠিকভাবে কীভাবে রেড্যাক্ট করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "কপিতে কাজ করুন",
+                "x": "মূল ফাইল সীমিত প্রবেশাধিকারে রাখুন এবং প্রকাশের জন্য আলাদা কপি নিন।"
+              },
+              {
+                "h": "যে তথ্য সরাতে হবে তা চিহ্নিত করুন",
+                "x": "[Redact PDF](/tools/redact-pdf)-এ প্রতিটি ব্যক্তিগত লেখা বা ছবির ওপর হাতে বাক্স আঁকুন; স্বয়ংক্রিয় অনুসন্ধান নেই।"
+              },
+              {
+                "h": "চিহ্ন ও সব পৃষ্ঠা দেখুন",
+                "x": "প্রান্ত, নাম, সংখ্যা ও প্রতিটি পুনরাবৃত্তি পরীক্ষা করুন; পৃষ্ঠা প্রকাশযোগ্য না হলে পুরোটা ঢাকুন।"
+              },
+              {
+                "h": "রেড্যাক্টেড কপি তৈরি করে পরীক্ষা করুন",
+                "x": "ফল ডাউনলোড করে চিহ্নিত পৃষ্ঠা খুলুন; বাক্স পাতায় স্থায়ী হয়েছে ও লেখা নির্বাচন করা যায় না নিশ্চিত করুন।"
+              },
+              {
+                "h": "অন্য উপাদান আলাদাভাবে পরিষ্কার করুন",
+                "x": "মেটাডেটা, মন্তব্য, সংযুক্তি ও বুকমার্ক দেখুন; সাধারণ বৈশিষ্ট্যের জন্য [Remove Metadata](/tools/remove-metadata) নিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "redact-pdf",
+            "x": "আপনার ট্যাবেই কপি রেড্যাক্ট করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "ওপরের কালো বাক্স বনাম প্রকৃত রেড্যাকশন"
+          },
+          {
+            "t": "table",
+            "head": [
+              "পদ্ধতি",
+              "লেখার কী হয়",
+              "ঝুঁকি বা সীমা"
+            ],
+            "rows": [
+              [
+                "ওপরের আয়তক্ষেত্র",
+                "মূল লেখা নিচে থেকে যেতে পারে।",
+                "আকার মুছলে লেখা নির্বাচন, কপি বা দেখা যেতে পারে।"
+              ],
+              [
+                "প্রকৃত রেড্যাকশন",
+                "আউটপুট কপি থেকে চিহ্নিত তথ্য মুছে যায়।",
+                "কোনো অংশ বাদ পড়েনি এবং অন্য কপি সুরক্ষিত, যাচাই করুন।"
+              ],
+              [
+                "PrintxPDF Redact PDF",
+                "চিহ্নিত পৃষ্ঠা বাক্সসহ ছবিতে পুনর্গঠিত হয়।",
+                "সেসব পৃষ্ঠায় সরাসরি খোঁজা যায় না; বাকি পৃষ্ঠা কপি হয়।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "কালো বাক্স কেন নিরাপদ নাও হতে পারে"
+          },
+          {
+            "t": "p",
+            "x": "PDF-এ আঁকা আয়তক্ষেত্র লেখার ওপর একটি মন্তব্য বা গ্রাফিক বস্তু হতে পারে। নিচের লেখা থাকলে অন্য কেউ তা নির্বাচন, কপি, অনুসন্ধান বা অন্য এডিটরে ওপরের বস্তু সরিয়ে পড়তে পারে। কালো দেখালেই তথ্য মুছে গেছে প্রমাণ হয় না। কপির প্রকৃত বিষয়বস্তু পরীক্ষা না করে ফাইল শেয়ার করবেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF Redact PDF কী করে"
+          },
+          {
+            "t": "p",
+            "x": "এখানে আপনাকে হাতে এলাকা চিহ্নিত করতে হয়। রপ্তানির সময় প্রতিটি চিহ্নিত পৃষ্ঠা কালো বাক্সসহ ছবিতে রূপান্তরিত হয়; সেই পাতায় মূল লেখা নির্বাচনযোগ্য থাকে না। চিহ্নহীন পৃষ্ঠা পুনর্গঠন না করে কপি হয়। সব পৃষ্ঠা দেখে শিরোনাম, ফুটার, টেবিল, ছবি ও পুনরাবৃত্তিসহ প্রতিটি উপস্থিতি চিহ্নিত করুন। প্রক্রিয়াটি হাতে করতে হয়; পুরো নথিতে শব্দ স্বয়ংক্রিয়ভাবে খুঁজে দেয় না।"
+          },
+          {
+            "t": "h2",
+            "x": "রেড্যাকশনের পর কী পরীক্ষা করবেন"
+          },
+          {
+            "t": "p",
+            "x": "আউটপুট কপি খুলে নিশ্চিত করুন বাক্স পুরো তথ্য ঢেকেছে এবং প্রান্তে অক্ষর বাকি নেই। রেড্যাক্টেড শব্দ নির্বাচন বা খোঁজার চেষ্টা করুন এবং অন্য পৃষ্ঠা দেখুন। চিহ্নিত পৃষ্ঠা ছবি হয়ে যায়, তাই সরাসরি অনুসন্ধান করা যায় না; [OCR PDF](/tools/ocr-pdf) দৃশ্যমান লেখা চিনতে পারে, তবে কালো অঞ্চল থেকে লেখা আসা উচিত নয়। পুনর্গঠনে মান বা ফাইলের আকার বদলাতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "রেড্যাকশন সব লুকানো তথ্য সরায় না"
+          },
+          {
+            "t": "p",
+            "x": "টুলটি নিজে থেকে শিরোনাম, লেখক, তারিখ, বুকমার্ক, মন্তব্য বা সংযুক্তি পরিষ্কার করে না। এগুলো আলাদা দেখুন এবং সাধারণ বৈশিষ্ট্য ও নথির XMP-এর জন্য [Remove Metadata](/tools/remove-metadata) নিন। ছবিতে এমবেড করা তথ্য, সংযুক্তি বা অন্য পৃষ্ঠার বিষয়বস্তুও এতে মুছে না। মূল সীমিত প্রবেশাধিকারে রাখুন এবং দ্বিতীয়বার যাচাইয়ের পর কপি শেয়ার করুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "কালো বাক্স কি PDF-এর লেখা মুছে দেয়?",
+            "a": "সব সময় নয়। অনেক এডিটরে এটি শুধু ওপরে বসে; লেখা নির্বাচন বা কপি করা যায়। আউটপুট ফাইল থেকে সত্যিই মুছে গেছে কি না দেখুন।"
+          },
+          {
+            "q": "PrintxPDF কীভাবে পৃষ্ঠা রেড্যাক্ট করে?",
+            "a": "চিহ্ন হাতে আঁকা হয়। চিহ্নিত পৃষ্ঠা বাক্সসহ ছবিতে তৈরি হয়; চিহ্নহীন পৃষ্ঠা কপি হয়। প্রতিটি উপস্থিতি পরীক্ষা করুন।"
+          },
+          {
+            "q": "রেড্যাক্টেড পৃষ্ঠায় লেখা খুঁজতে পারব?",
+            "a": "সরাসরি নয়, কারণ চিহ্নিত পৃষ্ঠা ছবি হয়। OCR দৃশ্যমান লেখা চিনতে পারে; কালো অংশ থেকে লেখা আসা উচিত নয়। মূল আলাদা রাখুন।"
+          },
+          {
+            "q": "রেড্যাকশন কি মেটাডেটা ও সংযুক্তি মুছে?",
+            "a": "না। মেটাডেটা, মন্তব্য, বুকমার্ক ও সংযুক্তি আলাদাভাবে দেখুন। Remove Metadata সাধারণ বৈশিষ্ট্য ও নথির XMP সরায়, বাকি লুকানো উপাদান নয়।"
+          }
+        ],
+        "relatedTools": [
+          "redact-pdf",
+          "remove-metadata",
+          "ocr-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "preserving-signed-pdfs",
+          "share-draft-pdf-safely",
+          "pdf-review-copy-checklist"
+        ]
       }
     ]
   },
@@ -36914,6 +37644,152 @@
           "archive-copy-vs-backup",
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "redaction-vs-black-boxes",
+        "slug": "redaction-vs-black-boxes",
+        "cluster": "privacy-expansion",
+        "title": "Che nội dung bằng ô đen và biên tập PDF khác nhau thế nào",
+        "metaTitle": "Che nội dung bằng ô đen và biên tập PDF khác nhau thế nào",
+        "metaDescription": "Tìm hiểu vì sao ô đen không xóa chữ và cách kiểm tra biên tập an toàn. Miễn phí, riêng tư trong trình duyệt.",
+        "primaryKeyword": "biên tập PDF và ô đen",
+        "secondaryKeywords": [
+          "redact PDF safely",
+          "black box PDF redaction",
+          "remove hidden PDF text"
+        ],
+        "answer": "Một ô đen vẽ lên văn bản thường chỉ che nó; nội dung gốc vẫn có thể chọn hoặc sao chép. Biên tập đúng cách loại bỏ nội dung được đánh dấu khỏi bản chia sẻ. Redact PDF của PrintxPDF biến mỗi trang được đánh dấu thành ảnh có vùng đen đã gộp; trang không đánh dấu được sao chép. Hãy kiểm tra kết quả và xóa riêng siêu dữ liệu, tệp đính kèm cùng bình luận nếu cần.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Phủ một hình chữ nhật đen lên chữ không đồng nghĩa với biên tập nội dung. Trong nhiều trình sửa, hình chữ nhật nằm phía trên còn chữ gốc vẫn trong tệp. Redact PDF của PrintxPDF dùng các hộp làm dấu, sau đó dựng lại trang được đánh dấu thành ảnh đã gộp phần màu đen; trang không đánh dấu được sao chép nguyên trạng. Hãy kiểm tra từng vùng và toàn bộ tài liệu cuối. Biên tập làm thay đổi tệp, vì vậy giữ bản gốc an toàn và chỉ chia sẻ bản đã xác minh."
+          },
+          {
+            "t": "h2",
+            "x": "Cách biên tập PDF đúng cách"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Làm việc trên bản sao",
+                "x": "Giữ bản gốc với quyền truy cập hạn chế và tạo bản riêng để cung cấp."
+              },
+              {
+                "h": "Đánh dấu từng nội dung cần xóa",
+                "x": "Trong [Redact PDF](/tools/redact-pdf), tự vẽ hộp trên mỗi đoạn chữ hoặc hình ảnh riêng tư; công cụ không tự tìm kiếm."
+              },
+              {
+                "h": "Rà soát dấu và mọi trang",
+                "x": "Kiểm tra mép, tên, số và mọi chỗ lặp lại; che cả trang nếu không được phép tiết lộ."
+              },
+              {
+                "h": "Tạo và kiểm tra bản đã biên tập",
+                "x": "Tải kết quả, mở các trang được đánh dấu và xác nhận hộp đã dính vào trang, chữ không chọn được."
+              },
+              {
+                "h": "Làm sạch thành phần khác riêng biệt",
+                "x": "Kiểm tra siêu dữ liệu, bình luận, tệp đính kèm và dấu trang; dùng [Xóa siêu dữ liệu](/tools/remove-metadata) cho thuộc tính chuẩn."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "redact-pdf",
+            "x": "Biên tập bản sao ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Ô đen phủ lên trên và biên tập thật"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Cách làm",
+              "Điều xảy ra với chữ",
+              "Rủi ro hoặc giới hạn"
+            ],
+            "rows": [
+              [
+                "Hình chữ nhật phủ lên",
+                "Chữ gốc có thể vẫn nằm bên dưới.",
+                "Có thể chọn, sao chép hoặc lộ ra khi xóa hình."
+              ],
+              [
+                "Biên tập thật",
+                "Nội dung được đánh dấu bị loại khỏi bản xuất.",
+                "Kiểm tra không bỏ sót và bảo vệ các bản sao khác."
+              ],
+              [
+                "Redact PDF của PrintxPDF",
+                "Trang được đánh dấu dựng lại thành ảnh có ô đen gộp vào.",
+                "Không tìm trực tiếp trên trang đó; các trang khác được sao chép."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao ô đen có thể không an toàn"
+          },
+          {
+            "t": "p",
+            "x": "Hình chữ nhật vẽ trong PDF có thể chỉ là chú thích hoặc đối tượng đồ họa đặt trên văn bản. Nếu nội dung bên dưới vẫn còn, người khác có thể chọn, sao chép, tìm kiếm hoặc xóa lớp trên bằng trình sửa khác. Nhìn thấy màu đen không chứng minh thông tin đã bị xóa. Đừng chia sẻ trước khi kiểm tra nội dung thật của bản xuất."
+          },
+          {
+            "t": "h2",
+            "x": "Redact PDF của PrintxPDF thực hiện gì"
+          },
+          {
+            "t": "p",
+            "x": "Bạn tự vẽ vùng cần xử lý. Khi xuất, mỗi trang được đánh dấu sẽ thành ảnh có các hộp đen đã gộp; văn bản nguồn trên những trang đó không còn là chữ chọn được. Trang không đánh dấu được sao chép mà không dựng lại. Hãy xem mọi trang và đánh dấu mọi lần xuất hiện, gồm đầu trang, chân trang, bảng, hình ảnh và phần lặp. Quy trình là thủ công; công cụ không tự tìm mọi từ trong tài liệu."
+          },
+          {
+            "t": "h2",
+            "x": "Cần kiểm tra gì sau khi biên tập"
+          },
+          {
+            "t": "p",
+            "x": "Mở bản xuất, xác nhận hộp che hết dữ liệu và không sót ký tự ở mép. Thử chọn hoặc tìm chữ đã biên tập, rồi kiểm tra các trang khác. Trang được đánh dấu trở thành ảnh nên không tìm trực tiếp được; [OCR PDF](/tools/ocr-pdf) có thể nhận dạng chữ còn nhìn thấy, nhưng vùng đen không nên tạo ra chữ. Việc dựng lại có thể ảnh hưởng chất lượng hoặc dung lượng."
+          },
+          {
+            "t": "h2",
+            "x": "Biên tập không xóa mọi dữ liệu ẩn"
+          },
+          {
+            "t": "p",
+            "x": "Công cụ không tự xóa tiêu đề, tác giả, ngày, dấu trang, bình luận hay tệp đính kèm. Kiểm tra riêng các mục đó và dùng [Xóa siêu dữ liệu](/tools/remove-metadata) cho thuộc tính chuẩn và XMP cấp tài liệu. Việc này không xử lý siêu dữ liệu trong ảnh, tệp đính kèm hay nội dung trang khác. Giữ bản gốc với quyền truy cập phù hợp và chỉ chia sẻ sau lần rà soát thứ hai."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Ô đen có xóa chữ PDF không?",
+            "a": "Không chắc. Nhiều trình sửa chỉ đặt hình lên trên, chữ vẫn chọn hoặc sao chép được. Hãy xác minh nội dung đã bị loại khỏi tệp xuất."
+          },
+          {
+            "q": "PrintxPDF biên tập trang như thế nào?",
+            "a": "Bạn tự vẽ dấu. Trang có dấu được dựng lại thành ảnh với hộp đen gộp vào; trang không dấu được sao chép. Kiểm tra mọi chỗ cần xử lý."
+          },
+          {
+            "q": "Có thể tìm chữ trên trang đã biên tập không?",
+            "a": "Không trực tiếp trên trang đã đánh dấu vì trang đó trở thành ảnh. OCR có thể nhận dạng chữ còn thấy; vùng đen không nên tạo chữ. Giữ bản gốc riêng."
+          },
+          {
+            "q": "Biên tập có xóa siêu dữ liệu và tệp đính kèm không?",
+            "a": "Không. Hãy kiểm tra riêng siêu dữ liệu, bình luận, dấu trang và tệp đính kèm. Remove Metadata xóa thuộc tính chuẩn và XMP tài liệu, không xóa mọi thành phần ẩn khác."
+          }
+        ],
+        "relatedTools": [
+          "redact-pdf",
+          "remove-metadata",
+          "ocr-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "preserving-signed-pdfs",
+          "share-draft-pdf-safely",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
@@ -43071,6 +43947,152 @@
           "archive-copy-vs-backup",
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "redaction-vs-black-boxes",
+        "slug": "redaction-vs-black-boxes",
+        "cluster": "privacy-expansion",
+        "title": "PDF 涂黑遮盖与真正涂除的区别",
+        "metaTitle": "PDF 涂黑遮盖与真正涂除的区别",
+      "metaDescription": "了解黑色方框为何不会删除文字，以及如何检查真正的 PDF 涂除。使用 PrintxPDF 免费、私密的浏览器本地工具安全涂除 PDF 内容。",
+        "primaryKeyword": "PDF 涂黑遮盖与涂除区别",
+        "secondaryKeywords": [
+          "redact PDF safely",
+          "black box PDF redaction",
+          "remove hidden PDF text"
+        ],
+        "answer": "在文字上绘制黑色方框通常只是遮住内容；原文仍可能被选择或复制。真正的涂除会从共享副本中移除标记内容。PrintxPDF 的 Redact PDF 会将每个标记页重建为已合并黑色遮盖的图像；未标记页则直接复制。请检查输出，并在需要时另行清理元数据、附件和评论。",
+        "body": [
+          {
+            "t": "p",
+            "x": "用黑色矩形盖住文字并不等于涂除。许多编辑器只是把矩形放在上层，原文仍留在文件中。PrintxPDF 的 Redact PDF 将方框作为标记，导出时把标记页重建为已合并黑色区域的图像；未标记页会被复制。请检查每个区域和最终文档。涂除会改变文件，因此保留受控的原件，只分享经过验证的副本。"
+          },
+          {
+            "t": "h2",
+            "x": "如何正确涂除 PDF 内容"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "在副本上操作",
+                "x": "将原件保存在受限位置，并创建用于披露的副本。"
+              },
+              {
+                "h": "标记每个需要移除的内容",
+                "x": "在[涂除 PDF](/tools/redact-pdf)中手动框选每段私人文字或图像；此工具不会自动搜索。"
+              },
+              {
+                "h": "检查标记和所有页面",
+                "x": "检查边缘、姓名、数字和所有重复位置；整页都不能披露时，遮盖整页。"
+              },
+              {
+                "h": "生成并检查涂除副本",
+                "x": "下载结果，打开标记页，确认黑框已合并且文字无法选择。"
+              },
+              {
+                "h": "单独清理其他项目",
+                "x": "检查元数据、评论、附件和书签；标准属性可用[删除元数据](/tools/remove-metadata)清理。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "redact-pdf",
+            "x": "在当前标签页涂除副本。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "叠加黑框与真正涂除"
+          },
+          {
+            "t": "table",
+            "head": [
+              "方法",
+              "文字会怎样",
+              "风险或限制"
+            ],
+            "rows": [
+              [
+                "叠加矩形",
+                "原文字可能仍留在下层。",
+                "移除形状后可能被选择、复制或显示。"
+              ],
+              [
+                "真正涂除",
+                "标记内容从导出副本中移除。",
+                "检查是否有遗漏，并保护其他副本。"
+              ],
+              [
+                "PrintxPDF Redact PDF",
+                "标记页重建为已合并黑框的图像。",
+                "这些页面无法直接搜索；其他页面会被复制。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "黑框遮盖为何可能不安全"
+          },
+          {
+            "t": "p",
+            "x": "PDF 中绘制的矩形可能只是文本上方的批注或图形对象。如果下层内容仍然存在，其他人可能选择、复制、搜索文本，或用其他编辑器删除上层形状。看起来是黑色并不能证明信息已删除。实际检查输出文件内容前，不要分享文件。"
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF Redact PDF 的处理方式"
+          },
+          {
+            "t": "p",
+            "x": "你需要手动绘制要处理的区域。导出时，每个标记页都会变成已合并黑框的图像；这些页面的源文字不再以可选择文本保留。未标记页会原样复制，不会重建。请检查所有页面并标记每个出现位置，包括页眉、页脚、表格、图像和重复内容。该流程是手动的，不会自动搜索整份文档中的词语。"
+          },
+          {
+            "t": "h2",
+            "x": "涂除后要检查什么"
+          },
+          {
+            "t": "p",
+            "x": "打开输出副本，确认方框完全覆盖内容，边缘没有残留字符。尝试选择或搜索已涂除的文字，并检查其他页面。标记页变成图像，无法直接搜索；[OCR PDF](/tools/ocr-pdf)可以识别仍可见的文字，但黑色区域不应产生文字。重建可能影响图像质量或文件大小。"
+          },
+          {
+            "t": "h2",
+            "x": "涂除不会删除所有隐藏数据"
+          },
+          {
+            "t": "p",
+            "x": "该工具不会自动清理标题、作者、日期、书签、评论或附件。请分别检查，并使用[删除元数据](/tools/remove-metadata)清理标准属性和文档级 XMP。这也不会处理图片内嵌元数据、附件或其他页面内容。请限制原件访问权限，并在二次检查后再分享副本。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "黑色方框会删除 PDF 文字吗？",
+            "a": "不一定。许多编辑器只是把方框叠在上面，文字仍可选择或复制。请确认输出文件中的文字已被移除。"
+          },
+          {
+            "q": "PrintxPDF 如何涂除页面？",
+            "a": "由用户手动绘制标记。标记页重建为合并黑框的图像；未标记页会复制。请检查所有需要处理的位置。"
+          },
+          {
+            "q": "涂除页面还能搜索文字吗？",
+            "a": "标记页会变成图像，无法直接搜索。OCR 可识别可见文字；黑色区域不应产生字符。请单独保留原件。"
+          },
+          {
+            "q": "涂除会删除元数据和附件吗？",
+            "a": "不会。请另行检查元数据、评论、书签和附件。删除元数据工具会清理标准属性和文档级 XMP，但不会清理所有其他隐藏内容。"
+          }
+        ],
+        "relatedTools": [
+          "redact-pdf",
+          "remove-metadata",
+          "ocr-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "preserving-signed-pdfs",
+          "share-draft-pdf-safely",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
