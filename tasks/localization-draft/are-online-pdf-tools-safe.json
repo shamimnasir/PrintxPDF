@@ -1,0 +1,1288 @@
+{
+  "topic": "are-online-pdf-tools-safe",
+  "sourceCluster": "privacy",
+  "tool": "merge-pdf",
+  "languages": {
+    "es": {
+      "title": "¿Son seguras las herramientas PDF online? Qué ocurre con tus archivos",
+      "metaTitle": "¿Son seguras las herramientas PDF online?",
+      "metaDescription": "Comprueba si una herramienta PDF sube tus archivos o los procesa en el navegador. Guía de privacidad gratis, privada y sin registro.",
+      "keyword": "¿son seguras las herramientas PDF online?",
+      "secondaryKeywords": [
+        "privacidad de conversores PDF online",
+        "las webs PDF guardan archivos",
+        "herramienta PDF en navegador",
+        "herramienta PDF segura",
+        "PDF confidencial en línea"
+      ],
+      "answer": "Depende de si la herramienta sube el PDF a un servidor o lo procesa en tu navegador. Un servicio con cargas envía el documento al proveedor, que podría almacenarlo o leerlo. Una herramienta local no transmite el archivo. Puedes comprobarlo en unos minutos con la pestaña de red del navegador y una prueba sin conexión.",
+      "ctaLabel": "Combinar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Dos sitios pueden ofrecer el mismo botón para [combinar PDF](/tools/merge-pdf), pero hacer cosas distintas. Uno envía el documento por Internet a un servidor ajeno. El otro lo mantiene en tu dispositivo. La página no siempre lo explica, así que conviene comprobarlo."
+        },
+        {
+          "t": "h2",
+          "x": "Las dos arquitecturas"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Aspecto",
+            "Con carga al servidor",
+            "En el navegador"
+          ],
+          "rows": [
+            [
+              "Destino del archivo",
+              "Servidores del proveedor",
+              "No sale de la pestaña"
+            ],
+            [
+              "Quién podría leerlo",
+              "Proveedor, hosting o quien vulnere alguno",
+              "Solo tú, en el dispositivo"
+            ],
+            [
+              "Sin conexión",
+              "No",
+              "Sí, después de cargar la página"
+            ],
+            [
+              "Retención habitual",
+              "Según la política, de 1 a 24 horas",
+              "Ninguna copia del proveedor"
+            ],
+            [
+              "Límite de tamaño",
+              "Del lado del servidor, a menudo alto",
+              "Memoria del dispositivo, a menudo cientos de MB"
+            ],
+            [
+              "OCR y escaneos grandes",
+              "Puede ser más rápido en el servidor",
+              "Más lento, pero privado"
+            ],
+            [
+              "GDPR",
+              "Puede requerir contrato y base de transferencia",
+              "No hay transferencia del archivo"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Compruébalo tú mismo en treinta segundos"
+        },
+        {
+          "t": "p",
+          "x": "No tienes que confiar en la promesa de ningún sitio, incluido este. La pestaña Network del navegador puede mostrar si el archivo salió del equipo. Usa un PDF de prueba, no un documento confidencial."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Abre las herramientas de desarrollador",
+              "x": "Pulsa F12 o Ctrl+Shift+I (Cmd+Option+I en macOS) y abre la pestaña Network."
+            },
+            {
+              "h": "Limpia el registro e inicia la captura",
+              "x": "Pulsa el icono para borrar el registro y observa solo las solicitudes nuevas."
+            },
+            {
+              "h": "Carga un PDF de prueba",
+              "x": "Usa un archivo de unos pocos megabytes, no uno confidencial. Un archivo grande hace que una carga sea más fácil de detectar."
+            },
+            {
+              "h": "Revisa las solicitudes",
+              "x": "Ordena por Size. Una solicitud POST o PUT de tamaño parecido al archivo suele indicar que se subió. Una herramienta local no muestra una solicitud de carga equivalente."
+            },
+            {
+              "h": "Ejecuta la operación y vuelve a mirar",
+              "x": "Algunos sitios procesan localmente, pero suben el archivo al exportarlo. Comprueba también esa etapa. Para una prueba definitiva, desconecta Internet después de cargar la página y verifica si la herramienta sigue funcionando."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "El procesamiento en el navegador es ingeniería habitual, no solo publicidad. Bibliotecas de PDF pueden ejecutarse en una pestaña mediante WebAssembly, así que tareas como unir, dividir, girar o numerar páginas no requieren necesariamente un servidor."
+        },
+        {
+          "t": "h2",
+          "x": "Qué revisar en la política de privacidad"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "¿Cuánto tiempo se guarda el archivo? Busca una duración concreta.",
+            "¿Quién puede acceder mientras se conserva? Revisa cifrado y acceso del personal.",
+            "¿Se usa para entrenamiento, análisis o muestras de calidad?",
+            "¿Dónde están los servidores? Comprueba los mecanismos legales de transferencia aplicables."
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Una promesa de borrado es una política, no una garantía técnica que puedas verificar. No puedes auditarla fácilmente y las copias de seguridad podrían durar más. Si una filtración causaría un daño real, no confíes solo en las condiciones de retención: no subas el archivo."
+        },
+        {
+          "t": "h2",
+          "x": "GDPR, HIPAA y normas del trabajo"
+        },
+        {
+          "t": "p",
+          "x": "Las obligaciones dependen de quién maneja los datos y en qué función. En el GDPR, cuando un proveedor procesa datos personales por cuenta de una organización, el tratamiento debe regirse por un contrato con las condiciones requeridas. Una transferencia internacional también necesita una base válida. En Estados Unidos, cuando un servicio actúa como asociado comercial y crea, recibe, mantiene o transmite información de salud protegida por cuenta de una entidad cubierta, se necesita un acuerdo BAA conforme a HIPAA. El privilegio legal y las políticas internas de TI también pueden limitar el uso de servicios externos. Confirma los requisitos con el responsable de privacidad o legal de tu organización."
+        },
+        {
+          "t": "h2",
+          "x": "Una regla práctica según el documento"
+        },
+        {
+          "t": "p",
+          "x": "Para un informe público o un PDF de blog, un servicio de carga puede ser aceptable si has comprobado sus condiciones. Para un CV propio, el procesamiento local es preferible. Para contratos, nóminas, extractos bancarios, impuestos o registros médicos, evita subirlos a un conversor de consumo sin aprobación y contrato adecuados. Un archivo escaneado de 900 MB que necesita OCR puede exceder la memoria del navegador; en ese caso, usa un proveedor aprobado y revisado, o un programa local."
+        },
+        {
+          "t": "h2",
+          "x": "Señales que no demuestran seguridad"
+        },
+        {
+          "t": "p",
+          "x": "El candado de HTTPS cifra el archivo mientras viaja, pero no limita lo que el servidor hace después. Una promesa de borrar en una hora no evita que el proveedor lea el archivo durante esa hora. Una política larga no demuestra privacidad: busca “retener”, “eliminar”, “terceros” y “entrenar”. “Sin registro” significa que no creas cuenta; no dice si el archivo se sube."
+        },
+        {
+          "t": "tip",
+          "x": "La prueba más clara es desconectar la red después de cargar el sitio: si la herramienta sigue funcionando, el archivo puede procesarse localmente. Las herramientas PDF del navegador de PrintxPDF están hechas para pasar esa prueba. El cifrado de PDF y los escaneos muy grandes son excepciones; requieren tratamiento distinto. Prueba [Combinar PDF](/tools/merge-pdf) sin conexión para comprobarlo."
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Combina PDF en el navegador. Prueba la herramienta con la red desconectada."
+        },
+        {
+          "t": "p",
+          "x": "El archivo puede conservar su propio historial aunque lo proceses en local. Antes de compartirlo, consulta [cómo quitar metadatos de un PDF](/blog/privacy/remove-metadata-from-pdf) y [cómo verificar que una redacción sea real](/blog/privacy/redact-pdf-properly). Para proteger documentos con contraseña, lee [qué protege realmente la contraseña de un PDF](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Son seguras las herramientas PDF online?",
+          "a": "Solo si no suben el archivo o si tienes un contrato adecuado con el proveedor. Los conversores con carga envían el documento a un servidor que podría almacenarlo o leerlo. Las herramientas de navegador procesan el archivo localmente y no lo transmiten."
+        },
+        {
+          "q": "¿Cómo sé si una herramienta PDF sube mi archivo?",
+          "a": "Abre las herramientas de desarrollador con F12, ve a Network, limpia el registro y carga un PDF de prueba. Una solicitud POST o PUT de tamaño parecido al archivo indica que se subió. La prueba más clara es desconectar la red: una herramienta local sigue funcionando."
+        },
+        {
+          "q": "¿Puedo usar una herramienta PDF gratuita para documentos confidenciales del trabajo?",
+          "a": "No uses una que suba el archivo sin aprobación y acuerdos aplicables. Si un proveedor procesa datos personales por cuenta de tu organización, el GDPR puede exigir un contrato; para información sanitaria protegida en un contexto cubierto por HIPAA, puede requerirse un BAA. Una herramienta local evita divulgar el archivo a un tercero."
+        },
+        {
+          "q": "¿HTTPS significa que mi PDF subido es privado?",
+          "a": "No. HTTPS cifra el archivo durante el envío al servidor. Una vez recibido, el proveedor puede procesarlo y quizá leerlo o conservarlo según sus prácticas. El candado no informa sobre retención ni acceso."
+        },
+        {
+          "q": "¿Por qué las herramientas de navegador tienen problemas con archivos grandes?",
+          "a": "Dependen de la memoria de tu dispositivo, no de un servidor potente. Archivos de cientos de megabytes y tareas como OCR en escaneos grandes pueden tardar o fallar. Ese es el coste práctico de que el archivo no salga del equipo."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Ferramentas de PDF online são seguras? O que acontece com seus arquivos",
+      "metaTitle": "Ferramentas de PDF online são seguras?",
+      "metaDescription": "Descubra se uma ferramenta PDF envia seus arquivos ou os processa no navegador. Guia de privacidade grátis, privado e sem cadastro.",
+      "keyword": "ferramentas de PDF online são seguras",
+      "secondaryKeywords": [
+        "privacidade de conversor PDF online",
+        "sites de PDF guardam arquivos",
+        "ferramenta PDF no navegador",
+        "ferramenta PDF segura",
+        "PDF confidencial online"
+      ],
+      "answer": "Depende de a ferramenta enviar o PDF a um servidor ou processá-lo no navegador. Um site que faz upload envia o documento ao fornecedor, que pode armazená-lo ou lê-lo. Uma ferramenta local não transmite o arquivo. Em poucos minutos, você consegue verificar isso na aba de rede do navegador e com um teste offline.",
+      "ctaLabel": "Juntar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Dois sites podem oferecer o mesmo botão para [juntar PDFs](/tools/merge-pdf), mas fazer coisas diferentes por trás. Um envia o documento pela internet a um servidor desconhecido. O outro mantém o arquivo no seu dispositivo. A página nem sempre explica; vale conferir."
+        },
+        {
+          "t": "h2",
+          "x": "As duas arquiteturas"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Aspecto",
+            "Com upload para servidor",
+            "No navegador"
+          ],
+          "rows": [
+            [
+              "Destino do arquivo",
+              "Servidores do fornecedor",
+              "Fica na aba do navegador"
+            ],
+            [
+              "Quem pode acessá-lo",
+              "Fornecedor, hospedagem ou invasor",
+              "Só você, no dispositivo"
+            ],
+            [
+              "Offline",
+              "Não",
+              "Sim, depois de carregar a página"
+            ],
+            [
+              "Retenção típica",
+              "De 1 a 24 horas, conforme a política",
+              "Nenhuma cópia no fornecedor"
+            ],
+            [
+              "Limite de tamanho",
+              "Do servidor, muitas vezes generoso",
+              "Memória do dispositivo, muitas vezes centenas de MB"
+            ],
+            [
+              "OCR e digitalizações grandes",
+              "Pode ser mais rápido no servidor",
+              "Mais lento, mas privado"
+            ],
+            [
+              "GDPR",
+              "Pode exigir contrato e mecanismo de transferência",
+              "Não há transferência do arquivo"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Verifique você mesmo em trinta segundos"
+        },
+        {
+          "t": "p",
+          "x": "Você não precisa acreditar na palavra de nenhum site, inclusive neste. A aba Network do navegador mostra se o arquivo saiu do computador. Use um PDF de teste, não um documento confidencial."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Abra as ferramentas do desenvolvedor",
+              "x": "Pressione F12 ou Ctrl+Shift+I (Cmd+Option+I no macOS) e abra a aba Network."
+            },
+            {
+              "h": "Limpe o registro e inicie a captura",
+              "x": "Clique no ícone de limpar para observar apenas as próximas solicitações."
+            },
+            {
+              "h": "Carregue um PDF de teste",
+              "x": "Use um arquivo de alguns megabytes, não um confidencial. Um arquivo grande facilita identificar um upload."
+            },
+            {
+              "h": "Observe as solicitações",
+              "x": "Ordene por Size. Uma solicitação POST ou PUT com tamanho próximo ao arquivo indica que ele foi enviado. Uma ferramenta local não mostra uma solicitação de upload equivalente."
+            },
+            {
+              "h": "Execute a operação e confira novamente",
+              "x": "Alguns sites processam localmente, mas enviam o arquivo ao exportar. Verifique também essa etapa. Para confirmar, desconecte a internet depois que a página carregar e veja se a ferramenta continua funcionando."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Processamento no navegador já é engenharia comum, não apenas uma promessa de marketing. Bibliotecas PDF podem rodar em uma aba com WebAssembly. Por isso, tarefas como juntar, dividir, girar ou numerar páginas não precisam necessariamente de servidor."
+        },
+        {
+          "t": "h2",
+          "x": "O que conferir na política de privacidade"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Por quanto tempo o arquivo é mantido? Procure um prazo específico.",
+            "Quem pode acessá-lo enquanto está guardado? Confira a criptografia e o acesso da equipe.",
+            "O conteúdo é usado para treinamento, análise ou amostras de qualidade?",
+            "Onde ficam os servidores? Confira os mecanismos legais de transferência aplicáveis."
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Uma promessa de exclusão é uma política, não uma garantia técnica que você possa verificar. É difícil auditá-la, e cópias de backup podem durar mais. Se um vazamento causaria dano real, não confie apenas nos termos de retenção: não envie o arquivo."
+        },
+        {
+          "t": "h2",
+          "x": "GDPR, HIPAA e regras do trabalho"
+        },
+        {
+          "t": "p",
+          "x": "As obrigações dependem de quem processa os dados e em qual função. Pelo GDPR, quando um fornecedor processa dados pessoais em nome de uma organização, o tratamento deve ser regido por um contrato com as condições exigidas. Uma transferência internacional também precisa de uma base válida. Nos EUA, quando um serviço atua como business associate e cria, recebe, mantém ou transmite informações de saúde protegidas em nome de uma entidade coberta, pode ser necessário um BAA conforme a HIPAA. Sigilo jurídico e políticas internas de TI também podem limitar serviços externos. Confirme os requisitos com a equipe jurídica ou de privacidade da organização."
+        },
+        {
+          "t": "h2",
+          "x": "Uma regra prática conforme o documento"
+        },
+        {
+          "t": "p",
+          "x": "Para um relatório público ou PDF de blog, um serviço de upload pode ser aceitável após conferir os termos. Para seu próprio currículo, o processamento local é melhor. Para contratos, holerites, extratos bancários, declarações fiscais ou registros médicos, evite enviar a um conversor de uso geral sem aprovação e contratos adequados. Um arquivo escaneado de 900 MB que precisa de OCR pode ultrapassar a memória do navegador; nesse caso, use um fornecedor aprovado e avaliado, ou um programa local."
+        },
+        {
+          "t": "h2",
+          "x": "Sinais que não comprovam segurança"
+        },
+        {
+          "t": "p",
+          "x": "O cadeado HTTPS criptografa o arquivo durante o envio, mas não limita o que o servidor fará depois. Prometer exclusão em uma hora não impede o fornecedor de ler o arquivo nesse período. Uma política longa não prova privacidade: pesquise “reter”, “excluir”, “terceiros” e “treinar”. “Sem cadastro” significa que você não cria conta; não diz se o arquivo é enviado."
+        },
+        {
+          "t": "tip",
+          "x": "O sinal mais claro é desconectar a rede depois que o site carregar: se a ferramenta continuar funcionando, o arquivo pode estar sendo processado localmente. As ferramentas PDF de navegador do PrintxPDF foram feitas para passar nesse teste. Criptografia de PDF e digitalizações muito grandes são exceções e exigem outro tratamento. Teste [Juntar PDF](/tools/merge-pdf) offline para conferir."
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Junte PDFs no navegador. Teste a ferramenta com a rede desconectada."
+        },
+        {
+          "t": "p",
+          "x": "O arquivo ainda pode manter seu histórico mesmo quando você o processa localmente. Antes de compartilhar, leia [como remover metadados de um PDF](/blog/privacy/remove-metadata-from-pdf) e [como confirmar que a redação é real](/blog/privacy/redact-pdf-properly). Para entender a proteção por senha, veja [o que a senha de PDF realmente protege](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Ferramentas de PDF online são seguras?",
+          "a": "Somente se não enviarem o arquivo ou se você tiver um contrato adequado com o fornecedor. Conversores com upload mandam o documento a um servidor que pode armazená-lo ou lê-lo. Ferramentas de navegador processam o arquivo localmente e não o transmitem."
+        },
+        {
+          "q": "Como saber se uma ferramenta PDF envia meu arquivo?",
+          "a": "Abra as ferramentas do desenvolvedor com F12, vá à aba Network, limpe o registro e carregue um PDF de teste. Uma solicitação POST ou PUT de tamanho parecido indica upload. O teste mais claro é desconectar a rede: uma ferramenta local continua funcionando."
+        },
+        {
+          "q": "Posso usar uma ferramenta PDF grátis com documentos confidenciais do trabalho?",
+          "a": "Não use uma que envia o arquivo sem aprovação e os acordos aplicáveis. Se um fornecedor processa dados pessoais em nome da organização, o GDPR pode exigir contrato; para informações de saúde protegidas em contexto sujeito à HIPAA, pode ser necessário um BAA. Uma ferramenta local evita divulgar o arquivo a terceiros."
+        },
+        {
+          "q": "HTTPS significa que meu PDF enviado é privado?",
+          "a": "Não. HTTPS criptografa o arquivo no caminho até o servidor. Depois de recebido, o fornecedor pode processá-lo e talvez lê-lo ou mantê-lo conforme suas práticas. O cadeado não informa retenção nem acesso."
+        },
+        {
+          "q": "Por que ferramentas de navegador têm dificuldade com arquivos grandes?",
+          "a": "Elas dependem da memória do seu dispositivo, não do hardware do servidor. Arquivos de centenas de megabytes e OCR em digitalizações grandes podem ficar lentos ou falhar. Esse é o custo prático de manter o arquivo no seu computador."
+        }
+      ]
+    },
+    "hi": {
+      "title": "क्या ऑनलाइन PDF टूल सुरक्षित हैं? आपकी फ़ाइल के साथ क्या होता है",
+      "metaTitle": "क्या ऑनलाइन PDF टूल सुरक्षित हैं?",
+      "metaDescription": "जाँचें कि PDF टूल फ़ाइल अपलोड करता है या ब्राउज़र में प्रोसेस करता है। मुफ्त, निजी और बिना साइनअप की गोपनीयता गाइड।",
+      "keyword": "क्या ऑनलाइन PDF टूल सुरक्षित हैं",
+      "secondaryKeywords": [
+        "ऑनलाइन PDF कन्वर्टर गोपनीयता",
+        "क्या PDF साइटें फाइल रखती हैं",
+        "ब्राउज़र PDF टूल",
+        "सुरक्षित PDF टूल",
+        "गोपनीय दस्तावेज़ PDF टूल"
+      ],
+      "answer": "यह इस पर निर्भर करता है कि टूल आपकी PDF सर्वर पर अपलोड करता है या ब्राउज़र में प्रोसेस करता है। अपलोड वाली साइट फ़ाइल सर्वर पर भेजती है, जहाँ प्रदाता उसे पढ़ या रख सकता है। ब्राउज़र-आधारित टूल फ़ाइल भेजता ही नहीं। नेटवर्क टैब और ऑफलाइन जाँच से आप कुछ मिनट में पता लगा सकते हैं।",
+      "ctaLabel": "PDF मर्ज करें",
+      "body": [
+        {
+          "t": "p",
+          "x": "दो वेबसाइटें [PDF मर्ज](/tools/merge-pdf) का एक जैसा बटन दिखा सकती हैं, लेकिन पीछे काम अलग होता है। एक आपकी फ़ाइल इंटरनेट से किसी सर्वर पर भेजती है। दूसरी उसे आपके डिवाइस पर रखती है। पेज अक्सर यह नहीं बताता, इसलिए खुद जाँचें।"
+        },
+        {
+          "t": "h2",
+          "x": "दो तरह की तकनीक"
+        },
+        {
+          "t": "table",
+          "head": [
+            "बात",
+            "सर्वर पर अपलोड",
+            "ब्राउज़र में"
+          ],
+          "rows": [
+            [
+              "फ़ाइल कहाँ जाती है",
+              "प्रदाता के सर्वर",
+              "ब्राउज़र टैब से बाहर नहीं"
+            ],
+            [
+              "कौन पढ़ सकता है",
+              "प्रदाता, होस्टिंग या सेंध लगाने वाला",
+              "डिवाइस पर केवल आप"
+            ],
+            [
+              "ऑफलाइन",
+              "नहीं",
+              "हाँ, पेज लोड होने के बाद"
+            ],
+            [
+              "आम तौर पर कितनी देर",
+              "नीति के अनुसार 1–24 घंटे",
+              "प्रदाता के पास प्रति नहीं"
+            ],
+            [
+              "फ़ाइल आकार सीमा",
+              "सर्वर पर, अक्सर बड़ा",
+              "डिवाइस मेमोरी, अक्सर कुछ सौ MB"
+            ],
+            [
+              "OCR और बड़े स्कैन",
+              "सर्वर पर तेज़ हो सकता है",
+              "धीमा, लेकिन निजी"
+            ],
+            [
+              "GDPR",
+              "अनुबंध और ट्रांसफर आधार चाहिए हो सकता है",
+              "फ़ाइल ट्रांसफर नहीं होती"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "तीस सेकंड में खुद जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "किसी वेबसाइट की बात पर भरोसा करना जरूरी नहीं, इस साइट की भी नहीं। ब्राउज़र का Network टैब बता सकता है कि फ़ाइल कंप्यूटर से बाहर गई या नहीं। गोपनीय फ़ाइल नहीं, परीक्षण PDF इस्तेमाल करें।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "डेवलपर टूल खोलें",
+              "x": "F12 या Ctrl+Shift+I (macOS पर Cmd+Option+I) दबाएँ और Network टैब खोलें।"
+            },
+            {
+              "h": "लॉग साफ़ करके रिकॉर्डिंग शुरू करें",
+              "x": "क्लियर आइकन दबाएँ ताकि केवल आगे की रिक्वेस्ट दिखें।"
+            },
+            {
+              "h": "टेस्ट PDF टूल में डालें",
+              "x": "कुछ MB की परीक्षण फ़ाइल लें, गोपनीय फ़ाइल नहीं। बड़ी फ़ाइल से अपलोड पहचानना आसान होता है।"
+            },
+            {
+              "h": "रिक्वेस्ट देखें",
+              "x": "Size के अनुसार क्रम लगाएँ। फ़ाइल के लगभग बराबर POST या PUT रिक्वेस्ट का अर्थ है कि फ़ाइल अपलोड हुई। स्थानीय टूल में ऐसी अपलोड रिक्वेस्ट नहीं दिखती।"
+            },
+            {
+              "h": "ऑपरेशन चलाकर फिर देखें",
+              "x": "कुछ साइटें स्थानीय प्रोसेसिंग के बाद export पर फ़ाइल अपलोड करती हैं। उस चरण को भी देखें। पक्का करने के लिए पेज लोड होने के बाद नेटवर्क बंद करके देखें कि टूल चलता रहता है या नहीं।"
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "ब्राउज़र में प्रोसेसिंग अब सामान्य इंजीनियरिंग है, सिर्फ मार्केटिंग दावा नहीं। PDF लाइब्रेरी WebAssembly से टैब में चल सकती हैं। इसलिए पेज जोड़ना, बाँटना, घुमाना या नंबर देना बिना सर्वर के संभव है।"
+        },
+        {
+          "t": "h2",
+          "x": "प्राइवेसी नीति में क्या देखें"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "फ़ाइल कितनी देर रखी जाती है? साफ़ समय सीमा देखें।",
+            "रखे रहने पर कौन देख सकता है? एन्क्रिप्शन और स्टाफ एक्सेस देखें।",
+            "क्या इसे ट्रेनिंग, एनालिटिक्स या गुणवत्ता नमूने में उपयोग करते हैं?",
+            "सर्वर कहाँ हैं? लागू कानूनी ट्रांसफर उपाय जाँचें।"
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "मिटाने का वादा नीति है, ऐसी तकनीकी गारंटी नहीं जिसे आप सत्यापित कर सकें। आप आसानी से ऑडिट नहीं कर सकते और बैकअप अधिक समय रह सकते हैं। यदि लीक से वास्तविक नुकसान होगा, तो केवल retention शर्तों पर भरोसा न करें; फ़ाइल अपलोड ही न करें।"
+        },
+        {
+          "t": "h2",
+          "x": "GDPR, HIPAA और कार्यस्थल के नियम"
+        },
+        {
+          "t": "p",
+          "x": "दायित्व इस पर निर्भर करते हैं कि डेटा कौन और किस भूमिका में प्रोसेस करता है। GDPR के तहत जब प्रदाता किसी संगठन की ओर से निजी डेटा प्रोसेस करता है, तो निर्धारित शर्तों वाला अनुबंध चाहिए। अंतरराष्ट्रीय ट्रांसफर के लिए भी वैध आधार जरूरी हो सकता है। अमेरिका में, यदि सेवा प्रदाता किसी covered entity की ओर से सुरक्षित स्वास्थ्य जानकारी बनाता, प्राप्त करता, रखता या भेजता है, तो HIPAA के तहत BAA की जरूरत हो सकती है। कानूनी विशेषाधिकार और आपकी IT नीति भी बाहरी सेवाओं को सीमित कर सकती है। अपनी संस्था के privacy या legal अधिकारी से नियम पक्का करें।"
+        },
+        {
+          "t": "h2",
+          "x": "दस्तावेज़ के अनुसार व्यावहारिक नियम"
+        },
+        {
+          "t": "p",
+          "x": "सार्वजनिक रिपोर्ट या ब्लॉग PDF के लिए शर्तें जाँचने के बाद अपलोड सेवा ठीक हो सकती है। अपने CV के लिए स्थानीय प्रोसेसिंग बेहतर है। अनुबंध, वेतन पर्ची, बैंक स्टेटमेंट, टैक्स दस्तावेज़ या मेडिकल रिकॉर्ड को बिना स्वीकृति और उचित समझौते के सामान्य कन्वर्टर पर न भेजें। OCR वाला 900 MB स्कैन ब्राउज़र मेमोरी से बड़ा हो सकता है; तब अनुमोदित और जाँचे प्रदाता या स्थानीय सॉफ़्टवेयर का उपयोग करें।"
+        },
+        {
+          "t": "h2",
+          "x": "जो बातें सुरक्षा साबित नहीं करतीं"
+        },
+        {
+          "t": "p",
+          "x": "HTTPS का ताला फ़ाइल को भेजते समय एन्क्रिप्ट करता है, लेकिन बाद में सर्वर क्या करता है यह नहीं रोकता। एक घंटे में मिटाने का वादा उस घंटे में पढ़े जाने से नहीं बचाता। लंबी privacy policy निजता का प्रमाण नहीं: “retain”, “delete”, “third party” और “train” शब्द खोजें। “साइनअप नहीं” का अर्थ है कि आपको खाता नहीं बनाना; इससे पता नहीं चलता कि फ़ाइल अपलोड होती है या नहीं।"
+        },
+        {
+          "t": "tip",
+          "x": "सबसे स्पष्ट संकेत है साइट लोड होने के बाद नेटवर्क बंद करना: अगर टूल चलता रहता है, तो फ़ाइल स्थानीय रूप से प्रोसेस हो सकती है। PrintxPDF के ब्राउज़र PDF टूल इसी कसौटी पर खरे उतरने के लिए बने हैं। PDF एन्क्रिप्शन और बहुत बड़े स्कैन अपवाद हैं; उन्हें अलग तरीके से संभालना पड़ता है। ऑफलाइन [PDF मर्ज](/tools/merge-pdf) आज़माकर देखें।"
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ब्राउज़र में PDF मर्ज करें। नेटवर्क बंद करके टूल जाँचें।"
+        },
+        {
+          "t": "p",
+          "x": "स्थानीय प्रोसेसिंग के बाद भी फ़ाइल में पुराना इतिहास रह सकता है। साझा करने से पहले [PDF मेटाडेटा हटाने का तरीका](/blog/privacy/remove-metadata-from-pdf) और [असली रेडैक्शन की जाँच](/blog/privacy/redact-pdf-properly) पढ़ें। पासवर्ड सुरक्षा के लिए [PDF पासवर्ड असल में क्या बचाता है](/blog/privacy/password-protect-pdf) देखें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या ऑनलाइन PDF कन्वर्टर सुरक्षित हैं?",
+          "a": "तभी, जब वे फ़ाइल अपलोड न करें या आपके पास प्रदाता के साथ उचित अनुबंध हो। अपलोड वाले कन्वर्टर दस्तावेज़ सर्वर पर भेजते हैं, जहाँ उसे पढ़ा या रखा जा सकता है। ब्राउज़र टूल फ़ाइल स्थानीय रूप से प्रोसेस करते हैं और भेजते नहीं।"
+        },
+        {
+          "q": "कैसे पता करें कि PDF टूल फ़ाइल अपलोड करता है?",
+          "a": "F12 से डेवलपर टूल खोलें, Network टैब पर जाएँ, लॉग साफ़ करें और एक परीक्षण PDF लोड करें। फ़ाइल के आकार के करीब POST या PUT रिक्वेस्ट अपलोड का संकेत है। निर्णायक परीक्षण नेटवर्क बंद करना है: स्थानीय टूल चलता रहता है।"
+        },
+        {
+          "q": "क्या काम के गोपनीय दस्तावेज़ों के लिए मुफ्त PDF टूल इस्तेमाल कर सकता हूँ?",
+          "a": "बिना मंजूरी और आवश्यक समझौते के अपलोड करने वाला टूल न लें। संगठन की ओर से निजी डेटा प्रोसेस करने वाले प्रदाता के लिए GDPR अनुबंध मांग सकता है; HIPAA लागू होने पर स्वास्थ्य जानकारी के लिए BAA जरूरी हो सकता है। स्थानीय टूल फ़ाइल को तीसरे पक्ष के सामने प्रकट करने से बचाता है।"
+        },
+        {
+          "q": "क्या HTTPS का मतलब अपलोड की गई PDF निजी है?",
+          "a": "नहीं। HTTPS फ़ाइल को सर्वर तक जाते समय एन्क्रिप्ट करता है। पहुँचने के बाद प्रदाता उसे प्रोसेस कर सकता है और अपनी नीति के अनुसार पढ़ या रख सकता है। ताला retention या access नहीं बताता।"
+        },
+        {
+          "q": "ब्राउज़र टूल बहुत बड़ी फ़ाइलों में धीमे क्यों होते हैं?",
+          "a": "वे सर्वर के बजाय आपके डिवाइस की मेमोरी पर निर्भर होते हैं। सैकड़ों MB की फ़ाइल और बड़े स्कैन का OCR धीमा हो सकता है या विफल हो सकता है। फ़ाइल को डिवाइस से बाहर न भेजने की यह व्यावहारिक कीमत है।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "هل أدوات PDF عبر الإنترنت آمنة؟ ماذا يحدث لملفاتك",
+      "metaTitle": "هل أدوات PDF عبر الإنترنت آمنة؟",
+      "metaDescription": "تحقق مما إذا كانت أداة PDF ترفع ملفاتك أم تعالجها داخل المتصفح. دليل خصوصية مجاني، بلا تسجيل، مع أدوات تعمل محليًا وتحافظ على ملفاتك على جهازك.",
+      "keyword": "هل أدوات PDF عبر الإنترنت آمنة",
+      "secondaryKeywords": [
+        "خصوصية محول PDF عبر الإنترنت",
+        "هل تحتفظ مواقع PDF بملفاتي",
+        "أداة PDF في المتصفح",
+        "أداة PDF آمنة",
+        "مستندات سرية وأدوات PDF"
+      ],
+      "answer": "يعتمد الأمر على ما إذا كانت الأداة ترفع PDF إلى خادم أم تعالجه في المتصفح. ترسل المواقع المعتمدة على الرفع المستند إلى خادم قد يخزنه أو يقرأه. أما الأداة التي تعمل محليًا فلا تنقل الملف. يمكنك التحقق خلال دقائق من علامة الشبكة في المتصفح وتجربة العمل دون اتصال.",
+      "ctaLabel": "دمج PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "قد يعرض موقعان الزر نفسه لـ[دمج PDF](/tools/merge-pdf)، لكنهما يعملان بطريقتين مختلفتين. يرسل أحدهما الملف عبر الإنترنت إلى خادم لا تعرفه. والآخر يبقيه على جهازك. قد لا تشرح الصفحة ذلك، لذا تحقق بنفسك."
+        },
+        {
+          "t": "h2",
+          "x": "البنيتان المختلفتان"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الجانب",
+            "رفع إلى الخادم",
+            "داخل المتصفح"
+          ],
+          "rows": [
+            [
+              "وجهة الملف",
+              "خوادم المزود",
+              "يبقى في علامة المتصفح"
+            ],
+            [
+              "من قد يقرأه",
+              "المزود أو شركة الاستضافة أو المخترق",
+              "أنت فقط على جهازك"
+            ],
+            [
+              "دون اتصال",
+              "لا",
+              "نعم بعد تحميل الصفحة"
+            ],
+            [
+              "مدة الاحتفاظ المعتادة",
+              "من ساعة إلى 24 ساعة وفق السياسة",
+              "لا توجد نسخة لدى المزود"
+            ],
+            [
+              "حد حجم الملف",
+              "من جهة الخادم وغالبًا أكبر",
+              "ذاكرة الجهاز، غالبًا بضع مئات من MB"
+            ],
+            [
+              "OCR والملفات الممسوحة الكبيرة",
+              "قد يكون أسرع على الخادم",
+              "أبطأ لكنه أكثر خصوصية"
+            ],
+            [
+              "GDPR",
+              "قد يتطلب عقدًا وآلية نقل مناسبة",
+              "لا يحدث نقل للملف"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "تحقق بنفسك خلال ثلاثين ثانية"
+        },
+        {
+          "t": "p",
+          "x": "لا تحتاج إلى تصديق أي موقع، بما في ذلك هذا الموقع. توضح علامة Network في المتصفح ما إذا غادر الملف جهازك. استخدم PDF تجريبيًا لا مستندًا سريًا."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "افتح أدوات المطور",
+              "x": "اضغط F12 أو Ctrl+Shift+I (Cmd+Option+I على macOS)، ثم افتح علامة Network."
+            },
+            {
+              "h": "امسح السجل وابدأ التسجيل",
+              "x": "اضغط أيقونة المسح كي ترى الطلبات الجديدة فقط."
+            },
+            {
+              "h": "حمّل ملف PDF تجريبيًا",
+              "x": "استخدم ملفًا بحجم بضعة ميغابايت، لا ملفًا سريًا. يسهل اكتشاف الرفع عندما يكون الملف كبيرًا."
+            },
+            {
+              "h": "راقب قائمة الطلبات",
+              "x": "رتّب حسب Size. يشير طلب POST أو PUT يقارب حجمه حجم الملف إلى رفعه. لا تظهر في الأداة المحلية مطالبة رفع مماثلة."
+            },
+            {
+              "h": "نفّذ العملية وتحقق مجددًا",
+              "x": "تعالج بعض المواقع الملف محليًا لكنها ترفعه عند التصدير. افحص تلك المرحلة أيضًا. وللتأكد، افصل الشبكة بعد تحميل الصفحة وتحقق من استمرار عمل الأداة."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "المعالجة داخل المتصفح هندسة شائعة الآن وليست ادعاءً تسويقيًا. تعمل مكتبات PDF في علامة التبويب باستخدام WebAssembly، لذلك لا تحتاج مهام مثل الدمج والتقسيم والتدوير والترقيم إلى خادم بالضرورة."
+        },
+        {
+          "t": "h2",
+          "x": "ما الذي تبحث عنه في سياسة الخصوصية"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "كم مدة الاحتفاظ بالملف؟ ابحث عن مدة محددة.",
+            "من يستطيع الوصول إليه أثناء الاحتفاظ؟ تحقق من التشفير وصلاحيات الموظفين.",
+            "هل يستخدم المحتوى للتدريب أو التحليلات أو عينات الجودة؟",
+            "أين توجد الخوادم؟ تحقق من آلية النقل القانونية المناسبة."
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "وعد الحذف سياسة وليس ضمانًا تقنيًا يمكنك التحقق منه. لا يمكنك تدقيقه بسهولة وقد تبقى النسخ الاحتياطية بعد ذلك. إذا كان كشف الملف سيسبب ضررًا حقيقيًا، فلا تعتمد على شروط الاحتفاظ؛ لا ترفعه من الأساس."
+        },
+        {
+          "t": "h2",
+          "x": "GDPR وHIPAA وقواعد العمل"
+        },
+        {
+          "t": "p",
+          "x": "تعتمد الالتزامات على الجهة التي تعالج البيانات ودورها. بموجب GDPR، عندما يعالج المزود بيانات شخصية نيابةً عن مؤسسة، يجب أن يحكم المعالجة عقد بالشروط المطلوبة. كما يحتاج النقل الدولي إلى أساس صالح. وفي الولايات المتحدة، قد يلزم اتفاق BAA بموجب HIPAA عندما تنشئ الخدمة معلومات صحية محمية أو تتلقاها أو تحتفظ بها أو تنقلها نيابةً عن جهة مشمولة. وقد تحد السرية القانونية وسياسة تقنية المعلومات الداخلية من الخدمات الخارجية. تحقق من المتطلبات مع مسؤول الخصوصية أو الشؤون القانونية في مؤسستك."
+        },
+        {
+          "t": "h2",
+          "x": "قاعدة عملية حسب نوع المستند"
+        },
+        {
+          "t": "p",
+          "x": "قد تكون خدمة الرفع مناسبة لتقرير عام أو PDF لمدونة بعد مراجعة شروطها. أما السيرة الذاتية الشخصية فالأفضل معالجتها محليًا. لا ترفع العقود أو كشوف الرواتب أو الحسابات المصرفية أو الإقرارات الضريبية أو السجلات الطبية إلى محول استهلاكي دون موافقة واتفاقات مناسبة. قد يتجاوز مسح ضوئي بحجم 900 ميغابايت يحتاج OCR ذاكرة المتصفح؛ استخدم حينها مزودًا معتمدًا ومراجعًا أو برنامجًا محليًا."
+        },
+        {
+          "t": "h2",
+          "x": "علامات لا تثبت الأمان"
+        },
+        {
+          "t": "p",
+          "x": "يقوم قفل HTTPS بتشفير الملف أثناء نقله، لكنه لا يحدد ما يفعله الخادم بعد استلامه. ووعد الحذف بعد ساعة لا يمنع قراءته خلال تلك الساعة. طول سياسة الخصوصية لا يثبت الخصوصية؛ ابحث عن كلمات «الاحتفاظ» و«الحذف» و«طرف ثالث» و«التدريب». عبارة «لا يلزم التسجيل» تعني أنك لا تنشئ حسابًا، ولا تكشف ما إذا كان الملف يُرفع."
+        },
+        {
+          "t": "tip",
+          "x": "أوضح اختبار هو قطع اتصال الشبكة بعد تحميل الموقع: إذا استمرت الأداة في العمل، فقد يكون الملف يعالج محليًا. صُممت أدوات PDF في متصفح PrintxPDF لتجتاز هذا الاختبار. تشفير PDF وعمليات المسح الضخمة استثناءان يحتاجان إلى معالجة مختلفة. جرّب [دمج PDF](/tools/merge-pdf) دون اتصال للتحقق."
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ادمج PDF في المتصفح. جرّب الأداة بعد فصل الشبكة."
+        },
+        {
+          "t": "p",
+          "x": "قد يحتفظ الملف بتاريخه حتى عند معالجته محليًا. قبل المشاركة، اقرأ [كيفية إزالة البيانات الوصفية من PDF](/blog/privacy/remove-metadata-from-pdf) و[كيفية التأكد من أن التنقيح حقيقي](/blog/privacy/redact-pdf-properly). ولحماية الملفات بكلمة مرور، راجع [ما الذي تحميه كلمة مرور PDF فعليًا](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل محولات PDF عبر الإنترنت آمنة؟",
+          "a": "فقط إذا لم ترفع الملف أو كان لديك عقد مناسب مع المزود. ترسل المحولات التي تعتمد على الرفع المستند إلى خادم قد يخزنه أو يقرأه. تعالج أدوات المتصفح الملف محليًا ولا تنقله."
+        },
+        {
+          "q": "كيف أعرف ما إذا كانت أداة PDF ترفع الملف؟",
+          "a": "افتح أدوات المطور عبر F12، وانتقل إلى Network، وامسح السجل ثم حمّل PDF تجريبيًا. يشير طلب POST أو PUT بحجم يقارب الملف إلى رفعه. الاختبار الأوضح هو فصل الشبكة؛ فالأداة المحلية تواصل العمل."
+        },
+        {
+          "q": "هل يمكنني استخدام أداة PDF مجانية لمستندات العمل السرية؟",
+          "a": "لا تستخدم أداة ترفع الملف دون موافقة والاتفاقات المطلوبة. إذا عالج المزود بيانات شخصية نيابةً عن مؤسستك، فقد يطلب GDPR عقدًا؛ وقد يلزم BAA عند التعامل مع معلومات صحية مشمولة بـHIPAA. تتجنب الأداة المحلية كشف الملف لطرف ثالث."
+        },
+        {
+          "q": "هل يعني HTTPS أن ملف PDF المرفوع خاص؟",
+          "a": "لا. يشفر HTTPS الملف أثناء انتقاله إلى الخادم. بعد وصوله، يستطيع المزود معالجته وربما قراءته أو الاحتفاظ به وفق ممارساته. لا يوضح رمز القفل مدة الاحتفاظ أو الوصول."
+        },
+        {
+          "q": "لماذا تواجه أدوات المتصفح صعوبة مع الملفات الكبيرة؟",
+          "a": "تعتمد على ذاكرة جهازك بدل أجهزة الخادم. قد تبطؤ أو تفشل الملفات التي يبلغ حجمها مئات الميغابايت ومهام OCR للمسح الضخم. هذه هي الكلفة العملية لعدم إخراج الملف من جهازك."
+        }
+      ]
+    },
+    "bn": {
+      "title": "অনলাইন PDF টুল কি নিরাপদ? আপনার ফাইলের সঙ্গে কী ঘটে",
+      "metaTitle": "অনলাইন PDF টুল কি নিরাপদ?",
+      "metaDescription": "PDF টুল ফাইল আপলোড করে নাকি ব্রাউজারে প্রসেস করে তা যাচাই করুন। বিনামূল্যে, ব্যক্তিগত ও সাইনআপহীন গোপনীয়তা গাইড।",
+      "keyword": "অনলাইন PDF টুল কি নিরাপদ",
+      "secondaryKeywords": [
+        "অনলাইন PDF কনভার্টারের গোপনীয়তা",
+        "PDF সাইট কি ফাইল রাখে",
+        "ব্রাউজারভিত্তিক PDF টুল",
+        "নিরাপদ PDF টুল",
+        "গোপনীয় নথির PDF টুল"
+      ],
+      "answer": "টুলটি PDF সার্ভারে আপলোড করে নাকি ব্রাউজারে প্রসেস করে, তার ওপর নিরাপত্তা নির্ভর করে। আপলোডভিত্তিক সাইট নথি সার্ভারে পাঠায়, যেখানে তা পড়া বা সংরক্ষণ হতে পারে। ব্রাউজারভিত্তিক টুল ফাইল পাঠায় না। ব্রাউজারের Network ট্যাব এবং অফলাইন পরীক্ষা দিয়ে কয়েক মিনিটেই যাচাই করা যায়।",
+      "ctaLabel": "PDF মার্জ করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "দুটি ওয়েবসাইটে [PDF মার্জ](/tools/merge-pdf) বোতাম দেখতে একই হলেও ভেতরে কাজ আলাদা হতে পারে। একটি ফাইল ইন্টারনেট পেরিয়ে অচেনা সার্ভারে পাঠায়। অন্যটি আপনার ডিভাইসেই রাখে। পেজে সব সময় বলা থাকে না, তাই নিজে পরীক্ষা করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "দুটি আর্কিটেকচার"
+        },
+        {
+          "t": "table",
+          "head": [
+            "বিষয়",
+            "সার্ভারে আপলোড",
+            "ব্রাউজারে"
+          ],
+          "rows": [
+            [
+              "ফাইল কোথায় যায়",
+              "সেবাদাতার সার্ভার",
+              "ব্রাউজার ট্যাবেই থাকে"
+            ],
+            [
+              "কে পড়তে পারে",
+              "সেবাদাতা, হোস্টিং বা অনুপ্রবেশকারী",
+              "ডিভাইসে শুধু আপনি"
+            ],
+            [
+              "অফলাইনে",
+              "না",
+              "হ্যাঁ, পেজ লোড হলে"
+            ],
+            [
+              "সাধারণত কতক্ষণ থাকে",
+              "নীতিতে ১–২৪ ঘণ্টা",
+              "সেবাদাতার কাছে কপি থাকে না"
+            ],
+            [
+              "ফাইলের আকারের সীমা",
+              "সার্ভरভিত্তিক, প্রায়ই বেশি",
+              "ডিভাইস মেমরি, প্রায় কয়েকশ MB"
+            ],
+            [
+              "OCR ও বড় স্ক্যান",
+              "সার্ভারে দ্রুত হতে পারে",
+              "ধীর, তবে ব্যক্তিগত"
+            ],
+            [
+              "GDPR",
+              "চুক্তি ও স্থানান্তর ব্যবস্থা লাগতে পারে",
+              "ফাইল স্থানান্তর হয় না"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "নিজেই ৩০ সেকেন্ডে যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "কোনো ওয়েবসাইটের কথা, এমনকি এই সাইটেরও, অন্ধভাবে বিশ্বাস করতে হবে না। ব্রাউজারের Network ট্যাব দেখাতে পারে ফাইলটি কম্পিউটার ছেড়েছে কি না। গোপন ফাইল নয়, পরীক্ষার PDF ব্যবহার করুন।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "ডেভেলপার টুল খুলুন",
+              "x": "F12 বা Ctrl+Shift+I (macOS-এ Cmd+Option+I) চাপুন এবং Network ট্যাব খুলুন।"
+            },
+            {
+              "h": "লগ মুছে রেকর্ডিং শুরু করুন",
+              "x": "ক্লিয়ার আইকনে ক্লিক করুন, যাতে এরপরের অনুরোধগুলোই দেখা যায়।"
+            },
+            {
+              "h": "পরীক্ষার PDF লোড করুন",
+              "x": "কয়েক MB-এর ফাইল নিন, গোপন নথি নয়। বড় ফাইলে আপলোড বোঝা সহজ।"
+            },
+            {
+              "h": "রিকোয়েস্টের তালিকা দেখুন",
+              "x": "Size অনুযায়ী সাজান। ফাইলের আকারের কাছাকাছি POST বা PUT রিকোয়েস্ট মানে সেটি আপলোড হয়েছে। স্থানীয় টুলে এমন সমপরিমাণ আপলোড রিকোয়েস্ট থাকবে না।"
+            },
+            {
+              "h": "কাজ চালিয়ে আবার দেখুন",
+              "x": "কিছু সাইট স্থানীয় প্রসেসিং করে, কিন্তু export-এর সময় আপলোড করে। সেই ধাপও দেখুন। নিশ্চিত হতে পেজ লোডের পর নেটওয়ার্ক বিচ্ছিন্ন করে দেখুন টুল চলে কি না।"
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "ব্রাউজারে প্রসেসিং এখন স্বাভাবিক প্রকৌশল, শুধু বিজ্ঞাপনের দাবি নয়। PDF লাইব্রেরি WebAssembly দিয়ে ট্যাবেই চলতে পারে। তাই পেজ মার্জ, ভাগ, ঘোরানো বা নম্বর দেওয়ার জন্য সব সময় সার্ভার লাগে না।"
+        },
+        {
+          "t": "h2",
+          "x": "গোপনীয়তা নীতিতে কী দেখবেন"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "ফাইল কতক্ষণ রাখা হয়? নির্দিষ্ট সময় দেখুন।",
+            "থাকার সময় কে দেখতে পারে? এনক্রিপশন ও কর্মীদের প্রবেশাধিকার দেখুন।",
+            "কনটেন্ট কি প্রশিক্ষণ, অ্যানালিটিক্স বা মান পরীক্ষায় লাগে?",
+            "সার্ভার কোথায়? প্রযোজ্য স্থানান্তর ব্যবস্থা যাচাই করুন।"
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "মুছে ফেলার প্রতিশ্রুতি নীতি, যাচাইযোগ্য প্রযুক্তিগত নিশ্চয়তা নয়। আপনি সহজে অডিট করতে পারবেন না; ব্যাকআপ আরও দিন থাকতে পারে। ফাঁস হলে বাস্তব ক্ষতি হবে এমন নথির ক্ষেত্রে retention শর্তের ওপর নির্ভর করবেন না; আপলোডই করবেন না।"
+        },
+        {
+          "t": "h2",
+          "x": "GDPR, HIPAA ও কর্মস্থলের নীতি"
+        },
+        {
+          "t": "p",
+          "x": "দায়িত্ব নির্ভর করে কে কোন ভূমিকায় ডেটা প্রসেস করছে। GDPR অনুযায়ী, কোনো সেবাদাতা প্রতিষ্ঠানের হয়ে ব্যক্তিগত ডেটা প্রসেস করলে নির্ধারিত শর্তসহ চুক্তি প্রয়োজন। আন্তর্জাতিক স্থানান্তরেরও বৈধ ভিত্তি দরকার হতে পারে। যুক্তরাষ্ট্রে, কোনো সেবা covered entity-এর হয়ে সুরক্ষিত স্বাস্থ্যতথ্য তৈরি, গ্রহণ, সংরক্ষণ বা পাঠালে HIPAA অনুসারে BAA লাগতে পারে। আইনি গোপনীয়তা এবং প্রতিষ্ঠানের IT নীতিও বাইরের সেবা সীমিত করতে পারে। আপনার প্রতিষ্ঠানের privacy বা legal কর্মকর্তার কাছে নিয়ম নিশ্চিত করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "নথির ধরন অনুযায়ী ব্যবহারিক নিয়ম"
+        },
+        {
+          "t": "p",
+          "x": "পাবলিক রিপোর্ট বা ব্লগ PDF-এর জন্য শর্ত যাচাই করে আপলোড সেবা গ্রহণযোগ্য হতে পারে। নিজের CV-তে স্থানীয় প্রসেসিং ভালো। চুক্তি, বেতন স্লিপ, ব্যাংক স্টেটমেন্ট, কর নথি বা মেডিকেল রেকর্ড অনুমোদন ও প্রয়োজনীয় চুক্তি ছাড়া সাধারণ কনভার্টারে পাঠাবেন না। OCR দরকার এমন 900 MB স্ক্যান ব্রাউজারের মেমরি ছাড়িয়ে যেতে পারে; তখন অনুমোদিত ও যাচাইকৃত সেবাদাতা বা স্থানীয় সফটওয়্যার ব্যবহার করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "যে লক্ষণ নিরাপত্তা প্রমাণ করে না"
+        },
+        {
+          "t": "p",
+          "x": "HTTPS-এর তালা ফাইল পাঠানোর সময় এনক্রিপ্ট করে, কিন্তু সার্ভার পরে কী করে তা নিয়ন্ত্রণ করে না। এক ঘণ্টায় মুছে ফেলার প্রতিশ্রুতিও সেই সময়ে পড়া ঠেকায় না। লম্বা privacy policy গোপনীয়তার প্রমাণ নয়: “retain”, “delete”, “third party” এবং “train” খুঁজুন। “সাইনআপ লাগে না” মানে আপনার অ্যাকাউন্ট লাগে না; ফাইল আপলোড হয় কি না তা বলে না।"
+        },
+        {
+          "t": "tip",
+          "x": "সবচেয়ে শক্ত পরীক্ষা হলো সাইট লোডের পর নেটওয়ার্ক বিচ্ছিন্ন করা: টুল চললে ফাইল স্থানীয়ভাবে প্রসেস হতে পারে। PrintxPDF-এর ব্রাউজার PDF টুল এই পরীক্ষায় উত্তীর্ণ হওয়ার জন্য তৈরি। PDF এনক্রিপশন ও খুব বড় স্ক্যান ব্যতিক্রম; সেগুলো আলাদাভাবে সামলাতে হয়। অফলাইনে [PDF মার্জ](/tools/merge-pdf) চালিয়ে দেখুন।"
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ব্রাউজারে PDF মার্জ করুন। নেটওয়ার্ক বিচ্ছিন্ন করে পরীক্ষা করুন।"
+        },
+        {
+          "t": "p",
+          "x": "স্থানীয়ভাবে প্রসেস করলেও ফাইলে আগের ইতিহাস থাকতে পারে। শেয়ারের আগে [PDF মেটাডেটা সরানোর উপায়](/blog/privacy/remove-metadata-from-pdf) এবং [সত্যিকারের রেড্যাকশন যাচাই](/blog/privacy/redact-pdf-properly) পড়ুন। পাসওয়ার্ড সুরক্ষার জন্য [PDF পাসওয়ার্ড আসলে কী সুরক্ষা দেয়](/blog/privacy/password-protect-pdf) দেখুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "অনলাইন PDF কনভার্টার কি নিরাপদ?",
+          "a": "শুধু তখনই, যদি ফাইল আপলোড না করে বা সেবাদাতার সঙ্গে উপযুক্ত চুক্তি থাকে। আপলোড কনভার্টার নথি সার্ভারে পাঠায়, যেখানে তা পড়া বা রাখা হতে পারে। ব্রাউজার টুল স্থানীয়ভাবে প্রসেস করে এবং পাঠায় না।"
+        },
+        {
+          "q": "PDF টুল ফাইল আপলোড করে কি না বুঝব কীভাবে?",
+          "a": "F12 দিয়ে developer tools খুলে Network ট্যাবে যান, লগ মুছে পরীক্ষার PDF লোড করুন। ফাইলের কাছাকাছি আকারের POST বা PUT রিকোয়েস্ট আপলোডের ইঙ্গিত। সবচেয়ে পরিষ্কার পরীক্ষা নেটওয়ার্ক বিচ্ছিন্ন করা: স্থানীয় টুল চলতে থাকে।"
+        },
+        {
+          "q": "কাজের গোপন নথিতে বিনামূল্যের PDF টুল ব্যবহার করা যাবে?",
+          "a": "অনুমোদন ও প্রযোজ্য চুক্তি ছাড়া আপলোড করা টুল ব্যবহার করবেন না। প্রতিষ্ঠানের হয়ে ব্যক্তিগত ডেটা প্রসেসে GDPR চুক্তি চাইতে পারে; HIPAA-র আওতায় স্বাস্থ্য তথ্য হলে BAA দরকার হতে পারে। স্থানীয় টুল তৃতীয় পক্ষের কাছে ফাইল প্রকাশ এড়ায়।"
+        },
+        {
+          "q": "HTTPS থাকলে আপলোড করা PDF কি ব্যক্তিগত?",
+          "a": "না। HTTPS সার্ভারে যাওয়ার পথে ফাইল এনক্রিপ্ট করে। পৌঁছানোর পর সেবাদাতা সেটি প্রসেস করতে পারে এবং নীতি অনুযায়ী পড়তে বা রাখতে পারে। তালা retention বা access জানায় না।"
+        },
+        {
+          "q": "বড় ফাইলে ব্রাউজার টুল ধীর হয় কেন?",
+          "a": "এগুলো সার্ভারের বদলে আপনার ডিভাইসের মেমরির ওপর চলে। কয়েকশ MB ফাইল এবং বড় স্ক্যানের OCR ধীর বা ব্যর্থ হতে পারে। ফাইল ডিভাইসের বাইরে না পাঠানোর বাস্তব বিনিময় এটি।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Công cụ PDF trực tuyến có an toàn không? Tệp của bạn sẽ đi đâu",
+      "metaTitle": "Công cụ PDF trực tuyến có an toàn không?",
+      "metaDescription": "Kiểm tra công cụ PDF tải tệp lên hay xử lý trong trình duyệt. Hướng dẫn riêng tư, miễn phí và không cần đăng ký.",
+      "keyword": "công cụ PDF trực tuyến có an toàn không",
+      "secondaryKeywords": [
+        "quyền riêng tư của trình chuyển PDF online",
+        "website PDF có lưu tệp không",
+        "công cụ PDF chạy trong trình duyệt",
+        "công cụ PDF an toàn",
+        "PDF mật và công cụ trực tuyến"
+      ],
+      "answer": "Điều đó phụ thuộc công cụ tải PDF lên máy chủ hay xử lý ngay trong trình duyệt. Dịch vụ tải lên gửi tài liệu đến máy chủ của nhà cung cấp, nơi họ có thể lưu hoặc đọc tệp. Công cụ chạy trong trình duyệt không truyền tệp. Bạn có thể kiểm tra trong tab Network và thử ngắt mạng trong vài phút.",
+      "ctaLabel": "Gộp PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Hai website có thể cùng hiển thị nút [gộp PDF](/tools/merge-pdf) nhưng hoạt động khác nhau phía sau. Một nơi gửi tài liệu qua Internet đến máy chủ bạn không biết. Nơi kia giữ tệp trên máy của bạn. Trang web có thể không nói rõ, vì vậy hãy tự kiểm tra."
+        },
+        {
+          "t": "h2",
+          "x": "Hai cách vận hành"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tiêu chí",
+            "Tải lên máy chủ",
+            "Trong trình duyệt"
+          ],
+          "rows": [
+            [
+              "Tệp đi đâu",
+              "Máy chủ nhà cung cấp",
+              "Ở lại trong tab trình duyệt"
+            ],
+            [
+              "Ai có thể đọc",
+              "Nhà cung cấp, máy chủ hoặc kẻ xâm nhập",
+              "Chỉ bạn trên thiết bị"
+            ],
+            [
+              "Ngoại tuyến",
+              "Không",
+              "Có, sau khi tải trang"
+            ],
+            [
+              "Thời gian lưu thường gặp",
+              "1–24 giờ theo chính sách",
+              "Nhà cung cấp không giữ bản sao"
+            ],
+            [
+              "Giới hạn kích thước",
+              "Phía máy chủ, thường cao",
+              "Bộ nhớ thiết bị, thường vài trăm MB"
+            ],
+            [
+              "OCR và bản quét lớn",
+              "Có thể nhanh hơn trên máy chủ",
+              "Chậm hơn nhưng riêng tư"
+            ],
+            [
+              "GDPR",
+              "Có thể cần hợp đồng và cơ chế chuyển dữ liệu",
+              "Không chuyển tệp"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Tự kiểm tra trong ba mươi giây"
+        },
+        {
+          "t": "p",
+          "x": "Bạn không cần tin lời bất kỳ website nào, kể cả trang này. Tab Network của trình duyệt có thể cho biết tệp có rời máy hay không. Hãy dùng PDF thử nghiệm, không dùng tài liệu mật."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Mở công cụ dành cho nhà phát triển",
+              "x": "Nhấn F12 hoặc Ctrl+Shift+I (Cmd+Option+I trên macOS), rồi mở tab Network."
+            },
+            {
+              "h": "Xóa nhật ký và bắt đầu ghi",
+              "x": "Nhấn biểu tượng xóa để chỉ quan sát các yêu cầu tiếp theo."
+            },
+            {
+              "h": "Tải một PDF thử nghiệm vào công cụ",
+              "x": "Dùng tệp vài MB, không dùng tài liệu mật. Tệp lớn giúp nhận ra lượt tải lên dễ hơn."
+            },
+            {
+              "h": "Quan sát danh sách yêu cầu",
+              "x": "Sắp xếp theo Size. Yêu cầu POST hoặc PUT có dung lượng gần bằng tệp thường cho biết tệp đã được tải lên. Công cụ cục bộ không có yêu cầu tải lên tương tự."
+            },
+            {
+              "h": "Chạy thao tác rồi kiểm tra lại",
+              "x": "Một số website xử lý cục bộ nhưng tải tệp lên khi xuất kết quả. Hãy kiểm tra bước đó nữa. Để xác nhận, ngắt mạng sau khi tải trang và xem công cụ còn chạy không."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Xử lý ngay trong trình duyệt hiện là kỹ thuật bình thường, không chỉ là lời quảng cáo. Thư viện PDF có thể chạy trong tab bằng WebAssembly. Vì vậy các tác vụ gộp, tách, xoay hoặc đánh số trang không nhất thiết cần máy chủ."
+        },
+        {
+          "t": "h2",
+          "x": "Cần đọc gì trong chính sách quyền riêng tư"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Tệp được giữ bao lâu? Tìm thời hạn cụ thể.",
+            "Ai có thể truy cập khi còn lưu? Kiểm tra mã hóa và quyền của nhân viên.",
+            "Nội dung có dùng để huấn luyện, phân tích hoặc lấy mẫu chất lượng không?",
+            "Máy chủ ở đâu? Kiểm tra cơ chế chuyển dữ liệu phù hợp."
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Lời hứa xóa là chính sách, không phải bảo đảm kỹ thuật mà bạn có thể tự xác minh. Bạn khó kiểm toán, và bản sao lưu có thể tồn tại lâu hơn. Nếu lộ tệp có thể gây thiệt hại thật, đừng chỉ dựa vào điều khoản lưu trữ; đừng tải tệp lên."
+        },
+        {
+          "t": "h2",
+          "x": "GDPR, HIPAA và quy định nơi làm việc"
+        },
+        {
+          "t": "p",
+          "x": "Nghĩa vụ phụ thuộc ai xử lý dữ liệu và trong vai trò nào. Theo GDPR, khi nhà cung cấp xử lý dữ liệu cá nhân thay mặt tổ chức, việc xử lý cần có hợp đồng với các điều khoản bắt buộc. Chuyển dữ liệu quốc tế cũng cần cơ sở hợp lệ. Tại Hoa Kỳ, nếu dịch vụ tạo, nhận, duy trì hoặc truyền thông tin sức khỏe được bảo vệ thay mặt một đơn vị thuộc phạm vi điều chỉnh, có thể cần thỏa thuận BAA theo HIPAA. Bí mật pháp lý và chính sách CNTT nội bộ cũng có thể hạn chế dịch vụ bên ngoài. Hãy xác nhận yêu cầu với bộ phận pháp lý hoặc quyền riêng tư của tổ chức."
+        },
+        {
+          "t": "h2",
+          "x": "Nguyên tắc thực tế theo loại tài liệu"
+        },
+        {
+          "t": "p",
+          "x": "Dịch vụ tải lên có thể chấp nhận được với báo cáo công khai hoặc PDF blog sau khi bạn kiểm tra điều khoản. Với CV cá nhân, xử lý cục bộ tốt hơn. Đừng tải hợp đồng, phiếu lương, sao kê ngân hàng, hồ sơ thuế hay hồ sơ y tế lên công cụ phổ thông nếu chưa được phê duyệt và có thỏa thuận phù hợp. Bản quét 900 MB cần OCR có thể vượt bộ nhớ trình duyệt; khi đó hãy dùng nhà cung cấp đã được thẩm định hoặc phần mềm cục bộ."
+        },
+        {
+          "t": "h2",
+          "x": "Những dấu hiệu không chứng minh an toàn"
+        },
+        {
+          "t": "p",
+          "x": "Biểu tượng khóa HTTPS mã hóa tệp khi truyền đi, nhưng không giới hạn những gì máy chủ làm sau đó. Cam kết xóa sau một giờ không ngăn nhà cung cấp đọc tệp trong giờ đó. Chính sách quyền riêng tư dài không phải bằng chứng: tìm các từ “retain”, “delete”, “third party” và “train”. “Không cần đăng ký” nghĩa là bạn không tạo tài khoản; điều đó không cho biết tệp có được tải lên hay không."
+        },
+        {
+          "t": "tip",
+          "x": "Tín hiệu rõ nhất là ngắt mạng sau khi trang tải: nếu công cụ vẫn chạy, tệp có thể đang được xử lý cục bộ. Các công cụ PDF trên trình duyệt của PrintxPDF được thiết kế để vượt qua phép thử này. Mã hóa PDF và bản quét rất lớn là ngoại lệ cần cách xử lý khác. Hãy thử [Gộp PDF](/tools/merge-pdf) khi offline để kiểm tra."
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Gộp PDF trong trình duyệt. Thử công cụ khi ngắt mạng."
+        },
+        {
+          "t": "p",
+          "x": "Tệp vẫn có thể mang theo lịch sử riêng dù được xử lý cục bộ. Trước khi chia sẻ, hãy xem [cách xóa siêu dữ liệu PDF](/blog/privacy/remove-metadata-from-pdf) và [cách xác nhận biên tập PDF là thật](/blog/privacy/redact-pdf-properly). Để hiểu bảo vệ bằng mật khẩu, đọc [mật khẩu PDF thực sự bảo vệ điều gì](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Công cụ chuyển PDF trực tuyến có an toàn không?",
+          "a": "Chỉ khi công cụ không tải tệp lên hoặc bạn có hợp đồng phù hợp với nhà cung cấp. Công cụ tải lên gửi tài liệu đến máy chủ, nơi có thể lưu hoặc đọc. Công cụ trình duyệt xử lý tệp cục bộ và không truyền đi."
+        },
+        {
+          "q": "Làm sao biết công cụ PDF có tải tệp lên không?",
+          "a": "Mở công cụ dành cho nhà phát triển bằng F12, chọn Network, xóa nhật ký rồi tải PDF thử nghiệm. Yêu cầu POST hoặc PUT có dung lượng gần bằng tệp cho thấy có tải lên. Cách kiểm tra rõ nhất là ngắt mạng: công cụ cục bộ vẫn chạy."
+        },
+        {
+          "q": "Có thể dùng công cụ PDF miễn phí cho tài liệu mật ở công ty không?",
+          "a": "Không dùng công cụ tải lên nếu chưa có phê duyệt và thỏa thuận cần thiết. Nếu nhà cung cấp xử lý dữ liệu cá nhân thay mặt tổ chức, GDPR có thể yêu cầu hợp đồng; dữ liệu sức khỏe trong phạm vi HIPAA có thể cần BAA. Công cụ cục bộ tránh tiết lộ tệp cho bên thứ ba."
+        },
+        {
+          "q": "HTTPS có nghĩa PDF đã tải lên là riêng tư không?",
+          "a": "Không. HTTPS mã hóa tệp trên đường đến máy chủ. Sau khi nhận, nhà cung cấp có thể xử lý và có thể đọc hoặc lưu tùy quy trình. Biểu tượng khóa không nói về thời hạn lưu hay quyền truy cập."
+        },
+        {
+          "q": "Vì sao công cụ trình duyệt khó xử lý tệp rất lớn?",
+          "a": "Chúng phụ thuộc bộ nhớ máy của bạn thay vì máy chủ mạnh. Tệp vài trăm MB và OCR bản quét lớn có thể chậm hoặc thất bại. Đó là đánh đổi thực tế để tệp không rời máy."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "在线 PDF 工具安全吗？你的文件会发生什么",
+      "metaTitle": "在线 PDF 工具安全吗？文件隐私指南",
+      "metaDescription": "检查 PDF 工具是上传文件还是在浏览器中处理。免费、私密、浏览器本地处理，无需注册。保护敏感文件。",
+      "keyword": "在线 PDF 工具安全吗",
+      "secondaryKeywords": [
+        "在线 PDF 转换器隐私",
+        "PDF 网站会保存文件吗",
+        "浏览器 PDF 工具",
+        "安全的 PDF 工具",
+        "机密文件在线处理"
+      ],
+      "answer": "这取决于工具是把 PDF 上传到服务器，还是在浏览器中处理。上传型网站会把文档发送到服务商的服务器，对方可能读取或保存文件。浏览器本地工具不会传输文件。你可以通过浏览器 Network 面板和断网测试，在几分钟内验证。",
+      "ctaLabel": "合并 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "两个网站可能都有相同的[合并 PDF](/tools/merge-pdf)按钮，但后台做法完全不同。一个会通过互联网把文档发到陌生服务器；另一个不会让文件离开你的设备。网页不一定会说明这一点，因此需要自己检查。"
+        },
+        {
+          "t": "h2",
+          "x": "两种处理架构"
+        },
+        {
+          "t": "table",
+          "head": [
+            "对比项",
+            "上传到服务器",
+            "浏览器本地处理"
+          ],
+          "rows": [
+            [
+              "文件去向",
+              "服务商服务器",
+              "留在浏览器标签页中"
+            ],
+            [
+              "谁可能读取",
+              "服务商、托管方或入侵者",
+              "设备上的你自己"
+            ],
+            [
+              "离线使用",
+              "不能",
+              "可以，网页加载后"
+            ],
+            [
+              "常见保留时间",
+              "按政策保存 1 至 24 小时",
+              "服务商无需保留副本"
+            ],
+            [
+              "文件大小限制",
+              "服务器端，通常较宽松",
+              "设备内存，通常数百 MB"
+            ],
+            [
+              "OCR 和大型扫描件",
+              "服务器处理可能更快",
+              "速度较慢，但更私密"
+            ],
+            [
+              "GDPR",
+              "可能需要合同及跨境传输机制",
+              "文件不会传输"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "用三十秒亲自检查"
+        },
+        {
+          "t": "p",
+          "x": "你不必相信任何网站的说法，包括本站。浏览器的 Network 面板可以显示文件是否离开电脑。请使用测试 PDF，不要拿机密文件做实验。"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "打开开发者工具",
+              "x": "按 F12 或 Ctrl+Shift+I（macOS 按 Cmd+Option+I），切换到 Network 面板。"
+            },
+            {
+              "h": "清空记录并开始监测",
+              "x": "点击清除图标，只观察接下来的网络请求。"
+            },
+            {
+              "h": "加载测试 PDF",
+              "x": "使用几 MB 的测试文件，不要用机密文件。文件越大，上传越容易识别。"
+            },
+            {
+              "h": "观察请求列表",
+              "x": "按 Size 排序。大小接近文件本身的 POST 或 PUT 请求通常表示文件已上传。本地工具不会出现类似大小的上传请求。"
+            },
+            {
+              "h": "运行操作后再检查",
+              "x": "有些网站在本地处理，但导出时会上传文件。也要检查导出阶段。要进一步确认，可在网页加载后断开网络，查看工具是否仍能工作。"
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "浏览器内处理如今是常见工程方案，不只是营销说法。PDF 库可以通过 WebAssembly 在标签页中运行。因此，合并、拆分、旋转或给页面编号等操作并不一定需要服务器。"
+        },
+        {
+          "t": "h2",
+          "x": "隐私政策中要检查什么"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "文件会保存多久？查找明确的时长。",
+            "保存期间谁能访问？查看加密和员工权限。",
+            "内容是否用于训练、分析或质量抽样？",
+            "服务器在哪里？核实适用的跨境传输机制。"
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "删除承诺是政策，不是你能验证的技术保证。你无法轻易审计，备份也可能保存更久。如果文件泄露会造成实际伤害，不要只依赖保留期限条款，最好一开始就不要上传。"
+        },
+        {
+          "t": "h2",
+          "x": "GDPR、HIPAA 和职场规定"
+        },
+        {
+          "t": "p",
+          "x": "义务取决于谁在以何种角色处理数据。根据 GDPR，如果服务商代表组织处理个人数据，处理活动需要由包含规定条款的合同约束。国际传输也需要有效的法律依据。在美国，如果服务代表受 HIPAA 约束的实体创建、接收、维护或传输受保护健康信息，可能需要符合 HIPAA 的 BAA。法律保密义务和内部 IT 政策也可能限制使用外部服务。请向组织的隐私或法律负责人确认要求。"
+        },
+        {
+          "t": "h2",
+          "x": "按文件类型选择的实用规则"
+        },
+        {
+          "t": "p",
+          "x": "公开报告或博客 PDF 在核实条款后，可能适合使用上传型服务。个人简历最好在本地处理。合同、工资单、银行账单、税务申报或医疗记录，不要未经批准和适当合同就交给普通消费者转换服务。需要 OCR 的 900 MB 扫描档案可能超过浏览器内存；此时应选择经过审查和批准的服务商，或使用本地软件。"
+        },
+        {
+          "t": "h2",
+          "x": "不能证明安全的信号"
+        },
+        {
+          "t": "p",
+          "x": "HTTPS 锁标志只会加密文件在传输途中的内容，不会限制服务器收到后如何处理。承诺一小时删除，也无法阻止服务商在这一小时内读取文件。隐私政策很长不代表隐私有保障：搜索“retain”“delete”“third party”和“train”。“无需注册”只表示你不用创建账户，并不说明文件是否上传。"
+        },
+        {
+          "t": "tip",
+          "x": "最有力的行为测试是网页加载后断开网络：如果工具仍能运行，文件可能是在本地处理。PrintxPDF 的浏览器 PDF 工具就是为通过这项测试而设计的。PDF 加密和超大型扫描件属于例外，需要不同处理方式。可断网试用[合并 PDF](/tools/merge-pdf)验证。"
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "在浏览器中合并 PDF。断网后测试工具。"
+        },
+        {
+          "t": "p",
+          "x": "即使在本地处理，文件本身仍可能保留历史信息。分享前请阅读[如何删除 PDF 元数据](/blog/privacy/remove-metadata-from-pdf)和[如何确认 PDF 涂黑是真正删除](/blog/privacy/redact-pdf-properly)。密码保护方面可查看[PDF 密码真正能保护什么](/blog/privacy/password-protect-pdf)。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "在线 PDF 转换器安全吗？",
+          "a": "只有在工具不上传文件，或你与服务商有适当合同的情况下才适合。上传型转换器会把文档发送到服务器，对方可能读取或保存。浏览器型工具在本地处理，不会传输文件。"
+        },
+        {
+          "q": "如何判断 PDF 工具是否上传文件？",
+          "a": "按 F12 打开开发者工具，切换 Network，清空记录后加载测试 PDF。大小接近文件本身的 POST 或 PUT 请求表示文件可能已上传。最直接的测试是断网：本地工具仍能工作。"
+        },
+        {
+          "q": "可以用免费的在线 PDF 工具处理工作机密文件吗？",
+          "a": "没有批准和适用协议时，不要使用会上传文件的工具。如果服务商代表你的组织处理个人数据，GDPR 可能要求签订合同；受 HIPAA 约束的健康信息可能需要 BAA。本地工具可避免向第三方披露文件。"
+        },
+        {
+          "q": "HTTPS 是否意味着上传的 PDF 是私密的？",
+          "a": "不是。HTTPS 只加密文件传送到服务器的过程。收到后，服务商可按其做法处理文件，也可能读取或保存。锁标志不说明保留期限或访问权限。"
+        },
+        {
+          "q": "为什么浏览器工具处理大文件会吃力？",
+          "a": "它们受设备内存限制，而不是服务器硬件。数百 MB 的文件和大型扫描件 OCR 可能很慢或失败。这是文件始终留在设备上的实际取舍。"
+        }
+      ]
+    }
+  }
+}
