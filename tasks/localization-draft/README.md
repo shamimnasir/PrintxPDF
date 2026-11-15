@@ -24,7 +24,7 @@ English route's slug against localized guide topics:
 | Vietnamese (`vi`) | 110 | 115 |
 | Simplified Chinese (`zh-CN`) | 110 | 115 |
 
-Total remaining at the start of this draft effort: **963 localized guide pages**. There are currently 28 complete topic drafts, each with all seven locales, for 196 localized pages. **767 pages remain.** See the JSON filenames in this directory for the draft inventory.
+Total remaining at the start of this draft effort: **963 localized guide pages**. There are currently 29 complete topic drafts, each with all seven locales, for 203 localized pages. **760 pages remain.** See the JSON filenames in this directory for the draft inventory.
 More drafts should be added one English article at a time, with all seven locales
 represented before integration.
 

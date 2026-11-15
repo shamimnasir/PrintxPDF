@@ -1,0 +1,798 @@
+{
+  "topic": "annotate-pdf-for-study",
+  "sourceCluster": "students",
+  "tool": "flatten-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo anotar PDF para estudiar",
+      "metaTitle": "Cómo anotar PDF para estudiar",
+      "metaDescription": "Anota PDF para estudiar con un método de dos lecturas, código de colores y notas propias. Gratis, privado en el navegador y sin registro.",
+      "keyword": "cómo anotar un PDF para estudiar",
+      "secondaryKeywords": [
+        "resaltar PDF",
+        "mejor app para anotar PDF estudiantes",
+        "tomar notas en PDF iPad",
+        "exportar resaltados PDF",
+        "notas al margen PDF"
+      ],
+      "answer": "Lee el PDF una vez sin marcarlo. En la segunda lectura, usa un código de colores fijo y escribe con tus palabras una nota al margen junto a cada resaltado. En ordenador puedes usar Zotero o Adobe Acrobat Reader; en iPad, GoodNotes o Notability. Exporta las notas antes de repasar y aplana el PDF si vas a compartirlo.",
+      "ctaLabel": "Aplanar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "El problema habitual al anotar un PDF es empezar a resaltar desde la primera lectura. Al final, casi toda la página está amarilla y las marcas no explican qué aprendiste. Prueba dos lecturas y una regla sencilla: cada resaltado debe llevar una nota escrita con tus propias palabras."
+        },
+        {
+          "t": "h2",
+          "x": "Resaltar por sí solo aporta poco"
+        },
+        {
+          "t": "p",
+          "x": "Resaltar y releer, por sí solos, suelen ayudar menos que autoevaluarse y espaciar el repaso. Usa cada marca para crear algo que puedas recuperar después: una pregunta, una tarjeta de estudio o una explicación breve. Si no puedes reformular la idea, colorearla no la hará más clara."
+        },
+        {
+          "t": "h2",
+          "x": "El método de dos lecturas para anotar un PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Primera lectura: no marques nada",
+              "x": "Dedica cinco o diez minutos al título, el resumen, los encabezados, las figuras, la conclusión y las referencias. Decide si el artículo merece una lectura atenta."
+            },
+            {
+              "h": "Segunda lectura: resalta poco",
+              "x": "Limita las marcas a una frase de cada diez, aproximadamente. Si hay más color que texto, probablemente estás marcando el tema y no el argumento."
+            },
+            {
+              "h": "Escribe notas al margen con tus palabras",
+              "x": "Junto a cada resaltado, anota qué significa, por qué importa o qué pregunta te plantea. Una nota breve debe permitirte recordar la idea sin releer todo el párrafo."
+            },
+            {
+              "h": "Convierte las marcas en práctica",
+              "x": "Al terminar, exporta los resaltados o crea preguntas y tarjetas. Repásalas en días distintos para comprobar qué recuerdas sin mirar el texto."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Elige un código de colores y mantenlo"
+        },
+        {
+          "t": "p",
+          "x": "Elige un código que puedas recordar: amarillo para la idea principal, azul para pruebas o datos, verde para definiciones y rosa para preguntas o dudas. Escribe la clave en la primera página. No cambies el significado de cada color entre materias; la constancia hace que tus marcas sean fáciles de revisar."
+        },
+        {
+          "t": "h2",
+          "x": "Qué aplicaciones puedes usar"
+        },
+        {
+          "t": "p",
+          "x": "En Windows o Mac, Zotero y Adobe Acrobat Reader permiten añadir comentarios. Apple Preview sirve en macOS; Microsoft Edge también puede resaltar PDF. En iPad, GoodNotes y Notability admiten escritura con Apple Pencil. Importa el PDF a una sola aplicación y haz una copia de seguridad; las anotaciones guardadas solo dentro de una app pueden perderse al restaurar el dispositivo. Para un escaneo sin texto seleccionable, ejecuta [OCR para PDF escaneado](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "Antes de entregar o compartir el archivo"
+        },
+        {
+          "t": "p",
+          "x": "Los resaltados y comentarios suelen ser objetos editables. Quien reciba el archivo podría moverlos, borrarlos o leer comentarios privados. Antes de enviar un PDF marcado, usa [Aplanar PDF](/tools/flatten-pdf) para convertir las marcas en parte de la página. Conserva aparte una copia editable para ti."
+        },
+        {
+          "t": "cta",
+          "tool": "flatten-pdf",
+          "x": "Los resaltados y comentarios suelen ser objetos editables."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo sigue siendo mejor el papel"
+        },
+        {
+          "t": "p",
+          "x": "El papel sigue siendo útil para matemáticas densas, esquemas y capítulos largos que quieras pensar con lápiz. Anota digitalmente los textos que luego necesitarás buscar y considera imprimir lo que quieras trabajar a mano. Consulta cómo [imprimir artículos académicos](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Por qué no puedo resaltar texto en mi PDF?",
+          "a": "Probablemente es un escaneo sin capa de texto, así que no hay caracteres que seleccionar. Ejecuta OCR para reconocer el texto y vuelve a intentarlo. Un PDF protegido con contraseña o permisos también puede bloquear los comentarios."
+        },
+        {
+          "q": "¿Cómo exporto todos los resaltados de un PDF?",
+          "a": "En Zotero, haz clic derecho en el elemento y selecciona “Añadir nota a partir de anotaciones”. En Acrobat Reader, puedes resumir comentarios desde la impresión. En Preview, abre la barra de resaltados y notas. Las opciones dependen de la aplicación."
+        },
+        {
+          "q": "¿Las anotaciones permanecen si comparto el PDF?",
+          "a": "Sí. Normalmente permanecen editables, por lo que otra persona puede moverlas o borrarlas. Aplana el archivo antes de enviarlo si quieres que las marcas queden fijas en la página."
+        },
+        {
+          "q": "¿Es mejor anotar en papel o en una tableta?",
+          "a": "El papel funciona bien para dibujar y pensar durante una lectura larga. La tableta facilita buscar y citar después porque los resaltados siguen asociados al texto. Elige según cómo estudiarás ese material."
+        },
+        {
+          "q": "¿Qué hago si tengo demasiados resaltados?",
+          "a": "Reduce las marcas a las ideas que apoyan el argumento y añade una frase propia junto a cada una. Después crea preguntas de repaso. Si una página está casi toda resaltada, vuelve a leerla y elige solo lo que no podrías reconstruir de memoria."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como fazer anotações em PDF para estudar",
+      "metaTitle": "Como anotar PDF para estudar",
+      "metaDescription": "Anote PDFs para estudar com duas leituras, código de cores e notas próprias. Grátis, privado no navegador e sem cadastro.",
+      "keyword": "como anotar PDF para estudar",
+      "secondaryKeywords": [
+        "destacar texto em PDF",
+        "melhor app para anotar PDF estudante",
+        "anotar PDF no iPad",
+        "exportar destaques do PDF",
+        "notas na margem do PDF"
+      ],
+      "answer": "Leia o PDF uma vez sem fazer marcações. Na segunda leitura, use um código de cores fixo e escreva uma nota na margem, com suas palavras, ao lado de cada destaque. No computador, use Zotero ou Adobe Acrobat Reader; no iPad, GoodNotes ou Notability. Exporte as notas antes da revisão e achate o PDF se for compartilhá-lo.",
+      "ctaLabel": "Achatar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Um erro comum ao anotar PDFs é começar a destacar já na primeira leitura. No fim, quase toda a página fica amarela e as marcas não mostram o que você aprendeu. Faça duas leituras e siga uma regra simples: cada destaque deve vir acompanhado de uma nota escrita com suas próprias palavras."
+        },
+        {
+          "t": "h2",
+          "x": "Destacar sozinho ajuda pouco"
+        },
+        {
+          "t": "p",
+          "x": "Destacar e reler, sozinhos, costumam ajudar menos do que testar a própria memória e espaçar as revisões. Transforme cada marca em algo que você possa recuperar depois: uma pergunta, um cartão de estudo ou uma explicação curta. Se não consegue reformular a ideia, colorir o texto não vai torná-la mais clara."
+        },
+        {
+          "t": "h2",
+          "x": "O método de duas leituras para anotar um PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Primeira leitura: não marque nada",
+              "x": "Dedique cinco ou dez minutos ao título, resumo, subtítulos, figuras, conclusão e referências. Decida se o artigo merece uma leitura detalhada."
+            },
+            {
+              "h": "Segunda leitura: destaque com moderação",
+              "x": "Limite as marcas a mais ou menos uma frase em cada dez. Se houver mais cor que texto, você provavelmente está marcando o assunto, não o argumento."
+            },
+            {
+              "h": "Escreva notas na margem com suas palavras",
+              "x": "Ao lado de cada destaque, anote o que significa, por que importa ou que pergunta ele levanta. Uma nota curta deve ajudar você a lembrar a ideia sem reler o parágrafo inteiro."
+            },
+            {
+              "h": "Transforme as marcas em prática",
+              "x": "Ao terminar, exporte os destaques ou crie perguntas e cartões. Revise em dias diferentes para testar o que lembra sem consultar o texto."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Escolha um código de cores e mantenha-o"
+        },
+        {
+          "t": "p",
+          "x": "Escolha um código fácil de lembrar: amarelo para a ideia principal, azul para evidências ou dados, verde para definições e rosa para perguntas ou dúvidas. Escreva a legenda na primeira página. Não mude o significado das cores entre disciplinas; a consistência facilita a revisão."
+        },
+        {
+          "t": "h2",
+          "x": "Quais aplicativos você pode usar"
+        },
+        {
+          "t": "p",
+          "x": "No Windows ou Mac, Zotero e Adobe Acrobat Reader permitem adicionar comentários. O Apple Preview funciona no macOS; o Microsoft Edge também destaca PDFs. No iPad, GoodNotes e Notability aceitam escrita com Apple Pencil. Importe o PDF para um único app e faça backup: anotações guardadas somente dentro de um app podem sumir ao restaurar o dispositivo. Se o arquivo for uma digitalização sem texto selecionável, use [OCR para PDF digitalizado](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "Antes de entregar ou compartilhar o arquivo"
+        },
+        {
+          "t": "p",
+          "x": "Destaques e comentários costumam ser objetos editáveis. Quem receber o arquivo pode movê-los, apagá-los ou ler comentários privados. Antes de enviar um PDF anotado, use [Achatar PDF](/tools/flatten-pdf) para incorporar as marcas à página. Guarde uma cópia editável para você."
+        },
+        {
+          "t": "cta",
+          "tool": "flatten-pdf",
+          "x": "Destaques e comentários costumam ser objetos editáveis."
+        },
+        {
+          "t": "h2",
+          "x": "Quando o papel ainda é melhor"
+        },
+        {
+          "t": "p",
+          "x": "O papel ainda ajuda com matemática densa, diagramas e capítulos longos que você queira desenvolver com lápis. Faça anotações digitais nos textos que precisará pesquisar depois e pense em imprimir o material que quer trabalhar à mão. Veja como [imprimir artigos acadêmicos](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Por que não consigo destacar o texto no meu PDF?",
+          "a": "Provavelmente o arquivo é uma digitalização sem camada de texto, então não há caracteres para selecionar. Execute OCR para reconhecer o texto e tente novamente. Um PDF protegido por senha ou permissões também pode bloquear comentários."
+        },
+        {
+          "q": "Como exporto todos os destaques de um PDF?",
+          "a": "No Zotero, clique com o botão direito no item e escolha “Adicionar nota a partir das anotações”. No Acrobat Reader, é possível resumir comentários pela opção de impressão. No Preview, abra a barra lateral de destaques e notas. Os recursos variam conforme o app."
+        },
+        {
+          "q": "As anotações continuam no arquivo se eu compartilhá-lo?",
+          "a": "Sim. Normalmente elas continuam editáveis, então outra pessoa pode movê-las ou apagá-las. Achate o arquivo antes de enviar se quiser fixar as marcas na página."
+        },
+        {
+          "q": "É melhor fazer anotações no papel ou no tablet?",
+          "a": "O papel é bom para desenhar e pensar durante uma leitura longa. O tablet facilita pesquisar e citar depois porque os destaques continuam ligados ao texto. Escolha conforme a forma como vai estudar o material."
+        },
+        {
+          "q": "O que faço se destaquei texto demais?",
+          "a": "Reduza as marcas às ideias que sustentam o argumento e escreva uma frase sua ao lado de cada uma. Depois, crie perguntas de revisão. Se quase a página toda estiver marcada, releia e escolha só o que não conseguiria reconstruir de memória."
+        }
+      ]
+    },
+    "hi": {
+      "title": "पढ़ाई के लिए PDF पर नोट्स कैसे जोड़ें",
+      "metaTitle": "पढ़ाई के लिए PDF पर टिप्पणी कैसे करें",
+      "metaDescription": "दो बार पढ़ने, रंग कोड और अपने शब्दों में नोट्स से PDF पर पढ़ाई करें। मुफ्त, ब्राउज़र में निजी और साइनअप की जरूरत नहीं।",
+      "keyword": "पढ़ाई के लिए PDF पर नोट्स कैसे जोड़ें",
+      "secondaryKeywords": [
+        "PDF में टेक्स्ट हाइलाइट",
+        "छात्रों के लिए PDF एनोटेशन ऐप",
+        "iPad पर PDF नोट्स",
+        "PDF हाइलाइट एक्सपोर्ट",
+        "PDF मार्जिन नोट्स"
+      ],
+      "answer": "PDF को पहली बार बिना निशान लगाए पढ़ें। दूसरी बार एक तय रंग कोड अपनाएँ और हर हाइलाइट के पास अपने शब्दों में मार्जिन नोट लिखें। कंप्यूटर पर Zotero या Adobe Acrobat Reader और iPad पर GoodNotes या Notability इस्तेमाल करें। दोहराने से पहले नोट्स एक्सपोर्ट करें और साझा करने पर PDF को फ्लैटन करें।",
+      "ctaLabel": "PDF फ्लैटन करें",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF पर नोट्स बनाते समय आम गलती है कि पहली बार पढ़ते हुए ही हाइलाइट करना शुरू कर दें। अंत में लगभग पूरा पन्ना पीला होता है और निशान यह नहीं बताते कि आपने क्या सीखा। दो बार पढ़ने की आदत अपनाएँ और हर हाइलाइट के साथ अपने शब्दों में एक नोट लिखें।"
+        },
+        {
+          "t": "h2",
+          "x": "सिर्फ हाइलाइट करना पर्याप्त नहीं"
+        },
+        {
+          "t": "p",
+          "x": "सिर्फ हाइलाइट करना और दोबारा पढ़ना, खुद से सवाल करने और अलग-अलग समय पर अभ्यास करने से कम मददगार हो सकता है। हर निशान को ऐसी चीज़ में बदलें जिसे बाद में याद कर सकें: एक सवाल, फ्लैशकार्ड या छोटा स्पष्टीकरण। अगर आप विचार को अपने शब्दों में नहीं कह सकते, तो रंग भरने से वह स्पष्ट नहीं होगा।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF पर नोट्स के लिए दो-पास तरीका"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "पहला पास: कुछ भी चिह्नित न करें",
+              "x": "पाँच से दस मिनट शीर्षक, सारांश, अनुभाग शीर्षक, चित्र, निष्कर्ष और संदर्भ देखें। तय करें कि लेख को विस्तार से पढ़ना है या नहीं।"
+            },
+            {
+              "h": "दूसरा पास: कम हाइलाइट करें",
+              "x": "लगभग हर दस में से एक वाक्य तक निशान सीमित रखें। अगर टेक्स्ट से ज्यादा रंग है, तो आप तर्क की बजाय विषय को रंग रहे हैं।"
+            },
+            {
+              "h": "अपने शब्दों में किनारे पर लिखें",
+              "x": "हर हाइलाइट के पास लिखें कि उसका मतलब क्या है, वह क्यों जरूरी है या उससे कौन-सा सवाल उठता है। छोटा नोट आपको पूरा पैराग्राफ दोबारा पढ़े बिना बात याद दिलाए।"
+            },
+            {
+              "h": "निशानों को अभ्यास में बदलें",
+              "x": "अंत में हाइलाइट एक्सपोर्ट करें या उनसे सवाल और फ्लैशकार्ड बनाएँ। अलग-अलग दिनों में उन्हें दोहराएँ और देखें कि बिना टेक्स्ट देखे क्या याद आता है।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "रंग कोड चुनें और उसे लगातार अपनाएँ"
+        },
+        {
+          "t": "p",
+          "x": "एक आसान रंग कोड चुनें: मुख्य विचार के लिए पीला, प्रमाण या डेटा के लिए नीला, परिभाषा के लिए हरा और सवाल या संदेह के लिए गुलाबी। कुंजी पहले पन्ने पर लिखें। विषय बदलने पर रंगों के अर्थ न बदलें; लगातार एक जैसा तरीका दोहराना आसान बनाता है।"
+        },
+        {
+          "t": "h2",
+          "x": "कौन-से ऐप इस्तेमाल कर सकते हैं"
+        },
+        {
+          "t": "p",
+          "x": "Windows या Mac पर Zotero और Adobe Acrobat Reader में टिप्पणियाँ जोड़ सकते हैं। macOS में Apple Preview और Microsoft Edge भी PDF हाइलाइट कर सकते हैं। iPad पर GoodNotes और Notability, Apple Pencil से लिखने देते हैं। PDF एक ही ऐप में रखें और बैकअप करें; केवल ऐप के भीतर रखे नोट डिवाइस रीसेट होने पर खो सकते हैं। स्कैन में चुनने योग्य टेक्स्ट न हो तो पहले [स्कैन PDF पर OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) चलाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "फ़ाइल जमा करने या साझा करने से पहले"
+        },
+        {
+          "t": "p",
+          "x": "हाइलाइट और टिप्पणियाँ आमतौर पर संपादित किए जा सकने वाले ऑब्जेक्ट होते हैं। फ़ाइल पाने वाला उन्हें खिसका या मिटा सकता है, या निजी टिप्पणी पढ़ सकता है। चिह्नित PDF भेजने से पहले [PDF फ्लैटन करें](/tools/flatten-pdf) ताकि निशान पेज का हिस्सा बन जाएँ। अपनी संपादन योग्य प्रति अलग रखें।"
+        },
+        {
+          "t": "cta",
+          "tool": "flatten-pdf",
+          "x": "हाइलाइट और टिप्पणियाँ आमतौर पर संपादित किए जा सकने वाले ऑब्जेक्ट होते हैं। फ़ाइल पाने वाला उन्हें खिसका या मिटा सकता है, या निजी टिप्पणी पढ़ सकता है। चिह्नित PDF भेजने से पहले [PDF फ्लैटन करें](/tools/flatten-pdf) ताकि निशान पेज का हिस्सा बन जाएँ। अपनी संपादन योग्य प्रति अलग रखें।."
+        },
+        {
+          "t": "h2",
+          "x": "कब कागज़ अब भी बेहतर है"
+        },
+        {
+          "t": "p",
+          "x": "घनी गणित, साथ में स्केच और लंबे सिद्धांत अध्यायों के लिए कागज़ और पेंसिल अब भी उपयोगी हैं। जिन लेखों को बाद में खोजेंगे, उन्हें डिजिटल रूप से चिह्नित करें और हाथ से सोचने वाले पन्ने प्रिंट करें। [शोधपत्र प्रिंट करने का तरीका](/blog/students/print-journal-articles) देखें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "मैं PDF में टेक्स्ट हाइलाइट क्यों नहीं कर पा रहा?",
+          "a": "संभव है कि PDF केवल स्कैन हो और उसमें टेक्स्ट लेयर न हो, इसलिए चुनने के लिए अक्षर नहीं हैं। टेक्स्ट पहचानने के लिए OCR चलाएँ और फिर कोशिश करें। पासवर्ड या अनुमति से सुरक्षित PDF भी टिप्पणी रोक सकता है।"
+        },
+        {
+          "q": "PDF के सभी हाइलाइट कैसे एक्सपोर्ट करें?",
+          "a": "Zotero में आइटम पर दायाँ क्लिक करके “Add Note from Annotations” चुनें। Acrobat Reader में प्रिंट विकल्प से टिप्पणियों का सारांश बनाया जा सकता है। Preview में Highlights and Notes साइडबार खोलें। तरीके ऐप के अनुसार बदलते हैं।"
+        },
+        {
+          "q": "PDF साझा करने पर क्या टिप्पणियाँ भी रहती हैं?",
+          "a": "हाँ। वे आमतौर पर संपादन योग्य रहती हैं, इसलिए कोई उन्हें खिसका या मिटा सकता है। निशान स्थायी रखने के लिए भेजने से पहले PDF फ्लैटन करें।"
+        },
+        {
+          "q": "कागज़ पर नोट्स बेहतर हैं या टैबलेट पर?",
+          "a": "लंबे समय तक पढ़ते हुए चित्र बनाने और विचार करने के लिए कागज़ अच्छा है। टैबलेट में बाद में टेक्स्ट खोजना और उद्धृत करना आसान होता है, क्योंकि हाइलाइट मूल टेक्स्ट से जुड़े रहते हैं। सामग्री के अनुसार चुनें।"
+        },
+        {
+          "q": "बहुत ज्यादा हाइलाइट हो गए हों तो क्या करें?",
+          "a": "सिर्फ तर्क को आगे बढ़ाने वाले विचार रखें और हर निशान के पास अपना एक वाक्य लिखें। फिर दोहराने के लिए सवाल बनाएँ। अगर लगभग पूरा पन्ना रंगा है, तो दोबारा पढ़कर वही चुनें जो याद से नहीं बता पाएँगे।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية تدوين الملاحظات على PDF للدراسة",
+      "metaTitle": "كيفية إضافة تعليقات إلى PDF للدراسة",
+      "metaDescription": "دوّن ملاحظات الدراسة على PDF بقراءتين وألوان ثابتة وكلماتك الخاصة. مجانًا وبخصوصية في المتصفح، بلا تسجيل.",
+      "keyword": "كيفية تدوين الملاحظات على PDF للدراسة",
+      "secondaryKeywords": [
+        "تمييز النص في PDF",
+        "أفضل تطبيق للتعليق على PDF للطلاب",
+        "ملاحظات PDF على iPad",
+        "تصدير تمييزات PDF",
+        "ملاحظات هامشية في PDF"
+      ],
+      "answer": "اقرأ ملف PDF مرة دون وضع علامات. في القراءة الثانية، استخدم رمز ألوان ثابتًا واكتب ملاحظة في الهامش بكلماتك بجوار كل تمييز. استخدم Zotero أو Adobe Acrobat Reader على الكمبيوتر، وGoodNotes أو Notability على iPad. صدّر ملاحظاتك قبل المراجعة، وقم بتسطيح الملف إذا أردت مشاركته.",
+      "ctaLabel": "تسطيح PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "من الأخطاء الشائعة عند تدوين الملاحظات على PDF البدء بالتمييز من أول قراءة. ينتهي الأمر بصفحة صفراء تقريبًا، من دون أن توضّح العلامات ما تعلمته. جرّب القراءة على مرحلتين، واتبع قاعدة بسيطة: أضف ملاحظة بكلماتك إلى جانب كل تمييز."
+        },
+        {
+          "t": "h2",
+          "x": "التمييز وحده لا يكفي"
+        },
+        {
+          "t": "p",
+          "x": "غالبًا ما يكون التمييز وإعادة القراءة وحدهما أقل فاعلية من اختبار الذاكرة وتوزيع المراجعة على فترات. حوّل كل علامة إلى شيء تسترجعه لاحقًا: سؤال أو بطاقة مراجعة أو شرح قصير. إذا لم تستطع إعادة صياغة الفكرة، فلن يجعلها تلوينها أوضح."
+        },
+        {
+          "t": "h2",
+          "x": "طريقة القراءتين لتدوين الملاحظات على PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "القراءة الأولى: لا تضع علامات",
+              "x": "خصص خمس أو عشر دقائق للعنوان والملخص والعناوين الفرعية والأشكال والخاتمة والمراجع. قرر ما إذا كان المقال يستحق قراءة متأنية."
+            },
+            {
+              "h": "القراءة الثانية: قلل التمييز",
+              "x": "اكتفِ تقريبًا بجملة واحدة من كل عشر جمل. إذا زاد اللون على النص، فأنت تميّز الموضوع بدلًا من الحجة."
+            },
+            {
+              "h": "اكتب ملاحظات هامشية بكلماتك",
+              "x": "بجوار كل تمييز، اكتب معناه أو أهميته أو السؤال الذي يطرحه. تساعدك الملاحظة القصيرة على تذكر الفكرة دون إعادة قراءة الفقرة كاملة."
+            },
+            {
+              "h": "حوّل العلامات إلى تدريب",
+              "x": "عند الانتهاء، صدّر التمييزات أو أنشئ أسئلة وبطاقات. راجعها في أيام مختلفة لتختبر ما تتذكره دون النظر إلى النص."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "اختر رمز ألوان والتزم به"
+        },
+        {
+          "t": "p",
+          "x": "اختر رمزًا سهل التذكر: الأصفر للفكرة الأساسية، والأزرق للأدلة أو البيانات، والأخضر للتعريفات، والوردي للأسئلة أو الشكوك. اكتب المفتاح في الصفحة الأولى. لا تغيّر معنى الألوان بين المواد؛ فالثبات يجعل مراجعة العلامات أسهل."
+        },
+        {
+          "t": "h2",
+          "x": "ما التطبيقات التي يمكنك استخدامها"
+        },
+        {
+          "t": "p",
+          "x": "على Windows أو Mac، يتيح Zotero وAdobe Acrobat Reader إضافة التعليقات. يعمل Apple Preview على macOS، ويمكن لـMicrosoft Edge تمييز ملفات PDF أيضًا. على iPad، يدعم GoodNotes وNotability الكتابة باستخدام Apple Pencil. استورد الملف إلى تطبيق واحد وأنشئ نسخة احتياطية؛ فقد تضيع الملاحظات المحفوظة داخل تطبيق عند استعادة الجهاز. إذا كان الملف ممسوحًا بلا نص قابل للتحديد، شغّل [OCR لملف PDF ممسوح](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "قبل تسليم الملف أو مشاركته"
+        },
+        {
+          "t": "p",
+          "x": "تكون التمييزات والتعليقات عادةً عناصر قابلة للتحرير. يمكن لمتلقي الملف تحريكها أو حذفها أو قراءة تعليقات خاصة. قبل إرسال ملف مشروح، استخدم [تسطيح PDF](/tools/flatten-pdf) لجعل العلامات جزءًا من الصفحة. احتفظ بنسخة قابلة للتحرير لنفسك."
+        },
+        {
+          "t": "cta",
+          "tool": "flatten-pdf",
+          "x": "تكون التمييزات والتعليقات عادةً عناصر قابلة للتحرير."
+        },
+        {
+          "t": "h2",
+          "x": "متى يظل الورق خيارًا أفضل"
+        },
+        {
+          "t": "p",
+          "x": "يفيد الورق في الرياضيات المكثفة والرسوم والفصول النظرية الطويلة التي تحتاج إلى التفكير بالقلم. دوّن رقميًا على النصوص التي ستبحث فيها لاحقًا، واطبع ما تريد دراسته يدويًا. اقرأ [كيفية طباعة المقالات الأكاديمية](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "لماذا لا أستطيع تمييز النص في PDF؟",
+          "a": "غالبًا ما يكون الملف صورة ممسوحة بلا طبقة نص، فلا توجد أحرف لتحديدها. شغّل OCR للتعرف على النص ثم حاول مجددًا. وقد يمنع ملف محمي بكلمة مرور أو بأذونات خاصة إضافة التعليقات."
+        },
+        {
+          "q": "كيف أصدّر كل التمييزات من PDF؟",
+          "a": "في Zotero، انقر بزر الفأرة الأيمن على العنصر واختر «إضافة ملاحظة من التعليقات التوضيحية». وفي Acrobat Reader يمكن تلخيص التعليقات من خيارات الطباعة. وفي Preview افتح قائمة التمييزات والملاحظات. تختلف الخطوات حسب التطبيق."
+        },
+        {
+          "q": "هل تبقى التعليقات في الملف عند مشاركته؟",
+          "a": "نعم، وغالبًا ما تبقى قابلة للتحرير، لذا يستطيع الآخرون تحريكها أو حذفها. قم بتسطيح الملف قبل إرساله إذا أردت تثبيت العلامات على الصفحة."
+        },
+        {
+          "q": "هل الأفضل تدوين الملاحظات على الورق أم الجهاز اللوحي؟",
+          "a": "يساعد الورق على الرسم والتفكير خلال القراءة الطويلة. أما الجهاز اللوحي فيسهّل البحث والاقتباس لاحقًا لأن التمييزات تبقى مرتبطة بالنص. اختر ما يناسب طريقة دراستك للمادة."
+        },
+        {
+          "q": "ماذا أفعل إذا بالغت في التمييز؟",
+          "a": "احتفظ بالعلامات التي تدعم الحجة فقط، واكتب جملة من صياغتك بجوار كل واحدة. ثم أنشئ أسئلة للمراجعة. إذا كانت الصفحة كلها تقريبًا مميزة، فأعد قراءتها واختر ما لا تستطيع استرجاعه من الذاكرة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "পড়াশোনার জন্য PDF-এ কীভাবে নোট লিখবেন",
+      "metaTitle": "পড়াশোনার জন্য PDF-এ নোট যোগ করার উপায়",
+      "metaDescription": "দুই ধাপে পড়া, রঙের কোড এবং নিজের ভাষার নোট দিয়ে PDF-এ পড়ুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত এবং সাইনআপ নেই।",
+      "keyword": "পড়াশোনার জন্য PDF-এ নোট কীভাবে লিখবেন",
+      "secondaryKeywords": [
+        "PDF-এ লেখা হাইলাইট",
+        "শিক্ষার্থীদের PDF নোট অ্যাপ",
+        "iPad-এ PDF নোট",
+        "PDF হাইলাইট এক্সপোর্ট",
+        "PDF-এর পাশে নোট"
+      ],
+      "answer": "প্রথমবার PDF পড়ুন, কিন্তু কোনো দাগ দেবেন না। দ্বিতীয়বার নির্দিষ্ট রঙের কোড ব্যবহার করুন এবং প্রতিটি হাইলাইটের পাশে নিজের ভাষায় মার্জিন নোট লিখুন। কম্পিউটারে Zotero বা Adobe Acrobat Reader, iPad-এ GoodNotes বা Notability ব্যবহার করুন। রিভিশনের আগে নোট এক্সপোর্ট করুন এবং শেয়ার করার আগে PDF ফ্ল্যাটেন করুন।",
+      "ctaLabel": "PDF ফ্ল্যাটেন করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF-এ নোট নেওয়ার সময় সাধারণ ভুল হলো প্রথমবার পড়তেই হাইলাইট করা। শেষে প্রায় পুরো পৃষ্ঠা হলুদ হয়ে যায়, অথচ দাগগুলো কী শিখেছেন তা বলে না। দুই ধাপে পড়ুন এবং সহজ নিয়ম রাখুন: প্রতিটি হাইলাইটের পাশে নিজের ভাষায় একটি নোট লিখবেন।"
+        },
+        {
+          "t": "h2",
+          "x": "শুধু হাইলাইট করলেই যথেষ্ট নয়"
+        },
+        {
+          "t": "p",
+          "x": "শুধু হাইলাইট ও আবার পড়ার চেয়ে নিজেকে প্রশ্ন করা এবং বিরতি দিয়ে অনুশীলন করা বেশি কাজে আসতে পারে। প্রতিটি দাগকে পরে মনে করার মতো কিছুতে বদলান: প্রশ্ন, ফ্ল্যাশকার্ড বা ছোট ব্যাখ্যা। ধারণাটি নিজের ভাষায় বলতে না পারলে রং লাগালেই তা স্পষ্ট হবে না।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF নোটের জন্য দুই ধাপে পড়ার পদ্ধতি"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "প্রথম ধাপ: কিছু চিহ্ন দেবেন না",
+              "x": "পাঁচ থেকে দশ মিনিট শিরোনাম, সারাংশ, অংশের শিরোনাম, ছবি, উপসংহার ও সূত্র দেখুন। নিবন্ধটি মনোযোগ দিয়ে পড়ার যোগ্য কি না ঠিক করুন।"
+            },
+            {
+              "h": "দ্বিতীয় ধাপ: অল্প হাইলাইট করুন",
+              "x": "প্রায় প্রতি দশটি বাক্যে একটি বাক্য পর্যন্ত সীমা রাখুন। টেক্সটের চেয়ে রং বেশি হলে আপনি যুক্তির বদলে বিষয়বস্তু চিহ্নিত করছেন।"
+            },
+            {
+              "h": "নিজের ভাষায় পাশে নোট লিখুন",
+              "x": "প্রতিটি হাইলাইটের পাশে লিখুন এর মানে কী, কেন গুরুত্বপূর্ণ বা কী প্রশ্ন তৈরি হয়েছে। ছোট নোটটি পুরো অনুচ্ছেদ না পড়েও ধারণাটি মনে করাবে।"
+            },
+            {
+              "h": "দাগগুলোকে অনুশীলনে বদলান",
+              "x": "শেষে হাইলাইট এক্সপোর্ট করুন অথবা প্রশ্ন ও ফ্ল্যাশকার্ড তৈরি করুন। আলাদা দিনে আবার দেখুন, লেখা না দেখে কী মনে আছে তা যাচাই করুন।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "রঙের কোড ঠিক করে একই রাখুন"
+        },
+        {
+          "t": "p",
+          "x": "সহজ রঙের কোড ঠিক করুন: মূল ধারণায় হলুদ, প্রমাণ বা ডেটায় নীল, সংজ্ঞায় সবুজ এবং প্রশ্ন বা সন্দেহে গোলাপি। প্রথম পাতায় কোডটি লিখুন। বিষয় বদলালেও রঙের অর্থ বদলাবেন না; একই নিয়মে পরে রিভিশন সহজ হয়।"
+        },
+        {
+          "t": "h2",
+          "x": "কোন অ্যাপ ব্যবহার করবেন"
+        },
+        {
+          "t": "p",
+          "x": "Windows বা Mac-এ Zotero ও Adobe Acrobat Reader দিয়ে মন্তব্য যোগ করা যায়। macOS-এ Apple Preview এবং Microsoft Edge-ও PDF হাইলাইট করতে পারে। iPad-এ GoodNotes ও Notability-তে Apple Pencil দিয়ে লেখা যায়। PDF একটি অ্যাপে রাখুন এবং ব্যাকআপ নিন; শুধু অ্যাপের মধ্যে থাকা নোট ডিভাইস রিস্টোর করলে হারিয়ে যেতে পারে। স্ক্যানে বেছে নেওয়ার মতো লেখা না থাকলে আগে [স্ক্যান PDF-এ OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) চালান।"
+        },
+        {
+          "t": "h2",
+          "x": "জমা বা শেয়ার করার আগে"
+        },
+        {
+          "t": "p",
+          "x": "হাইলাইট ও মন্তব্য সাধারণত সম্পাদনাযোগ্য অবজেক্ট। ফাইলের প্রাপক এগুলো সরাতে, মুছতে বা ব্যক্তিগত মন্তব্য পড়তে পারেন। চিহ্নিত PDF পাঠানোর আগে [PDF ফ্ল্যাটেন](/tools/flatten-pdf) করুন, তাহলে দাগ পৃষ্ঠার অংশ হবে। নিজের জন্য সম্পাদনাযোগ্য কপি আলাদা রাখুন।"
+        },
+        {
+          "t": "cta",
+          "tool": "flatten-pdf",
+          "x": "হাইলাইট ও মন্তব্য সাধারণত সম্পাদনাযোগ্য অবজেক্ট। ফাইলের প্রাপক এগুলো সরাতে, মুছতে বা ব্যক্তিগত মন্তব্য পড়তে পারেন। চিহ্নিত PDF পাঠানোর আগে [PDF ফ্ল্যাটেন](/tools/flatten-pdf) করুন, তাহলে দাগ পৃষ্ঠার অংশ হবে। নিজের জন্য সম্পাদনাযোগ্য কপি আলাদা রাখুন।."
+        },
+        {
+          "t": "h2",
+          "x": "কখন কাগজে পড়া ভালো"
+        },
+        {
+          "t": "p",
+          "x": "জটিল গণিত, পাশাপাশি ছবি আঁকা এবং দীর্ঘ তত্ত্বের অধ্যায়ে কাগজ ও পেনসিল কাজে লাগে। পরে খুঁজতে হবে এমন লেখা ডিজিটালভাবে চিহ্নিত করুন; হাতে ভেবে পড়তে চাইলে প্রিন্ট করুন। [একাডেমিক নিবন্ধ প্রিন্টের উপায়](/blog/students/print-journal-articles) দেখুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF-এ লেখা হাইলাইট করতে পারছি না কেন?",
+          "a": "ফাইলটি সম্ভবত শুধু স্ক্যান, এতে টেক্সট লেয়ার নেই বলে বেছে নেওয়ার অক্ষর নেই। লেখা শনাক্ত করতে OCR চালিয়ে আবার চেষ্টা করুন। পাসওয়ার্ড বা অনুমতি-সুরক্ষিত PDF-ও মন্তব্য আটকাতে পারে।"
+        },
+        {
+          "q": "PDF-এর সব হাইলাইট কীভাবে এক্সপোর্ট করব?",
+          "a": "Zotero-তে আইটেমে ডান ক্লিক করে “Add Note from Annotations” বেছে নিন। Acrobat Reader-এ প্রিন্ট থেকে মন্তব্যের সারাংশ পাওয়া যায়। Preview-তে Highlights and Notes সাইডবার খুলুন। অ্যাপভেদে পদ্ধতি বদলায়।"
+        },
+        {
+          "q": "PDF শেয়ার করলে নোটগুলো কি থেকে যায়?",
+          "a": "হ্যাঁ। সাধারণত সেগুলো সম্পাদনাযোগ্য থাকে, তাই অন্য কেউ সরাতে বা মুছতে পারে। দাগগুলো পৃষ্ঠায় স্থায়ী করতে পাঠানোর আগে PDF ফ্ল্যাটেন করুন।"
+        },
+        {
+          "q": "কাগজে নোট ভালো, নাকি ট্যাবলেটে?",
+          "a": "দীর্ঘক্ষণ পড়া, আঁকা এবং চিন্তার জন্য কাগজ সুবিধাজনক। পরে খোঁজা ও উদ্ধৃতির জন্য ট্যাবলেট ভালো, কারণ হাইলাইট মূল লেখার সঙ্গে থাকে। কীভাবে পড়বেন তা দেখে বেছে নিন।"
+        },
+        {
+          "q": "অনেক বেশি হাইলাইট হলে কী করব?",
+          "a": "যুক্তির জন্য দরকারি ধারণাগুলোই রাখুন এবং প্রতিটির পাশে নিজের একটি বাক্য লিখুন। এরপর রিভিশনের প্রশ্ন তৈরি করুন। প্রায় পুরো পৃষ্ঠা রঙিন হলে আবার পড়ুন এবং স্মৃতি থেকে বলতে পারবেন না এমন অংশটুকুই রাখুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách ghi chú PDF để học hiệu quả",
+      "metaTitle": "Cách ghi chú PDF để học",
+      "metaDescription": "Ghi chú PDF để học bằng hai lượt đọc, mã màu và lời văn của bạn. Miễn phí, riêng tư trên trình duyệt, không cần đăng ký.",
+      "keyword": "cách ghi chú PDF để học",
+      "secondaryKeywords": [
+        "tô sáng văn bản PDF",
+        "ứng dụng ghi chú PDF cho sinh viên",
+        "ghi chú PDF trên iPad",
+        "xuất phần tô sáng PDF",
+        "ghi chú lề PDF"
+      ],
+      "answer": "Đọc PDF một lượt mà chưa đánh dấu. Ở lượt thứ hai, dùng mã màu cố định và viết ghi chú lề bằng lời của bạn bên cạnh mỗi phần tô sáng. Trên máy tính, dùng Zotero hoặc Adobe Acrobat Reader; trên iPad, dùng GoodNotes hoặc Notability. Xuất ghi chú trước khi ôn tập và làm phẳng PDF nếu bạn định chia sẻ.",
+      "ctaLabel": "Làm phẳng PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Lỗi thường gặp khi ghi chú PDF là cầm bút tô sáng ngay từ lần đọc đầu. Cuối cùng, gần như cả trang đều màu vàng nhưng các dấu đó không cho biết bạn đã học gì. Hãy đọc hai lượt và theo một quy tắc đơn giản: mỗi phần tô sáng cần có ghi chú bằng lời của chính bạn."
+        },
+        {
+          "t": "h2",
+          "x": "Chỉ tô sáng thường không hiệu quả"
+        },
+        {
+          "t": "p",
+          "x": "Chỉ tô sáng và đọc lại thường kém hiệu quả hơn tự kiểm tra và ôn tập cách quãng. Hãy biến mỗi dấu thành thứ có thể nhớ lại sau này: một câu hỏi, thẻ học hoặc lời giải thích ngắn. Nếu không thể diễn đạt lại ý đó, tô màu cũng không giúp bạn hiểu rõ hơn."
+        },
+        {
+          "t": "h2",
+          "x": "Phương pháp hai lượt đọc để ghi chú PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Lượt một: chưa đánh dấu gì",
+              "x": "Dành năm đến mười phút xem tiêu đề, tóm tắt, các mục, hình, kết luận và tài liệu tham khảo. Quyết định bài viết có đáng đọc kỹ hay không."
+            },
+            {
+              "h": "Lượt hai: tô sáng có chọn lọc",
+              "x": "Giới hạn khoảng một câu trong mười câu. Nếu phần tô màu nhiều hơn phần chữ, có thể bạn đang đánh dấu chủ đề thay vì lập luận."
+            },
+            {
+              "h": "Viết ghi chú lề bằng lời của bạn",
+              "x": "Bên cạnh mỗi phần tô sáng, ghi ý nghĩa, tầm quan trọng hoặc câu hỏi mà nó gợi ra. Ghi chú ngắn nên giúp bạn nhớ ý mà không cần đọc lại cả đoạn."
+            },
+            {
+              "h": "Biến dấu ghi chú thành bài luyện tập",
+              "x": "Khi đọc xong, xuất phần tô sáng hoặc tạo câu hỏi và thẻ học. Ôn vào các ngày khác nhau để kiểm tra bạn nhớ gì khi không nhìn văn bản."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Chọn mã màu và dùng nhất quán"
+        },
+        {
+          "t": "p",
+          "x": "Chọn mã màu dễ nhớ: vàng cho ý chính, xanh dương cho bằng chứng hoặc dữ liệu, xanh lá cho định nghĩa, hồng cho câu hỏi hoặc điểm chưa rõ. Ghi chú giải ở trang đầu. Đừng đổi nghĩa màu giữa các môn; dùng nhất quán giúp ôn tập nhanh hơn."
+        },
+        {
+          "t": "h2",
+          "x": "Bạn có thể dùng ứng dụng nào"
+        },
+        {
+          "t": "p",
+          "x": "Trên Windows hoặc Mac, Zotero và Adobe Acrobat Reader cho phép thêm nhận xét. Apple Preview dùng được trên macOS; Microsoft Edge cũng tô sáng được PDF. Trên iPad, GoodNotes và Notability hỗ trợ Apple Pencil. Nhập PDF vào một ứng dụng và sao lưu; ghi chú chỉ lưu trong một ứng dụng có thể mất khi khôi phục thiết bị. Nếu bản quét không có văn bản để chọn, hãy chạy [OCR cho PDF quét](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "Trước khi nộp hoặc chia sẻ tệp"
+        },
+        {
+          "t": "p",
+          "x": "Phần tô sáng và nhận xét thường là đối tượng có thể chỉnh sửa. Người nhận tệp có thể di chuyển, xóa chúng hoặc đọc nhận xét riêng tư. Trước khi gửi PDF đã ghi chú, hãy [làm phẳng PDF](/tools/flatten-pdf) để dấu trở thành một phần của trang. Giữ riêng bản có thể chỉnh sửa cho bạn."
+        },
+        {
+          "t": "cta",
+          "tool": "flatten-pdf",
+          "x": "Phần tô sáng và nhận xét thường là đối tượng có thể chỉnh sửa."
+        },
+        {
+          "t": "h2",
+          "x": "Khi nào giấy vẫn phù hợp hơn"
+        },
+        {
+          "t": "p",
+          "x": "Giấy vẫn hữu ích với toán học dày đặc, sơ đồ cần phác thảo và chương lý thuyết dài cần suy nghĩ bằng bút. Ghi chú số cho tài liệu bạn sẽ cần tìm lại và in những gì muốn xử lý bằng tay. Xem cách [in bài báo học thuật](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Vì sao tôi không thể tô sáng văn bản trong PDF?",
+          "a": "Có thể tệp chỉ là bản quét không có lớp văn bản nên không có ký tự để chọn. Chạy OCR để nhận dạng chữ rồi thử lại. PDF khóa bằng mật khẩu hoặc quyền hạn cũng có thể chặn việc bình luận."
+        },
+        {
+          "q": "Làm sao xuất tất cả phần tô sáng trong PDF?",
+          "a": "Trong Zotero, nhấp chuột phải vào mục và chọn “Add Note from Annotations”. Trong Acrobat Reader, có thể tóm tắt nhận xét qua tùy chọn in. Trong Preview, mở thanh bên Highlights and Notes. Cách làm tùy ứng dụng."
+        },
+        {
+          "q": "Ghi chú có còn khi tôi chia sẻ PDF không?",
+          "a": "Có. Thông thường chúng vẫn có thể chỉnh sửa nên người khác có thể di chuyển hoặc xóa. Hãy làm phẳng tệp trước khi gửi nếu muốn cố định dấu trên trang."
+        },
+        {
+          "q": "Nên ghi chú trên giấy hay máy tính bảng?",
+          "a": "Giấy phù hợp để vẽ và suy nghĩ trong một buổi đọc dài. Máy tính bảng giúp tìm kiếm và trích dẫn sau này vì phần tô sáng gắn với văn bản. Chọn theo cách bạn sẽ học nội dung đó."
+        },
+        {
+          "q": "Tôi nên làm gì nếu tô sáng quá nhiều?",
+          "a": "Giữ lại các ý hỗ trợ lập luận và viết một câu của bạn bên cạnh mỗi ý. Sau đó tạo câu hỏi ôn tập. Nếu gần như cả trang đều được tô, hãy đọc lại và chỉ chọn phần bạn không thể nhớ lại."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何在 PDF 上做学习笔记",
+      "metaTitle": "如何在 PDF 上做学习笔记",
+      "metaDescription": "在浏览器中免费、私密地给 PDF 做学习笔记：两轮阅读、固定颜色标记和自己的注释，无需注册或上传。",
+      "keyword": "如何在 PDF 上做学习笔记",
+      "secondaryKeywords": [
+        "PDF 文本高亮",
+        "学生 PDF 批注应用",
+        "iPad PDF 笔记",
+        "导出 PDF 高亮",
+        "PDF 页边批注"
+      ],
+      "answer": "先完整读一遍 PDF，不做任何标记。第二遍阅读时使用固定的颜色规则，并在每处高亮旁用自己的话写页边注释。电脑上可用 Zotero 或 Adobe Acrobat Reader，iPad 上可用 GoodNotes 或 Notability。复习前导出笔记；分享前可将 PDF 扁平化。",
+      "ctaLabel": "扁平化 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "做 PDF 批注时常见的问题，是第一次阅读就开始高亮。结果几乎整页都变黄，却看不出你学到了什么。试试分两遍阅读，并遵守一个简单规则：每处高亮旁都要有一条用自己话写的注释。"
+        },
+        {
+          "t": "h2",
+          "x": "单靠高亮帮助有限"
+        },
+        {
+          "t": "p",
+          "x": "单纯高亮和重读通常不如自我测试和间隔复习有效。把每个标记变成之后能回忆的内容：一个问题、一张学习卡片或一段简短解释。如果不能用自己的话复述观点，涂上颜色也不会让它更清楚。"
+        },
+        {
+          "t": "h2",
+          "x": "用两轮阅读法给 PDF 做笔记"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "第一遍：先不做标记",
+              "x": "用五到十分钟浏览标题、摘要、章节标题、图表、结论和参考文献。判断这篇文章是否值得仔细阅读。"
+            },
+            {
+              "h": "第二遍：少量高亮",
+              "x": "大约每十句话只标记一句。如果颜色比文字还多，你可能标记的是主题，而不是论点。"
+            },
+            {
+              "h": "用自己的话写页边注释",
+              "x": "在每处高亮旁写下它的含义、重要性或引发的问题。简短注释应能帮你记起观点，而不用重读整段。"
+            },
+            {
+              "h": "把标记变成练习",
+              "x": "读完后导出高亮，或据此创建问题和学习卡片。隔几天复习一次，检查不看原文时还能记住什么。"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "固定颜色规则并保持一致"
+        },
+        {
+          "t": "p",
+          "x": "选择容易记住的颜色规则：黄色表示主要观点，蓝色表示证据或数据，绿色表示定义，粉色表示问题或疑点。把规则写在第一页。不同课程不要改变颜色含义；保持一致更容易复习。"
+        },
+        {
+          "t": "h2",
+          "x": "可以使用哪些应用"
+        },
+        {
+          "t": "p",
+          "x": "Windows 或 Mac 上可用 Zotero 和 Adobe Acrobat Reader 添加批注。macOS 的 Apple Preview 和 Microsoft Edge 也能高亮 PDF。iPad 上的 GoodNotes 和 Notability 支持 Apple Pencil。将 PDF 导入一个固定应用并做好备份；只存在应用内的笔记可能在设备恢复时丢失。如果扫描件没有可选择的文字，先运行[扫描 PDF OCR](/blog/ocr/how-to-ocr-a-scanned-pdf)。"
+        },
+        {
+          "t": "h2",
+          "x": "提交或分享文件前"
+        },
+        {
+          "t": "p",
+          "x": "高亮和批注通常是可编辑对象。收到文件的人可以移动或删除它们，也可能看到私人评论。发送已批注的 PDF 前，使用[扁平化 PDF](/tools/flatten-pdf)，让标记成为页面内容。自己另存一份可编辑版本。"
+        },
+        {
+          "t": "cta",
+          "tool": "flatten-pdf",
+          "x": "高亮和批注通常是可编辑对象。收到文件的人可以移动或删除它们，也可能看到私人评论。发送已批注的 PDF 前，使用[扁平化 PDF](/tools/flatten-pdf)，让标记成为页面内容。自己另存一份可编辑版本。."
+        },
+        {
+          "t": "h2",
+          "x": "哪些情况下纸质阅读更合适"
+        },
+        {
+          "t": "p",
+          "x": "遇到复杂数学、需要边读边画的内容，以及较长的理论章节时，纸笔仍然很好用。需要日后搜索的内容可以数字批注；需要手写思考的部分可以打印。查看[如何打印学术文章](/blog/students/print-journal-articles)。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "为什么我无法高亮 PDF 里的文字？",
+          "a": "文件可能只是扫描图像，没有文字层，因此没有字符可供选择。运行 OCR 识别文字后再试。受密码或权限保护的 PDF 也可能禁止批注。"
+        },
+        {
+          "q": "如何导出 PDF 中的所有高亮？",
+          "a": "在 Zotero 中右键点击条目并选择“Add Note from Annotations”。在 Acrobat Reader 中，可通过打印选项汇总批注。在 Preview 中打开 Highlights and Notes 侧栏。具体步骤取决于应用。"
+        },
+        {
+          "q": "分享 PDF 后批注还会保留吗？",
+          "a": "会。批注通常仍可编辑，因此别人可以移动或删除。若要固定页面上的标记，请在发送前扁平化 PDF。"
+        },
+        {
+          "q": "在纸上还是平板上做笔记更好？",
+          "a": "纸张适合长时间阅读时绘图和思考。平板便于日后搜索和引用，因为高亮仍与文字关联。根据材料的学习方式选择。"
+        },
+        {
+          "q": "如果高亮太多怎么办？",
+          "a": "只保留支撑论点的内容，并在每处旁边写一句自己的解释，然后创建复习问题。如果整页几乎都被标记，请重新阅读，只留下无法凭记忆还原的部分。"
+        }
+      ]
+    }
+  }
+}
