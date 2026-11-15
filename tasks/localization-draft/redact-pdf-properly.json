@@ -1,0 +1,1400 @@
+{
+  "topic": "redact-pdf-properly",
+  "sourceCluster": "privacy",
+  "tool": "redact-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo redactar un PDF para que el texto desaparezca de verdad",
+      "metaTitle": "Cómo redactar un PDF de forma permanente",
+      "metaDescription": "Elimina texto sensible de un PDF, comprueba que no se pueda extraer y limpia los metadatos. Gratis, privado en el navegador y sin registro.",
+      "keyword": "cómo redactar un PDF",
+      "secondaryKeywords": [
+        "redactar PDF correctamente",
+        "redacción de metadatos PDF",
+        "caja negra PDF no redacta",
+        "eliminar texto PDF permanentemente",
+        "verificar redacción PDF",
+        "fallo de redacción PDF"
+      ],
+      "answer": "Para redactar un PDF, el contenido sensible debe eliminarse del archivo, no solo taparse. Cubre las zonas con negro opaco y rasteriza cada página como imagen para reconstruir el PDF; así se destruye la capa de texto. Comprueba el resultado intentando seleccionar, buscar y extraer el texto. PrintxPDF Redact PDF realiza la redacción en la pestaña del navegador.",
+      "ctaLabel": "Redactar PDF",
+      "body": [
+        {
+          "t": "warn",
+          "x": "Dibujar un rectángulo negro sobre el texto no lo elimina. Las letras siguen debajo, dentro de las instrucciones de dibujo de la página. Cualquiera puede seleccionar la zona, copiar y pegar las palabras ocultas. Muchos fallos de redacción en documentos legales, públicos y empresariales se deben a este error."
+        },
+        {
+          "t": "p",
+          "x": "Un PDF es una lista ordenada de instrucciones de dibujo. Primero puede indicar “coloca la palabra en estas coordenadas” y después “pinta un rectángulo negro encima”. La segunda instrucción oculta la primera en pantalla, pero no la borra del archivo."
+        },
+        {
+          "t": "h2",
+          "x": "Métodos que parecen redacción, pero no lo son"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Método",
+            "¿Elimina el texto?",
+            "Cómo puede recuperarse"
+          ],
+          "rows": [
+            [
+              "Dibujar un rectángulo negro",
+              "No",
+              "Seleccionar, copiar y pegar"
+            ],
+            [
+              "Resaltador negro o texto blanco",
+              "No",
+              "El texto sigue seleccionable"
+            ],
+            [
+              "Añadir una caja al original o recortar",
+              "No",
+              "Exportar o restablecer el recorte"
+            ],
+            [
+              "Desenfocar o pixelar",
+              "Parcial e inseguro",
+              "Probar y comparar términos posibles"
+            ],
+            [
+              "Cubrir y rasterizar toda la página",
+              "Sí",
+              "No queda capa de texto"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Una forma real de redactar elimina el contenido sensible de modo que no se pueda seleccionar, buscar ni extraer. Los rectángulos negros, el resaltador negro, cambiar el texto a blanco, añadir un cuadro al documento de origen y recortar la página solo ocultan el contenido; el recorte se puede restablecer y mostrarlo de nuevo. El desenfoque y la pixelación son poco fiables: en cadenas cortas y predecibles, alguien puede probar candidatos y reconstruir el texto. Borrar el texto puede funcionar, pero revisa el historial de deshacer y los objetos guardados de forma incremental. Cubrir con negro opaco y rasterizar toda la página deja una imagen sin capa de texto."
+        },
+        {
+          "t": "h2",
+          "x": "La vía directa"
+        },
+        {
+          "t": "p",
+          "x": "La ruta más simple es [Redactar PDF](/tools/redact-pdf): marca las zonas sensibles y el proceso elimina el texto que hay debajo. El archivo se procesa en la pestaña del navegador y no sale de tu equipo. Aunque uses esa herramienta, verifica siempre el archivo final con los pasos que aparecen a continuación."
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "Marca las áreas que deben eliminarse; no solo cubrirse. El archivo no se sube."
+        },
+        {
+          "t": "h2",
+          "x": "Método manual paso a paso"
+        },
+        {
+          "t": "p",
+          "x": "El método manual consigue lo mismo con herramientas generales. Primero hace invisible el área y después destruye toda la capa de texto al convertir cada página en una imagen. Tras reconstruir el PDF, ya no debería existir texto seleccionable debajo de las zonas cubiertas."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Trabaja sobre una copia",
+              "x": "Duplica primero el PDF y conserva el original en otra carpeta. Nunca redactes tu única copia."
+            },
+            {
+              "h": "Cubre cada zona con negro opaco",
+              "x": "Usa rectángulos rellenos y totalmente opacos. Extiéndelos más allá de las letras y cubre descendentes; un fragmento visible puede ayudar a identificar un nombre."
+            },
+            {
+              "h": "Revisa todas las páginas",
+              "x": "Busca nombres en encabezados, pies, índices, marcadores y apéndices. Comprueba cada término en todo el documento."
+            },
+            {
+              "h": "Convierte cada página en imagen",
+              "x": "Usa [PDF a JPG](/tools/pdf-to-jpg) a 200–300 DPI. Por debajo de 200 DPI el resultado puede verse borroso al imprimir; por encima de 300 el archivo crece mucho y suele aportar poca diferencia visible."
+            },
+            {
+              "h": "Reconstruye el PDF",
+              "x": "Usa [JPG a PDF](/tools/jpg-to-pdf) y conserva el orden de las páginas. El PDF nuevo no tiene objetos de texto y las palabras cubiertas ya no se pueden extraer."
+            },
+            {
+              "h": "Elimina los metadatos",
+              "x": "Pasa el nuevo archivo por [Eliminar metadatos](/tools/remove-metadata). El título, el autor o las palabras clave pueden contener los mismos datos que acabas de redactar."
+            },
+            {
+              "h": "Verifica el archivo final",
+              "x": "Haz todas las comprobaciones siguientes antes de compartirlo. Una redacción no verificada no está completa."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Rasteriza las páginas para destruir la capa de texto oculta."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo verificar que funcionó"
+        },
+        {
+          "t": "p",
+          "x": "Haz cuatro comprobaciones sobre el archivo final que vas a enviar. Primero, selecciona todo, copia y pega en un editor de texto: en un archivo rasterizado no debería seleccionarse ni pegarse texto. Segundo, busca con Ctrl+F cada término redactado; cero resultados es lo esperado. Tercero, extrae el texto con `pdftotext redacted.pdf -` y busca los términos eliminados; esto comprueba el contenido sin depender del lector de PDF. Cuarto, compara el tamaño: un PDF rasterizado suele ser mayor que el original. Un tamaño idéntico puede indicar que no se rasterizó, aunque el tamaño por sí solo no demuestra que la redacción sea correcta."
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Selecciona, copia y pega en un editor de texto.",
+            "Busca cada término redactado con Ctrl+F.",
+            "Extrae texto con pdftotext y comprueba que no aparezcan términos sensibles.",
+            "Compara el tamaño del archivo como indicio, no como prueba única."
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# Comprobación: extrae el texto y busca un término que redactaste\npdftotext redacted.pdf - | grep -i \"redacted-term\"\n\n# Lo esperado es que no aparezca ninguna línea."
+        },
+        {
+          "t": "warn",
+          "x": "No omitas la verificación porque una herramienta muestre “redacción aplicada”. Algunas herramientas solo dibujan un cuadro. La comprobación importante es que el texto no se pueda extraer del archivo terminado."
+        },
+        {
+          "t": "h2",
+          "x": "La alternativa de escritorio"
+        },
+        {
+          "t": "p",
+          "x": "Adobe Acrobat Pro ofrece una función real de redacción y es útil para trabajo por volumen. Es un proceso de dos etapas: **Redact → Mark for Redaction** solo marca las zonas; el contenido no se elimina hasta pulsar **Apply**. Si guardas el archivo antes de aplicar, el texto sigue ahí. Después, ejecuta **Sanitize Document** para eliminar metadatos, capas ocultas, adjuntos y scripts."
+        },
+        {
+          "t": "h2",
+          "x": "Qué no cubre la redacción"
+        },
+        {
+          "t": "p",
+          "x": "La redacción visible no elimina automáticamente todos los demás datos. Revisa por separado los metadatos de título, autor y palabras clave con [la guía para quitar metadatos de un PDF](/blog/privacy/remove-metadata-from-pdf). Piensa también en la identificación indirecta: un cargo, una fecha y un departamento pueden identificar a alguien aunque ocultes su nombre. Busca todos los términos en el conjunto completo de archivos para no redactar una página y dejar el mismo dato visible en otra. Los adjuntos no se rasterizan con las páginas; revisa el panel de archivos adjuntos y elimínalos si hace falta."
+        },
+        {
+          "t": "note",
+          "x": "Elimina el archivo intermedio con los cuadros negros al terminar: todavía contiene tanto las marcas como el texto original. Si después ejecutas OCR, el motor solo ve lo que está visible, por lo que las áreas negras no deberían producir texto."
+        },
+        {
+          "t": "p",
+          "x": "Tapar no es borrar; la prueba es que el texto ya no se pueda extraer. Una [marca de agua o un sello](/blog/watermark/watermark-vs-stamp) resuelve otro problema. Consulta también [si las herramientas PDF online son seguras](/blog/privacy/are-online-pdf-tools-safe)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Por qué una caja negra no es una redacción real?",
+          "a": "El rectángulo se dibuja encima, mientras el texto permanece en el contenido de la página. Al seleccionar y copiar la zona, o usar una herramienta de extracción, pueden recuperarse las palabras completas. El texto no se eliminó."
+        },
+        {
+          "q": "¿Cómo elimino texto de un PDF gratis y permanentemente?",
+          "a": "Cubre las zonas sensibles con negro opaco, convierte cada página a imagen a 200–300 DPI y reconstruye el PDF desde esas imágenes. Esto elimina la capa de texto; después verifica que las palabras no se puedan seleccionar, buscar ni extraer."
+        },
+        {
+          "q": "¿Cómo compruebo que la redacción funcionó?",
+          "a": "En el archivo final, selecciona y pega el texto en un editor, busca cada término con Ctrl+F y extrae el texto con pdftotext. Las tres comprobaciones deben dar cero contenido sensible."
+        },
+        {
+          "q": "¿Basta con desenfocar o pixelar un nombre?",
+          "a": "No. Las cadenas cortas y predecibles, como nombres o números, pueden reconstruirse comparando versiones pixeladas de posibles candidatos. Usa negro sólido y opaco y elimina también el contenido de debajo."
+        },
+        {
+          "q": "¿La redacción también elimina metadatos?",
+          "a": "No necesariamente. Título, autor, asunto y palabras clave están fuera del contenido de página y pueden seguir en el PDF. Elimina los metadatos del archivo final y revisa sus propiedades antes de compartirlo."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como redigir um PDF para que o texto desapareça de verdade",
+      "metaTitle": "Como redigir um PDF permanentemente",
+      "metaDescription": "Remova texto sensível de um PDF, confirme que ele não pode ser extraído e limpe os metadados. Grátis, privado no navegador e sem cadastro.",
+      "keyword": "como redigir um PDF",
+      "secondaryKeywords": [
+        "redigir PDF corretamente",
+        "redação de metadados PDF",
+        "caixa preta PDF não redige",
+        "remover texto de PDF permanentemente",
+        "verificar redação PDF",
+        "falha de redação PDF"
+      ],
+      "answer": "Para redigir um PDF, o conteúdo sensível precisa ser removido do arquivo, não apenas coberto. Cubra as áreas com preto opaco e rasterize cada página como imagem para reconstruir o PDF; isso destrói a camada de texto. Confira o resultado tentando selecionar, pesquisar e extrair o texto. O Redact PDF do PrintxPDF faz a redação na aba do navegador.",
+      "ctaLabel": "Redigir PDF",
+      "body": [
+        {
+          "t": "warn",
+          "x": "Desenhar um retângulo preto sobre o texto não o remove. As letras continuam abaixo, nas instruções de desenho da página. Qualquer pessoa pode selecionar a área, copiar e colar as palavras ocultas. Muitas falhas de redação em documentos jurídicos, públicos e empresariais vêm desse erro."
+        },
+        {
+          "t": "p",
+          "x": "Um PDF é uma lista ordenada de instruções de desenho. Primeiro pode dizer “coloque esta palavra nestas coordenadas” e depois “pinte um retângulo preto por cima”. A segunda instrução esconde a primeira na tela, mas não a apaga do arquivo."
+        },
+        {
+          "t": "h2",
+          "x": "Métodos que parecem redação, mas não são"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Método",
+            "Remove o texto?",
+            "Como pode ser recuperado"
+          ],
+          "rows": [
+            [
+              "Desenhar um retângulo preto",
+              "Não",
+              "Selecionar, copiar e colar"
+            ],
+            [
+              "Marca-texto preto ou texto branco",
+              "Não",
+              "O texto continua selecionável"
+            ],
+            [
+              "Adicionar caixa no original ou cortar",
+              "Não",
+              "Exportar ou redefinir o corte"
+            ],
+            [
+              "Desfocar ou pixelar",
+              "Parcial e inseguro",
+              "Testar e comparar palavras possíveis"
+            ],
+            [
+              "Cobrir e rasterizar a página inteira",
+              "Sim",
+              "Não sobra camada de texto"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Uma redação real remove o conteúdo sensível para que ele não possa ser selecionado, pesquisado ou extraído. Retângulo preto, marca-texto preto, trocar a cor do texto para branco, inserir uma caixa no arquivo original e cortar a página apenas escondem o conteúdo; é possível redefinir o corte e mostrá-lo de novo. Desfoque e pixelização não são confiáveis: em sequências curtas e previsíveis, alguém pode testar possibilidades e reconstruir o texto. Apagar o texto pode funcionar, mas confira o histórico de desfazer e objetos salvos de forma incremental. Cobrir com preto opaco e rasterizar a página inteira deixa apenas uma imagem, sem camada de texto."
+        },
+        {
+          "t": "h2",
+          "x": "O caminho direto"
+        },
+        {
+          "t": "p",
+          "x": "O caminho mais simples é [Redigir PDF](/tools/redact-pdf): marque as áreas sensíveis e o processo remove o texto abaixo delas. O arquivo é processado na aba do navegador e não sai do seu computador. Mesmo usando a ferramenta, verifique sempre o arquivo final com os passos a seguir."
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "Marque as áreas que devem ser removidas, não apenas cobertas. O arquivo não é enviado."
+        },
+        {
+          "t": "h2",
+          "x": "Método manual passo a passo"
+        },
+        {
+          "t": "p",
+          "x": "O método manual faz o mesmo com ferramentas genéricas. Primeiro torna a área invisível e depois destrói toda a camada de texto ao transformar cada página em imagem. Após reconstruir o PDF, não deve haver texto selecionável por baixo das áreas cobertas."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Trabalhe em uma cópia",
+              "x": "Duplique o PDF primeiro e mantenha o original em outra pasta. Nunca redija sua única cópia."
+            },
+            {
+              "h": "Cubra cada área com preto opaco",
+              "x": "Use retângulos preenchidos e totalmente opacos. Passe das extremidades das letras e cubra descendentes; um pequeno trecho visível pode ajudar a identificar um nome."
+            },
+            {
+              "h": "Confira todas as páginas",
+              "x": "Procure nomes em cabeçalhos, rodapés, sumários, favoritos e apêndices. Pesquise cada termo em todo o documento."
+            },
+            {
+              "h": "Converta cada página em imagem",
+              "x": "Use [PDF para JPG](/tools/pdf-to-jpg) com 200–300 DPI. Abaixo de 200 DPI, a impressão pode ficar borrada; acima de 300, o arquivo cresce bastante com pouco ganho visual."
+            },
+            {
+              "h": "Reconstrua o PDF",
+              "x": "Use [JPG para PDF](/tools/jpg-to-pdf) e mantenha as páginas na ordem. O novo PDF não terá objetos de texto, e as palavras cobertas não poderão ser extraídas."
+            },
+            {
+              "h": "Remova os metadados",
+              "x": "Passe o arquivo novo pela ferramenta [Remover metadados](/tools/remove-metadata). O título, o autor ou as palavras-chave podem conter os mesmos dados que você acabou de redigir."
+            },
+            {
+              "h": "Verifique o arquivo final",
+              "x": "Faça todas as verificações abaixo antes de compartilhar. Uma redação não verificada não está concluída."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Rasterize as páginas para destruir a camada de texto oculta."
+        },
+        {
+          "t": "h2",
+          "x": "Como verificar se funcionou"
+        },
+        {
+          "t": "p",
+          "x": "Faça quatro verificações no arquivo final que será enviado. Primeiro, selecione tudo, copie e cole em um editor de texto: em um arquivo rasterizado, nenhum texto deve ser selecionável ou colado. Segundo, pesquise cada termo redigido com Ctrl+F; o esperado é zero resultado. Terceiro, extraia o texto com `pdftotext redacted.pdf -` e procure os termos removidos; isso verifica o conteúdo sem depender do leitor de PDF. Quarto, compare o tamanho: um PDF rasterizado costuma ser maior que o original. Tamanho idêntico pode indicar que a rasterização não aconteceu, mas o tamanho sozinho não prova que a redação está correta."
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Selecione, copie e cole em um editor de texto.",
+            "Pesquise cada termo redigido com Ctrl+F.",
+            "Extraia o texto com pdftotext e confira se não há termos sensíveis.",
+            "Compare o tamanho do arquivo como indício, não como prova única."
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# Verificação: extraia o texto e procure um termo que você redigiu\npdftotext redacted.pdf - | grep -i \"redacted-term\"\n\n# O esperado é que nenhuma linha apareça."
+        },
+        {
+          "t": "warn",
+          "x": "Não pule a verificação porque uma ferramenta mostrou “redação aplicada”. Algumas ferramentas apenas desenham uma caixa. A evidência importante é não conseguir extrair o texto do arquivo final."
+        },
+        {
+          "t": "h2",
+          "x": "A alternativa para computador"
+        },
+        {
+          "t": "p",
+          "x": "O Adobe Acrobat Pro tem uma função real de redação e é útil para trabalhos em lote. O processo tem duas etapas: **Redact → Mark for Redaction** apenas marca as áreas; o conteúdo só é removido quando você clica em **Apply**. Se salvar antes de aplicar, o texto continua no arquivo. Depois, execute **Sanitize Document** para remover metadados, camadas ocultas, anexos e scripts."
+        },
+        {
+          "t": "h2",
+          "x": "O que a redação não cobre"
+        },
+        {
+          "t": "p",
+          "x": "A redação visível não apaga automaticamente todos os outros dados. Confira separadamente título, autor e palavras-chave com [o guia para remover metadados de PDF](/blog/privacy/remove-metadata-from-pdf). Pense também na identificação indireta: cargo, data e departamento podem identificar alguém mesmo sem o nome. Pesquise cada termo em todo o conjunto para não ocultar um dado em uma página e deixá-lo visível em outra. Anexos não são rasterizados com as páginas; confira o painel de anexos e remova o que for necessário."
+        },
+        {
+          "t": "note",
+          "x": "Apague o arquivo intermediário com as caixas pretas quando terminar: ele ainda contém tanto as marcações quanto o texto original. Se você executar OCR depois, o mecanismo só verá o conteúdo visível; áreas pretas não devem produzir texto."
+        },
+        {
+          "t": "p",
+          "x": "Cobrir não é remover; a prova é que o texto não pode ser extraído. Uma [marca-d’água ou carimbo](/blog/watermark/watermark-vs-stamp) resolve outro problema. Veja também [ferramentas de PDF online são seguras?](/blog/privacy/are-online-pdf-tools-safe)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Por que uma caixa preta não é uma redação real?",
+          "a": "O retângulo é desenhado por cima, enquanto o texto permanece no conteúdo da página. Selecionar e copiar a área ou usar uma ferramenta de extração pode recuperar as palavras completas. Nada foi removido."
+        },
+        {
+          "q": "Como remover texto de um PDF grátis e permanentemente?",
+          "a": "Cubra as áreas sensíveis com preto opaco, converta cada página em imagem a 200–300 DPI e reconstrua o PDF a partir delas. Isso remove a camada de texto; depois confira se as palavras não podem ser selecionadas, pesquisadas ou extraídas."
+        },
+        {
+          "q": "Como confirmar que a redação funcionou?",
+          "a": "No arquivo final, selecione e cole o texto em um editor, pesquise cada termo com Ctrl+F e extraia o texto com pdftotext. As três verificações devem retornar zero conteúdo sensível."
+        },
+        {
+          "q": "Desfocar ou pixelar um nome é suficiente?",
+          "a": "Não. Sequências curtas e previsíveis, como nomes e números, podem ser reconstruídas comparando versões pixeladas de possibilidades. Use preto sólido e opaco e remova o conteúdo que está embaixo."
+        },
+        {
+          "q": "A redação também remove os metadados?",
+          "a": "Não necessariamente. Título, autor, assunto e palavras-chave ficam fora do conteúdo das páginas e podem continuar no PDF. Remova os metadados do arquivo final e confira as propriedades antes de compartilhar."
+        }
+      ]
+    },
+    "hi": {
+      "title": "PDF से टेक्स्ट को सचमुच हटाने के लिए सही रेडैक्शन कैसे करें",
+      "metaTitle": "PDF को स्थायी रूप से रेडैक्ट कैसे करें",
+      "metaDescription": "PDF से संवेदनशील टेक्स्ट हटाएँ, निकालकर जाँचें कि वह वापस न मिले और मेटाडेटा साफ़ करें। मुफ्त, ब्राउज़र में निजी, साइनअप नहीं।",
+      "keyword": "PDF को सही तरीके से रेडैक्ट कैसे करें",
+      "secondaryKeywords": [
+        "PDF सही तरह रेडैक्ट करें",
+        "PDF मेटाडेटा रेडैक्शन",
+        "PDF ब्लैक बॉक्स रेडैक्शन नहीं",
+        "PDF से टेक्स्ट स्थायी हटाएँ",
+        "PDF रेडैक्शन सत्यापित करें",
+        "PDF रेडैक्शन विफलता"
+      ],
+      "answer": "PDF को रेडैक्ट करने के लिए संवेदनशील सामग्री फ़ाइल से मिटनी चाहिए, सिर्फ ढकनी नहीं। जगह को अपारदर्शी काले रंग से ढकें, फिर हर पेज को इमेज में बदलकर PDF दोबारा बनाएँ; इससे टेक्स्ट लेयर नष्ट होती है। अंतिम फ़ाइल में टेक्स्ट चुनने, खोजने और निकालने की जाँच करें। PrintxPDF Redact PDF ब्राउज़र टैब में काम करता है।",
+      "ctaLabel": "PDF रेडैक्ट करें",
+      "body": [
+        {
+          "t": "warn",
+          "x": "टेक्स्ट के ऊपर काला आयत बनाने से टेक्स्ट हटता नहीं। अक्षर बॉक्स के नीचे पेज की ड्रॉइंग निर्देश सूची में रहते हैं। कोई भी उस जगह को चुनकर कॉपी-पेस्ट कर सकता है। कानूनी, सरकारी और कारोबारी दस्तावेज़ों में रेडैक्शन की कई विफलताएँ इसी गलती से होती हैं।"
+        },
+        {
+          "t": "p",
+          "x": "PDF ड्रॉइंग निर्देशों की क्रमबद्ध सूची है। एक निर्देश कह सकता है “इस शब्द को इस जगह लिखो” और बाद का निर्देश कह सकता है “इसके ऊपर काला आयत भरो”। दूसरा निर्देश स्क्रीन पर पहले को ढकता है, लेकिन फ़ाइल से मिटाता नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "जो तरीके रेडैक्शन जैसे दिखते हैं, पर हैं नहीं"
+        },
+        {
+          "t": "table",
+          "head": [
+            "तरीका",
+            "टेक्स्ट हटता है?",
+            "कैसे वापस मिल सकता है"
+          ],
+          "rows": [
+            [
+              "काला आयत बनाना",
+              "नहीं",
+              "चुनकर कॉपी-पेस्ट करना"
+            ],
+            [
+              "काला हाइलाइटर या सफेद टेक्स्ट",
+              "नहीं",
+              "टेक्स्ट अभी भी चुना जा सकता है"
+            ],
+            [
+              "मूल फ़ाइल में बॉक्स या क्रॉप",
+              "नहीं",
+              "निर्यात करें या क्रॉप रीसेट करें"
+            ],
+            [
+              "ब्लर या पिक्सेलेट",
+              "आंशिक, असुरक्षित",
+              "संभावित शब्द आज़माकर मिलाना"
+            ],
+            [
+              "ढककर पूरा पेज रास्टराइज़ करना",
+              "हाँ",
+              "टेक्स्ट लेयर नहीं रहती"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "असली रेडैक्शन संवेदनशील सामग्री को इस तरह हटाता है कि उसे चुना, खोजा या निकाला न जा सके। काला आयत, काला हाइलाइटर, टेक्स्ट सफेद करना, स्रोत दस्तावेज़ में बॉक्स जोड़ना और पेज क्रॉप करना सिर्फ छिपाते हैं; क्रॉप रीसेट कर सामग्री फिर दिख सकती है। ब्लर और पिक्सेलेशन भरोसेमंद नहीं: छोटे, अनुमानित नाम या नंबर के लिए संभावित विकल्पों को पिक्सेलेट करके मिलाया जा सकता है। टेक्स्ट मिटाना काम कर सकता है, लेकिन Undo इतिहास और जोड़े गए पुराने ऑब्जेक्ट फ़ाइल में रह सकते हैं। अपारदर्शी काले से ढककर पूरा पेज इमेज बनाने पर टेक्स्ट लेयर नहीं रहती।"
+        },
+        {
+          "t": "h2",
+          "x": "सीधा तरीका"
+        },
+        {
+          "t": "p",
+          "x": "सबसे सीधा तरीका [PDF रेडैक्ट करें](/tools/redact-pdf) है: संवेदनशील जगहें चिन्हित करें और टूल नीचे का टेक्स्ट हटाता है। फ़ाइल ब्राउज़र टैब में प्रोसेस होती है और आपके कंप्यूटर से बाहर नहीं जाती। फिर भी अंतिम फ़ाइल को नीचे दिए तरीकों से जाँचें।"
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "हटाए जाने वाले हिस्से चुनें, सिर्फ ढकें नहीं। फ़ाइल अपलोड नहीं होती।"
+        },
+        {
+          "t": "h2",
+          "x": "मैनुअल तरीका, चरण-दर-चरण"
+        },
+        {
+          "t": "p",
+          "x": "मैनुअल तरीका सामान्य टूल से यही करता है। पहले संवेदनशील जगह छिपाएँ, फिर हर पेज को उसकी इमेज में बदलकर पूरी टेक्स्ट लेयर नष्ट करें। दोबारा बनाए PDF में ढके हुए टेक्स्ट को चुना नहीं जा सकता।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "कॉपी पर काम करें",
+              "x": "पहले PDF की कॉपी बनाएँ और मूल फ़ाइल अलग फ़ोल्डर में रखें। अपनी एकमात्र कॉपी पर कभी रेडैक्शन न करें।"
+            },
+            {
+              "h": "हर संवेदनशील जगह को अपारदर्शी काले से ढकें",
+              "x": "भरे हुए, पूरी तरह अपारदर्शी आयत लगाएँ। शब्दों के सिरों से आगे तक ढकें और अक्षरों के नीचे उतरने वाले हिस्से भी छिपाएँ; बचा हुआ छोटा टुकड़ा नाम पहचानने के लिए काफी हो सकता है।"
+            },
+            {
+              "h": "हर पेज जाँचें",
+              "x": "नाम हेडर, फुटर, विषय-सूची, बुकमार्क और परिशिष्ट में दोहराए जा सकते हैं। हर शब्द को पूरे दस्तावेज़ में खोजें।"
+            },
+            {
+              "h": "हर पेज को इमेज बनाएँ",
+              "x": "[PDF से JPG](/tools/pdf-to-jpg) को 200–300 DPI पर उपयोग करें। 200 से कम पर प्रिंट नरम दिख सकता है; 300 से अधिक पर फ़ाइल बहुत बड़ी होती है और दृश्य लाभ कम मिलता है।"
+            },
+            {
+              "h": "इमेज से PDF फिर बनाएँ",
+              "x": "[JPG से PDF](/tools/jpg-to-pdf) इस्तेमाल करें और पेज क्रम में रखें। नई PDF में टेक्स्ट ऑब्जेक्ट नहीं होंगे, इसलिए ढके शब्द निकाले नहीं जा सकेंगे।"
+            },
+            {
+              "h": "मेटाडेटा हटाएँ",
+              "x": "नई फ़ाइल पर [मेटाडेटा हटाएँ](/tools/remove-metadata) चलाएँ। शीर्षक, लेखक या कीवर्ड में वही जानकारी हो सकती है जिसे आपने रेडैक्ट किया है।"
+            },
+            {
+              "h": "अंतिम फ़ाइल सत्यापित करें",
+              "x": "साझा करने से पहले नीचे की सभी जाँचें करें। बिना सत्यापन का रेडैक्शन पूरा नहीं है।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "छिपी टेक्स्ट लेयर नष्ट करने के लिए पेज इमेज बनाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "काम की पुष्टि कैसे करें"
+        },
+        {
+          "t": "p",
+          "x": "भेजने वाली अंतिम फ़ाइल पर चार जाँचें करें। पहली, सब चुनकर कॉपी करें और टेक्स्ट एडिटर में पेस्ट करें: रास्टराइज़ की गई फ़ाइल में टेक्स्ट चुना या पेस्ट नहीं होना चाहिए। दूसरी, Ctrl+F से हटाया गया हर शब्द खोजें; शून्य परिणाम अपेक्षित है। तीसरी, `pdftotext redacted.pdf -` से टेक्स्ट निकालें और हटाए गए शब्द खोजें; यह PDF रीडर पर निर्भर नहीं करता। चौथी, फ़ाइल का आकार देखें: रास्टर PDF अक्सर मूल से बड़ी होती है। आकार समान हो तो रास्टर चरण न हुआ हो सकता है, हालांकि सिर्फ आकार से सफलता साबित नहीं होती।"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "टेक्स्ट चुनें, कॉपी करें और एडिटर में पेस्ट करें।",
+            "Ctrl+F से हर रेडैक्ट किया शब्द खोजें।",
+            "pdftotext से निकालकर संवेदनशील शब्द न होने की पुष्टि करें।",
+            "फ़ाइल आकार को संकेत मानें, अकेला प्रमाण नहीं।"
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# जाँच: टेक्स्ट निकालें और रेडैक्ट किया गया शब्द खोजें\npdftotext redacted.pdf - | grep -i \"redacted-term\"\n\n# अपेक्षित परिणाम: कोई पंक्ति न मिले।"
+        },
+        {
+          "t": "warn",
+          "x": "टूल ने “redaction applied” दिखाया हो, तब भी जाँच न छोड़ें। कुछ टूल केवल बॉक्स बनाते हैं। जरूरी प्रमाण यह है कि तैयार फ़ाइल से टेक्स्ट निकाला न जा सके।"
+        },
+        {
+          "t": "h2",
+          "x": "डेस्कटॉप विकल्प"
+        },
+        {
+          "t": "p",
+          "x": "Adobe Acrobat Pro में असली रेडैक्शन सुविधा है और बड़े काम के लिए उपयोगी है। प्रक्रिया दो चरणों की है: **Redact → Mark for Redaction** सिर्फ जगहें चिह्नित करता है; **Apply** दबाने पर ही सामग्री हटती है। Apply से पहले फ़ाइल सेव करने पर टेक्स्ट वहीं रहता है। इसके बाद **Sanitize Document** चलाएँ, जो मेटाडेटा, छिपी लेयर, अटैचमेंट और स्क्रिप्ट हटाता है।"
+        },
+        {
+          "t": "h2",
+          "x": "रेडैक्शन किन चीज़ों को नहीं हटाता"
+        },
+        {
+          "t": "p",
+          "x": "दिखने वाले टेक्स्ट को रेडैक्ट करने से बाकी डेटा अपने-आप नहीं मिटता। शीर्षक, लेखक और कीवर्ड के लिए [PDF मेटाडेटा हटाने की गाइड](/blog/privacy/remove-metadata-from-pdf) अलग देखें। अप्रत्यक्ष पहचान भी सोचें: पद, तारीख और विभाग मिलकर व्यक्ति बता सकते हैं, भले नाम छिपा हो। पूरी फ़ाइलों में हर शब्द खोजें ताकि एक पेज पर हटाकर दूसरे पेज पर न छोड़ दें। अटैचमेंट पेजों के साथ इमेज में नहीं बदलते; अटैचमेंट पैनल देखें और जरूरत पर उन्हें हटाएँ।"
+        },
+        {
+          "t": "note",
+          "x": "काम पूरा होने पर काले बॉक्स वाली बीच की फ़ाइल मिटाएँ: उसमें निशान और मूल टेक्स्ट दोनों होते हैं। बाद में OCR चलाएँ तो वह केवल दिखने वाली सामग्री पढ़ता है; काले क्षेत्र से टेक्स्ट नहीं निकलना चाहिए।"
+        },
+        {
+          "t": "p",
+          "x": "ढकना मिटाना नहीं है; प्रमाण यह है कि टेक्स्ट निकाला न जा सके। [वॉटरमार्क या स्टैम्प](/blog/watermark/watermark-vs-stamp) अलग समस्या हल करता है। [क्या ऑनलाइन PDF टूल सुरक्षित हैं?](/blog/privacy/are-online-pdf-tools-safe) भी पढ़ें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "काला बॉक्स असली रेडैक्शन क्यों नहीं है?",
+          "a": "आयत टेक्स्ट के ऊपर बनता है, जबकि टेक्स्ट पेज की सामग्री में मौजूद रहता है। उस जगह को चुनकर कॉपी करने या टेक्स्ट निकालने के टूल से पूरा शब्द मिल सकता है। कुछ हटाया नहीं गया।"
+        },
+        {
+          "q": "PDF से टेक्स्ट मुफ्त और स्थायी रूप से कैसे हटाएँ?",
+          "a": "संवेदनशील जगह को अपारदर्शी काले से ढकें, हर पेज को 200–300 DPI पर इमेज बनाएँ और उन इमेज से PDF दोबारा बनाएँ। इससे टेक्स्ट लेयर हटती है। फिर जाँचें कि शब्द चुने, खोजे या निकाले न जा सकें।"
+        },
+        {
+          "q": "कैसे जाँचूँ कि रेडैक्शन काम कर गया?",
+          "a": "अंतिम फ़ाइल में सब टेक्स्ट चुनकर एडिटर में पेस्ट करें, Ctrl+F से हर हटाया शब्द खोजें और pdftotext से टेक्स्ट निकालें। तीनों जाँचों में संवेदनशील सामग्री शून्य होनी चाहिए।"
+        },
+        {
+          "q": "क्या नाम को धुंधला या पिक्सेलेट करना काफी है?",
+          "a": "नहीं। छोटे, अनुमानित नाम या नंबर के संभावित रूप पिक्सेलेट करके मिलाए जा सकते हैं। ठोस अपारदर्शी काला इस्तेमाल करें और नीचे का टेक्स्ट भी हटाएँ।"
+        },
+        {
+          "q": "क्या रेडैक्शन मेटाडेटा भी हटाता है?",
+          "a": "हमेशा नहीं। शीर्षक, लेखक, विषय और कीवर्ड पेज सामग्री से अलग हैं और PDF में रह सकते हैं। अंतिम फ़ाइल का मेटाडेटा हटाएँ और साझा करने से पहले गुण देखें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية تنقيح PDF بحيث يُحذف النص فعلًا",
+      "metaTitle": "تنقيح PDF وحذف النص نهائيًا",
+      "metaDescription": "احذف النص الحساس من PDF وتحقق من تعذر استخراجه ونظّف البيانات الوصفية. مجانًا وبخصوصية في المتصفح، بلا تسجيل.",
+      "keyword": "كيفية تنقيح PDF",
+      "secondaryKeywords": [
+        "تنقيح PDF بشكل صحيح",
+        "تنقيح البيانات الوصفية في PDF",
+        "المربع الأسود لا ينقح PDF",
+        "حذف نص PDF نهائيًا",
+        "التحقق من تنقيح PDF",
+        "فشل تنقيح PDF"
+      ],
+      "answer": "لتنقيح PDF يجب حذف المحتوى الحساس من الملف، لا تغطيته فقط. غطِّ المناطق بالأسود المعتم ثم حوّل كل صفحة إلى صورة وأعد إنشاء PDF، وبذلك تُدمّر طبقة النص. تحقق من الملف النهائي بمحاولة تحديد النص والبحث عنه واستخراجه. تنفذ أداة Redact PDF من PrintxPDF العملية داخل علامة تبويب المتصفح.",
+      "ctaLabel": "تنقيح PDF",
+      "body": [
+        {
+          "t": "warn",
+          "x": "رسم مستطيل أسود فوق النص لا يحذفه. تبقى الحروف أسفل المستطيل في تعليمات رسم الصفحة. يمكن لأي شخص تحديد المنطقة ونسخ الكلمات المخفية ولصقها. وتعود كثير من حالات فشل التنقيح في الملفات القانونية والحكومية والتجارية إلى هذا الخطأ."
+        },
+        {
+          "t": "p",
+          "x": "ملف PDF قائمة مرتبة من تعليمات الرسم. قد تقول تعليمة «ضع كلمة هنا»، ثم تقول تعليمة لاحقة «ارسم مستطيلًا أسود فوقها». تخفي التعليمة الثانية الأولى على الشاشة، لكنها لا تحذفها من الملف."
+        },
+        {
+          "t": "h2",
+          "x": "طرق تبدو كالتنقيح لكنها ليست كذلك"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الطريقة",
+            "هل يحذف النص؟",
+            "كيفية استعادته"
+          ],
+          "rows": [
+            [
+              "رسم مستطيل أسود",
+              "لا",
+              "تحديد المنطقة ونسخها ولصقها"
+            ],
+            [
+              "تمييز أسود أو نص أبيض",
+              "لا",
+              "يبقى النص قابلًا للتحديد"
+            ],
+            [
+              "إضافة مربع للأصل أو قص الصفحة",
+              "لا",
+              "إعادة التصدير أو إلغاء القص"
+            ],
+            [
+              "تمويه أو بكسلة",
+              "جزئي وغير موثوق",
+              "مطابقة كلمات محتملة"
+            ],
+            [
+              "التغطية وتحويل الصفحة كاملة إلى صورة",
+              "نعم",
+              "لا تبقى طبقة نص"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "يحذف التنقيح الحقيقي المحتوى الحساس حتى لا يمكن تحديده أو البحث عنه أو استخراجه. المستطيل الأسود، وقلم التمييز الأسود، وتغيير لون النص إلى الأبيض، وإضافة مربع في الملف الأصلي، وقص الصفحة كلها تخفي المحتوى فقط؛ ويمكن إعادة ضبط القص لإظهاره. التمويه والبكسلة غير موثوقين؛ فقد يعيد شخص بناء نص قصير معروف النمط بمقارنة احتمالات مرشحة. قد ينجح حذف النص، لكن افحص سجل التراجع والعناصر المضافة تدريجيًا التي قد تبقى. يؤدي التغطية بالأسود المعتم ثم تحويل الصفحة كاملة إلى صورة إلى إزالة طبقة النص."
+        },
+        {
+          "t": "h2",
+          "x": "الطريقة المباشرة"
+        },
+        {
+          "t": "p",
+          "x": "الطريقة المباشرة هي [تنقيح PDF](/tools/redact-pdf): حدد المناطق الحساسة، وتحذف الأداة النص الموجود تحتها. تتم المعالجة داخل علامة تبويب المتصفح ولا يغادر الملف جهازك. حتى عند استخدام الأداة، تحقق من النسخة النهائية بالخطوات أدناه."
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "حدد المناطق المطلوب حذفها لا تغطيتها فقط. لا يتم رفع الملف."
+        },
+        {
+          "t": "h2",
+          "x": "الطريقة اليدوية خطوة بخطوة"
+        },
+        {
+          "t": "p",
+          "x": "تنجز الطريقة اليدوية النتيجة نفسها بأدوات عامة. اجعل المنطقة غير مرئية أولًا، ثم دمّر طبقة النص كاملة بتحويل كل صفحة إلى صورة. بعد إعادة إنشاء PDF، لن يبقى نص قابل للتحديد أسفل المناطق المغطاة."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "اعمل على نسخة",
+              "x": "انسخ الملف أولًا واحتفظ بالأصل في مجلد منفصل. لا تنقح نسختك الوحيدة مطلقًا."
+            },
+            {
+              "h": "غطِّ كل منطقة حساسة بالأسود المعتم",
+              "x": "استخدم مستطيلات معبأة ومعتمة تمامًا. تجاوز أطراف الكلمات وغطِّ الأجزاء النازلة من الحروف؛ فجزء صغير ظاهر قد يكفي لتضييق احتمالات الاسم."
+            },
+            {
+              "h": "افحص كل الصفحات",
+              "x": "قد تتكرر الأسماء في الترويسات والتذييلات والفهارس والإشارات المرجعية والملاحق. ابحث في المستند كله عن كل مصطلح."
+            },
+            {
+              "h": "حوّل كل صفحة إلى صورة",
+              "x": "استخدم [تحويل PDF إلى JPG](/tools/pdf-to-jpg) بدقة 200–300 DPI. قد تبدو الطباعة لينة تحت 200 DPI، بينما يزيد حجم الملف كثيرًا فوق 300 مع مكسب بصري ضئيل."
+            },
+            {
+              "h": "أعد إنشاء PDF من الصور",
+              "x": "استخدم [تحويل JPG إلى PDF](/tools/jpg-to-pdf) وأبقِ الصفحات مرتبة. لن يحتوي الملف الجديد على عناصر نصية، لذا لن يمكن استخراج الكلمات المغطاة."
+            },
+            {
+              "h": "أزل البيانات الوصفية",
+              "x": "مرّر الملف الجديد عبر [إزالة البيانات الوصفية](/tools/remove-metadata). فقد يحتوي العنوان أو المؤلف أو الكلمات المفتاحية على المعلومات التي نقحتها."
+            },
+            {
+              "h": "تحقق من الملف النهائي",
+              "x": "نفذ جميع الاختبارات التالية قبل المشاركة. التنقيح الذي لم يتم التحقق منه غير مكتمل."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "حوّل الصفحات إلى صور لتدمير طبقة النص المخفية."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية التحقق من نجاح العملية"
+        },
+        {
+          "t": "p",
+          "x": "نفذ أربعة اختبارات على الملف النهائي الذي سترسله. أولًا، حدد الكل وانسخ والصق في محرر نصوص؛ في الملف المحول إلى صور يجب ألا يمكن تحديد نص أو لصقه. ثانيًا، ابحث عن كل كلمة نقحتها باستخدام Ctrl+F؛ النتيجة المتوقعة صفر. ثالثًا، استخرج النص عبر `pdftotext redacted.pdf -` وابحث عن المصطلحات المحذوفة؛ فهذا يفحص الملف دون الاعتماد على قارئ PDF. رابعًا، قارن حجم الملف: غالبًا يكون PDF المحول إلى صور أكبر من الأصل. وقد يشير الحجم المطابق إلى أن التحويل لم يحدث، لكنه لا يثبت النجاح بمفرده."
+        },
+        {
+          "t": "ol",
+          "items": [
+            "حدد النص وانسخه والصقه في محرر نصوص.",
+            "ابحث عن كل مصطلح نقحته باستخدام Ctrl+F.",
+            "استخرج النص عبر pdftotext وتحقق من غياب المصطلحات الحساسة.",
+            "قارن حجم الملف كإشارة لا كدليل وحيد."
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# تحقق: استخرج النص وابحث عن مصطلح نقحته\npdftotext redacted.pdf - | grep -i \"redacted-term\"\n\n# النتيجة المتوقعة: لا يظهر أي سطر."
+        },
+        {
+          "t": "warn",
+          "x": "لا تتجاوز التحقق لأن الأداة قالت «تم تطبيق التنقيح». بعض الأدوات ترسم مربعًا فقط. الدليل المهم هو تعذر استخراج النص من الملف النهائي."
+        },
+        {
+          "t": "h2",
+          "x": "الخيار على الكمبيوتر"
+        },
+        {
+          "t": "p",
+          "x": "يتضمن Adobe Acrobat Pro ميزة تنقيح حقيقية، وهي مناسبة للعمل بكميات كبيرة. العملية من مرحلتين: **Redact → Mark for Redaction** يحدد المناطق فقط؛ ولا يُحذف المحتوى حتى تضغط **Apply**. إذا حفظت الملف قبل التطبيق، فسيظل النص موجودًا. بعد ذلك شغّل **Sanitize Document** لإزالة البيانات الوصفية والطبقات المخفية والمرفقات والبرامج النصية."
+        },
+        {
+          "t": "h2",
+          "x": "ما الذي لا يغطيه التنقيح"
+        },
+        {
+          "t": "p",
+          "x": "لا يحذف التنقيح المرئي بقية البيانات تلقائيًا. افحص العنوان والمؤلف والكلمات المفتاحية منفصلة عبر [دليل إزالة البيانات الوصفية من PDF](/blog/privacy/remove-metadata-from-pdf). انتبه للاستدلال: قد يكشف المسمى الوظيفي والتاريخ والقسم هوية شخص حتى بعد إخفاء اسمه. ابحث عن كل مصطلح في المجموعة كاملة كي لا تنقح صفحة وتتركه ظاهرًا في أخرى. لا تُحوّل المرفقات إلى صور مع الصفحات؛ افحص لوحة المرفقات وأزلها عند الحاجة."
+        },
+        {
+          "t": "note",
+          "x": "احذف الملف الوسيط ذي المربعات السوداء بعد الانتهاء؛ فهو ما زال يحتوي العلامات والنص الأصلي. وإذا شغلت OCR لاحقًا، فسيقرأ المحرك ما هو ظاهر فقط، ولن ينتج نصًا من المناطق السوداء."
+        },
+        {
+          "t": "p",
+          "x": "التغطية ليست حذفًا؛ والدليل هو تعذر استخراج النص. تحل [العلامة المائية أو الختم](/blog/watermark/watermark-vs-stamp) مشكلة مختلفة. اقرأ أيضًا [هل أدوات PDF عبر الإنترنت آمنة؟](/blog/privacy/are-online-pdf-tools-safe)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "لماذا لا يعد المربع الأسود تنقيحًا حقيقيًا؟",
+          "a": "يُرسم المستطيل فوق النص، بينما يبقى النص داخل محتوى الصفحة. قد يؤدي تحديد المنطقة ونسخها أو استخدام أداة استخراج النص إلى استعادة الكلمات كاملة. لم يُحذف شيء."
+        },
+        {
+          "q": "كيف أحذف نصًا من PDF مجانًا وبشكل دائم؟",
+          "a": "غطِّ المناطق الحساسة بالأسود المعتم، وحوّل كل صفحة إلى صورة بدقة 200–300 DPI، ثم أعد إنشاء PDF من الصور. يؤدي ذلك إلى حذف طبقة النص؛ تحقق بعد ذلك من تعذر تحديد الكلمات أو البحث عنها أو استخراجها."
+        },
+        {
+          "q": "كيف أتأكد من نجاح التنقيح؟",
+          "a": "في الملف النهائي، حدد النص والصقه في محرر، وابحث عن كل مصطلح عبر Ctrl+F، واستخرج النص باستخدام pdftotext. يجب ألا تظهر أي معلومات حساسة في الاختبارات الثلاثة."
+        },
+        {
+          "q": "هل يكفي تمويه الاسم أو تحويله إلى بكسلات؟",
+          "a": "لا. يمكن إعادة بناء النصوص القصيرة المتوقعة، مثل الأسماء والأرقام، بمقارنة احتمالات مرشحة بعد بكسلتها. استخدم أسود معتمًا بالكامل واحذف المحتوى الموجود تحته."
+        },
+        {
+          "q": "هل يزيل التنقيح البيانات الوصفية أيضًا؟",
+          "a": "ليس بالضرورة. يوجد العنوان والمؤلف والموضوع والكلمات المفتاحية خارج محتوى الصفحة وقد تبقى في PDF. أزل البيانات الوصفية من الملف النهائي وافحص خصائصه قبل مشاركته."
+        }
+      ]
+    },
+    "bn": {
+      "title": "PDF-এ লেখা সত্যিকারভাবে মুছে দিতে কীভাবে রেড্যাক্ট করবেন",
+      "metaTitle": "PDF স্থায়ীভাবে রেড্যাক্ট করার নিয়ম",
+      "metaDescription": "PDF থেকে সংবেদনশীল লেখা মুছুন, তা আর বের হয় না কি না যাচাই করুন এবং মেটাডেটা পরিষ্কার করুন। বিনামূল্যে ও ব্যক্তিগত।",
+      "keyword": "PDF কীভাবে রেড্যাক্ট করবেন",
+      "secondaryKeywords": [
+        "PDF সঠিকভাবে রেড্যাক্ট",
+        "PDF মেটাডেটা রেড্যাকশন",
+        "কালো বক্স PDF রেড্যাক্ট নয়",
+        "PDF থেকে স্থায়ীভাবে লেখা মুছুন",
+        "PDF রেড্যাকশন যাচাই",
+        "PDF রেড্যাকশন ব্যর্থতা"
+      ],
+      "answer": "PDF রেড্যাক্ট করতে সংবেদনশীল বিষয়বস্তু ফাইল থেকে মুছতে হবে, শুধু ঢাকলে হবে না। জায়গাগুলো অস্বচ্ছ কালো দিয়ে ঢেকে প্রতিটি পৃষ্ঠা ছবিতে রূপান্তর করে PDF আবার তৈরি করুন; এতে টেক্সট লেয়ার নষ্ট হয়। শেষ ফাইলে লেখা নির্বাচন, খোঁজা এবং বের করার চেষ্টা করে যাচাই করুন। PrintxPDF Redact PDF ব্রাউজার ট্যাবেই কাজ করে।",
+      "ctaLabel": "PDF রেড্যাক্ট করুন",
+      "body": [
+        {
+          "t": "warn",
+          "x": "লেখার ওপর কালো আয়তক্ষেত্র আঁকলে লেখা মুছে যায় না। অক্ষরগুলো পৃষ্ঠার ড্রয়িং নির্দেশে বক্সের নিচে থেকে যায়। যে কেউ জায়গাটি নির্বাচন করে কপি-পেস্ট করে লুকানো শব্দ পেতে পারে। আইনি, সরকারি ও ব্যবসায়িক নথিতে রেড্যাকশনের অনেক ব্যর্থতা এই ভুল থেকে হয়।"
+        },
+        {
+          "t": "p",
+          "x": "PDF হলো ধারাবাহিক ড্রয়িং নির্দেশের তালিকা। প্রথম নির্দেশ বলতে পারে “এই জায়গায় শব্দটি বসাও”, পরেরটি “ওপর দিয়ে কালো আয়তক্ষেত্র আঁকো”। দ্বিতীয়টি পর্দায় প্রথমটিকে ঢাকে, কিন্তু ফাইল থেকে মুছে দেয় না।"
+        },
+        {
+          "t": "h2",
+          "x": "যেগুলো রেড্যাকশন মনে হয়, কিন্তু আসলে নয়"
+        },
+        {
+          "t": "table",
+          "head": [
+            "পদ্ধতি",
+            "লেখা মোছে?",
+            "কীভাবে উদ্ধার হয়"
+          ],
+          "rows": [
+            [
+              "কালো আয়তক্ষেত্র আঁকা",
+              "না",
+              "নির্বাচন করে কপি-পেস্ট"
+            ],
+            [
+              "কালো হাইলাইটার বা সাদা লেখা",
+              "না",
+              "লেখা এখনও নির্বাচনযোগ্য"
+            ],
+            [
+              "মূল নথিতে বক্স বা ক্রপ",
+              "না",
+              "রপ্তানি বা ক্রপ রিসেট"
+            ],
+            [
+              "ব্লার বা পিক্সেলেট",
+              "আংশিক, অনিরাপদ",
+              "সম্ভাব্য শব্দ মিলিয়ে দেখা"
+            ],
+            [
+              "ঢেকে পুরো পৃষ্ঠা র‍্যাস্টারাইজ",
+              "হ্যাঁ",
+              "টেক্সট লেয়ার থাকে না"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "সত্যিকারের রেড্যাকশন সংবেদনশীল বিষয়বস্তু মুছে দেয়, যাতে সেটি নির্বাচন, খোঁজা বা বের করা না যায়। কালো আয়তক্ষেত্র, কালো হাইলাইটার, লেখার রং সাদা করা, মূল নথিতে বক্স বসানো এবং পৃষ্ঠা ক্রপ করা শুধু বিষয়বস্তু লুকায়; ক্রপ রিসেট করলে তা ফের দেখা যায়। ব্লার বা পিক্সেলেট নির্ভরযোগ্য নয়: ছোট ও অনুমেয় নাম বা নম্বর সম্ভাব্য প্রার্থী পিক্সেলেট করে মেলানো যায়। লেখা মুছে দিলেও Undo ইতিহাস এবং পরে যোগ হওয়া অবজেক্ট ফাইলে থাকতে পারে। অস্বচ্ছ কালো দিয়ে ঢেকে পুরো পৃষ্ঠা ছবিতে রূপান্তর করলে টেক্সট লেয়ার থাকে না।"
+        },
+        {
+          "t": "h2",
+          "x": "সরাসরি পদ্ধতি"
+        },
+        {
+          "t": "p",
+          "x": "সবচেয়ে সহজ পথ [PDF রেড্যাক্ট](/tools/redact-pdf): সংবেদনশীল অংশ চিহ্নিত করুন, টুল নিচের লেখা সরিয়ে দেয়। ফাইল ব্রাউজার ট্যাবেই প্রসেস হয় এবং আপনার কম্পিউটার ছাড়ে না। টুল ব্যবহার করলেও শেষ ফাইলটি নিচের ধাপগুলো দিয়ে যাচাই করুন।"
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "যে অংশ মুছতে হবে তা চিহ্নিত করুন, শুধু ঢাকবেন না। ফাইল আপলোড হয় না।"
+        },
+        {
+          "t": "h2",
+          "x": "ম্যানুয়াল পদ্ধতি ধাপে ধাপে"
+        },
+        {
+          "t": "p",
+          "x": "ম্যানুয়াল পদ্ধতিতে সাধারণ টুল দিয়ে একই কাজ হয়। আগে সংবেদনশীল অংশ অদৃশ্য করুন, তারপর প্রতিটি পৃষ্ঠাকে ছবিতে বদলে পুরো টেক্সট লেয়ার নষ্ট করুন। PDF আবার তৈরি হলে ঢেকে রাখা লেখা আর নির্বাচন করা যায় না।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "কপিতে কাজ করুন",
+              "x": "আগে PDF-এর কপি বানিয়ে মূলটি আলাদা ফোল্ডারে রাখুন। একমাত্র কপিতে কখনো রেড্যাক্ট করবেন না।"
+            },
+            {
+              "h": "প্রতিটি সংবেদনশীল অংশ অস্বচ্ছ কালো দিয়ে ঢাকুন",
+              "x": "ভরা এবং সম্পূর্ণ অস্বচ্ছ আয়তক্ষেত্র ব্যবহার করুন। শব্দের দুপাশে বাড়িয়ে দিন এবং অক্ষরের নিচের ঝুলে থাকা অংশও ঢাকুন; সামান্য অংশ দেখা গেলেই নাম শনাক্ত হতে পারে।"
+            },
+            {
+              "h": "প্রতিটি পৃষ্ঠা দেখুন",
+              "x": "হেডার, ফুটার, সূচি, বুকমার্ক ও পরিশিষ্টেও নাম থাকতে পারে। প্রতিটি শব্দ পুরো নথিতে খুঁজুন।"
+            },
+            {
+              "h": "সব পৃষ্ঠা ছবিতে রূপান্তর করুন",
+              "x": "[PDF থেকে JPG](/tools/pdf-to-jpg) 200–300 DPI-তে ব্যবহার করুন। 200 DPI-এর নিচে প্রিন্ট নরম দেখাতে পারে; 300-এর বেশি হলে দৃশ্যমান লাভ কম হলেও ফাইল বড় হয়।"
+            },
+            {
+              "h": "ছবি থেকে PDF আবার তৈরি করুন",
+              "x": "[JPG থেকে PDF](/tools/jpg-to-pdf) ব্যবহার করে পৃষ্ঠাগুলো ক্রমানুসারে রাখুন। নতুন PDF-এ টেক্সট অবজেক্ট থাকবে না, তাই ঢেকে রাখা শব্দ আর বের করা যাবে না।"
+            },
+            {
+              "h": "মেটাডেটা সরান",
+              "x": "নতুন ফাইলে [মেটাডেটা সরান](/tools/remove-metadata) চালান। শিরোনাম, লেখক বা কীওয়ার্ডে রেড্যাক্ট করা একই তথ্য থাকতে পারে।"
+            },
+            {
+              "h": "শেষ ফাইল যাচাই করুন",
+              "x": "শেয়ারের আগে নিচের সব পরীক্ষা করুন। যাচাই না করা রেড্যাকশন সম্পূর্ণ নয়।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "লুকানো টেক্সট লেয়ার নষ্ট করতে পৃষ্ঠা ইমেজে বদলান।"
+        },
+        {
+          "t": "h2",
+          "x": "কাজ হয়েছে কি না যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "যে শেষ ফাইল পাঠাবেন তাতে চারটি পরীক্ষা করুন। প্রথমে সব নির্বাচন করে কপি করুন এবং টেক্সট এডিটরে পেস্ট করুন: ছবিতে রূপান্তর করা ফাইলে কোনো লেখা নির্বাচন বা পেস্ট হওয়া উচিত নয়। দ্বিতীয়ত, Ctrl+F দিয়ে প্রতিটি মুছে ফেলা শব্দ খুঁজুন; ফল শূন্য হওয়া উচিত। তৃতীয়ত, `pdftotext redacted.pdf -` দিয়ে লেখা বের করে ওই শব্দগুলো খুঁজুন; এতে PDF রিডারের ওপর নির্ভর করতে হয় না। চতুর্থত, ফাইলের আকার তুলনা করুন: ছবিভিত্তিক PDF সাধারণত মূলটির চেয়ে বড়। আকার একই হলে রূপান্তর না হওয়ার ইঙ্গিত হতে পারে, তবে শুধু আকার দিয়ে সাফল্য প্রমাণ হয় না।"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "টেক্সট নির্বাচন, কপি করে এডিটরে পেস্ট করুন।",
+            "Ctrl+F দিয়ে প্রতিটি মুছে ফেলা শব্দ খুঁজুন।",
+            "pdftotext দিয়ে লেখা বের করে সংবেদনশীল শব্দ না থাকার নিশ্চয়তা নিন।",
+            "ফাইলের আকারকে ইঙ্গিত ধরুন, একমাত্র প্রমাণ নয়।"
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# যাচাই: টেক্সট বের করে রেড্যাক্ট করা শব্দ খুঁজুন\npdftotext redacted.pdf - | grep -i \"redacted-term\"\n\n# প্রত্যাশিত ফল: কোনো লাইন দেখা যাবে না।"
+        },
+        {
+          "t": "warn",
+          "x": "টুল “redaction applied” বলেছে বলে যাচাই বাদ দেবেন না। কিছু টুল শুধু বক্স আঁকে। আসল প্রমাণ হলো শেষ ফাইল থেকে লেখা বের করা যায় না।"
+        },
+        {
+          "t": "h2",
+          "x": "ডেস্কটপ বিকল্প"
+        },
+        {
+          "t": "p",
+          "x": "Adobe Acrobat Pro-তে আসল রেড্যাকশন ফিচার আছে এবং অনেক ফাইলের কাজে উপযোগী। কাজটি দুই ধাপের: **Redact → Mark for Redaction** শুধু জায়গা চিহ্নিত করে; **Apply** চাপলেই বিষয়বস্তু মুছে যায়। Apply করার আগে সেভ করলে লেখা ফাইলেই থাকে। এরপর **Sanitize Document** চালান; এটি মেটাডেটা, লুকানো লেয়ার, সংযুক্তি ও স্ক্রিপ্ট সরায়।"
+        },
+        {
+          "t": "h2",
+          "x": "রেড্যাকশন যা সরায় না"
+        },
+        {
+          "t": "p",
+          "x": "দেখা লেখা রেড্যাক্ট করলেই অন্য সব তথ্য মুছে যায় না। শিরোনাম, লেখক ও কীওয়ার্ডের জন্য [PDF মেটাডেটা সরানোর গাইড](/blog/privacy/remove-metadata-from-pdf) আলাদা দেখুন। পরোক্ষ পরিচয়ও ভাবুন: পদ, তারিখ ও বিভাগ মিলিয়ে নাম না থাকলেও কাউকে চেনা যায়। সব ফাইলে প্রতিটি শব্দ খুঁজুন, যাতে এক পৃষ্ঠা থেকে মুছে অন্য পৃষ্ঠায় না থাকে। সংযুক্ত ফাইল পৃষ্ঠার সঙ্গে ছবিতে রূপান্তর হয় না; attachment panel দেখুন এবং প্রয়োজন হলে সরান।"
+        },
+        {
+          "t": "note",
+          "x": "কাজ শেষে কালো বক্সসহ মধ্যবর্তী ফাইল মুছুন: তাতে চিহ্ন ও মূল লেখা দুটোই আছে। পরে OCR চালালে ইঞ্জিন শুধু দৃশ্যমান বিষয় পড়বে, তাই কালো অংশ থেকে লেখা পাওয়ার কথা নয়।"
+        },
+        {
+          "t": "p",
+          "x": "ঢাকা আর মুছে ফেলা এক নয়; প্রমাণ হলো লেখা বের করা না যাওয়া। [ওয়াটারমার্ক বা স্ট্যাম্প](/blog/watermark/watermark-vs-stamp) আলাদা সমস্যা সমাধান করে। আরও পড়ুন [অনলাইন PDF টুল কি নিরাপদ?](/blog/privacy/are-online-pdf-tools-safe)।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "কালো বক্স সত্যিকারের রেড্যাকশন নয় কেন?",
+          "a": "আয়তক্ষেত্রটি লেখার ওপর আঁকা হয়, কিন্তু লেখা পৃষ্ঠার বিষয়বস্তুতে থাকে। জায়গাটি নির্বাচন করে কপি করলে বা টেক্সট বের করার টুল চালালে পুরো শব্দ ফিরে আসতে পারে। কিছুই মোছা হয়নি।"
+        },
+        {
+          "q": "PDF থেকে বিনামূল্যে স্থায়ীভাবে লেখা কীভাবে মুছব?",
+          "a": "সংবেদনশীল জায়গা অস্বচ্ছ কালো দিয়ে ঢাকুন, প্রতিটি পৃষ্ঠা 200–300 DPI-তে ছবিতে বদলান এবং ছবি থেকে PDF বানান। এতে টেক্সট লেয়ার মুছে যায়। পরে যাচাই করুন শব্দ নির্বাচন, খোঁজা বা বের করা যায় কি না।"
+        },
+        {
+          "q": "রেড্যাকশন কাজ করেছে কি না কীভাবে যাচাই করব?",
+          "a": "শেষ ফাইলে সব লেখা নির্বাচন করে এডিটরে পেস্ট করুন, Ctrl+F দিয়ে প্রতিটি শব্দ খুঁজুন এবং pdftotext দিয়ে লেখা বের করুন। তিন পরীক্ষাতেই সংবেদনশীল তথ্য শূন্য হওয়া উচিত।"
+        },
+        {
+          "q": "নাম ব্লার বা পিক্সেলেট করলেই কি যথেষ্ট?",
+          "a": "না। ছোট, অনুমেয় নাম বা নম্বরের সম্ভাব্য রূপ পিক্সেলেট করে মিলিয়ে উদ্ধার করা যায়। পুরো অস্বচ্ছ কালো ব্যবহার করুন এবং নিচের বিষয়বস্তুও সরান।"
+        },
+        {
+          "q": "রেড্যাকশন কি মেটাডেটাও সরায়?",
+          "a": "সব সময় নয়। শিরোনাম, লেখক, বিষয় ও কীওয়ার্ড পৃষ্ঠার বিষয়বস্তু থেকে আলাদা এবং PDF-এ থাকতে পারে। শেষ ফাইলের মেটাডেটা সরিয়ে শেয়ারের আগে বৈশিষ্ট্য পরীক্ষা করুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách biên tập PDF để văn bản thực sự bị xóa",
+      "metaTitle": "Cách xóa vĩnh viễn nội dung trong PDF",
+      "metaDescription": "Xóa nội dung nhạy cảm khỏi PDF, kiểm tra khả năng trích xuất và làm sạch siêu dữ liệu. Miễn phí, riêng tư, không cần đăng ký.",
+      "keyword": "cách biên tập PDF để xóa nội dung",
+      "secondaryKeywords": [
+        "biên tập PDF đúng cách",
+        "biên tập siêu dữ liệu PDF",
+        "ô đen không xóa chữ PDF",
+        "xóa vĩnh viễn chữ trong PDF",
+        "kiểm tra biên tập PDF",
+        "lỗi biên tập PDF"
+      ],
+      "answer": "Để biên tập PDF, nội dung nhạy cảm phải bị xóa khỏi tệp chứ không chỉ bị che. Che vùng đó bằng màu đen đục, chuyển từng trang thành ảnh rồi dựng lại PDF để phá hủy lớp văn bản. Kiểm tra tệp cuối bằng cách thử chọn, tìm và trích xuất chữ. Redact PDF của PrintxPDF xử lý ngay trong tab trình duyệt.",
+      "ctaLabel": "Biên tập PDF",
+      "body": [
+        {
+          "t": "warn",
+          "x": "Vẽ hình chữ nhật màu đen lên chữ không xóa được chữ. Ký tự vẫn nằm bên dưới trong danh sách lệnh vẽ của trang. Bất kỳ ai cũng có thể chọn vùng đó, sao chép rồi dán ra chữ bị che. Nhiều lỗi biên tập trong hồ sơ pháp lý, báo cáo chính phủ và tài liệu doanh nghiệp bắt nguồn từ việc này."
+        },
+        {
+          "t": "p",
+          "x": "PDF là danh sách lệnh vẽ theo thứ tự. Một lệnh có thể ghi “đặt từ này tại tọa độ này”, lệnh sau ghi “tô hình chữ nhật đen lên đó”. Lệnh sau che lệnh trước trên màn hình nhưng không xóa nó khỏi tệp."
+        },
+        {
+          "t": "h2",
+          "x": "Những cách trông giống biên tập nhưng không phải"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Cách làm",
+            "Có xóa chữ không?",
+            "Có thể khôi phục bằng cách"
+          ],
+          "rows": [
+            [
+              "Vẽ hình chữ nhật đen",
+              "Không",
+              "Chọn, sao chép rồi dán"
+            ],
+            [
+              "Tô đen hoặc đổi chữ trắng",
+              "Không",
+              "Vẫn chọn được văn bản"
+            ],
+            [
+              "Thêm ô vào bản gốc hoặc cắt trang",
+              "Không",
+              "Xuất lại hoặc đặt lại vùng cắt"
+            ],
+            [
+              "Làm mờ hoặc pixel hóa",
+              "Chỉ một phần, không an toàn",
+              "Thử các từ dự đoán rồi so khớp"
+            ],
+            [
+              "Che rồi raster hóa toàn trang",
+              "Có",
+              "Không còn lớp văn bản"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Biên tập thật sẽ xóa nội dung nhạy cảm để không thể chọn, tìm kiếm hoặc trích xuất. Hình chữ nhật đen, bút tô đen, đổi chữ thành màu trắng, thêm ô đen vào tài liệu gốc hay cắt lề chỉ che nội dung; có thể đặt lại vùng cắt để hiện lại. Làm mờ và pixel hóa không đáng tin: chuỗi ngắn, dễ đoán có thể được khôi phục bằng cách thử các khả năng rồi so khớp. Xóa chữ có thể hiệu quả nhưng hãy kiểm tra lịch sử hoàn tác và các đối tượng được ghi nối. Che đen đục rồi chuyển toàn trang thành ảnh sẽ loại bỏ lớp văn bản."
+        },
+        {
+          "t": "h2",
+          "x": "Cách trực tiếp"
+        },
+        {
+          "t": "p",
+          "x": "Cách trực tiếp là [Biên tập PDF](/tools/redact-pdf): đánh dấu vùng nhạy cảm và công cụ xóa chữ bên dưới. Tệp được xử lý ngay trong tab trình duyệt và không rời máy tính của bạn. Dù dùng công cụ, hãy luôn kiểm tra tệp cuối theo các bước dưới đây."
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "Đánh dấu vùng cần xóa, không chỉ che đi. Tệp không được tải lên."
+        },
+        {
+          "t": "h2",
+          "x": "Cách làm thủ công từng bước"
+        },
+        {
+          "t": "p",
+          "x": "Cách thủ công làm điều tương tự bằng công cụ phổ thông. Trước tiên che vùng nhạy cảm, sau đó phá hủy lớp văn bản bằng cách biến từng trang thành ảnh. Khi dựng lại PDF, sẽ không còn chữ nào có thể chọn bên dưới vùng che."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Làm trên bản sao",
+              "x": "Sao chép PDF trước và giữ bản gốc trong thư mục riêng. Đừng bao giờ biên tập bản duy nhất."
+            },
+            {
+              "h": "Che mọi vùng nhạy cảm bằng màu đen đục",
+              "x": "Dùng hình chữ nhật tô kín, hoàn toàn đục. Che vượt qua hai đầu chữ và cả phần nét đi xuống; chỉ một mẩu nhỏ còn lộ cũng có thể giúp nhận diện tên."
+            },
+            {
+              "h": "Kiểm tra mọi trang",
+              "x": "Tên có thể lặp lại trong đầu trang, chân trang, mục lục, dấu trang và phụ lục. Tìm từng từ trong toàn bộ tài liệu."
+            },
+            {
+              "h": "Chuyển mọi trang thành ảnh",
+              "x": "Dùng [PDF sang JPG](/tools/pdf-to-jpg) ở 200–300 DPI. Dưới 200 DPI, bản in có thể mờ; trên 300, dung lượng tăng nhanh nhưng ít cải thiện hình ảnh."
+            },
+            {
+              "h": "Dựng lại PDF từ ảnh",
+              "x": "Dùng [JPG sang PDF](/tools/jpg-to-pdf) và giữ đúng thứ tự trang. PDF mới không có đối tượng văn bản, nên chữ bên dưới không thể trích xuất."
+            },
+            {
+              "h": "Xóa siêu dữ liệu",
+              "x": "Chạy tệp mới qua [Xóa siêu dữ liệu](/tools/remove-metadata). Tiêu đề, tác giả hoặc từ khóa có thể chứa chính thông tin bạn vừa biên tập."
+            },
+            {
+              "h": "Xác minh tệp cuối",
+              "x": "Thực hiện tất cả kiểm tra bên dưới trước khi chia sẻ. Biên tập chưa được xác minh thì chưa hoàn tất."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "Raster hóa trang để phá hủy lớp văn bản ẩn."
+        },
+        {
+          "t": "h2",
+          "x": "Cách xác minh đã thành công"
+        },
+        {
+          "t": "p",
+          "x": "Thực hiện bốn kiểm tra trên đúng tệp cuối sẽ gửi. Một, chọn tất cả, sao chép rồi dán vào trình soạn thảo văn bản: với tệp đã chuyển thành ảnh, không có chữ nào được chọn hoặc dán ra. Hai, tìm từng từ đã biên tập bằng Ctrl+F; kết quả mong đợi là không có. Ba, trích xuất chữ bằng `pdftotext redacted.pdf -` rồi tìm các từ đó; bước này kiểm tra nội dung mà không phụ thuộc trình đọc PDF. Bốn, so sánh dung lượng: PDF ảnh thường lớn hơn bản gốc. Dung lượng bằng hệt có thể cho thấy chưa raster hóa, nhưng riêng dung lượng không chứng minh việc biên tập thành công."
+        },
+        {
+          "t": "ol",
+          "items": [
+            "Chọn, sao chép và dán vào trình soạn thảo.",
+            "Tìm từng từ đã biên tập bằng Ctrl+F.",
+            "Trích xuất bằng pdftotext và xác nhận không còn từ nhạy cảm.",
+            "So sánh dung lượng như một dấu hiệu, không phải bằng chứng duy nhất."
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# Kiểm tra: trích xuất văn bản và tìm một cụm đã biên tập\npdftotext redacted.pdf - | grep -i \"redacted-term\"\n\n# Kết quả mong đợi: không có dòng nào."
+        },
+        {
+          "t": "warn",
+          "x": "Đừng bỏ qua bước xác minh chỉ vì công cụ báo “đã áp dụng biên tập”. Một số công cụ chỉ vẽ lớp phủ. Bằng chứng quan trọng là không thể trích xuất chữ từ tệp hoàn chỉnh."
+        },
+        {
+          "t": "h2",
+          "x": "Cách làm trên máy tính"
+        },
+        {
+          "t": "p",
+          "x": "Adobe Acrobat Pro có chức năng biên tập thật và phù hợp với công việc số lượng lớn. Quy trình gồm hai bước: **Redact → Mark for Redaction** chỉ đánh dấu vùng; nội dung chỉ bị xóa sau khi bấm **Apply**. Nếu lưu trước khi áp dụng, chữ vẫn còn. Sau đó chạy **Sanitize Document** để xóa siêu dữ liệu, lớp ẩn, tệp đính kèm và tập lệnh."
+        },
+        {
+          "t": "h2",
+          "x": "Biên tập PDF không xử lý những gì"
+        },
+        {
+          "t": "p",
+          "x": "Biên tập phần nhìn thấy không tự xóa mọi dữ liệu khác. Hãy kiểm tra riêng tiêu đề, tác giả và từ khóa bằng [hướng dẫn xóa siêu dữ liệu PDF](/blog/privacy/remove-metadata-from-pdf). Cũng cần nghĩ đến khả năng suy luận: chức danh, ngày tháng và phòng ban có thể nhận diện người dù tên đã che. Tìm mọi từ trong toàn bộ bộ tài liệu để tránh xóa ở trang này nhưng bỏ sót ở trang khác. Tệp đính kèm không được chuyển thành ảnh cùng trang; hãy kiểm tra bảng tệp đính kèm và xóa nếu cần."
+        },
+        {
+          "t": "note",
+          "x": "Xóa tệp trung gian có các ô đen sau khi hoàn tất: tệp đó vẫn giữ cả dấu đánh dấu và chữ gốc. Nếu chạy OCR sau này, bộ nhận dạng chỉ đọc phần đang hiển thị; vùng đen không nên tạo ra văn bản."
+        },
+        {
+          "t": "p",
+          "x": "Che không phải xóa; bằng chứng là không thể trích xuất chữ. [Hình mờ hoặc con dấu](/blog/watermark/watermark-vs-stamp) giải quyết vấn đề khác. Xem thêm [công cụ PDF trực tuyến có an toàn không?](/blog/privacy/are-online-pdf-tools-safe)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Vì sao ô đen không phải là biên tập thật?",
+          "a": "Hình chữ nhật được vẽ phía trên trong khi chữ vẫn nằm trong nội dung trang. Chọn rồi sao chép vùng đó hoặc dùng công cụ trích xuất sẽ trả lại nguyên chữ bị che. Chưa có gì bị xóa."
+        },
+        {
+          "q": "Cách xóa chữ khỏi PDF miễn phí và vĩnh viễn?",
+          "a": "Che vùng nhạy cảm bằng màu đen đục, chuyển mọi trang thành ảnh ở 200–300 DPI rồi dựng lại PDF từ ảnh. Cách này phá lớp văn bản; sau đó kiểm tra chữ có thể được chọn, tìm hoặc trích xuất không."
+        },
+        {
+          "q": "Làm sao kiểm tra biên tập PDF đã thành công?",
+          "a": "Trong tệp cuối, chọn và dán văn bản vào trình soạn thảo, tìm từng từ bằng Ctrl+F và trích xuất chữ bằng pdftotext. Cả ba bước phải không tìm thấy nội dung nhạy cảm."
+        },
+        {
+          "q": "Làm mờ hoặc pixel hóa tên có đủ không?",
+          "a": "Không. Các chuỗi ngắn dễ đoán như tên hoặc số có thể được khôi phục bằng cách pixel hóa những khả năng dự đoán rồi so sánh. Hãy dùng màu đen đục hoàn toàn và xóa nội dung bên dưới."
+        },
+        {
+          "q": "Biên tập PDF có xóa siêu dữ liệu không?",
+          "a": "Không nhất thiết. Tiêu đề, tác giả, chủ đề và từ khóa nằm ngoài nội dung trang và có thể vẫn ở trong PDF. Hãy xóa siêu dữ liệu của tệp cuối và kiểm tra thuộc tính trước khi chia sẻ."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何真正删除 PDF 中被遮盖的文字",
+      "metaTitle": "如何永久删除 PDF 敏感文字",
+      "metaDescription": "从 PDF 删除敏感文字，验证其无法提取，并清理元数据。免费、浏览器内私密处理，无需注册。",
+      "keyword": "如何正确涂黑 PDF",
+      "secondaryKeywords": [
+        "正确涂黑 PDF",
+        "PDF 元数据涂黑",
+        "黑框不能真正涂黑 PDF",
+        "永久删除 PDF 文字",
+        "验证 PDF 涂黑效果",
+        "PDF 涂黑失败"
+      ],
+      "answer": "要真正涂黑 PDF，必须从文件中删除敏感内容，而不是只遮住它。用不透明黑色覆盖区域，将每页栅格化为图片后重新生成 PDF，这样会破坏文字层。最后检查文字能否被选择、搜索或提取。PrintxPDF 的 Redact PDF 在浏览器标签页内完成处理。",
+      "ctaLabel": "涂黑 PDF",
+      "body": [
+        {
+          "t": "warn",
+          "x": "在文字上画黑色矩形并不会删除文字。字符仍保存在页面绘制指令中，位于黑框下方。任何人都可能选择该区域、复制并粘贴出隐藏文字。法律文件、政府报告和企业披露中的许多涂黑失败都源于这个错误。"
+        },
+        {
+          "t": "p",
+          "x": "PDF 是按顺序执行的绘图指令列表。先有一条指令“在坐标处写上这个词”，后有一条“在上面填充黑色矩形”。后一条只是在屏幕上遮住前一条，并没有从文件中删除它。"
+        },
+        {
+          "t": "h2",
+          "x": "看似涂黑、实际并未删除的方法"
+        },
+        {
+          "t": "table",
+          "head": [
+            "操作方式",
+            "是否删除文字",
+            "可能的恢复方式"
+          ],
+          "rows": [
+            [
+              "画黑色矩形",
+              "否",
+              "选中后复制粘贴"
+            ],
+            [
+              "黑色高亮或白色文字",
+              "否",
+              "文字仍可被选中"
+            ],
+            [
+              "在源文件加黑框或裁切",
+              "否",
+              "重新导出或重置裁剪"
+            ],
+            [
+              "模糊或像素化",
+              "不完全且不可靠",
+              "尝试候选文字并匹配结果"
+            ],
+            [
+              "遮盖后将整页栅格化",
+              "是",
+              "不再有文字层"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "真正的涂黑会删除敏感内容，使其无法被选择、搜索或提取。画黑框、用黑色荧光笔、把文字改成白色、在源文档中加黑框后导出，以及裁切页面，都只是隐藏内容；重置裁剪框即可再次显示。模糊和像素化也不可靠：对于短而格式已知的姓名或编号，可以尝试候选词并匹配像素结果。删除文字有时有效，但撤销历史或增量保存的旧对象仍可能留在文件中。用不透明黑色遮盖后，将整页栅格化为图片，才能移除文字层。"
+        },
+        {
+          "t": "h2",
+          "x": "直接处理方法"
+        },
+        {
+          "t": "p",
+          "x": "最直接的方法是使用[涂黑 PDF](/tools/redact-pdf)：标记敏感区域，工具会删除其下方的文字。文件在浏览器标签页内处理，不会离开你的电脑。即使使用该工具，也要按下列步骤验证最终文件。"
+        },
+        {
+          "t": "cta",
+          "tool": "redact-pdf",
+          "x": "标记需要删除的区域，而不是只遮住。文件不会上传。"
+        },
+        {
+          "t": "h2",
+          "x": "手动操作步骤"
+        },
+        {
+          "t": "p",
+          "x": "手动方法也能用通用工具完成同样的事。先让敏感区域不可见，再将每页转成图片，破坏整个文字层。重新生成 PDF 后，遮盖区域下方就没有可选择的文字。"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "使用副本操作",
+              "x": "先复制 PDF，将原件保存在另一个文件夹。不要在唯一副本上直接涂黑。"
+            },
+            {
+              "h": "用不透明黑色遮住每处敏感内容",
+              "x": "使用填充且完全不透明的矩形。覆盖范围要超过文字两端，并遮住字母下伸部分；只剩一点笔画也可能缩小姓名候选范围。"
+            },
+            {
+              "h": "检查每一页",
+              "x": "姓名也可能出现在页眉、页脚、目录、书签和附录。请在整份文件中搜索每个敏感词。"
+            },
+            {
+              "h": "将每页转换成图片",
+              "x": "使用[PDF 转 JPG](/tools/pdf-to-jpg)，设置 200–300 DPI。低于 200 DPI 时打印可能发虚；超过 300 DPI 会快速增大文件，但画面改善有限。"
+            },
+            {
+              "h": "从图片重新生成 PDF",
+              "x": "使用[JPG 转 PDF](/tools/jpg-to-pdf)，并保持页面顺序。新 PDF 不再有文字对象，因此无法提取被遮盖的文字。"
+            },
+            {
+              "h": "清理元数据",
+              "x": "将新文件交给[删除元数据](/tools/remove-metadata)处理。标题、作者或关键词可能仍包含刚刚涂黑的信息。"
+            },
+            {
+              "h": "验证最终文件",
+              "x": "分享前完成下列所有检查。没有验证的涂黑并未完成。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-jpg",
+          "x": "将页面栅格化为图片，以破坏隐藏文字层。"
+        },
+        {
+          "t": "h2",
+          "x": "如何验证处理结果"
+        },
+        {
+          "t": "p",
+          "x": "对准备发送的最终文件执行四项检查。第一，全选、复制并粘贴到文本编辑器：栅格化文件中不应有文字可选或粘贴。第二，按 Ctrl+F 搜索每个已涂黑词，预期结果为零。第三，使用 `pdftotext redacted.pdf -` 提取文字并搜索这些词；这样不依赖 PDF 阅读器。第四，对比文件大小：栅格化 PDF 通常比原文件大。大小完全相同可能表示没有栅格化，但仅凭文件大小无法证明涂黑成功。"
+        },
+        {
+          "t": "ol",
+          "items": [
+            "全选、复制并粘贴到文本编辑器。",
+            "按 Ctrl+F 搜索每个已涂黑词。",
+            "使用 pdftotext 提取文字，确认不含敏感词。",
+            "比较文件大小可作线索，但不能单独证明成功。"
+          ]
+        },
+        {
+          "t": "code",
+          "x": "# 检查：提取文字并搜索一个已涂黑词\npdftotext redacted.pdf - | grep -i \"redacted-term\"\n\n# 预期结果：没有任何输出行。"
+        },
+        {
+          "t": "warn",
+          "x": "不要因为工具显示“已应用涂黑”就跳过验证。有些工具只画了遮盖框。唯一关键的证据是最终文件中无法提取出文字。"
+        },
+        {
+          "t": "h2",
+          "x": "桌面软件替代方案"
+        },
+        {
+          "t": "p",
+          "x": "Adobe Acrobat Pro 提供真正的涂黑功能，适合批量工作。它分两步：**Redact → Mark for Redaction** 只标记区域；按下 **Apply** 后才会删除内容。如果在应用前保存，文字仍在文件里。之后还要运行 **Sanitize Document**，一次清除元数据、隐藏图层、附件和脚本。"
+        },
+        {
+          "t": "h2",
+          "x": "涂黑仍无法处理的内容"
+        },
+        {
+          "t": "p",
+          "x": "涂黑可见文字不会自动清除其他数据。标题、作者和关键词需单独检查，可参考[删除 PDF 元数据指南](/blog/privacy/remove-metadata-from-pdf)。还要考虑间接识别：职位、日期和部门可能组合起来暴露身份，即使姓名已涂黑。请在整组文件中搜索所有词语，避免一页已涂黑、另一页仍可见。附件不会随页面一起栅格化；请检查附件面板并按需删除。"
+        },
+        {
+          "t": "note",
+          "x": "完成后删除带黑框的中间文件：其中仍同时保留遮盖标记和原始文字。如果之后运行 OCR，识别器只会读取可见内容，黑色区域不应生成文字。"
+        },
+        {
+          "t": "p",
+          "x": "遮盖不等于删除；无法提取文字才是证据。[水印或印章](/blog/watermark/watermark-vs-stamp)解决的是另一类问题。另请阅读[在线 PDF 工具安全吗？](/blog/privacy/are-online-pdf-tools-safe)。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "为什么黑框不算真正的涂黑？",
+          "a": "矩形只是画在文字上方，文字仍保存在页面内容中。选中并复制该区域，或用文字提取工具，都可能恢复完整文字。内容并没有被删除。"
+        },
+        {
+          "q": "如何免费且永久删除 PDF 中的文字？",
+          "a": "用不透明黑色遮住敏感区域，将每页以 200–300 DPI 转成图片，再从图片重新生成 PDF。这样会破坏文字层；之后要检查文字是否还能被选择、搜索或提取。"
+        },
+        {
+          "q": "如何确认 PDF 涂黑成功？",
+          "a": "在最终文件中全选并粘贴到文本编辑器，用 Ctrl+F 搜索每个词，再用 pdftotext 提取文字。这三项检查都不应出现敏感内容。"
+        },
+        {
+          "q": "模糊或像素化姓名够安全吗？",
+          "a": "不够。短而可预测的姓名或编号可能通过像素化候选内容并匹配而被还原。请使用完全不透明的纯黑遮盖，并删除下方内容。"
+        },
+        {
+          "q": "涂黑会同时删除元数据吗？",
+          "a": "不一定。标题、作者、主题和关键词与页面内容分开保存，可能仍留在 PDF 中。请清理最终文件的元数据，并在分享前检查文档属性。"
+        }
+      ]
+    }
+  }
+}
