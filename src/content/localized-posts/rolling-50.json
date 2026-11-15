@@ -6877,6 +6877,148 @@
           "pdf-review-copy-checklist",
           "prevent-sending-wrong-pdf"
         ]
+      },
+      {
+        "topic": "pdf-review-copy-checklist",
+        "slug": "pdf-review-copy-checklist",
+        "title": "Lista de revisión de un PDF antes de compartirlo",
+        "metaTitle": "Lista de revisión de un PDF antes de compartirlo",
+        "metaDescription": "Usa esta lista para revisar texto, páginas, datos privados y destinatarios de un PDF antes de compartirlo. Gratis y privado en el navegador.",
+        "keyword": "lista de revisión PDF antes de compartir",
+        "secondaryKeywords": [
+          "comparar dos versiones de PDF",
+          "lista para revisar PDF antes de enviarlo",
+          "detectar cambios en un PDF"
+        ],
+        "answer": "Antes de compartir un PDF, compara la copia de revisión con el original, confirma texto, páginas, cifras, anexos y firmas, elimina realmente cualquier dato confidencial y revisa metadatos y destinatario. Compare PDF de PrintxPDF coteja visualmente las páginas en el navegador y no sube los archivos; aun así, revisa cada cambio antes de aprobar la copia.",
+        "tool": "compare-pdf",
+        "ctaLabel": "Comparar PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Usa una lista breve antes de enviar un PDF: compara la copia con el original, revisa las páginas y los datos clave, elimina contenido confidencial de verdad, comprueba metadatos y confirma el destinatario. Compare PDF de PrintxPDF compara visualmente ambos documentos página por página dentro del navegador. Los archivos no se suben; la revisión humana sigue siendo necesaria."
+          },
+          {
+            "t": "h2",
+            "x": "Qué detecta la comparación visual"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva y etiqueta las dos versiones",
+                "x": "Guarda el original y la copia de revisión por separado. Identifica cada una con un nombre claro, fecha y número de versión."
+              },
+              {
+                "h": "Compara visualmente ambas copias",
+                "x": "Abre [Comparar PDF](/tools/compare-pdf), carga primero la versión anterior y luego la nueva. Recorre cada página y mira los cambios resaltados."
+              },
+              {
+                "h": "Verifica contenido y estructura",
+                "x": "Comprueba nombres, fechas, importes, texto pequeño, orden y cantidad de páginas, tablas, enlaces, anexos, campos de formulario y firmas."
+              },
+              {
+                "h": "Revisa privacidad y propiedades",
+                "x": "Redacta de verdad datos que el destinatario no debe ver. Revisa comentarios, adjuntos y metadatos estándar; una marca negra superpuesta no equivale a redacción."
+              },
+              {
+                "h": "Aprueba el archivo y confirma el envío",
+                "x": "Abre la copia final, comprueba el destinatario y los permisos del canal, y conserva un registro de la versión aprobada."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "compare-pdf",
+            "x": "Compara dos PDF gratis en tu navegador, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa cada página y cada dato"
+          },
+          {
+            "t": "p",
+            "x": "La comparación de PrintxPDF dibuja las páginas de ambos PDF y resalta diferencias visuales. Puede detectar cambios en texto visible, imágenes, sellos, diseño y documentos escaneados, pero no crea una lista palabra por palabra de frases añadidas o eliminadas. Un desplazamiento pequeño puede resaltar gran parte de la página; examina las vistas de cada versión para entender el cambio. Revisa por página: comprueba el número, el orden, la orientación y que no falten hojas. Lee nombres, fechas, cantidades, notas al pie y texto pequeño. Comprueba tablas, gráficos, enlaces, anexos y campos rellenables. En escaneos o documentos con imágenes, no dependas solo de buscar texto."
+          },
+          {
+            "t": "h2",
+            "x": "Limpia el contenido privado"
+          },
+          {
+            "t": "p",
+            "x": "La comparación visual no confirma que el PDF esté listo para compartir. Si hay datos que el destinatario no debe recibir, elimínalos con [Redactar PDF](/tools/redact-pdf) y verifica el resultado. Revisa también comentarios, archivos adjuntos y propiedades como título o autor; [Eliminar metadatos](/tools/remove-metadata) limpia las propiedades estándar, pero no elimina el contenido visible de las páginas."
+          },
+          {
+            "t": "h2",
+            "x": "Aprueba la copia correcta"
+          },
+          {
+            "t": "p",
+            "x": "Mantén una versión original sin cambios y guarda la revisión aprobada con un nombre claro y número nuevo. Comprueba que el nombre del archivo, el estado del documento y el destinatario coincidan. Si hay una firma digital con certificado, cualquier edición posterior puede invalidarla; termina las revisiones antes de solicitar la firma."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Qué comprobar",
+              "Acción",
+              "Por qué"
+            ],
+            "rows": [
+              [
+                "Cambios entre versiones",
+                "Comparar página por página",
+                "Las diferencias visuales requieren interpretación"
+              ],
+              [
+                "Páginas y estructura",
+                "Contar y revisar orden, tablas y anexos",
+                "Detecta omisiones y errores de formato"
+              ],
+              [
+                "Datos confidenciales",
+                "Redactar y verificar la copia",
+                "La comparación no elimina información"
+              ],
+              [
+                "Destinatario y estado",
+                "Confirmar nombre, permisos y versión",
+                "Evita compartir el archivo equivocado"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Compare PDF compara el texto o la apariencia?",
+            "a": "Compara la apariencia de las páginas: las representa y marca diferencias visuales. Detecta cambios en escaneos, imágenes y diseño, pero no enumera palabras añadidas o eliminadas. Revisa las páginas resaltadas y confirma cada diferencia."
+          },
+          {
+            "q": "¿Por qué aparece casi toda la página como cambio?",
+            "a": "Un pequeño desplazamiento puede mover muchos píxeles y hacer que una gran zona aparezca diferente. Revisa las vistas A y B, además del nivel de tolerancia; una diferencia visual no siempre significa que cambió el texto."
+          },
+          {
+            "q": "¿La comparación elimina datos confidenciales?",
+            "a": "No. Compare PDF solo compara las páginas. Usa una herramienta de redacción para quitar el contenido y revisa metadatos, comentarios y adjuntos por separado."
+          },
+          {
+            "q": "¿Compare PDF sube mis archivos?",
+            "a": "No. Los dos documentos se dibujan y comparan en el navegador. No se suben. Las herramientas principales son gratis, sin cuenta y sin marca de agua."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "compare-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "share-draft-pdf-safely",
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "prevent-sending-wrong-pdf"
+        ]
       }
     ]
   },
@@ -13748,6 +13890,148 @@
           "pdf-review-copy-checklist",
           "prevent-sending-wrong-pdf"
         ]
+      },
+      {
+        "topic": "pdf-review-copy-checklist",
+        "slug": "pdf-review-copy-checklist",
+        "title": "Checklist para revisar um PDF antes de compartilhar",
+        "metaTitle": "Checklist para revisar um PDF antes de compartilhar",
+        "metaDescription": "Use esta lista para conferir texto, páginas, dados privados e destinatário antes de compartilhar um PDF. Grátis e privado no navegador.",
+        "keyword": "checklist para revisar PDF antes de compartilhar",
+        "secondaryKeywords": [
+          "comparar duas versões de PDF",
+          "checklist para revisar PDF antes de enviar",
+          "detectar alterações em PDF"
+        ],
+        "answer": "Antes de compartilhar um PDF, compare a cópia de revisão com o original, confira texto, páginas, valores, anexos e assinaturas, remova de verdade os dados confidenciais e revise metadados e destinatário. O Compare PDF do PrintxPDF compara visualmente as páginas no navegador sem enviar os arquivos; ainda é necessário analisar cada alteração antes de aprovar.",
+        "tool": "compare-pdf",
+        "ctaLabel": "Compare PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Use uma lista rápida antes de enviar um PDF: compare a cópia com o original, confira páginas e informações importantes, remova conteúdo confidencial de verdade, verifique metadados e confirme o destinatário. O Compare PDF do PrintxPDF compara visualmente os documentos página por página no navegador. Os arquivos não são enviados; a revisão humana continua necessária."
+          },
+          {
+            "t": "h2",
+            "x": "O que a comparação visual detecta"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde e identifique as duas versões",
+                "x": "Mantenha o original e a cópia de revisão separados. Dê nomes claros com data e número de versão."
+              },
+              {
+                "h": "Compare as cópias visualmente",
+                "x": "Abra [Compare PDF](/tools/compare-pdf), carregue primeiro a versão antiga e depois a nova. Percorra as páginas e veja as diferenças destacadas."
+              },
+              {
+                "h": "Confira conteúdo e estrutura",
+                "x": "Verifique nomes, datas, valores, texto pequeno, ordem e quantidade de páginas, tabelas, links, anexos, campos de formulário e assinaturas."
+              },
+              {
+                "h": "Revise privacidade e propriedades",
+                "x": "Redija de verdade os dados que o destinatário não deve ver. Confira comentários, anexos e metadados padrão; uma caixa preta sobre o texto não é redação."
+              },
+              {
+                "h": "Aprove o arquivo e confirme o envio",
+                "x": "Abra a cópia final, confira destinatário e permissões do canal, e registre qual versão foi aprovada."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "compare-pdf",
+            "x": "Compare dois PDFs grátis no navegador, sem cadastro ou marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Revise cada página e cada dado"
+          },
+          {
+            "t": "p",
+            "x": "O Compare PDF do PrintxPDF renderiza as páginas dos dois arquivos e destaca diferenças visuais. Ele pode mostrar alterações em texto visível, imagens, carimbos, layout e documentos digitalizados, mas não cria uma lista palavra por palavra de frases adicionadas ou removidas. Um pequeno deslocamento pode destacar grande parte da página; examine cada versão para entender a mudança. Revise página por página: confira número, ordem, orientação e páginas ausentes. Leia nomes, datas, valores, notas de rodapé e textos pequenos. Verifique tabelas, gráficos, links, anexos e campos preenchíveis. Em digitalizações e arquivos com imagens, não dependa apenas da busca de texto."
+          },
+          {
+            "t": "h2",
+            "x": "Remova conteúdo privado"
+          },
+          {
+            "t": "p",
+            "x": "A comparação visual não garante que o PDF esteja pronto para compartilhar. Se houver dados que o destinatário não deve receber, remova-os com [Redact PDF](/tools/redact-pdf) e confira o resultado. Revise também comentários, anexos e propriedades como título ou autor; [Remove Metadata](/tools/remove-metadata) limpa propriedades padrão, mas não apaga o conteúdo visível das páginas."
+          },
+          {
+            "t": "h2",
+            "x": "Aprove a cópia correta"
+          },
+          {
+            "t": "p",
+            "x": "Mantenha uma versão original sem alterações e salve a cópia aprovada com nome claro e novo número. Confira se o nome do arquivo, o status do documento e o destinatário estão alinhados. Se houver assinatura digital com certificado, alterações posteriores podem invalidá-la; conclua as revisões antes de pedir a assinatura."
+          },
+          {
+            "t": "table",
+            "head": [
+              "O que conferir",
+              "Ação",
+              "Motivo"
+            ],
+            "rows": [
+              [
+                "Mudanças entre versões",
+                "Comparar página por página",
+                "Diferenças visuais precisam de análise"
+              ],
+              [
+                "Páginas e estrutura",
+                "Conferir ordem, tabelas e anexos",
+                "Detecta omissões e erros de layout"
+              ],
+              [
+                "Dados confidenciais",
+                "Redigir e verificar a cópia",
+                "A comparação não remove informações"
+              ],
+              [
+                "Destinatário e status",
+                "Confirmar nome, permissões e versão",
+                "Evita compartilhar o arquivo errado"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "O Compare PDF compara texto ou aparência?",
+            "a": "Ele compara a aparência das páginas: renderiza cada uma e destaca diferenças visuais. Detecta mudanças em digitalizações, imagens e layout, mas não lista palavras adicionadas ou removidas. Examine as páginas destacadas e confirme cada diferença."
+          },
+          {
+            "q": "Por que quase a página toda aparece diferente?",
+            "a": "Um pequeno deslocamento pode mover muitos pixels e fazer uma área grande parecer diferente. Confira as visualizações A e B e o nível de tolerância; uma diferença visual nem sempre significa texto alterado."
+          },
+          {
+            "q": "A comparação remove dados confidenciais?",
+            "a": "Não. Compare PDF apenas compara as páginas. Use uma ferramenta de redação para remover o conteúdo e revise metadados, comentários e anexos separadamente."
+          },
+          {
+            "q": "O Compare PDF envia meus arquivos?",
+            "a": "Não. Os dois documentos são renderizados e comparados no navegador. Nada é enviado. As ferramentas principais são grátis, sem conta e sem marca-d’água."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "compare-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "share-draft-pdf-safely",
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "prevent-sending-wrong-pdf"
+        ]
       }
     ]
   },
@@ -20617,6 +20901,148 @@
           "document-version-naming-pdf",
           "redaction-vs-black-boxes",
           "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
+        ]
+      },
+      {
+        "topic": "pdf-review-copy-checklist",
+        "slug": "pdf-review-copy-checklist",
+        "title": "शेयर करने से पहले PDF समीक्षा चेकलिस्ट",
+        "metaTitle": "शेयर करने से पहले PDF समीक्षा चेकलिस्ट",
+        "metaDescription": "PDF साझा करने से पहले टेक्स्ट, पेज, निजी डेटा और प्राप्तकर्ता जाँचने के लिए यह सूची अपनाएँ। मुफ़्त, निजी ब्राउज़र में।",
+        "keyword": "शेयर करने से पहले PDF जाँच सूची",
+        "secondaryKeywords": [
+          "दो PDF संस्करणों की तुलना",
+          "भेजने से पहले PDF जाँच सूची",
+          "PDF में बदलाव पहचानना"
+        ],
+        "answer": "PDF साझा करने से पहले समीक्षा कॉपी की मूल से तुलना करें, टेक्स्ट, पेज, रकम, अटैचमेंट और हस्ताक्षर जाँचें, गोपनीय जानकारी सचमुच हटाएँ और मेटाडेटा व प्राप्तकर्ता देखें। PrintxPDF Compare PDF ब्राउज़र में पेजों की दृश्य तुलना करता है और फ़ाइलें अपलोड नहीं करता; फिर भी हर बदलाव को मंज़ूर करने से पहले स्वयं जाँचें।",
+        "tool": "compare-pdf",
+        "ctaLabel": "PDF तुलना करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF भेजने से पहले यह छोटी सूची अपनाएँ: कॉपी की मूल से तुलना करें, पेज और ज़रूरी विवरण देखें, गोपनीय सामग्री सचमुच हटाएँ, मेटाडेटा जाँचें और प्राप्तकर्ता की पुष्टि करें। PrintxPDF Compare PDF ब्राउज़र में पेज-दर-पेज दोनों दस्तावेज़ों की दृश्य तुलना करता है। फ़ाइलें अपलोड नहीं होतीं; मानवीय समीक्षा फिर भी ज़रूरी है।"
+          },
+          {
+            "t": "h2",
+            "x": "दृश्य तुलना क्या पकड़ती है"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "दोनों संस्करण रखें और नाम दें",
+                "x": "मूल और समीक्षा कॉपी अलग रखें। हर एक को स्पष्ट नाम, तारीख और संस्करण संख्या दें।"
+              },
+              {
+                "h": "दोनों कॉपियों की दृश्य तुलना करें",
+                "x": "[Compare PDF](/tools/compare-pdf) खोलें, पहले पुराना और फिर नया संस्करण जोड़ें। हर पेज देखें और हाइलाइट किए बदलाव जाँचें।"
+              },
+              {
+                "h": "सामग्री और संरचना सत्यापित करें",
+                "x": "नाम, तारीख, रकम, छोटा टेक्स्ट, पेज क्रम व संख्या, तालिकाएँ, लिंक, अटैचमेंट, फ़ॉर्म फ़ील्ड और हस्ताक्षर देखें।"
+              },
+              {
+                "h": "गोपनीयता और गुण जाँचें",
+                "x": "जो जानकारी प्राप्तकर्ता को नहीं दिखनी चाहिए उसे सचमुच रेडैक्ट करें। टिप्पणियाँ, अटैचमेंट और सामान्य मेटाडेटा भी देखें; ऊपर काला बॉक्स लगाना रेडैक्शन नहीं है।"
+              },
+              {
+                "h": "फ़ाइल मंज़ूर करें और भेजना जाँचें",
+                "x": "अंतिम कॉपी खोलें, प्राप्तकर्ता और शेयरिंग अनुमति की पुष्टि करें तथा मंज़ूर संस्करण का रिकॉर्ड रखें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "compare-pdf",
+            "x": "ब्राउज़र में दो PDF मुफ़्त तुलना करें—साइनअप या वॉटरमार्क नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "हर पेज और विवरण जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF Compare PDF दोनों PDF के पेज रेंडर करके दृश्य बदलाव दिखाता है। यह दिखाई देने वाले टेक्स्ट, तस्वीर, स्टैम्प, लेआउट और स्कैन में बदलाव पकड़ सकता है, लेकिन जोड़े या हटाए गए वाक्यों की शब्द-दर-शब्द सूची नहीं बनाता। छोटा सा खिसकाव पेज के बड़े हिस्से को अलग दिखा सकता है; बदलाव समझने के लिए दोनों संस्करण खोलें। हर पेज जाँचें: संख्या, क्रम, दिशा और गायब पेज देखें। नाम, तारीख, रकम, फुटनोट और छोटे अक्षर पढ़ें। तालिका, चार्ट, लिंक, अटैचमेंट और भरने योग्य फ़ील्ड देखें। स्कैन या चित्र वाले दस्तावेज़ में केवल टेक्स्ट खोज पर निर्भर न रहें।"
+          },
+          {
+            "t": "h2",
+            "x": "निजी सामग्री हटाएँ"
+          },
+          {
+            "t": "p",
+            "x": "दृश्य तुलना यह साबित नहीं करती कि PDF साझा करने के लिए तैयार है। जो जानकारी प्राप्तकर्ता को नहीं चाहिए, उसे [Redact PDF](/tools/redact-pdf) से हटाएँ और परिणाम जाँचें। टिप्पणियाँ, अटैचमेंट और शीर्षक या लेखक जैसे गुण भी देखें; [Remove Metadata](/tools/remove-metadata) सामान्य गुण साफ़ करता है, पेज पर दिखने वाली सामग्री नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "सही कॉपी मंज़ूर करें"
+          },
+          {
+            "t": "p",
+            "x": "बिना बदलाव वाली मूल प्रति रखें और मंज़ूर कॉपी को स्पष्ट नाम व नया संस्करण दें। फ़ाइल का नाम, दस्तावेज़ की स्थिति और प्राप्तकर्ता एक-दूसरे से मेल खाने चाहिए। सर्टिफिकेट वाली डिजिटल हस्ताक्षर के बाद बदलाव उसे अमान्य कर सकता है; हस्ताक्षर माँगने से पहले समीक्षा पूरी करें।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "क्या देखें",
+              "कदम",
+              "क्यों"
+            ],
+            "rows": [
+              [
+                "संस्करणों का बदलाव",
+                "पेज-दर-पेज तुलना",
+                "दृश्य अंतर का अर्थ समझना ज़रूरी"
+              ],
+              [
+                "पेज और संरचना",
+                "क्रम, तालिका, अटैचमेंट जाँचें",
+                "छूट और फ़ॉर्मेट गलती पकड़ता है"
+              ],
+              [
+                "गोपनीय जानकारी",
+                "रेडैक्ट कर कॉपी जाँचें",
+                "तुलना जानकारी नहीं हटाती"
+              ],
+              [
+                "प्राप्तकर्ता व स्थिति",
+                "नाम, अनुमति, संस्करण पुष्टि",
+                "गलत फ़ाइल शेयर होने से बचाता है"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Compare PDF टेक्स्ट की तुलना करता है या दिखावट की?",
+            "a": "यह पेजों की दिखावट की तुलना करता है: हर पेज रेंडर कर दृश्य अंतर दिखाता है। स्कैन, तस्वीर और लेआउट के बदलाव दिखते हैं, लेकिन जोड़े या हटाए गए शब्दों की सूची नहीं मिलती। हाइलाइट किए पेज जाँचें।"
+          },
+          {
+            "q": "लगभग पूरा पेज बदला हुआ क्यों दिखता है?",
+            "a": "छोटा खिसकाव कई पिक्सेल बदल सकता है और बड़ा क्षेत्र अलग दिखता है। A और B दृश्य तथा tolerance सेटिंग देखें; दृश्य अंतर का अर्थ हमेशा बदला हुआ टेक्स्ट नहीं है।"
+          },
+          {
+            "q": "क्या तुलना गोपनीय जानकारी हटा देती है?",
+            "a": "नहीं। Compare PDF सिर्फ पेजों की तुलना करता है। सामग्री हटाने के लिए रेडैक्शन टूल लें और मेटाडेटा, टिप्पणियाँ व अटैचमेंट अलग जाँचें।"
+          },
+          {
+            "q": "क्या Compare PDF मेरी फ़ाइलें अपलोड करता है?",
+            "a": "नहीं। दोनों दस्तावेज़ ब्राउज़र में रेंडर और तुलना होते हैं। कुछ अपलोड नहीं होता। मुख्य टूल मुफ़्त हैं, खाता और वॉटरमार्क नहीं चाहिए।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "compare-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "share-draft-pdf-safely",
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
           "prevent-sending-wrong-pdf"
         ]
       }
@@ -27497,6 +27923,148 @@
           "document-version-naming-pdf",
           "redaction-vs-black-boxes",
           "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
+        ]
+      },
+      {
+        "topic": "pdf-review-copy-checklist",
+        "slug": "pdf-review-copy-checklist",
+        "title": "قائمة مراجعة PDF قبل مشاركته",
+        "metaTitle": "قائمة مراجعة PDF قبل مشاركته",
+        "metaDescription": "استخدم هذه القائمة لمراجعة النص والصفحات والبيانات الخاصة والمستلم قبل مشاركة PDF. مجاني وخاص في المتصفح.",
+        "keyword": "قائمة مراجعة PDF قبل المشاركة",
+        "secondaryKeywords": [
+          "مقارنة نسختين من PDF",
+          "قائمة فحص PDF قبل الإرسال",
+          "اكتشاف التغييرات في PDF"
+        ],
+        "answer": "قبل مشاركة PDF، قارن نسخة المراجعة بالأصل، وتحقق من النص والصفحات والأرقام والمرفقات والتوقيعات، وأزل البيانات السرية فعلياً، وراجع البيانات الوصفية والمستلم. تقارن أداة Compare PDF من PrintxPDF الصفحات بصرياً في المتصفح من دون رفع الملفات؛ ومع ذلك راجع كل تغيير قبل اعتماد النسخة.",
+        "tool": "compare-pdf",
+        "ctaLabel": "مقارنة PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "استخدم قائمة قصيرة قبل إرسال PDF: قارن النسخة بالأصل، وافحص الصفحات والتفاصيل المهمة، وأزل المحتوى السري فعلياً، وراجع البيانات الوصفية وتأكد من المستلم. تقارن أداة Compare PDF من PrintxPDF المستندين بصرياً صفحة بصفحة داخل المتصفح. لا تُرفع الملفات، وتظل المراجعة البشرية ضرورية."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي تكشفه المقارنة المرئية"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالنسختين وسمّهما",
+                "x": "افصل الأصل عن نسخة المراجعة. استخدم اسماً واضحاً وتاريخاً ورقم إصدار لكل نسخة."
+              },
+              {
+                "h": "قارن النسختين بصرياً",
+                "x": "افتح [Compare PDF](/tools/compare-pdf)، وحمّل الإصدار الأقدم أولاً ثم الأحدث. تنقّل بين الصفحات وافحص التغييرات المظللة."
+              },
+              {
+                "h": "تحقق من المحتوى والبنية",
+                "x": "افحص الأسماء والتواريخ والمبالغ والنص الصغير وترتيب الصفحات وعددها والجداول والروابط والمرفقات والحقول والتوقيعات."
+              },
+              {
+                "h": "راجع الخصوصية والخصائص",
+                "x": "نقّح فعلياً البيانات التي يجب ألا يراها المستلم. افحص التعليقات والمرفقات والبيانات الوصفية القياسية؛ فالمستطيل الأسود ليس تنقيحاً."
+              },
+              {
+                "h": "اعتمد الملف وتأكد من الإرسال",
+                "x": "افتح النسخة النهائية وتحقق من المستلم وصلاحيات القناة، واحتفظ بسجل للإصدار المعتمد."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "compare-pdf",
+            "x": "قارن ملفي PDF مجاناً في المتصفح بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "راجع كل صفحة وكل تفصيل"
+          },
+          {
+            "t": "p",
+            "x": "ترسم Compare PDF صفحات الملفين وتبرز الاختلافات المرئية. يمكنها كشف تغييرات النص الظاهر والصور والأختام والتخطيط والنسخ الممسوحة ضوئياً، لكنها لا تنشئ قائمة كلمة بكلمة بالجمل المضافة أو المحذوفة. قد يؤدي انزياح بسيط إلى تظليل جزء كبير من الصفحة؛ افتح عرض كل نسخة لفهم التغيير. راجع كل صفحة: تحقق من رقمها وترتيبها واتجاهها وعدم وجود صفحات مفقودة. اقرأ الأسماء والتواريخ والمبالغ والحواشي والنص الصغير. افحص الجداول والرسوم والروابط والمرفقات والحقول القابلة للتعبئة. في المسح الضوئي أو المستندات المصورة، لا تعتمد على البحث النصي وحده."
+          },
+          {
+            "t": "h2",
+            "x": "أزل المحتوى الخاص"
+          },
+          {
+            "t": "p",
+            "x": "لا تثبت المقارنة البصرية أن PDF جاهز للمشاركة. إذا احتوى على بيانات لا ينبغي أن تصل إلى المستلم، أزلها باستخدام [Redact PDF](/tools/redact-pdf) وتحقق من النتيجة. راجع التعليقات والمرفقات وخصائص العنوان والمؤلف أيضاً؛ تنظف [Remove Metadata](/tools/remove-metadata) الخصائص القياسية لكنها لا تحذف المحتوى الظاهر على الصفحات."
+          },
+          {
+            "t": "h2",
+            "x": "اعتمد النسخة الصحيحة"
+          },
+          {
+            "t": "p",
+            "x": "احتفظ بالأصل دون تغيير واحفظ النسخة المعتمدة باسم واضح ورقم إصدار جديد. تأكد من توافق اسم الملف وحالته والمستلم. قد يؤدي أي تعديل بعد توقيع رقمي قائم على شهادة إلى إبطاله؛ أكمل المراجعة قبل طلب التوقيع."
+          },
+          {
+            "t": "table",
+            "head": [
+              "ما الذي تراجعه",
+              "الإجراء",
+              "السبب"
+            ],
+            "rows": [
+              [
+                "التغييرات بين الإصدارات",
+                "قارن صفحة بصفحة",
+                "تحتاج الفروق المرئية إلى تفسير"
+              ],
+              [
+                "الصفحات والبنية",
+                "تحقق من الترتيب والجداول والمرفقات",
+                "تكشف النقص وأخطاء التنسيق"
+              ],
+              [
+                "البيانات السرية",
+                "نقّح النسخة وتحقق منها",
+                "المقارنة لا تحذف المعلومات"
+              ],
+              [
+                "المستلم والحالة",
+                "تحقق من الاسم والصلاحيات والإصدار",
+                "تمنع مشاركة الملف الخطأ"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل تقارن Compare PDF النص أم مظهر الصفحة؟",
+            "a": "تقارن مظهر الصفحات عبر رسمها وإبراز الاختلافات المرئية. تكشف تغييرات المسح والصور والتخطيط، لكنها لا تسرد الكلمات المضافة أو المحذوفة. راجع الصفحات المظللة وتحقق من كل فرق."
+          },
+          {
+            "q": "لماذا تبدو الصفحة كلها متغيرة؟",
+            "a": "قد يؤدي انزياح صغير إلى تغيير كثير من البكسلات فيظهر جزء كبير مختلفاً. راجع العرضين A وB وإعداد التفاوت؛ فالاختلاف المرئي لا يعني دائماً تغير النص."
+          },
+          {
+            "q": "هل تزيل المقارنة البيانات السرية؟",
+            "a": "لا. تقارن Compare PDF الصفحات فقط. استخدم أداة تنقيح لإزالة المحتوى وراجع البيانات الوصفية والتعليقات والمرفقات بشكل منفصل."
+          },
+          {
+            "q": "هل ترفع Compare PDF ملفاتي؟",
+            "a": "لا. يُرسم المستندان ويُقارنان في المتصفح. لا يحدث رفع. الأدوات الأساسية مجانية بلا حساب أو علامة مائية."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "compare-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "share-draft-pdf-safely",
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
           "prevent-sending-wrong-pdf"
         ]
       }
@@ -34382,6 +34950,148 @@
           "pdf-review-copy-checklist",
           "prevent-sending-wrong-pdf"
         ]
+      },
+      {
+        "topic": "pdf-review-copy-checklist",
+        "slug": "pdf-review-copy-checklist",
+        "title": "শেয়ার করার আগে PDF পর্যালোচনা চেকলিস্ট",
+        "metaTitle": "শেয়ার করার আগে PDF পর্যালোচনা চেকলিস্ট",
+        "metaDescription": "PDF শেয়ারের আগে লেখা, পৃষ্ঠা, ব্যক্তিগত তথ্য ও প্রাপক যাচাই করতে এই তালিকা ব্যবহার করুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত।",
+        "keyword": "শেয়ারের আগে PDF যাচাই তালিকা",
+        "secondaryKeywords": [
+          "দুটি PDF সংস্করণ তুলনা",
+          "পাঠানোর আগে PDF যাচাই তালিকা",
+          "PDF পরিবর্তন শনাক্ত"
+        ],
+        "answer": "PDF শেয়ারের আগে পর্যালোচনা কপির সঙ্গে মূল কপি তুলনা করুন, লেখা, পৃষ্ঠা, অঙ্ক, সংযুক্তি ও স্বাক্ষর দেখুন, গোপন তথ্য সত্যিই সরান এবং মেটাডেটা ও প্রাপক যাচাই করুন। PrintxPDF Compare PDF ব্রাউজারে পৃষ্ঠার দৃশ্য তুলনা করে, ফাইল আপলোড করে না; তবু অনুমোদনের আগে প্রতিটি পরিবর্তন নিজে দেখুন।",
+        "tool": "compare-pdf",
+        "ctaLabel": "PDF তুলনা",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF পাঠানোর আগে এই সংক্ষিপ্ত তালিকা দেখুন: কপির সঙ্গে মূল তুলনা, পৃষ্ঠা ও জরুরি তথ্য যাচাই, গোপন কনটেন্ট সত্যিই সরানো, মেটাডেটা পরীক্ষা এবং প্রাপক নিশ্চিত করা। PrintxPDF Compare PDF ব্রাউজারে পৃষ্ঠা ধরে দুই নথির দৃশ্য তুলনা করে। ফাইল আপলোড হয় না; মানুষের পর্যালোচনা তবুও জরুরি।"
+          },
+          {
+            "t": "h2",
+            "x": "দৃশ্য তুলনা কী শনাক্ত করে"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "দুই সংস্করণ রাখুন ও নাম দিন",
+                "x": "মূল ও পর্যালোচনা কপি আলাদা রাখুন। প্রতিটিতে স্পষ্ট নাম, তারিখ ও সংস্করণ নম্বর দিন।"
+              },
+              {
+                "h": "দৃশ্যত দুই কপি তুলনা করুন",
+                "x": "[Compare PDF](/tools/compare-pdf) খুলে আগে পুরোনো, পরে নতুন সংস্করণ দিন। প্রতিটি পাতা দেখুন এবং হাইলাইট করা বদল পরীক্ষা করুন।"
+              },
+              {
+                "h": "বিষয়বস্তু ও কাঠামো যাচাই করুন",
+                "x": "নাম, তারিখ, অঙ্ক, ছোট লেখা, পৃষ্ঠা ক্রম ও সংখ্যা, টেবিল, লিংক, সংযুক্তি, ফর্ম ফিল্ড এবং স্বাক্ষর দেখুন।"
+              },
+              {
+                "h": "গোপনীয়তা ও বৈশিষ্ট্য দেখুন",
+                "x": "প্রাপকের দেখা উচিত নয় এমন তথ্য সত্যিকারের রেড্যাক্ট করুন। মন্তব্য, সংযুক্তি ও সাধারণ মেটাডেটা পরীক্ষা করুন; কালো বাক্স রেড্যাকশন নয়।"
+              },
+              {
+                "h": "ফাইল অনুমোদন করে পাঠানো নিশ্চিত করুন",
+                "x": "চূড়ান্ত কপি খুলুন, প্রাপক ও মাধ্যমের অনুমতি দেখুন এবং অনুমোদিত সংস্করণের রেকর্ড রাখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "compare-pdf",
+            "x": "ব্রাউজারে বিনামূল্যে দুটি PDF তুলনা করুন—সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রতিটি পৃষ্ঠা ও তথ্য দেখুন"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF Compare PDF দুই ফাইলের পৃষ্ঠা রেন্ডার করে দৃশ্যমান পার্থক্য দেখায়। এটি দৃশ্যমান লেখা, ছবি, সিল, লেআউট ও স্ক্যানের পরিবর্তন ধরতে পারে; কিন্তু যোগ বা বাদ পড়া বাক্যের শব্দে-শব্দে তালিকা করে না। সামান্য সরলেও পাতার বড় অংশ আলাদা দেখাতে পারে; পরিবর্তন বুঝতে দুই সংস্করণ খুলে দেখুন। প্রতি পাতা যাচাই করুন: নম্বর, ক্রম, দিক ও কোনো পৃষ্ঠা বাদ পড়েছে কি না। নাম, তারিখ, অঙ্ক, ফুটনোট ও ছোট লেখা পড়ুন। টেবিল, চার্ট, লিংক, সংযুক্তি ও পূরণযোগ্য ফিল্ড দেখুন। স্ক্যান বা ছবিনির্ভর ফাইলে শুধু টেক্সট সার্চের ওপর নির্ভর করবেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্যক্তিগত কনটেন্ট সরান"
+          },
+          {
+            "t": "p",
+            "x": "দৃশ্য তুলনা PDF শেয়ারের জন্য প্রস্তুত—এটি প্রমাণ করে না। প্রাপককে দেখানো যাবে না এমন তথ্য [Redact PDF](/tools/redact-pdf) দিয়ে সরিয়ে ফল পরীক্ষা করুন। মন্তব্য, সংযুক্তি এবং শিরোনাম বা লেখকের মতো বৈশিষ্ট্যও দেখুন; [Remove Metadata](/tools/remove-metadata) সাধারণ বৈশিষ্ট্য পরিষ্কার করে, পৃষ্ঠায় দেখা লেখা নয়।"
+          },
+          {
+            "t": "h2",
+            "x": "সঠিক কপি অনুমোদন করুন"
+          },
+          {
+            "t": "p",
+            "x": "অপরিবর্তিত মূল কপি রাখুন এবং অনুমোদিত কপিকে স্পষ্ট নাম ও নতুন সংস্করণ নম্বর দিন। ফাইলের নাম, নথির অবস্থা ও প্রাপক মিলছে কি না দেখুন। সার্টিফিকেট-ভিত্তিক ডিজিটাল স্বাক্ষরের পরে সম্পাদনা করলে তা অবৈধ হতে পারে; স্বাক্ষর চাওয়ার আগে পর্যালোচনা শেষ করুন।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "কী দেখবেন",
+              "কাজ",
+              "কারণ"
+            ],
+            "rows": [
+              [
+                "সংস্করণের পরিবর্তন",
+                "পৃষ্ঠা ধরে তুলনা",
+                "দৃশ্য পার্থক্য ব্যাখ্যা দরকার"
+              ],
+              [
+                "পৃষ্ঠা ও কাঠামো",
+                "ক্রম, টেবিল ও সংযুক্তি দেখুন",
+                "বাদ পড়া ও ফরম্যাট ভুল ধরে"
+              ],
+              [
+                "গোপন তথ্য",
+                "রেড্যাক্ট করে কপি দেখুন",
+                "তুলনা তথ্য সরায় না"
+              ],
+              [
+                "প্রাপক ও অবস্থা",
+                "নাম, অনুমতি, সংস্করণ নিশ্চিত",
+                "ভুল ফাইল শেয়ার ঠেকায়"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Compare PDF কি লেখা নাকি পৃষ্ঠার চেহারা তুলনা করে?",
+            "a": "এটি পৃষ্ঠার চেহারা তুলনা করে: পৃষ্ঠা রেন্ডার করে দৃশ্যমান পার্থক্য দেখায়। স্ক্যান, ছবি ও লেআউটের পরিবর্তন ধরে, কিন্তু যোগ বা বাদ পড়া শব্দের তালিকা দেয় না। হাইলাইট করা পৃষ্ঠা পরীক্ষা করুন।"
+          },
+          {
+            "q": "প্রায় পুরো পৃষ্ঠা বদলেছে দেখায় কেন?",
+            "a": "সামান্য সরলেও অনেক পিক্সেল বদলাতে পারে, তাই বড় অংশ আলাদা দেখায়। A ও B ভিউ এবং tolerance দেখুন; দৃশ্যমান পার্থক্য মানেই লেখা বদল নয়।"
+          },
+          {
+            "q": "তুলনা কি গোপন তথ্য মুছে দেয়?",
+            "a": "না। Compare PDF শুধু পৃষ্ঠা তুলনা করে। কনটেন্ট সরাতে রেড্যাকশন টুল ব্যবহার করুন; মেটাডেটা, মন্তব্য ও সংযুক্তি আলাদা করে দেখুন।"
+          },
+          {
+            "q": "Compare PDF কি ফাইল আপলোড করে?",
+            "a": "না। দুই নথি ব্রাউজারে রেন্ডার ও তুলনা হয়। কিছু আপলোড হয় না। প্রধান টুল বিনামূল্যে; অ্যাকাউন্ট বা ওয়াটারমার্ক নেই।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "compare-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "share-draft-pdf-safely",
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "prevent-sending-wrong-pdf"
+        ]
       }
     ]
   },
@@ -41251,6 +41961,148 @@
           "document-version-naming-pdf",
           "redaction-vs-black-boxes",
           "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
+        ]
+      },
+      {
+        "topic": "pdf-review-copy-checklist",
+        "slug": "pdf-review-copy-checklist",
+        "title": "Danh sách kiểm tra PDF trước khi chia sẻ",
+        "metaTitle": "Danh sách kiểm tra PDF trước khi chia sẻ",
+        "metaDescription": "Dùng danh sách này để kiểm tra văn bản, trang, dữ liệu riêng tư và người nhận trước khi chia sẻ PDF. Miễn phí, riêng tư trên trình duyệt.",
+        "keyword": "danh sách kiểm tra PDF trước khi chia sẻ",
+        "secondaryKeywords": [
+          "so sánh hai phiên bản PDF",
+          "danh sách kiểm tra PDF trước khi gửi",
+          "phát hiện thay đổi trong PDF"
+        ],
+        "answer": "Trước khi chia sẻ PDF, hãy so sánh bản rà soát với bản gốc, kiểm tra văn bản, trang, số liệu, tệp đính kèm và chữ ký, xóa thật sự dữ liệu bí mật, rồi kiểm tra siêu dữ liệu và người nhận. Compare PDF của PrintxPDF so sánh hình ảnh từng trang trong trình duyệt mà không tải tệp lên; bạn vẫn cần xem từng thay đổi trước khi duyệt.",
+        "tool": "compare-pdf",
+        "ctaLabel": "So sánh PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Dùng danh sách ngắn trước khi gửi PDF: so sánh bản sao với bản gốc, kiểm tra trang và chi tiết quan trọng, xóa thật sự nội dung bí mật, xem siêu dữ liệu và xác nhận người nhận. Compare PDF của PrintxPDF so sánh trực quan từng trang ngay trong trình duyệt. Tệp không được tải lên; việc rà soát của con người vẫn cần thiết."
+          },
+          {
+            "t": "h2",
+            "x": "So sánh trực quan phát hiện điều gì"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ và đặt tên cho hai phiên bản",
+                "x": "Tách riêng bản gốc và bản rà soát. Đặt tên rõ ràng kèm ngày và số phiên bản."
+              },
+              {
+                "h": "So sánh trực quan hai bản",
+                "x": "Mở [Compare PDF](/tools/compare-pdf), tải bản cũ trước rồi bản mới. Lần lượt xem từng trang và các điểm được tô sáng."
+              },
+              {
+                "h": "Kiểm tra nội dung và cấu trúc",
+                "x": "Xem tên, ngày, số liệu, chữ nhỏ, thứ tự và số trang, bảng, liên kết, tệp đính kèm, trường biểu mẫu và chữ ký."
+              },
+              {
+                "h": "Kiểm tra quyền riêng tư và thuộc tính",
+                "x": "Biên tập xóa thật sự dữ liệu người nhận không nên thấy. Kiểm tra bình luận, tệp đính kèm và siêu dữ liệu chuẩn; hình chữ nhật đen không phải biên tập xóa."
+              },
+              {
+                "h": "Duyệt tệp và xác nhận việc gửi",
+                "x": "Mở bản cuối, kiểm tra người nhận và quyền của kênh chia sẻ, đồng thời lưu lại phiên bản đã duyệt."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "compare-pdf",
+            "x": "So sánh hai PDF miễn phí trên trình duyệt, không cần đăng ký hay hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra từng trang và chi tiết"
+          },
+          {
+            "t": "p",
+            "x": "Compare PDF của PrintxPDF dựng trang từ cả hai tệp và tô dấu khác biệt trực quan. Công cụ có thể phát hiện thay đổi ở chữ hiển thị, hình ảnh, dấu, bố cục và bản quét, nhưng không tạo danh sách từng từ được thêm hoặc xóa. Một dịch chuyển nhỏ có thể khiến phần lớn trang bị đánh dấu; hãy xem từng bản để hiểu thay đổi. Rà từng trang: kiểm tra số, thứ tự, hướng và trang bị thiếu. Đọc tên, ngày, số tiền, chú thích cuối trang và chữ nhỏ. Kiểm tra bảng, biểu đồ, liên kết, tệp đính kèm và trường có thể điền. Với tài liệu quét hoặc nhiều ảnh, đừng chỉ dựa vào tìm kiếm văn bản."
+          },
+          {
+            "t": "h2",
+            "x": "Xóa nội dung riêng tư"
+          },
+          {
+            "t": "p",
+            "x": "So sánh hình ảnh không chứng minh PDF đã sẵn sàng chia sẻ. Nếu có dữ liệu người nhận không được xem, hãy xóa bằng [Redact PDF](/tools/redact-pdf) và kiểm tra kết quả. Xem cả bình luận, tệp đính kèm, tiêu đề và tác giả; [Remove Metadata](/tools/remove-metadata) dọn thuộc tính chuẩn chứ không xóa nội dung hiển thị trên trang."
+          },
+          {
+            "t": "h2",
+            "x": "Duyệt đúng bản sao"
+          },
+          {
+            "t": "p",
+            "x": "Giữ bản gốc không đổi và lưu bản đã duyệt với tên rõ ràng, số phiên bản mới. Đảm bảo tên tệp, trạng thái tài liệu và người nhận khớp nhau. Chỉnh sửa sau chữ ký số dựa trên chứng thư có thể làm chữ ký mất hiệu lực; hãy rà xong trước khi yêu cầu ký."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Cần kiểm tra",
+              "Cách làm",
+              "Lý do"
+            ],
+            "rows": [
+              [
+                "Thay đổi giữa các bản",
+                "So sánh từng trang",
+                "Khác biệt hình ảnh cần được diễn giải"
+              ],
+              [
+                "Trang và cấu trúc",
+                "Kiểm tra thứ tự, bảng, tệp đính kèm",
+                "Phát hiện thiếu sót và lỗi bố cục"
+              ],
+              [
+                "Dữ liệu bí mật",
+                "Biên tập xóa và kiểm tra bản sao",
+                "So sánh không xóa dữ liệu"
+              ],
+              [
+                "Người nhận và trạng thái",
+                "Xác nhận tên, quyền và phiên bản",
+                "Tránh chia sẻ nhầm tệp"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Compare PDF so sánh văn bản hay hình thức trang?",
+            "a": "Công cụ so sánh hình thức trang bằng cách dựng và đánh dấu khác biệt trực quan. Nó phát hiện thay đổi ở bản quét, hình ảnh và bố cục nhưng không liệt kê từ được thêm hoặc xóa. Hãy xem các trang được đánh dấu."
+          },
+          {
+            "q": "Vì sao gần như cả trang hiển thị là đã thay đổi?",
+            "a": "Một dịch chuyển nhỏ có thể làm đổi nhiều điểm ảnh nên vùng lớn bị đánh dấu. Xem các chế độ A và B cùng mức dung sai; khác biệt hình ảnh chưa chắc là thay đổi văn bản."
+          },
+          {
+            "q": "So sánh có xóa dữ liệu bí mật không?",
+            "a": "Không. Compare PDF chỉ so sánh các trang. Dùng công cụ biên tập xóa để loại nội dung và kiểm tra riêng siêu dữ liệu, bình luận, tệp đính kèm."
+          },
+          {
+            "q": "Compare PDF có tải tệp của tôi lên không?",
+            "a": "Không. Hai tài liệu được dựng và so sánh ngay trong trình duyệt. Không có tải lên. Các công cụ chính miễn phí, không cần tài khoản hay hình mờ."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "compare-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "share-draft-pdf-safely",
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
           "prevent-sending-wrong-pdf"
         ]
       }
@@ -48131,6 +48983,148 @@
           "document-version-naming-pdf",
           "redaction-vs-black-boxes",
           "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
+        ]
+      },
+      {
+        "topic": "pdf-review-copy-checklist",
+        "slug": "pdf-review-copy-checklist",
+        "title": "分享前检查 PDF 的清单",
+        "metaTitle": "分享前检查 PDF 的清单",
+        "metaDescription": "分享 PDF 前用此清单检查文本、页面、隐私数据和收件人。免费、浏览器本地处理、无需注册。",
+        "keyword": "分享前 PDF 检查清单",
+        "secondaryKeywords": [
+          "比较两个 PDF 版本",
+          "发送前 PDF 检查清单",
+          "查找 PDF 中的改动"
+        ],
+        "answer": "分享 PDF 前，请将审核副本与原件进行比较，核对文本、页面、数字、附件和签名，真正删除机密信息，并检查元数据和收件人。PrintxPDF“比较 PDF”在浏览器中逐页进行视觉比较，不会上传文件；批准前仍需逐项检查差异。",
+        "tool": "compare-pdf",
+        "ctaLabel": "比较 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "发送 PDF 前使用这份简短清单：将副本与原件比较，检查页面和关键细节，真正删除机密内容，查看元数据并确认收件人。PrintxPDF“比较 PDF”在浏览器中逐页比较两份文档的视觉内容。文件不会上传；人工审核仍不可少。"
+          },
+          {
+            "t": "h2",
+            "x": "视觉比较可以发现什么"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保存并标记两个版本",
+                "x": "将原件与审核副本分开保存。为每个版本使用清晰名称、日期和版本号。"
+              },
+              {
+                "h": "视觉比较两个副本",
+                "x": "打开[比较 PDF](/tools/compare-pdf)，先添加旧版本，再添加新版本。逐页查看并检查高亮的变化。"
+              },
+              {
+                "h": "核对内容和结构",
+                "x": "检查姓名、日期、金额、小字、页序和页数、表格、链接、附件、表单字段及签名。"
+              },
+              {
+                "h": "检查隐私和属性",
+                "x": "真正涂除收件人不应看到的信息。检查批注、附件和常见元数据；在文字上盖黑框不等于涂除。"
+              },
+              {
+                "h": "批准文件并确认发送",
+                "x": "打开最终副本，核对收件人和共享渠道权限，并记录获批的版本。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "compare-pdf",
+            "x": "在浏览器中免费比较两份 PDF，无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "逐页核对每项信息"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF“比较 PDF”会渲染两份 PDF 的页面并突出显示视觉差异。它可以发现可见文字、图像、印章、版式和扫描件的变化，但不会逐字列出新增或删除的句子。轻微移动也可能使页面大面积标记；请查看两个版本的原始视图来判断差异。 逐页检查：确认页码、顺序、方向以及是否缺页。阅读姓名、日期、金额、脚注和小字。检查表格、图表、链接、附件和可填写字段。对于扫描件或图像较多的文件，不要只依赖文本搜索。"
+          },
+          {
+            "t": "h2",
+            "x": "清理隐私内容"
+          },
+          {
+            "t": "p",
+            "x": "视觉比较并不能证明 PDF 已适合分享。如果有收件人不应看到的信息，请使用[涂除 PDF](/tools/redact-pdf)真正删除，并检查结果。还要查看批注、附件、标题和作者等属性；[删除元数据](/tools/remove-metadata)会清理常见属性，但不会删除页面上可见的内容。"
+          },
+          {
+            "t": "h2",
+            "x": "批准正确的副本"
+          },
+          {
+            "t": "p",
+            "x": "保留未修改的原件，并使用清晰名称和新版本号保存获批副本。核对文件名、文档状态和收件人是否一致。基于证书的数字签名之后再编辑文件，可能导致签名失效；请在请求签名之前完成审核。"
+          },
+          {
+            "t": "table",
+            "head": [
+              "检查内容",
+              "操作",
+              "原因"
+            ],
+            "rows": [
+              [
+                "版本间的变化",
+                "逐页比较",
+                "视觉差异需要人工判断"
+              ],
+              [
+                "页面和结构",
+                "检查页序、表格和附件",
+                "发现遗漏和排版错误"
+              ],
+              [
+                "机密数据",
+                "涂除并检查副本",
+                "比较操作不会删除信息"
+              ],
+              [
+                "收件人和状态",
+                "核对名称、权限和版本",
+                "避免分享错误文件"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "比较 PDF 比较的是文本还是页面外观？",
+            "a": "它比较页面外观：渲染页面并标出视觉差异。可发现扫描件、图像和版式变化，但不会列出新增或删除的文字。请检查标记页面并确认每项差异。"
+          },
+          {
+            "q": "为什么几乎整页都显示为已更改？",
+            "a": "轻微移动可能改变大量像素，使大面积区域被标记。查看 A、B 版本视图和容差设置；视觉差异不一定代表文本已更改。"
+          },
+          {
+            "q": "比较 PDF 会删除机密信息吗？",
+            "a": "不会。“比较 PDF”只比较页面。请用涂除工具删除内容，并分别检查元数据、批注和附件。"
+          },
+          {
+            "q": "比较 PDF 会上传我的文件吗？",
+            "a": "不会。两份文档都在浏览器中渲染和比较，不会上传。核心工具免费，无需账户，也没有水印。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "compare-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "share-draft-pdf-safely",
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
           "prevent-sending-wrong-pdf"
         ]
       }
