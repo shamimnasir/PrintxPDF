@@ -1,0 +1,936 @@
+{
+  "topic": "merge-pdf-files-in-order",
+  "sourceCluster": "merge",
+  "tool": "merge-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo unir archivos PDF en un orden concreto",
+      "metaTitle": "Unir PDF en orden y revisar todas las páginas",
+      "metaDescription": "Une archivos PDF en el orden correcto, revisa cada sección y corrige páginas sueltas. Gratis, sin registro, con procesamiento privado en el navegador.",
+      "keyword": "unir archivos PDF en orden",
+      "secondaryKeywords": [
+        "combinar PDF en orden",
+        "ordenar archivos antes de unir PDF",
+        "organizar páginas PDF",
+        "unir varios documentos PDF"
+      ],
+      "answer": "Para unir archivos PDF en un orden concreto, organiza primero los archivos completos, crea el nuevo PDF y revisa cada transición entre documentos. PrintxPDF permite ordenar los archivos y unirlos localmente en el navegador, gratis y sin registro ni marca de agua. Si necesitas mover páginas individuales, usa después una herramienta para organizar páginas.",
+      "ctaLabel": "Ordenar y unir archivos PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "El orden correcto importa al preparar un paquete de contratos, una solicitud, una presentación judicial o un conjunto de recibos. Empieza colocando los archivos completos en el orden deseado antes de unirlos. Después revisa el PDF final página por página. PrintxPDF realiza la unión en la pestaña del navegador, así que los documentos normales permanecen en tu equipo. No hace falta crear una cuenta, añadir una tarjeta ni gestionar marcas de agua o periodos de prueba."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo combinar archivos PDF en el orden correcto"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Identifica cada archivo de origen",
+              "x": "Abre los archivos y determina su función: portada, documento principal, anexo, página firmada o recibo. Añadir prefijos sencillos como 01, 02 y 03 ayuda a no elegir una copia equivocada."
+            },
+            {
+              "h": "Añade los archivos a Unir PDF",
+              "x": "Abre [Unir PDF](/tools/merge-pdf) y añade todas las fuentes. Colócalas en la secuencia deseada antes de unirlas."
+            },
+            {
+              "h": "Crea el archivo combinado",
+              "x": "Ejecuta la unión. El resultado sigue el orden de los archivos de entrada y los originales permanecen intactos en tu equipo."
+            },
+            {
+              "h": "Revisa cada límite entre documentos",
+              "x": "Abre el PDF nuevo. Comprueba la última página de cada fuente y la primera de la siguiente para detectar páginas duplicadas o ausentes, escaneos girados y anexos incorrectos."
+            },
+            {
+              "h": "Corrige páginas individuales si hace falta",
+              "x": "Usa [Organizar páginas](/tools/organize-pdf) para mover una hoja, [Rotar PDF](/tools/rotate-pdf) para corregir un escaneo o [Eliminar páginas](/tools/delete-pages) para quitar una hoja en blanco."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Ordena y une PDF gratis en el navegador, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Orden de archivos y orden de páginas"
+        },
+        {
+          "t": "table",
+          "caption": "Elige la herramienta según el cambio de orden que necesitas.",
+          "head": [
+            "Situación",
+            "Herramienta adecuada",
+            "Motivo"
+          ],
+          "rows": [
+            [
+              "Los documentos completos van uno tras otro",
+              "Unir PDF",
+              "Mantiene cada archivo como un bloque en el orden que eliges."
+            ],
+            [
+              "Una página debe ir entre dos documentos",
+              "Organizar páginas",
+              "Mueve páginas individuales después de la unión."
+            ],
+            [
+              "Una página está al revés",
+              "Rotar PDF",
+              "Cambia la orientación sin reconstruir el paquete."
+            ],
+            [
+              "Se coló una página en blanco o duplicada",
+              "Eliminar páginas",
+              "Crea una copia limpia sin esa página."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba el orden antes de que el destinatario encuentre un error"
+        },
+        {
+          "t": "p",
+          "x": "Un PDF puede abrir correctamente y aun así ser el paquete equivocado. Cuenta las páginas, compara los cambios de sección con tu lista de control y revisa los números cuando las fuentes usan numeraciones distintas. En registros escaneados, comprueba fechas, firmas y totales con zoom del 100 %. Si el documento combinado debe permitir búsquedas, ejecuta [OCR PDF](/tools/ocr-pdf) en una copia de trabajo y compara nombres y cifras importantes con la imagen de cada página."
+        },
+        {
+          "t": "h2",
+          "x": "Mantén los documentos sensibles en tu equipo"
+        },
+        {
+          "t": "p",
+          "x": "Los errores de orden suelen afectar archivos delicados: documentos de identidad, facturas, informes y formularios firmados. El procesamiento local del navegador evita tener que dejar los archivos en un servicio de carga de terceros solo para reunirlos. Conserva los originales y crea una copia separada para distribuir. Si la política lo exige, elimina los metadatos del documento; una unión no borra automáticamente los campos de autor, comentarios ni otros datos incrustados."
+        },
+        {
+          "t": "warn",
+          "x": "Eliminar una página no es lo mismo que redactarla. Si la información privada aparece en otras partes del documento, utiliza un flujo de redacción verificado. Conserva el original y revisa la copia final antes de enviarla."
+        },
+        {
+          "t": "p",
+          "x": "Para continuar, consulta [cómo unir archivos PDF](/blog/merge/how-to-merge-pdf-files), [cómo reordenar páginas PDF](/blog/merge/reorder-pdf-pages) y [cómo extraer páginas de un PDF](/blog/split/extract-pages-from-pdf). El flujo fiable es sencillo: ordenar, unir, revisar y compartir."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo elegir el orden antes de unir los PDF?",
+          "a": "Sí. Coloca los archivos de entrada en la secuencia necesaria antes de iniciar la unión. El resultado sigue ese orden, así que revísalo antes de crear la copia definitiva."
+        },
+        {
+          "q": "¿Puedo mover una página después de unir los PDF?",
+          "a": "Sí. Primero une los documentos y luego usa una herramienta de organización para mover una página, girar un escaneo o quitar un duplicado sin rehacer todos los archivos de origen."
+        },
+        {
+          "q": "¿Necesito una cuenta para unir PDF en orden?",
+          "a": "No. La herramienta Unir PDF de PrintxPDF funciona localmente en el navegador, es gratis, no exige registro y no coloca marcas de agua."
+        },
+        {
+          "q": "¿Unir los PDF cambia los archivos originales?",
+          "a": "No. La unión crea un PDF nuevo. Conserva los documentos fuente hasta comprobar el paquete final y confirmar que ya no necesitas los originales."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como juntar arquivos PDF em uma ordem específica",
+      "metaTitle": "Junte PDFs na ordem certa e confira as páginas",
+      "metaDescription": "Junte PDFs na ordem certa, confira cada seção e ajuste páginas avulsas. Grátis, sem cadastro, com processamento privado no navegador.",
+      "keyword": "juntar arquivos PDF em ordem",
+      "secondaryKeywords": [
+        "combinar PDF em ordem",
+        "ordenar arquivos antes de juntar PDF",
+        "organizar páginas PDF",
+        "juntar documentos PDF"
+      ],
+      "answer": "Para juntar arquivos PDF em uma ordem específica, organize primeiro os arquivos completos, crie o novo PDF e confira cada transição entre documentos. O PrintxPDF permite ordenar os arquivos e mesclá-los localmente no navegador, grátis e sem cadastro ou marca-d'água. Se precisar mover páginas individuais, use depois uma ferramenta para organizar páginas.",
+      "ctaLabel": "Organizar e juntar arquivos PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "A ordem correta é essencial ao montar um pacote de contratos, uma inscrição, um processo judicial ou um conjunto de recibos. Comece organizando os arquivos inteiros na sequência desejada antes de juntá-los. Depois, confira o PDF pronto página por página. O PrintxPDF faz a mesclagem na aba do navegador, então os documentos comuns ficam no seu computador. Não é preciso criar conta, informar cartão nem lidar com marca-d'água ou período de teste."
+        },
+        {
+          "t": "h2",
+          "x": "Como combinar arquivos PDF na ordem correta"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Identifique cada arquivo de origem",
+              "x": "Abra os arquivos e veja a função de cada um: capa, documento principal, anexo, página assinada ou recibo. Prefixos simples como 01, 02 e 03 ajudam a evitar a escolha da cópia errada."
+            },
+            {
+              "h": "Adicione os arquivos a Juntar PDF",
+              "x": "Abra [Juntar PDF](/tools/merge-pdf) e adicione todas as fontes. Coloque-as na sequência desejada antes de mesclar."
+            },
+            {
+              "h": "Crie o arquivo combinado",
+              "x": "Execute a mesclagem. O resultado segue a ordem dos arquivos de entrada, e os originais continuam intactos no seu dispositivo."
+            },
+            {
+              "h": "Confira cada transição",
+              "x": "Abra o novo PDF. Examine a última página de cada fonte e a primeira da seguinte para encontrar páginas duplicadas ou ausentes, digitalizações giradas e anexos incorretos."
+            },
+            {
+              "h": "Ajuste páginas individuais se necessário",
+              "x": "Use [Organizar páginas](/tools/organize-pdf) para mover uma página, [Girar PDF](/tools/rotate-pdf) para corrigir uma digitalização ou [Excluir páginas](/tools/delete-pages) para remover uma folha em branco."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Organize e junte PDFs grátis no navegador, sem cadastro nem marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "Ordem dos arquivos e ordem das páginas"
+        },
+        {
+          "t": "table",
+          "caption": "Escolha a ferramenta conforme o tipo de ajuste necessário.",
+          "head": [
+            "Situação",
+            "Ferramenta indicada",
+            "Por quê"
+          ],
+          "rows": [
+            [
+              "Documentos inteiros ficam um após o outro",
+              "Juntar PDF",
+              "Mantém cada arquivo como um bloco na ordem escolhida."
+            ],
+            [
+              "Uma página deve ficar entre dois arquivos",
+              "Organizar páginas",
+              "Move páginas individuais depois da mesclagem."
+            ],
+            [
+              "Uma página está de cabeça para baixo",
+              "Girar PDF",
+              "Altera a orientação sem reconstruir o pacote."
+            ],
+            [
+              "Entrou uma página em branco ou duplicada",
+              "Excluir páginas",
+              "Cria uma cópia limpa sem aquela página."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Confira a ordem antes que o destinatário encontre um erro"
+        },
+        {
+          "t": "p",
+          "x": "Um PDF pode abrir normalmente e ainda ser o pacote errado. Conte as páginas, compare as divisões de seção com sua lista e confira a numeração quando os arquivos de origem usam números próprios. Em registros digitalizados, verifique datas, assinaturas e totais com zoom de 100%. Se o documento combinado precisar permitir buscas, execute [OCR PDF](/tools/ocr-pdf) em uma cópia de trabalho e confira nomes e números importantes na imagem de cada página."
+        },
+        {
+          "t": "h2",
+          "x": "Mantenha documentos sensíveis no seu dispositivo"
+        },
+        {
+          "t": "p",
+          "x": "Erros de ordem costumam envolver arquivos delicados: documentos de identidade, faturas, relatórios e formulários assinados. O processamento local no navegador evita deixar os arquivos em um serviço de upload de terceiros só para reuni-los. Guarde os originais e crie uma cópia separada para distribuição. Quando a política exigir, remova os metadados do documento; a mesclagem não apaga automaticamente campos de autor, comentários ou outras informações incorporadas."
+        },
+        {
+          "t": "warn",
+          "x": "Excluir uma página não é o mesmo que ocultar informações com redação. Se os dados privados aparecerem em outro ponto do documento, use um fluxo de redação verificado. Guarde o original e confira a cópia final antes de enviá-la."
+        },
+        {
+          "t": "p",
+          "x": "Para continuar, veja [como juntar arquivos PDF](/blog/merge/how-to-merge-pdf-files), [como reordenar páginas PDF](/blog/merge/reorder-pdf-pages) e [como extrair páginas de um PDF](/blog/split/extract-pages-from-pdf). O fluxo confiável é simples: ordenar, juntar, conferir e compartilhar."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso escolher a ordem antes de juntar PDFs?",
+          "a": "Sim. Organize os arquivos de entrada na sequência necessária antes de iniciar a mesclagem. O resultado segue essa ordem, então confira tudo antes de criar a cópia final."
+        },
+        {
+          "q": "Posso mover uma página depois de juntar PDFs?",
+          "a": "Sim. Junte os documentos primeiro e depois use uma ferramenta de organização para mover uma página, girar uma digitalização ou remover uma duplicada sem refazer todas as fontes."
+        },
+        {
+          "q": "Preciso de uma conta para juntar PDFs em ordem?",
+          "a": "Não. A ferramenta Juntar PDF do PrintxPDF processa localmente no navegador, é grátis, não exige cadastro e não coloca marca-d'água."
+        },
+        {
+          "q": "Juntar PDFs altera os arquivos originais?",
+          "a": "Não. A mesclagem cria um PDF novo. Mantenha os documentos de origem até conferir o pacote final e confirmar que não precisa mais deles."
+        }
+      ]
+    },
+    "hi": {
+      "title": "PDF फाइलें खास क्रम में कैसे जोड़ें",
+      "metaTitle": "PDF सही क्रम में जोड़ें और पेज जांचें",
+      "metaDescription": "PDF फाइलें सही क्रम में जोड़ें, हर सेक्शन जांचें और अलग पेज ठीक करें। मुफ्त, बिना साइनअप, ब्राउज़र में निजी प्रोसेसिंग के साथ।",
+      "keyword": "PDF फाइलें क्रम में जोड़ना",
+      "secondaryKeywords": [
+        "PDF फाइलें सही क्रम में मिलाएं",
+        "PDF पेज क्रम से पहले फाइलें सजाएं",
+        "PDF पेज व्यवस्थित करें",
+        "कई PDF दस्तावेज जोड़ें"
+      ],
+      "answer": "PDF फाइलें खास क्रम में जोड़ने के लिए पहले पूरी फाइलों का क्रम तय करें, नया PDF बनाएं और हर दस्तावेज के बीच का जोड़ जांचें। PrintxPDF ब्राउज़र में फाइलों को स्थानीय रूप से क्रमबद्ध और मर्ज करता है, मुफ्त में और बिना साइनअप या वॉटरमार्क। अलग-अलग पेज खिसकाने हों तो बाद में पेज व्यवस्थित करने वाला टूल इस्तेमाल करें।",
+      "ctaLabel": "PDF फाइलों का क्रम तय करके जोड़ें",
+      "body": [
+        {
+          "t": "p",
+          "x": "अनुबंध पैकेट, आवेदन, अदालत में दाखिले या रसीदों के सेट में सही क्रम जरूरी है। पूरी फाइलों को जोड़ने से पहले इच्छित क्रम में लगाएं। फिर तैयार PDF को पेज-दर-पेज जांचें। PrintxPDF ब्राउज़र टैब में मर्ज करता है, इसलिए सामान्य दस्तावेज आपके कंप्यूटर पर रहते हैं। अकाउंट या कार्ड देने की जरूरत नहीं, वॉटरमार्क नहीं और ट्रायल की अवधि संभालनी नहीं पड़ती।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF फाइलों को सही क्रम में कैसे मिलाएं"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "हर स्रोत फाइल की पहचान करें",
+              "x": "फाइलें खोलकर उनकी भूमिका देखें: कवर, मुख्य दस्तावेज, परिशिष्ट, हस्ताक्षरित पेज या रसीद। 01, 02, 03 जैसे छोटे नंबर गलत कॉपी चुनने से बचाते हैं।"
+            },
+            {
+              "h": "PDF जोड़ें टूल में फाइलें डालें",
+              "x": "[PDF जोड़ें](/tools/merge-pdf) खोलें और सभी स्रोत जोड़ें। मर्ज करने से पहले उन्हें इच्छित क्रम में रखें।"
+            },
+            {
+              "h": "संयुक्त फाइल बनाएं",
+              "x": "मर्ज चलाएं। आउटपुट इनपुट फाइलों का क्रम रखता है और मूल फाइलें डिवाइस पर अपरिवर्तित रहती हैं।"
+            },
+            {
+              "h": "हर जोड़ जांचें",
+              "x": "नया PDF खोलें। हर स्रोत के आखिरी पेज और अगले के पहले पेज पर डुप्लिकेट या गायब पेज, तिरछे स्कैन और गलत संलग्नक जांचें।"
+            },
+            {
+              "h": "जरूरत हो तो अलग पेज ठीक करें",
+              "x": "पेज खिसकाने के लिए [पेज व्यवस्थित करें](/tools/organize-pdf), स्कैन घुमाने के लिए [PDF घुमाएं](/tools/rotate-pdf), या खाली पेज हटाने के लिए [पेज हटाएं](/tools/delete-pages) इस्तेमाल करें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ब्राउज़र में PDF का क्रम लगाकर मुफ्त जोड़ें, साइनअप या वॉटरमार्क के बिना।"
+        },
+        {
+          "t": "h2",
+          "x": "फाइल क्रम और पेज क्रम में अंतर"
+        },
+        {
+          "t": "table",
+          "caption": "जरूरत के अनुसार सही टूल चुनें।",
+          "head": [
+            "स्थिति",
+            "सही टूल",
+            "क्यों"
+          ],
+          "rows": [
+            [
+              "पूरे दस्तावेज एक के बाद एक चाहिए",
+              "PDF जोड़ें",
+              "हर फाइल को चुने हुए क्रम में एक ब्लॉक रखता है।"
+            ],
+            [
+              "एक पेज को दो फाइलों के बीच रखना है",
+              "पेज व्यवस्थित करें",
+              "मर्ज के बाद अलग पेज खिसकाता है।"
+            ],
+            [
+              "पेज उल्टा है",
+              "PDF घुमाएं",
+              "पैकेट फिर से बनाए बिना दिशा बदलता है।"
+            ],
+            [
+              "खाली या डुप्लिकेट पेज आ गया",
+              "पेज हटाएं",
+              "उस पेज के बिना साफ आउटपुट बनाता है।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "प्राप्तकर्ता से पहले क्रम की गलती पकड़ें"
+        },
+        {
+          "t": "p",
+          "x": "PDF खुलना ठीक हो सकता है, फिर भी वह गलत पैकेट हो सकता है। पेज गिनें, सेक्शन के बदलाव अपनी सूची से मिलाएं और स्रोत फाइलों की अलग-अलग नंबरिंग हो तो पेज नंबर देखें। स्कैन रिकॉर्ड में तारीख, हस्ताक्षर और कुल राशि को 100 प्रतिशत ज़ूम पर जांचें। संयुक्त दस्तावेज में खोज जरूरी हो तो काम की कॉपी पर [OCR PDF](/tools/ocr-pdf) चलाएं और जरूरी नाम तथा आंकड़े पेज की छवि से मिलाएं।"
+        },
+        {
+          "t": "h2",
+          "x": "संवेदनशील दस्तावेज अपने डिवाइस पर रखें"
+        },
+        {
+          "t": "p",
+          "x": "क्रम की गलतियां अक्सर संवेदनशील फाइलों से जुड़ी होती हैं: पहचान-पत्र, बिल, रिपोर्ट और हस्ताक्षरित फॉर्म। ब्राउज़र में स्थानीय प्रोसेसिंग से फाइलें जोड़ने के लिए किसी तीसरे पक्ष की अपलोड सेवा पर नहीं रखनी पड़तीं। मूल फाइलें रखें और वितरण के लिए अलग कॉपी बनाएं। नीति कहे तो दस्तावेज मेटाडेटा हटाएं; मर्ज अपने आप लेखक के फ़ील्ड, टिप्पणियां या दूसरी छिपी जानकारी नहीं हटाता।"
+        },
+        {
+          "t": "warn",
+          "x": "पेज हटाना जानकारी को सुरक्षित रूप से redact करना नहीं है। निजी जानकारी दस्तावेज के दूसरे हिस्से में हो तो जांचा हुआ redaction तरीका अपनाएं। मूल कॉपी रखें और भेजने से पहले अंतिम फाइल जांचें।"
+        },
+        {
+          "t": "p",
+          "x": "अगला कदम जानने के लिए [PDF फाइलें कैसे जोड़ें](/blog/merge/how-to-merge-pdf-files), [PDF पेजों का क्रम कैसे बदलें](/blog/merge/reorder-pdf-pages), और [PDF पेज कैसे निकालें](/blog/split/extract-pages-from-pdf) देखें। भरोसेमंद तरीका सरल है: क्रम लगाएं, मर्ज करें, जांचें और फिर साझा करें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF मर्ज करने से पहले क्रम चुन सकता हूं?",
+          "a": "हां। मर्ज चलाने से पहले इनपुट फाइलों को जरूरी क्रम में रखें। आउटपुट वही क्रम रखता है, इसलिए अंतिम कॉपी बनाने से पहले जांच लें।"
+        },
+        {
+          "q": "PDF जोड़ने के बाद क्या एक पेज खिसका सकता हूं?",
+          "a": "हां। पहले दस्तावेज मर्ज करें, फिर पेज व्यवस्थित करने वाले टूल से एक पेज खिसकाएं, स्कैन घुमाएं या डुप्लिकेट हटाएं। सभी स्रोत फिर से बनाने की जरूरत नहीं।"
+        },
+        {
+          "q": "PDF सही क्रम में जोड़ने के लिए अकाउंट चाहिए?",
+          "a": "नहीं। PrintxPDF का PDF जोड़ें टूल ब्राउज़र में स्थानीय रूप से चलता है, मुफ्त है, साइनअप नहीं मांगता और वॉटरमार्क नहीं लगाता।"
+        },
+        {
+          "q": "क्या PDF जोड़ने से मूल फाइलें बदलती हैं?",
+          "a": "नहीं। मर्ज एक नया PDF बनाता है। अंतिम पैकेट जांचने और मूल की जरूरत न रहने की पुष्टि तक स्रोत दस्तावेज रखें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية دمج ملفات PDF بترتيب محدد",
+      "metaTitle": "ادمج ملفات PDF بالترتيب الصحيح وتحقق من الصفحات",
+      "metaDescription": "ادمج ملفات PDF بالترتيب الصحيح، وافحص الأقسام وعدّل الصفحات الفردية. مجاناً وبلا تسجيل، مع معالجة خاصة في المتصفح.",
+      "keyword": "دمج ملفات PDF بترتيب معين",
+      "secondaryKeywords": [
+        "ترتيب ملفات PDF قبل الدمج",
+        "جمع PDF بالترتيب الصحيح",
+        "تنظيم صفحات PDF",
+        "دمج مستندات PDF"
+      ],
+      "answer": "لدمج ملفات PDF بترتيب محدد، رتب الملفات الكاملة أولاً، وأنشئ ملف PDF جديداً، ثم تحقق من كل انتقال بين المستندات. يتيح PrintxPDF ترتيب الملفات ودمجها محلياً في المتصفح مجاناً ومن دون تسجيل أو علامة مائية. إذا احتجت إلى نقل صفحات منفردة، فاستخدم أداة تنظيم الصفحات بعد ذلك.",
+      "ctaLabel": "رتب ملفات PDF وادمجها",
+      "body": [
+        {
+          "t": "p",
+          "x": "يهم الترتيب الصحيح عند إعداد حزمة عقود أو طلب أو ملف للمحكمة أو مجموعة إيصالات. ابدأ بترتيب الملفات الكاملة قبل دمجها، ثم افحص ملف PDF الناتج صفحةً صفحة. ينفذ PrintxPDF الدمج داخل علامة تبويب المتصفح، لذلك تبقى المستندات العادية على جهازك. لا تحتاج إلى حساب أو بطاقة، ولا توجد علامة مائية أو فترة تجريبية لإدارتها."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية جمع ملفات PDF بالترتيب الصحيح"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "حدد كل ملف مصدر",
+              "x": "افتح الملفات وحدد وظيفة كل منها: غلاف، مستند رئيسي، ملحق، صفحة موقعة أو إيصال. تساعد بادئات بسيطة مثل 01 و02 و03 على تجنب اختيار نسخة غير صحيحة."
+            },
+            {
+              "h": "أضف الملفات إلى دمج PDF",
+              "x": "افتح [دمج PDF](/tools/merge-pdf) وأضف جميع الملفات المصدر. ضعها بالتسلسل المطلوب قبل الدمج."
+            },
+            {
+              "h": "أنشئ الملف المجمّع",
+              "x": "شغّل الدمج. يتبع الناتج ترتيب ملفات الإدخال، وتبقى الأصول دون تغيير على جهازك."
+            },
+            {
+              "h": "افحص كل موضع اتصال",
+              "x": "افتح ملف PDF الجديد. تحقق من آخر صفحة في كل مصدر وأول صفحة في المصدر التالي بحثاً عن صفحات مكررة أو مفقودة أو مسح مائل أو ملحق غير صحيح."
+            },
+            {
+              "h": "عدّل الصفحات الفردية عند الحاجة",
+              "x": "استخدم [تنظيم الصفحات](/tools/organize-pdf) لنقل صفحة، أو [تدوير PDF](/tools/rotate-pdf) لتعديل مسح، أو [حذف الصفحات](/tools/delete-pages) لإزالة صفحة فارغة."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "رتب ملفات PDF وادمجها مجاناً في المتصفح، بلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "ترتيب الملفات مقابل ترتيب الصفحات"
+        },
+        {
+          "t": "table",
+          "caption": "اختر الأداة وفق التعديل المطلوب.",
+          "head": [
+            "الحالة",
+            "الأداة المناسبة",
+            "السبب"
+          ],
+          "rows": [
+            [
+              "تأتي المستندات الكاملة واحداً بعد الآخر",
+              "دمج PDF",
+              "يحافظ على كل ملف كمجموعة حسب الترتيب الذي تختاره."
+            ],
+            [
+              "يجب وضع صفحة بين ملفين",
+              "تنظيم الصفحات",
+              "ينقل الصفحات الفردية بعد الدمج."
+            ],
+            [
+              "صفحة مقلوبة",
+              "تدوير PDF",
+              "يغير الاتجاه من دون إعادة بناء الحزمة."
+            ],
+            [
+              "ظهرت صفحة فارغة أو مكررة",
+              "حذف الصفحات",
+              "ينشئ نسخة نظيفة من دون تلك الصفحة."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من الترتيب قبل أن يلاحظ المستلم الخطأ"
+        },
+        {
+          "t": "p",
+          "x": "قد يكون ملف PDF سليماً تقنياً لكنه الحزمة الخاطئة. احسب الصفحات، وقارن فواصل الأقسام بقائمة التحقق، وافحص أرقام الصفحات عندما تستخدم المصادر ترقيمها الخاص. في السجلات الممسوحة، راجع التواريخ والتوقيعات والمجاميع بتكبير 100%. إذا كان من الضروري البحث في المستند المجمّع، شغّل [OCR PDF](/tools/ocr-pdf) على نسخة عمل ثم طابق الأسماء والأرقام المهمة مع صورة الصفحة."
+        },
+        {
+          "t": "h2",
+          "x": "أبقِ المستندات الحساسة على جهازك"
+        },
+        {
+          "t": "p",
+          "x": "غالباً ما تتعلق أخطاء الترتيب بأكثر الملفات حساسية: وثائق الهوية والفواتير والتقارير والنماذج الموقعة. تمنع المعالجة المحلية في المتصفح الحاجة إلى ترك الملفات على خدمة رفع تابعة لجهة أخرى لمجرد تجميعها. احتفظ بالأصول وأنشئ نسخة منفصلة للتوزيع. أزل بيانات المستند الوصفية إذا كانت السياسة تتطلب ذلك؛ فالدمج لا يحذف تلقائياً حقول المؤلف أو التعليقات أو المعلومات المضمنة."
+        },
+        {
+          "t": "warn",
+          "x": "حذف صفحة ليس تنقيحاً آمناً للمعلومات. إذا ظهرت بيانات خاصة في جزء آخر من المستند، فاتبع طريقة تنقيح تم التحقق منها. احتفظ بالأصل وافحص النسخة النهائية قبل إرسالها."
+        },
+        {
+          "t": "p",
+          "x": "لمتابعة القراءة، راجع [كيفية دمج ملفات PDF](/blog/merge/how-to-merge-pdf-files)، و[إعادة ترتيب صفحات PDF](/blog/merge/reorder-pdf-pages)، و[استخراج صفحات PDF](/blog/split/extract-pages-from-pdf). سير العمل الموثوق بسيط: رتّب، ادمج، افحص، ثم شارك."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل أستطيع اختيار الترتيب قبل دمج PDF؟",
+          "a": "نعم. رتب ملفات الإدخال بالتسلسل المطلوب قبل بدء الدمج. يتبع الناتج هذا الترتيب، لذا راجعه قبل إنشاء النسخة النهائية."
+        },
+        {
+          "q": "هل يمكنني نقل صفحة واحدة بعد دمج PDF؟",
+          "a": "نعم. ادمج المستندات أولاً، ثم استخدم أداة تنظيم الصفحات لنقل صفحة أو تدوير مسح أو إزالة نسخة مكررة من دون إعادة إنشاء كل الملفات المصدر."
+        },
+        {
+          "q": "هل أحتاج إلى حساب لدمج PDF بالترتيب؟",
+          "a": "لا. أداة دمج PDF من PrintxPDF تعمل محلياً في المتصفح، وهي مجانية ولا تتطلب تسجيلاً ولا تضيف علامة مائية."
+        },
+        {
+          "q": "هل يغير دمج PDF الملفات الأصلية؟",
+          "a": "لا. ينشئ الدمج ملف PDF جديداً. احتفظ بالمستندات المصدر حتى تفحص الحزمة النهائية وتتأكد من عدم حاجتك إلى الأصول."
+        }
+      ]
+    },
+    "bn": {
+      "title": "নির্দিষ্ট ক্রমে PDF ফাইল কীভাবে জোড়া লাগাবেন",
+      "metaTitle": "PDF সঠিক ক্রমে জোড়া লাগিয়ে পৃষ্ঠা যাচাই করুন",
+      "metaDescription": "PDF সঠিক ক্রমে জোড়া লাগান, প্রতিটি অংশ দেখুন এবং আলাদা পৃষ্ঠা ঠিক করুন। ফ্রি, সাইনআপ ছাড়া, ব্রাউজারে ব্যক্তিগত প্রসেসিং।",
+      "keyword": "নির্দিষ্ট ক্রমে PDF ফাইল জোড়া",
+      "secondaryKeywords": [
+        "PDF ফাইল ক্রম অনুযায়ী মেশানো",
+        "জোড়ার আগে PDF সাজানো",
+        "PDF পৃষ্ঠা সাজানো",
+        "একাধিক PDF এক করা"
+      ],
+      "answer": "নির্দিষ্ট ক্রমে PDF জোড়া লাগাতে আগে পুরো ফাইলগুলো সাজান, নতুন PDF তৈরি করুন এবং প্রতিটি ডকুমেন্টের সংযোগ যাচাই করুন। PrintxPDF ব্রাউজারেই ফাইল সাজিয়ে মার্জ করে, ফ্রি এবং সাইনআপ বা ওয়াটারমার্ক ছাড়া। আলাদা পৃষ্ঠা সরাতে হলে পরে পৃষ্ঠা সাজানোর টুল ব্যবহার করুন।",
+      "ctaLabel": "PDF ফাইল সাজিয়ে জোড়া লাগান",
+      "body": [
+        {
+          "t": "p",
+          "x": "চুক্তির প্যাকেট, আবেদন, আদালতের নথি বা রসিদের সেট বানাতে সঠিক ক্রম গুরুত্বপূর্ণ। জোড়ার আগে পুরো ফাইলগুলো পছন্দের ক্রমে রাখুন। এরপর তৈরি PDF পৃষ্ঠা ধরে দেখুন। PrintxPDF ব্রাউজার ট্যাবে মার্জ করে, তাই সাধারণ ডকুমেন্ট আপনার কম্পিউটারেই থাকে। অ্যাকাউন্ট বা কার্ড লাগে না, ওয়াটারমার্ক নেই এবং কোনো ট্রায়াল মেয়াদও সামলাতে হয় না।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF ফাইল সঠিক ক্রমে কীভাবে একত্র করবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "প্রতিটি উৎস ফাইল চিনে নিন",
+              "x": "ফাইল খুলে কাজ বুঝুন: কভার, মূল নথি, পরিশিষ্ট, সই করা পৃষ্ঠা বা রসিদ। 01, 02, 03-এর মতো সহজ নম্বর ভুল কপি নেওয়া ঠেকায়।"
+            },
+            {
+              "h": "PDF জোড়ার টুলে ফাইল যোগ করুন",
+              "x": "[PDF জোড়া লাগান](/tools/merge-pdf) খুলে সব উৎস ফাইল যোগ করুন। মার্জের আগে চূড়ান্ত ক্রমে সাজান।"
+            },
+            {
+              "h": "একটি মিলিত ফাইল তৈরি করুন",
+              "x": "মার্জ চালান। আউটপুট ইনপুট ফাইলের ক্রম অনুসরণ করে, আর মূল ফাইল আপনার ডিভাইসে অপরিবর্তিত থাকে।"
+            },
+            {
+              "h": "প্রতিটি ফাইলের সংযোগ পরীক্ষা করুন",
+              "x": "নতুন PDF খুলুন। প্রতিটি উৎসের শেষ পৃষ্ঠা ও পরেরটির প্রথম পৃষ্ঠা দেখুন, যাতে ডুপ্লিকেট বা বাদ পড়া পৃষ্ঠা, পাশ ঘোরা স্ক্যান, বা ভুল সংযুক্তি ধরা পড়ে।"
+            },
+            {
+              "h": "প্রয়োজনে আলাদা পৃষ্ঠা ঠিক করুন",
+              "x": "পৃষ্ঠা সরাতে [পৃষ্ঠা সাজান](/tools/organize-pdf), স্ক্যান ঘোরাতে [PDF ঘোরান](/tools/rotate-pdf), অথবা ফাঁকা পৃষ্ঠা সরাতে [পৃষ্ঠা মুছুন](/tools/delete-pages) ব্যবহার করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ব্রাউজারে ফ্রিতে PDF সাজিয়ে জোড়া লাগান, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "ফাইলের ক্রম আর পৃষ্ঠার ক্রম এক নয়"
+        },
+        {
+          "t": "table",
+          "caption": "আপনার কাজের ধরন অনুযায়ী টুল বেছে নিন।",
+          "head": [
+            "পরিস্থিতি",
+            "সঠিক টুল",
+            "কারণ"
+          ],
+          "rows": [
+            [
+              "পুরো ডকুমেন্ট একের পর এক থাকবে",
+              "PDF জোড়া লাগান",
+              "প্রতিটি ফাইলকে আপনার নির্বাচিত ক্রমে এক ব্লক হিসেবে রাখে।"
+            ],
+            [
+              "একটি পৃষ্ঠা দুই ফাইলের মাঝে দরকার",
+              "পৃষ্ঠা সাজান",
+              "মার্জের পরে আলাদা পৃষ্ঠা সরায়।"
+            ],
+            [
+              "একটি পৃষ্ঠা উল্টো",
+              "PDF ঘোরান",
+              "পুরো প্যাকেট আবার না বানিয়ে দিক ঠিক করে।"
+            ],
+            [
+              "ফাঁকা বা ডুপ্লিকেট পৃষ্ঠা ঢুকে গেছে",
+              "পৃষ্ঠা মুছুন",
+              "সেই পৃষ্ঠা বাদ দিয়ে পরিষ্কার কপি বানায়।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "প্রাপক ভুল ধরার আগে ক্রম যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "PDF ঠিকভাবে খুললেও প্যাকেটটি ভুল হতে পারে। পৃষ্ঠা গুনুন, আপনার তালিকার সঙ্গে সেকশন বিরতি মিলিয়ে দেখুন এবং উৎস ফাইলের নিজস্ব নম্বর থাকলে তা যাচাই করুন। স্ক্যান করা নথিতে 100 শতাংশ জুমে তারিখ, সই ও মোট হিসাব পরীক্ষা করুন। মিলিত নথিতে খোঁজা দরকার হলে কাজের কপিতে [OCR PDF](/tools/ocr-pdf) চালান এবং জরুরি নাম ও সংখ্যা পৃষ্ঠার ছবির সঙ্গে মিলিয়ে নিন।"
+        },
+        {
+          "t": "h2",
+          "x": "সংবেদনশীল নথি নিজের ডিভাইসে রাখুন"
+        },
+        {
+          "t": "p",
+          "x": "ক্রমের ভুল প্রায়ই সংবেদনশীল ফাইলে হয়: পরিচয়পত্র, ইনভয়েস, রিপোর্ট এবং সই করা ফর্ম। ব্রাউজারে স্থানীয় প্রসেসিং করলে শুধু ফাইল একত্র করার জন্য তৃতীয় পক্ষের আপলোড সাইটে রাখতে হয় না। মূল কপি রাখুন এবং বিতরণের জন্য আলাদা কপি তৈরি করুন। নীতিমালায় বললে ডকুমেন্ট মেটাডেটা সরান; মার্জ করলে লেখকের তথ্য, মন্তব্য বা এমবেড করা বিবরণ নিজে থেকে মুছে যায় না।"
+        },
+        {
+          "t": "warn",
+          "x": "পৃষ্ঠা মুছে ফেলা নিরাপদ redaction নয়। ব্যক্তিগত তথ্য ডকুমেন্টের অন্য অংশে থাকলে যাচাই করা redaction পদ্ধতি ব্যবহার করুন। মূল কপি রাখুন এবং পাঠানোর আগে শেষ কপিটি দেখুন।"
+        },
+        {
+          "t": "p",
+          "x": "পরের ধাপে [PDF ফাইল কীভাবে জোড়া লাগাবেন](/blog/merge/how-to-merge-pdf-files), [PDF পৃষ্ঠা সাজানো](/blog/merge/reorder-pdf-pages), এবং [PDF পৃষ্ঠা বের করা](/blog/split/extract-pages-from-pdf) পড়ুন। নির্ভরযোগ্য ধাপ সহজ: সাজান, মার্জ করুন, যাচাই করুন, তারপর শেয়ার করুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF মার্জের আগে কি ক্রম বেছে নিতে পারি?",
+          "a": "হ্যাঁ। মার্জ চালানোর আগে ইনপুট ফাইলগুলো দরকারি ক্রমে সাজান। আউটপুট সেই ক্রম রাখে, তাই চূড়ান্ত কপি বানানোর আগে পরীক্ষা করুন।"
+        },
+        {
+          "q": "PDF জোড়ার পরে একটি পৃষ্ঠা সরানো যাবে?",
+          "a": "হ্যাঁ। আগে ডকুমেন্ট মার্জ করুন, পরে পৃষ্ঠা সাজানোর টুল দিয়ে একটি পৃষ্ঠা সরান, স্ক্যান ঘোরান বা ডুপ্লিকেট মুছুন। সব উৎস নতুন করে বানাতে হবে না।"
+        },
+        {
+          "q": "PDF ক্রমে জোড়া লাগাতে কি অ্যাকাউন্ট দরকার?",
+          "a": "না। PrintxPDF-এর PDF জোড়ার টুল ব্রাউজারে স্থানীয়ভাবে চলে, ফ্রি, সাইনআপ লাগে না এবং ওয়াটারমার্ক যোগ করে না।"
+        },
+        {
+          "q": "PDF জোড়া লাগালে কি মূল ফাইল বদলে যায়?",
+          "a": "না। মর্জ করলে নতুন PDF তৈরি হয়। শেষ প্যাকেট দেখে এবং মূল কপি আর দরকার নেই নিশ্চিত না হওয়া পর্যন্ত উৎস ফাইল রাখুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách gộp các tệp PDF theo thứ tự cụ thể",
+      "metaTitle": "Gộp PDF đúng thứ tự và kiểm tra từng trang",
+      "metaDescription": "Gộp PDF đúng thứ tự, kiểm tra từng phần và sửa trang riêng lẻ. Miễn phí, không đăng ký, xử lý riêng tư trong trình duyệt.",
+      "keyword": "gộp file PDF theo thứ tự",
+      "secondaryKeywords": [
+        "ghép PDF theo đúng thứ tự",
+        "xếp file trước khi gộp PDF",
+        "sắp xếp trang PDF",
+        "ghép nhiều tài liệu PDF"
+      ],
+      "answer": "Để gộp PDF theo thứ tự cụ thể, hãy xếp các tệp hoàn chỉnh trước, tạo PDF mới rồi kiểm tra từng điểm nối giữa các tài liệu. PrintxPDF cho phép sắp xếp và gộp tệp ngay trong trình duyệt, miễn phí, không đăng ký hay hình mờ. Nếu cần chuyển từng trang, hãy dùng công cụ sắp xếp trang sau đó.",
+      "ctaLabel": "Sắp xếp và gộp các tệp PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Thứ tự rất quan trọng khi bạn chuẩn bị bộ hợp đồng, hồ sơ đăng ký, tài liệu nộp tòa hoặc tập hóa đơn. Hãy xếp các tệp hoàn chỉnh trước khi gộp, sau đó kiểm tra PDF cuối từng trang một. PrintxPDF thực hiện việc gộp trong thẻ trình duyệt, nên tài liệu thông thường ở lại máy tính của bạn. Không cần tài khoản hay thẻ, không có hình mờ và không phải theo dõi thời hạn dùng thử."
+        },
+        {
+          "t": "h2",
+          "x": "Cách ghép các tệp PDF theo đúng thứ tự"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Xác định từng tệp nguồn",
+              "x": "Mở các tệp và xác định vai trò: bìa, tài liệu chính, phụ lục, trang đã ký hoặc hóa đơn. Đánh số đơn giản 01, 02, 03 giúp tránh chọn nhầm bản."
+            },
+            {
+              "h": "Thêm tệp vào Gộp PDF",
+              "x": "Mở [Gộp PDF](/tools/merge-pdf) và thêm tất cả tệp nguồn. Đặt chúng theo thứ tự dự kiến trước khi gộp."
+            },
+            {
+              "h": "Tạo tệp đã kết hợp",
+              "x": "Chạy thao tác gộp. Tệp đầu ra theo thứ tự đầu vào, còn bản gốc vẫn nguyên vẹn trên thiết bị."
+            },
+            {
+              "h": "Kiểm tra mọi điểm nối",
+              "x": "Mở PDF mới. Kiểm tra trang cuối của mỗi nguồn và trang đầu của nguồn kế tiếp để tìm trang trùng hoặc thiếu, bản quét bị xoay và phụ lục sai."
+            },
+            {
+              "h": "Sửa từng trang nếu cần",
+              "x": "Dùng [Sắp xếp trang](/tools/organize-pdf) để chuyển trang, [Xoay PDF](/tools/rotate-pdf) để chỉnh bản quét hoặc [Xóa trang](/tools/delete-pages) để bỏ trang trắng."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Sắp xếp và gộp PDF miễn phí trong trình duyệt, không đăng ký hay hình mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Thứ tự tệp khác thứ tự trang"
+        },
+        {
+          "t": "table",
+          "caption": "Chọn công cụ theo thay đổi bạn cần.",
+          "head": [
+            "Tình huống",
+            "Công cụ phù hợp",
+            "Lý do"
+          ],
+          "rows": [
+            [
+              "Các tài liệu hoàn chỉnh nối tiếp nhau",
+              "Gộp PDF",
+              "Giữ mỗi tệp thành một khối theo thứ tự bạn đặt."
+            ],
+            [
+              "Một trang cần nằm giữa hai tệp",
+              "Sắp xếp trang",
+              "Di chuyển từng trang sau khi gộp."
+            ],
+            [
+              "Một trang bị lộn ngược",
+              "Xoay PDF",
+              "Đổi hướng mà không dựng lại bộ tài liệu."
+            ],
+            [
+              "Có trang trắng hoặc trang trùng",
+              "Xóa trang",
+              "Tạo bản mới sạch, không có trang đó."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra thứ tự trước khi người nhận phát hiện lỗi"
+        },
+        {
+          "t": "p",
+          "x": "PDF có thể hợp lệ về kỹ thuật nhưng vẫn là sai bộ tài liệu. Đếm trang, so sánh điểm ngắt phần với danh sách kiểm tra và xem số trang nếu các tệp nguồn có cách đánh số riêng. Với hồ sơ scan, kiểm tra ngày tháng, chữ ký và tổng số ở mức phóng đại 100%. Nếu cần tìm kiếm trong tài liệu kết hợp, chạy [OCR PDF](/tools/ocr-pdf) trên bản làm việc rồi đối chiếu tên và số liệu quan trọng với hình ảnh trang."
+        },
+        {
+          "t": "h2",
+          "x": "Giữ tài liệu nhạy cảm trên thiết bị của bạn"
+        },
+        {
+          "t": "p",
+          "x": "Lỗi thứ tự thường xảy ra với những tệp nhạy cảm: giấy tờ tùy thân, hóa đơn, báo cáo và biểu mẫu đã ký. Xử lý cục bộ trong trình duyệt giúp bạn không phải để tệp trên dịch vụ tải lên của bên thứ ba chỉ để ghép chúng. Giữ bản gốc và tạo bản phân phối riêng. Nếu chính sách yêu cầu, hãy xóa siêu dữ liệu; thao tác gộp không tự xóa trường tác giả, nhận xét hay thông tin nhúng."
+        },
+        {
+          "t": "warn",
+          "x": "Xóa một trang không phải là che thông tin an toàn. Nếu dữ liệu riêng tư còn ở nơi khác trong tài liệu, hãy dùng quy trình biên tập đã được kiểm chứng. Giữ bản gốc và kiểm tra bản cuối trước khi gửi."
+        },
+        {
+          "t": "p",
+          "x": "Đọc tiếp [cách gộp các tệp PDF](/blog/merge/how-to-merge-pdf-files), [cách sắp xếp lại trang PDF](/blog/merge/reorder-pdf-pages) và [cách trích xuất trang PDF](/blog/split/extract-pages-from-pdf). Quy trình đáng tin cậy rất đơn giản: sắp xếp, gộp, kiểm tra rồi chia sẻ."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Tôi có thể chọn thứ tự trước khi gộp PDF không?",
+          "a": "Có. Sắp xếp các tệp đầu vào theo trình tự cần thiết trước khi chạy thao tác gộp. Tệp kết quả theo thứ tự đó, nên hãy kiểm tra trước khi tạo bản cuối."
+        },
+        {
+          "q": "Có thể chuyển một trang sau khi gộp PDF không?",
+          "a": "Có. Gộp tài liệu trước, sau đó dùng công cụ sắp xếp trang để chuyển một trang, xoay bản scan hoặc xóa trang trùng mà không phải làm lại mọi tệp nguồn."
+        },
+        {
+          "q": "Gộp PDF theo thứ tự có cần tài khoản không?",
+          "a": "Không. Công cụ Gộp PDF của PrintxPDF xử lý cục bộ trong trình duyệt, miễn phí, không yêu cầu đăng ký và không chèn hình mờ."
+        },
+        {
+          "q": "Gộp PDF có làm thay đổi tệp gốc không?",
+          "a": "Không. Việc gộp tạo một PDF mới. Giữ tài liệu nguồn đến khi bạn kiểm tra bộ cuối và xác nhận không còn cần bản gốc."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何按指定顺序合并 PDF 文件",
+      "metaTitle": "按正确顺序合并 PDF 并检查页面",
+      "metaDescription": "按正确顺序合并 PDF，检查每个部分并调整单页。免费、无需注册，在浏览器中私密处理。",
+      "keyword": "按顺序合并 PDF 文件",
+      "secondaryKeywords": [
+        "按正确顺序组合 PDF",
+        "合并前排列 PDF 文件",
+        "整理 PDF 页面",
+        "合并多个 PDF 文档"
+      ],
+      "answer": "要按指定顺序合并 PDF，先排列完整文件，生成新的 PDF，然后检查各文档之间的衔接。PrintxPDF 可在浏览器中本地排列和合并文件，免费、无需注册，也没有水印。若要移动单独页面，可在合并后使用页面整理工具。",
+      "ctaLabel": "排列并合并 PDF 文件",
+      "body": [
+        {
+          "t": "p",
+          "x": "准备合同包、申请材料、法院文件或一组收据时，文件顺序很重要。合并前先按需要排列完整文件，之后逐页检查最终 PDF。PrintxPDF 在浏览器标签页中完成合并，因此普通文档仍留在你的电脑上。无需账户或银行卡，没有水印，也不用管理会自动结束并收费的试用期。"
+        },
+        {
+          "t": "h2",
+          "x": "如何按正确顺序组合 PDF 文件"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "确认每个源文件的用途",
+              "x": "打开文件，确认它是封面、主文档、附录、已签名页面还是收据。使用 01、02、03 这样的简单前缀，可减少选错副本的情况。"
+            },
+            {
+              "h": "将文件添加到合并 PDF",
+              "x": "打开[合并 PDF](/tools/merge-pdf)，添加所有源文件，并在合并前将它们排列成需要的顺序。"
+            },
+            {
+              "h": "生成合并文件",
+              "x": "运行合并。输出会遵循输入文件的排列顺序，原文件仍保留在设备上，不会被修改。"
+            },
+            {
+              "h": "检查每个衔接处",
+              "x": "打开新 PDF。查看每个源文件的最后一页和下一个文件的第一页，查找重复或缺失页面、方向错误的扫描件以及放错位置的附件。"
+            },
+            {
+              "h": "需要时调整单独页面",
+              "x": "使用[整理页面](/tools/organize-pdf)移动页面，用[旋转 PDF](/tools/rotate-pdf)修正扫描方向，或用[删除页面](/tools/delete-pages)移除误加的空白页。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "在浏览器中免费排列并合并 PDF，无需注册，也没有水印。"
+        },
+        {
+          "t": "h2",
+          "x": "文件顺序和页面顺序有什么区别"
+        },
+        {
+          "t": "table",
+          "caption": "根据需要的顺序调整选择合适的工具。",
+          "head": [
+            "情况",
+            "适合的工具",
+            "原因"
+          ],
+          "rows": [
+            [
+              "完整文档依次排列",
+              "合并 PDF",
+              "按你设置的顺序，将每个文件作为一个整体保留。"
+            ],
+            [
+              "某一页需要放在两个文件之间",
+              "整理页面",
+              "合并后可移动单独页面。"
+            ],
+            [
+              "某页上下颠倒",
+              "旋转 PDF",
+              "调整方向，无需重建整个文件包。"
+            ],
+            [
+              "混入空白页或重复页",
+              "删除页面",
+              "生成不含该页面的干净副本。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "在收件人发现错误前检查顺序"
+        },
+        {
+          "t": "p",
+          "x": "PDF 能正常打开，并不代表文件包一定正确。请统计页数，按检查清单核对章节分隔处；如果源文件各自有页码，也要检查编号。对于扫描记录，请在 100% 缩放下检查日期、签名和合计数。如果合并文档需要可搜索，请在工作副本上运行[OCR PDF](/tools/ocr-pdf)，再对照页面图像核实重要姓名和数字。"
+        },
+        {
+          "t": "h2",
+          "x": "让敏感文档留在你的设备上"
+        },
+        {
+          "t": "p",
+          "x": "顺序问题经常涉及敏感文件，例如身份证明、发票、报告和签字表格。浏览器本地处理意味着，你不必仅仅为了拼接文件就把它们留在第三方上传服务上。保留原件，并另建用于分发的副本。如果政策有要求，请移除文档元数据；合并不会自动清除作者字段、批注或嵌入的信息。"
+        },
+        {
+          "t": "warn",
+          "x": "删除页面不等于安全涂黑敏感内容。如果私人信息还出现在文档其他位置，请使用经过验证的涂黑流程。保留原件，并在发送前检查最终副本。"
+        },
+        {
+          "t": "p",
+          "x": "接下来可阅读[如何合并 PDF 文件](/blog/merge/how-to-merge-pdf-files)、[如何重新排列 PDF 页面](/blog/merge/reorder-pdf-pages)以及[如何提取 PDF 页面](/blog/split/extract-pages-from-pdf)。可靠流程很简单：排列、合并、检查，再分享。"
+        },
+        {
+          "t": "h2",
+          "x": "怎样检查合并后的 PDF 是否完整"
+        },
+        {
+          "t": "p",
+          "x": "合并前先记录每个文件的页数，合并后将预期总页数相加，再与新 PDF 显示的页数比较。页数一致只能说明数量吻合，仍需检查内容。逐个查看文件交界处，确认前一份文件的结尾后面紧接着正确的下一页。对有目录或章节标题的材料，核实顺序是否符合目录。遇到重复的封面、漏掉的附件或同一份文件的旧版本时，先回到源文件列表处理，再生成最终版本。"
+        },
+        {
+          "t": "p",
+          "x": "签署或发送之前，请检查每份文件的第一页和最后一页，也要留意页面大小、横向与纵向方向以及扫描件是否清晰。如果文档有页码，确认合并后编号连续；如果每个源文件都从第 1 页开始，读者可能需要额外的目录来区分章节。对重要记录，请在屏幕上放大查看姓名、日期、金额和签名。合并只是把页面放进一个文件，不会自动检查事实是否正确。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "合并 PDF 前可以选择文件顺序吗？",
+          "a": "可以。运行合并前，先按需要的顺序排列输入文件。输出会沿用该顺序，因此创建最终副本前请先检查。"
+        },
+        {
+          "q": "合并 PDF 后可以移动单独页面吗？",
+          "a": "可以。先合并文档，再使用页面整理工具移动页面、旋转扫描件或删除重复页，无需重新制作所有源文件。"
+        },
+        {
+          "q": "按顺序合并 PDF 需要账户吗？",
+          "a": "不需要。PrintxPDF 的合并 PDF 工具在浏览器本地运行，免费、无需注册，也不会添加水印。"
+        },
+        {
+          "q": "合并会更改原始 PDF 文件吗？",
+          "a": "不会。合并会创建新的 PDF。请保留源文档，直到检查完最终文件包并确认不再需要原件。"
+        }
+      ]
+    }
+  }
+}
