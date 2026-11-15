@@ -7797,6 +7797,86 @@
           "remove-blank-pdf-pages",
           "reorder-scanned-pdf-pages"
         ]
+      },
+      {
+        "topic": "remove-blank-pdf-pages",
+        "slug": "remove-blank-pdf-pages",
+        "cluster": "editing-expansion",
+        "tool": "delete-pages",
+        "title": "Cómo quitar páginas en blanco de un PDF",
+        "metaTitle": "Cómo quitar páginas en blanco de un PDF",
+        "metaDescription": "Quita páginas vacías de un PDF con vista previa o números de página. Gratis en el navegador, sin cuenta ni marca de agua.",
+        "answer": "Para quitar páginas en blanco de un PDF, primero confirma que estén realmente vacías y anota sus posiciones. En Eliminar páginas, introduce esos números o rangos y crea una copia nueva. Las páginas restantes conservan su orden y calidad, y el archivo se procesa en tu navegador.",
+        "sections": [
+          {
+            "heading": "Cómo quitar páginas en blanco de un PDF",
+            "paragraphs": [
+              "Las páginas en blanco suelen aparecer al escanear originales a doble cara cuando algunas hojas solo tienen contenido por un lado. Antes de borrarlas, revisa cada página: una hoja aparentemente vacía puede tener una firma, una nota tenue o texto blanco sobre fondo blanco. PrintxPDF permite eliminar posiciones concretas y genera una copia nueva."
+            ],
+            "steps": [
+              {
+                "heading": "Conserva el original",
+                "text": "Guarda una copia sin cambios. La herramienta crea un archivo nuevo, pero el original te permite corregir una selección equivocada."
+              },
+              {
+                "heading": "Identifica las páginas vacías",
+                "text": "Cuenta desde la primera hoja del PDF. Los números impresos en el pie pueden diferir de la posición real, sobre todo si hay portada o índice."
+              },
+              {
+                "heading": "Abre Eliminar páginas",
+                "text": "Carga el archivo en [Eliminar páginas PDF](/tools/delete-pages). Escribe páginas individuales o rangos separados por comas, como 2, 5-7."
+              },
+              {
+                "heading": "Crea y revisa la copia",
+                "text": "Ejecuta la eliminación, descarga el PDF y comprueba el orden, los totales y las páginas vecinas antes de compartirlo."
+              }
+            ]
+          },
+          {
+            "heading": "Revisa las páginas antes de eliminarlas",
+            "paragraphs": [
+              "**¿Cómo sé si una página está realmente vacía?** Amplía la vista y revisa toda la hoja, incluidos bordes y notas tenues. En documentos escaneados, el OCR puede ayudar a encontrar texto, pero no detecta necesariamente firmas, sellos o marcas de lápiz. Usa [Organizar PDF](/tools/organize-pdf) si prefieres decidir con miniaturas.",
+              "**¿Qué números debo escribir?** La herramienta cuenta posiciones empezando por la primera página como 1. No usa el número impreso dentro del documento. Por ejemplo, si la portada ocupa la primera posición, la página impresa como 1 podría ser la posición 3. Puedes separar números y rangos con comas.",
+              "**¿Se pierde calidad o cambia el original?** No. El proceso construye un PDF nuevo con las páginas que conservas, en el orden original. Esas páginas no se vuelven a dibujar, por lo que mantienen su calidad. Las páginas eliminadas no forman parte de la salida. Si seleccionas mal, vuelve a cargar el original con una lista corregida.",
+              "**¿Es privado?** Eliminar páginas funciona localmente en el navegador: el PDF normal no se sube a un servidor. Esto reduce transferencias innecesarias de facturas, informes o documentos médicos, aunque debes seguir las reglas de tu organización para archivos restringidos. Descarga la copia y comprueba que no queden páginas que no deban compartirse."
+            ]
+          }
+        ],
+        "ctaLabel": "Quita páginas en blanco gratis, sin cuenta ni marca de agua, directamente en tu navegador.",
+        "faqs": [
+          {
+            "q": "¿Puedo quitar páginas en blanco gratis?",
+            "a": "Sí. Eliminar páginas de PrintxPDF es gratis para el flujo básico, no requiere cuenta y no añade marca de agua. Introduce las posiciones que quieres retirar y descarga una copia nueva. Consulta el aviso de la herramienta para conocer los límites de uso vigentes."
+          },
+          {
+            "q": "¿Los números son los que aparecen impresos en la página?",
+            "a": "No. Son posiciones dentro del archivo, comenzando por la primera hoja como página 1. Una portada y un índice desplazan las posiciones con respecto a la numeración impresa. Revisa las miniaturas o el lector PDF antes de escribir la lista."
+          },
+          {
+            "q": "¿Las páginas borradas desaparecen de verdad?",
+            "a": "Sí. El nuevo PDF se forma solo con las páginas conservadas; las páginas retiradas no se incluyen. Esto elimina páginas completas, pero no sirve para ocultar texto dentro de una página que mantienes. Para contenido sensible, usa una herramienta de redacción adecuada."
+          },
+          {
+            "q": "¿Qué hago si quito la página equivocada?",
+            "a": "El archivo original permanece intacto. Vuelve a abrirlo y ejecuta el proceso con la lista corregida. Si no estás seguro de los números, usa Organizar PDF para ver miniaturas y eliminar las páginas visualmente."
+          }
+        ],
+        "keywords": [
+          "quitar páginas en blanco PDF",
+          "eliminar páginas vacías PDF",
+          "borrar páginas PDF gratis"
+        ],
+        "relatedTools": [
+          "delete-pages",
+          "organize-pdf",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "add-cover-page-to-pdf",
+          "rotate-scanned-pdf-correctly",
+          "reorder-scanned-pdf-pages"
+        ]
       }
     ]
   },
@@ -15588,6 +15668,86 @@
           "remove-blank-pdf-pages",
           "reorder-scanned-pdf-pages"
         ]
+      },
+      {
+        "topic": "remove-blank-pdf-pages",
+        "slug": "remove-blank-pdf-pages",
+        "cluster": "editing-expansion",
+        "tool": "delete-pages",
+        "title": "Como remover páginas em branco de um PDF",
+        "metaTitle": "Como remover páginas em branco de um PDF",
+        "metaDescription": "Remova páginas vazias de um PDF por miniatura ou número. Grátis no navegador, sem conta nem marca-d’água.",
+        "answer": "Para remover páginas em branco de um PDF, confirme primeiro que elas estão realmente vazias e anote suas posições. Em Excluir páginas, informe esses números ou intervalos e crie uma nova cópia. As páginas restantes mantêm a ordem e a qualidade, e o arquivo é processado no navegador.",
+        "sections": [
+          {
+            "heading": "Como remover páginas em branco de um PDF",
+            "paragraphs": [
+              "Páginas em branco costumam aparecer quando um original é digitalizado frente e verso, mas algumas folhas só têm conteúdo de um lado. Antes de excluí-las, confira cada página: uma folha que parece vazia pode conter assinatura, anotação clara ou texto branco. O PrintxPDF remove posições específicas e cria uma cópia separada."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o original",
+                "text": "Salve uma cópia sem alterações. A ferramenta cria um novo arquivo, mas o original ajuda a corrigir uma seleção errada."
+              },
+              {
+                "heading": "Identifique as páginas vazias",
+                "text": "Conte a partir da primeira folha do PDF. A numeração impressa no rodapé pode ser diferente da posição real, sobretudo com capa ou sumário."
+              },
+              {
+                "heading": "Abra Excluir páginas",
+                "text": "Envie o arquivo para [Excluir páginas do PDF](/tools/delete-pages). Digite páginas individuais ou intervalos separados por vírgulas, como 2, 5-7."
+              },
+              {
+                "heading": "Crie e confira a cópia",
+                "text": "Execute a remoção, baixe o PDF e confira a ordem, os totais e as páginas vizinhas antes de compartilhar."
+              }
+            ]
+          },
+          {
+            "heading": "Revise as páginas antes de excluir",
+            "paragraphs": [
+              "**Como saber se uma página está realmente vazia?** Amplie a visualização e verifique a folha toda, incluindo bordas e notas claras. Em documentos digitalizados, OCR pode ajudar a localizar texto, mas talvez não encontre assinaturas, carimbos ou marcas de lápis. Use [Organizar PDF](/tools/organize-pdf) se preferir decidir pelas miniaturas.",
+              "**Quais números devo informar?** A ferramenta conta posições a partir da primeira página como 1. Ela não usa o número impresso no documento. Por exemplo, se a capa ocupa a primeira posição, a página impressa como 1 pode estar na posição 3. Separe números e intervalos por vírgulas.",
+              "**A qualidade cai ou o original muda?** Não. O processo monta um novo PDF apenas com as páginas mantidas, na ordem original. Essas páginas são copiadas, não redesenhadas, e preservam a qualidade. Se escolher errado, carregue o original novamente com uma lista corrigida.",
+              "**O processo é privado?** Excluir páginas funciona localmente no navegador: um PDF comum não é enviado a um servidor. Isso evita transferências desnecessárias de faturas, relatórios ou documentos médicos, mas siga as regras da organização para arquivos restritos. Baixe e confira a cópia antes de compartilhá-la."
+            ]
+          }
+        ],
+        "ctaLabel": "Remova páginas em branco grátis, sem conta nem marca-d’água, direto no navegador.",
+        "faqs": [
+          {
+            "q": "Posso remover páginas em branco grátis?",
+            "a": "Sim. O fluxo básico de Excluir páginas do PrintxPDF é gratuito, não exige conta e não adiciona marca-d’água. Informe as posições a remover e baixe uma nova cópia. Consulte o aviso da ferramenta para ver os limites de uso atuais."
+          },
+          {
+            "q": "Os números são os que aparecem impressos na página?",
+            "a": "Não. São posições no arquivo, começando pela primeira folha como página 1. Uma capa ou sumário desloca as posições em relação à numeração impressa. Confira as miniaturas ou o leitor de PDF antes de montar a lista."
+          },
+          {
+            "q": "As páginas excluídas desaparecem de verdade?",
+            "a": "Sim. O novo PDF é montado apenas com as páginas mantidas; as removidas não fazem parte dele. Isso remove páginas inteiras, mas não oculta texto em uma página que continua no arquivo. Para conteúdo sensível, use uma ferramenta de redação apropriada."
+          },
+          {
+            "q": "E se eu excluir a página errada?",
+            "a": "O arquivo original permanece intacto. Abra-o novamente e repita o processo com a lista corrigida. Se não souber os números, use Organizar PDF para ver miniaturas e remover páginas visualmente."
+          }
+        ],
+        "keywords": [
+          "remover páginas em branco PDF",
+          "excluir páginas vazias PDF",
+          "apagar páginas PDF grátis"
+        ],
+        "relatedTools": [
+          "delete-pages",
+          "organize-pdf",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "add-cover-page-to-pdf",
+          "rotate-scanned-pdf-correctly",
+          "reorder-scanned-pdf-pages"
+        ]
       }
     ]
   },
@@ -23377,6 +23537,86 @@
         "relatedPosts": [
           "insert-pages-into-pdf",
           "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "remove-blank-pdf-pages",
+        "slug": "remove-blank-pdf-pages",
+        "cluster": "editing-expansion",
+        "tool": "delete-pages",
+        "title": "PDF से खाली पेज कैसे हटाएं",
+        "metaTitle": "PDF से खाली पेज कैसे हटाएं",
+        "metaDescription": "PDF से खाली पेज थंबनेल या नंबर से हटाएं। ब्राउज़र में मुफ्त, बिना खाते या वॉटरमार्क के। इसे सीधे ब्राउज़र में मुफ्त चलाएं, बिना साइनअप या अपलोड के।",
+        "answer": "PDF से खाली पेज हटाने से पहले पुष्टि करें कि वे सच में खाली हैं और उनकी स्थिति लिख लें। Delete Pages में नंबर या रेंज डालकर नई कॉपी बनाएं। बाकी पेज अपना क्रम और गुणवत्ता बनाए रखते हैं, और फ़ाइल ब्राउज़र में प्रोसेस होती है।",
+        "sections": [
+          {
+            "heading": "PDF से खाली पेज कैसे हटाएं",
+            "paragraphs": [
+              "खाली पेज अक्सर तब जुड़ते हैं जब दोनों तरफ स्कैन करने पर कुछ कागज़ों की केवल एक तरफ सामग्री होती है। हटाने से पहले हर पेज देखें: खाली दिखने वाले पेज पर हल्का हस्ताक्षर, नोट या सफेद टेक्स्ट हो सकता है। PrintxPDF चुनिंदा पेज हटाकर अलग कॉपी बनाता है।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल फ़ाइल सुरक्षित रखें",
+                "text": "बिना बदलाव वाली कॉपी रखें। टूल नई फ़ाइल बनाता है, लेकिन गलत चयन सुधारने के लिए मूल काम आएगी।"
+              },
+              {
+                "heading": "खाली पेज पहचानें",
+                "text": "PDF के पहले पेज से गिनें। पाद लेख में छपा नंबर वास्तविक स्थिति से अलग हो सकता है, खासकर कवर या विषय-सूची होने पर।"
+              },
+              {
+                "heading": "Delete Pages खोलें",
+                "text": "फ़ाइल [Delete Pages](/tools/delete-pages) में खोलें। अलग नंबर या कॉमा से अलग की गई रेंज लिखें, जैसे 2, 5-7।"
+              },
+              {
+                "heading": "नई कॉपी बनाकर जांचें",
+                "text": "हटाने की प्रक्रिया चलाएं, PDF डाउनलोड करें और साझा करने से पहले क्रम, कुल पेज तथा आसपास के पेज जांचें।"
+              }
+            ]
+          },
+          {
+            "heading": "हटाने से पहले पेज जांचें",
+            "paragraphs": [
+              "**पेज सच में खाली है, यह कैसे जानें?** ज़ूम करके पूरी शीट देखें, किनारों और हल्के नोटों सहित। स्कैन की गई फ़ाइलों में OCR टेक्स्ट ढूंढने में मदद कर सकता है, लेकिन हस्ताक्षर, मुहर या पेंसिल के निशान छूट सकते हैं। थंबनेल से चुनने के लिए [Organize PDF](/tools/organize-pdf) इस्तेमाल करें।",
+              "**कौन से नंबर डालने हैं?** टूल फ़ाइल की स्थिति गिनता है: पहला पेज 1 है। पेज पर छपा नंबर नहीं। उदाहरण के लिए, कवर पहली स्थिति पर हो तो छपा हुआ पेज 1 फ़ाइल में तीसरी स्थिति हो सकता है। नंबर और रेंज को कॉमा से अलग करें।",
+              "**क्या गुणवत्ता घटेगी या मूल बदलेगा?** नहीं। नया PDF केवल रखे गए पेजों से बनता है और उनका मूल क्रम रहता है। बचे हुए पेज फिर से नहीं बनाए जाते, इसलिए गुणवत्ता बनी रहती है। गलती हो तो मूल फ़ाइल दोबारा खोलकर सही सूची दें।",
+              "**क्या यह निजी है?** Delete Pages ब्राउज़र में स्थानीय रूप से काम करता है; सामान्य PDF सर्वर पर अपलोड नहीं होती। इससे बिल, रिपोर्ट या मेडिकल रिकॉर्ड का अनावश्यक ट्रांसफर घटता है। फिर भी प्रतिबंधित फ़ाइलों के लिए अपने संगठन के नियम मानें और साझा करने से पहले आउटपुट देखें।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में खाली पेज मुफ्त हटाएं, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "क्या PDF के खाली पेज मुफ्त में हटा सकता हूं?",
+            "a": "हां। PrintxPDF का Delete Pages मूल उपयोग मुफ्त है, खाता नहीं मांगता और वॉटरमार्क नहीं जोड़ता। हटाने वाली स्थितियां दर्ज करें और नई कॉपी डाउनलोड करें। मौजूदा उपयोग सीमाओं के लिए टूल का नोटिस देखें।"
+          },
+          {
+            "q": "क्या नंबर पेज पर छपे नंबर हैं?",
+            "a": "नहीं। ये फ़ाइल के अंदर की स्थिति हैं और पहली शीट 1 से गिनी जाती है। कवर या विषय-सूची के कारण छपे नंबर और स्थिति अलग हो सकते हैं। सूची बनाने से पहले थंबनेल या PDF Reader जांचें।"
+          },
+          {
+            "q": "क्या हटाए गए पेज फ़ाइल से पूरी तरह निकल जाते हैं?",
+            "a": "हां। नई PDF केवल रखे गए पेजों से बनती है, इसलिए हटाए गए पेज शामिल नहीं होते। यह पूरे पेज हटाता है, लेकिन रखे गए पेज के अंदर का टेक्स्ट नहीं छिपाता। संवेदनशील टेक्स्ट के लिए उपयुक्त Redact टूल इस्तेमाल करें।"
+          },
+          {
+            "q": "गलत पेज हट जाए तो क्या करें?",
+            "a": "मूल फ़ाइल सुरक्षित रहती है। उसे फिर से खोलकर सही सूची के साथ प्रक्रिया दोहराएं। नंबर स्पष्ट न हों तो Organize PDF में थंबनेल देखें और पेज दृश्य रूप से हटाएं।"
+          }
+        ],
+        "keywords": [
+          "PDF से खाली पेज हटाएं",
+          "PDF खाली पेज निकालें",
+          "PDF पेज मुफ्त हटाएं"
+        ],
+        "relatedTools": [
+          "delete-pages",
+          "organize-pdf",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "add-cover-page-to-pdf",
+          "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
         ]
       }
@@ -31177,6 +31417,86 @@
         "relatedPosts": [
           "insert-pages-into-pdf",
           "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "remove-blank-pdf-pages",
+        "slug": "remove-blank-pdf-pages",
+        "cluster": "editing-expansion",
+        "tool": "delete-pages",
+        "title": "كيفية إزالة الصفحات الفارغة من PDF",
+        "metaTitle": "كيفية إزالة الصفحات الفارغة من PDF",
+        "metaDescription": "أزل صفحات PDF الفارغة عبر الصور المصغرة أو الأرقام. مجاناً في المتصفح، بلا حساب أو علامة مائية. استخدم الأداة مجاناً مباشرة في المتصفح، من دون تسجيل أو رفع الملف.",
+        "answer": "لإزالة الصفحات الفارغة من PDF، تأكد أولاً من أنها فارغة فعلاً وسجّل مواضعها. أدخل الأرقام أو النطاقات في Delete Pages وأنشئ نسخة جديدة. تحتفظ الصفحات الأخرى بترتيبها وجودتها، وتتم معالجة الملف في المتصفح.",
+        "sections": [
+          {
+            "heading": "كيفية إزالة الصفحات الفارغة من PDF",
+            "paragraphs": [
+              "تظهر الصفحات الفارغة عادة عند مسح الأوراق على الوجهين بينما يحتوي أحد الوجهين فقط على محتوى. قبل الحذف، افحص كل صفحة؛ فقد تحتوي الصفحة التي تبدو فارغة على توقيع خافت أو ملاحظة أو نص أبيض. تزيل PrintxPDF مواضع محددة وتنشئ نسخة منفصلة."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بالأصل",
+                "text": "احفظ نسخة غير معدّلة. تنشئ الأداة ملفاً جديداً، ويساعدك الأصل على تصحيح أي تحديد خاطئ."
+              },
+              {
+                "heading": "حدّد الصفحات الفارغة",
+                "text": "ابدأ العد من أول صفحة في PDF. قد يختلف الرقم المطبوع أسفل الصفحة عن موضعها الفعلي، خاصة مع وجود غلاف أو فهرس."
+              },
+              {
+                "heading": "افتح Delete Pages",
+                "text": "حمّل الملف في [Delete Pages](/tools/delete-pages). أدخل أرقاماً منفردة أو نطاقات تفصل بينها فواصل، مثل 2, 5-7."
+              },
+              {
+                "heading": "أنشئ النسخة وراجعها",
+                "text": "نفّذ الحذف ونزّل PDF، ثم تحقق من الترتيب والإجمالي والصفحات المجاورة قبل المشاركة."
+              }
+            ]
+          },
+          {
+            "heading": "راجع الصفحات قبل حذفها",
+            "paragraphs": [
+              "**كيف أتأكد أن الصفحة فارغة فعلاً؟** كبّر الصفحة وافحصها كلها، بما في ذلك الحواف والملاحظات الخافتة. قد يساعد OCR في العثور على النص في المسح، لكنه قد لا يكتشف توقيعاً أو ختماً أو أثراً بقلم رصاص. استخدم [Organize PDF](/tools/organize-pdf) للاختيار من الصور المصغرة.",
+              "**ما الأرقام التي يجب إدخالها؟** تعد الأداة مواضع الصفحات بدءاً من الورقة الأولى برقم 1، لا الأرقام المطبوعة داخل المستند. إذا كان الغلاف هو الموضع الأول، فقد تكون الصفحة المطبوعة 1 في الموضع 3. افصل الأرقام والنطاقات بفواصل.",
+              "**هل تتغير الجودة أو النسخة الأصلية؟** لا. تنشئ العملية PDF جديداً من الصفحات التي أبقيتها وبترتيبها الأصلي. لا يعاد رسم تلك الصفحات، لذلك تحافظ على جودتها. إذا أخطأت في الاختيار، أعد فتح الأصل واستخدم قائمة مصححة.",
+              "**هل العملية خاصة؟** تعمل Delete Pages محلياً في المتصفح، لذلك لا يُرفع PDF العادي إلى خادم. يقلل ذلك نقل الفواتير والتقارير والسجلات الطبية بلا داعٍ، لكن اتبع سياسات مؤسستك للملفات المقيدة. نزّل النسخة وافحصها قبل مشاركتها."
+            ]
+          }
+        ],
+        "ctaLabel": "أزل الصفحات الفارغة مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "هل يمكن إزالة صفحات PDF الفارغة مجاناً؟",
+            "a": "نعم. الاستخدام الأساسي لأداة Delete Pages في PrintxPDF مجاني ولا يتطلب حساباً ولا يضيف علامة مائية. أدخل مواضع الصفحات المراد إزالتها ونزّل نسخة جديدة. راجع إشعار الأداة لمعرفة حدود الاستخدام الحالية."
+          },
+          {
+            "q": "هل الأرقام هي المطبوعة على الصفحات؟",
+            "a": "لا. إنها مواضع الصفحات داخل الملف، بدءاً من الورقة الأولى برقم 1. يؤدي وجود غلاف أو فهرس إلى اختلاف الموضع عن الرقم المطبوع. راجع الصور المصغرة أو PDF Reader قبل إدخال القائمة."
+          },
+          {
+            "q": "هل تختفي الصفحات المحذوفة من الملف فعلاً؟",
+            "a": "نعم. تُنشأ النسخة الجديدة من الصفحات المحتفظ بها فقط، ولا تتضمن الصفحات المحذوفة. هذا يزيل صفحات كاملة، لكنه لا يخفي نصاً داخل صفحة باقية. لإزالة محتوى حساس، استخدم أداة تنقيح مناسبة."
+          },
+          {
+            "q": "ماذا أفعل إذا حذفت الصفحة الخطأ؟",
+            "a": "يبقى الملف الأصلي كما هو. افتحه مجدداً وكرر العملية بقائمة مصححة. إذا لم تكن متأكداً من الأرقام، استخدم Organize PDF لرؤية الصور المصغرة وحذف الصفحة بصرياً."
+          }
+        ],
+        "keywords": [
+          "إزالة صفحات PDF فارغة",
+          "حذف صفحات PDF فارغة",
+          "حذف صفحات PDF مجاناً"
+        ],
+        "relatedTools": [
+          "delete-pages",
+          "organize-pdf",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "add-cover-page-to-pdf",
+          "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
         ]
       }
@@ -38982,6 +39302,86 @@
           "remove-blank-pdf-pages",
           "reorder-scanned-pdf-pages"
         ]
+      },
+      {
+        "topic": "remove-blank-pdf-pages",
+        "slug": "remove-blank-pdf-pages",
+        "cluster": "editing-expansion",
+        "tool": "delete-pages",
+        "title": "PDF থেকে ফাঁকা পৃষ্ঠা কীভাবে সরাবেন",
+        "metaTitle": "PDF থেকে ফাঁকা পৃষ্ঠা কীভাবে সরাবেন",
+        "metaDescription": "থাম্বনেইল বা নম্বর দিয়ে PDF-এর ফাঁকা পৃষ্ঠা সরান। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়াই।",
+        "answer": "PDF থেকে ফাঁকা পৃষ্ঠা সরানোর আগে নিশ্চিত হন যে সেগুলো সত্যিই ফাঁকা এবং তাদের অবস্থান লিখে রাখুন। Delete Pages-এ নম্বর বা রেঞ্জ দিন এবং নতুন কপি তৈরি করুন। বাকি পৃষ্ঠাগুলো ক্রম ও মান বজায় রাখে, আর ফাইলটি ব্রাউজারেই প্রক্রিয়াকৃত হয়।",
+        "sections": [
+          {
+            "heading": "PDF থেকে ফাঁকা পৃষ্ঠা কীভাবে সরাবেন",
+            "paragraphs": [
+              "দুই পাশে স্ক্যান করার সময় কোনো কাগজের এক পাশেই কেবল লেখা থাকলে PDF-এ ফাঁকা পৃষ্ঠা আসতে পারে। সরানোর আগে প্রতিটি পৃষ্ঠা দেখুন: ফাঁকা মনে হলেও হালকা স্বাক্ষর, নোট বা সাদা লেখা থাকতে পারে। PrintxPDF নির্দিষ্ট পৃষ্ঠা বাদ দিয়ে আলাদা কপি তৈরি করে।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল কপি রাখুন",
+                "text": "অপরিবর্তিত একটি কপি সংরক্ষণ করুন। টুল নতুন ফাইল তৈরি করে, তবে ভুল নির্বাচন সংশোধনে মূল কপি কাজে লাগবে।"
+              },
+              {
+                "heading": "ফাঁকা পৃষ্ঠা শনাক্ত করুন",
+                "text": "PDF-এর প্রথম পৃষ্ঠা থেকে গুনুন। কভার বা সূচি থাকলে নিচে ছাপা পৃষ্ঠা নম্বর আসল অবস্থানের সঙ্গে নাও মিলতে পারে।"
+              },
+              {
+                "heading": "Delete Pages খুলুন",
+                "text": "ফাইলটি [Delete Pages](/tools/delete-pages)-এ দিন। একক নম্বর বা কমা দিয়ে আলাদা রেঞ্জ লিখুন, যেমন 2, 5-7।"
+              },
+              {
+                "heading": "নতুন কপি তৈরি ও যাচাই করুন",
+                "text": "সরানোর কাজ চালিয়ে PDF ডাউনলোড করুন। শেয়ারের আগে ক্রম, মোট পৃষ্ঠা এবং পাশের পৃষ্ঠাগুলো পরীক্ষা করুন।"
+              }
+            ]
+          },
+          {
+            "heading": "মুছবার আগে পৃষ্ঠা যাচাই করুন",
+            "paragraphs": [
+              "**পৃষ্ঠা সত্যিই ফাঁকা কিনা বুঝবেন কীভাবে?** জুম করে পুরো পৃষ্ঠা দেখুন, প্রান্ত ও হালকা নোটসহ। স্ক্যান করা নথিতে OCR লেখা খুঁজতে সাহায্য করতে পারে, কিন্তু স্বাক্ষর, সিল বা পেন্সিলের দাগ নাও ধরতে পারে। থাম্বনেইল দেখে বাছতে [Organize PDF](/tools/organize-pdf) ব্যবহার করুন।",
+              "**কোন নম্বর লিখবেন?** টুল প্রথম পাতাকে 1 ধরে ফাইলের অবস্থান গোনে। পাতায় ছাপা নম্বর নয়। কভার প্রথম অবস্থানে থাকলে ছাপা 1 নম্বরটি ফাইলে তৃতীয় অবস্থানে হতে পারে। কমা দিয়ে নম্বর ও রেঞ্জ আলাদা করুন।",
+              "**মান কমবে বা মূল ফাইল বদলাবে?** না। নতুন PDF-এ শুধু রাখা পৃষ্ঠাগুলো মূল ক্রমে কপি হয়। সেগুলো নতুন করে আঁকা হয় না, তাই গুণমান বজায় থাকে। ভুল হলে মূল ফাইলটি আবার খুলে সংশোধিত তালিকা দিন।",
+              "**এটি কি ব্যক্তিগতভাবে প্রসেস হয়?** Delete Pages ব্রাউজারেই স্থানীয়ভাবে কাজ করে; সাধারণ PDF সার্ভারে আপলোড হয় না। এতে বিল, রিপোর্ট বা চিকিৎসা নথির অপ্রয়োজনীয় স্থানান্তর কমে। তবুও সীমাবদ্ধ নথির জন্য প্রতিষ্ঠানের নিয়ম মানুন এবং শেয়ারের আগে আউটপুট দেখুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে ফাঁকা পৃষ্ঠা সরান, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়াই।",
+        "faqs": [
+          {
+            "q": "PDF-এর ফাঁকা পৃষ্ঠা বিনামূল্যে সরাতে পারি?",
+            "a": "হ্যাঁ। PrintxPDF-এর Delete Pages-এর মূল ব্যবহার বিনামূল্যে, অ্যাকাউন্ট লাগে না এবং ওয়াটারমার্ক যোগ হয় না। সরানোর অবস্থান লিখে নতুন কপি ডাউনলোড করুন। বর্তমান সীমা জানতে টুলের নোটিশ দেখুন।"
+          },
+          {
+            "q": "নম্বর কি পাতায় ছাপা নম্বর?",
+            "a": "না। এগুলো ফাইলের পৃষ্ঠা অবস্থান, প্রথম পাতা 1 থেকে গণনা করা হয়। কভার বা সূচির কারণে অবস্থান ও ছাপা নম্বর আলাদা হতে পারে। তালিকা দেওয়ার আগে থাম্বনেইল বা PDF Reader দেখে নিন।"
+          },
+          {
+            "q": "মুছে ফেলা পৃষ্ঠাগুলো কি সত্যিই ফাইল থেকে বাদ যায়?",
+            "a": "হ্যাঁ। নতুন PDF শুধু রাখা পৃষ্ঠা দিয়ে তৈরি হয়, তাই সরানো পৃষ্ঠা আর থাকে না। এটি সম্পূর্ণ পৃষ্ঠা বাদ দেয়, কিন্তু রাখা পৃষ্ঠার ভেতরের লেখা লুকায় না। সংবেদনশীল লেখার জন্য উপযুক্ত Redact টুল ব্যবহার করুন।"
+          },
+          {
+            "q": "ভুল পৃষ্ঠা সরালে কী করব?",
+            "a": "মূল ফাইল অপরিবর্তিত থাকে। সেটি আবার খুলে সংশোধিত তালিকা দিয়ে প্রক্রিয়া চালান। নম্বর নিয়ে সন্দেহ হলে Organize PDF-এ থাম্বনেইল দেখে পৃষ্ঠা সরান।"
+          }
+        ],
+        "keywords": [
+          "PDF থেকে ফাঁকা পৃষ্ঠা সরান",
+          "PDF ফাঁকা পৃষ্ঠা মুছুন",
+          "PDF পৃষ্ঠা বিনামূল্যে সরান"
+        ],
+        "relatedTools": [
+          "delete-pages",
+          "organize-pdf",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "add-cover-page-to-pdf",
+          "rotate-scanned-pdf-correctly",
+          "reorder-scanned-pdf-pages"
+        ]
       }
     ]
   },
@@ -46771,6 +47171,86 @@
         "relatedPosts": [
           "insert-pages-into-pdf",
           "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "remove-blank-pdf-pages",
+        "slug": "remove-blank-pdf-pages",
+        "cluster": "editing-expansion",
+        "tool": "delete-pages",
+        "title": "Cách xóa trang PDF trống",
+        "metaTitle": "Cách xóa trang PDF trống",
+        "metaDescription": "Xóa trang PDF trống bằng hình thu nhỏ hoặc số trang. Miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "answer": "Để xóa trang PDF trống, trước tiên hãy xác nhận trang đó thật sự trống và ghi lại vị trí. Nhập số trang hoặc khoảng trang trong Delete Pages để tạo bản mới. Các trang còn lại giữ nguyên thứ tự và chất lượng; tệp được xử lý trong trình duyệt.",
+        "sections": [
+          {
+            "heading": "Cách xóa trang PDF trống",
+            "paragraphs": [
+              "Trang trống thường xuất hiện khi quét hai mặt nhưng một số tờ chỉ có nội dung ở một mặt. Trước khi xóa, hãy kiểm tra từng trang: trang trông có vẻ trống vẫn có thể chứa chữ ký mờ, ghi chú hoặc chữ màu trắng. PrintxPDF xóa các vị trí bạn chọn và tạo một bản riêng."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ bản gốc",
+                "text": "Lưu một bản chưa chỉnh sửa. Công cụ tạo tệp mới, nhưng bản gốc giúp bạn sửa nếu chọn nhầm trang."
+              },
+              {
+                "heading": "Xác định trang trống",
+                "text": "Đếm từ trang đầu tiên của PDF. Số in ở chân trang có thể khác vị trí thực tế, nhất là khi có bìa hoặc mục lục."
+              },
+              {
+                "heading": "Mở Delete Pages",
+                "text": "Mở tệp bằng [Delete Pages](/tools/delete-pages). Nhập số trang hoặc khoảng trang, cách nhau bằng dấu phẩy, ví dụ 2, 5-7."
+              },
+              {
+                "heading": "Tạo và kiểm tra bản mới",
+                "text": "Chạy thao tác xóa, tải PDF xuống và kiểm tra thứ tự, tổng số trang cùng các trang liền kề trước khi chia sẻ."
+              }
+            ]
+          },
+          {
+            "heading": "Kiểm tra trang trước khi xóa",
+            "paragraphs": [
+              "**Làm sao biết trang thật sự trống?** Phóng to và xem toàn bộ trang, kể cả mép giấy và ghi chú mờ. OCR có thể tìm văn bản trên bản quét nhưng không chắc phát hiện chữ ký, con dấu hoặc nét bút chì. Dùng [Organize PDF](/tools/organize-pdf) nếu bạn muốn chọn bằng hình thu nhỏ.",
+              "**Cần nhập số nào?** Công cụ đếm vị trí trong tệp, bắt đầu từ tờ đầu tiên là 1, không dùng số in trên trang. Nếu bìa ở vị trí đầu, trang in số 1 có thể là vị trí thứ 3 trong tệp. Ngăn cách số và khoảng bằng dấu phẩy.",
+              "**Chất lượng có giảm hoặc bản gốc có đổi không?** Không. PDF mới chỉ được tạo từ các trang bạn giữ lại theo thứ tự cũ. Các trang đó được sao chép, không vẽ lại, nên giữ chất lượng. Nếu chọn sai, mở lại bản gốc và chạy với danh sách đã sửa.",
+              "**Quy trình có riêng tư không?** Delete Pages xử lý cục bộ trong trình duyệt; PDF thông thường không được tải lên máy chủ. Điều này tránh chuyển hóa đơn, báo cáo hoặc hồ sơ y tế không cần thiết. Với tài liệu bị hạn chế, hãy làm theo quy định của tổ chức và kiểm tra bản kết quả trước khi chia sẻ."
+            ]
+          }
+        ],
+        "ctaLabel": "Xóa trang trống miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Tôi có thể xóa trang PDF trống miễn phí không?",
+            "a": "Có. Chức năng cơ bản của Delete Pages trên PrintxPDF miễn phí, không cần tài khoản và không thêm watermark. Nhập vị trí cần xóa rồi tải bản mới. Xem thông báo của công cụ để biết giới hạn sử dụng hiện tại."
+          },
+          {
+            "q": "Số trang nhập có phải số in trên trang không?",
+            "a": "Không. Đó là vị trí trong tệp, tính trang đầu tiên là 1. Bìa hoặc mục lục có thể làm vị trí khác với số in. Hãy xem hình thu nhỏ hoặc PDF Reader trước khi lập danh sách."
+          },
+          {
+            "q": "Trang đã xóa có thực sự biến mất khỏi tệp không?",
+            "a": "Có. PDF mới chỉ gồm các trang được giữ lại nên trang đã xóa không còn trong đó. Cách này xóa cả trang, không che chữ trên trang vẫn giữ. Để loại bỏ nội dung nhạy cảm, hãy dùng công cụ Redact phù hợp."
+          },
+          {
+            "q": "Nếu xóa nhầm trang thì sao?",
+            "a": "Bản gốc vẫn nguyên vẹn. Mở lại bản gốc và thực hiện với danh sách đã sửa. Nếu chưa chắc số trang, dùng Organize PDF để xem hình thu nhỏ và xóa trực quan."
+          }
+        ],
+        "keywords": [
+          "xóa trang PDF trống",
+          "loại bỏ trang trắng PDF",
+          "xóa trang PDF miễn phí"
+        ],
+        "relatedTools": [
+          "delete-pages",
+          "organize-pdf",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "add-cover-page-to-pdf",
+          "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
         ]
       }
@@ -54571,6 +55051,86 @@
         "relatedPosts": [
           "insert-pages-into-pdf",
           "remove-blank-pdf-pages",
+          "reorder-scanned-pdf-pages"
+        ]
+      },
+      {
+        "topic": "remove-blank-pdf-pages",
+        "slug": "remove-blank-pdf-pages",
+        "cluster": "editing-expansion",
+        "tool": "delete-pages",
+        "title": "如何删除 PDF 中的空白页",
+        "metaTitle": "如何删除 PDF 中的空白页",
+        "metaDescription": "按缩略图或页码删除 PDF 空白页。浏览器内免费处理，无需账户，也没有水印。 可直接在浏览器中免费处理，无需注册或上传文件。",
+        "answer": "删除 PDF 空白页前，先确认页面确实没有内容，并记下它们在文件中的位置。在 Delete Pages 中输入页码或范围，生成一个新副本。其余页面保持原顺序和质量，文件在浏览器中处理。",
+        "sections": [
+          {
+            "heading": "如何删除 PDF 中的空白页",
+            "paragraphs": [
+              "双面扫描时，如果部分纸张只有一面有内容，PDF 中就可能出现空白页。删除前请逐页检查：看似空白的页面可能有浅色签名、批注或白色文字。PrintxPDF 可删除指定位置，并生成单独的新副本。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原文件",
+                "text": "保存未修改的副本。工具会生成新文件，原件可用于纠正误选的页面。"
+              },
+              {
+                "heading": "找出空白页",
+                "text": "从 PDF 的第一页开始计数。页脚印刷的页码可能与文件中的实际位置不同，尤其是有封面或目录时。"
+              },
+              {
+                "heading": "打开 Delete Pages",
+                "text": "在 [Delete Pages](/tools/delete-pages) 中打开文件。输入单页或用逗号分隔的范围，例如 2, 5-7。"
+              },
+              {
+                "heading": "生成并检查副本",
+                "text": "执行删除并下载 PDF。分享前检查页面顺序、总页数和被删页面前后的内容。"
+              }
+            ]
+          },
+          {
+            "heading": "删除前先检查页面",
+            "paragraphs": [
+              "**怎样确认页面真的空白？** 放大查看整页，包括边缘和浅色批注。OCR 有助于查找扫描件中的文字，但未必能发现签名、印章或铅笔痕迹。若想按缩略图选择，可用 [Organize PDF](/tools/organize-pdf)。",
+              "**应该输入哪些页码？** 工具按文件中的位置计数，第一页为 1，不使用页面上印刷的页码。例如封面占第一位时，印刷页码为 1 的页面可能位于文件第 3 页。页码和范围用逗号分隔。",
+              "**页面质量会下降或原件会被修改吗？** 不会。新 PDF 仅由保留的页面按原顺序组成。页面是复制过去而非重新绘制，因此保持原质量。选错时，重新打开原件并使用修正后的列表。",
+              "**这个过程是否保护隐私？** Delete Pages 在浏览器本地处理，普通 PDF 不会上传到服务器。这能减少账单、报告或医疗记录的不必要传输。受组织规则限制的文件仍应遵循内部流程，并在分享前检查输出文件。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费删除空白页，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "可以免费删除 PDF 空白页吗？",
+            "a": "可以。PrintxPDF 的 Delete Pages 基础功能免费，无需账户，也不会添加水印。输入要删除的位置并下载新副本。当前使用限制请查看工具提示。"
+          },
+          {
+            "q": "输入的是页面上印刷的页码吗？",
+            "a": "不是。输入的是文件中的页面位置，从第一页计为 1。封面或目录会使文件位置与印刷页码不同。填写列表前请查看缩略图或 PDF Reader。"
+          },
+          {
+            "q": "删除的页面会从文件中彻底移除吗？",
+            "a": "会。新 PDF 只由保留的页面组成，被删除的整页不会包含在输出中。这适用于删除整页，不会隐藏保留页面中的文字。若要移除敏感内容，请使用合适的 Redact 工具。"
+          },
+          {
+            "q": "如果误删了页面怎么办？",
+            "a": "原文件不会改变。重新打开原文件并用修正后的列表再处理。如果不确定页码，可使用 Organize PDF 查看缩略图并直接选择页面。"
+          }
+        ],
+        "keywords": [
+          "删除 PDF 空白页",
+          "移除 PDF 空白页面",
+          "免费删除 PDF 页面"
+        ],
+        "relatedTools": [
+          "delete-pages",
+          "organize-pdf",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "add-cover-page-to-pdf",
+          "rotate-scanned-pdf-correctly",
           "reorder-scanned-pdf-pages"
         ]
       }
