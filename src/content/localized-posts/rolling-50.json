@@ -8688,6 +8688,88 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-to-markdown-documentation",
+        "slug": "pdf-to-markdown-documentation",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-markdown",
+        "title": "Cómo convertir un PDF a Markdown para documentación",
+        "metaTitle": "Cómo convertir un PDF a Markdown para documentación",
+        "metaDescription": "Convierte un PDF con texto a Markdown para documentación, notas o wikis. Gratis en tu navegador, sin cuenta ni subida.",
+        "answer": "Para convertir un PDF a Markdown para documentación, extrae el texto con PDF a Markdown y revisa los títulos, listas y párrafos en el archivo .md. La herramienta estima los encabezados por el tamaño de letra; no reconstruye tablas ni imágenes y necesita texto real, no páginas escaneadas. Conserva el PDF original y corrige el Markdown antes de publicarlo en una wiki o repositorio.",
+        "sections": [
+          {
+            "heading": "Convierte PDF a Markdown en cuatro pasos",
+            "paragraphs": [
+              "Para convertir un PDF a Markdown para documentación, extrae el texto con PDF a Markdown y revisa los títulos, listas y párrafos en el archivo .md. La herramienta estima los encabezados por el tamaño de letra; no reconstruye tablas ni imágenes y necesita texto real, no páginas escaneadas. Conserva el PDF original y corrige el Markdown antes de publicarlo en una wiki o repositorio."
+            ],
+            "steps": [
+              {
+                "heading": "Conserva el PDF original",
+                "text": "Guarda el archivo sin cambios para comparar el contenido y consultar el diseño, las imágenes y las tablas que no pasarán al Markdown."
+              },
+              {
+                "heading": "Abre PDF a Markdown",
+                "text": "Carga el documento en [PDF a Markdown](/tools/pdf-to-markdown). El archivo se procesa en tu navegador y no se sube para esta conversión."
+              },
+              {
+                "heading": "Elige títulos y saltos de página",
+                "text": "Activa detección de encabezados por tamaño de fuente o elige párrafos simples. Decide si quieres un documento continuo o una regla entre páginas."
+              },
+              {
+                "heading": "Descarga y revisa el .md",
+                "text": "Comprueba la jerarquía de títulos, viñetas, enlaces, párrafos y espacios. Repara tablas o secciones que necesiten formato antes de guardar la documentación."
+              }
+            ]
+          },
+          {
+            "heading": "Qué se conserva al exportar a Markdown",
+            "paragraphs": [
+              "Markdown es texto sin formato con marcas sencillas para títulos, listas y enlaces. Puedes abrirlo en Obsidian, Notion, GitHub o un editor de texto y revisar los cambios con control de versiones. PDF a Markdown es útil para reutilizar texto documental, pero el archivo resultante no conserva la apariencia exacta de la página original.",
+              "La detección de títulos usa diferencias de tamaño de fuente como una pista. Si un encabezado solo está en negrita con el mismo tamaño que el cuerpo, puede quedar como párrafo normal. Revisa los niveles #, ## y ### y corrige la jerarquía para que el índice de la documentación tenga sentido.",
+              "Las listas con viñetas y algunos marcadores numerados se convierten en listas Markdown, y las líneas partidas se unen en párrafos. Negrita, cursiva, tablas y enlaces ocultos no se reconstruyen de forma fiable. Una dirección web escrita completa puede sobrevivir como texto; el texto de un enlace cuyo destino estaba oculto puede perder la URL.",
+              "Si el Markdown sale vacío, el PDF puede ser una imagen escaneada. Usa [OCR PDF](/tools/ocr-pdf) para reconocer el texto y convierte la copia resultante. Para datos de tabla, prueba [PDF a Excel](/tools/pdf-to-excel), que separa líneas por espacios; revisa sus celdas y crea la tabla Markdown manualmente."
+            ]
+          }
+        ],
+        "ctaLabel": "Convierte PDF a Markdown gratis en tu navegador, sin cuenta ni subida.",
+        "faqs": [
+          {
+            "q": "¿Cómo convierto un PDF a Markdown para documentación?",
+            "a": "Abre PDF a Markdown, carga el PDF con texto, configura detección de encabezados y saltos de página, y descarga el .md. Revisa títulos, listas, enlaces y tablas antes de añadir el archivo a una wiki o repositorio."
+          },
+          {
+            "q": "¿PDF a Markdown conserva los títulos?",
+            "a": "Intenta detectar encabezados comparando el tamaño de letra con el texto normal. Los títulos con tamaño claramente mayor pueden convertirse en #, ## o ###. Los encabezados que solo usan negrita pueden quedar como párrafos y necesitar corrección manual."
+          },
+          {
+            "q": "¿Se convierten las tablas y las imágenes?",
+            "a": "No como elementos estructurados. Las celdas de una tabla pueden quedar como líneas de texto y las imágenes no se incluyen como imágenes Markdown. Convierte datos tabulares por separado y añade las imágenes manualmente si son necesarias en la documentación."
+          },
+          {
+            "q": "¿Qué hago si el archivo Markdown está vacío?",
+            "a": "El PDF puede contener páginas escaneadas como imágenes y no texto seleccionable. Ejecuta OCR PDF primero para reconocer las palabras y luego convierte la copia con texto. Revisa los resultados del OCR antes de publicar documentación técnica."
+          }
+        ],
+        "keywords": [
+          "cómo convertir un pdf a markdown para documentación",
+          "PDF to Markdown documentation",
+          "convert PDF to MD"
+        ],
+        "relatedTools": [
+          "pdf-to-markdown",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -17359,6 +17441,88 @@
         ],
         "relatedTools": [
           "pdf-to-excel",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-markdown-documentation",
+        "slug": "pdf-to-markdown-documentation",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-markdown",
+        "title": "Como converter PDF para Markdown para documentação",
+        "metaTitle": "Como converter PDF para Markdown para documentação",
+        "metaDescription": "Converta um PDF com texto para Markdown para documentação, notas ou wikis. Grátis no navegador, sem conta nem upload.",
+        "answer": "Para converter PDF para Markdown para documentação, extraia o texto com PDF para Markdown e revise títulos, listas e parágrafos no arquivo .md. A ferramenta estima cabeçalhos pelo tamanho da fonte; não reconstrói tabelas nem imagens e precisa de texto real, não de páginas digitalizadas. Guarde o PDF original e corrija o Markdown antes de publicar em uma wiki ou repositório.",
+        "sections": [
+          {
+            "heading": "Converta PDF para Markdown em quatro etapas",
+            "paragraphs": [
+              "Para converter PDF para Markdown para documentação, extraia o texto com PDF para Markdown e revise títulos, listas e parágrafos no arquivo .md. A ferramenta estima cabeçalhos pelo tamanho da fonte; não reconstrói tabelas nem imagens e precisa de texto real, não de páginas digitalizadas. Guarde o PDF original e corrija o Markdown antes de publicar em uma wiki ou repositório."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o PDF original",
+                "text": "Mantenha o arquivo sem alterações para comparar o conteúdo e consultar layout, imagens e tabelas que não serão transferidos para Markdown."
+              },
+              {
+                "heading": "Abra PDF para Markdown",
+                "text": "Carregue o documento em [PDF para Markdown](/tools/pdf-to-markdown). O arquivo é processado no navegador e não é enviado para essa conversão."
+              },
+              {
+                "heading": "Escolha títulos e quebras de página",
+                "text": "Ative a detecção de cabeçalhos pelo tamanho da fonte ou escolha parágrafos simples. Decida se quer um documento contínuo ou uma linha entre páginas."
+              },
+              {
+                "heading": "Baixe e revise o .md",
+                "text": "Confira hierarquia de títulos, listas, links, parágrafos e espaços. Corrija tabelas ou seções que precisem de formatação antes de salvar a documentação."
+              }
+            ]
+          },
+          {
+            "heading": "O que é preservado na exportação Markdown",
+            "paragraphs": [
+              "Markdown é texto simples com marcações curtas para títulos, listas e links. Você pode abrir o arquivo no Obsidian, Notion, GitHub ou em um editor de texto e acompanhar mudanças no controle de versão. PDF para Markdown ajuda a reutilizar texto documental, mas o resultado não preserva a aparência exata da página original.",
+              "A detecção de títulos usa diferenças no tamanho da fonte como indício. Se um cabeçalho estiver apenas em negrito e tiver o mesmo tamanho do corpo, pode virar um parágrafo comum. Revise os níveis #, ## e ### e corrija a hierarquia para que o índice da documentação faça sentido.",
+              "Listas com marcadores e alguns indicadores numerados viram listas Markdown, e linhas quebradas se unem em parágrafos. Negrito, itálico, tabelas e links ocultos não são reconstruídos com confiabilidade. Um endereço web escrito por extenso pode permanecer como texto; o texto de um link cujo destino estava oculto pode perder a URL.",
+              "Se o Markdown sair vazio, o PDF pode ser uma imagem digitalizada. Use [OCR PDF](/tools/ocr-pdf) para reconhecer o texto e converta a cópia resultante. Para dados de tabela, tente [PDF para Excel](/tools/pdf-to-excel), que separa linhas por espaços; confira as células e monte a tabela Markdown manualmente."
+            ]
+          }
+        ],
+        "ctaLabel": "Converta PDF para Markdown grátis no navegador, sem conta nem upload.",
+        "faqs": [
+          {
+            "q": "Como converter PDF para Markdown para documentação?",
+            "a": "Abra PDF para Markdown, carregue um PDF com texto, configure detecção de títulos e quebras de página e baixe o .md. Revise títulos, listas, links e tabelas antes de incluir o arquivo em uma wiki ou repositório."
+          },
+          {
+            "q": "PDF para Markdown preserva os títulos?",
+            "a": "A ferramenta tenta detectar cabeçalhos comparando o tamanho da fonte com o texto comum. Títulos claramente maiores podem virar #, ## ou ###. Cabeçalhos que usam apenas negrito podem ficar como parágrafos e exigir correção manual."
+          },
+          {
+            "q": "Tabelas e imagens são convertidas?",
+            "a": "Não como elementos estruturados. As células de uma tabela podem virar linhas de texto, e imagens não são incluídas como imagens Markdown. Converta dados tabulares separadamente e adicione imagens manualmente se forem necessárias na documentação."
+          },
+          {
+            "q": "O que faço se o arquivo Markdown vier vazio?",
+            "a": "O PDF pode ter páginas digitalizadas como imagens, sem texto selecionável. Execute OCR PDF primeiro para reconhecer as palavras e depois converta a cópia com texto. Revise o OCR antes de publicar documentação técnica."
+          }
+        ],
+        "keywords": [
+          "como converter pdf para markdown para documentação",
+          "PDF to Markdown documentation",
+          "convert PDF to MD"
+        ],
+        "relatedTools": [
+          "pdf-to-markdown",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
@@ -26052,6 +26216,88 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-to-markdown-documentation",
+        "slug": "pdf-to-markdown-documentation",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-markdown",
+        "title": "दस्तावेज़ीकरण के लिए PDF को Markdown में कैसे बदलें",
+        "metaTitle": "दस्तावेज़ीकरण के लिए PDF को Markdown में कैसे बदलें",
+        "metaDescription": "टेक्स्ट वाले PDF को दस्तावेज़ीकरण, नोट्स या विकी के लिए Markdown में बदलें। ब्राउज़र में मुफ्त, बिना खाते या अपलोड के।",
+        "answer": "दस्तावेज़ीकरण के लिए PDF को Markdown में बदलने हेतु PDF to Markdown से टेक्स्ट निकालें और .md फ़ाइल में शीर्षक, सूची और पैराग्राफ जांचें। टूल फ़ॉन्ट आकार से शीर्षक का अनुमान लगाता है; टेबल या चित्र फिर नहीं बनाता और स्कैन पेज नहीं, असली टेक्स्ट चाहिए। मूल PDF रखें और विकी या रिपॉज़िटरी में प्रकाशित करने से पहले Markdown सुधारें।",
+        "sections": [
+          {
+            "heading": "चार चरणों में PDF को Markdown में बदलें",
+            "paragraphs": [
+              "दस्तावेज़ीकरण के लिए PDF को Markdown में बदलने हेतु PDF to Markdown से टेक्स्ट निकालें और .md फ़ाइल में शीर्षक, सूची और पैराग्राफ जांचें। टूल फ़ॉन्ट आकार से शीर्षक का अनुमान लगाता है; टेबल या चित्र फिर नहीं बनाता और स्कैन पेज नहीं, असली टेक्स्ट चाहिए। मूल PDF रखें और विकी या रिपॉज़िटरी में प्रकाशित करने से पहले Markdown सुधारें।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल PDF रखें",
+                "text": "बिना बदलाव वाली फ़ाइल बचाएं ताकि सामग्री की तुलना और मूल डिज़ाइन, चित्र व टेबल देख सकें, जो Markdown में नहीं आएंगे।"
+              },
+              {
+                "heading": "PDF to Markdown खोलें",
+                "text": "दस्तावेज़ [PDF to Markdown](/tools/pdf-to-markdown) में दें। फ़ाइल ब्राउज़र में प्रोसेस होती है और इस कन्वर्ज़न के लिए अपलोड नहीं होती।"
+              },
+              {
+                "heading": "शीर्षक और पेज ब्रेक चुनें",
+                "text": "फ़ॉन्ट आकार से शीर्षक पहचान चालू करें या साधारण पैराग्राफ चुनें। तय करें कि एक लगातार दस्तावेज़ चाहिए या पेजों के बीच विभाजक रेखा।"
+              },
+              {
+                "heading": ".md डाउनलोड कर जांचें",
+                "text": "शीर्षक क्रम, सूची, लिंक, पैराग्राफ और खाली जगह देखें। दस्तावेज़ सहेजने से पहले टेबल या अनुभागों का फॉर्मेट ठीक करें।"
+              }
+            ]
+          },
+          {
+            "heading": "Markdown में क्या सुरक्षित रहता है",
+            "paragraphs": [
+              "Markdown साधारण टेक्स्ट है जिसमें शीर्षक, सूची और लिंक के लिए छोटे चिह्न होते हैं। इसे Obsidian, Notion, GitHub या टेक्स्ट एडिटर में खोलकर संस्करण नियंत्रण से बदलाव देख सकते हैं। PDF to Markdown दस्तावेज़ टेक्स्ट दोबारा इस्तेमाल करने में मदद करता है, लेकिन मूल पेज का दृश्य रूप सुरक्षित नहीं रखता।",
+              "शीर्षक पहचानने के लिए टूल फ़ॉन्ट आकार का अंतर देखता है। अगर हेडिंग केवल बोल्ड है और बॉडी टेक्स्ट जितनी ही बड़ी है, तो वह साधारण पैराग्राफ बन सकती है। #, ## और ### स्तर जांचें और दस्तावेज़ की विषय-सूची के लिए क्रम सुधारें।",
+              "बुलेट और कुछ नंबर वाले निशान Markdown सूची बनते हैं, और टूटी पंक्तियां पैराग्राफ में जुड़ती हैं। बोल्ड, इटैलिक, टेबल और छिपे लिंक विश्वसनीय रूप से नहीं बनते। पूरा लिखा वेब पता टेक्स्ट रह सकता है; छिपे पते वाला लिंक URL खो सकता है।",
+              "Markdown खाली हो तो PDF स्कैन इमेज हो सकता है। टेक्स्ट पहचानने के लिए पहले [OCR PDF](/tools/ocr-pdf) चलाएं और नई टेक्स्ट कॉपी बदलें। टेबल डेटा के लिए [PDF to Excel](/tools/pdf-to-excel) आजमाएं, जो स्पेस से लाइन बांटता है; सेल जांचें और Markdown टेबल हाथ से बनाएं।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में PDF मुफ्त Markdown में बदलें, बिना खाते या अपलोड के।",
+        "faqs": [
+          {
+            "q": "दस्तावेज़ीकरण के लिए PDF को Markdown में कैसे बदलूं?",
+            "a": "PDF to Markdown खोलें, टेक्स्ट वाला PDF दें, शीर्षक पहचान और पेज ब्रेक विकल्प सेट करें, फिर .md डाउनलोड करें। विकी या रिपॉज़िटरी में जोड़ने से पहले शीर्षक, सूची, लिंक और टेबल जांचें।"
+          },
+          {
+            "q": "क्या PDF to Markdown शीर्षक सुरक्षित रखता है?",
+            "a": "यह सामान्य टेक्स्ट के मुकाबले फ़ॉन्ट आकार देखकर शीर्षक पहचानने की कोशिश करता है। स्पष्ट रूप से बड़े शीर्षक #, ## या ### बन सकते हैं। केवल बोल्ड किए शीर्षक पैराग्राफ रह सकते हैं और हाथ से ठीक करने पड़ेंगे।"
+          },
+          {
+            "q": "क्या टेबल और चित्र कन्वर्ट होते हैं?",
+            "a": "संरचित तत्वों के रूप में नहीं। टेबल सेल टेक्स्ट लाइनों में बदल सकते हैं और चित्र Markdown इमेज के रूप में नहीं जुड़ते। टेबल डेटा अलग निकालें और दस्तावेज़ में जरूरी चित्र हाथ से जोड़ें।"
+          },
+          {
+            "q": "Markdown फ़ाइल खाली हो तो क्या करें?",
+            "a": "PDF स्कैन इमेज हो सकता है जिसमें चयन योग्य टेक्स्ट नहीं है। पहले OCR PDF चलाकर शब्द पहचानें, फिर टेक्स्ट वाली कॉपी बदलें। तकनीकी दस्तावेज़ प्रकाशित करने से पहले OCR परिणाम जांचें।"
+          }
+        ],
+        "keywords": [
+          "दस्तावेज़ीकरण के लिए pdf को markdown में कैसे बदलें",
+          "PDF to Markdown documentation",
+          "convert PDF to MD"
+        ],
+        "relatedTools": [
+          "pdf-to-markdown",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -34732,6 +34978,88 @@
         ],
         "relatedTools": [
           "pdf-to-excel",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-markdown-documentation",
+        "slug": "pdf-to-markdown-documentation",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-markdown",
+        "title": "كيفية تحويل PDF إلى Markdown للتوثيق",
+        "metaTitle": "كيفية تحويل PDF إلى Markdown للتوثيق",
+        "metaDescription": "حوّل PDF يحتوي على نص إلى Markdown للتوثيق أو الملاحظات أو الويكي. مجاناً في المتصفح، بلا حساب أو رفع.",
+        "answer": "لتحويل PDF إلى Markdown للتوثيق، استخرج النص باستخدام PDF to Markdown ثم راجع العناوين والقوائم والفقرات في ملف .md. تقدّر الأداة العناوين من حجم الخط؛ ولا تعيد بناء الجداول أو الصور، كما تحتاج إلى نص فعلي لا صفحات ممسوحة. احتفظ بملف PDF الأصلي وصحح Markdown قبل نشره في ويكي أو مستودع.",
+        "sections": [
+          {
+            "heading": "تحويل PDF إلى Markdown في أربع خطوات",
+            "paragraphs": [
+              "لتحويل PDF إلى Markdown للتوثيق، استخرج النص باستخدام PDF to Markdown ثم راجع العناوين والقوائم والفقرات في ملف .md. تقدّر الأداة العناوين من حجم الخط؛ ولا تعيد بناء الجداول أو الصور، كما تحتاج إلى نص فعلي لا صفحات ممسوحة. احتفظ بملف PDF الأصلي وصحح Markdown قبل نشره في ويكي أو مستودع."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بملف PDF الأصلي",
+                "text": "أبقِ نسخة دون تعديل لمقارنة المحتوى والرجوع إلى التخطيط والصور والجداول التي لن تنتقل إلى Markdown."
+              },
+              {
+                "heading": "افتح PDF to Markdown",
+                "text": "حمّل المستند في [PDF to Markdown](/tools/pdf-to-markdown). تتم المعالجة في المتصفح ولا يُرفع الملف لهذا التحويل."
+              },
+              {
+                "heading": "اختر العناوين وفواصل الصفحات",
+                "text": "فعّل اكتشاف العناوين من حجم الخط أو اختر الفقرات العادية. قرر بين مستند متصل أو قاعدة فاصلة بين الصفحات."
+              },
+              {
+                "heading": "نزّل ملف .md وراجعه",
+                "text": "تحقق من مستويات العناوين والقوائم والروابط والفقرات والمسافات. أصلح الجداول أو الأقسام التي تحتاج إلى تنسيق قبل حفظ التوثيق."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي يُحفظ عند التصدير إلى Markdown",
+            "paragraphs": [
+              "Markdown نص عادي بعلامات بسيطة للعناوين والقوائم والروابط. يمكنك فتحه في Obsidian أو Notion أو GitHub أو محرر نصوص وتتبع التغييرات بإدارة الإصدارات. يساعد PDF to Markdown في إعادة استخدام نص الوثائق، لكن الناتج لا يحافظ على المظهر الدقيق للصفحة الأصلية.",
+              "يعتمد اكتشاف العناوين على اختلاف حجم الخط كإشارة. إذا كان العنوان عريضاً فقط وبحجم نص المتن نفسه، فقد يظهر كفقرة عادية. راجع مستويات # و## و### وصحح التسلسل حتى يصبح فهرس التوثيق منطقياً.",
+              "تتحول علامات التعداد وبعض مؤشرات الترقيم إلى قوائم Markdown، وتُجمع الأسطر المكسورة في فقرات. لا يعاد بناء الغامق والمائل والجداول والروابط المخفية بشكل موثوق. قد يبقى عنوان الويب المكتوب كاملاً كنص؛ أما نص الرابط الذي يخفي عنوانه فقد يفقد URL.",
+              "إذا كان Markdown فارغاً فقد يكون PDF صورة ممسوحة. استخدم [OCR PDF](/tools/ocr-pdf) للتعرف على النص ثم حوّل النسخة الناتجة. لبيانات الجداول، جرّب [PDF to Excel](/tools/pdf-to-excel)، الذي يفصل الأسطر حسب المسافات؛ راجع الخلايا وأنشئ جدول Markdown يدوياً."
+            ]
+          }
+        ],
+        "ctaLabel": "حوّل PDF إلى Markdown مجاناً في المتصفح، بلا حساب أو رفع.",
+        "faqs": [
+          {
+            "q": "كيف أحوّل PDF إلى Markdown للتوثيق؟",
+            "a": "افتح PDF to Markdown وحمّل PDF يحتوي على نص واضبط اكتشاف العناوين وفواصل الصفحات ثم نزّل ملف .md. راجع العناوين والقوائم والروابط والجداول قبل إضافته إلى ويكي أو مستودع."
+          },
+          {
+            "q": "هل يحافظ PDF to Markdown على العناوين؟",
+            "a": "تحاول الأداة اكتشافها بمقارنة حجم الخط بالنص العادي. قد تتحول العناوين الأكبر بوضوح إلى # أو ## أو ###. أما العناوين التي تستخدم الغامق فقط فقد تبقى فقرات وتحتاج إلى تعديل يدوي."
+          },
+          {
+            "q": "هل تتحول الجداول والصور؟",
+            "a": "ليس كعناصر منظمة. قد تتحول خلايا الجدول إلى أسطر نصية، ولا تُضمّن الصور كصور Markdown. حوّل بيانات الجدول بشكل منفصل وأضف الصور يدوياً إذا احتاج إليها التوثيق."
+          },
+          {
+            "q": "ماذا أفعل إذا كان ملف Markdown فارغاً؟",
+            "a": "قد يحتوي PDF على صور ممسوحة بلا نص قابل للتحديد. شغّل OCR PDF أولاً للتعرف على الكلمات ثم حوّل النسخة النصية. راجع نتيجة OCR قبل نشر التوثيق التقني."
+          }
+        ],
+        "keywords": [
+          "كيفية تحويل pdf إلى markdown للتوثيق",
+          "PDF to Markdown documentation",
+          "convert PDF to MD"
+        ],
+        "relatedTools": [
+          "pdf-to-markdown",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
@@ -43437,6 +43765,88 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-to-markdown-documentation",
+        "slug": "pdf-to-markdown-documentation",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-markdown",
+        "title": "ডকুমেন্টেশনের জন্য PDF Markdown-এ কীভাবে রূপান্তর করবেন",
+        "metaTitle": "ডকুমেন্টেশনের জন্য PDF Markdown-এ কীভাবে রূপান্তর করবেন",
+        "metaDescription": "ডকুমেন্টেশন, নোট বা উইকির জন্য টেক্সটযুক্ত PDF Markdown-এ নিন। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট বা আপলোড ছাড়া।",
+        "answer": "ডকুমেন্টেশনের জন্য PDF Markdown-এ রূপান্তর করতে PDF to Markdown দিয়ে লেখা বের করুন এবং .md ফাইলে শিরোনাম, তালিকা ও অনুচ্ছেদ যাচাই করুন। টুলটি ফন্টের মাপ দেখে হেডিং অনুমান করে; টেবিল বা ছবি পুনর্গঠন করে না এবং স্ক্যান পৃষ্ঠা নয়, আসল টেক্সট দরকার। মূল PDF রেখে উইকি বা রিপোজিটরিতে প্রকাশের আগে Markdown ঠিক করুন।",
+        "sections": [
+          {
+            "heading": "চার ধাপে PDF Markdown-এ নিন",
+            "paragraphs": [
+              "ডকুমেন্টেশনের জন্য PDF Markdown-এ রূপান্তর করতে PDF to Markdown দিয়ে লেখা বের করুন এবং .md ফাইলে শিরোনাম, তালিকা ও অনুচ্ছেদ যাচাই করুন। টুলটি ফন্টের মাপ দেখে হেডিং অনুমান করে; টেবিল বা ছবি পুনর্গঠন করে না এবং স্ক্যান পৃষ্ঠা নয়, আসল টেক্সট দরকার। মূল PDF রেখে উইকি বা রিপোজিটরিতে প্রকাশের আগে Markdown ঠিক করুন।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল PDF রাখুন",
+                "text": "কনটেন্ট তুলনা ও মূল নকশা, ছবি, টেবিল দেখার জন্য অপরিবর্তিত ফাইল রাখুন, যা Markdown-এ আসবে না।"
+              },
+              {
+                "heading": "PDF to Markdown খুলুন",
+                "text": "নথি [PDF to Markdown](/tools/pdf-to-markdown)-এ দিন। ফাইল ব্রাউজারে প্রক্রিয়াকৃত হয়, এই রূপান্তরে আপলোড হয় না।"
+              },
+              {
+                "heading": "শিরোনাম ও পৃষ্ঠা বিরতি বাছুন",
+                "text": "ফন্টের মাপ থেকে হেডিং শনাক্ত চালু করুন অথবা সাধারণ অনুচ্ছেদ নিন। একটানা নথি নাকি পৃষ্ঠার মাঝে বিভাজক চান ঠিক করুন।"
+              },
+              {
+                "heading": ".md নামিয়ে পরীক্ষা করুন",
+                "text": "হেডিং স্তর, তালিকা, লিংক, অনুচ্ছেদ ও ফাঁক দেখুন। ডকুমেন্টেশন সেভের আগে টেবিল বা অন্য ফরম্যাট দরকার এমন অংশ ঠিক করুন।"
+              }
+            ]
+          },
+          {
+            "heading": "Markdown-এ কী থাকে",
+            "paragraphs": [
+              "Markdown সাধারণ টেক্সট, যেখানে শিরোনাম, তালিকা ও লিংকের জন্য সহজ চিহ্ন থাকে। Obsidian, Notion, GitHub বা টেক্সট এডিটরে খুলে সংস্করণ নিয়ন্ত্রণে পরিবর্তন দেখা যায়। PDF to Markdown নথির লেখা পুনর্ব্যবহার করতে সাহায্য করে, তবে মূল পাতার হুবহু চেহারা রাখে না।",
+              "হেডিং শনাক্তে টুল ফন্টের মাপের পার্থক্যকে সংকেত ধরে। হেডিং শুধু বোল্ড হলেও মূল লেখার সমান মাপ হলে সাধারণ অনুচ্ছেদ হতে পারে। #, ## ও ### স্তর দেখে ডকুমেন্টেশনের সূচি যেন ঠিক হয় সেই ক্রম সংশোধন করুন।",
+              "বুলেট ও কিছু নম্বর চিহ্ন Markdown তালিকায় আসে, ভাঙা লাইন অনুচ্ছেদে জোড়ে। বোল্ড, ইটালিক, টেবিল ও লুকানো লিংক নির্ভরযোগ্যভাবে পুনর্গঠিত হয় না। সম্পূর্ণ লেখা ওয়েব ঠিকানা টেক্সট হিসেবে থাকতে পারে; আড়াল করা ঠিকানাসহ লিংক URL হারাতে পারে।",
+              "Markdown ফাঁকা হলে PDF স্ক্যান ছবি হতে পারে। লেখা চিনতে আগে [OCR PDF](/tools/ocr-pdf) চালিয়ে তৈরি কপি রূপান্তর করুন। টেবিল ডেটার জন্য [PDF to Excel](/tools/pdf-to-excel) নিন, যা ফাঁকে লাইন ভাগ করে; সেল পরীক্ষা করে Markdown টেবিল হাতে তৈরি করুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে PDF বিনামূল্যে Markdown-এ নিন, অ্যাকাউন্ট বা আপলোড ছাড়া।",
+        "faqs": [
+          {
+            "q": "ডকুমেন্টেশনের জন্য PDF Markdown-এ কীভাবে বদলাব?",
+            "a": "PDF to Markdown খুলে টেক্সটযুক্ত PDF দিন, হেডিং শনাক্ত ও পৃষ্ঠা বিরতির সেটিং বেছে .md নামান। উইকি বা রিপোজিটরিতে যোগ করার আগে শিরোনাম, তালিকা, লিংক ও টেবিল পরীক্ষা করুন।"
+          },
+          {
+            "q": "PDF to Markdown কি শিরোনাম ধরে রাখে?",
+            "a": "সাধারণ লেখার সঙ্গে ফন্টের মাপ তুলনা করে হেডিং ধরার চেষ্টা করে। স্পষ্টভাবে বড় শিরোনাম #, ## বা ### হতে পারে। শুধু বোল্ড করা হেডিং অনুচ্ছেদ হয়ে থাকতে পারে এবং হাতে সংশোধন দরকার।"
+          },
+          {
+            "q": "টেবিল ও ছবি কি রূপান্তর হয়?",
+            "a": "গঠিত উপাদান হিসেবে নয়। টেবিলের সেল টেক্সট লাইনে আসতে পারে, ছবি Markdown ইমেজ হিসেবে যুক্ত হয় না। টেবিল ডেটা আলাদাভাবে নিন এবং ডকুমেন্টে দরকারি ছবি হাতে যোগ করুন।"
+          },
+          {
+            "q": "Markdown ফাইল ফাঁকা হলে কী করব?",
+            "a": "PDF-এ স্ক্যান করা ছবি থাকতে পারে, নির্বাচনযোগ্য লেখা নয়। আগে OCR PDF চালিয়ে শব্দ চিনুন, তারপর টেক্সটযুক্ত কপি রূপান্তর করুন। কারিগরি ডকুমেন্টেশন প্রকাশের আগে OCR ফল পরীক্ষা করুন।"
+          }
+        ],
+        "keywords": [
+          "ডকুমেন্টেশনের জন্য pdf markdown-এ কীভাবে রূপান্তর করবেন",
+          "PDF to Markdown documentation",
+          "convert PDF to MD"
+        ],
+        "relatedTools": [
+          "pdf-to-markdown",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -52108,6 +52518,88 @@
         ],
         "relatedTools": [
           "pdf-to-excel",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-markdown-documentation",
+        "slug": "pdf-to-markdown-documentation",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-markdown",
+        "title": "Cách chuyển PDF sang Markdown cho tài liệu",
+        "metaTitle": "Cách chuyển PDF sang Markdown cho tài liệu",
+        "metaDescription": "Chuyển PDF có văn bản sang Markdown cho tài liệu, ghi chú hoặc wiki. Miễn phí trong trình duyệt, không cần tài khoản hay tải lên.",
+        "answer": "Để chuyển PDF sang Markdown cho tài liệu, dùng PDF to Markdown trích xuất chữ rồi kiểm tra tiêu đề, danh sách và đoạn văn trong tệp .md. Công cụ ước đoán tiêu đề dựa trên cỡ chữ; không dựng lại bảng hay ảnh và cần văn bản thật, không phải trang quét. Giữ PDF gốc và sửa Markdown trước khi đăng lên wiki hoặc kho mã.",
+        "sections": [
+          {
+            "heading": "Chuyển PDF sang Markdown qua bốn bước",
+            "paragraphs": [
+              "Để chuyển PDF sang Markdown cho tài liệu, dùng PDF to Markdown trích xuất chữ rồi kiểm tra tiêu đề, danh sách và đoạn văn trong tệp .md. Công cụ ước đoán tiêu đề dựa trên cỡ chữ; không dựng lại bảng hay ảnh và cần văn bản thật, không phải trang quét. Giữ PDF gốc và sửa Markdown trước khi đăng lên wiki hoặc kho mã."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ PDF gốc",
+                "text": "Lưu tệp chưa chỉnh sửa để đối chiếu nội dung và xem lại bố cục, hình ảnh, bảng không được đưa sang Markdown."
+              },
+              {
+                "heading": "Mở PDF to Markdown",
+                "text": "Tải tài liệu vào [PDF to Markdown](/tools/pdf-to-markdown). Tệp được xử lý trong trình duyệt và không tải lên trong quy trình này."
+              },
+              {
+                "heading": "Chọn tiêu đề và ngắt trang",
+                "text": "Bật nhận diện tiêu đề theo cỡ chữ hoặc chọn chỉ đoạn văn. Chọn văn bản liên tục hay chèn dòng phân cách giữa các trang."
+              },
+              {
+                "heading": "Tải .md và rà soát",
+                "text": "Kiểm tra cấp tiêu đề, danh sách, liên kết, đoạn văn và khoảng trắng. Sửa bảng hoặc phần cần định dạng trước khi lưu tài liệu."
+              }
+            ]
+          },
+          {
+            "heading": "Những gì được giữ lại khi xuất Markdown",
+            "paragraphs": [
+              "Markdown là văn bản thuần với ký hiệu đơn giản cho tiêu đề, danh sách và liên kết. Bạn có thể mở bằng Obsidian, Notion, GitHub hoặc trình soạn thảo văn bản và theo dõi thay đổi qua quản lý phiên bản. PDF to Markdown giúp tái sử dụng nội dung tài liệu nhưng không giữ nguyên hình thức trang gốc.",
+              "Công cụ dùng khác biệt cỡ chữ làm dấu hiệu nhận diện tiêu đề. Nếu tiêu đề chỉ in đậm và cùng cỡ với nội dung, nó có thể thành đoạn văn thường. Kiểm tra cấp #, ## và ###, rồi sửa thứ tự để mục lục tài liệu hợp lý.",
+              "Dấu đầu dòng và một số ký hiệu đánh số thành danh sách Markdown; dòng bị ngắt được nối thành đoạn. Chữ đậm, nghiêng, bảng và liên kết ẩn không được dựng lại đáng tin cậy. Địa chỉ web viết đầy đủ có thể còn dưới dạng chữ; văn bản liên kết ẩn URL có thể mất đích.",
+              "Nếu Markdown trống, PDF có thể là ảnh quét. Chạy [OCR PDF](/tools/ocr-pdf) để nhận dạng chữ rồi chuyển bản mới. Với dữ liệu bảng, thử [PDF to Excel](/tools/pdf-to-excel), công cụ tách dòng theo khoảng trắng; kiểm tra ô và tự tạo bảng Markdown."
+            ]
+          }
+        ],
+        "ctaLabel": "Chuyển PDF sang Markdown miễn phí trong trình duyệt, không cần tài khoản hay tải lên.",
+        "faqs": [
+          {
+            "q": "Làm sao chuyển PDF sang Markdown cho tài liệu?",
+            "a": "Mở PDF to Markdown, tải PDF có văn bản, chọn cách nhận diện tiêu đề và ngắt trang rồi tải .md. Kiểm tra tiêu đề, danh sách, liên kết và bảng trước khi thêm vào wiki hoặc kho mã."
+          },
+          {
+            "q": "PDF to Markdown có giữ tiêu đề không?",
+            "a": "Công cụ cố nhận diện bằng cách so cỡ chữ với phần văn bản thường. Tiêu đề lớn rõ rệt có thể thành #, ## hoặc ###. Tiêu đề chỉ in đậm có thể thành đoạn thường và cần sửa thủ công."
+          },
+          {
+            "q": "Bảng và hình ảnh có được chuyển không?",
+            "a": "Không theo dạng cấu trúc. Ô bảng có thể thành dòng văn bản và hình ảnh không được nhúng thành ảnh Markdown. Hãy chuyển dữ liệu bảng riêng và thêm ảnh thủ công nếu tài liệu cần."
+          },
+          {
+            "q": "Nếu tệp Markdown trống thì sao?",
+            "a": "PDF có thể chỉ chứa ảnh quét, không có văn bản chọn được. Chạy OCR PDF trước để nhận dạng chữ rồi chuyển bản có văn bản. Rà kết quả OCR trước khi phát hành tài liệu kỹ thuật."
+          }
+        ],
+        "keywords": [
+          "cách chuyển pdf sang markdown cho tài liệu",
+          "PDF to Markdown documentation",
+          "convert PDF to MD"
+        ],
+        "relatedTools": [
+          "pdf-to-markdown",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
@@ -60799,6 +61291,88 @@
         ],
         "relatedTools": [
           "pdf-to-excel",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-markdown-documentation",
+        "slug": "pdf-to-markdown-documentation",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-markdown",
+        "title": "如何将 PDF 转为文档用 Markdown",
+        "metaTitle": "如何将 PDF 转为文档用 Markdown",
+        "metaDescription": "将含文本的 PDF 转为 Markdown，用于文档、笔记或 Wiki。浏览器内免费处理，无需账户，也不必上传。",
+        "answer": "要将 PDF 转为文档用 Markdown，可使用 PDF to Markdown 提取文字，然后检查 .md 文件中的标题、列表和段落。工具根据字体大小推测标题，不会重建表格或图片，而且需要真实文本而非扫描页面。请保留原始 PDF，并在发布到 Wiki 或代码仓库前修订 Markdown。",
+        "sections": [
+          {
+            "heading": "四步将 PDF 转为 Markdown",
+            "paragraphs": [
+              "要将 PDF 转为文档用 Markdown，可使用 PDF to Markdown 提取文字，然后检查 .md 文件中的标题、列表和段落。工具根据字体大小推测标题，不会重建表格或图片，而且需要真实文本而非扫描页面。请保留原始 PDF，并在发布到 Wiki 或代码仓库前修订 Markdown。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原始 PDF",
+                "text": "保存未修改的文件，以便对照内容并查看不会进入 Markdown 的版式、图片和表格。"
+              },
+              {
+                "heading": "打开 PDF to Markdown",
+                "text": "在 [PDF to Markdown](/tools/pdf-to-markdown) 中加载文档。此转换在浏览器中处理，不会上传文件。"
+              },
+              {
+                "heading": "选择标题和分页方式",
+                "text": "开启按字号检测标题，或选择仅保留普通段落。决定输出为连续文档，还是在页面之间添加分隔线。"
+              },
+              {
+                "heading": "下载并检查 .md",
+                "text": "检查标题层级、列表、链接、段落和空白。保存文档前，修复表格或需要格式调整的部分。"
+              }
+            ]
+          },
+          {
+            "heading": "导出 Markdown 时会保留什么",
+            "paragraphs": [
+              "Markdown 是带有简单标记的纯文本，可表示标题、列表和链接。你可以在 Obsidian、Notion、GitHub 或文本编辑器中打开，并通过版本控制查看更改。PDF to Markdown 适合复用文档文字，但不会保留原页面的精确外观。",
+              "工具将字体大小差异作为标题线索。如果标题只是加粗且字号与正文相同，可能会变成普通段落。请检查 #、## 和 ### 层级并调整顺序，让文档目录结构合理。",
+              "项目符号和部分编号标记会转为 Markdown 列表，断行会合并为段落。粗体、斜体、表格和隐藏链接无法可靠重建。完整显示的网址可能保留为文本；隐藏目标地址的链接文字可能丢失 URL。",
+              "如果 Markdown 为空，PDF 可能是扫描图片。先运行 [OCR PDF](/tools/ocr-pdf) 识别文字，再转换识别后的副本。表格数据可尝试 [PDF to Excel](/tools/pdf-to-excel)，它按空白拆分文本行；请检查单元格并手动创建 Markdown 表格。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费将 PDF 转为 Markdown，无需账户，也不必上传。",
+        "faqs": [
+          {
+            "q": "如何将 PDF 转为文档用 Markdown？",
+            "a": "打开 PDF to Markdown，加载含文本的 PDF，设置标题检测和分页方式，然后下载 .md。将文件添加到 Wiki 或代码仓库前，检查标题、列表、链接和表格。"
+          },
+          {
+            "q": "PDF to Markdown 会保留标题吗？",
+            "a": "工具尝试将字体大小与正文比较来检测标题。字号明显更大的标题可能变成 #、## 或 ###。仅加粗的标题可能成为普通段落，需要手动修正。"
+          },
+          {
+            "q": "表格和图片会转换吗？",
+            "a": "不会以结构化元素转换。表格单元格可能变成文本行，图片也不会作为 Markdown 图片嵌入。请单独处理表格数据，并在文档需要时手动添加图片。"
+          },
+          {
+            "q": "如果 Markdown 文件为空怎么办？",
+            "a": "PDF 可能只有扫描图片，没有可选中的文本。先运行 OCR PDF 识别文字，再转换含文本的副本。发布技术文档前请检查 OCR 结果。"
+          }
+        ],
+        "keywords": [
+          "如何将 pdf 转为文档用 markdown",
+          "PDF to Markdown documentation",
+          "convert PDF to MD"
+        ],
+        "relatedTools": [
+          "pdf-to-markdown",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
