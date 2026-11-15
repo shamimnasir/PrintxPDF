@@ -24,12 +24,8 @@ English route's slug against localized guide topics:
 | Vietnamese (`vi`) | 110 | 115 |
 | Simplified Chinese (`zh-CN`) | 110 | 115 |
 
-Total remaining: **963 localized guide pages**. Twenty-seven completed drafts cover the first ten listed guides plus
-`convert-pdf-table-to-excel-free`, `convert-scanned-pdf-to-excel`,
-`extract-invoice-data-from-pdf-to-excel`, `why-pdf-to-excel-numbers-are-text`,
-`convert-pdf-to-markdown-for-notes`, and `convert-scanned-pdf-to-markdown`, plus `convert-word-to-pdf-without-word`, `make-word-document-searchable-pdf`, `convert-docx-to-pdf-for-job-application`, `convert-excel-to-pdf-for-printing`, `convert-csv-to-pdf-free`, `fill-pdf-form-without-adobe`, `flatten-filled-pdf-form-before-sending`, `scan-multiple-pages-to-one-pdf-phone`, `turn-document-photos-into-pdf`, and `watermark-pdf-confidential-without-adobe`, and `add-page-numbers-to-merged-pdf`, all in seven locales.
-This is 189 of the 963 missing localized pages; 774 remain. See the article filenames in this
-directory for the complete draft inventory. More drafts should be added one English article at a time, with all seven locales
+Total remaining at the start of this draft effort: **963 localized guide pages**. There are currently 28 complete topic drafts, each with all seven locales, for 196 localized pages. **767 pages remain.** See the JSON filenames in this directory for the draft inventory.
+More drafts should be added one English article at a time, with all seven locales
 represented before integration.
 
 ## Release checks

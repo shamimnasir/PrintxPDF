@@ -1,0 +1,973 @@
+{
+  "topic": "print-journal-articles",
+  "sourceCluster": "students",
+  "tool": "compress-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo imprimir artículos académicos y papers correctamente",
+      "metaTitle": "Cómo imprimir artículos académicos y papers",
+      "metaDescription": "Imprime papers gratis y en privado desde el navegador: doble cara, dos páginas por hoja y márgenes de encuadernación, sin registrarte.",
+      "keyword": "cómo imprimir artículos académicos",
+      "secondaryKeywords": [
+        "imprimir papers a doble cara",
+        "dos páginas por hoja",
+        "imprimir artículo JSTOR",
+        "imprimir paper arXiv",
+        "margen para encuadernar"
+      ],
+      "answer": "Descarga el PDF del artículo y ábrelo en un lector, no en la página de la revista. Imprime en escala de grises, a doble cara y, si el texto se lee bien, dos páginas por hoja. Añade margen para encuadernar y prueba primero cuatro páginas. Un artículo de 24 páginas puede ocupar solo seis hojas con la configuración adecuada.",
+      "ctaLabel": "Preparar PDF para imprimir",
+      "body": [
+        {
+          "t": "p",
+          "x": "Un artículo de 24 páginas puede gastar 24 hojas si imprimes una página por cara. Los PDF académicos suelen estar listos para imprimir, así que puedes reducir papel con la impresión a doble cara y dos páginas por hoja. Descarga el PDF de la editorial y conserva sus números de página para citarlo."
+        },
+        {
+          "t": "h2",
+          "x": "Descarga el PDF en vez de imprimir la página de la revista"
+        },
+        {
+          "t": "p",
+          "x": "Las páginas de ScienceDirect, Wiley Online Library y SpringerLink pueden incluir barras flotantes, recomendaciones y figuras que se cargan al desplazarte. Eso puede cortar gráficos o imprimir elementos innecesarios. Busca el botón «Descargar PDF» y usa el archivo maquetado por la editorial. Si solo tienes la versión web, usa la [herramienta para imprimir páginas web](/print) y revisa la vista limpia antes de imprimir."
+        },
+        {
+          "t": "note",
+          "x": "Los números de página de la revista son importantes para las citas. No confundas el número impreso dentro del artículo con la posición de la hoja en el diálogo de impresión."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo imprimir un paper con menos papel"
+        },
+        {
+          "t": "h2",
+          "x": "Cómo imprimir un paper con menos papel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Descarga y abre el PDF.",
+              "x": "Guarda el archivo de la editorial y ábrelo en un lector de PDF. Comprueba que las figuras y las referencias aparezcan completas."
+            },
+            {
+              "h": "Activa escala de grises y doble cara.",
+              "x": "Elige impresión dúplex, borde largo, para que el reverso se lea en la orientación correcta. Usa color solo cuando una figura dependa de él."
+            },
+            {
+              "h": "Prueba dos páginas por hoja.",
+              "x": "Selecciona 2 páginas por hoja y revisa una muestra de cuatro páginas. Si el texto es pequeño, vuelve a una página por hoja."
+            },
+            {
+              "h": "Añade espacio para encuadernar.",
+              "x": "Si perforarás el papel, reduce la escala un poco o ajusta el margen del borde de encuadernación. Revisa que no se pierdan notas ni números de página."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "¿Cuándo conviene usar dos páginas por hoja?"
+        },
+        {
+          "t": "p",
+          "x": "La impresión de dos páginas en una hoja funciona bien con artículos de una columna y texto grande. Los papers de dos columnas suelen usar letras más pequeñas; al reducirlos, pueden quedar ilegibles. Imprime esos artículos a una página por hoja, en escala de grises y a doble cara. Para documentos escaneados, ejecuta [OCR para PDF escaneado](/blog/ocr/how-to-ocr-a-scanned-pdf) antes de imprimir y conserva una copia con texto buscable."
+        },
+        {
+          "t": "h2",
+          "x": "Cuánto papel puedes ahorrar"
+        },
+        {
+          "t": "h2",
+          "x": "Cuánto papel puedes ahorrar"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Configuración",
+            "Hojas para 24 páginas",
+            "Cuándo usarla"
+          ],
+          "rows": [
+            [
+              "Una página por hoja, una cara",
+              "24",
+              "Lectura fácil o figuras detalladas"
+            ],
+            [
+              "Una página por hoja, doble cara",
+              "12",
+              "Texto pequeño o artículo a dos columnas"
+            ],
+            [
+              "Dos páginas por hoja, doble cara",
+              "6",
+              "Texto grande y lectura compacta"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "La impresión dúplex reduce a la mitad las hojas. La opción de dos páginas por hoja puede reducirlas aún más, pero no es adecuada si el texto pierde legibilidad. Haz una prueba antes de imprimir una lista de lecturas completa."
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "Compress the study pack before you share it with your group."
+        },
+        {
+          "t": "p",
+          "x": "También puedes [anotar un PDF para estudiar](/blog/students/annotate-pdf-for-study) y [combinar PDF](/tools/merge-pdf) para mantener las lecturas en un solo archivo."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo imprimo dos páginas de un PDF en una hoja?",
+          "a": "Abre el cuadro de impresión del lector de PDF, busca «Páginas por hoja» o «Diseño» y elige 2. Activa también la impresión a doble cara si quieres reducir las hojas. Imprime cuatro páginas de prueba y comprueba que el texto siga siendo legible."
+        },
+        {
+          "q": "¿Por qué mi impresión de dos páginas por hoja se ve demasiado pequeña?",
+          "a": "La reducción depende del tamaño de página y del diseño original. Los artículos académicos a dos columnas suelen tener texto pequeño y pueden quedar ilegibles al reducirlos. Usa una página por hoja para esos documentos y reserva el modo de dos páginas para texto grande."
+        },
+        {
+          "q": "¿Cómo imprimo un artículo de JSTOR sin la portada?",
+          "a": "En el diálogo de impresión, establece el intervalo para que comience en la página 2. Revisa la vista previa: la portada de licencia suele ser la primera página, pero el archivo puede variar. Conserva el PDF original para futuras consultas."
+        },
+        {
+          "q": "¿Qué margen necesito para perforar un artículo?",
+          "a": "Deja aproximadamente 12 mm libres en el borde que vas a perforar. Si el lector no ofrece un margen de encuadernación, reduce ligeramente la escala e imprime una página de prueba para verificar que nada importante quede demasiado cerca del borde."
+        },
+        {
+          "q": "¿Conviene imprimir papers o leerlos en pantalla?",
+          "a": "Imprime los artículos que quieras leer con atención o anotar a mano. Para una lectura rápida, usa la pantalla. Si imprimes, el modo dúplex y la escala de grises ahorran papel y tinta."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como imprimir artigos acadêmicos e papers corretamente",
+      "metaTitle": "Como imprimir artigos acadêmicos e papers",
+      "metaDescription": "Imprima papers grátis e com privacidade no navegador: frente e verso, duas páginas por folha e margem para encadernação, sem cadastro.",
+      "keyword": "como imprimir artigos acadêmicos",
+      "secondaryKeywords": [
+        "imprimir papers frente e verso",
+        "duas páginas por folha",
+        "imprimir artigo JSTOR",
+        "imprimir paper arXiv",
+        "margem para encadernação"
+      ],
+      "answer": "Baixe o PDF do artigo e abra-o em um leitor, não na página da revista. Imprima em escala de cinza, frente e verso e, se o texto continuar legível, duas páginas por folha. Reserve uma margem para encadernar e teste quatro páginas primeiro. Com as configurações certas, um artigo de 24 páginas pode usar apenas seis folhas.",
+      "ctaLabel": "Preparar PDF para imprimir",
+      "body": [
+        {
+          "t": "p",
+          "x": "Um artigo de 24 páginas pode consumir 24 folhas se você imprimir uma página por lado. PDFs acadêmicos costumam estar prontos para impressão. Use frente e verso e duas páginas por folha para economizar papel. Baixe o PDF da editora e preserve os números de página usados nas citações."
+        },
+        {
+          "t": "h2",
+          "x": "Baixe o PDF em vez de imprimir a página da revista"
+        },
+        {
+          "t": "p",
+          "x": "Páginas da ScienceDirect, Wiley Online Library e SpringerLink podem ter barras flutuantes, recomendações e figuras que carregam ao rolar. Isso pode cortar gráficos ou imprimir itens desnecessários. Procure o botão “Download PDF” e use o arquivo diagramado pela editora. Se só tiver a versão web, use a [ferramenta para imprimir páginas da web](/print) e confira a prévia limpa antes de imprimir."
+        },
+        {
+          "t": "note",
+          "x": "Os números de página da revista são importantes para citações. Não confunda o número impresso no artigo com a posição da folha na caixa de impressão."
+        },
+        {
+          "t": "h2",
+          "x": "Como imprimir um paper usando menos papel"
+        },
+        {
+          "t": "h2",
+          "x": "Como imprimir um paper usando menos papel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Baixe e abra o PDF.",
+              "x": "Salve o arquivo da editora e abra-o em um leitor de PDF. Confira se figuras e referências estão completas."
+            },
+            {
+              "h": "Ative escala de cinza e frente e verso.",
+              "x": "Escolha impressão duplex pela borda longa para que o verso fique na orientação certa. Use cor somente quando uma figura depender dela."
+            },
+            {
+              "h": "Teste duas páginas por folha.",
+              "x": "Selecione 2 páginas por folha e confira uma amostra de quatro páginas. Se o texto ficar pequeno, volte para uma página por folha."
+            },
+            {
+              "h": "Reserve espaço para encadernar.",
+              "x": "Se for furar as folhas, reduza um pouco a escala ou ajuste a margem de encadernação. Confira se notas e números de página continuam visíveis."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Quando duas páginas por folha funcionam bem?"
+        },
+        {
+          "t": "p",
+          "x": "Imprimir duas páginas por folha funciona para artigos de uma coluna e texto grande. Papers de duas colunas geralmente já usam letras menores e podem ficar ilegíveis quando reduzidos. Imprima esses artigos uma página por folha, em escala de cinza e frente e verso. Para documentos digitalizados, use [OCR para PDF digitalizado](/blog/ocr/how-to-ocr-a-scanned-pdf) antes de imprimir e mantenha uma cópia pesquisável."
+        },
+        {
+          "t": "h2",
+          "x": "Quanto papel dá para economizar"
+        },
+        {
+          "t": "h2",
+          "x": "Quanto papel dá para economizar"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Configuração",
+            "Folhas para 24 páginas",
+            "Quando usar"
+          ],
+          "rows": [
+            [
+              "Uma página por folha, só frente",
+              "24",
+              "Leitura confortável ou figuras detalhadas"
+            ],
+            [
+              "Uma página por folha, frente e verso",
+              "12",
+              "Texto pequeno ou artigo em duas colunas"
+            ],
+            [
+              "Duas páginas por folha, frente e verso",
+              "6",
+              "Texto grande e leitura compacta"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "A impressão duplex reduz as folhas pela metade. Duas páginas por folha podem reduzir ainda mais, mas não servem se o texto ficar difícil de ler. Faça um teste antes de imprimir uma lista inteira de leituras."
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "Comprima o pacote de leitura antes de compartilhar com o grupo."
+        },
+        {
+          "t": "p",
+          "x": "Você também pode [anotar um PDF para estudar](/blog/students/annotate-pdf-for-study) e [juntar PDFs](/tools/merge-pdf) para manter as leituras em um só arquivo."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como imprimo duas páginas de um PDF em uma folha?",
+          "a": "Abra a caixa de impressão do leitor de PDF, procure “Páginas por folha” ou “Layout” e escolha 2. Ative também a impressão frente e verso se quiser economizar folhas. Imprima quatro páginas de teste e confira se o texto continua legível."
+        },
+        {
+          "q": "Por que minha impressão com duas páginas por folha ficou pequena demais?",
+          "a": "A redução depende do tamanho da página e do layout original. Artigos acadêmicos em duas colunas costumam ter texto pequeno e podem ficar ilegíveis quando reduzidos. Use uma página por folha nesses documentos e deixe o modo de duas páginas para textos maiores."
+        },
+        {
+          "q": "Como imprimir um artigo do JSTOR sem a capa?",
+          "a": "Na caixa de impressão, defina o intervalo para começar na página 2. Confira a prévia: a capa de licença costuma ser a primeira página, mas o arquivo pode variar. Guarde o PDF original para consultar depois."
+        },
+        {
+          "q": "Qual margem preciso deixar para furar o artigo?",
+          "a": "Deixe cerca de 12 mm livres na borda que será furada. Se o leitor não tiver margem de encadernação, reduza um pouco a escala e teste uma página para confirmar que nenhum conteúdo importante ficou perto demais da borda."
+        },
+        {
+          "q": "É melhor imprimir papers ou ler na tela?",
+          "a": "Imprima os artigos que pretende estudar com atenção ou anotar à mão. Para leitura rápida, use a tela. Ao imprimir, frente e verso e escala de cinza ajudam a economizar papel e tinta."
+        }
+      ]
+    },
+    "hi": {
+      "title": "जर्नल लेख और शोधपत्र सही तरीके से कैसे प्रिंट करें",
+      "metaTitle": "जर्नल लेख और शोधपत्र कैसे प्रिंट करें",
+      "metaDescription": "ब्राउज़र में मुफ्त और निजी तरीके से शोधपत्र प्रिंट करें: दोनों तरफ, प्रति शीट दो पेज और बाइंडिंग मार्जिन। साइनअप नहीं।",
+      "keyword": "जर्नल लेख कैसे प्रिंट करें",
+      "secondaryKeywords": [
+        "शोधपत्र दोनों तरफ प्रिंट करें",
+        "एक शीट पर दो पेज",
+        "JSTOR लेख प्रिंट करें",
+        "arXiv पेपर प्रिंट करें",
+        "बाइंडिंग मार्जिन"
+      ],
+      "answer": "लेख का PDF डाउनलोड करके उसे PDF रीडर में खोलें, जर्नल की वेबसाइट से सीधे प्रिंट न करें। ग्रेस्केल और दोनों तरफ प्रिंट करें। टेक्स्ट पढ़ने योग्य हो तो प्रति शीट दो पेज चुनें। बाइंडिंग के लिए किनारे पर जगह रखें और पहले चार पेजों का परीक्षण करें। सही सेटिंग से 24 पेज का लेख केवल छह शीट में आ सकता है।",
+      "ctaLabel": "प्रिंट के लिए PDF तैयार करें",
+      "body": [
+        {
+          "t": "p",
+          "x": "24 पेज का लेख एक तरफ एक पेज प्रिंट करने पर 24 शीट ले सकता है। अकादमिक PDF आमतौर पर प्रिंट के लिए तैयार होते हैं। दोनों तरफ और प्रति शीट दो पेज प्रिंट करके कागज़ बचाएँ। प्रकाशक से PDF डाउनलोड करें ताकि उद्धरण के लिए उसके पेज नंबर बने रहें।"
+        },
+        {
+          "t": "h2",
+          "x": "जर्नल वेबपेज के बजाय PDF डाउनलोड करें"
+        },
+        {
+          "t": "p",
+          "x": "ScienceDirect, Wiley Online Library और SpringerLink के पेज पर फ्लोटिंग टूलबार, सुझाव और स्क्रॉल करने पर लोड होने वाली आकृतियाँ हो सकती हैं। इससे चार्ट कट सकते हैं या अनचाही चीजें प्रिंट हो सकती हैं। “Download PDF” बटन खोजें और प्रकाशक की तैयार फाइल इस्तेमाल करें। केवल वेब संस्करण मिले तो [वेब पेज प्रिंटर](/print) से साफ़ प्रिंट दृश्य बनाएँ और प्रिंट करने से पहले जाँचें।"
+        },
+        {
+          "t": "note",
+          "x": "उद्धरण में जर्नल के पेज नंबर काम आते हैं। लेख में छपे पेज नंबर और प्रिंट डायलॉग में शीट की स्थिति को एक न समझें।"
+        },
+        {
+          "t": "h2",
+          "x": "शोधपत्र कम कागज़ में कैसे प्रिंट करें"
+        },
+        {
+          "t": "h2",
+          "x": "शोधपत्र कम कागज़ में कैसे प्रिंट करें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "PDF डाउनलोड करके खोलें।",
+              "x": "प्रकाशक की फाइल सेव करें और PDF रीडर में खोलें। देखें कि चित्र और संदर्भ पूरे दिखते हैं।"
+            },
+            {
+              "h": "ग्रेस्केल और दोनों तरफ चुनें।",
+              "x": "लंबे किनारे से डुप्लेक्स प्रिंट चुनें ताकि पीछे का पेज सही दिशा में रहे। रंग तभी इस्तेमाल करें जब किसी चित्र के लिए जरूरी हो।"
+            },
+            {
+              "h": "प्रति शीट दो पेज आज़माएँ।",
+              "x": "दो पेज प्रति शीट चुनें और चार पेज का नमूना देखें। टेक्स्ट छोटा लगे तो एक पेज प्रति शीट पर लौटें।"
+            },
+            {
+              "h": "बाइंडिंग के लिए जगह रखें।",
+              "x": "पेज पंच करने हों तो स्केल थोड़ा घटाएँ या बाइंडिंग मार्जिन सेट करें। जाँचें कि नोट्स और पेज नंबर न कटें।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "प्रति शीट दो पेज कब ठीक रहते हैं?"
+        },
+        {
+          "t": "p",
+          "x": "एक कॉलम वाले लेख और बड़े टेक्स्ट के लिए दो पेज प्रति शीट अच्छा रहता है। दो कॉलम वाले शोधपत्र में अक्षर पहले से छोटे हो सकते हैं, इसलिए घटाने पर पढ़ना कठिन हो जाता है। ऐसे लेख एक पेज प्रति शीट, ग्रेस्केल और दोनों तरफ प्रिंट करें। स्कैन किए दस्तावेज़ के लिए पहले [स्कैन PDF पर OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) चलाएँ, ताकि कॉपी खोजने योग्य रहे।"
+        },
+        {
+          "t": "h2",
+          "x": "कितना कागज़ बचता है"
+        },
+        {
+          "t": "h2",
+          "x": "कितना कागज़ बचता है"
+        },
+        {
+          "t": "table",
+          "head": [
+            "सेटिंग",
+            "24 पेज के लिए शीट",
+            "कब उपयोग करें"
+          ],
+          "rows": [
+            [
+              "एक शीट पर एक पेज, एक तरफ",
+              "24",
+              "आराम से पढ़ना या विस्तृत चित्र"
+            ],
+            [
+              "एक शीट पर एक पेज, दोनों तरफ",
+              "12",
+              "छोटा टेक्स्ट या दो कॉलम वाला लेख"
+            ],
+            [
+              "एक शीट पर दो पेज, दोनों तरफ",
+              "6",
+              "बड़ा टेक्स्ट और संक्षिप्त पढ़ाई"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "डुप्लेक्स प्रिंट शीट आधी कर देता है। प्रति शीट दो पेज से और बचत हो सकती है, लेकिन टेक्स्ट अस्पष्ट हो तो इसका उपयोग न करें। पूरी रीडिंग सूची प्रिंट करने से पहले नमूना जाँचें।"
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "समूह से साझा करने से पहले स्टडी पैक को संपीड़ित करें।"
+        },
+        {
+          "t": "p",
+          "x": "आप [पढ़ाई के लिए PDF पर टिप्पणी](/blog/students/annotate-pdf-for-study) कर सकते हैं या सभी रीडिंग एक फाइल में रखने के लिए [PDF जोड़ें](/tools/merge-pdf) इस्तेमाल कर सकते हैं।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF के दो पेज एक शीट पर कैसे प्रिंट करें?",
+          "a": "PDF रीडर का प्रिंट डायलॉग खोलें, “Pages per sheet” या “Layout” ढूँढें और 2 चुनें। शीट बचाने के लिए दोनों तरफ प्रिंट भी चालू करें। पहले चार पेजों का परीक्षण करें और देखें कि टेक्स्ट पढ़ने योग्य है।"
+        },
+        {
+          "q": "एक शीट पर दो पेज प्रिंट करने पर टेक्स्ट बहुत छोटा क्यों है?",
+          "a": "आकार पेज के मूल माप और लेआउट पर निर्भर करता है। दो कॉलम वाले अकादमिक लेख में अक्षर छोटे होते हैं और घटाने पर अपठनीय हो सकते हैं। ऐसे लेख एक पेज प्रति शीट प्रिंट करें; दो पेज विकल्प बड़े टेक्स्ट के लिए रखें।"
+        },
+        {
+          "q": "JSTOR लेख का कवर पेज हटाकर कैसे प्रिंट करें?",
+          "a": "प्रिंट डायलॉग में पेज रेंज 2 से शुरू करें। प्रीव्यू देखें: लाइसेंस कवर अक्सर पहला पेज होता है, पर फाइल बदल सकती है। बाद में देखने के लिए मूल PDF सुरक्षित रखें।"
+        },
+        {
+          "q": "तीन छेद करने के लिए कितना मार्जिन चाहिए?",
+          "a": "छेद वाले किनारे पर लगभग 12 मिमी खाली जगह रखें। रीडर में बाइंडिंग मार्जिन विकल्प न हो तो स्केल थोड़ा घटाएँ और पहले एक पेज प्रिंट करके देखें कि जरूरी सामग्री किनारे से दूर है।"
+        },
+        {
+          "q": "शोधपत्र प्रिंट करना बेहतर है या स्क्रीन पर पढ़ना?",
+          "a": "जिन लेखों को ध्यान से पढ़ना या हाथ से नोट करना है, उन्हें प्रिंट करें। जल्दी पढ़ने के लिए स्क्रीन बेहतर है। प्रिंट करते समय दोनों तरफ और ग्रेस्केल कागज़ व स्याही बचाते हैं।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية طباعة المقالات والأبحاث الأكاديمية بشكل صحيح",
+      "metaTitle": "كيفية طباعة المقالات والأبحاث الأكاديمية",
+      "metaDescription": "اطبع الأبحاث الأكاديمية مجانًا وبخصوصية داخل المتصفح: على الوجهين وصفحتان لكل ورقة وهوامش للتجليد، بلا تسجيل أو رسوم.",
+      "keyword": "كيفية طباعة المقالات الأكاديمية",
+      "secondaryKeywords": [
+        "طباعة الأبحاث على الوجهين",
+        "صفحتان في كل ورقة",
+        "طباعة مقال JSTOR",
+        "طباعة بحث arXiv",
+        "هامش التجليد"
+      ],
+      "answer": "نزّل ملف PDF للمقال وافتحه في قارئ PDF بدلًا من صفحة المجلة. اطبع بتدرّج الرمادي وعلى الوجهين، واختر صفحتين لكل ورقة إذا ظل النص مقروءًا. اترك هامشًا للتجليد واطبع أربع صفحات تجريبية أولًا. قد يستهلك مقال من 24 صفحة ست ورقات فقط عند ضبط الإعدادات جيدًا.",
+      "ctaLabel": "جهّز PDF للطباعة",
+      "body": [
+        {
+          "t": "p",
+          "x": "قد يستهلك مقال من 24 صفحة 24 ورقة عند طباعة صفحة واحدة على كل وجه. غالبًا ما تكون ملفات PDF الأكاديمية جاهزة للطباعة. وفّر الورق بالطباعة على الوجهين وصفحتين لكل ورقة. نزّل ملف الناشر واحتفظ بأرقام صفحات المجلة اللازمة للاقتباس."
+        },
+        {
+          "t": "h2",
+          "x": "نزّل ملف PDF بدلًا من طباعة صفحة المجلة"
+        },
+        {
+          "t": "p",
+          "x": "قد تحتوي صفحات ScienceDirect وWiley Online Library وSpringerLink على أشرطة أدوات عائمة وتوصيات وصور لا تظهر إلا أثناء التمرير. قد يؤدي ذلك إلى اقتطاع الرسوم أو طباعة عناصر غير مطلوبة. ابحث عن زر «Download PDF» واستخدم الملف المنسّق من الناشر. إذا لم يتوفر إلا إصدار الويب، استخدم [أداة طباعة صفحات الويب](/print) وراجع المعاينة النظيفة قبل الطباعة."
+        },
+        {
+          "t": "note",
+          "x": "أرقام صفحات المجلة مهمة للاقتباس. لا تخلط بين الرقم المطبوع داخل المقال ورقم الورقة في نافذة الطباعة."
+        },
+        {
+          "t": "h2",
+          "x": "كيف تطبع بحثًا باستخدام ورق أقل"
+        },
+        {
+          "t": "h2",
+          "x": "كيف تطبع بحثًا باستخدام ورق أقل"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "نزّل PDF وافتحه.",
+              "x": "احفظ ملف الناشر وافتحه في قارئ PDF. تأكد من ظهور الأشكال والمراجع كاملة."
+            },
+            {
+              "h": "فعّل الطباعة الرمادية والوجهين.",
+              "x": "اختر الطباعة على الوجهين بالحافة الطويلة حتى يظهر الوجه الخلفي بالاتجاه الصحيح. استخدم الألوان عندما تكون ضرورية لفهم شكل."
+            },
+            {
+              "h": "جرّب صفحتين لكل ورقة.",
+              "x": "اختر صفحتين لكل ورقة وراجع عينة من أربع صفحات. إذا صغر النص كثيرًا، ارجع إلى صفحة واحدة لكل ورقة."
+            },
+            {
+              "h": "اترك مساحة للتجليد.",
+              "x": "إذا كنت ستثقب الورق، صغّر المقياس قليلًا أو اضبط هامش التجليد. تأكد من عدم اختفاء الملاحظات أو أرقام الصفحات."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "متى تكون طباعة صفحتين لكل ورقة مناسبة؟"
+        },
+        {
+          "t": "p",
+          "x": "تناسب طباعة صفحتين لكل ورقة المقالات ذات العمود الواحد والخط الكبير. أما الأبحاث ذات العمودين فقد يكون خطها صغيرًا أصلًا، ويصعب قراءته بعد التصغير. اطبع هذه الأبحاث صفحة لكل ورقة، بتدرج الرمادي وعلى الوجهين. للملفات الممسوحة ضوئيًا، شغّل [OCR لملف PDF ممسوح](/blog/ocr/how-to-ocr-a-scanned-pdf) قبل الطباعة لتحافظ على نسخة قابلة للبحث."
+        },
+        {
+          "t": "h2",
+          "x": "كمية الورق التي يمكنك توفيرها"
+        },
+        {
+          "t": "h2",
+          "x": "كمية الورق التي يمكنك توفيرها"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الإعداد",
+            "عدد الأوراق لـ24 صفحة",
+            "متى يُستخدم"
+          ],
+          "rows": [
+            [
+              "صفحة لكل ورقة، وجه واحد",
+              "24",
+              "قراءة مريحة أو أشكال دقيقة"
+            ],
+            [
+              "صفحة لكل ورقة، على الوجهين",
+              "12",
+              "خط صغير أو مقال بعمودين"
+            ],
+            [
+              "صفحتان لكل ورقة، على الوجهين",
+              "6",
+              "خط كبير وقراءة مختصرة"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "تقلل الطباعة على الوجهين عدد الأوراق إلى النصف. وقد تقللها طباعة صفحتين لكل ورقة أكثر، لكن لا تستخدمها إذا أصبح النص غير مقروء. اختبر الإعدادات قبل طباعة قائمة قراءة كاملة."
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "اضغط حزمة الدراسة قبل مشاركتها مع المجموعة."
+        },
+        {
+          "t": "p",
+          "x": "يمكنك أيضًا [إضافة تعليقات إلى PDF للدراسة](/blog/students/annotate-pdf-for-study) و[دمج ملفات PDF](/tools/merge-pdf) للاحتفاظ بالقراءات في ملف واحد."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أطبع صفحتين من PDF على ورقة واحدة؟",
+          "a": "افتح نافذة الطباعة في قارئ PDF وابحث عن «صفحات لكل ورقة» أو «التخطيط»، ثم اختر 2. فعّل الطباعة على الوجهين إذا أردت تقليل عدد الأوراق. اطبع أربع صفحات تجريبية وتأكد من وضوح النص."
+        },
+        {
+          "q": "لماذا تبدو طباعة صفحتين لكل ورقة صغيرة جدًا؟",
+          "a": "يعتمد التصغير على حجم الصفحة والتخطيط الأصلي. غالبًا ما تستخدم الأبحاث ذات العمودين خطًا صغيرًا، وقد يصبح غير مقروء بعد التصغير. اطبع هذه الملفات صفحة لكل ورقة، واستخدم خيار الصفحتين للنص الأكبر."
+        },
+        {
+          "q": "كيف أطبع مقال JSTOR بدون صفحة الغلاف؟",
+          "a": "في نافذة الطباعة، اجعل نطاق الصفحات يبدأ من الصفحة 2. راجع المعاينة؛ فعادةً ما تكون صفحة الترخيص الأولى، لكن الملف قد يختلف. احتفظ بنسخة PDF الأصلية للرجوع إليها."
+        },
+        {
+          "q": "ما الهامش المطلوب لثقب المقال؟",
+          "a": "اترك نحو 12 مم خالية على الحافة التي ستثقبها. إذا لم يوفر القارئ هامشًا للتجليد، فقلل المقياس قليلًا واختبر صفحة واحدة للتأكد من ابتعاد النص المهم عن الحافة."
+        },
+        {
+          "q": "هل الأفضل طباعة الأبحاث أم قراءتها على الشاشة؟",
+          "a": "اطبع المقالات التي ستقرأها بعناية أو تدوّن عليها يدويًا. استخدم الشاشة للقراءة السريعة. وعند الطباعة، يساعد الوجهين وتدرّج الرمادي على توفير الورق والحبر."
+        }
+      ]
+    },
+    "bn": {
+      "title": "জার্নাল প্রবন্ধ ও গবেষণাপত্র ঠিকভাবে প্রিন্ট করার উপায়",
+      "metaTitle": "জার্নাল প্রবন্ধ ও গবেষণাপত্র কীভাবে প্রিন্ট করবেন",
+      "metaDescription": "ব্রাউজারে বিনামূল্যে ও গোপনে গবেষণাপত্র প্রিন্ট করুন: দুই পাশে, প্রতি পাতায় দুই পৃষ্ঠা, বাঁধাইয়ের মার্জিনসহ। সাইনআপ নেই।",
+      "keyword": "জার্নাল প্রবন্ধ কীভাবে প্রিন্ট করবেন",
+      "secondaryKeywords": [
+        "গবেষণাপত্র দুই পাশে প্রিন্ট",
+        "এক পাতায় দুই পৃষ্ঠা",
+        "JSTOR প্রবন্ধ প্রিন্ট",
+        "arXiv পেপার প্রিন্ট",
+        "বাঁধাইয়ের মার্জিন"
+      ],
+      "answer": "প্রবন্ধের PDF ডাউনলোড করে PDF রিডারে খুলুন; জার্নালের ওয়েবপেজ থেকে সরাসরি প্রিন্ট করবেন না। গ্রেস্কেলে ও দুই পাশে প্রিন্ট করুন। লেখা পড়া গেলে প্রতি পাতায় দুই পৃষ্ঠা দিন। বাঁধাইয়ের জন্য ফাঁকা মার্জিন রাখুন এবং আগে চার পৃষ্ঠার নমুনা দেখুন। সঠিক সেটিংয়ে ২৪ পৃষ্ঠার প্রবন্ধ মাত্র ছয়টি কাগজে ছাপা যেতে পারে।",
+      "ctaLabel": "প্রিন্টের জন্য PDF তৈরি করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "২৪ পৃষ্ঠার প্রবন্ধ এক পাশে একটি পৃষ্ঠা করে প্রিন্ট করলে ২৪টি কাগজ লাগতে পারে। একাডেমিক PDF সাধারণত প্রিন্টের জন্য তৈরি থাকে। দুই পাশে ও প্রতি পাতায় দুই পৃষ্ঠা প্রিন্ট করে কাগজ বাঁচান। প্রকাশকের PDF ডাউনলোড করুন, যাতে উদ্ধৃতির জন্য জার্নালের পৃষ্ঠা নম্বর ঠিক থাকে।"
+        },
+        {
+          "t": "h2",
+          "x": "জার্নালের ওয়েবপেজের বদলে PDF ডাউনলোড করুন"
+        },
+        {
+          "t": "p",
+          "x": "ScienceDirect, Wiley Online Library এবং SpringerLink-এর পেজে ভাসমান টুলবার, সুপারিশ এবং স্ক্রল করলে লোড হওয়া ছবি থাকতে পারে। ফলে চার্ট কেটে যেতে পারে বা অপ্রয়োজনীয় উপাদান ছাপা হতে পারে। “Download PDF” বোতাম খুঁজে প্রকাশকের সাজানো ফাইলটি নিন। শুধু ওয়েব সংস্করণ থাকলে [ওয়েবপেজ প্রিন্টার](/print) ব্যবহার করুন এবং প্রিন্টের আগে পরিষ্কার প্রিভিউ দেখুন।"
+        },
+        {
+          "t": "note",
+          "x": "উদ্ধৃতির জন্য জার্নালের পৃষ্ঠা নম্বর গুরুত্বপূর্ণ। প্রবন্ধে ছাপা নম্বরকে প্রিন্ট ডায়ালগের শিট নম্বরের সঙ্গে গুলিয়ে ফেলবেন না।"
+        },
+        {
+          "t": "h2",
+          "x": "কম কাগজে গবেষণাপত্র কীভাবে প্রিন্ট করবেন"
+        },
+        {
+          "t": "h2",
+          "x": "কম কাগজে গবেষণাপত্র কীভাবে প্রিন্ট করবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "PDF ডাউনলোড করে খুলুন।",
+              "x": "প্রকাশকের ফাইলটি সংরক্ষণ করে PDF রিডারে খুলুন। ছবি ও রেফারেন্স সম্পূর্ণ আছে কি না দেখুন।"
+            },
+            {
+              "h": "গ্রেস্কেল ও দুই পাশ চালু করুন।",
+              "x": "লম্বা ধার ধরে ডুপ্লেক্স প্রিন্ট বাছুন, যাতে পেছনের পৃষ্ঠা সঠিক দিকে থাকে। ছবির জন্য দরকার হলেই রং ব্যবহার করুন।"
+            },
+            {
+              "h": "প্রতি পাতায় দুই পৃষ্ঠা পরীক্ষা করুন।",
+              "x": "প্রতি পাতায় ২ পৃষ্ঠা নির্বাচন করে চার পৃষ্ঠার নমুনা দেখুন। লেখা ছোট লাগলে প্রতি পাতায় একটি পৃষ্ঠায় ফিরে যান।"
+            },
+            {
+              "h": "বাঁধাইয়ের জন্য জায়গা রাখুন।",
+              "x": "কাগজে ছিদ্র করলে স্কেল একটু কমান বা বাঁধাইয়ের মার্জিন ঠিক করুন। নোট ও পৃষ্ঠা নম্বর কাটা পড়ছে কি না দেখুন।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "কখন প্রতি পাতায় দুই পৃষ্ঠা ব্যবহার করবেন?"
+        },
+        {
+          "t": "p",
+          "x": "এক কলামের প্রবন্ধ এবং বড় লেখার ক্ষেত্রে প্রতি পাতায় দুই পৃষ্ঠা ভালো কাজ করে। দুই কলামের গবেষণাপত্রে লেখা আগে থেকেই ছোট হতে পারে, তাই কমালে পড়া কঠিন হয়। এগুলো প্রতি পাতায় একটি করে, গ্রেস্কেলে এবং দুই পাশে প্রিন্ট করুন। স্ক্যান করা নথি হলে প্রিন্টের আগে [স্ক্যান PDF-এ OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) চালান, এতে কপিটি সার্চ করা যাবে।"
+        },
+        {
+          "t": "h2",
+          "x": "কতটা কাগজ বাঁচানো যায়"
+        },
+        {
+          "t": "h2",
+          "x": "কতটা কাগজ বাঁচানো যায়"
+        },
+        {
+          "t": "table",
+          "head": [
+            "সেটিং",
+            "২৪ পৃষ্ঠায় কাগজ",
+            "কখন ব্যবহার করবেন"
+          ],
+          "rows": [
+            [
+              "প্রতি কাগজে এক পৃষ্ঠা, এক পাশে",
+              "24",
+              "সহজে পড়া বা বিস্তারিত ছবি"
+            ],
+            [
+              "প্রতি কাগজে এক পৃষ্ঠা, দুই পাশে",
+              "12",
+              "ছোট লেখা বা দুই কলামের প্রবন্ধ"
+            ],
+            [
+              "প্রতি কাগজে দুই পৃষ্ঠা, দুই পাশে",
+              "6",
+              "বড় লেখা ও সংক্ষিপ্ত পড়া"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "ডুপ্লেক্স প্রিন্টে কাগজ অর্ধেক লাগে। প্রতি পাতায় দুই পৃষ্ঠা দিলে আরও কমতে পারে, তবে লেখা অপাঠ্য হলে এই সেটিং ব্যবহার করবেন না। পুরো পাঠতালিকা প্রিন্টের আগে নমুনা পরীক্ষা করুন।"
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "দলের সঙ্গে শেয়ার করার আগে স্টাডি প্যাক কমপ্রেস করুন।"
+        },
+        {
+          "t": "p",
+          "x": "আপনি [পড়াশোনার জন্য PDF-এ টীকা](/blog/students/annotate-pdf-for-study) যোগ করতে পারেন এবং সব পাঠ এক ফাইলে রাখতে [PDF মার্জ](/tools/merge-pdf) করতে পারেন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF-এর দুই পৃষ্ঠা এক কাগজে কীভাবে প্রিন্ট করব?",
+          "a": "PDF রিডারের প্রিন্ট ডায়ালগ খুলে “Pages per sheet” বা “Layout” থেকে 2 বেছে নিন। কাগজ বাঁচাতে দুই পাশে প্রিন্টও চালু করুন। প্রথমে চার পৃষ্ঠার নমুনা প্রিন্ট করে লেখাটি পড়া যাচ্ছে কি না দেখুন।"
+        },
+        {
+          "q": "এক কাগজে দুই পৃষ্ঠা প্রিন্ট করলে লেখা এত ছোট কেন?",
+          "a": "আসল পৃষ্ঠার মাপ ও লেআউটের ওপর ছোট হওয়ার পরিমাণ নির্ভর করে। দুই কলামের একাডেমিক লেখায় অক্ষর ছোট হতে পারে এবং কমালে অপাঠ্য হয়। এসব নথি প্রতি কাগজে একটি পৃষ্ঠা করে প্রিন্ট করুন; বড় লেখার ক্ষেত্রে দুই পৃষ্ঠা ব্যবহার করুন।"
+        },
+        {
+          "q": "JSTOR প্রবন্ধের কভার পৃষ্ঠা বাদ দিয়ে কীভাবে প্রিন্ট করব?",
+          "a": "প্রিন্ট ডায়ালগে পৃষ্ঠা পরিসর 2 থেকে শুরু করুন। প্রিভিউ দেখুন: লাইসেন্স কভার সাধারণত প্রথম পৃষ্ঠা, তবে ফাইল ভিন্ন হতে পারে। পরে ব্যবহারের জন্য মূল PDF রেখে দিন।"
+        },
+        {
+          "q": "তিন ছিদ্রের বাঁধাইয়ের জন্য কত মার্জিন দরকার?",
+          "a": "যে ধার ছিদ্র করবেন সেখানে প্রায় 12 মিমি ফাঁকা রাখুন। রিডারে বাঁধাইয়ের মার্জিন না থাকলে স্কেল সামান্য কমিয়ে একটি পৃষ্ঠা পরীক্ষা করুন, যাতে গুরুত্বপূর্ণ লেখা ধার থেকে দূরে থাকে।"
+        },
+        {
+          "q": "গবেষণাপত্র প্রিন্ট করব, নাকি স্ক্রিনে পড়ব?",
+          "a": "যে প্রবন্ধ মনোযোগ দিয়ে পড়বেন বা হাতে নোট নেবেন, সেটি প্রিন্ট করুন। দ্রুত পড়ার জন্য স্ক্রিন ব্যবহার করুন। প্রিন্টে দুই পাশ ও গ্রেস্কেল কাগজ এবং কালি বাঁচায়।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách in bài báo khoa học và tài liệu học thuật đúng cách",
+      "metaTitle": "Cách in bài báo khoa học tiết kiệm giấy",
+      "metaDescription": "In tài liệu học thuật miễn phí và riêng tư ngay trên trình duyệt: in hai mặt, hai trang mỗi tờ, chừa lề đóng gáy. Không cần đăng ký.",
+      "keyword": "cách in bài báo khoa học",
+      "secondaryKeywords": [
+        "in tài liệu hai mặt",
+        "hai trang trên một tờ",
+        "in bài JSTOR",
+        "in bài arXiv",
+        "lề đóng gáy"
+      ],
+      "answer": "Tải PDF của bài báo và mở bằng trình đọc PDF thay vì in từ trang tạp chí. In trắng đen, hai mặt và chọn hai trang mỗi tờ nếu chữ vẫn dễ đọc. Chừa lề đóng gáy và in thử bốn trang trước. Với cài đặt phù hợp, bài báo 24 trang có thể chỉ cần sáu tờ giấy.",
+      "ctaLabel": "Chuẩn bị PDF để in",
+      "body": [
+        {
+          "t": "p",
+          "x": "Một bài báo 24 trang có thể tốn 24 tờ nếu in một trang trên mỗi mặt. PDF học thuật thường đã được dàn trang để in. Hãy tiết kiệm giấy bằng cách in hai mặt và hai trang mỗi tờ. Tải PDF từ nhà xuất bản để giữ nguyên số trang dùng khi trích dẫn."
+        },
+        {
+          "t": "h2",
+          "x": "Tải PDF thay vì in trang web của tạp chí"
+        },
+        {
+          "t": "p",
+          "x": "Các trang ScienceDirect, Wiley Online Library và SpringerLink có thể chứa thanh công cụ nổi, bài gợi ý và hình chỉ tải khi cuộn. Những thành phần này có thể làm biểu đồ bị cắt hoặc in ra nội dung thừa. Tìm nút “Download PDF” và dùng tệp đã dàn trang của nhà xuất bản. Nếu chỉ có bản web, hãy dùng [công cụ in trang web](/print) và kiểm tra bản xem trước sạch trước khi in."
+        },
+        {
+          "t": "note",
+          "x": "Số trang của tạp chí rất quan trọng khi trích dẫn. Đừng nhầm số in trong bài với vị trí tờ giấy trong hộp thoại in."
+        },
+        {
+          "t": "h2",
+          "x": "Cách in tài liệu học thuật ít tốn giấy"
+        },
+        {
+          "t": "h2",
+          "x": "Cách in tài liệu học thuật ít tốn giấy"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Tải và mở PDF.",
+              "x": "Lưu tệp từ nhà xuất bản rồi mở bằng trình đọc PDF. Kiểm tra hình và tài liệu tham khảo hiển thị đầy đủ."
+            },
+            {
+              "h": "Bật in trắng đen và hai mặt.",
+              "x": "Chọn in hai mặt theo cạnh dài để mặt sau đúng chiều. Chỉ dùng màu khi hình minh họa cần màu."
+            },
+            {
+              "h": "Thử hai trang mỗi tờ.",
+              "x": "Chọn 2 trang mỗi tờ và xem thử bốn trang. Nếu chữ quá nhỏ, quay lại một trang mỗi tờ."
+            },
+            {
+              "h": "Chừa chỗ đóng gáy.",
+              "x": "Nếu cần đục lỗ, giảm tỷ lệ một chút hoặc chỉnh lề đóng gáy. Kiểm tra để ghi chú và số trang không bị mất."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Khi nào nên in hai trang mỗi tờ?"
+        },
+        {
+          "t": "p",
+          "x": "Cách in hai trang mỗi tờ phù hợp với bài một cột và chữ lớn. Tài liệu hai cột thường có chữ nhỏ sẵn nên khi thu nhỏ sẽ khó đọc. Hãy in các bài đó một trang mỗi tờ, trắng đen và hai mặt. Với tài liệu quét, chạy [OCR cho PDF đã quét](/blog/ocr/how-to-ocr-a-scanned-pdf) trước khi in để bản sao vẫn tìm kiếm được."
+        },
+        {
+          "t": "h2",
+          "x": "Bạn có thể tiết kiệm bao nhiêu giấy"
+        },
+        {
+          "t": "h2",
+          "x": "Bạn có thể tiết kiệm bao nhiêu giấy"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Cài đặt",
+            "Số tờ cho 24 trang",
+            "Dùng khi"
+          ],
+          "rows": [
+            [
+              "Một trang mỗi tờ, một mặt",
+              "24",
+              "Cần dễ đọc hoặc hình chi tiết"
+            ],
+            [
+              "Một trang mỗi tờ, hai mặt",
+              "12",
+              "Chữ nhỏ hoặc bài hai cột"
+            ],
+            [
+              "Hai trang mỗi tờ, hai mặt",
+              "6",
+              "Chữ lớn và đọc gọn"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "In hai mặt giảm một nửa số tờ. Hai trang mỗi tờ còn giảm thêm, nhưng không nên dùng nếu chữ khó đọc. Hãy in thử trước khi in cả danh sách tài liệu."
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "Nén gói tài liệu học trước khi chia sẻ với nhóm."
+        },
+        {
+          "t": "p",
+          "x": "Bạn cũng có thể [ghi chú PDF để học](/blog/students/annotate-pdf-for-study) và [gộp PDF](/tools/merge-pdf) để giữ các bài đọc trong một tệp."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Làm sao in hai trang PDF trên một tờ giấy?",
+          "a": "Mở hộp thoại in của trình đọc PDF, tìm “Pages per sheet” hoặc “Layout” rồi chọn 2. Bật in hai mặt nếu muốn giảm số tờ. In thử bốn trang và kiểm tra chữ còn dễ đọc không."
+        },
+        {
+          "q": "Vì sao bản in hai trang mỗi tờ quá nhỏ?",
+          "a": "Mức thu nhỏ phụ thuộc vào kích thước trang và bố cục ban đầu. Bài học thuật hai cột thường có chữ nhỏ nên có thể khó đọc sau khi thu nhỏ. Hãy in chúng một trang mỗi tờ và chỉ dùng chế độ hai trang với chữ lớn."
+        },
+        {
+          "q": "Làm thế nào in bài JSTOR mà bỏ trang bìa?",
+          "a": "Trong hộp thoại in, đặt phạm vi bắt đầu từ trang 2. Xem trước bản in: trang giấy phép thường là trang đầu, nhưng tùy tệp có thể khác. Giữ lại PDF gốc để tra cứu sau."
+        },
+        {
+          "q": "Cần chừa lề bao nhiêu để đục lỗ ba lỗ?",
+          "a": "Chừa khoảng 12 mm ở cạnh sẽ đục lỗ. Nếu trình đọc không có lề đóng gáy, hãy giảm tỷ lệ nhẹ và in thử một trang để chắc chắn nội dung quan trọng không sát mép."
+        },
+        {
+          "q": "Nên in bài nghiên cứu hay đọc trên màn hình?",
+          "a": "In những bài bạn sẽ đọc kỹ hoặc ghi chú bằng tay. Với bài đọc nhanh, dùng màn hình. Khi in, chế độ hai mặt và trắng đen giúp tiết kiệm giấy và mực."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何正确打印期刊文章和学术论文",
+      "metaTitle": "如何打印期刊文章和学术论文",
+      "metaDescription": "在浏览器中免费、私密地打印学术论文：双面打印、每张两页并预留装订边距，无需注册或上传文件。",
+      "keyword": "如何打印期刊文章",
+      "secondaryKeywords": [
+        "论文双面打印",
+        "每张纸打印两页",
+        "打印 JSTOR 文章",
+        "打印 arXiv 论文",
+        "装订边距"
+      ],
+      "answer": "下载文章的 PDF，并用 PDF 阅读器打开，不要直接从期刊网页打印。选择灰度和双面打印；如果文字仍清晰，再设置每张纸两页。装订时预留边距，并先试印四页。设置合适后，24 页的文章只需六张纸。",
+      "ctaLabel": "准备 PDF 以便打印",
+      "body": [
+        {
+          "t": "p",
+          "x": "如果每面只打印一页，24 页的文章可能要用 24 张纸。学术 PDF 通常已按纸张尺寸排版。使用双面打印和每张两页可以节省纸张。请下载出版方提供的 PDF，以保留引用所需的期刊页码。"
+        },
+        {
+          "t": "h2",
+          "x": "下载 PDF，不要直接打印期刊网页"
+        },
+        {
+          "t": "p",
+          "x": "ScienceDirect、Wiley Online Library 和 SpringerLink 页面可能带有浮动工具栏、推荐内容，以及滚动后才加载的图片。这些内容会导致图表被截断或打印出不需要的元素。请查找“Download PDF”按钮，使用出版方排版好的文件。如果只有网页版本，可用[网页打印工具](/print)，并在打印前检查清理后的预览。"
+        },
+        {
+          "t": "note",
+          "x": "引用时需要期刊页码。不要把文章上印刷的页码与打印对话框中的纸张顺序混淆。"
+        },
+        {
+          "t": "h2",
+          "x": "如何少用纸打印学术论文"
+        },
+        {
+          "t": "h2",
+          "x": "如何少用纸打印学术论文"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "下载并打开 PDF。",
+              "x": "保存出版方提供的文件，并用 PDF 阅读器打开。确认图表和参考文献显示完整。"
+            },
+            {
+              "h": "设置灰度和双面打印。",
+              "x": "选择长边翻页的双面打印，让背面方向正确。只有在图表需要时才使用彩色。"
+            },
+            {
+              "h": "试用每张两页。",
+              "x": "选择每张打印 2 页，先预览四页。如果文字太小，请改回每张一页。"
+            },
+            {
+              "h": "预留装订空间。",
+              "x": "如果要打孔装订，可稍微缩小比例或调整装订边距。确认注释和页码没有被裁掉。"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "什么时候适合每张纸打印两页？"
+        },
+        {
+          "t": "p",
+          "x": "单栏文章和字号较大的内容适合每张打印两页。双栏论文的字号通常已经较小，缩小后可能难以阅读。此类文章建议每张一页、灰度、双面打印。对于扫描文件，打印前先运行[扫描 PDF OCR](/blog/ocr/how-to-ocr-a-scanned-pdf)，这样副本仍可搜索。"
+        },
+        {
+          "t": "h2",
+          "x": "可以节省多少纸"
+        },
+        {
+          "t": "h2",
+          "x": "可以节省多少纸"
+        },
+        {
+          "t": "table",
+          "head": [
+            "设置",
+            "24 页需要的纸张",
+            "适用情况"
+          ],
+          "rows": [
+            [
+              "每张一页，单面",
+              "24",
+              "需要舒适阅读或查看细节图"
+            ],
+            [
+              "每张一页，双面",
+              "12",
+              "字号较小或双栏文章"
+            ],
+            [
+              "每张两页，双面",
+              "6",
+              "字号较大、适合紧凑阅读"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "双面打印可将纸张数量减半。每张两页还能进一步节省，但如果文字变得难读就不应使用。打印整份阅读清单前，先试印检查。"
+        },
+        {
+          "t": "cta",
+          "tool": "compress-pdf",
+          "x": "分享给小组前，先压缩学习资料包。"
+        },
+        {
+          "t": "p",
+          "x": "你也可以[为学习在 PDF 上添加注释](/blog/students/annotate-pdf-for-study)，并[合并 PDF](/tools/merge-pdf)，将阅读材料放在一个文件中。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "如何把 PDF 的两页打印在一张纸上？",
+          "a": "打开 PDF 阅读器的打印窗口，找到“每张纸的页数”或“布局”，选择 2。若要减少纸张，也请启用双面打印。先试印四页，确认文字仍然清楚。"
+        },
+        {
+          "q": "为什么每张两页的打印结果太小？",
+          "a": "缩小程度取决于页面尺寸和原始排版。双栏学术文章的字体通常较小，缩小后可能难以阅读。此类文件应每张打印一页；每张两页更适合字号较大的内容。"
+        },
+        {
+          "q": "如何打印 JSTOR 文章并跳过封面？",
+          "a": "在打印窗口中将页码范围设置为从第 2 页开始。先查看预览：许可封面通常是第一页，但不同文件可能有所不同。请保留原始 PDF 以供之后查阅。"
+        },
+        {
+          "q": "打三孔装订需要留多宽的边距？",
+          "a": "在打孔的一侧预留约 12 毫米空白。如果阅读器没有装订边距选项，可略微缩小比例并试印一页，确认重要内容没有靠边。"
+        },
+        {
+          "q": "论文应该打印出来还是在屏幕上阅读？",
+          "a": "需要仔细阅读或手写批注的文章适合打印；快速浏览则可在屏幕上进行。打印时使用双面和灰度模式，可以节省纸张和墨水。"
+        }
+      ]
+    }
+  }
+}
