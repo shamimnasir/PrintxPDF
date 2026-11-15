@@ -1,0 +1,1087 @@
+[
+  {
+    "locale": "es",
+    "guides": [
+      {
+        "topic": "crop-scanned-pdf-pages",
+        "slug": "crop-scanned-pdf-pages",
+        "title": "Cómo recortar páginas escaneadas de un PDF",
+        "metaTitle": "Cómo recortar páginas escaneadas de un PDF",
+        "metaDescription": "Recorta páginas escaneadas de PDF gratis. Ajusta bordes y márgenes en privado desde el navegador, sin registro ni marcas de agua.",
+        "keyword": "recortar páginas escaneadas de PDF",
+        "secondaryKeywords": [
+          "recortar páginas escaneadas de PDF",
+          "recortar páginas escaneadas gratis",
+          "recortar bordes de escaneo"
+        ],
+        "answer": "Para recortar páginas escaneadas de un PDF, ajusta el límite para eliminar bordes del escáner, revisa páginas torcidas o desplazadas y guarda una copia aparte. El recorte mejora la presentación, pero no la legibilidad del escaneo ni borra lo que queda fuera del área visible.",
+        "tool": "crop-pdf",
+        "ctaLabel": "Recortar páginas escaneadas",
+        "body": [
+          {
+            "t": "p",
+            "x": "Los PDF escaneados suelen mostrar bordes oscuros del escáner, márgenes irregulares o papel sobrante alrededor de cada página. Recortar ajusta el área visible para que el documento se vea más limpio al imprimir o compartir. PrintxPDF hace este trabajo en la pestaña del navegador. Conserva el original: el recorte cambia la presentación y no elimina contenido privado."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo recortar páginas escaneadas en el navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el escaneo original",
+                "x": "Haz una copia o guarda el PDF fuente antes de ajustar las páginas. La calidad de una imagen escaneada no mejora al recortarla."
+              },
+              {
+                "h": "Abre Recortar PDF",
+                "x": "Añade la copia a [Recortar PDF](/tools/crop-pdf) desde el navegador."
+              },
+              {
+                "h": "Ajusta los bordes",
+                "x": "Define un límite para quitar el borde oscuro y el papel sobrante. Si las hojas están desalineadas, revisa si cada una necesita un ajuste distinto."
+              },
+              {
+                "h": "Aplica y descarga",
+                "x": "Genera el PDF recortado como archivo nuevo, con un nombre que lo diferencie del escaneo original."
+              },
+              {
+                "h": "Revisa varias páginas",
+                "x": "Comprueba páginas del principio, medio y final. Busca cortes en texto, sellos, firmas, números de página y bordes torcidos."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "crop-pdf",
+            "x": "Recorta PDF escaneados en tu pestaña. Gratis, sin registro y sin marcas de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Recortar frente a otros cambios de PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Mejor herramienta",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Reducir márgenes visibles",
+                "Recortar PDF",
+                "Nueva área de página visible"
+              ],
+              [
+                "Eliminar una página",
+                "Eliminar páginas",
+                "Copia sin la página elegida"
+              ],
+              [
+                "Ocultar texto confidencial",
+                "Redactar PDF",
+                "Flujo de redacción deliberado"
+              ],
+              [
+                "Cambiar el orden",
+                "Organizar PDF",
+                "Las mismas páginas en otra secuencia"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Qué cambia y qué no al recortar un PDF escaneado"
+          },
+          {
+            "t": "p",
+            "x": "En los escaneos, el borde oscuro de una página puede tener un ancho distinto en cada hoja. Una configuración uniforme ahorra tiempo si las páginas están alineadas, pero puede cortar contenido cuando el papel se movió, se escaneó torcido o tiene otro tamaño. Revisa una muestra antes de aplicar el ajuste a todo el documento. Si cada hoja necesita límites diferentes, prioriza conservar el contenido sobre lograr márgenes perfectamente iguales."
+          },
+          {
+            "t": "h2",
+            "x": "El recorte no mejora la calidad del escaneo"
+          },
+          {
+            "t": "p",
+            "x": "Recortar cambia el borde que muestra el lector, no la imagen escaneada original ni su calidad. No endereza una página torcida, no aclara texto borroso y no recupera detalles que faltan. Si el escaneo tiene texto poco legible, mejora la captura o usa [OCR PDF](/tools/ocr-pdf) para crear texto buscable. Comprueba el reconocimiento: OCR puede confundir letras, números y símbolos."
+          },
+          {
+            "t": "h2",
+            "x": "El recorte no elimina contenido privado"
+          },
+          {
+            "t": "p",
+            "x": "El recorte no borra el contenido que queda fuera del área visible. Otro lector puede mostrarlo o permitir recuperarlo. No uses recorte para ocultar nombres, números de cuenta u otra información. Usa [Redactar PDF](/tools/redact-pdf) para eliminar información confidencial y verifica la salida. Si debes limpiar propiedades del documento, [Quitar metadatos](/tools/remove-metadata) es una tarea separada."
+          },
+          {
+            "t": "h2",
+            "x": "Comprueba los bordes antes de imprimir"
+          },
+          {
+            "t": "p",
+            "x": "Para una impresión uniforme, comprueba páginas del inicio, mitad y final, además de cualquier hoja con sellos o firmas cerca del borde. En un escaneo con páginas de distintos tamaños, puede ser mejor aplicar el recorte por grupos. Haz una prueba de impresión y confirma que no se pierdan notas manuscritas, perforaciones con texto, líneas de tabla ni números de página."
+          },
+          {
+            "t": "h2",
+            "x": "Procesa los escaneos privados en el navegador"
+          },
+          {
+            "t": "p",
+            "x": "El recorte local en el navegador evita subir un escaneo para este ajuste sencillo; el archivo se procesa en tu pestaña. Los escaneos pueden contener historiales, formularios, facturas o expedientes. Revisa tanto el contenido visible como el destino antes de compartir. Conserva el original y abre el PDF recortado para confirmar orientación, páginas y legibilidad. Si después unes documentos, usa [Unir PDF](/tools/merge-pdf) tras revisar cada componente."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Puedo recortar todas las páginas escaneadas con el mismo ajuste?",
+            "a": "Sí, si las hojas están alineadas y tienen márgenes parecidos. Prueba primero y revisa páginas con desplazamiento o tamaño distinto."
+          },
+          {
+            "q": "¿Recortar un PDF escaneado mejora la calidad?",
+            "a": "No. Elimina bordes visibles o espacio sobrante, pero no mejora la resolución ni aclara texto borroso."
+          },
+          {
+            "q": "¿El recorte elimina información fuera del borde?",
+            "a": "No. Puede seguir dentro del archivo. Usa Redactar PDF para eliminar información confidencial y verifica el resultado."
+          },
+          {
+            "q": "¿Cómo hago que un escaneo recortado se pueda buscar?",
+            "a": "Usa OCR PDF para añadir una capa de texto y revisa el reconocimiento, porque los escaneos pueden confundir caracteres."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "locale": "pt-BR",
+    "guides": [
+      {
+        "topic": "crop-scanned-pdf-pages",
+        "slug": "crop-scanned-pdf-pages",
+        "title": "Como cortar páginas digitalizadas de um PDF",
+        "metaTitle": "Como cortar páginas digitalizadas de um PDF",
+        "metaDescription": "Corte páginas digitalizadas de PDF grátis. Ajuste bordas e margens em privado no navegador, sem cadastro ou marca-d’água.",
+        "keyword": "cortar páginas digitalizadas de PDF",
+        "secondaryKeywords": [
+          "cortar páginas digitalizadas de PDF",
+          "recortar páginas escaneadas grátis",
+          "cortar bordas de digitalização"
+        ],
+        "answer": "Para cortar páginas digitalizadas de um PDF, ajuste o limite para remover bordas do scanner, confira páginas tortas ou deslocadas e salve uma cópia separada. O corte melhora a apresentação, mas não a leitura do scan nem apaga o que fica fora da área visível.",
+        "tool": "crop-pdf",
+        "ctaLabel": "Recortar páginas digitalizadas",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDFs digitalizados podem mostrar bordas escuras do scanner, margens irregulares ou papel extra em volta de cada página. Recortar ajusta a área visível para o documento ficar mais limpo ao imprimir ou compartilhar. O PrintxPDF faz esse trabalho na aba do navegador. Guarde o original: o corte muda a apresentação, mas não apaga conteúdo privado."
+          },
+          {
+            "t": "h2",
+            "x": "Como recortar páginas digitalizadas no navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde o scan original",
+                "x": "Faça uma cópia ou preserve o PDF-fonte antes de ajustar as páginas. Recortar não melhora a qualidade da imagem escaneada."
+              },
+              {
+                "h": "Abra Recortar PDF",
+                "x": "Adicione a cópia ao [Recortar PDF](/tools/crop-pdf) no navegador."
+              },
+              {
+                "h": "Ajuste as bordas",
+                "x": "Defina limites para tirar a faixa escura e o papel sobrando. Se as folhas estiverem desalinhadas, veja se cada uma exige um ajuste diferente."
+              },
+              {
+                "h": "Aplique e baixe",
+                "x": "Gere um novo PDF recortado com nome que o diferencie do scan original."
+              },
+              {
+                "h": "Confira várias páginas",
+                "x": "Veja páginas do início, meio e fim. Procure cortes em texto, carimbos, assinaturas, números e bordas tortas."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "crop-pdf",
+            "x": "Recorte PDFs digitalizados na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Recortar versus outras alterações de PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Melhor ferramenta",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Ajustar margens visíveis",
+                "Recortar PDF",
+                "Nova área de página visível"
+              ],
+              [
+                "Remover uma página",
+                "Excluir páginas",
+                "Cópia sem a página escolhida"
+              ],
+              [
+                "Ocultar texto confidencial",
+                "Redigir PDF",
+                "Fluxo de redação apropriado"
+              ],
+              [
+                "Mudar a ordem",
+                "Organizar PDF",
+                "Mesmas páginas em outra sequência"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "O que muda e o que não muda ao recortar um scan"
+          },
+          {
+            "t": "p",
+            "x": "Em scans, a borda escura pode ter larguras diferentes em cada folha. Um ajuste uniforme economiza tempo quando as páginas estão alinhadas, mas pode cortar conteúdo se o papel se moveu, foi escaneado torto ou tem outro tamanho. Confira uma amostra antes de aplicar a todos. Se cada folha precisar de limites próprios, priorize manter o conteúdo em vez de deixar margens perfeitamente iguais."
+          },
+          {
+            "t": "h2",
+            "x": "Recortar não melhora a qualidade do scan"
+          },
+          {
+            "t": "p",
+            "x": "Recortar muda o limite exibido pelo leitor, não a imagem original nem sua qualidade. Não endireita páginas, clareia texto borrado nem recupera detalhes ausentes. Se o scan estiver difícil de ler, melhore a captura ou use [OCR PDF](/tools/ocr-pdf) para criar texto pesquisável. Revise o reconhecimento: o OCR pode confundir letras, números e símbolos."
+          },
+          {
+            "t": "h2",
+            "x": "Recortar não remove conteúdo privado"
+          },
+          {
+            "t": "p",
+            "x": "O corte não apaga o conteúdo fora da área visível. Outro leitor pode exibi-lo ou recuperá-lo. Não use recorte para esconder nomes, números de conta ou outros dados. Use [Redigir PDF](/tools/redact-pdf) para remover informações confidenciais e confira o resultado. Limpar propriedades do documento é outra tarefa: use [Remover metadados](/tools/remove-metadata) se necessário."
+          },
+          {
+            "t": "h2",
+            "x": "Confira as bordas antes de imprimir"
+          },
+          {
+            "t": "p",
+            "x": "Para imprimir de forma uniforme, confira páginas do início, meio e fim, além das que têm carimbos ou assinaturas perto da borda. Em scans com tamanhos variados, recorte por grupos pode funcionar melhor. Faça um teste de impressão e verifique notas manuscritas, linhas de tabela, furos com texto e números de página."
+          },
+          {
+            "t": "h2",
+            "x": "Processe scans privados no navegador"
+          },
+          {
+            "t": "p",
+            "x": "O recorte local no navegador evita enviar o scan para esse ajuste simples; o arquivo é processado na aba. Digitalizações podem incluir prontuários, formulários, faturas ou processos. Revise o conteúdo visível e o destino antes de compartilhar. Guarde o original e abra o PDF recortado para conferir orientação, páginas e leitura. Se depois juntar documentos, use [Mesclar PDF](/tools/merge-pdf) após revisar cada parte."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Posso recortar todas as páginas digitalizadas com o mesmo ajuste?",
+            "a": "Sim, se as folhas estiverem alinhadas e tiverem margens parecidas. Teste primeiro e revise páginas deslocadas ou de outro tamanho."
+          },
+          {
+            "q": "Recortar um PDF escaneado melhora a qualidade?",
+            "a": "Não. Remove bordas visíveis ou sobra de papel, mas não aumenta resolução nem clareia texto borrado."
+          },
+          {
+            "q": "O corte apaga informações fora da margem?",
+            "a": "Não. Elas podem continuar no arquivo. Use Redigir PDF para remover dados confidenciais e verifique a saída."
+          },
+          {
+            "q": "Como deixar um scan recortado pesquisável?",
+            "a": "Use OCR PDF para adicionar uma camada de texto e revise o reconhecimento, pois scans podem confundir caracteres."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "locale": "hi",
+    "guides": [
+      {
+        "topic": "crop-scanned-pdf-pages",
+        "slug": "crop-scanned-pdf-pages",
+        "title": "स्कैन किए PDF पेज कैसे क्रॉप करें",
+        "metaTitle": "स्कैन किए PDF पेज कैसे क्रॉप करें",
+        "metaDescription": "स्कैन किए PDF पेज मुफ़्त में क्रॉप करें। ब्राउज़र में निजी तौर पर किनारे और मार्जिन ठीक करें, बिना साइनअप या वॉटरमार्क।",
+        "keyword": "स्कैन किए PDF पेज क्रॉप करें",
+        "secondaryKeywords": [
+          "स्कैन किए PDF पेज क्रॉप करें",
+          "स्कैन किए पेज मुफ़्त क्रॉप",
+          "स्कैनर बॉर्डर हटाएँ"
+        ],
+        "answer": "स्कैन किए PDF पेज क्रॉप करने के लिए स्कैनर किनारे हटाने हेतु सीमा तय करें, तिरछे या खिसके पेज जाँचें और अलग कॉपी सेव करें। क्रॉप दिखावट सुधारता है, स्कैन की पढ़ने योग्य गुणवत्ता नहीं और न ही दृश्य क्षेत्र के बाहर की जानकारी मिटाता है।",
+        "tool": "crop-pdf",
+        "ctaLabel": "स्कैन पेज क्रॉप करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "स्कैन किए PDF में अक्सर स्कैनर की काली धार, असमान मार्जिन या पेज के आसपास अतिरिक्त कागज़ दिखता है। क्रॉप करने से दृश्य पेज क्षेत्र समायोजित होता है और प्रिंट या साझा करने पर दस्तावेज़ साफ़ दिख सकता है। PrintxPDF यह काम ब्राउज़र टैब में करता है। मूल फ़ाइल रखें: क्रॉप दिखावट बदलता है, निजी सामग्री नहीं मिटाता।"
+          },
+          {
+            "t": "h2",
+            "x": "ब्राउज़र में स्कैन किए PDF पेज कैसे क्रॉप करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल स्कैन रखें",
+                "x": "पेज बदलने से पहले PDF कॉपी करें या स्रोत सुरक्षित रखें। क्रॉप करने से स्कैन की छवि गुणवत्ता नहीं सुधरती।"
+              },
+              {
+                "h": "Crop PDF खोलें",
+                "x": "ब्राउज़र में कॉपी [Crop PDF](/tools/crop-pdf) में जोड़ें।"
+              },
+              {
+                "h": "किनारे तय करें",
+                "x": "काली पट्टी और अतिरिक्त कागज़ हटाने के लिए सीमा सेट करें। पेज खिसके हों तो हर पेज को अलग सेटिंग चाहिए या नहीं जाँचें।"
+              },
+              {
+                "h": "लागू करें और डाउनलोड करें",
+                "x": "नई क्रॉप कॉपी बनाएँ और मूल स्कैन से अलग स्पष्ट नाम दें।"
+              },
+              {
+                "h": "अलग-अलग पेज जाँचें",
+                "x": "शुरू, बीच और अंत के पेज देखें। टेक्स्ट, मुहर, हस्ताक्षर, नंबर या तिरछे किनारे कटे न हों।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "crop-pdf",
+            "x": "अपने टैब में स्कैन PDF क्रॉप करें। मुफ़्त, बिना साइनअप और वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "क्रॉप और अन्य PDF बदलाव में अंतर"
+          },
+          {
+            "t": "table",
+            "head": [
+              "लक्ष्य",
+              "उपयुक्त टूल",
+              "नतीजा"
+            ],
+            "rows": [
+              [
+                "दिखने वाले मार्जिन घटाना",
+                "Crop PDF",
+                "नई दृश्य पेज सीमा"
+              ],
+              [
+                "पूरा पेज हटाना",
+                "Delete Pages",
+                "चुना हुआ पेज हटाकर कॉपी"
+              ],
+              [
+                "गोपनीय टेक्स्ट छिपाना",
+                "Redact PDF",
+                "सही रेडैक्शन प्रक्रिया"
+              ],
+              [
+                "क्रम बदलना",
+                "Organize PDF",
+                "वही पेज नए क्रम में"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "स्कैन PDF क्रॉप करने पर क्या बदलता है"
+          },
+          {
+            "t": "p",
+            "x": "स्कैन में हर शीट की काली धार की चौड़ाई अलग हो सकती है। पेज सीधे हों तो एक समान सेटिंग समय बचाती है, लेकिन कागज़ खिसका, तिरछा स्कैन हुआ या आकार अलग हो तो सामग्री कट सकती है। सभी पेजों पर लागू करने से पहले नमूना देखें। अलग सीमाएँ चाहिए तो पूरी सामग्री बचाना समान मार्जिन से अधिक ज़रूरी है।"
+          },
+          {
+            "t": "h2",
+            "x": "क्रॉप से स्कैन गुणवत्ता नहीं सुधरती"
+          },
+          {
+            "t": "p",
+            "x": "क्रॉप रीडर में दिखने वाली सीमा बदलता है, मूल स्कैन छवि या उसकी गुणवत्ता नहीं। यह तिरछा पेज सीधा नहीं करता, धुंधला टेक्स्ट साफ़ नहीं करता और खोया विवरण वापस नहीं लाता। स्कैन पढ़ने में कठिन हो तो बेहतर स्कैन लें या [OCR PDF](/tools/ocr-pdf) से खोजने योग्य टेक्स्ट बनाएँ। OCR में अक्षर, अंक और चिह्न गलत पहचाने जा सकते हैं, इसलिए परिणाम जाँचें।"
+          },
+          {
+            "t": "h2",
+            "x": "क्रॉप निजी सामग्री नहीं हटाता"
+          },
+          {
+            "t": "p",
+            "x": "दृश्य सीमा के बाहर की सामग्री क्रॉप से नहीं मिटती। दूसरा व्यूअर उसे दिखा या पुनः प्राप्त कर सकता है। नाम, खाता संख्या या अन्य निजी जानकारी छिपाने के लिए क्रॉप न करें। गोपनीय सामग्री हटाने हेतु [Redact PDF](/tools/redact-pdf) उपयोग करें और आउटपुट जाँचें। दस्तावेज़ गुण साफ़ करना अलग काम है; ज़रूरत हो तो [Remove Metadata](/tools/remove-metadata) लें।"
+          },
+          {
+            "t": "h2",
+            "x": "प्रिंट से पहले किनारे जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "साफ़ प्रिंट के लिए शुरुआत, बीच और अंत के पेज जाँचें, खासकर जहाँ मुहर या हस्ताक्षर किनारे के पास हों। अलग आकार वाले स्कैन को समूहों में क्रॉप करना बेहतर हो सकता है। टेस्ट प्रिंट में हाथ से लिखे नोट, टेबल लाइन, पेज नंबर और किनारे का टेक्स्ट कटे तो नहीं यह देखें।"
+          },
+          {
+            "t": "h2",
+            "x": "निजी स्कैन ब्राउज़र में प्रोसेस करें"
+          },
+          {
+            "t": "p",
+            "x": "ब्राउज़र में स्थानीय क्रॉप इस आसान बदलाव के लिए स्कैन अपलोड करने से बचाता है; फ़ाइल टैब में प्रोसेस होती है। स्कैन में मेडिकल रिकॉर्ड, फ़ॉर्म, बिल या केस फ़ाइल हो सकती है। साझा करने से पहले दिखाई सामग्री और गंतव्य जाँचें। मूल रखें और नई PDF में दिशा, पेज तथा पढ़ने की सुविधा देखें। बाद में फाइलें जोड़नी हों तो प्रत्येक की जाँच के बाद [Merge PDF](/tools/merge-pdf) करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या सभी स्कैन पेज एक ही सेटिंग से क्रॉप कर सकते हैं?",
+            "a": "हाँ, यदि पेज सीधे हैं और मार्जिन समान हैं। पहले टेस्ट करें और खिसके या अलग आकार वाले पेज जाँचें।"
+          },
+          {
+            "q": "क्या स्कैन PDF क्रॉप करने से गुणवत्ता सुधरती है?",
+            "a": "नहीं। इससे दिखाई देने वाली धार या अतिरिक्त कागज़ हटता है, रिज़ॉल्यूशन या धुंधला टेक्स्ट नहीं सुधरता।"
+          },
+          {
+            "q": "क्या क्रॉप सीमा के बाहर की जानकारी मिटाता है?",
+            "a": "नहीं। वह फ़ाइल में रह सकती है। गोपनीय जानकारी हटाने के लिए Redact PDF उपयोग करें और नतीजा जाँचें।"
+          },
+          {
+            "q": "क्रॉप किए स्कैन में खोजने योग्य टेक्स्ट कैसे जोड़ें?",
+            "a": "OCR PDF से टेक्स्ट लेयर बनाएँ और पहचान जाँचें, क्योंकि स्कैन में अक्षर गलत पढ़े जा सकते हैं।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "locale": "ar",
+    "guides": [
+      {
+        "topic": "crop-scanned-pdf-pages",
+        "slug": "crop-scanned-pdf-pages",
+        "title": "كيفية اقتصاص صفحات PDF الممسوحة ضوئيًا",
+        "metaTitle": "كيفية اقتصاص صفحات PDF الممسوحة ضوئيًا",
+        "metaDescription": "اقتصّ صفحات PDF الممسوحة مجانًا. اضبط حواف الماسح والهوامش بخصوصية في المتصفح، وافحص الصفحات قبل المشاركة بلا تسجيل.",
+        "keyword": "اقتصاص صفحات PDF ممسوحة ضوئيًا",
+        "secondaryKeywords": [
+          "اقتصاص صفحات PDF ممسوحة ضوئيًا",
+          "اقتصاص صفحات ممسوحة مجانًا",
+          "قص حواف المسح"
+        ],
+        "answer": "لاقتصاص صفحات PDF الممسوحة، اضبط الحد لإزالة حواف الماسح، وافحص الصفحات المائلة أو المزاحة، واحفظ نسخة منفصلة. يحسن الاقتصاص المظهر لا وضوح المسح، ولا يمحو المعلومات خارج المساحة الظاهرة.",
+        "tool": "crop-pdf",
+        "ctaLabel": "اقتصاص الصفحات الممسوحة",
+        "body": [
+          {
+            "t": "p",
+            "x": "تُظهر ملفات PDF الممسوحة غالبًا حوافًا داكنة من الماسح أو هوامش غير متساوية أو ورقًا زائدًا حول الصفحة. يضبط الاقتصاص المساحة الظاهرة لتبدو الصفحات أنظف عند الطباعة أو المشاركة. تنفذ PrintxPDF هذه المهمة في علامة تبويب المتصفح. احتفظ بالأصل؛ فالاقتصاص يغير المظهر ولا يزيل المحتوى الخاص."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية اقتصاص صفحات ممسوحة في المتصفح"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالمسح الأصلي",
+                "x": "انسخ PDF أو احتفظ بالمصدر قبل تعديل الصفحات. لا يحسن الاقتصاص جودة صورة المسح."
+              },
+              {
+                "h": "افتح Crop PDF",
+                "x": "أضف النسخة إلى [Crop PDF](/tools/crop-pdf) في المتصفح."
+              },
+              {
+                "h": "اضبط الحواف",
+                "x": "حدد حدًا لإزالة الشريط الداكن والورق الزائد. إذا كانت الصفحات مزاحة، فتحقق مما إذا كان كل منها يحتاج إلى ضبط مختلف."
+              },
+              {
+                "h": "طبّق ونزّل",
+                "x": "أنشئ PDF مقتصًا جديدًا باسم يميزه عن المسح الأصلي."
+              },
+              {
+                "h": "افحص صفحات متعددة",
+                "x": "راجع صفحات من البداية والوسط والنهاية. تأكد من عدم قص النص أو الأختام أو التوقيعات أو الأرقام أو الحواف المائلة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "crop-pdf",
+            "x": "اقتصّ ملفات PDF الممسوحة في علامة التبويب. مجانًا وبلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "الاقتصاص مقارنة بتعديلات PDF الأخرى"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الهدف",
+              "الأداة المناسبة",
+              "النتيجة"
+            ],
+            "rows": [
+              [
+                "تقليل الهوامش الظاهرة",
+                "Crop PDF",
+                "مساحة صفحة ظاهرة جديدة"
+              ],
+              [
+                "حذف صفحة كاملة",
+                "Delete Pages",
+                "نسخة دون الصفحة المحددة"
+              ],
+              [
+                "إخفاء نص سري",
+                "Redact PDF",
+                "مسار تنقيح مناسب"
+              ],
+              [
+                "تغيير الترتيب",
+                "Organize PDF",
+                "الصفحات نفسها بترتيب جديد"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي يتغير عند اقتصاص ملف ممسوح؟"
+          },
+          {
+            "t": "p",
+            "x": "قد يختلف عرض الحافة الداكنة بين أوراق المسح. يوفر الإعداد الموحد الوقت إذا كانت الصفحات مستقيمة، لكنه قد يقص المحتوى إذا تحركت الورقة أو مُسحت بزاوية أو كان حجمها مختلفًا. افحص عينة قبل تطبيق الإعداد على الملف كله. إذا احتاجت الأوراق حدودًا مختلفة، فالحفاظ على المحتوى أهم من توحيد الهوامش تمامًا."
+          },
+          {
+            "t": "h2",
+            "x": "الاقتصاص لا يحسن جودة المسح"
+          },
+          {
+            "t": "p",
+            "x": "يغير الاقتصاص حدود الصفحة المعروضة، لا صورة المسح الأصلية أو جودتها. لا يصحح ميل الصفحة ولا يوضح النص الضبابي ولا يستعيد التفاصيل المفقودة. إذا كان المسح صعب القراءة، فأعد المسح أو استخدم [OCR PDF](/tools/ocr-pdf) لإنشاء نص قابل للبحث. تحقق من التعرف لأن OCR قد يخلط الحروف والأرقام والرموز."
+          },
+          {
+            "t": "h2",
+            "x": "الاقتصاص لا يزيل المحتوى الخاص"
+          },
+          {
+            "t": "p",
+            "x": "لا يمحو الاقتصاص المحتوى خارج المساحة الظاهرة. قد يعرضه قارئ آخر أو يستعيده. لا تستخدم الاقتصاص لإخفاء الأسماء أو أرقام الحسابات أو البيانات الخاصة. استخدم [Redact PDF](/tools/redact-pdf) لإزالة المعلومات السرية وتحقق من الناتج. تنظيف خصائص الملف مهمة منفصلة؛ استخدم [Remove Metadata](/tools/remove-metadata) إذا تطلبت السياسة ذلك."
+          },
+          {
+            "t": "h2",
+            "x": "افحص الحواف قبل الطباعة"
+          },
+          {
+            "t": "p",
+            "x": "للطباعة المتناسقة، افحص صفحات من البداية والوسط والنهاية، خصوصًا الصفحات التي بها أختام أو توقيعات قرب الحافة. قد يكون اقتصاص الصفحات الممسوحة ذات الأحجام المختلفة ضمن مجموعات أفضل. اطبع تجربة وتأكد من بقاء الملاحظات المكتوبة وخطوط الجداول وأرقام الصفحات والنص القريب من الأطراف."
+          },
+          {
+            "t": "h2",
+            "x": "عالج المسوحات الخاصة في المتصفح"
+          },
+          {
+            "t": "p",
+            "x": "تتجنب المعالجة المحلية في المتصفح رفع المسح لهذا التعديل البسيط؛ فالملف يُعالج في علامة التبويب. قد تحتوي عمليات المسح على سجلات طبية أو نماذج أو فواتير أو ملفات قضايا. راجع المحتوى الظاهر والجهة المستلمة قبل المشاركة. احتفظ بالأصل وافتح PDF الجديد للتحقق من الاتجاه والصفحات والوضوح. وإذا جمعت ملفات لاحقًا، فاستخدم [Merge PDF](/tools/merge-pdf) بعد فحص كل ملف."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يمكن اقتصاص كل الصفحات بالإعداد نفسه؟",
+            "a": "نعم إذا كانت الأوراق مستقيمة وهوامشها متقاربة. اختبر أولًا وافحص الصفحات المزاحة أو المختلفة الحجم."
+          },
+          {
+            "q": "هل يحسن الاقتصاص جودة PDF الممسوح؟",
+            "a": "لا. يزيل الحواف الظاهرة أو الورق الزائد لكنه لا يزيد الدقة ولا يوضح النص الضبابي."
+          },
+          {
+            "q": "هل يحذف الاقتصاص المعلومات خارج الحد؟",
+            "a": "لا. قد تبقى داخل الملف. استخدم Redact PDF لإزالة المعلومات السرية وتحقق من النتيجة."
+          },
+          {
+            "q": "كيف أجعل المسح المقتص قابلًا للبحث؟",
+            "a": "استخدم OCR PDF لإضافة طبقة نص وراجع التعرف، لأن المسح قد يسبب أخطاء في الحروف."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "locale": "bn",
+    "guides": [
+      {
+        "topic": "crop-scanned-pdf-pages",
+        "slug": "crop-scanned-pdf-pages",
+        "title": "স্ক্যান করা PDF পৃষ্ঠা কীভাবে ক্রপ করবেন",
+        "metaTitle": "স্ক্যান করা PDF পৃষ্ঠা কীভাবে ক্রপ করবেন",
+        "metaDescription": "স্ক্যান করা PDF পৃষ্ঠা বিনামূল্যে ক্রপ করুন। ব্রাউজারে ব্যক্তিগতভাবে ধার ও মার্জিন ঠিক করুন, সাইনআপ বা ওয়াটারমার্ক ছাড়া।",
+        "keyword": "স্ক্যান করা PDF পৃষ্ঠা ক্রপ",
+        "secondaryKeywords": [
+          "স্ক্যান করা PDF পৃষ্ঠা ক্রপ",
+          "স্ক্যান পৃষ্ঠা বিনামূল্যে ক্রপ",
+          "স্ক্যানের কালো ধার কাটুন"
+        ],
+        "answer": "স্ক্যান করা PDF পৃষ্ঠা ক্রপ করতে স্ক্যানারের ধার কাটার সীমা ঠিক করুন, কাত বা সরে যাওয়া পৃষ্ঠা দেখুন এবং আলাদা কপি সংরক্ষণ করুন। ক্রপ চেহারা ঠিক করে, স্ক্যানের পাঠযোগ্যতা বাড়ায় না এবং দৃশ্যমান অংশের বাইরের তথ্য মুছে না।",
+        "tool": "crop-pdf",
+        "ctaLabel": "স্ক্যান পৃষ্ঠা ক্রপ",
+        "body": [
+          {
+            "t": "p",
+            "x": "স্ক্যান করা PDF-এ প্রায়ই স্ক্যানারের কালো ধার, অসম মার্জিন বা পাতার চারপাশে বাড়তি কাগজ থাকে। ক্রপ করলে দৃশ্যমান পৃষ্ঠা এলাকা ঠিক হয়, তাই প্রিন্ট বা শেয়ারে নথি পরিষ্কার দেখায়। PrintxPDF ব্রাউজার ট্যাবে এই কাজ করে। মূল ফাইল রাখুন: ক্রপ শুধু চেহারা বদলায়, ব্যক্তিগত তথ্য মুছে দেয় না।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্রাউজারে স্ক্যান করা PDF পৃষ্ঠা ক্রপ করুন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল স্ক্যানটি রাখুন",
+                "x": "পৃষ্ঠা বদলানোর আগে PDF কপি করুন বা উৎস অক্ষত রাখুন। ক্রপে স্ক্যান ছবির মান বাড়ে না।"
+              },
+              {
+                "h": "Crop PDF খুলুন",
+                "x": "ব্রাউজার থেকে কপিটি [Crop PDF](/tools/crop-pdf)-এ যোগ করুন।"
+              },
+              {
+                "h": "ধারের সীমা ঠিক করুন",
+                "x": "কালো ধার ও বাড়তি কাগজ বাদ দিতে সীমানা দিন। পৃষ্ঠা সরে থাকলে প্রতিটিতে আলাদা সেটিং দরকার কি না দেখুন।"
+              },
+              {
+                "h": "প্রয়োগ করে ডাউনলোড করুন",
+                "x": "নতুন ক্রপ করা PDF বানান এবং মূল স্ক্যান থেকে আলাদা স্পষ্ট নামে রাখুন।"
+              },
+              {
+                "h": "বিভিন্ন পৃষ্ঠা পরীক্ষা করুন",
+                "x": "শুরু, মাঝ ও শেষের পৃষ্ঠা দেখুন। লেখা, সিল, স্বাক্ষর, পৃষ্ঠা নম্বর বা কাত ধার কাটা পড়েনি নিশ্চিত করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "crop-pdf",
+            "x": "ট্যাবে স্ক্যান PDF ক্রপ করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।"
+          },
+          {
+            "t": "h2",
+            "x": "ক্রপ বনাম PDF-এর অন্য পরিবর্তন"
+          },
+          {
+            "t": "table",
+            "head": [
+              "উদ্দেশ্য",
+              "উপযুক্ত টুল",
+              "ফলাফল"
+            ],
+            "rows": [
+              [
+                "দৃশ্যমান মার্জিন কমানো",
+                "Crop PDF",
+                "নতুন দৃশ্যমান পৃষ্ঠা এলাকা"
+              ],
+              [
+                "একটি পৃষ্ঠা মুছুন",
+                "Delete Pages",
+                "নির্বাচিত পৃষ্ঠা ছাড়া কপি"
+              ],
+              [
+                "গোপন লেখা আড়াল",
+                "Redact PDF",
+                "সঠিক রেডাকশন প্রক্রিয়া"
+              ],
+              [
+                "ক্রম বদলানো",
+                "Organize PDF",
+                "একই পৃষ্ঠা নতুন ক্রমে"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "স্ক্যান PDF ক্রপ করলে কী বদলায়"
+          },
+          {
+            "t": "p",
+            "x": "স্ক্যানে প্রতিটি পাতার কালো ধারের প্রস্থ এক রকম নাও হতে পারে। পৃষ্ঠা সোজা থাকলে এক সেটিং সময় বাঁচায়, তবে কাগজ সরে গেলে, কাত হয়ে স্ক্যান হলে বা আকার আলাদা হলে কনটেন্ট কেটে যেতে পারে। পুরো ফাইলে দেওয়ার আগে নমুনা পরীক্ষা করুন। পাতাভেদে সীমা বদলাতে হলে সমান মার্জিনের চেয়ে সব তথ্য অক্ষত রাখা জরুরি।"
+          },
+          {
+            "t": "h2",
+            "x": "ক্রপে স্ক্যানের মান বাড়ে না"
+          },
+          {
+            "t": "p",
+            "x": "ক্রপ পাঠককে দেখানো পৃষ্ঠার সীমানা বদলায়, মূল স্ক্যান ছবি বা মান নয়। এটি কাত পৃষ্ঠা সোজা করে না, ঝাপসা লেখা পরিষ্কার করে না এবং হারানো বিবরণ ফেরায় না। স্ক্যান পড়তে কষ্ট হলে আবার স্ক্যান করুন বা [OCR PDF](/tools/ocr-pdf) দিয়ে খোঁজার মতো টেক্সট তৈরি করুন। OCR অক্ষর, অঙ্ক ও প্রতীক ভুল করতে পারে, তাই ফল যাচাই করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ক্রপে ব্যক্তিগত তথ্য মুছে যায় না"
+          },
+          {
+            "t": "p",
+            "x": "দৃশ্যমান এলাকার বাইরে থাকা লেখা ক্রপে মুছে যায় না। অন্য ভিউয়ার সেটি দেখাতে বা উদ্ধার করতে পারে। নাম, অ্যাকাউন্ট নম্বর বা গোপন তথ্য লুকাতে ক্রপ ব্যবহার করবেন না। গোপন তথ্য সরাতে [Redact PDF](/tools/redact-pdf) ব্যবহার করে ফল যাচাই করুন। ডকুমেন্ট বৈশিষ্ট্য পরিষ্কার করা আলাদা কাজ; নীতিতে দরকার হলে [Remove Metadata](/tools/remove-metadata) নিন।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রিন্টের আগে ধার পরীক্ষা করুন"
+          },
+          {
+            "t": "p",
+            "x": "প্রিন্টে সামঞ্জস্য রাখতে শুরু, মাঝ ও শেষের পৃষ্ঠা এবং ধারঘেঁষা সিল বা স্বাক্ষর থাকা পৃষ্ঠা দেখুন। বিভিন্ন মাপের পৃষ্ঠা থাকলে আলাদা গ্রুপে ক্রপ করা ভালো হতে পারে। টেস্ট প্রিন্টে হাতে লেখা নোট, টেবিলের লাইন, পৃষ্ঠা নম্বর ও ধারের লেখা ঠিক আছে নিশ্চিত করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্যক্তিগত স্ক্যান ব্রাউজারে প্রসেস করুন"
+          },
+          {
+            "t": "p",
+            "x": "ব্রাউজারে লোকাল প্রসেসিং এই সাধারণ সমন্বয়ের জন্য স্ক্যান আপলোড এড়ায়; ফাইল ট্যাবেই কাজ হয়। স্ক্যানে চিকিৎসা রেকর্ড, ফর্ম, চালান বা মামলা-সংক্রান্ত তথ্য থাকতে পারে। শেয়ারের আগে দৃশ্যমান তথ্য ও গন্তব্য যাচাই করুন। মূল ফাইল রাখুন এবং নতুন PDF-এ দিক, পৃষ্ঠা ও পাঠযোগ্যতা দেখুন। পরে নথি জুড়লে প্রতিটি অংশ যাচাইয়ের পর [PDF একত্র করুন](/tools/merge-pdf)।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "সব স্ক্যান পৃষ্ঠা কি একই সেটিংয়ে ক্রপ করা যায়?",
+            "a": "হ্যাঁ, পৃষ্ঠাগুলো সোজা এবং মার্জিন কাছাকাছি হলে। আগে পরীক্ষা করুন এবং সরে যাওয়া বা ভিন্ন আকারের পৃষ্ঠা দেখুন।"
+          },
+          {
+            "q": "স্ক্যান PDF ক্রপ করলে কি মান বাড়ে?",
+            "a": "না। দৃশ্যমান ধার বা বাড়তি কাগজ সরায়, রেজোলিউশন বাড়ায় না বা ঝাপসা লেখা পরিষ্কার করে না।"
+          },
+          {
+            "q": "ক্রপ কি সীমানার বাইরের তথ্য মুছে দেয়?",
+            "a": "না। তথ্য ফাইলে থাকতে পারে। গোপন বিষয় সরাতে Redact PDF ব্যবহার করে ফল যাচাই করুন।"
+          },
+          {
+            "q": "ক্রপ করা স্ক্যানে খোঁজার মতো লেখা কীভাবে পাব?",
+            "a": "OCR PDF দিয়ে টেক্সট লেয়ার যোগ করে ফল পরীক্ষা করুন, কারণ স্ক্যানের অক্ষর ভুল শনাক্ত হতে পারে।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "locale": "vi",
+    "guides": [
+      {
+        "topic": "crop-scanned-pdf-pages",
+        "slug": "crop-scanned-pdf-pages",
+        "title": "Cách cắt trang PDF đã quét",
+        "metaTitle": "Cách cắt trang PDF đã quét",
+        "metaDescription": "Cắt trang PDF đã quét miễn phí. Điều chỉnh mép và lề riêng tư trong trình duyệt, không cần đăng ký hay hình mờ.",
+        "keyword": "cắt trang PDF đã quét",
+        "secondaryKeywords": [
+          "cắt trang PDF đã quét",
+          "cắt trang quét miễn phí",
+          "cắt viền bản quét"
+        ],
+        "answer": "Để cắt trang PDF đã quét, đặt ranh giới để bỏ mép máy quét, kiểm tra trang lệch hoặc xô dịch rồi lưu bản riêng. Cắt lề làm trang gọn hơn nhưng không tăng độ rõ của bản quét hay xóa nội dung ngoài vùng hiển thị.",
+        "tool": "crop-pdf",
+        "ctaLabel": "Cắt trang quét",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF đã quét thường có mép máy quét tối, lề không đều hoặc thừa giấy quanh trang. Cắt lề điều chỉnh vùng hiển thị để tài liệu trông gọn hơn khi in hoặc chia sẻ. PrintxPDF xử lý tác vụ này trong tab trình duyệt. Hãy giữ bản gốc: cắt lề đổi cách trình bày, không xóa nội dung riêng tư."
+          },
+          {
+            "t": "h2",
+            "x": "Cách cắt trang PDF đã quét trong trình duyệt"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ bản quét gốc",
+                "x": "Sao chép PDF hoặc giữ tệp nguồn trước khi chỉnh trang. Cắt lề không cải thiện chất lượng ảnh quét."
+              },
+              {
+                "h": "Mở Crop PDF",
+                "x": "Thêm bản sao vào [Crop PDF](/tools/crop-pdf) từ trình duyệt."
+              },
+              {
+                "h": "Đặt ranh giới cắt",
+                "x": "Chọn vùng bỏ mép tối và phần giấy thừa. Nếu trang bị lệch, kiểm tra xem cần thiết lập riêng từng trang không."
+              },
+              {
+                "h": "Áp dụng và tải xuống",
+                "x": "Tạo PDF đã cắt thành tệp mới, đặt tên để phân biệt với bản quét gốc."
+              },
+              {
+                "h": "Kiểm tra nhiều trang",
+                "x": "Xem trang đầu, giữa và cuối. Đảm bảo chữ, dấu, chữ ký, số trang và mép lệch không bị cắt."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "crop-pdf",
+            "x": "Cắt PDF đã quét ngay trong tab. Miễn phí, không đăng ký, không hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Cắt lề và các chỉnh sửa PDF khác"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục tiêu",
+              "Công cụ phù hợp",
+              "Kết quả"
+            ],
+            "rows": [
+              [
+                "Thu hẹp lề hiển thị",
+                "Crop PDF",
+                "Vùng trang hiển thị mới"
+              ],
+              [
+                "Xóa hẳn một trang",
+                "Delete Pages",
+                "Bản sao bỏ trang đã chọn"
+              ],
+              [
+                "Ẩn chữ mật",
+                "Redact PDF",
+                "Quy trình biên tập phù hợp"
+              ],
+              [
+                "Đổi thứ tự trang",
+                "Organize PDF",
+                "Các trang giữ nguyên, đổi thứ tự"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Điều gì thay đổi khi cắt PDF quét"
+          },
+          {
+            "t": "p",
+            "x": "Trong bản quét, mép tối có thể rộng khác nhau giữa các tờ. Thiết lập chung tiết kiệm thời gian khi trang thẳng, nhưng có thể cắt nội dung nếu giấy xê dịch, quét nghiêng hoặc khác khổ. Hãy kiểm tra mẫu trước khi áp dụng toàn bộ. Nếu mỗi tờ cần ranh giới riêng, ưu tiên giữ đủ nội dung hơn là làm lề giống hệt nhau."
+          },
+          {
+            "t": "h2",
+            "x": "Cắt lề không cải thiện chất lượng bản quét"
+          },
+          {
+            "t": "p",
+            "x": "Cắt lề đổi ranh giới trang hiển thị, không đổi ảnh quét gốc hay chất lượng. Thao tác không làm thẳng trang nghiêng, không làm rõ chữ mờ và không khôi phục chi tiết đã mất. Nếu bản quét khó đọc, hãy quét lại hoặc dùng [OCR PDF](/tools/ocr-pdf) tạo lớp chữ có thể tìm kiếm. Kiểm tra kết quả vì OCR có thể nhầm chữ, số và ký hiệu."
+          },
+          {
+            "t": "h2",
+            "x": "Cắt lề không xóa nội dung riêng tư"
+          },
+          {
+            "t": "p",
+            "x": "Cắt lề không xóa nội dung ngoài vùng hiển thị. Trình đọc khác có thể hiện hoặc khôi phục phần đó. Đừng dùng cắt lề để giấu tên, số tài khoản hay dữ liệu riêng tư. Dùng [Redact PDF](/tools/redact-pdf) để xóa thông tin mật và xác minh kết quả. Xóa thuộc tính tài liệu là việc riêng; dùng [Remove Metadata](/tools/remove-metadata) nếu chính sách yêu cầu."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra mép trước khi in"
+          },
+          {
+            "t": "p",
+            "x": "Để in đồng đều, kiểm tra trang đầu, giữa, cuối và các trang có dấu hoặc chữ ký sát mép. Với tệp quét nhiều khổ, cắt theo nhóm có thể tốt hơn. Hãy in thử để chắc rằng ghi chú viết tay, đường bảng, số trang và chữ gần mép vẫn nguyên vẹn."
+          },
+          {
+            "t": "h2",
+            "x": "Xử lý bản quét riêng tư trong trình duyệt"
+          },
+          {
+            "t": "p",
+            "x": "Xử lý cục bộ trong trình duyệt tránh tải bản quét lên cho bước chỉnh đơn giản này; tệp được xử lý ngay trong tab. Bản quét có thể chứa hồ sơ y tế, biểu mẫu, hóa đơn hoặc hồ sơ vụ việc. Kiểm tra nội dung và nơi nhận trước khi chia sẻ. Giữ bản gốc và mở PDF mới để kiểm tra hướng, trang và độ đọc. Nếu cần ghép tài liệu, dùng [Gộp PDF](/tools/merge-pdf) sau khi xem từng phần."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Có thể cắt mọi trang quét bằng cùng thiết lập không?",
+            "a": "Có nếu các trang thẳng và lề tương tự. Hãy thử trước và kiểm tra trang lệch hoặc khác khổ."
+          },
+          {
+            "q": "Cắt PDF quét có cải thiện chất lượng không?",
+            "a": "Không. Thao tác bỏ mép hoặc giấy thừa nhìn thấy, nhưng không tăng độ phân giải hay làm rõ chữ mờ."
+          },
+          {
+            "q": "Cắt lề có xóa thông tin ngoài vùng hiển thị không?",
+            "a": "Không. Nội dung có thể còn trong tệp. Hãy dùng Redact PDF để xóa thông tin mật và kiểm tra kết quả."
+          },
+          {
+            "q": "Làm sao để tìm kiếm chữ trong bản quét đã cắt?",
+            "a": "Dùng OCR PDF tạo lớp chữ rồi kiểm tra nhận dạng vì bản quét có thể khiến OCR nhầm ký tự."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "locale": "zh-CN",
+    "guides": [
+      {
+        "topic": "crop-scanned-pdf-pages",
+        "slug": "crop-scanned-pdf-pages",
+        "title": "如何裁剪扫描版 PDF 页面",
+        "metaTitle": "如何裁剪扫描版 PDF 页面",
+        "metaDescription": "免费裁剪扫描版 PDF 页面。在浏览器中私密调整扫描边缘和页边距，无需注册，没有水印，打印前可预览。",
+        "keyword": "裁剪扫描版 PDF 页面",
+        "secondaryKeywords": [
+          "裁剪扫描版 PDF 页面",
+          "免费裁剪扫描页面",
+          "裁剪扫描黑边"
+        ],
+        "answer": "裁剪扫描版 PDF 页面时，设置边界以去掉扫描仪黑边，检查倾斜或偏移的页面，并另存副本。裁剪能改善外观，但不会提高扫描清晰度，也不会删除可见区域以外的信息。",
+        "tool": "crop-pdf",
+        "ctaLabel": "裁剪扫描页面",
+        "body": [
+          {
+            "t": "p",
+            "x": "扫描版 PDF 常有扫描仪黑边、不均匀的页边距或纸张多余边缘。裁剪可调整可见页面区域，让打印或分享的文档更整洁。PrintxPDF 在浏览器标签页中完成此操作。请保留原件：裁剪只调整外观，不会删除隐私内容。"
+          },
+          {
+            "t": "h2",
+            "x": "如何在浏览器中裁剪扫描版 PDF 页面"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留原始扫描件",
+                "x": "调整页面前复制 PDF 或保留源文件。裁剪不会提升扫描图像质量。"
+              },
+              {
+                "h": "打开 Crop PDF",
+                "x": "在浏览器中将副本添加到 [Crop PDF](/tools/crop-pdf)。"
+              },
+              {
+                "h": "调整裁剪边界",
+                "x": "设置边界以去掉黑边和多余纸张。若页面有偏移，请检查是否需要逐页调整。"
+              },
+              {
+                "h": "应用并下载",
+                "x": "生成新的裁剪版 PDF，并用清晰文件名与原扫描件区分。"
+              },
+              {
+                "h": "检查不同页面",
+                "x": "查看开头、中间和结尾页面，确认文字、印章、签名、页码和倾斜边缘没有被切掉。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "crop-pdf",
+            "x": "在当前标签页裁剪扫描版 PDF。免费，无需注册，没有水印。"
+          },
+          {
+            "t": "h2",
+            "x": "裁剪与其他 PDF 操作的区别"
+          },
+          {
+            "t": "table",
+            "head": [
+              "目标",
+              "适用工具",
+              "结果"
+            ],
+            "rows": [
+              [
+                "缩小可见页边距",
+                "Crop PDF",
+                "新的可见页面区域"
+              ],
+              [
+                "删除整页",
+                "Delete Pages",
+                "移除所选页面的副本"
+              ],
+              [
+                "隐藏机密文字",
+                "Redact PDF",
+                "正确的涂黑处理流程"
+              ],
+              [
+                "调整页面顺序",
+                "Organize PDF",
+                "相同页面重新排序"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "裁剪扫描版 PDF 会改变什么"
+          },
+          {
+            "t": "p",
+            "x": "扫描件每页的黑边宽度可能不同。页面对齐时，统一设置能节省时间；若纸张移动、扫描倾斜或尺寸不同，统一裁剪可能切掉内容。应用到整份文件前先检查样页。如果每页需要不同边界，应优先保留内容，而不是追求边距完全一致。"
+          },
+          {
+            "t": "h2",
+            "x": "裁剪不会提升扫描质量"
+          },
+          {
+            "t": "p",
+            "x": "裁剪改变阅读器显示的页面边界，不改变原始扫描图像或其质量。它不能矫正倾斜页面、让模糊文字变清晰，也不能恢复缺失细节。扫描件难以阅读时，请重新扫描，或用 [OCR PDF](/tools/ocr-pdf) 创建可搜索文字层。请核对识别结果，OCR 可能混淆字母、数字和符号。"
+          },
+          {
+            "t": "h2",
+            "x": "裁剪不会删除隐私内容"
+          },
+          {
+            "t": "p",
+            "x": "裁剪不会删除可见范围以外的内容。其他阅读器仍可能显示或提取这些部分。不要用裁剪隐藏姓名、账号或其他隐私信息。请用 [Redact PDF](/tools/redact-pdf) 删除机密内容并核验输出。清理文档属性是另一项操作；如政策要求，可使用 [Remove Metadata](/tools/remove-metadata)。"
+          },
+          {
+            "t": "h2",
+            "x": "打印前检查页面边缘"
+          },
+          {
+            "t": "p",
+            "x": "为保证打印效果一致，请检查开头、中间和结尾页面，尤其是靠近页边的印章或签名。尺寸不同的扫描页可分组裁剪。先试印，确认手写笔记、表格线、页码和靠近边缘的文字都保留。"
+          },
+          {
+            "t": "h2",
+            "x": "在浏览器中处理隐私扫描件"
+          },
+          {
+            "t": "p",
+            "x": "浏览器本地裁剪无需为简单调整上传扫描件，文件在当前标签页处理。扫描内容可能包括病历、表格、发票或案件记录。分享前检查可见内容和收件人。请保留源文件，打开新 PDF 检查方向、页数和可读性。若之后要合并文档，请先逐份检查，再用[合并 PDF](/tools/merge-pdf)。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "可以用同一设置裁剪所有扫描页吗？",
+            "a": "可以，前提是页面对齐且边距相近。请先试裁，并检查偏移或尺寸不同的页面。"
+          },
+          {
+            "q": "裁剪扫描版 PDF 会提高画质吗？",
+            "a": "不会。它只能去掉可见黑边或多余纸张，不能提升分辨率或让模糊文字变清楚。"
+          },
+          {
+            "q": "裁剪会删除边界外的信息吗？",
+            "a": "不会。信息可能仍保留在文件中。请用 Redact PDF 删除机密内容并检查结果。"
+          },
+          {
+            "q": "如何让裁剪后的扫描件可以搜索？",
+            "a": "使用 OCR PDF 添加文字层，并检查识别结果，因为扫描图像可能导致字符识别错误。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      }
+    ]
+  }
+]
