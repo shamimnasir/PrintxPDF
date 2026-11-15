@@ -5998,6 +5998,162 @@
           "pdf-archive-naming-convention",
           "preserving-signed-pdfs"
         ]
+      },
+      {
+        "topic": "pdf-archive-migration-checklist",
+        "slug": "pdf-archive-migration-checklist",
+        "cluster": "archive-expansion",
+        "title": "Lista de control para migrar un archivo PDF",
+        "metaTitle": "Lista de control para migrar un archivo PDF",
+        "metaDescription": "Planifica una migración de archivo PDF con inventario, pruebas, validación y recuperación. Gratis y sin registro.",
+        "primaryKeyword": "lista de control migración archivo PDF",
+        "secondaryKeywords": [
+          "PDF archive migration plan",
+          "PDF preservation migration",
+          "validate migrated PDF files"
+        ],
+        "answer": "Para migrar un archivo PDF, inventaría los registros y sus ubicaciones, define requisitos de destino y retención, conserva una copia de seguridad recuperable, prueba una muestra y compara archivos antes y después. Revisa contenido, metadatos, permisos y capacidad de búsqueda; registra excepciones y valida que puedas restaurar los datos. PDF/A solo es necesario cuando lo exige la política o el destinatario, y convertir no sustituye un validador independiente.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Una migración de archivo es más que copiar PDFs a otra carpeta o servicio. Debes conservar el contexto, confirmar que cada archivo llegó completo y comprobar que sigue siendo legible y accesible. Antes de mover registros, define el alcance, el sistema de destino, las reglas de retención y quién aprobará el resultado. Mantén los originales y una copia de seguridad recuperable hasta que la migración pase los controles y se documente la aceptación."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo migrar un archivo PDF con controles"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Inventaría y clasifica",
+                "x": "Registra recuento, ubicación, formato, metadatos, restricciones y responsable de cada colección."
+              },
+              {
+                "h": "Define requisitos y mapa",
+                "x": "Confirma destino, acceso, retención, formatos requeridos, nombres y campos que deben conservarse."
+              },
+              {
+                "h": "Protege la fuente y prueba una muestra",
+                "x": "Haz una copia de seguridad verificada; migra primero un grupo representativo y documenta errores."
+              },
+              {
+                "h": "Migra y valida",
+                "x": "Compara recuentos y, cuando corresponda, checksums; abre archivos y revisa páginas, texto, metadatos y OCR."
+              },
+              {
+                "h": "Aprueba y conserva la reversión",
+                "x": "Registra excepciones, prueba la restauración, obtiene aprobación y retén la fuente según la política."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Revisa un PDF en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Controles de migración de archivos PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Control",
+              "Qué comprobar",
+              "Evidencia"
+            ],
+            "rows": [
+              [
+                "Inventario",
+                "Todos los registros y exclusiones están identificados.",
+                "Recuento conciliado y lista de excepciones."
+              ],
+              [
+                "Integridad",
+                "Las copias llegaron sin cambios inesperados.",
+                "Comparación de checksums con referencia confiable."
+              ],
+              [
+                "Legibilidad",
+                "Páginas, fuentes, imágenes y texto se muestran bien.",
+                "Muestra revisada y problemas documentados."
+              ],
+              [
+                "Acceso y búsqueda",
+                "Permisos, nombres e índice funcionan en el destino.",
+                "Pruebas con usuarios y consultas representativas."
+              ],
+              [
+                "Recuperación",
+                "Se puede restaurar la copia migrada o la fuente.",
+                "Prueba de restauración registrada."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Define qué debe conservarse antes de mover datos"
+          },
+          {
+            "t": "p",
+            "x": "Incluye no solo el archivo, sino también su identificador, relación con otros registros, fecha, metadatos, estado de firma, retención y controles de acceso. Aclara cómo se tratarán duplicados, archivos dañados, formatos obsoletos y documentos con adjuntos. Si cambian nombres o rutas, conserva una tabla de correspondencias para que los enlaces y referencias anteriores se puedan resolver."
+          },
+          {
+            "t": "h2",
+            "x": "Prueba con una muestra y compara resultados"
+          },
+          {
+            "t": "p",
+            "x": "Selecciona registros de distintos años, tamaños, fuentes y complejidad, incluidos escaneos, formularios y PDFs firmados. Compara el número de páginas, el orden, el diseño y la legibilidad de texto pequeño. Usa checksums cuando exista un valor de referencia fiable; volver a calcular un checksum sin valor previo no demuestra igualdad. Registra errores y decide cómo resolverlos antes de migrar el resto."
+          },
+          {
+            "t": "h2",
+            "x": "Trata PDF/A como requisito específico, no como sustituto de la migración"
+          },
+          {
+            "t": "p",
+            "x": "Si el archivo receptor pide PDF/A, confirma el perfil requerido y prueba el efecto en copias. [PDF a PDF/A](/tools/pdf-to-pdfa) vuelve a construir cada página en un servidor y elimina el archivo después del trabajo; la herramienta no ejecuta un validador independiente. Revisa visualmente el resultado y usa un verificador PDF/A aparte si la política requiere un informe. Conserva el original, sobre todo si contiene firmas o formularios."
+          },
+          {
+            "t": "h2",
+            "x": "Cierra la migración con aprobación y plan de recuperación"
+          },
+          {
+            "t": "p",
+            "x": "Verifica permisos, búsqueda, metadatos, enlaces, exportación y restauración en el nuevo entorno. Registra quién revisó los resultados, la fecha, las excepciones y la decisión de aceptación. No elimines la fuente ni retires el backup solo porque la carga terminó; sigue el calendario de conservación y el procedimiento de reversión aprobado. Haz una nueva revisión cuando cambien el sistema o los requisitos."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué debo comprobar en una migración de archivos PDF?",
+            "a": "Compara inventario, número de archivos, integridad, legibilidad, metadatos, permisos, búsqueda y capacidad de restauración. Documenta exclusiones, errores y aprobación."
+          },
+          {
+            "q": "¿Debo convertir todos mis PDFs a PDF/A durante la migración?",
+            "a": "No necesariamente. Convierte cuando lo exija la política o el destinatario. Confirma el perfil, revisa el resultado y usa un validador independiente si se requiere prueba de conformidad."
+          },
+          {
+            "q": "¿Un checksum confirma que la migración fue correcta?",
+            "a": "Solo si se compara con un checksum de origen confiable. Un valor recién calculado no demuestra que la copia coincida con el original."
+          },
+          {
+            "q": "¿Cuándo puedo eliminar los archivos del sistema anterior?",
+            "a": "Solo después de validar el destino, probar la recuperación y obtener aprobación según la política de retención y el plan de reversión."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "pdf-to-pdfa",
+          "create-zip",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist"
+        ]
       }
     ]
   },
@@ -11990,6 +12146,162 @@
           "pdf-archive-naming-convention",
           "preserving-signed-pdfs"
         ]
+      },
+      {
+        "topic": "pdf-archive-migration-checklist",
+        "slug": "pdf-archive-migration-checklist",
+        "cluster": "archive-expansion",
+        "title": "Checklist para migração de arquivo PDF",
+        "metaTitle": "Checklist para migração de arquivo PDF",
+        "metaDescription": "Planeje a migração de PDFs com inventário, testes, validação e recuperação. Grátis, privado no navegador e sem cadastro, com etapas práticas.",
+        "primaryKeyword": "checklist migração arquivo PDF",
+        "secondaryKeywords": [
+          "PDF archive migration plan",
+          "PDF preservation migration",
+          "validate migrated PDF files"
+        ],
+        "answer": "Para migrar um arquivo PDF, inventarie registros e locais, defina requisitos do destino e de retenção, mantenha um backup recuperável, teste uma amostra e compare os arquivos antes e depois. Confira conteúdo, metadados, permissões e capacidade de busca; registre exceções e valide a restauração. PDF/A só é necessário quando exigido pela política ou pelo destinatário, e a conversão não substitui um validador independente.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Migrar um arquivo é mais do que copiar PDFs para outra pasta ou serviço. É preciso preservar o contexto, confirmar que cada arquivo chegou completo e verificar se continua legível e acessível. Antes de mover registros, defina escopo, sistema de destino, regras de retenção e quem aprovará o resultado. Mantenha os originais e um backup recuperável até que os controles sejam aprovados e a aceitação documentada."
+          },
+          {
+            "t": "h2",
+            "x": "Como migrar um arquivo PDF com controles"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Faça o inventário e classifique",
+                "x": "Registre quantidade, local, formato, metadados, restrições e responsável por cada coleção."
+              },
+              {
+                "h": "Defina requisitos e mapeamento",
+                "x": "Confirme destino, acesso, retenção, formatos exigidos, nomes e campos que precisam ser mantidos."
+              },
+              {
+                "h": "Proteja a fonte e teste uma amostra",
+                "x": "Faça um backup verificado; migre primeiro um grupo representativo e registre erros."
+              },
+              {
+                "h": "Migre e valide",
+                "x": "Compare quantidades e, quando adequado, checksums; abra arquivos e confira páginas, texto, metadados e OCR."
+              },
+              {
+                "h": "Aprove e mantenha a reversão",
+                "x": "Registre exceções, teste a restauração, obtenha aprovação e retenha a fonte conforme a política."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Confira um PDF na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Controles para migração de arquivos PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Controle",
+              "O que verificar",
+              "Evidência"
+            ],
+            "rows": [
+              [
+                "Inventário",
+                "Todos os registros e exclusões estão identificados.",
+                "Quantidade conciliada e lista de exceções."
+              ],
+              [
+                "Integridade",
+                "As cópias chegaram sem alterações inesperadas.",
+                "Comparação de checksum com referência confiável."
+              ],
+              [
+                "Legibilidade",
+                "Páginas, fontes, imagens e texto estão corretos.",
+                "Amostra revisada e problemas documentados."
+              ],
+              [
+                "Acesso e busca",
+                "Permissões, nomes e índice funcionam no destino.",
+                "Testes com usuários e consultas representativas."
+              ],
+              [
+                "Recuperação",
+                "É possível restaurar a cópia migrada ou a fonte.",
+                "Teste de restauração registrado."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Defina o que deve ser preservado antes de mover"
+          },
+          {
+            "t": "p",
+            "x": "Inclua o arquivo e também seu identificador, relação com outros registros, data, metadados, estado da assinatura, retenção e controles de acesso. Defina como tratar duplicados, arquivos danificados, formatos antigos e documentos com anexos. Se nomes ou caminhos mudarem, mantenha uma tabela de correspondência para resolver referências antigas."
+          },
+          {
+            "t": "h2",
+            "x": "Teste uma amostra e compare os resultados"
+          },
+          {
+            "t": "p",
+            "x": "Escolha registros de vários anos, tamanhos, origens e níveis de complexidade, incluindo digitalizações, formulários e PDFs assinados. Compare número e ordem das páginas, layout e leitura de letras pequenas. Use checksums quando houver um valor de referência confiável; recalcular sem valor anterior não prova igualdade. Registre erros e defina a correção antes de migrar o restante."
+          },
+          {
+            "t": "h2",
+            "x": "Trate PDF/A como requisito específico, não como substituto da migração"
+          },
+          {
+            "t": "p",
+            "x": "Se o arquivo receptor exigir PDF/A, confirme o perfil e teste o efeito em cópias. [PDF para PDF/A](/tools/pdf-to-pdfa) reconstrói cada página em um servidor e exclui o arquivo ao fim do trabalho; a ferramenta não executa um validador independente. Confira visualmente e use um verificador PDF/A separado se a política exigir relatório. Preserve o original, especialmente quando houver assinaturas ou formulários."
+          },
+          {
+            "t": "h2",
+            "x": "Conclua com aprovação e plano de recuperação"
+          },
+          {
+            "t": "p",
+            "x": "Verifique permissões, buscas, metadados, links, exportação e restauração no novo ambiente. Registre revisores, data, exceções e decisão de aceite. Não apague a fonte nem encerre o backup só porque a cópia terminou; siga o calendário de retenção e o processo de reversão aprovado. Faça nova revisão quando sistemas ou requisitos mudarem."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "O que conferir na migração de arquivos PDF?",
+            "a": "Compare inventário, quantidade, integridade, leitura, metadados, permissões, busca e possibilidade de restauração. Documente exclusões, erros e aprovação."
+          },
+          {
+            "q": "Devo converter todos os PDFs para PDF/A durante a migração?",
+            "a": "Não necessariamente. Converta quando a política ou o destinatário exigir. Confirme o perfil, revise o resultado e use verificador independente quando for preciso comprovar conformidade."
+          },
+          {
+            "q": "Um checksum confirma que a migração deu certo?",
+            "a": "Somente se comparado com um checksum de origem confiável. Um valor calculado agora não prova que a cópia corresponde ao original."
+          },
+          {
+            "q": "Quando posso excluir os arquivos do sistema antigo?",
+            "a": "Depois de validar o destino, testar a recuperação e obter aprovação conforme a política de retenção e o plano de reversão."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "pdf-to-pdfa",
+          "create-zip",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist"
+        ]
       }
     ]
   },
@@ -17981,6 +18293,162 @@
           "document-retention-handoff-checklist",
           "pdf-archive-naming-convention",
           "preserving-signed-pdfs"
+        ]
+      },
+      {
+        "topic": "pdf-archive-migration-checklist",
+        "slug": "pdf-archive-migration-checklist",
+        "cluster": "archive-expansion",
+        "title": "PDF आर्काइव माइग्रेशन चेकलिस्ट",
+        "metaTitle": "PDF आर्काइव माइग्रेशन चेकलिस्ट",
+        "metaDescription": "PDF आर्काइव माइग्रेशन के लिए सूची, परीक्षण, सत्यापन और रिकवरी योजना बनाएँ। मुफ़्त, निजी ब्राउज़र में और बिना साइनअप के।",
+        "primaryKeyword": "PDF आर्काइव माइग्रेशन चेकलिस्ट",
+        "secondaryKeywords": [
+          "PDF archive migration plan",
+          "PDF preservation migration",
+          "validate migrated PDF files"
+        ],
+        "answer": "PDF आर्काइव माइग्रेट करने के लिए रिकॉर्ड और स्थानों की सूची बनाएँ, लक्ष्य प्रणाली व प्रतिधारण आवश्यकताएँ तय करें, पुनर्स्थापित किया जा सकने वाला बैकअप रखें, नमूना माइग्रेट करें और पहले-बाद की फ़ाइलें मिलाएँ। सामग्री, मेटाडेटा, अनुमतियाँ और खोज जाँचें; अपवाद दर्ज करें और रिकवरी सत्यापित करें। PDF/A तभी जरूरी है जब नीति या प्राप्तकर्ता कहे; कन्वर्ज़न स्वतंत्र वैलिडेटर का विकल्प नहीं।",
+        "body": [
+          {
+            "t": "p",
+            "x": "आर्काइव माइग्रेशन केवल PDFs को दूसरे फ़ोल्डर या सेवा में कॉपी करना नहीं है। संदर्भ सुरक्षित रखना, हर फ़ाइल पूरी पहुँची या नहीं देखना और पढ़ने व पहुँच की जाँच करना जरूरी है। रिकॉर्ड ले जाने से पहले दायरा, लक्ष्य प्रणाली, प्रतिधारण नियम और परिणाम मंजूर करने वाला व्यक्ति तय करें। सभी जाँच और स्वीकृति दर्ज होने तक मूल फ़ाइलें और बहाल किया जा सकने वाला बैकअप रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "नियंत्रण के साथ PDF आर्काइव कैसे माइग्रेट करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "सूची बनाएँ और वर्गीकृत करें",
+                "x": "हर संग्रह की संख्या, स्थान, फ़ॉर्मेट, मेटाडेटा, प्रतिबंध और जिम्मेदार व्यक्ति दर्ज करें।"
+              },
+              {
+                "h": "आवश्यकताएँ और मैपिंग तय करें",
+                "x": "लक्ष्य, पहुँच, प्रतिधारण, जरूरी फ़ॉर्मेट, नाम और बचाए जाने वाले फ़ील्ड की पुष्टि करें।"
+              },
+              {
+                "h": "स्रोत सुरक्षित कर नमूना जाँचें",
+                "x": "सत्यापित बैकअप लें; पहले प्रतिनिधि समूह माइग्रेट कर समस्याएँ दर्ज करें।"
+              },
+              {
+                "h": "माइग्रेट करें और वैलिडेट करें",
+                "x": "गिनती और जरूरत पर चेकसम मिलाएँ; फ़ाइलें खोलकर पेज, टेक्स्ट, मेटाडेटा और OCR देखें।"
+              },
+              {
+                "h": "स्वीकृति लें और वापसी योजना रखें",
+                "x": "अपवाद लिखें, रिकवरी परीक्षण करें, मंजूरी लें और नीति के अनुसार स्रोत सुरक्षित रखें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "अपने टैब में PDF जाँचें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF आर्काइव माइग्रेशन नियंत्रण"
+          },
+          {
+            "t": "table",
+            "head": [
+              "नियंत्रण",
+              "क्या जाँचें",
+              "प्रमाण"
+            ],
+            "rows": [
+              [
+                "सूची",
+                "सभी रिकॉर्ड और अपवर्जन पहचाने गए।",
+                "मिली हुई कुल संख्या और अपवाद सूची।"
+              ],
+              [
+                "अखंडता",
+                "कॉपी में अनपेक्षित बदलाव नहीं।",
+                "भरोसेमंद संदर्भ से चेकसम तुलना।"
+              ],
+              [
+                "पठनीयता",
+                "पेज, फ़ॉन्ट, चित्र और टेक्स्ट सही हैं।",
+                "देखा गया नमूना और दर्ज समस्याएँ।"
+              ],
+              [
+                "पहुँच और खोज",
+                "अनुमति, नाम व इंडेक्स नए सिस्टम में काम करें।",
+                "उपयोगकर्ता और खोज परीक्षण।"
+              ],
+              [
+                "रिकवरी",
+                "माइग्रेटेड कॉपी या स्रोत लौटाया जा सके।",
+                "दर्ज बहाली परीक्षण।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "स्थानांतरण से पहले तय करें कि क्या सुरक्षित रखना है"
+          },
+          {
+            "t": "p",
+            "x": "फ़ाइल के साथ उसका पहचान नंबर, दूसरे रिकॉर्ड से संबंध, तारीख, मेटाडेटा, हस्ताक्षर स्थिति, प्रतिधारण और पहुँच नियंत्रण भी रखें। डुप्लिकेट, खराब फ़ाइल, पुराने फ़ॉर्मेट और अटैचमेंट वाले दस्तावेज़ों का तरीका तय करें। नाम या पाथ बदलें तो पुरानी संदर्भ कड़ियाँ ढूँढने के लिए मैपिंग तालिका रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "नमूना जाँचें और परिणामों की तुलना करें"
+          },
+          {
+            "t": "p",
+            "x": "अलग वर्षों, आकारों, स्रोतों और जटिलता वाले रिकॉर्ड चुनें, जिनमें स्कैन, फ़ॉर्म और हस्ताक्षरित PDF शामिल हों। पेज संख्या, क्रम, लेआउट और छोटे टेक्स्ट की पठनीयता मिलाएँ। चेकसम तभी उपयोगी है जब भरोसेमंद पहले से दर्ज मान हो; नया मान बनाना समानता सिद्ध नहीं करता। त्रुटियाँ दर्ज कर बाकी स्थानांतरित करने से पहले उनका समाधान तय करें।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF/A को विशेष आवश्यकता मानें, माइग्रेशन का विकल्प नहीं"
+          },
+          {
+            "t": "p",
+            "x": "यदि संग्रह प्राप्तकर्ता PDF/A माँगता है, तो प्रोफ़ाइल की पुष्टि करें और कॉपी पर प्रभाव जाँचें। [PDF to PDF/A](/tools/pdf-to-pdfa) सर्वर पर पेज दोबारा बनाता है और काम के बाद फ़ाइल हटाता है; यह अलग वैलिडेटर नहीं चलाता। दृश्य जाँच करें और नीति में रिपोर्ट चाहिए तो स्वतंत्र PDF/A चेकर चलाएँ। मूल सुरक्षित रखें, खासकर हस्ताक्षर या फ़ॉर्म वाले दस्तावेज़।"
+          },
+          {
+            "t": "h2",
+            "x": "स्वीकृति और रिकवरी योजना के साथ माइग्रेशन बंद करें"
+          },
+          {
+            "t": "p",
+            "x": "नए सिस्टम में अनुमतियाँ, खोज, मेटाडेटा, लिंक, निर्यात और बहाली जाँचें। समीक्षक, तारीख, अपवाद और स्वीकृति निर्णय दर्ज करें। केवल अपलोड पूरा होने पर स्रोत या बैकअप न हटाएँ; प्रतिधारण और स्वीकृत वापसी प्रक्रिया का पालन करें। सिस्टम या आवश्यकताएँ बदलें तो फिर समीक्षा करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF आर्काइव माइग्रेशन में क्या जाँचें?",
+            "a": "सूची, फ़ाइलों की संख्या, अखंडता, पठनीयता, मेटाडेटा, पहुँच, खोज और बहाली जाँचें। अपवर्जन, त्रुटि और मंजूरी दर्ज करें।"
+          },
+          {
+            "q": "क्या माइग्रेशन में सभी PDFs को PDF/A में बदलना चाहिए?",
+            "a": "जरूरी नहीं। नीति या प्राप्तकर्ता माँगे तभी बदलें। प्रोफ़ाइल की पुष्टि करें, परिणाम देखें और अनुरूपता प्रमाण चाहिए तो स्वतंत्र वैलिडेटर चलाएँ।"
+          },
+          {
+            "q": "क्या चेकसम सही माइग्रेशन साबित करता है?",
+            "a": "केवल तभी जब भरोसेमंद स्रोत चेकसम से तुलना की जाए। अभी बनाया गया मान यह नहीं बताता कि कॉपी मूल से मेल खाती है।"
+          },
+          {
+            "q": "पुराने सिस्टम की फ़ाइलें कब हटाई जा सकती हैं?",
+            "a": "लक्ष्य जाँचने, रिकवरी आज़माने और प्रतिधारण नीति व वापसी योजना के अनुसार मंजूरी मिलने के बाद ही।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "pdf-to-pdfa",
+          "create-zip",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
@@ -23982,6 +24450,162 @@
           "document-retention-handoff-checklist",
           "pdf-archive-naming-convention",
           "preserving-signed-pdfs"
+        ]
+      },
+      {
+        "topic": "pdf-archive-migration-checklist",
+        "slug": "pdf-archive-migration-checklist",
+        "cluster": "archive-expansion",
+        "title": "قائمة ترحيل أرشيف PDF",
+        "metaTitle": "قائمة ترحيل أرشيف PDF",
+        "metaDescription": "خطط لترحيل أرشيف PDF بجرد واختبارات وتحقق واستعادة. إرشادات عملية مجانية وخاصة في المتصفح، بلا تسجيل أو علامة مائية.",
+        "primaryKeyword": "قائمة ترحيل أرشيف PDF",
+        "secondaryKeywords": [
+          "PDF archive migration plan",
+          "PDF preservation migration",
+          "validate migrated PDF files"
+        ],
+        "answer": "لترحيل أرشيف PDF، احصر السجلات ومواقعها، وحدد متطلبات الوجهة والاحتفاظ، واحتفظ بنسخة احتياطية قابلة للاستعادة، واختبر عينة وقارن الملفات قبل النقل وبعده. راجع المحتوى والبيانات الوصفية والصلاحيات والبحث، وسجل الاستثناءات واختبر الاستعادة. لا يلزم PDF/A إلا إذا طلبته السياسة أو الجهة المستلمة؛ والتحويل لا يغني عن مدقق مستقل.",
+        "body": [
+          {
+            "t": "p",
+            "x": "ترحيل الأرشيف ليس مجرد نسخ ملفات PDF إلى مجلد أو خدمة أخرى. يجب حفظ السياق والتأكد من اكتمال كل ملف وفحص وضوحه وإمكانية الوصول إليه. قبل نقل السجلات حدد النطاق والنظام المستهدف وقواعد الاحتفاظ ومن سيعتمد النتيجة. احتفظ بالأصول وبنسخة احتياطية قابلة للاستعادة حتى اجتياز الضوابط وتوثيق القبول."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية ترحيل أرشيف PDF بضوابط"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "أنشئ جرداً وصنف السجلات",
+                "x": "سجل العدد والموقع والتنسيق والبيانات الوصفية والقيود والمسؤول عن كل مجموعة."
+              },
+              {
+                "h": "حدد المتطلبات وخريطة المطابقة",
+                "x": "أكد الوجهة والوصول والاحتفاظ والتنسيقات المطلوبة والأسماء والحقول التي يجب حفظها."
+              },
+              {
+                "h": "احم المصدر واختبر عينة",
+                "x": "أنشئ نسخة احتياطية تم التحقق منها؛ وانقل مجموعة ممثلة أولاً وسجل المشكلات."
+              },
+              {
+                "h": "رحّل وتحقق",
+                "x": "قارن الأعداد والبصمات عند الحاجة؛ وافتح الملفات وافحص الصفحات والنص والبيانات الوصفية وOCR."
+              },
+              {
+                "h": "اعتمد النتيجة واحتفظ بخطة رجوع",
+                "x": "سجل الاستثناءات واختبر الاستعادة واحصل على الموافقة واحتفظ بالمصدر وفق السياسة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "راجع PDF في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "ضوابط ترحيل أرشيف PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الضابط",
+              "ما الذي تفحصه؟",
+              "الدليل"
+            ],
+            "rows": [
+              [
+                "الجرد",
+                "تحديد كل السجلات والاستثناءات.",
+                "عدد مطابق وقائمة استثناءات."
+              ],
+              [
+                "السلامة",
+                "عدم وجود تغييرات غير متوقعة في النسخ.",
+                "مقارنة البصمات بقيمة مرجعية موثوقة."
+              ],
+              [
+                "الوضوح",
+                "ظهور الصفحات والخطوط والصور والنص بشكل صحيح.",
+                "عينة مفحوصة ومشكلات موثقة."
+              ],
+              [
+                "الوصول والبحث",
+                "عمل الصلاحيات والأسماء والفهرس في الوجهة.",
+                "اختبارات المستخدمين وعمليات البحث."
+              ],
+              [
+                "الاستعادة",
+                "إمكان استعادة النسخة المرحلة أو المصدر.",
+                "اختبار استعادة موثق."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "حدد ما يجب حفظه قبل النقل"
+          },
+          {
+            "t": "p",
+            "x": "احفظ مع الملف معرفه وعلاقته بالسجلات الأخرى وتاريخه وبياناته الوصفية وحالة التوقيع والاحتفاظ وضوابط الوصول. حدد معالجة التكرارات والملفات التالفة والتنسيقات القديمة والوثائق ذات المرفقات. إذا تغيرت الأسماء أو المسارات، احتفظ بجدول مطابقة لحل الروابط والمراجع السابقة."
+          },
+          {
+            "t": "h2",
+            "x": "اختبر عينة وقارن النتائج"
+          },
+          {
+            "t": "p",
+            "x": "اختر سجلات من سنوات وأحجام ومصادر ومستويات تعقيد مختلفة، بما فيها المسح والنماذج وملفات PDF الموقعة. قارن عدد الصفحات وترتيبها والتصميم ووضوح النص الصغير. استخدم البصمات عند توفر قيمة مرجعية موثوقة؛ فحساب قيمة جديدة دون سابقة لا يثبت التطابق. سجل الأخطاء وحدد معالجتها قبل ترحيل بقية الملفات."
+          },
+          {
+            "t": "h2",
+            "x": "تعامل مع PDF/A كمتطلب محدد لا بديلاً للترحيل"
+          },
+          {
+            "t": "p",
+            "x": "إذا طلبت جهة الأرشيف PDF/A، فأكد الملف التعريفي واختبر الأثر على نسخ. تعيد أداة [التحويل إلى PDF/A](/tools/pdf-to-pdfa) بناء كل صفحة على خادم وتحذف الملف بعد انتهاء المهمة؛ ولا تشغل مدققاً مستقلاً. افحص الناتج بصرياً واستخدم مدقق PDF/A منفصلاً إذا طلبت السياسة تقريراً. احتفظ بالأصل، خصوصاً إذا تضمن توقيعات أو نماذج."
+          },
+          {
+            "t": "h2",
+            "x": "اختم الترحيل بالموافقة وخطة الاستعادة"
+          },
+          {
+            "t": "p",
+            "x": "تحقق في البيئة الجديدة من الصلاحيات والبحث والبيانات الوصفية والروابط والتصدير والاستعادة. سجل المراجعين والتاريخ والاستثناءات وقرار القبول. لا تحذف المصدر أو توقف النسخة الاحتياطية لمجرد اكتمال النقل؛ اتبع جدول الاحتفاظ وإجراء الرجوع المعتمد. أعد المراجعة عند تغير النظام أو المتطلبات."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ما الذي يجب فحصه عند ترحيل أرشيف PDF؟",
+            "a": "قارن الجرد والعدد والسلامة والوضوح والبيانات الوصفية والصلاحيات والبحث وإمكانية الاستعادة. وثق الاستثناءات والأخطاء والموافقة."
+          },
+          {
+            "q": "هل أحول كل ملفات PDF إلى PDF/A أثناء الترحيل؟",
+            "a": "ليس بالضرورة. حوّل عندما تطلب السياسة أو الجهة المستلمة ذلك. أكد الملف التعريفي وافحص الناتج واستخدم مدققاً مستقلاً عند الحاجة إلى إثبات المطابقة."
+          },
+          {
+            "q": "هل تثبت البصمة الرقمية نجاح الترحيل؟",
+            "a": "فقط عند مقارنتها ببصمة مصدر موثوقة. القيمة المحسوبة حديثاً لا تثبت أن النسخة تطابق الأصل."
+          },
+          {
+            "q": "متى يمكن حذف ملفات النظام القديم؟",
+            "a": "بعد التحقق من الوجهة واختبار الاستعادة والحصول على الموافقة وفق سياسة الاحتفاظ وخطة الرجوع."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "pdf-to-pdfa",
+          "create-zip",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
@@ -29987,6 +30611,162 @@
           "pdf-archive-naming-convention",
           "preserving-signed-pdfs"
         ]
+      },
+      {
+        "topic": "pdf-archive-migration-checklist",
+        "slug": "pdf-archive-migration-checklist",
+        "cluster": "archive-expansion",
+        "title": "PDF আর্কাইভ মাইগ্রেশন চেকলিস্ট",
+        "metaTitle": "PDF আর্কাইভ মাইগ্রেশন চেকলিস্ট",
+        "metaDescription": "PDF আর্কাইভ স্থানান্তরে তালিকা, পরীক্ষা, যাচাই ও পুনরুদ্ধার পরিকল্পনা করুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত ও সাইনআপ ছাড়া।",
+        "primaryKeyword": "PDF আর্কাইভ মাইগ্রেশন চেকলিস্ট",
+        "secondaryKeywords": [
+          "PDF archive migration plan",
+          "PDF preservation migration",
+          "validate migrated PDF files"
+        ],
+        "answer": "PDF আর্কাইভ স্থানান্তরের আগে রেকর্ড ও অবস্থানের তালিকা করুন, গন্তব্য ও সংরক্ষণ শর্ত ঠিক করুন, পুনরুদ্ধারযোগ্য ব্যাকআপ রাখুন, নমুনা পরীক্ষা করুন এবং আগে-পরে ফাইল তুলনা করুন। বিষয়বস্তু, মেটাডেটা, অনুমতি ও অনুসন্ধান যাচাই করুন; ব্যতিক্রম লিখুন এবং পুনরুদ্ধার পরীক্ষা করুন। নীতি বা প্রাপক না চাইলে PDF/A বাধ্যতামূলক নয়; রূপান্তর স্বাধীন ভ্যালিডেটরের বিকল্প নয়।",
+        "body": [
+          {
+            "t": "p",
+            "x": "আর্কাইভ স্থানান্তর শুধু PDF অন্য ফোল্ডার বা সেবায় কপি করা নয়। প্রেক্ষাপট রাখতে, প্রতিটি ফাইল সম্পূর্ণ এসেছে কি না নিশ্চিত করতে এবং পাঠযোগ্যতা ও প্রবেশাধিকার পরীক্ষা করতে হয়। রেকর্ড সরানোর আগে পরিধি, গন্তব্য সিস্টেম, সংরক্ষণ নিয়ম ও ফল অনুমোদনকারী ঠিক করুন। সব যাচাই পাস ও গ্রহণযোগ্যতা নথিভুক্ত হওয়া পর্যন্ত মূল ও পুনরুদ্ধারযোগ্য ব্যাকআপ রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "নিয়ন্ত্রণসহ PDF আর্কাইভ কীভাবে স্থানান্তর করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "তালিকা ও শ্রেণিবিন্যাস করুন",
+                "x": "প্রতিটি সংগ্রহের সংখ্যা, অবস্থান, ফরম্যাট, মেটাডেটা, সীমাবদ্ধতা ও দায়িত্বপ্রাপ্ত ব্যক্তি লিখুন।"
+              },
+              {
+                "h": "শর্ত ও মানচিত্র ঠিক করুন",
+                "x": "গন্তব্য, প্রবেশাধিকার, সংরক্ষণ, প্রয়োজনীয় ফরম্যাট, নাম ও যে ক্ষেত্র রাখতে হবে নিশ্চিত করুন।"
+              },
+              {
+                "h": "উৎস রক্ষা করে নমুনা পরীক্ষা করুন",
+                "x": "যাচাইকৃত ব্যাকআপ নিন; আগে প্রতিনিধিত্বশীল একটি দল স্থানান্তর করে সমস্যা লিখুন।"
+              },
+              {
+                "h": "স্থানান্তর ও যাচাই করুন",
+                "x": "সংখ্যা এবং প্রয়োজন হলে চেকসাম তুলুন; ফাইল খুলে পৃষ্ঠা, লেখা, মেটাডেটা ও OCR দেখুন।"
+              },
+              {
+                "h": "অনুমোদন নিয়ে ফেরার ব্যবস্থা রাখুন",
+                "x": "ব্যতিক্রম লিখুন, পুনরুদ্ধার পরীক্ষা করুন, অনুমোদন নিন এবং নীতি অনুযায়ী উৎস রাখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "আপনার ট্যাবে PDF দেখুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF আর্কাইভ স্থানান্তরের নিয়ন্ত্রণ"
+          },
+          {
+            "t": "table",
+            "head": [
+              "নিয়ন্ত্রণ",
+              "কী যাচাই করবেন",
+              "প্রমাণ"
+            ],
+            "rows": [
+              [
+                "তালিকা",
+                "সব রেকর্ড ও বাদ পড়া বিষয় চিহ্নিত।",
+                "মেলানো মোট সংখ্যা ও ব্যতিক্রম তালিকা।"
+              ],
+              [
+                "অখণ্ডতা",
+                "কপিতে অপ্রত্যাশিত পরিবর্তন নেই।",
+                "বিশ্বস্ত রেফারেন্স মানের সঙ্গে চেকসাম তুলনা।"
+              ],
+              [
+                "পাঠযোগ্যতা",
+                "পৃষ্ঠা, ফন্ট, ছবি ও লেখা ঠিক আছে।",
+                "পরীক্ষিত নমুনা ও নথিভুক্ত সমস্যা।"
+              ],
+              [
+                "প্রবেশ ও অনুসন্ধান",
+                "গন্তব্যে অনুমতি, নাম ও সূচি কাজ করে।",
+                "ব্যবহারকারী ও নমুনা অনুসন্ধান পরীক্ষা।"
+              ],
+              [
+                "পুনরুদ্ধার",
+                "স্থানান্তরিত কপি বা উৎস ফিরিয়ে আনা যায়।",
+                "নথিভুক্ত পুনরুদ্ধার পরীক্ষা।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "সরানোর আগে কী রাখতে হবে তা ঠিক করুন"
+          },
+          {
+            "t": "p",
+            "x": "ফাইলের সঙ্গে পরিচিতি, অন্য রেকর্ডের সম্পর্ক, তারিখ, মেটাডেটা, স্বাক্ষরের অবস্থা, সংরক্ষণকাল ও প্রবেশ নিয়ন্ত্রণ রাখুন। ডুপ্লিকেট, নষ্ট ফাইল, পুরোনো ফরম্যাট ও সংযুক্তিসহ নথির নিয়ম স্থির করুন। নাম বা পাথ বদলালে পুরোনো লিংক ও রেফারেন্স খুঁজতে মিলের তালিকা রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "নমুনা পরীক্ষা করে ফল তুলনা করুন"
+          },
+          {
+            "t": "p",
+            "x": "বিভিন্ন বছর, আকার, উৎস ও জটিলতার রেকর্ড নিন; স্ক্যান, ফর্ম ও স্বাক্ষরিত PDF রাখুন। পৃষ্ঠা সংখ্যা, ক্রম, বিন্যাস ও ছোট লেখা মিলিয়ে দেখুন। বিশ্বস্ত আগের মান থাকলেই চেকসাম তুলুন; নতুন চেকসাম তৈরি সমতা প্রমাণ করে না। সমস্যা লিখে বাকি ফাইল সরানোর আগে সমাধান ঠিক করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF/A-কে নির্দিষ্ট শর্ত ভাবুন, মাইগ্রেশনের বিকল্প নয়"
+          },
+          {
+            "t": "p",
+            "x": "প্রাপক PDF/A চাইলে প্রোফাইল নিশ্চিত করুন এবং কপিতে প্রভাব পরীক্ষা করুন। [PDF to PDF/A](/tools/pdf-to-pdfa) সার্ভারে প্রতিটি পৃষ্ঠা পুনর্গঠন করে এবং কাজ শেষে ফাইল মুছে দেয়; এটি স্বাধীন ভ্যালিডেটর চালায় না। ফল দেখে নিন এবং নীতিতে রিপোর্ট চাইলে আলাদা PDF/A ভ্যালিডেটর নিন। মূল কপি রাখুন, বিশেষ করে স্বাক্ষর বা ফর্ম থাকলে।"
+          },
+          {
+            "t": "h2",
+            "x": "অনুমোদন ও পুনরুদ্ধার পরিকল্পনা দিয়ে শেষ করুন"
+          },
+          {
+            "t": "p",
+            "x": "নতুন পরিবেশে অনুমতি, অনুসন্ধান, মেটাডেটা, লিংক, রপ্তানি ও পুনরুদ্ধার পরীক্ষা করুন। পর্যালোচক, তারিখ, ব্যতিক্রম ও গ্রহণ সিদ্ধান্ত লিখুন। শুধু আপলোড শেষ হলেই উৎস বা ব্যাকআপ মুছবেন না; সংরক্ষণ ক্যালেন্ডার ও অনুমোদিত ফেরত প্রক্রিয়া মানুন। সিস্টেম বা শর্ত বদলালে আবার পর্যালোচনা করুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF আর্কাইভ মাইগ্রেশনে কী পরীক্ষা করব?",
+            "a": "তালিকা, ফাইল সংখ্যা, অখণ্ডতা, পাঠযোগ্যতা, মেটাডেটা, অনুমতি, অনুসন্ধান ও পুনরুদ্ধার তুলনা করুন। বাদ পড়া বিষয়, ত্রুটি ও অনুমোদন নথিভুক্ত করুন।"
+          },
+          {
+            "q": "মাইগ্রেশনে সব PDF কি PDF/A করতে হবে?",
+            "a": "না। নীতি বা প্রাপক চাইলে রূপান্তর করুন। প্রোফাইল নিশ্চিত, ফল পরীক্ষা এবং কনফরম্যান্স প্রমাণ দরকার হলে স্বাধীন ভ্যালিডেটর ব্যবহার করুন।"
+          },
+          {
+            "q": "চেকসাম কি মাইগ্রেশন ঠিক হয়েছে প্রমাণ করে?",
+            "a": "শুধু বিশ্বস্ত উৎসের চেকসামের সঙ্গে তুলনা করলে। নতুন করে গণনা করা মান কপি মূলের সমান প্রমাণ করে না।"
+          },
+          {
+            "q": "পুরোনো সিস্টেমের ফাইল কখন মুছতে পারি?",
+            "a": "গন্তব্য যাচাই, পুনরুদ্ধার পরীক্ষা এবং সংরক্ষণ নীতি ও ফেরত পরিকল্পনা অনুযায়ী অনুমোদনের পরে।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "pdf-to-pdfa",
+          "create-zip",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist"
+        ]
       }
     ]
   },
@@ -35978,6 +36758,162 @@
           "document-retention-handoff-checklist",
           "pdf-archive-naming-convention",
           "preserving-signed-pdfs"
+        ]
+      },
+      {
+        "topic": "pdf-archive-migration-checklist",
+        "slug": "pdf-archive-migration-checklist",
+        "cluster": "archive-expansion",
+        "title": "Danh sách kiểm tra di chuyển kho lưu trữ PDF",
+        "metaTitle": "Danh sách kiểm tra di chuyển kho lưu trữ PDF",
+        "metaDescription": "Lập kế hoạch di chuyển kho PDF với kiểm kê, thử nghiệm, xác minh và khôi phục. Miễn phí, không đăng ký.",
+        "primaryKeyword": "danh sách kiểm tra di chuyển lưu trữ PDF",
+        "secondaryKeywords": [
+          "PDF archive migration plan",
+          "PDF preservation migration",
+          "validate migrated PDF files"
+        ],
+        "answer": "Để di chuyển kho lưu trữ PDF, hãy kiểm kê hồ sơ và vị trí, xác định yêu cầu đích và thời hạn lưu, giữ bản sao lưu có thể phục hồi, thử một mẫu rồi so sánh tệp trước và sau. Kiểm tra nội dung, siêu dữ liệu, quyền truy cập và tìm kiếm; ghi nhận ngoại lệ và thử khôi phục. PDF/A chỉ cần khi chính sách hoặc bên nhận yêu cầu; chuyển đổi không thay thế công cụ xác thực độc lập.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Di chuyển kho lưu trữ không chỉ là sao chép PDF sang thư mục hay dịch vụ khác. Bạn cần giữ bối cảnh, xác nhận từng tệp đã chuyển đủ và kiểm tra khả năng đọc, truy cập. Trước khi chuyển hồ sơ, hãy xác định phạm vi, hệ thống đích, quy tắc lưu giữ và người phê duyệt kết quả. Giữ bản gốc cùng backup có thể phục hồi cho đến khi các bước kiểm soát đạt yêu cầu và được nghiệm thu."
+          },
+          {
+            "t": "h2",
+            "x": "Cách di chuyển kho PDF có kiểm soát"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Kiểm kê và phân loại",
+                "x": "Ghi số lượng, vị trí, định dạng, siêu dữ liệu, hạn chế và người phụ trách từng bộ sưu tập."
+              },
+              {
+                "h": "Đặt yêu cầu và bảng ánh xạ",
+                "x": "Xác nhận đích, quyền truy cập, lưu giữ, định dạng cần thiết, tên và trường phải bảo toàn."
+              },
+              {
+                "h": "Bảo vệ nguồn và thử mẫu",
+                "x": "Tạo backup đã xác minh; chuyển một nhóm đại diện trước và ghi lại lỗi."
+              },
+              {
+                "h": "Di chuyển và xác minh",
+                "x": "Đối chiếu số lượng, checksum khi phù hợp; mở tệp để kiểm tra trang, chữ, siêu dữ liệu và OCR."
+              },
+              {
+                "h": "Phê duyệt và giữ phương án quay lui",
+                "x": "Ghi ngoại lệ, thử khôi phục, xin phê duyệt và giữ nguồn theo chính sách."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Kiểm tra PDF ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm soát khi di chuyển kho PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Kiểm soát",
+              "Cần kiểm tra",
+              "Bằng chứng"
+            ],
+            "rows": [
+              [
+                "Kiểm kê",
+                "Đã nhận diện mọi hồ sơ và ngoại lệ.",
+                "Số lượng đối chiếu và danh sách ngoại lệ."
+              ],
+              [
+                "Toàn vẹn",
+                "Bản sao không có thay đổi ngoài dự kiến.",
+                "So checksum với giá trị tham chiếu đáng tin."
+              ],
+              [
+                "Khả năng đọc",
+                "Trang, phông chữ, hình ảnh và chữ hiển thị đúng.",
+                "Mẫu đã kiểm tra và vấn đề được ghi nhận."
+              ],
+              [
+                "Truy cập và tìm kiếm",
+                "Quyền, tên và mục lục hoạt động ở đích.",
+                "Thử nghiệm người dùng và truy vấn đại diện."
+              ],
+              [
+                "Khôi phục",
+                "Khôi phục được bản đã di chuyển hoặc nguồn.",
+                "Thử nghiệm khôi phục đã ghi lại."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Xác định dữ liệu cần giữ trước khi di chuyển"
+          },
+          {
+            "t": "p",
+            "x": "Ngoài tệp, hãy giữ mã nhận diện, quan hệ với hồ sơ khác, ngày, siêu dữ liệu, trạng thái chữ ký, thời hạn lưu và quyền truy cập. Đặt cách xử lý bản trùng, tệp hỏng, định dạng cũ và tài liệu có đính kèm. Nếu đổi tên hoặc đường dẫn, lưu bảng ánh xạ để tìm lại liên kết và tham chiếu cũ."
+          },
+          {
+            "t": "h2",
+            "x": "Thử mẫu và so sánh kết quả"
+          },
+          {
+            "t": "p",
+            "x": "Chọn hồ sơ ở nhiều năm, dung lượng, nguồn và mức phức tạp, gồm bản quét, biểu mẫu và PDF đã ký. So số trang, thứ tự, bố cục và khả năng đọc chữ nhỏ. Dùng checksum khi có giá trị gốc đáng tin; tính giá trị mới không chứng minh hai bản giống nhau. Ghi lỗi và cách khắc phục trước khi chuyển phần còn lại."
+          },
+          {
+            "t": "h2",
+            "x": "Xem PDF/A là yêu cầu riêng, không phải toàn bộ việc di chuyển"
+          },
+          {
+            "t": "p",
+            "x": "Nếu nơi nhận yêu cầu PDF/A, hãy xác nhận hồ sơ và thử tác động trên bản sao. [PDF sang PDF/A](/tools/pdf-to-pdfa) dựng lại từng trang trên máy chủ rồi xóa tệp sau tác vụ; công cụ không chạy trình xác thực độc lập. Kiểm tra trực quan và dùng bộ xác thực PDF/A riêng nếu chính sách cần báo cáo. Giữ bản gốc, nhất là tệp có chữ ký hoặc biểu mẫu."
+          },
+          {
+            "t": "h2",
+            "x": "Kết thúc bằng phê duyệt và kế hoạch khôi phục"
+          },
+          {
+            "t": "p",
+            "x": "Kiểm tra quyền truy cập, tìm kiếm, siêu dữ liệu, liên kết, xuất tệp và khôi phục trong môi trường mới. Ghi người rà soát, ngày, ngoại lệ và quyết định nghiệm thu. Đừng xóa nguồn hay ngừng backup chỉ vì tải lên xong; theo lịch lưu và quy trình quay lui được duyệt. Rà soát lại khi hệ thống hoặc yêu cầu thay đổi."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Cần kiểm tra gì khi di chuyển kho PDF?",
+            "a": "Đối chiếu kiểm kê, số lượng, toàn vẹn, khả năng đọc, siêu dữ liệu, quyền, tìm kiếm và khả năng khôi phục. Ghi ngoại lệ, lỗi và phê duyệt."
+          },
+          {
+            "q": "Có nên chuyển mọi PDF sang PDF/A khi di chuyển không?",
+            "a": "Không nhất thiết. Chỉ chuyển khi chính sách hoặc bên nhận yêu cầu. Xác nhận hồ sơ, xem kết quả và dùng công cụ xác thực độc lập khi cần chứng minh tuân thủ."
+          },
+          {
+            "q": "Checksum có xác nhận di chuyển thành công không?",
+            "a": "Chỉ khi so với checksum nguồn đáng tin cậy. Giá trị mới tính không chứng minh bản sao khớp với bản gốc."
+          },
+          {
+            "q": "Khi nào có thể xóa tệp trong hệ thống cũ?",
+            "a": "Sau khi xác minh đích, thử khôi phục và được phê duyệt theo chính sách lưu giữ cùng phương án quay lui."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "pdf-to-pdfa",
+          "create-zip",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
@@ -41979,6 +42915,162 @@
           "document-retention-handoff-checklist",
           "pdf-archive-naming-convention",
           "preserving-signed-pdfs"
+        ]
+      },
+      {
+        "topic": "pdf-archive-migration-checklist",
+        "slug": "pdf-archive-migration-checklist",
+        "cluster": "archive-expansion",
+        "title": "PDF 档案迁移检查清单",
+        "metaTitle": "PDF 档案迁移检查清单",
+        "metaDescription": "通过清点、测试、验证和恢复规划 PDF 档案迁移。免费、无需注册，并介绍迁移核对步骤与验证方法。",
+        "primaryKeyword": "PDF 档案迁移检查清单",
+        "secondaryKeywords": [
+          "PDF archive migration plan",
+          "PDF preservation migration",
+          "validate migrated PDF files"
+        ],
+        "answer": "迁移 PDF 档案前，先清点记录和位置，确定目标系统及保留要求，保留可恢复的备份，试迁一组样本，并比较迁移前后的文件。检查内容、元数据、权限和搜索能力，记录例外并测试恢复。只有政策或接收方要求时才需要 PDF/A；转换不能替代独立验证器。",
+        "body": [
+          {
+            "t": "p",
+            "x": "档案迁移不仅是把 PDF 复制到另一个文件夹或服务。还要保留背景信息，确认每个文件完整到达，并检查其可读性和访问能力。迁移记录前，先明确范围、目标系统、保留规则和审批人。在所有检查通过并记录验收之前，保留原件和可恢复的备份。"
+          },
+          {
+            "t": "h2",
+            "x": "如何按控制流程迁移 PDF 档案"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "清点并分类",
+                "x": "记录每个集合的数量、位置、格式、元数据、限制和负责人。"
+              },
+              {
+                "h": "定义要求和映射",
+                "x": "确认目标、访问权限、保留期限、格式要求、命名规则和需保留的字段。"
+              },
+              {
+                "h": "保护来源并试迁样本",
+                "x": "创建已验证的备份；先迁移有代表性的一组并记录问题。"
+              },
+              {
+                "h": "迁移并验证",
+                "x": "核对数量，必要时比较校验和；打开文件检查页面、文本、元数据和 OCR。"
+              },
+              {
+                "h": "审批并保留回退方案",
+                "x": "记录例外、测试恢复、取得批准，并按政策保留来源文件。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "在当前标签页检查 PDF。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "PDF 档案迁移控制项"
+          },
+          {
+            "t": "table",
+            "head": [
+              "控制项",
+              "检查内容",
+              "证据"
+            ],
+            "rows": [
+              [
+                "清单",
+                "所有记录和排除项都已识别。",
+                "数量核对结果和例外列表。"
+              ],
+              [
+                "完整性",
+                "副本没有意外变化。",
+                "与可信参考值比较校验和。"
+              ],
+              [
+                "可读性",
+                "页面、字体、图像和文本显示正确。",
+                "已检查样本及记录的问题。"
+              ],
+              [
+                "访问和搜索",
+                "目标系统中的权限、名称和索引正常。",
+                "用户测试和代表性搜索查询。"
+              ],
+              [
+                "恢复",
+                "能够恢复迁移副本或来源文件。",
+                "有记录的恢复测试。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "迁移前确定要保留什么"
+          },
+          {
+            "t": "p",
+            "x": "除文件本身外，还要保留标识符、与其他记录的关系、日期、元数据、签名状态、保留期限和访问控制。制定重复文件、损坏文件、旧格式和带附件文档的处理规则。若名称或路径发生变化，应保存映射表，以便解析旧链接和引用。"
+          },
+          {
+            "t": "h2",
+            "x": "先试迁样本并比较结果"
+          },
+          {
+            "t": "p",
+            "x": "选择不同年份、大小、来源和复杂度的记录，包括扫描件、表单和已签名 PDF。比较页数、顺序、版式和小字可读性。只有存在可信参考值时才比较校验和；重新计算一个值不能证明两份文件相同。记录错误，并在迁移其余文件前确定处理办法。"
+          },
+          {
+            "t": "h2",
+            "x": "将 PDF/A 视为特定要求，而非迁移的替代方案"
+          },
+          {
+            "t": "p",
+            "x": "如果接收方要求 PDF/A，请确认配置，并先在副本上测试影响。[转换为 PDF/A](/tools/pdf-to-pdfa)会在服务器上重建每页，并在任务完成后删除文件；该工具不会运行独立验证器。请目视检查结果；如果政策要求报告，再使用单独的 PDF/A 验证工具。保留原件，特别是包含签名或表单的文件。"
+          },
+          {
+            "t": "h2",
+            "x": "通过审批和恢复计划完成迁移"
+          },
+          {
+            "t": "p",
+            "x": "在新环境中检查权限、搜索、元数据、链接、导出和恢复能力。记录审查人、日期、例外和验收决定。不要因为上传完成就删除来源或停用备份；应遵循保留计划和已批准的回退流程。系统或要求变更时重新检查。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "迁移 PDF 档案时要检查什么？",
+            "a": "核对清单、文件数量、完整性、可读性、元数据、权限、搜索和恢复能力。记录排除项、错误和审批结果。"
+          },
+          {
+            "q": "迁移时是否要把所有 PDF 转成 PDF/A？",
+            "a": "不一定。只有政策或接收方要求时才转换。确认配置并检查结果；如需证明符合要求，应使用独立验证器。"
+          },
+          {
+            "q": "校验和能证明迁移成功吗？",
+            "a": "只有与可信的源校验和比较时才可以。新计算出的值不能证明副本与原件一致。"
+          },
+          {
+            "q": "什么时候可以删除旧系统中的文件？",
+            "a": "目标系统验证完成、恢复测试通过，并根据保留政策和回退计划取得批准后。"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "pdf-to-pdfa",
+          "create-zip",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "metadata-for-pdf-records",
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
