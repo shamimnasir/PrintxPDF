@@ -1,9 +1,9 @@
 # Multilingual article release draft
 
-This folder holds translations that are not yet imported by the site. Do not add these guides to
-`localizedGuidesFull.ts` or publish them until the complete English article set is translated for
-all seven supported locales. This keeps the public release complete rather than exposing partial
-language coverage.
+This folder holds the source drafts for a rolling multilingual release. A topic may be published
+once all seven translations are complete and pass the content checks. Unfinished topics stay here
+unpublished. The release goal remains translating and publishing every English guide in all seven
+locales; see the inventory below for overall progress.
 
 Each article file uses the English guide slug as `topic`, identifies its English source silo, and
 stores localized title, search metadata, answer, body, tool CTA and FAQs under each locale.
@@ -24,11 +24,16 @@ English route's slug against localized guide topics:
 | Vietnamese (`vi`) | 110 | 115 |
 | Simplified Chinese (`zh-CN`) | 110 | 115 |
 
-Total remaining at the start of this draft effort: **963 localized guide pages**. There are currently 40 complete topic drafts, each with all seven locales, for 280 localized pages. **683 pages remain.** See the JSON filenames in this directory for the draft inventory.
-More drafts should be added one English article at a time, with all seven locales
-represented before integration.
+The inventory above is the starting snapshot. The first rolling release batch contains 40 fully translated topics (280 locale editions). Thirteen topics already had route entries and are refreshed; 27 add new topic routes. Current route coverage is 139 of 225 guides in each locale. **86 topics, or 602 localized guide pages, remain.** The JSON files in this folder remain the source archive for this batch.
 
-## Release checks
+## Rolling release checks
+
+For each release batch, import only topics with all seven locales, add matching localized route
+entries, verify reciprocal hreflang, run the build and static site audit, then deploy and notify
+IndexNow. Google is not part of IndexNow. Continue adding and publishing complete topics until all
+225 English guides have all seven translations.
+
+## Full release checks
 
 - Preserve the existing English topic slug so alternates and silo matching work.
 - Translate all visible content, including title, metadata, answer, body, table, CTA and FAQs.

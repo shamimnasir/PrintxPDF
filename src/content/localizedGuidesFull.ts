@@ -68,6 +68,7 @@ import zhBatch8 from './localized-posts/zh-CN-chatgpt-8.json'
 import zhBatch9 from './localized-posts/zh-CN-chatgpt-9.json'
 import zhBatch10 from './localized-posts/zh-CN-chatgpt-10.json'
 import zhBatch11 from './localized-posts/zh-CN-chatgpt-11.json'
+import rolling40 from './localized-posts/rolling-40.json'
 import { LANGUAGE_PACKS as basePacks, guidePath, normalizeLocalizedGuides } from './localizedGuides'
 import type { LanguagePack, LocalizedGuide } from './localizedGuides'
 export { guidePath } from './localizedGuides'
@@ -97,6 +98,7 @@ translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch8.g
 translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch9.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch10.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
 translations.push({ locale: 'zh-CN', guides: normalizeLocalizedGuides(zhBatch11.guides as (Partial<LocalizedGuide> & { description?: string })[]) })
+translations.push(...rolling40.map((entry) => ({ locale: entry.locale, guides: normalizeLocalizedGuides(entry.guides as (Partial<LocalizedGuide> & { description?: string })[]) })))
 
 export const LANGUAGE_PACKS: LanguagePack[] = basePacks.map((pack) => {
   const guides = new Map(pack.guides.map((guide) => [guide.topic, guide]))
