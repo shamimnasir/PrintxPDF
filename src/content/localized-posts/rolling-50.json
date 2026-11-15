@@ -1362,6 +1362,179 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "send-confidential-pdf-safely",
+        "slug": "send-confidential-pdf-safely",
+        "title": "Cómo enviar un PDF confidencial de forma segura",
+        "metaTitle": "Enviar un PDF confidencial de forma segura",
+        "metaDescription": "Envía un PDF confidencial con una copia revisada, el método de acceso adecuado y herramientas gratuitas en el navegador, sin registro ni marca de agua.",
+        "keyword": "cómo enviar un pdf confidencial de forma segura",
+        "secondaryKeywords": [
+          "enviar PDF confidencial",
+          "proteger PDF antes de compartir",
+          "eliminar metadatos PDF"
+        ],
+        "answer": "Enviar un PDF confidencial de forma segura empieza con una copia de trabajo, una revisión final y un canal aprobado para el destinatario. Protege el archivo según el riesgo; una contraseña, la redacción real y la eliminación de metadatos resuelven problemas distintos. PrintxPDF ofrece herramientas básicas gratis, sin registro ni marca de agua; las funciones marcadas como locales procesan el archivo en la pestaña.",
+        "tool": "protect-pdf",
+        "ctaLabel": "Proteger PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Para compartir un PDF confidencial, conserva el original, prepara una copia separada y verifica cada página antes de enviarla. Elige un canal aprobado y confirma quién puede abrir el archivo. PrintxPDF procesa las tareas estándar marcadas como locales dentro de la pestaña; no subas un documento restringido a una herramienta de servidor sin autorización."
+          },
+          {
+            "t": "h2",
+            "x": "¿Cómo preparo un PDF confidencial para compartirlo?"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el original",
+                "x": "Guarda una copia sin cambios en una ubicación aprobada."
+              },
+              {
+                "h": "Aplica la protección necesaria",
+                "x": "Usa [Proteger PDF](/tools/protect-pdf) si necesitas restringir la apertura; la contraseña no sustituye un canal seguro."
+              },
+              {
+                "h": "Elimina datos que no deban compartirse",
+                "x": "Aplica redacción real al contenido visible y usa [Eliminar metadatos](/tools/remove-metadata) para propiedades estándar."
+              },
+              {
+                "h": "Revisa la copia final",
+                "x": "Comprueba nombres, páginas, comentarios, archivos adjuntos y que la redacción no pueda revertirse."
+              },
+              {
+                "h": "Envía mediante un canal aprobado",
+                "x": "Confirma el destinatario y comparte la contraseña por un canal distinto cuando sea adecuado."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "protect-pdf",
+            "x": "Proteger PDF con la herramienta gratuita de PrintxPDF. Sin registro ni marca de agua; comprueba el aviso de procesamiento antes de añadir el archivo."
+          },
+          {
+            "t": "h2",
+            "x": "¿Qué método de protección necesito?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Necesidad",
+              "Acción",
+              "Límite"
+            ],
+            "rows": [
+              [
+                "Necesidad",
+                "Acción",
+                "Límite"
+              ],
+              [
+                "Evitar aperturas casuales",
+                "Proteger con contraseña",
+                "No impide que un destinatario autorizado copie el contenido."
+              ],
+              [
+                "Ocultar contenido confidencial",
+                "Redacción real",
+                "Verifica que el contenido eliminado no pueda recuperarse."
+              ],
+              [
+                "Quitar propiedades del documento",
+                "Eliminar metadatos",
+                "No elimina texto visible, comentarios ni todos los datos incrustados."
+              ],
+              [
+                "Controlar quién recibe el archivo",
+                "Canal de uso compartido aprobado",
+                "Los ajustes del PDF no sustituyen los controles de acceso del canal."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "¿Por qué importa el procesamiento local?"
+          },
+          {
+            "t": "p",
+            "x": "Una herramienta marcada como local ejecuta el trabajo en el navegador, por lo que el archivo no se envía a un servidor para esa tarea. Esto reduce transferencias innecesarias de extractos bancarios, contratos y expedientes médicos. Revisa siempre el aviso de cada herramienta: algunas conversiones especiales requieren servidor y deben identificarse antes de cargar el archivo."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa el PDF antes de enviarlo"
+          },
+          {
+            "t": "p",
+            "x": "Abre el archivo descargado y comprueba el contenido página por página. Busca texto oculto bajo cuadros negros, anotaciones, formularios y adjuntos. Para quitar información confidencial, usa [Redactar PDF](/tools/redact-pdf), no una forma superpuesta. Si necesitas reunir archivos ya revisados, [Combinar PDF](/tools/merge-pdf) crea un paquete; vuelve a inspeccionar el resultado antes de compartirlo."
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF frente a otras opciones"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Necesidad",
+              "Acción",
+              "Límite"
+            ],
+            "rows": [
+              [
+                "Opción",
+                "Dónde se procesa",
+                "Qué debes comprobar"
+              ],
+              [
+                "Herramienta local de PrintxPDF",
+                "En la pestaña del navegador, si así se indica",
+                "El aviso de procesamiento y la revisión final."
+              ],
+              [
+                "Conversor en la nube",
+                "En un servidor remoto",
+                "Retención, acceso, eliminación y autorización para subir el documento."
+              ],
+              [
+                "Aplicación de escritorio",
+                "En el dispositivo tras instalarla",
+                "Origen del software, permisos, actualizaciones y copias de seguridad."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Mantén un registro de la entrega"
+          },
+          {
+            "t": "p",
+            "x": "Usa un nombre de archivo claro y conserva la copia aprobada junto con una nota de cuándo y a quién se entregó, según la política de tu organización. No envíes el PDF a una dirección sugerida automáticamente sin comprobarla. La seguridad también depende del dispositivo, la cuenta y el canal de destino."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Es seguro enviar un PDF confidencial por correo?",
+            "a": "Depende del tipo de información y de las reglas aplicables. Usa un canal aprobado; si se requiere protección con contraseña, comparte la clave por otro medio y confirma el destinatario."
+          },
+          {
+            "q": "¿Una contraseña protege completamente un PDF?",
+            "a": "No. Puede limitar la apertura, pero no impide que una persona autorizada copie o fotografíe el contenido. Combínala con controles de acceso adecuados."
+          },
+          {
+            "q": "¿Puedo borrar datos confidenciales con un rectángulo negro?",
+            "a": "No. Una forma puede cubrir el texto sin borrarlo. Usa una herramienta de redacción real y comprueba que el texto no se pueda seleccionar ni recuperar."
+          },
+          {
+            "q": "¿PrintxPDF sube los documentos?",
+            "a": "Las herramientas marcadas como locales procesan el archivo en la pestaña. Algunas tareas pueden usar un servidor y lo indican antes de empezar; revisa el aviso de la herramienta."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -2724,6 +2897,169 @@
           {
             "q": "Editar metadados muda o conteúdo visível?",
             "a": "Não. Alterar propriedades internas não remove texto, assinaturas ou comentários visíveis. Para ocultar conteúdo de uma página, use uma ferramenta de redação e revise o resultado."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "send-confidential-pdf-safely",
+        "slug": "send-confidential-pdf-safely",
+        "title": "Como enviar um PDF confidencial com segurança",
+        "metaTitle": "Como enviar um PDF confidencial com segurança",
+        "metaDescription": "Prepare e revise uma cópia antes de enviar um PDF confidencial. Use ferramentas grátis no navegador, sem cadastro ou marca d’água.",
+        "keyword": "como-enviar-pdf-confidencial-com-seguranca",
+        "secondaryKeywords": [
+          "enviar PDF confidencial",
+          "proteger PDF antes de compartilhar",
+          "remover metadados PDF"
+        ],
+        "answer": "Para enviar um PDF confidencial com segurança, preserve o original, revise uma cópia separada e use um canal aprovado para o destinatário. Senha, redação real e remoção de metadados resolvem problemas diferentes. As ferramentas básicas da PrintxPDF são grátis, sem cadastro nem marca d’água; tarefas marcadas como locais são processadas na aba.",
+        "tool": "protect-pdf",
+        "ctaLabel": "Proteger PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Para enviar um PDF confidencial com segurança, preserve o original, revise uma cópia separada e use um canal aprovado para o destinatário. Senha, redação real e remoção de metadados resolvem problemas diferentes. As ferramentas básicas da PrintxPDF são grátis, sem cadastro nem marca d’água; tarefas marcadas como locais são processadas na aba. O processamento local evita transferências desnecessárias de extratos bancários, contratos e prontuários. Confira o aviso da ferramenta: algumas conversões especiais usam servidor e informam isso antes do envio."
+          },
+          {
+            "t": "h2",
+            "x": "Como preparar um PDF confidencial para compartilhar"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde o original sem alterações em um local aprovado.",
+                "x": "Guarde o original sem alterações em um local aprovado."
+              },
+              {
+                "h": "Use [Proteger PDF](/tools/protect-pdf) para restringir a abertura; uma senha não substitui um canal seguro.",
+                "x": "Use [Proteger PDF](/tools/protect-pdf) para restringir a abertura; uma senha não substitui um canal seguro."
+              },
+              {
+                "h": "Use [Remover metadados](/tools/remove-metadata) para propriedades padrão e [Redigir PDF](/tools/redact-pdf) para remover conteúdo visível de verdade.",
+                "x": "Use [Remover metadados](/tools/remove-metadata) para propriedades padrão e [Redigir PDF](/tools/redact-pdf) para remover conteúdo visível de verdade."
+              },
+              {
+                "h": "Revise nomes, páginas, comentários, anexos e confirme que o conteúdo redigido não pode ser recuperado.",
+                "x": "Revise nomes, páginas, comentários, anexos e confirme que o conteúdo redigido não pode ser recuperado."
+              },
+              {
+                "h": "Confirme o destinatário e use um canal aprovado. Quando necessário, envie a senha por um canal separado.",
+                "x": "Confirme o destinatário e use um canal aprovado. Quando necessário, envie a senha por um canal separado."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "protect-pdf",
+            "x": "Proteger PDF As ferramentas marcadas como locais processam o arquivo na aba. Algumas tarefas usam servidor e informam isso antes de começar. Confira o aviso antes de adicionar o arquivo."
+          },
+          {
+            "t": "h2",
+            "x": "Escolha a proteção adequada"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Necessidade",
+              "Ação",
+              "Limite"
+            ],
+            "rows": [
+              [
+                "Impedir abertura casual",
+                "Proteger com senha",
+                "Não impede cópia por destinatário autorizado."
+              ],
+              [
+                "Ocultar conteúdo",
+                "Redação real",
+                "Verifique se o conteúdo não pode ser recuperado."
+              ],
+              [
+                "Remover propriedades",
+                "Remover metadados",
+                "Não apaga texto visível nem todos os dados incorporados."
+              ],
+              [
+                "Controlar destinatários",
+                "Canal aprovado",
+                "As configurações do PDF não substituem controles do canal."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Por que o processamento local importa"
+          },
+          {
+            "t": "p",
+            "x": "O processamento local evita transferências desnecessárias de extratos bancários, contratos e prontuários. Confira o aviso da ferramenta: algumas conversões especiais usam servidor e informam isso antes do envio."
+          },
+          {
+            "t": "h2",
+            "x": "Revise o arquivo antes de enviar"
+          },
+          {
+            "t": "p",
+            "x": "Abra o arquivo final e confira cada página. Um retângulo preto pode apenas cobrir o texto. Use redação real; inspecione também anotações, formulários e anexos. [Combinar PDF](/tools/merge-pdf) reúne arquivos já revisados."
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF e outras opções"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Opção",
+              "Processamento",
+              "Verifique"
+            ],
+            "rows": [
+              [
+                "PrintxPDF local",
+                "Na aba do navegador, quando indicado",
+                "Aviso da ferramenta e revisão."
+              ],
+              [
+                "Ferramenta em nuvem",
+                "Servidor remoto",
+                "Retenção, acesso, exclusão e autorização."
+              ],
+              [
+                "Aplicativo instalado",
+                "No dispositivo",
+                "Origem, permissões, atualização e backups."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Mantenha o registro da entrega"
+          },
+          {
+            "t": "p",
+            "x": "A segurança também depende do dispositivo, da conta e do canal de destino. Use um nome claro e siga as regras da sua organização."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "É seguro enviar PDF confidencial por e-mail?",
+            "a": "Depende da informação e das regras aplicáveis. Use um canal aprovado, confirme o destinatário e compartilhe a senha separadamente quando necessário."
+          },
+          {
+            "q": "Uma senha protege totalmente o PDF?",
+            "a": "Não. Ela pode limitar a abertura, mas não impede que alguém autorizado copie ou fotografe o conteúdo. Combine-a com controles de acesso."
+          },
+          {
+            "q": "Uma caixa preta remove dados confidenciais?",
+            "a": "Não necessariamente. Uma forma pode cobrir o texto sem removê-lo. Use redação real e confira se o conteúdo não pode ser selecionado ou recuperado."
+          },
+          {
+            "q": "A PrintxPDF envia meus documentos?",
+            "a": "Ferramentas marcadas como locais processam o arquivo na aba. Algumas tarefas usam servidor e avisam antes de começar; confira o aviso da ferramenta."
           }
         ],
         "published": "2026-11-15",
@@ -4094,6 +4430,169 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "send-confidential-pdf-safely",
+        "slug": "send-confidential-pdf-safely",
+        "title": "गोपनीय PDF सुरक्षित रूप से कैसे भेजें",
+        "metaTitle": "गोपनीय PDF सुरक्षित रूप से भेजें",
+        "metaDescription": "गोपनीय PDF भेजने से पहले उसकी कॉपी तैयार और जाँचें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क वाले ब्राउज़र टूल इस्तेमाल करें।",
+        "keyword": "gopaniya-pdf-surakshit-bhejen",
+        "secondaryKeywords": [
+          "गोपनीय PDF भेजना",
+          "PDF को सुरक्षित करना",
+          "PDF मेटाडेटा हटाना"
+        ],
+        "answer": "गोपनीय PDF सुरक्षित रूप से भेजने के लिए मूल फ़ाइल रखें, अलग कॉपी की जाँच करें और स्वीकृत साझा चैनल चुनें। पासवर्ड, वास्तविक रिडैक्शन और मेटाडेटा हटाना अलग समस्याएँ हल करते हैं। PrintxPDF के मुख्य टूल मुफ़्त हैं, साइनअप या वॉटरमार्क नहीं है; स्थानीय के रूप में चिह्नित काम ब्राउज़र टैब में होता है।",
+        "tool": "protect-pdf",
+        "ctaLabel": "PDF सुरक्षित करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "गोपनीय PDF सुरक्षित रूप से भेजने के लिए मूल फ़ाइल रखें, अलग कॉपी की जाँच करें और स्वीकृत साझा चैनल चुनें। पासवर्ड, वास्तविक रिडैक्शन और मेटाडेटा हटाना अलग समस्याएँ हल करते हैं। PrintxPDF के मुख्य टूल मुफ़्त हैं, साइनअप या वॉटरमार्क नहीं है; स्थानीय के रूप में चिह्नित काम ब्राउज़र टैब में होता है। स्थानीय प्रसंस्करण बैंक विवरण, अनुबंध और चिकित्सा रिकॉर्ड जैसी फ़ाइलों को अनावश्यक सर्वर ट्रांसफ़र से बचाता है। फिर भी हर टूल का नोटिस पढ़ें; कुछ विशेष कन्वर्ज़न सर्वर का उपयोग करते हैं और पहले बताते हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "साझा करने के लिए गोपनीय PDF कैसे तैयार करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "अपरिवर्तित मूल प्रति किसी स्वीकृत स्थान पर रखें।",
+                "x": "अपरिवर्तित मूल प्रति किसी स्वीकृत स्थान पर रखें।"
+              },
+              {
+                "h": "खोलने पर रोक के लिए [PDF सुरक्षित करें](/tools/protect-pdf) इस्तेमाल करें; पासवर्ड सुरक्षित चैनल का विकल्प नहीं है।",
+                "x": "खोलने पर रोक के लिए [PDF सुरक्षित करें](/tools/protect-pdf) इस्तेमाल करें; पासवर्ड सुरक्षित चैनल का विकल्प नहीं है।"
+              },
+              {
+                "h": "मानक गुणों के लिए [मेटाडेटा हटाएँ](/tools/remove-metadata) और दिखाई देने वाली संवेदनशील सामग्री को वास्तव में हटाने के लिए [PDF रिडैक्ट करें](/tools/redact-pdf)।",
+                "x": "मानक गुणों के लिए [मेटाडेटा हटाएँ](/tools/remove-metadata) और दिखाई देने वाली संवेदनशील सामग्री को वास्तव में हटाने के लिए [PDF रिडैक्ट करें](/tools/redact-pdf)।"
+              },
+              {
+                "h": "नाम, पृष्ठ, टिप्पणियाँ और संलग्न फ़ाइलें देखें। सुनिश्चित करें कि हटाई गई सामग्री वापस नहीं पाई जा सकती।",
+                "x": "नाम, पृष्ठ, टिप्पणियाँ और संलग्न फ़ाइलें देखें। सुनिश्चित करें कि हटाई गई सामग्री वापस नहीं पाई जा सकती।"
+              },
+              {
+                "h": "प्राप्तकर्ता की पुष्टि करें और स्वीकृत चैनल से भेजें। जहाँ उचित हो, पासवर्ड अलग माध्यम से दें।",
+                "x": "प्राप्तकर्ता की पुष्टि करें और स्वीकृत चैनल से भेजें। जहाँ उचित हो, पासवर्ड अलग माध्यम से दें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "protect-pdf",
+            "x": "PDF सुरक्षित करें स्थानीय टूल फ़ाइल को टैब में संसाधित करते हैं। कुछ काम सर्वर पर होते हैं और शुरू होने से पहले बताए जाते हैं। फ़ाइल जोड़ने से पहले सूचना पढ़ें।"
+          },
+          {
+            "t": "h2",
+            "x": "सही सुरक्षा चुनें"
+          },
+          {
+            "t": "table",
+            "head": [
+              "ज़रूरत",
+              "कार्रवाई",
+              "सीमा"
+            ],
+            "rows": [
+              [
+                "अनचाहा खोलना रोकना",
+                "पासवर्ड लगाएँ",
+                "अधिकृत प्राप्तकर्ता की नकल नहीं रोकता।"
+              ],
+              [
+                "सामग्री छिपाना",
+                "वास्तविक रिडैक्शन",
+                "जाँचें कि सामग्री वापस न मिले।"
+              ],
+              [
+                "गुण हटाना",
+                "मेटाडेटा हटाएँ",
+                "दिखाई देने वाला टेक्स्ट या सभी एम्बेडेड डेटा नहीं हटाता।"
+              ],
+              [
+                "प्राप्तकर्ता नियंत्रित करना",
+                "स्वीकृत चैनल",
+                "PDF सेटिंग चैनल नियंत्रण का विकल्प नहीं।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "लोकल प्रोसेसिंग क्यों मायने रखती है"
+          },
+          {
+            "t": "p",
+            "x": "स्थानीय प्रसंस्करण बैंक विवरण, अनुबंध और चिकित्सा रिकॉर्ड जैसी फ़ाइलों को अनावश्यक सर्वर ट्रांसफ़र से बचाता है। फिर भी हर टूल का नोटिस पढ़ें; कुछ विशेष कन्वर्ज़न सर्वर का उपयोग करते हैं और पहले बताते हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "भेजने से पहले फ़ाइल जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "डाउनलोड की गई कॉपी का हर पृष्ठ देखें। काला बॉक्स केवल टेक्स्ट ढक सकता है। वास्तविक रिडैक्शन करें और टिप्पणियाँ, फ़ॉर्म तथा अटैचमेंट भी जाँचें। पहले से जाँची फ़ाइलें [PDF जोड़ें](/tools/merge-pdf) से मिलाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF और अन्य विकल्प"
+          },
+          {
+            "t": "table",
+            "head": [
+              "विकल्प",
+              "प्रसंस्करण",
+              "क्या जाँचें"
+            ],
+            "rows": [
+              [
+                "PrintxPDF लोकल",
+                "ब्राउज़र टैब में, जहाँ चिह्नित हो",
+                "टूल नोटिस और अंतिम जाँच।"
+              ],
+              [
+                "क्लाउड टूल",
+                "दूरस्थ सर्वर",
+                "रखना, पहुँच, हटाना और अनुमति।"
+              ],
+              [
+                "डेस्कटॉप ऐप",
+                "डिवाइस पर",
+                "स्रोत, अनुमति, अपडेट और बैकअप।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "भेजने का रिकॉर्ड रखें"
+          },
+          {
+            "t": "p",
+            "x": "फ़ाइल का नाम स्पष्ट रखें और अपनी संस्था की नीति का पालन करें। सुरक्षा डिवाइस, खाते और साझा करने के चैनल पर भी निर्भर करती है।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या ईमेल से गोपनीय PDF भेजना सुरक्षित है?",
+            "a": "यह जानकारी और लागू नियमों पर निर्भर करता है। स्वीकृत चैनल चुनें, प्राप्तकर्ता जाँचें और ज़रूरत पड़ने पर पासवर्ड अलग माध्यम से भेजें।"
+          },
+          {
+            "q": "क्या पासवर्ड PDF को पूरी तरह सुरक्षित करता है?",
+            "a": "नहीं। यह खोलने को सीमित कर सकता है, लेकिन अधिकृत व्यक्ति को सामग्री कॉपी या फ़ोटो लेने से नहीं रोकता। अन्य पहुँच नियंत्रण भी रखें।"
+          },
+          {
+            "q": "क्या काला आयत गोपनीय डेटा मिटा देता है?",
+            "a": "ज़रूरी नहीं। आकार टेक्स्ट को ढक सकता है, मिटाता नहीं। वास्तविक रिडैक्शन का उपयोग करें और जाँचें कि सामग्री वापस न मिले।"
+          },
+          {
+            "q": "क्या PrintxPDF फ़ाइलें अपलोड करता है?",
+            "a": "स्थानीय चिह्नित टूल फ़ाइल को टैब में संसाधित करते हैं। कुछ काम सर्वर का उपयोग करते हैं और पहले बताते हैं; टूल का नोटिस देखें।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -5455,6 +5954,169 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "send-confidential-pdf-safely",
+        "slug": "send-confidential-pdf-safely",
+        "title": "كيفية إرسال ملف PDF سري بأمان",
+        "metaTitle": "إرسال ملف PDF سري بأمان",
+        "metaDescription": "جهّز نسخة منقحة وافحصها قبل إرسال PDF سري. استخدم أدوات مجانية داخل المتصفح بلا تسجيل أو علامة مائية.",
+        "keyword": "irsal-pdf-sir-bi-aman",
+        "secondaryKeywords": [
+          "إرسال PDF سري",
+          "حماية PDF قبل المشاركة",
+          "إزالة بيانات PDF الوصفية"
+        ],
+        "answer": "لإرسال ملف PDF سري بأمان، احتفظ بالأصل، وراجع نسخة منفصلة، واستخدم قناة معتمدة للمستلم. كلمة المرور والتنقيح الحقيقي وإزالة البيانات الوصفية تعالج مشكلات مختلفة. أدوات PrintxPDF الأساسية مجانية بلا تسجيل أو علامة مائية؛ والمهام الموسومة بأنها محلية تُعالج داخل علامة تبويب المتصفح.",
+        "tool": "protect-pdf",
+        "ctaLabel": "حماية PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "لإرسال ملف PDF سري بأمان، احتفظ بالأصل، وراجع نسخة منفصلة، واستخدم قناة معتمدة للمستلم. كلمة المرور والتنقيح الحقيقي وإزالة البيانات الوصفية تعالج مشكلات مختلفة. أدوات PrintxPDF الأساسية مجانية بلا تسجيل أو علامة مائية؛ والمهام الموسومة بأنها محلية تُعالج داخل علامة تبويب المتصفح. المعالجة المحلية تقلل نقل كشوف الحسابات والعقود والسجلات الطبية إلى خوادم خارجية. راجع إشعار الأداة، فبعض التحويلات الخاصة تستخدم الخادم وتوضح ذلك مسبقاً."
+          },
+          {
+            "t": "h2",
+            "x": "كيف تجهّز ملف PDF سرياً للمشاركة"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالأصل دون تغيير في موقع معتمد.",
+                "x": "احتفظ بالأصل دون تغيير في موقع معتمد."
+              },
+              {
+                "h": "استخدم [حماية PDF](/tools/protect-pdf) لتقييد الفتح؛ فكلمة المرور لا تغني عن قناة آمنة.",
+                "x": "استخدم [حماية PDF](/tools/protect-pdf) لتقييد الفتح؛ فكلمة المرور لا تغني عن قناة آمنة."
+              },
+              {
+                "h": "استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) للخصائص القياسية و[تنقيح PDF](/tools/redact-pdf) لإزالة المحتوى الظاهر فعلياً.",
+                "x": "استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) للخصائص القياسية و[تنقيح PDF](/tools/redact-pdf) لإزالة المحتوى الظاهر فعلياً."
+              },
+              {
+                "h": "راجع الأسماء والصفحات والتعليقات والمرفقات، وتأكد من تعذر استعادة المحتوى المنقح.",
+                "x": "راجع الأسماء والصفحات والتعليقات والمرفقات، وتأكد من تعذر استعادة المحتوى المنقح."
+              },
+              {
+                "h": "تحقق من المستلم واستخدم قناة معتمدة. أرسل كلمة المرور عبر قناة منفصلة عند الحاجة.",
+                "x": "تحقق من المستلم واستخدم قناة معتمدة. أرسل كلمة المرور عبر قناة منفصلة عند الحاجة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "protect-pdf",
+            "x": "حماية PDF الأدوات الموسومة بأنها محلية تعالج الملف في علامة التبويب. بعض المهام تستخدم الخادم وتعلن ذلك قبل البدء؛ راجع الإشعار قبل إضافة الملف."
+          },
+          {
+            "t": "h2",
+            "x": "اختر وسيلة الحماية المناسبة"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الحاجة",
+              "الإجراء",
+              "الحد"
+            ],
+            "rows": [
+              [
+                "منع الفتح العارض",
+                "حماية بكلمة مرور",
+                "لا تمنع المستلم المخول من النسخ."
+              ],
+              [
+                "إخفاء المحتوى",
+                "تنقيح فعلي",
+                "تحقق من تعذر استعادة المحتوى."
+              ],
+              [
+                "إزالة الخصائص",
+                "إزالة البيانات الوصفية",
+                "لا تحذف النص الظاهر أو كل البيانات المضمنة."
+              ],
+              [
+                "ضبط المستلمين",
+                "قناة معتمدة",
+                "إعدادات PDF لا تستبدل ضوابط القناة."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "لماذا تهم المعالجة المحلية؟"
+          },
+          {
+            "t": "p",
+            "x": "المعالجة المحلية تقلل نقل كشوف الحسابات والعقود والسجلات الطبية إلى خوادم خارجية. راجع إشعار الأداة، فبعض التحويلات الخاصة تستخدم الخادم وتوضح ذلك مسبقاً."
+          },
+          {
+            "t": "h2",
+            "x": "راجع الملف قبل الإرسال"
+          },
+          {
+            "t": "p",
+            "x": "افتح النسخة النهائية وافحص كل صفحة. قد يغطي مستطيل أسود النص فقط دون حذفه. استخدم التنقيح الحقيقي وافحص التعليقات والنماذج والمرفقات. يمكنك [دمج ملفات PDF](/tools/merge-pdf) بعد مراجعتها."
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF والخيارات الأخرى"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الخيار",
+              "مكان المعالجة",
+              "ما يجب فحصه"
+            ],
+            "rows": [
+              [
+                "PrintxPDF محلي",
+                "في علامة التبويب عند الإشارة إلى ذلك",
+                "إشعار الأداة والمراجعة النهائية."
+              ],
+              [
+                "أداة سحابية",
+                "خادم بعيد",
+                "الاحتفاظ والوصول والحذف والتصريح."
+              ],
+              [
+                "تطبيق مكتبي",
+                "على الجهاز",
+                "المصدر والأذونات والتحديثات والنسخ الاحتياطي."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بسجل التسليم"
+          },
+          {
+            "t": "p",
+            "x": "استخدم اسماً واضحاً للملف واتبع سياسة مؤسستك. تعتمد السلامة أيضاً على الجهاز والحساب وقناة المشاركة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل إرسال PDF سري عبر البريد آمن؟",
+            "a": "يعتمد ذلك على نوع المعلومات والسياسات المعمول بها. استخدم قناة معتمدة، وتحقق من المستلم، وأرسل كلمة المرور منفصلة عند الحاجة."
+          },
+          {
+            "q": "هل تحمي كلمة المرور ملف PDF بالكامل؟",
+            "a": "لا. قد تمنع الفتح دون كلمة مرور، لكنها لا تمنع مستلماً مخولاً من نسخ المحتوى أو تصويره. استخدم ضوابط وصول إضافية."
+          },
+          {
+            "q": "هل يمحو المستطيل الأسود البيانات السرية؟",
+            "a": "ليس بالضرورة. قد يغطي الشكل النص دون حذفه. استخدم التنقيح الفعلي وتحقق من عدم إمكانية تحديد المحتوى أو استعادته."
+          },
+          {
+            "q": "هل ترفع PrintxPDF مستنداتي؟",
+            "a": "الأدوات الموسومة محلية تعالج الملف في علامة التبويب. بعض المهام تستخدم الخادم وتوضح ذلك قبل البدء؛ راجع إشعار الأداة."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -6812,6 +7474,169 @@
           {
             "q": "মেটাডেটা বদলালে দৃশ্যমান বিষয়বস্তু বদলায়?",
             "a": "না। ভেতরের প্রপার্টি বদলালে দৃশ্যমান লেখা, স্বাক্ষর বা মন্তব্য মুছে না। পৃষ্ঠার তথ্য ঢাকতে রেড্যাক্ট টুল ব্যবহার করে ফল পরীক্ষা করুন।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "send-confidential-pdf-safely",
+        "slug": "send-confidential-pdf-safely",
+        "title": "গোপন PDF নিরাপদে কীভাবে পাঠাবেন",
+        "metaTitle": "গোপন PDF নিরাপদে পাঠান",
+        "metaDescription": "গোপন PDF পাঠানোর আগে আলাদা কপি তৈরি করে পরীক্ষা করুন। বিনামূল্যের, সাইনআপ ও ওয়াটারমার্কবিহীন ব্রাউজার টুল ব্যবহার করুন।",
+        "keyword": "gopon-pdf-nirapode-pathan",
+        "secondaryKeywords": [
+          "গোপন PDF পাঠানো",
+          "PDF সুরক্ষিত করা",
+          "PDF মেটাডেটা সরানো"
+        ],
+        "answer": "গোপন PDF নিরাপদে পাঠাতে মূল ফাইলটি রেখে আলাদা কপি পরীক্ষা করুন এবং অনুমোদিত শেয়ারিং চ্যানেল ব্যবহার করুন। পাসওয়ার্ড, প্রকৃত রিড্যাকশন ও মেটাডেটা অপসারণ আলাদা সমস্যার সমাধান করে। PrintxPDF-এর মূল টুলগুলো বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক লাগে না; লোকাল হিসেবে চিহ্নিত কাজ ব্রাউজার ট্যাবে হয়।",
+        "tool": "protect-pdf",
+        "ctaLabel": "PDF সুরক্ষিত করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "গোপন PDF নিরাপদে পাঠাতে মূল ফাইলটি রেখে আলাদা কপি পরীক্ষা করুন এবং অনুমোদিত শেয়ারিং চ্যানেল ব্যবহার করুন। পাসওয়ার্ড, প্রকৃত রিড্যাকশন ও মেটাডেটা অপসারণ আলাদা সমস্যার সমাধান করে। PrintxPDF-এর মূল টুলগুলো বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক লাগে না; লোকাল হিসেবে চিহ্নিত কাজ ব্রাউজার ট্যাবে হয়। লোকাল প্রসেসিং ব্যাংক বিবরণী, চুক্তি ও চিকিৎসার নথির অপ্রয়োজনীয় সার্ভার স্থানান্তর কমায়। টুলের নোটিশ দেখুন; কিছু বিশেষ রূপান্তর সার্ভার ব্যবহার করে এবং আগে জানায়।"
+          },
+          {
+            "t": "h2",
+            "x": "শেয়ারের জন্য গোপন PDF কীভাবে প্রস্তুত করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "অপরিবর্তিত মূল ফাইল অনুমোদিত স্থানে রাখুন।",
+                "x": "অপরিবর্তিত মূল ফাইল অনুমোদিত স্থানে রাখুন।"
+              },
+              {
+                "h": "খোলার সীমা দিতে [PDF সুরক্ষিত করুন](/tools/protect-pdf) ব্যবহার করুন; পাসওয়ার্ড নিরাপদ চ্যানেলের বিকল্প নয়।",
+                "x": "খোলার সীমা দিতে [PDF সুরক্ষিত করুন](/tools/protect-pdf) ব্যবহার করুন; পাসওয়ার্ড নিরাপদ চ্যানেলের বিকল্প নয়।"
+              },
+              {
+                "h": "সাধারণ বৈশিষ্ট্যের জন্য [মেটাডেটা সরান](/tools/remove-metadata) এবং দৃশ্যমান তথ্য সত্যিই বাদ দিতে [PDF রিড্যাক্ট করুন](/tools/redact-pdf)।",
+                "x": "সাধারণ বৈশিষ্ট্যের জন্য [মেটাডেটা সরান](/tools/remove-metadata) এবং দৃশ্যমান তথ্য সত্যিই বাদ দিতে [PDF রিড্যাক্ট করুন](/tools/redact-pdf)।"
+              },
+              {
+                "h": "নাম, পৃষ্ঠা, মন্তব্য ও সংযুক্তি দেখুন। বাদ দেওয়া তথ্য পুনরুদ্ধার করা যায় না তা নিশ্চিত করুন।",
+                "x": "নাম, পৃষ্ঠা, মন্তব্য ও সংযুক্তি দেখুন। বাদ দেওয়া তথ্য পুনরুদ্ধার করা যায় না তা নিশ্চিত করুন।"
+              },
+              {
+                "h": "প্রাপকের পরিচয় নিশ্চিত করে অনুমোদিত চ্যানেলে পাঠান। দরকার হলে পাসওয়ার্ড আলাদা মাধ্যমে দিন।",
+                "x": "প্রাপকের পরিচয় নিশ্চিত করে অনুমোদিত চ্যানেলে পাঠান। দরকার হলে পাসওয়ার্ড আলাদা মাধ্যমে দিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "protect-pdf",
+            "x": "PDF সুরক্ষিত করুন লোকাল হিসেবে চিহ্নিত টুল ট্যাবেই ফাইল প্রসেস করে। কিছু কাজ সার্ভার ব্যবহার করে এবং আগে জানায়; ফাইল যোগের আগে নোটিশ পড়ুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সঠিক সুরক্ষা বেছে নিন"
+          },
+          {
+            "t": "table",
+            "head": [
+              "প্রয়োজন",
+              "কাজ",
+              "সীমা"
+            ],
+            "rows": [
+              [
+                "অনিচ্ছাকৃত খোলা ঠেকানো",
+                "পাসওয়ার্ড দিন",
+                "অনুমোদিত প্রাপকের কপি ঠেকায় না।"
+              ],
+              [
+                "তথ্য গোপন করা",
+                "প্রকৃত রিড্যাকশন",
+                "তথ্য ফেরত আনা যায় না নিশ্চিত করুন।"
+              ],
+              [
+                "বৈশিষ্ট্য সরানো",
+                "মেটাডেটা সরান",
+                "দৃশ্যমান লেখা বা সব এমবেডেড তথ্য মুছবে না।"
+              ],
+              [
+                "প্রাপক নিয়ন্ত্রণ",
+                "অনুমোদিত চ্যানেল",
+                "PDF সেটিং চ্যানেল নিয়ন্ত্রণের বিকল্প নয়।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "লোকাল প্রসেসিং কেন গুরুত্বপূর্ণ"
+          },
+          {
+            "t": "p",
+            "x": "লোকাল প্রসেসিং ব্যাংক বিবরণী, চুক্তি ও চিকিৎসার নথির অপ্রয়োজনীয় সার্ভার স্থানান্তর কমায়। টুলের নোটিশ দেখুন; কিছু বিশেষ রূপান্তর সার্ভার ব্যবহার করে এবং আগে জানায়।"
+          },
+          {
+            "t": "h2",
+            "x": "পাঠানোর আগে ফাইল পরীক্ষা করুন"
+          },
+          {
+            "t": "p",
+            "x": "চূড়ান্ত কপি খুলে প্রতিটি পৃষ্ঠা দেখুন। কালো আয়তক্ষেত্র কেবল লেখা ঢাকতে পারে। প্রকৃত রিড্যাকশন করুন এবং মন্তব্য, ফর্ম ও সংযুক্তিও পরীক্ষা করুন। পর্যালোচিত ফাইল [PDF মার্জ](/tools/merge-pdf) দিয়ে একত্র করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF ও অন্যান্য বিকল্প"
+          },
+          {
+            "t": "table",
+            "head": [
+              "বিকল্প",
+              "প্রসেসিং",
+              "যা দেখবেন"
+            ],
+            "rows": [
+              [
+                "লোকাল PrintxPDF",
+                "চিহ্নিত থাকলে ব্রাউজার ট্যাবে",
+                "টুল নোটিশ ও চূড়ান্ত পরীক্ষা।"
+              ],
+              [
+                "ক্লাউড টুল",
+                "দূরবর্তী সার্ভার",
+                "সংরক্ষণ, প্রবেশ, মুছে ফেলা, অনুমতি।"
+              ],
+              [
+                "ডেস্কটপ অ্যাপ",
+                "ডিভাইসে",
+                "উৎস, অনুমতি, আপডেট ও ব্যাকআপ।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "পাঠানোর রেকর্ড রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "স্পষ্ট ফাইলের নাম দিন এবং প্রতিষ্ঠানের নীতি মানুন। নিরাপত্তা ডিভাইস, অ্যাকাউন্ট ও শেয়ারিং চ্যানেলের ওপরও নির্ভর করে।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ইমেইলে গোপন PDF পাঠানো কি নিরাপদ?",
+            "a": "এটি তথ্যের ধরন ও প্রযোজ্য নিয়মের ওপর নির্ভর করে। অনুমোদিত চ্যানেল ব্যবহার করুন, প্রাপক যাচাই করুন এবং দরকার হলে পাসওয়ার্ড আলাদা করে পাঠান।"
+          },
+          {
+            "q": "পাসওয়ার্ড কি PDF-কে পুরোপুরি সুরক্ষিত করে?",
+            "a": "না। এটি খোলা সীমিত করতে পারে, কিন্তু অনুমোদিত ব্যক্তিকে কপি বা ছবি তোলা থেকে আটকায় না। অতিরিক্ত অ্যাক্সেস নিয়ন্ত্রণ রাখুন।"
+          },
+          {
+            "q": "কালো বাক্স কি গোপন তথ্য মুছে দেয়?",
+            "a": "সবসময় নয়। এটি লেখাকে ঢাকতে পারে, মুছতে নয়। প্রকৃত রিড্যাকশন ব্যবহার করুন এবং তথ্য উদ্ধার করা যায় না তা যাচাই করুন।"
+          },
+          {
+            "q": "PrintxPDF কি নথি আপলোড করে?",
+            "a": "লোকাল হিসেবে চিহ্নিত টুল ট্যাবে ফাইল প্রসেস করে। কিছু কাজ সার্ভার ব্যবহার করে এবং আগে জানায়; টুলের নোটিশ পড়ুন।"
           }
         ],
         "published": "2026-11-15",
@@ -8182,6 +9007,169 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "send-confidential-pdf-safely",
+        "slug": "send-confidential-pdf-safely",
+        "title": "Cách gửi PDF mật an toàn",
+        "metaTitle": "Gửi PDF mật an toàn",
+        "metaDescription": "Tạo và kiểm tra bản sao trước khi gửi PDF mật. Dùng công cụ miễn phí trên trình duyệt, không cần đăng ký hay có hình mờ.",
+        "keyword": "gui-pdf-bao-mat-an-toan",
+        "secondaryKeywords": [
+          "gửi PDF bảo mật",
+          "bảo vệ PDF trước khi chia sẻ",
+          "xóa siêu dữ liệu PDF"
+        ],
+        "answer": "Để gửi PDF mật an toàn, hãy giữ bản gốc, kiểm tra một bản sao riêng và dùng kênh chia sẻ được phê duyệt. Mật khẩu, che thông tin thực sự và xóa siêu dữ liệu giải quyết các vấn đề khác nhau. Công cụ cơ bản của PrintxPDF miễn phí, không cần đăng ký hay có hình mờ; tác vụ được đánh dấu xử lý cục bộ chạy trong tab trình duyệt.",
+        "tool": "protect-pdf",
+        "ctaLabel": "Bảo vệ PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Để gửi PDF mật an toàn, hãy giữ bản gốc, kiểm tra một bản sao riêng và dùng kênh chia sẻ được phê duyệt. Mật khẩu, che thông tin thực sự và xóa siêu dữ liệu giải quyết các vấn đề khác nhau. Công cụ cơ bản của PrintxPDF miễn phí, không cần đăng ký hay có hình mờ; tác vụ được đánh dấu xử lý cục bộ chạy trong tab trình duyệt. Xử lý cục bộ giảm việc chuyển sao kê ngân hàng, hợp đồng và hồ sơ y tế lên máy chủ không cần thiết. Hãy xem thông báo của công cụ; một số chuyển đổi đặc biệt dùng máy chủ và báo trước."
+          },
+          {
+            "t": "h2",
+            "x": "Cách chuẩn bị PDF mật để chia sẻ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ bản gốc chưa chỉnh sửa ở nơi được phê duyệt.",
+                "x": "Giữ bản gốc chưa chỉnh sửa ở nơi được phê duyệt."
+              },
+              {
+                "h": "Dùng [Bảo vệ PDF](/tools/protect-pdf) để hạn chế mở; mật khẩu không thay thế kênh chia sẻ an toàn.",
+                "x": "Dùng [Bảo vệ PDF](/tools/protect-pdf) để hạn chế mở; mật khẩu không thay thế kênh chia sẻ an toàn."
+              },
+              {
+                "h": "Dùng [Xóa siêu dữ liệu](/tools/remove-metadata) cho thuộc tính chuẩn và [Che nội dung PDF](/tools/redact-pdf) để xóa nội dung hiển thị thực sự.",
+                "x": "Dùng [Xóa siêu dữ liệu](/tools/remove-metadata) cho thuộc tính chuẩn và [Che nội dung PDF](/tools/redact-pdf) để xóa nội dung hiển thị thực sự."
+              },
+              {
+                "h": "Kiểm tra tên, trang, nhận xét, tệp đính kèm và bảo đảm nội dung đã che không thể khôi phục.",
+                "x": "Kiểm tra tên, trang, nhận xét, tệp đính kèm và bảo đảm nội dung đã che không thể khôi phục."
+              },
+              {
+                "h": "Xác nhận người nhận và dùng kênh được phê duyệt. Khi cần, gửi mật khẩu qua kênh riêng.",
+                "x": "Xác nhận người nhận và dùng kênh được phê duyệt. Khi cần, gửi mật khẩu qua kênh riêng."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "protect-pdf",
+            "x": "Bảo vệ PDF Công cụ được đánh dấu xử lý cục bộ chạy trong tab. Một số tác vụ dùng máy chủ và thông báo trước; hãy đọc thông báo trước khi thêm tệp."
+          },
+          {
+            "t": "h2",
+            "x": "Chọn biện pháp bảo vệ phù hợp"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Nhu cầu",
+              "Thao tác",
+              "Giới hạn"
+            ],
+            "rows": [
+              [
+                "Ngăn mở tùy tiện",
+                "Đặt mật khẩu",
+                "Không ngăn người nhận được phép sao chép."
+              ],
+              [
+                "Ẩn nội dung",
+                "Che thật sự",
+                "Kiểm tra không thể khôi phục nội dung."
+              ],
+              [
+                "Xóa thuộc tính",
+                "Xóa siêu dữ liệu",
+                "Không xóa chữ hiển thị hay mọi dữ liệu nhúng."
+              ],
+              [
+                "Kiểm soát người nhận",
+                "Kênh được duyệt",
+                "Cài đặt PDF không thay thế kiểm soát kênh."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao xử lý cục bộ quan trọng"
+          },
+          {
+            "t": "p",
+            "x": "Xử lý cục bộ giảm việc chuyển sao kê ngân hàng, hợp đồng và hồ sơ y tế lên máy chủ không cần thiết. Hãy xem thông báo của công cụ; một số chuyển đổi đặc biệt dùng máy chủ và báo trước."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra tệp trước khi gửi"
+          },
+          {
+            "t": "p",
+            "x": "Mở bản tải xuống và xem từng trang. Hình chữ nhật đen có thể chỉ che chữ. Hãy dùng tính năng che nội dung thực sự và kiểm tra chú thích, biểu mẫu, tệp đính kèm. [Gộp PDF](/tools/merge-pdf) các tệp đã kiểm tra."
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF và các lựa chọn khác"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Lựa chọn",
+              "Nơi xử lý",
+              "Cần kiểm tra"
+            ],
+            "rows": [
+              [
+                "PrintxPDF cục bộ",
+                "Trong tab khi được ghi rõ",
+                "Thông báo công cụ và kiểm tra cuối."
+              ],
+              [
+                "Công cụ đám mây",
+                "Máy chủ từ xa",
+                "Lưu trữ, truy cập, xóa và quyền tải lên."
+              ],
+              [
+                "Ứng dụng máy tính",
+                "Trên thiết bị",
+                "Nguồn, quyền, cập nhật và sao lưu."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Lưu lại thông tin gửi"
+          },
+          {
+            "t": "p",
+            "x": "Đặt tên tệp rõ ràng và tuân theo chính sách của tổ chức. Bảo mật còn phụ thuộc thiết bị, tài khoản và kênh gửi."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Gửi PDF mật qua email có an toàn không?",
+            "a": "Điều đó tùy loại thông tin và quy định áp dụng. Hãy dùng kênh được phê duyệt, xác minh người nhận và gửi mật khẩu riêng khi cần."
+          },
+          {
+            "q": "Mật khẩu có bảo vệ hoàn toàn PDF không?",
+            "a": "Không. Mật khẩu có thể giới hạn việc mở tệp nhưng không ngăn người được phép sao chép hoặc chụp nội dung. Hãy dùng thêm kiểm soát truy cập."
+          },
+          {
+            "q": "Hình chữ nhật đen có xóa dữ liệu mật không?",
+            "a": "Không hẳn. Hình vẽ có thể chỉ phủ lên chữ. Hãy dùng tính năng che nội dung thật và kiểm tra rằng không thể chọn hay khôi phục dữ liệu."
+          },
+          {
+            "q": "PrintxPDF có tải tài liệu lên không?",
+            "a": "Công cụ được đánh dấu cục bộ xử lý tệp trong tab. Một số tác vụ dùng máy chủ và báo trước; hãy xem thông báo của công cụ."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -9539,6 +10527,169 @@
           {
             "q": "编辑元数据会改变可见内容吗？",
             "a": "不会。修改内部属性不会删除可见文字、签名或批注。要遮盖页面内容，请使用脱敏工具并检查结果。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "send-confidential-pdf-safely",
+        "slug": "send-confidential-pdf-safely",
+        "title": "如何安全发送机密 PDF",
+        "metaTitle": "安全发送机密 PDF",
+        "metaDescription": "免费在浏览器中安全准备机密 PDF：免注册、无水印，检查副本并了解本地处理与分享注意事项。",
+        "keyword": "anquan-fasong-jimi-pdf",
+        "secondaryKeywords": [
+          "发送机密 PDF",
+          "分享前保护 PDF",
+          "删除 PDF 元数据"
+        ],
+        "answer": "安全发送机密 PDF 时，请保留原件，检查单独的副本，并使用获批的分享渠道。密码保护、真正删除敏感内容和清除元数据解决的是不同问题。PrintxPDF 基础工具免费，无需注册且没有水印；标注为本地处理的任务会在浏览器标签页中完成。",
+        "tool": "protect-pdf",
+        "ctaLabel": "保护 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "安全发送机密 PDF 时，请保留原件，检查单独的副本，并使用获批的分享渠道。密码保护、真正删除敏感内容和清除元数据解决的是不同问题。PrintxPDF 基础工具免费，无需注册且没有水印；标注为本地处理的任务会在浏览器标签页中完成。 本地处理可减少银行对账单、合同和医疗记录不必要的服务器传输。请查看工具提示：部分特殊转换会使用服务器，并在开始前说明。"
+          },
+          {
+            "t": "h2",
+            "x": "如何准备机密 PDF 以便分享"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "将未修改的原件保存在获批的位置。",
+                "x": "将未修改的原件保存在获批的位置。"
+              },
+              {
+                "h": "如需限制打开，可使用[保护 PDF](/tools/protect-pdf)；密码不能替代安全的分享渠道。",
+                "x": "如需限制打开，可使用[保护 PDF](/tools/protect-pdf)；密码不能替代安全的分享渠道。"
+              },
+              {
+                "h": "用[删除元数据](/tools/remove-metadata)清理常见属性，用[涂黑 PDF](/tools/redact-pdf)真正删除可见敏感内容。",
+                "x": "用[删除元数据](/tools/remove-metadata)清理常见属性，用[涂黑 PDF](/tools/redact-pdf)真正删除可见敏感内容。"
+              },
+              {
+                "h": "检查姓名、页码、批注和附件，并确认涂黑内容无法恢复。",
+                "x": "检查姓名、页码、批注和附件，并确认涂黑内容无法恢复。"
+              },
+              {
+                "h": "确认收件人并使用获批渠道。必要时通过另一渠道发送密码。",
+                "x": "确认收件人并使用获批渠道。必要时通过另一渠道发送密码。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "protect-pdf",
+            "x": "保护 PDF 标注为本地处理的工具会在标签页中处理文件。部分任务会使用服务器并提前说明；添加文件前请阅读提示。"
+          },
+          {
+            "t": "h2",
+            "x": "选择合适的保护方式"
+          },
+          {
+            "t": "table",
+            "head": [
+              "需求",
+              "操作",
+              "限制"
+            ],
+            "rows": [
+              [
+                "限制随意打开",
+                "设置密码",
+                "无法阻止获准的收件人复制。"
+              ],
+              [
+                "隐藏内容",
+                "真正涂黑",
+                "确认内容无法恢复。"
+              ],
+              [
+                "清除属性",
+                "删除元数据",
+                "不会删除可见文字或所有嵌入数据。"
+              ],
+              [
+                "控制收件人",
+                "使用获批渠道",
+                "PDF 设置不能替代渠道访问控制。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "为什么本地处理很重要"
+          },
+          {
+            "t": "p",
+            "x": "本地处理可减少银行对账单、合同和医疗记录不必要的服务器传输。请查看工具提示：部分特殊转换会使用服务器，并在开始前说明。"
+          },
+          {
+            "t": "h2",
+            "x": "发送前检查文件"
+          },
+          {
+            "t": "p",
+            "x": "打开最终文件逐页检查。黑色矩形可能只遮住文字，并未删除。请使用真正的内容涂黑功能，并检查批注、表单和附件。可用[合并 PDF](/tools/merge-pdf)整理已审阅的文件。"
+          },
+          {
+            "t": "h2",
+            "x": "PrintxPDF 与其他选择"
+          },
+          {
+            "t": "table",
+            "head": [
+              "选项",
+              "处理位置",
+              "检查事项"
+            ],
+            "rows": [
+              [
+                "PrintxPDF 本地工具",
+                "注明本地时在浏览器标签页",
+                "工具提示和最终检查。"
+              ],
+              [
+                "云端工具",
+                "远程服务器",
+                "保留、访问、删除及上传授权。"
+              ],
+              [
+                "桌面应用",
+                "设备本机",
+                "软件来源、权限、更新和备份。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "记录交付信息"
+          },
+          {
+            "t": "p",
+            "x": "使用清晰的文件名并遵守组织政策。安全性还取决于设备、账户和分享渠道。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "通过电子邮件发送机密 PDF 安全吗？",
+            "a": "这取决于信息类型和适用规则。请使用获批渠道、核对收件人，并在需要时通过另一渠道发送密码。"
+          },
+          {
+            "q": "密码能完全保护 PDF 吗？",
+            "a": "不能。密码可以限制打开，但无法阻止获准查看的人复制或拍摄内容。还应结合访问控制。"
+          },
+          {
+            "q": "黑色方块能删除机密信息吗？",
+            "a": "不一定。形状可能只是盖住文字，并未删除。请使用真正的涂黑功能，并确认内容无法选择或恢复。"
+          },
+          {
+            "q": "PrintxPDF 会上传我的文档吗？",
+            "a": "标注为本地处理的工具会在标签页处理文件。部分任务会使用服务器并提前说明；请查看工具提示。"
           }
         ],
         "published": "2026-11-15",
