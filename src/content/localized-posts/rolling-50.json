@@ -8606,6 +8606,88 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-to-excel-bank-statements",
+        "slug": "pdf-to-excel-bank-statements",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-excel",
+        "title": "Cómo convertir extractos bancarios PDF a Excel",
+        "metaTitle": "Cómo convertir extractos bancarios PDF a Excel",
+        "metaDescription": "Pasa un extracto bancario PDF a XLSX en tu navegador. Gratis, sin cuenta ni subida; revisa cada importe antes de usarlo.",
+        "answer": "Para convertir un extracto bancario PDF a Excel, usa PDF a Excel para extraer el texto en una hoja por página y luego comprueba las fechas, descripciones, débitos, créditos y saldos. La herramienta separa celdas por espacios amplios, no reconoce las líneas de la tabla, así que verifica los totales con el PDF original antes de importar o analizar transacciones.",
+        "sections": [
+          {
+            "heading": "Convierte un extracto PDF a Excel en cuatro pasos",
+            "paragraphs": [
+              "Para convertir un extracto bancario PDF a Excel, usa PDF a Excel para extraer el texto en una hoja por página y luego comprueba las fechas, descripciones, débitos, créditos y saldos. La herramienta separa celdas por espacios amplios, no reconoce las líneas de la tabla, así que verifica los totales con el PDF original antes de importar o analizar transacciones."
+            ],
+            "steps": [
+              {
+                "heading": "Guarda el PDF original",
+                "text": "Mantén el extracto completo sin cambios. Úsalo como referencia para revisar transacciones, saldo inicial y final, fechas y signos de los importes."
+              },
+              {
+                "heading": "Abre PDF a Excel",
+                "text": "Carga el archivo en [PDF a Excel](/tools/pdf-to-excel). Cada página se convierte en una hoja; cada línea es una fila y los espacios amplios o tabuladores separan celdas."
+              },
+              {
+                "heading": "Revisa y corrige columnas",
+                "text": "Descarga el XLSX y compara varias filas con el extracto. Comprueba que fecha, concepto, débito, crédito y saldo estén en las columnas adecuadas. Las celdas salen como texto; conviértelas a número en Excel antes de sumar."
+              },
+              {
+                "heading": "Reconcilia antes de usar",
+                "text": "Revisa todas las páginas, no solo una muestra. Compara el saldo inicial, el final y el número de movimientos; corrige cualquier columna desplazada antes de importar datos a contabilidad."
+              }
+            ]
+          },
+          {
+            "heading": "Comprueba los datos antes de confiar en la hoja",
+            "paragraphs": [
+              "PDF a Excel no interpreta la estructura financiera ni las líneas dibujadas de la tabla. Separa una línea cuando encuentra espacios anchos o tabulaciones. Si el banco alinea bien las columnas, puede producir una tabla útil; si los textos se ajustan, las columnas están juntas o hay encabezados combinados, tendrás que corregir las celdas a mano.",
+              "Trata cada cifra como dato por verificar. Confirma signos negativos, decimales, separadores de miles, fechas y saldo acumulado. Una descripción larga puede ocupar varias líneas y mover valores a columnas incorrectas. Comprueba que cada saldo cuadre con el saldo anterior más créditos menos débitos, según el formato de tu extracto.",
+              "Si el XLSX queda vacío, puede que el extracto sea un escaneo formado por imágenes. Ejecuta [OCR PDF](/tools/ocr-pdf) primero y después convierte la copia reconocida. El OCR puede confundir dígitos o puntos decimales; compara los importes con el original y no des por correctos los números reconocidos automáticamente.",
+              "La conversión estándar ocurre en tu navegador, por lo que el extracto no se sube a un servidor. Guarda la hoja de cálculo con acceso limitado, elimina columnas que no necesites y revisa destinatarios antes de compartirla. Si solo necesitas determinadas páginas, puedes extraerlas con [Extraer páginas PDF](/tools/extract-pages) antes de convertir."
+            ]
+          }
+        ],
+        "ctaLabel": "Convierte extractos gratis en tu navegador, sin cuenta ni subida.",
+        "faqs": [
+          {
+            "q": "¿Cómo convierto un extracto bancario PDF a Excel?",
+            "a": "Abre PDF a Excel, carga el extracto y descarga el XLSX. Cada página se convierte en una hoja; después compara las columnas y los importes con el PDF. La herramienta divide texto según espacios, así que revisa y reconcilia las transacciones antes de usar los datos."
+          },
+          {
+            "q": "¿PDF a Excel conserva exactamente las columnas de mi banco?",
+            "a": "No siempre. La herramienta detecta espacios amplios entre palabras, no las líneas dibujadas de la tabla. Las columnas con suficiente separación pueden salir bien, pero tablas estrechas o celdas partidas requieren corrección manual. Verifica cada saldo y cada columna frente al extracto."
+          },
+          {
+            "q": "¿Por qué los importes no se pueden sumar en Excel?",
+            "a": "Las celdas se guardan como texto. Selecciona las columnas numéricas y usa Convertir a número o Texto en columnas en Excel. Después revisa decimales, separadores y negativos para confirmar que Excel interpreta cada cantidad correctamente."
+          },
+          {
+            "q": "¿Es seguro convertir un extracto bancario en el navegador?",
+            "a": "El PDF estándar se lee y el XLSX se crea dentro de la pestaña del navegador; no se sube para esta conversión. Aun así, protege el XLSX descargado con controles de acceso y comprueba los datos antes de compartirlo."
+          }
+        ],
+        "keywords": [
+          "cómo convertir extractos bancarios pdf a excel",
+          "PDF to Excel bank statement",
+          "convert bank statement PDF"
+        ],
+        "relatedTools": [
+          "pdf-to-excel",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -17195,6 +17277,88 @@
         ],
         "relatedTools": [
           "pdf-to-word",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-excel-bank-statements",
+        "slug": "pdf-to-excel-bank-statements",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-excel",
+        "title": "Como converter extrato bancário PDF para Excel",
+        "metaTitle": "Como converter extrato bancário PDF para Excel",
+        "metaDescription": "Converta um extrato bancário PDF para XLSX no navegador. Grátis, sem conta nem upload; confira cada valor antes de usar.",
+        "answer": "Para converter um extrato bancário PDF para Excel, use PDF para Excel para extrair o texto em uma planilha por página e depois confira datas, descrições, débitos, créditos e saldos. A ferramenta separa células por espaços largos, não reconhece as linhas da tabela; por isso, reconcilie os totais com o PDF original antes de importar ou analisar transações.",
+        "sections": [
+          {
+            "heading": "Converta um extrato PDF para Excel em quatro etapas",
+            "paragraphs": [
+              "Para converter um extrato bancário PDF para Excel, use PDF para Excel para extrair o texto em uma planilha por página e depois confira datas, descrições, débitos, créditos e saldos. A ferramenta separa células por espaços largos, não reconhece as linhas da tabela; por isso, reconcilie os totais com o PDF original antes de importar ou analisar transações."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o PDF original",
+                "text": "Mantenha o extrato completo sem alterações. Use-o como referência para conferir transações, saldo inicial e final, datas e sinais dos valores."
+              },
+              {
+                "heading": "Abra PDF para Excel",
+                "text": "Carregue o arquivo em [PDF para Excel](/tools/pdf-to-excel). Cada página vira uma planilha; cada linha vira uma linha de planilha, e espaços largos ou tabulações separam células."
+              },
+              {
+                "heading": "Revise e corrija colunas",
+                "text": "Baixe o XLSX e compare várias linhas com o extrato. Confira se data, descrição, débito, crédito e saldo estão nas colunas certas. As células chegam como texto; converta-as em números no Excel antes de somar."
+              },
+              {
+                "heading": "Reconcilie antes de usar",
+                "text": "Confira todas as páginas, não apenas uma amostra. Compare saldo inicial, final e quantidade de lançamentos; corrija colunas deslocadas antes de importar os dados para a contabilidade."
+              }
+            ]
+          },
+          {
+            "heading": "Confira os dados antes de confiar na planilha",
+            "paragraphs": [
+              "PDF para Excel não interpreta a estrutura financeira nem as linhas desenhadas da tabela. Ele divide uma linha quando encontra espaços largos ou tabulações. Se o banco alinha bem as colunas, o resultado pode ser útil; se os textos quebram, as colunas ficam próximas ou os cabeçalhos se mesclam, será preciso corrigir as células manualmente.",
+              "Trate cada valor como dado a verificar. Confira sinais negativos, decimais, separadores de milhar, datas e saldo acumulado. Uma descrição longa pode ocupar várias linhas e deslocar valores para colunas erradas. Confirme se cada saldo corresponde ao anterior mais créditos menos débitos, de acordo com o formato do extrato.",
+              "Se o XLSX ficar vazio, o extrato pode ser um escaneamento composto por imagens. Execute [OCR PDF](/tools/ocr-pdf) primeiro e depois converta a cópia reconhecida. OCR pode confundir dígitos ou pontos decimais; compare os valores com o original e não confie automaticamente nos números reconhecidos.",
+              "A conversão padrão ocorre no navegador, então o extrato não é enviado a um servidor. Salve a planilha com acesso restrito, remova colunas desnecessárias e confira os destinatários antes de compartilhar. Se precisar apenas de algumas páginas, extraia-as com [Extrair páginas do PDF](/tools/extract-pages) antes da conversão."
+            ]
+          }
+        ],
+        "ctaLabel": "Converta extratos grátis no navegador, sem conta nem upload.",
+        "faqs": [
+          {
+            "q": "Como converter um extrato bancário PDF para Excel?",
+            "a": "Abra PDF para Excel, carregue o extrato e baixe o XLSX. Cada página vira uma planilha; depois compare colunas e valores com o PDF. A ferramenta separa texto pelo espaçamento, então revise e reconcilie as transações antes de usar os dados."
+          },
+          {
+            "q": "PDF para Excel preserva exatamente as colunas do banco?",
+            "a": "Nem sempre. A ferramenta detecta espaços largos entre palavras, não as linhas desenhadas da tabela. Colunas bem separadas podem funcionar, mas tabelas apertadas ou células quebradas exigem correção manual. Confira cada saldo e coluna no extrato original."
+          },
+          {
+            "q": "Por que não consigo somar os valores no Excel?",
+            "a": "As células são gravadas como texto. Selecione as colunas numéricas e use Converter em Número ou Texto para Colunas no Excel. Depois confira decimais, separadores e valores negativos para confirmar a interpretação dos números."
+          },
+          {
+            "q": "É seguro converter um extrato bancário no navegador?",
+            "a": "O PDF comum é lido e o XLSX criado dentro da aba do navegador; ele não é enviado para essa conversão. Ainda assim, proteja a planilha baixada com controles de acesso e confira os dados antes de compartilhá-la."
+          }
+        ],
+        "keywords": [
+          "como converter extrato bancário pdf para excel",
+          "PDF to Excel bank statement",
+          "convert bank statement PDF"
+        ],
+        "relatedTools": [
+          "pdf-to-excel",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
@@ -25806,6 +25970,88 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-to-excel-bank-statements",
+        "slug": "pdf-to-excel-bank-statements",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-excel",
+        "title": "PDF बैंक स्टेटमेंट को Excel में कैसे बदलें",
+        "metaTitle": "PDF बैंक स्टेटमेंट को Excel में कैसे बदलें",
+        "metaDescription": "PDF बैंक स्टेटमेंट को ब्राउज़र में XLSX में बदलें। मुफ्त, बिना खाते या अपलोड के; उपयोग से पहले हर राशि जांचें।",
+        "answer": "PDF बैंक स्टेटमेंट को Excel में बदलने के लिए PDF to Excel से हर पेज का टेक्स्ट अलग शीट में निकालें, फिर तारीख, विवरण, डेबिट, क्रेडिट और बैलेंस जांचें। टूल चौड़ी जगहों से सेल अलग करता है, टेबल की रेखाएं नहीं पहचानता। लेन-देन आयात या विश्लेषण से पहले कुल राशि मूल PDF से मिलाएं।",
+        "sections": [
+          {
+            "heading": "चार चरणों में PDF स्टेटमेंट Excel में बदलें",
+            "paragraphs": [
+              "PDF बैंक स्टेटमेंट को Excel में बदलने के लिए PDF to Excel से हर पेज का टेक्स्ट अलग शीट में निकालें, फिर तारीख, विवरण, डेबिट, क्रेडिट और बैलेंस जांचें। टूल चौड़ी जगहों से सेल अलग करता है, टेबल की रेखाएं नहीं पहचानता। लेन-देन आयात या विश्लेषण से पहले कुल राशि मूल PDF से मिलाएं।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल PDF रखें",
+                "text": "पूरा स्टेटमेंट बिना बदलाव सुरक्षित रखें। लेन-देन, शुरुआती और अंतिम बैलेंस, तारीख और राशि के चिह्न जांचने के लिए यही संदर्भ होगा।"
+              },
+              {
+                "heading": "PDF to Excel खोलें",
+                "text": "फ़ाइल [PDF to Excel](/tools/pdf-to-excel) में दें। हर पेज अलग शीट बनता है; हर टेक्स्ट लाइन एक पंक्ति बनती है और चौड़े स्पेस या टैब सेल अलग करते हैं।"
+              },
+              {
+                "heading": "कॉलम जांचें और सुधारें",
+                "text": "XLSX डाउनलोड करके कई पंक्तियों को स्टेटमेंट से मिलाएं। तारीख, विवरण, डेबिट, क्रेडिट और बैलेंस सही कॉलम में हैं या नहीं देखें। सेल टेक्स्ट के रूप में आते हैं; जोड़ने से पहले Excel में नंबर में बदलें।"
+              },
+              {
+                "heading": "उपयोग से पहले मिलान करें",
+                "text": "केवल नमूना नहीं, सभी पेज जांचें। शुरुआती और अंतिम बैलेंस तथा लेन-देन की संख्या मिलाएं; लेखांकन में आयात से पहले खिसके कॉलम सुधारें।"
+              }
+            ]
+          },
+          {
+            "heading": "स्प्रेडशीट पर भरोसे से पहले डेटा जांचें",
+            "paragraphs": [
+              "PDF to Excel वित्तीय संरचना या टेबल की खींची रेखाओं को नहीं समझता। यह चौड़े स्पेस या टैब मिलने पर टेक्स्ट लाइन को बांटता है। बैंक ने कॉलम साफ़ रखे हों तो तालिका उपयोगी बन सकती है; टेक्स्ट लिपटा हो, कॉलम पास हों या हेडर मिले हों तो सेल हाथ से सुधारें।",
+              "हर राशि को जांचने योग्य डेटा मानें। ऋणात्मक चिह्न, दशमलव, हजार विभाजक, तारीख और चलता बैलेंस जांचें। लंबा विवरण कई लाइनों में जा सकता है और राशि गलत कॉलम में डाल सकता है। स्टेटमेंट के प्रारूप के अनुसार पिछले बैलेंस + क्रेडिट - डेबिट से हर बैलेंस मिलाएं।",
+              "XLSX खाली हो तो स्टेटमेंट स्कैन की गई इमेज हो सकता है। पहले [OCR PDF](/tools/ocr-pdf) चलाएं और फिर पहचानी गई कॉपी बदलें। OCR अंक या दशमलव बिंदु गलत पढ़ सकता है; हर राशि मूल से मिलाएं और स्वतः पहचाने नंबरों पर बिना जांच भरोसा न करें।",
+              "सामान्य कन्वर्ज़न ब्राउज़र में होता है, इसलिए स्टेटमेंट सर्वर पर अपलोड नहीं होता। डाउनलोड की स्प्रेडशीट को सीमित एक्सेस में रखें, अनावश्यक कॉलम हटाएं और साझा करने से पहले प्राप्तकर्ता जांचें। केवल कुछ पेज चाहिए तो कन्वर्ट से पहले [Extract Pages](/tools/extract-pages) चलाएं।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में स्टेटमेंट मुफ्त बदलें, बिना खाते या अपलोड के।",
+        "faqs": [
+          {
+            "q": "PDF बैंक स्टेटमेंट को Excel में कैसे बदलूं?",
+            "a": "PDF to Excel खोलें, स्टेटमेंट दें और XLSX डाउनलोड करें। हर पेज अलग शीट बनेगा; फिर कॉलम और राशि PDF से मिलाएं। टूल स्पेसिंग से टेक्स्ट बांटता है, इसलिए डेटा उपयोग से पहले लेन-देन जांचकर मिलाएं।"
+          },
+          {
+            "q": "क्या PDF to Excel बैंक के कॉलम बिल्कुल वैसे रखता है?",
+            "a": "हमेशा नहीं। टूल शब्दों के बीच चौड़ी जगह पहचानता है, टेबल की खींची रेखाएं नहीं। पर्याप्त जगह वाले कॉलम ठीक आ सकते हैं, पर तंग टेबल या टूटे सेल हाथ से सुधारने होंगे। हर बैलेंस और कॉलम मूल स्टेटमेंट से जांचें।"
+          },
+          {
+            "q": "Excel में राशि जुड़ क्यों नहीं रही?",
+            "a": "सेल टेक्स्ट के रूप में लिखे जाते हैं। संख्या वाले कॉलम चुनकर Excel में Convert to Number या Text to Columns इस्तेमाल करें। फिर दशमलव, विभाजक और ऋणात्मक राशि जांचें कि Excel ने सही पढ़ी है।"
+          },
+          {
+            "q": "क्या ब्राउज़र में बैंक स्टेटमेंट कन्वर्ट करना सुरक्षित है?",
+            "a": "सामान्य PDF पढ़ा जाता है और XLSX ब्राउज़र टैब में बनता है; इस कन्वर्ज़न में फ़ाइल अपलोड नहीं होती। फिर भी डाउनलोड की शीट पर एक्सेस नियंत्रण लगाएं और साझा करने से पहले डेटा जांचें।"
+          }
+        ],
+        "keywords": [
+          "pdf बैंक स्टेटमेंट को excel में कैसे बदलें",
+          "PDF to Excel bank statement",
+          "convert bank statement PDF"
+        ],
+        "relatedTools": [
+          "pdf-to-excel",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -34404,6 +34650,88 @@
         ],
         "relatedTools": [
           "pdf-to-word",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-excel-bank-statements",
+        "slug": "pdf-to-excel-bank-statements",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-excel",
+        "title": "كيفية تحويل كشف حساب بنكي PDF إلى Excel",
+        "metaTitle": "كيفية تحويل كشف حساب بنكي PDF إلى Excel",
+        "metaDescription": "حوّل كشف الحساب البنكي من PDF إلى XLSX في المتصفح. مجاناً، بلا حساب أو رفع؛ راجع كل مبلغ قبل استخدامه.",
+        "answer": "لتحويل كشف حساب بنكي PDF إلى Excel، استخدم PDF to Excel لاستخراج النص في ورقة لكل صفحة، ثم تحقق من التواريخ والأوصاف والخصم والإيداع والأرصدة. تفصل الأداة الخلايا حسب المسافات الواسعة ولا تتعرف على خطوط الجدول؛ لذا طابق الإجماليات مع PDF الأصلي قبل استيراد المعاملات أو تحليلها.",
+        "sections": [
+          {
+            "heading": "تحويل كشف PDF إلى Excel في أربع خطوات",
+            "paragraphs": [
+              "لتحويل كشف حساب بنكي PDF إلى Excel، استخدم PDF to Excel لاستخراج النص في ورقة لكل صفحة، ثم تحقق من التواريخ والأوصاف والخصم والإيداع والأرصدة. تفصل الأداة الخلايا حسب المسافات الواسعة ولا تتعرف على خطوط الجدول؛ لذا طابق الإجماليات مع PDF الأصلي قبل استيراد المعاملات أو تحليلها."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بملف PDF الأصلي",
+                "text": "احتفظ بالكشف كاملاً دون تعديل. استخدمه مرجعاً لمراجعة المعاملات والأرصدة الافتتاحية والختامية والتواريخ وإشارات المبالغ."
+              },
+              {
+                "heading": "افتح PDF to Excel",
+                "text": "حمّل الملف في [PDF to Excel](/tools/pdf-to-excel). تصبح كل صفحة ورقة، وكل سطر صفاً، وتفصل المسافات الواسعة أو علامات الجدولة بين الخلايا."
+              },
+              {
+                "heading": "راجع الأعمدة وصححها",
+                "text": "نزّل XLSX وقارن عدة صفوف بالكشف. تحقق من وضع التاريخ والوصف والخصم والإيداع والرصيد في الأعمدة الصحيحة. تُكتب الخلايا كنص؛ حوّلها إلى أرقام في Excel قبل الجمع."
+              },
+              {
+                "heading": "طابق البيانات قبل الاستخدام",
+                "text": "راجع الصفحات كلها لا عينة فقط. قارن الرصيد الافتتاحي والختامي وعدد الحركات، وصحح أي عمود مزاح قبل استيراد البيانات للمحاسبة."
+              }
+            ]
+          },
+          {
+            "heading": "تحقق من البيانات قبل الاعتماد على الجدول",
+            "paragraphs": [
+              "لا تفسر PDF to Excel البنية المالية أو الخطوط المرسومة للجدول. تفصل السطر عند وجود مسافات واسعة أو علامات جدولة. إذا كانت أعمدة البنك متباعدة بوضوح فقد ينتج جدولاً مفيداً؛ أما التفاف النص أو تقارب الأعمدة أو تداخل الرؤوس فيتطلب تصحيحاً يدوياً للخلايا.",
+              "تعامل مع كل مبلغ كبيان يحتاج إلى تحقق. راجع الإشارات السالبة والفواصل العشرية وفواصل الآلاف والتواريخ والرصيد الجاري. قد يمتد الوصف الطويل إلى عدة أسطر وينقل القيم إلى أعمدة خاطئة. تحقق من أن كل رصيد يساوي السابق مضافاً إليه الإيداعات ومطروحاً منه الخصومات، وفق تنسيق الكشف.",
+              "إذا كان XLSX فارغاً، فقد يكون الكشف مسحاً ضوئياً من صور. شغّل [OCR PDF](/tools/ocr-pdf) أولاً ثم حوّل النسخة التي تعرف عليها. قد يخلط OCR بين الأرقام والنقاط العشرية؛ قارن المبالغ بالأصل ولا تعتمد على الأرقام المستخرجة تلقائياً دون مراجعة.",
+              "تتم المعالجة القياسية في المتصفح، لذلك لا يُرفع الكشف إلى خادم. احفظ جدول البيانات بصلاحيات محدودة، واحذف الأعمدة غير اللازمة، وتحقق من المستلمين قبل المشاركة. إذا احتجت صفحات معينة فقط، استخرجها عبر [Extract Pages](/tools/extract-pages) قبل التحويل."
+            ]
+          }
+        ],
+        "ctaLabel": "حوّل الكشف مجاناً في المتصفح، بلا حساب أو رفع للملف.",
+        "faqs": [
+          {
+            "q": "كيف أحوّل كشف حساب بنكي PDF إلى Excel؟",
+            "a": "افتح PDF to Excel وحمّل الكشف ونزّل XLSX. تصبح كل صفحة ورقة؛ ثم قارن الأعمدة والمبالغ مع PDF. تفصل الأداة النص حسب المسافات، لذا راجع المعاملات وطابقها قبل استخدام البيانات."
+          },
+          {
+            "q": "هل يحافظ PDF to Excel على أعمدة البنك تماماً؟",
+            "a": "ليس دائماً. تتعرف الأداة على المسافات الواسعة بين الكلمات، لا على خطوط الجدول. قد تنجح الأعمدة المتباعدة جيداً، لكن الجداول الضيقة أو الخلايا الملتفة تحتاج إلى تصحيح يدوي. تحقق من كل رصيد وعمود في الكشف الأصلي."
+          },
+          {
+            "q": "لماذا لا أستطيع جمع المبالغ في Excel؟",
+            "a": "تُكتب الخلايا كنص. حدد أعمدة الأرقام واستخدم Convert to Number أو Text to Columns في Excel. ثم تحقق من الفواصل العشرية وفواصل الآلاف والقيم السالبة لضمان تفسير الأرقام بشكل صحيح."
+          },
+          {
+            "q": "هل تحويل كشف الحساب في المتصفح آمن؟",
+            "a": "تُقرأ نسخة PDF العادية ويُنشأ XLSX داخل علامة تبويب المتصفح؛ ولا يُرفع الملف لهذا التحويل. مع ذلك، احمِ جدول البيانات الذي نزّلته بصلاحيات وصول وراجع البيانات قبل مشاركته."
+          }
+        ],
+        "keywords": [
+          "كيفية تحويل كشف حساب بنكي pdf إلى excel",
+          "PDF to Excel bank statement",
+          "convert bank statement PDF"
+        ],
+        "relatedTools": [
+          "pdf-to-excel",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
@@ -43027,6 +43355,88 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-to-excel-bank-statements",
+        "slug": "pdf-to-excel-bank-statements",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-excel",
+        "title": "PDF ব্যাংক স্টেটমেন্ট Excel-এ কীভাবে রূপান্তর করবেন",
+        "metaTitle": "PDF ব্যাংক স্টেটমেন্ট Excel-এ কীভাবে রূপান্তর করবেন",
+        "metaDescription": "PDF ব্যাংক স্টেটমেন্ট ব্রাউজারে XLSX-এ রূপান্তর করুন। বিনামূল্যে, অ্যাকাউন্ট বা আপলোড ছাড়া; ব্যবহারের আগে প্রতিটি অঙ্ক যাচাই করুন।",
+        "answer": "PDF ব্যাংক স্টেটমেন্ট Excel-এ নিতে PDF to Excel দিয়ে প্রতি পৃষ্ঠার লেখা আলাদা শিটে বের করুন, তারপর তারিখ, বিবরণ, ডেবিট, ক্রেডিট ও ব্যালেন্স দেখুন। টুলটি বড় ফাঁক দিয়ে সেল ভাগ করে, টেবিলের রেখা চেনে না। লেনদেন আমদানি বা বিশ্লেষণের আগে মোট অঙ্ক মূল PDF-এর সঙ্গে মিলিয়ে নিন।",
+        "sections": [
+          {
+            "heading": "চার ধাপে PDF স্টেটমেন্ট Excel-এ নিন",
+            "paragraphs": [
+              "PDF ব্যাংক স্টেটমেন্ট Excel-এ নিতে PDF to Excel দিয়ে প্রতি পৃষ্ঠার লেখা আলাদা শিটে বের করুন, তারপর তারিখ, বিবরণ, ডেবিট, ক্রেডিট ও ব্যালেন্স দেখুন। টুলটি বড় ফাঁক দিয়ে সেল ভাগ করে, টেবিলের রেখা চেনে না। লেনদেন আমদানি বা বিশ্লেষণের আগে মোট অঙ্ক মূল PDF-এর সঙ্গে মিলিয়ে নিন।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল PDF রাখুন",
+                "text": "সম্পূর্ণ স্টেটমেন্ট অপরিবর্তিত রাখুন। লেনদেন, প্রারম্ভিক ও শেষ ব্যালেন্স, তারিখ এবং অঙ্কের চিহ্ন যাচাইয়ের জন্য এটিই রেফারেন্স।"
+              },
+              {
+                "heading": "PDF to Excel খুলুন",
+                "text": "ফাইল [PDF to Excel](/tools/pdf-to-excel)-এ দিন। প্রতিটি পৃষ্ঠা আলাদা শিট হয়; প্রতিটি লাইন সারি হয় এবং বড় ফাঁক বা ট্যাব সেল আলাদা করে।"
+              },
+              {
+                "heading": "কলাম যাচাই ও সংশোধন করুন",
+                "text": "XLSX নামিয়ে কয়েকটি সারি স্টেটমেন্টের সঙ্গে মিলিয়ে দেখুন। তারিখ, বিবরণ, ডেবিট, ক্রেডিট ও ব্যালেন্স সঠিক কলামে আছে কি না দেখুন। সেলগুলো টেক্সট হয়; যোগের আগে Excel-এ সংখ্যায় বদলান।"
+              },
+              {
+                "heading": "ব্যবহারের আগে মিলিয়ে নিন",
+                "text": "শুধু নমুনা নয়, সব পৃষ্ঠা দেখুন। প্রারম্ভিক ও শেষ ব্যালেন্স এবং লেনদেনের সংখ্যা মিলিয়ে হিসাব ব্যবস্থায় আমদানির আগে সরানো কলাম ঠিক করুন।"
+              }
+            ]
+          },
+          {
+            "heading": "স্প্রেডশিট ব্যবহারের আগে তথ্য যাচাই",
+            "paragraphs": [
+              "PDF to Excel আর্থিক কাঠামো বা টেবিলের আঁকা রেখা বোঝে না। বড় ফাঁক বা ট্যাব পেলে লেখা আলাদা করে। ব্যাংক কলাম যথেষ্ট ফাঁক দিয়ে সাজালে ফল কাজে লাগতে পারে; লেখা মোড়ানো, কলাম কাছাকাছি বা শিরোনাম মিশে গেলে সেল হাতে ঠিক করতে হবে।",
+              "প্রতিটি অঙ্ক যাচাইযোগ্য তথ্য হিসেবে ধরুন। ঋণাত্মক চিহ্ন, দশমিক, হাজার বিভাজক, তারিখ এবং চলতি ব্যালেন্স পরীক্ষা করুন। লম্বা বিবরণ কয়েক লাইনে গিয়ে অঙ্ক ভুল কলামে সরাতে পারে। স্টেটমেন্টের নিয়ম অনুযায়ী আগের ব্যালেন্স + ক্রেডিট - ডেবিট করে প্রতিটি ব্যালেন্স মিলিয়ে দেখুন।",
+              "XLSX ফাঁকা হলে স্টেটমেন্টটি ছবি-ভিত্তিক স্ক্যান হতে পারে। আগে [OCR PDF](/tools/ocr-pdf) চালিয়ে পরে স্বীকৃত কপি রূপান্তর করুন। OCR অঙ্ক বা দশমিক বিন্দু ভুল পড়তে পারে; প্রতিটি অঙ্ক মূলের সঙ্গে মেলান এবং স্বয়ংক্রিয় শনাক্তকরণ যাচাই ছাড়া গ্রহণ করবেন না।",
+              "সাধারণ রূপান্তর ব্রাউজারেই হয়, তাই স্টেটমেন্ট সার্ভারে আপলোড হয় না। ডাউনলোড করা শিট সীমিত অ্যাক্সেসে রাখুন, অপ্রয়োজনীয় কলাম মুছুন এবং শেয়ারের আগে প্রাপক যাচাই করুন। শুধু কিছু পৃষ্ঠা দরকার হলে রূপান্তরের আগে [Extract Pages](/tools/extract-pages) দিয়ে নিন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে স্টেটমেন্ট রূপান্তর করুন, অ্যাকাউন্ট বা আপলোড ছাড়া।",
+        "faqs": [
+          {
+            "q": "PDF ব্যাংক স্টেটমেন্ট Excel-এ কীভাবে রূপান্তর করব?",
+            "a": "PDF to Excel খুলে স্টেটমেন্ট দিন এবং XLSX নামান। প্রতি পৃষ্ঠা আলাদা শিট হবে; তারপর কলাম ও অঙ্ক PDF-এর সঙ্গে মিলান। টুলটি ফাঁক দেখে লেখা ভাগ করে, তাই তথ্য ব্যবহারের আগে লেনদেন যাচাই ও মিলিয়ে নিন।"
+          },
+          {
+            "q": "PDF to Excel কি ব্যাংকের কলাম হুবহু রাখে?",
+            "a": "সবসময় নয়। টুলটি শব্দের মাঝের বড় ফাঁক চেনে, টেবিলের আঁকা রেখা নয়। যথেষ্ট ফাঁক থাকা কলাম ঠিক আসতে পারে, কিন্তু ঘন টেবিল বা ভাঙা সেল হাতে ঠিক করতে হবে। প্রতিটি ব্যালেন্স ও কলাম মূল স্টেটমেন্টে যাচাই করুন।"
+          },
+          {
+            "q": "Excel-এ অঙ্ক যোগ হচ্ছে না কেন?",
+            "a": "সেলগুলো টেক্সট হিসেবে লেখা হয়। সংখ্যার কলাম বেছে Excel-এ Convert to Number বা Text to Columns ব্যবহার করুন। তারপর দশমিক, বিভাজক ও ঋণাত্মক মান পরীক্ষা করুন, যাতে Excel সঠিকভাবে বোঝে।"
+          },
+          {
+            "q": "ব্রাউজারে ব্যাংক স্টেটমেন্ট রূপান্তর নিরাপদ?",
+            "a": "সাধারণ PDF পড়া ও XLSX তৈরি ব্রাউজার ট্যাবে হয়; এই রূপান্তরে ফাইল আপলোড হয় না। তবু নামানো স্প্রেডশিটে অ্যাক্সেস নিয়ন্ত্রণ দিন এবং শেয়ারের আগে তথ্য যাচাই করুন।"
+          }
+        ],
+        "keywords": [
+          "pdf ব্যাংক স্টেটমেন্ট excel-এ কীভাবে রূপান্তর করবেন",
+          "PDF to Excel bank statement",
+          "convert bank statement PDF"
+        ],
+        "relatedTools": [
+          "pdf-to-excel",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -51616,6 +52026,88 @@
         ],
         "relatedTools": [
           "pdf-to-word",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-excel-bank-statements",
+        "slug": "pdf-to-excel-bank-statements",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-excel",
+        "title": "Cách chuyển sao kê ngân hàng PDF sang Excel",
+        "metaTitle": "Cách chuyển sao kê ngân hàng PDF sang Excel",
+        "metaDescription": "Chuyển sao kê ngân hàng PDF sang XLSX trong trình duyệt. Miễn phí, không cần tài khoản hay tải lên; hãy kiểm tra từng số liệu trước khi dùng.",
+        "answer": "Để chuyển sao kê ngân hàng PDF sang Excel, dùng PDF to Excel trích văn bản thành một trang tính cho mỗi trang PDF, rồi kiểm tra ngày, mô tả, khoản ghi nợ, ghi có và số dư. Công cụ tách ô theo khoảng trắng rộng, không nhận diện đường kẻ bảng; hãy đối chiếu tổng với PDF gốc trước khi nhập hoặc phân tích giao dịch.",
+        "sections": [
+          {
+            "heading": "Chuyển sao kê PDF sang Excel qua bốn bước",
+            "paragraphs": [
+              "Để chuyển sao kê ngân hàng PDF sang Excel, dùng PDF to Excel trích văn bản thành một trang tính cho mỗi trang PDF, rồi kiểm tra ngày, mô tả, khoản ghi nợ, ghi có và số dư. Công cụ tách ô theo khoảng trắng rộng, không nhận diện đường kẻ bảng; hãy đối chiếu tổng với PDF gốc trước khi nhập hoặc phân tích giao dịch."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ PDF gốc",
+                "text": "Lưu nguyên sao kê đầy đủ. Dùng nó để đối chiếu giao dịch, số dư đầu và cuối kỳ, ngày tháng và dấu của các khoản tiền."
+              },
+              {
+                "heading": "Mở PDF to Excel",
+                "text": "Tải tệp vào [PDF to Excel](/tools/pdf-to-excel). Mỗi trang PDF thành một sheet; mỗi dòng văn bản thành một hàng và khoảng trắng rộng hoặc tab dùng để tách ô."
+              },
+              {
+                "heading": "Kiểm tra và sửa cột",
+                "text": "Tải XLSX xuống rồi so sánh một số dòng với sao kê. Kiểm tra ngày, mô tả, nợ, có và số dư nằm đúng cột. Ô được ghi dưới dạng văn bản; hãy chuyển sang số trong Excel trước khi tính tổng."
+              },
+              {
+                "heading": "Đối soát trước khi dùng",
+                "text": "Kiểm tra mọi trang, không chỉ mẫu. Đối chiếu số dư đầu, cuối và số giao dịch; sửa cột bị lệch trước khi nhập dữ liệu vào kế toán."
+              }
+            ]
+          },
+          {
+            "heading": "Kiểm tra dữ liệu trước khi sử dụng",
+            "paragraphs": [
+              "PDF to Excel không hiểu cấu trúc tài chính hay các đường kẻ được vẽ trong bảng. Công cụ tách dòng khi gặp khoảng trắng rộng hoặc tab. Nếu ngân hàng căn cột rõ ràng, kết quả có thể dùng được; nếu chữ bị ngắt dòng, cột sát nhau hoặc tiêu đề gộp, bạn cần sửa ô thủ công.",
+              "Coi mỗi số liệu là dữ liệu cần xác minh. Kiểm tra dấu âm, số thập phân, dấu phân cách hàng nghìn, ngày và số dư chạy. Mô tả dài có thể xuống nhiều dòng và đẩy số tiền sang cột khác. Đối chiếu số dư theo công thức số trước cộng tiền vào trừ tiền ra, tùy định dạng sao kê.",
+              "Nếu XLSX trống, sao kê có thể là bản quét chỉ chứa ảnh. Chạy [OCR PDF](/tools/ocr-pdf) trước rồi chuyển bản đã nhận dạng. OCR có thể nhầm chữ số hoặc dấu thập phân; hãy so từng khoản với bản gốc và không mặc định tin kết quả nhận dạng.",
+              "Việc chuyển đổi tiêu chuẩn diễn ra trong trình duyệt nên sao kê không được tải lên máy chủ. Lưu bảng tính với quyền truy cập hạn chế, xóa cột không cần thiết và kiểm tra người nhận trước khi chia sẻ. Nếu chỉ cần vài trang, dùng [Extract Pages](/tools/extract-pages) trước khi chuyển đổi."
+            ]
+          }
+        ],
+        "ctaLabel": "Chuyển sao kê miễn phí trong trình duyệt, không cần tài khoản hay tải lên.",
+        "faqs": [
+          {
+            "q": "Làm sao chuyển sao kê ngân hàng PDF sang Excel?",
+            "a": "Mở PDF to Excel, tải sao kê và tải XLSX xuống. Mỗi trang thành một sheet; sau đó đối chiếu cột và số tiền với PDF. Công cụ tách chữ theo khoảng trắng, vì vậy hãy rà và đối soát giao dịch trước khi dùng dữ liệu."
+          },
+          {
+            "q": "PDF to Excel có giữ chính xác các cột của ngân hàng không?",
+            "a": "Không phải lúc nào cũng vậy. Công cụ nhận khoảng trắng rộng giữa các từ chứ không nhận đường kẻ bảng. Cột cách nhau đủ xa có thể ổn, nhưng bảng chật hoặc ô bị xuống dòng cần sửa thủ công. Kiểm tra mọi số dư và cột theo sao kê gốc."
+          },
+          {
+            "q": "Vì sao Excel không cộng được số tiền?",
+            "a": "Các ô được ghi dưới dạng văn bản. Chọn cột số rồi dùng Convert to Number hoặc Text to Columns trong Excel. Kiểm tra dấu thập phân, phân cách hàng nghìn và số âm để đảm bảo Excel hiểu đúng."
+          },
+          {
+            "q": "Chuyển sao kê trong trình duyệt có an toàn không?",
+            "a": "PDF thông thường được đọc và XLSX tạo trong tab trình duyệt; tệp không được tải lên trong quy trình này. Dù vậy, hãy hạn chế quyền truy cập vào bảng đã tải xuống và kiểm tra dữ liệu trước khi chia sẻ."
+          }
+        ],
+        "keywords": [
+          "cách chuyển sao kê ngân hàng pdf sang excel",
+          "PDF to Excel bank statement",
+          "convert bank statement PDF"
+        ],
+        "relatedTools": [
+          "pdf-to-excel",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
@@ -60225,6 +60717,88 @@
         ],
         "relatedTools": [
           "pdf-to-word",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader",
+          "ocr-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-to-excel-bank-statements",
+        "slug": "pdf-to-excel-bank-statements",
+        "cluster": "conversion-expansion",
+        "tool": "pdf-to-excel",
+        "title": "如何将银行对账单 PDF 转为 Excel",
+        "metaTitle": "如何将银行对账单 PDF 转为 Excel",
+        "metaDescription": "在浏览器中将银行对账单 PDF 转为 XLSX。免费使用，无需账户或上传；使用前请核对每笔金额。",
+        "answer": "要将银行对账单 PDF 转为 Excel，可用 PDF to Excel 将文本提取到按页划分的工作表中，然后检查日期、描述、借方、贷方和余额。该工具根据较宽的空白拆分单元格，不识别表格线；在导入或分析交易前，请将金额和总数与原 PDF 核对。",
+        "sections": [
+          {
+            "heading": "四步将 PDF 对账单转为 Excel",
+            "paragraphs": [
+              "要将银行对账单 PDF 转为 Excel，可用 PDF to Excel 将文本提取到按页划分的工作表中，然后检查日期、描述、借方、贷方和余额。该工具根据较宽的空白拆分单元格，不识别表格线；在导入或分析交易前，请将金额和总数与原 PDF 核对。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原始 PDF",
+                "text": "保存完整且未修改的对账单。用它核对交易、期初和期末余额、日期以及金额正负号。"
+              },
+              {
+                "heading": "打开 PDF to Excel",
+                "text": "在 [PDF to Excel](/tools/pdf-to-excel) 中加载文件。每个 PDF 页面成为一个工作表；每行文字成为一行，较宽空格或制表符用于分列。"
+              },
+              {
+                "heading": "检查并调整列",
+                "text": "下载 XLSX 后将多行与对账单对照。确认日期、描述、借方、贷方和余额处于正确列。单元格会以文本写入；求和前需在 Excel 中转换为数字。"
+              },
+              {
+                "heading": "使用前先对账",
+                "text": "检查所有页面，不要只抽样。核对期初余额、期末余额和交易笔数；导入会计系统前修正错位的列。"
+              }
+            ]
+          },
+          {
+            "heading": "使用表格前先核验数据",
+            "paragraphs": [
+              "PDF to Excel 不会理解财务结构，也不会识别绘制出来的表格线。它遇到较宽空格或制表符时拆分一行。如果银行列间距清楚，结果可能可用；若文本换行、列间距太小或表头合并，则需要手动整理单元格。",
+              "将每个数字都视为需要核验的数据。检查负号、小数点、千位分隔符、日期和滚动余额。长描述可能换成多行并把金额挤到错误列。按对账单规则核对每个余额是否等于上期余额加贷方、减借方。",
+              "如果 XLSX 是空的，对账单可能是图片扫描件。先运行 [OCR PDF](/tools/ocr-pdf)，再转换识别后的副本。OCR 可能混淆数字或小数点；请逐笔对照原件，不要未经检查就采用自动识别结果。",
+              "标准转换在浏览器中完成，因此对账单不会上传到服务器。请限制下载后工作簿的访问权限，删除不需要的列，并在分享前确认收件人。如果只需部分页面，可先用 [Extract Pages](/tools/extract-pages) 提取再转换。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费转换对账单，无需账户，也不必上传。",
+        "faqs": [
+          {
+            "q": "如何将银行对账单 PDF 转为 Excel？",
+            "a": "打开 PDF to Excel，加载对账单并下载 XLSX。每个 PDF 页面会成为一个工作表；随后将列和金额与 PDF 对照。工具按空白拆分文本，因此使用数据前要检查并核对交易。"
+          },
+          {
+            "q": "PDF to Excel 会准确保留银行的列吗？",
+            "a": "不一定。工具识别单词之间的较宽空白，而不是表格线。间距足够的列可能正确，但紧密表格或换行单元格需要手动调整。请根据原始对账单核对每个余额和列。"
+          },
+          {
+            "q": "为什么 Excel 无法对金额求和？",
+            "a": "单元格会以文本写入。选中数字列，在 Excel 中使用“转换为数字”或“分列”。然后检查小数点、分隔符和负值，确认 Excel 正确解析金额。"
+          },
+          {
+            "q": "在浏览器中转换银行对账单安全吗？",
+            "a": "标准 PDF 在浏览器标签页中读取，XLSX 也在标签页内生成；此转换不会上传文件。仍请限制下载后工作簿的访问权限，并在分享前核对数据。"
+          }
+        ],
+        "keywords": [
+          "如何将银行对账单 pdf 转为 excel",
+          "PDF to Excel bank statement",
+          "convert bank statement PDF"
+        ],
+        "relatedTools": [
+          "pdf-to-excel",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader",
