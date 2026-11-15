@@ -1,0 +1,1001 @@
+{
+  "topic": "crop-pdf-pages-to-same-size",
+  "sourceCluster": "edit",
+  "tool": "crop-pdf",
+  "languages": {
+    "es": {
+      "topic": "crop-pdf-pages-to-same-size",
+      "slug": "crop-pdf-pages-to-same-size",
+      "title": "Cómo recortar páginas PDF al mismo tamaño",
+      "metaTitle": "Cómo recortar páginas PDF al mismo tamaño",
+      "metaDescription": "Recorta páginas PDF al mismo tamaño gratis. Aplica un borde común en privado desde el navegador, sin registro ni marcas de agua.",
+      "keyword": "recortar páginas PDF al mismo tamaño",
+      "secondaryKeywords": [
+        "recortar páginas PDF al mismo tamaño",
+        "igualar tamaño de páginas PDF",
+        "recortar todas las páginas PDF"
+      ],
+      "answer": "Para recortar páginas PDF al mismo tamaño visible, elige un límite común seguro, aplícalo de forma uniforme y revisa la primera página, una del medio y la última. Conserva los originales: los documentos con diseños distintos pueden necesitar ajustes diferentes.",
+      "tool": "crop-pdf",
+      "ctaLabel": "Recortar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Unos bordes visibles uniformes pueden facilitar la impresión, encuadernación o lectura en pantalla de un paquete. Recortar el PDF ajusta el área visible, por ejemplo para reducir márgenes blancos, bordes del escáner o un marco sobrante. PrintxPDF realiza este trabajo habitual en el navegador, gratis y sin registro ni marca de agua. Conserva el original: el recorte cambia la presentación, no elimina contenido privado."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo recortar páginas PDF con un límite común"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Conserva el PDF original",
+              "x": "Haz una copia antes de cambiar el área visible de las páginas."
+            },
+            {
+              "h": "Abre Recortar PDF",
+              "x": "Añade la copia a [Recortar PDF](/tools/crop-pdf) desde el navegador."
+            },
+            {
+              "h": "Elige un límite común",
+              "x": "Ajusta el borde para incluir el contenido necesario. Usa el mismo ajuste solo en páginas con diseños y márgenes compatibles."
+            },
+            {
+              "h": "Aplica y guarda la copia",
+              "x": "Crea el PDF recortado y usa un nombre distinto del original."
+            },
+            {
+              "h": "Compara páginas distintas",
+              "x": "Revisa la primera, una del medio y la última. Confirma que no se hayan cortado títulos, firmas, pies de página ni tablas."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Recorta páginas PDF en tu pestaña. Gratis, sin registro y sin marcas de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Qué significa igualar el tamaño visible"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Objetivo",
+            "Herramienta",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Igualar márgenes visibles",
+              "Crop PDF",
+              "Ajusta el área que muestra el lector"
+            ],
+            [
+              "Eliminar una hoja",
+              "[Eliminar páginas](/tools/delete-pages)",
+              "Crea una copia sin esa página"
+            ],
+            [
+              "Ocultar información",
+              "[Redactar PDF](/tools/redact-pdf)",
+              "Elimina el contenido redactado"
+            ],
+            [
+              "Cambiar el orden",
+              "[Organizar PDF](/tools/organize-pdf)",
+              "Reordena las mismas páginas"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cómo evitar que un recorte uniforme corte contenido"
+        },
+        {
+          "t": "p",
+          "x": "Para igualar el tamaño visible, identifica primero la zona más pequeña que incluya todo el contenido que necesitas en cada página. Aplica un límite común solo si las páginas tienen márgenes y composición compatibles. Las páginas de portada, anexos, formularios y escaneos pueden usar diseños distintos. Un recorte uniforme que funciona en una hoja puede cortar texto o firmas en otra; agrupa páginas semejantes o ajusta las diferentes por separado."
+        },
+        {
+          "t": "h2",
+          "x": "El recorte no elimina contenido oculto"
+        },
+        {
+          "t": "p",
+          "x": "El recorte no cambia los píxeles de una imagen ni mejora la calidad. Cambia la zona de página que muestra el lector. No elimina el contenido que queda fuera del borde visible, así que no es una redacción segura. Si necesitas ocultar información, usa [Redactar PDF](/tools/redact-pdf) y comprueba el resultado. Para eliminar una página completa, usa [Eliminar páginas](/tools/delete-pages); para cambiar el orden, abre [Organizar PDF](/tools/organize-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "Revisa páginas de distintas partes del documento"
+        },
+        {
+          "t": "p",
+          "x": "Comprueba páginas del principio, del medio y del final, además de cualquier hoja con un diseño diferente. Revisa títulos, números de página, pies, firmas, sellos y tablas cercanas al borde. Si el documento tiene escaneos torcidos o tamaños mezclados, haz primero una copia de prueba. Una prueba de impresión puede revelar recortes que no se notan al ver una sola página en pantalla."
+        },
+        {
+          "t": "h2",
+          "x": "Procesa documentos privados localmente"
+        },
+        {
+          "t": "p",
+          "x": "El recorte de PrintxPDF se procesa en la pestaña del navegador, sin subir el archivo para esta tarea estándar. Esto evita transferir innecesariamente formularios, facturas o registros. Aun así, protege el dispositivo y revisa los archivos antes de compartirlos. Abre el PDF nuevo, confirma que el borde visible sea adecuado en páginas distintas y conserva la fuente hasta aprobar la copia."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo recortar todas las páginas PDF al mismo tamaño?",
+          "a": "Sí, cuando las páginas tienen márgenes y diseños compatibles. Comprueba primero la portada, una página interior y la última para evitar cortar contenido."
+        },
+        {
+          "q": "¿El recorte uniforme cambia el tamaño de papel del PDF?",
+          "a": "Ajusta el área visible de la página. El tamaño mostrado puede diferir del contenido original, así que revisa la salida y elige la configuración de impresión adecuada."
+        },
+        {
+          "q": "¿Recortar páginas elimina el contenido exterior?",
+          "a": "No. El contenido fuera del área visible puede permanecer en el archivo. Usa Redactar PDF para eliminar información confidencial."
+        },
+        {
+          "q": "¿Debo conservar el PDF original?",
+          "a": "Sí. Guarda el resultado como una copia aparte y conserva la fuente hasta revisar todas las páginas relevantes."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "pt-BR": {
+      "topic": "crop-pdf-pages-to-same-size",
+      "slug": "crop-pdf-pages-to-same-size",
+      "title": "Como recortar páginas de PDF no mesmo tamanho",
+      "metaTitle": "Como recortar páginas de PDF no mesmo tamanho",
+      "metaDescription": "Recorte páginas de PDF no mesmo tamanho grátis. Aplique um limite comum em privado no navegador, sem cadastro ou marca-d’água.",
+      "keyword": "recortar páginas PDF no mesmo tamanho",
+      "secondaryKeywords": [
+        "recortar páginas PDF no mesmo tamanho",
+        "igualar tamanho de páginas PDF",
+        "recortar todas as páginas PDF"
+      ],
+      "answer": "Para recortar páginas de PDF no mesmo tamanho visível, escolha um limite comum seguro, aplique-o de forma uniforme e confira a primeira, uma do meio e a última página. Guarde os originais: layouts diferentes podem exigir ajustes próprios.",
+      "tool": "crop-pdf",
+      "ctaLabel": "Recortar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Bordas visíveis uniformes podem facilitar a impressão, encadernação ou leitura em tela de um conjunto. Recortar PDF ajusta a área visível, por exemplo para reduzir margens brancas, bordas de scanner ou um contorno sobrando. O PrintxPDF faz esse trabalho comum no navegador, grátis, sem cadastro e sem marca-d’água. Guarde o original: recortar muda a apresentação, não remove conteúdo privado."
+        },
+        {
+          "t": "h2",
+          "x": "Como recortar páginas PDF com um limite comum"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarde o PDF original",
+              "x": "Faça uma cópia antes de alterar a área visível das páginas."
+            },
+            {
+              "h": "Abra Recortar PDF",
+              "x": "Adicione a cópia ao [Recortar PDF](/tools/crop-pdf) pelo navegador."
+            },
+            {
+              "h": "Escolha um limite comum",
+              "x": "Ajuste a borda para manter o conteúdo necessário. Use o mesmo corte apenas em páginas com margens e layout compatíveis."
+            },
+            {
+              "h": "Aplique e salve a cópia",
+              "x": "Crie o PDF recortado e use um nome diferente do original."
+            },
+            {
+              "h": "Compare páginas diferentes",
+              "x": "Confira a primeira, uma do meio e a última. Veja se títulos, assinaturas, rodapés e tabelas continuam inteiros."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Recorte páginas PDF na sua aba. Grátis, sem cadastro e sem marca-d’água."
+        },
+        {
+          "t": "h2",
+          "x": "O que significa igualar o tamanho visível"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Objetivo",
+            "Ferramenta",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Uniformizar margens visíveis",
+              "Crop PDF",
+              "Ajusta a área exibida"
+            ],
+            [
+              "Excluir uma folha",
+              "[Excluir páginas](/tools/delete-pages)",
+              "Cria cópia sem aquela página"
+            ],
+            [
+              "Ocultar informação",
+              "[Redigir PDF](/tools/redact-pdf)",
+              "Remove o conteúdo redigido"
+            ],
+            [
+              "Mudar a ordem",
+              "[Organizar PDF](/tools/organize-pdf)",
+              "Reordena as mesmas páginas"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Como evitar que um corte uniforme remova conteúdo"
+        },
+        {
+          "t": "p",
+          "x": "Para igualar a área visível, identifique primeiro a menor região que contenha tudo o que é necessário em cada página. Use um limite comum somente quando as páginas tiverem margens e composição compatíveis. Capas, anexos, formulários e digitalizações podem ter layouts diferentes. Um corte uniforme que funciona numa folha pode atingir texto ou assinatura em outra; agrupe páginas semelhantes ou ajuste as diferentes separadamente."
+        },
+        {
+          "t": "h2",
+          "x": "Recortar não apaga conteúdo oculto"
+        },
+        {
+          "t": "p",
+          "x": "Recortar não altera os pixels de uma imagem nem melhora a qualidade. Muda a área da página exibida pelo leitor. O conteúdo fora da borda visível não é apagado, portanto não é redação segura. Para ocultar dados, use [Redigir PDF](/tools/redact-pdf) e confira o resultado. Para remover uma página inteira, use [Excluir páginas](/tools/delete-pages); para mudar a ordem, abra [Organizar PDF](/tools/organize-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "Confira páginas de diferentes partes do documento"
+        },
+        {
+          "t": "p",
+          "x": "Confira páginas do início, meio e fim, além de qualquer folha com layout diferente. Veja títulos, números, rodapés, assinaturas, carimbos e tabelas perto da borda. Se o arquivo tiver scans tortos ou tamanhos mistos, crie uma cópia de teste primeiro. Uma impressão de teste pode revelar cortes que passam despercebidos ao olhar uma página na tela."
+        },
+        {
+          "t": "h2",
+          "x": "Processe documentos privados localmente"
+        },
+        {
+          "t": "p",
+          "x": "O recorte do PrintxPDF é processado na aba do navegador sem enviar o arquivo para essa tarefa comum. Isso evita transferir formulários, faturas ou registros sem necessidade. Ainda assim, proteja o dispositivo e revise os arquivos antes de compartilhar. Abra o PDF novo, confira o limite visível em páginas diferentes e mantenha a fonte até aprovar a cópia."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso recortar todas as páginas do PDF no mesmo tamanho?",
+          "a": "Sim, quando as páginas têm margens e layouts compatíveis. Confira a capa, uma página interna e a última para evitar cortes."
+        },
+        {
+          "q": "O corte uniforme muda o tamanho do papel do PDF?",
+          "a": "Ele ajusta a área visível da página. O tamanho exibido pode diferir do conteúdo original, então confira o resultado e a configuração de impressão."
+        },
+        {
+          "q": "Recortar páginas apaga o conteúdo de fora?",
+          "a": "Não. O conteúdo fora da área visível pode continuar no arquivo. Use Redigir PDF para remover informações confidenciais."
+        },
+        {
+          "q": "Devo guardar o PDF original?",
+          "a": "Sim. Salve o resultado como cópia separada e mantenha a fonte até revisar as páginas relevantes."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "hi": {
+      "topic": "crop-pdf-pages-to-same-size",
+      "slug": "crop-pdf-pages-to-same-size",
+      "title": "PDF पेज एक ही आकार में कैसे क्रॉप करें",
+      "metaTitle": "PDF पेज एक ही आकार में कैसे क्रॉप करें",
+      "metaDescription": "PDF पेज एक ही आकार में मुफ़्त क्रॉप करें। ब्राउज़र में निजी तौर पर समान सीमा लागू करें, बिना साइनअप या वॉटरमार्क।",
+      "keyword": "PDF पेज एक ही आकार में क्रॉप करें",
+      "secondaryKeywords": [
+        "PDF पेज एक ही आकार में क्रॉप करें",
+        "PDF पेज आकार एक करें",
+        "सभी PDF पेज क्रॉप"
+      ],
+      "answer": "PDF पेजों को समान दृश्य आकार में क्रॉप करने के लिए सुरक्षित साझा सीमा चुनें, उसे समान रूप से लागू करें और पहले, बीच तथा आखिरी पेज जाँचें। मूल रखें: अलग लेआउट वाले दस्तावेज़ों में अलग सेटिंग चाहिए हो सकती है।",
+      "tool": "crop-pdf",
+      "ctaLabel": "PDF क्रॉप",
+      "body": [
+        {
+          "t": "p",
+          "x": "एक जैसे दृश्य किनारे किसी दस्तावेज़ पैकेट को प्रिंट, बाइंड या स्क्रीन पर पढ़ना आसान बना सकते हैं। PDF क्रॉप करने से दृश्य पेज क्षेत्र बदलता है, जैसे सफ़ेद मार्जिन, स्कैनर किनारे या अतिरिक्त बॉर्डर घटाना। PrintxPDF यह सामान्य काम ब्राउज़र में करता है, मुफ़्त और बिना साइनअप या वॉटरमार्क। मूल रखें: क्रॉप दिखावट बदलता है, निजी सामग्री नहीं मिटाता।"
+        },
+        {
+          "t": "h2",
+          "x": "साझा सीमा के साथ PDF पेज कैसे क्रॉप करें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "मूल PDF सुरक्षित रखें",
+              "x": "पेज का दृश्य क्षेत्र बदलने से पहले कॉपी बनाएँ।"
+            },
+            {
+              "h": "Crop PDF खोलें",
+              "x": "ब्राउज़र से कॉपी [Crop PDF](/tools/crop-pdf) में जोड़ें।"
+            },
+            {
+              "h": "साझा सीमा चुनें",
+              "x": "ज़रूरी सामग्री बनाए रखने के लिए किनारा सेट करें। समान सेटिंग केवल संगत मार्जिन और लेआउट वाले पेजों पर लगाएँ।"
+            },
+            {
+              "h": "लागू कर कॉपी सेव करें",
+              "x": "क्रॉप की हुई PDF बनाएँ और मूल से अलग नाम दें।"
+            },
+            {
+              "h": "अलग पेजों की तुलना करें",
+              "x": "पहला, बीच का और आखिरी पेज देखें। शीर्षक, हस्ताक्षर, फुटर और टेबल कटे नहीं हों।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "अपने टैब में PDF पेज क्रॉप करें। मुफ़्त, बिना साइनअप और वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "दृश्य आकार समान करने का अर्थ"
+        },
+        {
+          "t": "table",
+          "head": [
+            "लक्ष्य",
+            "टूल",
+            "नतीजा"
+          ],
+          "rows": [
+            [
+              "दिखने वाले मार्जिन समान करना",
+              "Crop PDF",
+              "दर्शक में दिखने वाला क्षेत्र बदलता है"
+            ],
+            [
+              "पूरा पेज हटाना",
+              "[Delete Pages](/tools/delete-pages)",
+              "उस पेज के बिना कॉपी बनाता है"
+            ],
+            [
+              "जानकारी छिपाना",
+              "[Redact PDF](/tools/redact-pdf)",
+              "रेडक्ट की गई सामग्री हटाता है"
+            ],
+            [
+              "क्रम बदलना",
+              "[Organize PDF](/tools/organize-pdf)",
+              "वही पेज नए क्रम में"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "एकसमान क्रॉप में कंटेंट कटने से कैसे बचें"
+        },
+        {
+          "t": "p",
+          "x": "समान दृश्य आकार के लिए पहले वह सबसे छोटा क्षेत्र तय करें जिसमें हर पेज की ज़रूरी सामग्री आ जाए। साझा सीमा तभी लगाएँ जब मार्जिन और लेआउट मेल खाते हों। कवर, परिशिष्ट, फ़ॉर्म और स्कैन के डिज़ाइन अलग हो सकते हैं। एकसमान क्रॉप किसी पेज पर सही होकर दूसरे में टेक्स्ट या हस्ताक्षर काट सकता है। मिलते-जुलते पेज समूह में रखें या अलग पेज अलग सेट करें।"
+        },
+        {
+          "t": "h2",
+          "x": "क्रॉप छिपा कंटेंट नहीं मिटाता"
+        },
+        {
+          "t": "p",
+          "x": "क्रॉप छवि के पिक्सल या गुणवत्ता नहीं बदलता; यह पाठक में दिखने वाली पेज सीमा समायोजित करता है। सीमा के बाहर का कंटेंट हटता नहीं, इसलिए यह सुरक्षित रेडैक्शन नहीं है। जानकारी छिपाने के लिए [Redact PDF](/tools/redact-pdf) करें और आउटपुट जाँचें। पूरा पेज हटाने के लिए [Delete Pages](/tools/delete-pages), क्रम बदलने के लिए [Organize PDF](/tools/organize-pdf) उपयोग करें।"
+        },
+        {
+          "t": "h2",
+          "x": "दस्तावेज़ के अलग हिस्सों के पेज जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "शुरुआत, बीच और अंत के पेज देखें, साथ ही अलग लेआउट वाले पेज भी। किनारे के पास शीर्षक, पेज नंबर, फुटर, हस्ताक्षर, मुहर और टेबल जाँचें। तिरछे स्कैन या अलग आकार हों तो पहले टेस्ट कॉपी बनाएँ। टेस्ट प्रिंट उन कटे हिस्सों को दिखा सकता है जो स्क्रीन पर अकेले पेज में ध्यान नहीं आते।"
+        },
+        {
+          "t": "h2",
+          "x": "निजी दस्तावेज़ स्थानीय रूप से प्रोसेस करें"
+        },
+        {
+          "t": "p",
+          "x": "PrintxPDF का क्रॉप ब्राउज़र टैब में चलता है और इस सामान्य काम के लिए फ़ाइल अपलोड नहीं करता। इससे फ़ॉर्म, बिल या रिकॉर्ड का अनावश्यक स्थानांतरण नहीं होता। डिवाइस सुरक्षित रखें और साझा करने से पहले फ़ाइलें जाँचें। नई PDF खोलें, अलग पेजों पर दृश्य सीमा परखें और कॉपी मंज़ूर होने तक स्रोत रखें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF के सभी पेज एक ही आकार में क्रॉप कर सकते हैं?",
+          "a": "हाँ, जब पेजों के मार्जिन और लेआउट संगत हों। कटने से बचने के लिए कवर, अंदर का और आखिरी पेज जाँचें।"
+        },
+        {
+          "q": "क्या समान क्रॉप PDF का पेपर आकार बदलता है?",
+          "a": "यह पेज का दृश्य क्षेत्र समायोजित करता है। दिखाई देने वाला आकार मूल से अलग हो सकता है, इसलिए प्रिंट सेटिंग और आउटपुट जाँचें।"
+        },
+        {
+          "q": "क्या क्रॉप बाहर का कंटेंट मिटाता है?",
+          "a": "नहीं। दृश्य सीमा के बाहर की सामग्री फ़ाइल में रह सकती है। गोपनीय जानकारी हटाने के लिए Redact PDF करें।"
+        },
+        {
+          "q": "क्या मूल PDF रखना चाहिए?",
+          "a": "हाँ। नतीजा अलग कॉपी में सेव करें और ज़रूरी पेज जाँचने तक मूल रखें।"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "ar": {
+      "topic": "crop-pdf-pages-to-same-size",
+      "slug": "crop-pdf-pages-to-same-size",
+      "title": "كيفية اقتصاص صفحات PDF بالحجم نفسه",
+      "metaTitle": "كيفية اقتصاص صفحات PDF بالحجم نفسه",
+      "metaDescription": "اقتصّ صفحات PDF بالحجم نفسه مجانًا. طبّق حدًا موحدًا بخصوصية في المتصفح، وافحص الصفحات قبل الطباعة بلا تسجيل أو علامة مائية.",
+      "keyword": "اقتصاص صفحات PDF بالحجم نفسه",
+      "secondaryKeywords": [
+        "اقتصاص صفحات PDF بالحجم نفسه",
+        "توحيد حجم صفحات PDF",
+        "اقتصاص جميع صفحات PDF"
+      ],
+      "answer": "لاقتصاص صفحات PDF بالحجم الظاهر نفسه، اختر حدًا مشتركًا آمنًا، وطبقه بشكل متسق، وافحص الصفحة الأولى وواحدة وسطى والأخيرة. احتفظ بالأصول؛ فقد تحتاج التخطيطات المختلفة إلى إعدادات مختلفة.",
+      "tool": "crop-pdf",
+      "ctaLabel": "اقتصاص PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "تجعل الحواف الظاهرة الموحدة حزمة المستندات أسهل للطباعة أو التجليد أو القراءة على الشاشة. يضبط اقتصاص PDF المساحة الظاهرة، مثل تقليل الهوامش البيضاء أو حواف الماسح أو إطار زائد. تنفذ PrintxPDF هذه المهمة المعتادة في المتصفح مجانًا وبلا تسجيل أو علامة مائية. احتفظ بالأصل؛ فالاقتصاص يغير العرض ولا يزيل المحتوى الخاص."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية اقتصاص صفحات PDF بحد مشترك"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احتفظ بملف PDF الأصلي",
+              "x": "أنشئ نسخة قبل تغيير المساحة الظاهرة للصفحات."
+            },
+            {
+              "h": "افتح Crop PDF",
+              "x": "أضف النسخة إلى [Crop PDF](/tools/crop-pdf) من المتصفح."
+            },
+            {
+              "h": "اختر حدًا مشتركًا",
+              "x": "اضبط الحافة للحفاظ على المحتوى الضروري. استخدم الإعداد نفسه فقط للصفحات ذات الهوامش والتخطيط المتوافق."
+            },
+            {
+              "h": "طبّق واحفظ النسخة",
+              "x": "أنشئ نسخة مقتصة واحفظها باسم مختلف عن الأصل."
+            },
+            {
+              "h": "قارن صفحات مختلفة",
+              "x": "افحص الأولى وواحدة في الوسط والأخيرة. تأكد من بقاء العناوين والتوقيعات والتذييلات والجداول كاملة."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "اقتصّ صفحات PDF في علامة التبويب. مجانًا وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "ماذا يعني توحيد الحجم الظاهر؟"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الهدف",
+            "الأداة",
+            "النتيجة"
+          ],
+          "rows": [
+            [
+              "توحيد الهوامش الظاهرة",
+              "Crop PDF",
+              "يضبط المساحة المعروضة"
+            ],
+            [
+              "حذف صفحة",
+              "[Delete Pages](/tools/delete-pages)",
+              "ينشئ نسخة دون الصفحة"
+            ],
+            [
+              "إخفاء معلومات",
+              "[Redact PDF](/tools/redact-pdf)",
+              "يزيل المحتوى المنقح"
+            ],
+            [
+              "تغيير الترتيب",
+              "[Organize PDF](/tools/organize-pdf)",
+              "يرتب الصفحات نفسها"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "كيف تمنع الاقتصاص الموحد من قص المحتوى؟"
+        },
+        {
+          "t": "p",
+          "x": "لتوحيد المساحة الظاهرة، حدد أولًا أصغر منطقة تحتوي كل المحتوى المطلوب في كل صفحة. لا تستخدم حدًا مشتركًا إلا إذا كانت الهوامش والتكوين متوافقين. قد تختلف صفحات الغلاف والملاحق والنماذج والمسح الضوئي. وقد يقص الاقتصاص الموحد نصًا أو توقيعًا في صفحة أخرى. اجمع الصفحات المتشابهة أو اضبط الصفحات المختلفة كلًا على حدة."
+        },
+        {
+          "t": "h2",
+          "x": "الاقتصاص لا يحذف المحتوى المخفي"
+        },
+        {
+          "t": "p",
+          "x": "لا يغير الاقتصاص وحدات الصورة ولا يحسن الجودة؛ بل يغير مساحة الصفحة التي يعرضها القارئ. ولا يمحو المحتوى خارج الحد الظاهر، لذلك ليس تنقيحًا آمنًا. لإخفاء معلومات، استخدم [Redact PDF](/tools/redact-pdf) وتحقق من الناتج. لحذف صفحة كاملة استخدم [Delete Pages](/tools/delete-pages)، ولتغيير الترتيب افتح [Organize PDF](/tools/organize-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "افحص صفحات من أجزاء مختلفة من المستند"
+        },
+        {
+          "t": "p",
+          "x": "افحص صفحات من البداية والوسط والنهاية وأي صفحة بتخطيط مختلف. تحقق من العناوين وأرقام الصفحات والتذييلات والتوقيعات والأختام والجداول قرب الحافة. إذا كان الملف يحتوي مسحًا مائلًا أو أحجامًا مختلفة، أنشئ نسخة اختبار أولًا. قد تكشف الطباعة التجريبية قصًا لا يظهر عند عرض صفحة منفردة."
+        },
+        {
+          "t": "h2",
+          "x": "عالج المستندات الخاصة محليًا"
+        },
+        {
+          "t": "p",
+          "x": "تعمل أداة PrintxPDF داخل علامة تبويب المتصفح ولا ترفع الملف لهذه المهمة المعتادة. يقلل ذلك النقل غير الضروري للنماذج والفواتير والسجلات. مع ذلك، احمِ الجهاز وافحص الملفات قبل المشاركة. افتح PDF الجديد واختبر الحد الظاهر على صفحات متعددة واحتفظ بالمصدر حتى اعتماد النسخة."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكن اقتصاص كل صفحات PDF بالحجم نفسه؟",
+          "a": "نعم، عندما تكون الهوامش والتخطيطات متوافقة. افحص الغلاف وصفحة داخلية والأخيرة لتجنب قص المحتوى."
+        },
+        {
+          "q": "هل يغير الاقتصاص الموحد حجم ورق PDF؟",
+          "a": "يضبط المساحة الظاهرة للصفحة. قد يختلف الحجم المعروض عن المحتوى الأصلي، لذا افحص الناتج وإعداد الطباعة."
+        },
+        {
+          "q": "هل يحذف الاقتصاص المحتوى خارج الحد؟",
+          "a": "لا. قد يظل المحتوى خارج المساحة الظاهرة داخل الملف. استخدم Redact PDF لإزالة المعلومات السرية."
+        },
+        {
+          "q": "هل أحتفظ بملف PDF الأصلي؟",
+          "a": "نعم. احفظ الناتج كنسخة منفصلة واحتفظ بالمصدر حتى مراجعة الصفحات المهمة."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "bn": {
+      "topic": "crop-pdf-pages-to-same-size",
+      "slug": "crop-pdf-pages-to-same-size",
+      "title": "PDF পৃষ্ঠা একই আকারে কীভাবে ক্রপ করবেন",
+      "metaTitle": "PDF পৃষ্ঠা একই আকারে কীভাবে ক্রপ করবেন",
+      "metaDescription": "PDF পৃষ্ঠা একই আকারে বিনামূল্যে ক্রপ করুন। ব্রাউজারে ব্যক্তিগতভাবে সাধারণ সীমানা প্রয়োগ করুন, সাইনআপ বা ওয়াটারমার্ক ছাড়া।",
+      "keyword": "PDF পৃষ্ঠা একই আকারে ক্রপ",
+      "secondaryKeywords": [
+        "PDF পৃষ্ঠা একই আকারে ক্রপ",
+        "PDF পৃষ্ঠার মাপ এক করুন",
+        "সব PDF পৃষ্ঠা ক্রপ"
+      ],
+      "answer": "PDF পৃষ্ঠার দৃশ্যমান আকার এক করতে নিরাপদ সাধারণ সীমানা বাছুন, একইভাবে প্রয়োগ করুন এবং প্রথম, মাঝের ও শেষ পৃষ্ঠা দেখুন। মূল কপি রাখুন: ভিন্ন বিন্যাসের নথিতে আলাদা সেটিং লাগতে পারে।",
+      "tool": "crop-pdf",
+      "ctaLabel": "PDF ক্রপ",
+      "body": [
+        {
+          "t": "p",
+          "x": "একই রকম দৃশ্যমান ধার থাকলে নথির প্যাকেট প্রিন্ট, বাঁধাই বা স্ক্রিনে পড়া সহজ হয়। PDF ক্রপ করলে দৃশ্যমান পৃষ্ঠা এলাকা বদলায়, যেমন সাদা মার্জিন, স্ক্যানারের ধার বা বাড়তি বর্ডার কমানো। PrintxPDF ব্রাউজারে এই সাধারণ কাজ করে, বিনামূল্যে এবং সাইনআপ বা ওয়াটারমার্ক ছাড়া। মূল ফাইল রাখুন: ক্রপ উপস্থাপনা বদলায়, ব্যক্তিগত কনটেন্ট মুছে না।"
+        },
+        {
+          "t": "h2",
+          "x": "একটি সাধারণ সীমানায় PDF পৃষ্ঠা ক্রপ করুন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "মূল PDF রাখুন",
+              "x": "দৃশ্যমান পৃষ্ঠা এলাকা বদলানোর আগে কপি তৈরি করুন।"
+            },
+            {
+              "h": "Crop PDF খুলুন",
+              "x": "ব্রাউজার থেকে কপিটি [Crop PDF](/tools/crop-pdf)-এ যোগ করুন।"
+            },
+            {
+              "h": "সাধারণ সীমানা বাছুন",
+              "x": "প্রয়োজনীয় কনটেন্ট রাখতে ধার ঠিক করুন। মার্জিন ও বিন্যাস মেলে এমন পৃষ্ঠায় একই সেটিং দিন।"
+            },
+            {
+              "h": "প্রয়োগ করে কপি সেভ করুন",
+              "x": "ক্রপ করা PDF তৈরি করে মূল থেকে আলাদা নামে রাখুন।"
+            },
+            {
+              "h": "বিভিন্ন পৃষ্ঠা তুলনা করুন",
+              "x": "প্রথম, মাঝের ও শেষ পৃষ্ঠা দেখুন। শিরোনাম, স্বাক্ষর, ফুটার ও টেবিল কাটা পড়েনি নিশ্চিত করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "ট্যাবে PDF পৃষ্ঠা ক্রপ করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "দৃশ্যমান আকার এক করার অর্থ"
+        },
+        {
+          "t": "table",
+          "head": [
+            "উদ্দেশ্য",
+            "টুল",
+            "ফলাফল"
+          ],
+          "rows": [
+            [
+              "দৃশ্যমান মার্জিন এক করা",
+              "Crop PDF",
+              "দৃশ্যমান এলাকা ঠিক করে"
+            ],
+            [
+              "পুরো পৃষ্ঠা মুছুন",
+              "[Delete Pages](/tools/delete-pages)",
+              "পৃষ্ঠা ছাড়া কপি বানায়"
+            ],
+            [
+              "তথ্য আড়াল",
+              "[Redact PDF](/tools/redact-pdf)",
+              "রেডাক্ট করা বিষয় সরায়"
+            ],
+            [
+              "ক্রম বদলানো",
+              "[Organize PDF](/tools/organize-pdf)",
+              "একই পৃষ্ঠা নতুন ক্রমে সাজায়"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "একই ক্রপে কনটেন্ট কাটা এড়াবেন কীভাবে"
+        },
+        {
+          "t": "p",
+          "x": "দৃশ্যমান আকার এক করতে আগে এমন ছোট সাধারণ এলাকা নির্ধারণ করুন যাতে প্রতিটি পৃষ্ঠার দরকারি কনটেন্ট থাকে। মার্জিন ও বিন্যাস সামঞ্জস্যপূর্ণ হলেই একই সীমানা দিন। কভার, সংযোজন, ফর্ম ও স্ক্যানের লেআউট আলাদা হতে পারে। এক সেটিং এক পৃষ্ঠায় ঠিক হলেও অন্য পৃষ্ঠার লেখা বা স্বাক্ষর কাটতে পারে। মিল আছে এমন পৃষ্ঠা একসঙ্গে রাখুন, ভিন্নগুলো আলাদা করে ঠিক করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ক্রপে লুকানো বিষয়বস্তু মুছে যায় না"
+        },
+        {
+          "t": "p",
+          "x": "ক্রপ ছবির পিক্সেল বা মান বদলায় না; পাঠক যে পৃষ্ঠা-সীমানা দেখায় তা বদলায়। বাইরের কনটেন্ট মুছে না, তাই এটি নিরাপদ রেডাকশন নয়। তথ্য গোপন করতে [Redact PDF](/tools/redact-pdf) ব্যবহার করে ফল যাচাই করুন। পুরো পৃষ্ঠা মুছতে [Delete Pages](/tools/delete-pages), ক্রম বদলাতে [Organize PDF](/tools/organize-pdf) নিন।"
+        },
+        {
+          "t": "h2",
+          "x": "নথির বিভিন্ন অংশের পৃষ্ঠা দেখুন"
+        },
+        {
+          "t": "p",
+          "x": "শুরু, মাঝ ও শেষের পৃষ্ঠা এবং আলাদা বিন্যাসের পৃষ্ঠা দেখুন। ধারঘেঁষা শিরোনাম, পৃষ্ঠা নম্বর, ফুটার, স্বাক্ষর, সিল ও টেবিল যাচাই করুন। স্ক্যান কাত বা পৃষ্ঠার মাপ আলাদা হলে আগে টেস্ট কপি বানান। টেস্ট প্রিন্টে এমন কাট দেখা যেতে পারে যা স্ক্রিনে এক পৃষ্ঠা দেখলে বোঝা যায় না।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যক্তিগত নথি লোকালি প্রসেস করুন"
+        },
+        {
+          "t": "p",
+          "x": "PrintxPDF-এর ক্রপ ব্রাউজার ট্যাবে চলে এবং এই সাধারণ কাজে ফাইল আপলোড করে না। এতে ফর্ম, চালান বা রেকর্ড অপ্রয়োজনীয়ভাবে পাঠানো এড়ায়। তবু ডিভাইস সুরক্ষিত রাখুন ও শেয়ারের আগে ফাইল দেখুন। নতুন PDF খুলে বিভিন্ন পৃষ্ঠায় দৃশ্যমান সীমানা যাচাই করুন এবং কপি অনুমোদিত না হওয়া পর্যন্ত মূল রাখুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF-এর সব পৃষ্ঠা একই আকারে ক্রপ করা যায়?",
+          "a": "হ্যাঁ, মার্জিন ও বিন্যাস সামঞ্জস্যপূর্ণ হলে। কনটেন্ট কাটছে কি না দেখতে কভার, ভেতরের পৃষ্ঠা ও শেষ পৃষ্ঠা দেখুন।"
+        },
+        {
+          "q": "একই ক্রপ কি PDF-এর কাগজের মাপ বদলায়?",
+          "a": "এটি দৃশ্যমান পৃষ্ঠা এলাকা ঠিক করে। প্রদর্শিত মাপ মূল বিষয়বস্তু থেকে আলাদা হতে পারে, তাই ফল ও প্রিন্ট সেটিং যাচাই করুন।"
+        },
+        {
+          "q": "ক্রপ কি বাইরের কনটেন্ট মুছে দেয়?",
+          "a": "না। দৃশ্যমান এলাকার বাইরের কনটেন্ট ফাইলে থাকতে পারে। গোপন তথ্য মুছতে Redact PDF ব্যবহার করুন।"
+        },
+        {
+          "q": "মূল PDF কি রেখে দেওয়া উচিত?",
+          "a": "হ্যাঁ। ফল আলাদা কপিতে সেভ করুন এবং প্রয়োজনীয় পৃষ্ঠা যাচাই না হওয়া পর্যন্ত মূল রাখুন।"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "vi": {
+      "topic": "crop-pdf-pages-to-same-size",
+      "slug": "crop-pdf-pages-to-same-size",
+      "title": "Cách cắt các trang PDF cùng kích thước",
+      "metaTitle": "Cách cắt các trang PDF cùng kích thước",
+      "metaDescription": "Cắt trang PDF cùng kích thước miễn phí. Áp dụng ranh giới chung riêng tư trong trình duyệt, không cần đăng ký hay hình mờ.",
+      "keyword": "cắt các trang PDF cùng kích thước",
+      "secondaryKeywords": [
+        "cắt các trang PDF cùng kích thước",
+        "đồng nhất kích thước trang PDF",
+        "cắt tất cả trang PDF"
+      ],
+      "answer": "Để cắt các trang PDF cùng kích thước hiển thị, chọn một ranh giới chung an toàn, áp dụng nhất quán rồi kiểm tra trang đầu, trang giữa và trang cuối. Hãy giữ bản gốc vì tài liệu có bố cục khác nhau có thể cần thiết lập riêng.",
+      "tool": "crop-pdf",
+      "ctaLabel": "Cắt PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Mép hiển thị đồng nhất giúp bộ tài liệu dễ in, đóng gáy hoặc đọc trên màn hình hơn. Cắt PDF điều chỉnh vùng trang nhìn thấy, hữu ích để giảm lề trắng, mép máy quét hoặc khung thừa. PrintxPDF xử lý tác vụ thông thường này trong trình duyệt, miễn phí, không đăng ký và không hình mờ. Hãy giữ bản gốc: cắt lề đổi cách trình bày chứ không xóa nội dung riêng tư."
+        },
+        {
+          "t": "h2",
+          "x": "Cách cắt trang PDF theo ranh giới chung"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Giữ bản PDF gốc",
+              "x": "Tạo bản sao trước khi đổi vùng hiển thị của trang."
+            },
+            {
+              "h": "Mở Crop PDF",
+              "x": "Thêm bản sao vào [Crop PDF](/tools/crop-pdf) trong trình duyệt."
+            },
+            {
+              "h": "Chọn ranh giới chung",
+              "x": "Đặt mép để giữ nội dung cần thiết. Chỉ dùng cùng thiết lập cho trang có lề và bố cục tương thích."
+            },
+            {
+              "h": "Áp dụng và lưu bản sao",
+              "x": "Tạo PDF đã cắt và đặt tên khác bản gốc."
+            },
+            {
+              "h": "So sánh các trang khác nhau",
+              "x": "Xem trang đầu, giữa và cuối. Đảm bảo tiêu đề, chữ ký, chân trang và bảng không bị cắt."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "Cắt trang PDF ngay trong tab. Miễn phí, không đăng ký, không hình mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Đồng nhất kích thước hiển thị là gì"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Mục tiêu",
+            "Công cụ",
+            "Kết quả"
+          ],
+          "rows": [
+            [
+              "Đồng nhất lề hiển thị",
+              "Crop PDF",
+              "Điều chỉnh vùng được xem"
+            ],
+            [
+              "Xóa hẳn trang",
+              "[Delete Pages](/tools/delete-pages)",
+              "Tạo bản sao bỏ trang đó"
+            ],
+            [
+              "Ẩn thông tin",
+              "[Redact PDF](/tools/redact-pdf)",
+              "Xóa nội dung được biên tập"
+            ],
+            [
+              "Đổi thứ tự",
+              "[Organize PDF](/tools/organize-pdf)",
+              "Sắp xếp lại các trang"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cách tránh cắt mất nội dung khi dùng chung thiết lập"
+        },
+        {
+          "t": "p",
+          "x": "Để đồng nhất vùng hiển thị, trước tiên tìm vùng chung nhỏ nhất vẫn chứa đủ nội dung cần thiết trên mỗi trang. Chỉ dùng cùng ranh giới khi lề và bố cục tương thích. Trang bìa, phụ lục, biểu mẫu và bản quét có thể dùng cách trình bày khác nhau. Một thiết lập cắt phù hợp với trang này có thể cắt chữ hoặc chữ ký ở trang khác; hãy nhóm trang tương tự hoặc chỉnh riêng trang khác biệt."
+        },
+        {
+          "t": "h2",
+          "x": "Cắt lề không xóa nội dung ẩn"
+        },
+        {
+          "t": "p",
+          "x": "Cắt lề không đổi điểm ảnh hay cải thiện chất lượng hình ảnh; thao tác đổi vùng trang mà trình đọc hiển thị. Nội dung ngoài mép nhìn thấy không bị xóa, vì vậy đây không phải biên tập bảo mật. Muốn ẩn dữ liệu, dùng [Redact PDF](/tools/redact-pdf) rồi xác minh kết quả. Để xóa hẳn trang, dùng [Delete Pages](/tools/delete-pages); để đổi thứ tự, mở [Organize PDF](/tools/organize-pdf)."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra trang ở nhiều phần tài liệu"
+        },
+        {
+          "t": "p",
+          "x": "Kiểm tra trang đầu, giữa, cuối và mọi trang có bố cục khác. Xem tiêu đề, số trang, chân trang, chữ ký, con dấu và bảng gần mép. Nếu có bản quét nghiêng hoặc khổ giấy hỗn hợp, hãy tạo bản thử trước. Bản in thử có thể cho thấy phần bị cắt mà bạn khó nhận ra khi xem một trang riêng trên màn hình."
+        },
+        {
+          "t": "h2",
+          "x": "Xử lý tài liệu riêng tư cục bộ"
+        },
+        {
+          "t": "p",
+          "x": "Crop PDF của PrintxPDF xử lý trong tab trình duyệt và không tải tệp lên cho tác vụ thông thường này. Điều đó tránh truyền biểu mẫu, hóa đơn hoặc hồ sơ không cần thiết. Dù vậy, hãy bảo vệ thiết bị và kiểm tra tệp trước khi chia sẻ. Mở PDF mới, xem ranh giới hiển thị trên các trang khác nhau và giữ nguồn cho đến khi duyệt bản sao."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Có thể cắt mọi trang PDF cùng kích thước không?",
+          "a": "Có, nếu lề và bố cục tương thích. Hãy kiểm tra trang bìa, trang nội dung và trang cuối để tránh cắt mất chi tiết."
+        },
+        {
+          "q": "Cắt đồng nhất có đổi khổ giấy PDF không?",
+          "a": "Thao tác điều chỉnh vùng hiển thị. Kích thước nhìn thấy có thể khác nội dung gốc, nên hãy kiểm tra kết quả và thiết lập in."
+        },
+        {
+          "q": "Cắt lề có xóa nội dung ngoài vùng nhìn thấy không?",
+          "a": "Không. Nội dung đó có thể vẫn nằm trong tệp. Dùng Redact PDF để xóa thông tin nhạy cảm."
+        },
+        {
+          "q": "Có nên giữ PDF gốc không?",
+          "a": "Có. Lưu kết quả thành bản riêng và giữ nguồn đến khi kiểm tra các trang cần thiết."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "zh-CN": {
+      "topic": "crop-pdf-pages-to-same-size",
+      "slug": "crop-pdf-pages-to-same-size",
+      "title": "如何将 PDF 页面裁剪为相同尺寸",
+      "metaTitle": "如何将 PDF 页面裁剪为相同尺寸",
+      "metaDescription": "免费将 PDF 页面裁剪为相同尺寸。在浏览器中私密应用统一边界，无需注册，没有水印，打印前可检查。",
+      "keyword": "将 PDF 页面裁剪为相同尺寸",
+      "secondaryKeywords": [
+        "将 PDF 页面裁剪为相同尺寸",
+        "统一 PDF 页面尺寸",
+        "裁剪所有 PDF 页面"
+      ],
+      "answer": "要将 PDF 页面裁剪为相同的可见尺寸，请选择安全的共同边界，统一应用，并检查首页、中间页和末页。请保留原件；版式不同的页面可能需要单独设置。",
+      "tool": "crop-pdf",
+      "ctaLabel": "裁剪 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "统一的可见边缘能让文档包更便于打印、装订或屏幕阅读。裁剪 PDF 会调整页面可见区域，适合缩小白边、扫描仪边缘或多余边框。PrintxPDF 在浏览器标签页中完成这项常见操作，免费使用，无需注册，也没有水印。请保留原文件：裁剪只是版面调整，不会删除隐私内容。"
+        },
+        {
+          "t": "h2",
+          "x": "如何使用统一边界裁剪 PDF 页面"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "保留原始 PDF",
+              "x": "调整页面可见区域前先创建副本。"
+            },
+            {
+              "h": "打开 Crop PDF",
+              "x": "在浏览器中将副本添加到 [Crop PDF](/tools/crop-pdf)。"
+            },
+            {
+              "h": "选择共同边界",
+              "x": "调整边缘以保留必要内容。仅对页边距和版式兼容的页面使用相同设置。"
+            },
+            {
+              "h": "应用并保存副本",
+              "x": "生成裁剪后的 PDF，并用不同于原件的文件名保存。"
+            },
+            {
+              "h": "比较不同页面",
+              "x": "检查首页、中间页和末页，确认标题、签名、页脚和表格没有被切掉。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "crop-pdf",
+          "x": "在当前标签页裁剪 PDF 页面。免费，无需注册，没有水印。"
+        },
+        {
+          "t": "h2",
+          "x": "统一可见尺寸是什么意思"
+        },
+        {
+          "t": "table",
+          "head": [
+            "目标",
+            "工具",
+            "结果"
+          ],
+          "rows": [
+            [
+              "统一可见页边距",
+              "Crop PDF",
+              "调整阅读器显示区域"
+            ],
+            [
+              "删除整页",
+              "[Delete Pages](/tools/delete-pages)",
+              "生成移除该页的副本"
+            ],
+            [
+              "隐藏信息",
+              "[Redact PDF](/tools/redact-pdf)",
+              "删除涂黑的内容"
+            ],
+            [
+              "调整顺序",
+              "[Organize PDF](/tools/organize-pdf)",
+              "重新排列相同页面"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "如何避免统一裁剪切掉内容"
+        },
+        {
+          "t": "p",
+          "x": "要统一可见尺寸，先找出仍能包含每页所需内容的最小共同区域。只有页边距和构图兼容时才使用统一边界。封面、附件、表格和扫描件的版式可能不同。同一裁剪设置在一页合适，在另一页可能切掉文字或签名。可将相似页面分组，对不同版式单独调整。"
+        },
+        {
+          "t": "h2",
+          "x": "裁剪不会删除隐藏内容"
+        },
+        {
+          "t": "p",
+          "x": "裁剪不会改变图像像素或提升质量，只会改变阅读器显示的页面区域。可见边界外的内容并未删除，因此裁剪不等同安全涂黑。需要隐藏信息时，请使用 [Redact PDF](/tools/redact-pdf) 并核验结果。要删除整页，可用 [Delete Pages](/tools/delete-pages)；要调整顺序，可打开 [Organize PDF](/tools/organize-pdf)。"
+        },
+        {
+          "t": "h2",
+          "x": "检查文档不同位置的页面"
+        },
+        {
+          "t": "p",
+          "x": "请检查开头、中间、结尾页面，以及版式不同的页面。留意靠近边缘的标题、页码、页脚、签名、印章和表格。如果扫描件倾斜或页面尺寸混杂，请先制作测试副本。试印可以发现单独在屏幕上查看时不易察觉的裁切问题。"
+        },
+        {
+          "t": "h2",
+          "x": "在本地处理隐私文档"
+        },
+        {
+          "t": "p",
+          "x": "PrintxPDF 在浏览器标签页中本地处理常规裁剪，无需上传文件。这可以避免不必要地传输表格、发票或记录。不过仍需保护设备，并在分享前检查文件。打开新 PDF，在不同页面核对可见边界，并在副本获批前保留源文件。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以将 PDF 的所有页面裁剪为相同尺寸吗？",
+          "a": "可以，前提是页面边距和版式兼容。请检查封面、内页和末页，避免切掉内容。"
+        },
+        {
+          "q": "统一裁剪会改变 PDF 纸张尺寸吗？",
+          "a": "它会调整页面可见区域。显示尺寸可能不同于原始内容，请检查输出和打印设置。"
+        },
+        {
+          "q": "裁剪会删除可见边界外的内容吗？",
+          "a": "不会。边界外内容可能仍保留在文件中。请使用 Redact PDF 删除机密信息。"
+        },
+        {
+          "q": "应该保留原始 PDF 吗？",
+          "a": "应该。请将结果另存为副本，并在检查相关页面前保留源文件。"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    }
+  }
+}
