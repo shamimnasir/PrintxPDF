@@ -1,0 +1,1330 @@
+{
+  "topic": "print-recipe-without-pictures",
+  "sourceCluster": "recipes",
+  "tool": "html-to-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo imprimir una receta sin fotos",
+      "metaTitle": "Imprimir una receta sin fotos",
+      "metaDescription": "Quita las fotos de una receta antes de imprimir. Aprende qué ajustes funcionan, cómo ahorrar tinta y qué imagen merece conservar.",
+      "keyword": "imprimir receta sin fotos",
+      "secondaryKeywords": [
+        "imprimir página web sin imágenes",
+        "ahorrar tinta al imprimir recetas",
+        "imprimir receta solo texto",
+        "quitar imágenes antes de imprimir",
+        "impresión en modo borrador"
+      ],
+      "answer": "Para imprimir una receta sin fotos, usa un limpiador de páginas y pon las imágenes en «Ninguna», o abre la vista de impresión del sitio y desactiva «incluir imágenes». Los navegadores no tienen un interruptor general para quitar fotos de artículos. «Gráficos de fondo» solo elimina fondos decorativos, no las fotos insertadas en la receta.",
+      "ctaLabel": "HTML a PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Las fotos pueden convertir una receta de 300 palabras en cuatro páginas. Una foto de comida a todo el ancho puede ocupar media hoja; ocho imágenes de cada paso pueden llevar una receta de una página a cuatro. En una impresora de inyección de tinta, esas páginas con fotos suelen gastar más tinta y papel que el texto solo."
+        },
+        {
+          "t": "h2",
+          "x": "Cuánto espacio y tinta pueden ocupar las imágenes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tipo de página",
+            "Coste aproximado en inyección de tinta",
+            "Hojas por receta"
+          ],
+          "rows": [
+            [
+              "Solo texto",
+              "3–5 centavos",
+              "1"
+            ],
+            [
+              "Texto y una foto pequeña",
+              "6–9 centavos",
+              "1"
+            ],
+            [
+              "Texto y una foto a todo el ancho",
+              "12–20 centavos",
+              "2"
+            ],
+            [
+              "Secuencia completa de fotos",
+              "15–25 centavos por página con fotos",
+              "4–6"
+            ],
+            [
+              "Lo mismo en láser color",
+              "8–12 centavos",
+              "Número similar"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Son estimaciones: cambian mucho según la impresora, el cartucho, la cobertura de tinta y el papel. La relación suele mantenerse: una página con una foto a color puede costar varias veces más que una página de texto. El número de hojas también importa. Quitar imágenes a menudo reduce una receta de varias páginas a una sola."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo desactivar imágenes según el método"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "En un limpiador de páginas",
+              "x": "Abre el [impresor de páginas web](/print), pega el enlace de la receta y abre «Estilo». En «Imágenes», elige «Ninguna». Es el método más fiable para quitar tanto las fotos del artículo como las de la tarjeta."
+            },
+            {
+              "h": "En la vista de impresión del sitio",
+              "x": "Si la tarjeta de receta tiene una casilla «Incluir imágenes», desmárcala antes de imprimir. Revisa la vista previa para confirmar que también se quitaron las fotos pequeñas."
+            },
+            {
+              "h": "En el modo lectura",
+              "x": "Firefox Reader View y Safari Reader suelen conservar las fotos del artículo y retirar elementos decorativos. La página puede acortarse, pero las fotos pueden seguir ahí."
+            },
+            {
+              "h": "En el cuadro de impresión del navegador",
+              "x": "En «Más ajustes», desactiva «Gráficos de fondo» si quieres quitar fondos CSS y bloques de color. Esto no elimina las fotos insertadas en el texto de la receta."
+            },
+            {
+              "h": "En el controlador de la impresora",
+              "x": "Elige escala de grises o blanco y negro, y calidad borrador o EconoMode si el controlador lo ofrece. Las fotos seguirán ocupando espacio, pero pueden consumir menos tinta."
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Chrome, Edge y Safari no tienen un ajuste general de «no imprimir imágenes». Desactivar «Gráficos de fondo» quita fondos decorativos y puede cambiar colores, pero deja intactas las fotos insertadas en el artículo. Para quitarlas, usa un limpiador o la vista de impresión propia del sitio."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo conviene conservar una foto"
+        },
+        {
+          "t": "p",
+          "x": "No todas las imágenes son decoración. Conserva una cuando la foto aporte información que las palabras no transmiten bien:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Formado y montaje: trenzar pan, plegar dumplings o apilar capas.",
+            "Punto de cocción: el color del caramelo, la textura de una crema o la miga del pan.",
+            "Un diagrama para cortar o dividir porciones.",
+            "Un ingrediente que no conoces y que podría confundirse con otro."
+          ]
+        },
+        {
+          "t": "p",
+          "x": "En el limpiador puedes elegir imágenes pequeñas en lugar de quitarlas todas, y borrar cada foto que no necesites. Una imagen de referencia pequeña ocupa menos espacio que una foto a todo el ancho. Si muestra una señal de color, imprímela en color; si solo muestra forma o textura, escala de grises puede bastar."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo elegir escala de grises"
+        },
+        {
+          "t": "p",
+          "x": "La escala de grises puede conservar formas, pliegues y texturas usando menos tinta de color. No sirve para una foto cuyo mensaje depende del color, como el tono dorado de un caramelo. Decide foto por foto y usa color solo donde cambie la información. Si ninguna imagen necesita color, configura la impresión completa en blanco y negro."
+        },
+        {
+          "t": "table",
+          "head": [
+            "La foto muestra…",
+            "Cómo imprimirla"
+          ],
+          "rows": [
+            [
+              "Una forma o pliegue",
+              "Pequeña, en escala de grises"
+            ],
+            [
+              "Color o dorado de cocción",
+              "Pequeña, en color; o elimínala y conserva la descripción"
+            ],
+            [
+              "El plato terminado como referencia",
+              "Una sola, pequeña y en escala de grises"
+            ],
+            [
+              "La cocina, las manos o la mesa del autor",
+              "No la imprimas"
+            ],
+            [
+              "Ingredientes acomodados en una foto",
+              "No la imprimas; ya están en la lista"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Usa calidad borrador para recetas de manera predeterminada. El texto suele seguir siendo legible a distancia normal, las páginas salen más rápido y el cartucho puede durar más. La opción aparece en «Calidad de impresión» o «Calidad»; algunas impresoras HP la llaman EconoMode. El ahorro varía según el modelo."
+        },
+        {
+          "t": "h2",
+          "x": "La meta: una receta en una cara"
+        },
+        {
+          "t": "p",
+          "x": "Intenta que cada receta de tu cocina quepa en una cara de una hoja. Quita las fotos que no aportan información, conserva texto de 14 puntos y reduce la escala a 90 % solo si hace falta. Así puedes sujetar, apoyar o limpiar la hoja con facilidad. La misma organización ayuda a crear un [recetario impreso](/blog/recipes/make-a-recipe-binder) uniforme y una [lista semanal de comidas y compras](/blog/recipes/meal-plan-printables). Para más consejos, consulta [cómo ahorrar tinta al imprimir](/blog/save-ink/save-ink-when-printing) y [cómo imprimir una receta sin la historia ni los anuncios](/blog/recipes/print-recipe-without-ads)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo imprimo una página web sin imágenes?",
+          "a": "Usa un limpiador de páginas y elige «Ninguna» en el ajuste de imágenes, o desactiva las imágenes en la vista de impresión de la receta. Los navegadores no tienen un interruptor general para las fotos; «Gráficos de fondo» solo quita fondos CSS."
+        },
+        {
+          "q": "¿Desactivar «Gráficos de fondo» elimina las fotos de la receta?",
+          "a": "No. Ese ajuste elimina fondos CSS y bloques de color. Las fotos insertadas en el artículo siguen imprimiéndose. Usa un limpiador de páginas o la casilla de imágenes de la vista de impresión del sitio."
+        },
+        {
+          "q": "¿Cuánta tinta consume una foto?",
+          "a": "Depende de la impresora y el tamaño de la imagen. Como orientación, una página con foto a color puede costar varias veces más que una página de texto en una impresora de inyección. También puede aumentar el número de hojas."
+        },
+        {
+          "q": "¿Conviene conservar alguna imagen?",
+          "a": "Conserva una si explica cómo dar forma, muestra el punto de cocción, ilustra un corte o identifica un ingrediente desconocido. Imprímela pequeña y en escala de grises salvo que el color sea esencial."
+        },
+        {
+          "q": "¿Cuál es la forma más económica de imprimir recetas con frecuencia?",
+          "a": "Quita las imágenes innecesarias, usa calidad borrador, elige escala de grises cuando sea apropiado, conserva letra legible e imprime a una cara. Revisa la vista previa para evitar una hoja adicional casi vacía."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como imprimir uma receita sem as fotos",
+      "metaTitle": "Imprima uma receita sem fotos",
+      "metaDescription": "Remova as fotos de uma receita antes de imprimir. Veja quais ajustes funcionam, como economizar tinta e qual imagem vale manter.",
+      "keyword": "imprimir receita sem fotos",
+      "secondaryKeywords": [
+        "imprimir página sem imagens",
+        "economizar tinta imprimindo receitas",
+        "imprimir receita só texto",
+        "remover imagens antes de imprimir",
+        "impressão em modo rascunho"
+      ],
+      "answer": "Para imprimir uma receita sem fotos, use um limpador de páginas e escolha “Nenhuma” para imagens, ou abra a visualização de impressão do site e desmarque “incluir imagens”. Navegadores não têm um botão geral para remover fotos de artigos. “Gráficos de fundo” elimina fundos decorativos, não as fotos inseridas na receita.",
+      "ctaLabel": "HTML para PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "As fotos podem transformar uma receita de 300 palavras em quatro páginas. Uma imagem de comida em largura total pode ocupar meia folha; oito fotos de cada etapa podem levar uma receita de uma página a quatro. Em uma impressora jato de tinta, páginas com fotos costumam gastar mais tinta e papel do que texto puro."
+        },
+        {
+          "t": "h2",
+          "x": "Quanto espaço e tinta as imagens podem consumir"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tipo de página",
+            "Custo aproximado em jato de tinta",
+            "Folhas por receita"
+          ],
+          "rows": [
+            [
+              "Só texto",
+              "3–5 centavos",
+              "1"
+            ],
+            [
+              "Texto e uma foto pequena",
+              "6–9 centavos",
+              "1"
+            ],
+            [
+              "Texto e uma foto em largura total",
+              "12–20 centavos",
+              "2"
+            ],
+            [
+              "Sequência completa de fotos",
+              "15–25 centavos por página com foto",
+              "4–6"
+            ],
+            [
+              "O mesmo em laser colorida",
+              "8–12 centavos",
+              "Número semelhante"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "São estimativas: variam bastante conforme impressora, cartucho, cobertura de tinta e papel. A proporção costuma se manter: uma página com foto colorida pode custar várias vezes mais que uma página de texto. A quantidade de folhas também conta. Remover imagens costuma reduzir uma receita de várias páginas para uma."
+        },
+        {
+          "t": "h2",
+          "x": "Como desligar imagens em cada método"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Em um limpador de páginas",
+              "x": "Abra o [impressor de páginas da web](/print), cole o link da receita e abra “Estilo”. Em “Imagens”, escolha “Nenhuma”. É o método mais confiável para remover fotos do artigo e do cartão de receita."
+            },
+            {
+              "h": "Na visualização de impressão do site",
+              "x": "Se o cartão de receita tiver uma caixa “Incluir imagens”, desmarque antes de imprimir. Confira a prévia para ver se as fotos pequenas também sumiram."
+            },
+            {
+              "h": "No modo leitura",
+              "x": "Firefox Reader View e Safari Reader costumam manter as fotos do artigo e retirar elementos decorativos. A página pode ficar menor, mas as fotos podem continuar."
+            },
+            {
+              "h": "Na janela de impressão do navegador",
+              "x": "Em “Mais configurações”, desative “Gráficos de fundo” se quiser remover fundos CSS e blocos coloridos. Isso não remove as fotos inseridas no texto da receita."
+            },
+            {
+              "h": "No driver da impressora",
+              "x": "Escolha escala de cinza ou preto e branco, e qualidade rascunho ou EconoMode se o driver oferecer. As fotos continuarão ocupando espaço, mas podem gastar menos tinta."
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Chrome, Edge e Safari não têm uma opção geral para “não imprimir imagens”. Desativar “Gráficos de fundo” remove fundos decorativos e pode alterar cores, mas deixa intactas as fotos inseridas no artigo. Para removê-las, use um limpador ou a visualização de impressão do próprio site."
+        },
+        {
+          "t": "h2",
+          "x": "Quando vale a pena manter uma foto"
+        },
+        {
+          "t": "p",
+          "x": "Nem toda imagem é decoração. Mantenha uma quando a foto acrescenta informação que as palavras não comunicam bem:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Modelagem e montagem: trançar pão, dobrar dumplings ou montar camadas.",
+            "Ponto de cozimento: a cor do caramelo, a textura de um creme ou o miolo do pão.",
+            "Um diagrama de corte ou divisão de porções.",
+            "Um ingrediente desconhecido que pode ser confundido com outro."
+          ]
+        },
+        {
+          "t": "p",
+          "x": "No limpador, você pode escolher imagens pequenas em vez de removê-las todas e excluir individualmente as fotos desnecessárias. Uma imagem de referência pequena ocupa menos espaço que uma foto em largura total. Se mostrar uma indicação de cor, imprima em cores; se mostrar apenas forma ou textura, escala de cinza pode bastar."
+        },
+        {
+          "t": "h2",
+          "x": "Quando escolher escala de cinza"
+        },
+        {
+          "t": "p",
+          "x": "Escala de cinza pode preservar formas, dobras e texturas usando menos tinta colorida. Não funciona para uma foto cuja informação depende da cor, como o tom dourado do caramelo. Decida foto por foto e use cores somente quando isso mudar a informação. Se nenhuma imagem precisar de cor, configure a impressão inteira em preto e branco."
+        },
+        {
+          "t": "table",
+          "head": [
+            "A foto mostra…",
+            "Como imprimir"
+          ],
+          "rows": [
+            [
+              "Um formato ou dobra",
+              "Pequena, em escala de cinza"
+            ],
+            [
+              "Cor ou dourado do cozimento",
+              "Pequena, colorida; ou remova e mantenha a descrição"
+            ],
+            [
+              "O prato pronto como referência",
+              "Uma só, pequena e em escala de cinza"
+            ],
+            [
+              "A cozinha, as mãos ou a mesa do autor",
+              "Não imprima"
+            ],
+            [
+              "Ingredientes organizados em uma foto",
+              "Não imprima; eles já estão na lista"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Use qualidade rascunho por padrão para receitas. O texto costuma continuar legível a uma distância normal, as páginas saem mais rápido e o cartucho pode durar mais. A opção fica em “Qualidade” ou “Qualidade de impressão”; algumas impressoras HP chamam de EconoMode. A economia depende do modelo."
+        },
+        {
+          "t": "h2",
+          "x": "A meta: uma receita em um lado da folha"
+        },
+        {
+          "t": "p",
+          "x": "Tente deixar cada receita da sua cozinha em um lado de uma folha. Remova fotos que não tragam informação, mantenha texto de 14 pontos e reduza a escala a 90% se necessário. Assim, fica fácil segurar, apoiar ou limpar a folha. O mesmo padrão ajuda a montar um [fichário de receitas impresso](/blog/recipes/make-a-recipe-binder) organizado e uma [lista semanal de refeições e compras](/blog/recipes/meal-plan-printables). Veja também [como economizar tinta ao imprimir](/blog/save-ink/save-ink-when-printing) e [como imprimir uma receita sem história nem anúncios](/blog/recipes/print-recipe-without-ads)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como imprimir uma página da web sem imagens?",
+          "a": "Use um limpador de páginas e escolha “Nenhuma” nas opções de imagem, ou desmarque as fotos na visualização de impressão da receita. Navegadores não têm um botão geral para fotos; “Gráficos de fundo” remove somente fundos CSS."
+        },
+        {
+          "q": "Desativar “Gráficos de fundo” remove as fotos da receita?",
+          "a": "Não. A opção remove fundos CSS e blocos coloridos. As fotos inseridas no artigo continuam sendo impressas. Use um limpador de páginas ou a opção de imagens do próprio site."
+        },
+        {
+          "q": "Quanta tinta uma foto usa?",
+          "a": "Depende da impressora e do tamanho da imagem. Como estimativa, uma página com foto colorida pode custar várias vezes mais que uma página de texto em uma impressora jato de tinta. Ela também pode aumentar o número de folhas."
+        },
+        {
+          "q": "Vale a pena manter alguma imagem?",
+          "a": "Mantenha uma se ela explicar a modelagem, mostrar o ponto de cozimento, ilustrar um corte ou identificar um ingrediente desconhecido. Imprima pequena e em escala de cinza, a menos que a cor seja essencial."
+        },
+        {
+          "q": "Qual é a forma mais econômica de imprimir receitas com frequência?",
+          "a": "Remova imagens desnecessárias, use qualidade rascunho, escolha escala de cinza quando apropriado, mantenha letras legíveis e imprima em um lado. Confira a prévia para evitar uma folha extra quase vazia."
+        }
+      ]
+    },
+    "hi": {
+      "title": "तस्वीरों के बिना रेसिपी कैसे प्रिंट करें",
+      "metaTitle": "रेसिपी बिना तस्वीरों के प्रिंट करें",
+      "metaDescription": "प्रिंट से पहले रेसिपी की तस्वीरें हटाएँ। जानें कौन सी सेटिंग काम करती है, स्याही कैसे बचाएँ और कौन सी एक तस्वीर रखें।",
+      "keyword": "तस्वीरों के बिना रेसिपी प्रिंट",
+      "secondaryKeywords": [
+        "बिना चित्र वेब पेज प्रिंट",
+        "रेसिपी प्रिंट में स्याही बचाएँ",
+        "सिर्फ टेक्स्ट रेसिपी प्रिंट",
+        "प्रिंट से पहले तस्वीरें हटाएँ",
+        "ड्राफ्ट मोड प्रिंट"
+      ],
+      "answer": "तस्वीरों के बिना रेसिपी प्रिंट करने के लिए वेब पेज क्लीनर में इमेज “None” चुनें, या साइट का प्रिंट दृश्य खोलकर “include images” बंद करें। ब्राउज़र में लेख की तस्वीरें हटाने का कोई सामान्य स्विच नहीं है। “Background graphics” केवल सजावटी बैकग्राउंड हटाता है, रेसिपी के अंदर की तस्वीरें नहीं।",
+      "ctaLabel": "HTML से PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "तस्वीरें 300 शब्दों की रेसिपी को चार पेज का प्रिंटआउट बना सकती हैं। पूरी चौड़ाई वाली एक तस्वीर आधा पन्ना ले सकती है; हर चरण की आठ तस्वीरें एक पेज को चार पेज कर सकती हैं। इंकजेट प्रिंटर पर तस्वीरों वाले पेज सामान्यतः केवल टेक्स्ट वाले पेज से अधिक स्याही और कागज़ लेते हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "तस्वीरें कितनी जगह और स्याही ले सकती हैं"
+        },
+        {
+          "t": "table",
+          "head": [
+            "पेज का प्रकार",
+            "इंकजेट की अनुमानित लागत",
+            "एक रेसिपी के पन्ने"
+          ],
+          "rows": [
+            [
+              "सिर्फ टेक्स्ट",
+              "3–5 सेंट",
+              "1"
+            ],
+            [
+              "टेक्स्ट और एक छोटी तस्वीर",
+              "6–9 सेंट",
+              "1"
+            ],
+            [
+              "टेक्स्ट और पूरी चौड़ाई की तस्वीर",
+              "12–20 सेंट",
+              "2"
+            ],
+            [
+              "पूरी चरण-दर-चरण तस्वीरें",
+              "तस्वीर वाले पेज पर 15–25 सेंट",
+              "4–6"
+            ],
+            [
+              "वही रंगीन लेज़र पर",
+              "8–12 सेंट",
+              "लगभग उतने ही"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "ये अनुमान हैं और प्रिंटर, कार्ट्रिज, स्याही कवरेज तथा कागज़ के अनुसार बहुत बदलते हैं। आम तौर पर रंगीन तस्वीर वाला पेज टेक्स्ट पेज से कई गुना महँगा हो सकता है। पन्नों की संख्या भी खर्च बढ़ाती है। तस्वीरें हटाने से कई पेज की रेसिपी अक्सर एक पेज में आ जाती है।"
+        },
+        {
+          "t": "h2",
+          "x": "तरीके के अनुसार तस्वीरें बंद करें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "वेब क्लीनर में",
+              "x": "[वेब पेज प्रिंटर](/print) खोलें, रेसिपी का लिंक डालें और “Style” मेनू खोलें। “Images” में “None” चुनें। यह लेख और रेसिपी कार्ड, दोनों की तस्वीरें हटाने का सबसे भरोसेमंद तरीका है।"
+            },
+            {
+              "h": "साइट के प्रिंट दृश्य में",
+              "x": "रेसिपी कार्ड में “Include images” बॉक्स हो तो प्रिंट से पहले उसे हटाएँ। प्रीव्यू देखकर पुष्टि करें कि छोटी तस्वीरें भी हट गई हैं।"
+            },
+            {
+              "h": "रीडर मोड में",
+              "x": "Firefox Reader View और Safari Reader अक्सर लेख की तस्वीरें रखते हैं और सजावटी हिस्से हटाते हैं। पेज छोटा हो सकता है, पर तस्वीरें फिर भी रह सकती हैं।"
+            },
+            {
+              "h": "ब्राउज़र प्रिंट डायलॉग में",
+              "x": "“More settings” में “Background graphics” बंद करने से CSS बैकग्राउंड और रंगीन ब्लॉक हटते हैं। इससे रेसिपी लेख के भीतर लगी तस्वीरें नहीं हटतीं।"
+            },
+            {
+              "h": "प्रिंटर ड्राइवर में",
+              "x": "यदि विकल्प हो तो ग्रेस्केल या ब्लैक-एंड-व्हाइट और Draft या EconoMode गुणवत्ता चुनें। तस्वीरें जगह तो लेंगी, पर स्याही कम लग सकती है।"
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Chrome, Edge या Safari में तस्वीरें न छापने का कोई सामान्य स्विच नहीं है। “Background graphics” बंद करने से सजावटी बैकग्राउंड हटते हैं और रंग बदल सकते हैं, लेकिन लेख की तस्वीरें बनी रहती हैं। तस्वीरें हटाने के लिए क्लीनर या साइट का अपना प्रिंट दृश्य इस्तेमाल करें।"
+        },
+        {
+          "t": "h2",
+          "x": "कब एक तस्वीर रखनी चाहिए"
+        },
+        {
+          "t": "p",
+          "x": "हर तस्वीर सजावट नहीं होती। जब चित्र ऐसी जानकारी देता हो जिसे शब्दों में समझाना कठिन है, तो एक तस्वीर रखें:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "आकार देना और जोड़ना: ब्रेड गूँथना, पकौड़ी मोड़ना या परतें बनाना।",
+            "पकने का संकेत: कैरामेल का रंग, कस्टर्ड की बनावट या ब्रेड का अंदरूनी भाग।",
+            "काटने या हिस्से बाँटने का चित्र।",
+            "अपरिचित सामग्री जिसे दूसरी चीज़ समझा जा सकता है।"
+          ]
+        },
+        {
+          "t": "p",
+          "x": "क्लीनर में सब तस्वीरें हटाने के बजाय “Small” चुन सकते हैं और जरूरत न वाली तस्वीरें अलग-अलग हटा सकते हैं। छोटी संदर्भ तस्वीर पूरी चौड़ाई वाली तस्वीर से कम जगह लेती है। रंग का संकेत दिखाने वाली तस्वीर रंग में छापें; केवल आकार या बनावट दिखाती हो तो ग्रेस्केल पर्याप्त हो सकता है।"
+        },
+        {
+          "t": "h2",
+          "x": "ग्रेस्केल कब चुनें"
+        },
+        {
+          "t": "p",
+          "x": "ग्रेस्केल आकार, मोड़ और बनावट दिखा सकता है और रंगीन स्याही कम ले सकता है। यह उस तस्वीर के लिए सही नहीं जिसमें जानकारी रंग पर निर्भर हो, जैसे कैरामेल कितना भूरा होना चाहिए। हर तस्वीर को अलग देखकर तय करें और रंग तभी रखें जब उससे जानकारी बदलती हो। किसी फोटो को रंग की जरूरत न हो तो पूरा प्रिंट ब्लैक-एंड-व्हाइट करें।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "तस्वीर में क्या है…",
+            "कैसे प्रिंट करें"
+          ],
+          "rows": [
+            [
+              "बनावट या मोड़ का चरण",
+              "छोटी, ग्रेस्केल में"
+            ],
+            [
+              "रंग या भूरा होने का संकेत",
+              "छोटी, रंग में; या हटाकर विवरण रखें"
+            ],
+            [
+              "तैयार पकवान का संदर्भ",
+              "सिर्फ एक, छोटी, ग्रेस्केल"
+            ],
+            [
+              "ब्लॉगर की रसोई, हाथ या मेज़",
+              "प्रिंट न करें"
+            ],
+            [
+              "फोटो में रखी सामग्री",
+              "प्रिंट न करें; सूची पहले से है"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "रेसिपी के लिए डिफ़ॉल्ट रूप से Draft गुणवत्ता चुनें। सामान्य दूरी से टेक्स्ट पढ़ने योग्य रहता है, प्रिंट तेज़ होता है और कार्ट्रिज अधिक चल सकता है। सेटिंग “Quality” या “Print Quality” में मिलेगी; कुछ HP प्रिंटर में नाम EconoMode है। बचत मॉडल पर निर्भर है।"
+        },
+        {
+          "t": "h2",
+          "x": "लक्ष्य: एक रेसिपी, एक तरफ"
+        },
+        {
+          "t": "p",
+          "x": "कोशिश करें कि रसोई में हर रेसिपी एक शीट के एक तरफ आ जाए। जिन तस्वीरों से जानकारी नहीं मिलती उन्हें हटाएँ, टेक्स्ट 14 पॉइंट रखें और जरूरत पर स्केल 90% करें। शीट को पकड़ना, टिकाना और साफ करना आसान होगा। यही प्रारूप [प्रिंटेड रेसिपी बाइंडर](/blog/recipes/make-a-recipe-binder) और [साप्ताहिक भोजन व खरीदारी सूची](/blog/recipes/meal-plan-printables) में मदद करता है। [प्रिंट में स्याही बचाने](/blog/save-ink/save-ink-when-printing) और [बिना कहानी व विज्ञापन रेसिपी प्रिंट करने](/blog/recipes/print-recipe-without-ads) के तरीके भी देखें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "बिना तस्वीरों के वेब पेज कैसे प्रिंट करें?",
+          "a": "वेब क्लीनर में इमेज “None” चुनें या रेसिपी की प्रिंट सेटिंग में चित्र बंद करें। ब्राउज़र में तस्वीरों का सामान्य स्विच नहीं होता; “Background graphics” केवल CSS बैकग्राउंड हटाता है।"
+        },
+        {
+          "q": "क्या “Background graphics” बंद करने से रेसिपी की तस्वीरें हटेंगी?",
+          "a": "नहीं। यह CSS बैकग्राउंड और रंगीन ब्लॉक हटाता है। लेख के अंदर की तस्वीरें प्रिंट होंगी। क्लीनर या साइट का अपना इमेज विकल्प इस्तेमाल करें।"
+        },
+        {
+          "q": "एक तस्वीर कितनी स्याही लेती है?",
+          "a": "यह प्रिंटर और तस्वीर के आकार पर निर्भर है। मोटे तौर पर इंकजेट पर रंगीन फोटो पेज टेक्स्ट पेज से कई गुना महँगा हो सकता है और अतिरिक्त पन्ने भी लग सकते हैं।"
+        },
+        {
+          "q": "क्या कोई तस्वीर रखनी चाहिए?",
+          "a": "वह तस्वीर रखें जो आकार बनाना, पकने का संकेत, काटने का तरीका या अपरिचित सामग्री समझाए। उसे छोटा और ग्रेस्केल में छापें, जब तक रंग जरूरी न हो।"
+        },
+        {
+          "q": "नियमित रूप से रेसिपी छापने का सस्ता तरीका क्या है?",
+          "a": "गैरजरूरी तस्वीरें हटाएँ, Draft गुणवत्ता चुनें, उचित हो तो ग्रेस्केल करें, पढ़ने योग्य अक्षर रखें और एक तरफ प्रिंट करें। प्रीव्यू से लगभग खाली अतिरिक्त पन्ना बचाएँ।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية طباعة وصفة دون الصور",
+      "metaTitle": "اطبع وصفة دون الصور",
+      "metaDescription": "أزل صور الوصفة قبل الطباعة. تعرّف على الإعدادات المناسبة وتوفير الحبر والصورة التي تستحق الاحتفاظ بها.",
+      "keyword": "طباعة وصفة دون صور",
+      "secondaryKeywords": [
+        "طباعة صفحة ويب دون صور",
+        "توفير الحبر عند طباعة الوصفات",
+        "طباعة وصفة نصية فقط",
+        "إزالة الصور قبل الطباعة",
+        "الطباعة بجودة المسودة"
+      ],
+      "answer": "لطباعة وصفة دون صور، استخدم منظف صفحات واختر «بلا صور»، أو افتح معاينة الطباعة في الموقع وأوقف خيار «تضمين الصور». لا يوجد في المتصفحات زر عام لإزالة صور المقالات. خيار «رسومات الخلفية» يحذف الخلفيات الزخرفية فقط، ولا يحذف الصور المضمنة في الوصفة.",
+      "ctaLabel": "HTML إلى PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "قد تحوّل الصور وصفة من 300 كلمة إلى أربع صفحات. وقد تحتل صورة طعام بعرض الصفحة نصف ورقة، بينما تزيد ثماني صور للخطوات وصفة من صفحة إلى أربع. وفي طابعة نفث الحبر، تستهلك الصفحات المصورة عادة حبرًا وورقًا أكثر من النص وحده."
+        },
+        {
+          "t": "h2",
+          "x": "كم تستهلك الصور من مساحة وحبر؟"
+        },
+        {
+          "t": "table",
+          "head": [
+            "نوع الصفحة",
+            "تكلفة تقريبية لطابعة نفث الحبر",
+            "الأوراق لكل وصفة"
+          ],
+          "rows": [
+            [
+              "نص فقط",
+              "3–5 سنتات",
+              "1"
+            ],
+            [
+              "نص وصورة صغيرة",
+              "6–9 سنتات",
+              "1"
+            ],
+            [
+              "نص وصورة بعرض الصفحة",
+              "12–20 سنتًا",
+              "2"
+            ],
+            [
+              "تسلسل صور الخطوات كاملًا",
+              "15–25 سنتًا لكل صفحة صور",
+              "4–6"
+            ],
+            [
+              "نفس العمل بطابعة ليزر ملونة",
+              "8–12 سنتًا",
+              "عدد صفحات قريب"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "هذه تقديرات تختلف حسب الطابعة والخرطوشة وتغطية الحبر والورق. لكن النسبة غالبًا مهمة: قد تكلف صفحة الصورة الملونة عدة أضعاف صفحة النص، ويزيد عدد الأوراق أيضًا. إزالة الصور غالبًا ما تختصر الوصفة من عدة صفحات إلى صفحة واحدة."
+        },
+        {
+          "t": "h2",
+          "x": "طرق إيقاف الصور حسب وسيلة الطباعة"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "في منظف صفحات الويب",
+              "x": "افتح [طابعة صفحات الويب](/print)، والصق رابط الوصفة، ثم افتح قائمة «النمط». في «الصور» اختر «بلا». هذه الطريقة الأضمن لإزالة صور المقال وبطاقة الوصفة."
+            },
+            {
+              "h": "في نافذة طباعة الموقع",
+              "x": "إذا وجدت بطاقة الوصفة مربع «تضمين الصور»، ألغِ تحديده قبل الطباعة. راجع المعاينة للتأكد من اختفاء الصور الصغيرة أيضًا."
+            },
+            {
+              "h": "في وضع القراءة",
+              "x": "يحتفظ Firefox Reader View وSafari Reader غالبًا بصور المقال ويحذفان العناصر الزخرفية. قد يقل عدد الصفحات، لكن الصور قد تبقى."
+            },
+            {
+              "h": "في نافذة طباعة المتصفح",
+              "x": "من «مزيد من الإعدادات»، أوقف «رسومات الخلفية» لإزالة صور خلفية CSS ومربعات الألوان. هذا لا يحذف الصور المضمنة داخل نص الوصفة."
+            },
+            {
+              "h": "في برنامج تشغيل الطابعة",
+              "x": "اختر الرمادي أو الأبيض والأسود وجودة المسودة أو EconoMode إن توفرت. ستظل الصور تستهلك مساحة لكنها قد تستخدم حبرًا أقل."
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "لا يحتوي Chrome أو Edge أو Safari على مفتاح عام لمنع طباعة الصور. يؤدي إيقاف «رسومات الخلفية» إلى حذف الخلفيات الزخرفية وقد يغيّر الألوان، لكنه يترك الصور المضمنة في المقال كما هي. استخدم منظفًا أو نافذة الطباعة الخاصة بالموقع لإزالتها."
+        },
+        {
+          "t": "h2",
+          "x": "متى تستحق صورة واحدة أن تبقى؟"
+        },
+        {
+          "t": "p",
+          "x": "ليست كل الصور للزينة. احتفظ بصورة إذا كانت تنقل معلومة يصعب شرحها بالكلمات:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "التشكيل والتركيب، مثل ضفيرة الخبز أو طي الزلابية أو ترتيب الطبقات.",
+            "علامة النضج، مثل لون الكراميل أو قوام الكاسترد أو شكل فتات الخبز.",
+            "رسم يوضح التقطيع أو تقسيم الحصص.",
+            "مكوّن غير مألوف قد تخلطه بمكوّن آخر."
+          ]
+        },
+        {
+          "t": "p",
+          "x": "يمكنك اختيار حجم صغير للصور في المنظف بدل حذفها كلها، ثم إزالة الصور غير الضرورية واحدة واحدة. تشغل الصورة المرجعية الصغيرة مساحة أقل من صورة بعرض الصفحة. اطبع صورة اللون بالألوان؛ أما إن كانت للمظهر أو القوام فقط فقد يكفي الرمادي."
+        },
+        {
+          "t": "h2",
+          "x": "متى تختار التدرج الرمادي؟"
+        },
+        {
+          "t": "p",
+          "x": "يحافظ التدرج الرمادي على الشكل والطيات والملمس باستخدام حبر ملون أقل. لكنه لا يناسب صورة تعتمد معلومتها على اللون، مثل درجة تحمير الكراميل. قيّم كل صورة وحدها واستخدم اللون فقط حين يغيّر المعلومة. وإذا لم تحتج أي صورة إلى اللون، اضبط المهمة كلها على الأبيض والأسود."
+        },
+        {
+          "t": "table",
+          "head": [
+            "إذا كانت الصورة تُظهر…",
+            "اطبعها هكذا"
+          ],
+          "rows": [
+            [
+              "خطوة تشكيل أو طي",
+              "صغيرة وبالرمادي"
+            ],
+            [
+              "لونًا أو درجة تحمير",
+              "صغيرة وملونة، أو احذفها واحتفظ بالوصف"
+            ],
+            [
+              "الطبق النهائي للمرجعية",
+              "صورة واحدة صغيرة بالرمادي"
+            ],
+            [
+              "مطبخ الكاتب أو يديه أو طاولته",
+              "لا تطبعها"
+            ],
+            [
+              "المكونات مرصوصة في صورة",
+              "لا تطبعها؛ القائمة موجودة"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "اجعل جودة المسودة الخيار الافتراضي للوصفات. يظل النص غالبًا مقروءًا من مسافة عادية، وتخرج الصفحات أسرع وقد تدوم الخرطوشة أطول. يوجد الإعداد تحت «الجودة» أو «جودة الطباعة»، وتسميه بعض طابعات HP‏ EconoMode. يختلف التوفير حسب الطراز."
+        },
+        {
+          "t": "h2",
+          "x": "الهدف: وصفة واحدة على وجه واحد"
+        },
+        {
+          "t": "p",
+          "x": "حاول وضع كل وصفة على وجه واحد من ورقة. أزل الصور التي لا تضيف معلومة، واستخدم خطًا بحجم 14 نقطة وخفّض المقياس إلى 90 بالمئة عند الحاجة. يسهل عندها حمل الورقة أو تثبيتها أو تنظيفها. ويساعد التنسيق نفسه على إنشاء [ملف وصفات مطبوع](/blog/recipes/make-a-recipe-binder) مرتب و[قائمة أسبوعية للوجبات والمشتريات](/blog/recipes/meal-plan-printables). اقرأ أيضًا [كيفية توفير الحبر عند الطباعة](/blog/save-ink/save-ink-when-printing) و[طباعة وصفة دون قصتها وإعلاناتها](/blog/recipes/print-recipe-without-ads)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أطبع صفحة ويب دون صور؟",
+          "a": "استخدم منظف صفحات واختر «بلا» للصور، أو أوقفها في خيارات طباعة الوصفة. لا يوجد في المتصفحات زر عام للصور؛ «رسومات الخلفية» تحذف خلفيات CSS فقط."
+        },
+        {
+          "q": "هل يؤدي إيقاف «رسومات الخلفية» إلى حذف صور الوصفة؟",
+          "a": "لا. يحذف هذا الإعداد الخلفيات ومربعات الألوان، لكن الصور المضمنة في المقال تُطبع. استخدم منظفًا أو خيار الصور في نافذة طباعة الموقع."
+        },
+        {
+          "q": "ما كمية الحبر التي تستهلكها الصورة؟",
+          "a": "يعتمد ذلك على الطابعة وحجم الصورة. قد تكلف صفحة صورة ملونة عدة أضعاف صفحة النص في طابعة نفث الحبر، وقد تحتاج إلى أوراق إضافية."
+        },
+        {
+          "q": "هل ينبغي الاحتفاظ بأي صورة؟",
+          "a": "احتفظ بصورة توضح التشكيل أو النضج أو التقطيع أو مكوّنًا غير مألوف. اطبعها صغيرة وبالرمادي ما لم يكن اللون ضروريًا."
+        },
+        {
+          "q": "ما أرخص طريقة لطباعة الوصفات بانتظام؟",
+          "a": "أزل الصور غير الضرورية، واستخدم جودة المسودة والرمادي عند ملاءمته، وحافظ على خط مقروء واطبع على وجه واحد. راجع المعاينة لتجنب ورقة إضافية شبه فارغة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "ছবি ছাড়া রেসিপি কীভাবে প্রিন্ট করবেন",
+      "metaTitle": "ছবি ছাড়া রেসিপি প্রিন্ট করুন",
+      "metaDescription": "প্রিন্টের আগে রেসিপির ছবি সরান। কোন সেটিং কাজ করে, কালি কীভাবে বাঁচে এবং কোন ছবিটি রাখা উচিত তা জানুন। কার্যকর পরামর্শ পড়ুন।",
+      "keyword": "ছবি ছাড়া রেসিপি প্রিন্ট",
+      "secondaryKeywords": [
+        "ছবি ছাড়া ওয়েব পেজ প্রিন্ট",
+        "রেসিপি প্রিন্টে কালি বাঁচানো",
+        "শুধু লেখা রেসিপি প্রিন্ট",
+        "প্রিন্টের আগে ছবি সরানো",
+        "ড্রাফট মোড প্রিন্ট"
+      ],
+      "answer": "ছবি ছাড়া রেসিপি প্রিন্ট করতে ওয়েব ক্লিনারে ছবির সেটিং “None” করুন, অথবা সাইটের প্রিন্ট ভিউ খুলে “include images” বন্ধ করুন। ব্রাউজারে নিবন্ধের ছবি সরানোর সাধারণ সুইচ নেই। “Background graphics” শুধু সাজানো ব্যাকগ্রাউন্ড সরায়, রেসিপির ভেতরের ছবি নয়।",
+      "ctaLabel": "HTML থেকে PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "ছবি ৩০০ শব্দের রেসিপিকে চার পাতার প্রিন্টে পরিণত করতে পারে। পুরো প্রস্থের একটি খাবারের ছবি অর্ধেক পাতা নিতে পারে; প্রতিটি ধাপের আটটি ছবি এক পাতার রেসিপিকে চার পাতায় ছড়ায়। ইঙ্কজেট প্রিন্টারে ছবিসহ পাতায় সাধারণত শুধু লেখার পাতার চেয়ে বেশি কালি ও কাগজ লাগে।"
+        },
+        {
+          "t": "h2",
+          "x": "ছবিতে কত জায়গা ও কালি লাগে"
+        },
+        {
+          "t": "table",
+          "head": [
+            "পাতার ধরন",
+            "ইঙ্কজেটের আনুমানিক খরচ",
+            "প্রতি রেসিপিতে পাতা"
+          ],
+          "rows": [
+            [
+              "শুধু লেখা",
+              "৩–৫ সেন্ট",
+              "১"
+            ],
+            [
+              "লেখা ও একটি ছোট ছবি",
+              "৬–৯ সেন্ট",
+              "১"
+            ],
+            [
+              "লেখা ও পূর্ণ-প্রস্থ ছবি",
+              "১২–২০ সেন্ট",
+              "২"
+            ],
+            [
+              "ধাপে ধাপে সব ছবি",
+              "ছবির প্রতি পাতায় ১৫–২৫ সেন্ট",
+              "৪–৬"
+            ],
+            [
+              "রঙিন লেজারে একই কাজ",
+              "৮–১২ সেন্ট",
+              "প্রায় একই"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "এগুলো অনুমান; প্রিন্টার, কার্ট্রিজ, কালির পরিমাণ ও কাগজে খরচ অনেক বদলায়। তবু অনুপাতটি সাধারণত থাকে: রঙিন ছবির পাতা শুধু লেখার পাতার কয়েক গুণ খরচ হতে পারে। পাতার সংখ্যাও খরচ বাড়ায়। ছবি বাদ দিলে কয়েক পাতার রেসিপি প্রায়ই এক পাতায় আসে।"
+        },
+        {
+          "t": "h2",
+          "x": "পদ্ধতি অনুযায়ী ছবি বন্ধ করুন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "ওয়েব ক্লিনারে",
+              "x": "[ওয়েব পেজ প্রিন্টার](/print) খুলে রেসিপির লিংক দিন, তারপর “Style” মেনু খুলুন। “Images” থেকে “None” বেছে নিন। নিবন্ধ ও রেসিপি কার্ডের ছবি সরানোর সবচেয়ে নির্ভরযোগ্য উপায় এটি।"
+            },
+            {
+              "h": "সাইটের নিজস্ব প্রিন্ট ভিউতে",
+              "x": "রেসিপি কার্ডে “Include images” বক্স থাকলে প্রিন্টের আগে টিক তুলে দিন। প্রিভিউ দেখে ছোট ছবিগুলোও সরেছে কি না নিশ্চিত করুন।"
+            },
+            {
+              "h": "রিডার মোডে",
+              "x": "Firefox Reader View ও Safari Reader প্রায়ই মূল ছবি রেখে সাজসজ্জা সরায়। পাতা ছোট হতে পারে, কিন্তু ছবিগুলো থাকতে পারে।"
+            },
+            {
+              "h": "ব্রাউজারের প্রিন্ট ডায়ালগে",
+              "x": "“More settings”-এ “Background graphics” বন্ধ করলে CSS ব্যাকগ্রাউন্ড ও রঙের ব্লক সরবে। রেসিপির লেখার ভেতরের ছবি সরবে না।"
+            },
+            {
+              "h": "প্রিন্টার ড্রাইভারে",
+              "x": "সুবিধা থাকলে গ্রেস্কেল বা সাদা-কালো এবং Draft বা EconoMode মান বেছে নিন। ছবি জায়গা নেবে, তবে কালি কম লাগতে পারে।"
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Chrome, Edge বা Safari-তে ছবি না ছাপানোর সাধারণ সুইচ নেই। “Background graphics” বন্ধ করলে সাজানো ব্যাকগ্রাউন্ড সরে এবং রং বদলাতে পারে, কিন্তু লেখার ভেতরের ছবি থেকে যায়। ছবি সরাতে ক্লিনার বা সাইটের নিজস্ব প্রিন্ট ভিউ ব্যবহার করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "কখন একটি ছবি রাখা উচিত"
+        },
+        {
+          "t": "p",
+          "x": "সব ছবি সাজসজ্জা নয়। শব্দে বোঝানো কঠিন এমন তথ্য দিলে একটি ছবি রাখুন:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "আকার দেওয়া ও জোড়া: রুটি বোনা, ডাম্পলিং ভাঁজ বা স্তর সাজানো।",
+            "সেদ্ধ হওয়ার লক্ষণ: ক্যারামেলের রং, কাস্টার্ডের জমাট বা রুটির ভেতরের গঠন।",
+            "কাটা বা ভাগ করার চিত্র।",
+            "অচেনা উপকরণ, যা অন্য কিছুর সঙ্গে গুলিয়ে যেতে পারে।"
+          ]
+        },
+        {
+          "t": "p",
+          "x": "ক্লিনারে সব ছবি সরানোর বদলে “Small” বেছে নিতে পারেন, তারপর অপ্রয়োজনীয় ছবি একে একে মুছুন। ছোট রেফারেন্স ছবি পূর্ণ-প্রস্থ ছবির চেয়ে কম জায়গা নেয়। রঙের সংকেত থাকলে রঙিন প্রিন্ট করুন; শুধু আকৃতি বা গঠন হলে গ্রেস্কেল যথেষ্ট হতে পারে।"
+        },
+        {
+          "t": "h2",
+          "x": "কখন গ্রেস্কেল বেছে নেবেন"
+        },
+        {
+          "t": "p",
+          "x": "গ্রেস্কেল আকার, ভাঁজ ও গঠন দেখাতে পারে এবং রঙিন কালি কম নেয়। কিন্তু তথ্য যদি রঙের ওপর নির্ভর করে, যেমন ক্যারামেল কতটা বাদামি হওয়া উচিত, তাহলে গ্রেস্কেল উপযুক্ত নয়। প্রতিটি ছবি আলাদা বিবেচনা করুন এবং রং কেবল তথ্য বদলালে রাখুন। কোনো ছবির রঙের দরকার না থাকলে পুরো প্রিন্ট সাদা-কালো করুন।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ছবিতে যা আছে…",
+            "যেভাবে প্রিন্ট করবেন"
+          ],
+          "rows": [
+            [
+              "আকার বা ভাঁজের ধাপ",
+              "ছোট, গ্রেস্কেলে"
+            ],
+            [
+              "রং বা বাদামি হওয়ার লক্ষণ",
+              "ছোট, রঙিন; অথবা বাদ দিয়ে বর্ণনা রাখুন"
+            ],
+            [
+              "রেফারেন্সের জন্য তৈরি খাবার",
+              "একটি, ছোট, গ্রেস্কেল"
+            ],
+            [
+              "লেখকের রান্নাঘর, হাত বা টেবিল",
+              "প্রিন্ট করবেন না"
+            ],
+            [
+              "ছবিতে সাজানো উপকরণ",
+              "প্রিন্ট করবেন না; তালিকা আছেই"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "রেসিপির জন্য ডিফল্টভাবে Draft মান ব্যবহার করুন। সাধারণ দূরত্বে লেখা পড়া যায়, পাতা দ্রুত বের হয় এবং কার্ট্রিজ বেশি দিন চলতে পারে। “Quality” বা “Print Quality”-এ সেটিংটি থাকে; কিছু HP প্রিন্টারে এর নাম EconoMode। সাশ্রয় মডেলভেদে বদলায়।"
+        },
+        {
+          "t": "h2",
+          "x": "লক্ষ্য: এক পাতার এক পাশে একটি রেসিপি"
+        },
+        {
+          "t": "p",
+          "x": "রান্নাঘরের প্রতিটি রেসিপি এক পাতার এক পাশে রাখার চেষ্টা করুন। তথ্য না দেওয়া ছবি সরান, লেখা ১৪ পয়েন্ট রাখুন এবং দরকার হলে স্কেল ৯০ শতাংশ করুন। পাতা হাতে রাখা, ঠেস দিয়ে রাখা বা মুছে পরিষ্কার করা সহজ হবে। একই বিন্যাসে [প্রিন্ট করা রেসিপি ফোল্ডার](/blog/recipes/make-a-recipe-binder) এবং [সাপ্তাহিক খাবার ও কেনাকাটার তালিকা](/blog/recipes/meal-plan-printables) গুছিয়ে রাখা যায়। আরও পড়ুন [প্রিন্টে কালি বাঁচানো](/blog/save-ink/save-ink-when-printing) ও [গল্প ও বিজ্ঞাপন ছাড়া রেসিপি প্রিন্ট](/blog/recipes/print-recipe-without-ads)।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "ছবি ছাড়া ওয়েব পেজ কীভাবে প্রিন্ট করব?",
+          "a": "ওয়েব ক্লিনারের ছবির সেটিং “None” করুন অথবা রেসিপির প্রিন্ট অপশনে ছবি বন্ধ করুন। ব্রাউজারে ছবি সরানোর সাধারণ সুইচ নেই; “Background graphics” শুধু CSS ব্যাকগ্রাউন্ড সরায়।"
+        },
+        {
+          "q": "“Background graphics” বন্ধ করলে রেসিপির ছবি কি সরবে?",
+          "a": "না। এটি CSS ব্যাকগ্রাউন্ড ও রঙের ব্লক সরায়। নিবন্ধের ভেতরের ছবি প্রিন্ট হবে। ক্লিনার বা সাইটের নিজস্ব ছবি অপশন ব্যবহার করুন।"
+        },
+        {
+          "q": "একটি ছবি কত কালি খরচ করে?",
+          "a": "প্রিন্টার ও ছবির আকারের ওপর নির্ভর করে। আনুমানিকভাবে ইঙ্কজেটে রঙিন ছবির পাতা শুধু লেখার পাতার কয়েক গুণ খরচ করতে পারে এবং অতিরিক্ত পাতাও লাগতে পারে।"
+        },
+        {
+          "q": "কোনো ছবি কি রাখা উচিত?",
+          "a": "যে ছবি আকার দেওয়া, রান্নার অবস্থা, কাটার পদ্ধতি বা অচেনা উপকরণ বুঝতে সাহায্য করে সেটি রাখুন। ছোট করে গ্রেস্কেলে ছাপুন, যদি না রং অপরিহার্য হয়।"
+        },
+        {
+          "q": "নিয়মিত রেসিপি ছাপানোর সাশ্রয়ী উপায় কী?",
+          "a": "অপ্রয়োজনীয় ছবি সরান, Draft মান নিন, উপযুক্ত হলে গ্রেস্কেল করুন, লেখা পড়ার মতো রাখুন এবং এক পাশে ছাপুন। প্রিভিউ দেখে প্রায় ফাঁকা অতিরিক্ত পাতা এড়ান।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách in công thức nấu ăn không có ảnh",
+      "metaTitle": "In công thức nấu ăn không có ảnh",
+      "metaDescription": "Xóa ảnh công thức trước khi in. Tìm hiểu cài đặt phù hợp, cách tiết kiệm mực và ảnh nào đáng giữ lại.",
+      "keyword": "in công thức không có ảnh",
+      "secondaryKeywords": [
+        "in trang web không có ảnh",
+        "tiết kiệm mực khi in công thức",
+        "in công thức chỉ có chữ",
+        "xóa ảnh trước khi in",
+        "in chất lượng nháp"
+      ],
+      "answer": "Để in công thức không có ảnh, dùng công cụ dọn trang và đặt hình ảnh thành “None”, hoặc mở chế độ in của trang rồi bỏ chọn “include images”. Trình duyệt không có nút chung để tắt ảnh trong bài viết. “Background graphics” chỉ bỏ nền trang trí, không bỏ ảnh nằm trong bài công thức.",
+      "ctaLabel": "HTML sang PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Ảnh có thể biến công thức 300 từ thành bản in bốn trang. Một ảnh món ăn rộng hết trang có thể chiếm nửa tờ; tám ảnh theo từng bước có thể khiến công thức một trang thành bốn trang. Với máy in phun, trang có ảnh thường tốn nhiều mực và giấy hơn trang chỉ có chữ."
+        },
+        {
+          "t": "h2",
+          "x": "Ảnh tốn bao nhiêu diện tích và mực"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Loại trang",
+            "Chi phí ước tính trên máy in phun",
+            "Số tờ cho một công thức"
+          ],
+          "rows": [
+            [
+              "Chỉ có chữ",
+              "3–5 xu",
+              "1"
+            ],
+            [
+              "Chữ và một ảnh nhỏ",
+              "6–9 xu",
+              "1"
+            ],
+            [
+              "Chữ và ảnh rộng toàn trang",
+              "12–20 xu",
+              "2"
+            ],
+            [
+              "Đầy đủ ảnh từng bước",
+              "15–25 xu mỗi trang ảnh",
+              "4–6"
+            ],
+            [
+              "Tương tự trên máy laser màu",
+              "8–12 xu",
+              "Số trang tương tự"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Đây là các con số ước tính, thay đổi theo máy in, hộp mực, độ phủ mực và giấy. Tỷ lệ thường vẫn đúng: trang ảnh màu có thể tốn gấp vài lần trang chữ. Số tờ cũng làm tăng chi phí. Bỏ ảnh thường giúp công thức nhiều trang gọn lại còn một trang."
+        },
+        {
+          "t": "h2",
+          "x": "Tắt ảnh theo từng cách in"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Trong công cụ dọn trang",
+              "x": "Mở [công cụ in trang web](/print), dán liên kết công thức rồi mở mục “Style”. Trong “Images”, chọn “None”. Đây là cách đáng tin cậy nhất để bỏ cả ảnh trong bài và trong thẻ công thức."
+            },
+            {
+              "h": "Trong chế độ in của trang",
+              "x": "Nếu thẻ công thức có ô “Include images”, hãy bỏ chọn trước khi in. Xem trước để xác nhận ảnh nhỏ cũng đã được bỏ."
+            },
+            {
+              "h": "Trong chế độ đọc",
+              "x": "Firefox Reader View và Safari Reader thường giữ ảnh bài viết nhưng bỏ phần trang trí. Trang có thể ngắn hơn dù ảnh vẫn còn."
+            },
+            {
+              "h": "Trong hộp thoại in của trình duyệt",
+              "x": "Mở “More settings” và tắt “Background graphics” để bỏ nền CSS và khối màu. Tùy chọn này không xóa ảnh chèn trong nội dung công thức."
+            },
+            {
+              "h": "Trong trình điều khiển máy in",
+              "x": "Chọn thang xám hoặc đen trắng và chất lượng nháp hoặc EconoMode nếu có. Ảnh vẫn chiếm chỗ nhưng có thể dùng ít mực màu hơn."
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Chrome, Edge và Safari không có công tắc chung để “không in ảnh”. Tắt “Background graphics” sẽ bỏ nền trang trí và có thể đổi màu, nhưng giữ nguyên ảnh nằm trong bài viết. Muốn bỏ ảnh, hãy dùng công cụ dọn trang hoặc chế độ in riêng của trang."
+        },
+        {
+          "t": "h2",
+          "x": "Khi nào nên giữ lại một ảnh"
+        },
+        {
+          "t": "p",
+          "x": "Không phải ảnh nào cũng chỉ để trang trí. Hãy giữ một ảnh khi nó truyền tải thông tin khó diễn đạt bằng chữ:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Tạo hình và lắp ráp: tết bánh mì, gấp bánh hoặc xếp lớp.",
+            "Dấu hiệu chín: màu caramel, độ đông của kem trứng hoặc ruột bánh.",
+            "Sơ đồ cắt hoặc chia khẩu phần.",
+            "Nguyên liệu lạ có thể bị nhầm với loại khác."
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Trong công cụ dọn, bạn có thể đặt ảnh thành “Small” thay vì xóa hết rồi loại từng ảnh không cần. Ảnh tham khảo nhỏ chiếm ít chỗ hơn ảnh rộng toàn trang. Nếu ảnh cho biết màu sắc, in màu; nếu chỉ thể hiện hình dạng hay kết cấu, thang xám có thể đủ."
+        },
+        {
+          "t": "h2",
+          "x": "Khi nào nên chọn thang xám"
+        },
+        {
+          "t": "p",
+          "x": "Thang xám giữ được hình dáng, nếp gấp và kết cấu trong khi dùng ít mực màu hơn. Cách này không phù hợp khi thông tin phụ thuộc vào màu, chẳng hạn caramel cần nâu đến mức nào. Hãy cân nhắc từng ảnh và chỉ dùng màu khi nó làm thay đổi thông tin. Nếu không ảnh nào cần màu, đặt cả lệnh in thành đen trắng."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Ảnh cho thấy…",
+            "Cách in"
+          ],
+          "rows": [
+            [
+              "Bước tạo hình hoặc gấp",
+              "Ảnh nhỏ, thang xám"
+            ],
+            [
+              "Màu sắc hoặc độ vàng nâu",
+              "Ảnh nhỏ, in màu; hoặc bỏ và giữ mô tả"
+            ],
+            [
+              "Món hoàn thành để tham khảo",
+              "Chỉ một ảnh nhỏ, thang xám"
+            ],
+            [
+              "Bếp, tay hoặc bàn của blogger",
+              "Không in"
+            ],
+            [
+              "Nguyên liệu được xếp thành ảnh",
+              "Không in; danh sách đã có"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Mặc định chọn chất lượng nháp cho công thức. Chữ thường vẫn đọc được ở khoảng cách bình thường, in nhanh hơn và hộp mực có thể bền hơn. Tùy chọn thường nằm ở “Quality” hoặc “Print Quality”; một số máy HP gọi là EconoMode. Mức tiết kiệm tùy mẫu máy."
+        },
+        {
+          "t": "h2",
+          "x": "Mục tiêu: một công thức trên một mặt giấy"
+        },
+        {
+          "t": "p",
+          "x": "Cố gắng để mỗi công thức trong bếp nằm gọn trên một mặt giấy. Bỏ ảnh không thêm thông tin, giữ cỡ chữ 14 điểm và giảm tỷ lệ xuống 90% nếu cần. Tờ giấy sẽ dễ cầm, dựng lên hoặc lau sạch. Cùng định dạng giúp bạn làm [sổ công thức in](/blog/recipes/make-a-recipe-binder) đồng nhất và [thực đơn cùng danh sách mua sắm hàng tuần](/blog/recipes/meal-plan-printables). Xem thêm [cách tiết kiệm mực khi in](/blog/save-ink/save-ink-when-printing) và [in công thức không có chuyện dài hay quảng cáo](/blog/recipes/print-recipe-without-ads)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Làm sao in trang web không có ảnh?",
+          "a": "Dùng công cụ dọn trang và chọn “None” ở mục ảnh, hoặc tắt ảnh trong chế độ in của trang. Trình duyệt không có nút chung để tắt ảnh; “Background graphics” chỉ bỏ nền CSS."
+        },
+        {
+          "q": "Tắt “Background graphics” có xóa ảnh công thức không?",
+          "a": "Không. Tùy chọn này bỏ nền CSS và khối màu. Ảnh chèn trong bài vẫn được in. Hãy dùng công cụ dọn trang hoặc tùy chọn ảnh riêng của trang."
+        },
+        {
+          "q": "Một ảnh tốn bao nhiêu mực?",
+          "a": "Điều đó phụ thuộc máy in và kích thước ảnh. Ước tính, trang ảnh màu trên máy in phun có thể tốn gấp vài lần trang chữ và làm tăng số tờ."
+        },
+        {
+          "q": "Có nên giữ lại ảnh nào không?",
+          "a": "Hãy giữ ảnh giải thích cách tạo hình, dấu hiệu món chín, cách cắt hoặc nguyên liệu lạ. In nhỏ và dùng thang xám, trừ khi màu sắc là điều thiết yếu."
+        },
+        {
+          "q": "Cách tiết kiệm nhất để in công thức thường xuyên là gì?",
+          "a": "Bỏ ảnh thừa, dùng chất lượng nháp, chọn thang xám khi phù hợp, giữ chữ dễ đọc và in một mặt. Xem trước để tránh tờ phụ gần như trống."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何不打印图片来打印食谱",
+      "metaTitle": "打印食谱时去掉图片",
+      "metaDescription": "打印前移除食谱图片。了解有效设置、节省墨水的方法，以及哪些图片值得保留。获取免费实用的浏览器打印建议。",
+      "keyword": "打印食谱不带图片",
+      "secondaryKeywords": [
+        "网页打印不带图片",
+        "打印食谱节省墨水",
+        "只打印文字食谱",
+        "打印前移除图片",
+        "草稿模式打印"
+      ],
+      "answer": "想打印不带图片的食谱，可使用网页清理工具并将图片设为“None”，或打开网站的打印视图并取消“包含图片”。浏览器没有通用开关能去掉文章照片。“背景图形”只会移除装饰背景，不会删除食谱正文中的图片。",
+      "ctaLabel": "HTML 转 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "图片可能让一篇 300 字的食谱变成四页。一张横跨整页的美食照片就能占半张纸；八张步骤图可能把一页食谱扩成四页。喷墨打印机打印照片页通常比纯文字页消耗更多墨水和纸张。"
+        },
+        {
+          "t": "h2",
+          "x": "图片会占多少空间和墨水"
+        },
+        {
+          "t": "table",
+          "head": [
+            "页面类型",
+            "喷墨打印估算成本",
+            "每份食谱用纸"
+          ],
+          "rows": [
+            [
+              "纯文字",
+              "3–5 美分",
+              "1 张"
+            ],
+            [
+              "文字加一张小图",
+              "6–9 美分",
+              "1 张"
+            ],
+            [
+              "文字加一张全宽图片",
+              "12–20 美分",
+              "2 张"
+            ],
+            [
+              "完整步骤图片序列",
+              "每张图片页 15–25 美分",
+              "4–6 张"
+            ],
+            [
+              "彩色激光打印相同内容",
+              "8–12 美分",
+              "页数相近"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "这些只是估算，会随打印机、墨盒、墨水覆盖率和纸张变化。但大致比例通常成立：彩色照片页可能比文字页贵几倍，增加纸张也会提高成本。去掉图片往往能把多页食谱缩成一页。"
+        },
+        {
+          "t": "h2",
+          "x": "按打印方式关闭图片"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "使用网页清理工具",
+              "x": "打开[网页打印工具](/print)，粘贴食谱链接，再打开“Style”菜单。在“Images”中选择“None”。这是同时移除正文和食谱卡图片最可靠的方法。"
+            },
+            {
+              "h": "使用网站自带的打印视图",
+              "x": "如果食谱卡有“Include images”复选框，打印前取消勾选。检查预览，确认小图片也已消失。"
+            },
+            {
+              "h": "使用阅读模式",
+              "x": "Firefox Reader View 和 Safari Reader 通常会保留正文照片，只去掉装饰内容。页面可能变短，但图片仍可能存在。"
+            },
+            {
+              "h": "使用浏览器打印对话框",
+              "x": "打开“More settings”并取消“Background graphics”，可以移除 CSS 背景和色块。它不会删除食谱正文中嵌入的照片。"
+            },
+            {
+              "h": "使用打印机驱动",
+              "x": "如果有选项，可选择灰度或黑白，以及草稿或 EconoMode 质量。照片仍会占位置，但可能少用彩色墨水。"
+            }
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Chrome、Edge 和 Safari 都没有通用的“不要打印图片”开关。关闭“背景图形”会移除装饰背景，也可能改变颜色，但正文照片仍然保留。要去掉照片，请使用网页清理工具或网站自己的打印视图。"
+        },
+        {
+          "t": "h2",
+          "x": "什么时候值得保留一张图片"
+        },
+        {
+          "t": "p",
+          "x": "并非所有图片都是装饰。如果图片能提供文字难以表达的信息，可以保留一张："
+        },
+        {
+          "t": "ul",
+          "items": [
+            "造型和组装：编辫子面包、包饺子或叠放层次。",
+            "判断熟度：焦糖颜色、蛋奶糊凝固状态或面包内部组织。",
+            "切割或分份示意图。",
+            "容易和其他种类混淆的陌生食材。"
+          ]
+        },
+        {
+          "t": "p",
+          "x": "在清理工具中，可以把图片调成“小”，而不是全部删除，再逐张移除不需要的图片。小型参考图占用的版面少于全宽图。若图片用于展示颜色，就用彩色打印；若只说明形状或质地，灰度可能足够。"
+        },
+        {
+          "t": "h2",
+          "x": "什么时候选择灰度打印"
+        },
+        {
+          "t": "p",
+          "x": "灰度可以保留形状、折叠方式和质地，同时减少彩色墨水。若图片的信息依赖颜色，例如焦糖要呈现多深的棕色，灰度就不合适。逐张判断，只有颜色会改变信息时才用彩色。如果没有图片需要颜色，可将整份打印任务设置为黑白。"
+        },
+        {
+          "t": "table",
+          "head": [
+            "图片显示……",
+            "建议打印方式"
+          ],
+          "rows": [
+            [
+              "造型或折叠步骤",
+              "小图，灰度打印"
+            ],
+            [
+              "颜色或上色程度",
+              "小图彩色打印，或删除图片并保留文字说明"
+            ],
+            [
+              "成品供参考",
+              "只保留一张小图，灰度打印"
+            ],
+            [
+              "博主的厨房、双手或餐桌",
+              "不要打印"
+            ],
+            [
+              "摆拍的食材平铺图",
+              "不要打印，清单里已有食材"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "打印食谱时默认使用草稿质量。普通阅读距离下文字通常仍清晰，打印更快，墨盒也可能更耐用。选项一般在“Quality”或“Print Quality”中，一些 HP 打印机称为 EconoMode。实际节省量因机型而异。"
+        },
+        {
+          "t": "h2",
+          "x": "目标：一份食谱占一张纸的一面"
+        },
+        {
+          "t": "p",
+          "x": "尽量让厨房中的每份食谱都只占一张纸的一面。删除没有提供信息的图片，字号保持 14 磅，需要时缩放至 90%。这样更容易拿取、支撑或擦拭。统一版式也方便制作[纸质食谱夹](/blog/recipes/make-a-recipe-binder)和[每周菜单与购物清单](/blog/recipes/meal-plan-printables)。还可阅读[打印时如何节省墨水](/blog/save-ink/save-ink-when-printing)和[如何不打印故事与广告来打印食谱](/blog/recipes/print-recipe-without-ads)。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "如何打印不带图片的网页？",
+          "a": "使用网页清理工具并在图片设置中选择“None”，或关闭食谱打印视图中的图片。浏览器没有通用的图片开关；“背景图形”只会移除 CSS 背景。"
+        },
+        {
+          "q": "关闭“背景图形”会移除食谱照片吗？",
+          "a": "不会。该设置只移除 CSS 背景和色块。文章内嵌照片仍会打印。请使用网页清理工具或网站自己的图片选项。"
+        },
+        {
+          "q": "一张照片会用多少墨水？",
+          "a": "这取决于打印机和图片尺寸。粗略来说，喷墨打印机的彩色照片页可能比文字页贵几倍，也可能多用纸张。"
+        },
+        {
+          "q": "要保留任何图片吗？",
+          "a": "如果图片能说明造型、熟度、切割方法或陌生食材，可以保留。将其缩小并用灰度打印，除非颜色本身很重要。"
+        },
+        {
+          "q": "经常打印食谱，怎样最省钱？",
+          "a": "移除多余图片，使用草稿质量，适合时选灰度，保持字号易读，并单面打印。先看预览，避免多打印一张几乎空白的纸。"
+        }
+      ]
+    }
+  }
+}
