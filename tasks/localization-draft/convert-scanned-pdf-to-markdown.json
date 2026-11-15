@@ -1,0 +1,973 @@
+{
+  "topic": "convert-scanned-pdf-to-markdown",
+  "sourceCluster": "from-pdf",
+  "tool": "pdf-to-markdown",
+  "languages": {
+    "es": {
+      "title": "Cómo convertir un PDF escaneado a Markdown",
+      "metaTitle": "Convertir un PDF escaneado a Markdown",
+      "metaDescription": "Convierte PDF escaneados a Markdown con OCR. Gratis, sin registro ni marca de agua, con extracción privada en el navegador.",
+      "keyword": "convertir PDF escaneado a Markdown",
+      "secondaryKeywords": [
+        "PDF a Markdown gratis",
+        "convertir PDF a MD",
+        "extraer texto PDF",
+        "convertir PDF en notas"
+      ],
+      "answer": "Para convertir un PDF escaneado a Markdown, ejecuta OCR en una copia de trabajo, extrae el texto reconocido y compáralo con el escaneo. Los errores de OCR y el diseño de página aún requieren revisión manual.",
+      "ctaLabel": "Convierte PDF escaneado a Markdown",
+      "body": [
+        {
+          "t": "p",
+          "x": "Un escaneo es una imagen de la página, así que necesita reconocimiento de texto antes de que un conversor de Markdown pueda identificar párrafos y títulos. Primero ejecuta OCR; luego convierte el texto reconocido, revisa la estructura y conserva el PDF original para comprobar los detalles."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir un PDF escaneado a Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Comprueba si el texto se puede seleccionar",
+              "x": "Intenta seleccionar una frase. Si no puedes, el PDF necesita OCR antes de convertirlo a Markdown."
+            },
+            {
+              "h": "Ejecuta OCR en una copia",
+              "x": "Añade una copia del escaneo a [OCR PDF](/tools/ocr-pdf) y crea una versión con texto reconocible. Mantén el archivo original."
+            },
+            {
+              "h": "Abre PDF a Markdown",
+              "x": "Añade la copia con OCR a [PDF a Markdown](/tools/pdf-to-markdown) en el navegador."
+            },
+            {
+              "h": "Crea y revisa el Markdown",
+              "x": "Convierte el archivo. Las líneas grandes pueden ser títulos, las viñetas listas y las líneas normales párrafos. Revisa palabras y formato."
+            },
+            {
+              "h": "Guarda el PDF fuente",
+              "x": "Conserva el original si importan el diseño, las firmas, los gráficos o el contexto visual."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Convierte el texto reconocido de un PDF a Markdown en tu pestaña. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "PDF y Markdown para distintos usos"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Formato",
+            "Mejor para",
+            "Diferencia"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Diseño fijo e impresión",
+              "Cuesta revisar el contenido como texto."
+            ],
+            [
+              "Markdown",
+              "Notas, documentación e historial de versiones",
+              "No conserva el diseño de página."
+            ],
+            [
+              "Texto sin formato",
+              "Extracción sencilla",
+              "Pierde títulos y listas."
+            ],
+            [
+              "PDF con OCR",
+              "Escaneos que se puedan buscar",
+              "El texto reconocido puede tener errores."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR puede reconocer texto, pero no el diseño completo"
+        },
+        {
+          "t": "p",
+          "x": "OCR detecta caracteres en una imagen; no garantiza una transcripción perfecta ni reconstruye cada tabla. Después, PDF a Markdown usa pistas visuales para crear títulos, listas y párrafos. Columnas complejas, gráficos, notas al pie, tipografía y ubicación exacta no se conservan. Trata el Markdown como una copia de texto editable, no como un reemplazo visual del PDF escaneado."
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba el texto reconocido antes de reutilizarlo"
+        },
+        {
+          "t": "p",
+          "x": "Compara nombres, fechas, números, enlaces, títulos y listas con la imagen original antes de publicar, resumir o pasar el contenido a otro sistema. La inclinación, el desenfoque y el texto pequeño pueden hacer que OCR confunda caracteres. Los saltos de línea pueden cambiar el significado y una tabla puede requerir formato manual. Conserva el PDF para comprobar detalles en su contexto visual."
+        },
+        {
+          "t": "h2",
+          "x": "Extracción local para escaneos privados"
+        },
+        {
+          "t": "p",
+          "x": "Los informes internos, los apuntes y los borradores inéditos pueden contener información privada. El flujo estándar procesa el PDF en la pestaña del navegador y evita una subida rutinaria a un servicio externo. Tú decides dónde guardar o pegar el Markdown. Revísalo antes de compartir, porque el texto fácil de copiar también se puede redistribuir."
+        },
+        {
+          "t": "h2",
+          "x": "Elige el formato según el uso"
+        },
+        {
+          "t": "p",
+          "x": "Usa Markdown para editar texto, documentación o notas. Mantén el PDF para impresión, firmas, registros oficiales y referencias de página. Para que un escaneo sea buscable, ejecuta [OCR PDF](/tools/ocr-pdf). Si solo necesitas texto sencillo, [PDF a Texto](/tools/pdf-to-text) es más adecuado que Markdown."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo convierto un PDF escaneado a Markdown?",
+          "a": "Ejecuta OCR en una copia, conviértela a Markdown y revisa el texto reconocido frente a la imagen original."
+        },
+        {
+          "q": "¿Puedo convertir gratis un PDF escaneado a Markdown?",
+          "a": "Sí. Ejecuta OCR en una copia de trabajo y después convierte el texto a Markdown en el navegador, sin registro ni marca de agua."
+        },
+        {
+          "q": "¿OCR conserva el diseño del PDF escaneado?",
+          "a": "No. OCR reconoce texto, pero Markdown no conserva el diseño fijo, las columnas complejas ni la tipografía del PDF."
+        },
+        {
+          "q": "¿PDF a Markdown procesa el escaneo de forma privada?",
+          "a": "La conversión estándar ocurre en la pestaña del navegador, sin subir rutinariamente el archivo a un servidor externo."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como converter um PDF digitalizado para Markdown",
+      "metaTitle": "Converta PDF digitalizado para Markdown",
+      "metaDescription": "Converta PDF digitalizado para Markdown com OCR. Grátis, sem cadastro ou marca-d'água, com extração privada no navegador.",
+      "keyword": "converter PDF digitalizado para Markdown",
+      "secondaryKeywords": [
+        "PDF para Markdown grátis",
+        "converter PDF para MD",
+        "extrair texto de PDF",
+        "converter PDF em notas"
+      ],
+      "answer": "Para converter um PDF digitalizado para Markdown, rode OCR em uma cópia de trabalho, extraia o texto reconhecido e compare com o scan. Erros de OCR e o layout da página ainda precisam de revisão manual.",
+      "ctaLabel": "Converta PDF digitalizado para Markdown",
+      "body": [
+        {
+          "t": "p",
+          "x": "Um scan é uma imagem da página e precisa de reconhecimento de texto antes que um conversor de Markdown identifique parágrafos e títulos. Primeiro rode OCR; depois converta o texto reconhecido, revise a estrutura e guarde o PDF original para conferir detalhes."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter um PDF digitalizado para Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Confira se o texto pode ser selecionado",
+              "x": "Tente selecionar uma frase. Se não conseguir, o PDF precisa de OCR antes da conversão para Markdown."
+            },
+            {
+              "h": "Rode OCR em uma cópia",
+              "x": "Adicione uma cópia do scan ao [OCR PDF](/tools/ocr-pdf) e crie uma versão com texto reconhecível. Guarde o original."
+            },
+            {
+              "h": "Abra PDF para Markdown",
+              "x": "Adicione a cópia com OCR em [PDF para Markdown](/tools/pdf-to-markdown) no navegador."
+            },
+            {
+              "h": "Crie e revise o Markdown",
+              "x": "Converta o arquivo. Linhas maiores podem virar títulos, marcadores listas e linhas comuns parágrafos. Confira palavras e estrutura."
+            },
+            {
+              "h": "Guarde o PDF de origem",
+              "x": "Mantenha o original se layout, assinaturas, gráficos ou contexto visual forem importantes."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Converta o texto reconhecido do PDF em Markdown na sua aba. Grátis, sem cadastro ou marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "PDF e Markdown para usos diferentes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Formato",
+            "Melhor para",
+            "Diferença"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Layout fixo e impressão",
+              "Mais difícil revisar o conteúdo como texto."
+            ],
+            [
+              "Markdown",
+              "Notas, documentação e histórico de versões",
+              "Não preserva o layout da página."
+            ],
+            [
+              "Texto simples",
+              "Extração direta",
+              "Perde títulos e listas."
+            ],
+            [
+              "PDF com OCR",
+              "Scans pesquisáveis",
+              "O texto reconhecido pode conter erros."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR reconhece texto, mas não todo o layout"
+        },
+        {
+          "t": "p",
+          "x": "OCR identifica caracteres em uma imagem, mas não garante transcrição perfeita nem reconstrói todas as tabelas. Depois, PDF para Markdown usa pistas visuais para criar títulos, listas e parágrafos. Colunas complexas, gráficos, notas, tipografia e posicionamento exato não são preservados. Trate o Markdown como uma cópia de texto editável, não como substituto visual do PDF digitalizado."
+        },
+        {
+          "t": "h2",
+          "x": "Confira o texto reconhecido antes de reutilizá-lo"
+        },
+        {
+          "t": "p",
+          "x": "Compare nomes, datas, números, links, títulos e listas com a imagem original antes de publicar, resumir ou passar o conteúdo a outro sistema. Inclinação, desfoque e texto pequeno podem confundir o OCR. Quebras de linha podem mudar o sentido, e tabelas talvez precisem de formatação manual. Guarde o PDF para conferir cada detalhe no contexto visual."
+        },
+        {
+          "t": "h2",
+          "x": "Extração local para scans privados"
+        },
+        {
+          "t": "p",
+          "x": "Relatórios internos, notas e rascunhos não publicados podem conter dados privados. O fluxo padrão processa o PDF na aba do navegador e evita upload rotineiro para serviço externo. Você escolhe onde guardar ou colar o Markdown. Revise antes de compartilhar porque texto fácil de copiar também pode ser redistribuído."
+        },
+        {
+          "t": "h2",
+          "x": "Escolha o formato conforme o uso"
+        },
+        {
+          "t": "p",
+          "x": "Use Markdown para editar texto, documentar ou fazer anotações. Mantenha o PDF para impressão, assinaturas, registros oficiais e referências de página. Para tornar o scan pesquisável, rode [OCR PDF](/tools/ocr-pdf). Se precisar apenas de texto simples, [PDF para Texto](/tools/pdf-to-text) combina melhor que Markdown."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como converter PDF digitalizado para Markdown?",
+          "a": "Rode OCR em uma cópia, converta para Markdown e compare o texto reconhecido com a imagem original."
+        },
+        {
+          "q": "Posso converter PDF digitalizado para Markdown grátis?",
+          "a": "Sim. Rode OCR em uma cópia de trabalho e depois converta o texto para Markdown no navegador, sem cadastro ou marca-d'água."
+        },
+        {
+          "q": "O OCR mantém o layout do PDF digitalizado?",
+          "a": "Não. OCR reconhece texto, mas Markdown não preserva layout fixo, colunas complexas ou tipografia do PDF."
+        },
+        {
+          "q": "PDF para Markdown processa o scan com privacidade?",
+          "a": "A conversão padrão ocorre na aba do navegador, sem upload rotineiro do arquivo para um servidor externo."
+        }
+      ]
+    },
+    "hi": {
+      "title": "स्कैन PDF को Markdown में कैसे बदलें",
+      "metaTitle": "स्कैन PDF को Markdown में बदलें",
+      "metaDescription": "OCR से स्कैन PDF को Markdown में बदलें। मुफ़्त, बिना साइनअप या वॉटरमार्क, ब्राउज़र में निजी निष्कर्षण।",
+      "keyword": "स्कैन PDF को Markdown में बदलें",
+      "secondaryKeywords": [
+        "PDF से Markdown मुफ़्त",
+        "PDF को MD में बदलें",
+        "PDF पाठ निकालें",
+        "PDF को नोट्स में बदलें"
+      ],
+      "answer": "स्कैन PDF को Markdown में बदलने के लिए वर्किंग कॉपी पर OCR चलाएँ, पहचाना पाठ निकालें और उसे स्कैन से मिलाएँ। OCR की त्रुटियों और पेज लेआउट की हाथ से जाँच फिर भी आवश्यक है।",
+      "ctaLabel": "स्कैन PDF को Markdown में बदलें",
+      "body": [
+        {
+          "t": "p",
+          "x": "स्कैन पेज की तस्वीर होता है। Markdown कन्वर्टर को पैराग्राफ और शीर्षक पहचानने से पहले टेक्स्ट रिकग्निशन चाहिए। पहले OCR चलाएँ, फिर पहचाने पाठ को बदलें, उसकी संरचना जाँचें और विवरण मिलाने के लिए मूल PDF रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "स्कैन PDF को Markdown में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "देखें कि पाठ चुना जा सकता है या नहीं",
+              "x": "PDF में वाक्य चुनने की कोशिश करें। न हो तो Markdown से पहले OCR चाहिए।"
+            },
+            {
+              "h": "कॉपी पर OCR चलाएँ",
+              "x": "स्कैन की कॉपी [PDF OCR](/tools/ocr-pdf) में जोड़ें और पहचाने पाठ वाली फ़ाइल बनाएँ। मूल रखें।"
+            },
+            {
+              "h": "PDF से Markdown खोलें",
+              "x": "OCR वाली कॉपी ब्राउज़र में [PDF से Markdown](/tools/pdf-to-markdown) में जोड़ें।"
+            },
+            {
+              "h": "Markdown बनाएँ और जाँचें",
+              "x": "रूपांतरण चलाएँ। बड़ी पंक्तियाँ शीर्षक, बुलेट सूची और सामान्य पंक्तियाँ पैराग्राफ बन सकती हैं। शब्द और संरचना देखें।"
+            },
+            {
+              "h": "स्रोत PDF रखें",
+              "x": "लेआउट, हस्ताक्षर, चार्ट या दृश्य संदर्भ महत्त्वपूर्ण हो तो मूल सहेजें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "स्कैन PDF से पहचाना पाठ टैब में Markdown करें। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "अलग कामों के लिए PDF और Markdown"
+        },
+        {
+          "t": "table",
+          "head": [
+            "फ़ॉर्मेट",
+            "किस काम के लिए",
+            "मुख्य अंतर"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "स्थिर लेआउट और प्रिंट",
+              "पाठ के रूप में जाँचना कठिन।"
+            ],
+            [
+              "Markdown",
+              "नोट्स, दस्तावेज़ और संस्करण इतिहास",
+              "पेज लेआउट नहीं बचता।"
+            ],
+            [
+              "सादा पाठ",
+              "सरल निष्कर्षण",
+              "शीर्षक और सूची खोती है।"
+            ],
+            [
+              "OCR वाला PDF",
+              "खोज योग्य स्कैन",
+              "पहचाने पाठ में गलती हो सकती है।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR पाठ पहचानता है, पूरा लेआउट नहीं"
+        },
+        {
+          "t": "p",
+          "x": "OCR छवि के अक्षर पहचानता है, पर पूरी तरह सही प्रतिलिपि या हर तालिका की संरचना की गारंटी नहीं देता। PDF से Markdown फिर दृश्य संकेतों के आधार पर शीर्षक, सूचियाँ और पैराग्राफ बनाता है। जटिल कॉलम, चार्ट, फुटनोट, टाइपोग्राफी और सटीक स्थान नहीं बचते। Markdown को संपादन योग्य पाठ प्रति मानें, स्कैन PDF का दृश्य विकल्प नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "दोबारा उपयोग से पहले पहचाना पाठ जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "प्रकाशन, सारांश या दूसरी प्रणाली में देने से पहले नाम, तारीख, संख्या, लिंक, शीर्षक और सूची मूल छवि से मिलाएँ। तिरछापन, धुंधलापन और छोटा पाठ OCR से गलती करा सकता है। लाइन ब्रेक अर्थ बदल सकता है और तालिका हाथ से ठीक करनी पड़ सकती है। हर अहम विवरण दृश्य संदर्भ में जाँचने के लिए मूल PDF रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "निजी स्कैन का स्थानीय निष्कर्षण"
+        },
+        {
+          "t": "p",
+          "x": "आंतरिक रिपोर्ट, शोध नोट और अप्रकाशित ड्राफ्ट में निजी जानकारी हो सकती है। सामान्य प्रक्रिया ब्राउज़र टैब में PDF संभालती है, बाहरी सेवा पर नियमित अपलोड से बचाती है। Markdown कहाँ रखें या चिपकाएँ यह आप चुनते हैं। साझा करने से पहले देखें, क्योंकि कॉपी करने योग्य पाठ फिर बाँटा भी जा सकता है।"
+        },
+        {
+          "t": "h2",
+          "x": "उपयोग के अनुसार फ़ॉर्मेट चुनें"
+        },
+        {
+          "t": "p",
+          "x": "संपादन योग्य पाठ, दस्तावेज़ और नोट्स के लिए Markdown लें। प्रिंट, हस्ताक्षर, आधिकारिक रिकॉर्ड और पेज संदर्भ के लिए PDF रखें। स्कैन खोज योग्य करना हो तो [PDF OCR](/tools/ocr-pdf) चलाएँ। केवल साधारण टेक्स्ट चाहिए तो [PDF से टेक्स्ट](/tools/pdf-to-text) बेहतर है।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "स्कैन PDF को Markdown में कैसे बदलूँ?",
+          "a": "कॉपी पर OCR चलाएँ, उसे Markdown में बदलें और पहचाने पाठ को मूल छवि से मिलाएँ।"
+        },
+        {
+          "q": "क्या स्कैन PDF को Markdown में मुफ़्त बदल सकता हूँ?",
+          "a": "हाँ। वर्किंग कॉपी पर OCR चलाकर फिर ब्राउज़र में Markdown बनाएँ, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "q": "क्या OCR स्कैन PDF का लेआउट रखता है?",
+          "a": "नहीं। OCR पाठ पहचानता है, पर Markdown स्थिर पेज, जटिल कॉलम या PDF की टाइपोग्राफी नहीं बचाता।"
+        },
+        {
+          "q": "क्या PDF से Markdown स्कैन को निजी रूप से प्रोसेस करता है?",
+          "a": "सामान्य रूपांतरण ब्राउज़र टैब में होता है और फ़ाइल नियमित रूप से बाहरी सर्वर पर अपलोड नहीं होती।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية تحويل PDF ممسوح إلى Markdown",
+      "metaTitle": "تحويل PDF ممسوح إلى Markdown",
+      "metaDescription": "حوّل PDF ممسوحاً إلى Markdown باستخدام OCR. مجاناً، بلا تسجيل أو علامة مائية، مع استخراج خاص في المتصفح.",
+      "keyword": "تحويل PDF ممسوح إلى Markdown",
+      "secondaryKeywords": [
+        "PDF إلى Markdown مجاناً",
+        "تحويل PDF إلى MD",
+        "استخراج نص PDF",
+        "تحويل PDF إلى ملاحظات"
+      ],
+      "answer": "لتحويل PDF ممسوح إلى Markdown، شغّل OCR على نسخة عمل أولاً، واستخرج النص المتعرف عليه ثم قارنه بالمسح. ما زالت أخطاء OCR وتخطيط الصفحة بحاجة إلى مراجعة يدوية.",
+      "ctaLabel": "حوّل PDF الممسوح إلى Markdown",
+      "body": [
+        {
+          "t": "p",
+          "x": "المسح الضوئي صورة للصفحة، لذا يحتاج إلى التعرف على النص قبل أن يحدد محول Markdown الفقرات والعناوين. شغّل OCR أولاً، ثم حوّل النص المتعرف عليه وراجع البنية واحتفظ بملف PDF الأصلي للتحقق من التفاصيل."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل PDF ممسوح إلى Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "تحقق من إمكانية تحديد النص",
+              "x": "حاول تحديد جملة في PDF. إذا تعذر ذلك، فيجب تشغيل OCR قبل التحويل إلى Markdown."
+            },
+            {
+              "h": "شغّل OCR على نسخة",
+              "x": "أضف نسخة المسح إلى [OCR PDF](/tools/ocr-pdf) وأنشئ ملفاً بنص متعرف عليه. احتفظ بالأصل."
+            },
+            {
+              "h": "افتح PDF إلى Markdown",
+              "x": "أضف النسخة التي عولجت بـOCR إلى [PDF إلى Markdown](/tools/pdf-to-markdown) في المتصفح."
+            },
+            {
+              "h": "أنشئ Markdown وراجعه",
+              "x": "شغّل التحويل. قد تصبح الأسطر الكبيرة عناوين والنقاط قوائم والأسطر العادية فقرات. راجع الكلمات والبنية."
+            },
+            {
+              "h": "احتفظ بملف PDF المصدر",
+              "x": "احتفظ بالأصل إذا كان التخطيط أو التوقيعات أو المخططات أو السياق المرئي مهماً."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "حوّل النص المتعرف عليه من PDF إلى Markdown في علامة التبويب. مجاناً وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "PDF وMarkdown لاستخدامات مختلفة"
+        },
+        {
+          "t": "table",
+          "head": [
+            "التنسيق",
+            "الأنسب لـ",
+            "الفرق"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "التخطيط الثابت والطباعة",
+              "أصعب لمراجعة المحتوى كنص."
+            ],
+            [
+              "Markdown",
+              "الملاحظات والوثائق وسجل الإصدارات",
+              "لا يحافظ على تخطيط الصفحة."
+            ],
+            [
+              "نص عادي",
+              "الاستخراج البسيط",
+              "يفقد العناوين والقوائم."
+            ],
+            [
+              "PDF مع OCR",
+              "المسوحات القابلة للبحث",
+              "قد يحتوي النص المتعرف عليه أخطاء."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "يتعرف OCR على النص لا على التخطيط كله"
+        },
+        {
+          "t": "p",
+          "x": "يتعرف OCR على الأحرف في الصورة، لكنه لا يضمن تفريغاً مثالياً ولا يعيد بناء كل جدول. بعد ذلك يستخدم PDF إلى Markdown إشارات مرئية لإنشاء عناوين وقوائم وفقرات. لا يحافظ على الأعمدة المعقدة والمخططات والحواشي والطباعة الدقيقة أو المواضع. اعتبر Markdown نسخة نصية قابلة للتعديل، لا بديلاً بصرياً عن PDF الممسوح."
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من النص المتعرف عليه قبل إعادة استخدامه"
+        },
+        {
+          "t": "p",
+          "x": "قارن الأسماء والتواريخ والأرقام والروابط والعناوين والقوائم بصورة الأصل قبل النشر أو التلخيص أو تمرير المحتوى إلى نظام آخر. قد يسبب الميل والضبابية وصغر النص أخطاء في OCR. يمكن لفاصل سطر أن يغير المعنى، وقد يحتاج الجدول إلى تنسيق يدوي. احتفظ بملف PDF لمراجعة التفاصيل في سياقها المرئي."
+        },
+        {
+          "t": "h2",
+          "x": "استخراج محلي للمسوحات الخاصة"
+        },
+        {
+          "t": "p",
+          "x": "قد تحتوي التقارير الداخلية وملاحظات البحث والمسودات غير المنشورة على معلومات خاصة. يعالج المسار القياسي الملف داخل علامة تبويب المتصفح، متجنباً الرفع المعتاد إلى خدمة خارجية. أنت تختار أين تحفظ Markdown أو تلصقه. راجع الناتج قبل مشاركته، فالنص سهل النسخ وإعادة التوزيع."
+        },
+        {
+          "t": "h2",
+          "x": "اختر التنسيق حسب الاستخدام"
+        },
+        {
+          "t": "p",
+          "x": "استخدم Markdown للنص القابل للتحرير والوثائق والملاحظات. احتفظ بـPDF للطباعة والتوقيعات والسجلات الرسمية ومراجع الصفحات. لجعل المسح قابلاً للبحث، شغّل [OCR PDF](/tools/ocr-pdf). وإذا أردت نصاً بسيطاً فقط، فإن [PDF إلى نص](/tools/pdf-to-text) أنسب."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أحول PDF ممسوحاً إلى Markdown؟",
+          "a": "شغّل OCR على نسخة، ثم حوّلها إلى Markdown وقارن النص المتعرف عليه بالصورة الأصلية."
+        },
+        {
+          "q": "هل يمكن تحويل PDF ممسوح إلى Markdown مجاناً؟",
+          "a": "نعم. شغّل OCR على نسخة عمل ثم حوّل النص إلى Markdown في المتصفح بلا تسجيل أو علامة مائية."
+        },
+        {
+          "q": "هل يحافظ OCR على تخطيط PDF الممسوح؟",
+          "a": "لا. يتعرف OCR على النص، لكن Markdown لا يحافظ على الصفحات الثابتة أو الأعمدة المعقدة أو الطباعة الأصلية."
+        },
+        {
+          "q": "هل يعالج PDF إلى Markdown المسح بخصوصية؟",
+          "a": "تتم المعالجة القياسية داخل علامة تبويب المتصفح ولا يُرفع الملف عادةً إلى خادم خارجي."
+        }
+      ]
+    },
+    "bn": {
+      "title": "স্ক্যান PDF কীভাবে Markdown-এ রূপান্তর করবেন",
+      "metaTitle": "স্ক্যান PDF Markdown-এ বদলান",
+      "metaDescription": "OCR দিয়ে স্ক্যান PDF Markdown-এ বদলান। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া, ব্রাউজারে ব্যক্তিগত নিষ্কাশন।",
+      "keyword": "স্ক্যান PDF Markdown-এ রূপান্তর",
+      "secondaryKeywords": [
+        "PDF থেকে Markdown বিনামূল্যে",
+        "PDF MD-তে বদল",
+        "PDF লেখা বের করা",
+        "PDF-কে নোটে বদল"
+      ],
+      "answer": "স্ক্যান PDF Markdown-এ বদলাতে আগে ওয়ার্কিং কপিতে OCR চালান, শনাক্ত লেখা বের করুন এবং স্ক্যানের সঙ্গে মিলিয়ে দেখুন। OCR ভুল ও পৃষ্ঠার বিন্যাস হাতে পর্যালোচনা করতে হবে।",
+      "ctaLabel": "স্ক্যান PDF Markdown-এ বদলান",
+      "body": [
+        {
+          "t": "p",
+          "x": "স্ক্যান হলো পৃষ্ঠার ছবি। Markdown কনভার্টার শিরোনাম ও অনুচ্ছেদ চিনতে হলে আগে লেখা শনাক্ত করতে হয়। প্রথমে OCR চালান, তারপর শনাক্ত লেখা রূপান্তর করে গঠন যাচাই করুন এবং বিস্তারিত মিলাতে মূল PDF রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "স্ক্যান PDF Markdown-এ বদলানোর নিয়ম"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "লেখা নির্বাচন করা যায় কি না দেখুন",
+              "x": "PDF-এ বাক্য নির্বাচন করে দেখুন। না পারলে Markdown রূপান্তরের আগে OCR চালাতে হবে।"
+            },
+            {
+              "h": "কপিতে OCR চালান",
+              "x": "স্ক্যানের কপি [PDF OCR](/tools/ocr-pdf)-এ যোগ করে শনাক্ত লেখা তৈরি করুন। মূল ফাইল রাখুন।"
+            },
+            {
+              "h": "PDF থেকে Markdown খুলুন",
+              "x": "OCR করা কপি ব্রাউজারে [PDF থেকে Markdown](/tools/pdf-to-markdown)-এ যোগ করুন।"
+            },
+            {
+              "h": "Markdown বানিয়ে যাচাই করুন",
+              "x": "রূপান্তর চালান। বড় লাইন শিরোনাম, বুলেট তালিকা এবং সাধারণ লাইন অনুচ্ছেদ হতে পারে। শব্দ ও গঠন দেখুন।"
+            },
+            {
+              "h": "মূল PDF রাখুন",
+              "x": "বিন্যাস, স্বাক্ষর, চার্ট বা দৃশ্য প্রসঙ্গ গুরুত্বপূর্ণ হলে সংরক্ষণ করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "স্ক্যান PDF-এর শনাক্ত লেখা ট্যাবে Markdown করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "ভিন্ন কাজে PDF ও Markdown"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ফরম্যাট",
+            "যে কাজে ভালো",
+            "পার্থক্য"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "স্থির বিন্যাস ও মুদ্রণ",
+              "টেক্সট হিসেবে পর্যালোচনা কঠিন।"
+            ],
+            [
+              "Markdown",
+              "নোট, ডকুমেন্ট ও সংস্করণ ইতিহাস",
+              "পৃষ্ঠা বিন্যাস রাখে না।"
+            ],
+            [
+              "সাধারণ টেক্সট",
+              "সহজ নিষ্কাশন",
+              "শিরোনাম ও তালিকা হারায়।"
+            ],
+            [
+              "OCR PDF",
+              "অনুসন্ধানযোগ্য স্ক্যান",
+              "শনাক্ত লেখায় ভুল থাকতে পারে।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR লেখা চেনে, পুরো বিন্যাস নয়"
+        },
+        {
+          "t": "p",
+          "x": "OCR ছবির অক্ষর শনাক্ত করে, কিন্তু নিখুঁত প্রতিলিপি বা প্রতিটি টেবিলের গঠন ফেরানোর নিশ্চয়তা নেই। এরপর PDF থেকে Markdown দৃশ্যমান সূত্র ধরে শিরোনাম, তালিকা ও অনুচ্ছেদ বানায়। জটিল কলাম, চার্ট, ফুটনোট, টাইপোগ্রাফি ও সঠিক অবস্থান থাকে না। Markdown-কে সম্পাদনাযোগ্য লেখার কপি ভাবুন, স্ক্যান PDF-এর দৃশ্যমান বিকল্প নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "পুনর্ব্যবহারের আগে শনাক্ত লেখা যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "প্রকাশ, সারাংশ বা অন্য সিস্টেমে দেওয়ার আগে নাম, তারিখ, সংখ্যা, লিংক, শিরোনাম ও তালিকা মূল ছবির সঙ্গে মিলান। বাঁকা ছবি, ঝাপসা ও ছোট লেখা OCR-এ ভুল আনতে পারে। লাইন ভাঙলে অর্থ বদলাতে পারে, টেবিল হাতে সাজাতে হতে পারে। দৃশ্য প্রসঙ্গে প্রতিটি তথ্য পরীক্ষা করতে মূল PDF রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যক্তিগত স্ক্যান স্থানীয়ভাবে বের করুন"
+        },
+        {
+          "t": "p",
+          "x": "অভ্যন্তরীণ রিপোর্ট, গবেষণা নোট ও অপ্রকাশিত খসড়ায় ব্যক্তিগত তথ্য থাকতে পারে। সাধারণ প্রক্রিয়া ব্রাউজার ট্যাবে PDF পড়ে এবং বাইরের সেবায় নিয়মিত আপলোড এড়ায়। Markdown কোথায় রাখবেন বা পেস্ট করবেন তা আপনি ঠিক করেন। শেয়ারের আগে যাচাই করুন, কারণ সহজে কপি করা লেখা সহজে ছড়িয়েও পড়ে।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যবহার অনুযায়ী ফরম্যাট বেছে নিন"
+        },
+        {
+          "t": "p",
+          "x": "সম্পাদনযোগ্য লেখা, ডকুমেন্ট ও নোটের জন্য Markdown নিন। মুদ্রণ, স্বাক্ষর, সরকারি রেকর্ড ও পৃষ্ঠা নম্বরের জন্য PDF রাখুন। স্ক্যান অনুসন্ধানযোগ্য করতে [PDF OCR](/tools/ocr-pdf) চালান। শুধু সাধারণ টেক্সট চাইলে [PDF থেকে টেক্সট](/tools/pdf-to-text) বেশি উপযুক্ত।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "স্ক্যান PDF Markdown-এ কীভাবে বদলাব?",
+          "a": "কপিতে OCR চালিয়ে Markdown বানান এবং শনাক্ত লেখা মূল ছবির সঙ্গে মিলিয়ে নিন।"
+        },
+        {
+          "q": "স্ক্যান PDF বিনামূল্যে Markdown-এ বদলানো যায়?",
+          "a": "হ্যাঁ। ওয়ার্কিং কপিতে OCR চালিয়ে ব্রাউজারে Markdown রূপান্তর করুন, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "q": "OCR কি স্ক্যান PDF-এর বিন্যাস রাখে?",
+          "a": "না। OCR লেখা শনাক্ত করে, কিন্তু Markdown স্থির পৃষ্ঠা, জটিল কলাম বা মূল টাইপোগ্রাফি রাখে না।"
+        },
+        {
+          "q": "PDF থেকে Markdown কি স্ক্যান ব্যক্তিগতভাবে প্রসেস করে?",
+          "a": "সাধারণ রূপান্তর ব্রাউজার ট্যাবে হয়; ফাইল নিয়মিত বাইরের সার্ভারে আপলোড হয় না।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách chuyển PDF scan sang Markdown",
+      "metaTitle": "Chuyển PDF scan sang Markdown",
+      "metaDescription": "Chuyển PDF scan sang Markdown bằng OCR. Miễn phí, không đăng ký, không dấu mờ, trích xuất riêng tư trong trình duyệt.",
+      "keyword": "chuyển PDF scan sang Markdown",
+      "secondaryKeywords": [
+        "PDF sang Markdown miễn phí",
+        "chuyển PDF sang MD",
+        "trích xuất văn bản PDF",
+        "chuyển PDF thành ghi chú"
+      ],
+      "answer": "Để chuyển PDF scan sang Markdown, hãy OCR một bản làm việc trước, trích xuất văn bản nhận dạng rồi so sánh với bản scan. Lỗi OCR và bố cục trang vẫn cần được kiểm tra thủ công.",
+      "ctaLabel": "Chuyển PDF scan sang Markdown",
+      "body": [
+        {
+          "t": "p",
+          "x": "Bản scan là hình ảnh trang giấy, nên cần nhận dạng chữ trước khi công cụ Markdown có thể xác định đoạn văn và tiêu đề. Hãy chạy OCR trước, sau đó chuyển văn bản nhận dạng, kiểm tra cấu trúc và giữ PDF gốc để đối chiếu chi tiết."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển PDF scan sang Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Kiểm tra có chọn được văn bản không",
+              "x": "Thử chọn một câu trong PDF. Nếu không được, hãy OCR trước khi chuyển sang Markdown."
+            },
+            {
+              "h": "Chạy OCR trên bản sao",
+              "x": "Thêm bản scan vào [OCR PDF](/tools/ocr-pdf) để tạo văn bản có thể nhận dạng. Giữ tệp gốc."
+            },
+            {
+              "h": "Mở PDF sang Markdown",
+              "x": "Thêm bản đã OCR vào [PDF sang Markdown](/tools/pdf-to-markdown) trong trình duyệt."
+            },
+            {
+              "h": "Tạo và xem lại Markdown",
+              "x": "Chạy chuyển đổi. Dòng lớn có thể thành tiêu đề, dấu đầu dòng thành danh sách, dòng thường thành đoạn. Kiểm tra chữ và cấu trúc."
+            },
+            {
+              "h": "Giữ PDF nguồn",
+              "x": "Lưu bản gốc nếu bố cục, chữ ký, biểu đồ hoặc ngữ cảnh hình ảnh quan trọng."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Chuyển chữ nhận dạng từ PDF scan sang Markdown trong thẻ. Miễn phí, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "PDF và Markdown cho các nhu cầu khác nhau"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Định dạng",
+            "Phù hợp với",
+            "Khác biệt"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Bố cục cố định và in ấn",
+              "Khó xem lại nội dung như văn bản."
+            ],
+            [
+              "Markdown",
+              "Ghi chú, tài liệu và lịch sử phiên bản",
+              "Không giữ bố cục trang."
+            ],
+            [
+              "Văn bản thuần",
+              "Trích xuất đơn giản",
+              "Mất tiêu đề và danh sách."
+            ],
+            [
+              "PDF có OCR",
+              "Bản scan tìm kiếm được",
+              "Văn bản nhận dạng có thể sai."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR nhận dạng chữ, không phải toàn bộ bố cục"
+        },
+        {
+          "t": "p",
+          "x": "OCR nhận diện ký tự trong ảnh nhưng không bảo đảm bản chép hoàn hảo hay tái tạo mọi bảng. Sau đó, PDF sang Markdown dùng dấu hiệu trực quan để tạo tiêu đề, danh sách và đoạn văn. Cột phức tạp, biểu đồ, chú thích cuối trang, kiểu chữ và vị trí chính xác không được giữ lại. Hãy xem Markdown là bản chữ có thể chỉnh sửa, không phải bản thay thế hình ảnh của PDF scan."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra chữ nhận dạng trước khi dùng lại"
+        },
+        {
+          "t": "p",
+          "x": "So sánh tên, ngày, số, liên kết, tiêu đề và danh sách với ảnh gốc trước khi xuất bản, tóm tắt hoặc đưa nội dung vào hệ thống khác. Trang nghiêng, ảnh mờ và chữ nhỏ có thể làm OCR sai. Ngắt dòng có thể đổi nghĩa; bảng có thể cần định dạng thủ công. Giữ PDF gốc để kiểm tra chi tiết trong ngữ cảnh hình ảnh."
+        },
+        {
+          "t": "h2",
+          "x": "Trích xuất cục bộ cho bản scan riêng tư"
+        },
+        {
+          "t": "p",
+          "x": "Báo cáo nội bộ, ghi chú nghiên cứu và bản nháp chưa công bố có thể chứa thông tin riêng. Quy trình tiêu chuẩn xử lý PDF trong thẻ trình duyệt, tránh tải thường xuyên lên dịch vụ bên ngoài. Bạn chọn nơi lưu hoặc dán Markdown. Hãy xem lại trước khi chia sẻ vì văn bản dễ sao chép cũng dễ bị phát tán lại."
+        },
+        {
+          "t": "h2",
+          "x": "Chọn định dạng theo mục đích"
+        },
+        {
+          "t": "p",
+          "x": "Dùng Markdown cho văn bản chỉnh sửa được, tài liệu hoặc ghi chú. Giữ PDF cho in ấn, chữ ký, hồ sơ chính thức và tham chiếu trang. Muốn tìm kiếm trong bản scan, dùng [OCR PDF](/tools/ocr-pdf). Nếu chỉ cần văn bản đơn giản, [PDF sang Văn bản](/tools/pdf-to-text) phù hợp hơn Markdown."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Làm sao chuyển PDF scan sang Markdown?",
+          "a": "Chạy OCR trên bản sao, chuyển sang Markdown rồi so sánh văn bản nhận dạng với hình ảnh gốc."
+        },
+        {
+          "q": "Có thể chuyển PDF scan sang Markdown miễn phí không?",
+          "a": "Có. OCR bản làm việc trước rồi chuyển sang Markdown trong trình duyệt, không cần đăng ký hay dấu mờ."
+        },
+        {
+          "q": "OCR có giữ bố cục PDF scan không?",
+          "a": "Không. OCR nhận dạng văn bản, nhưng Markdown không giữ trang cố định, cột phức tạp hay kiểu chữ gốc."
+        },
+        {
+          "q": "PDF sang Markdown có xử lý bản scan riêng tư không?",
+          "a": "Chuyển đổi tiêu chuẩn diễn ra trong thẻ trình duyệt; tệp không được tải thường xuyên lên máy chủ ngoài."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何将扫描 PDF 转换为 Markdown",
+      "metaTitle": "将扫描 PDF 转换为 Markdown",
+      "metaDescription": "使用 OCR 将扫描 PDF 转为 Markdown。免费、无需注册、无水印，在浏览器中私密提取。",
+      "keyword": "扫描 PDF 转换为 Markdown",
+      "secondaryKeywords": [
+        "免费 PDF 转 Markdown",
+        "将 PDF 转成 MD",
+        "提取 PDF 文本",
+        "将 PDF 内容转为笔记"
+      ],
+      "answer": "要将扫描 PDF 转成 Markdown，请先在工作副本上运行 OCR，提取识别文本并与扫描件对照。OCR 错误和页面布局仍需人工检查。",
+      "ctaLabel": "将扫描 PDF 转换为 Markdown",
+      "body": [
+        {
+          "t": "p",
+          "x": "扫描件是页面图像，因此 Markdown 转换器需要先识别文字，才能判断段落和标题。先运行 OCR，再转换识别文本、检查结构，并保留原始 PDF 以便核对细节。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将扫描 PDF 转换为 Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "检查能否选中文本",
+              "x": "尝试选中 PDF 中的一句话。如果不能，请在转换为 Markdown 前运行 OCR。"
+            },
+            {
+              "h": "在副本上运行 OCR",
+              "x": "将扫描副本添加到[PDF OCR](/tools/ocr-pdf)，生成识别文本版本，并保留原件。"
+            },
+            {
+              "h": "打开 PDF 转 Markdown",
+              "x": "在浏览器中将 OCR 副本添加到[PDF 转 Markdown](/tools/pdf-to-markdown)。"
+            },
+            {
+              "h": "生成并检查 Markdown",
+              "x": "运行转换。大字可能成为标题，项目符号成为列表，普通行成为段落。检查文字和结构。"
+            },
+            {
+              "h": "保留 PDF 源文件",
+              "x": "如果页面布局、签名、图表或视觉上下文重要，请保留原件。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "在浏览器标签页中将扫描 PDF 的识别文本转为 Markdown。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "PDF 和 Markdown 适用于不同用途"
+        },
+        {
+          "t": "table",
+          "head": [
+            "格式",
+            "适用场景",
+            "差异"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "固定版式和打印",
+              "难以像文本那样复核。"
+            ],
+            [
+              "Markdown",
+              "笔记、文档和版本记录",
+              "不保留页面布局。"
+            ],
+            [
+              "纯文本",
+              "简单提取",
+              "会丢失标题和列表。"
+            ],
+            [
+              "OCR PDF",
+              "可搜索扫描件",
+              "识别文本可能有误。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR 能识别文字，但不能还原完整布局"
+        },
+        {
+          "t": "p",
+          "x": "OCR 可识别图像中的字符，但不保证逐字准确，也不会重建所有表格。随后 PDF 转 Markdown 根据视觉线索生成标题、列表和段落。复杂分栏、图表、脚注、精确字体和视觉位置都不会保留。请把 Markdown 当作可编辑文本副本，而不是扫描 PDF 的视觉替代品。"
+        },
+        {
+          "t": "h2",
+          "x": "重复使用前核对识别文本"
+        },
+        {
+          "t": "p",
+          "x": "发布、总结或把内容传给其他系统前，请将姓名、日期、数字、链接、标题和列表与原始图像对照。页面倾斜、模糊或小字都可能使 OCR 识别错误。换行可能改变含义，表格也可能需要手动格式化。保留 PDF，方便在图像上下文中检查细节。"
+        },
+        {
+          "t": "h2",
+          "x": "私密扫描件的本地提取"
+        },
+        {
+          "t": "p",
+          "x": "内部报告、研究笔记和未发布草稿可能包含私人信息。标准流程在浏览器标签页中处理 PDF，避免例行上传到外部服务。Markdown 的保存或粘贴位置由你决定。分享前请检查输出，因为文本容易复制，也容易被再次传播。"
+        },
+        {
+          "t": "h2",
+          "x": "按用途选择格式"
+        },
+        {
+          "t": "p",
+          "x": "需要编辑文本、写文档或做笔记时用 Markdown。打印设计、签名、正式记录和页码引用应保留 PDF。扫描件需要可搜索时，运行[PDF OCR](/tools/ocr-pdf)。如果只需要简单文本，[PDF 转文本](/tools/pdf-to-text)比 Markdown 更适合。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "如何将扫描 PDF 转换为 Markdown？",
+          "a": "在副本上运行 OCR，转换为 Markdown，再将识别文本与原始图像核对。"
+        },
+        {
+          "q": "可以免费将扫描 PDF 转成 Markdown 吗？",
+          "a": "可以。先对工作副本运行 OCR，再在浏览器中转换为 Markdown，无需注册或水印。"
+        },
+        {
+          "q": "OCR 会保留扫描 PDF 的页面布局吗？",
+          "a": "不会。OCR 识别文字，但 Markdown 不会保留固定页面、复杂分栏或原始字体。"
+        },
+        {
+          "q": "PDF 转 Markdown 会私密处理扫描件吗？",
+          "a": "标准转换在浏览器标签页内完成，不会例行将文件上传到外部服务器。"
+        }
+      ]
+    }
+  }
+}
