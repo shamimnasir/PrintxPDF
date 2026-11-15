@@ -8038,6 +8038,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "compare-pdf-contract-versions",
+        "slug": "compare-pdf-contract-versions",
+        "cluster": "editing-expansion",
+        "tool": "compare-pdf",
+        "title": "Cómo comparar versiones de un contrato en PDF",
+        "metaTitle": "Cómo comparar versiones de un contrato en PDF",
+        "metaDescription": "Compara dos versiones de un contrato PDF y resalta cambios visuales. Gratis en tu navegador, sin cuenta ni marca de agua.",
+        "answer": "Para comparar versiones de un contrato PDF, abre primero la versión que aprobaste y luego la copia nueva en Compare PDFs. La herramienta compara el aspecto de las páginas y colorea las diferencias, incluidas tablas, sellos y cambios en escaneos. Revisa cada cambio antes de firmar; no sustituye una revisión legal ni compara frases como texto.",
+        "sections": [
+          {
+            "heading": "Cómo comparar dos PDF de un contrato",
+            "paragraphs": [
+              "Para comparar versiones de un contrato PDF, abre primero la versión que aprobaste y luego la copia nueva en Compare PDFs. La herramienta compara el aspecto de las páginas y colorea las diferencias, incluidas tablas, sellos y cambios en escaneos. Revisa cada cambio antes de firmar; no sustituye una revisión legal ni compara frases como texto."
+            ],
+            "steps": [
+              {
+                "heading": "Conserva ambas versiones",
+                "text": "Guarda los dos archivos originales con nombres claros, por ejemplo contrato-aprobado y contrato-recibido. No sobrescribas la versión firmada o aprobada."
+              },
+              {
+                "heading": "Abre Compare PDFs",
+                "text": "En [Comparar PDF](/tools/compare-pdf), carga primero la versión anterior como A y después la versión nueva como B. Comprueba que seleccionaste los documentos correctos."
+              },
+              {
+                "heading": "Revisa página por página",
+                "text": "Usa las flechas y alterna entre A, B y Diff. El modo Diff colorea las zonas distintas y atenúa lo que coincide. Fíjate en fechas, importes, cláusulas, anexos, pies de página y firmas."
+              },
+              {
+                "heading": "Ajusta y descarga",
+                "text": "Sube la tolerancia si bordes borrosos o ruido de escaneo marcan demasiados píxeles; bájala para detectar cambios tenues. Descarga el informe visual y confirma las diferencias en los originales antes de firmar."
+              }
+            ]
+          },
+          {
+            "heading": "Qué detecta y qué no detecta la comparación",
+            "paragraphs": [
+              "Compare PDFs compara imágenes de página punto por punto, no el significado de las frases. Detecta cambios en texto visible, diseño, tablas, gráficos, sellos y páginas escaneadas. Si necesitas una lista de palabras añadidas o quitadas, extrae el texto con [PDF a texto](/tools/pdf-to-text) y compáralo aparte.",
+              "Un contrato puede parecer idéntico y aun así tener una fecha, una cifra o una nota al pie modificada. Revisa todos los resaltados, incluso los que parecen pequeños. Una línea nueva puede desplazar el resto de la página, haciendo que una zona grande aparezca como cambiada aunque parte del texto siga igual.",
+              "Los escaneos de la misma hoja pueden variar por inclinación, sombras o motas. Aumentar la tolerancia ayuda a ignorar pequeñas diferencias de imagen, pero también puede ocultar un cambio muy leve. Compara las vistas A y B y no dependas solo del porcentaje de diferencia.",
+              "El procesamiento ocurre en tu navegador: los contratos no se envían a un servidor para generar la comparación. El PDF de diferencias es una imagen de referencia, no un archivo editable ni una conclusión sobre qué cambios son válidos. Guarda los originales y aplica el proceso de aprobación de tu organización."
+            ]
+          }
+        ],
+        "ctaLabel": "Compara contratos gratis en tu navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿Compare PDFs compara el texto del contrato?",
+            "a": "No. Compara visualmente las páginas dibujadas y marca los píxeles distintos. Puede detectar cambios en tablas, sellos, diseño y escaneos, pero no produce una lista de palabras cambiadas. Para comparar texto, extrae ambos documentos y revisa las versiones de texto."
+          },
+          {
+            "q": "¿Por qué aparece como cambiado casi todo el documento?",
+            "a": "Una línea añadida puede desplazar el contenido inferior y hacer que muchos píxeles ya no coincidan. También ocurre si cambian el tamaño o la orientación de la página. Compara A y B, y aumenta un poco la tolerancia si solo hay ruido de escaneo."
+          },
+          {
+            "q": "¿Sirve para contratos escaneados?",
+            "a": "Sí. No necesita texto seleccionable porque compara la apariencia de las páginas. Dos escaneos del mismo original pueden tener pequeñas diferencias de alineación o grano; ajusta la tolerancia y verifica cambios reales en ambas vistas."
+          },
+          {
+            "q": "¿Puedo editar el PDF comparativo?",
+            "a": "No. Es un registro visual con las diferencias coloreadas, no un documento de contrato editable. Úsalo como ayuda para revisión y conserva las dos versiones originales para cualquier edición o firma."
+          }
+        ],
+        "keywords": [
+          "cómo comparar versiones de un contrato en pdf",
+          "compare PDF contract versions",
+          "compare two contracts"
+        ],
+        "relatedTools": [
+          "compare-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -16060,6 +16141,87 @@
         ],
         "relatedTools": [
           "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "compare-pdf-contract-versions",
+        "slug": "compare-pdf-contract-versions",
+        "cluster": "editing-expansion",
+        "tool": "compare-pdf",
+        "title": "Como comparar versões de um contrato em PDF",
+        "metaTitle": "Como comparar versões de um contrato em PDF",
+        "metaDescription": "Compare duas versões de um contrato PDF e destaque diferenças visuais. Grátis no navegador, sem conta nem marca-d’água.",
+        "answer": "Para comparar versões de um contrato PDF, abra primeiro a versão aprovada e depois a cópia recebida em Compare PDFs. A ferramenta compara a aparência das páginas e colore as diferenças, inclusive tabelas, carimbos e alterações em digitalizações. Revise cada mudança antes de assinar; isso não substitui análise jurídica nem compara frases como texto.",
+        "sections": [
+          {
+            "heading": "Como comparar dois PDFs de um contrato",
+            "paragraphs": [
+              "Para comparar versões de um contrato PDF, abra primeiro a versão aprovada e depois a cópia recebida em Compare PDFs. A ferramenta compara a aparência das páginas e colore as diferenças, inclusive tabelas, carimbos e alterações em digitalizações. Revise cada mudança antes de assinar; isso não substitui análise jurídica nem compara frases como texto."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde as duas versões",
+                "text": "Salve os arquivos originais com nomes claros, como contrato-aprovado e contrato-recebido. Não sobrescreva a versão aprovada ou assinada."
+              },
+              {
+                "heading": "Abra Compare PDFs",
+                "text": "Em [Comparar PDF](/tools/compare-pdf), carregue primeiro a versão anterior como A e depois a nova como B. Confira se selecionou os documentos corretos."
+              },
+              {
+                "heading": "Revise página por página",
+                "text": "Use as setas e alterne entre A, B e Diff. A visualização Diff colore as áreas diferentes e deixa claras as partes iguais. Confira datas, valores, cláusulas, anexos, rodapés e assinaturas."
+              },
+              {
+                "heading": "Ajuste e baixe",
+                "text": "Aumente a tolerância se bordas borradas ou ruído da digitalização marcarem pixels demais; reduza para encontrar mudanças sutis. Baixe o relatório visual e confira as diferenças nos originais antes de assinar."
+              }
+            ]
+          },
+          {
+            "heading": "O que a comparação detecta e o que não detecta",
+            "paragraphs": [
+              "Compare PDFs compara imagens das páginas ponto a ponto, não o sentido das frases. Detecta alterações em texto visível, layout, tabelas, gráficos, carimbos e páginas digitalizadas. Se precisar de uma lista de palavras adicionadas ou removidas, extraia o texto com [PDF para Texto](/tools/pdf-to-text) e compare separadamente.",
+              "Um contrato pode parecer igual e ainda ter uma data, valor ou nota de rodapé alterada. Revise todos os destaques, inclusive os pequenos. Uma linha nova pode deslocar o restante da página, fazendo uma área grande aparecer como diferente mesmo quando parte do texto continua igual.",
+              "Digitalizações da mesma folha podem variar por inclinação, sombra ou pontos. Aumentar a tolerância ajuda a ignorar pequenas diferenças de imagem, mas pode esconder uma alteração muito leve. Compare A e B e não confie apenas na porcentagem de diferença.",
+              "O processamento ocorre no navegador: os contratos não são enviados a um servidor para gerar a comparação. O PDF de diferenças é uma imagem de referência, não um arquivo editável nem uma conclusão sobre a validade das mudanças. Guarde os originais e siga o processo de aprovação da sua organização."
+            ]
+          }
+        ],
+        "ctaLabel": "Compare contratos grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "Compare PDFs compara o texto do contrato?",
+            "a": "Não. A ferramenta compara visualmente as páginas renderizadas e marca os pixels diferentes. Ela pode detectar mudanças em tabelas, carimbos, layout e digitalizações, mas não gera uma lista de palavras alteradas. Para comparar texto, extraia os dois documentos e revise as versões textuais."
+          },
+          {
+            "q": "Por que quase todo o documento aparece diferente?",
+            "a": "Uma linha adicionada pode deslocar o conteúdo abaixo e fazer muitos pixels deixarem de coincidir. Isso também ocorre se o tamanho ou a orientação da página mudar. Compare A e B e aumente um pouco a tolerância se houver apenas ruído de digitalização."
+          },
+          {
+            "q": "Funciona com contratos digitalizados?",
+            "a": "Sim. Não precisa de texto selecionável, pois compara a aparência das páginas. Duas digitalizações do mesmo original podem variar no alinhamento ou na granulação; ajuste a tolerância e confira mudanças reais nas duas visualizações."
+          },
+          {
+            "q": "Posso editar o PDF comparativo?",
+            "a": "Não. Ele é um registro visual com as diferenças coloridas, não um contrato editável. Use como apoio à revisão e mantenha as duas versões originais para qualquer edição ou assinatura."
+          }
+        ],
+        "keywords": [
+          "como comparar versões de um contrato em pdf",
+          "compare PDF contract versions",
+          "compare two contracts"
+        ],
+        "relatedTools": [
+          "compare-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -24102,6 +24264,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "compare-pdf-contract-versions",
+        "slug": "compare-pdf-contract-versions",
+        "cluster": "editing-expansion",
+        "tool": "compare-pdf",
+        "title": "PDF अनुबंध के संस्करणों की तुलना कैसे करें",
+        "metaTitle": "PDF अनुबंध के संस्करणों की तुलना कैसे करें",
+        "metaDescription": "दो PDF अनुबंध संस्करणों की तुलना करें और दिखने वाले बदलाव हाइलाइट करें। ब्राउज़र में मुफ्त, बिना खाते या वॉटरमार्क के।",
+        "answer": "PDF अनुबंध संस्करणों की तुलना करने के लिए पहले स्वीकृत संस्करण और फिर नई कॉपी को Compare PDFs में खोलें। टूल पेजों के दृश्य रूप की तुलना कर अंतर रंगता है, जिसमें टेबल, मुहर और स्कैन शामिल हैं। हस्ताक्षर से पहले हर बदलाव जांचें; यह कानूनी समीक्षा का विकल्प नहीं है और टेक्स्ट वाक्यों की तुलना नहीं करता।",
+        "sections": [
+          {
+            "heading": "दो PDF अनुबंध कैसे तुलना करें",
+            "paragraphs": [
+              "PDF अनुबंध संस्करणों की तुलना करने के लिए पहले स्वीकृत संस्करण और फिर नई कॉपी को Compare PDFs में खोलें। टूल पेजों के दृश्य रूप की तुलना कर अंतर रंगता है, जिसमें टेबल, मुहर और स्कैन शामिल हैं। हस्ताक्षर से पहले हर बदलाव जांचें; यह कानूनी समीक्षा का विकल्प नहीं है और टेक्स्ट वाक्यों की तुलना नहीं करता।"
+            ],
+            "steps": [
+              {
+                "heading": "दोनों संस्करण रखें",
+                "text": "मूल फाइलों को स्पष्ट नाम से सहेजें, जैसे approved-contract और received-contract। स्वीकृत या हस्ताक्षरित संस्करण को ओवरराइट न करें।"
+              },
+              {
+                "heading": "Compare PDFs खोलें",
+                "text": "[Compare PDF](/tools/compare-pdf) में पहले पुराना संस्करण A और फिर नया संस्करण B के रूप में लोड करें। सही दस्तावेज़ चुने हैं, इसकी पुष्टि करें।"
+              },
+              {
+                "heading": "हर पेज जांचें",
+                "text": "तीरों से पेज बदलें और A, B, Diff दृश्य देखें। Diff अलग क्षेत्रों को रंगता और समान हिस्सों को हल्का करता है। तारीख, रकम, धाराएं, परिशिष्ट, फुटनोट और हस्ताक्षर ध्यान से जांचें।"
+              },
+              {
+                "heading": "सेटिंग बदलकर डाउनलोड करें",
+                "text": "धुंधले किनारे या स्कैन शोर बहुत पिक्सेल दिखाएं तो tolerance बढ़ाएं; हल्के बदलाव पकड़ने के लिए घटाएं। दृश्य रिपोर्ट डाउनलोड करें और हस्ताक्षर से पहले मूल फाइलों में बदलाव सत्यापित करें।"
+              }
+            ]
+          },
+          {
+            "heading": "तुलना क्या पहचानती है और क्या नहीं",
+            "paragraphs": [
+              "Compare PDFs वाक्यों का अर्थ नहीं, पेज की छवियों के पिक्सेल की तुलना करता है। यह दिखने वाले टेक्स्ट, लेआउट, टेबल, चार्ट, मुहर और स्कैन पेजों के बदलाव पकड़ता है। जोड़े या हटाए गए शब्दों की सूची चाहिए तो [PDF to Text](/tools/pdf-to-text) से टेक्स्ट निकालकर अलग से तुलना करें।",
+              "अनुबंध एक जैसा दिख सकता है, फिर भी तारीख, राशि या फुटनोट बदला हो सकता है। हर रंगे हुए हिस्से की समीक्षा करें, चाहे वह छोटा लगे। एक नई पंक्ति नीचे की सामग्री खिसका सकती है, जिससे बड़ा क्षेत्र बदला दिखे जबकि कुछ टेक्स्ट वही रहे।",
+              "एक ही पेज के स्कैन झुकाव, छाया या धब्बों से अलग हो सकते हैं। Tolerance बढ़ाने से छोटे इमेज अंतर नज़रअंदाज़ होते हैं, लेकिन बहुत हल्का वास्तविक बदलाव भी छूट सकता है। A और B दृश्य देखें; केवल प्रतिशत पर भरोसा न करें।",
+              "तुलना ब्राउज़र में होती है: अनुबंध तुलना बनाने के लिए सर्वर पर नहीं भेजे जाते। Diff PDF रंगे हुए बदलावों का दृश्य रिकॉर्ड है, संपादन योग्य अनुबंध या वैधता पर निर्णय नहीं। मूल संस्करण रखें और संगठन की स्वीकृति प्रक्रिया अपनाएं।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में अनुबंध मुफ्त तुलना करें, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "क्या Compare PDFs अनुबंध का टेक्स्ट तुलना करता है?",
+            "a": "नहीं। यह रेंडर किए गए पेजों की दृश्य तुलना करके अलग पिक्सेल चिह्नित करता है। टेबल, मुहर, लेआउट और स्कैन बदलाव दिखते हैं, लेकिन बदले शब्दों की सूची नहीं मिलती। टेक्स्ट तुलना के लिए दोनों दस्तावेज़ निकालें और टेक्स्ट संस्करणों की समीक्षा करें।"
+          },
+          {
+            "q": "लगभग पूरा पेज बदला हुआ क्यों दिखता है?",
+            "a": "नई पंक्ति नीचे की सामग्री खिसका सकती है, इसलिए बहुत से पिक्सेल मेल नहीं खाते। पेज आकार या दिशा बदलने पर भी ऐसा होता है। A और B देखें और स्कैन शोर हो तो tolerance थोड़ा बढ़ाएं।"
+          },
+          {
+            "q": "क्या यह स्कैन किए अनुबंध पर काम करता है?",
+            "a": "हां। चयन योग्य टेक्स्ट की जरूरत नहीं, क्योंकि तुलना पेज के रूप से होती है। एक ही दस्तावेज़ के दो स्कैन में जगह या दाने का हल्का फर्क हो सकता है; tolerance समायोजित करें और असली बदलाव दोनों दृश्यों में जांचें।"
+          },
+          {
+            "q": "क्या तुलना PDF संपादित कर सकता हूं?",
+            "a": "नहीं। यह रंगे हुए बदलावों का दृश्य रिकॉर्ड है, संपादन योग्य अनुबंध नहीं। इसे समीक्षा सहायता की तरह उपयोग करें और संपादन या हस्ताक्षर के लिए दोनों मूल संस्करण रखें।"
+          }
+        ],
+        "keywords": [
+          "pdf अनुबंध के संस्करणों की तुलना कैसे करें",
+          "compare PDF contract versions",
+          "compare two contracts"
+        ],
+        "relatedTools": [
+          "compare-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -32133,6 +32376,87 @@
         ],
         "relatedTools": [
           "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "compare-pdf-contract-versions",
+        "slug": "compare-pdf-contract-versions",
+        "cluster": "editing-expansion",
+        "tool": "compare-pdf",
+        "title": "كيفية مقارنة إصدارات عقد PDF",
+        "metaTitle": "كيفية مقارنة إصدارات عقد PDF",
+        "metaDescription": "قارن نسختين من عقد PDF وأبرز التغييرات المرئية. مجاناً في المتصفح، بلا حساب أو علامة مائية. قارن نسختي العقد مجاناً في المتصفح، من دون تسجيل أو رفع الملفات.",
+        "answer": "لمقارنة إصدارات عقد PDF، افتح النسخة التي وافقت عليها أولاً ثم النسخة الجديدة في Compare PDFs. تقارن الأداة مظهر الصفحات وتلوّن الاختلافات، بما فيها الجداول والأختام والمسح الضوئي. راجع كل تغيير قبل التوقيع؛ فهي لا تغني عن المراجعة القانونية ولا تقارن الجمل كنص.",
+        "sections": [
+          {
+            "heading": "مقارنة نسختين من عقد PDF",
+            "paragraphs": [
+              "لمقارنة إصدارات عقد PDF، افتح النسخة التي وافقت عليها أولاً ثم النسخة الجديدة في Compare PDFs. تقارن الأداة مظهر الصفحات وتلوّن الاختلافات، بما فيها الجداول والأختام والمسح الضوئي. راجع كل تغيير قبل التوقيع؛ فهي لا تغني عن المراجعة القانونية ولا تقارن الجمل كنص."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بالنسختين",
+                "text": "احفظ الملفين الأصليين بأسماء واضحة، مثل العقد-المعتمد والعقد-الوارد. لا تستبدل النسخة المعتمدة أو الموقعة."
+              },
+              {
+                "heading": "افتح Compare PDFs",
+                "text": "في [Compare PDF](/tools/compare-pdf)، حمّل النسخة السابقة أولاً باعتبارها A ثم الجديدة باعتبارها B. تحقق من اختيار المستندين الصحيحين."
+              },
+              {
+                "heading": "راجع صفحة بصفحة",
+                "text": "استخدم الأسهم وبدّل بين A وB وDiff. يلوّن عرض Diff المناطق المختلفة ويخفف الأجزاء المتطابقة. دقق في التواريخ والمبالغ والبنود والملاحق والحواشي والتوقيعات."
+              },
+              {
+                "heading": "اضبط ونزّل",
+                "text": "ارفع مستوى Tolerance إذا أبرزت الحواف الضبابية أو ضوضاء المسح نقاطاً كثيرة؛ واخفضه لاكتشاف التغييرات الخافتة. نزّل التقرير المرئي وتحقق من الاختلافات في الأصلين قبل التوقيع."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي تكشفه المقارنة وما لا تكشفه",
+            "paragraphs": [
+              "تقارن Compare PDFs صور الصفحات نقطة بنقطة، لا معنى الجمل. تكشف تغييرات النص الظاهر والتخطيط والجداول والرسوم والأختام والصفحات الممسوحة. إذا أردت قائمة بالكلمات المضافة أو المحذوفة، استخرج النص باستخدام [PDF to Text](/tools/pdf-to-text) وقارن النصين بشكل منفصل.",
+              "قد يبدو العقد متطابقاً رغم تغيير تاريخ أو مبلغ أو حاشية. راجع كل تمييز حتى لو بدا صغيراً. قد يدفع سطر جديد كل ما تحته إلى الأسفل، فتظهر مساحة كبيرة متغيرة رغم بقاء بعض النص كما هو.",
+              "قد تختلف مسحتان للورقة نفسها بسبب الميل أو الظلال أو النقاط. يساعد رفع Tolerance في تجاهل فروق الصورة البسيطة، لكنه قد يخفي تغييراً خافتاً. قارن العرضين A وB ولا تعتمد على النسبة وحدها.",
+              "تتم المعالجة في المتصفح؛ فلا تُرسل العقود إلى خادم لإنشاء المقارنة. ملف الفرق المرئي صورة مرجعية، وليس عقداً قابلاً للتحرير أو حكماً على صلاحية التغييرات. احتفظ بالأصلين واتبع إجراءات الموافقة في مؤسستك."
+            ]
+          }
+        ],
+        "ctaLabel": "قارن العقود مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "هل تقارن Compare PDFs نص العقد؟",
+            "a": "لا. تقارن الأداة الصفحات المرسومة بصرياً وتحدد البكسلات المختلفة. تكشف تغييرات الجداول والأختام والتخطيط والمسح، لكنها لا تنتج قائمة بالكلمات المعدّلة. لمقارنة النص، استخرج المستندين وراجع النسختين النصيتين."
+          },
+          {
+            "q": "لماذا تبدو الصفحة بأكملها متغيرة؟",
+            "a": "قد يدفع سطر مضاف المحتوى تحته، فلا تتطابق نقاط كثيرة. ويحدث ذلك أيضاً عند تغيير حجم الصفحة أو اتجاهها. افحص A وB وارفع Tolerance قليلاً إذا كان السبب ضوضاء المسح فقط."
+          },
+          {
+            "q": "هل تعمل مع العقود الممسوحة؟",
+            "a": "نعم. لا تحتاج إلى نص قابل للتحديد لأنها تقارن شكل الصفحات. قد تختلف مسحتان للأصل نفسه في المحاذاة أو التحبب؛ اضبط Tolerance وتحقق من التغييرات الحقيقية في العرضين."
+          },
+          {
+            "q": "هل يمكن تعديل PDF المقارنة؟",
+            "a": "لا. إنه سجل مرئي للتغييرات الملونة، وليس عقداً قابلاً للتحرير. استخدمه للمراجعة واحتفظ بالنسختين الأصليتين لأي تعديل أو توقيع."
+          }
+        ],
+        "keywords": [
+          "كيفية مقارنة إصدارات عقد pdf",
+          "compare PDF contract versions",
+          "compare two contracts"
+        ],
+        "relatedTools": [
+          "compare-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -40187,6 +40511,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "compare-pdf-contract-versions",
+        "slug": "compare-pdf-contract-versions",
+        "cluster": "editing-expansion",
+        "tool": "compare-pdf",
+        "title": "PDF চুক্তির সংস্করণ কীভাবে তুলনা করবেন",
+        "metaTitle": "PDF চুক্তির সংস্করণ কীভাবে তুলনা করবেন",
+        "metaDescription": "দুটি PDF চুক্তির সংস্করণ তুলনা করে দৃশ্যমান পরিবর্তন হাইলাইট করুন। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "answer": "PDF চুক্তির সংস্করণ তুলনা করতে Compare PDFs-এ আগে অনুমোদিত সংস্করণ, পরে নতুন কপি খুলুন। টুলটি পৃষ্ঠার চেহারা তুলনা করে টেবিল, সিল ও স্ক্যানসহ পার্থক্য রঙে দেখায়। সই করার আগে প্রতিটি পরিবর্তন যাচাই করুন; এটি আইনি পর্যালোচনার বিকল্প নয় এবং বাক্যের টেক্সট তুলনা করে না।",
+        "sections": [
+          {
+            "heading": "দুটি PDF চুক্তি কীভাবে তুলনা করবেন",
+            "paragraphs": [
+              "PDF চুক্তির সংস্করণ তুলনা করতে Compare PDFs-এ আগে অনুমোদিত সংস্করণ, পরে নতুন কপি খুলুন। টুলটি পৃষ্ঠার চেহারা তুলনা করে টেবিল, সিল ও স্ক্যানসহ পার্থক্য রঙে দেখায়। সই করার আগে প্রতিটি পরিবর্তন যাচাই করুন; এটি আইনি পর্যালোচনার বিকল্প নয় এবং বাক্যের টেক্সট তুলনা করে না।"
+            ],
+            "steps": [
+              {
+                "heading": "দুটি সংস্করণই রাখুন",
+                "text": "মূল ফাইলগুলো স্পষ্ট নামে সংরক্ষণ করুন, যেমন approved-contract ও received-contract। অনুমোদিত বা স্বাক্ষরিত সংস্করণ ওভাররাইট করবেন না।"
+              },
+              {
+                "heading": "Compare PDFs খুলুন",
+                "text": "[Compare PDF](/tools/compare-pdf)-এ আগে পুরোনো সংস্করণ A, পরে নতুনটি B হিসেবে দিন। সঠিক নথি নির্বাচন হয়েছে নিশ্চিত করুন।"
+              },
+              {
+                "heading": "পৃষ্ঠা ধরে পরীক্ষা করুন",
+                "text": "তীর দিয়ে পৃষ্ঠা বদলে A, B ও Diff দেখুন। Diff ভিন্ন অংশ রঙ করে এবং মিল থাকা অংশ ফিকে করে। তারিখ, অঙ্ক, ধারা, সংযোজন, ফুটনোট ও স্বাক্ষর পরীক্ষা করুন।"
+              },
+              {
+                "heading": "সেটিং ঠিক করে ডাউনলোড করুন",
+                "text": "ঝাপসা প্রান্ত বা স্ক্যানের দাগ বেশি পিক্সেল দেখালে tolerance বাড়ান; হালকা পরিবর্তন ধরতে কমান। দৃশ্যমান রিপোর্ট নামিয়ে সইয়ের আগে মূল ফাইলে পার্থক্য যাচাই করুন।"
+              }
+            ]
+          },
+          {
+            "heading": "তুলনা কী শনাক্ত করে এবং কী করে না",
+            "paragraphs": [
+              "Compare PDFs বাক্যের অর্থ নয়, পৃষ্ঠার ছবির পিক্সেল তুলনা করে। এটি দৃশ্যমান লেখা, বিন্যাস, টেবিল, চার্ট, সিল ও স্ক্যান পৃষ্ঠার পরিবর্তন ধরতে পারে। যোগ বা বাদ পড়া শব্দের তালিকা চাইলে [PDF to Text](/tools/pdf-to-text) দিয়ে লেখা বের করে আলাদাভাবে তুলনা করুন।",
+              "চুক্তি দেখতে একই হলেও তারিখ, পরিমাণ বা ফুটনোট বদলাতে পারে। প্রতিটি হাইলাইট পর্যালোচনা করুন, ছোট মনে হলেও। নতুন লাইন নিচের অংশ সরিয়ে দিতে পারে, ফলে কিছু লেখা একই থাকলেও বড় এলাকা পরিবর্তিত দেখায়।",
+              "একই পাতার দুটি স্ক্যানে কাত, ছায়া বা বিন্দুর কারণে সামান্য পার্থক্য হতে পারে। Tolerance বাড়ালে ছোট ছবির শব্দ বাদ পড়ে, তবে খুব সূক্ষ্ম আসল পরিবর্তনও আড়াল হতে পারে। A ও B দেখুন; শুধু শতকরা মানের ওপর নির্ভর করবেন না।",
+              "তুলনা ব্রাউজারেই হয়: রিপোর্ট তৈরির জন্য চুক্তি সার্ভারে যায় না। Diff PDF হলো রঙিন পার্থক্যের দৃশ্যমান নথি, সম্পাদনযোগ্য চুক্তি বা পরিবর্তনের বৈধতার সিদ্ধান্ত নয়। মূল কপি রাখুন এবং প্রতিষ্ঠানের অনুমোদন প্রক্রিয়া অনুসরণ করুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে চুক্তি তুলনা করুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "Compare PDFs কি চুক্তির লেখা তুলনা করে?",
+            "a": "না। এটি রেন্ডার করা পৃষ্ঠার দৃশ্য তুলনা করে এবং আলাদা পিক্সেল চিহ্নিত করে। টেবিল, সিল, লেআউট ও স্ক্যানের পরিবর্তন দেখা যায়, কিন্তু বদলানো শব্দের তালিকা পাওয়া যায় না। টেক্সট তুলনা চাইলে দুই নথির লেখা বের করে পর্যালোচনা করুন।"
+          },
+          {
+            "q": "প্রায় পুরো পৃষ্ঠা বদলেছে দেখায় কেন?",
+            "a": "নতুন লাইন নিচের বিষয়বস্তু সরিয়ে দিতে পারে, ফলে অনেক পিক্সেল আর মেলে না। পৃষ্ঠার মাপ বা দিক বদলালেও এমন হয়। A ও B দেখুন এবং শুধু স্ক্যানের শব্দ হলে tolerance সামান্য বাড়ান।"
+          },
+          {
+            "q": "স্ক্যান করা চুক্তিতে কি কাজ করে?",
+            "a": "হ্যাঁ। পৃষ্ঠার চেহারা তুলনা করে বলে নির্বাচনযোগ্য টেক্সট লাগে না। একই কাগজের দুটি স্ক্যানে অবস্থান বা দানায় পার্থক্য থাকতে পারে; tolerance সামঞ্জস্য করে দুই দৃশ্যে আসল পরিবর্তন যাচাই করুন।"
+          },
+          {
+            "q": "তুলনা PDF সম্পাদনা করা যায়?",
+            "a": "না। এটি রঙিন পরিবর্তনের দৃশ্যমান রেকর্ড, সম্পাদনযোগ্য চুক্তি নয়। পর্যালোচনার সহায়ক হিসেবে ব্যবহার করুন এবং সম্পাদনা বা স্বাক্ষরের জন্য দুটি মূল সংস্করণ রাখুন।"
+          }
+        ],
+        "keywords": [
+          "pdf চুক্তির সংস্করণ কীভাবে তুলনা করবেন",
+          "compare PDF contract versions",
+          "compare two contracts"
+        ],
+        "relatedTools": [
+          "compare-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -48209,6 +48614,87 @@
         ],
         "relatedTools": [
           "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "compare-pdf-contract-versions",
+        "slug": "compare-pdf-contract-versions",
+        "cluster": "editing-expansion",
+        "tool": "compare-pdf",
+        "title": "Cách so sánh các phiên bản hợp đồng PDF",
+        "metaTitle": "Cách so sánh các phiên bản hợp đồng PDF",
+        "metaDescription": "So sánh hai phiên bản hợp đồng PDF và tô rõ thay đổi trực quan. Miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "answer": "Để so sánh các phiên bản hợp đồng PDF, mở bản đã duyệt trước rồi mở bản mới trong Compare PDFs. Công cụ so sánh hình ảnh trang và tô màu khác biệt, kể cả bảng, con dấu và bản quét. Hãy xem từng thay đổi trước khi ký; công cụ không thay thế rà soát pháp lý và không so sánh câu chữ như văn bản.",
+        "sections": [
+          {
+            "heading": "Cách so sánh hai bản PDF của hợp đồng",
+            "paragraphs": [
+              "Để so sánh các phiên bản hợp đồng PDF, mở bản đã duyệt trước rồi mở bản mới trong Compare PDFs. Công cụ so sánh hình ảnh trang và tô màu khác biệt, kể cả bảng, con dấu và bản quét. Hãy xem từng thay đổi trước khi ký; công cụ không thay thế rà soát pháp lý và không so sánh câu chữ như văn bản."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ cả hai phiên bản",
+                "text": "Lưu hai tệp gốc với tên rõ ràng, chẳng hạn contract-approved và contract-received. Đừng ghi đè bản đã duyệt hoặc đã ký."
+              },
+              {
+                "heading": "Mở Compare PDFs",
+                "text": "Trong [Compare PDF](/tools/compare-pdf), tải bản cũ làm A trước, rồi bản mới làm B. Xác nhận bạn đã chọn đúng tài liệu."
+              },
+              {
+                "heading": "Rà từng trang",
+                "text": "Dùng mũi tên và chuyển giữa A, B và Diff. Chế độ Diff tô vùng khác nhau và làm mờ vùng trùng khớp. Kiểm tra ngày tháng, số tiền, điều khoản, phụ lục, chân trang và chữ ký."
+              },
+              {
+                "heading": "Điều chỉnh rồi tải xuống",
+                "text": "Tăng Tolerance nếu viền mờ hoặc nhiễu quét đánh dấu quá nhiều điểm; giảm để tìm thay đổi nhạt. Tải báo cáo hình ảnh và xác nhận điểm khác trong tệp gốc trước khi ký."
+              }
+            ]
+          },
+          {
+            "heading": "Công cụ phát hiện gì và không phát hiện gì",
+            "paragraphs": [
+              "Compare PDFs so sánh hình ảnh trang từng điểm ảnh, không hiểu ý nghĩa câu chữ. Công cụ phát hiện thay đổi ở văn bản hiển thị, bố cục, bảng, biểu đồ, con dấu và trang quét. Nếu cần danh sách từ được thêm hoặc xóa, trích xuất bằng [PDF to Text](/tools/pdf-to-text) rồi so sánh riêng.",
+              "Một hợp đồng có thể trông giống nhau nhưng ngày, số tiền hoặc chú thích đã thay đổi. Hãy rà mọi vùng được tô, kể cả vùng nhỏ. Một dòng mới có thể đẩy toàn bộ phần bên dưới xuống, khiến cả vùng lớn hiện khác dù một phần nội dung vẫn giống.",
+              "Hai bản quét cùng trang có thể lệch nhẹ vì góc nghiêng, bóng hoặc hạt ảnh. Tăng Tolerance giúp bỏ qua nhiễu nhỏ nhưng cũng có thể che một thay đổi rất nhạt. Hãy so sánh chế độ A và B, đừng chỉ dựa vào phần trăm khác biệt.",
+              "Việc xử lý diễn ra trong trình duyệt: hợp đồng không được gửi lên máy chủ để tạo so sánh. PDF khác biệt là bản ghi hình ảnh, không phải hợp đồng có thể chỉnh sửa hay kết luận về tính hợp lệ. Giữ bản gốc và làm theo quy trình phê duyệt của tổ chức."
+            ]
+          }
+        ],
+        "ctaLabel": "So sánh hợp đồng miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Compare PDFs có so sánh chữ trong hợp đồng không?",
+            "a": "Không. Công cụ so sánh hình ảnh trang đã kết xuất và đánh dấu điểm ảnh khác. Nó thấy thay đổi ở bảng, con dấu, bố cục và bản quét nhưng không liệt kê từ bị sửa. Để so sánh văn bản, hãy trích xuất hai tài liệu và rà bản chữ riêng."
+          },
+          {
+            "q": "Vì sao gần như cả trang đều hiện là khác?",
+            "a": "Một dòng được thêm có thể đẩy nội dung bên dưới, khiến nhiều điểm ảnh không còn trùng nhau. Khác khổ hoặc hướng trang cũng gây ra điều này. Xem A và B, tăng Tolerance một chút nếu chỉ có nhiễu quét."
+          },
+          {
+            "q": "Công cụ có dùng được với hợp đồng scan không?",
+            "a": "Có. Vì so sánh hình ảnh nên không cần văn bản có thể chọn. Hai bản quét cùng tài liệu có thể lệch vị trí hoặc độ hạt; hãy điều chỉnh Tolerance và xác minh thay đổi thật trong cả hai chế độ."
+          },
+          {
+            "q": "Có thể chỉnh sửa PDF so sánh không?",
+            "a": "Không. Đây là bản ghi hình ảnh tô màu thay đổi, không phải hợp đồng chỉnh sửa được. Dùng để hỗ trợ rà soát và giữ hai bản gốc cho mọi chỉnh sửa hoặc ký kết."
+          }
+        ],
+        "keywords": [
+          "cách so sánh các phiên bản hợp đồng pdf",
+          "compare PDF contract versions",
+          "compare two contracts"
+        ],
+        "relatedTools": [
+          "compare-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -56250,6 +56736,87 @@
         ],
         "relatedTools": [
           "crop-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "compare-pdf-contract-versions",
+        "slug": "compare-pdf-contract-versions",
+        "cluster": "editing-expansion",
+        "tool": "compare-pdf",
+        "title": "如何比较 PDF 合同版本",
+        "metaTitle": "如何比较 PDF 合同版本",
+        "metaDescription": "比较两份 PDF 合同版本并突出显示视觉差异。浏览器内免费处理，无需账户，也没有水印。 可在浏览器中免费比较合同版本，无需注册或上传文件。",
+        "answer": "要比较 PDF 合同版本，请先在 Compare PDFs 中打开已批准版本，再打开新副本。工具比较页面外观并标出差异，包括表格、印章和扫描页。签署前逐项检查变化；它不能代替法律审查，也不会以文本方式比较句子。",
+        "sections": [
+          {
+            "heading": "如何比较两份 PDF 合同",
+            "paragraphs": [
+              "要比较 PDF 合同版本，请先在 Compare PDFs 中打开已批准版本，再打开新副本。工具比较页面外观并标出差异，包括表格、印章和扫描页。签署前逐项检查变化；它不能代替法律审查，也不会以文本方式比较句子。"
+            ],
+            "steps": [
+              {
+                "heading": "保留两个版本",
+                "text": "为原始文件使用清晰名称，例如 contract-approved 和 contract-received。不要覆盖已批准或已签署的版本。"
+              },
+              {
+                "heading": "打开 Compare PDFs",
+                "text": "在 [Compare PDF](/tools/compare-pdf) 中先将旧版作为 A，再将新版作为 B。确认选择了正确的文件。"
+              },
+              {
+                "heading": "逐页检查",
+                "text": "使用箭头翻页，并切换 A、B 和 Diff。Diff 会给不同区域上色，并淡化相同部分。仔细检查日期、金额、条款、附件、页脚和签名。"
+              },
+              {
+                "heading": "调整并下载",
+                "text": "如果模糊边缘或扫描噪点标出了太多像素，可提高 Tolerance；要发现较浅的变化则降低它。下载视觉报告，并在签署前对照原文件确认差异。"
+              }
+            ]
+          },
+          {
+            "heading": "比较能发现什么，不能发现什么",
+            "paragraphs": [
+              "Compare PDFs 是逐像素比较页面图像，而不是理解句子含义。它能发现可见文字、版式、表格、图表、印章和扫描页上的变化。如需查看新增或删除的词语，可用 [PDF to Text](/tools/pdf-to-text) 提取两份文本并另行比较。",
+              "合同看起来可能相同，但日期、金额或脚注已经变更。请检查所有高亮部分，即使变化很小。新增一行可能推动下面内容，使大片区域显示不同，即便其中一些文字没有改变。",
+              "同一张纸的两次扫描可能因倾斜、阴影或颗粒而不同。提高 Tolerance 可以忽略细小图像噪声，但也可能掩盖很轻微的真实变化。请对照 A 和 B 视图，不要只看差异百分比。",
+              "比较在浏览器中完成：生成差异报告时，合同不会上传到服务器。Diff PDF 是标出差异的视觉记录，不是可编辑合同，也不判断更改是否合法。请保留原件并遵守组织的审批流程。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费比较合同，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "Compare PDFs 会比较合同文字吗？",
+            "a": "不会。它比较渲染后的页面外观并标记不同像素。工具能发现表格、印章、版式和扫描页变化，但不会列出改动的词语。要比较文字，请提取两份文档的文本并单独审阅。"
+          },
+          {
+            "q": "为什么整页几乎都显示为更改？",
+            "a": "新增一行可能让后续内容下移，导致大量像素不再对齐。页面大小或方向改变也会造成这种情况。请查看 A 和 B；若只是扫描噪声，可略微提高 Tolerance。"
+          },
+          {
+            "q": "它适用于扫描合同吗？",
+            "a": "适用。由于比较的是页面外观，不要求文本可选中。同一原件的两份扫描可能在对齐或颗粒上略有差异；调整 Tolerance，并在两个视图中确认真实变化。"
+          },
+          {
+            "q": "比较生成的 PDF 可以编辑吗？",
+            "a": "不能。它是将变化着色的视觉记录，不是可编辑的合同。可用它辅助审阅，并保留两份原始版本用于后续修改或签署。"
+          }
+        ],
+        "keywords": [
+          "如何比较 pdf 合同版本",
+          "compare PDF contract versions",
+          "compare two contracts"
+        ],
+        "relatedTools": [
+          "compare-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
