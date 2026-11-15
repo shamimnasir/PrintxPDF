@@ -1,0 +1,987 @@
+{
+  "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+  "sourceCluster": "recipes",
+  "tool": "word-to-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo crear un PDF desde Word, Excel, PowerPoint o un ebook",
+      "metaTitle": "Crear un PDF desde Word, Excel, PowerPoint o EPUB",
+      "metaDescription": "Elige el método adecuado para Word, hojas de cálculo, diapositivas o ebooks y revisa fuentes, saltos de página, hojas y orden de lectura.",
+      "keyword": "crear PDF desde Word Excel PowerPoint o ebook",
+      "secondaryKeywords": [
+        "convertir Word a PDF",
+        "Excel a PDF",
+        "PowerPoint a PDF",
+        "convertidor EPUB a PDF",
+        "revisar diseño al convertir PDF"
+      ],
+      "answer": "Elige una herramienta según el formato de origen, crea una copia PDF aparte y revisa saltos de página, fuentes, hojas, imágenes y enlaces. Word y Excel se convierten en el navegador; PowerPoint y los ebooks se procesan en el servidor, así que revisa la privacidad y los límites de cuenta antes de subirlos.",
+      "ctaLabel": "Word a PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Un PDF sirve cuando la otra persona necesita un diseño fijo, no un archivo editable. La mejor ruta depende del origen: los documentos de Word, las hojas de cálculo, las diapositivas y los capítulos de ebook tienen reglas de diseño distintas. Duplica primero el archivo original y no des por hecho que la descarga se ve bien."
+        },
+        {
+          "t": "h2",
+          "x": "Elige un convertidor según el formato de origen"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Archivo de origen",
+            "Herramienta",
+            "Qué revisar"
+          ],
+          "rows": [
+            [
+              "Documento Word DOCX",
+              "[Word a PDF](/tools/word-to-pdf)",
+              "Fuentes, títulos, saltos, imágenes y enlaces."
+            ],
+            [
+              "Libro Excel XLSX",
+              "[Excel a PDF](/tools/excel-to-pdf)",
+              "Hojas incluidas, área de impresión, escala y celdas pequeñas."
+            ],
+            [
+              "Presentación PPTX",
+              "[PowerPoint a PDF](/tools/ppt-to-pdf)",
+              "Tamaño de diapositiva, fuentes, diagramas, notas y animaciones estáticas."
+            ],
+            [
+              "Ebook EPUB",
+              "[EPUB a PDF](/tools/epub-to-pdf)",
+              "Orden de capítulos, páginas redistribuidas, enlaces e imágenes."
+            ]
+          ]
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Conserva el archivo editable",
+              "x": "Duplica el archivo Word, Excel, PowerPoint o ebook original. La conversión debe crear una copia PDF, no sustituir el archivo que puedes seguir editando."
+            },
+            {
+              "h": "Usa la herramienta del formato correcto",
+              "x": "Elige la herramienta correspondiente en la tabla. Cambiar la extensión del nombre del archivo no convierte su contenido."
+            },
+            {
+              "h": "Lee el aviso de procesamiento antes de subir",
+              "x": "Word a PDF y Excel a PDF se ejecutan en el navegador. PowerPoint y los ebooks se convierten en el servidor y el archivo se sube por HTTPS. No envíes documentos confidenciales si tu organización no ha aprobado el servicio."
+            },
+            {
+              "h": "Revisa todas las páginas u hojas",
+              "x": "Compara el resultado con el archivo original. Comprueba la primera y última página, títulos cerca de saltos, diagramas, hojas seleccionadas y columnas estrechas."
+            },
+            {
+              "h": "Guarda una copia con nombre claro",
+              "x": "Usa un nombre que indique la versión y el propósito sin revelar datos privados. Conserva tanto el original editable como el PDF verificado cuando el proceso lo requiera."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Convierte un documento DOCX en una copia PDF desde el navegador."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué las hojas de cálculo requieren una revisión aparte"
+        },
+        {
+          "t": "p",
+          "x": "Un libro de cálculo puede tener varias hojas, filas ocultas, fórmulas, gráficos y áreas de impresión. El PDF es una vista fija, no una hoja interactiva. Antes de convertir, define el área de impresión y la escala en la aplicación original, oculta las hojas que no deban compartirse y comprueba el número de páginas. Reducir una hoja ancha hasta que quepa en una página puede dejar el texto demasiado pequeño; a menudo es mejor repartir la tabla en varias páginas legibles."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué cambian las presentaciones y los ebooks"
+        },
+        {
+          "t": "p",
+          "x": "Las transiciones y animaciones de una presentación no funcionan en un PDF estático. Decide antes de convertir si necesitas un fotograma por diapositiva, notas del presentador o una vista de folleto. El texto de un EPUB se adapta al tamaño de pantalla, mientras que el PDF fija un diseño de página; por eso puede cambiar la experiencia de lectura. Para otros formatos, [Convertidor de ebooks](/tools/ebook-converter) ofrece varias conversiones; [MOBI a PDF](/tools/mobi-to-pdf) sirve para archivos compatibles."
+        },
+        {
+          "t": "warn",
+          "x": "Algunas conversiones de documentos y ebooks se procesan en el servidor. La página de herramientas de PDF lo indica antes de usar cada una. No subas historiales médicos, financieros, legales, estudiantiles o de clientes a un servicio si su tratamiento no cumple tus reglas. Consulta la [política de privacidad](/privacy) y conserva el archivo original."
+        },
+        {
+          "t": "p",
+          "x": "Si el PDF debe cumplir una norma de archivo, confirma primero el requisito exacto de quien lo recibirá y consulta [PDF/A y la preservación a largo plazo](/blog/archive/what-is-pdfa). Para páginas escaneadas, usa [OCR](/tools/ocr-pdf) solo si necesitas una capa de texto buscable y comprueba que el reconocimiento sea correcto."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo crear un PDF desde Word sin subir el documento?",
+          "a": "La herramienta Word a PDF de PrintxPDF procesa archivos DOCX en el navegador. Otras conversiones, incluidas PowerPoint y ebooks, se procesan en el servidor y suben el archivo para convertirlo."
+        },
+        {
+          "q": "¿Aparecerán todas las hojas de Excel en el PDF?",
+          "a": "Comprueba la exportación y la configuración de impresión del libro original. Puede haber hojas ocultas o áreas de impresión que no coincidan con lo que esperas."
+        },
+        {
+          "q": "¿Convertir EPUB a PDF conserva el texto redistribuible?",
+          "a": "No. El PDF fija páginas, mientras que EPUB adapta el texto a distintos tamaños de pantalla. Revisa el resultado y conserva el ebook original."
+        },
+        {
+          "q": "¿Debo revisar el PDF después de convertirlo?",
+          "a": "Sí. Abre el PDF y revisa saltos de página, tablas, imágenes, títulos y texto pequeño antes de enviarlo o imprimirlo. Conserva el archivo editable para futuras revisiones."
+        }
+      ],
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "pt-BR": {
+      "title": "Como criar PDF a partir de Word, Excel, PowerPoint ou ebook",
+      "metaTitle": "Crie PDF de Word, Excel, PowerPoint ou EPUB",
+      "metaDescription": "Escolha a conversão certa para Word, planilha, slides ou ebook e confira fontes, quebras, abas e ordem de leitura.",
+      "keyword": "criar PDF de Word Excel PowerPoint ou ebook",
+      "secondaryKeywords": [
+        "converter Word em PDF",
+        "Excel para PDF",
+        "PowerPoint para PDF",
+        "conversor EPUB para PDF",
+        "conferir layout da conversão PDF"
+      ],
+      "answer": "Escolha uma ferramenta para o formato de origem, crie uma cópia PDF separada e confira quebras de página, fontes, abas, imagens e links. Word e Excel são convertidos no navegador; PowerPoint e ebooks são processados no servidor, então verifique privacidade e limites da conta antes de enviar.",
+      "ctaLabel": "Word para PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF é útil quando o destinatário precisa de um layout estável, não de uma fonte editável. O melhor caminho depende do arquivo inicial: documentos Word, planilhas, slides e capítulos de ebook têm regras de layout diferentes. Duplique o original primeiro e não presuma que a aparência ficou correta só porque o download terminou."
+        },
+        {
+          "t": "h2",
+          "x": "Escolha o conversor pelo formato de origem"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Arquivo de origem",
+            "Ferramenta",
+            "O que conferir"
+          ],
+          "rows": [
+            [
+              "Documento Word DOCX",
+              "[Word para PDF](/tools/word-to-pdf)",
+              "Fontes, títulos, quebras, imagens e links."
+            ],
+            [
+              "Pasta de trabalho XLSX",
+              "[Excel para PDF](/tools/excel-to-pdf)",
+              "Abas incluídas, área de impressão, escala e células pequenas."
+            ],
+            [
+              "Apresentação PPTX",
+              "[PowerPoint para PDF](/tools/ppt-to-pdf)",
+              "Tamanho dos slides, fontes, diagramas, notas e animações estáticas."
+            ],
+            [
+              "Ebook EPUB",
+              "[EPUB para PDF](/tools/epub-to-pdf)",
+              "Ordem dos capítulos, páginas refluídas, links e posição das imagens."
+            ]
+          ]
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarde a fonte editável",
+              "x": "Duplique o arquivo Word, Excel, PowerPoint ou ebook original. A conversão deve criar uma cópia PDF, sem substituir o arquivo que você ainda pode editar."
+            },
+            {
+              "h": "Use a ferramenta correspondente",
+              "x": "Escolha na tabela a ferramenta do formato de origem. Renomear a extensão do arquivo não converte o conteúdo."
+            },
+            {
+              "h": "Leia o aviso de processamento antes de enviar",
+              "x": "Word para PDF e Excel para PDF rodam no navegador. PowerPoint e ebooks são conversões no servidor e o arquivo é enviado por HTTPS. Não envie arquivos confidenciais se sua organização não aprovou o serviço."
+            },
+            {
+              "h": "Confira todas as páginas ou abas",
+              "x": "Compare o resultado com a fonte. Veja a primeira e a última página, títulos perto das quebras, diagramas, abas selecionadas e colunas estreitas."
+            },
+            {
+              "h": "Salve uma cópia com nome claro",
+              "x": "Use um nome que identifique versão e finalidade sem revelar dados privados. Guarde o original editável e o PDF verificado se o processo exigir."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Converta um documento DOCX em uma cópia PDF no navegador."
+        },
+        {
+          "t": "h2",
+          "x": "Por que planilhas precisam de uma conferência própria"
+        },
+        {
+          "t": "p",
+          "x": "Uma pasta de trabalho pode ter várias abas, linhas ocultas, fórmulas, gráficos e áreas de impressão. PDF é uma visualização fixa, não uma planilha interativa. Antes de converter, defina a área e a escala na aplicação original, oculte abas que não devem ser distribuídas e confira o número de páginas. Reduzir uma folha larga até caber em uma página pode deixar o texto pequeno demais; muitas vezes é melhor dividir a tabela em páginas legíveis."
+        },
+        {
+          "t": "h2",
+          "x": "Por que apresentações e ebooks podem mudar"
+        },
+        {
+          "t": "p",
+          "x": "Transições e animações de uma apresentação não funcionam em PDF estático. Decida antes se precisa de um quadro por slide, notas do apresentador ou layout de apostila. O texto EPUB se reorganiza conforme a tela, enquanto o PDF fixa a página; por isso, a experiência de leitura pode mudar. Para outros formatos, o [Conversor de ebooks](/tools/ebook-converter) faz várias conversões; [MOBI para PDF](/tools/mobi-to-pdf) atende arquivos compatíveis."
+        },
+        {
+          "t": "warn",
+          "x": "Algumas conversões de documentos e ebooks são processadas no servidor. A página de ferramentas PDF informa isso antes do uso. Não envie dados médicos, financeiros, jurídicos, escolares ou de clientes se o tratamento não cumprir as regras da sua organização. Consulte a [política de privacidade](/privacy) e mantenha o arquivo original."
+        },
+        {
+          "t": "p",
+          "x": "Se o PDF precisa cumprir um padrão de arquivamento, confirme o requisito exato de quem vai recebê-lo e leia [PDF/A e preservação de longo prazo](/blog/archive/what-is-pdfa). Para páginas digitalizadas, use [OCR](/tools/ocr-pdf) somente se precisar de uma camada de texto pesquisável e confira o reconhecimento."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso criar PDF do Word sem enviar o documento?",
+          "a": "A ferramenta Word para PDF do PrintxPDF processa DOCX no navegador. Outras conversões, incluindo PowerPoint e ebooks, rodam no servidor e enviam o arquivo para conversão."
+        },
+        {
+          "q": "Todas as abas do Excel aparecerão no PDF?",
+          "a": "Confira a exportação e as configurações de impressão da pasta original. Ela pode ter abas ocultas ou áreas de impressão diferentes do que você espera."
+        },
+        {
+          "q": "Converter EPUB em PDF preserva o texto refluível?",
+          "a": "Não. O PDF tem páginas fixas; o EPUB se adapta a tamanhos diferentes de tela. Confira o resultado e guarde o ebook original."
+        },
+        {
+          "q": "Preciso conferir o PDF depois de converter?",
+          "a": "Sim. Abra o arquivo e confira quebras, tabelas, imagens, títulos e textos pequenos antes de enviar ou imprimir. Guarde a fonte editável para revisões futuras."
+        }
+      ],
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "hi": {
+      "title": "Word, Excel, PowerPoint या ebook से PDF कैसे बनाएँ",
+      "metaTitle": "Word, Excel, PowerPoint या EPUB से PDF बनाएँ",
+      "metaDescription": "Word, स्प्रेडशीट, स्लाइड या ebook के लिए सही कन्वर्ज़न चुनें। फ़ॉन्ट, पेज ब्रेक, शीट और पढ़ने का क्रम जाँचें।",
+      "keyword": "Word Excel PowerPoint या ebook से PDF बनाएं",
+      "secondaryKeywords": [
+        "Word डॉक्यूमेंट को PDF करें",
+        "Excel workbook PDF",
+        "PowerPoint slides PDF",
+        "EPUB से PDF कन्वर्टर",
+        "PDF कन्वर्ज़न लेआउट जांचें"
+      ],
+      "answer": "स्रोत फ़ॉर्मैट के अनुसार कन्वर्टर चुनें, अलग PDF कॉपी बनाएँ और पेज ब्रेक, फ़ॉन्ट, शीट, तस्वीरें व लिंक जाँचें। Word और Excel ब्राउज़र में प्रोसेस होते हैं; PowerPoint और ebook फ़ाइलें सर्वर पर अपलोड होती हैं, इसलिए भेजने से पहले गोपनीयता और खाते की सीमा देखें।",
+      "ctaLabel": "Word से PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF तब उपयोगी है जब पाने वाले को संपादन योग्य स्रोत नहीं, स्थिर लेआउट चाहिए। सही तरीका स्रोत पर निर्भर करता है: Word पेज, स्प्रेडशीट, स्लाइड और ebook अध्यायों के लेआउट नियम अलग हैं। पहले मूल की कॉपी बनाएँ। डाउनलोड पूरा होने का अर्थ यह नहीं कि पेज ब्रेक या फ़ॉन्ट सही हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "स्रोत फ़ाइल के अनुसार कन्वर्टर चुनें"
+        },
+        {
+          "t": "table",
+          "head": [
+            "स्रोत फ़ाइल",
+            "टूल",
+            "क्या जाँचें"
+          ],
+          "rows": [
+            [
+              "DOCX Word दस्तावेज़",
+              "[Word से PDF](/tools/word-to-pdf)",
+              "फ़ॉन्ट, शीर्षक, पेज ब्रेक, तस्वीरें और लिंक।"
+            ],
+            [
+              "XLSX workbook",
+              "[Excel से PDF](/tools/excel-to-pdf)",
+              "कौन सी शीट शामिल हैं, प्रिंट एरिया, स्केल और छोटे सेल।"
+            ],
+            [
+              "PPTX स्लाइड डेक",
+              "[PowerPoint से PDF](/tools/ppt-to-pdf)",
+              "स्लाइड आकार, फ़ॉन्ट, डायग्राम, नोट्स और स्थिर हो जाने वाले एनिमेशन।"
+            ],
+            [
+              "EPUB ebook",
+              "[EPUB से PDF](/tools/epub-to-pdf)",
+              "अध्याय क्रम, बदले हुए पेज, लिंक और तस्वीरों की जगह।"
+            ]
+          ]
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "संपादन योग्य मूल रखें",
+              "x": "मूल Word, Excel, PowerPoint या ebook की प्रतिलिपि बनाएँ। कन्वर्ज़न को अलग PDF कॉपी बनानी चाहिए, न कि संपादन योग्य फ़ाइल बदलनी चाहिए।"
+            },
+            {
+              "h": "मिलते-जुलते फ़ॉर्मैट का टूल लें",
+              "x": "तालिका से स्रोत फ़ाइल वाला टूल चुनें। फ़ाइल की extension का नाम बदलने से सामग्री कन्वर्ट नहीं होती।"
+            },
+            {
+              "h": "अपलोड से पहले प्रोसेसिंग सूचना पढ़ें",
+              "x": "Word से PDF और Excel से PDF ब्राउज़र में चलते हैं। PowerPoint और ebook कन्वर्ज़न सर्वर पर होते हैं और फ़ाइल HTTPS से अपलोड होती है। संगठन की मंज़ूरी न हो तो गोपनीय फ़ाइल न भेजें।"
+            },
+            {
+              "h": "हर पेज या शीट देखें",
+              "x": "नतीजे की मूल से तुलना करें। पहले और आखिरी पेज, ब्रेक के पास शीर्षक, डायग्राम, चुनी गई workbook शीट और संकरे कॉलम देखें।"
+            },
+            {
+              "h": "स्पष्ट नाम से कॉपी सेव करें",
+              "x": "ऐसा नाम रखें जिससे संस्करण और उपयोग पता चले, पर निजी जानकारी उजागर न हो। जरूरत हो तो संपादन योग्य मूल और जाँची हुई PDF दोनों रखें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "ब्राउज़र में DOCX दस्तावेज़ की PDF कॉपी बनाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "स्प्रेडशीट की अलग से जाँच क्यों करें"
+        },
+        {
+          "t": "p",
+          "x": "Workbook में कई शीट, छिपी पंक्तियाँ, फ़ॉर्मूले, चार्ट और प्रिंट क्षेत्र हो सकते हैं। PDF स्थिर पेज दृश्य है, लाइव स्प्रेडशीट नहीं। कन्वर्ज़न से पहले स्रोत ऐप में प्रिंट क्षेत्र और स्केल तय करें, साझा न करने वाली शीट छिपाएँ और पेज संख्या जाँचें। चौड़ी शीट को एक पेज में समेटने से अक्षर बहुत छोटे हो सकते हैं; तालिका को कई पढ़ने योग्य पन्नों में बाँटना बेहतर है।"
+        },
+        {
+          "t": "h2",
+          "x": "प्रेज़ेंटेशन और ebook क्यों बदल सकते हैं"
+        },
+        {
+          "t": "p",
+          "x": "प्रेज़ेंटेशन के ट्रांज़िशन और एनिमेशन स्थिर PDF में नहीं चलते। कन्वर्ट करने से पहले तय करें कि हर स्लाइड का एक फ्रेम, वक्ता के नोट्स या हैंडआउट लेआउट चाहिए। EPUB का टेक्स्ट स्क्रीन आकार के अनुसार बहता है, जबकि PDF पेज का डिज़ाइन स्थिर करता है; इसलिए पढ़ने का अनुभव बदल सकता है। अन्य फ़ॉर्मैट के लिए [Ebook Converter](/tools/ebook-converter) कई कन्वर्ज़न करता है; संगत फ़ाइल के लिए [MOBI से PDF](/tools/mobi-to-pdf) उपयोग करें।"
+        },
+        {
+          "t": "warn",
+          "x": "कुछ दस्तावेज़ और ebook कन्वर्ज़न सर्वर पर होते हैं। PDF टूल पेज इस्तेमाल से पहले यह बताता है। संगठन की अनुमति न हो तो मेडिकल, वित्तीय, कानूनी, छात्र या ग्राहक रिकॉर्ड अपलोड न करें। [गोपनीयता नीति](/privacy) पढ़ें और मूल फ़ाइल रखें।"
+        },
+        {
+          "t": "p",
+          "x": "यदि PDF को आर्काइव मानक पूरा करना है, तो पाने वाले की सटीक शर्त की पुष्टि करें और [PDF/A व लंबे समय का संरक्षण](/blog/archive/what-is-pdfa) पढ़ें। स्कैन पेज के लिए [OCR](/tools/ocr-pdf) तभी चलाएँ जब खोजने योग्य टेक्स्ट चाहिए, फिर पहचान जाँचें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या Word से PDF बनाते समय दस्तावेज़ अपलोड नहीं होता?",
+          "a": "PrintxPDF का Word से PDF टूल DOCX को ब्राउज़र में प्रोसेस करता है। PowerPoint और ebook समेत अन्य कन्वर्ज़न सर्वर पर होते हैं और फ़ाइल अपलोड करते हैं।"
+        },
+        {
+          "q": "क्या Excel की हर शीट PDF में आएगी?",
+          "a": "निर्यात और मूल workbook की प्रिंट सेटिंग जाँचें। छिपी शीट या प्रिंट क्षेत्र आपकी अपेक्षा से अलग हो सकते हैं।"
+        },
+        {
+          "q": "क्या EPUB को PDF करने पर टेक्स्ट स्क्रीन के अनुसार बहता रहेगा?",
+          "a": "नहीं। PDF पेज तय करता है; EPUB अलग स्क्रीन के अनुसार ढलता है। नतीजा जाँचें और मूल ebook संभालें।"
+        },
+        {
+          "q": "कन्वर्ट करने के बाद PDF जाँचनी चाहिए?",
+          "a": "हाँ। भेजने या प्रिंट करने से पहले पेज ब्रेक, तालिकाएँ, तस्वीरें, शीर्षक और छोटे टेक्स्ट देखें। भविष्य में बदलाव के लिए संपादन योग्य स्रोत रखें।"
+        }
+      ],
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "ar": {
+      "title": "كيفية إنشاء PDF من Word أو Excel أو PowerPoint أو كتاب إلكتروني",
+      "metaTitle": "إنشاء PDF من Word وExcel وPowerPoint وEPUB",
+      "metaDescription": "اختر التحويل المناسب لملف Word أو جدول أو شرائح أو كتاب إلكتروني، ثم افحص الخطوط وفواصل الصفحات والأوراق وترتيب القراءة.",
+      "keyword": "إنشاء PDF من Word Excel PowerPoint أو كتاب إلكتروني",
+      "secondaryKeywords": [
+        "تحويل Word إلى PDF",
+        "تحويل Excel إلى PDF",
+        "PowerPoint إلى PDF",
+        "محول EPUB إلى PDF",
+        "فحص تخطيط PDF بعد التحويل"
+      ],
+      "answer": "اختر أداة تناسب تنسيق المصدر، وأنشئ نسخة PDF منفصلة ثم افحص فواصل الصفحات والخطوط والأوراق والصور والروابط. تتم معالجة Word وExcel داخل المتصفح؛ أما PowerPoint والكتب الإلكترونية فتُرفع إلى الخادم، لذا راجع الخصوصية وحدود الحساب قبل الإرسال.",
+      "ctaLabel": "Word إلى PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "يفيد PDF عندما يحتاج المستلم إلى تخطيط ثابت لا إلى ملف قابل للتحرير. يعتمد المسار الأفضل على المصدر: مستندات Word وجداول البيانات والشرائح وفصول الكتب الإلكترونية لها قواعد تنسيق مختلفة. انسخ الملف الأصلي أولًا، ولا تفترض أن الملف سليم لمجرد اكتمال التنزيل."
+        },
+        {
+          "t": "h2",
+          "x": "اختر محولًا وفق تنسيق الملف الأصلي"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ملف المصدر",
+            "الأداة",
+            "ما الذي ينبغي فحصه"
+          ],
+          "rows": [
+            [
+              "مستند Word بصيغة DOCX",
+              "[Word إلى PDF](/tools/word-to-pdf)",
+              "الخطوط والعناوين والفواصل والصور والروابط."
+            ],
+            [
+              "مصنف XLSX",
+              "[Excel إلى PDF](/tools/excel-to-pdf)",
+              "الأوراق المضمنة ومنطقة الطباعة والقياس والخلايا الصغيرة."
+            ],
+            [
+              "عرض PPTX",
+              "[PowerPoint إلى PDF](/tools/ppt-to-pdf)",
+              "مقاس الشريحة والخطوط والرسوم والملاحظات والرسوم المتحركة الثابتة."
+            ],
+            [
+              "كتاب EPUB",
+              "[EPUB إلى PDF](/tools/epub-to-pdf)",
+              "ترتيب الفصول والصفحات المعاد تدفقها والروابط ومواقع الصور."
+            ]
+          ]
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احتفظ بالمصدر القابل للتحرير",
+              "x": "انسخ ملف Word أو Excel أو PowerPoint أو الكتاب الأصلي. ينبغي أن ينشئ التحويل نسخة PDF منفصلة، لا أن يستبدل الملف الذي يمكنك تعديله."
+            },
+            {
+              "h": "استخدم أداة التنسيق المطابق",
+              "x": "اختر الأداة المناسبة لنوع المصدر من الجدول. تغيير امتداد اسم الملف لا يحوّل محتواه."
+            },
+            {
+              "h": "اقرأ إفصاح المعالجة قبل الرفع",
+              "x": "يعمل Word إلى PDF وExcel إلى PDF في المتصفح. أما PowerPoint والكتب الإلكترونية فتُحوّل على الخادم ويُرفع الملف عبر HTTPS. لا ترسل ملفات سرية ما لم تسمح مؤسستك بالخدمة."
+            },
+            {
+              "h": "افحص كل صفحة أو ورقة",
+              "x": "قارن الناتج بالمصدر. افحص الصفحة الأولى والأخيرة والعناوين قرب الفواصل والرسوم وأوراق المصنف المختارة والأعمدة الضيقة."
+            },
+            {
+              "h": "احفظ نسخة باسم واضح",
+              "x": "اختر اسمًا يوضح الإصدار والغرض دون كشف معلومات خاصة. احتفظ بالمصدر القابل للتحرير وPDF الذي راجعته إذا كانت إجراءاتك تتطلب ذلك."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "حوّل مستند DOCX إلى نسخة PDF داخل المتصفح."
+        },
+        {
+          "t": "h2",
+          "x": "لماذا تحتاج جداول البيانات إلى فحص مستقل؟"
+        },
+        {
+          "t": "p",
+          "x": "قد يحتوي المصنف على أوراق متعددة وصفوف مخفية وصيغ ورسوم ومناطق طباعة. PDF عرض ثابت للصفحة وليس جدولًا تفاعليًا. قبل التحويل، اضبط منطقة الطباعة والقياس في التطبيق الأصلي، وأخفِ الأوراق التي لا ينبغي مشاركتها، وتحقق من عدد الصفحات. قد يؤدي ضغط ورقة عريضة في صفحة واحدة إلى نص صغير جدًا؛ وغالبًا يكون تقسيم الجدول على صفحات مقروءة أفضل."
+        },
+        {
+          "t": "h2",
+          "x": "لماذا قد تتغير العروض والكتب الإلكترونية؟"
+        },
+        {
+          "t": "p",
+          "x": "لا تعمل انتقالات العرض والرسوم المتحركة في PDF ثابت. قرر قبل التحويل ما إذا كنت تريد إطارًا لكل شريحة أو ملاحظات المتحدث أو تخطيط نشرة. يتدفق نص EPUB ليلائم أحجام الشاشات، بينما يثبت PDF تصميم الصفحة؛ لذلك قد تختلف تجربة القراءة. للتنسيقات الأخرى، يتعامل [محول الكتب الإلكترونية](/tools/ebook-converter) مع عدة تحويلات، ويمكن استخدام [MOBI إلى PDF](/tools/mobi-to-pdf) للملفات المتوافقة."
+        },
+        {
+          "t": "warn",
+          "x": "تُعالج بعض تحويلات المستندات والكتب الإلكترونية على الخادم. توضح صفحة أدوات PDF ذلك قبل الاستخدام. لا ترفع سجلات طبية أو مالية أو قانونية أو طلابية أو خاصة بالعملاء إلا إذا وافقت قواعدك على طريقة المعالجة. راجع [سياسة الخصوصية](/privacy) واحتفظ بالمصدر."
+        },
+        {
+          "t": "p",
+          "x": "إذا كان PDF يجب أن يطابق معيار أرشفة، فتحقق أولًا من متطلبات الجهة المستلمة واقرأ [PDF/A والحفظ طويل الأمد](/blog/archive/what-is-pdfa). للصفحات الممسوحة ضوئيًا، استخدم [OCR](/tools/ocr-pdf) فقط عند الحاجة إلى طبقة نص قابلة للبحث، ثم راجع دقة التعرف."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل أستطيع إنشاء PDF من Word دون رفع المستند؟",
+          "a": "تعالج أداة Word إلى PDF من PrintxPDF ملفات DOCX في المتصفح. أما تحويلات PowerPoint والكتب الإلكترونية فتتم على الخادم ويُرفع الملف لمعالجته."
+        },
+        {
+          "q": "هل ستظهر كل أوراق Excel في PDF؟",
+          "a": "افحص التصدير وإعدادات الطباعة في المصنف الأصلي. قد توجد أوراق مخفية أو مناطق طباعة مختلفة عما تتوقع."
+        },
+        {
+          "q": "هل يحافظ تحويل EPUB إلى PDF على تدفق النص؟",
+          "a": "لا. صفحات PDF ثابتة، أما EPUB فيعيد تدفق النص ليلائم أحجام الشاشات. افحص الناتج واحتفظ بالكتاب الأصلي."
+        },
+        {
+          "q": "هل ينبغي فحص PDF بعد التحويل؟",
+          "a": "نعم. افتح الملف وتحقق من فواصل الصفحات والجداول والصور والعناوين والنص الصغير قبل الإرسال أو الطباعة. احتفظ بالمصدر القابل للتحرير للتعديلات المستقبلية."
+        }
+      ],
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "bn": {
+      "title": "Word, Excel, PowerPoint বা ebook থেকে PDF বানানোর উপায়",
+      "metaTitle": "Word, Excel, PowerPoint বা EPUB থেকে PDF",
+      "metaDescription": "Word, স্প্রেডশিট, স্লাইড বা ebook-এর সঠিক কনভার্সন বেছে নিন। ফন্ট, পেজ ব্রেক, শিট ও পড়ার ক্রম যাচাই করুন।",
+      "keyword": "Word Excel PowerPoint বা ebook থেকে PDF",
+      "secondaryKeywords": [
+        "Word ডকুমেন্ট PDF করুন",
+        "Excel workbook থেকে PDF",
+        "PowerPoint slides PDF",
+        "EPUB থেকে PDF কনভার্টার",
+        "PDF কনভার্সনের লেআউট যাচাই"
+      ],
+      "answer": "সোর্স ফরম্যাট অনুযায়ী কনভার্টার বেছে আলাদা PDF কপি তৈরি করুন, তারপর পেজ ব্রেক, ফন্ট, শিট, ছবি ও লিংক দেখুন। Word এবং Excel ব্রাউজারে চলে; PowerPoint ও ebook ফাইল সার্ভারে আপলোড হয়, তাই পাঠানোর আগে গোপনীয়তা ও অ্যাকাউন্ট সীমা যাচাই করুন।",
+      "ctaLabel": "Word থেকে PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "প্রাপক সম্পাদনাযোগ্য সোর্সের বদলে স্থির লেআউট চাইলে PDF উপযোগী। কোন পথে কনভার্ট করবেন তা সোর্সের ওপর নির্ভর করে: Word পৃষ্ঠা, স্প্রেডশিট, স্লাইড এবং ebook অধ্যায়ের লেআউটের নিয়ম আলাদা। আগে মূল ফাইলের কপি রাখুন। ডাউনলোড শেষ হলেই ফন্ট বা পেজ ব্রেক ঠিক আছে ধরে নেবেন না।"
+        },
+        {
+          "t": "h2",
+          "x": "সোর্স ফাইল অনুযায়ী কনভার্টার বেছে নিন"
+        },
+        {
+          "t": "table",
+          "head": [
+            "সোর্স",
+            "টুল",
+            "যা যাচাই করবেন"
+          ],
+          "rows": [
+            [
+              "DOCX Word ডকুমেন্ট",
+              "[Word থেকে PDF](/tools/word-to-pdf)",
+              "ফন্ট, শিরোনাম, পেজ ব্রেক, ছবি ও লিংক।"
+            ],
+            [
+              "XLSX workbook",
+              "[Excel থেকে PDF](/tools/excel-to-pdf)",
+              "কোন শিট আছে, প্রিন্ট এরিয়া, স্কেল ও ছোট সেল।"
+            ],
+            [
+              "PPTX স্লাইড ডেক",
+              "[PowerPoint থেকে PDF](/tools/ppt-to-pdf)",
+              "স্লাইড মাপ, ফন্ট, ডায়াগ্রাম, নোট ও স্থির হয়ে যাওয়া অ্যানিমেশন।"
+            ],
+            [
+              "EPUB ebook",
+              "[EPUB থেকে PDF](/tools/epub-to-pdf)",
+              "অধ্যায়ের ক্রম, পুনর্বিন্যস্ত পৃষ্ঠা, লিংক ও ছবির অবস্থান।"
+            ]
+          ]
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "সম্পাদনাযোগ্য মূল কপি রাখুন",
+              "x": "মূল Word, Excel, PowerPoint বা ebook ফাইলের কপি করুন। কনভার্সনে আলাদা PDF তৈরি হবে; সম্পাদনাযোগ্য মূলটি বদলানো উচিত নয়।"
+            },
+            {
+              "h": "সোর্সের সঙ্গে মেলে এমন টুল ব্যবহার করুন",
+              "x": "টেবিল থেকে সোর্স ফরম্যাটের টুল নিন। ফাইলের extension বদলালে তার কনটেন্ট কনভার্ট হয় না।"
+            },
+            {
+              "h": "আপলোডের আগে প্রসেসিং নোট পড়ুন",
+              "x": "Word থেকে PDF এবং Excel থেকে PDF ব্রাউজারে চলে। PowerPoint ও ebook কনভার্সন সার্ভারে হয়, ফাইল HTTPS দিয়ে আপলোড হয়। প্রতিষ্ঠানের অনুমতি না থাকলে গোপন ফাইল পাঠাবেন না।"
+            },
+            {
+              "h": "প্রতিটি পৃষ্ঠা বা শিট দেখুন",
+              "x": "ফলাফল মূল ফাইলের সঙ্গে মিলিয়ে দেখুন। প্রথম ও শেষ পৃষ্ঠা, পেজ ব্রেকের কাছে শিরোনাম, ডায়াগ্রাম, নির্বাচিত workbook শিট এবং সরু কলাম যাচাই করুন।"
+            },
+            {
+              "h": "স্পষ্ট নামে কপি সেভ করুন",
+              "x": "সংস্করণ ও ব্যবহার বোঝায় এমন নাম দিন, তবে ব্যক্তিগত তথ্য প্রকাশ করবেন না। কাজের নিয়মে দরকার হলে সম্পাদনাযোগ্য মূল ও যাচাইকৃত PDF দুটোই রাখুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "ব্রাউজারে DOCX ডকুমেন্টের PDF কপি তৈরি করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "স্প্রেডশিট আলাদা করে পরীক্ষা করা দরকার কেন"
+        },
+        {
+          "t": "p",
+          "x": "Workbook-এ একাধিক শিট, লুকানো সারি, ফর্মুলা, চার্ট ও প্রিন্ট এরিয়া থাকতে পারে। PDF হলো স্থির পৃষ্ঠা, লাইভ স্প্রেডশিট নয়। কনভার্টের আগে সোর্স অ্যাপে প্রিন্ট এরিয়া ও স্কেল ঠিক করুন, শেয়ার না করার শিট লুকান এবং পৃষ্ঠার সংখ্যা দেখুন। চওড়া শিট এক পাতায় চেপে ধরলে লেখা খুব ছোট হতে পারে; কয়েকটি পড়ার মতো পাতায় ভাগ করা অনেক সময় ভালো।"
+        },
+        {
+          "t": "h2",
+          "x": "প্রেজেন্টেশন ও ebook কেন বদলাতে পারে"
+        },
+        {
+          "t": "p",
+          "x": "স্থির PDF-এ প্রেজেন্টেশনের transition ও animation চলে না। কনভার্টের আগে ঠিক করুন প্রতি স্লাইডে একটি ফ্রেম, বক্তার নোট, নাকি handout layout দরকার। EPUB লেখা স্ক্রিনের আকারে মানিয়ে নেয়, PDF একটি স্থির পৃষ্ঠা বানায়; তাই পড়ার অভিজ্ঞতা বদলাতে পারে। অন্য ফরম্যাটে [Ebook Converter](/tools/ebook-converter) কয়েক ধরনের কনভার্সন করে; সমর্থিত ফাইলের জন্য [MOBI থেকে PDF](/tools/mobi-to-pdf) ব্যবহার করুন।"
+        },
+        {
+          "t": "warn",
+          "x": "কিছু ডকুমেন্ট ও ebook কনভার্সন সার্ভারে হয়। ব্যবহারের আগে PDF টুল পেজে তা জানানো হয়। প্রতিষ্ঠানের নিয়ম মানা না হলে চিকিৎসা, আর্থিক, আইনি, শিক্ষার্থী বা গ্রাহকের রেকর্ড আপলোড করবেন না। [গোপনীয়তা নীতি](/privacy) দেখুন এবং মূল ফাইল রাখুন।"
+        },
+        {
+          "t": "p",
+          "x": "PDF-কে আর্কাইভ মান পূরণ করতে হলে আগে প্রাপকের সঠিক শর্ত জেনে [PDF/A ও দীর্ঘমেয়াদি সংরক্ষণ](/blog/archive/what-is-pdfa) পড়ুন। স্ক্যান পৃষ্ঠার জন্য searchable text layer দরকার হলেই [OCR](/tools/ocr-pdf) ব্যবহার করুন, তারপর স্বীকৃত লেখা যাচাই করুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "ডকুমেন্ট আপলোড না করে Word থেকে PDF বানানো যাবে?",
+          "a": "PrintxPDF-এর Word থেকে PDF টুল DOCX ব্রাউজারে প্রসেস করে। PowerPoint ও ebook-সহ অন্য কনভার্সন সার্ভারে হয় এবং ফাইল আপলোড করে।"
+        },
+        {
+          "q": "Excel-এর প্রতিটি শিট কি PDF-এ থাকবে?",
+          "a": "এক্সপোর্ট এবং মূল workbook-এর প্রিন্ট সেটিং দেখুন। লুকানো শিট বা প্রিন্ট এরিয়া আপনার প্রত্যাশার সঙ্গে নাও মিলতে পারে।"
+        },
+        {
+          "q": "EPUB থেকে PDF করলে লেখা কি স্ক্রিনে মানিয়ে যাবে?",
+          "a": "না। PDF নির্দিষ্ট পৃষ্ঠা বানায়, EPUB বিভিন্ন পর্দার মাপে লেখা সাজায়। ফলাফল দেখুন এবং মূল ebook রাখুন।"
+        },
+        {
+          "q": "কনভার্টের পর PDF যাচাই করা দরকার?",
+          "a": "হ্যাঁ। পাঠানো বা প্রিন্টের আগে পেজ ব্রেক, টেবিল, ছবি, শিরোনাম ও ছোট লেখা দেখুন। ভবিষ্যৎ সম্পাদনার জন্য মূল ফাইল রাখুন।"
+        }
+      ],
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "vi": {
+      "title": "Cách tạo PDF từ Word, Excel, PowerPoint hoặc ebook",
+      "metaTitle": "Tạo PDF từ Word, Excel, PowerPoint hoặc EPUB",
+      "metaDescription": "Chọn cách chuyển đổi phù hợp cho Word, bảng tính, slide hoặc ebook; kiểm tra phông chữ, ngắt trang, trang tính và thứ tự đọc.",
+      "keyword": "tạo PDF từ Word Excel PowerPoint hoặc ebook",
+      "secondaryKeywords": [
+        "chuyển Word sang PDF",
+        "Excel sang PDF",
+        "PowerPoint sang PDF",
+        "trình chuyển EPUB sang PDF",
+        "kiểm tra bố cục PDF sau chuyển đổi"
+      ],
+      "answer": "Chọn công cụ theo định dạng nguồn, tạo một bản PDF riêng rồi kiểm tra ngắt trang, phông chữ, trang tính, ảnh và liên kết. Word và Excel được xử lý trong trình duyệt; PowerPoint và ebook tải tệp lên máy chủ, vì vậy hãy kiểm tra quyền riêng tư và giới hạn tài khoản trước khi gửi.",
+      "ctaLabel": "Word sang PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF hữu ích khi người nhận cần bố cục cố định thay vì tệp có thể chỉnh sửa. Cách chuyển đổi phù hợp phụ thuộc vào nguồn: trang Word, bảng tính, slide và chương ebook có quy tắc trình bày khác nhau. Hãy sao chép tệp gốc trước. Tải xuống thành công không có nghĩa là ngắt trang hay phông chữ đã đúng."
+        },
+        {
+          "t": "h2",
+          "x": "Chọn công cụ theo định dạng tệp nguồn"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tệp nguồn",
+            "Công cụ",
+            "Cần kiểm tra"
+          ],
+          "rows": [
+            [
+              "Tài liệu Word DOCX",
+              "[Word sang PDF](/tools/word-to-pdf)",
+              "Phông chữ, tiêu đề, ngắt trang, ảnh và liên kết."
+            ],
+            [
+              "Sổ tính XLSX",
+              "[Excel sang PDF](/tools/excel-to-pdf)",
+              "Trang tính được đưa vào, vùng in, tỷ lệ và ô nhỏ."
+            ],
+            [
+              "Bộ slide PPTX",
+              "[PowerPoint sang PDF](/tools/ppt-to-pdf)",
+              "Khổ slide, phông chữ, sơ đồ, ghi chú và hiệu ứng động bị đóng băng."
+            ],
+            [
+              "Ebook EPUB",
+              "[EPUB sang PDF](/tools/epub-to-pdf)",
+              "Thứ tự chương, trang được dàn lại, liên kết và vị trí ảnh."
+            ]
+          ]
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Giữ lại tệp nguồn có thể sửa",
+              "x": "Tạo bản sao của Word, Excel, PowerPoint hoặc ebook gốc. Quá trình chuyển đổi tạo một bản PDF riêng, không thay thế tệp bạn còn muốn chỉnh sửa."
+            },
+            {
+              "h": "Dùng công cụ đúng định dạng",
+              "x": "Chọn công cụ theo tệp nguồn trong bảng. Đổi phần mở rộng tên tệp không chuyển đổi được nội dung."
+            },
+            {
+              "h": "Đọc thông báo xử lý trước khi tải lên",
+              "x": "Word sang PDF và Excel sang PDF chạy trong trình duyệt. PowerPoint và ebook được xử lý trên máy chủ, tệp được tải lên qua HTTPS. Đừng gửi tài liệu mật nếu tổ chức chưa duyệt dịch vụ."
+            },
+            {
+              "h": "Kiểm tra mọi trang hoặc trang tính",
+              "x": "So sánh kết quả với bản gốc. Xem trang đầu và cuối, tiêu đề gần chỗ ngắt trang, sơ đồ, trang tính đã chọn và cột hẹp."
+            },
+            {
+              "h": "Lưu bản sao với tên rõ ràng",
+              "x": "Đặt tên thể hiện phiên bản và mục đích nhưng không làm lộ thông tin riêng. Giữ cả tệp có thể sửa và PDF đã kiểm tra nếu quy trình yêu cầu."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Chuyển tài liệu DOCX thành bản PDF ngay trong trình duyệt."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao bảng tính cần được kiểm tra riêng"
+        },
+        {
+          "t": "p",
+          "x": "Một sổ tính có thể gồm nhiều trang, hàng ẩn, công thức, biểu đồ và vùng in. PDF là chế độ xem trang cố định, không phải bảng tính trực tiếp. Trước khi chuyển đổi, đặt vùng in và tỷ lệ trong ứng dụng nguồn, ẩn các trang không nên chia sẻ và xác nhận số trang. Thu nhỏ cả bảng rộng vào một trang có thể làm chữ quá nhỏ; chia bảng thành nhiều trang dễ đọc thường tốt hơn."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao bài thuyết trình và ebook có thể thay đổi"
+        },
+        {
+          "t": "p",
+          "x": "Chuyển cảnh và hiệu ứng động trong bài thuyết trình không hoạt động trong PDF tĩnh. Trước khi đổi, hãy quyết định cần một khung hình mỗi slide, ghi chú diễn giả hay bố cục tài liệu phát tay. Văn bản EPUB tự dàn lại theo màn hình, còn PDF cố định bố cục trang nên trải nghiệm đọc có thể khác. Với định dạng ebook khác, [Ebook Converter](/tools/ebook-converter) hỗ trợ nhiều kiểu chuyển đổi; [MOBI sang PDF](/tools/mobi-to-pdf) dành cho tệp tương thích."
+        },
+        {
+          "t": "warn",
+          "x": "Một số tác vụ chuyển đổi tài liệu và ebook chạy trên máy chủ. Trang công cụ PDF sẽ thông báo trước khi dùng. Đừng tải hồ sơ y tế, tài chính, pháp lý, học sinh hoặc khách hàng nếu cách xử lý không đáp ứng quy định của bạn. Xem [chính sách quyền riêng tư](/privacy) và giữ tệp gốc."
+        },
+        {
+          "t": "p",
+          "x": "Nếu PDF phải đáp ứng tiêu chuẩn lưu trữ, hãy xác nhận đúng yêu cầu của nơi nhận rồi xem [PDF/A và lưu trữ lâu dài](/blog/archive/what-is-pdfa). Với trang quét, chỉ dùng [OCR](/tools/ocr-pdf) khi cần lớp văn bản có thể tìm kiếm và hãy kiểm tra kết quả nhận dạng."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Có thể tạo PDF từ Word mà không tải tài liệu lên không?",
+          "a": "Công cụ Word sang PDF của PrintxPDF xử lý DOCX trong trình duyệt. Các chuyển đổi khác, gồm PowerPoint và ebook, chạy trên máy chủ và tải tệp lên."
+        },
+        {
+          "q": "PDF có bao gồm mọi trang tính Excel không?",
+          "a": "Hãy kiểm tra bản xuất và thiết lập in của sổ tính gốc. Trang tính ẩn hoặc vùng in có thể không khớp với mong đợi."
+        },
+        {
+          "q": "Chuyển EPUB sang PDF có giữ văn bản tự dàn trang không?",
+          "a": "Không. PDF cố định từng trang, còn EPUB tự điều chỉnh cho kích thước màn hình. Hãy kiểm tra kết quả và giữ ebook gốc."
+        },
+        {
+          "q": "Có cần kiểm tra PDF sau khi chuyển đổi không?",
+          "a": "Có. Mở PDF và kiểm tra ngắt trang, bảng, ảnh, tiêu đề và chữ nhỏ trước khi gửi hoặc in. Giữ tệp nguồn để chỉnh sửa sau này."
+        }
+      ],
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "zh-CN": {
+      "title": "如何将 Word、Excel、PowerPoint 或电子书转成 PDF",
+      "metaTitle": "将 Word、Excel、PPT 或 EPUB 转成 PDF",
+      "metaDescription": "为 Word、表格、幻灯片或电子书选择合适的转换方式，并检查字体、分页、工作表和阅读顺序。",
+      "keyword": "Word Excel PowerPoint 电子书转 PDF",
+      "secondaryKeywords": [
+        "Word 文档转 PDF",
+        "Excel 工作簿转 PDF",
+        "PowerPoint 幻灯片转 PDF",
+        "EPUB 转 PDF 工具",
+        "检查 PDF 转换版式"
+      ],
+      "answer": "根据源文件格式选择转换工具，另存一份 PDF，再检查分页、字体、工作表、图片和链接。Word 与 Excel 在浏览器中处理；PowerPoint 和电子书会上传到服务器处理，因此上传前要确认隐私要求和账户限额。",
+      "ctaLabel": "Word 转 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "当收件人需要固定版式而非可编辑源文件时，PDF 很有用。选择哪种转换方式取决于源文件：Word 页面、电子表格、演示文稿和电子书章节的排版规则各不相同。先复制原文件。下载成功并不代表分页和字体一定正确。"
+        },
+        {
+          "t": "h2",
+          "x": "按源文件格式选择转换工具"
+        },
+        {
+          "t": "table",
+          "head": [
+            "源文件",
+            "工具",
+            "需要检查"
+          ],
+          "rows": [
+            [
+              "DOCX Word 文档",
+              "[Word 转 PDF](/tools/word-to-pdf)",
+              "字体、标题、分页、图片和链接。"
+            ],
+            [
+              "XLSX 工作簿",
+              "[Excel 转 PDF](/tools/excel-to-pdf)",
+              "包含哪些工作表、打印区域、缩放和较小单元格。"
+            ],
+            [
+              "PPTX 幻灯片",
+              "[PowerPoint 转 PDF](/tools/ppt-to-pdf)",
+              "幻灯片尺寸、字体、图表、备注和静态化的动画。"
+            ],
+            [
+              "EPUB 电子书",
+              "[EPUB 转 PDF](/tools/epub-to-pdf)",
+              "章节顺序、重新排版的页面、链接和图片位置。"
+            ]
+          ]
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "保留可编辑的源文件",
+              "x": "复制原始 Word、Excel、PowerPoint 或电子书文件。转换应生成一份独立 PDF，而不是覆盖仍需编辑的文件。"
+            },
+            {
+              "h": "使用匹配的转换工具",
+              "x": "根据表格选择对应源格式的工具。重命名文件扩展名不会转换文件内容。"
+            },
+            {
+              "h": "上传前阅读处理说明",
+              "x": "Word 转 PDF 和 Excel 转 PDF 在浏览器中运行。PowerPoint 和电子书在服务器端转换，文件会通过 HTTPS 上传。如果组织未批准该服务，请勿发送机密文件。"
+            },
+            {
+              "h": "检查每一页或工作表",
+              "x": "将结果与源文件对照。检查首页和末页、分页附近的标题、图表、选定工作表和较窄的列。"
+            },
+            {
+              "h": "用清晰名称保存副本",
+              "x": "文件名应说明版本和用途，但不要泄露隐私。工作流程需要时，同时保留可编辑源文件和已核对的 PDF。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "在浏览器中将 DOCX 文档转换为 PDF 副本。"
+        },
+        {
+          "t": "h2",
+          "x": "为什么电子表格需要单独检查"
+        },
+        {
+          "t": "p",
+          "x": "工作簿可能包含多个工作表、隐藏行、公式、图表和打印区域。PDF 是固定页面视图，不是可交互的表格。转换前尽量在原应用中设置打印区域和缩放，隐藏不应分享的工作表，并确认页数。把宽表缩到一页可能会让文字过小；拆成几页清晰的表格通常更好。"
+        },
+        {
+          "t": "h2",
+          "x": "为什么演示文稿和电子书可能发生变化"
+        },
+        {
+          "t": "p",
+          "x": "演示文稿的切换效果和动画无法在静态 PDF 中运行。转换前先决定需要每页一张幻灯片、演讲者备注还是讲义版式。EPUB 会根据屏幕尺寸重新排版，PDF 则固定页面设计，所以阅读体验可能不同。其他电子书格式可使用[电子书转换器](/tools/ebook-converter)；兼容文件也可使用[MOBI 转 PDF](/tools/mobi-to-pdf)。"
+        },
+        {
+          "t": "warn",
+          "x": "部分文档和电子书转换会在服务器处理，PDF 工具页面会在使用前说明。若处理方式不符合组织规定，请勿上传医疗、财务、法律、学生或客户记录。查看[隐私政策](/privacy)，并保留源文件。"
+        },
+        {
+          "t": "p",
+          "x": "如果 PDF 必须符合归档标准，请先确认接收方的具体要求，再阅读[PDF/A 与长期保存](/blog/archive/what-is-pdfa)。扫描页面只有在需要可搜索文本层时才用[OCR](/tools/ocr-pdf)，并检查识别结果。"
+        },
+        {
+          "t": "h2",
+          "x": "转换前如何检查Word文档"
+        },
+        {
+          "t": "p",
+          "x": "Word转PDF通常适合合同草稿、简历、作业和需要固定分页的报告。转换前检查页面尺寸、页边距、字体是否嵌入、标题层级、图片环绕和页眉页脚。若文档使用特殊字体或复杂表格，先在原应用中导出一份对照，再逐页查看PDF。留意孤行标题、图片被推到下一页、链接失效以及页码错位。对外发送前，用收件人实际使用的阅读器打开文件。"
+        },
+        {
+          "t": "h2",
+          "x": "转换前如何整理Excel工作簿"
+        },
+        {
+          "t": "p",
+          "x": "Excel工作簿常常包含不打算打印的辅助表、筛选结果或隐藏区域。先明确哪些工作表要交付，再设置纸张方向、页边距、重复标题行和分页符。预览每个工作表，确认重要列没有被切断，日期与货币格式清楚，公式结果没有被遮挡。对于宽表，可使用横向纸张或分成多页，而不是把字体缩到难以阅读。若工作簿含有隐藏行、批注或外部链接，请按分享要求先检查这些内容。"
+        },
+        {
+          "t": "h2",
+          "x": "转换前如何准备PowerPoint幻灯片"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint转成PDF后，每页通常对应一张幻灯片，动画、转场和嵌入音视频不会继续播放。先决定需要全页幻灯片、带演讲者备注的页面，还是多张幻灯片组成的讲义。检查字体替换、图表标签、图片清晰度和边缘裁切。若备注包含内部评论或讲稿，确认导出设置不会把它们带入共享文件。转换后从头到尾浏览一遍，特别检查浅色文字、复杂图表和包含许多小字的页面。"
+        },
+        {
+          "t": "h2",
+          "x": "转换前如何理解EPUB电子书的排版变化"
+        },
+        {
+          "t": "p",
+          "x": "EPUB是可重排格式，读者可以调整字体和屏幕大小。PDF则把文字放在固定页面上。因此，EPUB转PDF可能改变分页、行长和图片位置。长篇电子书转换后，检查目录、章节顺序、脚注、超链接、表格和每章开头。若目标是打印，先确认纸张尺寸和字体大小；若目标是屏幕阅读，考虑固定页面是否真的更方便。受版权许可约束的电子书也应遵守发行方的转换与分享规则。"
+        },
+        {
+          "t": "h2",
+          "x": "怎样安全地选择在线转换工具"
+        },
+        {
+          "t": "p",
+          "x": "在线工具的处理方式并不相同。Word和Excel转换器在PrintxPDF的浏览器标签页中本地运行，文件不会上传到服务器。PowerPoint和部分电子书转换会在服务器处理，工具页面会在开始前说明。这个区别对医疗记录、银行资料、合同、学生文件和客户数据很重要。请先阅读工具页的处理提示，并遵守你所在组织的数据政策。需要本地处理时，只选择明确在浏览器运行的工具；不要因为页面使用HTTPS就推断文件从未离开设备。"
+        },
+        {
+          "t": "h2",
+          "x": "如何验证转换后的PDF"
+        },
+        {
+          "t": "p",
+          "x": "下载后打开PDF并检查页数、分页、字体、图片、表格和链接。比较首页、最后一页以及原文件中最复杂的部分。对于工作簿，逐一确认每个预期工作表和打印范围；对于演示文稿，检查图表和备注设置；对于EPUB，检查目录与章节顺序。最后搜索几个重要词语，确认文字可选择且内容没有遗漏。发现问题时，返回源文件调整页面设置，再重新生成PDF。"
+        },
+        {
+          "t": "h2",
+          "x": "转换任务完成后应保留哪些文件？"
+        },
+        {
+          "t": "p",
+          "x": "保留原始可编辑文件，直到PDF已检查并且交付方确认可用。若需要再次修改内容，回到Word、Excel、PowerPoint或电子书源文件编辑，然后重新转换。给PDF使用清楚但不含敏感数据的文件名，并按组织规定存储或删除临时副本。归档或法律用途可能要求特定的PDF标准，应向接收方确认标准和验证方法。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以不上传文档，从 Word 创建 PDF 吗？",
+          "a": "PrintxPDF 的 Word 转 PDF 工具在浏览器中处理 DOCX。PowerPoint 和电子书等其他转换则在服务器处理，会上传文件。"
+        },
+        {
+          "q": "Excel 的每个工作表都会出现在 PDF 中吗？",
+          "a": "请检查导出结果和原工作簿的打印设置。隐藏工作表或打印区域可能与预期不同。"
+        },
+        {
+          "q": "EPUB 转成 PDF 后还能自动重排文字吗？",
+          "a": "不能。PDF 页面固定，EPUB 会根据屏幕尺寸重排。请检查转换结果并保留原电子书。"
+        },
+        {
+          "q": "转换后需要检查 PDF 吗？",
+          "a": "需要。发送或打印前，打开 PDF 检查分页、表格、图片、标题和小字。保留可编辑源文件以便日后修改。"
+        }
+      ],
+      "topic": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "slug": "make-pdf-from-word-excel-powerpoint-and-ebook",
+      "tool": "word-to-pdf",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    }
+  }
+}
