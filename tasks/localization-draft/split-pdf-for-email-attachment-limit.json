@@ -1,0 +1,1113 @@
+{
+  "topic": "split-pdf-for-email-attachment-limit",
+  "sourceCluster": "split",
+  "tool": "split-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo dividir un PDF para el límite de archivos adjuntos",
+      "metaTitle": "Dividir PDF para el límite del correo",
+      "metaDescription": "Ajusta PDF al límite del correo. Comprime o divide gratis, sin registro ni marca de agua, en tu navegador privado.",
+      "keyword": "dividir PDF para el límite de archivos adjuntos",
+      "secondaryKeywords": [
+        "PDF adjunto demasiado grande",
+        "límite de tamaño de correo",
+        "dividir documento para correo",
+        "enviar PDF por partes"
+      ],
+      "answer": "Para enviar un PDF por correo, comprueba el límite real del remitente y del destinatario. Prueba a comprimir primero; si no basta, divide el documento en secciones lógicas y deja margen para la codificación del mensaje. PrintxPDF permite dividir PDF en el navegador, gratis, sin registro ni marca de agua, y conserva el original.",
+      "ctaLabel": "Divide el PDF en partes para el correo",
+      "body": [
+        {
+          "t": "p",
+          "x": "El servicio del remitente y el del destinatario pueden aplicar límites distintos; se aplica el menor. Las cuentas de trabajo o escuela también pueden tener reglas propias. Comprueba la ayuda vigente y deja espacio para el mensaje. La codificación del correo puede aumentar cerca de un tercio el tamaño transmitido, pero cada proveedor calcula el límite de forma distinta. No existe un tamaño universal seguro."
+        },
+        {
+          "t": "h2",
+          "x": "Comprueba el límite antes de dividir"
+        },
+        {
+          "t": "table",
+          "caption": "Límites indicados por los proveedores; las cuentas de empresa y escuela pueden variar.",
+          "head": [
+            "Servicio",
+            "Límite habitual",
+            "Alternativa"
+          ],
+          "rows": [
+            [
+              "Gmail personal",
+              "25 MB en adjuntos",
+              "Puede sustituir adjuntos grandes por enlace de Drive."
+            ],
+            [
+              "Outlook.com",
+              "20 MB por mensaje",
+              "Usa OneDrive u otro servicio aprobado."
+            ],
+            [
+              "Microsoft 365 / Exchange",
+              "Lo decide la organización",
+              "Consulta al administrador."
+            ],
+            [
+              "Yahoo Mail",
+              "25 MB en adjuntos",
+              "Comparte un enlace accesible."
+            ],
+            [
+              "iCloud Mail",
+              "20 MB; Mail Drop hasta 5 GB",
+              "El enlace Mail Drop dura hasta 30 días."
+            ],
+            [
+              "Proton Mail",
+              "25 MB de salida",
+              "Usa Proton Drive u otro servicio."
+            ],
+            [
+              "Trabajo o escuela",
+              "Varía por organización y destinatario",
+              "Confirma ambos límites."
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Pregunta al destinatario si su sistema tiene un límite menor. Deja margen para el cuerpo del mensaje en vez de ajustar el archivo justo al máximo anunciado."
+        },
+        {
+          "t": "h2",
+          "x": "Prueba a comprimir antes de dividir"
+        },
+        {
+          "t": "p",
+          "x": "Dividir es una solución alternativa; comprimir suele ser mejor porque el destinatario recibe un solo archivo y no debe recomponerlo. Prueba [Comprimir PDF](/tools/compress-pdf) en una copia. El ajuste Ligero conserva el texto seleccionable. Medio y Fuerte convierten páginas en imágenes; pueden reducir el tamaño, pero pierdes búsqueda y selección de texto y puede bajar el detalle. Revisa el resultado antes de enviarlo."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo dividir un PDF para enviarlo por correo"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Calcula el tamaño de cada parte",
+              "x": "Elige un objetivo inferior al límite confirmado, con espacio para el mensaje. Divide el tamaño del archivo entre ese objetivo y redondea hacia arriba para estimar las partes."
+            },
+            {
+              "h": "Calcula las páginas",
+              "x": "Divide el total de páginas entre el número de partes. Por ejemplo, 240 páginas en 5 partes son unas 48 páginas cada una."
+            },
+            {
+              "h": "Corta en límites claros",
+              "x": "Ajusta los rangos para terminar entre capítulos, no en mitad de una frase. Usa [Dividir páginas o rangos](/blog/split/split-pdf-into-pages) para definir límites personalizados."
+            },
+            {
+              "h": "Revisa y nombra cada parte",
+              "x": "Comprueba el tamaño de cada archivo: las páginas con imágenes pesan más que las de texto. Usa nombres como Informe_parte1de4.pdf para que el destinatario entienda el orden."
+            },
+            {
+              "h": "Envía las partes en orden",
+              "x": "Indica en el primer mensaje cuántos archivos enviarás y cómo volver a unirlos si hace falta."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Divide por número de páginas o por rangos y revisa cada parte antes de descargar."
+        },
+        {
+          "t": "warn",
+          "x": "No comprimas por separado las partes de un documento firmado o presentado oficialmente. La recompresión puede invalidar firmas y certificaciones, y dividirlo puede incumplir las instrucciones de presentación. Conserva el original firmado y comprueba los requisitos."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo conviene compartir un enlace"
+        },
+        {
+          "t": "p",
+          "x": "Enviar cuatro correos separados es incómodo. Si está permitido, un enlace puede ser mejor: Gmail puede proponer Google Drive, Outlook puede usar OneDrive e iCloud Mail ofrece Mail Drop. Comprueba los permisos, la fecha de caducidad y si el destinatario podrá abrirlo. Para archivos confidenciales, utiliza solo servicios aprobados por tu organización."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué un PDF puede ser tan grande"
+        },
+        {
+          "t": "p",
+          "x": "Los PDF grandes suelen incluir escaneos a 300 o 600 DPI, fotos de alta resolución o recursos de diseño guardados a tamaño de impresión. [Comprimir PDF](/blog/compress/how-to-compress-a-pdf) puede ayudar. Si un documento principalmente de texto pesa mucho, puede contener revisiones acumuladas; reescribir una copia puede reducirlo. Si proviene de un escáner, añade [OCR PDF](/tools/ocr-pdf) para que se pueda buscar y verifica los datos reconocidos."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cuál es el límite de adjuntos de Gmail?",
+          "a": "Gmail personal permite hasta 25 MB en total de adjuntos. Puede reemplazar los archivos grandes con un enlace de Google Drive. Las cuentas de trabajo y el sistema del destinatario pueden tener límites menores."
+        },
+        {
+          "q": "¿Cuál es el límite de archivos adjuntos de Outlook?",
+          "a": "Outlook.com publica un límite de 20 MB por correo. Microsoft 365 y Exchange dependen de la configuración de cada organización. Consulta al administrador o usa un enlace aprobado."
+        },
+        {
+          "q": "¿Debo comprimir o dividir un PDF grande?",
+          "a": "Prueba la compresión Ligera si necesitas conservar texto seleccionable. Medio y Fuerte convierten las páginas en imágenes. Divide el documento o comparte un enlace si ese cambio no te sirve. Conserva los originales firmados."
+        },
+        {
+          "q": "¿Cómo divido un PDF en partes del mismo tamaño?",
+          "a": "Calcula cuántas partes necesitas y divide el número de páginas entre ellas. Comprueba después cada archivo: las páginas con imágenes suelen pesar más, así que los tamaños no quedarán idénticos."
+        },
+        {
+          "q": "¿Por qué rebota un PDF de 24 MB si el límite es 25 MB?",
+          "a": "La codificación puede aumentar el tamaño transmitido y algunos límites incluyen el cuerpo del mensaje o las reglas del destinatario. Comprueba ambos sistemas y deja margen."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como dividir PDF para respeitar o limite de anexos",
+      "metaTitle": "Divida PDF para o limite do e-mail",
+      "metaDescription": "Ajuste PDFs ao limite de e-mail. Comprima ou divida grátis, sem cadastro ou marca-d'água, no navegador privado.",
+      "keyword": "dividir PDF para limite de anexos",
+      "secondaryKeywords": [
+        "PDF anexo grande demais",
+        "limite de tamanho de e-mail",
+        "dividir documento para enviar",
+        "mandar PDF em partes"
+      ],
+      "answer": "Para enviar um PDF por e-mail, confira os limites reais do remetente e do destinatário. Tente compactar primeiro; se não bastar, divida o documento em seções lógicas e deixe espaço para a codificação da mensagem. O PrintxPDF divide PDFs no navegador, grátis, sem cadastro ou marca-d'água, e preserva o original.",
+      "ctaLabel": "Divida o PDF em partes para enviar",
+      "body": [
+        {
+          "t": "p",
+          "x": "O serviço do remetente e o do destinatário podem impor limites diferentes; vale o menor. Contas de trabalho ou escola também podem ter regras próprias. Confira a ajuda atualizada e deixe espaço para a mensagem. A codificação do e-mail pode aumentar em cerca de um terço o tamanho transmitido, mas cada provedor calcula esse limite de um jeito. Não existe um tamanho universalmente seguro."
+        },
+        {
+          "t": "h2",
+          "x": "Confira o limite antes de dividir"
+        },
+        {
+          "t": "table",
+          "caption": "Limites publicados pelos provedores; contas corporativas e escolares podem variar.",
+          "head": [
+            "Serviço",
+            "Limite comum",
+            "Alternativa"
+          ],
+          "rows": [
+            [
+              "Gmail pessoal",
+              "25 MB no total de anexos",
+              "Pode trocar anexos grandes por link do Drive."
+            ],
+            [
+              "Outlook.com",
+              "20 MB por mensagem",
+              "Use OneDrive ou outro serviço aprovado."
+            ],
+            [
+              "Microsoft 365 / Exchange",
+              "Definido pela organização",
+              "Consulte o administrador."
+            ],
+            [
+              "Yahoo Mail",
+              "25 MB em anexos",
+              "Compartilhe um link acessível."
+            ],
+            [
+              "iCloud Mail",
+              "20 MB; Mail Drop até 5 GB",
+              "Links do Mail Drop duram até 30 dias."
+            ],
+            [
+              "Proton Mail",
+              "25 MB de saída",
+              "Use Proton Drive ou outro serviço."
+            ],
+            [
+              "Trabalho ou escola",
+              "Varia por organização e destinatário",
+              "Confirme os dois limites."
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Pergunte ao destinatário se o sistema dele tem um limite menor. Deixe folga para o corpo do e-mail, em vez de ajustar o arquivo exatamente ao máximo anunciado."
+        },
+        {
+          "t": "h2",
+          "x": "Tente compactar antes de dividir"
+        },
+        {
+          "t": "p",
+          "x": "Dividir é uma solução alternativa; compactar costuma ser melhor porque o destinatário recebe um único arquivo e não precisa remontá-lo. Experimente [Compactar PDF](/tools/compress-pdf) em uma cópia. O modo Leve preserva texto selecionável. Médio e Forte transformam páginas em imagens; podem reduzir o tamanho, mas o texto deixa de ser pesquisável e selecionável, e os detalhes podem perder qualidade. Confira o resultado antes de enviar."
+        },
+        {
+          "t": "h2",
+          "x": "Como dividir um PDF para enviar por e-mail"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Calcule o tamanho de cada parte",
+              "x": "Escolha um alvo abaixo do limite confirmado, com espaço para a mensagem. Divida o tamanho do arquivo por esse valor e arredonde para cima para estimar quantas partes serão necessárias."
+            },
+            {
+              "h": "Calcule as páginas",
+              "x": "Divida o total de páginas pelo número de partes. Por exemplo, 240 páginas divididas em 5 partes dão cerca de 48 páginas por arquivo."
+            },
+            {
+              "h": "Escolha limites coerentes",
+              "x": "Ajuste as faixas para terminar entre capítulos, não no meio de uma frase. Use [Dividir por páginas ou intervalos](/blog/split/split-pdf-into-pages) para definir limites personalizados."
+            },
+            {
+              "h": "Confira e nomeie cada parte",
+              "x": "Verifique o tamanho de cada arquivo: páginas com imagens pesam mais do que páginas de texto. Use nomes como Relatorio_parte1de4.pdf para indicar a ordem."
+            },
+            {
+              "h": "Envie as partes na sequência",
+              "x": "Na primeira mensagem, explique quantos arquivos serão enviados e como reuni-los, se necessário."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Divida por quantidade de páginas ou por intervalos e confira cada parte antes de baixar."
+        },
+        {
+          "t": "warn",
+          "x": "Não compacte separadamente as partes de um documento assinado ou enviado oficialmente. A recompressão pode invalidar assinaturas e certificações, e a divisão pode violar instruções de envio. Preserve o original assinado e confira as exigências."
+        },
+        {
+          "t": "h2",
+          "x": "Quando é melhor compartilhar um link"
+        },
+        {
+          "t": "p",
+          "x": "Enviar quatro e-mails separados é inconveniente. Se for permitido, um link pode ser melhor: Gmail pode sugerir Google Drive, Outlook pode usar OneDrive e o iCloud Mail oferece Mail Drop. Confira permissões, validade do link e acesso do destinatário. Para arquivos confidenciais, use apenas serviços aprovados pela sua organização."
+        },
+        {
+          "t": "h2",
+          "x": "Por que um PDF fica tão grande"
+        },
+        {
+          "t": "p",
+          "x": "PDFs grandes costumam ter scans em 300 ou 600 DPI, fotos em alta resolução ou arquivos de design com recursos no tamanho de impressão. [Compactar PDF](/blog/compress/how-to-compress-a-pdf) pode ajudar. Um documento quase todo de texto pode estar pesado por revisões acumuladas; reescrever uma cópia pode reduzir o tamanho. Se veio de um scanner, adicione [OCR PDF](/tools/ocr-pdf) para permitir buscas e confira o texto reconhecido."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Qual é o limite de anexos do Gmail?",
+          "a": "O Gmail pessoal permite até 25 MB no total de anexos e pode trocar arquivos grandes por um link do Google Drive. Contas corporativas e o sistema do destinatário podem ter limites menores."
+        },
+        {
+          "q": "Qual é o limite de anexos do Outlook?",
+          "a": "O Outlook.com publica limite de 20 MB por e-mail. No Microsoft 365 e Exchange, isso depende das configurações da organização. Consulte o administrador ou use um link aprovado."
+        },
+        {
+          "q": "Devo compactar ou dividir um PDF grande?",
+          "a": "Tente a compactação Leve se precisar manter o texto selecionável. Médio e Forte transformam páginas em imagens. Divida ou compartilhe um link se isso não servir. Preserve os originais assinados."
+        },
+        {
+          "q": "Como dividir um PDF em partes do mesmo tamanho?",
+          "a": "Calcule o número de partes e divida a quantidade de páginas entre elas. Depois confira cada arquivo: páginas com imagens ocupam mais espaço, então os tamanhos não serão exatamente iguais."
+        },
+        {
+          "q": "Por que um PDF de 24 MB volta se o limite é 25 MB?",
+          "a": "A codificação pode aumentar o tamanho transmitido, e alguns limites incluem o corpo do e-mail ou regras do destinatário. Confira ambos os sistemas e deixe uma margem."
+        }
+      ]
+    },
+    "hi": {
+      "title": "ईमेल अटैचमेंट सीमा के लिए PDF कैसे बाँटें",
+      "metaTitle": "ईमेल सीमा के लिए PDF बाँटें",
+      "metaDescription": "ईमेल सीमा के अनुसार PDF घटाएँ। ब्राउज़र में मुफ़्त, बिना साइनअप और वॉटरमार्क, संपीड़ित या विभाजित करें।",
+      "keyword": "ईमेल अटैचमेंट सीमा के लिए PDF बाँटें",
+      "secondaryKeywords": [
+        "PDF अटैचमेंट बहुत बड़ा",
+        "ईमेल अटैचमेंट आकार सीमा",
+        "ईमेल के लिए दस्तावेज़ बाँटें",
+        "PDF हिस्सों में भेजें"
+      ],
+      "answer": "PDF ईमेल करने से पहले भेजने वाले और पाने वाले दोनों की वास्तविक सीमा जाँचें। पहले संपीड़ित करें; फिर भी बड़ा हो तो दस्तावेज़ को अर्थपूर्ण पेज-खंडों में बाँटें और ईमेल एन्कोडिंग के लिए जगह छोड़ें। PrintxPDF ब्राउज़र में PDF विभाजित करता है, मुफ़्त है, साइनअप या वॉटरमार्क नहीं माँगता और मूल फ़ाइल सुरक्षित रखता है।",
+      "ctaLabel": "ईमेल भेजने के लिए PDF हिस्सों में बाँटें",
+      "body": [
+        {
+          "t": "p",
+          "x": "भेजने वाले और पाने वाले की सेवा अलग सीमा लगा सकती है; कम सीमा लागू होगी। काम या स्कूल खाते में प्रशासक की अलग नीति हो सकती है। मौजूदा सहायता पृष्ठ देखें और संदेश के लिए जगह रखें। ईमेल एन्कोडिंग भेजे जा रहे आकार में लगभग एक-तिहाई जोड़ सकती है, पर हर सेवा सीमा अलग तरह से बताती और लागू करती है। कोई एक सुरक्षित आकार सभी पर लागू नहीं होता।"
+        },
+        {
+          "t": "h2",
+          "x": "बाँटने से पहले ईमेल सीमा देखें"
+        },
+        {
+          "t": "table",
+          "caption": "प्रकाशित सेवा सीमाएँ; कार्य और स्कूल खातों में नियम अलग हो सकते हैं।",
+          "head": [
+            "सेवा",
+            "आम सीमा",
+            "सीमा से ऊपर विकल्प"
+          ],
+          "rows": [
+            [
+              "व्यक्तिगत Gmail",
+              "कुल अटैचमेंट 25 MB",
+              "बड़े अटैचमेंट की जगह Drive लिंक दे सकता है।"
+            ],
+            [
+              "Outlook.com",
+              "ईमेल 20 MB",
+              "OneDrive या स्वीकृत शेयरिंग सेवा इस्तेमाल करें।"
+            ],
+            [
+              "Microsoft 365 / Exchange",
+              "संस्था तय करती है",
+              "प्रशासक से पूछें।"
+            ],
+            [
+              "Yahoo Mail",
+              "अटैचमेंट 25 MB",
+              "सुलभ शेयरिंग लिंक भेजें।"
+            ],
+            [
+              "iCloud Mail",
+              "20 MB; Mail Drop से 5 GB",
+              "Mail Drop लिंक 30 दिन तक रहते हैं।"
+            ],
+            [
+              "Proton Mail",
+              "भेजने के लिए 25 MB",
+              "Proton Drive या दूसरी सेवा इस्तेमाल करें।"
+            ],
+            [
+              "काम या स्कूल मेल",
+              "संस्था और पाने वाले के अनुसार बदलता है",
+              "दोनों सीमाएँ पूछें।"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "पाने वाले से पूछें कि उसके मेल सिस्टम की सीमा कम तो नहीं। फ़ाइल को घोषित अधिकतम तक न भरें; संदेश के टेक्स्ट और एन्कोडिंग के लिए जगह छोड़ें।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF बाँटने से पहले संपीड़ित करें"
+        },
+        {
+          "t": "p",
+          "x": "बाँटना एक वैकल्पिक उपाय है; संपीड़न अक्सर बेहतर है क्योंकि पाने वाले को एक ही फ़ाइल मिलती है और उसे जोड़ना नहीं पड़ता। कॉपी पर [PDF संपीड़ित करें](/tools/compress-pdf) आज़माएँ। हल्का विकल्प चयन योग्य पाठ रखता है। मध्यम और तेज़ पेजों को छवियों में बदलते हैं; आकार घट सकता है, लेकिन पाठ खोज या चुन नहीं पाएँगे और बारीकी कम हो सकती है। भेजने से पहले परिणाम देखें।"
+        },
+        {
+          "t": "h2",
+          "x": "ईमेल के लिए PDF को हिस्सों में कैसे बाँटें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "हर हिस्से का लक्ष्य आकार निकालें",
+              "x": "पुष्ट सीमा से कम लक्ष्य चुनें और संदेश के लिए जगह रखें। कुल फ़ाइल आकार को लक्ष्य से बाँटकर हिस्सों की संख्या ऊपर की ओर पूर्णांक करें।"
+            },
+            {
+              "h": "पेजों में बाँटें",
+              "x": "कुल पेज संख्या को हिस्सों की संख्या से बाँटें। 240 पेज को 5 हिस्सों में बाँटने पर हर हिस्से में लगभग 48 पेज होंगे।"
+            },
+            {
+              "h": "सही जगह पर विभाजन करें",
+              "x": "सीमा को अध्यायों या अनुभागों के बीच रखें, वाक्य के बीच नहीं। [पेज या रेंज में बाँटें](/blog/split/split-pdf-into-pages) से कस्टम सीमाएँ सेट करें।"
+            },
+            {
+              "h": "हर हिस्सा जाँचकर नाम दें",
+              "x": "हर फ़ाइल का आकार अलग जाँचें, क्योंकि तस्वीरों वाले पेज भारी होते हैं। नाम में हिस्सा लिखें, जैसे Report_part1of4.pdf, ताकि क्रम स्पष्ट रहे।"
+            },
+            {
+              "h": "क्रम से भेजें",
+              "x": "पहले संदेश में बताएँ कि कुल कितने हिस्से हैं और ज़रूरत हो तो उन्हें फिर से कैसे जोड़ें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "पेज संख्या या कस्टम रेंज से बाँटें और डाउनलोड से पहले हर हिस्सा जाँचें।"
+        },
+        {
+          "t": "warn",
+          "x": "आधिकारिक जमा किए जाने वाले हस्ताक्षरित दस्तावेज़ के हर हिस्से को अलग से संपीड़ित न करें। दोबारा एन्कोडिंग से हस्ताक्षर या प्रमाणन अमान्य हो सकता है और विभाजन जमा निर्देशों के खिलाफ जा सकता है। मूल हस्ताक्षरित फ़ाइल रखें और नियम जाँचें।"
+        },
+        {
+          "t": "h2",
+          "x": "कब लिंक साझा करना बेहतर है"
+        },
+        {
+          "t": "p",
+          "x": "चार अलग ईमेल भेजना पाने वाले के लिए असुविधाजनक है। अनुमति हो तो लिंक बेहतर हो सकता है: Gmail Drive लिंक सुझा सकता है, Outlook OneDrive का उपयोग कर सकता है और iCloud Mail में Mail Drop है। अनुमति, समाप्ति तारीख और पाने वाले की पहुँच जाँचें। गोपनीय फ़ाइलों के लिए केवल संस्था द्वारा स्वीकृत सेवा का उपयोग करें।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF का आकार इतना बड़ा क्यों होता है"
+        },
+        {
+          "t": "p",
+          "x": "बड़ी PDF में अक्सर 300 या 600 DPI स्कैन, उच्च-रिज़ॉल्यूशन तस्वीरें या प्रिंट आकार में जोड़े गए डिज़ाइन संसाधन होते हैं। [PDF संपीड़ित करें](/blog/compress/how-to-compress-a-pdf) मदद कर सकता है। केवल टेक्स्ट वाली बड़ी फ़ाइल में पुराने संशोधन जमा हो सकते हैं; नई कॉपी लिखने से आकार घट सकता है। स्कैनर से आई फ़ाइल पर [PDF OCR](/tools/ocr-pdf) चलाकर खोज योग्य बनाएँ और पहचाने पाठ को जाँचें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Gmail की अधिकतम अटैचमेंट सीमा क्या है?",
+          "a": "व्यक्तिगत Gmail में कुल अटैचमेंट 25 MB तक हो सकते हैं। बड़ी फ़ाइलें Drive लिंक में बदली जा सकती हैं। काम/स्कूल खाते या पाने वाले की प्रणाली की सीमा कम हो सकती है।"
+        },
+        {
+          "q": "Outlook अटैचमेंट की सीमा क्या है?",
+          "a": "Outlook.com प्रति ईमेल 20 MB सीमा बताता है। Microsoft 365 और Exchange की सीमा संस्था की सेटिंग पर निर्भर करती है। प्रशासक से पूछें या स्वीकृत लिंक इस्तेमाल करें।"
+        },
+        {
+          "q": "बड़ी PDF को संपीड़ित करूँ या बाँटूँ?",
+          "a": "पाठ चयन योग्य रखना हो तो हल्का संपीड़न आज़माएँ। मध्यम और तेज़ पेजों को तस्वीर में बदलते हैं। यह उचित न हो तो बाँटें या लिंक भेजें। हस्ताक्षरित मूल सुरक्षित रखें।"
+        },
+        {
+          "q": "PDF को बराबर आकार के हिस्सों में कैसे बाँटें?",
+          "a": "आवश्यक हिस्सों की संख्या निकालकर कुल पेज उसी से बाँटें। फिर हर फ़ाइल का आकार देखें, क्योंकि छवियों वाले पेज अधिक जगह लेते हैं और हिस्से बिल्कुल बराबर नहीं होंगे।"
+        },
+        {
+          "q": "25 MB सीमा होने पर 24 MB PDF क्यों लौटती है?",
+          "a": "एन्कोडिंग भेजा गया आकार बढ़ा सकती है और कुछ सीमाओं में संदेश या पाने वाले की संस्था के नियम शामिल होते हैं। दोनों सिस्टम देखें और जगह छोड़ें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية تقسيم PDF لحد مرفقات البريد الإلكتروني",
+      "metaTitle": "قسّم PDF ليتناسب مع حد البريد الإلكتروني",
+      "metaDescription": "اضبط PDF وفق حد البريد. اضغطه أو قسّمه مجاناً في المتصفح بلا تسجيل أو علامة مائية.",
+      "keyword": "تقسيم PDF لحد مرفقات البريد",
+      "secondaryKeywords": [
+        "مرفق PDF كبير جداً",
+        "حد حجم مرفقات البريد",
+        "تقسيم مستند للبريد",
+        "إرسال PDF على أجزاء"
+      ],
+      "answer": "قبل إرسال PDF بالبريد، تحقق من الحد الفعلي لدى المرسل والمستلم. جرّب ضغط الملف أولاً؛ وإذا لم يكفِ، فقسّمه إلى أقسام منطقية واترك مساحة لترميز الرسالة. يتيح PrintxPDF تقسيم PDF في المتصفح مجاناً وبلا تسجيل أو علامة مائية، مع الحفاظ على الملف الأصلي.",
+      "ctaLabel": "قسّم PDF إلى أجزاء مناسبة للبريد",
+      "body": [
+        {
+          "t": "p",
+          "x": "قد يفرض مزوّد المرسل ومزوّد المستلم حدين مختلفين، ويُطبّق الأقل. وقد تملك حسابات العمل أو المدرسة قواعد خاصة من المسؤول. تحقق من صفحة المساعدة الحالية واترك مساحة لنص الرسالة. قد يزيد ترميز البريد حجم المرفق المرسل بنحو الثلث، لكن المزوّدين لا يعرّفون الحدود أو يطبقونها بالطريقة نفسها. لا يوجد حجم آمن واحد للجميع."
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من الحد قبل تقسيم الملف"
+        },
+        {
+          "t": "table",
+          "caption": "حدود منشورة؛ قد تختلف حسابات الشركات والمدارس.",
+          "head": [
+            "الخدمة",
+            "الحد المعتاد",
+            "البديل"
+          ],
+          "rows": [
+            [
+              "Gmail شخصي",
+              "25 MB إجمالي المرفقات",
+              "قد يستبدل المرفق الكبير برابط Drive."
+            ],
+            [
+              "Outlook.com",
+              "20 MB للرسالة",
+              "استخدم OneDrive أو خدمة معتمدة."
+            ],
+            [
+              "Microsoft 365 / Exchange",
+              "تحدده المؤسسة",
+              "اسأل المسؤول."
+            ],
+            [
+              "Yahoo Mail",
+              "25 MB للمرفقات",
+              "شارك رابطاً يمكن للمستلم فتحه."
+            ],
+            [
+              "iCloud Mail",
+              "20 MB؛ حتى 5 GB عبر Mail Drop",
+              "تنتهي روابط Mail Drop بعد 30 يوماً."
+            ],
+            [
+              "Proton Mail",
+              "25 MB للإرسال",
+              "استخدم Proton Drive أو خدمة أخرى."
+            ],
+            [
+              "بريد العمل أو المدرسة",
+              "يتغير حسب المؤسسة والمستلم",
+              "تحقق من الحدين."
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "اسأل المستلم إن كان نظامه يفرض حداً أقل. اترك هامشاً لنص الرسالة والترميز بدلاً من جعل الملف عند الحد المعلن تماماً."
+        },
+        {
+          "t": "h2",
+          "x": "اضغط الملف قبل تقسيمه"
+        },
+        {
+          "t": "p",
+          "x": "التقسيم حل بديل؛ أما الضغط فيحافظ عادةً على ملف واحد فلا يحتاج المستلم إلى إعادة تجميعه. جرّب [ضغط PDF](/tools/compress-pdf) على نسخة. يحافظ المستوى الخفيف على النص القابل للتحديد. يحول المتوسط والقوي الصفحات إلى صور؛ وقد يقل الحجم، لكن يفقد النص البحث والنسخ وقد تقل التفاصيل. افحص النتيجة قبل الإرسال."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تقسيم PDF لإرساله بالبريد"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احسب حجم كل جزء",
+              "x": "اختر حجماً أقل من الحد المؤكد واترك هامشاً للرسالة. اقسم حجم الملف على الهدف وقرّب العدد للأعلى لتقدير عدد الأجزاء."
+            },
+            {
+              "h": "حوّل الحجم إلى صفحات",
+              "x": "اقسم عدد الصفحات على عدد الأجزاء. ملف من 240 صفحة على 5 أجزاء يعني نحو 48 صفحة لكل جزء."
+            },
+            {
+              "h": "اختر فواصل منطقية",
+              "x": "اجعل الفواصل بين الفصول أو الأقسام لا وسط الجملة. استخدم [تقسيم الصفحات أو النطاقات](/blog/split/split-pdf-into-pages) لتحديد نطاقات مخصصة."
+            },
+            {
+              "h": "افحص الأجزاء وسمّها",
+              "x": "تحقق من حجم كل ملف، فالصفحات المصورة أثقل من النص. استخدم اسماً مثل Report_part1of4.pdf لتوضيح الترتيب."
+            },
+            {
+              "h": "أرسلها بالتسلسل",
+              "x": "اذكر في الرسالة الأولى عدد الأجزاء وطريقة إعادة جمعها إذا احتاج المستلم إلى الملف كاملاً."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "قسّم حسب عدد الصفحات أو نطاقات مخصصة وافحص كل جزء قبل التنزيل."
+        },
+        {
+          "t": "warn",
+          "x": "لا تضغط أجزاء المستند الموقع أو الرسمي كلّاً على حدة. قد تؤدي إعادة الترميز إلى إبطال التوقيعات أو الشهادات، وقد يخالف التقسيم تعليمات التسليم. احتفظ بالأصل الموقع وتحقق من المتطلبات."
+        },
+        {
+          "t": "h2",
+          "x": "متى يكون الرابط أفضل"
+        },
+        {
+          "t": "p",
+          "x": "إرسال أربع رسائل منفصلة مزعج للمستلم. إذا كان مسموحاً، فقد يكون الرابط أفضل: يمكن أن يقترح Gmail رابط Google Drive، ويتيح Outlook OneDrive، ويوفر iCloud Mail خدمة Mail Drop. تحقق من الأذونات وانتهاء الصلاحية وإمكانية وصول المستلم. استخدم للخدمات السرية ما توافق عليه مؤسستك فقط."
+        },
+        {
+          "t": "h2",
+          "x": "لماذا يكون PDF كبيراً"
+        },
+        {
+          "t": "p",
+          "x": "تحتوي الملفات الكبيرة غالباً على مسوحات بدقة 300 أو 600 نقطة في البوصة، أو صور عالية الدقة، أو عناصر تصميم محفوظة بدقة الطباعة. قد يساعد [ضغط PDF](/blog/compress/how-to-compress-a-pdf). وإذا كان الملف نصياً في الغالب فقد تراكمت فيه تعديلات قديمة؛ يمكن أن يقل حجمه بإعادة كتابة نسخة. للملفات الممسوحة، استخدم [OCR PDF](/tools/ocr-pdf) لتسهيل البحث وتحقق من النص المستخرج."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "ما الحد الأقصى لمرفقات Gmail؟",
+          "a": "يسمح Gmail الشخصي بإجمالي مرفقات يصل إلى 25 MB وقد يستبدل المرفقات الكبيرة برابط Google Drive. قد يكون الحد أقل في حسابات العمل أو لدى نظام المستلم."
+        },
+        {
+          "q": "ما حد مرفقات Outlook؟",
+          "a": "يذكر Outlook.com حداً قدره 20 MB للرسالة. تعتمد حدود Microsoft 365 وExchange على إعدادات المؤسسة. اسأل المسؤول أو استخدم رابط مشاركة معتمداً."
+        },
+        {
+          "q": "هل أضغط PDF كبيراً أم أقسمه؟",
+          "a": "جرّب الضغط الخفيف إذا أردت بقاء النص قابلاً للتحديد. يحول المتوسط والقوي الصفحات إلى صور. قسّم الملف أو شارك رابطاً إذا لم يناسبك ذلك. احتفظ بالأصول الموقعة."
+        },
+        {
+          "q": "كيف أقسم PDF إلى أجزاء متساوية الحجم؟",
+          "a": "قدّر عدد الأجزاء واقسم عدد الصفحات بينها، ثم افحص حجم كل ملف. تختلف الصفحات في حجمها، خصوصاً الصور، لذلك لن تكون الأجزاء متساوية تماماً."
+        },
+        {
+          "q": "لماذا يُرفض ملف 24 MB رغم أن الحد 25 MB؟",
+          "a": "قد يزيد الترميز الحجم المرسل، وقد تشمل بعض الحدود نص الرسالة أو قواعد مؤسسة المستلم. تحقق من النظامين واترك هامشاً."
+        }
+      ]
+    },
+    "bn": {
+      "title": "ইমেইল সংযুক্তির সীমার জন্য PDF কীভাবে ভাগ করবেন",
+      "metaTitle": "ইমেইল সীমার জন্য PDF ভাগ করুন",
+      "metaDescription": "ইমেইলের সীমা অনুযায়ী PDF ছোট করুন। ব্রাউজারে বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া সংকুচিত বা ভাগ করুন।",
+      "keyword": "ইমেইল সংযুক্তির সীমার জন্য PDF ভাগ",
+      "secondaryKeywords": [
+        "PDF সংযুক্তি খুব বড়",
+        "ইমেইল সংযুক্তির আকার সীমা",
+        "ইমেইলে পাঠাতে নথি ভাগ",
+        "PDF অংশে পাঠানো"
+      ],
+      "answer": "ইমেইলে PDF পাঠানোর আগে প্রেরক ও প্রাপকের প্রকৃত সীমা যাচাই করুন। আগে সংকুচিত করে দেখুন; না হলে নথিকে অর্থপূর্ণ পৃষ্ঠা-পর্বে ভাগ করুন এবং ইমেইল এনকোডিংয়ের জন্য জায়গা রাখুন। PrintxPDF ব্রাউজারে PDF ভাগ করে, বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া, এবং মূল ফাইল অক্ষত রাখে।",
+      "ctaLabel": "ইমেইলের জন্য PDF অংশে ভাগ করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "প্রেরক ও প্রাপকের ইমেইল সেবার সীমা আলাদা হতে পারে; কম সীমাটিই কার্যকর। অফিস বা স্কুলের অ্যাকাউন্টে প্রশাসকের নিয়মও থাকতে পারে। বর্তমান সহায়তা পৃষ্ঠা দেখুন এবং বার্তার জন্য জায়গা রাখুন। ইমেইল এনকোডিং পাঠানো আকারে প্রায় এক-তৃতীয়াংশ যোগ করতে পারে, তবে সেবাগুলো সীমা একইভাবে জানায় বা প্রয়োগ করে না। সবার জন্য এক নিরাপদ আকার নেই।"
+        },
+        {
+          "t": "h2",
+          "x": "ভাগ করার আগে ইমেইল সীমা যাচাই করুন"
+        },
+        {
+          "t": "table",
+          "caption": "প্রকাশিত সীমা; অফিস ও স্কুলের অ্যাকাউন্টে নিয়ম আলাদা হতে পারে।",
+          "head": [
+            "সেবা",
+            "সাধারণ সীমা",
+            "বিকল্প"
+          ],
+          "rows": [
+            [
+              "ব্যক্তিগত Gmail",
+              "মোট সংযুক্তি 25 MB",
+              "বড় ফাইলের বদলে Drive লিংক দিতে পারে।"
+            ],
+            [
+              "Outlook.com",
+              "বার্তা 20 MB",
+              "OneDrive বা অনুমোদিত সেবা ব্যবহার করুন।"
+            ],
+            [
+              "Microsoft 365 / Exchange",
+              "প্রতিষ্ঠান নির্ধারণ করে",
+              "প্রশাসকের সঙ্গে কথা বলুন।"
+            ],
+            [
+              "Yahoo Mail",
+              "সংযুক্তি 25 MB",
+              "প্রাপক খুলতে পারবেন এমন লিংক দিন।"
+            ],
+            [
+              "iCloud Mail",
+              "20 MB; Mail Drop-এ 5 GB",
+              "Mail Drop লিংক 30 দিন থাকে।"
+            ],
+            [
+              "Proton Mail",
+              "পাঠাতে 25 MB",
+              "Proton Drive বা অন্য সেবা নিন।"
+            ],
+            [
+              "অফিস বা স্কুলের মেইল",
+              "প্রতিষ্ঠান ও প্রাপক অনুযায়ী বদলায়",
+              "দুই পক্ষের সীমা জেনে নিন।"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "প্রাপকের সিস্টেমে সীমা কম কি না জিজ্ঞেস করুন। ফাইল ঘোষিত সর্বোচ্চ সীমায় ঠেসে না দিয়ে বার্তার লেখা ও এনকোডিংয়ের জন্য ফাঁকা রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ভাগ করার আগে PDF সংকুচিত করুন"
+        },
+        {
+          "t": "p",
+          "x": "ভাগ করা বিকল্প ব্যবস্থা; সংকোচন সাধারণত ভালো, কারণ প্রাপক একটিই ফাইল পান এবং জোড়া লাগাতে হয় না। কপিতে [PDF সংকুচিত করুন](/tools/compress-pdf) চেষ্টা করুন। হালকা বিকল্পে লেখা নির্বাচনযোগ্য থাকে। মাঝারি ও শক্তিশালী বিকল্প পৃষ্ঠাকে ছবিতে বদলে দেয়; আকার কমতে পারে, কিন্তু লেখা খোঁজা বা নির্বাচন করা যাবে না এবং বিস্তারিত কমতে পারে। পাঠানোর আগে ফল দেখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ইমেইলে পাঠাতে PDF কীভাবে ভাগ করবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "প্রতি অংশের আকার ঠিক করুন",
+              "x": "নিশ্চিত সীমার চেয়ে কম লক্ষ্য বেছে বার্তার জন্য জায়গা রাখুন। মোট আকারকে লক্ষ্যে ভাগ করে ওপরের পূর্ণ সংখ্যায় অংশের হিসাব করুন।"
+            },
+            {
+              "h": "পৃষ্ঠার সংখ্যা বের করুন",
+              "x": "মোট পৃষ্ঠা অংশসংখ্যা দিয়ে ভাগ করুন। 240 পৃষ্ঠাকে 5 ভাগে দিলে প্রতি অংশে প্রায় 48 পৃষ্ঠা হবে।"
+            },
+            {
+              "h": "যৌক্তিক জায়গায় কাটুন",
+              "x": "বাক্যের মাঝখানে নয়, অধ্যায় বা বিভাগের শেষে সীমা দিন। [পৃষ্ঠা বা নির্দিষ্ট রেঞ্জে ভাগ](/blog/split/split-pdf-into-pages) ব্যবহার করে সীমা ঠিক করুন।"
+            },
+            {
+              "h": "প্রতিটি অংশ পরীক্ষা ও নাম দিন",
+              "x": "প্রতি ফাইলের আকার আলাদা দেখুন, কারণ ছবির পৃষ্ঠা বেশি জায়গা নেয়। Report_part1of4.pdf-এর মতো নাম দিলে ক্রম বোঝা যায়।"
+            },
+            {
+              "h": "ক্রম ধরে পাঠান",
+              "x": "প্রথম বার্তায় মোট অংশের সংখ্যা বলুন এবং দরকার হলে কীভাবে আবার জোড়া লাগাতে হবে জানান।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "পৃষ্ঠা সংখ্যা বা কাস্টম রেঞ্জে ভাগ করুন এবং ডাউনলোডের আগে প্রতিটি অংশ যাচাই করুন।"
+        },
+        {
+          "t": "warn",
+          "x": "আনুষ্ঠানিকভাবে জমা দেওয়া স্বাক্ষরিত নথির প্রতিটি অংশ আলাদা সংকুচিত করবেন না। নতুন করে এনকোড করলে স্বাক্ষর বা সনদ বাতিল হতে পারে, আর ভাগ করা জমার নির্দেশ ভঙ্গ করতে পারে। মূল স্বাক্ষরিত ফাইল রাখুন ও নিয়ম যাচাই করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "কখন লিংক শেয়ার করা ভালো"
+        },
+        {
+          "t": "p",
+          "x": "চারটি আলাদা ইমেইল পাওয়ার জন্য অস্বস্তিকর। অনুমতি থাকলে লিংক ভালো হতে পারে: Gmail Drive লিংক দিতে পারে, Outlook-এ OneDrive আছে, iCloud Mail-এ Mail Drop রয়েছে। অনুমতি, মেয়াদ ও প্রাপকের প্রবেশাধিকার যাচাই করুন। গোপন ফাইলের ক্ষেত্রে প্রতিষ্ঠানের অনুমোদিত সেবাই ব্যবহার করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF ফাইল বড় হওয়ার কারণ"
+        },
+        {
+          "t": "p",
+          "x": "বড় PDF-এ প্রায়ই 300 বা 600 DPI স্ক্যান, উচ্চ রেজোলিউশনের ছবি বা প্রিন্ট আকারে সংরক্ষিত ডিজাইন থাকে। [PDF সংকুচিত করুন](/blog/compress/how-to-compress-a-pdf) সাহায্য করতে পারে। মূলত লেখা থাকা ফাইলে পুরোনো সম্পাদনা জমে আকার বাড়তে পারে; নতুন কপি লিখলে কমে যেতে পারে। স্ক্যান করা ফাইলে [PDF OCR](/tools/ocr-pdf) চালিয়ে অনুসন্ধানযোগ্য করুন এবং শনাক্ত লেখা যাচাই করুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Gmail-এর সংযুক্তির সর্বোচ্চ সীমা কত?",
+          "a": "ব্যক্তিগত Gmail-এ মোট সংযুক্তি 25 MB পর্যন্ত। বড় ফাইলের বদলে Google Drive লিংক দিতে পারে। অফিস/স্কুল অ্যাকাউন্ট ও প্রাপকের সিস্টেমে সীমা কম হতে পারে।"
+        },
+        {
+          "q": "Outlook-এর সংযুক্তির সীমা কত?",
+          "a": "Outlook.com প্রতি ইমেইলে 20 MB সীমা জানায়। Microsoft 365 ও Exchange-এর সীমা প্রতিষ্ঠানের সেটিংয়ের ওপর নির্ভর করে। প্রশাসকের সঙ্গে কথা বলুন বা অনুমোদিত লিংক ব্যবহার করুন।"
+        },
+        {
+          "q": "বড় PDF সংকুচিত করব, নাকি ভাগ করব?",
+          "a": "লেখা নির্বাচনযোগ্য রাখতে হালকা সংকোচন চেষ্টা করুন। মাঝারি ও শক্তিশালী পৃষ্ঠা ছবিতে বদলে দেয়। তা গ্রহণযোগ্য না হলে ভাগ করুন বা লিংক দিন। স্বাক্ষরিত মূল ফাইল রাখুন।"
+        },
+        {
+          "q": "PDF সমান আকারের অংশে কীভাবে ভাগ করব?",
+          "a": "কত অংশ দরকার হিসাব করে মোট পৃষ্ঠা দিয়ে ভাগ করুন। পরে প্রতিটি ফাইল দেখুন, কারণ ছবির পৃষ্ঠা বেশি জায়গা নেয় এবং অংশগুলোর আকার হুবহু সমান হবে না।"
+        },
+        {
+          "q": "25 MB সীমা থাকলেও 24 MB PDF ফেরত আসে কেন?",
+          "a": "এনকোডিং পাঠানো আকার বাড়াতে পারে, আর কোনো সীমায় বার্তার লেখা বা প্রাপকের প্রতিষ্ঠানের নিয়ম ধরা হয়। দুই সিস্টেম দেখুন এবং কিছু জায়গা রাখুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách chia PDF theo giới hạn tệp đính kèm email",
+      "metaTitle": "Chia PDF theo giới hạn email",
+      "metaDescription": "Đưa PDF về đúng giới hạn email. Nén hoặc chia miễn phí trong trình duyệt, không đăng ký, không dấu mờ.",
+      "keyword": "chia PDF theo giới hạn tệp đính kèm email",
+      "secondaryKeywords": [
+        "tệp PDF đính kèm quá lớn",
+        "giới hạn dung lượng email",
+        "chia tài liệu để gửi email",
+        "gửi PDF thành nhiều phần"
+      ],
+      "answer": "Trước khi gửi PDF qua email, hãy kiểm tra giới hạn thực tế của cả người gửi và người nhận. Thử nén trước; nếu vẫn quá lớn, chia tài liệu theo các phần hợp lý và chừa dung lượng cho mã hóa email. PrintxPDF chia PDF trong trình duyệt, miễn phí, không cần đăng ký hay có dấu mờ, đồng thời giữ nguyên tệp gốc.",
+      "ctaLabel": "Chia PDF thành phần để gửi email",
+      "body": [
+        {
+          "t": "p",
+          "x": "Nhà cung cấp email của người gửi và người nhận có thể đặt giới hạn khác nhau; giới hạn thấp hơn sẽ áp dụng. Tài khoản công ty hoặc trường học còn có thể có quy định của quản trị viên. Hãy xem hướng dẫn hiện tại và chừa chỗ cho nội dung thư. Mã hóa email có thể làm dung lượng truyền tăng khoảng một phần ba, nhưng mỗi nhà cung cấp tính giới hạn khác nhau. Không có một kích thước an toàn cho mọi nơi."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra giới hạn trước khi chia"
+        },
+        {
+          "t": "table",
+          "caption": "Giới hạn được công bố; tài khoản doanh nghiệp và trường học có thể khác.",
+          "head": [
+            "Dịch vụ",
+            "Giới hạn thường gặp",
+            "Phương án khác"
+          ],
+          "rows": [
+            [
+              "Gmail cá nhân",
+              "Tổng tệp đính kèm 25 MB",
+              "Có thể thay tệp quá lớn bằng liên kết Drive."
+            ],
+            [
+              "Outlook.com",
+              "20 MB mỗi thư",
+              "Dùng OneDrive hoặc dịch vụ được duyệt."
+            ],
+            [
+              "Microsoft 365 / Exchange",
+              "Do tổ chức đặt",
+              "Hỏi quản trị viên."
+            ],
+            [
+              "Yahoo Mail",
+              "25 MB tệp đính kèm",
+              "Chia sẻ liên kết người nhận mở được."
+            ],
+            [
+              "iCloud Mail",
+              "20 MB; Mail Drop tới 5 GB",
+              "Liên kết Mail Drop có hạn 30 ngày."
+            ],
+            [
+              "Proton Mail",
+              "25 MB gửi đi",
+              "Dùng Proton Drive hoặc dịch vụ khác."
+            ],
+            [
+              "Email công ty/trường học",
+              "Tùy tổ chức và người nhận",
+              "Xác nhận cả hai giới hạn."
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Hỏi người nhận xem hệ thống của họ có giới hạn thấp hơn không. Chừa dung lượng cho nội dung và mã hóa thư, đừng đặt tệp sát mức tối đa được công bố."
+        },
+        {
+          "t": "h2",
+          "x": "Thử nén trước khi chia PDF"
+        },
+        {
+          "t": "p",
+          "x": "Chia tệp là cách xử lý tạm; nén thường tiện hơn vì người nhận chỉ có một tệp và không phải ghép lại. Thử [Nén PDF](/tools/compress-pdf) trên bản sao. Mức Nhẹ giữ văn bản có thể chọn. Mức Vừa và Mạnh chuyển trang thành ảnh; có thể giảm dung lượng nhưng mất khả năng tìm kiếm, chọn chữ và có thể giảm chi tiết. Hãy kiểm tra kết quả trước khi gửi."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chia PDF để gửi qua email"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Tính dung lượng mỗi phần",
+              "x": "Chọn mục tiêu thấp hơn giới hạn đã xác nhận, chừa chỗ cho thư. Chia dung lượng tệp cho mục tiêu và làm tròn lên để ước tính số phần."
+            },
+            {
+              "h": "Quy đổi thành số trang",
+              "x": "Chia tổng số trang cho số phần. Tệp 240 trang chia thành 5 phần sẽ có khoảng 48 trang mỗi phần."
+            },
+            {
+              "h": "Cắt ở vị trí hợp lý",
+              "x": "Đặt ranh giới giữa chương hoặc mục, đừng cắt giữa câu. Dùng [Chia theo trang hoặc khoảng](/blog/split/split-pdf-into-pages) để đặt phạm vi tùy chỉnh."
+            },
+            {
+              "h": "Kiểm tra và đặt tên từng phần",
+              "x": "Kiểm tra dung lượng từng tệp vì trang có ảnh nặng hơn trang văn bản. Đặt tên như Bao_cao_phan1tren4.pdf để người nhận biết thứ tự."
+            },
+            {
+              "h": "Gửi theo thứ tự",
+              "x": "Trong email đầu tiên, nói rõ có bao nhiêu phần và cách ghép lại nếu người nhận cần tài liệu đầy đủ."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "Chia theo số trang hoặc khoảng tùy chỉnh và kiểm tra từng phần trước khi tải."
+        },
+        {
+          "t": "warn",
+          "x": "Đừng nén riêng từng phần của tài liệu đã ký hoặc nộp chính thức. Mã hóa lại có thể làm mất hiệu lực chữ ký hoặc chứng nhận, còn việc chia có thể trái hướng dẫn nộp. Giữ bản gốc đã ký và kiểm tra yêu cầu."
+        },
+        {
+          "t": "h2",
+          "x": "Khi nào nên chia sẻ liên kết"
+        },
+        {
+          "t": "p",
+          "x": "Gửi bốn email riêng gây bất tiện cho người nhận. Nếu được phép, liên kết thường tốt hơn: Gmail có thể đề xuất Google Drive, Outlook có OneDrive, còn iCloud Mail có Mail Drop. Kiểm tra quyền truy cập, ngày hết hạn và khả năng mở của người nhận. Với tài liệu mật, chỉ dùng dịch vụ được tổ chức chấp thuận."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao PDF có dung lượng lớn"
+        },
+        {
+          "t": "p",
+          "x": "PDF lớn thường chứa bản quét 300 hoặc 600 DPI, ảnh độ phân giải cao hoặc tài nguyên thiết kế lưu ở chất lượng in. [Nén PDF](/blog/compress/how-to-compress-a-pdf) có thể giúp. Tệp chủ yếu là văn bản nhưng quá lớn có thể tích lũy lịch sử chỉnh sửa; ghi lại một bản mới có thể giảm dung lượng. Nếu tệp từ máy scan, chạy [OCR PDF](/tools/ocr-pdf) để tìm kiếm được rồi xác minh chữ đã nhận dạng."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Gmail giới hạn tệp đính kèm tối đa bao nhiêu?",
+          "a": "Gmail cá nhân cho phép tổng tệp đính kèm tối đa 25 MB và có thể thay tệp lớn bằng liên kết Google Drive. Tài khoản công ty/trường học hoặc hệ thống người nhận có thể đặt mức thấp hơn."
+        },
+        {
+          "q": "Outlook giới hạn tệp đính kèm bao nhiêu?",
+          "a": "Outlook.com công bố giới hạn 20 MB mỗi email. Microsoft 365 và Exchange phụ thuộc cài đặt tổ chức. Hãy hỏi quản trị viên hoặc dùng liên kết được duyệt."
+        },
+        {
+          "q": "Nên nén hay chia một PDF lớn?",
+          "a": "Thử mức Nén nhẹ nếu cần giữ văn bản có thể chọn. Mức Vừa và Mạnh chuyển trang thành ảnh. Nếu không chấp nhận được, hãy chia tệp hoặc gửi liên kết. Giữ bản gốc đã ký."
+        },
+        {
+          "q": "Làm sao chia PDF thành các phần có dung lượng bằng nhau?",
+          "a": "Ước tính số phần rồi chia số trang cho số đó. Sau đó kiểm tra từng tệp vì trang có ảnh chiếm nhiều dung lượng hơn nên các phần không thể bằng hệt nhau."
+        },
+        {
+          "q": "Vì sao PDF 24 MB vẫn bị trả lại dù giới hạn là 25 MB?",
+          "a": "Mã hóa có thể làm dung lượng truyền tăng, một số giới hạn tính cả nội dung thư hoặc quy định bên nhận. Kiểm tra cả hai hệ thống và chừa dung lượng."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何根据邮件附件限制拆分 PDF",
+      "metaTitle": "按邮件大小限制拆分 PDF",
+      "metaDescription": "根据邮件附件限制压缩或拆分 PDF。免费、无需注册、无水印，在浏览器中私密处理。 免费使用，无需注册。",
+      "keyword": "按邮件附件限制拆分 PDF",
+      "secondaryKeywords": [
+        "PDF 附件太大",
+        "邮件附件大小限制",
+        "拆分文档以便邮件发送",
+        "分段发送 PDF"
+      ],
+      "answer": "通过邮件发送 PDF 前，先确认发件人和收件人的实际限制。先尝试压缩；如果仍然太大，再按章节拆分，并为邮件编码预留空间。PrintxPDF 可在浏览器中拆分 PDF，免费、无需注册、无水印，并保留原始文件。",
+      "ctaLabel": "将 PDF 拆分后通过邮件发送",
+      "body": [
+        {
+          "t": "p",
+          "x": "发件人和收件人的邮件服务可能有不同限制，较低的那个才是实际限制。工作或学校账号也可能受管理员规则约束。请查看服务商当前说明，并为邮件正文留出空间。邮件编码可能让传输体积增加约三分之一，但不同服务商对限制的定义和执行方式并不相同。因此没有适用于所有邮箱的统一安全文件大小。"
+        },
+        {
+          "t": "h2",
+          "x": "拆分前确认邮件大小限制"
+        },
+        {
+          "t": "table",
+          "caption": "服务商公布的常见限制；企业和学校账号可能有自定义规则。",
+          "head": [
+            "服务",
+            "常见限制",
+            "超出时的选择"
+          ],
+          "rows": [
+            [
+              "个人 Gmail",
+              "附件总计 25 MB",
+              "可能改为 Google Drive 链接。"
+            ],
+            [
+              "Outlook.com",
+              "每封邮件 20 MB",
+              "使用 OneDrive 或获批的分享服务。"
+            ],
+            [
+              "Microsoft 365 / Exchange",
+              "由组织设定",
+              "咨询管理员。"
+            ],
+            [
+              "Yahoo Mail",
+              "附件总计 25 MB",
+              "分享收件人可访问的链接。"
+            ],
+            [
+              "iCloud Mail",
+              "20 MB；Mail Drop 可达 5 GB",
+              "Mail Drop 链接最长保留 30 天。"
+            ],
+            [
+              "Proton Mail",
+              "外发附件 25 MB",
+              "使用 Proton Drive 或其他服务。"
+            ],
+            [
+              "工作或学校邮箱",
+              "因组织与收件人而异",
+              "确认双方限制。"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "询问收件人系统是否有更低限制。不要让附件正好达到公布上限，应为正文和编码预留空间。"
+        },
+        {
+          "t": "h2",
+          "x": "拆分前先尝试压缩"
+        },
+        {
+          "t": "p",
+          "x": "拆分是权宜办法；压缩通常更省事，因为收件人只收到一个文件，无需重新合并。先用[压缩 PDF](/tools/compress-pdf)处理副本。轻度压缩保留可选择文本。中度和强力压缩会把页面转为图像，可能减小体积，但文本不再可搜索或选择，细节也可能下降。发送前检查输出。"
+        },
+        {
+          "t": "h2",
+          "x": "如何拆分 PDF 以便通过邮件发送"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "计算每部分的目标大小",
+              "x": "选择低于已确认上限的目标，并给邮件正文留空间。用文件大小除以目标值，再向上取整估算份数。"
+            },
+            {
+              "h": "换算为页数",
+              "x": "将总页数除以份数。例如，240 页拆为 5 份，每份约 48 页。"
+            },
+            {
+              "h": "选择合适的拆分位置",
+              "x": "尽量在章节或小节之间拆分，不要截断句子。使用[按页面或范围拆分](/blog/split/split-pdf-into-pages)设置自定义范围。"
+            },
+            {
+              "h": "检查并命名每一部分",
+              "x": "逐个检查文件大小，因为图像页通常比文字页更大。使用“报告_第1部分共4部分.pdf”这类名称标明顺序。"
+            },
+            {
+              "h": "按顺序发送",
+              "x": "在第一封邮件中说明共有几部分；如果收件人需要完整文件，也说明如何重新合并。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "split-pdf",
+          "x": "按页数或自定义范围拆分，并在下载前检查每个部分。"
+        },
+        {
+          "t": "warn",
+          "x": "不要分别压缩已签署或正式提交文档的各个部分。重新编码可能使签名或认证失效，拆分也可能违反提交要求。请保留签名原件并核对收件方规则。"
+        },
+        {
+          "t": "h2",
+          "x": "什么时候分享链接更合适"
+        },
+        {
+          "t": "p",
+          "x": "分四封邮件发送会给收件人带来不便。如果允许，分享链接通常更好：Gmail 可能提供 Google Drive，Outlook 可使用 OneDrive，iCloud Mail 提供 Mail Drop。发送前检查权限、有效期以及收件人能否访问。机密文件只使用组织批准的服务。"
+        },
+        {
+          "t": "h2",
+          "x": "PDF 文件为什么会很大"
+        },
+        {
+          "t": "p",
+          "x": "大 PDF 常见原因包括 300 或 600 DPI 扫描、高分辨率照片，或按印刷尺寸嵌入的设计素材。[压缩 PDF](/blog/compress/how-to-compress-a-pdf)可能有帮助。如果主要是文字却仍很大，文件可能累积了多次增量修改；重写一份副本有时可减小体积。扫描文件还可运行[PDF OCR](/tools/ocr-pdf)以便搜索，并核对识别文字。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Gmail 附件最大限制是多少？",
+          "a": "个人 Gmail 的附件总量上限为 25 MB，超大附件可能被替换为 Google Drive 链接。工作或学校账号以及收件人系统可能设置更低限制。"
+        },
+        {
+          "q": "Outlook 附件大小限制是多少？",
+          "a": "Outlook.com 公布的单封邮件限制为 20 MB。Microsoft 365 和 Exchange 的限制由组织设置决定。请询问管理员或使用获批的分享链接。"
+        },
+        {
+          "q": "大 PDF 应该压缩还是拆分？",
+          "a": "如果需要保留可选择文本，先试轻度压缩。中度和强力会把页面转成图像。如果无法接受这种变化，再拆分文件或分享链接。请保留已签名原件。"
+        },
+        {
+          "q": "如何将 PDF 拆成大小相同的部分？",
+          "a": "先估算所需份数，再用总页数除以份数。随后逐个检查文件，因为图像页体积更大，因此拆分后的文件大小通常不会完全相等。"
+        },
+        {
+          "q": "为什么 24 MB 的 PDF 会被 25 MB 限制退回？",
+          "a": "编码可能增加传输体积，有些限制还包含邮件正文或收件方组织规则。请检查双方系统并预留空间。"
+        }
+      ]
+    }
+  }
+}
