@@ -1,0 +1,1442 @@
+{
+  "topic": "ebook-formats-explained",
+  "sourceCluster": "ebooks",
+  "tool": "ebook-converter",
+  "languages": {
+    "es": {
+      "topic": "ebook-formats-explained",
+      "slug": "ebook-formats-explained",
+      "title": "Formatos de ebook: EPUB, MOBI, AZW3, PDF y texto",
+      "metaTitle": "Formatos de ebook: EPUB, MOBI, AZW3, PDF y texto",
+      "metaDescription": "Compara EPUB, MOBI, AZW3, PDF y texto. Descubre qué lectores los abren, cómo cambia el diseño y qué formato conviene conservar.",
+      "keyword": "formatos de ebook explicados",
+      "secondaryKeywords": [
+        "formatos de ebook explicados",
+        "EPUB frente a PDF",
+        "mejor formato de ebook"
+      ],
+      "answer": "EPUB es un estándar abierto y suele ser el mejor formato maestro para conservar un ebook. MOBI es un formato Kindle retirado; AZW3 lo reemplazó. PDF guarda páginas fijas y el texto plano solo guarda palabras. Conserva EPUB sin DRM y crea PDF cuando el diseño impreso importa.",
+      "tool": "ebook-converter",
+      "ctaLabel": "Compara y convierte formatos de ebook compatibles.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Cada formato responde a una pregunta: ¿cómo guarda un libro para que un dispositivo lo muestre? Los refluibles guardan palabras y estilos, y la aplicación decide dónde romper las líneas. Los formatos de página fija guardan la página terminada. Esa diferencia determina qué lectores abren cada archivo, cómo se imprime y si se pueden citar páginas estables."
+        },
+        {
+          "t": "h2",
+          "x": "Los cinco formatos de ebook comparados"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Formato",
+            "Qué contiene",
+            "Diseño",
+            "Dónde se abre",
+            "Cuándo guardarlo"
+          ],
+          "rows": [
+            [
+              "EPUB (.epub)",
+              "Archivo ZIP con capítulos XHTML, estilos, imágenes e índice",
+              "Refluible, salvo diseño fijo del editor",
+              "Apple Books, Kobo, Google Play Books, Calibre y casi todos los lectores; Kindle mediante Send to Kindle",
+              "Como copia maestra compatible con muchos dispositivos"
+            ],
+            [
+              "MOBI (.mobi, .prc)",
+              "HTML comprimido en un contenedor Palm, creado en 2000",
+              "Refluible, con pocos estilos",
+              "Kindle antiguos y Calibre; Send to Kindle dejó de aceptarlo en 2022",
+              "Solo si no hay una copia mejor; conviene migrarlo"
+            ],
+            [
+              "AZW3 (.azw3, KF8)",
+              "Formato Kindle de Amazon de 2011 con estilos completos",
+              "Refluible",
+              "Kindle y Calibre",
+              "Si lees en Kindle y el archivo no tiene DRM"
+            ],
+            [
+              "PDF (.pdf)",
+              "Páginas fijas numeradas",
+              "Siempre fijo",
+              "Ordenadores, móviles y navegadores",
+              "Cuando el diseño importa: partituras, manuales o formularios"
+            ],
+            [
+              "Texto (.txt)",
+              "Solo palabras, sin formato ni estructura",
+              "Lo decide la aplicación",
+              "Prácticamente cualquier dispositivo",
+              "Como copia de respaldo legible y duradera"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "También puedes encontrar .azw, normalmente MOBI con protección de Amazon; .kfx, el formato Kindle actual no documentado públicamente; y .acsm, que suele ser un archivo XML pequeño que una aplicación usa para obtener el libro. No siempre son libros descargados completos."
+        },
+        {
+          "t": "h2",
+          "x": "Refluible o fijo: la diferencia práctica"
+        },
+        {
+          "t": "p",
+          "x": "En un libro refluible, subir el tamaño de 14 a 20 puntos cambia las líneas y la cantidad de pantallas, aunque el archivo siga igual. Por eso EPUB y MOBI no tienen números de página universales. En PDF, la página 214 sigue siendo la 214 en un móvil, una pantalla y una hoja impresa."
+        },
+        {
+          "t": "h2",
+          "x": "Qué formato abre cada dispositivo"
+        },
+        {
+          "t": "p",
+          "x": "Kindle acepta EPUB mediante Send to Kindle, que lo convierte al formato de Amazon al recibirlo. Kobo lee EPUB de forma nativa; PDF puede ser incómodo en su pantalla pequeña. Apple Books abre EPUB y PDF, pero no MOBI ni AZW3. En un teléfono, una app lee EPUB y el visor integrado suele abrir PDF. Para imprimir, crea primero un PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Qué formato conservar a largo plazo"
+        },
+        {
+          "t": "p",
+          "x": "Conserva EPUB sin DRM como copia maestra. Su especificación es abierta y el archivo contiene capítulos XHTML que puedes extraer como ZIP y leer en un navegador. AZW3 y KFX dependen de formatos de Amazon; MOBI está retirado. PDF es duradero como formato ISO 32000, y PDF/A resulta útil para archivar diseños que deben conservar fuentes. Para respaldo extremo, guarda también texto plano; pierde estilos e imágenes, pero casi cualquier editor puede abrirlo."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Guarda EPUB sin DRM como copia maestra.",
+            "Conserva PDF si el diseño importa para imprimir o consultar.",
+            "Añade un TXT para guardar solo las palabras importantes.",
+            "Guarda copias con nombres claros en una carpeta respaldada."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Conversiones útiles y límites"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Conversión",
+            "Resultado habitual"
+          ],
+          "rows": [
+            [
+              "EPUB → PDF",
+              "Bueno al elegir tamaño"
+            ],
+            [
+              "MOBI → PDF",
+              "Texto correcto; imágenes suaves, tablas variables"
+            ],
+            [
+              "MOBI/AZW3 → EPUB",
+              "Útil para migrar archivos antiguos"
+            ],
+            [
+              "EPUB → TXT",
+              "Conserva palabras, elimina el resto"
+            ],
+            [
+              "PDF → EPUB",
+              "Difícil; hay que adivinar estructura"
+            ],
+            [
+              "Con DRM",
+              "No se convierte"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "El [Convertidor de ebooks](/tools/ebook-converter) usa procesamiento en servidor: el sitio lo indica antes de comenzar, transmite el archivo mediante una conexión segura y lo elimina al finalizar. El límite por archivo y las cuotas aparecen en la herramienta y en [precios](/pricing). Para leer un PDF, [Lector de PDF](/tools/pdf-reader) funciona dentro de la pestaña y no sube el archivo."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo elegir un formato de ebook"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Decide cómo usarás el libro",
+              "x": "Elige EPUB para leer con texto ajustable, PDF para imprimir o citar páginas y TXT como respaldo sencillo."
+            },
+            {
+              "h": "Comprueba protección y derechos",
+              "x": "Usa únicamente archivos que tengas derecho a convertir. Los ebooks con DRM no se convierten con estas herramientas."
+            },
+            {
+              "h": "Elige el convertidor adecuado",
+              "x": "Usa [Convertidor de ebooks](/tools/ebook-converter) para formatos compatibles sin DRM o [EPUB a PDF](/tools/epub-to-pdf) para crear páginas fijas."
+            },
+            {
+              "h": "Revisa el resultado en el dispositivo",
+              "x": "Comprueba capítulos, imágenes, fuentes y orden de lectura. Conserva el original por separado."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "ebook-converter",
+          "x": "Compara y convierte formatos de ebook compatibles."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Qué formato de ebook conviene conservar?",
+          "a": "EPUB sin DRM suele ser la mejor copia maestra: es un estándar abierto y muchas aplicaciones lo leen. Conserva también un PDF cuando el diseño de página importe y un TXT para un respaldo mínimo."
+        },
+        {
+          "q": "¿Cuál es la diferencia entre EPUB y PDF?",
+          "a": "EPUB reajusta las líneas según el tamaño de letra y la pantalla, así que no tiene páginas fijas. PDF conserva páginas terminadas. EPUB es flexible para leer; PDF resulta más previsible para imprimir y citar."
+        },
+        {
+          "q": "¿Kindle puede leer EPUB?",
+          "a": "Sí, mediante Send to Kindle. El servicio recibe EPUB y lo convierte al formato de Amazon. Los Kindle antiguos aceptaban MOBI, pero ese flujo dejó de estar disponible en 2022."
+        },
+        {
+          "q": "¿Qué es un archivo AZW3?",
+          "a": "AZW3, también llamado KF8, es el formato que Amazon introdujo para reemplazar MOBI. Admite hojas de estilo, fuentes y tablas con más capacidad; se abre en Kindle y Calibre cuando no tiene DRM."
+        },
+        {
+          "q": "¿Por qué PDF a EPUB suele salir mal?",
+          "a": "PDF guarda páginas y posiciones, no la estructura de capítulos. El convertidor debe adivinar qué texto es título, cuerpo o encabezado. El resultado puede funcionar en documentos simples y fallar en escaneos o diseños de varias columnas."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "pt-BR": {
+      "topic": "ebook-formats-explained",
+      "slug": "ebook-formats-explained",
+      "title": "Formatos de ebook: EPUB, MOBI, AZW3, PDF e texto",
+      "metaTitle": "Formatos de ebook: EPUB, MOBI, AZW3, PDF e texto",
+      "metaDescription": "Compare EPUB, MOBI, AZW3, PDF e texto simples. Veja quais leitores abrem cada formato e qual vale guardar por mais tempo.",
+      "keyword": "formatos de ebook explicados",
+      "secondaryKeywords": [
+        "formatos de ebook explicados",
+        "EPUB ou PDF",
+        "melhor formato de ebook"
+      ],
+      "answer": "EPUB é um padrão aberto e costuma ser o melhor formato principal para guardar um ebook. MOBI é um formato Kindle descontinuado; AZW3 o substituiu. PDF guarda páginas fixas, enquanto texto simples guarda apenas palavras. Guarde EPUB sem DRM e gere PDF quando o layout impresso importar.",
+      "tool": "ebook-converter",
+      "ctaLabel": "Compare e converta formatos de ebook compatíveis.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Cada formato responde a uma pergunta: como guardar um livro para que um dispositivo o exiba? Formatos refluíveis guardam palavras e estilos, e o app decide onde quebrar as linhas. Formatos de página fixa guardam a página pronta. Essa diferença define quais leitores abrem o arquivo, como imprimir e se há páginas estáveis para citar."
+        },
+        {
+          "t": "h2",
+          "x": "Os cinco formatos de ebook lado a lado"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Formato",
+            "O que contém",
+            "Layout",
+            "Onde abre",
+            "Quando guardar"
+          ],
+          "rows": [
+            [
+              "EPUB (.epub)",
+              "Arquivo ZIP com capítulos XHTML, estilos, imagens e índice",
+              "Refluível, exceto se o editor fixou o layout",
+              "Apple Books, Kobo, Google Play Books, Calibre e quase todos os leitores; Kindle via Send to Kindle",
+              "Como arquivo principal compatível com vários aparelhos"
+            ],
+            [
+              "MOBI (.mobi, .prc)",
+              "HTML compactado dentro de um contêiner Palm, criado em 2000",
+              "Refluível, com poucos estilos",
+              "Kindles antigos e Calibre; Send to Kindle parou de aceitar em 2022",
+              "Só se não houver cópia melhor; migre quando puder"
+            ],
+            [
+              "AZW3 (.azw3, KF8)",
+              "Formato Kindle da Amazon de 2011, com suporte a estilos",
+              "Refluível",
+              "Kindle e Calibre",
+              "Se você lê no Kindle e o arquivo não tem DRM"
+            ],
+            [
+              "PDF (.pdf)",
+              "Páginas numeradas e fixas",
+              "Sempre fixo",
+              "Computadores, celulares e navegadores",
+              "Quando o layout importa: partituras, manuais e formulários"
+            ],
+            [
+              "Texto (.txt)",
+              "Somente palavras, sem estilo ou estrutura",
+              "Definido pelo app",
+              "Praticamente qualquer dispositivo",
+              "Como backup simples e durável"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Você também pode encontrar .azw, geralmente um MOBI com proteção da Amazon; .kfx, o formato Kindle atual sem documentação pública; e .acsm, normalmente um pequeno arquivo XML usado pelo app para buscar o livro real. Nem todos são o livro completo baixado."
+        },
+        {
+          "t": "h2",
+          "x": "Refluível ou fixo: a diferença prática"
+        },
+        {
+          "t": "p",
+          "x": "Em um livro refluível, aumentar a fonte de 14 para 20 pontos muda as quebras e o número de telas, mesmo sem alterar o arquivo. Por isso EPUB e MOBI não têm números de página universais. No PDF, a página 214 continua sendo a 214 no celular, na tela e no papel."
+        },
+        {
+          "t": "h2",
+          "x": "Qual formato abre em cada aparelho"
+        },
+        {
+          "t": "p",
+          "x": "Kindle aceita EPUB pelo Send to Kindle e converte para o próprio formato ao receber. Kobo lê EPUB nativamente; PDF pode ser ruim em tela pequena. Apple Books abre EPUB e PDF, mas não MOBI nem AZW3. No celular, um app lê EPUB e o visualizador integrado abre PDF. Para imprimir, crie um PDF antes."
+        },
+        {
+          "t": "h2",
+          "x": "Qual formato guardar por mais tempo"
+        },
+        {
+          "t": "p",
+          "x": "Guarde EPUB sem DRM como arquivo principal. A especificação é aberta e o arquivo contém capítulos XHTML que você pode extrair como ZIP e abrir no navegador. AZW3 e KFX dependem dos formatos da Amazon; MOBI foi descontinuado. PDF é durável como padrão ISO 32000, e PDF/A é útil para arquivar layouts com fontes incorporadas. Para um backup extremo, guarde também TXT: perde estilos e imagens, mas quase todo editor abre."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Guarde EPUB sem DRM como arquivo principal.",
+            "Mantenha PDF se o layout importar para imprimir ou consultar.",
+            "Inclua TXT para preservar apenas as palavras importantes.",
+            "Salve cópias com nomes claros em uma pasta com backup."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Conversões úteis e limites"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Conversão",
+            "Resultado comum"
+          ],
+          "rows": [
+            [
+              "EPUB → PDF",
+              "Bom se escolher o tamanho"
+            ],
+            [
+              "MOBI → PDF",
+              "Texto bom; imagens suaves, tabelas incertas"
+            ],
+            [
+              "MOBI/AZW3 → EPUB",
+              "Útil para migrar arquivos antigos"
+            ],
+            [
+              "EPUB → TXT",
+              "Mantém palavras e remove o resto"
+            ],
+            [
+              "PDF → EPUB",
+              "Difícil; precisa adivinhar a estrutura"
+            ],
+            [
+              "Com DRM",
+              "Não converte"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "O [Conversor de ebooks](/tools/ebook-converter) usa processamento no servidor: a página avisa antes, transmite o arquivo por conexão segura e o apaga ao terminar. Limite por arquivo e cotas aparecem na ferramenta e em [preços](/pricing). Para ler um PDF, o [Leitor de PDF](/tools/pdf-reader) funciona na aba sem enviar o arquivo."
+        },
+        {
+          "t": "h2",
+          "x": "Como escolher um formato de ebook"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Defina como vai usar o livro",
+              "x": "Escolha EPUB para leitura com fonte ajustável, PDF para imprimir ou citar páginas e TXT como backup simples."
+            },
+            {
+              "h": "Confira proteção e direitos",
+              "x": "Use apenas arquivos que você tem direito de converter. Ebooks com DRM não podem ser convertidos por essas ferramentas."
+            },
+            {
+              "h": "Escolha o conversor certo",
+              "x": "Use [Conversor de ebooks](/tools/ebook-converter) para formatos compatíveis sem DRM ou [EPUB para PDF](/tools/epub-to-pdf) para criar páginas fixas."
+            },
+            {
+              "h": "Confira o resultado no aparelho",
+              "x": "Revise capítulos, imagens, fontes e ordem de leitura. Mantenha o original separado."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "ebook-converter",
+          "x": "Compare e converta formatos de ebook compatíveis."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Qual formato de ebook devo guardar?",
+          "a": "EPUB sem DRM costuma ser o melhor arquivo principal: é um padrão aberto e muitos apps o leem. Guarde PDF também quando o layout importa e TXT para um backup mínimo."
+        },
+        {
+          "q": "Qual a diferença entre EPUB e PDF?",
+          "a": "EPUB reorganiza linhas conforme fonte e tela e não tem páginas fixas. PDF guarda páginas prontas. EPUB é flexível para leitura; PDF é previsível para imprimir e citar."
+        },
+        {
+          "q": "Kindle lê EPUB?",
+          "a": "Sim, pelo Send to Kindle. O serviço recebe EPUB e o converte ao formato Amazon. Kindles antigos aceitavam MOBI, mas esse fluxo parou em 2022."
+        },
+        {
+          "q": "O que é arquivo AZW3?",
+          "a": "AZW3, também chamado KF8, é o formato que a Amazon lançou para substituir MOBI. Suporta melhor estilos, fontes e tabelas; abre no Kindle e Calibre quando não tem DRM."
+        },
+        {
+          "q": "Por que PDF para EPUB costuma ficar ruim?",
+          "a": "PDF guarda páginas e posições, não capítulos. O conversor precisa adivinhar título, corpo e cabeçalho. Pode funcionar em documentos simples e falhar em digitalizações ou colunas."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "hi": {
+      "topic": "ebook-formats-explained",
+      "slug": "ebook-formats-explained",
+      "title": "Ebook फ़ॉर्मैट: EPUB, MOBI, AZW3, PDF और टेक्स्ट",
+      "metaTitle": "Ebook फ़ॉर्मैट: EPUB, MOBI, AZW3, PDF और टेक्स्ट",
+      "metaDescription": "EPUB, MOBI, AZW3, PDF और plain text की तुलना करें। जानें कौन सा रीडर इन्हें खोलता है और लंबे समय के लिए क्या रखें।",
+      "keyword": "ebook फ़ॉर्मैट की जानकारी",
+      "secondaryKeywords": [
+        "ebook फ़ॉर्मैट की जानकारी",
+        "EPUB बनाम PDF",
+        "सबसे अच्छा ebook फ़ॉर्मैट"
+      ],
+      "answer": "EPUB खुला मानक है और आम तौर पर ebook की मुख्य प्रति के लिए सबसे अच्छा है। MOBI पुराना Kindle फ़ॉर्मैट है; AZW3 ने उसकी जगह ली। PDF स्थिर पेज रखता है, जबकि plain text केवल शब्द रखता है। DRM-मुक्त EPUB रखें और प्रिंट लेआउट जरूरी हो तो PDF बनाएँ।",
+      "tool": "ebook-converter",
+      "ctaLabel": "समर्थित ebook फ़ॉर्मैट की तुलना करें और बदलें।",
+      "body": [
+        {
+          "t": "p",
+          "x": "हर ebook फ़ॉर्मैट एक सवाल का जवाब देता है: किताब को डिवाइस पर दिखाने के लिए कैसे सहेजें? रीफ़्लो होने वाले फ़ॉर्मैट शब्द और स्टाइल रखते हैं, और ऐप लाइन-ब्रेक तय करता है। स्थिर फ़ॉर्मैट तैयार पेज रखते हैं। यही अंतर बताता है कि कौन सा रीडर फ़ाइल खोलता है, प्रिंट कैसा होगा और स्थिर पेज उद्धृत किए जा सकते हैं या नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "पाँच ebook फ़ॉर्मैट की तुलना"
+        },
+        {
+          "t": "table",
+          "head": [
+            "फ़ॉर्मैट",
+            "इसमें क्या है",
+            "लेआउट",
+            "कहाँ खुलता है",
+            "कब रखें"
+          ],
+          "rows": [
+            [
+              "EPUB (.epub)",
+              "XHTML अध्याय, स्टाइल, चित्र और इंडेक्स वाली ZIP फ़ाइल",
+              "रीफ़्लो; प्रकाशक चाहे तो स्थिर",
+              "Apple Books, Kobo, Google Play Books, Calibre और अधिकतर रीडर; Kindle में Send to Kindle से",
+              "अलग-अलग डिवाइसों के लिए मुख्य कॉपी"
+            ],
+            [
+              "MOBI (.mobi, .prc)",
+              "2000 का Palm कंटेनर जिसमें संकुचित HTML है",
+              "रीफ़्लो, स्टाइल कम",
+              "पुराने Kindle और Calibre; Send to Kindle ने 2022 में समर्थन बंद किया",
+              "बेहतर कॉपी न हो तो ही; बाद में बदलें"
+            ],
+            [
+              "AZW3 (.azw3, KF8)",
+              "Amazon का 2011 Kindle फ़ॉर्मैट, स्टाइल समर्थन के साथ",
+              "रीफ़्लो",
+              "Kindle और Calibre",
+              "Kindle पर पढ़ते हों और DRM न हो"
+            ],
+            [
+              "PDF (.pdf)",
+              "क्रमांकित स्थिर पेज",
+              "हमेशा स्थिर",
+              "कंप्यूटर, फोन और ब्राउज़र",
+              "जब लेआउट मायने रखता हो: संगीत, मैनुअल, फ़ॉर्म"
+            ],
+            [
+              "टेक्स्ट (.txt)",
+              "केवल शब्द, बिना फ़ॉर्मैट या संरचना",
+              "ऐप तय करता है",
+              "लगभग हर डिवाइस",
+              "सरल और टिकाऊ बैकअप"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "आपको .azw भी दिख सकता है, जो Amazon सुरक्षा वाला MOBI हो सकता है; .kfx वर्तमान Kindle फ़ॉर्मैट है जो सार्वजनिक रूप से दस्तावेज़ीकृत नहीं; और .acsm आमतौर पर छोटा XML होता है जिसे रीडिंग ऐप असली किताब डाउनलोड करने के लिए इस्तेमाल करता है। ये हमेशा पूरी डाउनलोड की गई किताबें नहीं हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "रीफ़्लो या स्थिर पेज: व्यावहारिक अंतर"
+        },
+        {
+          "t": "p",
+          "x": "रीफ़्लो होने वाली किताब में फ़ॉन्ट 14 से 20 पॉइंट करने पर लाइनें और स्क्रीन संख्या बदल जाती है, जबकि फ़ाइल नहीं बदलती। इसलिए EPUB और MOBI के सार्वभौमिक पेज नंबर नहीं होते। PDF में पेज 214 फोन, स्क्रीन और कागज़ पर भी वही रहता है।"
+        },
+        {
+          "t": "h2",
+          "x": "कौन सा फ़ॉर्मैट किस डिवाइस पर खुलता है"
+        },
+        {
+          "t": "p",
+          "x": "Kindle, Send to Kindle के माध्यम से EPUB लेता है और उसे Amazon फ़ॉर्मैट में बदलता है। Kobo EPUB सीधे पढ़ता है; छोटी स्क्रीन पर PDF असुविधाजनक हो सकता है। Apple Books EPUB और PDF खोलता है, MOBI या AZW3 नहीं। फोन पर ऐप EPUB खोलता है और PDF आम तौर पर अंतर्निहित व्यूअर में खुलता है। प्रिंट के लिए पहले PDF बनाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "लंबे समय तक कौन सा फ़ॉर्मैट रखें"
+        },
+        {
+          "t": "p",
+          "x": "DRM-मुक्त EPUB को मुख्य प्रति रखें। इसका मानक खुला है और ZIP के रूप में अध्याय XHTML निकालकर ब्राउज़र में पढ़े जा सकते हैं। AZW3 और KFX Amazon पर निर्भर हैं; MOBI बंद हो चुका है। PDF ISO 32000 मानक है और PDF/A फ़ॉन्ट सहित लेआउट संग्रहित कर सकता है। अतिरिक्त बैकअप के लिए TXT भी रखें: स्टाइल और चित्र नहीं बचते, पर लगभग हर टेक्स्ट एडिटर इसे खोलता है।"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "DRM-मुक्त EPUB को मुख्य कॉपी रखें।",
+            "प्रिंट या संदर्भ के लिए लेआउट जरूरी हो तो PDF रखें।",
+            "महत्वपूर्ण शब्दों की साधारण प्रति के लिए TXT जोड़ें।",
+            "स्पष्ट नाम वाली फ़ाइलों को बैकअप फ़ोल्डर में रखें।"
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "उपयोगी कन्वर्ज़न और सीमाएँ"
+        },
+        {
+          "t": "table",
+          "head": [
+            "कन्वर्ज़न",
+            "आम नतीजा"
+          ],
+          "rows": [
+            [
+              "EPUB → PDF",
+              "आकार चुनने पर अच्छा"
+            ],
+            [
+              "MOBI → PDF",
+              "पाठ ठीक; तस्वीरें नरम, तालिकाएँ अनिश्चित"
+            ],
+            [
+              "MOBI/AZW3 → EPUB",
+              "पुरानी फ़ाइलें लाने में उपयोगी"
+            ],
+            [
+              "EPUB → TXT",
+              "शब्द रहते हैं, बाकी हटता है"
+            ],
+            [
+              "PDF → EPUB",
+              "कठिन; संरचना का अनुमान चाहिए"
+            ],
+            [
+              "DRM वाली फ़ाइल",
+              "कन्वर्ट नहीं होती"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "[Ebook Converter](/tools/ebook-converter) सर्वर पर चलता है: शुरू करने से पहले पेज इसकी जानकारी देता है, फ़ाइल सुरक्षित कनेक्शन से भेजी जाती है और काम पूरा होते ही मिटती है। फ़ाइल सीमा और कोटा टूल और [कीमत पेज](/pricing) पर दिए हैं। PDF पढ़ने के लिए [PDF Reader](/tools/pdf-reader) टैब में चलता है और फ़ाइल अपलोड नहीं करता।"
+        },
+        {
+          "t": "h2",
+          "x": "Ebook फ़ॉर्मैट कैसे चुनें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "किताब का उपयोग तय करें",
+              "x": "फ़ॉन्ट बदलकर पढ़ने के लिए EPUB, छापने या पेज उद्धृत करने के लिए PDF और साधारण बैकअप के लिए TXT चुनें।"
+            },
+            {
+              "h": "सुरक्षा और अधिकार जाँचें",
+              "x": "केवल वही फ़ाइल बदलें जिसे बदलने का अधिकार हो। DRM वाली ebook इन टूलों से नहीं बदलती।"
+            },
+            {
+              "h": "सही कन्वर्टर चुनें",
+              "x": "समर्थित DRM-मुक्त फ़ॉर्मैट के लिए [Ebook Converter](/tools/ebook-converter) या स्थिर पेज बनाने के लिए [EPUB से PDF](/tools/epub-to-pdf) खोलें।"
+            },
+            {
+              "h": "लक्ष्य डिवाइस पर नतीजा देखें",
+              "x": "अध्याय, चित्र, फ़ॉन्ट और पढ़ने का क्रम जाँचें। मूल फ़ाइल अलग रखें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "ebook-converter",
+          "x": "समर्थित ebook फ़ॉर्मैट की तुलना करें और बदलें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "लंबे समय के लिए कौन सा ebook फ़ॉर्मैट रखें?",
+          "a": "DRM-मुक्त EPUB आम तौर पर सबसे अच्छा मुख्य फ़ॉर्मैट है: यह खुला मानक है और कई ऐप इसे पढ़ते हैं। लेआउट जरूरी हो तो PDF और न्यूनतम बैकअप के लिए TXT भी रखें।"
+        },
+        {
+          "q": "EPUB और PDF में क्या अंतर है?",
+          "a": "EPUB फ़ॉन्ट और स्क्रीन के अनुसार लाइनें बदलता है, इसलिए स्थिर पेज नहीं होते। PDF तैयार पेज रखता है। पढ़ने के लिए EPUB लचीला है; प्रिंट और उद्धरण के लिए PDF स्थिर है।"
+        },
+        {
+          "q": "क्या Kindle EPUB पढ़ सकता है?",
+          "a": "हाँ, Send to Kindle से। सेवा EPUB लेकर Amazon फ़ॉर्मैट में बदलती है। पुराने Kindle MOBI लेते थे, लेकिन यह तरीका 2022 में बंद हुआ।"
+        },
+        {
+          "q": "AZW3 फ़ाइल क्या है?",
+          "a": "AZW3 को KF8 भी कहते हैं। Amazon ने इसे MOBI की जगह 2011 में पेश किया। यह स्टाइल, फ़ॉन्ट और तालिकाएँ बेहतर रखता है; DRM-मुक्त होने पर Kindle और Calibre में खुलता है।"
+        },
+        {
+          "q": "PDF को अच्छे EPUB में बदलना कठिन क्यों है?",
+          "a": "PDF अध्याय नहीं, पेज और टेक्स्ट की स्थिति रखता है। कन्वर्टर को शीर्षक, मुख्य पाठ और हेडर का अनुमान लगाना पड़ता है। साधारण दस्तावेज़ चल सकता है, स्कैन या कई कॉलम वाला पेज बिगड़ सकता है।"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "vi": {
+      "topic": "ebook-formats-explained",
+      "slug": "ebook-formats-explained",
+      "title": "Các định dạng ebook: EPUB, MOBI, AZW3, PDF và văn bản",
+      "metaTitle": "Các định dạng ebook: EPUB, MOBI, AZW3, PDF và văn bản",
+      "metaDescription": "So sánh EPUB, MOBI, AZW3, PDF và văn bản thuần. Tìm hiểu ứng dụng đọc và định dạng nên giữ để dùng lâu dài.",
+      "keyword": "giải thích định dạng ebook",
+      "secondaryKeywords": [
+        "giải thích định dạng ebook",
+        "EPUB và PDF",
+        "định dạng ebook tốt nhất"
+      ],
+      "answer": "EPUB là chuẩn mở và thường là định dạng chính tốt nhất để lưu ebook. MOBI là định dạng Kindle cũ đã ngừng; AZW3 thay thế nó. PDF giữ trang cố định, còn văn bản thuần chỉ giữ chữ. Hãy giữ EPUB không DRM và tạo PDF khi bố cục in quan trọng.",
+      "tool": "ebook-converter",
+      "ctaLabel": "So sánh và chuyển đổi các định dạng ebook được hỗ trợ.",
+      "body": [
+        {
+          "t": "p",
+          "x": "Mỗi định dạng ebook trả lời một câu hỏi: lưu sách thế nào để thiết bị hiển thị? Định dạng reflow lưu chữ và kiểu trình bày, còn ứng dụng quyết định chỗ xuống dòng. Định dạng cố định lưu trang hoàn chỉnh. Sự khác nhau đó quyết định ứng dụng nào mở được, cách in và việc trích dẫn số trang có ổn định hay không."
+        },
+        {
+          "t": "h2",
+          "x": "So sánh năm định dạng ebook"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Định dạng",
+            "Nội dung",
+            "Bố cục",
+            "Mở bằng",
+            "Nên giữ khi"
+          ],
+          "rows": [
+            [
+              "EPUB (.epub)",
+              "Tệp ZIP chứa chương XHTML, kiểu trình bày, ảnh và mục lục",
+              "Reflow, trừ khi nhà xuất bản cố định trang",
+              "Apple Books, Kobo, Google Play Books, Calibre và hầu hết máy đọc; Kindle qua Send to Kindle",
+              "Làm bản chính đọc được trên nhiều thiết bị"
+            ],
+            [
+              "MOBI (.mobi, .prc)",
+              "HTML nén trong vùng chứa Palm, thiết kế năm 2000",
+              "Reflow, ít kiểu trình bày",
+              "Kindle cũ và Calibre; Send to Kindle ngừng nhận năm 2022",
+              "Chỉ giữ nếu chưa có bản tốt hơn; nên chuyển đổi"
+            ],
+            [
+              "AZW3 (.azw3, KF8)",
+              "Định dạng Kindle Amazon năm 2011 có hỗ trợ kiểu chữ tốt hơn",
+              "Reflow",
+              "Kindle và Calibre",
+              "Khi đọc trên Kindle và tệp không DRM"
+            ],
+            [
+              "PDF (.pdf)",
+              "Các trang cố định được đánh số",
+              "Luôn cố định",
+              "Máy tính, điện thoại và trình duyệt",
+              "Khi bố cục mang ý nghĩa: bản nhạc, sách hướng dẫn, biểu mẫu"
+            ],
+            [
+              "Văn bản (.txt)",
+              "Chỉ có chữ, không định dạng hay cấu trúc",
+              "Ứng dụng tự quyết định",
+              "Gần như mọi thiết bị",
+              "Làm bản sao lưu đơn giản, bền lâu"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Bạn cũng có thể gặp .azw, thường là MOBI có bảo vệ Amazon; .kfx, định dạng Kindle hiện tại chưa được công khai tài liệu; và .acsm, thường là tệp XML nhỏ để ứng dụng đọc tải sách thật. Chúng không phải lúc nào cũng là toàn bộ sách đã tải."
+        },
+        {
+          "t": "h2",
+          "x": "Reflow hay trang cố định: khác biệt thực tế"
+        },
+        {
+          "t": "p",
+          "x": "Ở sách reflow, tăng chữ từ 14 lên 20 điểm sẽ đổi chỗ xuống dòng và số màn hình dù tệp không đổi. Vì vậy EPUB và MOBI không có số trang chung. Với PDF, trang 214 vẫn là trang 214 trên điện thoại, màn hình và giấy."
+        },
+        {
+          "t": "h2",
+          "x": "Thiết bị nào mở định dạng nào"
+        },
+        {
+          "t": "p",
+          "x": "Kindle nhận EPUB qua Send to Kindle và đổi sang định dạng Amazon khi nhận. Kobo đọc EPUB trực tiếp; PDF có thể bất tiện trên màn hình nhỏ. Apple Books mở EPUB và PDF nhưng không mở MOBI hoặc AZW3. Trên điện thoại, ứng dụng đọc EPUB còn trình xem tích hợp thường mở PDF. Muốn in, hãy tạo PDF trước."
+        },
+        {
+          "t": "h2",
+          "x": "Nên giữ định dạng nào lâu dài"
+        },
+        {
+          "t": "p",
+          "x": "Giữ EPUB không DRM làm bản chính. Chuẩn này mở và tệp chứa các chương XHTML có thể giải nén như ZIP rồi đọc trong trình duyệt. AZW3 và KFX phụ thuộc định dạng Amazon; MOBI đã bị ngừng. PDF bền vững theo chuẩn ISO 32000; PDF/A phù hợp lưu trữ bố cục với phông nhúng. Có thể giữ thêm TXT làm bản dự phòng: mất kiểu chữ và ảnh nhưng hầu hết trình soạn thảo đều mở được."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Giữ EPUB không DRM làm bản chính.",
+            "Giữ PDF nếu bố cục quan trọng khi in hoặc tra cứu.",
+            "Thêm TXT để lưu riêng phần chữ quan trọng.",
+            "Đặt tên tệp rõ ràng và sao lưu thư mục."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Các chuyển đổi hữu ích và giới hạn"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Chuyển đổi",
+            "Kết quả thường gặp"
+          ],
+          "rows": [
+            [
+              "EPUB → PDF",
+              "Tốt khi chọn đúng khổ giấy"
+            ],
+            [
+              "MOBI → PDF",
+              "Chữ ổn; ảnh mờ, bảng không chắc"
+            ],
+            [
+              "MOBI/AZW3 → EPUB",
+              "Hữu ích để chuyển tệp cũ"
+            ],
+            [
+              "EPUB → TXT",
+              "Giữ chữ, bỏ phần còn lại"
+            ],
+            [
+              "PDF → EPUB",
+              "Khó; phải đoán cấu trúc"
+            ],
+            [
+              "Có DRM",
+              "Không chuyển được"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "[Công cụ chuyển đổi ebook](/tools/ebook-converter) xử lý trên máy chủ: trang thông báo trước, truyền tệp qua kết nối an toàn rồi xóa ngay khi hoàn tất. Giới hạn tệp và hạn mức có trong công cụ và [bảng giá](/pricing). Để đọc PDF, [Trình đọc PDF](/tools/pdf-reader) chạy trong tab, không tải tệp lên."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chọn định dạng ebook"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Xác định mục đích sử dụng",
+              "x": "Chọn EPUB để đọc với cỡ chữ tùy chỉnh, PDF để in hoặc trích số trang, TXT làm bản sao lưu đơn giản."
+            },
+            {
+              "h": "Kiểm tra bảo vệ và quyền sử dụng",
+              "x": "Chỉ chuyển tệp bạn được phép. Ebook có DRM không thể chuyển bằng các công cụ này."
+            },
+            {
+              "h": "Chọn công cụ phù hợp",
+              "x": "Dùng [Công cụ chuyển đổi ebook](/tools/ebook-converter) cho định dạng reflow được hỗ trợ hoặc [EPUB sang PDF](/tools/epub-to-pdf) để tạo trang cố định."
+            },
+            {
+              "h": "Mở kết quả trên thiết bị đích",
+              "x": "Kiểm tra chương, ảnh, phông và thứ tự đọc. Giữ tệp gốc riêng."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "ebook-converter",
+          "x": "So sánh và chuyển đổi các định dạng ebook được hỗ trợ."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Nên giữ định dạng ebook nào lâu dài?",
+          "a": "EPUB không DRM thường là bản chính tốt nhất: đây là chuẩn mở và nhiều ứng dụng đọc được. Giữ thêm PDF nếu bố cục quan trọng và TXT làm bản sao dự phòng tối giản."
+        },
+        {
+          "q": "EPUB khác PDF thế nào?",
+          "a": "EPUB tự dàn lại dòng theo cỡ chữ và màn hình nên không có trang cố định. PDF lưu các trang hoàn chỉnh. EPUB linh hoạt để đọc; PDF ổn định để in và trích dẫn."
+        },
+        {
+          "q": "Kindle có đọc EPUB không?",
+          "a": "Có, qua Send to Kindle. Dịch vụ nhận EPUB rồi chuyển sang định dạng Amazon. Kindle cũ từng nhận MOBI nhưng quy trình đó dừng vào năm 2022."
+        },
+        {
+          "q": "Tệp AZW3 là gì?",
+          "a": "AZW3, còn gọi là KF8, là định dạng Amazon ra mắt để thay MOBI. Nó hỗ trợ stylesheet, phông và bảng tốt hơn; có thể mở bằng Kindle và Calibre nếu không DRM."
+        },
+        {
+          "q": "Vì sao PDF sang EPUB thường không tốt?",
+          "a": "PDF lưu trang và tọa độ chứ không lưu chương. Bộ chuyển đổi phải đoán tiêu đề, nội dung và đầu trang. Có thể khá ổn với tài liệu đơn giản nhưng lỗi với bản scan hoặc nhiều cột."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "zh-CN": {
+      "topic": "ebook-formats-explained",
+      "slug": "ebook-formats-explained",
+      "title": "电子书格式说明：EPUB、MOBI、AZW3、PDF 和文本",
+      "metaTitle": "电子书格式说明：EPUB、MOBI、AZW3、PDF 和文本",
+      "metaDescription": "比较 EPUB、MOBI、AZW3、PDF 和纯文本，了解阅读器兼容性，以及适合长期保存的电子书格式。",
+      "keyword": "电子书格式说明",
+      "secondaryKeywords": [
+        "电子书格式说明",
+        "EPUB 与 PDF 对比",
+        "最佳电子书格式"
+      ],
+      "answer": "EPUB 是开放标准，通常最适合作为电子书主文件。MOBI 是已淘汰的 Kindle 格式，后来由 AZW3 取代。PDF 保存固定页面，纯文本只保存文字。建议保留无 DRM 的 EPUB；需要打印版式时再生成 PDF。",
+      "tool": "ebook-converter",
+      "ctaLabel": "比较并转换受支持的电子书格式。",
+      "body": [
+        {
+          "t": "p",
+          "x": "每种电子书格式都在回答同一个问题：如何保存一本书，让设备正确显示？可重排格式保存文字和样式，由阅读应用决定换行位置；固定版式格式则保存完成后的页面。这个区别决定了阅读器兼容性、打印效果，以及页码能否稳定引用。"
+        },
+        {
+          "t": "h2",
+          "x": "五种电子书格式对比"
+        },
+        {
+          "t": "table",
+          "head": [
+            "格式",
+            "文件内容",
+            "版式",
+            "可用阅读器",
+            "适合保存的情况"
+          ],
+          "rows": [
+            [
+              "EPUB (.epub)",
+              "包含 XHTML 章节、样式、图片和目录的 ZIP 文件",
+              "可重排，出版商也可设置固定版式",
+              "Apple Books、Kobo、Google Play 图书、Calibre 和大多数阅读器；Kindle 可通过 Send to Kindle",
+              "作为多设备通用的主文件"
+            ],
+            [
+              "MOBI (.mobi, .prc)",
+              "2000 年设计、Palm 容器中的压缩 HTML",
+              "可重排，样式支持有限",
+              "旧 Kindle 和 Calibre；Send to Kindle 于 2022 年停止接收",
+              "仅在没有更好版本时保留，并考虑迁移"
+            ],
+            [
+              "AZW3 (.azw3, KF8)",
+              "Amazon 于 2011 年推出、支持样式的 Kindle 格式",
+              "可重排",
+              "Kindle 和 Calibre",
+              "在 Kindle 阅读且文件没有 DRM 时"
+            ],
+            [
+              "PDF (.pdf)",
+              "带编号的固定页面",
+              "始终固定",
+              "电脑、手机和浏览器",
+              "版式有意义时，例如乐谱、手册和表格"
+            ],
+            [
+              "纯文本 (.txt)",
+              "只有文字，没有样式或结构",
+              "由应用决定",
+              "几乎所有设备",
+              "作为简单、耐久的备份"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "你还可能遇到 .azw，通常是加了 Amazon 保护的 MOBI；.kfx 是当前 Kindle 格式，公开文档较少；.acsm 通常是供阅读应用获取实际书籍的小型 XML 文件。它们不一定是完整下载的书。"
+        },
+        {
+          "t": "h2",
+          "x": "可重排与固定页面的实际区别"
+        },
+        {
+          "t": "p",
+          "x": "在可重排的书中，将字号从 14 调到 20 会改变换行和屏幕数量，即使文件没有变化。因此 EPUB 和 MOBI 没有通用固定页码。PDF 的第 214 页在手机、显示器和纸张上都是第 214 页。"
+        },
+        {
+          "t": "h2",
+          "x": "不同设备支持哪些格式"
+        },
+        {
+          "t": "p",
+          "x": "Kindle 可通过 Send to Kindle 接收 EPUB，并在接收时转换为 Amazon 格式。Kobo 原生支持 EPUB；在小屏幕上阅读 PDF 可能不方便。Apple Books 支持 EPUB 和 PDF，不支持 MOBI 或 AZW3。手机阅读应用可打开 EPUB，内置查看器通常能打开 PDF。打印前应先生成 PDF。"
+        },
+        {
+          "t": "h2",
+          "x": "长期保存应该选哪种格式"
+        },
+        {
+          "t": "p",
+          "x": "保留无 DRM 的 EPUB 作为主文件。它采用开放规范，内部章节是 XHTML，可将副本改为 ZIP 解压并在浏览器打开。AZW3 和 KFX 依赖 Amazon 格式；MOBI 已淘汰。PDF 是 ISO 32000 标准，PDF/A 可嵌入字体，适合保存版式有意义的文件。也可保存 TXT 作为极简备份：它没有样式和图片，但几乎所有文本编辑器都能打开。"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "保留无 DRM 的 EPUB 作为主文件。",
+            "版式对打印或查阅重要时也保存 PDF。",
+            "可另存 TXT，仅保留重要文字。",
+            "使用清晰文件名并备份所在文件夹。"
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "实用转换方式与限制"
+        },
+        {
+          "t": "table",
+          "head": [
+            "转换方向",
+            "通常结果"
+          ],
+          "rows": [
+            [
+              "EPUB → PDF",
+              "选好尺寸后效果较好"
+            ],
+            [
+              "MOBI → PDF",
+              "文字尚可，图片偏软，表格不稳定"
+            ],
+            [
+              "MOBI/AZW3 → EPUB",
+              "适合迁移旧文件"
+            ],
+            [
+              "EPUB → TXT",
+              "保留文字，移除其他内容"
+            ],
+            [
+              "PDF → EPUB",
+              "较难，需要猜测结构"
+            ],
+            [
+              "带 DRM",
+              "无法转换"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "[电子书转换器](/tools/ebook-converter)由服务器处理：页面会提前说明，文件通过安全连接传输，任务完成后立即删除。文件上限和配额可在工具及[价格页](/pricing)查看。阅读 PDF 时，[PDF 阅读器](/tools/pdf-reader)在标签页本地运行，不会上传文件。"
+        },
+        {
+          "t": "h2",
+          "x": "如何选择电子书格式"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "先确定阅读或使用场景",
+              "x": "需要调节字号时选 EPUB；打印或引用页码时选 PDF；需要最简单的备份时选 TXT。"
+            },
+            {
+              "h": "检查版权保护和使用权",
+              "x": "只转换你有权处理的文件。带 DRM 的电子书不能用这些工具转换。"
+            },
+            {
+              "h": "选择对应的转换工具",
+              "x": "支持的无 DRM 格式可使用[电子书转换器](/tools/ebook-converter)，要生成固定页面可用[EPUB 转 PDF](/tools/epub-to-pdf)。"
+            },
+            {
+              "h": "在目标设备上检查结果",
+              "x": "检查章节导航、图片、字体和阅读顺序，并单独保留原文件。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "ebook-converter",
+          "x": "比较并转换受支持的电子书格式。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "长期保存电子书应该用什么格式？",
+          "a": "无 DRM 的 EPUB 通常最适合作为主文件：它是开放标准，许多应用都能阅读。版式重要时也保留 PDF，并可用 TXT 保存最精简的备份。"
+        },
+        {
+          "q": "EPUB 和 PDF 有什么区别？",
+          "a": "EPUB 会按字号和屏幕重新排版，没有固定页码。PDF 保存完成页面。EPUB 阅读更灵活，PDF 更适合打印和引用页码。"
+        },
+        {
+          "q": "Kindle 能读 EPUB 吗？",
+          "a": "可以通过 Send to Kindle 导入。服务收到 EPUB 后会转换为 Amazon 格式。旧 Kindle 曾支持 MOBI，但该流程于 2022 年停止。"
+        },
+        {
+          "q": "AZW3 文件是什么？",
+          "a": "AZW3 又称 KF8，是 Amazon 推出并取代 MOBI 的格式。它对样式、字体和表格支持更好；无 DRM 时可由 Kindle 和 Calibre 打开。"
+        },
+        {
+          "q": "为什么 PDF 很难转成好的 EPUB？",
+          "a": "PDF 保存页面和文字坐标，没有章节结构。转换器需要猜测标题、正文和页眉。简单文件可能效果尚可，扫描件或多栏页面容易混乱。"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "ar": {
+      "topic": "ebook-formats-explained",
+      "slug": "ebook-formats-explained",
+      "title": "شرح تنسيقات الكتب الإلكترونية: EPUB وMOBI وAZW3 وPDF والنص",
+      "metaTitle": "شرح تنسيقات الكتب الإلكترونية: EPUB وMOBI وAZW3 وPDF والنص",
+      "metaDescription": "قارن بين EPUB وMOBI وAZW3 وPDF والنص العادي. تعرّف على التطبيقات المتوافقة وما يستحق الاحتفاظ به طويلًا.",
+      "keyword": "شرح تنسيقات الكتب الإلكترونية",
+      "secondaryKeywords": [
+        "شرح تنسيقات الكتب الإلكترونية",
+        "EPUB مقابل PDF",
+        "أفضل تنسيق للكتاب الإلكتروني"
+      ],
+      "answer": "EPUB معيار مفتوح وغالبًا أفضل نسخة رئيسية للكتاب الإلكتروني. MOBI تنسيق Kindle متوقف، وحل AZW3 محله. يحفظ PDF صفحات ثابتة بينما يحفظ النص العادي الكلمات فقط. احتفظ بـ EPUB خاليًا من DRM وأنشئ PDF عندما يكون تخطيط الطباعة مهمًا.",
+      "tool": "ebook-converter",
+      "ctaLabel": "قارن بين تنسيقات الكتب الإلكترونية المدعومة وحوّل بينها.",
+      "body": [
+        {
+          "t": "p",
+          "x": "يجيب كل تنسيق عن سؤال واحد: كيف نخزن كتابًا ليعرضه الجهاز؟ تحفظ التنسيقات القابلة لإعادة التدفق الكلمات والأنماط ويحدد التطبيق مواضع التفاف السطور. أما التنسيقات الثابتة فتحفظ الصفحة النهائية. يحدد هذا الفرق التطبيقات التي تفتح الملف وطريقة طباعته وإمكانية الاستشهاد بأرقام صفحات مستقرة."
+        },
+        {
+          "t": "h2",
+          "x": "التنسيقات الخمسة جنبًا إلى جنب"
+        },
+        {
+          "t": "table",
+          "head": [
+            "التنسيق",
+            "محتواه",
+            "التخطيط",
+            "أين يفتح",
+            "متى تحتفظ به"
+          ],
+          "rows": [
+            [
+              "EPUB (.epub)",
+              "ملف ZIP بفصول XHTML والأنماط والصور والفهرس",
+              "قابل للتدفق ما لم يثبت الناشر الصفحات",
+              "Apple Books وKobo وGoogle Play Books وCalibre ومعظم القارئات؛ Kindle عبر Send to Kindle",
+              "نسخة رئيسية متوافقة مع أجهزة كثيرة"
+            ],
+            [
+              "MOBI (.mobi, .prc)",
+              "HTML مضغوط داخل حاوية Palm صُممت عام 2000",
+              "قابل للتدفق مع دعم محدود للأنماط",
+              "أجهزة Kindle القديمة وCalibre؛ توقف Send to Kindle عن قبوله عام 2022",
+              "احتفظ به فقط عند غياب نسخة أفضل"
+            ],
+            [
+              "AZW3 (.azw3, KF8)",
+              "تنسيق Kindle من Amazon عام 2011 بدعم أفضل للأنماط",
+              "قابل للتدفق",
+              "Kindle وCalibre",
+              "للقراءة على Kindle إذا كان الملف خاليًا من DRM"
+            ],
+            [
+              "PDF (.pdf)",
+              "صفحات ثابتة مرقمة",
+              "ثابت دائمًا",
+              "الحواسيب والهواتف والمتصفحات",
+              "عندما يكون التخطيط مهمًا مثل النوتات والكتيبات والنماذج"
+            ],
+            [
+              "نص (.txt)",
+              "الكلمات فقط دون تنسيق أو بنية",
+              "يحدده التطبيق",
+              "كل الأجهزة تقريبًا",
+              "نسخة احتياطية بسيطة وطويلة العمر"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "قد تصادف أيضًا .azw، وغالبًا هو MOBI محمي من Amazon؛ و.kfx، تنسيق Kindle الحالي غير الموثق علنًا؛ و.acsm، ملف XML صغير تستخدمه القارئة للحصول على الكتاب الحقيقي. ليست هذه دائمًا نسخة الكتاب المكتملة."
+        },
+        {
+          "t": "h2",
+          "x": "قابل لإعادة التدفق أم صفحات ثابتة؟"
+        },
+        {
+          "t": "p",
+          "x": "في الكتاب القابل لإعادة التدفق، يؤدي تغيير الخط من 14 إلى 20 نقطة إلى تغيير التفاف السطور وعدد الشاشات دون تغيير الملف. لذلك لا يملك EPUB وMOBI أرقام صفحات عالمية. أما الصفحة 214 في PDF فتبقى الصفحة 214 على الهاتف والشاشة والورق."
+        },
+        {
+          "t": "h2",
+          "x": "ما التنسيقات التي تفتحها الأجهزة"
+        },
+        {
+          "t": "p",
+          "x": "يقبل Kindle EPUB عبر Send to Kindle ثم يحوله إلى تنسيق Amazon. يقرأ Kobo EPUB مباشرة؛ وقد يكون PDF غير مريح على الشاشة الصغيرة. يفتح Apple Books EPUB وPDF ولا يفتح MOBI أو AZW3. تقرأ تطبيقات الهاتف EPUB ويفتح العارض المدمج PDF عادةً. للطباعة أنشئ PDF أولًا."
+        },
+        {
+          "t": "h2",
+          "x": "ما الذي يستحق الاحتفاظ به طويلًا"
+        },
+        {
+          "t": "p",
+          "x": "احتفظ بـ EPUB خاليًا من DRM كنسخة رئيسية. مواصفته مفتوحة، ويمكن فك ملف ZIP وقراءة فصول XHTML في المتصفح. يعتمد AZW3 وKFX على Amazon، وتوقف MOBI. PDF معيار ISO 32000؛ وPDF/A مفيد لأرشفة التخطيطات مع تضمين الخطوط. احتفظ أيضًا بنسخة نصية بسيطة عند الحاجة إلى نسخة احتياطية قصوى؛ فهي تفقد الصور والأنماط لكن تفتح تقريبًا في كل محرر."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "احتفظ بـ EPUB الخالي من DRM كنسخة رئيسية.",
+            "احتفظ بـ PDF إذا كان التخطيط مهمًا للطباعة أو الرجوع.",
+            "أضف TXT لحفظ الكلمات المهمة فقط.",
+            "سمّ الملفات بوضوح واحفظها في مجلد احتياطي."
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "التحويلات المفيدة وحدودها"
+        },
+        {
+          "t": "table",
+          "head": [
+            "التحويل",
+            "النتيجة المعتادة"
+          ],
+          "rows": [
+            [
+              "EPUB → PDF",
+              "جيد عند اختيار الحجم"
+            ],
+            [
+              "MOBI → PDF",
+              "نص جيد وصور باهتة وجداول غير مضمونة"
+            ],
+            [
+              "MOBI/AZW3 → EPUB",
+              "مفيد لترحيل الملفات القديمة"
+            ],
+            [
+              "EPUB → TXT",
+              "يحفظ الكلمات فقط"
+            ],
+            [
+              "PDF → EPUB",
+              "صعب ويتطلب تخمين البنية"
+            ],
+            [
+              "مع DRM",
+              "لا يمكن تحويله"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "يعالج [محول الكتب الإلكترونية](/tools/ebook-converter) الملفات على الخادم: يوضح الموقع ذلك قبل البدء، وينقل الملف عبر اتصال آمن ويحذفه فور اكتمال المهمة. تظهر حدود الحجم والحصة في الأداة و[الأسعار](/pricing). يفتح [قارئ PDF](/tools/pdf-reader) داخل التبويب دون رفع الملف."
+        },
+        {
+          "t": "h2",
+          "x": "كيف تختار تنسيق الكتاب الإلكتروني"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "حدد طريقة استخدام الكتاب",
+              "x": "اختر EPUB لتغيير حجم النص، وPDF للطباعة أو اقتباس الصفحات، وTXT لنسخة احتياطية بسيطة."
+            },
+            {
+              "h": "تحقق من الحماية وحقوق الاستخدام",
+              "x": "حوّل الملفات التي تملك حق استخدامها فقط. لا تحول الأدوات الكتب المحمية بـ DRM."
+            },
+            {
+              "h": "اختر أداة التحويل المناسبة",
+              "x": "استخدم [محول الكتب الإلكترونية](/tools/ebook-converter) للتنسيقات المدعومة الخالية من DRM أو [EPUB إلى PDF](/tools/epub-to-pdf) لإنشاء صفحات ثابتة."
+            },
+            {
+              "h": "افحص الناتج على الجهاز المقصود",
+              "x": "راجع الفصول والصور والخطوط وترتيب القراءة واحتفظ بالأصل منفصلًا."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "ebook-converter",
+          "x": "قارن بين تنسيقات الكتب الإلكترونية المدعومة وحوّل بينها."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "ما أفضل تنسيق للاحتفاظ بالكتب الإلكترونية؟",
+          "a": "غالبًا EPUB الخالي من DRM هو النسخة الرئيسية الأفضل: إنه معيار مفتوح وتقرأه تطبيقات كثيرة. احتفظ بـ PDF أيضًا إذا كان التخطيط مهمًا وبنص TXT كنسخة احتياطية بسيطة."
+        },
+        {
+          "q": "ما الفرق بين EPUB وPDF؟",
+          "a": "يعيد EPUB تدفق السطور وفق حجم الخط والشاشة، لذلك لا يملك صفحات ثابتة. يحفظ PDF الصفحات النهائية. EPUB مرن للقراءة وPDF أوضح للطباعة والاقتباس."
+        },
+        {
+          "q": "هل يقرأ Kindle ملفات EPUB؟",
+          "a": "نعم، عبر Send to Kindle الذي يستقبل EPUB ويحوله إلى تنسيق Amazon. توقفت أجهزة Kindle عن مسار MOBI القديم عام 2022."
+        },
+        {
+          "q": "ما ملف AZW3؟",
+          "a": "AZW3، المعروف أيضًا باسم KF8، تنسيق Amazon الذي حل محل MOBI. يدعم الأنماط والخطوط والجداول بصورة أفضل ويفتح في Kindle وCalibre إذا كان خاليًا من DRM."
+        },
+        {
+          "q": "لماذا يصعب تحويل PDF إلى EPUB جيد؟",
+          "a": "يحفظ PDF الصفحات وإحداثيات النص ولا يحفظ الفصول. على المحول تخمين العناوين والمتن والرؤوس. قد ينجح مع ملف بسيط ويفشل مع المسح أو الأعمدة المتعددة."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "bn": {
+      "topic": "ebook-formats-explained",
+      "slug": "ebook-formats-explained",
+      "title": "ইবুক ফরম্যাট: EPUB, MOBI, AZW3, PDF ও টেক্সট",
+      "metaTitle": "ইবুক ফরম্যাট: EPUB, MOBI, AZW3, PDF ও টেক্সট",
+      "metaDescription": "EPUB, MOBI, AZW3, PDF ও সাধারণ টেক্সট তুলনা করুন। কোন রিডারে চলে এবং দীর্ঘদিনের জন্য কোন ফাইল রাখবেন জানুন।",
+      "keyword": "ইবুক ফরম্যাটের ব্যাখ্যা",
+      "secondaryKeywords": [
+        "ইবুক ফরম্যাটের ব্যাখ্যা",
+        "EPUB বনাম PDF",
+        "সেরা ইবুক ফরম্যাট"
+      ],
+      "answer": "EPUB উন্মুক্ত মান এবং ইবুকের মূল কপি হিসেবে সাধারণত সেরা। MOBI পুরোনো Kindle ফরম্যাট, পরে AZW3 এটি প্রতিস্থাপন করেছে। PDF স্থির পৃষ্ঠা রাখে, আর সাধারণ টেক্সট শুধু শব্দ রাখে। DRM-মুক্ত EPUB সংরক্ষণ করুন; প্রিন্টের বিন্যাস জরুরি হলে PDF বানান।",
+      "tool": "ebook-converter",
+      "ctaLabel": "সমর্থিত ইবুক ফরম্যাট তুলনা ও কনভার্ট করুন।",
+      "body": [
+        {
+          "t": "p",
+          "x": "প্রতিটি ইবুক ফরম্যাটের প্রশ্ন একটাই: যন্ত্রে দেখানোর জন্য বই কীভাবে রাখা হবে? রিফ্লো ফরম্যাটে শব্দ ও স্টাইল থাকে, লাইন কোথায় ভাঙবে পাঠক অ্যাপ ঠিক করে। স্থির ফরম্যাটে তৈরি পৃষ্ঠা থাকে। এই পার্থক্যেই ঠিক হয় কোন রিডারে ফাইল খুলবে, প্রিন্ট কেমন হবে এবং স্থির পৃষ্ঠা উদ্ধৃত করা যাবে কি না।"
+        },
+        {
+          "t": "h2",
+          "x": "পাঁচটি ইবুক ফরম্যাট পাশাপাশি"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ফরম্যাট",
+            "ভেতরে কী থাকে",
+            "বিন্যাস",
+            "যেখানে খোলে",
+            "কখন রাখবেন"
+          ],
+          "rows": [
+            [
+              "EPUB (.epub)",
+              "XHTML অধ্যায়, স্টাইল, ছবি ও সূচিসহ ZIP ফাইল",
+              "রিফ্লো; প্রকাশক চাইলে স্থির",
+              "Apple Books, Kobo, Google Play Books, Calibre ও বেশির ভাগ রিডার; Send to Kindle দিয়ে Kindle",
+              "বিভিন্ন ডিভাইসের মূল কপি হিসেবে"
+            ],
+            [
+              "MOBI (.mobi, .prc)",
+              "২০০০ সালে তৈরি Palm কনটেইনারে সংকুচিত HTML",
+              "রিফ্লো, স্টাইল কম",
+              "পুরোনো Kindle ও Calibre; Send to Kindle ২০২২ সালে নেওয়া বন্ধ করে",
+              "ভালো কপি না থাকলে রাখুন, পরে বদলান"
+            ],
+            [
+              "AZW3 (.azw3, KF8)",
+              "স্টাইল সুবিধাযুক্ত Amazon-এর ২০১১ সালের Kindle ফরম্যাট",
+              "রিফ্লো",
+              "Kindle ও Calibre",
+              "Kindle-এ পড়লে ও ফাইলে DRM না থাকলে"
+            ],
+            [
+              "PDF (.pdf)",
+              "নম্বর দেওয়া স্থির পৃষ্ঠা",
+              "সব সময় স্থির",
+              "কম্পিউটার, ফোন ও ব্রাউজার",
+              "বিন্যাস গুরুত্বপূর্ণ হলে: স্বরলিপি, ম্যানুয়াল, ফর্ম"
+            ],
+            [
+              "টেক্সট (.txt)",
+              "বিন্যাস বা কাঠামো ছাড়া শুধু শব্দ",
+              "অ্যাপ ঠিক করে",
+              "প্রায় সব ডিভাইস",
+              "সহজ ও টেকসই ব্যাকআপ হিসেবে"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": ".azw-ও দেখা যেতে পারে—এটি প্রায়ই Amazon সুরক্ষাসহ MOBI; .kfx বর্তমান Kindle ফরম্যাট, যার প্রকাশ্য নথি নেই; .acsm সাধারণত ছোট XML ফাইল, রিডার অ্যাপ যা দিয়ে আসল বই আনে। এগুলো সব সময় সম্পূর্ণ বই নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "রিফ্লো না স্থির পৃষ্ঠা: ব্যবহারিক পার্থক্য"
+        },
+        {
+          "t": "p",
+          "x": "রিফ্লো বইয়ে ফন্ট ১৪ থেকে ২০ পয়েন্ট করলে লাইন ভাঙা ও স্ক্রিনের সংখ্যা বদলে যায়, যদিও ফাইল বদলায় না। তাই EPUB ও MOBI-তে সর্বজনীন পৃষ্ঠা নম্বর নেই। PDF-এর ২১৪ নম্বর পৃষ্ঠা ফোন, মনিটর ও কাগজে একই থাকে।"
+        },
+        {
+          "t": "h2",
+          "x": "কোন ডিভাইসে কোন ফরম্যাট খোলে"
+        },
+        {
+          "t": "p",
+          "x": "Kindle Send to Kindle দিয়ে EPUB নেয় এবং আসার সময় Amazon ফরম্যাটে বদলায়। Kobo সরাসরি EPUB পড়ে; ছোট পর্দায় PDF অস্বস্তিকর। Apple Books EPUB ও PDF খোলে, MOBI বা AZW3 নয়। ফোনে অ্যাপ EPUB এবং বিল্ট-ইন ভিউয়ার PDF খুলতে পারে। প্রিন্টের আগে PDF বানান।"
+        },
+        {
+          "t": "h2",
+          "x": "দীর্ঘদিন কোন ফরম্যাট রাখবেন"
+        },
+        {
+          "t": "p",
+          "x": "DRM-মুক্ত EPUB মূল কপি রাখুন। এর স্ট্যান্ডার্ড উন্মুক্ত, আর ZIP থেকে XHTML অধ্যায় বের করে ব্রাউজারে পড়া যায়। AZW3 ও KFX Amazon-এর ফরম্যাটের ওপর নির্ভরশীল; MOBI বন্ধ হয়েছে। PDF হলো ISO 32000 মান; PDF/A-তে ফন্ট এমবেড করে বিন্যাস আর্কাইভ করা যায়। অতিরিক্ত সহজ ব্যাকআপে TXT রাখুন: ছবি ও স্টাইল থাকবে না, তবে প্রায় সব এডিটরে খুলবে।"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "DRM-মুক্ত EPUB মূল কপি রাখুন।",
+            "প্রিন্ট বা দেখার বিন্যাস দরকার হলে PDF রাখুন।",
+            "শুধু জরুরি শব্দের জন্য TXT রাখুন।",
+            "স্পষ্ট নামে ফাইল রেখে ফোল্ডার ব্যাকআপ করুন।"
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "কাজের কনভার্সন ও সীমা"
+        },
+        {
+          "t": "table",
+          "head": [
+            "কনভার্সন",
+            "সাধারণ ফল"
+          ],
+          "rows": [
+            [
+              "EPUB → PDF",
+              "আকার বাছলে ভালো"
+            ],
+            [
+              "MOBI → PDF",
+              "লেখা ঠিক; ছবি ঝাপসা, টেবিল অনিশ্চিত"
+            ],
+            [
+              "MOBI/AZW3 → EPUB",
+              "পুরোনো ফাইল বদলে নিতে ভালো"
+            ],
+            [
+              "EPUB → TXT",
+              "শব্দ থাকে, বাকি বাদ"
+            ],
+            [
+              "PDF → EPUB",
+              "কঠিন; কাঠামো অনুমান করতে হয়"
+            ],
+            [
+              "DRM-সহ",
+              "কনভার্ট হয় না"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "[Ebook Converter](/tools/ebook-converter) সার্ভারে ফাইল প্রসেস করে: শুরুতে সাইট জানায়, নিরাপদ সংযোগে ফাইল পাঠায় এবং কাজ শেষে মুছে দেয়। ফাইল সীমা ও কোটা টুল ও [মূল্য পেজে](/pricing) দেখা যায়। PDF পড়তে [PDF Reader](/tools/pdf-reader) ট্যাবে চলে এবং ফাইল আপলোড করে না।"
+        },
+        {
+          "t": "h2",
+          "x": "ইবুক ফরম্যাট কীভাবে বাছবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "বইটি কীভাবে ব্যবহার করবেন ঠিক করুন",
+              "x": "ফন্ট বদলে পড়তে EPUB, প্রিন্ট বা পৃষ্ঠা উদ্ধৃতিতে PDF, আর সাধারণ ব্যাকআপে TXT নিন।"
+            },
+            {
+              "h": "সুরক্ষা ও অধিকার যাচাই করুন",
+              "x": "যে ফাইল বদলানোর অধিকার আছে সেটিই ব্যবহার করুন। DRM-সুরক্ষিত ইবুক এসব টুলে কনভার্ট হয় না।"
+            },
+            {
+              "h": "সঠিক কনভার্টার নিন",
+              "x": "সমর্থিত DRM-মুক্ত ফরম্যাটের জন্য [Ebook Converter](/tools/ebook-converter), স্থির পৃষ্ঠার জন্য [EPUB থেকে PDF](/tools/epub-to-pdf) খুলুন।"
+            },
+            {
+              "h": "লক্ষ্য ডিভাইসে ফল পরীক্ষা করুন",
+              "x": "অধ্যায়, ছবি, ফন্ট ও পড়ার ক্রম দেখুন। মূল ফাইল আলাদা রাখুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "ebook-converter",
+          "x": "সমর্থিত ইবুক ফরম্যাট তুলনা ও কনভার্ট করুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "দীর্ঘদিনের জন্য কোন ইবুক ফরম্যাট রাখব?",
+          "a": "DRM-মুক্ত EPUB সাধারণত সেরা মূল কপি: এটি উন্মুক্ত মান এবং অনেক অ্যাপ পড়তে পারে। বিন্যাস জরুরি হলে PDF, আর ন্যূনতম ব্যাকআপে TXT রাখুন।"
+        },
+        {
+          "q": "EPUB আর PDF-এর পার্থক্য কী?",
+          "a": "EPUB ফন্ট ও পর্দা অনুযায়ী লাইন সাজায়, তাই স্থির পৃষ্ঠা নেই। PDF তৈরি পৃষ্ঠা রাখে। পড়তে EPUB নমনীয়; প্রিন্ট ও উদ্ধৃতিতে PDF স্থির।"
+        },
+        {
+          "q": "Kindle কি EPUB পড়ে?",
+          "a": "হ্যাঁ, Send to Kindle দিয়ে। সেবা EPUB নিয়ে Amazon ফরম্যাটে বদলে দেয়। পুরোনো Kindle-এ MOBI চলত, কিন্তু সেই পদ্ধতি ২০২২ সালে বন্ধ হয়েছে।"
+        },
+        {
+          "q": "AZW3 ফাইল কী?",
+          "a": "AZW3 বা KF8 হলো MOBI-কে প্রতিস্থাপন করা Amazon ফরম্যাট। এতে স্টাইল, ফন্ট ও টেবিল ভালো থাকে; DRM-মুক্ত হলে Kindle ও Calibre-এ খোলে।"
+        },
+        {
+          "q": "PDF থেকে ভালো EPUB করা কঠিন কেন?",
+          "a": "PDF-এ অধ্যায় নয়, পৃষ্ঠা ও টেক্সটের অবস্থান থাকে। কনভার্টারকে শিরোনাম, মূল লেখা ও হেডার অনুমান করতে হয়। সাধারণ ডকুমেন্ট চলতে পারে, স্ক্যান বা বহু কলামে সমস্যা হয়।"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    }
+  }
+}
