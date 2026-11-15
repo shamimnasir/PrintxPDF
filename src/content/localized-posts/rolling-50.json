@@ -1221,6 +1221,147 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "pdf-metadata-vs-filename",
+        "slug": "pdf-metadata-vs-filename",
+        "title": "Metadatos del PDF vs nombre del archivo: qué compartes",
+        "metaTitle": "Metadatos del PDF vs nombre del archivo: qué compartes",
+        "metaDescription": "Compara el nombre del archivo con los metadatos del PDF. Edita las propiedades en el navegador gratis y revisa qué información queda visible antes de compartir.",
+        "keyword": "metadatos PDF vs nombre del archivo",
+        "secondaryKeywords": [
+          "metadatos PDF vs nombre del archivo",
+          "editar metadatos PDF",
+          "nombre de archivo PDF"
+        ],
+        "answer": "El nombre del archivo aparece en el enlace, adjunto o carpeta que compartes; los metadatos están dentro de las propiedades del PDF y pueden incluir título, autor, asunto y palabras clave. Cambiar el nombre no borra los metadatos. Revisa ambos antes de enviar el documento.",
+        "tool": "edit-metadata",
+        "ctaLabel": "Editar metadatos",
+        "body": [
+          {
+            "t": "p",
+            "x": "El nombre de archivo y los metadatos del PDF son dos cosas distintas. El nombre identifica la copia que adjuntas, por ejemplo presupuesto-cliente.pdf. Las propiedades internas pueden guardar autor, título, asunto o palabras clave. Si renombras el archivo, esas propiedades siguen dentro del PDF. Usa [Editar metadatos](/tools/edit-metadata) para cambiar propiedades y [Eliminar metadatos](/tools/remove-metadata) para limpiar campos estándar antes de compartir."
+          },
+          {
+            "t": "h2",
+            "x": "Diferencia entre el nombre del archivo y los metadatos"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Elemento",
+              "Dónde aparece",
+              "Ejemplos",
+              "Cómo cambiarlo"
+            ],
+            "rows": [
+              [
+                "Nombre del archivo",
+                "En el adjunto, enlace o carpeta",
+                "informe-cliente-final.pdf",
+                "Renombra la copia en tu dispositivo"
+              ],
+              [
+                "Metadatos PDF",
+                "Dentro de las propiedades del documento",
+                "Autor, título, asunto, fecha o palabras clave",
+                "Usa Editar metadatos o Eliminar metadatos"
+              ],
+              [
+                "Contenido visible",
+                "En las páginas que lee el destinatario",
+                "Nombres, firmas, importes, comentarios impresos",
+                "Edita o redacta el contenido con la herramienta adecuada"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Cómo revisar y editar los metadatos del PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarda el PDF original",
+                "x": "Mantén una copia fuente sin cambios por si debes revisar o revertir."
+              },
+              {
+                "h": "Decide qué información quieres cambiar",
+                "x": "Si el nombre revela cliente o proyecto, renombra la copia. Si las propiedades internas identifican al autor, cambia o elimina esos metadatos."
+              },
+              {
+                "h": "Usa el control de propiedades",
+                "x": "Abre [Editar metadatos](/tools/edit-metadata) para ajustar título, autor, asunto o palabras clave. Para limpiar las propiedades estándar y XMP, usa [Eliminar metadatos](/tools/remove-metadata)."
+              },
+              {
+                "h": "Guarda una copia distinta",
+                "x": "Usa un nombre descriptivo que no revele información innecesaria y conserve clara la versión."
+              },
+              {
+                "h": "Revisa el archivo final",
+                "x": "Comprueba el nombre, las propiedades internas, el contenido visible, los adjuntos y el destinatario antes de enviar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Edita o elimina las propiedades del PDF en tu pestaña. Gratis, sin registro y sin marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Qué revisar antes de compartir"
+          },
+          {
+            "t": "p",
+            "x": "El nombre del archivo suele ser lo primero que ve alguien al descargar un adjunto o abrir un enlace. Puede revelar un nombre, un cliente, un proyecto, una fecha o una versión interna. Los metadatos están dentro del PDF y pueden verse al abrir las propiedades del documento. Un PDF puede tener un nombre neutro y aun así incluir el autor o el título original."
+          },
+          {
+            "t": "h2",
+            "x": "Protege la privacidad sin confundir las herramientas"
+          },
+          {
+            "t": "p",
+            "x": "Editar metadatos cambia propiedades seleccionadas, mientras que eliminar metadatos limpia campos estándar como autor, título, aplicación y fecha, además de XMP del documento. Ninguna de estas acciones cambia automáticamente el nombre del archivo ni elimina comentarios o detalles de fotos incrustadas. Tras el cambio, revisa las propiedades de la copia descargada y no solo el nombre que aparece en tu carpeta."
+          },
+          {
+            "t": "h2",
+            "x": "Mantén las versiones claras"
+          },
+          {
+            "t": "p",
+            "x": "Metadatos y nombre tampoco sustituyen una revisión del contenido. Comprueba páginas, nombres, fechas, importes, firmas y texto visible. Si necesitas quitar información que aparece dentro de la página, usa [Redactar PDF](/tools/redact-pdf); borrar el autor no oculta texto visible. Una marca de agua visible añade una etiqueta, no borra propiedades internas."
+          },
+          {
+            "t": "h2",
+            "x": "Completa una comprobación final"
+          },
+          {
+            "t": "p",
+            "x": "Una herramienta local reduce transferencias de archivo innecesarias, pero no decide quién debería recibir un documento ni vuelve seguro un contenido sensible. Editar metadatos funciona en la pestaña del navegador. Usa un destino aprobado y sigue el proceso de tu organización para archivos restringidos. Conserva el original hasta que la copia se haya revisado y aceptado."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cambiar el nombre de un PDF elimina los metadatos?",
+            "a": "No. Renombrar cambia el nombre externo del archivo, no las propiedades guardadas dentro del PDF. Usa Editar metadatos o Eliminar metadatos para revisar esos campos."
+          },
+          {
+            "q": "¿Qué pueden mostrar los metadatos de un PDF?",
+            "a": "Las propiedades estándar pueden incluir autor, título, asunto, aplicación y fecha; el PDF también puede tener XMP. El contenido exacto depende del documento y del programa que lo creó."
+          },
+          {
+            "q": "¿Cómo cambio el autor de un PDF?",
+            "a": "Abre Editar metadatos y cambia el campo de autor en una copia. Conserva el original y revisa las propiedades de la copia después de descargarla."
+          },
+          {
+            "q": "¿Editar metadatos cambia el contenido visible?",
+            "a": "No. Cambiar las propiedades internas no elimina texto, firmas ni comentarios visibles. Para ocultar contenido de una página, usa una herramienta de redacción y revisa el resultado."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -2442,6 +2583,147 @@
           {
             "q": "O que devo conferir antes de compartilhar o PDF?",
             "a": "Confira conteúdo visível, páginas, nomes, datas, valores e destinatário. A ferramenta não remove detalhes de fotos incorporadas nem comentários."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "pdf-metadata-vs-filename",
+        "slug": "pdf-metadata-vs-filename",
+        "title": "Metadados do PDF vs nome do arquivo: o que você compartilha",
+        "metaTitle": "Metadados do PDF vs nome do arquivo: o que você compartilha",
+        "metaDescription": "Compare o nome do arquivo com os metadados do PDF. Edite propriedades grátis no navegador e confira o que fica visível antes de compartilhar.",
+        "keyword": "metadados do PDF vs nome do arquivo",
+        "secondaryKeywords": [
+          "metadados do PDF vs nome do arquivo",
+          "editar metadados PDF",
+          "nome de arquivo PDF"
+        ],
+        "answer": "O nome aparece no anexo, link ou pasta que você compartilha; os metadados ficam nas propriedades internas do PDF e podem incluir título, autor, assunto e palavras-chave. Renomear não apaga os metadados. Confira os dois antes de enviar o documento.",
+        "tool": "edit-metadata",
+        "ctaLabel": "Editar metadados",
+        "body": [
+          {
+            "t": "p",
+            "x": "Nome de arquivo e metadados do PDF são coisas diferentes. O nome identifica a cópia anexada, por exemplo proposta-cliente.pdf. As propriedades internas podem guardar autor, título, assunto ou palavras-chave. Se renomear o arquivo, essas propriedades continuam no PDF. Use [Editar metadados](/tools/edit-metadata) para alterar propriedades e [Remover metadados](/tools/remove-metadata) para limpar campos padrão antes de compartilhar."
+          },
+          {
+            "t": "h2",
+            "x": "Diferença entre nome do arquivo e metadados"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Item",
+              "Onde aparece",
+              "Exemplos",
+              "Como mudar"
+            ],
+            "rows": [
+              [
+                "Nome do arquivo",
+                "No anexo, link ou pasta",
+                "relatorio-cliente-final.pdf",
+                "Renomeie a cópia no dispositivo"
+              ],
+              [
+                "Metadados do PDF",
+                "Nas propriedades do documento",
+                "Autor, título, assunto, data ou palavras-chave",
+                "Use Editar metadados ou Remover metadados"
+              ],
+              [
+                "Conteúdo visível",
+                "Nas páginas lidas pelo destinatário",
+                "Nomes, assinaturas, valores, comentários impressos",
+                "Edite ou redija com a ferramenta adequada"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Como conferir e editar metadados do PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde o PDF original",
+                "x": "Mantenha uma cópia-fonte sem alterações para revisar ou reverter se precisar."
+              },
+              {
+                "h": "Decida qual informação deve mudar",
+                "x": "Se o nome revelar cliente ou projeto, renomeie a cópia. Se as propriedades internas identificarem o autor, edite ou remova esses metadados."
+              },
+              {
+                "h": "Use o controle de propriedades",
+                "x": "Abra [Editar metadados](/tools/edit-metadata) para ajustar título, autor, assunto ou palavras-chave. Para limpar propriedades padrão e XMP, use [Remover metadados](/tools/remove-metadata)."
+              },
+              {
+                "h": "Salve uma cópia separada",
+                "x": "Escolha um nome descritivo que não revele dados desnecessários e deixe a versão clara."
+              },
+              {
+                "h": "Revise o arquivo final",
+                "x": "Confira nome, propriedades internas, conteúdo visível, anexos e destinatário antes de enviar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Edite ou remova as propriedades do PDF na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "O que revisar antes de compartilhar"
+          },
+          {
+            "t": "p",
+            "x": "O nome do arquivo costuma ser a primeira informação que alguém vê ao baixar um anexo ou abrir um link. Ele pode revelar pessoa, cliente, projeto, data ou versão interna. Metadados ficam dentro do PDF e aparecem nas propriedades do documento. Um PDF pode ter nome neutro e ainda conter o autor ou título original."
+          },
+          {
+            "t": "h2",
+            "x": "Proteja a privacidade sem confundir ferramentas"
+          },
+          {
+            "t": "p",
+            "x": "Editar metadados altera propriedades selecionadas; remover metadados limpa campos padrão como autor, título, aplicativo e data, além do XMP do documento. Nenhuma dessas ações muda automaticamente o nome do arquivo ou remove comentários e detalhes de fotos incorporadas. Depois, confira as propriedades da cópia baixada, não apenas o nome exibido na pasta."
+          },
+          {
+            "t": "h2",
+            "x": "Mantenha as versões claras"
+          },
+          {
+            "t": "p",
+            "x": "Nome e metadados não substituem a revisão do conteúdo. Confira páginas, nomes, datas, valores, assinaturas e texto visível. Se precisar remover informação que aparece na página, use [Redigir PDF](/tools/redact-pdf); apagar o autor não oculta texto visível. Uma marca-d’água visível é um rótulo, não remove propriedades internas."
+          },
+          {
+            "t": "h2",
+            "x": "Faça a conferência final"
+          },
+          {
+            "t": "p",
+            "x": "Uma ferramenta local reduz transferências desnecessárias, mas não decide quem deve receber o documento nem torna conteúdo sensível seguro por si só. Editar metadados funciona na aba do navegador. Use um destino aprovado e siga o processo da organização para arquivos restritos. Guarde o original até a cópia ser revisada e aceita."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Renomear um PDF apaga os metadados?",
+            "a": "Não. Renomear muda o nome externo do arquivo, não as propriedades dentro do PDF. Use Editar metadados ou Remover metadados para conferir esses campos."
+          },
+          {
+            "q": "O que os metadados de PDF podem mostrar?",
+            "a": "As propriedades padrão podem incluir autor, título, assunto, aplicativo e data; o PDF também pode conter XMP. O conteúdo depende do documento e do programa que o criou."
+          },
+          {
+            "q": "Como mudar o autor de um PDF?",
+            "a": "Abra Editar metadados e altere o campo de autor em uma cópia. Guarde o original e confira as propriedades da cópia baixada."
+          },
+          {
+            "q": "Editar metadados muda o conteúdo visível?",
+            "a": "Não. Alterar propriedades internas não remove texto, assinaturas ou comentários visíveis. Para ocultar conteúdo de uma página, use uma ferramenta de redação e revise o resultado."
           }
         ],
         "published": "2026-11-15",
@@ -3671,6 +3953,147 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "pdf-metadata-vs-filename",
+        "slug": "pdf-metadata-vs-filename",
+        "title": "PDF मेटाडेटा बनाम फ़ाइल नाम: क्या साझा होता है",
+        "metaTitle": "PDF मेटाडेटा बनाम फ़ाइल नाम: क्या साझा होता है",
+        "metaDescription": "PDF फ़ाइल नाम और मेटाडेटा की तुलना करें। ब्राउज़र में गुण मुफ़्त बदलें और साझा करने से पहले दिखाई देने वाली जानकारी जाँचें।",
+        "keyword": "PDF मेटाडेटा बनाम फ़ाइल नाम",
+        "secondaryKeywords": [
+          "PDF मेटाडेटा बनाम फ़ाइल नाम",
+          "PDF मेटाडेटा बदलें",
+          "PDF फ़ाइल नाम"
+        ],
+        "answer": "फ़ाइल का नाम साझा किए गए अटैचमेंट, लिंक या फ़ोल्डर में दिखता है; मेटाडेटा PDF के अंदर की प्रॉपर्टी है, जिसमें शीर्षक, लेखक, विषय और कीवर्ड हो सकते हैं। नाम बदलने से मेटाडेटा नहीं मिटता। दस्तावेज़ भेजने से पहले दोनों जाँचें।",
+        "tool": "edit-metadata",
+        "ctaLabel": "मेटाडेटा संपादित करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "फ़ाइल नाम और PDF मेटाडेटा अलग चीज़ें हैं। नाम उस कॉपी की पहचान करता है जिसे आप अटैच करते हैं, जैसे प्रस्ताव-ग्राहक.pdf। अंदरूनी प्रॉपर्टी में लेखक, शीर्षक, विषय या कीवर्ड हो सकते हैं। फ़ाइल रीनेम करने पर ये PDF में बने रहते हैं। साझा करने से पहले गुण बदलने के लिए [मेटाडेटा संपादित करें](/tools/edit-metadata) और सामान्य फ़ील्ड साफ़ करने के लिए [मेटाडेटा हटाएँ](/tools/remove-metadata) इस्तेमाल करें।"
+          },
+          {
+            "t": "h2",
+            "x": "फ़ाइल नाम और मेटाडेटा में अंतर"
+          },
+          {
+            "t": "table",
+            "head": [
+              "आइटम",
+              "कहाँ दिखता है",
+              "उदाहरण",
+              "कैसे बदलें"
+            ],
+            "rows": [
+              [
+                "फ़ाइल नाम",
+                "अटैचमेंट, लिंक या फ़ोल्डर में",
+                "रिपोर्ट-ग्राहक-अंतिम.pdf",
+                "डिवाइस पर कॉपी का नाम बदलें"
+              ],
+              [
+                "PDF मेटाडेटा",
+                "दस्तावेज़ की प्रॉपर्टी में",
+                "लेखक, शीर्षक, विषय, तारीख या कीवर्ड",
+                "मेटाडेटा संपादित या हटाएँ"
+              ],
+              [
+                "दिखने वाली सामग्री",
+                "प्राप्तकर्ता द्वारा पढ़े जाने वाले पेज पर",
+                "नाम, हस्ताक्षर, रकम, प्रिंटेड टिप्पणी",
+                "सही एडिट या रेडैक्ट टूल लें"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "PDF मेटाडेटा कैसे देखें और बदलें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल PDF रखें",
+                "x": "रिव्यू या वापस जाने के लिए अपरिवर्तित स्रोत कॉपी सुरक्षित रखें।"
+              },
+              {
+                "h": "तय करें कौन सी जानकारी बदलनी है",
+                "x": "नाम में ग्राहक या प्रोजेक्ट दिखता हो तो कॉपी रीनेम करें। अंदरूनी प्रॉपर्टी लेखक बताती हो तो मेटाडेटा बदलें या हटाएँ।"
+              },
+              {
+                "h": "प्रॉपर्टी नियंत्रण इस्तेमाल करें",
+                "x": "शीर्षक, लेखक, विषय या कीवर्ड बदलने के लिए [मेटाडेटा संपादित करें](/tools/edit-metadata) खोलें। सामान्य फ़ील्ड और XMP साफ़ करने के लिए [मेटाडेटा हटाएँ](/tools/remove-metadata)।"
+              },
+              {
+                "h": "अलग कॉपी सहेजें",
+                "x": "ऐसा स्पष्ट नाम चुनें जो अनावश्यक जानकारी न बताए और संस्करण समझाए।"
+              },
+              {
+                "h": "अंतिम फ़ाइल की समीक्षा करें",
+                "x": "भेजने से पहले नाम, अंदरूनी गुण, दृश्य सामग्री, अटैचमेंट और प्राप्तकर्ता जाँचें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "PDF प्रॉपर्टी टैब में बदलें या हटाएँ। मुफ़्त, साइनअप नहीं, वॉटरमार्क नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "शेयर करने से पहले क्या जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "फ़ाइल नाम अक्सर अटैचमेंट डाउनलोड करते या लिंक खोलते समय सबसे पहले दिखता है। उससे व्यक्ति, ग्राहक, प्रोजेक्ट, तारीख या अंदरूनी संस्करण पता चल सकता है। मेटाडेटा PDF के अंदर होता है और दस्तावेज़ प्रॉपर्टी में दिख सकता है। फ़ाइल का नाम साधारण हो, फिर भी PDF में मूल लेखक या शीर्षक रह सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "टूलों में फर्क समझकर गोपनीयता बचाएँ"
+          },
+          {
+            "t": "p",
+            "x": "मेटाडेटा संपादित करना चुनी हुई प्रॉपर्टी बदलता है; मेटाडेटा हटाना लेखक, शीर्षक, ऐप और तारीख जैसे सामान्य फ़ील्ड तथा दस्तावेज़ XMP साफ़ करता है। इनमें से कोई भी काम अपने आप फ़ाइल नाम नहीं बदलता और न ही टिप्पणियाँ या एम्बेडेड फ़ोटो विवरण हटाता है। बदलाव के बाद डाउनलोड की गई कॉपी की प्रॉपर्टी जाँचें, सिर्फ फ़ोल्डर का नाम नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "संस्करण स्पष्ट रखें"
+          },
+          {
+            "t": "p",
+            "x": "नाम और मेटाडेटा सामग्री की समीक्षा का विकल्प नहीं हैं। पेज, नाम, तारीख, रकम, हस्ताक्षर और दिखने वाला पाठ देखें। पेज पर मौजूद निजी जानकारी हटानी हो तो [PDF Redact](/tools/redact-pdf) लें; लेखक मिटाने से दृश्य पाठ नहीं छिपता। दिखने वाला वॉटरमार्क केवल लेबल है, अंदरूनी प्रॉपर्टी नहीं मिटाता।"
+          },
+          {
+            "t": "h2",
+            "x": "अंतिम जाँच पूरी करें"
+          },
+          {
+            "t": "p",
+            "x": "स्थानीय टूल अनावश्यक फ़ाइल ट्रांसफ़र घटाता है, पर यह तय नहीं करता कि दस्तावेज़ किसे भेजना चाहिए या संवेदनशील सामग्री सुरक्षित है। मेटाडेटा संपादन टैब में चलता है। स्वीकृत गंतव्य और संगठन की प्रतिबंधित फ़ाइल प्रक्रिया अपनाएँ। समीक्षा पूरी होने तक मूल फ़ाइल रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF का नाम बदलने से मेटाडेटा हटता है?",
+            "a": "नहीं। रीनेम करने से बाहरी फ़ाइल नाम बदलता है, PDF के अंदर की प्रॉपर्टी नहीं। उन फ़ील्ड के लिए मेटाडेटा संपादित या हटाएँ।"
+          },
+          {
+            "q": "PDF मेटाडेटा में क्या दिख सकता है?",
+            "a": "सामान्य प्रॉपर्टी में लेखक, शीर्षक, विषय, ऐप और तारीख हो सकती है; PDF में XMP भी हो सकता है। वास्तविक सामग्री दस्तावेज़ और उसे बनाने वाले ऐप पर निर्भर करती है।"
+          },
+          {
+            "q": "PDF लेखक कैसे बदलूँ?",
+            "a": "मेटाडेटा संपादित करें खोलकर कॉपी में लेखक फ़ील्ड बदलें। मूल रखें और डाउनलोड की गई कॉपी की प्रॉपर्टी जाँचें।"
+          },
+          {
+            "q": "क्या मेटाडेटा बदलने से दिखाई देने वाला पाठ बदलता है?",
+            "a": "नहीं। अंदरूनी प्रॉपर्टी बदलने से दिखने वाला पाठ, हस्ताक्षर या टिप्पणियाँ नहीं मिटतीं। पेज का पाठ छिपाने के लिए रेडैक्ट टूल इस्तेमाल करें और नतीजा जाँचें।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -4891,6 +5314,147 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "pdf-metadata-vs-filename",
+        "slug": "pdf-metadata-vs-filename",
+        "title": "بيانات PDF الوصفية مقابل اسم الملف: ما الذي تتم مشاركته",
+        "metaTitle": "بيانات PDF الوصفية مقابل اسم الملف: ما الذي تتم مشاركته",
+        "metaDescription": "قارن بين اسم الملف وبيانات PDF الوصفية. عدّل الخصائص مجانًا في المتصفح وافحص المعلومات الظاهرة قبل المشاركة.",
+        "keyword": "بيانات PDF الوصفية مقابل اسم الملف",
+        "secondaryKeywords": [
+          "بيانات PDF الوصفية مقابل اسم الملف",
+          "تحرير بيانات PDF الوصفية",
+          "اسم ملف PDF"
+        ],
+        "answer": "يظهر اسم الملف في المرفق أو الرابط أو المجلد الذي تشاركه؛ أما البيانات الوصفية فتوجد داخل خصائص PDF وقد تشمل العنوان والمؤلف والموضوع والكلمات المفتاحية. إعادة تسمية الملف لا تمسحها. افحص الاثنين قبل الإرسال.",
+        "tool": "edit-metadata",
+        "ctaLabel": "تحرير البيانات الوصفية",
+        "body": [
+          {
+            "t": "p",
+            "x": "اسم الملف والبيانات الوصفية في PDF نوعان مختلفان. يعرّف الاسم النسخة المرفقة، مثل عرض-العميل.pdf. وقد تحفظ الخصائص الداخلية المؤلف والعنوان والموضوع والكلمات المفتاحية. لا تحذف إعادة تسمية الملف هذه الخصائص. استخدم [تحرير البيانات الوصفية](/tools/edit-metadata) لتعديلها و[إزالة البيانات الوصفية](/tools/remove-metadata) لمسح الحقول القياسية قبل المشاركة."
+          },
+          {
+            "t": "h2",
+            "x": "الفرق بين اسم الملف وبيانات PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "العنصر",
+              "أين يظهر",
+              "أمثلة",
+              "كيفية تغييره"
+            ],
+            "rows": [
+              [
+                "اسم الملف",
+                "في المرفق أو الرابط أو المجلد",
+                "تقرير-العميل-نهائي.pdf",
+                "أعد تسمية النسخة على جهازك"
+              ],
+              [
+                "بيانات PDF الوصفية",
+                "داخل خصائص المستند",
+                "المؤلف والعنوان والموضوع والتاريخ والكلمات المفتاحية",
+                "استخدم تحرير أو إزالة البيانات الوصفية"
+              ],
+              [
+                "المحتوى الظاهر",
+                "على صفحات يقرؤها المستلم",
+                "الأسماء والتوقيعات والمبالغ والتعليقات المطبوعة",
+                "حرر المحتوى أو نقحه بالأداة المناسبة"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "كيفية مراجعة بيانات PDF وتعديلها"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بملف PDF الأصلي",
+                "x": "احفظ نسخة مصدر غير معدلة لمراجعتها أو الرجوع إليها."
+              },
+              {
+                "h": "حدد المعلومات التي تريد تغييرها",
+                "x": "إذا كشف الاسم عن عميل أو مشروع فأعد تسمية النسخة. وإذا حددت الخصائص الداخلية المؤلف فعدّل البيانات الوصفية أو أزلها."
+              },
+              {
+                "h": "استخدم أداة الخصائص",
+                "x": "افتح [تحرير البيانات الوصفية](/tools/edit-metadata) لتعديل العنوان أو المؤلف أو الموضوع أو الكلمات المفتاحية. ولمسح الحقول القياسية وXMP استخدم [إزالة البيانات الوصفية](/tools/remove-metadata)."
+              },
+              {
+                "h": "احفظ نسخة منفصلة",
+                "x": "اختر اسمًا واضحًا للغرض لا يكشف معلومات غير لازمة ويميز الإصدار."
+              },
+              {
+                "h": "راجع الملف النهائي",
+                "x": "افحص الاسم والخصائص الداخلية والمحتوى الظاهر والمرفقات والمستلم قبل الإرسال."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "عدّل خصائص PDF أو أزلها داخل التبويب. مجانًا وبلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي تراجعه قبل المشاركة"
+          },
+          {
+            "t": "p",
+            "x": "غالبًا ما يكون اسم الملف أول ما يراه الآخرون عند تنزيل مرفق أو فتح رابط. وقد يكشف اسمًا أو عميلًا أو مشروعًا أو تاريخًا أو إصدارًا داخليًا. توجد البيانات الوصفية داخل PDF ويمكن عرضها ضمن خصائص المستند. وقد يحتوي PDF باسم محايد على المؤلف أو العنوان الأصلي."
+          },
+          {
+            "t": "h2",
+            "x": "احم الخصوصية باستخدام الأداة المناسبة"
+          },
+          {
+            "t": "p",
+            "x": "يعدل تحرير البيانات الوصفية الخصائص المختارة؛ أما الإزالة فتمسح الحقول القياسية مثل المؤلف والعنوان والتطبيق والتاريخ وXMP الخاص بالمستند. ولا يغير أي منهما اسم الملف تلقائيًا أو يحذف التعليقات وتفاصيل الصور المضمنة. بعد التعديل راجع خصائص النسخة المنزلة، لا اسم المجلد فقط."
+          },
+          {
+            "t": "h2",
+            "x": "حافظ على وضوح الإصدارات"
+          },
+          {
+            "t": "p",
+            "x": "لا يغني الاسم أو البيانات الوصفية عن مراجعة المحتوى. افحص الصفحات والأسماء والتواريخ والمبالغ والتوقيعات والنص الظاهر. إذا أردت إزالة معلومة ظاهرة على الصفحة فاستخدم [تنقيح PDF](/tools/redact-pdf)؛ حذف المؤلف لا يخفي النص الظاهر. العلامة المائية الظاهرة تسمية فقط ولا تمحو الخصائص الداخلية."
+          },
+          {
+            "t": "h2",
+            "x": "أكمل المراجعة النهائية"
+          },
+          {
+            "t": "p",
+            "x": "تقلل الأداة المحلية نقل الملفات غير الضروري، لكنها لا تحدد من ينبغي أن يتلقى المستند ولا تجعل المحتوى الحساس آمنًا تلقائيًا. يعمل تحرير البيانات الوصفية في تبويب المتصفح. استخدم وجهة معتمدة واتبع إجراءات مؤسستك للملفات المقيدة. احتفظ بالأصل حتى الموافقة على النسخة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل تؤدي إعادة تسمية PDF إلى حذف البيانات الوصفية؟",
+            "a": "لا. تغير إعادة التسمية الاسم الخارجي فقط، لا الخصائص داخل PDF. استخدم تحرير أو إزالة البيانات الوصفية لمعالجة هذه الحقول."
+          },
+          {
+            "q": "ما الذي قد تظهره بيانات PDF الوصفية؟",
+            "a": "قد تشمل الخصائص القياسية المؤلف والعنوان والموضوع والتطبيق والتاريخ، وقد يتضمن PDF بيانات XMP. يختلف المحتوى حسب المستند والبرنامج الذي أنشأه."
+          },
+          {
+            "q": "كيف أغير مؤلف PDF؟",
+            "a": "افتح تحرير البيانات الوصفية وعدّل حقل المؤلف في نسخة. احتفظ بالأصل وافحص خصائص النسخة المنزلة."
+          },
+          {
+            "q": "هل يغير تحرير البيانات الوصفية المحتوى الظاهر؟",
+            "a": "لا. لا يحذف تعديل الخصائص الداخلية النص الظاهر أو التوقيعات أو التعليقات. لإخفاء محتوى الصفحة استخدم أداة التنقيح وراجع النتيجة."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -6107,6 +6671,147 @@
           {
             "q": "শেয়ারের আগে কী পরীক্ষা করব?",
             "a": "দৃশ্যমান বিষয়বস্তু, পৃষ্ঠা ক্রম, নাম, তারিখ, অঙ্ক ও প্রাপক দেখুন। এমবেড করা ছবির বিবরণ বা মন্তব্য টুলটি সরায় না।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "pdf-metadata-vs-filename",
+        "slug": "pdf-metadata-vs-filename",
+        "title": "PDF মেটাডেটা বনাম ফাইলের নাম: কী শেয়ার হয়",
+        "metaTitle": "PDF মেটাডেটা বনাম ফাইলের নাম: কী শেয়ার হয়",
+        "metaDescription": "PDF ফাইলের নাম ও মেটাডেটা তুলনা করুন। ব্রাউজারে বিনামূল্যে প্রপার্টি বদলান এবং শেয়ারের আগে তথ্য পরীক্ষা করুন।",
+        "keyword": "PDF মেটাডেটা বনাম ফাইলের নাম",
+        "secondaryKeywords": [
+          "PDF মেটাডেটা বনাম ফাইলের নাম",
+          "PDF মেটাডেটা সম্পাদনা",
+          "PDF ফাইলের নাম"
+        ],
+        "answer": "আপনি যে অ্যাটাচমেন্ট, লিংক বা ফোল্ডার শেয়ার করেন সেখানে ফাইলের নাম দেখা যায়; PDF-এর ভেতরের প্রপার্টিতে মেটাডেটা থাকে, যেমন শিরোনাম, লেখক, বিষয় ও কীওয়ার্ড। নাম বদলালে মেটাডেটা মুছে না। পাঠানোর আগে দুটোই দেখুন।",
+        "tool": "edit-metadata",
+        "ctaLabel": "মেটাডেটা সম্পাদনা",
+        "body": [
+          {
+            "t": "p",
+            "x": "ফাইলের নাম ও PDF মেটাডেটা আলাদা তথ্য। নামটি অ্যাটাচ করা কপিকে চেনে, যেমন client-proposal.pdf। ভেতরের প্রপার্টিতে লেখক, শিরোনাম, বিষয় বা কীওয়ার্ড থাকতে পারে। ফাইলের নাম বদলালেও এই তথ্য PDF-এ থাকে। শেয়ারের আগে প্রপার্টি বদলাতে [মেটাডেটা সম্পাদনা](/tools/edit-metadata) এবং সাধারণ ফিল্ড পরিষ্কার করতে [মেটাডেটা সরান](/tools/remove-metadata) ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ফাইলের নাম ও PDF মেটাডেটার পার্থক্য"
+          },
+          {
+            "t": "table",
+            "head": [
+              "বিষয়",
+              "কোথায় দেখা যায়",
+              "উদাহরণ",
+              "কীভাবে বদলাবেন"
+            ],
+            "rows": [
+              [
+                "ফাইলের নাম",
+                "অ্যাটাচমেন্ট, লিংক বা ফোল্ডারে",
+                "report-client-final.pdf",
+                "ডিভাইসে কপির নাম বদলান"
+              ],
+              [
+                "PDF মেটাডেটা",
+                "ডকুমেন্ট প্রপার্টিতে",
+                "লেখক, শিরোনাম, বিষয়, তারিখ বা কীওয়ার্ড",
+                "মেটাডেটা সম্পাদনা বা সরান"
+              ],
+              [
+                "দৃশ্যমান বিষয়বস্তু",
+                "প্রাপক যে পৃষ্ঠা পড়েন",
+                "নাম, স্বাক্ষর, অঙ্ক, ছাপা মন্তব্য",
+                "উপযুক্ত টুলে সম্পাদনা বা রেড্যাক্ট"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "PDF মেটাডেটা দেখা ও বদলানোর উপায়"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল PDF রেখে দিন",
+                "x": "পরীক্ষা বা ফিরিয়ে যাওয়ার জন্য অপরিবর্তিত উৎস কপি রাখুন।"
+              },
+              {
+                "h": "কোন তথ্য বদলাবেন ঠিক করুন",
+                "x": "নামে গ্রাহক বা প্রকল্প প্রকাশ পেলে কপি রিনেম করুন। ভেতরের প্রপার্টিতে লেখক থাকলে মেটাডেটা সম্পাদনা বা মুছুন।"
+              },
+              {
+                "h": "প্রপার্টি টুল ব্যবহার করুন",
+                "x": "শিরোনাম, লেখক, বিষয় বা কীওয়ার্ড বদলাতে [মেটাডেটা সম্পাদনা](/tools/edit-metadata) খুলুন। সাধারণ ফিল্ড ও XMP পরিষ্কার করতে [মেটাডেটা সরান](/tools/remove-metadata)।"
+              },
+              {
+                "h": "আলাদা কপি সেভ করুন",
+                "x": "অপ্রয়োজনীয় তথ্য না জানিয়ে উদ্দেশ্য ও সংস্করণ বোঝায় এমন নাম দিন।"
+              },
+              {
+                "h": "শেষ ফাইল পরীক্ষা করুন",
+                "x": "পাঠানোর আগে নাম, ভেতরের প্রপার্টি, দৃশ্যমান বিষয়বস্তু, অ্যাটাচমেন্ট ও প্রাপক যাচাই করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "ট্যাবে PDF প্রপার্টি সম্পাদনা বা সরান। বিনামূল্যে, সাইনআপ নেই, ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "শেয়ারের আগে কী পরীক্ষা করবেন"
+          },
+          {
+            "t": "p",
+            "x": "অ্যাটাচমেন্ট নামালে বা লিংক খুললে ফাইলের নামই সাধারণত প্রথমে চোখে পড়ে। এতে ব্যক্তি, গ্রাহক, প্রকল্প, তারিখ বা অভ্যন্তরীণ সংস্করণ প্রকাশ হতে পারে। মেটাডেটা PDF-এর ভেতরে থাকে এবং ডকুমেন্ট প্রপার্টিতে দেখা যায়। সাধারণ নামের PDF-তেও মূল লেখক বা শিরোনাম থেকে যেতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "সঠিক টুলে গোপনীয়তা রক্ষা"
+          },
+          {
+            "t": "p",
+            "x": "মেটাডেটা সম্পাদনা নির্বাচিত প্রপার্টি বদলায়; মেটাডেটা সরানো লেখক, শিরোনাম, অ্যাপ, তারিখের মতো সাধারণ ফিল্ড এবং ডকুমেন্ট XMP পরিষ্কার করে। কোনোটিই নিজে থেকে ফাইলের নাম বদলায় না বা মন্তব্য ও এমবেড করা ছবির বিবরণ সরায় না। পরিবর্তনের পরে ডাউনলোড কপির প্রপার্টি দেখুন, শুধু ফোল্ডারের নাম নয়।"
+          },
+          {
+            "t": "h2",
+            "x": "ফাইল সংস্করণ স্পষ্ট রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "নাম বা মেটাডেটা বিষয়বস্তু রিভিউয়ের বিকল্প নয়। পৃষ্ঠা, নাম, তারিখ, অঙ্ক, স্বাক্ষর ও দৃশ্যমান লেখা পরীক্ষা করুন। পৃষ্ঠায় দেখা যায় এমন তথ্য সরাতে [PDF Redact](/tools/redact-pdf) ব্যবহার করুন; লেখক মুছলে দৃশ্যমান লেখা লুকায় না। দৃশ্যমান ওয়াটারমার্ক শুধু লেবেল, ভেতরের প্রপার্টি মুছে না।"
+          },
+          {
+            "t": "h2",
+            "x": "শেষ পরীক্ষা সম্পন্ন করুন"
+          },
+          {
+            "t": "p",
+            "x": "স্থানীয় টুল অপ্রয়োজনীয় ফাইল স্থানান্তর কমায়, কিন্তু কে ডকুমেন্ট পাবে তা ঠিক করে না এবং সংবেদনশীল বিষয়বস্তু শেয়ারের জন্য নিরাপদ করে না। মেটাডেটা সম্পাদনা ব্রাউজার ট্যাবে চলে। অনুমোদিত গন্তব্য ব্যবহার করুন এবং সীমাবদ্ধ ফাইলের জন্য প্রতিষ্ঠানের নিয়ম মানুন। কপি অনুমোদিত না হওয়া পর্যন্ত মূল ফাইল রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF রিনেম করলে মেটাডেটা মুছে যায়?",
+            "a": "না। রিনেম করলে বাহ্যিক নাম বদলায়, PDF-এর ভেতরের প্রপার্টি নয়। সেই ফিল্ডের জন্য মেটাডেটা সম্পাদনা বা সরান।"
+          },
+          {
+            "q": "PDF মেটাডেটায় কী দেখা যেতে পারে?",
+            "a": "সাধারণ প্রপার্টিতে লেখক, শিরোনাম, বিষয়, অ্যাপ ও তারিখ থাকতে পারে; PDF-এ XMP-ও থাকতে পারে। নির্দিষ্ট বিষয়বস্তু ডকুমেন্ট ও তৈরির সফটওয়্যারের ওপর নির্ভর করে।"
+          },
+          {
+            "q": "PDF লেখকের নাম কীভাবে বদলাব?",
+            "a": "মেটাডেটা সম্পাদনা খুলে কপিতে লেখকের ফিল্ড বদলান। মূল রাখুন এবং ডাউনলোড কপির প্রপার্টি যাচাই করুন।"
+          },
+          {
+            "q": "মেটাডেটা বদলালে দৃশ্যমান বিষয়বস্তু বদলায়?",
+            "a": "না। ভেতরের প্রপার্টি বদলালে দৃশ্যমান লেখা, স্বাক্ষর বা মন্তব্য মুছে না। পৃষ্ঠার তথ্য ঢাকতে রেড্যাক্ট টুল ব্যবহার করে ফল পরীক্ষা করুন।"
           }
         ],
         "published": "2026-11-15",
@@ -7336,6 +8041,147 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "pdf-metadata-vs-filename",
+        "slug": "pdf-metadata-vs-filename",
+        "title": "Siêu dữ liệu PDF và tên tệp: thông tin nào được chia sẻ",
+        "metaTitle": "Siêu dữ liệu PDF và tên tệp: thông tin nào được chia sẻ",
+        "metaDescription": "So sánh tên tệp với siêu dữ liệu PDF. Sửa thuộc tính miễn phí trong trình duyệt và kiểm tra thông tin trước khi chia sẻ.",
+        "keyword": "siêu dữ liệu PDF và tên tệp",
+        "secondaryKeywords": [
+          "siêu dữ liệu PDF và tên tệp",
+          "sửa siêu dữ liệu PDF",
+          "tên tệp PDF"
+        ],
+        "answer": "Tên tệp hiện trong tệp đính kèm, liên kết hoặc thư mục bạn chia sẻ; siêu dữ liệu nằm trong thuộc tính PDF, có thể gồm tiêu đề, tác giả, chủ đề và từ khóa. Đổi tên không xóa siêu dữ liệu. Hãy kiểm tra cả hai trước khi gửi tài liệu.",
+        "tool": "edit-metadata",
+        "ctaLabel": "Sửa siêu dữ liệu",
+        "body": [
+          {
+            "t": "p",
+            "x": "Tên tệp và siêu dữ liệu PDF là hai thứ khác nhau. Tên nhận diện bản bạn đính kèm, chẳng hạn de-xuat-khach-hang.pdf. Thuộc tính bên trong có thể lưu tác giả, tiêu đề, chủ đề hoặc từ khóa. Đổi tên tệp không xóa những thuộc tính đó. Dùng [Sửa siêu dữ liệu](/tools/edit-metadata) để đổi thuộc tính và [Xóa siêu dữ liệu](/tools/remove-metadata) để làm sạch trường chuẩn trước khi chia sẻ."
+          },
+          {
+            "t": "h2",
+            "x": "Khác nhau giữa tên tệp và siêu dữ liệu"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục",
+              "Hiển thị ở đâu",
+              "Ví dụ",
+              "Cách thay đổi"
+            ],
+            "rows": [
+              [
+                "Tên tệp",
+                "Tệp đính kèm, liên kết hoặc thư mục",
+                "bao-cao-khach-hang-cuoi.pdf",
+                "Đổi tên bản sao trên thiết bị"
+              ],
+              [
+                "Siêu dữ liệu PDF",
+                "Trong thuộc tính tài liệu",
+                "Tác giả, tiêu đề, chủ đề, ngày hoặc từ khóa",
+                "Dùng Sửa hoặc Xóa siêu dữ liệu"
+              ],
+              [
+                "Nội dung hiển thị",
+                "Trên các trang người nhận đọc",
+                "Tên, chữ ký, số tiền, ghi chú in trên trang",
+                "Chỉnh sửa hoặc che bằng đúng công cụ"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Cách kiểm tra và sửa siêu dữ liệu PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ lại PDF gốc",
+                "x": "Lưu bản nguồn chưa chỉnh sửa để xem lại hoặc khôi phục khi cần."
+              },
+              {
+                "h": "Xác định thông tin cần thay đổi",
+                "x": "Nếu tên tệp tiết lộ khách hàng hoặc dự án, hãy đổi tên bản sao. Nếu thuộc tính bên trong nêu tác giả, hãy sửa hoặc xóa siêu dữ liệu."
+              },
+              {
+                "h": "Dùng công cụ thuộc tính",
+                "x": "Mở [Sửa siêu dữ liệu](/tools/edit-metadata) để chỉnh tiêu đề, tác giả, chủ đề hoặc từ khóa. Để xóa trường chuẩn và XMP, dùng [Xóa siêu dữ liệu](/tools/remove-metadata)."
+              },
+              {
+                "h": "Lưu một bản sao riêng",
+                "x": "Chọn tên rõ mục đích, không tiết lộ thông tin thừa và phân biệt được phiên bản."
+              },
+              {
+                "h": "Kiểm tra tệp cuối",
+                "x": "Trước khi gửi, kiểm tra tên, thuộc tính, nội dung hiển thị, tệp đính kèm và người nhận."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Sửa hoặc xóa thuộc tính PDF ngay trong tab. Miễn phí, không đăng ký, không hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Cần kiểm tra gì trước khi chia sẻ"
+          },
+          {
+            "t": "p",
+            "x": "Tên tệp thường là thông tin đầu tiên người khác thấy khi tải tệp đính kèm hoặc mở liên kết. Nó có thể lộ tên người, khách hàng, dự án, ngày hoặc phiên bản nội bộ. Siêu dữ liệu nằm trong PDF và có thể xem ở phần thuộc tính tài liệu. Tên tệp trung tính vẫn có thể chứa tác giả hoặc tiêu đề gốc bên trong."
+          },
+          {
+            "t": "h2",
+            "x": "Bảo vệ riêng tư mà không nhầm công cụ"
+          },
+          {
+            "t": "p",
+            "x": "Sửa siêu dữ liệu thay đổi các thuộc tính được chọn; xóa siêu dữ liệu làm sạch trường chuẩn như tác giả, tiêu đề, ứng dụng, ngày và XMP cấp tài liệu. Không thao tác nào tự đổi tên tệp hoặc xóa bình luận và chi tiết ảnh nhúng. Sau khi sửa, hãy kiểm tra thuộc tính của bản sao đã tải xuống, không chỉ tên trong thư mục."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ phiên bản dễ nhận biết"
+          },
+          {
+            "t": "p",
+            "x": "Tên và siêu dữ liệu không thay cho việc đọc nội dung. Kiểm tra trang, tên, ngày, số tiền, chữ ký và chữ hiển thị. Nếu cần xóa thông tin nằm trên trang, dùng [Redact PDF](/tools/redact-pdf); xóa tác giả không ẩn được chữ nhìn thấy. Hình mờ chỉ thêm nhãn, không xóa thuộc tính bên trong."
+          },
+          {
+            "t": "h2",
+            "x": "Hoàn tất bước kiểm tra cuối"
+          },
+          {
+            "t": "p",
+            "x": "Công cụ cục bộ giảm truyền tệp không cần thiết nhưng không quyết định ai nên nhận tài liệu và không tự làm nội dung nhạy cảm an toàn để chia sẻ. Sửa siêu dữ liệu chạy trong tab trình duyệt. Hãy dùng nơi nhận được phê duyệt và theo quy trình của tổ chức với tài liệu hạn chế. Giữ bản gốc đến khi bản sao được duyệt."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Đổi tên PDF có xóa siêu dữ liệu không?",
+            "a": "Không. Đổi tên chỉ thay tên bên ngoài, không sửa thuộc tính bên trong PDF. Dùng Sửa hoặc Xóa siêu dữ liệu để xử lý các trường đó."
+          },
+          {
+            "q": "Siêu dữ liệu PDF có thể hiển thị gì?",
+            "a": "Thuộc tính chuẩn có thể gồm tác giả, tiêu đề, chủ đề, ứng dụng và ngày; PDF cũng có thể có XMP. Nội dung cụ thể tùy tài liệu và phần mềm tạo ra."
+          },
+          {
+            "q": "Cách đổi tác giả PDF?",
+            "a": "Mở Sửa siêu dữ liệu và thay trường tác giả trên một bản sao. Giữ bản gốc và kiểm tra thuộc tính của bản tải xuống."
+          },
+          {
+            "q": "Sửa siêu dữ liệu có làm đổi nội dung nhìn thấy không?",
+            "a": "Không. Sửa thuộc tính bên trong không xóa chữ, chữ ký hoặc bình luận hiển thị. Muốn che nội dung trên trang, hãy dùng công cụ redact và kiểm tra kết quả."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -8552,6 +9398,147 @@
           {
             "q": "分享 PDF 前要检查什么？",
             "a": "检查可见内容、页序、姓名、日期、金额和接收方。工具不会删除嵌入照片详情或批注。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "pdf-metadata-vs-filename",
+        "slug": "pdf-metadata-vs-filename",
+        "title": "PDF 元数据与文件名：分享时会泄露什么",
+        "metaTitle": "PDF 元数据与文件名：分享时会泄露什么",
+        "metaDescription": "比较 PDF 文件名与内部元数据。在浏览器中免费编辑作者、标题等属性；改名不会删除元数据，分享前请检查副本。",
+        "keyword": "PDF 元数据与文件名",
+        "secondaryKeywords": [
+          "PDF 元数据与文件名",
+          "编辑 PDF 元数据",
+          "PDF 文件名"
+        ],
+        "answer": "文件名会显示在你分享的附件、链接或文件夹中；元数据保存在 PDF 属性内，可能包含标题、作者、主题和关键词。重命名不会清除元数据。发送文件前应检查两者。",
+        "tool": "edit-metadata",
+        "ctaLabel": "编辑元数据",
+        "body": [
+          {
+            "t": "p",
+            "x": "文件名和 PDF 元数据是两类信息。文件名用于识别附件副本，例如客户提案.pdf。PDF 内部属性可能保存作者、标题、主题或关键词。重命名文件不会删除这些属性。分享前可使用[编辑元数据](/tools/edit-metadata)修改属性，或用[删除元数据](/tools/remove-metadata)清理标准字段。"
+          },
+          {
+            "t": "h2",
+            "x": "文件名与 PDF 元数据的区别"
+          },
+          {
+            "t": "table",
+            "head": [
+              "项目",
+              "显示位置",
+              "示例",
+              "如何修改"
+            ],
+            "rows": [
+              [
+                "文件名",
+                "附件、链接或文件夹中",
+                "客户报告-最终版.pdf",
+                "在设备上重命名副本"
+              ],
+              [
+                "PDF 元数据",
+                "文档属性中",
+                "作者、标题、主题、日期或关键词",
+                "使用编辑或删除元数据工具"
+              ],
+              [
+                "可见内容",
+                "接收者阅读的页面上",
+                "姓名、签名、金额、印在页面上的备注",
+                "用适当工具编辑或脱敏"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "如何查看和编辑 PDF 元数据"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留原始 PDF",
+                "x": "保存一份未修改的源文件，以便检查或恢复。"
+              },
+              {
+                "h": "确定要修改的信息",
+                "x": "如果文件名暴露客户或项目，请重命名副本。如果内部属性显示作者，请修改或删除元数据。"
+              },
+              {
+                "h": "使用属性工具",
+                "x": "打开[编辑元数据](/tools/edit-metadata)修改标题、作者、主题或关键词。要清理标准属性和 XMP，请用[删除元数据](/tools/remove-metadata)。"
+              },
+              {
+                "h": "另存单独副本",
+                "x": "使用说明用途且不会泄露多余信息的文件名，并标清版本。"
+              },
+              {
+                "h": "检查最终文件",
+                "x": "发送前检查名称、内部属性、可见内容、附件和接收者。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "在当前标签页编辑或删除 PDF 属性。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "分享前应检查什么"
+          },
+          {
+            "t": "p",
+            "x": "下载附件或打开链接时，文件名往往是别人首先看到的信息。它可能暴露姓名、客户、项目、日期或内部版本。元数据保存在 PDF 内部，可在文档属性中查看。即使文件名很普通，PDF 中仍可能保留原作者或标题。"
+          },
+          {
+            "t": "h2",
+            "x": "正确使用隐私工具"
+          },
+          {
+            "t": "p",
+            "x": "编辑元数据会修改选定属性；删除元数据会清理作者、标题、应用程序、日期等标准字段以及文档级 XMP。这两种操作都不会自动重命名文件，也不会删除批注或嵌入照片详情。修改后，请检查下载副本的属性，不要只看文件夹中的名称。"
+          },
+          {
+            "t": "h2",
+            "x": "保持文件版本清晰"
+          },
+          {
+            "t": "p",
+            "x": "文件名和元数据都不能代替内容审核。请检查页面、姓名、日期、金额、签名和可见文字。如需删除页面上可见的私人信息，请用[PDF 脱敏](/tools/redact-pdf)；删除作者不会隐藏页面文字。可见水印只是标签，不会清除内部属性。"
+          },
+          {
+            "t": "h2",
+            "x": "完成最后检查"
+          },
+          {
+            "t": "p",
+            "x": "本地工具可以减少不必要的文件传输，但不能替你判断接收对象，也不能自动让敏感内容适合分享。编辑元数据在浏览器标签页中运行。请使用获准的接收位置，并按组织流程处理受限文件。副本审核通过前，请保留原件。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "重命名 PDF 会删除元数据吗？",
+            "a": "不会。重命名只修改文件外部名称，不会改动 PDF 内部属性。请使用编辑或删除元数据工具处理这些字段。"
+          },
+          {
+            "q": "PDF 元数据可能显示什么？",
+            "a": "标准属性可能包括作者、标题、主题、应用程序和日期；PDF 也可能包含 XMP。具体内容取决于文件及创建它的软件。"
+          },
+          {
+            "q": "如何修改 PDF 作者？",
+            "a": "打开编辑元数据，在副本中修改作者字段。保留原件，并检查下载副本的属性。"
+          },
+          {
+            "q": "编辑元数据会改变可见内容吗？",
+            "a": "不会。修改内部属性不会删除可见文字、签名或批注。要遮盖页面内容，请使用脱敏工具并检查结果。"
           }
         ],
         "published": "2026-11-15",
