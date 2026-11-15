@@ -6739,6 +6739,144 @@
           "metadata-for-pdf-records",
           "pdf-review-copy-checklist"
         ]
+      },
+      {
+        "topic": "share-draft-pdf-safely",
+        "slug": "share-draft-pdf-safely",
+        "title": "Cómo compartir un borrador de PDF de forma segura",
+        "metaTitle": "Cómo compartir un borrador de PDF de forma segura",
+        "metaDescription": "Comparte borradores PDF con una marca DRAFT, elimina datos privados y revisa el destinatario. Gratis y privado en el navegador, sin registro.",
+        "keyword": "compartir un borrador PDF de forma segura",
+        "secondaryKeywords": [
+          "añadir marca DRAFT a PDF",
+          "quitar información privada de un PDF",
+          "compartir PDF con cliente"
+        ],
+        "answer": "Para compartir un borrador PDF de forma segura, conserva el original, marca cada página como DRAFT, elimina de verdad cualquier dato privado y comprueba el destinatario y el canal antes de enviar. La marca de agua ayuda a identificar el estado, pero no es un control de acceso. Add Watermark de PrintxPDF procesa el archivo en tu navegador; nada se sube.",
+        "tool": "add-watermark",
+        "ctaLabel": "Añadir marca de agua",
+        "body": [
+          {
+            "t": "p",
+            "x": "Antes de compartir un borrador, conserva el original, marca las páginas como DRAFT, revisa si hay datos que deban eliminarse y confirma quién recibirá el archivo. Una marca de agua aclara que el documento no es final, pero no impide que alguien lo copie o lo reenvíe. Add Watermark de PrintxPDF se ejecuta localmente en tu navegador y no sube el PDF."
+          },
+          {
+            "t": "h2",
+            "x": "Por qué marcar un borrador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el original y crea una copia",
+                "x": "No trabajes sobre la única versión. Usa un nombre que indique proyecto, estado y fecha, por ejemplo ClientX_Proposal_DRAFT_2026-11-15_v02.pdf."
+              },
+              {
+                "h": "Añade una marca DRAFT visible",
+                "x": "Con [Añadir marca de agua](/tools/add-watermark), marca todas las páginas o las páginas pertinentes. Mantén el texto legible y no tapes información necesaria para la revisión."
+              },
+              {
+                "h": "Elimina realmente los datos confidenciales",
+                "x": "Una marca no oculta el contenido. Si hay datos personales que no debe ver el destinatario, usa [Redactar PDF](/tools/redact-pdf) y verifica que el texto cubierto ya no se pueda seleccionar ni copiar."
+              },
+              {
+                "h": "Revisa el archivo y sus propiedades",
+                "x": "Abre la copia, comprueba nombres, cifras, anexos y páginas. Revisa también título y autor; usa [Eliminar metadatos](/tools/remove-metadata) si hay propiedades estándar que deban quitarse."
+              },
+              {
+                "h": "Envía solo al destinatario correcto",
+                "x": "Usa el espacio aprobado para compartir y confirma permisos, dirección y caducidad del enlace. Si el documento requiere contraseña, compártela por un canal distinto; la herramienta Protect PDF usa un servidor y lo informa antes de cargar el archivo."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "add-watermark",
+            "x": "Marca tu PDF como DRAFT gratis, sin registro ni marcas de agua; se procesa en tu navegador."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo eliminar información privada"
+          },
+          {
+            "t": "p",
+            "x": "Define qué tipo de revisión quieres: comentarios, correcciones o aprobación. Una portada o marca DRAFT en cada página evita que una copia de trabajo se confunda con una versión aprobada, pero el sello no protege el archivo. El lector aún podría guardar, copiar o reenviar el PDF. Haz una copia específica para compartir. Revisa el contenido visible y los detalles que pueden revelar información no destinada al cliente, como nombres de terceros, datos de contacto, notas, anexos o cifras internas. Si debes quitar información, aplica una redacción real; cubrirla con un rectángulo o añadir una marca no la elimina."
+          },
+          {
+            "t": "h2",
+            "x": "Comparte por el canal adecuado"
+          },
+          {
+            "t": "p",
+            "x": "Los metadatos estándar pueden mostrar un título o autor que ya no corresponde al borrador. Comprueba esas propiedades antes de enviar. La herramienta Eliminar metadatos trabaja en tu navegador; para borrado de texto confidencial, usa Redactar PDF. Son tareas distintas. Comparte el archivo solo con las personas que lo necesitan. Comprueba el nombre del destinatario, los permisos de acceso y si el enlace puede reenviarse o caduca. Para proteger el PDF con contraseña, usa una clave larga y compártela por separado. La herramienta de contraseña procesa el archivo en un servidor y te avisa antes de subirlo; la mayoría de las demás herramientas PDF de PrintxPDF se ejecutan localmente en el navegador."
+          },
+          {
+            "t": "h2",
+            "x": "Comprueba antes de enviar"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Acción",
+              "Límite"
+            ],
+            "rows": [
+              [
+                "Identificar el estado",
+                "Añadir DRAFT",
+                "No bloquea copia ni reenvío"
+              ],
+              [
+                "Quitar datos confidenciales",
+                "Aplicar redacción real",
+                "Una marca no elimina contenido"
+              ],
+              [
+                "Limpiar propiedades estándar",
+                "Eliminar metadatos",
+                "No modifica el texto visible"
+              ],
+              [
+                "Controlar quién lo ve",
+                "Usar un espacio con permisos",
+                "Verifica destinatarios y enlaces"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Una marca DRAFT impide que alguien copie el PDF?",
+            "a": "No. La marca ayuda a identificar el borrador y queda dibujada en la página, pero no bloquea la apertura, copia ni reenvío. Usa permisos de acceso para controlar quién puede verlo y conserva la copia limpia."
+          },
+          {
+            "q": "¿Debo aplanar el PDF antes de compartirlo?",
+            "a": "Aplanar fija campos rellenables, pero no convierte el documento en seguro ni quita comentarios, metadatos o datos confidenciales. Aplana solo si necesitas fijar campos; redacta por separado el contenido sensible."
+          },
+          {
+            "q": "¿Cómo quito información privada del borrador?",
+            "a": "Usa una herramienta de redacción que elimine el contenido, no solo una forma negra encima. Después revisa la copia y comprueba que el texto ya no sea seleccionable ni aparezca en una búsqueda."
+          },
+          {
+            "q": "¿PrintxPDF sube el borrador?",
+            "a": "Add Watermark, Redact PDF y Remove Metadata procesan el archivo en el navegador. Protect PDF es una excepción: necesita servidor para cifrar, lo indica antes de la carga y elimina el archivo al devolver el resultado."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "add-watermark",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
+        ]
       }
     ]
   },
@@ -13472,6 +13610,144 @@
           "metadata-for-pdf-records",
           "pdf-review-copy-checklist"
         ]
+      },
+      {
+        "topic": "share-draft-pdf-safely",
+        "slug": "share-draft-pdf-safely",
+        "title": "Como compartilhar um rascunho de PDF com segurança",
+        "metaTitle": "Como compartilhar um rascunho de PDF com segurança",
+        "metaDescription": "Compartilhe rascunhos PDF com marca RASCUNHO, remova dados privados e confira o destinatário. Grátis, privado no navegador, sem cadastro.",
+        "keyword": "compartilhar rascunho PDF com segurança",
+        "secondaryKeywords": [
+          "adicionar marca RASCUNHO ao PDF",
+          "remover dados privados do PDF",
+          "compartilhar PDF com cliente"
+        ],
+        "answer": "Para compartilhar um rascunho PDF com segurança, guarde o original, marque cada página como RASCUNHO, remova de verdade qualquer dado privado e confira o destinatário e o canal antes de enviar. A marca ajuda a identificar o status, mas não controla o acesso. O Add Watermark do PrintxPDF processa o arquivo no navegador, sem upload.",
+        "tool": "add-watermark",
+        "ctaLabel": "Add Watermark",
+        "body": [
+          {
+            "t": "p",
+            "x": "Antes de compartilhar um rascunho, guarde o original, marque as páginas como RASCUNHO, confira se há dados a remover e confirme quem receberá o arquivo. A marca indica que o documento não é final, mas não impede cópia ou reenvio. O Add Watermark do PrintxPDF roda localmente no navegador e não envia o PDF."
+          },
+          {
+            "t": "h2",
+            "x": "Por que marcar um rascunho"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde o original e crie uma cópia",
+                "x": "Não trabalhe sobre a única versão. Use um nome com projeto, status e data, como ClientX_Proposal_DRAFT_2026-11-15_v02.pdf."
+              },
+              {
+                "h": "Adicione uma marca RASCUNHO visível",
+                "x": "Com [Add Watermark](/tools/add-watermark), marque todas as páginas ou as necessárias. Deixe o texto legível e não cubra informações importantes para a revisão."
+              },
+              {
+                "h": "Remova de verdade os dados confidenciais",
+                "x": "Uma marca não oculta conteúdo. Se o destinatário não deve ver dados pessoais, use [Redact PDF](/tools/redact-pdf) e confirme que o texto coberto não pode ser selecionado ou copiado."
+              },
+              {
+                "h": "Revise o arquivo e as propriedades",
+                "x": "Abra a cópia e confira nomes, valores, anexos e páginas. Confira título e autor; use [Remove Metadata](/tools/remove-metadata) se precisar apagar propriedades padrão."
+              },
+              {
+                "h": "Envie apenas ao destinatário certo",
+                "x": "Use o espaço aprovado e confirme permissões, endereço e validade do link. Se exigir senha, envie-a por outro canal; Protect PDF usa servidor e avisa antes do upload."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "add-watermark",
+            "x": "Marque seu PDF como RASCUNHO grátis, sem cadastro ou marca-d’água; o arquivo fica no navegador."
+          },
+          {
+            "t": "h2",
+            "x": "Como remover informações privadas"
+          },
+          {
+            "t": "p",
+            "x": "Defina o tipo de revisão que você quer: comentários, correções ou aprovação. Uma capa ou marca RASCUNHO em cada página ajuda a evitar que uma cópia de trabalho pareça aprovada, mas a marca não protege o arquivo. A pessoa ainda pode salvar, copiar ou encaminhar o PDF. Crie uma cópia específica para compartilhar. Revise o conteúdo visível e detalhes que não deveriam chegar ao cliente, como nomes de terceiros, contatos, notas, anexos ou valores internos. Se precisar remover algo, faça uma redação real; cobrir com retângulo ou marca não apaga o conteúdo."
+          },
+          {
+            "t": "h2",
+            "x": "Compartilhe pelo canal adequado"
+          },
+          {
+            "t": "p",
+            "x": "Os metadados padrão podem mostrar título ou autor que não correspondem mais ao rascunho. Confira essas propriedades antes do envio. A ferramenta Remove Metadata funciona no navegador; para apagar texto confidencial, use Redact PDF. São tarefas diferentes. Compartilhe somente com quem precisa do arquivo. Confira o nome do destinatário, as permissões de acesso e se o link pode ser encaminhado ou expira. Para proteger o PDF com senha, use uma frase longa e envie-a separadamente. A ferramenta de senha processa no servidor e avisa antes do envio; a maioria das outras ferramentas PDF do PrintxPDF roda localmente no navegador."
+          },
+          {
+            "t": "h2",
+            "x": "Confira antes de enviar"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Ação",
+              "Limite"
+            ],
+            "rows": [
+              [
+                "Identificar o status",
+                "Adicionar RASCUNHO",
+                "Não impede cópia ou encaminhamento"
+              ],
+              [
+                "Remover dados confidenciais",
+                "Aplicar redação real",
+                "Uma marca não apaga conteúdo"
+              ],
+              [
+                "Limpar propriedades padrão",
+                "Remover metadados",
+                "Não altera o texto visível"
+              ],
+              [
+                "Controlar quem vê",
+                "Usar espaço com permissões",
+                "Confira destinatários e links"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Uma marca RASCUNHO impede que alguém copie o PDF?",
+            "a": "Não. A marca identifica o rascunho e é desenhada na página, mas não bloqueia abertura, cópia ou encaminhamento. Controle quem pode ver com permissões de acesso e guarde a cópia limpa."
+          },
+          {
+            "q": "Devo achatar o PDF antes de compartilhar?",
+            "a": "Achatar fixa campos preenchíveis, mas não torna o documento seguro nem remove comentários, metadados ou dados confidenciais. Achate se precisar fixar os campos e redija o conteúdo sensível à parte."
+          },
+          {
+            "q": "Como removo informações privadas do rascunho?",
+            "a": "Use uma ferramenta de redação que remova o conteúdo, e não apenas um retângulo preto. Depois, confira se o texto não pode mais ser selecionado nem encontrado na busca."
+          },
+          {
+            "q": "O PrintxPDF envia o rascunho para um servidor?",
+            "a": "Add Watermark, Redact PDF e Remove Metadata processam no navegador. Protect PDF é uma exceção: precisa de servidor para criptografar, avisa antes do upload e apaga o arquivo ao devolver o resultado."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "add-watermark",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
+        ]
       }
     ]
   },
@@ -20204,6 +20480,144 @@
           "pdf-archive-review-schedule",
           "metadata-for-pdf-records",
           "pdf-review-copy-checklist"
+        ]
+      },
+      {
+        "topic": "share-draft-pdf-safely",
+        "slug": "share-draft-pdf-safely",
+        "title": "PDF ड्राफ़्ट सुरक्षित रूप से कैसे साझा करें",
+        "metaTitle": "PDF ड्राफ़्ट सुरक्षित रूप से कैसे साझा करें",
+        "metaDescription": "PDF ड्राफ़्ट पर DRAFT चिह्न लगाएँ, निजी डेटा हटाएँ और प्राप्तकर्ता जाँचें। मुफ़्त, निजी ब्राउज़र में, बिना साइनअप।",
+        "keyword": "PDF ड्राफ़्ट सुरक्षित रूप से साझा करना",
+        "secondaryKeywords": [
+          "PDF पर DRAFT वॉटरमार्क लगाना",
+          "PDF से निजी डेटा हटाना",
+          "क्लाइंट के साथ PDF साझा करना"
+        ],
+        "answer": "PDF ड्राफ़्ट सुरक्षित रूप से साझा करने के लिए मूल प्रति रखें, हर पेज पर DRAFT चिह्न लगाएँ, निजी जानकारी को सचमुच हटाएँ और भेजने से पहले प्राप्तकर्ता व माध्यम जाँचें। वॉटरमार्क स्थिति बताता है, लेकिन पहुँच नियंत्रित नहीं करता। PrintxPDF Add Watermark ब्राउज़र में फ़ाइल प्रोसेस करता है; अपलोड नहीं होता।",
+        "tool": "add-watermark",
+        "ctaLabel": "वॉटरमार्क जोड़ें",
+        "body": [
+          {
+            "t": "p",
+            "x": "ड्राफ़्ट साझा करने से पहले मूल प्रति रखें, पेजों पर DRAFT चिह्न लगाएँ, हटाने योग्य निजी डेटा जाँचें और तय करें कि फ़ाइल किसे मिलेगी। वॉटरमार्क बताता है कि दस्तावेज़ अंतिम नहीं है, लेकिन कॉपी या फॉरवर्ड करने से नहीं रोकता। PrintxPDF Add Watermark ब्राउज़र में चलता है; PDF अपलोड नहीं होती।"
+          },
+          {
+            "t": "h2",
+            "x": "ड्राफ़्ट को चिह्नित क्यों करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल रखें और एक कॉपी बनाएँ",
+                "x": "एकमात्र संस्करण पर काम न करें। प्रोजेक्ट, स्थिति और तारीख वाला नाम रखें, जैसे ClientX_Proposal_DRAFT_2026-11-15_v02.pdf."
+              },
+              {
+                "h": "दिखाई देने वाला DRAFT चिह्न जोड़ें",
+                "x": "[Add Watermark](/tools/add-watermark) से सभी या ज़रूरी पेज चिह्नित करें। टेक्स्ट पढ़ने योग्य रखें और समीक्षा की ज़रूरी जानकारी न ढकें।"
+              },
+              {
+                "h": "गोपनीय जानकारी सचमुच हटाएँ",
+                "x": "वॉटरमार्क सामग्री नहीं छिपाता। यदि प्राप्तकर्ता को निजी डेटा नहीं दिखना चाहिए, [Redact PDF](/tools/redact-pdf) चलाएँ और जाँचें कि ढका टेक्स्ट चुना या कॉपी नहीं हो सकता।"
+              },
+              {
+                "h": "फ़ाइल और गुण जाँचें",
+                "x": "कॉपी खोलकर नाम, रकम, अटैचमेंट और पेज देखें। शीर्षक व लेखक भी जाँचें; मानक गुण हटाने के लिए [Remove Metadata](/tools/remove-metadata) इस्तेमाल करें।"
+              },
+              {
+                "h": "सही व्यक्ति को ही भेजें",
+                "x": "स्वीकृत शेयरिंग स्थान चुनें और पहुँच, ईमेल व लिंक की समय-सीमा जाँचें। पासवर्ड ज़रूरी हो तो अलग माध्यम से भेजें; Protect PDF सर्वर इस्तेमाल करता है और अपलोड से पहले बताता है।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "add-watermark",
+            "x": "PDF पर मुफ़्त DRAFT चिह्न लगाएँ—साइनअप या वॉटरमार्क नहीं; फ़ाइल ब्राउज़र में रहती है।"
+          },
+          {
+            "t": "h2",
+            "x": "निजी जानकारी कैसे हटाएँ"
+          },
+          {
+            "t": "p",
+            "x": "बताएँ कि आप किस तरह की समीक्षा चाहते हैं: टिप्पणियाँ, सुधार या मंज़ूरी। कवर पेज या हर पेज पर DRAFT चिह्न काम चल रहे दस्तावेज़ को स्वीकृत प्रति समझने से बचाता है, लेकिन फ़ाइल को सुरक्षित नहीं करता। दूसरा व्यक्ति PDF सेव, कॉपी या आगे भेज सकता है। साझा करने के लिए अलग कॉपी बनाएँ। दिखाई देने वाली सामग्री और ऐसी जानकारी देखें जो क्लाइंट को नहीं चाहिए—तीसरे पक्ष के नाम, संपर्क विवरण, टिप्पणियाँ, अटैचमेंट या आंतरिक रकम। कुछ हटाना हो तो असली रेडैक्शन करें; आयत या वॉटरमार्क से सामग्री नहीं मिटती।"
+          },
+          {
+            "t": "h2",
+            "x": "उचित माध्यम से साझा करें"
+          },
+          {
+            "t": "p",
+            "x": "PDF के सामान्य मेटाडेटा में पुराना शीर्षक या लेखक रह सकता है। भेजने से पहले ये गुण देखें। Remove Metadata ब्राउज़र में चलता है; गोपनीय लिखावट हटाने के लिए Redact PDF लें। दोनों अलग काम करते हैं। फ़ाइल केवल ज़रूरतमंद लोगों से साझा करें। प्राप्तकर्ता का नाम, पहुँच-अनुमति और लिंक फॉरवर्ड या एक्सपायर होता है या नहीं, यह जाँचें। पासवर्ड सुरक्षा चाहिए तो लंबा पासवर्ड रखें और अलग से भेजें। पासवर्ड टूल सर्वर पर प्रोसेस करता है और पहले सूचना देता है; PrintxPDF के अधिकतर अन्य PDF टूल ब्राउज़र में ही चलते हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "भेजने से पहले जाँचें"
+          },
+          {
+            "t": "table",
+            "head": [
+              "उद्देश्य",
+              "कदम",
+              "सीमा"
+            ],
+            "rows": [
+              [
+                "स्थिति पहचानना",
+                "DRAFT जोड़ें",
+                "कॉपी/फॉरवर्ड नहीं रुकता"
+              ],
+              [
+                "गोपनीय डेटा हटाना",
+                "वास्तविक रेडैक्शन करें",
+                "चिह्न सामग्री नहीं मिटाता"
+              ],
+              [
+                "मानक गुण साफ़ करना",
+                "मेटाडेटा हटाएँ",
+                "दिखाई देने वाला टेक्स्ट नहीं बदलता"
+              ],
+              [
+                "देखने वाले नियंत्रित करना",
+                "अनुमति वाला स्थान चुनें",
+                "प्राप्तकर्ता व लिंक जाँचें"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या DRAFT वॉटरमार्क PDF की कॉपी रोकता है?",
+            "a": "नहीं। यह ड्राफ़्ट की पहचान करता है और पेज पर छपा रहता है, पर खोलना, कॉपी करना या फॉरवर्ड करना नहीं रोकता। देखने की अनुमति सीमित करें और साफ़ मूल प्रति रखें।"
+          },
+          {
+            "q": "साझा करने से पहले PDF फ़्लैटन करूँ?",
+            "a": "फ़्लैटन करना भरने योग्य फ़ील्ड स्थिर करता है, पर PDF सुरक्षित नहीं बनाता और टिप्पणियाँ, मेटाडेटा या गोपनीय जानकारी नहीं हटाता। फ़ील्ड स्थिर करने के लिए करें; संवेदनशील सामग्री अलग से रेडैक्ट करें।"
+          },
+          {
+            "q": "ड्राफ़्ट से निजी जानकारी कैसे हटाऊँ?",
+            "a": "ऐसा रेडैक्शन टूल इस्तेमाल करें जो सामग्री मिटाता है, केवल काला आयत नहीं रखता। फिर जाँचें कि टेक्स्ट चुना, कॉपी या खोजा नहीं जा सकता।"
+          },
+          {
+            "q": "क्या PrintxPDF ड्राफ़्ट सर्वर पर अपलोड करता है?",
+            "a": "Add Watermark, Redact PDF और Remove Metadata ब्राउज़र में प्रोसेस करते हैं। Protect PDF अपवाद है: एन्क्रिप्शन के लिए सर्वर चाहिए, यह अपलोड से पहले बताता है और परिणाम लौटाकर फ़ाइल मिटाता है।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "add-watermark",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
         ]
       }
     ]
@@ -26946,6 +27360,144 @@
           "pdf-archive-review-schedule",
           "metadata-for-pdf-records",
           "pdf-review-copy-checklist"
+        ]
+      },
+      {
+        "topic": "share-draft-pdf-safely",
+        "slug": "share-draft-pdf-safely",
+        "title": "كيفية مشاركة مسودة PDF بأمان",
+        "metaTitle": "كيفية مشاركة مسودة PDF بأمان",
+        "metaDescription": "ضع علامة DRAFT على مسودة PDF، وأزل البيانات الخاصة، وتحقق من المستلم. مجاني وخاص في المتصفح بلا تسجيل.",
+        "keyword": "مشاركة مسودة PDF بأمان",
+        "secondaryKeywords": [
+          "إضافة علامة DRAFT إلى PDF",
+          "إزالة البيانات الخاصة من PDF",
+          "مشاركة PDF مع العميل"
+        ],
+        "answer": "لمشاركة مسودة PDF بأمان، احتفظ بالأصل، وضع علامة DRAFT على الصفحات، وأزل فعلياً أي بيانات خاصة، ثم تحقق من المستلم والقناة قبل الإرسال. تساعد العلامة في توضيح الحالة لكنها لا تتحكم في الوصول. تعالج أداة Add Watermark من PrintxPDF الملف في المتصفح ولا ترفعه.",
+        "tool": "add-watermark",
+        "ctaLabel": "إضافة علامة مائية",
+        "body": [
+          {
+            "t": "p",
+            "x": "قبل مشاركة مسودة، احتفظ بالأصل، وضع علامة DRAFT على الصفحات، وتحقق من وجود بيانات ينبغي حذفها، وحدد من سيستلم الملف. توضح العلامة أن المستند غير نهائي لكنها لا تمنع النسخ أو إعادة الإرسال. تعمل Add Watermark من PrintxPDF محلياً في المتصفح ولا ترفع PDF."
+          },
+          {
+            "t": "h2",
+            "x": "لماذا تضع علامة على المسودة"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالأصل وأنشئ نسخة",
+                "x": "لا تعمل على النسخة الوحيدة. استخدم اسماً يوضح المشروع والحالة والتاريخ، مثل ClientX_Proposal_DRAFT_2026-11-15_v02.pdf."
+              },
+              {
+                "h": "أضف علامة DRAFT ظاهرة",
+                "x": "باستخدام [Add Watermark](/tools/add-watermark)، ضع العلامة على كل الصفحات أو المطلوبة. اجعلها مقروءة ولا تحجب ما يحتاجه المراجع."
+              },
+              {
+                "h": "أزل البيانات السرية فعلياً",
+                "x": "العلامة لا تخفي المحتوى. إذا لم يكن للمستلم رؤية بيانات شخصية، استخدم [Redact PDF](/tools/redact-pdf) وتحقق من عدم إمكانية تحديد النص المحجوب أو نسخه."
+              },
+              {
+                "h": "راجع الملف وخصائصه",
+                "x": "افتح النسخة وتحقق من الأسماء والأرقام والمرفقات والصفحات. راجع العنوان والمؤلف أيضاً؛ استخدم [Remove Metadata](/tools/remove-metadata) لإزالة الخصائص القياسية."
+              },
+              {
+                "h": "أرسل إلى المستلم الصحيح فقط",
+                "x": "استخدم مساحة المشاركة المعتمدة وتحقق من الصلاحيات والعنوان وانتهاء الرابط. إذا تطلب الأمر كلمة مرور فأرسلها عبر قناة أخرى؛ تحتاج Protect PDF إلى خادم وتوضح ذلك قبل الرفع."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "add-watermark",
+            "x": "ضع علامة DRAFT على PDF مجاناً بلا تسجيل أو علامة مائية؛ تتم المعالجة في المتصفح."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية إزالة المعلومات الخاصة"
+          },
+          {
+            "t": "p",
+            "x": "حدد نوع المراجعة المطلوبة: تعليقات أم تصحيحات أم موافقة. تساعد صفحة الغلاف أو علامة DRAFT على كل صفحة في منع الخلط بين نسخة عمل ونسخة معتمدة، لكنها لا تحمي الملف. لا يزال بإمكان الآخرين حفظ PDF أو نسخه أو إعادة إرساله. أنشئ نسخة مخصصة للمشاركة. راجع المحتوى الظاهر والتفاصيل التي لا ينبغي أن تصل إلى العميل، مثل أسماء أطراف أخرى أو معلومات اتصال أو ملاحظات أو مرفقات أو أرقام داخلية. إذا أردت حذف شيء، استخدم التنقيح الحقيقي؛ فالمستطيل أو العلامة لا يزيلان المحتوى."
+          },
+          {
+            "t": "h2",
+            "x": "شارك عبر القناة المناسبة"
+          },
+          {
+            "t": "p",
+            "x": "قد تعرض البيانات الوصفية القياسية عنواناً أو مؤلفاً قديماً. تحقق من هذه الخصائص قبل الإرسال. تعمل Remove Metadata في المتصفح؛ ولإزالة نص سري استخدم Redact PDF. هاتان مهمتان مختلفتان. شارك الملف فقط مع من يحتاج إليه. تحقق من اسم المستلم وصلاحيات الوصول وما إذا كان الرابط قابلاً لإعادة الإرسال أو له تاريخ انتهاء. لحماية PDF بكلمة مرور، استخدم عبارة طويلة وأرسلها منفصلة. تعالج أداة كلمة المرور الملف على خادم وتنبّهك قبل الرفع؛ وتعمل معظم أدوات PDF الأخرى من PrintxPDF محلياً في المتصفح."
+          },
+          {
+            "t": "h2",
+            "x": "تحقق قبل الإرسال"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الهدف",
+              "الإجراء",
+              "الحد"
+            ],
+            "rows": [
+              [
+                "تحديد الحالة",
+                "أضف DRAFT",
+                "لا يمنع النسخ أو إعادة الإرسال"
+              ],
+              [
+                "إزالة البيانات السرية",
+                "استخدم التنقيح الحقيقي",
+                "العلامة لا تحذف المحتوى"
+              ],
+              [
+                "تنظيف الخصائص القياسية",
+                "أزل البيانات الوصفية",
+                "لا يغير النص الظاهر"
+              ],
+              [
+                "التحكم بالمشاهدين",
+                "استخدم مساحة بصلاحيات",
+                "تحقق من المستلمين والروابط"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل تمنع علامة DRAFT نسخ PDF؟",
+            "a": "لا. توضح العلامة أن الملف مسودة وتُرسم على الصفحة، لكنها لا تمنع الفتح أو النسخ أو إعادة الإرسال. تحكم في المشاهدة عبر صلاحيات الوصول واحتفظ بنسخة نظيفة."
+          },
+          {
+            "q": "هل ينبغي تسطيح PDF قبل مشاركته؟",
+            "a": "يثبت التسطيح الحقول القابلة للتعبئة لكنه لا يؤمّن الملف ولا يزيل التعليقات أو البيانات الوصفية أو المعلومات السرية. استخدمه لتثبيت الحقول، ونقّح المحتوى الحساس على حدة."
+          },
+          {
+            "q": "كيف أزيل المعلومات الخاصة من المسودة؟",
+            "a": "استخدم أداة تنقيح تزيل المحتوى فعلياً لا مجرد شكل أسود فوقه. بعد ذلك تحقق من عدم إمكانية تحديد النص أو نسخه أو العثور عليه بالبحث."
+          },
+          {
+            "q": "هل ترفع PrintxPDF المسودة إلى خادم؟",
+            "a": "تعالج Add Watermark وRedact PDF وRemove Metadata الملف في المتصفح. Protect PDF استثناء: تحتاج إلى خادم للتشفير، وتوضح ذلك قبل الرفع وتحذف الملف بعد إعادة النتيجة."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "add-watermark",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
         ]
       }
     ]
@@ -33692,6 +34244,144 @@
           "metadata-for-pdf-records",
           "pdf-review-copy-checklist"
         ]
+      },
+      {
+        "topic": "share-draft-pdf-safely",
+        "slug": "share-draft-pdf-safely",
+        "title": "PDF ড্রাফট নিরাপদে শেয়ার করবেন কীভাবে",
+        "metaTitle": "PDF ড্রাফট নিরাপদে শেয়ার করবেন কীভাবে",
+        "metaDescription": "PDF ড্রাফটে DRAFT চিহ্ন দিন, ব্যক্তিগত তথ্য সরান এবং প্রাপক যাচাই করুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত, সাইনআপ নেই।",
+        "keyword": "PDF ড্রাফট নিরাপদে শেয়ার করা",
+        "secondaryKeywords": [
+          "PDF-এ DRAFT ওয়াটারমার্ক যোগ",
+          "PDF থেকে ব্যক্তিগত তথ্য সরানো",
+          "ক্লায়েন্টের সঙ্গে PDF শেয়ার"
+        ],
+        "answer": "PDF ড্রাফট নিরাপদে শেয়ার করতে মূল কপি রাখুন, প্রতিটি পাতায় DRAFT চিহ্ন দিন, ব্যক্তিগত তথ্য সত্যিই সরান এবং পাঠানোর আগে প্রাপক ও মাধ্যম যাচাই করুন। ওয়াটারমার্ক অবস্থা বোঝায়, কিন্তু অ্যাক্সেস নিয়ন্ত্রণ করে না। PrintxPDF Add Watermark ব্রাউজারেই ফাইল প্রসেস করে; আপলোড হয় না।",
+        "tool": "add-watermark",
+        "ctaLabel": "ওয়াটারমার্ক যোগ",
+        "body": [
+          {
+            "t": "p",
+            "x": "ড্রাফট শেয়ারের আগে মূল কপি রাখুন, পাতায় DRAFT চিহ্ন দিন, মুছে ফেলার মতো ব্যক্তিগত তথ্য দেখুন এবং ফাইলটি কে পাবে ঠিক করুন। ওয়াটারমার্ক জানায় নথিটি চূড়ান্ত নয়, কিন্তু কপি বা ফরোয়ার্ড করা আটকায় না। PrintxPDF Add Watermark ব্রাউজারেই চলে; PDF আপলোড হয় না।"
+          },
+          {
+            "t": "h2",
+            "x": "ড্রাফট চিহ্নিত করবেন কেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল কপি রেখে আলাদা কপি বানান",
+                "x": "একমাত্র কপিতে কাজ করবেন না। প্রকল্প, অবস্থা ও তারিখসহ নাম দিন, যেমন ClientX_Proposal_DRAFT_2026-11-15_v02.pdf."
+              },
+              {
+                "h": "দৃশ্যমান DRAFT চিহ্ন দিন",
+                "x": "[Add Watermark](/tools/add-watermark) দিয়ে সব বা প্রয়োজনীয় পাতায় চিহ্ন দিন। লেখা পড়ার মতো রাখুন, পর্যালোচনার জরুরি অংশ ঢাকবেন না।"
+              },
+              {
+                "h": "গোপন তথ্য সত্যিই মুছুন",
+                "x": "ওয়াটারমার্ক তথ্য লুকায় না। প্রাপককে ব্যক্তিগত তথ্য দেখানো যাবে না হলে [Redact PDF](/tools/redact-pdf) ব্যবহার করুন এবং ঢাকা লেখা নির্বাচন বা কপি করা যায় না নিশ্চিত করুন।"
+              },
+              {
+                "h": "ফাইল ও বৈশিষ্ট্য যাচাই করুন",
+                "x": "কপি খুলে নাম, অঙ্ক, সংযুক্তি ও পৃষ্ঠা দেখুন। শিরোনাম ও লেখকও দেখুন; সাধারণ বৈশিষ্ট্য মুছতে [Remove Metadata](/tools/remove-metadata) নিন।"
+              },
+              {
+                "h": "শুধু সঠিক প্রাপককে পাঠান",
+                "x": "অনুমোদিত শেয়ারিং স্থান ব্যবহার করুন; অ্যাক্সেস, ইমেইল ও লিংকের মেয়াদ যাচাই করুন। পাসওয়ার্ড লাগলে আলাদা মাধ্যমে দিন; Protect PDF সার্ভার ব্যবহার করে এবং আপলোডের আগে জানায়।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "add-watermark",
+            "x": "PDF-এ বিনামূল্যে DRAFT চিহ্ন দিন—সাইনআপ বা ওয়াটারমার্ক নেই; ফাইল ব্রাউজারেই থাকে।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্যক্তিগত তথ্য কীভাবে সরাবেন"
+          },
+          {
+            "t": "p",
+            "x": "কী ধরনের পর্যালোচনা চান তা জানান: মন্তব্য, সংশোধন নাকি অনুমোদন। কভার বা প্রতিটি পাতায় DRAFT চিহ্ন কাজের কপিকে অনুমোদিত সংস্করণ ভেবে নেওয়া ঠেকায়, কিন্তু ফাইল সুরক্ষিত করে না। অন্য ব্যক্তি PDF সেভ, কপি বা ফরোয়ার্ড করতে পারে। শেয়ারের জন্য আলাদা কপি তৈরি করুন। দৃশ্যমান লেখা ও ক্লায়েন্টের দেখার কথা নয় এমন তথ্য দেখুন—তৃতীয় পক্ষের নাম, যোগাযোগ, নোট, সংযুক্তি বা অভ্যন্তরীণ অঙ্ক। কিছু মুছতে হলে সত্যিকারের রেড্যাকশন করুন; আয়তক্ষেত্র বা ওয়াটারমার্ক তথ্য মোছে না।"
+          },
+          {
+            "t": "h2",
+            "x": "সঠিক মাধ্যমে শেয়ার করুন"
+          },
+          {
+            "t": "p",
+            "x": "সাধারণ PDF মেটাডেটায় পুরোনো শিরোনাম বা লেখক থাকতে পারে। পাঠানোর আগে এসব বৈশিষ্ট্য যাচাই করুন। Remove Metadata ব্রাউজারেই চলে; গোপন লেখা সরাতে Redact PDF ব্যবহার করুন। দুটো আলাদা কাজ। যাদের দরকার শুধু তাদের সঙ্গেই ফাইল শেয়ার করুন। প্রাপকের নাম, অ্যাক্সেস অনুমতি এবং লিংক ফরোয়ার্ড বা মেয়াদোত্তীর্ণ হয় কি না দেখুন। পাসওয়ার্ড সুরক্ষা চাইলে দীর্ঘ পাসওয়ার্ড ব্যবহার করে আলাদা পাঠান। পাসওয়ার্ড টুল সার্ভারে প্রসেস করে এবং আগে জানায়; PrintxPDF-এর অধিকাংশ PDF টুল ব্রাউজারে চলে।"
+          },
+          {
+            "t": "h2",
+            "x": "পাঠানোর আগে যাচাই করুন"
+          },
+          {
+            "t": "table",
+            "head": [
+              "উদ্দেশ্য",
+              "কাজ",
+              "সীমা"
+            ],
+            "rows": [
+              [
+                "অবস্থা বোঝানো",
+                "DRAFT যোগ",
+                "কপি বা ফরোয়ার্ড আটকায় না"
+              ],
+              [
+                "গোপন তথ্য সরানো",
+                "আসল রেড্যাকশন করুন",
+                "চিহ্ন কনটেন্ট মোছে না"
+              ],
+              [
+                "সাধারণ বৈশিষ্ট্য পরিষ্কার",
+                "মেটাডেটা সরান",
+                "দৃশ্যমান লেখা বদলায় না"
+              ],
+              [
+                "দর্শক নিয়ন্ত্রণ",
+                "অনুমতিযুক্ত স্থান ব্যবহার",
+                "প্রাপক ও লিংক যাচাই করুন"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "DRAFT ওয়াটারমার্ক কি PDF কপি করা আটকায়?",
+            "a": "না। এটি ড্রাফট চেনায় এবং পাতায় আঁকা থাকে, কিন্তু খোলা, কপি বা ফরোয়ার্ড করা আটকায় না। কে দেখতে পারে তা অ্যাক্সেস অনুমতিতে নিয়ন্ত্রণ করুন এবং পরিষ্কার মূল কপি রাখুন।"
+          },
+          {
+            "q": "শেয়ারের আগে PDF ফ্ল্যাট করা উচিত?",
+            "a": "ফ্ল্যাট করলে পূরণযোগ্য ফিল্ড স্থির হয়, কিন্তু ফাইল সুরক্ষিত হয় না এবং মন্তব্য, মেটাডেটা বা গোপন তথ্য মোছে না। ফিল্ড স্থির করতে ফ্ল্যাট করুন; সংবেদনশীল তথ্য আলাদা রেড্যাক্ট করুন।"
+          },
+          {
+            "q": "ড্রাফট থেকে ব্যক্তিগত তথ্য কীভাবে সরাব?",
+            "a": "এমন রেড্যাকশন টুল ব্যবহার করুন যা কনটেন্ট সরায়, শুধু কালো আকৃতি বসায় না। পরে নিশ্চিত করুন লেখা নির্বাচন, কপি বা সার্চ করা যায় না।"
+          },
+          {
+            "q": "PrintxPDF কি ড্রাফট সার্ভারে আপলোড করে?",
+            "a": "Add Watermark, Redact PDF ও Remove Metadata ব্রাউজারে প্রসেস করে। Protect PDF ব্যতিক্রম: এনক্রিপশনের জন্য সার্ভার লাগে, আপলোডের আগে জানায় এবং ফল ফেরত দিয়ে ফাইল মুছে ফেলে।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "add-watermark",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
+        ]
       }
     ]
   },
@@ -40424,6 +41114,144 @@
           "pdf-archive-review-schedule",
           "metadata-for-pdf-records",
           "pdf-review-copy-checklist"
+        ]
+      },
+      {
+        "topic": "share-draft-pdf-safely",
+        "slug": "share-draft-pdf-safely",
+        "title": "Cách chia sẻ bản nháp PDF an toàn",
+        "metaTitle": "Cách chia sẻ bản nháp PDF an toàn",
+        "metaDescription": "Đánh dấu DRAFT, xóa dữ liệu riêng tư và kiểm tra người nhận trước khi chia sẻ PDF. Miễn phí, riêng tư trên trình duyệt.",
+        "keyword": "chia sẻ bản nháp PDF an toàn",
+        "secondaryKeywords": [
+          "thêm hình mờ DRAFT vào PDF",
+          "xóa dữ liệu riêng tư khỏi PDF",
+          "chia sẻ PDF với khách hàng"
+        ],
+        "answer": "Để chia sẻ bản nháp PDF an toàn, hãy giữ bản gốc, đánh dấu DRAFT trên từng trang, xóa thật sự dữ liệu riêng tư và kiểm tra người nhận cùng kênh gửi. Hình mờ giúp nhận biết trạng thái nhưng không kiểm soát quyền truy cập. Add Watermark của PrintxPDF xử lý tệp trên trình duyệt, không tải lên.",
+        "tool": "add-watermark",
+        "ctaLabel": "Thêm hình mờ",
+        "body": [
+          {
+            "t": "p",
+            "x": "Trước khi chia sẻ bản nháp, hãy giữ bản gốc, đánh dấu DRAFT trên các trang, xem có dữ liệu cần xóa và xác nhận ai sẽ nhận tệp. Hình mờ cho biết tài liệu chưa phải bản cuối nhưng không ngăn sao chép hay chuyển tiếp. Add Watermark của PrintxPDF chạy cục bộ trên trình duyệt; PDF không được tải lên."
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao cần đánh dấu bản nháp"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ bản gốc và tạo bản sao",
+                "x": "Đừng sửa bản duy nhất. Đặt tên gồm dự án, trạng thái và ngày, chẳng hạn ClientX_Proposal_DRAFT_2026-11-15_v02.pdf."
+              },
+              {
+                "h": "Thêm dấu DRAFT dễ thấy",
+                "x": "Dùng [Add Watermark](/tools/add-watermark) để đánh dấu mọi trang hoặc trang cần thiết. Giữ chữ dễ đọc và không che nội dung người xem cần rà soát."
+              },
+              {
+                "h": "Xóa thật sự dữ liệu bí mật",
+                "x": "Hình mờ không che nội dung. Nếu người nhận không được xem dữ liệu cá nhân, dùng [Redact PDF](/tools/redact-pdf) và kiểm tra phần bị che không thể chọn hay sao chép."
+              },
+              {
+                "h": "Kiểm tra tệp và thuộc tính",
+                "x": "Mở bản sao để kiểm tra tên, số liệu, tệp đính kèm và trang. Xem cả tiêu đề, tác giả; dùng [Remove Metadata](/tools/remove-metadata) để xóa thuộc tính chuẩn nếu cần."
+              },
+              {
+                "h": "Chỉ gửi đúng người nhận",
+                "x": "Dùng nơi chia sẻ được phê duyệt, kiểm tra quyền, địa chỉ và hạn liên kết. Nếu cần mật khẩu, gửi qua kênh khác; Protect PDF dùng máy chủ và thông báo trước khi tải lên."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "add-watermark",
+            "x": "Đánh dấu DRAFT miễn phí, không đăng ký, không hình mờ; tệp được xử lý trong trình duyệt."
+          },
+          {
+            "t": "h2",
+            "x": "Cách xóa thông tin riêng tư"
+          },
+          {
+            "t": "p",
+            "x": "Hãy nói rõ bạn cần loại phản hồi nào: bình luận, chỉnh sửa hay phê duyệt. Trang bìa hoặc dấu DRAFT trên mỗi trang giúp người nhận không nhầm bản đang làm với bản đã duyệt, nhưng dấu này không bảo vệ tệp. Người khác vẫn có thể lưu, sao chép hoặc chuyển tiếp PDF. Tạo bản riêng để chia sẻ. Kiểm tra nội dung hiển thị và các chi tiết khách hàng không nên thấy, như tên bên thứ ba, thông tin liên hệ, ghi chú, tệp đính kèm hoặc con số nội bộ. Nếu cần xóa dữ liệu, hãy biên tập xóa thật sự; hình chữ nhật hoặc hình mờ không xóa nội dung."
+          },
+          {
+            "t": "h2",
+            "x": "Chia sẻ qua kênh phù hợp"
+          },
+          {
+            "t": "p",
+            "x": "Siêu dữ liệu chuẩn có thể còn tiêu đề hoặc tác giả cũ. Hãy kiểm tra trước khi gửi. Remove Metadata chạy trên trình duyệt; để xóa văn bản bí mật, dùng Redact PDF. Đây là hai việc khác nhau. Chỉ chia sẻ với người cần tài liệu. Kiểm tra tên người nhận, quyền truy cập và liên kết có thể chuyển tiếp hoặc hết hạn không. Nếu bảo vệ PDF bằng mật khẩu, hãy dùng cụm từ dài và gửi riêng. Công cụ mật khẩu xử lý tệp trên máy chủ và báo trước khi tải; phần lớn công cụ PDF khác của PrintxPDF chạy cục bộ trong trình duyệt."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra trước khi gửi"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục tiêu",
+              "Cách làm",
+              "Giới hạn"
+            ],
+            "rows": [
+              [
+                "Nhận biết trạng thái",
+                "Thêm DRAFT",
+                "Không chặn sao chép hay chuyển tiếp"
+              ],
+              [
+                "Xóa dữ liệu bí mật",
+                "Biên tập xóa thực sự",
+                "Dấu không xóa nội dung"
+              ],
+              [
+                "Dọn thuộc tính chuẩn",
+                "Xóa siêu dữ liệu",
+                "Không sửa văn bản hiển thị"
+              ],
+              [
+                "Kiểm soát người xem",
+                "Dùng nơi có phân quyền",
+                "Kiểm tra người nhận và liên kết"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Dấu DRAFT có ngăn người khác sao chép PDF không?",
+            "a": "Không. Dấu này cho biết tệp là bản nháp và được vẽ lên trang, nhưng không chặn mở, sao chép hay chuyển tiếp. Hãy giới hạn người xem bằng quyền truy cập và giữ bản sạch."
+          },
+          {
+            "q": "Có nên làm phẳng PDF trước khi chia sẻ không?",
+            "a": "Làm phẳng cố định trường có thể điền nhưng không bảo mật tài liệu hoặc xóa bình luận, siêu dữ liệu hay dữ liệu bí mật. Chỉ làm phẳng khi cần cố định trường; biên tập xóa nội dung nhạy cảm riêng."
+          },
+          {
+            "q": "Làm sao xóa thông tin riêng tư khỏi bản nháp?",
+            "a": "Dùng công cụ biên tập xóa thực sự loại bỏ nội dung, không chỉ phủ hình chữ nhật đen. Sau đó kiểm tra văn bản không thể chọn, sao chép hoặc tìm kiếm."
+          },
+          {
+            "q": "PrintxPDF có tải bản nháp lên máy chủ không?",
+            "a": "Add Watermark, Redact PDF và Remove Metadata xử lý trên trình duyệt. Protect PDF là ngoại lệ: cần máy chủ để mã hóa, thông báo trước khi tải lên và xóa tệp sau khi trả kết quả."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "add-watermark",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
         ]
       }
     ]
@@ -47166,6 +47994,144 @@
           "pdf-archive-review-schedule",
           "metadata-for-pdf-records",
           "pdf-review-copy-checklist"
+        ]
+      },
+      {
+        "topic": "share-draft-pdf-safely",
+        "slug": "share-draft-pdf-safely",
+        "title": "如何安全地分享 PDF 草稿",
+        "metaTitle": "如何安全地分享 PDF 草稿",
+        "metaDescription": "分享 PDF 草稿前添加草稿标记、删除隐私内容并核对收件人。免费、浏览器本地处理、无需注册。",
+        "keyword": "安全分享 PDF 草稿",
+        "secondaryKeywords": [
+          "给 PDF 添加 DRAFT 水印",
+          "从 PDF 删除隐私信息",
+          "与客户分享 PDF"
+        ],
+        "answer": "安全分享 PDF 草稿时，请保留原件，在每页标注 DRAFT，真正删除不应共享的隐私内容，并在发送前核对收件人和渠道。水印可以说明文件状态，但不能控制访问。PrintxPDF“添加水印”在浏览器中处理文件，不会上传。",
+        "tool": "add-watermark",
+        "ctaLabel": "添加水印",
+        "body": [
+          {
+            "t": "p",
+            "x": "分享草稿前，请保留原件，在页面上添加 DRAFT 标记，检查是否有需要删除的隐私信息，并确认文件接收者。水印能说明文档尚未定稿，但无法阻止复制或转发。PrintxPDF“添加水印”在浏览器本地运行，不会上传 PDF。"
+          },
+          {
+            "t": "h2",
+            "x": "为什么要标记草稿"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留原件并创建副本",
+                "x": "不要在唯一版本上操作。文件名可包含项目、状态和日期，例如 ClientX_Proposal_DRAFT_2026-11-15_v02.pdf。"
+              },
+              {
+                "h": "添加清晰可见的 DRAFT 标记",
+                "x": "使用[添加水印](/tools/add-watermark)标记所有页面或需要的页面。保持文字清晰，不要遮住审核所需内容。"
+              },
+              {
+                "h": "真正删除机密信息",
+                "x": "水印不会隐藏内容。如果收件人不应看到个人数据，请使用[涂除 PDF](/tools/redact-pdf)，并确认被涂除文字无法选择或复制。"
+              },
+              {
+                "h": "检查文件和属性",
+                "x": "打开副本检查姓名、数字、附件和页数。也要检查标题和作者；如需删除常见属性，可用[删除元数据](/tools/remove-metadata)。"
+              },
+              {
+                "h": "只发送给正确的收件人",
+                "x": "使用获准的共享空间，核对权限、地址和链接有效期。如需密码保护，请通过另一渠道发送密码；“保护 PDF”需要服务器，并会在上传前说明。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "add-watermark",
+            "x": "免费为 PDF 添加 DRAFT 标记，无需注册、无水印；文件在浏览器本地处理。"
+          },
+          {
+            "t": "h2",
+            "x": "如何删除隐私信息"
+          },
+          {
+            "t": "p",
+            "x": "先说明需要哪种反馈：评论、修改还是批准。封面或每页上的 DRAFT 标记可以避免工作稿被误认为已批准版本，但水印本身不保护文件。收件人仍可能保存、复制或转发 PDF。 创建专门用于分享的副本。检查可见内容，以及不应提供给客户的信息，例如第三方姓名、联系方式、备注、附件或内部金额。需要删除信息时，必须使用真正的涂除流程；矩形遮盖和水印都不会删除内容。"
+          },
+          {
+            "t": "h2",
+            "x": "通过合适渠道分享"
+          },
+          {
+            "t": "p",
+            "x": "标准元数据可能仍显示旧标题或作者。发送前请检查这些属性。“删除元数据”在浏览器中运行；删除机密文字则应使用“涂除 PDF”。两者用途不同。 只与确实需要文件的人分享。核对收件人姓名、访问权限，以及链接是否可转发或会过期。如需密码保护，请使用较长密码并通过另一渠道发送。密码工具需要服务器处理，并会在上传前提示；PrintxPDF 的大多数其他 PDF 工具在浏览器本地运行。"
+          },
+          {
+            "t": "h2",
+            "x": "发送前进行检查"
+          },
+          {
+            "t": "table",
+            "head": [
+              "目标",
+              "操作",
+              "限制"
+            ],
+            "rows": [
+              [
+                "标明状态",
+                "添加 DRAFT",
+                "无法阻止复制或转发"
+              ],
+              [
+                "删除机密数据",
+                "执行真正的涂除",
+                "标记不会删除内容"
+              ],
+              [
+                "清理常见属性",
+                "删除元数据",
+                "不改变可见文本"
+              ],
+              [
+                "控制查看者",
+                "使用带权限的共享空间",
+                "核对收件人和链接"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "DRAFT 水印能阻止别人复制 PDF 吗？",
+            "a": "不能。水印会标明草稿状态并绘制在页面上，但不会阻止打开、复制或转发。请通过访问权限控制查看者，并保留无水印原件。"
+          },
+          {
+            "q": "分享前应该扁平化 PDF 吗？",
+            "a": "扁平化会固定可填写字段，但不会保护文件，也不会删除批注、元数据或机密内容。只有需要固定字段时才扁平化；敏感内容应单独涂除。"
+          },
+          {
+            "q": "如何从草稿中删除隐私信息？",
+            "a": "使用真正移除内容的涂除工具，而不是只盖一个黑色矩形。完成后检查文字是否无法选择、复制或搜索。"
+          },
+          {
+            "q": "PrintxPDF 会把草稿上传到服务器吗？",
+            "a": "“添加水印”“涂除 PDF”和“删除元数据”在浏览器中处理。 “保护 PDF”是例外：加密需要服务器，工具会在上传前提示，并在返回结果后删除文件。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "add-watermark",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "document-version-naming-pdf",
+          "redaction-vs-black-boxes",
+          "pdf-review-copy-checklist",
+          "prevent-sending-wrong-pdf"
         ]
       }
     ]
