@@ -4931,6 +4931,157 @@
           "prepare-pdf-for-long-term-archive",
           "original-pdf-vs-access-copy"
         ]
+      },
+      {
+        "topic": "pdf-a-validation-checklist",
+        "slug": "pdf-a-validation-checklist",
+        "cluster": "archive-expansion",
+        "title": "Lista para validar PDF/A antes de archivarlo",
+        "metaTitle": "Lista para validar PDF/A antes de archivarlo",
+        "metaDescription": "Comprueba los requisitos PDF/A antes de archivar: perfil, fuentes, páginas y metadatos. Gratis, sin registro, sin marca de agua.",
+        "primaryKeyword": "lista de validación PDF/A",
+        "secondaryKeywords": [
+          "PDF/A compliance check",
+          "PDF/A validator",
+          "PDF/A archiving requirements"
+        ],
+        "answer": "Antes de archivar un PDF/A, confirma qué perfil y nivel de conformidad exige el destinatario, convierte una copia y valida el resultado con un verificador PDF/A adecuado. Revisa que el archivo abra, que las páginas y fuentes se vean bien y que los metadatos sean correctos. La conversión por sí sola no demuestra conformidad ni garantiza preservación a largo plazo.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Antes de archivar un PDF/A, identifica el perfil exigido y valida el archivo final con un verificador compatible con ese perfil. Revisa también las páginas, las fuentes, el color, los metadatos y cualquier firma o formulario que deba conservarse. Una conversión no garantiza por sí sola que el archivo cumpla todos los requisitos ni que dure para siempre. Conserva el original y guarda el informe de validación junto con el registro."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo validar PDF/A antes de archivarlo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Confirma el requisito",
+                "x": "Pregunta al archivo receptor qué perfil PDF/A y nivel de conformidad acepta; no elijas uno por su nombre solamente."
+              },
+              {
+                "h": "Conserva el original",
+                "x": "Trabaja en una copia y registra el nombre o identificador de la fuente."
+              },
+              {
+                "h": "Convierte con una herramienta adecuada",
+                "x": "Usa [PDF a PDF/A](/tools/pdf-to-pdfa) y revisa el aviso de procesamiento: este trabajo se procesa en el servidor."
+              },
+              {
+                "h": "Valida el archivo resultante",
+                "x": "Ejecuta un validador PDF/A apropiado y conserva el informe, el perfil y la versión de la herramienta."
+              },
+              {
+                "h": "Inspecciona y registra",
+                "x": "Abre las páginas, comprueba contenido y metadatos, y registra la decisión antes de archivar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Prepara una copia PDF/A. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Lista de control antes de archivar PDF/A"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Comprobación",
+              "Qué confirmar",
+              "Evidencia útil"
+            ],
+            "rows": [
+              [
+                "Perfil",
+                "¿Coincide con el requisito del destinatario?",
+                "Perfil y nivel indicados por el receptor."
+              ],
+              [
+                "Validación",
+                "¿El archivo final pasa un validador adecuado?",
+                "Informe, fecha y versión del validador."
+              ],
+              [
+                "Visualización",
+                "¿Se ven bien páginas, fuentes e imágenes?",
+                "Revisión visual de páginas representativas y críticas."
+              ],
+              [
+                "Registro",
+                "¿Se conserva fuente y contexto?",
+                "Original, identificador, metadatos y decisión documentada."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Elige primero el perfil PDF/A correcto"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A es una familia de perfiles y versiones, no una garantía genérica. La entidad que recibirá el archivo puede exigir una parte o nivel específicos. Confirma el requisito antes de convertir, especialmente si el documento incluye formularios, contenido adjunto, firmas o elementos de color. Si no existe requisito, documenta por qué se seleccionó el perfil utilizado."
+          },
+          {
+            "t": "h2",
+            "x": "Valida el archivo final con un verificador"
+          },
+          {
+            "t": "p",
+            "x": "La herramienta de conversión puede crear una copia destinada a PDF/A, pero la validación independiente ayuda a detectar incumplimientos. Un aviso de éxito o una etiqueta en el nombre no sustituye un informe. Guarda el resultado del validador, su versión y el perfil comprobado. Si hay errores, conserva el original y resuelve cada problema con un flujo controlado antes de aceptar la copia."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa el aspecto y la información del documento"
+          },
+          {
+            "t": "p",
+            "x": "Abre el PDF final y revisa páginas completas, tablas, caracteres, imágenes, orientación y orden. Comprueba título, autor y fechas cuando esos campos formen parte del catálogo. PDF/A limita ciertas funciones, por lo que la conversión puede cambiar o eliminar elementos interactivos. No des por hecho que una firma electrónica permanece válida: compruébala con el proceso aprobado."
+          },
+          {
+            "t": "h2",
+            "x": "Preserva el contexto además del archivo"
+          },
+          {
+            "t": "p",
+            "x": "La conformidad PDF/A no asegura que el archivo se pueda conservar para siempre. Mantén copias de seguridad, controles de acceso, registros de integridad y una política de migración. Conserva el original y el informe de validación. Para revisar propiedades estándar puedes usar [Editar metadatos](/tools/edit-metadata); para limpiar propiedades de una copia de distribución, usa [Eliminar metadatos](/tools/remove-metadata)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cómo valido un archivo PDF/A?",
+            "a": "Identifica el perfil exigido, ejecuta un validador compatible con ese perfil sobre el archivo final y conserva el informe. Después revisa visualmente las páginas y los metadatos pertinentes."
+          },
+          {
+            "q": "¿Convertir a PDF/A garantiza que el archivo cumple?",
+            "a": "No necesariamente. La conversión prepara una copia, pero un validador PDF/A adecuado debe comprobar el resultado. También hay que revisar si el contenido cambió."
+          },
+          {
+            "q": "¿Qué perfil PDF/A debo elegir?",
+            "a": "Usa el perfil que exige el destinatario o la política de archivo. No supongas que una versión o nivel es aceptado en todos los sistemas."
+          },
+          {
+            "q": "¿PDF/A garantiza que un documento dure para siempre?",
+            "a": "No. PDF/A reduce algunas dependencias, pero la preservación también requiere copias de seguridad, controles de integridad, acceso gestionado y revisiones o migraciones planificadas."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -9856,6 +10007,157 @@
           "prepare-pdf-for-long-term-archive",
           "original-pdf-vs-access-copy"
         ]
+      },
+      {
+        "topic": "pdf-a-validation-checklist",
+        "slug": "pdf-a-validation-checklist",
+        "cluster": "archive-expansion",
+        "title": "Checklist para validar PDF/A antes de arquivar",
+        "metaTitle": "Checklist para validar PDF/A antes de arquivar",
+        "metaDescription": "Confira os requisitos PDF/A antes de arquivar: perfil, fontes, páginas e metadados. Grátis, sem cadastro e sem marca-d’água.",
+        "primaryKeyword": "checklist de validação PDF/A",
+        "secondaryKeywords": [
+          "PDF/A compliance check",
+          "PDF/A validator",
+          "PDF/A archiving requirements"
+        ],
+        "answer": "Antes de arquivar um PDF/A, confirme qual perfil e nível de conformidade o destinatário exige, converta uma cópia e valide o resultado com um verificador compatível. Confira páginas, fontes, cores e metadados. A conversão, por si só, não prova conformidade nem garante preservação a longo prazo.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Antes de arquivar um PDF/A, identifique o perfil exigido e valide o arquivo final com um verificador compatível. Confira também páginas, fontes, cores, metadados e qualquer assinatura ou formulário que precise ser preservado. A conversão não garante, sozinha, que todos os requisitos foram atendidos nem que o arquivo durará para sempre. Preserve o original e guarde o relatório de validação junto ao registro."
+          },
+          {
+            "t": "h2",
+            "x": "Como validar PDF/A antes de arquivar"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Confirme o requisito",
+                "x": "Pergunte ao destinatário qual perfil PDF/A e nível de conformidade aceita; não escolha apenas pelo nome."
+              },
+              {
+                "h": "Preserve o original",
+                "x": "Trabalhe em uma cópia e registre o nome ou identificador da fonte."
+              },
+              {
+                "h": "Converta com uma ferramenta adequada",
+                "x": "Use [PDF para PDF/A](/tools/pdf-to-pdfa) e confira o aviso de processamento: este trabalho é feito no servidor."
+              },
+              {
+                "h": "Valide o arquivo resultante",
+                "x": "Execute um validador PDF/A apropriado e guarde o relatório, o perfil e a versão da ferramenta."
+              },
+              {
+                "h": "Inspecione e registre",
+                "x": "Abra as páginas, confira conteúdo e metadados e documente a decisão antes de arquivar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Prepare uma cópia PDF/A. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Checklist antes de arquivar PDF/A"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Verificação",
+              "O que confirmar",
+              "Evidência útil"
+            ],
+            "rows": [
+              [
+                "Perfil",
+                "Atende ao requisito do destinatário?",
+                "Perfil e nível informados pelo destinatário."
+              ],
+              [
+                "Validação",
+                "O arquivo final passa em um verificador adequado?",
+                "Relatório, data e versão do validador."
+              ],
+              [
+                "Exibição",
+                "Páginas, fontes e imagens estão corretas?",
+                "Revisão visual de páginas representativas e críticas."
+              ],
+              [
+                "Registro",
+                "A fonte e o contexto foram preservados?",
+                "Original, identificador, metadados e decisão documentada."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Escolha primeiro o perfil PDF/A correto"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A é uma família de perfis e versões, não uma garantia genérica. O destinatário pode exigir uma parte ou nível específico. Confirme o requisito antes de converter, principalmente se o documento tiver formulários, anexos, assinaturas ou elementos de cor. Se não houver requisito, documente por que aquele perfil foi escolhido."
+          },
+          {
+            "t": "h2",
+            "x": "Valide o arquivo final com um verificador"
+          },
+          {
+            "t": "p",
+            "x": "A ferramenta de conversão pode criar uma cópia destinada a PDF/A, mas a validação independente ajuda a detectar não conformidades. Uma mensagem de sucesso ou um rótulo no nome não substitui um relatório. Guarde o resultado, a versão do validador e o perfil conferido. Se houver erros, preserve o original e corrija-os com um processo controlado antes de aceitar a cópia."
+          },
+          {
+            "t": "h2",
+            "x": "Confira a aparência e os dados do documento"
+          },
+          {
+            "t": "p",
+            "x": "Abra o PDF final e confira páginas completas, tabelas, caracteres, imagens, orientação e ordem. Revise título, autor e datas quando esses campos fizerem parte do catálogo. PDF/A restringe alguns recursos, então a conversão pode alterar ou remover elementos interativos. Não presuma que uma assinatura eletrônica continua válida; verifique-a pelo processo aprovado."
+          },
+          {
+            "t": "h2",
+            "x": "Preserve o contexto além do arquivo"
+          },
+          {
+            "t": "p",
+            "x": "A conformidade PDF/A não garante preservação eterna. Mantenha backups, controles de acesso, registros de integridade e uma política de migração. Preserve o original e o relatório de validação. Para conferir propriedades padrão, use [Editar metadados](/tools/edit-metadata); para limpar propriedades de uma cópia de distribuição, use [Remover metadados](/tools/remove-metadata)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Como validar um arquivo PDF/A?",
+            "a": "Identifique o perfil exigido, execute um validador compatível no arquivo final e guarde o relatório. Depois, revise visualmente as páginas e os metadados relevantes."
+          },
+          {
+            "q": "Converter para PDF/A garante conformidade?",
+            "a": "Não necessariamente. A conversão prepara uma cópia, mas um validador PDF/A adequado precisa conferir o resultado. Também é necessário revisar se o conteúdo mudou."
+          },
+          {
+            "q": "Qual perfil PDF/A devo escolher?",
+            "a": "Use o perfil exigido pelo destinatário ou pela política de arquivo. Não presuma que uma versão ou nível será aceito em todos os sistemas."
+          },
+          {
+            "q": "PDF/A garante que um documento dure para sempre?",
+            "a": "Não. PDF/A reduz algumas dependências, mas preservar exige backups, controles de integridade, acesso gerenciado e revisões ou migrações planejadas."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -14780,6 +15082,157 @@
           "pdf-archive-naming-convention",
           "prepare-pdf-for-long-term-archive",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "pdf-a-validation-checklist",
+        "slug": "pdf-a-validation-checklist",
+        "cluster": "archive-expansion",
+        "title": "आर्काइव से पहले PDF/A सत्यापन चेकलिस्ट",
+        "metaTitle": "आर्काइव से पहले PDF/A सत्यापन चेकलिस्ट",
+        "metaDescription": "आर्काइव से पहले PDF/A प्रोफ़ाइल, फ़ॉन्ट, पेज और मेटाडेटा जाँचें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।",
+        "primaryKeyword": "PDF/A सत्यापन चेकलिस्ट",
+        "secondaryKeywords": [
+          "PDF/A compliance check",
+          "PDF/A validator",
+          "PDF/A archiving requirements"
+        ],
+        "answer": "PDF/A को आर्काइव करने से पहले प्राप्तकर्ता से आवश्यक प्रोफ़ाइल और अनुरूपता स्तर की पुष्टि करें, स्रोत की कॉपी बदलें और परिणाम को उपयुक्त PDF/A वैलिडेटर से जाँचें। पेज, फ़ॉन्ट, रंग और मेटाडेटा भी देखें। केवल कन्वर्ज़न अनुरूपता या दीर्घकालिक संरक्षण की गारंटी नहीं देता।",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A आर्काइव करने से पहले आवश्यक प्रोफ़ाइल पहचानें और अंतिम फ़ाइल को उससे मेल खाते वैलिडेटर से जाँचें। पेज, फ़ॉन्ट, रंग, मेटाडेटा और सुरक्षित रखने वाले हस्ताक्षर या फ़ॉर्म भी देखें। कन्वर्ज़न अपने आप सभी शर्तें पूरी होने या फ़ाइल हमेशा सुरक्षित रहने का प्रमाण नहीं है। मूल फ़ाइल रखें और सत्यापन रिपोर्ट को रिकॉर्ड के साथ सुरक्षित करें।"
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव से पहले PDF/A कैसे वैलिडेट करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "आवश्यकता की पुष्टि करें",
+                "x": "प्राप्तकर्ता से पूछें कि कौन सी PDF/A प्रोफ़ाइल और अनुरूपता स्तर स्वीकार है; केवल नाम देखकर न चुनें।"
+              },
+              {
+                "h": "मूल फ़ाइल सुरक्षित रखें",
+                "x": "कॉपी पर काम करें और स्रोत का नाम या पहचान दर्ज करें।"
+              },
+              {
+                "h": "उपयुक्त टूल से कन्वर्ट करें",
+                "x": "[PDF to PDF/A](/tools/pdf-to-pdfa) खोलें और प्रोसेसिंग सूचना पढ़ें: यह काम सर्वर पर होता है।"
+              },
+              {
+                "h": "बनी फ़ाइल वैलिडेट करें",
+                "x": "उपयुक्त PDF/A वैलिडेटर चलाएँ और रिपोर्ट, प्रोफ़ाइल तथा टूल संस्करण रखें।"
+              },
+              {
+                "h": "जाँचकर निर्णय दर्ज करें",
+                "x": "पेज खोलें, सामग्री व मेटाडेटा देखें और आर्काइव से पहले निर्णय दर्ज करें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "PDF/A कॉपी तैयार करें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF/A आर्काइव करने से पहले चेकलिस्ट"
+          },
+          {
+            "t": "table",
+            "head": [
+              "जाँच",
+              "क्या पुष्टि करें",
+              "उपयोगी प्रमाण"
+            ],
+            "rows": [
+              [
+                "प्रोफ़ाइल",
+                "क्या यह प्राप्तकर्ता की शर्त से मेल खाती है?",
+                "प्राप्तकर्ता द्वारा बताई प्रोफ़ाइल और स्तर।"
+              ],
+              [
+                "वैलिडेशन",
+                "क्या अंतिम फ़ाइल उपयुक्त वैलिडेटर से पास हुई?",
+                "रिपोर्ट, तारीख और वैलिडेटर संस्करण।"
+              ],
+              [
+                "प्रदर्शन",
+                "क्या पेज, फ़ॉन्ट और चित्र सही दिखते हैं?",
+                "महत्वपूर्ण और प्रतिनिधि पेजों की दृश्य जाँच।"
+              ],
+              [
+                "रिकॉर्ड",
+                "क्या स्रोत और संदर्भ सुरक्षित हैं?",
+                "मूल, पहचान, मेटाडेटा और दर्ज निर्णय।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "पहले सही PDF/A प्रोफ़ाइल चुनें"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A अलग-अलग प्रोफ़ाइल और संस्करणों का परिवार है, कोई सामान्य गारंटी नहीं। प्राप्तकर्ता किसी खास भाग या स्तर की माँग कर सकता है। कन्वर्ट करने से पहले पुष्टि करें, खासकर यदि दस्तावेज़ में फ़ॉर्म, संलग्नक, हस्ताक्षर या रंगीन तत्व हों। यदि कोई तय आवश्यकता नहीं है, तो चुनी प्रोफ़ाइल का कारण दर्ज करें।"
+          },
+          {
+            "t": "h2",
+            "x": "अंतिम फ़ाइल को वैलिडेटर से जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "कन्वर्ज़न टूल PDF/A के लिए कॉपी बना सकता है, पर स्वतंत्र वैलिडेशन से असंगतियाँ मिल सकती हैं। सफलता संदेश या फ़ाइल नाम का लेबल रिपोर्ट का विकल्प नहीं है। परिणाम, वैलिडेटर संस्करण और जाँची प्रोफ़ाइल रखें। त्रुटि होने पर मूल सुरक्षित रखें और नियंत्रित प्रक्रिया से सुधार के बाद ही कॉपी स्वीकार करें।"
+          },
+          {
+            "t": "h2",
+            "x": "दस्तावेज़ का रूप और जानकारी जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "अंतिम PDF खोलकर पूरे पेज, तालिकाएँ, अक्षर, चित्र, दिशा और क्रम देखें। कैटलॉग का हिस्सा होने पर शीर्षक, लेखक और तारीख जाँचें। PDF/A कुछ सुविधाओं को सीमित करता है, इसलिए कन्वर्ज़न इंटरैक्टिव हिस्से बदल या हटा सकता है। इलेक्ट्रॉनिक हस्ताक्षर वैध बना रहेगा, ऐसा न मानें; स्वीकृत प्रक्रिया से जाँचें।"
+          },
+          {
+            "t": "h2",
+            "x": "फ़ाइल के साथ संदर्भ भी सुरक्षित रखें"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A अनुरूपता हमेशा के लिए संरक्षण की गारंटी नहीं है। बैकअप, पहुँच नियंत्रण, अखंडता लॉग और माइग्रेशन नीति बनाए रखें। मूल और वैलिडेशन रिपोर्ट रखें। सामान्य गुण देखने के लिए [Edit Metadata](/tools/edit-metadata), और वितरण कॉपी से हटाने के लिए [Remove Metadata](/tools/remove-metadata) उपयोग करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF/A फ़ाइल को कैसे वैलिडेट करें?",
+            "a": "आवश्यक प्रोफ़ाइल पहचानें, अंतिम फ़ाइल पर संगत वैलिडेटर चलाएँ और रिपोर्ट रखें। फिर पेज और जरूरी मेटाडेटा को देखकर जाँचें।"
+          },
+          {
+            "q": "क्या PDF/A में कन्वर्ट करने से अनुरूपता पक्की होती है?",
+            "a": "ज़रूरी नहीं। कन्वर्ज़न कॉपी बनाता है, लेकिन उपयुक्त वैलिडेटर से नतीजा जाँचना चाहिए। यह भी देखें कि सामग्री बदली तो नहीं।"
+          },
+          {
+            "q": "कौन सी PDF/A प्रोफ़ाइल चुनूँ?",
+            "a": "प्राप्तकर्ता या आर्काइव नीति द्वारा माँगी प्रोफ़ाइल चुनें। यह न मानें कि हर सिस्टम हर संस्करण या स्तर स्वीकार करेगा।"
+          },
+          {
+            "q": "क्या PDF/A दस्तावेज़ को हमेशा सुरक्षित रखता है?",
+            "a": "नहीं। यह कुछ बाहरी निर्भरताएँ घटाता है, लेकिन संरक्षण के लिए बैकअप, अखंडता जाँच, नियंत्रित पहुँच और योजनाबद्ध समीक्षा या माइग्रेशन भी चाहिए।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
@@ -19714,6 +20167,157 @@
           "pdf-archive-naming-convention",
           "prepare-pdf-for-long-term-archive",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "pdf-a-validation-checklist",
+        "slug": "pdf-a-validation-checklist",
+        "cluster": "archive-expansion",
+        "title": "قائمة التحقق من PDF/A قبل الأرشفة",
+        "metaTitle": "قائمة التحقق من PDF/A قبل الأرشفة",
+        "metaDescription": "تحقق من ملف PDF/A قبل الأرشفة: الملف التعريفي والخطوط والصفحات والبيانات الوصفية. مجاناً وبلا تسجيل أو علامة مائية.",
+        "primaryKeyword": "قائمة التحقق من PDF/A",
+        "secondaryKeywords": [
+          "PDF/A compliance check",
+          "PDF/A validator",
+          "PDF/A archiving requirements"
+        ],
+        "answer": "قبل أرشفة PDF/A، تأكد من الملف التعريفي ومستوى المطابقة المطلوبين، وحوّل نسخة ثم افحص الناتج بأداة تحقق مناسبة. راجع الصفحات والخطوط والألوان والبيانات الوصفية. التحويل وحده لا يثبت المطابقة ولا يضمن الحفظ طويل الأمد.",
+        "body": [
+          {
+            "t": "p",
+            "x": "قبل أرشفة PDF/A، حدد الملف التعريفي المطلوب وافحص الملف النهائي بأداة تحقق متوافقة معه. راجع الصفحات والخطوط والألوان والبيانات الوصفية وأي توقيع أو نموذج يجب حفظه. لا يضمن التحويل وحده استيفاء كل المتطلبات أو بقاء الملف إلى الأبد. احتفظ بالأصل وأرفق تقرير التحقق بسجل الأرشيف."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية التحقق من PDF/A قبل الأرشفة"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "أكد المتطلب",
+                "x": "اسأل الجهة المستلمة عن ملف PDF/A ومستوى المطابقة المقبولين؛ لا تختر بالاسم فقط."
+              },
+              {
+                "h": "احتفظ بالأصل",
+                "x": "اعمل على نسخة وسجل اسم المصدر أو معرّفه."
+              },
+              {
+                "h": "حوّل بأداة مناسبة",
+                "x": "استخدم [التحويل إلى PDF/A](/tools/pdf-to-pdfa) واقرأ إشعار المعالجة: هذه المهمة تتم على الخادم."
+              },
+              {
+                "h": "تحقق من الناتج",
+                "x": "شغّل أداة تحقق مناسبة لـ PDF/A واحتفظ بالتقرير والملف التعريفي وإصدار الأداة."
+              },
+              {
+                "h": "افحص وسجّل القرار",
+                "x": "افتح الصفحات وراجع المحتوى والبيانات الوصفية وسجّل القرار قبل الأرشفة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "أنشئ نسخة PDF/A. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "قائمة تحقق قبل أرشفة PDF/A"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الفحص",
+              "ما الذي تؤكده؟",
+              "دليل مفيد"
+            ],
+            "rows": [
+              [
+                "الملف التعريفي",
+                "هل يطابق متطلب الجهة المستلمة؟",
+                "الملف والمستوى اللذان حددتهما الجهة."
+              ],
+              [
+                "التحقق",
+                "هل اجتاز الملف النهائي أداة مناسبة؟",
+                "التقرير والتاريخ وإصدار أداة التحقق."
+              ],
+              [
+                "العرض",
+                "هل تظهر الصفحات والخطوط والصور بشكل صحيح؟",
+                "فحص بصري للصفحات المهمة والعينة الممثلة."
+              ],
+              [
+                "السجل",
+                "هل حُفظ المصدر والسياق؟",
+                "الأصل والمعرّف والبيانات الوصفية والقرار."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "اختر ملف PDF/A التعريفي المناسب أولاً"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A عائلة من الملفات التعريفية والإصدارات وليس ضماناً عاماً. قد تطلب الجهة المستلمة جزءاً أو مستوى محدداً. أكد المتطلب قبل التحويل، خصوصاً إذا احتوى المستند نماذج أو مرفقات أو توقيعات أو عناصر لونية. إذا لم يوجد متطلب، وثّق سبب اختيار الملف التعريفي."
+          },
+          {
+            "t": "h2",
+            "x": "تحقق من الملف النهائي بأداة مناسبة"
+          },
+          {
+            "t": "p",
+            "x": "قد تنشئ أداة التحويل نسخة مهيأة لـ PDF/A، لكن الفحص المستقل يساعد في كشف عدم المطابقة. رسالة النجاح أو تسمية الملف لا تحل محل التقرير. احتفظ بالنتيجة وإصدار أداة التحقق والملف المفحوص. إذا ظهرت أخطاء، احتفظ بالأصل وعالجها ضمن إجراء مضبوط قبل اعتماد النسخة."
+          },
+          {
+            "t": "h2",
+            "x": "راجع مظهر المستند ومعلوماته"
+          },
+          {
+            "t": "p",
+            "x": "افتح الملف النهائي وافحص اكتمال الصفحات والجداول والمحارف والصور والاتجاه والترتيب. راجع العنوان والمؤلف والتواريخ إذا كانت جزءاً من الفهرس. يقيّد PDF/A بعض الوظائف، لذا قد يغيّر التحويل عناصر تفاعلية أو يزيلها. لا تفترض بقاء صلاحية التوقيع الإلكتروني؛ تحقق منه بالإجراء المعتمد."
+          },
+          {
+            "t": "h2",
+            "x": "احفظ السياق إلى جانب الملف"
+          },
+          {
+            "t": "p",
+            "x": "مطابقة PDF/A لا تضمن الحفظ إلى الأبد. احتفظ بالنسخ الاحتياطية وضوابط الوصول وسجلات السلامة وسياسة الترحيل. احتفظ بالأصل وتقرير التحقق. لمراجعة الخصائص القياسية استخدم [تحرير البيانات الوصفية](/tools/edit-metadata)، ولتنظيف نسخة التوزيع استخدم [إزالة البيانات الوصفية](/tools/remove-metadata)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "كيف أتحقق من ملف PDF/A؟",
+            "a": "حدد الملف التعريفي المطلوب وشغّل أداة تحقق متوافقة على الملف النهائي واحتفظ بالتقرير. ثم راجع الصفحات والبيانات الوصفية المهمة بصرياً."
+          },
+          {
+            "q": "هل يضمن التحويل إلى PDF/A المطابقة؟",
+            "a": "ليس بالضرورة. التحويل ينشئ نسخة، لكن يجب فحصها بأداة تحقق مناسبة. راجع أيضاً ما إذا تغير المحتوى."
+          },
+          {
+            "q": "أي ملف PDF/A تعريفي أختار؟",
+            "a": "استخدم ما تطلبه الجهة المستلمة أو سياسة الأرشيف. لا تفترض قبول كل إصدار أو مستوى في جميع الأنظمة."
+          },
+          {
+            "q": "هل يضمن PDF/A بقاء المستند إلى الأبد؟",
+            "a": "لا. يقلل PDF/A بعض الاعتماديات، لكن الحفظ يتطلب نسخاً احتياطية وفحوص سلامة وإدارة وصول ومراجعات أو عمليات ترحيل مخططة."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
@@ -24652,6 +25256,157 @@
           "prepare-pdf-for-long-term-archive",
           "original-pdf-vs-access-copy"
         ]
+      },
+      {
+        "topic": "pdf-a-validation-checklist",
+        "slug": "pdf-a-validation-checklist",
+        "cluster": "archive-expansion",
+        "title": "আর্কাইভের আগে PDF/A যাচাই চেকলিস্ট",
+        "metaTitle": "আর্কাইভের আগে PDF/A যাচাই চেকলিস্ট",
+        "metaDescription": "আর্কাইভের আগে PDF/A প্রোফাইল, ফন্ট, পৃষ্ঠা ও মেটাডেটা যাচাই করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।",
+        "primaryKeyword": "PDF/A যাচাই চেকলিস্ট",
+        "secondaryKeywords": [
+          "PDF/A compliance check",
+          "PDF/A validator",
+          "PDF/A archiving requirements"
+        ],
+        "answer": "PDF/A আর্কাইভ করার আগে প্রাপক কোন প্রোফাইল ও কনফরম্যান্স স্তর চান তা নিশ্চিত করুন, একটি কপি রূপান্তর করুন এবং উপযুক্ত PDF/A ভ্যালিডেটর দিয়ে ফল যাচাই করুন। পৃষ্ঠা, ফন্ট, রং ও মেটাডেটাও দেখুন। শুধু রূপান্তর কনফরম্যান্স বা দীর্ঘমেয়াদি সংরক্ষণের নিশ্চয়তা দেয় না।",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A আর্কাইভ করার আগে প্রয়োজনীয় প্রোফাইল নির্ধারণ করুন এবং চূড়ান্ত ফাইলটি সামঞ্জস্যপূর্ণ ভ্যালিডেটর দিয়ে যাচাই করুন। পৃষ্ঠা, ফন্ট, রং, মেটাডেটা এবং সংরক্ষণযোগ্য স্বাক্ষর বা ফর্মও দেখুন। রূপান্তর একাই সব শর্ত পূরণ বা ফাইল চিরকাল টিকে থাকার প্রমাণ নয়। মূল ফাইল রাখুন এবং আর্কাইভ রেকর্ডের সঙ্গে যাচাই প্রতিবেদন সংরক্ষণ করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভের আগে PDF/A কীভাবে যাচাই করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "শর্ত নিশ্চিত করুন",
+                "x": "প্রাপককে জিজ্ঞেস করুন কোন PDF/A প্রোফাইল ও কনফরম্যান্স স্তর গ্রহণযোগ্য; শুধু নাম দেখে বাছবেন না।"
+              },
+              {
+                "h": "মূল ফাইল রাখুন",
+                "x": "কপিতে কাজ করুন এবং উৎসের নাম বা পরিচিতি নথিভুক্ত করুন।"
+              },
+              {
+                "h": "উপযুক্ত টুলে রূপান্তর করুন",
+                "x": "[PDF to PDF/A](/tools/pdf-to-pdfa) ব্যবহার করুন এবং প্রসেসিং নোটিশ দেখুন: এই কাজ সার্ভারে চলে।"
+              },
+              {
+                "h": "ফলাফল ভ্যালিডেট করুন",
+                "x": "উপযুক্ত PDF/A ভ্যালিডেটর চালিয়ে প্রতিবেদন, প্রোফাইল ও টুল সংস্করণ রাখুন।"
+              },
+              {
+                "h": "পরীক্ষা ও নথিভুক্ত করুন",
+                "x": "পৃষ্ঠা খুলে বিষয়বস্তু ও মেটাডেটা দেখুন, তারপর আর্কাইভের সিদ্ধান্ত লিখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "PDF/A কপি তৈরি করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF/A আর্কাইভের আগে যাচাই তালিকা"
+          },
+          {
+            "t": "table",
+            "head": [
+              "যাচাই",
+              "কী নিশ্চিত করবেন",
+              "প্রয়োজনীয় প্রমাণ"
+            ],
+            "rows": [
+              [
+                "প্রোফাইল",
+                "প্রাপকের শর্তের সঙ্গে মেলে কি?",
+                "প্রাপক নির্ধারিত প্রোফাইল ও স্তর।"
+              ],
+              [
+                "ভ্যালিডেশন",
+                "চূড়ান্ত ফাইল উপযুক্ত ভ্যালিডেটরে পাস করেছে?",
+                "প্রতিবেদন, তারিখ ও ভ্যালিডেটর সংস্করণ।"
+              ],
+              [
+                "দেখতে কেমন",
+                "পৃষ্ঠা, ফন্ট ও ছবি ঠিক আছে?",
+                "গুরুত্বপূর্ণ ও প্রতিনিধিত্বশীল পৃষ্ঠার দৃশ্যমান পরীক্ষা।"
+              ],
+              [
+                "রেকর্ড",
+                "উৎস ও প্রেক্ষাপট রাখা হয়েছে?",
+                "মূল কপি, পরিচিতি, মেটাডেটা ও নথিভুক্ত সিদ্ধান্ত।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "প্রথমে সঠিক PDF/A প্রোফাইল বাছুন"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A একাধিক প্রোফাইল ও সংস্করণের পরিবার, সাধারণ নিশ্চয়তা নয়। প্রাপক নির্দিষ্ট অংশ বা স্তর চাইতে পারেন। রূপান্তরের আগে শর্ত নিশ্চিত করুন, বিশেষ করে নথিতে ফর্ম, সংযুক্তি, স্বাক্ষর বা রঙিন উপাদান থাকলে। নির্দিষ্ট শর্ত না থাকলে বাছাই করা প্রোফাইলের কারণ লিখে রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "চূড়ান্ত ফাইল ভ্যালিডেটর দিয়ে যাচাই করুন"
+          },
+          {
+            "t": "p",
+            "x": "রূপান্তর টুল PDF/A-এর জন্য কপি তৈরি করতে পারে, কিন্তু স্বাধীন যাচাইয়ে অসঙ্গতি ধরা পড়ে। সফলতার বার্তা বা ফাইলের নাম প্রতিবেদন নয়। ফল, ভ্যালিডেটর সংস্করণ ও যাচাই করা প্রোফাইল সংরক্ষণ করুন। ত্রুটি থাকলে মূল কপি রেখে নিয়ন্ত্রিত প্রক্রিয়ায় সংশোধন করে তারপর কপি গ্রহণ করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "নথির দৃশ্য ও তথ্য পরীক্ষা করুন"
+          },
+          {
+            "t": "p",
+            "x": "চূড়ান্ত PDF খুলে পৃষ্ঠা সম্পূর্ণ কি না, টেবিল, অক্ষর, ছবি, দিক ও ক্রম দেখুন। ক্যাটালগে থাকলে শিরোনাম, লেখক ও তারিখ যাচাই করুন। PDF/A কিছু বৈশিষ্ট্য সীমিত করে, তাই রূপান্তরে ইন্টারঅ্যাকটিভ উপাদান বদলাতে বা বাদ পড়তে পারে। ইলেকট্রনিক স্বাক্ষর বৈধ থাকবে ধরে নেবেন না; অনুমোদিত পদ্ধতিতে পরীক্ষা করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ফাইলের পাশাপাশি প্রেক্ষাপটও সংরক্ষণ করুন"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A কনফরম্যান্স চিরস্থায়ী সংরক্ষণের নিশ্চয়তা দেয় না। ব্যাকআপ, অ্যাক্সেস নিয়ন্ত্রণ, অখণ্ডতা লগ ও মাইগ্রেশন নীতি রাখুন। মূল ফাইল এবং যাচাই প্রতিবেদন সংরক্ষণ করুন। সাধারণ বৈশিষ্ট্য দেখতে [Edit Metadata](/tools/edit-metadata), বিতরণ কপি থেকে সরাতে [Remove Metadata](/tools/remove-metadata) ব্যবহার করুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF/A ফাইল কীভাবে যাচাই করব?",
+            "a": "প্রয়োজনীয় প্রোফাইল ঠিক করুন, চূড়ান্ত ফাইলে সামঞ্জস্যপূর্ণ ভ্যালিডেটর চালান এবং প্রতিবেদন রাখুন। এরপর পৃষ্ঠা ও জরুরি মেটাডেটা দেখে নিন।"
+          },
+          {
+            "q": "PDF/A-তে রূপান্তর করলেই কি কনফরম্যান্স নিশ্চিত?",
+            "a": "না। রূপান্তর একটি কপি তৈরি করে, কিন্তু উপযুক্ত ভ্যালিডেটর দিয়ে ফল পরীক্ষা করতে হবে। বিষয়বস্তু বদলেছে কি না সেটিও দেখুন।"
+          },
+          {
+            "q": "কোন PDF/A প্রোফাইল বেছে নেব?",
+            "a": "প্রাপক বা আর্কাইভ নীতিতে চাওয়া প্রোফাইল ব্যবহার করুন। সব সিস্টেম একই সংস্করণ বা স্তর গ্রহণ করবে ধরে নেবেন না।"
+          },
+          {
+            "q": "PDF/A কি নথিকে চিরকাল সংরক্ষণ করে?",
+            "a": "না। PDF/A কিছু বাহ্যিক নির্ভরতা কমায়, তবে সংরক্ষণের জন্য ব্যাকআপ, অখণ্ডতা নিয়ন্ত্রণ, পরিচালিত প্রবেশাধিকার ও পরিকল্পিত পর্যালোচনা বা মাইগ্রেশন দরকার।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -29576,6 +30331,157 @@
           "pdf-archive-naming-convention",
           "prepare-pdf-for-long-term-archive",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "pdf-a-validation-checklist",
+        "slug": "pdf-a-validation-checklist",
+        "cluster": "archive-expansion",
+        "title": "Danh sách kiểm tra PDF/A trước khi lưu trữ",
+        "metaTitle": "Danh sách kiểm tra PDF/A trước khi lưu trữ",
+        "metaDescription": "Kiểm tra hồ sơ PDF/A trước khi lưu trữ: cấu hình, phông chữ, trang và siêu dữ liệu. Miễn phí, không đăng ký, không watermark.",
+        "primaryKeyword": "danh sách kiểm tra PDF/A",
+        "secondaryKeywords": [
+          "PDF/A compliance check",
+          "PDF/A validator",
+          "PDF/A archiving requirements"
+        ],
+        "answer": "Trước khi lưu trữ PDF/A, hãy xác nhận hồ sơ và mức tuân thủ mà bên nhận yêu cầu, chuyển đổi một bản sao rồi xác thực kết quả bằng công cụ phù hợp. Kiểm tra trang, phông chữ, màu sắc và siêu dữ liệu. Chỉ chuyển đổi không chứng minh tệp tuân thủ hoặc được bảo quản lâu dài.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Trước khi lưu trữ PDF/A, hãy xác định hồ sơ được yêu cầu và xác thực tệp cuối bằng công cụ phù hợp với hồ sơ đó. Kiểm tra trang, phông chữ, màu sắc, siêu dữ liệu và chữ ký hoặc biểu mẫu cần giữ. Việc chuyển đổi không tự chứng minh mọi yêu cầu đã được đáp ứng hay tệp sẽ tồn tại mãi. Hãy giữ bản gốc và lưu báo cáo xác thực cùng hồ sơ."
+          },
+          {
+            "t": "h2",
+            "x": "Cách xác thực PDF/A trước khi lưu trữ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Xác nhận yêu cầu",
+                "x": "Hỏi bên nhận chấp nhận hồ sơ PDF/A và mức tuân thủ nào; đừng chọn chỉ dựa vào tên."
+              },
+              {
+                "h": "Giữ bản gốc",
+                "x": "Làm việc trên bản sao và ghi lại tên hoặc mã nhận diện của nguồn."
+              },
+              {
+                "h": "Chuyển đổi bằng công cụ phù hợp",
+                "x": "Dùng [PDF sang PDF/A](/tools/pdf-to-pdfa) và đọc thông báo xử lý: tác vụ này chạy trên máy chủ."
+              },
+              {
+                "h": "Xác thực tệp kết quả",
+                "x": "Chạy công cụ xác thực PDF/A phù hợp và lưu báo cáo, hồ sơ cùng phiên bản công cụ."
+              },
+              {
+                "h": "Kiểm tra và ghi nhận",
+                "x": "Mở các trang, kiểm tra nội dung và siêu dữ liệu, rồi ghi lại quyết định trước khi lưu trữ."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Tạo bản sao PDF/A. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Danh sách kiểm tra trước khi lưu PDF/A"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục kiểm tra",
+              "Cần xác nhận",
+              "Bằng chứng hữu ích"
+            ],
+            "rows": [
+              [
+                "Hồ sơ",
+                "Có đáp ứng yêu cầu của bên nhận?",
+                "Hồ sơ và mức được bên nhận chỉ định."
+              ],
+              [
+                "Xác thực",
+                "Tệp cuối có qua công cụ phù hợp?",
+                "Báo cáo, ngày và phiên bản công cụ."
+              ],
+              [
+                "Hiển thị",
+                "Trang, phông chữ và hình ảnh có đúng?",
+                "Kiểm tra trực quan trang quan trọng và mẫu đại diện."
+              ],
+              [
+                "Hồ sơ lưu",
+                "Đã giữ nguồn và ngữ cảnh chưa?",
+                "Bản gốc, mã nhận diện, siêu dữ liệu và quyết định."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Chọn đúng hồ sơ PDF/A trước tiên"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A là một họ hồ sơ và phiên bản, không phải bảo đảm chung. Bên nhận có thể yêu cầu một phần hoặc mức cụ thể. Hãy xác nhận trước khi chuyển đổi, nhất là khi tài liệu có biểu mẫu, tệp đính kèm, chữ ký hoặc yếu tố màu. Nếu không có yêu cầu, hãy ghi lại lý do chọn hồ sơ đó."
+          },
+          {
+            "t": "h2",
+            "x": "Xác thực tệp cuối bằng công cụ phù hợp"
+          },
+          {
+            "t": "p",
+            "x": "Công cụ chuyển đổi có thể tạo bản dành cho PDF/A, nhưng xác thực độc lập giúp phát hiện lỗi tuân thủ. Thông báo thành công hay nhãn trong tên tệp không thay báo cáo. Lưu kết quả, phiên bản công cụ và hồ sơ đã kiểm tra. Nếu có lỗi, giữ bản gốc và xử lý theo quy trình kiểm soát trước khi chấp nhận bản sao."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra hình thức và thông tin tài liệu"
+          },
+          {
+            "t": "p",
+            "x": "Mở PDF cuối, kiểm tra trang đầy đủ, bảng, ký tự, hình ảnh, hướng và thứ tự. Xem tiêu đề, tác giả, ngày nếu chúng thuộc danh mục. PDF/A giới hạn một số chức năng nên chuyển đổi có thể đổi hoặc bỏ thành phần tương tác. Đừng mặc định chữ ký điện tử vẫn hợp lệ; hãy kiểm tra theo quy trình được duyệt."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ ngữ cảnh bên cạnh tệp"
+          },
+          {
+            "t": "p",
+            "x": "Tuân thủ PDF/A không bảo đảm lưu trữ mãi mãi. Hãy duy trì bản sao lưu, kiểm soát truy cập, nhật ký toàn vẹn và chính sách di chuyển. Giữ bản gốc và báo cáo xác thực. Dùng [Sửa siêu dữ liệu](/tools/edit-metadata) để xem thuộc tính chuẩn hoặc [Xóa siêu dữ liệu](/tools/remove-metadata) để làm sạch bản phát hành."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Làm thế nào xác thực tệp PDF/A?",
+            "a": "Xác định hồ sơ cần dùng, chạy công cụ tương thích trên tệp cuối và giữ báo cáo. Sau đó kiểm tra trực quan các trang và siêu dữ liệu liên quan."
+          },
+          {
+            "q": "Chuyển sang PDF/A có bảo đảm tuân thủ không?",
+            "a": "Không hẳn. Chuyển đổi tạo ra bản sao, nhưng cần công cụ xác thực phù hợp kiểm tra kết quả. Hãy xem nội dung có bị thay đổi không."
+          },
+          {
+            "q": "Nên chọn hồ sơ PDF/A nào?",
+            "a": "Dùng hồ sơ do bên nhận hoặc chính sách lưu trữ yêu cầu. Đừng giả định mọi hệ thống đều chấp nhận cùng phiên bản hoặc mức."
+          },
+          {
+            "q": "PDF/A có bảo đảm tài liệu tồn tại mãi mãi không?",
+            "a": "Không. PDF/A giảm một số phụ thuộc bên ngoài, nhưng lưu trữ còn cần sao lưu, kiểm soát toàn vẹn, quản lý truy cập và rà soát hoặc di chuyển theo kế hoạch."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
@@ -34510,6 +35416,157 @@
           "pdf-archive-naming-convention",
           "prepare-pdf-for-long-term-archive",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "pdf-a-validation-checklist",
+        "slug": "pdf-a-validation-checklist",
+        "cluster": "archive-expansion",
+        "title": "归档前 PDF/A 验证清单",
+        "metaTitle": "归档前 PDF/A 验证清单",
+        "metaDescription": "归档前检查 PDF/A 配置、字体、页面和元数据。免费、无需注册、无水印，可在浏览器中使用。",
+        "primaryKeyword": "PDF/A 验证清单",
+        "secondaryKeywords": [
+          "PDF/A compliance check",
+          "PDF/A validator",
+          "PDF/A archiving requirements"
+        ],
+        "answer": "归档 PDF/A 前，先确认接收方要求的配置和符合级别，转换副本，并用适用的 PDF/A 验证器检查结果。还要检查页面、字体、颜色和元数据。仅完成转换不能证明文件符合要求，也不能保证长期保存。",
+        "body": [
+          {
+            "t": "p",
+            "x": "归档 PDF/A 前，先确定要求的配置，并用与该配置匹配的验证器检查最终文件。还应检查页面、字体、颜色、元数据，以及需要保留的签名或表单。转换本身不能证明所有要求均已满足，也不能保证文件永久保存。请保留原件，并将验证报告与档案记录一同保存。"
+          },
+          {
+            "t": "h2",
+            "x": "如何在归档前验证 PDF/A"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "确认要求",
+                "x": "询问接收方接受哪种 PDF/A 配置和符合级别，不要只看名称来选择。"
+              },
+              {
+                "h": "保留原件",
+                "x": "在副本上操作，并记录源文件名称或标识符。"
+              },
+              {
+                "h": "使用合适的工具转换",
+                "x": "使用[转换为 PDF/A](/tools/pdf-to-pdfa)，并先查看处理说明：此任务在服务器上运行。"
+              },
+              {
+                "h": "验证转换结果",
+                "x": "使用适用的 PDF/A 验证器，并保存报告、配置和工具版本。"
+              },
+              {
+                "h": "检查并记录",
+                "x": "打开页面，检查内容和元数据，然后记录归档决定。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "创建 PDF/A 副本。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "归档 PDF/A 前的检查清单"
+          },
+          {
+            "t": "table",
+            "head": [
+              "检查项",
+              "需要确认",
+              "可保存的证据"
+            ],
+            "rows": [
+              [
+                "配置",
+                "是否符合接收方要求？",
+                "接收方指定的配置和级别。"
+              ],
+              [
+                "验证",
+                "最终文件是否通过适用验证器？",
+                "报告、日期和验证器版本。"
+              ],
+              [
+                "显示效果",
+                "页面、字体和图像是否正确？",
+                "抽查代表性和关键页面。"
+              ],
+              [
+                "档案记录",
+                "是否保留来源和上下文？",
+                "原件、标识符、元数据和决定记录。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "先选择正确的 PDF/A 配置"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A 是一系列配置和版本，并非笼统的保证。接收方可能要求特定部分或级别。转换前确认要求，尤其是文档包含表单、附件、签名或颜色元素时。如果没有明确要求，应记录选择该配置的原因。"
+          },
+          {
+            "t": "h2",
+            "x": "使用验证器检查最终文件"
+          },
+          {
+            "t": "p",
+            "x": "转换工具可以生成面向 PDF/A 的副本，但独立验证有助于发现不符合项。成功提示或文件名标签不能代替验证报告。保存验证结果、工具版本和检查的配置。如果发现错误，保留原件，并通过受控流程修正后再接受副本。"
+          },
+          {
+            "t": "h2",
+            "x": "检查文档外观和信息"
+          },
+          {
+            "t": "p",
+            "x": "打开最终 PDF，检查页面是否完整、表格、字符、图像、方向和顺序是否正确。如果标题、作者和日期属于目录字段，也要核对。PDF/A 会限制某些功能，因此转换可能更改或移除交互元素。不要假设电子签名仍有效，应按批准流程验证。"
+          },
+          {
+            "t": "h2",
+            "x": "文件之外也要保留上下文"
+          },
+          {
+            "t": "p",
+            "x": "符合 PDF/A 不保证永久保存。还需维护备份、访问控制、完整性记录和迁移政策。保留原件和验证报告。查看标准属性可用[编辑元数据](/tools/edit-metadata)；分发副本前清理属性可用[删除元数据](/tools/remove-metadata)。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "如何验证 PDF/A 文件？",
+            "a": "确定要求的配置，在最终文件上运行兼容的验证器并保存报告。然后目视检查页面和相关元数据。"
+          },
+          {
+            "q": "转换为 PDF/A 就能保证符合标准吗？",
+            "a": "不一定。转换会生成副本，但仍应由适用的验证器检查结果，并确认内容没有发生意外变化。"
+          },
+          {
+            "q": "应该选择哪种 PDF/A 配置？",
+            "a": "使用接收方或档案政策指定的配置。不要假设所有系统都接受相同的版本或级别。"
+          },
+          {
+            "q": "PDF/A 能保证文件永久保存吗？",
+            "a": "不能。PDF/A 可减少某些外部依赖，但长期保存还需要备份、完整性控制、访问管理，以及有计划的检查或迁移。"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "prepare-pdf-for-long-term-archive"
         ]
       }
     ]
