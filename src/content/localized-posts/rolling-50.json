@@ -5696,6 +5696,157 @@
           "pdf-a-validation-checklist",
           "document-retention-handoff-checklist"
         ]
+      },
+      {
+        "topic": "searchable-pdf-archive-folders",
+        "slug": "searchable-pdf-archive-folders",
+        "cluster": "archive-expansion",
+        "title": "Cómo organizar carpetas de archivo PDF para encontrarlas",
+        "metaTitle": "Cómo organizar carpetas de archivo PDF para encontrarlas",
+        "metaDescription": "Organiza archivos PDF con nombres, carpetas y OCR para encontrarlos. Gratis, privado en el navegador y sin registro.",
+        "primaryKeyword": "organizar carpetas de archivo PDF",
+        "secondaryKeywords": [
+          "searchable PDF archive",
+          "organize scanned PDFs",
+          "OCR searchable PDF folders"
+        ],
+        "answer": "Para encontrar PDF en un archivo, combina carpetas poco profundas por categoría o año, nombres coherentes y una hoja de índice con términos de búsqueda. Los escaneos necesitan OCR para que su contenido pueda buscarse; conserva el original y guarda el resultado de OCR como copia derivada. En PrintxPDF, OCR funciona en el navegador. Para algunos alfabetos, busca en el archivo de texto OCR, ya que el texto oculto del PDF puede tener limitaciones.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Una estructura clara hace que un archivo de PDF sea más fácil de recorrer, pero no convierte por sí sola un escaneo en texto buscable. Usa unas pocas carpetas amplias, nombres consistentes y un índice con la información clave. Para buscar palabras dentro de documentos escaneados, ejecuta OCR. PrintxPDF procesa el reconocimiento en tu navegador; conserva el original y trata el PDF buscable y el texto extraído como copias derivadas que debes revisar."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo crear un archivo PDF fácil de buscar"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Define categorías estables",
+                "x": "Organiza primero por función o tipo de registro y después por año; evita carpetas profundas y solapadas."
+              },
+              {
+                "h": "Aplica un patrón de nombre",
+                "x": "Usa fecha ISO, tipo, tema breve, identificador no sensible y versión, por ejemplo `2026-11-15_Factura_Energia_ID1042_v001.pdf`."
+              },
+              {
+                "h": "Añade OCR a los escaneos",
+                "x": "Usa [OCR PDF](/tools/ocr-pdf), elige el idioma correcto y revisa el texto reconocido antes de archivar la copia buscable."
+              },
+              {
+                "h": "Crea un índice",
+                "x": "Registra nombre, fecha, tipo, palabras clave aprobadas, ubicación y estado del OCR en un índice controlado."
+              },
+              {
+                "h": "Prueba la búsqueda y el acceso",
+                "x": "Busca términos de muestra, abre resultados y confirma que los permisos y copias de seguridad siguen la política."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "ocr-pdf",
+            "x": "Haz buscables tus escaneos en la pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Capas para encontrar un PDF archivado"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Capa",
+              "Para qué sirve",
+              "Ejemplo"
+            ],
+            "rows": [
+              [
+                "Carpetas",
+                "Limitar el recorrido a un grupo amplio.",
+                "Contratos / 2026 / Proveedores"
+              ],
+              [
+                "Nombre de archivo",
+                "Reconocer documento sin abrirlo.",
+                "Fecha_Tipo_Tema_ID_Versión.pdf"
+              ],
+              [
+                "OCR",
+                "Buscar palabras dentro del escaneo.",
+                "Nombre de cliente o cláusula impresa"
+              ],
+              [
+                "Índice",
+                "Buscar campos compartidos y filtrar.",
+                "Fecha, categoría, estado, palabras clave"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Mantén una estructura sencilla y predecible"
+          },
+          {
+            "t": "p",
+            "x": "Elige categorías que coincidan con cómo el equipo consulta los registros: por año, tipo de documento, proyecto o área autorizada. Usa pocos niveles y evita guardar el mismo registro en varias carpetas sin una regla clara. Define cómo tratar borradores, versiones finales y copias de acceso. Una estructura breve y uniforme funciona mejor que decenas de nombres de carpetas personales."
+          },
+          {
+            "t": "h2",
+            "x": "Nombra los archivos sin exponer información privada"
+          },
+          {
+            "t": "p",
+            "x": "Pon primero una fecha en formato `AAAA-MM-DD` si la fecha ayuda a ordenar. Añade un tipo documental, tema corto e identificador aprobado. Evita nombres, números de cuenta, datos médicos y otros detalles sensibles: los nombres pueden aparecer en búsquedas recientes, respaldos o registros. No uses `final-final`; numera versiones y documenta estados como borrador, aprobado o firmado según el flujo."
+          },
+          {
+            "t": "h2",
+            "x": "OCR hace buscable el contenido de los escaneos"
+          },
+          {
+            "t": "p",
+            "x": "Una imagen de página no contiene texto que el buscador pueda leer. [OCR PDF](/tools/ocr-pdf) añade una capa de texto oculta y también ofrece un archivo `.txt`; el reconocimiento se ejecuta en tu navegador y la primera vez puede descargar el paquete de idioma seleccionado. Elige el idioma correcto, porque afecta la precisión, y revisa nombres, cifras y caracteres antes de confiar en el resultado. El OCR no demuestra que el documento sea auténtico."
+          },
+          {
+            "t": "h2",
+            "x": "Conserva originales, texto e índice con controles"
+          },
+          {
+            "t": "p",
+            "x": "Guarda el escaneo original junto a la copia OCR con nombres que indiquen su relación. El PDF buscable se reconstruye y algunos elementos como enlaces, marcadores o campos rellenables podrían no conservarse. Para idiomas con escritura no occidental, la búsqueda dentro del PDF OCR puede ser limitada; usa el `.txt` para buscar el texto reconocido completo. Mantén el índice con permisos adecuados y una rutina de respaldo y restauración probada."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Las carpetas hacen que un PDF escaneado sea buscable?",
+            "a": "No. Las carpetas y los nombres ayudan a encontrar el archivo, pero para buscar palabras dentro de un escaneo hay que aplicar OCR. Conserva el original y revisa la copia reconocida."
+          },
+          {
+            "q": "¿Cuál es un buen patrón para nombrar PDF de archivo?",
+            "a": "Usa campos consistentes como `AAAA-MM-DD_Tipo_Tema_ID_v001.pdf`. Adáptalo a la política local y evita incluir datos personales sensibles en nombres visibles."
+          },
+          {
+            "q": "¿OCR PDF procesa mis archivos en un servidor?",
+            "a": "La herramienta OCR PDF realiza el reconocimiento en tu navegador. Puede descargar una vez el paquete de idioma; el archivo escaneado permanece en el dispositivo durante ese proceso."
+          },
+          {
+            "q": "¿Puedo buscar idiomas distintos del inglés dentro del PDF OCR?",
+            "a": "El texto reconocido está disponible en el archivo `.txt`. La búsqueda en el PDF OCR puede estar limitada para escrituras como árabe, bengalí o chino; usa el `.txt` para esos idiomas."
+          }
+        ],
+        "relatedTools": [
+          "ocr-pdf",
+          "pdf-reader",
+          "pdf-to-text",
+          "create-zip"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-naming-convention",
+          "document-retention-handoff-checklist",
+          "archive-copy-vs-backup"
+        ]
       }
     ]
   },
@@ -11386,6 +11537,157 @@
           "pdf-a-validation-checklist",
           "document-retention-handoff-checklist"
         ]
+      },
+      {
+        "topic": "searchable-pdf-archive-folders",
+        "slug": "searchable-pdf-archive-folders",
+        "cluster": "archive-expansion",
+        "title": "Como organizar pastas de arquivo PDF para localizar arquivos",
+        "metaTitle": "Como organizar pastas de arquivo PDF para localizar arquivos",
+        "metaDescription": "Organize PDFs com nomes, pastas e OCR para encontrá-los. Grátis, privado no navegador e sem cadastro.",
+        "primaryKeyword": "organizar pastas de arquivo PDF",
+        "secondaryKeywords": [
+          "searchable PDF archive",
+          "organize scanned PDFs",
+          "OCR searchable PDF folders"
+        ],
+        "answer": "Para localizar PDFs em um arquivo, combine pastas rasas por categoria ou ano, nomes consistentes e um índice com termos de busca. Digitalizações precisam de OCR para que o conteúdo possa ser pesquisado; preserve o original e salve o resultado como cópia derivada. O OCR do PrintxPDF roda no navegador. Para alguns alfabetos, pesquise no arquivo de texto OCR, pois o texto oculto no PDF pode ter limitações.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Uma estrutura clara facilita navegar por um arquivo PDF, mas não transforma uma digitalização em texto pesquisável. Use poucas pastas amplas, nomes consistentes e um índice com informações importantes. Para pesquisar palavras dentro de documentos digitalizados, execute OCR. O PrintxPDF processa o reconhecimento no navegador; preserve o original e trate o PDF pesquisável e o texto extraído como cópias derivadas que devem ser revisadas."
+          },
+          {
+            "t": "h2",
+            "x": "Como criar um arquivo PDF fácil de pesquisar"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Defina categorias estáveis",
+                "x": "Organize por função ou tipo de registro e depois por ano; evite pastas profundas e sobrepostas."
+              },
+              {
+                "h": "Adote um padrão de nome",
+                "x": "Use data ISO, tipo, assunto curto, identificador não sensível e versão, por exemplo `2026-11-15_Nota_Energia_ID1042_v001.pdf`."
+              },
+              {
+                "h": "Aplique OCR às digitalizações",
+                "x": "Use [OCR PDF](/tools/ocr-pdf), escolha o idioma correto e confira o texto reconhecido antes de arquivar a cópia pesquisável."
+              },
+              {
+                "h": "Crie um índice",
+                "x": "Registre nome, data, tipo, palavras-chave aprovadas, localização e estado do OCR em um índice controlado."
+              },
+              {
+                "h": "Teste a busca e o acesso",
+                "x": "Pesquise termos de exemplo, abra resultados e confirme permissões e backups conforme a política."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "ocr-pdf",
+            "x": "Torne suas digitalizações pesquisáveis na aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Camadas para localizar um PDF arquivado"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Camada",
+              "Para que serve",
+              "Exemplo"
+            ],
+            "rows": [
+              [
+                "Pastas",
+                "Restringir a busca a um grupo amplo.",
+                "Contratos / 2026 / Fornecedores"
+              ],
+              [
+                "Nome do arquivo",
+                "Identificar o documento sem abri-lo.",
+                "Data_Tipo_Assunto_ID_Versão.pdf"
+              ],
+              [
+                "OCR",
+                "Pesquisar palavras dentro da digitalização.",
+                "Nome de cliente ou cláusula impressa"
+              ],
+              [
+                "Índice",
+                "Pesquisar campos comuns e filtrar.",
+                "Data, categoria, estado, palavras-chave"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Mantenha a estrutura simples e previsível"
+          },
+          {
+            "t": "p",
+            "x": "Escolha categorias que correspondam a como a equipe consulta os registros: ano, tipo documental, projeto ou área autorizada. Use poucos níveis e evite guardar o mesmo registro em várias pastas sem uma regra clara. Defina como tratar rascunhos, versões finais e cópias de acesso. Uma estrutura curta e uniforme funciona melhor do que dezenas de nomes de pastas pessoais."
+          },
+          {
+            "t": "h2",
+            "x": "Nomeie arquivos sem expor dados privados"
+          },
+          {
+            "t": "p",
+            "x": "Use a data no formato `AAAA-MM-DD` primeiro quando ela ajudar a ordenar. Acrescente tipo documental, assunto curto e um identificador aprovado. Evite nomes, números de conta, dados médicos e outros detalhes sensíveis: nomes podem aparecer em buscas recentes, backups ou logs. Não use `final-final`; numere versões e documente estados como rascunho, aprovado ou assinado conforme o fluxo."
+          },
+          {
+            "t": "h2",
+            "x": "OCR torna o conteúdo das digitalizações pesquisável"
+          },
+          {
+            "t": "p",
+            "x": "Uma imagem de página não contém texto que o buscador possa ler. [OCR PDF](/tools/ocr-pdf) adiciona uma camada de texto invisível e também fornece um arquivo `.txt`; o reconhecimento é feito no navegador e, na primeira vez, pode baixar o pacote do idioma escolhido. Selecione o idioma correto, pois isso afeta a precisão, e confira nomes, números e caracteres. OCR não comprova autenticidade."
+          },
+          {
+            "t": "h2",
+            "x": "Preserve originais, texto e índice com controles"
+          },
+          {
+            "t": "p",
+            "x": "Guarde a digitalização original junto à cópia OCR, com nomes que indiquem a relação. O PDF pesquisável é reconstruído e alguns elementos como links, marcadores ou campos preenchíveis podem não ser mantidos. Para idiomas com escrita não ocidental, a busca dentro do PDF OCR pode ser limitada; use o `.txt` para pesquisar o texto reconhecido completo. Proteja o índice com permissões adequadas e uma rotina de backup e restauração testada."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Pastas tornam uma digitalização pesquisável?",
+            "a": "Não. Pastas e nomes ajudam a localizar o arquivo, mas é preciso aplicar OCR para pesquisar palavras dentro de uma digitalização. Preserve o original e revise a cópia reconhecida."
+          },
+          {
+            "q": "Qual é um bom padrão para nomear PDFs de arquivo?",
+            "a": "Use campos consistentes como `AAAA-MM-DD_Tipo_Assunto_ID_v001.pdf`. Adapte à política local e não inclua dados pessoais sensíveis nos nomes visíveis."
+          },
+          {
+            "q": "O OCR PDF processa meus arquivos em um servidor?",
+            "a": "A ferramenta OCR PDF faz o reconhecimento no navegador. Ela pode baixar o pacote de idioma uma vez; o arquivo digitalizado permanece no dispositivo durante o processamento."
+          },
+          {
+            "q": "Posso pesquisar outros idiomas dentro do PDF OCR?",
+            "a": "O texto reconhecido fica disponível no arquivo `.txt`. A busca no PDF OCR pode ser limitada para escritas como árabe, bengali ou chinês; use o `.txt` nesses idiomas."
+          }
+        ],
+        "relatedTools": [
+          "ocr-pdf",
+          "pdf-reader",
+          "pdf-to-text",
+          "create-zip"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-naming-convention",
+          "document-retention-handoff-checklist",
+          "archive-copy-vs-backup"
+        ]
       }
     ]
   },
@@ -17075,6 +17377,157 @@
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist",
           "document-retention-handoff-checklist"
+        ]
+      },
+      {
+        "topic": "searchable-pdf-archive-folders",
+        "slug": "searchable-pdf-archive-folders",
+        "cluster": "archive-expansion",
+        "title": "खोज योग्य PDF आर्काइव फ़ोल्डर कैसे बनाएँ",
+        "metaTitle": "खोज योग्य PDF आर्काइव फ़ोल्डर कैसे बनाएँ",
+        "metaDescription": "PDF खोजने के लिए नाम, फ़ोल्डर और OCR व्यवस्थित करें। मुफ़्त, निजी ब्राउज़र में, बिना साइनअप या वॉटरमार्क के।",
+        "primaryKeyword": "खोज योग्य PDF आर्काइव फ़ोल्डर",
+        "secondaryKeywords": [
+          "searchable PDF archive",
+          "organize scanned PDFs",
+          "OCR searchable PDF folders"
+        ],
+        "answer": "PDF आर्काइव में फ़ाइलें ढूँढने के लिए श्रेणी या वर्ष के अनुसार सरल फ़ोल्डर, एक समान नाम और खोज शब्दों वाली सूची बनाएँ। स्कैन के भीतर शब्द खोजने के लिए OCR चाहिए; मूल रखें और OCR परिणाम को अलग कॉपी के रूप में सुरक्षित करें। PrintxPDF OCR ब्राउज़र में चलाता है। कुछ लिपियों के लिए OCR PDF की जगह टेक्स्ट फ़ाइल में खोजें, क्योंकि PDF की छिपी टेक्स्ट परत सीमित हो सकती है।",
+        "body": [
+          {
+            "t": "p",
+            "x": "साफ़ संरचना PDF आर्काइव में फ़ाइलें ढूँढना आसान करती है, लेकिन फ़ोल्डर बनाने से स्कैन का टेक्स्ट अपने आप खोज योग्य नहीं होता। कुछ बड़े वर्गों के फ़ोल्डर, एक समान फ़ाइल नाम और मुख्य जानकारी वाली सूची रखें। स्कैन किए दस्तावेज़ के भीतर शब्द ढूँढने के लिए OCR चलाएँ। PrintxPDF यह काम ब्राउज़र में करता है; मूल सुरक्षित रखें और खोज योग्य PDF व निकाले गए टेक्स्ट को जाँचने योग्य अलग प्रतियाँ मानें।"
+          },
+          {
+            "t": "h2",
+            "x": "खोजने में आसान PDF आर्काइव कैसे बनाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "स्थिर श्रेणियाँ तय करें",
+                "x": "पहले रिकॉर्ड के काम या प्रकार के अनुसार, फिर वर्ष के अनुसार रखें; बहुत गहरी या दोहराई फ़ोल्डर संरचना न बनाएँ।"
+              },
+              {
+                "h": "नाम का एक पैटर्न अपनाएँ",
+                "x": "ISO तारीख, प्रकार, छोटा विषय, गैर-संवेदनशील पहचान और संस्करण रखें, जैसे `2026-11-15_Bill_Energy_ID1042_v001.pdf`।"
+              },
+              {
+                "h": "स्कैन पर OCR चलाएँ",
+                "x": "[OCR PDF](/tools/ocr-pdf) खोलें, सही भाषा चुनें और खोज योग्य कॉपी रखने से पहले पहचाना टेक्स्ट जाँचें।"
+              },
+              {
+                "h": "सूची या इंडेक्स बनाएँ",
+                "x": "नियंत्रित इंडेक्स में नाम, तारीख, प्रकार, स्वीकृत कीवर्ड, स्थान और OCR स्थिति दर्ज करें।"
+              },
+              {
+                "h": "खोज और पहुँच परखें",
+                "x": "नमूना शब्द खोजें, परिणाम खोलें और नीति के अनुसार अनुमति व बैकअप जाँचें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "ocr-pdf",
+            "x": "अपने टैब में स्कैन खोज योग्य बनाएँ। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव PDF खोजने की परतें"
+          },
+          {
+            "t": "table",
+            "head": [
+              "परत",
+              "काम",
+              "उदाहरण"
+            ],
+            "rows": [
+              [
+                "फ़ोल्डर",
+                "बड़े समूह तक खोज सीमित करना।",
+                "अनुबंध / 2026 / सप्लायर"
+              ],
+              [
+                "फ़ाइल नाम",
+                "बिना खोले दस्तावेज़ पहचानना।",
+                "तारीख_प्रकार_विषय_ID_संस्करण.pdf"
+              ],
+              [
+                "OCR",
+                "स्कैन के भीतर शब्द खोजना।",
+                "ग्राहक का नाम या छपी धारा"
+              ],
+              [
+                "इंडेक्स",
+                "साझा फ़ील्ड खोजकर छाँटना।",
+                "तारीख, श्रेणी, स्थिति, कीवर्ड"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "संरचना सरल और अनुमानित रखें"
+          },
+          {
+            "t": "p",
+            "x": "ऐसी श्रेणियाँ चुनें जिनसे टीम रिकॉर्ड खोजती है: वर्ष, दस्तावेज़ प्रकार, परियोजना या अधिकृत विभाग। स्तर कम रखें और बिना स्पष्ट नियम के एक ही रिकॉर्ड कई फ़ोल्डर में न रखें। ड्राफ्ट, अंतिम संस्करण और पहुँच कॉपी के लिए नियम तय करें। एक छोटी, समान संरचना दर्जनों निजी फ़ोल्डर नामों से बेहतर रहती है।"
+          },
+          {
+            "t": "h2",
+            "x": "निजी जानकारी उजागर किए बिना नाम रखें"
+          },
+          {
+            "t": "p",
+            "x": "क्रम में मदद मिले तो पहले `YYYY-MM-DD` तारीख रखें, फिर दस्तावेज़ प्रकार, छोटा विषय और स्वीकृत पहचान लिखें। पूरा नाम, खाता संख्या, मेडिकल जानकारी या अन्य संवेदनशील विवरण से बचें; नाम हाल की खोज, बैकअप या लॉग में दिख सकते हैं। `final-final` न लिखें; संस्करण नंबर दें और ड्राफ्ट, स्वीकृत या हस्ताक्षरित स्थिति दर्ज करें।"
+          },
+          {
+            "t": "h2",
+            "x": "OCR स्कैन की सामग्री को खोज योग्य बनाता है"
+          },
+          {
+            "t": "p",
+            "x": "पेज की तस्वीर में ऐसा टेक्स्ट नहीं होता जिसे खोज टूल पढ़ सके। [OCR PDF](/tools/ocr-pdf) अदृश्य टेक्स्ट परत जोड़ता है और `.txt` फ़ाइल भी देता है; पहचान ब्राउज़र में चलती है और पहली बार चुनी भाषा का पैक डाउनलोड हो सकता है। सही भाषा चुनें और नाम, अंक व अक्षर जाँचें। OCR दस्तावेज़ की प्रामाणिकता साबित नहीं करता।"
+          },
+          {
+            "t": "h2",
+            "x": "मूल, टेक्स्ट और सूची को नियंत्रणों सहित रखें"
+          },
+          {
+            "t": "p",
+            "x": "मूल स्कैन के साथ OCR कॉपी रखें और नामों में उनका संबंध दिखाएँ। खोज योग्य PDF दोबारा बनती है; लिंक, बुकमार्क या फ़ॉर्म फ़ील्ड जैसी चीज़ें शायद न रहें। अरबी, बंगाली या चीनी जैसी लिपियों के लिए PDF के भीतर खोज सीमित हो सकती है; पूरा पहचाना टेक्स्ट खोजने के लिए `.txt` देखें। इंडेक्स पर उचित अनुमति लगाएँ और बैकअप बहाली की जाँची दिनचर्या रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या फ़ोल्डर बनाने से स्कैन खोज योग्य हो जाता है?",
+            "a": "नहीं। फ़ोल्डर और नाम फ़ाइल ढूँढने में मदद करते हैं, पर स्कैन के भीतर शब्द खोजने के लिए OCR चलाना पड़ता है। मूल रखें और पहचानी कॉपी जाँचें।"
+          },
+          {
+            "q": "आर्काइव PDF का अच्छा नाम पैटर्न क्या है?",
+            "a": "एक समान फ़ील्ड रखें, जैसे `YYYY-MM-DD_Type_Topic_ID_v001.pdf`। स्थानीय नीति के अनुसार ढालें और दिखने वाले नामों में संवेदनशील निजी जानकारी न रखें।"
+          },
+          {
+            "q": "क्या OCR PDF मेरी फ़ाइल सर्वर पर भेजता है?",
+            "a": "OCR PDF पहचान ब्राउज़र में करता है। भाषा पैक एक बार डाउनलोड हो सकता है; प्रोसेस के दौरान स्कैन फ़ाइल डिवाइस पर रहती है।"
+          },
+          {
+            "q": "क्या OCR PDF में अंग्रेज़ी के अलावा भाषा खोज सकते हैं?",
+            "a": "पहचाना टेक्स्ट `.txt` में उपलब्ध है। अरबी, बंगाली या चीनी जैसी लिपियों के लिए PDF के भीतर खोज सीमित हो सकती है; `.txt` का उपयोग करें।"
+          }
+        ],
+        "relatedTools": [
+          "ocr-pdf",
+          "pdf-reader",
+          "pdf-to-text",
+          "create-zip"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-naming-convention",
+          "document-retention-handoff-checklist",
+          "archive-copy-vs-backup"
         ]
       }
     ]
@@ -22774,6 +23227,157 @@
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist",
           "document-retention-handoff-checklist"
+        ]
+      },
+      {
+        "topic": "searchable-pdf-archive-folders",
+        "slug": "searchable-pdf-archive-folders",
+        "cluster": "archive-expansion",
+        "title": "كيفية تنظيم مجلدات PDF الأرشيفية القابلة للبحث",
+        "metaTitle": "كيفية تنظيم مجلدات PDF الأرشيفية القابلة للبحث",
+        "metaDescription": "نظم ملفات PDF بأسماء ومجلدات وOCR لتسهيل العثور عليها. أداة مجانية وخاصة في المتصفح، بلا تسجيل أو علامة مائية.",
+        "primaryKeyword": "تنظيم مجلدات PDF الأرشيف",
+        "secondaryKeywords": [
+          "searchable PDF archive",
+          "organize scanned PDFs",
+          "OCR searchable PDF folders"
+        ],
+        "answer": "للعثور على ملفات PDF في الأرشيف، استخدم مجلدات بسيطة حسب الفئة أو السنة، وأسماء موحدة وفهرساً يتضمن كلمات البحث. تحتاج المستندات الممسوحة إلى OCR للبحث داخل محتواها؛ احتفظ بالأصل وخزن نتيجة OCR كنسخة مشتقة. تعمل أداة PrintxPDF داخل المتصفح. لبعض الأبجديات ابحث في ملف النص OCR، فقد تكون طبقة النص المخفية في PDF محدودة.",
+        "body": [
+          {
+            "t": "p",
+            "x": "يسهل التنظيم الواضح التنقل في أرشيف PDF، لكنه لا يجعل المسح الضوئي قابلاً للبحث النصي تلقائياً. استخدم مجلدات واسعة قليلة وأسماء موحدة وفهرساً للمعلومات الأساسية. للبحث عن كلمات داخل المستند الممسوح، شغّل OCR. تعالج PrintxPDF التعرف داخل المتصفح؛ احتفظ بالأصل وتعامل مع PDF القابل للبحث والنص المستخرج كنسخ مشتقة تحتاج إلى مراجعة."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية إنشاء أرشيف PDF يسهل البحث فيه"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "حدد فئات ثابتة",
+                "x": "نظم أولاً حسب الغرض أو نوع السجل ثم السنة؛ تجنب التداخل والتعمق الزائد في المجلدات."
+              },
+              {
+                "h": "اعتمد نمط تسمية",
+                "x": "استخدم تاريخ ISO والنوع وموضوعاً قصيراً ومعرفاً غير حساس وإصداراً، مثل `2026-11-15_فاتورة_طاقة_ID1042_v001.pdf`."
+              },
+              {
+                "h": "أضف OCR للمسح",
+                "x": "استخدم [OCR PDF](/tools/ocr-pdf)، واختر اللغة الصحيحة وراجع النص قبل حفظ النسخة القابلة للبحث."
+              },
+              {
+                "h": "أنشئ فهرساً",
+                "x": "سجل الاسم والتاريخ والنوع والكلمات المفتاحية المعتمدة والموقع وحالة OCR في فهرس مضبوط."
+              },
+              {
+                "h": "اختبر البحث والوصول",
+                "x": "ابحث عن كلمات تجريبية وافتح النتائج وتأكد من الصلاحيات والنسخ الاحتياطية وفق السياسة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "ocr-pdf",
+            "x": "اجعل المسح قابلاً للبحث في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "طبقات العثور على PDF مؤرشف"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الطبقة",
+              "وظيفتها",
+              "مثال"
+            ],
+            "rows": [
+              [
+                "المجلدات",
+                "حصر التصفح في مجموعة واسعة.",
+                "عقود / 2026 / موردون"
+              ],
+              [
+                "اسم الملف",
+                "التعرف على المستند دون فتحه.",
+                "تاريخ_نوع_موضوع_ID_إصدار.pdf"
+              ],
+              [
+                "OCR",
+                "البحث عن كلمات داخل المسح.",
+                "اسم عميل أو بند مطبوع"
+              ],
+              [
+                "الفهرس",
+                "البحث في حقول مشتركة والتصفية.",
+                "تاريخ، فئة، حالة، كلمات مفتاحية"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "اجعل البنية بسيطة ومتوقعة"
+          },
+          {
+            "t": "p",
+            "x": "اختر فئات توافق طريقة بحث الفريق عن السجلات: السنة أو نوع المستند أو المشروع أو القسم المخول. قلل مستويات المجلدات ولا تحفظ السجل نفسه في مجلدات متعددة دون قاعدة واضحة. حدد طريقة التعامل مع المسودات والنسخ النهائية ونسخ الوصول. البنية القصيرة الموحدة أفضل من عشرات أسماء المجلدات الشخصية."
+          },
+          {
+            "t": "h2",
+            "x": "سم الملفات دون كشف معلومات خاصة"
+          },
+          {
+            "t": "p",
+            "x": "ضع تاريخ `YYYY-MM-DD` أولاً إذا كان يساعد على الترتيب، ثم نوع المستند وموضوعاً قصيراً ومعرفاً معتمداً. تجنب الأسماء وأرقام الحسابات والمعلومات الطبية والتفاصيل الحساسة؛ فقد تظهر أسماء الملفات في عمليات البحث الحديثة أو النسخ الاحتياطية أو السجلات. لا تستخدم `final-final`؛ رقّم الإصدارات ووثق حالات المسودة والاعتماد والتوقيع وفق سير العمل."
+          },
+          {
+            "t": "h2",
+            "x": "يجعل OCR محتوى المسح قابلاً للبحث"
+          },
+          {
+            "t": "p",
+            "x": "صورة الصفحة لا تحتوي على نص يقرأه البحث. يضيف [OCR PDF](/tools/ocr-pdf) طبقة نص مخفية ويوفر أيضاً ملف `.txt`؛ ويعمل التعرف في المتصفح وقد ينزل حزمة اللغة المختارة أول مرة. اختر اللغة الصحيحة لأنها تؤثر في الدقة، وراجع الأسماء والأرقام والمحارف. لا يثبت OCR أصالة المستند."
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بالأصل والنص والفهرس بضوابط مناسبة"
+          },
+          {
+            "t": "p",
+            "x": "احفظ المسح الأصلي بجانب نسخة OCR مع أسماء تبين العلاقة بينهما. يعاد بناء PDF القابل للبحث وقد لا يحتفظ بالروابط أو العلامات المرجعية أو الحقول القابلة للتعبئة. قد يكون البحث داخل PDF محدوداً للغات غير اللاتينية مثل العربية والبنغالية والصينية؛ استخدم `.txt` للبحث في النص الكامل المتعرف عليه. قيد الوصول إلى الفهرس واحتفظ بنسخ احتياطية واختبر الاستعادة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل تجعل المجلدات PDF ممسوحاً قابلاً للبحث؟",
+            "a": "لا. تساعد المجلدات والأسماء في العثور على الملف، لكن البحث داخل نص المسح يتطلب OCR. احتفظ بالأصل وراجع النسخة المتعرف عليها."
+          },
+          {
+            "q": "ما نمط تسمية مناسباً لأرشيف PDF؟",
+            "a": "استخدم حقولاً ثابتة مثل `YYYY-MM-DD_Type_Topic_ID_v001.pdf`. عدلها وفق السياسة المحلية ولا تضع معلومات شخصية حساسة في الاسم الظاهر."
+          },
+          {
+            "q": "هل تعالج OCR PDF ملفاتي على خادم؟",
+            "a": "تجري أداة OCR PDF التعرف داخل المتصفح. قد تنزل حزمة اللغة مرة واحدة؛ ويبقى ملف المسح على الجهاز أثناء المعالجة."
+          },
+          {
+            "q": "هل يمكن البحث بلغات غير الإنجليزية في PDF الناتج؟",
+            "a": "يتوفر النص المتعرف عليه في ملف `.txt`. قد يكون البحث داخل PDF محدوداً للعربية أو البنغالية أو الصينية؛ استخدم ملف النص لهذه اللغات."
+          }
+        ],
+        "relatedTools": [
+          "ocr-pdf",
+          "pdf-reader",
+          "pdf-to-text",
+          "create-zip"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-naming-convention",
+          "document-retention-handoff-checklist",
+          "archive-copy-vs-backup"
         ]
       }
     ]
@@ -28477,6 +29081,157 @@
           "pdf-a-validation-checklist",
           "document-retention-handoff-checklist"
         ]
+      },
+      {
+        "topic": "searchable-pdf-archive-folders",
+        "slug": "searchable-pdf-archive-folders",
+        "cluster": "archive-expansion",
+        "title": "সার্চযোগ্য PDF আর্কাইভ ফোল্ডার কীভাবে সাজাবেন",
+        "metaTitle": "সার্চযোগ্য PDF আর্কাইভ ফোল্ডার কীভাবে সাজাবেন",
+        "metaDescription": "PDF খুঁজতে নাম, ফোল্ডার ও OCR সাজান। বিনামূল্যে ও ব্রাউজারে ব্যক্তিগত, সাইনআপ বা ওয়াটারমার্ক ছাড়া।",
+        "primaryKeyword": "সার্চযোগ্য PDF আর্কাইভ ফোল্ডার",
+        "secondaryKeywords": [
+          "searchable PDF archive",
+          "organize scanned PDFs",
+          "OCR searchable PDF folders"
+        ],
+        "answer": "PDF আর্কাইভে ফাইল খুঁজতে বিভাগ বা বছরভিত্তিক অল্প স্তরের ফোল্ডার, একরকম নাম এবং খোঁজার শব্দসহ সূচি রাখুন। স্ক্যানের ভেতরের লেখা খুঁজতে OCR দরকার; মূল কপি রাখুন এবং OCR ফল আলাদা কপি হিসেবে সংরক্ষণ করুন। PrintxPDF OCR ব্রাউজারে চালায়। কিছু লিপির জন্য PDF-এর বদলে OCR টেক্সট ফাইলে খুঁজুন, কারণ PDF-এর লুকানো টেক্সট স্তরে সীমাবদ্ধতা থাকতে পারে।",
+        "body": [
+          {
+            "t": "p",
+            "x": "পরিষ্কার কাঠামো PDF আর্কাইভে ফাইল খুঁজতে সাহায্য করে, কিন্তু ফোল্ডার তৈরি করলেই স্ক্যানের লেখা সার্চযোগ্য হয় না। কয়েকটি বড় ফোল্ডার, একরকম নাম এবং গুরুত্বপূর্ণ তথ্যের সূচি রাখুন। স্ক্যান নথির ভেতরে শব্দ খুঁজতে OCR চালান। PrintxPDF ব্রাউজারে OCR করে; মূল রাখুন এবং সার্চযোগ্য PDF ও বের করা টেক্সটকে যাচাইযোগ্য আলাদা কপি হিসেবে ধরুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সহজে খোঁজা যায় এমন PDF আর্কাইভ কীভাবে বানাবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "স্থায়ী বিভাগ ঠিক করুন",
+                "x": "রেকর্ডের কাজ বা ধরন অনুযায়ী, তারপর বছর অনুযায়ী সাজান; গভীর ও একে অপরের সঙ্গে মিলে যায় এমন ফোল্ডার এড়ান।"
+              },
+              {
+                "h": "নামের প্যাটার্ন ব্যবহার করুন",
+                "x": "ISO তারিখ, ধরন, ছোট বিষয়, সংবেদনশীল নয় এমন ID ও সংস্করণ দিন; যেমন `2026-11-15_Bill_Energy_ID1042_v001.pdf`।"
+              },
+              {
+                "h": "স্ক্যানে OCR যোগ করুন",
+                "x": "[OCR PDF](/tools/ocr-pdf) ব্যবহার করুন, সঠিক ভাষা বাছুন এবং সার্চযোগ্য কপি রাখার আগে শনাক্ত লেখা দেখুন।"
+              },
+              {
+                "h": "সূচি তৈরি করুন",
+                "x": "নিয়ন্ত্রিত সূচিতে নাম, তারিখ, ধরন, অনুমোদিত কীওয়ার্ড, অবস্থান ও OCR অবস্থা লিখুন।"
+              },
+              {
+                "h": "খোঁজা ও প্রবেশ পরীক্ষা করুন",
+                "x": "নমুনা শব্দ খুঁজুন, ফল খুলুন এবং নীতি অনুযায়ী অনুমতি ও ব্যাকআপ যাচাই করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "ocr-pdf",
+            "x": "আপনার ট্যাবেই স্ক্যান সার্চযোগ্য করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভ PDF খোঁজার স্তর"
+          },
+          {
+            "t": "table",
+            "head": [
+              "স্তর",
+              "কাজ",
+              "উদাহরণ"
+            ],
+            "rows": [
+              [
+                "ফোল্ডার",
+                "বড় একটি গোষ্ঠীতে খোঁজা সীমিত করা।",
+                "চুক্তি / ২০২৬ / সরবরাহকারী"
+              ],
+              [
+                "ফাইলের নাম",
+                "না খুলেই নথি চেনা।",
+                "তারিখ_ধরন_বিষয়_ID_সংস্করণ.pdf"
+              ],
+              [
+                "OCR",
+                "স্ক্যানের ভেতর শব্দ খোঁজা।",
+                "গ্রাহকের নাম বা ছাপা ধারা"
+              ],
+              [
+                "সূচি",
+                "সাধারণ ক্ষেত্র খোঁজা ও ছাঁকা।",
+                "তারিখ, বিভাগ, অবস্থা, কীওয়ার্ড"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "কাঠামো সহজ ও অনুমানযোগ্য রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "দল যেভাবে রেকর্ড খোঁজে সে অনুযায়ী বিভাগ নিন: বছর, নথির ধরন, প্রকল্প বা অনুমোদিত বিভাগ। স্তর কম রাখুন এবং স্পষ্ট নিয়ম ছাড়া একই রেকর্ড একাধিক ফোল্ডারে রাখবেন না। খসড়া, চূড়ান্ত সংস্করণ ও অ্যাক্সেস কপি আলাদা করার নিয়ম ঠিক করুন। সংক্ষিপ্ত একরকম কাঠামো ব্যক্তিগত নামে অসংখ্য ফোল্ডারের চেয়ে ভালো।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্যক্তিগত তথ্য না দেখিয়ে নাম দিন"
+          },
+          {
+            "t": "p",
+            "x": "ক্রমে সুবিধা হলে `YYYY-MM-DD` তারিখ আগে লিখুন; এরপর নথির ধরন, ছোট বিষয় ও অনুমোদিত ID দিন। ব্যক্তির নাম, হিসাব নম্বর, চিকিৎসা-তথ্য বা সংবেদনশীল বিবরণ এড়ান; নাম সাম্প্রতিক সার্চ, ব্যাকআপ বা লগে দেখা যেতে পারে। `final-final` নয়; সংস্করণ নম্বর দিন এবং খসড়া, অনুমোদিত বা স্বাক্ষরিত অবস্থা নথিভুক্ত করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "OCR স্ক্যানের বিষয়বস্তু সার্চযোগ্য করে"
+          },
+          {
+            "t": "p",
+            "x": "পৃষ্ঠা ছবিতে সার্চ টুল পড়তে পারে এমন লেখা থাকে না। [OCR PDF](/tools/ocr-pdf) লুকানো টেক্সট স্তর যোগ করে এবং `.txt` ফাইলও দেয়; শনাক্তকরণ ব্রাউজারে চলে এবং প্রথমবার নির্বাচিত ভাষার প্যাক নামতে পারে। সঠিক ভাষা দিন, কারণ নির্ভুলতা এতে নির্ভর করে; নাম, সংখ্যা ও অক্ষর যাচাই করুন। OCR নথির সত্যতা প্রমাণ করে না।"
+          },
+          {
+            "t": "h2",
+            "x": "মূল, টেক্সট ও সূচি নিয়ন্ত্রণসহ রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "মূল স্ক্যানের পাশে OCR কপি রাখুন এবং নাম দিয়ে সম্পর্ক বুঝিয়ে দিন। সার্চযোগ্য PDF নতুন করে তৈরি হয়; লিংক, বুকমার্ক বা পূরণযোগ্য ফর্ম নাও থাকতে পারে। আরবি, বাংলা বা চীনা লিপির ক্ষেত্রে PDF-এর ভেতরে খোঁজা সীমিত হতে পারে; সম্পূর্ণ শনাক্ত টেক্সট খুঁজতে `.txt` ব্যবহার করুন। সূচির অনুমতি নিয়ন্ত্রণ করুন এবং ব্যাকআপ পুনরুদ্ধার পরীক্ষা করুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ফোল্ডার কি স্ক্যান PDF সার্চযোগ্য করে?",
+            "a": "না। ফোল্ডার ও নাম ফাইল খুঁজতে সাহায্য করে, কিন্তু স্ক্যানের ভেতরে শব্দ খুঁজতে OCR লাগবে। মূল রেখে শনাক্ত কপি যাচাই করুন।"
+          },
+          {
+            "q": "আর্কাইভ PDF-এর ভালো নামের ধরন কী?",
+            "a": "একই ক্ষেত্র ব্যবহার করুন, যেমন `YYYY-MM-DD_Type_Topic_ID_v001.pdf`। স্থানীয় নীতি মেনে নিন এবং দৃশ্যমান নামে সংবেদনশীল তথ্য দেবেন না।"
+          },
+          {
+            "q": "OCR PDF কি আমার ফাইল সার্ভারে পাঠায়?",
+            "a": "OCR PDF ব্রাউজারে শনাক্তকরণ করে। ভাষার প্যাক একবার নামতে পারে; প্রক্রিয়ার সময় স্ক্যান ফাইল ডিভাইসেই থাকে।"
+          },
+          {
+            "q": "OCR PDF-এ ইংরেজি ছাড়া অন্য ভাষা খুঁজতে পারি?",
+            "a": "শনাক্ত টেক্সট `.txt` ফাইলে থাকে। আরবি, বাংলা বা চীনা লিপিতে PDF-এর ভেতরে খোঁজা সীমিত হতে পারে; এসব ভাষায় `.txt` ব্যবহার করুন।"
+          }
+        ],
+        "relatedTools": [
+          "ocr-pdf",
+          "pdf-reader",
+          "pdf-to-text",
+          "create-zip"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-naming-convention",
+          "document-retention-handoff-checklist",
+          "archive-copy-vs-backup"
+        ]
       }
     ]
   },
@@ -34166,6 +34921,157 @@
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist",
           "document-retention-handoff-checklist"
+        ]
+      },
+      {
+        "topic": "searchable-pdf-archive-folders",
+        "slug": "searchable-pdf-archive-folders",
+        "cluster": "archive-expansion",
+        "title": "Cách tổ chức thư mục lưu trữ PDF để dễ tìm kiếm",
+        "metaTitle": "Cách tổ chức thư mục lưu trữ PDF để dễ tìm kiếm",
+        "metaDescription": "Sắp xếp tên, thư mục và OCR để tìm PDF dễ hơn. Miễn phí, riêng tư trong trình duyệt, không đăng ký và không watermark.",
+        "primaryKeyword": "tổ chức thư mục lưu trữ PDF",
+        "secondaryKeywords": [
+          "searchable PDF archive",
+          "organize scanned PDFs",
+          "OCR searchable PDF folders"
+        ],
+        "answer": "Để tìm PDF trong kho lưu trữ, hãy dùng thư mục nông theo loại hoặc năm, tên tệp nhất quán và một mục lục có từ khóa. Tài liệu quét cần OCR để tìm trong nội dung; giữ bản gốc và lưu kết quả OCR thành bản dẫn xuất. OCR của PrintxPDF chạy trong trình duyệt. Với một số hệ chữ, hãy tìm trong tệp văn bản OCR vì lớp chữ ẩn trong PDF có thể bị hạn chế.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Cấu trúc rõ ràng giúp duyệt kho PDF dễ hơn nhưng không tự biến bản quét thành văn bản có thể tìm kiếm. Hãy dùng vài thư mục rộng, tên tệp nhất quán và mục lục ghi thông tin chính. Muốn tìm từ bên trong tài liệu quét, hãy chạy OCR. PrintxPDF nhận dạng trong trình duyệt; giữ bản gốc và xem PDF có thể tìm kiếm cùng văn bản trích xuất là các bản dẫn xuất cần kiểm tra."
+          },
+          {
+            "t": "h2",
+            "x": "Cách tạo kho PDF dễ tìm kiếm"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Chọn danh mục ổn định",
+                "x": "Sắp xếp theo chức năng hoặc loại hồ sơ rồi theo năm; tránh cấu trúc quá sâu hoặc chồng lấn."
+              },
+              {
+                "h": "Dùng quy tắc đặt tên",
+                "x": "Ghi ngày ISO, loại, chủ đề ngắn, mã không nhạy cảm và phiên bản, ví dụ `2026-11-15_HoaDon_Dien_ID1042_v001.pdf`."
+              },
+              {
+                "h": "Thêm OCR cho bản quét",
+                "x": "Dùng [OCR PDF](/tools/ocr-pdf), chọn đúng ngôn ngữ và kiểm tra văn bản nhận dạng trước khi lưu bản có thể tìm kiếm."
+              },
+              {
+                "h": "Tạo mục lục",
+                "x": "Ghi tên, ngày, loại, từ khóa được duyệt, vị trí và trạng thái OCR trong mục lục có kiểm soát."
+              },
+              {
+                "h": "Thử tìm kiếm và quyền truy cập",
+                "x": "Tìm từ khóa mẫu, mở kết quả và xác nhận quyền cùng backup theo chính sách."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "ocr-pdf",
+            "x": "Tạo bản quét có thể tìm kiếm ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Các lớp giúp tìm PDF lưu trữ"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Lớp",
+              "Công dụng",
+              "Ví dụ"
+            ],
+            "rows": [
+              [
+                "Thư mục",
+                "Giới hạn tìm kiếm vào nhóm lớn.",
+                "Hợp đồng / 2026 / Nhà cung cấp"
+              ],
+              [
+                "Tên tệp",
+                "Nhận diện tài liệu chưa cần mở.",
+                "Ngày_Loại_Chủ đề_ID_Phiên bản.pdf"
+              ],
+              [
+                "OCR",
+                "Tìm từ bên trong bản quét.",
+                "Tên khách hàng hoặc điều khoản in"
+              ],
+              [
+                "Mục lục",
+                "Tìm trường chung và lọc kết quả.",
+                "Ngày, nhóm, trạng thái, từ khóa"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Giữ cấu trúc đơn giản và dễ đoán"
+          },
+          {
+            "t": "p",
+            "x": "Chọn danh mục phù hợp cách nhóm tra hồ sơ: năm, loại tài liệu, dự án hoặc bộ phận được phép. Giữ ít cấp và đừng lưu cùng hồ sơ ở nhiều thư mục nếu không có quy tắc rõ. Đặt cách xử lý bản nháp, bản cuối và bản truy cập. Một cấu trúc ngắn, thống nhất tốt hơn hàng chục tên thư mục cá nhân."
+          },
+          {
+            "t": "h2",
+            "x": "Đặt tên mà không lộ dữ liệu riêng tư"
+          },
+          {
+            "t": "p",
+            "x": "Đưa ngày `YYYY-MM-DD` lên đầu nếu cần sắp xếp theo thời gian, sau đó là loại tài liệu, chủ đề ngắn và mã được duyệt. Tránh tên người, số tài khoản, thông tin y tế và chi tiết nhạy cảm vì tên có thể hiện trong tìm kiếm gần đây, bản sao lưu hoặc nhật ký. Đừng dùng `final-final`; đánh số phiên bản và ghi rõ nháp, duyệt hoặc đã ký."
+          },
+          {
+            "t": "h2",
+            "x": "OCR giúp tìm nội dung trong bản quét"
+          },
+          {
+            "t": "p",
+            "x": "Ảnh trang không chứa chữ mà công cụ tìm kiếm có thể đọc. [OCR PDF](/tools/ocr-pdf) thêm lớp chữ ẩn và cung cấp tệp `.txt`; nhận dạng chạy trong trình duyệt và lần đầu có thể tải gói ngôn ngữ đã chọn. Chọn đúng ngôn ngữ để tăng độ chính xác rồi kiểm tra tên, số và ký tự. OCR không chứng minh tài liệu xác thực."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ bản gốc, văn bản và mục lục có kiểm soát"
+          },
+          {
+            "t": "p",
+            "x": "Lưu bản quét gốc cạnh bản OCR, dùng tên thể hiện mối liên hệ. PDF có thể tìm kiếm được dựng lại nên liên kết, dấu trang hoặc trường biểu mẫu có thể không còn. Với hệ chữ không dùng Latin như Ả Rập, Bengal hoặc Trung Quốc, tìm trong PDF OCR có thể hạn chế; dùng `.txt` để tìm đầy đủ văn bản nhận dạng. Phân quyền mục lục và thử khôi phục backup."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Tạo thư mục có làm PDF quét tìm kiếm được không?",
+            "a": "Không. Thư mục và tên giúp định vị tệp, nhưng cần OCR để tìm từ bên trong bản quét. Giữ bản gốc và kiểm tra bản đã nhận dạng."
+          },
+          {
+            "q": "Quy tắc tên nào phù hợp cho PDF lưu trữ?",
+            "a": "Dùng các trường nhất quán như `YYYY-MM-DD_Type_Topic_ID_v001.pdf`. Điều chỉnh theo chính sách và không đưa dữ liệu cá nhân nhạy cảm vào tên công khai."
+          },
+          {
+            "q": "OCR PDF có tải tệp lên máy chủ không?",
+            "a": "OCR PDF nhận dạng trong trình duyệt. Gói ngôn ngữ có thể tải một lần; tệp quét vẫn trên thiết bị trong quá trình xử lý."
+          },
+          {
+            "q": "Có thể tìm ngôn ngữ khác tiếng Anh trong PDF OCR không?",
+            "a": "Văn bản nhận dạng có trong tệp `.txt`. Tìm kiếm trong PDF có thể hạn chế với chữ Ả Rập, Bengal hoặc Trung Quốc; hãy dùng `.txt`."
+          }
+        ],
+        "relatedTools": [
+          "ocr-pdf",
+          "pdf-reader",
+          "pdf-to-text",
+          "create-zip"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-naming-convention",
+          "document-retention-handoff-checklist",
+          "archive-copy-vs-backup"
         ]
       }
     ]
@@ -39865,6 +40771,157 @@
           "pdf-archive-review-schedule",
           "pdf-a-validation-checklist",
           "document-retention-handoff-checklist"
+        ]
+      },
+      {
+        "topic": "searchable-pdf-archive-folders",
+        "slug": "searchable-pdf-archive-folders",
+        "cluster": "archive-expansion",
+        "title": "如何整理可搜索的 PDF 归档文件夹",
+        "metaTitle": "如何整理可搜索的 PDF 归档文件夹",
+        "metaDescription": "用命名、文件夹和 OCR 整理 PDF，方便查找。免费、浏览器本地处理、无需注册、无水印，并附实用指南。",
+        "primaryKeyword": "整理可搜索的 PDF 归档文件夹",
+        "secondaryKeywords": [
+          "searchable PDF archive",
+          "organize scanned PDFs",
+          "OCR searchable PDF folders"
+        ],
+        "answer": "要在 PDF 档案中查找文件，可按类别或年份使用层级较浅的文件夹、统一命名，并维护带有搜索词的索引。扫描件需要 OCR 才能搜索正文；保留原件并将 OCR 结果作为派生副本保存。PrintxPDF 在浏览器中运行 OCR。部分文字系统应搜索 OCR 文本文件，因为 PDF 中的隐藏文本层可能有限制。",
+        "body": [
+          {
+            "t": "p",
+            "x": "清晰的结构有助于浏览 PDF 档案，但文件夹本身不会让扫描件变成可搜索文本。使用少量宽泛文件夹、统一的文件名，以及记录关键信息的索引。要搜索扫描文档内部的词语，请运行 OCR。PrintxPDF 在浏览器中识别文本；保留原件，并将可搜索 PDF 和提取文本视为需要检查的派生副本。"
+          },
+          {
+            "t": "h2",
+            "x": "如何创建便于搜索的 PDF 档案"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "确定稳定的分类",
+                "x": "先按记录用途或类型，再按年份整理；避免层级过深或互相重叠。"
+              },
+              {
+                "h": "采用统一命名格式",
+                "x": "使用 ISO 日期、类型、简短主题、非敏感标识符和版本，例如 `2026-11-15_Invoice_Energy_ID1042_v001.pdf`。"
+              },
+              {
+                "h": "为扫描件添加 OCR",
+                "x": "使用[OCR PDF](/tools/ocr-pdf)，选择正确语言，并在保存可搜索副本前检查识别文本。"
+              },
+              {
+                "h": "建立索引",
+                "x": "在受控索引中记录名称、日期、类型、获准关键词、位置和 OCR 状态。"
+              },
+              {
+                "h": "测试搜索和访问权限",
+                "x": "搜索示例词语、打开结果，并按政策检查权限和备份。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "ocr-pdf",
+            "x": "在当前标签页让扫描件可搜索。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "查找归档 PDF 的不同层次"
+          },
+          {
+            "t": "table",
+            "head": [
+              "层次",
+              "用途",
+              "示例"
+            ],
+            "rows": [
+              [
+                "文件夹",
+                "将浏览范围缩小到较大的分类。",
+                "合同 / 2026 / 供应商"
+              ],
+              [
+                "文件名",
+                "不打开文件也能识别文档。",
+                "日期_类型_主题_ID_版本.pdf"
+              ],
+              [
+                "OCR",
+                "搜索扫描件中的词语。",
+                "客户名称或印刷条款"
+              ],
+              [
+                "索引",
+                "搜索共同字段并筛选。",
+                "日期、类别、状态、关键词"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "保持结构简单且可预测"
+          },
+          {
+            "t": "p",
+            "x": "按团队查找记录的方式分类：年份、文档类型、项目或获准部门。减少文件夹层级，除非有明确规则，否则不要把同一记录放在多个文件夹中。制定草稿、最终版本和访问副本的处理规则。简洁一致的结构比大量个人化文件夹名称更容易维护。"
+          },
+          {
+            "t": "h2",
+            "x": "命名时避免暴露隐私信息"
+          },
+          {
+            "t": "p",
+            "x": "如果日期有助于排序，将 `YYYY-MM-DD` 放在开头，再加文档类型、简短主题和获准标识符。避免姓名、账号、医疗信息等敏感细节，因为文件名可能出现在最近搜索、备份或日志中。不要使用 `final-final`；为版本编号，并按流程标记草稿、已批准或已签署状态。"
+          },
+          {
+            "t": "h2",
+            "x": "OCR 让扫描件正文可搜索"
+          },
+          {
+            "t": "p",
+            "x": "页面图像不包含搜索工具可读取的文本。[OCR PDF](/tools/ocr-pdf)会添加隐藏文本层，也提供 `.txt` 文件；识别在浏览器中运行，首次使用时可能下载所选语言包。选择正确语言以提升准确度，并检查名称、数字和字符。OCR 不能证明文档真实有效。"
+          },
+          {
+            "t": "h2",
+            "x": "通过控制措施保留原件、文本和索引"
+          },
+          {
+            "t": "p",
+            "x": "将原始扫描件与 OCR 副本一起保存，并通过名称说明它们的关系。可搜索 PDF 会重新构建，链接、书签或可填写字段可能无法保留。对于阿拉伯语、孟加拉语或中文等非西文文字，在 PDF 中搜索可能受限；请用 `.txt` 搜索完整识别文本。为索引设置适当权限，并维护经过恢复测试的备份流程。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "整理文件夹会让扫描 PDF 可搜索吗？",
+            "a": "不会。文件夹和名称帮助定位文件；要搜索扫描件正文，需要运行 OCR。请保留原件并检查识别副本。"
+          },
+          {
+            "q": "归档 PDF 适合采用什么命名格式？",
+            "a": "使用一致字段，例如 `YYYY-MM-DD_Type_Topic_ID_v001.pdf`。按本地政策调整，避免在公开文件名中加入敏感个人信息。"
+          },
+          {
+            "q": "OCR PDF 会把文件上传到服务器吗？",
+            "a": "OCR PDF 在浏览器中进行识别。语言包可能只需下载一次；处理时扫描文件保留在设备上。"
+          },
+          {
+            "q": "能在 OCR PDF 中搜索英语以外的文字吗？",
+            "a": "识别文本会保存在 `.txt` 文件中。阿拉伯语、孟加拉语或中文在 PDF 内搜索可能受限；这些语言请使用 `.txt`。"
+          }
+        ],
+        "relatedTools": [
+          "ocr-pdf",
+          "pdf-reader",
+          "pdf-to-text",
+          "create-zip"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-naming-convention",
+          "document-retention-handoff-checklist",
+          "archive-copy-vs-backup"
         ]
       }
     ]
