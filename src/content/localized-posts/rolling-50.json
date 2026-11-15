@@ -5082,6 +5082,162 @@
           "pdf-checksum-basics-for-archives",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "scan-quality-control-checklist",
+        "slug": "scan-quality-control-checklist",
+        "cluster": "archive-expansion",
+        "title": "Lista de control de calidad para escanear PDF",
+        "metaTitle": "Lista de control de calidad para escanear PDF",
+        "metaDescription": "Comprueba enfoque, luz, recorte, orden y legibilidad de un PDF escaneado. Gratis, privado en el navegador, sin registro ni marca de agua.",
+        "primaryKeyword": "control de calidad al escanear PDF",
+        "secondaryKeywords": [
+          "scan to PDF quality checklist",
+          "scanned document readability",
+          "how to improve scan quality"
+        ],
+        "answer": "Para revisar la calidad de un PDF escaneado, comprueba que cada página esté enfocada, bien iluminada, completa, derecha y en el orden correcto. Lee el texto pequeño, verifica que no falten reversos o páginas y abre el PDF final para revisar tamaño y orientación. Scan to PDF procesa las capturas en tu navegador; OCR es un paso aparte si necesitas texto buscable.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Un escaneo listo para compartir debe tener páginas completas, texto legible, buen contraste y orden correcto. Revisa primero las fotos originales y después el PDF exportado. Scan to PDF te permite capturar páginas con la cámara o añadir fotos, reordenarlas y ajustar escala de grises o contraste automático por página. El trabajo se realiza en el navegador. Si necesitas buscar o copiar texto, ejecuta OCR como paso separado."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo revisar la calidad de un PDF escaneado"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Prepara la página y la cámara",
+                "x": "Coloca el documento plano, evita sombras y reflejos y mantén la cámara paralela al papel."
+              },
+              {
+                "h": "Captura cada página con nitidez",
+                "x": "Enfoca el texto, deja visible el borde de la página y vuelve a tomar cualquier foto movida o cortada."
+              },
+              {
+                "h": "Ordena y mejora solo lo necesario",
+                "x": "Revisa la secuencia. Prueba escala de grises o contraste automático si mejora la lectura sin borrar detalles."
+              },
+              {
+                "h": "Exporta y revisa el PDF",
+                "x": "Elige A4, Carta o ajustar a imagen; abre el PDF y comprueba páginas, orientación, bordes y letra pequeña."
+              },
+              {
+                "h": "Añade OCR cuando haga falta",
+                "x": "Un escaneo contiene imágenes. Usa [OCR PDF](/tools/ocr-pdf) para crear texto buscable y revisa el reconocimiento."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "Escanea en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Lista rápida de calidad de escaneo"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Control",
+              "Señal de calidad",
+              "Si falla"
+            ],
+            "rows": [
+              [
+                "Enfoque",
+                "Los trazos y números pequeños se distinguen.",
+                "Limpia la lente, apoya el teléfono y repite la foto."
+              ],
+              [
+                "Luz y contraste",
+                "No hay reflejos ni sombras sobre el texto.",
+                "Cambia el ángulo o la luz; ajusta contraste con cuidado."
+              ],
+              [
+                "Recorte y geometría",
+                "Se ven los bordes; la página no está torcida ni cortada.",
+                "Vuelve a colocar el papel y captura de nuevo."
+              ],
+              [
+                "Completitud",
+                "Están todas las páginas y en secuencia.",
+                "Compara con el original y reordena o repite las faltantes."
+              ],
+              [
+                "Archivo final",
+                "El PDF abre y conserva el contenido esperado.",
+                "Exporta otra vez y revisa tamaño, orientación y legibilidad."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Enfoca la cámara y controla la luz"
+          },
+          {
+            "t": "p",
+            "x": "Limpia la lente y coloca la hoja sobre una superficie plana con contraste suficiente. Mantén el teléfono encima, no en diagonal; una perspectiva inclinada puede deformar líneas y texto. Evita que tu mano, la cámara o la luz proyecten sombras. Si el papel es brillante, mueve la fuente de luz para reducir reflejos. Haz una toma de prueba y amplía las letras pequeñas antes de continuar."
+          },
+          {
+            "t": "h2",
+            "x": "Comprueba recorte, secuencia y contenido"
+          },
+          {
+            "t": "p",
+            "x": "Cada página debe mostrar el área necesaria, incluidos sellos, firmas, notas al margen y números de página pertinentes. Evita cortar bordes o incluir mucho fondo vacío. Compara el número de páginas con el original y confirma el orden antes de exportar. Si hay reversos con información, inclúyelos. No confíes solo en la miniatura: abre páginas individuales para buscar texto oculto por un pliegue o una sombra."
+          },
+          {
+            "t": "h2",
+            "x": "Ajusta la imagen sin borrar información"
+          },
+          {
+            "t": "p",
+            "x": "La escala de grises puede reducir dominantes de color y el contraste automático puede hacer el papel más claro y la tinta más oscura. Son ajustes opcionales por página. Compara el antes y el después: sellos de color, lápiz tenue, papel envejecido y marcas claras podrían perderse con demasiado contraste. La herramienta limita las capturas a 2400 píxeles en el borde más largo; para texto diminuto o evidencia detallada, usa una captura más nítida o un escáner de mayor resolución."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa el PDF y separa OCR de la imagen"
+          },
+          {
+            "t": "p",
+            "x": "Un PDF escaneado suele contener imágenes de páginas, no texto seleccionable. Abre el archivo final, revisa enfoque y orientación y confirma que se pueda imprimir al tamaño esperado. Si hace falta buscar, copiar o indexar palabras, utiliza [OCR PDF](/tools/ocr-pdf) y corrige posibles errores de reconocimiento. Para reducir el tamaño después, prueba [Comprimir PDF](/tools/compress-pdf) y vuelve a revisar calidad y texto."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cómo sé si un PDF escaneado tiene buena calidad?",
+            "a": "Comprueba enfoque, iluminación, bordes completos, orientación, orden y legibilidad de letras pequeñas. Después abre el PDF exportado y revisa páginas representativas y cualquier página importante."
+          },
+          {
+            "q": "¿Un escaneo se puede buscar como texto?",
+            "a": "No necesariamente. La cámara crea imágenes. Para buscar o copiar palabras, procesa el archivo con OCR y revisa el texto reconocido, porque los errores dependen de la imagen y la letra."
+          },
+          {
+            "q": "¿Debo usar escala de grises o contraste automático?",
+            "a": "Solo si mejora la legibilidad sin ocultar sellos, lápiz, notas tenues o detalles de color. Compara cada página antes y después; ambos ajustes son opcionales."
+          },
+          {
+            "q": "¿Scan to PDF sube mis documentos?",
+            "a": "La herramienta Scan to PDF crea el PDF en tu navegador y las fotos no salen de tu dispositivo. Revisa siempre el aviso de privacidad de cada herramienta, ya que otros trabajos pueden tener un flujo distinto."
+          }
+        ],
+        "relatedTools": [
+          "scan-to-pdf",
+          "ocr-pdf",
+          "compress-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-a-validation-checklist",
+          "pdf-archive-review-schedule",
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives"
+        ]
       }
     ]
   },
@@ -10158,6 +10314,162 @@
           "pdf-checksum-basics-for-archives",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "scan-quality-control-checklist",
+        "slug": "scan-quality-control-checklist",
+        "cluster": "archive-expansion",
+        "title": "Checklist de qualidade para digitalizar PDF",
+        "metaTitle": "Checklist de qualidade para digitalizar PDF",
+        "metaDescription": "Confira foco, luz, corte, ordem e legibilidade de um PDF digitalizado. Grátis, privado no navegador, sem cadastro ou marca-d’água.",
+        "primaryKeyword": "controle de qualidade ao digitalizar PDF",
+        "secondaryKeywords": [
+          "scan to PDF quality checklist",
+          "scanned document readability",
+          "how to improve scan quality"
+        ],
+        "answer": "Para conferir a qualidade de um PDF digitalizado, veja se cada página está nítida, bem iluminada, completa, reta e na ordem correta. Leia o texto pequeno, procure páginas faltando e abra o PDF final para conferir tamanho e orientação. O Scan to PDF processa as capturas no navegador; OCR é uma etapa separada para obter texto pesquisável.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Um escaneamento pronto para compartilhar tem páginas completas, texto legível, bom contraste e ordem correta. Confira as fotos originais e depois o PDF exportado. O Scan to PDF permite capturar páginas com a câmera ou adicionar fotos, reorganizá-las e ajustar escala de cinza ou contraste automático por página. O trabalho ocorre no navegador. Se precisar pesquisar ou copiar texto, use OCR em uma etapa separada."
+          },
+          {
+            "t": "h2",
+            "x": "Como conferir a qualidade de um PDF digitalizado"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Prepare a página e a câmera",
+                "x": "Deixe o documento plano, evite sombras e reflexos e mantenha a câmera paralela ao papel."
+              },
+              {
+                "h": "Capture cada página com nitidez",
+                "x": "Foque o texto, mantenha as bordas visíveis e refaça fotos tremidas ou cortadas."
+              },
+              {
+                "h": "Organize e ajuste apenas o necessário",
+                "x": "Confira a sequência. Teste escala de cinza ou contraste automático se isso melhorar a leitura sem apagar detalhes."
+              },
+              {
+                "h": "Exporte e confira o PDF",
+                "x": "Escolha A4, Carta ou ajustar à imagem; abra o PDF e veja páginas, orientação, bordas e letras pequenas."
+              },
+              {
+                "h": "Adicione OCR quando necessário",
+                "x": "Um escaneamento contém imagens. Use [OCR PDF](/tools/ocr-pdf) para criar texto pesquisável e confira o reconhecimento."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "Digitalize na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Checklist rápido de qualidade"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Verificação",
+              "Sinal de qualidade",
+              "Se houver problema"
+            ],
+            "rows": [
+              [
+                "Foco",
+                "Traços e números pequenos estão nítidos.",
+                "Limpe a lente, apoie o celular e refaça a foto."
+              ],
+              [
+                "Luz e contraste",
+                "Não há reflexos nem sombras sobre o texto.",
+                "Mude o ângulo ou a iluminação; ajuste o contraste com cuidado."
+              ],
+              [
+                "Corte e geometria",
+                "As bordas aparecem e a página não está torta ou cortada.",
+                "Reposicione o papel e capture novamente."
+              ],
+              [
+                "Completude",
+                "Todas as páginas estão presentes e em sequência.",
+                "Compare com o original e reorganize ou refaça as faltantes."
+              ],
+              [
+                "Arquivo final",
+                "O PDF abre e mantém o conteúdo esperado.",
+                "Exporte novamente e confira tamanho, orientação e leitura."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Foque a câmera e controle a iluminação"
+          },
+          {
+            "t": "p",
+            "x": "Limpe a lente e coloque a folha em uma superfície plana com contraste suficiente. Mantenha o celular acima dela, não inclinado; a perspectiva pode deformar linhas e texto. Evite sombras da mão, da câmera ou da luz. Se o papel for brilhante, mude a posição da iluminação para reduzir reflexos. Faça uma captura de teste e amplie letras pequenas antes de continuar."
+          },
+          {
+            "t": "h2",
+            "x": "Confira corte, sequência e conteúdo"
+          },
+          {
+            "t": "p",
+            "x": "Cada página deve mostrar a área necessária, incluindo carimbos, assinaturas, anotações e números de página relevantes. Evite cortar bordas ou incluir muito fundo vazio. Compare a quantidade de páginas com o original e confirme a ordem antes de exportar. Inclua os versos que tenham informação. Não confie apenas nas miniaturas: abra páginas individuais para encontrar texto escondido por uma dobra ou sombra."
+          },
+          {
+            "t": "h2",
+            "x": "Ajuste a imagem sem apagar informações"
+          },
+          {
+            "t": "p",
+            "x": "A escala de cinza pode reduzir tons de cor indesejados e o contraste automático pode clarear o papel e escurecer a tinta. Os ajustes são opcionais por página. Compare antes e depois: carimbos coloridos, lápis claro, papel envelhecido e marcas suaves podem desaparecer com contraste excessivo. A ferramenta limita capturas a 2400 pixels na borda mais longa; para letras minúsculas ou detalhes importantes, use uma captura mais nítida ou um scanner de maior resolução."
+          },
+          {
+            "t": "h2",
+            "x": "Revise o PDF e separe OCR da imagem"
+          },
+          {
+            "t": "p",
+            "x": "Um PDF digitalizado geralmente contém imagens, não texto selecionável. Abra o arquivo final, confira foco e orientação e confirme que ele imprime no tamanho esperado. Se precisar pesquisar, copiar ou indexar palavras, use [OCR PDF](/tools/ocr-pdf) e corrija possíveis erros de reconhecimento. Para reduzir o tamanho depois, experimente [Comprimir PDF](/tools/compress-pdf) e revise novamente a qualidade e o texto."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Como saber se um PDF digitalizado tem boa qualidade?",
+            "a": "Confira foco, iluminação, bordas completas, orientação, ordem e leitura das letras pequenas. Depois abra o PDF exportado e revise páginas representativas e importantes."
+          },
+          {
+            "q": "Um PDF digitalizado pode ser pesquisável?",
+            "a": "Nem sempre. A câmera cria imagens. Para pesquisar ou copiar palavras, processe o arquivo com OCR e confira o texto reconhecido, pois os erros dependem da imagem e da letra."
+          },
+          {
+            "q": "Devo usar escala de cinza ou contraste automático?",
+            "a": "Somente se melhorar a leitura sem esconder carimbos, lápis, anotações suaves ou detalhes coloridos. Compare cada página antes e depois; os ajustes são opcionais."
+          },
+          {
+            "q": "O Scan to PDF envia meus documentos?",
+            "a": "O Scan to PDF cria o PDF no navegador e as fotos não saem do dispositivo. Confira o aviso de privacidade de cada ferramenta, pois outros trabalhos podem ter outro fluxo."
+          }
+        ],
+        "relatedTools": [
+          "scan-to-pdf",
+          "ocr-pdf",
+          "compress-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-a-validation-checklist",
+          "pdf-archive-review-schedule",
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives"
+        ]
       }
     ]
   },
@@ -15233,6 +15545,162 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "scan-quality-control-checklist",
+        "slug": "scan-quality-control-checklist",
+        "cluster": "archive-expansion",
+        "title": "PDF स्कैन गुणवत्ता जाँच चेकलिस्ट",
+        "metaTitle": "PDF स्कैन गुणवत्ता जाँच चेकलिस्ट",
+        "metaDescription": "स्कैन किए PDF का फोकस, रोशनी, किनारे, क्रम और पठनीयता जाँचें। मुफ़्त, निजी ब्राउज़र में, बिना साइनअप या वॉटरमार्क।",
+        "primaryKeyword": "PDF स्कैन गुणवत्ता जाँच",
+        "secondaryKeywords": [
+          "scan to PDF quality checklist",
+          "scanned document readability",
+          "how to improve scan quality"
+        ],
+        "answer": "स्कैन किए PDF की गुणवत्ता जाँचने के लिए हर पेज का फोकस, रोशनी, पूरा किनारा, सीधापन और क्रम देखें। छोटे अक्षर पढ़ें, छूटे पेज जाँचें और अंतिम PDF खोलकर आकार व दिशा की पुष्टि करें। Scan to PDF ब्राउज़र में कैप्चर प्रोसेस करता है; खोज योग्य टेक्स्ट के लिए OCR अलग चरण है।",
+        "body": [
+          {
+            "t": "p",
+            "x": "साझा करने योग्य स्कैन में पेज पूरे, टेक्स्ट पढ़ने योग्य, कॉन्ट्रास्ट संतुलित और क्रम सही होना चाहिए। मूल फ़ोटो और फिर निर्यात की गई PDF जाँचें। Scan to PDF कैमरे से पेज कैप्चर करता है या मौजूदा फ़ोटो जोड़ने, क्रम बदलने तथा हर पेज का ग्रेस्केल या ऑटो-कॉन्ट्रास्ट समायोजित करने देता है। काम ब्राउज़र में होता है। टेक्स्ट खोजने या कॉपी करने के लिए OCR अलग से चलाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "स्कैन PDF की गुणवत्ता कैसे जाँचें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "पेज और कैमरा तैयार करें",
+                "x": "दस्तावेज़ सपाट रखें, छाया और चमक से बचें और कैमरा कागज़ के समानांतर रखें।"
+              },
+              {
+                "h": "हर पेज साफ़ कैप्चर करें",
+                "x": "टेक्स्ट पर फोकस करें, किनारे दिखाएँ और धुंधली या कटी फ़ोटो दोबारा लें।"
+              },
+              {
+                "h": "क्रम रखें और ज़रूरत भर सुधारें",
+                "x": "पेज क्रम देखें। पढ़ने में मदद मिले तो ग्रेस्केल या ऑटो-कॉन्ट्रास्ट आज़माएँ, पर बारीकियाँ न मिटाएँ।"
+              },
+              {
+                "h": "PDF निर्यात कर जाँचें",
+                "x": "A4, Letter या fit चुनें; PDF खोलकर पेज, दिशा, किनारे और छोटे अक्षर देखें।"
+              },
+              {
+                "h": "ज़रूरत पर OCR करें",
+                "x": "स्कैन में चित्र होते हैं। खोज योग्य टेक्स्ट के लिए [OCR PDF](/tools/ocr-pdf) चलाएँ और पहचाने गए शब्द जाँचें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "अपने टैब में स्कैन करें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "स्कैन गुणवत्ता की त्वरित जाँच"
+          },
+          {
+            "t": "table",
+            "head": [
+              "जाँच",
+              "अच्छी गुणवत्ता का संकेत",
+              "समस्या हो तो"
+            ],
+            "rows": [
+              [
+                "फोकस",
+                "बारीक रेखाएँ और छोटे अंक साफ़ हैं।",
+                "लेंस साफ़ करें, फोन टिकाएँ और फिर से फ़ोटो लें।"
+              ],
+              [
+                "रोशनी व कॉन्ट्रास्ट",
+                "टेक्स्ट पर चमक या छाया नहीं है।",
+                "कोण या रोशनी बदलें; कॉन्ट्रास्ट सावधानी से सुधारें।"
+              ],
+              [
+                "किनारे व आकार",
+                "पेज पूरा दिखता है, तिरछा या कटा नहीं।",
+                "कागज़ ठीक रखें और दोबारा कैप्चर करें।"
+              ],
+              [
+                "पूर्णता",
+                "सभी पेज मौजूद और सही क्रम में हैं।",
+                "मूल से मिलाएँ और छूटे पेज जोड़ें या फिर से लें।"
+              ],
+              [
+                "अंतिम फ़ाइल",
+                "PDF खुलती है और अपेक्षित सामग्री रखती है।",
+                "दोबारा निर्यात करें और आकार, दिशा व पठनीयता जाँचें।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "कैमरा फोकस करें और रोशनी नियंत्रित रखें"
+          },
+          {
+            "t": "p",
+            "x": "लेंस साफ़ करें और कागज़ को सपाट, पर्याप्त कॉन्ट्रास्ट वाली सतह पर रखें। फोन को ऊपर सीधा रखें; तिरछा कोण रेखाओं और अक्षरों को विकृत कर सकता है। हाथ, कैमरा या लाइट की छाया न पड़ने दें। चमकदार कागज़ हो तो रोशनी का कोण बदलें। पहले एक टेस्ट फ़ोटो लें और छोटे अक्षरों को ज़ूम करके देखें।"
+          },
+          {
+            "t": "h2",
+            "x": "किनारे, क्रम और सामग्री जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "हर पेज में ज़रूरी क्षेत्र दिखना चाहिए, जैसे मुहर, हस्ताक्षर, हाशिये के नोट और पेज नंबर। किनारा न काटें और खाली पृष्ठभूमि अधिक न रखें। निर्यात से पहले पेज संख्या मूल से मिलाएँ और क्रम ठीक करें। जानकारी हो तो पीछे का पन्ना भी शामिल करें। केवल थंबनेल पर भरोसा न करें; पेज खोलकर मोड़ या छाया से छिपा टेक्स्ट देखें।"
+          },
+          {
+            "t": "h2",
+            "x": "जानकारी मिटाए बिना छवि सुधारें"
+          },
+          {
+            "t": "p",
+            "x": "ग्रेस्केल रंग की झलक घटा सकता है और ऑटो-कॉन्ट्रास्ट कागज़ को हल्का तथा स्याही को गहरा कर सकता है। हर पेज पर ये विकल्प वैकल्पिक हैं। पहले और बाद की तुलना करें: रंगीन मुहर, हल्की पेंसिल, पुराना कागज़ या हल्के निशान बहुत अधिक कॉन्ट्रास्ट से गायब हो सकते हैं। टूल लंबी किनारी पर 2400 पिक्सेल तक कैप्चर सीमित करता है; बहुत छोटे टेक्स्ट या बारीक सबूत के लिए अधिक साफ़ कैप्चर या उच्च रिज़ॉल्यूशन स्कैनर लें।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF जाँचें और OCR को अलग चरण मानें"
+          },
+          {
+            "t": "p",
+            "x": "स्कैन PDF में आम तौर पर पेज की तस्वीरें होती हैं, चुना जा सकने वाला टेक्स्ट नहीं। अंतिम PDF खोलें, फोकस और दिशा जाँचें और देखें कि अपेक्षित आकार में प्रिंट होती है। टेक्स्ट खोजने, कॉपी या इंडेक्स करने के लिए [OCR PDF](/tools/ocr-pdf) चलाएँ और पहचान की गलतियाँ सुधारें। आकार घटाना हो तो [Compress PDF](/tools/compress-pdf) आज़माकर गुणवत्ता और टेक्स्ट फिर जाँचें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "स्कैन की PDF अच्छी है, यह कैसे पता चलेगा?",
+            "a": "फोकस, रोशनी, पूरे किनारे, दिशा, क्रम और छोटे अक्षरों की पठनीयता जाँचें। फिर निर्यात की गई PDF खोलकर नमूना और महत्वपूर्ण पेज देखें।"
+          },
+          {
+            "q": "क्या स्कैन PDF में टेक्स्ट खोजा जा सकता है?",
+            "a": "ज़रूरी नहीं। कैमरा चित्र बनाता है। शब्द खोजने या कॉपी करने के लिए OCR चलाएँ और पहचाना गया टेक्स्ट जाँचें; परिणाम छवि और हस्तलेखन पर निर्भर करता है।"
+          },
+          {
+            "q": "क्या ग्रेस्केल या ऑटो-कॉन्ट्रास्ट लगाना चाहिए?",
+            "a": "केवल तब जब मुहर, हल्की पेंसिल, नोट या रंगीन विवरण छिपे बिना पढ़ना बेहतर हो। हर पेज पर पहले और बाद की तुलना करें; विकल्प वैकल्पिक हैं।"
+          },
+          {
+            "q": "क्या Scan to PDF मेरे दस्तावेज़ अपलोड करता है?",
+            "a": "Scan to PDF ब्राउज़र में PDF बनाता है और फ़ोटो आपके डिवाइस से बाहर नहीं जातीं। हर टूल की गोपनीयता सूचना देखें क्योंकि दूसरे कामों का तरीका अलग हो सकता है।"
+          }
+        ],
+        "relatedTools": [
+          "scan-to-pdf",
+          "ocr-pdf",
+          "compress-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-a-validation-checklist",
+          "pdf-archive-review-schedule",
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives"
         ]
       }
     ]
@@ -20318,6 +20786,162 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "scan-quality-control-checklist",
+        "slug": "scan-quality-control-checklist",
+        "cluster": "archive-expansion",
+        "title": "قائمة فحص جودة مسح PDF",
+        "metaTitle": "قائمة فحص جودة مسح PDF",
+        "metaDescription": "تحقق من التركيز والإضاءة والقص والترتيب والوضوح في PDF الممسوح. مجاناً، خاص في المتصفح، بلا تسجيل أو علامة مائية.",
+        "primaryKeyword": "فحص جودة مسح PDF",
+        "secondaryKeywords": [
+          "scan to PDF quality checklist",
+          "scanned document readability",
+          "how to improve scan quality"
+        ],
+        "answer": "لفحص جودة PDF ممسوح، تحقق من وضوح كل صفحة وإضاءتها واكتمالها واستقامتها وترتيبها. اقرأ النص الصغير، وابحث عن الصفحات الناقصة، ثم افتح PDF النهائي لمراجعة الحجم والاتجاه. تعالج أداة Scan to PDF الصور داخل المتصفح؛ أما النص القابل للبحث فيتطلب OCR كخطوة منفصلة.",
+        "body": [
+          {
+            "t": "p",
+            "x": "يجب أن تكون صفحات المسح كاملة وواضحة ومرتبة قبل مشاركتها. افحص الصور الأصلية ثم ملف PDF الناتج. تتيح أداة Scan to PDF التقاط الصفحات بالكاميرا أو إضافة صور سابقة وإعادة ترتيبها وضبط التدرج الرمادي أو التباين التلقائي لكل صفحة. تتم المعالجة في المتصفح. إذا احتجت إلى البحث عن النص أو نسخه، شغّل OCR في خطوة منفصلة."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية فحص جودة PDF الممسوح"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "جهّز الصفحة والكاميرا",
+                "x": "ضع الورقة مسطحة، وتجنب الظلال والانعكاسات، واجعل الكاميرا موازية للورق."
+              },
+              {
+                "h": "التقط كل صفحة بوضوح",
+                "x": "ركز على النص وأظهر الحواف وأعد الصور المهتزة أو المقطوعة."
+              },
+              {
+                "h": "رتّب الصفحات وحسّن الضروري فقط",
+                "x": "راجع التسلسل. جرّب التدرج الرمادي أو التباين التلقائي إذا حسّن القراءة دون محو التفاصيل."
+              },
+              {
+                "h": "صدّر PDF وافحصه",
+                "x": "اختر A4 أو Letter أو ملاءمة الصورة؛ افتح الملف وافحص الصفحات والاتجاه والحواف والنص الصغير."
+              },
+              {
+                "h": "أضف OCR عند الحاجة",
+                "x": "المسح يتضمن صوراً. استخدم [OCR PDF](/tools/ocr-pdf) لإنشاء نص قابل للبحث وراجع دقة التعرف."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "امسح المستند في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "فحص سريع لجودة المسح"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الفحص",
+              "علامة الجودة",
+              "عند وجود مشكلة"
+            ],
+            "rows": [
+              [
+                "التركيز",
+                "الخطوط والأرقام الصغيرة واضحة.",
+                "نظف العدسة وثبّت الهاتف وأعد الالتقاط."
+              ],
+              [
+                "الإضاءة والتباين",
+                "لا توجد انعكاسات أو ظلال فوق النص.",
+                "غيّر الزاوية أو الضوء واضبط التباين بحذر."
+              ],
+              [
+                "القص والهندسة",
+                "الحواف ظاهرة والصفحة مستقيمة وغير مقطوعة.",
+                "أعد وضع الورقة والتقطها من جديد."
+              ],
+              [
+                "الاكتمال",
+                "كل الصفحات موجودة وفي ترتيبها.",
+                "قارن بالأصل وأعد ترتيب الصفحات أو أعد تصوير الناقص."
+              ],
+              [
+                "الملف النهائي",
+                "يفتح PDF ويحافظ على المحتوى المتوقع.",
+                "صدّر مجدداً وافحص الحجم والاتجاه والوضوح."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "اضبط التركيز وتحكم بالإضاءة"
+          },
+          {
+            "t": "p",
+            "x": "نظف العدسة وضع الورقة على سطح مستوٍ ذي تباين كافٍ. اجعل الهاتف فوق الورقة لا بزاوية؛ فالمنظور المائل يشوه الخطوط والنص. تجنب ظلال اليد أو الكاميرا أو الضوء. إذا كان الورق لامعاً، غيّر موضع الضوء لتقليل الانعكاسات. التقط صورة تجريبية وكبّر النص الصغير قبل متابعة بقية الصفحات."
+          },
+          {
+            "t": "h2",
+            "x": "تحقق من القص والترتيب والمحتوى"
+          },
+          {
+            "t": "p",
+            "x": "يجب أن تظهر المنطقة اللازمة في كل صفحة، بما في ذلك الأختام والتوقيعات والملاحظات الهامشية وأرقام الصفحات المهمة. لا تقص الحواف ولا تضف مساحة فارغة كبيرة. قارن عدد الصفحات بالأصل وتأكد من ترتيبها قبل التصدير. أدرج ظهر الورقة إذا احتوى على معلومات. لا تعتمد على الصور المصغرة وحدها؛ افتح الصفحات لاكتشاف نص أخفته طية أو ظل."
+          },
+          {
+            "t": "h2",
+            "x": "حسّن الصورة دون فقد المعلومات"
+          },
+          {
+            "t": "p",
+            "x": "قد يقلل التدرج الرمادي صبغة الإضاءة، وقد يجعل التباين التلقائي الورق أفتح والحبر أغمق. كلاهما اختياري لكل صفحة. قارن قبل وبعد: فقد يختفي ختم ملون أو قلم رصاص خافت أو علامة فاتحة بسبب التباين المفرط. تقيد الأداة الالتقاط بـ 2400 بكسل على الحافة الأطول؛ للنص الدقيق أو الأدلة التفصيلية استخدم صورة أو ماسحاً أعلى دقة."
+          },
+          {
+            "t": "h2",
+            "x": "راجع PDF وافصل OCR عن الصورة"
+          },
+          {
+            "t": "p",
+            "x": "يحتوي PDF الممسوح غالباً على صور صفحات لا نص قابل للتحديد. افتح الملف النهائي وافحص الوضوح والاتجاه وإمكانية الطباعة بالحجم المطلوب. إذا احتجت إلى البحث أو النسخ أو الفهرسة، استخدم [OCR PDF](/tools/ocr-pdf) وصحح أخطاء التعرف. لتقليل الحجم لاحقاً، جرّب [ضغط PDF](/tools/compress-pdf) ثم راجع الجودة والنص من جديد."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "كيف أعرف أن جودة PDF الممسوح جيدة؟",
+            "a": "تحقق من التركيز والإضاءة واكتمال الحواف والاتجاه والترتيب ووضوح النص الصغير. ثم افتح PDF الناتج وافحص صفحات ممثلة ومهمة."
+          },
+          {
+            "q": "هل يمكن البحث في نص المسح؟",
+            "a": "ليس بالضرورة. الكاميرا تنشئ صوراً. للبحث أو نسخ الكلمات، شغّل OCR وراجع النص الناتج، إذ تعتمد الأخطاء على الصورة والكتابة."
+          },
+          {
+            "q": "هل أستخدم التدرج الرمادي أو التباين التلقائي؟",
+            "a": "استخدمهما فقط إذا حسّنا القراءة دون إخفاء أختام أو كتابة خافتة أو تفاصيل لونية. قارن كل صفحة قبل وبعد؛ الخياران اختياريان."
+          },
+          {
+            "q": "هل ترفع أداة Scan to PDF مستنداتي؟",
+            "a": "تنشئ الأداة PDF في المتصفح ولا تغادر الصور جهازك. راجع إشعار الخصوصية لكل أداة، فقد تختلف طريقة معالجة المهام الأخرى."
+          }
+        ],
+        "relatedTools": [
+          "scan-to-pdf",
+          "ocr-pdf",
+          "compress-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-a-validation-checklist",
+          "pdf-archive-review-schedule",
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives"
         ]
       }
     ]
@@ -25407,6 +26031,162 @@
           "pdf-checksum-basics-for-archives",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "scan-quality-control-checklist",
+        "slug": "scan-quality-control-checklist",
+        "cluster": "archive-expansion",
+        "title": "PDF স্ক্যানের গুণমান যাচাই চেকলিস্ট",
+        "metaTitle": "PDF স্ক্যানের গুণমান যাচাই চেকলিস্ট",
+        "metaDescription": "স্ক্যান করা PDF-এর ফোকাস, আলো, কাটিং, ক্রম ও পাঠযোগ্যতা যাচাই করুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত, সাইনআপ বা ওয়াটারমার্ক নেই।",
+        "primaryKeyword": "PDF স্ক্যানের গুণমান যাচাই",
+        "secondaryKeywords": [
+          "scan to PDF quality checklist",
+          "scanned document readability",
+          "how to improve scan quality"
+        ],
+        "answer": "স্ক্যান করা PDF-এর গুণমান দেখতে প্রতিটি পৃষ্ঠা স্পষ্ট, যথেষ্ট আলোকিত, সম্পূর্ণ, সোজা এবং সঠিক ক্রমে আছে কি না যাচাই করুন। ছোট লেখা পড়ুন, পৃষ্ঠা বাদ পড়েছে কি না দেখুন এবং শেষ PDF খুলে আকার ও দিক পরীক্ষা করুন। Scan to PDF ব্রাউজারে ছবি প্রক্রিয়া করে; সার্চযোগ্য লেখার জন্য OCR আলাদা ধাপ।",
+        "body": [
+          {
+            "t": "p",
+            "x": "শেয়ারের উপযোগী স্ক্যানে পৃষ্ঠা সম্পূর্ণ, লেখা স্পষ্ট, কনট্রাস্ট ঠিক এবং ক্রম সঠিক থাকা দরকার। প্রথমে মূল ছবি, তারপর রপ্তানি করা PDF দেখুন। Scan to PDF দিয়ে ক্যামেরায় পৃষ্ঠা ধরুন বা আগে তোলা ছবি যোগ করুন, সাজান এবং প্রতিটি পাতায় গ্রেস্কেল বা অটো-কনট্রাস্ট দিন। কাজ ব্রাউজারেই হয়। লেখা খোঁজা বা কপি করতে হলে আলাদা করে OCR চালান।"
+          },
+          {
+            "t": "h2",
+            "x": "স্ক্যান PDF-এর মান কীভাবে যাচাই করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "পৃষ্ঠা ও ক্যামেরা প্রস্তুত করুন",
+                "x": "কাগজ সমতল রাখুন, ছায়া ও প্রতিফলন এড়ান এবং ক্যামেরা কাগজের সমান্তরালে ধরুন।"
+              },
+              {
+                "h": "প্রতিটি পৃষ্ঠা স্পষ্ট তুলুন",
+                "x": "লেখায় ফোকাস করুন, কিনারা দেখান এবং ঝাপসা বা কাটা ছবি আবার তুলুন।"
+              },
+              {
+                "h": "ক্রম সাজান এবং প্রয়োজনমতো ঠিক করুন",
+                "x": "ক্রম যাচাই করুন। পড়তে সুবিধা হলে গ্রেস্কেল বা অটো-কনট্রাস্ট চেষ্টা করুন, তবে সূক্ষ্ম বিবরণ যেন না হারায়।"
+              },
+              {
+                "h": "PDF রপ্তানি করে দেখুন",
+                "x": "A4, Letter বা ছবির মাপে সেট করুন; PDF খুলে পৃষ্ঠা, দিক, কিনারা ও ছোট লেখা দেখুন।"
+              },
+              {
+                "h": "প্রয়োজনে OCR যোগ করুন",
+                "x": "স্ক্যানে ছবি থাকে। সার্চযোগ্য লেখা বানাতে [OCR PDF](/tools/ocr-pdf) ব্যবহার করুন এবং শনাক্ত ফল যাচাই করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "আপনার ট্যাবেই স্ক্যান করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "স্ক্যানের দ্রুত গুণমান যাচাই"
+          },
+          {
+            "t": "table",
+            "head": [
+              "যাচাই",
+              "ভালো মানের লক্ষণ",
+              "সমস্যা হলে"
+            ],
+            "rows": [
+              [
+                "ফোকাস",
+                "সরু রেখা ও ছোট সংখ্যা স্পষ্ট।",
+                "লেন্স পরিষ্কার করুন, ফোন স্থির রাখুন, আবার তুলুন।"
+              ],
+              [
+                "আলো ও কনট্রাস্ট",
+                "লেখার ওপর ঝলক বা ছায়া নেই।",
+                "কোণ বা আলো বদলান; সাবধানে কনট্রাস্ট ঠিক করুন।"
+              ],
+              [
+                "কাটিং ও সোজাভাব",
+                "কিনারা দেখা যায়, পৃষ্ঠা বাঁকা বা কাটা নয়।",
+                "কাগজ ঠিক করে আবার ছবি তুলুন।"
+              ],
+              [
+                "সম্পূর্ণতা",
+                "সব পৃষ্ঠা আছে এবং ক্রম ঠিক।",
+                "মূলের সঙ্গে মিলিয়ে বাদ পড়া পৃষ্ঠা যোগ বা পুনরায় তুলুন।"
+              ],
+              [
+                "শেষ ফাইল",
+                "PDF খোলে এবং প্রত্যাশিত বিষয় রাখে।",
+                "আবার রপ্তানি করে আকার, দিক ও পাঠযোগ্যতা দেখুন।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ক্যামেরায় ফোকাস ও আলো ঠিক রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "লেন্স মুছে কাগজ সমতল, যথেষ্ট কনট্রাস্টের পৃষ্ঠে রাখুন। ফোন কাগজের ওপর সোজা রাখুন, তির্যক নয়; কোণ থেকে তুললে লেখা ও রেখা বিকৃত হতে পারে। হাত, ক্যামেরা বা আলো থেকে ছায়া পড়তে দেবেন না। কাগজ চকচকে হলে আলো সরিয়ে প্রতিফলন কমান। আগে একটি নমুনা ছবি তুলে ছোট লেখা বড় করে দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "কাটিং, ক্রম ও বিষয়বস্তু যাচাই করুন"
+          },
+          {
+            "t": "p",
+            "x": "প্রতিটি পাতায় সিল, স্বাক্ষর, প্রান্তের নোট ও দরকারি পৃষ্ঠা নম্বরসহ প্রয়োজনীয় অংশ রাখুন। কিনারা কাটবেন না, অতিরিক্ত ফাঁকা পটভূমিও রাখবেন না। রপ্তানির আগে মূলের সঙ্গে পৃষ্ঠা সংখ্যা মিলিয়ে ক্রম ঠিক করুন। পেছনে তথ্য থাকলে সেটিও যোগ করুন। শুধু থাম্বনেইল দেখবেন না; ভাঁজ বা ছায়ায় ঢাকা লেখা খুঁজতে পৃষ্ঠা খুলুন।"
+          },
+          {
+            "t": "h2",
+            "x": "তথ্য না মুছে ছবি ঠিক করুন"
+          },
+          {
+            "t": "p",
+            "x": "গ্রেস্কেল ঘরের আলোর রঙের আভা কমাতে পারে, আর অটো-কনট্রাস্ট কাগজ উজ্জ্বল ও কালি গাঢ় করতে পারে। প্রতি পাতায় দুটিই ঐচ্ছিক। আগে-পরে তুলনা করুন: বেশি কনট্রাস্টে রঙিন সিল, হালকা পেন্সিল, পুরোনো কাগজ বা ফিকে দাগ হারাতে পারে। টুলটি দীর্ঘ প্রান্তে ২৪০০ পিক্সেল পর্যন্ত ক্যাপচার করে; খুব ছোট লেখা বা সূক্ষ্ম প্রমাণের জন্য পরিষ্কার ছবি বা উচ্চ রেজোলিউশনের স্ক্যানার ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF দেখুন, OCR-কে আলাদা ধাপ রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "স্ক্যান PDF-এ সাধারণত পৃষ্ঠার ছবি থাকে, নির্বাচনযোগ্য লেখা নয়। শেষ ফাইল খুলে স্পষ্টতা, দিক ও প্রত্যাশিত আকারে প্রিন্ট হয় কি না দেখুন। শব্দ খোঁজা, কপি বা সূচিবদ্ধ করতে [OCR PDF](/tools/ocr-pdf) চালিয়ে শনাক্তকরণের ভুল সংশোধন করুন। পরে আকার কমাতে [Compress PDF](/tools/compress-pdf) ব্যবহার করে মান ও লেখা আবার দেখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "স্ক্যান PDF ভালো মানের কি না বুঝব কীভাবে?",
+            "a": "ফোকাস, আলো, সম্পূর্ণ কিনারা, দিক, ক্রম ও ছোট লেখা স্পষ্ট কি না দেখুন। রপ্তানির পর PDF খুলে নমুনা ও গুরুত্বপূর্ণ পৃষ্ঠা পরীক্ষা করুন।"
+          },
+          {
+            "q": "স্ক্যান করা PDF-এর লেখায় খোঁজা যায়?",
+            "a": "সব সময় নয়। ক্যামেরা ছবি তৈরি করে। শব্দ খোঁজা বা কপি করতে OCR চালান এবং চেনা লেখা যাচাই করুন; ভুল ছবির মান ও হাতের লেখার ওপর নির্ভর করে।"
+          },
+          {
+            "q": "গ্রেস্কেল বা অটো-কনট্রাস্ট ব্যবহার করব?",
+            "a": "সিল, হালকা পেন্সিল, নোট বা রঙিন বিবরণ না হারিয়ে পড়তে সুবিধা হলেই ব্যবহার করুন। প্রতি পাতার আগে-পরে তুলনা করুন; দুটিই ঐচ্ছিক।"
+          },
+          {
+            "q": "Scan to PDF কি আমার নথি আপলোড করে?",
+            "a": "Scan to PDF ব্রাউজারে PDF তৈরি করে, ছবি আপনার ডিভাইস ছাড়ে না। প্রতিটি টুলের গোপনীয়তা নোটিশ পড়ুন, কারণ অন্য কাজের প্রক্রিয়া আলাদা হতে পারে।"
+          }
+        ],
+        "relatedTools": [
+          "scan-to-pdf",
+          "ocr-pdf",
+          "compress-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-a-validation-checklist",
+          "pdf-archive-review-schedule",
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives"
+        ]
       }
     ]
   },
@@ -30482,6 +31262,162 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "scan-quality-control-checklist",
+        "slug": "scan-quality-control-checklist",
+        "cluster": "archive-expansion",
+        "title": "Danh sách kiểm tra chất lượng bản quét PDF",
+        "metaTitle": "Danh sách kiểm tra chất lượng bản quét PDF",
+        "metaDescription": "Kiểm tra độ nét, ánh sáng, mép cắt, thứ tự và khả năng đọc của PDF quét. Miễn phí, riêng tư trong trình duyệt, không đăng ký, không watermark.",
+        "primaryKeyword": "kiểm tra chất lượng quét PDF",
+        "secondaryKeywords": [
+          "scan to PDF quality checklist",
+          "scanned document readability",
+          "how to improve scan quality"
+        ],
+        "answer": "Để kiểm tra PDF đã quét, hãy xác nhận từng trang rõ nét, đủ sáng, đầy đủ, thẳng và đúng thứ tự. Đọc chữ nhỏ, tìm trang bị thiếu rồi mở PDF cuối để kiểm tra kích thước và hướng. Scan to PDF xử lý ảnh trong trình duyệt; OCR là bước riêng nếu cần văn bản có thể tìm kiếm.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Bản quét sẵn sàng chia sẻ cần có trang đầy đủ, chữ dễ đọc, độ tương phản phù hợp và thứ tự chính xác. Hãy xem ảnh gốc trước rồi kiểm tra PDF đã xuất. Scan to PDF cho phép chụp bằng camera hoặc thêm ảnh có sẵn, sắp xếp lại và điều chỉnh thang xám hoặc tương phản tự động theo từng trang. Tác vụ chạy trong trình duyệt. Nếu cần tìm hoặc sao chép chữ, hãy chạy OCR riêng."
+          },
+          {
+            "t": "h2",
+            "x": "Cách kiểm tra chất lượng PDF quét"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Chuẩn bị trang và camera",
+                "x": "Đặt tài liệu phẳng, tránh bóng và phản chiếu, giữ camera song song với giấy."
+              },
+              {
+                "h": "Chụp từng trang rõ nét",
+                "x": "Lấy nét vào chữ, để lộ mép trang và chụp lại ảnh rung hoặc bị cắt."
+              },
+              {
+                "h": "Sắp thứ tự, chỉ chỉnh khi cần",
+                "x": "Kiểm tra trình tự. Thử thang xám hoặc tương phản tự động nếu giúp đọc rõ mà không mất chi tiết."
+              },
+              {
+                "h": "Xuất và kiểm tra PDF",
+                "x": "Chọn A4, Letter hoặc vừa ảnh; mở PDF để xem trang, hướng, mép và chữ nhỏ."
+              },
+              {
+                "h": "Thêm OCR khi cần",
+                "x": "Bản quét gồm hình ảnh. Dùng [OCR PDF](/tools/ocr-pdf) để tạo văn bản có thể tìm kiếm rồi kiểm tra kết quả."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "Quét ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra nhanh chất lượng bản quét"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục kiểm tra",
+              "Dấu hiệu đạt",
+              "Nếu chưa đạt"
+            ],
+            "rows": [
+              [
+                "Độ nét",
+                "Nét chữ và số nhỏ rõ ràng.",
+                "Lau ống kính, giữ điện thoại ổn định rồi chụp lại."
+              ],
+              [
+                "Ánh sáng và tương phản",
+                "Không có bóng hoặc lóa che chữ.",
+                "Đổi góc hoặc ánh sáng; chỉnh tương phản thận trọng."
+              ],
+              [
+                "Cắt và hình học",
+                "Thấy đủ mép, trang không nghiêng hay bị cắt.",
+                "Đặt lại giấy và chụp lại."
+              ],
+              [
+                "Đầy đủ",
+                "Đủ mọi trang và đúng thứ tự.",
+                "Đối chiếu bản gốc, thêm hoặc chụp lại trang thiếu."
+              ],
+              [
+                "Tệp cuối",
+                "PDF mở được và giữ nội dung mong đợi.",
+                "Xuất lại, kiểm tra kích thước, hướng và độ đọc."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Lấy nét camera và kiểm soát ánh sáng"
+          },
+          {
+            "t": "p",
+            "x": "Lau ống kính, đặt giấy trên mặt phẳng có độ tương phản phù hợp. Giữ điện thoại phía trên, không nghiêng; góc chụp xiên có thể làm méo dòng và chữ. Tránh bóng từ tay, camera hoặc đèn. Nếu giấy bóng, đổi vị trí đèn để giảm phản chiếu. Chụp thử và phóng to chữ nhỏ trước khi tiếp tục."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra mép cắt, thứ tự và nội dung"
+          },
+          {
+            "t": "p",
+            "x": "Mỗi trang cần giữ vùng quan trọng như con dấu, chữ ký, ghi chú lề và số trang cần thiết. Tránh cắt mép hoặc để quá nhiều nền trống. So số trang với bản gốc và xác nhận thứ tự trước khi xuất. Thêm mặt sau nếu có thông tin. Đừng chỉ dựa vào hình thu nhỏ; mở từng trang để tìm chữ bị nếp gấp hoặc bóng che."
+          },
+          {
+            "t": "h2",
+            "x": "Điều chỉnh ảnh mà không làm mất thông tin"
+          },
+          {
+            "t": "p",
+            "x": "Thang xám có thể giảm ám màu do ánh sáng trong nhà; tương phản tự động có thể làm giấy sáng và mực đậm hơn. Đây là tùy chọn cho từng trang. So sánh trước và sau: dấu màu, bút chì nhạt, giấy cũ hoặc dấu mờ có thể biến mất nếu tăng tương phản quá mức. Công cụ giới hạn ảnh chụp ở cạnh dài 2.400 pixel; với chữ rất nhỏ hoặc chi tiết làm bằng chứng, hãy chụp rõ hơn hoặc dùng máy quét độ phân giải cao."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra PDF và xem OCR là bước riêng"
+          },
+          {
+            "t": "p",
+            "x": "PDF quét thường chứa ảnh trang chứ không có văn bản chọn được. Mở tệp cuối, kiểm tra độ nét, hướng và khả năng in đúng kích thước. Nếu cần tìm, sao chép hoặc lập chỉ mục chữ, dùng [OCR PDF](/tools/ocr-pdf) và sửa lỗi nhận dạng. Muốn giảm dung lượng sau đó, thử [Nén PDF](/tools/compress-pdf) rồi kiểm tra lại chất lượng và văn bản."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Làm sao biết PDF quét có chất lượng tốt?",
+            "a": "Kiểm tra độ nét, ánh sáng, mép trang, hướng, thứ tự và khả năng đọc chữ nhỏ. Sau khi xuất, mở PDF và xem các trang đại diện cùng trang quan trọng."
+          },
+          {
+            "q": "Có thể tìm kiếm chữ trong PDF quét không?",
+            "a": "Không phải lúc nào cũng được. Camera tạo ảnh. Muốn tìm hoặc sao chép chữ, hãy chạy OCR và kiểm tra văn bản nhận dạng vì lỗi phụ thuộc ảnh và chữ viết."
+          },
+          {
+            "q": "Có nên dùng thang xám hoặc tương phản tự động?",
+            "a": "Chỉ dùng nếu dễ đọc hơn mà không che dấu, bút chì nhạt, ghi chú hoặc chi tiết màu. So sánh từng trang trước và sau; cả hai đều là tùy chọn."
+          },
+          {
+            "q": "Scan to PDF có tải tài liệu lên không?",
+            "a": "Scan to PDF tạo PDF trong trình duyệt và ảnh không rời khỏi thiết bị. Hãy xem thông báo quyền riêng tư của từng công cụ vì tác vụ khác có thể xử lý theo cách khác."
+          }
+        ],
+        "relatedTools": [
+          "scan-to-pdf",
+          "ocr-pdf",
+          "compress-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-a-validation-checklist",
+          "pdf-archive-review-schedule",
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives"
         ]
       }
     ]
@@ -35567,6 +36503,162 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "scan-quality-control-checklist",
+        "slug": "scan-quality-control-checklist",
+        "cluster": "archive-expansion",
+        "title": "PDF 扫描质量检查清单",
+        "metaTitle": "PDF 扫描质量检查清单",
+        "metaDescription": "检查扫描 PDF 的清晰度、光线、裁切、顺序和可读性。免费、浏览器本地处理、无需注册、无水印。",
+        "primaryKeyword": "PDF 扫描质量检查",
+        "secondaryKeywords": [
+          "scan to PDF quality checklist",
+          "scanned document readability",
+          "how to improve scan quality"
+        ],
+        "answer": "检查扫描 PDF 时，确认每页清晰、光线充足、内容完整、方向端正且顺序正确。阅读小字，检查是否漏页，并打开最终 PDF 核对尺寸和方向。Scan to PDF 在浏览器中处理拍摄图像；如需搜索文本，OCR 是单独步骤。",
+        "body": [
+          {
+            "t": "p",
+            "x": "适合分享的扫描件应页面完整、文字清楚、对比度合适且顺序正确。先检查原始照片，再检查导出的 PDF。Scan to PDF 可用摄像头逐页拍摄或添加已有照片，重新排序，并按页调整灰度或自动对比度。处理在浏览器中完成。如需搜索或复制文字，请另行执行 OCR。"
+          },
+          {
+            "t": "h2",
+            "x": "如何检查扫描 PDF 的质量"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "准备页面和摄像头",
+                "x": "将文档放平，避免阴影和反光，让摄像头与纸面平行。"
+              },
+              {
+                "h": "清晰拍摄每一页",
+                "x": "对焦文字，保留页面边缘；模糊或裁切的照片应重新拍摄。"
+              },
+              {
+                "h": "排序并谨慎增强",
+                "x": "检查页面顺序。只有在不丢失细节且有助阅读时，才尝试灰度或自动对比度。"
+              },
+              {
+                "h": "导出并检查 PDF",
+                "x": "选择 A4、Letter 或适合图像；打开 PDF 检查页面、方向、边缘和小字。"
+              },
+              {
+                "h": "需要时再做 OCR",
+                "x": "扫描件包含图像。使用[OCR PDF](/tools/ocr-pdf)生成可搜索文本，并检查识别结果。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "在当前标签页扫描。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "扫描质量快速检查"
+          },
+          {
+            "t": "table",
+            "head": [
+              "检查项",
+              "合格表现",
+              "发现问题时"
+            ],
+            "rows": [
+              [
+                "清晰度",
+                "细线和小数字都清楚。",
+                "清洁镜头、固定手机并重新拍摄。"
+              ],
+              [
+                "光线和对比度",
+                "文字上没有反光或阴影。",
+                "调整角度或光线，并谨慎调整对比度。"
+              ],
+              [
+                "裁切和几何",
+                "边缘完整，页面没有歪斜或裁切。",
+                "重新摆放纸张并拍摄。"
+              ],
+              [
+                "完整性",
+                "所有页面均在且顺序正确。",
+                "对照原件，补拍或重新排序。"
+              ],
+              [
+                "最终文件",
+                "PDF 能打开且内容符合预期。",
+                "重新导出并检查尺寸、方向和可读性。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "对焦并控制光线"
+          },
+          {
+            "t": "p",
+            "x": "清洁镜头，将纸张放在平整且有足够对比度的表面上。手机应位于纸张正上方，避免倾斜角度造成文字和线条变形。不要让手、摄像头或灯光投下阴影。如果纸面反光，调整灯的位置。先拍一张测试照片，并放大查看小字，再继续拍摄。"
+          },
+          {
+            "t": "h2",
+            "x": "检查裁切、顺序和内容"
+          },
+          {
+            "t": "p",
+            "x": "每页都要保留必要区域，包括印章、签名、页边注释和相关页码。避免裁掉边缘或留下过多空白背景。导出前对照原件检查页数和顺序。有信息的背面也要拍摄。不要只看缩略图；打开单页，检查折痕或阴影是否遮住文字。"
+          },
+          {
+            "t": "h2",
+            "x": "调整图像但不要丢失信息"
+          },
+          {
+            "t": "p",
+            "x": "灰度可减少室内灯光造成的色偏，自动对比度可让纸面更亮、墨迹更深。这些设置可按页选择。比较调整前后：对比度过强可能让彩色印章、浅色铅笔、旧纸纹理或淡淡的标记消失。工具将拍摄图像最长边限制为 2400 像素；如需阅读极小文字或保留细节证据，请使用更清晰的照片或更高分辨率扫描仪。"
+          },
+          {
+            "t": "h2",
+            "x": "检查 PDF，并将 OCR 作为单独步骤"
+          },
+          {
+            "t": "p",
+            "x": "扫描 PDF 通常包含页面图像，而不是可选择的文本。打开最终文件检查清晰度、方向和打印尺寸。如需搜索、复制或索引文字，请使用[OCR PDF](/tools/ocr-pdf)，并修正识别错误。之后如需减小文件，可尝试[压缩 PDF](/tools/compress-pdf)，再检查图像质量和文本。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "如何判断扫描 PDF 质量好不好？",
+            "a": "检查清晰度、光线、边缘完整性、方向、顺序和小字可读性。导出后打开 PDF，查看代表性页面和重要页面。"
+          },
+          {
+            "q": "扫描 PDF 中的文字可以搜索吗？",
+            "a": "不一定。摄像头生成的是图像。要搜索或复制文字，请执行 OCR 并检查识别文本，准确度会受图像和手写内容影响。"
+          },
+          {
+            "q": "应该使用灰度或自动对比度吗？",
+            "a": "只有在提升可读性且不会遮掉印章、浅色笔迹、注释或颜色细节时才使用。逐页比较前后效果；这两项都是可选设置。"
+          },
+          {
+            "q": "Scan to PDF 会上传我的文档吗？",
+            "a": "Scan to PDF 在浏览器中生成 PDF，照片不会离开设备。请查看每个工具的隐私说明，因为其他任务的处理方式可能不同。"
+          }
+        ],
+        "relatedTools": [
+          "scan-to-pdf",
+          "ocr-pdf",
+          "compress-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-a-validation-checklist",
+          "pdf-archive-review-schedule",
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives"
         ]
       }
     ]
