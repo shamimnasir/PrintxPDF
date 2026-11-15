@@ -1,0 +1,973 @@
+{
+  "topic": "convert-pdf-table-to-excel-free",
+  "sourceCluster": "from-pdf",
+  "tool": "pdf-to-excel",
+  "languages": {
+    "es": {
+      "title": "Cómo convertir gratis una tabla PDF a Excel",
+      "metaTitle": "Convertir una tabla PDF a Excel gratis",
+      "metaDescription": "Convierte una tabla PDF a Excel gratis, sin registro ni marca de agua y con procesamiento privado en el navegador.",
+      "keyword": "convertir tabla PDF a Excel gratis",
+      "secondaryKeywords": [
+        "PDF a Excel gratis",
+        "convertir PDF a XLSX",
+        "extraer tabla PDF",
+        "convertidor PDF a hoja de cálculo"
+      ],
+      "answer": "Para convertir una tabla PDF a Excel, usa un PDF con texto seleccionable, crea el libro y revisa las columnas antes de analizar los valores. PrintxPDF separa el texto mediante los espacios entre palabras; las celdas estrechas o combinadas pueden requerir limpieza manual.",
+      "ctaLabel": "Convierte PDF a Excel en el navegador",
+      "body": [
+        {
+          "t": "p",
+          "x": "Una tabla PDF parece estructurada, pero el archivo puede contener solo texto colocado en coordenadas. La conversión crea un punto de partida para una hoja de cálculo; no siempre conserva la estructura lógica de filas y columnas."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir un PDF en un libro de Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Comprueba si el PDF tiene texto seleccionable",
+              "x": "Intenta seleccionar una palabra. Si es un escaneo, ejecuta [OCR PDF](/tools/ocr-pdf) en una copia primero."
+            },
+            {
+              "h": "Abre PDF a Excel",
+              "x": "Añade el documento a [PDF a Excel](/tools/pdf-to-excel) en el navegador. La conversión estándar se queda en tu dispositivo."
+            },
+            {
+              "h": "Crea el libro",
+              "x": "Inicia la conversión. Cada página se convierte en una hoja, cada línea en una fila y los espacios amplios separan el texto en celdas."
+            },
+            {
+              "h": "Descarga y revisa",
+              "x": "Abre el XLSX en Excel, Sheets o Numbers y comprueba encabezados, fechas y cifras."
+            },
+            {
+              "h": "Prepara los datos",
+              "x": "Convierte los valores numéricos que aparecen como texto y elimina encabezados repetidos antes de ordenar o sumar."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Convierte texto de PDF en un libro de Excel en tu pestaña. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Qué esperar al convertir de PDF a Excel"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Contenido del PDF",
+            "Resultado posible",
+            "Qué hacer"
+          ],
+          "rows": [
+            [
+              "Columnas de texto separadas",
+              "Celdas y filas útiles",
+              "Comprueba encabezados y totales."
+            ],
+            [
+              "Tabla con bordes dibujados",
+              "Filas según los espacios",
+              "Revisa columnas estrechas o combinadas."
+            ],
+            [
+              "Imagen escaneada",
+              "Poco texto o ninguno",
+              "Ejecuta OCR en una copia primero."
+            ],
+            [
+              "Formulario o gráfico complejo",
+              "Extracción parcial",
+              "Compara manualmente con el PDF."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Las tablas PDF no son hojas de cálculo reales"
+        },
+        {
+          "t": "p",
+          "x": "Un PDF guarda texto en posiciones fijas. Una línea dibujada no indica qué palabras pertenecen a cada celda y un encabezado combinado no tiene un significado universal en una hoja de cálculo. PrintxPDF divide el texto usando espacios amplios o tabuladores. Esto es transparente y suele servir para estados o informes sencillos, pero las columnas estrechas, las líneas partidas y los diseños irregulares requieren revisión manual."
+        },
+        {
+          "t": "h2",
+          "x": "Verifica las cifras antes de tomar decisiones"
+        },
+        {
+          "t": "p",
+          "x": "El libro es un punto de partida, no un resultado contable verificado. Excel puede tratar una cifra como texto; las fechas pueden necesitar otro formato y un signo menos o decimal puede desplazarse si el PDF tiene un diseño irregular. Compara totales, números de cuenta, fechas y filas importantes con el documento original. Para decisiones financieras, fiscales, médicas o legales, conserva la fuente y sigue el proceso de revisión aplicable."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué ayuda la conversión local en el navegador"
+        },
+        {
+          "t": "p",
+          "x": "Los extractos, facturas y nóminas suelen contener datos personales o financieros. PDF a Excel lee el PDF y crea el XLSX en el navegador, evitando una subida rutinaria a un servidor de conversión externo. Tú eliges dónde guardar y compartir el archivo. Antes de adjuntarlo o guardarlo en una carpeta compartida, comprueba el nombre y el contenido de las hojas."
+        },
+        {
+          "t": "h2",
+          "x": "Prepara el PDF si hace falta"
+        },
+        {
+          "t": "p",
+          "x": "Si solo necesitas unas páginas, usa [Extraer páginas](/tools/extract-pages) antes de convertir. Para un escaneo, ejecuta OCR primero y verifica el reconocimiento. Si el documento tiene propiedades delicadas, [Eliminar metadatos](/tools/remove-metadata) puede crear una copia más limpia para compartir, pero no sustituye los controles de acceso ni la revisión de los datos visibles."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo convertir gratis una tabla PDF a Excel?",
+          "a": "Sí. El convertidor crea una hoja por página y separa el texto en celdas mediante espacios amplios. Revisa el libro, porque los bordes dibujados no son datos estructurados."
+        },
+        {
+          "q": "¿Por qué los valores aparecen como texto en Excel?",
+          "a": "El texto PDF no incluye un tipo de dato fiable para hojas de cálculo. Usa Convertir en número o Texto en columnas y después revisa totales y fechas."
+        },
+        {
+          "q": "¿Puedo convertir PDF escaneados a Excel?",
+          "a": "Ejecuta OCR en una copia primero. El OCR crea texto seleccionable, pero puede cometer errores y las tablas complejas aún requieren revisión."
+        },
+        {
+          "q": "¿PDF a Excel es privado?",
+          "a": "En conversiones estándar, PrintxPDF procesa el texto y crea el libro dentro de la pestaña del navegador. El archivo no se sube de forma rutinaria."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como converter uma tabela PDF para Excel grátis",
+      "metaTitle": "Converta uma tabela PDF para Excel grátis",
+      "metaDescription": "Converta tabela PDF para Excel grátis, sem cadastro ou marca-d'água, com processamento privado no navegador.",
+      "keyword": "converter tabela PDF para Excel grátis",
+      "secondaryKeywords": [
+        "PDF para Excel grátis",
+        "converter PDF para XLSX",
+        "extrair tabela de PDF",
+        "conversor PDF para planilha"
+      ],
+      "answer": "Para converter uma tabela PDF para Excel, use um PDF com texto selecionável, crie a pasta de trabalho e confira as colunas antes de analisar os valores. O PrintxPDF separa o texto pelos espaços entre palavras; células estreitas ou mescladas podem exigir ajustes manuais.",
+      "ctaLabel": "Converta PDF para Excel no navegador",
+      "body": [
+        {
+          "t": "p",
+          "x": "Uma tabela em PDF parece estruturada, mas o arquivo pode conter apenas texto posicionado em coordenadas. A conversão cria um ponto de partida para a planilha; nem sempre preserva a estrutura lógica de linhas e colunas."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter um PDF em uma pasta de trabalho do Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Confira se o PDF tem texto selecionável",
+              "x": "Tente selecionar uma palavra. Se for um scan, rode [OCR PDF](/tools/ocr-pdf) em uma cópia antes."
+            },
+            {
+              "h": "Abra PDF para Excel",
+              "x": "Adicione o documento em [PDF para Excel](/tools/pdf-to-excel) no navegador. A conversão padrão fica no dispositivo."
+            },
+            {
+              "h": "Crie a pasta de trabalho",
+              "x": "Execute a conversão. Cada página vira uma planilha, cada linha vira uma linha de dados, e espaços largos separam o texto em células."
+            },
+            {
+              "h": "Baixe e inspecione",
+              "x": "Abra o XLSX no Excel, Sheets ou Numbers e confira títulos, datas e valores."
+            },
+            {
+              "h": "Prepare os dados para análise",
+              "x": "Converta valores numéricos que aparecem como texto e remova cabeçalhos de página repetidos antes de ordenar ou somar."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Converta texto de PDF em uma pasta de trabalho do Excel na sua aba. Grátis, sem cadastro ou marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "O que esperar da conversão de PDF para Excel"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Conteúdo do PDF",
+            "Resultado provável",
+            "Próximo passo"
+          ],
+          "rows": [
+            [
+              "Colunas de texto espaçadas",
+              "Células e linhas úteis",
+              "Confira cabeçalhos e totais."
+            ],
+            [
+              "Tabela com bordas desenhadas",
+              "Linhas baseadas nos espaços",
+              "Ajuste colunas estreitas ou mescladas."
+            ],
+            [
+              "Imagem digitalizada",
+              "Pouco ou nenhum texto",
+              "Rode OCR em uma cópia antes."
+            ],
+            [
+              "Formulário ou gráfico complexo",
+              "Extração parcial",
+              "Compare manualmente com o PDF."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Tabelas em PDF não são planilhas de verdade"
+        },
+        {
+          "t": "p",
+          "x": "Um PDF guarda texto em posições fixas. Uma linha desenhada não informa ao conversor quais palavras pertencem a cada célula, e um cabeçalho mesclado não tem significado universal em uma planilha. O PrintxPDF separa o texto por espaços largos ou tabulações. Isso é transparente e funciona em extratos ou relatórios simples, mas colunas apertadas, linhas quebradas e layouts irregulares precisam de revisão manual."
+        },
+        {
+          "t": "h2",
+          "x": "Confira os números antes de tomar decisões"
+        },
+        {
+          "t": "p",
+          "x": "A pasta de trabalho é um ponto de partida, não um resultado contábil verificado. O Excel pode tratar valores como texto; datas podem precisar de outro formato; um sinal de menos ou decimal pode mudar de lugar em um layout incomum. Compare totais, contas, datas e linhas de alto valor com o PDF original. Para decisões financeiras, fiscais, médicas ou jurídicas, guarde a fonte e siga o processo de revisão necessário."
+        },
+        {
+          "t": "h2",
+          "x": "Por que a conversão local no navegador ajuda"
+        },
+        {
+          "t": "p",
+          "x": "Extratos, faturas e relatórios de folha costumam conter dados pessoais ou financeiros. PDF para Excel lê o PDF e cria o XLSX no navegador, evitando um upload rotineiro para um servidor de conversão de terceiros. Você decide onde salvar e compartilhar. Confira o nome do arquivo e o conteúdo das planilhas antes de anexar a um e-mail ou salvar em uma pasta compartilhada."
+        },
+        {
+          "t": "h2",
+          "x": "Prepare o PDF quando necessário"
+        },
+        {
+          "t": "p",
+          "x": "Se você precisa de poucas páginas, use [Extrair páginas](/tools/extract-pages) antes da conversão. Em documentos digitalizados, rode OCR primeiro e confira o reconhecimento. Se a fonte tiver propriedades sensíveis, [Remover metadados](/tools/remove-metadata) pode criar uma cópia mais limpa, mas não substitui controles de acesso nem a revisão do conteúdo visível."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso converter uma tabela PDF para Excel grátis?",
+          "a": "Sim. O conversor cria uma planilha por página e separa o texto em células nos espaços largos. Confira o resultado, pois bordas desenhadas não são dados estruturados."
+        },
+        {
+          "q": "Por que os valores aparecem como texto no Excel?",
+          "a": "O texto do PDF não traz tipos de dados confiáveis de planilha. Use Converter em Número ou Texto para Colunas e depois confira totais e formatos de data."
+        },
+        {
+          "q": "Posso converter PDFs digitalizados para Excel?",
+          "a": "Rode OCR em uma cópia primeiro. O OCR cria texto selecionável, mas pode errar e tabelas complexas ainda precisam de revisão."
+        },
+        {
+          "q": "PDF para Excel é privado?",
+          "a": "Na conversão padrão, o PrintxPDF processa o texto e cria a pasta de trabalho dentro da aba do navegador. O arquivo não é enviado rotineiramente."
+        }
+      ]
+    },
+    "hi": {
+      "title": "PDF तालिका को Excel में मुफ़्त कैसे बदलें",
+      "metaTitle": "PDF तालिका को Excel में मुफ़्त बदलें",
+      "metaDescription": "PDF तालिका को Excel में मुफ़्त बदलें। साइनअप या वॉटरमार्क नहीं, ब्राउज़र में निजी रूपांतरण।",
+      "keyword": "PDF तालिका Excel में मुफ़्त बदलें",
+      "secondaryKeywords": [
+        "PDF से Excel मुफ्त",
+        "PDF को XLSX में बदलें",
+        "PDF तालिका निकालें",
+        "PDF स्प्रेडशीट कन्वर्टर"
+      ],
+      "answer": "PDF तालिका को Excel में बदलने के लिए चयन योग्य पाठ वाली PDF से वर्कबुक बनाएँ और विश्लेषण से पहले कॉलम जाँचें। PrintxPDF शब्दों के बीच की दूरी से पाठ अलग करता है; संकरी या मिली हुई सेल को हाथ से ठीक करना पड़ सकता है।",
+      "ctaLabel": "ब्राउज़र में PDF को Excel में बदलें",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF तालिका देखने में व्यवस्थित लगती है, लेकिन फ़ाइल में केवल निर्देशांकों पर रखे पाठ हो सकते हैं। रूपांतरण स्प्रेडशीट का शुरुआती रूप देता है; वह हमेशा पंक्तियों और कॉलम की असली संरचना नहीं बचाता।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF को Excel वर्कबुक में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "देखें कि PDF में चयन योग्य पाठ है",
+              "x": "एक शब्द चुनकर देखें। अगर दस्तावेज़ स्कैन है, तो पहले कॉपी पर [PDF OCR](/tools/ocr-pdf) चलाएँ।"
+            },
+            {
+              "h": "PDF से Excel खोलें",
+              "x": "ब्राउज़र में [PDF से Excel](/tools/pdf-to-excel) खोलकर दस्तावेज़ जोड़ें। सामान्य रूपांतरण डिवाइस पर होता है।"
+            },
+            {
+              "h": "वर्कबुक बनाएँ",
+              "x": "रूपांतरण चलाएँ। हर PDF पेज एक शीट बनता है, हर पंक्ति एक रो और बड़े अंतराल पाठ को सेल में बाँटते हैं।"
+            },
+            {
+              "h": "डाउनलोड और जाँचें",
+              "x": "XLSX को Excel, Sheets या Numbers में खोलें और शीर्षक, तारीख व आँकड़े देखें।"
+            },
+            {
+              "h": "विश्लेषण के लिए मान ठीक करें",
+              "x": "पाठ की तरह आए अंकों को संख्या में बदलें और जोड़ने या छाँटने से पहले दोहराए गए पेज हेडर हटाएँ।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ब्राउज़र टैब में PDF पाठ को Excel वर्कबुक में बदलें। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF से Excel में बदलने पर क्या मिलेगा"
+        },
+        {
+          "t": "table",
+          "head": [
+            "PDF सामग्री",
+            "संभावित परिणाम",
+            "अगला कदम"
+          ],
+          "rows": [
+            [
+              "अंतर वाली पाठ कॉलम",
+              "काम आने वाली सेल और रो",
+              "शीर्षक और कुल जाँचें।"
+            ],
+            [
+              "खींची हुई बॉर्डर वाली तालिका",
+              "पाठ दूरी पर आधारित रो",
+              "संकरी या मिली सेल ठीक करें।"
+            ],
+            [
+              "स्कैन पेज की छवि",
+              "बहुत कम या कोई पाठ नहीं",
+              "पहले कॉपी पर OCR चलाएँ।"
+            ],
+            [
+              "जटिल फ़ॉर्म या चार्ट",
+              "आंशिक पाठ निकलेगा",
+              "PDF से हाथ से मिलाएँ।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF तालिकाएँ असली स्प्रेडशीट टेबल नहीं होतीं"
+        },
+        {
+          "t": "p",
+          "x": "PDF पाठ को निश्चित स्थानों पर रखता है। खींची हुई लाइन कन्वर्टर को नहीं बताती कि कौन से शब्द किस सेल में हैं; मिली हुई हेडिंग का स्प्रेडशीट में कोई तय अर्थ नहीं। PrintxPDF बड़े अंतराल या टैब से पाठ बाँटता है। साफ़ स्टेटमेंट या रिपोर्ट में यह उपयोगी है, लेकिन तंग कॉलम, अगली पंक्ति में लिपटा पाठ और अनियमित लेआउट हाथ से जाँचने पड़ते हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "निर्णय से पहले संख्याएँ जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "वर्कबुक शुरुआती सामग्री है, सत्यापित लेखा परिणाम नहीं। Excel अंकों को पाठ मान सकता है; तारीखों का स्थानीय फ़ॉर्मेट बदलना पड़ सकता है और असामान्य लेआउट में माइनस या दशमलव खिसक सकता है। कुल, खाते, तारीख और बड़ी राशि वाली पंक्तियाँ मूल PDF से मिलाएँ। वित्तीय, कर, चिकित्सा या कानूनी निर्णय के लिए स्रोत रखें और तय समीक्षा प्रक्रिया अपनाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "ब्राउज़र में स्थानीय रूपांतरण क्यों उपयोगी है"
+        },
+        {
+          "t": "p",
+          "x": "बैंक स्टेटमेंट, चालान और वेतन रिपोर्ट में निजी या वित्तीय जानकारी होती है। PDF से Excel ब्राउज़र में PDF पढ़कर XLSX बनाता है, इसलिए सामान्य रूपांतरण के लिए फ़ाइल किसी बाहरी कन्वर्टर सर्वर पर अपलोड नहीं होती। आप तय करते हैं कि आउटपुट कहाँ सहेजना और साझा करना है। ईमेल में जोड़ने या साझा फ़ोल्डर में रखने से पहले फ़ाइल नाम और शीट की सामग्री देखें।"
+        },
+        {
+          "t": "h2",
+          "x": "ज़रूरत पड़ने पर पहले PDF तैयार करें"
+        },
+        {
+          "t": "p",
+          "x": "केवल कुछ पेज चाहिए तो रूपांतरण से पहले [पेज निकालें](/tools/extract-pages) इस्तेमाल करें। स्कैन दस्तावेज़ पर पहले OCR चलाएँ और पहचान जाँचें। संवेदनशील गुण हों तो [मेटाडेटा हटाएँ](/tools/remove-metadata) साफ़ साझा कॉपी बना सकता है, लेकिन यह पहुँच नियंत्रण या दिखने वाले डेटा की जाँच का विकल्प नहीं।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF तालिका को Excel में मुफ़्त बदल सकता हूँ?",
+          "a": "हाँ। कन्वर्टर हर PDF पेज के लिए शीट बनाता है और बड़े अंतराल पर पाठ को सेल में बाँटता है। परिणाम जाँचें, क्योंकि खींची हुई बॉर्डर संरचित डेटा नहीं होती।"
+        },
+        {
+          "q": "Excel में मान पाठ के रूप में क्यों दिखते हैं?",
+          "a": "PDF पाठ में भरोसेमंद स्प्रेडशीट डेटा प्रकार नहीं होते। Convert to Number या Text to Columns चलाएँ और कुल व तारीख फ़ॉर्मेट जाँचें।"
+        },
+        {
+          "q": "क्या स्कैन PDF को Excel में बदल सकता हूँ?",
+          "a": "पहले कॉपी पर OCR चलाएँ। इससे चयन योग्य पाठ बनता है, पर पहचान में त्रुटि हो सकती है और जटिल तालिका की जाँच फिर भी ज़रूरी है।"
+        },
+        {
+          "q": "क्या PDF से Excel निजी है?",
+          "a": "सामान्य रूपांतरण में PrintxPDF ब्राउज़र टैब के भीतर पाठ प्रोसेस कर वर्कबुक बनाता है। फ़ाइल नियमित रूप से अपलोड नहीं होती।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية تحويل جدول PDF إلى Excel مجاناً",
+      "metaTitle": "تحويل جدول PDF إلى Excel مجاناً",
+      "metaDescription": "حوّل جدول PDF إلى Excel مجاناً، بلا تسجيل أو علامة مائية، مع معالجة خاصة في المتصفح.",
+      "keyword": "تحويل جدول PDF إلى Excel مجاناً",
+      "secondaryKeywords": [
+        "PDF إلى Excel مجاناً",
+        "تحويل PDF إلى XLSX",
+        "استخراج جدول PDF",
+        "محول PDF إلى جدول بيانات"
+      ],
+      "answer": "لتحويل جدول PDF إلى Excel، استخدم ملفاً يحتوي نصاً قابلاً للتحديد، وأنشئ المصنف ثم افحص الأعمدة قبل تحليل القيم. يفصل PrintxPDF النص وفق المسافات بين الكلمات؛ وقد تحتاج الخلايا الضيقة أو المدمجة إلى تنظيف يدوي.",
+      "ctaLabel": "حوّل PDF إلى Excel في المتصفح",
+      "body": [
+        {
+          "t": "p",
+          "x": "يبدو جدول PDF منظماً، لكن الملف قد لا يحتوي سوى نص موضوع في إحداثيات ثابتة. يمنحك التحويل نقطة بداية لجدول البيانات، لكنه لا يحافظ دائماً على البنية المنطقية للصفوف والأعمدة."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل PDF إلى مصنف Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "تحقق من وجود نص قابل للتحديد",
+              "x": "حاول تحديد كلمة. إذا كان PDF ممسوحاً، فشغّل [OCR PDF](/tools/ocr-pdf) على نسخة أولاً."
+            },
+            {
+              "h": "افتح PDF إلى Excel",
+              "x": "أضف الملف إلى [PDF إلى Excel](/tools/pdf-to-excel) في المتصفح. يبقى التحويل القياسي على جهازك."
+            },
+            {
+              "h": "أنشئ المصنف",
+              "x": "شغّل التحويل. تصبح كل صفحة ورقة عمل، وكل سطر صفاً، وتقسم الفجوات الواسعة النص إلى خلايا."
+            },
+            {
+              "h": "نزّل وافحص",
+              "x": "افتح XLSX في Excel أو Sheets أو Numbers وتحقق من العناوين والتواريخ والأرقام."
+            },
+            {
+              "h": "نظّف القيم للتحليل",
+              "x": "حوّل القيم الرقمية التي تظهر كنص إلى أرقام، وأزل رؤوس الصفحات المتكررة قبل الفرز أو الجمع."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "حوّل نص PDF إلى مصنف Excel داخل علامة التبويب. مجاناً وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "ما المتوقع من تحويل PDF إلى Excel"
+        },
+        {
+          "t": "table",
+          "head": [
+            "محتوى PDF",
+            "النتيجة المحتملة",
+            "الخطوة التالية"
+          ],
+          "rows": [
+            [
+              "أعمدة نصية متباعدة",
+              "خلايا وصفوف مفيدة",
+              "تحقق من العناوين والإجماليات."
+            ],
+            [
+              "جدول بحدود مرسومة",
+              "صفوف حسب المسافات النصية",
+              "أصلح الأعمدة الضيقة أو المدمجة."
+            ],
+            [
+              "صورة صفحة ممسوحة",
+              "نص قليل أو معدوم",
+              "شغّل OCR على نسخة أولاً."
+            ],
+            [
+              "نموذج أو مخطط معقد",
+              "استخراج جزئي للنص",
+              "راجع يدوياً مقابل PDF."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "جداول PDF ليست جداول بيانات حقيقية"
+        },
+        {
+          "t": "p",
+          "x": "يخزن PDF النص في مواضع ثابتة. لا يخبر الخط المرسوم المحول بالكلمات التي تنتمي إلى كل خلية، ولا يملك العنوان المدمج معنى موحداً في الجداول. يقسم PrintxPDF النص باستخدام الفجوات الواسعة أو علامات الجدولة. هذا واضح ومفيد للكشوف والتقارير البسيطة، لكنه يتطلب مراجعة الأعمدة الضيقة والأسطر الملتفة والتخطيطات غير المنتظمة."
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من الأرقام قبل اتخاذ القرار"
+        },
+        {
+          "t": "p",
+          "x": "المصنف نقطة بداية، وليس نتيجة محاسبية مؤكدة. قد يعامل Excel القيمة كنص، وقد تحتاج التواريخ إلى تنسيق محلي، وقد ينتقل رمز السالب أو العلامة العشرية في التخطيطات غير المعتادة. قارن الإجماليات وأرقام الحسابات والتواريخ والصفوف المهمة مع PDF الأصلي. في القرارات المالية أو الضريبية أو الطبية أو القانونية، احتفظ بالمصدر واتبع إجراء المراجعة المطلوب."
+        },
+        {
+          "t": "h2",
+          "x": "فائدة التحويل المحلي في المتصفح"
+        },
+        {
+          "t": "p",
+          "x": "تحتوي الكشوف والفواتير وتقارير الرواتب غالباً على بيانات شخصية أو مالية. يقرأ PDF إلى Excel الملف وينشئ XLSX في المتصفح، متجنباً الرفع المعتاد إلى خادم تحويل تابع لجهة أخرى. أنت تختار مكان حفظ الملف ومشاركته. تحقق من اسم الملف ومحتوى أوراق العمل قبل إرفاقه بالبريد أو وضعه في مجلد مشترك."
+        },
+        {
+          "t": "h2",
+          "x": "جهّز PDF عند الحاجة"
+        },
+        {
+          "t": "p",
+          "x": "إذا احتجت إلى صفحات قليلة فقط، فاستخدم [استخراج الصفحات](/tools/extract-pages) قبل التحويل. وفي المستند الممسوح شغّل OCR أولاً وتحقق من التعرف. إذا احتوى المصدر خصائص حساسة، يمكن أن تنشئ [إزالة البيانات الوصفية](/tools/remove-metadata) نسخة أنظف للمشاركة، لكنها لا تحل محل ضوابط الوصول أو مراجعة المعلومات الظاهرة."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكنني تحويل جدول PDF إلى Excel مجاناً؟",
+          "a": "نعم. ينشئ المحول ورقة لكل صفحة PDF ويقسم النص إلى خلايا عند الفجوات الواسعة. راجع المصنف لأن الحدود المرسومة ليست بيانات منظمة."
+        },
+        {
+          "q": "لماذا تظهر القيم كنص في Excel؟",
+          "a": "لا يحمل نص PDF أنواع بيانات موثوقة للجداول. استخدم التحويل إلى رقم أو النص إلى أعمدة، ثم تحقق من الإجماليات وتنسيق التاريخ."
+        },
+        {
+          "q": "هل يمكن تحويل PDF ممسوح إلى Excel؟",
+          "a": "شغّل OCR على نسخة أولاً. ينشئ OCR نصاً قابلاً للتحديد، لكن أخطاء التعرف والجداول المعقدة تتطلب مراجعة."
+        },
+        {
+          "q": "هل تحويل PDF إلى Excel خاص؟",
+          "a": "في التحويل القياسي، يعالج PrintxPDF النص وينشئ المصنف داخل علامة تبويب المتصفح، فلا يرفع الملف عادةً."
+        }
+      ]
+    },
+    "bn": {
+      "title": "PDF টেবিল বিনামূল্যে Excel-এ কীভাবে রূপান্তর করবেন",
+      "metaTitle": "PDF টেবিল বিনামূল্যে Excel-এ রূপান্তর",
+      "metaDescription": "PDF টেবিল বিনামূল্যে Excel-এ রূপান্তর করুন। সাইনআপ বা ওয়াটারমার্ক নেই, ব্রাউজারে ব্যক্তিগত প্রক্রিয়া।",
+      "keyword": "PDF টেবিল Excel-এ বিনামূল্যে রূপান্তর",
+      "secondaryKeywords": [
+        "বিনামূল্যে PDF থেকে Excel",
+        "PDF XLSX-এ বদল",
+        "PDF টেবিল বের করুন",
+        "PDF স্প্রেডশিট কনভার্টার"
+      ],
+      "answer": "PDF টেবিল Excel-এ রূপান্তর করতে নির্বাচনযোগ্য লেখা থাকা PDF দিয়ে ওয়ার্কবুক তৈরি করুন, তারপর বিশ্লেষণের আগে কলাম যাচাই করুন। PrintxPDF শব্দের মাঝের ফাঁক দেখে লেখা ভাগ করে; সরু বা মিশে থাকা সেল হাতে ঠিক করতে হতে পারে।",
+      "ctaLabel": "ব্রাউজারে PDF Excel-এ রূপান্তর করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF টেবিল দেখতে সাজানো হলেও ফাইলে কেবল নির্দিষ্ট অবস্থানে রাখা লেখা থাকতে পারে। রূপান্তর স্প্রেডশিটের প্রাথমিক কাঠামো দেয়; সারি ও কলামের যৌক্তিক বিন্যাস সব সময় অক্ষত থাকে না।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF-কে Excel ওয়ার্কবুকে কীভাবে বদলাবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "PDF-এ নির্বাচনযোগ্য লেখা আছে কি না দেখুন",
+              "x": "একটি শব্দ নির্বাচন করে দেখুন। স্ক্যান হলে আগে কপিতে [PDF OCR](/tools/ocr-pdf) চালান।"
+            },
+            {
+              "h": "PDF থেকে Excel খুলুন",
+              "x": "ব্রাউজারে [PDF থেকে Excel](/tools/pdf-to-excel) খুলে ফাইল যোগ করুন। সাধারণ রূপান্তর ডিভাইসেই থাকে।"
+            },
+            {
+              "h": "ওয়ার্কবুক তৈরি করুন",
+              "x": "রূপান্তর চালান। প্রতি PDF পৃষ্ঠা একটি শিট হয়, প্রতি লাইন একটি সারি হয়, আর বেশি ফাঁকে লেখা সেলে ভাগ হয়।"
+            },
+            {
+              "h": "ডাউনলোড করে পরীক্ষা করুন",
+              "x": "Excel, Sheets বা Numbers-এ XLSX খুলে শিরোনাম, তারিখ ও অঙ্ক দেখুন।"
+            },
+            {
+              "h": "বিশ্লেষণের জন্য মান পরিষ্কার করুন",
+              "x": "লেখা হিসেবে থাকা অঙ্ককে সংখ্যায় বদলান এবং সাজানো বা যোগের আগে পুনরাবৃত্ত পৃষ্ঠা শিরোনাম সরান।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ব্রাউজার ট্যাবে PDF লেখা Excel ওয়ার্কবুকে রূপান্তর করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF থেকে Excel-এ রূপান্তরে কী ফল পাবেন"
+        },
+        {
+          "t": "table",
+          "head": [
+            "PDF-এর বিষয়",
+            "সম্ভাব্য ফল",
+            "পরের কাজ"
+          ],
+          "rows": [
+            [
+              "ফাঁক রাখা লেখা কলাম",
+              "কাজের সেল ও সারি",
+              "শিরোনাম ও মোট যাচাই করুন।"
+            ],
+            [
+              "আঁকা বর্ডারের টেবিল",
+              "লেখার ফাঁক অনুযায়ী সারি",
+              "সরু বা মিশে থাকা কলাম ঠিক করুন।"
+            ],
+            [
+              "স্ক্যান পৃষ্ঠার ছবি",
+              "অল্প বা কোনো লেখা নেই",
+              "আগে কপিতে OCR চালান।"
+            ],
+            [
+              "জটিল ফর্ম বা চার্ট",
+              "আংশিক লেখা বের হবে",
+              "PDF দেখে হাতে মিলিয়ে নিন।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF টেবিল আসল স্প্রেডশিট টেবিল নয়"
+        },
+        {
+          "t": "p",
+          "x": "PDF লেখাকে নির্দিষ্ট অবস্থানে রাখে। আঁকা রেখা কনভার্টারকে বলে না কোন শব্দ কোন সেলে যাবে, আর মিশ্রিত শিরোনামের স্প্রেডশিটে নির্দিষ্ট অর্থ নেই। PrintxPDF বড় ফাঁক বা ট্যাব ধরে লেখা ভাগ করে। পরিষ্কার বিবরণী বা রিপোর্টে এটি কার্যকর, তবে আঁটসাঁট কলাম, মোড়ানো লাইন এবং অনিয়মিত বিন্যাস হাতে যাচাই করতে হবে।"
+        },
+        {
+          "t": "h2",
+          "x": "সিদ্ধান্ত নেওয়ার আগে সংখ্যা মিলিয়ে দেখুন"
+        },
+        {
+          "t": "p",
+          "x": "ওয়ার্কবুক কেবল শুরুর উপাদান, যাচাইকৃত হিসাব নয়। Excel মানকে লেখা ভাবতে পারে; তারিখের স্থানীয় ফরম্যাট বদলাতে হতে পারে; অস্বাভাবিক বিন্যাসে বিয়োগ চিহ্ন বা দশমিক সরে যেতে পারে। মোট, অ্যাকাউন্ট নম্বর, তারিখ ও গুরুত্বপূর্ণ সারি মূল PDF-এর সঙ্গে মেলান। আর্থিক, কর, চিকিৎসা বা আইনি সিদ্ধান্তে উৎস রাখুন এবং প্রয়োজনীয় যাচাই প্রক্রিয়া অনুসরণ করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্রাউজারে স্থানীয় রূপান্তর কেন উপকারী"
+        },
+        {
+          "t": "p",
+          "x": "ব্যাংক বিবরণী, চালান ও বেতন রিপোর্টে ব্যক্তিগত বা আর্থিক তথ্য থাকে। PDF থেকে Excel ব্রাউজারে PDF পড়ে XLSX বানায়, তাই নিয়মিত রূপান্তরে তৃতীয় পক্ষের সার্ভারে আপলোড হয় না। ফাইল কোথায় রাখবেন ও শেয়ার করবেন তা আপনার সিদ্ধান্ত। ইমেইলে জুড়তে বা শেয়ার্ড ড্রাইভে রাখার আগে নাম এবং শিটের বিষয়বস্তু দেখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "প্রয়োজনে PDF আগে প্রস্তুত করুন"
+        },
+        {
+          "t": "p",
+          "x": "শুধু কয়েকটি পৃষ্ঠা লাগলে রূপান্তরের আগে [পৃষ্ঠা বের করুন](/tools/extract-pages)। স্ক্যান নথিতে আগে OCR চালিয়ে শনাক্ত লেখা দেখুন। সংবেদনশীল বৈশিষ্ট্য থাকলে [মেটাডেটা সরান](/tools/remove-metadata) পরিষ্কার শেয়ার কপি তৈরি করতে পারে, তবে প্রবেশ নিয়ন্ত্রণ বা দৃশ্যমান তথ্য যাচাইয়ের বিকল্প নয়।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF টেবিল বিনামূল্যে Excel-এ রূপান্তর করতে পারি?",
+          "a": "হ্যাঁ। কনভার্টার প্রতি পৃষ্ঠায় একটি শিট বানায় এবং বড় ফাঁকে লেখা সেলে ভাগ করে। ফল যাচাই করুন, কারণ আঁকা বর্ডার কাঠামোবদ্ধ ডেটা নয়।"
+        },
+        {
+          "q": "Excel-এ মানগুলো লেখা হিসেবে দেখায় কেন?",
+          "a": "PDF লেখায় নির্ভরযোগ্য স্প্রেডশিট ডেটা ধরন থাকে না। Convert to Number বা Text to Columns ব্যবহার করে মোট ও তারিখ যাচাই করুন।"
+        },
+        {
+          "q": "স্ক্যান PDF Excel-এ রূপান্তর করা যায়?",
+          "a": "আগে কপিতে OCR চালান। OCR নির্বাচনযোগ্য লেখা তৈরি করে, তবে ভুল হতে পারে এবং জটিল টেবিল যাচাই করা দরকার।"
+        },
+        {
+          "q": "PDF থেকে Excel রূপান্তর কি ব্যক্তিগত?",
+          "a": "সাধারণ রূপান্তরে PrintxPDF ব্রাউজার ট্যাবের ভেতরে লেখা প্রসেস করে ও ওয়ার্কবুক বানায়। ফাইল নিয়মিত আপলোড হয় না।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách chuyển bảng PDF sang Excel miễn phí",
+      "metaTitle": "Chuyển bảng PDF sang Excel miễn phí",
+      "metaDescription": "Chuyển bảng PDF sang Excel miễn phí, không đăng ký, không dấu mờ, xử lý riêng tư trong trình duyệt.",
+      "keyword": "chuyển bảng PDF sang Excel miễn phí",
+      "secondaryKeywords": [
+        "PDF sang Excel miễn phí",
+        "chuyển PDF sang XLSX",
+        "trích xuất bảng PDF",
+        "công cụ chuyển PDF sang bảng tính"
+      ],
+      "answer": "Để chuyển bảng PDF sang Excel, hãy dùng PDF có văn bản chọn được, tạo sổ tính rồi kiểm tra cột trước khi phân tích dữ liệu. PrintxPDF tách chữ theo khoảng cách giữa từ; ô hẹp hoặc ô gộp có thể cần chỉnh sửa thủ công.",
+      "ctaLabel": "Chuyển PDF sang Excel trong trình duyệt",
+      "body": [
+        {
+          "t": "p",
+          "x": "Bảng PDF trông có cấu trúc, nhưng tệp có thể chỉ chứa văn bản được đặt tại các tọa độ. Bản chuyển đổi là điểm khởi đầu cho bảng tính, không phải lúc nào cũng giữ đúng cấu trúc logic của hàng và cột."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển PDF thành sổ tính Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Kiểm tra PDF có văn bản chọn được không",
+              "x": "Thử chọn một từ. Nếu đó là bản scan, hãy chạy [OCR PDF](/tools/ocr-pdf) trên bản sao trước."
+            },
+            {
+              "h": "Mở PDF sang Excel",
+              "x": "Thêm tài liệu vào [PDF sang Excel](/tools/pdf-to-excel) trong trình duyệt. Chuyển đổi tiêu chuẩn diễn ra trên thiết bị."
+            },
+            {
+              "h": "Tạo sổ tính",
+              "x": "Chạy chuyển đổi. Mỗi trang PDF thành một trang tính, mỗi dòng thành một hàng, khoảng trống rộng tách chữ thành ô."
+            },
+            {
+              "h": "Tải xuống và kiểm tra",
+              "x": "Mở XLSX bằng Excel, Sheets hoặc Numbers, xem tiêu đề, ngày và số liệu."
+            },
+            {
+              "h": "Làm sạch dữ liệu để phân tích",
+              "x": "Đổi giá trị số đang ở dạng văn bản thành số và xóa tiêu đề trang lặp trước khi sắp xếp hoặc tính tổng."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Chuyển văn bản PDF thành sổ tính Excel ngay trong thẻ trình duyệt. Miễn phí, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Kết quả chuyển PDF sang Excel có thể như thế nào"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Nội dung PDF",
+            "Kết quả thường gặp",
+            "Bước tiếp theo"
+          ],
+          "rows": [
+            [
+              "Cột văn bản có khoảng cách",
+              "Ô và hàng hữu ích",
+              "Kiểm tra tiêu đề và tổng."
+            ],
+            [
+              "Bảng có đường viền vẽ",
+              "Hàng dựa vào khoảng cách chữ",
+              "Sửa cột hẹp hoặc ô gộp."
+            ],
+            [
+              "Ảnh trang scan",
+              "Ít hoặc không có văn bản",
+              "Chạy OCR trên bản sao trước."
+            ],
+            [
+              "Biểu mẫu hoặc biểu đồ phức tạp",
+              "Trích xuất được một phần",
+              "Đối chiếu thủ công với PDF."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Bảng PDF không phải bảng tính thật"
+        },
+        {
+          "t": "p",
+          "x": "PDF lưu chữ tại vị trí cố định. Đường kẻ không cho công cụ biết từ nào thuộc ô nào, còn tiêu đề gộp không có ý nghĩa bảng tính thống nhất. PrintxPDF tách văn bản dựa trên khoảng cách lớn hoặc tab. Cách này minh bạch và hữu ích cho sao kê hay báo cáo gọn, nhưng cột sát nhau, dòng xuống hàng và bố cục bất thường cần được xem lại thủ công."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra số liệu trước khi ra quyết định"
+        },
+        {
+          "t": "p",
+          "x": "Sổ tính chỉ là điểm bắt đầu, không phải kết quả kế toán đã xác minh. Excel có thể coi giá trị là văn bản; ngày tháng có thể cần định dạng địa phương; dấu trừ hoặc dấu thập phân có thể dịch chuyển nếu bố cục lạ. So sánh tổng, số tài khoản, ngày và các hàng giá trị lớn với PDF gốc. Với quyết định tài chính, thuế, y tế hoặc pháp lý, hãy giữ bản nguồn và làm theo quy trình rà soát cần thiết."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao chuyển đổi cục bộ trong trình duyệt hữu ích"
+        },
+        {
+          "t": "p",
+          "x": "Sao kê, hóa đơn và báo cáo lương thường có dữ liệu cá nhân hoặc tài chính. PDF sang Excel đọc PDF và tạo XLSX trong trình duyệt, tránh việc tải thường xuyên lên máy chủ chuyển đổi bên thứ ba. Bạn quyết định nơi lưu và chia sẻ. Hãy kiểm tra tên tệp và nội dung trang tính trước khi đính kèm email hoặc lưu vào thư mục dùng chung."
+        },
+        {
+          "t": "h2",
+          "x": "Chuẩn bị PDF nếu cần"
+        },
+        {
+          "t": "p",
+          "x": "Nếu chỉ cần vài trang, hãy dùng [Trích xuất trang](/tools/extract-pages) trước khi chuyển. Với bản scan, chạy OCR trước và kiểm tra kết quả nhận dạng. Nếu tệp nguồn có thuộc tính nhạy cảm, [Xóa siêu dữ liệu](/tools/remove-metadata) có thể tạo bản chia sẻ gọn hơn nhưng không thay thế kiểm soát truy cập hoặc việc xem lại dữ liệu hiển thị."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Tôi có thể chuyển bảng PDF sang Excel miễn phí không?",
+          "a": "Có. Công cụ tạo một trang tính cho mỗi trang PDF và tách chữ thành ô tại khoảng trống rộng. Hãy kiểm tra vì đường viền vẽ không phải dữ liệu có cấu trúc."
+        },
+        {
+          "q": "Vì sao giá trị hiển thị thành văn bản trong Excel?",
+          "a": "Văn bản PDF không có kiểu dữ liệu bảng tính đáng tin cậy. Dùng Convert to Number hoặc Text to Columns, sau đó kiểm tra tổng và định dạng ngày."
+        },
+        {
+          "q": "Có thể chuyển PDF scan sang Excel không?",
+          "a": "Hãy chạy OCR trên bản sao trước. OCR tạo văn bản chọn được nhưng có thể nhận sai, còn bảng phức tạp vẫn cần xem lại."
+        },
+        {
+          "q": "Chuyển PDF sang Excel có riêng tư không?",
+          "a": "Với chuyển đổi tiêu chuẩn, PrintxPDF xử lý văn bản và tạo sổ tính trong thẻ trình duyệt, nên tệp không được tải lên thường xuyên."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何免费将 PDF 表格转换为 Excel",
+      "metaTitle": "免费将 PDF 表格转换为 Excel",
+      "metaDescription": "免费将 PDF 表格转为 Excel。无需注册、无水印，在浏览器中私密转换普通 PDF 文件。",
+      "keyword": "免费将 PDF 表格转换为 Excel",
+      "secondaryKeywords": [
+        "免费 PDF 转 Excel",
+        "将 PDF 转为 XLSX",
+        "提取 PDF 表格",
+        "PDF 电子表格转换器"
+      ],
+      "answer": "要把 PDF 表格转成 Excel，请使用含可选中文本的 PDF 创建工作簿，并在分析前检查各列。PrintxPDF 根据词语间距拆分文本；间距较窄或合并的单元格可能需要手动整理。",
+      "ctaLabel": "在浏览器中将 PDF 转为 Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF 表格看起来有结构，但文件内部可能只是放置在固定坐标上的文本。转换结果是电子表格的起点，不一定能完整保留行列的逻辑结构。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将 PDF 转换为 Excel 工作簿"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "检查 PDF 是否有可选中文本",
+              "x": "尝试选中一个词。如果是扫描件，请先在副本上运行[PDF OCR](/tools/ocr-pdf)。"
+            },
+            {
+              "h": "打开 PDF 转 Excel",
+              "x": "在浏览器中将文件添加到[PDF 转 Excel](/tools/pdf-to-excel)。标准转换在你的设备上处理。"
+            },
+            {
+              "h": "创建工作簿",
+              "x": "运行转换。每个 PDF 页面成为一个工作表，每一行文本成为一行，较大的间距会将文本分到不同单元格。"
+            },
+            {
+              "h": "下载并检查",
+              "x": "用 Excel、Sheets 或 Numbers 打开 XLSX，检查标题、日期和数字。"
+            },
+            {
+              "h": "整理数据后再分析",
+              "x": "将以文本形式显示的数字转换为数值，并在排序或求和前删除重复页眉。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "在浏览器标签页中将 PDF 文本转成 Excel 工作簿。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "PDF 转 Excel 的结果取决于原文件"
+        },
+        {
+          "t": "table",
+          "head": [
+            "PDF 内容",
+            "可能结果",
+            "后续操作"
+          ],
+          "rows": [
+            [
+              "间距明显的文本列",
+              "可用的单元格和行",
+              "检查标题与总计。"
+            ],
+            [
+              "带有绘制边框的表格",
+              "根据文本间距生成行",
+              "整理狭窄或合并的列。"
+            ],
+            [
+              "扫描页面图像",
+              "几乎没有可转换文本",
+              "先在副本上运行 OCR。"
+            ],
+            [
+              "复杂表单或图表",
+              "只能提取部分文本",
+              "与 PDF 对照人工复核。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF 表格不是真正的电子表格表格"
+        },
+        {
+          "t": "p",
+          "x": "PDF 把文本放在固定位置。绘制的线条不会告诉转换器哪些词属于同一个单元格，合并标题在电子表格中也没有统一含义。PrintxPDF 根据较大的间距或制表符拆分文本。这种方式透明，适用于清晰的对账单或报告，但狭窄列、换行文本和不规则布局需要人工检查。"
+        },
+        {
+          "t": "h2",
+          "x": "做决定前核对数字"
+        },
+        {
+          "t": "p",
+          "x": "工作簿只是起点，并非已核实的会计结果。Excel 可能把数值当作文本；日期可能需要本地格式；源布局特殊时，负号或小数点也可能错位。请将总计、账号、日期和高金额行与原 PDF 对照。对于财务、税务、医疗或法律决定，请保留源文件并遵循所需的审核流程。"
+        },
+        {
+          "t": "h2",
+          "x": "浏览器本地转换的好处"
+        },
+        {
+          "t": "p",
+          "x": "对账单、发票和工资报告通常含有个人或财务信息。PDF 转 Excel 会在浏览器中读取 PDF 并创建 XLSX，避免日常把文件上传到第三方转换服务器。文件的保存和分享位置由你决定。通过邮件发送或存入共享文件夹前，请检查文件名和工作表内容。"
+        },
+        {
+          "t": "h2",
+          "x": "必要时先准备 PDF"
+        },
+        {
+          "t": "p",
+          "x": "只需要几页时，可先使用[提取页面](/tools/extract-pages)。扫描文档先运行 OCR 并核对识别结果。如果源文件含敏感属性，[移除元数据](/tools/remove-metadata)可制作更适合分享的副本，但不能替代访问控制或对可见内容的检查。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以免费将 PDF 表格转换为 Excel 吗？",
+          "a": "可以。转换器为每个 PDF 页面创建一个工作表，并根据较大的间距将文本拆分为单元格。请检查工作簿，因为绘制边框不等于结构化数据。"
+        },
+        {
+          "q": "为什么转换后的 Excel 数值显示为文本？",
+          "a": "PDF 文本不包含可靠的电子表格数据类型。使用“转换为数字”或“分列”，然后检查总计和日期格式。"
+        },
+        {
+          "q": "可以将扫描 PDF 转换为 Excel 吗？",
+          "a": "先在副本上运行 OCR。OCR 会创建可选中文本，但识别可能出错，复杂表格仍需复核。"
+        },
+        {
+          "q": "PDF 转 Excel 是否私密？",
+          "a": "标准转换会在浏览器标签页中处理文本并创建工作簿，因此文件不会例行上传。"
+        }
+      ]
+    }
+  }
+}
