@@ -5847,6 +5847,157 @@
           "document-retention-handoff-checklist",
           "archive-copy-vs-backup"
         ]
+      },
+      {
+        "topic": "metadata-for-pdf-records",
+        "slug": "metadata-for-pdf-records",
+        "cluster": "archive-expansion",
+        "title": "Metadatos PDF para gestionar registros",
+        "metaTitle": "Metadatos PDF para gestionar registros",
+        "metaDescription": "Define metadatos PDF coherentes y elimina propiedades innecesarias antes de compartir. Gratis, privado en el navegador y sin registro.",
+        "primaryKeyword": "metadatos PDF para gestión documental",
+        "secondaryKeywords": [
+          "PDF metadata records management",
+          "PDF properties for archives",
+          "edit and remove PDF metadata"
+        ],
+        "answer": "Para gestionar registros PDF, usa campos descriptivos coherentes como título, autor, asunto y palabras clave, con vocabulario controlado y sin datos personales innecesarios. Revisa los metadatos antes de archivar o compartir. PrintxPDF Edit Metadata cambia los campos estándar; Remove Metadata limpia las propiedades estándar y el flujo XMP del documento. Ninguna herramienta elimina los metadatos incrustados en fotos o los comentarios y adjuntos del PDF.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Los metadatos ayudan a identificar, ordenar y recuperar registros PDF, pero también pueden exponer nombres o datos antiguos. Define qué campos usa tu equipo, quién los mantiene y qué valores están permitidos. Revisa cada copia antes de archivarla o compartirla. PrintxPDF procesa Edit Metadata y Remove Metadata en el navegador; editar cambia propiedades descriptivas estándar y eliminar limpia propiedades del documento, pero no metadatos de imágenes ni todo el contenido oculto."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo administrar metadatos de registros PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Define campos y vocabulario",
+                "x": "Establece reglas para título, autor, asunto, palabras clave, fechas e identificadores según tu política."
+              },
+              {
+                "h": "Revisa el archivo fuente",
+                "x": "Comprueba las propiedades existentes y conserva el original sin cambios."
+              },
+              {
+                "h": "Edita solo lo necesario",
+                "x": "Usa [Editar metadatos](/tools/edit-metadata) para título, autor, asunto y palabras clave; no pongas datos sensibles."
+              },
+              {
+                "h": "Limpia propiedades de una copia",
+                "x": "Usa [Eliminar metadatos](/tools/remove-metadata) cuando no necesites propiedades estándar ni el XMP del documento."
+              },
+              {
+                "h": "Valida el registro y el contenido",
+                "x": "Abre la copia con [Lector PDF](/tools/pdf-reader), revisa propiedades y conserva la relación con el original."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Revisa o limpia metadatos en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Campos de metadatos y su uso"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Campo",
+              "Uso posible",
+              "Control recomendado"
+            ],
+            "rows": [
+              [
+                "Título",
+                "Identificar el registro en lectores y búsquedas.",
+                "Usa un título preciso y estable."
+              ],
+              [
+                "Autor",
+                "Atribuir la creación o responsabilidad.",
+                "Usa un rol o nombre aprobado; evita la cuenta personal si no hace falta."
+              ],
+              [
+                "Asunto y palabras clave",
+                "Describir tema y facilitar recuperación.",
+                "Aplica términos controlados y evita datos confidenciales."
+              ],
+              [
+                "Fechas y productor",
+                "Aportar contexto técnico o cronológico.",
+                "No las uses como única prueba de integridad o procedencia."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Usa metadatos para describir, no para probar autenticidad"
+          },
+          {
+            "t": "p",
+            "x": "Título, autor, asunto y palabras clave pueden mejorar la clasificación y búsqueda en lectores y sistemas documentales. Mantén nombres de campo y vocabulario consistentes para que dos equipos no describan lo mismo de maneras incompatibles. Los metadatos se pueden cambiar y no demuestran quién firmó, cuándo se aprobó ni que el archivo no haya sido alterado. Usa firmas, registros de auditoría o controles de integridad adecuados para esas afirmaciones."
+          },
+          {
+            "t": "h2",
+            "x": "No incluyas más información personal de la necesaria"
+          },
+          {
+            "t": "p",
+            "x": "Los campos de autor, creador y fechas pueden conservar nombres de usuario, programas o valores heredados de una plantilla. Revisa la política de privacidad y archivo antes de publicar un PDF. Evita números de cuenta, identificadores médicos y datos de clientes en palabras clave o títulos. Si la copia de distribución no debe revelar propiedades estándar, elimina esos campos de la copia; conserva los metadatos de gestión en el sistema autorizado cuando se necesiten para el registro."
+          },
+          {
+            "t": "h2",
+            "x": "Entiende qué hacen las herramientas de metadatos"
+          },
+          {
+            "t": "p",
+            "x": "[Editar metadatos](/tools/edit-metadata) lee y cambia los campos estándar de título, autor, asunto y palabras clave. En archivos con un bloque XMP más detallado, el editor puede dejar los valores XMP anteriores. [Eliminar metadatos](/tools/remove-metadata) limpia las propiedades estándar y el flujo XMP del documento, pero no inspecciona metadatos incrustados dentro de fotos. Tampoco elimina comentarios, adjuntos, marcadores, texto oculto o campos de formulario; esos elementos requieren una revisión separada."
+          },
+          {
+            "t": "h2",
+            "x": "Conserva el contexto y valida cada copia"
+          },
+          {
+            "t": "p",
+            "x": "Guarda el original, la copia modificada, quién hizo el cambio y por qué, según las reglas de tu archivo. Revisa las propiedades con un lector de PDF de escritorio si se requiere comprobar un archivo XMP complejo. Si la procedencia importa, usa controles autorizados de firma o checksum en lugar de confiar en los metadatos. Para un formato de conservación, consulta si el perfil PDF/A es requerido y valida la copia resultante por separado."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué metadatos conviene añadir a un PDF de archivo?",
+            "a": "Usa los campos exigidos por la política, normalmente título, autor o responsable, asunto, palabras clave e identificadores aprobados. Mantén vocabulario uniforme y evita datos personales innecesarios."
+          },
+          {
+            "q": "¿Editar el autor o el título cambia el contenido del PDF?",
+            "a": "La herramienta Edit Metadata cambia propiedades descriptivas estándar y guarda una copia; el texto de página, imágenes, enlaces y campos no se editan con ese cambio."
+          },
+          {
+            "q": "¿Eliminar metadatos borra todo lo oculto del PDF?",
+            "a": "No. Remove Metadata limpia propiedades estándar y el XMP del documento, pero no metadatos dentro de fotos, comentarios, adjuntos, marcadores o texto oculto."
+          },
+          {
+            "q": "¿Los metadatos prueban quién creó o aprobó el documento?",
+            "a": "No. Son editables y pueden heredarse de plantillas. Para verificar aprobación o integridad, utiliza firmas, registros de auditoría o controles documentados apropiados."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader",
+          "pdf-to-pdfa"
+        ],
+        "relatedPosts": [
+          "searchable-pdf-archive-folders",
+          "document-retention-handoff-checklist",
+          "pdf-archive-naming-convention",
+          "preserving-signed-pdfs"
+        ]
       }
     ]
   },
@@ -11688,6 +11839,157 @@
           "document-retention-handoff-checklist",
           "archive-copy-vs-backup"
         ]
+      },
+      {
+        "topic": "metadata-for-pdf-records",
+        "slug": "metadata-for-pdf-records",
+        "cluster": "archive-expansion",
+        "title": "Metadados de PDF para gestão de registros",
+        "metaTitle": "Metadados de PDF para gestão de registros",
+        "metaDescription": "Defina metadados PDF consistentes e remova propriedades desnecessárias antes de compartilhar. Grátis, privado no navegador e sem cadastro.",
+        "primaryKeyword": "metadados PDF para gestão de registros",
+        "secondaryKeywords": [
+          "PDF metadata records management",
+          "PDF properties for archives",
+          "edit and remove PDF metadata"
+        ],
+        "answer": "Para gerir registros PDF, use campos descritivos consistentes como título, autor, assunto e palavras-chave, com vocabulário controlado e sem dados pessoais desnecessários. Revise os metadados antes de arquivar ou compartilhar. Edit Metadata do PrintxPDF altera os campos padrão; Remove Metadata limpa as propriedades padrão e o fluxo XMP do documento. Nenhuma das ferramentas apaga metadados embutidos em fotos, comentários ou anexos do PDF.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Os metadados ajudam a identificar, organizar e localizar registros PDF, mas também podem expor nomes ou informações antigas. Defina quais campos a equipe usa, quem os mantém e quais valores são permitidos. Revise cada cópia antes de arquivar ou compartilhar. Edit Metadata e Remove Metadata do PrintxPDF são processados no navegador; editar altera propriedades descritivas padrão e remover limpa propriedades do documento, mas não metadados de imagens ou todo conteúdo oculto."
+          },
+          {
+            "t": "h2",
+            "x": "Como gerenciar metadados de registros PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Defina campos e vocabulário",
+                "x": "Estabeleça regras para título, autor, assunto, palavras-chave, datas e identificadores conforme a política."
+              },
+              {
+                "h": "Revise o arquivo de origem",
+                "x": "Confira as propriedades existentes e preserve o original sem alterações."
+              },
+              {
+                "h": "Edite somente o necessário",
+                "x": "Use [Editar metadados](/tools/edit-metadata) para título, autor, assunto e palavras-chave; não inclua dados sensíveis."
+              },
+              {
+                "h": "Limpe propriedades de uma cópia",
+                "x": "Use [Remover metadados](/tools/remove-metadata) quando não precisar das propriedades padrão nem do XMP do documento."
+              },
+              {
+                "h": "Valide o registro e o conteúdo",
+                "x": "Abra a cópia no [Leitor de PDF](/tools/pdf-reader), confira as propriedades e preserve a relação com o original."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Confira ou limpe metadados na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Campos de metadados e seus usos"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Campo",
+              "Uso possível",
+              "Controle recomendado"
+            ],
+            "rows": [
+              [
+                "Título",
+                "Identificar o registro em leitores e buscas.",
+                "Use um título preciso e estável."
+              ],
+              [
+                "Autor",
+                "Atribuir criação ou responsabilidade.",
+                "Use função ou nome aprovado; evite conta pessoal se não necessário."
+              ],
+              [
+                "Assunto e palavras-chave",
+                "Descrever tema e facilitar localização.",
+                "Use termos controlados e não inclua dados confidenciais."
+              ],
+              [
+                "Datas e produtor",
+                "Dar contexto técnico ou cronológico.",
+                "Não use como prova única de integridade ou origem."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Use metadados para descrever, não para provar autenticidade"
+          },
+          {
+            "t": "p",
+            "x": "Título, autor, assunto e palavras-chave podem melhorar classificação e busca em leitores e sistemas documentais. Mantenha nomes de campos e vocabulário consistentes para que equipes diferentes descrevam o mesmo registro de forma compatível. Metadados podem ser alterados e não provam quem assinou, quando foi aprovado ou se o arquivo não foi modificado. Use assinaturas, logs de auditoria ou controles de integridade adequados para essas afirmações."
+          },
+          {
+            "t": "h2",
+            "x": "Não inclua mais dados pessoais do que o necessário"
+          },
+          {
+            "t": "p",
+            "x": "Os campos de autor, criador e datas podem manter nomes de usuário, programas ou valores antigos de modelos. Confira a política de privacidade e arquivo antes de publicar um PDF. Evite números de conta, identificadores médicos e dados de clientes em palavras-chave ou títulos. Se a cópia de distribuição não deve expor propriedades padrão, remova esses campos da cópia; preserve metadados de gestão no sistema autorizado quando forem necessários ao registro."
+          },
+          {
+            "t": "h2",
+            "x": "Entenda o que as ferramentas de metadados fazem"
+          },
+          {
+            "t": "p",
+            "x": "[Editar metadados](/tools/edit-metadata) lê e altera os campos padrão de título, autor, assunto e palavras-chave. Em arquivos com um bloco XMP mais detalhado, o editor pode deixar os valores XMP anteriores. [Remover metadados](/tools/remove-metadata) limpa as propriedades padrão e o fluxo XMP do documento, mas não inspeciona metadados embutidos em fotos. Também não apaga comentários, anexos, marcadores, texto oculto ou campos de formulário; esses itens exigem revisão separada."
+          },
+          {
+            "t": "h2",
+            "x": "Preserve o contexto e valide cada cópia"
+          },
+          {
+            "t": "p",
+            "x": "Guarde o original, a cópia alterada, quem fez a mudança e o motivo conforme as regras do arquivo. Se for necessário conferir um arquivo XMP complexo, revise as propriedades em um leitor PDF de desktop. Se a origem for importante, use controles aprovados de assinatura ou checksum em vez de confiar nos metadados. Para preservação, confirme se PDF/A é exigido e valide a cópia resultante separadamente."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Quais metadados incluir em um PDF de arquivo?",
+            "a": "Use os campos exigidos pela política, geralmente título, autor ou responsável, assunto, palavras-chave e identificadores aprovados. Padronize o vocabulário e evite dados pessoais desnecessários."
+          },
+          {
+            "q": "Editar autor ou título muda o conteúdo do PDF?",
+            "a": "Edit Metadata altera propriedades descritivas padrão e salva uma cópia; o texto da página, imagens, links e campos não são editados por essa mudança."
+          },
+          {
+            "q": "Remover metadados apaga tudo que está oculto no PDF?",
+            "a": "Não. Remove Metadata limpa propriedades padrão e o XMP do documento, mas não metadados em fotos, comentários, anexos, marcadores ou texto oculto."
+          },
+          {
+            "q": "Os metadados provam quem criou ou aprovou o documento?",
+            "a": "Não. Eles podem ser alterados ou herdados de modelos. Para verificar aprovação ou integridade, use assinaturas, logs de auditoria ou controles documentados apropriados."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader",
+          "pdf-to-pdfa"
+        ],
+        "relatedPosts": [
+          "searchable-pdf-archive-folders",
+          "document-retention-handoff-checklist",
+          "pdf-archive-naming-convention",
+          "preserving-signed-pdfs"
+        ]
       }
     ]
   },
@@ -17528,6 +17830,157 @@
           "pdf-archive-naming-convention",
           "document-retention-handoff-checklist",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "metadata-for-pdf-records",
+        "slug": "metadata-for-pdf-records",
+        "cluster": "archive-expansion",
+        "title": "रिकॉर्ड प्रबंधन के लिए PDF मेटाडेटा",
+        "metaTitle": "रिकॉर्ड प्रबंधन के लिए PDF मेटाडेटा",
+        "metaDescription": "एकसमान PDF मेटाडेटा तय करें और साझा करने से पहले अनावश्यक गुण हटाएँ। मुफ़्त, निजी ब्राउज़र में, बिना साइनअप।",
+        "primaryKeyword": "रिकॉर्ड प्रबंधन PDF मेटाडेटा",
+        "secondaryKeywords": [
+          "PDF metadata records management",
+          "PDF properties for archives",
+          "edit and remove PDF metadata"
+        ],
+        "answer": "PDF रिकॉर्ड प्रबंधन के लिए शीर्षक, लेखक, विषय और कीवर्ड जैसे एकसमान वर्णनात्मक फ़ील्ड रखें, नियंत्रित शब्दावली अपनाएँ और अनावश्यक निजी जानकारी न जोड़ें। आर्काइव या साझा करने से पहले मेटाडेटा जाँचें। PrintxPDF Edit Metadata मानक फ़ील्ड बदलता है; Remove Metadata मानक गुण और दस्तावेज़ का XMP हटाता है। दोनों फ़ोटो के अंदर का मेटाडेटा, टिप्पणियाँ या PDF अटैचमेंट नहीं हटाते।",
+        "body": [
+          {
+            "t": "p",
+            "x": "मेटाडेटा PDF रिकॉर्ड पहचानने, व्यवस्थित करने और खोजने में मदद करता है, लेकिन पुराने नाम या निजी जानकारी भी उजागर कर सकता है। तय करें कि टीम कौन से फ़ील्ड उपयोग करेगी, उन्हें कौन बनाए रखेगा और कौन से मान स्वीकार्य हैं। आर्काइव या साझा करने से पहले हर कॉपी जाँचें। PrintxPDF के Edit Metadata और Remove Metadata ब्राउज़र में चलते हैं; संपादन मानक वर्णनात्मक गुण बदलता है और हटाना दस्तावेज़-स्तर के गुण साफ़ करता है, लेकिन छवियों का मेटाडेटा या हर छिपी सामग्री नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF रिकॉर्ड मेटाडेटा कैसे प्रबंधित करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "फ़ील्ड और शब्दावली तय करें",
+                "x": "नीति के अनुसार शीर्षक, लेखक, विषय, कीवर्ड, तारीख और पहचान के नियम बनाएँ।"
+              },
+              {
+                "h": "स्रोत फ़ाइल देखें",
+                "x": "मौजूदा गुण जाँचें और मूल को बिना बदलाव सुरक्षित रखें।"
+              },
+              {
+                "h": "केवल जरूरी बदलाव करें",
+                "x": "शीर्षक, लेखक, विषय व कीवर्ड के लिए [Edit Metadata](/tools/edit-metadata) उपयोग करें; संवेदनशील जानकारी न डालें।"
+              },
+              {
+                "h": "कॉपी से गुण साफ़ करें",
+                "x": "जब मानक गुण या दस्तावेज़ XMP की जरूरत न हो, [Remove Metadata](/tools/remove-metadata) लें।"
+              },
+              {
+                "h": "रिकॉर्ड और सामग्री सत्यापित करें",
+                "x": "कॉपी [PDF Reader](/tools/pdf-reader) में खोलें, गुण जाँचें और मूल से उसका संबंध दर्ज रखें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "अपने टैब में मेटाडेटा जाँचें या साफ़ करें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "मेटाडेटा फ़ील्ड और उनका उपयोग"
+          },
+          {
+            "t": "table",
+            "head": [
+              "फ़ील्ड",
+              "संभावित उपयोग",
+              "अनुशंसित नियंत्रण"
+            ],
+            "rows": [
+              [
+                "शीर्षक",
+                "रीडर और खोज में रिकॉर्ड पहचानना।",
+                "सटीक और स्थिर शीर्षक रखें।"
+              ],
+              [
+                "लेखक",
+                "निर्माण या जिम्मेदारी बताना।",
+                "स्वीकृत भूमिका या नाम रखें; जरूरत न हो तो निजी खाता न दिखाएँ।"
+              ],
+              [
+                "विषय और कीवर्ड",
+                "विषय बताना और खोज आसान करना।",
+                "नियंत्रित शब्द रखें और गोपनीय जानकारी न डालें।"
+              ],
+              [
+                "तारीख और निर्माता",
+                "तकनीकी या कालक्रम संदर्भ देना।",
+                "इन्हें अखंडता या स्रोत का अकेला प्रमाण न मानें।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "मेटाडेटा से वर्णन करें, प्रामाणिकता साबित नहीं"
+          },
+          {
+            "t": "p",
+            "x": "शीर्षक, लेखक, विषय और कीवर्ड रीडर या दस्तावेज़ प्रणालियों में वर्गीकरण और खोज सुधार सकते हैं। फ़ील्ड नाम और शब्दावली एकसमान रखें ताकि अलग टीमें रिकॉर्ड को संगत तरीके से बताएँ। मेटाडेटा बदला जा सकता है; यह नहीं साबित करता कि किसने हस्ताक्षर किए, कब मंजूरी मिली या फ़ाइल बदली नहीं। इन बातों के लिए हस्ताक्षर, ऑडिट लॉग या उचित अखंडता नियंत्रण लें।"
+          },
+          {
+            "t": "h2",
+            "x": "जरूरत से ज्यादा निजी जानकारी न रखें"
+          },
+          {
+            "t": "p",
+            "x": "लेखक, निर्माता और तारीख फ़ील्ड में उपयोगकर्ता नाम, सॉफ़्टवेयर या पुराने टेम्पलेट के मान रह सकते हैं। PDF प्रकाशित करने से पहले गोपनीयता और आर्काइव नीति देखें। कीवर्ड या शीर्षक में खाता नंबर, मेडिकल ID या ग्राहक विवरण न डालें। वितरण कॉपी में मानक गुण उजागर नहीं होने चाहिए तो उन्हें कॉपी से हटाएँ; रिकॉर्ड हेतु जरूरी प्रबंधन मेटाडेटा अधिकृत प्रणाली में रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "समझें मेटाडेटा टूल क्या करते हैं"
+          },
+          {
+            "t": "p",
+            "x": "[Edit Metadata](/tools/edit-metadata) शीर्षक, लेखक, विषय और कीवर्ड जैसे मानक फ़ील्ड पढ़ता और बदलता है। अधिक विस्तृत XMP ब्लॉक वाली फ़ाइलों में पुराने XMP मान रह सकते हैं। [Remove Metadata](/tools/remove-metadata) मानक गुण और दस्तावेज़-स्तर का XMP हटाता है, लेकिन फ़ोटो में एम्बेडेड मेटाडेटा नहीं जाँचता। यह टिप्पणियाँ, अटैचमेंट, बुकमार्क, छिपा टेक्स्ट या फ़ॉर्म फ़ील्ड भी नहीं हटाता; इनके लिए अलग समीक्षा चाहिए।"
+          },
+          {
+            "t": "h2",
+            "x": "संदर्भ सुरक्षित रखें और हर कॉपी जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "आर्काइव नियमों के अनुसार मूल, बदली कॉपी, बदलाव करने वाला और कारण सुरक्षित रखें। जटिल XMP जाँचने के लिए डेस्कटॉप PDF रीडर में गुण देखें। स्रोत महत्वपूर्ण हो तो मेटाडेटा पर भरोसा करने के बजाय स्वीकृत हस्ताक्षर या चेकसम नियंत्रण अपनाएँ। संरक्षण हेतु PDF/A चाहिए या नहीं पुष्टि करें और बनी कॉपी को अलग से वैलिडेट करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "आर्काइव PDF में कौन सा मेटाडेटा रखें?",
+            "a": "नीति के जरूरी फ़ील्ड रखें, आम तौर पर शीर्षक, लेखक या जिम्मेदार भूमिका, विषय, कीवर्ड और स्वीकृत पहचान। शब्दावली समान रखें और अनावश्यक निजी जानकारी हटाएँ।"
+          },
+          {
+            "q": "लेखक या शीर्षक बदलने से PDF सामग्री बदलती है?",
+            "a": "Edit Metadata मानक वर्णनात्मक गुण बदलकर कॉपी बनाता है; इस बदलाव से पेज टेक्स्ट, चित्र, लिंक या फ़ील्ड संपादित नहीं होते।"
+          },
+          {
+            "q": "क्या मेटाडेटा हटाने से PDF की सारी छिपी चीज़ें हटती हैं?",
+            "a": "नहीं। Remove Metadata मानक गुण और दस्तावेज़ XMP हटाता है, फ़ोटो मेटाडेटा, टिप्पणियाँ, अटैचमेंट, बुकमार्क या छिपा टेक्स्ट नहीं।"
+          },
+          {
+            "q": "क्या मेटाडेटा बताता है कि दस्तावेज़ किसने बनाया या मंजूर किया?",
+            "a": "नहीं। इसे बदला जा सकता है या टेम्पलेट से विरासत में मिल सकता है। मंजूरी या अखंडता जाँचने के लिए हस्ताक्षर, ऑडिट लॉग या उचित दर्ज नियंत्रण उपयोग करें।"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader",
+          "pdf-to-pdfa"
+        ],
+        "relatedPosts": [
+          "searchable-pdf-archive-folders",
+          "document-retention-handoff-checklist",
+          "pdf-archive-naming-convention",
+          "preserving-signed-pdfs"
         ]
       }
     ]
@@ -23378,6 +23831,157 @@
           "pdf-archive-naming-convention",
           "document-retention-handoff-checklist",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "metadata-for-pdf-records",
+        "slug": "metadata-for-pdf-records",
+        "cluster": "archive-expansion",
+        "title": "بيانات PDF الوصفية لإدارة السجلات",
+        "metaTitle": "بيانات PDF الوصفية لإدارة السجلات",
+        "metaDescription": "حدد بيانات وصفية موحدة لملفات PDF وأزل الخصائص غير اللازمة قبل المشاركة. مجاناً، خاصة في المتصفح، بلا تسجيل.",
+        "primaryKeyword": "بيانات PDF الوصفية لإدارة السجلات",
+        "secondaryKeywords": [
+          "PDF metadata records management",
+          "PDF properties for archives",
+          "edit and remove PDF metadata"
+        ],
+        "answer": "لإدارة سجلات PDF، استخدم حقولاً وصفية متسقة مثل العنوان والمؤلف والموضوع والكلمات المفتاحية، مع مفردات مضبوطة ودون بيانات شخصية غير لازمة. راجع البيانات قبل الأرشفة أو المشاركة. تعدل أداة Edit Metadata الخصائص القياسية؛ وتمسح Remove Metadata الخصائص القياسية وبيانات XMP على مستوى المستند. ولا تزيل الأداتان البيانات المضمنة داخل الصور أو التعليقات والمرفقات.",
+        "body": [
+          {
+            "t": "p",
+            "x": "تساعد البيانات الوصفية على تحديد سجلات PDF وتنظيمها واسترجاعها، لكنها قد تكشف أسماء أو معلومات قديمة. حدد الحقول التي يستخدمها الفريق ومن يحدثها والقيم المسموح بها. راجع كل نسخة قبل أرشفتها أو مشاركتها. تعالج أدوات PrintxPDF البيانات في المتصفح؛ يغير Edit Metadata الخصائص الوصفية القياسية، بينما يمسح Remove Metadata خصائص المستند، لكنه لا يزيل بيانات الصور أو كل المحتوى المخفي."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية إدارة بيانات سجلات PDF الوصفية"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "حدد الحقول والمفردات",
+                "x": "ضع قواعد العنوان والمؤلف والموضوع والكلمات المفتاحية والتواريخ والمعرفات وفق السياسة."
+              },
+              {
+                "h": "راجع الملف المصدر",
+                "x": "تحقق من الخصائص الموجودة واحتفظ بالأصل دون تغيير."
+              },
+              {
+                "h": "عدّل الضروري فقط",
+                "x": "استخدم [تحرير البيانات الوصفية](/tools/edit-metadata) للعناوين والمؤلف والموضوع والكلمات المفتاحية؛ ولا تضف بيانات حساسة."
+              },
+              {
+                "h": "نظف خصائص نسخة",
+                "x": "استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) عندما لا تحتاج الخصائص القياسية أو XMP للمستند."
+              },
+              {
+                "h": "تحقق من السجل والمحتوى",
+                "x": "افتح النسخة في [قارئ PDF](/tools/pdf-reader) وراجع الخصائص وسجل صلتها بالأصل."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "راجع البيانات الوصفية أو نظفها في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "حقول البيانات الوصفية واستخدامها"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الحقل",
+              "الاستخدام المحتمل",
+              "الضابط المقترح"
+            ],
+            "rows": [
+              [
+                "العنوان",
+                "تحديد السجل في القارئات وعمليات البحث.",
+                "استخدم عنواناً دقيقاً وثابتاً."
+              ],
+              [
+                "المؤلف",
+                "نسبة الإنشاء أو المسؤولية.",
+                "استخدم دوراً أو اسماً معتمداً؛ وتجنب الحساب الشخصي إن لم يلزم."
+              ],
+              [
+                "الموضوع والكلمات المفتاحية",
+                "وصف الموضوع وتسهيل الاسترجاع.",
+                "استخدم مصطلحات مضبوطة ولا تضع بيانات سرية."
+              ],
+              [
+                "التواريخ والمنتج",
+                "توفير سياق تقني أو زمني.",
+                "لا تستخدمها وحدها دليلاً على السلامة أو المصدر."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "استخدم البيانات للوصف لا لإثبات الأصالة"
+          },
+          {
+            "t": "p",
+            "x": "قد تحسن العناوين والمؤلف والموضوع والكلمات المفتاحية التصنيف والبحث في القارئات وأنظمة المستندات. حافظ على اتساق أسماء الحقول والمفردات كي تصف الفرق السجل بالطريقة نفسها. يمكن تعديل البيانات الوصفية ولا تثبت من وقع أو متى تمت الموافقة أو أن الملف لم يتغير. استخدم التوقيعات أو سجلات التدقيق أو ضوابط السلامة المناسبة لهذه الادعاءات."
+          },
+          {
+            "t": "h2",
+            "x": "لا تضف معلومات شخصية أكثر من اللازم"
+          },
+          {
+            "t": "p",
+            "x": "قد تتضمن حقول المؤلف والمنشئ والتواريخ أسماء مستخدمين أو برامج أو قيماً موروثة من قالب. راجع سياسة الخصوصية والأرشفة قبل نشر PDF. تجنب أرقام الحسابات والمعرفات الطبية وبيانات العملاء في الكلمات المفتاحية أو العنوان. إذا لم يكن مطلوباً كشف الخصائص القياسية في نسخة التوزيع، فامسحها من النسخة مع الاحتفاظ ببيانات الإدارة في النظام المعتمد عندما تلزم للسجل."
+          },
+          {
+            "t": "h2",
+            "x": "افهم ما تفعله أدوات البيانات الوصفية"
+          },
+          {
+            "t": "p",
+            "x": "تقرأ [تحرير البيانات الوصفية](/tools/edit-metadata) وتغير حقول العنوان والمؤلف والموضوع والكلمات المفتاحية القياسية. قد تترك القيم القديمة في كتلة XMP أكثر تفصيلاً. تمسح [إزالة البيانات الوصفية](/tools/remove-metadata) الخصائص القياسية وتدفق XMP على مستوى المستند، لكنها لا تفحص البيانات المضمنة في الصور. ولا تحذف التعليقات أو المرفقات أو العلامات المرجعية أو النص المخفي أو حقول النماذج؛ تحتاج هذه العناصر إلى مراجعة منفصلة."
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بالسياق وتحقق من كل نسخة"
+          },
+          {
+            "t": "p",
+            "x": "احفظ الأصل والنسخة المعدلة ومن أجرى التغيير وسببه وفق قواعد الأرشيف. افحص الخصائص بقارئ PDF للحاسوب إذا لزم التحقق من XMP المعقد. إذا كان المصدر مهماً، فاستخدم توقيعات أو بصمات موثوقة بدلاً من الاعتماد على البيانات الوصفية. تحقق مما إذا كان PDF/A مطلوباً للحفظ وافحص النسخة الناتجة بشكل مستقل."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ما البيانات الوصفية التي أضيفها إلى PDF أرشيفي؟",
+            "a": "استخدم الحقول المطلوبة في السياسة، غالباً العنوان والمؤلف أو المسؤول والموضوع والكلمات المفتاحية والمعرفات المعتمدة. وحّد المصطلحات وتجنب البيانات الشخصية غير الضرورية."
+          },
+          {
+            "q": "هل تغيير المؤلف أو العنوان يغير محتوى PDF؟",
+            "a": "تغير أداة Edit Metadata الخصائص الوصفية القياسية وتحفظ نسخة؛ ولا تعدل نص الصفحة أو الصور أو الروابط أو الحقول بهذا التغيير."
+          },
+          {
+            "q": "هل تزيل أداة إزالة البيانات الوصفية كل شيء مخفي؟",
+            "a": "لا. تمسح الخصائص القياسية وXMP للمستند، لكنها لا تزيل بيانات الصور أو التعليقات أو المرفقات أو العلامات المرجعية أو النص المخفي."
+          },
+          {
+            "q": "هل تثبت البيانات الوصفية من أنشأ المستند أو وافق عليه؟",
+            "a": "لا. يمكن تعديلها أو وراثتها من قالب. تحقق من الموافقة أو السلامة عبر توقيعات أو سجلات تدقيق أو ضوابط موثقة مناسبة."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader",
+          "pdf-to-pdfa"
+        ],
+        "relatedPosts": [
+          "searchable-pdf-archive-folders",
+          "document-retention-handoff-checklist",
+          "pdf-archive-naming-convention",
+          "preserving-signed-pdfs"
         ]
       }
     ]
@@ -29232,6 +29836,157 @@
           "document-retention-handoff-checklist",
           "archive-copy-vs-backup"
         ]
+      },
+      {
+        "topic": "metadata-for-pdf-records",
+        "slug": "metadata-for-pdf-records",
+        "cluster": "archive-expansion",
+        "title": "রেকর্ড ব্যবস্থাপনায় PDF মেটাডেটা",
+        "metaTitle": "রেকর্ড ব্যবস্থাপনায় PDF মেটাডেটা",
+        "metaDescription": "একই নিয়মে PDF মেটাডেটা রাখুন এবং শেয়ারের আগে অপ্রয়োজনীয় বৈশিষ্ট্য মুছুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত, সাইনআপ নেই।",
+        "primaryKeyword": "রেকর্ড ব্যবস্থাপনায় PDF মেটাডেটা",
+        "secondaryKeywords": [
+          "PDF metadata records management",
+          "PDF properties for archives",
+          "edit and remove PDF metadata"
+        ],
+        "answer": "PDF রেকর্ড পরিচালনায় শিরোনাম, লেখক, বিষয় ও কীওয়ার্ডের মতো একরকম বর্ণনামূলক ক্ষেত্র ব্যবহার করুন, নিয়ন্ত্রিত শব্দভাণ্ডার রাখুন এবং অপ্রয়োজনীয় ব্যক্তিগত তথ্য দেবেন না। আর্কাইভ বা শেয়ারের আগে মেটাডেটা দেখুন। PrintxPDF Edit Metadata সাধারণ ক্ষেত্র বদলায়; Remove Metadata সাধারণ বৈশিষ্ট্য ও নথি-স্তরের XMP পরিষ্কার করে। কোনোটিই ছবির ভেতরের মেটাডেটা, মন্তব্য বা PDF সংযুক্তি মুছে না।",
+        "body": [
+          {
+            "t": "p",
+            "x": "মেটাডেটা PDF রেকর্ড শনাক্ত, সাজানো ও খুঁজে পেতে সাহায্য করে, কিন্তু পুরোনো নাম বা ব্যক্তিগত তথ্যও প্রকাশ করতে পারে। দল কোন ক্ষেত্র ব্যবহার করবে, কে তা দেখবে এবং কোন মান গ্রহণযোগ্য তা ঠিক করুন। আর্কাইভ বা শেয়ারের আগে প্রতিটি কপি যাচাই করুন। PrintxPDF-এর Edit Metadata ও Remove Metadata ব্রাউজারে চলে; সম্পাদনা সাধারণ বর্ণনামূলক বৈশিষ্ট্য বদলায়, আর মুছলে নথির বৈশিষ্ট্য পরিষ্কার হয়, কিন্তু ছবির মেটাডেটা বা সব লুকানো বিষয়বস্তু নয়।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF রেকর্ডের মেটাডেটা কীভাবে পরিচালনা করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "ক্ষেত্র ও শব্দভাণ্ডার ঠিক করুন",
+                "x": "নীতিমালা অনুযায়ী শিরোনাম, লেখক, বিষয়, কীওয়ার্ড, তারিখ ও পরিচিতির নিয়ম করুন।"
+              },
+              {
+                "h": "উৎস ফাইল পরীক্ষা করুন",
+                "x": "বর্তমান বৈশিষ্ট্য দেখুন এবং মূল কপি অপরিবর্তিত রাখুন।"
+              },
+              {
+                "h": "শুধু দরকারি সম্পাদনা করুন",
+                "x": "শিরোনাম, লেখক, বিষয় ও কীওয়ার্ডের জন্য [Edit Metadata](/tools/edit-metadata) নিন; সংবেদনশীল তথ্য দেবেন না।"
+              },
+              {
+                "h": "কপি থেকে বৈশিষ্ট্য পরিষ্কার করুন",
+                "x": "সাধারণ বৈশিষ্ট্য বা নথির XMP দরকার না হলে [Remove Metadata](/tools/remove-metadata) ব্যবহার করুন।"
+              },
+              {
+                "h": "রেকর্ড ও বিষয় যাচাই করুন",
+                "x": "[PDF Reader](/tools/pdf-reader) দিয়ে কপি খুলে বৈশিষ্ট্য দেখুন এবং মূলের সঙ্গে সম্পর্ক রাখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "আপনার ট্যাবে মেটাডেটা দেখুন বা পরিষ্কার করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "মেটাডেটা ক্ষেত্র ও ব্যবহার"
+          },
+          {
+            "t": "table",
+            "head": [
+              "ক্ষেত্র",
+              "সম্ভাব্য ব্যবহার",
+              "প্রস্তাবিত নিয়ন্ত্রণ"
+            ],
+            "rows": [
+              [
+                "শিরোনাম",
+                "রিডার ও সার্চে রেকর্ড চেনা।",
+                "সঠিক ও স্থায়ী শিরোনাম দিন।"
+              ],
+              [
+                "লেখক",
+                "তৈরি বা দায়িত্বের পরিচয়।",
+                "অনুমোদিত ভূমিকা বা নাম দিন; দরকার না হলে ব্যক্তিগত অ্যাকাউন্ট এড়ান।"
+              ],
+              [
+                "বিষয় ও কীওয়ার্ড",
+                "বিষয় বোঝানো ও খুঁজে পাওয়া।",
+                "নিয়ন্ত্রিত শব্দ দিন, গোপন তথ্য নয়।"
+              ],
+              [
+                "তারিখ ও নির্মাতা",
+                "প্রযুক্তিগত বা সময়ের প্রেক্ষাপট।",
+                "অখণ্ডতা বা উৎসের একমাত্র প্রমাণ ভাববেন না।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "মেটাডেটা বর্ণনার জন্য, সত্যতা প্রমাণের জন্য নয়"
+          },
+          {
+            "t": "p",
+            "x": "শিরোনাম, লেখক, বিষয় ও কীওয়ার্ড রিডার ও নথি ব্যবস্থায় সাজানো এবং খোঁজা সহজ করে। ক্ষেত্রের নাম ও শব্দভাণ্ডার একরকম রাখুন যাতে দলগুলো একই রেকর্ড একইভাবে বর্ণনা করে। মেটাডেটা বদলানো যায়; কে স্বাক্ষর করেছে, কখন অনুমোদন হয়েছে বা ফাইল বদলায়নি তা এটি প্রমাণ করে না। এসব দাবির জন্য স্বাক্ষর, অডিট লগ বা উপযুক্ত অখণ্ডতা নিয়ন্ত্রণ ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রয়োজনের বেশি ব্যক্তিগত তথ্য রাখবেন না"
+          },
+          {
+            "t": "p",
+            "x": "লেখক, নির্মাতা ও তারিখে ব্যবহারকারীর নাম, সফটওয়্যার বা পুরোনো টেমপ্লেটের মান থাকতে পারে। PDF প্রকাশের আগে গোপনীয়তা ও আর্কাইভ নীতি দেখুন। কীওয়ার্ড বা শিরোনামে হিসাব নম্বর, চিকিৎসা পরিচয় বা গ্রাহকের তথ্য দেবেন না। বিতরণ কপিতে সাধারণ বৈশিষ্ট্য প্রকাশ করা উচিত না হলে কপি থেকে সেগুলো মুছুন; রেকর্ডের জন্য দরকারি ব্যবস্থাপনা মেটাডেটা অনুমোদিত সিস্টেমে রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "মেটাডেটা টুলের কাজ বুঝুন"
+          },
+          {
+            "t": "p",
+            "x": "[Edit Metadata](/tools/edit-metadata) শিরোনাম, লেখক, বিষয় ও কীওয়ার্ডের সাধারণ ক্ষেত্র পড়ে ও বদলায়। বিস্তারিত XMP ব্লক থাকলে পুরোনো XMP মান থেকে যেতে পারে। [Remove Metadata](/tools/remove-metadata) সাধারণ বৈশিষ্ট্য ও নথি-স্তরের XMP মুছে, কিন্তু ছবির ভেতরের মেটাডেটা পরীক্ষা করে না। এটি মন্তব্য, সংযুক্তি, বুকমার্ক, লুকানো লেখা বা ফর্ম ক্ষেত্রও সরায় না; এসব আলাদা করে দেখতে হবে।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রেক্ষাপট রাখুন এবং প্রতিটি কপি যাচাই করুন"
+          },
+          {
+            "t": "p",
+            "x": "আর্কাইভ নিয়ম অনুযায়ী মূল, বদলানো কপি, কে বদলেছে এবং কেন তা রাখুন। জটিল XMP পরীক্ষা দরকার হলে ডেস্কটপ PDF রিডারে বৈশিষ্ট্য দেখুন। উৎস গুরুত্বপূর্ণ হলে মেটাডেটার বদলে অনুমোদিত স্বাক্ষর বা চেকসাম নিয়ন্ত্রণ নিন। সংরক্ষণের জন্য PDF/A দরকার কি না নিশ্চিত করুন এবং তৈরি কপি আলাদাভাবে যাচাই করুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "আর্কাইভ PDF-এ কী মেটাডেটা রাখা উচিত?",
+            "a": "নীতির দরকারি ক্ষেত্র রাখুন, সাধারণত শিরোনাম, লেখক বা দায়িত্বশীল ভূমিকা, বিষয়, কীওয়ার্ড ও অনুমোদিত পরিচিতি। একই শব্দ ব্যবহার করুন এবং অপ্রয়োজনীয় ব্যক্তিগত তথ্য বাদ দিন।"
+          },
+          {
+            "q": "লেখক বা শিরোনাম বদলালে PDF-এর বিষয়বস্তু বদলায়?",
+            "a": "Edit Metadata সাধারণ বর্ণনামূলক বৈশিষ্ট্য বদলে নতুন কপি রাখে; এই পরিবর্তনে পৃষ্ঠার লেখা, ছবি, লিংক বা ফর্ম ক্ষেত্র সম্পাদিত হয় না।"
+          },
+          {
+            "q": "মেটাডেটা সরালে PDF-এর সব লুকানো তথ্য যায়?",
+            "a": "না। Remove Metadata সাধারণ বৈশিষ্ট্য ও নথির XMP সরায়, ছবির মেটাডেটা, মন্তব্য, সংযুক্তি, বুকমার্ক বা লুকানো লেখা নয়।"
+          },
+          {
+            "q": "মেটাডেটা কি বলে কে নথি তৈরি বা অনুমোদন করেছে?",
+            "a": "না। এগুলো বদলানো যায় বা টেমপ্লেট থেকে আসতে পারে। অনুমোদন বা অখণ্ডতা যাচাইয়ে স্বাক্ষর, অডিট লগ বা নথিভুক্ত নিয়ন্ত্রণ ব্যবহার করুন।"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader",
+          "pdf-to-pdfa"
+        ],
+        "relatedPosts": [
+          "searchable-pdf-archive-folders",
+          "document-retention-handoff-checklist",
+          "pdf-archive-naming-convention",
+          "preserving-signed-pdfs"
+        ]
       }
     ]
   },
@@ -35072,6 +35827,157 @@
           "pdf-archive-naming-convention",
           "document-retention-handoff-checklist",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "metadata-for-pdf-records",
+        "slug": "metadata-for-pdf-records",
+        "cluster": "archive-expansion",
+        "title": "Siêu dữ liệu PDF trong quản lý hồ sơ",
+        "metaTitle": "Siêu dữ liệu PDF trong quản lý hồ sơ",
+        "metaDescription": "Chuẩn hóa siêu dữ liệu PDF và xóa thuộc tính không cần trước khi chia sẻ. Miễn phí, riêng tư trong trình duyệt, không đăng ký.",
+        "primaryKeyword": "siêu dữ liệu PDF quản lý hồ sơ",
+        "secondaryKeywords": [
+          "PDF metadata records management",
+          "PDF properties for archives",
+          "edit and remove PDF metadata"
+        ],
+        "answer": "Để quản lý hồ sơ PDF, hãy dùng trường mô tả nhất quán như tiêu đề, tác giả, chủ đề và từ khóa, áp dụng từ vựng có kiểm soát và tránh dữ liệu cá nhân không cần thiết. Kiểm tra siêu dữ liệu trước khi lưu hoặc chia sẻ. Edit Metadata của PrintxPDF sửa các trường chuẩn; Remove Metadata xóa thuộc tính chuẩn và luồng XMP cấp tài liệu. Cả hai không xóa siêu dữ liệu trong ảnh, bình luận hay tệp đính kèm PDF.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Siêu dữ liệu giúp nhận diện, sắp xếp và tìm hồ sơ PDF, nhưng cũng có thể tiết lộ tên hoặc thông tin cũ. Hãy xác định nhóm dùng trường nào, ai duy trì và giá trị nào được phép. Kiểm tra từng bản trước khi lưu trữ hoặc chia sẻ. Edit Metadata và Remove Metadata của PrintxPDF chạy trong trình duyệt; sửa đổi thay đổi thuộc tính mô tả chuẩn, còn xóa làm sạch thuộc tính tài liệu nhưng không xử lý siêu dữ liệu trong ảnh hoặc mọi nội dung ẩn."
+          },
+          {
+            "t": "h2",
+            "x": "Cách quản lý siêu dữ liệu hồ sơ PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Định nghĩa trường và từ vựng",
+                "x": "Đặt quy tắc cho tiêu đề, tác giả, chủ đề, từ khóa, ngày và mã nhận diện theo chính sách."
+              },
+              {
+                "h": "Kiểm tra tệp nguồn",
+                "x": "Xem thuộc tính hiện có và giữ nguyên bản gốc."
+              },
+              {
+                "h": "Chỉ sửa những gì cần thiết",
+                "x": "Dùng [Sửa siêu dữ liệu](/tools/edit-metadata) cho tiêu đề, tác giả, chủ đề và từ khóa; không thêm dữ liệu nhạy cảm."
+              },
+              {
+                "h": "Làm sạch thuộc tính của bản sao",
+                "x": "Dùng [Xóa siêu dữ liệu](/tools/remove-metadata) nếu không cần thuộc tính chuẩn hoặc XMP cấp tài liệu."
+              },
+              {
+                "h": "Xác minh hồ sơ và nội dung",
+                "x": "Mở bản sao bằng [Trình đọc PDF](/tools/pdf-reader), kiểm tra thuộc tính và giữ liên kết với bản gốc."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Kiểm tra hoặc xóa siêu dữ liệu ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Trường siêu dữ liệu và cách dùng"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Trường",
+              "Cách dùng",
+              "Biện pháp kiểm soát"
+            ],
+            "rows": [
+              [
+                "Tiêu đề",
+                "Nhận diện hồ sơ trong trình đọc và tìm kiếm.",
+                "Dùng tiêu đề chính xác, ổn định."
+              ],
+              [
+                "Tác giả",
+                "Ghi nhận người tạo hoặc trách nhiệm.",
+                "Dùng vai trò/tên được duyệt; tránh tài khoản cá nhân nếu không cần."
+              ],
+              [
+                "Chủ đề và từ khóa",
+                "Mô tả nội dung và hỗ trợ tìm kiếm.",
+                "Dùng thuật ngữ thống nhất, không ghi dữ liệu mật."
+              ],
+              [
+                "Ngày và phần mềm tạo",
+                "Bổ sung bối cảnh kỹ thuật hoặc thời gian.",
+                "Không coi đây là bằng chứng duy nhất về toàn vẹn hay nguồn gốc."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Dùng siêu dữ liệu để mô tả, không chứng minh xác thực"
+          },
+          {
+            "t": "p",
+            "x": "Tiêu đề, tác giả, chủ đề và từ khóa giúp phân loại, tìm kiếm trong trình đọc và hệ thống hồ sơ. Giữ tên trường và từ vựng nhất quán để các nhóm mô tả hồ sơ giống nhau. Siêu dữ liệu có thể bị sửa và không chứng minh ai ký, lúc nào được duyệt hay tệp chưa từng thay đổi. Hãy dùng chữ ký, nhật ký kiểm toán hoặc biện pháp toàn vẹn phù hợp cho các khẳng định đó."
+          },
+          {
+            "t": "h2",
+            "x": "Không đưa nhiều dữ liệu cá nhân hơn mức cần thiết"
+          },
+          {
+            "t": "p",
+            "x": "Trường tác giả, phần mềm tạo và ngày có thể lưu tên tài khoản, ứng dụng hoặc giá trị cũ từ mẫu. Xem chính sách quyền riêng tư và lưu trữ trước khi công bố PDF. Tránh số tài khoản, mã y tế và dữ liệu khách hàng trong từ khóa hoặc tiêu đề. Nếu bản phân phối không nên lộ thuộc tính chuẩn, hãy xóa chúng khỏi bản sao; giữ siêu dữ liệu quản lý cần thiết trong hệ thống được phép."
+          },
+          {
+            "t": "h2",
+            "x": "Hiểu đúng chức năng công cụ siêu dữ liệu"
+          },
+          {
+            "t": "p",
+            "x": "[Sửa siêu dữ liệu](/tools/edit-metadata) đọc và thay đổi trường chuẩn tiêu đề, tác giả, chủ đề và từ khóa. Tệp có khối XMP chi tiết có thể vẫn giữ giá trị XMP cũ. [Xóa siêu dữ liệu](/tools/remove-metadata) xóa thuộc tính chuẩn và luồng XMP cấp tài liệu nhưng không kiểm tra dữ liệu nhúng trong ảnh. Công cụ cũng không xóa bình luận, tệp đính kèm, dấu trang, văn bản ẩn hoặc trường biểu mẫu; cần rà soát riêng các nội dung đó."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ bối cảnh và xác minh từng bản"
+          },
+          {
+            "t": "p",
+            "x": "Theo quy tắc lưu trữ, giữ bản gốc, bản đã sửa, người thay đổi và lý do. Nếu cần xác minh XMP phức tạp, xem thuộc tính bằng trình đọc PDF trên máy tính. Nếu nguồn gốc quan trọng, dùng chữ ký hoặc checksum được duyệt thay vì tin vào siêu dữ liệu. Xác nhận có cần PDF/A để bảo quản không và xác minh riêng bản đầu ra."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Nên đưa siêu dữ liệu nào vào PDF lưu trữ?",
+            "a": "Dùng trường theo chính sách, thường gồm tiêu đề, tác giả hoặc vai trò phụ trách, chủ đề, từ khóa và mã được duyệt. Chuẩn hóa thuật ngữ và tránh dữ liệu cá nhân không cần."
+          },
+          {
+            "q": "Đổi tác giả hoặc tiêu đề có sửa nội dung PDF không?",
+            "a": "Edit Metadata đổi thuộc tính mô tả chuẩn và lưu một bản sao; thao tác này không sửa văn bản trang, hình ảnh, liên kết hay trường biểu mẫu."
+          },
+          {
+            "q": "Xóa siêu dữ liệu có xóa mọi thứ ẩn trong PDF không?",
+            "a": "Không. Remove Metadata xóa thuộc tính chuẩn và XMP cấp tài liệu, không xóa siêu dữ liệu ảnh, bình luận, tệp đính kèm, dấu trang hoặc văn bản ẩn."
+          },
+          {
+            "q": "Siêu dữ liệu chứng minh ai tạo hoặc duyệt tài liệu không?",
+            "a": "Không. Chúng có thể bị sửa hoặc kế thừa từ mẫu. Hãy dùng chữ ký, nhật ký kiểm toán hoặc biện pháp có ghi nhận để xác minh duyệt và toàn vẹn."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader",
+          "pdf-to-pdfa"
+        ],
+        "relatedPosts": [
+          "searchable-pdf-archive-folders",
+          "document-retention-handoff-checklist",
+          "pdf-archive-naming-convention",
+          "preserving-signed-pdfs"
         ]
       }
     ]
@@ -40922,6 +41828,157 @@
           "pdf-archive-naming-convention",
           "document-retention-handoff-checklist",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "metadata-for-pdf-records",
+        "slug": "metadata-for-pdf-records",
+        "cluster": "archive-expansion",
+        "title": "记录管理中的 PDF 元数据",
+        "metaTitle": "记录管理中的 PDF 元数据",
+        "metaDescription": "统一 PDF 元数据，并在分享前清除不需要的属性。免费、浏览器本地处理、无需注册、无水印，了解字段和清理范围。",
+        "primaryKeyword": "PDF 元数据记录管理",
+        "secondaryKeywords": [
+          "PDF metadata records management",
+          "PDF properties for archives",
+          "edit and remove PDF metadata"
+        ],
+        "answer": "管理 PDF 记录时，应使用统一的描述字段，如标题、作者、主题和关键词，采用受控词汇，并避免不必要的个人信息。归档或分享前检查元数据。PrintxPDF 编辑元数据工具可更改标准字段；删除元数据工具可清除标准属性和文档级 XMP 流。两者都不会删除照片中嵌入的元数据、评论或 PDF 附件。",
+        "body": [
+          {
+            "t": "p",
+            "x": "元数据有助于识别、整理和查找 PDF 记录，也可能泄露旧姓名或信息。请确定团队使用哪些字段、由谁维护以及允许哪些值。归档或分享前检查每个副本。PrintxPDF 的元数据工具在浏览器中运行；编辑工具会更改标准描述属性，删除工具会清理文档属性，但不会处理图片元数据或所有隐藏内容。"
+          },
+          {
+            "t": "h2",
+            "x": "如何管理 PDF 记录元数据"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "定义字段和词汇",
+                "x": "按政策制定标题、作者、主题、关键词、日期和标识符规则。"
+              },
+              {
+                "h": "检查源文件",
+                "x": "查看现有属性，并保持原件不变。"
+              },
+              {
+                "h": "只修改必要信息",
+                "x": "使用[编辑元数据](/tools/edit-metadata)更改标题、作者、主题和关键词；不要添加敏感信息。"
+              },
+              {
+                "h": "清理副本属性",
+                "x": "不需要标准属性或文档级 XMP 时，使用[删除元数据](/tools/remove-metadata)。"
+              },
+              {
+                "h": "核对记录和内容",
+                "x": "用[PDF 阅读器](/tools/pdf-reader)打开副本，检查属性并保留与原件的关联。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "在当前标签页检查或清理元数据。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "元数据字段及其用途"
+          },
+          {
+            "t": "table",
+            "head": [
+              "字段",
+              "可能用途",
+              "建议控制"
+            ],
+            "rows": [
+              [
+                "标题",
+                "在阅读器和搜索中识别记录。",
+                "使用准确、稳定的标题。"
+              ],
+              [
+                "作者",
+                "记录创建者或责任方。",
+                "使用获准角色或名称；不需要时避免个人账号。"
+              ],
+              [
+                "主题和关键词",
+                "描述主题并帮助查找。",
+                "采用受控术语，不添加机密信息。"
+              ],
+              [
+                "日期和创建程序",
+                "提供技术或时间背景。",
+                "不要将其作为完整性或来源的唯一证明。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "用元数据描述记录，不要证明真实性"
+          },
+          {
+            "t": "p",
+            "x": "标题、作者、主题和关键词能改善阅读器及文档系统中的分类与搜索。统一字段名称和词汇，让不同团队以一致方式描述同一记录。元数据可以修改，不能证明谁签署、何时批准或文件从未更改。需要证明这些事项时，应使用签名、审计日志或适当的完整性控制。"
+          },
+          {
+            "t": "h2",
+            "x": "不要记录超出需要的个人信息"
+          },
+          {
+            "t": "p",
+            "x": "作者、创建程序和日期字段可能包含用户名、软件信息或模板遗留值。发布 PDF 前检查隐私和档案政策。不要在关键词或标题中加入账号、医疗标识符或客户信息。如果分发副本不应暴露标准属性，可从副本中清理；记录管理需要的元数据应按授权保留在系统中。"
+          },
+          {
+            "t": "h2",
+            "x": "了解元数据工具的实际处理范围"
+          },
+          {
+            "t": "p",
+            "x": "[编辑元数据](/tools/edit-metadata)会读取并更改标题、作者、主题和关键词等标准字段。文件如果还有更详细的 XMP 数据块，旧 XMP 值可能保留。[删除元数据](/tools/remove-metadata)会清除标准属性和文档级 XMP 流，但不会检查照片内嵌的元数据。它也不会删除评论、附件、书签、隐藏文本或表单字段；这些内容需要单独检查。"
+          },
+          {
+            "t": "h2",
+            "x": "保留背景信息并验证每个副本"
+          },
+          {
+            "t": "p",
+            "x": "按档案规则保留原件、修改后的副本、修改人和原因。如需核验复杂 XMP，请用桌面 PDF 阅读器查看属性。如果来源很重要，应使用获准的签名或校验控制，而不是依赖元数据。确认长期保存是否要求 PDF/A，并单独验证生成的副本。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "归档 PDF 应包含哪些元数据？",
+            "a": "按政策保留必要字段，通常包括标题、作者或责任角色、主题、关键词和获准标识符。统一词汇并避免不必要的个人信息。"
+          },
+          {
+            "q": "修改作者或标题会改变 PDF 正文吗？",
+            "a": "编辑元数据工具会更改标准描述属性并保存副本；此操作不会编辑页面文本、图像、链接或表单字段。"
+          },
+          {
+            "q": "删除元数据会清除 PDF 中所有隐藏内容吗？",
+            "a": "不会。删除元数据工具会清除标准属性和文档级 XMP，但不会清除照片元数据、评论、附件、书签或隐藏文本。"
+          },
+          {
+            "q": "元数据能证明谁创建或批准了文件吗？",
+            "a": "不能。元数据可以修改，也可能来自模板。要验证批准或完整性，应使用签名、审计日志或适当的记录控制。"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader",
+          "pdf-to-pdfa"
+        ],
+        "relatedPosts": [
+          "searchable-pdf-archive-folders",
+          "document-retention-handoff-checklist",
+          "pdf-archive-naming-convention",
+          "preserving-signed-pdfs"
         ]
       }
     ]
