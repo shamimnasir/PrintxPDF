@@ -2495,6 +2495,150 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "zip-folder-without-uploading",
+        "slug": "zip-folder-without-uploading",
+        "title": "Crear un ZIP de una carpeta sin subirla",
+        "metaTitle": "Crear un ZIP de una carpeta sin subirla",
+        "metaDescription": "Crea un ZIP gratis en el navegador, sin registro ni marca de agua. Conserva las carpetas y revisa el paquete antes de enviarlo.",
+        "keyword": "crear ZIP de una carpeta sin subirla",
+        "secondaryKeywords": [
+          "crear ZIP online",
+          "comprimir archivos gratis",
+          "ZIP de carpeta en el navegador",
+          "enviar varios archivos"
+        ],
+        "answer": "Para crear un ZIP de una carpeta sin subirla, usa un creador ZIP en el navegador, selecciona los archivos, nombra el paquete, descárgalo y revisa su contenido. PrintxPDF crea archivos ZIP estándar localmente en el navegador.",
+        "tool": "create-zip",
+        "ctaLabel": "Crear ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "Una carpeta puede contener muchos archivos de un proyecto. Crear el paquete localmente evita enviar toda esa colección a un servicio externo solo para comprimirla. El ZIP conserva la estructura de carpetas, pero no siempre reduce mucho el tamaño, ya que fotos, PDF y otros formatos suelen estar comprimidos."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo crear un archivo ZIP en el navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Reúne los archivos finales",
+                "x": "Pon solo los archivos y carpetas aprobados en una ubicación y usa nombres claros."
+              },
+              {
+                "h": "Abre Crear ZIP",
+                "x": "Añade archivos o una carpeta a [Crear ZIP](/tools/create-zip) en el navegador."
+              },
+              {
+                "h": "Nombra el ZIP",
+                "x": "Elige un nombre descriptivo para que el destinatario entienda qué contiene el paquete."
+              },
+              {
+                "h": "Crea y descarga",
+                "x": "Genera el ZIP y guárdalo. El flujo estándar se procesa en el navegador."
+              },
+              {
+                "h": "Abre el ZIP una vez",
+                "x": "Comprueba nombres, carpetas y archivos antes de adjuntarlo o subirlo."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Agrupa tus archivos en un ZIP privado desde la pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Archivo ZIP o adjuntos separados"
+          },
+          {
+            "t": "table",
+            "caption": "Elige el método según los archivos y el destinatario.",
+            "head": [
+              "Método",
+              "Mejor para",
+              "Ten en cuenta"
+            ],
+            "rows": [
+              [
+                "Archivo ZIP",
+                "Muchos archivos o carpetas relacionados",
+                "El destinatario debe poder extraerlo."
+              ],
+              [
+                "Adjuntos separados",
+                "Pocos documentos individuales",
+                "Puede perderse el orden y la estructura."
+              ],
+              [
+                "Enlace de nube",
+                "Archivos grandes o colaboración continua",
+                "Revisa acceso y retención."
+              ],
+              [
+                "Combinar PDF",
+                "Varias páginas PDF en un paquete de lectura",
+                "Solo admite archivos PDF."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Qué comprime y qué no comprime Crear ZIP"
+          },
+          {
+            "t": "p",
+            "x": "Crear ZIP agrupa archivos y conserva las carpetas, pero guarda cada archivo tal como está en vez de intentar comprimir de nuevo cada formato. PDF, fotos, vídeos, documentos Word, hojas de cálculo y ZIP existentes suelen estar ya comprimidos. Volver a comprimirlos ahorra poco y usa más tiempo y memoria. La ventaja principal es tener un paquete ordenado, no garantizar un archivo más pequeño."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa el paquete antes de enviarlo"
+          },
+          {
+            "t": "p",
+            "x": "Abre el ZIP y comprueba los nombres, la estructura y que no se haya colado ningún borrador o archivo privado. Un ZIP es un contenedor, no un sistema de control de acceso. Si necesitas confidencialidad, usa un método seguro aprobado y sigue la política de tu organización. No supongas que agrupar archivos los protege."
+          },
+          {
+            "t": "h2",
+            "x": "Por qué ayuda crear el paquete en el navegador"
+          },
+          {
+            "t": "p",
+            "x": "Las carpetas de proyectos, los archivos de clientes, los documentos fiscales y las fotos personales pueden ser sensibles. Crear ZIP se ejecuta en el navegador, así que no hace falta subir los archivos de forma rutinaria para empaquetarlos. Tú eliges dónde guardar y compartir la descarga. Usa un nombre claro y conserva la carpeta original hasta que el destinatario confirme que recibió el paquete completo."
+          },
+          {
+            "t": "h2",
+            "x": "Elige la herramienta adecuada después de crear el ZIP"
+          },
+          {
+            "t": "p",
+            "x": "Si el destinatario solo necesita algunas páginas PDF, [Extraer páginas](/tools/extract-pages) puede crear una entrega más pequeña. Si varios PDF deben leerse como un documento, [Combinar PDF](/tools/merge-pdf) es más apropiado que un ZIP. Conserva también una copia de la carpeta original, anota el contenido del archivo y comprueba que se extrae en el dispositivo del destinatario antes de borrar la carpeta fuente. Guarda una copia de seguridad hasta que se acepte la entrega."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Puedo crear un ZIP gratis?",
+            "a": "Sí. Añade archivos o una carpeta, nombra el ZIP, créalo y descárgalo. Crear ZIP de PrintxPDF no requiere registro."
+          },
+          {
+            "q": "¿Un ZIP hará que todos los archivos pesen menos?",
+            "a": "No. Muchos formatos comunes ya están comprimidos. El ZIP sirve sobre todo para agrupar archivos y conservar la estructura de carpetas."
+          },
+          {
+            "q": "¿Puedo comprimir una carpeta en el navegador?",
+            "a": "Sí. Añade la carpeta cuando el navegador lo permita, crea el ZIP y revisa que la descarga incluya la estructura esperada."
+          },
+          {
+            "q": "¿Crear ZIP es privado?",
+            "a": "El flujo estándar de Crear ZIP se ejecuta en el navegador; no se suben los archivos de forma rutinaria solo para agruparlos."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -4984,6 +5128,150 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "zip-folder-without-uploading",
+        "slug": "zip-folder-without-uploading",
+        "title": "Como compactar uma pasta em ZIP sem enviar",
+        "metaTitle": "Como compactar uma pasta em ZIP sem enviar",
+        "metaDescription": "Crie um ZIP grátis no navegador, sem cadastro ou marca d’água. Preserve as pastas e confira o pacote antes de enviar.",
+        "keyword": "compactar pasta em ZIP sem enviar",
+        "secondaryKeywords": [
+          "criar ZIP online",
+          "compactar arquivos grátis",
+          "ZIP de pasta no navegador",
+          "enviar vários arquivos"
+        ],
+        "answer": "Para compactar uma pasta em ZIP sem enviá-la, use um criador de ZIP no navegador, selecione os arquivos, dê um nome ao pacote, baixe-o e confira o conteúdo. A PrintxPDF cria arquivos ZIP padrão localmente no navegador.",
+        "tool": "create-zip",
+        "ctaLabel": "Criar ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "Uma pasta pode reunir dezenas de arquivos de um projeto. Criar o pacote localmente evita enviar toda essa coleção a um serviço externo só para agrupá-la. O ZIP mantém a estrutura de pastas, mas nem sempre reduz muito o tamanho, porque fotos, PDFs e outros formatos costumam já estar compactados."
+          },
+          {
+            "t": "h2",
+            "x": "Como criar um arquivo ZIP no navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Reúna os arquivos finais",
+                "x": "Coloque apenas os arquivos e pastas aprovados em um lugar e use nomes claros."
+              },
+              {
+                "h": "Abra Criar ZIP",
+                "x": "Adicione arquivos ou uma pasta em [Criar ZIP](/tools/create-zip) no navegador."
+              },
+              {
+                "h": "Dê um nome ao ZIP",
+                "x": "Use um nome descritivo para o destinatário entender o conteúdo do pacote."
+              },
+              {
+                "h": "Crie e baixe",
+                "x": "Gere o ZIP e salve-o. O fluxo padrão é processado no navegador."
+              },
+              {
+                "h": "Abra o ZIP uma vez",
+                "x": "Confira nomes, pastas e arquivos antes de anexar ou enviar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Agrupe seus arquivos em um ZIP privado na aba. Grátis, sem cadastro ou marca d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Arquivo ZIP ou anexos separados"
+          },
+          {
+            "t": "table",
+            "caption": "Escolha conforme os arquivos e o destinatário.",
+            "head": [
+              "Método",
+              "Ideal para",
+              "Atenção"
+            ],
+            "rows": [
+              [
+                "Arquivo ZIP",
+                "Muitos arquivos ou pastas relacionados",
+                "O destinatário precisa conseguir extraí-lo."
+              ],
+              [
+                "Anexos separados",
+                "Poucos documentos individuais",
+                "A ordem e a estrutura de pastas podem se perder."
+              ],
+              [
+                "Link de nuvem",
+                "Arquivos grandes ou colaboração contínua",
+                "Revise acesso e retenção."
+              ],
+              [
+                "Combinar PDF",
+                "Várias páginas PDF em um pacote de leitura",
+                "Funciona apenas com PDFs."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "O que Criar ZIP compacta e o que não compacta"
+          },
+          {
+            "t": "p",
+            "x": "Criar ZIP agrupa arquivos e mantém as pastas, mas armazena cada arquivo como está em vez de tentar comprimir cada formato novamente. PDFs, fotos, vídeos, documentos Word, planilhas e ZIPs existentes normalmente já são compactados. Recompactá-los economiza pouco e consome mais tempo e memória. O principal benefício é um pacote organizado, não a garantia de um arquivo menor."
+          },
+          {
+            "t": "h2",
+            "x": "Confira o pacote antes de enviar"
+          },
+          {
+            "t": "p",
+            "x": "Abra o ZIP e confira nomes, estrutura e se nenhum rascunho ou arquivo privado entrou por engano. ZIP é um contêiner, não um sistema de controle de acesso. Se houver exigência de confidencialidade, use um método seguro aprovado e siga a política da organização. Agrupar arquivos não os protege por si só."
+          },
+          {
+            "t": "h2",
+            "x": "Por que criar o pacote no navegador ajuda"
+          },
+          {
+            "t": "p",
+            "x": "Pastas de projetos, arquivos de clientes, documentos fiscais e fotos pessoais podem ser sensíveis. Criar ZIP roda no navegador, então os arquivos não precisam ser enviados rotineiramente para serem empacotados. Você escolhe onde salvar e compartilhar o download. Use um nome claro e mantenha a pasta original até o destinatário confirmar que recebeu o pacote completo."
+          },
+          {
+            "t": "h2",
+            "x": "Escolha a ferramenta certa depois do ZIP"
+          },
+          {
+            "t": "p",
+            "x": "Se o destinatário precisa apenas de algumas páginas PDF, [Extrair páginas](/tools/extract-pages) pode criar uma entrega menor. Se vários PDFs devem ser lidos como um documento, [Combinar PDF](/tools/merge-pdf) é mais adequado que um ZIP. Guarde também uma cópia da pasta original, anote o conteúdo e confirme que o pacote é extraído no dispositivo do destinatário antes de apagar a fonte. Mantenha um backup até a entrega ser aceita."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Posso criar um arquivo ZIP grátis?",
+            "a": "Sim. Adicione arquivos ou uma pasta, dê um nome ao ZIP, crie e baixe. O Criar ZIP da PrintxPDF não exige cadastro."
+          },
+          {
+            "q": "Um ZIP vai deixar todos os arquivos menores?",
+            "a": "Não. Muitos formatos comuns já são compactados. O ZIP é útil principalmente para agrupar arquivos e preservar pastas."
+          },
+          {
+            "q": "Posso compactar uma pasta no navegador?",
+            "a": "Sim. Adicione a pasta quando o navegador permitir, crie o ZIP e confira se a estrutura esperada está no download."
+          },
+          {
+            "q": "Criar ZIP é privado?",
+            "a": "O fluxo padrão do Criar ZIP roda no navegador; os arquivos não são enviados rotineiramente só para agrupamento."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -7469,6 +7757,150 @@
           {
             "q": "क्लाइंट डिलीवरी से पहले और क्या जाँचें?",
             "a": "दृश्य सामग्री, आयाम, फ़ॉर्मैट, रंग, फ़ाइल नाम, लाइसेंस, आवश्यक खुलासा और प्राप्तकर्ता का पसंदीदा सुरक्षित चैनल जाँचें।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "zip-folder-without-uploading",
+        "slug": "zip-folder-without-uploading",
+        "title": "बिना अपलोड किए फ़ोल्डर को ZIP कैसे करें",
+        "metaTitle": "बिना अपलोड किए फ़ोल्डर को ZIP कैसे करें",
+        "metaDescription": "ब्राउज़र में मुफ़्त ZIP बनाएँ; साइनअप या वॉटरमार्क नहीं। फ़ोल्डर संरचना रखें और भेजने से पहले पैकेज जाँचें।",
+        "keyword": "बिना अपलोड किए फ़ोल्डर ZIP करना",
+        "secondaryKeywords": [
+          "ऑनलाइन ZIP बनाना",
+          "फ़ाइलें मुफ़्त ZIP करना",
+          "ब्राउज़र में फ़ोल्डर ZIP",
+          "कई फ़ाइलें भेजना"
+        ],
+        "answer": "बिना अपलोड किए फ़ोल्डर ZIP करने के लिए ब्राउज़र-आधारित ZIP निर्माता खोलें, फ़ाइलें चुनें, पैकेज का नाम रखें, डाउनलोड करें और सामग्री जाँचें। PrintxPDF मानक ZIP फ़ाइलें ब्राउज़र में लोकली बनाता है।",
+        "tool": "create-zip",
+        "ctaLabel": "ZIP बनाएँ",
+        "body": [
+          {
+            "t": "p",
+            "x": "एक फ़ोल्डर में प्रोजेक्ट की कई फ़ाइलें हो सकती हैं। उन्हें लोकली पैक करने से पूरी सामग्री किसी बाहरी पैकेजिंग सेवा को भेजने की ज़रूरत नहीं पड़ती। ZIP फ़ोल्डर संरचना बनाए रखता है, लेकिन आकार हमेशा कम नहीं करता क्योंकि फ़ोटो, PDF और कई अन्य फ़ॉर्मैट पहले से संपीड़ित होते हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "ब्राउज़र में ZIP फ़ाइल कैसे बनाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "अंतिम फ़ाइलें एकत्र करें",
+                "x": "केवल स्वीकृत फ़ाइलें और फ़ोल्डर एक जगह रखें और स्पष्ट नाम दें।"
+              },
+              {
+                "h": "ZIP बनाएँ खोलें",
+                "x": "ब्राउज़र में [ZIP बनाएँ](/tools/create-zip) खोलकर फ़ाइलें या फ़ोल्डर जोड़ें।"
+              },
+              {
+                "h": "ZIP का नाम रखें",
+                "x": "ऐसा वर्णनात्मक नाम दें जिससे प्राप्तकर्ता पैकेज समझ सके।"
+              },
+              {
+                "h": "बनाएँ और डाउनलोड करें",
+                "x": "ZIP बनाएँ और सहेजें। सामान्य प्रक्रिया ब्राउज़र के भीतर रहती है।"
+              },
+              {
+                "h": "ZIP एक बार खोलकर देखें",
+                "x": "अटैच या अपलोड करने से पहले नाम, फ़ोल्डर और फ़ाइलें जाँचें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "अपने टैब में फ़ाइलों को निजी ZIP में पैक करें। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP फ़ाइल या अलग-अलग अटैचमेंट"
+          },
+          {
+            "t": "table",
+            "caption": "फ़ाइलों और प्राप्तकर्ता के अनुसार तरीका चुनें।",
+            "head": [
+              "तरीका",
+              "किसके लिए अच्छा",
+              "क्या ध्यान रखें"
+            ],
+            "rows": [
+              [
+                "ZIP फ़ाइल",
+                "कई संबंधित फ़ाइलें या फ़ोल्डर",
+                "प्राप्तकर्ता को इसे extract करना आना चाहिए।"
+              ],
+              [
+                "अलग अटैचमेंट",
+                "कुछ अलग दस्तावेज़",
+                "क्रम और फ़ोल्डर संरचना खो सकती है।"
+              ],
+              [
+                "क्लाउड लिंक",
+                "बड़ी फ़ाइलें या जारी सहयोग",
+                "पहुँच और रखरखाव की अवधि जाँचें।"
+              ],
+              [
+                "PDF जोड़ें",
+                "पढ़ने के लिए कई PDF पृष्ठों का पैकेट",
+                "केवल PDF के लिए।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ZIP बनाएँ क्या संपीड़ित करता है और क्या नहीं"
+          },
+          {
+            "t": "p",
+            "x": "ZIP बनाएँ फ़ाइलें पैक करके फ़ोल्डर संरचना रखता है, लेकिन हर फ़ॉर्मैट को फिर से दबाने के बजाय फ़ाइलें जैसी हैं वैसी रखता है। PDF, फ़ोटो, वीडियो, Word दस्तावेज़, स्प्रेडशीट और मौजूदा ZIP अक्सर पहले से संपीड़ित होते हैं। उन्हें फिर संपीड़ित करने से कम जगह बचती है और समय व मेमोरी अधिक लगती है। मुख्य लाभ व्यवस्थित एक पैकेज है, छोटी फ़ाइल की गारंटी नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "भेजने से पहले पैकेज जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "ZIP खोलकर नाम, फ़ोल्डर संरचना और यह देखें कि कोई ड्राफ़्ट या निजी स्रोत फ़ाइल गलती से शामिल तो नहीं हुई। ZIP एक कंटेनर है, पहुँच नियंत्रण प्रणाली नहीं। गोपनीयता चाहिए तो स्वीकृत सुरक्षित तरीका अपनाएँ और संगठन की नीति मानें। केवल फ़ाइलें समूहित करने से वे सुरक्षित नहीं हो जातीं।"
+          },
+          {
+            "t": "h2",
+            "x": "ब्राउज़र में पैकेज बनाना क्यों उपयोगी है"
+          },
+          {
+            "t": "p",
+            "x": "प्रोजेक्ट फ़ोल्डर, ग्राहक सामग्री, कर रिकॉर्ड और निजी तस्वीरें संवेदनशील हो सकती हैं। ZIP बनाएँ ब्राउज़र में चलता है, इसलिए केवल पैक करने के लिए फ़ाइलें नियमित रूप से सर्वर पर अपलोड नहीं करनी पड़तीं। डाउनलोड कहाँ सहेजना और साझा करना है, यह आप तय करते हैं। स्पष्ट नाम रखें और पूरा पैकेज मिलने की पुष्टि तक मूल फ़ोल्डर बचाकर रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP के बाद सही टूल चुनें"
+          },
+          {
+            "t": "p",
+            "x": "यदि प्राप्तकर्ता को सिर्फ कुछ PDF पृष्ठ चाहिए, तो [पृष्ठ निकालें](/tools/extract-pages) से छोटा पैकेज बनाएँ। कई PDF को एक ही पढ़ने योग्य दस्तावेज़ में चाहिए तो ZIP के बजाय [PDF जोड़ें](/tools/merge-pdf) बेहतर है। मूल फ़ोल्डर की कॉपी रखें, संग्रह में क्या है लिखें और स्रोत मिटाने से पहले प्राप्तकर्ता के डिवाइस पर ZIP खोलकर जाँचें। डिलीवरी स्वीकार होने तक बैकअप रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या ZIP फ़ाइल मुफ़्त बना सकता हूँ?",
+            "a": "हाँ। फ़ाइलें या फ़ोल्डर जोड़ें, ZIP का नाम रखें, बनाएँ और डाउनलोड करें। PrintxPDF ZIP बनाने के लिए साइनअप नहीं माँगता।"
+          },
+          {
+            "q": "क्या ZIP हर फ़ाइल को छोटा करेगा?",
+            "a": "नहीं। कई सामान्य फ़ॉर्मैट पहले से संपीड़ित होते हैं। ZIP कई फ़ाइलों को पैक करने और फ़ोल्डर संरचना बचाने में उपयोगी है।"
+          },
+          {
+            "q": "क्या ब्राउज़र में फ़ोल्डर ZIP कर सकता हूँ?",
+            "a": "हाँ। जहाँ ब्राउज़र अनुमति दे वहाँ फ़ोल्डर जोड़ें, ZIP बनाएँ और डाउनलोड में अपेक्षित संरचना जाँचें।"
+          },
+          {
+            "q": "क्या ZIP बनाना निजी है?",
+            "a": "सामान्य Create ZIP प्रक्रिया ब्राउज़र में चलती है; सिर्फ पैक करने के लिए फ़ाइलें नियमित रूप से अपलोड नहीं होतीं।"
           }
         ],
         "published": "2026-11-15",
@@ -9967,6 +10399,150 @@
           {
             "q": "ما الذي أراجعه أيضاً قبل التسليم؟",
             "a": "راجع المحتوى المرئي والأبعاد والصيغة والألوان واسم الملف والترخيص والإفصاح المطلوب وقناة التسليم الآمنة المفضلة."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "zip-folder-without-uploading",
+        "slug": "zip-folder-without-uploading",
+        "title": "كيفية ضغط مجلد في ZIP دون رفعه",
+        "metaTitle": "كيفية ضغط مجلد في ZIP دون رفعه",
+        "metaDescription": "أنشئ ملف ZIP مجاناً في المتصفح بلا تسجيل أو علامة مائية. احتفظ ببنية المجلدات وافحص الحزمة قبل إرسالها.",
+        "keyword": "ضغط مجلد ZIP دون رفعه",
+        "secondaryKeywords": [
+          "إنشاء ZIP عبر الإنترنت",
+          "ضغط الملفات مجاناً",
+          "ضغط مجلد في المتصفح",
+          "إرسال ملفات متعددة"
+        ],
+        "answer": "لضغط مجلد في ZIP دون رفعه، استخدم أداة ZIP في المتصفح، وحدد الملفات، وسمّ الحزمة، ثم نزّلها وافحص محتواها. تنشئ PrintxPDF ملفات ZIP القياسية محلياً داخل المتصفح.",
+        "tool": "create-zip",
+        "ctaLabel": "إنشاء ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "قد يحتوي المجلد على عشرات ملفات المشروع. تجهيز الحزمة محلياً يجنب إرسال المجموعة كاملة إلى خدمة خارجية لمجرد تغليفها. يحافظ ZIP على بنية المجلدات، لكنه لا يقلل الحجم دائماً كثيراً لأن الصور وملفات PDF وصيغاً أخرى كثيرة مضغوطة مسبقاً."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية إنشاء ملف ZIP في المتصفح"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "اجمع الملفات النهائية",
+                "x": "ضع الملفات والمجلدات المعتمدة فقط في مكان واحد واستخدم أسماء واضحة."
+              },
+              {
+                "h": "افتح إنشاء ZIP",
+                "x": "أضف الملفات أو المجلد إلى [إنشاء ZIP](/tools/create-zip) في المتصفح."
+              },
+              {
+                "h": "سمّ ملف ZIP",
+                "x": "اختر اسماً وصفياً يساعد المستلم على فهم محتوى الحزمة."
+              },
+              {
+                "h": "أنشئ الملف ونزّله",
+                "x": "أنشئ ZIP واحفظه. تتم المعالجة المعتادة داخل المتصفح."
+              },
+              {
+                "h": "افتح ZIP مرة واحدة",
+                "x": "تحقق من الأسماء والمجلدات والملفات قبل إرفاقه أو رفعه."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "اجمع ملفاتك في ZIP خاص داخل علامة التبويب. مجاناً وبلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "ملف ZIP أم مرفقات منفصلة؟"
+          },
+          {
+            "t": "table",
+            "caption": "اختر الطريقة وفق الملفات والمستلم.",
+            "head": [
+              "الطريقة",
+              "الأنسب لـ",
+              "ما يجب الانتباه إليه"
+            ],
+            "rows": [
+              [
+                "ملف ZIP",
+                "ملفات أو مجلدات كثيرة مترابطة",
+                "يجب أن يستطيع المستلم فك الضغط."
+              ],
+              [
+                "مرفقات منفصلة",
+                "عدد قليل من المستندات",
+                "قد يضيع الترتيب وبنية المجلدات."
+              ],
+              [
+                "رابط مشاركة سحابي",
+                "ملفات كبيرة أو تعاون مستمر",
+                "راجع إعدادات الوصول والاحتفاظ."
+              ],
+              [
+                "دمج PDF",
+                "صفحات PDF متعددة في حزمة قراءة",
+                "يعمل مع ملفات PDF فقط."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي تضغطه أداة إنشاء ZIP وما الذي لا تضغطه؟"
+          },
+          {
+            "t": "p",
+            "x": "تجمع أداة إنشاء ZIP الملفات وتحافظ على بنية المجلدات، لكنها تخزن الملفات كما هي بدلاً من محاولة ضغط كل صيغة مرة أخرى. غالباً ما تكون ملفات PDF والصور والفيديو ومستندات Word وجداول البيانات وملفات ZIP مضغوطة مسبقاً. وقد يوفر ضغطها ثانية مساحة قليلة مع استهلاك وقت وذاكرة أكثر. الفائدة الأساسية هي حزمة واحدة منظمة، لا ضمان تصغير الملف."
+          },
+          {
+            "t": "h2",
+            "x": "راجع الحزمة قبل الإرسال"
+          },
+          {
+            "t": "p",
+            "x": "افتح ZIP وتحقق من الأسماء والبنية ومن عدم دخول مسودة أو ملف خاص بالخطأ. ZIP حاوية ملفات وليس نظاماً للتحكم بالوصول. إذا كانت السرية مطلوبة، استخدم طريقة مشاركة آمنة معتمدة واتبع سياسة مؤسستك. لا تفترض أن تجميع الملفات يحميها."
+          },
+          {
+            "t": "h2",
+            "x": "لماذا يفيد إنشاء الحزمة محلياً في المتصفح؟"
+          },
+          {
+            "t": "p",
+            "x": "قد تكون مجلدات المشاريع وأصول العملاء والسجلات الضريبية والصور الشخصية حساسة. تعمل أداة إنشاء ZIP في المتصفح، فلا يلزم رفع الملفات عادة إلى خادم لمجرد تجميعها. أنت تختار مكان حفظ التنزيل ومشاركته. استخدم اسماً واضحاً واحتفظ بالمجلد الأصلي حتى يؤكد المستلم اكتمال وصول الحزمة."
+          },
+          {
+            "t": "h2",
+            "x": "اختر الأداة المناسبة بعد إنشاء ZIP"
+          },
+          {
+            "t": "p",
+            "x": "إذا احتاج المستلم صفحات PDF قليلة فقط، فقد تنشئ [استخراج الصفحات](/tools/extract-pages) تسليماً أصغر. وإذا أردت قراءة عدة ملفات PDF كمستند واحد، فإن [دمج PDF](/tools/merge-pdf) أنسب من ZIP. احتفظ بنسخة من المجلد الأصلي وسجل محتوى الأرشيف وتأكد من نجاح استخراجه على جهاز المستلم قبل حذف المصدر. احتفظ بنسخة احتياطية حتى قبول التسليم."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يمكنني إنشاء ملف ZIP مجاناً؟",
+            "a": "نعم. أضف ملفات أو مجلداً وسمّ ZIP وأنشئه ونزّله. لا تتطلب أداة إنشاء ZIP من PrintxPDF تسجيلاً."
+          },
+          {
+            "q": "هل سيجعل ZIP كل ملف أصغر؟",
+            "a": "لا. كثير من الصيغ الشائعة مضغوطة مسبقاً. يفيد ZIP أساساً في تجميع الملفات والحفاظ على بنية مجلداتها."
+          },
+          {
+            "q": "هل يمكنني ضغط مجلد في المتصفح؟",
+            "a": "نعم. أضف المجلد حيث يسمح المتصفح، وأنشئ ZIP وتحقق من وجود البنية المتوقعة في التنزيل."
+          },
+          {
+            "q": "هل إنشاء ZIP خاص؟",
+            "a": "تعمل عملية إنشاء ZIP المعتادة في المتصفح؛ ولا تُرفع الملفات عادة لمجرد تجميعها."
           }
         ],
         "published": "2026-11-15",
@@ -12472,6 +13048,150 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "zip-folder-without-uploading",
+        "slug": "zip-folder-without-uploading",
+        "title": "আপলোড না করে ফোল্ডার ZIP করার উপায়",
+        "metaTitle": "আপলোড না করে ফোল্ডার ZIP করার উপায়",
+        "metaDescription": "ব্রাউজারে বিনামূল্যে ZIP তৈরি করুন; সাইনআপ বা ওয়াটারমার্ক নেই। ফোল্ডারের বিন্যাস রেখে পাঠানোর আগে প্যাকেজ পরীক্ষা করুন।",
+        "keyword": "আপলোড না করে ফোল্ডার ZIP করা",
+        "secondaryKeywords": [
+          "অনলাইনে ZIP তৈরি",
+          "বিনামূল্যে ফাইল ZIP করা",
+          "ব্রাউজারে ফোল্ডার ZIP",
+          "একাধিক ফাইল পাঠানো"
+        ],
+        "answer": "আপলোড না করে ফোল্ডার ZIP করতে ব্রাউজার-ভিত্তিক ZIP টুল ব্যবহার করুন, ফাইল বাছুন, প্যাকেজের নাম দিন, ডাউনলোড করুন এবং ভেতরের বিষয় পরীক্ষা করুন। PrintxPDF ব্রাউজারেই লোকালি সাধারণ ZIP ফাইল তৈরি করে।",
+        "tool": "create-zip",
+        "ctaLabel": "ZIP তৈরি করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "একটি ফোল্ডারে প্রকল্পের অনেক ফাইল থাকতে পারে। লোকালি প্যাক করলে শুধু ফাইল গুছানোর জন্য পুরো সংগ্রহ বাইরের সেবায় পাঠাতে হয় না। ZIP ফোল্ডারের বিন্যাস রাখে, তবে আকার সবসময় খুব কমায় না, কারণ ছবি, PDF ও অনেক ফরম্যাট আগেই কমপ্রেস করা থাকে।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্রাউজারে ZIP ফাইল কীভাবে তৈরি করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "চূড়ান্ত ফাইল একত্র করুন",
+                "x": "শুধু অনুমোদিত ফাইল ও ফোল্ডার এক জায়গায় রাখুন এবং স্পষ্ট নাম দিন।"
+              },
+              {
+                "h": "ZIP তৈরি খুলুন",
+                "x": "ব্রাউজারে [ZIP তৈরি](/tools/create-zip) খুলে ফাইল বা ফোল্ডার যোগ করুন।"
+              },
+              {
+                "h": "ZIP-এর নাম দিন",
+                "x": "বর্ণনামূলক নাম ব্যবহার করুন যাতে প্রাপক প্যাকেজের বিষয় বুঝতে পারেন।"
+              },
+              {
+                "h": "তৈরি করে ডাউনলোড করুন",
+                "x": "ZIP তৈরি করে সংরক্ষণ করুন। সাধারণ প্রক্রিয়াটি ব্রাউজারেই হয়।"
+              },
+              {
+                "h": "ZIP একবার খুলে দেখুন",
+                "x": "সংযুক্ত বা আপলোডের আগে নাম, ফোল্ডার ও ফাইল পরীক্ষা করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "আপনার ট্যাবে ফাইলগুলো ব্যক্তিগত ZIP-এ গুছিয়ে নিন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP ফাইল নাকি আলাদা অ্যাটাচমেন্ট"
+          },
+          {
+            "t": "table",
+            "caption": "ফাইল ও প্রাপকের ধরন অনুযায়ী বেছে নিন।",
+            "head": [
+              "পদ্ধতি",
+              "কোন কাজে ভালো",
+              "যা খেয়াল রাখবেন"
+            ],
+            "rows": [
+              [
+                "ZIP ফাইল",
+                "অনেক সম্পর্কিত ফাইল বা ফোল্ডার",
+                "প্রাপককে এটি extract করতে জানতে হবে।"
+              ],
+              [
+                "আলাদা অ্যাটাচমেন্ট",
+                "কয়েকটি আলাদা নথি",
+                "ক্রম ও ফোল্ডারের বিন্যাস হারাতে পারে।"
+              ],
+              [
+                "ক্লাউড শেয়ার লিংক",
+                "বড় ফাইল বা চলমান সহযোগিতা",
+                "প্রবেশাধিকার ও সংরক্ষণকাল দেখুন।"
+              ],
+              [
+                "PDF মার্জ",
+                "পড়ার প্যাকেটে কয়েকটি PDF পৃষ্ঠা",
+                "শুধু PDF-এর জন্য।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ZIP তৈরি কী কমপ্রেস করে আর কী করে না"
+          },
+          {
+            "t": "p",
+            "x": "ZIP তৈরি ফাইল একত্র করে ও ফোল্ডারের বিন্যাস রাখে, তবে প্রতিটি ফরম্যাটকে আবার সংকুচিত না করে ফাইল যেমন আছে তেমন সংরক্ষণ করে। PDF, ছবি, ভিডিও, Word নথি, স্প্রেডশিট ও আগের ZIP ফাইল সাধারণত আগেই কমপ্রেস করা। সেগুলো আবার কমপ্রেস করলে সামান্য জায়গা বাঁচে, কিন্তু সময় ও মেমোরি বেশি লাগে। মূল সুবিধা গোছানো এক প্যাকেজ, ছোট ফাইলের নিশ্চয়তা নয়।"
+          },
+          {
+            "t": "h2",
+            "x": "পাঠানোর আগে প্যাকেজ দেখুন"
+          },
+          {
+            "t": "p",
+            "x": "ZIP খুলে নাম, ফোল্ডারের বিন্যাস এবং কোনো খসড়া বা ব্যক্তিগত ফাইল ভুল করে ঢুকেছে কি না দেখুন। ZIP একটি ধারক, প্রবেশাধিকার নিয়ন্ত্রণ ব্যবস্থা নয়। গোপনীয়তা দরকার হলে অনুমোদিত নিরাপদ পদ্ধতি নিন ও প্রতিষ্ঠানের নীতি মানুন। ফাইল একত্র হলেই সুরক্ষিত হয়েছে ভাববেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্রাউজারে প্যাকেজ করা কেন সহায়ক"
+          },
+          {
+            "t": "p",
+            "x": "প্রকল্পের ফোল্ডার, ক্লায়েন্টের ফাইল, করের নথি ও ব্যক্তিগত ছবি সংবেদনশীল হতে পারে। ZIP তৈরি ব্রাউজারে চলে, তাই শুধু প্যাক করার জন্য ফাইল নিয়মিত সার্ভারে আপলোড করতে হয় না। ডাউনলোড কোথায় রাখবেন বা শেয়ার করবেন তা আপনি বেছে নেন। স্পষ্ট নাম দিন এবং সম্পূর্ণ প্যাকেজ পাওয়ার নিশ্চিতকরণ না আসা পর্যন্ত মূল ফোল্ডার রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "প্যাক করার পর সঠিক টুল বেছে নিন"
+          },
+          {
+            "t": "p",
+            "x": "প্রাপক যদি শুধু কয়েকটি PDF পৃষ্ঠা চান, [পৃষ্ঠা এক্সট্র্যাক্ট](/tools/extract-pages) ছোট ডেলিভারি তৈরি করতে পারে। একাধিক PDF এক নথি হিসেবে পড়তে হলে ZIP-এর বদলে [PDF মার্জ](/tools/merge-pdf) উপযুক্ত। মূল ফোল্ডারের কপি রাখুন, আর্কাইভে কী আছে লিখে রাখুন এবং উৎস মুছার আগে প্রাপকের ডিভাইসে ZIP খুলে দেখুন। ডেলিভারি গ্রহণ না হওয়া পর্যন্ত ব্যাকআপ রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "বিনামূল্যে ZIP ফাইল তৈরি করা যায়?",
+            "a": "হ্যাঁ। ফাইল বা ফোল্ডার যোগ করুন, নাম দিন, ZIP তৈরি করে ডাউনলোড করুন। PrintxPDF ZIP তৈরিতে সাইনআপ লাগে না।"
+          },
+          {
+            "q": "ZIP কি সব ফাইল ছোট করবে?",
+            "a": "না। অনেক পরিচিত ফরম্যাট আগেই কমপ্রেস করা। একাধিক ফাইল প্যাক করা এবং ফোল্ডারের বিন্যাস রাখাই ZIP-এর মূল কাজ।"
+          },
+          {
+            "q": "ব্রাউজারে কি ফোল্ডার ZIP করা যায়?",
+            "a": "হ্যাঁ। ব্রাউজার যেখানে অনুমতি দেয় সেখানে ফোল্ডার যোগ করুন, ZIP তৈরি করুন এবং ডাউনলোডে কাঙ্ক্ষিত বিন্যাস আছে কি না দেখুন।"
+          },
+          {
+            "q": "ZIP তৈরি কি ব্যক্তিগত?",
+            "a": "সাধারণ ZIP তৈরি ব্রাউজারেই চলে; শুধু প্যাক করার জন্য ফাইল নিয়মিত আপলোড হয় না।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -14957,6 +15677,150 @@
           {
             "q": "Cần kiểm tra gì khác trước khi bàn giao?",
             "a": "Kiểm tra nội dung, kích thước, định dạng, màu sắc, tên tệp, giấy phép, yêu cầu công bố và kênh bảo mật khách hàng muốn dùng."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "zip-folder-without-uploading",
+        "slug": "zip-folder-without-uploading",
+        "title": "Cách nén thư mục thành ZIP mà không tải lên",
+        "metaTitle": "Cách nén thư mục thành ZIP mà không tải lên",
+        "metaDescription": "Tạo ZIP miễn phí trong trình duyệt, không đăng ký, không hình mờ. Giữ cấu trúc thư mục và kiểm tra gói trước khi gửi.",
+        "keyword": "nén thư mục ZIP không tải lên",
+        "secondaryKeywords": [
+          "tạo ZIP trực tuyến",
+          "nén tệp miễn phí",
+          "nén thư mục trong trình duyệt",
+          "gửi nhiều tệp"
+        ],
+        "answer": "Để nén một thư mục thành ZIP mà không tải lên, hãy dùng công cụ ZIP trong trình duyệt, chọn tệp, đặt tên gói, tải xuống và kiểm tra nội dung. PrintxPDF tạo tệp ZIP tiêu chuẩn cục bộ trong trình duyệt.",
+        "tool": "create-zip",
+        "ctaLabel": "Tạo ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "Một thư mục có thể chứa hàng chục tệp dự án. Đóng gói cục bộ giúp bạn không phải gửi cả bộ tệp tới dịch vụ bên ngoài chỉ để gom chúng lại. ZIP giữ cấu trúc thư mục nhưng không phải lúc nào cũng giảm nhiều dung lượng vì ảnh, PDF và nhiều định dạng khác vốn đã được nén."
+          },
+          {
+            "t": "h2",
+            "x": "Cách tạo tệp ZIP trong trình duyệt"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Tập hợp các tệp cuối",
+                "x": "Chỉ đặt tệp và thư mục đã được duyệt vào cùng một chỗ, dùng tên rõ ràng."
+              },
+              {
+                "h": "Mở Tạo ZIP",
+                "x": "Thêm tệp hoặc thư mục vào [Tạo ZIP](/tools/create-zip) trong trình duyệt."
+              },
+              {
+                "h": "Đặt tên ZIP",
+                "x": "Dùng tên mô tả để người nhận hiểu gói chứa gì."
+              },
+              {
+                "h": "Tạo và tải xuống",
+                "x": "Tạo ZIP rồi lưu lại. Quy trình tiêu chuẩn chạy trong trình duyệt."
+              },
+              {
+                "h": "Mở ZIP kiểm tra một lần",
+                "x": "Xem tên, thư mục và tệp trước khi đính kèm hoặc tải lên."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Gom tệp vào một ZIP riêng tư ngay trong tab. Miễn phí, không đăng ký, không hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Tệp ZIP hay tệp đính kèm riêng lẻ?"
+          },
+          {
+            "t": "table",
+            "caption": "Chọn cách phù hợp với tệp và người nhận.",
+            "head": [
+              "Cách gửi",
+              "Phù hợp nhất với",
+              "Lưu ý"
+            ],
+            "rows": [
+              [
+                "Tệp ZIP",
+                "Nhiều tệp hoặc thư mục liên quan",
+                "Người nhận cần biết cách giải nén."
+              ],
+              [
+                "Tệp đính kèm riêng",
+                "Một vài tài liệu đơn lẻ",
+                "Thứ tự và cấu trúc thư mục có thể mất."
+              ],
+              [
+                "Liên kết chia sẻ đám mây",
+                "Tệp lớn hoặc cộng tác liên tục",
+                "Cần xem lại quyền truy cập và thời hạn lưu."
+              ],
+              [
+                "Gộp PDF",
+                "Nhiều trang PDF thành một tài liệu đọc",
+                "Chỉ dùng cho PDF."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Tạo ZIP nén gì và không nén gì"
+          },
+          {
+            "t": "p",
+            "x": "Tạo ZIP gom tệp và giữ cấu trúc thư mục, nhưng lưu tệp như hiện có thay vì cố nén lại từng định dạng. PDF, ảnh, video, tài liệu Word, bảng tính và tệp ZIP có sẵn thường đã được nén. Nén lại chúng chỉ tiết kiệm ít dung lượng nhưng tốn thêm thời gian và bộ nhớ. Lợi ích chính là một gói gọn gàng, không phải cam kết tệp nhỏ hơn."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra gói trước khi gửi"
+          },
+          {
+            "t": "p",
+            "x": "Mở ZIP, kiểm tra tên, cấu trúc thư mục và bảo đảm không có bản nháp hay tệp nguồn riêng tư bị thêm nhầm. ZIP là vùng chứa tệp, không phải hệ thống kiểm soát truy cập. Nếu cần bảo mật, hãy dùng phương thức chia sẻ an toàn được duyệt và tuân thủ chính sách tổ chức. Đừng nghĩ gom tệp lại là đã bảo vệ chúng."
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao đóng gói trong trình duyệt hữu ích"
+          },
+          {
+            "t": "p",
+            "x": "Thư mục dự án, tài sản khách hàng, hồ sơ thuế và ảnh cá nhân có thể nhạy cảm. Tạo ZIP chạy trong trình duyệt, nên không cần tải tệp lên thường xuyên chỉ để đóng gói. Bạn chọn nơi lưu và chia sẻ bản tải xuống. Đặt tên rõ ràng và giữ thư mục gốc cho đến khi người nhận xác nhận đã nhận đủ gói."
+          },
+          {
+            "t": "h2",
+            "x": "Chọn đúng công cụ sau khi đóng gói"
+          },
+          {
+            "t": "p",
+            "x": "Nếu người nhận chỉ cần vài trang PDF, [Trích xuất trang](/tools/extract-pages) có thể tạo gói nhỏ hơn. Nếu cần đọc nhiều PDF như một tài liệu, [Gộp PDF](/tools/merge-pdf) phù hợp hơn ZIP. Hãy giữ bản sao thư mục gốc, ghi lại nội dung lưu trữ và thử giải nén trên thiết bị người nhận trước khi xóa thư mục nguồn. Giữ bản sao lưu đến khi việc bàn giao được chấp nhận."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Tôi có thể tạo ZIP miễn phí không?",
+            "a": "Có. Thêm tệp hoặc thư mục, đặt tên ZIP, tạo rồi tải xuống. Tạo ZIP của PrintxPDF không cần đăng ký."
+          },
+          {
+            "q": "ZIP có làm mọi tệp nhỏ hơn không?",
+            "a": "Không. Nhiều định dạng phổ biến đã được nén. ZIP chủ yếu giúp gom nhiều tệp và giữ cấu trúc thư mục."
+          },
+          {
+            "q": "Tôi có thể nén thư mục trong trình duyệt không?",
+            "a": "Có. Thêm thư mục nếu trình duyệt cho phép, tạo ZIP rồi kiểm tra cấu trúc dự kiến trong tệp tải về."
+          },
+          {
+            "q": "Tạo ZIP có riêng tư không?",
+            "a": "Quy trình Tạo ZIP tiêu chuẩn chạy trong trình duyệt; tệp không được tải lên thường xuyên chỉ để đóng gói."
           }
         ],
         "published": "2026-11-15",
@@ -17455,6 +18319,150 @@
           {
             "q": "客户交付前还要检查什么？",
             "a": "检查可见内容、尺寸、格式、颜色、文件名、许可、披露要求，以及接收者偏好的安全交付渠道。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "zip-folder-without-uploading",
+        "slug": "zip-folder-without-uploading",
+        "title": "如何不上传就把文件夹打包为 ZIP",
+        "metaTitle": "如何不上传就把文件夹打包为 ZIP",
+        "metaDescription": "在浏览器中免费本地创建 ZIP，无需注册、没有水印。保留文件夹结构，发送前检查压缩包内容与名称。",
+        "keyword": "不上传把文件夹压缩为 ZIP",
+        "secondaryKeywords": [
+          "在线创建 ZIP",
+          "免费压缩文件",
+          "浏览器压缩文件夹",
+          "发送多个文件"
+        ],
+        "answer": "要在不上传文件夹的情况下创建 ZIP，请使用浏览器内的 ZIP 工具，选择文件、命名压缩包、下载并检查内容。PrintxPDF 会在浏览器本地创建标准 ZIP 文件。",
+        "tool": "create-zip",
+        "ctaLabel": "创建 ZIP",
+        "body": [
+          {
+            "t": "p",
+            "x": "一个文件夹里可能有几十个项目文件。在本地打包，可以避免仅仅为了整理文件就把整批内容发送到外部服务。ZIP 会保留文件夹结构，但不一定显著缩小体积，因为照片、PDF 和许多其他格式通常已经压缩过。"
+          },
+          {
+            "t": "h2",
+            "x": "如何在浏览器中创建 ZIP 文件"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "收集最终文件",
+                "x": "只把已批准的文件和文件夹放在一起，并使用清晰的名称。"
+              },
+              {
+                "h": "打开创建 ZIP",
+                "x": "在浏览器中将文件或文件夹添加到[创建 ZIP](/tools/create-zip)。"
+              },
+              {
+                "h": "为 ZIP 命名",
+                "x": "使用描述性名称，方便接收者了解压缩包内容。"
+              },
+              {
+                "h": "创建并下载",
+                "x": "生成 ZIP 并保存。标准流程在浏览器内完成。"
+              },
+              {
+                "h": "打开 ZIP 检查一次",
+                "x": "在附加或上传前，检查名称、文件夹和文件。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "在浏览器标签页中将文件打包为私密 ZIP。免费、免注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP 文件还是单独附件？"
+          },
+          {
+            "t": "table",
+            "caption": "根据文件和接收者选择方式。",
+            "head": [
+              "方式",
+              "适合场景",
+              "注意事项"
+            ],
+            "rows": [
+              [
+                "ZIP 文件",
+                "多个相关文件或文件夹",
+                "接收者需要能够解压。"
+              ],
+              [
+                "单独附件",
+                "少量独立文档",
+                "顺序和文件夹结构可能丢失。"
+              ],
+              [
+                "云端分享链接",
+                "大文件或持续协作",
+                "检查访问设置和保留期限。"
+              ],
+              [
+                "合并 PDF",
+                "将多个 PDF 页面整理成一个阅读文档",
+                "仅适用于 PDF。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "创建 ZIP 会不会压缩文件？"
+          },
+          {
+            "t": "p",
+            "x": "创建 ZIP 会打包文件并保留文件夹结构，但会按原样存储文件，而不是尝试再次压缩每种格式。PDF、照片、视频、Word 文档、电子表格和已有 ZIP 通常已经压缩过。再次压缩它们节省的空间很少，却会增加时间和内存消耗。它的主要用途是形成整洁的单一压缩包，而不是保证文件更小。"
+          },
+          {
+            "t": "h2",
+            "x": "发送前检查压缩包"
+          },
+          {
+            "t": "p",
+            "x": "打开 ZIP 检查名称和文件夹结构，并确认没有误放草稿或私密源文件。ZIP 是文件容器，不是访问控制系统。如需保密，请使用获批的安全分享方式，并遵守组织政策。不要以为把文件放在一起就受到保护。"
+          },
+          {
+            "t": "h2",
+            "x": "为什么在浏览器本地打包有帮助"
+          },
+          {
+            "t": "p",
+            "x": "项目文件夹、客户素材、税务记录和个人照片都可能很敏感。创建 ZIP 在浏览器中运行，因此无需为了打包而常规上传文件。下载保存和分享位置由你决定。使用清晰的文件名，并在接收者确认收到完整压缩包前保留原始文件夹。"
+          },
+          {
+            "t": "h2",
+            "x": "打包后选择合适的工具"
+          },
+          {
+            "t": "p",
+            "x": "如果接收者只需要几页 PDF，[提取页面](/tools/extract-pages)可以创建更小的交付文件。如果需要把多个 PDF 作为一份文档阅读，[合并 PDF](/tools/merge-pdf)比 ZIP 更合适。请保留原始文件夹副本，记录压缩包内容，并在删除源文件夹前确认接收者设备可以正确解压。交付获确认前保留备份。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "可以免费创建 ZIP 文件吗？",
+            "a": "可以。添加文件或文件夹，为 ZIP 命名，创建并下载。PrintxPDF 创建 ZIP 无需注册。"
+          },
+          {
+            "q": "ZIP 会让每个文件都变小吗？",
+            "a": "不会。许多常见格式已经压缩过。ZIP 主要用于打包多个文件并保留文件夹结构。"
+          },
+          {
+            "q": "可以在浏览器中压缩文件夹吗？",
+            "a": "可以。在浏览器允许时添加文件夹，创建 ZIP，并检查下载内容是否保留预期结构。"
+          },
+          {
+            "q": "创建 ZIP 是私密的吗？",
+            "a": "标准创建 ZIP 流程在浏览器中运行；不会仅为打包而常规上传文件。"
           }
         ],
         "published": "2026-11-15",
