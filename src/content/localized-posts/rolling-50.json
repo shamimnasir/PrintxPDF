@@ -4781,6 +4781,156 @@
           "original-pdf-vs-access-copy",
           "archive-copy-vs-backup"
         ]
+      },
+      {
+        "topic": "pdf-archive-review-schedule",
+        "slug": "pdf-archive-review-schedule",
+        "cluster": "archive-expansion",
+        "title": "Cada cuánto revisar los PDF archivados",
+        "metaTitle": "Cada cuánto revisar los PDF archivados",
+        "metaDescription": "Define un calendario por riesgo para revisar PDF archivados. Gratis, sin registro, sin marca de agua y en el navegador.",
+        "primaryKeyword": "cada cuánto revisar PDF archivados",
+        "secondaryKeywords": [
+          "archive PDF review schedule",
+          "PDF preservation checks",
+          "archive integrity monitoring"
+        ],
+        "answer": "No existe un intervalo universal para revisar todos los PDF archivados. Define la frecuencia según el valor del registro, el tiempo que debe conservarse, los requisitos legales aplicables y el riesgo de que fallen el almacenamiento o el acceso. Revisa también después de una migración, una alerta de integridad o un cambio de sistema.",
+        "body": [
+          {
+            "t": "p",
+            "x": "No hay una frecuencia única que sirva para todos los PDF archivados. Crea un calendario basado en el riesgo: cuánto tiempo debe conservarse el registro, qué consecuencias tendría perderlo y qué controles de almacenamiento ya existen. Revisa los archivos cuando cambie el sistema, después de migrar datos, ante una alerta de integridad o antes de una fecha límite importante. Documenta el criterio y sigue las políticas de retención y los requisitos legales de tu organización."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo crear un calendario de revisión"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Clasifica los registros",
+                "x": "Agrupa por obligación de retención, valor operativo y consecuencia de pérdida. No uses una sola frecuencia para todo."
+              },
+              {
+                "h": "Define desencadenantes y fechas",
+                "x": "Programa revisiones periódicas razonables y añade revisiones tras migraciones, cambios de almacenamiento o alertas."
+              },
+              {
+                "h": "Comprueba acceso y legibilidad",
+                "x": "Abre una muestra representativa y verifica páginas, texto, orientación, fuentes y adjuntos relevantes."
+              },
+              {
+                "h": "Verifica controles",
+                "x": "Consulta registros, permisos, copias de seguridad y checksums conforme al proceso aprobado."
+              },
+              {
+                "h": "Registra y corrige",
+                "x": "Anota fecha, muestra, resultado, responsable y acciones. Conserva el original y no reemplaces archivos silenciosamente."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Revisa un PDF en tu pestaña. Gratis, sin registro y sin marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo elegir una frecuencia de revisión"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Factor",
+              "Pregunta",
+              "Qué hacer"
+            ],
+            "rows": [
+              [
+                "Retención",
+                "¿Cuánto tiempo debe existir el registro?",
+                "Usa el calendario aprobado y revisa antes de hitos de conservación."
+              ],
+              [
+                "Impacto",
+                "¿Qué ocurre si el PDF falta o no se abre?",
+                "Prioriza revisiones más cercanas para registros críticos."
+              ],
+              [
+                "Almacenamiento",
+                "¿Hubo migración, cambio de proveedor o alerta?",
+                "Programa una comprobación tras el evento."
+              ],
+              [
+                "Volumen",
+                "¿Se pueden revisar todos los archivos?",
+                "Usa muestreo documentado y verifica casos de alto riesgo individualmente."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "No existe un plazo universal"
+          },
+          {
+            "t": "p",
+            "x": "La frecuencia depende de la política de conservación, el soporte, los controles técnicos y las reglas aplicables. Un PDF de consulta ocasional y un registro necesario para una obligación pueden tener perfiles distintos. No inventes un plazo legal: consulta al responsable de archivos o asesoría de tu organización. El calendario debe indicar quién revisa, qué evidencia guarda y cómo se escala un fallo."
+          },
+          {
+            "t": "h2",
+            "x": "Qué revisar durante cada control"
+          },
+          {
+            "t": "p",
+            "x": "Confirma que el archivo se puede abrir, que el número y el orden de páginas tienen sentido y que el texto o las imágenes siguen legibles. Revisa metadatos descriptivos cuando sean parte del catálogo. Para una muestra, registra el método de selección. Una vista con [Lector PDF](/tools/pdf-reader) ayuda a inspeccionar el contenido, pero no sustituye los controles de preservación o verificación criptográfica."
+          },
+          {
+            "t": "h2",
+            "x": "Comprueba integridad con un proceso fiable"
+          },
+          {
+            "t": "p",
+            "x": "Si tu organización mantiene checksums, compara el valor con un registro confiable y documentado. Recalcular un checksum sin un valor anterior no demuestra que el PDF no haya cambiado. Conserva resultados, fecha, herramienta y procedimiento. Después de migrar, compara las copias según el plan de migración y revisa que las copias de seguridad puedan restaurarse."
+          },
+          {
+            "t": "h2",
+            "x": "Trata los fallos como incidentes"
+          },
+          {
+            "t": "p",
+            "x": "Si un archivo no abre, faltan páginas o el checksum difiere, no sobrescribas la única copia. Aísla la copia afectada, conserva registros y notifica al responsable según el procedimiento. Usa una copia verificada si existe y documenta la reparación. Para revisar propiedades estándar puedes usar [Editar metadatos](/tools/edit-metadata); para eliminarlas antes de compartir, utiliza [Eliminar metadatos](/tools/remove-metadata)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cada cuánto debo revisar un PDF archivado?",
+            "a": "No hay un intervalo universal. Sigue el calendario de retención de tu organización y ajusta las revisiones al valor del registro, el riesgo de almacenamiento y los requisitos aplicables. Añade controles tras migraciones o alertas."
+          },
+          {
+            "q": "¿Abrir el PDF demuestra que está intacto?",
+            "a": "No. Abrirlo demuestra que el lector puede mostrarlo, pero no prueba que los bytes sean iguales a una versión anterior. Para eso, compara un checksum con un registro confiable o usa otro control aprobado."
+          },
+          {
+            "q": "¿Debo revisar todos los PDF?",
+            "a": "Depende del riesgo, volumen y política. Puedes documentar un muestreo para colecciones de bajo riesgo y revisar individualmente registros críticos o archivos implicados en alertas."
+          },
+          {
+            "q": "¿Qué hago si un archivo archivado no abre?",
+            "a": "Conserva la copia original y los registros, evita sobrescribirla, avisa al responsable y sigue el proceso de recuperación aprobado. Comprueba una copia de seguridad o réplica verificada antes de reparar."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "pdf-checksum-basics-for-archives",
+          "pdf-archive-naming-convention",
+          "prepare-pdf-for-long-term-archive",
+          "original-pdf-vs-access-copy"
+        ]
       }
     ]
   },
@@ -9556,6 +9706,156 @@
           "original-pdf-vs-access-copy",
           "archive-copy-vs-backup"
         ]
+      },
+      {
+        "topic": "pdf-archive-review-schedule",
+        "slug": "pdf-archive-review-schedule",
+        "cluster": "archive-expansion",
+        "title": "Com que frequência revisar PDFs arquivados",
+        "metaTitle": "Com que frequência revisar PDFs arquivados",
+        "metaDescription": "Defina revisões por risco para PDFs arquivados. Grátis, sem cadastro, sem marca-d’água e no navegador.",
+        "primaryKeyword": "com que frequência revisar PDFs arquivados",
+        "secondaryKeywords": [
+          "archive PDF review schedule",
+          "PDF preservation checks",
+          "archive integrity monitoring"
+        ],
+        "answer": "Não existe um intervalo universal para revisar todos os PDFs arquivados. Defina a frequência considerando o valor do registro, o período de retenção, as exigências legais aplicáveis e o risco de falha no armazenamento ou acesso. Revise também após migrações, alertas de integridade ou mudanças de sistema.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Não há uma frequência única para todos os PDFs arquivados. Crie um calendário baseado no risco: por quanto tempo o registro precisa ser mantido, qual seria o impacto de perdê-lo e quais controles de armazenamento já existem. Revise também após mudanças de sistema, migrações, alertas de integridade ou antes de prazos importantes. Registre o critério e siga as políticas de retenção e exigências legais da organização."
+          },
+          {
+            "t": "h2",
+            "x": "Como criar um calendário de revisão"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Classifique os registros",
+                "x": "Agrupe por prazo de retenção, valor operacional e impacto da perda. Não aplique o mesmo intervalo a tudo."
+              },
+              {
+                "h": "Defina datas e gatilhos",
+                "x": "Programe revisões periódicas razoáveis e inclua verificações após migrações, mudanças de armazenamento ou alertas."
+              },
+              {
+                "h": "Confira acesso e legibilidade",
+                "x": "Abra uma amostra representativa e verifique páginas, texto, orientação, fontes e anexos relevantes."
+              },
+              {
+                "h": "Verifique os controles",
+                "x": "Consulte logs, permissões, backups e checksums conforme o processo aprovado."
+              },
+              {
+                "h": "Registre e corrija",
+                "x": "Anote data, amostra, resultado, responsável e ações. Preserve o original e não substitua arquivos sem registro."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Confira um PDF na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Como escolher a frequência de revisão"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Fator",
+              "Pergunta",
+              "Ação"
+            ],
+            "rows": [
+              [
+                "Retenção",
+                "Por quanto tempo o registro deve existir?",
+                "Siga o calendário aprovado e revise antes de marcos de retenção."
+              ],
+              [
+                "Impacto",
+                "O que ocorre se o PDF faltar ou não abrir?",
+                "Priorize revisões mais próximas para registros críticos."
+              ],
+              [
+                "Armazenamento",
+                "Houve migração, troca de fornecedor ou alerta?",
+                "Faça uma verificação após o evento."
+              ],
+              [
+                "Volume",
+                "É possível conferir todos os arquivos?",
+                "Use amostragem documentada e confira individualmente os casos de alto risco."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Não existe um prazo universal"
+          },
+          {
+            "t": "p",
+            "x": "A frequência depende da política de retenção, do meio de armazenamento, dos controles técnicos e das regras aplicáveis. Um PDF de consulta eventual e um registro necessário para uma obrigação podem ter riscos diferentes. Não invente prazo legal: consulte a área de arquivos ou assessoria da organização. O calendário deve dizer quem revisa, quais evidências guardar e como encaminhar uma falha."
+          },
+          {
+            "t": "h2",
+            "x": "O que conferir em cada revisão"
+          },
+          {
+            "t": "p",
+            "x": "Confirme que o arquivo abre, que a quantidade e a ordem das páginas fazem sentido e que texto e imagens continuam legíveis. Confira metadados descritivos se fizerem parte do catálogo. Registre o método de amostragem. O [Leitor de PDF](/tools/pdf-reader) ajuda a inspecionar o conteúdo, mas não substitui controles de preservação ou verificação criptográfica."
+          },
+          {
+            "t": "h2",
+            "x": "Verifique a integridade com um processo confiável"
+          },
+          {
+            "t": "p",
+            "x": "Se a organização mantém checksums, compare o valor com um registro confiável e documentado. Calcular um novo checksum sem um valor anterior não prova que o PDF não mudou. Guarde resultados, data, ferramenta e procedimento. Após uma migração, compare as cópias conforme o plano e confira se os backups podem ser restaurados."
+          },
+          {
+            "t": "h2",
+            "x": "Trate falhas como incidentes"
+          },
+          {
+            "t": "p",
+            "x": "Se um arquivo não abrir, faltar páginas ou o checksum divergir, não sobrescreva a única cópia. Preserve logs e avise o responsável conforme o procedimento. Use uma cópia verificada, se houver, e documente o reparo. Para conferir propriedades padrão, use [Editar metadados](/tools/edit-metadata); para removê-las antes de compartilhar, use [Remover metadados](/tools/remove-metadata)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Com que frequência devo revisar um PDF arquivado?",
+            "a": "Não há intervalo universal. Siga o calendário de retenção da organização e ajuste as revisões ao valor do registro, ao risco de armazenamento e às exigências aplicáveis. Inclua controles após migrações ou alertas."
+          },
+          {
+            "q": "Abrir o PDF prova que ele está intacto?",
+            "a": "Não. Abrir mostra que o leitor consegue exibi-lo, mas não prova que os bytes são iguais aos de uma versão anterior. Para isso, compare um checksum com um registro confiável ou use outro controle aprovado."
+          },
+          {
+            "q": "Preciso revisar todos os PDFs?",
+            "a": "Depende do risco, do volume e da política. Você pode documentar uma amostragem para coleções de baixo risco e conferir individualmente registros críticos ou arquivos com alertas."
+          },
+          {
+            "q": "O que fazer se um arquivo arquivado não abrir?",
+            "a": "Preserve o original e os registros, evite sobrescrevê-lo, avise o responsável e siga o processo aprovado de recuperação. Confira um backup ou réplica verificada antes de reparar."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "pdf-checksum-basics-for-archives",
+          "pdf-archive-naming-convention",
+          "prepare-pdf-for-long-term-archive",
+          "original-pdf-vs-access-copy"
+        ]
       }
     ]
   },
@@ -14330,6 +14630,156 @@
           "pdf-checksum-basics-for-archives",
           "original-pdf-vs-access-copy",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "pdf-archive-review-schedule",
+        "slug": "pdf-archive-review-schedule",
+        "cluster": "archive-expansion",
+        "title": "संग्रहीत PDF की समीक्षा कितनी बार करें",
+        "metaTitle": "संग्रहीत PDF की समीक्षा कितनी बार करें",
+        "metaDescription": "संग्रहीत PDF के लिए जोखिम-आधारित समीक्षा तय करें। मुफ़्त, बिना साइनअप, बिना वॉटरमार्क, ब्राउज़र में।",
+        "primaryKeyword": "संग्रहीत PDF की समीक्षा कितनी बार करें",
+        "secondaryKeywords": [
+          "archive PDF review schedule",
+          "PDF preservation checks",
+          "archive integrity monitoring"
+        ],
+        "answer": "सभी संग्रहीत PDF की समीक्षा के लिए कोई एक सार्वभौमिक अंतराल नहीं है। रिकॉर्ड का महत्व, उसे कितने समय तक रखना है, लागू कानूनी आवश्यकताएँ और स्टोरेज या पहुँच विफल होने का जोखिम देखकर आवृत्ति तय करें। माइग्रेशन, अखंडता अलर्ट या सिस्टम बदलाव के बाद भी समीक्षा करें।",
+        "body": [
+          {
+            "t": "p",
+            "x": "सभी संग्रहीत PDF के लिए एक ही समीक्षा अंतराल सही नहीं होता। जोखिम के आधार पर कैलेंडर बनाएँ: रिकॉर्ड कितने समय तक रखना है, खोने पर क्या प्रभाव होगा और स्टोरेज पर कौन से नियंत्रण लागू हैं। सिस्टम बदलाव, डेटा माइग्रेशन, अखंडता अलर्ट या किसी महत्वपूर्ण समय-सीमा से पहले भी जाँच करें। कारण लिखें और संगठन की प्रतिधारण नीति व लागू नियमों का पालन करें।"
+          },
+          {
+            "t": "h2",
+            "x": "समीक्षा कैलेंडर कैसे बनाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "रिकॉर्ड का वर्गीकरण करें",
+                "x": "प्रतिधारण अवधि, काम के महत्व और नुकसान के प्रभाव के अनुसार समूह बनाएँ। हर फ़ाइल के लिए एक ही अंतराल न रखें।"
+              },
+              {
+                "h": "तारीखें और ट्रिगर तय करें",
+                "x": "उचित नियमित समीक्षा तय करें और माइग्रेशन, स्टोरेज बदलाव या अलर्ट के बाद जाँच जोड़ें।"
+              },
+              {
+                "h": "पहुँच और पठनीयता जाँचें",
+                "x": "प्रतिनिधि नमूना खोलकर पेज, क्रम, टेक्स्ट, दिशा, फ़ॉन्ट और ज़रूरी संलग्नक देखें।"
+              },
+              {
+                "h": "नियंत्रण सत्यापित करें",
+                "x": "स्वीकृत प्रक्रिया के अनुसार लॉग, अनुमतियाँ, बैकअप और चेकसम देखें।"
+              },
+              {
+                "h": "दर्ज करें और सुधारें",
+                "x": "तारीख, नमूना, परिणाम, जिम्मेदार व्यक्ति और कार्रवाई लिखें। मूल फ़ाइल रखें और चुपचाप उसे न बदलें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "अपने टैब में PDF जाँचें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "समीक्षा अंतराल कैसे चुनें"
+          },
+          {
+            "t": "table",
+            "head": [
+              "कारक",
+              "प्रश्न",
+              "क्या करें"
+            ],
+            "rows": [
+              [
+                "प्रतिधारण",
+                "रिकॉर्ड कितने समय तक रखना है?",
+                "स्वीकृत कैलेंडर अपनाएँ और महत्वपूर्ण तारीख से पहले जाँचें।"
+              ],
+              [
+                "प्रभाव",
+                "PDF न मिले या न खुले तो क्या होगा?",
+                "महत्वपूर्ण रिकॉर्ड की समीक्षा अधिक प्राथमिकता से करें।"
+              ],
+              [
+                "स्टोरेज",
+                "क्या माइग्रेशन, प्रदाता बदलाव या अलर्ट हुआ?",
+                "घटना के बाद जाँच निर्धारित करें।"
+              ],
+              [
+                "मात्रा",
+                "क्या हर फ़ाइल जाँचना संभव है?",
+                "दस्तावेज़ित नमूना लें और उच्च जोखिम वाले रिकॉर्ड अलग से जाँचें।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "कोई सार्वभौमिक समय-सीमा नहीं है"
+          },
+          {
+            "t": "p",
+            "x": "अंतराल प्रतिधारण नीति, स्टोरेज माध्यम, तकनीकी नियंत्रण और लागू नियमों पर निर्भर है। कभी-कभार देखी जाने वाली PDF और किसी दायित्व के लिए जरूरी रिकॉर्ड के जोखिम अलग हो सकते हैं। कानूनी समय-सीमा का अनुमान न लगाएँ; संगठन के रिकॉर्ड प्रबंधक या सलाहकार से पूछें। कैलेंडर में यह भी लिखें कि कौन जाँचेगा, क्या प्रमाण रखेगा और समस्या किसे बताएगा।"
+          },
+          {
+            "t": "h2",
+            "x": "हर समीक्षा में क्या देखें"
+          },
+          {
+            "t": "p",
+            "x": "पुष्टि करें कि फ़ाइल खुलती है, पेजों की संख्या और क्रम सही है और टेक्स्ट या चित्र पढ़े जा सकते हैं। यदि सूचीकरण में वर्णनात्मक मेटाडेटा जरूरी है तो उसे भी देखें। नमूना चुनने का तरीका दर्ज करें। [PDF Reader](/tools/pdf-reader) से सामग्री देखी जा सकती है, लेकिन यह संरक्षण या क्रिप्टोग्राफ़िक सत्यापन नियंत्रणों का विकल्प नहीं है।"
+          },
+          {
+            "t": "h2",
+            "x": "विश्वसनीय प्रक्रिया से अखंडता जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "यदि संगठन चेकसम रखता है, तो उसे भरोसेमंद दर्ज मान से मिलाएँ। पुराने मान के बिना नया चेकसम बनाना यह साबित नहीं करता कि PDF बदली नहीं है। परिणाम, तारीख, टूल और प्रक्रिया दर्ज करें। माइग्रेशन के बाद योजना के अनुसार प्रतियों की तुलना करें और देखें कि बैकअप बहाल हो सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "विफलता को घटना मानें"
+          },
+          {
+            "t": "p",
+            "x": "फ़ाइल न खुले, पेज गायब हों या चेकसम अलग हो तो अकेली प्रति को ओवरराइट न करें। लॉग सुरक्षित रखें और प्रक्रिया के अनुसार जिम्मेदार व्यक्ति को बताएँ। सत्यापित प्रति उपलब्ध हो तो उसका उपयोग करें और मरम्मत दर्ज करें। मानक गुण देखने के लिए [Edit Metadata](/tools/edit-metadata) और साझा करने से पहले हटाने के लिए [Remove Metadata](/tools/remove-metadata) इस्तेमाल करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "संग्रहीत PDF कितनी बार जाँचनी चाहिए?",
+            "a": "कोई सार्वभौमिक अंतराल नहीं है। संगठन की प्रतिधारण नीति अपनाएँ और रिकॉर्ड के महत्व, स्टोरेज जोखिम और लागू नियमों के अनुसार समीक्षा करें। माइग्रेशन या अलर्ट के बाद जाँच जोड़ें।"
+          },
+          {
+            "q": "क्या PDF खोलने से साबित होता है कि वह नहीं बदली?",
+            "a": "नहीं। खुलना केवल यह दिखाता है कि रीडर फ़ाइल दिखा सकता है। बदलाव न होने की पुष्टि के लिए पुराने भरोसेमंद चेकसम या अन्य स्वीकृत नियंत्रण से तुलना करें।"
+          },
+          {
+            "q": "क्या हर PDF की समीक्षा करनी चाहिए?",
+            "a": "यह जोखिम, मात्रा और नीति पर निर्भर है। कम जोखिम वाले संग्रह के लिए दर्ज नमूना जाँच रखें और महत्वपूर्ण रिकॉर्ड या अलर्ट वाली फ़ाइलें अलग से जाँचें।"
+          },
+          {
+            "q": "संग्रहीत PDF न खुले तो क्या करें?",
+            "a": "मूल प्रति और लॉग सुरक्षित रखें, उसे ओवरराइट न करें, जिम्मेदार व्यक्ति को सूचित करें और स्वीकृत रिकवरी प्रक्रिया अपनाएँ। मरम्मत से पहले सत्यापित बैकअप या प्रति जाँचें।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "pdf-checksum-basics-for-archives",
+          "pdf-archive-naming-convention",
+          "prepare-pdf-for-long-term-archive",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
@@ -19114,6 +19564,156 @@
           "pdf-checksum-basics-for-archives",
           "original-pdf-vs-access-copy",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "pdf-archive-review-schedule",
+        "slug": "pdf-archive-review-schedule",
+        "cluster": "archive-expansion",
+        "title": "كم مرة يجب مراجعة ملفات PDF المؤرشفة",
+        "metaTitle": "كم مرة يجب مراجعة ملفات PDF المؤرشفة",
+        "metaDescription": "حدد مواعيد مراجعة ملفات PDF المؤرشفة حسب المخاطر. أداة مجانية في المتصفح، بلا تسجيل أو علامة مائية، مع إرشادات عملية للحفظ.",
+        "primaryKeyword": "كم مرة مراجعة PDF المؤرشف",
+        "secondaryKeywords": [
+          "archive PDF review schedule",
+          "PDF preservation checks",
+          "archive integrity monitoring"
+        ],
+        "answer": "لا توجد مدة موحدة لمراجعة جميع ملفات PDF المؤرشفة. حدد التكرار وفق قيمة السجل ومدة الاحتفاظ به والمتطلبات القانونية المنطبقة ومخاطر التخزين أو الوصول. أجرِ مراجعة أيضاً بعد الترحيل أو تنبيه سلامة البيانات أو تغيير النظام.",
+        "body": [
+          {
+            "t": "p",
+            "x": "لا توجد وتيرة واحدة تناسب كل ملفات PDF المؤرشفة. أنشئ جدولاً قائماً على المخاطر: مدة الاحتفاظ بالسجل، أثر فقدانه، وضوابط التخزين المتاحة. راجع الملفات بعد تغيير النظام أو ترحيل البيانات أو تنبيه سلامة، وكذلك قبل المواعيد المهمة. وثّق سبب الجدول واتبع سياسة الاحتفاظ والمتطلبات القانونية الخاصة بمؤسستك."
+          },
+          {
+            "t": "h2",
+            "x": "كيف تنشئ جدولاً للمراجعة"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "صنّف السجلات",
+                "x": "اجمع الملفات حسب مدة الاحتفاظ والقيمة التشغيلية وأثر الفقد. لا تستخدم موعداً واحداً لكل شيء."
+              },
+              {
+                "h": "حدد المواعيد والمحفزات",
+                "x": "ضع مراجعات دورية معقولة وأضف مراجعة بعد الترحيل أو تغيير التخزين أو التنبيهات."
+              },
+              {
+                "h": "تحقق من الوصول والوضوح",
+                "x": "افتح عينة ممثلة وافحص الصفحات وترتيبها والنص والاتجاه والخطوط والمرفقات المهمة."
+              },
+              {
+                "h": "راجع الضوابط",
+                "x": "افحص السجلات والصلاحيات والنسخ الاحتياطية والبصمات الرقمية وفق الإجراء المعتمد."
+              },
+              {
+                "h": "وثّق وصحح",
+                "x": "سجل التاريخ والعينة والنتيجة والمسؤول والإجراء. احتفظ بالأصل ولا تستبدل الملفات بصمت."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "راجع PDF في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "كيف تختار وتيرة المراجعة"
+          },
+          {
+            "t": "table",
+            "head": [
+              "العامل",
+              "السؤال",
+              "الإجراء"
+            ],
+            "rows": [
+              [
+                "الاحتفاظ",
+                "كم يجب أن يبقى السجل؟",
+                "اتبع الجدول المعتمد وراجع قبل المواعيد المهمة."
+              ],
+              [
+                "الأثر",
+                "ماذا يحدث إذا فُقد الملف أو تعذر فتحه؟",
+                "قدّم السجلات الحرجة لمراجعة أقرب."
+              ],
+              [
+                "التخزين",
+                "هل حدث ترحيل أو تغيير مزود أو تنبيه؟",
+                "أجرِ فحصاً بعد الحدث."
+              ],
+              [
+                "الحجم",
+                "هل يمكن فحص كل الملفات؟",
+                "استخدم عينة موثقة وافحص الحالات عالية المخاطر فردياً."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "لا توجد مدة عالمية واحدة"
+          },
+          {
+            "t": "p",
+            "x": "تعتمد الوتيرة على سياسة الاحتفاظ ووسيط التخزين والضوابط التقنية والقواعد المنطبقة. قد تختلف مخاطر ملف للرجوع العرضي عن سجل مطلوب لالتزام رسمي. لا تخمّن المدد القانونية؛ استشر مسؤول السجلات أو المستشار في مؤسستك. اذكر في الجدول من يراجع وما الأدلة التي يحتفظ بها وكيفية تصعيد المشكلة."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي يجب فحصه في كل مراجعة"
+          },
+          {
+            "t": "p",
+            "x": "تأكد من فتح الملف ومن منطق عدد الصفحات وترتيبها ووضوح النص أو الصور. راجع البيانات الوصفية الوصفية إذا كانت جزءاً من الفهرس، ووثّق طريقة اختيار العينة. يساعد [قارئ PDF](/tools/pdf-reader) على معاينة المحتوى، لكنه لا يحل محل ضوابط الحفظ أو التحقق التشفيري."
+          },
+          {
+            "t": "h2",
+            "x": "تحقق من السلامة بإجراء موثوق"
+          },
+          {
+            "t": "p",
+            "x": "إذا كانت المؤسسة تحتفظ ببصمات رقمية، فقارن القيمة بسجل موثوق وموثق. إنشاء بصمة جديدة بلا قيمة سابقة لا يثبت أن الملف لم يتغير. احتفظ بالنتائج والتاريخ والأداة والإجراء. وبعد الترحيل، قارن النسخ وفق خطة الترحيل وتحقق من إمكانية استعادة النسخ الاحتياطية."
+          },
+          {
+            "t": "h2",
+            "x": "تعامل مع الأعطال كحوادث"
+          },
+          {
+            "t": "p",
+            "x": "إذا تعذر فتح الملف أو نقصت صفحات أو اختلفت البصمة، فلا تستبدل النسخة الوحيدة. احتفظ بالسجلات وأبلغ المسؤول وفق الإجراء. استخدم نسخة متحققاً منها إن وجدت ووثّق الإصلاح. لمراجعة الخصائص القياسية استخدم [تحرير البيانات الوصفية](/tools/edit-metadata)، ولإزالتها قبل المشاركة استخدم [إزالة البيانات الوصفية](/tools/remove-metadata)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "كم مرة أراجع PDF مؤرشفاً؟",
+            "a": "لا توجد مدة موحدة. اتبع جدول الاحتفاظ في مؤسستك واضبط المراجعة حسب قيمة السجل ومخاطر التخزين والمتطلبات المنطبقة. أضف فحصاً بعد الترحيل أو التنبيهات."
+          },
+          {
+            "q": "هل فتح الملف يثبت سلامته؟",
+            "a": "لا. فتحه يعني أن القارئ يستطيع عرضه، لكنه لا يثبت تطابق البايتات مع نسخة سابقة. قارن البصمة بسجل موثوق أو استخدم ضابطاً معتمداً آخر."
+          },
+          {
+            "q": "هل يجب مراجعة كل ملفات PDF؟",
+            "a": "يعتمد ذلك على المخاطر والحجم والسياسة. وثّق أخذ عينة للمجموعات منخفضة المخاطر وافحص السجلات الحرجة أو الملفات التي ظهرت بشأنها تنبيهات بشكل فردي."
+          },
+          {
+            "q": "ماذا أفعل إذا لم يفتح ملف مؤرشف؟",
+            "a": "احتفظ بالأصل والسجلات، ولا تستبدله، وأبلغ المسؤول واتبع إجراء الاستعادة المعتمد. تحقق من نسخة احتياطية أو نسخة متماثلة قبل الإصلاح."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "pdf-checksum-basics-for-archives",
+          "pdf-archive-naming-convention",
+          "prepare-pdf-for-long-term-archive",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
@@ -23902,6 +24502,156 @@
           "original-pdf-vs-access-copy",
           "archive-copy-vs-backup"
         ]
+      },
+      {
+        "topic": "pdf-archive-review-schedule",
+        "slug": "pdf-archive-review-schedule",
+        "cluster": "archive-expansion",
+        "title": "আর্কাইভ করা PDF কতবার পর্যালোচনা করবেন",
+        "metaTitle": "আর্কাইভ করা PDF কতবার পর্যালোচনা করবেন",
+        "metaDescription": "ঝুঁকি অনুযায়ী আর্কাইভ PDF পর্যালোচনার সময় ঠিক করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া, ব্রাউজারে।",
+        "primaryKeyword": "আর্কাইভ PDF কতবার পর্যালোচনা করবেন",
+        "secondaryKeywords": [
+          "archive PDF review schedule",
+          "PDF preservation checks",
+          "archive integrity monitoring"
+        ],
+        "answer": "সব আর্কাইভ PDF পর্যালোচনার জন্য কোনো একক সর্বজনীন সময়সীমা নেই। রেকর্ডের গুরুত্ব, কত দিন রাখতে হবে, প্রযোজ্য আইনি শর্ত এবং স্টোরেজ বা অ্যাক্সেসের ঝুঁকি দেখে সময় নির্ধারণ করুন। মাইগ্রেশন, অখণ্ডতা সতর্কতা বা সিস্টেম পরিবর্তনের পরও পর্যালোচনা করুন।",
+        "body": [
+          {
+            "t": "p",
+            "x": "সব আর্কাইভ PDF-এর জন্য একটিই পর্যালোচনা সময়সূচি উপযুক্ত নয়। ঝুঁকি অনুযায়ী ক্যালেন্ডার করুন: রেকর্ড কত দিন রাখতে হবে, হারালে কী প্রভাব পড়বে এবং স্টোরেজে কী নিয়ন্ত্রণ আছে। সিস্টেম পরিবর্তন, ডেটা মাইগ্রেশন, অখণ্ডতা সতর্কতা বা গুরুত্বপূর্ণ সময়সীমার আগেও পরীক্ষা করুন। কারণ লিখে রাখুন এবং প্রতিষ্ঠানের সংরক্ষণ নীতি ও প্রযোজ্য আইন অনুসরণ করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "পর্যালোচনা ক্যালেন্ডার কীভাবে তৈরি করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "রেকর্ড শ্রেণিবদ্ধ করুন",
+                "x": "সংরক্ষণকাল, কাজের গুরুত্ব ও হারানোর প্রভাব অনুযায়ী ভাগ করুন। সব কিছুর জন্য একই বিরতি রাখবেন না।"
+              },
+              {
+                "h": "তারিখ ও ট্রিগার ঠিক করুন",
+                "x": "যুক্তিসংগত নিয়মিত পর্যালোচনা রাখুন; মাইগ্রেশন, স্টোরেজ বদল বা সতর্কতার পর অতিরিক্ত পরীক্ষা যোগ করুন।"
+              },
+              {
+                "h": "অ্যাক্সেস ও পাঠযোগ্যতা দেখুন",
+                "x": "প্রতিনিধি নমুনা খুলে পৃষ্ঠা, ক্রম, লেখা, দিক, ফন্ট ও প্রাসঙ্গিক সংযুক্তি পরীক্ষা করুন।"
+              },
+              {
+                "h": "নিয়ন্ত্রণ যাচাই করুন",
+                "x": "অনুমোদিত পদ্ধতিতে লগ, অনুমতি, ব্যাকআপ ও চেকসাম দেখুন।"
+              },
+              {
+                "h": "নথিভুক্ত করে সংশোধন করুন",
+                "x": "তারিখ, নমুনা, ফল, দায়িত্বপ্রাপ্ত ব্যক্তি ও পদক্ষেপ লিখুন। মূল কপি রাখুন, নীরবে প্রতিস্থাপন করবেন না।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "আপনার ট্যাবেই PDF দেখুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "পর্যালোচনার সময় কীভাবে ঠিক করবেন"
+          },
+          {
+            "t": "table",
+            "head": [
+              "বিষয়",
+              "প্রশ্ন",
+              "করণীয়"
+            ],
+            "rows": [
+              [
+                "সংরক্ষণ",
+                "রেকর্ড কত দিন রাখতে হবে?",
+                "অনুমোদিত ক্যালেন্ডার মেনে গুরুত্বপূর্ণ সময়ের আগে দেখুন।"
+              ],
+              [
+                "প্রভাব",
+                "PDF না পেলে বা না খুললে কী হবে?",
+                "গুরুত্বপূর্ণ রেকর্ড আগে পর্যালোচনা করুন।"
+              ],
+              [
+                "স্টোরেজ",
+                "মাইগ্রেশন, সেবা প্রদানকারী বদল বা সতর্কতা হয়েছে?",
+                "ঘটনার পর পরীক্ষা করুন।"
+              ],
+              [
+                "পরিমাণ",
+                "সব ফাইল পরীক্ষা করা সম্ভব?",
+                "নথিভুক্ত নমুনা নিন এবং উচ্চ ঝুঁকির ফাইল আলাদাভাবে দেখুন।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "সবার জন্য এক সময়সীমা নেই"
+          },
+          {
+            "t": "p",
+            "x": "সময়সূচি নির্ভর করে সংরক্ষণ নীতি, স্টোরেজ মাধ্যম, প্রযুক্তিগত নিয়ন্ত্রণ ও প্রযোজ্য নিয়মের ওপর। মাঝে মাঝে দেখা PDF এবং বাধ্যবাধকতার জন্য রাখা রেকর্ডের ঝুঁকি এক নয়। আইনি সময়সীমা অনুমান করবেন না; প্রতিষ্ঠানের রেকর্ড ব্যবস্থাপক বা উপদেষ্টার সঙ্গে কথা বলুন। কে দেখবে, কী প্রমাণ রাখবে এবং সমস্যা কীভাবে জানাবে, ক্যালেন্ডারে তা লিখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রতিবার কী পরীক্ষা করবেন"
+          },
+          {
+            "t": "p",
+            "x": "ফাইল খোলে কি না, পৃষ্ঠা সংখ্যা ও ক্রম ঠিক কি না এবং লেখা বা ছবি পড়া যায় কি না দেখুন। ক্যাটালগের অংশ হলে বর্ণনামূলক মেটাডেটাও দেখুন। নমুনা বাছার পদ্ধতি নথিভুক্ত করুন। [PDF Reader](/tools/pdf-reader) দিয়ে বিষয়বস্তু দেখা যায়, তবে এটি সংরক্ষণ বা ক্রিপ্টোগ্রাফিক যাচাইয়ের নিয়ন্ত্রণের বিকল্প নয়।"
+          },
+          {
+            "t": "h2",
+            "x": "বিশ্বস্ত পদ্ধতিতে অখণ্ডতা যাচাই করুন"
+          },
+          {
+            "t": "p",
+            "x": "প্রতিষ্ঠান চেকসাম রাখলে বিশ্বস্ত নথিভুক্ত মানের সঙ্গে তুলনা করুন। আগের মান ছাড়া নতুন চেকসাম তৈরি করলে PDF বদলায়নি তা প্রমাণ হয় না। ফল, তারিখ, টুল ও পদ্ধতি রাখুন। মাইগ্রেশনের পর পরিকল্পনা অনুযায়ী কপি তুলনা করুন এবং ব্যাকআপ পুনরুদ্ধার করা যায় কি না দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সমস্যাকে ঘটনা হিসেবে নিন"
+          },
+          {
+            "t": "p",
+            "x": "ফাইল না খুললে, পৃষ্ঠা কম থাকলে বা চেকসাম না মিললে একমাত্র কপি ওভাররাইট করবেন না। লগ রাখুন এবং প্রক্রিয়া অনুযায়ী দায়িত্বপ্রাপ্ত ব্যক্তিকে জানান। যাচাইকৃত কপি থাকলে সেটি ব্যবহার করে মেরামত নথিভুক্ত করুন। সাধারণ বৈশিষ্ট্য দেখতে [Edit Metadata](/tools/edit-metadata), আর শেয়ারের আগে সরাতে [Remove Metadata](/tools/remove-metadata) ব্যবহার করুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "আর্কাইভ PDF কতবার পরীক্ষা করব?",
+            "a": "একটি সর্বজনীন সময়সীমা নেই। প্রতিষ্ঠানের সংরক্ষণ ক্যালেন্ডার মানুন এবং রেকর্ডের গুরুত্ব, স্টোরেজ ঝুঁকি ও প্রযোজ্য শর্ত অনুযায়ী সময় ঠিক করুন। মাইগ্রেশন বা সতর্কতার পর পরীক্ষা যোগ করুন।"
+          },
+          {
+            "q": "PDF খুললেই কি অক্ষত থাকা প্রমাণ হয়?",
+            "a": "না। খোলা মানে রিডার ফাইল দেখাতে পারছে, আগের সংস্করণের সঙ্গে বাইট এক তা নয়। বিশ্বস্ত রেকর্ডের চেকসাম বা অনুমোদিত নিয়ন্ত্রণের সঙ্গে তুলনা করুন।"
+          },
+          {
+            "q": "সব PDF পর্যালোচনা করতে হবে?",
+            "a": "ঝুঁকি, পরিমাণ ও নীতির ওপর নির্ভর করে। কম ঝুঁকির সংগ্রহে নথিভুক্ত নমুনা নিতে পারেন; গুরুত্বপূর্ণ রেকর্ড বা সতর্কতাপ্রাপ্ত ফাইল আলাদাভাবে দেখুন।"
+          },
+          {
+            "q": "আর্কাইভ ফাইল না খুললে কী করব?",
+            "a": "মূল কপি ও লগ রাখুন, ওভাররাইট করবেন না, দায়িত্বপ্রাপ্ত ব্যক্তিকে জানান এবং অনুমোদিত পুনরুদ্ধার পদ্ধতি অনুসরণ করুন। মেরামতের আগে যাচাইকৃত ব্যাকআপ দেখুন।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "pdf-checksum-basics-for-archives",
+          "pdf-archive-naming-convention",
+          "prepare-pdf-for-long-term-archive",
+          "original-pdf-vs-access-copy"
+        ]
       }
     ]
   },
@@ -28676,6 +29426,156 @@
           "pdf-checksum-basics-for-archives",
           "original-pdf-vs-access-copy",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "pdf-archive-review-schedule",
+        "slug": "pdf-archive-review-schedule",
+        "cluster": "archive-expansion",
+        "title": "Bao lâu nên kiểm tra PDF đã lưu trữ",
+        "metaTitle": "Bao lâu nên kiểm tra PDF đã lưu trữ",
+        "metaDescription": "Lập lịch kiểm tra PDF lưu trữ theo rủi ro. Miễn phí, không đăng ký, không watermark, ngay trong trình duyệt.",
+        "primaryKeyword": "bao lâu kiểm tra PDF lưu trữ",
+        "secondaryKeywords": [
+          "archive PDF review schedule",
+          "PDF preservation checks",
+          "archive integrity monitoring"
+        ],
+        "answer": "Không có một khoảng thời gian chung để kiểm tra mọi PDF lưu trữ. Hãy đặt lịch dựa trên giá trị hồ sơ, thời hạn lưu, yêu cầu pháp lý áp dụng và rủi ro về lưu trữ hoặc truy cập. Kiểm tra thêm sau khi di chuyển dữ liệu, có cảnh báo toàn vẹn hoặc thay đổi hệ thống.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Không có một lịch kiểm tra phù hợp cho mọi PDF lưu trữ. Hãy lập lịch theo rủi ro: hồ sơ cần giữ bao lâu, hậu quả nếu mất là gì và đang có những biện pháp lưu trữ nào. Kiểm tra thêm sau khi thay đổi hệ thống, di chuyển dữ liệu, có cảnh báo toàn vẹn hoặc trước mốc quan trọng. Ghi lại lý do và tuân theo chính sách lưu giữ cùng yêu cầu pháp lý của tổ chức."
+          },
+          {
+            "t": "h2",
+            "x": "Cách lập lịch kiểm tra"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Phân loại hồ sơ",
+                "x": "Nhóm theo thời hạn lưu, giá trị vận hành và hậu quả khi mất. Không áp dụng một chu kỳ cho tất cả."
+              },
+              {
+                "h": "Đặt ngày và sự kiện kích hoạt",
+                "x": "Lên lịch định kỳ hợp lý, đồng thời kiểm tra sau khi di chuyển dữ liệu, đổi nơi lưu hoặc có cảnh báo."
+              },
+              {
+                "h": "Kiểm tra khả năng truy cập",
+                "x": "Mở mẫu đại diện và xem trang, thứ tự, văn bản, hướng trang, phông chữ và tệp đính kèm liên quan."
+              },
+              {
+                "h": "Xác minh biện pháp kiểm soát",
+                "x": "Xem nhật ký, quyền truy cập, bản sao lưu và checksum theo quy trình được duyệt."
+              },
+              {
+                "h": "Ghi nhận và khắc phục",
+                "x": "Ghi ngày, mẫu, kết quả, người phụ trách và hành động. Giữ bản gốc, không âm thầm thay thế."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Kiểm tra PDF ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Cách chọn chu kỳ kiểm tra"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Yếu tố",
+              "Câu hỏi",
+              "Việc cần làm"
+            ],
+            "rows": [
+              [
+                "Thời hạn lưu",
+                "Hồ sơ cần được giữ bao lâu?",
+                "Theo lịch đã duyệt và kiểm tra trước các mốc lưu giữ."
+              ],
+              [
+                "Tác động",
+                "Điều gì xảy ra nếu PDF mất hoặc không mở được?",
+                "Ưu tiên kiểm tra thường xuyên hơn cho hồ sơ quan trọng."
+              ],
+              [
+                "Lưu trữ",
+                "Có di chuyển dữ liệu, đổi nhà cung cấp hay cảnh báo không?",
+                "Kiểm tra sau sự kiện."
+              ],
+              [
+                "Khối lượng",
+                "Có thể kiểm tra từng tệp không?",
+                "Lấy mẫu có ghi chép và kiểm tra riêng các trường hợp rủi ro cao."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Không có thời hạn chung cho mọi hồ sơ"
+          },
+          {
+            "t": "p",
+            "x": "Chu kỳ phụ thuộc vào chính sách lưu giữ, phương tiện lưu trữ, biện pháp kỹ thuật và quy định áp dụng. PDF chỉ dùng tham khảo và hồ sơ phục vụ nghĩa vụ chính thức có thể có mức rủi ro khác nhau. Đừng tự đặt thời hạn pháp lý; hãy hỏi người phụ trách lưu trữ hoặc cố vấn của tổ chức. Lịch cần nêu ai kiểm tra, lưu bằng chứng nào và báo lỗi ra sao."
+          },
+          {
+            "t": "h2",
+            "x": "Cần kiểm tra gì trong mỗi lần rà soát"
+          },
+          {
+            "t": "p",
+            "x": "Xác nhận tệp mở được, số lượng và thứ tự trang hợp lý, văn bản hoặc hình ảnh vẫn đọc được. Kiểm tra siêu dữ liệu mô tả nếu chúng thuộc danh mục. Ghi lại cách chọn mẫu. [Trình đọc PDF](/tools/pdf-reader) giúp xem nội dung nhưng không thay thế biện pháp bảo quản hoặc xác minh mật mã."
+          },
+          {
+            "t": "h2",
+            "x": "Xác minh tính toàn vẹn bằng quy trình tin cậy"
+          },
+          {
+            "t": "p",
+            "x": "Nếu tổ chức lưu checksum, hãy so sánh với giá trị đã ghi nhận đáng tin cậy. Tạo checksum mới mà không có giá trị cũ không chứng minh PDF chưa thay đổi. Lưu kết quả, ngày, công cụ và quy trình. Sau khi di chuyển, so sánh các bản theo kế hoạch và kiểm tra khả năng khôi phục bản sao lưu."
+          },
+          {
+            "t": "h2",
+            "x": "Xử lý lỗi như một sự cố"
+          },
+          {
+            "t": "p",
+            "x": "Nếu tệp không mở, thiếu trang hoặc checksum khác, đừng ghi đè bản duy nhất. Giữ nhật ký và báo người phụ trách theo quy trình. Dùng bản sao đã xác minh nếu có và ghi lại việc sửa chữa. Dùng [Sửa siêu dữ liệu](/tools/edit-metadata) để xem thuộc tính chuẩn hoặc [Xóa siêu dữ liệu](/tools/remove-metadata) trước khi chia sẻ."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Bao lâu nên kiểm tra PDF lưu trữ?",
+            "a": "Không có chu kỳ chung. Theo lịch lưu giữ của tổ chức và điều chỉnh theo giá trị hồ sơ, rủi ro lưu trữ và quy định áp dụng. Thêm lần kiểm tra sau khi di chuyển dữ liệu hoặc có cảnh báo."
+          },
+          {
+            "q": "Mở được PDF có chứng minh tệp còn nguyên không?",
+            "a": "Không. Mở được chỉ cho thấy trình đọc có thể hiển thị tệp, không chứng minh byte giống bản trước. Hãy so checksum với hồ sơ tin cậy hoặc dùng biện pháp đã duyệt."
+          },
+          {
+            "q": "Có cần kiểm tra mọi PDF không?",
+            "a": "Tùy rủi ro, khối lượng và chính sách. Có thể lấy mẫu được ghi nhận cho bộ sưu tập ít rủi ro và kiểm tra riêng hồ sơ quan trọng hoặc tệp có cảnh báo."
+          },
+          {
+            "q": "Nếu PDF lưu trữ không mở được thì sao?",
+            "a": "Giữ bản gốc và nhật ký, không ghi đè, báo người phụ trách và theo quy trình khôi phục được duyệt. Kiểm tra bản sao lưu đã xác minh trước khi sửa."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "pdf-checksum-basics-for-archives",
+          "pdf-archive-naming-convention",
+          "prepare-pdf-for-long-term-archive",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
@@ -33460,6 +34360,156 @@
           "pdf-checksum-basics-for-archives",
           "original-pdf-vs-access-copy",
           "archive-copy-vs-backup"
+        ]
+      },
+      {
+        "topic": "pdf-archive-review-schedule",
+        "slug": "pdf-archive-review-schedule",
+        "cluster": "archive-expansion",
+        "title": "归档 PDF 应多久检查一次",
+        "metaTitle": "归档 PDF 应多久检查一次",
+        "metaDescription": "按风险制定归档 PDF 检查计划，遵循保存期限并核验文件。免费、无需注册、无水印，可在浏览器中使用。",
+        "primaryKeyword": "归档 PDF 多久检查一次",
+        "secondaryKeywords": [
+          "archive PDF review schedule",
+          "PDF preservation checks",
+          "archive integrity monitoring"
+        ],
+        "answer": "没有适用于所有归档 PDF 的统一检查周期。应根据记录价值、保存期限、适用法规，以及存储或访问风险制定频率。数据迁移、完整性告警或系统变更后也应检查。",
+        "body": [
+          {
+            "t": "p",
+            "x": "没有一个检查周期适合所有归档 PDF。请按风险制定计划：记录需要保存多久，丢失会造成什么影响，现有存储控制有哪些。系统变更、数据迁移、完整性告警后，以及重要期限到来前，都应安排检查。记录制定计划的依据，并遵循组织的保留政策和适用法规。"
+          },
+          {
+            "t": "h2",
+            "x": "如何制定检查计划"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "对记录分类",
+                "x": "按保留期限、业务价值和丢失后果分组，不要所有文件共用一个周期。"
+              },
+              {
+                "h": "设定日期和触发条件",
+                "x": "安排合理的定期检查，并在迁移、存储变更或告警后增加检查。"
+              },
+              {
+                "h": "检查可访问性和可读性",
+                "x": "打开有代表性的样本，核对页数、顺序、文字、方向、字体和相关附件。"
+              },
+              {
+                "h": "核验控制措施",
+                "x": "按已批准流程检查日志、权限、备份和校验和。"
+              },
+              {
+                "h": "记录并修正",
+                "x": "记录日期、样本、结果、负责人和处理措施。保留原件，不要悄悄覆盖文件。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "在当前标签页检查 PDF。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "如何选择检查周期"
+          },
+          {
+            "t": "table",
+            "head": [
+              "因素",
+              "问题",
+              "建议做法"
+            ],
+            "rows": [
+              [
+                "保存期限",
+                "记录需要保存多久？",
+                "遵循已批准的计划，并在关键期限前检查。"
+              ],
+              [
+                "影响",
+                "PDF 丢失或打不开会怎样？",
+                "优先检查关键记录。"
+              ],
+              [
+                "存储",
+                "是否迁移数据、更换服务商或收到告警？",
+                "在事件后安排检查。"
+              ],
+              [
+                "数量",
+                "能否逐个检查所有文件？",
+                "记录抽样方法，并单独检查高风险记录。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "没有统一适用的周期"
+          },
+          {
+            "t": "p",
+            "x": "检查频率取决于保留政策、存储介质、技术控制和适用规则。偶尔查阅的 PDF 与履行义务所需的记录，风险可能不同。不要自行猜测法定期限；请咨询组织的档案负责人或法律顾问。计划应说明由谁检查、保留哪些证据，以及发现问题后如何升级处理。"
+          },
+          {
+            "t": "h2",
+            "x": "每次检查要看什么"
+          },
+          {
+            "t": "p",
+            "x": "确认文件可以打开，页数和顺序合理，文字或图像仍然清晰。如果描述性元数据属于目录要求，也要检查。记录样本的选取方法。[PDF 阅读器](/tools/pdf-reader)可帮助查看内容，但不能替代保存控制或加密验证流程。"
+          },
+          {
+            "t": "h2",
+            "x": "使用可信流程检查完整性"
+          },
+          {
+            "t": "p",
+            "x": "如果组织保存校验和，请与可信且有记录的历史值比较。没有旧值时重新计算校验和，不能证明 PDF 未改变。保存结果、日期、工具和流程。迁移后按计划比较副本，并确认备份能够恢复。"
+          },
+          {
+            "t": "h2",
+            "x": "将故障作为事件处理"
+          },
+          {
+            "t": "p",
+            "x": "如果文件打不开、缺页或校验和不一致，不要覆盖唯一副本。保留日志并按流程通知负责人。有已验证副本时按规定恢复，并记录修复过程。查看标准属性可用[编辑元数据](/tools/edit-metadata)；分享前移除属性可用[删除元数据](/tools/remove-metadata)。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "归档 PDF 应多久检查一次？",
+            "a": "没有统一周期。请遵循组织的保存计划，并根据记录价值、存储风险和适用要求调整。数据迁移或告警后增加检查。"
+          },
+          {
+            "q": "PDF 能打开就代表文件完整吗？",
+            "a": "不能。能打开只说明阅读器可以显示文件，并不能证明字节与以前相同。应与可信记录中的校验和或其他已批准控制进行比较。"
+          },
+          {
+            "q": "是否需要检查每个 PDF？",
+            "a": "这取决于风险、数量和政策。低风险集合可采用有记录的抽样检查；关键记录或收到告警的文件应单独检查。"
+          },
+          {
+            "q": "归档 PDF 打不开怎么办？",
+            "a": "保留原件和日志，不要覆盖，通知负责人并遵循已批准的恢复流程。修复前先检查已验证的备份或副本。"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "edit-metadata",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "pdf-checksum-basics-for-archives",
+          "pdf-archive-naming-convention",
+          "prepare-pdf-for-long-term-archive",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
