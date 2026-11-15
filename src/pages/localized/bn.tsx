@@ -1,4 +1,5 @@
 import rolling51 from '../../content/localized-posts/rolling-51.json'
+import rolling52 from '../../content/localized-posts/rolling-52.json'
 import data from '../../content/localized-posts/bn.json'
 import batch1 from '../../content/localized-posts/bn-chatgpt-1.json'
 import batch2 from '../../content/localized-posts/bn-chatgpt-2.json'
@@ -12,5 +13,5 @@ import batch9 from '../../content/localized-posts/bn-chatgpt-9.json'
 import batch10 from '../../content/localized-posts/bn-chatgpt-10.json'
 import batch11 from '../../content/localized-posts/bn-chatgpt-11.json'
 import { createLocalizedGuidesPage } from './createLocalizedGuidesPage'
-const BengaliGuidesPage = createLocalizedGuidesPage('bn', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides, ...batch11.guides, ...rolling51.find((entry) => entry.locale === 'bn')!.guides])
+const BengaliGuidesPage = createLocalizedGuidesPage('bn', [...data.guides, ...batch1.guides, ...batch2.guides, ...batch3.guides, ...batch4.guides, ...batch5.guides, ...batch6.guides, ...batch7.guides, ...batch8.guides, ...batch9.guides, ...batch10.guides, ...batch11.guides, ...rolling51.find((entry) => entry.locale === 'bn')!.guides, ...rolling52.find((entry) => entry.locale === 'bn')!.guides])
 export default BengaliGuidesPage
