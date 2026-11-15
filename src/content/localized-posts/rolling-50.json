@@ -7157,6 +7157,141 @@
           "share-draft-pdf-safely",
           "client-pdf-handoff-packet"
         ]
+      },
+      {
+        "topic": "client-pdf-handoff-packet",
+        "slug": "client-pdf-handoff-packet",
+        "title": "Cómo preparar un paquete PDF para entregar a un cliente",
+        "metaTitle": "Cómo preparar un paquete PDF para entregar a un cliente",
+        "metaDescription": "Prepara un paquete PDF para clientes: ordena archivos, combina copias, revisa formularios y protege la privacidad. Gratis y privado en el navegador.",
+        "keyword": "preparar paquete PDF para cliente",
+        "secondaryKeywords": [
+          "combinar PDF para entregar al cliente",
+          "orden de documentos en un paquete PDF",
+          "preparar anexos PDF"
+        ],
+        "answer": "Para preparar un paquete PDF para un cliente, reúne solo los archivos aprobados, ordénalos como debe leerlos, aplana los formularios rellenables si las respuestas deben quedar visibles, combina las copias y revisa el PDF resultante antes de compartirlo. Merge PDF de PrintxPDF funciona en el navegador; los archivos no se suben.",
+        "tool": "merge-pdf",
+        "ctaLabel": "Combinar PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Entrega un solo paquete PDF claro: selecciona los documentos aprobados, define su orden, prepara los formularios y anexos, combina las copias y revisa el resultado. Merge PDF de PrintxPDF une los archivos en tu navegador y conserva las páginas sin volverlas imágenes. Guarda las fuentes originales; la combinación no conserva algunos elementos de documento, como marcadores y campos de formulario interactivos."
+          },
+          {
+            "t": "h2",
+            "x": "Ordena los documentos antes de combinarlos"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Selecciona únicamente los documentos aprobados",
+                "x": "Reúne la carta de entrega, el documento principal y los anexos necesarios. Separa las versiones de trabajo y elimina duplicados."
+              },
+              {
+                "h": "Define el orden y prepara los archivos",
+                "x": "Coloca primero la carta o portada, después el documento principal y al final los anexos. Si un formulario debe mostrar sus respuestas sin campos interactivos, usa [Aplanar PDF](/tools/flatten-pdf) antes de combinar."
+              },
+              {
+                "h": "Combina los PDF en el orden previsto",
+                "x": "Abre [Combinar PDF](/tools/merge-pdf), añade los archivos y usa las flechas para ordenarlos. Revisa la lista antes de ejecutar; el paquete seguirá ese orden."
+              },
+              {
+                "h": "Abre y revisa el paquete completo",
+                "x": "Comprueba páginas, orientación, texto, cifras, firmas, formularios y anexos. La combinación no mantiene marcadores, metadatos globales ni campos rellenables. Usa [Lector PDF](/tools/pdf-reader) para revisar la copia."
+              },
+              {
+                "h": "Nombra y comparte la versión aprobada",
+                "x": "Usa un nombre con cliente, contenido, estado, fecha y versión. Confirma destinatario y permisos; si el documento contiene información confidencial, aplica las medidas de privacidad adecuadas antes de enviarlo."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "merge-pdf",
+            "x": "Combina PDF gratis en tu navegador, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Qué conserva la combinación"
+          },
+          {
+            "t": "p",
+            "x": "Un paquete de entrega puede incluir una carta, una propuesta o contrato final, formularios completados, informes y anexos. Añade solo lo que el cliente necesita y coloca los documentos en un orden que tenga sentido sin explicaciones adicionales. Una página índice sencilla puede indicar el contenido y la secuencia. Merge PDF copia las páginas completas en el orden de la lista, sin redibujar el texto ni las imágenes. Sin embargo, la combinación no traslada algunos datos del documento entero: los marcadores no se conservan y los campos de formulario dejan de ser interactivos. Si las respuestas deben permanecer visibles, aplana el formulario antes de combinarlo. Guarda las fuentes porque el proceso no se puede deshacer dentro del paquete final."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa privacidad y propiedades"
+          },
+          {
+            "t": "p",
+            "x": "Después de combinar, revisa cada parte y la transición entre ellas. Confirma que no falten páginas, que el orden sea correcto y que los números, firmas y anexos correspondan al cliente. Si el archivo contiene información que no debe compartirse, usa [Redactar PDF](/tools/redact-pdf); una portada o marca de agua no elimina contenido. La herramienta de combinación procesa los documentos localmente en tu pestaña: no se suben, no hace falta crear cuenta y no se añade marca de agua. Para preparar una copia compartible, revisa las propiedades del documento y quita las estándar si hace falta con [Eliminar metadatos](/tools/remove-metadata). Luego conserva la copia aprobada con un nombre de versión claro."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Elemento",
+              "Qué hacer",
+              "Nota"
+            ],
+            "rows": [
+              [
+                "Orden de lectura",
+                "Carta, documento principal, anexos",
+                "El resultado sigue el orden de la lista"
+              ],
+              [
+                "Campos de formulario",
+                "Aplanar una copia antes",
+                "Los campos interactivos pueden dejar de funcionar"
+              ],
+              [
+                "Privacidad",
+                "Redactar y revisar propiedades",
+                "El merge no elimina datos confidenciales"
+              ],
+              [
+                "Entrega",
+                "Nombrar, abrir y comprobar",
+                "Conserva fuentes y copia aprobada"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Combinar PDF conserva la calidad?",
+            "a": "Sí. Merge PDF copia las páginas completas en el nuevo archivo, incluidos texto e imágenes, en lugar de convertirlas en capturas. La apariencia y nitidez de origen se mantienen."
+          },
+          {
+            "q": "¿Se conservan los campos rellenables al combinar?",
+            "a": "No siempre. Los campos interactivos pueden dejar de funcionar en el PDF combinado. Si las respuestas deben verse como contenido fijo, usa Aplanar PDF en una copia antes de combinar y conserva el original rellenable."
+          },
+          {
+            "q": "¿Combinar PDF conserva marcadores y metadatos?",
+            "a": "No. Los marcadores y algunas propiedades globales del documento no se trasladan al paquete combinado. Revisa el resultado y añade o limpia propiedades si tu flujo lo requiere."
+          },
+          {
+            "q": "¿Los archivos se suben para combinar?",
+            "a": "No. Merge PDF funciona en el navegador y no sube los archivos. Puedes combinar varios PDF gratis, sin cuenta y sin marca de agua."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "merge-pdf",
+          "flatten-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prevent-sending-wrong-pdf",
+          "pdf-review-copy-checklist",
+          "document-version-naming-pdf",
+          "share-draft-pdf-safely"
+        ]
       }
     ]
   },
@@ -14308,6 +14443,141 @@
           "share-draft-pdf-safely",
           "client-pdf-handoff-packet"
         ]
+      },
+      {
+        "topic": "client-pdf-handoff-packet",
+        "slug": "client-pdf-handoff-packet",
+        "title": "Como preparar um pacote PDF para entregar ao cliente",
+        "metaTitle": "Como preparar um pacote PDF para entregar ao cliente",
+        "metaDescription": "Prepare um pacote PDF para clientes: organize arquivos, una cópias, confira formulários e proteja a privacidade. Grátis no navegador.",
+        "keyword": "preparar pacote PDF para cliente",
+        "secondaryKeywords": [
+          "unir PDF para entregar ao cliente",
+          "ordem dos documentos em pacote PDF",
+          "preparar anexos em PDF"
+        ],
+        "answer": "Para preparar um pacote PDF para um cliente, reúna apenas os arquivos aprovados, organize-os na ordem de leitura, achate formulários preenchíveis se as respostas precisarem ficar visíveis, una as cópias e revise o PDF resultante antes de compartilhar. O Merge PDF do PrintxPDF funciona no navegador; os arquivos não são enviados.",
+        "tool": "merge-pdf",
+        "ctaLabel": "Merge PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Entregue um único pacote PDF claro: escolha os documentos aprovados, defina a ordem, prepare formulários e anexos, una as cópias e revise o resultado. O Merge PDF do PrintxPDF combina arquivos no navegador e preserva as páginas sem transformá-las em imagens. Guarde os arquivos originais; a união não mantém alguns elementos do documento, como favoritos e campos interativos."
+          },
+          {
+            "t": "h2",
+            "x": "Organize os documentos antes de unir"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Selecione apenas os documentos aprovados",
+                "x": "Reúna a carta de entrega, o documento principal e os anexos necessários. Separe rascunhos e remova duplicatas."
+              },
+              {
+                "h": "Defina a ordem e prepare os arquivos",
+                "x": "Coloque a carta ou capa primeiro, o documento principal depois e os anexos no fim. Se as respostas de um formulário devem ficar visíveis sem campos interativos, use [Flatten PDF](/tools/flatten-pdf) antes de unir."
+              },
+              {
+                "h": "Una os PDFs na ordem desejada",
+                "x": "Abra [Merge PDF](/tools/merge-pdf), adicione os arquivos e use as setas para ordenar. Confira a lista antes de executar; o pacote seguirá essa sequência."
+              },
+              {
+                "h": "Abra e revise o pacote inteiro",
+                "x": "Confira páginas, orientação, texto, valores, assinaturas, formulários e anexos. A união não mantém favoritos, metadados globais nem campos preenchíveis. Use [PDF Reader](/tools/pdf-reader) para revisar a cópia."
+              },
+              {
+                "h": "Nomeie e compartilhe a versão aprovada",
+                "x": "Use um nome com cliente, conteúdo, status, data e versão. Confirme destinatário e permissões; aplique as medidas de privacidade necessárias antes de enviar dados confidenciais."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "merge-pdf",
+            "x": "Una PDFs grátis no navegador, sem cadastro ou marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "O que a união preserva"
+          },
+          {
+            "t": "p",
+            "x": "Um pacote de entrega pode reunir uma carta, proposta ou contrato final, formulários preenchidos, relatórios e anexos. Inclua apenas o que o cliente precisa e coloque os documentos em uma ordem que faça sentido sem explicações extras. Uma página de índice simples pode listar o conteúdo e a sequência. Merge PDF copia as páginas completas na ordem da lista, sem redesenhar texto ou imagens. Porém, a união não leva alguns dados do documento inteiro: favoritos não são mantidos e campos de formulário deixam de ser interativos. Se as respostas precisam ficar visíveis, achate o formulário antes de unir. Guarde os arquivos de origem, pois a operação não pode ser desfeita no pacote final."
+          },
+          {
+            "t": "h2",
+            "x": "Revise privacidade e propriedades"
+          },
+          {
+            "t": "p",
+            "x": "Depois de unir, revise cada parte e a transição entre elas. Confirme que nenhuma página falta, a ordem está certa e valores, assinaturas e anexos correspondem ao cliente. Se o arquivo tiver informações que não devem ser compartilhadas, use [Redact PDF](/tools/redact-pdf); capa ou marca-d’água não removem conteúdo. A ferramenta de união processa os documentos localmente na aba do navegador: não há upload, conta ou marca-d’água. Para preparar uma cópia compartilhável, revise as propriedades e remova as padrão se necessário com [Remove Metadata](/tools/remove-metadata). Depois guarde a cópia aprovada com um nome de versão claro."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Item",
+              "O que fazer",
+              "Observação"
+            ],
+            "rows": [
+              [
+                "Ordem de leitura",
+                "Carta, documento principal, anexos",
+                "O resultado segue a ordem da lista"
+              ],
+              [
+                "Campos de formulário",
+                "Achatar uma cópia antes",
+                "Campos interativos podem parar de funcionar"
+              ],
+              [
+                "Privacidade",
+                "Redigir e revisar propriedades",
+                "A união não remove dados confidenciais"
+              ],
+              [
+                "Entrega",
+                "Nomear, abrir e conferir",
+                "Guarde originais e cópia aprovada"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "O Merge PDF mantém a qualidade?",
+            "a": "Sim. Ele copia as páginas completas para o novo arquivo, incluindo texto e imagens, em vez de transformá-las em capturas. A aparência e a nitidez originais são mantidas."
+          },
+          {
+            "q": "Os campos preenchíveis continuam funcionando depois da união?",
+            "a": "Nem sempre. Campos interativos podem deixar de funcionar no PDF unido. Se as respostas devem ficar fixas e visíveis, use Flatten PDF em uma cópia antes e guarde o original preenchível."
+          },
+          {
+            "q": "A união mantém favoritos e metadados?",
+            "a": "Não. Favoritos e algumas propriedades globais do documento não são transferidos ao pacote unido. Revise o resultado e ajuste as propriedades se seu fluxo exigir."
+          },
+          {
+            "q": "Os arquivos são enviados para unir?",
+            "a": "Não. Merge PDF funciona no navegador e não envia os arquivos. Una vários PDFs grátis, sem conta e sem marca-d’água."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "merge-pdf",
+          "flatten-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prevent-sending-wrong-pdf",
+          "pdf-review-copy-checklist",
+          "document-version-naming-pdf",
+          "share-draft-pdf-safely"
+        ]
       }
     ]
   },
@@ -21458,6 +21728,141 @@
           "pdf-review-copy-checklist",
           "share-draft-pdf-safely",
           "client-pdf-handoff-packet"
+        ]
+      },
+      {
+        "topic": "client-pdf-handoff-packet",
+        "slug": "client-pdf-handoff-packet",
+        "title": "क्लाइंट को देने के लिए PDF पैकेट कैसे तैयार करें",
+        "metaTitle": "क्लाइंट को देने के लिए PDF पैकेट कैसे तैयार करें",
+        "metaDescription": "क्लाइंट PDF पैकेट तैयार करें: फ़ाइलें क्रम में रखें, जोड़ें, फ़ॉर्म जाँचें और गोपनीयता सुरक्षित रखें। मुफ़्त ब्राउज़र टूल।",
+        "keyword": "क्लाइंट के लिए PDF पैकेट तैयार करना",
+        "secondaryKeywords": [
+          "क्लाइंट को देने के लिए PDF जोड़ना",
+          "PDF पैकेट में दस्तावेज़ क्रम",
+          "PDF परिशिष्ट तैयार करना"
+        ],
+        "answer": "क्लाइंट के लिए PDF पैकेट बनाने हेतु केवल मंज़ूर फ़ाइलें चुनें, पढ़ने के क्रम में रखें, जवाब स्थिर दिखाने हों तो भरने योग्य फ़ॉर्म फ़्लैटन करें, PDF जोड़ें और साझा करने से पहले पूरा परिणाम जाँचें। PrintxPDF Merge PDF ब्राउज़र में चलता है; फ़ाइलें अपलोड नहीं होतीं।",
+        "tool": "merge-pdf",
+        "ctaLabel": "PDF जोड़ें",
+        "body": [
+          {
+            "t": "p",
+            "x": "एक साफ़ PDF पैकेट दें: मंज़ूर दस्तावेज़ चुनें, क्रम तय करें, फ़ॉर्म और अटैचमेंट तैयार करें, कॉपियाँ जोड़ें और परिणाम जाँचें। PrintxPDF Merge PDF ब्राउज़र में फ़ाइलें जोड़ता है और पेज को तस्वीरों में बदले बिना रखता है। मूल फ़ाइलें सुरक्षित रखें; जोड़ने पर बुकमार्क और इंटरैक्टिव फ़ॉर्म फ़ील्ड जैसे कुछ दस्तावेज़-स्तरीय तत्व नहीं रहते।"
+          },
+          {
+            "t": "h2",
+            "x": "जोड़ने से पहले दस्तावेज़ क्रम में रखें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "केवल मंज़ूर दस्तावेज़ चुनें",
+                "x": "कवर पत्र, मुख्य दस्तावेज़ और ज़रूरी परिशिष्ट जुटाएँ। ड्राफ़्ट अलग रखें और डुप्लिकेट हटाएँ।"
+              },
+              {
+                "h": "क्रम तय करें और फ़ाइलें तैयार करें",
+                "x": "पत्र या कवर पहले, मुख्य दस्तावेज़ उसके बाद और परिशिष्ट अंत में रखें। फ़ॉर्म के उत्तर बिना इंटरैक्टिव फ़ील्ड के दिखाने हों तो जोड़ने से पहले [Flatten PDF](/tools/flatten-pdf) चलाएँ।"
+              },
+              {
+                "h": "PDF को तय क्रम में जोड़ें",
+                "x": "[Merge PDF](/tools/merge-pdf) खोलें, फ़ाइलें जोड़ें और तीर से क्रम बदलें। चलाने से पहले सूची देखें; पैकेट इसी क्रम में बनेगा।"
+              },
+              {
+                "h": "पूरा पैकेट खोलकर जाँचें",
+                "x": "पेज, दिशा, टेक्स्ट, रकम, हस्ताक्षर, फ़ॉर्म और परिशिष्ट देखें। जोड़ने पर बुकमार्क, वैश्विक मेटाडेटा और भरने योग्य फ़ील्ड नहीं रहते। कॉपी जाँचने के लिए [PDF Reader](/tools/pdf-reader) खोलें।"
+              },
+              {
+                "h": "मंज़ूर संस्करण का नाम रखें और साझा करें",
+                "x": "क्लाइंट, सामग्री, स्थिति, तारीख और संस्करण वाला नाम रखें। प्राप्तकर्ता और अनुमति जाँचें; गोपनीय जानकारी भेजने से पहले उचित सुरक्षा कदम लें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "merge-pdf",
+            "x": "ब्राउज़र में PDF मुफ़्त जोड़ें—साइनअप या वॉटरमार्क नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "जोड़ने पर क्या सुरक्षित रहता है"
+          },
+          {
+            "t": "p",
+            "x": "हैंडऑफ़ पैकेट में कवर पत्र, अंतिम प्रस्ताव या अनुबंध, भरे फ़ॉर्म, रिपोर्ट और परिशिष्ट हो सकते हैं। सिर्फ वही जोड़ें जिसकी क्लाइंट को ज़रूरत है और दस्तावेज़ों को ऐसे क्रम में रखें कि अलग व्याख्या की ज़रूरत न पड़े। एक साधारण सूची-पेज सामग्री और क्रम बता सकता है। Merge PDF सूची के क्रम में पूरे पेज कॉपी करता है; टेक्स्ट या तस्वीरों को दोबारा नहीं बनाता। लेकिन पूरे दस्तावेज़ से जुड़े कुछ गुण साथ नहीं आते: बुकमार्क नहीं रहते और फ़ॉर्म फ़ील्ड इंटरैक्टिव नहीं रहते। जवाब स्थिर चाहिए तो जोड़ने से पहले फ़ॉर्म की कॉपी फ़्लैटन करें। स्रोत फ़ाइलें रखें; अंतिम पैकेट में जोड़ने को वापस नहीं किया जा सकता।"
+          },
+          {
+            "t": "h2",
+            "x": "गोपनीयता और गुण जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "जोड़ने के बाद हर भाग और उनके बीच का क्रम जाँचें। पेज गायब तो नहीं, क्रम सही है, और रकम, हस्ताक्षर व परिशिष्ट उसी क्लाइंट के हैं—यह पुष्टि करें। साझा नहीं की जाने वाली जानकारी [Redact PDF](/tools/redact-pdf) से हटाएँ; कवर या वॉटरमार्क सामग्री नहीं हटाता। Merge PDF दस्तावेज़ों को ब्राउज़र टैब में स्थानीय रूप से प्रोसेस करता है: अपलोड नहीं, खाता नहीं, वॉटरमार्क नहीं। साझा प्रति के लिए दस्तावेज़ गुण जाँचें और ज़रूरत हो तो [Remove Metadata](/tools/remove-metadata) से सामान्य गुण हटाएँ। फिर मंज़ूर कॉपी को स्पष्ट संस्करण नाम से रखें।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "तत्व",
+              "क्या करें",
+              "ध्यान दें"
+            ],
+            "rows": [
+              [
+                "पढ़ने का क्रम",
+                "पत्र, मुख्य दस्तावेज़, परिशिष्ट",
+                "नतीजा सूची के क्रम में बनता है"
+              ],
+              [
+                "फ़ॉर्म फ़ील्ड",
+                "पहले कॉपी फ़्लैटन करें",
+                "इंटरैक्टिव फ़ील्ड काम बंद कर सकते हैं"
+              ],
+              [
+                "गोपनीयता",
+                "रेडैक्ट कर गुण जाँचें",
+                "जोड़ने से निजी डेटा नहीं हटता"
+              ],
+              [
+                "डिलीवरी",
+                "नाम दें, खोलें, जाँचें",
+                "मूल और मंज़ूर कॉपी रखें"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या Merge PDF गुणवत्ता बनाए रखता है?",
+            "a": "हाँ। यह टेक्स्ट और तस्वीरों सहित पूरे पेज नए PDF में कॉपी करता है, स्क्रीनशॉट में नहीं बदलता। स्रोत का रूप और स्पष्टता बनी रहती है।"
+          },
+          {
+            "q": "क्या जोड़ने के बाद भरने योग्य फ़ील्ड काम करते हैं?",
+            "a": "ज़रूरी नहीं। संयुक्त PDF में इंटरैक्टिव फ़ील्ड काम करना बंद कर सकते हैं। जवाब स्थिर दिखाने हों तो पहले कॉपी को Flatten PDF करें और मूल फ़ॉर्म रखें।"
+          },
+          {
+            "q": "क्या बुकमार्क और मेटाडेटा बने रहते हैं?",
+            "a": "नहीं। बुकमार्क और दस्तावेज़ की कुछ वैश्विक विशेषताएँ संयुक्त पैकेट में नहीं जातीं। परिणाम जाँचें और अपने काम के अनुसार गुण जोड़ें या साफ़ करें।"
+          },
+          {
+            "q": "क्या PDF जोड़ने के लिए फ़ाइलें अपलोड होती हैं?",
+            "a": "नहीं। Merge PDF ब्राउज़र में चलता है और फ़ाइलें अपलोड नहीं करता। कई PDF मुफ़्त जोड़ें, बिना खाते या वॉटरमार्क के।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "merge-pdf",
+          "flatten-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prevent-sending-wrong-pdf",
+          "pdf-review-copy-checklist",
+          "document-version-naming-pdf",
+          "share-draft-pdf-safely"
         ]
       }
     ]
@@ -28618,6 +29023,141 @@
           "pdf-review-copy-checklist",
           "share-draft-pdf-safely",
           "client-pdf-handoff-packet"
+        ]
+      },
+      {
+        "topic": "client-pdf-handoff-packet",
+        "slug": "client-pdf-handoff-packet",
+        "title": "كيفية إعداد حزمة PDF لتسليمها إلى العميل",
+        "metaTitle": "كيفية إعداد حزمة PDF لتسليمها إلى العميل",
+        "metaDescription": "جهّز حزمة PDF للعميل: رتّب الملفات وادمجها وافحص النماذج واحمِ الخصوصية. مجاني في المتصفح بلا تسجيل.",
+        "keyword": "إعداد حزمة PDF للعميل",
+        "secondaryKeywords": [
+          "دمج PDF لتسليمه إلى العميل",
+          "ترتيب المستندات في حزمة PDF",
+          "إعداد ملاحق PDF"
+        ],
+        "answer": "لإعداد حزمة PDF للعميل، اجمع الملفات المعتمدة فقط ورتبها حسب تسلسل القراءة، وسطح النماذج القابلة للتعبئة إذا كان ينبغي تثبيت الإجابات، ثم ادمج النسخ وراجع الملف الناتج قبل مشاركته. تعمل Merge PDF من PrintxPDF في المتصفح ولا ترفع الملفات.",
+        "tool": "merge-pdf",
+        "ctaLabel": "دمج PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "سلّم حزمة PDF واحدة واضحة: اختر المستندات المعتمدة، وحدد ترتيبها، وجهّز النماذج والمرفقات، ثم ادمج النسخ وراجع النتيجة. تدمج Merge PDF من PrintxPDF الملفات في المتصفح مع الحفاظ على الصفحات دون تحويلها إلى صور. احتفظ بالملفات الأصلية؛ فالدمج لا يحفظ بعض عناصر المستند مثل الإشارات المرجعية وحقول النماذج التفاعلية."
+          },
+          {
+            "t": "h2",
+            "x": "رتّب المستندات قبل الدمج"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "اختر المستندات المعتمدة فقط",
+                "x": "اجمع خطاب التسليم والمستند الرئيسي والملاحق المطلوبة. افصل المسودات وأزل النسخ المكررة."
+              },
+              {
+                "h": "حدد الترتيب وجهّز الملفات",
+                "x": "ضع الخطاب أو الغلاف أولاً، ثم المستند الرئيسي، ثم الملاحق. إذا كان يجب تثبيت إجابات النموذج دون حقول تفاعلية، استخدم [Flatten PDF](/tools/flatten-pdf) قبل الدمج."
+              },
+              {
+                "h": "ادمج ملفات PDF بالترتيب المطلوب",
+                "x": "افتح [Merge PDF](/tools/merge-pdf)، وأضف الملفات واستخدم الأسهم لترتيبها. راجع القائمة قبل التشغيل؛ ستتبع الحزمة هذا الترتيب."
+              },
+              {
+                "h": "افتح الحزمة كاملة وراجعها",
+                "x": "تحقق من الصفحات والاتجاه والنص والأرقام والتوقيعات والنماذج والملاحق. لا يحفظ الدمج الإشارات المرجعية أو البيانات الوصفية العامة أو حقول النماذج القابلة للتعبئة. استخدم [PDF Reader](/tools/pdf-reader) لمراجعة النسخة."
+              },
+              {
+                "h": "سمّ النسخة المعتمدة وشاركها",
+                "x": "استخدم اسماً يتضمن العميل والمحتوى والحالة والتاريخ والإصدار. تحقق من المستلم والصلاحيات واتخذ تدابير الخصوصية المناسبة قبل إرسال بيانات سرية."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "merge-pdf",
+            "x": "ادمج ملفات PDF مجاناً في المتصفح بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي يحفظه الدمج"
+          },
+          {
+            "t": "p",
+            "x": "قد تتضمن حزمة التسليم خطاباً أو عرضاً أو عقداً نهائياً ونماذج مكتملة وتقارير وملاحق. أضف ما يحتاجه العميل فقط ورتب المستندات بطريقة مفهومة دون شرح إضافي. يمكن لصفحة فهرس بسيطة أن تعرض المحتويات وترتيبها. تنسخ Merge PDF الصفحات كاملة بحسب ترتيب القائمة دون إعادة رسم النص أو الصور. لكنها لا تنقل بعض خصائص المستند كله: لا تُحفظ الإشارات المرجعية وتتوقف حقول النماذج عن التفاعل. إذا كان يجب أن تبقى الإجابات ظاهرة، فسطّح نسخة من النموذج قبل الدمج. احتفظ بالمصادر لأن دمج الحزمة النهائية لا يمكن التراجع عنه."
+          },
+          {
+            "t": "h2",
+            "x": "راجع الخصوصية والخصائص"
+          },
+          {
+            "t": "p",
+            "x": "بعد الدمج راجع كل جزء والانتقال بين الأجزاء. تأكد من عدم فقد صفحات ومن صحة الترتيب ومن مطابقة الأرقام والتوقيعات والملاحق للعميل. إذا احتوى الملف على معلومات لا ينبغي مشاركتها، استخدم [Redact PDF](/tools/redact-pdf)؛ فالغلاف أو العلامة المائية لا يزيلان المحتوى. تعالج أداة الدمج المستندات محلياً في علامة تبويب المتصفح: لا رفع ولا حساب ولا علامة مائية. جهّز نسخة المشاركة بمراجعة خصائص المستند وإزالة الخصائص القياسية عند الحاجة باستخدام [Remove Metadata](/tools/remove-metadata). ثم احتفظ بالنسخة المعتمدة باسم إصدار واضح."
+          },
+          {
+            "t": "table",
+            "head": [
+              "العنصر",
+              "الإجراء",
+              "ملاحظة"
+            ],
+            "rows": [
+              [
+                "ترتيب القراءة",
+                "الخطاب، المستند الرئيسي، الملاحق",
+                "تتبع النتيجة ترتيب القائمة"
+              ],
+              [
+                "حقول النماذج",
+                "سطّح نسخة أولاً",
+                "قد تتوقف الحقول التفاعلية"
+              ],
+              [
+                "الخصوصية",
+                "نقّح وراجع الخصائص",
+                "الدمج لا يزيل البيانات السرية"
+              ],
+              [
+                "التسليم",
+                "سمّ وافتح وتحقق",
+                "احتفظ بالمصادر والنسخة المعتمدة"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يحافظ Merge PDF على الجودة؟",
+            "a": "نعم. ينسخ الصفحات كاملة إلى الملف الجديد بما فيها النص والصور بدلاً من تحويلها إلى لقطات شاشة. تبقى هيئة المصدر ودقته كما هما."
+          },
+          {
+            "q": "هل تبقى حقول النماذج القابلة للتعبئة بعد الدمج؟",
+            "a": "ليس دائماً. قد تتوقف الحقول التفاعلية عن العمل في PDF المدمج. إذا كان يجب تثبيت الإجابات، استخدم Flatten PDF على نسخة قبل الدمج واحتفظ بالأصل القابل للتعبئة."
+          },
+          {
+            "q": "هل يحفظ الدمج الإشارات المرجعية والبيانات الوصفية؟",
+            "a": "لا. لا تنتقل الإشارات المرجعية وبعض الخصائص العامة للمستند إلى الحزمة المدمجة. راجع النتيجة وأضف الخصائص أو نظفها إذا تطلب سير العمل ذلك."
+          },
+          {
+            "q": "هل تُرفع الملفات لدمجها؟",
+            "a": "لا. يعمل Merge PDF في المتصفح ولا يرفع الملفات. ادمج عدة ملفات مجاناً بلا حساب أو علامة مائية."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "merge-pdf",
+          "flatten-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prevent-sending-wrong-pdf",
+          "pdf-review-copy-checklist",
+          "document-version-naming-pdf",
+          "share-draft-pdf-safely"
         ]
       }
     ]
@@ -35782,6 +36322,141 @@
           "share-draft-pdf-safely",
           "client-pdf-handoff-packet"
         ]
+      },
+      {
+        "topic": "client-pdf-handoff-packet",
+        "slug": "client-pdf-handoff-packet",
+        "title": "ক্লায়েন্টকে দেওয়ার জন্য PDF হ্যান্ডঅফ প্যাকেট তৈরি",
+        "metaTitle": "ক্লায়েন্টকে দেওয়ার জন্য PDF হ্যান্ডঅফ প্যাকেট তৈরি",
+        "metaDescription": "ক্লায়েন্ট PDF প্যাকেট তৈরি করুন: ফাইল সাজান, জোড়া দিন, ফর্ম দেখুন ও গোপনীয়তা রাখুন। ব্রাউজারে বিনামূল্যে।",
+        "keyword": "ক্লায়েন্টের জন্য PDF প্যাকেট তৈরি",
+        "secondaryKeywords": [
+          "ক্লায়েন্টের জন্য PDF জোড়া",
+          "PDF প্যাকেটে নথির ক্রম",
+          "PDF পরিশিষ্ট প্রস্তুত"
+        ],
+        "answer": "ক্লায়েন্টের জন্য PDF প্যাকেট বানাতে শুধু অনুমোদিত ফাইল নিন, পড়ার ক্রমে সাজান, উত্তর স্থির রাখতে হলে পূরণযোগ্য ফর্ম ফ্ল্যাট করুন, PDF জোড়া দিন এবং শেয়ারের আগে ফল দেখুন। PrintxPDF Merge PDF ব্রাউজারে চলে; ফাইল আপলোড হয় না।",
+        "tool": "merge-pdf",
+        "ctaLabel": "PDF জুড়ুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "একটি পরিষ্কার PDF প্যাকেট দিন: অনুমোদিত নথি বাছুন, ক্রম ঠিক করুন, ফর্ম ও সংযুক্তি প্রস্তুত করুন, কপি জুড়ুন এবং ফল যাচাই করুন। PrintxPDF Merge PDF ব্রাউজারে ফাইল জোড়ে এবং পৃষ্ঠাগুলোকে ছবিতে না বদলে রাখে। মূল ফাইল রাখুন; জোড়ার পরে বুকমার্ক ও ইন্টারঅ্যাক্টিভ ফর্ম ফিল্ডের মতো কিছু নথি-স্তরের উপাদান থাকে না।"
+          },
+          {
+            "t": "h2",
+            "x": "জোড়ার আগে নথি সাজান"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "শুধু অনুমোদিত নথি বাছুন",
+                "x": "হ্যান্ডঅফ চিঠি, মূল নথি ও প্রয়োজনীয় পরিশিষ্ট নিন। ড্রাফট আলাদা রাখুন এবং ডুপ্লিকেট বাদ দিন।"
+              },
+              {
+                "h": "ক্রম ঠিক করে ফাইল প্রস্তুত করুন",
+                "x": "চিঠি বা কভার আগে, মূল নথি পরে, পরিশিষ্ট শেষে রাখুন। ফর্মের উত্তর স্থির দেখাতে ইন্টারঅ্যাক্টিভ ফিল্ড সরাতে হলে জোড়ার আগে [Flatten PDF](/tools/flatten-pdf) নিন।"
+              },
+              {
+                "h": "নির্ধারিত ক্রমে PDF জোড়া দিন",
+                "x": "[Merge PDF](/tools/merge-pdf) খুলে ফাইল যোগ করুন এবং তীর দিয়ে সাজান। চালানোর আগে তালিকা দেখুন; প্যাকেট সেই ক্রমে তৈরি হবে।"
+              },
+              {
+                "h": "পুরো প্যাকেট খুলে যাচাই করুন",
+                "x": "পৃষ্ঠা, দিক, লেখা, অঙ্ক, স্বাক্ষর, ফর্ম ও পরিশিষ্ট দেখুন। জোড়ার পরে বুকমার্ক, সামগ্রিক মেটাডেটা ও পূরণযোগ্য ফিল্ড থাকে না। কপি দেখতে [PDF Reader](/tools/pdf-reader) ব্যবহার করুন।"
+              },
+              {
+                "h": "অনুমোদিত কপির নাম দিয়ে শেয়ার করুন",
+                "x": "ক্লায়েন্ট, বিষয়, অবস্থা, তারিখ ও সংস্করণসহ নাম রাখুন। প্রাপক ও অনুমতি যাচাই করুন; গোপন তথ্য পাঠানোর আগে উপযুক্ত গোপনীয়তা ব্যবস্থা নিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "merge-pdf",
+            "x": "ব্রাউজারে PDF বিনামূল্যে জুড়ুন—সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "জোড়ার পর কী থাকে"
+          },
+          {
+            "t": "p",
+            "x": "হ্যান্ডঅফ প্যাকেটে চিঠি, চূড়ান্ত প্রস্তাব বা চুক্তি, পূরণ করা ফর্ম, রিপোর্ট ও পরিশিষ্ট থাকতে পারে। ক্লায়েন্টের যা দরকার শুধু তাই দিন এবং ব্যাখ্যা ছাড়াই বোঝা যায় এমন ক্রমে রাখুন। একটি সাধারণ সূচি পৃষ্ঠা বিষয়বস্তু ও ক্রম জানাতে পারে। Merge PDF তালিকার ক্রমে পুরো পৃষ্ঠা কপি করে, লেখা বা ছবি নতুন করে আঁকে না। তবে পুরো নথির কিছু তথ্য যায় না: বুকমার্ক থাকে না এবং ফর্ম ফিল্ড ইন্টারঅ্যাক্টিভ থাকে না। উত্তর দৃশ্যমান রাখতে হলে জোড়ার আগে ফর্মের কপি ফ্ল্যাট করুন। মূল ফাইল রাখুন; চূড়ান্ত প্যাকেটের জোড়া ফেরানো যায় না।"
+          },
+          {
+            "t": "h2",
+            "x": "গোপনীয়তা ও বৈশিষ্ট্য দেখুন"
+          },
+          {
+            "t": "p",
+            "x": "জোড়ার পরে প্রতিটি অংশ ও অংশগুলোর সংযোগ যাচাই করুন। পৃষ্ঠা বাদ পড়েছে কি না, ক্রম ঠিক কি না, অঙ্ক, স্বাক্ষর ও পরিশিষ্ট ক্লায়েন্টের সঙ্গে মেলে কি না দেখুন। শেয়ার করা যাবে না এমন তথ্য [Redact PDF](/tools/redact-pdf) দিয়ে সরান; কভার বা ওয়াটারমার্ক তথ্য মোছে না। Merge PDF ব্রাউজার ট্যাবে স্থানীয়ভাবে নথি প্রসেস করে: আপলোড নেই, অ্যাকাউন্ট নেই, ওয়াটারমার্ক নেই। শেয়ারযোগ্য কপির নথি-গুণ দেখুন এবং দরকার হলে [Remove Metadata](/tools/remove-metadata) দিয়ে সাধারণ বৈশিষ্ট্য সরান। অনুমোদিত কপি স্পষ্ট সংস্করণ নামে রাখুন।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "বিষয়",
+              "করণীয়",
+              "নোট"
+            ],
+            "rows": [
+              [
+                "পড়ার ক্রম",
+                "চিঠি, মূল নথি, পরিশিষ্ট",
+                "ফল তালিকার ক্রম মেনে চলে"
+              ],
+              [
+                "ফর্ম ফিল্ড",
+                "আগে একটি কপি ফ্ল্যাট করুন",
+                "ইন্টারঅ্যাক্টিভ ফিল্ড বন্ধ হতে পারে"
+              ],
+              [
+                "গোপনীয়তা",
+                "রেড্যাক্ট করে বৈশিষ্ট্য দেখুন",
+                "জোড়া গোপন তথ্য মোছে না"
+              ],
+              [
+                "ডেলিভারি",
+                "নাম দিন, খুলুন, যাচাই করুন",
+                "মূল ও অনুমোদিত কপি রাখুন"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Merge PDF কি মান ঠিক রাখে?",
+            "a": "হ্যাঁ। এটি লেখা ও ছবি-সহ পুরো পৃষ্ঠা নতুন PDF-এ কপি করে, স্ক্রিনশট বানায় না। উৎসের চেহারা ও স্পষ্টতা বজায় থাকে।"
+          },
+          {
+            "q": "জোড়ার পর পূরণযোগ্য ফিল্ড কাজ করবে?",
+            "a": "সবসময় নয়। যৌথ PDF-এ ইন্টারঅ্যাক্টিভ ফিল্ড কাজ বন্ধ করতে পারে। উত্তর স্থির রাখতে আগে কপিটি Flatten PDF করুন এবং পূরণযোগ্য মূল কপি রাখুন।"
+          },
+          {
+            "q": "জোড়ার সময় বুকমার্ক ও মেটাডেটা থাকবে?",
+            "a": "না। বুকমার্ক ও নথির কিছু সামগ্রিক বৈশিষ্ট্য যুক্ত প্যাকেটে আসে না। ফল পরীক্ষা করুন এবং কাজের প্রয়োজন হলে বৈশিষ্ট্য যোগ বা পরিষ্কার করুন।"
+          },
+          {
+            "q": "জোড়ার জন্য ফাইল কি আপলোড হয়?",
+            "a": "না। Merge PDF ব্রাউজারে চলে; ফাইল আপলোড হয় না। বিনামূল্যে একাধিক PDF জুড়ুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়াই।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "merge-pdf",
+          "flatten-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prevent-sending-wrong-pdf",
+          "pdf-review-copy-checklist",
+          "document-version-naming-pdf",
+          "share-draft-pdf-safely"
+        ]
       }
     ]
   },
@@ -42932,6 +43607,141 @@
           "pdf-review-copy-checklist",
           "share-draft-pdf-safely",
           "client-pdf-handoff-packet"
+        ]
+      },
+      {
+        "topic": "client-pdf-handoff-packet",
+        "slug": "client-pdf-handoff-packet",
+        "title": "Cách chuẩn bị bộ PDF bàn giao cho khách hàng",
+        "metaTitle": "Cách chuẩn bị bộ PDF bàn giao cho khách hàng",
+        "metaDescription": "Chuẩn bị bộ PDF cho khách: sắp xếp, gộp tệp, kiểm tra biểu mẫu và bảo vệ riêng tư. Miễn phí trên trình duyệt.",
+        "keyword": "chuẩn bị bộ PDF bàn giao khách hàng",
+        "secondaryKeywords": [
+          "gộp PDF bàn giao cho khách",
+          "thứ tự tài liệu trong bộ PDF",
+          "chuẩn bị phụ lục PDF"
+        ],
+        "answer": "Để chuẩn bị bộ PDF bàn giao cho khách, chỉ chọn tệp đã duyệt, sắp xếp theo thứ tự đọc, làm phẳng biểu mẫu nếu cần cố định câu trả lời, gộp các bản và kiểm tra kết quả trước khi chia sẻ. Merge PDF của PrintxPDF chạy trên trình duyệt; tệp không được tải lên.",
+        "tool": "merge-pdf",
+        "ctaLabel": "Gộp PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Bàn giao một bộ PDF rõ ràng: chọn tài liệu đã duyệt, xác định thứ tự, chuẩn bị biểu mẫu và phụ lục, gộp các bản rồi kiểm tra kết quả. Merge PDF của PrintxPDF gộp tệp trên trình duyệt và giữ nguyên trang, không biến chúng thành ảnh. Hãy giữ tệp nguồn; thao tác gộp không giữ một số yếu tố cấp tài liệu như dấu trang và trường biểu mẫu tương tác."
+          },
+          {
+            "t": "h2",
+            "x": "Sắp xếp tài liệu trước khi gộp"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Chỉ chọn tài liệu đã duyệt",
+                "x": "Tập hợp thư bàn giao, tài liệu chính và phụ lục cần thiết. Tách bản nháp và bỏ bản trùng."
+              },
+              {
+                "h": "Xác định thứ tự và chuẩn bị tệp",
+                "x": "Đặt thư hoặc bìa trước, tài liệu chính tiếp theo, phụ lục cuối cùng. Nếu cần cố định câu trả lời biểu mẫu, dùng [Flatten PDF](/tools/flatten-pdf) trên bản sao trước khi gộp."
+              },
+              {
+                "h": "Gộp PDF theo thứ tự đã chọn",
+                "x": "Mở [Merge PDF](/tools/merge-pdf), thêm tệp rồi dùng mũi tên để sắp xếp. Kiểm tra danh sách trước khi chạy; bộ PDF sẽ theo đúng thứ tự này."
+              },
+              {
+                "h": "Mở và rà soát toàn bộ bộ tài liệu",
+                "x": "Kiểm tra trang, hướng, văn bản, số liệu, chữ ký, biểu mẫu và phụ lục. Việc gộp không giữ dấu trang, siêu dữ liệu chung hay trường điền. Dùng [PDF Reader](/tools/pdf-reader) để xem lại bản sao."
+              },
+              {
+                "h": "Đặt tên và chia sẻ bản đã duyệt",
+                "x": "Dùng tên có khách hàng, nội dung, trạng thái, ngày và phiên bản. Xác nhận người nhận và quyền truy cập; bảo vệ riêng tư phù hợp trước khi gửi dữ liệu mật."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "merge-pdf",
+            "x": "Gộp PDF miễn phí trên trình duyệt, không cần đăng ký hay hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Việc gộp giữ lại những gì"
+          },
+          {
+            "t": "p",
+            "x": "Bộ bàn giao có thể gồm thư, đề xuất hoặc hợp đồng cuối, biểu mẫu đã điền, báo cáo và phụ lục. Chỉ thêm nội dung khách cần và sắp xếp sao cho người đọc hiểu trình tự mà không cần giải thích thêm. Một trang mục lục đơn giản có thể liệt kê thành phần và thứ tự. Merge PDF sao chép nguyên trang theo thứ tự trong danh sách, không vẽ lại văn bản hay hình ảnh. Tuy nhiên, công cụ không mang theo một số thông tin cấp tài liệu: dấu trang không được giữ và trường biểu mẫu không còn tương tác. Nếu cần giữ câu trả lời hiển thị, hãy làm phẳng bản sao biểu mẫu trước khi gộp. Giữ các tệp nguồn vì không thể hoàn tác việc gộp trong bộ cuối."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra quyền riêng tư và thuộc tính"
+          },
+          {
+            "t": "p",
+            "x": "Sau khi gộp, kiểm tra từng phần và chỗ nối giữa chúng. Xác nhận không thiếu trang, thứ tự đúng và số liệu, chữ ký, phụ lục khớp với khách hàng. Nếu có dữ liệu không nên chia sẻ, dùng [Redact PDF](/tools/redact-pdf); bìa hoặc hình mờ không xóa nội dung. Công cụ gộp xử lý tài liệu cục bộ trong thẻ trình duyệt: không tải lên, không cần tài khoản, không hình mờ. Để chuẩn bị bản chia sẻ, xem thuộc tính tài liệu và dùng [Remove Metadata](/tools/remove-metadata) để xóa thuộc tính chuẩn nếu cần. Sau đó lưu bản đã duyệt với tên phiên bản rõ ràng."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục",
+              "Việc cần làm",
+              "Lưu ý"
+            ],
+            "rows": [
+              [
+                "Thứ tự đọc",
+                "Thư, tài liệu chính, phụ lục",
+                "Kết quả theo thứ tự danh sách"
+              ],
+              [
+                "Trường biểu mẫu",
+                "Làm phẳng bản sao trước",
+                "Trường tương tác có thể ngừng hoạt động"
+              ],
+              [
+                "Riêng tư",
+                "Biên tập xóa và xem thuộc tính",
+                "Gộp không xóa dữ liệu bí mật"
+              ],
+              [
+                "Bàn giao",
+                "Đặt tên, mở và kiểm tra",
+                "Giữ nguồn và bản đã duyệt"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Merge PDF có giữ nguyên chất lượng không?",
+            "a": "Có. Công cụ sao chép nguyên trang, gồm văn bản và hình ảnh, sang tệp mới thay vì biến thành ảnh chụp. Hình thức và độ nét của nguồn được giữ lại."
+          },
+          {
+            "q": "Trường biểu mẫu có điền được sau khi gộp không?",
+            "a": "Không phải lúc nào cũng vậy. Trường tương tác có thể ngừng hoạt động trong PDF đã gộp. Nếu cần câu trả lời cố định, hãy làm phẳng bản sao trước và giữ bản gốc có thể điền."
+          },
+          {
+            "q": "Dấu trang và siêu dữ liệu có được giữ khi gộp không?",
+            "a": "Không. Dấu trang và một số thuộc tính chung của tài liệu không chuyển sang bộ đã gộp. Kiểm tra kết quả và thêm hoặc dọn thuộc tính nếu quy trình yêu cầu."
+          },
+          {
+            "q": "Tệp có được tải lên để gộp không?",
+            "a": "Không. Merge PDF chạy trên trình duyệt và không tải tệp lên. Bạn có thể gộp nhiều PDF miễn phí, không tài khoản, không hình mờ."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "merge-pdf",
+          "flatten-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prevent-sending-wrong-pdf",
+          "pdf-review-copy-checklist",
+          "document-version-naming-pdf",
+          "share-draft-pdf-safely"
         ]
       }
     ]
@@ -50092,6 +50902,141 @@
           "pdf-review-copy-checklist",
           "share-draft-pdf-safely",
           "client-pdf-handoff-packet"
+        ]
+      },
+      {
+        "topic": "client-pdf-handoff-packet",
+        "slug": "client-pdf-handoff-packet",
+        "title": "如何准备交付客户的 PDF 文件包",
+        "metaTitle": "如何准备交付客户的 PDF 文件包",
+        "metaDescription": "为客户准备 PDF 文件包：整理顺序、合并文件、检查表单并保护隐私。免费、浏览器本地处理。",
+        "keyword": "准备客户 PDF 交付包",
+        "secondaryKeywords": [
+          "合并 PDF 交付客户",
+          "PDF 文件包的文档顺序",
+          "准备 PDF 附件"
+        ],
+        "answer": "准备交付客户的 PDF 文件包时，只选择已批准文件，按阅读顺序排列；如需固定表单答案，先扁平化表单，再合并文件并检查完整结果。PrintxPDF“合并 PDF”在浏览器中运行，不会上传文件。",
+        "tool": "merge-pdf",
+        "ctaLabel": "合并 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "交付一份清晰的 PDF 文件包：选择已批准文档，确定顺序，准备表单和附件，合并副本并检查结果。PrintxPDF“合并 PDF”在浏览器中合并文件，保留原页面，不会将页面转换成图片。请保留源文件；合并不会保留书签和交互式表单字段等部分文档级信息。"
+          },
+          {
+            "t": "h2",
+            "x": "合并前整理文档顺序"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "只选择已批准的文档",
+                "x": "准备交付信、主要文档和所需附件。将草稿分开，并删除重复文件。"
+              },
+              {
+                "h": "确定顺序并准备文件",
+                "x": "先放交付信或封面，再放主文档，最后放附件。如需将表单答案固定显示，合并前先对副本使用[扁平化 PDF](/tools/flatten-pdf)。"
+              },
+              {
+                "h": "按顺序合并 PDF",
+                "x": "打开[合并 PDF](/tools/merge-pdf)，添加文件并用箭头调整顺序。运行前检查列表；文件包会按此顺序生成。"
+              },
+              {
+                "h": "打开并检查整个文件包",
+                "x": "核对页面、方向、文字、金额、签名、表单和附件。合并不会保留书签、全局元数据或可填写字段。使用[PDF 阅读器](/tools/pdf-reader)检查副本。"
+              },
+              {
+                "h": "为批准版命名并分享",
+                "x": "文件名包含客户、内容、状态、日期和版本。核对收件人和权限；发送机密信息前采取适当的隐私措施。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "merge-pdf",
+            "x": "在浏览器中免费合并 PDF，无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "合并会保留什么"
+          },
+          {
+            "t": "p",
+            "x": "交付包可以包含交付信、最终提案或合同、已填写表单、报告和附件。只加入客户需要的内容，并按清晰顺序排列，让读者无需额外说明也能理解。可以在前面添加简单目录页，列出内容和顺序。 “合并 PDF”按列表顺序复制完整页面，不会重新绘制文字或图像。但部分文档级信息不会保留：书签不会转移，表单字段也会失去交互功能。如果需要固定显示表单答案，请在合并前扁平化表单副本。请保留源文件；最终文件包无法撤销合并操作。"
+          },
+          {
+            "t": "h2",
+            "x": "检查隐私和文件属性"
+          },
+          {
+            "t": "p",
+            "x": "合并后检查每个部分以及部分之间的衔接。确认没有缺页、顺序正确，金额、签名和附件对应正确客户。如果有不应分享的信息，请使用[涂除 PDF](/tools/redact-pdf)；封面或水印不会删除内容。 合并工具在浏览器标签页本地处理文件：不会上传、无需账户、无水印。准备分享副本时，检查文档属性，必要时用[删除元数据](/tools/remove-metadata)清除常见属性。然后用清晰的版本名称保存已批准副本。"
+          },
+          {
+            "t": "table",
+            "head": [
+              "项目",
+              "操作",
+              "说明"
+            ],
+            "rows": [
+              [
+                "阅读顺序",
+                "交付信、主文档、附件",
+                "结果按列表顺序排列"
+              ],
+              [
+                "表单字段",
+                "先扁平化副本",
+                "交互字段可能失效"
+              ],
+              [
+                "隐私",
+                "涂除并检查属性",
+                "合并不会删除机密数据"
+              ],
+              [
+                "交付",
+                "命名、打开并检查",
+                "保留源文件和批准副本"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "合并 PDF 会降低质量吗？",
+            "a": "不会。工具会将完整页面（包括文字和图像）复制到新文件，而不是转成截图。源文件的外观和清晰度会保留。"
+          },
+          {
+            "q": "合并后可填写字段还能使用吗？",
+            "a": "不一定。交互式字段可能在合并后的 PDF 中失效。如果需要固定显示答案，请先扁平化副本，并保留可填写的原件。"
+          },
+          {
+            "q": "合并会保留书签和元数据吗？",
+            "a": "不会。书签和部分文档级全局属性不会转移到合并文件包。请检查结果，并按流程需要添加或清理属性。"
+          },
+          {
+            "q": "合并文件时会上传吗？",
+            "a": "不会。“合并 PDF”在浏览器中运行，不会上传文件。可免费合并多个 PDF，无需账户、没有水印。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "merge-pdf",
+          "flatten-pdf",
+          "redact-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prevent-sending-wrong-pdf",
+          "pdf-review-copy-checklist",
+          "document-version-naming-pdf",
+          "share-draft-pdf-safely"
         ]
       }
     ]
