@@ -1,0 +1,882 @@
+{
+  "topic": "merge-scanned-pdfs-into-one-searchable-file",
+  "sourceCluster": "merge",
+  "tool": "merge-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo unir PDF escaneados en un archivo con búsqueda",
+      "metaTitle": "Unir PDF escaneados y hacerlos buscables",
+      "metaDescription": "Une PDF escaneados y añade texto buscable con OCR. Gratis, sin registro ni marca de agua, con procesamiento privado en el navegador.",
+      "keyword": "unir PDF escaneados en un archivo buscable",
+      "secondaryKeywords": [
+        "combinar PDF escaneados",
+        "unir PDF con OCR",
+        "hacer buscable un PDF unido",
+        "combinar documentos escaneados"
+      ],
+      "answer": "Para unir PDF escaneados en un archivo que permita buscar texto, combina los escaneos en el orden correcto y ejecuta OCR sobre la copia unida. Revisa los nombres y cifras importantes comparándolos con la imagen. PrintxPDF permite unir PDF en el navegador y después añadir texto buscable sin registro ni marca de agua. Conserva los originales hasta revisar el resultado.",
+      "ctaLabel": "Une tus escaneos y añade texto buscable",
+      "body": [
+        {
+          "t": "p",
+          "x": "Un PDF escaneado suele contener imágenes de páginas, no texto que puedas buscar o copiar. Primero une los escaneos en un documento ordenado. Después ejecuta OCR: el reconocimiento lee las imágenes y añade una capa de texto buscable. PrintxPDF procesa estos pasos en el navegador para archivos estándar, así que los escaneos privados no necesitan subirse para la unión habitual y el reconocimiento."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo unir los escaneos y hacer que el PDF sea buscable"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Revisa cada escaneo",
+              "x": "Comprueba la orientación, la legibilidad y el orden. Vuelve a escanear las páginas oscuras, borrosas o cortadas antes de crear el documento final."
+            },
+            {
+              "h": "Une los PDF escaneados",
+              "x": "Usa [Unir PDF](/tools/merge-pdf) y añade los archivos en secuencia. Crea una copia nueva y confirma que no falten páginas ni haya duplicadas."
+            },
+            {
+              "h": "Ejecuta OCR en la copia",
+              "x": "Abre [OCR PDF](/tools/ocr-pdf), añade el escaneo unido y crea texto buscable. El OCR interpreta lo que ve; no arregla una imagen deficiente."
+            },
+            {
+              "h": "Comprueba los datos importantes",
+              "x": "Busca un nombre, fecha, importe o número de referencia. Compara el texto detectado con la imagen antes de usarlo para registros o búsquedas."
+            },
+            {
+              "h": "Guarda una copia final clara",
+              "x": "Conserva el escaneo original como referencia. Usa la versión con OCR para buscar y leer; comprime otra copia solo si el tamaño del correo lo exige."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Une PDF escaneados gratis en el navegador y añade OCR para buscar en la copia final."
+        },
+        {
+          "t": "h2",
+          "x": "¿Conviene unir primero o ejecutar OCR primero?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Flujo",
+            "Cuándo conviene",
+            "Consecuencia"
+          ],
+          "rows": [
+            [
+              "Unir y luego ejecutar OCR",
+              "Los escaneos tienen idioma y calidad similares",
+              "Una tarea de OCR y un archivo buscable."
+            ],
+            [
+              "Ejecutar OCR y luego unir",
+              "Debes revisar cada archivo por separado",
+              "Más trabajo de revisión, pero los errores se aíslan mejor."
+            ],
+            [
+              "Solo unir",
+              "Solo necesitas un paquete visual",
+              "El texto seguirá sin poder buscarse ni copiarse bien."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Mejora los escaneos antes de usar OCR"
+        },
+        {
+          "t": "p",
+          "x": "La precisión depende de la imagen, no de un ajuste mágico. Las páginas rectas, una iluminación uniforme, el texto oscuro y una resolución suficiente ayudan al reconocimiento. Una foto inclinada puede convertir un 8 en 3 o una O en 0. Corrige la orientación con [Rotar PDF](/tools/rotate-pdf), elimina páginas vacías accidentales con [Eliminar páginas](/tools/delete-pages) y revisa cada página con nombres, cifras o fechas importantes."
+        },
+        {
+          "t": "h2",
+          "x": "Qué demuestra y qué no demuestra un escaneo buscable"
+        },
+        {
+          "t": "p",
+          "x": "La capa de texto facilita encontrar, copiar y revisar información, pero no es una transcripción fiable por definición. Para decisiones legales, financieras, médicas o de archivo, compara los datos relevantes con la imagen original. Conserva los escaneos fuente y pon nombres claros a los archivos para no confundir la copia de consulta con el registro original."
+        },
+        {
+          "t": "h2",
+          "x": "Privacidad y tamaño después del OCR"
+        },
+        {
+          "t": "p",
+          "x": "El archivo unido puede incluir datos delicados. El procesamiento local evita transferencias innecesarias, pero revisa el contenido antes de compartirlo. OCR puede aumentar el tamaño porque añade una capa de texto. Usa [Comprimir PDF](/tools/compress-pdf) solo después de comprobar que la búsqueda funciona y las páginas siguen legibles. El OCR y la unión no eliminan automáticamente los metadatos; usa una herramienta específica si tu política lo requiere."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo unir PDF escaneados y hacer que se puedan buscar?",
+          "a": "Sí. Une los archivos en el orden correcto y ejecuta OCR en la copia combinada. Compara las palabras y cifras importantes con el escaneo antes de confiar en el texto reconocido."
+        },
+        {
+          "q": "¿Debo ejecutar OCR antes o después de unir?",
+          "a": "Unir primero suele ser más sencillo si los documentos tienen calidad e idioma similares. Ejecuta OCR por separado si necesitas revisar o corregir cada resultado individualmente."
+        },
+        {
+          "q": "¿El OCR modifica el escaneo PDF original?",
+          "a": "Trabaja con una copia. El OCR genera un resultado buscable aparte y deja el escaneo original disponible para comparar."
+        },
+        {
+          "q": "¿Por qué el OCR se equivoca en nombres o números?",
+          "a": "La inclinación, el desenfoque, la baja resolución, la escritura a mano, las fuentes inusuales y el poco contraste provocan errores. Vuelve a escanear o verifica manualmente la información importante."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como unir PDFs digitalizados em um arquivo pesquisável",
+      "metaTitle": "Una PDFs digitalizados e torne-os pesquisáveis",
+      "metaDescription": "Una PDFs digitalizados e adicione texto pesquisável com OCR. Grátis, sem cadastro ou marca-d'água, processado no navegador.",
+      "keyword": "unir PDFs digitalizados em arquivo pesquisável",
+      "secondaryKeywords": [
+        "combinar PDFs digitalizados",
+        "unir PDFs com OCR",
+        "tornar PDF combinado pesquisável",
+        "juntar documentos digitalizados"
+      ],
+      "answer": "Para unir PDFs digitalizados em um arquivo pesquisável, combine os escaneamentos na ordem certa e rode OCR na cópia unida. Confira nomes e números importantes comparando-os com a imagem. O PrintxPDF permite unir PDFs no navegador e depois adicionar texto pesquisável sem cadastro ou marca-d'água. Guarde os originais até revisar o resultado.",
+      "ctaLabel": "Una os escaneamentos e adicione busca",
+      "body": [
+        {
+          "t": "p",
+          "x": "Um PDF digitalizado normalmente contém imagens das páginas, não texto que você possa pesquisar ou copiar. Primeiro una os escaneamentos na ordem certa. Depois rode OCR: o reconhecimento lê as imagens e adiciona uma camada de texto pesquisável. O PrintxPDF processa essas etapas no navegador para arquivos padrão, então scans privados não precisam ser enviados para a união comum e o reconhecimento."
+        },
+        {
+          "t": "h2",
+          "x": "Como unir os scans e tornar o PDF pesquisável"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Confira cada scan",
+              "x": "Verifique orientação, legibilidade e ordem. Digitalize novamente páginas muito escuras, borradas ou cortadas antes de montar o arquivo final."
+            },
+            {
+              "h": "Una os PDFs digitalizados",
+              "x": "Use [Unir PDF](/tools/merge-pdf) para adicionar os arquivos na sequência. Crie uma cópia nova e confirme que não faltam páginas nem há duplicatas."
+            },
+            {
+              "h": "Rode OCR na cópia unida",
+              "x": "Abra [OCR PDF](/tools/ocr-pdf), adicione o scan combinado e gere texto pesquisável. O OCR reconhece o que consegue ver; não conserta uma imagem ruim."
+            },
+            {
+              "h": "Verifique os dados importantes",
+              "x": "Pesquise um nome, data, valor ou número de referência. Compare o texto reconhecido com a imagem antes de usá-lo em registros ou buscas."
+            },
+            {
+              "h": "Salve uma cópia final clara",
+              "x": "Guarde o scan original como referência. Use a versão com OCR para localizar e ler; compacte outra cópia apenas se o limite do e-mail exigir."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Una PDFs digitalizados grátis no navegador e adicione OCR à cópia final."
+        },
+        {
+          "t": "h2",
+          "x": "É melhor unir primeiro ou rodar OCR primeiro?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Fluxo",
+            "Melhor quando",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Unir e depois rodar OCR",
+              "Os scans têm idioma e qualidade parecidos",
+              "Um trabalho de OCR e um arquivo pesquisável."
+            ],
+            [
+              "Rodar OCR em cada scan e depois unir",
+              "Você precisa revisar os arquivos separadamente",
+              "Mais revisão, mas erros são mais fáceis de localizar."
+            ],
+            [
+              "Apenas unir",
+              "Você só precisa de um conjunto visual",
+              "O texto continua sem pesquisa ou cópia confiável."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Melhore os scans antes do OCR"
+        },
+        {
+          "t": "p",
+          "x": "A precisão depende da imagem, não de uma configuração mágica. Páginas retas, iluminação uniforme, texto escuro e resolução suficiente ajudam o reconhecimento. Uma foto inclinada pode transformar 8 em 3 ou O em 0. Corrija a orientação com [Girar PDF](/tools/rotate-pdf), remova páginas em branco acidentais com [Excluir páginas](/tools/delete-pages) e confira as páginas com nomes, números ou datas importantes."
+        },
+        {
+          "t": "h2",
+          "x": "O que um scan pesquisável comprova e o que não comprova"
+        },
+        {
+          "t": "p",
+          "x": "A camada de texto facilita encontrar, copiar e revisar informações, mas não é uma transcrição confiável por definição. Para decisões jurídicas, financeiras, médicas ou arquivísticas, compare os dados com a imagem original. Guarde os scans de origem e dê nomes claros aos arquivos para não confundir a cópia de consulta com o registro original."
+        },
+        {
+          "t": "h2",
+          "x": "Privacidade e tamanho do arquivo após OCR"
+        },
+        {
+          "t": "p",
+          "x": "O arquivo unido pode conter dados sensíveis. O processamento local evita transferências desnecessárias, mas confira o conteúdo antes de compartilhar. OCR pode aumentar o tamanho do PDF ao adicionar a camada de texto. Use [Compactar PDF](/tools/compress-pdf) só depois de confirmar que a busca funciona e as páginas continuam legíveis. A união e o OCR não removem metadados automaticamente; use uma ferramenta própria se sua política exigir."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso unir PDFs digitalizados e torná-los pesquisáveis?",
+          "a": "Sim. Una os arquivos na ordem certa e rode OCR na cópia combinada. Compare palavras e números importantes com o scan antes de confiar no texto reconhecido."
+        },
+        {
+          "q": "Devo rodar OCR antes ou depois de unir?",
+          "a": "Unir primeiro costuma ser mais simples se os arquivos têm qualidade e idioma semelhantes. Faça OCR separadamente quando precisar revisar ou corrigir cada resultado."
+        },
+        {
+          "q": "O OCR altera o PDF digitalizado original?",
+          "a": "Trabalhe em uma cópia. O OCR cria um resultado pesquisável separado e deixa o scan original disponível para comparação."
+        },
+        {
+          "q": "Por que o OCR erra nomes ou números?",
+          "a": "Inclinação, desfoque, baixa resolução, escrita manual, fontes incomuns e pouco contraste podem gerar erros. Digitalize de novo ou confira manualmente os dados importantes."
+        }
+      ]
+    },
+    "hi": {
+      "title": "स्कैन किए PDF को खोज योग्य फ़ाइल में कैसे जोड़ें",
+      "metaTitle": "स्कैन PDF जोड़ें और खोज योग्य बनाएँ",
+      "metaDescription": "स्कैन PDF जोड़ें और OCR से खोज योग्य पाठ बनाएँ। मुफ़्त, बिना साइनअप या वॉटरमार्क, ब्राउज़र में निजी प्रोसेसिंग।",
+      "keyword": "स्कैन PDF को खोज योग्य फ़ाइल में जोड़ें",
+      "secondaryKeywords": [
+        "स्कैन PDF मिलाएँ",
+        "OCR PDF जोड़ें",
+        "मर्ज PDF खोज योग्य बनाएँ",
+        "स्कैन दस्तावेज़ जोड़ें"
+      ],
+      "answer": "स्कैन किए PDF को खोज योग्य फ़ाइल में जोड़ने के लिए स्कैन सही क्रम में मिलाएँ, फिर संयुक्त कॉपी पर OCR चलाएँ। अहम नाम और संख्याएँ पेज की तस्वीर से मिलाकर जाँचें। PrintxPDF ब्राउज़र में PDF जोड़ता है और फिर बिना साइनअप या वॉटरमार्क के खोज योग्य पाठ बना सकता है। परिणाम जाँचने तक मूल स्कैन सुरक्षित रखें।",
+      "ctaLabel": "स्कैन जोड़ें और खोज योग्य पाठ बनाएँ",
+      "body": [
+        {
+          "t": "p",
+          "x": "स्कैन PDF में अक्सर पेज की तस्वीरें होती हैं, ऐसा पाठ नहीं जिसे खोज या कॉपी किया जा सके। पहले स्कैन को सही क्रम में एक दस्तावेज़ में जोड़ें। फिर OCR चलाएँ, जो पेज की छवियाँ पढ़कर खोज योग्य पाठ की परत जोड़ता है। PrintxPDF सामान्य फ़ाइलों के लिए ये ब्राउज़र वाले चरण टैब में करता है, इसलिए नियमित मर्ज और पहचान के लिए निजी स्कैन अपलोड करने की ज़रूरत नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "स्कैन जोड़कर PDF को खोज योग्य कैसे बनाएँ"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "हर स्कैन जाँचें",
+              "x": "पेज की दिशा, स्पष्टता और क्रम देखें। बहुत गहरे, धुंधले या कटे पेज अंतिम दस्तावेज़ बनाने से पहले दोबारा स्कैन करें।"
+            },
+            {
+              "h": "स्कैन PDF जोड़ें",
+              "x": "[PDF जोड़ें](/tools/merge-pdf) में फ़ाइलें क्रम से चुनें। नई संयुक्त कॉपी बनाएँ और देखें कि कोई पेज छूटा या दोहराया तो नहीं।"
+            },
+            {
+              "h": "संयुक्त कॉपी पर OCR चलाएँ",
+              "x": "[PDF OCR](/tools/ocr-pdf) खोलें, संयुक्त स्कैन जोड़ें और खोज योग्य पाठ बनाएँ। OCR दिखने वाले पाठ को पढ़ता है; खराब स्कैन ठीक नहीं करता।"
+            },
+            {
+              "h": "जोखिम वाले पाठ की पुष्टि करें",
+              "x": "किसी नाम, तारीख, रकम या संदर्भ संख्या को खोजें। रिकॉर्ड या खोज में उपयोग से पहले पहचाने गए पाठ को पेज की छवि से मिलाएँ।"
+            },
+            {
+              "h": "अंतिम कॉपी सहेजें",
+              "x": "मूल इमेज-आधारित स्कैन संदर्भ के लिए रखें। खोज योग्य संस्करण पढ़ने और ढूँढ़ने के लिए उपयोग करें; ईमेल सीमा हो तभी अलग कॉपी संपीड़ित करें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ब्राउज़र में स्कैन PDF मुफ़्त जोड़ें, फिर अंतिम कॉपी में OCR खोज चालू करें।"
+        },
+        {
+          "t": "h2",
+          "x": "पहले मर्ज करें या पहले OCR?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "तरीका",
+            "कब बेहतर",
+            "परिणाम"
+          ],
+          "rows": [
+            [
+              "पहले मर्ज, फिर OCR",
+              "सभी स्कैन की भाषा और गुणवत्ता समान हो",
+              "एक OCR प्रक्रिया और एक खोज योग्य आउटपुट।"
+            ],
+            [
+              "हर स्कैन पर OCR, फिर मर्ज",
+              "हर फ़ाइल अलग जाँचनी हो",
+              "समीक्षा अधिक, पर गलती ढूँढ़ना आसान।"
+            ],
+            [
+              "केवल मर्ज",
+              "सिर्फ देखने योग्य पैकेट चाहिए",
+              "पाठ खोजा या भरोसे से कॉपी नहीं किया जा सकेगा।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR से पहले स्कैन की गुणवत्ता सुधारें"
+        },
+        {
+          "t": "p",
+          "x": "OCR की सटीकता छवि पर निर्भर करती है, किसी जादुई सेटिंग पर नहीं। सीधे पेज, समान रोशनी, गहरा पाठ और पर्याप्त रिज़ॉल्यूशन पहचान में मदद करते हैं। तिरछी फ़ोन तस्वीर 8 को 3 या O को 0 पढ़ सकती है। दिशा ठीक करने के लिए [PDF घुमाएँ](/tools/rotate-pdf), अनचाहे खाली पेज हटाने के लिए [पेज हटाएँ](/tools/delete-pages) चलाएँ, और नाम, संख्या या तारीख वाले हर पेज को देखें।"
+        },
+        {
+          "t": "h2",
+          "x": "खोज योग्य स्कैन क्या साबित करता है और क्या नहीं"
+        },
+        {
+          "t": "p",
+          "x": "पाठ की परत जानकारी ढूँढ़ने, कॉपी करने और देखने में मदद करती है, लेकिन यह अपने आप में प्रमाणित प्रतिलेख नहीं है। कानूनी, वित्तीय, चिकित्सा या अभिलेख के निर्णयों में जानकारी को मूल पेज की छवि से मिलाएँ। स्रोत स्कैन रखें और फ़ाइलों के स्पष्ट नाम रखें, ताकि खोज वाली कॉपी को मूल रिकॉर्ड न समझा जाए।"
+        },
+        {
+          "t": "h2",
+          "x": "OCR के बाद गोपनीयता और फ़ाइल आकार"
+        },
+        {
+          "t": "p",
+          "x": "संयुक्त फ़ाइल में संवेदनशील रिकॉर्ड हो सकते हैं। स्थानीय प्रोसेसिंग अनावश्यक स्थानांतरण घटाती है, फिर भी साझा करने से पहले सामग्री देखें। पाठ की परत जुड़ने से OCR फ़ाइल आकार बढ़ा सकता है। [PDF संपीड़ित करें](/tools/compress-pdf) तभी करें जब खोज चलने और पेज स्पष्ट रहने की पुष्टि हो। मर्ज और OCR अपने आप मेटाडेटा साफ़ नहीं करते; नीति कहे तो अलग टूल इस्तेमाल करें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या स्कैन PDF जोड़कर खोज योग्य बना सकता हूँ?",
+          "a": "हाँ। फ़ाइलें सही क्रम में जोड़ें और संयुक्त कॉपी पर OCR चलाएँ। पहचाने गए पाठ पर भरोसा करने से पहले अहम शब्द और संख्या स्कैन से मिलाएँ।"
+        },
+        {
+          "q": "PDF जोड़ने से पहले OCR चलाऊँ या बाद में?",
+          "a": "अगर भाषा और गुणवत्ता समान है, तो पहले जोड़ना आसान रहता है। अलग-अलग परिणाम जाँचने या समस्या खोजने के लिए हर स्कैन पर पहले OCR करें।"
+        },
+        {
+          "q": "क्या OCR मूल स्कैन PDF बदलता है?",
+          "a": "कॉपी पर काम करें। OCR अलग खोज योग्य परिणाम बनाता है और मूल इमेज स्कैन तुलना के लिए बचा रहता है।"
+        },
+        {
+          "q": "OCR नाम या संख्या गलत क्यों पढ़ता है?",
+          "a": "तिरछे पेज, धुंधलापन, कम रिज़ॉल्यूशन, हाथ की लिखावट, असामान्य फ़ॉन्ट और कम कंट्रास्ट त्रुटि कर सकते हैं। दोबारा स्कैन करें या अहम जानकारी खुद जाँचें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية دمج ملفات PDF الممسوحة في ملف قابل للبحث",
+      "metaTitle": "ادمج PDF الممسوح واجعله قابلاً للبحث",
+      "metaDescription": "ادمج ملفات PDF ممسوحة وأضف نصاً قابلاً للبحث عبر OCR. مجاناً وبلا تسجيل أو علامة مائية، في المتصفح.",
+      "keyword": "دمج PDF ممسوح في ملف قابل للبحث",
+      "secondaryKeywords": [
+        "جمع ملفات PDF ممسوحة",
+        "دمج PDF مع OCR",
+        "جعل PDF المدمج قابلاً للبحث",
+        "دمج مستندات ممسوحة"
+      ],
+      "answer": "لدمج ملفات PDF ممسوحة في ملف قابل للبحث، اجمع المسوحات بالترتيب الصحيح ثم شغّل OCR على النسخة المدمجة. تحقق من الأسماء والأرقام المهمة بمقارنتها بالصورة. يتيح PrintxPDF دمج PDF في المتصفح ثم إضافة نص قابل للبحث دون تسجيل أو علامة مائية. احتفظ بالمسوحات الأصلية حتى تراجع النتيجة.",
+      "ctaLabel": "ادمج المسوحات وأضف نصاً قابلاً للبحث",
+      "body": [
+        {
+          "t": "p",
+          "x": "يحتوي PDF الممسوح عادةً على صور للصفحات، لا على نص يمكنك البحث عنه أو نسخه. اجمع المسوحات أولاً في مستند مرتب، ثم شغّل OCR ليقرأ صور الصفحات ويضيف طبقة نصية قابلة للبحث. يعالج PrintxPDF هذه الخطوات داخل المتصفح للملفات القياسية، فلا تحتاج إلى رفع المسوحات الخاصة لإجراء الدمج المعتاد والتعرّف على النص."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية دمج المسوحات وجعل PDF قابلاً للبحث"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "افحص كل مسح",
+              "x": "تحقق من اتجاه الصفحات ووضوحها وترتيبها. أعد مسح الصفحات الداكنة جداً أو الضبابية أو المقتطعة قبل إنشاء الملف النهائي."
+            },
+            {
+              "h": "ادمج ملفات PDF الممسوحة",
+              "x": "استخدم [دمج PDF](/tools/merge-pdf) لإضافة الملفات بالتسلسل. أنشئ نسخة جديدة وتأكد من عدم فقد صفحات أو تكرارها."
+            },
+            {
+              "h": "شغّل OCR على النسخة المدمجة",
+              "x": "افتح [OCR PDF](/tools/ocr-pdf)، وأضف الملف المدمج وأنشئ نصاً قابلاً للبحث. يقرأ OCR ما يظهر في الصورة ولا يصلح المسح الرديء."
+            },
+            {
+              "h": "تحقق من النص عالي الأهمية",
+              "x": "ابحث عن اسم أو تاريخ أو مبلغ أو رقم مرجعي مميز. قارن النص المستخرج بالصورة قبل استخدامه في السجلات أو البحث."
+            },
+            {
+              "h": "احفظ نسخة نهائية واضحة",
+              "x": "احتفظ بالمسح الأصلي كمرجع. استخدم النسخة القابلة للبحث للعثور على المحتوى وقراءته، واضغط نسخة أخرى فقط إذا تطلب حجم البريد ذلك."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ادمج ملفات PDF الممسوحة مجاناً في المتصفح، ثم أضف OCR إلى النسخة النهائية."
+        },
+        {
+          "t": "h2",
+          "x": "هل تدمج أولاً أم تشغّل OCR أولاً؟"
+        },
+        {
+          "t": "table",
+          "head": [
+            "المسار",
+            "متى يناسب",
+            "النتيجة"
+          ],
+          "rows": [
+            [
+              "الدمج ثم OCR",
+              "إذا تشابهت لغة المسوحات وجودتها",
+              "عملية OCR واحدة وملف قابل للبحث."
+            ],
+            [
+              "OCR لكل مسح ثم الدمج",
+              "إذا أردت فحص الملفات بشكل منفصل",
+              "مراجعة أكثر، لكن يسهل عزل الأخطاء."
+            ],
+            [
+              "الدمج فقط",
+              "إذا كنت تحتاج إلى حزمة مرئية",
+              "يبقى النص غير قابل للبحث والنسخ الموثوق."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "حسّن المسح قبل تشغيل OCR"
+        },
+        {
+          "t": "p",
+          "x": "تعتمد الدقة على جودة الصورة، لا على إعداد سحري. تساعد الصفحات المستقيمة والإضاءة المتوازنة والنص الداكن والدقة الكافية. قد تحوّل صورة هاتف مائلة الرقم 8 إلى 3 أو الحرف O إلى 0. صحح الاتجاه باستخدام [تدوير PDF](/tools/rotate-pdf)، واحذف الصفحات الفارغة غير المقصودة عبر [حذف الصفحات](/tools/delete-pages)، وافحص كل صفحة فيها اسم أو رقم أو تاريخ مهم."
+        },
+        {
+          "t": "h2",
+          "x": "ما الذي يثبته المسح القابل للبحث وما الذي لا يثبته"
+        },
+        {
+          "t": "p",
+          "x": "تسهّل طبقة النص العثور على المعلومات ونسخها ومراجعتها، لكنها ليست تفريغاً موثوقاً بالضرورة. في القرارات القانونية أو المالية أو الطبية أو الأرشيفية، قارن البيانات المهمة بصورة الصفحة الأصلية. احتفظ بمسوحات المصدر وسمّ الملفات بوضوح حتى لا تختلط نسخة البحث بالسجل الأصلي."
+        },
+        {
+          "t": "h2",
+          "x": "الخصوصية وحجم الملف بعد OCR"
+        },
+        {
+          "t": "p",
+          "x": "قد يحتوي الملف المدمج على سجلات حساسة. تقلل المعالجة المحلية النقل غير الضروري، لكن افحص المحتوى قبل المشاركة. قد يزيد OCR حجم الملف لأنه يضيف طبقة نصية. استخدم [ضغط PDF](/tools/compress-pdf) بعد التأكد من أن البحث يعمل وأن الصفحات ما زالت واضحة. لا يزيل الدمج أو OCR البيانات الوصفية تلقائياً؛ استخدم أداة منفصلة إذا اقتضت السياسة ذلك."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكنني دمج PDF ممسوح وجعله قابلاً للبحث؟",
+          "a": "نعم. ادمج الملفات بالترتيب الصحيح ثم شغّل OCR على النسخة المجمعة. قارن الكلمات والأرقام المهمة بالمسح قبل الاعتماد على النص المتعرف عليه."
+        },
+        {
+          "q": "هل أشغّل OCR قبل الدمج أم بعده؟",
+          "a": "يكون الدمج أولاً أبسط عادةً إذا تشابهت اللغة والجودة. عالج كل ملف على حدة إذا أردت مراجعة النتيجة أو استكشاف الأخطاء منفردة."
+        },
+        {
+          "q": "هل يغيّر OCR ملف PDF الممسوح الأصلي؟",
+          "a": "اعمل على نسخة. ينشئ OCR نتيجة منفصلة قابلة للبحث ويترك المسح الأصلي متاحاً للمقارنة."
+        },
+        {
+          "q": "لماذا يخطئ OCR في الأسماء أو الأرقام؟",
+          "a": "قد تسبب الصفحات المائلة والضبابية والدقة المنخفضة والكتابة اليدوية والخطوط غير المعتادة وضعف التباين أخطاء. أعد المسح أو تحقق يدوياً من المعلومات المهمة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "স্ক্যান PDF একত্র করে কীভাবে অনুসন্ধানযোগ্য ফাইল বানাবেন",
+      "metaTitle": "স্ক্যান PDF একত্র করে অনুসন্ধানযোগ্য করুন",
+      "metaDescription": "স্ক্যান PDF একত্র করে OCR দিয়ে অনুসন্ধানযোগ্য লেখা যোগ করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া, ব্রাউজারে।",
+      "keyword": "স্ক্যান PDF একত্র করে অনুসন্ধানযোগ্য ফাইল",
+      "secondaryKeywords": [
+        "স্ক্যান PDF মিলিয়ে নিন",
+        "OCR PDF একত্র",
+        "মার্জ PDF অনুসন্ধানযোগ্য করুন",
+        "স্ক্যান নথি একত্র"
+      ],
+      "answer": "স্ক্যান PDF একত্র করে অনুসন্ধানযোগ্য করতে স্ক্যানগুলো সঠিক ক্রমে জুড়ুন, তারপর সম্মিলিত কপিতে OCR চালান। গুরুত্বপূর্ণ নাম ও সংখ্যা ছবির সঙ্গে মিলিয়ে যাচাই করুন। PrintxPDF ব্রাউজারে PDF জোড়ে, এরপর সাইনআপ বা ওয়াটারমার্ক ছাড়াই অনুসন্ধানযোগ্য লেখা যোগ করে। ফল যাচাই না হওয়া পর্যন্ত মূল স্ক্যান রাখুন।",
+      "ctaLabel": "স্ক্যান জুড়ে অনুসন্ধানযোগ্য লেখা যোগ করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "স্ক্যান PDF-এ সাধারণত পৃষ্ঠার ছবি থাকে, এমন লেখা থাকে না যা খোঁজা বা কপি করা যায়। প্রথমে স্ক্যানগুলো সঠিক ক্রমে একটি নথিতে জুড়ুন। তারপর OCR চালান, যা পৃষ্ঠার ছবি পড়ে অনুসন্ধানযোগ্য লেখার স্তর যোগ করে। PrintxPDF সাধারণ ফাইলের জন্য এই ব্রাউজারভিত্তিক ধাপ ট্যাবে করে, তাই নিয়মিত মার্জ ও লেখা শনাক্ত করতে ব্যক্তিগত স্ক্যান আপলোড করতে হয় না।"
+        },
+        {
+          "t": "h2",
+          "x": "স্ক্যান জুড়ে PDF অনুসন্ধানযোগ্য করার ধাপ"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "প্রতিটি স্ক্যান পরীক্ষা করুন",
+              "x": "পৃষ্ঠার দিক, স্পষ্টতা ও ক্রম দেখুন। খুব অন্ধকার, ঝাপসা বা কাটা পৃষ্ঠা চূড়ান্ত ফাইলের আগে আবার স্ক্যান করুন।"
+            },
+            {
+              "h": "স্ক্যান PDF একত্র করুন",
+              "x": "[PDF একত্র করুন](/tools/merge-pdf) দিয়ে ফাইলগুলো ক্রমে যোগ করুন। নতুন কপি বানিয়ে কোনো পৃষ্ঠা বাদ বা নকল হয়েছে কি না দেখুন।"
+            },
+            {
+              "h": "সম্মিলিত কপিতে OCR চালান",
+              "x": "[PDF OCR](/tools/ocr-pdf) খুলে সম্মিলিত স্ক্যান দিন এবং অনুসন্ধানযোগ্য লেখা তৈরি করুন। OCR ছবিতে যা দেখে তাই পড়ে; খারাপ স্ক্যান ঠিক করে না।"
+            },
+            {
+              "h": "গুরুত্বপূর্ণ লেখা যাচাই করুন",
+              "x": "আলাদা কোনো নাম, তারিখ, অঙ্ক বা রেফারেন্স নম্বর খুঁজুন। রেকর্ড বা অনুসন্ধানে ব্যবহারের আগে শনাক্ত লেখা ছবির সঙ্গে মিলিয়ে নিন।"
+            },
+            {
+              "h": "পরিষ্কার চূড়ান্ত কপি রাখুন",
+              "x": "মূল ছবিভিত্তিক স্ক্যান রেফারেন্স হিসেবে রাখুন। খোঁজা ও পড়ার জন্য অনুসন্ধানযোগ্য কপি ব্যবহার করুন; ইমেইলের আকার সীমা থাকলেই আলাদা কপি সংকুচিত করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "ব্রাউজারে স্ক্যান PDF বিনামূল্যে জুড়ে চূড়ান্ত কপিতে OCR অনুসন্ধান যোগ করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "আগে PDF জুড়বেন, নাকি আগে OCR?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "পদ্ধতি",
+            "কখন উপযুক্ত",
+            "ফল"
+          ],
+          "rows": [
+            [
+              "জুড়ে তারপর OCR",
+              "স্ক্যানের ভাষা ও গুণমান কাছাকাছি",
+              "একবার OCR এবং একটি অনুসন্ধানযোগ্য ফাইল।"
+            ],
+            [
+              "প্রতিটি স্ক্যানে OCR, তারপর জোড়া",
+              "আলাদা ফাইল আলাদা করে যাচাই দরকার",
+              "পর্যালোচনা বেশি, তবে ভুল আলাদা করা সহজ।"
+            ],
+            [
+              "শুধু জোড়া",
+              "শুধু দেখার মতো প্যাকেট দরকার",
+              "লেখা খোঁজা বা নির্ভরযোগ্যভাবে কপি করা যাবে না।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR চালানোর আগে স্ক্যান ভালো করুন"
+        },
+        {
+          "t": "p",
+          "x": "OCR-এর নির্ভুলতা ছবির ওপর নির্ভর করে, কোনো জাদুকরী সেটিংয়ের ওপর নয়। সোজা পৃষ্ঠা, সমান আলো, গাঢ় লেখা ও যথেষ্ট রেজোলিউশন শনাক্তকরণে সাহায্য করে। তির্যক ফোনের ছবি ৮-কে ৩ বা O-কে ০ পড়তে পারে। দিক ঠিক করতে [PDF ঘোরান](/tools/rotate-pdf), ভুল ফাঁকা পৃষ্ঠা সরাতে [পৃষ্ঠা মুছুন](/tools/delete-pages) ব্যবহার করুন এবং নাম, সংখ্যা বা তারিখ থাকা প্রতিটি পৃষ্ঠা দেখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "অনুসন্ধানযোগ্য স্ক্যান কী প্রমাণ করে, কী করে না"
+        },
+        {
+          "t": "p",
+          "x": "লেখার স্তর তথ্য খুঁজতে, কপি করতে ও পর্যালোচনা করতে সাহায্য করে, তবে সেটি নিশ্চিত নির্ভুল প্রতিলিপি নয়। আইনি, আর্থিক, চিকিৎসা বা আর্কাইভের সিদ্ধান্তে প্রাসঙ্গিক তথ্য মূল পৃষ্ঠার ছবির সঙ্গে তুলনা করুন। মূল স্ক্যান রাখুন এবং ফাইলের স্পষ্ট নাম দিন, যাতে অনুসন্ধানযোগ্য কপি মূল রেকর্ড ভেবে ভুল না হয়।"
+        },
+        {
+          "t": "h2",
+          "x": "OCR-এর পর গোপনীয়তা ও ফাইলের আকার"
+        },
+        {
+          "t": "p",
+          "x": "সম্মিলিত ফাইলে সংবেদনশীল রেকর্ড থাকতে পারে। স্থানীয় প্রক্রিয়াকরণ অপ্রয়োজনীয় ফাইল স্থানান্তর কমায়, তবু শেয়ারের আগে বিষয়বস্তু দেখুন। OCR লেখার স্তর যোগ করায় ফাইল বড় হতে পারে। অনুসন্ধান কাজ করছে ও পৃষ্ঠা পাঠযোগ্য আছে নিশ্চিত হওয়ার পর [PDF সংকুচিত করুন](/tools/compress-pdf) ব্যবহার করুন। মার্জ ও OCR নিজে থেকে মেটাডেটা মুছে না; নীতি চাইলে আলাদা টুল ব্যবহার করুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "স্ক্যান PDF একত্র করে অনুসন্ধানযোগ্য করতে পারি?",
+          "a": "হ্যাঁ। ফাইল সঠিক ক্রমে জুড়ে সম্মিলিত কপিতে OCR চালান। শনাক্ত লেখার ওপর নির্ভর করার আগে জরুরি শব্দ ও সংখ্যা স্ক্যানের সঙ্গে মেলান।"
+        },
+        {
+          "q": "PDF জোড়ার আগে OCR চালাব, নাকি পরে?",
+          "a": "ফাইলগুলোর ভাষা ও গুণমান কাছাকাছি হলে আগে জোড়া সাধারণত সহজ। আলাদা ফল যাচাই বা সমস্যা খুঁজতে প্রতিটি স্ক্যানে আগে OCR চালান।"
+        },
+        {
+          "q": "OCR কি মূল স্ক্যান PDF বদলে দেয়?",
+          "a": "কপি দিয়ে কাজ করুন। OCR আলাদা অনুসন্ধানযোগ্য ফল তৈরি করে; তুলনার জন্য মূল ছবিভিত্তিক স্ক্যান থাকে।"
+        },
+        {
+          "q": "OCR নাম বা সংখ্যা ভুল পড়ে কেন?",
+          "a": "পৃষ্ঠা বাঁকা, ঝাপসা, কম রেজোলিউশনের, হাতের লেখা, অচেনা ফন্ট বা কম কনট্রাস্ট হলে ভুল হতে পারে। আবার স্ক্যান করুন বা জরুরি তথ্য নিজে যাচাই করুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách gộp PDF scan thành một tệp có thể tìm kiếm",
+      "metaTitle": "Gộp PDF scan và tạo tệp có thể tìm kiếm",
+      "metaDescription": "Gộp PDF scan và thêm văn bản tìm kiếm bằng OCR. Miễn phí, không đăng ký, không dấu mờ, xử lý trong trình duyệt.",
+      "keyword": "gộp PDF scan thành tệp tìm kiếm được",
+      "secondaryKeywords": [
+        "kết hợp PDF scan",
+        "gộp PDF bằng OCR",
+        "tạo PDF gộp có thể tìm kiếm",
+        "ghép tài liệu scan"
+      ],
+      "answer": "Để gộp PDF scan thành một tệp có thể tìm kiếm, hãy kết hợp các bản quét đúng thứ tự rồi chạy OCR trên bản đã gộp. Đối chiếu tên và số quan trọng với hình ảnh. PrintxPDF cho phép gộp PDF trong trình duyệt, sau đó thêm văn bản tìm kiếm mà không cần đăng ký hay có dấu mờ. Giữ bản scan gốc đến khi kiểm tra xong.",
+      "ctaLabel": "Gộp bản scan và thêm tìm kiếm bằng OCR",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF scan thường chứa hình ảnh trang giấy chứ không có văn bản để tìm hoặc sao chép. Trước tiên, gộp các bản scan theo đúng thứ tự. Sau đó chạy OCR để đọc ảnh trang và thêm lớp văn bản có thể tìm kiếm. PrintxPDF xử lý các bước này trong trình duyệt với tệp tiêu chuẩn, nên bạn không cần tải bản scan riêng tư lên dịch vụ khác để gộp và nhận dạng thông thường."
+        },
+        {
+          "t": "h2",
+          "x": "Cách gộp bản scan và tạo PDF có thể tìm kiếm"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Kiểm tra từng bản scan",
+              "x": "Xem chiều trang, độ rõ và thứ tự. Quét lại trang quá tối, mờ hoặc bị cắt trước khi tạo bộ tài liệu cuối."
+            },
+            {
+              "h": "Gộp các PDF scan",
+              "x": "Dùng [Gộp PDF](/tools/merge-pdf) để thêm tệp theo trình tự. Tạo bản kết hợp mới và xác nhận không thiếu hoặc trùng trang."
+            },
+            {
+              "h": "Chạy OCR trên bản đã gộp",
+              "x": "Mở [OCR PDF](/tools/ocr-pdf), thêm bản scan kết hợp và tạo văn bản tìm kiếm được. OCR đọc những gì ảnh thể hiện; nó không sửa bản quét kém."
+            },
+            {
+              "h": "Xác minh nội dung quan trọng",
+              "x": "Tìm một tên, ngày, số tiền hoặc mã tham chiếu đặc trưng. So sánh văn bản nhận dạng với ảnh trước khi dùng làm hồ sơ hoặc tìm kiếm."
+            },
+            {
+              "h": "Lưu bản cuối có chủ đích",
+              "x": "Giữ bản scan gốc để đối chiếu. Dùng bản có OCR để tìm và đọc; chỉ nén một bản riêng nếu giới hạn email yêu cầu."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "Gộp PDF scan miễn phí trong trình duyệt, sau đó thêm OCR vào bản cuối."
+        },
+        {
+          "t": "h2",
+          "x": "Nên gộp trước hay chạy OCR trước?"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Quy trình",
+            "Phù hợp khi",
+            "Đánh đổi"
+          ],
+          "rows": [
+            [
+              "Gộp rồi chạy OCR",
+              "Các bản scan có ngôn ngữ và chất lượng tương tự",
+              "Một lần OCR và một tệp đầu ra có thể tìm kiếm."
+            ],
+            [
+              "OCR từng bản rồi gộp",
+              "Cần kiểm tra từng tệp riêng",
+              "Tốn công xem lại hơn nhưng dễ khoanh vùng lỗi."
+            ],
+            [
+              "Chỉ gộp",
+              "Chỉ cần bộ tài liệu để xem",
+              "Văn bản vẫn không thể tìm hoặc sao chép đáng tin cậy."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cải thiện bản scan trước khi OCR"
+        },
+        {
+          "t": "p",
+          "x": "Độ chính xác OCR phụ thuộc hình ảnh, không có cài đặt thần kỳ. Trang thẳng, ánh sáng đều, chữ đậm và độ phân giải đủ giúp nhận dạng tốt hơn. Ảnh chụp nghiêng có thể biến số 8 thành 3 hoặc chữ O thành 0. Sửa chiều trang bằng [Xoay PDF](/tools/rotate-pdf), xóa trang trắng vô tình bằng [Xóa trang](/tools/delete-pages), rồi xem kỹ trang có tên, số hoặc ngày quan trọng."
+        },
+        {
+          "t": "h2",
+          "x": "Bản scan có thể tìm kiếm chứng minh điều gì"
+        },
+        {
+          "t": "p",
+          "x": "Lớp văn bản giúp tìm, sao chép và xem lại thông tin, nhưng không mặc nhiên là bản chép chính xác. Với quyết định pháp lý, tài chính, y tế hoặc lưu trữ, hãy đối chiếu thông tin quan trọng với hình ảnh gốc. Giữ bản scan nguồn và đặt tên tệp rõ ràng để không nhầm bản dùng tra cứu với hồ sơ gốc."
+        },
+        {
+          "t": "h2",
+          "x": "Quyền riêng tư và dung lượng sau OCR"
+        },
+        {
+          "t": "p",
+          "x": "Tệp đã gộp có thể chứa hồ sơ nhạy cảm. Xử lý cục bộ giảm truyền tệp không cần thiết, nhưng hãy kiểm tra nội dung trước khi chia sẻ. OCR có thể làm tệp lớn hơn vì thêm lớp văn bản. Chỉ dùng [Nén PDF](/tools/compress-pdf) sau khi xác nhận tìm kiếm hoạt động và trang vẫn rõ. Gộp và OCR không tự xóa siêu dữ liệu; hãy dùng công cụ riêng nếu chính sách yêu cầu."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Tôi có thể gộp PDF scan và tạo tệp tìm kiếm được không?",
+          "a": "Có. Gộp tệp đúng thứ tự rồi chạy OCR trên bản kết hợp. Đối chiếu từ và số quan trọng với bản scan trước khi tin vào văn bản nhận dạng."
+        },
+        {
+          "q": "Nên chạy OCR trước hay sau khi gộp?",
+          "a": "Gộp trước thường đơn giản hơn nếu các tệp có ngôn ngữ và chất lượng tương tự. Hãy OCR riêng từng tệp nếu cần xem lại hoặc xử lý lỗi độc lập."
+        },
+        {
+          "q": "OCR có thay đổi PDF scan gốc không?",
+          "a": "Hãy làm trên bản sao. OCR tạo kết quả tìm kiếm riêng, còn bản scan hình ảnh gốc vẫn có thể dùng để so sánh."
+        },
+        {
+          "q": "Vì sao OCR nhận sai tên hoặc số?",
+          "a": "Trang nghiêng, ảnh mờ, độ phân giải thấp, chữ viết tay, phông lạ và độ tương phản kém có thể gây lỗi. Hãy quét lại hoặc kiểm tra thủ công thông tin quan trọng."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何将扫描 PDF 合并为可搜索文件",
+      "metaTitle": "合并扫描 PDF 并创建可搜索文件",
+      "metaDescription": "合并扫描 PDF，并用 OCR 添加可搜索文本。免费、无需注册、无水印，在浏览器中处理。免费使用，无需上传文件。",
+      "keyword": "合并扫描 PDF 并使其可搜索",
+      "secondaryKeywords": [
+        "合并扫描 PDF",
+        "合并 OCR PDF",
+        "让合并后的 PDF 可搜索",
+        "合并扫描文档"
+      ],
+      "answer": "要把扫描 PDF 合并成可搜索文件，请先按正确顺序合并扫描件，再对合并副本运行 OCR。把重要姓名和数字与页面图像对照检查。PrintxPDF 可在浏览器中合并 PDF，随后添加可搜索文本，无需注册或水印。检查结果之前，请保留原始扫描件。",
+      "ctaLabel": "合并扫描件并添加可搜索文本",
+      "body": [
+        {
+          "t": "p",
+          "x": "扫描 PDF 通常只包含页面图片，没有可供搜索或复制的文本。先把扫描件按正确顺序合并成一份文档，再运行 OCR。OCR 会读取页面图像并添加可搜索文本层。PrintxPDF 对标准文件在浏览器中完成这些步骤，因此常规合并和文字识别无需把私人扫描件上传到外部服务。"
+        },
+        {
+          "t": "h2",
+          "x": "如何合并扫描件并让 PDF 可搜索"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "检查每份扫描件",
+              "x": "确认页面方向、清晰度和顺序。太暗、模糊或被裁切的页面应先重新扫描，再制作最终文件。"
+            },
+            {
+              "h": "合并扫描 PDF",
+              "x": "使用[合并 PDF](/tools/merge-pdf)，按顺序添加文件。创建新的合并副本，并检查是否有页面缺失或重复。"
+            },
+            {
+              "h": "对合并副本运行 OCR",
+              "x": "打开[PDF OCR](/tools/ocr-pdf)，添加合并扫描件并生成可搜索文本。OCR 只能识别图像中可见的内容，无法修复低质量扫描。"
+            },
+            {
+              "h": "核对重要文字",
+              "x": "搜索一个独特的姓名、日期、金额或参考编号。用于记录或搜索前，将识别文本与页面图像对照。"
+            },
+            {
+              "h": "保存明确用途的最终副本",
+              "x": "保留原始图像扫描件作为参考。使用 OCR 版本搜索和阅读；只有邮件附件大小受限时，才另行压缩副本。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "merge-pdf",
+          "x": "在浏览器中免费合并扫描 PDF，再为最终副本添加 OCR 搜索文本。"
+        },
+        {
+          "t": "h2",
+          "x": "先合并还是先运行 OCR？"
+        },
+        {
+          "t": "table",
+          "head": [
+            "流程",
+            "适用情况",
+            "取舍"
+          ],
+          "rows": [
+            [
+              "先合并，再运行 OCR",
+              "扫描件的语言和质量相近",
+              "只需运行一次 OCR，得到一个可搜索文件。"
+            ],
+            [
+              "逐份 OCR，再合并",
+              "需要单独检查每个文件",
+              "检查工作更多，但更容易定位识别错误。"
+            ],
+            [
+              "只合并",
+              "只需要可视化文件包",
+              "文本仍不可搜索，也无法可靠复制。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "运行 OCR 前改善扫描质量"
+        },
+        {
+          "t": "p",
+          "x": "OCR 准确度取决于图像本身，没有万能设置。页面平整、光线均匀、文字较深、分辨率足够，都有助于识别。手机斜拍可能把数字 8 识别成 3，把字母 O 识别成 0。用[旋转 PDF](/tools/rotate-pdf)调整方向，用[删除页面](/tools/delete-pages)移除误加的空白页，并检查包含重要姓名、数字或日期的页面。"
+        },
+        {
+          "t": "h2",
+          "x": "可搜索扫描件能证明什么，不能证明什么"
+        },
+        {
+          "t": "p",
+          "x": "文本层让信息更容易查找、复制和复核，但不能自动视为权威转录。涉及法律、财务、医疗或档案决策时，请对照原始页面图像核实相关信息。保留源扫描件并清楚命名文件，避免把查询副本误认为原始记录。"
+        },
+        {
+          "t": "h2",
+          "x": "OCR 后的隐私和文件大小检查"
+        },
+        {
+          "t": "p",
+          "x": "合并文件可能包含敏感记录。本地处理可减少不必要的文件传输，但分享前仍要检查输出内容。OCR 会添加文本层，可能让文件变大。确认搜索可用且页面仍清晰后，再使用[压缩 PDF](/tools/compress-pdf)。合并和 OCR 不会自动清除元数据；政策要求时，请单独移除。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以把扫描 PDF 合并并变成可搜索文件吗？",
+          "a": "可以。按正确顺序合并文件，然后对合并副本运行 OCR。依赖识别文本前，请把重要词语和数字与扫描图像核对。"
+        },
+        {
+          "q": "应该在合并前还是合并后运行 OCR？",
+          "a": "如果扫描件的语言和质量相近，先合并通常更简单。需要分别检查或排查识别问题时，再逐份运行 OCR。"
+        },
+        {
+          "q": "OCR 会修改原始扫描 PDF 吗？",
+          "a": "请在副本上操作。OCR 会创建单独的可搜索结果，原始图像扫描件仍可用于对照。"
+        },
+        {
+          "q": "OCR 为什么会认错姓名或数字？",
+          "a": "页面倾斜、模糊、分辨率低、手写内容、特殊字体和对比度不足都可能造成错误。请重新扫描，或人工核对重要信息。"
+        }
+      ]
+    }
+  }
+}
