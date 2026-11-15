@@ -1,0 +1,973 @@
+{
+  "topic": "convert-pdf-to-markdown-for-notes",
+  "sourceCluster": "from-pdf",
+  "tool": "pdf-to-markdown",
+  "languages": {
+    "es": {
+      "title": "Cómo convertir un PDF a Markdown para tomar notas",
+      "metaTitle": "Convertir PDF a Markdown para notas",
+      "metaDescription": "Convierte PDF a Markdown gratis para tus notas. Sin registro ni marca de agua, con extracción privada en el navegador.",
+      "keyword": "convertir PDF a Markdown para notas",
+      "secondaryKeywords": [
+        "PDF a Markdown gratis",
+        "convertir PDF a MD",
+        "extraer texto PDF",
+        "convertir PDF en notas"
+      ],
+      "answer": "Para convertir un PDF de texto en notas, pásalo a Markdown, revisa los títulos y las listas y edita el resultado en tu aplicación de notas. Conserva el PDF si importan el diseño de página o la evidencia visual.",
+      "ctaLabel": "Convierte PDF a Markdown en el navegador",
+      "body": [
+        {
+          "t": "p",
+          "x": "Markdown es útil cuando quieres convertir un PDF en notas editables en vez de conservarlo como una página fija. Puede mantener títulos, listas y párrafos básicos para que puedas revisar y reutilizar el texto. No conserva exactamente la maquetación del PDF, así que guarda el original cuando el diseño o el contexto visual sea importante."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir un PDF de texto a Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Comprueba si puedes seleccionar texto",
+              "x": "Intenta seleccionar una frase en el PDF. Si es un escaneo, ejecuta OCR en una copia de trabajo primero."
+            },
+            {
+              "h": "Abre PDF a Markdown",
+              "x": "Añade el archivo a [PDF a Markdown](/tools/pdf-to-markdown) en tu navegador."
+            },
+            {
+              "h": "Crea el archivo Markdown",
+              "x": "Inicia la conversión. Las líneas grandes pueden convertirse en títulos, las viñetas en listas y las líneas normales en párrafos."
+            },
+            {
+              "h": "Lee el resultado",
+              "x": "Abre el archivo MD en un editor, una aplicación de notas o un visor Markdown. Comprueba títulos, listas y términos importantes."
+            },
+            {
+              "h": "Conserva el PDF original",
+              "x": "Guárdalo cuando importen la maquetación, las firmas, los gráficos o la evidencia visual."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Convierte un PDF de texto a Markdown en tu pestaña. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "PDF y Markdown sirven para trabajos distintos"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Formato",
+            "Mejor para",
+            "Principal diferencia"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Diseño fijo e impresión",
+              "Cuesta más revisar o comparar como texto."
+            ],
+            [
+              "Markdown",
+              "Notas, documentos e historial de versiones",
+              "No conserva el diseño de página."
+            ],
+            [
+              "Texto sin formato",
+              "Extracción sencilla",
+              "Pierde la estructura de títulos y listas."
+            ],
+            [
+              "PDF con OCR",
+              "Escaneos que se puedan buscar",
+              "El reconocimiento aún debe revisarse."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown conserva la estructura, no el diseño de página"
+        },
+        {
+          "t": "p",
+          "x": "Un PDF registra posiciones en la página, no secciones semánticas como un documento fuente. PDF a Markdown usa pistas prácticas del diseño: las líneas grandes se convierten en títulos, las viñetas en listas y el texto normal en párrafos. Sirve para notas y documentación, pero no reproduce bien columnas complejas, gráficos, notas al pie, tipografía precisa ni la colocación visual. Trata el resultado como una copia de texto reutilizable, no como sustituto visual del PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Revisa el texto importante antes de usarlo"
+        },
+        {
+          "t": "p",
+          "x": "Compara nombres, fechas, cifras, enlaces, títulos y listas con el PDF antes de publicar, resumir o pasar el texto a otro sistema. Un salto de línea puede cambiar el sentido y una tabla puede necesitar formato manual. En páginas escaneadas, el OCR puede equivocarse. Conserva el PDF original para comprobar cada detalle en su contexto visual."
+        },
+        {
+          "t": "h2",
+          "x": "Extracción local para documentos privados"
+        },
+        {
+          "t": "p",
+          "x": "Los informes internos, apuntes de investigación y borradores inéditos pueden contener información privada. La conversión estándar lee el PDF en la pestaña del navegador y evita subirlo habitualmente a un servicio externo. Tú eliges dónde guardar o pegar el archivo Markdown. Revísalo antes de compartir: el texto fácil de copiar también es fácil de redistribuir."
+        },
+        {
+          "t": "h2",
+          "x": "Usa el formato original cuando importa el diseño"
+        },
+        {
+          "t": "p",
+          "x": "Elige Markdown para texto editable, documentación o notas. Conserva el PDF para diseño de impresión, firmas, documentos oficiales y referencias de página. Si un escaneo necesita reconocimiento, usa [OCR PDF](/tools/ocr-pdf). Si solo quieres texto sencillo que se pueda buscar, [PDF a Texto](/tools/pdf-to-text) encaja mejor que Markdown."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo convertir PDF a Markdown gratis?",
+          "a": "Sí. Los PDF con texto se pueden convertir a Markdown en el navegador, sin registro ni marca de agua. Revisa la estructura antes de usar el resultado."
+        },
+        {
+          "q": "¿Se pueden convertir PDF escaneados a Markdown?",
+          "a": "No directamente. Ejecuta OCR en una copia de trabajo, convierte el texto reconocido y compáralo con la imagen escaneada."
+        },
+        {
+          "q": "¿Markdown conserva el diseño de página del PDF?",
+          "a": "No. Markdown mantiene títulos, listas y párrafos útiles, pero no las páginas fijas, la tipografía ni los diseños visuales complejos."
+        },
+        {
+          "q": "¿PDF a Markdown es privado?",
+          "a": "El flujo estándar lee el archivo en la pestaña del navegador, así que no se sube habitualmente para convertirlo."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como converter PDF para Markdown para fazer anotações",
+      "metaTitle": "Converta PDF para Markdown para anotações",
+      "metaDescription": "Converta PDF para Markdown grátis para suas notas. Sem cadastro ou marca-d'água, com extração privada no navegador.",
+      "keyword": "converter PDF para Markdown para notas",
+      "secondaryKeywords": [
+        "PDF para Markdown grátis",
+        "converter PDF para MD",
+        "extrair texto de PDF",
+        "converter PDF em notas"
+      ],
+      "answer": "Para transformar um PDF de texto em anotações, converta para Markdown, confira títulos e listas e edite o resultado no seu app de notas. Guarde o PDF quando o layout da página ou a evidência visual for importante.",
+      "ctaLabel": "Converta PDF para Markdown no navegador",
+      "body": [
+        {
+          "t": "p",
+          "x": "Markdown é útil quando o PDF precisa virar anotações editáveis, em vez de continuar como uma página fixa. Ele pode preservar títulos, listas e parágrafos básicos para você revisar e reutilizar o texto. Não mantém a diagramação exata do PDF, então guarde o original quando o visual ou contexto da página importar."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter um PDF de texto para Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Veja se o texto pode ser selecionado",
+              "x": "Tente selecionar uma frase no PDF. Se for um scan, rode OCR em uma cópia de trabalho primeiro."
+            },
+            {
+              "h": "Abra PDF para Markdown",
+              "x": "Adicione o arquivo em [PDF para Markdown](/tools/pdf-to-markdown) no navegador."
+            },
+            {
+              "h": "Crie o arquivo Markdown",
+              "x": "Execute a conversão. Linhas maiores viram títulos, marcadores viram listas e linhas comuns formam parágrafos."
+            },
+            {
+              "h": "Leia o resultado",
+              "x": "Abra o MD em um editor de texto, app de notas ou leitor Markdown. Confira títulos, listas e termos importantes."
+            },
+            {
+              "h": "Guarde o PDF original",
+              "x": "Mantenha-o quando layout, assinaturas, gráficos ou evidências visuais forem importantes."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Transforme um PDF de texto em Markdown na sua aba. Grátis, sem cadastro ou marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "PDF e Markdown atendem a usos diferentes"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Formato",
+            "Melhor para",
+            "Principal diferença"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Layout fixo e impressão",
+              "Mais difícil revisar ou comparar como texto."
+            ],
+            [
+              "Markdown",
+              "Anotações, documentação e histórico de versões",
+              "Não preserva o layout da página."
+            ],
+            [
+              "Texto simples",
+              "Extração direta",
+              "Perde a estrutura de títulos e listas."
+            ],
+            [
+              "PDF com OCR",
+              "Scans pesquisáveis",
+              "O reconhecimento ainda precisa ser conferido."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown preserva estrutura, não o design da página"
+        },
+        {
+          "t": "p",
+          "x": "Um PDF registra posições na página, não seções semânticas como um documento de origem. PDF para Markdown usa pistas práticas do layout: linhas maiores viram títulos, marcadores viram listas e linhas comuns viram parágrafos. Isso ajuda em notas e documentação, mas não reproduz colunas complexas, gráficos, notas de rodapé, tipografia precisa ou posicionamento visual. Trate o Markdown como uma cópia de texto reutilizável, não como substituto visual do PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Revise o texto importante antes de usar"
+        },
+        {
+          "t": "p",
+          "x": "Compare nomes, datas, números, links, títulos e listas com o PDF antes de publicar, resumir ou passar o conteúdo a outro sistema. Uma quebra de linha pode mudar o sentido, e tabelas talvez precisem de formatação manual. Em páginas digitalizadas, o OCR pode errar. Guarde o PDF original para conferir cada detalhe no contexto visual."
+        },
+        {
+          "t": "h2",
+          "x": "Extração local para documentos privados"
+        },
+        {
+          "t": "p",
+          "x": "Relatórios internos, notas de pesquisa e rascunhos não publicados podem conter dados privados. A conversão padrão lê o PDF na aba do navegador, evitando o upload rotineiro para um serviço externo. Você escolhe onde salvar ou colar o Markdown. Revise o arquivo antes de compartilhar, pois um texto fácil de copiar também é fácil de redistribuir."
+        },
+        {
+          "t": "h2",
+          "x": "Use o formato original quando o layout importa"
+        },
+        {
+          "t": "p",
+          "x": "Escolha Markdown para texto editável, documentação ou notas. Guarde o PDF para design de impressão, assinaturas, documentos oficiais e referências de página. Se um scan precisar de reconhecimento, use [OCR PDF](/tools/ocr-pdf). Se você só precisa de texto simples e pesquisável, [PDF para Texto](/tools/pdf-to-text) é mais adequado que Markdown."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso converter PDF para Markdown grátis?",
+          "a": "Sim. PDFs com texto podem ser convertidos no navegador sem cadastro ou marca-d'água. Confira a estrutura antes de usar o resultado."
+        },
+        {
+          "q": "PDFs digitalizados podem virar Markdown?",
+          "a": "Não diretamente. Rode OCR em uma cópia, converta o texto reconhecido e confira com a imagem digitalizada."
+        },
+        {
+          "q": "Markdown mantém o layout de página do PDF?",
+          "a": "Não. Markdown preserva títulos, listas e parágrafos úteis, mas não páginas fixas, tipografia ou layouts visuais complexos."
+        },
+        {
+          "q": "PDF para Markdown é privado?",
+          "a": "O fluxo padrão lê o arquivo na aba do navegador, então ele não é enviado rotineiramente para conversão."
+        }
+      ]
+    },
+    "hi": {
+      "title": "नोट्स के लिए PDF को Markdown में कैसे बदलें",
+      "metaTitle": "नोट्स के लिए PDF को Markdown में बदलें",
+      "metaDescription": "नोट्स के लिए PDF को Markdown में मुफ़्त बदलें। साइनअप या वॉटरमार्क नहीं, ब्राउज़र में निजी निष्कर्षण।",
+      "keyword": "नोट्स के लिए PDF को Markdown में बदलें",
+      "secondaryKeywords": [
+        "PDF से Markdown मुफ़्त",
+        "PDF को MD में बदलें",
+        "PDF पाठ निकालें",
+        "PDF को नोट्स में बदलें"
+      ],
+      "answer": "टेक्स्ट PDF को नोट्स में बदलने के लिए उसे Markdown में कन्वर्ट करें, शीर्षक और सूचियाँ जाँचें और नोट्स ऐप में संपादित करें। पेज लेआउट या दृश्य प्रमाण महत्त्वपूर्ण हो तो मूल PDF रखें।",
+      "ctaLabel": "ब्राउज़र में PDF को Markdown में बदलें",
+      "body": [
+        {
+          "t": "p",
+          "x": "जब PDF को स्थिर पेज के बजाय संपादन योग्य नोट्स बनाना हो, तब Markdown उपयोगी है। इससे शीर्षक, सूचियाँ और सामान्य पैराग्राफ बच सकते हैं ताकि पाठ की समीक्षा और पुनः उपयोग कर सकें। यह PDF का सटीक पेज लेआउट नहीं बचाता, इसलिए दृश्य बनावट या संदर्भ ज़रूरी हो तो मूल फ़ाइल रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "टेक्स्ट PDF को Markdown में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "जाँचें कि पाठ चुना जा सकता है या नहीं",
+              "x": "PDF में कोई वाक्य चुनने की कोशिश करें। स्कैन हो तो पहले वर्किंग कॉपी पर OCR चलाएँ।"
+            },
+            {
+              "h": "PDF से Markdown खोलें",
+              "x": "ब्राउज़र में [PDF से Markdown](/tools/pdf-to-markdown) पर फ़ाइल जोड़ें।"
+            },
+            {
+              "h": "Markdown फ़ाइल बनाएँ",
+              "x": "रूपांतरण चलाएँ। बड़ी पंक्तियाँ शीर्षक, बुलेट सूचियाँ और सामान्य पंक्तियाँ पैराग्राफ बनती हैं।"
+            },
+            {
+              "h": "आउटपुट पढ़ें",
+              "x": "MD फ़ाइल टेक्स्ट एडिटर, नोट्स ऐप या Markdown व्यूअर में खोलें। शीर्षक, सूचियाँ और अहम शब्द देखें।"
+            },
+            {
+              "h": "PDF स्रोत रखें",
+              "x": "लेआउट, हस्ताक्षर, चार्ट या दृश्य प्रमाण महत्त्वपूर्ण हो तो मूल सहेजें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "टेक्स्ट PDF को अपने टैब में Markdown बनाएँ। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "अलग कामों के लिए PDF और Markdown"
+        },
+        {
+          "t": "table",
+          "head": [
+            "फ़ॉर्मेट",
+            "किस काम के लिए",
+            "मुख्य अंतर"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "स्थिर लेआउट और प्रिंट",
+              "पाठ की तरह संशोधित या तुलना करना कठिन।"
+            ],
+            [
+              "Markdown",
+              "नोट्स, दस्तावेज़ और संस्करण इतिहास",
+              "पेज लेआउट नहीं बचता।"
+            ],
+            [
+              "सादा पाठ",
+              "सरल निष्कर्षण",
+              "शीर्षक और सूची की संरचना खोती है।"
+            ],
+            [
+              "OCR वाला PDF",
+              "खोज योग्य स्कैन",
+              "पहचान की जाँच फिर भी ज़रूरी।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown संरचना रखता है, पेज डिज़ाइन नहीं"
+        },
+        {
+          "t": "p",
+          "x": "PDF पेज पर अक्षरों की जगह दर्ज करता है, स्रोत दस्तावेज़ की तरह अर्थपूर्ण अनुभाग नहीं। PDF से Markdown बड़े पाठ को शीर्षक, बुलेट को सूची और सामान्य पंक्तियों को पैराग्राफ बनाता है। नोट्स और दस्तावेज़ में यह उपयोगी है, लेकिन जटिल कॉलम, चार्ट, फुटनोट, सटीक टाइपोग्राफी या दृश्य स्थान को दोहरा नहीं सकता। Markdown को पुनः उपयोग योग्य पाठ प्रति मानें, PDF का दृश्य विकल्प नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "इस्तेमाल से पहले महत्वपूर्ण पाठ जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "प्रकाशित करने, सारांश बनाने या दूसरे सिस्टम में डालने से पहले नाम, तारीख, संख्या, लिंक, शीर्षक और सूची PDF से मिलाएँ। लाइन ब्रेक से अर्थ बदल सकता है और तालिका को हाथ से फ़ॉर्मेट करना पड़ सकता है। स्कैन पेज पर OCR गलती कर सकता है। दृश्य संदर्भ में हर अहम विवरण जाँचने के लिए मूल PDF रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "निजी दस्तावेज़ का स्थानीय निष्कर्षण"
+        },
+        {
+          "t": "p",
+          "x": "आंतरिक रिपोर्ट, शोध नोट और अप्रकाशित ड्राफ्ट में निजी सामग्री हो सकती है। सामान्य रूपांतरण ब्राउज़र टैब में PDF पढ़ता है, इसलिए नियमित रूप से किसी बाहरी सेवा पर अपलोड नहीं होता। Markdown कहाँ सहेजना या चिपकाना है, यह आप तय करते हैं। साझा करने से पहले आउटपुट देखें, क्योंकि कॉपी करने योग्य पाठ आसानी से आगे भेजा भी जा सकता है।"
+        },
+        {
+          "t": "h2",
+          "x": "लेआउट ज़रूरी हो तो मूल फ़ॉर्मेट रखें"
+        },
+        {
+          "t": "p",
+          "x": "संपादन योग्य पाठ, दस्तावेज़ या नोट्स के लिए Markdown चुनें। प्रिंट डिज़ाइन, हस्ताक्षर, आधिकारिक रिकॉर्ड और पेज संदर्भ के लिए मूल PDF रखें। स्कैन में पाठ पहचानना हो तो [PDF OCR](/tools/ocr-pdf) चलाएँ। सिर्फ सरल खोज योग्य पाठ चाहिए तो [PDF से टेक्स्ट](/tools/pdf-to-text) Markdown से बेहतर है।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF को Markdown में मुफ़्त बदल सकता हूँ?",
+          "a": "हाँ। टेक्स्ट वाले PDF ब्राउज़र में बिना साइनअप या वॉटरमार्क Markdown बन सकते हैं। उपयोग से पहले संरचना जाँचें।"
+        },
+        {
+          "q": "क्या स्कैन PDF Markdown बन सकता है?",
+          "a": "सीधे नहीं। वर्किंग कॉपी पर OCR चलाएँ, पहचाने गए पाठ को बदलें और स्कैन छवि से मिलाएँ।"
+        },
+        {
+          "q": "क्या Markdown PDF का पेज लेआउट रखता है?",
+          "a": "नहीं। Markdown उपयोगी शीर्षक, सूचियाँ और पैराग्राफ रखता है, पर स्थिर पेज, टाइपोग्राफी या जटिल दृश्य लेआउट नहीं।"
+        },
+        {
+          "q": "क्या PDF से Markdown निजी है?",
+          "a": "सामान्य प्रक्रिया फ़ाइल को ब्राउज़र टैब में पढ़ती है, इसलिए रूपांतरण के लिए नियमित अपलोड नहीं होता।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية تحويل PDF إلى Markdown لتدوين الملاحظات",
+      "metaTitle": "تحويل PDF إلى Markdown للملاحظات",
+      "metaDescription": "حوّل PDF إلى Markdown لملاحظاتك مجاناً، بلا تسجيل أو علامة مائية، مع استخراج خاص في المتصفح.",
+      "keyword": "تحويل PDF إلى Markdown للملاحظات",
+      "secondaryKeywords": [
+        "PDF إلى Markdown مجاناً",
+        "تحويل PDF إلى MD",
+        "استخراج نص PDF",
+        "تحويل PDF إلى ملاحظات"
+      ],
+      "answer": "لتحويل PDF نصي إلى ملاحظات، حوّله إلى Markdown وراجع العناوين والقوائم ثم عدّل النص في تطبيق الملاحظات. احتفظ بملف PDF إذا كان تخطيط الصفحة أو الدليل المرئي مهماً.",
+      "ctaLabel": "حوّل PDF إلى Markdown في المتصفح",
+      "body": [
+        {
+          "t": "p",
+          "x": "يفيد Markdown عندما تريد تحويل PDF إلى ملاحظات قابلة للتعديل بدلاً من إبقائه صفحة ثابتة. يمكنه الاحتفاظ بالعناوين والقوائم والفقرات الأساسية لمراجعة النص وإعادة استخدامه. لكنه لا يحافظ على تخطيط PDF الدقيق، لذا احتفظ بالأصل عندما يهم المظهر أو السياق المرئي."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل PDF نصي إلى Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "تحقق من إمكانية تحديد النص",
+              "x": "حاول تحديد جملة في PDF. إذا كان ممسوحاً، شغّل OCR على نسخة عمل أولاً."
+            },
+            {
+              "h": "افتح PDF إلى Markdown",
+              "x": "أضف الملف إلى [PDF إلى Markdown](/tools/pdf-to-markdown) في المتصفح."
+            },
+            {
+              "h": "أنشئ ملف Markdown",
+              "x": "شغّل التحويل. تتحول الأسطر الكبيرة إلى عناوين، والنقاط إلى قوائم، والأسطر العادية إلى فقرات."
+            },
+            {
+              "h": "اقرأ الناتج",
+              "x": "افتح ملف MD في محرر نصوص أو تطبيق ملاحظات أو عارض Markdown، وافحص العناوين والقوائم والمصطلحات المهمة."
+            },
+            {
+              "h": "احتفظ بملف PDF المصدر",
+              "x": "احتفظ به إذا كان التخطيط أو التوقيعات أو المخططات أو الدليل المرئي مهماً."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "حوّل PDF نصياً إلى Markdown في علامة التبويب. مجاناً وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "PDF وMarkdown لمهام مختلفة"
+        },
+        {
+          "t": "table",
+          "head": [
+            "التنسيق",
+            "الأنسب لـ",
+            "الفرق الرئيسي"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "التخطيط الثابت والطباعة",
+              "أصعب للمراجعة أو المقارنة كنص."
+            ],
+            [
+              "Markdown",
+              "الملاحظات والوثائق وسجل الإصدارات",
+              "لا يحافظ على تخطيط الصفحة."
+            ],
+            [
+              "نص عادي",
+              "استخراج بسيط",
+              "يفقد بنية العناوين والقوائم."
+            ],
+            [
+              "PDF مع OCR",
+              "المسوحات القابلة للبحث",
+              "لا تزال دقة التعرف بحاجة إلى مراجعة."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "يحافظ Markdown على البنية لا على تصميم الصفحة"
+        },
+        {
+          "t": "p",
+          "x": "يسجل PDF مواقع النص في الصفحة، لا أقساماً دلالية مثل المستند المصدر. يستخدم PDF إلى Markdown دلائل تخطيط عملية: تتحول الأسطر الكبيرة إلى عناوين، والنقاط إلى قوائم، والأسطر العادية إلى فقرات. يفيد ذلك للملاحظات والوثائق، لكنه لا يعيد إنتاج الأعمدة المعقدة والمخططات والحواشي والطباعة الدقيقة أو المواضع المرئية. اعتبر الناتج نسخة نصية قابلة لإعادة الاستخدام، لا بديلاً بصرياً عن PDF."
+        },
+        {
+          "t": "h2",
+          "x": "راجع النص المهم قبل استخدامه"
+        },
+        {
+          "t": "p",
+          "x": "قارن الأسماء والتواريخ والأرقام والروابط والعناوين والقوائم بملف PDF قبل النشر أو التلخيص أو تمرير المحتوى إلى نظام آخر. قد يغير فاصل السطر المعنى، وقد يحتاج الجدول إلى تنسيق يدوي. وفي الصفحات الممسوحة قد يخطئ OCR. احتفظ بالأصل لتتحقق من كل تفصيل في سياقه المرئي."
+        },
+        {
+          "t": "h2",
+          "x": "استخراج محلي للمستندات الخاصة"
+        },
+        {
+          "t": "p",
+          "x": "قد تحتوي التقارير الداخلية وملاحظات البحث والمسودات غير المنشورة على مواد خاصة. يقرأ التحويل القياسي PDF داخل علامة تبويب المتصفح، متجنباً الرفع المعتاد إلى خدمة استخراج. أنت تختار أين تحفظ ملف Markdown أو تلصقه. راجع الناتج قبل مشاركته، فالنص السهل النسخ يسهل إعادة توزيعه أيضاً."
+        },
+        {
+          "t": "h2",
+          "x": "استخدم التنسيق الأصلي عندما يهم التخطيط"
+        },
+        {
+          "t": "p",
+          "x": "اختر Markdown للنص القابل للتحرير أو الوثائق أو الملاحظات. واحتفظ بملف PDF لتصميم الطباعة والتوقيعات والسجلات الرسمية ومراجع الصفحات. إذا احتاج المسح إلى التعرف على النص، استخدم [OCR PDF](/tools/ocr-pdf). وإذا أردت ملفاً نصياً بسيطاً قابلاً للبحث فقط، فإن [PDF إلى نص](/tools/pdf-to-text) أنسب من Markdown."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكن تحويل PDF إلى Markdown مجاناً؟",
+          "a": "نعم. يمكن تحويل ملفات PDF النصية إلى Markdown في المتصفح بلا تسجيل أو علامة مائية. راجع البنية قبل استخدام الناتج."
+        },
+        {
+          "q": "هل تتحول ملفات PDF الممسوحة إلى Markdown؟",
+          "a": "ليس مباشرة. شغّل OCR على نسخة عمل، ثم حوّل النص المتعرف عليه وقارنه بصورة المسح."
+        },
+        {
+          "q": "هل يحافظ Markdown على تخطيط صفحات PDF؟",
+          "a": "لا. يحافظ على عناوين وقوائم وفقرات مفيدة، لا الصفحات الثابتة أو الطباعة أو التخطيط المرئي المعقد."
+        },
+        {
+          "q": "هل PDF إلى Markdown خاص؟",
+          "a": "يقرأ المسار القياسي الملف داخل علامة تبويب المتصفح، فلا يُرفع عادةً للتحويل."
+        }
+      ]
+    },
+    "bn": {
+      "title": "নোটের জন্য PDF-কে Markdown-এ কীভাবে বদলাবেন",
+      "metaTitle": "নোটের জন্য PDF Markdown-এ বদলান",
+      "metaDescription": "নোটের জন্য PDF Markdown-এ বিনামূল্যে বদলান। সাইনআপ বা ওয়াটারমার্ক নেই, ব্রাউজারে ব্যক্তিগত নিষ্কাশন।",
+      "keyword": "নোটের জন্য PDF Markdown-এ বদল",
+      "secondaryKeywords": [
+        "PDF থেকে Markdown বিনামূল্যে",
+        "PDF MD-তে বদল",
+        "PDF লেখা বের করা",
+        "PDF-কে নোটে বদল"
+      ],
+      "answer": "টেক্সট PDF-কে নোটে নিতে Markdown-এ রূপান্তর করুন, শিরোনাম ও তালিকা যাচাই করুন, তারপর নোট অ্যাপে সম্পাদনা করুন। পৃষ্ঠার বিন্যাস বা দৃশ্যমান প্রমাণ গুরুত্বপূর্ণ হলে মূল PDF রাখুন।",
+      "ctaLabel": "ব্রাউজারে PDF Markdown-এ বদলান",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF-কে স্থির পৃষ্ঠা না রেখে সম্পাদনাযোগ্য নোট করতে Markdown কাজে লাগে। এতে শিরোনাম, তালিকা ও সাধারণ অনুচ্ছেদ রাখা যায়, যাতে লেখা পর্যালোচনা ও পুনর্ব্যবহার করা যায়। এটি PDF-এর হুবহু পৃষ্ঠা বিন্যাস রাখে না। দৃশ্য বা পৃষ্ঠার প্রসঙ্গ দরকার হলে মূল ফাইল সংরক্ষণ করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "টেক্সট PDF কীভাবে Markdown-এ বদলাবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "লেখা নির্বাচন করা যায় কি না দেখুন",
+              "x": "PDF-এ একটি বাক্য নির্বাচন করে দেখুন। স্ক্যান হলে আগে ওয়ার্কিং কপিতে OCR চালান।"
+            },
+            {
+              "h": "PDF থেকে Markdown খুলুন",
+              "x": "ব্রাউজারে [PDF থেকে Markdown](/tools/pdf-to-markdown)-এ ফাইল যোগ করুন।"
+            },
+            {
+              "h": "Markdown ফাইল তৈরি করুন",
+              "x": "রূপান্তর চালান। বড় লেখা শিরোনাম, বুলেট তালিকা এবং সাধারণ লাইন অনুচ্ছেদ হয়।"
+            },
+            {
+              "h": "ফল পড়ে দেখুন",
+              "x": "MD ফাইল টেক্সট এডিটর, নোট অ্যাপ বা Markdown ভিউয়ারে খুলে শিরোনাম, তালিকা ও গুরুত্বপূর্ণ শব্দ দেখুন।"
+            },
+            {
+              "h": "মূল PDF রেখে দিন",
+              "x": "বিন্যাস, স্বাক্ষর, চার্ট বা দৃশ্যমান প্রমাণ গুরুত্বপূর্ণ হলে সংরক্ষণ করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "ব্রাউজার ট্যাবে টেক্সট PDF Markdown করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "ভিন্ন কাজে PDF ও Markdown"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ফরম্যাট",
+            "যে কাজে ভালো",
+            "মূল পার্থক্য"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "স্থির বিন্যাস ও মুদ্রণ",
+              "টেক্সট হিসেবে সম্পাদনা বা তুলনা কঠিন।"
+            ],
+            [
+              "Markdown",
+              "নোট, ডকুমেন্ট ও সংস্করণ ইতিহাস",
+              "পৃষ্ঠা বিন্যাস রাখে না।"
+            ],
+            [
+              "সাধারণ টেক্সট",
+              "সহজ নিষ্কাশন",
+              "শিরোনাম ও তালিকার গঠন হারায়।"
+            ],
+            [
+              "OCR PDF",
+              "অনুসন্ধানযোগ্য স্ক্যান",
+              "চেনা লেখা যাচাই করতে হয়।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown গঠন রাখে, পৃষ্ঠার নকশা নয়"
+        },
+        {
+          "t": "p",
+          "x": "PDF পৃষ্ঠায় লেখার অবস্থান ধরে, উৎস নথির মতো অর্থপূর্ণ বিভাগ নয়। PDF থেকে Markdown বড় লাইনকে শিরোনাম, বুলেটকে তালিকা এবং সাধারণ লাইনকে অনুচ্ছেদ করে। নোট ও ডকুমেন্টে এটি কাজে লাগে, কিন্তু জটিল কলাম, চার্ট, ফুটনোট, নির্ভুল টাইপোগ্রাফি বা দৃশ্যমান অবস্থান পুনরায় বানায় না। Markdown-কে পুনর্ব্যবহারযোগ্য পাঠ্য কপি ভাবুন, PDF-এর দৃশ্যমান বিকল্প নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যবহারের আগে গুরুত্বপূর্ণ লেখা যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "প্রকাশ, সারাংশ বা অন্য সিস্টেমে দেওয়ার আগে নাম, তারিখ, সংখ্যা, লিংক, শিরোনাম ও তালিকা PDF-এর সঙ্গে মিলিয়ে নিন। লাইন ভাঙলে অর্থ বদলাতে পারে, টেবিল হাতে সাজাতে হতে পারে। স্ক্যান পৃষ্ঠায় OCR ভুল করতে পারে। প্রতিটি তথ্য দৃশ্যমান প্রসঙ্গে দেখার জন্য মূল PDF রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যক্তিগত নথির স্থানীয় নিষ্কাশন"
+        },
+        {
+          "t": "p",
+          "x": "অভ্যন্তরীণ রিপোর্ট, গবেষণা নোট ও অপ্রকাশিত খসড়ায় ব্যক্তিগত বিষয় থাকতে পারে। সাধারণ রূপান্তর ব্রাউজার ট্যাবে PDF পড়ে, তাই নিয়মিত বাইরের সেবায় আপলোড এড়ায়। Markdown কোথায় রাখবেন বা পেস্ট করবেন তা আপনার সিদ্ধান্ত। শেয়ারের আগে দেখুন, কারণ কপি করা সহজ লেখা ছড়িয়ে দেওয়াও সহজ।"
+        },
+        {
+          "t": "h2",
+          "x": "বিন্যাস গুরুত্বপূর্ণ হলে মূল ফরম্যাট ব্যবহার করুন"
+        },
+        {
+          "t": "p",
+          "x": "সম্পাদনাযোগ্য লেখা, ডকুমেন্ট বা নোটের জন্য Markdown নিন। মুদ্রণ নকশা, স্বাক্ষর, সরকারি রেকর্ড ও পৃষ্ঠা রেফারেন্সের জন্য মূল PDF রাখুন। স্ক্যানে লেখা চিনতে [PDF OCR](/tools/ocr-pdf) ব্যবহার করুন। শুধু সহজে খোঁজা যায় এমন সাধারণ লেখা দরকার হলে [PDF থেকে টেক্সট](/tools/pdf-to-text) Markdown-এর চেয়ে উপযুক্ত।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF বিনামূল্যে Markdown-এ বদলাতে পারি?",
+          "a": "হ্যাঁ। টেক্সট PDF ব্রাউজারে সাইনআপ বা ওয়াটারমার্ক ছাড়া Markdown হয়। ব্যবহার করার আগে গঠন দেখুন।"
+        },
+        {
+          "q": "স্ক্যান PDF Markdown-এ বদলানো যায়?",
+          "a": "সরাসরি নয়। ওয়ার্কিং কপিতে OCR চালিয়ে শনাক্ত লেখা রূপান্তর করুন এবং স্ক্যান ছবির সঙ্গে মিলান।"
+        },
+        {
+          "q": "Markdown কি PDF-এর পৃষ্ঠা বিন্যাস রাখে?",
+          "a": "না। এটি দরকারি শিরোনাম, তালিকা ও অনুচ্ছেদ রাখে, কিন্তু স্থির পৃষ্ঠা, টাইপোগ্রাফি বা জটিল দৃশ্য বিন্যাস নয়।"
+        },
+        {
+          "q": "PDF থেকে Markdown কি ব্যক্তিগত?",
+          "a": "সাধারণ পদ্ধতি ব্রাউজার ট্যাবে ফাইল পড়ে, তাই রূপান্তরের জন্য নিয়মিত আপলোড হয় না।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách chuyển PDF sang Markdown để ghi chú",
+      "metaTitle": "Chuyển PDF sang Markdown để ghi chú",
+      "metaDescription": "Chuyển PDF sang Markdown miễn phí để ghi chú. Không đăng ký, không dấu mờ, trích xuất riêng tư trong trình duyệt.",
+      "keyword": "chuyển PDF sang Markdown để ghi chú",
+      "secondaryKeywords": [
+        "PDF sang Markdown miễn phí",
+        "chuyển PDF sang MD",
+        "trích xuất văn bản PDF",
+        "chuyển PDF thành ghi chú"
+      ],
+      "answer": "Để biến PDF văn bản thành ghi chú, hãy chuyển sang Markdown, kiểm tra tiêu đề và danh sách rồi chỉnh sửa trong ứng dụng ghi chú. Giữ PDF nếu bố cục trang hoặc bằng chứng trực quan quan trọng.",
+      "ctaLabel": "Chuyển PDF sang Markdown trong trình duyệt",
+      "body": [
+        {
+          "t": "p",
+          "x": "Markdown hữu ích khi PDF cần trở thành ghi chú có thể chỉnh sửa thay vì trang cố định. Định dạng này có thể giữ tiêu đề, danh sách và đoạn văn cơ bản để bạn xem lại và tái sử dụng chữ. Markdown không giữ nguyên bố cục PDF, vì vậy hãy giữ bản gốc nếu hình thức hoặc ngữ cảnh trang quan trọng."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển PDF có văn bản sang Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Kiểm tra có chọn được văn bản không",
+              "x": "Thử chọn một câu trong PDF. Nếu là bản scan, hãy OCR bản làm việc trước."
+            },
+            {
+              "h": "Mở PDF sang Markdown",
+              "x": "Thêm tệp vào [PDF sang Markdown](/tools/pdf-to-markdown) trong trình duyệt."
+            },
+            {
+              "h": "Tạo tệp Markdown",
+              "x": "Chạy chuyển đổi. Dòng chữ lớn thành tiêu đề, dấu đầu dòng thành danh sách và dòng thường thành đoạn văn."
+            },
+            {
+              "h": "Đọc đầu ra",
+              "x": "Mở tệp MD bằng trình soạn thảo, ứng dụng ghi chú hoặc trình xem Markdown; kiểm tra tiêu đề, danh sách và từ khóa."
+            },
+            {
+              "h": "Giữ PDF nguồn",
+              "x": "Lưu bản gốc nếu bố cục, chữ ký, biểu đồ hoặc bằng chứng trực quan quan trọng."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "Chuyển PDF văn bản sang Markdown ngay trong thẻ. Miễn phí, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "PDF và Markdown phục vụ các việc khác nhau"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Định dạng",
+            "Phù hợp với",
+            "Khác biệt chính"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "Bố cục cố định và in ấn",
+              "Khó chỉnh sửa hoặc so sánh như văn bản."
+            ],
+            [
+              "Markdown",
+              "Ghi chú, tài liệu và lịch sử phiên bản",
+              "Không giữ bố cục trang."
+            ],
+            [
+              "Văn bản thuần",
+              "Trích xuất đơn giản",
+              "Mất cấu trúc tiêu đề và danh sách."
+            ],
+            [
+              "PDF có OCR",
+              "Bản scan có thể tìm kiếm",
+              "Vẫn cần kiểm tra nhận dạng."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown giữ cấu trúc, không giữ thiết kế trang"
+        },
+        {
+          "t": "p",
+          "x": "PDF ghi vị trí chữ trên trang, không ghi các phần ngữ nghĩa như tài liệu nguồn. PDF sang Markdown dựa trên dấu hiệu bố cục: dòng lớn thành tiêu đề, dấu đầu dòng thành danh sách, dòng thường thành đoạn. Cách này hữu ích cho ghi chú và tài liệu nhưng không tái tạo được cột phức tạp, biểu đồ, chú thích cuối trang, kiểu chữ chính xác hoặc vị trí trực quan. Hãy coi đầu ra là bản chữ có thể dùng lại, không phải bản thay thế hình ảnh của PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra nội dung quan trọng trước khi dùng"
+        },
+        {
+          "t": "p",
+          "x": "Đối chiếu tên, ngày, số, liên kết, tiêu đề và danh sách với PDF trước khi xuất bản, tóm tắt hoặc đưa nội dung vào hệ thống khác. Ngắt dòng có thể đổi nghĩa và bảng có thể cần định dạng thủ công. OCR có thể nhận sai ở trang scan. Hãy giữ PDF gốc để kiểm tra từng chi tiết trong ngữ cảnh hình ảnh."
+        },
+        {
+          "t": "h2",
+          "x": "Trích xuất cục bộ cho tài liệu riêng tư"
+        },
+        {
+          "t": "p",
+          "x": "Báo cáo nội bộ, ghi chú nghiên cứu và bản nháp chưa công bố có thể chứa nội dung riêng tư. Chuyển đổi tiêu chuẩn đọc PDF trong thẻ trình duyệt, tránh tải thường xuyên lên dịch vụ trích xuất bên ngoài. Bạn chọn nơi lưu hoặc dán tệp Markdown. Hãy xem lại trước khi chia sẻ vì văn bản dễ sao chép cũng dễ bị phân phối lại."
+        },
+        {
+          "t": "h2",
+          "x": "Dùng định dạng gốc khi bố cục quan trọng"
+        },
+        {
+          "t": "p",
+          "x": "Chọn Markdown cho văn bản có thể chỉnh sửa, tài liệu hoặc ghi chú. Giữ PDF gốc cho thiết kế in, chữ ký, hồ sơ chính thức và tham chiếu trang. Nếu bản scan cần nhận dạng chữ, dùng [OCR PDF](/tools/ocr-pdf). Nếu chỉ cần tệp chữ đơn giản có thể tìm kiếm, [PDF sang Văn bản](/tools/pdf-to-text) phù hợp hơn Markdown."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Tôi có thể chuyển PDF sang Markdown miễn phí không?",
+          "a": "Có. PDF có văn bản được chuyển sang Markdown trong trình duyệt, không cần đăng ký hay dấu mờ. Hãy xem lại cấu trúc trước khi sử dụng."
+        },
+        {
+          "q": "Có thể chuyển PDF scan sang Markdown không?",
+          "a": "Không trực tiếp. Chạy OCR trên bản làm việc, chuyển phần văn bản nhận dạng rồi so sánh với ảnh scan."
+        },
+        {
+          "q": "Markdown có giữ bố cục trang PDF không?",
+          "a": "Không. Markdown giữ tiêu đề, danh sách và đoạn văn hữu ích nhưng không giữ trang cố định, kiểu chữ hoặc bố cục phức tạp."
+        },
+        {
+          "q": "PDF sang Markdown có riêng tư không?",
+          "a": "Quy trình tiêu chuẩn đọc tệp trong thẻ trình duyệt, nên tệp không được tải thường xuyên lên để chuyển đổi."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何将 PDF 转为 Markdown 以便做笔记",
+      "metaTitle": "将 PDF 转为 Markdown 做笔记",
+      "metaDescription": "免费将 PDF 转为 Markdown 记笔记。无需注册、无水印，在浏览器中私密提取文本内容。",
+      "keyword": "将 PDF 转为 Markdown 做笔记",
+      "secondaryKeywords": [
+        "免费 PDF 转 Markdown",
+        "将 PDF 转成 MD",
+        "提取 PDF 文本",
+        "将 PDF 内容转为笔记"
+      ],
+      "answer": "要把文本 PDF 转成笔记，请转换为 Markdown，检查标题和列表，再在笔记应用中编辑。如果页面布局或视觉证据很重要，请保留原 PDF。",
+      "ctaLabel": "在浏览器中将 PDF 转为 Markdown",
+      "body": [
+        {
+          "t": "p",
+          "x": "当 PDF 需要变成可编辑笔记，而不是继续作为固定页面时，Markdown 很有用。它可以保留标题、列表和基本段落，方便检查并重复使用文本。Markdown 不会保留 PDF 的精确页面布局，因此当外观或视觉上下文重要时，请保留原文件。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将文本 PDF 转为 Markdown"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "检查能否选中文本",
+              "x": "尝试选中 PDF 中的一句话。如果是扫描件，请先在工作副本上运行 OCR。"
+            },
+            {
+              "h": "打开 PDF 转 Markdown",
+              "x": "在浏览器中将文件添加到[PDF 转 Markdown](/tools/pdf-to-markdown)。"
+            },
+            {
+              "h": "生成 Markdown 文件",
+              "x": "运行转换。较大的文字会成为标题，项目符号会成为列表，普通行会合并为段落。"
+            },
+            {
+              "h": "阅读转换结果",
+              "x": "在文本编辑器、笔记应用或 Markdown 阅读器中打开 MD 文件，检查标题、列表和关键词。"
+            },
+            {
+              "h": "保留 PDF 源文件",
+              "x": "如果布局、签名、图表或视觉证据重要，请保留原件。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-markdown",
+          "x": "在浏览器标签页中把文本 PDF 转成 Markdown。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "PDF 和 Markdown 适合不同用途"
+        },
+        {
+          "t": "table",
+          "head": [
+            "格式",
+            "适用场景",
+            "主要取舍"
+          ],
+          "rows": [
+            [
+              "PDF",
+              "固定版式和打印",
+              "难以像文本那样修改或比较。"
+            ],
+            [
+              "Markdown",
+              "笔记、文档和版本记录",
+              "不保留页面布局。"
+            ],
+            [
+              "纯文本",
+              "简单提取",
+              "会丢失标题和列表结构。"
+            ],
+            [
+              "OCR PDF",
+              "可搜索扫描件",
+              "仍需检查识别结果。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Markdown 保留结构，不保留页面设计"
+        },
+        {
+          "t": "p",
+          "x": "PDF 记录文本在页面上的位置，而不是像源文档那样记录语义段落。PDF 转 Markdown 会利用实用的版面线索：大字变成标题，项目符号变成列表，普通行变成段落。这适合笔记和文档，但无法重现复杂分栏、图表、脚注、精确字体或视觉位置。请把 Markdown 看作可复用的文本副本，而非 PDF 的视觉替代品。"
+        },
+        {
+          "t": "h2",
+          "x": "使用前检查重要文本"
+        },
+        {
+          "t": "p",
+          "x": "在发布、总结或把内容交给其他系统前，请将姓名、日期、数字、链接、标题和列表与 PDF 对照。换行可能改变含义，表格也可能需要手动整理。扫描页面的 OCR 可能出错。保留原 PDF，便于在视觉上下文中核查每项重要细节。"
+        },
+        {
+          "t": "h2",
+          "x": "私密文档的本地提取"
+        },
+        {
+          "t": "p",
+          "x": "内部报告、研究笔记和未发布草稿可能含有私人内容。标准转换会在浏览器标签页中读取 PDF，避免例行上传到外部提取服务。Markdown 的保存或粘贴位置由你决定。分享前请检查输出，因为文本易于复制，也容易被再次传播。"
+        },
+        {
+          "t": "h2",
+          "x": "布局重要时保留原始格式"
+        },
+        {
+          "t": "p",
+          "x": "需要可编辑文本、文档或笔记时选 Markdown。涉及印刷设计、签名、正式记录和页码引用时保留原 PDF。扫描件需要文字识别时，请用[PDF OCR](/tools/ocr-pdf)。如果只需要简单可搜索的文本文件，[PDF 转文本](/tools/pdf-to-text)比 Markdown 更合适。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以免费将 PDF 转为 Markdown 吗？",
+          "a": "可以。含文本的 PDF 可在浏览器中转换为 Markdown，无需注册、无水印。使用结果前请检查结构。"
+        },
+        {
+          "q": "扫描 PDF 可以转成 Markdown 吗？",
+          "a": "不能直接转换。请先在工作副本上运行 OCR，再转换识别文本并与扫描图像核对。"
+        },
+        {
+          "q": "Markdown 会保留 PDF 页面布局吗？",
+          "a": "不会。Markdown 可保留实用的标题、列表和段落，但不会保留固定页面、字体或复杂视觉布局。"
+        },
+        {
+          "q": "PDF 转 Markdown 是否私密？",
+          "a": "标准流程会在浏览器标签页中读取文件，因此不会例行上传进行转换。"
+        }
+      ]
+    }
+  }
+}
