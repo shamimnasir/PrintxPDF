@@ -5394,6 +5394,157 @@
           "pdf-archive-naming-convention",
           "original-pdf-vs-access-copy"
         ]
+      },
+      {
+        "topic": "archive-copy-vs-backup",
+        "slug": "archive-copy-vs-backup",
+        "cluster": "archive-expansion",
+        "title": "Copia de archivo vs copia de seguridad de PDF",
+        "metaTitle": "Copia de archivo vs copia de seguridad de PDF",
+        "metaDescription": "Entiende la diferencia entre una copia de archivo y un backup de PDF. Pasos prácticos, gratis y sin registro en el navegador.",
+        "primaryKeyword": "copia de archivo vs copia de seguridad PDF",
+        "secondaryKeywords": [
+          "archive copy vs backup",
+          "PDF backup and retention",
+          "how to test file backups"
+        ],
+        "answer": "Una copia de archivo conserva una versión final como registro para consulta futura; una copia de seguridad ayuda a restaurar datos perdidos o dañados. Pueden contener el mismo PDF, pero cumplen funciones distintas. Guarda las copias en ubicaciones y controles apropiados, conserva contexto y metadatos relevantes, y prueba la restauración de los backups. Un ZIP o una segunda copia junto al original no es un backup probado.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Una copia de archivo y una copia de seguridad pueden incluir el mismo PDF, pero resuelven problemas diferentes. El archivo conserva un documento aprobado junto con su contexto y reglas de retención. El backup permite recuperarse si un archivo se borra, se daña o un sistema falla. Para proteger registros importantes, planifica ambas funciones. Una segunda copia en la misma carpeta o un archivo ZIP no prueba que puedas recuperar el documento."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo decidir entre archivo y backup"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Define el propósito de cada copia",
+                "x": "Etiqueta una copia como registro de archivo y otra como recuperación; no las trates como intercambiables."
+              },
+              {
+                "h": "Conserva el contexto del archivo",
+                "x": "Registra versión, fecha, responsable, metadatos descriptivos y regla de retención aprobada."
+              },
+              {
+                "h": "Guarda copias separadas",
+                "x": "Usa ubicaciones y permisos adecuados, según la política y el riesgo de tu organización."
+              },
+              {
+                "h": "Comprueba integridad y legibilidad",
+                "x": "Abre el PDF de archivo y compara checksums solo con una referencia confiable."
+              },
+              {
+                "h": "Prueba la recuperación",
+                "x": "Restaura una muestra de backup con regularidad y documenta resultado, fecha y responsable."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Revisa y organiza una copia en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Copia de archivo y copia de seguridad: diferencias"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Aspecto",
+              "Copia de archivo",
+              "Copia de seguridad"
+            ],
+            "rows": [
+              [
+                "Objetivo",
+                "Conservar un registro para consulta y retención.",
+                "Restaurar datos tras pérdida, daño o fallo."
+              ],
+              [
+                "Contexto",
+                "Identificación, procedencia, versión y regla de retención.",
+                "Punto de recuperación, fecha y sistema protegido."
+              ],
+              [
+                "Prueba clave",
+                "Legibilidad, integridad y acceso con el tiempo.",
+                "Restauración de prueba que confirma que se recupera."
+              ],
+              [
+                "Cambio",
+                "Se conserva el estado aprobado; cambios se documentan como versiones.",
+                "Se actualiza según la política de backup y el objetivo de recuperación."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Una copia de archivo es un registro gestionado"
+          },
+          {
+            "t": "p",
+            "x": "El archivo de conservación mantiene una versión identificada para futuras consultas, auditorías o requisitos de retención. Debe conservar su procedencia, fechas y contexto suficiente para entender qué es y por qué se guardó. Los controles de acceso y las reglas de retención deben venir de la política aprobada. Para necesidades de conservación a largo plazo, confirma si se requiere PDF/A; convertir no sustituye la validación ni la gestión del archivo."
+          },
+          {
+            "t": "h2",
+            "x": "Una copia de seguridad sirve para recuperar"
+          },
+          {
+            "t": "p",
+            "x": "El backup se diseña para restaurar información tras borrado, corrupción, ransomware o fallo del sistema. Mantener otro PDF en la misma carpeta no protege contra muchos de esos incidentes. Sigue las reglas de copia de tu organización, separa las copias según el riesgo y prueba la restauración. Un backup que nunca se ha restaurado puede estar incompleto o ser ilegible cuando más se necesita."
+          },
+          {
+            "t": "h2",
+            "x": "No confundas ZIP, sincronización y backup"
+          },
+          {
+            "t": "p",
+            "x": "Un ZIP agrupa archivos en un contenedor; no añade retención, historial ni protección contra pérdida del dispositivo. [Crear ZIP](/tools/create-zip) procesa archivos dentro del navegador, pero el archivo ZIP resultante debe guardarse en el destino adecuado. La sincronización puede replicar una eliminación o un archivo dañado, por lo que no siempre es una copia histórica. Elige un servicio o proceso de backup con retención y recuperación que puedas comprobar."
+          },
+          {
+            "t": "h2",
+            "x": "Documenta y verifica cada función"
+          },
+          {
+            "t": "p",
+            "x": "Mantén un inventario que señale qué versión es el registro, dónde se conserva, quién accede y cuánto tiempo debe guardarse. Comprueba que el PDF de archivo se abra y que las páginas sean legibles. Si comparas un checksum, usa un valor de referencia confiable y guarda el resultado. Revisa el plan de restauración, las responsabilidades y los plazos con el equipo pertinente. [PDF a PDF/A](/tools/pdf-to-pdfa) puede ayudar a preparar una copia de preservación, pero valida el resultado y conserva también el original."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Una copia de archivo es lo mismo que un backup?",
+            "a": "No. El archivo conserva un registro para uso y retención; el backup ayuda a restaurar datos tras una pérdida o fallo. Una estrategia documental puede necesitar ambos."
+          },
+          {
+            "q": "¿Un ZIP cuenta como copia de seguridad?",
+            "a": "No por sí solo. ZIP agrupa archivos, pero no garantiza una copia separada, versiones históricas, retención ni restauración comprobada."
+          },
+          {
+            "q": "¿Cómo pruebo que mi backup funciona?",
+            "a": "Restaura periódicamente una muestra en un entorno adecuado, comprueba que los archivos se abren y registra fecha, resultado y responsable."
+          },
+          {
+            "q": "¿Debo convertir los PDF de archivo a PDF/A?",
+            "a": "Solo cuando lo exija la política o el destinatario, o cuando sea apropiado para la conservación. Confirma el perfil, valida la salida y conserva el original."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "create-zip",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "document-retention-handoff-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "pdf-a-validation-checklist"
+        ]
       }
     ]
   },
@@ -10782,6 +10933,157 @@
           "pdf-archive-naming-convention",
           "original-pdf-vs-access-copy"
         ]
+      },
+      {
+        "topic": "archive-copy-vs-backup",
+        "slug": "archive-copy-vs-backup",
+        "cluster": "archive-expansion",
+        "title": "Cópia de arquivo vs backup de PDFs",
+        "metaTitle": "Cópia de arquivo vs backup de PDFs",
+        "metaDescription": "Entenda a diferença entre cópia de arquivo e backup de PDF. Orientações práticas, grátis e sem cadastro no navegador.",
+        "primaryKeyword": "cópia de arquivo vs backup PDF",
+        "secondaryKeywords": [
+          "archive copy vs backup",
+          "PDF backup and retention",
+          "how to test file backups"
+        ],
+        "answer": "Uma cópia de arquivo preserva uma versão final como registro para consulta futura; um backup ajuda a restaurar dados perdidos ou danificados. Podem conter o mesmo PDF, mas têm objetivos diferentes. Guarde as cópias em locais e controles apropriados, preserve contexto e metadados relevantes e teste a restauração dos backups. Um ZIP ou uma segunda cópia ao lado do original não é um backup testado.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Uma cópia de arquivo e um backup podem conter o mesmo PDF, mas resolvem problemas diferentes. O arquivo preserva um documento aprovado com contexto e regras de retenção. O backup permite recuperar dados se um arquivo for apagado, danificado ou um sistema falhar. Para proteger registros importantes, planeje as duas funções. Uma segunda cópia na mesma pasta ou um ZIP não prova que o documento poderá ser restaurado."
+          },
+          {
+            "t": "h2",
+            "x": "Como decidir entre arquivo e backup"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Defina a finalidade de cada cópia",
+                "x": "Identifique uma cópia como registro de arquivo e outra como recuperação; não as trate como equivalentes."
+              },
+              {
+                "h": "Preserve o contexto do arquivo",
+                "x": "Registre versão, data, responsável, metadados descritivos e regra de retenção aprovada."
+              },
+              {
+                "h": "Armazene cópias separadas",
+                "x": "Use locais e permissões adequados à política e aos riscos da organização."
+              },
+              {
+                "h": "Confira integridade e leitura",
+                "x": "Abra o PDF arquivado e compare checksums somente com uma referência confiável."
+              },
+              {
+                "h": "Teste a recuperação",
+                "x": "Restaure uma amostra de backup regularmente e registre resultado, data e responsável."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Confira e organize uma cópia na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Cópia de arquivo e backup: diferenças"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Aspecto",
+              "Cópia de arquivo",
+              "Backup"
+            ],
+            "rows": [
+              [
+                "Objetivo",
+                "Preservar um registro para consulta e retenção.",
+                "Restaurar dados após perda, dano ou falha."
+              ],
+              [
+                "Contexto",
+                "Identificação, origem, versão e regra de retenção.",
+                "Ponto de recuperação, data e sistema protegido."
+              ],
+              [
+                "Teste principal",
+                "Legibilidade, integridade e acesso ao longo do tempo.",
+                "Teste de restauração que confirma a recuperação."
+              ],
+              [
+                "Mudanças",
+                "O estado aprovado é preservado; alterações viram novas versões documentadas.",
+                "É atualizado conforme a política de backup e a meta de recuperação."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Uma cópia de arquivo é um registro gerenciado"
+          },
+          {
+            "t": "p",
+            "x": "O arquivo de preservação mantém uma versão identificada para consulta futura, auditoria ou requisitos de retenção. Ele deve conservar origem, datas e contexto suficiente para explicar o que é e por que foi guardado. Controles de acesso e retenção devem seguir a política aprovada. Para preservação de longo prazo, confirme se PDF/A é necessário; converter não substitui validação nem gestão do arquivo."
+          },
+          {
+            "t": "h2",
+            "x": "Um backup existe para recuperar"
+          },
+          {
+            "t": "p",
+            "x": "O backup é planejado para restaurar informações após exclusão, corrupção, ransomware ou falha do sistema. Manter outro PDF na mesma pasta não protege contra muitos desses incidentes. Siga as regras de backup da organização, separe cópias conforme o risco e teste a restauração. Um backup nunca restaurado pode estar incompleto ou ilegível quando for necessário."
+          },
+          {
+            "t": "h2",
+            "x": "Não confunda ZIP, sincronização e backup"
+          },
+          {
+            "t": "p",
+            "x": "Um ZIP agrupa arquivos em um contêiner; não cria retenção, histórico ou proteção contra perda do dispositivo. [Criar ZIP](/tools/create-zip) processa arquivos no navegador, mas o ZIP resultante precisa ser salvo no destino adequado. A sincronização pode replicar uma exclusão ou arquivo danificado, então nem sempre mantém histórico. Escolha um serviço ou processo de backup com retenção e recuperação que possam ser verificados."
+          },
+          {
+            "t": "h2",
+            "x": "Documente e confira cada finalidade"
+          },
+          {
+            "t": "p",
+            "x": "Mantenha um inventário que indique qual versão é o registro, onde fica, quem acessa e por quanto tempo deve ser mantida. Abra o PDF de arquivo e confira a leitura das páginas. Ao comparar checksum, use uma referência confiável e guarde o resultado. Revise o plano de restauração, as responsabilidades e os prazos com a equipe pertinente. [PDF para PDF/A](/tools/pdf-to-pdfa) pode ajudar a preparar uma cópia de preservação, mas valide o resultado e mantenha o original."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Cópia de arquivo é a mesma coisa que backup?",
+            "a": "Não. O arquivo preserva um registro para uso e retenção; o backup ajuda a restaurar dados após perda ou falha. A estratégia documental pode precisar dos dois."
+          },
+          {
+            "q": "Um ZIP conta como backup?",
+            "a": "Não sozinho. ZIP agrupa arquivos, mas não garante uma cópia separada, histórico de versões, retenção ou restauração testada."
+          },
+          {
+            "q": "Como testar se meu backup funciona?",
+            "a": "Restaure periodicamente uma amostra em ambiente adequado, confira se os arquivos abrem e registre data, resultado e responsável."
+          },
+          {
+            "q": "Devo converter PDFs de arquivo para PDF/A?",
+            "a": "Somente quando a política ou o destinatário exigir, ou quando fizer sentido para preservação. Confirme o perfil, valide o resultado e mantenha o original."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "create-zip",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "document-retention-handoff-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "pdf-a-validation-checklist"
+        ]
       }
     ]
   },
@@ -16169,6 +16471,157 @@
           "pdf-archive-review-schedule",
           "pdf-archive-naming-convention",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "archive-copy-vs-backup",
+        "slug": "archive-copy-vs-backup",
+        "cluster": "archive-expansion",
+        "title": "PDF की संग्रह प्रति बनाम बैकअप",
+        "metaTitle": "PDF की संग्रह प्रति बनाम बैकअप",
+        "metaDescription": "PDF आर्काइव कॉपी और बैकअप का अंतर समझें। व्यावहारिक मार्गदर्शन, मुफ़्त और निजी ब्राउज़र में, बिना साइनअप या वॉटरमार्क के।",
+        "primaryKeyword": "PDF संग्रह प्रति बनाम बैकअप",
+        "secondaryKeywords": [
+          "archive copy vs backup",
+          "PDF backup and retention",
+          "how to test file backups"
+        ],
+        "answer": "संग्रह प्रति किसी अंतिम संस्करण को भविष्य में संदर्भ के लिए रिकॉर्ड के रूप में सुरक्षित रखती है; बैकअप खोए या क्षतिग्रस्त डेटा को वापस लाने में मदद करता है। दोनों में वही PDF हो सकती है, पर उद्देश्य अलग हैं। उचित स्थानों और नियंत्रणों में प्रतियाँ रखें, संदर्भ व जरूरी मेटाडेटा सुरक्षित करें और बैकअप बहाली का परीक्षण करें। ZIP या मूल के पास दूसरी कॉपी परीक्षित बैकअप नहीं है।",
+        "body": [
+          {
+            "t": "p",
+            "x": "संग्रह प्रति और बैकअप में एक ही PDF हो सकती है, लेकिन दोनों अलग समस्या हल करते हैं। संग्रह स्वीकृत दस्तावेज़ को संदर्भ और प्रतिधारण नियमों के साथ रखता है। बैकअप फ़ाइल मिटने, खराब होने या सिस्टम विफल होने पर डेटा लौटाने में मदद करता है। महत्वपूर्ण रिकॉर्ड के लिए दोनों भूमिकाओं की योजना बनाएँ। उसी फ़ोल्डर में दूसरी कॉपी या ZIP यह साबित नहीं करता कि दस्तावेज़ बहाल हो सकेगा।"
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव और बैकअप में कैसे चुनें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "हर कॉपी का उद्देश्य तय करें",
+                "x": "एक प्रति को अभिलेखीय रिकॉर्ड और दूसरी को रिकवरी कॉपी के रूप में पहचानें; इन्हें एक न मानें।"
+              },
+              {
+                "h": "आर्काइव का संदर्भ रखें",
+                "x": "संस्करण, तारीख, जिम्मेदार व्यक्ति, वर्णनात्मक मेटाडेटा और स्वीकृत प्रतिधारण नियम दर्ज करें।"
+              },
+              {
+                "h": "अलग स्थानों पर प्रतियाँ रखें",
+                "x": "संगठन की नीति और जोखिम के अनुसार स्थान व अनुमतियाँ चुनें।"
+              },
+              {
+                "h": "अखंडता और पठनीयता जाँचें",
+                "x": "आर्काइव PDF खोलें; चेकसम केवल भरोसेमंद संदर्भ मान से मिलाएँ।"
+              },
+              {
+                "h": "रिकवरी का परीक्षण करें",
+                "x": "नियमित रूप से बैकअप का नमूना बहाल करें और परिणाम, तारीख व जिम्मेदार व्यक्ति दर्ज करें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "अपने टैब में कॉपी जाँचें और व्यवस्थित करें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव कॉपी और बैकअप में अंतर"
+          },
+          {
+            "t": "table",
+            "head": [
+              "पहलू",
+              "आर्काइव कॉपी",
+              "बैकअप"
+            ],
+            "rows": [
+              [
+                "उद्देश्य",
+                "संदर्भ और प्रतिधारण के लिए रिकॉर्ड रखना।",
+                "नुकसान, खराबी या विफलता के बाद डेटा बहाल करना।"
+              ],
+              [
+                "संदर्भ",
+                "पहचान, स्रोत, संस्करण और प्रतिधारण नियम।",
+                "रिकवरी बिंदु, तारीख और सुरक्षित सिस्टम।"
+              ],
+              [
+                "मुख्य परीक्षण",
+                "समय के साथ पठनीयता, अखंडता और पहुँच।",
+                "बहाली परीक्षण जो रिकवरी की पुष्टि करे।"
+              ],
+              [
+                "बदलाव",
+                "स्वीकृत स्थिति सुरक्षित; बदलाव नए दर्ज संस्करण बनते हैं।",
+                "बैकअप नीति और रिकवरी लक्ष्य के अनुसार अद्यतन।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव कॉपी एक प्रबंधित रिकॉर्ड है"
+          },
+          {
+            "t": "p",
+            "x": "संरक्षण आर्काइव भविष्य के संदर्भ, ऑडिट या प्रतिधारण आवश्यकता के लिए पहचाना हुआ संस्करण रखता है। इसमें स्रोत, तारीख और इतना संदर्भ होना चाहिए कि समझ आए कि यह क्या है और क्यों रखा गया। पहुँच और प्रतिधारण नियंत्रण स्वीकृत नीति से आने चाहिए। दीर्घकालिक संरक्षण के लिए PDF/A जरूरी है या नहीं पूछें; कन्वर्ज़न वैलिडेशन और रिकॉर्ड प्रबंधन का विकल्प नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "बैकअप रिकवरी के लिए होता है"
+          },
+          {
+            "t": "p",
+            "x": "बैकअप मिटने, खराब होने, रैनसमवेयर या सिस्टम विफलता के बाद जानकारी बहाल करने के लिए बनाया जाता है। उसी फ़ोल्डर में एक और PDF रखना कई घटनाओं से नहीं बचाता। संगठन के बैकअप नियम अपनाएँ, जोखिम के अनुसार प्रतियाँ अलग रखें और बहाली जाँचें। जिसे कभी बहाल नहीं किया गया, वह अधूरा या जरूरत के समय पढ़ने योग्य न हो सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP, सिंक और बैकअप को एक न समझें"
+          },
+          {
+            "t": "p",
+            "x": "ZIP फ़ाइलों को एक कंटेनर में जोड़ता है; यह प्रतिधारण, इतिहास या डिवाइस खोने से सुरक्षा नहीं देता। [Create ZIP](/tools/create-zip) ब्राउज़र में फ़ाइलें प्रोसेस करता है, पर बनी ZIP को सही गंतव्य पर रखना होगा। सिंक मिटाई या खराब फ़ाइल भी दोहरा सकता है, इसलिए हमेशा इतिहास नहीं रखता। ऐसा बैकअप सेवा या प्रक्रिया चुनें जिसकी प्रतिधारण और रिकवरी जाँची जा सके।"
+          },
+          {
+            "t": "h2",
+            "x": "हर भूमिका का रिकॉर्ड रखें और सत्यापित करें"
+          },
+          {
+            "t": "p",
+            "x": "सूची बनाएँ कि कौन सा संस्करण रिकॉर्ड है, कहाँ रखा है, किसकी पहुँच है और कितने समय रखना है। आर्काइव PDF खोलकर पेज पढ़ने योग्य जाँचें। चेकसम मिलाते समय भरोसेमंद दर्ज संदर्भ मान लें और नतीजा रखें। संबंधित टीम के साथ रिकवरी योजना, जिम्मेदारियाँ और समयसीमाएँ जाँचें। [PDF to PDF/A](/tools/pdf-to-pdfa) संरक्षण कॉपी तैयार करने में मदद कर सकता है, पर परिणाम वैलिडेट करें और मूल रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या आर्काइव कॉपी और बैकअप एक ही हैं?",
+            "a": "नहीं। आर्काइव भविष्य के उपयोग और प्रतिधारण के लिए रिकॉर्ड रखता है; बैकअप नुकसान या विफलता के बाद डेटा लौटाता है। योजना में दोनों की जरूरत हो सकती है।"
+          },
+          {
+            "q": "क्या ZIP बैकअप माना जाता है?",
+            "a": "अपने आप नहीं। ZIP फ़ाइलें जोड़ता है, पर अलग सुरक्षित कॉपी, पुराने संस्करण, प्रतिधारण या परीक्षित बहाली सुनिश्चित नहीं करता।"
+          },
+          {
+            "q": "बैकअप चलता है, यह कैसे जाँचूँ?",
+            "a": "उचित वातावरण में समय-समय पर नमूना बहाल करें, फ़ाइलें खोलें और तारीख, परिणाम व जिम्मेदार व्यक्ति दर्ज करें।"
+          },
+          {
+            "q": "क्या आर्काइव PDF को PDF/A में बदलना चाहिए?",
+            "a": "केवल नीति या प्राप्तकर्ता माँगे, या संरक्षण उद्देश्य के लिए उपयुक्त हो तो। प्रोफ़ाइल की पुष्टि, आउटपुट वैलिडेट और मूल सुरक्षित रखें।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "create-zip",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "document-retention-handoff-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
@@ -21566,6 +22019,157 @@
           "pdf-archive-review-schedule",
           "pdf-archive-naming-convention",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "archive-copy-vs-backup",
+        "slug": "archive-copy-vs-backup",
+        "cluster": "archive-expansion",
+        "title": "نسخة الأرشيف مقابل النسخة الاحتياطية لملفات PDF",
+        "metaTitle": "نسخة الأرشيف مقابل النسخة الاحتياطية لملفات PDF",
+        "metaDescription": "افهم الفرق بين نسخة أرشيف PDF والنسخة الاحتياطية. خطوات عملية مجانية وخاصة في المتصفح، بلا تسجيل أو علامة مائية، مع اختبار الاستعادة.",
+        "primaryKeyword": "نسخة الأرشيف مقابل النسخة الاحتياطية PDF",
+        "secondaryKeywords": [
+          "archive copy vs backup",
+          "PDF backup and retention",
+          "how to test file backups"
+        ],
+        "answer": "تحفظ نسخة الأرشيف إصداراً نهائياً كسجل للرجوع إليه لاحقاً؛ أما النسخة الاحتياطية فتساعد على استعادة البيانات المفقودة أو التالفة. قد تحتوي النسختان على PDF نفسه، لكن وظيفتهما مختلفة. احتفظ بهما في مواقع وضوابط مناسبة، واحفظ السياق والبيانات الوصفية المهمة واختبر استعادة النسخ الاحتياطية. ملف ZIP أو نسخة بجوار الأصل ليسا نسخة احتياطية مختبرة.",
+        "body": [
+          {
+            "t": "p",
+            "x": "قد تحتوي نسخة الأرشيف والنسخة الاحتياطية على ملف PDF نفسه، لكنهما تعالجان مشكلتين مختلفتين. يحتفظ الأرشيف بمستند معتمد مع سياقه وقواعد الاحتفاظ. وتتيح النسخة الاحتياطية استعادة البيانات عند حذف ملف أو تلفه أو تعطل نظام. خطط للوظيفتين لحماية السجلات المهمة. وجود نسخة ثانية في المجلد نفسه أو ملف ZIP لا يثبت إمكانية استعادة المستند."
+          },
+          {
+            "t": "h2",
+            "x": "كيف تميز بين الأرشيف والنسخة الاحتياطية"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "حدد غرض كل نسخة",
+                "x": "ميّز نسخة كسجل أرشيف وأخرى للاستعادة؛ لا تعتبرهما متبادلتين."
+              },
+              {
+                "h": "احتفظ بسياق الأرشيف",
+                "x": "سجل الإصدار والتاريخ والمسؤول والبيانات الوصفية الوصفية وقاعدة الاحتفاظ المعتمدة."
+              },
+              {
+                "h": "احفظ النسخ في مواقع منفصلة",
+                "x": "اختر المواقع والصلاحيات وفق سياسة المؤسسة ومخاطرها."
+              },
+              {
+                "h": "تحقق من السلامة والوضوح",
+                "x": "افتح PDF المؤرشف ولا تقارن البصمات إلا بقيمة مرجعية موثوقة."
+              },
+              {
+                "h": "اختبر الاستعادة",
+                "x": "استعد عينة من النسخة الاحتياطية دورياً وسجل النتيجة والتاريخ والمسؤول."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "راجع نسخة ونظمها في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "الفرق بين نسخة الأرشيف والنسخة الاحتياطية"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الجانب",
+              "نسخة الأرشيف",
+              "النسخة الاحتياطية"
+            ],
+            "rows": [
+              [
+                "الهدف",
+                "حفظ سجل للرجوع والاحتفاظ.",
+                "استعادة البيانات بعد الفقد أو التلف أو العطل."
+              ],
+              [
+                "السياق",
+                "التعريف والمصدر والإصدار وقاعدة الاحتفاظ.",
+                "نقطة الاستعادة والتاريخ والنظام المحمي."
+              ],
+              [
+                "الاختبار الأساسي",
+                "الوضوح والسلامة وإمكانية الوصول مع الوقت.",
+                "اختبار استعادة يؤكد إمكان استرجاع البيانات."
+              ],
+              [
+                "التغيير",
+                "يحفظ الوضع المعتمد؛ وتسجل التغييرات كإصدارات جديدة.",
+                "تحدث وفق سياسة النسخ الاحتياطي وهدف الاستعادة."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "نسخة الأرشيف سجل مُدار"
+          },
+          {
+            "t": "p",
+            "x": "يحفظ أرشيف الحفظ إصداراً محدداً للرجوع أو التدقيق أو متطلبات الاحتفاظ. يجب أن يحتفظ بالمصدر والتواريخ والسياق الكافي لفهم ماهيته وسبب حفظه. ينبغي أن تأتي ضوابط الوصول والاحتفاظ من سياسة معتمدة. للحفظ طويل الأمد، تحقق مما إذا كان PDF/A مطلوباً؛ فالتحويل لا يغني عن التحقق وإدارة السجل."
+          },
+          {
+            "t": "h2",
+            "x": "النسخة الاحتياطية مخصصة للاستعادة"
+          },
+          {
+            "t": "p",
+            "x": "تُصمم النسخة الاحتياطية لاستعادة المعلومات بعد الحذف أو التلف أو برامج الفدية أو تعطل النظام. وجود PDF آخر في المجلد نفسه لا يحمي من كثير من هذه الحوادث. اتبع قواعد النسخ في مؤسستك وافصل النسخ حسب المخاطر واختبر الاستعادة. قد تكون النسخة التي لم تُستعد قط ناقصة أو غير مقروءة عند الحاجة."
+          },
+          {
+            "t": "h2",
+            "x": "لا تخلط بين ZIP والمزامنة والنسخ الاحتياطي"
+          },
+          {
+            "t": "p",
+            "x": "يجمع ZIP الملفات في حاوية؛ لكنه لا يضيف الاحتفاظ أو سجل الإصدارات أو الحماية من فقد الجهاز. تعالج [إنشاء ZIP](/tools/create-zip) الملفات في المتصفح، لكن يجب حفظ ZIP الناتج في وجهة مناسبة. وقد تكرر المزامنة حذفاً أو تلفاً، فلا تحفظ دائماً تاريخاً سابقاً. اختر خدمة أو إجراء نسخ احتياطي يمكن التحقق من الاحتفاظ والاستعادة فيهما."
+          },
+          {
+            "t": "h2",
+            "x": "وثق كل وظيفة وتحقق منها"
+          },
+          {
+            "t": "p",
+            "x": "احتفظ بجرد يحدد إصدار السجل وموقعه ومن يمكنه الوصول ومدة الاحتفاظ. افتح PDF الأرشيف وتأكد من وضوح صفحاته. عند مقارنة بصمة رقمية استخدم قيمة مرجعية موثوقة مسجلة واحفظ النتيجة. راجع خطة الاستعادة والمسؤوليات والمواعيد مع الفريق المعني. يمكن أن يساعد [التحويل إلى PDF/A](/tools/pdf-to-pdfa) في إعداد نسخة للحفظ، لكن تحقق من الناتج واحتفظ بالأصل."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل نسخة الأرشيف هي نفسها النسخة الاحتياطية؟",
+            "a": "لا. تحفظ نسخة الأرشيف سجلاً للاستخدام والاحتفاظ؛ وتساعد النسخة الاحتياطية في الاستعادة بعد فقد أو عطل. قد تحتاج استراتيجية المستندات إلى كليهما."
+          },
+          {
+            "q": "هل ملف ZIP نسخة احتياطية؟",
+            "a": "ليس وحده. يجمع ZIP الملفات لكنه لا يضمن نسخة منفصلة أو تاريخ إصدارات أو احتفاظاً أو استعادة مختبرة."
+          },
+          {
+            "q": "كيف أختبر أن النسخة الاحتياطية تعمل؟",
+            "a": "استعد عينة دورياً في بيئة مناسبة، وتحقق من فتح الملفات وسجل التاريخ والنتيجة والمسؤول."
+          },
+          {
+            "q": "هل أحول ملفات الأرشيف إلى PDF/A؟",
+            "a": "عندما تطلب السياسة أو الجهة المستلمة ذلك، أو يكون مناسباً للحفظ. أكد الملف التعريفي وتحقق من الناتج واحتفظ بالأصل."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "create-zip",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "document-retention-handoff-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
@@ -26967,6 +27571,157 @@
           "pdf-archive-naming-convention",
           "original-pdf-vs-access-copy"
         ]
+      },
+      {
+        "topic": "archive-copy-vs-backup",
+        "slug": "archive-copy-vs-backup",
+        "cluster": "archive-expansion",
+        "title": "PDF আর্কাইভ কপি বনাম ব্যাকআপ",
+        "metaTitle": "PDF আর্কাইভ কপি বনাম ব্যাকআপ",
+        "metaDescription": "PDF আর্কাইভ কপি ও ব্যাকআপের পার্থক্য বুঝুন। ব্যবহারিক নির্দেশনা, বিনামূল্যে ও ব্রাউজারে সাইনআপ ছাড়া।",
+        "primaryKeyword": "PDF আর্কাইভ কপি বনাম ব্যাকআপ",
+        "secondaryKeywords": [
+          "archive copy vs backup",
+          "PDF backup and retention",
+          "how to test file backups"
+        ],
+        "answer": "আর্কাইভ কপি ভবিষ্যৎ ব্যবহারের জন্য চূড়ান্ত সংস্করণকে রেকর্ড হিসেবে রাখে; ব্যাকআপ হারানো বা ক্ষতিগ্রস্ত ডেটা ফিরিয়ে আনতে সাহায্য করে। একই PDF থাকলেও কাজ আলাদা। উপযুক্ত স্থান ও নিয়ন্ত্রণে কপি রাখুন, প্রেক্ষাপট ও দরকারি মেটাডেটা সংরক্ষণ করুন এবং ব্যাকআপ পুনরুদ্ধার পরীক্ষা করুন। ZIP বা মূলের পাশের দ্বিতীয় কপি পরীক্ষিত ব্যাকআপ নয়।",
+        "body": [
+          {
+            "t": "p",
+            "x": "আর্কাইভ কপি ও ব্যাকআপে একই PDF থাকতে পারে, কিন্তু দুটির কাজ আলাদা। আর্কাইভ অনুমোদিত নথি, প্রেক্ষাপট ও সংরক্ষণ নিয়মসহ রাখে। ব্যাকআপ ফাইল মুছে গেলে, নষ্ট হলে বা সিস্টেম ব্যর্থ হলে ফেরত পেতে সাহায্য করে। গুরুত্বপূর্ণ রেকর্ডের জন্য দুটিরই পরিকল্পনা করুন। একই ফোল্ডারে দ্বিতীয় কপি বা ZIP থাকলেই নথি পুনরুদ্ধার করা যাবে, তা প্রমাণ হয় না।"
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভ ও ব্যাকআপের পার্থক্য কীভাবে বুঝবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "প্রতিটি কপির উদ্দেশ্য ঠিক করুন",
+                "x": "একটিকে আর্কাইভ রেকর্ড, অন্যটিকে পুনরুদ্ধার কপি হিসেবে চিহ্নিত করুন; বিনিময়যোগ্য ভাববেন না।"
+              },
+              {
+                "h": "আর্কাইভের প্রেক্ষাপট রাখুন",
+                "x": "সংস্করণ, তারিখ, দায়িত্বপ্রাপ্ত ব্যক্তি, বর্ণনামূলক মেটাডেটা ও অনুমোদিত সংরক্ষণ নিয়ম লিখুন।"
+              },
+              {
+                "h": "আলাদা স্থানে কপি রাখুন",
+                "x": "প্রতিষ্ঠানের নীতি ও ঝুঁকি অনুযায়ী স্থান ও অনুমতি বেছে নিন।"
+              },
+              {
+                "h": "অখণ্ডতা ও পাঠযোগ্যতা দেখুন",
+                "x": "আর্কাইভ PDF খুলুন; চেকসাম শুধু বিশ্বস্ত রেফারেন্স মানের সঙ্গে তুলনা করুন।"
+              },
+              {
+                "h": "পুনরুদ্ধার পরীক্ষা করুন",
+                "x": "নিয়মিত ব্যাকআপের নমুনা ফিরিয়ে আনুন এবং ফল, তারিখ ও দায়িত্ব লিখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "আপনার ট্যাবে কপি যাচাই ও গুছিয়ে নিন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভ কপি ও ব্যাকআপের পার্থক্য"
+          },
+          {
+            "t": "table",
+            "head": [
+              "বিষয়",
+              "আর্কাইভ কপি",
+              "ব্যাকআপ"
+            ],
+            "rows": [
+              [
+                "উদ্দেশ্য",
+                "রেফারেন্স ও সংরক্ষণের জন্য রেকর্ড রাখা।",
+                "হারানো, ক্ষতি বা ব্যর্থতার পর ডেটা ফেরানো।"
+              ],
+              [
+                "প্রেক্ষাপট",
+                "পরিচয়, উৎস, সংস্করণ ও সংরক্ষণ নিয়ম।",
+                "পুনরুদ্ধার বিন্দু, তারিখ ও সুরক্ষিত সিস্টেম।"
+              ],
+              [
+                "মূল পরীক্ষা",
+                "সময়ের সঙ্গে পাঠযোগ্যতা, অখণ্ডতা ও প্রবেশাধিকার।",
+                "পুনরুদ্ধার পরীক্ষা যা ফেরত পাওয়া নিশ্চিত করে।"
+              ],
+              [
+                "পরিবর্তন",
+                "অনুমোদিত অবস্থা রাখা হয়; পরিবর্তন নতুন নথিভুক্ত সংস্করণ।",
+                "ব্যাকআপ নীতি ও পুনরুদ্ধার লক্ষ্যে আপডেট হয়।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভ কপি হলো পরিচালিত রেকর্ড"
+          },
+          {
+            "t": "p",
+            "x": "সংরক্ষণ আর্কাইভে ভবিষ্যৎ রেফারেন্স, অডিট বা সংরক্ষণ শর্তের জন্য চিহ্নিত সংস্করণ থাকে। এতে উৎস, তারিখ এবং এটি কী ও কেন রাখা হয়েছে বোঝার মতো প্রেক্ষাপট থাকা দরকার। প্রবেশাধিকার ও সংরক্ষণ নিয়ন্ত্রণ অনুমোদিত নীতি অনুযায়ী হওয়া উচিত। দীর্ঘমেয়াদি সংরক্ষণে PDF/A দরকার কি না নিশ্চিত করুন; রূপান্তর ভ্যালিডেশন বা রেকর্ড পরিচালনার বিকল্প নয়।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্যাকআপ পুনরুদ্ধারের জন্য"
+          },
+          {
+            "t": "p",
+            "x": "মুছে যাওয়া, নষ্ট হওয়া, র‍্যানসমওয়্যার বা সিস্টেম ব্যর্থতার পর তথ্য ফেরাতে ব্যাকআপ তৈরি করা হয়। একই ফোল্ডারে আরেকটি PDF রাখলে এসবের অনেক ঝুঁকি ঠেকে না। প্রতিষ্ঠানের ব্যাকআপ নিয়ম অনুসরণ করুন, ঝুঁকি অনুযায়ী কপি আলাদা রাখুন এবং পুনরুদ্ধার পরীক্ষা করুন। কখনো ফিরিয়ে দেখা হয়নি এমন ব্যাকআপ প্রয়োজনে অসম্পূর্ণ বা অপাঠ্য হতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "ZIP, সিঙ্ক ও ব্যাকআপকে এক ভাববেন না"
+          },
+          {
+            "t": "p",
+            "x": "ZIP ফাইলগুলো এক কন্টেইনারে রাখে; সংরক্ষণকাল, সংস্করণ ইতিহাস বা ডিভাইস হারালে সুরক্ষা দেয় না। [Create ZIP](/tools/create-zip) ব্রাউজারে ফাইল প্রক্রিয়া করে, তবে তৈরি ZIP সঠিক গন্তব্যে রাখতে হবে। সিঙ্ক মুছে ফেলা বা নষ্ট ফাইলও কপি করতে পারে, তাই এটি সবসময় ইতিহাস রাখে না। এমন ব্যাকআপ প্রক্রিয়া বাছুন যার সংরক্ষণ ও পুনরুদ্ধার যাচাই করা যায়।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রতিটি ভূমিকা নথিভুক্ত ও যাচাই করুন"
+          },
+          {
+            "t": "p",
+            "x": "কোন সংস্করণ রেকর্ড, কোথায় রাখা, কার প্রবেশাধিকার এবং কত দিন রাখতে হবে, তালিকায় লিখুন। আর্কাইভ PDF খুলে পৃষ্ঠা পড়া যায় কি না দেখুন। চেকসাম তুললে বিশ্বস্ত নথিভুক্ত রেফারেন্স মান ব্যবহার করে ফল রাখুন। সংশ্লিষ্ট দলের সঙ্গে পুনরুদ্ধার পরিকল্পনা, দায়িত্ব ও সময়সীমা যাচাই করুন। [PDF to PDF/A](/tools/pdf-to-pdfa) সংরক্ষণ কপি প্রস্তুত করতে সাহায্য করতে পারে, কিন্তু ফল ভ্যালিডেট ও মূল কপি রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "আর্কাইভ কপি কি ব্যাকআপের মতো?",
+            "a": "না। আর্কাইভ ভবিষ্যৎ ব্যবহার ও সংরক্ষণের রেকর্ড রাখে; ব্যাকআপ হারানো বা ব্যর্থতার পর ডেটা ফেরায়। নথি ব্যবস্থাপনায় দুটোই দরকার হতে পারে।"
+          },
+          {
+            "q": "ZIP কি ব্যাকআপ হিসেবে গণ্য হয়?",
+            "a": "একাই নয়। ZIP ফাইল একত্র করে, কিন্তু আলাদা কপি, পুরোনো সংস্করণ, সংরক্ষণ বা পরীক্ষিত পুনরুদ্ধার নিশ্চিত করে না।"
+          },
+          {
+            "q": "ব্যাকআপ কাজ করে কি না কীভাবে পরীক্ষা করব?",
+            "a": "উপযুক্ত পরিবেশে নিয়মিত নমুনা পুনরুদ্ধার করে ফাইল খুলুন এবং তারিখ, ফল ও দায়িত্বপ্রাপ্ত ব্যক্তি লিখুন।"
+          },
+          {
+            "q": "আর্কাইভ PDF কি PDF/A-তে বদলানো উচিত?",
+            "a": "নীতি বা প্রাপক চাইলে, অথবা সংরক্ষণে উপযুক্ত হলে। প্রোফাইল নিশ্চিত করুন, ফল ভ্যালিডেট করুন এবং মূল রাখুন।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "create-zip",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "document-retention-handoff-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "pdf-a-validation-checklist"
+        ]
       }
     ]
   },
@@ -32354,6 +33109,157 @@
           "pdf-archive-review-schedule",
           "pdf-archive-naming-convention",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "archive-copy-vs-backup",
+        "slug": "archive-copy-vs-backup",
+        "cluster": "archive-expansion",
+        "title": "Bản lưu trữ và bản sao lưu PDF khác nhau thế nào",
+        "metaTitle": "Bản lưu trữ và bản sao lưu PDF khác nhau thế nào",
+        "metaDescription": "Phân biệt bản lưu trữ và bản sao lưu PDF. Hướng dẫn thực tế, miễn phí, không đăng ký trong trình duyệt.",
+        "primaryKeyword": "bản lưu trữ và bản sao lưu PDF",
+        "secondaryKeywords": [
+          "archive copy vs backup",
+          "PDF backup and retention",
+          "how to test file backups"
+        ],
+        "answer": "Bản lưu trữ giữ một phiên bản cuối làm hồ sơ để tham khảo sau này; bản sao lưu giúp khôi phục dữ liệu bị mất hoặc hỏng. Hai bản có thể chứa cùng PDF nhưng phục vụ mục đích khác nhau. Hãy lưu ở vị trí và kiểm soát phù hợp, giữ bối cảnh và siêu dữ liệu cần thiết, đồng thời thử khôi phục bản sao lưu. ZIP hoặc bản sao nằm cạnh bản gốc chưa phải backup đã kiểm tra.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Bản lưu trữ và bản sao lưu có thể chứa cùng một PDF nhưng giải quyết hai vấn đề khác nhau. Bản lưu trữ giữ tài liệu đã duyệt cùng bối cảnh và quy tắc lưu giữ. Bản sao lưu giúp phục hồi khi tệp bị xóa, hỏng hoặc hệ thống gặp sự cố. Hãy lập kế hoạch cho cả hai chức năng với hồ sơ quan trọng. Một bản sao trong cùng thư mục hoặc tệp ZIP không chứng minh có thể khôi phục tài liệu."
+          },
+          {
+            "t": "h2",
+            "x": "Cách phân biệt lưu trữ và sao lưu"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Xác định mục đích từng bản",
+                "x": "Đánh dấu một bản là hồ sơ lưu trữ, bản kia là bản phục hồi; không xem chúng thay thế nhau."
+              },
+              {
+                "h": "Giữ bối cảnh bản lưu trữ",
+                "x": "Ghi phiên bản, ngày, người phụ trách, siêu dữ liệu mô tả và quy tắc lưu giữ được duyệt."
+              },
+              {
+                "h": "Lưu các bản ở vị trí riêng",
+                "x": "Chọn vị trí và quyền truy cập phù hợp chính sách và rủi ro của tổ chức."
+              },
+              {
+                "h": "Kiểm tra toàn vẹn và khả năng đọc",
+                "x": "Mở PDF lưu trữ; chỉ so checksum với giá trị tham chiếu đáng tin cậy."
+              },
+              {
+                "h": "Thử khôi phục",
+                "x": "Định kỳ khôi phục mẫu từ backup và ghi kết quả, ngày, người phụ trách."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Kiểm tra và sắp xếp bản sao ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "So sánh bản lưu trữ và bản sao lưu"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Khía cạnh",
+              "Bản lưu trữ",
+              "Bản sao lưu"
+            ],
+            "rows": [
+              [
+                "Mục tiêu",
+                "Giữ hồ sơ để tham khảo và lưu giữ.",
+                "Khôi phục dữ liệu sau mất mát, hỏng hóc hoặc sự cố."
+              ],
+              [
+                "Bối cảnh",
+                "Mã nhận diện, nguồn, phiên bản và quy tắc lưu giữ.",
+                "Điểm khôi phục, thời điểm và hệ thống được bảo vệ."
+              ],
+              [
+                "Kiểm tra chính",
+                "Khả năng đọc, toàn vẹn và truy cập theo thời gian.",
+                "Thử khôi phục xác nhận có thể phục hồi."
+              ],
+              [
+                "Thay đổi",
+                "Giữ trạng thái đã duyệt; thay đổi thành phiên bản mới có ghi nhận.",
+                "Cập nhật theo chính sách backup và mục tiêu phục hồi."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Bản lưu trữ là hồ sơ được quản lý"
+          },
+          {
+            "t": "p",
+            "x": "Bản lưu trữ giữ phiên bản được nhận diện để tra cứu, kiểm toán hoặc đáp ứng yêu cầu lưu giữ. Cần giữ nguồn gốc, ngày tháng và đủ bối cảnh để hiểu tài liệu là gì, vì sao được lưu. Quyền truy cập và thời hạn phải theo chính sách đã duyệt. Với lưu trữ dài hạn, hãy xác nhận có cần PDF/A không; chuyển đổi không thay thế việc xác thực hay quản lý hồ sơ."
+          },
+          {
+            "t": "h2",
+            "x": "Bản sao lưu dùng để phục hồi"
+          },
+          {
+            "t": "p",
+            "x": "Backup được thiết kế để khôi phục thông tin sau khi xóa, hỏng, mã độc tống tiền hoặc lỗi hệ thống. Lưu thêm PDF trong cùng thư mục không bảo vệ trước nhiều sự cố như vậy. Hãy theo quy tắc backup của tổ chức, tách bản theo rủi ro và thử khôi phục. Backup chưa từng được khôi phục có thể thiếu hoặc không đọc được khi cần."
+          },
+          {
+            "t": "h2",
+            "x": "Đừng nhầm ZIP, đồng bộ và backup"
+          },
+          {
+            "t": "p",
+            "x": "ZIP gom tệp vào một gói; nó không tạo thời hạn lưu giữ, lịch sử phiên bản hay bảo vệ khi mất thiết bị. [Tạo ZIP](/tools/create-zip) xử lý tệp trong trình duyệt, nhưng cần lưu ZIP kết quả đúng nơi. Đồng bộ có thể sao chép cả thao tác xóa hoặc tệp hỏng nên không phải lúc nào cũng giữ lịch sử. Chọn dịch vụ hoặc quy trình backup có thể kiểm tra thời hạn lưu và khả năng phục hồi."
+          },
+          {
+            "t": "h2",
+            "x": "Ghi nhận và xác minh từng chức năng"
+          },
+          {
+            "t": "p",
+            "x": "Lập danh mục cho biết phiên bản nào là hồ sơ, lưu ở đâu, ai truy cập và cần giữ bao lâu. Mở PDF lưu trữ để kiểm tra trang có đọc được. Khi so checksum, dùng giá trị tham chiếu đáng tin cậy đã ghi và lưu kết quả. Cùng nhóm liên quan rà soát kế hoạch phục hồi, trách nhiệm và thời hạn. [PDF sang PDF/A](/tools/pdf-to-pdfa) có thể hỗ trợ tạo bản lưu trữ, nhưng hãy xác thực kết quả và giữ bản gốc."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Bản lưu trữ có giống bản sao lưu không?",
+            "a": "Không. Bản lưu trữ giữ hồ sơ để dùng và lưu giữ; backup giúp khôi phục sau khi mất hoặc gặp sự cố. Kế hoạch tài liệu có thể cần cả hai."
+          },
+          {
+            "q": "Tệp ZIP có được xem là backup không?",
+            "a": "Không nếu chỉ có vậy. ZIP gom tệp nhưng không bảo đảm bản sao tách biệt, lịch sử phiên bản, thời hạn lưu hay khôi phục đã thử."
+          },
+          {
+            "q": "Làm sao kiểm tra backup hoạt động?",
+            "a": "Định kỳ khôi phục một mẫu trong môi trường phù hợp, mở các tệp và ghi ngày, kết quả cùng người phụ trách."
+          },
+          {
+            "q": "Có nên chuyển PDF lưu trữ sang PDF/A không?",
+            "a": "Chỉ khi chính sách hoặc bên nhận yêu cầu, hoặc phù hợp mục tiêu lưu trữ. Xác nhận hồ sơ, xác thực kết quả và giữ bản gốc."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "create-zip",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "document-retention-handoff-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
@@ -37751,6 +38657,157 @@
           "pdf-archive-review-schedule",
           "pdf-archive-naming-convention",
           "original-pdf-vs-access-copy"
+        ]
+      },
+      {
+        "topic": "archive-copy-vs-backup",
+        "slug": "archive-copy-vs-backup",
+        "cluster": "archive-expansion",
+        "title": "PDF 归档副本与备份有什么区别",
+        "metaTitle": "PDF 归档副本与备份有什么区别",
+        "metaDescription": "了解 PDF 归档副本与备份的区别，并学习检查保留和恢复流程。免费、无需注册、无水印，可在浏览器中使用。",
+        "primaryKeyword": "PDF 归档副本与备份区别",
+        "secondaryKeywords": [
+          "archive copy vs backup",
+          "PDF backup and retention",
+          "how to test file backups"
+        ],
+        "answer": "归档副本将最终版本作为记录保存，供日后查阅；备份用于在数据丢失或损坏后恢复。两者可能包含同一 PDF，但用途不同。应按适当的位置和控制措施保存副本，保留相关背景和元数据，并测试备份恢复。ZIP 文件或放在原件旁的第二份副本都不等于经过验证的备份。",
+        "body": [
+          {
+            "t": "p",
+            "x": "归档副本和备份可能包含同一 PDF，但解决的是不同问题。归档用于保存已批准的文件及其背景和保留规则。备份则在文件被删除、损坏或系统故障时帮助恢复数据。重要记录需要同时规划这两种用途。同一文件夹中的第二份副本或一个 ZIP 文件，都不能证明文件可以恢复。"
+          },
+          {
+            "t": "h2",
+            "x": "如何区分归档和备份"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "确定每份副本的用途",
+                "x": "标记哪份是归档记录、哪份用于恢复，不要把两者当成可互换的副本。"
+              },
+              {
+                "h": "保留归档背景信息",
+                "x": "记录版本、日期、负责人、描述性元数据和已批准的保留规则。"
+              },
+              {
+                "h": "将副本放在适当的独立位置",
+                "x": "根据组织政策和风险设置存储位置与访问权限。"
+              },
+              {
+                "h": "检查完整性和可读性",
+                "x": "打开归档 PDF；只有与可信参考值比较时，校验和才有意义。"
+              },
+              {
+                "h": "测试恢复过程",
+                "x": "定期抽样恢复备份，并记录结果、日期和负责人。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "在当前标签页检查并整理副本。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "归档副本与备份的区别"
+          },
+          {
+            "t": "table",
+            "head": [
+              "方面",
+              "归档副本",
+              "备份"
+            ],
+            "rows": [
+              [
+                "目的",
+                "保存记录，供日后查阅和满足保留要求。",
+                "在丢失、损坏或故障后恢复数据。"
+              ],
+              [
+                "背景信息",
+                "标识、来源、版本和保留规则。",
+                "恢复点、时间和受保护的系统。"
+              ],
+              [
+                "关键检查",
+                "长期可读性、完整性和访问能力。",
+                "恢复测试确认能够还原。"
+              ],
+              [
+                "变更方式",
+                "保留已批准状态；变更需记录为新版本。",
+                "按备份政策和恢复目标更新。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "归档副本是受管理的记录"
+          },
+          {
+            "t": "p",
+            "x": "保存型档案会保留一个明确标识的版本，用于日后查阅、审计或满足保留要求。它应包含来源、日期和足够的背景信息，让人了解文件内容及保存原因。访问控制和保留规则应依据已批准政策。长期保存时，请确认是否需要 PDF/A；转换不能替代验证或档案管理。"
+          },
+          {
+            "t": "h2",
+            "x": "备份用于恢复数据"
+          },
+          {
+            "t": "p",
+            "x": "备份用于在误删、损坏、勒索软件或系统故障后恢复信息。把另一份 PDF 放在同一文件夹，并不能防范许多此类事件。请遵循组织的备份规则，按风险分开放置副本，并实际测试恢复。未经恢复测试的备份，可能在需要时不完整或无法读取。"
+          },
+          {
+            "t": "h2",
+            "x": "不要混淆 ZIP、同步和备份"
+          },
+          {
+            "t": "p",
+            "x": "ZIP 将文件打包到一个容器中，但不会自动提供保留期限、版本历史或设备丢失保护。[创建 ZIP](/tools/create-zip)在浏览器中处理文件，但生成的 ZIP 仍需保存到合适的位置。同步可能连删除或损坏的文件一同同步，因此不一定保留历史版本。选择可验证保留和恢复能力的备份服务或流程。"
+          },
+          {
+            "t": "h2",
+            "x": "记录并验证每种用途"
+          },
+          {
+            "t": "p",
+            "x": "维护清单，注明哪个版本是正式记录、保存在哪里、谁可以访问以及需要保存多久。打开归档 PDF 检查页面可读性。比较校验和时，使用可信且已记录的参考值，并保存结果。与相关团队一起复核恢复计划、责任人和时间要求。[转换为 PDF/A](/tools/pdf-to-pdfa)可帮助准备保存副本，但仍需验证结果并保留原件。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "归档副本和备份是同一回事吗？",
+            "a": "不是。归档副本用于保存记录以供查阅和满足保留要求；备份用于丢失或故障后恢复数据。文件管理方案可能两者都需要。"
+          },
+          {
+            "q": "ZIP 文件算备份吗？",
+            "a": "单独一个 ZIP 不算。它只负责打包，不能保证副本位置独立、保留历史版本、满足保留期限或已经测试恢复。"
+          },
+          {
+            "q": "如何测试备份是否可用？",
+            "a": "定期在合适环境中恢复一份样本，确认文件能打开，并记录日期、结果和负责人。"
+          },
+          {
+            "q": "归档 PDF 是否应该转换为 PDF/A？",
+            "a": "仅在政策或接收方要求，或适合保存目的时转换。确认配置、验证结果，并保留原件。"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "create-zip",
+          "pdf-reader",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "document-retention-handoff-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-checksum-basics-for-archives",
+          "pdf-a-validation-checklist"
         ]
       }
     ]
