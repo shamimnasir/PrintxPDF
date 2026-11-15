@@ -1,0 +1,1077 @@
+{
+  "topic": "remove-pdf-author-before-sharing",
+  "sourceCluster": "privacy-expansion",
+  "tool": "remove-metadata",
+  "languages": {
+    "es": {
+      "topic": "remove-pdf-author-before-sharing",
+      "slug": "remove-pdf-author-before-sharing",
+      "title": "Cómo quitar el autor de un PDF antes de compartirlo",
+      "metaTitle": "Cómo quitar el autor de un PDF antes de compartirlo",
+      "metaDescription": "Quita los metadatos de autor de un PDF gratis y en tu navegador. Guarda el original, revisa la copia y confirma el destinatario antes de compartir.",
+      "keyword": "quitar autor de un PDF antes de compartir",
+      "secondaryKeywords": [
+        "quitar autor de un PDF antes de compartir",
+        "eliminar metadatos PDF",
+        "privacidad de PDF antes de compartir"
+      ],
+      "answer": "Para quitar el autor de un PDF antes de compartirlo, conserva el original, usa una herramienta que elimine las propiedades del documento, descarga una copia y revisa el resultado. PrintxPDF elimina campos estándar como autor, título, aplicación y fecha, además de XMP del documento. No cambia detalles de fotos incrustadas ni comentarios.",
+      "tool": "remove-metadata",
+      "ctaLabel": "Eliminar metadatos",
+      "body": [
+        {
+          "t": "p",
+          "x": "Quitar el autor de un PDF es más fácil y seguro si separas el archivo original de la copia que vas a compartir. Guarda primero la fuente, elimina las propiedades estándar con [Eliminar metadatos](/tools/remove-metadata), descarga una copia distinta y revísala antes de enviarla. La herramienta se ejecuta localmente en la pestaña del navegador: el archivo no se sube."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo quitar los metadatos de autor de un PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarda una copia original",
+              "x": "Mantén un archivo sin cambios antes de editar, convertir o preparar el PDF."
+            },
+            {
+              "h": "Abre Eliminar metadatos",
+              "x": "Usa [Eliminar metadatos](/tools/remove-metadata). La herramienta elimina campos estándar de autor, título, aplicación y fecha, además de XMP a nivel del documento."
+            },
+            {
+              "h": "Elimina solo las propiedades necesarias",
+              "x": "Haz el cambio específico solicitado. Esta herramienta no elimina comentarios ni detalles EXIF de fotografías incrustadas."
+            },
+            {
+              "h": "Descarga una copia separada",
+              "x": "Usa un nombre que indique el propósito y la versión para distinguirla del original."
+            },
+            {
+              "h": "Revisa antes de entregar",
+              "x": "Abre el archivo y comprueba contenido, orden de páginas, nombres, fechas, importes y destinatario."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Elimina las propiedades de autor del PDF en tu pestaña. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Qué propiedades se eliminan y cuáles no"
+        },
+        {
+          "t": "p",
+          "x": "Eliminar metadatos limpia los campos estándar del PDF y XMP del documento. Los metadatos de imágenes incrustadas y los comentarios requieren otros pasos y no desaparecen con esta herramienta."
+        },
+        {
+          "t": "h2",
+          "x": "Elige la acción adecuada para el documento"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Necesidad",
+            "Acción",
+            "Motivo"
+          ],
+          "rows": [
+            [
+              "Necesidad",
+              "Acción adecuada",
+              "Qué cambia"
+            ],
+            [
+              "Conservar un registro fuente",
+              "Guardar el original sin editar",
+              "Conserva el contexto y permite volver atrás"
+            ],
+            [
+              "Quitar autor y propiedades estándar",
+              "Eliminar metadatos",
+              "Limpia propiedades estándar y XMP del documento"
+            ],
+            [
+              "Eliminar información privada visible",
+              "Usar Redactar PDF o eliminar contenido",
+              "Texto visible e información oculta requieren pasos distintos"
+            ],
+            [
+              "Verificar la copia final",
+              "Abrir y revisar el PDF",
+              "Una descarga no demuestra que esté listo"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Elige la acción adecuada para el documento"
+        },
+        {
+          "t": "p",
+          "x": "Un archivo puede parecer correcto y aun así tener una página ausente, un pie cortado, un valor incorrecto o un adjunto no deseado. Revisa nombres, fechas, importes, orden de páginas, firmas y texto pequeño. Si el PDF es un escaneo o contiene muchas imágenes, míralo con un zoom normal; la búsqueda de texto no detecta todo lo que se ve en la página."
+        },
+        {
+          "t": "h2",
+          "x": "Revisa el PDF en contexto"
+        },
+        {
+          "t": "p",
+          "x": "Un flujo local reduce transferencias innecesarias, pero no decide quién debe recibir el documento ni vuelve seguro un contenido sensible. Usa un destino aprobado, revisa lo visible y aplica la medida correcta. La redacción elimina contenido visible mediante un flujo específico; la eliminación de metadatos trata propiedades estándar del archivo; una marca de agua visible solo añade una etiqueta. Para quitar texto que no debe leerse, usa [Redactar PDF](/tools/redact-pdf), no solo la herramienta de metadatos."
+        },
+        {
+          "t": "h2",
+          "x": "Protege la privacidad sin prometer de más"
+        },
+        {
+          "t": "p",
+          "x": "Usa nombres descriptivos y conserva el original hasta terminar la revisión o entrega. Si alguien pide un cambio, vuelve a la fuente y genera otra copia en lugar de editar en silencio un archivo ya distribuido. Así sabes qué versión se aprobó cuando hay varios PDF en circulación."
+        },
+        {
+          "t": "h2",
+          "x": "Mantén claras las versiones"
+        },
+        {
+          "t": "p",
+          "x": "Abre la copia final antes de compartirla, imprimirla o archivarla. Confirma que cumple la tarea y que el original sigue disponible por si necesitas corregir algo. Si el paquete tiene varios documentos, revisa cada uno antes de [unir los PDF](/tools/merge-pdf) o enviarlos. Una comprobación corta suele evitar una entrega incorrecta."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo quitar gratis el autor de un PDF?",
+          "a": "Sí. Eliminar metadatos es gratis, no requiere registro y no añade marca de agua. La herramienta limpia campos estándar como autor y título, además de XMP del documento."
+        },
+        {
+          "q": "¿La herramienta cambia el archivo original?",
+          "a": "No. Conserva la fuente y descarga una copia distinta. Así puedes revisar el resultado y volver al original si necesitas corregir algo."
+        },
+        {
+          "q": "¿Es privado quitar metadatos con PrintxPDF?",
+          "a": "Eliminar metadatos funciona localmente en la pestaña del navegador; el archivo no se sube. Aun así, sigue el proceso aprobado para documentos restringidos."
+        },
+        {
+          "q": "¿Qué debo revisar antes de compartir el PDF?",
+          "a": "Comprueba contenido visible, páginas, nombres, fechas, importes y destinatario. Recuerda que la herramienta no elimina detalles de fotos incrustadas ni comentarios."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "pt-BR": {
+      "topic": "remove-pdf-author-before-sharing",
+      "slug": "remove-pdf-author-before-sharing",
+      "title": "Como remover o autor de um PDF antes de compartilhar",
+      "metaTitle": "Como remover o autor de um PDF antes de compartilhar",
+      "metaDescription": "Remova os metadados de autor de um PDF grátis e no navegador. Guarde o original, revise a cópia e confirme o destinatário antes de enviar.",
+      "keyword": "remover autor de PDF antes de compartilhar",
+      "secondaryKeywords": [
+        "remover autor de PDF antes de compartilhar",
+        "remover metadados PDF",
+        "privacidade PDF antes de compartilhar"
+      ],
+      "answer": "Para remover o autor de um PDF antes de compartilhar, guarde o original, use uma ferramenta que limpe as propriedades do documento, baixe uma cópia e confira o resultado. O PrintxPDF remove campos padrão como autor, título, aplicativo e data, além do XMP do documento. Não altera detalhes de fotos incorporadas nem comentários.",
+      "tool": "remove-metadata",
+      "ctaLabel": "Remover metadados",
+      "body": [
+        {
+          "t": "p",
+          "x": "Remover o autor de um PDF é mais simples quando o original fica separado da cópia que será compartilhada. Guarde a fonte, limpe as propriedades padrão com [Remover metadados](/tools/remove-metadata), baixe outra cópia e revise antes de enviar. A ferramenta roda localmente na aba do navegador: o arquivo não é enviado."
+        },
+        {
+          "t": "h2",
+          "x": "Como remover metadados de autor de um PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarde uma cópia original",
+              "x": "Mantenha um arquivo sem alterações antes de editar, converter ou preparar o PDF."
+            },
+            {
+              "h": "Abra Remover metadados",
+              "x": "Use [Remover metadados](/tools/remove-metadata). A ferramenta limpa os campos padrão de autor, título, aplicativo e data, além do XMP no nível do documento."
+            },
+            {
+              "h": "Remova apenas as propriedades necessárias",
+              "x": "Faça a alteração específica pedida. A ferramenta não remove comentários nem detalhes EXIF de fotos incorporadas."
+            },
+            {
+              "h": "Baixe uma cópia separada",
+              "x": "Use um nome que indique a finalidade e a versão para distingui-la do original."
+            },
+            {
+              "h": "Revise antes da entrega",
+              "x": "Abra o arquivo e confira conteúdo, ordem das páginas, nomes, datas, valores e destinatário."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Remova as propriedades de autor do PDF na sua aba. Grátis, sem cadastro e sem marca-d’água."
+        },
+        {
+          "t": "h2",
+          "x": "Quais propriedades saem e quais ficam"
+        },
+        {
+          "t": "p",
+          "x": "Remover metadados limpa os campos padrão do PDF e o XMP do documento. Dados de fotos incorporadas e comentários exigem outras etapas e não somem com esta ferramenta."
+        },
+        {
+          "t": "h2",
+          "x": "Escolha a ação certa para o documento"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Necessidade",
+            "Ação",
+            "Motivo"
+          ],
+          "rows": [
+            [
+              "Necessidade",
+              "Ação adequada",
+              "O que muda"
+            ],
+            [
+              "Guardar um registro-fonte",
+              "Manter o original sem alterações",
+              "Preserva o contexto e permite voltar atrás"
+            ],
+            [
+              "Remover autor e propriedades padrão",
+              "Remover metadados",
+              "Limpa propriedades padrão e XMP do documento"
+            ],
+            [
+              "Remover conteúdo privado visível",
+              "Usar Redigir PDF ou excluir conteúdo",
+              "Texto visível e dados ocultos exigem etapas diferentes"
+            ],
+            [
+              "Conferir a versão final",
+              "Abrir e revisar o PDF",
+              "Baixar não prova que o arquivo está pronto"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Escolha a ação certa para o documento"
+        },
+        {
+          "t": "p",
+          "x": "Um arquivo pode parecer certo e ainda ter página faltando, rodapé cortado, valor incorreto ou anexo inesperado. Confira nomes, datas, valores, ordem das páginas, assinaturas e texto pequeno. Se o PDF for digitalizado ou tiver muitas imagens, inspecione em zoom normal; a busca de texto não revela tudo que aparece na página."
+        },
+        {
+          "t": "h2",
+          "x": "Revise o PDF no contexto"
+        },
+        {
+          "t": "p",
+          "x": "Um fluxo local reduz transferências desnecessárias, mas não decide quem deve receber o documento nem torna seguro o conteúdo sensível. Use um destino aprovado, confira o que está visível e aplique a medida adequada. A redação remove conteúdo visível por um fluxo próprio; a remoção de metadados trata propriedades padrão do arquivo; uma marca-d’água visível é apenas um rótulo. Para apagar texto que não deve ser lido, use [Redigir PDF](/tools/redact-pdf), não apenas a ferramenta de metadados."
+        },
+        {
+          "t": "h2",
+          "x": "Proteja a privacidade sem exagerar nas promessas"
+        },
+        {
+          "t": "p",
+          "x": "Use nomes descritivos e mantenha o original até terminar a revisão ou entrega. Se alguém pedir uma mudança, volte à fonte e gere outra cópia, em vez de editar sem registro um arquivo já distribuído. Assim fica claro qual versão foi aprovada quando há vários PDFs circulando."
+        },
+        {
+          "t": "h2",
+          "x": "Mantenha as versões organizadas"
+        },
+        {
+          "t": "p",
+          "x": "Abra a cópia final antes de compartilhar, imprimir ou arquivar. Confirme se ela atende ao pedido e se o original continua disponível para correções. Se o pacote tiver vários documentos, revise cada um antes de [juntar PDFs](/tools/merge-pdf) ou enviar. Uma checagem rápida pode evitar uma entrega errada."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso remover o autor de um PDF grátis?",
+          "a": "Sim. Remover metadados é grátis, não exige cadastro e não adiciona marca-d’água. A ferramenta limpa campos padrão como autor e título, além do XMP do documento."
+        },
+        {
+          "q": "A ferramenta altera o arquivo original?",
+          "a": "Não. Guarde a fonte e baixe uma cópia separada. Assim você pode revisar o resultado e voltar ao original se precisar corrigir algo."
+        },
+        {
+          "q": "Remover metadados com PrintxPDF é privado?",
+          "a": "A ferramenta funciona localmente na aba do navegador, sem enviar o arquivo. Ainda assim, siga o processo aprovado para documentos restritos."
+        },
+        {
+          "q": "O que devo conferir antes de compartilhar o PDF?",
+          "a": "Confira conteúdo visível, páginas, nomes, datas, valores e destinatário. A ferramenta não remove detalhes de fotos incorporadas nem comentários."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "hi": {
+      "topic": "remove-pdf-author-before-sharing",
+      "slug": "remove-pdf-author-before-sharing",
+      "title": "शेयर करने से पहले PDF लेखक का नाम कैसे हटाएँ",
+      "metaTitle": "शेयर करने से पहले PDF लेखक का नाम कैसे हटाएँ",
+      "metaDescription": "PDF से लेखक मेटाडेटा मुफ़्त और ब्राउज़र में हटाएँ। मूल फ़ाइल रखें, कॉपी जाँचें और साझा करने से पहले प्राप्तकर्ता की पुष्टि करें।",
+      "keyword": "शेयर करने से पहले PDF लेखक हटाएँ",
+      "secondaryKeywords": [
+        "शेयर करने से पहले PDF लेखक हटाएँ",
+        "PDF मेटाडेटा हटाएँ",
+        "शेयर से पहले PDF गोपनीयता"
+      ],
+      "answer": "शेयर करने से पहले PDF लेखक हटाने के लिए मूल फ़ाइल सुरक्षित रखें, दस्तावेज़ गुण हटाने वाला टूल चलाएँ, अलग कॉपी डाउनलोड करें और जाँचें। PrintxPDF लेखक, शीर्षक, ऐप और तारीख जैसे सामान्य फ़ील्ड तथा दस्तावेज़-स्तर का XMP हटाता है। यह एम्बेडेड फ़ोटो विवरण या टिप्पणियाँ नहीं बदलता।",
+      "tool": "remove-metadata",
+      "ctaLabel": "मेटाडेटा हटाएँ",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF से लेखक का नाम हटाना आसान है जब मूल फ़ाइल को साझा करने वाली कॉपी से अलग रखा जाए। पहले मूल रखें, [मेटाडेटा हटाएँ](/tools/remove-metadata) से सामान्य गुण साफ़ करें, अलग कॉपी डाउनलोड करें और भेजने से पहले जाँचें। टूल ब्राउज़र टैब में स्थानीय रूप से चलता है; फ़ाइल अपलोड नहीं होती।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF लेखक मेटाडेटा कैसे हटाएँ"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "मूल कॉपी सुरक्षित रखें",
+              "x": "PDF संपादित, कन्वर्ट या तैयार करने से पहले बिना बदलाव वाली फ़ाइल रखें।"
+            },
+            {
+              "h": "मेटाडेटा हटाएँ खोलें",
+              "x": "[मेटाडेटा हटाएँ](/tools/remove-metadata) इस्तेमाल करें। यह लेखक, शीर्षक, ऐप और तारीख जैसे सामान्य गुण तथा दस्तावेज़-स्तर का XMP हटाता है।"
+            },
+            {
+              "h": "केवल ज़रूरी गुण हटाएँ",
+              "x": "माँगा गया बदलाव ही करें। यह टूल एम्बेडेड फ़ोटो का EXIF विवरण या टिप्पणियाँ नहीं हटाता।"
+            },
+            {
+              "h": "अलग आउटपुट कॉपी डाउनलोड करें",
+              "x": "ऐसा नाम रखें जिससे मकसद और संस्करण मूल फ़ाइल से अलग दिखें।"
+            },
+            {
+              "h": "भेजने से पहले जाँचें",
+              "x": "फ़ाइल खोलकर सामग्री, पेज क्रम, नाम, तारीख, रकम और प्राप्तकर्ता देखें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "PDF से लेखक प्रॉपर्टी टैब में हटाएँ। मुफ़्त, साइनअप नहीं और वॉटरमार्क नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "कौन से गुण हटते हैं और कौन से नहीं"
+        },
+        {
+          "t": "p",
+          "x": "मेटाडेटा हटाना PDF के सामान्य फ़ील्ड और दस्तावेज़ XMP साफ़ करता है। एम्बेडेड तस्वीरों का विवरण और टिप्पणियाँ अलग चरण हैं और इस टूल से नहीं हटतीं।"
+        },
+        {
+          "t": "h2",
+          "x": "दस्तावेज़ के लिए सही कार्रवाई चुनें"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ज़रूरत",
+            "कदम",
+            "क्यों"
+          ],
+          "rows": [
+            [
+              "ज़रूरत",
+              "उचित कदम",
+              "क्या बदलता है"
+            ],
+            [
+              "मूल रिकॉर्ड रखना",
+              "मूल फ़ाइल सुरक्षित रखें",
+              "संदर्भ और वापस लौटने का विकल्प रहता है"
+            ],
+            [
+              "लेखक और सामान्य गुण हटाना",
+              "मेटाडेटा हटाएँ",
+              "सामान्य गुण और दस्तावेज़ XMP साफ़ होते हैं"
+            ],
+            [
+              "दिखने वाली निजी सामग्री हटाना",
+              "PDF Redact या सामग्री हटाएँ",
+              "दिखने वाला पाठ और छिपे गुण अलग चरण हैं"
+            ],
+            [
+              "अंतिम प्रति जाँचना",
+              "PDF खोलकर समीक्षा करें",
+              "डाउनलोड होना तैयार होने का प्रमाण नहीं"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "दस्तावेज़ के लिए सही काम चुनें"
+        },
+        {
+          "t": "p",
+          "x": "फ़ाइल पहली नज़र में सही लगे, फिर भी पेज गायब, फ़ुटर कटा, रकम गलत या अनचाहा अटैचमेंट हो सकता है। नाम, तारीख, रकम, पेज क्रम, हस्ताक्षर और छोटा पाठ जाँचें। स्कैन या तस्वीरों वाले PDF को सामान्य ज़ूम पर देखें; केवल टेक्स्ट खोज से दृश्य सामग्री नहीं दिखती।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF को संदर्भ में जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "स्थानीय प्रोसेसिंग अनावश्यक फ़ाइल ट्रांसफ़र घटाती है, लेकिन यह तय नहीं करती कि दस्तावेज़ किसे भेजना है या संवेदनशील सामग्री साझा करना सुरक्षित है। स्वीकृत जगह पर भेजें, दिखने वाली सामग्री जाँचें और सही गोपनीयता तरीका चुनें। रेडैक्ट दृश्य सामग्री हटाता है; मेटाडेटा टूल फ़ाइल के सामान्य गुण हटाता है; वॉटरमार्क केवल दिखाई देने वाला लेबल है। छिपाने वाले पाठ के लिए [PDF Redact](/tools/redact-pdf) इस्तेमाल करें, सिर्फ मेटाडेटा टूल नहीं।"
+        },
+        {
+          "t": "h2",
+          "x": "बढ़ा-चढ़ाकर दावा किए बिना गोपनीयता बचाएँ"
+        },
+        {
+          "t": "p",
+          "x": "स्पष्ट नाम रखें और समीक्षा या भेजने तक मूल कॉपी बचाकर रखें। बदलाव माँगा जाए तो स्रोत से नई कॉपी बनाएँ; पहले से भेजी फ़ाइल को बिना रिकॉर्ड बदले नहीं। कई PDF संस्करण चल रहे हों तब इससे स्वीकृत प्रति पहचानना आसान होता है।"
+        },
+        {
+          "t": "h2",
+          "x": "फ़ाइल संस्करण स्पष्ट रखें"
+        },
+        {
+          "t": "p",
+          "x": "शेयर, प्रिंट या संग्रह से पहले अंतिम कॉपी खोलें। पुष्टि करें कि काम पूरा है और गलती सुधारने के लिए स्रोत मौजूद है। कई PDF वाले पैकेट में हर फ़ाइल जाँचें, फिर [PDF मर्ज](/tools/merge-pdf) करें या भेजें। छोटी अंतिम जाँच गलत डिलीवरी से तेज़ होती है।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF लेखक का नाम मुफ़्त हटाया जा सकता है?",
+          "a": "हाँ। मेटाडेटा हटाना मुफ़्त है, साइनअप नहीं चाहिए और वॉटरमार्क नहीं जोड़ता। यह लेखक और शीर्षक जैसे सामान्य गुण तथा दस्तावेज़ XMP साफ़ करता है।"
+        },
+        {
+          "q": "क्या टूल मूल फ़ाइल बदलता है?",
+          "a": "नहीं। मूल फ़ाइल रखें और अलग आउटपुट डाउनलोड करें। इससे समीक्षा और सुधार आसान होते हैं।"
+        },
+        {
+          "q": "क्या PrintxPDF से मेटाडेटा हटाना निजी है?",
+          "a": "टूल ब्राउज़र टैब में स्थानीय रूप से चलता है और फ़ाइल अपलोड नहीं करता। फिर भी प्रतिबंधित दस्तावेज़ों के लिए स्वीकृत प्रक्रिया मानें।"
+        },
+        {
+          "q": "शेयर करने से पहले क्या जाँचूँ?",
+          "a": "दिखने वाली सामग्री, पेज क्रम, नाम, तारीख, रकम और प्राप्तकर्ता जाँचें। एम्बेडेड फ़ोटो विवरण और टिप्पणियाँ इस टूल से नहीं हटतीं।"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "vi": {
+      "topic": "remove-pdf-author-before-sharing",
+      "slug": "remove-pdf-author-before-sharing",
+      "title": "Cách xóa tên tác giả khỏi PDF trước khi chia sẻ",
+      "metaTitle": "Cách xóa tên tác giả khỏi PDF trước khi chia sẻ",
+      "metaDescription": "Xóa siêu dữ liệu tác giả khỏi PDF miễn phí ngay trong trình duyệt. Giữ bản gốc, kiểm tra bản sao và xác nhận người nhận trước khi gửi.",
+      "keyword": "xóa tác giả PDF trước khi chia sẻ",
+      "secondaryKeywords": [
+        "xóa tác giả PDF trước khi chia sẻ",
+        "xóa siêu dữ liệu PDF",
+        "quyền riêng tư PDF trước khi chia sẻ"
+      ],
+      "answer": "Để xóa tên tác giả khỏi PDF trước khi chia sẻ, hãy giữ tệp gốc, dùng công cụ xóa thuộc tính tài liệu, tải một bản sao riêng và kiểm tra kết quả. PrintxPDF xóa các trường chuẩn như tác giả, tiêu đề, ứng dụng, ngày tháng và XMP cấp tài liệu. Công cụ không thay đổi chi tiết ảnh nhúng hoặc bình luận.",
+      "tool": "remove-metadata",
+      "ctaLabel": "Xóa siêu dữ liệu",
+      "body": [
+        {
+          "t": "p",
+          "x": "Xóa tên tác giả khỏi PDF an toàn hơn khi tách tệp gốc khỏi bản sẽ chia sẻ. Hãy giữ bản nguồn, xóa thuộc tính chuẩn bằng [Xóa siêu dữ liệu](/tools/remove-metadata), tải một bản sao khác và kiểm tra trước khi gửi. Công cụ chạy cục bộ trong tab trình duyệt, không tải tệp lên."
+        },
+        {
+          "t": "h2",
+          "x": "Cách xóa siêu dữ liệu tác giả trong PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Giữ bản gốc",
+              "x": "Lưu một bản chưa chỉnh sửa trước khi thay đổi, chuyển đổi hoặc chuẩn bị PDF."
+            },
+            {
+              "h": "Mở Xóa siêu dữ liệu",
+              "x": "Dùng [Xóa siêu dữ liệu](/tools/remove-metadata). Công cụ xóa các thuộc tính chuẩn như tác giả, tiêu đề, ứng dụng, ngày tháng và XMP cấp tài liệu."
+            },
+            {
+              "h": "Chỉ xóa thuộc tính cần thiết",
+              "x": "Chỉ thực hiện thay đổi được yêu cầu. Công cụ không xóa bình luận hay chi tiết EXIF trong ảnh nhúng."
+            },
+            {
+              "h": "Tải xuống một bản sao riêng",
+              "x": "Đặt tên thể hiện rõ mục đích và phiên bản để phân biệt với bản gốc."
+            },
+            {
+              "h": "Kiểm tra trước khi gửi",
+              "x": "Mở tệp và xem nội dung, thứ tự trang, tên, ngày, số tiền và người nhận."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Xóa thuộc tính tác giả PDF ngay trong tab. Miễn phí, không đăng ký, không hình mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Thuộc tính nào được xóa và thuộc tính nào còn"
+        },
+        {
+          "t": "p",
+          "x": "Xóa siêu dữ liệu làm sạch trường chuẩn và XMP cấp tài liệu. Chi tiết ảnh nhúng và bình luận cần bước khác; công cụ này không xóa chúng."
+        },
+        {
+          "t": "h2",
+          "x": "Chọn thao tác phù hợp với tài liệu"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Nhu cầu",
+            "Thao tác",
+            "Lý do"
+          ],
+          "rows": [
+            [
+              "Nhu cầu",
+              "Thao tác phù hợp",
+              "Thay đổi gì"
+            ],
+            [
+              "Giữ bản nguồn",
+              "Giữ tệp gốc nguyên vẹn",
+              "Giữ ngữ cảnh và khả năng khôi phục"
+            ],
+            [
+              "Xóa tác giả và thuộc tính chuẩn",
+              "Xóa siêu dữ liệu",
+              "Xóa thuộc tính chuẩn và XMP cấp tài liệu"
+            ],
+            [
+              "Xóa nội dung riêng tư nhìn thấy",
+              "Dùng Redact PDF hoặc xóa nội dung",
+              "Nội dung hiển thị và thuộc tính ẩn cần bước riêng"
+            ],
+            [
+              "Kiểm tra bản cuối",
+              "Mở và xem lại PDF",
+              "Tải xuống không có nghĩa là đã sẵn sàng"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Chọn đúng thao tác cho tài liệu"
+        },
+        {
+          "t": "p",
+          "x": "Tệp có thể trông ổn nhưng thiếu trang, chân trang bị cắt, sai số liệu hoặc còn tệp đính kèm ngoài ý muốn. Kiểm tra tên, ngày, số tiền, thứ tự trang, chữ ký và chữ nhỏ. Nếu PDF được quét hoặc nhiều ảnh, hãy xem ở mức phóng đại bình thường; tìm kiếm văn bản không thể hiện mọi thứ nhìn thấy."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra PDF trong ngữ cảnh sử dụng"
+        },
+        {
+          "t": "p",
+          "x": "Quy trình cục bộ giảm việc truyền tệp không cần thiết nhưng không quyết định ai được nhận tài liệu và không làm nội dung nhạy cảm tự nhiên an toàn để chia sẻ. Hãy dùng nơi nhận được phê duyệt, kiểm tra nội dung hiển thị và áp dụng biện pháp đúng. Redact xóa nội dung nhìn thấy qua quy trình riêng; xóa siêu dữ liệu xử lý thuộc tính tệp chuẩn; hình mờ nhìn thấy chỉ là nhãn. Muốn xóa chữ cần che, hãy dùng [Redact PDF](/tools/redact-pdf), không chỉ công cụ siêu dữ liệu."
+        },
+        {
+          "t": "h2",
+          "x": "Bảo vệ riêng tư mà không hứa quá mức"
+        },
+        {
+          "t": "p",
+          "x": "Dùng tên tệp mô tả và giữ bản gốc đến khi hoàn tất việc xem xét hoặc bàn giao. Nếu người nhận yêu cầu sửa, quay lại bản nguồn và tạo bản mới thay vì âm thầm sửa tệp đã gửi. Thói quen này giúp biết bản nào đã được duyệt khi có nhiều PDF đang lưu hành."
+        },
+        {
+          "t": "h2",
+          "x": "Quản lý phiên bản rõ ràng"
+        },
+        {
+          "t": "p",
+          "x": "Mở bản cuối trước khi chia sẻ, in hoặc lưu hồ sơ. Xác nhận tệp đúng yêu cầu và bản gốc vẫn còn để sửa nếu cần. Nếu gói có nhiều PDF, kiểm tra từng tệp trước khi [Gộp PDF](/tools/merge-pdf) hoặc gửi đi. Kiểm tra ngắn thường nhanh hơn xử lý việc gửi nhầm."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Có thể xóa tên tác giả khỏi PDF miễn phí không?",
+          "a": "Có. Công cụ miễn phí, không cần đăng ký và không thêm hình mờ. Công cụ xóa thuộc tính chuẩn như tác giả, tiêu đề và XMP cấp tài liệu."
+        },
+        {
+          "q": "Công cụ có thay đổi tệp gốc không?",
+          "a": "Không. Hãy giữ bản nguồn và tải một bản đầu ra riêng. Cách này giúp xem lại và sửa dễ hơn."
+        },
+        {
+          "q": "Xóa siêu dữ liệu bằng PrintxPDF có riêng tư không?",
+          "a": "Công cụ chạy cục bộ trong tab trình duyệt, không tải tệp lên. Với tài liệu hạn chế, vẫn cần theo quy trình được duyệt."
+        },
+        {
+          "q": "Cần kiểm tra gì trước khi chia sẻ PDF?",
+          "a": "Kiểm tra nội dung hiển thị, trang, tên, ngày, số tiền và người nhận. Công cụ không xóa chi tiết ảnh nhúng hoặc bình luận."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "zh-CN": {
+      "topic": "remove-pdf-author-before-sharing",
+      "slug": "remove-pdf-author-before-sharing",
+      "title": "分享前如何删除 PDF 作者信息",
+      "metaTitle": "分享前如何删除 PDF 作者信息",
+      "metaDescription": "在浏览器中免费删除 PDF 作者元数据。保留原件并检查副本；工具不会删除嵌入照片详情或批注。分享前确认接收方。",
+      "keyword": "分享前删除 PDF 作者信息",
+      "secondaryKeywords": [
+        "分享前删除 PDF 作者信息",
+        "删除 PDF 元数据",
+        "分享前 PDF 隐私"
+      ],
+      "answer": "分享 PDF 前删除作者信息，应先保留原件，使用工具清除文档属性，下载单独副本并检查结果。PrintxPDF 可删除作者、标题、应用程序和日期等标准字段及文档级 XMP，但不会更改嵌入照片详情或批注。",
+      "tool": "remove-metadata",
+      "ctaLabel": "删除元数据",
+      "body": [
+        {
+          "t": "p",
+          "x": "将原始文件与准备分享的副本分开，再清除 PDF 作者信息会更稳妥。保留源文件，使用[删除元数据](/tools/remove-metadata)清理标准属性，下载另一个副本并在发送前检查。此工具在浏览器标签页本地运行，文件不会上传。"
+        },
+        {
+          "t": "h2",
+          "x": "如何删除 PDF 作者元数据"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "保留原始文件",
+              "x": "编辑、转换或准备 PDF 前，先保存一份未更改的副本。"
+            },
+            {
+              "h": "打开删除元数据工具",
+              "x": "使用[删除元数据](/tools/remove-metadata)。工具会清除作者、标题、应用程序、日期等标准属性，以及文档级 XMP。"
+            },
+            {
+              "h": "只删除需要处理的属性",
+              "x": "只进行任务要求的更改。此工具不会删除嵌入照片的 EXIF 详情或批注。"
+            },
+            {
+              "h": "下载单独的副本",
+              "x": "用能说明用途和版本的文件名保存，避免与原件混淆。"
+            },
+            {
+              "h": "交付前检查",
+              "x": "打开文件，检查内容、页序、姓名、日期、金额和接收方。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "在当前标签页删除 PDF 作者属性。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "哪些属性会删除，哪些会保留"
+        },
+        {
+          "t": "p",
+          "x": "删除元数据会清除 PDF 标准字段和文档级 XMP。嵌入照片详情和批注需单独处理，此工具不会删除它们。"
+        },
+        {
+          "t": "h2",
+          "x": "为文档选择合适的操作"
+        },
+        {
+          "t": "table",
+          "head": [
+            "需求",
+            "操作",
+            "原因"
+          ],
+          "rows": [
+            [
+              "保留源记录",
+              "留存未改动的原件",
+              "保留上下文并可回退"
+            ],
+            [
+              "删除作者和标准属性",
+              "删除元数据",
+              "清除标准属性和文档级 XMP"
+            ],
+            [
+              "删除可见的私人内容",
+              "使用 PDF 脱敏或删除内容",
+              "可见文字与隐藏属性需要不同步骤"
+            ],
+            [
+              "检查最终版本",
+              "打开 PDF 并检查",
+              "下载完成不代表已准备好"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "为文件选择正确的处理方式"
+        },
+        {
+          "t": "p",
+          "x": "文件看起来正常，仍可能缺页、页脚被裁、数值错误或带有意外附件。请检查姓名、日期、金额、页序、签名和小字。若 PDF 是扫描件或包含大量图片，应按正常缩放查看；文本搜索无法发现页面上所有可见内容。"
+        },
+        {
+          "t": "h2",
+          "x": "结合用途检查 PDF"
+        },
+        {
+          "t": "p",
+          "x": "本地处理可减少不必要的文件传输，但不能替你决定文档该发给谁，也不能让敏感内容自动适合分享。使用获准的接收位置，检查可见内容并采取正确措施。脱敏通过专用流程移除可见内容；删除元数据处理文件的标准属性；可见水印只是标签。需要删除不应显示的文字时，请使用[PDF 脱敏](/tools/redact-pdf)，不能只清理元数据。"
+        },
+        {
+          "t": "h2",
+          "x": "保护隐私时避免夸大承诺"
+        },
+        {
+          "t": "p",
+          "x": "使用清晰文件名，并在审核或交付完成前保留原件。若接收方要求修改，应回到源文件重新生成副本，而不是无记录地改动已分发文件。多个 PDF 同时流转时，这样更容易确认哪一版已获批准。"
+        },
+        {
+          "t": "h2",
+          "x": "让文件版本一目了然"
+        },
+        {
+          "t": "p",
+          "x": "分享、打印或归档前打开最终副本。确认它符合任务要求，并保留原件以便纠正。如果资料包包含多个 PDF，先逐份检查，再[合并 PDF](/tools/merge-pdf)或发送。短暂复核通常比处理错误交付更省时。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以免费删除 PDF 作者信息吗？",
+          "a": "可以。删除元数据免费、无需注册且不加水印。工具会清除作者、标题等标准属性及文档级 XMP。"
+        },
+        {
+          "q": "工具会改动原始文件吗？",
+          "a": "不会。保留源文件并下载单独副本，这样更容易检查结果或恢复修改。"
+        },
+        {
+          "q": "使用 PrintxPDF 删除元数据是否私密？",
+          "a": "工具在浏览器标签页本地运行，不会上传文件。受限文件仍应遵循获准的处理流程。"
+        },
+        {
+          "q": "分享 PDF 前要检查什么？",
+          "a": "检查可见内容、页序、姓名、日期、金额和接收方。工具不会删除嵌入照片详情或批注。"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "ar": {
+      "topic": "remove-pdf-author-before-sharing",
+      "slug": "remove-pdf-author-before-sharing",
+      "title": "كيفية إزالة اسم مؤلف PDF قبل مشاركته",
+      "metaTitle": "كيفية إزالة اسم مؤلف PDF قبل مشاركته",
+      "metaDescription": "أزل بيانات المؤلف الوصفية من PDF مجانًا في المتصفح. احتفظ بالأصل وراجع النسخة وتحقق من المستلم قبل المشاركة.",
+      "keyword": "إزالة مؤلف PDF قبل المشاركة",
+      "secondaryKeywords": [
+        "إزالة مؤلف PDF قبل المشاركة",
+        "إزالة بيانات PDF الوصفية",
+        "خصوصية PDF قبل المشاركة"
+      ],
+      "answer": "لإزالة اسم المؤلف من PDF قبل مشاركته، احتفظ بالأصل واستخدم أداة لمسح خصائص المستند ثم نزّل نسخة منفصلة وراجعها. تزيل PrintxPDF الحقول القياسية مثل المؤلف والعنوان والتطبيق والتاريخ وبيانات XMP على مستوى المستند. لا تغير تفاصيل الصور المضمنة أو التعليقات.",
+      "tool": "remove-metadata",
+      "ctaLabel": "إزالة البيانات الوصفية",
+      "body": [
+        {
+          "t": "p",
+          "x": "تكون إزالة اسم المؤلف من PDF أسهل وأكثر أمانًا عند فصل الملف الأصلي عن النسخة التي ستشاركها. احتفظ بالمصدر، وامسح الخصائص القياسية عبر [إزالة البيانات الوصفية](/tools/remove-metadata)، ونزّل نسخة منفصلة وراجعها قبل الإرسال. تعمل الأداة محليًا في تبويب المتصفح ولا ترفع الملف."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية إزالة بيانات المؤلف الوصفية من PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احتفظ بنسخة أصلية",
+              "x": "احفظ ملفًا غير معدل قبل تحرير PDF أو تحويله أو تجهيزه."
+            },
+            {
+              "h": "افتح أداة إزالة البيانات الوصفية",
+              "x": "استخدم [إزالة البيانات الوصفية](/tools/remove-metadata). تمسح الأداة الحقول القياسية للمؤلف والعنوان والتطبيق والتاريخ وXMP الخاص بالمستند."
+            },
+            {
+              "h": "أزل الخصائص المطلوبة فقط",
+              "x": "نفذ التغيير المطلوب فقط. لا تزيل الأداة تفاصيل EXIF في الصور المضمنة أو التعليقات."
+            },
+            {
+              "h": "نزّل نسخة منفصلة",
+              "x": "استخدم اسمًا يوضح الغرض والإصدار لتمييزها عن الأصل."
+            },
+            {
+              "h": "راجع قبل التسليم",
+              "x": "افتح الملف وتحقق من المحتوى وترتيب الصفحات والأسماء والتواريخ والمبالغ والمستلم."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "أزل خصائص المؤلف من PDF داخل التبويب. مجانًا وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "ما الخصائص التي تُزال وما الذي يبقى"
+        },
+        {
+          "t": "p",
+          "x": "تمسح إزالة البيانات الوصفية الحقول القياسية وXMP للمستند. تفاصيل الصور المضمنة والتعليقات تحتاج إلى خطوات أخرى ولا تزيلها هذه الأداة."
+        },
+        {
+          "t": "h2",
+          "x": "اختر الإجراء المناسب للمستند"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الحاجة",
+            "الإجراء",
+            "السبب"
+          ],
+          "rows": [
+            [
+              "الاحتفاظ بسجل المصدر",
+              "احتفظ بالأصل كما هو",
+              "يحفظ السياق وخيار الرجوع"
+            ],
+            [
+              "إزالة المؤلف والخصائص القياسية",
+              "إزالة البيانات الوصفية",
+              "تمسح الخصائص القياسية وXMP للمستند"
+            ],
+            [
+              "إزالة محتوى خاص ظاهر",
+              "استخدم تنقيح PDF أو احذف المحتوى",
+              "المحتوى الظاهر والخصائص المخفية يحتاجان خطوتين مختلفتين"
+            ],
+            [
+              "فحص النسخة النهائية",
+              "افتح PDF وراجعه",
+              "التنزيل وحده لا يثبت جاهزية الملف"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "اختر الإجراء المناسب للمستند"
+        },
+        {
+          "t": "p",
+          "x": "قد يبدو الملف سليمًا لكنه يفتقد صفحة أو يحتوي تذييلًا مقطوعًا أو قيمة خاطئة أو مرفقًا غير مقصود. افحص الأسماء والتواريخ والمبالغ وترتيب الصفحات والتوقيعات والنص الصغير. إذا كان PDF ممسوحًا ضوئيًا أو غنيًا بالصور، فراجعه بتكبير عادي؛ البحث النصي لا يكشف كل ما يظهر على الصفحة."
+        },
+        {
+          "t": "h2",
+          "x": "راجع PDF ضمن سياقه"
+        },
+        {
+          "t": "p",
+          "x": "يقلل العمل المحلي عمليات النقل غير الضرورية، لكنه لا يحدد من ينبغي أن يستلم المستند ولا يجعل المحتوى الحساس آمنًا للمشاركة تلقائيًا. استخدم وجهة معتمدة وراجع المحتوى الظاهر واختر إجراء الخصوصية المناسب. يزيل التنقيح محتوى ظاهرًا عبر أداة مخصصة؛ وإزالة البيانات الوصفية تعالج خصائص الملف القياسية؛ والعلامة المائية الظاهرة مجرد تسمية. لإخفاء نص، استخدم [تنقيح PDF](/tools/redact-pdf)، لا أداة البيانات الوصفية وحدها."
+        },
+        {
+          "t": "h2",
+          "x": "احم الخصوصية دون مبالغة في الوعود"
+        },
+        {
+          "t": "p",
+          "x": "استخدم أسماء واضحة واحتفظ بالأصل حتى انتهاء المراجعة أو التسليم. إذا طلب المستلم تعديلًا، ارجع إلى المصدر وأنشئ نسخة جديدة بدلًا من تعديل ملف موزع دون سجل. يساعد ذلك على معرفة النسخة المعتمدة عند تداول عدة ملفات PDF."
+        },
+        {
+          "t": "h2",
+          "x": "اجعل الإصدارات واضحة"
+        },
+        {
+          "t": "p",
+          "x": "افتح النسخة النهائية قبل المشاركة أو الطباعة أو الأرشفة. تأكد من مطابقتها للمهمة وبقاء الأصل متاحًا للتصحيح. إذا كانت الحزمة تضم ملفات متعددة، راجع كل ملف قبل [دمج ملفات PDF](/tools/merge-pdf) أو إرسالها. فحص قصير أسرع عادةً من معالجة تسليم خاطئ."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكن إزالة اسم مؤلف PDF مجانًا؟",
+          "a": "نعم. الأداة مجانية ولا تحتاج إلى تسجيل ولا تضيف علامة مائية. تمسح الخصائص القياسية مثل المؤلف والعنوان وXMP الخاص بالمستند."
+        },
+        {
+          "q": "هل تغير الأداة الملف الأصلي؟",
+          "a": "لا. احتفظ بالمصدر ونزّل نسخة منفصلة. يسهّل ذلك مراجعة النتيجة وتصحيحها."
+        },
+        {
+          "q": "هل إزالة البيانات الوصفية عبر PrintxPDF خاصة؟",
+          "a": "تعمل الأداة محليًا في تبويب المتصفح ولا ترفع الملف. اتبع مع ذلك الإجراءات المعتمدة للمستندات المقيدة."
+        },
+        {
+          "q": "ما الذي أراجعه قبل مشاركة PDF؟",
+          "a": "راجع المحتوى الظاهر وترتيب الصفحات والأسماء والتواريخ والمبالغ والمستلم. لا تزيل الأداة تفاصيل الصور المضمنة أو التعليقات."
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "bn": {
+      "topic": "remove-pdf-author-before-sharing",
+      "slug": "remove-pdf-author-before-sharing",
+      "title": "শেয়ারের আগে PDF-এর লেখকের নাম কীভাবে সরাবেন",
+      "metaTitle": "শেয়ারের আগে PDF-এর লেখকের নাম কীভাবে সরাবেন",
+      "metaDescription": "ব্রাউজারেই PDF-এর লেখক মেটাডেটা বিনামূল্যে সরান। মূল ফাইল রাখুন, কপি পরীক্ষা করুন এবং শেয়ারের আগে প্রাপক নিশ্চিত করুন।",
+      "keyword": "শেয়ারের আগে PDF লেখক সরান",
+      "secondaryKeywords": [
+        "শেয়ারের আগে PDF লেখক সরান",
+        "PDF মেটাডেটা সরান",
+        "শেয়ারের আগে PDF গোপনীয়তা"
+      ],
+      "answer": "PDF শেয়ারের আগে লেখকের নাম সরাতে মূল ফাইলটি রাখুন, ডকুমেন্ট প্রপার্টি মুছতে উপযুক্ত টুল ব্যবহার করুন, আলাদা কপি ডাউনলোড করে পরীক্ষা করুন। PrintxPDF লেখক, শিরোনাম, অ্যাপ ও তারিখের মতো সাধারণ ফিল্ড এবং ডকুমেন্টের XMP সরায়। এমবেড করা ছবির বিবরণ বা মন্তব্য বদলায় না।",
+      "tool": "remove-metadata",
+      "ctaLabel": "মেটাডেটা সরান",
+      "body": [
+        {
+          "t": "p",
+          "x": "শেয়ারের কপি থেকে মূল ফাইল আলাদা রাখলে PDF-এর লেখকের নাম সরানো সহজ ও নিরাপদ হয়। আগে উৎস ফাইল রাখুন, [মেটাডেটা সরান](/tools/remove-metadata) দিয়ে সাধারণ প্রপার্টি মুছুন, আলাদা কপি ডাউনলোড করুন এবং পাঠানোর আগে পরীক্ষা করুন। টুলটি ব্রাউজার ট্যাবে স্থানীয়ভাবে চলে; ফাইল আপলোড হয় না।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF লেখকের মেটাডেটা কীভাবে সরাবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "মূল কপি সংরক্ষণ করুন",
+              "x": "PDF সম্পাদনা, রূপান্তর বা প্রস্তুত করার আগে অপরিবর্তিত ফাইল রাখুন।"
+            },
+            {
+              "h": "মেটাডেটা সরান খুলুন",
+              "x": "[মেটাডেটা সরান](/tools/remove-metadata) ব্যবহার করুন। এটি লেখক, শিরোনাম, অ্যাপ ও তারিখের সাধারণ ফিল্ড এবং ডকুমেন্ট-স্তরের XMP মুছে দেয়।"
+            },
+            {
+              "h": "শুধু প্রয়োজনীয় প্রপার্টি মুছুন",
+              "x": "যে পরিবর্তন চাওয়া হয়েছে সেটিই করুন। এমবেড করা ছবির EXIF বিবরণ বা মন্তব্য এই টুল সরায় না।"
+            },
+            {
+              "h": "আলাদা কপি ডাউনলোড করুন",
+              "x": "উদ্দেশ্য ও সংস্করণ বোঝায় এমন নাম দিন, যাতে মূল ফাইলের সঙ্গে গুলিয়ে না যায়।"
+            },
+            {
+              "h": "পাঠানোর আগে পরীক্ষা করুন",
+              "x": "ফাইল খুলে বিষয়বস্তু, পৃষ্ঠা ক্রম, নাম, তারিখ, অঙ্ক ও প্রাপক যাচাই করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "ট্যাবেই PDF-এর লেখক প্রপার্টি সরান। বিনামূল্যে, সাইনআপ নেই, ওয়াটারমার্ক নেই।"
+        },
+        {
+          "t": "h2",
+          "x": "কোন প্রপার্টি সরবে আর কোনটি থাকবে"
+        },
+        {
+          "t": "p",
+          "x": "মেটাডেটা সরানো PDF-এর সাধারণ ফিল্ড ও ডকুমেন্ট XMP পরিষ্কার করে। এমবেড করা ছবির বিবরণ ও মন্তব্য আলাদা ধাপ; এই টুলে সেগুলো মুছে না।"
+        },
+        {
+          "t": "h2",
+          "x": "ডকুমেন্টের জন্য সঠিক কাজ বেছে নিন"
+        },
+        {
+          "t": "table",
+          "head": [
+            "প্রয়োজন",
+            "কাজ",
+            "কারণ"
+          ],
+          "rows": [
+            [
+              "উৎস রেকর্ড রাখা",
+              "মূল ফাইল অক্ষত রাখা",
+              "প্রেক্ষিত ও ফিরিয়ে নেওয়ার সুযোগ থাকে"
+            ],
+            [
+              "লেখক ও সাধারণ প্রপার্টি মুছুন",
+              "মেটাডেটা সরান",
+              "সাধারণ প্রপার্টি ও ডকুমেন্ট XMP মুছে"
+            ],
+            [
+              "দৃশ্যমান ব্যক্তিগত তথ্য সরান",
+              "PDF Redact বা বিষয়বস্তু মুছুন",
+              "দৃশ্যমান লেখা ও লুকানো প্রপার্টির ধাপ আলাদা"
+            ],
+            [
+              "শেষ কপি যাচাই",
+              "PDF খুলে পরীক্ষা",
+              "ডাউনলোড হলেই প্রস্তুত প্রমাণ হয় না"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "ডকুমেন্টের জন্য সঠিক কাজ বেছে নিন"
+        },
+        {
+          "t": "p",
+          "x": "ফাইলটি প্রথমে ঠিক দেখালেও পৃষ্ঠা অনুপস্থিত, ফুটার কাটা, ভুল অঙ্ক বা অনিচ্ছাকৃত অ্যাটাচমেন্ট থাকতে পারে। নাম, তারিখ, অঙ্ক, পৃষ্ঠা ক্রম, স্বাক্ষর ও ছোট লেখা দেখুন। PDF স্ক্যান করা বা ছবিনির্ভর হলে স্বাভাবিক জুমে খুলে দেখুন; টেক্সট সার্চ পৃষ্ঠার সব দৃশ্যমান তথ্য ধরতে পারে না।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যবহারের প্রেক্ষিতে PDF পরীক্ষা করুন"
+        },
+        {
+          "t": "p",
+          "x": "স্থানীয় প্রসেসিং অপ্রয়োজনীয় ফাইল স্থানান্তর কমায়, কিন্তু কে ডকুমেন্ট পাবে তা নির্ধারণ করে না বা সংবেদনশীল বিষয়বস্তু শেয়ারের জন্য নিরাপদ বানায় না। অনুমোদিত গন্তব্য ব্যবহার করুন, দৃশ্যমান বিষয়বস্তু দেখুন এবং সঠিক গোপনীয়তা ব্যবস্থা নিন। Redact আলাদা প্রক্রিয়ায় দৃশ্যমান কনটেন্ট সরায়; মেটাডেটা অপসারণ সাধারণ ফাইল প্রপার্টি সামলায়; দৃশ্যমান ওয়াটারমার্ক শুধু লেবেল। লুকানোর মতো লেখা সরাতে [PDF Redact](/tools/redact-pdf) নিন, শুধু মেটাডেটা টুল নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "অতিরিক্ত প্রতিশ্রুতি ছাড়া গোপনীয়তা রক্ষা"
+        },
+        {
+          "t": "p",
+          "x": "স্পষ্ট নাম দিন এবং রিভিউ বা ডেলিভারি শেষ না হওয়া পর্যন্ত মূল কপি রাখুন। প্রাপক পরিবর্তন চাইলে মূল উৎসে ফিরে নতুন কপি তৈরি করুন; পাঠানো কপি নীরবে বদলাবেন না। এতে একাধিক PDF ঘুরলে অনুমোদিত সংস্করণ চেনা সহজ হয়।"
+        },
+        {
+          "t": "h2",
+          "x": "ফাইলের সংস্করণ স্পষ্ট রাখুন"
+        },
+        {
+          "t": "p",
+          "x": "শেয়ার, প্রিন্ট বা সংরক্ষণের আগে শেষ কপিটি খুলুন। কাজটি ঠিক হয়েছে এবং সংশোধনের জন্য মূল কপি আছে কি না নিশ্চিত করুন। একাধিক PDF-এর প্যাকেট হলে প্রতিটি পরীক্ষা করে তারপর [PDF একত্র করুন](/tools/merge-pdf) বা পাঠান। অল্প সময়ের যাচাই ভুল ডেলিভারি সামলানোর চেয়ে সহজ।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF লেখকের নাম বিনামূল্যে সরাতে পারি?",
+          "a": "হ্যাঁ। মেটাডেটা সরানো বিনামূল্যে, সাইনআপ লাগে না এবং ওয়াটারমার্ক যোগ করে না। লেখক, শিরোনাম ও ডকুমেন্ট XMP-এর মতো সাধারণ প্রপার্টি মুছে।"
+        },
+        {
+          "q": "টুলটি কি মূল ফাইল বদলে দেয়?",
+          "a": "না। উৎস ফাইল রেখে আলাদা আউটপুট নামান। এতে ফল পরীক্ষা ও সংশোধন সহজ হয়।"
+        },
+        {
+          "q": "PrintxPDF দিয়ে মেটাডেটা সরানো কি ব্যক্তিগত?",
+          "a": "টুলটি ব্রাউজার ট্যাবে স্থানীয়ভাবে চলে, ফাইল আপলোড করে না। সীমাবদ্ধ ডকুমেন্টে অনুমোদিত নিয়ম অনুসরণ করুন।"
+        },
+        {
+          "q": "শেয়ারের আগে কী পরীক্ষা করব?",
+          "a": "দৃশ্যমান বিষয়বস্তু, পৃষ্ঠা ক্রম, নাম, তারিখ, অঙ্ক ও প্রাপক দেখুন। এমবেড করা ছবির বিবরণ বা মন্তব্য টুলটি সরায় না।"
+        }
+      ],
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    }
+  }
+}
