@@ -9286,6 +9286,152 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "scan-to-searchable-pdf",
+        "slug": "scan-to-searchable-pdf",
+        "title": "Cómo escanear documentos a un PDF con búsqueda",
+        "metaTitle": "Cómo escanear documentos a un PDF con búsqueda",
+        "metaDescription": "Escanea páginas y crea un PDF con búsqueda gratis en tu navegador. Sin registro ni subida; revisa el texto OCR antes de compartir.",
+        "keyword": "escanear a PDF con búsqueda",
+        "secondaryKeywords": [
+          "escanear a PDF con búsqueda",
+          "OCR PDF gratis",
+          "buscar texto en PDF escaneado"
+        ],
+        "answer": "Para crear un PDF escaneado con búsqueda, captura o añade las páginas en Scan to PDF y después procesa el archivo con OCR PDF. El escáner crea el PDF dentro de tu navegador; OCR añade una capa de texto invisible para buscar y copiar. Revisa el texto reconocido: OCR puede confundir letras si la imagen está torcida o borrosa.",
+        "tool": "scan-to-pdf",
+        "ctaLabel": "Escanear a PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Para crear un PDF escaneado con búsqueda, captura o añade las páginas en Scan to PDF y después procesa el archivo con OCR PDF. El escáner crea el PDF dentro de tu navegador; OCR añade una capa de texto invisible para buscar y copiar. Revisa el texto reconocido: OCR puede confundir letras si la imagen está torcida o borrosa."
+          },
+          {
+            "t": "h2",
+            "x": "Prepara las páginas"
+          },
+          {
+            "t": "p",
+            "x": "Un escaneo hecho con cámara suele guardar cada página como imagen. Aunque puedas leer las palabras en pantalla, el PDF no necesariamente permite buscarlas o copiarlas. Para hacerlo searchable, usa Scan to PDF para crear el archivo y OCR PDF para reconocer el texto impreso y añadir una capa invisible sobre la imagen."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo escanear y crear un PDF searchable"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Captura o añade las páginas",
+                "x": "Abre [Scan to PDF](/tools/scan-to-pdf), permite la cámara o añade fotos existentes. Reordena las páginas y guarda el PDF."
+              },
+              {
+                "h": "Abre OCR PDF",
+                "x": "Añade el PDF escaneado en [OCR PDF](/tools/ocr-pdf). En el plan gratis se procesan hasta 30 páginas por archivo."
+              },
+              {
+                "h": "Elige el idioma correcto",
+                "x": "Selecciona el idioma del texto impreso para mejorar el reconocimiento. La primera vez se descarga un paquete de idioma que queda guardado para la próxima sesión."
+              },
+              {
+                "h": "Ejecuta y revisa OCR",
+                "x": "Inicia el reconocimiento y busca errores de letras, números y acentos. El texto pequeño o una captura torcida reduce la precisión."
+              },
+              {
+                "h": "Descarga los dos resultados",
+                "x": "Guarda el PDF con capa de texto y el archivo TXT. Conserva también el escaneo original."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "Escanear a PDF. Gratis, privado en tu pestaña y sin registro."
+          },
+          {
+            "t": "h2",
+            "x": "Comparación: escaneo simple y PDF con OCR"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Herramienta",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Capturar páginas",
+                "Scan to PDF",
+                "PDF de imágenes local, sin subir."
+              ],
+              [
+                "Buscar texto impreso",
+                "OCR PDF",
+                "Añade una capa de texto invisible."
+              ],
+              [
+                "Buscar bengalí, árabe o chino",
+                "Archivo TXT",
+                "La fuente PDF puede limitar la búsqueda."
+              ],
+              [
+                "Guardar evidencia original",
+                "Conservar el escaneo",
+                "Permite revisar el texto reconocido."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Qué ocurre con tus archivos"
+          },
+          {
+            "t": "p",
+            "x": "Abre [Scan to PDF](/tools/scan-to-pdf) desde un teléfono o computadora. Captura cada página con la cámara o añade fotos que ya tengas, ordénalas y crea un PDF. La captura, las imágenes y el archivo final se procesan en la pestaña del navegador; nada se sube. Después, abre [OCR PDF](/tools/ocr-pdf) y añade el escaneo. OCR también acepta PDF, PNG y JPG."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo comprobar el resultado"
+          },
+          {
+            "t": "p",
+            "x": "En OCR PDF, elige el idioma que aparece en la página y ejecuta el reconocimiento. La primera vez se descarga un paquete de idioma de unos 10 MB; queda guardado localmente para usos posteriores. El plan gratis procesa hasta 30 páginas por PDF y Pro hasta 200. Revisa el texto que aparece en pantalla: páginas torcidas, letra diminuta, bajo contraste o impresión débil pueden producir errores."
+          },
+          {
+            "t": "p",
+            "x": "OCR crea dos archivos: un TXT con el texto reconocido y un PDF searchable que conserva la imagen y añade texto invisible alineado. En bengalí, árabe y chino, la fuente estándar del texto oculto limita la búsqueda dentro del PDF; usa el TXT para buscar y copiar esas escrituras. Conserva el escaneo original: el PDF searchable es una copia reconstruida y no mantiene necesariamente enlaces, marcadores ni campos rellenables."
+          },
+          {
+            "t": "h2",
+            "x": "Conserva una copia de cada formato"
+          },
+          {
+            "t": "p",
+            "x": "Antes de compartir, revisa páginas y texto. Corrige mentalmente los errores de reconocimiento y confirma nombres, fechas y cantidades contra la imagen. La herramienta funciona localmente, sin subir tu escaneo; el paquete de idioma se descarga una vez. Si el documento contiene escritura manuscrita, OCR no es fiable. Para archivar o enviar el documento, conserva el original junto al PDF searchable y al TXT."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Un escaneo a PDF se puede buscar automáticamente?",
+            "a": "No siempre. Una captura puede ser solo una imagen dentro del PDF. Pasa el archivo por OCR para añadir texto reconocible; después revisa el resultado porque el reconocimiento puede confundir caracteres."
+          },
+          {
+            "q": "¿El OCR sube mi documento a un servidor?",
+            "a": "No. Scan to PDF y OCR PDF trabajan dentro de la pestaña del navegador. OCR descarga un paquete de idioma una vez, pero el documento escaneado permanece en tu dispositivo."
+          },
+          {
+            "q": "¿Cuántas páginas se procesan gratis?",
+            "a": "OCR PDF procesa hasta 30 páginas por archivo en el plan gratis y hasta 200 en Pro. Para un archivo más largo, divide el PDF y reconoce cada parte."
+          },
+          {
+            "q": "¿Puedo buscar en bengalí, árabe o chino dentro del PDF OCR?",
+            "a": "El archivo TXT incluye el texto reconocido completo, pero la fuente estándar de la capa oculta del PDF limita la búsqueda en algunos sistemas de escritura, incluidos bengalí, árabe y chino. Usa el TXT para buscar esas palabras."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -18566,6 +18712,152 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "scan-to-searchable-pdf",
+        "slug": "scan-to-searchable-pdf",
+        "title": "Como digitalizar documentos para criar um PDF pesquisável",
+        "metaTitle": "Como digitalizar documentos para criar um PDF pesquisável",
+        "metaDescription": "Digitalize páginas e crie um PDF pesquisável grátis no navegador. Sem cadastro ou envio; revise o texto do OCR antes de compartilhar.",
+        "keyword": "digitalizar para PDF pesquisável",
+        "secondaryKeywords": [
+          "digitalizar para PDF pesquisável",
+          "OCR PDF grátis",
+          "pesquisar texto em PDF digitalizado"
+        ],
+        "answer": "Para criar um PDF digitalizado com busca, capture ou adicione as páginas no Scan para PDF e depois processe o arquivo no OCR PDF. O scanner cria o PDF no navegador; o OCR adiciona uma camada invisível de texto para pesquisar e copiar. Revise o texto reconhecido: imagens tortas ou borradas podem gerar erros.",
+        "tool": "scan-to-pdf",
+        "ctaLabel": "Digitalizar para PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Para criar um PDF digitalizado com busca, capture ou adicione as páginas no Scan para PDF e depois processe o arquivo no OCR PDF. O scanner cria o PDF no navegador; o OCR adiciona uma camada invisível de texto para pesquisar e copiar. Revise o texto reconhecido: imagens tortas ou borradas podem gerar erros."
+          },
+          {
+            "t": "h2",
+            "x": "Prepare as páginas"
+          },
+          {
+            "t": "p",
+            "x": "Uma digitalização feita com câmera costuma guardar cada página como imagem. Mesmo que as palavras estejam visíveis, o PDF talvez não permita pesquisar ou copiar. Para deixá-lo pesquisável, use Scan para PDF para criar o arquivo e OCR PDF para reconhecer o texto impresso e adicionar uma camada invisível sobre a imagem."
+          },
+          {
+            "t": "h2",
+            "x": "Como digitalizar e criar um PDF pesquisável"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Capture ou adicione as páginas",
+                "x": "Abra [Scan para PDF](/tools/scan-to-pdf), permita o uso da câmera ou adicione fotos existentes. Reordene as páginas e salve o PDF."
+              },
+              {
+                "h": "Abra o OCR PDF",
+                "x": "Adicione o PDF digitalizado em [OCR PDF](/tools/ocr-pdf). No plano grátis, são processadas até 30 páginas por arquivo."
+              },
+              {
+                "h": "Escolha o idioma correto",
+                "x": "Selecione o idioma do texto impresso para melhorar o reconhecimento. Na primeira vez, um pacote de idioma é baixado e fica salvo para a próxima sessão."
+              },
+              {
+                "h": "Execute e revise o OCR",
+                "x": "Inicie o reconhecimento e procure erros em letras, números e acentos. Texto pequeno ou imagem inclinada reduz a precisão."
+              },
+              {
+                "h": "Baixe os dois resultados",
+                "x": "Salve o PDF com camada de texto e o arquivo TXT. Guarde também a digitalização original."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "Digitalizar para PDF. Grátis, privado na sua aba e sem cadastro."
+          },
+          {
+            "t": "h2",
+            "x": "Comparação: digitalização simples e PDF com OCR"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Ferramenta",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Capturar páginas",
+                "Scan para PDF",
+                "PDF de imagens local, sem envio."
+              ],
+              [
+                "Pesquisar texto impresso",
+                "OCR PDF",
+                "Adiciona uma camada invisível de texto."
+              ],
+              [
+                "Pesquisar bengali, árabe ou chinês",
+                "Arquivo TXT",
+                "A fonte do PDF pode limitar a busca."
+              ],
+              [
+                "Guardar o original",
+                "Manter a digitalização",
+                "Permite conferir o texto reconhecido."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "O que acontece com seus arquivos"
+          },
+          {
+            "t": "p",
+            "x": "Abra [Scan para PDF](/tools/scan-to-pdf) no celular ou computador. Capture cada página com a câmera ou adicione fotos existentes, organize-as e crie um PDF. A captura, as imagens e o arquivo final são processados na aba do navegador; nada é enviado. Depois, abra [OCR PDF](/tools/ocr-pdf) e adicione a digitalização. O OCR também aceita PDF, PNG e JPG."
+          },
+          {
+            "t": "h2",
+            "x": "Como conferir o resultado"
+          },
+          {
+            "t": "p",
+            "x": "No OCR PDF, escolha o idioma impresso no documento e execute o reconhecimento. Na primeira vez, um pacote de idioma de cerca de 10 MB é baixado; ele fica salvo localmente para usos seguintes. O plano grátis processa até 30 páginas por PDF e o Pro até 200. Revise o texto exibido: páginas tortas, letras pequenas, pouco contraste ou impressão fraca podem causar erros."
+          },
+          {
+            "t": "p",
+            "x": "O OCR cria dois arquivos: um TXT com o texto reconhecido e um PDF pesquisável que preserva a imagem e adiciona texto invisível alinhado. Em bengali, árabe e chinês, a fonte padrão do texto oculto limita a busca dentro do PDF; use o TXT para pesquisar e copiar esses alfabetos. Guarde a digitalização original: o PDF pesquisável é uma cópia reconstruída e pode não manter links, marcadores ou campos preenchíveis."
+          },
+          {
+            "t": "h2",
+            "x": "Guarde uma cópia de cada formato"
+          },
+          {
+            "t": "p",
+            "x": "Antes de compartilhar, confira as páginas e o texto. Verifique nomes, datas e valores comparando com a imagem. A ferramenta funciona localmente, sem enviar a digitalização; o pacote de idioma é baixado uma vez. Para escrita manual, o OCR não é confiável. Ao arquivar ou enviar, mantenha o original junto do PDF pesquisável e do TXT."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Uma digitalização em PDF já permite pesquisar o texto?",
+            "a": "Nem sempre. A captura pode ser apenas uma imagem dentro do PDF. Use o OCR para adicionar texto reconhecível e revise o resultado, pois alguns caracteres podem ser confundidos."
+          },
+          {
+            "q": "O OCR envia meu documento para um servidor?",
+            "a": "Não. Scan para PDF e OCR PDF funcionam dentro da aba do navegador. O OCR baixa um pacote de idioma uma vez, mas a digitalização permanece no seu dispositivo."
+          },
+          {
+            "q": "Quantas páginas posso processar grátis?",
+            "a": "O OCR PDF processa até 30 páginas por arquivo no plano grátis e até 200 no Pro. Para um arquivo maior, divida o PDF e reconheça cada parte."
+          },
+          {
+            "q": "Posso pesquisar em bengali, árabe ou chinês dentro do PDF?",
+            "a": "O TXT contém todo o texto reconhecido, mas a fonte padrão da camada oculta do PDF limita a busca em alguns alfabetos, incluindo bengali, árabe e chinês. Use o TXT para pesquisar esses idiomas."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -27842,6 +28134,152 @@
           {
             "q": "PDF to PPT की सीमाएँ क्या हैं?",
             "a": "टूल 100 MB तक की एक PDF लेता है और एक रूपांतरण में दो मिनट तक लग सकते हैं। मुफ्त उपयोग में हर महीने पाँच सर्वर रूपांतरण शामिल हैं।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "scan-to-searchable-pdf",
+        "slug": "scan-to-searchable-pdf",
+        "title": "स्कैन किए दस्तावेज़ का खोजने योग्य PDF कैसे बनाएँ",
+        "metaTitle": "स्कैन किए दस्तावेज़ का खोजने योग्य PDF कैसे बनाएँ",
+        "metaDescription": "ब्राउज़र में पेज स्कैन करके खोजने योग्य PDF बनाएँ। मुफ्त, बिना साइनअप या अपलोड; साझा करने से पहले OCR टेक्स्ट जाँचें।",
+        "keyword": "स्कैन को खोजने योग्य PDF बनाना",
+        "secondaryKeywords": [
+          "स्कैन को खोजने योग्य PDF बनाना",
+          "मुफ्त OCR PDF",
+          "स्कैन PDF में टेक्स्ट खोजें"
+        ],
+        "answer": "खोजने योग्य स्कैन PDF बनाने के लिए Scan to PDF में पेज कैप्चर करें या फ़ोटो जोड़ें, फिर फ़ाइल को OCR PDF में चलाएँ। स्कैन टूल ब्राउज़र में PDF बनाता है; OCR खोज और कॉपी करने के लिए अदृश्य टेक्स्ट लेयर जोड़ता है। पहचाना हुआ टेक्स्ट जाँचें—टेढ़ी या धुंधली छवि से गलतियाँ हो सकती हैं।",
+        "tool": "scan-to-pdf",
+        "ctaLabel": "PDF स्कैन करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "खोजने योग्य स्कैन PDF बनाने के लिए Scan to PDF में पेज कैप्चर करें या फ़ोटो जोड़ें, फिर फ़ाइल को OCR PDF में चलाएँ। स्कैन टूल ब्राउज़र में PDF बनाता है; OCR खोज और कॉपी करने के लिए अदृश्य टेक्स्ट लेयर जोड़ता है। पहचाना हुआ टेक्स्ट जाँचें—टेढ़ी या धुंधली छवि से गलतियाँ हो सकती हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "पेज तैयार करें"
+          },
+          {
+            "t": "p",
+            "x": "कैमरे से स्कैन करने पर अक्सर हर पेज एक छवि के रूप में सहेजा जाता है। शब्द दिखने के बावजूद PDF में उन्हें खोजना या कॉपी करना संभव नहीं हो सकता। इसे searchable बनाने के लिए Scan to PDF से फ़ाइल बनाएँ और OCR PDF से प्रिंटेड टेक्स्ट पहचानकर छवि के ऊपर अदृश्य टेक्स्ट लेयर जोड़ें।"
+          },
+          {
+            "t": "h2",
+            "x": "स्कैन करके searchable PDF कैसे बनाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "पेज कैप्चर या जोड़ें",
+                "x": "[Scan to PDF](/tools/scan-to-pdf) खोलें, कैमरा अनुमति दें या मौजूदा फ़ोटो जोड़ें। पेज क्रम में लगाएँ और PDF सहेजें।"
+              },
+              {
+                "h": "OCR PDF खोलें",
+                "x": "स्कैन PDF को [OCR PDF](/tools/ocr-pdf) में जोड़ें। मुफ्त प्लान में एक PDF के 30 पेज तक प्रोसेस होते हैं।"
+              },
+              {
+                "h": "सही भाषा चुनें",
+                "x": "प्रिंटेड टेक्स्ट की भाषा चुनें ताकि पहचान बेहतर हो। पहली बार भाषा पैक डाउनलोड होगा और अगली बार के लिए सहेजा रहेगा।"
+              },
+              {
+                "h": "OCR चलाएँ और जाँचें",
+                "x": "पहचान शुरू करें और अक्षर, संख्या व मात्राओं की गलतियाँ देखें। छोटा टेक्स्ट या टेढ़ी छवि सटीकता घटाती है।"
+              },
+              {
+                "h": "दोनों परिणाम डाउनलोड करें",
+                "x": "टेक्स्ट लेयर वाला PDF और TXT फ़ाइल सहेजें। मूल स्कैन भी रखें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "PDF स्कैन करें. मुफ्त, आपके टैब में निजी और बिना साइनअप।"
+          },
+          {
+            "t": "h2",
+            "x": "तुलना: साधारण स्कैन और OCR PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "लक्ष्य",
+              "टूल",
+              "नतीजा"
+            ],
+            "rows": [
+              [
+                "पेज कैप्चर",
+                "Scan to PDF",
+                "स्थानीय छवि PDF, अपलोड नहीं।"
+              ],
+              [
+                "छपे शब्द खोजें",
+                "OCR PDF",
+                "अदृश्य टेक्स्ट लेयर जोड़ता है।"
+              ],
+              [
+                "बांग्ला, अरबी या चीनी खोजें",
+                "TXT फ़ाइल",
+                "PDF फ़ॉन्ट खोज सीमित कर सकता है।"
+              ],
+              [
+                "मूल प्रमाण रखें",
+                "स्कैन सुरक्षित रखें",
+                "पहचाने टेक्स्ट की जाँच संभव।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "आपकी फ़ाइलों के साथ क्या होता है"
+          },
+          {
+            "t": "p",
+            "x": "फ़ोन या कंप्यूटर पर [Scan to PDF](/tools/scan-to-pdf) खोलें। कैमरे से हर पेज कैप्चर करें या पहले से ली गई तस्वीरें जोड़ें, क्रम ठीक करें और PDF बनाएँ। कैमरा कैप्चर, तस्वीरें और अंतिम PDF ब्राउज़र टैब में ही प्रोसेस होते हैं; कुछ अपलोड नहीं होता। फिर [OCR PDF](/tools/ocr-pdf) खोलकर स्कैन जोड़ें। OCR PDF, PNG और JPG भी स्वीकार करता है।"
+          },
+          {
+            "t": "h2",
+            "x": "नतीजा कैसे जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "OCR PDF में दस्तावेज़ पर छपी भाषा चुनकर पहचान चलाएँ। पहली बार लगभग 10 MB का भाषा पैक डाउनलोड होता है और बाद के लिए स्थानीय रूप से सहेजा जाता है। मुफ्त प्लान प्रति PDF 30 पेज और Pro 200 पेज तक प्रोसेस करता है। स्क्रीन पर पहचाना टेक्स्ट पढ़ें: टेढ़े पेज, बहुत छोटे अक्षर, कम कंट्रास्ट या हल्की छपाई से गलतियाँ हो सकती हैं।"
+          },
+          {
+            "t": "p",
+            "x": "OCR दो फ़ाइलें देता है: पहचाने टेक्स्ट वाला TXT और स्कैन की छवि के ऊपर संरेखित अदृश्य टेक्स्ट वाला searchable PDF। बांग्ला, अरबी और चीनी में छिपे टेक्स्ट का मानक फ़ॉन्ट PDF के भीतर खोज सीमित कर सकता है; इन लिपियों के लिए TXT में खोजें और कॉपी करें। मूल स्कैन रखें क्योंकि searchable PDF दोबारा बनाया गया संस्करण है और लिंक, बुकमार्क या फ़ॉर्म फ़ील्ड सुरक्षित न रखे।"
+          },
+          {
+            "t": "h2",
+            "x": "हर फ़ॉर्मैट की प्रति रखें"
+          },
+          {
+            "t": "p",
+            "x": "साझा करने से पहले पेज और टेक्स्ट दोनों जाँचें। नाम, तारीख और रकम को मूल छवि से मिलाएँ। OCR स्थानीय रूप से चलता है और स्कैन अपलोड नहीं होता; भाषा पैक एक बार डाउनलोड होता है। हस्तलिपि के लिए OCR भरोसेमंद नहीं है। संग्रह या वितरण में मूल स्कैन, searchable PDF और TXT को साथ रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या PDF स्कैन करते ही उसमें खोज संभव होती है?",
+            "a": "हमेशा नहीं। कैमरा स्कैन PDF में केवल छवियाँ हो सकती हैं। पहचानने योग्य टेक्स्ट लेयर जोड़ने के लिए OCR चलाएँ और परिणाम जाँचें, क्योंकि कुछ अक्षर गलत पहचाने जा सकते हैं।"
+          },
+          {
+            "q": "क्या OCR मेरा दस्तावेज़ सर्वर पर भेजता है?",
+            "a": "नहीं। Scan to PDF और OCR PDF ब्राउज़र टैब में चलते हैं। OCR एक भाषा पैक डाउनलोड करता है, लेकिन स्कैन दस्तावेज़ आपके डिवाइस पर रहता है।"
+          },
+          {
+            "q": "मुफ्त में कितने पेज प्रोसेस कर सकता हूँ?",
+            "a": "मुफ्त प्लान में OCR PDF एक फ़ाइल के 30 पेज तक और Pro में 200 पेज तक प्रोसेस करता है। बड़ी फ़ाइल को पहले भागों में बाँटें।"
+          },
+          {
+            "q": "क्या PDF के भीतर बांग्ला, अरबी या चीनी खोज सकता हूँ?",
+            "a": "TXT में पहचाना हुआ पूरा टेक्स्ट होता है, लेकिन PDF की छिपी लेयर का मानक फ़ॉन्ट बांग्ला, अरबी और चीनी जैसी लिपियों की खोज सीमित कर सकता है। इन भाषाओं के लिए TXT इस्तेमाल करें।"
           }
         ],
         "published": "2026-11-16",
@@ -37131,6 +37569,152 @@
           {
             "q": "ما حدود أداة PDF إلى PPT؟",
             "a": "تقبل الأداة PDF واحدًا حتى 100 ميغابايت وقد تستغرق العملية دقيقتين. يشمل الاستخدام المجاني خمس عمليات تحويل على الخادم شهريًا."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "scan-to-searchable-pdf",
+        "slug": "scan-to-searchable-pdf",
+        "title": "كيفية إنشاء PDF ممسوح ضوئيًا قابل للبحث",
+        "metaTitle": "كيفية إنشاء PDF ممسوح ضوئيًا قابل للبحث",
+        "metaDescription": "امسح الصفحات وأنشئ PDF قابلًا للبحث داخل المتصفح مجانًا. لا يلزم التسجيل أو رفع الملف؛ راجع النص المستخرج باستخدام OCR قبل مشاركة المستند.",
+        "keyword": "إنشاء PDF ممسوح قابل للبحث",
+        "secondaryKeywords": [
+          "إنشاء PDF ممسوح قابل للبحث",
+          "OCR PDF مجاني",
+          "البحث في PDF ممسوح"
+        ],
+        "answer": "لإنشاء PDF ممسوح قابل للبحث، التقط الصفحات أو أضف صورها في Scan to PDF ثم عالج الملف باستخدام OCR PDF. ينشئ الماسح PDF داخل المتصفح؛ ويضيف OCR طبقة نص غير مرئية للبحث والنسخ. راجع النص المستخرج، فقد تسبب الصورة المائلة أو غير الواضحة أخطاء.",
+        "tool": "scan-to-pdf",
+        "ctaLabel": "مسح إلى PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "لإنشاء PDF ممسوح قابل للبحث، التقط الصفحات أو أضف صورها في Scan to PDF ثم عالج الملف باستخدام OCR PDF. ينشئ الماسح PDF داخل المتصفح؛ ويضيف OCR طبقة نص غير مرئية للبحث والنسخ. راجع النص المستخرج، فقد تسبب الصورة المائلة أو غير الواضحة أخطاء."
+          },
+          {
+            "t": "h2",
+            "x": "جهّز الصفحات"
+          },
+          {
+            "t": "p",
+            "x": "غالبًا ما يحفظ المسح بالكاميرا كل صفحة كصورة. قد تتمكن من قراءة الكلمات لكن لا تستطيع البحث عنها أو نسخها من PDF. لجعله قابلًا للبحث، أنشئ الملف باستخدام Scan to PDF ثم استخدم OCR PDF للتعرف على النص المطبوع وإضافة طبقة غير مرئية فوق الصورة."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية المسح وإنشاء PDF قابل للبحث"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "التقط الصفحات أو أضفها",
+                "x": "افتح [Scan to PDF](/tools/scan-to-pdf)، واسمح بالكاميرا أو أضف صورًا موجودة. رتّب الصفحات واحفظ PDF."
+              },
+              {
+                "h": "افتح OCR PDF",
+                "x": "أضف PDF الممسوح إلى [OCR PDF](/tools/ocr-pdf). تعالج الخطة المجانية حتى 30 صفحة لكل ملف."
+              },
+              {
+                "h": "اختر اللغة الصحيحة",
+                "x": "حدد لغة النص المطبوع لتحسين التعرف. يُنزّل حزمة اللغة في المرة الأولى وتُحفظ للاستخدام التالي."
+              },
+              {
+                "h": "شغّل OCR وراجع النص",
+                "x": "ابدأ التعرف وابحث عن أخطاء الحروف والأرقام والتشكيل. يقلل النص الصغير أو الصورة المائلة الدقة."
+              },
+              {
+                "h": "نزّل النتيجتين",
+                "x": "احفظ PDF بطبقة النص وملف TXT. واحتفظ بالمسح الأصلي أيضًا."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "مسح إلى PDF. مجانًا وبخصوصية داخل علامة التبويب ودون تسجيل."
+          },
+          {
+            "t": "h2",
+            "x": "مقارنة: مسح عادي وPDF مع OCR"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الهدف",
+              "الأداة",
+              "النتيجة"
+            ],
+            "rows": [
+              [
+                "التقاط الصفحات",
+                "Scan to PDF",
+                "PDF صور محلي بلا رفع."
+              ],
+              [
+                "البحث عن النص المطبوع",
+                "OCR PDF",
+                "يضيف طبقة نص غير مرئية."
+              ],
+              [
+                "البحث بالبنغالية أو العربية أو الصينية",
+                "ملف TXT",
+                "قد يحد خط PDF من البحث."
+              ],
+              [
+                "حفظ الأصل",
+                "احتفظ بالمسح",
+                "يسمح بمراجعة النص المستخرج."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ماذا يحدث لملفاتك"
+          },
+          {
+            "t": "p",
+            "x": "افتح [Scan to PDF](/tools/scan-to-pdf) على الهاتف أو الكمبيوتر. التقط الصفحات بالكاميرا أو أضف صورًا موجودة، ورتبها ثم أنشئ PDF. تتم معالجة اللقطات والصور والملف النهائي داخل علامة تبويب المتصفح؛ ولا يتم رفع شيء. بعد ذلك افتح [OCR PDF](/tools/ocr-pdf) وأضف المسح. يقبل OCR أيضًا PDF وPNG وJPG."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية التحقق من النتيجة"
+          },
+          {
+            "t": "p",
+            "x": "في OCR PDF، اختر لغة النص المطبوع وشغّل التعرف. تُنزّل حزمة لغة بحجم يقارب 10 ميغابايت في المرة الأولى وتُحفظ محليًا للاستخدام لاحقًا. تعالج الخطة المجانية حتى 30 صفحة لكل PDF وPro حتى 200. راجع النص الظاهر: قد تسبب الصفحات المائلة أو الأحرف الصغيرة أو التباين الضعيف أخطاء."
+          },
+          {
+            "t": "p",
+            "x": "ينتج OCR ملفين: TXT بالنص المتعرف عليه وPDF قابلًا للبحث يحتفظ بالصورة ويضيف نصًا غير مرئي بمحاذاتها. في البنغالية والعربية والصينية، يحد الخط القياسي للطبقة المخفية من البحث داخل PDF؛ استخدم TXT للبحث والنسخ بهذه اللغات. احتفظ بالمسح الأصلي، فـ PDF الناتج نسخة معاد بناؤها وقد لا يحتفظ بالروابط أو الإشارات المرجعية أو حقول النماذج."
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بنسخة من كل صيغة"
+          },
+          {
+            "t": "p",
+            "x": "قبل المشاركة، راجع الصفحات والنص. تحقق من الأسماء والتواريخ والمبالغ بمقارنتها بالصورة. تعمل الأدوات محليًا ولا ترفع المسح؛ وتُنزّل حزمة اللغة مرة واحدة. لا يعتمد على OCR للتعرف على الكتابة اليدوية. للأرشفة أو الإرسال، احتفظ بالمسح الأصلي وPDF القابل للبحث وملف TXT معًا."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يصبح PDF قابلًا للبحث بمجرد مسحه؟",
+            "a": "ليس دائمًا. قد يحتوي PDF الملتقط بالكاميرا على صور فقط. شغّل OCR لإضافة طبقة نص يمكن التعرف عليها ثم راجع النتيجة، فقد يخلط التعرف بين بعض الحروف."
+          },
+          {
+            "q": "هل يرفع OCR المستند إلى خادم؟",
+            "a": "لا. يعمل Scan to PDF وOCR PDF داخل علامة تبويب المتصفح. ينزّل OCR حزمة لغة مرة واحدة، لكن المستند الممسوح يبقى على جهازك."
+          },
+          {
+            "q": "كم صفحة يمكنني معالجتها مجانًا؟",
+            "a": "تعالج OCR PDF حتى 30 صفحة لكل ملف في الخطة المجانية و200 صفحة في Pro. قسّم الملف الأطول إلى أجزاء أولًا."
+          },
+          {
+            "q": "هل يمكن البحث بالعربية أو البنغالية أو الصينية داخل PDF؟",
+            "a": "يحتوي TXT على النص المتعرف عليه كاملًا، لكن الخط القياسي للطبقة المخفية في PDF يحد البحث في بعض الكتابات، ومنها العربية والبنغالية والصينية. استخدم TXT للبحث في هذه اللغات."
           }
         ],
         "published": "2026-11-16",
@@ -46427,6 +47011,152 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "scan-to-searchable-pdf",
+        "slug": "scan-to-searchable-pdf",
+        "title": "স্ক্যান করা নথিকে খোঁজার উপযোগী PDF করবেন যেভাবে",
+        "metaTitle": "স্ক্যান করা নথিকে খোঁজার উপযোগী PDF করবেন যেভাবে",
+        "metaDescription": "ব্রাউজারে পৃষ্ঠা স্ক্যান করে খোঁজার উপযোগী PDF বানান। বিনামূল্যে, সাইনআপ বা আপলোড নেই; শেয়ারের আগে OCR লেখা দেখুন।",
+        "keyword": "স্ক্যান থেকে searchable PDF তৈরি",
+        "secondaryKeywords": [
+          "স্ক্যান থেকে searchable PDF তৈরি",
+          "বিনামূল্যে OCR PDF",
+          "স্ক্যান PDF-এ লেখা খোঁজা"
+        ],
+        "answer": "খোঁজার উপযোগী স্ক্যান PDF বানাতে Scan to PDF-এ পৃষ্ঠা ক্যাপচার বা ছবি যোগ করুন, তারপর OCR PDF দিয়ে ফাইলটি প্রক্রিয়া করুন। স্ক্যানার ব্রাউজারে PDF বানায়; OCR খোঁজা ও কপি করার জন্য অদৃশ্য টেক্সট স্তর যোগ করে। শনাক্ত লেখা যাচাই করুন—বাঁকা বা ঝাপসা ছবিতে ভুল হতে পারে।",
+        "tool": "scan-to-pdf",
+        "ctaLabel": "PDF স্ক্যান করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "খোঁজার উপযোগী স্ক্যান PDF বানাতে Scan to PDF-এ পৃষ্ঠা ক্যাপচার বা ছবি যোগ করুন, তারপর OCR PDF দিয়ে ফাইলটি প্রক্রিয়া করুন। স্ক্যানার ব্রাউজারে PDF বানায়; OCR খোঁজা ও কপি করার জন্য অদৃশ্য টেক্সট স্তর যোগ করে। শনাক্ত লেখা যাচাই করুন—বাঁকা বা ঝাপসা ছবিতে ভুল হতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "পৃষ্ঠা প্রস্তুত করুন"
+          },
+          {
+            "t": "p",
+            "x": "ক্যামেরায় স্ক্যান করলে প্রায়ই প্রতিটি পৃষ্ঠা ছবি হিসেবে PDF-এ থাকে। চোখে শব্দ পড়লেও সেগুলো খোঁজা বা কপি করা নাও যেতে পারে। searchable করতে Scan to PDF দিয়ে ফাইল বানান, তারপর OCR PDF দিয়ে ছাপা লেখা চিনে ছবির ওপর অদৃশ্য টেক্সট স্তর বসান।"
+          },
+          {
+            "t": "h2",
+            "x": "স্ক্যান করে searchable PDF বানানোর উপায়"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "পৃষ্ঠা ক্যাপচার বা যোগ করুন",
+                "x": "[Scan to PDF](/tools/scan-to-pdf) খুলুন, ক্যামেরা অনুমতি দিন বা আগের ছবি যোগ করুন। পৃষ্ঠা সাজিয়ে PDF সংরক্ষণ করুন।"
+              },
+              {
+                "h": "OCR PDF খুলুন",
+                "x": "স্ক্যান PDF [OCR PDF](/tools/ocr-pdf)-এ দিন। বিনামূল্যের প্ল্যানে প্রতি ফাইলে ৩০ পৃষ্ঠা পর্যন্ত প্রক্রিয়া হয়।"
+              },
+              {
+                "h": "সঠিক ভাষা বাছুন",
+                "x": "প্রিন্ট করা লেখার ভাষা বাছলে শনাক্তকরণ ভালো হয়। প্রথমবার ভাষা প্যাক নামবে এবং পরের ব্যবহারের জন্য সংরক্ষিত থাকবে।"
+              },
+              {
+                "h": "OCR চালিয়ে যাচাই করুন",
+                "x": "শনাক্তকরণ শুরু করে অক্ষর, সংখ্যা ও চিহ্নের ভুল দেখুন। ছোট লেখা বা বাঁকা ছবি নির্ভুলতা কমায়।"
+              },
+              {
+                "h": "দুই ফলই ডাউনলোড করুন",
+                "x": "টেক্সট স্তরসহ PDF এবং TXT ফাইল রাখুন। মূল স্ক্যানও সংরক্ষণ করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "PDF স্ক্যান করুন. বিনামূল্যে, ট্যাবে ব্যক্তিগত ও সাইনআপ ছাড়া।"
+          },
+          {
+            "t": "h2",
+            "x": "তুলনা: সাধারণ স্ক্যান ও OCR PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "লক্ষ্য",
+              "টুল",
+              "ফল"
+            ],
+            "rows": [
+              [
+                "পৃষ্ঠা ক্যাপচার",
+                "Scan to PDF",
+                "স্থানীয় ছবির PDF, আপলোড নয়।"
+              ],
+              [
+                "ছাপা লেখা খোঁজা",
+                "OCR PDF",
+                "অদৃশ্য টেক্সট স্তর যোগ করে।"
+              ],
+              [
+                "বাংলা, আরবি বা চীনা খোঁজা",
+                "TXT ফাইল",
+                "PDF ফন্টে খোঁজা সীমিত হতে পারে।"
+              ],
+              [
+                "মূল কপি রাখা",
+                "স্ক্যান সংরক্ষণ",
+                "চেনা লেখা যাচাই করা যায়।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "আপনার ফাইলের সঙ্গে কী হয়"
+          },
+          {
+            "t": "p",
+            "x": "ফোন বা কম্পিউটারে [Scan to PDF](/tools/scan-to-pdf) খুলুন। ক্যামেরায় পৃষ্ঠা তুলুন বা আগে তোলা ছবি যোগ করুন, ক্রম ঠিক করে PDF বানান। ক্যাপচার, ছবি ও চূড়ান্ত PDF ব্রাউজার ট্যাবেই প্রক্রিয়াকৃত হয়; কিছু আপলোড হয় না। এরপর [OCR PDF](/tools/ocr-pdf) খুলে স্ক্যান দিন। OCR PDF, PNG ও JPG-ও নেয়।"
+          },
+          {
+            "t": "h2",
+            "x": "ফল কীভাবে যাচাই করবেন"
+          },
+          {
+            "t": "p",
+            "x": "OCR PDF-এ মুদ্রিত লেখার ভাষা বেছে শনাক্তকরণ চালান। প্রথমবার প্রায় ১০ MB ভাষা প্যাক ডাউনলোড হয় এবং পরের জন্য ডিভাইসে থাকে। বিনামূল্যের প্ল্যানে প্রতি PDF-এ ৩০ পৃষ্ঠা, Pro-তে ২০০ পৃষ্ঠা পর্যন্ত হয়। দেখা টেক্সট পড়ুন: বাঁকা পৃষ্ঠা, খুব ছোট অক্ষর, কম কনট্রাস্ট বা ফিকে ছাপায় ভুল হতে পারে।"
+          },
+          {
+            "t": "p",
+            "x": "OCR দুইটি ফাইল দেয়: শনাক্ত লেখার TXT এবং ছবির ওপর মিলিয়ে অদৃশ্য টেক্সটসহ searchable PDF। বাংলা, আরবি ও চীনা ভাষায় লুকানো টেক্সটের সাধারণ ফন্ট PDF-এর ভেতরে খোঁজা সীমিত করতে পারে; এসব লিপির জন্য TXT-তে খুঁজুন ও কপি করুন। মূল স্ক্যান রাখুন—searchable PDF নতুন করে তৈরি, তাই লিংক, বুকমার্ক বা পূরণযোগ্য ফর্ম নাও থাকতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রতিটি ফরম্যাটের কপি রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "শেয়ারের আগে পৃষ্ঠা ও টেক্সট যাচাই করুন। নাম, তারিখ ও অঙ্ক মূল ছবির সঙ্গে মিলিয়ে নিন। টুলগুলো স্থানীয়ভাবে চলে, স্ক্যান আপলোড হয় না; ভাষা প্যাক একবার নামাতে হয়। হাতের লেখা OCR নির্ভরযোগ্যভাবে পড়ে না। আর্কাইভ বা পাঠানোর সময় মূল স্ক্যান, searchable PDF ও TXT একসঙ্গে রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "স্ক্যান করলেই কি PDF-এ খোঁজা যায়?",
+            "a": "সব সময় নয়। ক্যামেরার PDF-এ শুধু ছবি থাকতে পারে। শনাক্তযোগ্য টেক্সট স্তর যোগ করতে OCR চালান এবং ফল দেখুন, কারণ অক্ষর ভুল শনাক্ত হতে পারে।"
+          },
+          {
+            "q": "OCR কি আমার নথি সার্ভারে পাঠায়?",
+            "a": "না। Scan to PDF ও OCR PDF ব্রাউজার ট্যাবেই চলে। OCR একবার ভাষা প্যাক ডাউনলোড করে, কিন্তু স্ক্যান নথি আপনার ডিভাইসেই থাকে।"
+          },
+          {
+            "q": "বিনামূল্যে কত পৃষ্ঠা প্রক্রিয়া করা যায়?",
+            "a": "বিনামূল্যের OCR PDF প্রতি ফাইলে ৩০ পৃষ্ঠা এবং Pro-তে ২০০ পৃষ্ঠা পর্যন্ত করে। বড় ফাইল আগে ভাগ করুন।"
+          },
+          {
+            "q": "PDF-এর ভেতরে বাংলা, আরবি বা চীনা খুঁজতে পারি?",
+            "a": "TXT-তে সব শনাক্ত লেখা থাকে, কিন্তু PDF-এর লুকানো স্তরের সাধারণ ফন্ট বাংলা, আরবি ও চীনা লেখার খোঁজা সীমিত করতে পারে। এসব ভাষা TXT-তে খুঁজুন।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -55703,6 +56433,152 @@
           {
             "q": "PDF sang PPT có giới hạn gì?",
             "a": "Công cụ nhận một PDF tối đa 100 MB và mỗi lượt có thể mất đến hai phút. Gói miễn phí gồm năm lượt xử lý trên máy chủ mỗi tháng."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "scan-to-searchable-pdf",
+        "slug": "scan-to-searchable-pdf",
+        "title": "Cách quét tài liệu thành PDF có thể tìm kiếm",
+        "metaTitle": "Cách quét tài liệu thành PDF có thể tìm kiếm",
+        "metaDescription": "Quét trang và tạo PDF có thể tìm kiếm miễn phí trong trình duyệt. Không đăng ký, không tải lên; kiểm tra văn bản OCR trước khi chia sẻ.",
+        "keyword": "quét thành PDF có thể tìm kiếm",
+        "secondaryKeywords": [
+          "quét thành PDF có thể tìm kiếm",
+          "OCR PDF miễn phí",
+          "tìm chữ trong PDF scan"
+        ],
+        "answer": "Để tạo PDF scan có thể tìm kiếm, hãy chụp hoặc thêm ảnh trang trong Scan sang PDF, sau đó xử lý tệp bằng OCR PDF. Công cụ quét tạo PDF trong trình duyệt; OCR thêm lớp chữ ẩn để tìm và sao chép. Hãy kiểm tra chữ được nhận dạng vì ảnh nghiêng hoặc mờ có thể gây lỗi.",
+        "tool": "scan-to-pdf",
+        "ctaLabel": "Quét sang PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Để tạo PDF scan có thể tìm kiếm, hãy chụp hoặc thêm ảnh trang trong Scan sang PDF, sau đó xử lý tệp bằng OCR PDF. Công cụ quét tạo PDF trong trình duyệt; OCR thêm lớp chữ ẩn để tìm và sao chép. Hãy kiểm tra chữ được nhận dạng vì ảnh nghiêng hoặc mờ có thể gây lỗi."
+          },
+          {
+            "t": "h2",
+            "x": "Chuẩn bị các trang"
+          },
+          {
+            "t": "p",
+            "x": "Bản quét bằng camera thường lưu mỗi trang dưới dạng hình ảnh. Dù nhìn thấy chữ, bạn có thể không tìm hoặc sao chép được trong PDF. Để tạo PDF searchable, dùng Scan sang PDF tạo tệp, sau đó dùng OCR PDF nhận dạng chữ in và thêm lớp chữ ẩn lên hình ảnh."
+          },
+          {
+            "t": "h2",
+            "x": "Cách quét và tạo PDF searchable"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Chụp hoặc thêm các trang",
+                "x": "Mở [Scan sang PDF](/tools/scan-to-pdf), cho phép dùng camera hoặc thêm ảnh có sẵn. Sắp xếp trang rồi lưu PDF."
+              },
+              {
+                "h": "Mở OCR PDF",
+                "x": "Thêm PDF đã quét vào [OCR PDF](/tools/ocr-pdf). Gói miễn phí xử lý tối đa 30 trang mỗi tệp."
+              },
+              {
+                "h": "Chọn đúng ngôn ngữ",
+                "x": "Chọn ngôn ngữ của chữ in để tăng độ chính xác. Lần đầu, gói ngôn ngữ được tải xuống và lưu cho lần sau."
+              },
+              {
+                "h": "Chạy và kiểm tra OCR",
+                "x": "Bắt đầu nhận dạng rồi kiểm tra chữ, số và dấu. Chữ nhỏ hoặc ảnh nghiêng làm giảm độ chính xác."
+              },
+              {
+                "h": "Tải cả hai kết quả",
+                "x": "Lưu PDF có lớp chữ và tệp TXT. Đồng thời giữ bản scan gốc."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "Quét sang PDF. Miễn phí, riêng tư trong tab và không cần đăng ký."
+          },
+          {
+            "t": "h2",
+            "x": "So sánh: bản scan thường và PDF có OCR"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục tiêu",
+              "Công cụ",
+              "Kết quả"
+            ],
+            "rows": [
+              [
+                "Chụp trang",
+                "Scan sang PDF",
+                "PDF ảnh xử lý cục bộ, không tải lên."
+              ],
+              [
+                "Tìm chữ in",
+                "OCR PDF",
+                "Thêm lớp văn bản ẩn."
+              ],
+              [
+                "Tìm tiếng Bengali, Ả Rập hoặc Trung",
+                "Tệp TXT",
+                "Phông PDF có thể hạn chế tìm kiếm."
+              ],
+              [
+                "Giữ bản gốc",
+                "Lưu bản scan",
+                "Có thể đối chiếu chữ nhận dạng."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Tệp của bạn được xử lý thế nào"
+          },
+          {
+            "t": "p",
+            "x": "Mở [Scan sang PDF](/tools/scan-to-pdf) trên điện thoại hoặc máy tính. Chụp từng trang bằng camera hoặc thêm ảnh đã có, sắp xếp rồi tạo PDF. Ảnh chụp, hình ảnh và PDF cuối được xử lý trong tab trình duyệt; không tải lên máy chủ. Tiếp đó mở [OCR PDF](/tools/ocr-pdf) và thêm bản scan. OCR cũng nhận PDF, PNG và JPG."
+          },
+          {
+            "t": "h2",
+            "x": "Cách kiểm tra kết quả"
+          },
+          {
+            "t": "p",
+            "x": "Trong OCR PDF, chọn ngôn ngữ của chữ in rồi chạy nhận dạng. Lần đầu, gói ngôn ngữ khoảng 10 MB được tải xuống và lưu cục bộ cho lần sau. Gói miễn phí xử lý tối đa 30 trang mỗi PDF, Pro tối đa 200 trang. Hãy đọc văn bản hiện ra: trang nghiêng, chữ nhỏ, độ tương phản thấp hoặc bản in mờ có thể gây lỗi."
+          },
+          {
+            "t": "p",
+            "x": "OCR tạo hai tệp: TXT có văn bản nhận dạng và PDF searchable giữ hình ảnh với chữ ẩn căn theo ảnh. Với tiếng Bengali, Ả Rập và Trung, phông chuẩn của lớp chữ ẩn hạn chế việc tìm kiếm trong PDF; hãy dùng TXT để tìm và sao chép các chữ viết này. Giữ bản scan gốc vì PDF searchable được dựng lại và có thể không giữ liên kết, dấu trang hay trường biểu mẫu."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ bản sao ở từng định dạng"
+          },
+          {
+            "t": "p",
+            "x": "Trước khi chia sẻ, hãy kiểm tra cả trang và chữ. Đối chiếu tên, ngày tháng và số tiền với ảnh gốc. Công cụ hoạt động cục bộ, không tải bản scan lên; gói ngôn ngữ chỉ tải một lần. OCR không đáng tin cậy với chữ viết tay. Khi lưu trữ hoặc gửi, giữ bản scan gốc cùng PDF searchable và tệp TXT."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Quét thành PDF có tự tìm kiếm được không?",
+            "a": "Không phải lúc nào cũng vậy. PDF từ camera có thể chỉ chứa hình ảnh. Chạy OCR để thêm lớp chữ có thể nhận dạng và kiểm tra kết quả vì một số ký tự có thể bị đọc sai."
+          },
+          {
+            "q": "OCR có tải tài liệu của tôi lên máy chủ không?",
+            "a": "Không. Scan sang PDF và OCR PDF chạy trong tab trình duyệt. OCR tải một gói ngôn ngữ, nhưng tài liệu scan vẫn ở trên thiết bị của bạn."
+          },
+          {
+            "q": "Có thể xử lý miễn phí bao nhiêu trang?",
+            "a": "OCR PDF xử lý tối đa 30 trang mỗi tệp ở gói miễn phí và 200 trang ở Pro. Hãy chia tệp dài trước khi chạy."
+          },
+          {
+            "q": "Có thể tìm tiếng Bengali, Ả Rập hoặc Trung trong PDF không?",
+            "a": "Tệp TXT có toàn bộ chữ được nhận dạng, nhưng phông chuẩn của lớp ẩn trong PDF hạn chế tìm kiếm ở một số hệ chữ như Bengali, Ả Rập và Trung. Hãy tìm trong tệp TXT."
           }
         ],
         "published": "2026-11-16",
@@ -65000,6 +65876,156 @@
           {
             "q": "PDF 转 PPT 有什么限制？",
             "a": "工具一次接受一个不超过 100 MB 的 PDF，每次转换最长约两分钟。免费额度每月包含五次服务器转换。"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "scan-to-searchable-pdf",
+        "slug": "scan-to-searchable-pdf",
+        "title": "如何扫描并制作可搜索的 PDF",
+        "metaTitle": "如何扫描并制作可搜索的 PDF",
+        "metaDescription": "在浏览器中扫描页面并制作可搜索 PDF，免费且无需注册。扫描文件不会上传；分享前请检查 OCR 识别的文字，并保留原始扫描件。",
+        "keyword": "扫描制作可搜索 PDF",
+        "secondaryKeywords": [
+          "扫描制作可搜索 PDF",
+          "免费 OCR PDF",
+          "搜索扫描 PDF 文本"
+        ],
+        "answer": "要制作可搜索的扫描 PDF，先在 Scan to PDF 中拍摄页面或添加照片，再用 OCR PDF 处理文件。扫描工具在浏览器中生成 PDF；OCR 会添加不可见文字层，供搜索和复制。请检查识别文字，歪斜或模糊的图像可能导致错误。",
+        "tool": "scan-to-pdf",
+        "ctaLabel": "扫描为 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "要制作可搜索的扫描 PDF，先在 Scan to PDF 中拍摄页面或添加照片，再用 OCR PDF 处理文件。扫描工具在浏览器中生成 PDF；OCR 会添加不可见文字层，供搜索和复制。请检查识别文字，歪斜或模糊的图像可能导致错误。"
+          },
+          {
+            "t": "h2",
+            "x": "准备扫描页面"
+          },
+          {
+            "t": "p",
+            "x": "用相机扫描时，每一页通常会以图片形式保存。即使页面上看得见文字，PDF 也未必能搜索或复制。要制作可搜索版本，先用 Scan to PDF 创建文件，再用 OCR PDF 识别印刷文字，并在图像上添加不可见文字层。"
+          },
+          {
+            "t": "h2",
+            "x": "如何扫描并制作可搜索 PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "拍摄或添加页面",
+                "x": "打开 [Scan to PDF](/tools/scan-to-pdf)，允许使用相机或添加已有照片。调整页面顺序并保存 PDF。"
+              },
+              {
+                "h": "打开 OCR PDF",
+                "x": "将扫描文件添加到 [OCR PDF](/tools/ocr-pdf)。免费方案每个 PDF 最多处理 30 页。"
+              },
+              {
+                "h": "选择正确语言",
+                "x": "选择页面上印刷文字的语言以提高识别效果。首次使用会下载语言包，并保存供下次使用。"
+              },
+              {
+                "h": "运行并检查 OCR",
+                "x": "开始识别后，检查字符、数字和标点。文字太小或图像倾斜都会降低准确度。"
+              },
+              {
+                "h": "下载两种结果",
+                "x": "保存带文字层的 PDF 和 TXT 文件，也保留原始扫描件。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "scan-to-pdf",
+            "x": "扫描为 PDF. 免费使用，在标签页本地处理，无需注册。"
+          },
+          {
+            "t": "h2",
+            "x": "对比：普通扫描与 OCR PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "目标",
+              "工具",
+              "结果"
+            ],
+            "rows": [
+              [
+                "拍摄页面",
+                "Scan to PDF",
+                "在本地生成图片 PDF，不上传。"
+              ],
+              [
+                "搜索印刷文字",
+                "OCR PDF",
+                "添加不可见文字层。"
+              ],
+              [
+                "搜索孟加拉语、阿拉伯语或中文",
+                "TXT 文件",
+                "PDF 字体可能限制搜索。"
+              ],
+              [
+                "保留原件",
+                "保存原始扫描",
+                "便于核对识别文字。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "文件如何处理"
+          },
+          {
+            "t": "p",
+            "x": "在手机或电脑上打开 [Scan to PDF](/tools/scan-to-pdf)。用相机逐页拍摄，或添加已有照片，调整顺序后生成 PDF。相机拍摄、图片和最终 PDF 都在浏览器标签页中处理，不会上传。接着打开 [OCR PDF](/tools/ocr-pdf) 添加扫描文件。OCR 也支持 PDF、PNG 和 JPG。"
+          },
+          {
+            "t": "h2",
+            "x": "如何检查识别结果"
+          },
+          {
+            "t": "p",
+            "x": "在 OCR PDF 中选择页面印刷文字的语言，然后运行识别。首次使用会下载约 10 MB 的语言包，并保存在本地供后续使用。免费方案每个 PDF 最多处理 30 页，Pro 最多 200 页。请检查显示出来的文字：页面歪斜、字体太小、对比度低或印刷模糊都可能导致识别错误。"
+          },
+          {
+            "t": "p",
+            "x": "OCR 会生成两个文件：包含识别文字的 TXT，以及保留原图并叠加对齐不可见文字的可搜索 PDF。孟加拉语、阿拉伯语和中文的隐藏文字使用标准字体，可能限制在 PDF 内搜索；搜索和复制这些文字时请使用 TXT。保留原始扫描件，因为可搜索 PDF 是重建副本，链接、书签和可填写字段可能不会保留。"
+          },
+          {
+            "t": "h2",
+            "x": "保留不同格式的副本"
+          },
+          {
+            "t": "p",
+            "x": "分享前同时检查页面和文字。对照图像核对姓名、日期和金额。工具在本地运行，不会上传扫描件；语言包只需下载一次。OCR 对手写文字的识别并不可靠。归档或发送时，请把原始扫描件、可搜索 PDF 和 TXT 一起保存。"
+          },
+          {
+            "t": "p",
+            "x": "如果扫描内容是手写笔记、印章或非常浅的打印字，OCR 可能无法准确识别。尽量让纸张平整、光线均匀，并使文字清晰对焦。可先用 Scan to PDF 的灰度或自动对比度选项改善每页外观，再运行 OCR。识别后逐页校对关键字段，特别是姓名、日期、编号和金额。OCR 生成的文本层用于查找和复制，不应代替对原图的人工核验。对于重要档案，请同时保留原始图像、带隐藏文字层的 PDF 和 OCR 文本文件，方便后续检索与复核。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "扫描成 PDF 后就能搜索文字吗？",
+            "a": "不一定。相机扫描的 PDF 可能只包含图片。运行 OCR 添加可识别文字层后，才能搜索和复制；请检查结果，因为某些字符可能识别错误。"
+          },
+          {
+            "q": "OCR 会把我的文件上传到服务器吗？",
+            "a": "不会。Scan to PDF 和 OCR PDF 都在浏览器标签页中运行。OCR 会下载一次语言包，但扫描文件保留在你的设备上。"
+          },
+          {
+            "q": "免费版可以处理多少页？",
+            "a": "免费方案的 OCR PDF 每个文件最多处理 30 页，Pro 最多 200 页。更长的文档可先拆分再识别。"
+          },
+          {
+            "q": "能在 PDF 里搜索孟加拉语、阿拉伯语或中文吗？",
+            "a": "TXT 包含全部识别文字，但 PDF 隐藏文字层使用的标准字体可能限制孟加拉语、阿拉伯语和中文等文字的搜索。请在 TXT 文件中搜索这些语言。"
           }
         ],
         "published": "2026-11-16",
