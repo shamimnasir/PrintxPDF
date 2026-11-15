@@ -4460,6 +4460,157 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-checksum-basics-for-archives",
+        "slug": "pdf-checksum-basics-for-archives",
+        "cluster": "archive-expansion",
+        "title": "Conceptos básicos de checksum PDF para archivos",
+        "metaTitle": "Conceptos básicos de checksum PDF para archivos",
+        "metaDescription": "Calcula y compara el hash SHA-256 de un PDF archivado. Aprende qué demuestra y cómo conservar el valor de referencia.",
+        "primaryKeyword": "checksum PDF para archivos",
+        "secondaryKeywords": [
+          "SHA-256 PDF checksum",
+          "verify PDF integrity",
+          "archive file hash",
+          "PDF authenticity"
+        ],
+        "answer": "Un checksum SHA-256 ayuda a comprobar si los bytes de un PDF cambiaron desde que se calculó el hash. Calcula el hash del archivo final, guarda el valor en un registro protegido y vuelve a calcularlo tras transferirlo. Una coincidencia con un hash de confianza indica bytes iguales; no demuestra quién creó el archivo ni que el contenido sea auténtico.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Un checksum o hash criptográfico es una huella calculada a partir de los bytes de un archivo. En un archivo documental, SHA-256 ayuda a detectar si un PDF cambió desde que registraste el hash. Guarda el valor de referencia por separado en un registro fiable; si se altera junto con el PDF, la comparación pierde utilidad."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo calcular un checksum SHA-256 para un PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el PDF original",
+                "x": "Guarda el archivo fuente sin cambios. Si preparas una copia de acceso, calcula su hash por separado porque la conversión o edición cambia los bytes."
+              },
+              {
+                "h": "Calcula SHA-256 en tu dispositivo",
+                "x": "En macOS o Linux, ejecuta `shasum -a 256 archivo.pdf` o `sha256sum archivo.pdf`. En Windows, usa `certutil -hashfile archivo.pdf SHA256`."
+              },
+              {
+                "h": "Guarda el valor con el registro",
+                "x": "Copia el hash completo, nombre y versión del archivo, fecha y quién o qué sistema lo calculó en un registro controlado."
+              },
+              {
+                "h": "Verifica más tarde",
+                "x": "Vuelve a calcular SHA-256 sobre la copia recibida o recuperada y compara los 64 caracteres hexadecimales con el valor de referencia."
+              },
+              {
+                "h": "Inspecciona el documento por separado",
+                "x": "Usa [Lector PDF](/tools/pdf-reader) para revisar páginas y [Comparar PDF](/tools/compare-pdf) para localizar diferencias visuales."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Revisa páginas y compara copias PDF desde tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Qué puede decirte un checksum"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Comprobación",
+              "Qué indica",
+              "Qué no demuestra"
+            ],
+            "rows": [
+              [
+                "El hash coincide con un SHA-256 guardado de forma fiable",
+                "Los bytes son iguales a los del momento en que se calculó el valor.",
+                "No identifica al autor ni demuestra que el contenido sea verdadero."
+              ],
+              [
+                "El hash ha cambiado",
+                "Los bytes del archivo son distintos.",
+                "No revela por sí solo cuándo, cómo ni por qué cambió."
+              ],
+              [
+                "Coinciden el nombre o el tamaño",
+                "Solo coincide el nombre o el tamaño mostrado.",
+                "No demuestra que el contenido sea idéntico."
+              ],
+              [
+                "El PDF se ve igual",
+                "La apariencia visible puede coincidir.",
+                "No demuestra igualdad byte a byte; metadatos u otros datos pueden diferir."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Por qué SHA-256 sirve para verificar la integridad"
+          },
+          {
+            "t": "p",
+            "x": "SHA-256 convierte los bytes del archivo en un valor hexadecimal de 64 caracteres. Si cambia cualquier byte, normalmente el hash será diferente. Para verificar integridad, necesitas un valor de referencia calculado antes y protegido contra cambios no autorizados. No compares solo el nombre ni el tamaño del archivo."
+          },
+          {
+            "t": "h2",
+            "x": "El checksum no prueba autenticidad ni seguridad"
+          },
+          {
+            "t": "p",
+            "x": "Un hash coincidente indica que los bytes son iguales a los del archivo asociado al valor de referencia, siempre que este sea fiable. No demuestra quién creó el PDF, si una firma es legítima, si el contenido es correcto o si es seguro abrir el archivo. Para validar autenticidad, usa una firma digital y comprueba el certificado según el proceso de tu organización."
+          },
+          {
+            "t": "h2",
+            "x": "Mantén separados los originales y las copias de acceso"
+          },
+          {
+            "t": "p",
+            "x": "Cambiar metadatos, convertir a PDF/A, aplicar OCR, optimizar, firmar o editar puede cambiar los bytes y producir un nuevo hash aunque el documento parezca igual. Calcula y registra cada versión por separado. Conserva el original y sigue las políticas de retención y cadena de custodia aplicables."
+          },
+          {
+            "t": "h2",
+            "x": "Privacidad al calcular hashes"
+          },
+          {
+            "t": "p",
+            "x": "Las utilidades nativas calculan el hash localmente en tu dispositivo y no requieren subir el PDF a un sitio web. El hash no suele contener el texto del documento, pero puede ayudar a reconocer un archivo conocido. Protege el valor de referencia con los controles de acceso del registro archivístico."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué es un checksum de PDF?",
+            "a": "Es un resumen matemático de los bytes del archivo. Compararlo con un valor previo de confianza ayuda a detectar cambios posteriores."
+          },
+          {
+            "q": "¿SHA-256 es mejor que MD5 para archivar?",
+            "a": "Para nuevos registros de integridad suele preferirse SHA-256. Sigue la política del archivo y los requisitos legales; documenta cualquier cambio de algoritmo."
+          },
+          {
+            "q": "¿Un checksum coincidente demuestra que el PDF es auténtico?",
+            "a": "No. Indica que los bytes coinciden con los del archivo asociado al valor de referencia, pero no identifica al autor ni valida el contenido."
+          },
+          {
+            "q": "¿Editar el PDF cambia su checksum?",
+            "a": "Sí. Cualquier cambio en los bytes, incluso en metadatos, suele producir otro hash. Calcula y registra un valor para cada versión."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "compare-pdf",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "archive-copy-vs-backup",
+          "original-pdf-vs-access-copy",
+          "will-this-file-still-open"
+        ]
       }
     ]
   },
@@ -8914,6 +9065,157 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-checksum-basics-for-archives",
+        "slug": "pdf-checksum-basics-for-archives",
+        "cluster": "archive-expansion",
+        "title": "Noções básicas de checksum PDF para arquivos",
+        "metaTitle": "Noções básicas de checksum PDF para arquivos",
+        "metaDescription": "Calcule e compare o hash SHA-256 de um PDF arquivado. Entenda o que ele prova e como guardar a referência.",
+        "primaryKeyword": "checksum PDF para arquivos",
+        "secondaryKeywords": [
+          "SHA-256 PDF checksum",
+          "verify PDF integrity",
+          "archive file hash",
+          "PDF authenticity"
+        ],
+        "answer": "Um checksum SHA-256 ajuda a verificar se os bytes de um PDF mudaram desde o cálculo do hash. Calcule o hash do arquivo final, guarde o valor em um registro protegido e calcule novamente após a transferência. Uma correspondência com um hash confiável indica bytes iguais; não prova quem criou o arquivo nem que o conteúdo é autêntico.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Um checksum ou hash criptográfico é uma impressão digital calculada a partir dos bytes de um arquivo. Em um arquivo documental, o SHA-256 ajuda a detectar se um PDF mudou desde que o hash foi registrado. Guarde o valor de referência separadamente em um registro confiável; se ele for alterado junto com o PDF, a comparação perde o valor."
+          },
+          {
+            "t": "h2",
+            "x": "Como calcular um checksum SHA-256 para PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Preserve o PDF original",
+                "x": "Guarde o arquivo-fonte sem alterações. Se criar uma cópia de acesso, calcule outro hash para ela, pois conversões ou edições mudam os bytes."
+              },
+              {
+                "h": "Calcule SHA-256 no dispositivo",
+                "x": "No macOS ou Linux, execute `shasum -a 256 arquivo.pdf` ou `sha256sum arquivo.pdf`. No Windows, use `certutil -hashfile arquivo.pdf SHA256`."
+              },
+              {
+                "h": "Guarde o valor com o registro",
+                "x": "Registre o hash completo, nome e versão do arquivo, data e quem ou qual sistema o calculou em local controlado pela política."
+              },
+              {
+                "h": "Verifique mais tarde",
+                "x": "Calcule novamente o SHA-256 da cópia recebida ou recuperada e compare os 64 caracteres hexadecimais com a referência."
+              },
+              {
+                "h": "Inspecione o documento separadamente",
+                "x": "Use o [Leitor de PDF](/tools/pdf-reader) para conferir páginas e [Comparar PDF](/tools/compare-pdf) para localizar diferenças visuais."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Confira páginas e compare cópias PDF direto na aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "O que um checksum pode indicar"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Verificação",
+              "O que indica",
+              "O que não comprova"
+            ],
+            "rows": [
+              [
+                "O hash corresponde a um SHA-256 guardado com segurança",
+                "Os bytes são iguais aos do momento em que o valor foi calculado.",
+                "Não identifica o autor nem comprova a veracidade do conteúdo."
+              ],
+              [
+                "O hash mudou",
+                "Os bytes do arquivo são diferentes.",
+                "Não informa sozinho quando, como ou por que mudou."
+              ],
+              [
+                "Nome ou tamanho coincide",
+                "Só coincide o nome ou o tamanho exibido.",
+                "Não comprova que o conteúdo é idêntico."
+              ],
+              [
+                "O PDF parece igual",
+                "A aparência visível pode coincidir.",
+                "Não comprova igualdade byte a byte; metadados ou outros dados podem diferir."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Por que SHA-256 verifica integridade"
+          },
+          {
+            "t": "p",
+            "x": "O SHA-256 transforma os bytes do arquivo em um valor hexadecimal de 64 caracteres. Se qualquer byte mudar, o hash normalmente também muda. Para verificar a integridade, é preciso um valor de referência calculado antes e protegido contra alterações não autorizadas. Não compare apenas o nome ou tamanho do arquivo."
+          },
+          {
+            "t": "h2",
+            "x": "Checksum não prova autenticidade nem segurança"
+          },
+          {
+            "t": "p",
+            "x": "Um hash correspondente indica bytes iguais aos do arquivo associado à referência, desde que esse valor seja confiável. Não prova quem criou o PDF, se uma assinatura é legítima, se o conteúdo está correto ou se é seguro abrir. Para autenticidade, use uma assinatura digital e valide o certificado conforme o processo da organização."
+          },
+          {
+            "t": "h2",
+            "x": "Mantenha originais e cópias de acesso separados"
+          },
+          {
+            "t": "p",
+            "x": "Editar metadados, converter para PDF/A, aplicar OCR, otimizar, assinar ou editar pode mudar os bytes e gerar outro hash, mesmo que o documento pareça igual. Calcule e registre cada versão separadamente. Preserve o original e siga as regras de retenção e cadeia de custódia aplicáveis."
+          },
+          {
+            "t": "h2",
+            "x": "Privacidade ao calcular hashes"
+          },
+          {
+            "t": "p",
+            "x": "Utilitários nativos calculam o hash localmente no dispositivo e não exigem enviar o PDF a um site. O hash normalmente não contém o texto do documento, mas pode identificar um arquivo conhecido. Guarde a referência com os mesmos controles de acesso do registro arquivístico."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "O que é checksum de PDF?",
+            "a": "É um resumo matemático dos bytes do arquivo. Compará-lo com um valor anterior confiável ajuda a detectar alterações posteriores."
+          },
+          {
+            "q": "SHA-256 é melhor que MD5 para arquivos?",
+            "a": "Para novos registros de integridade, SHA-256 costuma ser preferido. Siga a política do arquivo e os requisitos legais; documente qualquer troca de algoritmo."
+          },
+          {
+            "q": "Um checksum correspondente prova que o PDF é autêntico?",
+            "a": "Não. Ele indica bytes iguais aos do arquivo associado à referência, mas não identifica o autor nem valida o conteúdo."
+          },
+          {
+            "q": "Editar um PDF muda o checksum?",
+            "a": "Sim. Qualquer alteração nos bytes, inclusive nos metadados, normalmente gera outro hash. Calcule e registre um valor para cada versão."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "compare-pdf",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "archive-copy-vs-backup",
+          "original-pdf-vs-access-copy",
+          "will-this-file-still-open"
+        ]
       }
     ]
   },
@@ -13367,6 +13669,157 @@
           "remove-metadata-from-pdf",
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-checksum-basics-for-archives",
+        "slug": "pdf-checksum-basics-for-archives",
+        "cluster": "archive-expansion",
+        "title": "आर्काइव PDF चेकसम की मूल बातें",
+        "metaTitle": "आर्काइव PDF चेकसम की मूल बातें",
+        "metaDescription": "आर्काइव PDF का SHA-256 हैश निकालें और तुलना करें। जानें यह क्या बताता है और संदर्भ मान कैसे सुरक्षित रखें।",
+        "primaryKeyword": "आर्काइव PDF SHA-256 चेकसम",
+        "secondaryKeywords": [
+          "SHA-256 PDF checksum",
+          "verify PDF integrity",
+          "archive file hash",
+          "PDF authenticity"
+        ],
+        "answer": "SHA-256 चेकसम यह जाँचने में मदद करता है कि हैश निकालने के बाद PDF के बाइट बदले हैं या नहीं। अंतिम फ़ाइल का हैश निकालें, उसे सुरक्षित रिकॉर्ड में रखें और ट्रांसफ़र के बाद फिर जाँचें। भरोसेमंद संदर्भ से मेल बाइट समान होने का संकेत है; यह लेखक या सामग्री की प्रामाणिकता साबित नहीं करता।",
+        "body": [
+          {
+            "t": "p",
+            "x": "चेकसम या क्रिप्टोग्राफ़िक हैश फ़ाइल के बाइट से निकला डिजिटल फ़िंगरप्रिंट है। आर्काइव में SHA-256 यह पता लगाने में मदद करता है कि दर्ज किए जाने के बाद PDF बदली है या नहीं। संदर्भ हैश अलग भरोसेमंद रिकॉर्ड में रखें; PDF के साथ हैश भी बदल जाए तो तुलना बेकार हो जाती है।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF का SHA-256 चेकसम कैसे निकालें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल PDF सुरक्षित रखें",
+                "x": "स्रोत फ़ाइल बिना बदलाव रखें। एक्सेस कॉपी बनाई हो तो उसका अलग हैश निकालें, क्योंकि रूपांतरण या संपादन बाइट बदलता है।"
+              },
+              {
+                "h": "डिवाइस पर SHA-256 निकालें",
+                "x": "macOS या Linux में `shasum -a 256 file.pdf` या `sha256sum file.pdf` चलाएँ। Windows में `certutil -hashfile file.pdf SHA256` चलाएँ।"
+              },
+              {
+                "h": "रिकॉर्ड में हैश सहेजें",
+                "x": "पूरा हैश, फ़ाइल नाम व संस्करण, तारीख और गणना करने वाले व्यक्ति या सिस्टम को नीति-नियंत्रित रिकॉर्ड में दर्ज करें।"
+              },
+              {
+                "h": "बाद में सत्यापन करें",
+                "x": "मिली या पुनः प्राप्त कॉपी का SHA-256 फिर निकालें और 64 हेक्स वर्ण संदर्भ मान से मिलाएँ।"
+              },
+              {
+                "h": "दस्तावेज़ अलग से देखें",
+                "x": "पन्ने देखने के लिए [PDF Reader](/tools/pdf-reader) और दो कॉपी के दृश्य अंतर खोजने के लिए [Compare PDF](/tools/compare-pdf) उपयोग करें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "टैब में पन्ने देखें और PDF कॉपी की तुलना करें। मुफ़्त, बिना साइनअप और वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "चेकसम क्या बता सकता है"
+          },
+          {
+            "t": "table",
+            "head": [
+              "जाँच",
+              "क्या संकेत मिलता है",
+              "क्या साबित नहीं होता"
+            ],
+            "rows": [
+              [
+                "मौजूदा हैश सुरक्षित SHA-256 संदर्भ से मेल खाता है",
+                "बाइट उस समय वाली फ़ाइल के समान हैं जब हैश निकाला गया।",
+                "लेखक की पहचान या सामग्री की सच्चाई साबित नहीं होती।"
+              ],
+              [
+                "हैश बदल गया",
+                "फ़ाइल के बाइट अलग हैं।",
+                "अकेले इससे समय, तरीका या कारण पता नहीं चलता।"
+              ],
+              [
+                "नाम या आकार समान है",
+                "केवल नाम या आकार मेल खाता है।",
+                "सामग्री समान होने का प्रमाण नहीं।"
+              ],
+              [
+                "PDF देखने में समान है",
+                "दृश्य रूप समान हो सकता है।",
+                "बाइट-दर-बाइट समानता साबित नहीं; मेटाडेटा अलग हो सकता है।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "अखंडता जाँचने के लिए SHA-256 क्यों उपयोगी है"
+          },
+          {
+            "t": "p",
+            "x": "SHA-256 फ़ाइल के बाइट को 64 अक्षरों के हेक्साडेसिमल मान में बदलता है। कोई भी बाइट बदले तो आम तौर पर हैश भी बदलता है। अखंडता जाँचने के लिए पहले निकाला और अनधिकृत बदलाव से सुरक्षित संदर्भ मान चाहिए। सिर्फ़ नाम या आकार न मिलाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "चेकसम प्रामाणिकता या सुरक्षा साबित नहीं करता"
+          },
+          {
+            "t": "p",
+            "x": "मेल खाता हैश बताता है कि बाइट भरोसेमंद संदर्भ हैश से जुड़े फ़ाइल जैसे हैं। यह नहीं बताता कि PDF किसने बनाई, हस्ताक्षर वैध है या नहीं, सामग्री सही है या फ़ाइल खोलना सुरक्षित है। प्रामाणिकता के लिए डिजिटल हस्ताक्षर और संस्था की प्रमाणपत्र-जाँच प्रक्रिया अपनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "मूल और एक्सेस कॉपी अलग रखें"
+          },
+          {
+            "t": "p",
+            "x": "मेटाडेटा बदलना, PDF/A में बदलना, OCR, अनुकूलन, हस्ताक्षर या संपादन बाइट बदलकर नया हैश बना सकते हैं, भले PDF वैसी दिखे। हर संस्करण का अलग हैश निकालें और दर्ज करें। मूल सुरक्षित रखें और रिटेंशन तथा चेन-ऑफ़-कस्टडी नियम अपनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "हैश निकालते समय गोपनीयता"
+          },
+          {
+            "t": "p",
+            "x": "डिवाइस की स्थानीय यूटिलिटी हैश वहीं निकालती है; PDF वेबसाइट पर अपलोड करने की ज़रूरत नहीं। हैश में सामान्यतः दस्तावेज़ का टेक्स्ट नहीं होता, लेकिन वह किसी ज्ञात फ़ाइल की पहचान कर सकता है। संदर्भ मान को आर्काइव रिकॉर्ड जैसे पहुँच नियंत्रण में रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF चेकसम क्या होता है?",
+            "a": "यह फ़ाइल के बाइट का गणितीय सारांश है। पुराने भरोसेमंद मान से मिलाने पर बाद में बदलाव का पता चल सकता है।"
+          },
+          {
+            "q": "क्या आर्काइव के लिए SHA-256, MD5 से बेहतर है?",
+            "a": "नए अखंडता रिकॉर्ड में आम तौर पर SHA-256 पसंद किया जाता है। आर्काइव नीति और कानूनी शर्त मानें; एल्गोरिथ्म बदलने पर दर्ज करें।"
+          },
+          {
+            "q": "क्या मेल खाता चेकसम PDF की प्रामाणिकता साबित करता है?",
+            "a": "नहीं। यह संदर्भ फ़ाइल से बाइट मेल बताता है, लेखक या सामग्री की सत्यता नहीं।"
+          },
+          {
+            "q": "PDF संपादित करने पर चेकसम बदलेगा?",
+            "a": "हाँ। मेटाडेटा सहित बाइट में बदलाव से आम तौर पर नया हैश बनता है। हर संस्करण का अलग हैश निकालें।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "compare-pdf",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "archive-copy-vs-backup",
+          "original-pdf-vs-access-copy",
+          "will-this-file-still-open"
         ]
       }
     ]
@@ -17830,6 +18283,157 @@
           "remove-metadata-from-pdf",
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-checksum-basics-for-archives",
+        "slug": "pdf-checksum-basics-for-archives",
+        "cluster": "archive-expansion",
+        "title": "أساسيات checksum لملفات PDF في الأرشيف",
+        "metaTitle": "أساسيات checksum لملفات PDF في الأرشيف",
+        "metaDescription": "احسب SHA-256 لملف PDF مؤرشف وقارنه. تعرّف إلى ما يثبته وما لا يثبته وكيف تحفظ القيمة المرجعية الموثوقة بأمان.",
+        "primaryKeyword": "checksum PDF للأرشيف SHA-256",
+        "secondaryKeywords": [
+          "SHA-256 PDF checksum",
+          "verify PDF integrity",
+          "archive file hash",
+          "PDF authenticity"
+        ],
+        "answer": "يساعد checksum من نوع SHA-256 على معرفة ما إذا كانت بايتات PDF قد تغيرت منذ حساب التجزئة. احسب قيمة الملف النهائي، واحفظها في سجل محمي، ثم أعد الحساب بعد النقل. تطابقها مع قيمة مرجعية موثوقة يشير إلى تطابق البايتات، لكنه لا يثبت من أنشأ الملف أو أصالة محتواه.",
+        "body": [
+          {
+            "t": "p",
+            "x": "الـchecksum أو التجزئة المشفرة بصمة تُحسب من بايتات الملف. في الأرشفة، يساعد SHA-256 على اكتشاف تغير PDF منذ تسجيل قيمة التجزئة. احفظ القيمة المرجعية منفصلة في سجل موثوق؛ فإذا تغيرت مع PDF فلن تفيد المقارنة."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية حساب checksum SHA-256 لملف PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بملف PDF الأصلي",
+                "x": "احفظ المصدر دون تغيير. وإذا أنشأت نسخة وصول، فاحسب لها تجزئة منفصلة لأن التحويل أو التحرير يغير البايتات."
+              },
+              {
+                "h": "احسب SHA-256 على جهازك",
+                "x": "في macOS أو Linux شغّل `shasum -a 256 file.pdf` أو `sha256sum file.pdf`. في Windows استخدم `certutil -hashfile file.pdf SHA256`."
+              },
+              {
+                "h": "احفظ القيمة مع السجل",
+                "x": "سجّل التجزئة كاملة واسم الملف وإصداره والتاريخ والجهة أو النظام الذي حسبها في سجل تحكمه السياسة."
+              },
+              {
+                "h": "تحقق لاحقاً",
+                "x": "أعد حساب SHA-256 للنسخة المستلمة أو المستعادة وقارن الأحرف الـ64 بالقيمة المرجعية."
+              },
+              {
+                "h": "افحص المستند بشكل منفصل",
+                "x": "استخدم [قارئ PDF](/tools/pdf-reader) لمراجعة الصفحات و[مقارنة PDF](/tools/compare-pdf) للعثور على اختلافات مرئية."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "راجع الصفحات وقارن نسخ PDF من علامة تبويبك. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي يخبرك به checksum؟"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الفحص",
+              "ما الذي يشير إليه",
+              "ما الذي لا يثبته"
+            ],
+            "rows": [
+              [
+                "تطابق التجزئة الحالية قيمة SHA-256 محفوظة بأمان",
+                "البايتات مطابقة للملف وقت حساب القيمة.",
+                "لا يحدد المؤلف ولا يثبت صحة المحتوى."
+              ],
+              [
+                "تغيرت التجزئة",
+                "بايتات الملف مختلفة.",
+                "لا يكشف وحده متى أو كيف أو لماذا تغيرت."
+              ],
+              [
+                "تطابق الاسم أو الحجم",
+                "تطابق الاسم أو الحجم المعروض فقط.",
+                "لا يثبت تطابق المحتوى."
+              ],
+              [
+                "يبدو PDF متشابهاً",
+                "قد يتطابق المظهر المرئي.",
+                "لا يثبت التطابق بايتاً ببايت؛ فقد تختلف البيانات الوصفية."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "لماذا يفيد SHA-256 في التحقق من السلامة"
+          },
+          {
+            "t": "p",
+            "x": "يحوّل SHA-256 بايتات الملف إلى قيمة سداسية من 64 حرفاً. يؤدي تغيير أي بايت عادة إلى قيمة مختلفة. للتحقق من السلامة تحتاج إلى قيمة مرجعية حُسبت مسبقاً وحُميت من التغيير غير المصرح به. لا تقارن الاسم أو الحجم وحدهما."
+          },
+          {
+            "t": "h2",
+            "x": "checksum لا يثبت الأصالة أو الأمان"
+          },
+          {
+            "t": "p",
+            "x": "يشير التطابق إلى أن البايتات تساوي بايتات الملف المرتبط بالقيمة المرجعية، إذا كانت موثوقة. لكنه لا يثبت من أنشأ PDF أو شرعية التوقيع أو صحة المحتوى أو أمان فتح الملف. لإثبات الأصالة، استخدم توقيعاً رقمياً وتحقق من شهادته وفق إجراء مؤسستك."
+          },
+          {
+            "t": "h2",
+            "x": "افصل بين الأصل ونسخة الوصول"
+          },
+          {
+            "t": "p",
+            "x": "قد يغير تحرير البيانات الوصفية أو التحويل إلى PDF/A أو OCR أو التحسين أو التوقيع أو التعديل البايتات وينتج checksum جديداً ولو بدا المستند متشابهاً. احسب وسجل قيمة لكل إصدار. احتفظ بالأصل واتبع سياسات الاحتفاظ وسلسلة الحيازة."
+          },
+          {
+            "t": "h2",
+            "x": "الخصوصية عند حساب التجزئة"
+          },
+          {
+            "t": "p",
+            "x": "تحسب أدوات النظام التجزئة محلياً على جهازك ولا تتطلب رفع PDF إلى موقع. لا تحتوي القيمة عادة على نص المستند، لكنها قد تساعد على التعرف إلى ملف معروف. احفظ المرجع بضوابط الوصول نفسها لسجل الأرشيف."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ما هو checksum لملف PDF؟",
+            "a": "هو ملخص رياضي لبايتات الملف. تساعد مقارنته بقيمة سابقة موثوقة على اكتشاف تغييرات لاحقة."
+          },
+          {
+            "q": "هل SHA-256 أفضل من MD5 للأرشفة؟",
+            "a": "تُفضّل SHA-256 عادةً لسجلات السلامة الجديدة. اتبع سياسة الأرشيف والمتطلبات القانونية ووثّق تغيير الخوارزمية."
+          },
+          {
+            "q": "هل يثبت checksum المتطابق أن PDF أصلي؟",
+            "a": "لا. يشير إلى تطابق البايتات مع الملف المرجعي، لكنه لا يحدد المؤلف ولا يتحقق من المحتوى."
+          },
+          {
+            "q": "هل يغير تعديل PDF قيمة checksum؟",
+            "a": "نعم. أي تغيير في البايتات، حتى البيانات الوصفية، ينتج عادة تجزئة جديدة. احسب قيمة لكل إصدار."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "compare-pdf",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "archive-copy-vs-backup",
+          "original-pdf-vs-access-copy",
+          "will-this-file-still-open"
         ]
       }
     ]
@@ -22297,6 +22901,157 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "pdf-checksum-basics-for-archives",
+        "slug": "pdf-checksum-basics-for-archives",
+        "cluster": "archive-expansion",
+        "title": "আর্কাইভ PDF চেকসামের প্রাথমিক ধারণা",
+        "metaTitle": "আর্কাইভ PDF চেকসামের প্রাথমিক ধারণা",
+        "metaDescription": "আর্কাইভ PDF-এর SHA-256 হ্যাশ বের করে তুলনা করুন। কী প্রমাণ করে এবং রেফারেন্স মান কীভাবে রাখবেন জানুন।",
+        "primaryKeyword": "আর্কাইভ PDF SHA-256 চেকসাম",
+        "secondaryKeywords": [
+          "SHA-256 PDF checksum",
+          "verify PDF integrity",
+          "archive file hash",
+          "PDF authenticity"
+        ],
+        "answer": "SHA-256 চেকসাম দিয়ে হ্যাশ বের করার পর PDF-এর বাইট বদলেছে কি না বোঝা যায়। চূড়ান্ত ফাইলের হ্যাশ বের করে সুরক্ষিত রেকর্ডে রাখুন এবং স্থানান্তরের পরে আবার হিসাব করুন। নির্ভরযোগ্য রেফারেন্সের সঙ্গে মিললে বাইট একই বোঝায়; কে ফাইল বানিয়েছে বা বিষয়বস্তু সত্য কি না তা প্রমাণ করে না।",
+        "body": [
+          {
+            "t": "p",
+            "x": "চেকসাম বা ক্রিপ্টোগ্রাফিক হ্যাশ হলো ফাইলের বাইট থেকে তৈরি ডিজিটাল ছাপ। আর্কাইভে SHA-256 দিয়ে রেকর্ডের পর PDF বদলেছে কি না ধরা যায়। রেফারেন্স হ্যাশ আলাদা বিশ্বস্ত রেকর্ডে রাখুন; PDF-এর সঙ্গে হ্যাশও বদলে গেলে তুলনা কাজে আসে না।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF-এর SHA-256 চেকসাম কীভাবে বের করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল PDF সংরক্ষণ করুন",
+                "x": "উৎস ফাইল অপরিবর্তিত রাখুন। অ্যাক্সেস কপি বানালে আলাদা হ্যাশ নিন, কারণ রূপান্তর বা সম্পাদনায় বাইট বদলে যায়।"
+              },
+              {
+                "h": "ডিভাইসে SHA-256 হিসাব করুন",
+                "x": "macOS বা Linux-এ `shasum -a 256 file.pdf` বা `sha256sum file.pdf` চালান। Windows-এ `certutil -hashfile file.pdf SHA256` ব্যবহার করুন।"
+              },
+              {
+                "h": "রেকর্ডে মান সেভ করুন",
+                "x": "সম্পূর্ণ হ্যাশ, ফাইলের নাম ও সংস্করণ, তারিখ এবং হিসাবকারী ব্যক্তি বা সিস্টেম নীতিনিয়ন্ত্রিত রেকর্ডে লিখুন।"
+              },
+              {
+                "h": "পরে যাচাই করুন",
+                "x": "পাওয়া বা পুনরুদ্ধার করা কপির SHA-256 আবার বের করে ৬৪টি হেক্স অক্ষর রেফারেন্স মানের সঙ্গে মিলান।"
+              },
+              {
+                "h": "নথি আলাদাভাবে পরীক্ষা করুন",
+                "x": "পৃষ্ঠা দেখতে [PDF Reader](/tools/pdf-reader) এবং দুই কপির দৃশ্যমান পার্থক্যের জন্য [Compare PDF](/tools/compare-pdf) ব্যবহার করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "আপনার ট্যাবে পৃষ্ঠা দেখুন ও PDF কপি তুলনা করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।"
+          },
+          {
+            "t": "h2",
+            "x": "চেকসাম কী জানাতে পারে"
+          },
+          {
+            "t": "table",
+            "head": [
+              "পরীক্ষা",
+              "কী বোঝায়",
+              "কী প্রমাণ করে না"
+            ],
+            "rows": [
+              [
+                "বর্তমান হ্যাশ নিরাপদ SHA-256 রেফারেন্সের সঙ্গে মেলে",
+                "হ্যাশের সময়কার ফাইলের বাইট একই।",
+                "লেখকের পরিচয় বা বিষয়বস্তুর সত্যতা প্রমাণ করে না।"
+              ],
+              [
+                "হ্যাশ বদলেছে",
+                "ফাইলের বাইট আলাদা।",
+                "কখন, কীভাবে বা কেন বদলেছে তা একা জানায় না।"
+              ],
+              [
+                "নাম বা আকার মেলে",
+                "শুধু নাম বা আকার এক।",
+                "বিষয়বস্তু এক হওয়ার প্রমাণ নয়।"
+              ],
+              [
+                "PDF দেখতে একই",
+                "দৃশ্যমান চেহারা এক হতে পারে।",
+                "বাইট-টু-বাইট মিল নয়; মেটাডেটা আলাদা হতে পারে।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "SHA-256 অখণ্ডতা যাচাইয়ে কেন কাজে লাগে"
+          },
+          {
+            "t": "p",
+            "x": "SHA-256 ফাইলের বাইটকে ৬৪ অক্ষরের হেক্সাডেসিমেল মানে রূপান্তর করে। যেকোনো বাইট বদলালে সাধারণত হ্যাশও বদলে যায়। অখণ্ডতা যাচাইয়ে আগে হিসাব করা ও অননুমোদিত পরিবর্তন থেকে সুরক্ষিত রেফারেন্স দরকার। শুধু নাম বা আকার মিলিয়ে দেখবেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "চেকসাম সত্যতা বা নিরাপত্তা প্রমাণ করে না"
+          },
+          {
+            "t": "p",
+            "x": "মিলে যাওয়া হ্যাশ জানায় বাইট নির্ভরযোগ্য রেফারেন্সের ফাইলের মতো, যদি রেফারেন্সটি বিশ্বস্ত হয়। এটি PDF কে বানিয়েছে, স্বাক্ষর বৈধ কি না, বিষয়বস্তু সঠিক কি না বা খোলা নিরাপদ কি না প্রমাণ করে না। সত্যতা যাচাইয়ে ডিজিটাল স্বাক্ষর ও প্রতিষ্ঠানের সার্টিফিকেট যাচাই পদ্ধতি ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "মূল ও অ্যাক্সেস কপি আলাদা রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "মেটাডেটা সম্পাদনা, PDF/A রূপান্তর, OCR, অপ্টিমাইজ, স্বাক্ষর বা সম্পাদনায় বাইট বদলে নতুন হ্যাশ হতে পারে, PDF দেখতে একই হলেও। প্রতিটি সংস্করণের হ্যাশ আলাদা হিসাব ও নথিভুক্ত করুন। মূল রাখুন এবং সংরক্ষণ ও চেইন-অফ-কাস্টডি নীতি অনুসরণ করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "হ্যাশ হিসাবের সময় গোপনীয়তা"
+          },
+          {
+            "t": "p",
+            "x": "ডিভাইসের নিজস্ব ইউটিলিটি স্থানীয়ভাবে হ্যাশ বের করে, PDF ওয়েবসাইটে আপলোডের দরকার হয় না। হ্যাশে সাধারণত নথির লেখা থাকে না, তবে পরিচিত ফাইল শনাক্ত করতে পারে। রেফারেন্স মান আর্কাইভ রেকর্ডের মতোই প্রবেশাধিকার নিয়ন্ত্রণে রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF চেকসাম কী?",
+            "a": "এটি ফাইলের বাইটের গাণিতিক সারাংশ। আগের বিশ্বস্ত মানের সঙ্গে তুলনা করলে পরের পরিবর্তন ধরা যায়।"
+          },
+          {
+            "q": "আর্কাইভের জন্য SHA-256 কি MD5-এর চেয়ে ভালো?",
+            "a": "নতুন অখণ্ডতা রেকর্ডে সাধারণত SHA-256 পছন্দ করা হয়। আর্কাইভ নীতি ও আইনি শর্ত মানুন; অ্যালগরিদম বদলালে নথিভুক্ত করুন।"
+          },
+          {
+            "q": "মিলে যাওয়া চেকসাম কি PDF-এর সত্যতা প্রমাণ করে?",
+            "a": "না। এটি রেফারেন্স ফাইলের সঙ্গে বাইট মেলায়, লেখক বা বিষয়বস্তুর সত্যতা নয়।"
+          },
+          {
+            "q": "PDF সম্পাদনা করলে কি চেকসাম বদলাবে?",
+            "a": "হ্যাঁ। মেটাডেটাসহ বাইট বদলালে সাধারণত নতুন হ্যাশ হয়। প্রতিটি সংস্করণের আলাদা মান বের করুন।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "compare-pdf",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "archive-copy-vs-backup",
+          "original-pdf-vs-access-copy",
+          "will-this-file-still-open"
+        ]
       }
     ]
   },
@@ -26750,6 +27505,157 @@
           "remove-metadata-from-pdf",
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-checksum-basics-for-archives",
+        "slug": "pdf-checksum-basics-for-archives",
+        "cluster": "archive-expansion",
+        "title": "Kiến thức checksum PDF cơ bản cho lưu trữ",
+        "metaTitle": "Kiến thức checksum PDF cơ bản cho lưu trữ",
+        "metaDescription": "Tính và so sánh hash SHA-256 của PDF lưu trữ. Tìm hiểu hash chứng minh gì và cách giữ giá trị chuẩn đáng tin.",
+        "primaryKeyword": "checksum PDF SHA-256 cho lưu trữ",
+        "secondaryKeywords": [
+          "SHA-256 PDF checksum",
+          "verify PDF integrity",
+          "archive file hash",
+          "PDF authenticity"
+        ],
+        "answer": "Checksum SHA-256 giúp xác định byte của PDF có đổi kể từ lúc tính hash hay không. Tính hash của tệp cuối, lưu trong hồ sơ được bảo vệ rồi tính lại sau khi chuyển. Khớp với hash chuẩn đáng tin cậy cho biết byte trùng nhau; không chứng minh ai tạo tệp hay nội dung xác thực.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Checksum hay hash mật mã là dấu vân tay tính từ byte của tệp. Với lưu trữ, SHA-256 giúp phát hiện PDF thay đổi sau thời điểm ghi nhận hash. Hãy lưu hash chuẩn riêng trong hồ sơ đáng tin; nếu nó bị sửa cùng PDF thì so sánh mất ý nghĩa."
+          },
+          {
+            "t": "h2",
+            "x": "Cách tính checksum SHA-256 cho PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ PDF gốc",
+                "x": "Giữ nguyên tệp nguồn. Nếu tạo bản truy cập, tính hash riêng vì chuyển đổi hoặc chỉnh sửa làm đổi byte."
+              },
+              {
+                "h": "Tính SHA-256 trên thiết bị",
+                "x": "Trên macOS hoặc Linux, chạy `shasum -a 256 file.pdf` hoặc `sha256sum file.pdf`. Trên Windows, dùng `certutil -hashfile file.pdf SHA256`."
+              },
+              {
+                "h": "Lưu giá trị cùng hồ sơ",
+                "x": "Ghi toàn bộ hash, tên và phiên bản tệp, ngày, người hoặc hệ thống đã tính trong hồ sơ theo chính sách kiểm soát."
+              },
+              {
+                "h": "Xác minh sau này",
+                "x": "Tính lại SHA-256 trên bản nhận hoặc khôi phục, rồi so 64 ký tự thập lục phân với giá trị chuẩn."
+              },
+              {
+                "h": "Kiểm tra tài liệu riêng",
+                "x": "Dùng [Trình đọc PDF](/tools/pdf-reader) xem trang và [So sánh PDF](/tools/compare-pdf) tìm khác biệt trực quan."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Xem trang và so sánh các bản PDF ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Checksum cho biết điều gì"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Kiểm tra",
+              "Cho biết",
+              "Không chứng minh"
+            ],
+            "rows": [
+              [
+                "Hash hiện tại khớp SHA-256 lưu an toàn",
+                "Byte giống tệp tại thời điểm tính giá trị chuẩn.",
+                "Không xác định tác giả hay chứng minh nội dung đúng."
+              ],
+              [
+                "Hash đã thay đổi",
+                "Byte của tệp khác nhau.",
+                "Tự nó không cho biết thay đổi khi nào, thế nào hay vì sao."
+              ],
+              [
+                "Tên hoặc kích thước khớp",
+                "Chỉ tên hoặc kích thước hiển thị giống nhau.",
+                "Không chứng minh nội dung giống hệt."
+              ],
+              [
+                "PDF trông giống nhau",
+                "Giao diện nhìn thấy có thể giống nhau.",
+                "Không chứng minh byte giống từng phần; siêu dữ liệu có thể khác."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao SHA-256 hữu ích để kiểm tra toàn vẹn"
+          },
+          {
+            "t": "p",
+            "x": "SHA-256 chuyển byte của tệp thành giá trị thập lục phân dài 64 ký tự. Khi byte đổi, hash thường cũng đổi. Muốn xác minh tính toàn vẹn, cần giá trị chuẩn tính trước và được bảo vệ khỏi sửa trái phép. Đừng chỉ so tên hay kích thước."
+          },
+          {
+            "t": "h2",
+            "x": "Checksum không chứng minh tính xác thực hay an toàn"
+          },
+          {
+            "t": "p",
+            "x": "Hash khớp cho biết byte giống tệp gắn với giá trị chuẩn, nếu giá trị đó đáng tin. Nó không chứng minh ai tạo PDF, chữ ký hợp lệ, nội dung đúng hay mở tệp an toàn. Muốn xác thực, dùng chữ ký số và kiểm tra chứng thư theo quy trình tổ chức."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ riêng bản gốc và bản truy cập"
+          },
+          {
+            "t": "p",
+            "x": "Sửa siêu dữ liệu, chuyển PDF/A, OCR, tối ưu, ký hay chỉnh sửa đều có thể đổi byte và tạo hash mới dù tài liệu nhìn giống. Tính, ghi hash riêng cho từng phiên bản. Giữ bản gốc và theo chính sách lưu giữ cùng chuỗi bảo quản chứng cứ."
+          },
+          {
+            "t": "h2",
+            "x": "Quyền riêng tư khi tính hash"
+          },
+          {
+            "t": "p",
+            "x": "Tiện ích có sẵn trên thiết bị tính hash cục bộ, không cần tải PDF lên website. Hash thường không chứa văn bản tài liệu nhưng có thể nhận diện tệp đã biết. Bảo vệ giá trị chuẩn với quyền truy cập như hồ sơ lưu trữ."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Checksum PDF là gì?",
+            "a": "Đó là bản tóm tắt toán học của byte trong tệp. So với giá trị cũ đáng tin, nó giúp phát hiện thay đổi về sau."
+          },
+          {
+            "q": "SHA-256 có tốt hơn MD5 cho lưu trữ không?",
+            "a": "Với hồ sơ toàn vẹn mới, SHA-256 thường được ưu tiên. Theo chính sách lưu trữ và ghi lại nếu đổi thuật toán."
+          },
+          {
+            "q": "Checksum khớp có chứng minh PDF xác thực không?",
+            "a": "Không. Nó cho biết byte khớp tệp gắn với giá trị chuẩn, không xác định tác giả hoặc xác minh nội dung."
+          },
+          {
+            "q": "Chỉnh sửa PDF có đổi checksum không?",
+            "a": "Có. Thay đổi byte, kể cả siêu dữ liệu, thường tạo hash mới. Tính riêng cho từng phiên bản."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "compare-pdf",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "archive-copy-vs-backup",
+          "original-pdf-vs-access-copy",
+          "will-this-file-still-open"
         ]
       }
     ]
@@ -31213,6 +32119,157 @@
           "remove-metadata-from-pdf",
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "pdf-checksum-basics-for-archives",
+        "slug": "pdf-checksum-basics-for-archives",
+        "cluster": "archive-expansion",
+        "title": "归档 PDF 校验和基础知识",
+        "metaTitle": "归档 PDF 校验和基础知识",
+        "metaDescription": "计算并比较归档 PDF 的 SHA-256 哈希。了解它能证明什么，以及如何保存可信基准值。",
+        "primaryKeyword": "归档 PDF SHA-256 校验和",
+        "secondaryKeywords": [
+          "SHA-256 PDF checksum",
+          "verify PDF integrity",
+          "archive file hash",
+          "PDF authenticity"
+        ],
+        "answer": "SHA-256 校验和可帮助判断 PDF 的字节是否在计算哈希后发生变化。计算最终文件的哈希，将其保存在受保护的记录中，并在传输后重新计算。与可信基准哈希匹配表示字节相同；它不能证明文件由谁创建或内容真实。",
+        "body": [
+          {
+            "t": "p",
+            "x": "校验和或加密哈希是根据文件字节计算出的数字指纹。归档时，SHA-256 可用于检测 PDF 在记录哈希后是否发生变化。请将基准值单独保存在可信记录中；如果 PDF 和哈希一起被修改，比较就失去意义。"
+          },
+          {
+            "t": "h2",
+            "x": "如何计算 PDF 的 SHA-256 校验和"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留原始 PDF",
+                "x": "保存未更改的源文件。若制作访问副本，应单独计算哈希，因为转换或编辑会改变字节。"
+              },
+              {
+                "h": "在设备上计算 SHA-256",
+                "x": "macOS 或 Linux 可运行 `shasum -a 256 file.pdf` 或 `sha256sum file.pdf`。Windows 可运行 `certutil -hashfile file.pdf SHA256`。"
+              },
+              {
+                "h": "将数值与记录一起保存",
+                "x": "按组织政策控制的方式记录完整哈希、文件名和版本、日期，以及计算者或系统。"
+              },
+              {
+                "h": "之后进行验证",
+                "x": "对收到或恢复的副本重新计算 SHA-256，并将 64 位十六进制字符与基准值比较。"
+              },
+              {
+                "h": "单独检查文档",
+                "x": "用[PDF 阅读器](/tools/pdf-reader)检查页面，用[比较 PDF](/tools/compare-pdf)查找两个副本的视觉差异。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "在当前标签页查看页面并比较 PDF 副本。免费，无需注册，没有水印。"
+          },
+          {
+            "t": "h2",
+            "x": "校验和能说明什么"
+          },
+          {
+            "t": "table",
+            "head": [
+              "检查",
+              "表示什么",
+              "不能证明什么"
+            ],
+            "rows": [
+              [
+                "当前哈希与安全保存的 SHA-256 基准值相同",
+                "字节与计算基准值时的文件相同。",
+                "不能确认作者身份或内容真实性。"
+              ],
+              [
+                "哈希已变化",
+                "文件字节不同。",
+                "单凭这一点无法知道何时、如何或为何变化。"
+              ],
+              [
+                "文件名或大小相同",
+                "仅显示名称或大小相同。",
+                "不能证明内容完全相同。"
+              ],
+              [
+                "PDF 看起来相同",
+                "可见外观可能一致。",
+                "不能证明逐字节相同；元数据可能不同。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "为什么 SHA-256 可用于检查完整性"
+          },
+          {
+            "t": "p",
+            "x": "SHA-256 会将文件字节转换为 64 位十六进制值。只要有任意字节变化，哈希通常也会变化。验证完整性需要事先计算并防止未经授权修改的基准值。不要只比较文件名或大小。"
+          },
+          {
+            "t": "h2",
+            "x": "校验和不能证明真实性或安全性"
+          },
+          {
+            "t": "p",
+            "x": "哈希匹配表示字节与可信基准值所关联文件相同，前提是基准值可信。它不能证明 PDF 的创建者、签名是否合法、内容是否正确，也不能证明打开文件是否安全。验证真实性时，应使用数字签名并按组织流程验证证书。"
+          },
+          {
+            "t": "h2",
+            "x": "将原件与访问副本分开保存"
+          },
+          {
+            "t": "p",
+            "x": "修改元数据、转为 PDF/A、OCR、优化、签名或编辑都可能改变字节并产生新哈希，即使文档看起来相同。每个版本单独计算并记录哈希。保留原件并遵循适用的保留和证据链政策。"
+          },
+          {
+            "t": "h2",
+            "x": "计算哈希时的隐私"
+          },
+          {
+            "t": "p",
+            "x": "设备自带工具可在本机计算哈希，无需将 PDF 上传到网站。哈希通常不含文档正文，但可能用于识别已知文件。请按照归档记录的访问控制要求保护基准值。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF 校验和是什么？",
+            "a": "它是文件字节的数学摘要。与可信旧值比较，有助于发现后续变化。"
+          },
+          {
+            "q": "SHA-256 比 MD5 更适合归档吗？",
+            "a": "对于新的完整性记录，通常优先使用 SHA-256。遵循归档政策和法律要求；更换算法时应留下记录。"
+          },
+          {
+            "q": "校验和匹配能证明 PDF 真实吗？",
+            "a": "不能。它表示字节与基准值关联的文件相同，但不确认作者身份或内容真实性。"
+          },
+          {
+            "q": "编辑 PDF 会改变校验和吗？",
+            "a": "会。任何字节变化，包括元数据，通常都会产生新哈希。请为每个版本单独计算。"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "compare-pdf",
+          "remove-metadata"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "archive-copy-vs-backup",
+          "original-pdf-vs-access-copy",
+          "will-this-file-still-open"
         ]
       }
     ]
