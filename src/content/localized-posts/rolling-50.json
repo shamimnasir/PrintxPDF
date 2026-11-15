@@ -5238,6 +5238,162 @@
           "prepare-pdf-for-long-term-archive",
           "pdf-checksum-basics-for-archives"
         ]
+      },
+      {
+        "topic": "document-retention-handoff-checklist",
+        "slug": "document-retention-handoff-checklist",
+        "cluster": "archive-expansion",
+        "title": "Lista para entregar documentos sujetos a retención",
+        "metaTitle": "Lista para entregar documentos sujetos a retención",
+        "metaDescription": "Prepara una entrega de documentos con inventario, fechas, acceso y control de versiones. Gratis, privado en el navegador y sin registro.",
+        "primaryKeyword": "lista de entrega de documentos y retención",
+        "secondaryKeywords": [
+          "document handoff checklist",
+          "records retention transfer",
+          "archive custody transfer"
+        ],
+        "answer": "Para entregar documentos sujetos a retención, prepara un inventario, confirma el responsable y las fechas de conservación, conserva los originales, verifica que los archivos abran y acuerda un canal de transferencia aprobado. Registra qué se entregó, cuándo y a quién. Un archivo ZIP facilita empaquetar varios archivos, pero no cifra ni sustituye una copia de seguridad o una política de retención.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Una entrega fiable necesita contexto y responsabilidad, no solo un archivo adjunto. Antes de transferir documentos, confirma quién los recibe, por qué, cuánto tiempo deben conservarse y qué reglas de acceso se aplican. Prepara un inventario, conserva los originales y revisa la copia que entregarás. Puedes agrupar archivos con Create ZIP, que funciona en el navegador, pero ZIP no añade contraseña ni reemplaza el cifrado aprobado."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo preparar una entrega de documentos"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Confirma alcance y responsable",
+                "x": "Lista los registros, el motivo de la entrega, quién los aprueba y quién asume la custodia."
+              },
+              {
+                "h": "Registra retención y acceso",
+                "x": "Incluye la fecha o regla de retención aprobada, restricciones de acceso y el próximo hito de revisión."
+              },
+              {
+                "h": "Prepara una copia ordenada",
+                "x": "Conserva la fuente, usa nombres claros y verifica que no incluyan datos sensibles innecesarios."
+              },
+              {
+                "h": "Revisa y empaqueta",
+                "x": "Abre algunos archivos y comprueba el inventario. Para agruparlos, usa [Crear ZIP](/tools/create-zip); no protege el ZIP con contraseña."
+              },
+              {
+                "h": "Transfiere y confirma recepción",
+                "x": "Usa el canal aprobado, confirma el destinatario y registra fecha, método, contenido y aceptación."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Organiza los archivos en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Lista de control para la entrega"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Área",
+              "Qué documentar",
+              "Comprobación"
+            ],
+            "rows": [
+              [
+                "Alcance",
+                "Archivos, versiones, periodo y exclusiones.",
+                "El inventario coincide con la entrega."
+              ],
+              [
+                "Custodia",
+                "Responsable que entrega y persona que recibe.",
+                "Ambas partes aceptan el cambio de custodia."
+              ],
+              [
+                "Retención",
+                "Política aplicable, fecha o regla de revisión.",
+                "La instrucción viene de una fuente autorizada."
+              ],
+              [
+                "Acceso",
+                "Permisos, destinatarios y canal de transferencia.",
+                "El canal está aprobado para esa sensibilidad."
+              ],
+              [
+                "Integridad",
+                "Tamaño, páginas y, si corresponde, checksum.",
+                "Se confirma recepción e integridad según el proceso."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Conserva el original y describe el paquete"
+          },
+          {
+            "t": "p",
+            "x": "No sobrescribas el registro maestro al crear una copia para entregar. Incluye nombres, identificadores, fechas, versiones y una breve descripción de cada elemento en el inventario. Anota archivos no entregados y el motivo. Usa nombres que ayuden a buscar sin revelar nombres personales, números de cuenta o información médica. Si se crea un paquete ZIP, confirma que se incluyeron las carpetas necesarias y que quien lo recibe puede extraerlo."
+          },
+          {
+            "t": "h2",
+            "x": "Aclara las responsabilidades de retención"
+          },
+          {
+            "t": "p",
+            "x": "La entrega debe indicar qué política aprobada aplica, quién conserva los documentos, quién puede acceder y qué hacer ante una solicitud de eliminación, suspensión o auditoría. No inventes plazos legales ni cambies una fecha por conveniencia. Si las reglas no están claras, consulta al responsable de registros, privacidad o asesoría legal antes de transferir. Incluye el próximo control o fecha de revisión, si existe."
+          },
+          {
+            "t": "h2",
+            "x": "Protege el contenido durante la transferencia"
+          },
+          {
+            "t": "p",
+            "x": "Elige un canal autorizado para la clasificación de los documentos y verifica la dirección del destinatario. ZIP es un contenedor, no cifrado: Create ZIP no añade contraseña. Si la política exige protección, utiliza un método aprobado; para un PDF puede ser necesario [Proteger PDF](/tools/protect-pdf) antes de incluirlo. Comparte la contraseña por un canal separado según el procedimiento. Elimina propiedades estándar innecesarias de una copia de distribución con [Eliminar metadatos](/tools/remove-metadata), sin modificar el original retenido."
+          },
+          {
+            "t": "h2",
+            "x": "Confirma recepción y deja un rastro auditable"
+          },
+          {
+            "t": "p",
+            "x": "Guarda evidencia de quién aprobó la entrega, qué se envió, cuándo, por qué método y quién confirmó recepción. Para paquetes importantes, compara el inventario y los tamaños; un checksum solo verifica igualdad si se compara con un valor confiable registrado. No publiques información sensible en el registro de transferencia. Acuerda cómo se notifican errores, archivos dañados o solicitudes posteriores y conserva el registro conforme a la política."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué debe incluir una entrega de documentos?",
+            "a": "Incluye un inventario, versiones, fechas relevantes, clasificación, responsable que entrega y recibe, regla de retención, permisos, canal de transferencia y confirmación de recepción."
+          },
+          {
+            "q": "¿Un ZIP protege con contraseña los documentos?",
+            "a": "No con Create ZIP de PrintxPDF. La herramienta agrupa archivos en el navegador, pero no cifra el ZIP ni le añade contraseña. Usa el método de protección aprobado por tu organización."
+          },
+          {
+            "q": "¿Debo enviar el original o una copia?",
+            "a": "Sigue la política de custodia. En general, conserva el original maestro y documenta si la entrega es una copia de acceso o una transferencia formal de custodia."
+          },
+          {
+            "q": "¿Cómo compruebo que el paquete llegó completo?",
+            "a": "Compara el inventario con los archivos recibidos, abre una muestra y sigue el proceso de integridad aprobado. Un checksum requiere un valor de referencia confiable para demostrar igualdad."
+          }
+        ],
+        "relatedTools": [
+          "create-zip",
+          "protect-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-archive-naming-convention",
+          "original-pdf-vs-access-copy"
+        ]
       }
     ]
   },
@@ -10470,6 +10626,162 @@
           "prepare-pdf-for-long-term-archive",
           "pdf-checksum-basics-for-archives"
         ]
+      },
+      {
+        "topic": "document-retention-handoff-checklist",
+        "slug": "document-retention-handoff-checklist",
+        "cluster": "archive-expansion",
+        "title": "Checklist de transferência de documentos sob retenção",
+        "metaTitle": "Checklist de transferência de documentos sob retenção",
+        "metaDescription": "Prepare uma transferência com inventário, prazos, acesso e versões. Grátis, privado no navegador e sem cadastro.",
+        "primaryKeyword": "checklist de transferência de documentos e retenção",
+        "secondaryKeywords": [
+          "document handoff checklist",
+          "records retention transfer",
+          "archive custody transfer"
+        ],
+        "answer": "Para transferir documentos sujeitos a retenção, prepare um inventário, confirme os responsáveis e os prazos, preserve os originais, verifique se os arquivos abrem e combine um canal aprovado. Registre o que foi enviado, quando e para quem. Um ZIP ajuda a agrupar arquivos, mas não criptografa nem substitui backup ou política de retenção.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Uma transferência confiável precisa de contexto e responsabilidade, não apenas de um anexo. Antes de enviar documentos, confirme quem receberá, por quê, por quanto tempo devem ser mantidos e quais regras de acesso se aplicam. Prepare um inventário, preserve os originais e revise a cópia de entrega. Você pode agrupar arquivos com Create ZIP, que funciona no navegador, mas o ZIP não ganha senha nem substitui a criptografia aprovada."
+          },
+          {
+            "t": "h2",
+            "x": "Como preparar uma transferência de documentos"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Confirme o escopo e o responsável",
+                "x": "Liste os registros, o motivo da transferência, quem aprova e quem assume a custódia."
+              },
+              {
+                "h": "Registre retenção e acesso",
+                "x": "Inclua o prazo ou regra aprovada, restrições de acesso e a próxima revisão."
+              },
+              {
+                "h": "Prepare uma cópia organizada",
+                "x": "Preserve a fonte, use nomes claros e evite dados sensíveis desnecessários nos nomes."
+              },
+              {
+                "h": "Revise e compacte",
+                "x": "Abra alguns arquivos e confira o inventário. Para agrupar, use [Criar ZIP](/tools/create-zip); a ferramenta não protege o ZIP com senha."
+              },
+              {
+                "h": "Transfira e confirme o recebimento",
+                "x": "Use o canal aprovado, confirme o destinatário e registre data, método, conteúdo e aceite."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Organize os arquivos na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Checklist para transferência"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Área",
+              "O que registrar",
+              "Verificação"
+            ],
+            "rows": [
+              [
+                "Escopo",
+                "Arquivos, versões, período e exclusões.",
+                "O inventário corresponde à entrega."
+              ],
+              [
+                "Custódia",
+                "Responsável que envia e pessoa que recebe.",
+                "Ambas as partes aceitam a mudança de custódia."
+              ],
+              [
+                "Retenção",
+                "Política aplicável, prazo ou regra de revisão.",
+                "A instrução vem de fonte autorizada."
+              ],
+              [
+                "Acesso",
+                "Permissões, destinatários e canal de envio.",
+                "O canal é aprovado para essa sensibilidade."
+              ],
+              [
+                "Integridade",
+                "Tamanho, páginas e, se aplicável, checksum.",
+                "Recebimento e integridade são confirmados conforme o processo."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Preserve o original e descreva o pacote"
+          },
+          {
+            "t": "p",
+            "x": "Não sobrescreva o registro mestre ao criar uma cópia de entrega. Inclua nomes, identificadores, datas, versões e uma breve descrição de cada item no inventário. Anote arquivos excluídos e o motivo. Use nomes que facilitem a busca sem revelar nomes pessoais, números de conta ou dados médicos. Se criar um ZIP, confirme que as pastas necessárias foram incluídas e que o destinatário consegue extraí-lo."
+          },
+          {
+            "t": "h2",
+            "x": "Esclareça as responsabilidades de retenção"
+          },
+          {
+            "t": "p",
+            "x": "A transferência deve indicar qual política aprovada se aplica, quem manterá os documentos, quem pode acessá-los e como tratar pedidos de descarte, suspensão ou auditoria. Não invente prazos legais nem altere datas por conveniência. Se as regras não estiverem claras, consulte a área de arquivos, privacidade ou assessoria jurídica antes do envio. Inclua a próxima revisão, se houver."
+          },
+          {
+            "t": "h2",
+            "x": "Proteja o conteúdo durante o envio"
+          },
+          {
+            "t": "p",
+            "x": "Escolha um canal autorizado para a classificação dos documentos e confira o endereço do destinatário. ZIP é um contêiner, não criptografia: o Create ZIP não adiciona senha. Se a política exigir proteção, use um método aprovado; um PDF pode precisar de [Proteger PDF](/tools/protect-pdf) antes de ser incluído. Compartilhe a senha por canal separado conforme o procedimento. Remova propriedades padrão desnecessárias de uma cópia de distribuição com [Remover metadados](/tools/remove-metadata), sem alterar o original retido."
+          },
+          {
+            "t": "h2",
+            "x": "Confirme o recebimento e mantenha um registro"
+          },
+          {
+            "t": "p",
+            "x": "Guarde evidências de quem aprovou, o que foi enviado, quando, por qual método e quem confirmou. Para pacotes importantes, compare inventário e tamanhos; um checksum só comprova igualdade quando comparado a um valor confiável registrado. Não inclua dados sensíveis no log de transferência. Combine como comunicar erros, arquivos danificados ou pedidos posteriores e preserve o registro conforme a política."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "O que incluir em uma transferência de documentos?",
+            "a": "Inclua inventário, versões, datas relevantes, classificação, responsáveis por enviar e receber, regra de retenção, permissões, canal de transferência e confirmação de recebimento."
+          },
+          {
+            "q": "Um ZIP protege os arquivos com senha?",
+            "a": "Não com o Create ZIP do PrintxPDF. A ferramenta agrupa arquivos no navegador, mas não criptografa o ZIP nem define uma senha. Use o método aprovado pela organização."
+          },
+          {
+            "q": "Devo enviar o original ou uma cópia?",
+            "a": "Siga a política de custódia. Em geral, preserve o original mestre e documente se a entrega é uma cópia de acesso ou uma transferência formal de custódia."
+          },
+          {
+            "q": "Como confirmar que o pacote chegou completo?",
+            "a": "Compare o inventário aos arquivos recebidos, abra uma amostra e siga o processo de integridade aprovado. Um checksum precisa de um valor de referência confiável para comprovar igualdade."
+          }
+        ],
+        "relatedTools": [
+          "create-zip",
+          "protect-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-archive-naming-convention",
+          "original-pdf-vs-access-copy"
+        ]
       }
     ]
   },
@@ -15701,6 +16013,162 @@
           "pdf-archive-review-schedule",
           "prepare-pdf-for-long-term-archive",
           "pdf-checksum-basics-for-archives"
+        ]
+      },
+      {
+        "topic": "document-retention-handoff-checklist",
+        "slug": "document-retention-handoff-checklist",
+        "cluster": "archive-expansion",
+        "title": "दस्तावेज़ प्रतिधारण हस्तांतरण चेकलिस्ट",
+        "metaTitle": "दस्तावेज़ प्रतिधारण हस्तांतरण चेकलिस्ट",
+        "metaDescription": "सूची, समयसीमा, पहुँच और संस्करण के साथ दस्तावेज़ हस्तांतरण तैयार करें। मुफ़्त, निजी ब्राउज़र में, बिना साइनअप।",
+        "primaryKeyword": "दस्तावेज़ प्रतिधारण हस्तांतरण चेकलिस्ट",
+        "secondaryKeywords": [
+          "document handoff checklist",
+          "records retention transfer",
+          "archive custody transfer"
+        ],
+        "answer": "प्रतिधारण वाले दस्तावेज़ सौंपने से पहले सूची बनाएँ, जिम्मेदार लोगों और समयसीमाओं की पुष्टि करें, मूल सुरक्षित रखें, फ़ाइलें खोलकर जाँचें और स्वीकृत हस्तांतरण माध्यम तय करें। क्या, कब और किसे दिया, दर्ज करें। ZIP कई फ़ाइलें जोड़ता है, पर एन्क्रिप्ट नहीं करता और बैकअप या प्रतिधारण नीति का विकल्प नहीं है।",
+        "body": [
+          {
+            "t": "p",
+            "x": "विश्वसनीय दस्तावेज़ हस्तांतरण के लिए केवल अटैचमेंट नहीं, संदर्भ और जिम्मेदारी भी चाहिए। भेजने से पहले पुष्टि करें कि कौन प्राप्त करेगा, क्यों, कितने समय तक रखना है और पहुँच के कौन से नियम लागू हैं। सूची बनाएँ, मूल सुरक्षित रखें और दी जाने वाली कॉपी जाँचें। Create ZIP से फ़ाइलें ब्राउज़र में समूहित की जा सकती हैं, लेकिन ZIP पर पासवर्ड नहीं लगता और यह स्वीकृत एन्क्रिप्शन का विकल्प नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "दस्तावेज़ हस्तांतरण कैसे तैयार करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "दायरा और जिम्मेदार व्यक्ति तय करें",
+                "x": "रिकॉर्ड, हस्तांतरण का कारण, अनुमोदक और कस्टडी संभालने वाले व्यक्ति लिखें।"
+              },
+              {
+                "h": "प्रतिधारण और पहुँच दर्ज करें",
+                "x": "स्वीकृत अवधि या नियम, पहुँच सीमाएँ और अगली समीक्षा की तारीख शामिल करें।"
+              },
+              {
+                "h": "व्यवस्थित कॉपी तैयार करें",
+                "x": "स्रोत सुरक्षित रखें, स्पष्ट नाम दें और नामों में अनावश्यक संवेदनशील जानकारी न रखें।"
+              },
+              {
+                "h": "जाँचें और पैक करें",
+                "x": "कुछ फ़ाइलें खोलें और सूची मिलाएँ। समूह बनाने के लिए [Create ZIP](/tools/create-zip) लें; यह ZIP को पासवर्ड से सुरक्षित नहीं करता।"
+              },
+              {
+                "h": "हस्तांतरित कर प्राप्ति की पुष्टि करें",
+                "x": "स्वीकृत माध्यम उपयोग करें, प्राप्तकर्ता जाँचें और तारीख, तरीका, सामग्री व स्वीकृति दर्ज करें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "अपने टैब में फ़ाइलें व्यवस्थित करें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "हस्तांतरण जाँच सूची"
+          },
+          {
+            "t": "table",
+            "head": [
+              "क्षेत्र",
+              "क्या दर्ज करें",
+              "जाँच"
+            ],
+            "rows": [
+              [
+                "दायरा",
+                "फ़ाइलें, संस्करण, अवधि और अपवर्जन।",
+                "सूची सौंपे गए पैकेज से मेल खाती है।"
+              ],
+              [
+                "कस्टडी",
+                "सौंपने वाला जिम्मेदार व्यक्ति और प्राप्तकर्ता।",
+                "दोनों कस्टडी बदलाव स्वीकार करते हैं।"
+              ],
+              [
+                "प्रतिधारण",
+                "लागू नीति, समय या समीक्षा नियम।",
+                "निर्देश अधिकृत स्रोत से है।"
+              ],
+              [
+                "पहुँच",
+                "अनुमतियाँ, प्राप्तकर्ता और हस्तांतरण माध्यम।",
+                "माध्यम संवेदनशीलता के लिए स्वीकृत है।"
+              ],
+              [
+                "अखंडता",
+                "आकार, पेज और ज़रूरत पर चेकसम।",
+                "प्रक्रिया अनुसार प्राप्ति और अखंडता पुष्ट है।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "मूल रखें और पैकेज का विवरण दें"
+          },
+          {
+            "t": "p",
+            "x": "हस्तांतरण कॉपी बनाते समय मास्टर रिकॉर्ड को ओवरराइट न करें। सूची में नाम, पहचान, तारीख, संस्करण और हर चीज़ का छोटा विवरण दें। छोड़ी गई फ़ाइलें और कारण लिखें। ऐसे नाम रखें जो खोजने में मदद करें, पर पूरा नाम, खाता नंबर या मेडिकल जानकारी न उजागर करें। ZIP बनाएँ तो जरूरी फ़ोल्डर शामिल हैं और प्राप्तकर्ता उसे खोल सकता है, यह जाँचें।"
+          },
+          {
+            "t": "h2",
+            "x": "प्रतिधारण की जिम्मेदारी स्पष्ट करें"
+          },
+          {
+            "t": "p",
+            "x": "हस्तांतरण में बताएं कि कौन सी स्वीकृत नीति लागू है, दस्तावेज़ कौन रखेगा, किसे पहुँच मिलेगी और नष्ट करने, रोक या ऑडिट अनुरोध पर क्या करना है। कानूनी समयसीमा न गढ़ें और सुविधा के लिए तारीख न बदलें। नियम अस्पष्ट हों तो भेजने से पहले रिकॉर्ड प्रबंधक, गोपनीयता अधिकारी या कानूनी सलाहकार से पूछें। अगली समीक्षा हो तो तारीख दर्ज करें।"
+          },
+          {
+            "t": "h2",
+            "x": "हस्तांतरण के दौरान सामग्री सुरक्षित रखें"
+          },
+          {
+            "t": "p",
+            "x": "दस्तावेज़ के वर्गीकरण के लिए अधिकृत चैनल चुनें और प्राप्तकर्ता का पता जाँचें। ZIP कंटेनर है, एन्क्रिप्शन नहीं: Create ZIP पासवर्ड नहीं लगाता। नीति सुरक्षा माँगे तो स्वीकृत तरीका अपनाएँ; PDF को शामिल करने से पहले [Protect PDF](/tools/protect-pdf) से सुरक्षित करना जरूरी हो सकता है। प्रक्रिया के अनुसार पासवर्ड अलग चैनल से भेजें। रखे जाने वाले मूल को बदले बिना वितरण कॉपी से अनावश्यक मानक गुण हटाने के लिए [Remove Metadata](/tools/remove-metadata) लें।"
+          },
+          {
+            "t": "h2",
+            "x": "प्राप्ति की पुष्टि करें और ऑडिट रिकॉर्ड रखें"
+          },
+          {
+            "t": "p",
+            "x": "किसने मंजूरी दी, क्या भेजा, कब, किस माध्यम से और किसने प्राप्ति की पुष्टि की, इसका प्रमाण रखें। महत्वपूर्ण पैकेज में सूची और फ़ाइल आकार मिलाएँ; चेकसम समानता तभी बताता है जब भरोसेमंद दर्ज मान से तुलना हो। हस्तांतरण लॉग में संवेदनशील सामग्री न लिखें। त्रुटि, खराब फ़ाइल या बाद के अनुरोध की सूचना कैसे होगी, तय करें और नीति अनुसार रिकॉर्ड रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "दस्तावेज़ हस्तांतरण में क्या शामिल करें?",
+            "a": "सूची, संस्करण, तारीखें, वर्गीकरण, भेजने और पाने वाले जिम्मेदार लोग, प्रतिधारण नियम, अनुमतियाँ, माध्यम और प्राप्ति की पुष्टि शामिल करें।"
+          },
+          {
+            "q": "क्या ZIP फ़ाइलों पर पासवर्ड लगाता है?",
+            "a": "PrintxPDF Create ZIP नहीं। यह ब्राउज़र में फ़ाइलें जोड़ता है, पर ZIP एन्क्रिप्ट या पासवर्ड-सुरक्षित नहीं करता। संगठन का स्वीकृत तरीका अपनाएँ।"
+          },
+          {
+            "q": "क्या मूल दस्तावेज़ भेजना चाहिए या कॉपी?",
+            "a": "कस्टडी नीति अपनाएँ। आम तौर पर मास्टर मूल सुरक्षित रखें और दर्ज करें कि यह पहुँच कॉपी है या औपचारिक कस्टडी हस्तांतरण।"
+          },
+          {
+            "q": "पैकेज पूरा पहुँचा, यह कैसे जाँचें?",
+            "a": "सूची को मिली फ़ाइलों से मिलाएँ, नमूना खोलें और स्वीकृत अखंडता प्रक्रिया अपनाएँ। समानता सिद्ध करने के लिए चेकसम को भरोसेमंद संदर्भ मान चाहिए।"
+          }
+        ],
+        "relatedTools": [
+          "create-zip",
+          "protect-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-archive-naming-convention",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
@@ -20942,6 +21410,162 @@
           "pdf-archive-review-schedule",
           "prepare-pdf-for-long-term-archive",
           "pdf-checksum-basics-for-archives"
+        ]
+      },
+      {
+        "topic": "document-retention-handoff-checklist",
+        "slug": "document-retention-handoff-checklist",
+        "cluster": "archive-expansion",
+        "title": "قائمة تسليم مستندات الاحتفاظ",
+        "metaTitle": "قائمة تسليم مستندات الاحتفاظ",
+        "metaDescription": "جهز تسليم المستندات بجرد ومواعيد وصلاحيات وإصدارات. أداة مجانية وخاصة في المتصفح، بلا تسجيل أو علامة مائية، مع خطوات واضحة للتأكيد.",
+        "primaryKeyword": "قائمة تسليم مستندات الاحتفاظ",
+        "secondaryKeywords": [
+          "document handoff checklist",
+          "records retention transfer",
+          "archive custody transfer"
+        ],
+        "answer": "لتسليم مستندات خاضعة للاحتفاظ، أنشئ جرداً، وأكد المسؤولين والمواعيد، واحتفظ بالأصول، وافحص فتح الملفات، واتفق على قناة نقل معتمدة. سجل ما تم تسليمه ومتى ولمن. يساعد ZIP في تجميع الملفات لكنه لا يشفرها ولا يحل محل النسخ الاحتياطي أو سياسة الاحتفاظ.",
+        "body": [
+          {
+            "t": "p",
+            "x": "يحتاج التسليم الموثوق إلى سياق ومسؤولية، لا إلى مرفق فقط. قبل النقل، أكد المستلم والسبب ومدة الاحتفاظ وقواعد الوصول. أنشئ جرداً واحتفظ بالأصول وراجع النسخة التي ستسلمها. يمكنك تجميع الملفات عبر Create ZIP داخل المتصفح، لكن ZIP لا يضيف كلمة مرور ولا يحل محل التشفير المعتمد."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية تجهيز تسليم المستندات"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "أكد النطاق والمسؤول",
+                "x": "سجل السجلات وسبب التسليم ومن يوافق ومن يتولى الحفظ."
+              },
+              {
+                "h": "وثق الاحتفاظ والوصول",
+                "x": "أدرج المدة أو القاعدة المعتمدة وقيود الوصول وموعد المراجعة التالي."
+              },
+              {
+                "h": "جهز نسخة منظمة",
+                "x": "احتفظ بالمصدر واستخدم أسماء واضحة وتجنب بيانات حساسة غير لازمة."
+              },
+              {
+                "h": "راجع وجمّع",
+                "x": "افتح بعض الملفات وطابق الجرد. للتجميع استخدم [إنشاء ZIP](/tools/create-zip)؛ الأداة لا تحمي ZIP بكلمة مرور."
+              },
+              {
+                "h": "انقل وأكد الاستلام",
+                "x": "استخدم القناة المعتمدة وتحقق من المستلم وسجل التاريخ والطريقة والمحتوى والقبول."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "نظم الملفات في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "قائمة تحقق للتسليم"
+          },
+          {
+            "t": "table",
+            "head": [
+              "المجال",
+              "ما الذي يوثق؟",
+              "التحقق"
+            ],
+            "rows": [
+              [
+                "النطاق",
+                "الملفات والإصدارات والفترة والاستثناءات.",
+                "الجرد يطابق الحزمة المسلمة."
+              ],
+              [
+                "الحيازة",
+                "المسؤول الذي يسلم والشخص المستلم.",
+                "يقبل الطرفان انتقال الحيازة."
+              ],
+              [
+                "الاحتفاظ",
+                "السياسة والموعد أو قاعدة المراجعة.",
+                "التوجيه صادر عن جهة مخولة."
+              ],
+              [
+                "الوصول",
+                "الصلاحيات والمستلمون وقناة النقل.",
+                "القناة معتمدة لمستوى الحساسية."
+              ],
+              [
+                "السلامة",
+                "الحجم والصفحات والبصمة عند الحاجة.",
+                "تأكيد الاستلام والسلامة وفق الإجراء."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بالأصل وصف الحزمة"
+          },
+          {
+            "t": "p",
+            "x": "لا تستبدل السجل الرئيسي عند إنشاء نسخة للتسليم. أدرج أسماء الملفات ومعرفاتها وتواريخها وإصداراتها ووصفاً موجزاً في الجرد. سجل الملفات المستثناة والسبب. اختر أسماء تساعد على البحث دون كشف أسماء أشخاص أو أرقام حسابات أو معلومات طبية. إذا أنشأت ZIP، تأكد من تضمين المجلدات اللازمة ومن قدرة المستلم على فكها."
+          },
+          {
+            "t": "h2",
+            "x": "وضح مسؤوليات الاحتفاظ"
+          },
+          {
+            "t": "p",
+            "x": "يجب أن يحدد التسليم السياسة المعتمدة، ومن يحتفظ بالمستندات ومن يملك الوصول وكيفية التعامل مع طلب حذف أو تعليق أو تدقيق. لا تخمّن المدد القانونية ولا تغيّر تاريخاً للتسهيل. إذا لم تكن القواعد واضحة، فاستشر مسؤول السجلات أو الخصوصية أو المستشار القانوني قبل النقل. أدرج موعد المراجعة التالي إن وجد."
+          },
+          {
+            "t": "h2",
+            "x": "احم المحتوى أثناء النقل"
+          },
+          {
+            "t": "p",
+            "x": "اختر قناة معتمدة لتصنيف المستندات وتحقق من عنوان المستلم. ZIP حاوية وليس تشفيراً: لا تضيف Create ZIP كلمة مرور. إذا تطلبت السياسة حماية، استخدم طريقة معتمدة؛ وقد يلزم [حماية PDF](/tools/protect-pdf) قبل إضافته. أرسل كلمة المرور بقناة منفصلة وفق الإجراء. لإزالة الخصائص القياسية غير اللازمة من نسخة التوزيع استخدم [إزالة البيانات الوصفية](/tools/remove-metadata)، مع إبقاء الأصل المحتفظ به دون تغيير."
+          },
+          {
+            "t": "h2",
+            "x": "أكد الاستلام واحتفظ بسجل قابل للتدقيق"
+          },
+          {
+            "t": "p",
+            "x": "احفظ دليلاً على الموافقة وما أرسل وتوقيته وطريقته ومن أكد الاستلام. للحزم المهمة، طابق الجرد والأحجام؛ لا تثبت البصمة التطابق إلا عند مقارنتها بقيمة مرجعية موثوقة مسجلة. لا تضع بيانات حساسة في سجل النقل. اتفق على الإبلاغ عن الأخطاء أو الملفات التالفة والطلبات اللاحقة، واحتفظ بالسجل وفق السياسة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ماذا تتضمن عملية تسليم المستندات؟",
+            "a": "تتضمن الجرد والإصدارات والتواريخ والتصنيف والمسؤولين عن التسليم والاستلام وقاعدة الاحتفاظ والصلاحيات وقناة النقل وتأكيد الاستلام."
+          },
+          {
+            "q": "هل يحمي ZIP الملفات بكلمة مرور؟",
+            "a": "ليس باستخدام Create ZIP من PrintxPDF. تجمع الأداة الملفات في المتصفح لكنها لا تشفر ZIP ولا تضيف كلمة مرور. استخدم طريقة مؤسستك المعتمدة."
+          },
+          {
+            "q": "هل أرسل الأصل أم نسخة؟",
+            "a": "اتبع سياسة الحيازة. غالباً احتفظ بالأصل الرئيسي ووثق ما إذا كان التسليم نسخة للاستخدام أم نقلاً رسمياً للحيازة."
+          },
+          {
+            "q": "كيف أتأكد من اكتمال الحزمة؟",
+            "a": "قارن الجرد بالملفات المستلمة وافتح عينة واتبع إجراء السلامة المعتمد. تحتاج البصمة إلى قيمة مرجعية موثوقة لإثبات التطابق."
+          }
+        ],
+        "relatedTools": [
+          "create-zip",
+          "protect-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-archive-naming-convention",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
@@ -26187,6 +26811,162 @@
           "prepare-pdf-for-long-term-archive",
           "pdf-checksum-basics-for-archives"
         ]
+      },
+      {
+        "topic": "document-retention-handoff-checklist",
+        "slug": "document-retention-handoff-checklist",
+        "cluster": "archive-expansion",
+        "title": "নথি সংরক্ষণ হস্তান্তর চেকলিস্ট",
+        "metaTitle": "নথি সংরক্ষণ হস্তান্তর চেকলিস্ট",
+        "metaDescription": "তালিকা, সময়সীমা, প্রবেশাধিকার ও সংস্করণসহ নথি হস্তান্তর প্রস্তুত করুন। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত, সাইনআপ নেই।",
+        "primaryKeyword": "নথি সংরক্ষণ হস্তান্তর চেকলিস্ট",
+        "secondaryKeywords": [
+          "document handoff checklist",
+          "records retention transfer",
+          "archive custody transfer"
+        ],
+        "answer": "সংরক্ষণযোগ্য নথি হস্তান্তরের আগে তালিকা তৈরি করুন, দায়িত্বপ্রাপ্ত ব্যক্তি ও সময়সীমা নিশ্চিত করুন, মূল কপি রাখুন, ফাইল খুলে দেখুন এবং অনুমোদিত স্থানান্তর মাধ্যম ঠিক করুন। কী, কখন, কাকে দেওয়া হয়েছে লিখুন। ZIP ফাইল গুছিয়ে রাখে, কিন্তু এনক্রিপ্ট করে না এবং ব্যাকআপ বা সংরক্ষণ নীতির বিকল্প নয়।",
+        "body": [
+          {
+            "t": "p",
+            "x": "নির্ভরযোগ্য হস্তান্তরে শুধু অ্যাটাচমেন্ট নয়, প্রেক্ষাপট ও দায়িত্বও দরকার। নথি পাঠানোর আগে কে নেবে, কেন, কত দিন রাখতে হবে এবং প্রবেশাধিকারের নিয়ম কী তা নিশ্চিত করুন। তালিকা তৈরি করুন, মূল কপি রাখুন এবং যে কপি দেবেন তা যাচাই করুন। Create ZIP দিয়ে ব্রাউজারে ফাইল গুছিয়ে নেওয়া যায়, তবে ZIP-এ পাসওয়ার্ড বসে না এবং এটি অনুমোদিত এনক্রিপশনের বিকল্প নয়।"
+          },
+          {
+            "t": "h2",
+            "x": "নথি হস্তান্তর কীভাবে প্রস্তুত করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "পরিধি ও দায়িত্ব নিশ্চিত করুন",
+                "x": "রেকর্ড, হস্তান্তরের কারণ, অনুমোদনকারী এবং কাস্টডি নেবেন যিনি, লিখুন।"
+              },
+              {
+                "h": "সংরক্ষণ ও প্রবেশাধিকার নথিভুক্ত করুন",
+                "x": "অনুমোদিত সময় বা নিয়ম, প্রবেশাধিকার সীমা এবং পরবর্তী পর্যালোচনার তারিখ দিন।"
+              },
+              {
+                "h": "গোছানো কপি তৈরি করুন",
+                "x": "উৎস রাখুন, স্পষ্ট নাম দিন এবং নামে অপ্রয়োজনীয় সংবেদনশীল তথ্য এড়ান।"
+              },
+              {
+                "h": "যাচাই ও প্যাক করুন",
+                "x": "কিছু ফাইল খুলে তালিকা মিলান। একত্র করতে [Create ZIP](/tools/create-zip) নিন; এটি ZIP-এ পাসওয়ার্ড দেয় না।"
+              },
+              {
+                "h": "পাঠিয়ে গ্রহণ নিশ্চিত করুন",
+                "x": "অনুমোদিত মাধ্যম নিন, প্রাপক যাচাই করুন এবং তারিখ, পদ্ধতি, বিষয়বস্তু ও গ্রহণ লিখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "আপনার ট্যাবেই ফাইল গুছিয়ে নিন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "হস্তান্তরের যাচাই তালিকা"
+          },
+          {
+            "t": "table",
+            "head": [
+              "ক্ষেত্র",
+              "কী লিখবেন",
+              "যাচাই"
+            ],
+            "rows": [
+              [
+                "পরিধি",
+                "ফাইল, সংস্করণ, সময়কাল ও বাদ পড়া বিষয়।",
+                "তালিকা হস্তান্তর প্যাকেটের সঙ্গে মেলে।"
+              ],
+              [
+                "কাস্টডি",
+                "দাতা দায়িত্বপ্রাপ্ত ও গ্রহীতা।",
+                "উভয় পক্ষ কাস্টডি বদল মেনে নেয়।"
+              ],
+              [
+                "সংরক্ষণ",
+                "নীতি, তারিখ বা পর্যালোচনা নিয়ম।",
+                "নির্দেশ অনুমোদিত উৎস থেকে এসেছে।"
+              ],
+              [
+                "প্রবেশাধিকার",
+                "অনুমতি, প্রাপক ও স্থানান্তর মাধ্যম।",
+                "সংবেদনশীলতার জন্য মাধ্যম অনুমোদিত।"
+              ],
+              [
+                "অখণ্ডতা",
+                "আকার, পৃষ্ঠা এবং প্রয়োজনে চেকসাম।",
+                "প্রক্রিয়া অনুযায়ী প্রাপ্তি ও অখণ্ডতা নিশ্চিত।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "মূল নথি রাখুন এবং প্যাকেটের বিবরণ দিন"
+          },
+          {
+            "t": "p",
+            "x": "হস্তান্তরের কপি বানাতে মাস্টার রেকর্ড ওভাররাইট করবেন না। তালিকায় নাম, পরিচিতি, তারিখ, সংস্করণ ও প্রতিটি আইটেমের সংক্ষিপ্ত বিবরণ দিন। বাদ পড়া ফাইল ও কারণ লিখুন। এমন নাম দিন যাতে খোঁজা সহজ হয়, কিন্তু ব্যক্তির নাম, হিসাব নম্বর বা চিকিৎসা-তথ্য প্রকাশ না পায়। ZIP বানালে প্রয়োজনীয় ফোল্ডার ঢুকেছে এবং প্রাপক খুলতে পারবেন কি না যাচাই করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সংরক্ষণের দায়িত্ব পরিষ্কার করুন"
+          },
+          {
+            "t": "p",
+            "x": "কোন অনুমোদিত নীতি প্রযোজ্য, নথি কে রাখবে, কার প্রবেশাধিকার থাকবে এবং মুছে ফেলার অনুরোধ, হোল্ড বা অডিট এলে কী করতে হবে তা লিখুন। আইনি সময়সীমা অনুমান করবেন না বা সুবিধার জন্য তারিখ বদলাবেন না। নিয়ম অস্পষ্ট হলে পাঠানোর আগে রেকর্ড ব্যবস্থাপক, গোপনীয়তা কর্মকর্তা বা আইনি পরামর্শকের সঙ্গে কথা বলুন। পরবর্তী পর্যালোচনার তারিখ থাকলে দিন।"
+          },
+          {
+            "t": "h2",
+            "x": "স্থানান্তরের সময় বিষয়বস্তু রক্ষা করুন"
+          },
+          {
+            "t": "p",
+            "x": "নথির শ্রেণিবিভাগের জন্য অনুমোদিত মাধ্যম বাছুন এবং প্রাপকের ঠিকানা যাচাই করুন। ZIP একটি ধারক, এনক্রিপশন নয়: Create ZIP পাসওয়ার্ড দেয় না। নীতিতে সুরক্ষা চাইলে অনুমোদিত পদ্ধতি নিন; PDF হলে প্যাকেটে রাখার আগে [Protect PDF](/tools/protect-pdf) লাগতে পারে। পদ্ধতি অনুযায়ী পাসওয়ার্ড আলাদা মাধ্যমে পাঠান। রাখা মূল না বদলে বিতরণ কপি থেকে অপ্রয়োজনীয় বৈশিষ্ট্য সরাতে [Remove Metadata](/tools/remove-metadata) ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রাপ্তি নিশ্চিত করে নিরীক্ষা-রেকর্ড রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "কে অনুমোদন করেছে, কী পাঠানো হয়েছে, কখন, কোন মাধ্যমে এবং কে গ্রহণ নিশ্চিত করেছে তার প্রমাণ রাখুন। গুরুত্বপূর্ণ প্যাকেটে তালিকা ও ফাইলের আকার মিলান; বিশ্বস্ত রেফারেন্স মানের সঙ্গে তুলনা করলেই চেকসাম সমতা নিশ্চিত করে। স্থানান্তর লগে সংবেদনশীল তথ্য লিখবেন না। ত্রুটি, ক্ষতিগ্রস্ত ফাইল বা পরবর্তী অনুরোধ জানানোর পদ্ধতি ঠিক করুন এবং নীতি অনুযায়ী রেকর্ড রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "নথি হস্তান্তরে কী কী রাখা উচিত?",
+            "a": "তালিকা, সংস্করণ, তারিখ, শ্রেণিবিভাগ, দাতা-গ্রহীতা দায়িত্ব, সংরক্ষণ নিয়ম, অনুমতি, স্থানান্তর মাধ্যম ও গ্রহণ নিশ্চিতকরণ রাখুন।"
+          },
+          {
+            "q": "ZIP কি ফাইলে পাসওয়ার্ড দেয়?",
+            "a": "PrintxPDF Create ZIP দেয় না। এটি ব্রাউজারে ফাইলগুলো একত্র করে, কিন্তু ZIP এনক্রিপ্ট বা পাসওয়ার্ড-সুরক্ষিত করে না। প্রতিষ্ঠানের অনুমোদিত পদ্ধতি ব্যবহার করুন।"
+          },
+          {
+            "q": "মূল নথি পাঠাব নাকি কপি?",
+            "a": "কাস্টডি নীতি অনুসরণ করুন। সাধারণত মাস্টার মূল রাখুন এবং হস্তান্তরটি ব্যবহারের কপি নাকি আনুষ্ঠানিক কাস্টডি বদল তা লিখুন।"
+          },
+          {
+            "q": "প্যাকেট সম্পূর্ণ পৌঁছেছে কীভাবে বুঝব?",
+            "a": "তালিকার সঙ্গে পাওয়া ফাইল মিলান, নমুনা খুলুন এবং অনুমোদিত অখণ্ডতা প্রক্রিয়া মানুন। সমতা প্রমাণে চেকসামের নির্ভরযোগ্য রেফারেন্স মান দরকার।"
+          }
+        ],
+        "relatedTools": [
+          "create-zip",
+          "protect-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-archive-naming-convention",
+          "original-pdf-vs-access-copy"
+        ]
       }
     ]
   },
@@ -31418,6 +32198,162 @@
           "pdf-archive-review-schedule",
           "prepare-pdf-for-long-term-archive",
           "pdf-checksum-basics-for-archives"
+        ]
+      },
+      {
+        "topic": "document-retention-handoff-checklist",
+        "slug": "document-retention-handoff-checklist",
+        "cluster": "archive-expansion",
+        "title": "Danh sách bàn giao tài liệu cần lưu giữ",
+        "metaTitle": "Danh sách bàn giao tài liệu cần lưu giữ",
+        "metaDescription": "Chuẩn bị bàn giao với danh mục, thời hạn, quyền truy cập và phiên bản. Miễn phí, riêng tư trong trình duyệt, không đăng ký.",
+        "primaryKeyword": "danh sách bàn giao tài liệu lưu trữ",
+        "secondaryKeywords": [
+          "document handoff checklist",
+          "records retention transfer",
+          "archive custody transfer"
+        ],
+        "answer": "Trước khi bàn giao tài liệu cần lưu giữ, hãy lập danh mục, xác nhận người phụ trách và thời hạn, giữ bản gốc, kiểm tra tệp mở được và thống nhất kênh chuyển giao đã duyệt. Ghi lại nội dung, thời điểm và người nhận. ZIP giúp gom tệp nhưng không mã hóa và không thay thế sao lưu hay chính sách lưu giữ.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Một lần bàn giao đáng tin cậy cần có bối cảnh và trách nhiệm, không chỉ là tệp đính kèm. Trước khi chuyển tài liệu, hãy xác nhận ai nhận, vì sao, cần lưu bao lâu và quy tắc truy cập nào áp dụng. Lập danh mục, giữ bản gốc và kiểm tra bản sẽ bàn giao. Có thể gom tệp bằng Create ZIP ngay trong trình duyệt, nhưng ZIP không có mật khẩu và không thay thế mã hóa được phê duyệt."
+          },
+          {
+            "t": "h2",
+            "x": "Cách chuẩn bị bàn giao tài liệu"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Xác nhận phạm vi và người phụ trách",
+                "x": "Liệt kê hồ sơ, lý do bàn giao, người phê duyệt và người tiếp nhận trách nhiệm lưu giữ."
+              },
+              {
+                "h": "Ghi rõ lưu giữ và quyền truy cập",
+                "x": "Nêu thời hạn hoặc quy tắc được duyệt, giới hạn truy cập và ngày rà soát tiếp theo."
+              },
+              {
+                "h": "Chuẩn bị bản sao có tổ chức",
+                "x": "Giữ nguồn, đặt tên rõ ràng và tránh thông tin nhạy cảm không cần thiết trong tên."
+              },
+              {
+                "h": "Kiểm tra và đóng gói",
+                "x": "Mở một số tệp và đối chiếu danh mục. Dùng [Tạo ZIP](/tools/create-zip) để gom tệp; công cụ không đặt mật khẩu cho ZIP."
+              },
+              {
+                "h": "Chuyển giao và xác nhận",
+                "x": "Dùng kênh đã duyệt, kiểm tra người nhận và ghi ngày, phương thức, nội dung cùng xác nhận."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "Sắp xếp tệp ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Danh sách kiểm tra bàn giao"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Hạng mục",
+              "Cần ghi",
+              "Cách xác nhận"
+            ],
+            "rows": [
+              [
+                "Phạm vi",
+                "Tệp, phiên bản, thời kỳ và ngoại lệ.",
+                "Danh mục khớp với gói bàn giao."
+              ],
+              [
+                "Quyền lưu giữ",
+                "Người giao và người nhận trách nhiệm.",
+                "Hai bên xác nhận thay đổi trách nhiệm."
+              ],
+              [
+                "Thời hạn",
+                "Chính sách, ngày hoặc quy tắc rà soát.",
+                "Chỉ dẫn đến từ nguồn được ủy quyền."
+              ],
+              [
+                "Truy cập",
+                "Quyền, người nhận và kênh chuyển.",
+                "Kênh phù hợp mức độ nhạy cảm."
+              ],
+              [
+                "Toàn vẹn",
+                "Dung lượng, số trang và checksum nếu cần.",
+                "Xác nhận nhận và toàn vẹn theo quy trình."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Giữ bản gốc và mô tả gói bàn giao"
+          },
+          {
+            "t": "p",
+            "x": "Đừng ghi đè hồ sơ chính khi tạo bản sao để bàn giao. Danh mục nên có tên, mã nhận diện, ngày, phiên bản và mô tả ngắn cho từng mục. Ghi lại tệp bị loại và lý do. Chọn tên dễ tìm mà không tiết lộ tên cá nhân, số tài khoản hoặc thông tin y tế. Nếu tạo ZIP, hãy xác nhận đã đưa đủ thư mục cần thiết và người nhận có thể giải nén."
+          },
+          {
+            "t": "h2",
+            "x": "Làm rõ trách nhiệm lưu giữ"
+          },
+          {
+            "t": "p",
+            "x": "Bàn giao cần nêu chính sách được duyệt, ai giữ tài liệu, ai được truy cập và cách xử lý yêu cầu xóa, tạm dừng hoặc kiểm toán. Đừng tự đặt thời hạn pháp lý hay đổi ngày cho tiện. Nếu quy tắc chưa rõ, hỏi người phụ trách hồ sơ, quyền riêng tư hoặc cố vấn pháp lý trước khi chuyển. Ghi ngày rà soát tiếp theo nếu có."
+          },
+          {
+            "t": "h2",
+            "x": "Bảo vệ nội dung trong khi chuyển giao"
+          },
+          {
+            "t": "p",
+            "x": "Chọn kênh được phép cho phân loại tài liệu và xác minh địa chỉ người nhận. ZIP là vật chứa, không phải mã hóa: Create ZIP không đặt mật khẩu. Nếu chính sách yêu cầu bảo vệ, hãy dùng phương thức được duyệt; PDF có thể cần [Bảo vệ PDF](/tools/protect-pdf) trước khi đóng gói. Gửi mật khẩu qua kênh riêng theo quy trình. Dùng [Xóa siêu dữ liệu](/tools/remove-metadata) để bỏ thuộc tính chuẩn không cần thiết khỏi bản phân phối, nhưng không sửa bản gốc cần lưu."
+          },
+          {
+            "t": "h2",
+            "x": "Xác nhận đã nhận và giữ dấu vết kiểm toán"
+          },
+          {
+            "t": "p",
+            "x": "Lưu bằng chứng về người phê duyệt, nội dung đã gửi, thời điểm, kênh và người xác nhận nhận. Với gói quan trọng, đối chiếu danh mục và dung lượng; checksum chỉ xác nhận giống nhau khi so với giá trị tham chiếu đáng tin cậy đã lưu. Không ghi dữ liệu nhạy cảm vào nhật ký chuyển giao. Thống nhất cách báo lỗi, tệp hỏng hoặc yêu cầu tiếp theo và giữ hồ sơ theo chính sách."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Bàn giao tài liệu cần bao gồm những gì?",
+            "a": "Gồm danh mục, phiên bản, ngày liên quan, phân loại, người giao và nhận, quy tắc lưu giữ, quyền truy cập, kênh chuyển và xác nhận nhận."
+          },
+          {
+            "q": "ZIP có bảo vệ tệp bằng mật khẩu không?",
+            "a": "Create ZIP của PrintxPDF không làm việc đó. Công cụ gom tệp trong trình duyệt nhưng không mã hóa ZIP hay đặt mật khẩu. Hãy dùng phương thức được tổ chức phê duyệt."
+          },
+          {
+            "q": "Nên gửi bản gốc hay bản sao?",
+            "a": "Tuân theo chính sách quản lý hồ sơ. Thông thường giữ bản gốc chính và ghi rõ đây là bản truy cập hay chuyển giao trách nhiệm lưu giữ chính thức."
+          },
+          {
+            "q": "Làm sao biết gói đã nhận đủ?",
+            "a": "Đối chiếu danh mục với tệp đã nhận, mở một mẫu và theo quy trình kiểm tra toàn vẹn được duyệt. Checksum cần giá trị tham chiếu đáng tin cậy để chứng minh trùng khớp."
+          }
+        ],
+        "relatedTools": [
+          "create-zip",
+          "protect-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-archive-naming-convention",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
@@ -36659,6 +37595,162 @@
           "pdf-archive-review-schedule",
           "prepare-pdf-for-long-term-archive",
           "pdf-checksum-basics-for-archives"
+        ]
+      },
+      {
+        "topic": "document-retention-handoff-checklist",
+        "slug": "document-retention-handoff-checklist",
+        "cluster": "archive-expansion",
+        "title": "文件保留交接检查清单",
+        "metaTitle": "文件保留交接检查清单",
+        "metaDescription": "交接文件前检查清单、保留期限、访问权限和版本，记录接收确认。免费、无需注册、无水印，可在浏览器中使用。",
+        "primaryKeyword": "文件保留交接检查清单",
+        "secondaryKeywords": [
+          "document handoff checklist",
+          "records retention transfer",
+          "archive custody transfer"
+        ],
+        "answer": "交接需要保留的文件前，先编制清单，确认负责人和保留期限，保留原件，检查文件是否能打开，并确定获准的传输渠道。记录交接内容、时间和接收人。ZIP 可打包多个文件，但不会加密，也不能替代备份或保留政策。",
+        "body": [
+          {
+            "t": "p",
+            "x": "可靠的文件交接需要背景信息和责任记录，不能只发送附件。传输前确认接收人、交接原因、保留期限和访问规则。整理清单，保留原件，并检查要交付的副本。可以使用 Create ZIP 在浏览器中打包文件，但 ZIP 不带密码，也不能代替获批的加密方式。"
+          },
+          {
+            "t": "h2",
+            "x": "如何准备文件交接"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "确认范围和负责人",
+                "x": "列出记录、交接原因、审批人和接管保管责任的人。"
+              },
+              {
+                "h": "记录保留和访问要求",
+                "x": "写明已批准的期限或规则、访问限制和下次检查时间。"
+              },
+              {
+                "h": "准备有序的副本",
+                "x": "保留来源，使用清晰名称，避免在文件名中放入多余敏感信息。"
+              },
+              {
+                "h": "检查并打包",
+                "x": "打开部分文件并核对清单。可用[创建 ZIP](/tools/create-zip)打包；此工具不会给 ZIP 设置密码。"
+              },
+              {
+                "h": "传输并确认接收",
+                "x": "使用获批渠道，核实接收人，并记录日期、方式、内容和接收确认。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "create-zip",
+            "x": "在当前标签页整理文件。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "文件交接检查清单"
+          },
+          {
+            "t": "table",
+            "head": [
+              "项目",
+              "记录内容",
+              "核验方式"
+            ],
+            "rows": [
+              [
+                "范围",
+                "文件、版本、时间段和排除项。",
+                "清单与交付包相符。"
+              ],
+              [
+                "保管责任",
+                "交出方负责人和接收人。",
+                "双方确认保管责任已转移。"
+              ],
+              [
+                "保留要求",
+                "适用政策、日期或检查规则。",
+                "指令来自授权来源。"
+              ],
+              [
+                "访问权限",
+                "权限、接收人和传输渠道。",
+                "渠道适合文件敏感级别。"
+              ],
+              [
+                "完整性",
+                "文件大小、页数，必要时校验和。",
+                "按流程确认收到且完整。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "保留原件并描述交付包"
+          },
+          {
+            "t": "p",
+            "x": "创建交接副本时不要覆盖主记录。清单应包含每个项目的名称、标识符、日期、版本和简要说明。记录未交付文件及原因。文件名应便于查找，同时避免泄露姓名、账号或医疗信息。若创建 ZIP，请确认所需文件夹都已纳入，且接收方可以解压。"
+          },
+          {
+            "t": "h2",
+            "x": "明确保留责任"
+          },
+          {
+            "t": "p",
+            "x": "交接说明应写明适用的已批准政策、由谁保存、谁可访问，以及如何处理删除请求、保留冻结或审计。不要自行猜测法定期限，也不要为了方便修改日期。如规则不明确，传输前咨询档案、隐私负责人或法律顾问。若有下次检查时间，也要列出。"
+          },
+          {
+            "t": "h2",
+            "x": "传输过程中保护内容"
+          },
+          {
+            "t": "p",
+            "x": "根据文件分类选择获准渠道，并核对接收地址。ZIP 是容器，不是加密：Create ZIP 不会设置密码。如果政策要求保护，请使用获批方法；PDF 可能需要先用[保护 PDF](/tools/protect-pdf)再打包。按流程通过独立渠道发送密码。可用[删除元数据](/tools/remove-metadata)清理分发副本中不必要的标准属性，但不要更改需保留的原件。"
+          },
+          {
+            "t": "h2",
+            "x": "确认接收并保留审计记录"
+          },
+          {
+            "t": "p",
+            "x": "保存审批人、交付内容、时间、方式和接收确认的证据。重要交付包应核对清单和文件大小；校验和只有与可信且已记录的参考值比较，才能验证是否一致。不要在交接日志中写入敏感内容。约定错误、损坏文件或后续请求的通知方式，并按政策保留记录。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "文件交接应包含哪些内容？",
+            "a": "包括文件清单、版本、相关日期、分类、交出和接收负责人、保留规则、访问权限、传输渠道及接收确认。"
+          },
+          {
+            "q": "ZIP 会给文件设置密码吗？",
+            "a": "PrintxPDF 的 Create ZIP 不会。它在浏览器中打包文件，但不会加密 ZIP 或设置密码。请使用组织批准的保护方式。"
+          },
+          {
+            "q": "应该交原件还是副本？",
+            "a": "遵循档案保管政策。通常应保留主原件，并注明交付的是访问副本还是正式转移保管责任。"
+          },
+          {
+            "q": "如何确认交付包完整？",
+            "a": "将清单与收到的文件核对，打开样本，并遵循获批的完整性流程。要验证一致性，校验和需要可信的参考值。"
+          }
+        ],
+        "relatedTools": [
+          "create-zip",
+          "protect-pdf",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "scan-quality-control-checklist",
+          "pdf-archive-review-schedule",
+          "pdf-archive-naming-convention",
+          "original-pdf-vs-access-copy"
         ]
       }
     ]
