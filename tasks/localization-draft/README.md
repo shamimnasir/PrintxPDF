@@ -24,7 +24,7 @@ English route's slug against localized guide topics:
 | Vietnamese (`vi`) | 110 | 115 |
 | Simplified Chinese (`zh-CN`) | 110 | 115 |
 
-The inventory above is the starting snapshot. Rolling releases are published by complete topic across all seven locales. The first batch contained 40 topics (280 locale editions), followed by four new topic releases; one additional release refreshed an already translated topic. Coverage before the current release is 143 of 225 guides per locale; this release raises it to 144. **81 topics, or 567 localized guide pages, remain.**
+The inventory above is the starting snapshot. Rolling releases are published by complete topic across all seven locales. The first batch contained 40 topics (280 locale editions), followed by five new topic releases; one additional release refreshed an already translated topic. Coverage before the current release is 144 of 225 guides per locale; this release raises it to 145. **80 topics, or 560 localized guide pages, remain.**
 
 ## Rolling release checks
 
