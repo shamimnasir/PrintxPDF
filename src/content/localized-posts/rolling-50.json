@@ -1804,6 +1804,147 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-ai-metadata-from-images",
+        "slug": "remove-ai-metadata-from-images",
+        "title": "Cómo quitar metadatos de IA de una imagen sin cambiarla",
+        "metaTitle": "Cómo quitar metadatos de IA de una imagen sin cambiarla",
+        "metaDescription": "Quita metadatos EXIF, IPTC, XMP y C2PA comunes de una copia de imagen gratis y en el navegador. Las marcas visibles permanecen.",
+        "keyword": "quitar metadatos de IA de una imagen",
+        "secondaryKeywords": [
+          "quitar metadatos C2PA",
+          "eliminar Content Credentials",
+          "quitar EXIF de una imagen",
+          "metadatos de imágenes de ChatGPT"
+        ],
+        "answer": "Para quitar metadatos comunes de una imagen generada por IA, crea una copia nueva a partir de sus píxeles visibles. La herramienta local de PrintxPDF reconstruye PNG, JPG o WebP en el navegador y no sube el archivo. Puede eliminar datos EXIF, IPTC, XMP y registros C2PA incrustados, pero no quita marcas de agua, etiquetas ni texto visibles.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Eliminar metadatos de imagen",
+        "body": [
+          {
+            "t": "p",
+            "x": "Una imagen contiene los píxeles que ves y, a veces, datos ocultos adjuntos al archivo. La cámara puede guardar modelo, fecha o ubicación. Un editor puede añadir autor, palabras clave o detalles del flujo de trabajo. Algunos sistemas de generación de imágenes incluyen registros de procedencia, como Content Credentials. Estos datos pueden viajar junto con la imagen original cuando la compartes."
+          },
+          {
+            "t": "h2",
+            "x": "Qué metadatos puede contener una imagen de IA"
+          },
+          {
+            "t": "table",
+            "caption": "Datos comunes guardados junto a los píxeles.",
+            "head": [
+              "Tipo de dato",
+              "Ejemplos",
+              "¿Se ve en la imagen?"
+            ],
+            "rows": [
+              [
+                "EXIF",
+                "Modelo de cámara, fecha, orientación, GPS",
+                "No"
+              ],
+              [
+                "IPTC y XMP",
+                "Autor, título, palabras clave y editor",
+                "No"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "Registro integrado de creación o edición",
+                "No"
+              ],
+              [
+                "Marcas visibles",
+                "Marca de agua, etiqueta, texto o logotipo dibujado",
+                "Sí"
+              ]
+            ]
+          },
+          {
+            "t": "p",
+            "x": "La diferencia importa: al codificar una copia nueva desde los píxeles se pueden dejar atrás los metadatos del archivo. En cambio, una marca visible forma parte de esos píxeles; una herramienta de metadatos no debe afirmar que la elimina. Borrar u ocultar una marca visible es otra tarea de edición y puede cambiar el significado de la imagen."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo quitar metadatos creando una copia nueva"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el original",
+                "x": "Guarda una copia fuente en un lugar seguro. Los metadatos pueden ser útiles para tu archivo, aunque no quieras compartirlos."
+              },
+              {
+                "h": "Abre la herramienta",
+                "x": "Ve a [Eliminar metadatos de imagen](/tools/remove-ai-metadata) y añade imágenes PNG, JPG, WebP o HEIC. El archivo se lee en tu navegador y no se carga al servidor de PrintxPDF."
+              },
+              {
+                "h": "Elige el formato de salida",
+                "x": "Elige PNG si priorizas píxeles decodificados y transparencia. Usa JPG para fotos y compatibilidad amplia. WebP admite transparencia y suele servir para la web."
+              },
+              {
+                "h": "Crea e inspecciona la copia",
+                "x": "Pulsa Eliminar metadatos y descarga el archivo nuevo. Se reconstruye desde los píxeles visibles, por lo que no copia los datos EXIF, IPTC, XMP y C2PA habituales."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Crea localmente una copia de imagen sin metadatos. El original no cambia y el archivo nunca se sube."
+          },
+          {
+            "t": "h2",
+            "x": "Qué no elimina esta herramienta"
+          },
+          {
+            "t": "warn",
+            "x": "No elimina marcas de agua, pies de foto, logotipos, texto de instrucciones dibujado en la imagen ni etiquetas de IA visibles. Son píxeles, no metadatos. Tampoco puede borrar información que un servicio conserve en su cuenta o fuera del archivo descargado."
+          },
+          {
+            "t": "p",
+            "x": "Crear un archivo nuevo también puede cambiar cómo se codifica la imagen. PNG es la mejor opción para conservar exactamente los píxeles decodificados. JPG y WebP usan compresión, así que revisa los detalles antes de emplear la copia en impresión, pruebas o producción. Si también necesitas reducir una foto, conserva primero un original de archivo y luego usa [Comprimir imagen](/tools/compress-image)."
+          },
+          {
+            "t": "h2",
+            "x": "Cuándo conviene compartir una copia sin metadatos"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Compartir una foto del móvil sin modelo de cámara, fecha o posibles datos de ubicación.",
+              "Enviar una imagen de borrador sin autor ni campos de flujo de trabajo incrustados.",
+              "Preparar una imagen para la web en un formato de entrega nuevo y conservar aparte el original.",
+              "Crear una copia de distribución y guardar la procedencia del original en un archivo controlado."
+            ]
+          },
+          {
+            "t": "p",
+            "x": "Eliminar metadatos es una decisión de privacidad y gestión de archivos; no demuestra si una imagen fue creada o no con una herramienta concreta. Conserva originales cuando importe la procedencia y no uses una copia sin metadatos para falsear el origen del trabajo."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Quita metadatos de imágenes de ChatGPT, Claude o Gemini?",
+            "a": "La herramienta reconstruye una copia y elimina metadatos incrustados comunes que sobreviven a la decodificación, incluidos EXIF, IPTC, XMP y registros C2PA o Content Credentials presentes en el archivo. Los proveedores varían; no quita etiquetas visibles ni datos externos al archivo."
+          },
+          {
+            "q": "¿Elimina una marca de agua de IA?",
+            "a": "No. Una marca de agua o etiqueta visible forma parte de los píxeles. La herramienta crea una copia sin metadatos incrustados comunes, pero no modifica lo que se ve."
+          },
+          {
+            "q": "¿Se suben mis imágenes?",
+            "a": "No. La imagen se decodifica y la nueva copia se codifica dentro del navegador. PrintxPDF no recibe el archivo."
+          },
+          {
+            "q": "¿Qué formato de salida debo elegir?",
+            "a": "Elige PNG para transparencia o píxeles decodificados, JPG para fotos compatibles con muchos dispositivos y WebP para la web. Conserva el original en todos los casos."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -3602,6 +3743,147 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-ai-metadata-from-images",
+        "slug": "remove-ai-metadata-from-images",
+        "title": "Como remover metadados de IA sem alterar a imagem",
+        "metaTitle": "Como remover metadados de IA sem alterar a imagem",
+        "metaDescription": "Remova metadados EXIF, IPTC, XMP e C2PA comuns de uma cópia grátis no navegador. Marcas e rótulos visíveis permanecem.",
+        "keyword": "remover metadados de IA de imagem",
+        "secondaryKeywords": [
+          "remover metadados C2PA",
+          "apagar Content Credentials",
+          "remover EXIF de imagem",
+          "metadados de imagem do ChatGPT"
+        ],
+        "answer": "Para remover metadados comuns de uma imagem gerada por IA, crie uma nova cópia a partir dos pixels visíveis. A ferramenta local da PrintxPDF reconstrói PNG, JPG ou WebP no navegador e não envia o arquivo. Ela pode remover dados EXIF, IPTC, XMP e registros C2PA incorporados, mas não apaga marcas d’água, rótulos nem texto visíveis.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Remover metadados da imagem",
+        "body": [
+          {
+            "t": "p",
+            "x": "Uma imagem tem os pixels que você vê e, às vezes, dados ocultos anexados ao arquivo. A câmera pode registrar modelo, data ou localização. Um editor pode adicionar autor, palavras-chave e detalhes do fluxo de trabalho. Alguns sistemas de geração de imagem incluem registros de procedência, como Content Credentials. Esses dados podem acompanhar o arquivo original quando você o compartilha."
+          },
+          {
+            "t": "h2",
+            "x": "Quais metadados uma imagem de IA pode conter"
+          },
+          {
+            "t": "table",
+            "caption": "Dados comuns armazenados junto aos pixels.",
+            "head": [
+              "Tipo de dado",
+              "Exemplos",
+              "Visível na imagem?"
+            ],
+            "rows": [
+              [
+                "EXIF",
+                "Modelo da câmera, data, orientação, GPS",
+                "Não"
+              ],
+              [
+                "IPTC e XMP",
+                "Autor, título, palavras-chave e editor",
+                "Não"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "Registro incorporado de criação ou edição",
+                "Não"
+              ],
+              [
+                "Marcas visíveis",
+                "Marca d’água, legenda, texto ou logotipo desenhado",
+                "Sim"
+              ]
+            ]
+          },
+          {
+            "t": "p",
+            "x": "Essa diferença importa: ao codificar uma nova cópia a partir dos pixels, os metadados do arquivo podem ficar para trás. Já uma marca visível faz parte dos próprios pixels; uma ferramenta de metadados não deve dizer que a remove. Apagar ou esconder uma marca visível é outra tarefa de edição e pode mudar o sentido da imagem."
+          },
+          {
+            "t": "h2",
+            "x": "Como remover metadados criando uma nova cópia"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde o original",
+                "x": "Salve uma cópia fonte em um local seguro. Metadados podem ser úteis no seu arquivo, mesmo quando não devem ser compartilhados."
+              },
+              {
+                "h": "Abra a ferramenta",
+                "x": "Acesse [Remover metadados de imagem](/tools/remove-ai-metadata) e adicione imagens PNG, JPG, WebP ou HEIC. O arquivo é lido no navegador e não é enviado ao servidor da PrintxPDF."
+              },
+              {
+                "h": "Escolha o formato de saída",
+                "x": "Escolha PNG para priorizar pixels decodificados e transparência. Use JPG para fotos e ampla compatibilidade. WebP mantém transparência e costuma ser útil na web."
+              },
+              {
+                "h": "Crie e confira a cópia",
+                "x": "Clique em Remover metadados e baixe o novo arquivo. Ele é reconstruído a partir dos pixels visíveis, sem copiar os dados EXIF, IPTC, XMP e C2PA comuns."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Crie localmente uma cópia de imagem sem metadados. O original fica intacto e o arquivo nunca é enviado."
+          },
+          {
+            "t": "h2",
+            "x": "O que esta ferramenta não remove"
+          },
+          {
+            "t": "warn",
+            "x": "Ela não remove marcas d’água, legendas, logotipos, texto de prompt desenhado na imagem nem rótulos de IA visíveis. Isso são pixels, não metadados. Também não apaga informações que um serviço mantém na sua conta ou fora do arquivo baixado."
+          },
+          {
+            "t": "p",
+            "x": "Criar um arquivo novo também pode mudar a codificação da imagem. PNG é a melhor opção para preservar exatamente os pixels decodificados. JPG e WebP usam compressão; confira detalhes antes de usar a cópia em impressão, evidências ou produção. Se também quiser reduzir uma foto, guarde primeiro um original de arquivo e depois use [Comprimir imagem](/tools/compress-image)."
+          },
+          {
+            "t": "h2",
+            "x": "Quando uma cópia sem metadados é útil"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Compartilhar uma foto do celular sem modelo da câmera, data ou possível localização.",
+              "Enviar uma imagem preliminar sem autor ou campos de fluxo de trabalho incorporados.",
+              "Preparar uma imagem para a web em um novo formato de entrega e guardar o original separadamente.",
+              "Criar uma cópia de distribuição e preservar a procedência do original em um arquivo controlado."
+            ]
+          },
+          {
+            "t": "p",
+            "x": "Remover metadados é uma escolha de privacidade e gestão de arquivos, não uma prova de que uma imagem foi ou não criada por uma ferramenta específica. Guarde os originais quando a procedência importar e não use uma cópia limpa para distorcer a origem do trabalho."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Isso remove metadados de imagens do ChatGPT, Claude ou Gemini?",
+            "a": "A ferramenta reconstrói uma cópia e remove metadados incorporados comuns que sobrevivem à decodificação, incluindo EXIF, IPTC, XMP e registros C2PA ou Content Credentials presentes no arquivo. Cada provedor é diferente; rótulos visíveis e dados externos não são removidos."
+          },
+          {
+            "q": "Ela remove uma marca d’água de IA?",
+            "a": "Não. Uma marca d’água ou rótulo visível faz parte dos pixels. A ferramenta cria uma cópia sem metadados incorporados comuns, mas não altera o conteúdo visível."
+          },
+          {
+            "q": "Minhas imagens são enviadas?",
+            "a": "Não. A imagem é decodificada e a nova cópia é codificada no navegador. A PrintxPDF não recebe o arquivo."
+          },
+          {
+            "q": "Qual formato de saída devo escolher?",
+            "a": "Escolha PNG para transparência ou pixels decodificados, JPG para fotos com ampla compatibilidade e WebP para a web. Guarde o original em qualquer caso."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -5396,6 +5678,147 @@
           {
             "q": "क्या MOBI से PDF फ़ाइल अपलोड करता है?",
             "a": "हाँ। कन्वर्ज़न सर्वर पर होता है, पहले इसकी सूचना दी जाती है और PDF लौटाने के बाद अपलोड की गई किताब हटा दी जाती है।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-ai-metadata-from-images",
+        "slug": "remove-ai-metadata-from-images",
+        "title": "तस्वीर बदले बिना AI मेटाडेटा कैसे हटाएँ",
+        "metaTitle": "तस्वीर बदले बिना AI मेटाडेटा कैसे हटाएँ",
+        "metaDescription": "ब्राउज़र में इमेज कॉपी से आम EXIF, IPTC, XMP और C2PA मेटाडेटा मुफ़्त हटाएँ। दिखने वाले वॉटरमार्क नहीं हटते।",
+        "keyword": "इमेज से AI मेटाडेटा हटाएँ",
+        "secondaryKeywords": [
+          "C2PA मेटाडेटा हटाना",
+          "Content Credentials हटाना",
+          "इमेज EXIF हटाना",
+          "ChatGPT इमेज मेटाडेटा"
+        ],
+        "answer": "AI से बनी इमेज के आम मेटाडेटा हटाने के लिए दिखाई देने वाले पिक्सेल से नई कॉपी बनाएँ। PrintxPDF का लोकल टूल PNG, JPG या WebP को ब्राउज़र में फिर से बनाता है और फ़ाइल अपलोड नहीं करता। यह आम EXIF, IPTC, XMP और एम्बेडेड C2PA रिकॉर्ड हटा सकता है, लेकिन दिखने वाले वॉटरमार्क, लेबल या टेक्स्ट नहीं हटाता।",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "इमेज मेटाडेटा हटाएँ",
+        "body": [
+          {
+            "t": "p",
+            "x": "इमेज में दिखाई देने वाले पिक्सेल और कभी-कभी फ़ाइल से जुड़े छिपे डेटा होते हैं। कैमरा मॉडल, तारीख या स्थान दर्ज कर सकता है। एडिटर लेखक, कीवर्ड या वर्कफ़्लो विवरण जोड़ सकता है। कुछ AI इमेज सिस्टम निर्माण या बदलाव का रिकॉर्ड, जैसे Content Credentials, जोड़ते हैं। मूल फ़ाइल साझा करने पर ये डेटा साथ जा सकते हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "AI इमेज में कौन-सा मेटाडेटा हो सकता है"
+          },
+          {
+            "t": "table",
+            "caption": "इमेज पिक्सेल के साथ रखे जाने वाले सामान्य डेटा।",
+            "head": [
+              "डेटा प्रकार",
+              "उदाहरण",
+              "क्या चित्र में दिखता है?"
+            ],
+            "rows": [
+              [
+                "EXIF",
+                "कैमरा मॉडल, तारीख, दिशा, GPS",
+                "नहीं"
+              ],
+              [
+                "IPTC और XMP",
+                "लेखक, शीर्षक, कीवर्ड, एडिटर",
+                "नहीं"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "निर्माण या बदलाव का एम्बेडेड रिकॉर्ड",
+                "नहीं"
+              ],
+              [
+                "दिखने वाले निशान",
+                "वॉटरमार्क, कैप्शन, चित्र में लिखा टेक्स्ट या लोगो",
+                "हाँ"
+              ]
+            ]
+          },
+          {
+            "t": "p",
+            "x": "यह अंतर महत्वपूर्ण है: पिक्सेल से नई कॉपी बनाते समय फ़ाइल के मेटाडेटा पीछे छूट सकते हैं। लेकिन दिखाई देने वाला निशान उन्हीं पिक्सेल का हिस्सा होता है; मेटाडेटा टूल को उसे हटाने का दावा नहीं करना चाहिए। दृश्य निशान छिपाना या मिटाना अलग इमेज-एडिटिंग काम है और अर्थ बदल सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "नई कॉपी बनाकर मेटाडेटा हटाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल फ़ाइल रखें",
+                "x": "शेयर करने वाली कॉपी बनाने से पहले स्रोत को सुरक्षित स्थान पर रखें। निजी संग्रह में मेटाडेटा उपयोगी हो सकता है।"
+              },
+              {
+                "h": "टूल खोलें",
+                "x": "[AI इमेज मेटाडेटा हटाएँ](/tools/remove-ai-metadata) खोलें और PNG, JPG, WebP या HEIC जोड़ें। फ़ाइल ब्राउज़र में पढ़ी जाती है, PrintxPDF सर्वर पर अपलोड नहीं होती।"
+              },
+              {
+                "h": "आउटपुट फ़ॉर्मैट चुनें",
+                "x": "पारदर्शिता और डिकोड किए पिक्सेल को बनाए रखने के लिए PNG चुनें। सामान्य फ़ोटो और व्यापक संगतता के लिए JPG चुनें। WebP पारदर्शिता रख सकता है और वेब के लिए उपयोगी है।"
+              },
+              {
+                "h": "कॉपी बनाएँ और जाँचें",
+                "x": "मेटाडेटा हटाएँ चुनें और नई फ़ाइल डाउनलोड करें। यह दिखने वाले पिक्सेल से बनती है, इसलिए आम EXIF, IPTC, XMP और C2PA रिकॉर्ड साथ नहीं आते।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "ब्राउज़र में लोकल रूप से मेटाडेटा-मुक्त इमेज कॉपी बनाएँ। मूल फ़ाइल जस की तस रहती है और अपलोड नहीं होती।"
+          },
+          {
+            "t": "h2",
+            "x": "यह टूल क्या नहीं हटाता"
+          },
+          {
+            "t": "warn",
+            "x": "यह वॉटरमार्क, कैप्शन, लोगो, तस्वीर में रेंडर हुआ प्रॉम्प्ट टेक्स्ट या दिखने वाला AI लेबल नहीं हटाता। ये पिक्सेल हैं, मेटाडेटा नहीं। यह उस जानकारी को भी नहीं मिटा सकता जिसे कोई सेवा अपने खाते के रिकॉर्ड में या डाउनलोड फ़ाइल के बाहर रखती है।"
+          },
+          {
+            "t": "p",
+            "x": "नई फ़ाइल बनाने से इमेज की एन्कोडिंग भी बदल सकती है। डिकोड किए पिक्सेल बिल्कुल बनाए रखने के लिए PNG बेहतर है। JPG और WebP संपीड़न करते हैं; प्रिंट, साक्ष्य या प्रोडक्शन में उपयोग से पहले बारीक हिस्से देखें। यदि फ़ोटो छोटी भी करनी हो, तो पहले मूल संग्रहित रखें और फिर [इमेज संपीड़ित करें](/tools/compress-image)।"
+          },
+          {
+            "t": "h2",
+            "x": "मेटाडेटा-मुक्त कॉपी कब उपयोगी है"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "मोबाइल फ़ोटो साझा करना, जिसमें कैमरा मॉडल, तारीख या संभावित स्थान न जाए।",
+              "ड्राफ़्ट इमेज भेजना, जिसमें लेखक और वर्कफ़्लो फ़ील्ड एम्बेड न रहें।",
+              "मूल अलग रखकर वेब के लिए नए डिलीवरी फ़ॉर्मैट में इमेज तैयार करना।",
+              "वितरण कॉपी बनाना और मूल की उत्पत्ति नियंत्रित संग्रह में सुरक्षित रखना।"
+            ]
+          },
+          {
+            "t": "p",
+            "x": "मेटाडेटा हटाना गोपनीयता और फ़ाइल प्रबंधन का निर्णय है; इससे साबित नहीं होता कि इमेज किसी खास टूल से बनी या नहीं। जहाँ स्रोत का रिकॉर्ड ज़रूरी हो, मूल रखें और साफ़ कॉपी का उपयोग उत्पत्ति गलत बताने के लिए न करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या यह ChatGPT, Claude या Gemini इमेज का मेटाडेटा हटाता है?",
+            "a": "टूल नई कॉपी बनाकर डिकोडिंग के बाद बचे आम एम्बेडेड EXIF, IPTC, XMP और फ़ाइल में मौजूद C2PA या Content Credentials रिकॉर्ड हटाता है। सेवाएँ अलग-अलग होती हैं; दृश्य लेबल या फ़ाइल के बाहर के डेटा नहीं हटते।"
+          },
+          {
+            "q": "क्या AI वॉटरमार्क हटेगा?",
+            "a": "नहीं। दिखने वाला वॉटरमार्क या लेबल पिक्सेल का हिस्सा है। टूल आम एम्बेडेड मेटाडेटा के बिना कॉपी बनाता है, दृश्य सामग्री नहीं बदलता।"
+          },
+          {
+            "q": "क्या मेरी तस्वीरें अपलोड होती हैं?",
+            "a": "नहीं। इमेज ब्राउज़र में डिकोड होती है और नई कॉपी भी वहीं बनती है। PrintxPDF फ़ाइल प्राप्त नहीं करता।"
+          },
+          {
+            "q": "कौन-सा आउटपुट फ़ॉर्मैट चुनूँ?",
+            "a": "पारदर्शिता या डिकोड किए पिक्सेल के लिए PNG, व्यापक फ़ोटो संगतता के लिए JPG और वेब डिलीवरी के लिए WebP चुनें। हर स्थिति में मूल रखें।"
           }
         ],
         "published": "2026-11-15",
@@ -7203,6 +7626,147 @@
           {
             "q": "هل يرفع MOBI إلى PDF الملف؟",
             "a": "نعم. تتم المعالجة على الخادم، ويُذكر ذلك قبل الاستخدام، ويُحذف الكتاب المرفوع بعد إعادة PDF."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-ai-metadata-from-images",
+        "slug": "remove-ai-metadata-from-images",
+        "title": "إزالة بيانات الذكاء الاصطناعي من الصورة دون تغييرها",
+        "metaTitle": "إزالة بيانات الذكاء الاصطناعي من الصورة دون تغييرها",
+        "metaDescription": "أزل بيانات EXIF وIPTC وXMP وC2PA الشائعة من نسخة صورة مجاناً في المتصفح. العلامات المرئية تبقى، والملف لا يُرفع.",
+        "keyword": "إزالة بيانات الذكاء الاصطناعي من الصور",
+        "secondaryKeywords": [
+          "إزالة بيانات C2PA",
+          "حذف Content Credentials",
+          "إزالة EXIF من صورة",
+          "بيانات صور ChatGPT"
+        ],
+        "answer": "لإزالة البيانات الوصفية الشائعة من صورة مولدة بالذكاء الاصطناعي، أنشئ نسخة جديدة من وحدات البكسل المرئية. تعيد أداة PrintxPDF المحلية إنشاء PNG أو JPG أو WebP داخل المتصفح ولا ترفع الملف. قد تزيل بيانات EXIF وIPTC وXMP وسجلات C2PA المضمنة، لكنها لا تزيل العلامات المائية أو النصوص أو التصنيفات المرئية.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "إزالة بيانات الصورة الوصفية",
+        "body": [
+          {
+            "t": "p",
+            "x": "تحتوي الصورة على وحدات البكسل التي تراها، وقد تحتوي على بيانات مخفية مرتبطة بالملف. قد تسجل الكاميرا طرازها والتاريخ والموقع. وقد يضيف المحرر اسم المؤلف أو الكلمات المفتاحية أو تفاصيل سير العمل. وتتضمن بعض أنظمة توليد الصور سجلاً للمصدر مثل Content Credentials. وقد تنتقل هذه البيانات مع الملف الأصلي عند مشاركته."
+          },
+          {
+            "t": "h2",
+            "x": "ما البيانات الوصفية التي قد تحتويها صورة مولدة بالذكاء الاصطناعي؟"
+          },
+          {
+            "t": "table",
+            "caption": "بيانات شائعة تُخزّن بجانب وحدات البكسل.",
+            "head": [
+              "نوع البيانات",
+              "أمثلة",
+              "هل تظهر في الصورة؟"
+            ],
+            "rows": [
+              [
+                "EXIF",
+                "طراز الكاميرا والتاريخ والاتجاه وموقع GPS",
+                "لا"
+              ],
+              [
+                "IPTC وXMP",
+                "المؤلف والعنوان والكلمات المفتاحية والمحرر",
+                "لا"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "سجل مضمّن حول الإنشاء أو التعديل",
+                "لا"
+              ],
+              [
+                "علامات مرئية",
+                "علامة مائية أو تعليق أو نص أو شعار مرسوم",
+                "نعم"
+              ]
+            ]
+          },
+          {
+            "t": "p",
+            "x": "هذا الفرق مهم: قد تُترك بيانات الملف الوصفية عند ترميز نسخة جديدة من وحدات البكسل. أما العلامة المرئية فهي جزء من وحدات البكسل نفسها، لذلك لا ينبغي لأداة البيانات الوصفية الادعاء بإزالتها. إخفاء علامة مرئية أو تعديلها مهمة تحرير مختلفة وقد يغير معنى الصورة."
+          },
+          {
+            "t": "h2",
+            "x": "إزالة البيانات الوصفية بإنشاء نسخة جديدة"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالأصل",
+                "x": "احفظ نسخة المصدر في مكان آمن قبل إنشاء نسخة للمشاركة. قد تفيد البيانات الوصفية في الأرشيف حتى إن لم ترغب بإرسالها."
+              },
+              {
+                "h": "افتح الأداة",
+                "x": "انتقل إلى [إزالة بيانات الصور الوصفية](/tools/remove-ai-metadata) وأضف صور PNG أو JPG أو WebP أو HEIC. تُقرأ الصورة في متصفحك ولا تُرفع إلى خادم PrintxPDF."
+              },
+              {
+                "h": "اختر صيغة الإخراج",
+                "x": "اختر PNG للحفاظ على الشفافية ووحدات البكسل المفكوكة. اختر JPG للصور الفوتوغرافية والتوافق الواسع. ويمكن لـWebP الحفاظ على الشفافية للويب."
+              },
+              {
+                "h": "أنشئ النسخة وافحصها",
+                "x": "اضغط إزالة البيانات الوصفية ثم نزّل الملف الجديد. يُعاد إنشاؤه من وحدات البكسل المرئية، لذا لا تُنسخ بيانات EXIF وIPTC وXMP وC2PA الشائعة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "أنشئ نسخة صورة خالية من البيانات الوصفية محلياً. يبقى الأصل كما هو ولا يُرفع الملف."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي لا تزيله الأداة؟"
+          },
+          {
+            "t": "warn",
+            "x": "لا تزيل العلامات المائية أو التعليقات أو الشعارات أو نص المطالبة المرسوم داخل الصورة أو تصنيف الذكاء الاصطناعي المرئي. فهذه بكسلات وليست بيانات وصفية. كما لا تحذف معلومات تحتفظ بها خدمة ضمن سجل الحساب أو خارج ملف الصورة المنزّل."
+          },
+          {
+            "t": "p",
+            "x": "قد يؤدي إنشاء ملف جديد أيضاً إلى تغيير ترميز الصورة. PNG هو الأفضل للحفاظ على وحدات البكسل المفكوكة كما هي. يستخدم JPG وWebP الضغط؛ لذا افحص التفاصيل قبل استخدام النسخة للطباعة أو الإثبات أو الإنتاج. وإذا أردت تصغير الصورة أيضاً، احتفظ بأصل أرشيفي أولاً ثم استخدم [ضغط الصور](/tools/compress-image)."
+          },
+          {
+            "t": "h2",
+            "x": "متى تفيد نسخة بلا بيانات وصفية؟"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "مشاركة صورة هاتف دون طراز الكاميرا أو التاريخ أو بيانات موقع محتملة.",
+              "إرسال صورة مسودة دون حقول المؤلف وسير العمل المضمّنة.",
+              "تجهيز صورة للويب بصيغة تسليم جديدة مع الاحتفاظ بالأصل منفصلاً.",
+              "إنشاء نسخة للتوزيع مع حفظ مصدر الأصل في أرشيف مضبوط."
+            ]
+          },
+          {
+            "t": "p",
+            "x": "إزالة البيانات الوصفية قرار يتعلق بالخصوصية وإدارة الملفات، وليست دليلاً على أن الصورة أُنشئت أو لم تُنشأ بأداة معينة. احتفظ بالأصول عندما تكون معلومات المصدر مهمة، ولا تستخدم نسخة منزوعة البيانات لتضليل الآخرين بشأن أصل العمل."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل تزيل بيانات صور ChatGPT أو Claude أو Gemini؟",
+            "a": "تعيد الأداة إنشاء نسخة وتزيل البيانات المضمّنة الشائعة التي تبقى بعد فك الترميز، بما فيها EXIF وIPTC وXMP وسجلات C2PA أو Content Credentials الموجودة في الملف. تختلف الخدمات؛ ولا تُزال العلامة المرئية أو البيانات خارج الملف."
+          },
+          {
+            "q": "هل تزيل علامة الذكاء الاصطناعي المائية؟",
+            "a": "لا. العلامة المائية أو التصنيف المرئي جزء من وحدات البكسل. تنشئ الأداة نسخة بلا بيانات مضمّنة شائعة ولا تعدل المحتوى المرئي."
+          },
+          {
+            "q": "هل تُرفع صوري؟",
+            "a": "لا. تُفك الصورة ويُرمز الملف الجديد داخل المتصفح. لا تستقبل PrintxPDF الصورة."
+          },
+          {
+            "q": "أي صيغة إخراج أختار؟",
+            "a": "اختر PNG للشفافية أو وحدات البكسل المفكوكة، وJPG للصور المتوافقة على نطاق واسع، وWebP للويب. احتفظ بالأصل دائماً."
           }
         ],
         "published": "2026-11-15",
@@ -9017,6 +9581,147 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-ai-metadata-from-images",
+        "slug": "remove-ai-metadata-from-images",
+        "title": "দৃশ্যমান ছবি না বদলে AI মেটাডেটা সরানোর উপায়",
+        "metaTitle": "দৃশ্যমান ছবি না বদলে AI মেটাডেটা সরানোর উপায়",
+        "metaDescription": "ব্রাউজারে বিনামূল্যে ছবির সাধারণ EXIF, IPTC, XMP ও C2PA মেটাডেটা সরান। দৃশ্যমান ওয়াটারমার্ক থেকে যাবে।",
+        "keyword": "ছবি থেকে AI মেটাডেটা সরানো",
+        "secondaryKeywords": [
+          "C2PA মেটাডেটা সরানো",
+          "Content Credentials মুছুন",
+          "ছবির EXIF সরানো",
+          "ChatGPT ছবির মেটাডেটা"
+        ],
+        "answer": "AI-তৈরি ছবির সাধারণ মেটাডেটা সরাতে দৃশ্যমান পিক্সেল থেকে একটি নতুন কপি তৈরি করুন। PrintxPDF-এর লোকাল টুল ব্রাউজারে PNG, JPG বা WebP নতুন করে তৈরি করে; ফাইল আপলোড হয় না। এতে সাধারণ EXIF, IPTC, XMP ও এমবেডেড C2PA রেকর্ড বাদ পড়তে পারে, কিন্তু দৃশ্যমান ওয়াটারমার্ক, লেবেল বা লেখা মুছে যায় না।",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "ছবির মেটাডেটা সরান",
+        "body": [
+          {
+            "t": "p",
+            "x": "ছবিতে দেখা পিক্সেল থাকে, আর কখনও ফাইলের সঙ্গে লুকানো তথ্যও থাকে। ক্যামেরা মডেল, তারিখ বা অবস্থান যোগ করতে পারে। এডিটর লেখক, কীওয়ার্ড বা কাজের ধাপের তথ্য যোগ করতে পারে। কিছু AI ছবি সিস্টেম Content Credentials-এর মতো উৎস-রেকর্ডও যোগ করে। মূল ফাইল পাঠালে এসব তথ্য ছবির সঙ্গে যেতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "AI ছবিতে কী ধরনের মেটাডেটা থাকতে পারে"
+          },
+          {
+            "t": "table",
+            "caption": "ছবির পিক্সেলের সঙ্গে থাকা সাধারণ তথ্য।",
+            "head": [
+              "তথ্যের ধরন",
+              "উদাহরণ",
+              "ছবিতে দেখা যায়?"
+            ],
+            "rows": [
+              [
+                "EXIF",
+                "ক্যামেরা মডেল, তারিখ, দিক, GPS অবস্থান",
+                "না"
+              ],
+              [
+                "IPTC ও XMP",
+                "লেখক, শিরোনাম, কীওয়ার্ড, এডিটর",
+                "না"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "তৈরি বা সম্পাদনার এমবেডেড রেকর্ড",
+                "না"
+              ],
+              [
+                "দৃশ্যমান চিহ্ন",
+                "ওয়াটারমার্ক, ক্যাপশন, ছবিতে লেখা বা লোগো",
+                "হ্যাঁ"
+              ]
+            ]
+          },
+          {
+            "t": "p",
+            "x": "পার্থক্যটি গুরুত্বপূর্ণ: পিক্সেল থেকে নতুন কপি তৈরি করলে ফাইলের মেটাডেটা বাদ পড়তে পারে। কিন্তু দৃশ্যমান চিহ্ন পিক্সেলের অংশ; মেটাডেটা টুলের সেটি মুছে ফেলার দাবি করা উচিত নয়। দৃশ্যমান চিহ্ন ঢেকে বা বদলে ফেলা আলাদা সম্পাদনার কাজ এবং ছবির অর্থ পাল্টাতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "নতুন কপি তৈরি করে মেটাডেটা সরান"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল ফাইল রাখুন",
+                "x": "শেয়ারের কপি বানানোর আগে উৎস ফাইল নিরাপদে রাখুন। নিজের আর্কাইভে মেটাডেটা কাজে লাগতে পারে, যদিও পাঠানোর সময় তা বাদ দিতে চান।"
+              },
+              {
+                "h": "টুল খুলুন",
+                "x": "[AI ছবির মেটাডেটা সরান](/tools/remove-ai-metadata) খুলে PNG, JPG, WebP বা HEIC যোগ করুন। ফাইল ব্রাউজারে পড়া হয়, PrintxPDF সার্ভারে আপলোড হয় না।"
+              },
+              {
+                "h": "আউটপুট ফরম্যাট বাছুন",
+                "x": "স্বচ্ছতা ও ডিকোড করা পিক্সেল বজায় রাখতে PNG নিন। সাধারণ ছবি ও বেশি সামঞ্জস্যের জন্য JPG বেছে নিন। WebP স্বচ্ছতা রাখতে পারে এবং ওয়েবের জন্য সুবিধাজনক।"
+              },
+              {
+                "h": "কপি তৈরি করে পরীক্ষা করুন",
+                "x": "মেটাডেটা সরান চাপুন এবং নতুন ফাইল ডাউনলোড করুন। দৃশ্যমান পিক্সেল থেকে ফাইলটি তৈরি হয়, তাই সাধারণ EXIF, IPTC, XMP ও C2PA রেকর্ড কপি হয় না।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "ব্রাউজারেই লোকালি মেটাডেটাবিহীন ছবির কপি তৈরি করুন। মূল ফাইল অক্ষত থাকে, আপলোড হয় না।"
+          },
+          {
+            "t": "h2",
+            "x": "এই টুল কী সরায় না"
+          },
+          {
+            "t": "warn",
+            "x": "এটি ওয়াটারমার্ক, ক্যাপশন, লোগো, ছবির মধ্যে আঁকা প্রম্পটের লেখা বা দৃশ্যমান AI লেবেল সরায় না। এগুলো পিক্সেল, মেটাডেটা নয়। কোনো সেবার অ্যাকাউন্টে বা ডাউনলোড করা ছবির বাইরে থাকা তথ্যও এটি মুছতে পারে না।"
+          },
+          {
+            "t": "p",
+            "x": "নতুন ফাইল বানালে ছবির এনকোডিংও বদলাতে পারে। ডিকোড করা পিক্সেল যথাসম্ভব অপরিবর্তিত রাখতে PNG ভালো। JPG ও WebP কমপ্রেশন ব্যবহার করে; প্রিন্ট, প্রমাণ বা উৎপাদনে ব্যবহারের আগে বিস্তারিত অংশ দেখুন। ছবির আকারও কমাতে হলে আগে আর্কাইভের মূল কপি রাখুন, তারপর [ছবি কমপ্রেস করুন](/tools/compress-image)।"
+          },
+          {
+            "t": "h2",
+            "x": "কখন মেটাডেটাবিহীন কপি কাজে লাগে"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "ফোনের ছবি শেয়ার করা, যাতে ক্যামেরার মডেল, তারিখ বা সম্ভাব্য অবস্থান না থাকে।",
+              "ড্রাফট ছবি পাঠানো, যাতে লেখক ও কাজের ধাপের এমবেডেড তথ্য না যায়।",
+              "মূল ফাইল আলাদা রেখে ওয়েবের জন্য নতুন ডেলিভারি ফরম্যাট তৈরি করা।",
+              "বিতরণের কপি বানিয়ে নিয়ন্ত্রিত আর্কাইভে মূল ছবির উৎস সংরক্ষণ করা।"
+            ]
+          },
+          {
+            "t": "p",
+            "x": "মেটাডেটা সরানো গোপনীয়তা ও ফাইল ব্যবস্থাপনার সিদ্ধান্ত; এতে প্রমাণ হয় না যে ছবি কোনো নির্দিষ্ট টুল দিয়ে তৈরি হয়েছে বা হয়নি। উৎসের রেকর্ড দরকার হলে মূল ফাইল রাখুন, এবং কাজের উৎস ভুলভাবে দেখাতে পরিষ্কার কপি ব্যবহার করবেন না।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "এটি কি ChatGPT, Claude বা Gemini ছবির মেটাডেটা সরায়?",
+            "a": "টুলটি নতুন কপি তৈরি করে এবং ডিকোডের পর থাকা সাধারণ এমবেডেড EXIF, IPTC, XMP ও ফাইলে থাকা C2PA বা Content Credentials রেকর্ড বাদ দেয়। সেবা ভেদে তথ্য আলাদা; দৃশ্যমান লেবেল বা ফাইলের বাইরের তথ্য সরায় না।"
+          },
+          {
+            "q": "AI ওয়াটারমার্ক কি মুছে যাবে?",
+            "a": "না। দৃশ্যমান ওয়াটারমার্ক বা লেবেল পিক্সেলের অংশ। টুলটি সাধারণ এমবেডেড মেটাডেটা ছাড়া কপি বানায়, দৃশ্যমান অংশ বদলায় না।"
+          },
+          {
+            "q": "আমার ছবি কি আপলোড হয়?",
+            "a": "না। ছবি ব্রাউজারেই ডিকোড হয় এবং নতুন কপিও সেখানেই তৈরি হয়। PrintxPDF ছবিটি পায় না।"
+          },
+          {
+            "q": "কোন আউটপুট ফরম্যাট বেছে নেব?",
+            "a": "স্বচ্ছতা বা ডিকোড করা পিক্সেলের জন্য PNG, বহুল সামঞ্জস্যপূর্ণ ছবির জন্য JPG, ওয়েবের জন্য WebP নিন। সব ক্ষেত্রেই মূল ফাইল রাখুন।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -10811,6 +11516,147 @@
           {
             "q": "MOBI sang PDF có tải tệp lên không?",
             "a": "Có. Công cụ xử lý trên máy chủ, thông báo trước và xóa sách đã tải lên sau khi trả PDF."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-ai-metadata-from-images",
+        "slug": "remove-ai-metadata-from-images",
+        "title": "Cách xóa siêu dữ liệu AI mà không đổi ảnh",
+        "metaTitle": "Cách xóa siêu dữ liệu AI mà không đổi ảnh",
+        "metaDescription": "Xóa EXIF, IPTC, XMP và C2PA phổ biến khỏi bản sao ảnh miễn phí ngay trong trình duyệt. Dấu nhìn thấy vẫn còn.",
+        "keyword": "xóa siêu dữ liệu AI khỏi ảnh",
+        "secondaryKeywords": [
+          "xóa siêu dữ liệu C2PA",
+          "xóa Content Credentials",
+          "xóa EXIF khỏi ảnh",
+          "siêu dữ liệu ảnh ChatGPT"
+        ],
+        "answer": "Để xóa siêu dữ liệu phổ biến khỏi ảnh do AI tạo, hãy tạo một bản sao mới từ các điểm ảnh nhìn thấy. Công cụ cục bộ của PrintxPDF dựng lại PNG, JPG hoặc WebP trong trình duyệt và không tải tệp lên. Công cụ có thể bỏ EXIF, IPTC, XMP và hồ sơ C2PA nhúng phổ biến, nhưng không xóa hình mờ, nhãn hay chữ nhìn thấy.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Xóa siêu dữ liệu ảnh",
+        "body": [
+          {
+            "t": "p",
+            "x": "Ảnh gồm các điểm ảnh bạn nhìn thấy và đôi khi có dữ liệu ẩn gắn với tệp. Máy ảnh có thể ghi mẫu máy, ngày chụp hoặc vị trí. Phần mềm chỉnh sửa có thể thêm tác giả, từ khóa và thông tin quy trình. Một số hệ thống tạo ảnh AI thêm hồ sơ nguồn gốc như Content Credentials. Những dữ liệu này có thể đi kèm ảnh gốc khi bạn chia sẻ."
+          },
+          {
+            "t": "h2",
+            "x": "Ảnh AI có thể chứa loại siêu dữ liệu nào?"
+          },
+          {
+            "t": "table",
+            "caption": "Dữ liệu thường được lưu cùng điểm ảnh.",
+            "head": [
+              "Loại dữ liệu",
+              "Ví dụ",
+              "Có nhìn thấy trong ảnh?"
+            ],
+            "rows": [
+              [
+                "EXIF",
+                "Mẫu máy, ngày, hướng ảnh, GPS",
+                "Không"
+              ],
+              [
+                "IPTC và XMP",
+                "Tác giả, tiêu đề, từ khóa, phần mềm sửa",
+                "Không"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "Hồ sơ nhúng về việc tạo hoặc chỉnh sửa",
+                "Không"
+              ],
+              [
+                "Dấu nhìn thấy",
+                "Hình mờ, chú thích, chữ hoặc logo được vẽ vào ảnh",
+                "Có"
+              ]
+            ]
+          },
+          {
+            "t": "p",
+            "x": "Sự khác biệt này rất quan trọng: mã hóa bản sao mới từ các điểm ảnh có thể loại bỏ siêu dữ liệu của tệp. Dấu nhìn thấy lại chính là một phần của điểm ảnh, vì vậy công cụ siêu dữ liệu không nên tuyên bố xóa chúng. Che hoặc sửa dấu nhìn thấy là một thao tác chỉnh ảnh khác và có thể làm thay đổi ý nghĩa."
+          },
+          {
+            "t": "h2",
+            "x": "Xóa siêu dữ liệu bằng cách tạo bản sao mới"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ bản gốc",
+                "x": "Lưu tệp nguồn ở nơi an toàn trước khi tạo bản chia sẻ. Siêu dữ liệu có thể hữu ích cho kho lưu trữ của bạn dù không nên gửi đi."
+              },
+              {
+                "h": "Mở công cụ",
+                "x": "Vào [Xóa siêu dữ liệu ảnh AI](/tools/remove-ai-metadata) và thêm ảnh PNG, JPG, WebP hoặc HEIC. Tệp được đọc trong trình duyệt, không tải lên máy chủ PrintxPDF."
+              },
+              {
+                "h": "Chọn định dạng đầu ra",
+                "x": "Chọn PNG nếu cần giữ trong suốt và điểm ảnh đã giải mã. Chọn JPG cho ảnh thông thường và khả năng tương thích rộng. WebP giữ được trong suốt và hữu ích trên web."
+              },
+              {
+                "h": "Tạo và kiểm tra bản sao",
+                "x": "Bấm Xóa siêu dữ liệu rồi tải tệp mới. Tệp được dựng lại từ điểm ảnh nhìn thấy, vì vậy EXIF, IPTC, XMP và C2PA phổ biến không được chép sang."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Tạo bản sao ảnh không siêu dữ liệu ngay trong trình duyệt. Bản gốc không đổi và tệp không được tải lên."
+          },
+          {
+            "t": "h2",
+            "x": "Công cụ này không xóa những gì"
+          },
+          {
+            "t": "warn",
+            "x": "Công cụ không xóa hình mờ, chú thích, logo, chữ nhắc lệnh được vẽ vào ảnh hoặc nhãn AI nhìn thấy. Đó là điểm ảnh, không phải siêu dữ liệu. Công cụ cũng không xóa thông tin dịch vụ giữ trong tài khoản hoặc bên ngoài tệp ảnh đã tải xuống."
+          },
+          {
+            "t": "p",
+            "x": "Tạo tệp mới cũng có thể thay đổi cách mã hóa ảnh. PNG phù hợp nhất khi cần giữ nguyên điểm ảnh đã giải mã. JPG và WebP dùng nén; hãy kiểm tra chi tiết trước khi dùng bản sao để in, làm chứng cứ hoặc đưa vào sản xuất. Nếu muốn giảm dung lượng ảnh, hãy giữ bản lưu trữ gốc trước rồi dùng [Nén ảnh](/tools/compress-image)."
+          },
+          {
+            "t": "h2",
+            "x": "Khi nào nên dùng bản sao đã xóa siêu dữ liệu"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Chia sẻ ảnh điện thoại mà không kèm mẫu máy, ngày chụp hoặc vị trí có thể có.",
+              "Gửi ảnh nháp mà không kèm tác giả và trường quy trình nhúng.",
+              "Chuẩn bị ảnh web ở định dạng phân phối mới, đồng thời giữ riêng bản gốc.",
+              "Tạo bản phân phối và lưu nguồn gốc của ảnh gốc trong kho có kiểm soát."
+            ]
+          },
+          {
+            "t": "p",
+            "x": "Xóa siêu dữ liệu là lựa chọn về quyền riêng tư và quản lý tệp, không chứng minh ảnh có hay không được tạo bằng một công cụ cụ thể. Hãy giữ bản gốc khi nguồn gốc quan trọng và đừng dùng bản đã xóa dữ liệu để trình bày sai xuất xứ tác phẩm."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Công cụ có xóa siêu dữ liệu ảnh ChatGPT, Claude hoặc Gemini không?",
+            "a": "Công cụ dựng lại bản sao và bỏ siêu dữ liệu nhúng phổ biến còn lại sau giải mã, gồm EXIF, IPTC, XMP và hồ sơ C2PA hoặc Content Credentials có trong tệp. Mỗi dịch vụ khác nhau; công cụ không xóa nhãn nhìn thấy hay dữ liệu ngoài tệp."
+          },
+          {
+            "q": "Công cụ có xóa hình mờ AI không?",
+            "a": "Không. Hình mờ hoặc nhãn nhìn thấy là một phần của điểm ảnh. Công cụ tạo bản sao không có siêu dữ liệu nhúng phổ biến, không sửa nội dung nhìn thấy."
+          },
+          {
+            "q": "Ảnh có được tải lên không?",
+            "a": "Không. Ảnh được giải mã và bản mới được mã hóa ngay trong trình duyệt. PrintxPDF không nhận tệp."
+          },
+          {
+            "q": "Nên chọn định dạng đầu ra nào?",
+            "a": "Chọn PNG cho độ trong suốt hoặc điểm ảnh đã giải mã, JPG cho ảnh tương thích rộng và WebP cho web. Dù chọn định dạng nào, hãy giữ bản gốc."
           }
         ],
         "published": "2026-11-15",
@@ -12618,6 +13464,147 @@
           {
             "q": "MOBI 转 PDF 会上传文件吗？",
             "a": "会。转换由服务器处理，开始前会说明，返回 PDF 后会删除上传的书籍。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-ai-metadata-from-images",
+        "slug": "remove-ai-metadata-from-images",
+        "title": "不改变画面，如何删除图片中的 AI 元数据",
+        "metaTitle": "不改变画面，如何删除图片中的 AI 元数据",
+        "metaDescription": "在浏览器中免费清除图片副本中的常见 EXIF、IPTC、XMP 和 C2PA 元数据。可见水印不会删除。",
+        "keyword": "删除图片 AI 元数据",
+        "secondaryKeywords": [
+          "删除 C2PA 元数据",
+          "删除 Content Credentials",
+          "清除图片 EXIF",
+          "ChatGPT 图片元数据"
+        ],
+        "answer": "要清除 AI 生成图片中的常见元数据，请根据可见像素创建一个新副本。PrintxPDF 的本地工具会在浏览器中重新生成 PNG、JPG 或 WebP 文件，不会上传图片。它可以去除常见 EXIF、IPTC、XMP 和嵌入式 C2PA 记录，但不会删除可见水印、标签或文字。",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "删除图片元数据",
+        "body": [
+          {
+            "t": "p",
+            "x": "图片既包含你能看到的像素，有时也包含附在文件中的隐藏数据。相机可能记录型号、拍摄时间或位置。编辑软件可能添加作者、关键词和工作流程信息。一些 AI 图像系统会加入来源记录，例如 Content Credentials。分享原始文件时，这些数据可能随图片一起传递。"
+          },
+          {
+            "t": "h2",
+            "x": "AI 图片可能包含哪些元数据？"
+          },
+          {
+            "t": "table",
+            "caption": "与图像像素一同保存的常见信息。",
+            "head": [
+              "数据类型",
+              "示例",
+              "画面中可见吗？"
+            ],
+            "rows": [
+              [
+                "EXIF",
+                "相机型号、日期、方向、GPS 位置",
+                "不可见"
+              ],
+              [
+                "IPTC 和 XMP",
+                "作者、标题、关键词、编辑软件",
+                "不可见"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "关于创作或编辑的嵌入式记录",
+                "不可见"
+              ],
+              [
+                "可见标记",
+                "水印、说明文字、图片中的文字或标志",
+                "可见"
+              ]
+            ]
+          },
+          {
+            "t": "p",
+            "x": "这个区别很重要：从像素重新编码新副本时，文件元数据可以不被带入。可见标记属于像素本身，因此元数据工具不应声称能将其删除。隐藏或修改可见标记属于另一种图片编辑操作，可能改变图片含义。"
+          },
+          {
+            "t": "h2",
+            "x": "通过创建新副本来删除元数据"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留原文件",
+                "x": "制作分享副本前，将源文件保存在安全位置。元数据可能有助于个人归档，即使你不希望将它一并发送。"
+              },
+              {
+                "h": "打开工具",
+                "x": "进入[删除 AI 图片元数据](/tools/remove-ai-metadata)，添加 PNG、JPG、WebP 或 HEIC 图片。文件在浏览器中读取，不会上传到 PrintxPDF 服务器。"
+              },
+              {
+                "h": "选择输出格式",
+                "x": "需要保留透明度和解码像素时选 PNG。普通照片和广泛兼容性可选 JPG。WebP 支持透明度，适合网页使用。"
+              },
+              {
+                "h": "生成并检查副本",
+                "x": "点击删除元数据并下载新文件。文件根据可见像素重新生成，因此不会复制常见 EXIF、IPTC、XMP 和 C2PA 记录。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "在浏览器本地生成不含元数据的图片副本。原件保持不变，文件不会上传。"
+          },
+          {
+            "t": "h2",
+            "x": "此工具不会删除什么"
+          },
+          {
+            "t": "warn",
+            "x": "它不会删除水印、说明文字、标志、绘制在图片中的提示词或可见 AI 标签。这些属于像素，不是元数据。它也无法删除服务保存在账户记录中或下载图片文件之外的信息。"
+          },
+          {
+            "t": "p",
+            "x": "创建新文件也可能改变图片编码。若要尽量保留解码后的像素，PNG 是更合适的选择。JPG 和 WebP 使用压缩；用于打印、证据或生产前，请检查细节。如果还需要缩小照片，先保留原始归档文件，再使用[压缩图片](/tools/compress-image)。"
+          },
+          {
+            "t": "h2",
+            "x": "何时适合使用无元数据副本"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "分享手机照片时，不带相机型号、日期或可能的位置数据。",
+              "发送草稿图片时，不附带嵌入的作者和工作流程字段。",
+              "为网页准备新的交付格式，同时单独保留原件。",
+              "创建分发副本，并在受控档案中保存原件来源信息。"
+            ]
+          },
+          {
+            "t": "p",
+            "x": "删除元数据是隐私和文件管理选择，并不能证明图片是否由某个特定工具生成。来源记录重要时请保留原件，也不要用清除元数据的副本歪曲作品来源。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "它能删除 ChatGPT、Claude 或 Gemini 图片中的元数据吗？",
+            "a": "工具会重新生成副本，并删除解码后仍存在的常见嵌入式 EXIF、IPTC、XMP，以及文件中存在的 C2PA 或 Content Credentials 记录。各服务实现不同；可见标签或文件外的数据不会删除。"
+          },
+          {
+            "q": "它能删除 AI 水印吗？",
+            "a": "不能。可见水印或标签属于像素。此工具只生成不含常见嵌入元数据的副本，不会修改可见内容。"
+          },
+          {
+            "q": "图片会上传吗？",
+            "a": "不会。图片在浏览器中解码，新副本也在浏览器中编码。PrintxPDF 不会收到图片。"
+          },
+          {
+            "q": "我应该选择哪种输出格式？",
+            "a": "需要透明度或保留解码像素时选 PNG；普通照片和广泛兼容性选 JPG；网页交付选 WebP。无论选择哪种格式，都请保留原件。"
           }
         ],
         "published": "2026-11-15",
