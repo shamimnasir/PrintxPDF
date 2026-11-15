@@ -8443,6 +8443,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "split-pdf-by-chapter",
+        "slug": "split-pdf-by-chapter",
+        "cluster": "editing-expansion",
+        "tool": "split-pdf",
+        "title": "Cómo dividir un PDF por capítulos",
+        "metaTitle": "Cómo dividir un PDF por capítulos",
+        "metaDescription": "Divide un PDF por capítulos con rangos de páginas y descarga cada sección por separado o en ZIP. Gratis en el navegador, sin cuenta.",
+        "answer": "Para dividir un PDF por capítulos, anota la primera y la última posición de cada capítulo y crea un rango por sección. Split PDF genera archivos separados y conserva el orden de las páginas. Revisa la numeración porque las posiciones del archivo pueden no coincidir con los números impresos, sobre todo si hay portada o índice.",
+        "sections": [
+          {
+            "heading": "Divide un PDF por capítulos en cuatro pasos",
+            "paragraphs": [
+              "Para dividir un PDF por capítulos, anota la primera y la última posición de cada capítulo y crea un rango por sección. Split PDF genera archivos separados y conserva el orden de las páginas. Revisa la numeración porque las posiciones del archivo pueden no coincidir con los números impresos, sobre todo si hay portada o índice."
+            ],
+            "steps": [
+              {
+                "heading": "Conserva el original",
+                "text": "Guarda el libro o informe completo antes de dividirlo. El proceso crea archivos nuevos y no modifica la fuente."
+              },
+              {
+                "heading": "Marca los límites",
+                "text": "Usa miniaturas o [PDF Reader](/tools/pdf-reader) para hallar la primera y última página de cada capítulo. Cuenta desde la primera hoja como 1."
+              },
+              {
+                "heading": "Escribe los rangos",
+                "text": "Abre [Dividir PDF](/tools/split-pdf), selecciona Rangos personalizados e introduce cada sección, como 1-8, 9-17, 18-25. Cada rango crea un archivo aparte."
+              },
+              {
+                "heading": "Descarga y revisa",
+                "text": "Ejecuta la división y descarga las partes una por una o como ZIP. Abre el inicio y final de cada archivo para confirmar que no faltan páginas ni se cruzan capítulos."
+              }
+            ]
+          },
+          {
+            "heading": "Cómo se calculan y conservan las páginas",
+            "paragraphs": [
+              "Los rangos usan posiciones dentro del archivo, no necesariamente los números impresos en cada hoja. Si el libro tiene portada y tabla de contenido, la página impresa 1 puede estar en otra posición. Anota los límites exactos antes de dividir y comprueba una sección corta como prueba.",
+              "Split PDF crea un archivo por rango. Si los capítulos no son consecutivos o quieres reunir páginas seleccionadas en un solo archivo, [Extraer páginas PDF](/tools/extract-pages) acepta una lista de páginas y rangos. Si prefieres recibir un archivo por página, elige la opción de dividir cada página.",
+              "Las páginas se copian con su texto e imágenes; no se convierten en capturas ni pierden calidad. Los marcadores y otros elementos que pertenecen al documento completo pueden no pasar a cada parte. Conserva el original como referencia de navegación y archivo maestro.",
+              "La división ocurre localmente en la pestaña del navegador, de modo que el PDF común no se carga a un servidor. Esto resulta útil con manuscritos, informes o documentación interna. Revisa cada salida antes de compartirla y usa [Eliminar metadatos PDF](/tools/remove-metadata) si también necesitas limpiar propiedades generales."
+            ]
+          }
+        ],
+        "ctaLabel": "Divide tu PDF gratis en el navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿Cómo divido un PDF por capítulos?",
+            "a": "Encuentra la posición inicial y final de cada capítulo, abre Dividir PDF, elige Rangos personalizados y escribe un rango por capítulo. Descarga las partes y comprueba sus primeras y últimas páginas para confirmar los límites."
+          },
+          {
+            "q": "¿Los números de rango son los impresos en el libro?",
+            "a": "No necesariamente. La herramienta cuenta desde la primera página del archivo. Una portada o índice puede hacer que la posición sea diferente del número impreso. Comprueba las miniaturas o el lector PDF antes de introducir los rangos."
+          },
+          {
+            "q": "¿Puedo guardar todos los capítulos en un ZIP?",
+            "a": "Sí. Ejecuta la división por rangos y descarga las salidas juntas como ZIP. Cada archivo incluye el tramo de páginas en su nombre, lo que facilita reconocer capítulos y mantener el paquete ordenado."
+          },
+          {
+            "q": "¿Se pierde calidad al dividir el PDF?",
+            "a": "No. Las páginas se copian con sus fuentes e imágenes sin volver a dibujarse. El original permanece intacto. Algunos elementos globales, como marcadores del documento, pueden no copiarse a cada archivo de capítulo."
+          }
+        ],
+        "keywords": [
+          "cómo dividir un pdf por capítulos",
+          "split PDF by chapter",
+          "split PDF by page range"
+        ],
+        "relatedTools": [
+          "split-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -16870,6 +16951,87 @@
         ],
         "relatedTools": [
           "page-numbers",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "split-pdf-by-chapter",
+        "slug": "split-pdf-by-chapter",
+        "cluster": "editing-expansion",
+        "tool": "split-pdf",
+        "title": "Como dividir um PDF por capítulos",
+        "metaTitle": "Como dividir um PDF por capítulos",
+        "metaDescription": "Divida um PDF por capítulos usando intervalos de páginas e baixe cada seção separadamente ou em ZIP. Grátis no navegador, sem conta.",
+        "answer": "Para dividir um PDF por capítulos, anote a posição inicial e final de cada capítulo e crie um intervalo por seção. O Split PDF gera arquivos separados e mantém a ordem das páginas. Confira a numeração porque as posições no arquivo podem diferir dos números impressos, especialmente com capa ou sumário.",
+        "sections": [
+          {
+            "heading": "Divida um PDF por capítulos em quatro etapas",
+            "paragraphs": [
+              "Para dividir um PDF por capítulos, anote a posição inicial e final de cada capítulo e crie um intervalo por seção. O Split PDF gera arquivos separados e mantém a ordem das páginas. Confira a numeração porque as posições no arquivo podem diferir dos números impressos, especialmente com capa ou sumário."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o original",
+                "text": "Salve o livro ou relatório completo antes de dividir. O processo cria arquivos novos e não altera a fonte."
+              },
+              {
+                "heading": "Marque os limites",
+                "text": "Use miniaturas ou o [PDF Reader](/tools/pdf-reader) para localizar a primeira e a última página de cada capítulo. Conte desde a primeira folha como 1."
+              },
+              {
+                "heading": "Informe os intervalos",
+                "text": "Abra [Dividir PDF](/tools/split-pdf), escolha Intervalos personalizados e digite cada seção, como 1-8, 9-17, 18-25. Cada intervalo gera um arquivo."
+              },
+              {
+                "heading": "Baixe e confira",
+                "text": "Execute a divisão e baixe as partes individualmente ou em ZIP. Abra o início e o fim de cada arquivo para confirmar que não faltam páginas nem há capítulos misturados."
+              }
+            ]
+          },
+          {
+            "heading": "Como as páginas são contadas e preservadas",
+            "paragraphs": [
+              "Os intervalos usam posições dentro do arquivo, não necessariamente os números impressos em cada folha. Se o livro tiver capa e sumário, a página impressa 1 pode estar em outra posição. Anote os limites exatos e confira uma seção curta antes de dividir o documento inteiro.",
+              "Split PDF cria um arquivo para cada intervalo. Se os capítulos não forem consecutivos ou você quiser juntar páginas escolhidas em um único arquivo, [Extrair páginas do PDF](/tools/extract-pages) aceita uma lista de páginas e intervalos. Para um arquivo por página, escolha a opção de dividir cada página.",
+              "As páginas são copiadas com textos e imagens, sem virar capturas nem perder qualidade. Marcadores e outros itens que pertencem ao documento completo podem não acompanhar cada parte. Guarde o original como referência de navegação e arquivo mestre.",
+              "A divisão acontece localmente na aba do navegador, então um PDF comum não é enviado a um servidor. Isso é útil para manuscritos, relatórios ou documentos internos. Revise cada saída antes de compartilhar e use [Remover metadados do PDF](/tools/remove-metadata) se também precisar limpar propriedades gerais."
+            ]
+          }
+        ],
+        "ctaLabel": "Divida seu PDF grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "Como dividir um PDF por capítulos?",
+            "a": "Encontre a posição inicial e final de cada capítulo, abra Dividir PDF, escolha Intervalos personalizados e digite um intervalo por capítulo. Baixe as partes e confira a primeira e a última página para validar os limites."
+          },
+          {
+            "q": "Os intervalos usam os números impressos no livro?",
+            "a": "Não necessariamente. A ferramenta conta desde a primeira página do arquivo. Capa ou sumário podem fazer a posição diferir do número impresso. Confira as miniaturas ou o leitor PDF antes de informar os intervalos."
+          },
+          {
+            "q": "Posso baixar todos os capítulos em um ZIP?",
+            "a": "Sim. Execute a divisão por intervalos e baixe todas as saídas juntas em ZIP. Cada arquivo inclui o trecho de páginas no nome, facilitando identificar capítulos e manter o pacote organizado."
+          },
+          {
+            "q": "Dividir o PDF reduz a qualidade?",
+            "a": "Não. As páginas são copiadas com fontes e imagens, sem serem redesenhadas. O original permanece intacto. Alguns elementos gerais, como marcadores do documento, podem não ser copiados para cada arquivo de capítulo."
+          }
+        ],
+        "keywords": [
+          "como dividir um pdf por capítulos",
+          "split PDF by chapter",
+          "split PDF by page range"
+        ],
+        "relatedTools": [
+          "split-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -25317,6 +25479,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "split-pdf-by-chapter",
+        "slug": "split-pdf-by-chapter",
+        "cluster": "editing-expansion",
+        "tool": "split-pdf",
+        "title": "PDF को अध्यायों में कैसे बांटें",
+        "metaTitle": "PDF को अध्यायों में कैसे बांटें",
+        "metaDescription": "पेज रेंज से PDF को अध्यायों में बांटें और हर भाग अलग या ZIP में डाउनलोड करें। ब्राउज़र में मुफ्त, बिना खाते के।",
+        "answer": "PDF को अध्यायों में बांटने के लिए हर अध्याय की पहली और आखिरी फ़ाइल-स्थिति लिखें और हर भाग के लिए रेंज बनाएं। Split PDF अलग फ़ाइलें तैयार करता है और पेज क्रम बनाए रखता है। नंबर जांचें, क्योंकि फ़ाइल की स्थिति छपे नंबर से अलग हो सकती है, खासकर कवर या विषय-सूची होने पर।",
+        "sections": [
+          {
+            "heading": "चार चरणों में PDF को अध्यायों में बांटें",
+            "paragraphs": [
+              "PDF को अध्यायों में बांटने के लिए हर अध्याय की पहली और आखिरी फ़ाइल-स्थिति लिखें और हर भाग के लिए रेंज बनाएं। Split PDF अलग फ़ाइलें तैयार करता है और पेज क्रम बनाए रखता है। नंबर जांचें, क्योंकि फ़ाइल की स्थिति छपे नंबर से अलग हो सकती है, खासकर कवर या विषय-सूची होने पर।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल PDF रखें",
+                "text": "बांटने से पहले पूरी किताब या रिपोर्ट सुरक्षित रखें। प्रक्रिया नई फ़ाइलें बनाती है और स्रोत नहीं बदलती।"
+              },
+              {
+                "heading": "सीमाएं पहचानें",
+                "text": "हर अध्याय का पहला और आखिरी पेज ढूंढने के लिए थंबनेल या [PDF Reader](/tools/pdf-reader) देखें। पहली शीट को 1 मानकर गिनें।"
+              },
+              {
+                "heading": "रेंज लिखें",
+                "text": "[Split PDF](/tools/split-pdf) खोलें, Custom ranges चुनें और हर भाग लिखें, जैसे 1-8, 9-17, 18-25। हर रेंज अलग फ़ाइल बनाती है।"
+              },
+              {
+                "heading": "डाउनलोड और जांचें",
+                "text": "विभाजन चलाएं और हर भाग अलग या ZIP में डाउनलोड करें। हर फ़ाइल का पहला और आखिरी पेज खोलकर सुनिश्चित करें कि पेज गायब या अध्याय मिले हुए नहीं हैं।"
+              }
+            ]
+          },
+          {
+            "heading": "पेज कैसे गिने और सुरक्षित रहते हैं",
+            "paragraphs": [
+              "रेंज फ़ाइल के अंदर की स्थिति गिनती हैं, पेज पर छपे नंबर जरूरी नहीं। किताब में कवर और विषय-सूची हो तो छपा पेज 1 फ़ाइल में किसी दूसरी स्थिति पर हो सकता है। पूरे दस्तावेज़ को बांटने से पहले सीमाएं नोट करें और एक छोटा भाग जांचें।",
+              "Split PDF हर रेंज के लिए अलग फ़ाइल बनाता है। चुने अध्याय लगातार न हों या एक फ़ाइल में बिखरे पेज चाहिए तो [Extract Pages](/tools/extract-pages) सूची स्वीकार करता है। हर पेज अलग चाहिए तो Every Page विकल्प चुनें।",
+              "पेज टेक्स्ट और चित्र सहित कॉपी होते हैं; स्क्रीनशॉट नहीं बनते और गुणवत्ता नहीं घटती। पूरे दस्तावेज़ के बुकमार्क जैसे वैश्विक तत्व हर भाग में न आएं। मूल को मास्टर कॉपी और नेविगेशन संदर्भ के रूप में रखें।",
+              "विभाजन ब्राउज़र टैब में स्थानीय रूप से होता है, इसलिए सामान्य PDF सर्वर पर अपलोड नहीं होती। यह पांडुलिपि, रिपोर्ट और आंतरिक दस्तावेज़ों में उपयोगी है। साझा करने से पहले हर आउटपुट जांचें और जरूरत पर [Remove PDF Metadata](/tools/remove-metadata) से सामान्य प्रॉपर्टी साफ़ करें।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में PDF मुफ्त बांटें, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "PDF को अध्यायों में कैसे बांटें?",
+            "a": "हर अध्याय की पहली और आखिरी फ़ाइल-स्थिति पहचानें, Split PDF खोलें, Custom ranges चुनें और हर अध्याय की रेंज लिखें। भाग डाउनलोड करके हर फ़ाइल का पहला और आखिरी पेज जांचें।"
+          },
+          {
+            "q": "क्या रेंज नंबर किताब पर छपे नंबर हैं?",
+            "a": "हमेशा नहीं। टूल PDF की पहली शीट से गिनता है। कवर या विषय-सूची से छपा नंबर और फ़ाइल की स्थिति अलग हो सकती है। रेंज लिखने से पहले थंबनेल या PDF Reader देखें।"
+          },
+          {
+            "q": "क्या सभी अध्याय ZIP में डाउनलोड कर सकता हूं?",
+            "a": "हां। रेंज के अनुसार विभाजन चलाकर सभी आउटपुट ZIP में डाउनलोड करें। फ़ाइल नाम में पेज रेंज रहती है, जिससे अध्याय पहचानना और क्रम रखना आसान होता है।"
+          },
+          {
+            "q": "क्या PDF बांटने से गुणवत्ता घटती है?",
+            "a": "नहीं। पेज अपने फॉन्ट और चित्र सहित कॉपी होते हैं, दोबारा नहीं बनाए जाते। मूल फ़ाइल जस की तस रहती है। पूरे दस्तावेज़ के बुकमार्क जैसे कुछ विवरण हर अध्याय फ़ाइल में न आएं।"
+          }
+        ],
+        "keywords": [
+          "pdf को अध्यायों में कैसे बांटें",
+          "split PDF by chapter",
+          "split PDF by page range"
+        ],
+        "relatedTools": [
+          "split-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -33753,6 +33996,87 @@
         ],
         "relatedTools": [
           "page-numbers",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "split-pdf-by-chapter",
+        "slug": "split-pdf-by-chapter",
+        "cluster": "editing-expansion",
+        "tool": "split-pdf",
+        "title": "كيفية تقسيم PDF حسب الفصول",
+        "metaTitle": "كيفية تقسيم PDF حسب الفصول",
+        "metaDescription": "قسّم PDF إلى فصول باستخدام نطاقات الصفحات، ونزّل كل جزء منفصلاً أو في ZIP. مجاناً في المتصفح، بلا حساب.",
+        "answer": "لتقسيم PDF حسب الفصول، سجّل موضع بداية ونهاية كل فصل وأنشئ نطاقاً لكل قسم. تنشئ Split PDF ملفات منفصلة وتحافظ على ترتيب الصفحات. تحقق من الترقيم لأن موضع الصفحة في الملف قد يختلف عن الرقم المطبوع، خاصة مع الغلاف أو الفهرس.",
+        "sections": [
+          {
+            "heading": "تقسيم PDF إلى فصول في أربع خطوات",
+            "paragraphs": [
+              "لتقسيم PDF حسب الفصول، سجّل موضع بداية ونهاية كل فصل وأنشئ نطاقاً لكل قسم. تنشئ Split PDF ملفات منفصلة وتحافظ على ترتيب الصفحات. تحقق من الترقيم لأن موضع الصفحة في الملف قد يختلف عن الرقم المطبوع، خاصة مع الغلاف أو الفهرس."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بالأصل",
+                "text": "احفظ الكتاب أو التقرير كاملاً قبل تقسيمه. تنشئ العملية ملفات جديدة ولا تغيّر المصدر."
+              },
+              {
+                "heading": "حدّد الحدود",
+                "text": "استخدم الصور المصغرة أو [PDF Reader](/tools/pdf-reader) لمعرفة أول وآخر صفحة لكل فصل. ابدأ العد من الورقة الأولى باعتبارها 1."
+              },
+              {
+                "heading": "أدخل النطاقات",
+                "text": "افتح [Split PDF](/tools/split-pdf)، واختر Custom ranges واكتب نطاقاً لكل قسم، مثل 1-8, 9-17, 18-25. ينتج كل نطاق ملفاً مستقلاً."
+              },
+              {
+                "heading": "نزّل وراجع",
+                "text": "نفّذ التقسيم ونزّل الأجزاء منفردة أو كملف ZIP. افتح أول وآخر صفحة من كل ملف لتتأكد من عدم فقد صفحات أو تداخل الفصول."
+              }
+            ]
+          },
+          {
+            "heading": "كيف تُحسب الصفحات وتُحفظ",
+            "paragraphs": [
+              "تستخدم النطاقات مواضع الصفحات داخل الملف، وليس بالضرورة الأرقام المطبوعة. إذا احتوى الكتاب غلافاً وفهرساً، فقد يوجد الرقم المطبوع 1 في موضع آخر. سجّل الحدود بدقة واختبر قسماً قصيراً قبل تقسيم المستند كله.",
+              "تنشئ Split PDF ملفاً لكل نطاق. إذا لم تكن الفصول متتابعة أو أردت جمع صفحات متفرقة في ملف واحد، تقبل [Extract Pages](/tools/extract-pages) قائمة من الصفحات والنطاقات. للحصول على ملف لكل صفحة، اختر خيار تقسيم كل صفحة.",
+              "تُنسخ الصفحات بنصوصها وصورها؛ فلا تتحول إلى لقطات ولا تفقد الجودة. لكن الإشارات المرجعية والعناصر المرتبطة بالمستند كله قد لا تنتقل إلى كل جزء. احتفظ بالأصل كمرجع للتنقل ونسخة رئيسية.",
+              "يتم التقسيم محلياً في علامة تبويب المتصفح، لذلك لا يُرفع PDF العادي إلى خادم. يفيد ذلك للمخطوطات والتقارير والوثائق الداخلية. راجع كل ناتج قبل مشاركته، واستخدم [Remove PDF Metadata](/tools/remove-metadata) لتنظيف الخصائص العامة عند الحاجة."
+            ]
+          }
+        ],
+        "ctaLabel": "قسّم PDF مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "كيف أقسّم PDF إلى فصول؟",
+            "a": "حدّد موضع بداية ونهاية كل فصل، وافتح Split PDF، واختر Custom ranges وأدخل نطاقاً لكل فصل. نزّل الأجزاء وافحص الصفحة الأولى والأخيرة من كل ملف للتأكد من الحدود."
+          },
+          {
+            "q": "هل أرقام النطاق هي الأرقام المطبوعة في الكتاب؟",
+            "a": "ليس بالضرورة. تعد الأداة من الصفحة الأولى في الملف. قد يجعل الغلاف أو الفهرس الموضع مختلفاً عن الرقم المطبوع. راجع الصور المصغرة أو PDF Reader قبل إدخال النطاقات."
+          },
+          {
+            "q": "هل يمكن تنزيل كل الفصول في ZIP؟",
+            "a": "نعم. نفّذ التقسيم بالنطاقات ونزّل كل النواتج معاً في ZIP. يتضمن اسم كل ملف نطاق صفحاته، مما يسهل تمييز الفصول والحفاظ على ترتيبها."
+          },
+          {
+            "q": "هل يؤدي تقسيم PDF إلى فقدان الجودة؟",
+            "a": "لا. تُنسخ الصفحات مع خطوطها وصورها دون إعادة رسم. يبقى الأصل دون تغيير. وقد لا تنتقل بعض العناصر العامة مثل إشارات المستند المرجعية إلى كل ملف فصل."
+          }
+        ],
+        "keywords": [
+          "كيفية تقسيم pdf حسب الفصول",
+          "split PDF by chapter",
+          "split PDF by page range"
+        ],
+        "relatedTools": [
+          "split-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -42212,6 +42536,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "split-pdf-by-chapter",
+        "slug": "split-pdf-by-chapter",
+        "cluster": "editing-expansion",
+        "tool": "split-pdf",
+        "title": "PDF অধ্যায় অনুযায়ী কীভাবে ভাগ করবেন",
+        "metaTitle": "PDF অধ্যায় অনুযায়ী কীভাবে ভাগ করবেন",
+        "metaDescription": "পৃষ্ঠা রেঞ্জ ব্যবহার করে PDF অধ্যায়ে ভাগ করুন এবং প্রতিটি অংশ আলাদা বা ZIP-এ নামান। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট ছাড়া।",
+        "answer": "PDF অধ্যায় অনুযায়ী ভাগ করতে প্রতিটি অধ্যায়ের প্রথম ও শেষ ফাইল-অবস্থান লিখুন এবং প্রতি অংশের জন্য একটি রেঞ্জ দিন। Split PDF আলাদা ফাইল তৈরি করে এবং পৃষ্ঠার ক্রম রাখে। নম্বর যাচাই করুন, কারণ কভার বা সূচি থাকলে ফাইলের অবস্থান ছাপা নম্বর থেকে আলাদা হতে পারে।",
+        "sections": [
+          {
+            "heading": "চার ধাপে PDF অধ্যায়ে ভাগ করুন",
+            "paragraphs": [
+              "PDF অধ্যায় অনুযায়ী ভাগ করতে প্রতিটি অধ্যায়ের প্রথম ও শেষ ফাইল-অবস্থান লিখুন এবং প্রতি অংশের জন্য একটি রেঞ্জ দিন। Split PDF আলাদা ফাইল তৈরি করে এবং পৃষ্ঠার ক্রম রাখে। নম্বর যাচাই করুন, কারণ কভার বা সূচি থাকলে ফাইলের অবস্থান ছাপা নম্বর থেকে আলাদা হতে পারে।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল PDF রাখুন",
+                "text": "ভাগ করার আগে পূর্ণ বই বা রিপোর্ট সংরক্ষণ করুন। কাজটি নতুন ফাইল তৈরি করে, উৎস বদলায় না।"
+              },
+              {
+                "heading": "সীমানা চিহ্নিত করুন",
+                "text": "অধ্যায়ের প্রথম ও শেষ পৃষ্ঠা জানতে থাম্বনেইল বা [PDF Reader](/tools/pdf-reader) দেখুন। প্রথম পাতাকে 1 ধরে গুনুন।"
+              },
+              {
+                "heading": "রেঞ্জ লিখুন",
+                "text": "[Split PDF](/tools/split-pdf) খুলে Custom ranges নিন এবং প্রতিটি অংশ লিখুন, যেমন 1-8, 9-17, 18-25। প্রতিটি রেঞ্জ আলাদা ফাইল বানায়।"
+              },
+              {
+                "heading": "ডাউনলোড ও পরীক্ষা করুন",
+                "text": "ভাগ চালিয়ে অংশগুলো আলাদাভাবে বা ZIP-এ নামান। প্রতিটি ফাইলের শুরু ও শেষ পৃষ্ঠা দেখে নিশ্চিত করুন কোনো পাতা বাদ বা অধ্যায় মিশে যায়নি।"
+              }
+            ]
+          },
+          {
+            "heading": "পৃষ্ঠা কীভাবে গোনা ও অক্ষত থাকে",
+            "paragraphs": [
+              "রেঞ্জ ফাইলের ভেতরের অবস্থান ধরে, পাতায় ছাপা নম্বর ধরে নয়। বইয়ে কভার ও সূচি থাকলে ছাপা 1 নম্বর অন্য অবস্থানে হতে পারে। পুরো নথি ভাগের আগে সীমাগুলো লিখে রাখুন এবং ছোট একটি অংশ পরীক্ষা করুন।",
+              "Split PDF প্রতি রেঞ্জে একটি ফাইল বানায়। অধ্যায় ধারাবাহিক না হলে বা বেছে নেওয়া বিচ্ছিন্ন পৃষ্ঠা এক ফাইলে চাইলে [Extract Pages](/tools/extract-pages) পৃষ্ঠা ও রেঞ্জের তালিকা নিতে পারে। প্রতি পৃষ্ঠায় আলাদা ফাইলের জন্য Every Page বেছে নিন।",
+              "পৃষ্ঠাগুলো লেখা ও ছবিসহ কপি হয়; স্ক্রিনশটে বদলে যায় না এবং মান কমে না। তবে পুরো নথির বুকমার্কের মতো বৈশিষ্ট্য প্রতিটি অংশে নাও আসতে পারে। মূল ফাইলকে মাস্টার কপি ও নেভিগেশনের রেফারেন্স হিসেবে রাখুন।",
+              "ভাগ করার কাজ ব্রাউজার ট্যাবে স্থানীয়ভাবে হয়, তাই সাধারণ PDF সার্ভারে আপলোড হয় না। পাণ্ডুলিপি, রিপোর্ট ও অভ্যন্তরীণ নথিতে এটি সুবিধাজনক। শেয়ারের আগে প্রতিটি আউটপুট পরীক্ষা করুন; প্রয়োজন হলে [Remove PDF Metadata](/tools/remove-metadata) দিয়ে সাধারণ বৈশিষ্ট্য মুছুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে PDF ভাগ করুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "PDF অধ্যায়ে কীভাবে ভাগ করব?",
+            "a": "প্রতি অধ্যায়ের প্রথম ও শেষ ফাইল-অবস্থান শনাক্ত করুন, Split PDF খুলুন, Custom ranges বেছে নিয়ে অধ্যায়ভিত্তিক রেঞ্জ লিখুন। অংশ নামিয়ে প্রতিটি ফাইলের প্রথম ও শেষ পৃষ্ঠা যাচাই করুন।"
+          },
+          {
+            "q": "রেঞ্জের সংখ্যা কি বইয়ে ছাপা পৃষ্ঠা নম্বর?",
+            "a": "সবসময় নয়। টুল PDF-এর প্রথম পৃষ্ঠা থেকে গোনে। কভার বা সূচির কারণে অবস্থান ও ছাপা নম্বর আলাদা হতে পারে। রেঞ্জ দেওয়ার আগে থাম্বনেইল বা PDF Reader দেখুন।"
+          },
+          {
+            "q": "সব অধ্যায় ZIP ফাইলে নামানো যাবে?",
+            "a": "হ্যাঁ। রেঞ্জ ধরে ভাগ চালিয়ে সব আউটপুট এক ZIP-এ নামান। ফাইলের নামে পৃষ্ঠা রেঞ্জ থাকে, তাই অধ্যায় চেনা ও প্যাকেট সাজানো সহজ হয়।"
+          },
+          {
+            "q": "PDF ভাগ করলে কি মান কমে?",
+            "a": "না। পৃষ্ঠা ফন্ট ও ছবি সহ কপি হয়, নতুন করে আঁকা হয় না। মূল ফাইল অপরিবর্তিত থাকে। পুরো নথির বুকমার্কের মতো কিছু বৈশিষ্ট্য প্রতিটি অধ্যায় ফাইলে নাও থাকতে পারে।"
+          }
+        ],
+        "keywords": [
+          "pdf অধ্যায় অনুযায়ী কীভাবে ভাগ করবেন",
+          "split PDF by chapter",
+          "split PDF by page range"
+        ],
+        "relatedTools": [
+          "split-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -50639,6 +51044,87 @@
         ],
         "relatedTools": [
           "page-numbers",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "split-pdf-by-chapter",
+        "slug": "split-pdf-by-chapter",
+        "cluster": "editing-expansion",
+        "tool": "split-pdf",
+        "title": "Cách chia PDF theo chương",
+        "metaTitle": "Cách chia PDF theo chương",
+        "metaDescription": "Chia PDF theo chương bằng khoảng trang và tải từng phần riêng hoặc trong ZIP. Miễn phí trong trình duyệt, không cần tài khoản.",
+        "answer": "Để chia PDF theo chương, ghi vị trí trang đầu và cuối của từng chương rồi tạo một khoảng cho mỗi phần. Split PDF tạo các tệp riêng và giữ thứ tự trang. Hãy kiểm tra số trang vì vị trí trong tệp có thể khác số in, nhất là khi có bìa hoặc mục lục.",
+        "sections": [
+          {
+            "heading": "Chia PDF theo chương qua bốn bước",
+            "paragraphs": [
+              "Để chia PDF theo chương, ghi vị trí trang đầu và cuối của từng chương rồi tạo một khoảng cho mỗi phần. Split PDF tạo các tệp riêng và giữ thứ tự trang. Hãy kiểm tra số trang vì vị trí trong tệp có thể khác số in, nhất là khi có bìa hoặc mục lục."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ PDF gốc",
+                "text": "Lưu toàn bộ sách hoặc báo cáo trước khi chia. Công cụ tạo tệp mới và không sửa nguồn."
+              },
+              {
+                "heading": "Xác định ranh giới",
+                "text": "Dùng hình thu nhỏ hoặc [PDF Reader](/tools/pdf-reader) để tìm trang đầu, cuối mỗi chương. Đếm từ trang đầu tiên là 1."
+              },
+              {
+                "heading": "Nhập khoảng trang",
+                "text": "Mở [Split PDF](/tools/split-pdf), chọn Custom ranges và nhập từng phần, như 1-8, 9-17, 18-25. Mỗi khoảng tạo một tệp riêng."
+              },
+              {
+                "heading": "Tải xuống và kiểm tra",
+                "text": "Chạy thao tác chia và tải từng phần hoặc tải tất cả dưới dạng ZIP. Mở trang đầu, cuối mỗi tệp để xác nhận không thiếu trang hay lẫn chương."
+              }
+            ]
+          },
+          {
+            "heading": "Trang được đếm và giữ nguyên thế nào",
+            "paragraphs": [
+              "Khoảng trang dùng vị trí trong tệp, không nhất thiết là số in trên trang. Nếu sách có bìa và mục lục, trang in số 1 có thể nằm ở vị trí khác. Hãy ghi đúng ranh giới và thử một chương ngắn trước khi chia toàn bộ.",
+              "Split PDF tạo một tệp cho mỗi khoảng. Nếu chương không liền nhau hoặc muốn gom các trang rời thành một tệp, [Extract Pages](/tools/extract-pages) nhận danh sách trang và khoảng. Muốn mỗi trang thành một tệp, chọn chế độ Every Page.",
+              "Trang được sao chép cùng chữ và ảnh, không biến thành ảnh chụp và không giảm chất lượng. Tuy nhiên, dấu trang và các mục thuộc toàn tài liệu có thể không chuyển sang từng phần. Hãy giữ bản gốc làm bản chính và tham chiếu điều hướng.",
+              "Việc chia diễn ra cục bộ trong tab trình duyệt nên PDF thông thường không được tải lên máy chủ. Điều này hữu ích với bản thảo, báo cáo và hồ sơ nội bộ. Kiểm tra từng tệp trước khi chia sẻ; nếu cần, dùng [Remove PDF Metadata](/tools/remove-metadata) để làm sạch thuộc tính chung."
+            ]
+          }
+        ],
+        "ctaLabel": "Chia PDF miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Làm sao chia PDF theo chương?",
+            "a": "Tìm vị trí trang đầu, cuối của từng chương, mở Split PDF, chọn Custom ranges và nhập một khoảng cho mỗi chương. Tải các phần xuống rồi kiểm tra trang đầu và cuối từng tệp."
+          },
+          {
+            "q": "Số trong khoảng có phải số in trên sách không?",
+            "a": "Không nhất thiết. Công cụ đếm từ trang đầu của tệp. Bìa hoặc mục lục có thể khiến vị trí khác số in. Hãy xem hình thu nhỏ hoặc PDF Reader trước khi nhập khoảng."
+          },
+          {
+            "q": "Tôi có thể tải tất cả chương trong ZIP không?",
+            "a": "Có. Chia theo khoảng rồi tải tất cả kết quả thành ZIP. Tên mỗi tệp chứa khoảng trang, giúp nhận biết chương và giữ bộ tài liệu ngăn nắp."
+          },
+          {
+            "q": "Chia PDF có làm giảm chất lượng không?",
+            "a": "Không. Trang được sao chép cùng phông chữ và hình ảnh, không vẽ lại. Bản gốc không thay đổi. Một số yếu tố chung như dấu trang có thể không được chép sang từng tệp chương."
+          }
+        ],
+        "keywords": [
+          "cách chia pdf theo chương",
+          "split PDF by chapter",
+          "split PDF by page range"
+        ],
+        "relatedTools": [
+          "split-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -59085,6 +59571,87 @@
         ],
         "relatedTools": [
           "page-numbers",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "split-pdf-by-chapter",
+        "slug": "split-pdf-by-chapter",
+        "cluster": "editing-expansion",
+        "tool": "split-pdf",
+        "title": "如何按章节拆分 PDF",
+        "metaTitle": "如何按章节拆分 PDF",
+        "metaDescription": "按页码范围将 PDF 拆分为章节，并单独或打包 ZIP 下载。浏览器内免费处理，无需账户。",
+        "answer": "要按章节拆分 PDF，请记录每章的起始和结束页位置，并为每个章节创建一个范围。Split PDF 会生成多个文件并保留页面顺序。请核对页码位置，因为文件中的位置可能与印刷页码不同，尤其是在有封面或目录时。",
+        "sections": [
+          {
+            "heading": "四步按章节拆分 PDF",
+            "paragraphs": [
+              "要按章节拆分 PDF，请记录每章的起始和结束页位置，并为每个章节创建一个范围。Split PDF 会生成多个文件并保留页面顺序。请核对页码位置，因为文件中的位置可能与印刷页码不同，尤其是在有封面或目录时。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原 PDF",
+                "text": "拆分前保存完整书籍或报告。此操作会创建新文件，不会修改源文件。"
+              },
+              {
+                "heading": "确定章节边界",
+                "text": "使用缩略图或 [PDF Reader](/tools/pdf-reader) 找出每章的第一页和最后一页。从文件第一页开始计为 1。"
+              },
+              {
+                "heading": "输入页码范围",
+                "text": "打开 [Split PDF](/tools/split-pdf)，选择 Custom ranges，并输入每个章节范围，例如 1-8、9-17、18-25。每个范围会生成一个文件。"
+              },
+              {
+                "heading": "下载并检查",
+                "text": "运行拆分，并单独下载各部分或下载 ZIP。打开每个文件的首页和末页，确认没有漏页或章节交叉。"
+              }
+            ]
+          },
+          {
+            "heading": "页面如何计数和保留",
+            "paragraphs": [
+              "范围按文件中的页面位置计算，不一定与页面上印刷的数字一致。如果书籍有封面和目录，印刷页码 1 可能位于文件中的其他位置。拆分整份文件前先记录边界，并抽查一个较短章节。",
+              "Split PDF 为每个范围生成一个文件。如果章节不连续，或要将选定的零散页面放入同一个文件，可用 [Extract Pages](/tools/extract-pages) 输入页面和范围列表。若要每页一个文件，请选择 Every Page。",
+              "页面连同文本和图像一起复制，不会转成截图或降低质量。不过，书签等属于整个文档的元素可能不会带入每个章节文件。请保留完整原件作为主副本和导航参考。",
+              "拆分在浏览器标签页中本地完成，普通 PDF 不会上传到服务器。这适合手稿、报告或内部资料。分享前检查每个输出文件；若需清理通用属性，可用 [Remove PDF Metadata](/tools/remove-metadata)。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费拆分 PDF，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "如何按章节拆分 PDF？",
+            "a": "找出每章在文件中的起止位置，打开 Split PDF，选择 Custom ranges，并为每章输入一个范围。下载各部分，检查每个文件的首页和末页以确认边界。"
+          },
+          {
+            "q": "范围页码是书上印刷的页码吗？",
+            "a": "不一定。工具从文件第一页开始计数。封面或目录可能导致文件位置与印刷页码不同。输入范围前请查看缩略图或 PDF Reader。"
+          },
+          {
+            "q": "可以把所有章节下载成 ZIP 吗？",
+            "a": "可以。按范围拆分后，将所有输出打包下载为 ZIP。文件名会包含页码范围，方便识别章节并保持材料整齐。"
+          },
+          {
+            "q": "拆分 PDF 会降低质量吗？",
+            "a": "不会。页面会连同字体和图像一起复制，不会重新绘制。原文件保持不变。书签等文档级元素可能不会复制到每个章节文件中。"
+          }
+        ],
+        "keywords": [
+          "如何按章节拆分 pdf",
+          "split PDF by chapter",
+          "split PDF by page range"
+        ],
+        "relatedTools": [
+          "split-pdf",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
