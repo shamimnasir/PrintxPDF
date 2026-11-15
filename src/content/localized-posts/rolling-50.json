@@ -4611,6 +4611,176 @@
           "original-pdf-vs-access-copy",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "pdf-archive-naming-convention",
+        "slug": "pdf-archive-naming-convention",
+        "cluster": "archive-expansion",
+        "title": "Convención para nombrar PDF de archivo",
+        "metaTitle": "Convención para nombrar PDF de archivo",
+        "metaDescription": "Crea nombres de PDF de archivo coherentes con fecha, tipo, tema y versión. Evita datos sensibles y nombres como final-final.",
+        "primaryKeyword": "convención de nombres PDF para archivo",
+        "secondaryKeywords": [
+          "archive PDF filename format",
+          "document naming convention",
+          "PDF version naming",
+          "archive file organization"
+        ],
+        "answer": "Una convención de nombres para PDF de archivo usa un orden fijo, por ejemplo `AAAA-MM-DD_Tipo_Tema_ID_v001_ESTADO.pdf`. Aplica el mismo formato en todo el equipo, conserva el archivo fuente y no incluyas datos personales sensibles en el nombre.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Un buen nombre de archivo permite identificar y ordenar un PDF sin abrirlo. Define un orden fijo, usa fechas ISO `AAAA-MM-DD`, un tipo documental, un tema breve, un identificador no sensible, una versión y un estado. Por ejemplo: `2026-11-15_Contrato_Alquiler_DOC-1042_v001_FIRMADO.pdf`. Ajusta los campos a la política de tu archivo y usa el mismo esquema para todos."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo nombrar un PDF de archivo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Define un patrón fijo",
+                "x": "Elige campos y orden, por ejemplo `AAAA-MM-DD_Tipo_Tema_ID_v001_ESTADO.pdf`."
+              },
+              {
+                "h": "Usa valores consistentes",
+                "x": "Escribe las fechas como `AAAA-MM-DD`, conserva ceros iniciales en los ID y usa siempre la misma grafía para cada tipo."
+              },
+              {
+                "h": "Añade versión y estado",
+                "x": "Usa versiones como `v001`, `v002` y estados claros como `BORRADOR`, `REVISADO` o `FIRMADO`. Evita `final-final`."
+              },
+              {
+                "h": "Nombra la copia, no sobrescribas la fuente",
+                "x": "Mantén el original y guarda la versión de archivo con un nombre distinto y descriptivo."
+              },
+              {
+                "h": "Comprueba compatibilidad y privacidad",
+                "x": "Evita datos personales sensibles y caracteres no admitidos por los sistemas de tu equipo."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Revisa el PDF antes de archivarlo. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Ejemplo de convención de nombres para PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Campo",
+              "Ejemplo",
+              "Consejo"
+            ],
+            "rows": [
+              [
+                "Fecha",
+                "2026-11-15",
+                "Usa año-mes-día para ordenar cronológicamente."
+              ],
+              [
+                "Tipo y tema",
+                "Contrato_Alquiler",
+                "Usa términos breves y consistentes."
+              ],
+              [
+                "Identificador",
+                "DOC-1042",
+                "Prefiere un ID estable que no revele datos personales."
+              ],
+              [
+                "Versión y estado",
+                "v001_FIRMADO",
+                "No sustituyas una versión firmada; crea una versión nueva si cambia."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Caracteres y longitud del nombre"
+          },
+          {
+            "t": "p",
+            "x": "Mantén nombres cortos y fáciles de buscar. Para compatibilidad entre sistemas, usa letras, números, guiones y guiones bajos. Evita `/ \\ : * ? \" < > |`, que pueden causar problemas en algunos sistemas. No uses espacios o abreviaturas de forma distinta entre equipos."
+          },
+          {
+            "t": "h2",
+            "x": "Privacidad: no pongas datos sensibles en el nombre"
+          },
+          {
+            "t": "p",
+            "x": "Un nombre de archivo puede aparecer en correos, listas recientes, copias de seguridad o registros de uso. Evita nombres completos, números de cuenta, identificadores médicos o detalles confidenciales. Usa un ID interno aprobado cuando el archivo necesite distinguirse."
+          },
+          {
+            "t": "h2",
+            "x": "El nombre no es metadato ni prueba de autenticidad"
+          },
+          {
+            "t": "p",
+            "x": "Cambiar el nombre del archivo no modifica los campos internos de título o autor. Usa [Editar metadatos](/tools/edit-metadata) para los campos estándar y [Eliminar metadatos](/tools/remove-metadata) cuando necesites quitar propiedades estándar. Un nombre claro tampoco prueba que el PDF sea auténtico o no haya cambiado; conserva registros y, si el proceso lo requiere, un checksum de confianza."
+          },
+          {
+            "t": "h2",
+            "x": "Mantén versiones y retención bajo control"
+          },
+          {
+            "t": "p",
+            "x": "Conserva el original y usa números de versión secuenciales. No renombres una copia revisada para hacerla pasar por firmada o aprobada. Sigue la política de retención, el control de acceso y la cadena de custodia de tu organización. Revisa la página con [Lector PDF](/tools/pdf-reader) antes de archivar o compartir."
+          },
+          {
+            "t": "h2",
+            "x": "Diseña nombres que se puedan buscar"
+          },
+          {
+            "t": "p",
+            "x": [
+              "Al elegir un patrón, piensa en cómo se buscarán los documentos. El orden de fecha al inicio facilita ordenar una carpeta por cronología. El tipo ayuda a filtrar contratos, facturas o informes. El tema debe describir el asunto sin copiar texto confidencial del documento. Define una lista breve de tipos permitidos y compártela con quienes crean archivos.",
+              "Usa guiones bajos para separar campos si tu sistema ordena nombres por texto. Mantén el mismo número de dígitos en fechas e identificadores para que el orden sea predecible. Si el sistema limita la longitud, elimina palabras redundantes antes que la fecha, el tipo o la versión. Documenta abreviaturas poco obvias."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Qué significan la versión y el estado"
+          },
+          {
+            "t": "p",
+            "x": "El estado indica el punto del proceso, no la validez legal del documento. Usa estados definidos por tu equipo y actualízalos solo cuando el flujo de aprobación lo permita. Los nombres repetidos pueden sobrescribirse al guardar en algunos programas, así que verifica la carpeta de destino y conserva versiones anteriores conforme a la política aplicable."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué formato conviene para nombrar un PDF de archivo?",
+            "a": "Usa un patrón consistente como `AAAA-MM-DD_Tipo_Tema_ID_v001_ESTADO.pdf`. Ajusta los campos a la política de tu archivo y evita datos sensibles."
+          },
+          {
+            "q": "¿Debo incluir mi nombre en el archivo?",
+            "a": "Solo si la política lo exige. Un ID interno suele reducir la exposición de datos personales en correos, listas y copias de seguridad."
+          },
+          {
+            "q": "¿Cambiar el nombre del PDF cambia sus metadatos?",
+            "a": "No. El nombre del archivo y los metadatos internos son cosas distintas. Cambia el título o el autor con una herramienta de metadatos."
+          },
+          {
+            "q": "¿Un nombre claro demuestra que el archivo es auténtico?",
+            "a": "No. El nombre facilita organizarlo, pero no demuestra su origen ni que sus bytes sean iguales. Usa un proceso aprobado de firma o checksum si necesitas verificarlo."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives",
+          "original-pdf-vs-access-copy",
+          "archive-copy-vs-backup"
+        ]
       }
     ]
   },
@@ -9216,6 +9386,176 @@
           "original-pdf-vs-access-copy",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "pdf-archive-naming-convention",
+        "slug": "pdf-archive-naming-convention",
+        "cluster": "archive-expansion",
+        "title": "Padrão de nomes para PDF de arquivo",
+        "metaTitle": "Padrão de nomes para PDF de arquivo",
+        "metaDescription": "Crie nomes de PDF de arquivo com data, tipo, assunto e versão. Evite dados sensíveis e nomes como final-final.",
+        "primaryKeyword": "padrão de nomes PDF para arquivo",
+        "secondaryKeywords": [
+          "archive PDF filename format",
+          "document naming convention",
+          "PDF version naming",
+          "archive file organization"
+        ],
+        "answer": "Um padrão de nomes para PDF de arquivo usa uma ordem fixa, como `AAAA-MM-DD_Tipo_Assunto_ID_v001_STATUS.pdf`. Aplique o mesmo formato em toda a equipe, preserve o arquivo-fonte e não inclua dados pessoais sensíveis no nome.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Um bom nome de arquivo ajuda a identificar e ordenar um PDF sem abri-lo. Defina uma ordem fixa, use datas ISO `AAAA-MM-DD`, tipo de documento, assunto curto, identificador não sensível, versão e status. Exemplo: `2026-11-15_Contrato_Aluguel_DOC-1042_v001_ASSINADO.pdf`. Ajuste os campos à política do arquivo e mantenha o padrão em todos os documentos."
+          },
+          {
+            "t": "h2",
+            "x": "Como nomear um PDF de arquivo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Defina um padrão fixo",
+                "x": "Escolha os campos e a ordem, por exemplo `AAAA-MM-DD_Tipo_Assunto_ID_v001_STATUS.pdf`."
+              },
+              {
+                "h": "Use valores consistentes",
+                "x": "Escreva datas como `AAAA-MM-DD`, mantenha zeros à esquerda nos IDs e padronize a grafia dos tipos."
+              },
+              {
+                "h": "Inclua versão e status",
+                "x": "Use versões como `v001`, `v002` e status claros como `RASCUNHO`, `REVISADO` ou `ASSINADO`. Evite `final-final`."
+              },
+              {
+                "h": "Nomeie a cópia sem sobrescrever a fonte",
+                "x": "Preserve o original e salve a versão arquivada com um nome descritivo diferente."
+              },
+              {
+                "h": "Confira compatibilidade e privacidade",
+                "x": "Evite dados pessoais sensíveis e caracteres que os sistemas da equipe não aceitam."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Confira o PDF antes de arquivar. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Exemplo de padrão de nomes para PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Campo",
+              "Exemplo",
+              "Dica"
+            ],
+            "rows": [
+              [
+                "Data",
+                "2026-11-15",
+                "Use ano-mês-dia para ordenar cronologicamente."
+              ],
+              [
+                "Tipo e assunto",
+                "Contrato_Aluguel",
+                "Prefira termos curtos e consistentes."
+              ],
+              [
+                "Identificador",
+                "DOC-1042",
+                "Use um ID estável que não revele dados pessoais."
+              ],
+              [
+                "Versão e status",
+                "v001_ASSINADO",
+                "Não substitua uma versão assinada; crie outra se houver mudanças."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Caracteres e tamanho do nome"
+          },
+          {
+            "t": "p",
+            "x": "Mantenha nomes curtos e fáceis de pesquisar. Para compatibilidade entre sistemas, use letras, números, hífens e sublinhados. Evite `/ \\ : * ? \" < > |`, que podem causar problemas em alguns sistemas. Padronize espaços e abreviações entre equipes."
+          },
+          {
+            "t": "h2",
+            "x": "Privacidade: não inclua dados sensíveis no nome"
+          },
+          {
+            "t": "p",
+            "x": "O nome pode aparecer em e-mails, listas recentes, backups e registros de uso. Evite nomes completos, números de conta, identificadores médicos ou detalhes confidenciais. Use um ID interno aprovado quando for preciso distinguir o arquivo."
+          },
+          {
+            "t": "h2",
+            "x": "Nome de arquivo não é metadado nem prova de autenticidade"
+          },
+          {
+            "t": "p",
+            "x": "Renomear o arquivo não altera os campos internos de título ou autor. Use [Editar metadados](/tools/edit-metadata) para campos padrão e [Remover metadados](/tools/remove-metadata) quando precisar retirar propriedades padrão. Um nome claro não prova que o PDF é autêntico ou não mudou; preserve registros e, se exigido, um checksum confiável."
+          },
+          {
+            "t": "h2",
+            "x": "Controle versões e retenção"
+          },
+          {
+            "t": "p",
+            "x": "Preserve o original e use números de versão sequenciais. Não renomeie uma cópia revisada para fazê-la parecer assinada ou aprovada. Siga as políticas de retenção, acesso e cadeia de custódia. Confira a página com o [Leitor de PDF](/tools/pdf-reader) antes de arquivar ou compartilhar."
+          },
+          {
+            "t": "h2",
+            "x": "Crie nomes fáceis de pesquisar"
+          },
+          {
+            "t": "p",
+            "x": [
+              "Ao escolher um padrão, pense em como as pessoas vão localizar os documentos. A data no início facilita ordenar uma pasta por cronologia. O tipo ajuda a filtrar contratos, notas fiscais ou relatórios. O assunto deve identificar o tema sem copiar conteúdo confidencial do documento. Defina uma lista curta de tipos permitidos e compartilhe com quem cria os arquivos.",
+              "Use sublinhados para separar campos se o sistema ordenar nomes como texto. Mantenha o mesmo número de dígitos em datas e identificadores para obter uma ordem previsível. Se houver limite de tamanho, remova palavras redundantes antes da data, do tipo ou da versão. Documente abreviações que não sejam óbvias."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Entenda versão e status"
+          },
+          {
+            "t": "p",
+            "x": "O status mostra a etapa do processo, não a validade jurídica do documento. Use status definidos pela equipe e altere-os somente quando o fluxo de aprovação permitir. Alguns programas podem substituir arquivos com nomes repetidos ao salvar; confira a pasta de destino e mantenha versões anteriores de acordo com a política aplicável."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Qual formato usar no nome de um PDF de arquivo?",
+            "a": "Use um padrão consistente como `AAAA-MM-DD_Tipo_Assunto_ID_v001_STATUS.pdf`. Adapte os campos à política do arquivo e evite dados sensíveis."
+          },
+          {
+            "q": "Devo incluir meu nome no arquivo?",
+            "a": "Somente se a política exigir. Um ID interno costuma reduzir a exposição de dados pessoais em e-mails, listas e backups."
+          },
+          {
+            "q": "Renomear o PDF altera os metadados?",
+            "a": "Não. O nome do arquivo e os metadados internos são diferentes. Altere título ou autor em uma ferramenta de metadados."
+          },
+          {
+            "q": "Um nome claro comprova que o arquivo é autêntico?",
+            "a": "Não. O nome facilita a organização, mas não comprova origem nem igualdade dos bytes. Use assinatura ou checksum aprovado quando precisar verificar."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives",
+          "original-pdf-vs-access-copy",
+          "archive-copy-vs-backup"
+        ]
       }
     ]
   },
@@ -13820,6 +14160,176 @@
           "archive-copy-vs-backup",
           "original-pdf-vs-access-copy",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-archive-naming-convention",
+        "slug": "pdf-archive-naming-convention",
+        "cluster": "archive-expansion",
+        "title": "आर्काइव PDF के लिए फ़ाइल नाम का मानक",
+        "metaTitle": "आर्काइव PDF के लिए फ़ाइल नाम का मानक",
+        "metaDescription": "तारीख, प्रकार, विषय और संस्करण से एकसमान आर्काइव PDF नाम बनाएँ। संवेदनशील जानकारी और final-final जैसे नामों से बचें।",
+        "primaryKeyword": "आर्काइव PDF फ़ाइल नाम मानक",
+        "secondaryKeywords": [
+          "archive PDF filename format",
+          "document naming convention",
+          "PDF version naming",
+          "archive file organization"
+        ],
+        "answer": "आर्काइव PDF का फ़ाइल नाम एक निश्चित क्रम में रखें, जैसे `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`। पूरी टीम में यही प्रारूप अपनाएँ, मूल फ़ाइल सुरक्षित रखें और नाम में संवेदनशील निजी जानकारी न डालें।",
+        "body": [
+          {
+            "t": "p",
+            "x": "अच्छा फ़ाइल नाम PDF खोले बिना उसे पहचानने और क्रम में रखने में मदद करता है। एक तय क्रम चुनें: ISO तारीख `YYYY-MM-DD`, दस्तावेज़ प्रकार, छोटा विषय, गैर-संवेदनशील पहचान संख्या, संस्करण और स्थिति। उदाहरण: `2026-11-15_Contract_Rent_DOC-1042_v001_SIGNED.pdf`। अपने आर्काइव की नीति के अनुसार फ़ील्ड तय करें और सभी फ़ाइलों पर एक ही ढाँचा रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव PDF का नाम कैसे रखें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "एक स्थिर पैटर्न तय करें",
+                "x": "फ़ील्ड और क्रम चुनें, जैसे `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`।"
+              },
+              {
+                "h": "मानों को एकसमान रखें",
+                "x": "तारीख `YYYY-MM-DD` लिखें, ID के आगे के शून्य न हटाएँ और प्रकार की वर्तनी समान रखें।"
+              },
+              {
+                "h": "संस्करण और स्थिति जोड़ें",
+                "x": "`v001`, `v002` जैसे संस्करण और `DRAFT`, `REVIEWED`, `SIGNED` जैसी स्पष्ट स्थिति रखें। `final-final` से बचें।"
+              },
+              {
+                "h": "मूल को ओवरराइट किए बिना कॉपी का नाम रखें",
+                "x": "मूल फ़ाइल सुरक्षित रखें और आर्काइव कॉपी को अलग वर्णनात्मक नाम से सेव करें।"
+              },
+              {
+                "h": "संगतता और गोपनीयता जाँचें",
+                "x": "नाम में संवेदनशील निजी जानकारी और सिस्टम द्वारा अस्वीकार किए जाने वाले अक्षर न रखें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "आर्काइव करने से पहले PDF जाँचें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF नामकरण मानक का उदाहरण"
+          },
+          {
+            "t": "table",
+            "head": [
+              "फ़ील्ड",
+              "उदाहरण",
+              "सुझाव"
+            ],
+            "rows": [
+              [
+                "तारीख",
+                "2026-11-15",
+                "कालक्रम के लिए वर्ष-माह-दिन रखें।"
+              ],
+              [
+                "प्रकार और विषय",
+                "Contract_Rent",
+                "छोटे, एकसमान शब्द चुनें।"
+              ],
+              [
+                "पहचान संख्या",
+                "DOC-1042",
+                "ऐसी स्थिर ID लें जिससे निजी जानकारी उजागर न हो।"
+              ],
+              [
+                "संस्करण और स्थिति",
+                "v001_SIGNED",
+                "हस्ताक्षरित संस्करण को बदलें नहीं; बदलाव पर नया बनाएँ।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "फ़ाइल नाम के अक्षर और लंबाई"
+          },
+          {
+            "t": "p",
+            "x": "नाम छोटा और खोजने में आसान रखें। सिस्टम संगतता के लिए अक्षर, संख्या, हाइफ़न और अंडरस्कोर उपयोग करें। `/ \\ : * ? \" < > |` से बचें, कुछ सिस्टम इन्हें स्वीकार नहीं करते। टीम में स्पेस और संक्षेप एकसमान रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "गोपनीयता: नाम में संवेदनशील जानकारी न रखें"
+          },
+          {
+            "t": "p",
+            "x": "फ़ाइल नाम ईमेल, हाल की फ़ाइलों की सूची, बैकअप और उपयोग लॉग में दिख सकता है। पूरा नाम, खाता संख्या, मेडिकल ID या गोपनीय विवरण न डालें। पहचान ज़रूरी हो तो स्वीकृत आंतरिक ID लें।"
+          },
+          {
+            "t": "h2",
+            "x": "फ़ाइल नाम मेटाडेटा या प्रामाणिकता का प्रमाण नहीं"
+          },
+          {
+            "t": "p",
+            "x": "नाम बदलने से PDF के अंदर का शीर्षक या लेखक नहीं बदलता। सामान्य फ़ील्ड के लिए [Edit Metadata](/tools/edit-metadata) और प्रॉपर्टी हटाने के लिए [Remove Metadata](/tools/remove-metadata) उपयोग करें। स्पष्ट नाम PDF के असली होने या न बदले होने का प्रमाण नहीं है; रिकॉर्ड रखें और ज़रूरत पर भरोसेमंद चेकसम रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "संस्करण और रिटेंशन नियंत्रित करें"
+          },
+          {
+            "t": "p",
+            "x": "मूल रखें और क्रमिक संस्करण संख्या उपयोग करें। समीक्षा की गई कॉपी को ऐसा नया नाम न दें जिससे वह हस्ताक्षरित या स्वीकृत लगे। संस्था की रिटेंशन, एक्सेस और चेन-ऑफ़-कस्टडी नीति अपनाएँ। आर्काइव या साझा करने से पहले [PDF Reader](/tools/pdf-reader) में पन्ने देखें।"
+          },
+          {
+            "t": "h2",
+            "x": "ऐसे नाम बनाएँ जिन्हें खोजना आसान हो"
+          },
+          {
+            "t": "p",
+            "x": [
+              "नामकरण पैटर्न चुनते समय सोचें कि लोग दस्तावेज़ कैसे खोजेंगे। शुरुआत में तारीख रखने से फ़ोल्डर कालक्रम में क्रमबद्ध होता है। प्रकार से अनुबंध, बिल या रिपोर्ट छाँटना आसान होता है। विषय इतना स्पष्ट रखें कि गोपनीय सामग्री दोहरानी न पड़े। स्वीकृत प्रकारों की छोटी सूची बनाकर फ़ाइल बनाने वालों के साथ साझा करें।",
+              "यदि सिस्टम नामों को टेक्स्ट की तरह क्रमबद्ध करता है, तो फ़ील्ड अलग करने के लिए अंडरस्कोर रखें। तारीख और ID में अंकों की संख्या समान रखें ताकि क्रम अनुमानित रहे। लंबाई की सीमा हो तो तारीख, प्रकार या संस्करण हटाने के बजाय दोहराए जाने वाले शब्द हटाएँ। अस्पष्ट संक्षेपों का अर्थ दर्ज करें।"
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "संस्करण और स्थिति का अर्थ समझें"
+          },
+          {
+            "t": "p",
+            "x": "स्थिति प्रक्रिया का चरण बताती है, दस्तावेज़ की कानूनी वैधता नहीं। टीम द्वारा तय स्थितियों का उपयोग करें और अनुमोदन प्रक्रिया के अनुसार ही बदलें। कुछ ऐप समान नाम से सहेजते समय पुरानी फ़ाइल बदल सकते हैं। गंतव्य फ़ोल्डर जाँचें और लागू नीति के अनुसार पुराने संस्करण रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "आर्काइव PDF के लिए कौन-सा नाम प्रारूप ठीक है?",
+            "a": "एकसमान ढाँचा रखें, जैसे `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`। अपनी आर्काइव नीति के अनुसार फ़ील्ड चुनें और संवेदनशील डेटा न रखें।"
+          },
+          {
+            "q": "क्या फ़ाइल में अपना नाम डालना चाहिए?",
+            "a": "केवल नीति माँगे तो। आंतरिक ID ईमेल, सूची और बैकअप में निजी जानकारी कम उजागर करती है।"
+          },
+          {
+            "q": "PDF का नाम बदलने से मेटाडेटा बदलता है?",
+            "a": "नहीं। फ़ाइल नाम और अंदर के मेटाडेटा अलग हैं। शीर्षक या लेखक बदलने के लिए मेटाडेटा टूल उपयोग करें।"
+          },
+          {
+            "q": "क्या स्पष्ट फ़ाइल नाम प्रामाणिकता साबित करता है?",
+            "a": "नहीं। नाम आयोजन में मदद करता है, लेकिन स्रोत या बाइट समानता साबित नहीं करता। सत्यापन के लिए स्वीकृत हस्ताक्षर या चेकसम अपनाएँ।"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives",
+          "original-pdf-vs-access-copy",
+          "archive-copy-vs-backup"
         ]
       }
     ]
@@ -18434,6 +18944,176 @@
           "archive-copy-vs-backup",
           "original-pdf-vs-access-copy",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-archive-naming-convention",
+        "slug": "pdf-archive-naming-convention",
+        "cluster": "archive-expansion",
+        "title": "معيار تسمية ملفات PDF للأرشيف",
+        "metaTitle": "معيار تسمية ملفات PDF للأرشيف",
+        "metaDescription": "أنشئ أسماء PDF للأرشيف تتضمن التاريخ والنوع والموضوع والإصدار. تجنب البيانات الحساسة وتسميات مثل نهائي نهائي.",
+        "primaryKeyword": "معيار تسمية PDF للأرشيف",
+        "secondaryKeywords": [
+          "archive PDF filename format",
+          "document naming convention",
+          "PDF version naming",
+          "archive file organization"
+        ],
+        "answer": "استخدم ترتيباً ثابتاً لاسم PDF المؤرشف، مثل `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`. طبّق النمط نفسه على جميع الملفات، واحتفظ بالمصدر، ولا تضع بيانات شخصية حساسة في الاسم.",
+        "body": [
+          {
+            "t": "p",
+            "x": "يساعد اسم الملف الجيد على تحديد PDF وترتيبه دون فتحه. اختر حقولاً بترتيب ثابت: تاريخ ISO بصيغة `YYYY-MM-DD`، ونوع المستند، وموضوعاً مختصراً، ومعرفاً غير حساس، ورقماً للإصدار، والحالة. مثال: `2026-11-15_Contract_Rent_DOC-1042_v001_SIGNED.pdf`. عدّل الحقول وفق سياسة الأرشيف وطبّق النمط على جميع الملفات."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية تسمية PDF مؤرشف"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "حدد نمطاً ثابتاً",
+                "x": "اختر الحقول والترتيب، مثل `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`."
+              },
+              {
+                "h": "استخدم قيماً متسقة",
+                "x": "اكتب التاريخ بصيغة `YYYY-MM-DD`، واحتفظ بالأصفار الأولى في المعرفات، ووحّد تهجئة الأنواع."
+              },
+              {
+                "h": "أضف الإصدار والحالة",
+                "x": "استخدم إصدارات مثل `v001` و`v002` وحالات واضحة مثل `DRAFT` أو `REVIEWED` أو `SIGNED`. تجنب `final-final`."
+              },
+              {
+                "h": "سمّ النسخة دون الكتابة فوق المصدر",
+                "x": "احتفظ بالأصل واحفظ نسخة الأرشيف باسم وصفي مختلف."
+              },
+              {
+                "h": "تحقق من التوافق والخصوصية",
+                "x": "تجنب البيانات الحساسة والأحرف التي لا تقبلها أنظمة مؤسستك."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "راجع PDF قبل أرشفته. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "مثال على معيار تسمية PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الحقل",
+              "مثال",
+              "نصيحة"
+            ],
+            "rows": [
+              [
+                "التاريخ",
+                "2026-11-15",
+                "استخدم سنة-شهر-يوم للترتيب الزمني."
+              ],
+              [
+                "النوع والموضوع",
+                "Contract_Rent",
+                "استخدم كلمات قصيرة ومتسقة."
+              ],
+              [
+                "المعرف",
+                "DOC-1042",
+                "اختر معرفاً ثابتاً لا يكشف بيانات شخصية."
+              ],
+              [
+                "الإصدار والحالة",
+                "v001_SIGNED",
+                "لا تستبدل نسخة موقعة؛ أنشئ إصداراً جديداً عند التغيير."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "الأحرف وطول اسم الملف"
+          },
+          {
+            "t": "p",
+            "x": "اجعل الأسماء قصيرة وسهلة البحث. للتوافق بين الأنظمة استخدم الحروف والأرقام والشرطة والشرطة السفلية. تجنب `/ \\ : * ? \" < > |` التي قد تسبب مشكلات في بعض الأنظمة. وحّد المسافات والاختصارات بين الفرق."
+          },
+          {
+            "t": "h2",
+            "x": "الخصوصية: لا تضع بيانات حساسة في الاسم"
+          },
+          {
+            "t": "p",
+            "x": "قد يظهر اسم الملف في البريد والقوائم الأخيرة والنسخ الاحتياطية وسجلات الاستخدام. تجنب الأسماء الكاملة وأرقام الحسابات والمعرفات الطبية والتفاصيل السرية. استخدم معرفاً داخلياً معتمداً عند الحاجة إلى التمييز."
+          },
+          {
+            "t": "h2",
+            "x": "اسم الملف ليس بيانات وصفية ولا دليلاً على الأصالة"
+          },
+          {
+            "t": "p",
+            "x": "إعادة تسمية الملف لا تغير حقلي العنوان أو المؤلف داخل PDF. استخدم [تعديل البيانات الوصفية](/tools/edit-metadata) للحقول القياسية و[إزالة البيانات الوصفية](/tools/remove-metadata) عند الحاجة إلى حذف الخصائص القياسية. الاسم الواضح لا يثبت أصالة PDF أو عدم تغييره؛ احتفظ بالسجلات واستخدم checksum موثوقاً إذا تطلب الإجراء ذلك."
+          },
+          {
+            "t": "h2",
+            "x": "اضبط الإصدارات والاحتفاظ"
+          },
+          {
+            "t": "p",
+            "x": "احتفظ بالأصل واستخدم أرقام إصدارات متتابعة. لا تعِد تسمية نسخة مراجعة لتبدو موقعة أو معتمدة. اتبع سياسة الاحتفاظ والوصول وسلسلة الحيازة في مؤسستك. راجع الصفحات باستخدام [قارئ PDF](/tools/pdf-reader) قبل الأرشفة أو المشاركة."
+          },
+          {
+            "t": "h2",
+            "x": "أنشئ أسماء يسهل البحث عنها"
+          },
+          {
+            "t": "p",
+            "x": [
+              "عند اختيار النمط، فكّر في طريقة بحث الفريق عن المستندات. وضع التاريخ أولاً يسهل الترتيب الزمني داخل المجلد. ويساعد النوع على تصفية العقود أو الفواتير أو التقارير. اجعل الموضوع واضحاً من دون نسخ نص سري من المستند. أعد قائمة قصيرة بالأنواع المعتمدة وشاركها مع من ينشئون الملفات.",
+              "استخدم الشرطة السفلية للفصل بين الحقول إذا كان النظام يرتب الأسماء نصياً. وحافظ على عدد الخانات نفسه في التواريخ والمعرّفات ليكون الترتيب متوقعاً. إذا كان هناك حد للطول، احذف الكلمات الزائدة قبل حذف التاريخ أو النوع أو الإصدار. وثّق الاختصارات غير الواضحة."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "افهم معنى الإصدار والحالة"
+          },
+          {
+            "t": "p",
+            "x": "تشير الحالة إلى مرحلة سير العمل، ولا تثبت الصلاحية القانونية للمستند. استخدم حالات معتمدة من الفريق ولا تغيّرها إلا وفق إجراء الموافقة. قد تستبدل بعض البرامج ملفاً سابقاً عند الحفظ بالاسم نفسه. افحص مجلد الوجهة واحتفظ بالإصدارات السابقة وفق سياسة المؤسسة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ما النمط المناسب لاسم PDF مؤرشف؟",
+            "a": "استخدم نمطاً ثابتاً مثل `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`. عدّل الحقول وفق سياسة الأرشيف وتجنب البيانات الحساسة."
+          },
+          {
+            "q": "هل أضع اسمي في اسم الملف؟",
+            "a": "فقط إذا طلبت السياسة ذلك. غالباً ما يقلل المعرف الداخلي كشف البيانات الشخصية في البريد والقوائم والنسخ الاحتياطية."
+          },
+          {
+            "q": "هل تؤدي إعادة تسمية PDF إلى تغيير بياناته الوصفية؟",
+            "a": "لا. اسم الملف والبيانات الداخلية مختلفان. غيّر العنوان أو المؤلف بأداة البيانات الوصفية."
+          },
+          {
+            "q": "هل يثبت الاسم الواضح أصالة الملف؟",
+            "a": "لا. يساعد الاسم على التنظيم لكنه لا يثبت المصدر أو تطابق البايتات. استخدم توقيعاً أو checksum معتمداً للتحقق عند الحاجة."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives",
+          "original-pdf-vs-access-copy",
+          "archive-copy-vs-backup"
         ]
       }
     ]
@@ -23052,6 +23732,176 @@
           "original-pdf-vs-access-copy",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "pdf-archive-naming-convention",
+        "slug": "pdf-archive-naming-convention",
+        "cluster": "archive-expansion",
+        "title": "আর্কাইভ PDF ফাইলের নামকরণের নিয়ম",
+        "metaTitle": "আর্কাইভ PDF ফাইলের নামকরণের নিয়ম",
+        "metaDescription": "তারিখ, ধরন, বিষয় ও সংস্করণ দিয়ে একরূপ আর্কাইভ PDF নাম তৈরি করুন। সংবেদনশীল তথ্য এবং final-final নাম এড়ান।",
+        "primaryKeyword": "আর্কাইভ PDF নামকরণের নিয়ম",
+        "secondaryKeywords": [
+          "archive PDF filename format",
+          "document naming convention",
+          "PDF version naming",
+          "archive file organization"
+        ],
+        "answer": "আর্কাইভ PDF-এর নামের জন্য একটি স্থির ক্রম ব্যবহার করুন, যেমন `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`। সব ফাইলে একই নিয়ম রাখুন, মূল ফাইল সংরক্ষণ করুন এবং নামে সংবেদনশীল ব্যক্তিগত তথ্য দেবেন না।",
+        "body": [
+          {
+            "t": "p",
+            "x": "ভালো ফাইল নাম PDF না খুলেই শনাক্ত ও সাজাতে সাহায্য করে। স্থির ক্রমে ISO তারিখ `YYYY-MM-DD`, নথির ধরন, সংক্ষিপ্ত বিষয়, অসংবেদনশীল পরিচিতি, সংস্করণ ও অবস্থা রাখুন। উদাহরণ: `2026-11-15_Contract_Rent_DOC-1042_v001_SIGNED.pdf`। আর্কাইভ নীতি অনুযায়ী ক্ষেত্র ঠিক করুন এবং সব ফাইলে একই কাঠামো ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভ PDF-এর নাম কীভাবে দেবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "স্থির নামের প্যাটার্ন ঠিক করুন",
+                "x": "ক্ষেত্র ও ক্রম বেছে নিন, যেমন `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`।"
+              },
+              {
+                "h": "মান একরূপ রাখুন",
+                "x": "তারিখ `YYYY-MM-DD` লিখুন, ID-র শুরুতে শূন্য রাখুন এবং ধরন লেখার বানান একই রাখুন।"
+              },
+              {
+                "h": "সংস্করণ ও অবস্থা যোগ করুন",
+                "x": "`v001`, `v002` সংস্করণ এবং `DRAFT`, `REVIEWED`, `SIGNED` অবস্থা ব্যবহার করুন। `final-final` এড়ান।"
+              },
+              {
+                "h": "মূল না মুছে কপির নাম দিন",
+                "x": "মূল সংরক্ষণ করুন এবং আর্কাইভ কপি আলাদা বর্ণনামূলক নামে রাখুন।"
+              },
+              {
+                "h": "সামঞ্জস্য ও গোপনীয়তা দেখুন",
+                "x": "সংবেদনশীল তথ্য এবং আপনার সিস্টেমে অগ্রহণযোগ্য অক্ষর বাদ দিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "আর্কাইভের আগে PDF পরীক্ষা করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF নামের নিয়মের উদাহরণ"
+          },
+          {
+            "t": "table",
+            "head": [
+              "ক্ষেত্র",
+              "উদাহরণ",
+              "পরামর্শ"
+            ],
+            "rows": [
+              [
+                "তারিখ",
+                "2026-11-15",
+                "কালানুক্রমিক সাজাতে বছর-মাস-দিন ব্যবহার করুন।"
+              ],
+              [
+                "ধরন ও বিষয়",
+                "Contract_Rent",
+                "ছোট ও একরূপ শব্দ নিন।"
+              ],
+              [
+                "পরিচিতি",
+                "DOC-1042",
+                "ব্যক্তিগত তথ্য প্রকাশ করে না এমন স্থায়ী ID নিন।"
+              ],
+              [
+                "সংস্করণ ও অবস্থা",
+                "v001_SIGNED",
+                "স্বাক্ষরিত সংস্করণ প্রতিস্থাপন করবেন না; পরিবর্তনে নতুন সংস্করণ নিন।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ফাইল নামের অক্ষর ও দৈর্ঘ্য"
+          },
+          {
+            "t": "p",
+            "x": "নাম ছোট ও খুঁজতে সহজ রাখুন। সিস্টেম সামঞ্জস্যে অক্ষর, সংখ্যা, হাইফেন ও আন্ডারস্কোর ব্যবহার করুন। `/ \\ : * ? \" < > |` এড়ান; কিছু সিস্টেমে সমস্যা হয়। দলজুড়ে স্পেস ও সংক্ষিপ্ত রূপ এক রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "গোপনীয়তা: নামে সংবেদনশীল তথ্য দেবেন না"
+          },
+          {
+            "t": "p",
+            "x": "ফাইল নাম ইমেইল, সাম্প্রতিক তালিকা, ব্যাকআপ ও ব্যবহারের লগে দেখা যেতে পারে। পূর্ণ নাম, অ্যাকাউন্ট নম্বর, চিকিৎসা পরিচিতি বা গোপন বিবরণ দেবেন না। আলাদা করার প্রয়োজন হলে অনুমোদিত অভ্যন্তরীণ ID ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ফাইল নাম মেটাডেটা বা সত্যতার প্রমাণ নয়"
+          },
+          {
+            "t": "p",
+            "x": "ফাইলের নাম পাল্টালে PDF-এর ভেতরের শিরোনাম বা লেখক বদলায় না। সাধারণ ফিল্ডের জন্য [Edit Metadata](/tools/edit-metadata) এবং প্রপার্টি সরাতে [Remove Metadata](/tools/remove-metadata) ব্যবহার করুন। পরিষ্কার নাম PDF আসল কি না বা বদলেছে কি না প্রমাণ করে না; রেকর্ড রাখুন এবং দরকারে বিশ্বস্ত চেকসাম ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সংস্করণ ও সংরক্ষণ নীতি নিয়ন্ত্রণ করুন"
+          },
+          {
+            "t": "p",
+            "x": "মূল রাখুন এবং ধারাবাহিক সংস্করণ নম্বর দিন। পর্যালোচিত কপির নাম এমনভাবে বদলাবেন না যাতে তা স্বাক্ষরিত বা অনুমোদিত মনে হয়। প্রতিষ্ঠানের সংরক্ষণ, প্রবেশাধিকার ও চেইন-অফ-কাস্টডি নীতি মানুন। আর্কাইভ বা শেয়ারের আগে [PDF Reader](/tools/pdf-reader)-এ পৃষ্ঠা দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সহজে খোঁজা যায় এমন নাম তৈরি করুন"
+          },
+          {
+            "t": "p",
+            "x": [
+              "নামকরণের ধরন বাছার সময় ভাবুন, মানুষ কীভাবে নথি খুঁজবে। শুরুতে তারিখ থাকলে ফোল্ডার কালানুক্রমে সাজানো সহজ হয়। ধরন দিয়ে চুক্তি, বিল বা প্রতিবেদন ছাঁকা যায়। বিষয় এমনভাবে লিখুন যাতে গোপন নথির লেখা কপি না হয়। অনুমোদিত ধরনগুলোর ছোট তালিকা তৈরি করে ফাইল তৈরি করেন এমন সবার সঙ্গে ভাগ করুন।",
+              "সিস্টেম নামকে পাঠ্য হিসেবে সাজালে ক্ষেত্র আলাদা করতে আন্ডারস্কোর ব্যবহার করুন। তারিখ ও আইডিতে একই সংখ্যক অঙ্ক রাখুন, যাতে সাজানো অনুমানযোগ্য থাকে। নামের দৈর্ঘ্য সীমিত হলে তারিখ, ধরন বা সংস্করণ বাদ না দিয়ে অপ্রয়োজনীয় শব্দ বাদ দিন। অস্পষ্ট সংক্ষিপ্ত রূপের অর্থ লিখে রাখুন।"
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "সংস্করণ ও স্ট্যাটাস বুঝুন"
+          },
+          {
+            "t": "p",
+            "x": "স্ট্যাটাস প্রক্রিয়ার ধাপ বোঝায়, নথির আইনগত বৈধতার প্রমাণ নয়। দলের নির্ধারিত স্ট্যাটাস ব্যবহার করুন এবং অনুমোদন প্রক্রিয়া অনুযায়ী বদলান। একই নামে সংরক্ষণ করলে কিছু প্রোগ্রাম আগের ফাইল প্রতিস্থাপন করতে পারে। গন্তব্য ফোল্ডার যাচাই করুন এবং নীতিমালা অনুযায়ী পুরোনো সংস্করণ রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "আর্কাইভ PDF-এর জন্য কোন নামের ধরন ভালো?",
+            "a": "একই প্যাটার্ন রাখুন, যেমন `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`। আর্কাইভ নীতি অনুযায়ী ক্ষেত্র নিন এবং সংবেদনশীল তথ্য এড়ান।"
+          },
+          {
+            "q": "ফাইলে কি নিজের নাম দেব?",
+            "a": "নীতি চাইলে দিন। অভ্যন্তরীণ ID ইমেইল, তালিকা ও ব্যাকআপে ব্যক্তিগত তথ্য কম প্রকাশ করে।"
+          },
+          {
+            "q": "PDF-এর নাম বদলালে কি মেটাডেটা বদলায়?",
+            "a": "না। ফাইলের নাম ও ভেতরের মেটাডেটা আলাদা। শিরোনাম বা লেখক বদলাতে মেটাডেটা টুল ব্যবহার করুন।"
+          },
+          {
+            "q": "স্পষ্ট নাম কি ফাইলের সত্যতা প্রমাণ করে?",
+            "a": "না। নাম সাজাতে সাহায্য করে, কিন্তু উৎস বা বাইট একই তা প্রমাণ করে না। যাচাইয়ের জন্য অনুমোদিত স্বাক্ষর বা চেকসাম ব্যবহার করুন।"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives",
+          "original-pdf-vs-access-copy",
+          "archive-copy-vs-backup"
+        ]
       }
     ]
   },
@@ -27656,6 +28506,176 @@
           "archive-copy-vs-backup",
           "original-pdf-vs-access-copy",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-archive-naming-convention",
+        "slug": "pdf-archive-naming-convention",
+        "cluster": "archive-expansion",
+        "title": "Quy ước đặt tên PDF lưu trữ",
+        "metaTitle": "Quy ước đặt tên PDF lưu trữ",
+        "metaDescription": "Đặt tên PDF lưu trữ nhất quán theo ngày, loại, chủ đề và phiên bản. Tránh dữ liệu nhạy cảm và tên kiểu final-final.",
+        "primaryKeyword": "quy ước đặt tên PDF lưu trữ",
+        "secondaryKeywords": [
+          "archive PDF filename format",
+          "document naming convention",
+          "PDF version naming",
+          "archive file organization"
+        ],
+        "answer": "Quy ước đặt tên PDF lưu trữ nên dùng thứ tự cố định, chẳng hạn `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`. Áp dụng cùng mẫu cho toàn nhóm, giữ tệp nguồn và không đưa dữ liệu cá nhân nhạy cảm vào tên.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Tên tệp tốt giúp nhận diện và sắp xếp PDF mà không cần mở. Hãy thống nhất thứ tự gồm ngày ISO `YYYY-MM-DD`, loại tài liệu, chủ đề ngắn, mã định danh không nhạy cảm, phiên bản và trạng thái. Ví dụ: `2026-11-15_Contract_Rent_DOC-1042_v001_SIGNED.pdf`. Điều chỉnh các trường theo chính sách lưu trữ và dùng cùng mẫu cho mọi tài liệu."
+          },
+          {
+            "t": "h2",
+            "x": "Cách đặt tên PDF lưu trữ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Chọn mẫu tên cố định",
+                "x": "Chọn trường và thứ tự, ví dụ `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`."
+              },
+              {
+                "h": "Dùng giá trị nhất quán",
+                "x": "Viết ngày dạng `YYYY-MM-DD`, giữ số 0 đầu mã ID và thống nhất cách viết loại tài liệu."
+              },
+              {
+                "h": "Thêm phiên bản và trạng thái",
+                "x": "Dùng `v001`, `v002` cùng trạng thái rõ như `DRAFT`, `REVIEWED`, `SIGNED`. Tránh `final-final`."
+              },
+              {
+                "h": "Đặt tên bản sao, không ghi đè nguồn",
+                "x": "Giữ tệp gốc và lưu bản lưu trữ riêng với tên mô tả."
+              },
+              {
+                "h": "Kiểm tra tương thích và riêng tư",
+                "x": "Tránh dữ liệu nhạy cảm và ký tự hệ thống của nhóm không hỗ trợ."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Kiểm tra PDF trước khi lưu trữ. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Ví dụ quy ước tên PDF"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Trường",
+              "Ví dụ",
+              "Gợi ý"
+            ],
+            "rows": [
+              [
+                "Ngày",
+                "2026-11-15",
+                "Dùng năm-tháng-ngày để sắp xếp theo thời gian."
+              ],
+              [
+                "Loại và chủ đề",
+                "Contract_Rent",
+                "Dùng từ ngắn và nhất quán."
+              ],
+              [
+                "Mã định danh",
+                "DOC-1042",
+                "Chọn mã ổn định không làm lộ thông tin cá nhân."
+              ],
+              [
+                "Phiên bản và trạng thái",
+                "v001_SIGNED",
+                "Không ghi đè bản đã ký; tạo phiên bản mới khi sửa."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Ký tự và độ dài tên tệp"
+          },
+          {
+            "t": "p",
+            "x": "Giữ tên ngắn, dễ tìm. Để tương thích hệ thống, dùng chữ cái, số, dấu gạch ngang và gạch dưới. Tránh `/ \\ : * ? \" < > |` vì một số hệ thống không chấp nhận. Thống nhất cách dùng khoảng trắng và chữ viết tắt giữa các nhóm."
+          },
+          {
+            "t": "h2",
+            "x": "Quyền riêng tư: không đưa dữ liệu nhạy cảm vào tên"
+          },
+          {
+            "t": "p",
+            "x": "Tên tệp có thể xuất hiện trong email, danh sách gần đây, bản sao lưu và nhật ký sử dụng. Tránh họ tên đầy đủ, số tài khoản, mã y tế hoặc chi tiết mật. Dùng mã nội bộ được duyệt nếu cần phân biệt hồ sơ."
+          },
+          {
+            "t": "h2",
+            "x": "Tên tệp không phải siêu dữ liệu hay bằng chứng xác thực"
+          },
+          {
+            "t": "p",
+            "x": "Đổi tên tệp không đổi trường tiêu đề hoặc tác giả bên trong PDF. Dùng [Sửa siêu dữ liệu](/tools/edit-metadata) cho các trường chuẩn và [Xóa siêu dữ liệu](/tools/remove-metadata) khi cần bỏ thuộc tính chuẩn. Tên rõ ràng không chứng minh PDF thật hay chưa bị đổi; hãy lưu hồ sơ và checksum đáng tin nếu quy trình yêu cầu."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm soát phiên bản và thời hạn lưu"
+          },
+          {
+            "t": "p",
+            "x": "Giữ bản gốc và dùng số phiên bản tăng dần. Đừng đổi tên bản đã rà soát để khiến nó trông như đã ký hoặc duyệt. Theo chính sách lưu giữ, quyền truy cập và chuỗi bảo quản chứng cứ. Xem trang bằng [Trình đọc PDF](/tools/pdf-reader) trước khi lưu hoặc chia sẻ."
+          },
+          {
+            "t": "h2",
+            "x": "Đặt tên để dễ tìm kiếm"
+          },
+          {
+            "t": "p",
+            "x": [
+              "Khi chọn quy tắc đặt tên, hãy nghĩ đến cách mọi người tìm tài liệu. Đặt ngày ở đầu giúp sắp xếp thư mục theo thời gian. Loại tài liệu giúp lọc hợp đồng, hóa đơn hoặc báo cáo. Chủ đề cần đủ rõ nhưng không sao chép nội dung bí mật. Hãy lập danh sách ngắn các loại được phép và chia sẻ với người tạo tệp.",
+              "Dùng dấu gạch dưới để ngăn cách trường nếu hệ thống sắp xếp tên như văn bản. Giữ số chữ số nhất quán trong ngày và mã để thứ tự dễ dự đoán. Nếu có giới hạn độ dài, hãy bỏ từ thừa trước khi bỏ ngày, loại hoặc phiên bản. Ghi lại ý nghĩa của chữ viết tắt khó hiểu."
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Hiểu ý nghĩa phiên bản và trạng thái"
+          },
+          {
+            "t": "p",
+            "x": "Trạng thái cho biết bước xử lý, không chứng minh giá trị pháp lý của tài liệu. Hãy dùng trạng thái do nhóm thống nhất và chỉ cập nhật theo quy trình phê duyệt. Một số ứng dụng có thể ghi đè tệp cũ khi lưu cùng tên. Hãy kiểm tra thư mục đích và giữ phiên bản trước theo chính sách áp dụng."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Nên đặt tên PDF lưu trữ theo mẫu nào?",
+            "a": "Dùng mẫu nhất quán như `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`. Điều chỉnh trường theo chính sách và tránh dữ liệu nhạy cảm."
+          },
+          {
+            "q": "Có nên đưa tên tôi vào tên tệp không?",
+            "a": "Chỉ khi chính sách yêu cầu. Mã nội bộ thường giảm lộ dữ liệu cá nhân trong email, danh sách và bản sao lưu."
+          },
+          {
+            "q": "Đổi tên PDF có đổi siêu dữ liệu không?",
+            "a": "Không. Tên tệp khác với siêu dữ liệu nhúng. Dùng công cụ siêu dữ liệu để đổi tiêu đề hoặc tác giả."
+          },
+          {
+            "q": "Tên rõ ràng có chứng minh tệp xác thực không?",
+            "a": "Không. Tên giúp sắp xếp nhưng không chứng minh nguồn gốc hoặc byte còn nguyên. Hãy dùng chữ ký hoặc checksum được duyệt để xác minh."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives",
+          "original-pdf-vs-access-copy",
+          "archive-copy-vs-backup"
         ]
       }
     ]
@@ -32270,6 +33290,176 @@
           "archive-copy-vs-backup",
           "original-pdf-vs-access-copy",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-archive-naming-convention",
+        "slug": "pdf-archive-naming-convention",
+        "cluster": "archive-expansion",
+        "title": "归档 PDF 文件命名规范",
+        "metaTitle": "归档 PDF 文件命名规范",
+        "metaDescription": "按日期、类型、主题和版本统一命名归档 PDF。免费查看与编辑元数据，无需注册、无水印，并在浏览器本地处理。",
+        "primaryKeyword": "归档 PDF 文件命名规范",
+        "secondaryKeywords": [
+          "archive PDF filename format",
+          "document naming convention",
+          "PDF version naming",
+          "archive file organization"
+        ],
+        "answer": "归档 PDF 应采用固定的命名顺序，例如 `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`。团队内统一使用同一格式，保留源文件，并避免在文件名中加入敏感个人信息。",
+        "body": [
+          {
+            "t": "p",
+            "x": "好的文件名便于在不打开 PDF 的情况下识别和排序。请统一固定字段顺序：ISO 日期 `YYYY-MM-DD`、文档类型、简短主题、非敏感标识符、版本和状态。例如：`2026-11-15_Contract_Rent_DOC-1042_v001_SIGNED.pdf`。根据档案政策调整字段，并对所有文件使用相同格式。"
+          },
+          {
+            "t": "h2",
+            "x": "如何命名归档 PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "确定固定命名模板",
+                "x": "选择字段及顺序，例如 `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`。"
+              },
+              {
+                "h": "统一字段写法",
+                "x": "日期使用 `YYYY-MM-DD`，保留 ID 前导零，并统一文档类型的拼写。"
+              },
+              {
+                "h": "添加版本和状态",
+                "x": "使用 `v001`、`v002` 等版本及 `DRAFT`、`REVIEWED`、`SIGNED` 等明确状态。避免 `final-final`。"
+              },
+              {
+                "h": "为副本命名，不覆盖来源",
+                "x": "保留原件，并用不同且有描述性的名称保存归档副本。"
+              },
+              {
+                "h": "检查兼容性和隐私",
+                "x": "避免敏感个人信息和团队系统不支持的字符。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "归档前检查 PDF。免费，无需注册，没有水印。"
+          },
+          {
+            "t": "h2",
+            "x": "PDF 命名规范示例"
+          },
+          {
+            "t": "table",
+            "head": [
+              "字段",
+              "示例",
+              "建议"
+            ],
+            "rows": [
+              [
+                "日期",
+                "2026-11-15",
+                "使用年-月-日，便于按时间排序。"
+              ],
+              [
+                "类型和主题",
+                "Contract_Rent",
+                "使用简短且一致的词语。"
+              ],
+              [
+                "标识符",
+                "DOC-1042",
+                "使用稳定且不会泄露个人信息的编号。"
+              ],
+              [
+                "版本和状态",
+                "v001_SIGNED",
+                "不要覆盖已签名版本；修改后创建新版本。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "文件名字符和长度"
+          },
+          {
+            "t": "p",
+            "x": "文件名应简短且易于搜索。为兼容不同系统，可使用字母、数字、连字符和下划线。避免 `/ \\ : * ? \" < > |`，部分系统不支持这些字符。团队间统一空格和缩写方式。"
+          },
+          {
+            "t": "h2",
+            "x": "隐私：不要在文件名中放敏感信息"
+          },
+          {
+            "t": "p",
+            "x": "文件名可能出现在邮件、最近文件列表、备份和使用日志中。避免完整姓名、账号、医疗标识符或机密细节。需要区分文件时，使用获准的内部 ID。"
+          },
+          {
+            "t": "h2",
+            "x": "文件名不是元数据，也不能证明真实性"
+          },
+          {
+            "t": "p",
+            "x": "重命名不会修改 PDF 内部的标题或作者字段。标准字段可用[编辑元数据](/tools/edit-metadata)修改；需要删除标准属性时使用[删除元数据](/tools/remove-metadata)。清晰的名称不能证明 PDF 真实或未被更改；请保留记录，必要时使用可信校验和。"
+          },
+          {
+            "t": "h2",
+            "x": "管理版本和保留期限"
+          },
+          {
+            "t": "p",
+            "x": "保留原件并使用递增的版本号。不要把已审阅的副本改名成看似已签名或已批准的版本。遵循组织的保留、访问控制和证据链政策。归档或分享前，用[PDF 阅读器](/tools/pdf-reader)检查页面。"
+          },
+          {
+            "t": "h2",
+            "x": "设计便于搜索的文件名"
+          },
+          {
+            "t": "p",
+            "x": [
+              "选择命名模板时，先考虑团队如何查找文件。把日期放在开头，便于按时间排序；文档类型便于筛选合同、发票或报告。主题应清楚，但不要复制机密内容。请建立简短的类型清单，并让所有创建文件的人使用同一套词汇。",
+              "如果系统按文本排序，可用下划线分隔字段。日期和编号保持固定的位数，排序会更稳定。若文件名有长度限制，先删掉重复词，不要轻易删掉日期、类型或版本。对不直观的缩写进行说明。"
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "理解版本和状态的含义"
+          },
+          {
+            "t": "p",
+            "x": "状态表示流程所处阶段，不代表文件具有法律效力。使用团队认可的状态，并按审批流程更新。部分软件保存同名文件时可能覆盖旧文件。保存后检查目标文件夹，并按适用政策保留先前版本。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "归档 PDF 适合用什么命名格式？",
+            "a": "使用统一格式，例如 `YYYY-MM-DD_Type_Topic_ID_v001_STATUS.pdf`。按档案政策调整字段，并避免敏感信息。"
+          },
+          {
+            "q": "文件名里应该包含我的姓名吗？",
+            "a": "只有政策要求时才加入。内部编号通常能减少个人信息在邮件、列表和备份中的暴露。"
+          },
+          {
+            "q": "重命名 PDF 会改变元数据吗？",
+            "a": "不会。文件名与内嵌元数据是两回事。修改标题或作者应使用元数据工具。"
+          },
+          {
+            "q": "清晰的文件名能证明文件真实吗？",
+            "a": "不能。名称有助于整理，但不能证明来源或字节未变。需要验证时，请使用获准的签名或校验和流程。"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "pdf-checksum-basics-for-archives",
+          "original-pdf-vs-access-copy",
+          "archive-copy-vs-backup"
         ]
       }
     ]
