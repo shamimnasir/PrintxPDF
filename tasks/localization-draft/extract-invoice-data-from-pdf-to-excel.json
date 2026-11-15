@@ -1,0 +1,1012 @@
+{
+  "topic": "extract-invoice-data-from-pdf-to-excel",
+  "sourceCluster": "from-pdf",
+  "tool": "pdf-to-excel",
+  "languages": {
+    "es": {
+      "title": "Cómo extraer datos de facturas PDF a Excel",
+      "metaTitle": "Extraer datos de facturas PDF a Excel",
+      "metaDescription": "Extrae datos de facturas PDF a Excel gratis. Sin registro ni marca de agua y con conversión privada en el navegador.",
+      "keyword": "extraer datos de factura PDF a Excel",
+      "secondaryKeywords": [
+        "PDF a Excel gratis",
+        "convertir PDF a XLSX",
+        "extraer tabla PDF",
+        "convertidor PDF a hoja de cálculo"
+      ],
+      "answer": "Para extraer datos de facturas PDF a Excel, convierte una factura con texto seleccionable, revisa cada fila contra el original y normaliza fechas y números antes del análisis. No confíes en el libro convertido sin comprobar proveedor, importe e impuestos.",
+      "ctaLabel": "Pasa los datos de facturas de PDF a Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "Las facturas PDF se usan a menudo para presupuestos y conciliaciones, pero hay que revisarlas con cuidado después de convertirlas. El conversor crea una hoja de cálculo a partir de la posición del texto; no valida los datos contables ni identifica automáticamente todos los campos de una factura."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir una factura PDF a Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Comprueba si el PDF tiene texto seleccionable",
+              "x": "Intenta seleccionar el número o el nombre del proveedor. Si es un escaneo, ejecuta [OCR PDF](/tools/ocr-pdf) en una copia primero."
+            },
+            {
+              "h": "Abre PDF a Excel",
+              "x": "Añade la factura a [PDF a Excel](/tools/pdf-to-excel) en el navegador. La conversión estándar se procesa en tu dispositivo."
+            },
+            {
+              "h": "Crea la hoja de cálculo",
+              "x": "Convierte el PDF a XLSX. Cada página se vuelve una hoja, cada línea una fila y los espacios separan el texto en celdas."
+            },
+            {
+              "h": "Descarga y revisa cada fila",
+              "x": "Abre el archivo en Excel, Sheets o Numbers y comprueba proveedor, número de factura, fecha, subtotal, impuestos y total."
+            },
+            {
+              "h": "Normaliza los datos",
+              "x": "Convierte los importes que aparecen como texto a números y unifica formatos de fecha y moneda antes de sumar o filtrar."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Convierte el texto de tu factura PDF a Excel en el navegador. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Qué datos de factura debes verificar"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Campo",
+            "Error posible",
+            "Comprobación"
+          ],
+          "rows": [
+            [
+              "Proveedor y número",
+              "OCR confunde caracteres parecidos",
+              "Compara nombre e identificador con el original."
+            ],
+            [
+              "Fecha",
+              "Día y mes pueden interpretarse al revés",
+              "Confirma formato y periodo."
+            ],
+            [
+              "Subtotal e impuestos",
+              "Una columna estrecha puede desplazar valores",
+              "Recalcula el total y las tasas."
+            ],
+            [
+              "Importe total",
+              "Separador decimal o signo puede cambiar",
+              "Compara con el importe a pagar."
+            ],
+            [
+              "Varias líneas",
+              "Descripción puede partirse entre celdas",
+              "Revisa cada partida."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "La conversión no valida la contabilidad"
+        },
+        {
+          "t": "p",
+          "x": "PDF guarda texto en posiciones fijas, no en campos contables con significado. El borde de una tabla no indica qué valor corresponde a cada columna. PrintxPDF separa texto por espacios amplios o tabuladores; las facturas limpias suelen convertirse mejor que los formularios densos o las líneas partidas. El libro es un borrador de datos, no una confirmación de que la factura esté correcta o pagada."
+        },
+        {
+          "t": "h2",
+          "x": "Revisa números, moneda y fechas antes de analizar"
+        },
+        {
+          "t": "p",
+          "x": "Excel puede importar un importe como texto, cambiar el formato de fecha o interpretar el separador decimal de manera distinta según la configuración regional. Comprueba subtotal, impuestos, descuentos y total con la factura. Si trabajas con varias monedas, conserva el código de moneda en una columna separada y no mezcles importes antes de convertirlos con el tipo correcto. Mantén el PDF fuente para auditoría y conciliación."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué ayuda convertir localmente en el navegador"
+        },
+        {
+          "t": "p",
+          "x": "Las facturas pueden revelar datos bancarios, compras, direcciones y relaciones con proveedores. PDF a Excel lee el PDF y crea el XLSX en el navegador para conversiones estándar, evitando una subida rutinaria a un servidor externo. Antes de compartir la hoja, revisa el nombre del archivo, las pestañas y las columnas ocultas, y guárdala solo en una ubicación aprobada."
+        },
+        {
+          "t": "h2",
+          "x": "Prepara el PDF y protege la copia"
+        },
+        {
+          "t": "p",
+          "x": "Si solo necesitas algunas facturas de un paquete, usa [Extraer páginas](/tools/extract-pages) antes de convertir. Para una factura escaneada, ejecuta OCR primero y verifica el reconocimiento. [Eliminar metadatos](/tools/remove-metadata) puede limpiar propiedades del PDF que compartas, pero no reemplaza los controles de acceso ni la revisión de los datos visibles."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo extraer datos de facturas PDF a Excel?",
+          "a": "Sí. Convierte el PDF a XLSX y revisa proveedor, fecha, subtotal, impuestos y total comparándolos con la factura original. El conversor no valida automáticamente los importes."
+        },
+        {
+          "q": "¿Cómo convierto gratis una factura PDF a Excel?",
+          "a": "Abre PDF a Excel en el navegador, añade la factura, crea el XLSX y revisa las filas. Si el PDF es un escaneo, ejecuta OCR en una copia antes."
+        },
+        {
+          "q": "¿El OCR puede leer todos los datos de una factura?",
+          "a": "No siempre. La calidad del escaneo, el diseño, la letra pequeña y los caracteres parecidos afectan al resultado. Revisa manualmente los importes y los datos del proveedor."
+        },
+        {
+          "q": "¿Es privado convertir una factura PDF a Excel?",
+          "a": "La conversión estándar de PrintxPDF se procesa en la pestaña del navegador, por lo que no se sube de forma rutinaria a un servidor de conversión."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como extrair dados de fatura PDF para Excel",
+      "metaTitle": "Extraia dados de fatura PDF para Excel",
+      "metaDescription": "Extraia dados de fatura PDF para Excel grátis. Sem cadastro ou marca-d'água, com conversão privada no navegador.",
+      "keyword": "extrair dados de fatura PDF para Excel",
+      "secondaryKeywords": [
+        "PDF para Excel grátis",
+        "converter PDF para XLSX",
+        "extrair tabela de PDF",
+        "conversor PDF para planilha"
+      ],
+      "answer": "Para extrair dados de fatura PDF para Excel, converta uma fatura com texto selecionável, confira cada linha com o original e normalize datas e números antes de analisar. Não confie na pasta convertida sem verificar fornecedor, valor e impostos.",
+      "ctaLabel": "Passe dados de fatura de PDF para Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "Faturas em PDF são usadas em orçamentos e conciliações, mas precisam ser revisadas com cuidado depois da conversão. O conversor cria uma planilha com base na posição do texto; não valida dados contábeis nem identifica automaticamente todos os campos da fatura."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter fatura PDF para Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Confira se o PDF tem texto selecionável",
+              "x": "Tente selecionar o número ou nome do fornecedor. Se for digitalizado, rode [OCR PDF](/tools/ocr-pdf) em uma cópia primeiro."
+            },
+            {
+              "h": "Abra PDF para Excel",
+              "x": "Adicione a fatura em [PDF para Excel](/tools/pdf-to-excel) no navegador. A conversão padrão é processada no dispositivo."
+            },
+            {
+              "h": "Crie a planilha",
+              "x": "Converta para XLSX. Cada página vira uma planilha, cada linha vira uma linha, e espaços separam o texto em células."
+            },
+            {
+              "h": "Baixe e confira cada linha",
+              "x": "Abra no Excel, Sheets ou Numbers e confira fornecedor, número da fatura, data, subtotal, impostos e total."
+            },
+            {
+              "h": "Normalize os dados",
+              "x": "Converta valores que aparecem como texto em números e padronize datas e moedas antes de somar ou filtrar."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Converta o texto da fatura PDF para Excel no navegador. Grátis, sem cadastro ou marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "Quais dados da fatura devem ser conferidos"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Campo",
+            "Erro possível",
+            "Como conferir"
+          ],
+          "rows": [
+            [
+              "Fornecedor e número",
+              "OCR confunde caracteres parecidos",
+              "Compare nome e identificador com o original."
+            ],
+            [
+              "Data",
+              "Dia e mês podem inverter",
+              "Confirme o formato e o período."
+            ],
+            [
+              "Subtotal e impostos",
+              "Coluna estreita pode deslocar valores",
+              "Recalcule total e alíquotas."
+            ],
+            [
+              "Total da fatura",
+              "Separador decimal ou sinal pode mudar",
+              "Compare com o valor a pagar."
+            ],
+            [
+              "Vários itens",
+              "Descrição pode se dividir entre células",
+              "Revise cada item."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "A conversão não valida a contabilidade"
+        },
+        {
+          "t": "p",
+          "x": "PDF guarda texto em posições fixas, não em campos contábeis com significado. A borda da tabela não informa que valor pertence a cada coluna. O PrintxPDF separa texto por espaços largos ou tabulações; faturas limpas costumam converter melhor que formulários densos ou linhas quebradas. A planilha é um rascunho de dados, não a confirmação de que a fatura está correta ou foi paga."
+        },
+        {
+          "t": "h2",
+          "x": "Confira números, moeda e datas antes de analisar"
+        },
+        {
+          "t": "p",
+          "x": "O Excel pode importar um valor como texto, mudar o formato da data ou interpretar o separador decimal conforme as configurações regionais. Confira subtotal, impostos, descontos e total com a fatura. Se trabalhar com várias moedas, mantenha o código da moeda em uma coluna e não misture valores antes da conversão adequada. Guarde o PDF de origem para auditoria e conciliação."
+        },
+        {
+          "t": "h2",
+          "x": "Por que a conversão local no navegador ajuda"
+        },
+        {
+          "t": "p",
+          "x": "Faturas podem revelar dados bancários, compras, endereços e relações com fornecedores. PDF para Excel lê o PDF e cria o XLSX no navegador em conversões padrão, evitando upload rotineiro para servidor externo. Antes de compartilhar, confira o nome do arquivo, as abas e colunas ocultas e salve apenas em local aprovado."
+        },
+        {
+          "t": "h2",
+          "x": "Prepare o PDF e proteja a cópia"
+        },
+        {
+          "t": "p",
+          "x": "Se precisa de poucas faturas de um pacote, use [Extrair páginas](/tools/extract-pages) antes de converter. Em uma fatura digitalizada, rode OCR primeiro e confira o reconhecimento. [Remover metadados](/tools/remove-metadata) pode limpar propriedades do PDF compartilhado, mas não substitui controles de acesso nem a revisão dos dados visíveis."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso extrair dados de fatura PDF para Excel?",
+          "a": "Sim. Converta para XLSX e confira fornecedor, data, subtotal, impostos e total comparando com a fatura original. O conversor não valida valores automaticamente."
+        },
+        {
+          "q": "Como converter uma fatura PDF para Excel grátis?",
+          "a": "Abra PDF para Excel no navegador, adicione a fatura, crie o XLSX e revise as linhas. Se for scan, rode OCR em uma cópia antes."
+        },
+        {
+          "q": "O OCR consegue ler todos os dados de uma fatura?",
+          "a": "Nem sempre. Qualidade do scan, layout, letras pequenas e caracteres semelhantes afetam o resultado. Revise os valores e dados do fornecedor manualmente."
+        },
+        {
+          "q": "É privado converter uma fatura PDF para Excel?",
+          "a": "A conversão padrão do PrintxPDF ocorre na aba do navegador, sem upload rotineiro para servidor de conversão."
+        }
+      ]
+    },
+    "hi": {
+      "title": "PDF इनवॉइस का डेटा Excel में कैसे निकालें",
+      "metaTitle": "PDF इनवॉइस डेटा Excel में निकालें",
+      "metaDescription": "PDF इनवॉइस डेटा Excel में मुफ़्त निकालें। साइनअप या वॉटरमार्क नहीं, ब्राउज़र में निजी रूपांतरण।",
+      "keyword": "PDF इनवॉइस डेटा Excel में निकालें",
+      "secondaryKeywords": [
+        "PDF से Excel मुफ़्त",
+        "PDF को XLSX में बदलें",
+        "PDF तालिका निकालें",
+        "PDF स्प्रेडशीट कन्वर्टर"
+      ],
+      "answer": "PDF इनवॉइस डेटा Excel में निकालने के लिए चयन योग्य पाठ वाली साफ़ इनवॉइस कन्वर्ट करें, हर रो को मूल से मिलाएँ और विश्लेषण से पहले तारीख व संख्या का फ़ॉर्मेट ठीक करें। सप्लायर, रकम और टैक्स जाँचे बिना कन्वर्ट की गई शीट पर भरोसा न करें।",
+      "ctaLabel": "PDF इनवॉइस डेटा Excel में लें",
+      "body": [
+        {
+          "t": "p",
+          "x": "बजट और मिलान के लिए PDF इनवॉइस आम हैं, लेकिन रूपांतरण के बाद सावधानी से जाँचनी चाहिए। कन्वर्टर पाठ की स्थिति से स्प्रेडशीट बनाता है; यह लेखा डेटा सत्यापित नहीं करता और हर इनवॉइस फ़ील्ड अपने आप नहीं पहचानता।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF इनवॉइस को Excel में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "देखें कि PDF में चयन योग्य पाठ है या नहीं",
+              "x": "इनवॉइस नंबर या सप्लायर का नाम चुनकर देखें। स्कैन हो तो पहले कॉपी पर [PDF OCR](/tools/ocr-pdf) चलाएँ।"
+            },
+            {
+              "h": "PDF से Excel खोलें",
+              "x": "ब्राउज़र में [PDF से Excel](/tools/pdf-to-excel) पर इनवॉइस जोड़ें। सामान्य रूपांतरण डिवाइस पर होता है।"
+            },
+            {
+              "h": "स्प्रेडशीट बनाएँ",
+              "x": "XLSX रूपांतरण चलाएँ। हर पेज एक शीट बनता है, हर लाइन एक रो और चौड़े अंतराल पाठ को सेल में बाँटते हैं।"
+            },
+            {
+              "h": "डाउनलोड कर हर रो जाँचें",
+              "x": "Excel, Sheets या Numbers में सप्लायर, इनवॉइस नंबर, तारीख, सबटोटल, टैक्स और कुल देखें।"
+            },
+            {
+              "h": "डेटा का फ़ॉर्मेट ठीक करें",
+              "x": "पाठ की तरह दिख रहे अमाउंट को संख्या में बदलें और जोड़ने या फ़िल्टर करने से पहले तारीख तथा मुद्रा का फ़ॉर्मेट एक जैसा करें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ब्राउज़र में PDF इनवॉइस का पाठ Excel में बदलें। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "इनवॉइस के किन डेटा की जाँच ज़रूरी है"
+        },
+        {
+          "t": "table",
+          "head": [
+            "फ़ील्ड",
+            "संभावित गलती",
+            "जाँच"
+          ],
+          "rows": [
+            [
+              "सप्लायर और नंबर",
+              "OCR मिलते अक्षर गड़बड़ा सकता है",
+              "नाम और पहचान मूल से मिलाएँ।"
+            ],
+            [
+              "तारीख",
+              "दिन-महीना उलट सकता है",
+              "फ़ॉर्मेट और अवधि पुष्टि करें।"
+            ],
+            [
+              "सबटोटल और टैक्स",
+              "संकरी कॉलम रकम खिसका सकती है",
+              "कुल और दर फिर से निकालें।"
+            ],
+            [
+              "देय कुल",
+              "दशमलव या चिह्न बदल सकता है",
+              "भुगतान राशि से मिलाएँ।"
+            ],
+            [
+              "कई आइटम",
+              "विवरण कई सेल में टूट सकता है",
+              "हर पंक्ति देखें।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "रूपांतरण लेखा सत्यापन नहीं है"
+        },
+        {
+          "t": "p",
+          "x": "PDF पाठ को निश्चित स्थान पर रखता है, अर्थपूर्ण लेखा फ़ील्ड में नहीं। तालिका की बॉर्डर कन्वर्टर को नहीं बताती कि कौन सी रकम किस कॉलम में है। PrintxPDF बड़े अंतराल या टैब से पाठ अलग करता है; साफ़ इनवॉइस घने फ़ॉर्म या टूटी पंक्तियों से बेहतर बदलते हैं। स्प्रेडशीट डेटा का मसौदा है, इस बात की पुष्टि नहीं कि इनवॉइस सही है या भुगतान हो चुका है।"
+        },
+        {
+          "t": "h2",
+          "x": "विश्लेषण से पहले संख्या, मुद्रा और तारीख जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "Excel रकम को पाठ मान सकता है, तारीख का फ़ॉर्मेट बदल सकता है या क्षेत्रीय सेटिंग के कारण दशमलव अलग समझ सकता है। सबटोटल, टैक्स, छूट और कुल को इनवॉइस से मिलाएँ। कई मुद्राएँ हों तो मुद्रा कोड अलग कॉलम में रखें और सही विनिमय दर के बिना रकम न मिलाएँ। ऑडिट और मिलान के लिए स्रोत PDF सुरक्षित रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "ब्राउज़र में स्थानीय रूपांतरण क्यों उपयोगी है"
+        },
+        {
+          "t": "p",
+          "x": "इनवॉइस में बैंक विवरण, खरीद, पते और सप्लायर संबंध हो सकते हैं। PDF से Excel सामान्य रूपांतरण में ब्राउज़र के भीतर XLSX बनाता है, इसलिए नियमित फ़ाइल अपलोड से बचता है। कहाँ सहेजना या साझा करना है, यह आप तय करते हैं। साझा करने से पहले फ़ाइल नाम, शीट टैब और छिपे कॉलम जाँचें और केवल स्वीकृत स्थान में रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF तैयार करें और कॉपी सुरक्षित रखें"
+        },
+        {
+          "t": "p",
+          "x": "पैकेट से कुछ इनवॉइस चाहिए तो पहले [पेज निकालें](/tools/extract-pages)। स्कैन इनवॉइस पर पहले OCR चलाकर पहचान जाँचें। [मेटाडेटा हटाएँ](/tools/remove-metadata) साझा किए जाने वाले PDF के गुण साफ़ कर सकता है, पर पहुँच नियंत्रण या दिखने वाले डेटा की समीक्षा की जगह नहीं लेता।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF इनवॉइस डेटा Excel में निकाल सकता हूँ?",
+          "a": "हाँ। XLSX बनाएँ और सप्लायर, तारीख, सबटोटल, टैक्स तथा कुल को मूल इनवॉइस से मिलाएँ। कन्वर्टर रकम अपने आप सत्यापित नहीं करता।"
+        },
+        {
+          "q": "PDF इनवॉइस को Excel में मुफ़्त कैसे बदलें?",
+          "a": "ब्राउज़र में PDF से Excel खोलें, इनवॉइस जोड़ें, XLSX बनाएँ और रो जाँचें। स्कैन हो तो पहले कॉपी पर OCR चलाएँ।"
+        },
+        {
+          "q": "क्या OCR इनवॉइस का हर डेटा पढ़ सकता है?",
+          "a": "हमेशा नहीं। स्कैन गुणवत्ता, लेआउट, छोटे अक्षर और मिलते-जुलते वर्ण असर डालते हैं। रकम व सप्लायर विवरण हाथ से जाँचें।"
+        },
+        {
+          "q": "क्या PDF इनवॉइस को Excel में बदलना निजी है?",
+          "a": "PrintxPDF का सामान्य रूपांतरण ब्राउज़र टैब में होता है, नियमित सर्वर अपलोड के बिना।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية استخراج بيانات الفاتورة من PDF إلى Excel",
+      "metaTitle": "استخراج بيانات الفاتورة من PDF إلى Excel",
+      "metaDescription": "استخرج بيانات الفاتورة من PDF إلى Excel مجاناً، بلا تسجيل أو علامة مائية، مع معالجة خاصة في المتصفح.",
+      "keyword": "استخراج بيانات الفاتورة من PDF إلى Excel",
+      "secondaryKeywords": [
+        "PDF إلى Excel مجاناً",
+        "تحويل PDF إلى XLSX",
+        "استخراج جدول PDF",
+        "محول PDF إلى جدول بيانات"
+      ],
+      "answer": "لاستخراج بيانات الفاتورة من PDF إلى Excel، حوّل فاتورة واضحة ذات نص قابل للتحديد، وراجع كل صف مقابل الأصل، ووحّد تنسيق التواريخ والأرقام قبل التحليل. لا تعتمد على المصنف دون التحقق من المورد والمبلغ والضرائب.",
+      "ctaLabel": "انقل بيانات الفاتورة من PDF إلى Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "تُستخدم فواتير PDF كثيراً في إعداد الميزانيات والمطابقة، لكنها تحتاج إلى مراجعة دقيقة بعد التحويل. ينشئ المحول جدولاً وفق مواضع النص؛ ولا يتحقق من صحة الحسابات أو يتعرف تلقائياً على كل حقول الفاتورة."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل فاتورة PDF إلى Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "تحقق من وجود نص قابل للتحديد",
+              "x": "حاول تحديد رقم الفاتورة أو اسم المورد. إذا كانت ممسوحة، شغّل [OCR PDF](/tools/ocr-pdf) على نسخة أولاً."
+            },
+            {
+              "h": "افتح PDF إلى Excel",
+              "x": "أضف الفاتورة إلى [PDF إلى Excel](/tools/pdf-to-excel) في المتصفح. تتم المعالجة القياسية على جهازك."
+            },
+            {
+              "h": "أنشئ جدول البيانات",
+              "x": "حوّل الملف إلى XLSX. تصبح كل صفحة ورقة عمل، وكل سطر صفاً، وتقسم الفجوات النص إلى خلايا."
+            },
+            {
+              "h": "نزّل وراجع كل صف",
+              "x": "افتح الملف في Excel أو Sheets أو Numbers وتحقق من المورد ورقم الفاتورة والتاريخ والإجمالي الفرعي والضرائب والإجمالي."
+            },
+            {
+              "h": "وحّد البيانات",
+              "x": "حوّل المبالغ التي تظهر كنص إلى أرقام ووحّد تنسيقات التاريخ والعملة قبل الجمع أو التصفية."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "حوّل نص الفاتورة من PDF إلى Excel في المتصفح. مجاناً وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "بيانات الفاتورة التي ينبغي التحقق منها"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الحقل",
+            "خطأ محتمل",
+            "طريقة التحقق"
+          ],
+          "rows": [
+            [
+              "المورد ورقم الفاتورة",
+              "قد يخلط OCR بين الرموز المتشابهة",
+              "قارن الاسم والمعرّف بالأصل."
+            ],
+            [
+              "التاريخ",
+              "قد ينعكس ترتيب اليوم والشهر",
+              "تحقق من التنسيق والفترة."
+            ],
+            [
+              "الإجمالي الفرعي والضرائب",
+              "قد ينقل العمود الضيق القيم",
+              "أعد حساب الإجمالي والمعدلات."
+            ],
+            [
+              "الإجمالي المستحق",
+              "قد يتغير الفاصل العشري أو الإشارة",
+              "قارنه بالمبلغ المطلوب دفعه."
+            ],
+            [
+              "عدة بنود",
+              "قد ينقسم الوصف بين خلايا",
+              "راجع كل بند."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "التحويل لا يراجع الحسابات"
+        },
+        {
+          "t": "p",
+          "x": "يضع PDF النص في مواضع ثابتة، لا في حقول محاسبية ذات معنى. لا يوضح حد الجدول للمحول أي قيمة تنتمي إلى أي عمود. يفصل PrintxPDF النص وفق الفجوات الواسعة أو علامات الجدولة، وغالباً ما تتحول الفواتير الواضحة أفضل من النماذج الكثيفة أو الأسطر المقطوعة. المصنف مسودة بيانات، وليس تأكيداً لصحة الفاتورة أو دفعها."
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من الأرقام والعملات والتواريخ قبل التحليل"
+        },
+        {
+          "t": "p",
+          "x": "قد يستورد Excel المبلغ كنص، أو يغير تنسيق التاريخ، أو يفسر الفاصل العشري حسب إعدادات المنطقة. قارن الإجمالي الفرعي والضرائب والخصومات والإجمالي بالفاتورة. إذا تعاملت مع عملات متعددة، احتفظ برمز العملة في عمود مستقل ولا تجمع المبالغ قبل تحويلها بالسعر الصحيح. احتفظ بملف PDF المصدر للتدقيق والمطابقة."
+        },
+        {
+          "t": "h2",
+          "x": "فائدة التحويل المحلي في المتصفح"
+        },
+        {
+          "t": "p",
+          "x": "قد تكشف الفواتير بيانات مصرفية ومشتريات وعناوين وعلاقات مع الموردين. يقرأ PDF إلى Excel الملف وينشئ XLSX في المتصفح للتحويل القياسي، متجنباً الرفع المعتاد إلى خادم خارجي. أنت تختار مكان حفظ الملف ومشاركته. قبل الإرسال، افحص اسم الملف وعلامات الأوراق والأعمدة المخفية واحفظه في موقع معتمد فقط."
+        },
+        {
+          "t": "h2",
+          "x": "جهّز PDF واحمِ النسخة"
+        },
+        {
+          "t": "p",
+          "x": "إذا احتجت إلى بعض الفواتير من حزمة، فاستخدم [استخراج الصفحات](/tools/extract-pages) قبل التحويل. في الفاتورة الممسوحة، شغّل OCR أولاً وتحقق من النص. يمكن أن تنظف [إزالة البيانات الوصفية](/tools/remove-metadata) خصائص PDF المشارك، لكنها لا تحل محل ضوابط الوصول أو مراجعة البيانات الظاهرة."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكن استخراج بيانات فاتورة PDF إلى Excel؟",
+          "a": "نعم. حوّلها إلى XLSX وقارن المورد والتاريخ والإجمالي الفرعي والضرائب والإجمالي بالفاتورة الأصلية. لا يتحقق المحول من القيم تلقائياً."
+        },
+        {
+          "q": "كيف أحول فاتورة PDF إلى Excel مجاناً؟",
+          "a": "افتح PDF إلى Excel في المتصفح وأضف الفاتورة وأنشئ XLSX وراجع الصفوف. إذا كانت ممسوحة، شغّل OCR على نسخة أولاً."
+        },
+        {
+          "q": "هل يستطيع OCR قراءة كل بيانات الفاتورة؟",
+          "a": "ليس دائماً. تؤثر جودة المسح والتخطيط والخط الصغير والرموز المتشابهة في النتيجة. راجع المبالغ وبيانات المورد يدوياً."
+        },
+        {
+          "q": "هل تحويل فاتورة PDF إلى Excel خاص؟",
+          "a": "تتم المعالجة القياسية في علامة تبويب المتصفح، دون رفع معتاد إلى خادم تحويل."
+        }
+      ]
+    },
+    "bn": {
+      "title": "PDF থেকে Excel-এ ইনভয়েসের তথ্য কীভাবে বের করবেন",
+      "metaTitle": "PDF ইনভয়েসের তথ্য Excel-এ বের করুন",
+      "metaDescription": "PDF ইনভয়েসের তথ্য Excel-এ বিনামূল্যে নিন। সাইনআপ বা ওয়াটারমার্ক নেই, ব্রাউজারে ব্যক্তিগত রূপান্তর।",
+      "keyword": "PDF ইনভয়েসের তথ্য Excel-এ বের",
+      "secondaryKeywords": [
+        "PDF থেকে Excel বিনামূল্যে",
+        "PDF XLSX-এ বদল",
+        "PDF টেবিল বের করা",
+        "PDF স্প্রেডশিট কনভার্টার"
+      ],
+      "answer": "PDF ইনভয়েসের তথ্য Excel-এ নিতে নির্বাচনযোগ্য লেখা থাকা পরিষ্কার ইনভয়েস রূপান্তর করুন, প্রতিটি সারি মূলের সঙ্গে মিলিয়ে দেখুন এবং বিশ্লেষণের আগে তারিখ ও সংখ্যার ফরম্যাট ঠিক করুন। সরবরাহকারী, অঙ্ক ও কর যাচাই না করে রূপান্তরিত ওয়ার্কবুকে নির্ভর করবেন না।",
+      "ctaLabel": "PDF থেকে Excel-এ ইনভয়েসের তথ্য নিন",
+      "body": [
+        {
+          "t": "p",
+          "x": "বাজেট ও হিসাব মেলাতে PDF ইনভয়েস সাধারণ, কিন্তু রূপান্তরের পরে সতর্কভাবে পর্যালোচনা করতে হয়। কনভার্টার পাঠের অবস্থান ধরে স্প্রেডশিট বানায়; এটি হিসাব যাচাই করে না বা ইনভয়েসের সব ক্ষেত্র নিজে থেকে চেনে না।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF ইনভয়েস Excel-এ কীভাবে বদলাবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "PDF-এ নির্বাচনযোগ্য লেখা আছে কি না দেখুন",
+              "x": "ইনভয়েস নম্বর বা সরবরাহকারীর নাম নির্বাচন করে দেখুন। স্ক্যান হলে আগে কপিতে [PDF OCR](/tools/ocr-pdf) চালান।"
+            },
+            {
+              "h": "PDF থেকে Excel খুলুন",
+              "x": "ব্রাউজারে [PDF থেকে Excel](/tools/pdf-to-excel)-এ ইনভয়েস যোগ করুন। সাধারণ রূপান্তর ডিভাইসেই হয়।"
+            },
+            {
+              "h": "স্প্রেডশিট তৈরি করুন",
+              "x": "XLSX-এ রূপান্তর চালান। প্রতি পৃষ্ঠা একটি শিট, প্রতি লাইন একটি সারি হয় এবং বড় ফাঁক লেখা সেলে ভাগ করে।"
+            },
+            {
+              "h": "ডাউনলোড করে প্রতিটি সারি দেখুন",
+              "x": "Excel, Sheets বা Numbers-এ সরবরাহকারী, ইনভয়েস নম্বর, তারিখ, উপমোট, কর ও মোট যাচাই করুন।"
+            },
+            {
+              "h": "ডেটা একরূপ করুন",
+              "x": "লেখা হিসেবে থাকা অঙ্ককে সংখ্যায় বদলান এবং যোগ বা ফিল্টার করার আগে তারিখ ও মুদ্রার ফরম্যাট এক করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ব্রাউজারে PDF ইনভয়েসের লেখা Excel-এ বদলান। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "ইনভয়েসের কোন তথ্যগুলো যাচাই করবেন"
+        },
+        {
+          "t": "table",
+          "head": [
+            "তথ্যক্ষেত্র",
+            "সম্ভাব্য ভুল",
+            "যাচাই"
+          ],
+          "rows": [
+            [
+              "সরবরাহকারী ও নম্বর",
+              "OCR কাছাকাছি অক্ষর গুলিয়ে ফেলে",
+              "নাম ও পরিচিতি মূলের সঙ্গে মেলান।"
+            ],
+            [
+              "তারিখ",
+              "দিন-মাস উল্টে যেতে পারে",
+              "ফরম্যাট ও সময়কাল নিশ্চিত করুন।"
+            ],
+            [
+              "উপমোট ও কর",
+              "সরু কলামে অঙ্ক সরে যেতে পারে",
+              "মোট ও করের হার আবার হিসাব করুন।"
+            ],
+            [
+              "দেয় মোট",
+              "দশমিক বা চিহ্ন বদলাতে পারে",
+              "পরিশোধযোগ্য অঙ্কের সঙ্গে মেলান।"
+            ],
+            [
+              "একাধিক পণ্য",
+              "বিবরণ কয়েকটি সেলে ভাগ হতে পারে",
+              "প্রতিটি লাইন দেখুন।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "রূপান্তর হিসাব যাচাই করে না"
+        },
+        {
+          "t": "p",
+          "x": "PDF লেখাকে নির্দিষ্ট অবস্থানে রাখে, অর্থপূর্ণ হিসাবের ঘরে নয়। টেবিলের সীমানা বলে না কোন অঙ্ক কোন কলামের। PrintxPDF বড় ফাঁক বা ট্যাব ধরে পাঠ ভাগ করে; পরিষ্কার ইনভয়েস ঘন ফর্ম বা ভাঙা লাইনের চেয়ে ভালো বদলায়। ওয়ার্কবুকটি ডেটার খসড়া, ইনভয়েস সঠিক বা পরিশোধিত হওয়ার নিশ্চয়তা নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "বিশ্লেষণের আগে অঙ্ক, মুদ্রা ও তারিখ যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "Excel অঙ্ককে লেখা ধরতে পারে, তারিখের ফরম্যাট বদলাতে পারে বা স্থানীয় সেটিং অনুযায়ী দশমিক চিহ্ন পড়তে পারে। উপমোট, কর, ছাড় ও মোট ইনভয়েসের সঙ্গে মেলান। একাধিক মুদ্রা থাকলে আলাদা কলামে মুদ্রার কোড রাখুন; সঠিক বিনিময় হার ছাড়া অঙ্ক একত্র করবেন না। নিরীক্ষা ও হিসাব মেলাতে মূল PDF রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্রাউজারে স্থানীয় রূপান্তর কেন উপকারী"
+        },
+        {
+          "t": "p",
+          "x": "ইনভয়েসে ব্যাংক তথ্য, কেনাকাটা, ঠিকানা ও সরবরাহকারী সম্পর্ক থাকতে পারে। PDF থেকে Excel সাধারণ রূপান্তরে ব্রাউজারে XLSX বানায়, তাই নিয়মিত বাইরের সার্ভারে আপলোড এড়ায়। কোথায় রাখবেন বা শেয়ার করবেন তা আপনার সিদ্ধান্ত। পাঠানোর আগে ফাইলের নাম, শিট ট্যাব ও লুকানো কলাম দেখুন এবং অনুমোদিত স্থানেই রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF প্রস্তুত করে কপি সুরক্ষিত রাখুন"
+        },
+        {
+          "t": "p",
+          "x": "প্যাকেট থেকে কয়েকটি ইনভয়েস লাগলে আগে [পৃষ্ঠা বের করুন](/tools/extract-pages)। স্ক্যান ইনভয়েসে OCR চালিয়ে শনাক্ত লেখা যাচাই করুন। [মেটাডেটা সরান](/tools/remove-metadata) শেয়ারের PDF বৈশিষ্ট্য পরিষ্কার করতে পারে, তবে প্রবেশ নিয়ন্ত্রণ বা দৃশ্যমান তথ্য যাচাইয়ের বিকল্প নয়।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF ইনভয়েসের তথ্য Excel-এ বের করা যায়?",
+          "a": "হ্যাঁ। XLSX তৈরি করে সরবরাহকারী, তারিখ, উপমোট, কর ও মোট মূল ইনভয়েসের সঙ্গে মিলিয়ে দেখুন। কনভার্টার নিজে অঙ্ক যাচাই করে না।"
+        },
+        {
+          "q": "PDF ইনভয়েস বিনামূল্যে Excel-এ কীভাবে বদলাব?",
+          "a": "ব্রাউজারে PDF থেকে Excel খুলে ইনভয়েস যোগ করুন, XLSX বানান এবং সারি দেখুন। স্ক্যান হলে আগে কপিতে OCR চালান।"
+        },
+        {
+          "q": "OCR কি ইনভয়েসের সব তথ্য পড়তে পারে?",
+          "a": "সব সময় নয়। স্ক্যানের মান, নকশা, ছোট লেখা ও কাছাকাছি অক্ষর ফলকে প্রভাবিত করে। অঙ্ক ও সরবরাহকারীর তথ্য হাতে যাচাই করুন।"
+        },
+        {
+          "q": "PDF ইনভয়েস Excel-এ বদলানো কি ব্যক্তিগত?",
+          "a": "PrintxPDF-এর সাধারণ রূপান্তর ব্রাউজার ট্যাবে হয়, নিয়মিত সার্ভার আপলোড ছাড়া।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách trích xuất dữ liệu hóa đơn PDF sang Excel",
+      "metaTitle": "Trích xuất dữ liệu hóa đơn PDF sang Excel",
+      "metaDescription": "Trích xuất dữ liệu hóa đơn PDF sang Excel miễn phí. Không đăng ký, không dấu mờ, xử lý riêng tư trong trình duyệt.",
+      "keyword": "trích xuất dữ liệu hóa đơn PDF sang Excel",
+      "secondaryKeywords": [
+        "PDF sang Excel miễn phí",
+        "chuyển PDF sang XLSX",
+        "trích xuất bảng PDF",
+        "công cụ chuyển PDF sang bảng tính"
+      ],
+      "answer": "Để trích xuất dữ liệu hóa đơn PDF sang Excel, hãy chuyển hóa đơn có văn bản chọn được, kiểm tra từng hàng với bản gốc rồi chuẩn hóa ngày và số trước khi phân tích. Không dựa vào bảng đã chuyển nếu chưa xác minh nhà cung cấp, số tiền và thuế.",
+      "ctaLabel": "Đưa dữ liệu hóa đơn PDF vào Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "Hóa đơn PDF thường được dùng để lập ngân sách và đối soát, nhưng cần xem kỹ sau khi chuyển đổi. Công cụ tạo bảng tính dựa trên vị trí văn bản; nó không xác minh kế toán và không tự nhận biết mọi trường hóa đơn."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển hóa đơn PDF sang Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Kiểm tra PDF có văn bản chọn được không",
+              "x": "Thử chọn số hóa đơn hoặc tên nhà cung cấp. Nếu là bản scan, chạy [OCR PDF](/tools/ocr-pdf) trên bản sao trước."
+            },
+            {
+              "h": "Mở PDF sang Excel",
+              "x": "Thêm hóa đơn vào [PDF sang Excel](/tools/pdf-to-excel) trong trình duyệt. Chuyển đổi tiêu chuẩn xử lý trên thiết bị."
+            },
+            {
+              "h": "Tạo bảng tính",
+              "x": "Chuyển sang XLSX. Mỗi trang thành một trang tính, mỗi dòng thành một hàng, khoảng trống tách chữ thành ô."
+            },
+            {
+              "t": "h",
+              "x": "Tải xuống và kiểm tra từng hàng"
+            },
+            {
+              "t": "p",
+              "x": "Mở trong Excel, Sheets hoặc Numbers rồi xác minh nhà cung cấp, số hóa đơn, ngày, tiền trước thuế, thuế và tổng tiền."
+            },
+            {
+              "t": "p",
+              "x": "Chuẩn hóa dữ liệu: đổi số đang là văn bản thành số và thống nhất định dạng ngày, tiền tệ trước khi tính tổng hoặc lọc."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Chuyển văn bản hóa đơn PDF sang Excel trong trình duyệt. Miễn phí, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Những dữ liệu hóa đơn cần xác minh"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Trường dữ liệu",
+            "Lỗi có thể gặp",
+            "Cách kiểm tra"
+          ],
+          "rows": [
+            [
+              "Nhà cung cấp và số hóa đơn",
+              "OCR nhầm ký tự gần giống",
+              "Đối chiếu tên và mã với bản gốc."
+            ],
+            [
+              "Ngày",
+              "Ngày và tháng có thể bị đảo",
+              "Xác nhận định dạng và kỳ hạn."
+            ],
+            [
+              "Tiền trước thuế và thuế",
+              "Cột hẹp làm lệch giá trị",
+              "Tính lại tổng và thuế suất."
+            ],
+            [
+              "Tổng phải trả",
+              "Dấu thập phân hoặc dấu âm có thể đổi",
+              "So với số tiền cần thanh toán."
+            ],
+            [
+              "Nhiều dòng hàng",
+              "Mô tả có thể tách qua nhiều ô",
+              "Kiểm tra từng dòng."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Chuyển đổi không xác minh kế toán"
+        },
+        {
+          "t": "p",
+          "x": "PDF đặt văn bản ở tọa độ cố định, không phải trường kế toán có ý nghĩa. Đường viền bảng không cho biết số nào thuộc cột nào. PrintxPDF chia chữ theo khoảng trống rộng hoặc tab; hóa đơn rõ thường chuyển tốt hơn biểu mẫu dày hoặc dòng bị ngắt. Bảng tính chỉ là bản nháp dữ liệu, không xác nhận hóa đơn đúng hay đã thanh toán."
+        },
+        {
+          "t": "h2",
+          "x": "Kiểm tra số, tiền tệ và ngày trước khi phân tích"
+        },
+        {
+          "t": "p",
+          "x": "Excel có thể nhập số tiền thành văn bản, đổi định dạng ngày hoặc diễn giải dấu thập phân theo thiết lập vùng. Đối chiếu tiền trước thuế, thuế, chiết khấu và tổng với hóa đơn. Nếu có nhiều loại tiền, giữ mã tiền tệ ở cột riêng và không cộng các khoản trước khi quy đổi đúng tỷ giá. Giữ PDF nguồn để kiểm toán và đối soát."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao chuyển đổi cục bộ trong trình duyệt hữu ích"
+        },
+        {
+          "t": "p",
+          "x": "Hóa đơn có thể tiết lộ dữ liệu ngân hàng, mua sắm, địa chỉ và quan hệ nhà cung cấp. PDF sang Excel đọc PDF và tạo XLSX trong trình duyệt với chuyển đổi tiêu chuẩn, tránh tải thường xuyên lên máy chủ bên ngoài. Bạn chọn nơi lưu và chia sẻ. Trước khi gửi, hãy kiểm tra tên tệp, tab trang tính và cột ẩn; chỉ lưu ở nơi được phép."
+        },
+        {
+          "t": "h2",
+          "x": "Chuẩn bị PDF và bảo vệ bản sao"
+        },
+        {
+          "t": "p",
+          "x": "Nếu chỉ cần một vài hóa đơn trong bộ tài liệu, dùng [Trích xuất trang](/tools/extract-pages) trước. Với hóa đơn scan, chạy OCR trước và xác minh nhận dạng. [Xóa siêu dữ liệu](/tools/remove-metadata) có thể làm sạch thuộc tính PDF chia sẻ, nhưng không thay thế kiểm soát truy cập hoặc việc xem lại dữ liệu hiển thị."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Tôi có thể trích xuất dữ liệu hóa đơn PDF sang Excel không?",
+          "a": "Có. Chuyển thành XLSX rồi đối chiếu nhà cung cấp, ngày, tiền trước thuế, thuế và tổng với hóa đơn gốc. Công cụ không tự xác minh số tiền."
+        },
+        {
+          "q": "Làm sao chuyển hóa đơn PDF sang Excel miễn phí?",
+          "a": "Mở PDF sang Excel trong trình duyệt, thêm hóa đơn, tạo XLSX rồi kiểm tra hàng. Nếu là bản scan, hãy OCR bản sao trước."
+        },
+        {
+          "q": "OCR có đọc được mọi dữ liệu hóa đơn không?",
+          "a": "Không phải lúc nào cũng vậy. Chất lượng scan, bố cục, chữ nhỏ và ký tự giống nhau ảnh hưởng kết quả. Hãy xem lại số tiền và thông tin nhà cung cấp."
+        },
+        {
+          "q": "Chuyển hóa đơn PDF sang Excel có riêng tư không?",
+          "a": "Chuyển đổi tiêu chuẩn của PrintxPDF diễn ra trong thẻ trình duyệt, không tải thường xuyên lên máy chủ."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何将 PDF 发票数据提取到 Excel",
+      "metaTitle": "将 PDF 发票数据提取到 Excel",
+      "metaDescription": "免费提取 PDF 发票数据到 Excel。无需注册、无水印，在浏览器中私密转换普通文件。 安全快捷。",
+      "keyword": "提取 PDF 发票数据到 Excel",
+      "secondaryKeywords": [
+        "免费 PDF 转 Excel",
+        "将 PDF 转为 XLSX",
+        "提取 PDF 表格",
+        "PDF 电子表格转换器"
+      ],
+      "answer": "要将 PDF 发票数据提取到 Excel，请转换含可选中文本的清晰发票，将每一行与原件核对，并在分析前统一日期和数字格式。未经供应商、金额和税额核对，不要依赖转换后的工作簿。",
+      "ctaLabel": "将 PDF 发票数据导入 Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF 发票常用于预算和对账，但转换后需要仔细复核。转换器根据文本位置生成电子表格；它不会核实会计数据，也不会自动识别所有发票字段。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将 PDF 发票转换为 Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "检查 PDF 是否含可选中文本",
+              "x": "尝试选中发票号码或供应商名称。如果是扫描件，请先在副本上运行[PDF OCR](/tools/ocr-pdf)。"
+            },
+            {
+              "h": "打开 PDF 转 Excel",
+              "x": "在浏览器中将发票添加到[PDF 转 Excel](/tools/pdf-to-excel)。标准转换在你的设备上完成。"
+            },
+            {
+              "h": "创建电子表格",
+              "x": "转换为 XLSX。每个 PDF 页面成为一个工作表，每行文字成为一行，较大间距会把文字拆分到单元格。"
+            },
+            {
+              "h": "下载并核对每一行",
+              "x": "在 Excel、Sheets 或 Numbers 中打开文件，检查供应商、发票号码、日期、小计、税额和总额。"
+            },
+            {
+              "h": "统一数据格式",
+              "x": "将以文本显示的金额转换为数值，并在求和或筛选前统一日期和货币格式。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "在浏览器中将 PDF 发票文本转为 Excel。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "需要核对哪些发票数据"
+        },
+        {
+          "t": "table",
+          "head": [
+            "字段",
+            "可能错误",
+            "核对方式"
+          ],
+          "rows": [
+            [
+              "供应商和发票号",
+              "OCR 混淆相似字符",
+              "与原件核对名称和编号。"
+            ],
+            [
+              "日期",
+              "日和月可能颠倒",
+              "确认格式和账期。"
+            ],
+            [
+              "小计和税额",
+              "窄列可能导致数字错位",
+              "重新计算总额和税率。"
+            ],
+            [
+              "应付总额",
+              "小数点或正负号可能变化",
+              "与应付金额对照。"
+            ],
+            [
+              "多个商品行",
+              "描述可能分散到多个单元格",
+              "逐项检查。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "转换不会验证会计数据"
+        },
+        {
+          "t": "p",
+          "x": "PDF 把文本放在固定坐标中，而不是有明确含义的会计字段里。表格边框不会告诉转换器哪个金额属于哪一列。PrintxPDF 根据较大间距或制表符拆分文本；版面清晰的发票通常比密集表单或断行内容转换得更好。工作簿只是数据草稿，不能证明发票正确或已经付款。"
+        },
+        {
+          "t": "h2",
+          "x": "分析前核对数字、货币和日期"
+        },
+        {
+          "t": "p",
+          "x": "Excel 可能把金额导入为文本、改变日期格式，或根据区域设置解释小数点。请将小计、税额、折扣和总额与发票对照。涉及多种货币时，把货币代码放在单独一列，并先按正确汇率换算再汇总。为审计和对账保留源 PDF。"
+        },
+        {
+          "t": "h2",
+          "x": "在浏览器中本地转换的好处"
+        },
+        {
+          "t": "p",
+          "x": "发票可能包含银行信息、采购记录、地址和供应商关系。标准转换会在浏览器中读取 PDF 并创建 XLSX，避免例行上传到外部转换服务器。文件保存和分享位置由你决定。分享前检查文件名、工作表标签和隐藏列，并只保存到获批位置。"
+        },
+        {
+          "t": "h2",
+          "x": "必要时先整理 PDF 并保护副本"
+        },
+        {
+          "t": "p",
+          "x": "如果材料包中只有几张发票需要处理，可先用[提取页面](/tools/extract-pages)。扫描发票先运行 OCR 并核实识别结果。[移除元数据](/tools/remove-metadata)可以清理分享版 PDF 的属性，但不能代替访问控制或对可见数据的检查。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以将 PDF 发票数据提取到 Excel 吗？",
+          "a": "可以。转换为 XLSX 后，将供应商、日期、小计、税额和总额与原始发票核对。转换器不会自动验证金额。"
+        },
+        {
+          "q": "如何免费把 PDF 发票转成 Excel？",
+          "a": "在浏览器中打开 PDF 转 Excel，添加发票并生成 XLSX，然后检查各行。扫描件请先在副本上运行 OCR。"
+        },
+        {
+          "q": "OCR 可以读取发票上的所有数据吗？",
+          "a": "不一定。扫描质量、版式、小字和相似字符会影响识别。请人工复核金额和供应商信息。"
+        },
+        {
+          "q": "将 PDF 发票转为 Excel 是否私密？",
+          "a": "PrintxPDF 的标准转换在浏览器标签页内完成，不会例行上传到转换服务器。"
+        }
+      ]
+    }
+  }
+}

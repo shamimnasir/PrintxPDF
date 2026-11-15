@@ -24,10 +24,11 @@ English route's slug against localized guide topics:
 | Vietnamese (`vi`) | 110 | 115 |
 | Simplified Chinese (`zh-CN`) | 110 | 115 |
 
-Total remaining: **963 localized guide pages**. Twelve completed drafts cover the first ten listed guides plus
-`convert-pdf-table-to-excel-free` and `convert-scanned-pdf-to-excel`, all in seven locales. This
-is 84 of the 963 missing localized pages; 879 remain. See the article filenames in this directory
-for the complete draft inventory. More drafts should be added one English article at a time, with all seven locales
+Total remaining: **963 localized guide pages**. Thirteen completed drafts cover the first ten listed guides plus
+`convert-pdf-table-to-excel-free`, `convert-scanned-pdf-to-excel`, and
+`extract-invoice-data-from-pdf-to-excel`, all in seven locales. This is 91 of the 963 missing
+localized pages; 872 remain. See the article filenames in this directory for the complete draft
+inventory. More drafts should be added one English article at a time, with all seven locales
 represented before integration.
 
 ## Release checks
