@@ -1,0 +1,1183 @@
+{
+  "topic": "print-lecture-slides",
+  "sourceCluster": "students",
+  "tool": "delete-pages",
+  "languages": {
+    "es": {
+      "title": "Cómo imprimir diapositivas sin gastar 60 hojas",
+      "metaTitle": "Cómo imprimir diapositivas sin desperdiciar papel",
+      "metaDescription": "Imprime diapositivas gratis con 3 o 6 por hoja, elimina duplicados de animación y ahorra papel. Guía privada en el navegador, sin registro.",
+      "keyword": "cómo imprimir diapositivas",
+      "secondaryKeywords": [
+        "imprimir PowerPoint 6 diapositivas por página",
+        "imprimir diapositivas con notas",
+        "folletos PowerPoint",
+        "imprimir PDF varias páginas por hoja",
+        "imprimir diapositivas en blanco y negro"
+      ],
+      "answer": "Usa el modo de documentos, no una diapositiva por hoja: tres por hoja para tomar notas en clase y seis para repasar. Primero elimina las páginas duplicadas que crean los pasos de animación al exportar. Imprime en blanco y negro puro si el fondo es oscuro y a doble cara. Sesenta diapositivas caben en cinco hojas a doble cara con seis por hoja.",
+      "ctaLabel": "Extraer texto de PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Imprimir un PDF de 60 diapositivas a página completa consume 60 hojas, y una presentación animada puede generar 180 páginas. Dos ajustes ayudan: elimina primero los pasos duplicados de animación y luego elige un diseño de documentos adecuado."
+        },
+        {
+          "t": "h2",
+          "x": "Primero: corrige el número de páginas"
+        },
+        {
+          "t": "p",
+          "x": "Al exportar una presentación animada a PDF, cada paso de aparición puede convertirse en una página. Una diapositiva con cuatro viñetas que aparecen una a una puede producir cuatro copias casi iguales. Ningún diseño de impresión puede unirlas: hay que corregir el archivo de origen o borrar los duplicados del PDF."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Si está disponible, pide el archivo .pptx o .key del curso. PowerPoint imprime cada diapositiva una sola vez. En Keynote, desactiva “Print each stage of builds”. Si creas el PDF con LaTeX Beamer, recompila con `\\documentclass[handout]{beamer}` para reducir las capas a una diapositiva. Si solo tienes el PDF, elimina las páginas repetidas una vez y guarda una copia limpia."
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "Elimina las páginas duplicadas de la animación antes de imprimir o archivar el PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Después, elige el diseño de documentos"
+        },
+        {
+          "t": "p",
+          "x": "En papel A4 vertical y con márgenes de 12 mm, una diapositiva panorámica 16:9 de 24 pt queda aproximadamente a 6,5 pt cuando se imprime en una cuadrícula de dos columnas. Tres y seis por hoja mantienen el mismo ancho; seis ahorra un tercio del papel frente a cuatro. Para leer gráficos densos, usa dos por hoja. Nueve por hoja sirve para localizar diapositivas, no para leer."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Diseño",
+            {
+              "es": "Texto de 24 pt",
+              "pt-BR": "Texto de 24 pt",
+              "hi": "24pt टेक्स्ट",
+              "ar": "نص 24 نقطة",
+              "bn": "24pt লেখা",
+              "vi": "Chữ 24pt",
+              "zh-CN": "24pt 正文"
+            },
+            "Úsalo para"
+          ],
+          "rows": [
+            [
+              "1 por hoja",
+              "≈13pt",
+              "Casi nunca; una hoja por diapositiva"
+            ],
+            [
+              "2 por hoja",
+              "≈13pt",
+              "Gráficos densos que necesitas leer"
+            ],
+            [
+              "3 por hoja",
+              "≈6,5pt",
+              "Clase en vivo; líneas para notas"
+            ],
+            [
+              "4 por hoja",
+              "≈6,5pt",
+              "Anotar ligeramente"
+            ],
+            [
+              "6 por hoja",
+              "≈6,5pt",
+              "Repasar; 60 diapositivas en 5 hojas dúplex"
+            ],
+            [
+              "9 por hoja",
+              "≈4pt",
+              "Solo para localizar diapositivas"
+            ],
+            [
+              "Esquema",
+              "Tamaño normal",
+              "Solo necesitas el texto"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Tres por página es el diseño que suele pasar desapercibido: es el único que añade líneas para tomar notas junto a cada diapositiva. Seis por página es mejor para repasar cuando ya tienes apuntes."
+        },
+        {
+          "t": "h2",
+          "x": "Configura el color antes de imprimir"
+        },
+        {
+          "t": "p",
+          "x": "La escala de grises no convierte un fondo negro en blanco: lo imprime gris oscuro y solo evita mezclar tintas de color. Para plantillas oscuras, elige “Pure Black and White” en la aplicación de diapositivas. En PowerPoint, está en Color; Keynote tiene una opción equivalente. Para presentaciones claras, la escala de grises suele bastar."
+        },
+        {
+          "t": "warn",
+          "x": "La escala de grises no convierte un fondo negro en blanco: lo imprime gris oscuro y solo evita mezclar tintas de color. Para plantillas oscuras, elige “Pure Black and White” en la aplicación de diapositivas. En PowerPoint, está en Color; Keynote tiene una opción equivalente. Para presentaciones claras, la escala de grises suele bastar."
+        },
+        {
+          "t": "h2",
+          "x": "Dónde está el modo de documentos"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint: Archivo → Imprimir → menú “Full Page Slides” → Documentos. Google Slides: Archivo → Vista previa de impresión y elige el diseño en la barra gris. Keynote: Archivo → Imprimir → “Grid” o “Handout”; desactiva la impresión de cada paso de animación. En PDF, usa Acrobat Reader → Imprimir → Varias → Páginas por hoja. En Beamer, recompila con la opción handout."
+        },
+        {
+          "t": "h2",
+          "x": "El flujo de trabajo completo"
+        },
+        {
+          "t": "p",
+          "x": "Para una clase próxima, elige tres diapositivas por hoja: es la opción con líneas para notas. Para repasar, elige seis. Si solo necesitas el texto, usa el modo esquema de PowerPoint; elimina marcos, imágenes y fondos, y convierte 60 diapositivas en unas pocas páginas. Si solo tienes PDF, extrae el texto. Antes de imprimir, revisa la vista previa, activa doble cara por borde largo y limita el intervalo, por ejemplo `40-60`."
+        },
+        {
+          "t": "h2",
+          "x": "Si solo necesitas las palabras"
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "Extrae el texto de las diapositivas en PDF cuando necesitas el contenido, no las imágenes."
+        },
+        {
+          "t": "p",
+          "x": "Para usar las líneas de notas, consulta [cómo anotar PDF para estudiar](/blog/students/annotate-pdf-for-study). También puedes [ajustar más contenido en una página](/blog/save-ink/fit-more-on-a-page), [ahorrar tinta al imprimir](/blog/save-ink/save-ink-when-printing) y [imprimir artículos académicos](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo imprimo 6 diapositivas por página en PowerPoint?",
+          "a": "Ve a Archivo → Imprimir, abre el menú “Full Page Slides” y selecciona Documentos → 6 diapositivas horizontal. La disposición horizontal se lee de izquierda a derecha, como suele presentarse la clase."
+        },
+        {
+          "q": "¿Por qué mi PDF tiene tres veces más páginas que diapositivas?",
+          "a": "La exportación probablemente creó una página por cada paso de animación. Busca el .pptx o .key original o elimina las páginas duplicadas del PDF. Ningún ajuste de impresión puede combinar esos pasos."
+        },
+        {
+          "q": "¿Cómo imprimo diapositivas con notas del orador?",
+          "a": "En el mismo menú de impresión elige “Notes Pages”. Imprime una diapositiva por hoja con notas debajo, así que usa más papel. Conviene solo si el docente añadió notas sustanciales."
+        },
+        {
+          "q": "¿Cómo evito que las diapositivas oscuras salgan negras?",
+          "a": "En PowerPoint elige “Pure Black and White” en el menú Color para convertir los fondos en blanco y mantener texto y contornos. La escala de grises no basta. Keynote ofrece una opción equivalente."
+        },
+        {
+          "q": "¿Cuántas diapositivas por hoja siguen siendo legibles?",
+          "a": "Seis por hoja A4 dejan un texto de 24 pt en torno a 6,5 pt, suficiente para leer desde el escritorio. Nueve por hoja lo reduce a unos 4 pt: útil para buscar una diapositiva, no para leerla."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como imprimir slides sem desperdiçar 60 folhas",
+      "metaTitle": "Como imprimir slides economizando papel",
+      "metaDescription": "Imprima slides grátis com 3 ou 6 por folha, remova duplicatas de animação e economize papel. Guia privado no navegador, sem cadastro.",
+      "keyword": "como imprimir slides",
+      "secondaryKeywords": [
+        "imprimir PowerPoint 6 slides por página",
+        "imprimir slides com anotações",
+        "folheto PowerPoint",
+        "imprimir PDF várias páginas por folha",
+        "imprimir slides em preto e branco"
+      ],
+      "answer": "Use o modo de folhetos em vez de uma lâmina por folha: três por folha para fazer anotações em aula e seis para revisar. Primeiro, remova as páginas duplicadas criadas pelas etapas de animação na exportação. Imprima em preto e branco puro se o fundo for escuro e use frente e verso. Sessenta slides cabem em cinco folhas duplexadas com seis por folha.",
+      "ctaLabel": "Extrair texto do PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Imprimir um PDF com 60 slides em tamanho inteiro usa 60 folhas; uma apresentação animada pode gerar 180 páginas. Dois ajustes resolvem boa parte do desperdício: remova primeiro as etapas de animação duplicadas e depois escolha o layout de folheto adequado."
+        },
+        {
+          "t": "h2",
+          "x": "Primeiro: corrija a contagem de páginas"
+        },
+        {
+          "t": "p",
+          "x": "Ao exportar slides animados para PDF, cada etapa de animação pode virar uma página. Um slide com quatro tópicos que aparecem um por vez pode gerar quatro páginas quase iguais. Nenhum layout de impressão une essas páginas: corrija o arquivo original ou apague as duplicatas do PDF."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Se estiver disponível, peça o arquivo .pptx ou .key da aula. O PowerPoint imprime cada slide uma vez. No Keynote, desmarque “Print each stage of builds”. Se você criar o PDF com LaTeX Beamer, recompile com `\\documentclass[handout]{beamer}` para reduzir as sobreposições a um quadro. Se só tiver o PDF, apague as páginas repetidas uma vez e guarde a cópia limpa."
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "Remova as páginas duplicadas da animação antes de imprimir ou arquivar o PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Depois, escolha o layout do folheto"
+        },
+        {
+          "t": "p",
+          "x": "Em papel A4 retrato com margens de 12 mm, um slide 16:9 com texto de 24 pt fica com aproximadamente 6,5 pt quando impresso em duas colunas. Três e seis por folha mantêm a mesma largura; seis economiza um terço do papel em comparação com quatro. Para gráficos densos, use dois por folha. Nove por folha serve para localizar slides, não para ler."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Layout",
+            {
+              "es": "Texto de 24 pt",
+              "pt-BR": "Texto de 24 pt",
+              "hi": "24pt टेक्स्ट",
+              "ar": "نص 24 نقطة",
+              "bn": "24pt লেখা",
+              "vi": "Chữ 24pt",
+              "zh-CN": "24pt 正文"
+            },
+            "Use para"
+          ],
+          "rows": [
+            [
+              "1 por hoja",
+              "≈13pt",
+              "Quase nunca; uma folha por slide"
+            ],
+            [
+              "2 por hoja",
+              "≈13pt",
+              "Gráficos densos que você precisa ler"
+            ],
+            [
+              "3 por hoja",
+              "≈6,5pt",
+              "Aula ao vivo; linhas para anotações"
+            ],
+            [
+              "4 por hoja",
+              "≈6,5pt",
+              "Fazer poucas anotações"
+            ],
+            [
+              "6 por hoja",
+              "≈6,5pt",
+              "Revisar; 60 slides em 5 folhas duplex"
+            ],
+            [
+              "9 por hoja",
+              "≈4pt",
+              "Só para localizar slides"
+            ],
+            [
+              "Esquema",
+              "Tamaño normal",
+              "Você só precisa do texto"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Três por página é o layout que muita gente não percebe: é o único que imprime linhas para anotações ao lado de cada slide. Seis por página é melhor para revisar quando você já tem as notas."
+        },
+        {
+          "t": "h2",
+          "x": "Ajuste a cor antes de imprimir"
+        },
+        {
+          "t": "p",
+          "x": "Escala de cinza não transforma fundo preto em branco: ele sai cinza-escuro e a opção apenas evita misturar tintas coloridas. Para apresentações com fundo escuro, escolha “Pure Black and White” no aplicativo de slides. No PowerPoint, fica em Cor; o Keynote tem opção equivalente. Para slides claros, escala de cinza costuma bastar."
+        },
+        {
+          "t": "warn",
+          "x": "Escala de cinza não transforma fundo preto em branco: ele sai cinza-escuro e a opção apenas evita misturar tintas coloridas. Para apresentações com fundo escuro, escolha “Pure Black and White” no aplicativo de slides. No PowerPoint, fica em Cor; o Keynote tem opção equivalente. Para slides claros, escala de cinza costuma bastar."
+        },
+        {
+          "t": "h2",
+          "x": "Onde encontrar o modo de folheto"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint: Arquivo → Imprimir → menu “Full Page Slides” → Folhetos. Google Slides: Arquivo → Visualizar impressão e escolha o layout na barra cinza. Keynote: Arquivo → Imprimir → “Grid” ou “Handout”; desmarque a impressão de cada etapa de animação. No PDF, use Acrobat Reader → Imprimir → Múltiplas → Páginas por folha. No Beamer, recompile com a opção handout."
+        },
+        {
+          "t": "h2",
+          "x": "O fluxo completo de impressão"
+        },
+        {
+          "t": "p",
+          "x": "Para uma aula ao vivo, escolha três slides por folha: é o único layout com linhas para anotações. Para revisar, escolha seis. Se precisar apenas do texto, use o modo de estrutura de tópicos do PowerPoint; ele remove molduras, imagens e fundo e transforma 60 slides em poucas páginas. Se só tiver PDF, extraia o texto. Confira a prévia, ative duplex pela borda longa e limite o intervalo, por exemplo `40-60`."
+        },
+        {
+          "t": "h2",
+          "x": "Quando você só precisa do texto"
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "Extraia o texto dos slides em PDF quando precisar do conteúdo, não das imagens."
+        },
+        {
+          "t": "p",
+          "x": "Para aproveitar as linhas de anotação, veja [como anotar PDFs para estudar](/blog/students/annotate-pdf-for-study). Você também pode [colocar mais conteúdo em uma página](/blog/save-ink/fit-more-on-a-page), [economizar tinta ao imprimir](/blog/save-ink/save-ink-when-printing) e [imprimir artigos acadêmicos](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como imprimir 6 slides por página no PowerPoint?",
+          "a": "Vá a Arquivo → Imprimir, abra o menu “Full Page Slides” e escolha Folhetos → 6 Slides Horizontal. O layout horizontal é lido da esquerda para a direita, como a apresentação costuma ser exibida."
+        },
+        {
+          "q": "Por que meu PDF tem três vezes mais páginas que slides?",
+          "a": "A exportação provavelmente gerou uma página para cada etapa de animação. Procure o arquivo original .pptx ou .key ou remova as páginas duplicadas do PDF. Nenhuma configuração de impressão combina essas etapas."
+        },
+        {
+          "q": "Como imprimir slides com as anotações do apresentador?",
+          "a": "No mesmo menu de impressão, escolha “Notes Pages”. Cada slide sai em uma folha com as notas abaixo, então o consumo de papel é maior. Use apenas quando o professor tiver escrito notas úteis."
+        },
+        {
+          "q": "Como evitar que slides escuros saiam pretos na impressão?",
+          "a": "No PowerPoint, escolha “Pure Black and White” no menu Cor para deixar o fundo branco sem perder texto e contornos. Escala de cinza não resolve. O Keynote tem uma opção semelhante."
+        },
+        {
+          "q": "Quantos slides por folha ainda ficam legíveis?",
+          "a": "Seis por folha A4 deixam o texto de 24 pt com cerca de 6,5 pt, legível na mesa. Nove por folha reduzem para cerca de 4 pt: serve para localizar um slide, não para ler."
+        }
+      ]
+    },
+    "hi": {
+      "title": "60 पेज बर्बाद किए बिना लेक्चर स्लाइड कैसे प्रिंट करें",
+      "metaTitle": "लेक्चर स्लाइड कम कागज़ में प्रिंट करें",
+      "metaDescription": "प्रति शीट 3 या 6 स्लाइड प्रिंट करें, एनिमेशन डुप्लिकेट हटाएँ और कागज़ बचाएँ। मुफ्त, ब्राउज़र में निजी, साइनअप नहीं।",
+      "keyword": "लेक्चर स्लाइड कैसे प्रिंट करें",
+      "secondaryKeywords": [
+        "PowerPoint 6 स्लाइड प्रति पेज प्रिंट",
+        "नोट्स के साथ स्लाइड प्रिंट",
+        "PowerPoint हैंडआउट",
+        "PDF में कई स्लाइड प्रिंट",
+        "स्लाइड श्वेत-श्याम प्रिंट"
+      ],
+      "answer": "पूरे पेज पर एक स्लाइड की बजाय हैंडआउट मोड चुनें: क्लास में नोट्स के लिए प्रति शीट तीन और रिविज़न के लिए छह स्लाइड। पहले PDF निर्यात में एनिमेशन से बने डुप्लिकेट पेज हटाएँ। गहरे बैकग्राउंड पर शुद्ध ब्लैक-एंड-व्हाइट चुनें और दोनों तरफ प्रिंट करें। छह प्रति शीट पर 60 स्लाइड पाँच डुप्लेक्स शीट में आ जाती हैं।",
+      "ctaLabel": "PDF से टेक्स्ट निकालें",
+      "body": [
+        {
+          "t": "p",
+          "x": "60 स्लाइड की PDF को फुल-पेज प्रिंट करने पर 60 शीट लगती हैं; एनिमेशन वाली प्रस्तुति 180 पेज तक बना सकती है। दो सेटिंग से काफ़ी बचत होती है: पहले एनिमेशन के डुप्लिकेट हटाएँ, फिर सही हैंडआउट लेआउट चुनें।"
+        },
+        {
+          "t": "h2",
+          "x": "पहले: पेजों की संख्या ठीक करें"
+        },
+        {
+          "t": "p",
+          "x": "एनिमेशन वाले स्लाइड PDF में निर्यात करने पर हर बिल्ड स्टेप अलग पेज बन सकता है। चार बुलेट एक-एक करके दिखाने वाली स्लाइड चार लगभग समान पेज बना सकती है। प्रिंट लेआउट इन्हें जोड़ नहीं सकता; स्रोत प्रस्तुति ठीक करें या PDF के डुप्लिकेट पेज हटाएँ।"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "मिले तो Moodle या Canvas से मूल .pptx या .key फाइल लें। PowerPoint हर स्लाइड एक बार प्रिंट करता है। Keynote में “Print each stage of builds” बंद करें। अपनी LaTeX Beamer प्रस्तुति को `\\documentclass[handout]{beamer}` से फिर बनाएं; यह सभी ओवरले को एक फ्रेम में समेटता है। केवल PDF हो तो डुप्लिकेट पेज हटाकर साफ़ प्रति रखें।"
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "PDF प्रिंट या आर्काइव करने से पहले एनिमेशन के डुप्लिकेट पेज हटाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "फिर हैंडआउट लेआउट चुनें"
+        },
+        {
+          "t": "p",
+          "x": "12 मिमी मार्जिन वाले A4 पोर्ट्रेट पेज पर 16:9 स्लाइड का 24 pt टेक्स्ट दो कॉलम लेआउट में लगभग 6.5 pt रह जाता है। प्रति शीट तीन और छह स्लाइड की चौड़ाई समान है; छह, चार की तुलना में एक-तिहाई कागज़ बचाता है। घने चार्ट के लिए दो प्रति शीट चुनें। नौ प्रति शीट केवल स्लाइड खोजने के लिए है, पढ़ने के लिए नहीं।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "लेआउट",
+            {
+              "es": "Texto de 24 pt",
+              "pt-BR": "Texto de 24 pt",
+              "hi": "24pt टेक्स्ट",
+              "ar": "نص 24 نقطة",
+              "bn": "24pt লেখা",
+              "vi": "Chữ 24pt",
+              "zh-CN": "24pt 正文"
+            },
+            "किसके लिए"
+          ],
+          "rows": [
+            [
+              "1 por hoja",
+              "≈13pt",
+              "शायद ही कभी; हर स्लाइड पर एक शीट"
+            ],
+            [
+              "2 por hoja",
+              "≈13pt",
+              "पढ़ने योग्य घने चार्ट"
+            ],
+            [
+              "3 por hoja",
+              "≈6,5pt",
+              "लाइव क्लास; नोट्स की लाइनें"
+            ],
+            [
+              "4 por hoja",
+              "≈6,5pt",
+              "हल्के नोट्स"
+            ],
+            [
+              "6 por hoja",
+              "≈6,5pt",
+              "रिविज़न; 60 स्लाइड 5 डुप्लेक्स शीट में"
+            ],
+            [
+              "9 por hoja",
+              "≈4pt",
+              "केवल स्लाइड खोजने के लिए"
+            ],
+            [
+              "Esquema",
+              "Tamaño normal",
+              "सिर्फ टेक्स्ट चाहिए"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "प्रति पेज तीन स्लाइड वाला विकल्प अक्सर छूट जाता है। यही एकमात्र लेआउट है जिसमें स्लाइड के बगल में नोट्स की लाइनें छपती हैं। नोट्स पहले से हों तो रिविज़न के लिए छह प्रति पेज चुनें।"
+        },
+        {
+          "t": "h2",
+          "x": "प्रिंट से पहले रंग सेटिंग बदलें"
+        },
+        {
+          "t": "p",
+          "x": "ग्रेस्केल काले बैकग्राउंड को सफेद नहीं करता; वह उसे गहरे ग्रे में प्रिंट करता है और केवल रंगीन स्याही का मिश्रण रोकता है। गहरे टेम्पलेट पर स्लाइड ऐप में “Pure Black and White” चुनें। PowerPoint में यह Color मेनू में है; Keynote में समान विकल्प है। हल्की स्लाइड पर ग्रेस्केल पर्याप्त हो सकता है।"
+        },
+        {
+          "t": "warn",
+          "x": "ग्रेस्केल काले बैकग्राउंड को सफेद नहीं करता; वह उसे गहरे ग्रे में प्रिंट करता है और केवल रंगीन स्याही का मिश्रण रोकता है। गहरे टेम्पलेट पर स्लाइड ऐप में “Pure Black and White” चुनें। PowerPoint में यह Color मेनू में है; Keynote में समान विकल्प है। हल्की स्लाइड पर ग्रेस्केल पर्याप्त हो सकता है।"
+        },
+        {
+          "t": "h2",
+          "x": "हैंडआउट मोड कहाँ मिलेगा"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint: File → Print → “Full Page Slides” मेनू → Handouts. Google Slides: File → Print preview और ग्रे टूलबार में लेआउट चुनें। Keynote: File → Print → “Grid” या “Handout”; “Print each stage of builds” बंद करें। PDF के लिए Acrobat Reader → Print → Multiple → Pages per sheet चुनें। Beamer में handout विकल्प से फिर बनाएं।"
+        },
+        {
+          "t": "h2",
+          "x": "पूरी प्रिंट प्रक्रिया"
+        },
+        {
+          "t": "p",
+          "x": "आने वाली क्लास के लिए प्रति शीट तीन स्लाइड चुनें; इसमें नोट्स की लाइनें मिलती हैं। रिविज़न के लिए छह चुनें। सिर्फ टेक्स्ट चाहिए तो PowerPoint Outline मोड इस्तेमाल करें; यह फ्रेम, चित्र और बैकग्राउंड हटाकर 60 स्लाइड को कुछ पेज में बदलता है। PDF ही हो तो टेक्स्ट निकालें। प्रीव्यू देखें, लंबी धार से डुप्लेक्स चालू करें और पेज रेंज सीमित करें, जैसे `40-60`।"
+        },
+        {
+          "t": "h2",
+          "x": "जब सिर्फ टेक्स्ट चाहिए"
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "जब स्लाइड की तस्वीरें नहीं, केवल सामग्री चाहिए तो PDF से टेक्स्ट निकालें।"
+        },
+        {
+          "t": "p",
+          "x": "नोट्स की लाइनों का उपयोग करने के लिए [पढ़ाई के लिए PDF पर नोट्स](/blog/students/annotate-pdf-for-study) पढ़ें। साथ ही [एक पेज पर ज्यादा सामग्री फिट करें](/blog/save-ink/fit-more-on-a-page), [प्रिंट में स्याही बचाएँ](/blog/save-ink/save-ink-when-printing) और [अकादमिक लेख प्रिंट करें](/blog/students/print-journal-articles)।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PowerPoint में प्रति पेज 6 स्लाइड कैसे प्रिंट करें?",
+          "a": "File → Print खोलें, “Full Page Slides” मेनू चुनें और Handouts → 6 Slides Horizontal चुनें। क्षैतिज क्रम बाएँ से दाएँ पढ़ा जाता है, जैसा प्रस्तुति दिखाई गई थी।"
+        },
+        {
+          "q": "मेरी स्लाइड PDF में स्लाइडों से तीन गुना पेज क्यों हैं?",
+          "a": "निर्यात में हर एनिमेशन बिल्ड स्टेप एक पेज बना होगा। मूल .pptx या .key फाइल लें या PDF के डुप्लिकेट पेज हटाएँ। कोई प्रिंट सेटिंग इन चरणों को वापस नहीं जोड़ सकती।"
+        },
+        {
+          "q": "स्पीकर नोट्स के साथ स्लाइड कैसे प्रिंट करूँ?",
+          "a": "उसी प्रिंट मेनू में “Notes Pages” चुनें। हर शीट पर एक स्लाइड और नीचे नोट्स आएँगे, इसलिए कागज़ अधिक लगेगा। तभी उपयोग करें जब शिक्षक ने उपयोगी नोट्स लिखे हों।"
+        },
+        {
+          "q": "गहरी स्लाइडें काली छपने से कैसे रोकें?",
+          "a": "PowerPoint के Color मेनू में “Pure Black and White” चुनें। इससे बैकग्राउंड सफेद होता है और टेक्स्ट तथा आउटलाइन बने रहते हैं। ग्रेस्केल पर्याप्त नहीं है। Keynote में समान विकल्प है।"
+        },
+        {
+          "q": "एक शीट पर कितनी स्लाइडें पढ़ने योग्य रहती हैं?",
+          "a": "A4 पर छह स्लाइड प्रति शीट से 24 pt टेक्स्ट लगभग 6.5 pt होता है, जिसे डेस्क पर पढ़ा जा सकता है। नौ स्लाइड में यह करीब 4 pt रह जाता है, जो केवल खोजने के लिए ठीक है।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية طباعة الشرائح دون إهدار 60 ورقة",
+      "metaTitle": "اطبع شرائح المحاضرة مع توفير الورق",
+      "metaDescription": "اطبع 3 أو 6 شرائح في الورقة، واحذف تكرارات الرسوم المتحركة ووفر الورق. مجانًا وبخصوصية في المتصفح، بلا تسجيل.",
+      "keyword": "كيفية طباعة شرائح المحاضرات",
+      "secondaryKeywords": [
+        "طباعة 6 شرائح في صفحة PowerPoint",
+        "طباعة الشرائح مع الملاحظات",
+        "نشرات PowerPoint",
+        "طباعة صفحات متعددة من PDF",
+        "طباعة الشرائح بالأبيض والأسود"
+      ],
+      "answer": "استخدم تخطيط النشرات بدل شريحة واحدة لكل ورقة: ثلاث شرائح في الورقة لتدوين ملاحظات المحاضرة، وست للمراجعة. احذف أولًا الصفحات المكررة الناتجة عن خطوات الرسوم المتحركة عند التصدير. اختر الأبيض والأسود النقي للخلفيات الداكنة واطبع على الوجهين. تتسع 60 شريحة في خمس أوراق مطبوعة على الوجهين عند اختيار ست شرائح في الورقة.",
+      "ctaLabel": "استخراج النص من PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "طباعة عرض من 60 شريحة بحجم الصفحة تستهلك 60 ورقة، وقد ينتج العرض المتحرك 180 صفحة. يوفر إعدادان معظم الورق: احذف أولًا تكرارات خطوات الحركة، ثم اختر تخطيط النشرة المناسب."
+        },
+        {
+          "t": "h2",
+          "x": "أولًا: صحح عدد الصفحات"
+        },
+        {
+          "t": "p",
+          "x": "عند تصدير عرض متحرك إلى PDF، قد تتحول كل خطوة ظهور إلى صفحة مستقلة. قد تنتج الشريحة التي تكشف أربع نقاط واحدة بعد الأخرى أربع صفحات متشابهة. لا يستطيع تخطيط الطباعة دمجها؛ أصلح ملف العرض أو احذف الصفحات المكررة من PDF."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "إذا توفر، اطلب ملف .pptx أو .key الأصلي من المقرر. يطبع PowerPoint كل شريحة مرة واحدة. في Keynote، ألغِ تحديد “Print each stage of builds”. إذا كنت تنشئ عرض LaTeX Beamer، فأعد بناءه باستخدام `\\documentclass[handout]{beamer}` لدمج الطبقات في إطار واحد. إذا لم يتوفر إلا PDF، احذف الصفحات المكررة واحفظ نسخة نظيفة."
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "احذف صفحات خطوات الرسوم المتحركة المكررة قبل طباعة PDF أو أرشفته."
+        },
+        {
+          "t": "h2",
+          "x": "ثم اختر تخطيط النشرات المناسب"
+        },
+        {
+          "t": "p",
+          "x": "على ورق A4 عمودي بهوامش 12 مم، يصبح نص شريحة 16:9 بحجم 24 نقطة نحو 6.5 نقطة عند الطباعة بعمودين. يبقى عرض الشريحة متساويًا تقريبًا في تخطيطي ثلاث وست شرائح؛ ويوفر اختيار ست ثلث الورق مقارنة بأربع. استخدم شريحتين للرسوم الكثيفة. تسع شرائح مناسبة للتصفح لا للقراءة."
+        },
+        {
+          "t": "table",
+          "head": [
+            "التخطيط",
+            {
+              "es": "Texto de 24 pt",
+              "pt-BR": "Texto de 24 pt",
+              "hi": "24pt टेक्स्ट",
+              "ar": "نص 24 نقطة",
+              "bn": "24pt লেখা",
+              "vi": "Chữ 24pt",
+              "zh-CN": "24pt 正文"
+            },
+            "الاستخدام"
+          ],
+          "rows": [
+            [
+              "1 por hoja",
+              "≈13pt",
+              "نادرًا؛ ورقة لكل شريحة"
+            ],
+            [
+              "2 por hoja",
+              "≈13pt",
+              "الرسوم الكثيفة التي تحتاج إلى قراءتها"
+            ],
+            [
+              "3 por hoja",
+              "≈6,5pt",
+              "محاضرة مباشرة؛ أسطر للملاحظات"
+            ],
+            [
+              "4 por hoja",
+              "≈6,5pt",
+              "إضافة ملاحظات قليلة"
+            ],
+            [
+              "6 por hoja",
+              "≈6,5pt",
+              "المراجعة؛ 60 شريحة في 5 أوراق على الوجهين"
+            ],
+            [
+              "9 por hoja",
+              "≈4pt",
+              "للعثور على الشرائح فقط"
+            ],
+            [
+              "Esquema",
+              "Tamaño normal",
+              "عندما تحتاج إلى النص فقط"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "غالبًا ما يغفل الناس تخطيط ثلاث شرائح في الصفحة، وهو الوحيد الذي يطبع أسطر ملاحظات بجوار كل شريحة. اختر ستًا للمراجعة بعد تدوين ملاحظاتك."
+        },
+        {
+          "t": "h2",
+          "x": "اضبط اللون قبل الطباعة"
+        },
+        {
+          "t": "p",
+          "x": "لا يحول التدرج الرمادي الخلفية السوداء إلى بيضاء، بل يطبعها رمادية داكنة ويمنع خلط أحبار الألوان فقط. للعروض الداكنة، اختر “Pure Black and White” من تطبيق الشرائح. في PowerPoint يوجد الخيار ضمن Color، ولدى Keynote خيار مماثل. تكفي الرمادية عادةً للعروض الفاتحة."
+        },
+        {
+          "t": "warn",
+          "x": "لا يحول التدرج الرمادي الخلفية السوداء إلى بيضاء، بل يطبعها رمادية داكنة ويمنع خلط أحبار الألوان فقط. للعروض الداكنة، اختر “Pure Black and White” من تطبيق الشرائح. في PowerPoint يوجد الخيار ضمن Color، ولدى Keynote خيار مماثل. تكفي الرمادية عادةً للعروض الفاتحة."
+        },
+        {
+          "t": "h2",
+          "x": "مكان إعداد النشرات"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint: File → Print → قائمة “Full Page Slides” → Handouts. Google Slides: File → Print preview ثم اختر التخطيط من الشريط الرمادي. Keynote: File → Print → “Grid” أو “Handout”، وألغِ “Print each stage of builds”. لملف PDF، استخدم Acrobat Reader → Print → Multiple → Pages per sheet. في Beamer أعد البناء بخيار handout."
+        },
+        {
+          "t": "h2",
+          "x": "خطوات العمل كاملة"
+        },
+        {
+          "t": "p",
+          "x": "للمحاضرة القادمة، اختر ثلاث شرائح في الورقة؛ فهو التخطيط الذي يضيف أسطرًا للملاحظات. للمراجعة اختر ستًا. إذا أردت النص فقط، استخدم وضع المخطط في PowerPoint؛ إذ يزيل الإطارات والصور والخلفية ويحول 60 شريحة إلى بضع صفحات. إذا لم يتوفر إلا PDF، استخرج النص. راجع المعاينة، وفعّل الطباعة على الوجهين مع القلب على الحافة الطويلة، وحدد نطاق الصفحات مثل `40-60`."
+        },
+        {
+          "t": "h2",
+          "x": "عندما تحتاج إلى النص فقط"
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "استخرج نص PDF عندما تحتاج إلى المحتوى لا صور الشرائح."
+        },
+        {
+          "t": "p",
+          "x": "لاستخدام أسطر الملاحظات، اقرأ [كيفية تدوين الملاحظات على PDF للدراسة](/blog/students/annotate-pdf-for-study). ويمكنك أيضًا [وضع محتوى أكثر في الصفحة](/blog/save-ink/fit-more-on-a-page)، و[توفير الحبر عند الطباعة](/blog/save-ink/save-ink-when-printing)، و[طباعة المقالات الأكاديمية](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أطبع 6 شرائح في الصفحة في PowerPoint؟",
+          "a": "افتح File → Print، ثم قائمة “Full Page Slides”، واختر Handouts → 6 Slides Horizontal. يُقرأ التخطيط الأفقي من اليسار إلى اليمين، مثل طريقة عرض الشرائح."
+        },
+        {
+          "q": "لماذا يحتوي PDF على ثلاثة أضعاف عدد الشرائح؟",
+          "a": "ربما أنشأ التصدير صفحة لكل خطوة حركة. اطلب ملف .pptx أو .key الأصلي أو احذف الصفحات المكررة من PDF. لا يستطيع أي إعداد طباعة إعادة دمج خطوات الحركة."
+        },
+        {
+          "q": "كيف أطبع الشرائح مع ملاحظات المتحدث؟",
+          "a": "اختر “Notes Pages” من قائمة الطباعة نفسها. يطبع هذا شريحة واحدة في كل ورقة والملاحظات أسفلها، لذا يستهلك ورقًا أكثر. استخدمه عندما تكون هناك ملاحظات مفيدة فعلًا."
+        },
+        {
+          "q": "كيف أمنع الشرائح الداكنة من الظهور سوداء بالكامل؟",
+          "a": "في PowerPoint اختر “Pure Black and White” من قائمة Color لتحويل الخلفيات إلى الأبيض مع الحفاظ على النص والحدود. لا يكفي التدرج الرمادي. يوفر Keynote خيارًا مماثلًا."
+        },
+        {
+          "q": "كم شريحة في الورقة تبقى مقروءة؟",
+          "a": "ست شرائح في ورقة A4 تجعل نص 24 نقطة نحو 6.5 نقطة، وهو مقروء من مسافة المكتب. تسع شرائح تخفضه إلى نحو 4 نقاط، وهذا مناسب للعثور على شريحة لا لقراءتها."
+        }
+      ]
+    },
+    "bn": {
+      "title": "৬০ পৃষ্ঠা নষ্ট না করে লেকচার স্লাইড প্রিন্ট করুন",
+      "metaTitle": "কম কাগজে লেকচার স্লাইড প্রিন্টের উপায়",
+      "metaDescription": "প্রতি পাতায় ৩ বা ৬টি স্লাইড প্রিন্ট করুন, অ্যানিমেশনের ডুপ্লিকেট মুছুন এবং কাগজ বাঁচান। বিনামূল্যে ও ব্যক্তিগত।",
+      "keyword": "লেকচার স্লাইড কীভাবে প্রিন্ট করবেন",
+      "secondaryKeywords": [
+        "PowerPoint-এ প্রতি পেজে ৬ স্লাইড প্রিন্ট",
+        "নোটসহ স্লাইড প্রিন্ট",
+        "PowerPoint হ্যান্ডআউট",
+        "PDF-এ এক পাতায় একাধিক স্লাইড",
+        "সাদা-কালো স্লাইড প্রিন্ট"
+      ],
+      "answer": "এক পাতায় একটি স্লাইডের বদলে হ্যান্ডআউট মোড ব্যবহার করুন: ক্লাসে নোটের জন্য প্রতি পাতায় তিনটি, রিভিশনের জন্য ছয়টি। প্রথমে PDF রপ্তানিতে অ্যানিমেশন ধাপ থেকে তৈরি ডুপ্লিকেট পৃষ্ঠা মুছুন। গাঢ় ব্যাকগ্রাউন্ডে পিওর ব্ল্যাক অ্যান্ড হোয়াইট বেছে নিয়ে দুই পাশে প্রিন্ট করুন। প্রতি পাতায় ছয়টি দিলে ৬০টি স্লাইড দুই পাশে ছাপা পাঁচ পাতায় ধরে।",
+      "ctaLabel": "PDF থেকে টেক্সট বের করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "৬০ স্লাইডের PDF পুরো পাতায় প্রিন্ট করলে ৬০টি কাগজ লাগে, আর অ্যানিমেশন থাকলে ১৮০ পৃষ্ঠাও হতে পারে। দুটি সেটিংয়ে বেশিরভাগ কাগজ বাঁচে: আগে অ্যানিমেশনের ডুপ্লিকেট ধাপ সরান, তারপর উপযুক্ত হ্যান্ডআউট লেআউট বেছে নিন।"
+        },
+        {
+          "t": "h2",
+          "x": "প্রথমে: পৃষ্ঠার সংখ্যা ঠিক করুন"
+        },
+        {
+          "t": "p",
+          "x": "অ্যানিমেশনসহ স্লাইড PDF-এ রপ্তানি করলে প্রতিটি ধাপ আলাদা পৃষ্ঠা হতে পারে। চারটি বুলেট একে একে দেখানো একটি স্লাইড চারটি প্রায় একই পৃষ্ঠা বানাতে পারে। প্রিন্ট লেআউট এগুলো এক করতে পারে না; মূল ফাইল ঠিক করুন অথবা PDF থেকে ডুপ্লিকেট পৃষ্ঠা মুছুন।"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "পাওয়া গেলে কোর্সের মূল .pptx বা .key ফাইল নিন। PowerPoint প্রতিটি স্লাইড একবারই প্রিন্ট করে। Keynote-এ “Print each stage of builds” বন্ধ করুন। LaTeX Beamer-এ `\\documentclass[handout]{beamer}` দিয়ে আবার তৈরি করলে সব ওভারলে একটি ফ্রেমে আসে। শুধু PDF থাকলে ডুপ্লিকেট পৃষ্ঠা মুছে পরিষ্কার কপি রাখুন।"
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "PDF প্রিন্ট বা আর্কাইভের আগে অ্যানিমেশনের ডুপ্লিকেট পৃষ্ঠা মুছুন।"
+        },
+        {
+          "t": "h2",
+          "x": "এরপর হ্যান্ডআউট লেআউট বেছে নিন"
+        },
+        {
+          "t": "p",
+          "x": "১২ মিমি মার্জিনসহ A4 পোর্ট্রেটে 16:9 স্লাইডের 24pt লেখা দুই কলামের লেআউটে প্রায় 6.5pt হয়। প্রতি পাতায় তিনটি ও ছয়টি স্লাইডের প্রস্থ প্রায় একই; ছয়টি ব্যবহার করলে চারটির তুলনায় এক-তৃতীয়াংশ কাগজ বাঁচে। ঘন চার্ট পড়তে দুইটি বেছে নিন। নয়টি শুধু স্লাইড খুঁজতে, পড়তে নয়।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "লেআউট",
+            {
+              "es": "Texto de 24 pt",
+              "pt-BR": "Texto de 24 pt",
+              "hi": "24pt टेक्स्ट",
+              "ar": "نص 24 نقطة",
+              "bn": "24pt লেখা",
+              "vi": "Chữ 24pt",
+              "zh-CN": "24pt 正文"
+            },
+            "কখন ব্যবহার"
+          ],
+          "rows": [
+            [
+              "1 por hoja",
+              "≈13pt",
+              "প্রায় কখনোই নয়; এক স্লাইডে এক কাগজ"
+            ],
+            [
+              "2 por hoja",
+              "≈13pt",
+              "যে ঘন চার্ট পড়তে হবে"
+            ],
+            [
+              "3 por hoja",
+              "≈6,5pt",
+              "লাইভ ক্লাস; নোটের লাইন"
+            ],
+            [
+              "4 por hoja",
+              "≈6,5pt",
+              "অল্প নোট নেওয়া"
+            ],
+            [
+              "6 por hoja",
+              "≈6,5pt",
+              "রিভিশন; দুই পাশে ৫ পাতায় ৬০ স্লাইড"
+            ],
+            [
+              "9 por hoja",
+              "≈4pt",
+              "শুধু স্লাইড খুঁজতে"
+            ],
+            [
+              "Esquema",
+              "Tamaño normal",
+              "শুধু লেখা দরকার"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "প্রতি পাতায় তিনটি স্লাইডের লেআউটটি অনেকেই খেয়াল করেন না। একমাত্র এটিতেই প্রতিটি স্লাইডের পাশে নোটের লাইন থাকে। নোট আগে থেকে থাকলে রিভিশনে ছয়টি নিন।"
+        },
+        {
+          "t": "h2",
+          "x": "প্রিন্টের আগে রঙ ঠিক করুন"
+        },
+        {
+          "t": "p",
+          "x": "গ্রেস্কেল কালো ব্যাকগ্রাউন্ডকে সাদা করে না; এটি গাঢ় ধূসর ছাপে এবং শুধু রঙিন কালি মেশানো বন্ধ করে। গাঢ় টেমপ্লেটের জন্য স্লাইড অ্যাপে “Pure Black and White” বেছে নিন। PowerPoint-এর Color মেনুতে এবং Keynote-এ সমতুল্য অপশন আছে। হালকা স্লাইডে গ্রেস্কেল যথেষ্ট হতে পারে।"
+        },
+        {
+          "t": "warn",
+          "x": "গ্রেস্কেল কালো ব্যাকগ্রাউন্ডকে সাদা করে না; এটি গাঢ় ধূসর ছাপে এবং শুধু রঙিন কালি মেশানো বন্ধ করে। গাঢ় টেমপ্লেটের জন্য স্লাইড অ্যাপে “Pure Black and White” বেছে নিন। PowerPoint-এর Color মেনুতে এবং Keynote-এ সমতুল্য অপশন আছে। হালকা স্লাইডে গ্রেস্কেল যথেষ্ট হতে পারে।"
+        },
+        {
+          "t": "h2",
+          "x": "হ্যান্ডআউট মোড কোথায় পাবেন"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint: File → Print → “Full Page Slides” মেনু → Handouts. Google Slides: File → Print preview, তারপর ধূসর টুলবার থেকে লেআউট। Keynote: File → Print → “Grid” বা “Handout”; “Print each stage of builds” বন্ধ করুন। PDF-এ Acrobat Reader → Print → Multiple → Pages per sheet ব্যবহার করুন। Beamer-এ handout অপশন দিয়ে আবার তৈরি করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "শুরু থেকে শেষ পর্যন্ত প্রিন্টের ধাপ"
+        },
+        {
+          "t": "p",
+          "x": "সামনের লেকচারের জন্য প্রতি পাতায় তিনটি স্লাইড নিন; এতে নোটের লাইন থাকে। রিভিশনের জন্য ছয়টি। শুধু লেখা দরকার হলে PowerPoint-এর Outline মোড নিন; এতে ফ্রেম, ছবি ও ব্যাকগ্রাউন্ড বাদ দিয়ে ৬০ স্লাইড কয়েক পাতায় আসে। শুধু PDF থাকলে লেখা বের করুন। প্রিভিউ দেখে লম্বা ধার ধরে ডুপ্লেক্স চালু করুন এবং পৃষ্ঠা পরিসর সীমিত করুন, যেমন `40-60`।"
+        },
+        {
+          "t": "h2",
+          "x": "যখন শুধু লেখাটুকু দরকার"
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "স্লাইডের ছবি নয়, লেখা দরকার হলে PDF থেকে টেক্সট বের করুন।"
+        },
+        {
+          "t": "p",
+          "x": "নোটের লাইন কাজে লাগাতে [পড়াশোনার জন্য PDF-এ নোট](/blog/students/annotate-pdf-for-study) দেখুন। আরও দেখুন [এক পাতায় বেশি বিষয় ফিট করুন](/blog/save-ink/fit-more-on-a-page), [প্রিন্টে কালি বাঁচান](/blog/save-ink/save-ink-when-printing) এবং [একাডেমিক নিবন্ধ প্রিন্ট করুন](/blog/students/print-journal-articles)।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PowerPoint-এ প্রতি পৃষ্ঠায় ৬টি স্লাইড কীভাবে প্রিন্ট করব?",
+          "a": "File → Print খুলে “Full Page Slides” মেনু থেকে Handouts → 6 Slides Horizontal বেছে নিন। অনুভূমিক বিন্যাস বাম থেকে ডানে পড়া যায়, যেমন উপস্থাপনা দেখানো হয়েছিল।"
+        },
+        {
+          "q": "স্লাইডের চেয়ে PDF-এ তিন গুণ পৃষ্ঠা কেন?",
+          "a": "রপ্তানির সময় প্রতিটি অ্যানিমেশন ধাপ আলাদা পৃষ্ঠা হয়েছে। মূল .pptx বা .key ফাইল নিন অথবা PDF থেকে ডুপ্লিকেট পৃষ্ঠা মুছুন। কোনো প্রিন্ট সেটিং ধাপগুলো আবার এক করতে পারে না।"
+        },
+        {
+          "q": "স্পিকার নোটসহ স্লাইড কীভাবে প্রিন্ট করব?",
+          "a": "একই প্রিন্ট মেনুতে “Notes Pages” বেছে নিন। প্রতি পাতায় একটি স্লাইড ও তার নিচে নোট ছাপা হয়, তাই কাগজ বেশি লাগে। শিক্ষক বিস্তারিত নোট লিখলে তবেই ব্যবহার করুন।"
+        },
+        {
+          "q": "গাঢ় স্লাইড কালো হয়ে ছাপা ঠেকাব কীভাবে?",
+          "a": "PowerPoint-এর Color মেনুতে “Pure Black and White” বেছে নিলে ব্যাকগ্রাউন্ড সাদা হয় এবং লেখা ও রেখা থাকে। গ্রেস্কেল যথেষ্ট নয়। Keynote-এও একই ধরনের অপশন আছে।"
+        },
+        {
+          "q": "এক পাতায় কত স্লাইড পড়া যায়?",
+          "a": "A4-এ প্রতি পাতায় ছয়টি দিলে 24pt লেখা প্রায় 6.5pt হয়, ডেস্কে পড়া যায়। নয়টি দিলে প্রায় 4pt হয়, যা পড়ার বদলে স্লাইড খুঁজতে কাজে লাগে।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách in slide bài giảng không lãng phí 60 tờ giấy",
+      "metaTitle": "Cách in slide bài giảng tiết kiệm giấy",
+      "metaDescription": "In 3 hoặc 6 slide mỗi tờ, xóa trang trùng do hiệu ứng và tiết kiệm giấy. Miễn phí, riêng tư trên trình duyệt, không cần đăng ký.",
+      "keyword": "cách in slide bài giảng",
+      "secondaryKeywords": [
+        "in PowerPoint 6 slide mỗi trang",
+        "in slide kèm ghi chú",
+        "bản phát tay PowerPoint",
+        "in nhiều trang PDF trên một tờ",
+        "in slide đen trắng"
+      ],
+      "answer": "Dùng chế độ bản phát tay thay vì mỗi tờ một slide: ba slide mỗi tờ để ghi chú trong giờ học, sáu slide để ôn tập. Trước tiên, xóa các trang trùng do từng bước hiệu ứng tạo ra khi xuất PDF. Chọn đen trắng thuần cho nền tối và in hai mặt. Sáu slide mỗi tờ giúp 60 slide nằm trên năm tờ giấy in hai mặt.",
+      "ctaLabel": "Trích xuất văn bản PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "In PDF gồm 60 slide ở chế độ toàn trang sẽ tốn 60 tờ; bài trình chiếu có hiệu ứng có thể tạo thành 180 trang. Hai thiết lập giúp tiết kiệm phần lớn giấy: xóa trang trùng do hiệu ứng trước, rồi chọn bố cục bản phát tay phù hợp."
+        },
+        {
+          "t": "h2",
+          "x": "Trước tiên: sửa số trang"
+        },
+        {
+          "t": "p",
+          "x": "Khi xuất bài trình chiếu có hiệu ứng sang PDF, mỗi bước xuất hiện có thể trở thành một trang riêng. Một slide hiện lần lượt bốn gạch đầu dòng có thể tạo ra bốn trang gần giống nhau. Bố cục in không thể gộp chúng; cần sửa tệp gốc hoặc xóa các trang trùng khỏi PDF."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Nếu có, hãy lấy tệp .pptx hoặc .key gốc từ khóa học. PowerPoint chỉ in mỗi slide một lần. Trong Keynote, bỏ chọn “Print each stage of builds”. Nếu tự tạo bài bằng LaTeX Beamer, biên dịch lại với `\\documentclass[handout]{beamer}` để gộp các lớp hiệu ứng thành một khung. Nếu chỉ có PDF, xóa trang trùng và giữ bản đã làm sạch."
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "Xóa trang trùng do hiệu ứng trước khi in hoặc lưu PDF."
+        },
+        {
+          "t": "h2",
+          "x": "Tiếp theo, chọn bố cục bản phát tay"
+        },
+        {
+          "t": "p",
+          "x": "Với giấy A4 dọc, lề 12 mm, chữ 24pt trên slide 16:9 sẽ còn khoảng 6,5pt khi in theo hai cột. Bố cục ba và sáu slide có chiều rộng slide tương tự; chọn sáu giúp tiết kiệm thêm một phần ba giấy so với bốn. Dùng hai slide mỗi tờ cho biểu đồ dày. Chín slide mỗi tờ chỉ phù hợp để tra cứu, không để đọc."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Bố cục",
+            {
+              "es": "Texto de 24 pt",
+              "pt-BR": "Texto de 24 pt",
+              "hi": "24pt टेक्स्ट",
+              "ar": "نص 24 نقطة",
+              "bn": "24pt লেখা",
+              "vi": "Chữ 24pt",
+              "zh-CN": "24pt 正文"
+            },
+            "Dùng khi"
+          ],
+          "rows": [
+            [
+              "1 por hoja",
+              "≈13pt",
+              "Hầu như không; mỗi slide một tờ"
+            ],
+            [
+              "2 por hoja",
+              "≈13pt",
+              "Biểu đồ dày cần đọc"
+            ],
+            [
+              "3 por hoja",
+              "≈6,5pt",
+              "Học trực tiếp; có dòng ghi chú"
+            ],
+            [
+              "4 por hoja",
+              "≈6,5pt",
+              "Ghi chú ngắn"
+            ],
+            [
+              "6 por hoja",
+              "≈6,5pt",
+              "Ôn tập; 60 slide trên 5 tờ in hai mặt"
+            ],
+            [
+              "9 por hoja",
+              "≈4pt",
+              "Chỉ để tìm slide"
+            ],
+            [
+              "Esquema",
+              "Tamaño normal",
+              "Chỉ cần nội dung chữ"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Bố cục ba slide mỗi trang thường bị bỏ qua. Đây là bố cục duy nhất có dòng ghi chú bên cạnh từng slide. Khi đã có ghi chú, dùng sáu slide mỗi trang để ôn tập."
+        },
+        {
+          "t": "h2",
+          "x": "Chọn chế độ màu trước khi in"
+        },
+        {
+          "t": "p",
+          "x": "Thang xám không biến nền đen thành trắng; nó in nền thành xám đậm và chỉ tránh pha mực màu. Với mẫu nền tối, chọn “Pure Black and White” trong ứng dụng trình chiếu. Trong PowerPoint, tùy chọn nằm ở Color; Keynote có mục tương đương. Thang xám thường đủ cho slide nền sáng."
+        },
+        {
+          "t": "warn",
+          "x": "Thang xám không biến nền đen thành trắng; nó in nền thành xám đậm và chỉ tránh pha mực màu. Với mẫu nền tối, chọn “Pure Black and White” trong ứng dụng trình chiếu. Trong PowerPoint, tùy chọn nằm ở Color; Keynote có mục tương đương. Thang xám thường đủ cho slide nền sáng."
+        },
+        {
+          "t": "h2",
+          "x": "Tìm chế độ bản phát tay ở đâu"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint: File → Print → menu “Full Page Slides” → Handouts. Google Slides: File → Print preview rồi chọn bố cục trên thanh công cụ màu xám. Keynote: File → Print → “Grid” hoặc “Handout”; bỏ chọn “Print each stage of builds”. PDF: Acrobat Reader → Print → Multiple → Pages per sheet. Với Beamer, biên dịch lại bằng tùy chọn handout."
+        },
+        {
+          "t": "h2",
+          "x": "Quy trình in hoàn chỉnh"
+        },
+        {
+          "t": "p",
+          "x": "Chuẩn bị vào lớp, chọn ba slide mỗi tờ vì đây là bố cục có dòng ghi chú. Ôn tập thì chọn sáu. Nếu chỉ cần chữ, dùng chế độ Outline của PowerPoint; chế độ này bỏ khung, hình và nền, biến 60 slide thành vài trang. Nếu chỉ có PDF, trích xuất văn bản. Xem trước, bật in hai mặt theo cạnh dài và giới hạn phạm vi, chẳng hạn `40-60`."
+        },
+        {
+          "t": "h2",
+          "x": "Khi bạn chỉ cần phần chữ"
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "Trích xuất văn bản PDF khi bạn cần nội dung, không cần hình slide."
+        },
+        {
+          "t": "p",
+          "x": "Để dùng các dòng ghi chú, xem [cách ghi chú PDF để học](/blog/students/annotate-pdf-for-study). Bạn cũng có thể [in nhiều nội dung hơn trên một trang](/blog/save-ink/fit-more-on-a-page), [tiết kiệm mực khi in](/blog/save-ink/save-ink-when-printing) và [in bài báo học thuật](/blog/students/print-journal-articles)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Cách in 6 slide trên mỗi trang trong PowerPoint?",
+          "a": "Mở File → Print, mở menu “Full Page Slides” rồi chọn Handouts → 6 Slides Horizontal. Bố cục ngang đọc từ trái sang phải, giống cách bài trình chiếu được trình bày."
+        },
+        {
+          "q": "Vì sao PDF có số trang gấp ba số slide?",
+          "a": "Có thể mỗi bước hiệu ứng đã được xuất thành một trang. Hãy tìm tệp .pptx hoặc .key gốc, hoặc xóa trang trùng khỏi PDF. Không có thiết lập in nào gộp các bước đó lại."
+        },
+        {
+          "q": "Làm sao in slide kèm ghi chú của người thuyết trình?",
+          "a": "Trong cùng menu in, chọn “Notes Pages”. Mỗi tờ có một slide và ghi chú bên dưới nên sẽ tốn giấy. Chỉ nên dùng nếu giảng viên viết ghi chú đầy đủ."
+        },
+        {
+          "q": "Làm sao tránh in slide nền tối thành màu đen?",
+          "a": "Trong PowerPoint, chọn “Pure Black and White” trong menu Color để chuyển nền sang trắng mà vẫn giữ chữ và đường viền. Thang xám không đủ. Keynote có tùy chọn tương tự."
+        },
+        {
+          "q": "Bao nhiêu slide mỗi tờ vẫn đọc được?",
+          "a": "Sáu slide trên giấy A4 giữ chữ 24pt ở khoảng 6,5pt, có thể đọc tại bàn. Chín slide làm chữ còn khoảng 4pt, chỉ phù hợp để tìm slide chứ không để đọc."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何打印演示文稿，避免浪费 60 张纸",
+      "metaTitle": "如何省纸打印课堂演示文稿",
+      "metaDescription": "每张纸打印 3 或 6 页，删除动画重复页并节省纸张。免费、浏览器内私密使用，无需注册或上传。",
+      "keyword": "如何打印课堂演示文稿",
+      "secondaryKeywords": [
+        "PowerPoint 每页打印 6 张幻灯片",
+        "打印带备注的幻灯片",
+        "PowerPoint 讲义模式",
+        "PDF 每张纸打印多页",
+        "黑白打印幻灯片"
+      ],
+      "answer": "使用讲义布局，而不是每张纸只放一页：课堂记笔记时每张放 3 页，复习时放 6 页。先删除导出时由动画步骤生成的重复页。深色背景应选择纯黑白模式，并使用双面打印。每张放 6 页时，60 页演示文稿只需 5 张双面纸。",
+      "ctaLabel": "从 PDF 提取文本",
+      "body": [
+        {
+          "t": "p",
+          "x": "将 60 页演示文稿按整页打印会用掉 60 张纸；带动画的演示文稿导出后可能变成 180 页。两个设置能节省大部分纸张：先删除动画步骤造成的重复页，再选择合适的讲义布局。"
+        },
+        {
+          "t": "h2",
+          "x": "第一步：先检查页数"
+        },
+        {
+          "t": "p",
+          "x": "带动画的演示文稿导出为 PDF 时，每个动画步骤都可能成为一页。一张逐条显示四个项目符号的幻灯片，可能变成四张几乎相同的页面。打印布局无法合并这些页面；应修正源文件，或先删除 PDF 中的重复页。"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "如果课程提供原始 .pptx 或 .key 文件，请使用它。PowerPoint 会让每张幻灯片只打印一次。在 Keynote 中，取消勾选 “Print each stage of builds”。如果用 LaTeX Beamer 制作演示文稿，可用 `\\documentclass[handout]{beamer}` 重新编译，将所有叠加步骤合并为一个画面。如果只有 PDF，请删除重复页并保存清理后的副本。"
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "delete-pages",
+          "x": "打印或归档 PDF 前，先删除动画生成的重复页。"
+        },
+        {
+          "t": "h2",
+          "x": "第二步：选择合适的讲义布局"
+        },
+        {
+          "t": "p",
+          "x": "在 A4 纵向纸张和 12 毫米页边距下，16:9 幻灯片中的 24pt 正文字体按两列排版后约为 6.5pt。每张 3 页和 6 页时，幻灯片宽度相近；每张 6 页比 4 页再节省三分之一纸张。密集图表请选每张 2 页。每张 9 页只适合快速查找，不适合阅读。"
+        },
+        {
+          "t": "table",
+          "head": [
+            "布局",
+            {
+              "es": "Texto de 24 pt",
+              "pt-BR": "Texto de 24 pt",
+              "hi": "24pt टेक्स्ट",
+              "ar": "نص 24 نقطة",
+              "bn": "24pt লেখা",
+              "vi": "Chữ 24pt",
+              "zh-CN": "24pt 正文"
+            },
+            "适用场景"
+          ],
+          "rows": [
+            [
+              "1 por hoja",
+              "≈13pt",
+              "几乎不用；每页一张纸"
+            ],
+            [
+              "2 por hoja",
+              "≈13pt",
+              "需要仔细阅读的密集图表"
+            ],
+            [
+              "3 por hoja",
+              "≈6,5pt",
+              "课堂记笔记；带备注横线"
+            ],
+            [
+              "4 por hoja",
+              "≈6,5pt",
+              "少量批注"
+            ],
+            [
+              "6 por hoja",
+              "≈6,5pt",
+              "复习；60 页用 5 张双面纸"
+            ],
+            [
+              "9 por hoja",
+              "≈4pt",
+              "仅用于查找页面"
+            ],
+            [
+              "Esquema",
+              "Tamaño normal",
+              "只需要文字内容"
+            ]
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "每张 3 页的讲义布局容易被忽略。它是唯一会在幻灯片旁打印笔记横线的布局。已有笔记后复习，请改用每张 6 页。"
+        },
+        {
+          "t": "h2",
+          "x": "打印前设置颜色模式"
+        },
+        {
+          "t": "p",
+          "x": "灰度打印不会把黑色背景变成白色，而是将其打印成深灰色；它只是不再混用彩色墨水。深色模板应在幻灯片软件中选择 “Pure Black and White”。PowerPoint 的 Color 菜单中有此选项，Keynote 也有类似设置。浅色幻灯片通常使用灰度即可。"
+        },
+        {
+          "t": "warn",
+          "x": "灰度打印不会把黑色背景变成白色，而是将其打印成深灰色；它只是不再混用彩色墨水。深色模板应在幻灯片软件中选择 “Pure Black and White”。PowerPoint 的 Color 菜单中有此选项，Keynote 也有类似设置。浅色幻灯片通常使用灰度即可。"
+        },
+        {
+          "t": "h2",
+          "x": "讲义模式在哪里"
+        },
+        {
+          "t": "p",
+          "x": "PowerPoint：File → Print → “Full Page Slides” 下拉菜单 → Handouts。Google Slides：File → Print preview，然后在灰色工具栏选择布局。Keynote：File → Print → “Grid” 或 “Handout”，并取消 “Print each stage of builds”。PDF：Acrobat Reader → Print → Multiple → Pages per sheet。Beamer 可用 handout 选项重新编译。"
+        },
+        {
+          "t": "h2",
+          "x": "完整打印流程"
+        },
+        {
+          "t": "p",
+          "x": "即将上课时选每张 3 页，这是唯一带有记笔记横线的布局。复习时选 6 页。只需要文字时，使用 PowerPoint 的大纲模式；它会去掉边框、图片和背景，将 60 页压缩成几页。如果只有 PDF，就提取其中的文字。检查打印预览，启用长边翻页的双面打印，并限制页码范围，例如 `40-60`。"
+        },
+        {
+          "t": "h2",
+          "x": "只需要文字时"
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-text",
+          "x": "只需要文字内容而非幻灯片画面时，可从 PDF 提取文本。"
+        },
+        {
+          "t": "p",
+          "x": "想充分利用备注横线，可查看[如何为学习在 PDF 上做笔记](/blog/students/annotate-pdf-for-study)。还可了解[如何在一页上排更多内容](/blog/save-ink/fit-more-on-a-page)、[打印时节省墨水](/blog/save-ink/save-ink-when-printing)以及[如何打印学术文章](/blog/students/print-journal-articles)。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "如何在 PowerPoint 中每页打印 6 张幻灯片？",
+          "a": "进入 File → Print，打开 “Full Page Slides” 下拉菜单，选择 Handouts → 6 Slides Horizontal。横向布局从左到右阅读，与演示时的顺序相同。"
+        },
+        {
+          "q": "为什么幻灯片 PDF 的页数是幻灯片数量的三倍？",
+          "a": "导出时可能把每个动画步骤都生成了一页。请找原始 .pptx 或 .key 文件，或删除 PDF 中的重复页。打印设置无法把动画步骤重新合并。"
+        },
+        {
+          "q": "如何打印带演讲者备注的幻灯片？",
+          "a": "在同一个打印菜单中选择 “Notes Pages”。它会在每张纸上打印一页幻灯片，并在下方附上备注，因此比较费纸。只有讲师写了实质性备注时才建议使用。"
+        },
+        {
+          "q": "如何避免深色幻灯片打印成一片黑？",
+          "a": "在 PowerPoint 的 Color 菜单中选择 “Pure Black and White”，将背景转为白色，同时保留文字和轮廓。灰度模式不够。Keynote 也提供类似选项。"
+        },
+        {
+          "q": "每张纸放几页仍然清晰？",
+          "a": "A4 每张 6 页时，24pt 的幻灯片文字约为 6.5pt，在桌前阅读通常够清晰。每张 9 页会缩至约 4pt，只适合查找页面，不适合阅读。"
+        }
+      ]
+    }
+  }
+}
