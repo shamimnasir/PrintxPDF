@@ -24,13 +24,14 @@ English route's slug against localized guide topics:
 | Vietnamese (`vi`) | 110 | 115 |
 | Simplified Chinese (`zh-CN`) | 110 | 115 |
 
-Total remaining: **963 localized guide pages**. Nine completed drafts translate `merge-pdf-without-adobe-free`,
+Total remaining: **963 localized guide pages**. Ten completed drafts translate `merge-pdf-without-adobe-free`,
 `merge-pdf-files-in-order`, `merge-pdf-without-uploading-files`,
 `merge-pdf-files-on-phone-or-computer`,
 `merge-scanned-pdfs-into-one-searchable-file`,
 `split-pdf-for-email-attachment-limit`, `split-pdf-without-adobe-free`,
-`split-one-pdf-into-separate-files`, and `extract-specific-pages-from-pdf-free` into all seven
-locales. This is 63 of the 963 missing localized pages; 900 remain. More drafts should be added one English article at a time, with all seven locales
+`split-one-pdf-into-separate-files`, `extract-specific-pages-from-pdf-free`, and
+`split-pdf-on-phone-or-computer` into all seven locales. This is 70 of the 963 missing localized
+pages; 893 remain. More drafts should be added one English article at a time, with all seven locales
 represented before integration.
 
 ## Release checks
