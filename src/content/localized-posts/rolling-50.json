@@ -9432,6 +9432,152 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "image-to-pdf-receipts",
+        "slug": "image-to-pdf-receipts",
+        "title": "Cómo convertir fotos de recibos a PDF",
+        "metaTitle": "Cómo convertir fotos de recibos a PDF",
+        "metaDescription": "Convierte fotos de recibos JPG, PNG o WebP a PDF gratis en tu navegador. Sin registro ni subida; cada imagen ocupa una página.",
+        "keyword": "convertir fotos de recibos a PDF",
+        "secondaryKeywords": [
+          "convertir fotos de recibos a PDF",
+          "JPG a PDF gratis",
+          "PDF de recibos searchable"
+        ],
+        "answer": "Para convertir fotos de recibos a PDF, añade las imágenes a JPG a PDF, ordénalas y elige A4, Carta o tamaño de imagen. Cada foto ocupa una página y el PDF se crea localmente en el navegador; las imágenes no se suben. Revisa que los importes y fechas sean legibles antes de archivar o compartir el archivo.",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "Convertir imágenes a PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Para convertir fotos de recibos a PDF, añade las imágenes a JPG a PDF, ordénalas y elige A4, Carta o tamaño de imagen. Cada foto ocupa una página y el PDF se crea localmente en el navegador; las imágenes no se suben. Revisa que los importes y fechas sean legibles antes de archivar o compartir el archivo."
+          },
+          {
+            "t": "h2",
+            "x": "Prepara las fotos de los recibos"
+          },
+          {
+            "t": "p",
+            "x": "Pasa los recibos fotografiados a un PDF para guardarlos en un solo archivo, imprimirlos o enviarlos como un paquete ordenado. En [JPG a PDF](/tools/jpg-to-pdf), cada imagen se convierte en una página. La herramienta admite JPG, PNG y WebP, permite reordenar imágenes y crea el PDF dentro del navegador. No sube tus fotos."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo convertir fotos de recibos a PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Reúne las fotos",
+                "x": "Guarda las fotos JPG, PNG o WebP de los recibos y conserva los originales. Evita reflejos y sombras si vuelves a fotografiar un recibo."
+              },
+              {
+                "h": "Añádelas y ordénalas",
+                "x": "Abre [JPG a PDF](/tools/jpg-to-pdf), añade una o varias imágenes y usa las flechas para ordenarlas. Cada imagen será una página independiente."
+              },
+              {
+                "h": "Elige página y ajuste",
+                "x": "Selecciona A4, Carta o el tamaño de la imagen. “Ajustar” conserva la imagen completa; “Rellenar” puede recortar bordes."
+              },
+              {
+                "h": "Crea y revisa el PDF",
+                "x": "Ejecuta la conversión y abre el archivo. Comprueba que fechas, nombres, totales y números de recibo se lean en todas las páginas."
+              },
+              {
+                "h": "Añade búsqueda si la necesitas",
+                "x": "Si quieres buscar o copiar texto, procesa el PDF con [OCR PDF](/tools/ocr-pdf) y revisa el texto reconocido."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "jpg-to-pdf",
+            "x": "Convertir imágenes a PDF. Gratis, privado en tu pestaña y sin registro."
+          },
+          {
+            "t": "h2",
+            "x": "Comparación de opciones para guardar recibos"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Necesidad",
+              "Opción",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Guardar imágenes en orden",
+                "JPG a PDF",
+                "Un PDF con una página por foto."
+              ],
+              [
+                "Buscar texto impreso",
+                "OCR PDF",
+                "Añade texto reconocible sobre la imagen."
+              ],
+              [
+                "Imprimir recibos",
+                "Elegir A4 o Carta",
+                "Usa ajuste que no recorte bordes."
+              ],
+              [
+                "Comprobar datos",
+                "Revisar cada página",
+                "Evita pasar por alto importes borrosos."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Privacidad de las imágenes"
+          },
+          {
+            "t": "p",
+            "x": "Antes de añadir recibos, conserva las imágenes originales. Asegúrate de que cada foto muestre el recibo completo, sin reflejos, sombras fuertes ni texto borroso. Añade las imágenes a [JPG a PDF](/tools/jpg-to-pdf) y reordénalas con las flechas para que las páginas sigan una secuencia útil, por fecha o por proveedor."
+          },
+          {
+            "t": "h2",
+            "x": "Qué revisar en el PDF final"
+          },
+          {
+            "t": "p",
+            "x": "Elige A4 o Carta para imprimir, o “Mismo tamaño que la imagen” si solo vas a consultar el PDF en pantalla. “Ajustar dentro de márgenes” muestra la foto entera; “Rellenar página” puede cortar partes del recibo. Las fotos panorámicas giran la orientación de la página automáticamente. Elige un margen que no oculte texto impreso cerca del borde."
+          },
+          {
+            "t": "p",
+            "x": "Abre el PDF descargado y revisa cada recibo, no solo la primera página. Comprueba nombres, fechas, impuestos, subtotales, totales y números de referencia. Un PDF organiza las imágenes, pero no verifica que los datos sean correctos. Si un dato importante está borroso o cortado, vuelve a tomar la foto y genera una nueva copia."
+          },
+          {
+            "t": "h2",
+            "x": "Haz que los recibos se puedan buscar"
+          },
+          {
+            "t": "p",
+            "x": "Las imágenes JPG y PNG se incorporan sin cambiar sus píxeles. Si más adelante necesitas buscar importes o copiar palabras, usa [OCR PDF](/tools/ocr-pdf) para añadir una capa de texto. OCR puede interpretar mal impresión pequeña; verifica los resultados con la imagen original. Para reunir después varios PDF, usa [Combinar PDF](/tools/merge-pdf). La conversión de imágenes es local y gratis; el uso gratuito permite generar hasta 10 PDF en esta herramienta en este dispositivo."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cada recibo aparece en una página distinta?",
+            "a": "Sí. JPG a PDF coloca cada imagen en su propia página. Puedes añadir varias imágenes a un mismo documento y reordenarlas antes de crear el PDF."
+          },
+          {
+            "q": "¿La conversión de fotos de recibos es privada?",
+            "a": "Sí. JPG a PDF arma el archivo en el navegador y no sube las imágenes. Conserva tus archivos originales y revisa la información antes de compartir el PDF."
+          },
+          {
+            "q": "¿Puedo buscar importes dentro del PDF de recibos?",
+            "a": "Solo si el PDF contiene texto reconocible. Las fotos normalmente son imágenes, así que ejecuta OCR PDF para añadir una capa de texto y revisa los importes reconocidos contra cada recibo."
+          },
+          {
+            "q": "¿Qué tamaño de página debo elegir para imprimir recibos?",
+            "a": "A4 o Carta funcionan para imprimir. Usa “Ajustar dentro de márgenes” para mostrar el recibo completo; “Rellenar página” puede recortar los bordes. Para consulta digital, puedes usar el tamaño de imagen."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -18858,6 +19004,152 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "image-to-pdf-receipts",
+        "slug": "image-to-pdf-receipts",
+        "title": "Como converter fotos de recibos em PDF",
+        "metaTitle": "Como converter fotos de recibos em PDF",
+        "metaDescription": "Converta fotos de recibos JPG, PNG ou WebP em PDF grátis no navegador. Sem cadastro ou envio; cada imagem vira uma página.",
+        "keyword": "converter fotos de recibos em PDF",
+        "secondaryKeywords": [
+          "converter fotos de recibos em PDF",
+          "JPG para PDF grátis",
+          "PDF de recibos pesquisável"
+        ],
+        "answer": "Para converter fotos de recibos em PDF, adicione as imagens ao JPG para PDF, organize a ordem e escolha A4, Carta ou o tamanho da imagem. Cada foto vira uma página e o PDF é criado localmente no navegador; as imagens não são enviadas. Confira se valores e datas estão legíveis antes de arquivar ou compartilhar.",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "Converter imagens em PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Para converter fotos de recibos em PDF, adicione as imagens ao JPG para PDF, organize a ordem e escolha A4, Carta ou o tamanho da imagem. Cada foto vira uma página e o PDF é criado localmente no navegador; as imagens não são enviadas. Confira se valores e datas estão legíveis antes de arquivar ou compartilhar."
+          },
+          {
+            "t": "h2",
+            "x": "Prepare as fotos dos recibos"
+          },
+          {
+            "t": "p",
+            "x": "Transforme recibos fotografados em um PDF para guardar tudo em um arquivo, imprimir ou enviar um pacote organizado. Em [JPG para PDF](/tools/jpg-to-pdf), cada imagem vira uma página. A ferramenta aceita JPG, PNG e WebP, permite reordenar as imagens e cria o PDF dentro do navegador. As fotos não são enviadas."
+          },
+          {
+            "t": "h2",
+            "x": "Como converter fotos de recibos em PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Reúna as fotos",
+                "x": "Salve as fotos JPG, PNG ou WebP dos recibos e mantenha os originais. Evite reflexos e sombras se for fotografar de novo."
+              },
+              {
+                "h": "Adicione e organize",
+                "x": "Abra [JPG para PDF](/tools/jpg-to-pdf), adicione uma ou mais imagens e use as setas para reordenar. Cada imagem será uma página separada."
+              },
+              {
+                "h": "Escolha página e ajuste",
+                "x": "Selecione A4, Carta ou o tamanho da imagem. “Ajustar” mantém a imagem inteira; “Preencher” pode cortar as bordas."
+              },
+              {
+                "h": "Crie e confira o PDF",
+                "x": "Execute a conversão e abra o arquivo. Confira datas, nomes, totais e números dos recibos em todas as páginas."
+              },
+              {
+                "h": "Adicione busca se precisar",
+                "x": "Para pesquisar ou copiar texto, processe o PDF no [OCR PDF](/tools/ocr-pdf) e confira o texto reconhecido."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "jpg-to-pdf",
+            "x": "Converter imagens em PDF. Grátis, privado na sua aba e sem cadastro."
+          },
+          {
+            "t": "h2",
+            "x": "Comparação de opções para guardar recibos"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Necessidade",
+              "Opção",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Guardar imagens em ordem",
+                "JPG para PDF",
+                "Um PDF com uma página por foto."
+              ],
+              [
+                "Pesquisar texto impresso",
+                "OCR PDF",
+                "Adiciona texto reconhecível sobre a imagem."
+              ],
+              [
+                "Imprimir recibos",
+                "Escolher A4 ou Carta",
+                "Use ajuste que não corte as bordas."
+              ],
+              [
+                "Conferir dados",
+                "Revisar cada página",
+                "Evita deixar passar valores borrados."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Privacidade das imagens"
+          },
+          {
+            "t": "p",
+            "x": "Antes de adicionar os recibos, guarde as imagens originais. Cada foto deve mostrar o recibo inteiro, sem reflexos, sombras fortes ou texto borrado. Adicione as imagens em [JPG para PDF](/tools/jpg-to-pdf) e use as setas para colocá-las em uma sequência útil, por data ou fornecedor."
+          },
+          {
+            "t": "h2",
+            "x": "O que conferir no PDF final"
+          },
+          {
+            "t": "p",
+            "x": "Escolha A4 ou Carta para imprimir, ou “Mesmo tamanho da imagem” se for consultar o PDF na tela. “Ajustar dentro das margens” mostra a foto completa; “Preencher página” pode cortar partes do recibo. Fotos em paisagem viram a orientação da página automaticamente. Escolha uma margem que não esconda texto perto da borda."
+          },
+          {
+            "t": "p",
+            "x": "Abra o PDF baixado e confira cada recibo, não só a primeira página. Verifique nomes, datas, impostos, subtotais, totais e números de referência. O PDF organiza as imagens, mas não confirma que os dados estejam corretos. Se algo importante estiver borrado ou cortado, tire outra foto e crie uma nova cópia."
+          },
+          {
+            "t": "h2",
+            "x": "Deixe os recibos pesquisáveis"
+          },
+          {
+            "t": "p",
+            "x": "Imagens JPG e PNG entram sem alterar seus pixels. Se depois precisar pesquisar valores ou copiar palavras, use [OCR PDF](/tools/ocr-pdf) para adicionar uma camada de texto. O OCR pode errar em letras pequenas; compare o resultado com a imagem original. Para juntar vários PDFs, use [Mesclar PDF](/tools/merge-pdf). A conversão é local e grátis; o uso gratuito permite gerar até 10 PDFs nessa ferramenta neste dispositivo."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Cada recibo fica em uma página diferente?",
+            "a": "Sim. JPG para PDF coloca cada imagem em sua própria página. Você pode adicionar várias imagens ao mesmo documento e reordená-las antes de criar o PDF."
+          },
+          {
+            "q": "A conversão de fotos de recibos é privada?",
+            "a": "Sim. JPG para PDF monta o arquivo no navegador e não envia as imagens. Mantenha os originais e confira as informações antes de compartilhar o PDF."
+          },
+          {
+            "q": "Posso pesquisar valores dentro do PDF de recibos?",
+            "a": "Somente se o PDF tiver texto reconhecível. Fotos normalmente são imagens; use OCR PDF para adicionar uma camada de texto e confira os valores reconhecidos em cada recibo."
+          },
+          {
+            "q": "Qual tamanho de página devo escolher para imprimir recibos?",
+            "a": "A4 ou Carta são adequados para impressão. Use “Ajustar dentro das margens” para mostrar o recibo inteiro; “Preencher página” pode cortar as bordas. Para consulta digital, escolha o tamanho da imagem."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -28280,6 +28572,152 @@
           {
             "q": "क्या PDF के भीतर बांग्ला, अरबी या चीनी खोज सकता हूँ?",
             "a": "TXT में पहचाना हुआ पूरा टेक्स्ट होता है, लेकिन PDF की छिपी लेयर का मानक फ़ॉन्ट बांग्ला, अरबी और चीनी जैसी लिपियों की खोज सीमित कर सकता है। इन भाषाओं के लिए TXT इस्तेमाल करें।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "image-to-pdf-receipts",
+        "slug": "image-to-pdf-receipts",
+        "title": "रसीद की तस्वीरों को PDF में कैसे बदलें",
+        "metaTitle": "रसीद की तस्वीरों को PDF में कैसे बदलें",
+        "metaDescription": "JPG, PNG या WebP रसीद फ़ोटो को ब्राउज़र में मुफ्त PDF करें। साइनअप या अपलोड नहीं; हर छवि एक पेज बनेगी।",
+        "keyword": "रसीद की तस्वीरें PDF में बदलें",
+        "secondaryKeywords": [
+          "रसीद की तस्वीरें PDF में बदलें",
+          "JPG से PDF मुफ्त",
+          "रसीद का searchable PDF"
+        ],
+        "answer": "रसीद की तस्वीरों को PDF बनाने के लिए JPG to PDF में छवियाँ जोड़ें, क्रम लगाएँ और A4, Letter या छवि का आकार चुनें। हर फ़ोटो अलग पेज बनेगी और PDF ब्राउज़र में स्थानीय रूप से बनेगा; तस्वीरें अपलोड नहीं होतीं। संग्रह या साझा करने से पहले रकम और तारीख पढ़ने योग्य होने की जाँच करें।",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "छवियों को PDF में बदलें",
+        "body": [
+          {
+            "t": "p",
+            "x": "रसीद की तस्वीरों को PDF बनाने के लिए JPG to PDF में छवियाँ जोड़ें, क्रम लगाएँ और A4, Letter या छवि का आकार चुनें। हर फ़ोटो अलग पेज बनेगी और PDF ब्राउज़र में स्थानीय रूप से बनेगा; तस्वीरें अपलोड नहीं होतीं। संग्रह या साझा करने से पहले रकम और तारीख पढ़ने योग्य होने की जाँच करें।"
+          },
+          {
+            "t": "h2",
+            "x": "रसीद की फ़ोटो तैयार करें"
+          },
+          {
+            "t": "p",
+            "x": "फ़ोटो वाली रसीदों को एक PDF में रखें ताकि उन्हें संग्रहित, प्रिंट या क्रमबद्ध पैकेट के रूप में भेजना आसान हो। [JPG to PDF](/tools/jpg-to-pdf) में हर छवि अलग पेज बनती है। टूल JPG, PNG और WebP स्वीकार करता है, क्रम बदलने देता है और PDF ब्राउज़र के भीतर बनाता है। आपकी तस्वीरें अपलोड नहीं होतीं।"
+          },
+          {
+            "t": "h2",
+            "x": "रसीद फ़ोटो को PDF में कैसे बदलें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "तस्वीरें तैयार करें",
+                "x": "रसीदों की JPG, PNG या WebP तस्वीरें रखें और मूल फ़ाइलें सुरक्षित करें। दोबारा फ़ोटो लेते समय चमक और छाया से बचें।"
+              },
+              {
+                "h": "जोड़ें और क्रम लगाएँ",
+                "x": "[JPG to PDF](/tools/jpg-to-pdf) खोलें, एक या अधिक छवियाँ जोड़ें और तीरों से क्रम बदलें। हर छवि अलग पेज बनेगी।"
+              },
+              {
+                "h": "पेज आकार और फिट चुनें",
+                "x": "A4, Letter या छवि का आकार चुनें। “Fit” पूरी छवि रखता है; “Fill” किनारे काट सकता है।"
+              },
+              {
+                "h": "PDF बनाएँ और जाँचें",
+                "x": "रूपांतरण चलाकर फ़ाइल खोलें। हर पेज पर तारीख, नाम, कुल रकम और रसीद नंबर पढ़ें।"
+              },
+              {
+                "h": "ज़रूरत हो तो खोज जोड़ें",
+                "x": "टेक्स्ट खोजने या कॉपी करने के लिए PDF को [OCR PDF](/tools/ocr-pdf) में चलाएँ और पहचाना टेक्स्ट जाँचें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "jpg-to-pdf",
+            "x": "छवियों को PDF में बदलें. मुफ्त, आपके टैब में निजी और बिना साइनअप।"
+          },
+          {
+            "t": "h2",
+            "x": "रसीदें रखने के विकल्पों की तुलना"
+          },
+          {
+            "t": "table",
+            "head": [
+              "需求",
+              "方式",
+              "结果"
+            ],
+            "rows": [
+              [
+                "चित्र क्रम से रखें",
+                "JPG to PDF",
+                "हर फ़ोटो का एक पेज वाला PDF।"
+              ],
+              [
+                "छपा टेक्स्ट खोजें",
+                "OCR PDF",
+                "छवि के ऊपर पहचानने योग्य टेक्स्ट।"
+              ],
+              [
+                "रसीद प्रिंट करें",
+                "A4 या Letter चुनें",
+                "ऐसा फिट लें जो किनारे न काटे।"
+              ],
+              [
+                "डेटा जाँचें",
+                "हर पेज देखें",
+                "धुंधली रकम छूटने से बचें।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "तस्वीरों की गोपनीयता"
+          },
+          {
+            "t": "p",
+            "x": "रसीदें जोड़ने से पहले मूल तस्वीरें सहेजें। हर फ़ोटो में पूरी रसीद होनी चाहिए और उस पर तेज़ चमक, गहरी छाया या धुंधला टेक्स्ट नहीं होना चाहिए। तस्वीरें [JPG to PDF](/tools/jpg-to-pdf) में जोड़ें और तीरों से तारीख या विक्रेता के अनुसार उपयोगी क्रम बनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "अंतिम PDF में क्या जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "प्रिंट के लिए A4 या Letter चुनें; स्क्रीन पर देखने के लिए “Same as image” चुन सकते हैं। “Fit inside margins” पूरी तस्वीर दिखाता है; “Fill page” रसीद के किनारे काट सकता है। चौड़ी तस्वीर पर पेज दिशा अपने-आप घूमती है। ऐसा मार्जिन रखें जिससे किनारे पर छपा टेक्स्ट न छिपे।"
+          },
+          {
+            "t": "p",
+            "x": "डाउनलोड की गई PDF खोलकर हर रसीद जाँचें, सिर्फ पहला पेज नहीं। नाम, तारीख, टैक्स, उप-योग, कुल रकम और संदर्भ नंबर देखें। PDF तस्वीरों को व्यवस्थित करता है, डेटा की सच्चाई प्रमाणित नहीं करता। कोई ज़रूरी जानकारी धुंधली या कटी हो तो नई फ़ोटो लेकर नया PDF बनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "रसीदों में खोजने की सुविधा जोड़ें"
+          },
+          {
+            "t": "p",
+            "x": "JPG और PNG तस्वीरें अपने पिक्सेल बदले बिना PDF में जाती हैं। बाद में रकम खोजना या शब्द कॉपी करना हो तो [OCR PDF](/tools/ocr-pdf) से टेक्स्ट लेयर जोड़ें। छोटे अक्षर OCR में गलत पढ़े जा सकते हैं, इसलिए मूल तस्वीर से मिलाएँ। कई PDF जोड़ने के लिए [Merge PDF](/tools/merge-pdf) इस्तेमाल करें। रूपांतरण स्थानीय और मुफ्त है; इस डिवाइस पर इस टूल से मुफ्त में 10 PDF तक बना सकते हैं।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या हर रसीद अलग PDF पेज बनेगी?",
+            "a": "हाँ। JPG to PDF हर छवि को अलग पेज पर रखता है। एक ही PDF में कई तस्वीरें जोड़कर बनाने से पहले उनका क्रम बदल सकते हैं।"
+          },
+          {
+            "q": "क्या रसीद फ़ोटो का रूपांतरण निजी है?",
+            "a": "हाँ। JPG to PDF फ़ाइल ब्राउज़र में बनाता है और तस्वीरें अपलोड नहीं करता। मूल फ़ोटो रखें और PDF साझा करने से पहले जानकारी जाँचें।"
+          },
+          {
+            "q": "क्या रसीद PDF में रकम खोज सकता हूँ?",
+            "a": "तभी जब PDF में पहचाना जाने वाला टेक्स्ट हो। तस्वीरें आम तौर पर केवल छवियाँ होती हैं; OCR PDF से टेक्स्ट लेयर जोड़ें और रकम की जाँच मूल रसीद से करें।"
+          },
+          {
+            "q": "रसीद प्रिंट करने के लिए कौन-सा पेज आकार चुनूँ?",
+            "a": "प्रिंट के लिए A4 या Letter चुनें। पूरी रसीद दिखाने के लिए “Fit inside margins” लें; “Fill page” किनारे काट सकता है। स्क्रीन पर देखने के लिए छवि का आकार चुन सकते हैं।"
           }
         ],
         "published": "2026-11-16",
@@ -37715,6 +38153,152 @@
           {
             "q": "هل يمكن البحث بالعربية أو البنغالية أو الصينية داخل PDF؟",
             "a": "يحتوي TXT على النص المتعرف عليه كاملًا، لكن الخط القياسي للطبقة المخفية في PDF يحد البحث في بعض الكتابات، ومنها العربية والبنغالية والصينية. استخدم TXT للبحث في هذه اللغات."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "image-to-pdf-receipts",
+        "slug": "image-to-pdf-receipts",
+        "title": "كيفية تحويل صور الإيصالات إلى PDF",
+        "metaTitle": "كيفية تحويل صور الإيصالات إلى PDF",
+        "metaDescription": "حوّل صور الإيصالات JPG أو PNG أو WebP إلى PDF مجانًا في المتصفح. بلا تسجيل أو رفع؛ كل صورة تصبح صفحة.",
+        "keyword": "تحويل صور الإيصالات إلى PDF",
+        "secondaryKeywords": [
+          "تحويل صور الإيصالات إلى PDF",
+          "JPG إلى PDF مجاني",
+          "PDF إيصالات قابل للبحث"
+        ],
+        "answer": "لتحويل صور الإيصالات إلى PDF، أضف الصور إلى JPG إلى PDF ورتبها واختر A4 أو Letter أو حجم الصورة. تصبح كل صورة صفحة، ويُنشأ PDF محليًا في المتصفح دون رفع الصور. تحقق من وضوح المبالغ والتواريخ قبل أرشفة الملف أو مشاركته.",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "تحويل الصور إلى PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "لتحويل صور الإيصالات إلى PDF، أضف الصور إلى JPG إلى PDF ورتبها واختر A4 أو Letter أو حجم الصورة. تصبح كل صورة صفحة، ويُنشأ PDF محليًا في المتصفح دون رفع الصور. تحقق من وضوح المبالغ والتواريخ قبل أرشفة الملف أو مشاركته."
+          },
+          {
+            "t": "h2",
+            "x": "جهّز صور الإيصالات"
+          },
+          {
+            "t": "p",
+            "x": "اجمع الإيصالات المصورة في PDF واحد ليسهل حفظها أو طباعتها أو إرسالها كحزمة مرتبة. في [JPG إلى PDF](/tools/jpg-to-pdf)، تتحول كل صورة إلى صفحة. تقبل الأداة JPG وPNG وWebP، وتتيح تغيير الترتيب، وتنشئ PDF داخل المتصفح. لا تُرفع الصور."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية تحويل صور الإيصالات إلى PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "جهّز الصور",
+                "x": "احتفظ بصور الإيصالات بصيغ JPG أو PNG أو WebP وبالنسخ الأصلية. تجنب الوهج والظلال إذا التقطت الصور مجددًا."
+              },
+              {
+                "h": "أضف الصور ورتبها",
+                "x": "افتح [JPG إلى PDF](/tools/jpg-to-pdf)، وأضف صورة واحدة أو أكثر واستخدم الأسهم لترتيب الصفحات. تصبح كل صورة صفحة مستقلة."
+              },
+              {
+                "h": "اختر حجم الصفحة والملاءمة",
+                "x": "حدد A4 أو Letter أو حجم الصورة. خيار الملاءمة يعرض الصورة كاملة؛ وخيار ملء الصفحة قد يقص الحواف."
+              },
+              {
+                "h": "أنشئ PDF وراجعه",
+                "x": "شغّل التحويل وافتح الملف. تحقق من التواريخ والأسماء والإجماليات وأرقام الإيصالات في كل صفحة."
+              },
+              {
+                "h": "أضف البحث عند الحاجة",
+                "x": "للبحث عن النص أو نسخه، عالج PDF باستخدام [OCR PDF](/tools/ocr-pdf) وراجع النص المستخرج."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "jpg-to-pdf",
+            "x": "تحويل الصور إلى PDF. مجانًا وبخصوصية داخل علامة التبويب ودون تسجيل."
+          },
+          {
+            "t": "h2",
+            "x": "مقارنة خيارات حفظ الإيصالات"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الحاجة",
+              "الخيار",
+              "النتيجة"
+            ],
+            "rows": [
+              [
+                "ترتيب الصور",
+                "JPG إلى PDF",
+                "ملف PDF بصفحة لكل صورة."
+              ],
+              [
+                "البحث عن نص مطبوع",
+                "OCR PDF",
+                "يضيف نصًا قابلًا للتعرف فوق الصورة."
+              ],
+              [
+                "طباعة الإيصالات",
+                "اختر A4 أو Letter",
+                "استخدم ملاءمة لا تقص الحواف."
+              ],
+              [
+                "مراجعة البيانات",
+                "افحص كل صفحة",
+                "تجنب تفويت المبالغ الضبابية."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "خصوصية الصور"
+          },
+          {
+            "t": "p",
+            "x": "قبل إضافة الإيصالات، احتفظ بالصور الأصلية. احرص على ظهور الإيصال كاملًا دون وهج أو ظلال قوية أو نص ضبابي. أضف الصور إلى [JPG إلى PDF](/tools/jpg-to-pdf) ورتبها بالأسهم في تسلسل مفيد حسب التاريخ أو المورد."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي تراجعه في PDF النهائي"
+          },
+          {
+            "t": "p",
+            "x": "اختر A4 أو Letter للطباعة، أو «بحجم الصورة» لمشاهدة PDF على الشاشة. يعرض خيار «الملاءمة داخل الهوامش» الصورة كاملة، بينما قد يقص خيار «ملء الصفحة» أجزاء من الإيصال. تدور الصفحة تلقائيًا مع الصور الأفقية. اضبط هامشًا لا يخفي النص المطبوع قرب الحافة."
+          },
+          {
+            "t": "p",
+            "x": "افتح PDF الذي نزلته وراجع كل إيصال، لا الصفحة الأولى فقط. تحقق من الأسماء والتواريخ والضرائب والمجاميع والأرقام المرجعية. ينظم PDF الصور لكنه لا يثبت صحة البيانات. إذا كان حقل مهم ضبابيًا أو مقصوصًا، التقط صورة جديدة وأنشئ نسخة جديدة."
+          },
+          {
+            "t": "h2",
+            "x": "اجعل الإيصالات قابلة للبحث"
+          },
+          {
+            "t": "p",
+            "x": "تُضمّن صور JPG وPNG كما هي دون تغيير بكسلاتها. إذا احتجت لاحقًا إلى البحث عن المبالغ أو نسخ الكلمات، استخدم [OCR PDF](/tools/ocr-pdf) لإضافة طبقة نص. قد يخطئ OCR في الطباعة الصغيرة؛ فقارن الناتج بالصورة. لضم ملفات PDF أخرى استخدم [دمج PDF](/tools/merge-pdf). التحويل محلي ومجاني؛ ويسمح الاستخدام المجاني بإنشاء 10 ملفات PDF كحد أقصى في هذه الأداة على هذا الجهاز."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يظهر كل إيصال في صفحة PDF منفصلة؟",
+            "a": "نعم. تضع JPG إلى PDF كل صورة في صفحة مستقلة. أضف صورًا عدة إلى الملف نفسه ورتبها قبل إنشاء PDF."
+          },
+          {
+            "q": "هل تحويل صور الإيصالات خاص؟",
+            "a": "نعم. تنشئ JPG إلى PDF الملف في المتصفح ولا ترفع الصور. احتفظ بالأصول وراجع المعلومات قبل مشاركة PDF."
+          },
+          {
+            "q": "هل يمكن البحث عن المبالغ داخل PDF الإيصالات؟",
+            "a": "فقط إذا احتوى PDF على نص قابل للتعرف. الصور عادة صور فقط؛ شغّل OCR PDF لإضافة طبقة نص ثم قارن المبالغ المستخرجة بالإيصالات."
+          },
+          {
+            "q": "ما حجم الصفحة المناسب لطباعة الإيصالات؟",
+            "a": "استخدم A4 أو Letter للطباعة. اختر «الملاءمة داخل الهوامش» لإظهار الإيصال كاملًا؛ فقد يقص خيار «ملء الصفحة» الحواف. للعرض الرقمي، اختر حجم الصورة."
           }
         ],
         "published": "2026-11-16",
@@ -47157,6 +47741,152 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "image-to-pdf-receipts",
+        "slug": "image-to-pdf-receipts",
+        "title": "রসিদের ছবি PDF-এ রূপান্তর করবেন যেভাবে",
+        "metaTitle": "রসিদের ছবি PDF-এ রূপান্তর করবেন যেভাবে",
+        "metaDescription": "ব্রাউজারে বিনামূল্যে JPG, PNG বা WebP রসিদের ছবি PDF করুন। সাইনআপ বা আপলোড নেই; প্রতি ছবি একটি পৃষ্ঠা হবে।",
+        "keyword": "রসিদের ছবি PDF-এ রূপান্তর",
+        "secondaryKeywords": [
+          "রসিদের ছবি PDF-এ রূপান্তর",
+          "JPG থেকে PDF বিনামূল্যে",
+          "রসিদ searchable PDF"
+        ],
+        "answer": "রসিদের ছবি PDF করতে JPG to PDF-এ ছবিগুলো যোগ করুন, ক্রম সাজান এবং A4, Letter বা ছবির মাপ বাছুন। প্রতিটি ছবি এক পৃষ্ঠা হবে এবং PDF ব্রাউজারে স্থানীয়ভাবে তৈরি হবে; ছবি আপলোড হয় না। সংরক্ষণ বা শেয়ারের আগে অঙ্ক ও তারিখ পড়া যায় কি না দেখুন।",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "ছবি PDF করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "রসিদের ছবি PDF করতে JPG to PDF-এ ছবিগুলো যোগ করুন, ক্রম সাজান এবং A4, Letter বা ছবির মাপ বাছুন। প্রতিটি ছবি এক পৃষ্ঠা হবে এবং PDF ব্রাউজারে স্থানীয়ভাবে তৈরি হবে; ছবি আপলোড হয় না। সংরক্ষণ বা শেয়ারের আগে অঙ্ক ও তারিখ পড়া যায় কি না দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "রসিদের ছবি প্রস্তুত করুন"
+          },
+          {
+            "t": "p",
+            "x": "ছবি তোলা রসিদ এক PDF-এ রাখলে সংরক্ষণ, প্রিন্ট বা গোছানো প্যাকেট হিসেবে পাঠানো সহজ হয়। [JPG to PDF](/tools/jpg-to-pdf)-এ প্রতিটি ছবি একটি পৃষ্ঠা হয়। টুলটি JPG, PNG ও WebP নেয়, ছবির ক্রম বদলাতে দেয় এবং ব্রাউজারেই PDF তৈরি করে। ছবি আপলোড হয় না।"
+          },
+          {
+            "t": "h2",
+            "x": "রসিদের ছবি PDF করার উপায়"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "ছবি প্রস্তুত করুন",
+                "x": "রসিদের JPG, PNG বা WebP ছবি রাখুন এবং মূল ফাইল সংরক্ষণ করুন। নতুন ছবি তুললে আলো ঝলক বা ছায়া এড়ান।"
+              },
+              {
+                "h": "যোগ করে সাজান",
+                "x": "[JPG to PDF](/tools/jpg-to-pdf) খুলে এক বা একাধিক ছবি দিন এবং তীর দিয়ে ক্রম ঠিক করুন। প্রতিটি ছবি আলাদা পৃষ্ঠা হবে।"
+              },
+              {
+                "h": "পৃষ্ঠা মাপ ও ফিট বাছুন",
+                "x": "A4, Letter বা ছবির মাপ নিন। “Fit” পুরো ছবি রাখে; “Fill” কিনারা কাটতে পারে।"
+              },
+              {
+                "h": "PDF বানিয়ে দেখুন",
+                "x": "রূপান্তর চালিয়ে ফাইল খুলুন। প্রতিটি পাতায় তারিখ, নাম, মোট ও রসিদ নম্বর যাচাই করুন।"
+              },
+              {
+                "h": "প্রয়োজন হলে খোঁজা যোগ করুন",
+                "x": "লেখা খুঁজতে বা কপি করতে [OCR PDF](/tools/ocr-pdf) চালান এবং চেনা লেখা যাচাই করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "jpg-to-pdf",
+            "x": "ছবি PDF করুন. বিনামূল্যে, ট্যাবে ব্যক্তিগত ও সাইনআপ ছাড়া।"
+          },
+          {
+            "t": "h2",
+            "x": "রসিদ রাখার পদ্ধতির তুলনা"
+          },
+          {
+            "t": "table",
+            "head": [
+              "প্রয়োজন",
+              "উপায়",
+              "ফল"
+            ],
+            "rows": [
+              [
+                "ছবি সাজিয়ে রাখা",
+                "JPG to PDF",
+                "প্রতি ছবিতে এক পৃষ্ঠার PDF।"
+              ],
+              [
+                "ছাপা লেখা খোঁজা",
+                "OCR PDF",
+                "ছবির ওপর শনাক্তযোগ্য লেখা।"
+              ],
+              [
+                "রসিদ প্রিন্ট",
+                "A4 বা Letter নিন",
+                "প্রান্ত না কাটে এমন ফিট নিন।"
+              ],
+              [
+                "তথ্য দেখা",
+                "প্রতি পৃষ্ঠা যাচাই",
+                "ঝাপসা অঙ্ক বাদ পড়া এড়ান।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ছবির গোপনীয়তা"
+          },
+          {
+            "t": "p",
+            "x": "রসিদ যোগের আগে মূল ছবিগুলো রেখে দিন। প্রতিটি ছবিতে পুরো রসিদ দেখা চাই; ঝলক, গাঢ় ছায়া বা ঝাপসা লেখা যেন না থাকে। [JPG to PDF](/tools/jpg-to-pdf)-এ ছবি যোগ করে তীর দিয়ে তারিখ বা বিক্রেতা অনুযায়ী দরকারি ক্রমে সাজান।"
+          },
+          {
+            "t": "h2",
+            "x": "চূড়ান্ত PDF-এ কী দেখবেন"
+          },
+          {
+            "t": "p",
+            "x": "প্রিন্টের জন্য A4 বা Letter নিন; স্ক্রিনে দেখতে “Same as image” বেছে নিতে পারেন। “Fit inside margins” পুরো ছবি দেখায়; “Fill page” রসিদের প্রান্ত কাটতে পারে। চওড়া ছবিতে পৃষ্ঠার দিক নিজে ঘুরে যায়। এমন মার্জিন দিন যাতে কিনারার লেখা ঢাকা না পড়ে।"
+          },
+          {
+            "t": "p",
+            "x": "ডাউনলোড করা PDF খুলে সব রসিদ দেখুন, শুধু প্রথম পৃষ্ঠা নয়। নাম, তারিখ, কর, উপমোট, মোট ও রেফারেন্স নম্বর দেখুন। PDF ছবি গুছিয়ে দেয়, তথ্যের সত্যতা যাচাই করে না। গুরুত্বপূর্ণ কিছু ঝাপসা বা কাটা থাকলে নতুন ছবি তুলে নতুন PDF বানান।"
+          },
+          {
+            "t": "h2",
+            "x": "রসিদে খোঁজার সুবিধা যোগ করুন"
+          },
+          {
+            "t": "p",
+            "x": "JPG ও PNG ছবির পিক্সেল না বদলেই PDF-এ যুক্ত হয়। পরে অঙ্ক খোঁজা বা শব্দ কপি দরকার হলে [OCR PDF](/tools/ocr-pdf) দিয়ে টেক্সট স্তর যোগ করুন। ছোট ছাপ OCR ভুল পড়তে পারে; মূল ছবির সঙ্গে মিলিয়ে নিন। একাধিক PDF জুড়তে [Merge PDF](/tools/merge-pdf) নিন। রূপান্তর স্থানীয় ও বিনামূল্যে; এই ডিভাইসে এই টুলে সর্বোচ্চ ১০টি PDF তৈরি করা যায়।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "প্রতিটি রসিদ কি আলাদা PDF পৃষ্ঠা হবে?",
+            "a": "হ্যাঁ। JPG to PDF প্রতিটি ছবিকে আলাদা পাতায় রাখে। একই PDF-এ একাধিক ছবি যোগ করে তৈরির আগে ক্রম সাজাতে পারেন।"
+          },
+          {
+            "q": "রসিদের ছবি PDF করা কি ব্যক্তিগত?",
+            "a": "হ্যাঁ। JPG to PDF ব্রাউজারে ফাইল তৈরি করে এবং ছবি আপলোড করে না। মূল ছবি রাখুন এবং PDF ভাগের আগে তথ্য যাচাই করুন।"
+          },
+          {
+            "q": "রসিদের PDF-এ অঙ্ক খুঁজতে পারি?",
+            "a": "PDF-এ শনাক্তযোগ্য লেখা থাকলে পারেন। ছবি সাধারণত শুধু ছবি; OCR PDF চালিয়ে টেক্সট স্তর যোগ করুন এবং চেনা অঙ্ক মূল রসিদের সঙ্গে মিলিয়ে নিন।"
+          },
+          {
+            "q": "রসিদ প্রিন্টে কোন পৃষ্ঠা মাপ নেব?",
+            "a": "প্রিন্টে A4 বা Letter নিন। পুরো রসিদ দেখাতে “Fit inside margins” বেছে নিন; “Fill page” কিনারা কাটতে পারে। ডিজিটাল দেখার জন্য ছবির মাপ নিন।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -56579,6 +57309,152 @@
           {
             "q": "Có thể tìm tiếng Bengali, Ả Rập hoặc Trung trong PDF không?",
             "a": "Tệp TXT có toàn bộ chữ được nhận dạng, nhưng phông chuẩn của lớp ẩn trong PDF hạn chế tìm kiếm ở một số hệ chữ như Bengali, Ả Rập và Trung. Hãy tìm trong tệp TXT."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "image-to-pdf-receipts",
+        "slug": "image-to-pdf-receipts",
+        "title": "Cách chuyển ảnh hóa đơn thành PDF",
+        "metaTitle": "Cách chuyển ảnh hóa đơn thành PDF",
+        "metaDescription": "Chuyển ảnh hóa đơn JPG, PNG hoặc WebP sang PDF miễn phí trong trình duyệt. Không đăng ký, không tải lên; mỗi ảnh thành một trang.",
+        "keyword": "chuyển ảnh hóa đơn thành PDF",
+        "secondaryKeywords": [
+          "chuyển ảnh hóa đơn thành PDF",
+          "JPG sang PDF miễn phí",
+          "PDF hóa đơn có thể tìm kiếm"
+        ],
+        "answer": "Để chuyển ảnh hóa đơn thành PDF, thêm ảnh vào JPG sang PDF, sắp xếp thứ tự rồi chọn A4, Letter hoặc kích thước ảnh. Mỗi ảnh thành một trang và PDF được tạo cục bộ trong trình duyệt; ảnh không bị tải lên. Hãy kiểm tra số tiền và ngày tháng có dễ đọc trước khi lưu trữ hoặc chia sẻ.",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "Chuyển ảnh sang PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Để chuyển ảnh hóa đơn thành PDF, thêm ảnh vào JPG sang PDF, sắp xếp thứ tự rồi chọn A4, Letter hoặc kích thước ảnh. Mỗi ảnh thành một trang và PDF được tạo cục bộ trong trình duyệt; ảnh không bị tải lên. Hãy kiểm tra số tiền và ngày tháng có dễ đọc trước khi lưu trữ hoặc chia sẻ."
+          },
+          {
+            "t": "h2",
+            "x": "Chuẩn bị ảnh hóa đơn"
+          },
+          {
+            "t": "p",
+            "x": "Gom hóa đơn đã chụp vào một PDF để lưu trữ, in hoặc gửi thành bộ tài liệu có thứ tự. Trong [JPG sang PDF](/tools/jpg-to-pdf), mỗi ảnh trở thành một trang. Công cụ nhận JPG, PNG và WebP, cho phép sắp xếp ảnh và tạo PDF ngay trong trình duyệt. Ảnh không được tải lên."
+          },
+          {
+            "t": "h2",
+            "x": "Cách chuyển ảnh hóa đơn thành PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Chuẩn bị ảnh",
+                "x": "Giữ ảnh hóa đơn JPG, PNG hoặc WebP và lưu bản gốc. Tránh ánh sáng chói và bóng đổ nếu chụp lại."
+              },
+              {
+                "h": "Thêm và sắp xếp",
+                "x": "Mở [JPG sang PDF](/tools/jpg-to-pdf), thêm một hoặc nhiều ảnh rồi dùng mũi tên để đổi thứ tự. Mỗi ảnh thành một trang riêng."
+              },
+              {
+                "h": "Chọn cỡ trang và cách căn",
+                "x": "Chọn A4, Letter hoặc kích thước ảnh. “Fit” giữ trọn ảnh; “Fill” có thể cắt mép."
+              },
+              {
+                "h": "Tạo và kiểm tra PDF",
+                "x": "Chạy chuyển đổi rồi mở tệp. Kiểm tra ngày, tên, tổng tiền và số hóa đơn trên từng trang."
+              },
+              {
+                "h": "Thêm khả năng tìm kiếm nếu cần",
+                "x": "Muốn tìm hoặc sao chép chữ, chạy [OCR PDF](/tools/ocr-pdf) rồi kiểm tra văn bản nhận dạng."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "jpg-to-pdf",
+            "x": "Chuyển ảnh sang PDF. Miễn phí, riêng tư trong tab và không cần đăng ký."
+          },
+          {
+            "t": "h2",
+            "x": "So sánh cách lưu hóa đơn"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Nhu cầu",
+              "Cách làm",
+              "Kết quả"
+            ],
+            "rows": [
+              [
+                "Lưu ảnh theo thứ tự",
+                "JPG sang PDF",
+                "Một PDF, mỗi ảnh một trang."
+              ],
+              [
+                "Tìm chữ in",
+                "OCR PDF",
+                "Thêm văn bản nhận dạng lên ảnh."
+              ],
+              [
+                "In hóa đơn",
+                "Chọn A4 hoặc Letter",
+                "Chọn cách căn không cắt mép."
+              ],
+              [
+                "Kiểm tra dữ liệu",
+                "Xem từng trang",
+                "Tránh bỏ sót số tiền mờ."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Quyền riêng tư của ảnh"
+          },
+          {
+            "t": "p",
+            "x": "Trước khi thêm hóa đơn, hãy giữ ảnh gốc. Mỗi ảnh nên thấy trọn hóa đơn, không bị lóa, bóng đậm hoặc chữ mờ. Thêm ảnh vào [JPG sang PDF](/tools/jpg-to-pdf) rồi dùng mũi tên sắp theo ngày hoặc nhà cung cấp để dễ tra cứu."
+          },
+          {
+            "t": "h2",
+            "x": "Cần kiểm tra gì trong PDF cuối"
+          },
+          {
+            "t": "p",
+            "x": "Chọn A4 hoặc Letter để in, hoặc “Same as image” nếu chỉ xem trên màn hình. “Fit inside margins” hiển thị toàn bộ ảnh; “Fill page” có thể cắt mép hóa đơn. Ảnh ngang sẽ tự xoay hướng trang. Chọn lề đủ nhỏ để không che chữ gần cạnh giấy."
+          },
+          {
+            "t": "p",
+            "x": "Mở PDF đã tải và xem từng hóa đơn, không chỉ trang đầu. Kiểm tra tên, ngày, thuế, tạm tính, tổng tiền và mã tham chiếu. PDF sắp xếp ảnh nhưng không xác nhận dữ liệu chính xác. Nếu thông tin quan trọng bị mờ hoặc cắt, hãy chụp lại và tạo bản mới."
+          },
+          {
+            "t": "h2",
+            "x": "Tạo khả năng tìm kiếm cho hóa đơn"
+          },
+          {
+            "t": "p",
+            "x": "Ảnh JPG và PNG được đưa vào PDF mà không đổi pixel. Nếu sau này cần tìm số tiền hoặc sao chép chữ, dùng [OCR PDF](/tools/ocr-pdf) để thêm lớp văn bản. OCR có thể đọc sai chữ nhỏ; hãy đối chiếu với ảnh gốc. Để ghép các PDF khác, dùng [Ghép PDF](/tools/merge-pdf). Chuyển đổi diễn ra cục bộ và miễn phí; bạn có thể tạo tối đa 10 PDF bằng công cụ này trên thiết bị này khi dùng miễn phí."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Mỗi hóa đơn có nằm trên một trang PDF riêng không?",
+            "a": "Có. JPG sang PDF đặt mỗi ảnh trên trang riêng. Bạn có thể thêm nhiều ảnh vào một tệp và sắp xếp thứ tự trước khi tạo PDF."
+          },
+          {
+            "q": "Chuyển ảnh hóa đơn sang PDF có riêng tư không?",
+            "a": "Có. JPG sang PDF tạo tệp trong trình duyệt và không tải ảnh lên. Hãy giữ bản gốc và kiểm tra thông tin trước khi chia sẻ PDF."
+          },
+          {
+            "q": "Có thể tìm số tiền trong PDF hóa đơn không?",
+            "a": "Chỉ khi PDF có văn bản nhận dạng được. Ảnh thường chỉ là hình; chạy OCR PDF để thêm lớp chữ và đối chiếu số tiền với hóa đơn gốc."
+          },
+          {
+            "q": "Nên chọn cỡ trang nào để in hóa đơn?",
+            "a": "Chọn A4 hoặc Letter để in. Dùng “Fit inside margins” để thấy toàn bộ hóa đơn; “Fill page” có thể cắt mép. Nếu chỉ xem trên màn hình, chọn kích thước ảnh."
           }
         ],
         "published": "2026-11-16",
@@ -66026,6 +66902,156 @@
           {
             "q": "能在 PDF 里搜索孟加拉语、阿拉伯语或中文吗？",
             "a": "TXT 包含全部识别文字，但 PDF 隐藏文字层使用的标准字体可能限制孟加拉语、阿拉伯语和中文等文字的搜索。请在 TXT 文件中搜索这些语言。"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "image-to-pdf-receipts",
+        "slug": "image-to-pdf-receipts",
+        "title": "如何将收据照片转换为 PDF",
+        "metaTitle": "如何将收据照片转换为 PDF",
+        "metaDescription": "在浏览器中免费把 JPG、PNG 或 WebP 收据照片转成 PDF。无需注册或上传；每张图片单独一页。",
+        "keyword": "收据照片转 PDF",
+        "secondaryKeywords": [
+          "收据照片转 PDF",
+          "JPG 转 PDF 免费",
+          "可搜索的收据 PDF"
+        ],
+        "answer": "要把收据照片转成 PDF，请在 JPG 转 PDF 工具中添加图片、调整顺序，并选择 A4、Letter 或图片原始尺寸。每张照片单独成为一页，PDF 在浏览器本地生成，图片不会上传。归档或分享前，请检查金额和日期是否清晰可读。",
+        "tool": "jpg-to-pdf",
+        "ctaLabel": "图片转 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "要把收据照片转成 PDF，请在 JPG 转 PDF 工具中添加图片、调整顺序，并选择 A4、Letter 或图片原始尺寸。每张照片单独成为一页，PDF 在浏览器本地生成，图片不会上传。归档或分享前，请检查金额和日期是否清晰可读。"
+          },
+          {
+            "t": "h2",
+            "x": "准备收据照片"
+          },
+          {
+            "t": "p",
+            "x": "把拍摄的收据整理进一个 PDF，方便归档、打印或按顺序发送。在 [JPG 转 PDF](/tools/jpg-to-pdf) 中，每张图片会变成一个页面。工具支持 JPG、PNG 和 WebP，可调整图片顺序，并在浏览器中生成 PDF。照片不会上传。"
+          },
+          {
+            "t": "h2",
+            "x": "如何将收据照片转换为 PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "准备照片",
+                "x": "保留收据的 JPG、PNG 或 WebP 照片和原始文件。重新拍照时避免反光和阴影。"
+              },
+              {
+                "h": "添加并排序",
+                "x": "打开 [JPG 转 PDF](/tools/jpg-to-pdf)，添加一张或多张图片，再用箭头调整顺序。每张图片会单独占一页。"
+              },
+              {
+                "h": "选择页面尺寸和适配方式",
+                "x": "选择 A4、Letter 或图片原始尺寸。“适合页面”会保留完整图片；“铺满页面”可能裁切边缘。"
+              },
+              {
+                "h": "生成并检查 PDF",
+                "x": "运行转换并打开文件。逐页检查日期、名称、总金额和收据编号。"
+              },
+              {
+                "h": "需要搜索时添加 OCR",
+                "x": "如果要搜索或复制文字，请使用 [OCR PDF](/tools/ocr-pdf) 处理 PDF，并检查识别结果。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "jpg-to-pdf",
+            "x": "图片转 PDF. 免费使用，在标签页本地处理，无需注册。"
+          },
+          {
+            "t": "h2",
+            "x": "收据保存方式对比"
+          },
+          {
+            "t": "table",
+            "head": [
+              "需求",
+              "做法",
+              "结果"
+            ],
+            "rows": [
+              [
+                "按顺序保存图片",
+                "JPG 转 PDF",
+                "每张照片生成一个 PDF 页面。"
+              ],
+              [
+                "搜索印刷文字",
+                "OCR PDF",
+                "在图像上添加可识别文字。"
+              ],
+              [
+                "打印收据",
+                "选择 A4 或 Letter",
+                "使用不会裁切边缘的适配方式。"
+              ],
+              [
+                "核对信息",
+                "逐页检查",
+                "避免漏看模糊金额。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "图片隐私"
+          },
+          {
+            "t": "p",
+            "x": "添加收据前，请保留原始照片。每张照片都应完整显示收据，避免反光、浓重阴影或文字模糊。把图片添加到 [JPG 转 PDF](/tools/jpg-to-pdf)，用箭头按日期或商家调整为方便查看的顺序。"
+          },
+          {
+            "t": "h2",
+            "x": "检查最终 PDF 的内容"
+          },
+          {
+            "t": "p",
+            "x": "打印时选择 A4 或 Letter；如果只在屏幕上查看，可以选“与图片相同”。“适合页面边距”会显示完整照片，“铺满页面”可能裁掉收据边缘。横向照片会自动旋转页面方向。设置边距时注意不要遮住靠近边缘的文字。"
+          },
+          {
+            "t": "p",
+            "x": "下载后打开 PDF，逐张检查收据，不要只看第一页。核对名称、日期、税额、小计、总额和参考编号。PDF 负责整理图片，不负责验证数据真假。如果重要信息模糊或被裁切，请重新拍摄并生成新文件。"
+          },
+          {
+            "t": "h2",
+            "x": "让收据支持搜索"
+          },
+          {
+            "t": "p",
+            "x": "JPG 和 PNG 图片会按原像素放入 PDF。如果之后需要查找金额或复制文字，可用 [OCR PDF](/tools/ocr-pdf) 添加文字层。小字可能被 OCR 识别错误，请对照原图核验。要与其他文件合并，可使用[合并 PDF](/tools/merge-pdf)。转换在本地完成且免费；此设备免费使用该工具最多可生成 10 个 PDF。"
+          },
+          {
+            "t": "p",
+            "x": "收据常含有付款信息、地址或会员号码。虽然转换在浏览器本地进行，分享前仍要检查每一页，确认接收人确实需要这些字段。不要把多张照片拼在一页上再假设每一笔都清楚；缩小图片会让细节难以辨认。若要搜索金额，OCR 只能提供辅助文本，遇到字体很小、纸张褶皱或褪色时可能读错。关键数字应始终与图像核对。保留原始照片可在 PDF 页面不清晰时重新整理或处理。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "每张收据会放在单独的 PDF 页面吗？",
+            "a": "会。JPG 转 PDF 将每张图片放在单独页面。你可以把多张图片加入同一文件，并在生成 PDF 前调整顺序。"
+          },
+          {
+            "q": "把收据照片转成 PDF 时文件会上传吗？",
+            "a": "不会。JPG 转 PDF 在浏览器中生成文件，不会上传照片。请保留原图，并在分享 PDF 前检查其中的信息。"
+          },
+          {
+            "q": "可以在收据 PDF 中搜索金额吗？",
+            "a": "仅当 PDF 含有可识别文字时才行。照片通常只是图像；运行 OCR PDF 添加文字层后，请将识别金额与原始收据核对。"
+          },
+          {
+            "q": "打印收据时应选哪种页面尺寸？",
+            "a": "打印可选择 A4 或 Letter。使用“适合页面边距”可显示完整收据；“铺满页面”可能裁掉边缘。仅在屏幕上查看时可选择图片原始尺寸。"
           }
         ],
         "published": "2026-11-16",
