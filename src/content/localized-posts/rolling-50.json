@@ -6597,6 +6597,148 @@
           "preserving-signed-pdfs",
           "document-version-naming-pdf"
         ]
+      },
+      {
+        "topic": "document-version-naming-pdf",
+        "slug": "document-version-naming-pdf",
+        "title": "Cómo nombrar las versiones de un PDF",
+        "metaTitle": "Cómo nombrar las versiones de un PDF",
+        "metaDescription": "Organiza las versiones de PDF con nombres claros y fechas. Edita el título y autor en el navegador gratis, sin registro ni marca de agua.",
+        "keyword": "cómo nombrar versiones de PDF",
+        "secondaryKeywords": [
+          "convención de nombres para PDF",
+          "nombre de archivo con fecha y versión",
+          "editar metadatos PDF"
+        ],
+        "answer": "Nombra cada versión de PDF con un patrón estable que incluya proyecto, documento, estado, fecha y número de versión; por ejemplo, ClienteX_Contrato_Revision_2026-11-15_v02.pdf. No sobrescribas la versión anterior. El nombre del archivo es distinto de los metadatos internos: PrintxPDF permite editar el título y el autor del PDF localmente en el navegador.",
+        "tool": "edit-metadata",
+        "ctaLabel": "Editar metadatos PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Usa un patrón de nombre fijo para que el equipo pueda distinguir de un vistazo el proyecto, el documento, su estado, la fecha y la versión. Por ejemplo: ClienteX_Contrato_Revision_2026-11-15_v02.pdf. Guarda las versiones anteriores en lugar de sobrescribirlas. Recuerda que el nombre visible del archivo y el título guardado dentro del PDF son datos distintos; puedes actualizar este último con Editar metadatos PDF, una herramienta gratuita que se ejecuta en tu navegador."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo crear un nombre de versión claro"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Elige un patrón breve",
+                "x": "Usa Proyecto_Documento_Estado_Fecha_vNN.pdf. Mantén el mismo orden y separador en todo el equipo."
+              },
+              {
+                "h": "Marca el estado de revisión",
+                "x": "Usa etiquetas claras como Borrador, Revisión, Aprobado o Firmado. Evita nombres ambiguos como final-final o último."
+              },
+              {
+                "h": "Añade una fecha inequívoca y un número",
+                "x": "Usa AAAA-MM-DD para ordenar los archivos correctamente y v01, v02, v03 para revisiones sucesivas. No reutilices un número."
+              },
+              {
+                "h": "Guarda cada versión como archivo nuevo",
+                "x": "No sobrescribas un PDF que otra persona revisó o firmó. Conserva el original y un registro breve de qué cambió y quién lo aprobó."
+              },
+              {
+                "h": "Alinea el título interno y revisa",
+                "x": "Si el PDF se compartirá, actualiza también título y autor en metadatos y abre el archivo para comprobar la versión, las páginas y las firmas."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Edita metadatos PDF gratis en tu navegador, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Nombre de archivo y metadatos PDF son distintos"
+          },
+          {
+            "t": "p",
+            "x": "El nombre del archivo ayuda a las personas a ordenar y reconocer copias; los metadatos PDF guardan propiedades internas como título, autor, asunto y palabras clave. Cambiar el título interno no renombra el archivo, y renombrar el archivo no cambia el título que puede mostrar un lector PDF. Para evitar confusiones, alinea ambos cuando corresponda."
+          },
+          {
+            "t": "h2",
+            "x": "Conserva un historial fiable"
+          },
+          {
+            "t": "p",
+            "x": "Una convención útil es Proyecto_Documento_Estado_AAAA-MM-DD_vNN.pdf. Mantén las etiquetas breves y evita caracteres que causen problemas en sistemas compartidos. Incluye un estado porque “borrador”, “para revisión”, “aprobado” y “firmado” no significan lo mismo. La fecha ISO año-mes-día se ordena cronológicamente en la mayoría de los listados. Usa un número de versión creciente y guarda cada revisión como un archivo separado. Si necesitas explicar cambios, añade un registro de versiones aparte con fecha, responsable, aprobación y resumen; no conviertas el nombre en un párrafo. Si firmas digitalmente un PDF, no lo cambies después de firmarlo: cualquier edición puede afectar la validez de la firma."
+          },
+          {
+            "t": "h2",
+            "x": "Edita el título interno del PDF"
+          },
+          {
+            "t": "p",
+            "x": "Edit Metadata de PrintxPDF cambia el título, el autor, el asunto y las palabras clave estándar directamente en tu navegador; el PDF no se sube. No cambia el nombre del archivo, ni todos los bloques de metadatos avanzados. Para quitar propiedades estándar antes de compartir, usa [Eliminar metadatos](/tools/remove-metadata). Para comparar dos copias, usa [Comparar PDF](/tools/compare-pdf)."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Necesidad",
+              "Acción",
+              "Motivo"
+            ],
+            "rows": [
+              [
+                "Identificar el proyecto",
+                "Usar un prefijo constante",
+                "Agrupa documentos relacionados"
+              ],
+              [
+                "Ver el estado actual",
+                "Añadir Borrador/Revisión/Aprobado",
+                "Evita enviar una copia equivocada"
+              ],
+              [
+                "Ordenar revisiones",
+                "Usar fecha ISO y vNN",
+                "Mantiene una secuencia clara"
+              ],
+              [
+                "Mostrar título correcto en lectores",
+                "Editar metadatos PDF",
+                "El título interno es distinto del nombre del archivo"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cambiar los metadatos también cambia el nombre del PDF?",
+            "a": "No. El nombre del archivo aparece en el sistema de archivos y los metadatos son propiedades dentro del PDF. Editar el título interno no renombra el archivo; puedes cambiar ambos por separado."
+          },
+          {
+            "q": "¿Qué formato de fecha conviene usar?",
+            "a": "AAAA-MM-DD, como 2026-11-15, evita confundir día y mes y suele ordenar las versiones por fecha. Elige un formato y úsalo en todos los documentos del proyecto."
+          },
+          {
+            "q": "¿Debo usar “final” en el nombre?",
+            "a": "Usa una etiqueta de estado precisa y un número de versión, por ejemplo Aprobado_v03 o Firmado_2026-11-15. Evita “final-final” y conserva las versiones previas."
+          },
+          {
+            "q": "¿Edit Metadata procesa el PDF en privado?",
+            "a": "Sí. Edit Metadata trabaja en la pestaña del navegador; el archivo no se sube. Puedes cambiar título, autor, asunto y palabras clave estándar sin cuenta ni marca de agua."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "compare-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-archive-naming-convention",
+          "pdf-archive-review-schedule",
+          "metadata-for-pdf-records",
+          "pdf-review-copy-checklist"
+        ]
       }
     ]
   },
@@ -13188,6 +13330,148 @@
           "preserving-signed-pdfs",
           "document-version-naming-pdf"
         ]
+      },
+      {
+        "topic": "document-version-naming-pdf",
+        "slug": "document-version-naming-pdf",
+        "title": "Como nomear versões de arquivos PDF",
+        "metaTitle": "Como nomear versões de arquivos PDF",
+        "metaDescription": "Organize versões de PDF com nomes e datas claros. Edite título e autor no navegador, grátis, sem cadastro ou marca-d’água.",
+        "keyword": "como nomear versões de PDF",
+        "secondaryKeywords": [
+          "padrão de nomes para PDF",
+          "nome de arquivo com data e versão",
+          "editar metadados PDF"
+        ],
+        "answer": "Nomeie cada versão do PDF com um padrão estável que inclua projeto, documento, status, data e número da versão; por exemplo, ClienteX_Contrato_Revisao_2026-11-15_v02.pdf. Não sobrescreva a versão anterior. O nome do arquivo é diferente dos metadados internos: o PrintxPDF permite editar o título e o autor do PDF localmente no navegador.",
+        "tool": "edit-metadata",
+        "ctaLabel": "Editar metadados PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Use um padrão de nome fixo para que a equipe identifique rapidamente o projeto, o documento, o status, a data e a versão. Exemplo: ClienteX_Contrato_Revisao_2026-11-15_v02.pdf. Guarde as versões anteriores em vez de sobrescrevê-las. O nome do arquivo e o título salvo dentro do PDF são coisas diferentes; você pode atualizar o título interno com Edit Metadata, uma ferramenta gratuita que roda no navegador."
+          },
+          {
+            "t": "h2",
+            "x": "Como criar um nome de versão claro"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Defina um padrão curto",
+                "x": "Use Projeto_Documento_Status_Data_vNN.pdf. Mantenha a mesma ordem e separador para toda a equipe."
+              },
+              {
+                "h": "Identifique o status da revisão",
+                "x": "Use rótulos claros como Rascunho, Revisão, Aprovado ou Assinado. Evite nomes vagos como final-final ou último."
+              },
+              {
+                "h": "Inclua data clara e número sequencial",
+                "x": "Use AAAA-MM-DD para ordenar arquivos corretamente e v01, v02, v03 para revisões. Não reutilize números."
+              },
+              {
+                "h": "Salve cada versão como um arquivo novo",
+                "x": "Não sobrescreva um PDF que outra pessoa revisou ou assinou. Guarde o original e um registro breve do que mudou e de quem aprovou."
+              },
+              {
+                "h": "Atualize o título interno e confira",
+                "x": "Se for compartilhar o PDF, atualize também título e autor nos metadados. Abra o arquivo para conferir versão, páginas e assinaturas."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Edite metadados PDF grátis no navegador, sem cadastro ou marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Nome do arquivo e metadados PDF são diferentes"
+          },
+          {
+            "t": "p",
+            "x": "O nome do arquivo ajuda as pessoas a organizar e reconhecer cópias; os metadados do PDF guardam propriedades internas, como título, autor, assunto e palavras-chave. Alterar o título interno não renomeia o arquivo, e renomear o arquivo não muda o título exibido por um leitor. Para evitar confusão, alinhe os dois quando fizer sentido."
+          },
+          {
+            "t": "h2",
+            "x": "Mantenha um histórico confiável"
+          },
+          {
+            "t": "p",
+            "x": "Uma convenção útil é Projeto_Documento_Status_AAAA-MM-DD_vNN.pdf. Use rótulos curtos e evite caracteres que causem problemas em sistemas compartilhados. Inclua um status porque “rascunho”, “para revisão”, “aprovado” e “assinado” não significam a mesma coisa. A data ISO ano-mês-dia costuma manter a ordem cronológica nas listas. Use números de versão crescentes e salve cada revisão em um arquivo separado. Se precisar explicar as mudanças, mantenha um registro de versões à parte com data, responsável, aprovação e resumo; não transforme o nome do arquivo em um parágrafo. Se assinar digitalmente um PDF, não o edite depois: qualquer alteração pode afetar a validade da assinatura."
+          },
+          {
+            "t": "h2",
+            "x": "Edite o título interno do PDF"
+          },
+          {
+            "t": "p",
+            "x": "O Edit Metadata do PrintxPDF altera título, autor, assunto e palavras-chave padrão diretamente no navegador; o PDF não é enviado. A ferramenta não renomeia o arquivo nem atualiza todos os blocos avançados de metadados. Para remover propriedades padrão antes de compartilhar, use [Remove Metadata](/tools/remove-metadata). Para comparar duas cópias, use [Compare PDF](/tools/compare-pdf)."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Necessidade",
+              "Ação",
+              "Motivo"
+            ],
+            "rows": [
+              [
+                "Identificar o projeto",
+                "Usar prefixo constante",
+                "Agrupa documentos relacionados"
+              ],
+              [
+                "Ver o status atual",
+                "Adicionar Rascunho/Revisão/Aprovado",
+                "Evita enviar a cópia errada"
+              ],
+              [
+                "Ordenar revisões",
+                "Usar data ISO e vNN",
+                "Mantém uma sequência clara"
+              ],
+              [
+                "Exibir o título correto nos leitores",
+                "Editar metadados PDF",
+                "O título interno difere do nome do arquivo"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Editar metadados também muda o nome do PDF?",
+            "a": "Não. O nome do arquivo fica no sistema de arquivos; metadados são propriedades dentro do PDF. Editar o título interno não renomeia o arquivo. Você pode mudar os dois separadamente."
+          },
+          {
+            "q": "Qual formato de data devo usar?",
+            "a": "AAAA-MM-DD, como 2026-11-15, evita confusão entre dia e mês e costuma ordenar versões por data. Escolha um formato e use-o em todos os documentos do projeto."
+          },
+          {
+            "q": "Devo usar “final” no nome?",
+            "a": "Prefira um status preciso e um número de versão, como Aprovado_v03 ou Assinado_2026-11-15. Evite “final-final” e mantenha as versões anteriores."
+          },
+          {
+            "q": "O Edit Metadata processa o PDF com privacidade?",
+            "a": "Sim. O Edit Metadata funciona na aba do navegador; o arquivo não é enviado. Você pode alterar título, autor, assunto e palavras-chave padrão sem conta ou marca-d’água."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "compare-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-archive-naming-convention",
+          "pdf-archive-review-schedule",
+          "metadata-for-pdf-records",
+          "pdf-review-copy-checklist"
+        ]
       }
     ]
   },
@@ -19778,6 +20062,148 @@
           "send-confidential-pdf-safely",
           "preserving-signed-pdfs",
           "document-version-naming-pdf"
+        ]
+      },
+      {
+        "topic": "document-version-naming-pdf",
+        "slug": "document-version-naming-pdf",
+        "title": "PDF फ़ाइल के संस्करणों के नाम कैसे रखें",
+        "metaTitle": "PDF फ़ाइल के संस्करणों के नाम कैसे रखें",
+        "metaDescription": "PDF संस्करणों को स्पष्ट नाम और तारीख से व्यवस्थित करें। ब्राउज़र में शीर्षक और लेखक मुफ़्त बदलें—साइनअप या वॉटरमार्क नहीं।",
+        "keyword": "PDF संस्करणों के नाम रखना",
+        "secondaryKeywords": [
+          "PDF नामकरण नियम",
+          "तारीख और संस्करण वाला फ़ाइल नाम",
+          "PDF मेटाडेटा संपादित करना"
+        ],
+        "answer": "हर PDF संस्करण का नाम एक स्थिर पैटर्न से रखें जिसमें प्रोजेक्ट, दस्तावेज़, स्थिति, तारीख और संस्करण संख्या हो; जैसे ClientX_Contract_Review_2026-11-15_v02.pdf। पुराने संस्करण को ओवरराइट न करें। फ़ाइल का नाम अंदर के PDF मेटाडेटा से अलग है: PrintxPDF ब्राउज़र में शीर्षक और लेखक बदलता है।",
+        "tool": "edit-metadata",
+        "ctaLabel": "PDF मेटाडेटा संपादित करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "एक तय नाम-पैटर्न अपनाएँ ताकि टीम तुरंत प्रोजेक्ट, दस्तावेज़, स्थिति, तारीख और संस्करण पहचान सके। उदाहरण: ClientX_Contract_Review_2026-11-15_v02.pdf। पुराने संस्करण मिटाने के बजाय अलग रखें। फ़ाइल का नाम और PDF के अंदर सेव शीर्षक अलग चीज़ें हैं; ब्राउज़र में चलने वाले मुफ़्त Edit Metadata टूल से अंदर का शीर्षक अपडेट किया जा सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "स्पष्ट संस्करण नाम बनाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "छोटा और स्थिर पैटर्न तय करें",
+                "x": "Project_Document_Status_Date_vNN.pdf जैसे क्रम का उपयोग करें। पूरी टीम में वही क्रम और separator रखें।"
+              },
+              {
+                "h": "समीक्षा की स्थिति लिखें",
+                "x": "Draft, Review, Approved या Signed जैसे स्पष्ट लेबल रखें। final-final या latest जैसे अस्पष्ट नाम न रखें।"
+              },
+              {
+                "h": "स्पष्ट तारीख और बढ़ती संख्या जोड़ें",
+                "x": "फ़ाइलों को सही क्रम में रखने के लिए YYYY-MM-DD और संशोधनों के लिए v01, v02, v03 लिखें। संख्या दोबारा न दें।"
+              },
+              {
+                "h": "हर संस्करण नई फ़ाइल में सेव करें",
+                "x": "दूसरे व्यक्ति द्वारा समीक्षा या हस्ताक्षर किए PDF को ओवरराइट न करें। मूल प्रति और बदलाव तथा मंज़ूरी का छोटा रिकॉर्ड रखें।"
+              },
+              {
+                "h": "अंदर का शीर्षक मिलाएँ और जाँचें",
+                "x": "शेयर करने पर PDF के मेटाडेटा में शीर्षक और लेखक भी अपडेट करें। फ़ाइल खोलकर संस्करण, पेज और हस्ताक्षर जाँचें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "ब्राउज़र में PDF मेटाडेटा मुफ़्त बदलें—साइनअप और वॉटरमार्क नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "फ़ाइल नाम और PDF मेटाडेटा अलग हैं"
+          },
+          {
+            "t": "p",
+            "x": "फ़ाइल का नाम लोगों को प्रतियाँ पहचानने और क्रमबद्ध करने में मदद करता है; PDF मेटाडेटा अंदर के गुण जैसे शीर्षक, लेखक, विषय और कीवर्ड रखता है। अंदर का शीर्षक बदलने से फ़ाइल का नाम नहीं बदलता, और फ़ाइल का नाम बदलने से रीडर में दिखने वाला शीर्षक नहीं बदलता। भ्रम से बचने के लिए ज़रूरत पड़ने पर दोनों मिलाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "भरोसेमंद इतिहास रखें"
+          },
+          {
+            "t": "p",
+            "x": "एक उपयोगी नियम है Project_Document_Status_YYYY-MM-DD_vNN.pdf। लेबल छोटे रखें और ऐसे चिह्न न रखें जो साझा सिस्टम में समस्या करें। स्थिति ज़रूर लिखें, क्योंकि “Draft”, “Review”, “Approved” और “Signed” एक जैसे नहीं हैं। ISO साल-महीना-दिन तारीख फ़ाइलों को क्रम में रखने में मदद करती है। बढ़ती हुई संस्करण संख्या इस्तेमाल करें और हर संशोधन को अलग फ़ाइल में रखें। बदलाव समझाने हों तो तारीख, ज़िम्मेदार व्यक्ति, मंज़ूरी और सारांश का अलग संस्करण-लॉग रखें; फ़ाइल का नाम पूरा वाक्य न बनाएँ। PDF पर डिजिटल हस्ताक्षर के बाद उसे संपादित न करें—बदलाव हस्ताक्षर की वैधता को प्रभावित कर सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF का अंदरूनी शीर्षक बदलें"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF Edit Metadata ब्राउज़र में PDF का शीर्षक, लेखक, विषय और सामान्य कीवर्ड बदलता है; फ़ाइल अपलोड नहीं होती। यह फ़ाइल का नाम नहीं बदलता और सभी उन्नत मेटाडेटा ब्लॉक अपडेट नहीं करता। शेयर करने से पहले सामान्य गुण हटाने के लिए [Remove Metadata](/tools/remove-metadata) और दो प्रतियाँ जाँचने के लिए [Compare PDF](/tools/compare-pdf) इस्तेमाल करें।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "ज़रूरत",
+              "कदम",
+              "कारण"
+            ],
+            "rows": [
+              [
+                "प्रोजेक्ट पहचानना",
+                "एक स्थिर prefix रखें",
+                "संबंधित दस्तावेज़ साथ रहते हैं"
+              ],
+              [
+                "मौजूदा स्थिति जानना",
+                "Draft/Review/Approved जोड़ें",
+                "गलत कॉपी भेजने से बचाता है"
+              ],
+              [
+                "संशोधन क्रम में रखना",
+                "ISO तारीख और vNN उपयोग करें",
+                "क्रम स्पष्ट रहता है"
+              ],
+              [
+                "रीडर में सही शीर्षक दिखाना",
+                "PDF मेटाडेटा बदलें",
+                "भीतरी शीर्षक फ़ाइल नाम से अलग है"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या मेटाडेटा बदलने से PDF का फ़ाइल नाम भी बदलता है?",
+            "a": "नहीं। फ़ाइल नाम फाइल सिस्टम में होता है और मेटाडेटा PDF के अंदर के गुण हैं। अंदर का शीर्षक बदलने से फ़ाइल नहीं बदलती। दोनों अलग-अलग बदले जा सकते हैं।"
+          },
+          {
+            "q": "कौन-सा तारीख फ़ॉर्मेट सही है?",
+            "a": "YYYY-MM-DD, जैसे 2026-11-15, दिन-महीने का भ्रम घटाता है और संस्करणों को तारीख के अनुसार क्रम में रखता है। प्रोजेक्ट में एक ही फ़ॉर्मेट रखें।"
+          },
+          {
+            "q": "क्या नाम में “final” लिखना चाहिए?",
+            "a": "सटीक स्थिति और संस्करण संख्या लिखें, जैसे Approved_v03 या Signed_2026-11-15। final-final न लिखें और पुराने संस्करण रखें।"
+          },
+          {
+            "q": "क्या Edit Metadata PDF को निजी रूप से प्रोसेस करता है?",
+            "a": "हाँ। Edit Metadata ब्राउज़र टैब में चलता है; फ़ाइल अपलोड नहीं होती। बिना खाते या वॉटरमार्क के सामान्य शीर्षक, लेखक, विषय और कीवर्ड बदल सकते हैं।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "compare-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-archive-naming-convention",
+          "pdf-archive-review-schedule",
+          "metadata-for-pdf-records",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
@@ -26378,6 +26804,148 @@
           "send-confidential-pdf-safely",
           "preserving-signed-pdfs",
           "document-version-naming-pdf"
+        ]
+      },
+      {
+        "topic": "document-version-naming-pdf",
+        "slug": "document-version-naming-pdf",
+        "title": "كيفية تسمية إصدارات ملفات PDF",
+        "metaTitle": "كيفية تسمية إصدارات ملفات PDF",
+        "metaDescription": "نظّم إصدارات PDF بأسماء وتواريخ واضحة. عدّل العنوان والمؤلف في المتصفح مجاناً بلا تسجيل أو علامة مائية.",
+        "keyword": "تسمية إصدارات PDF",
+        "secondaryKeywords": [
+          "قواعد تسمية ملفات PDF",
+          "اسم ملف PDF بالتاريخ والإصدار",
+          "تعديل بيانات PDF الوصفية"
+        ],
+        "answer": "سمِّ كل إصدار من PDF بنمط ثابت يتضمن المشروع والمستند والحالة والتاريخ ورقم الإصدار، مثل ClientX_Contract_Review_2026-11-15_v02.pdf. لا تستبدل الإصدار السابق. يختلف اسم الملف عن البيانات الوصفية الداخلية؛ تتيح PrintxPDF تعديل عنوان PDF ومؤلفه محلياً في المتصفح.",
+        "tool": "edit-metadata",
+        "ctaLabel": "تعديل بيانات PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "استخدم نمط تسمية ثابتاً ليتمكن الفريق من معرفة المشروع والمستند والحالة والتاريخ والإصدار بسرعة. مثال: ClientX_Contract_Review_2026-11-15_v02.pdf. احتفظ بالإصدارات السابقة بدلاً من استبدالها. اسم الملف والعنوان المخزن داخل PDF شيئان مختلفان؛ ويمكنك تحديث العنوان الداخلي بأداة Edit Metadata المجانية التي تعمل في المتصفح."
+          },
+          {
+            "t": "h2",
+            "x": "أنشئ اسماً واضحاً للإصدار"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "اختر نمطاً قصيراً",
+                "x": "استخدم Project_Document_Status_Date_vNN.pdf. حافظ على الترتيب والفاصل نفسيهما لدى الفريق."
+              },
+              {
+                "h": "حدّد حالة المراجعة",
+                "x": "استخدم حالات واضحة مثل Draft أو Review أو Approved أو Signed. تجنب أسماء مبهمة مثل final-final أو latest."
+              },
+              {
+                "h": "أضف تاريخاً واضحاً ورقماً متسلسلاً",
+                "x": "استخدم YYYY-MM-DD لترتيب الملفات حسب التاريخ، وv01 وv02 وv03 للمراجعات. لا تكرر رقم إصدار."
+              },
+              {
+                "h": "احفظ كل إصدار كملف جديد",
+                "x": "لا تستبدل PDF راجعه شخص آخر أو وقّعه. احتفظ بالأصل وسجل مختصر لما تغير ومن وافق."
+              },
+              {
+                "h": "طابق العنوان الداخلي وراجع",
+                "x": "عند مشاركة PDF حدّث العنوان والمؤلف في البيانات الوصفية أيضاً. افتح الملف للتحقق من الإصدار والصفحات والتوقيعات."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "عدّل بيانات PDF الوصفية مجاناً في المتصفح بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "اسم الملف والبيانات الوصفية مختلفان"
+          },
+          {
+            "t": "p",
+            "x": "يساعد اسم الملف الأشخاص على ترتيب النسخ والتعرف عليها؛ أما البيانات الوصفية فتحفظ خصائص داخل PDF مثل العنوان والمؤلف والموضوع والكلمات المفتاحية. تغيير العنوان الداخلي لا يعيد تسمية الملف، وإعادة تسمية الملف لا تغيّر العنوان الذي قد يعرضه قارئ PDF. لتجنب الالتباس، طابق الاثنين عند الحاجة."
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بسجل موثوق"
+          },
+          {
+            "t": "p",
+            "x": "نمط عملي هو Project_Document_Status_YYYY-MM-DD_vNN.pdf. اجعل التسميات قصيرة وتجنب الرموز التي تسبب مشكلات في الأنظمة المشتركة. أضف الحالة لأن Draft وReview وApproved وSigned ليست الشيء نفسه. يساعد تاريخ السنة-الشهر-اليوم القياسي على الفرز الزمني في معظم القوائم. استخدم رقماً متزايداً للإصدار واحفظ كل مراجعة في ملف منفصل. إذا احتجت إلى شرح التغييرات، احتفظ بسجل إصدارات مستقل يتضمن التاريخ والمسؤول والموافقة وملخصاً؛ لا تحوّل اسم الملف إلى فقرة. لا تعدّل PDF بعد توقيعه رقمياً، فقد يؤثر أي تغيير في صلاحية التوقيع."
+          },
+          {
+            "t": "h2",
+            "x": "عدّل العنوان الداخلي لملف PDF"
+          },
+          {
+            "t": "p",
+            "x": "تغيّر Edit Metadata من PrintxPDF العنوان والمؤلف والموضوع والكلمات المفتاحية القياسية مباشرة في المتصفح؛ ولا يُرفع PDF. لكنها لا تعيد تسمية الملف ولا تحدّث كل كتل البيانات الوصفية المتقدمة. لإزالة الخصائص القياسية قبل المشاركة استخدم [Remove Metadata](/tools/remove-metadata)، ولمقارنة نسختين استخدم [Compare PDF](/tools/compare-pdf)."
+          },
+          {
+            "t": "table",
+            "head": [
+              "الحاجة",
+              "الإجراء",
+              "السبب"
+            ],
+            "rows": [
+              [
+                "تحديد المشروع",
+                "استخدم بادئة ثابتة",
+                "تجمع المستندات المرتبطة"
+              ],
+              [
+                "معرفة الحالة الحالية",
+                "أضف Draft أو Review أو Approved",
+                "يمنع إرسال نسخة خاطئة"
+              ],
+              [
+                "ترتيب المراجعات",
+                "استخدم تاريخ ISO ورقم vNN",
+                "يحافظ على تسلسل واضح"
+              ],
+              [
+                "عرض العنوان الصحيح في القارئ",
+                "عدّل بيانات PDF",
+                "العنوان الداخلي يختلف عن اسم الملف"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يؤدي تعديل البيانات الوصفية إلى تغيير اسم ملف PDF؟",
+            "a": "لا. يوجد اسم الملف في نظام الملفات، أما البيانات الوصفية فهي خصائص داخل PDF. تعديل العنوان الداخلي لا يعيد تسمية الملف؛ ويمكنك تغييرهما كلّاً على حدة."
+          },
+          {
+            "q": "ما تنسيق التاريخ الأفضل؟",
+            "a": "يقلل YYYY-MM-DD، مثل 2026-11-15، الالتباس بين اليوم والشهر ويساعد في ترتيب الإصدارات زمنياً. اختر تنسيقاً واحداً للمشروع كله."
+          },
+          {
+            "q": "هل أكتب كلمة “نهائي” في الاسم؟",
+            "a": "استخدم حالة دقيقة ورقم إصدار، مثل Approved_v03 أو Signed_2026-11-15. تجنب final-final واحتفظ بالإصدارات السابقة."
+          },
+          {
+            "q": "هل تعالج Edit Metadata ملف PDF بخصوصية؟",
+            "a": "نعم. تعمل Edit Metadata في علامة تبويب المتصفح ولا يُرفع الملف. يمكنك تعديل العنوان والمؤلف والموضوع والكلمات المفتاحية القياسية بلا حساب أو علامة مائية."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "compare-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-archive-naming-convention",
+          "pdf-archive-review-schedule",
+          "metadata-for-pdf-records",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
@@ -32982,6 +33550,148 @@
           "preserving-signed-pdfs",
           "document-version-naming-pdf"
         ]
+      },
+      {
+        "topic": "document-version-naming-pdf",
+        "slug": "document-version-naming-pdf",
+        "title": "PDF ফাইলের সংস্করণের নাম কীভাবে রাখবেন",
+        "metaTitle": "PDF ফাইলের সংস্করণের নাম কীভাবে রাখবেন",
+        "metaDescription": "PDF সংস্করণে স্পষ্ট নাম ও তারিখ দিন। ব্রাউজারে বিনামূল্যে শিরোনাম ও লেখক বদলান—সাইনআপ বা ওয়াটারমার্ক নেই।",
+        "keyword": "PDF সংস্করণের নামকরণ",
+        "secondaryKeywords": [
+          "PDF নামকরণের নিয়ম",
+          "তারিখ ও সংস্করণসহ PDF ফাইলের নাম",
+          "PDF মেটাডেটা সম্পাদনা"
+        ],
+        "answer": "প্রতিটি PDF সংস্করণের নাম এমন একটি স্থির নিয়মে রাখুন যাতে প্রকল্প, নথি, অবস্থা, তারিখ ও সংস্করণ নম্বর থাকে; যেমন ClientX_Contract_Review_2026-11-15_v02.pdf। আগের সংস্করণ ওভাররাইট করবেন না। ফাইলের নাম PDF-এর ভেতরের মেটাডেটা থেকে আলাদা: PrintxPDF ব্রাউজারে শিরোনাম ও লেখক বদলাতে পারে।",
+        "tool": "edit-metadata",
+        "ctaLabel": "PDF মেটাডেটা সম্পাদনা",
+        "body": [
+          {
+            "t": "p",
+            "x": "একটি নির্দিষ্ট নামের নিয়ম ব্যবহার করুন, যাতে দল দ্রুত প্রকল্প, নথি, অবস্থা, তারিখ ও সংস্করণ চিনতে পারে। যেমন: ClientX_Contract_Review_2026-11-15_v02.pdf। আগের কপি মুছে না দিয়ে সংরক্ষণ করুন। ফাইলের নাম এবং PDF-এর ভেতরে থাকা শিরোনাম এক জিনিস নয়; বিনামূল্যের Edit Metadata টুল ব্রাউজারেই ভেতরের শিরোনাম বদলায়।"
+          },
+          {
+            "t": "h2",
+            "x": "পরিষ্কার সংস্করণ-নাম তৈরি করুন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "সংক্ষিপ্ত নিয়ম ঠিক করুন",
+                "x": "Project_Document_Status_Date_vNN.pdf ধরন ব্যবহার করুন। সবার জন্য একই ক্রম ও বিভাজক রাখুন।"
+              },
+              {
+                "h": "পর্যালোচনার অবস্থা লিখুন",
+                "x": "Draft, Review, Approved বা Signed-এর মতো পরিষ্কার লেবেল দিন। final-final বা latest-এর মতো অস্পষ্ট নাম এড়ান।"
+              },
+              {
+                "h": "স্পষ্ট তারিখ ও ক্রমিক নম্বর দিন",
+                "x": "ফাইল সাজাতে YYYY-MM-DD এবং সংশোধনে v01, v02, v03 ব্যবহার করুন। নম্বর পুনরায় দেবেন না।"
+              },
+              {
+                "h": "প্রতিটি সংস্করণ নতুন ফাইলে রাখুন",
+                "x": "অন্য কেউ পর্যালোচনা বা সই করেছে এমন PDF ওভাররাইট করবেন না। মূল কপি এবং কী বদলেছে ও কে অনুমোদন করেছে তার সংক্ষিপ্ত রেকর্ড রাখুন।"
+              },
+              {
+                "h": "ভেতরের শিরোনাম মিলিয়ে পরীক্ষা করুন",
+                "x": "PDF শেয়ার করলে মেটাডেটার শিরোনাম ও লেখকও আপডেট করুন। সংস্করণ, পেজ ও স্বাক্ষর যাচাই করতে ফাইল খুলুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "ব্রাউজারে PDF মেটাডেটা বিনামূল্যে বদলান—সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "ফাইলের নাম ও PDF মেটাডেটা আলাদা"
+          },
+          {
+            "t": "p",
+            "x": "ফাইলের নাম মানুষকে কপি সাজাতে ও চিনতে সাহায্য করে; PDF মেটাডেটায় শিরোনাম, লেখক, বিষয় ও কীওয়ার্ডের মতো ভেতরের বৈশিষ্ট্য থাকে। ভেতরের শিরোনাম বদলালে ফাইলের নাম বদলায় না, আর নাম বদলালে PDF রিডারে দেখা শিরোনাম বদলায় না। বিভ্রান্তি এড়াতে প্রয়োজন হলে দুটো মিলিয়ে নিন।"
+          },
+          {
+            "t": "h2",
+            "x": "নির্ভরযোগ্য ইতিহাস রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "একটি কার্যকর নিয়ম হলো Project_Document_Status_YYYY-MM-DD_vNN.pdf। লেবেল ছোট রাখুন এবং শেয়ারড সিস্টেমে সমস্যা করে এমন চিহ্ন এড়ান। অবস্থা দিন, কারণ Draft, Review, Approved ও Signed একই অর্থ নয়। ISO বছর-মাস-দিন তারিখ বেশিরভাগ তালিকায় কালানুক্রমিকভাবে সাজাতে সাহায্য করে। ক্রমবর্ধমান সংস্করণ নম্বর ব্যবহার করুন এবং প্রতিটি সংশোধন আলাদা ফাইলে রাখুন। পরিবর্তন ব্যাখ্যা করতে হলে তারিখ, দায়িত্বপ্রাপ্ত ব্যক্তি, অনুমোদন ও সারাংশসহ আলাদা সংস্করণ-লগ রাখুন; ফাইলের নামকে অনুচ্ছেদ বানাবেন না। PDF-এ ডিজিটাল স্বাক্ষর করার পরে সম্পাদনা করবেন না—পরিবর্তন স্বাক্ষরের বৈধতা প্রভাবিত করতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF-এর ভেতরের শিরোনাম বদলান"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF Edit Metadata ব্রাউজারেই PDF-এর শিরোনাম, লেখক, বিষয় ও সাধারণ কীওয়ার্ড বদলায়; ফাইল আপলোড হয় না। এটি ফাইলের নাম বদলায় না এবং সব উন্নত মেটাডেটা ব্লকও আপডেট করে না। শেয়ারের আগে সাধারণ বৈশিষ্ট্য মুছতে [Remove Metadata](/tools/remove-metadata), আর দুই কপি তুলনা করতে [Compare PDF](/tools/compare-pdf) ব্যবহার করুন।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "প্রয়োজন",
+              "কাজ",
+              "কারণ"
+            ],
+            "rows": [
+              [
+                "প্রকল্প চেনা",
+                "একই prefix ব্যবহার",
+                "সম্পর্কিত নথি একসাথে থাকে"
+              ],
+              [
+                "বর্তমান অবস্থা জানা",
+                "Draft/Review/Approved যোগ",
+                "ভুল কপি পাঠানো এড়ায়"
+              ],
+              [
+                "সংশোধন সাজানো",
+                "ISO তারিখ ও vNN ব্যবহার",
+                "ক্রম পরিষ্কার থাকে"
+              ],
+              [
+                "রিডারে সঠিক শিরোনাম",
+                "PDF মেটাডেটা বদলান",
+                "ভেতরের শিরোনাম ফাইলের নাম থেকে আলাদা"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "মেটাডেটা বদলালে কি PDF ফাইলের নাম বদলায়?",
+            "a": "না। ফাইলের নাম ফাইল সিস্টেমে থাকে; মেটাডেটা PDF-এর ভেতরের বৈশিষ্ট্য। ভেতরের শিরোনাম বদলালে ফাইলের নাম বদলায় না। দুটো আলাদা করে বদলাতে হয়।"
+          },
+          {
+            "q": "কোন তারিখের ধরন ব্যবহার করব?",
+            "a": "YYYY-MM-DD, যেমন 2026-11-15, দিন-মাসের বিভ্রান্তি কমায় এবং সংস্করণগুলোকে তারিখ অনুসারে সাজায়। প্রকল্পজুড়ে একটি ধরন রাখুন।"
+          },
+          {
+            "q": "নামে “final” লিখব?",
+            "a": "Approved_v03 বা Signed_2026-11-15-এর মতো নির্দিষ্ট অবস্থা ও সংস্করণ নম্বর দিন। final-final এড়িয়ে আগের কপিগুলো রাখুন।"
+          },
+          {
+            "q": "Edit Metadata কি PDF ব্যক্তিগতভাবে প্রসেস করে?",
+            "a": "হ্যাঁ। Edit Metadata ব্রাউজার ট্যাবে চলে; ফাইল আপলোড হয় না। অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়াই সাধারণ শিরোনাম, লেখক, বিষয় ও কীওয়ার্ড বদলানো যায়।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "compare-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-archive-naming-convention",
+          "pdf-archive-review-schedule",
+          "metadata-for-pdf-records",
+          "pdf-review-copy-checklist"
+        ]
       }
     ]
   },
@@ -39572,6 +40282,148 @@
           "send-confidential-pdf-safely",
           "preserving-signed-pdfs",
           "document-version-naming-pdf"
+        ]
+      },
+      {
+        "topic": "document-version-naming-pdf",
+        "slug": "document-version-naming-pdf",
+        "title": "Cách đặt tên phiên bản tài liệu PDF",
+        "metaTitle": "Cách đặt tên phiên bản tài liệu PDF",
+        "metaDescription": "Quản lý phiên bản PDF bằng tên và ngày rõ ràng. Sửa tiêu đề, tác giả miễn phí trên trình duyệt, không đăng ký hay hình mờ.",
+        "keyword": "cách đặt tên phiên bản PDF",
+        "secondaryKeywords": [
+          "quy tắc đặt tên PDF",
+          "tên tệp PDF theo ngày và phiên bản",
+          "sửa siêu dữ liệu PDF"
+        ],
+        "answer": "Đặt tên mỗi phiên bản PDF theo quy tắc cố định gồm dự án, tài liệu, trạng thái, ngày và số phiên bản; ví dụ ClientX_Contract_Review_2026-11-15_v02.pdf. Đừng ghi đè bản trước. Tên tệp khác với siêu dữ liệu bên trong: PrintxPDF cho phép sửa tiêu đề và tác giả PDF ngay trên trình duyệt.",
+        "tool": "edit-metadata",
+        "ctaLabel": "Sửa siêu dữ liệu PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Dùng một quy tắc tên cố định để nhóm nhận biết nhanh dự án, tài liệu, trạng thái, ngày và phiên bản. Ví dụ: ClientX_Contract_Review_2026-11-15_v02.pdf. Giữ các bản trước thay vì ghi đè. Tên tệp và tiêu đề lưu bên trong PDF là hai thứ khác nhau; bạn có thể cập nhật tiêu đề bằng Edit Metadata miễn phí, chạy ngay trên trình duyệt."
+          },
+          {
+            "t": "h2",
+            "x": "Tạo tên phiên bản rõ ràng"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Chọn quy tắc ngắn gọn",
+                "x": "Dùng Project_Document_Status_Date_vNN.pdf. Giữ cùng thứ tự và dấu phân cách cho cả nhóm."
+              },
+              {
+                "h": "Ghi rõ trạng thái rà soát",
+                "x": "Dùng nhãn như Draft, Review, Approved hoặc Signed. Tránh tên mơ hồ như final-final hay latest."
+              },
+              {
+                "h": "Thêm ngày và số phiên bản tuần tự",
+                "x": "Dùng YYYY-MM-DD để sắp xếp theo ngày, v01, v02, v03 cho từng lần sửa. Không dùng lại số."
+              },
+              {
+                "h": "Lưu mỗi phiên bản thành tệp mới",
+                "x": "Đừng ghi đè PDF người khác đã rà soát hoặc ký. Giữ bản gốc và ghi ngắn gọn nội dung thay đổi, người phê duyệt."
+              },
+              {
+                "h": "Đồng bộ tiêu đề bên trong và kiểm tra",
+                "x": "Nếu chia sẻ PDF, cập nhật cả tiêu đề và tác giả trong siêu dữ liệu. Mở tệp để kiểm tra phiên bản, trang và chữ ký."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Sửa siêu dữ liệu PDF miễn phí trên trình duyệt, không cần đăng ký hay hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Tên tệp và siêu dữ liệu PDF khác nhau"
+          },
+          {
+            "t": "p",
+            "x": "Tên tệp giúp mọi người sắp xếp và nhận ra các bản; siêu dữ liệu PDF lưu thuộc tính bên trong như tiêu đề, tác giả, chủ đề và từ khóa. Đổi tiêu đề nội bộ không đổi tên tệp, còn đổi tên tệp không thay tiêu đề mà trình đọc PDF có thể hiển thị. Hãy đồng bộ cả hai khi cần để tránh nhầm lẫn."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ lịch sử đáng tin cậy"
+          },
+          {
+            "t": "p",
+            "x": "Một quy ước hữu ích là Project_Document_Status_YYYY-MM-DD_vNN.pdf. Giữ nhãn ngắn và tránh ký tự gây lỗi trong hệ thống chia sẻ. Ghi trạng thái vì “nháp”, “đang rà soát”, “đã duyệt” và “đã ký” có ý nghĩa khác nhau. Ngày ISO năm-tháng-ngày thường giúp danh sách sắp xếp đúng thứ tự thời gian. Dùng số phiên bản tăng dần và lưu mỗi lần sửa thành một tệp riêng. Nếu cần giải thích thay đổi, giữ nhật ký phiên bản riêng gồm ngày, người phụ trách, phê duyệt và tóm tắt; đừng biến tên tệp thành một đoạn văn. Không sửa PDF sau khi ký số vì mọi thay đổi có thể ảnh hưởng hiệu lực chữ ký."
+          },
+          {
+            "t": "h2",
+            "x": "Sửa tiêu đề bên trong PDF"
+          },
+          {
+            "t": "p",
+            "x": "Edit Metadata của PrintxPDF sửa tiêu đề, tác giả, chủ đề và từ khóa chuẩn ngay trong trình duyệt; PDF không được tải lên. Công cụ không đổi tên tệp và không cập nhật mọi khối siêu dữ liệu nâng cao. Để xóa thuộc tính chuẩn trước khi chia sẻ, dùng [Remove Metadata](/tools/remove-metadata); để so sánh hai bản, dùng [Compare PDF](/tools/compare-pdf)."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Nhu cầu",
+              "Cách làm",
+              "Lý do"
+            ],
+            "rows": [
+              [
+                "Nhận biết dự án",
+                "Dùng tiền tố nhất quán",
+                "Nhóm tài liệu liên quan"
+              ],
+              [
+                "Biết trạng thái hiện tại",
+                "Thêm Draft/Review/Approved",
+                "Tránh gửi nhầm bản"
+              ],
+              [
+                "Sắp xếp lần sửa",
+                "Dùng ngày ISO và vNN",
+                "Giữ trình tự rõ ràng"
+              ],
+              [
+                "Hiện đúng tiêu đề trong trình đọc",
+                "Sửa siêu dữ liệu PDF",
+                "Tiêu đề nội bộ khác tên tệp"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Sửa siêu dữ liệu có đổi tên tệp PDF không?",
+            "a": "Không. Tên tệp nằm trong hệ thống tệp, còn siêu dữ liệu là thuộc tính bên trong PDF. Sửa tiêu đề nội bộ không đổi tên tệp; bạn có thể đổi riêng từng phần."
+          },
+          {
+            "q": "Nên dùng định dạng ngày nào?",
+            "a": "YYYY-MM-DD, như 2026-11-15, tránh nhầm ngày với tháng và giúp sắp xếp phiên bản theo ngày. Hãy dùng nhất quán trong cả dự án."
+          },
+          {
+            "q": "Có nên ghi “final” trong tên không?",
+            "a": "Hãy dùng trạng thái và số phiên bản rõ ràng như Approved_v03 hoặc Signed_2026-11-15. Tránh final-final và giữ các bản cũ."
+          },
+          {
+            "q": "Edit Metadata có xử lý PDF riêng tư không?",
+            "a": "Có. Edit Metadata chạy trong thẻ trình duyệt; tệp không được tải lên. Bạn có thể sửa tiêu đề, tác giả, chủ đề và từ khóa chuẩn mà không cần tài khoản hay hình mờ."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "compare-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-archive-naming-convention",
+          "pdf-archive-review-schedule",
+          "metadata-for-pdf-records",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
@@ -46172,6 +47024,148 @@
           "send-confidential-pdf-safely",
           "preserving-signed-pdfs",
           "document-version-naming-pdf"
+        ]
+      },
+      {
+        "topic": "document-version-naming-pdf",
+        "slug": "document-version-naming-pdf",
+        "title": "PDF 文档版本如何命名",
+        "metaTitle": "PDF 文档版本如何命名",
+        "metaDescription": "用清晰名称和日期管理 PDF 版本。可在浏览器中免费修改标题和作者，保留原件并核对版本；无需注册、无水印。",
+        "keyword": "PDF 版本命名方法",
+        "secondaryKeywords": [
+          "PDF 命名规则",
+          "带日期和版本号的 PDF 文件名",
+          "编辑 PDF 元数据"
+        ],
+        "answer": "为每个 PDF 版本使用固定命名规则，包含项目、文档、状态、日期和版本号，例如 ClientX_Contract_Review_2026-11-15_v02.pdf。不要覆盖旧版本。文件名与 PDF 内部元数据不同：PrintxPDF 可在浏览器本地修改 PDF 标题和作者。",
+        "tool": "edit-metadata",
+        "ctaLabel": "编辑 PDF 元数据",
+        "body": [
+          {
+            "t": "p",
+            "x": "使用固定的文件命名规则，让团队一眼看出项目、文档、状态、日期和版本。例如：ClientX_Contract_Review_2026-11-15_v02.pdf。保留旧版本，不要覆盖。文件名与 PDF 内部保存的标题是两项不同信息；可使用免费、在浏览器中运行的“编辑元数据”工具更新内部标题。"
+          },
+          {
+            "t": "h2",
+            "x": "建立清晰的版本名称"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "确定简短且固定的规则",
+                "x": "使用 Project_Document_Status_Date_vNN.pdf 这样的结构。全团队保持顺序和分隔符一致。"
+              },
+              {
+                "h": "标明审核状态",
+                "x": "使用 Draft、Review、Approved 或 Signed 等明确标签。避免 final-final 或 latest 这样的模糊名称。"
+              },
+              {
+                "h": "添加明确日期和递增版本号",
+                "x": "使用 YYYY-MM-DD 便于按日期排序，用 v01、v02、v03 标记修订。不要重复使用版本号。"
+              },
+              {
+                "h": "每个版本另存为新文件",
+                "x": "不要覆盖他人已审核或签署的 PDF。保留原件，并简要记录修改内容和批准人。"
+              },
+              {
+                "h": "同步内部标题并检查",
+                "x": "分享 PDF 时，也更新元数据中的标题和作者。打开文件核对版本、页面和签名。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "在浏览器中免费编辑 PDF 元数据，无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "文件名与 PDF 元数据不同"
+          },
+          {
+            "t": "p",
+            "x": "文件名帮助人们整理和识别副本；PDF 元数据保存标题、作者、主题和关键词等内部属性。修改内部标题不会重命名文件，重命名文件也不会改变 PDF 阅读器可能显示的标题。为避免混淆，必要时让两者保持一致。"
+          },
+          {
+            "t": "h2",
+            "x": "保留可靠的版本记录"
+          },
+          {
+            "t": "p",
+            "x": "一种实用规则是 Project_Document_Status_YYYY-MM-DD_vNN.pdf。标签保持简短，避免在共享系统中引发问题的字符。注明状态，因为“草稿”“待审核”“已批准”和“已签署”含义不同。ISO 年-月-日日期通常便于列表按时间排序。 使用递增版本号，并将每次修订保存为单独文件。如需说明修改，可单独维护版本记录，包含日期、负责人、批准状态和摘要；不要把文件名写成一段话。PDF 数字签署后不要再编辑，任何更改都可能影响签名有效性。"
+          },
+          {
+            "t": "h2",
+            "x": "修改 PDF 内部标题"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF“编辑元数据”可直接在浏览器中修改标准标题、作者、主题和关键词；PDF 不会上传。它不会重命名文件，也不会更新所有高级元数据块。分享前要清除常见属性，可使用 [Remove Metadata](/tools/remove-metadata)；比较两个副本可使用 [Compare PDF](/tools/compare-pdf)。"
+          },
+          {
+            "t": "table",
+            "head": [
+              "需求",
+              "操作",
+              "原因"
+            ],
+            "rows": [
+              [
+                "识别项目",
+                "使用固定前缀",
+                "将相关文档归在一起"
+              ],
+              [
+                "查看当前状态",
+                "添加草稿/审核/已批准",
+                "避免发送错误副本"
+              ],
+              [
+                "排列修订版本",
+                "使用 ISO 日期和 vNN",
+                "保持顺序清晰"
+              ],
+              [
+                "在阅读器中显示正确标题",
+                "编辑 PDF 元数据",
+                "内部标题与文件名不同"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "编辑元数据会同时更改 PDF 文件名吗？",
+            "a": "不会。文件名属于文件系统信息，元数据是 PDF 内部属性。修改内部标题不会重命名文件，两者可以分别更改。"
+          },
+          {
+            "q": "日期应该使用什么格式？",
+            "a": "YYYY-MM-DD，例如 2026-11-15，可以减少日月混淆，并帮助按日期排序版本。请在整个项目中使用统一格式。"
+          },
+          {
+            "q": "文件名里应该写“最终版”吗？",
+            "a": "建议使用明确状态和版本号，例如 Approved_v03 或 Signed_2026-11-15。避免 final-final，并保留之前的版本。"
+          },
+          {
+            "q": "编辑元数据会在本地处理 PDF 吗？",
+            "a": "会。“编辑元数据”在浏览器标签页中运行，文件不会上传。无需账户或水印即可修改标准标题、作者、主题和关键词。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "compare-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "pdf-archive-naming-convention",
+          "pdf-archive-review-schedule",
+          "metadata-for-pdf-records",
+          "pdf-review-copy-checklist"
         ]
       }
     ]
