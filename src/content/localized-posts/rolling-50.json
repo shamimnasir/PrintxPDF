@@ -3242,6 +3242,158 @@
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "convert-pdf-to-pdfa-for-archive",
+        "slug": "convert-pdf-to-pdfa-for-archive",
+        "cluster": "archive",
+        "title": "Cómo convertir un PDF a PDF/A para archivarlo",
+        "metaTitle": "Cómo convertir un PDF a PDF/A para archivarlo",
+        "metaDescription": "Convierte PDF a PDF/A para archivo. Conserva el original, confirma el perfil y revisa el resultado. Este proceso usa servidor.",
+        "primaryKeyword": "convertir PDF a PDF/A para archivo",
+        "secondaryKeywords": [
+          "PDF/A archive copy",
+          "PDF preservation format",
+          "PDF/A conversion",
+          "long term PDF archive"
+        ],
+        "answer": "Para crear una copia PDF/A, conserva el original, confirma el perfil exigido, convierte una copia de trabajo aprobada y compara el resultado con la fuente. La conversión PDF/A de PrintxPDF se procesa en el servidor y se indica claramente; úsala solo si ese procesamiento está autorizado.",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A es un perfil de PDF orientado a la conservación, no una garantía de que un documento siga siendo correcto o accesible para siempre. Úsalo cuando el archivo, tribunal, universidad o política de registros lo requiera. Conserva primero el original, confirma el perfil exacto y compara el resultado antes de archivarlo. PrintxPDF indica que esta conversión se procesa en el servidor: el archivo se transmite de forma segura, se convierte y se elimina al terminar."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo crear una copia PDF/A para archivo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el registro original",
+                "x": "Mantén el PDF fuente sin cambios, sobre todo si está firmado, sujeto a normas o puede servir como prueba."
+              },
+              {
+                "h": "Confirma el requisito PDF/A",
+                "x": "Pregunta si el archivo exige PDF/A-1b, PDF/A-2b u otro perfil concreto."
+              },
+              {
+                "h": "Usa una copia de trabajo autorizada",
+                "x": "Abre [PDF a PDF/A](/tools/pdf-to-pdfa) solo si el procesamiento en servidor está aprobado para el documento."
+              },
+              {
+                "h": "Compara el PDF convertido",
+                "x": "Comprueba número de páginas, fuentes, imágenes, formularios, firmas y texto buscable frente a la fuente."
+              },
+              {
+                "h": "Guarda las notas de conversión",
+                "x": "Registra el perfil, la fecha, el identificador de origen y los cambios que exija el proceso de archivo."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Crea una copia PDF/A con aviso claro de procesamiento en servidor. Acceso básico gratis y sin marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "PDF original frente a copia PDF/A"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Copia",
+              "Objetivo",
+              "Qué conservar"
+            ],
+            "rows": [
+              [
+                "PDF original",
+                "Procedencia y evidencia de origen",
+                "Guárdalo sin cambios cuando importen la política o las firmas."
+              ],
+              [
+                "Copia de trabajo",
+                "Conversión y revisión",
+                "Documenta los cambios realizados."
+              ],
+              [
+                "Copia PDF/A",
+                "Conservar la apariencia a largo plazo",
+                "Registra el perfil exigido y la validación."
+              ],
+              [
+                "Copia de acceso",
+                "Distribución habitual",
+                "Aplica controles de privacidad y acceso aprobados."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "La conversión PDF/A puede cambiar funciones"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A restringe funciones como el cifrado y las dependencias externas para que el archivo sea más autónomo. Esto puede afectar formularios interactivos, JavaScript, contenido multimedia, transparencias, fuentes o firmas. Que la conversión termine no demuestra que todo se haya conservado ni que el archivo sea aceptado. Revisa el resultado y usa el validador o proceso de entrega de la organización receptora cuando lo especifique."
+          },
+          {
+            "t": "h2",
+            "x": "Usa el procesamiento en servidor de forma deliberada"
+          },
+          {
+            "t": "p",
+            "x": "La mayoría de herramientas PrintxPDF funciona localmente en el navegador, pero la conversión PDF/A necesita un motor de fuentes y color del servidor. El sitio lo avisa antes de usarla. No subas registros confidenciales, restringidos o regulados salvo que este procesamiento esté autorizado. El archivo se elimina después de la conversión, pero las reglas de tu organización determinan si el método es adecuado."
+          },
+          {
+            "t": "h2",
+            "x": "Separa conservación y privacidad"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A trata de la representación a largo plazo, no de eliminar información confidencial. El archivo convertido aún puede contener texto sensible visible, propiedades, adjuntos u otros datos. Usa [Quitar metadatos](/tools/remove-metadata) en una copia separada para compartir si la política lo exige, y aplica redacción verificada al contenido que no debe verse. Conserva el registro original por separado."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa antes de archivar"
+          },
+          {
+            "t": "p",
+            "x": "Abre el resultado PDF/A, compara páginas representativas con la fuente y verifica que el sistema receptor acepte el perfil. Revisa nombres, fechas, importes, imágenes, firmas y orden de páginas. Guarda el original, la copia de archivo y las notas conforme a la política de retención. Así será posible revisar la conversión aunque cambie el visor o sistema de archivo."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿PDF/A es mejor que PDF para archivar?",
+            "a": "PDF/A está diseñado para requisitos de conservación a largo plazo, pero no es obligatorio ni mejor automáticamente para todo documento. Sigue el perfil que indique el archivo receptor."
+          },
+          {
+            "q": "¿La conversión PDF/A cambia el original?",
+            "a": "No. Convierte una copia de trabajo y conserva el original, especialmente si importan las firmas, la evidencia o la procedencia."
+          },
+          {
+            "q": "¿PDF a PDF/A se procesa en el navegador?",
+            "a": "No. Se procesa en el servidor y se indica claramente porque necesita un motor de fuentes y color. Los archivos se eliminan después de convertirlos."
+          },
+          {
+            "q": "¿PDF/A elimina metadatos o texto privado?",
+            "a": "No. PDF/A establece restricciones de conservación. Usa aparte la eliminación de metadatos o la redacción cuando sea necesario."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "remove-metadata",
+          "pdf-reader",
+          "repair-pdf"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "prepare-pdf-for-long-term-archive",
+          "will-this-file-still-open",
+          "remove-metadata-from-pdf"
+        ]
       }
     ]
   },
@@ -6478,6 +6630,158 @@
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "convert-pdf-to-pdfa-for-archive",
+        "slug": "convert-pdf-to-pdfa-for-archive",
+        "cluster": "archive",
+        "title": "Como converter PDF em PDF/A para arquivar",
+        "metaTitle": "Como converter PDF em PDF/A para arquivar",
+        "metaDescription": "Converta PDF em PDF/A para arquivo. Preserve o original, confirme o perfil e confira o resultado. O processamento usa servidor.",
+        "primaryKeyword": "converter PDF em PDF/A para arquivo",
+        "secondaryKeywords": [
+          "PDF/A archive copy",
+          "PDF preservation format",
+          "PDF/A conversion",
+          "long term PDF archive"
+        ],
+        "answer": "Para criar uma cópia PDF/A, preserve o original, confirme o perfil exigido, converta uma cópia de trabalho aprovada e compare o resultado com a fonte. A conversão PDF/A do PrintxPDF é processada no servidor e claramente identificada; use-a somente quando esse processamento estiver autorizado.",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A é um perfil de PDF voltado à preservação, não uma garantia de que o documento permanecerá correto ou acessível para sempre. Use-o quando o arquivo, tribunal, universidade ou política de registros exigir. Preserve primeiro o original, confirme o perfil específico e compare o resultado antes de arquivar. O PrintxPDF informa que a conversão é processada no servidor: o arquivo é enviado por conexão segura, convertido e excluído ao final."
+          },
+          {
+            "t": "h2",
+            "x": "Como criar uma cópia PDF/A para arquivo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Preserve o registro original",
+                "x": "Mantenha o PDF de origem sem alterações, especialmente se for assinado, regulado ou necessário como evidência."
+              },
+              {
+                "h": "Confirme o requisito PDF/A",
+                "x": "Pergunte se o arquivo exige PDF/A-1b, PDF/A-2b ou outro perfil específico."
+              },
+              {
+                "h": "Use uma cópia de trabalho aprovada",
+                "x": "Abra [PDF para PDF/A](/tools/pdf-to-pdfa) somente quando o processamento no servidor estiver autorizado para o documento."
+              },
+              {
+                "h": "Compare o PDF convertido",
+                "x": "Confira número de páginas, fontes, imagens, formulários, assinaturas e texto pesquisável com a fonte."
+              },
+              {
+                "h": "Registre as notas da conversão",
+                "x": "Anote o perfil, a data, o identificador da fonte e as alterações exigidas pelo processo de arquivamento."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Crie uma cópia PDF/A com aviso claro sobre processamento no servidor. Acesso básico grátis, sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "PDF original versus cópia PDF/A de arquivo"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Cópia",
+              "Finalidade",
+              "O que preservar"
+            ],
+            "rows": [
+              [
+                "PDF original",
+                "Procedência e evidência da fonte",
+                "Mantenha sem alterações quando políticas ou assinaturas forem importantes."
+              ],
+              [
+                "Cópia de trabalho",
+                "Conversão e revisão",
+                "Documente as alterações realizadas."
+              ],
+              [
+                "Cópia PDF/A",
+                "Preservação do layout a longo prazo",
+                "Registre o perfil exigido e a validação."
+              ],
+              [
+                "Cópia de acesso",
+                "Distribuição rotineira",
+                "Aplique controles de privacidade e acesso aprovados."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "A conversão PDF/A pode alterar recursos"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A restringe recursos como criptografia e dependências externas para tornar o arquivo mais independente. Isso pode afetar formulários interativos, JavaScript, mídia, transparências, fontes ou assinaturas. A conversão bem-sucedida não prova que todos os recursos foram preservados nem que o arquivo será aceito. Revise o resultado e use o validador ou processo de envio da organização receptora quando especificado."
+          },
+          {
+            "t": "h2",
+            "x": "Use o processamento no servidor com critério"
+          },
+          {
+            "t": "p",
+            "x": "A maioria das ferramentas PrintxPDF funciona localmente no navegador, mas a conversão PDF/A precisa de um mecanismo de fontes e cores no servidor. O site informa isso antes do uso. Não envie registros confidenciais, restritos ou regulados sem autorização para esse processamento. O arquivo é excluído após a conversão, mas as regras da sua organização determinam se esse método é adequado."
+          },
+          {
+            "t": "h2",
+            "x": "Separe preservação de privacidade"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A trata da renderização a longo prazo, não da remoção de informações confidenciais. O arquivo convertido ainda pode conter texto sensível visível, propriedades, anexos ou outros dados. Use [Remover metadados](/tools/remove-metadata) em uma cópia separada para distribuição quando a política exigir, e aplique tarja verificada ao conteúdo que não deve aparecer. Preserve o registro original separadamente."
+          },
+          {
+            "t": "h2",
+            "x": "Revise antes de arquivar"
+          },
+          {
+            "t": "p",
+            "x": "Abra o resultado PDF/A, compare páginas representativas com a fonte e confirme que o sistema receptor aceita o perfil. Confira nomes, datas, valores, imagens, assinaturas e ordem das páginas. Guarde o original, a cópia de arquivo e as notas conforme a política de retenção. Assim, será possível revisar o processo mesmo que o visualizador ou sistema mude."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF/A é melhor que PDF para arquivos?",
+            "a": "PDF/A foi criado para requisitos de preservação a longo prazo, mas não é automaticamente necessário ou melhor para todo documento. Siga o perfil informado pelo arquivo receptor."
+          },
+          {
+            "q": "A conversão PDF/A altera o original?",
+            "a": "Não. Converta uma cópia de trabalho e retenha a fonte original, especialmente quando assinaturas, evidências ou procedência forem importantes."
+          },
+          {
+            "q": "PDF para PDF/A é processado no navegador?",
+            "a": "Não. O processamento ocorre no servidor e é claramente identificado porque exige um mecanismo de fontes e cores. Os arquivos são excluídos após a conversão."
+          },
+          {
+            "q": "PDF/A remove metadados ou texto privado?",
+            "a": "Não. PDF/A define restrições de preservação. Use etapas separadas de remoção de metadados ou tarja quando necessário."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "remove-metadata",
+          "pdf-reader",
+          "repair-pdf"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "prepare-pdf-for-long-term-archive",
+          "will-this-file-still-open",
+          "remove-metadata-from-pdf"
+        ]
       }
     ]
   },
@@ -9713,6 +10017,158 @@
           "make-pdf-searchable",
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "convert-pdf-to-pdfa-for-archive",
+        "slug": "convert-pdf-to-pdfa-for-archive",
+        "cluster": "archive",
+        "title": "आर्काइव के लिए PDF को PDF/A में कैसे बदलें",
+        "metaTitle": "आर्काइव के लिए PDF को PDF/A में कैसे बदलें",
+        "metaDescription": "आर्काइव हेतु PDF को PDF/A में बदलें। मूल सुरक्षित रखें, प्रोफ़ाइल की पुष्टि करें और परिणाम जाँचें। प्रोसेसिंग सर्वर पर होती है।",
+        "primaryKeyword": "आर्काइव के लिए PDF को PDF/A में बदलें",
+        "secondaryKeywords": [
+          "PDF/A archive copy",
+          "PDF preservation format",
+          "PDF/A conversion",
+          "long term PDF archive"
+        ],
+        "answer": "PDF/A आर्काइव कॉपी बनाने के लिए मूल फ़ाइल सुरक्षित रखें, ज़रूरी प्रोफ़ाइल की पुष्टि करें, स्वीकृत कामकाजी कॉपी बदलें और परिणाम को स्रोत से मिलाएँ। PrintxPDF का PDF/A रूपांतरण सर्वर पर होता है और पहले से स्पष्ट बताया जाता है; इसका उपयोग तभी करें जब यह प्रोसेसिंग स्वीकृत हो।",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A संरक्षण के लिए बना PDF प्रोफ़ाइल है; यह गारंटी नहीं कि दस्तावेज़ हमेशा सही या उपलब्ध रहेगा। इसका उपयोग तभी करें जब आर्काइव, अदालत, विश्वविद्यालय या रिकॉर्ड नीति माँगे। पहले मूल सुरक्षित रखें, सही प्रोफ़ाइल जानें और फ़ाइल करने से पहले परिणाम की तुलना करें। PrintxPDF बताता है कि PDF/A रूपांतरण सर्वर पर होता है: फ़ाइल सुरक्षित कनेक्शन से भेजी जाती है, बदली जाती है और काम पूरा होने पर मिटा दी जाती है।"
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव कॉपी के लिए PDF/A कैसे बनाएँ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल रिकॉर्ड सुरक्षित रखें",
+                "x": "स्रोत PDF को बिना बदले रखें, खासकर यदि उस पर हस्ताक्षर हों, नियम लागू हों या सबूत के रूप में ज़रूरत हो।"
+              },
+              {
+                "h": "PDF/A की ज़रूरत की पुष्टि करें",
+                "x": "पूछें कि आर्काइव को PDF/A-1b, PDF/A-2b या कोई दूसरा खास प्रोफ़ाइल चाहिए।"
+              },
+              {
+                "h": "स्वीकृत कामकाजी कॉपी इस्तेमाल करें",
+                "x": "[PDF से PDF/A](/tools/pdf-to-pdfa) तभी खोलें जब दस्तावेज़ के लिए सर्वर प्रोसेसिंग की अनुमति हो।"
+              },
+              {
+                "h": "बदली हुई PDF की तुलना करें",
+                "x": "पन्नों की संख्या, फ़ॉन्ट, चित्र, फ़ॉर्म, हस्ताक्षर और खोजने योग्य टेक्स्ट को स्रोत से मिलाएँ।"
+              },
+              {
+                "h": "रूपांतरण नोट रखें",
+                "x": "प्रोफ़ाइल, तारीख, स्रोत पहचान और आर्काइव प्रक्रिया में ज़रूरी बदलाव लिखें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "सर्वर प्रोसेसिंग की स्पष्ट सूचना के साथ PDF/A आर्काइव कॉपी बनाएँ। मुफ़्त मूल उपयोग, बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "मूल PDF और PDF/A आर्काइव कॉपी"
+          },
+          {
+            "t": "table",
+            "head": [
+              "कॉपी",
+              "उद्देश्य",
+              "क्या रखें"
+            ],
+            "rows": [
+              [
+                "मूल PDF",
+                "स्रोत और प्रामाणिकता का रिकॉर्ड",
+                "नीति या हस्ताक्षर महत्वपूर्ण हों तो इसे न बदलें।"
+              ],
+              [
+                "कामकाजी कॉपी",
+                "रूपांतरण और समीक्षा",
+                "किए गए बदलाव दर्ज करें।"
+              ],
+              [
+                "PDF/A कॉपी",
+                "लंबे समय तक लेआउट सुरक्षित रखना",
+                "ज़रूरी प्रोफ़ाइल और सत्यापन दर्ज करें।"
+              ],
+              [
+                "एक्सेस कॉपी",
+                "सामान्य वितरण",
+                "स्वीकृत गोपनीयता और एक्सेस नियंत्रण लगाएँ।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "PDF/A रूपांतरण सुविधाएँ बदल सकता है"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A फ़ाइल को अधिक आत्मनिर्भर बनाने के लिए एन्क्रिप्शन और बाहरी निर्भरता जैसी सुविधाएँ सीमित करता है। इससे इंटरैक्टिव फ़ॉर्म, JavaScript, मीडिया, पारदर्शिता, फ़ॉन्ट या हस्ताक्षर प्रभावित हो सकते हैं। रूपांतरण सफल होना इस बात का प्रमाण नहीं कि हर सुविधा बची है या आर्काइव फ़ाइल स्वीकार करेगा। परिणाम देखें और जहाँ कहा गया हो, प्राप्तकर्ता संस्था का सत्यापन टूल या जमा प्रक्रिया अपनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "सर्वर प्रोसेसिंग सोच-समझकर चुनें"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF के अधिकांश टूल ब्राउज़र में स्थानीय रूप से चलते हैं, लेकिन PDF/A रूपांतरण के लिए सर्वर का फ़ॉन्ट और रंग इंजन चाहिए। साइट उपयोग से पहले यह बताती है। गोपनीय, प्रतिबंधित या नियमन वाले रिकॉर्ड तब तक अपलोड न करें जब तक ऐसी प्रोसेसिंग स्वीकृत न हो। रूपांतरण के बाद फ़ाइल मिटा दी जाती है, फिर भी तरीका उपयुक्त है या नहीं यह आपकी संस्था के नियम तय करते हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "संरक्षण और गोपनीयता अलग रखें"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A का उद्देश्य लंबे समय तक सही रूप दिखाना है, गोपनीय जानकारी हटाना नहीं। बदली हुई फ़ाइल में दिखाई देने वाला संवेदनशील टेक्स्ट, प्रॉपर्टी, अटैचमेंट या अन्य डेटा रह सकता है। नीति माँगे तो साझा करने की अलग कॉपी पर [Remove Metadata](/tools/remove-metadata) चलाएँ और छिपाने योग्य सामग्री पर सत्यापित रेडैक्शन करें। मूल रिकॉर्ड अलग सुरक्षित रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "आर्काइव करने से पहले समीक्षा करें"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A परिणाम खोलें, कुछ प्रतिनिधि पन्ने स्रोत से मिलाएँ और पुष्टि करें कि प्राप्तकर्ता सिस्टम प्रोफ़ाइल स्वीकार करता है। नाम, तारीख, कुल, चित्र, हस्ताक्षर और पन्नों का क्रम देखें। नीति के अनुसार मूल, आर्काइव कॉपी और रूपांतरण नोट रखें। इससे भविष्य में व्यूअर या आर्काइव सिस्टम बदलने पर भी समीक्षा संभव होगी।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या आर्काइव के लिए PDF/A, PDF से बेहतर है?",
+            "a": "PDF/A लंबे समय के संरक्षण की ज़रूरतों के लिए बनाया गया है, लेकिन हर दस्तावेज़ के लिए यह अपने आप ज़रूरी या बेहतर नहीं। प्राप्तकर्ता आर्काइव का प्रोफ़ाइल अपनाएँ।"
+          },
+          {
+            "q": "क्या PDF/A रूपांतरण मूल फ़ाइल बदलता है?",
+            "a": "नहीं। कामकाजी कॉपी बदलें और मूल रखें, खासकर जब हस्ताक्षर, सबूत या स्रोत-इतिहास महत्वपूर्ण हों।"
+          },
+          {
+            "q": "क्या PDF से PDF/A ब्राउज़र में प्रोसेस होता है?",
+            "a": "नहीं। यह सर्वर पर प्रोसेस होता है और स्पष्ट बताया जाता है क्योंकि फ़ॉन्ट और रंग इंजन चाहिए। रूपांतरण के बाद फ़ाइलें मिटाई जाती हैं।"
+          },
+          {
+            "q": "क्या PDF/A मेटाडेटा या निजी टेक्स्ट हटाता है?",
+            "a": "नहीं। PDF/A संरक्षण संबंधी नियम तय करता है। ज़रूरत पर मेटाडेटा हटाने या रेडैक्शन के अलग चरण अपनाएँ।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "remove-metadata",
+          "pdf-reader",
+          "repair-pdf"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "prepare-pdf-for-long-term-archive",
+          "will-this-file-still-open",
+          "remove-metadata-from-pdf"
         ]
       }
     ]
@@ -12958,6 +13414,158 @@
           "make-pdf-searchable",
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "convert-pdf-to-pdfa-for-archive",
+        "slug": "convert-pdf-to-pdfa-for-archive",
+        "cluster": "archive",
+        "title": "كيفية تحويل PDF إلى PDF/A للأرشفة",
+        "metaTitle": "كيفية تحويل PDF إلى PDF/A للأرشفة",
+        "metaDescription": "حوّل PDF إلى PDF/A للأرشفة. احتفظ بالأصل، وحدد الملف المطلوب، وافحص النتيجة. تتم المعالجة على الخادم.",
+        "primaryKeyword": "تحويل PDF إلى PDF/A للأرشفة",
+        "secondaryKeywords": [
+          "PDF/A archive copy",
+          "PDF preservation format",
+          "PDF/A conversion",
+          "long term PDF archive"
+        ],
+        "answer": "لإنشاء نسخة PDF/A للأرشفة، احتفظ بالأصل، وتأكد من الملف المطلوب، وحوّل نسخة عمل معتمدة، ثم قارن النتيجة بالمصدر. تتم معالجة تحويل PDF/A في PrintxPDF على الخادم ويُعلن ذلك بوضوح؛ استخدمه فقط إذا كانت هذه المعالجة معتمدة.",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A ملف تعريف PDF مخصص للحفظ، وليس ضماناً لبقاء المستند صحيحاً أو متاحاً إلى الأبد. استخدمه عندما تطلبه سياسة الأرشيف أو المحكمة أو الجامعة أو السجلات. احتفظ بالأصل أولاً، وتأكد من الملف المطلوب، وقارن النتيجة قبل الإيداع. توضح PrintxPDF أن تحويل PDF/A يتم على الخادم: يُرسل الملف عبر اتصال آمن، ويُحوّل، ثم يُحذف عند الانتهاء."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية إنشاء نسخة PDF/A للأرشفة"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالسجل الأصلي",
+                "x": "أبقِ ملف PDF المصدر دون تغيير، خاصة إذا كان موقعاً أو خاضعاً للوائح أو مطلوباً كدليل."
+              },
+              {
+                "h": "تأكد من متطلبات PDF/A",
+                "x": "اسأل ما إذا كان الأرشيف يتطلب PDF/A-1b أو PDF/A-2b أو ملفاً آخر محدداً."
+              },
+              {
+                "h": "استخدم نسخة عمل معتمدة",
+                "x": "افتح [PDF إلى PDF/A](/tools/pdf-to-pdfa) فقط عندما تكون معالجة المستند على الخادم معتمدة."
+              },
+              {
+                "h": "قارن ملف PDF المحول",
+                "x": "تحقق من عدد الصفحات والخطوط والصور والنماذج والتوقيعات والنص القابل للبحث مقارنة بالمصدر."
+              },
+              {
+                "h": "سجل ملاحظات التحويل",
+                "x": "دوّن الملف المطلوب والتاريخ ومعرف المصدر وأي تغييرات تفرضها إجراءات الأرشفة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "أنشئ نسخة PDF/A للأرشفة مع إشعار واضح بالمعالجة على الخادم. الاستخدام الأساسي مجاني وبلا علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "ملف PDF الأصلي مقابل نسخة PDF/A للأرشفة"
+          },
+          {
+            "t": "table",
+            "head": [
+              "النسخة",
+              "الغرض",
+              "ما يجب الاحتفاظ به"
+            ],
+            "rows": [
+              [
+                "PDF الأصلي",
+                "المصدر وإثبات المنشأ",
+                "احتفظ به دون تغيير عندما تهم السياسة أو التوقيعات."
+              ],
+              [
+                "نسخة العمل",
+                "التحويل والمراجعة",
+                "وثّق التغييرات التي أجريتها."
+              ],
+              [
+                "نسخة PDF/A",
+                "الحفاظ على التخطيط على المدى الطويل",
+                "سجل الملف المطلوب ونتيجة التحقق."
+              ],
+              [
+                "نسخة الوصول",
+                "التوزيع المعتاد",
+                "طبّق ضوابط الخصوصية والوصول المعتمدة."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "قد يغيّر تحويل PDF/A بعض الميزات"
+          },
+          {
+            "t": "p",
+            "x": "يقيّد PDF/A ميزات مثل التشفير والاعتماد على موارد خارجية ليجعل الملف أكثر استقلالاً. قد يؤثر ذلك في النماذج التفاعلية وجافاسكريبت والوسائط والشفافية والخطوط أو التوقيعات. نجاح التحويل لا يثبت الحفاظ على كل ميزة أو قبول الأرشيف للملف. افحص النتيجة واستخدم أداة التحقق أو إجراء التسليم الذي تحدده الجهة المستلمة."
+          },
+          {
+            "t": "h2",
+            "x": "استخدم المعالجة على الخادم عن قصد"
+          },
+          {
+            "t": "p",
+            "x": "تعمل معظم أدوات PrintxPDF محلياً في المتصفح، لكن تحويل PDF/A يحتاج إلى محرك خطوط وألوان على الخادم. يوضح الموقع ذلك قبل الاستخدام. لا ترفع سجلات سرية أو مقيدة أو خاضعة للوائح ما لم تكن هذه المعالجة معتمدة لحالتك. يُحذف الملف بعد التحويل، لكن قواعد مؤسستك هي التي تحدد ملاءمة هذه الطريقة."
+          },
+          {
+            "t": "h2",
+            "x": "افصل بين الحفظ والخصوصية"
+          },
+          {
+            "t": "p",
+            "x": "يركز PDF/A على العرض طويل الأمد، وليس إزالة المعلومات السرية. قد يظل الملف المحول يحتوي على نص حساس ظاهر أو خصائص أو مرفقات أو معلومات أخرى. استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) لنسخة توزيع منفصلة عندما تتطلب السياسة ذلك، واستخدم تنقيحاً موثوقاً للمحتوى الذي يجب ألا يظهر. احتفظ بالسجل الأصلي منفصلاً."
+          },
+          {
+            "t": "h2",
+            "x": "راجع الملف قبل الإيداع"
+          },
+          {
+            "t": "p",
+            "x": "افتح نسخة PDF/A، وقارن صفحات ممثلة بالمصدر، وتأكد من قبول النظام المستلم للملف المطلوب. افحص الأسماء والتواريخ والإجماليات والصور والتوقيعات وترتيب الصفحات. خزّن الأصل ونسخة الأرشيف وملاحظات التحويل وفق سياسة الاحتفاظ. يتيح ذلك مراجعة لاحقة حتى إذا تغير العارض أو نظام الأرشفة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل PDF/A أفضل من PDF للأرشيف؟",
+            "a": "صُمم PDF/A لمتطلبات الحفظ طويل الأمد، لكنه ليس مطلوباً أو أفضل تلقائياً لكل مستند. اتبع الملف الذي يحدده الأرشيف المستلم."
+          },
+          {
+            "q": "هل يغيّر تحويل PDF/A الملف الأصلي؟",
+            "a": "لا. حوّل نسخة عمل واحتفظ بالمصدر الأصلي، خاصة عندما تهم التوقيعات أو الأدلة أو المنشأ."
+          },
+          {
+            "q": "هل تتم معالجة PDF إلى PDF/A في المتصفح؟",
+            "a": "لا. تتم المعالجة على الخادم ويُعلن ذلك بوضوح لأنها تحتاج إلى محرك خطوط وألوان. تُحذف الملفات بعد التحويل."
+          },
+          {
+            "q": "هل يزيل PDF/A البيانات الوصفية أو النص الخاص؟",
+            "a": "لا. يحدد PDF/A قيود الحفظ. استخدم خطوات منفصلة لإزالة البيانات الوصفية أو التنقيح عند الحاجة."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "remove-metadata",
+          "pdf-reader",
+          "repair-pdf"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "prepare-pdf-for-long-term-archive",
+          "will-this-file-still-open",
+          "remove-metadata-from-pdf"
         ]
       }
     ]
@@ -16207,6 +16815,158 @@
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "convert-pdf-to-pdfa-for-archive",
+        "slug": "convert-pdf-to-pdfa-for-archive",
+        "cluster": "archive",
+        "title": "আর্কাইভের জন্য PDF-কে PDF/A-তে রূপান্তর করবেন কীভাবে",
+        "metaTitle": "আর্কাইভের জন্য PDF-কে PDF/A-তে রূপান্তর করবেন কীভাবে",
+        "metaDescription": "আর্কাইভের জন্য PDF-কে PDF/A-তে রূপান্তর করুন। মূল রাখুন, প্রোফাইল নিশ্চিত করুন ও ফল দেখুন। প্রসেসিং সার্ভারে হয়।",
+        "primaryKeyword": "আর্কাইভের জন্য PDF-কে PDF/A-তে রূপান্তর",
+        "secondaryKeywords": [
+          "PDF/A archive copy",
+          "PDF preservation format",
+          "PDF/A conversion",
+          "long term PDF archive"
+        ],
+        "answer": "PDF/A আর্কাইভ কপি বানাতে মূল ফাইল রাখুন, প্রয়োজনীয় প্রোফাইল নিশ্চিত করুন, অনুমোদিত কাজের কপি রূপান্তর করুন এবং ফল উৎসের সঙ্গে মিলিয়ে দেখুন। PrintxPDF-এর PDF/A রূপান্তর সার্ভারে প্রসেস হয় এবং আগে থেকেই স্পষ্টভাবে জানানো হয়; অনুমোদন থাকলেই ব্যবহার করুন।",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A হলো দীর্ঘমেয়াদি সংরক্ষণের জন্য তৈরি PDF প্রোফাইল; এটি নথি চিরকাল ঠিক বা ব্যবহারযোগ্য থাকবে এমন নিশ্চয়তা নয়। আর্কাইভ, আদালত, বিশ্ববিদ্যালয় বা রেকর্ড নীতি চাইলে ব্যবহার করুন। আগে মূল ফাইল রাখুন, নির্দিষ্ট প্রোফাইল জানুন এবং জমা দেওয়ার আগে ফল তুলনা করুন। PrintxPDF জানায় যে PDF/A রূপান্তর সার্ভারে হয়: নিরাপদ সংযোগে ফাইল পাঠানো হয়, রূপান্তর করা হয় এবং কাজ শেষে মুছে ফেলা হয়।"
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভ কপির জন্য PDF/A কীভাবে তৈরি করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল রেকর্ড সংরক্ষণ করুন",
+                "x": "উৎস PDF অপরিবর্তিত রাখুন, বিশেষ করে স্বাক্ষরিত, নিয়ন্ত্রিত বা প্রমাণ হিসেবে দরকার হলে।"
+              },
+              {
+                "h": "PDF/A শর্ত নিশ্চিত করুন",
+                "x": "আর্কাইভে PDF/A-1b, PDF/A-2b বা অন্য নির্দিষ্ট প্রোফাইল লাগে কি না জেনে নিন।"
+              },
+              {
+                "h": "অনুমোদিত কাজের কপি ব্যবহার করুন",
+                "x": "নথির জন্য সার্ভার প্রসেসিং অনুমোদিত হলেই [PDF to PDF/A](/tools/pdf-to-pdfa) খুলুন।"
+              },
+              {
+                "h": "রূপান্তরিত PDF তুলনা করুন",
+                "x": "উৎসের সঙ্গে পৃষ্ঠাসংখ্যা, ফন্ট, ছবি, ফর্ম, স্বাক্ষর ও খোঁজার মতো লেখা মিলিয়ে দেখুন।"
+              },
+              {
+                "h": "রূপান্তরের নোট রাখুন",
+                "x": "প্রোফাইল, তারিখ, উৎস শনাক্তকারী এবং আর্কাইভ প্রক্রিয়ার প্রয়োজনীয় পরিবর্তন লিখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "সার্ভার প্রসেসিংয়ের স্পষ্ট নোটিসসহ PDF/A আর্কাইভ কপি তৈরি করুন। মূল সুবিধা বিনামূল্যে, ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "মূল PDF বনাম PDF/A আর্কাইভ কপি"
+          },
+          {
+            "t": "table",
+            "head": [
+              "কপি",
+              "উদ্দেশ্য",
+              "কী রাখবেন"
+            ],
+            "rows": [
+              [
+                "মূল PDF",
+                "উৎস ও প্রামাণ্যতার রেকর্ড",
+                "নীতি বা স্বাক্ষর গুরুত্বপূর্ণ হলে অপরিবর্তিত রাখুন।"
+              ],
+              [
+                "কাজের কপি",
+                "রূপান্তর ও পর্যালোচনা",
+                "করা পরিবর্তন নথিভুক্ত করুন।"
+              ],
+              [
+                "PDF/A কপি",
+                "দীর্ঘমেয়াদে বিন্যাস ধরে রাখা",
+                "প্রয়োজনীয় প্রোফাইল ও যাচাইয়ের ফল লিখুন।"
+              ],
+              [
+                "ব্যবহার কপি",
+                "সাধারণ বিতরণ",
+                "অনুমোদিত গোপনীয়তা ও প্রবেশাধিকার নিয়ন্ত্রণ দিন।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "PDF/A রূপান্তরে কিছু সুবিধা বদলাতে পারে"
+          },
+          {
+            "t": "p",
+            "x": "ফাইলকে স্বয়ংসম্পূর্ণ করতে PDF/A এনক্রিপশন ও বাহ্যিক নির্ভরতার মতো সুবিধা সীমিত করে। এতে ইন্টারঅ্যাকটিভ ফর্ম, JavaScript, মিডিয়া, স্বচ্ছতা, ফন্ট বা স্বাক্ষর প্রভাবিত হতে পারে। রূপান্তর সফল মানেই সব সুবিধা অক্ষত বা আর্কাইভ ফাইলটি গ্রহণ করবে এমন নয়। ফল পরীক্ষা করুন এবং প্রাপক সংস্থার নির্দিষ্ট যাচাইকারী বা জমা পদ্ধতি ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সার্ভার প্রসেসিং বুঝে ব্যবহার করুন"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF-এর বেশির ভাগ টুল ব্রাউজারে স্থানীয়ভাবে চলে, কিন্তু PDF/A রূপান্তরে সার্ভারের ফন্ট ও রঙের ইঞ্জিন লাগে। ব্যবহারের আগে সাইট এটি জানায়। অনুমোদন ছাড়া গোপনীয়, সীমাবদ্ধ বা নিয়ন্ত্রিত রেকর্ড আপলোড করবেন না। রূপান্তরের পরে ফাইল মুছে ফেলা হয়, তবে পদ্ধতিটি উপযুক্ত কি না তা আপনার প্রতিষ্ঠানের নিয়ম নির্ধারণ করে।"
+          },
+          {
+            "t": "h2",
+            "x": "সংরক্ষণ ও গোপনীয়তাকে আলাদা রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A দীর্ঘমেয়াদে সঠিকভাবে দেখানোর জন্য, গোপন তথ্য সরানোর জন্য নয়। রূপান্তরিত কপিতে দৃশ্যমান সংবেদনশীল লেখা, প্রপার্টি, সংযুক্তি বা অন্য তথ্য থাকতে পারে। নীতি চাইলে শেয়ার কপিতে আলাদা করে [Remove Metadata](/tools/remove-metadata) ব্যবহার করুন এবং লুকাতে হবে এমন লেখা যাচাই করা রেড্যাকশনে ঢাকুন। মূল রেকর্ড আলাদা রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "আর্কাইভে দেওয়ার আগে পর্যালোচনা করুন"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A ফল খুলে কিছু পৃষ্ঠা উৎসের সঙ্গে মিলিয়ে দেখুন এবং গ্রহণকারী সিস্টেম প্রোফাইলটি মানে কি না যাচাই করুন। নাম, তারিখ, মোট, ছবি, স্বাক্ষর ও পৃষ্ঠার ক্রম পরীক্ষা করুন। সংরক্ষণ নীতি অনুযায়ী মূল, আর্কাইভ কপি ও রূপান্তর নোট রাখুন। ভবিষ্যতে ভিউয়ার বা আর্কাইভ সিস্টেম বদলালেও এতে পর্যালোচনা সম্ভব হবে।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "আর্কাইভের জন্য PDF/A কি PDF-এর চেয়ে ভালো?",
+            "a": "PDF/A দীর্ঘমেয়াদি সংরক্ষণের জন্য তৈরি, তবে সব নথির জন্য এটি স্বয়ংক্রিয়ভাবে দরকারি বা ভালো নয়। গ্রহণকারী আর্কাইভ যে প্রোফাইল চায় তা অনুসরণ করুন।"
+          },
+          {
+            "q": "PDF/A রূপান্তরে কি মূল ফাইল বদলে যায়?",
+            "a": "না। কাজের কপি রূপান্তর করুন এবং মূল উৎস রাখুন, বিশেষ করে স্বাক্ষর, প্রমাণ বা উৎস-ইতিহাস গুরুত্বপূর্ণ হলে।"
+          },
+          {
+            "q": "PDF to PDF/A কি ব্রাউজারে প্রসেস হয়?",
+            "a": "না। ফন্ট ও রঙের ইঞ্জিন লাগায় এটি সার্ভারে প্রসেস হয় এবং স্পষ্টভাবে জানানো হয়। রূপান্তরের পরে ফাইল মুছে ফেলা হয়।"
+          },
+          {
+            "q": "PDF/A কি মেটাডেটা বা ব্যক্তিগত লেখা সরায়?",
+            "a": "না। PDF/A সংরক্ষণের সীমা নির্ধারণ করে। প্রয়োজনে আলাদা মেটাডেটা অপসারণ বা রেড্যাকশন করুন।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "remove-metadata",
+          "pdf-reader",
+          "repair-pdf"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "prepare-pdf-for-long-term-archive",
+          "will-this-file-still-open",
+          "remove-metadata-from-pdf"
+        ]
       }
     ]
   },
@@ -19442,6 +20202,158 @@
           "make-pdf-searchable",
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "convert-pdf-to-pdfa-for-archive",
+        "slug": "convert-pdf-to-pdfa-for-archive",
+        "cluster": "archive",
+        "title": "Cách chuyển PDF sang PDF/A để lưu trữ",
+        "metaTitle": "Cách chuyển PDF sang PDF/A để lưu trữ",
+        "metaDescription": "Chuyển PDF sang PDF/A để lưu trữ. Giữ bản gốc, xác nhận hồ sơ và kiểm tra kết quả. Quy trình xử lý trên máy chủ.",
+        "primaryKeyword": "chuyển PDF sang PDF/A để lưu trữ",
+        "secondaryKeywords": [
+          "PDF/A archive copy",
+          "PDF preservation format",
+          "PDF/A conversion",
+          "long term PDF archive"
+        ],
+        "answer": "Để tạo bản PDF/A lưu trữ, hãy giữ bản gốc, xác nhận hồ sơ PDF/A cần dùng, chuyển đổi bản làm việc đã được duyệt và so kết quả với nguồn. Chuyển đổi PDF/A của PrintxPDF được xử lý trên máy chủ và thông báo rõ trước; chỉ dùng khi cách xử lý này được phép.",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A là hồ sơ PDF hướng đến bảo quản, không phải cam kết rằng tài liệu sẽ luôn chính xác hoặc truy cập được. Hãy dùng khi kho lưu trữ, tòa án, trường đại học hoặc chính sách hồ sơ yêu cầu. Giữ bản gốc trước, xác nhận hồ sơ cụ thể và so kết quả trước khi lưu. PrintxPDF ghi rõ chuyển đổi PDF/A được xử lý trên máy chủ: tệp được gửi qua kết nối an toàn, chuyển đổi và xóa sau khi hoàn tất."
+          },
+          {
+            "t": "h2",
+            "x": "Cách tạo bản PDF/A lưu trữ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ hồ sơ gốc",
+                "x": "Giữ PDF nguồn nguyên trạng, nhất là khi có chữ ký, chịu quy định hoặc cần làm bằng chứng."
+              },
+              {
+                "h": "Xác nhận yêu cầu PDF/A",
+                "x": "Hỏi kho lưu trữ cần PDF/A-1b, PDF/A-2b hay hồ sơ cụ thể nào khác."
+              },
+              {
+                "h": "Dùng bản làm việc đã được duyệt",
+                "x": "Chỉ mở [PDF sang PDF/A](/tools/pdf-to-pdfa) khi việc xử lý trên máy chủ được phép với tài liệu."
+              },
+              {
+                "h": "So sánh PDF đã chuyển đổi",
+                "x": "Đối chiếu số trang, phông chữ, hình ảnh, biểu mẫu, chữ ký và văn bản có thể tìm kiếm với nguồn."
+              },
+              {
+                "h": "Ghi chú quá trình chuyển đổi",
+                "x": "Ghi hồ sơ, ngày, mã định danh nguồn và mọi thay đổi theo quy trình lưu trữ."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "Tạo bản PDF/A lưu trữ với thông báo rõ về xử lý trên máy chủ. Tính năng cơ bản miễn phí, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "PDF gốc và bản PDF/A lưu trữ"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Bản sao",
+              "Mục đích",
+              "Cần giữ gì"
+            ],
+            "rows": [
+              [
+                "PDF gốc",
+                "Nguồn gốc và bằng chứng tài liệu",
+                "Giữ nguyên khi chính sách hoặc chữ ký quan trọng."
+              ],
+              [
+                "Bản làm việc",
+                "Chuyển đổi và rà soát",
+                "Ghi lại các thay đổi đã thực hiện."
+              ],
+              [
+                "Bản PDF/A",
+                "Bảo toàn bố cục dài hạn",
+                "Ghi hồ sơ yêu cầu và kết quả xác thực."
+              ],
+              [
+                "Bản truy cập",
+                "Phân phối thường ngày",
+                "Áp dụng kiểm soát quyền truy cập và riêng tư đã duyệt."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Chuyển đổi PDF/A có thể làm thay đổi tính năng"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A hạn chế các tính năng như mã hóa và phụ thuộc bên ngoài để tệp tự chứa hơn. Điều đó có thể ảnh hưởng đến biểu mẫu tương tác, JavaScript, phương tiện, độ trong suốt, phông chữ hoặc chữ ký. Chuyển đổi thành công không chứng minh mọi tính năng được giữ nguyên hay kho lưu trữ sẽ chấp nhận tệp. Hãy kiểm tra kết quả và dùng công cụ xác thực hoặc quy trình nộp của đơn vị nhận khi họ yêu cầu."
+          },
+          {
+            "t": "h2",
+            "x": "Chủ động cân nhắc xử lý trên máy chủ"
+          },
+          {
+            "t": "p",
+            "x": "Phần lớn công cụ PrintxPDF xử lý cục bộ trong trình duyệt, nhưng chuyển PDF/A cần bộ máy phông chữ và màu trên máy chủ. Trang web thông báo điều này trước khi dùng. Không tải hồ sơ mật, hạn chế hoặc chịu quy định nếu chưa được phép xử lý như vậy. Tệp bị xóa sau khi chuyển đổi, nhưng quy định của tổ chức vẫn quyết định phương thức này có phù hợp hay không."
+          },
+          {
+            "t": "h2",
+            "x": "Tách biệt bảo quản và quyền riêng tư"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A tập trung vào khả năng hiển thị lâu dài, không xóa thông tin mật. Tệp đã chuyển đổi vẫn có thể chứa văn bản nhạy cảm hiển thị, thuộc tính, tệp đính kèm hoặc dữ liệu khác. Khi chính sách yêu cầu, dùng [Xóa siêu dữ liệu](/tools/remove-metadata) cho một bản chia sẻ riêng và dùng thao tác che nội dung đã xác minh với dữ liệu không được hiển thị. Giữ hồ sơ gốc riêng."
+          },
+          {
+            "t": "h2",
+            "x": "Rà soát trước khi lưu trữ"
+          },
+          {
+            "t": "p",
+            "x": "Mở kết quả PDF/A, so các trang tiêu biểu với nguồn và xác nhận hệ thống nhận chấp nhận hồ sơ. Kiểm tra tên, ngày, tổng tiền, hình ảnh, chữ ký và thứ tự trang. Lưu bản gốc, bản lưu trữ và ghi chú chuyển đổi theo chính sách lưu giữ. Điều này giúp rà soát lại sau này ngay cả khi trình xem hoặc hệ thống kho lưu trữ thay đổi."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF/A có tốt hơn PDF cho lưu trữ không?",
+            "a": "PDF/A được thiết kế cho yêu cầu bảo quản dài hạn, nhưng không mặc nhiên cần thiết hoặc tốt hơn cho mọi tài liệu. Hãy dùng hồ sơ mà kho lưu trữ nhận yêu cầu."
+          },
+          {
+            "q": "Chuyển sang PDF/A có thay đổi tệp gốc không?",
+            "a": "Không. Hãy chuyển bản làm việc và giữ nguồn ban đầu, nhất là khi chữ ký, bằng chứng hoặc nguồn gốc quan trọng."
+          },
+          {
+            "q": "PDF sang PDF/A có xử lý trong trình duyệt không?",
+            "a": "Không. Quy trình xử lý trên máy chủ và được thông báo rõ vì cần bộ máy phông chữ và màu. Tệp được xóa sau khi chuyển đổi."
+          },
+          {
+            "q": "PDF/A có xóa siêu dữ liệu hoặc văn bản riêng tư không?",
+            "a": "Không. PDF/A đặt ra các hạn chế phục vụ bảo quản. Khi cần, hãy xóa siêu dữ liệu hoặc che nội dung bằng quy trình riêng."
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "remove-metadata",
+          "pdf-reader",
+          "repair-pdf"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "prepare-pdf-for-long-term-archive",
+          "will-this-file-still-open",
+          "remove-metadata-from-pdf"
         ]
       }
     ]
@@ -22687,6 +23599,158 @@
           "make-pdf-searchable",
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "convert-pdf-to-pdfa-for-archive",
+        "slug": "convert-pdf-to-pdfa-for-archive",
+        "cluster": "archive",
+        "title": "如何将 PDF 转换为 PDF/A 以便归档",
+        "metaTitle": "如何将 PDF 转换为 PDF/A 以便归档",
+        "metaDescription": "将 PDF 免费转为 PDF/A 以便归档。保留原件，确认所需配置并检查结果。转换在服务器处理，使用前请确认已获准。",
+        "primaryKeyword": "将 PDF 转换为 PDF/A 归档",
+        "secondaryKeywords": [
+          "PDF/A archive copy",
+          "PDF preservation format",
+          "PDF/A conversion",
+          "long term PDF archive"
+        ],
+        "answer": "制作 PDF/A 归档副本时，应保留原件，确认所需的 PDF/A 配置，转换获准的工作副本，并将结果与来源进行比较。PrintxPDF 的 PDF/A 转换在服务器处理，且会提前明确提示；只有在获准的情况下才使用。",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF/A 是面向长期保存的 PDF 配置，并不保证文档永远正确或可访问。只有在档案机构、法院、大学或记录管理政策要求时才使用。先保留原件，确认具体配置，并在归档前比较转换结果。PrintxPDF 明确说明 PDF/A 转换在服务器处理：文件通过安全连接发送，完成转换后删除。"
+          },
+          {
+            "t": "h2",
+            "x": "如何创建 PDF/A 归档副本"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留原始记录",
+                "x": "保持来源 PDF 不变，特别是文件已签名、受监管或需要作为证据时。"
+              },
+              {
+                "h": "确认 PDF/A 要求",
+                "x": "询问档案机构是否要求 PDF/A-1b、PDF/A-2b 或其他特定配置。"
+              },
+              {
+                "h": "使用获准的工作副本",
+                "x": "只有在该文件获准进行服务器处理时，才打开[PDF 转 PDF/A](/tools/pdf-to-pdfa)。"
+              },
+              {
+                "h": "比较转换后的 PDF",
+                "x": "将页数、字体、图片、表单、签名和可搜索文本与来源核对。"
+              },
+              {
+                "h": "记录转换信息",
+                "x": "记录配置、日期、来源标识，以及归档流程要求的任何变更。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-to-pdfa",
+            "x": "创建 PDF/A 归档副本；服务器处理会提前明确提示。基础功能免费，无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "原始 PDF 与 PDF/A 归档副本"
+          },
+          {
+            "t": "table",
+            "head": [
+              "副本",
+              "用途",
+              "需要保留的内容"
+            ],
+            "rows": [
+              [
+                "原始 PDF",
+                "来源及原始证据",
+                "政策或签名重要时保持原样。"
+              ],
+              [
+                "工作副本",
+                "转换与检查",
+                "记录所做的更改。"
+              ],
+              [
+                "PDF/A 副本",
+                "长期保持版面",
+                "记录所需配置及验证结果。"
+              ],
+              [
+                "访问副本",
+                "日常分发",
+                "应用获准的隐私和访问控制。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "PDF/A 转换可能改变功能"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A 会限制加密和外部依赖等功能，使文件更独立。这可能影响交互式表单、JavaScript、媒体、透明效果、字体或签名。转换成功并不能证明所有功能都已保留，也不能保证档案机构会接受文件。请检查结果，并在接收方有要求时使用其验证工具或提交流程。"
+          },
+          {
+            "t": "h2",
+            "x": "谨慎决定是否使用服务器处理"
+          },
+          {
+            "t": "p",
+            "x": "PrintxPDF 的大多数工具在浏览器本地运行，但 PDF/A 转换需要服务器端字体和色彩引擎。网站会在使用前说明这一点。未经批准，不要上传机密、受限或受监管记录。文件会在转换后删除，但是否适用仍取决于你所在机构的规则。"
+          },
+          {
+            "t": "h2",
+            "x": "将长期保存与隐私保护分开处理"
+          },
+          {
+            "t": "p",
+            "x": "PDF/A 关注长期呈现效果，不负责删除机密信息。转换后的文件仍可能包含可见敏感文本、文档属性、附件或其他信息。政策要求时，可对单独的分发副本使用[删除元数据](/tools/remove-metadata)，并对不得显示的内容进行已验证的涂黑处理。原始记录应另行保存。"
+          },
+          {
+            "t": "h2",
+            "x": "归档前检查结果"
+          },
+          {
+            "t": "p",
+            "x": "打开 PDF/A 结果，抽查代表性页面并与来源比较，同时确认接收系统接受该配置。检查姓名、日期、金额、图片、签名和页序。按保留政策保存原件、归档副本和转换记录。这样即使未来阅读器或档案系统改变，也能进行复核。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "归档时 PDF/A 一定比 PDF 好吗？",
+            "a": "PDF/A 面向长期保存需求，但并非每份文件都必须使用或一定更好。请遵循接收档案机构指定的配置。"
+          },
+          {
+            "q": "转换为 PDF/A 会改变原始文件吗？",
+            "a": "不会。请转换工作副本并保留原件，尤其是签名、证据或来源信息重要时。"
+          },
+          {
+            "q": "PDF 转 PDF/A 在浏览器中处理吗？",
+            "a": "不在浏览器本地处理。此转换在服务器处理，并会提前明确提示，因为需要字体和色彩引擎。转换后文件会被删除。"
+          },
+          {
+            "q": "PDF/A 会删除元数据或隐私文本吗？",
+            "a": "不会。PDF/A 规定的是保存方面的限制。需要时应单独删除元数据或涂黑内容。"
+          }
+        ],
+        "relatedTools": [
+          "pdf-to-pdfa",
+          "remove-metadata",
+          "pdf-reader",
+          "repair-pdf"
+        ],
+        "relatedPosts": [
+          "what-is-pdfa",
+          "prepare-pdf-for-long-term-archive",
+          "will-this-file-still-open",
+          "remove-metadata-from-pdf"
         ]
       }
     ]
