@@ -1,0 +1,1008 @@
+{
+  "topic": "why-pdf-to-excel-numbers-are-text",
+  "sourceCluster": "from-pdf",
+  "tool": "pdf-to-excel",
+  "languages": {
+    "es": {
+      "title": "Por qué los números de PDF a Excel aparecen como texto",
+      "metaTitle": "Por qué PDF a Excel deja números como texto",
+      "metaDescription": "Descubre por qué PDF a Excel importa números como texto y cómo corregirlos. Gratis, sin registro ni marca de agua, en tu navegador.",
+      "keyword": "por qué los números PDF a Excel son texto",
+      "secondaryKeywords": [
+        "PDF a Excel gratis",
+        "convertir PDF a XLSX",
+        "extraer tabla PDF",
+        "convertidor PDF a hoja de cálculo"
+      ],
+      "answer": "Los números aparecen como texto al convertir PDF a Excel porque el PDF no guarda tipos de celda como número, fecha o etiqueta. Convierte las columnas pertinentes a números en Excel y compara decimales, fechas, signos negativos y totales con el documento original.",
+      "ctaLabel": "Convierte PDF a Excel y comprueba los datos",
+      "body": [
+        {
+          "t": "p",
+          "x": "Una hoja de cálculo necesita saber si cada valor es un número, una fecha o una etiqueta. Un PDF a menudo solo conserva cómo se ve el texto en la página, no el tipo de dato que debería tener. Por eso una cantidad puede verse como 125,50 y aun así no sumarse en Excel."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir un PDF a un libro de Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Comprueba si el PDF tiene texto seleccionable",
+              "x": "Intenta seleccionar una palabra. Si es un escaneo, ejecuta [OCR PDF](/tools/ocr-pdf) en una copia primero."
+            },
+            {
+              "h": "Abre PDF a Excel",
+              "x": "Añade el documento a [PDF a Excel](/tools/pdf-to-excel) en el navegador. La conversión estándar se realiza en tu dispositivo."
+            },
+            {
+              "h": "Crea y descarga el libro",
+              "x": "Cada página se convierte en una hoja, cada línea en una fila y los espacios amplios separan el texto en celdas."
+            },
+            {
+              "h": "Busca números almacenados como texto",
+              "x": "En Excel, comprueba la alineación, las advertencias y si SUMA incluye los valores. No te fíes solo de la apariencia."
+            },
+            {
+              "h": "Convierte y verifica",
+              "x": "Usa Convertir en número o Texto en columnas y vuelve a revisar decimales, fechas, signos y totales."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Convierte texto de PDF a Excel en tu navegador. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué ocurre después de convertir PDF a Excel"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Dato del PDF",
+            "Qué puede pasar",
+            "Qué revisar"
+          ],
+          "rows": [
+            [
+              "Número con símbolo de moneda",
+              "Se importa como texto",
+              "Quita el símbolo en una columna auxiliar y convierte el valor."
+            ],
+            [
+              "Separador decimal regional",
+              "El punto o la coma no coincide",
+              "Ajusta la configuración regional o separa columnas."
+            ],
+            [
+              "Ceros iniciales en un código",
+              "Excel puede quitarlos al convertir",
+              "Mantén como texto si el valor es un identificador."
+            ],
+            [
+              "Fecha impresa",
+              "El día y el mes pueden intercambiarse",
+              "Confirma la fecha original antes de cambiar el formato."
+            ],
+            [
+              "Número negativo",
+              "El guion puede quedar separado",
+              "Comprueba el signo y el total."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF y Excel no comparten tipos de datos"
+        },
+        {
+          "t": "p",
+          "x": "Un PDF coloca caracteres en posiciones fijas. No indica siempre que 1.250 sea un número para sumar, que 03-04 sea una fecha o que 00127 sea un código que debe conservar ceros. PrintxPDF separa el texto por espacios amplios o tabulaciones; después, Excel decide cómo interpretar cada cadena según su configuración. Las columnas estrechas y los diseños irregulares pueden necesitar limpieza manual."
+        },
+        {
+          "t": "h2",
+          "x": "Corrige los valores sin alterar identificadores"
+        },
+        {
+          "t": "p",
+          "x": "Si una cantidad es texto, selecciona la columna y usa Convertir en número o Texto en columnas en Excel. Revisa antes de aplicar la conversión: números de cuenta, códigos postales, referencias y números de factura suelen ser identificadores, no cantidades para sumar. Conserva los ceros iniciales y símbolos necesarios. Después compara recuentos, subtotales, impuestos y totales con el PDF original."
+        },
+        {
+          "t": "h2",
+          "x": "Verifica fechas, decimales y totales"
+        },
+        {
+          "t": "p",
+          "x": "Una importación puede leer 1.234,56 como 1,234.56, o interpretar 04/05 como 4 de mayo o 5 de abril. Elige el formato de la factura y confirma las filas importantes visualmente. Las fórmulas pueden ignorar celdas de texto sin avisarte claramente. Para finanzas, impuestos o decisiones legales, conserva la fuente y no sustituyas el proceso de aprobación por una conversión automática."
+        },
+        {
+          "t": "h2",
+          "x": "Convierte PDF a Excel en privado"
+        },
+        {
+          "t": "p",
+          "x": "Extractos, facturas y reportes pueden contener información personal. PrintxPDF procesa las conversiones estándar en la pestaña del navegador, sin subir rutinariamente el archivo a un servidor externo. Revisa el XLSX antes de compartirlo. Si es un escaneo, ejecuta [OCR PDF](/tools/ocr-pdf) primero; para solo algunas páginas, usa [Extraer páginas](/tools/extract-pages). [Eliminar metadatos](/tools/remove-metadata) trata propiedades del PDF por separado."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Por qué Excel trata los números de un PDF como texto?",
+          "a": "El PDF no contiene tipos de celda fiables como número o fecha. Al convertir, Excel interpreta el texto reconocido según su formato y configuración regional."
+        },
+        {
+          "q": "¿Cómo convierto números almacenados como texto en Excel?",
+          "a": "Selecciona los valores y usa Convertir en número o Texto en columnas. Después revisa decimales, fechas y totales contra el PDF original."
+        },
+        {
+          "q": "¿Debo convertir códigos con ceros iniciales a números?",
+          "a": "No necesariamente. Si el valor es un identificador, como un número de factura o cuenta, debe conservarse como texto para no perder ceros iniciales."
+        },
+        {
+          "q": "¿El conversor PDF a Excel corrige los números automáticamente?",
+          "a": "No siempre. La conversión extrae texto y usa la separación del PDF; debes confirmar tipos de datos, fechas, signos y cálculos antes de utilizarlo."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Por que números de PDF para Excel aparecem como texto",
+      "metaTitle": "Por que PDF para Excel deixa números como texto",
+      "metaDescription": "Veja por que PDF para Excel importa números como texto e como corrigir. Grátis, sem cadastro ou marca-d'água, no navegador.",
+      "keyword": "por que números de PDF para Excel são texto",
+      "secondaryKeywords": [
+        "PDF para Excel grátis",
+        "converter PDF para XLSX",
+        "extrair tabela de PDF",
+        "conversor PDF para planilha"
+      ],
+      "answer": "Os números aparecem como texto na conversão de PDF para Excel porque o PDF não guarda tipos de célula, como número, data ou rótulo. Converta as colunas relevantes em números no Excel e confira decimais, datas, sinais negativos e totais com o documento original.",
+      "ctaLabel": "Converta PDF para Excel e confira os dados",
+      "body": [
+        {
+          "t": "p",
+          "x": "Uma planilha precisa saber se cada valor é número, data ou rótulo. Muitas vezes, um PDF só guarda a aparência do texto na página, não o tipo de dado pretendido. Por isso um valor pode aparecer como 125,50 e ainda assim não ser somado pelo Excel."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter PDF em uma pasta de trabalho do Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Confira se o PDF tem texto selecionável",
+              "x": "Tente selecionar uma palavra. Se for scan, rode [OCR PDF](/tools/ocr-pdf) em uma cópia primeiro."
+            },
+            {
+              "h": "Abra PDF para Excel",
+              "x": "Adicione o documento em [PDF para Excel](/tools/pdf-to-excel) no navegador. A conversão padrão acontece no dispositivo."
+            },
+            {
+              "h": "Crie e baixe a pasta de trabalho",
+              "x": "Cada página vira uma planilha, cada linha vira uma linha de dados e espaços largos separam o texto em células."
+            },
+            {
+              "h": "Encontre números armazenados como texto",
+              "x": "No Excel, confira alinhamento, avisos e se a função SOMA inclui os valores. Não confie só na aparência."
+            },
+            {
+              "h": "Converta e verifique",
+              "x": "Use Converter em Número ou Texto para Colunas e confira novamente decimais, datas, sinais e totais."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Converta texto de PDF para Excel no navegador. Grátis, sem cadastro ou marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "Por que isso acontece após converter PDF para Excel"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Dado do PDF",
+            "O que pode acontecer",
+            "O que conferir"
+          ],
+          "rows": [
+            [
+              "Número com símbolo de moeda",
+              "Importado como texto",
+              "Remova o símbolo em coluna auxiliar e converta o valor."
+            ],
+            [
+              "Separador decimal regional",
+              "Ponto e vírgula não correspondem",
+              "Ajuste localidade ou separe colunas."
+            ],
+            [
+              "Zeros à esquerda em código",
+              "Excel pode removê-los ao converter",
+              "Mantenha como texto se for identificador."
+            ],
+            [
+              "Data impressa",
+              "Dia e mês podem inverter",
+              "Confirme a data original antes de formatar."
+            ],
+            [
+              "Número negativo",
+              "O hífen pode ficar separado",
+              "Confira sinal e total."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF e Excel não compartilham os tipos de dados"
+        },
+        {
+          "t": "p",
+          "x": "PDF posiciona caracteres em lugares fixos. Ele nem sempre informa que 1.250 é um número para somar, que 03-04 é uma data ou que 00127 é um código que precisa preservar zeros. O PrintxPDF separa texto por espaços largos ou tabulações; depois, o Excel interpreta cada sequência conforme a configuração regional. Colunas estreitas e layouts irregulares podem exigir ajustes manuais."
+        },
+        {
+          "t": "h2",
+          "x": "Corrija valores sem alterar identificadores"
+        },
+        {
+          "t": "p",
+          "x": "Se um valor estiver como texto, selecione a coluna e use Converter em Número ou Texto para Colunas no Excel. Confira antes: números de conta, CEPs, referências e números de fatura costumam ser identificadores, não quantias para somar. Preserve zeros à esquerda e símbolos necessários. Depois compare contagem de itens, subtotais, impostos e totais com o PDF original."
+        },
+        {
+          "t": "h2",
+          "x": "Confira datas, decimais e totais"
+        },
+        {
+          "t": "p",
+          "x": "A importação pode ler 1.234,56 como 1,234.56 ou interpretar 04/05 como 4 de maio ou 5 de abril. Escolha o formato usado na fatura e confira visualmente as linhas importantes. Fórmulas podem ignorar células de texto sem aviso claro. Em decisões financeiras, tributárias ou jurídicas, guarde a fonte e não substitua a aprovação necessária por uma conversão automática."
+        },
+        {
+          "t": "h2",
+          "x": "Converta PDF para Excel com privacidade"
+        },
+        {
+          "t": "p",
+          "x": "Extratos, faturas e relatórios podem conter dados pessoais. O PrintxPDF processa conversões padrão na aba do navegador, sem enviar rotineiramente o arquivo a um servidor externo. Confira o XLSX antes de compartilhar. Se for scan, rode [OCR PDF](/tools/ocr-pdf) primeiro; para poucas páginas, use [Extrair páginas](/tools/extract-pages). [Remover metadados](/tools/remove-metadata) trata as propriedades do PDF separadamente."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Por que o Excel trata números do PDF como texto?",
+          "a": "PDF não contém tipos de célula confiáveis, como número ou data. Ao converter, o Excel interpreta o texto reconhecido conforme o formato e a configuração regional."
+        },
+        {
+          "q": "Como converter números armazenados como texto no Excel?",
+          "a": "Selecione os valores e use Converter em Número ou Texto para Colunas. Depois confira decimais, datas e totais com o PDF original."
+        },
+        {
+          "q": "Devo converter códigos com zeros à esquerda em números?",
+          "a": "Nem sempre. Se o valor for um identificador, como número de fatura ou conta, mantenha como texto para não perder os zeros iniciais."
+        },
+        {
+          "q": "O conversor de PDF para Excel corrige números automaticamente?",
+          "a": "Nem sempre. A conversão extrai texto e usa espaçamento do PDF; confira tipos, datas, sinais e cálculos antes de usar os dados."
+        }
+      ]
+    },
+    "hi": {
+      "title": "PDF से Excel में नंबर टेक्स्ट क्यों बन जाते हैं",
+      "metaTitle": "PDF से Excel में नंबर टेक्स्ट क्यों आते हैं",
+      "metaDescription": "जानें PDF से Excel में नंबर टेक्स्ट क्यों आते हैं और उन्हें कैसे ठीक करें। मुफ़्त, बिना साइनअप या वॉटरमार्क।",
+      "keyword": "PDF से Excel नंबर टेक्स्ट क्यों हैं",
+      "secondaryKeywords": [
+        "PDF से Excel मुफ़्त",
+        "PDF को XLSX में बदलें",
+        "PDF तालिका निकालें",
+        "PDF स्प्रेडशीट कन्वर्टर"
+      ],
+      "answer": "PDF से Excel में नंबर टेक्स्ट इसलिए आते हैं क्योंकि PDF सेल का प्रकार, जैसे संख्या, तारीख या लेबल, नहीं रखता। Excel में संबंधित कॉलम को संख्या में बदलें और दशमलव, तारीख, ऋण चिह्न व कुल मूल दस्तावेज़ से मिलाएँ।",
+      "ctaLabel": "PDF को Excel में बदलें और मान जाँचें",
+      "body": [
+        {
+          "t": "p",
+          "x": "स्प्रेडशीट को पता होना चाहिए कि मान संख्या है, तारीख है या लेबल। PDF अक्सर केवल पेज पर पाठ की जगह दिखाता है, उसका इच्छित डेटा प्रकार नहीं। इसलिए 125.50 जैसा मान दिखाई देने के बावजूद Excel में जोड़ा नहीं जा सकता।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF को Excel वर्कबुक में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "जाँचें कि PDF में चयन योग्य पाठ है",
+              "x": "एक शब्द चुनकर देखें। स्कैन हो तो पहले कॉपी पर [PDF OCR](/tools/ocr-pdf) चलाएँ।"
+            },
+            {
+              "h": "PDF से Excel खोलें",
+              "x": "ब्राउज़र में [PDF से Excel](/tools/pdf-to-excel) में दस्तावेज़ जोड़ें। सामान्य रूपांतरण डिवाइस पर होता है।"
+            },
+            {
+              "h": "वर्कबुक बनाएँ और डाउनलोड करें",
+              "x": "हर पेज एक शीट, हर लाइन एक रो बनती है और बड़े अंतराल पाठ को सेल में बाँटते हैं।"
+            },
+            {
+              "h": "पाठ के रूप में रखे नंबर पहचानें",
+              "x": "Excel में संरेखण, चेतावनी और SUM फ़ंक्शन देखें कि मान शामिल हैं या नहीं। केवल दिखावट पर भरोसा न करें।"
+            },
+            {
+              "h": "संख्या में बदलें और जाँचें",
+              "x": "Convert to Number या Text to Columns चलाएँ। फिर दशमलव, तारीख, चिह्न और कुल दोबारा देखें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ब्राउज़र में PDF पाठ को Excel में बदलें। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF से Excel के बाद ऐसा क्यों होता है"
+        },
+        {
+          "t": "table",
+          "head": [
+            "PDF का डेटा",
+            "संभावित समस्या",
+            "क्या जाँचें"
+          ],
+          "rows": [
+            [
+              "मुद्रा चिन्ह वाला नंबर",
+              "पाठ के रूप में आता है",
+              "सहायक कॉलम में चिन्ह हटाकर मान बदलें।"
+            ],
+            [
+              "क्षेत्रीय दशमलव चिह्न",
+              "बिंदु और कॉमा नहीं मिलते",
+              "क्षेत्रीय सेटिंग ठीक करें या कॉलम बाँटें।"
+            ],
+            [
+              "कोड के आगे शून्य",
+              "रूपांतरण में शून्य हट सकते हैं",
+              "पहचान कोड हो तो पाठ रखें।"
+            ],
+            [
+              "छपी हुई तारीख",
+              "दिन और महीना उलट सकते हैं",
+              "फ़ॉर्मेट बदलने से पहले मूल जाँचें।"
+            ],
+            [
+              "ऋणात्मक संख्या",
+              "माइनस अलग रह सकता है",
+              "चिह्न और कुल मिलाएँ।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF और Excel में डेटा प्रकार साझा नहीं होते"
+        },
+        {
+          "t": "p",
+          "x": "PDF अक्षरों को निश्चित जगहों पर रखता है। वह हमेशा नहीं बताता कि 1,250 जोड़ने वाली संख्या है, 03-04 तारीख है या 00127 ऐसा कोड है जिसके शुरुआती शून्य बचाने चाहिए। PrintxPDF बड़े अंतराल या टैब से पाठ अलग करता है; फिर Excel अपनी क्षेत्रीय सेटिंग से उसे समझता है। तंग कॉलम और अनियमित लेआउट हाथ से सुधार माँग सकते हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "पहचान कोड बदले बिना मान ठीक करें"
+        },
+        {
+          "t": "p",
+          "x": "पाठ के रूप में आई रकम वाली कॉलम चुनकर Excel में Convert to Number या Text to Columns इस्तेमाल करें। पहले जाँचें: खाता नंबर, पिन कोड, संदर्भ और इनवॉइस नंबर अक्सर जोड़ने वाली रकम नहीं बल्कि पहचान होते हैं। शुरुआती शून्य और ज़रूरी चिह्न बचाएँ। फिर आइटम संख्या, सबटोटल, टैक्स और कुल को मूल PDF से मिलाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "तारीख, दशमलव और कुल की पुष्टि करें"
+        },
+        {
+          "t": "p",
+          "x": "आयात 1,234.56 को 1.234,56 पढ़ सकता है या 04/05 को 4 मई अथवा 5 अप्रैल मान सकता है। इनवॉइस का सही फ़ॉर्मेट चुनें और महत्वपूर्ण पंक्तियाँ देखकर जाँचें। सूत्र पाठ वाली सेल को चुपचाप छोड़ सकते हैं। वित्तीय, कर या कानूनी निर्णय में स्रोत रखें और स्वीकृति प्रक्रिया को स्वचालित रूपांतरण से न बदलें।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF को Excel में निजी रूप से बदलें"
+        },
+        {
+          "t": "p",
+          "x": "स्टेटमेंट, इनवॉइस और रिपोर्ट में निजी जानकारी हो सकती है। PrintxPDF सामान्य रूपांतरण ब्राउज़र टैब में करता है, बिना नियमित सर्वर अपलोड के। साझा करने से पहले XLSX देखें। स्कैन हो तो पहले [PDF OCR](/tools/ocr-pdf) चलाएँ; कुछ पेज चाहिए तो [पेज निकालें](/tools/extract-pages)। [मेटाडेटा हटाएँ](/tools/remove-metadata) PDF गुण अलग से साफ़ करता है।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF के नंबर Excel में पाठ क्यों बनते हैं?",
+          "a": "PDF संख्या या तारीख जैसे भरोसेमंद सेल प्रकार नहीं रखता। रूपांतरण के बाद Excel पहचाने गए पाठ को फ़ॉर्मेट और क्षेत्रीय सेटिंग से समझता है।"
+        },
+        {
+          "q": "Excel में पाठ के रूप में रखे नंबर कैसे बदलें?",
+          "a": "मान चुनकर Convert to Number या Text to Columns चलाएँ। फिर दशमलव, तारीख और कुल मूल PDF से जाँचें।"
+        },
+        {
+          "q": "शुरुआती शून्य वाले कोड को संख्या में बदलना चाहिए?",
+          "a": "हमेशा नहीं। इनवॉइस या खाता नंबर जैसे पहचान कोड को पाठ रखें, ताकि शुरुआती शून्य न मिटें।"
+        },
+        {
+          "q": "क्या PDF से Excel कन्वर्टर नंबर अपने आप ठीक करता है?",
+          "a": "हमेशा नहीं। यह पाठ और PDF की दूरी से सेल बनाता है। उपयोग से पहले डेटा प्रकार, तारीख, चिह्न और गणना जाँचें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "لماذا تظهر أرقام PDF إلى Excel كنص؟",
+      "metaTitle": "لماذا تتحول أرقام PDF إلى Excel كنص",
+      "metaDescription": "تعرف على سبب استيراد أرقام PDF إلى Excel كنص وطريقة إصلاحها. مجاناً وبلا تسجيل أو علامة مائية.",
+      "keyword": "لماذا أرقام PDF إلى Excel نص",
+      "secondaryKeywords": [
+        "PDF إلى Excel مجاناً",
+        "تحويل PDF إلى XLSX",
+        "استخراج جدول PDF",
+        "محول PDF إلى جدول بيانات"
+      ],
+      "answer": "تظهر الأرقام كنص عند تحويل PDF إلى Excel لأن PDF لا يخزن نوع الخلية مثل رقم أو تاريخ أو تسمية. حوّل الأعمدة المطلوبة إلى أرقام في Excel، ثم قارن الكسور والتواريخ والإشارات السالبة والإجماليات بالمستند الأصلي.",
+      "ctaLabel": "حوّل PDF إلى Excel وافحص البيانات",
+      "body": [
+        {
+          "t": "p",
+          "x": "يحتاج جدول البيانات إلى معرفة ما إذا كانت القيمة رقماً أو تاريخاً أو تسمية. غالباً ما يحتفظ PDF بمظهر النص وموقعه على الصفحة، لا بنوع البيانات المقصود. لذلك قد يظهر المبلغ 125.50 لكنه لا يدخل في عملية الجمع في Excel."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل PDF إلى مصنف Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "تحقق من وجود نص قابل للتحديد",
+              "x": "حاول تحديد كلمة. إذا كان PDF ممسوحاً، شغّل [OCR PDF](/tools/ocr-pdf) على نسخة أولاً."
+            },
+            {
+              "h": "افتح PDF إلى Excel",
+              "x": "أضف المستند إلى [PDF إلى Excel](/tools/pdf-to-excel) في المتصفح. تتم المعالجة القياسية على جهازك."
+            },
+            {
+              "h": "أنشئ المصنف ونزّله",
+              "x": "تصبح كل صفحة ورقة عمل وكل سطر صفاً، وتقسم الفجوات الواسعة النص إلى خلايا."
+            },
+            {
+              "h": "اعثر على الأرقام المخزنة كنص",
+              "x": "في Excel، افحص المحاذاة والتنبيهات وما إذا كانت دالة SUM تحتسب القيم. لا تعتمد على المظهر فقط."
+            },
+            {
+              "h": "حوّل القيم وتحقق منها",
+              "x": "استخدم التحويل إلى رقم أو النص إلى أعمدة، ثم راجع الكسور والتواريخ والإشارات والإجماليات."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "حوّل نص PDF إلى Excel في المتصفح. مجاناً وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "لماذا يحدث ذلك بعد تحويل PDF إلى Excel"
+        },
+        {
+          "t": "table",
+          "head": [
+            "بيانات PDF",
+            "ما قد يحدث",
+            "ما ينبغي مراجعته"
+          ],
+          "rows": [
+            [
+              "رقم مع رمز عملة",
+              "يُستورد كنص",
+              "أزل الرمز في عمود مساعد ثم حوّل القيمة."
+            ],
+            [
+              "فاصل عشري إقليمي",
+              "لا يتوافق النقطة والفاصلة",
+              "عدّل الإعداد الإقليمي أو افصل الأعمدة."
+            ],
+            [
+              "أصفار بادئة في رمز",
+              "قد يحذفها Excel عند التحويل",
+              "احتفظ بها كنص إذا كانت معرّفاً."
+            ],
+            [
+              "تاريخ مطبوع",
+              "قد ينعكس اليوم والشهر",
+              "أكد التاريخ الأصلي قبل تغيير التنسيق."
+            ],
+            [
+              "رقم سالب",
+              "قد تنفصل إشارة الطرح",
+              "راجع الإشارة والإجمالي."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "لا تتشارك ملفات PDF وExcel أنواع البيانات"
+        },
+        {
+          "t": "p",
+          "x": "يضع PDF الأحرف في مواقع ثابتة. ولا يحدد دائماً أن 1,250 رقم للجمع أو أن 03-04 تاريخ أو أن 00127 رمز يجب أن يحافظ على أصفاره. يفصل PrintxPDF النص باستخدام الفجوات الواسعة أو علامات الجدولة؛ ثم يفسره Excel وفق إعداداته الإقليمية. قد تحتاج الأعمدة الضيقة والتخطيطات غير المنتظمة إلى تنظيف يدوي."
+        },
+        {
+          "t": "h2",
+          "x": "صحح القيم دون تغيير المعرّفات"
+        },
+        {
+          "t": "p",
+          "x": "إذا ظهر مبلغ كنص، فحدد العمود واستخدم التحويل إلى رقم أو النص إلى أعمدة في Excel. تحقق أولاً: أرقام الحسابات والرموز البريدية والمراجع وأرقام الفواتير غالباً معرّفات وليست مبالغ للجمع. احتفظ بالأصفار البادئة والرموز اللازمة. ثم قارن عدد البنود والإجماليات الفرعية والضرائب والإجمالي بملف PDF الأصلي."
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من التواريخ والكسور والإجماليات"
+        },
+        {
+          "t": "p",
+          "x": "قد يقرأ الاستيراد 1.234,56 كـ 1,234.56 أو يفسر 04/05 على أنه 4 مايو أو 5 أبريل. اختر تنسيق الفاتورة وراجع الصفوف المهمة بصرياً. قد تتجاهل الصيغ الخلايا النصية دون تنبيه واضح. في القرارات المالية أو الضريبية أو القانونية، احتفظ بالمصدر ولا تستبدل الموافقة المطلوبة بتحويل آلي."
+        },
+        {
+          "t": "h2",
+          "x": "حوّل PDF إلى Excel بخصوصية"
+        },
+        {
+          "t": "p",
+          "x": "قد تحتوي الكشوف والفواتير والتقارير على معلومات شخصية. يعالج PrintxPDF التحويل القياسي داخل علامة تبويب المتصفح دون رفع معتاد إلى خادم خارجي. راجع XLSX قبل مشاركته. للمسح الضوئي، شغّل [OCR PDF](/tools/ocr-pdf) أولاً؛ ولصفحات محددة استخدم [استخراج الصفحات](/tools/extract-pages). تنظف [إزالة البيانات الوصفية](/tools/remove-metadata) خصائص PDF بشكل منفصل."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "لماذا يعامل Excel أرقام PDF كنص؟",
+          "a": "لا يحتوي PDF على أنواع خلايا موثوقة مثل الرقم أو التاريخ. عند التحويل، يفسر Excel النص وفق التنسيق والإعداد الإقليمي."
+        },
+        {
+          "q": "كيف أحوّل الأرقام المخزنة كنص في Excel؟",
+          "a": "حدد القيم واستخدم التحويل إلى رقم أو النص إلى أعمدة، ثم تحقق من الكسور والتواريخ والإجماليات مقارنة بالأصل."
+        },
+        {
+          "q": "هل أحوّل الرموز ذات الأصفار البادئة إلى أرقام؟",
+          "a": "ليس بالضرورة. إذا كانت القيمة معرّفاً مثل رقم فاتورة أو حساب، فاحتفظ بها كنص كي لا تضيع الأصفار البادئة."
+        },
+        {
+          "q": "هل يصلح محول PDF إلى Excel الأرقام تلقائياً؟",
+          "a": "ليس دائماً. يستخرج النص ويقسمه حسب المسافات؛ تحقق من أنواع البيانات والتواريخ والإشارات والحسابات قبل الاستخدام."
+        }
+      ]
+    },
+    "bn": {
+      "title": "PDF থেকে Excel-এ সংখ্যা টেক্সট হয় কেন",
+      "metaTitle": "PDF থেকে Excel-এ সংখ্যা টেক্সট হয় কেন",
+      "metaDescription": "PDF থেকে Excel-এ সংখ্যা টেক্সট হিসেবে আসে কেন ও কীভাবে ঠিক করবেন জানুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।",
+      "keyword": "PDF থেকে Excel-এ সংখ্যা টেক্সট কেন",
+      "secondaryKeywords": [
+        "PDF থেকে Excel বিনামূল্যে",
+        "PDF XLSX-এ বদল",
+        "PDF টেবিল বের করা",
+        "PDF স্প্রেডশিট কনভার্টার"
+      ],
+      "answer": "PDF থেকে Excel-এ সংখ্যা টেক্সট হিসেবে আসে, কারণ PDF সেলের ধরন, যেমন সংখ্যা, তারিখ বা লেবেল, সংরক্ষণ করে না। Excel-এ প্রয়োজনীয় কলামকে সংখ্যায় বদলে দশমিক, তারিখ, ঋণ চিহ্ন ও মোট মূল নথির সঙ্গে মিলিয়ে দেখুন।",
+      "ctaLabel": "PDF Excel-এ বদলে ডেটা যাচাই করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "স্প্রেডশিটকে জানতে হয় কোনো মান সংখ্যা, তারিখ নাকি লেবেল। PDF প্রায়ই পৃষ্ঠায় লেখার চেহারা ও অবস্থান রাখে, উদ্দেশ্য করা ডেটার ধরন নয়। তাই 125.50 দেখা গেলেও Excel সেটিকে যোগ করতে নাও পারে।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF-কে Excel ওয়ার্কবুকে কীভাবে রূপান্তর করবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "PDF-এ নির্বাচনযোগ্য লেখা আছে কি না দেখুন",
+              "x": "একটি শব্দ নির্বাচন করে দেখুন। স্ক্যান হলে আগে কপিতে [PDF OCR](/tools/ocr-pdf) চালান।"
+            },
+            {
+              "h": "PDF থেকে Excel খুলুন",
+              "x": "ব্রাউজারে [PDF থেকে Excel](/tools/pdf-to-excel)-এ ফাইল যোগ করুন। সাধারণ রূপান্তর ডিভাইসেই হয়।"
+            },
+            {
+              "h": "ওয়ার্কবুক তৈরি ও ডাউনলোড করুন",
+              "x": "প্রতি পৃষ্ঠা একটি শিট, প্রতি লাইন একটি সারি হয়; বড় ফাঁক লেখা সেলে ভাগ করে।"
+            },
+            {
+              "h": "টেক্সট হিসেবে রাখা সংখ্যা খুঁজুন",
+              "x": "Excel-এ সারিবিন্যাস, সতর্কতা এবং SUM-এ মানগুলো ধরা পড়ছে কি না দেখুন। শুধু দেখার ভঙ্গিতে ভরসা করবেন না।"
+            },
+            {
+              "h": "সংখ্যায় বদলে যাচাই করুন",
+              "x": "Convert to Number বা Text to Columns ব্যবহার করে দশমিক, তারিখ, চিহ্ন ও মোট আবার মিলিয়ে নিন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ব্রাউজারে PDF লেখা Excel-এ বদলান। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF থেকে Excel রূপান্তরের পর এমন কেন হয়"
+        },
+        {
+          "t": "table",
+          "head": [
+            "PDF ডেটা",
+            "সম্ভাব্য সমস্যা",
+            "যা যাচাই করবেন"
+          ],
+          "rows": [
+            [
+              "মুদ্রা চিহ্নসহ সংখ্যা",
+              "টেক্সট হিসেবে আসে",
+              "সহায়ক কলামে চিহ্ন সরিয়ে মান বদলান।"
+            ],
+            [
+              "স্থানীয় দশমিক চিহ্ন",
+              "বিন্দু ও কমা মেলে না",
+              "অঞ্চল সেটিং ঠিক করুন বা কলাম ভাগ করুন।"
+            ],
+            [
+              "কোডের শুরুতে শূন্য",
+              "রূপান্তরে Excel শূন্য মুছতে পারে",
+              "পরিচিতি হলে টেক্সট রাখুন।"
+            ],
+            [
+              "ছাপা তারিখ",
+              "দিন ও মাস উল্টে যেতে পারে",
+              "ফরম্যাট বদলের আগে মূল তারিখ মিলান।"
+            ],
+            [
+              "ঋণাত্মক সংখ্যা",
+              "বিয়োগ চিহ্ন আলাদা হতে পারে",
+              "চিহ্ন ও মোট যাচাই করুন।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF ও Excel একই ডেটা ধরন রাখে না"
+        },
+        {
+          "t": "p",
+          "x": "PDF অক্ষর নির্দিষ্ট অবস্থানে রাখে। এটি সব সময় জানায় না 1,250 যোগ করার সংখ্যা, 03-04 তারিখ, নাকি 00127 এমন কোড যার শুরুর শূন্য রাখতে হবে। PrintxPDF বড় ফাঁক বা ট্যাব ধরে লেখা ভাগ করে; এরপর Excel নিজস্ব অঞ্চল সেটিং অনুযায়ী বোঝে। সরু কলাম ও অনিয়মিত বিন্যাস হাতে পরিষ্কার করতে হতে পারে।"
+        },
+        {
+          "t": "h2",
+          "x": "পরিচিতি নম্বর না বদলে মান ঠিক করুন"
+        },
+        {
+          "t": "p",
+          "x": "কোনো অঙ্ক টেক্সট হলে কলাম বেছে Excel-এ Convert to Number বা Text to Columns ব্যবহার করুন। আগে যাচাই করুন: অ্যাকাউন্ট নম্বর, পোস্টকোড, রেফারেন্স ও ইনভয়েস নম্বর প্রায়ই যোগ করার অঙ্ক নয়, পরিচিতি। শুরুর শূন্য ও দরকারি চিহ্ন রাখুন। এরপর আইটেম সংখ্যা, উপমোট, কর ও মোট মূল PDF-এর সঙ্গে মিলান।"
+        },
+        {
+          "t": "h2",
+          "x": "তারিখ, দশমিক ও মোট নিশ্চিত করুন"
+        },
+        {
+          "t": "p",
+          "x": "আমদানি 1.234,56-কে 1,234.56 পড়তে পারে অথবা 04/05-কে 4 মে কিংবা 5 এপ্রিল ভাবতে পারে। মূল নথির ফরম্যাট নিন এবং গুরুত্বপূর্ণ সারি চোখে দেখে যাচাই করুন। সূত্র টেক্সট সেল স্পষ্ট সতর্কতা ছাড়াই বাদ দিতে পারে। আর্থিক, কর বা আইনি সিদ্ধান্তে মূল রাখুন এবং অনুমোদনের ধাপকে স্বয়ংক্রিয় রূপান্তর দিয়ে প্রতিস্থাপন করবেন না।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF থেকে Excel ব্যক্তিগতভাবে রূপান্তর করুন"
+        },
+        {
+          "t": "p",
+          "x": "বিবরণী, ইনভয়েস ও রিপোর্টে ব্যক্তিগত তথ্য থাকতে পারে। PrintxPDF সাধারণ রূপান্তর ব্রাউজার ট্যাবে করে, নিয়মিত বাইরের সার্ভারে আপলোড করে না। শেয়ারের আগে XLSX দেখুন। স্ক্যান হলে আগে [PDF OCR](/tools/ocr-pdf); কয়েকটি পৃষ্ঠা হলে [পৃষ্ঠা বের করুন](/tools/extract-pages)। [মেটাডেটা সরান](/tools/remove-metadata) PDF বৈশিষ্ট্য আলাদাভাবে সামলায়।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF-এর সংখ্যা Excel-এ টেক্সট হয় কেন?",
+          "a": "PDF নির্ভরযোগ্য সংখ্যা বা তারিখের সেল ধরন রাখে না। রূপান্তরে Excel শনাক্ত লেখা ফরম্যাট ও অঞ্চল সেটিং ধরে ব্যাখ্যা করে।"
+        },
+        {
+          "q": "Excel-এ টেক্সট হিসেবে থাকা সংখ্যা কীভাবে বদলাব?",
+          "a": "মান বেছে Convert to Number বা Text to Columns ব্যবহার করুন। পরে দশমিক, তারিখ ও মোট মূল PDF-এর সঙ্গে দেখুন।"
+        },
+        {
+          "q": "শুরুর শূন্য থাকা কোড কি সংখ্যায় বদলাব?",
+          "a": "সব সময় নয়। ইনভয়েস বা অ্যাকাউন্ট নম্বরের মতো পরিচিতি টেক্সট রাখুন, যাতে শুরুতে শূন্য না হারায়।"
+        },
+        {
+          "q": "PDF থেকে Excel কনভার্টার কি সংখ্যা নিজে ঠিক করে?",
+          "a": "সব সময় নয়। এটি পাঠ ও PDF-এর ফাঁক থেকে সেল বানায়। ব্যবহারের আগে ধরন, তারিখ, চিহ্ন ও হিসাব যাচাই করুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Vì sao số trong PDF chuyển sang Excel lại thành văn bản",
+      "metaTitle": "Vì sao PDF sang Excel biến số thành văn bản",
+      "metaDescription": "Tìm hiểu vì sao PDF sang Excel nhập số thành văn bản và cách sửa. Miễn phí, không đăng ký, không dấu mờ.",
+      "keyword": "vì sao số PDF sang Excel thành văn bản",
+      "secondaryKeywords": [
+        "PDF sang Excel miễn phí",
+        "chuyển PDF sang XLSX",
+        "trích xuất bảng PDF",
+        "công cụ chuyển PDF sang bảng tính"
+      ],
+      "answer": "Số trong PDF thành văn bản khi chuyển sang Excel vì PDF không lưu kiểu ô như số, ngày tháng hay nhãn. Hãy chuyển các cột cần thiết thành số trong Excel, rồi so sánh số thập phân, ngày, dấu âm và tổng với tài liệu gốc.",
+      "ctaLabel": "Chuyển PDF sang Excel và kiểm tra dữ liệu",
+      "body": [
+        {
+          "t": "p",
+          "x": "Bảng tính cần biết mỗi giá trị là số, ngày hay nhãn. PDF thường chỉ giữ hình thức và vị trí của chữ trên trang, không giữ kiểu dữ liệu dự định. Vì vậy, giá trị 125,50 có thể trông như số nhưng Excel không cộng được."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển PDF thành sổ tính Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Kiểm tra PDF có văn bản chọn được không",
+              "x": "Thử chọn một từ. Nếu là bản scan, chạy [OCR PDF](/tools/ocr-pdf) trên bản sao trước."
+            },
+            {
+              "h": "Mở PDF sang Excel",
+              "x": "Thêm tệp vào [PDF sang Excel](/tools/pdf-to-excel) trong trình duyệt. Chuyển đổi tiêu chuẩn xử lý trên thiết bị."
+            },
+            {
+              "h": "Tạo và tải sổ tính",
+              "x": "Mỗi trang PDF thành một trang tính, mỗi dòng thành một hàng, khoảng trống rộng tách chữ thành ô."
+            },
+            {
+              "h": "Tìm số đang lưu thành văn bản",
+              "x": "Trong Excel, kiểm tra căn lề, cảnh báo và xem hàm SUM có tính các giá trị hay không. Đừng chỉ nhìn bề ngoài."
+            },
+            {
+              "h": "Chuyển đổi và xác minh",
+              "x": "Dùng Convert to Number hoặc Text to Columns rồi kiểm tra lại số thập phân, ngày, dấu và tổng."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Chuyển văn bản PDF sang Excel trong trình duyệt. Miễn phí, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao lỗi xảy ra sau khi chuyển PDF sang Excel"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Dữ liệu PDF",
+            "Lỗi có thể gặp",
+            "Điều cần kiểm tra"
+          ],
+          "rows": [
+            [
+              "Số có ký hiệu tiền tệ",
+              "Được nhập thành văn bản",
+              "Bỏ ký hiệu ở cột phụ rồi chuyển giá trị."
+            ],
+            [
+              "Dấu thập phân theo vùng",
+              "Dấu chấm và phẩy không khớp",
+              "Chỉnh cài đặt vùng hoặc tách cột."
+            ],
+            [
+              "Số 0 đầu mã",
+              "Excel có thể xóa khi chuyển",
+              "Giữ dạng văn bản nếu là mã định danh."
+            ],
+            [
+              "Ngày in trên tài liệu",
+              "Ngày và tháng có thể đảo",
+              "Xác nhận ngày gốc trước khi đổi định dạng."
+            ],
+            [
+              "Số âm",
+              "Dấu trừ có thể bị tách",
+              "Kiểm tra dấu và tổng."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF và Excel không dùng chung kiểu dữ liệu"
+        },
+        {
+          "t": "p",
+          "x": "PDF đặt ký tự tại vị trí cố định. Nó không luôn cho biết 1.250 là số cần cộng, 03-04 là ngày hay 00127 là mã phải giữ số 0 đầu. PrintxPDF tách chữ theo khoảng cách rộng hoặc tab; sau đó Excel diễn giải theo cài đặt vùng. Cột hẹp và bố cục bất thường có thể cần chỉnh sửa thủ công."
+        },
+        {
+          "t": "h2",
+          "x": "Sửa giá trị mà không làm đổi mã định danh"
+        },
+        {
+          "t": "p",
+          "x": "Nếu một khoản tiền ở dạng văn bản, chọn cột và dùng Convert to Number hoặc Text to Columns trong Excel. Hãy kiểm tra trước: số tài khoản, mã bưu chính, mã tham chiếu và số hóa đơn thường là định danh, không phải số để cộng. Giữ số 0 đầu và ký hiệu cần thiết. Sau đó đối chiếu số dòng, tiền trước thuế, thuế và tổng với PDF gốc."
+        },
+        {
+          "t": "h2",
+          "x": "Xác minh ngày, số thập phân và tổng"
+        },
+        {
+          "t": "p",
+          "x": "Tệp nhập có thể đọc 1.234,56 thành 1,234.56 hoặc hiểu 04/05 là ngày 4 tháng 5 hay 5 tháng 4. Chọn đúng định dạng tài liệu và xem lại các hàng quan trọng. Công thức có thể bỏ qua ô văn bản mà không báo rõ. Với quyết định tài chính, thuế hoặc pháp lý, hãy giữ nguồn và không thay quy trình phê duyệt bằng chuyển đổi tự động."
+        },
+        {
+          "t": "h2",
+          "x": "Chuyển PDF sang Excel riêng tư"
+        },
+        {
+          "t": "p",
+          "x": "Sao kê, hóa đơn và báo cáo có thể chứa dữ liệu cá nhân. PrintxPDF xử lý chuyển đổi tiêu chuẩn trong thẻ trình duyệt, không tải thường xuyên lên máy chủ bên ngoài. Kiểm tra XLSX trước khi chia sẻ. Nếu là scan, chạy [OCR PDF](/tools/ocr-pdf) trước; nếu chỉ cần vài trang, dùng [Trích xuất trang](/tools/extract-pages). [Xóa siêu dữ liệu](/tools/remove-metadata) xử lý thuộc tính PDF riêng."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Vì sao Excel coi số PDF là văn bản?",
+          "a": "PDF không lưu kiểu ô đáng tin cậy như số hoặc ngày. Khi chuyển, Excel diễn giải chữ nhận được theo định dạng và cài đặt vùng."
+        },
+        {
+          "q": "Làm sao đổi số đang lưu dưới dạng văn bản trong Excel?",
+          "a": "Chọn các giá trị và dùng Convert to Number hoặc Text to Columns. Sau đó so sánh số thập phân, ngày và tổng với PDF gốc."
+        },
+        {
+          "q": "Có nên đổi mã có số 0 đầu thành số không?",
+          "a": "Không nhất thiết. Nếu là mã định danh như số hóa đơn hoặc tài khoản, hãy giữ dạng văn bản để không mất số 0 đầu."
+        },
+        {
+          "q": "Công cụ PDF sang Excel có tự sửa số không?",
+          "a": "Không phải lúc nào cũng vậy. Công cụ trích văn bản và chia ô theo khoảng cách; hãy kiểm tra kiểu dữ liệu, ngày, dấu và phép tính trước khi dùng."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "为什么 PDF 转 Excel 后的数字变成文本",
+      "metaTitle": "为什么 PDF 转 Excel 后数字显示为文本",
+      "metaDescription": "了解 PDF 转 Excel 后数字为何变成文本及修复方法。免费、无需注册、无水印，直接在浏览器处理。",
+      "keyword": "PDF 转 Excel 后数字是文本的原因",
+      "secondaryKeywords": [
+        "免费 PDF 转 Excel",
+        "将 PDF 转为 XLSX",
+        "提取 PDF 表格",
+        "PDF 电子表格转换器"
+      ],
+      "answer": "PDF 转 Excel 后数字变成文本，是因为 PDF 不保存数字、日期或标签等单元格类型。请在 Excel 中将相关列转换为数值，并将小数、日期、负号和总计与原文件核对。",
+      "ctaLabel": "将 PDF 转为 Excel 并核对数据",
+      "body": [
+        {
+          "t": "p",
+          "x": "电子表格需要知道一个值是数字、日期还是标签。PDF 往往只保存文字在页面上的外观和位置，不保存预期的数据类型。因此，金额即使显示为 125.50，Excel 也可能无法将它用于求和。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将 PDF 转换为 Excel 工作簿"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "检查 PDF 是否有可选中文本",
+              "x": "尝试选中一个词。如果是扫描件，请先在副本上运行[PDF OCR](/tools/ocr-pdf)。"
+            },
+            {
+              "h": "打开 PDF 转 Excel",
+              "x": "在浏览器中将文件添加到[PDF 转 Excel](/tools/pdf-to-excel)。标准转换在你的设备上处理。"
+            },
+            {
+              "h": "创建并下载工作簿",
+              "x": "每个 PDF 页面成为一个工作表，每行文字成为一行，较大间距会将文本拆分到单元格。"
+            },
+            {
+              "h": "找出以文本保存的数字",
+              "x": "在 Excel 中检查对齐方式、提示，以及 SUM 是否包含这些值。不要只看显示外观。"
+            },
+            {
+              "h": "转换并核对",
+              "x": "使用“转换为数字”或“分列”，然后再次检查小数、日期、正负号和总计。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "在浏览器中将 PDF 文本转为 Excel。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "PDF 转 Excel 后为什么会出现这个问题"
+        },
+        {
+          "t": "table",
+          "head": [
+            "PDF 数据",
+            "可能情况",
+            "检查方法"
+          ],
+          "rows": [
+            [
+              "带货币符号的数字",
+              "被导入为文本",
+              "在辅助列移除符号后转换数值。"
+            ],
+            [
+              "区域小数分隔符",
+              "点号和逗号不匹配",
+              "调整区域设置或拆分列。"
+            ],
+            [
+              "代码前导零",
+              "转换时可能被删除",
+              "若是标识符，应保留为文本。"
+            ],
+            [
+              "印刷日期",
+              "日和月可能颠倒",
+              "更改格式前核对原日期。"
+            ],
+            [
+              "负数",
+              "负号可能被分开",
+              "检查符号和总计。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF 和 Excel 不共享数据类型"
+        },
+        {
+          "t": "p",
+          "x": "PDF 将字符放在固定位置，但不一定说明 1,250 是需要求和的数值、03-04 是日期，或 00127 是必须保留前导零的代码。PrintxPDF 根据较大间距或制表符拆分文本，之后由 Excel 按区域设置解释。狭窄列和不规则版式可能需要手动整理。"
+        },
+        {
+          "t": "h2",
+          "x": "转换数值时保留标识符"
+        },
+        {
+          "t": "p",
+          "x": "如果金额被保存为文本，请选择该列并在 Excel 中使用“转换为数字”或“分列”。先确认字段用途：账号、邮政编码、参考编号和发票号通常是标识符，不是可求和的金额。保留前导零及必要符号。之后将项目数量、小计、税额和总额与原 PDF 核对。"
+        },
+        {
+          "t": "h2",
+          "x": "核对日期、小数和总计"
+        },
+        {
+          "t": "p",
+          "x": "导入时可能把 1.234,56 读成 1,234.56，也可能将 04/05 解释为 5 月 4 日或 4 月 5 日。请选用源文件的格式，并目视检查重要行。公式可能静默跳过文本单元格。涉及财务、税务或法律决定时，请保留原件，不要用自动转换代替必要的审批流程。"
+        },
+        {
+          "t": "h2",
+          "x": "私密地将 PDF 转换为 Excel"
+        },
+        {
+          "t": "p",
+          "x": "对账单、发票和报告可能包含个人信息。PrintxPDF 在浏览器标签页中处理标准转换，不会例行上传到外部服务器。分享前检查 XLSX。扫描件先运行[PDF OCR](/tools/ocr-pdf)；只需少数页面时使用[提取页面](/tools/extract-pages)。[移除元数据](/tools/remove-metadata)可单独处理 PDF 属性。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "为什么 Excel 将 PDF 中的数字当作文本？",
+          "a": "PDF 不保存数字或日期等可靠的单元格类型。转换时，Excel 会根据格式和区域设置解释识别到的文本。"
+        },
+        {
+          "q": "如何把 Excel 中以文本保存的数字转换为数值？",
+          "a": "选中相关值，使用“转换为数字”或“分列”，再将小数、日期和总计与原 PDF 核对。"
+        },
+        {
+          "q": "带前导零的代码应该转换为数字吗？",
+          "a": "不一定。如果它是发票号或账号等标识符，应保留为文本，以免前导零丢失。"
+        },
+        {
+          "q": "PDF 转 Excel 工具会自动修正数字吗？",
+          "a": "不一定。工具提取文本并按 PDF 间距拆分单元格。使用前请检查数据类型、日期、符号和计算结果。"
+        }
+      ]
+    }
+  }
+}
