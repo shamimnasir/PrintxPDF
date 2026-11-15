@@ -1,0 +1,973 @@
+{
+  "topic": "convert-scanned-pdf-to-excel",
+  "sourceCluster": "from-pdf",
+  "tool": "pdf-to-excel",
+  "languages": {
+    "es": {
+      "title": "Cómo convertir un PDF escaneado a Excel",
+      "metaTitle": "Convertir un PDF escaneado a Excel",
+      "metaDescription": "Convierte PDF escaneados a Excel con OCR. Gratis, sin registro ni marca de agua, con procesamiento privado en el navegador.",
+      "keyword": "convertir PDF escaneado a Excel",
+      "secondaryKeywords": [
+        "PDF a Excel gratis",
+        "convertir PDF a XLSX",
+        "extraer tabla de PDF",
+        "convertidor PDF a hoja de cálculo"
+      ],
+      "answer": "Para convertir un PDF escaneado a Excel, ejecuta primero OCR en una copia para crear texto seleccionable. Después convierte esa copia y verifica los valores importantes. La escritura a mano, el desenfoque y las tablas estrechas requieren revisión adicional.",
+      "ctaLabel": "Convierte el PDF escaneado a Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "Un PDF escaneado contiene imágenes de las páginas, no palabras que un conversor de hojas de cálculo pueda colocar directamente en celdas. Primero necesitas reconocimiento óptico de caracteres (OCR), que añade texto seleccionable. Después puedes convertir el archivo a XLSX y revisar la estructura y los datos."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir un PDF escaneado en un libro de Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Comprueba si el PDF tiene texto seleccionable",
+              "x": "Intenta seleccionar una palabra. Si no puedes, ejecuta [OCR PDF](/tools/ocr-pdf) en una copia del documento."
+            },
+            {
+              "h": "Abre PDF a Excel",
+              "x": "Añade la copia procesada a [PDF a Excel](/tools/pdf-to-excel) en el navegador. La conversión estándar se realiza en tu dispositivo."
+            },
+            {
+              "h": "Crea el libro",
+              "x": "Inicia la conversión. Cada página se convierte en una hoja, cada línea en una fila y los espacios amplios separan el texto en celdas."
+            },
+            {
+              "h": "Descarga y revisa",
+              "x": "Abre el XLSX en Excel, Sheets o Numbers y comprueba encabezados, fechas y cifras."
+            },
+            {
+              "h": "Limpia los valores",
+              "x": "Convierte los números que aparecen como texto y elimina encabezados repetidos antes de ordenar o sumar."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Convierte el PDF escaneado en un libro de Excel en el navegador. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Qué esperar de un PDF escaneado convertido"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Contenido",
+            "Resultado probable",
+            "Siguiente paso"
+          ],
+          "rows": [
+            [
+              "Texto impreso nítido",
+              "Texto seleccionable para convertir",
+              "Comprueba columnas y totales."
+            ],
+            [
+              "Tabla con bordes dibujados",
+              "Filas basadas en espacios de texto",
+              "Revisa columnas estrechas o combinadas."
+            ],
+            [
+              "Imagen borrosa o inclinada",
+              "Errores de reconocimiento",
+              "Vuelve a escanear o corrige la página."
+            ],
+            [
+              "Escritura a mano",
+              "OCR parcial o incorrecto",
+              "Transcribe y verifica manualmente."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "El OCR no reconstruye automáticamente las tablas"
+        },
+        {
+          "t": "p",
+          "x": "El OCR reconoce caracteres en una imagen, pero no siempre sabe qué dato pertenece a cada columna. PDF guarda el texto en posiciones fijas y las líneas dibujadas no explican la estructura de una celda. PrintxPDF separa el texto por espacios amplios o tabuladores. Esto funciona mejor con informes limpios; las columnas estrechas, las líneas partidas y los encabezados combinados requieren revisión."
+        },
+        {
+          "t": "h2",
+          "x": "Verifica cada cifra importante"
+        },
+        {
+          "t": "p",
+          "x": "Una hoja de cálculo convertida no es un resultado contable verificado. Excel puede tratar los números como texto, cambiar el formato de fechas o leer mal un signo menos o un decimal. Compara totales, cuentas, fechas y filas de alto valor con la imagen original. El OCR puede confundir caracteres parecidos, por ejemplo 8 y 3 o O y 0. Para decisiones financieras, fiscales, médicas o legales, conserva el original y sigue la revisión requerida."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué ayuda la conversión local"
+        },
+        {
+          "t": "p",
+          "x": "Los extractos, facturas y nóminas suelen contener información privada. PrintxPDF ejecuta el OCR y la conversión estándar en el navegador, evitando una subida rutinaria a un servidor externo. Aun así, tú eliges dónde guardar o compartir el XLSX. Antes de adjuntarlo a un correo o ponerlo en una carpeta compartida, revisa el nombre del archivo y el contenido de cada hoja."
+        },
+        {
+          "t": "h2",
+          "x": "Prepara y limpia los archivos relacionados"
+        },
+        {
+          "t": "p",
+          "x": "Si solo necesitas algunas páginas, usa [Extraer páginas](/tools/extract-pages) antes de convertir. Conserva una copia del escaneo original para comparar el OCR. Si el PDF contiene propiedades sensibles, [Eliminar metadatos](/tools/remove-metadata) puede crear una copia más limpia para compartir, aunque no sustituye los controles de acceso ni la revisión del contenido visible."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo convierto un PDF escaneado en Excel?",
+          "a": "Ejecuta OCR en una copia para añadir texto seleccionable, convierte esa copia a XLSX y verifica las columnas, cifras y fechas con la imagen original."
+        },
+        {
+          "q": "¿Puedo convertir gratis PDF escaneados a Excel?",
+          "a": "Sí. PrintxPDF ofrece la conversión estándar gratis, sin registro ni marca de agua. Ejecuta OCR primero si el PDF solo contiene imágenes."
+        },
+        {
+          "q": "¿Por qué el OCR lee mal cifras o nombres?",
+          "a": "El desenfoque, la inclinación, el bajo contraste, la escritura a mano y una resolución baja pueden confundir caracteres. Revisa manualmente los valores importantes."
+        },
+        {
+          "q": "¿La conversión de PDF a Excel es privada?",
+          "a": "Para archivos estándar, PrintxPDF procesa el texto y crea el libro dentro de la pestaña del navegador, sin una subida rutinaria a un servidor."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como converter um PDF digitalizado para Excel",
+      "metaTitle": "Converta PDF digitalizado para Excel",
+      "metaDescription": "Converta PDF digitalizado para Excel com OCR. Grátis, sem cadastro ou marca-d'água, com processamento privado no navegador.",
+      "keyword": "converter PDF digitalizado para Excel",
+      "secondaryKeywords": [
+        "PDF para Excel grátis",
+        "converter PDF para XLSX",
+        "extrair tabela de PDF",
+        "conversor PDF para planilha"
+      ],
+      "answer": "Para converter um PDF digitalizado para Excel, rode OCR em uma cópia primeiro para criar texto selecionável. Depois converta essa cópia e confira os valores importantes. Escrita à mão, desfoque e tabelas apertadas exigem revisão extra.",
+      "ctaLabel": "Converta o PDF digitalizado para Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "Um PDF digitalizado contém imagens das páginas, não palavras que um conversor de planilha possa colocar diretamente em células. Primeiro use reconhecimento óptico de caracteres (OCR), que adiciona texto selecionável. Depois converta para XLSX e confira os dados e a estrutura."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter um PDF digitalizado em pasta de trabalho do Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Veja se o PDF tem texto selecionável",
+              "x": "Tente selecionar uma palavra. Se não der, rode [OCR PDF](/tools/ocr-pdf) em uma cópia do documento."
+            },
+            {
+              "h": "Abra PDF para Excel",
+              "x": "Adicione a cópia processada em [PDF para Excel](/tools/pdf-to-excel) no navegador. A conversão padrão acontece no dispositivo."
+            },
+            {
+              "h": "Crie a pasta de trabalho",
+              "x": "Execute a conversão. Cada página vira uma planilha, cada linha vira uma linha de dados, e espaços largos separam o texto em células."
+            },
+            {
+              "h": "Baixe e confira",
+              "x": "Abra o XLSX no Excel, Sheets ou Numbers e examine títulos, datas e valores."
+            },
+            {
+              "h": "Limpe os valores",
+              "x": "Converta números que aparecem como texto e remova cabeçalhos repetidos antes de ordenar ou somar."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Converta o PDF digitalizado em uma pasta de trabalho Excel no navegador. Grátis, sem cadastro ou marca-d'água."
+        },
+        {
+          "t": "h2",
+          "x": "O que esperar de um PDF digitalizado convertido"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Conteúdo",
+            "Resultado provável",
+            "Próximo passo"
+          ],
+          "rows": [
+            [
+              "Texto impresso nítido",
+              "Texto selecionável para converter",
+              "Confira colunas e totais."
+            ],
+            [
+              "Tabela com bordas desenhadas",
+              "Linhas baseadas nos espaços do texto",
+              "Revise colunas estreitas ou mescladas."
+            ],
+            [
+              "Imagem borrada ou inclinada",
+              "Erros de reconhecimento",
+              "Digitalize novamente ou corrija a página."
+            ],
+            [
+              "Escrita à mão",
+              "OCR parcial ou incorreto",
+              "Transcreva e confira manualmente."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "O OCR não reconstrói tabelas automaticamente"
+        },
+        {
+          "t": "p",
+          "x": "O OCR reconhece caracteres em uma imagem, mas pode não saber a qual coluna cada dado pertence. PDF guarda texto em posições fixas, e linhas desenhadas não descrevem a estrutura das células. O PrintxPDF separa o texto por espaços largos ou tabulações. Funciona melhor com relatórios limpos; colunas estreitas, linhas quebradas e títulos mesclados precisam de revisão."
+        },
+        {
+          "t": "h2",
+          "x": "Confira cada número importante"
+        },
+        {
+          "t": "p",
+          "x": "Uma planilha convertida não é um resultado contábil verificado. O Excel pode tratar números como texto, mudar o formato da data ou interpretar errado um sinal de menos ou decimal. Compare totais, contas, datas e linhas de alto valor com a imagem original. O OCR pode confundir caracteres parecidos, como 8 e 3 ou O e 0. Para decisões financeiras, fiscais, médicas ou jurídicas, guarde o original e siga a revisão necessária."
+        },
+        {
+          "t": "h2",
+          "x": "Por que a conversão local ajuda"
+        },
+        {
+          "t": "p",
+          "x": "Extratos, faturas e relatórios de folha costumam conter dados privados. O PrintxPDF roda OCR e conversão padrão no navegador, evitando um upload rotineiro para servidor externo. Ainda assim, você escolhe onde guardar ou compartilhar o XLSX. Antes de anexar por e-mail ou colocar numa pasta compartilhada, confira o nome do arquivo e o conteúdo de cada planilha."
+        },
+        {
+          "t": "h2",
+          "x": "Prepare e organize os arquivos relacionados"
+        },
+        {
+          "t": "p",
+          "x": "Se você precisa de poucas páginas, use [Extrair páginas](/tools/extract-pages) antes da conversão. Guarde uma cópia do scan original para comparar o OCR. Se o PDF tiver propriedades sensíveis, [Remover metadados](/tools/remove-metadata) pode gerar uma cópia mais limpa, mas não substitui controles de acesso nem a revisão do conteúdo visível."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como converto PDF digitalizado para Excel?",
+          "a": "Rode OCR em uma cópia para adicionar texto selecionável, converta a cópia para XLSX e confira colunas, números e datas com a imagem original."
+        },
+        {
+          "q": "Posso converter PDFs digitalizados para Excel grátis?",
+          "a": "Sim. O PrintxPDF oferece conversão padrão grátis, sem cadastro ou marca-d'água. Rode OCR primeiro se o PDF só tiver imagens."
+        },
+        {
+          "q": "Por que o OCR erra números ou nomes?",
+          "a": "Desfoque, inclinação, baixo contraste, escrita manual e baixa resolução confundem caracteres. Confira manualmente os valores importantes."
+        },
+        {
+          "q": "A conversão de PDF para Excel é privada?",
+          "a": "Para arquivos padrão, o PrintxPDF processa o texto e cria a pasta de trabalho na aba do navegador, sem upload rotineiro para servidor."
+        }
+      ]
+    },
+    "hi": {
+      "title": "स्कैन PDF को Excel में कैसे बदलें",
+      "metaTitle": "स्कैन PDF को Excel में बदलें",
+      "metaDescription": "OCR से स्कैन PDF को Excel में बदलें। मुफ़्त, बिना साइनअप या वॉटरमार्क, ब्राउज़र में निजी प्रोसेसिंग।",
+      "keyword": "स्कैन PDF Excel में बदलें",
+      "secondaryKeywords": [
+        "PDF से Excel मुफ़्त",
+        "PDF को XLSX में बदलें",
+        "PDF तालिका निकालें",
+        "PDF स्प्रेडशीट कन्वर्टर"
+      ],
+      "answer": "स्कैन PDF को Excel में बदलने के लिए पहले कॉपी पर OCR चलाकर चयन योग्य पाठ बनाएँ। फिर उस कॉपी को कन्वर्ट करें और महत्वपूर्ण मान जाँचें। हस्तलिखित अक्षर, धुंधलापन और तंग तालिकाओं की अतिरिक्त समीक्षा आवश्यक है।",
+      "ctaLabel": "स्कैन PDF को Excel में बदलें",
+      "body": [
+        {
+          "t": "p",
+          "x": "स्कैन PDF में पेज की तस्वीरें होती हैं, ऐसे शब्द नहीं जिन्हें स्प्रेडशीट कन्वर्टर सीधे सेल में रख सके। पहले OCR यानी ऑप्टिकल कैरेक्टर रिकग्निशन चलाएँ। यह छवि से चयन योग्य पाठ बनाता है। उसके बाद XLSX में बदलें और डेटा तथा तालिका की बनावट जाँचें।"
+        },
+        {
+          "t": "h2",
+          "x": "स्कैन PDF को Excel वर्कबुक में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "देखें कि PDF में चयन योग्य पाठ है या नहीं",
+              "x": "एक शब्द चुनने की कोशिश करें। चयन न हो तो पहले दस्तावेज़ की कॉपी पर [PDF OCR](/tools/ocr-pdf) चलाएँ।"
+            },
+            {
+              "h": "PDF से Excel खोलें",
+              "x": "प्रोसेस की गई कॉपी को ब्राउज़र में [PDF से Excel](/tools/pdf-to-excel) में जोड़ें। सामान्य रूपांतरण डिवाइस पर होता है।"
+            },
+            {
+              "h": "वर्कबुक बनाएँ",
+              "x": "रूपांतरण चलाएँ। हर PDF पेज एक शीट बनेगा, हर लाइन एक रो और बड़े अंतराल सेल में पाठ बाँटेंगे।"
+            },
+            {
+              "h": "डाउनलोड कर जाँचें",
+              "x": "Excel, Sheets या Numbers में XLSX खोलें और शीर्षक, तारीख तथा आँकड़े देखें।"
+            },
+            {
+              "h": "मान साफ़ करें",
+              "x": "पाठ के रूप में आए अंकों को संख्या में बदलें और जोड़ने या छाँटने से पहले दोहराए हेडर हटाएँ।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ब्राउज़र में स्कैन PDF को Excel वर्कबुक में बदलें। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+        },
+        {
+          "t": "h2",
+          "x": "कन्वर्ट किए स्कैन PDF से क्या अपेक्षा रखें"
+        },
+        {
+          "t": "table",
+          "head": [
+            "सामग्री",
+            "संभावित परिणाम",
+            "अगला कदम"
+          ],
+          "rows": [
+            [
+              "साफ़ छपा पाठ",
+              "कन्वर्ट करने योग्य चयनित पाठ",
+              "कॉलम व कुल जाँचें।"
+            ],
+            [
+              "खींची बॉर्डर वाली तालिका",
+              "पाठ दूरी के आधार पर पंक्तियाँ",
+              "संकरी या मिली कॉलम जाँचें।"
+            ],
+            [
+              "धुंधली या तिरछी छवि",
+              "पहचान में त्रुटि",
+              "फिर स्कैन करें या दिशा ठीक करें।"
+            ],
+            [
+              "हस्तलेखन",
+              "आंशिक या गलत OCR",
+              "हाथ से लिखकर मिलाएँ।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR अपने आप तालिका फिर से नहीं बनाता"
+        },
+        {
+          "t": "p",
+          "x": "OCR छवि के अक्षर पहचानता है, लेकिन यह हमेशा नहीं जानता कि कौन सा डेटा किस कॉलम में है। PDF पाठ को निश्चित स्थानों पर रखता है और खींची हुई लाइन सेल की संरचना नहीं बताती। PrintxPDF बड़े अंतराल या टैब से पाठ बाँटता है। साफ़ रिपोर्ट में यह अच्छा काम करता है; तंग कॉलम, लिपटी लाइन और मिली हुई हेडिंग की जाँच करनी होगी।"
+        },
+        {
+          "t": "h2",
+          "x": "हर महत्वपूर्ण संख्या की पुष्टि करें"
+        },
+        {
+          "t": "p",
+          "x": "कन्वर्ट की गई शीट सत्यापित लेखा परिणाम नहीं है। Excel संख्या को पाठ मान सकता है, तारीख फ़ॉर्मेट बदल सकता है या माइनस/दशमलव गलत पढ़ सकता है। कुल, खाता संख्या, तारीख और बड़ी रकम वाली पंक्तियों को मूल छवि से मिलाएँ। OCR 8 और 3 या O और 0 जैसे अक्षर भ्रमित कर सकता है। वित्तीय, कर, चिकित्सा या कानूनी निर्णय में मूल रखें और तय समीक्षा करें।"
+        },
+        {
+          "t": "h2",
+          "x": "स्थानीय रूपांतरण क्यों मदद करता है"
+        },
+        {
+          "t": "p",
+          "x": "बैंक विवरण, चालान और वेतन रिपोर्ट में निजी जानकारी होती है। PrintxPDF ब्राउज़र में OCR और सामान्य रूपांतरण करता है, इसलिए नियमित रूप से फ़ाइल बाहरी सर्वर पर अपलोड नहीं होती। XLSX कहाँ सहेजना या साझा करना है, यह आप तय करते हैं। ईमेल में जोड़ने या साझा फ़ोल्डर में रखने से पहले नाम और हर शीट की सामग्री जाँचें।"
+        },
+        {
+          "t": "h2",
+          "x": "ज़रूरत के अनुसार संबंधित फ़ाइल तैयार करें"
+        },
+        {
+          "t": "p",
+          "x": "कुछ पेज ही चाहिए तो रूपांतरण से पहले [पेज निकालें](/tools/extract-pages)। OCR की तुलना के लिए मूल स्कैन की कॉपी रखें। PDF में संवेदनशील गुण हों तो [मेटाडेटा हटाएँ](/tools/remove-metadata) साफ़ साझा कॉपी बना सकता है, पर पहुँच नियंत्रण या दिखने वाले डेटा की समीक्षा की जगह नहीं लेता।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "स्कैन PDF को Excel में कैसे बदलूँ?",
+          "a": "कॉपी पर OCR चलाकर चयन योग्य पाठ बनाएँ, उसे XLSX में बदलें और कॉलम, संख्याएँ व तारीख मूल छवि से जाँचें।"
+        },
+        {
+          "q": "क्या स्कैन PDF को Excel में मुफ़्त बदल सकता हूँ?",
+          "a": "हाँ। PrintxPDF का सामान्य रूपांतरण मुफ़्त है, साइनअप और वॉटरमार्क के बिना। PDF में सिर्फ छवियाँ हों तो पहले OCR चलाएँ।"
+        },
+        {
+          "q": "OCR नाम या संख्या गलत क्यों पढ़ता है?",
+          "a": "धुंधलापन, तिरछा पेज, कम कंट्रास्ट, हस्तलेखन और कम रिज़ॉल्यूशन अक्षर भ्रमित कर सकते हैं। अहम मान हाथ से जाँचें।"
+        },
+        {
+          "q": "क्या PDF से Excel कन्वर्ज़न निजी है?",
+          "a": "सामान्य फ़ाइलों में PrintxPDF ब्राउज़र टैब के भीतर पाठ प्रोसेस कर वर्कबुक बनाता है, नियमित सर्वर अपलोड के बिना।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية تحويل PDF ممسوح ضوئياً إلى Excel",
+      "metaTitle": "تحويل PDF ممسوح إلى Excel",
+      "metaDescription": "حوّل PDF الممسوح إلى Excel باستخدام OCR. مجاناً، بلا تسجيل أو علامة مائية، داخل المتصفح بخصوصية.",
+      "keyword": "تحويل PDF ممسوح إلى Excel",
+      "secondaryKeywords": [
+        "PDF إلى Excel مجاناً",
+        "تحويل PDF إلى XLSX",
+        "استخراج جدول PDF",
+        "محول PDF إلى جدول بيانات"
+      ],
+      "answer": "لتحويل PDF ممسوح إلى Excel، شغّل OCR أولاً على نسخة لإضافة نص قابل للتحديد. ثم حوّل النسخة وتحقق من القيم المهمة. تتطلب الكتابة اليدوية والضبابية والجداول الضيقة مراجعة إضافية.",
+      "ctaLabel": "حوّل PDF الممسوح إلى Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "يحتوي PDF الممسوح على صور صفحات، لا على كلمات يمكن لمحول الجداول وضعها مباشرة في الخلايا. شغّل أولاً التعرف الضوئي على الحروف (OCR) لإضافة نص قابل للتحديد. بعد ذلك حوّل الملف إلى XLSX وافحص البيانات وبنية الجدول."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل PDF ممسوح إلى مصنف Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "تحقق من وجود نص قابل للتحديد",
+              "x": "حاول تحديد كلمة. إذا لم تتمكن، شغّل [OCR PDF](/tools/ocr-pdf) على نسخة من المستند أولاً."
+            },
+            {
+              "h": "افتح PDF إلى Excel",
+              "x": "أضف النسخة المعالجة إلى [PDF إلى Excel](/tools/pdf-to-excel) في المتصفح. يتم التحويل القياسي على جهازك."
+            },
+            {
+              "h": "أنشئ المصنف",
+              "x": "شغّل التحويل. تصبح كل صفحة ورقة عمل، وكل سطر صفاً، وتقسم المسافات الواسعة النص إلى خلايا."
+            },
+            {
+              "h": "نزّل وافحص",
+              "x": "افتح XLSX في Excel أو Sheets أو Numbers وتحقق من العناوين والتواريخ والأرقام."
+            },
+            {
+              "h": "نظّف القيم للتحليل",
+              "x": "حوّل الأرقام التي تظهر كنص إلى قيم رقمية وأزل الرؤوس المتكررة قبل الفرز أو الجمع."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "حوّل PDF الممسوح إلى مصنف Excel في المتصفح. مجاناً وبلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "ما المتوقع من تحويل PDF ممسوح"
+        },
+        {
+          "t": "table",
+          "head": [
+            "المحتوى",
+            "النتيجة المحتملة",
+            "الخطوة التالية"
+          ],
+          "rows": [
+            [
+              "نص مطبوع واضح",
+              "نص قابل للتحديد والتحويل",
+              "تحقق من الأعمدة والإجماليات."
+            ],
+            [
+              "جدول بخطوط مرسومة",
+              "صفوف حسب مسافات النص",
+              "راجع الأعمدة الضيقة أو المدمجة."
+            ],
+            [
+              "صورة ضبابية أو مائلة",
+              "أخطاء في التعرف",
+              "أعد المسح أو صحح اتجاه الصفحة."
+            ],
+            [
+              "كتابة يدوية",
+              "OCR جزئي أو غير صحيح",
+              "راجع النص واكتبه يدوياً."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "لا يعيد OCR بناء الجدول تلقائياً"
+        },
+        {
+          "t": "p",
+          "x": "يتعرف OCR على الحروف في الصورة، لكنه قد لا يعرف العمود الذي ينتمي إليه كل عنصر. يحفظ PDF النص في مواقع ثابتة ولا تحدد الخطوط المرسومة بنية الخلايا. يفصل PrintxPDF النص حسب الفجوات الواسعة أو علامات الجدولة. يناسب ذلك التقارير النظيفة أكثر، بينما تحتاج الأعمدة الضيقة والأسطر الملتفة والعناوين المدمجة إلى مراجعة."
+        },
+        {
+          "t": "h2",
+          "x": "تحقق من كل رقم مهم"
+        },
+        {
+          "t": "p",
+          "x": "المصنف المحول ليس نتيجة محاسبية مؤكدة. قد يعامل Excel الرقم كنص، أو يغير تنسيق التاريخ، أو يقرأ إشارة السالب أو العلامة العشرية خطأ. قارن الإجماليات وأرقام الحسابات والتواريخ والصفوف عالية القيمة بالصورة الأصلية. وقد يخلط OCR بين رموز مثل 8 و3 أو O و0. في القرارات المالية أو الضريبية أو الطبية أو القانونية، احتفظ بالأصل واتبع المراجعة المطلوبة."
+        },
+        {
+          "t": "h2",
+          "x": "فائدة التحويل المحلي"
+        },
+        {
+          "t": "p",
+          "x": "تتضمن الكشوف والفواتير وتقارير الرواتب بيانات خاصة غالباً. ينفذ PrintxPDF OCR والتحويل القياسي في المتصفح، متجنباً الرفع المعتاد إلى خادم خارجي. أنت تختار مكان حفظ XLSX ومشاركته. تحقق من اسم الملف ومحتوى كل ورقة قبل إرفاقه بالبريد أو وضعه في مجلد مشترك."
+        },
+        {
+          "t": "h2",
+          "x": "جهّز الملفات المرتبطة عند الحاجة"
+        },
+        {
+          "t": "p",
+          "x": "إذا احتجت إلى صفحات قليلة، فاستخدم [استخراج الصفحات](/tools/extract-pages) قبل التحويل. احتفظ بنسخة من المسح الأصلي لمقارنة OCR. وإذا احتوى PDF خصائص حساسة، فقد تنشئ [إزالة البيانات الوصفية](/tools/remove-metadata) نسخة أنظف للمشاركة، لكنها لا تحل محل ضوابط الوصول أو مراجعة المحتوى الظاهر."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أحول PDF ممسوحاً إلى Excel؟",
+          "a": "شغّل OCR على نسخة لإضافة نص قابل للتحديد، وحوّلها إلى XLSX، ثم قارن الأعمدة والأرقام والتواريخ بالصورة الأصلية."
+        },
+        {
+          "q": "هل يمكن تحويل PDF ممسوح إلى Excel مجاناً؟",
+          "a": "نعم. يوفر PrintxPDF التحويل القياسي مجاناً وبلا تسجيل أو علامة مائية. شغّل OCR أولاً إذا احتوى PDF على صور فقط."
+        },
+        {
+          "q": "لماذا يخطئ OCR في الأرقام أو الأسماء؟",
+          "a": "قد تسبب الضبابية والميل والتباين الضعيف والكتابة اليدوية والدقة المنخفضة التباساً. تحقق يدوياً من القيم المهمة."
+        },
+        {
+          "q": "هل تحويل PDF إلى Excel خاص؟",
+          "a": "للملفات القياسية، يعالج PrintxPDF النص وينشئ المصنف داخل علامة تبويب المتصفح دون رفع معتاد إلى خادم."
+        }
+      ]
+    },
+    "bn": {
+      "title": "স্ক্যান PDF কীভাবে Excel-এ রূপান্তর করবেন",
+      "metaTitle": "স্ক্যান PDF Excel-এ রূপান্তর করুন",
+      "metaDescription": "OCR দিয়ে স্ক্যান PDF Excel-এ রূপান্তর করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া, ব্রাউজারে ব্যক্তিগত প্রক্রিয়ায়।",
+      "keyword": "স্ক্যান PDF Excel-এ রূপান্তর",
+      "secondaryKeywords": [
+        "PDF থেকে Excel বিনামূল্যে",
+        "PDF XLSX-এ বদল",
+        "PDF টেবিল বের করা",
+        "PDF স্প্রেডশিট কনভার্টার"
+      ],
+      "answer": "স্ক্যান PDF Excel-এ রূপান্তর করতে আগে কপিতে OCR চালিয়ে নির্বাচনযোগ্য লেখা তৈরি করুন। তারপর সেই কপি রূপান্তর করে গুরুত্বপূর্ণ মান যাচাই করুন। হাতের লেখা, ঝাপসা ছবি এবং আঁটসাঁট টেবিলে বাড়তি পর্যালোচনা দরকার।",
+      "ctaLabel": "স্ক্যান PDF Excel-এ রূপান্তর করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "স্ক্যান PDF-এ পৃষ্ঠার ছবি থাকে, এমন শব্দ থাকে না যা স্প্রেডশিট কনভার্টার সরাসরি সেলে বসাতে পারে। আগে OCR অর্থাৎ অপটিক্যাল ক্যারেক্টার রিকগনিশন চালিয়ে নির্বাচনযোগ্য লেখা যোগ করুন। তারপর XLSX-এ রূপান্তর করে ডেটা ও টেবিলের গঠন যাচাই করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "স্ক্যান PDF Excel ওয়ার্কবুকে রূপান্তরের নিয়ম"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "PDF-এ নির্বাচনযোগ্য লেখা আছে কি না দেখুন",
+              "x": "একটি শব্দ বেছে দেখুন। না পারলে আগে নথির কপিতে [PDF OCR](/tools/ocr-pdf) চালান।"
+            },
+            {
+              "h": "PDF থেকে Excel খুলুন",
+              "x": "প্রক্রিয়াকৃত কপি ব্রাউজারে [PDF থেকে Excel](/tools/pdf-to-excel)-এ যোগ করুন। সাধারণ রূপান্তর ডিভাইসেই হয়।"
+            },
+            {
+              "h": "ওয়ার্কবুক তৈরি করুন",
+              "x": "রূপান্তর চালান। প্রতি PDF পৃষ্ঠা একটি শিট হয়, প্রতি লাইন একটি সারি এবং বড় ফাঁক লেখা সেলে ভাগ করে।"
+            },
+            {
+              "h": "ডাউনলোড করে যাচাই করুন",
+              "x": "Excel, Sheets বা Numbers-এ XLSX খুলে শিরোনাম, তারিখ ও অঙ্ক দেখুন।"
+            },
+            {
+              "h": "বিশ্লেষণের আগে মান ঠিক করুন",
+              "x": "লেখা হিসেবে থাকা সংখ্যাকে সংখ্যায় বদলান এবং সাজানো বা যোগের আগে পুনরাবৃত্ত পৃষ্ঠা শিরোনাম মুছুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "ব্রাউজারে স্ক্যান PDF Excel ওয়ার্কবুকে বদলান। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "রূপান্তরিত স্ক্যান PDF থেকে কী আশা করবেন"
+        },
+        {
+          "t": "table",
+          "head": [
+            "বিষয়বস্তু",
+            "সম্ভাব্য ফল",
+            "পরের ধাপ"
+          ],
+          "rows": [
+            [
+              "স্পষ্ট ছাপা লেখা",
+              "নির্বাচন ও রূপান্তরযোগ্য লেখা",
+              "কলাম ও মোট যাচাই করুন।"
+            ],
+            [
+              "আঁকা বর্ডারের টেবিল",
+              "লেখার ফাঁকভিত্তিক সারি",
+              "সরু বা মিশ্র কলাম দেখুন।"
+            ],
+            [
+              "ঝাপসা বা বাঁকা ছবি",
+              "শনাক্তকরণে ভুল",
+              "আবার স্ক্যান বা দিক ঠিক করুন।"
+            ],
+            [
+              "হাতের লেখা",
+              "আংশিক বা ভুল OCR",
+              "হাতে মিলিয়ে লিখুন।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR নিজে থেকে টেবিলের গঠন ফেরায় না"
+        },
+        {
+          "t": "p",
+          "x": "OCR ছবির অক্ষর চিনতে পারে, কিন্তু কোন তথ্য কোন কলামে তা সব সময় বোঝে না। PDF লেখা নির্দিষ্ট অবস্থানে রাখে, আর আঁকা লাইন সেলের গঠন বলে না। PrintxPDF বড় ফাঁক বা ট্যাব দিয়ে লেখা ভাগ করে। পরিষ্কার রিপোর্টে এটি ভালো কাজ করে; সরু কলাম, ভাঙা লাইন ও মিশ্র শিরোনাম যাচাই করতে হবে।"
+        },
+        {
+          "t": "h2",
+          "x": "গুরুত্বপূর্ণ প্রতিটি সংখ্যা যাচাই করুন"
+        },
+        {
+          "t": "p",
+          "x": "রূপান্তরিত ওয়ার্কবুক যাচাইকৃত হিসাব নয়। Excel সংখ্যাকে লেখা ধরতে পারে, তারিখের বিন্যাস বদলাতে পারে বা বিয়োগ চিহ্ন ও দশমিক ভুল পড়তে পারে। মোট, অ্যাকাউন্ট নম্বর, তারিখ ও বড় অঙ্কের সারি মূল ছবির সঙ্গে মেলান। OCR ৮ ও ৩ বা O ও 0 গুলিয়ে ফেলতে পারে। আর্থিক, কর, চিকিৎসা বা আইনি সিদ্ধান্তে মূল রাখুন এবং প্রয়োজনীয় পর্যালোচনা করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "স্থানীয় রূপান্তর কেন উপকারী"
+        },
+        {
+          "t": "p",
+          "x": "ব্যাংক বিবরণী, চালান ও বেতন রিপোর্টে ব্যক্তিগত তথ্য থাকে। PrintxPDF ব্রাউজারে OCR ও সাধারণ রূপান্তর করে, তাই নিয়মিতভাবে বাইরের সার্ভারে আপলোড এড়ানো যায়। XLSX কোথায় রাখবেন বা শেয়ার করবেন তা আপনি ঠিক করেন। ইমেইলে জুড়তে বা শেয়ার্ড ফোল্ডারে রাখতে আগে ফাইলের নাম ও প্রতিটি শিটের বিষয়বস্তু দেখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "প্রয়োজনে সংশ্লিষ্ট PDF প্রস্তুত করুন"
+        },
+        {
+          "t": "p",
+          "x": "কয়েকটি পৃষ্ঠা লাগলে রূপান্তরের আগে [পৃষ্ঠা বের করুন](/tools/extract-pages)। OCR তুলনার জন্য মূল স্ক্যানের কপি রাখুন। সংবেদনশীল বৈশিষ্ট্য থাকলে [মেটাডেটা সরান](/tools/remove-metadata) পরিচ্ছন্ন শেয়ার কপি দিতে পারে, কিন্তু প্রবেশ নিয়ন্ত্রণ বা দৃশ্যমান বিষয়বস্তু পর্যালোচনার বিকল্প নয়।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "স্ক্যান PDF Excel-এ কীভাবে রূপান্তর করব?",
+          "a": "কপিতে OCR চালিয়ে নির্বাচনযোগ্য লেখা যোগ করুন, সেটিকে XLSX-এ বদলান এবং কলাম, অঙ্ক ও তারিখ মূল ছবির সঙ্গে যাচাই করুন।"
+        },
+        {
+          "q": "স্ক্যান PDF বিনামূল্যে Excel-এ রূপান্তর করা যায়?",
+          "a": "হ্যাঁ। PrintxPDF-এর সাধারণ রূপান্তর বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া। PDF-এ শুধু ছবি থাকলে আগে OCR চালান।"
+        },
+        {
+          "q": "OCR সংখ্যা বা নাম ভুল পড়ে কেন?",
+          "a": "ঝাপসা, বাঁকা পৃষ্ঠা, কম কনট্রাস্ট, হাতের লেখা ও কম রেজোলিউশনে অক্ষর গুলিয়ে যেতে পারে। গুরুত্বপূর্ণ মান হাতে যাচাই করুন।"
+        },
+        {
+          "q": "PDF থেকে Excel রূপান্তর কি ব্যক্তিগত?",
+          "a": "সাধারণ ফাইলে PrintxPDF ব্রাউজার ট্যাবের ভেতরে লেখা প্রসেস করে ও ওয়ার্কবুক তৈরি করে, নিয়মিত সার্ভার আপলোড ছাড়া।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách chuyển PDF scan sang Excel",
+      "metaTitle": "Chuyển PDF scan sang Excel",
+      "metaDescription": "Chuyển PDF scan sang Excel bằng OCR. Miễn phí, không đăng ký, không dấu mờ, xử lý riêng tư trong trình duyệt.",
+      "keyword": "chuyển PDF scan sang Excel",
+      "secondaryKeywords": [
+        "PDF sang Excel miễn phí",
+        "chuyển PDF sang XLSX",
+        "trích xuất bảng PDF",
+        "công cụ chuyển PDF sang bảng tính"
+      ],
+      "answer": "Để chuyển PDF scan sang Excel, hãy chạy OCR trên bản sao trước để tạo văn bản có thể chọn. Sau đó chuyển bản sao đó và xác minh các giá trị quan trọng. Chữ viết tay, ảnh mờ và bảng chật cần được kiểm tra thêm.",
+      "ctaLabel": "Chuyển PDF scan sang Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF scan là hình ảnh của trang giấy, không phải tập hợp từ ngữ để công cụ bảng tính đặt ngay vào ô. Trước tiên, hãy chạy nhận dạng ký tự quang học (OCR) để thêm lớp văn bản có thể chọn. Sau đó chuyển thành XLSX và kiểm tra dữ liệu cùng cấu trúc bảng."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển PDF scan thành sổ tính Excel"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Kiểm tra PDF có văn bản chọn được không",
+              "x": "Thử chọn một từ. Nếu không được, hãy chạy [OCR PDF](/tools/ocr-pdf) trên bản sao trước."
+            },
+            {
+              "h": "Mở PDF sang Excel",
+              "x": "Thêm bản đã xử lý vào [PDF sang Excel](/tools/pdf-to-excel) trong trình duyệt. Chuyển đổi tiêu chuẩn diễn ra trên thiết bị."
+            },
+            {
+              "h": "Tạo sổ tính",
+              "x": "Chạy chuyển đổi. Mỗi trang PDF thành một trang tính, mỗi dòng thành một hàng và khoảng trống rộng tách chữ thành ô."
+            },
+            {
+              "h": "Tải xuống và kiểm tra",
+              "x": "Mở XLSX bằng Excel, Sheets hoặc Numbers và xem tiêu đề, ngày tháng, số liệu."
+            },
+            {
+              "h": "Làm sạch dữ liệu",
+              "x": "Đổi giá trị số đang ở dạng văn bản thành số và xóa tiêu đề trang lặp trước khi sắp xếp hoặc tính tổng."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "Chuyển PDF scan thành sổ tính Excel trong trình duyệt. Miễn phí, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Kết quả PDF scan sau khi chuyển đổi"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Nội dung",
+            "Kết quả có thể gặp",
+            "Bước tiếp theo"
+          ],
+          "rows": [
+            [
+              "Chữ in rõ",
+              "Văn bản chọn được để chuyển",
+              "Kiểm tra cột và tổng."
+            ],
+            [
+              "Bảng có đường viền vẽ",
+              "Hàng dựa trên khoảng cách chữ",
+              "Xem lại cột hẹp hoặc ô gộp."
+            ],
+            [
+              "Ảnh mờ hoặc nghiêng",
+              "Lỗi nhận dạng",
+              "Quét lại hoặc chỉnh chiều trang."
+            ],
+            [
+              "Chữ viết tay",
+              "OCR một phần hoặc sai",
+              "Đối chiếu và nhập thủ công."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR không tự dựng lại cấu trúc bảng"
+        },
+        {
+          "t": "p",
+          "x": "OCR nhận dạng ký tự trong ảnh nhưng không phải lúc nào cũng biết dữ liệu thuộc cột nào. PDF đặt chữ tại vị trí cố định; đường kẻ vẽ không mô tả cấu trúc ô. PrintxPDF chia chữ theo khoảng cách rộng hoặc tab. Cách này phù hợp với báo cáo rõ ràng, nhưng cột hẹp, dòng xuống hàng và tiêu đề gộp cần xem lại."
+        },
+        {
+          "t": "h2",
+          "x": "Xác minh từng con số quan trọng"
+        },
+        {
+          "t": "p",
+          "x": "Sổ tính chuyển đổi không phải kết quả kế toán đã xác minh. Excel có thể coi số là văn bản, đổi định dạng ngày hoặc đọc sai dấu trừ hay dấu thập phân. So sánh tổng, số tài khoản, ngày và hàng giá trị lớn với ảnh gốc. OCR có thể nhầm ký tự như 8 với 3 hoặc O với 0. Với quyết định tài chính, thuế, y tế hoặc pháp lý, hãy giữ nguồn và tuân theo quy trình rà soát cần thiết."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao xử lý cục bộ hữu ích"
+        },
+        {
+          "t": "p",
+          "x": "Sao kê, hóa đơn và báo cáo lương thường có dữ liệu riêng tư. PrintxPDF chạy OCR và chuyển đổi tiêu chuẩn trong trình duyệt, tránh tải thường xuyên lên máy chủ bên ngoài. Bạn tự chọn nơi lưu hoặc chia sẻ XLSX. Trước khi đính kèm email hay lưu vào thư mục chung, hãy kiểm tra tên tệp và nội dung từng trang tính."
+        },
+        {
+          "t": "h2",
+          "x": "Chuẩn bị PDF liên quan khi cần"
+        },
+        {
+          "t": "p",
+          "x": "Nếu chỉ cần vài trang, hãy dùng [Trích xuất trang](/tools/extract-pages) trước khi chuyển. Giữ bản sao scan gốc để đối chiếu OCR. Nếu PDF có thuộc tính nhạy cảm, [Xóa siêu dữ liệu](/tools/remove-metadata) có thể tạo bản chia sẻ gọn hơn nhưng không thay thế kiểm soát truy cập hoặc việc xem lại nội dung hiển thị."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Làm sao chuyển PDF scan sang Excel?",
+          "a": "Chạy OCR trên bản sao để thêm văn bản chọn được, chuyển bản đó sang XLSX rồi so sánh cột, số và ngày với ảnh gốc."
+        },
+        {
+          "q": "Có thể chuyển PDF scan sang Excel miễn phí không?",
+          "a": "Có. PrintxPDF cung cấp chuyển đổi tiêu chuẩn miễn phí, không đăng ký, không dấu mờ. Nếu PDF chỉ có ảnh, hãy chạy OCR trước."
+        },
+        {
+          "q": "Vì sao OCR nhận sai số hoặc tên?",
+          "a": "Ảnh mờ, trang nghiêng, tương phản thấp, chữ viết tay và độ phân giải thấp có thể làm nhầm ký tự. Hãy kiểm tra thủ công giá trị quan trọng."
+        },
+        {
+          "q": "Chuyển PDF sang Excel có riêng tư không?",
+          "a": "Với tệp tiêu chuẩn, PrintxPDF xử lý văn bản và tạo sổ tính trong thẻ trình duyệt, không tải thường xuyên lên máy chủ."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何将扫描版 PDF 转换为 Excel",
+      "metaTitle": "将扫描 PDF 转换为 Excel",
+      "metaDescription": "使用 OCR 将扫描 PDF 转为 Excel。免费、无需注册、无水印，在浏览器中私密处理。",
+      "keyword": "扫描 PDF 转换为 Excel",
+      "secondaryKeywords": [
+        "免费 PDF 转 Excel",
+        "将 PDF 转为 XLSX",
+        "提取 PDF 表格",
+        "PDF 电子表格转换器"
+      ],
+      "answer": "要将扫描 PDF 转换为 Excel，请先在副本上运行 OCR，生成可选中文本；再转换副本并核对重要数值。手写内容、模糊图像和间距紧密的表格都需要额外检查。",
+      "ctaLabel": "将扫描 PDF 转换为 Excel",
+      "body": [
+        {
+          "t": "p",
+          "x": "扫描 PDF 是页面图像，不是电子表格转换器能直接放进单元格的文字。首先运行 OCR（光学字符识别），为图像添加可选中文本层。然后将副本转换成 XLSX，并检查数据和表格结构。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将扫描 PDF 转为 Excel 工作簿"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "检查 PDF 是否有可选中文本",
+              "x": "尝试选中一个词。如果无法选择，请先在副本上运行[PDF OCR](/tools/ocr-pdf)。"
+            },
+            {
+              "h": "打开 PDF 转 Excel",
+              "x": "在浏览器中将处理后的副本添加到[PDF 转 Excel](/tools/pdf-to-excel)。标准转换在设备上完成。"
+            },
+            {
+              "h": "创建工作簿",
+              "x": "运行转换。每个 PDF 页面成为一个工作表，每一行文字成为一行，较大的间距会拆分单元格。"
+            },
+            {
+              "h": "下载并检查",
+              "x": "用 Excel、Sheets 或 Numbers 打开 XLSX，检查标题、日期和数字。"
+            },
+            {
+              "h": "整理数据",
+              "x": "把以文本显示的数字转换为数值，并在排序或求和前移除重复页眉。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-to-excel",
+          "x": "在浏览器中将扫描 PDF 转为 Excel 工作簿。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "扫描 PDF 转换后的常见结果"
+        },
+        {
+          "t": "table",
+          "head": [
+            "内容",
+            "可能结果",
+            "后续操作"
+          ],
+          "rows": [
+            [
+              "清晰的印刷文字",
+              "可选取并转换的文字",
+              "检查列和总计。"
+            ],
+            [
+              "带绘制边框的表格",
+              "根据文字间距生成行",
+              "检查狭窄或合并列。"
+            ],
+            [
+              "模糊或倾斜的图像",
+              "识别错误",
+              "重新扫描或调整页面方向。"
+            ],
+            [
+              "手写内容",
+              "OCR 结果不完整或错误",
+              "人工核对并录入。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "OCR 不会自动还原表格结构"
+        },
+        {
+          "t": "p",
+          "x": "OCR 能识别图像字符，但不一定知道每条数据属于哪一列。PDF 将文字放在固定位置，绘制的线条不会说明单元格结构。PrintxPDF 根据较大的间距或制表符拆分文本。这适合清晰的报告；狭窄列、换行内容和合并标题仍需人工检查。"
+        },
+        {
+          "t": "h2",
+          "x": "逐项核对重要数字"
+        },
+        {
+          "t": "p",
+          "x": "转换后的工作簿并非已验证的会计结果。Excel 可能把数值当作文本、更改日期格式，或在特殊版面中误读负号和小数点。请将总计、账号、日期和高金额行与原始图像对照。OCR 也可能混淆相似字符，例如 8 和 3、O 和 0。涉及财务、税务、医疗或法律决定时，请保留原件并遵循必要的复核流程。"
+        },
+        {
+          "t": "h2",
+          "x": "本地转换的好处"
+        },
+        {
+          "t": "p",
+          "x": "对账单、发票和工资报告经常含有私人信息。PrintxPDF 在浏览器中运行 OCR 和标准转换，避免例行上传到外部服务器。XLSX 保存和分享位置由你决定。通过邮件发送或放入共享文件夹前，请检查文件名和每个工作表的内容。"
+        },
+        {
+          "t": "h2",
+          "x": "必要时先准备相关 PDF"
+        },
+        {
+          "t": "p",
+          "x": "只需少数页面时，转换前先用[提取页面](/tools/extract-pages)。保留原始扫描副本以便核对 OCR。如果 PDF 含敏感属性，[移除元数据](/tools/remove-metadata)可以制作更适合分享的副本，但不能代替访问控制或对可见内容的检查。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "如何把扫描 PDF 转换为 Excel？",
+          "a": "在副本上运行 OCR，添加可选中文本，再转为 XLSX，并将列、数字和日期与原始图像对照。"
+        },
+        {
+          "q": "可以免费将扫描 PDF 转成 Excel 吗？",
+          "a": "可以。PrintxPDF 提供免费的标准转换，无需注册、无水印。如果 PDF 只有图像，请先运行 OCR。"
+        },
+        {
+          "q": "OCR 为什么会认错数字或姓名？",
+          "a": "模糊、页面倾斜、对比度低、手写内容和分辨率低都可能造成字符混淆。请人工核对重要数值。"
+        },
+        {
+          "q": "PDF 转 Excel 是否私密？",
+          "a": "标准文件会在浏览器标签页中处理文本并创建工作簿，不会例行上传到服务器。"
+        }
+      ]
+    }
+  }
+}
