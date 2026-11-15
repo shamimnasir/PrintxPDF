@@ -1,0 +1,1337 @@
+{
+  "topic": "print-recipe-without-ads",
+  "sourceCluster": "recipes",
+  "tool": "html-to-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo imprimir una receta sin anuncios ni una larga historia",
+      "metaTitle": "Imprimir una receta sin anuncios ni historia",
+      "metaDescription": "Imprime solo ingredientes y pasos. Usa el botón de receta o limpia la página gratis en tu navegador, sin registro ni marca de agua.",
+      "keyword": "cómo imprimir una receta sin anuncios",
+      "secondaryKeywords": [
+        "imprimir solo la receta",
+        "receta imprimible de un blog",
+        "imprimir receta sin historia",
+        "botón para imprimir recetas"
+      ],
+      "answer": "Primero busca el botón «Imprimir receta» en la tarjeta de la receta: suele abrir una versión limpia con los ingredientes y los pasos. Si no existe, pega el enlace en el [limpiador de páginas web](/print), elimina la historia, las fotos y los anuncios, y luego imprime. Comprueba la vista previa y ajusta el tamaño para que quepa en una página.",
+      "ctaLabel": "Convertir HTML a PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Solo quieres la lista de ingredientes y el método. La página añade recuerdos familiares, muchas fotos, un vídeo, anuncios y comentarios. Al pulsar Ctrl+P, la vista previa puede ocupar varias páginas. Hay formas sencillas de quedarte con la receta sin imprimir todo lo demás."
+        },
+        {
+          "t": "h2",
+          "x": "Por qué los blogs de cocina incluyen una historia"
+        },
+        {
+          "t": "p",
+          "x": "Los autores suelen compartir cómo desarrollaron una receta y usan anuncios para financiar el contenido gratuito. Esa información puede ser interesante, pero no hace falta imprimirla cada vez que cocinas. La protección legal de listas de ingredientes y textos de recetas depende del país y de cómo se exprese la obra; no asumas que todo el contenido de una página se puede copiar o republicar. Para uso personal en la cocina, céntrate en guardar una copia útil y conserva el enlace a la fuente."
+        },
+        {
+          "t": "h2",
+          "x": "Método 1: usa el botón de impresión del sitio"
+        },
+        {
+          "t": "p",
+          "x": "Muchos blogs muestran la receta en una tarjeta con herramientas propias. Busca «Imprimir», «Imprimir receta» o el pequeño icono de impresora. Un enlace «Ir a la receta» suele llevar a esa misma tarjeta. Los complementos de recetas, como WP Recipe Maker o Tasty Recipes, suelen añadir controles de impresión, pero el diseño cambia según el sitio."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Ve a la tarjeta de receta",
+              "x": "Desplázate hasta el cuadro con los ingredientes o pulsa «Ir a la receta» si aparece al principio."
+            },
+            {
+              "h": "Abre la vista de impresión",
+              "x": "Pulsa «Imprimir» o «Imprimir receta». Debe abrirse una ventana con el título, el tiempo, las porciones, los ingredientes y el método."
+            },
+            {
+              "h": "Elige qué incluir",
+              "x": "Desactiva las fotos o las notas si no las necesitas. Algunos sitios permiten ajustar las porciones antes de imprimir; cambia la cantidad aquí para recalcular los ingredientes."
+            },
+            {
+              "h": "Revisa la vista previa",
+              "x": "Pulsa Ctrl+P en Windows o Cmd+P en Mac. Comprueba que el resultado no corte instrucciones. Si pasa de una página, desactiva imágenes o reduce la escala un poco."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Si ves «Ir a la receta» al principio de la página, busca el botón de impresión dentro de la tarjeta a la que te lleva. No todos los sitios usan el mismo diseño, así que revisa los controles de la tarjeta."
+        },
+        {
+          "t": "h2",
+          "x": "Método 2: limpia páginas sin tarjeta de receta"
+        },
+        {
+          "t": "p",
+          "x": "Un blog personal, un foro o una página antigua quizá no tenga tarjeta ni botón. En ese caso puedes limpiar la página antes de imprimir. El [limpiador de páginas web de PrintxPDF](/print) carga el artículo mediante el lector web y organiza la limpieza en tu navegador. El contenido de la página se obtiene por el lector; la edición de la versión limpia ocurre en la pestaña. Algunos sitios bloquean la lectura automática. Si eso sucede, pega el texto en vez de volver a intentarlo muchas veces."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Copia el enlace completo",
+              "x": "Selecciona la dirección de la receta en la barra del navegador y cópiala."
+            },
+            {
+              "h": "Pega la dirección en el limpiador",
+              "x": "Abre [Imprimir cualquier página web](/print) y pega el enlace. La herramienta intenta extraer el artículo y quitar menús, barras laterales y espacios de anuncios."
+            },
+            {
+              "h": "Elimina lo que no necesitas",
+              "x": "Borra los recuerdos, el vídeo, las recomendaciones y las fotos que no quieras. En el editor puedes seleccionar bloques y quitarlos antes de imprimir."
+            },
+            {
+              "h": "Prepara la impresión",
+              "x": "Conserva el título, las cantidades, los tiempos y los pasos. Usa Vista previa de impresión para revisar páginas y márgenes antes de imprimir o guardar como PDF."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Método 3: prueba el modo lectura o imprime una selección"
+        },
+        {
+          "t": "p",
+          "x": "Safari Reader, Firefox Reader View y algunas funciones de Chrome pueden presentar el texto principal sin menús ni anuncios. Actívalos si el sitio los ofrece, y luego revisa la vista previa: pueden omitir tarjetas, notas o ingredientes. Otra opción es seleccionar desde la lista de ingredientes hasta el final del método, pulsar Ctrl+P y elegir imprimir solo la selección, si el navegador muestra esa opción. Si el sitio impide seleccionar texto, vuelve al limpiador o copia el contenido que sí puedes ver."
+        },
+        {
+          "t": "h2",
+          "x": "Qué método conviene para cada página"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Lo que ofrece la página",
+            "Prueba primero",
+            "Resultado habitual"
+          ],
+          "rows": [
+            [
+              "Tarjeta con botón Imprimir",
+              "Botón propio de la receta",
+              "Receta limpia y porciones ajustables"
+            ],
+            [
+              "Enlace Ir a la receta",
+              "Abre la tarjeta y busca su botón",
+              "Vista de impresión de la tarjeta"
+            ],
+            [
+              "Entrada sin tarjeta",
+              "Pega el enlace en el limpiador",
+              "Artículo limpio; elimina la historia manualmente"
+            ],
+            [
+              "Modo lectura disponible",
+              "Activa el lector y revisa la vista previa",
+              "Texto principal, quizá sin notas de receta"
+            ],
+            [
+              "Texto seleccionable pero sin botón",
+              "Selecciona ingredientes y método",
+              "Solo la selección, si el navegador admite la opción"
+            ],
+            [
+              "Receta en una imagen escaneada",
+              "Usa OCR para reconocer texto",
+              "Texto buscable, requiere revisar errores"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Haz que la receta impresa sea fácil de usar"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Aumenta el texto a 14 o 16 puntos si vas a leerlo a distancia en la cocina.",
+            "Deja arriba la temperatura del horno, el tiempo de preparación y el tiempo total.",
+            "Imprime a una sola cara para no tener que dar vuelta una hoja manchada mientras cocinas.",
+            "Añade el nombre del sitio o guarda el enlace para volver a consultar notas y comentarios.",
+            "Omite los comentarios impresos; copia a mano solo el consejo que realmente quieras conservar."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Si imprimes recetas con frecuencia, guarda el limpiador en una pestaña fijada. Pega el enlace, elimina los bloques extra y prepara la siguiente receta sin tener que buscar un botón de impresión en cada sitio."
+        },
+        {
+          "t": "h2",
+          "x": "Ahorra papel al imprimir"
+        },
+        {
+          "t": "p",
+          "x": "Si la receta ocupa casi una página, desactiva imágenes y reduce la escala a cerca del 90 % para evitar una segunda hoja con pocas líneas. Revisa que el texto siga siendo legible. Para más formas de ahorrar, consulta [cómo ahorrar tinta al imprimir](/blog/save-ink/save-ink-when-printing) y [cómo imprimir recetas sin fotos](/blog/recipes/print-recipe-without-pictures). Si la receta está en una imagen escaneada, aprende [cómo aplicar OCR a un PDF escaneado](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo imprimo solo la receta y no toda la entrada del blog?",
+          "a": "Usa el botón «Imprimir receta» de la tarjeta si está disponible; abre una vista con los ingredientes y el método. Si no hay botón, pega el enlace en un limpiador de páginas, elimina la historia y las imágenes que sobren y revisa la vista previa."
+        },
+        {
+          "q": "¿Por qué los blogs de cocina ponen historias largas antes de la receta?",
+          "a": "Los autores pueden contar cómo desarrollaron el plato y financiar contenido gratuito con anuncios. Puedes leer la receta en pantalla y usar la tarjeta de impresión o un limpiador para preparar una copia personal más breve."
+        },
+        {
+          "q": "¿Cómo imprimo una receta de un sitio sin botón de impresión?",
+          "a": "Prueba el modo lectura o selecciona los ingredientes y el método e imprime solo la selección si tu navegador ofrece esa opción. Si no funciona, pega el enlace en el limpiador web y elimina los bloques que no necesitas."
+        },
+        {
+          "q": "¿Puedo cambiar las porciones antes de imprimir?",
+          "a": "A menudo sí, si la tarjeta tiene un control de porciones. Cambia la cantidad en la página de la receta antes de abrir la vista de impresión y revisa que el sitio haya actualizado cada ingrediente."
+        },
+        {
+          "q": "¿Cómo hago que una receta quepa en una página?",
+          "a": "Desactiva las fotos, conserva un tamaño de letra legible y reduce la escala ligeramente si la vista previa muestra una segunda página con solo unas líneas. Comprueba que no se corten ingredientes ni pasos."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como imprimir uma receita sem anúncios nem uma longa história",
+      "metaTitle": "Imprima uma receita sem anúncios ou história",
+      "metaDescription": "Imprima só ingredientes e etapas. Use o botão da receita ou limpe a página grátis no navegador, sem cadastro nem marca-d’água.",
+      "keyword": "como imprimir receita sem anúncios",
+      "secondaryKeywords": [
+        "imprimir só a receita",
+        "receita imprimível de blog",
+        "imprimir receita sem história",
+        "botão para imprimir receita"
+      ],
+      "answer": "Primeiro procure o botão “Imprimir receita” no cartão: ele costuma abrir uma versão limpa com ingredientes e etapas. Se não houver, cole o link no [limpador de páginas da web](/print), remova história, fotos e anúncios e imprima. Confira a prévia e ajuste a escala para caber em uma página.",
+      "ctaLabel": "Converter HTML em PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Você quer apenas ingredientes e modo de preparo, mas a página traz lembranças de família, muitas fotos, vídeo, anúncios e comentários. Ao pressionar Ctrl+P, a prévia pode ocupar várias folhas. Há maneiras simples de guardar a receita sem imprimir tudo ao redor."
+        },
+        {
+          "t": "h2",
+          "x": "Por que blogs de culinária contam uma história"
+        },
+        {
+          "t": "p",
+          "x": "Autores costumam explicar como criaram uma receita e usam anúncios para financiar conteúdo gratuito. Isso pode ser interessante, mas não precisa ir para a folha que você leva à cozinha. A proteção legal de listas de ingredientes e textos de receitas varia por país e pela forma de expressão; não presuma que todo o conteúdo da página pode ser copiado ou republicado. Para uso pessoal, salve uma cópia prática e mantenha o link da fonte."
+        },
+        {
+          "t": "h2",
+          "x": "Método 1: use o botão de impressão do site"
+        },
+        {
+          "t": "p",
+          "x": "Muitos blogs exibem a receita em um cartão com controles próprios. Procure “Imprimir”, “Imprimir receita” ou o ícone de impressora. Um link “Ir para a receita” costuma levar ao cartão. Plugins como WP Recipe Maker e Tasty Recipes geralmente adicionam opções de impressão, mas cada site pode ter um layout diferente."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Encontre o cartão da receita",
+              "x": "Role até a caixa dos ingredientes ou clique em “Ir para a receita” no início da página."
+            },
+            {
+              "h": "Abra a visualização de impressão",
+              "x": "Clique em “Imprimir” ou “Imprimir receita”. Deve abrir uma janela com título, tempos, porções, ingredientes e preparo."
+            },
+            {
+              "h": "Escolha o que incluir",
+              "x": "Desative fotos e observações se não precisar delas. Alguns sites permitem ajustar as porções antes da impressão; faça isso para recalcular os ingredientes."
+            },
+            {
+              "h": "Confira a prévia",
+              "x": "Use Ctrl+P no Windows ou Cmd+P no Mac. Veja se nenhuma instrução ficou cortada. Se passar de uma página, desative imagens ou reduza um pouco a escala."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Se houver um link “Ir para a receita” no topo, procure o botão de impressão dentro do cartão. Os sites variam, então confira os controles disponíveis."
+        },
+        {
+          "t": "h2",
+          "x": "Método 2: limpe páginas sem cartão de receita"
+        },
+        {
+          "t": "p",
+          "x": "Blogs pessoais, fóruns e páginas antigas podem não ter cartão nem botão. Nesse caso, limpe a página antes de imprimir. O [limpador de páginas da web do PrintxPDF](/print) carrega o artigo pelo leitor web e organiza a limpeza no navegador. O conteúdo é obtido pelo leitor; a edição da versão limpa acontece na aba. Alguns sites bloqueiam a leitura automática. Se isso ocorrer, cole o texto em vez de repetir as tentativas."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Copie o endereço completo",
+              "x": "Selecione e copie o URL da receita na barra do navegador."
+            },
+            {
+              "h": "Cole o link no limpador",
+              "x": "Abra [Imprimir qualquer página da web](/print) e cole o endereço. A ferramenta tenta extrair o artigo e remover menus, barras laterais e espaços de anúncios."
+            },
+            {
+              "h": "Apague o que não precisa",
+              "x": "Remova lembranças, vídeo, recomendações e fotos desnecessárias. No editor, selecione blocos e retire-os antes de imprimir."
+            },
+            {
+              "h": "Prepare a impressão",
+              "x": "Mantenha título, quantidades, tempos e etapas. Use a prévia para verificar páginas e margens antes de imprimir ou salvar em PDF."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Método 3: experimente o modo leitura ou imprima uma seleção"
+        },
+        {
+          "t": "p",
+          "x": "O Safari Reader, o Firefox Reader View e alguns recursos do Chrome podem mostrar o texto principal sem menus e anúncios. Ative o modo quando disponível e confira a prévia, pois ele pode omitir o cartão, observações ou ingredientes. Você também pode selecionar ingredientes e preparo, pressionar Ctrl+P e escolher imprimir apenas a seleção se o navegador oferecer essa opção. Se o site bloquear a seleção, use o limpador ou copie o conteúdo visível."
+        },
+        {
+          "t": "h2",
+          "x": "Qual método usar em cada página"
+        },
+        {
+          "t": "table",
+          "head": [
+            "O que a página oferece",
+            "Tente primeiro",
+            "Resultado comum"
+          ],
+          "rows": [
+            [
+              "Cartão com botão Imprimir",
+              "Botão da própria receita",
+              "Receita limpa e porções ajustáveis"
+            ],
+            [
+              "Link Ir para a receita",
+              "Abra o cartão e procure o botão",
+              "Visualização de impressão do cartão"
+            ],
+            [
+              "Post sem cartão",
+              "Cole o link no limpador",
+              "Artigo limpo; remova a história manualmente"
+            ],
+            [
+              "Modo leitura disponível",
+              "Ative e confira a prévia",
+              "Texto principal, talvez sem notas"
+            ],
+            [
+              "Texto selecionável sem botão",
+              "Selecione ingredientes e preparo",
+              "Somente a seleção, se o navegador permitir"
+            ],
+            [
+              "Receita em imagem digitalizada",
+              "Use OCR para reconhecer o texto",
+              "Texto pesquisável; revise erros"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Deixe a folha prática para cozinhar"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Aumente o texto para 14 ou 16 pontos se for ler a uma certa distância na cozinha.",
+            "Deixe temperatura do forno e tempos de preparo e total no início.",
+            "Imprima só de um lado para não virar uma folha manchada durante o preparo.",
+            "Inclua o nome do site ou guarde o link para consultar notas e comentários depois.",
+            "Não imprima todos os comentários; anote à mão apenas a dica que realmente quer guardar."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Se imprime receitas com frequência, fixe o limpador em uma aba. Cole o link, remova os blocos extras e prepare a próxima receita sem procurar um botão em cada site."
+        },
+        {
+          "t": "h2",
+          "x": "Economize papel ao imprimir"
+        },
+        {
+          "t": "p",
+          "x": "Se a receita quase cabe em uma página, desligue as imagens e reduza a escala para perto de 90% para evitar uma segunda folha com poucas linhas. Confirme que o texto continua legível. Veja também [como economizar tinta ao imprimir](/blog/save-ink/save-ink-when-printing), [como imprimir receitas sem fotos](/blog/recipes/print-recipe-without-pictures) e [como aplicar OCR a um PDF digitalizado](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como imprimo só a receita e não o post inteiro?",
+          "a": "Use o botão “Imprimir receita” do cartão, se disponível; ele abre uma visualização com ingredientes e preparo. Sem botão, cole o link no limpador de páginas, remova história e fotos desnecessárias e confira a prévia."
+        },
+        {
+          "q": "Por que blogs de culinária têm histórias longas antes da receita?",
+          "a": "Os autores podem contar como desenvolveram o prato e financiar conteúdo gratuito com anúncios. Leia a história na tela e use o cartão de impressão ou um limpador para preparar uma cópia pessoal menor."
+        },
+        {
+          "q": "Como imprimir uma receita de um site sem botão?",
+          "a": "Experimente o modo leitura ou selecione os ingredientes e o preparo e imprima apenas a seleção se o navegador permitir. Caso contrário, cole o endereço no limpador e remova os blocos desnecessários."
+        },
+        {
+          "q": "Posso mudar as porções antes de imprimir?",
+          "a": "Muitas vezes sim, se o cartão tiver controle de porções. Altere a quantidade na página antes de abrir a visualização de impressão e confira se todos os ingredientes foram recalculados."
+        },
+        {
+          "q": "Como fazer uma receita caber em uma página?",
+          "a": "Desative fotos, mantenha o texto legível e reduza um pouco a escala se a prévia mostrar uma segunda página com poucas linhas. Confira se nenhum ingrediente ou etapa foi cortado."
+        }
+      ]
+    },
+    "hi": {
+      "title": "बिना विज्ञापन और लंबी कहानी के रेसिपी कैसे प्रिंट करें",
+      "metaTitle": "रेसिपी बिना विज्ञापन या कहानी प्रिंट करें",
+      "metaDescription": "सिर्फ सामग्री और चरण प्रिंट करें। रेसिपी बटन इस्तेमाल करें या ब्राउज़र में पेज मुफ्त साफ़ करें, बिना साइनअप या वॉटरमार्क।",
+      "keyword": "बिना विज्ञापन रेसिपी कैसे प्रिंट करें",
+      "secondaryKeywords": [
+        "सिर्फ रेसिपी प्रिंट करें",
+        "ब्लॉग से प्रिंट करने योग्य रेसिपी",
+        "कहानी के बिना रेसिपी प्रिंट",
+        "रेसिपी प्रिंट बटन"
+      ],
+      "answer": "पहले रेसिपी कार्ड पर “Print Recipe” बटन देखें। यह आम तौर पर सामग्री और विधि वाला साफ़ पेज खोलता है। बटन न हो तो लिंक [वेब पेज क्लीनर](/print) में डालें, कहानी, तस्वीरें और विज्ञापन हटाएँ, फिर प्रिंट करें। प्रीव्यू देखकर स्केल समायोजित करें ताकि रेसिपी एक पेज में आ जाए।",
+      "ctaLabel": "HTML को PDF में बदलें",
+      "body": [
+        {
+          "t": "p",
+          "x": "आपको केवल सामग्री और विधि चाहिए, लेकिन पेज पर परिवार की यादें, बहुत सी तस्वीरें, वीडियो, विज्ञापन और टिप्पणियाँ हैं। Ctrl+P दबाने पर प्रीव्यू कई पेज दिखा सकता है। पूरी पोस्ट छापे बिना काम की रेसिपी पाने के आसान तरीके हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "कुकिंग ब्लॉग लंबी कहानी क्यों बताते हैं"
+        },
+        {
+          "t": "p",
+          "x": "लेखक अक्सर बताते हैं कि उन्होंने रेसिपी कैसे बनाई और मुफ्त सामग्री चलाने के लिए विज्ञापन दिखाते हैं। यह पढ़ना अच्छा हो सकता है, लेकिन हर बार रसोई में ले जाने वाली शीट पर इसकी जरूरत नहीं। सामग्री-सूची और रेसिपी लेखन की कानूनी सुरक्षा देश और लेखन के रूप पर निर्भर करती है; पेज की सामग्री को कॉपी या दोबारा प्रकाशित करने योग्य न मानें। निजी इस्तेमाल के लिए उपयोगी प्रति रखें और स्रोत का लिंक संभालें।"
+        },
+        {
+          "t": "h2",
+          "x": "तरीका 1: साइट का प्रिंट बटन इस्तेमाल करें"
+        },
+        {
+          "t": "p",
+          "x": "कई ब्लॉग रेसिपी को अलग कार्ड में दिखाते हैं। “Print”, “Print Recipe” या प्रिंटर आइकन खोजें। ऊपर “Jump to Recipe” लिंक कार्ड तक ले जा सकता है। WP Recipe Maker और Tasty Recipes जैसे प्लगइन अक्सर प्रिंट नियंत्रण जोड़ते हैं, पर हर साइट का रूप अलग है।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "रेसिपी कार्ड ढूँढें",
+              "x": "सामग्री वाले बॉक्स तक स्क्रॉल करें या ऊपर “Jump to Recipe” पर क्लिक करें।"
+            },
+            {
+              "h": "प्रिंट दृश्य खोलें",
+              "x": "“Print” या “Print Recipe” दबाएँ। नई विंडो में शीर्षक, समय, सर्विंग, सामग्री और विधि दिखनी चाहिए।"
+            },
+            {
+              "h": "क्या शामिल करना है चुनें",
+              "x": "जरूरत न हो तो तस्वीरें और नोट बंद करें। यदि सर्विंग बदलने का विकल्प है, तो प्रिंट से पहले मात्रा बदलें ताकि सामग्री फिर से गिनी जाए।"
+            },
+            {
+              "h": "प्रीव्यू जाँचें",
+              "x": "Windows पर Ctrl+P या Mac पर Cmd+P दबाएँ। देखें कि कोई निर्देश कट न जाए। दो पेज हों तो तस्वीरें बंद करें या स्केल थोड़ा घटाएँ।"
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "ऊपर “Jump to Recipe” दिखे तो खुलने वाले कार्ड में प्रिंट बटन खोजें। साइटों के डिज़ाइन अलग होते हैं, इसलिए कार्ड के नियंत्रण देखें।"
+        },
+        {
+          "t": "h2",
+          "x": "तरीका 2: बिना रेसिपी कार्ड वाले पेज साफ़ करें"
+        },
+        {
+          "t": "p",
+          "x": "व्यक्तिगत ब्लॉग, फ़ोरम या पुराने पेज में कार्ड और बटन नहीं हो सकता। ऐसे पेज को प्रिंट से पहले साफ़ करें। [PrintxPDF वेब पेज क्लीनर](/print) वेब रीडर से लेख लोड करता है और साफ़ प्रति को आपके ब्राउज़र में संपादित करता है। कुछ साइटें स्वचालित पढ़ने को रोकती हैं। ऐसा हो तो बार-बार कोशिश करने की जगह टेक्स्ट पेस्ट करें।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "पूरा वेब पता कॉपी करें",
+              "x": "ब्राउज़र के एड्रेस बार से रेसिपी का पूरा URL कॉपी करें।"
+            },
+            {
+              "h": "क्लीनर में लिंक डालें",
+              "x": "[कोई भी वेब पेज प्रिंट करें](/print) खोलकर URL डालें। टूल लेख निकालने और मेनू, साइडबार तथा विज्ञापन जगह हटाने की कोशिश करता है।"
+            },
+            {
+              "h": "अनावश्यक चीजें हटाएँ",
+              "x": "यादों वाले अनुच्छेद, वीडियो, सुझाव और गैरजरूरी तस्वीरें हटाएँ। प्रिंट से पहले एडिटर में ब्लॉक चुनकर निकाल सकते हैं।"
+            },
+            {
+              "h": "प्रिंट तैयार करें",
+              "x": "शीर्षक, मात्रा, समय और चरण रखें। प्रिंट या PDF सेव करने से पहले प्रीव्यू में पेज और मार्जिन देखें।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "तरीका 3: रीडर मोड या चुना हुआ टेक्स्ट प्रिंट करें"
+        },
+        {
+          "t": "p",
+          "x": "Safari Reader, Firefox Reader View और Chrome के कुछ विकल्प मुख्य लेख को मेनू और विज्ञापनों के बिना दिखाते हैं। उपलब्ध हो तो चालू करें, पर प्रीव्यू देखें क्योंकि कार्ड, नोट या सामग्री छूट सकती है। आप सामग्री से विधि के अंत तक टेक्स्ट चुनकर Ctrl+P दबा सकते हैं और यदि ब्राउज़र विकल्प दे तो केवल चुना भाग प्रिंट कर सकते हैं। टेक्स्ट न चुने तो क्लीनर इस्तेमाल करें या दिखने वाला लेख कॉपी करें।"
+        },
+        {
+          "t": "h2",
+          "x": "हर पेज के लिए कौन सा तरीका चुनें"
+        },
+        {
+          "t": "table",
+          "head": [
+            "पेज पर क्या है",
+            "पहले क्या करें",
+            "आम परिणाम"
+          ],
+          "rows": [
+            [
+              "प्रिंट बटन वाला कार्ड",
+              "साइट का रेसिपी बटन",
+              "साफ़ रेसिपी, सर्विंग बदल सकें"
+            ],
+            [
+              "Jump to Recipe लिंक",
+              "कार्ड खोलकर प्रिंट बटन देखें",
+              "कार्ड का प्रिंट दृश्य"
+            ],
+            [
+              "बिना कार्ड की पोस्ट",
+              "लिंक क्लीनर में डालें",
+              "साफ़ लेख; कहानी खुद हटाएँ"
+            ],
+            [
+              "रीडर मोड",
+              "चालू करें और प्रीव्यू देखें",
+              "मुख्य टेक्स्ट, नोट छूट सकते हैं"
+            ],
+            [
+              "चुना जा सकने वाला टेक्स्ट",
+              "सामग्री और विधि चुनें",
+              "केवल चयन, यदि ब्राउज़र समर्थन करे"
+            ],
+            [
+              "स्कैन तस्वीर में रेसिपी",
+              "पहले OCR करें",
+              "खोजने योग्य टेक्स्ट, गलतियाँ जाँचें"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "रसोई में उपयोगी प्रिंटआउट बनाएँ"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "दूर से पढ़ना हो तो अक्षर 14–16 पॉइंट करें।",
+            "ओवन तापमान, तैयारी और कुल समय ऊपर रखें।",
+            "एक तरफ प्रिंट करें ताकि पकाते समय चिकना पन्ना पलटना न पड़े।",
+            "साइट का नाम या लिंक रखें ताकि नोट और टिप्पणियाँ बाद में मिलें।",
+            "सारी टिप्पणियाँ न छापें; काम की एक सलाह हाथ से लिख लें।"
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "एक ही साइट से अक्सर पकाते हैं तो क्लीनर को पिन की हुई टैब में रखें। लिंक डालें, अतिरिक्त हिस्से हटाएँ और अगली रेसिपी तैयार करें।"
+        },
+        {
+          "t": "h2",
+          "x": "प्रिंट करते समय कागज़ बचाएँ"
+        },
+        {
+          "t": "p",
+          "x": "यदि रेसिपी लगभग एक पेज की है, तो तस्वीरें बंद करें और स्केल करीब 90% करें ताकि कुछ पंक्तियों के लिए दूसरा पन्ना न लगे। पढ़ने लायक अक्षर रखें। आगे [प्रिंट में स्याही बचाने](/blog/save-ink/save-ink-when-printing), [तस्वीरों के बिना रेसिपी प्रिंट करने](/blog/recipes/print-recipe-without-pictures) और [स्कैन PDF पर OCR](/blog/ocr/how-to-ocr-a-scanned-pdf) के तरीके देखें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "पूरी ब्लॉग पोस्ट के बजाय सिर्फ रेसिपी कैसे प्रिंट करें?",
+          "a": "रेसिपी कार्ड पर “Print Recipe” बटन हो तो उसका उपयोग करें। यह सामग्री और विधि वाला दृश्य खोलता है। बटन न हो तो लिंक क्लीनर में डालें, कहानी और गैरजरूरी तस्वीरें हटाएँ और प्रीव्यू देखें।"
+        },
+        {
+          "q": "कुकिंग ब्लॉग रेसिपी से पहले लंबी कहानी क्यों लिखते हैं?",
+          "a": "लेखक पकवान बनाने का अनुभव साझा कर सकते हैं और विज्ञापनों से मुफ्त सामग्री चलाते हैं। कहानी स्क्रीन पर पढ़ें और निजी प्रिंट प्रति को छोटा करने के लिए कार्ड या क्लीनर इस्तेमाल करें।"
+        },
+        {
+          "q": "बिना प्रिंट बटन वाली साइट से रेसिपी कैसे छापें?",
+          "a": "रीडर मोड आज़माएँ या सामग्री और विधि चुनकर केवल चयन प्रिंट करें, यदि ब्राउज़र विकल्प दे। नहीं तो लिंक वेब क्लीनर में डालें और अनावश्यक हिस्से हटाएँ।"
+        },
+        {
+          "q": "क्या प्रिंट से पहले सर्विंग की संख्या बदल सकता हूँ?",
+          "a": "कई रेसिपी कार्ड में सर्विंग नियंत्रण होता है। प्रिंट दृश्य खोलने से पहले संख्या बदलें और देखें कि सभी सामग्री की मात्रा फिर से गणना हुई है।"
+        },
+        {
+          "q": "रेसिपी एक पेज में कैसे फिट करें?",
+          "a": "तस्वीरें बंद करें, अक्षर पढ़ने योग्य रखें और जरूरत पर स्केल थोड़ा घटाएँ। प्रीव्यू जाँचें ताकि दूसरी शीट न लगे और कोई सामग्री या चरण कटे नहीं।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية طباعة وصفة دون الإعلانات والقصة الطويلة",
+      "metaTitle": "اطبع الوصفة دون إعلانات أو قصة",
+      "metaDescription": "اطبع المكونات والخطوات فقط. استخدم زر الوصفة أو نظّف الصفحة مجانًا في المتصفح بلا تسجيل أو علامة مائية.",
+      "keyword": "كيفية طباعة وصفة دون إعلانات",
+      "secondaryKeywords": [
+        "طباعة الوصفة فقط",
+        "وصفة قابلة للطباعة من مدونة",
+        "طباعة وصفة دون القصة",
+        "زر طباعة الوصفات"
+      ],
+      "answer": "ابحث أولًا عن زر «طباعة الوصفة» في بطاقة الوصفة؛ فهو يفتح عادة نسخة بسيطة تضم المكونات والخطوات. إذا لم تجده، الصق الرابط في [منظف صفحات الويب](/print)، واحذف القصة والصور والإعلانات ثم اطبع. راجع المعاينة واضبط الحجم كي تلائم الوصفة صفحة واحدة.",
+      "ctaLabel": "تحويل HTML إلى PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "قد تريد قائمة المكونات وطريقة التحضير فقط، لكن الصفحة تعرض ذكريات عائلية وصورًا كثيرة وفيديو وإعلانات وتعليقات. عند الضغط على Ctrl+P قد تظهر معاينة من صفحات عديدة. توجد طرق سهلة للاحتفاظ بالوصفة المفيدة من دون طباعة كل ما حولها."
+        },
+        {
+          "t": "h2",
+          "x": "لماذا تروي مدونات الطعام قصة طويلة؟"
+        },
+        {
+          "t": "p",
+          "x": "يشرح الكتّاب غالبًا كيف طوّروا الوصفة، وقد تساعد الإعلانات في تمويل المحتوى المجاني. قد تكون القصة ممتعة، لكنك لا تحتاج إلى طباعتها كل مرة تطبخ فيها. تختلف الحماية القانونية لقوائم المكونات ونصوص الوصفات باختلاف البلد وطريقة التعبير؛ فلا تفترض أن كل محتوى الصفحة قابل للنسخ أو إعادة النشر. للاستخدام الشخصي في المطبخ، احتفظ بنسخة عملية وبالرابط إلى المصدر."
+        },
+        {
+          "t": "h2",
+          "x": "الطريقة الأولى: استخدم زر الطباعة في الموقع"
+        },
+        {
+          "t": "p",
+          "x": "تعرض مدونات كثيرة الوصفة في بطاقة لها أدوات خاصة. ابحث عن «طباعة» أو «طباعة الوصفة» أو رمز الطابعة. وقد يقودك رابط «انتقل إلى الوصفة» في أعلى الصفحة إلى البطاقة نفسها. تضيف إضافات مثل WP Recipe Maker وTasty Recipes عادة عناصر للطباعة، لكن شكلها يختلف من موقع لآخر."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "ابحث عن بطاقة الوصفة",
+              "x": "مرر إلى المربع الذي يحتوي المكونات، أو اضغط «انتقل إلى الوصفة» إذا ظهر في الأعلى."
+            },
+            {
+              "h": "افتح معاينة الطباعة",
+              "x": "اضغط «طباعة» أو «طباعة الوصفة». يفترض أن تفتح نافذة فيها العنوان والأوقات وعدد الحصص والمكونات والطريقة."
+            },
+            {
+              "h": "اختر ما تريد تضمينه",
+              "x": "أوقف الصور أو الملاحظات إن لم تكن بحاجة إليها. تسمح بعض المواقع بتغيير عدد الحصص قبل الطباعة؛ غيّره هنا كي تتغير كميات المكونات."
+            },
+            {
+              "h": "راجع المعاينة",
+              "x": "اضغط Ctrl+P في Windows أو Cmd+P في Mac. تأكد من عدم قص أي تعليمات. إذا ظهرت صفحة ثانية، أوقف الصور أو خفّض الحجم قليلًا."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "إذا وجدت رابط «انتقل إلى الوصفة» في أعلى الصفحة، فابحث عن زر الطباعة داخل البطاقة التي يفتحها. تختلف المواقع، لذا تحقق من عناصر التحكم المتاحة."
+        },
+        {
+          "t": "h2",
+          "x": "الطريقة الثانية: نظّف الصفحات التي لا تحتوي بطاقة وصفة"
+        },
+        {
+          "t": "p",
+          "x": "قد لا تتضمن المدونات الشخصية أو المنتديات أو الصفحات القديمة بطاقة أو زرًا. نظّف الصفحة قبل طباعتها. يحمّل [منظف صفحات الويب من PrintxPDF](/print) المقال عبر قارئ الويب، ثم يتيح ترتيب النسخة النظيفة في متصفحك. يجلب القارئ محتوى الصفحة، بينما يحدث تحرير النسخة في علامة التبويب. تحظر بعض المواقع القراءة التلقائية؛ إذا حدث ذلك، الصق النص بدل تكرار المحاولة."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "انسخ العنوان الكامل",
+              "x": "حدد رابط الوصفة في شريط العنوان وانسخه كاملًا."
+            },
+            {
+              "h": "الصق الرابط في المنظف",
+              "x": "افتح [طباعة أي صفحة ويب](/print) والصق العنوان. تحاول الأداة استخراج المقال وإزالة القوائم والأشرطة الجانبية ومساحات الإعلانات."
+            },
+            {
+              "h": "احذف ما لا تحتاج إليه",
+              "x": "أزل ذكريات الكاتب والفيديو والتوصيات والصور الزائدة. يمكنك تحديد الكتل في المحرر وإزالتها قبل الطباعة."
+            },
+            {
+              "h": "جهّز الطباعة",
+              "x": "احتفظ بالعنوان والكميات والأوقات والخطوات. راجع الصفحات والهوامش في المعاينة قبل الطباعة أو الحفظ بصيغة PDF."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "الطريقة الثالثة: استخدم وضع القراءة أو اطبع نصًا محددًا"
+        },
+        {
+          "t": "p",
+          "x": "قد يعرض Safari Reader وFirefox Reader View وبعض مزايا Chrome النص الأساسي دون قوائم وإعلانات. فعّل وضع القراءة إذا توفر، ثم راجع المعاينة؛ فقد يحذف بطاقة الوصفة أو ملاحظات أو مكونات. ويمكنك تحديد النص من المكونات حتى نهاية الطريقة، ثم الضغط على Ctrl+P واختيار طباعة التحديد إذا كان المتصفح يوفر ذلك. إذا منع الموقع تحديد النص، ارجع إلى المنظف أو انسخ ما تستطيع رؤيته."
+        },
+        {
+          "t": "h2",
+          "x": "ما الطريقة المناسبة لكل صفحة؟"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ما الموجود في الصفحة؟",
+            "جرّب أولًا",
+            "النتيجة المعتادة"
+          ],
+          "rows": [
+            [
+              "بطاقة وصفة فيها زر طباعة",
+              "زر الوصفة في الموقع",
+              "وصفة مرتبة وإمكانية تعديل الحصص"
+            ],
+            [
+              "رابط انتقل إلى الوصفة",
+              "افتح البطاقة وابحث عن زرها",
+              "معاينة طباعة البطاقة"
+            ],
+            [
+              "مقال بلا بطاقة",
+              "الصق الرابط في المنظف",
+              "مقال نظيف؛ احذف القصة يدويًا"
+            ],
+            [
+              "وضع القراءة متاح",
+              "فعّله وراجع المعاينة",
+              "النص الأساسي وقد تغيب الملاحظات"
+            ],
+            [
+              "النص قابل للتحديد بلا زر",
+              "حدد المكونات والطريقة",
+              "التحديد فقط إذا أتاح المتصفح ذلك"
+            ],
+            [
+              "الوصفة صورة ممسوحة",
+              "استخدم OCR للتعرف على النص",
+              "نص قابل للبحث مع ضرورة مراجعته"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "اجعل النسخة المطبوعة عملية في المطبخ"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "كبّر النص إلى 14 أو 16 نقطة إذا كنت ستقرأه من مسافة في المطبخ.",
+            "ضع درجة حرارة الفرن ووقت التحضير والوقت الإجمالي في الأعلى.",
+            "اطبع على وجه واحد كي لا تقلب صفحة متسخة أثناء الطهي.",
+            "أضف اسم الموقع أو احتفظ بالرابط للرجوع إلى الملاحظات والتعليقات.",
+            "لا تطبع التعليقات كلها؛ دوّن بخط اليد النصيحة المفيدة فعلًا."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "إذا كنت تطبخ من الموقع نفسه كثيرًا، ثبّت المنظف في علامة تبويب. الصق الرابط واحذف الكتل الزائدة وجهّز الوصفة التالية دون البحث عن زر الطباعة في كل موقع."
+        },
+        {
+          "t": "h2",
+          "x": "وفّر الورق عند الطباعة"
+        },
+        {
+          "t": "p",
+          "x": "إذا قاربت الوصفة صفحة كاملة، أوقف الصور وخفّض الحجم إلى نحو 90 بالمئة كي تتجنب ورقة ثانية لا تحتوي إلا بضعة أسطر. تأكد من بقاء النص واضحًا. اقرأ أيضًا [كيفية توفير الحبر عند الطباعة](/blog/save-ink/save-ink-when-printing)، و[طباعة الوصفات دون صور](/blog/recipes/print-recipe-without-pictures)، و[كيفية إجراء OCR لملف PDF ممسوح](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أطبع الوصفة فقط دون تدوينة الطعام كاملة؟",
+          "a": "استخدم زر «طباعة الوصفة» داخل البطاقة إن توفر؛ فهو يفتح نسخة فيها المكونات والطريقة. إذا لم يوجد، الصق الرابط في منظف صفحات، واحذف القصة والصور غير الضرورية وراجع المعاينة."
+        },
+        {
+          "q": "لماذا تضع مدونات الطعام قصة طويلة قبل الوصفة؟",
+          "a": "قد يشرح الكتّاب كيف ابتكروا الطبق، وقد تموّل الإعلانات المحتوى المجاني. اقرأ القصة على الشاشة واستخدم بطاقة الطباعة أو المنظف لإعداد نسخة شخصية أقصر."
+        },
+        {
+          "q": "كيف أطبع وصفة من موقع لا يحتوي زر طباعة؟",
+          "a": "جرّب وضع القراءة أو حدد المكونات والطريقة واطبع التحديد إذا أتاح المتصفح ذلك. وإلا فالصق الرابط في منظف الويب واحذف الكتل غير المطلوبة."
+        },
+        {
+          "q": "هل يمكن تغيير عدد الحصص قبل الطباعة؟",
+          "a": "غالبًا نعم إذا تضمنت البطاقة أداة للحصص. غيّر العدد قبل فتح معاينة الطباعة وتأكد من أن الموقع حدّث كميات المكونات."
+        },
+        {
+          "q": "كيف أجعل الوصفة في صفحة واحدة؟",
+          "a": "أوقف الصور وحافظ على حجم خط مقروء وخفّض مقياس الطباعة قليلًا إذا أظهرت المعاينة صفحة ثانية قصيرة. تحقق من عدم قص المكونات أو الخطوات."
+        }
+      ]
+    },
+    "bn": {
+      "title": "বিজ্ঞাপন ও লম্বা গল্প ছাড়া রেসিপি কীভাবে প্রিন্ট করবেন",
+      "metaTitle": "বিজ্ঞাপন ও গল্প ছাড়া রেসিপি প্রিন্ট",
+      "metaDescription": "শুধু উপকরণ ও ধাপ প্রিন্ট করুন। রেসিপি বোতাম ব্যবহার করুন অথবা ব্রাউজারে বিনামূল্যে পেজ পরিষ্কার করুন, সাইনআপ বা ওয়াটারমার্ক ছাড়া।",
+      "keyword": "বিজ্ঞাপন ছাড়া রেসিপি প্রিন্ট করার উপায়",
+      "secondaryKeywords": [
+        "শুধু রেসিপি প্রিন্ট",
+        "ব্লগ থেকে প্রিন্টযোগ্য রেসিপি",
+        "গল্প ছাড়া রেসিপি প্রিন্ট",
+        "রেসিপি প্রিন্ট বোতাম"
+      ],
+      "answer": "প্রথমে রেসিপি কার্ডে “Print Recipe” বোতাম খুঁজুন। এটি সাধারণত উপকরণ ও পদ্ধতিসহ পরিষ্কার পেজ খোলে। বোতাম না থাকলে লিংকটি [ওয়েব পেজ ক্লিনারে](/print) দিন, গল্প, ছবি ও বিজ্ঞাপন মুছে তারপর প্রিন্ট করুন। প্রিভিউ দেখে স্কেল ঠিক করুন, যাতে রেসিপিটি এক পাতায় আসে।",
+      "ctaLabel": "HTML থেকে PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "আপনার দরকার শুধু উপকরণ ও রান্নার ধাপ, কিন্তু পেজে রয়েছে পারিবারিক স্মৃতি, অনেক ছবি, ভিডিও, বিজ্ঞাপন ও মন্তব্য। Ctrl+P চাপলে প্রিভিউতে কয়েকটি পৃষ্ঠা দেখাতে পারে। চারপাশের সবকিছু না ছেপেও দরকারি রেসিপি পাওয়ার সহজ উপায় আছে।"
+        },
+        {
+          "t": "h2",
+          "x": "রান্নার ব্লগে লম্বা গল্প থাকে কেন"
+        },
+        {
+          "t": "p",
+          "x": "লেখকেরা প্রায়ই রেসিপিটি কীভাবে তৈরি করেছেন তা জানান, আর বিজ্ঞাপন বিনামূল্যের কনটেন্ট চালাতে সাহায্য করে। গল্পটি আকর্ষণীয় হলেও রান্নাঘরে নেওয়া পাতায় প্রতিবার দরকার নেই। উপকরণের তালিকা ও রেসিপির লেখার আইনি সুরক্ষা দেশ এবং লেখার ধরনভেদে আলাদা; পেজের সবকিছু কপি বা পুনঃপ্রকাশযোগ্য ধরে নেবেন না। ব্যক্তিগত রান্নার জন্য ব্যবহারযোগ্য কপি রাখুন এবং মূল উৎসের লিংক সংরক্ষণ করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "পদ্ধতি ১: সাইটের প্রিন্ট বোতাম ব্যবহার করুন"
+        },
+        {
+          "t": "p",
+          "x": "অনেক ব্লগ রেসিপি আলাদা কার্ডে দেখায়, যেখানে নিজস্ব নিয়ন্ত্রণ থাকে। “Print”, “Print Recipe” বা প্রিন্টারের ছোট আইকন খুঁজুন। ওপরের “Jump to Recipe” লিংকটি সেই কার্ডে নিয়ে যেতে পারে। WP Recipe Maker বা Tasty Recipes-এর মতো প্লাগইন প্রায়ই প্রিন্ট নিয়ন্ত্রণ যোগ করে, তবে সাইটভেদে নকশা বদলায়।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "রেসিপি কার্ড খুঁজুন",
+              "x": "উপকরণের বাক্স পর্যন্ত স্ক্রল করুন অথবা ওপরে “Jump to Recipe” থাকলে সেটিতে চাপুন।"
+            },
+            {
+              "h": "প্রিন্ট দৃশ্য খুলুন",
+              "x": "“Print” বা “Print Recipe” চাপুন। নতুন উইন্ডোতে শিরোনাম, সময়, সার্ভিং, উপকরণ ও পদ্ধতি দেখানোর কথা।"
+            },
+            {
+              "h": "কী থাকবে বেছে নিন",
+              "x": "প্রয়োজন না হলে ছবি বা নোট বন্ধ করুন। কিছু সাইট প্রিন্টের আগে সার্ভিং বদলাতে দেয়; এখানে বদলালে উপকরণের পরিমাণও নতুন করে হিসাব হতে পারে।"
+            },
+            {
+              "h": "প্রিভিউ যাচাই করুন",
+              "x": "Windows-এ Ctrl+P বা Mac-এ Cmd+P চাপুন। কোনো নির্দেশ কাটা পড়েছে কি না দেখুন। দুই পৃষ্ঠা হলে ছবি বন্ধ করুন বা স্কেল সামান্য কমান।"
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "ওপরে “Jump to Recipe” থাকলে খোলা কার্ডের ভেতরে প্রিন্ট বোতাম খুঁজুন। সব সাইটের নকশা এক নয়, তাই কার্ডের নিয়ন্ত্রণগুলো দেখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "পদ্ধতি ২: রেসিপি কার্ড নেই এমন পেজ পরিষ্কার করুন"
+        },
+        {
+          "t": "p",
+          "x": "ব্যক্তিগত ব্লগ, ফোরাম বা পুরোনো পেজে কার্ড বা বোতাম নাও থাকতে পারে। তখন প্রিন্টের আগে পেজ পরিষ্কার করুন। [PrintxPDF ওয়েব পেজ ক্লিনার](/print) ওয়েব রিডারের মাধ্যমে নিবন্ধ লোড করে, এরপর পরিষ্কার কপিটি আপনার ব্রাউজারেই সম্পাদনা করতে দেয়। রিডার পেজের কনটেন্ট সংগ্রহ করে, সম্পাদনা হয় ট্যাবে। কিছু সাইট স্বয়ংক্রিয় পাঠ বন্ধ করে। এমন হলে বারবার চেষ্টা না করে দৃশ্যমান লেখা পেস্ট করুন।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "সম্পূর্ণ ঠিকানা কপি করুন",
+              "x": "ব্রাউজারের ঠিকানা বার থেকে রেসিপির পুরো URL কপি করুন।"
+            },
+            {
+              "h": "ক্লিনারে লিংক দিন",
+              "x": "[যেকোনো ওয়েব পেজ প্রিন্ট করুন](/print) খুলে URL পেস্ট করুন। টুলটি নিবন্ধ বের করে মেনু, সাইডবার ও বিজ্ঞাপনের জায়গা সরানোর চেষ্টা করে।"
+            },
+            {
+              "h": "অপ্রয়োজনীয় অংশ মুছুন",
+              "x": "স্মৃতিচারণ, ভিডিও, পরামর্শ ও দরকার নেই এমন ছবি সরান। প্রিন্টের আগে এডিটরে ব্লক বেছে মুছে দিতে পারেন।"
+            },
+            {
+              "h": "প্রিন্ট প্রস্তুত করুন",
+              "x": "শিরোনাম, পরিমাণ, সময় ও ধাপ রাখুন। প্রিন্ট বা PDF-এ সেভ করার আগে প্রিভিউতে পৃষ্ঠা ও মার্জিন দেখুন।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "পদ্ধতি ৩: রিডার মোড বা নির্বাচিত লেখা প্রিন্ট করুন"
+        },
+        {
+          "t": "p",
+          "x": "Safari Reader, Firefox Reader View এবং Chrome-এর কিছু সুবিধা মেনু ও বিজ্ঞাপন বাদ দিয়ে মূল লেখা দেখাতে পারে। পাওয়া গেলে চালু করুন, তারপর প্রিভিউ দেখুন; এতে রেসিপি কার্ড, নোট বা উপকরণ বাদ যেতে পারে। আরেকটি উপায় হলো উপকরণ থেকে পদ্ধতির শেষ পর্যন্ত লেখা নির্বাচন করে Ctrl+P চাপা এবং ব্রাউজারে থাকলে শুধু নির্বাচন প্রিন্ট করা। সাইট নির্বাচন আটকালেই ক্লিনার ব্যবহার করুন বা দৃশ্যমান লেখা কপি করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "কোন পেজে কোন পদ্ধতি ভালো"
+        },
+        {
+          "t": "table",
+          "head": [
+            "পেজে যা আছে",
+            "আগে চেষ্টা করুন",
+            "সাধারণ ফল"
+          ],
+          "rows": [
+            [
+              "প্রিন্ট বোতামসহ রেসিপি কার্ড",
+              "সাইটের নিজস্ব বোতাম",
+              "পরিষ্কার রেসিপি, সার্ভিং বদলানো যায়"
+            ],
+            [
+              "Jump to Recipe লিংক",
+              "কার্ড খুলে বোতাম খুঁজুন",
+              "কার্ডের প্রিন্ট দৃশ্য"
+            ],
+            [
+              "কার্ডবিহীন পোস্ট",
+              "লিংক ক্লিনারে পেস্ট করুন",
+              "পরিষ্কার নিবন্ধ; গল্প নিজে সরান"
+            ],
+            [
+              "রিডার মোড আছে",
+              "চালু করে প্রিভিউ দেখুন",
+              "মূল লেখা, নোট বাদ যেতে পারে"
+            ],
+            [
+              "নির্বাচনযোগ্য লেখা, বোতাম নেই",
+              "উপকরণ ও পদ্ধতি নির্বাচন করুন",
+              "ব্রাউজার সমর্থন করলে শুধু নির্বাচন"
+            ],
+            [
+              "স্ক্যান ছবিতে রেসিপি",
+              "OCR দিয়ে লেখা শনাক্ত করুন",
+              "সার্চযোগ্য লেখা, ভুল যাচাই দরকার"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "রান্নাঘরে কাজে লাগে এমন প্রিন্ট তৈরি করুন"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "দূর থেকে পড়তে হলে লেখা ১৪ বা ১৬ পয়েন্ট করুন।",
+            "ওভেনের তাপমাত্রা, প্রস্তুতির সময় ও মোট সময় ওপরে রাখুন।",
+            "এক পাশে প্রিন্ট করুন, যাতে রান্নার মাঝে তেলমাখা পাতা উল্টাতে না হয়।",
+            "সাইটের নাম বা লিংক রাখুন, যাতে নোট ও মন্তব্য পরে খুঁজে পান।",
+            "সব মন্তব্য প্রিন্ট করবেন না; দরকারি পরামর্শটি হাতে লিখে নিন।"
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "একই সাইটের রেসিপি প্রায়ই রান্না করলে ক্লিনারটি পিন করা ট্যাবে রাখুন। লিংক দিন, বাড়তি অংশ মুছুন এবং পরের রেসিপি তৈরি করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "প্রিন্টে কাগজ বাঁচান"
+        },
+        {
+          "t": "p",
+          "x": "রেসিপিটি প্রায় এক পৃষ্ঠা হলে ছবি বন্ধ করে স্কেল প্রায় ৯০ শতাংশ করুন, যাতে কয়েকটি লাইনের জন্য দ্বিতীয় পাতা না লাগে। লেখা পড়া যাচ্ছে কি না দেখুন। আরও জানুন [প্রিন্টে কালি বাঁচানোর উপায়](/blog/save-ink/save-ink-when-printing), [ছবি ছাড়া রেসিপি প্রিন্ট](/blog/recipes/print-recipe-without-pictures) এবং [স্ক্যান PDF-এ OCR](/blog/ocr/how-to-ocr-a-scanned-pdf)।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "পুরো ব্লগ পোস্ট নয়, শুধু রেসিপি কীভাবে প্রিন্ট করব?",
+          "a": "কার্ডে “Print Recipe” বোতাম থাকলে সেটি চাপুন; এটি উপকরণ ও পদ্ধতিসহ দৃশ্য খোলে। না থাকলে পেজের লিংক ক্লিনারে দিন, গল্প ও অপ্রয়োজনীয় ছবি সরিয়ে প্রিভিউ দেখুন।"
+        },
+        {
+          "q": "রান্নার ব্লগে রেসিপির আগে লম্বা গল্প থাকে কেন?",
+          "a": "লেখকেরা খাবারটি তৈরির অভিজ্ঞতা জানাতে পারেন এবং বিজ্ঞাপন বিনামূল্যের কনটেন্ট চালায়। গল্প স্ক্রিনে পড়ুন; ছোট ব্যক্তিগত কপি পেতে কার্ড বা ক্লিনার ব্যবহার করুন।"
+        },
+        {
+          "q": "প্রিন্ট বোতাম নেই এমন সাইট থেকে রেসিপি কীভাবে প্রিন্ট করব?",
+          "a": "রিডার মোড চেষ্টা করুন অথবা উপকরণ ও পদ্ধতি নির্বাচন করে ব্রাউজার সমর্থন করলে শুধু নির্বাচন প্রিন্ট করুন। না হলে লিংক ওয়েব ক্লিনারে দিয়ে অপ্রয়োজনীয় অংশ সরান।"
+        },
+        {
+          "q": "প্রিন্টের আগে সার্ভিং সংখ্যা বদলানো যাবে?",
+          "a": "কার্ডে সার্ভিং নিয়ন্ত্রণ থাকলে সাধারণত যাবে। প্রিন্ট দৃশ্য খোলার আগে সংখ্যা বদলান এবং সব উপকরণের পরিমাণ নতুন করে হিসাব হয়েছে কি না দেখুন।"
+        },
+        {
+          "q": "রেসিপি এক পাতায় কীভাবে আনব?",
+          "a": "ছবি বন্ধ করুন, লেখা পড়ার উপযোগী রাখুন এবং প্রিভিউতে দ্বিতীয় পাতায় অল্প লেখা থাকলে স্কেল কিছুটা কমান। কোনো উপকরণ বা ধাপ কাটা পড়েনি তা যাচাই করুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách in công thức nấu ăn không có quảng cáo và chuyện dài",
+      "metaTitle": "In công thức không có quảng cáo hay chuyện dài",
+      "metaDescription": "Chỉ in nguyên liệu và các bước. Dùng nút in công thức hoặc dọn trang miễn phí trong trình duyệt, không cần đăng ký hay hình mờ.",
+      "keyword": "cách in công thức không có quảng cáo",
+      "secondaryKeywords": [
+        "chỉ in công thức",
+        "công thức in được từ blog",
+        "in công thức không có chuyện dài",
+        "nút in công thức"
+      ],
+      "answer": "Trước tiên, tìm nút “Print Recipe” trên thẻ công thức. Nút này thường mở bản gọn chỉ có nguyên liệu và cách làm. Nếu không có, dán liên kết vào [công cụ dọn trang web](/print), xóa chuyện kể, ảnh và quảng cáo rồi in. Xem bản xem trước và chỉnh tỷ lệ để công thức vừa một trang.",
+      "ctaLabel": "Đổi HTML sang PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Bạn chỉ cần nguyên liệu và cách làm, nhưng trang lại có kỷ niệm gia đình, nhiều ảnh, video, quảng cáo và bình luận. Nhấn Ctrl+P có thể tạo bản xem trước dài nhiều trang. Có những cách đơn giản để giữ lại công thức hữu ích mà không in mọi thứ xung quanh."
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao blog ẩm thực có phần kể chuyện dài"
+        },
+        {
+          "t": "p",
+          "x": "Tác giả thường kể cách họ phát triển công thức, còn quảng cáo có thể giúp duy trì nội dung miễn phí. Câu chuyện có thể thú vị nhưng không cần in mỗi lần nấu. Việc bảo hộ pháp lý đối với danh sách nguyên liệu và phần diễn đạt công thức tùy quốc gia và cách trình bày; đừng mặc định có thể sao chép hoặc đăng lại mọi nội dung trên trang. Với bản dùng trong bếp, hãy giữ phiên bản tiện dụng và lưu liên kết nguồn."
+        },
+        {
+          "t": "h2",
+          "x": "Cách 1: dùng nút in của trang web"
+        },
+        {
+          "t": "p",
+          "x": "Nhiều blog đặt công thức trong một thẻ riêng có thanh công cụ. Tìm “Print”, “Print Recipe” hoặc biểu tượng máy in. Liên kết “Jump to Recipe” ở đầu trang có thể đưa bạn đến thẻ đó. Plugin như WP Recipe Maker và Tasty Recipes thường thêm nút in, nhưng bố cục khác nhau tùy trang."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Tìm thẻ công thức",
+              "x": "Cuộn đến khung chứa nguyên liệu hoặc nhấn “Jump to Recipe” nếu liên kết có ở đầu trang."
+            },
+            {
+              "h": "Mở chế độ in",
+              "x": "Nhấn “Print” hoặc “Print Recipe”. Một cửa sổ mới thường hiện tiêu đề, thời gian, khẩu phần, nguyên liệu và cách làm."
+            },
+            {
+              "h": "Chọn nội dung cần giữ",
+              "x": "Tắt ảnh hoặc ghi chú nếu không cần. Một số trang cho chỉnh khẩu phần trước khi in; đổi tại đây để định lượng nguyên liệu được tính lại."
+            },
+            {
+              "h": "Kiểm tra bản xem trước",
+              "x": "Nhấn Ctrl+P trên Windows hoặc Cmd+P trên Mac. Xem có bước nào bị cắt không. Nếu thành hai trang, tắt ảnh hoặc giảm tỷ lệ một chút."
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Nếu đầu trang có “Jump to Recipe”, hãy tìm nút in bên trong thẻ mở ra. Giao diện mỗi trang khác nhau nên hãy kiểm tra các điều khiển trong thẻ."
+        },
+        {
+          "t": "h2",
+          "x": "Cách 2: dọn trang không có thẻ công thức"
+        },
+        {
+          "t": "p",
+          "x": "Blog cá nhân, diễn đàn hoặc trang cũ có thể không có thẻ hay nút in. Hãy dọn trang trước khi in. [Công cụ dọn trang web PrintxPDF](/print) tải bài viết qua trình đọc web rồi cho chỉnh bản sạch ngay trong trình duyệt. Trình đọc lấy nội dung trang; việc biên tập bản sạch diễn ra trong tab. Một số trang chặn truy cập tự động. Khi đó, hãy dán văn bản thay vì thử đi thử lại."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Sao chép địa chỉ đầy đủ",
+              "x": "Chọn và sao chép toàn bộ URL công thức từ thanh địa chỉ trình duyệt."
+            },
+            {
+              "h": "Dán liên kết vào công cụ",
+              "x": "Mở [In bất kỳ trang web nào](/print) và dán địa chỉ. Công cụ cố trích bài viết, bỏ menu, thanh bên và khoảng quảng cáo."
+            },
+            {
+              "h": "Xóa phần không cần",
+              "x": "Xóa đoạn hồi ức, video, mục gợi ý và ảnh thừa. Trong trình chỉnh sửa, chọn khối rồi xóa trước khi in."
+            },
+            {
+              "h": "Chuẩn bị bản in",
+              "x": "Giữ tiêu đề, định lượng, thời gian và các bước. Xem trước số trang và lề trước khi in hoặc lưu PDF."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Cách 3: thử chế độ đọc hoặc in phần văn bản đã chọn"
+        },
+        {
+          "t": "p",
+          "x": "Safari Reader, Firefox Reader View và một số tính năng của Chrome có thể chỉ hiện nội dung chính, bỏ menu và quảng cáo. Bật nếu có rồi xem trước, vì chế độ này có thể bỏ thẻ công thức, ghi chú hoặc nguyên liệu. Bạn cũng có thể chọn từ danh sách nguyên liệu đến hết cách làm, nhấn Ctrl+P và chọn in phần đã chọn nếu trình duyệt hỗ trợ. Nếu trang chặn chọn văn bản, dùng công cụ dọn hoặc sao chép phần có thể xem."
+        },
+        {
+          "t": "h2",
+          "x": "Chọn cách nào cho từng trang"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Trang có gì",
+            "Thử trước",
+            "Kết quả thường gặp"
+          ],
+          "rows": [
+            [
+              "Thẻ công thức có nút in",
+              "Nút riêng của trang",
+              "Bản gọn, chỉnh được khẩu phần"
+            ],
+            [
+              "Liên kết Jump to Recipe",
+              "Mở thẻ và tìm nút in",
+              "Bản xem trước của thẻ"
+            ],
+            [
+              "Bài đăng không có thẻ",
+              "Dán liên kết vào công cụ dọn",
+              "Bài gọn; tự xóa phần kể chuyện"
+            ],
+            [
+              "Có chế độ đọc",
+              "Bật rồi xem trước",
+              "Nội dung chính, có thể thiếu ghi chú"
+            ],
+            [
+              "Chọn được văn bản, không có nút",
+              "Chọn nguyên liệu và cách làm",
+              "Chỉ phần được chọn nếu trình duyệt hỗ trợ"
+            ],
+            [
+              "Công thức là ảnh quét",
+              "Dùng OCR nhận dạng chữ",
+              "Văn bản có thể tìm kiếm, cần soát lỗi"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Làm bản in dễ dùng trong bếp"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Tăng cỡ chữ lên 14 hoặc 16 điểm nếu bạn đọc từ xa trong bếp.",
+            "Đưa nhiệt độ lò và thời gian chuẩn bị, tổng thời gian lên đầu trang.",
+            "In một mặt để không phải lật trang dính dầu khi đang nấu.",
+            "Ghi tên trang hoặc giữ liên kết để xem lại ghi chú và bình luận.",
+            "Đừng in tất cả bình luận; chỉ ghi tay mẹo thực sự muốn lưu."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Nếu thường nấu từ cùng một trang, hãy ghim công cụ dọn ở một tab. Dán liên kết, xóa các khối thừa rồi chuẩn bị công thức tiếp theo mà không phải tìm nút in từng trang."
+        },
+        {
+          "t": "h2",
+          "x": "Tiết kiệm giấy khi in"
+        },
+        {
+          "t": "p",
+          "x": "Nếu công thức gần vừa một trang, tắt ảnh và giảm tỷ lệ xuống khoảng 90% để tránh tờ thứ hai chỉ có vài dòng. Đảm bảo chữ vẫn dễ đọc. Xem thêm [cách tiết kiệm mực khi in](/blog/save-ink/save-ink-when-printing), [in công thức không có ảnh](/blog/recipes/print-recipe-without-pictures) và [cách OCR PDF đã quét](/blog/ocr/how-to-ocr-a-scanned-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Làm sao chỉ in công thức mà không in cả bài blog?",
+          "a": "Dùng nút “Print Recipe” trên thẻ nếu có; nút mở bản chỉ gồm nguyên liệu và cách làm. Nếu không có, dán liên kết vào công cụ dọn trang, xóa chuyện kể và ảnh thừa rồi xem trước."
+        },
+        {
+          "q": "Vì sao blog ẩm thực kể chuyện dài trước công thức?",
+          "a": "Tác giả có thể chia sẻ quá trình phát triển món ăn, còn quảng cáo giúp duy trì nội dung miễn phí. Đọc chuyện trên màn hình và dùng thẻ in hoặc công cụ dọn để tạo bản cá nhân ngắn hơn."
+        },
+        {
+          "q": "Làm thế nào để in công thức trên trang không có nút in?",
+          "a": "Thử chế độ đọc hoặc chọn nguyên liệu và cách làm rồi in phần đã chọn nếu trình duyệt có tùy chọn. Nếu không, dán liên kết vào công cụ dọn trang và xóa phần không cần."
+        },
+        {
+          "q": "Có thể đổi số khẩu phần trước khi in không?",
+          "a": "Thường có nếu thẻ công thức có điều khiển khẩu phần. Đổi số trước khi mở bản xem trước và kiểm tra trang đã cập nhật lượng từng nguyên liệu."
+        },
+        {
+          "q": "Làm sao để công thức vừa đúng một trang?",
+          "a": "Tắt ảnh, giữ cỡ chữ dễ đọc và giảm nhẹ tỷ lệ nếu trang xem trước thứ hai chỉ có vài dòng. Kiểm tra không có nguyên liệu hay bước nào bị cắt."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何打印没有广告和冗长故事的食谱",
+      "metaTitle": "打印没有广告和故事的食谱",
+      "metaDescription": "只打印食材和步骤。使用食谱卡的打印按钮，或在浏览器中免费清理网页，无需注册，也没有水印。快速制作实用食谱打印稿。",
+      "keyword": "如何打印没有广告的食谱",
+      "secondaryKeywords": [
+        "只打印食谱",
+        "博客食谱打印",
+        "不打印故事只打印食谱",
+        "食谱打印按钮"
+      ],
+      "answer": "先找食谱卡上的“Print Recipe”按钮，它通常会打开只含食材和做法的简洁页面。如果没有，把链接粘贴到[网页清理工具](/print)，删掉故事、图片和广告后再打印。先检查打印预览，并调整缩放比例，让食谱尽量放在一页。",
+      "ctaLabel": "HTML 转 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "你只想要食材清单和做法，页面却有家庭回忆、很多照片、视频、广告和评论。按 Ctrl+P 后，预览可能有好几页。你可以用几种简单方法留下有用的食谱，而不把周围所有内容都打印出来。"
+        },
+        {
+          "t": "h2",
+          "x": "美食博客为什么会写很长的故事"
+        },
+        {
+          "t": "p",
+          "x": "作者常会介绍食谱的由来，广告也可能帮助维持免费内容。故事可以在屏幕上阅读，但每次做饭并不都要打印。食材清单和食谱文字的法律保护因国家和表达方式而异，不要默认网页上的所有内容都能复制或重新发布。为了个人烹饪使用，请保存实用的副本，并保留原始来源链接。"
+        },
+        {
+          "t": "h2",
+          "x": "方法一：使用网站自带的打印按钮"
+        },
+        {
+          "t": "p",
+          "x": "许多博客会把食谱放在带有工具栏的卡片中。寻找“Print”“Print Recipe”或小打印机图标。页面顶部的“Jump to Recipe”链接通常会跳到食谱卡。WP Recipe Maker、Tasty Recipes 等插件常会添加打印控制，但不同网站的布局并不一样。"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "找到食谱卡",
+              "x": "滚动到食材框，或点击页面顶部的“Jump to Recipe”。"
+            },
+            {
+              "h": "打开打印视图",
+              "x": "点击“Print”或“Print Recipe”。新窗口通常包含标题、时间、份数、食材和做法。"
+            },
+            {
+              "h": "选择要包含的内容",
+              "x": "不需要时关闭图片或备注。有些网站允许先调整份数；在这里更改，食材数量可能会自动重新计算。"
+            },
+            {
+              "h": "检查打印预览",
+              "x": "Windows 按 Ctrl+P，Mac 按 Cmd+P。确认步骤没有被裁切。如果需要两页，关闭图片或稍微缩小比例。"
+            }
+          ]
+        },
+        {
+          "t": "note",
+          "x": "如果顶部有“Jump to Recipe”，请在跳转后的卡片中寻找打印按钮。每个网站的设计不同，检查卡片提供的选项。"
+        },
+        {
+          "t": "h2",
+          "x": "方法二：清理没有食谱卡的网页"
+        },
+        {
+          "t": "p",
+          "x": "个人博客、论坛或旧网页可能没有食谱卡或打印按钮。你可以先清理页面再打印。[PrintxPDF 网页清理工具](/print)通过网页阅读器加载文章，然后让你在浏览器标签页中编辑清理后的版本。阅读器负责获取网页内容，编辑发生在当前标签页中。有些网站会阻止自动读取；遇到这种情况时，直接粘贴可见文字，不要反复尝试。"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "复制完整网址",
+              "x": "在浏览器地址栏中选中并复制食谱的完整 URL。"
+            },
+            {
+              "h": "把链接粘贴到清理工具",
+              "x": "打开[打印任意网页](/print)并粘贴网址。工具会尝试提取文章，并移除菜单、侧栏和广告区域。"
+            },
+            {
+              "h": "删除不需要的部分",
+              "x": "移除回忆段落、视频、推荐内容和多余图片。打印前可以在编辑器中选中内容块并删除。"
+            },
+            {
+              "h": "准备打印",
+              "x": "保留标题、数量、时间和步骤。打印或保存为 PDF 前，在预览中检查页数和页边距。"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "方法三：试试阅读模式或仅打印选中的文字"
+        },
+        {
+          "t": "p",
+          "x": "Safari Reader、Firefox Reader View 和 Chrome 的某些功能可以隐藏菜单与广告，只显示正文。若可用就开启，然后检查预览，因为它们可能遗漏食谱卡、备注或食材。你也可以从食材列表选到做法末尾，按 Ctrl+P，并在浏览器支持时选择仅打印选中内容。如果网站禁止选中文字，就使用网页清理工具，或复制能看到的内容。"
+        },
+        {
+          "t": "h2",
+          "x": "不同网页适合哪种方法"
+        },
+        {
+          "t": "table",
+          "head": [
+            "网页提供什么",
+            "先试什么",
+            "常见结果"
+          ],
+          "rows": [
+            [
+              "带打印按钮的食谱卡",
+              "网站自带的食谱按钮",
+              "简洁食谱，可调整份数"
+            ],
+            [
+              "Jump to Recipe 链接",
+              "跳转后寻找打印按钮",
+              "食谱卡的打印视图"
+            ],
+            [
+              "没有卡片的文章",
+              "把链接粘贴到清理工具",
+              "清理后的文章，手动删故事"
+            ],
+            [
+              "有阅读模式",
+              "开启并检查预览",
+              "正文，可能不含备注"
+            ],
+            [
+              "文字可选但没有按钮",
+              "选择食材和做法",
+              "浏览器支持时只打印选中内容"
+            ],
+            [
+              "食谱是扫描图片",
+              "先用 OCR 识别文字",
+              "可搜索的文字，需检查识别错误"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "让打印的食谱在厨房里更好用"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "如果要在厨房远处阅读，把字号调到 14 或 16 磅。",
+            "把烤箱温度、准备时间和总时间放在页面上方。",
+            "选择单面打印，避免做饭时翻动沾油的纸张。",
+            "记下网站名称或保存链接，以便查找原始备注和评论。",
+            "不要打印所有评论，只手写真正有用的提示。"
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "如果经常从同一个网站做菜，可以把清理工具固定在一个标签页。粘贴链接、删除多余内容，再处理下一道食谱，无需每次寻找打印按钮。"
+        },
+        {
+          "t": "h2",
+          "x": "打印时节省纸张"
+        },
+        {
+          "t": "p",
+          "x": "如果食谱几乎占满一页，关闭图片并把缩放调到约 90%，避免第二页只剩几行。确认字号仍然清晰。还可阅读[打印时如何节省墨水](/blog/save-ink/save-ink-when-printing)、[如何不打印图片来打印食谱](/blog/recipes/print-recipe-without-pictures)，以及[如何对扫描 PDF 进行 OCR](/blog/ocr/how-to-ocr-a-scanned-pdf)。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "怎样只打印食谱而不打印整篇博客？",
+          "a": "如果食谱卡有“Print Recipe”按钮，请使用它打开只含食材和做法的视图。没有按钮时，把链接粘贴到网页清理工具，删除故事和不需要的图片，再检查预览。"
+        },
+        {
+          "q": "美食博客为什么在食谱前写很长的故事？",
+          "a": "作者可能分享菜品的创作过程，广告也可能帮助维持免费内容。故事可以在屏幕上看；使用食谱卡或清理工具制作更短的个人打印副本。"
+        },
+        {
+          "q": "没有打印按钮的网站如何打印食谱？",
+          "a": "可以尝试阅读模式，或选择食材和做法并在浏览器允许时仅打印选中内容。若不行，把链接粘贴到网页清理工具并删除多余部分。"
+        },
+        {
+          "q": "打印前可以更改食谱份数吗？",
+          "a": "如果食谱卡提供份数控制，通常可以。请在打开打印视图前更改份数，并确认网站更新了每种食材的数量。"
+        },
+        {
+          "q": "怎样让食谱正好放在一页？",
+          "a": "关闭图片，保持字号清晰；如果预览显示第二页只剩几行，可略微缩小比例。检查食材和步骤没有被裁切。"
+        }
+      ]
+    }
+  }
+}
