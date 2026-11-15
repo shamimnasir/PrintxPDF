@@ -1,0 +1,973 @@
+{
+  "topic": "convert-word-to-pdf-without-word",
+  "sourceCluster": "to-pdf",
+  "tool": "word-to-pdf",
+  "languages": {
+    "es": {
+      "title": "Convertir Word a PDF sin Microsoft Word",
+      "metaTitle": "Convertir Word a PDF sin Microsoft Word",
+      "metaDescription": "Convierte DOCX a PDF gratis, sin registro ni marca de agua. Conversión privada en el navegador, sin subir el documento.",
+      "keyword": "convertir Word a PDF sin Microsoft Word",
+      "secondaryKeywords": [
+        "Word a PDF gratis",
+        "convertir DOCX a PDF",
+        "convertir documento Word",
+        "convertidor PDF privado"
+      ],
+      "answer": "Para convertir DOCX a PDF sin Microsoft Word, abre un conversor en el navegador, crea el PDF y revisa cada página. PrintxPDF procesa la conversión estándar localmente, sin registro ni marca de agua.",
+      "ctaLabel": "Convierte Word a PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Puedes crear un PDF a partir de un archivo DOCX aunque no tengas Microsoft Word instalado. Usa un conversor que admita DOCX, descarga el resultado y comprueba el diseño antes de enviarlo. Los archivos antiguos DOC, ODT y RTF deben guardarse como DOCX primero."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir un documento Word a PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarda el documento como DOCX",
+              "x": "Usa un archivo .docx. Si tienes un .doc, ODT o RTF antiguo, ábrelo en un procesador de texto y guárdalo como DOCX."
+            },
+            {
+              "h": "Abre Word a PDF",
+              "x": "Añade el documento a [Word a PDF](/tools/word-to-pdf) desde un navegador actualizado."
+            },
+            {
+              "h": "Convierte en el navegador",
+              "x": "Ejecuta la herramienta y descarga el nuevo PDF A4. En la conversión estándar, el documento se procesa en tu dispositivo."
+            },
+            {
+              "h": "Revisa todas las páginas",
+              "x": "Comprueba títulos, tablas, imágenes, saltos de página y texto cerca de los bordes."
+            },
+            {
+              "h": "Añade búsqueda si la necesitas",
+              "x": "Las páginas son imágenes. Usa [OCR PDF](/tools/ocr-pdf) en una copia si necesitas buscar o seleccionar texto."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Convierte un DOCX a PDF en tu pestaña. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Qué conserva y cambia Word a PDF"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Elemento",
+            "Resultado esperado",
+            "Qué revisar"
+          ],
+          "rows": [
+            [
+              "Títulos y párrafos",
+              "Se distribuyen en páginas fijas",
+              "Busca saltos de página distintos."
+            ],
+            [
+              "Tablas e imágenes",
+              "Se incluyen cuando son compatibles",
+              "Revisa recortes y ancho de columnas."
+            ],
+            [
+              "Fuentes y diseños complejos",
+              "Pueden simplificarse",
+              "Comprueba documentos legales o de marca."
+            ],
+            [
+              "Búsqueda y copia de texto",
+              "No se incluyen de forma predeterminada",
+              "Ejecuta OCR si necesitas buscar."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Por qué conviene revisar el PDF"
+        },
+        {
+          "t": "p",
+          "x": "Un archivo DOCX recalcula el diseño cada vez que se abre. El conversor del navegador compone páginas A4 con los estilos compatibles, por lo que una línea puede moverse, cambiar una fuente o alterar el corte de una tabla. Abre el PDF y compara páginas con gráficos, columnas, encabezados, pies, cuadros de texto o firmas antes de enviarlo."
+        },
+        {
+          "t": "h2",
+          "x": "Conversión local para borradores sensibles"
+        },
+        {
+          "t": "p",
+          "x": "Currículos, cartas, propuestas y documentos de clientes pueden contener datos privados. PrintxPDF procesa esta conversión Word a PDF en el navegador y evita subir el DOCX rutinariamente a un servidor. Esto reduce una transferencia innecesaria, pero guarda el PDF descargado en un lugar seguro y confirma el destinatario antes de compartirlo."
+        },
+        {
+          "t": "h2",
+          "x": "Usa OCR solo si resuelve una necesidad"
+        },
+        {
+          "t": "p",
+          "x": "La conversión crea páginas como imágenes. Conserva el aspecto visual, pero el texto no se puede seleccionar ni buscar. Para una copia de trabajo con búsqueda, [OCR PDF](/tools/ocr-pdf) puede añadir una capa de texto. Comprueba nombres, fechas, números y enlaces porque el reconocimiento puede equivocarse. Conserva el DOCX si quizá debas editarlo más tarde."
+        },
+        {
+          "t": "h2",
+          "x": "Prepara la copia final"
+        },
+        {
+          "t": "p",
+          "x": "Usa un nombre de archivo claro y abre el PDF en un lector normal. Para reunir documentos ya revisados, [Combinar PDF](/tools/merge-pdf) crea un paquete aparte. Si las propiedades del documento no deben acompañar a la copia, usa [Eliminar metadatos](/tools/remove-metadata) según tu política. Son pasos distintos y no sustituyen una revisión cuidadosa. Confirma que la descarga se abre antes de entregarla."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Puedo convertir Word a PDF gratis?",
+          "a": "Sí. Añade un DOCX, ejecuta el conversor en el navegador y descarga el PDF. El uso básico no requiere registro ni añade marca de agua."
+        },
+        {
+          "q": "¿Word a PDF admite archivos DOC?",
+          "a": "No. Guarda primero los archivos DOC antiguos como DOCX con un procesador de texto y después conviértelos."
+        },
+        {
+          "q": "¿El PDF convertido permite buscar texto?",
+          "a": "No de forma predeterminada. Las páginas son imágenes. Usa OCR en una copia si necesitas texto seleccionable o buscable."
+        },
+        {
+          "q": "¿Word a PDF sube mi documento?",
+          "a": "La conversión estándar se ejecuta en la pestaña del navegador, así que el documento no se sube rutinariamente a un servidor."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Converter Word para PDF sem Microsoft Word",
+      "metaTitle": "Converter Word para PDF sem Microsoft Word",
+      "metaDescription": "Converta DOCX para PDF grátis, sem cadastro ou marca-d’água. Conversão privada no navegador, sem enviar o documento.",
+      "keyword": "converter Word para PDF sem Microsoft Word",
+      "secondaryKeywords": [
+        "Word para PDF grátis",
+        "converter DOCX para PDF",
+        "converter documento Word",
+        "conversor PDF privado"
+      ],
+      "answer": "Para converter DOCX em PDF sem Microsoft Word, abra um conversor no navegador, gere o PDF e confira cada página. O PrintxPDF processa a conversão padrão localmente, sem cadastro ou marca-d’água.",
+      "ctaLabel": "Converta Word para PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Você pode criar um PDF a partir de um arquivo DOCX mesmo sem ter o Microsoft Word instalado. Use um conversor compatível com DOCX, baixe o resultado e confira o layout antes de enviar. Arquivos antigos DOC, ODT e RTF precisam ser salvos como DOCX primeiro."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter um documento Word para PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Salve o documento como DOCX",
+              "x": "Use um arquivo .docx. Se tiver um .doc, ODT ou RTF antigo, abra-o em um editor de texto e salve como DOCX."
+            },
+            {
+              "h": "Abra Word para PDF",
+              "x": "Adicione o documento em [Word para PDF](/tools/word-to-pdf) usando um navegador atualizado."
+            },
+            {
+              "h": "Converta no navegador",
+              "x": "Execute a ferramenta e baixe o novo PDF A4. Na conversão padrão, o documento é processado no seu dispositivo."
+            },
+            {
+              "h": "Revise todas as páginas",
+              "x": "Confira títulos, tabelas, imagens, quebras de página e texto próximo das bordas."
+            },
+            {
+              "h": "Adicione busca se precisar",
+              "x": "As páginas são imagens. Use [OCR PDF](/tools/ocr-pdf) em uma cópia se precisar pesquisar ou selecionar texto."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Converta DOCX para PDF na sua aba. Grátis, sem cadastro e sem marca-d’água."
+        },
+        {
+          "t": "h2",
+          "x": "O que Word para PDF mantém e altera"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Elemento",
+            "Resultado esperado",
+            "O que revisar"
+          ],
+          "rows": [
+            [
+              "Títulos e parágrafos",
+              "Distribuídos em páginas fixas",
+              "Procure quebras diferentes."
+            ],
+            [
+              "Tabelas e imagens",
+              "Incluídas quando compatíveis",
+              "Confira cortes e largura das colunas."
+            ],
+            [
+              "Fontes e layouts complexos",
+              "Podem ser simplificados",
+              "Revise documentos legais ou de marca."
+            ],
+            [
+              "Busca e cópia de texto",
+              "Não incluídas por padrão",
+              "Rode OCR se precisar pesquisar."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Por que conferir o PDF"
+        },
+        {
+          "t": "p",
+          "x": "Um DOCX recalcula o layout sempre que é aberto. O conversor do navegador organiza páginas A4 com os estilos compatíveis. Uma linha pode mudar de posição, uma fonte pode ser substituída ou uma tabela pode quebrar em outro ponto. Abra o PDF e compare páginas com gráficos, colunas, cabeçalhos, rodapés, caixas de texto ou assinaturas antes de enviá-lo."
+        },
+        {
+          "t": "h2",
+          "x": "Conversão local para rascunhos sensíveis"
+        },
+        {
+          "t": "p",
+          "x": "Currículos, cartas, propostas e documentos de clientes podem conter dados privados. O PrintxPDF processa esse fluxo de Word para PDF no navegador, sem enviar rotineiramente o DOCX a um servidor de conversão. Isso evita uma transferência desnecessária, mas guarde o PDF baixado com cuidado e confira o destinatário antes de compartilhar."
+        },
+        {
+          "t": "h2",
+          "x": "Use OCR quando houver uma necessidade real"
+        },
+        {
+          "t": "p",
+          "x": "A conversão cria páginas como imagens. Isso preserva o visual, mas o texto não pode ser selecionado nem pesquisado. Para uma cópia pesquisável, [OCR PDF](/tools/ocr-pdf) pode adicionar uma camada de texto. Confira nomes, datas, números e links porque o reconhecimento pode errar. Mantenha o DOCX original se precisar editar o conteúdo depois."
+        },
+        {
+          "t": "h2",
+          "x": "Prepare a cópia final"
+        },
+        {
+          "t": "p",
+          "x": "Use um nome de arquivo claro e abra o PDF em um leitor comum. Para reunir documentos já revisados, [Juntar PDF](/tools/merge-pdf) cria um pacote separado. Se as propriedades do documento não devem acompanhar uma cópia distribuída, use [Remover metadados](/tools/remove-metadata) conforme sua política. Essas etapas não substituem uma revisão cuidadosa. Confirme que o download abre antes de entregar."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Posso converter Word para PDF grátis?",
+          "a": "Sim. Adicione um DOCX, execute o conversor no navegador e baixe o PDF. O uso básico não exige cadastro nem inclui marca-d’água."
+        },
+        {
+          "q": "Word para PDF aceita arquivos DOC?",
+          "a": "Não. Salve arquivos DOC antigos como DOCX em um editor de texto antes da conversão."
+        },
+        {
+          "q": "O PDF convertido permite pesquisar texto?",
+          "a": "Não por padrão. As páginas são imagens. Use OCR em uma cópia quando precisar de texto pesquisável ou selecionável."
+        },
+        {
+          "q": "Word para PDF envia meu documento?",
+          "a": "A conversão padrão ocorre na aba do navegador, portanto o documento não é enviado rotineiramente a um servidor."
+        }
+      ]
+    },
+    "hi": {
+      "title": "Microsoft Word के बिना Word को PDF में बदलें",
+      "metaTitle": "बिना Microsoft Word Word से PDF बनाएँ",
+      "metaDescription": "DOCX को PDF में मुफ़्त बदलें। साइनअप या वॉटरमार्क नहीं। निजी रूपांतरण सीधे ब्राउज़र में होता है। टूल डाउनलोड की सुविधा के साथ काम करता है।",
+      "keyword": "Microsoft Word के बिना Word को PDF में बदलें",
+      "secondaryKeywords": [
+        "Word से PDF मुफ़्त",
+        "DOCX को PDF में बदलें",
+        "Word दस्तावेज़ बदलें",
+        "निजी PDF कन्वर्टर"
+      ],
+      "answer": "Microsoft Word के बिना DOCX को PDF में बदलने के लिए ब्राउज़र कन्वर्टर खोलें, PDF बनाएँ और हर पेज देखें। PrintxPDF का सामान्य रूपांतरण डिवाइस पर होता है, बिना साइनअप या वॉटरमार्क के।",
+      "ctaLabel": "Word को PDF में बदलें",
+      "body": [
+        {
+          "t": "p",
+          "x": "Microsoft Word इंस्टॉल न होने पर भी आप DOCX फ़ाइल से PDF बना सकते हैं। DOCX समर्थित ब्राउज़र कन्वर्टर चुनें, परिणाम डाउनलोड करें और भेजने से पहले उसका लेआउट देखें। पुरानी DOC, ODT और RTF फ़ाइलों को पहले DOCX के रूप में सहेजना होगा।"
+        },
+        {
+          "t": "h2",
+          "x": "Word दस्तावेज़ को PDF में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "दस्तावेज़ को DOCX में सहेजें",
+              "x": " .docx फ़ाइल इस्तेमाल करें। पुरानी .doc, ODT या RTF फ़ाइल को टेक्स्ट एडिटर में खोलकर DOCX के रूप में सहेजें।"
+            },
+            {
+              "h": "Word से PDF खोलें",
+              "x": "नए ब्राउज़र में दस्तावेज़ [Word से PDF](/tools/word-to-pdf) में जोड़ें।"
+            },
+            {
+              "h": "ब्राउज़र में बदलें",
+              "x": "टूल चलाएँ और नया A4 PDF डाउनलोड करें। सामान्य रूपांतरण में दस्तावेज़ आपके डिवाइस पर प्रोसेस होता है।"
+            },
+            {
+              "h": "हर पेज जाँचें",
+              "x": "शीर्षक, तालिका, तस्वीरें, पेज ब्रेक और किनारे के पास का पाठ देखें।"
+            },
+            {
+              "h": "ज़रूरत हो तो खोज जोड़ें",
+              "x": "पेज छवियाँ होते हैं। पाठ खोजने या चुनने के लिए प्रति पर [PDF OCR](/tools/ocr-pdf) चलाएँ।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "टैब में DOCX को PDF बनाएँ। मुफ़्त, बिना साइनअप और वॉटरमार्क के."
+        },
+        {
+          "t": "h2",
+          "x": "Word से PDF क्या रखता और बदलता है"
+        },
+        {
+          "t": "table",
+          "head": [
+            "दस्तावेज़ का हिस्सा",
+            "अपेक्षित परिणाम",
+            "रूपांतरण के बाद जाँच"
+          ],
+          "rows": [
+            [
+              "शीर्षक और पैराग्राफ",
+              "स्थिर पेजों पर व्यवस्थित",
+              "बदले पेज ब्रेक देखें।"
+            ],
+            [
+              "तालिकाएँ और तस्वीरें",
+              "समर्थित होने पर शामिल",
+              "कटाव और कॉलम चौड़ाई देखें।"
+            ],
+            [
+              "विशेष फ़ॉन्ट और जटिल लेआउट",
+              "सरल हो सकते हैं",
+              "कानूनी या ब्रांड दस्तावेज़ देखें।"
+            ],
+            [
+              "पाठ खोजना और कॉपी करना",
+              "डिफ़ॉल्ट रूप से नहीं",
+              "खोज के लिए OCR चलाएँ।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF जाँचना क्यों ज़रूरी है"
+        },
+        {
+          "t": "p",
+          "x": "DOCX खुलने पर लेआउट फिर से बनाता है। ब्राउज़र कन्वर्टर समर्थित शैलियों के आधार पर A4 पेज बनाता है; कोई पंक्ति खिसक सकती है, फ़ॉन्ट बदल सकता है या तालिका दूसरे स्थान पर टूट सकती है। यह सामान्य रूपांतरण व्यवहार है। भेजने से पहले चार्ट, कॉलम, हेडर, फुटर, टेक्स्ट बॉक्स या हस्ताक्षर वाले पेजों की तुलना करें।"
+        },
+        {
+          "t": "h2",
+          "x": "संवेदनशील ड्राफ्ट के लिए स्थानीय रूपांतरण"
+        },
+        {
+          "t": "p",
+          "x": "रिज़्यूमे, पत्र, प्रस्ताव और ग्राहक दस्तावेज़ में निजी जानकारी हो सकती है। PrintxPDF Word से PDF के इस काम को ब्राउज़र में करता है और DOCX को नियमित रूप से सर्वर पर अपलोड नहीं करता। इससे अनावश्यक स्थानांतरण कम होता है। फिर भी डाउनलोड की PDF सुरक्षित रखें और साझा करने से पहले प्राप्तकर्ता जाँचें।"
+        },
+        {
+          "t": "h2",
+          "x": "ज़रूरत होने पर ही OCR इस्तेमाल करें"
+        },
+        {
+          "t": "p",
+          "x": "रूपांतरण में पेज छवियों के रूप में बनते हैं। दृश्य रूप बना रहता है, लेकिन पाठ चुना या खोजा नहीं जा सकता। खोज योग्य प्रति के लिए [PDF OCR](/tools/ocr-pdf) टेक्स्ट लेयर जोड़ सकता है। OCR में गलती हो सकती है, इसलिए नाम, तारीख, संख्या और लिंक जाँचें। आगे बदलाव की संभावना हो तो DOCX मूल रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "अंतिम प्रति तैयार करें"
+        },
+        {
+          "t": "p",
+          "x": "स्पष्ट फ़ाइल नाम रखें और PDF को सामान्य रीडर में खोलें। जाँचे हुए दस्तावेज़ जोड़ने के लिए [PDF मर्ज करें](/tools/merge-pdf) से अलग पैकेट बनाएँ। वितरण प्रति में दस्तावेज़ गुण नहीं चाहिए तो नीति के अनुसार [PDF मेटाडेटा हटाएँ](/tools/remove-metadata)। ये कदम सावधानीपूर्वक समीक्षा का विकल्प नहीं हैं। जमा करने से पहले डाउनलोड खुलना सुनिश्चित करें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या Word को PDF में मुफ़्त बदल सकते हैं?",
+          "a": "हाँ। DOCX जोड़ें, ब्राउज़र कन्वर्टर चलाएँ और PDF डाउनलोड करें। मुख्य टूल के लिए साइनअप नहीं चाहिए और वॉटरमार्क नहीं लगता।"
+        },
+        {
+          "q": "क्या Word से PDF में DOC फ़ाइल चलती है?",
+          "a": "नहीं। पहले पुराने DOC को किसी वर्ड प्रोसेसर में DOCX के रूप में सहेजें।"
+        },
+        {
+          "q": "क्या बनी PDF में पाठ खोज सकते हैं?",
+          "a": "डिफ़ॉल्ट रूप से नहीं, क्योंकि पेज छवियाँ हैं। खोज योग्य या चुनने योग्य पाठ के लिए प्रति पर OCR चलाएँ।"
+        },
+        {
+          "q": "क्या Word से PDF मेरा दस्तावेज़ अपलोड करता है?",
+          "a": "सामान्य रूपांतरण ब्राउज़र टैब के अंदर होता है, इसलिए फ़ाइल नियमित रूप से सर्वर पर अपलोड नहीं होती।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تحويل Word إلى PDF دون Microsoft Word",
+      "metaTitle": "تحويل Word إلى PDF دون Microsoft Word",
+      "metaDescription": "حوّل DOCX إلى PDF مجانًا، بلا تسجيل أو علامة مائية. تحويل خاص داخل المتصفح دون رفع المستند. تعمل الأداة مباشرة في المتصفح مع تنزيل سهل.",
+      "keyword": "تحويل Word إلى PDF دون Microsoft Word",
+      "secondaryKeywords": [
+        "Word إلى PDF مجانًا",
+        "تحويل DOCX إلى PDF",
+        "تحويل مستند Word",
+        "محول PDF خاص"
+      ],
+      "answer": "لتحويل DOCX إلى PDF دون Microsoft Word، افتح أداة تحويل في المتصفح، أنشئ ملف PDF وافحص كل صفحة. يعالج PrintxPDF التحويل المعتاد محليًا، بلا تسجيل أو علامة مائية.",
+      "ctaLabel": "حوّل Word إلى PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "يمكنك إنشاء PDF من ملف DOCX حتى إن لم يكن Microsoft Word مثبتًا على جهازك. استخدم محولًا يدعم DOCX، ونزّل النتيجة ثم راجع التخطيط قبل إرسالها. يجب حفظ ملفات DOC القديمة وODT وRTF بصيغة DOCX أولًا. احتفظ بالمستند الأصلي إذا كنت ستحتاج إلى تحرير النص لاحقًا."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل مستند Word إلى PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احفظ المستند بصيغة DOCX",
+              "x": "استخدم ملفًا بامتداد .docx. افتح ملفات .doc أو ODT أو RTF القديمة في معالج نصوص واحفظها بصيغة DOCX."
+            },
+            {
+              "h": "افتح أداة Word إلى PDF",
+              "x": "أضف المستند إلى [Word إلى PDF](/tools/word-to-pdf) في متصفح حديث."
+            },
+            {
+              "h": "حوّل داخل المتصفح",
+              "x": "شغّل الأداة ونزّل ملف PDF جديدًا بحجم A4. في التحويل المعتاد تتم المعالجة على جهازك."
+            },
+            {
+              "h": "افحص كل الصفحات",
+              "x": "تحقق من العناوين والجداول والصور وفواصل الصفحات والنص القريب من الحواف."
+            },
+            {
+              "h": "أضف البحث عند الحاجة",
+              "x": "تكون الصفحات صورًا. استخدم [OCR PDF](/tools/ocr-pdf) على نسخة إذا احتجت إلى البحث عن النص أو تحديده."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "حوّل DOCX إلى PDF في علامة التبويب. مجانًا، بلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "ما الذي تحتفظ به أداة Word إلى PDF وما الذي يتغير"
+        },
+        {
+          "t": "table",
+          "head": [
+            "عنصر المستند",
+            "النتيجة المتوقعة",
+            "ما يجب فحصه"
+          ],
+          "rows": [
+            [
+              "العناوين والفقرات",
+              "توزيعها على صفحات ثابتة",
+              "ابحث عن اختلاف فواصل الصفحات."
+            ],
+            [
+              "الجداول والصور",
+              "تضمينها عند دعمها",
+              "افحص القص وعرض الأعمدة."
+            ],
+            [
+              "الخطوط والتخطيطات المعقدة",
+              "قد تُبسّط",
+              "راجع المستندات القانونية أو ذات الهوية البصرية."
+            ],
+            [
+              "البحث عن النص ونسخه",
+              "غير متاح افتراضيًا",
+              "شغّل OCR إذا احتجت إلى البحث."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "لماذا يجب مراجعة ملف PDF"
+        },
+        {
+          "t": "p",
+          "x": "يعيد DOCX حساب التخطيط عند فتحه. ينشئ محول المتصفح صفحات A4 باستخدام الأنماط المدعومة، وقد ينتقل سطر أو يتغير خط أو ينقسم جدول في موضع مختلف. هذا سلوك تحويل عادي ولا يعني تعديل المصدر. افتح PDF وقارن الصفحات التي تضم رسومًا أو أعمدة متعددة أو رؤوسًا وتذييلات أو مربعات نص أو توقيعات قبل إرساله."
+        },
+        {
+          "t": "h2",
+          "x": "تحويل محلي للمسودات الحساسة"
+        },
+        {
+          "t": "p",
+          "x": "قد تحتوي السير الذاتية والخطابات والعروض ومستندات العملاء على معلومات خاصة. يعالج PrintxPDF هذا المسار من Word إلى PDF داخل المتصفح، ولا يرفع DOCX عادةً إلى خادم تحويل. يقلل ذلك نقل الملف دون حاجة، لكن احفظ PDF الذي نزّلته في مكان آمن وتحقق من هوية المستلم قبل مشاركته."
+        },
+        {
+          "t": "h2",
+          "x": "استخدم OCR عند الحاجة الفعلية فقط"
+        },
+        {
+          "t": "p",
+          "x": "ينشئ التحويل صفحات على هيئة صور. يحافظ هذا على المظهر، لكن لا يمكن تحديد النص أو البحث فيه. يمكن لأداة [OCR PDF](/tools/ocr-pdf) إضافة طبقة نص إلى نسخة قابلة للبحث. راجع الأسماء والتواريخ والأرقام والروابط لأن التعرف قد يخطئ. احتفظ بملف DOCX الأصلي إذا كنت قد تحتاج إلى تعديل المحتوى."
+        },
+        {
+          "t": "h2",
+          "x": "جهّز نسخة التسليم النهائية"
+        },
+        {
+          "t": "p",
+          "x": "استخدم اسم ملف واضحًا وافتح PDF في قارئ عادي. لجمع المستندات التي راجعتها، أنشئ حزمة منفصلة باستخدام [دمج PDF](/tools/merge-pdf). إذا كان يجب عدم إرفاق خصائص المستند بنسخة التوزيع، استخدم [إزالة بيانات PDF الوصفية](/tools/remove-metadata) وفق سياستك. هذه خطوات منفصلة ولا تغني عن المراجعة. تأكد من أن التنزيل يفتح قبل التسليم."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يمكن تحويل Word إلى PDF مجانًا؟",
+          "a": "نعم. أضف ملف DOCX وشغّل المحول في المتصفح ثم نزّل PDF. لا يتطلب الاستخدام الأساسي تسجيلًا ولا يضيف علامة مائية."
+        },
+        {
+          "q": "هل تدعم أداة Word إلى PDF ملفات DOC؟",
+          "a": "لا. احفظ ملفات DOC القديمة بصيغة DOCX باستخدام معالج نصوص قبل التحويل."
+        },
+        {
+          "q": "هل يمكن البحث في PDF الناتج؟",
+          "a": "ليس افتراضيًا، فالصفحات صور. استخدم OCR على نسخة عندما تحتاج إلى نص قابل للبحث أو التحديد."
+        },
+        {
+          "q": "هل ترفع أداة Word إلى PDF مستندي؟",
+          "a": "يتم التحويل المعتاد داخل علامة تبويب المتصفح، لذلك لا يُرفع المستند عادةً إلى خادم."
+        }
+      ]
+    },
+    "bn": {
+      "title": "Microsoft Word ছাড়া Word থেকে PDF বানান",
+      "metaTitle": "Microsoft Word ছাড়া Word থেকে PDF",
+      "metaDescription": "বিনামূল্যে DOCX থেকে PDF করুন, সাইনআপ বা ওয়াটারমার্ক নেই। ব্যক্তিগত রূপান্তর ব্রাউজারেই হয়। সহজে ডাউনলোডের সুবিধাসহ টুলটি কাজ করে।",
+      "keyword": "Microsoft Word ছাড়া Word থেকে PDF বানান",
+      "secondaryKeywords": [
+        "Word থেকে PDF বিনামূল্যে",
+        "DOCX থেকে PDF",
+        "Word নথি রূপান্তর",
+        "ব্যক্তিগত PDF কনভার্টার"
+      ],
+      "answer": "Microsoft Word ছাড়া DOCX থেকে PDF করতে ব্রাউজার কনভার্টার খুলুন, PDF তৈরি করুন এবং প্রতিটি পৃষ্ঠা যাচাই করুন। PrintxPDF-এর সাধারণ রূপান্তর ডিভাইসেই হয়, সাইনআপ বা ওয়াটারমার্ক ছাড়া।",
+      "ctaLabel": "Word থেকে PDF করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "Microsoft Word ইনস্টল না থাকলেও DOCX ফাইল থেকে PDF বানাতে পারেন। DOCX সমর্থন করে এমন ব্রাউজার কনভার্টার ব্যবহার করুন, ফলাফল ডাউনলোড করুন এবং পাঠানোর আগে বিন্যাস দেখুন। পুরোনো DOC, ODT ও RTF ফাইল আগে DOCX হিসেবে সংরক্ষণ করতে হবে। পরে সম্পাদনা লাগতে পারে বলে মূল নথিটি রেখে দিন।"
+        },
+        {
+          "t": "h2",
+          "x": "Word নথি PDF-এ রূপান্তরের উপায়"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "নথিটি DOCX হিসেবে সংরক্ষণ করুন",
+              "x": "একটি .docx ফাইল নিন। পুরোনো .doc, ODT বা RTF ফাইল টেক্সট এডিটরে খুলে DOCX হিসেবে সংরক্ষণ করুন।"
+            },
+            {
+              "h": "Word থেকে PDF খুলুন",
+              "x": "আধুনিক ব্রাউজারে [Word থেকে PDF](/tools/word-to-pdf)-এ নথি যোগ করুন।"
+            },
+            {
+              "h": "ব্রাউজারেই রূপান্তর করুন",
+              "x": "টুল চালিয়ে নতুন A4 PDF ডাউনলোড করুন। সাধারণ রূপান্তরে নথি আপনার ডিভাইসেই প্রসেস হয়।"
+            },
+            {
+              "h": "সব পৃষ্ঠা পরীক্ষা করুন",
+              "x": "শিরোনাম, টেবিল, ছবি, পৃষ্ঠা বিরতি ও প্রান্তের কাছের লেখা দেখুন।"
+            },
+            {
+              "h": "প্রয়োজন হলে অনুসন্ধান যোগ করুন",
+              "x": "পৃষ্ঠা ছবির মতো থাকে। লেখা খোঁজা বা নির্বাচন করতে কপিতে [PDF OCR](/tools/ocr-pdf) চালান।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "আপনার ট্যাবে DOCX থেকে PDF করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।"
+        },
+        {
+          "t": "h2",
+          "x": "Word থেকে PDF কী রাখে ও বদলায়"
+        },
+        {
+          "t": "table",
+          "head": [
+            "নথির উপাদান",
+            "সম্ভাব্য ফল",
+            "রূপান্তরের পর দেখুন"
+          ],
+          "rows": [
+            [
+              "শিরোনাম ও অনুচ্ছেদ",
+              "স্থির পৃষ্ঠায় বিন্যস্ত",
+              "পৃষ্ঠা বিরতি বদলেছে কি না দেখুন।"
+            ],
+            [
+              "টেবিল ও ছবি",
+              "সমর্থিত হলে যুক্ত হয়",
+              "কাটা অংশ ও কলামের প্রস্থ দেখুন।"
+            ],
+            [
+              "বিশেষ ফন্ট ও জটিল বিন্যাস",
+              "সরল হতে পারে",
+              "আইনি বা ব্র্যান্ড নথি পর্যালোচনা করুন।"
+            ],
+            [
+              "লেখা খোঁজা ও কপি",
+              "ডিফল্টভাবে থাকে না",
+              "খুঁজতে OCR চালান।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "PDF যাচাই করা জরুরি কেন"
+        },
+        {
+          "t": "p",
+          "x": "DOCX খোলার সময় বিন্যাস আবার হিসাব করে। ব্রাউজার কনভার্টার সমর্থিত স্টাইল দিয়ে A4 পৃষ্ঠা সাজায়, তাই লাইন সরে যেতে পারে, ফন্ট বদলাতে পারে বা টেবিল অন্য জায়গায় ভাঙতে পারে। এটি স্বাভাবিক রূপান্তর, উৎস সম্পাদনার প্রমাণ নয়। পাঠানোর আগে চার্ট, কলাম, হেডার, ফুটার, টেক্সট বক্স বা স্বাক্ষর থাকা পৃষ্ঠা তুলনা করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "সংবেদনশীল খসড়ার স্থানীয় রূপান্তর"
+        },
+        {
+          "t": "p",
+          "x": "জীবনবৃত্তান্ত, চিঠি, প্রস্তাব ও গ্রাহকের নথিতে ব্যক্তিগত তথ্য থাকতে পারে। PrintxPDF এই Word থেকে PDF কাজ ব্রাউজারে করে এবং DOCX নিয়মিত কোনো কনভার্সন সার্ভারে পাঠায় না। এতে অপ্রয়োজনীয় স্থানান্তর কমে। তবু ডাউনলোড করা PDF নিরাপদে রাখুন এবং শেয়ারের আগে প্রাপক যাচাই করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "প্রয়োজন থাকলেই OCR ব্যবহার করুন"
+        },
+        {
+          "t": "p",
+          "x": "রূপান্তরে পৃষ্ঠাগুলো ছবি হিসেবে তৈরি হয়। চেহারা ঠিক থাকে, কিন্তু লেখা নির্বাচন বা অনুসন্ধান করা যায় না। অনুসন্ধানযোগ্য কপির জন্য [PDF OCR](/tools/ocr-pdf) টেক্সট স্তর যোগ করতে পারে। OCR ভুল করতে পারে, তাই নাম, তারিখ, সংখ্যা ও লিংক মিলিয়ে দেখুন। পরে সম্পাদনার দরকার হতে পারে বলে DOCX মূল ফাইলটি রাখুন।"
+        },
+        {
+          "t": "h2",
+          "x": "চূড়ান্ত কপি প্রস্তুত করুন"
+        },
+        {
+          "t": "p",
+          "x": "বোঝা যায় এমন ফাইলের নাম দিন এবং সাধারণ রিডারে PDF খুলে দেখুন। যাচাই করা কয়েকটি নথি জুড়তে [PDF মার্জ](/tools/merge-pdf) দিয়ে আলাদা প্যাকেট বানান। বিতরণ কপিতে নথির বৈশিষ্ট্য থাকা উচিত না হলে নীতি অনুযায়ী [PDF মেটাডেটা সরান](/tools/remove-metadata)। এই ধাপগুলো সতর্ক পর্যালোচনার বিকল্প নয়। জমা দেওয়ার আগে ডাউনলোড খুলছে কি না নিশ্চিত করুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Word থেকে PDF বিনামূল্যে করা যায়?",
+          "a": "হ্যাঁ। DOCX যোগ করুন, ব্রাউজার কনভার্টার চালান এবং PDF ডাউনলোড করুন। মূল টুলে সাইনআপ লাগে না বা ওয়াটারমার্ক থাকে না।"
+        },
+        {
+          "q": "Word থেকে PDF কি DOC ফাইল সমর্থন করে?",
+          "a": "না। রূপান্তরের আগে পুরোনো DOC ফাইল ওয়ার্ড প্রসেসরে DOCX হিসেবে সংরক্ষণ করুন।"
+        },
+        {
+          "q": "তৈরি PDF-এ লেখা খোঁজা যাবে?",
+          "a": "ডিফল্টভাবে নয়, কারণ পৃষ্ঠাগুলো ছবি। খোঁজা বা নির্বাচনযোগ্য লেখা দরকার হলে কপিতে OCR চালান।"
+        },
+        {
+          "q": "Word থেকে PDF কি আমার নথি আপলোড করে?",
+          "a": "সাধারণ রূপান্তর ব্রাউজার ট্যাবের ভেতর চলে, তাই নথি নিয়মিত সার্ভারে আপলোড হয় না।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Chuyển Word sang PDF không cần Microsoft Word",
+      "metaTitle": "Chuyển Word sang PDF không cần Microsoft Word",
+      "metaDescription": "Chuyển DOCX sang PDF miễn phí, không đăng ký hay dấu mờ. Xử lý riêng tư ngay trong trình duyệt. Công cụ chạy trong trình duyệt và hỗ trợ tải tệp dễ dàng.",
+      "keyword": "chuyển Word sang PDF không cần Microsoft Word",
+      "secondaryKeywords": [
+        "Word sang PDF miễn phí",
+        "chuyển DOCX sang PDF",
+        "chuyển tài liệu Word",
+        "công cụ PDF riêng tư"
+      ],
+      "answer": "Để chuyển DOCX sang PDF mà không cần Microsoft Word, hãy mở công cụ chuyển đổi trong trình duyệt, tạo PDF rồi kiểm tra từng trang. PrintxPDF xử lý cục bộ cho tác vụ tiêu chuẩn, không cần đăng ký hay dấu mờ.",
+      "ctaLabel": "Chuyển Word sang PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Bạn có thể tạo PDF từ tệp DOCX ngay cả khi máy không cài Microsoft Word. Hãy dùng công cụ hỗ trợ DOCX, tải kết quả xuống và kiểm tra bố cục trước khi gửi. Các tệp DOC, ODT và RTF cũ cần được lưu thành DOCX trước. Giữ lại tài liệu gốc nếu sau này bạn cần chỉnh sửa nội dung."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển tài liệu Word sang PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Lưu tài liệu thành DOCX",
+              "x": "Dùng tệp .docx. Nếu có tệp .doc, ODT hoặc RTF cũ, hãy mở bằng trình soạn thảo văn bản và lưu thành DOCX."
+            },
+            {
+              "h": "Mở Word sang PDF",
+              "x": "Thêm tài liệu vào [Word sang PDF](/tools/word-to-pdf) bằng trình duyệt hiện đại."
+            },
+            {
+              "h": "Chuyển đổi trong trình duyệt",
+              "x": "Chạy công cụ và tải PDF A4 mới xuống. Với quy trình tiêu chuẩn, tài liệu được xử lý trên thiết bị của bạn."
+            },
+            {
+              "h": "Kiểm tra mọi trang",
+              "x": "Xem tiêu đề, bảng, ảnh, chỗ ngắt trang và chữ gần mép giấy."
+            },
+            {
+              "h": "Thêm khả năng tìm kiếm nếu cần",
+              "x": "Các trang là hình ảnh. Dùng [OCR PDF](/tools/ocr-pdf) trên bản sao nếu cần tìm hoặc chọn văn bản."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Chuyển DOCX sang PDF ngay trong thẻ. Miễn phí, không đăng ký, không dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Word sang PDF giữ lại và thay đổi điều gì"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Thành phần tài liệu",
+            "Kết quả dự kiến",
+            "Điều cần kiểm tra"
+          ],
+          "rows": [
+            [
+              "Tiêu đề và đoạn văn",
+              "Được dàn trên trang cố định",
+              "Tìm chỗ ngắt trang thay đổi."
+            ],
+            [
+              "Bảng và ảnh",
+              "Được đưa vào nếu tương thích",
+              "Kiểm tra phần bị cắt và độ rộng cột."
+            ],
+            [
+              "Phông chữ và bố cục phức tạp",
+              "Có thể được đơn giản hóa",
+              "Xem kỹ tài liệu pháp lý hoặc nhận diện thương hiệu."
+            ],
+            [
+              "Tìm kiếm và sao chép chữ",
+              "Mặc định không có",
+              "Chạy OCR nếu cần tìm kiếm."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao cần kiểm tra PDF"
+        },
+        {
+          "t": "p",
+          "x": "DOCX tính lại bố cục mỗi lần mở. Công cụ trong trình duyệt dàn trang A4 bằng các kiểu được hỗ trợ, nên một dòng có thể dịch chuyển, phông chữ đổi hoặc bảng ngắt ở vị trí khác. Đây là hành vi chuyển đổi bình thường, không có nghĩa tệp nguồn đã bị sửa. Hãy mở PDF và so sánh trang có biểu đồ, cột, đầu trang, chân trang, hộp chữ hoặc chữ ký trước khi gửi."
+        },
+        {
+          "t": "h2",
+          "x": "Chuyển đổi cục bộ cho bản nháp nhạy cảm"
+        },
+        {
+          "t": "p",
+          "x": "Hồ sơ xin việc, thư, đề xuất và tài liệu khách hàng có thể chứa thông tin riêng tư. PrintxPDF xử lý quy trình Word sang PDF này trong trình duyệt, không thường xuyên tải DOCX lên máy chủ chuyển đổi. Cách này giảm một lần truyền dữ liệu không cần thiết. Dù vậy, hãy lưu PDF tải xuống ở nơi an toàn và xác nhận người nhận trước khi chia sẻ."
+        },
+        {
+          "t": "h2",
+          "x": "Chỉ dùng OCR khi thật sự cần"
+        },
+        {
+          "t": "p",
+          "x": "Quá trình chuyển đổi tạo các trang dưới dạng hình ảnh. Cách này giữ được vẻ ngoài nhưng chữ không thể chọn hoặc tìm kiếm. [OCR PDF](/tools/ocr-pdf) có thể thêm lớp chữ vào bản làm việc có thể tìm kiếm. Hãy kiểm tra tên, ngày, số và liên kết vì nhận dạng có thể sai. Giữ DOCX gốc nếu bạn có thể cần sửa nội dung sau này."
+        },
+        {
+          "t": "h2",
+          "x": "Chuẩn bị bản giao cuối cùng"
+        },
+        {
+          "t": "p",
+          "x": "Đặt tên tệp rõ ràng và mở PDF bằng trình đọc thông thường. Để gom các tài liệu đã kiểm tra, [Gộp PDF](/tools/merge-pdf) tạo một bộ riêng. Nếu không muốn thuộc tính tài liệu đi kèm bản phân phối, hãy dùng [Xóa siêu dữ liệu PDF](/tools/remove-metadata) theo chính sách của bạn. Đây là các bước riêng, không thay thế việc rà soát cẩn thận. Xác nhận tệp tải xuống mở được trước khi nộp."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Có thể chuyển Word sang PDF miễn phí không?",
+          "a": "Có. Thêm DOCX, chạy công cụ trong trình duyệt và tải PDF xuống. Công cụ cơ bản không cần đăng ký và không thêm dấu mờ."
+        },
+        {
+          "q": "Word sang PDF có hỗ trợ tệp DOC không?",
+          "a": "Không. Hãy lưu tệp DOC cũ thành DOCX bằng phần mềm xử lý văn bản trước khi chuyển đổi."
+        },
+        {
+          "q": "PDF sau khi chuyển có tìm kiếm được không?",
+          "a": "Mặc định là không, vì các trang là hình ảnh. Dùng OCR trên bản sao nếu cần chữ có thể tìm hoặc chọn."
+        },
+        {
+          "q": "Word sang PDF có tải tài liệu của tôi lên không?",
+          "a": "Quy trình tiêu chuẩn chạy trong thẻ trình duyệt, vì vậy tài liệu không được tải thường xuyên lên máy chủ."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "无需 Microsoft Word 将 Word 转为 PDF",
+      "metaTitle": "无需 Microsoft Word 将 Word 转为 PDF",
+      "metaDescription": "免费将 DOCX 转为 PDF，无需注册、无水印。在浏览器中私密处理，无需上传文档。在浏览器中完成转换，下载文件也很方便。",
+      "keyword": "无需 Microsoft Word 将 Word 转为 PDF",
+      "secondaryKeywords": [
+        "免费 Word 转 PDF",
+        "DOCX 转 PDF",
+        "转换 Word 文档",
+        "私密 PDF 转换器"
+      ],
+      "answer": "无需 Microsoft Word，将 DOCX 转为 PDF 的方法是打开浏览器转换工具、生成 PDF 并检查每一页。PrintxPDF 的标准转换在本地完成，无需注册或水印。",
+      "ctaLabel": "将 Word 转为 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "即使没有安装 Microsoft Word，也能从 DOCX 文件生成 PDF。请选择支持 DOCX 的浏览器转换工具，下载结果，并在发送前检查版式。较旧的 DOC、ODT 和 RTF 文件需要先另存为 DOCX。如果之后还要修改内容，请保留原始文档。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将 Word 文档转换为 PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "将文档另存为 DOCX",
+              "x": "使用 .docx 文件。旧版 .doc、ODT 或 RTF 文件需要先在文字处理软件中打开并另存为 DOCX。"
+            },
+            {
+              "h": "打开 Word 转 PDF",
+              "x": "在较新的浏览器中，将文档添加到 [Word 转 PDF](/tools/word-to-pdf)。"
+            },
+            {
+              "h": "在浏览器中转换",
+              "x": "运行工具并下载新的 A4 PDF。标准转换会在你的设备上处理文档。"
+            },
+            {
+              "h": "检查每一页",
+              "x": "查看标题、表格、图片、分页符以及靠近页面边缘的文字。"
+            },
+            {
+              "h": "需要搜索时再添加 OCR",
+              "x": "转换后的页面是图像。如需搜索或选择文字，请对副本使用 [PDF OCR](/tools/ocr-pdf)。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "在浏览器标签页中将 DOCX 转为 PDF。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "Word 转 PDF 会保留和改变什么"
+        },
+        {
+          "t": "table",
+          "head": [
+            "文档元素",
+            "预期结果",
+            "转换后检查"
+          ],
+          "rows": [
+            [
+              "标题和段落",
+              "排布到固定页面",
+              "检查分页是否变化。"
+            ],
+            [
+              "表格和图片",
+              "兼容时会包含",
+              "检查裁切和列宽。"
+            ],
+            [
+              "特殊字体和复杂布局",
+              "可能会简化",
+              "仔细检查法律或品牌文件。"
+            ],
+            [
+              "搜索和复制文字",
+              "默认不包含",
+              "需要搜索时运行 OCR。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "为什么要检查 PDF"
+        },
+        {
+          "t": "p",
+          "x": "DOCX 每次打开时都会重新计算版式。浏览器转换工具使用受支持的样式排版为 A4 页面，因此某行可能移动、字体可能变化，表格也可能在不同位置分页。这属于正常转换现象，并不表示源文件被修改。发送前请打开 PDF，重点比较含图表、多栏、页眉页脚、文本框或签名的页面。"
+        },
+        {
+          "t": "h2",
+          "x": "敏感草稿可在本地转换"
+        },
+        {
+          "t": "p",
+          "x": "简历、信函、提案和客户文件可能含有隐私信息。PrintxPDF 在浏览器中处理 Word 转 PDF 流程，通常不会将 DOCX 上传到转换服务器。这能减少不必要的文件传输，但仍应安全保存下载的 PDF，并在分享前确认收件人。"
+        },
+        {
+          "t": "h2",
+          "x": "确有需要时再使用 OCR"
+        },
+        {
+          "t": "p",
+          "x": "转换结果将页面生成为图像，能保留视觉外观，但无法选择或搜索文字。如需可搜索的工作副本，[PDF OCR](/tools/ocr-pdf) 可以添加文字层。识别可能出错，因此请核对姓名、日期、数字和链接。如果以后还要修改内容，请保留原始 DOCX。"
+        },
+        {
+          "t": "h2",
+          "x": "准备最终交付副本"
+        },
+        {
+          "t": "p",
+          "x": "使用清晰的文件名，并在常规 PDF 阅读器中打开文件。若要整理已检查的文档，可用[合并 PDF](/tools/merge-pdf)创建单独的文件包。若分发副本不应携带文档属性，可按你的规则使用[删除 PDF 元数据](/tools/remove-metadata)。这些步骤不能替代仔细检查。提交前确认下载的文件能够打开。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可以免费将 Word 转为 PDF 吗？",
+          "a": "可以。添加 DOCX，在浏览器中运行转换工具并下载 PDF。核心工具无需注册，也不会添加水印。"
+        },
+        {
+          "q": "Word 转 PDF 支持 DOC 文件吗？",
+          "a": "不支持。请先在文字处理软件中将旧版 DOC 文件另存为 DOCX。"
+        },
+        {
+          "q": "转换后的 PDF 可以搜索文字吗？",
+          "a": "默认不可以，因为页面是图像。需要可搜索或可选择的文字时，请对副本运行 OCR。"
+        },
+        {
+          "q": "Word 转 PDF 会上传我的文档吗？",
+          "a": "标准转换在浏览器标签页中运行，因此通常不会将文档上传到服务器。"
+        }
+      ]
+    }
+  }
+}
