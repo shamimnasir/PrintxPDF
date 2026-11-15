@@ -8362,6 +8362,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "page-number-pdf-exhibits",
+        "slug": "page-number-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "page-numbers",
+        "title": "Cómo numerar las páginas de anexos PDF",
+        "metaTitle": "Cómo numerar las páginas de anexos PDF",
+        "metaDescription": "Añade una secuencia de páginas a un paquete de anexos PDF y deja la portada sin número. Gratis en el navegador, sin cuenta.",
+        "answer": "Para numerar anexos PDF, combina primero los archivos en el orden correcto y luego aplica una secuencia visible al documento completo. Puedes dejar la portada en blanco y elegir posición y estilo. Revisa que las referencias y reglas de presentación coincidan con la copia final.",
+        "sections": [
+          {
+            "heading": "Numera un paquete de anexos en cuatro pasos",
+            "paragraphs": [
+              "Para numerar anexos PDF, combina primero los archivos en el orden correcto y luego aplica una secuencia visible al documento completo. Puedes dejar la portada en blanco y elegir posición y estilo. Revisa que las referencias y reglas de presentación coincidan con la copia final."
+            ],
+            "steps": [
+              {
+                "heading": "Combina los anexos",
+                "text": "Ordena y une los archivos con [Combinar PDF](/tools/merge-pdf). Conserva una copia de cada original y confirma que el paquete está en el orden de presentación previsto."
+              },
+              {
+                "heading": "Abre Números de página",
+                "text": "Carga el PDF combinado en [Números de página](/tools/page-numbers). Elige dónde se imprimirá la numeración y el estilo, como 1, 1 / 12 o Página 1."
+              },
+              {
+                "heading": "Configura portada y primer número",
+                "text": "Deja sin numerar la primera página para mantener limpia la portada. Define el número inicial según las instrucciones de presentación; el total del estilo 1 / 12 considera las páginas numeradas."
+              },
+              {
+                "heading": "Descarga y revisa",
+                "text": "Guarda el PDF y comprueba portada, anexos, números, pies existentes y la última página. Confirma que la secuencia coincide con el índice antes de distribuir o presentar."
+              }
+            ]
+          },
+          {
+            "heading": "Qué debes comprobar en los números",
+            "paragraphs": [
+              "Los números de página se imprimen en el contenido visible, en la posición que eliges. Esto ayuda a citar una hoja, ordenar impresiones y detectar faltantes. No cambia las etiquetas internas que algunos lectores muestran en el cuadro de página y no añade numeración romana.",
+              "En un paquete combinado, los archivos pueden tener números reiniciados o distintos. Aplicar una numeración después de combinar crea una secuencia común para todo el paquete. Si una entidad exige que cada anexo empiece en un número concreto, consulta esa regla y ajusta el número inicial o prepara las partes por separado.",
+              "Evita cubrir texto del pie, sellos o firmas: elige otra posición o un tamaño menor y revisa páginas con contenido cerca del borde. Los números se convierten en parte visible de la página, así que conserva el original sin numerar por si necesitas otra secuencia.",
+              "La numeración ocurre en tu navegador y la salida es una copia. Para una tabla con lista de anexos, puedes extraer y ordenar páginas antes. Si después vas a compartir el paquete, revisa también sus propiedades con [Eliminar metadatos PDF](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Numera anexos gratis en tu navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿Cómo numero un paquete de anexos PDF?",
+            "a": "Combina primero los anexos en el orden correcto, abre Números de página, elige posición y estilo, configura el primer número y descarga la copia. Revisa todo el paquete y su índice para verificar la secuencia antes de presentarlo."
+          },
+          {
+            "q": "¿Puedo dejar la portada sin número?",
+            "a": "Sí. Configura que se omita la primera página. Si también quieres omitir un índice, deja sin numerar las dos primeras. La numeración visible empieza en la página siguiente con el valor que elijas."
+          },
+          {
+            "q": "¿El total incluye las páginas omitidas?",
+            "a": "No. En el estilo número/total, el total cuenta solo las páginas que reciben un número y se ajusta al número inicial. Revisa las reglas de entrega si requieren una convención distinta."
+          },
+          {
+            "q": "¿La numeración modifica las etiquetas internas del PDF?",
+            "a": "No. La herramienta imprime números visibles sobre la página y deja intactas las etiquetas internas que muestra el lector. Tampoco cambia el contenido original: genera un archivo nuevo para revisar."
+          }
+        ],
+        "keywords": [
+          "cómo numerar las páginas de anexos pdf",
+          "number PDF exhibits",
+          "add page numbers to PDF"
+        ],
+        "relatedTools": [
+          "page-numbers",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -16708,6 +16789,87 @@
         ],
         "relatedTools": [
           "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "page-number-pdf-exhibits",
+        "slug": "page-number-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "page-numbers",
+        "title": "Como numerar as páginas de anexos em PDF",
+        "metaTitle": "Como numerar as páginas de anexos em PDF",
+        "metaDescription": "Adicione uma sequência de páginas a um pacote de anexos PDF e deixe a capa sem número. Grátis no navegador, sem conta.",
+        "answer": "Para numerar anexos em PDF, combine primeiro os arquivos na ordem correta e depois aplique uma sequência visível ao documento inteiro. Você pode deixar a capa sem número e escolher posição e estilo. Confira se as referências e as regras de protocolo correspondem à cópia final.",
+        "sections": [
+          {
+            "heading": "Numere um pacote de anexos em quatro etapas",
+            "paragraphs": [
+              "Para numerar anexos em PDF, combine primeiro os arquivos na ordem correta e depois aplique uma sequência visível ao documento inteiro. Você pode deixar a capa sem número e escolher posição e estilo. Confira se as referências e as regras de protocolo correspondem à cópia final."
+            ],
+            "steps": [
+              {
+                "heading": "Combine os anexos",
+                "text": "Organize e una os arquivos com [Combinar PDF](/tools/merge-pdf). Guarde cópias dos originais e confirme que o pacote está na ordem de protocolo prevista."
+              },
+              {
+                "heading": "Abra Números de página",
+                "text": "Carregue o PDF combinado em [Números de página](/tools/page-numbers). Escolha onde imprimir e o estilo, como 1, 1 / 12 ou Página 1."
+              },
+              {
+                "heading": "Configure a capa e o primeiro número",
+                "text": "Deixe a primeira página sem numeração para manter a capa limpa. Defina o número inicial conforme as instruções; no estilo 1 / 12, o total considera apenas páginas numeradas."
+              },
+              {
+                "heading": "Baixe e confira",
+                "text": "Salve o PDF e revise capa, anexos, números, rodapés existentes e última página. Confirme se a sequência corresponde ao índice antes de enviar ou protocolar."
+              }
+            ]
+          },
+          {
+            "heading": "O que conferir na numeração",
+            "paragraphs": [
+              "Os números de página são impressos no conteúdo visível, na posição escolhida. Isso ajuda a citar uma folha, organizar impressões e identificar páginas faltantes. A ferramenta não altera os rótulos internos exibidos no campo de página de alguns leitores nem adiciona numeração romana.",
+              "Em um pacote combinado, arquivos diferentes podem ter a numeração reiniciada. Numerar depois da combinação cria uma sequência única para todo o pacote. Se uma entidade exigir que cada anexo comece por um número específico, confira a regra e ajuste o início ou prepare as partes separadamente.",
+              "Evite cobrir rodapés, carimbos ou assinaturas: escolha outra posição ou um tamanho menor e revise páginas com conteúdo perto das bordas. Os números passam a fazer parte do visual da página, portanto mantenha o original sem numeração para outra sequência.",
+              "A numeração é aplicada no navegador e o resultado é outra cópia. Se necessário, extraia e organize páginas antes. Antes de compartilhar o pacote, confira as propriedades com [Remover metadados do PDF](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Numere anexos grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "Como numerar um pacote de anexos PDF?",
+            "a": "Combine primeiro os anexos na ordem correta, abra Números de página, escolha posição e estilo, configure o primeiro número e baixe uma cópia. Revise o pacote e o índice para confirmar a sequência antes de protocolar."
+          },
+          {
+            "q": "Posso deixar a capa sem número?",
+            "a": "Sim. Configure para ignorar a primeira página. Para ignorar também um sumário, deixe as duas primeiras páginas sem número. A numeração visível começa na página seguinte com o valor que você definir."
+          },
+          {
+            "q": "O total inclui as páginas sem número?",
+            "a": "Não. No estilo número/total, o total conta apenas as páginas numeradas e considera o número inicial. Confira as regras de envio se exigirem outra convenção."
+          },
+          {
+            "q": "A numeração altera os rótulos internos do PDF?",
+            "a": "Não. A ferramenta imprime números visíveis na página e preserva os rótulos internos exibidos pelo leitor. Também mantém o original intacto e cria um arquivo novo para revisão."
+          }
+        ],
+        "keywords": [
+          "como numerar as páginas de anexos em pdf",
+          "number PDF exhibits",
+          "add page numbers to PDF"
+        ],
+        "relatedTools": [
+          "page-numbers",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -25074,6 +25236,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "page-number-pdf-exhibits",
+        "slug": "page-number-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "page-numbers",
+        "title": "PDF परिशिष्टों के पेज नंबर कैसे डालें",
+        "metaTitle": "PDF परिशिष्टों के पेज नंबर कैसे डालें",
+        "metaDescription": "PDF परिशिष्ट पैकेट में क्रमवार पेज नंबर जोड़ें और कवर को बिना नंबर रखें। ब्राउज़र में मुफ्त, बिना खाते के।",
+        "answer": "PDF परिशिष्टों को नंबर देने के लिए पहले फ़ाइलों को सही क्रम में जोड़ें, फिर पूरे दस्तावेज़ पर एक दृश्य क्रम लागू करें। कवर को बिना नंबर छोड़कर नंबर की जगह और शैली चुन सकते हैं। साझा या जमा करने से पहले अंतिम कॉपी और सूची में क्रम मिलाएं।",
+        "sections": [
+          {
+            "heading": "चार चरणों में परिशिष्ट पैकेट नंबर करें",
+            "paragraphs": [
+              "PDF परिशिष्टों को नंबर देने के लिए पहले फ़ाइलों को सही क्रम में जोड़ें, फिर पूरे दस्तावेज़ पर एक दृश्य क्रम लागू करें। कवर को बिना नंबर छोड़कर नंबर की जगह और शैली चुन सकते हैं। साझा या जमा करने से पहले अंतिम कॉपी और सूची में क्रम मिलाएं।"
+            ],
+            "steps": [
+              {
+                "heading": "परिशिष्ट जोड़ें",
+                "text": "[Merge PDF](/tools/merge-pdf) से फ़ाइलों को सही क्रम में मिलाएं। हर मूल फ़ाइल की कॉपी रखें और पुष्टि करें कि पैकेट प्रस्तुति के क्रम में है।"
+              },
+              {
+                "heading": "Page Numbers खोलें",
+                "text": "संयुक्त PDF को [Page Numbers](/tools/page-numbers) में खोलें। नंबर की जगह और शैली, जैसे 1, 1 / 12 या Page 1 चुनें।"
+              },
+              {
+                "heading": "कवर और पहला नंबर तय करें",
+                "text": "कवर साफ़ रखने के लिए पहला पेज बिना नंबर छोड़ें। जमा निर्देशों के अनुसार आरंभिक संख्या रखें; 1 / 12 शैली में कुल केवल नंबर वाले पेज गिनता है।"
+              },
+              {
+                "heading": "डाउनलोड और जांचें",
+                "text": "PDF सेव करके कवर, परिशिष्ट, नंबर, मौजूदा फुटर और अंतिम पेज देखें। साझा या जमा करने से पहले सूची से क्रम मिलाएं।"
+              }
+            ]
+          },
+          {
+            "heading": "नंबरिंग में क्या जांचें",
+            "paragraphs": [
+              "पेज नंबर पेज पर दिखने वाले कंटेंट में चुनी जगह पर छपते हैं। इससे पेज का संदर्भ देना, प्रिंट सेट क्रम में रखना और गायब पेज पहचानना आसान होता है। यह कुछ रीडर के पेज बॉक्स में दिखने वाले छिपे लेबल नहीं बदलता और रोमन अंक नहीं जोड़ता।",
+              "जुड़े पैकेट में अलग-अलग फ़ाइलों की नंबरिंग दोबारा शुरू हो सकती है। जोड़ने के बाद नंबर लगाने से पूरे पैकेट में एक समान क्रम बनता है। अगर किसी संस्था को हर परिशिष्ट एक खास नंबर से शुरू चाहिए, नियम देखें और आरंभ संख्या समायोजित करें या हिस्सों को अलग तैयार करें।",
+              "मौजूदा फुटर, मुहर या हस्ताक्षर ढकने से बचें: दूसरी जगह या छोटा आकार चुनें और किनारे के पास सामग्री वाले पेज जांचें। नंबर पेज का हिस्सा बनते हैं, इसलिए दूसरी श्रृंखला की जरूरत पड़ने पर बिना नंबर वाला मूल रखें।",
+              "नंबर ब्राउज़र में जोड़े जाते हैं और आउटपुट नई कॉपी है। जरूरत हो तो पहले पेज निकालें और व्यवस्थित करें। पैकेट साझा करने से पहले [Remove PDF Metadata](/tools/remove-metadata) से इसकी प्रॉपर्टी भी जांचें।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में परिशिष्ट मुफ्त नंबर करें, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "PDF परिशिष्ट पैकेट को नंबर कैसे दूं?",
+            "a": "पहले परिशिष्ट सही क्रम में जोड़ें, Page Numbers खोलें, जगह और शैली चुनें, पहला नंबर सेट करें और कॉपी डाउनलोड करें। जमा करने से पहले पूरा पैकेट और सूची जांचें कि क्रम सही है।"
+          },
+          {
+            "q": "क्या कवर को बिना नंबर रख सकता हूं?",
+            "a": "हां। पहले पेज को छोड़ने का विकल्प चुनें। विषय-सूची भी छोड़नी हो तो पहले दो पेज खाली रखें। दिखने वाली नंबरिंग अगले पेज पर आपके चुने नंबर से शुरू होगी।"
+          },
+          {
+            "q": "क्या कुल में बिना नंबर वाले पेज भी आते हैं?",
+            "a": "नहीं। संख्या/कुल शैली में कुल केवल नंबर वाले पेज गिनता है और शुरुआती नंबर को ध्यान में रखता है। अगर जमा नियम अलग परंपरा बताते हैं तो उन्हें जांचें।"
+          },
+          {
+            "q": "क्या यह PDF के आंतरिक पेज लेबल बदलता है?",
+            "a": "नहीं। टूल पेज पर दिखने वाले नंबर जोड़ता है और रीडर द्वारा दिखाए गए आंतरिक लेबल नहीं बदलता। मूल फ़ाइल भी जस की तस रहती है; जांचने के लिए नई फ़ाइल बनती है।"
+          }
+        ],
+        "keywords": [
+          "pdf परिशिष्टों के पेज नंबर कैसे डालें",
+          "number PDF exhibits",
+          "add page numbers to PDF"
+        ],
+        "relatedTools": [
+          "page-numbers",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -33429,6 +33672,87 @@
         ],
         "relatedTools": [
           "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "page-number-pdf-exhibits",
+        "slug": "page-number-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "page-numbers",
+        "title": "كيفية ترقيم مرفقات PDF",
+        "metaTitle": "كيفية ترقيم مرفقات PDF",
+        "metaDescription": "أضف تسلسلاً للصفحات إلى حزمة مرفقات PDF واترك الغلاف بلا رقم. مجاناً في المتصفح، بلا حساب. رقّم ملفات الأدلة مجاناً في المتصفح، من دون تسجيل أو رفعها.",
+        "answer": "لترقيم مرفقات PDF، ادمج الملفات أولاً بالترتيب الصحيح ثم أضف تسلسلاً مرئياً إلى المستند كله. يمكنك ترك الغلاف دون رقم واختيار الموضع والنمط. تحقق من مطابقة النسخة النهائية للفهرس ومتطلبات التقديم قبل الإرسال.",
+        "sections": [
+          {
+            "heading": "ترقيم حزمة المرفقات في أربع خطوات",
+            "paragraphs": [
+              "لترقيم مرفقات PDF، ادمج الملفات أولاً بالترتيب الصحيح ثم أضف تسلسلاً مرئياً إلى المستند كله. يمكنك ترك الغلاف دون رقم واختيار الموضع والنمط. تحقق من مطابقة النسخة النهائية للفهرس ومتطلبات التقديم قبل الإرسال."
+            ],
+            "steps": [
+              {
+                "heading": "ادمج المرفقات",
+                "text": "رتّب الملفات واجمعها باستخدام [Merge PDF](/tools/merge-pdf). احتفظ بنسخة من كل أصل وتأكد أن الحزمة بالترتيب المطلوب للتقديم."
+              },
+              {
+                "heading": "افتح Page Numbers",
+                "text": "حمّل PDF المدمج في [Page Numbers](/tools/page-numbers). اختر موضع الرقم ونمطه، مثل 1 أو 1 / 12 أو Page 1."
+              },
+              {
+                "heading": "اضبط الغلاف والرقم الأول",
+                "text": "اترك الصفحة الأولى بلا ترقيم لإبقاء الغلاف نظيفاً. حدد رقم البداية وفق التعليمات؛ وفي نمط 1 / 12 يحتسب الإجمالي الصفحات المرقمة فقط."
+              },
+              {
+                "heading": "نزّل وراجع",
+                "text": "احفظ PDF وافحص الغلاف والمرفقات والأرقام والتذييلات الموجودة والصفحة الأخيرة. طابق التسلسل مع الفهرس قبل التوزيع أو التقديم."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي يجب التحقق منه في الترقيم",
+            "paragraphs": [
+              "تُطبع أرقام الصفحات على المحتوى الظاهر في الموضع الذي تختاره. يساعد ذلك في الإشارة إلى ورقة وإعادة ترتيب المطبوعات واكتشاف الصفحات الناقصة. لا تغيّر الأداة التسميات الداخلية التي يعرضها مربع الصفحة في بعض القارئات ولا تضيف أرقاماً رومانية.",
+              "قد تبدأ ملفات الحزمة المدمجة بترقيمها من جديد. يؤدي إضافة الأرقام بعد الدمج إلى إنشاء تسلسل موحد للحزمة كلها. إذا اشترطت جهة أن يبدأ كل مرفق برقم معين، فراجع القاعدة واضبط البداية أو جهّز الأجزاء بشكل منفصل.",
+              "تجنب تغطية التذييلات أو الأختام أو التوقيعات: اختر موضعاً آخر أو حجماً أصغر وافحص الصفحات التي تقترب محتوياتها من الحواف. تصبح الأرقام جزءاً مرئياً من الصفحة، لذا احتفظ بالأصل غير المرقم لتسلسل آخر.",
+              "تتم إضافة الأرقام في المتصفح ويكون الناتج نسخة منفصلة. استخرج الصفحات ورتبها أولاً عند الحاجة. قبل مشاركة الحزمة، راجع خصائصها باستخدام [Remove PDF Metadata](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "رقّم المرفقات مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "كيف أرقّم حزمة مرفقات PDF؟",
+            "a": "ادمج المرفقات بالترتيب الصحيح، وافتح Page Numbers، واختر الموضع والنمط ورقم البداية ثم نزّل نسخة. راجع الحزمة والفهرس للتأكد من التسلسل قبل تقديمها."
+          },
+          {
+            "q": "هل يمكن ترك الغلاف بلا رقم؟",
+            "a": "نعم. اضبط تخطي الصفحة الأولى. وإذا أردت تخطي الفهرس أيضاً، اترك أول صفحتين بلا ترقيم. يبدأ الرقم المرئي في الصفحة التالية بالقيمة التي تختارها."
+          },
+          {
+            "q": "هل يشمل الإجمالي الصفحات غير المرقمة؟",
+            "a": "لا. في نمط الرقم/الإجمالي، يحتسب الإجمالي الصفحات التي تحمل أرقاماً فقط مع مراعاة رقم البداية. راجع شروط التقديم إذا كانت تتطلب قاعدة مختلفة."
+          },
+          {
+            "q": "هل يغيّر الترقيم تسميات PDF الداخلية؟",
+            "a": "لا. تطبع الأداة أرقاماً مرئية على الصفحات وتترك التسميات الداخلية التي يعرضها القارئ كما هي. كما تترك الأصل دون تغيير وتنشئ نسخة جديدة للمراجعة."
+          }
+        ],
+        "keywords": [
+          "كيفية ترقيم مرفقات pdf",
+          "number PDF exhibits",
+          "add page numbers to PDF"
+        ],
+        "relatedTools": [
+          "page-numbers",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -41807,6 +42131,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "page-number-pdf-exhibits",
+        "slug": "page-number-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "page-numbers",
+        "title": "PDF প্রদর্শনীর পৃষ্ঠা নম্বর কীভাবে দেবেন",
+        "metaTitle": "PDF প্রদর্শনীর পৃষ্ঠা নম্বর কীভাবে দেবেন",
+        "metaDescription": "PDF প্রদর্শনী প্যাকেটে ধারাবাহিক পৃষ্ঠা নম্বর দিন এবং কভার নম্বরহীন রাখুন। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট ছাড়া।",
+        "answer": "PDF প্রদর্শনীতে নম্বর দিতে প্রথমে ফাইলগুলো সঠিক ক্রমে একত্র করুন, তারপর পুরো নথিতে একটি দৃশ্যমান ধারাবাহিক নম্বর দিন। কভার বাদ দিয়ে নম্বরের অবস্থান ও ধরন বেছে নিতে পারেন। জমা দেওয়ার আগে চূড়ান্ত কপি ও সূচির ক্রম মিলিয়ে দেখুন।",
+        "sections": [
+          {
+            "heading": "চার ধাপে প্রদর্শনী প্যাকেট নম্বর করুন",
+            "paragraphs": [
+              "PDF প্রদর্শনীতে নম্বর দিতে প্রথমে ফাইলগুলো সঠিক ক্রমে একত্র করুন, তারপর পুরো নথিতে একটি দৃশ্যমান ধারাবাহিক নম্বর দিন। কভার বাদ দিয়ে নম্বরের অবস্থান ও ধরন বেছে নিতে পারেন। জমা দেওয়ার আগে চূড়ান্ত কপি ও সূচির ক্রম মিলিয়ে দেখুন।"
+            ],
+            "steps": [
+              {
+                "heading": "প্রদর্শনী একত্র করুন",
+                "text": "[Merge PDF](/tools/merge-pdf) দিয়ে ফাইলগুলো সঠিক ক্রমে জুড়ুন। প্রতিটি মূল ফাইলের কপি রাখুন এবং প্যাকেট জমার ক্রমে আছে কি না নিশ্চিত করুন।"
+              },
+              {
+                "heading": "Page Numbers খুলুন",
+                "text": "একত্র PDF [Page Numbers](/tools/page-numbers)-এ দিন। নম্বর কোথায় থাকবে এবং ধরন, যেমন 1, 1 / 12 বা Page 1 বাছুন।"
+              },
+              {
+                "heading": "কভার ও প্রথম নম্বর ঠিক করুন",
+                "text": "কভার পরিষ্কার রাখতে প্রথম পৃষ্ঠা নম্বরহীন রাখুন। জমার নির্দেশ অনুযায়ী শুরু নম্বর দিন; 1 / 12 ধরনে মোট কেবল নম্বর পাওয়া পৃষ্ঠা গোনে।"
+              },
+              {
+                "heading": "ডাউনলোড করে পরীক্ষা করুন",
+                "text": "PDF সংরক্ষণ করে কভার, প্রদর্শনী, নম্বর, বিদ্যমান ফুটার ও শেষ পৃষ্ঠা দেখুন। বিতরণ বা জমার আগে সূচির সঙ্গে মিলিয়ে নিন।"
+              }
+            ]
+          },
+          {
+            "heading": "নম্বরিংয়ে কী যাচাই করবেন",
+            "paragraphs": [
+              "পৃষ্ঠা নম্বর নির্বাচিত স্থানে পৃষ্ঠার দৃশ্যমান অংশে ছাপা হয়। এতে পৃষ্ঠা উদ্ধৃত করা, প্রিন্টের স্তূপ ঠিক করা এবং হারানো পাতা ধরা সহজ হয়। কিছু রিডারের পেজ বাক্সে দেখা অভ্যন্তরীণ লেবেল বদলায় না এবং রোমান নম্বরও যোগ করে না।",
+              "একত্র প্যাকেটে প্রতিটি ফাইলের নম্বর নতুন করে শুরু হতে পারে। একত্র করার পর নম্বর দিলে পুরো প্যাকেটে এক ধারাবাহিকতা তৈরি হয়। কোনো প্রতিষ্ঠানের নিয়মে প্রতিটি প্রদর্শনী নির্দিষ্ট নম্বরে শুরু হলে সেই নিয়ম দেখুন এবং শুরু নম্বর ঠিক করুন বা অংশগুলো আলাদা প্রস্তুত করুন।",
+              "ফুটার, সিল বা স্বাক্ষরের ওপর নম্বর পড়া এড়ান: অন্য অবস্থান বা ছোট আকার নিন এবং ধার ঘেঁষা লেখা আছে এমন পৃষ্ঠা পরীক্ষা করুন। নম্বর পৃষ্ঠায় দৃশ্যমান অংশ হয়, তাই অন্য ক্রম দরকার হলে নম্বরহীন মূল কপি রাখুন।",
+              "নম্বর ব্রাউজারেই যোগ হয় এবং আউটপুট আলাদা কপি। দরকার হলে আগে পৃষ্ঠা বের করে সাজান। প্যাকেট শেয়ারের আগে [Remove PDF Metadata](/tools/remove-metadata) দিয়ে নথির বৈশিষ্ট্যও পরীক্ষা করুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে প্রদর্শনী নম্বর দিন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "PDF প্রদর্শনী প্যাকেটে কীভাবে নম্বর দেব?",
+            "a": "প্রথমে প্রদর্শনীগুলো সঠিক ক্রমে একত্র করুন, Page Numbers খুলুন, অবস্থান ও ধরন বাছুন, প্রথম নম্বর ঠিক করে কপি নামান। জমার আগে পুরো প্যাকেট ও সূচি দেখে ক্রম নিশ্চিত করুন।"
+          },
+          {
+            "q": "কভার নম্বরহীন রাখা যাবে?",
+            "a": "হ্যাঁ। প্রথম পৃষ্ঠা বাদ দেওয়ার সেটিং দিন। সূচিও বাদ দিতে চাইলে প্রথম দুই পৃষ্ঠা নম্বরহীন রাখুন। পরের পৃষ্ঠায় আপনার নির্বাচিত নম্বর থেকে দৃশ্যমান ক্রম শুরু হবে।"
+          },
+          {
+            "q": "মোট সংখ্যায় বাদ দেওয়া পৃষ্ঠা থাকে?",
+            "a": "না। সংখ্যা/মোট ধরনে মোট কেবল নম্বর পাওয়া পৃষ্ঠা গোনে এবং শুরু নম্বর ধরে হিসাব করে। জমার নিয়মে আলাদা পদ্ধতি থাকলে তা অনুসরণ করুন।"
+          },
+          {
+            "q": "এটি কি PDF-এর অভ্যন্তরীণ পেজ লেবেল বদলায়?",
+            "a": "না। টুল পৃষ্ঠায় দৃশ্যমান নম্বর ছাপে, কিন্তু রিডারে দেখা অভ্যন্তরীণ লেবেল অক্ষত রাখে। মূল ফাইলও বদলায় না; পর্যালোচনার জন্য নতুন কপি তৈরি হয়।"
+          }
+        ],
+        "keywords": [
+          "pdf প্রদর্শনীর পৃষ্ঠা নম্বর কীভাবে দেবেন",
+          "number PDF exhibits",
+          "add page numbers to PDF"
+        ],
+        "relatedTools": [
+          "page-numbers",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -50153,6 +50558,87 @@
         ],
         "relatedTools": [
           "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "page-number-pdf-exhibits",
+        "slug": "page-number-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "page-numbers",
+        "title": "Cách đánh số trang cho các tài liệu chứng cứ PDF",
+        "metaTitle": "Cách đánh số trang cho các tài liệu chứng cứ PDF",
+        "metaDescription": "Thêm số trang liên tục cho bộ tài liệu chứng cứ PDF và để bìa không có số. Miễn phí trong trình duyệt, không cần tài khoản.",
+        "answer": "Để đánh số bộ tài liệu chứng cứ PDF, trước tiên ghép các tệp đúng thứ tự rồi thêm dãy số hiển thị cho toàn bộ tài liệu. Bạn có thể bỏ số ở bìa và chọn vị trí, kiểu số. Trước khi nộp, hãy đối chiếu bản cuối với mục lục và quy định gửi hồ sơ.",
+        "sections": [
+          {
+            "heading": "Đánh số bộ tài liệu qua bốn bước",
+            "paragraphs": [
+              "Để đánh số bộ tài liệu chứng cứ PDF, trước tiên ghép các tệp đúng thứ tự rồi thêm dãy số hiển thị cho toàn bộ tài liệu. Bạn có thể bỏ số ở bìa và chọn vị trí, kiểu số. Trước khi nộp, hãy đối chiếu bản cuối với mục lục và quy định gửi hồ sơ."
+            ],
+            "steps": [
+              {
+                "heading": "Ghép tài liệu",
+                "text": "Dùng [Merge PDF](/tools/merge-pdf) để ghép tệp đúng thứ tự. Giữ bản sao của từng tệp gốc và xác nhận bộ hồ sơ theo đúng trình tự dự định."
+              },
+              {
+                "heading": "Mở Page Numbers",
+                "text": "Tải PDF đã ghép vào [Page Numbers](/tools/page-numbers). Chọn vị trí và kiểu số như 1, 1 / 12 hoặc Page 1."
+              },
+              {
+                "heading": "Cấu hình bìa và số đầu",
+                "text": "Bỏ số trang đầu để giữ bìa sạch. Đặt số bắt đầu theo yêu cầu nộp; ở kiểu 1 / 12, tổng chỉ tính các trang được đánh số."
+              },
+              {
+                "heading": "Tải xuống và kiểm tra",
+                "text": "Lưu PDF rồi kiểm tra bìa, tài liệu chứng cứ, số trang, chân trang hiện có và trang cuối. Đối chiếu thứ tự với mục lục trước khi gửi."
+              }
+            ]
+          },
+          {
+            "heading": "Cần kiểm tra gì về số trang",
+            "paragraphs": [
+              "Số trang được in lên phần nhìn thấy của trang tại vị trí bạn chọn. Việc này giúp trích dẫn một tờ, xếp lại bản in và nhận ra trang thiếu. Công cụ không thay đổi nhãn trang nội bộ mà một số trình đọc hiển thị trong ô trang, và không thêm số La Mã.",
+              "Trong bộ hồ sơ ghép, mỗi tệp có thể bắt đầu lại cách đánh số riêng. Đánh số sau khi ghép sẽ tạo một dãy thống nhất cho toàn bộ tài liệu. Nếu cơ quan yêu cầu mỗi phụ lục bắt đầu từ số cụ thể, hãy kiểm tra quy định và chỉnh số đầu hoặc chuẩn bị từng phần riêng.",
+              "Tránh che chân trang, con dấu hoặc chữ ký: chọn vị trí khác hoặc cỡ nhỏ hơn và kiểm tra trang có nội dung sát mép. Số trở thành phần hiển thị của trang, vì vậy hãy giữ bản gốc chưa đánh số nếu cần một dãy khác.",
+              "Việc đánh số diễn ra trong trình duyệt và tạo bản sao riêng. Nếu cần, hãy trích và sắp xếp trang trước. Trước khi chia sẻ bộ tài liệu, kiểm tra thuộc tính bằng [Remove PDF Metadata](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Đánh số tài liệu miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Làm sao đánh số bộ tài liệu chứng cứ PDF?",
+            "a": "Ghép tài liệu đúng thứ tự, mở Page Numbers, chọn vị trí và kiểu số, đặt số đầu rồi tải bản mới. Kiểm tra toàn bộ bộ hồ sơ và mục lục để xác nhận dãy số trước khi nộp."
+          },
+          {
+            "q": "Tôi có thể để bìa không có số không?",
+            "a": "Có. Chọn bỏ qua trang đầu. Nếu muốn bỏ cả mục lục, để hai trang đầu không đánh số. Số hiển thị bắt đầu ở trang tiếp theo theo giá trị bạn chọn."
+          },
+          {
+            "q": "Tổng số có tính các trang bị bỏ qua không?",
+            "a": "Không. Với kiểu số/tổng, tổng chỉ đếm các trang được đánh số và tính theo số bắt đầu. Hãy kiểm tra quy định nộp nếu họ yêu cầu quy ước khác."
+          },
+          {
+            "q": "Công cụ có thay nhãn trang nội bộ của PDF không?",
+            "a": "Không. Công cụ in số nhìn thấy lên trang và giữ nguyên nhãn nội bộ trong trình đọc. Tệp gốc cũng không đổi; công cụ tạo bản mới để bạn rà soát."
+          }
+        ],
+        "keywords": [
+          "cách đánh số trang cho các tài liệu chứng cứ pdf",
+          "number PDF exhibits",
+          "add page numbers to PDF"
+        ],
+        "relatedTools": [
+          "page-numbers",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -58518,6 +59004,87 @@
         ],
         "relatedTools": [
           "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "page-number-pdf-exhibits",
+        "slug": "page-number-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "page-numbers",
+        "title": "如何为 PDF 证据附件添加页码",
+        "metaTitle": "如何为 PDF 证据附件添加页码",
+        "metaDescription": "为 PDF 证据材料添加连续页码，并让封面保持无页码。浏览器内免费处理，无需账户。 可在浏览器中免费为附件编号，无需注册或上传文件。",
+        "answer": "要为 PDF 证据附件编号，请先按正确顺序合并文件，然后为整个文档添加可见的连续页码。你可以跳过封面并选择位置和样式。提交前请对照最终副本、目录和提交要求检查页码顺序。",
+        "sections": [
+          {
+            "heading": "四步为附件材料包编号",
+            "paragraphs": [
+              "要为 PDF 证据附件编号，请先按正确顺序合并文件，然后为整个文档添加可见的连续页码。你可以跳过封面并选择位置和样式。提交前请对照最终副本、目录和提交要求检查页码顺序。"
+            ],
+            "steps": [
+              {
+                "heading": "合并附件",
+                "text": "用 [Merge PDF](/tools/merge-pdf) 按顺序合并文件。保留每个原件的副本，并确认材料包顺序符合提交安排。"
+              },
+              {
+                "heading": "打开 Page Numbers",
+                "text": "将合并后的 PDF 加载到 [Page Numbers](/tools/page-numbers)。选择页码位置和样式，例如 1、1 / 12 或 Page 1。"
+              },
+              {
+                "heading": "设置封面和起始数字",
+                "text": "跳过第一页以保持封面干净。按提交说明设置起始数字；在 1 / 12 样式中，总数只计算实际编号的页面。"
+              },
+              {
+                "heading": "下载并检查",
+                "text": "保存 PDF，检查封面、附件、页码、原有页脚和最后一页。分发或提交前确认页码与目录一致。"
+              }
+            ]
+          },
+          {
+            "heading": "页码需要检查什么",
+            "paragraphs": [
+              "页码会打印在页面可见内容中，位置由你选择。这方便引用页面、整理打印件并发现缺页。工具不会更改部分阅读器页面框中显示的内部页标签，也不会添加罗马数字。",
+              "合并材料中的各个文件可能各自重新从头编号。合并后再添加页码，可以为整个材料包建立统一序列。如果机构要求每份附件从特定数字开始，请先核对规定，再调整起始数字或分别处理各部分。",
+              "避免覆盖页脚、印章或签名：可换一个位置或减小字号，并检查内容靠近边缘的页面。页码会成为页面可见内容的一部分；如需另一套编号，请保留未编号原件。",
+              "编号在浏览器中完成，并生成单独副本。必要时先提取并整理页面。分享材料包前，也可使用 [Remove PDF Metadata](/tools/remove-metadata) 检查文件属性。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费为附件编号，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "如何为 PDF 证据材料添加页码？",
+            "a": "先按顺序合并附件，打开 Page Numbers，选择位置和样式，设置起始数字并下载新副本。提交前检查整个材料包和目录，确认页码连续且顺序正确。"
+          },
+          {
+            "q": "可以让封面不显示页码吗？",
+            "a": "可以。设置跳过第一页即可。如果还要跳过目录，可让前两页不编号。可见页码会从下一页开始，并使用你设定的起始数字。"
+          },
+          {
+            "q": "总页数会计算被跳过的页面吗？",
+            "a": "不会。在数字/总数样式中，总数只计算带有页码的页面，并根据起始数字调整。若提交规则另有编号方式，请按要求设置。"
+          },
+          {
+            "q": "工具会更改 PDF 内部页标签吗？",
+            "a": "不会。工具只在页面上打印可见数字，阅读器显示的内部标签保持不变。原文件也不会被修改，工具会生成一份供你检查的新副本。"
+          }
+        ],
+        "keywords": [
+          "如何为 pdf 证据附件添加页码",
+          "number PDF exhibits",
+          "add page numbers to PDF"
+        ],
+        "relatedTools": [
+          "page-numbers",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
