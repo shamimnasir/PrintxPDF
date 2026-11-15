@@ -1,0 +1,973 @@
+{
+  "topic": "make-word-document-searchable-pdf",
+  "sourceCluster": "to-pdf",
+  "tool": "word-to-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo hacer que un documento Word sea un PDF con búsqueda",
+      "metaTitle": "PDF de Word con texto buscable",
+      "metaDescription": "Convierte DOCX a PDF y añade texto buscable con OCR. Gratis, sin registro ni marca de agua, con procesamiento privado en el navegador.",
+      "keyword": "hacer PDF de Word con búsqueda",
+      "secondaryKeywords": [
+        "Word a PDF gratis",
+        "DOCX a PDF buscable",
+        "OCR de documento Word",
+        "convertidor PDF privado"
+      ],
+      "answer": "Para hacer que un documento Word sea un PDF con búsqueda, convierte el DOCX y ejecuta OCR en el PDF basado en imágenes. Comprueba el texto reconocido y conserva el DOCX como archivo editable.",
+      "ctaLabel": "Crea un PDF de Word con búsqueda",
+      "body": [
+        {
+          "t": "p",
+          "x": "Un PDF de páginas fijas es cómodo para compartir, pero quizá también quieras buscar o seleccionar su texto. El flujo es de dos partes: convierte primero el DOCX y luego ejecuta OCR en el PDF resultante, porque este conversor crea páginas como imágenes. Revisa el texto reconocido antes de usarlo como registro o enviarlo. Conserva el DOCX para futuros cambios y el PDF para compartir el diseño final."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo convertir un documento Word a PDF con búsqueda"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarda como DOCX",
+              "x": "Usa un archivo .docx. Guarda los antiguos DOC, ODT y RTF como DOCX antes de empezar."
+            },
+            {
+              "h": "Abre Word a PDF",
+              "x": "Añade el documento a [Word a PDF](/tools/word-to-pdf) en un navegador actualizado."
+            },
+            {
+              "h": "Convierte y revisa el diseño",
+              "x": "Descarga el PDF A4. Comprueba títulos, tablas, imágenes, saltos de página y contenido cerca de los bordes."
+            },
+            {
+              "h": "Ejecuta OCR en una copia",
+              "x": "Añade el PDF a [OCR PDF](/tools/ocr-pdf) para crear una capa de texto que permita buscar o seleccionar palabras."
+            },
+            {
+              "h": "Verifica el resultado",
+              "x": "Busca nombres y números importantes. Compara cada resultado con el DOCX y conserva ambos archivos fuente."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Crea un PDF de Word con búsqueda. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Qué produce cada etapa"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Etapa",
+            "Resultado",
+            "Qué debes revisar"
+          ],
+          "rows": [
+            [
+              "Conversión DOCX a PDF",
+              "Páginas de imagen con formato fijo",
+              "Diseño, saltos y recortes."
+            ],
+            [
+              "OCR en el PDF",
+              "Capa de texto reconocida",
+              "Nombres, cifras, signos y enlaces."
+            ],
+            [
+              "DOCX original",
+              "Fuente editable",
+              "Conserva la versión para futuras correcciones."
+            ],
+            [
+              "PDF final",
+              "Documento compartible",
+              "Confirma que se abre y permite buscar."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Por qué el PDF convertido puede no ser buscable"
+        },
+        {
+          "t": "p",
+          "x": "La conversión estándar de Word a PDF de PrintxPDF representa cada página como una imagen. El aspecto visual se mantiene, pero el lector no tiene caracteres de texto que seleccionar o buscar. OCR analiza las imágenes y coloca texto reconocido en una capa adicional. No rehace el documento Word ni garantiza una transcripción perfecta; el diseño original y la capa de texto son cosas diferentes."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo comprobar que OCR funcionó"
+        },
+        {
+          "t": "p",
+          "x": "Abre el PDF en un lector y busca una palabra que aparezca claramente en una página. Si el lector la encuentra y permite seleccionar una frase, hay una capa de texto. Luego prueba nombres propios, fechas, decimales, códigos y letras acentuadas. Una página inclinada, texto pequeño, baja resolución o columnas puede confundir el reconocimiento. Corrige los errores antes de citar o compartir información."
+        },
+        {
+          "t": "h2",
+          "x": "Conversión local para documentos privados"
+        },
+        {
+          "t": "p",
+          "x": "Un currículum, una carta laboral, un presupuesto o un documento de cliente puede incluir datos personales. La conversión estándar de DOCX a PDF de PrintxPDF se procesa en la pestaña del navegador, sin subir rutinariamente el archivo a un servidor. El resultado OCR también requiere revisión antes de compartirlo. Guarda el PDF y el DOCX en un lugar seguro y confirma el destinatario."
+        },
+        {
+          "t": "h2",
+          "x": "Conserva la fuente editable y prepara la entrega"
+        },
+        {
+          "t": "p",
+          "x": "El PDF sirve para mantener un diseño de página estable; el DOCX sirve para modificar el contenido. Conserva los dos y evita sobrescribir el original con el archivo convertido. Si vas a enviar varios documentos, [Combinar PDF](/tools/merge-pdf) puede crear un paquete después de revisar cada archivo. Para retirar propiedades del archivo, usa [Eliminar metadatos](/tools/remove-metadata) según tu política. Ninguna herramienta sustituye la revisión visual y textual final."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo hago que un PDF de Word permita búsquedas?",
+          "a": "Convierte el DOCX a PDF y ejecuta OCR en el PDF basado en imágenes. Después, busca y selecciona texto de prueba para comprobarlo."
+        },
+        {
+          "q": "¿Word a PDF crea un PDF buscable?",
+          "a": "No de forma predeterminada. El flujo estándar crea páginas como imágenes. Añade OCR en una copia cuando necesites buscar o seleccionar texto."
+        },
+        {
+          "q": "¿Puedo hacerlo gratis y sin Microsoft Word?",
+          "a": "Sí. Convierte un DOCX en el navegador y ejecuta OCR en el PDF. El uso básico es gratis y no requiere cuenta ni añade marca de agua."
+        },
+        {
+          "q": "¿El OCR puede equivocarse?",
+          "a": "Sí. Revisa nombres, números, fechas y signos contra el DOCX original, sobre todo si el texto es pequeño o el diseño tiene varias columnas."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como tornar um documento Word um PDF pesquisável",
+      "metaTitle": "PDF pesquisável de Word",
+      "metaDescription": "Converta DOCX para PDF e adicione texto pesquisável com OCR. Grátis, sem cadastro ou marca-d’água, com processamento privado no navegador.",
+      "keyword": "tornar documento Word PDF pesquisável",
+      "secondaryKeywords": [
+        "Word para PDF grátis",
+        "DOCX para PDF pesquisável",
+        "OCR de documento Word",
+        "conversor PDF privado"
+      ],
+      "answer": "Para tornar um documento Word um PDF pesquisável, converta o DOCX e rode OCR no PDF baseado em imagens. Confira o texto reconhecido e mantenha o DOCX como arquivo editável.",
+      "ctaLabel": "Crie PDF pesquisável de Word",
+      "body": [
+        {
+          "t": "p",
+          "x": "Um PDF de páginas fixas é prático para compartilhar, mas talvez você também precise pesquisar ou selecionar o texto. O fluxo tem duas partes: converta o DOCX primeiro e depois rode OCR no PDF resultante, pois este conversor cria páginas como imagens. Confira o texto reconhecido antes de usá-lo como registro ou enviá-lo. Guarde o DOCX para futuras alterações e o PDF para compartilhar o layout final."
+        },
+        {
+          "t": "h2",
+          "x": "Como converter um documento Word para PDF pesquisável"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Salve como DOCX",
+              "x": "Use um arquivo .docx. Salve DOC, ODT e RTF antigos como DOCX antes de começar."
+            },
+            {
+              "h": "Abra Word para PDF",
+              "x": "Adicione o documento em [Word para PDF](/tools/word-to-pdf) num navegador atualizado."
+            },
+            {
+              "h": "Converta e confira o layout",
+              "x": "Baixe o PDF A4. Confira títulos, tabelas, imagens, quebras de página e conteúdo perto das bordas."
+            },
+            {
+              "h": "Rode OCR em uma cópia",
+              "x": "Adicione o PDF em [OCR PDF](/tools/ocr-pdf) para criar uma camada de texto pesquisável ou selecionável."
+            },
+            {
+              "h": "Verifique o resultado",
+              "x": "Pesquise nomes e números importantes. Compare cada resultado com o DOCX e guarde os dois arquivos de origem."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Crie PDF pesquisável de Word. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "O que cada etapa produz"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Etapa",
+            "Resultado",
+            "O que conferir"
+          ],
+          "rows": [
+            [
+              "Conversão DOCX para PDF",
+              "Páginas de imagem com layout fixo",
+              "Layout, quebras e cortes."
+            ],
+            [
+              "OCR no PDF",
+              "Camada de texto reconhecido",
+              "Nomes, números, sinais e links."
+            ],
+            [
+              "DOCX original",
+              "Fonte editável",
+              "Guarde a versão para futuras correções."
+            ],
+            [
+              "PDF final",
+              "Documento para compartilhar",
+              "Confirme que abre e permite pesquisar."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Por que o PDF convertido pode não permitir pesquisa"
+        },
+        {
+          "t": "p",
+          "x": "A conversão padrão de Word para PDF do PrintxPDF representa cada página como imagem. O visual é mantido, mas o leitor não tem caracteres de texto para selecionar ou pesquisar. O OCR analisa as imagens e coloca o texto reconhecido em uma camada adicional. Ele não recria o documento Word nem garante uma transcrição perfeita; layout original e camada de texto são coisas diferentes."
+        },
+        {
+          "t": "h2",
+          "x": "Como conferir se o OCR funcionou"
+        },
+        {
+          "t": "p",
+          "x": "Abra o PDF num leitor e pesquise uma palavra que aparece claramente na página. Se o leitor a encontra e permite selecionar uma frase, há uma camada de texto. Depois teste nomes próprios, datas, casas decimais, códigos e caracteres acentuados. Uma página inclinada, letras pequenas, baixa resolução ou colunas podem confundir o reconhecimento. Corrija os erros antes de citar ou compartilhar os dados."
+        },
+        {
+          "t": "h2",
+          "x": "Conversão local para documentos privados"
+        },
+        {
+          "t": "p",
+          "x": "Currículo, carta profissional, orçamento ou arquivo de cliente pode conter dados pessoais. A conversão padrão de DOCX para PDF do PrintxPDF ocorre na aba do navegador, sem enviar rotineiramente o arquivo a um servidor. O resultado do OCR também precisa ser conferido antes do compartilhamento. Guarde PDF e DOCX em local seguro e confira quem vai recebê-los."
+        },
+        {
+          "t": "h2",
+          "x": "Mantenha a fonte editável e prepare a entrega"
+        },
+        {
+          "t": "p",
+          "x": "PDF é útil para manter um layout estável; DOCX é útil para editar o conteúdo. Guarde os dois e evite substituir o original pelo convertido. Para enviar vários documentos, [Juntar PDF](/tools/merge-pdf) cria um pacote depois que cada arquivo é conferido. Para remover propriedades do arquivo, use [Remover metadados](/tools/remove-metadata) conforme sua política. Nenhuma ferramenta substitui a revisão visual e textual final."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como deixar um PDF de Word pesquisável?",
+          "a": "Converta o DOCX para PDF e rode OCR no PDF baseado em imagens. Depois, pesquise e selecione um texto de teste para confirmar."
+        },
+        {
+          "q": "Word para PDF cria um PDF pesquisável?",
+          "a": "Não por padrão. O fluxo padrão cria páginas como imagens. Rode OCR em uma cópia quando precisar pesquisar ou selecionar texto."
+        },
+        {
+          "q": "Posso fazer isso grátis e sem Microsoft Word?",
+          "a": "Sim. Converta um DOCX no navegador e rode OCR no PDF. O uso básico é grátis, não exige conta nem inclui marca-d’água."
+        },
+        {
+          "q": "O OCR pode errar?",
+          "a": "Sim. Confira nomes, números, datas e sinais com o DOCX original, principalmente se o texto for pequeno ou o layout tiver várias colunas."
+        }
+      ]
+    },
+    "hi": {
+      "title": "Word दस्तावेज़ को खोज योग्य PDF कैसे बनाएँ",
+      "metaTitle": "Word से खोज योग्य PDF बनाएँ",
+      "metaDescription": "DOCX को PDF में बदलें और OCR से खोज योग्य पाठ जोड़ें। मुफ़्त, बिना साइनअप या वॉटरमार्क, निजी ब्राउज़र प्रोसेसिंग के साथ।",
+      "keyword": "Word दस्तावेज़ खोज योग्य PDF बनाएँ",
+      "secondaryKeywords": [
+        "Word से PDF मुफ़्त",
+        "खोज योग्य DOCX से PDF",
+        "Word दस्तावेज़ OCR",
+        "निजी PDF कन्वर्टर"
+      ],
+      "answer": "Word दस्तावेज़ को खोज योग्य PDF बनाने के लिए DOCX बदलें, फिर छवि-आधारित PDF पर OCR चलाएँ। पहचाने पाठ की जाँच करें और DOCX को संपादन योग्य मूल प्रति के रूप में रखें।",
+      "ctaLabel": "Word से खोज योग्य PDF बनाएँ",
+      "body": [
+        {
+          "t": "p",
+          "x": "स्थिर पेज वाला PDF साझा करने में उपयोगी है, लेकिन पाठ खोजना या चुनना भी ज़रूरी हो सकता है। प्रक्रिया दो चरणों में है: पहले DOCX बदलें, फिर बने PDF पर OCR चलाएँ, क्योंकि यह कन्वर्टर पेजों को छवियों के रूप में बनाता है। पहचाने पाठ को रिकॉर्ड या साझा करने से पहले देखें। DOCX को बदलाव के लिए और PDF को अंतिम लेआउट साझा करने के लिए बचाकर रखें।"
+        },
+        {
+          "t": "h2",
+          "x": "Word दस्तावेज़ को खोज योग्य PDF में कैसे बदलें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "DOCX में सहेजें",
+              "x": " .docx फ़ाइल लें। पुराने DOC, ODT और RTF को पहले DOCX में सहेजें।"
+            },
+            {
+              "h": "Word से PDF खोलें",
+              "x": "आधुनिक ब्राउज़र में दस्तावेज़ [Word से PDF](/tools/word-to-pdf) में जोड़ें।"
+            },
+            {
+              "h": "बदलें और लेआउट जाँचें",
+              "x": "A4 PDF डाउनलोड करें। शीर्षक, तालिका, तस्वीरें, पेज ब्रेक और किनारे का पाठ देखें।"
+            },
+            {
+              "h": "कॉपी पर OCR चलाएँ",
+              "x": "खोज या चयन योग्य टेक्स्ट लेयर बनाने के लिए PDF को [PDF OCR](/tools/ocr-pdf) में जोड़ें।"
+            },
+            {
+              "h": "नतीजा जाँचें",
+              "x": "महत्वपूर्ण नाम और संख्या खोजें। हर परिणाम DOCX से मिलाएँ और दोनों मूल फ़ाइलें रखें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Word से खोज योग्य PDF बनाएँ. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "हर चरण क्या बनाता है"
+        },
+        {
+          "t": "table",
+          "head": [
+            "चरण",
+            "परिणाम",
+            "क्या जाँचें"
+          ],
+          "rows": [
+            [
+              "DOCX से PDF",
+              "स्थिर लेआउट वाले छवि पेज",
+              "लेआउट, ब्रेक और कटाव।"
+            ],
+            [
+              "PDF पर OCR",
+              "पहचाने पाठ की परत",
+              "नाम, अंक, चिह्न और लिंक।"
+            ],
+            [
+              "मूल DOCX",
+              "संपादन योग्य स्रोत",
+              "आगे सुधार के लिए संस्करण रखें।"
+            ],
+            [
+              "अंतिम PDF",
+              "साझा करने योग्य दस्तावेज़",
+              "खुलना और खोज की सुविधा जाँचें।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "बदली PDF खोज योग्य क्यों नहीं हो सकती"
+        },
+        {
+          "t": "p",
+          "x": "PrintxPDF का सामान्य Word से PDF रूपांतरण हर पेज को छवि के रूप में बनाता है। दृश्य रूप बचता है, लेकिन रीडर को खोजने या चुनने के लिए पाठ अक्षर नहीं मिलते। OCR छवियों को पढ़कर अतिरिक्त परत में पहचाना पाठ रखता है। यह Word दस्तावेज़ को फिर से नहीं बनाता और सटीक प्रतिलिपि की गारंटी नहीं देता। मूल लेआउट और पाठ परत अलग चीज़ें हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "OCR काम किया या नहीं, कैसे जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "PDF को रीडर में खोलें और पेज पर साफ दिख रहे शब्द को खोजें। अगर रीडर उसे ढूँढता है और वाक्य चुनने देता है, तो टेक्स्ट लेयर मौजूद है। फिर नाम, तारीख, दशमलव, कोड और मात्रा जाँचें। तिरछा पेज, छोटे अक्षर, कम रिज़ॉल्यूशन या कॉलम पहचान में गलती करा सकते हैं। जानकारी साझा करने या उद्धृत करने से पहले इसे ठीक करें।"
+        },
+        {
+          "t": "h2",
+          "x": "निजी दस्तावेज़ों के लिए स्थानीय रूपांतरण"
+        },
+        {
+          "t": "p",
+          "x": "रिज़्यूमे, नौकरी का पत्र, बजट या ग्राहक फ़ाइल में निजी जानकारी हो सकती है। PrintxPDF का सामान्य DOCX से PDF रूपांतरण ब्राउज़र टैब में होता है और फ़ाइल नियमित रूप से सर्वर पर नहीं भेजी जाती। OCR परिणाम साझा करने से पहले फिर भी जाँचें। PDF और DOCX सुरक्षित जगह रखें और प्राप्तकर्ता की पुष्टि करें।"
+        },
+        {
+          "t": "h2",
+          "x": "संपादन योग्य स्रोत रखें और डिलीवरी तैयार करें"
+        },
+        {
+          "t": "p",
+          "x": "स्थिर पेज डिज़ाइन के लिए PDF और सामग्री बदलने के लिए DOCX रखें। दोनों प्रतियाँ सहेजें और मूल को परिवर्तित फ़ाइल से न बदलें। कई दस्तावेज़ भेजने के लिए हर फ़ाइल जाँचने के बाद [PDF मर्ज करें](/tools/merge-pdf) से पैकेट बना सकते हैं। फ़ाइल गुण हटाने हों तो नीति के अनुसार [PDF मेटाडेटा हटाएँ](/tools/remove-metadata)। कोई टूल अंतिम दृश्य और पाठ समीक्षा की जगह नहीं लेता।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Word PDF को खोज योग्य कैसे बनाऊँ?",
+          "a": "DOCX को PDF में बदलें और छवि आधारित PDF पर OCR चलाएँ। फिर जाँच के लिए पाठ खोजें और चुनकर देखें।"
+        },
+        {
+          "q": "क्या Word से PDF खोज योग्य बनता है?",
+          "a": "डिफ़ॉल्ट रूप से नहीं। सामान्य प्रक्रिया पेजों को छवियों के रूप में बनाती है। पाठ खोजना या चुनना हो तो प्रति पर OCR चलाएँ।"
+        },
+        {
+          "q": "क्या Microsoft Word के बिना मुफ़्त कर सकता हूँ?",
+          "a": "हाँ। ब्राउज़र में DOCX बदलें और PDF पर OCR चलाएँ। मुख्य टूल मुफ़्त है, खाता या वॉटरमार्क नहीं चाहिए।"
+        },
+        {
+          "q": "क्या OCR गलती कर सकता है?",
+          "a": "हाँ। खासकर छोटे पाठ या कई कॉलम में, नाम, अंक, तारीख और चिह्न मूल DOCX से जाँचें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية جعل مستند Word ملف PDF قابلاً للبحث",
+      "metaTitle": "PDF قابل للبحث من Word",
+      "metaDescription": "حوّل DOCX إلى PDF وأضف نصًا قابلاً للبحث باستخدام OCR. مجانًا، بلا تسجيل أو علامة مائية، مع معالجة خاصة في المتصفح.",
+      "keyword": "إنشاء PDF قابل للبحث من Word",
+      "secondaryKeywords": [
+        "Word إلى PDF مجانًا",
+        "DOCX إلى PDF قابل للبحث",
+        "OCR لمستند Word",
+        "محول PDF خاص"
+      ],
+      "answer": "لجعل مستند Word ملف PDF قابلاً للبحث، حوّل DOCX ثم شغّل OCR على ملف PDF المعتمد على الصور. تحقق من النص المتعرف عليه واحتفظ بملف DOCX كمصدر قابل للتحرير.",
+      "ctaLabel": "أنشئ PDF قابلًا للبحث من Word",
+      "body": [
+        {
+          "t": "p",
+          "x": "ملف PDF ذو الصفحات الثابتة مناسب للمشاركة، لكن قد تحتاج أيضًا إلى البحث عن النص أو تحديده. تتكون العملية من خطوتين: حوّل DOCX أولًا ثم شغّل OCR على ملف PDF الناتج، لأن المحول ينشئ الصفحات كصور. راجع النص المتعرف عليه قبل استخدامه كسجل أو إرساله. احتفظ بملف DOCX للتعديلات المستقبلية وPDF لمشاركة التخطيط النهائي."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تحويل مستند Word إلى PDF قابل للبحث"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احفظ بصيغة DOCX",
+              "x": "استخدم ملف .docx. احفظ ملفات DOC وODT وRTF القديمة بصيغة DOCX أولًا."
+            },
+            {
+              "h": "افتح أداة Word إلى PDF",
+              "x": "أضف المستند إلى [Word إلى PDF](/tools/word-to-pdf) في متصفح حديث."
+            },
+            {
+              "h": "حوّل وافحص التخطيط",
+              "x": "نزّل ملف PDF بحجم A4. راجع العناوين والجداول والصور وفواصل الصفحات والنص قرب الحواف."
+            },
+            {
+              "h": "شغّل OCR على نسخة",
+              "x": "أضف PDF إلى [OCR PDF](/tools/ocr-pdf) لإنشاء طبقة نص يمكن البحث فيها أو تحديد الكلمات."
+            },
+            {
+              "h": "تحقق من النتيجة",
+              "x": "ابحث عن الأسماء والأرقام المهمة. قارن كل نتيجة بملف DOCX واحتفظ بملفي المصدر."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "أنشئ PDF قابلًا للبحث من Word. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "ماذا تنتج كل خطوة"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الخطوة",
+            "النتيجة",
+            "ما يجب التحقق منه"
+          ],
+          "rows": [
+            [
+              "تحويل DOCX إلى PDF",
+              "صفحات صور بتنسيق ثابت",
+              "التخطيط والفواصل والقص."
+            ],
+            [
+              "OCR في PDF",
+              "طبقة نص متعرف عليه",
+              "الأسماء والأرقام والعلامات والروابط."
+            ],
+            [
+              "ملف DOCX الأصلي",
+              "مصدر قابل للتحرير",
+              "احتفظ بالنسخة للتعديلات المقبلة."
+            ],
+            [
+              "PDF النهائي",
+              "مستند قابل للمشاركة",
+              "تأكد من فتحه وإمكانية البحث."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "لماذا قد لا يكون PDF المحول قابلاً للبحث"
+        },
+        {
+          "t": "p",
+          "x": "يعرض التحويل المعتاد من Word إلى PDF في PrintxPDF كل صفحة كصورة. يحافظ ذلك على المظهر، لكن القارئ لا يجد أحرفًا نصية ليحددها أو يبحث عنها. يحلل OCR الصور ويضيف النص المتعرف عليه في طبقة إضافية. لا يعيد بناء مستند Word ولا يضمن نقلًا دقيقًا لكل كلمة. التخطيط الأصلي وطبقة النص أمران مختلفان."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية التحقق من نجاح OCR"
+        },
+        {
+          "t": "p",
+          "x": "افتح PDF في قارئ وابحث عن كلمة واضحة في الصفحة. إذا وجدها القارئ وسمح بتحديد جملة، فهناك طبقة نص. اختبر بعد ذلك الأسماء والتواريخ والكسور العشرية والرموز والروابط. قد تربك الصفحات المائلة أو الأحرف الصغيرة أو الدقة المنخفضة أو الأعمدة عملية التعرف. صحح الأخطاء قبل الاستشهاد بالمعلومات أو مشاركتها."
+        },
+        {
+          "t": "h2",
+          "x": "تحويل محلي للمستندات الخاصة"
+        },
+        {
+          "t": "p",
+          "x": "قد تحتوي السيرة الذاتية والخطاب المهني وعرض السعر وملفات العملاء على معلومات شخصية. تتم معالجة تحويل DOCX إلى PDF المعتاد من PrintxPDF داخل علامة تبويب المتصفح، دون رفع الملف عادةً إلى خادم. ومع ذلك، راجع نتيجة OCR قبل مشاركتها. احفظ PDF وDOCX في مكان آمن وتحقق من المستلم."
+        },
+        {
+          "t": "h2",
+          "x": "احتفظ بالمصدر القابل للتحرير وجهز نسخة التسليم"
+        },
+        {
+          "t": "p",
+          "x": "PDF مناسب للحفاظ على تخطيط ثابت؛ وDOCX مناسب لتعديل المحتوى. احتفظ بالاثنين ولا تستبدل الأصل بالملف المحول. إذا أردت جمع مستندات عدة، يمكن لـ[دمج PDF](/tools/merge-pdf) إنشاء حزمة بعد مراجعة كل ملف. لإزالة خصائص الملف، استخدم [إزالة بيانات PDF الوصفية](/tools/remove-metadata) وفق سياستك. لا تغني الأدوات عن المراجعة النهائية للشكل والنص."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أجعل PDF من Word قابلاً للبحث؟",
+          "a": "حوّل DOCX إلى PDF وشغّل OCR على الملف المعتمد على الصور. بعد ذلك ابحث عن نص تجريبي وحدده للتحقق."
+        },
+        {
+          "q": "هل تنشئ أداة Word إلى PDF ملفًا قابلاً للبحث؟",
+          "a": "ليس افتراضيًا. ينشئ المسار المعتاد صفحات كصور. أضف OCR إلى نسخة عندما تحتاج إلى البحث أو تحديد النص."
+        },
+        {
+          "q": "هل يمكنني فعل ذلك مجانًا دون Microsoft Word؟",
+          "a": "نعم. حوّل DOCX في المتصفح وشغّل OCR على PDF. الاستخدام الأساسي مجاني ولا يتطلب حسابًا أو علامة مائية."
+        },
+        {
+          "q": "هل يمكن أن يخطئ OCR؟",
+          "a": "نعم. قارن الأسماء والأرقام والتواريخ والعلامات بملف DOCX الأصلي، خصوصًا مع النص الصغير أو الأعمدة المتعددة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "Word নথিকে কীভাবে অনুসন্ধানযোগ্য PDF করবেন",
+      "metaTitle": "Word থেকে অনুসন্ধানযোগ্য PDF",
+      "metaDescription": "DOCX-কে PDF করুন এবং OCR দিয়ে অনুসন্ধানযোগ্য লেখা যোগ করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই, ব্রাউজারে ব্যক্তিগত প্রসেসিং।",
+      "keyword": "Word নথি অনুসন্ধানযোগ্য PDF করুন",
+      "secondaryKeywords": [
+        "Word থেকে PDF বিনামূল্যে",
+        "অনুসন্ধানযোগ্য DOCX থেকে PDF",
+        "Word নথি OCR",
+        "ব্যক্তিগত PDF কনভার্টার"
+      ],
+      "answer": "Word নথিকে অনুসন্ধানযোগ্য PDF করতে DOCX রূপান্তর করুন, তারপর ছবিভিত্তিক PDF-এ OCR চালান। শনাক্ত লেখা যাচাই করুন এবং সম্পাদনাযোগ্য উৎস হিসেবে DOCX রেখে দিন।",
+      "ctaLabel": "Word থেকে অনুসন্ধানযোগ্য PDF বানান",
+      "body": [
+        {
+          "t": "p",
+          "x": "স্থির পৃষ্ঠার PDF শেয়ারের জন্য সুবিধাজনক, তবে পাঠককে লেখা খুঁজতে বা নির্বাচন করতেও হতে পারে। কাজটি দুই ধাপে করুন: আগে DOCX রূপান্তর করুন, তারপর তৈরি PDF-এ OCR চালান, কারণ এই কনভার্টার পৃষ্ঠাকে ছবি হিসেবে তৈরি করে। রেকর্ড বা পাঠানোর আগে শনাক্ত লেখা মিলিয়ে দেখুন। ভবিষ্যৎ সম্পাদনার জন্য DOCX এবং চূড়ান্ত বিন্যাস শেয়ারের জন্য PDF রেখে দিন।"
+        },
+        {
+          "t": "h2",
+          "x": "Word নথিকে অনুসন্ধানযোগ্য PDF-এ রূপান্তর করার উপায়"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "DOCX হিসেবে সংরক্ষণ করুন",
+              "x": "একটি .docx ফাইল ব্যবহার করুন। পুরোনো DOC, ODT ও RTF আগে DOCX হিসেবে সংরক্ষণ করুন।"
+            },
+            {
+              "h": "Word থেকে PDF খুলুন",
+              "x": "আধুনিক ব্রাউজারে [Word থেকে PDF](/tools/word-to-pdf)-এ নথি যোগ করুন।"
+            },
+            {
+              "h": "রূপান্তর করে বিন্যাস দেখুন",
+              "x": "A4 PDF ডাউনলোড করুন। শিরোনাম, টেবিল, ছবি, পৃষ্ঠা বিরতি ও প্রান্তের লেখা দেখুন।"
+            },
+            {
+              "h": "কপিতে OCR চালান",
+              "x": "অনুসন্ধান বা নির্বাচনযোগ্য লেখা স্তর তৈরি করতে PDF-টি [PDF OCR](/tools/ocr-pdf)-এ দিন।"
+            },
+            {
+              "h": "ফল যাচাই করুন",
+              "x": "গুরুত্বপূর্ণ নাম ও সংখ্যা খুঁজুন। প্রতিটি ফল DOCX-এর সঙ্গে মিলিয়ে দুইটি উৎস ফাইল রাখুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Word থেকে অনুসন্ধানযোগ্য PDF বানান. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "প্রতিটি ধাপে কী তৈরি হয়"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ধাপ",
+            "ফলাফল",
+            "যা যাচাই করবেন"
+          ],
+          "rows": [
+            [
+              "DOCX থেকে PDF",
+              "স্থির বিন্যাসের ছবির পৃষ্ঠা",
+              "বিন্যাস, বিরতি ও কাটা অংশ।"
+            ],
+            [
+              "PDF-এ OCR",
+              "শনাক্ত লেখার স্তর",
+              "নাম, সংখ্যা, চিহ্ন ও লিংক।"
+            ],
+            [
+              "মূল DOCX",
+              "সম্পাদনাযোগ্য উৎস",
+              "পরের সংশোধনের জন্য সংস্করণ রাখুন।"
+            ],
+            [
+              "চূড়ান্ত PDF",
+              "শেয়ারযোগ্য নথি",
+              "খুলছে ও অনুসন্ধান হচ্ছে নিশ্চিত করুন।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "রূপান্তরিত PDF-এ অনুসন্ধান নাও চলতে পারে কেন"
+        },
+        {
+          "t": "p",
+          "x": "PrintxPDF-এর সাধারণ Word থেকে PDF রূপান্তরে প্রতিটি পৃষ্ঠা ছবি হিসেবে তৈরি হয়। দৃশ্যমান চেহারা থাকে, কিন্তু রিডারে খোঁজা বা নির্বাচন করার মতো অক্ষর থাকে না। OCR ছবির লেখা পড়ে অতিরিক্ত স্তরে শনাক্ত টেক্সট যোগ করে। এটি Word নথি পুনর্গঠন করে না বা নিখুঁত প্রতিলিপির নিশ্চয়তা দেয় না। মূল বিন্যাস আর টেক্সট স্তর আলাদা বিষয়।"
+        },
+        {
+          "t": "h2",
+          "x": "OCR ঠিকমতো কাজ করেছে কি না যাচাই"
+        },
+        {
+          "t": "p",
+          "x": "PDF রিডারে খুলে পৃষ্ঠায় স্পষ্ট দেখা কোনো শব্দ খুঁজুন। রিডার শব্দটি পেলে এবং বাক্য নির্বাচন করতে দিলে টেক্সট স্তর আছে। এরপর ব্যক্তির নাম, তারিখ, দশমিক, কোড ও লিংক পরীক্ষা করুন। বাঁকা পৃষ্ঠা, ছোট অক্ষর, কম রেজোলিউশন বা কলাম শনাক্তকরণে ভুল আনতে পারে। তথ্য উদ্ধৃত বা শেয়ারের আগে ভুল সংশোধন করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যক্তিগত নথির জন্য স্থানীয় রূপান্তর"
+        },
+        {
+          "t": "p",
+          "x": "জীবনবৃত্তান্ত, চাকরির চিঠি, মূল্যপ্রস্তাব বা গ্রাহকের ফাইলে ব্যক্তিগত তথ্য থাকতে পারে। PrintxPDF-এর সাধারণ DOCX থেকে PDF কাজ ব্রাউজার ট্যাবে হয়, ফাইল নিয়মিত সার্ভারে পাঠানো হয় না। OCR ফলও শেয়ারের আগে পর্যালোচনা করুন। PDF ও DOCX নিরাপদে রাখুন এবং প্রাপক নিশ্চিত করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "সম্পাদনাযোগ্য উৎস রাখুন, চূড়ান্ত কপি তৈরি করুন"
+        },
+        {
+          "t": "p",
+          "x": "স্থির পৃষ্ঠা বিন্যাসের জন্য PDF এবং বিষয়বস্তু বদলাতে DOCX রাখুন। দুটোই সংরক্ষণ করুন, মূল ফাইলকে রূপান্তরিত ফাইল দিয়ে প্রতিস্থাপন করবেন না। কয়েকটি নথি পাঠাতে প্রতিটি যাচাইয়ের পরে [PDF মার্জ](/tools/merge-pdf) দিয়ে আলাদা প্যাকেট বানান। ফাইলের বৈশিষ্ট্য সরাতে নীতি অনুযায়ী [PDF মেটাডেটা সরান](/tools/remove-metadata)। শেষবার দৃশ্য ও লেখা যাচাইয়ের বিকল্প কোনো টুল নয়।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Word PDF অনুসন্ধানযোগ্য করব কীভাবে?",
+          "a": "DOCX-কে PDF করুন, তারপর ছবিভিত্তিক PDF-এ OCR চালান। এরপর পরীক্ষামূলক লেখা খুঁজে ও নির্বাচন করে নিশ্চিত হন।"
+        },
+        {
+          "q": "Word থেকে PDF কি অনুসন্ধানযোগ্য হয়?",
+          "a": "ডিফল্টভাবে নয়। সাধারণ রূপান্তরে পৃষ্ঠা ছবি হয়। লেখা খুঁজতে বা নির্বাচন করতে কপিতে OCR চালান।"
+        },
+        {
+          "q": "Microsoft Word ছাড়া বিনামূল্যে করা যায়?",
+          "a": "হ্যাঁ। ব্রাউজারে DOCX রূপান্তর করে PDF-এ OCR চালান। মূল ব্যবহার বিনামূল্যে, অ্যাকাউন্ট বা ওয়াটারমার্ক নেই।"
+        },
+        {
+          "q": "OCR কি ভুল করতে পারে?",
+          "a": "হ্যাঁ। বিশেষত ছোট লেখা বা একাধিক কলামে নাম, সংখ্যা, তারিখ ও চিহ্ন মূল DOCX-এর সঙ্গে মিলিয়ে দেখুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách tạo PDF có thể tìm kiếm từ tài liệu Word",
+      "metaTitle": "PDF Word có thể tìm kiếm",
+      "metaDescription": "Chuyển DOCX sang PDF rồi thêm văn bản có thể tìm bằng OCR. Miễn phí, không đăng ký hay dấu mờ, xử lý riêng tư trong trình duyệt.",
+      "keyword": "tạo PDF Word có thể tìm kiếm",
+      "secondaryKeywords": [
+        "Word sang PDF miễn phí",
+        "DOCX sang PDF có thể tìm kiếm",
+        "OCR tài liệu Word",
+        "công cụ PDF riêng tư"
+      ],
+      "answer": "Để tạo PDF có thể tìm kiếm từ tài liệu Word, hãy chuyển DOCX rồi chạy OCR trên PDF dạng ảnh. Kiểm tra chữ được nhận dạng và giữ DOCX làm bản nguồn có thể chỉnh sửa.",
+      "ctaLabel": "Tạo PDF Word có thể tìm kiếm",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF có trang cố định rất tiện chia sẻ, nhưng người đọc có thể cần tìm hoặc chọn văn bản. Quy trình gồm hai phần: chuyển DOCX trước, sau đó chạy OCR trên PDF đầu ra vì công cụ này tạo trang dưới dạng hình ảnh. Hãy kiểm tra chữ nhận dạng trước khi dùng làm hồ sơ hoặc gửi đi. Giữ DOCX để chỉnh sửa sau này và PDF để chia sẻ bố cục cuối cùng."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuyển tài liệu Word thành PDF có thể tìm kiếm"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Lưu thành DOCX",
+              "x": "Dùng tệp .docx. Lưu các tệp DOC, ODT và RTF cũ thành DOCX trước."
+            },
+            {
+              "h": "Mở Word sang PDF",
+              "x": "Thêm tài liệu vào [Word sang PDF](/tools/word-to-pdf) trong trình duyệt hiện đại."
+            },
+            {
+              "h": "Chuyển đổi và xem bố cục",
+              "x": "Tải PDF A4 xuống. Kiểm tra tiêu đề, bảng, ảnh, ngắt trang và chữ sát mép."
+            },
+            {
+              "h": "Chạy OCR trên bản sao",
+              "x": "Thêm PDF vào [OCR PDF](/tools/ocr-pdf) để tạo lớp chữ có thể tìm hoặc chọn."
+            },
+            {
+              "h": "Xác minh kết quả",
+              "x": "Tìm tên và số quan trọng. So sánh từng kết quả với DOCX và giữ cả hai tệp nguồn."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "Tạo PDF Word có thể tìm kiếm. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Mỗi bước tạo ra gì"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Bước",
+            "Kết quả",
+            "Điều cần kiểm tra"
+          ],
+          "rows": [
+            [
+              "Chuyển DOCX sang PDF",
+              "Trang ảnh với bố cục cố định",
+              "Bố cục, chỗ ngắt và phần bị cắt."
+            ],
+            [
+              "OCR trong PDF",
+              "Lớp chữ được nhận dạng",
+              "Tên, số, dấu và liên kết."
+            ],
+            [
+              "DOCX gốc",
+              "Nguồn có thể chỉnh sửa",
+              "Giữ phiên bản để sửa sau này."
+            ],
+            [
+              "PDF cuối",
+              "Tài liệu để chia sẻ",
+              "Xác nhận mở được và tìm kiếm được."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Vì sao PDF sau chuyển đổi có thể không tìm kiếm được"
+        },
+        {
+          "t": "p",
+          "x": "Quy trình Word sang PDF tiêu chuẩn của PrintxPDF tạo mỗi trang thành hình ảnh. Hình thức được giữ nguyên nhưng trình đọc không có ký tự văn bản để chọn hoặc tìm. OCR phân tích ảnh và thêm chữ nhận dạng vào một lớp riêng. OCR không dựng lại tài liệu Word và không bảo đảm bản chép hoàn hảo. Bố cục gốc và lớp chữ là hai phần khác nhau."
+        },
+        {
+          "t": "h2",
+          "x": "Cách kiểm tra OCR đã hoạt động"
+        },
+        {
+          "t": "p",
+          "x": "Mở PDF trong trình đọc và tìm một từ hiện rõ trên trang. Nếu trình đọc tìm thấy và cho chọn một câu, lớp chữ đã có. Tiếp theo, thử tên riêng, ngày tháng, số thập phân, mã và liên kết. Trang nghiêng, chữ nhỏ, độ phân giải thấp hoặc nhiều cột có thể khiến nhận dạng sai. Hãy sửa lỗi trước khi trích dẫn hoặc chia sẻ thông tin."
+        },
+        {
+          "t": "h2",
+          "x": "Chuyển đổi cục bộ cho tài liệu riêng tư"
+        },
+        {
+          "t": "p",
+          "x": "CV, thư xin việc, báo giá và tài liệu khách hàng có thể chứa dữ liệu cá nhân. Quy trình DOCX sang PDF tiêu chuẩn của PrintxPDF chạy trong thẻ trình duyệt, không thường xuyên tải tệp lên máy chủ. Kết quả OCR vẫn cần được xem lại trước khi chia sẻ. Hãy lưu PDF và DOCX ở nơi an toàn rồi xác nhận người nhận."
+        },
+        {
+          "t": "h2",
+          "x": "Giữ bản nguồn chỉnh sửa được và chuẩn bị bản giao"
+        },
+        {
+          "t": "p",
+          "x": "PDF phù hợp để giữ bố cục trang ổn định; DOCX phù hợp để sửa nội dung. Giữ cả hai và đừng thay bản gốc bằng bản đã chuyển. Nếu cần gom nhiều tài liệu, [Gộp PDF](/tools/merge-pdf) tạo gói riêng sau khi bạn xem từng tệp. Muốn bỏ thuộc tính tệp, dùng [Xóa siêu dữ liệu PDF](/tools/remove-metadata) theo chính sách. Công cụ không thay cho bước rà soát hình thức và chữ cuối cùng."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Làm sao tạo PDF Word có thể tìm kiếm?",
+          "a": "Chuyển DOCX sang PDF rồi chạy OCR trên PDF dạng ảnh. Sau đó tìm và chọn một đoạn chữ thử để xác nhận."
+        },
+        {
+          "q": "Word sang PDF có tạo tệp tìm kiếm được không?",
+          "a": "Mặc định là không. Quy trình tiêu chuẩn tạo trang ảnh. Chạy OCR trên bản sao khi cần tìm hoặc chọn chữ."
+        },
+        {
+          "q": "Có thể làm miễn phí mà không cần Microsoft Word không?",
+          "a": "Có. Chuyển DOCX trong trình duyệt rồi chạy OCR trên PDF. Công cụ cơ bản miễn phí, không cần tài khoản hay dấu mờ."
+        },
+        {
+          "q": "OCR có thể nhận dạng sai không?",
+          "a": "Có. Hãy so tên, số, ngày tháng và dấu với DOCX gốc, nhất là khi chữ nhỏ hoặc bố cục có nhiều cột."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何将 Word 文档制作成可搜索 PDF",
+      "metaTitle": "Word 文档转可搜索 PDF",
+      "metaDescription": "将 DOCX 转为 PDF，再用 OCR 添加可搜索文字。免费、无需注册、无水印，在浏览器中私密处理。",
+      "keyword": "Word 文档制作可搜索 PDF",
+      "secondaryKeywords": [
+        "免费 Word 转 PDF",
+        "DOCX 转可搜索 PDF",
+        "Word 文档 OCR",
+        "私密 PDF 转换器"
+      ],
+      "answer": "要将 Word 文档制作成可搜索 PDF，请先转换 DOCX，再对图像型 PDF 运行 OCR。核对识别文字，并保留 DOCX 作为可编辑源文件。",
+      "ctaLabel": "制作可搜索的 Word PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "固定页面的 PDF 便于分享，但读者也可能需要搜索或选择文字。流程分两步：先转换 DOCX，再对生成的 PDF 运行 OCR，因为该转换器会将页面生成为图像。将识别文本用于记录或发送前，请先核对。保留 DOCX 供以后编辑，保留 PDF 以分享最终版式。"
+        },
+        {
+          "t": "h2",
+          "x": "如何将 Word 文档转为可搜索 PDF"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "另存为 DOCX",
+              "x": "使用 .docx 文件。旧版 DOC、ODT 和 RTF 文件请先另存为 DOCX。"
+            },
+            {
+              "h": "打开 Word 转 PDF",
+              "x": "在新版浏览器中，将文档添加到 [Word 转 PDF](/tools/word-to-pdf)。"
+            },
+            {
+              "h": "转换并检查版式",
+              "x": "下载 A4 PDF，检查标题、表格、图片、分页符以及页面边缘附近的内容。"
+            },
+            {
+              "h": "对副本运行 OCR",
+              "x": "将 PDF 添加到 [PDF OCR](/tools/ocr-pdf)，生成可搜索或可选择文字的文本层。"
+            },
+            {
+              "h": "核对结果",
+              "x": "搜索重要姓名和数字。逐项与 DOCX 对照，并保留两个源文件。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "word-to-pdf",
+          "x": "制作可搜索的 Word PDF. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "每个步骤会生成什么"
+        },
+        {
+          "t": "table",
+          "head": [
+            "步骤",
+            "结果",
+            "检查事项"
+          ],
+          "rows": [
+            [
+              "DOCX 转 PDF",
+              "版式固定的图像页面",
+              "版式、分页和裁切。"
+            ],
+            [
+              "PDF OCR",
+              "识别文字层",
+              "姓名、数字、符号和链接。"
+            ],
+            [
+              "原始 DOCX",
+              "可编辑源文件",
+              "保留版本以便以后修改。"
+            ],
+            [
+              "最终 PDF",
+              "可分享的文档",
+              "确认能打开且支持搜索。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "为什么转换后的 PDF 可能无法搜索"
+        },
+        {
+          "t": "p",
+          "x": "PrintxPDF 的标准 Word 转 PDF 流程会将每页生成为图像。视觉效果得以保留，但阅读器没有可供选择或搜索的文字字符。OCR 会分析图像，并在额外图层中放入识别出的文字。它不会重建 Word 文档，也不保证转录完全准确。原始版式和文字层是不同的部分。"
+        },
+        {
+          "t": "h2",
+          "x": "如何检查 OCR 是否生效"
+        },
+        {
+          "t": "p",
+          "x": "在阅读器中打开 PDF，搜索页面上清晰可见的词语。如果能找到并可选择一句话，就说明存在文字层。然后检查人名、日期、小数、代码和链接。页面倾斜、文字太小、分辨率低或多栏布局都可能导致识别错误。引用或分享信息前先纠正错误。"
+        },
+        {
+          "t": "h2",
+          "x": "私密文件可在本地转换"
+        },
+        {
+          "t": "p",
+          "x": "简历、求职信、报价和客户文件可能包含个人信息。PrintxPDF 的标准 DOCX 转 PDF 流程在浏览器标签页中运行，通常不会将文件上传到服务器。分享 OCR 结果前仍应仔细核对。请安全保存 PDF 和 DOCX，并确认收件人。"
+        },
+        {
+          "t": "h2",
+          "x": "保留可编辑源文件并准备交付"
+        },
+        {
+          "t": "p",
+          "x": "PDF 适合保持页面版式稳定，DOCX 适合修改内容。请同时保留两者，不要用转换后的文件覆盖源文件。若要整理多份文档，可在逐一检查后使用[合并 PDF](/tools/merge-pdf)创建单独文件包。若需移除文件属性，可按规则使用[删除 PDF 元数据](/tools/remove-metadata)。工具不能替代最终的视觉和文字检查。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "如何让 Word PDF 可搜索？",
+          "a": "将 DOCX 转为 PDF，再对图像型 PDF 运行 OCR。然后搜索并选择一段测试文字进行确认。"
+        },
+        {
+          "q": "Word 转 PDF 会生成可搜索文件吗？",
+          "a": "默认不会。标准流程生成图像页面。需要搜索或选择文字时，请对副本运行 OCR。"
+        },
+        {
+          "q": "不用 Microsoft Word 可以免费完成吗？",
+          "a": "可以。在浏览器中转换 DOCX，再对 PDF 运行 OCR。核心工具免费，无需账户或水印。"
+        },
+        {
+          "q": "OCR 会识别错误吗？",
+          "a": "会。请将姓名、数字、日期和符号与原始 DOCX 对照，尤其是小字或多栏版式。"
+        }
+      ]
+    }
+  }
+}
