@@ -7576,6 +7576,148 @@
           "add-cover-page-to-pdf",
           "remove-blank-pdf-pages"
         ]
+      },
+      {
+        "topic": "reorder-scanned-pdf-pages",
+        "slug": "reorder-scanned-pdf-pages",
+        "title": "Cómo reordenar las páginas de un PDF escaneado",
+        "metaTitle": "Cómo reordenar las páginas de un PDF escaneado",
+        "metaDescription": "Reordena páginas escaneadas con miniaturas visuales, sin OCR ni subidas. Gratis y privado en el navegador, sin registro ni marca de agua.",
+        "keyword": "reordenar páginas de PDF escaneado",
+        "secondaryKeywords": [
+          "ordenar páginas de PDF escaneado",
+          "arreglar escaneo PDF al revés",
+          "reorganizar miniaturas PDF"
+        ],
+        "answer": "Para reordenar páginas de un PDF escaneado, abre Organizar PDF, espera a que aparezcan todas las miniaturas y arrastra cada página a la posición correcta. No hace falta OCR porque puedes ordenar las páginas por su aspecto. PrintxPDF procesa el archivo en tu navegador y crea una copia nueva sin cambiar el original.",
+        "tool": "organize-pdf",
+        "ctaLabel": "Organizar PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Un escaneo puede tener páginas al revés, invertidas o intercaladas. Organizar PDF muestra una miniatura de cada página, así que puedes ordenarlas por su contenido visual sin reconocer el texto primero. Espera a que terminen de cargarse todas las vistas, organiza y revisa la copia descargada. La herramienta funciona en tu navegador; el original no se cambia."
+          },
+          {
+            "t": "h2",
+            "x": "Carga y reconoce el escaneo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Abre Organizar PDF y añade el escaneo",
+                "x": "Carga el PDF escaneado. Espera a que desaparezca el indicador de renderizado para confirmar que todas las miniaturas están listas."
+              },
+              {
+                "h": "Identifica las páginas por su contenido",
+                "x": "Mira encabezados, números impresos, títulos de capítulo o continuidad entre líneas e imágenes. No dependas solo de los números originales, que pueden estar mal."
+              },
+              {
+                "h": "Arrastra las páginas a su posición",
+                "x": "Mueve las miniaturas hasta que el documento tenga el orden de lectura correcto. Usa Reverse si el escaneo entero quedó de atrás hacia delante; gira páginas apaisadas si hace falta."
+              },
+              {
+                "h": "Revisa la secuencia completa",
+                "x": "Comprueba la portada, las transiciones, las páginas finales y cualquier hoja en blanco. Asegúrate de que no se haya borrado una página por error."
+              },
+              {
+                "h": "Aplica los cambios y abre la copia",
+                "x": "Descarga el PDF reorganizado y revisa el orden en un lector. Si necesitas buscar texto en el escaneo, ejecuta [OCR PDF](/tools/ocr-pdf) después de ordenar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "organize-pdf",
+            "x": "Reordena páginas PDF gratis en tu navegador, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Ordena con las vistas previas"
+          },
+          {
+            "t": "p",
+            "x": "Las miniaturas permiten ordenar escaneos aunque el PDF no contenga texto seleccionable. Usa elementos visibles como títulos, números de página impresos, diagramas o continuidad de párrafos para identificar la secuencia. Si la numeración original está incompleta, no la uses como única señal. Organizar PDF reconstruye un archivo nuevo copiando las páginas en el orden elegido. No convierte las páginas en imágenes nuevas, por lo que conserva la nitidez del escaneo. La herramienta puede girar o eliminar páginas además de moverlas. Guarda el original: la cuadrícula no tiene un botón de deshacer para recuperar una página eliminada, pero puedes volver a cargar la fuente."
+          },
+          {
+            "t": "h2",
+            "x": "¿Hace falta OCR?"
+          },
+          {
+            "t": "p",
+            "x": "Reordenar no añade reconocimiento de texto. Si necesitas buscar o copiar palabras del escaneo, aplica [OCR PDF](/tools/ocr-pdf) después y revisa los resultados, especialmente nombres, cifras y texto pequeño. El PDF reconstruido tampoco conserva marcadores del documento completo; guarda la fuente si esos marcadores son importantes."
+          },
+          {
+            "t": "h2",
+            "x": "Revisa y guarda una copia"
+          },
+          {
+            "t": "p",
+            "x": "El procesamiento ocurre localmente en la pestaña del navegador. Antes de compartir, abre la copia y comprueba todas las páginas, la orientación y que el orden se lea de forma natural. Revisa el principio y el final, donde un lote escaneado suele quedar más desordenado."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Tarea",
+              "Herramienta",
+              "Nota"
+            ],
+            "rows": [
+              [
+                "Cambiar el orden",
+                "Organizar PDF",
+                "Usa miniaturas visuales"
+              ],
+              [
+                "Buscar texto",
+                "OCR PDF después",
+                "OCR no es necesario para ordenar"
+              ],
+              [
+                "Conservar el origen",
+                "Descargar copia nueva",
+                "El archivo fuente no se modifica"
+              ],
+              [
+                "Mantener marcadores",
+                "Guardar original",
+                "No se transfieren marcadores globales"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Necesito OCR para reordenar páginas escaneadas?",
+            "a": "No. Organizar PDF muestra miniaturas de las páginas como imágenes, así que puedes ordenarlas visualmente sin reconocer texto. OCR solo hace falta si después quieres buscar o seleccionar palabras."
+          },
+          {
+            "q": "¿Reordenar páginas reduce la calidad del escaneo?",
+            "a": "No. La herramienta copia las páginas en un archivo nuevo y cambia su orden; no vuelve a fotografiarlas ni rasterizarlas. Las imágenes mantienen la calidad del PDF original."
+          },
+          {
+            "q": "¿Puedo arreglar un escaneo que está al revés?",
+            "a": "Sí. Arrastra las miniaturas en orden inverso o usa Reverse si el documento entero está de atrás hacia delante. También puedes girar páginas individuales que estén de lado."
+          },
+          {
+            "q": "¿El original cambia cuando reorganizo las páginas?",
+            "a": "No. Organizar PDF descarga una copia reorganizada y deja intacto el archivo fuente. Conserva ese original por si necesitas recuperar páginas o marcadores."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "organize-pdf",
+          "ocr-pdf",
+          "pdf-reader",
+          "split-pdf"
+        ],
+        "relatedPosts": [
+          "insert-pages-into-pdf",
+          "add-cover-page-to-pdf",
+          "remove-blank-pdf-pages",
+          "rotate-scanned-pdf-correctly"
+        ]
       }
     ]
   },
@@ -15146,6 +15288,148 @@
           "add-cover-page-to-pdf",
           "remove-blank-pdf-pages"
         ]
+      },
+      {
+        "topic": "reorder-scanned-pdf-pages",
+        "slug": "reorder-scanned-pdf-pages",
+        "title": "Como reordenar páginas de um PDF digitalizado",
+        "metaTitle": "Como reordenar páginas de um PDF digitalizado",
+        "metaDescription": "Reordene páginas digitalizadas por miniaturas, sem OCR ou upload. Grátis, privado no navegador, sem cadastro ou marca-d’água.",
+        "keyword": "reordenar páginas de PDF digitalizado",
+        "secondaryKeywords": [
+          "ordenar páginas de PDF digitalizado",
+          "corrigir PDF digitalizado ao contrário",
+          "reorganizar miniaturas de PDF"
+        ],
+        "answer": "Para reordenar as páginas de um PDF digitalizado, abra Organize PDF, espere todas as miniaturas aparecerem e arraste cada página para a posição certa. Não é necessário OCR porque a ordem pode ser definida pela aparência. O PrintxPDF processa o arquivo no navegador e cria uma cópia nova sem alterar o original.",
+        "tool": "organize-pdf",
+        "ctaLabel": "Organize PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Um escaneamento pode ter páginas invertidas, de cabeça para baixo ou fora de ordem. O Organize PDF mostra uma miniatura por página, então você pode organizar pelo conteúdo visual sem reconhecer o texto antes. Espere todas as prévias carregarem, ajuste a ordem e confira a cópia baixada. A ferramenta roda no navegador; o original não é alterado."
+          },
+          {
+            "t": "h2",
+            "x": "Carregue e identifique o escaneamento"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Abra Organize PDF e adicione o escaneamento",
+                "x": "Carregue o PDF digitalizado. Espere o indicador de renderização desaparecer para confirmar que todas as miniaturas estão prontas."
+              },
+              {
+                "h": "Identifique as páginas pelo conteúdo",
+                "x": "Observe cabeçalhos, números impressos, títulos de capítulo ou continuidade entre linhas e imagens. Não dependa apenas dos números originais, que podem estar errados."
+              },
+              {
+                "h": "Arraste as páginas para a posição correta",
+                "x": "Mova as miniaturas até a ordem de leitura fazer sentido. Use Reverse se o escaneamento inteiro estiver de trás para a frente; gire páginas deitadas, se necessário."
+              },
+              {
+                "h": "Revise a sequência inteira",
+                "x": "Confira capa, transições, páginas finais e folhas em branco. Confirme que nenhuma página foi removida por engano."
+              },
+              {
+                "h": "Aplique as mudanças e abra a cópia",
+                "x": "Baixe o PDF reorganizado e confira a ordem em um leitor. Se precisar buscar texto no escaneamento, use [OCR PDF](/tools/ocr-pdf) depois de organizar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "organize-pdf",
+            "x": "Reordene páginas PDF grátis no navegador, sem cadastro ou marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Organize usando as prévias"
+          },
+          {
+            "t": "p",
+            "x": "As miniaturas permitem organizar digitalizações mesmo quando o PDF não tem texto selecionável. Use pistas visuais como títulos, números impressos, diagramas ou a continuidade dos parágrafos. Se a numeração original estiver incompleta, não a use como única referência. O Organize PDF reconstrói um arquivo novo copiando as páginas na ordem escolhida. Ele não transforma as páginas em novas imagens, então preserva a nitidez do escaneamento. A ferramenta também pode girar ou excluir páginas. Guarde o original: a grade não oferece desfazer para recuperar uma página excluída, mas você pode carregar a fonte novamente."
+          },
+          {
+            "t": "h2",
+            "x": "É preciso usar OCR?"
+          },
+          {
+            "t": "p",
+            "x": "Reordenar não reconhece texto. Se quiser pesquisar ou copiar palavras do escaneamento, aplique [OCR PDF](/tools/ocr-pdf) depois e confira o resultado, principalmente nomes, valores e letras pequenas. O PDF reconstruído também não mantém favoritos do documento inteiro; guarde a fonte se eles forem importantes."
+          },
+          {
+            "t": "h2",
+            "x": "Revise e salve uma cópia"
+          },
+          {
+            "t": "p",
+            "x": "O processamento acontece localmente na aba do navegador. Antes de compartilhar, abra a cópia e confira todas as páginas, a orientação e se a sequência está natural. Revise o começo e o fim, onde lotes digitalizados costumam ficar mais desordenados."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Tarefa",
+              "Ferramenta",
+              "Observação"
+            ],
+            "rows": [
+              [
+                "Mudar a ordem",
+                "Organize PDF",
+                "Use miniaturas visuais"
+              ],
+              [
+                "Pesquisar texto",
+                "OCR PDF depois",
+                "OCR não é necessário para ordenar"
+              ],
+              [
+                "Preservar a fonte",
+                "Baixar nova cópia",
+                "O arquivo de origem não muda"
+              ],
+              [
+                "Manter favoritos",
+                "Guardar o original",
+                "Favoritos globais não são transferidos"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Preciso de OCR para reordenar páginas digitalizadas?",
+            "a": "Não. Organize PDF mostra prévias visuais das páginas, então você pode ordená-las pela imagem sem reconhecer o texto. OCR só é necessário se depois quiser buscar ou selecionar palavras."
+          },
+          {
+            "q": "Reordenar páginas reduz a qualidade do escaneamento?",
+            "a": "Não. A ferramenta copia as páginas em um novo arquivo e muda a ordem; não fotografa nem rasteriza tudo de novo. As imagens mantêm a qualidade do PDF original."
+          },
+          {
+            "q": "Posso corrigir um escaneamento que está ao contrário?",
+            "a": "Sim. Arraste as miniaturas para a ordem inversa ou use Reverse se o documento inteiro ficou de trás para a frente. Também é possível girar páginas individuais deitadas."
+          },
+          {
+            "q": "O original muda quando reorganizo as páginas?",
+            "a": "Não. Organize PDF baixa uma cópia reorganizada e deixa a fonte intacta. Guarde o original para recuperar páginas ou favoritos se necessário."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "organize-pdf",
+          "ocr-pdf",
+          "pdf-reader",
+          "split-pdf"
+        ],
+        "relatedPosts": [
+          "insert-pages-into-pdf",
+          "add-cover-page-to-pdf",
+          "remove-blank-pdf-pages",
+          "rotate-scanned-pdf-correctly"
+        ]
       }
     ]
   },
@@ -22715,6 +22999,148 @@
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf",
           "remove-blank-pdf-pages"
+        ]
+      },
+      {
+        "topic": "reorder-scanned-pdf-pages",
+        "slug": "reorder-scanned-pdf-pages",
+        "title": "स्कैन किए गए PDF के पेज क्रम में कैसे लगाएँ",
+        "metaTitle": "स्कैन किए गए PDF के पेज क्रम में कैसे लगाएँ",
+        "metaDescription": "स्कैन किए PDF पेज थंबनेल देखकर क्रम में रखें—OCR या अपलोड की ज़रूरत नहीं। मुफ़्त, निजी ब्राउज़र में।",
+        "keyword": "स्कैन PDF पेज क्रम में लगाना",
+        "secondaryKeywords": [
+          "स्कैन PDF पेज क्रम में लगाना",
+          "उलटे स्कैन PDF को ठीक करना",
+          "PDF थंबनेल व्यवस्थित करना"
+        ],
+        "answer": "स्कैन किए PDF के पेज क्रम में लगाने के लिए Organize PDF खोलें, सभी थंबनेल आने दें और हर पेज को सही स्थान पर खिसकाएँ। दृश्य क्रम के लिए OCR की ज़रूरत नहीं है। PrintxPDF फ़ाइल को ब्राउज़र में प्रोसेस करता है और मूल बदले बिना नई कॉपी बनाता है।",
+        "tool": "organize-pdf",
+        "ctaLabel": "PDF व्यवस्थित करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "स्कैन किए दस्तावेज़ में पेज उलटे, घूमे हुए या गलत क्रम में हो सकते हैं। Organize PDF हर पेज का थंबनेल दिखाता है, इसलिए टेक्स्ट पहचानने से पहले दृश्य सामग्री के आधार पर क्रम तय कर सकते हैं। सभी पूर्वावलोकन आने दें, पेज सजाएँ और डाउनलोड की गई कॉपी जाँचें। टूल ब्राउज़र में चलता है; मूल फ़ाइल नहीं बदलती।"
+          },
+          {
+            "t": "h2",
+            "x": "स्कैन खोलें और पहचानें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Organize PDF खोलें और स्कैन जोड़ें",
+                "x": "स्कैन PDF चुनें। Rendering संकेतक हटने तक प्रतीक्षा करें ताकि हर पेज का थंबनेल तैयार हो जाए।"
+              },
+              {
+                "h": "दृश्य सामग्री से पेज पहचानें",
+                "x": "हेडिंग, छपे पेज नंबर, अध्याय शीर्षक या पैराग्राफ की निरंतरता देखें। मूल पेज नंबर गलत हो सकते हैं, इसलिए केवल उन पर भरोसा न करें।"
+              },
+              {
+                "h": "पेज को सही स्थान पर खिसकाएँ",
+                "x": "थंबनेल तब तक खिसकाएँ जब तक पढ़ने का क्रम सही न हो। पूरा दस्तावेज़ पीछे से आगे हो तो Reverse लें; तिरछे पेज को ज़रूरत पर घुमाएँ।"
+              },
+              {
+                "h": "पूरी श्रृंखला जाँचें",
+                "x": "कवर, पेजों के बीच का क्रम, अंतिम पेज और खाली पन्ने देखें। पुष्टि करें कि कोई पेज गलती से हटाया नहीं गया।"
+              },
+              {
+                "h": "बदलाव लागू कर कॉपी खोलें",
+                "x": "व्यवस्थित PDF डाउनलोड करें और रीडर में क्रम जाँचें। स्कैन में टेक्स्ट खोजने के लिए क्रम ठीक करने के बाद [OCR PDF](/tools/ocr-pdf) चलाएँ।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "organize-pdf",
+            "x": "ब्राउज़र में PDF पेज मुफ़्त क्रम में लगाएँ—साइनअप या वॉटरमार्क नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "पूर्वावलोकन से क्रम बनाएँ"
+          },
+          {
+            "t": "p",
+            "x": "थंबनेल से स्कैन व्यवस्थित किए जा सकते हैं, भले PDF में चुनने योग्य टेक्स्ट न हो। शीर्षक, छपे नंबर, चित्र और पैराग्राफ की निरंतरता जैसे दृश्य संकेत देखें। नंबर अधूरे हों तो उन्हें अकेला संकेत न मानें। Organize PDF चुने हुए क्रम में पेज कॉपी करके नई फ़ाइल बनाता है। यह नए चित्र नहीं बनाता, इसलिए स्कैन की स्पष्टता बनी रहती है। टूल पेज घुमा या हटा भी सकता है। मूल रखें: ग्रिड में हटाया पेज वापस लाने का undo नहीं है, लेकिन स्रोत फिर से लोड कर सकते हैं।"
+          },
+          {
+            "t": "h2",
+            "x": "क्या OCR ज़रूरी है?"
+          },
+          {
+            "t": "p",
+            "x": "पेज क्रम बदलने से टेक्स्ट पहचान नहीं होती। स्कैन में शब्द खोजना या कॉपी करना हो तो बाद में [OCR PDF](/tools/ocr-pdf) चलाएँ और खासकर नाम, रकम तथा छोटे अक्षर जाँचें। नई फ़ाइल में पूरे दस्तावेज़ के बुकमार्क भी नहीं रहते; ज़रूरत हो तो स्रोत रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "जाँचें और नई कॉपी रखें"
+          },
+          {
+            "t": "p",
+            "x": "काम ब्राउज़र टैब में स्थानीय रूप से होता है। साझा करने से पहले कॉपी खोलकर सभी पेज, दिशा और सहज पढ़ने का क्रम जाँचें। शुरुआत और अंत ज़रूर देखें—स्कैन के ढेर में अक्सर वहीं क्रम बिगड़ा होता है।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "काम",
+              "टूल",
+              "नोट"
+            ],
+            "rows": [
+              [
+                "क्रम बदलना",
+                "Organize PDF",
+                "दृश्य थंबनेल देखें"
+              ],
+              [
+                "टेक्स्ट खोजना",
+                "बाद में OCR PDF",
+                "क्रम के लिए OCR ज़रूरी नहीं"
+              ],
+              [
+                "मूल सुरक्षित रखना",
+                "नई कॉपी डाउनलोड",
+                "स्रोत फ़ाइल नहीं बदलती"
+              ],
+              [
+                "बुकमार्क रखना",
+                "मूल प्रति रखें",
+                "वैश्विक बुकमार्क साथ नहीं आते"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "स्कैन किए पेज क्रम में लगाने के लिए OCR चाहिए?",
+            "a": "नहीं। Organize PDF पेज के दृश्य थंबनेल दिखाता है, इसलिए टेक्स्ट पहचाने बिना छवि देखकर क्रम लगा सकते हैं। शब्द खोजने या चुनने हों तभी OCR करें।"
+          },
+          {
+            "q": "क्या पेज क्रम बदलने से स्कैन की गुणवत्ता घटती है?",
+            "a": "नहीं। टूल पेजों को नई फ़ाइल में कॉपी कर क्रम बदलता है; दोबारा फोटो या रास्टर नहीं बनाता। छवियाँ मूल PDF की गुणवत्ता रखती हैं।"
+          },
+          {
+            "q": "पीछे से आगे स्कैन हुआ दस्तावेज़ ठीक कर सकता हूँ?",
+            "a": "हाँ। थंबनेल उलटे क्रम में खिसकाएँ या पूरे दस्तावेज़ के लिए Reverse लें। अलग-अलग आड़े पेज भी घुमा सकते हैं।"
+          },
+          {
+            "q": "पेज व्यवस्थित करने पर मूल PDF बदलती है?",
+            "a": "नहीं। Organize PDF नई व्यवस्थित कॉपी डाउनलोड करता है और स्रोत जस का तस रहता है। पेज या बुकमार्क वापस चाहिए तो मूल रखें।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "organize-pdf",
+          "ocr-pdf",
+          "pdf-reader",
+          "split-pdf"
+        ],
+        "relatedPosts": [
+          "insert-pages-into-pdf",
+          "add-cover-page-to-pdf",
+          "remove-blank-pdf-pages",
+          "rotate-scanned-pdf-correctly"
         ]
       }
     ]
@@ -30294,6 +30720,148 @@
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf",
           "remove-blank-pdf-pages"
+        ]
+      },
+      {
+        "topic": "reorder-scanned-pdf-pages",
+        "slug": "reorder-scanned-pdf-pages",
+        "title": "كيفية إعادة ترتيب صفحات PDF ممسوح ضوئياً",
+        "metaTitle": "كيفية إعادة ترتيب صفحات PDF ممسوح ضوئياً",
+        "metaDescription": "رتّب صفحات PDF الممسوحة عبر الصور المصغرة بلا OCR أو رفع. مجاني وخاص في المتصفح بلا تسجيل أو علامة مائية.",
+        "keyword": "إعادة ترتيب صفحات PDF ممسوح ضوئياً",
+        "secondaryKeywords": [
+          "ترتيب صفحات PDF ممسوح ضوئياً",
+          "إصلاح PDF ممسوح بترتيب عكسي",
+          "ترتيب صور PDF المصغرة"
+        ],
+        "answer": "لإعادة ترتيب صفحات PDF ممسوح ضوئياً، افتح Organize PDF وانتظر ظهور كل الصور المصغرة ثم اسحب كل صفحة إلى موضعها الصحيح. لا يلزم OCR لترتيب الصفحات بصرياً. تعالج PrintxPDF الملف في المتصفح وتنشئ نسخة جديدة دون تغيير الأصل.",
+        "tool": "organize-pdf",
+        "ctaLabel": "تنظيم PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "قد يحتوي المسح الضوئي على صفحات معكوسة أو مقلوبة أو غير مرتبة. تعرض Organize PDF صورة مصغرة لكل صفحة، ما يسمح بترتيب المحتوى بصرياً قبل التعرف على النص. انتظر اكتمال كل المعاينات ثم رتّب الصفحات وافحص النسخة الناتجة. تعمل الأداة في المتصفح ولا تغيّر الملف الأصلي."
+          },
+          {
+            "t": "h2",
+            "x": "حمّل المسح وحدد صفحاته"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "افتح Organize PDF وأضف المسح",
+                "x": "حمّل PDF الممسوح. انتظر اختفاء مؤشر Rendering للتأكد من تجهيز كل الصور المصغرة."
+              },
+              {
+                "h": "حدد الصفحات من محتواها المرئي",
+                "x": "راجع العناوين والأرقام المطبوعة وعناوين الفصول واستمرار الفقرات أو الصور. لا تعتمد على ترقيم المصدر وحده فقد يكون خاطئاً."
+              },
+              {
+                "h": "اسحب الصفحات إلى مواضعها",
+                "x": "حرّك الصور المصغرة حتى يصبح ترتيب القراءة صحيحاً. استخدم Reverse إذا كان الملف كله من الخلف إلى الأمام، ودوّر الصفحات الأفقية عند الحاجة."
+              },
+              {
+                "h": "راجع التسلسل كاملاً",
+                "x": "تحقق من الغلاف والانتقالات والصفحات الأخيرة والأوراق الفارغة. تأكد من عدم حذف صفحة بالخطأ."
+              },
+              {
+                "h": "طبّق التغييرات وافتح النسخة",
+                "x": "نزّل PDF المرتب وراجعه في قارئ. إذا أردت البحث داخل المسح، شغّل [OCR PDF](/tools/ocr-pdf) بعد الترتيب."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "organize-pdf",
+            "x": "رتّب صفحات PDF مجاناً في المتصفح بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "رتّب باستخدام المعاينات"
+          },
+          {
+            "t": "p",
+            "x": "تتيح الصور المصغرة ترتيب المسح حتى إذا لم يحتو PDF على نص قابل للتحديد. استخدم دلائل مرئية مثل العناوين والأرقام المطبوعة والرسوم واستمرار الفقرات. إذا كان الترقيم ناقصاً فلا تجعله الدليل الوحيد. تعيد Organize PDF إنشاء ملف جديد بنسخ الصفحات حسب الترتيب الذي اخترته. لا تحولها إلى صور جديدة، فتحافظ على وضوح المسح. ويمكن للأداة تدوير الصفحات أو حذفها. احتفظ بالأصل: لا يوجد زر تراجع لاستعادة صفحة محذوفة من الشبكة، لكن يمكنك إعادة تحميل المصدر."
+          },
+          {
+            "t": "h2",
+            "x": "هل يلزم OCR؟"
+          },
+          {
+            "t": "p",
+            "x": "لا تضيف إعادة الترتيب التعرف على النص. إذا أردت البحث عن كلمات المسح أو نسخها، شغّل [OCR PDF](/tools/ocr-pdf) بعد ذلك وراجع الأسماء والأرقام والنص الصغير. كما لا يحفظ PDF المعاد بناؤه إشارات المستند الكامل؛ احتفظ بالمصدر إذا كانت مهمة."
+          },
+          {
+            "t": "h2",
+            "x": "راجع واحفظ نسخة جديدة"
+          },
+          {
+            "t": "p",
+            "x": "تتم المعالجة محلياً في علامة تبويب المتصفح. قبل المشاركة افتح النسخة وتحقق من جميع الصفحات والاتجاه وتسلسل القراءة. راجع البداية والنهاية لأن دفعات المسح غالباً ما تضطرب عندهما."
+          },
+          {
+            "t": "table",
+            "head": [
+              "المهمة",
+              "الأداة",
+              "ملاحظة"
+            ],
+            "rows": [
+              [
+                "تغيير الترتيب",
+                "Organize PDF",
+                "استخدم الصور المصغرة"
+              ],
+              [
+                "البحث عن النص",
+                "OCR PDF لاحقاً",
+                "لا يلزم OCR للترتيب"
+              ],
+              [
+                "حفظ المصدر",
+                "نزّل نسخة جديدة",
+                "لا يتغير ملف المصدر"
+              ],
+              [
+                "الاحتفاظ بالإشارات",
+                "احفظ الأصل",
+                "لا تنتقل الإشارات العامة"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل أحتاج إلى OCR لإعادة ترتيب صفحات المسح؟",
+            "a": "لا. تعرض Organize PDF صوراً مصغرة للصفحات، فيمكنك ترتيبها بصرياً دون التعرف على النص. استخدم OCR فقط إذا أردت البحث عن الكلمات أو تحديدها لاحقاً."
+          },
+          {
+            "q": "هل يؤدي ترتيب الصفحات إلى خفض جودة المسح؟",
+            "a": "لا. تنسخ الأداة الصفحات إلى ملف جديد وتغيّر ترتيبها؛ لا تعيد تصويرها أو تحويلها إلى صور نقطية. تحتفظ الصور بجودة PDF الأصلية."
+          },
+          {
+            "q": "هل أستطيع إصلاح مسح مرتب من الخلف إلى الأمام؟",
+            "a": "نعم. اسحب الصور المصغرة إلى الترتيب العكسي أو استخدم Reverse إذا كان المستند كله معكوس التسلسل. ويمكن تدوير الصفحات الفردية الموضوعة جانبياً."
+          },
+          {
+            "q": "هل يتغير الأصل عند ترتيب الصفحات؟",
+            "a": "لا. تنزّل Organize PDF نسخة مرتبة جديدة وتترك المصدر كما هو. احتفظ بالأصل لاستعادة الصفحات أو الإشارات المرجعية عند الحاجة."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "organize-pdf",
+          "ocr-pdf",
+          "pdf-reader",
+          "split-pdf"
+        ],
+        "relatedPosts": [
+          "insert-pages-into-pdf",
+          "add-cover-page-to-pdf",
+          "remove-blank-pdf-pages",
+          "rotate-scanned-pdf-correctly"
         ]
       }
     ]
@@ -37877,6 +38445,148 @@
           "add-cover-page-to-pdf",
           "remove-blank-pdf-pages"
         ]
+      },
+      {
+        "topic": "reorder-scanned-pdf-pages",
+        "slug": "reorder-scanned-pdf-pages",
+        "title": "স্ক্যান করা PDF-এর পৃষ্ঠা কীভাবে সাজাবেন",
+        "metaTitle": "স্ক্যান করা PDF-এর পৃষ্ঠা কীভাবে সাজাবেন",
+        "metaDescription": "থাম্বনেইল দেখে স্ক্যান PDF-এর পৃষ্ঠা সাজান—OCR বা আপলোড লাগে না। বিনামূল্যে, ব্রাউজারে ব্যক্তিগত, সাইনআপ নেই।",
+        "keyword": "স্ক্যান PDF পৃষ্ঠা সাজানো",
+        "secondaryKeywords": [
+          "স্ক্যান PDF পৃষ্ঠা সাজানো",
+          "উল্টো স্ক্যান PDF ঠিক করা",
+          "PDF থাম্বনেইল সাজানো"
+        ],
+        "answer": "স্ক্যান করা PDF-এর পৃষ্ঠা সাজাতে Organize PDF খুলুন, সব থাম্বনেইল আসা পর্যন্ত অপেক্ষা করুন, তারপর প্রতিটি পৃষ্ঠা সঠিক স্থানে টানুন। দৃশ্য দেখে সাজাতে OCR দরকার নেই। PrintxPDF ব্রাউজারে ফাইল প্রসেস করে এবং মূল না বদলে নতুন কপি তৈরি করে।",
+        "tool": "organize-pdf",
+        "ctaLabel": "PDF সাজান",
+        "body": [
+          {
+            "t": "p",
+            "x": "স্ক্যান করা নথির পৃষ্ঠা উল্টো, ঘোরানো বা ভুল ক্রমে থাকতে পারে। Organize PDF প্রতিটি পৃষ্ঠার থাম্বনেইল দেখায়, তাই লেখা চিনতে না পারলেও দৃশ্য দেখে ক্রম ঠিক করা যায়। সব প্রিভিউ আসা পর্যন্ত অপেক্ষা করে পৃষ্ঠা সাজান এবং ডাউনলোড করা কপি পরীক্ষা করুন। টুল ব্রাউজারে চলে; মূল ফাইল বদলায় না।"
+          },
+          {
+            "t": "h2",
+            "x": "স্ক্যান খুলে পৃষ্ঠা চিনুন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Organize PDF খুলে স্ক্যান যোগ করুন",
+                "x": "স্ক্যান PDF দিন। Rendering চিহ্ন চলে যাওয়া পর্যন্ত অপেক্ষা করুন, যাতে সব থাম্বনেইল প্রস্তুত হয়।"
+              },
+              {
+                "h": "দৃশ্য কনটেন্ট দেখে পৃষ্ঠা চিনুন",
+                "x": "শিরোনাম, ছাপা পৃষ্ঠা নম্বর, অধ্যায়ের নাম বা অনুচ্ছেদের ধারাবাহিকতা দেখুন। মূল নম্বর ভুলও হতে পারে, তাই শুধু নম্বরের ওপর নির্ভর করবেন না।"
+              },
+              {
+                "h": "পৃষ্ঠা সঠিক জায়গায় টানুন",
+                "x": "পড়ার ক্রম ঠিক না হওয়া পর্যন্ত থাম্বনেইল সরান। পুরো ফাইল পেছন থেকে শুরু হলে Reverse ব্যবহার করুন; আড়াআড়ি পৃষ্ঠা প্রয়োজনে ঘোরান।"
+              },
+              {
+                "h": "পুরো ধারাবাহিকতা দেখুন",
+                "x": "কভার, পৃষ্ঠার সংযোগ, শেষের পৃষ্ঠা এবং ফাঁকা পাতা পরীক্ষা করুন। ভুল করে কোনো পৃষ্ঠা মুছে গেছে কি না নিশ্চিত করুন।"
+              },
+              {
+                "h": "পরিবর্তন প্রয়োগ করে কপি খুলুন",
+                "x": "সাজানো PDF ডাউনলোড করে রিডারে ক্রম দেখুন। স্ক্যানের লেখা খুঁজতে হলে সাজানোর পরে [OCR PDF](/tools/ocr-pdf) চালান।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "organize-pdf",
+            "x": "ব্রাউজারে PDF পৃষ্ঠা বিনামূল্যে সাজান—সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রিভিউ দেখে সাজান"
+          },
+          {
+            "t": "p",
+            "x": "PDF-এ নির্বাচনযোগ্য লেখা না থাকলেও থাম্বনেইল দিয়ে স্ক্যান সাজানো যায়। শিরোনাম, ছাপা নম্বর, চিত্র বা অনুচ্ছেদের ধারাবাহিকতার মতো দৃশ্য সংকেত দেখুন। নম্বর অসম্পূর্ণ হলে একে একমাত্র সংকেত করবেন না। Organize PDF নির্বাচিত ক্রমে পৃষ্ঠা কপি করে নতুন ফাইল তৈরি করে। পৃষ্ঠাকে নতুন ছবি বানায় না, তাই স্ক্যানের স্পষ্টতা বজায় থাকে। টুল পৃষ্ঠা ঘোরাতে বা মুছতেও পারে। মূল রাখুন: গ্রিডে মুছে ফেলা পৃষ্ঠা ফেরানোর undo নেই, তবে উৎস আবার যোগ করতে পারেন।"
+          },
+          {
+            "t": "h2",
+            "x": "OCR কি দরকার?"
+          },
+          {
+            "t": "p",
+            "x": "পৃষ্ঠা সাজালে লেখা শনাক্ত হয় না। স্ক্যানের শব্দ খুঁজতে বা কপি করতে চাইলে পরে [OCR PDF](/tools/ocr-pdf) চালিয়ে নাম, অঙ্ক ও ছোট লেখা বিশেষভাবে দেখুন। নতুন PDF পুরো নথির বুকমার্কও রাখে না; দরকার হলে উৎস রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "যাচাই করে নতুন কপি রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "প্রসেসিং ব্রাউজার ট্যাবেই হয়। শেয়ারের আগে কপি খুলে সব পৃষ্ঠা, দিক এবং পড়ার স্বাভাবিক ক্রম যাচাই করুন। শুরু ও শেষের পৃষ্ঠা দেখুন—স্ক্যানের গুচ্ছে প্রায়ই সেখানেই গোলমাল হয়।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "কাজ",
+              "টুল",
+              "নোট"
+            ],
+            "rows": [
+              [
+                "ক্রম বদল",
+                "Organize PDF",
+                "দৃশ্য থাম্বনেইল ব্যবহার"
+              ],
+              [
+                "টেক্সট খোঁজা",
+                "পরে OCR PDF",
+                "ক্রমের জন্য OCR লাগে না"
+              ],
+              [
+                "মূল রাখা",
+                "নতুন কপি ডাউনলোড",
+                "উৎস ফাইল বদলায় না"
+              ],
+              [
+                "বুকমার্ক রাখা",
+                "মূল কপি রাখুন",
+                "সামগ্রিক বুকমার্ক আসে না"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "স্ক্যান পৃষ্ঠা সাজাতে কি OCR দরকার?",
+            "a": "না। Organize PDF পৃষ্ঠার দৃশ্য থাম্বনেইল দেখায়, তাই লেখা শনাক্ত না করেই সাজানো যায়। পরে শব্দ খুঁজতে বা নির্বাচন করতে চাইলে OCR লাগবে।"
+          },
+          {
+            "q": "পৃষ্ঠা সাজালে স্ক্যানের মান কমে?",
+            "a": "না। টুল পৃষ্ঠা নতুন ফাইলে কপি করে ক্রম বদলায়; আবার ছবি তোলে বা র‍্যাস্টার করে না। ছবির মূল মান বজায় থাকে।"
+          },
+          {
+            "q": "পেছন থেকে সামনে স্ক্যান ঠিক করতে পারি?",
+            "a": "হ্যাঁ। থাম্বনেইল উল্টো ক্রমে টানুন বা পুরো নথির জন্য Reverse ব্যবহার করুন। আলাদা আড়াআড়ি পৃষ্ঠাও ঘোরানো যায়।"
+          },
+          {
+            "q": "পৃষ্ঠা সাজালে কি মূল PDF বদলে যায়?",
+            "a": "না। Organize PDF নতুন সাজানো কপি ডাউনলোড করে এবং উৎস অপরিবর্তিত রাখে। পৃষ্ঠা বা বুকমার্ক ফেরত পেতে মূল রাখুন।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "organize-pdf",
+          "ocr-pdf",
+          "pdf-reader",
+          "split-pdf"
+        ],
+        "relatedPosts": [
+          "insert-pages-into-pdf",
+          "add-cover-page-to-pdf",
+          "remove-blank-pdf-pages",
+          "rotate-scanned-pdf-correctly"
+        ]
       }
     ]
   },
@@ -45446,6 +46156,148 @@
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf",
           "remove-blank-pdf-pages"
+        ]
+      },
+      {
+        "topic": "reorder-scanned-pdf-pages",
+        "slug": "reorder-scanned-pdf-pages",
+        "title": "Cách sắp xếp lại trang PDF đã quét",
+        "metaTitle": "Cách sắp xếp lại trang PDF đã quét",
+        "metaDescription": "Sắp xếp trang PDF quét bằng hình thu nhỏ, không cần OCR hay tải lên. Miễn phí, riêng tư trên trình duyệt.",
+        "keyword": "sắp xếp trang PDF đã quét",
+        "secondaryKeywords": [
+          "sắp xếp trang PDF đã quét",
+          "sửa PDF quét ngược thứ tự",
+          "sắp xếp hình thu nhỏ PDF"
+        ],
+        "answer": "Để sắp xếp lại trang PDF đã quét, mở Organize PDF, chờ mọi hình thu nhỏ xuất hiện rồi kéo từng trang vào đúng vị trí. Không cần OCR để sắp xếp bằng hình ảnh. PrintxPDF xử lý tệp trên trình duyệt và tạo bản sao mới mà không sửa bản gốc.",
+        "tool": "organize-pdf",
+        "ctaLabel": "Sắp xếp PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Bản quét có thể bị lộn ngược, xoay ngang hoặc sai thứ tự. Organize PDF hiển thị hình thu nhỏ từng trang, giúp bạn sắp xếp theo nội dung trực quan mà không cần nhận dạng chữ trước. Chờ mọi bản xem trước tải xong, sắp trang rồi kiểm tra bản tải xuống. Công cụ chạy trên trình duyệt; bản gốc không đổi."
+          },
+          {
+            "t": "h2",
+            "x": "Mở và nhận biết bản quét"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Mở Organize PDF và thêm bản quét",
+                "x": "Tải PDF đã quét lên trang công cụ. Chờ chỉ báo Rendering biến mất để biết mọi hình thu nhỏ đã sẵn sàng."
+              },
+              {
+                "h": "Nhận biết trang qua nội dung hiển thị",
+                "x": "Xem tiêu đề, số trang in sẵn, tên chương hoặc đoạn văn và hình ảnh nối tiếp. Đừng chỉ dựa vào số trang gốc vì chúng có thể sai."
+              },
+              {
+                "h": "Kéo trang đến đúng vị trí",
+                "x": "Di chuyển hình thu nhỏ đến đúng thứ tự đọc. Dùng Reverse nếu cả tài liệu bị ngược từ cuối về đầu; xoay trang nằm ngang nếu cần."
+              },
+              {
+                "h": "Kiểm tra toàn bộ chuỗi trang",
+                "x": "Xem trang bìa, điểm nối, trang cuối và trang trắng. Đảm bảo không xóa nhầm trang."
+              },
+              {
+                "h": "Áp dụng và mở bản sao",
+                "x": "Tải PDF đã sắp xếp rồi kiểm tra thứ tự bằng trình đọc. Nếu cần tìm chữ trong bản quét, chạy [OCR PDF](/tools/ocr-pdf) sau khi sắp xếp."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "organize-pdf",
+            "x": "Sắp xếp trang PDF miễn phí trên trình duyệt, không đăng ký, không hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Sắp xếp bằng bản xem trước"
+          },
+          {
+            "t": "p",
+            "x": "Hình thu nhỏ cho phép sắp xếp bản quét ngay cả khi PDF không có văn bản chọn được. Dùng dấu hiệu trực quan như tiêu đề, số trang in, sơ đồ hoặc đoạn văn nối tiếp. Nếu số trang gốc thiếu, đừng coi đó là dấu hiệu duy nhất. Organize PDF dựng tệp mới bằng cách sao chép trang theo thứ tự bạn chọn. Công cụ không biến chúng thành ảnh mới nên vẫn giữ độ nét bản quét. Bạn cũng có thể xoay hoặc xóa trang. Hãy giữ bản gốc: lưới không có nút hoàn tác để khôi phục trang đã xóa, nhưng bạn có thể tải lại nguồn."
+          },
+          {
+            "t": "h2",
+            "x": "Có cần OCR không?"
+          },
+          {
+            "t": "p",
+            "x": "Sắp xếp không nhận dạng văn bản. Nếu cần tìm hoặc sao chép chữ trong bản quét, hãy chạy [OCR PDF](/tools/ocr-pdf) sau đó và kiểm tra kỹ tên, số liệu, chữ nhỏ. PDF được dựng lại cũng không giữ dấu trang cấp tài liệu; hãy giữ nguồn nếu cần."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra và lưu bản sao"
+          },
+          {
+            "t": "p",
+            "x": "Việc xử lý diễn ra cục bộ trong thẻ trình duyệt. Trước khi chia sẻ, mở bản sao và kiểm tra tất cả trang, hướng trang và trình tự đọc tự nhiên. Xem đầu và cuối tài liệu vì các lô quét thường bị lộn thứ tự ở đó."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Việc cần làm",
+              "Công cụ",
+              "Lưu ý"
+            ],
+            "rows": [
+              [
+                "Đổi thứ tự",
+                "Organize PDF",
+                "Dùng hình thu nhỏ trực quan"
+              ],
+              [
+                "Tìm văn bản",
+                "OCR PDF sau đó",
+                "Không cần OCR để sắp xếp"
+              ],
+              [
+                "Giữ bản gốc",
+                "Tải bản sao mới",
+                "Tệp nguồn không đổi"
+              ],
+              [
+                "Giữ dấu trang",
+                "Lưu bản gốc",
+                "Dấu trang chung không được chuyển"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Có cần OCR để sắp xếp trang đã quét không?",
+            "a": "Không. Organize PDF hiển thị hình thu nhỏ của trang, bạn có thể sắp xếp theo hình ảnh mà không nhận dạng chữ. Chỉ cần OCR nếu sau đó muốn tìm hoặc chọn từ."
+          },
+          {
+            "q": "Sắp xếp lại có làm giảm chất lượng bản quét không?",
+            "a": "Không. Công cụ sao chép các trang sang tệp mới và thay đổi thứ tự; không chụp hay raster hóa lại. Hình ảnh giữ chất lượng của PDF gốc."
+          },
+          {
+            "q": "Có thể sửa bản quét bị ngược thứ tự không?",
+            "a": "Có. Kéo hình thu nhỏ theo thứ tự ngược hoặc dùng Reverse nếu cả tài liệu chạy từ cuối về đầu. Bạn cũng có thể xoay từng trang nằm ngang."
+          },
+          {
+            "q": "Sắp xếp trang có sửa bản PDF gốc không?",
+            "a": "Không. Organize PDF tải bản đã sắp xếp mới và giữ nguyên tệp nguồn. Hãy giữ bản gốc để khôi phục trang hoặc dấu trang nếu cần."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "organize-pdf",
+          "ocr-pdf",
+          "pdf-reader",
+          "split-pdf"
+        ],
+        "relatedPosts": [
+          "insert-pages-into-pdf",
+          "add-cover-page-to-pdf",
+          "remove-blank-pdf-pages",
+          "rotate-scanned-pdf-correctly"
         ]
       }
     ]
@@ -53025,6 +53877,148 @@
           "reorder-scanned-pdf-pages",
           "add-cover-page-to-pdf",
           "remove-blank-pdf-pages"
+        ]
+      },
+      {
+        "topic": "reorder-scanned-pdf-pages",
+        "slug": "reorder-scanned-pdf-pages",
+        "title": "如何重新排列扫描 PDF 的页面",
+        "metaTitle": "如何重新排列扫描 PDF 的页面",
+        "metaDescription": "通过页面缩略图整理扫描 PDF，无需 OCR 或上传。免费、浏览器本地处理，无需注册、无水印。",
+        "keyword": "重新排列扫描 PDF 页面",
+        "secondaryKeywords": [
+          "整理扫描 PDF 页面",
+          "修复顺序颠倒的扫描 PDF",
+          "重新排列 PDF 缩略图"
+        ],
+        "answer": "要重新排列扫描 PDF 页面，请打开“整理 PDF”，等待所有缩略图生成，然后将页面拖到正确位置。按视觉内容排序无需 OCR。PrintxPDF 在浏览器中处理文件并创建新副本，不会更改原件。",
+        "tool": "organize-pdf",
+        "ctaLabel": "整理 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "扫描文档可能页面倒置、旋转或顺序错误。“整理 PDF”会为每页显示缩略图，因此无需先识别文字，也能根据视觉内容调整顺序。等待所有预览完成后再整理，并检查下载的副本。工具在浏览器中运行，原文件不会更改。"
+          },
+          {
+            "t": "h2",
+            "x": "加载扫描件并识别页面"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "打开“整理 PDF”并添加扫描件",
+                "x": "选择扫描 PDF。等待 Rendering 提示消失，确认所有页面缩略图都已准备好。"
+              },
+              {
+                "h": "根据可见内容识别页面",
+                "x": "查看标题、印刷页码、章节名称以及段落或图像的衔接。原有页码可能错误，不要只凭页码判断。"
+              },
+              {
+                "h": "将页面拖到正确位置",
+                "x": "移动缩略图，直到阅读顺序正确。如果整份文件从后往前扫描，可使用 Reverse；横向页面需要时可旋转。"
+              },
+              {
+                "h": "检查完整页面顺序",
+                "x": "查看封面、页面衔接、末页和空白页。确认没有误删页面。"
+              },
+              {
+                "h": "应用更改并打开副本",
+                "x": "下载整理后的 PDF 并在阅读器中检查。如果需要搜索扫描件文字，请在排序后使用[OCR PDF](/tools/ocr-pdf)。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "organize-pdf",
+            "x": "在浏览器中免费整理 PDF 页面，无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "使用预览调整顺序"
+          },
+          {
+            "t": "p",
+            "x": "即使 PDF 中没有可选择的文字，也可以通过缩略图整理扫描页面。利用标题、印刷页码、图表或段落衔接等视觉线索。如果原有页码不完整，不要将其作为唯一依据。 “整理 PDF”会按选定顺序复制页面并创建新文件，不会重新生成页面图像，因此保留扫描清晰度。工具还可以旋转或删除页面。请保留原件：缩略图网格没有撤销按钮可恢复已删除页面，但可以重新加载源文件。"
+          },
+          {
+            "t": "h2",
+            "x": "是否需要 OCR？"
+          },
+          {
+            "t": "p",
+            "x": "重新排序不会识别文字。如果需要搜索或复制扫描件中的文字，请之后运行[OCR PDF](/tools/ocr-pdf)，并检查姓名、数字和小字。重新生成的 PDF 也不会保留整份文档级书签；如有需要，请保留源文件。"
+          },
+          {
+            "t": "h2",
+            "x": "检查并保存新副本"
+          },
+          {
+            "t": "p",
+            "x": "处理在浏览器标签页本地完成。分享前请打开副本，检查所有页面、方向和自然的阅读顺序。尤其检查开头和结尾，扫描批次常在这些位置出现顺序错乱。"
+          },
+          {
+            "t": "table",
+            "head": [
+              "任务",
+              "工具",
+              "说明"
+            ],
+            "rows": [
+              [
+                "调整顺序",
+                "整理 PDF",
+                "使用页面缩略图"
+              ],
+              [
+                "搜索文字",
+                "之后运行 OCR PDF",
+                "排序无需 OCR"
+              ],
+              [
+                "保留源文件",
+                "下载新副本",
+                "源文件不会更改"
+              ],
+              [
+                "保留书签",
+                "保存原件",
+                "全局书签不会转移"
+              ]
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "重新排列扫描页面需要 OCR 吗？",
+            "a": "不需要。“整理 PDF”会显示页面缩略图，可以直接根据图像排序，无需识别文字。只有之后需要搜索或选择文字时才需要 OCR。"
+          },
+          {
+            "q": "重新排序会降低扫描质量吗？",
+            "a": "不会。工具会将页面复制到新文件并改变顺序，不会重新拍摄或栅格化。图像保留原 PDF 的质量。"
+          },
+          {
+            "q": "可以修复从后往前扫描的文件吗？",
+            "a": "可以。按反向顺序拖动缩略图；如果整份文件顺序颠倒，也可以使用 Reverse。横向页面还可以单独旋转。"
+          },
+          {
+            "q": "整理页面会更改原 PDF 吗？",
+            "a": "不会。“整理 PDF”会下载一份重新排序的新副本，源文件保持不变。请保留原件，以便需要时恢复页面或书签。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15",
+        "relatedTools": [
+          "organize-pdf",
+          "ocr-pdf",
+          "pdf-reader",
+          "split-pdf"
+        ],
+        "relatedPosts": [
+          "insert-pages-into-pdf",
+          "add-cover-page-to-pdf",
+          "remove-blank-pdf-pages",
+          "rotate-scanned-pdf-correctly"
         ]
       }
     ]
