@@ -8119,6 +8119,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "extract-pdf-appendix",
+        "slug": "extract-pdf-appendix",
+        "cluster": "editing-expansion",
+        "tool": "extract-pages",
+        "title": "Cómo extraer un anexo de un PDF",
+        "metaTitle": "Cómo extraer un anexo de un PDF",
+        "metaDescription": "Extrae las páginas de un anexo a un PDF nuevo, en orden y sin pérdida de calidad. Gratis en el navegador, sin cuenta.",
+        "answer": "Para extraer un anexo de un PDF, identifica las posiciones de sus páginas y escribe esos números o rangos en Extraer páginas. La herramienta crea un archivo nuevo con solo las páginas elegidas, en el orden indicado, y deja intacto el original. Revisa la numeración porque puede diferir de los números impresos.",
+        "sections": [
+          {
+            "heading": "Extrae un anexo PDF en cuatro pasos",
+            "paragraphs": [
+              "Para extraer un anexo de un PDF, identifica las posiciones de sus páginas y escribe esos números o rangos en Extraer páginas. La herramienta crea un archivo nuevo con solo las páginas elegidas, en el orden indicado, y deja intacto el original. Revisa la numeración porque puede diferir de los números impresos."
+            ],
+            "steps": [
+              {
+                "heading": "Guarda el original",
+                "text": "Conserva una copia completa del contrato o informe. Extraer páginas crea un documento separado y no cambia la fuente."
+              },
+              {
+                "heading": "Localiza el anexo",
+                "text": "Cuenta las páginas desde la primera hoja del PDF. Una portada, índice o separador puede desplazar la posición frente al número visible impreso. Usa [PDF Reader](/tools/pdf-reader) o miniaturas para confirmar."
+              },
+              {
+                "heading": "Abre Extraer páginas",
+                "text": "Carga el archivo en [Extraer páginas PDF](/tools/extract-pages) y escribe los números o rangos del anexo, separados por comas, por ejemplo 8-12. El resultado sigue el orden que escribas."
+              },
+              {
+                "heading": "Descarga y comprueba",
+                "text": "Guarda el PDF nuevo y confirma que incluye todas las páginas del anexo y ninguna página que no quieras compartir. Revisa enlaces, firmas y orientación."
+              }
+            ]
+          },
+          {
+            "heading": "Qué conserva la extracción de páginas",
+            "paragraphs": [
+              "Extraer páginas produce un único PDF con las páginas que indicas. Para un anexo continuo, introduce un rango. Si necesitas páginas separadas en archivos distintos, [Dividir PDF](/tools/split-pdf) puede generar varios documentos. Comprueba siempre qué tipo de salida necesitas antes de entregar.",
+              "Las páginas conservan su contenido y calidad: el texto sigue seleccionable y las imágenes no se vuelven a dibujar. Sin embargo, los marcadores globales del documento y algunos metadatos generales, como autor o título, no necesariamente se transfieren a la copia extraída.",
+              "Los números de entrada son posiciones en el archivo empezando por 1, no los números impresos en el pie. Si escribes varios números, el orden de salida coincide con el orden de la lista. Por ejemplo, 12, 8-9 coloca primero la página 12. Una página repetida se incluye una sola vez.",
+              "La herramienta procesa el archivo en tu navegador y descarga un nuevo PDF, sin subir el contrato a un servidor. Aun así, extraer páginas no oculta información dentro de las páginas que conservas. Revisa el contenido y los destinatarios, y elimina metadatos con [Eliminar metadatos PDF](/tools/remove-metadata) si procede."
+            ]
+          }
+        ],
+        "ctaLabel": "Extrae páginas gratis en el navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿Cómo extraigo un anexo de un PDF?",
+            "a": "Cuenta las posiciones de las páginas del anexo, abre Extraer páginas, escribe el rango y descarga el nuevo PDF. Usa la posición del archivo, no el número impreso. Comprueba que el resultado contiene todas las páginas esperadas antes de compartirlo."
+          },
+          {
+            "q": "¿Se conserva la calidad del anexo?",
+            "a": "Sí. Las páginas se copian al nuevo PDF sin convertirlas en imágenes ni redibujarlas. El texto permanece seleccionable y las imágenes mantienen su calidad. Algunos detalles globales, como marcadores del documento, no se copian necesariamente."
+          },
+          {
+            "q": "¿Puedo extraer páginas que no están juntas?",
+            "a": "Sí. Escribe páginas o rangos separados por comas, como 2, 8-10, 14. Las páginas aparecen en el nuevo archivo en el orden indicado. Si quieres un archivo separado por página o rango, usa Dividir PDF."
+          },
+          {
+            "q": "¿Extraer el anexo modifica el contrato original?",
+            "a": "No. La herramienta genera una copia aparte y deja intacto el archivo de origen. Conserva el documento completo para el registro. Revisa la copia extraída antes de enviarla, ya que las páginas omitidas no estarán en ese archivo."
+          }
+        ],
+        "keywords": [
+          "cómo extraer un anexo de un pdf",
+          "extract PDF appendix",
+          "extract pages from PDF"
+        ],
+        "relatedTools": [
+          "extract-pages",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -16222,6 +16303,87 @@
         ],
         "relatedTools": [
           "compare-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "extract-pdf-appendix",
+        "slug": "extract-pdf-appendix",
+        "cluster": "editing-expansion",
+        "tool": "extract-pages",
+        "title": "Como extrair um anexo de um PDF",
+        "metaTitle": "Como extrair um anexo de um PDF",
+        "metaDescription": "Extraia as páginas de um anexo para um novo PDF, na ordem e sem perda de qualidade. Grátis no navegador, sem conta.",
+        "answer": "Para extrair um anexo de um PDF, identifique as posições das páginas e informe esses números ou intervalos em Extrair páginas. A ferramenta cria um novo arquivo apenas com as páginas escolhidas, na ordem indicada, e mantém o original intacto. Confira a numeração, pois ela pode diferir dos números impressos.",
+        "sections": [
+          {
+            "heading": "Extraia um anexo PDF em quatro etapas",
+            "paragraphs": [
+              "Para extrair um anexo de um PDF, identifique as posições das páginas e informe esses números ou intervalos em Extrair páginas. A ferramenta cria um novo arquivo apenas com as páginas escolhidas, na ordem indicada, e mantém o original intacto. Confira a numeração, pois ela pode diferir dos números impressos."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o original",
+                "text": "Mantenha uma cópia completa do contrato ou relatório. Extrair páginas cria outro documento e não altera a fonte."
+              },
+              {
+                "heading": "Localize o anexo",
+                "text": "Conte as páginas desde a primeira folha do PDF. Capa, sumário ou separador pode deslocar a posição em relação ao número impresso. Use [PDF Reader](/tools/pdf-reader) ou miniaturas para confirmar."
+              },
+              {
+                "heading": "Abra Extrair páginas",
+                "text": "Carregue o arquivo em [Extrair páginas do PDF](/tools/extract-pages) e informe os números ou intervalos do anexo separados por vírgulas, por exemplo 8-12. A saída segue a ordem digitada."
+              },
+              {
+                "heading": "Baixe e confira",
+                "text": "Salve o novo PDF e confirme que ele inclui todas as páginas do anexo e nenhuma página que não deseja compartilhar. Revise links, assinaturas e orientação."
+              }
+            ]
+          },
+          {
+            "heading": "O que a extração de páginas preserva",
+            "paragraphs": [
+              "Extrair páginas gera um único PDF com as páginas indicadas. Para um anexo contínuo, informe um intervalo. Se precisar de arquivos separados, um por página ou faixa, [Dividir PDF](/tools/split-pdf) pode criar vários documentos. Confirme o formato de saída antes de entregar.",
+              "As páginas mantêm o conteúdo e a qualidade: o texto continua selecionável e as imagens não são redesenhadas. Porém, marcadores gerais do documento e alguns metadados, como autor e título, podem não ser transferidos para a cópia extraída.",
+              "Os números informados são posições no arquivo, começando pela primeira folha como 1, e não os números impressos no rodapé. Com vários itens, a saída segue a ordem da lista. Por exemplo, 12, 8-9 coloca a página 12 primeiro. Uma página repetida entra apenas uma vez.",
+              "A ferramenta processa o arquivo no navegador e baixa um novo PDF, sem enviar o contrato a um servidor. Mesmo assim, extrair páginas não oculta informações nas páginas mantidas. Revise o conteúdo e os destinatários e, se necessário, use [Remover metadados do PDF](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Extraia páginas grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "Como extrair um anexo de um PDF?",
+            "a": "Conte as posições das páginas do anexo, abra Extrair páginas, informe o intervalo e baixe o novo PDF. Use a posição no arquivo, não o número impresso. Confira se o resultado contém todas as páginas esperadas antes de compartilhar."
+          },
+          {
+            "q": "A qualidade do anexo é preservada?",
+            "a": "Sim. As páginas são copiadas para o novo PDF sem serem convertidas em imagens ou redesenhadas. O texto continua selecionável e as imagens mantêm a qualidade. Alguns detalhes gerais, como marcadores do documento, podem não ser copiados."
+          },
+          {
+            "q": "Posso extrair páginas que não são consecutivas?",
+            "a": "Sim. Informe páginas ou intervalos separados por vírgulas, como 2, 8-10, 14. Elas aparecem na saída na ordem digitada. Se precisar de um arquivo por página ou intervalo, use Dividir PDF."
+          },
+          {
+            "q": "Extrair o anexo altera o contrato original?",
+            "a": "Não. A ferramenta cria uma cópia separada e preserva o arquivo de origem. Guarde o documento completo para registro. Revise a cópia antes de enviar, pois as páginas omitidas não estarão nela."
+          }
+        ],
+        "keywords": [
+          "como extrair um anexo de um pdf",
+          "extract PDF appendix",
+          "extract pages from PDF"
+        ],
+        "relatedTools": [
+          "extract-pages",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -24345,6 +24507,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "extract-pdf-appendix",
+        "slug": "extract-pdf-appendix",
+        "cluster": "editing-expansion",
+        "tool": "extract-pages",
+        "title": "PDF से परिशिष्ट कैसे निकालें",
+        "metaTitle": "PDF से परिशिष्ट कैसे निकालें",
+        "metaDescription": "परिशिष्ट के पेज नए PDF में निकालें, सही क्रम और बिना गुणवत्ता घटाए। ब्राउज़र में मुफ्त, बिना खाते के।",
+        "answer": "PDF से परिशिष्ट निकालने के लिए उसके पेजों की फ़ाइल स्थिति पहचानें और Extract Pages में नंबर या रेंज लिखें। टूल केवल चुने हुए पेजों की नई फ़ाइल बनाता है, दिए क्रम में, और मूल को जस का तस रखता है। पेज नंबर जांचें क्योंकि छपे नंबर अलग हो सकते हैं।",
+        "sections": [
+          {
+            "heading": "चार चरणों में PDF परिशिष्ट निकालें",
+            "paragraphs": [
+              "PDF से परिशिष्ट निकालने के लिए उसके पेजों की फ़ाइल स्थिति पहचानें और Extract Pages में नंबर या रेंज लिखें। टूल केवल चुने हुए पेजों की नई फ़ाइल बनाता है, दिए क्रम में, और मूल को जस का तस रखता है। पेज नंबर जांचें क्योंकि छपे नंबर अलग हो सकते हैं।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल फ़ाइल रखें",
+                "text": "पूरा अनुबंध या रिपोर्ट सुरक्षित रखें। Extract Pages अलग दस्तावेज़ बनाता है और स्रोत नहीं बदलता।"
+              },
+              {
+                "heading": "परिशिष्ट खोजें",
+                "text": "PDF की पहली शीट से पेज गिनें। कवर, विषय-सूची या डिवाइडर के कारण स्थिति छपे नंबर से अलग हो सकती है। [PDF Reader](/tools/pdf-reader) या थंबनेल से पुष्टि करें।"
+              },
+              {
+                "heading": "Extract Pages खोलें",
+                "text": "फ़ाइल [Extract Pages](/tools/extract-pages) में खोलें और परिशिष्ट के पेज नंबर या रेंज कॉमा से अलग लिखें, जैसे 8-12। आउटपुट उसी क्रम में होगा जो सूची में है।"
+              },
+              {
+                "heading": "डाउनलोड और जांचें",
+                "text": "नया PDF सेव करके पुष्टि करें कि परिशिष्ट के सभी पेज हैं और साझा न करने वाले पेज शामिल नहीं हैं। लिंक, हस्ताक्षर और दिशा भी जांचें।"
+              }
+            ]
+          },
+          {
+            "heading": "पेज निकालने पर क्या सुरक्षित रहता है",
+            "paragraphs": [
+              "Extract Pages चुने हुए पेजों का एक PDF बनाता है। लगातार परिशिष्ट के लिए रेंज दें। अगर हर पेज या रेंज अलग फ़ाइल में चाहिए, तो [Split PDF](/tools/split-pdf) कई फ़ाइलें बना सकता है। भेजने से पहले तय करें कि एक फ़ाइल चाहिए या अलग-अलग।",
+              "पेज अपनी सामग्री और गुणवत्ता बनाए रखते हैं: टेक्स्ट चयन योग्य रहता है और इमेज दोबारा नहीं बनाई जाती। हालांकि पूरे दस्तावेज़ के बुकमार्क और कुछ सामान्य मेटाडेटा, जैसे लेखक या शीर्षक, नई कॉपी में नहीं आ सकते।",
+              "दिए नंबर फ़ाइल की स्थिति हैं, पहली शीट 1 से गिनी जाती है; फुटर में छपे नंबर नहीं। कई पेज लिखने पर आउटपुट सूची के क्रम का पालन करता है। उदाहरण के लिए 12, 8-9 में पेज 12 पहले आएगा। दोहराया पेज एक बार ही शामिल होगा।",
+              "टूल ब्राउज़र में फ़ाइल प्रोसेस कर नया PDF डाउनलोड करता है; अनुबंध सर्वर पर नहीं भेजा जाता। फिर भी निकाले गए पेजों में जानकारी छिपती नहीं। सामग्री और प्राप्तकर्ता जांचें, और जरूरत हो तो [Remove PDF Metadata](/tools/remove-metadata) इस्तेमाल करें।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में पेज मुफ्त निकालें, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "PDF से परिशिष्ट कैसे निकालूं?",
+            "a": "परिशिष्ट के पेजों की फ़ाइल स्थिति गिनें, Extract Pages खोलें, रेंज लिखें और नया PDF डाउनलोड करें। छपे नंबर के बजाय फ़ाइल की स्थिति दें। साझा करने से पहले जांचें कि सभी जरूरी पेज शामिल हैं।"
+          },
+          {
+            "q": "क्या परिशिष्ट की गुणवत्ता बनी रहती है?",
+            "a": "हां। पेज नए PDF में कॉपी होते हैं, इमेज में नहीं बदले या दोबारा बनाए जाते। टेक्स्ट चयन योग्य रहता है और चित्र गुणवत्ता बनाए रखते हैं। पूरे दस्तावेज़ के बुकमार्क जैसे विवरण शायद कॉपी न हों।"
+          },
+          {
+            "q": "क्या अलग-अलग जगह के पेज निकाल सकता हूं?",
+            "a": "हां। कॉमा से अलग पेज या रेंज लिखें, जैसे 2, 8-10, 14। आउटपुट उसी क्रम में आता है। हर पेज या रेंज अलग फ़ाइल में चाहिए तो Split PDF इस्तेमाल करें।"
+          },
+          {
+            "q": "क्या परिशिष्ट निकालने से मूल अनुबंध बदलता है?",
+            "a": "नहीं। टूल अलग कॉपी बनाता है और स्रोत फ़ाइल सुरक्षित रहती है। रिकॉर्ड के लिए पूरा दस्तावेज़ रखें। भेजने से पहले निकाली कॉपी जांचें, क्योंकि छोड़े गए पेज उसमें नहीं होंगे।"
+          }
+        ],
+        "keywords": [
+          "pdf से परिशिष्ट कैसे निकालें",
+          "extract PDF appendix",
+          "extract pages from PDF"
+        ],
+        "relatedTools": [
+          "extract-pages",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -32457,6 +32700,87 @@
         ],
         "relatedTools": [
           "compare-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "extract-pdf-appendix",
+        "slug": "extract-pdf-appendix",
+        "cluster": "editing-expansion",
+        "tool": "extract-pages",
+        "title": "كيفية استخراج ملحق من PDF",
+        "metaTitle": "كيفية استخراج ملحق من PDF",
+        "metaDescription": "استخرج صفحات الملحق إلى PDF جديد بالترتيب ومن دون فقدان الجودة. مجاناً في المتصفح، بلا حساب. استخدمه مجاناً في المتصفح، دون تسجيل أو رفع الملفات.",
+        "answer": "لاستخراج ملحق من PDF، حدّد مواضع صفحاته وأدخل الأرقام أو النطاقات في Extract Pages. تنشئ الأداة ملفاً جديداً بالصفحات المختارة فقط وبالترتيب المحدد، وتترك الأصل دون تغيير. راجع الترقيم لأن موضع الصفحة قد يختلف عن الرقم المطبوع.",
+        "sections": [
+          {
+            "heading": "استخراج ملحق PDF في أربع خطوات",
+            "paragraphs": [
+              "لاستخراج ملحق من PDF، حدّد مواضع صفحاته وأدخل الأرقام أو النطاقات في Extract Pages. تنشئ الأداة ملفاً جديداً بالصفحات المختارة فقط وبالترتيب المحدد، وتترك الأصل دون تغيير. راجع الترقيم لأن موضع الصفحة قد يختلف عن الرقم المطبوع."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بالأصل",
+                "text": "أبقِ نسخة كاملة من العقد أو التقرير. تنشئ Extract Pages مستنداً منفصلاً ولا تغيّر المصدر."
+              },
+              {
+                "heading": "حدّد الملحق",
+                "text": "ابدأ العد من الصفحة الأولى في PDF. قد يغيّر الغلاف أو الفهرس أو صفحة الفصل موضع الملحق عن رقمه المطبوع. استخدم [PDF Reader](/tools/pdf-reader) أو الصور المصغرة للتأكد."
+              },
+              {
+                "heading": "افتح Extract Pages",
+                "text": "حمّل الملف في [Extract Pages](/tools/extract-pages) وأدخل أرقام صفحات الملحق أو نطاقاته مفصولة بفواصل، مثل 8-12. يتبع الملف الناتج ترتيب القائمة."
+              },
+              {
+                "heading": "نزّل وراجع",
+                "text": "احفظ PDF الجديد وتأكد من وجود جميع صفحات الملحق وعدم وجود صفحات لا تريد مشاركتها. افحص الروابط والتوقيعات والاتجاه."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي يحافظ عليه استخراج الصفحات",
+            "paragraphs": [
+              "تنشئ Extract Pages ملف PDF واحداً من الصفحات التي تحددها. أدخل نطاقاً إذا كان الملحق متصلاً. إذا احتجت إلى ملفات منفصلة لكل صفحة أو نطاق، يمكن لأداة [Split PDF](/tools/split-pdf) إنشاء عدة ملفات. حدد نوع الناتج المطلوب قبل التسليم.",
+              "تحافظ الصفحات على محتواها وجودتها: يبقى النص قابلاً للتحديد ولا يعاد رسم الصور. لكن الإشارات المرجعية العامة وبعض البيانات الوصفية، مثل المؤلف أو العنوان، قد لا تنتقل إلى النسخة المستخرجة.",
+              "الأرقام التي تدخلها هي مواضع في الملف بدءاً من الورقة الأولى برقم 1، وليست الأرقام المطبوعة في التذييل. يتبع الناتج ترتيب قائمتك؛ مثلاً 12, 8-9 يضع الصفحة 12 أولاً. لا تدرج الصفحة المكررة إلا مرة واحدة.",
+              "تعالج الأداة الملف في المتصفح وتنزّل PDF جديداً دون رفع العقد إلى خادم. ومع ذلك لا يخفي الاستخراج المعلومات داخل الصفحات التي تحتفظ بها. راجع المحتوى والمستلمين، واستخدم [Remove PDF Metadata](/tools/remove-metadata) عند الحاجة."
+            ]
+          }
+        ],
+        "ctaLabel": "استخرج الصفحات مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "كيف أستخرج ملحقاً من PDF؟",
+            "a": "احسب مواضع صفحات الملحق، وافتح Extract Pages، وأدخل النطاق ثم نزّل PDF الجديد. استخدم موضع الصفحة في الملف لا الرقم المطبوع. تحقق من وجود الصفحات المطلوبة كلها قبل المشاركة."
+          },
+          {
+            "q": "هل تحتفظ صفحات الملحق بجودتها؟",
+            "a": "نعم. تُنسخ الصفحات إلى PDF جديد دون تحويلها إلى صور أو إعادة رسمها. يبقى النص قابلاً للتحديد وتحافظ الصور على جودتها. وقد لا تنتقل بعض التفاصيل العامة مثل الإشارات المرجعية."
+          },
+          {
+            "q": "هل يمكن استخراج صفحات غير متتابعة؟",
+            "a": "نعم. أدخل أرقاماً أو نطاقات مفصولة بفواصل، مثل 2, 8-10, 14. تظهر الصفحات بالترتيب المكتوب. إذا أردت ملفاً منفصلاً لكل صفحة أو نطاق، استخدم Split PDF."
+          },
+          {
+            "q": "هل يغيّر استخراج الملحق العقد الأصلي؟",
+            "a": "لا. تنشئ الأداة نسخة منفصلة وتبقي المصدر كما هو. احتفظ بالوثيقة الكاملة للأرشفة وراجع النسخة قبل إرسالها، فالصفحات التي لم تحددها لن تظهر فيها."
+          }
+        ],
+        "keywords": [
+          "كيفية استخراج ملحق من pdf",
+          "extract PDF appendix",
+          "extract pages from PDF"
+        ],
+        "relatedTools": [
+          "extract-pages",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -40592,6 +40916,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "extract-pdf-appendix",
+        "slug": "extract-pdf-appendix",
+        "cluster": "editing-expansion",
+        "tool": "extract-pages",
+        "title": "PDF থেকে পরিশিষ্ট কীভাবে বের করবেন",
+        "metaTitle": "PDF থেকে পরিশিষ্ট কীভাবে বের করবেন",
+        "metaDescription": "পরিশিষ্টের পৃষ্ঠাগুলো নতুন PDF-এ সঠিক ক্রমে ও মান না কমিয়ে বের করুন। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট ছাড়া।",
+        "answer": "PDF থেকে পরিশিষ্ট বের করতে তার পৃষ্ঠাগুলোর ফাইল অবস্থান নির্ধারণ করে Extract Pages-এ নম্বর বা রেঞ্জ লিখুন। টুলটি বেছে নেওয়া পৃষ্ঠাগুলো দিয়ে নতুন ফাইল বানায়, নির্দিষ্ট ক্রমে, এবং মূল ফাইল অপরিবর্তিত রাখে। ছাপা নম্বরের সঙ্গে অবস্থান নাও মিলতে পারে, তাই যাচাই করুন।",
+        "sections": [
+          {
+            "heading": "চার ধাপে PDF পরিশিষ্ট বের করুন",
+            "paragraphs": [
+              "PDF থেকে পরিশিষ্ট বের করতে তার পৃষ্ঠাগুলোর ফাইল অবস্থান নির্ধারণ করে Extract Pages-এ নম্বর বা রেঞ্জ লিখুন। টুলটি বেছে নেওয়া পৃষ্ঠাগুলো দিয়ে নতুন ফাইল বানায়, নির্দিষ্ট ক্রমে, এবং মূল ফাইল অপরিবর্তিত রাখে। ছাপা নম্বরের সঙ্গে অবস্থান নাও মিলতে পারে, তাই যাচাই করুন।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল ফাইল রাখুন",
+                "text": "চুক্তি বা রিপোর্টের পূর্ণ কপি সংরক্ষণ করুন। Extract Pages আলাদা নথি তৈরি করে, উৎস বদলায় না।"
+              },
+              {
+                "heading": "পরিশিষ্ট খুঁজুন",
+                "text": "PDF-এর প্রথম পৃষ্ঠা থেকে গুনুন। কভার, সূচি বা বিভাজক পৃষ্ঠা থাকলে অবস্থান ছাপা নম্বর থেকে সরে যায়। নিশ্চিত হতে [PDF Reader](/tools/pdf-reader) বা থাম্বনেইল দেখুন।"
+              },
+              {
+                "heading": "Extract Pages খুলুন",
+                "text": "ফাইল [Extract Pages](/tools/extract-pages)-এ দিন এবং পরিশিষ্টের পৃষ্ঠা নম্বর বা কমা দিয়ে আলাদা রেঞ্জ লিখুন, যেমন 8-12। আউটপুট তালিকার ক্রম অনুসরণ করে।"
+              },
+              {
+                "heading": "ডাউনলোড করে পরীক্ষা করুন",
+                "text": "নতুন PDF সংরক্ষণ করে দেখুন পরিশিষ্টের সব পৃষ্ঠা আছে কি না এবং শেয়ার না করার কোনো পৃষ্ঠা ঢুকে গেছে কি না। লিংক, স্বাক্ষর ও দিক পরীক্ষা করুন।"
+              }
+            ]
+          },
+          {
+            "heading": "পৃষ্ঠা বের করলে কী অক্ষুণ্ণ থাকে",
+            "paragraphs": [
+              "Extract Pages নির্বাচিত পৃষ্ঠাগুলো নিয়ে একটি PDF তৈরি করে। পরিশিষ্ট একটানা হলে রেঞ্জ দিন। পৃষ্ঠা বা রেঞ্জ আলাদা ফাইলে দরকার হলে [Split PDF](/tools/split-pdf) একাধিক ফাইল তৈরি করতে পারে। দেওয়ার আগে ঠিক করুন এক নথি নাকি আলাদা নথি দরকার।",
+              "পৃষ্ঠাগুলো বিষয়বস্তু ও মান ধরে রাখে: লেখা নির্বাচনযোগ্য থাকে এবং ছবি নতুন করে আঁকা হয় না। তবে পুরো নথির বুকমার্ক এবং লেখক বা শিরোনামের মতো কিছু সাধারণ মেটাডেটা নতুন কপিতে নাও আসতে পারে।",
+              "ইনপুট নম্বর ফাইলের অবস্থান, প্রথম পৃষ্ঠা 1 থেকে; ফুটারে ছাপা নম্বর নয়। একাধিক নম্বর দিলে আউটপুট সেই তালিকার ক্রমে আসে। যেমন 12, 8-9 দিলে পৃষ্ঠা 12 আগে থাকবে। একই পৃষ্ঠা দুবার লিখলেও একবারই যোগ হয়।",
+              "টুলটি ব্রাউজারে ফাইল প্রক্রিয়া করে এবং নতুন PDF নামায়; চুক্তি সার্ভারে আপলোড হয় না। তবু রাখা পৃষ্ঠার ভেতরের তথ্য এটি লুকায় না। বিষয়বস্তু ও প্রাপক দেখুন, এবং প্রয়োজন হলে [Remove PDF Metadata](/tools/remove-metadata) ব্যবহার করুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে পৃষ্ঠা বের করুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "PDF থেকে পরিশিষ্ট কীভাবে বের করব?",
+            "a": "পরিশিষ্ট পৃষ্ঠার ফাইল অবস্থান গুনুন, Extract Pages খুলে রেঞ্জ দিন এবং নতুন PDF ডাউনলোড করুন। ছাপা নম্বর নয়, ফাইলের অবস্থান দিন। শেয়ারের আগে সব প্রয়োজনীয় পৃষ্ঠা আছে কি না দেখুন।"
+          },
+          {
+            "q": "পরিশিষ্টের মান কি ঠিক থাকে?",
+            "a": "হ্যাঁ। পৃষ্ঠা নতুন PDF-এ কপি হয়, ইমেজে বদলে বা নতুন করে আঁকা হয় না। লেখা নির্বাচনযোগ্য এবং ছবির গুণমান অক্ষুণ্ণ থাকে। নথির বুকমার্কের মতো কিছু সাধারণ তথ্য নাও কপি হতে পারে।"
+          },
+          {
+            "q": "একসঙ্গে না থাকা পৃষ্ঠা বের করা যাবে?",
+            "a": "হ্যাঁ। কমা দিয়ে আলাদা নম্বর বা রেঞ্জ লিখুন, যেমন 2, 8-10, 14। আউটপুট একই ক্রমে হবে। প্রতি পৃষ্ঠা বা রেঞ্জ আলাদা ফাইলে চাইলে Split PDF ব্যবহার করুন।"
+          },
+          {
+            "q": "পরিশিষ্ট বের করলে মূল চুক্তি বদলে যায়?",
+            "a": "না। টুল আলাদা কপি তৈরি করে, উৎস অপরিবর্তিত থাকে। রেকর্ডের জন্য পূর্ণ নথি রাখুন। পাঠানোর আগে কপি পরীক্ষা করুন, কারণ তালিকায় না থাকা পৃষ্ঠা সেখানে থাকবে না।"
+          }
+        ],
+        "keywords": [
+          "pdf থেকে পরিশিষ্ট কীভাবে বের করবেন",
+          "extract PDF appendix",
+          "extract pages from PDF"
+        ],
+        "relatedTools": [
+          "extract-pages",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -48695,6 +49100,87 @@
         ],
         "relatedTools": [
           "compare-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "extract-pdf-appendix",
+        "slug": "extract-pdf-appendix",
+        "cluster": "editing-expansion",
+        "tool": "extract-pages",
+        "title": "Cách trích phụ lục khỏi PDF",
+        "metaTitle": "Cách trích phụ lục khỏi PDF",
+        "metaDescription": "Trích các trang phụ lục thành PDF mới đúng thứ tự, không giảm chất lượng. Miễn phí trong trình duyệt, không cần tài khoản.",
+        "answer": "Để trích phụ lục khỏi PDF, xác định vị trí trang rồi nhập số hoặc khoảng trang vào Extract Pages. Công cụ tạo tệp mới chỉ gồm các trang đã chọn theo thứ tự bạn nhập và giữ nguyên bản gốc. Hãy kiểm tra số trang vì vị trí có thể khác số in trên trang.",
+        "sections": [
+          {
+            "heading": "Trích phụ lục PDF qua bốn bước",
+            "paragraphs": [
+              "Để trích phụ lục khỏi PDF, xác định vị trí trang rồi nhập số hoặc khoảng trang vào Extract Pages. Công cụ tạo tệp mới chỉ gồm các trang đã chọn theo thứ tự bạn nhập và giữ nguyên bản gốc. Hãy kiểm tra số trang vì vị trí có thể khác số in trên trang."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ bản gốc",
+                "text": "Lưu một bản đầy đủ của hợp đồng hoặc báo cáo. Extract Pages tạo tài liệu riêng và không sửa nguồn."
+              },
+              {
+                "heading": "Tìm phụ lục",
+                "text": "Đếm từ trang đầu của PDF. Bìa, mục lục hoặc trang phân cách có thể làm vị trí khác với số in. Dùng [PDF Reader](/tools/pdf-reader) hoặc hình thu nhỏ để xác nhận."
+              },
+              {
+                "heading": "Mở Extract Pages",
+                "text": "Tải tệp vào [Extract Pages](/tools/extract-pages), nhập số trang hoặc khoảng của phụ lục, cách nhau bằng dấu phẩy, ví dụ 8-12. Tệp mới theo đúng thứ tự đã nhập."
+              },
+              {
+                "heading": "Tải xuống và kiểm tra",
+                "text": "Lưu PDF mới, xác nhận có đủ trang phụ lục và không có trang ngoài phạm vi muốn chia sẻ. Kiểm tra liên kết, chữ ký và hướng trang."
+              }
+            ]
+          },
+          {
+            "heading": "Trích trang giữ nguyên những gì",
+            "paragraphs": [
+              "Extract Pages tạo một PDF chứa các trang bạn chỉ định. Nếu phụ lục liền nhau, nhập một khoảng. Nếu cần tệp riêng cho từng trang hoặc khoảng, [Split PDF](/tools/split-pdf) có thể tạo nhiều tài liệu. Hãy xác định kiểu đầu ra trước khi gửi.",
+              "Các trang giữ nguyên nội dung và chất lượng: văn bản vẫn chọn được và hình ảnh không bị vẽ lại. Tuy nhiên, dấu trang toàn tài liệu và một số siêu dữ liệu chung như tác giả hoặc tiêu đề có thể không được mang sang bản trích.",
+              "Số nhập là vị trí trong tệp, tính từ trang đầu là 1, không phải số in ở chân trang. Khi nhập nhiều mục, đầu ra theo thứ tự danh sách. Ví dụ 12, 8-9 sẽ đưa trang 12 lên trước. Trang lặp chỉ được thêm một lần.",
+              "Công cụ xử lý trong trình duyệt và tải xuống PDF mới, không gửi hợp đồng lên máy chủ. Tuy vậy, trích trang không che thông tin trên trang bạn giữ lại. Kiểm tra nội dung và người nhận, và dùng [Remove PDF Metadata](/tools/remove-metadata) nếu cần."
+            ]
+          }
+        ],
+        "ctaLabel": "Trích trang miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Làm sao trích phụ lục khỏi PDF?",
+            "a": "Đếm vị trí các trang phụ lục, mở Extract Pages, nhập khoảng rồi tải PDF mới. Dùng vị trí trong tệp thay vì số in. Kiểm tra tất cả trang cần thiết có mặt trước khi chia sẻ."
+          },
+          {
+            "q": "Phụ lục có giữ nguyên chất lượng không?",
+            "a": "Có. Trang được sao chép sang PDF mới, không biến thành ảnh hoặc vẽ lại. Văn bản vẫn chọn được và ảnh giữ chất lượng. Một số thông tin chung như dấu trang có thể không được sao chép."
+          },
+          {
+            "q": "Tôi có thể trích các trang rời nhau không?",
+            "a": "Có. Nhập số trang hoặc khoảng cách nhau bằng dấu phẩy, như 2, 8-10, 14. Đầu ra theo thứ tự đó. Nếu muốn tệp riêng cho từng trang hoặc khoảng, dùng Split PDF."
+          },
+          {
+            "q": "Trích phụ lục có làm đổi hợp đồng gốc không?",
+            "a": "Không. Công cụ tạo bản riêng và giữ nguyên tệp nguồn. Hãy lưu bản đầy đủ để lưu hồ sơ. Kiểm tra bản trích trước khi gửi vì các trang không chọn sẽ không có trong đó."
+          }
+        ],
+        "keywords": [
+          "cách trích phụ lục khỏi pdf",
+          "extract PDF appendix",
+          "extract pages from PDF"
+        ],
+        "relatedTools": [
+          "extract-pages",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
@@ -56817,6 +57303,87 @@
         ],
         "relatedTools": [
           "compare-pdf",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "extract-pdf-appendix",
+        "slug": "extract-pdf-appendix",
+        "cluster": "editing-expansion",
+        "tool": "extract-pages",
+        "title": "如何从 PDF 中提取附录",
+        "metaTitle": "如何从 PDF 中提取附录",
+        "metaDescription": "将附录页面按顺序提取到新的 PDF，保持原有质量。浏览器内免费处理，无需账户。 可在浏览器中免费使用，无需注册或上传文件。",
+        "answer": "要从 PDF 中提取附录，请确定这些页面在文件中的位置，并在 Extract Pages 中输入页码或范围。工具只将选定页面按指定顺序写入新文件，原件保持不变。请核对页码位置，因为它可能与页面上印刷的编号不同。",
+        "sections": [
+          {
+            "heading": "四步提取 PDF 附录",
+            "paragraphs": [
+              "要从 PDF 中提取附录，请确定这些页面在文件中的位置，并在 Extract Pages 中输入页码或范围。工具只将选定页面按指定顺序写入新文件，原件保持不变。请核对页码位置，因为它可能与页面上印刷的编号不同。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原文件",
+                "text": "保存完整的合同或报告副本。Extract Pages 会创建单独文档，不会修改源文件。"
+              },
+              {
+                "heading": "找到附录页面",
+                "text": "从 PDF 第一页开始计数。封面、目录或分隔页可能导致文件位置与印刷页码不同。可用 [PDF Reader](/tools/pdf-reader) 或缩略图确认。"
+              },
+              {
+                "heading": "打开 Extract Pages",
+                "text": "在 [Extract Pages](/tools/extract-pages) 中加载文件，输入附录页码或范围，并用逗号分隔，例如 8-12。输出会遵循输入顺序。"
+              },
+              {
+                "heading": "下载并检查",
+                "text": "保存新的 PDF，确认附录页面齐全，且没有不想分享的页面。检查链接、签名和页面方向。"
+              }
+            ]
+          },
+          {
+            "heading": "提取页面会保留什么",
+            "paragraphs": [
+              "Extract Pages 会将指定页面放入一个新 PDF。若附录连续，输入一个范围即可。若需要每页或每个范围分别生成文件，可用 [Split PDF](/tools/split-pdf) 创建多个文档。交付前先确定需要单个文件还是多个文件。",
+              "页面会保留原有内容和质量：文本仍可选择，图像不会重新绘制。不过，文档级书签以及作者、标题等部分全局元数据可能不会转移到提取后的副本。",
+              "输入的是文件中的页面位置，从第一页开始计为 1，而不是页脚印刷编号。输入多个项目时，输出顺序与列表一致。例如 12, 8-9 会把第 12 页放在最前面。重复页面只会包含一次。",
+              "工具在浏览器中处理文件并下载新 PDF，不会把合同上传到服务器。不过，提取页面不会隐藏保留页面中的信息。请检查内容和收件人，必要时使用 [Remove PDF Metadata](/tools/remove-metadata)。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费提取页面，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "如何从 PDF 中提取附录？",
+            "a": "数出附录页面在文件中的位置，打开 Extract Pages，输入范围并下载新 PDF。使用文件位置而非印刷页码。分享前确认所有需要的页面都已包含。"
+          },
+          {
+            "q": "提取的附录会保持原有质量吗？",
+            "a": "会。页面会直接复制到新 PDF，不会转成图片或重新绘制。文本仍可选择，图像保持质量。文档书签等部分全局信息可能不会复制。"
+          },
+          {
+            "q": "可以提取不连续的页面吗？",
+            "a": "可以。输入以逗号分隔的页码或范围，例如 2, 8-10, 14。输出按该顺序排列。如需每页或每个范围单独生成文件，请用 Split PDF。"
+          },
+          {
+            "q": "提取附录会修改原合同吗？",
+            "a": "不会。工具创建独立副本，源文件保持不变。请保留完整文档作为记录，并在发送前检查提取副本，因为未选择的页面不会包含其中。"
+          }
+        ],
+        "keywords": [
+          "如何从 pdf 中提取附录",
+          "extract PDF appendix",
+          "extract pages from PDF"
+        ],
+        "relatedTools": [
+          "extract-pages",
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
