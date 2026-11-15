@@ -1,0 +1,1204 @@
+{
+  "topic": "remove-metadata-from-pdf",
+  "sourceCluster": "privacy",
+  "tool": "remove-metadata",
+  "languages": {
+    "es": {
+      "title": "Cómo eliminar metadatos ocultos de un PDF antes de compartirlo",
+      "metaTitle": "Eliminar metadatos de un PDF antes de compartirlo",
+      "metaDescription": "Borra autor, título y XMP de un PDF gratis y en privado en el navegador. Revisa fotos y comentarios por separado. Sin registro.",
+      "keyword": "cómo eliminar metadatos de un PDF",
+      "secondaryKeywords": [
+        "eliminar metadatos PDF",
+        "anonimizar autor de PDF",
+        "quitar propiedades de documento PDF",
+        "borrar datos ocultos de PDF",
+        "limpiar XMP PDF"
+      ],
+      "answer": "Para eliminar metadatos estándar de un PDF, borra sus propiedades de documento y los datos XMP del catálogo. La herramienta de PrintxPDF limpia título, autor, asunto, palabras clave, creador, productor y XMP en el navegador. Revisa aparte las fotos, comentarios, formularios y adjuntos: pueden guardar datos propios, como coordenadas GPS, que esta limpieza no elimina.",
+      "ctaLabel": "Eliminar metadatos",
+      "body": [
+        {
+          "t": "p",
+          "x": "Abre un PDF que no hayas creado y pulsa Ctrl+D (Cmd+D en macOS) en un lector. Las propiedades pueden mostrar una persona, una empresa, una aplicación y fechas que no aparecen en la página, pero viajan dentro del archivo."
+        },
+        {
+          "t": "p",
+          "x": "Esto puede importar en una entrega anónima, un documento de denuncia, un CV o una propuesta que no deba revelar de dónde salió una plantilla. Primero identifica qué información lleva el archivo y qué necesitas conservar."
+        },
+        {
+          "t": "h2",
+          "x": "Qué información guarda un PDF"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Campo",
+            "Qué puede revelar"
+          ],
+          "rows": [
+            [
+              "Author",
+              "Cuenta de quien exportó el archivo"
+            ],
+            [
+              "Title",
+              "Cliente, versión o nombre interno"
+            ],
+            [
+              "Creator / Producer",
+              "Aplicación y sistema usados"
+            ],
+            [
+              "CreationDate / ModDate",
+              "Cuándo se creó o modificó y zona horaria"
+            ],
+            [
+              "XMP / EXIF",
+              "Historial y datos de fotos como ubicación GPS"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Borrar las propiedades del documento no elimina los datos dentro de las imágenes. Una foto del teléfono añadida a un archivo Word puede conservar coordenadas GPS al exportar el PDF. Comprueba también comentarios, valores de formulario, capas, adjuntos, marcadores y contenido oculto. La herramienta limpia las propiedades estándar y el XMP del catálogo; no inspecciona ni borra de forma universal los metadatos internos de cada objeto."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo quitar metadatos de PDF en el navegador"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Abre la herramienta de metadatos",
+              "x": "Visita [Eliminar metadatos](/tools/remove-metadata) y selecciona el PDF. El procesamiento se realiza en la pestaña del navegador; así no subes a un servidor el archivo cuya procedencia quieres ocultar."
+            },
+            {
+              "h": "Inspecciona los campos",
+              "x": "Lee cada valor antes de borrarlo. El título, el autor o las palabras clave pueden revelar un cliente o un proyecto interno."
+            },
+            {
+              "h": "Limpia las propiedades estándar y XMP",
+              "x": "Elimina Author, Title, Subject, Keywords, Creator y Producer, además del paquete XMP del catálogo. Un campo vacío es preferible a inventar datos falsos."
+            },
+            {
+              "h": "Revisa las fechas y el contenido aparte",
+              "x": "La herramienta restablece las fechas de creación y modificación al primer valor de fecha del PDF; no significa que haya borrado todas las fechas ni el EXIF de fotos. Revisa imágenes, comentarios, formularios, adjuntos y capas por separado."
+            },
+            {
+              "h": "Guarda y vuelve a comprobar",
+              "x": "Abre la copia guardada y revisa sus propiedades con Ctrl+D. Si hay fotos o elementos adjuntos sensibles, elimínalos o crea un PDF de nuevo y verifica el resultado."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Elimina autor, creador, fechas y XMP del PDF en tu navegador."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo comprobar qué queda"
+        },
+        {
+          "t": "p",
+          "x": "No confíes solo en un mensaje de “listo”. Un lector de PDF suele mostrar el diccionario estándar en Archivo → Propiedades o con Ctrl+D. En Mac, Vista Previa muestra información desde Herramientas → Mostrar inspector y la pestaña de información. Para inspeccionar también XMP y EXIF de fotos incrustadas, ExifTool desde terminal ofrece una revisión más completa."
+        },
+        {
+          "t": "h2",
+          "x": "Otros datos ocultos que debes revisar"
+        },
+        {
+          "t": "p",
+          "x": "Los PDF pueden llevar datos invisibles además de las propiedades: autores de comentarios, valores de campos rellenados, capas ocultas, archivos adjuntos, nombres en marcadores y contenido recortado. Elimina comentarios, aplana formularios si corresponde y revisa el panel de adjuntos. [Aplanar PDF](/tools/flatten-pdf) incorpora anotaciones visibles a la página, pero no sustituye una revisión de todos los objetos."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Elemento oculto",
+            "Qué hacer"
+          ],
+          "rows": [
+            [
+              "Comentarios y autores",
+              "Elimínalos o aplana el archivo"
+            ],
+            [
+              "Campos de formulario",
+              "Aplana el formulario"
+            ],
+            [
+              "Adjuntos y capas",
+              "Revísalos en el lector y elimina lo innecesario"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Recortar no es lo mismo que borrar. El cuadro de recorte puede ocultar contenido y dejarlo dentro del archivo; alguien puede restaurarlo cambiando el recorte. Si el área contiene información privada, usa [redacción real de PDF](/blog/privacy/redact-pdf-properly), no un recorte ni una caja negra."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo borrar los datos y cuándo definirlos"
+        },
+        {
+          "t": "p",
+          "x": "Para una entrega anónima o externa, dejar en blanco los campos suele ser adecuado. En un informe publicado, define valores correctos: un título claro y un autor deliberado se ven profesionales. Usa [Editar metadatos](/tools/edit-metadata) para establecerlos en lugar de borrarlos. Si comprimes para enviar por correo, hazlo antes de limpiar metadatos, porque la compresión puede escribir otro valor Producer."
+        },
+        {
+          "t": "tip",
+          "x": "El archivo se procesa localmente en el navegador. No envíes un documento confidencial a un servicio remoto para intentar ocultar su procedencia. La limpieza es una capa de privacidad; vuelve a abrir la copia y confirma que el contenido visible y los metadatos restantes son correctos. Más información: [¿son seguros los conversores PDF online?](/blog/privacy/are-online-pdf-tools-safe) y [cómo proteger un PDF con contraseña](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Cómo veo los metadatos de un PDF?",
+          "a": "En la mayoría de lectores, pulsa Ctrl+D (Cmd+D en Mac) o abre Archivo → Propiedades. En Vista Previa de macOS, elige Herramientas → Mostrar inspector. Para revisar EXIF de fotos incrustadas y XMP, ExifTool ofrece un informe más completo."
+        },
+        {
+          "q": "¿Quitar metadatos cambia el aspecto del PDF?",
+          "a": "No. Borrar las propiedades estándar y el XMP del catálogo no cambia el contenido visible de las páginas. Esta herramienta no elimina EXIF de imágenes, comentarios ni adjuntos."
+        },
+        {
+          "q": "¿Puede haber datos GPS dentro de un PDF?",
+          "a": "Sí. Las fotos tomadas con un teléfono pueden conservar EXIF dentro de la imagen incrustada, incluidos coordenadas, modelo de cámara y hora. Limpiar las propiedades del documento no borra esos datos; vuelve a exportar las fotos sin EXIF o rasteriza las páginas si es adecuado."
+        },
+        {
+          "q": "¿Por qué vuelve a aparecer el autor anterior?",
+          "a": "Algunos editores agregan cambios al archivo sin reescribir todos los objetos, por lo que pueden sobrevivir valores anteriores. Reescribe o reconstruye el PDF y vuelve a comprobar las propiedades."
+        },
+        {
+          "q": "¿Debo borrar siempre todos los metadatos?",
+          "a": "No. Para documentos anónimos o externos, suele convenir. En informes publicados, un título preciso y un autor intencional son útiles. Usa Editar metadatos para sustituir valores internos por información correcta."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como remover metadados ocultos de um PDF antes de compartilhar",
+      "metaTitle": "Remova metadados do PDF antes de compartilhar",
+      "metaDescription": "Apague autor, título e XMP de um PDF grátis e com privacidade no navegador. Confira fotos e comentários separadamente. Sem cadastro.",
+      "keyword": "como remover metadados de PDF",
+      "secondaryKeywords": [
+        "remover metadados PDF",
+        "remover nome do autor do PDF",
+        "limpar propriedades do PDF",
+        "apagar dados ocultos PDF",
+        "remover XMP de PDF"
+      ],
+      "answer": "Para remover os metadados padrão de um PDF, limpe as propriedades do documento e os dados XMP do catálogo. A ferramenta do PrintxPDF remove título, autor, assunto, palavras-chave, criador, produtor e XMP no navegador. Verifique fotos, comentários, formulários e anexos separadamente: eles podem guardar dados próprios, como coordenadas GPS, que essa limpeza não apaga.",
+      "ctaLabel": "Remover metadados",
+      "body": [
+        {
+          "t": "p",
+          "x": "Abra um PDF que você não criou e pressione Ctrl+D (Cmd+D no macOS) em um leitor. As propriedades podem mostrar uma pessoa, empresa, aplicativo e datas que não aparecem na página, mas acompanham o arquivo."
+        },
+        {
+          "t": "p",
+          "x": "Isso pode importar para uma submissão anônima, um documento de denúncia, um currículo ou uma proposta que não deve revelar a origem de um modelo. Primeiro descubra quais dados estão no arquivo e o que você precisa manter."
+        },
+        {
+          "t": "h2",
+          "x": "Quais informações um PDF guarda"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Campo",
+            "O que pode revelar"
+          ],
+          "rows": [
+            [
+              "Author",
+              "Conta de quem exportou o arquivo"
+            ],
+            [
+              "Title",
+              "Cliente, versão ou nome interno"
+            ],
+            [
+              "Creator / Producer",
+              "Aplicativo e sistema usados"
+            ],
+            [
+              "CreationDate / ModDate",
+              "Quando foi criado ou alterado e fuso horário"
+            ],
+            [
+              "XMP / EXIF",
+              "Histórico e dados de fotos, como GPS"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Apagar as propriedades do documento não remove dados dentro das imagens. Uma foto do celular inserida em um arquivo Word pode manter coordenadas GPS ao virar PDF. Verifique também comentários, campos de formulário, camadas, anexos, favoritos e conteúdo cortado. A ferramenta limpa as propriedades padrão e o XMP do catálogo; ela não inspeciona nem apaga todos os metadados internos de cada objeto."
+        },
+        {
+          "t": "h2",
+          "x": "Como remover metadados de PDF no navegador"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Abra a ferramenta de metadados",
+              "x": "Acesse [Remover metadados](/tools/remove-metadata) e selecione o PDF. O processamento ocorre na aba do navegador, sem enviar para um servidor o arquivo cuja origem você quer ocultar."
+            },
+            {
+              "h": "Confira os campos",
+              "x": "Leia cada valor antes de apagar. O título, o autor ou as palavras-chave podem revelar um cliente ou projeto interno."
+            },
+            {
+              "h": "Limpe as propriedades padrão e o XMP",
+              "x": "Remova Author, Title, Subject, Keywords, Creator e Producer, além do pacote XMP do catálogo. Um campo vazio é melhor do que inventar dados falsos."
+            },
+            {
+              "h": "Revise as datas e outros conteúdos",
+              "x": "A ferramenta redefine as datas de criação e modificação para o primeiro valor de data do PDF. Isso não significa que todas as datas ou o EXIF das fotos foram removidos. Revise imagens, comentários, formulários, anexos e camadas separadamente."
+            },
+            {
+              "h": "Salve e verifique de novo",
+              "x": "Abra a cópia salva e confira as propriedades com Ctrl+D. Se houver fotos ou anexos sensíveis, remova-os ou gere outro PDF e verifique o resultado."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Remova autor, criador, datas e XMP do PDF no navegador."
+        },
+        {
+          "t": "h2",
+          "x": "Como verificar o que restou"
+        },
+        {
+          "t": "p",
+          "x": "Não confie apenas na mensagem “concluído”. Um leitor de PDF mostra o dicionário padrão em Arquivo → Propriedades ou com Ctrl+D. No Mac, o Preview exibe informações em Ferramentas → Mostrar Inspetor e na aba de informações. Para examinar também XMP e EXIF de imagens incorporadas, o ExifTool no terminal oferece uma verificação mais completa."
+        },
+        {
+          "t": "h2",
+          "x": "Outros dados ocultos para conferir"
+        },
+        {
+          "t": "p",
+          "x": "PDFs podem carregar dados invisíveis além das propriedades: autores de comentários, valores de campos preenchidos, camadas ocultas, anexos, nomes em favoritos e conteúdo cortado. Remova comentários, achate formulários quando necessário e confira o painel de anexos. [Achatar PDF](/tools/flatten-pdf) incorpora anotações visíveis à página, mas não substitui a revisão de todos os objetos."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Item oculto",
+            "O que fazer"
+          ],
+          "rows": [
+            [
+              "Comentários e autores",
+              "Apague ou achate o arquivo"
+            ],
+            [
+              "Campos de formulário",
+              "Achate o formulário"
+            ],
+            [
+              "Anexos e camadas",
+              "Confira no leitor e remova o que não precisa"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Recortar não é o mesmo que apagar. A caixa de corte pode esconder conteúdo e mantê-lo no arquivo; alguém pode restaurá-lo ao redefinir o corte. Se a área contiver informação privada, use [redação real de PDF](/blog/privacy/redact-pdf-properly), não um recorte ou uma caixa preta."
+        },
+        {
+          "t": "h2",
+          "x": "Quando apagar os dados e quando defini-los"
+        },
+        {
+          "t": "p",
+          "x": "Para documentos anônimos ou externos, deixar os campos vazios costuma ser adequado. Em um relatório publicado, defina valores corretos: um título claro e um autor deliberado parecem profissionais. Use [Editar metadados](/tools/edit-metadata) para defini-los em vez de apagar tudo. Se também for comprimir o arquivo para enviar por e-mail, faça isso antes da limpeza, pois a compressão pode gravar um novo valor de Producer."
+        },
+        {
+          "t": "tip",
+          "x": "O arquivo é processado localmente no navegador. Não envie um documento confidencial a um serviço remoto para tentar ocultar sua origem. A limpeza é uma camada de privacidade; abra a cópia e confirme o conteúdo visível e os metadados restantes. Leia também: [ferramentas de PDF online são seguras?](/blog/privacy/are-online-pdf-tools-safe) e [como proteger um PDF com senha](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Como vejo os metadados de um PDF?",
+          "a": "Na maioria dos leitores, pressione Ctrl+D (Cmd+D no Mac) ou abra Arquivo → Propriedades. No Preview do macOS, escolha Ferramentas → Mostrar Inspetor. Para examinar EXIF de imagens e XMP, o ExifTool oferece um relatório mais completo."
+        },
+        {
+          "q": "Remover metadados muda a aparência do PDF?",
+          "a": "Não. Apagar as propriedades padrão e o XMP do catálogo não altera o conteúdo visível das páginas. A ferramenta não remove EXIF de imagens, comentários nem anexos."
+        },
+        {
+          "q": "Dados de GPS podem ficar dentro de um PDF?",
+          "a": "Sim. Fotos feitas com celular podem manter EXIF na imagem incorporada, incluindo coordenadas, câmera e horário. Limpar as propriedades do documento não apaga esses dados; exporte as fotos sem EXIF ou rasterize as páginas se isso fizer sentido."
+        },
+        {
+          "q": "Por que o nome antigo do autor aparece de novo?",
+          "a": "Alguns editores acrescentam alterações ao arquivo sem reescrever todos os objetos, então valores antigos podem sobreviver. Reescreva ou reconstrua o PDF e confira novamente as propriedades."
+        },
+        {
+          "q": "Devo sempre apagar todos os metadados?",
+          "a": "Não. Para documentos anônimos ou externos, normalmente é útil. Em relatórios publicados, um título preciso e um autor intencional são melhores. Use Editar metadados para substituir valores internos por dados corretos."
+        }
+      ]
+    },
+    "hi": {
+      "title": "साझा करने से पहले PDF के छिपे मेटाडेटा कैसे हटाएँ",
+      "metaTitle": "साझा करने से पहले PDF मेटाडेटा हटाएँ",
+      "metaDescription": "PDF से लेखक, शीर्षक और XMP मुफ्त और निजी तरीके से ब्राउज़र में हटाएँ। फ़ोटो और टिप्पणियाँ अलग जाँचें। साइनअप नहीं।",
+      "keyword": "PDF से मेटाडेटा कैसे हटाएँ",
+      "secondaryKeywords": [
+        "PDF मेटाडेटा हटाएँ",
+        "PDF से लेखक का नाम हटाएँ",
+        "PDF दस्तावेज़ गुण साफ़ करें",
+        "PDF छिपा डेटा हटाएँ",
+        "PDF से XMP हटाएँ"
+      ],
+      "answer": "PDF के सामान्य मेटाडेटा हटाने के लिए दस्तावेज़ गुण और कैटलॉग XMP साफ़ करें। PrintxPDF का टूल ब्राउज़र में शीर्षक, लेखक, विषय, कीवर्ड, क्रिएटर, प्रोड्यूसर और XMP हटाता है। फ़ोटो, टिप्पणियाँ, फ़ॉर्म और अटैचमेंट अलग से जाँचें; इनमें GPS जैसी अपनी जानकारी हो सकती है जिसे यह सफाई नहीं हटाती।",
+      "ctaLabel": "मेटाडेटा हटाएँ",
+      "body": [
+        {
+          "t": "p",
+          "x": "ऐसा PDF खोलें जिसे आपने नहीं बनाया और रीडर में Ctrl+D (macOS पर Cmd+D) दबाएँ। गुणों में किसी व्यक्ति, कंपनी, ऐप और तारीख का नाम दिख सकता है। ये चीज़ें पेज पर नहीं दिखतीं, लेकिन फ़ाइल के साथ जाती हैं।"
+        },
+        {
+          "t": "p",
+          "x": "यह गुमनाम सबमिशन, व्हिसलब्लोअर दस्तावेज़, CV या ऐसी बोली/प्रस्ताव में मायने रख सकता है जिसमें टेम्पलेट का स्रोत नहीं बताना चाहिए। पहले देखें कि फ़ाइल में कौन-सी जानकारी है और क्या सुरक्षित रखना जरूरी है।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF कौन-सी जानकारी रखता है"
+        },
+        {
+          "t": "table",
+          "head": [
+            "फ़ील्ड",
+            "क्या बता सकता है"
+          ],
+          "rows": [
+            [
+              "Author",
+              "फ़ाइल निर्यात करने वाले का खाता"
+            ],
+            [
+              "Title",
+              "ग्राहक, संस्करण या आंतरिक नाम"
+            ],
+            [
+              "Creator / Producer",
+              "इस्तेमाल किया ऐप और सिस्टम"
+            ],
+            [
+              "CreationDate / ModDate",
+              "बनने/बदलने का समय और टाइम ज़ोन"
+            ],
+            [
+              "XMP / EXIF",
+              "इतिहास और फ़ोटो का GPS डेटा"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "दस्तावेज़ गुण मिटाने से तस्वीरों के भीतर का डेटा नहीं मिटता। Word में डाली गई फोन की तस्वीर PDF में बदलने पर GPS निर्देशांक रख सकती है। टिप्पणियाँ, फ़ॉर्म फ़ील्ड, छिपी लेयर, अटैचमेंट, बुकमार्क और क्रॉप किए हिस्से भी जाँचें। टूल सामान्य गुण और कैटलॉग XMP साफ़ करता है; हर एम्बेडेड वस्तु के मेटाडेटा की पूरी जाँच या सफाई नहीं करता।"
+        },
+        {
+          "t": "h2",
+          "x": "ब्राउज़र में PDF मेटाडेटा कैसे हटाएँ"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "मेटाडेटा टूल खोलें",
+              "x": "[मेटाडेटा हटाएँ](/tools/remove-metadata) पर जाएँ और PDF चुनें। फ़ाइल ब्राउज़र टैब में प्रोसेस होती है; जिस फ़ाइल का स्रोत छिपाना है उसे सर्वर पर भेजना नहीं पड़ता।"
+            },
+            {
+              "h": "पहले सभी फ़ील्ड पढ़ें",
+              "x": "मिटाने से पहले हर मान देखें। शीर्षक, लेखक या कीवर्ड में ग्राहक या अंदरूनी प्रोजेक्ट का नाम हो सकता है।"
+            },
+            {
+              "h": "सामान्य गुण और XMP साफ़ करें",
+              "x": "Author, Title, Subject, Keywords, Creator, Producer तथा कैटलॉग XMP हटाएँ। नकली जानकारी भरने की बजाय खाली रखना बेहतर है।"
+            },
+            {
+              "h": "तारीख और अन्य सामग्री अलग जाँचें",
+              "x": "टूल CreationDate और ModDate को PDF के सबसे पुराने तारीख मान पर रीसेट करता है; इसका अर्थ यह नहीं कि सभी तारीखें या फ़ोटो का EXIF हट गया। तस्वीरें, टिप्पणियाँ, फ़ॉर्म, अटैचमेंट और लेयर अलग जाँचें।"
+            },
+            {
+              "h": "सेव करके फिर सत्यापित करें",
+              "x": "सेव की गई कॉपी खोलें और Ctrl+D से गुण देखें। संवेदनशील फ़ोटो या अटैचमेंट हों तो उन्हें हटाएँ या PDF दोबारा बनाएँ और परिणाम फिर जाँचें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "ब्राउज़र में PDF से लेखक, क्रिएटर, तारीखें और XMP हटाएँ।"
+        },
+        {
+          "t": "h2",
+          "x": "बचा हुआ डेटा कैसे जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "सिर्फ “हो गया” संदेश पर भरोसा न करें। PDF रीडर में File → Properties या Ctrl+D सामान्य दस्तावेज़ जानकारी दिखाता है। Mac पर Preview में Tools → Show Inspector और ⓘ टैब खोलें। एम्बेडेड फ़ोटो का XMP और EXIF भी देखने के लिए टर्मिनल का ExifTool अधिक पूरी जाँच देता है।"
+        },
+        {
+          "t": "h2",
+          "x": "अन्य छिपी जानकारी की जाँच करें"
+        },
+        {
+          "t": "p",
+          "x": "PDF में गुणों के अलावा भी अदृश्य जानकारी हो सकती है: टिप्पणी लिखने वाले का नाम, भरे फ़ॉर्म के मान, छिपी लेयर, अटैचमेंट, बुकमार्क के नाम और क्रॉप की गई सामग्री। टिप्पणियाँ हटाएँ, जरूरत पर फ़ॉर्म फ्लैटन करें और अटैचमेंट पैनल देखें। [PDF फ्लैटन करें](/tools/flatten-pdf) दिखने वाली टिप्पणियों को पेज में जोड़ता है, पर सभी वस्तुओं की समीक्षा का विकल्प नहीं है।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "छिपा आइटम",
+            "क्या करें"
+          ],
+          "rows": [
+            [
+              "टिप्पणियाँ और लेखक",
+              "हटाएँ या PDF फ्लैटन करें"
+            ],
+            [
+              "फ़ॉर्म फ़ील्ड",
+              "फ़ॉर्म फ्लैटन करें"
+            ],
+            [
+              "अटैचमेंट और लेयर",
+              "रीडर में देखें और गैरजरूरी हटाएँ"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "क्रॉप करना मिटाना नहीं है। क्रॉप बॉक्स सामग्री छिपा सकता है, जबकि वह फ़ाइल में रहती है; कोई बॉक्स रीसेट करके उसे वापस दिखा सकता है। संवेदनशील हिस्से के लिए क्रॉप या काला बॉक्स नहीं, [PDF में वास्तविक रेडैक्शन](/blog/privacy/redact-pdf-properly) करें।"
+        },
+        {
+          "t": "h2",
+          "x": "डेटा कब मिटाएँ और कब सही मान सेट करें"
+        },
+        {
+          "t": "p",
+          "x": "गुमनाम या बाहरी दस्तावेज़ में फ़ील्ड खाली रखना ठीक हो सकता है। प्रकाशित रिपोर्ट में सही मान सेट करें: साफ़ शीर्षक और सोच-समझकर दिया लेखक पेशेवर दिखते हैं। सब मिटाने की बजाय [मेटाडेटा संपादित करें](/tools/edit-metadata) इस्तेमाल करें। ईमेल के लिए PDF संपीड़ित भी करना हो तो मेटाडेटा सफाई से पहले करें, क्योंकि संपीड़न नया Producer मान लिख सकता है।"
+        },
+        {
+          "t": "tip",
+          "x": "फ़ाइल ब्राउज़र में स्थानीय रूप से प्रोसेस होती है। स्रोत छिपाने की कोशिश में गोपनीय दस्तावेज़ किसी रिमोट सेवा पर अपलोड न करें। मेटाडेटा सफाई गोपनीयता की एक परत है; कॉपी फिर खोलें और दृश्य सामग्री व बचे मेटाडेटा की पुष्टि करें। और पढ़ें: [क्या ऑनलाइन PDF टूल सुरक्षित हैं?](/blog/privacy/are-online-pdf-tools-safe) और [PDF को पासवर्ड से सुरक्षित करने का तरीका](/blog/privacy/password-protect-pdf)।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF के मेटाडेटा कैसे देखें?",
+          "a": "अधिकांश रीडर में Ctrl+D (Mac पर Cmd+D) दबाएँ या File → Properties खोलें। macOS Preview में Tools → Show Inspector चुनें। एम्बेडेड फ़ोटो के EXIF और XMP देखने के लिए ExifTool अधिक पूरी रिपोर्ट देता है।"
+        },
+        {
+          "q": "क्या मेटाडेटा हटाने से PDF का रूप बदलता है?",
+          "a": "नहीं। सामान्य गुण और कैटलॉग XMP मिटाने से पेज पर दिखने वाली सामग्री नहीं बदलती। यह टूल तस्वीरों का EXIF, टिप्पणियाँ या अटैचमेंट नहीं हटाता।"
+        },
+        {
+          "q": "क्या PDF में GPS डेटा हो सकता है?",
+          "a": "हाँ। फोन से ली गई फ़ोटो के एम्बेडेड EXIF में निर्देशांक, कैमरा मॉडल और समय रह सकता है। दस्तावेज़ गुण साफ़ करने से यह डेटा नहीं हटता; फ़ोटो को EXIF हटाकर फिर निर्यात करें या उपयुक्त होने पर पेजों को रास्टर करें।"
+        },
+        {
+          "q": "पुराना लेखक नाम फिर क्यों दिखता है?",
+          "a": "कुछ एडिटर सभी ऑब्जेक्ट दोबारा लिखने की बजाय बदलाव जोड़ते हैं, इसलिए पुराने मान फ़ाइल में रह सकते हैं। PDF को पूरी तरह दोबारा लिखें या बनाएँ और गुण फिर जाँचें।"
+        },
+        {
+          "q": "क्या हमेशा सभी मेटाडेटा खाली कर देने चाहिए?",
+          "a": "नहीं। गुमनाम या बाहरी दस्तावेज़ में यह उपयोगी हो सकता है। प्रकाशित रिपोर्ट में सटीक शीर्षक और सही लेखक बेहतर हैं। अंदरूनी मानों को सही जानकारी से बदलने के लिए मेटाडेटा संपादित करें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية إزالة البيانات الوصفية المخفية من PDF قبل مشاركته",
+      "metaTitle": "إزالة بيانات PDF الوصفية قبل المشاركة",
+      "metaDescription": "احذف المؤلف والعنوان وXMP من PDF مجانًا وبخصوصية في المتصفح. افحص الصور والتعليقات بشكل منفصل، بلا تسجيل.",
+      "keyword": "كيفية إزالة البيانات الوصفية من PDF",
+      "secondaryKeywords": [
+        "حذف بيانات PDF الوصفية",
+        "إزالة اسم المؤلف من PDF",
+        "مسح خصائص مستند PDF",
+        "إزالة البيانات المخفية من PDF",
+        "حذف XMP من PDF"
+      ],
+      "answer": "لإزالة البيانات الوصفية القياسية من PDF، امسح خصائص المستند وبيانات XMP في الفهرس. تحذف أداة PrintxPDF العنوان والمؤلف والموضوع والكلمات المفتاحية والمنشئ والمنتج وXMP داخل المتصفح. افحص الصور والتعليقات والنماذج والمرفقات كلًا على حدة؛ فقد تحمل بياناتها الخاصة مثل إحداثيات GPS التي لا تمسحها هذه العملية.",
+      "ctaLabel": "إزالة البيانات الوصفية",
+      "body": [
+        {
+          "t": "p",
+          "x": "افتح ملف PDF لم تنشئه واضغط Ctrl+D (أو Cmd+D على macOS) في قارئ PDF. قد تعرض الخصائص اسم شخص أو شركة أو تطبيق وتواريخ لا تظهر على الصفحة، لكنها تبقى مع الملف."
+        },
+        {
+          "t": "p",
+          "x": "قد يهم ذلك عند إرسال ملف مجهول الهوية أو مستند مُسرّب أو سيرة ذاتية أو عرض يجب ألا يكشف مصدر القالب. اكتشف أولًا المعلومات الموجودة في الملف وما يجب الاحتفاظ به."
+        },
+        {
+          "t": "h2",
+          "x": "ما المعلومات التي يحفظها PDF"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الحقل",
+            "ما الذي يكشفه"
+          ],
+          "rows": [
+            [
+              "Author",
+              "حساب من صدّر الملف"
+            ],
+            [
+              "Title",
+              "عميل أو إصدار أو اسم داخلي"
+            ],
+            [
+              "Creator / Producer",
+              "التطبيق والنظام المستخدمان"
+            ],
+            [
+              "CreationDate / ModDate",
+              "وقت الإنشاء أو التعديل والمنطقة الزمنية"
+            ],
+            [
+              "XMP / EXIF",
+              "سجل التعديل وبيانات الصور مثل GPS"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "لا يؤدي مسح خصائص المستند إلى حذف البيانات داخل الصور. قد تحتفظ صورة هاتف أُدرجت في مستند Word بإحداثيات GPS بعد تصديره إلى PDF. افحص أيضًا التعليقات وحقول النماذج والطبقات المخفية والمرفقات والإشارات المرجعية والمحتوى المقصوص. تمسح الأداة الخصائص القياسية وXMP الخاص بالفهرس؛ ولا تفحص أو تمسح كل البيانات الوصفية داخل جميع العناصر المضمنة."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية إزالة بيانات PDF الوصفية في المتصفح"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "افتح أداة البيانات الوصفية",
+              "x": "انتقل إلى [إزالة البيانات الوصفية](/tools/remove-metadata) واختر ملف PDF. تتم المعالجة داخل علامة تبويب المتصفح، فلا تحتاج إلى رفع الملف الذي تريد إخفاء مصدره إلى خادم."
+            },
+            {
+              "h": "اقرأ الحقول أولًا",
+              "x": "راجع كل قيمة قبل مسحها. فقد يكشف العنوان أو المؤلف أو الكلمات المفتاحية اسم عميل أو مشروع داخلي."
+            },
+            {
+              "h": "امسح الخصائص القياسية وXMP",
+              "x": "احذف Author وTitle وSubject وKeywords وCreator وProducer، إضافة إلى حزمة XMP في الفهرس. ترك الحقل فارغًا أكثر أمانًا من اختلاق بيانات بديلة."
+            },
+            {
+              "h": "راجع التواريخ والعناصر الأخرى منفصلة",
+              "x": "تعيد الأداة ضبط تاريخي الإنشاء والتعديل إلى أقدم قيمة تاريخ في PDF. لا يعني ذلك حذف جميع التواريخ أو بيانات EXIF في الصور. افحص الصور والتعليقات والنماذج والمرفقات والطبقات على حدة."
+            },
+            {
+              "h": "احفظ النسخة وتحقق منها",
+              "x": "افتح النسخة المحفوظة واضغط Ctrl+D لفحص الخصائص. إذا احتوت صورًا أو مرفقات حساسة، فأزلها أو أعد إنشاء PDF ثم تحقق من النتيجة."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "احذف المؤلف والمنشئ والتواريخ وXMP من PDF في المتصفح."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية التحقق مما تبقى"
+        },
+        {
+          "t": "p",
+          "x": "لا تعتمد على رسالة «تم» وحدها. يعرض قارئ PDF قاموس معلومات المستند عبر File → Properties أو Ctrl+D. على Mac، افتح Tools → Show Inspector في Preview ثم علامة المعلومات. لفحص XMP وEXIF داخل الصور المضمنة، يوفر ExifTool عبر الطرفية مراجعة أشمل."
+        },
+        {
+          "t": "h2",
+          "x": "بيانات مخفية أخرى يجب فحصها"
+        },
+        {
+          "t": "p",
+          "x": "قد يحمل PDF بيانات مخفية أخرى: أسماء أصحاب التعليقات، وقيم حقول النماذج، والطبقات المخفية، والمرفقات، وأسماء الإشارات المرجعية والمحتوى المقصوص. احذف التعليقات، وسطح النموذج عند الحاجة، وافحص لوحة المرفقات. يؤدي [تسطيح PDF](/tools/flatten-pdf) إلى دمج التعليقات الظاهرة في الصفحة، لكنه لا يغني عن فحص كل العناصر."
+        },
+        {
+          "t": "table",
+          "head": [
+            "العنصر المخفي",
+            "ما الإجراء"
+          ],
+          "rows": [
+            [
+              "التعليقات ومؤلفوها",
+              "احذفها أو سطح الملف"
+            ],
+            [
+              "حقول النماذج",
+              "سطح النموذج"
+            ],
+            [
+              "المرفقات والطبقات",
+              "افحصها في القارئ واحذف غير الضروري"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "القص ليس حذفًا. قد يخفي إطار القص جزءًا من الصفحة ويتركه في الملف، ويمكن إظهاره بإعادة ضبط الإطار. إذا احتوى الجزء المخفي معلومات حساسة، فاستخدم [إزالة حقيقية لمحتوى PDF](/blog/privacy/redact-pdf-properly)، لا القص أو مربعًا أسود."
+        },
+        {
+          "t": "h2",
+          "x": "متى تمسح البيانات ومتى تضبطها"
+        },
+        {
+          "t": "p",
+          "x": "من المناسب غالبًا ترك الحقول فارغة في المستندات المجهولة أو الخارجية. أما التقرير المنشور، فالأفضل أن يحمل بيانات صحيحة: عنوان واضح ومؤلف مقصود. استخدم [تعديل البيانات الوصفية](/tools/edit-metadata) لكتابة قيم سليمة بدل حذفها. وإذا كنت ستضغط الملف للبريد، فافعل ذلك قبل مسح البيانات؛ لأن الضغط قد يكتب قيمة Producer جديدة."
+        },
+        {
+          "t": "tip",
+          "x": "تُعالج الملفات محليًا في المتصفح. لا ترفع مستندًا سريًا إلى خدمة بعيدة لمحاولة إخفاء مصدره. مسح البيانات طبقة من الخصوصية؛ افتح النسخة وتأكد من صحة المحتوى الظاهر والبيانات المتبقية. اقرأ أيضًا: [هل أدوات PDF عبر الإنترنت آمنة؟](/blog/privacy/are-online-pdf-tools-safe) و[كيفية حماية PDF بكلمة مرور](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "كيف أرى البيانات الوصفية في PDF؟",
+          "a": "اضغط Ctrl+D (Cmd+D على Mac) في معظم برامج القراءة أو افتح File → Properties. في Preview على macOS، اختر Tools → Show Inspector. ولعرض EXIF للصور المضمنة وXMP، يوفر ExifTool تقريرًا أكثر شمولًا."
+        },
+        {
+          "q": "هل تؤدي إزالة البيانات الوصفية إلى تغيير شكل PDF؟",
+          "a": "لا. لا يغير مسح الخصائص القياسية وXMP الخاص بالفهرس محتوى الصفحات الظاهر. ولا تحذف الأداة EXIF داخل الصور أو التعليقات أو المرفقات."
+        },
+        {
+          "q": "هل يمكن أن توجد بيانات GPS داخل PDF؟",
+          "a": "نعم. قد تحتفظ صور الهاتف ببيانات EXIF داخل الصورة المضمنة، مثل الإحداثيات وطراز الكاميرا ووقت الالتقاط. لا يمسح تنظيف خصائص المستند هذه البيانات؛ أعد تصدير الصور بعد حذف EXIF أو حوّل الصفحات إلى صور إذا كان ذلك مناسبًا."
+        },
+        {
+          "q": "لماذا يظهر اسم المؤلف القديم مرة أخرى؟",
+          "a": "تضيف بعض المحررات التغييرات إلى الملف بدل إعادة كتابة كل العناصر، لذلك قد تبقى قيمة سابقة. أعد كتابة PDF أو أنشئه من جديد ثم افحص الخصائص مرة أخرى."
+        },
+        {
+          "q": "هل يجب حذف كل البيانات الوصفية دائمًا؟",
+          "a": "لا. قد يكون ذلك مناسبًا للمستندات المجهولة أو الخارجية. أما التقارير المنشورة فتستفيد من عنوان دقيق ومؤلف معروف. استخدم تعديل البيانات الوصفية لاستبدال القيم الداخلية بمعلومات صحيحة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "শেয়ারের আগে PDF-এর লুকানো মেটাডেটা কীভাবে সরাবেন",
+      "metaTitle": "শেয়ারের আগে PDF মেটাডেটা সরান",
+      "metaDescription": "PDF থেকে লেখক, শিরোনাম ও XMP বিনামূল্যে ও ব্যক্তিগতভাবে ব্রাউজারে মুছুন। ছবি ও মন্তব্য আলাদা পরীক্ষা করুন। সাইনআপ নেই।",
+      "keyword": "PDF থেকে মেটাডেটা কীভাবে সরাবেন",
+      "secondaryKeywords": [
+        "PDF মেটাডেটা মুছুন",
+        "PDF থেকে লেখকের নাম সরান",
+        "PDF নথির বৈশিষ্ট্য পরিষ্কার",
+        "PDF-এর লুকানো তথ্য সরান",
+        "PDF থেকে XMP মুছুন"
+      ],
+      "answer": "PDF-এর সাধারণ মেটাডেটা সরাতে নথির বৈশিষ্ট্য ও ক্যাটালগের XMP পরিষ্কার করুন। PrintxPDF-এর টুল ব্রাউজারে শিরোনাম, লেখক, বিষয়, কীওয়ার্ড, ক্রিয়েটর, প্রডিউসার ও XMP মুছে দেয়। ছবি, মন্তব্য, ফর্ম ও সংযুক্তি আলাদা পরীক্ষা করুন; এগুলোতে GPS-এর মতো নিজস্ব তথ্য থাকতে পারে, যা এই পরিষ্কার প্রক্রিয়া সরায় না।",
+      "ctaLabel": "মেটাডেটা সরান",
+      "body": [
+        {
+          "t": "p",
+          "x": "আপনার তৈরি নয় এমন PDF খুলে রিডারে Ctrl+D (macOS-এ Cmd+D) চাপুন। বৈশিষ্ট্যে কোনো ব্যক্তি, প্রতিষ্ঠান, অ্যাপ ও তারিখের নাম দেখা যেতে পারে। এগুলো পৃষ্ঠায় দেখা না গেলেও ফাইলের সঙ্গে থাকে।"
+        },
+        {
+          "t": "p",
+          "x": "বেনামি জমা, হুইসেলব্লোয়ার নথি, CV বা এমন প্রস্তাবে এটি জরুরি হতে পারে যেখানে টেমপ্লেটের উৎস প্রকাশ করা ঠিক নয়। আগে দেখুন ফাইলে কী তথ্য আছে এবং কোনটা রাখতে হবে।"
+        },
+        {
+          "t": "h2",
+          "x": "PDF-এ কী তথ্য থাকে"
+        },
+        {
+          "t": "table",
+          "head": [
+            "ফিল্ড",
+            "কী ফাঁস হতে পারে"
+          ],
+          "rows": [
+            [
+              "Author",
+              "ফাইল রপ্তানিকারীর অ্যাকাউন্ট"
+            ],
+            [
+              "Title",
+              "ক্লায়েন্ট, সংস্করণ বা অভ্যন্তরীণ নাম"
+            ],
+            [
+              "Creator / Producer",
+              "ব্যবহৃত অ্যাপ ও সিস্টেম"
+            ],
+            [
+              "CreationDate / ModDate",
+              "তৈরি বা বদলের সময় ও টাইম জোন"
+            ],
+            [
+              "XMP / EXIF",
+              "ইতিহাস ও ছবির GPS তথ্য"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "নথির বৈশিষ্ট্য মোছা ছবির ভেতরের তথ্য মুছে দেয় না। Word-এ বসানো ফোনের ছবি PDF করার পরও GPS স্থানাঙ্ক রাখতে পারে। মন্তব্য, ফর্মের মান, লুকানো লেয়ার, সংযুক্তি, বুকমার্ক ও ক্রপ করা অংশও পরীক্ষা করুন। টুলটি সাধারণ বৈশিষ্ট্য ও ক্যাটালগ XMP পরিষ্কার করে; প্রতিটি এমবেড করা উপাদানের ভেতরের মেটাডেটা পরীক্ষা বা পুরোপুরি মোছে না।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্রাউজারে PDF মেটাডেটা কীভাবে সরাবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "মেটাডেটা টুল খুলুন",
+              "x": "[মেটাডেটা সরান](/tools/remove-metadata) খুলে PDF নির্বাচন করুন। ফাইলটি ব্রাউজার ট্যাবেই প্রসেস হয়; উৎস গোপন করতে চাওয়া ফাইল সার্ভারে আপলোড করতে হয় না।"
+            },
+            {
+              "h": "আগে সব ঘর পড়ুন",
+              "x": "মোছার আগে প্রতিটি মান দেখুন। শিরোনাম, লেখক বা কীওয়ার্ডে কোনো ক্লায়েন্ট বা অভ্যন্তরীণ প্রকল্পের নাম থাকতে পারে।"
+            },
+            {
+              "h": "সাধারণ বৈশিষ্ট্য ও XMP পরিষ্কার করুন",
+              "x": "Author, Title, Subject, Keywords, Creator, Producer এবং ক্যাটালগের XMP মুছুন। ভুয়া তথ্য দেওয়ার চেয়ে ঘর ফাঁকা রাখা নিরাপদ।"
+            },
+            {
+              "h": "তারিখ ও অন্য উপাদান আলাদা দেখুন",
+              "x": "টুলটি তৈরি ও পরিবর্তনের তারিখ PDF-এর সবচেয়ে পুরোনো তারিখের মানে রিসেট করে। এতে সব তারিখ বা ছবির EXIF মুছে যায় না। ছবি, মন্তব্য, ফর্ম, সংযুক্তি ও লেয়ার আলাদা পরীক্ষা করুন।"
+            },
+            {
+              "h": "সেভ করে আবার যাচাই করুন",
+              "x": "সেভ করা কপি খুলে Ctrl+D দিয়ে বৈশিষ্ট্য দেখুন। সংবেদনশীল ছবি বা সংযুক্তি থাকলে সরান বা PDF নতুন করে বানিয়ে ফল আবার যাচাই করুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "ব্রাউজারে PDF থেকে লেখক, ক্রিয়েটর, তারিখ ও XMP সরান।"
+        },
+        {
+          "t": "h2",
+          "x": "কী রয়ে গেছে কীভাবে পরীক্ষা করবেন"
+        },
+        {
+          "t": "p",
+          "x": "শুধু “সম্পন্ন” বার্তায় ভরসা করবেন না। PDF রিডারে File → Properties বা Ctrl+D সাধারণ নথি তথ্য দেখায়। Mac-এ Preview-এর Tools → Show Inspector খুলে তথ্য ট্যাব দেখুন। এমবেড করা ছবির XMP ও EXIF-ও পরীক্ষা করতে টার্মিনালের ExifTool আরও পূর্ণ রিপোর্ট দেয়।"
+        },
+        {
+          "t": "h2",
+          "x": "আরও যে লুকানো তথ্য পরীক্ষা করবেন"
+        },
+        {
+          "t": "p",
+          "x": "PDF-এ বৈশিষ্ট্য ছাড়াও অদৃশ্য তথ্য থাকে: মন্তব্যকারীর নাম, পূরণ করা ফর্মের মান, লুকানো লেয়ার, সংযুক্ত ফাইল, বুকমার্কের নাম এবং ক্রপ করা বিষয়বস্তু। মন্তব্য মুছুন, দরকার হলে ফর্ম ফ্ল্যাটেন করুন এবং সংযুক্তির প্যানেল দেখুন। [PDF ফ্ল্যাটেন](/tools/flatten-pdf) দৃশ্যমান মন্তব্যকে পৃষ্ঠার অংশ করে, কিন্তু সব উপাদান পর্যালোচনার বিকল্প নয়।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "লুকানো বিষয়",
+            "করণীয়"
+          ],
+          "rows": [
+            [
+              "মন্তব্য ও লেখক",
+              "মুছুন বা PDF ফ্ল্যাটেন করুন"
+            ],
+            [
+              "ফর্ম ফিল্ড",
+              "ফর্ম ফ্ল্যাটেন করুন"
+            ],
+            [
+              "সংযুক্তি ও লেয়ার",
+              "রিডারে দেখুন, অপ্রয়োজনীয় মুছুন"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "ক্রপ করা আর মুছে ফেলা এক নয়। ক্রপ বক্স অংশ লুকায়, কিন্তু বিষয়বস্তু ফাইলে থেকে যায়; ক্রপ রিসেট করে তা ফের দেখা যায়। সংবেদনশীল অংশ থাকলে ক্রপ বা কালো বক্স নয়, [PDF-এ সত্যিকারের রেড্যাকশন](/blog/privacy/redact-pdf-properly) করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "কখন তথ্য মুছবেন, কখন সেট করবেন"
+        },
+        {
+          "t": "p",
+          "x": "বেনামি বা বাইরের নথিতে ঘর ফাঁকা রাখা ঠিক হতে পারে। প্রকাশিত প্রতিবেদনে সঠিক মান দিন: পরিষ্কার শিরোনাম ও সচেতনভাবে দেওয়া লেখকের নাম পেশাদার দেখায়। সব মুছে না দিয়ে [মেটাডেটা সম্পাদনা](/tools/edit-metadata) ব্যবহার করে ঠিক মান লিখুন। ইমেইলের জন্য কমপ্রেস করলেও মেটাডেটা পরিষ্কারের আগে করুন, কারণ কমপ্রেশন নতুন Producer মান লিখতে পারে।"
+        },
+        {
+          "t": "tip",
+          "x": "ফাইলটি ব্রাউজারে স্থানীয়ভাবে প্রসেস হয়। উৎস লুকাতে গোপন নথি দূরবর্তী সার্ভিসে পাঠাবেন না। মেটাডেটা পরিষ্কার গোপনীয়তার একটি ধাপ; কপি আবার খুলে দৃশ্যমান বিষয় ও বাকি তথ্য ঠিক আছে কি না দেখুন। আরও পড়ুন: [অনলাইন PDF টুল কি নিরাপদ?](/blog/privacy/are-online-pdf-tools-safe) এবং [PDF পাসওয়ার্ড দিয়ে সুরক্ষার উপায়](/blog/privacy/password-protect-pdf)।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "PDF-এর মেটাডেটা কীভাবে দেখব?",
+          "a": "বেশিরভাগ রিডারে Ctrl+D (Mac-এ Cmd+D) চাপুন বা File → Properties খুলুন। macOS Preview-তে Tools → Show Inspector বেছে নিন। এমবেড করা ছবির EXIF ও XMP দেখার জন্য ExifTool আরও পূর্ণ রিপোর্ট দেয়।"
+        },
+        {
+          "q": "মেটাডেটা সরালে PDF-এর চেহারা বদলায়?",
+          "a": "না। সাধারণ বৈশিষ্ট্য ও ক্যাটালগ XMP মোছায় পৃষ্ঠার দৃশ্যমান বিষয়বস্তু বদলায় না। টুলটি ছবির EXIF, মন্তব্য বা সংযুক্তি মোছে না।"
+        },
+        {
+          "q": "PDF-এর ভেতরে GPS তথ্য থাকতে পারে?",
+          "a": "হ্যাঁ। ফোনে তোলা ছবির EXIF-এ স্থানাঙ্ক, ক্যামেরা মডেল ও সময় থাকতে পারে। নথির বৈশিষ্ট্য পরিষ্কার করলে ছবির তথ্য মোছে না; EXIF বাদ দিয়ে ছবি আবার রপ্তানি করুন বা উপযুক্ত হলে পৃষ্ঠাকে ইমেজে রূপান্তর করুন।"
+        },
+        {
+          "q": "পুরোনো লেখকের নাম আবার দেখা যায় কেন?",
+          "a": "কিছু এডিটর সব উপাদান নতুন করে না লিখে ফাইলে পরিবর্তন যোগ করে, তাই পুরোনো মান থেকে যেতে পারে। PDF পুরোপুরি নতুন করে লিখুন বা তৈরি করুন, তারপর বৈশিষ্ট্য আবার দেখুন।"
+        },
+        {
+          "q": "সবসময় কি সব মেটাডেটা মুছে ফেলব?",
+          "a": "না। বেনামি বা বাইরের নথিতে তা উপকারী হতে পারে। প্রকাশিত প্রতিবেদনে সঠিক শিরোনাম ও সচেতন লেখকের নাম ভালো। অভ্যন্তরীণ মান বদলে ঠিক তথ্য লিখতে মেটাডেটা সম্পাদনা ব্যবহার করুন।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách xóa siêu dữ liệu ẩn khỏi PDF trước khi chia sẻ",
+      "metaTitle": "Xóa siêu dữ liệu PDF trước khi chia sẻ",
+      "metaDescription": "Xóa tác giả, tiêu đề và XMP khỏi PDF miễn phí, riêng tư trong trình duyệt. Kiểm tra ảnh và nhận xét riêng. Không cần đăng ký.",
+      "keyword": "cách xóa siêu dữ liệu PDF",
+      "secondaryKeywords": [
+        "xóa metadata PDF",
+        "xóa tên tác giả khỏi PDF",
+        "xóa thuộc tính PDF",
+        "xóa dữ liệu ẩn PDF",
+        "xóa XMP PDF"
+      ],
+      "answer": "Để xóa siêu dữ liệu chuẩn của PDF, hãy làm sạch thuộc tính tài liệu và dữ liệu XMP trong catalog. Công cụ PrintxPDF xóa tiêu đề, tác giả, chủ đề, từ khóa, chương trình tạo, chương trình xuất và XMP ngay trong trình duyệt. Hãy kiểm tra riêng ảnh, nhận xét, biểu mẫu và tệp đính kèm vì chúng có thể chứa dữ liệu riêng như tọa độ GPS mà thao tác này không xóa.",
+      "ctaLabel": "Xóa siêu dữ liệu",
+      "body": [
+        {
+          "t": "p",
+          "x": "Mở một PDF không phải do bạn tạo rồi nhấn Ctrl+D (Cmd+D trên macOS) trong trình đọc. Phần thuộc tính có thể nêu tên người, công ty, ứng dụng và thời điểm không thấy trên trang, nhưng các dữ liệu này vẫn đi theo tệp."
+        },
+        {
+          "t": "p",
+          "x": "Điều này có thể quan trọng với bài nộp ẩn danh, tài liệu tố giác, hồ sơ xin việc hoặc đề xuất không nên tiết lộ nguồn mẫu. Trước hết, hãy xem tệp đang chứa gì và phần nào cần giữ lại."
+        },
+        {
+          "t": "h2",
+          "x": "PDF lưu những thông tin nào"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Trường",
+            "Có thể tiết lộ"
+          ],
+          "rows": [
+            [
+              "Author",
+              "Tài khoản người xuất tệp"
+            ],
+            [
+              "Title",
+              "Khách hàng, phiên bản hoặc tên nội bộ"
+            ],
+            [
+              "Creator / Producer",
+              "Ứng dụng và hệ điều hành"
+            ],
+            [
+              "CreationDate / ModDate",
+              "Thời điểm tạo, sửa và múi giờ"
+            ],
+            [
+              "XMP / EXIF",
+              "Lịch sử và dữ liệu ảnh như GPS"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Xóa thuộc tính tài liệu không xóa dữ liệu bên trong ảnh. Ảnh điện thoại chèn vào tài liệu Word có thể vẫn giữ tọa độ GPS khi xuất PDF. Hãy kiểm tra cả nhận xét, trường biểu mẫu, lớp ẩn, tệp đính kèm, dấu trang và vùng đã cắt. Công cụ xóa thuộc tính chuẩn và XMP cấp catalog; công cụ không kiểm tra hoặc xóa hết dữ liệu nhúng trong từng đối tượng."
+        },
+        {
+          "t": "h2",
+          "x": "Cách xóa siêu dữ liệu PDF trong trình duyệt"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Mở công cụ siêu dữ liệu",
+              "x": "Truy cập [Xóa siêu dữ liệu](/tools/remove-metadata) và chọn PDF. Tệp được xử lý trong tab trình duyệt, không cần tải lên máy chủ tệp mà bạn muốn giấu nguồn gốc."
+            },
+            {
+              "h": "Đọc các trường trước",
+              "x": "Xem từng giá trị trước khi xóa. Tiêu đề, tác giả hoặc từ khóa có thể tiết lộ tên khách hàng hay dự án nội bộ."
+            },
+            {
+              "h": "Xóa thuộc tính chuẩn và XMP",
+              "x": "Xóa Author, Title, Subject, Keywords, Creator và Producer cùng gói XMP trong catalog. Để trống thường an toàn hơn bịa thông tin thay thế."
+            },
+            {
+              "h": "Kiểm tra ngày và nội dung khác riêng",
+              "x": "Công cụ đặt lại ngày tạo và sửa về giá trị ngày sớm nhất trong PDF. Điều đó không có nghĩa mọi ngày hoặc EXIF trong ảnh đã bị xóa. Kiểm tra riêng ảnh, nhận xét, biểu mẫu, tệp đính kèm và lớp."
+            },
+            {
+              "h": "Lưu rồi xác minh lại",
+              "x": "Mở bản đã lưu và nhấn Ctrl+D để xem thuộc tính. Nếu có ảnh hoặc tệp đính kèm nhạy cảm, hãy xóa chúng hoặc tạo lại PDF rồi kiểm tra kết quả."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "Xóa tác giả, chương trình tạo, ngày và XMP khỏi PDF trong trình duyệt."
+        },
+        {
+          "t": "h2",
+          "x": "Cách kiểm tra dữ liệu còn lại"
+        },
+        {
+          "t": "p",
+          "x": "Đừng chỉ tin thông báo “xong”. Trình đọc PDF hiển thị thông tin chuẩn ở File → Properties hoặc bằng Ctrl+D. Trên Mac, mở Tools → Show Inspector trong Preview rồi chọn tab thông tin. Để kiểm tra thêm XMP và EXIF trong ảnh nhúng, ExifTool trên terminal cung cấp báo cáo chi tiết hơn."
+        },
+        {
+          "t": "h2",
+          "x": "Các dữ liệu ẩn khác cần kiểm tra"
+        },
+        {
+          "t": "p",
+          "x": "PDF có thể chứa dữ liệu ẩn khác ngoài thuộc tính: tên người viết nhận xét, giá trị trường biểu mẫu, lớp ẩn, tệp đính kèm, tên dấu trang và nội dung bị cắt. Xóa nhận xét, làm phẳng biểu mẫu khi cần và kiểm tra bảng tệp đính kèm. [Làm phẳng PDF](/tools/flatten-pdf) đưa chú thích hiển thị vào trang nhưng không thay thế việc kiểm tra mọi đối tượng."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Mục ẩn",
+            "Cách xử lý"
+          ],
+          "rows": [
+            [
+              "Nhận xét và tác giả",
+              "Xóa hoặc làm phẳng PDF"
+            ],
+            [
+              "Trường biểu mẫu",
+              "Làm phẳng biểu mẫu"
+            ],
+            [
+              "Tệp đính kèm và lớp",
+              "Kiểm tra trong trình đọc và xóa mục thừa"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "Cắt trang không đồng nghĩa với xóa. Khung cắt có thể che nội dung nhưng vẫn giữ nội dung trong tệp; người khác có thể đặt lại khung để khôi phục. Nếu vùng bị cắt chứa dữ liệu riêng tư, hãy [che thông tin đúng cách trong PDF](/blog/privacy/redact-pdf-properly), đừng chỉ cắt hoặc phủ hộp đen."
+        },
+        {
+          "t": "h2",
+          "x": "Khi nào xóa và khi nào đặt lại dữ liệu"
+        },
+        {
+          "t": "p",
+          "x": "Với tài liệu ẩn danh hoặc gửi ra ngoài, để trống các trường thường là phù hợp. Báo cáo công bố nên có giá trị đúng: tiêu đề rõ và tác giả được ghi có chủ ý sẽ chuyên nghiệp hơn. Dùng [Chỉnh sửa siêu dữ liệu](/tools/edit-metadata) để đặt thông tin sạch thay vì xóa hết. Nếu cần nén để gửi email, hãy nén trước khi xóa metadata vì công cụ nén có thể ghi giá trị Producer mới."
+        },
+        {
+          "t": "tip",
+          "x": "Tệp được xử lý cục bộ trong trình duyệt. Đừng tải tài liệu mật lên dịch vụ từ xa để cố giấu nguồn gốc. Xóa metadata chỉ là một lớp bảo vệ; hãy mở lại bản sao và xác nhận nội dung hiển thị cùng thông tin còn lại. Đọc thêm: [công cụ PDF trực tuyến có an toàn không?](/blog/privacy/are-online-pdf-tools-safe) và [cách bảo vệ PDF bằng mật khẩu](/blog/privacy/password-protect-pdf)."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Làm sao xem siêu dữ liệu của PDF?",
+          "a": "Trong hầu hết trình đọc, nhấn Ctrl+D (Cmd+D trên Mac) hoặc mở File → Properties. Trong Preview của macOS, chọn Tools → Show Inspector. ExifTool cung cấp báo cáo đầy đủ hơn về EXIF trong ảnh nhúng và XMP."
+        },
+        {
+          "q": "Xóa siêu dữ liệu có làm PDF đổi hình thức không?",
+          "a": "Không. Xóa thuộc tính chuẩn và XMP của catalog không thay đổi nội dung trang hiển thị. Công cụ không xóa EXIF trong ảnh, nhận xét hoặc tệp đính kèm."
+        },
+        {
+          "q": "PDF có thể chứa dữ liệu GPS không?",
+          "a": "Có. Ảnh chụp bằng điện thoại có thể giữ tọa độ, mẫu máy ảnh và thời gian trong EXIF nhúng. Xóa thuộc tính tài liệu không xóa phần này; hãy xuất ảnh lại sau khi gỡ EXIF hoặc chuyển trang thành ảnh nếu phù hợp."
+        },
+        {
+          "q": "Vì sao tên tác giả cũ xuất hiện lại?",
+          "a": "Một số trình sửa ghi nối thay đổi thay vì viết lại mọi đối tượng, nên giá trị cũ có thể còn trong tệp. Hãy viết lại hoặc dựng lại PDF rồi kiểm tra thuộc tính lần nữa."
+        },
+        {
+          "q": "Có nên luôn xóa mọi siêu dữ liệu không?",
+          "a": "Không. Việc này thường hợp lý với tài liệu ẩn danh hoặc gửi ra ngoài. Báo cáo công bố nên dùng tiêu đề chính xác và ghi tên tác giả có chủ ý. Dùng Chỉnh sửa siêu dữ liệu để thay giá trị nội bộ bằng dữ liệu đúng."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "分享 PDF 前如何删除隐藏元数据",
+      "metaTitle": "分享前删除 PDF 元数据",
+      "metaDescription": "在浏览器中免费、私密地清除 PDF 作者、标题和 XMP。照片和批注需单独检查，无需注册。",
+      "keyword": "如何删除 PDF 元数据",
+      "secondaryKeywords": [
+        "删除 PDF 元数据",
+        "从 PDF 删除作者姓名",
+        "清理 PDF 文档属性",
+        "删除 PDF 隐藏信息",
+        "清除 PDF XMP"
+      ],
+      "answer": "要删除 PDF 的标准元数据，请清除文档属性和目录级 XMP。PrintxPDF 工具可在浏览器中清除标题、作者、主题、关键词、创建程序、生成程序和 XMP。照片、批注、表单与附件需单独检查；它们可能保存 GPS 等自身信息，这些内容不会被此操作清除。",
+      "ctaLabel": "删除元数据",
+      "body": [
+        {
+          "t": "p",
+          "x": "用 PDF 阅读器打开一个并非由你创建的文件，按 Ctrl+D（macOS 按 Cmd+D）。文档属性可能显示页面上看不到的人名、公司、应用和日期，但这些信息会随文件一起传递。"
+        },
+        {
+          "t": "p",
+          "x": "匿名投稿、举报材料、求职简历或不应暴露模板来源的投标文件都可能涉及隐私风险。先查看文件包含哪些信息，并确认需要保留什么。"
+        },
+        {
+          "t": "h2",
+          "x": "PDF 会保存哪些信息"
+        },
+        {
+          "t": "table",
+          "head": [
+            "字段",
+            "可能泄露的信息"
+          ],
+          "rows": [
+            [
+              "Author",
+              "导出文件的电脑账号"
+            ],
+            [
+              "Title",
+              "客户、版本或内部名称"
+            ],
+            [
+              "Creator / Producer",
+              "使用的软件和系统"
+            ],
+            [
+              "CreationDate / ModDate",
+              "创建或修改时间及时区"
+            ],
+            [
+              "XMP / EXIF",
+              "编辑历史及照片 GPS 信息"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "清除文档属性不会删除图片内部的数据。插入 Word 文档的手机照片导出为 PDF 后仍可能保留 GPS 坐标。还要检查批注、表单值、隐藏图层、附件、书签和裁剪内容。该工具清除标准文档属性和目录级 XMP，不会检查或清除每个嵌入对象内部的全部元数据。"
+        },
+        {
+          "t": "h2",
+          "x": "如何在浏览器中删除 PDF 元数据"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "打开元数据工具",
+              "x": "前往[删除元数据](/tools/remove-metadata)并选择 PDF。文件在浏览器标签页内处理，无需将你想隐藏来源的文件上传到服务器。"
+            },
+            {
+              "h": "先查看各个字段",
+              "x": "清除前逐项检查。标题、作者或关键词可能泄露客户名称或内部项目。"
+            },
+            {
+              "h": "清除标准属性和 XMP",
+              "x": "删除 Author、Title、Subject、Keywords、Creator、Producer 以及目录级 XMP。留空通常比伪造信息更安全。"
+            },
+            {
+              "h": "单独检查日期和其他内容",
+              "x": "工具会将创建和修改日期重置为 PDF 中最早的日期值。这不表示所有日期或照片 EXIF 都已删除。请单独检查照片、批注、表单、附件和图层。"
+            },
+            {
+              "h": "保存并再次核验",
+              "x": "打开保存后的副本并按 Ctrl+D 检查属性。如果含有敏感照片或附件，请删除它们或重新生成 PDF，再核验一次。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "remove-metadata",
+          "x": "在浏览器中清除 PDF 作者、创建程序、日期和 XMP。"
+        },
+        {
+          "t": "h2",
+          "x": "如何检查还剩哪些信息"
+        },
+        {
+          "t": "p",
+          "x": "不要只相信“完成”提示。PDF 阅读器可通过 File → Properties 或 Ctrl+D 显示标准文档信息。Mac 上可在 Preview 中选择 Tools → Show Inspector，再打开信息标签。要检查嵌入照片中的 XMP 和 EXIF，可用终端版 ExifTool 获取更全面的报告。"
+        },
+        {
+          "t": "h2",
+          "x": "还需检查的其他隐藏信息"
+        },
+        {
+          "t": "p",
+          "x": "PDF 还可能隐藏其他信息：批注作者、表单字段值、隐藏图层、附件、书签名称和裁剪掉的内容。删除批注，必要时扁平化表单，并检查附件面板。[扁平化 PDF](/tools/flatten-pdf)可将可见批注合并到页面中，但不能代替对所有对象的检查。"
+        },
+        {
+          "t": "table",
+          "head": [
+            "隐藏项",
+            "处理方法"
+          ],
+          "rows": [
+            [
+              "批注及作者",
+              "删除批注或扁平化文件"
+            ],
+            [
+              "表单字段",
+              "扁平化表单"
+            ],
+            [
+              "附件和图层",
+              "在阅读器中检查并删除不需要的内容"
+            ]
+          ]
+        },
+        {
+          "t": "warn",
+          "x": "裁剪不等于删除。裁剪框可能只隐藏页面内容，数据仍留在文件里；重置裁剪框后即可恢复。如果隐藏区域包含敏感信息，请使用[正确的 PDF 涂黑方法](/blog/privacy/redact-pdf-properly)，不要只裁剪或盖黑框。"
+        },
+        {
+          "t": "h2",
+          "x": "何时清除，何时设置元数据"
+        },
+        {
+          "t": "p",
+          "x": "匿名或对外文件通常适合将字段留空。正式发布的报告则应设置准确值：清晰标题和有意署名的作者看起来更专业。使用[编辑元数据](/tools/edit-metadata)填写规范信息，而不是清空所有字段。如果还要压缩文件用于邮件发送，请先压缩，再清除元数据，因为压缩工具可能写入新的 Producer 值。"
+        },
+        {
+          "t": "tip",
+          "x": "文件在浏览器本地处理。不要为了隐藏来源而把机密文件上传到远程服务。清除元数据只是隐私保护的一环；请重新打开副本，确认可见内容和剩余元数据均正确。 另请阅读：[在线 PDF 工具安全吗？](/blog/privacy/are-online-pdf-tools-safe)以及[如何为 PDF 设置密码保护](/blog/privacy/password-protect-pdf)。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "如何查看 PDF 的元数据？",
+          "a": "大多数阅读器可按 Ctrl+D（Mac 上按 Cmd+D）或打开 File → Properties。macOS Preview 中选择 Tools → Show Inspector。要检查嵌入照片的 EXIF 和 XMP，ExifTool 能提供更完整的报告。"
+        },
+        {
+          "q": "删除元数据会改变 PDF 外观吗？",
+          "a": "不会。清除标准文档属性和目录级 XMP 不会改变页面上的可见内容。此工具不会删除图片 EXIF、批注或附件。"
+        },
+        {
+          "q": "PDF 中真的会有 GPS 数据吗？",
+          "a": "会。手机拍摄的照片可能在嵌入式 EXIF 中保存坐标、相机型号和拍摄时间。清除文档属性不会删除这些数据；可先去除照片 EXIF 再重新导出，或在适当情况下将页面栅格化。"
+        },
+        {
+          "q": "为什么旧作者姓名又出现了？",
+          "a": "有些编辑器采用增量保存，不会重写所有对象，因此旧值可能仍在文件中。请完整重写或重新生成 PDF，再检查文档属性。"
+        },
+        {
+          "q": "是否应该总是清空所有元数据？",
+          "a": "不一定。匿名或对外文件通常适合清除。正式报告则应使用准确标题和明确作者。可用“编辑元数据”将内部值替换为正确的信息。"
+        }
+      ]
+    }
+  }
+}
