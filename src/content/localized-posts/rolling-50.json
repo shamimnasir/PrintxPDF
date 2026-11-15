@@ -2215,6 +2215,146 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-gemini-image-metadata-before-sharing",
+        "slug": "remove-gemini-image-metadata-before-sharing",
+        "title": "Quitar metadatos de imagen Gemini antes de compartir",
+        "metaTitle": "Quitar metadatos de imagen Gemini antes de compartir",
+        "metaDescription": "Limpia una copia de imagen de Gemini gratis en el navegador, sin registro ni marca de agua. Conserva el original y revisa lo visible.",
+        "keyword": "quitar metadatos de imagen de Gemini",
+        "secondaryKeywords": [
+          "eliminar metadatos Gemini",
+          "quitar EXIF de imagen de IA",
+          "copia limpia de imagen Gemini",
+          "eliminador privado de metadatos"
+        ],
+        "answer": "Para quitar metadatos comunes de una imagen de Gemini antes de compartirla, conserva el original y crea una copia independiente con AI Metadata Remover de PrintxPDF. Descarga y revisa el resultado. El proceso ocurre localmente en el navegador y elimina contenedores de metadatos habituales, pero no etiquetas visibles, píxeles ni todas las señales forenses posibles.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Limpiar metadatos de imagen",
+        "body": [
+          {
+            "t": "p",
+            "x": "Antes de compartir una imagen de Gemini fuera de tu equipo, decide si el destinatario necesita sus metadatos de origen. Si no, crea una copia de distribución separada en vez de modificar el único original. AI Metadata Remover de PrintxPDF crea esa copia localmente en tu navegador. El uso básico es gratis, no requiere cuenta y no añade marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo limpiar una imagen de Gemini antes de compartirla"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarda primero el original",
+                "x": "Conserva la imagen original por si más adelante necesitas su procedencia, historial de edición o registro de origen."
+              },
+              {
+                "h": "Abre Eliminar metadatos de imagen",
+                "x": "Añade la imagen a [Eliminar metadatos de imagen](/tools/remove-ai-metadata) desde una pestaña actual del navegador."
+              },
+              {
+                "h": "Crea una copia limpia",
+                "x": "Elige el formato disponible, procesa el archivo y descarga la imagen nueva. El original no se sobrescribe."
+              },
+              {
+                "h": "Revisa el resultado",
+                "x": "Abre la copia, compara los píxeles visibles y confirma el destino antes de publicar o enviar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Crea en tu pestaña una copia de imagen sin metadatos comunes. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "¿Qué copia deberías enviar?"
+          },
+          {
+            "t": "table",
+            "caption": "Elige según el cambio que necesitas.",
+            "head": [
+              "Opción",
+              "Qué cambia",
+              "Cuándo conviene"
+            ],
+            "rows": [
+              [
+                "Volver a guardar con AI Metadata Remover",
+                "Crea una imagen nueva sin contenedores comunes de metadatos",
+                "Compartir una copia limpia si la imagen visible es adecuada."
+              ],
+              [
+                "Editar campos de metadatos",
+                "Cambia propiedades seleccionadas",
+                "Corregir autor o descripción sin reconstruir toda la copia."
+              ],
+              [
+                "Difuminar o recortar lo visible",
+                "Cambia los píxeles",
+                "Ocultar etiquetas, rostros o detalles sensibles del entorno."
+              ],
+              [
+                "Conservar el original",
+                "No cambia nada",
+                "Guardar procedencia, flujo de trabajo o datos de evidencia."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Quitar metadatos no vuelve anónima la imagen"
+          },
+          {
+            "t": "p",
+            "x": "Una copia sin metadatos aún puede revelar información a través de sus píxeles. Una marca de agua, un cartel de ubicación, una pantalla reflejada, un nombre de archivo visible en una captura o una persona reconocible no son metadatos. Quitar EXIF, XMP o datos de procedencia habituales no cambia esas pistas. Revisa la imagen a tamaño completo y edítala por separado si el contenido visible también necesita cambios."
+          },
+          {
+            "t": "h2",
+            "x": "Por qué importa el procesamiento local en el navegador"
+          },
+          {
+            "t": "p",
+            "x": "Las imágenes pueden mostrar interiores privados, trabajos de clientes, documentos de identidad o campañas aún no publicadas. En este flujo estándar, PrintxPDF procesa el archivo localmente en el navegador en vez de enviarlo normalmente a un servidor. Esto reduce una copia innecesaria fuera del dispositivo. No sustituye la política de privacidad de tu organización ni hace apropiado compartir con alguien que no sea de confianza."
+          },
+          {
+            "t": "h2",
+            "x": "Una copia limpia no es una capa de invisibilidad"
+          },
+          {
+            "t": "p",
+            "x": "Las capturas, nombres de archivo, historial del navegador, republicaciones y registros de la plataforma pueden seguir aportando contexto. La herramienta no borra contenido visible ni garantiza que el destinatario no pueda inferir cómo se creó una imagen. Solo elimina contenedores comunes de metadatos del archivo resultante. No demuestra que la imagen sea auténtica, tenga licencia o esté autorizada para uso comercial."
+          },
+          {
+            "t": "h2",
+            "x": "Lista práctica antes de compartir"
+          },
+          {
+            "t": "p",
+            "x": "Antes de publicar, confirma que el destinatario necesita la imagen, que el contenido visible es aceptable y que descargaste la copia correcta. Conserva el original por separado si podrías necesitar mostrar su fuente o historial de edición. Si el archivo es demasiado grande para una plataforma, usa [Convertir imagen](/tools/image-converter) en una copia y revisa su calidad antes de enviarla."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Puedo quitar metadatos de Gemini sin una cuenta?",
+            "a": "Sí. El flujo estándar de AI Metadata Remover de PrintxPDF se ejecuta localmente en el navegador y no requiere registro ni tarjeta."
+          },
+          {
+            "q": "¿Esto elimina Content Credentials de cualquier archivo?",
+            "a": "El proceso crea una copia nueva sin contenedores de metadatos comunes, pero ningún método puede prometer que quite todas las señales de todos los formatos o plataformas."
+          },
+          {
+            "q": "¿Puedo usar comercialmente la imagen limpia?",
+            "a": "Quitar metadatos no concede derechos de autor, licencia ni permiso de plataforma. Comprueba los términos aplicables y el origen de la imagen."
+          },
+          {
+            "q": "¿Cambia la imagen original de Gemini?",
+            "a": "No. El flujo descarga una copia nueva, por lo que puedes conservar el original por separado."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -4424,6 +4564,146 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-gemini-image-metadata-before-sharing",
+        "slug": "remove-gemini-image-metadata-before-sharing",
+        "title": "Como remover metadados de imagem do Gemini antes de compartilhar",
+        "metaTitle": "Como remover metadados de imagem do Gemini antes de compartilhar",
+        "metaDescription": "Limpe uma cópia de imagem do Gemini grátis no navegador, sem cadastro ou marca d’água. Guarde o original e confira o conteúdo visível.",
+        "keyword": "remover metadados de imagem do Gemini",
+        "secondaryKeywords": [
+          "remover metadados do Gemini",
+          "remover EXIF de imagem de IA",
+          "cópia limpa de imagem Gemini",
+          "removedor privado de metadados"
+        ],
+        "answer": "Para remover metadados comuns de uma imagem do Gemini antes de compartilhá-la, guarde o original e crie uma cópia separada com o AI Metadata Remover da PrintxPDF. Baixe e confira o resultado. O processamento é local no navegador e remove contêineres comuns de metadados, mas não rótulos visíveis, pixels ou todos os possíveis sinais forenses.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Limpar metadados da imagem",
+        "body": [
+          {
+            "t": "p",
+            "x": "Antes de compartilhar uma imagem do Gemini fora da sua equipe, decida se o destinatário precisa dos metadados de origem. Se não precisar, crie uma cópia separada para distribuição em vez de alterar o único original. O AI Metadata Remover da PrintxPDF cria essa cópia localmente no navegador. O uso básico é grátis, não exige conta e não adiciona marca d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Como limpar uma imagem do Gemini antes de compartilhar"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde o original primeiro",
+                "x": "Mantenha a imagem original caso precise depois da procedência, do histórico de edição ou do registro de origem."
+              },
+              {
+                "h": "Abra Remover metadados da imagem",
+                "x": "Adicione a imagem em [Remover metadados da imagem](/tools/remove-ai-metadata) numa aba atual do navegador."
+              },
+              {
+                "h": "Crie uma cópia limpa",
+                "x": "Escolha o formato disponível, processe o arquivo e baixe a nova imagem. O original não é sobrescrito."
+              },
+              {
+                "h": "Confira o resultado",
+                "x": "Abra a cópia, compare os pixels visíveis e confirme o destino antes de publicar ou enviar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Crie uma cópia de imagem sem metadados comuns na sua aba. Grátis, sem cadastro ou marca d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Qual cópia você deve enviar?"
+          },
+          {
+            "t": "table",
+            "caption": "Escolha conforme a alteração necessária.",
+            "head": [
+              "Opção",
+              "O que muda",
+              "Quando usar"
+            ],
+            "rows": [
+              [
+                "Salvar novamente com AI Metadata Remover",
+                "Cria uma imagem nova sem contêineres comuns de metadados",
+                "Compartilhar uma cópia limpa se a imagem visível for adequada."
+              ],
+              [
+                "Editar campos de metadados",
+                "Altera propriedades selecionadas",
+                "Corrigir autor ou descrição sem reconstruir toda a cópia."
+              ],
+              [
+                "Desfocar ou cortar o conteúdo visível",
+                "Altera os pixels",
+                "Ocultar rótulos, rostos ou detalhes sensíveis do ambiente."
+              ],
+              [
+                "Manter o original",
+                "Não muda nada",
+                "Guardar procedência, fluxo de trabalho ou registros de evidência."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Remover metadados não torna a imagem anônima"
+          },
+          {
+            "t": "p",
+            "x": "Uma cópia sem metadados ainda pode revelar informações pelos pixels. Marca d’água, placa de localização, tela refletida, nome de arquivo mostrado numa captura ou pessoa reconhecível não são metadados. Remover EXIF, XMP ou dados comuns de procedência não altera esses sinais visíveis. Revise a imagem em tamanho completo e edite separadamente se o conteúdo visível também precisar mudar."
+          },
+          {
+            "t": "h2",
+            "x": "Por que o processamento local no navegador importa"
+          },
+          {
+            "t": "p",
+            "x": "Imagens podem mostrar interiores privados, trabalhos de clientes, documentos de identidade ou campanhas ainda não lançadas. Neste fluxo padrão, a PrintxPDF processa o arquivo localmente no navegador, em vez de enviá-lo rotineiramente a um servidor. Isso reduz uma cópia desnecessária fora do dispositivo. Não substitui a política de privacidade da organização nem torna apropriado compartilhar com alguém não confiável."
+          },
+          {
+            "t": "h2",
+            "x": "Uma cópia limpa não é uma capa de invisibilidade"
+          },
+          {
+            "t": "p",
+            "x": "Capturas de tela, nomes de arquivo, histórico do navegador, republicações e registros da plataforma ainda podem dar contexto. A ferramenta não apaga o conteúdo visível nem garante que o destinatário não consiga inferir como a imagem foi criada. Ela só remove contêineres comuns de metadados do arquivo resultante. Também não prova que a imagem é autêntica, licenciada ou liberada para uso comercial."
+          },
+          {
+            "t": "h2",
+            "x": "Checklist rápido antes de compartilhar"
+          },
+          {
+            "t": "p",
+            "x": "Antes de publicar, confirme que o destinatário precisa da imagem, que o conteúdo visível é aceitável e que você baixou a cópia certa. Guarde o original separado se puder precisar mostrar a origem ou o histórico de edição. Se o arquivo for grande para a plataforma, use o [Conversor de imagem](/tools/image-converter) numa cópia e confira a qualidade antes de enviar."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Posso remover metadados do Gemini sem uma conta?",
+            "a": "Sim. O fluxo padrão do AI Metadata Remover da PrintxPDF é local no navegador e não exige cadastro nem cartão."
+          },
+          {
+            "q": "Isso remove Content Credentials de qualquer arquivo?",
+            "a": "O processo cria uma cópia sem contêineres comuns de metadados, mas nenhuma ferramenta pode prometer remover todos os sinais de todos os formatos ou plataformas."
+          },
+          {
+            "q": "Posso usar comercialmente a imagem limpa?",
+            "a": "Remover metadados não concede direitos autorais, licença nem autorização da plataforma. Confira os termos aplicáveis e a origem da imagem."
+          },
+          {
+            "q": "A imagem original do Gemini muda?",
+            "a": "Não. O fluxo baixa uma cópia nova, então você pode guardar o original separadamente."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -6630,6 +6910,146 @@
             "क्या मुझे ChatGPT की मूल छवि रखनी चाहिए?",
             "हाँ, यदि स्रोत, लाइसेंस, वर्कफ़्लो इतिहास या बेहतर गुणवत्ता की ज़रूरत पड़ सकती है। साफ़ कॉपी अलग साझा करें।"
           ]
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-gemini-image-metadata-before-sharing",
+        "slug": "remove-gemini-image-metadata-before-sharing",
+        "title": "शेयर करने से पहले Gemini इमेज मेटाडेटा कैसे हटाएँ",
+        "metaTitle": "शेयर करने से पहले Gemini इमेज मेटाडेटा कैसे हटाएँ",
+        "metaDescription": "ब्राउज़र में Gemini इमेज की कॉपी मुफ़्त साफ़ करें; साइनअप या वॉटरमार्क नहीं। मूल फ़ाइल रखें और दिखने वाली सामग्री जाँचें।",
+        "keyword": "Gemini इमेज मेटाडेटा हटाना",
+        "secondaryKeywords": [
+          "Gemini मेटाडेटा हटाएँ",
+          "AI इमेज EXIF हटाएँ",
+          "साफ़ Gemini इमेज कॉपी",
+          "निजी मेटाडेटा रिमूवर"
+        ],
+        "answer": "शेयर करने से पहले Gemini इमेज के आम मेटाडेटा हटाने के लिए मूल फ़ाइल रखें और PrintxPDF के AI Metadata Remover से अलग साफ़ कॉपी बनाएँ। उसे डाउनलोड कर जाँचें। यह लोकल ब्राउज़र प्रक्रिया आम मेटाडेटा-कंटेनर हटाती है, लेकिन दिखने वाले लेबल, पिक्सेल या हर संभावित फॉरेंसिक संकेत नहीं।",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "इमेज मेटाडेटा साफ़ करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "Gemini इमेज को अपनी टीम से बाहर भेजने से पहले तय करें कि प्राप्तकर्ता को स्रोत मेटाडेटा चाहिए या नहीं। जरूरत न हो तो अकेली मूल फ़ाइल बदलने के बजाय वितरण के लिए अलग कॉपी बनाएँ। PrintxPDF का AI Metadata Remover ब्राउज़र में लोकल कॉपी बनाता है। मुख्य उपयोग मुफ़्त है, खाता नहीं चाहिए और वॉटरमार्क नहीं जोड़ता।"
+          },
+          {
+            "t": "h2",
+            "x": "शेयर करने से पहले Gemini इमेज कैसे साफ़ करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "पहले मूल फ़ाइल सहेजें",
+                "x": "मूल इमेज रखें; बाद में स्रोत, संपादन इतिहास या स्रोत रिकॉर्ड की ज़रूरत पड़ सकती है।"
+              },
+              {
+                "h": "इमेज मेटाडेटा हटाने वाला टूल खोलें",
+                "x": "मौजूदा ब्राउज़र टैब में [इमेज मेटाडेटा हटाएँ](/tools/remove-ai-metadata) खोलकर फ़ाइल जोड़ें।"
+              },
+              {
+                "h": "साफ़ कॉपी बनाएँ",
+                "x": "उपलब्ध विकल्प में आउटपुट फ़ॉर्मैट चुनें, फ़ाइल प्रोसेस करें और नई इमेज डाउनलोड करें। मूल फ़ाइल ओवरराइट नहीं होती।"
+              },
+              {
+                "h": "नतीजा जाँचें",
+                "x": "आउटपुट खोलें, दिखने वाले पिक्सेल की तुलना करें और पोस्ट या भेजने से पहले गंतव्य जाँचें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "अपने टैब में आम मेटाडेटा के बिना इमेज कॉपी बनाएँ। मुफ़्त, बिना साइनअप या वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "कौन-सी कॉपी भेजनी चाहिए?"
+          },
+          {
+            "t": "table",
+            "caption": "ज़रूरत के बदलाव के अनुसार चुनें।",
+            "head": [
+              "तरीका",
+              "क्या बदलता है",
+              "कब सही है"
+            ],
+            "rows": [
+              [
+                "AI Metadata Remover से दोबारा सहेजना",
+                "आम मेटाडेटा-कंटेनर के बिना नई इमेज बनाता है",
+                "जब दिखाई देने वाली इमेज साझा करने योग्य हो।"
+              ],
+              [
+                "मेटाडेटा फ़ील्ड संपादित करना",
+                "चुनी हुई प्रॉपर्टी बदलता है",
+                "पूरी कॉपी दोबारा बनाए बिना लेखक या विवरण सुधारना।"
+              ],
+              [
+                "दिखने वाला भाग धुंधला या क्रॉप करना",
+                "पिक्सेल बदलता है",
+                "लेबल, चेहरे या संवेदनशील आसपास का दृश्य छिपाना।"
+              ],
+              [
+                "मूल रखना",
+                "कुछ नहीं बदलता",
+                "स्रोत, वर्कफ़्लो या साक्ष्य विवरण सुरक्षित रखना।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "मेटाडेटा हटाने से इमेज गुमनाम नहीं होती"
+          },
+          {
+            "t": "p",
+            "x": "मेटाडेटा-मुक्त कॉपी के पिक्सेल भी जानकारी दिखा सकते हैं। वॉटरमार्क, स्थान का साइन, परावर्तित स्क्रीन, स्क्रीनशॉट में दिखता फ़ाइल नाम या पहचाना जा सकने वाला व्यक्ति मेटाडेटा नहीं है। EXIF, XMP या आम स्रोत डेटा हटाने से ये दृश्य संकेत नहीं बदलते। पूरी इमेज देखें; दृश्य सामग्री बदलनी हो तो अलग संपादन प्रक्रिया अपनाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "ब्राउज़र में लोकल प्रोसेसिंग क्यों महत्वपूर्ण है"
+          },
+          {
+            "t": "p",
+            "x": "तस्वीरों में निजी कमरे, ग्राहक का काम, पहचान पत्र या अभी जारी न हुए अभियान दिख सकते हैं। इस सामान्य प्रक्रिया में PrintxPDF फ़ाइल को नियमित रूप से सर्वर पर भेजने के बजाय ब्राउज़र में लोकल प्रोसेस करता है। इससे डिवाइस के बाहर अनावश्यक कॉपी घटती है। यह संगठन की गोपनीयता नीति का विकल्प नहीं और अविश्वसनीय व्यक्ति को साझा करना उचित नहीं बनाता।"
+          },
+          {
+            "t": "h2",
+            "x": "साफ़ कॉपी अदृश्यता की ढाल नहीं है"
+          },
+          {
+            "t": "p",
+            "x": "स्क्रीनशॉट, फ़ाइल नाम, ब्राउज़र इतिहास, दोबारा पोस्ट और प्लेटफ़ॉर्म रिकॉर्ड संदर्भ दिखा सकते हैं। टूल दृश्य सामग्री नहीं मिटाता और यह गारंटी नहीं देता कि प्राप्तकर्ता इमेज बनाने का तरीका नहीं समझ पाएगा। यह केवल नई फ़ाइल में आम मेटाडेटा-कंटेनर हटाता है। इससे इमेज की प्रामाणिकता, लाइसेंस या व्यावसायिक उपयोग की अनुमति साबित नहीं होती।"
+          },
+          {
+            "t": "h2",
+            "x": "शेयर करने से पहले छोटी जाँच सूची"
+          },
+          {
+            "t": "p",
+            "x": "पोस्ट से पहले पुष्टि करें कि प्राप्तकर्ता को इमेज चाहिए, दृश्य सामग्री ठीक है और डाउनलोड की गई कॉपी सही है। स्रोत या संपादन इतिहास दिखाना पड़ सकता है, इसलिए मूल अलग रखें। प्लेटफ़ॉर्म पर फ़ाइल बड़ी हो तो कॉपी पर [इमेज कन्वर्टर](/tools/image-converter) चलाएँ और भेजने से पहले गुणवत्ता जाँचें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या Gemini मेटाडेटा बिना खाते के हटा सकता हूँ?",
+            "a": "हाँ। PrintxPDF का सामान्य AI Metadata Remover ब्राउज़र में लोकल चलता है और साइनअप या कार्ड नहीं माँगता।"
+          },
+          {
+            "q": "क्या यह हर फ़ाइल से Content Credentials हटाता है?",
+            "a": "यह आम मेटाडेटा-कंटेनर के बिना नई कॉपी बनाता है, लेकिन सभी फ़ॉर्मैट और प्लेटफ़ॉर्म के हर संकेत को हटाने की गारंटी कोई टूल नहीं दे सकता।"
+          },
+          {
+            "q": "क्या साफ़ इमेज का व्यावसायिक उपयोग कर सकता हूँ?",
+            "a": "मेटाडेटा हटाने से कॉपीराइट, लाइसेंस या प्लेटफ़ॉर्म की अनुमति नहीं मिलती। लागू शर्तें और इमेज का स्रोत जाँचें।"
+          },
+          {
+            "q": "क्या Gemini की मूल इमेज बदलती है?",
+            "a": "नहीं। यह डाउनलोड की गई नई कॉपी बनाता है, इसलिए मूल फ़ाइल अलग रख सकते हैं।"
+          }
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
@@ -8848,6 +9268,146 @@
             "هل أحتفظ بصورة ChatGPT الأصلية؟",
             "نعم إذا احتجت إلى المصدر أو الترخيص أو سجل العمل أو جودة المصدر. شارك النسخة النظيفة منفصلة."
           ]
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-gemini-image-metadata-before-sharing",
+        "slug": "remove-gemini-image-metadata-before-sharing",
+        "title": "كيفية إزالة بيانات صورة Gemini قبل مشاركتها",
+        "metaTitle": "كيفية إزالة بيانات صورة Gemini قبل مشاركتها",
+        "metaDescription": "نظّف نسخة صورة Gemini مجاناً في المتصفح، بلا تسجيل أو علامة مائية. احتفظ بالأصل وراجع المحتوى المرئي.",
+        "keyword": "إزالة بيانات صورة Gemini الوصفية",
+        "secondaryKeywords": [
+          "إزالة بيانات Gemini",
+          "إزالة EXIF من صورة ذكاء اصطناعي",
+          "نسخة Gemini نظيفة",
+          "أداة خاصة لإزالة البيانات"
+        ],
+        "answer": "لإزالة البيانات الوصفية الشائعة من صورة Gemini قبل مشاركتها، احتفظ بالأصل وأنشئ نسخة منفصلة باستخدام AI Metadata Remover من PrintxPDF. نزّل الناتج وراجعه. تتم هذه العملية محلياً في المتصفح وتزيل حاويات البيانات الشائعة، لكنها لا تزيل التصنيفات المرئية أو البكسلات أو كل الإشارات الجنائية المحتملة.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "تنظيف بيانات الصورة الوصفية",
+        "body": [
+          {
+            "t": "p",
+            "x": "قبل مشاركة صورة Gemini خارج فريقك، قرر ما إذا كان المستلم يحتاج إلى بيانات مصدرها. إن لم يحتج إليها، أنشئ نسخة منفصلة للتوزيع بدلاً من تعديل الأصل الوحيد. تنشئ أداة AI Metadata Remover من PrintxPDF نسخة محلية داخل المتصفح. الاستخدام الأساسي مجاني ولا يتطلب حساباً ولا يضيف علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية تنظيف صورة Gemini قبل مشاركتها"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احفظ الأصل أولاً",
+                "x": "احتفظ بالصورة الأصلية لاحتمال حاجتك لاحقاً إلى مصدرها أو سجل تعديلها أو بيانات إنشائها."
+              },
+              {
+                "h": "افتح أداة إزالة بيانات الصور",
+                "x": "أضف الصورة إلى [إزالة بيانات الصورة الوصفية](/tools/remove-ai-metadata) في علامة تبويب حديثة للمتصفح."
+              },
+              {
+                "h": "أنشئ نسخة نظيفة",
+                "x": "اختر صيغة الإخراج المتاحة وعالج الملف ثم نزّل الصورة الجديدة. لا يُستبدل الأصل."
+              },
+              {
+                "h": "افحص النتيجة",
+                "x": "افتح النسخة وقارن البكسلات المرئية وتحقق من وجهة المشاركة قبل النشر أو الإرسال."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "أنشئ نسخة صورة بلا بيانات وصفية شائعة في علامة التبويب. مجاناً وبلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "أي نسخة ينبغي أن ترسل؟"
+          },
+          {
+            "t": "table",
+            "caption": "اختر حسب التغيير المطلوب.",
+            "head": [
+              "الطريقة",
+              "ما الذي يتغير؟",
+              "متى تناسب؟"
+            ],
+            "rows": [
+              [
+                "إعادة الحفظ بأداة إزالة البيانات",
+                "إنشاء صورة جديدة بلا حاويات البيانات الشائعة",
+                "مشاركة نسخة نظيفة عندما تكون الصورة نفسها مناسبة."
+              ],
+              [
+                "تحرير حقول البيانات الوصفية",
+                "تغيير خصائص محددة",
+                "تصحيح اسم المؤلف أو الوصف دون إعادة إنشاء نسخة كاملة."
+              ],
+              [
+                "تمويه أو قص الجزء المرئي",
+                "تغيير البكسلات",
+                "إخفاء التصنيفات أو الوجوه أو التفاصيل المحيطة الحساسة."
+              ],
+              [
+                "الاحتفاظ بالأصل",
+                "لا تغيير",
+                "حفظ المصدر أو سير العمل أو تفاصيل الإثبات."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "إزالة البيانات لا تجعل الصورة مجهولة"
+          },
+          {
+            "t": "p",
+            "x": "قد تكشف بكسلات النسخة النظيفة معلومات. فالعلامة المائية أو لافتة المكان أو الشاشة المنعكسة أو اسم الملف الظاهر في لقطة شاشة أو الشخص المعروف ليست بيانات وصفية. ولا تغير إزالة EXIF أو XMP أو بيانات المصدر الشائعة هذه القرائن. راجع الصورة بالحجم الكامل واستخدم عملية تحرير منفصلة إذا احتاج المحتوى المرئي إلى تعديل."
+          },
+          {
+            "t": "h2",
+            "x": "لماذا تهم المعالجة المحلية في المتصفح؟"
+          },
+          {
+            "t": "p",
+            "x": "قد تعرض الصور غرفاً خاصة أو أعمال عملاء أو وثائق هوية أو حملات لم تُنشر بعد. في هذا المسار المعتاد، تعالج PrintxPDF الملف محلياً في المتصفح بدلاً من إرساله عادة إلى خادم. يقلل ذلك نسخة غير ضرورية خارج الجهاز. لكنه لا يحل محل سياسة الخصوصية في مؤسستك ولا يجعل المشاركة مع مستلم غير موثوق مناسبة."
+          },
+          {
+            "t": "h2",
+            "x": "النسخة النظيفة ليست عباءة إخفاء"
+          },
+          {
+            "t": "p",
+            "x": "قد توفر لقطات الشاشة وأسماء الملفات وسجل المتصفح وإعادة النشر وسجلات المنصة سياقاً إضافياً. لا تمحو الأداة المحتوى المرئي ولا تضمن استحالة استنتاج طريقة إنشاء الصورة. إنها تعالج حاويات البيانات الشائعة في الملف الناتج فقط. ولا تثبت أصالة الصورة أو ترخيصها أو السماح باستخدامها تجارياً."
+          },
+          {
+            "t": "h2",
+            "x": "قائمة عملية قبل المشاركة"
+          },
+          {
+            "t": "p",
+            "x": "قبل النشر، تأكد من حاجة المستلم للصورة وملاءمة محتواها المرئي وأن النسخة المنزلة هي التي اخترتها. احتفظ بالأصل منفصلاً إذا احتجت إلى إظهار مصدره أو سجل تعديله. إذا كان الملف كبيراً على المنصة، استخدم [محول الصور](/tools/image-converter) على نسخة وافحص جودتها قبل الإرسال."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يمكن إزالة بيانات Gemini بلا حساب؟",
+            "a": "نعم. تعمل أداة AI Metadata Remover القياسية من PrintxPDF محلياً في المتصفح ولا تتطلب تسجيلاً أو بطاقة."
+          },
+          {
+            "q": "هل تزيل الأداة Content Credentials من كل ملف؟",
+            "a": "تنشئ نسخة جديدة بلا حاويات البيانات الشائعة، لكن لا ينبغي لأي أداة أن تعد بإزالة كل إشارة من كل صيغة أو منصة."
+          },
+          {
+            "q": "هل يمكنني استخدام الصورة النظيفة تجارياً؟",
+            "a": "إزالة البيانات لا تمنح حقوق النشر أو الترخيص أو موافقة المنصة. تحقق من الشروط ومصدر الصورة."
+          },
+          {
+            "q": "هل تتغير صورة Gemini الأصلية؟",
+            "a": "لا. ينشئ المسار نسخة جديدة للتنزيل، ويمكنك الاحتفاظ بالأصل منفصلاً."
+          }
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
@@ -11072,6 +11632,146 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-gemini-image-metadata-before-sharing",
+        "slug": "remove-gemini-image-metadata-before-sharing",
+        "title": "শেয়ারের আগে Gemini ছবির মেটাডেটা কীভাবে সরাবেন",
+        "metaTitle": "শেয়ারের আগে Gemini ছবির মেটাডেটা কীভাবে সরাবেন",
+        "metaDescription": "ব্রাউজারে Gemini ছবির কপি বিনামূল্যে পরিষ্কার করুন; সাইনআপ বা ওয়াটারমার্ক নেই। মূল ফাইল রাখুন ও দৃশ্যমান অংশ দেখুন।",
+        "keyword": "Gemini ছবির মেটাডেটা সরানো",
+        "secondaryKeywords": [
+          "Gemini মেটাডেটা সরান",
+          "AI ছবির EXIF সরানো",
+          "পরিষ্কার Gemini ছবির কপি",
+          "ব্যক্তিগত মেটাডেটা রিমুভার"
+        ],
+        "answer": "শেয়ারের আগে Gemini ছবির সাধারণ মেটাডেটা সরাতে মূল ফাইলটি রেখে PrintxPDF AI Metadata Remover দিয়ে আলাদা কপি তৈরি করুন। কপি ডাউনলোড করে পরীক্ষা করুন। এই লোকাল ব্রাউজার প্রসেসে সাধারণ মেটাডেটা কনটেইনার বাদ যায়, কিন্তু দৃশ্যমান লেবেল, পিক্সেল বা সম্ভাব্য সব ফরেনসিক সংকেত মুছে যায় না।",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "ছবির মেটাডেটা পরিষ্কার করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "দলের বাইরে Gemini ছবি পাঠানোর আগে ভাবুন, প্রাপকের উৎস-মেটাডেটা দরকার কি না। দরকার না হলে একমাত্র মূল ফাইল বদলানোর বদলে বিতরণের জন্য আলাদা কপি তৈরি করুন। PrintxPDF AI Metadata Remover ব্রাউজারেই লোকাল কপি বানায়। মূল ব্যবহার বিনামূল্যে, অ্যাকাউন্ট লাগে না এবং ওয়াটারমার্ক যোগ হয় না।"
+          },
+          {
+            "t": "h2",
+            "x": "শেয়ারের আগে Gemini ছবি কীভাবে পরিষ্কার করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "আগে মূল ফাইল রাখুন",
+                "x": "পরে উৎস, সম্পাদনার ইতিহাস বা মূল রেকর্ড দরকার হতে পারে, তাই আসল ছবিটি সংরক্ষণ করুন।"
+              },
+              {
+                "h": "ছবির মেটাডেটা সরানোর টুল খুলুন",
+                "x": "আধুনিক ব্রাউজার ট্যাবে [ছবির মেটাডেটা সরান](/tools/remove-ai-metadata) খুলে ছবিটি যোগ করুন।"
+              },
+              {
+                "h": "পরিষ্কার কপি বানান",
+                "x": "উপলভ্য আউটপুট ফরম্যাট বেছে নিয়ে ফাইল প্রসেস করুন এবং নতুন ছবিটি ডাউনলোড করুন। মূল ফাইল ওভাররাইট হয় না।"
+              },
+              {
+                "h": "ফল পরীক্ষা করুন",
+                "x": "আউটপুট খুলে দৃশ্যমান পিক্সেল তুলনা করুন এবং পোস্ট বা পাঠানোর আগে গন্তব্য নিশ্চিত করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "নিজের ট্যাবে সাধারণ মেটাডেটাবিহীন ছবির কপি বানান। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "কোন কপিটি পাঠাবেন?"
+          },
+          {
+            "t": "table",
+            "caption": "প্রয়োজনীয় পরিবর্তন অনুযায়ী বেছে নিন।",
+            "head": [
+              "পদ্ধতি",
+              "কী বদলায়",
+              "কখন উপযোগী"
+            ],
+            "rows": [
+              [
+                "AI Metadata Remover দিয়ে নতুন করে সংরক্ষণ",
+                "সাধারণ মেটাডেটা কনটেইনারবিহীন নতুন ছবি বানায়",
+                "দৃশ্যমান ছবি শেয়ারযোগ্য হলে পরিষ্কার কপি পাঠান।"
+              ],
+              [
+                "মেটাডেটা ক্ষেত্র সম্পাদনা",
+                "নির্বাচিত বৈশিষ্ট্য বদলায়",
+                "পুরো কপি নতুন না বানিয়ে লেখক বা বিবরণ সংশোধন।"
+              ],
+              [
+                "দৃশ্যমান অংশ ঝাপসা বা ক্রপ",
+                "পিক্সেল বদলায়",
+                "লেবেল, মুখ বা সংবেদনশীল আশপাশ ঢাকতে।"
+              ],
+              [
+                "মূল ফাইল রাখা",
+                "কিছুই বদলায় না",
+                "উৎস, কাজের ধাপ বা প্রমাণের বিবরণ রাখতে।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "মেটাডেটা সরানো মানে ছবি বেনামী করা নয়"
+          },
+          {
+            "t": "p",
+            "x": "পরিষ্কার কপির পিক্সেল থেকেও তথ্য প্রকাশ পেতে পারে। ওয়াটারমার্ক, স্থানের সাইন, প্রতিফলিত পর্দা, স্ক্রিনশটে দেখা ফাইলের নাম বা চেনা ব্যক্তি মেটাডেটা নয়। EXIF, XMP বা সাধারণ উৎস-তথ্য সরালেও এসব দৃশ্যমান ইঙ্গিত বদলায় না। পুরো ছবিটি দেখে নিন; দৃশ্যমান অংশ বদলাতে হলে আলাদা সম্পাদনা করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্রাউজারে লোকাল প্রসেসিং কেন গুরুত্বপূর্ণ"
+          },
+          {
+            "t": "p",
+            "x": "ছবিতে ব্যক্তিগত ঘর, ক্লায়েন্টের কাজ, পরিচয়পত্র বা অপ্রকাশিত প্রচারাভিযান থাকতে পারে। এই সাধারণ প্রক্রিয়ায় PrintxPDF ফাইল সার্ভারে নিয়মিত পাঠানোর বদলে ব্রাউজারেই লোকালি প্রসেস করে। এতে ডিভাইসের বাইরে অপ্রয়োজনীয় কপি কমে। এটি প্রতিষ্ঠানের গোপনীয়তা নীতির বিকল্প নয় এবং অবিশ্বস্ত প্রাপকের কাছে ছবি পাঠানো নিরাপদ করে না।"
+          },
+          {
+            "t": "h2",
+            "x": "পরিষ্কার কপি অদৃশ্যতার ঢাল নয়"
+          },
+          {
+            "t": "p",
+            "x": "স্ক্রিনশট, ফাইলের নাম, ব্রাউজার ইতিহাস, পুনঃপ্রকাশ এবং প্ল্যাটফর্মের রেকর্ড থেকেও প্রসঙ্গ বোঝা যায়। টুল দৃশ্যমান বিষয় মুছে দেয় না বা ছবিটি কীভাবে তৈরি হয়েছে তা প্রাপক বুঝতে পারবে না এমন নিশ্চয়তা দেয় না। এটি শুধু ফলের ফাইলে সাধারণ মেটাডেটা কনটেইনার সরায়। ছবিটি আসল, লাইসেন্সপ্রাপ্ত বা বাণিজ্যিক ব্যবহারের জন্য অনুমোদিত—এটিও প্রমাণ করে না।"
+          },
+          {
+            "t": "h2",
+            "x": "শেয়ারের আগে ব্যবহারিক তালিকা"
+          },
+          {
+            "t": "p",
+            "x": "প্রকাশের আগে নিশ্চিত করুন প্রাপকের ছবিটি দরকার, দৃশ্যমান বিষয় গ্রহণযোগ্য এবং ডাউনলোড করা কপিটি ঠিক আপনার নির্বাচিত সংস্করণ। উৎস বা সম্পাদনা ইতিহাস দেখানোর দরকার হতে পারে, তাই মূল আলাদা রাখুন। প্ল্যাটফর্মে ফাইল বড় হলে কপিতে [ছবি কনভার্টার](/tools/image-converter) ব্যবহার করে পাঠানোর আগে মান দেখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "অ্যাকাউন্ট ছাড়া কি Gemini মেটাডেটা সরানো যায়?",
+            "a": "হ্যাঁ। PrintxPDF-এর সাধারণ AI Metadata Remover ব্রাউজারে লোকাল চলে; সাইনআপ বা কার্ড লাগে না।"
+          },
+          {
+            "q": "এটি কি সব ফাইল থেকে Content Credentials সরায়?",
+            "a": "এটি সাধারণ মেটাডেটা কনটেইনার ছাড়া নতুন কপি তৈরি করে, তবে সব ফরম্যাট ও প্ল্যাটফর্মের সব সংকেত সরানোর নিশ্চয়তা কোনো টুল দিতে পারে না।"
+          },
+          {
+            "q": "পরিষ্কার ছবিটি কি বাণিজ্যিকভাবে ব্যবহার করতে পারি?",
+            "a": "মেটাডেটা সরালে কপিরাইট, লাইসেন্স বা প্ল্যাটফর্মের অনুমতি মেলে না। প্রযোজ্য শর্ত ও ছবির উৎস পরীক্ষা করুন।"
+          },
+          {
+            "q": "Gemini-এর মূল ছবিটি কি বদলে যায়?",
+            "a": "না। এই প্রক্রিয়ায় নতুন কপি ডাউনলোড হয়, তাই মূলটি আলাদা রাখা যায়।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -13278,6 +13978,146 @@
             "Có nên giữ ảnh ChatGPT gốc không?",
             "Có nếu bạn có thể cần nguồn gốc, giấy phép, lịch sử quy trình hoặc chất lượng bản gốc. Hãy chia sẻ bản sạch riêng."
           ]
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-gemini-image-metadata-before-sharing",
+        "slug": "remove-gemini-image-metadata-before-sharing",
+        "title": "Cách xóa siêu dữ liệu ảnh Gemini trước khi chia sẻ",
+        "metaTitle": "Cách xóa siêu dữ liệu ảnh Gemini trước khi chia sẻ",
+        "metaDescription": "Làm sạch bản sao ảnh Gemini miễn phí trong trình duyệt, không đăng ký, không hình mờ. Giữ bản gốc và kiểm tra nội dung nhìn thấy.",
+        "keyword": "xóa siêu dữ liệu ảnh Gemini",
+        "secondaryKeywords": [
+          "xóa siêu dữ liệu Gemini",
+          "xóa EXIF ảnh AI",
+          "bản sao ảnh Gemini sạch",
+          "công cụ xóa siêu dữ liệu riêng tư"
+        ],
+        "answer": "Để xóa siêu dữ liệu phổ biến khỏi ảnh Gemini trước khi chia sẻ, hãy giữ bản gốc và tạo bản sao riêng bằng AI Metadata Remover của PrintxPDF. Tải bản mới xuống và kiểm tra. Quy trình xử lý cục bộ trong trình duyệt này bỏ các vùng siêu dữ liệu phổ biến, nhưng không xóa nhãn nhìn thấy, điểm ảnh hay mọi tín hiệu pháp chứng có thể có.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Làm sạch siêu dữ liệu ảnh",
+        "body": [
+          {
+            "t": "p",
+            "x": "Trước khi gửi ảnh Gemini ra ngoài nhóm, hãy quyết định người nhận có cần siêu dữ liệu nguồn hay không. Nếu không, hãy tạo bản phân phối riêng thay vì chỉnh tệp gốc duy nhất. AI Metadata Remover của PrintxPDF tạo bản sao cục bộ ngay trong trình duyệt. Dùng cơ bản miễn phí, không cần tài khoản và không thêm hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Cách làm sạch ảnh Gemini trước khi chia sẻ"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Lưu bản gốc trước",
+                "x": "Giữ ảnh nguồn phòng khi sau này bạn cần nguồn gốc, lịch sử chỉnh sửa hoặc hồ sơ ban đầu."
+              },
+              {
+                "h": "Mở công cụ xóa siêu dữ liệu ảnh",
+                "x": "Thêm ảnh vào [Xóa siêu dữ liệu ảnh](/tools/remove-ai-metadata) trong tab trình duyệt hiện đại."
+              },
+              {
+                "h": "Tạo bản sao sạch",
+                "x": "Chọn định dạng đầu ra nếu có, xử lý tệp rồi tải ảnh mới xuống. Bản gốc không bị ghi đè."
+              },
+              {
+                "h": "Kiểm tra kết quả",
+                "x": "Mở bản sao, so sánh điểm ảnh nhìn thấy và xác nhận nơi gửi trước khi đăng hoặc chia sẻ."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Tạo bản sao ảnh không có siêu dữ liệu phổ biến ngay trong tab. Miễn phí, không đăng ký, không hình mờ."
+          },
+          {
+            "t": "h2",
+            "x": "Nên gửi bản sao nào?"
+          },
+          {
+            "t": "table",
+            "caption": "Chọn theo thay đổi bạn cần.",
+            "head": [
+              "Cách làm",
+              "Thay đổi gì",
+              "Khi nào phù hợp"
+            ],
+            "rows": [
+              [
+                "Lưu lại bằng AI Metadata Remover",
+                "Tạo ảnh mới không có vùng siêu dữ liệu phổ biến",
+                "Chia sẻ bản sạch nếu hình ảnh nhìn thấy phù hợp."
+              ],
+              [
+                "Sửa trường siêu dữ liệu",
+                "Đổi thuộc tính đã chọn",
+                "Sửa tác giả hoặc mô tả mà không dựng lại toàn bộ bản sao."
+              ],
+              [
+                "Làm mờ hoặc cắt phần nhìn thấy",
+                "Thay đổi điểm ảnh",
+                "Ẩn nhãn, khuôn mặt hoặc chi tiết nền nhạy cảm."
+              ],
+              [
+                "Giữ bản gốc",
+                "Không thay đổi",
+                "Lưu nguồn gốc, quy trình hoặc chi tiết chứng cứ."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Xóa siêu dữ liệu không ẩn danh ảnh"
+          },
+          {
+            "t": "p",
+            "x": "Bản sạch vẫn có thể tiết lộ thông tin qua điểm ảnh. Hình mờ, biển địa điểm, màn hình phản chiếu, tên tệp trong ảnh chụp màn hình hoặc người có thể nhận diện không phải siêu dữ liệu. Xóa EXIF, XMP hay dữ liệu nguồn phổ biến không làm đổi các dấu hiệu đó. Hãy xem ảnh ở kích thước đầy đủ và chỉnh sửa riêng nếu nội dung nhìn thấy cũng cần thay đổi."
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao xử lý cục bộ trong trình duyệt quan trọng"
+          },
+          {
+            "t": "p",
+            "x": "Ảnh có thể cho thấy nhà riêng, sản phẩm khách hàng, giấy tờ tùy thân hoặc chiến dịch chưa công bố. Với quy trình tiêu chuẩn này, PrintxPDF xử lý tệp ngay trong trình duyệt thay vì thường xuyên gửi lên máy chủ. Điều đó giảm bản sao không cần thiết bên ngoài thiết bị. Cách này không thay chính sách riêng tư của tổ chức và không khiến việc gửi ảnh cho người nhận không đáng tin trở nên phù hợp."
+          },
+          {
+            "t": "h2",
+            "x": "Bản sạch không phải áo tàng hình"
+          },
+          {
+            "t": "p",
+            "x": "Ảnh chụp màn hình, tên tệp, lịch sử trình duyệt, bài đăng lại và hồ sơ của nền tảng vẫn có thể cung cấp bối cảnh. Công cụ không xóa nội dung nhìn thấy hoặc bảo đảm người nhận không thể suy ra cách ảnh được tạo. Công cụ chỉ xử lý các vùng siêu dữ liệu phổ biến trong tệp đầu ra. Nó không chứng minh ảnh xác thực, có giấy phép hay được phép dùng thương mại."
+          },
+          {
+            "t": "h2",
+            "x": "Danh sách kiểm tra trước khi chia sẻ"
+          },
+          {
+            "t": "p",
+            "x": "Trước khi đăng, hãy xác nhận người nhận cần ảnh, nội dung nhìn thấy phù hợp và bản tải xuống đúng là bản bạn chọn. Giữ bản gốc riêng nếu sau này cần trình bày nguồn hoặc lịch sử chỉnh sửa. Nếu tệp quá lớn với nền tảng, dùng [Trình chuyển đổi ảnh](/tools/image-converter) trên bản sao và kiểm tra chất lượng trước khi gửi."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Có thể xóa siêu dữ liệu Gemini mà không cần tài khoản không?",
+            "a": "Có. AI Metadata Remover tiêu chuẩn của PrintxPDF xử lý cục bộ trong trình duyệt, không cần đăng ký hoặc thẻ thanh toán."
+          },
+          {
+            "q": "Công cụ có xóa Content Credentials khỏi mọi tệp không?",
+            "a": "Công cụ tạo bản sao mới không có vùng siêu dữ liệu phổ biến, nhưng không nên hứa xóa mọi tín hiệu trên mọi định dạng hoặc nền tảng."
+          },
+          {
+            "q": "Tôi có thể dùng ảnh đã làm sạch cho mục đích thương mại không?",
+            "a": "Xóa siêu dữ liệu không cấp bản quyền, giấy phép hoặc quyền theo nền tảng. Hãy kiểm tra điều khoản áp dụng và nguồn ảnh."
+          },
+          {
+            "q": "Ảnh Gemini gốc có thay đổi không?",
+            "a": "Không. Quy trình tải về một bản sao mới nên bạn có thể giữ riêng tệp gốc."
+          }
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
@@ -15496,6 +16336,146 @@
             "应该保留 ChatGPT 原图吗？",
             "如果之后可能需要来源信息、许可、工作流程记录或更高质量源图，就应该保留。请单独分享清理后的副本。"
           ]
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "remove-gemini-image-metadata-before-sharing",
+        "slug": "remove-gemini-image-metadata-before-sharing",
+        "title": "分享前如何删除 Gemini 图片元数据",
+        "metaTitle": "分享前如何删除 Gemini 图片元数据",
+        "metaDescription": "在浏览器中免费清理 Gemini 图片副本，无需注册、没有水印。保留原件并检查可见画面与内容。",
+        "keyword": "删除 Gemini 图片元数据",
+        "secondaryKeywords": [
+          "清除 Gemini 元数据",
+          "删除 AI 图片 EXIF",
+          "干净的 Gemini 图片副本",
+          "隐私元数据清除工具"
+        ],
+        "answer": "分享 Gemini 图片前，若要清除常见元数据，请保留原件，并使用 PrintxPDF 的 AI 元数据清除工具创建单独副本。下载后检查结果。此流程在浏览器本地处理，可移除常见元数据容器，但不会删除可见标签、像素或所有可能的取证信号。",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "清除图片元数据",
+        "body": [
+          {
+            "t": "p",
+            "x": "将 Gemini 图片分享给团队外的人之前，先判断接收者是否需要图片来源元数据。如果不需要，请创建单独的分发副本，不要修改唯一原件。PrintxPDF 的 AI 元数据清除工具会在浏览器本地创建副本。基础功能免费，无需注册，也不会添加水印。"
+          },
+          {
+            "t": "h2",
+            "x": "分享前如何清理 Gemini 图片"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "先保存原件",
+                "x": "保留原图，以便之后需要来源信息、编辑历史或原始记录时使用。"
+              },
+              {
+                "h": "打开图片元数据清除工具",
+                "x": "在新版浏览器标签页中，将图片添加到[删除图片元数据](/tools/remove-ai-metadata)。"
+              },
+              {
+                "h": "创建干净副本",
+                "x": "如有格式选项，请先选择，再处理并下载新图片。原件不会被覆盖。"
+              },
+              {
+                "h": "检查结果",
+                "x": "打开输出文件，对比可见像素，并在发布或发送前确认分享目的地。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "在浏览器标签页中创建不含常见元数据的图片副本。免费、免注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "应该发送哪一个副本？"
+          },
+          {
+            "t": "table",
+            "caption": "根据所需更改选择方式。",
+            "head": [
+              "方式",
+              "会改变什么",
+              "适用情况"
+            ],
+            "rows": [
+              [
+                "用 AI 元数据清除工具重新保存",
+                "创建不含常见元数据容器的新图片",
+                "可见画面适合分享时发送干净副本。"
+              ],
+              [
+                "编辑元数据字段",
+                "更改选定属性",
+                "只修正作者或说明，无需重新生成整个副本。"
+              ],
+              [
+                "模糊或裁剪可见内容",
+                "更改像素",
+                "隐藏可见标签、人脸或敏感背景。"
+              ],
+              [
+                "保留原件",
+                "不做更改",
+                "保存来源、工作流程或证据细节。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "删除元数据不等于图片匿名化"
+          },
+          {
+            "t": "p",
+            "x": "干净副本仍可能通过像素透露信息。水印、地点标牌、反射屏幕、截图中可见的文件名或可识别人物都不是元数据。删除 EXIF、XMP 或常见来源数据不会改变这些可见线索。请按原尺寸检查图片；如果可见画面也需要修改，应使用单独的图片编辑流程。"
+          },
+          {
+            "t": "h2",
+            "x": "为什么浏览器本地处理很重要"
+          },
+          {
+            "t": "p",
+            "x": "图片可能包含私人室内环境、客户作品、身份证件或尚未发布的宣传素材。对于此标准流程，PrintxPDF 会在浏览器本地处理文件，而不是常规地发送到服务器，从而减少设备之外不必要的副本。这不能替代组织的隐私政策，也不代表可以放心把图片分享给不可信的接收者。"
+          },
+          {
+            "t": "h2",
+            "x": "干净副本不是隐身斗篷"
+          },
+          {
+            "t": "p",
+            "x": "截图、文件名、浏览器历史、转载内容和平台记录仍可能提供上下文。工具不会删除可见内容，也不能保证接收者无法推断图片的制作方式。它只处理输出文件中的常见元数据容器。它无法证明图片真实、已获许可或可以商业使用。"
+          },
+          {
+            "t": "h2",
+            "x": "分享前的实用检查清单"
+          },
+          {
+            "t": "p",
+            "x": "发布前，确认接收者确实需要这张图片、可见内容可以分享，并且下载的是你选择的副本。如果之后可能需要说明来源或编辑历史，请单独保留原件。若文件对平台来说太大，可用[图片转换器](/tools/image-converter)处理副本，并在发送前检查画质。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "无需账号可以删除 Gemini 元数据吗？",
+            "a": "可以。PrintxPDF 的标准 AI 元数据清除流程在浏览器本地运行，无需注册或银行卡。"
+          },
+          {
+            "q": "它能删除任何文件中的 Content Credentials 吗？",
+            "a": "它会创建不含常见元数据容器的新副本，但任何工具都不应承诺能删除所有格式或平台中的所有信号。"
+          },
+          {
+            "q": "清理后的图片可以用于商业用途吗？",
+            "a": "删除元数据不会授予版权、许可或平台使用权。请检查适用条款和图片来源。"
+          },
+          {
+            "q": "Gemini 原始图片会改变吗？",
+            "a": "不会。此流程会下载一个新副本，因此你可以单独保留原件。"
+          }
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
