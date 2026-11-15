@@ -1,0 +1,973 @@
+{
+  "topic": "flatten-filled-pdf-form-before-sending",
+  "sourceCluster": "sign",
+  "tool": "pdf-forms",
+  "languages": {
+    "es": {
+      "title": "¿Conviene aplanar un formulario PDF antes de enviarlo?",
+      "metaTitle": "Aplanar un formulario PDF antes de enviarlo",
+      "metaDescription": "Decide si aplanar un formulario PDF según quién editará las respuestas. Gratis, sin registro ni marca de agua, en el navegador.",
+      "keyword": "aplanar formulario PDF antes de enviarlo",
+      "secondaryKeywords": [
+        "formulario PDF relleno",
+        "aplanar campos PDF",
+        "PDF editable o fijo",
+        "proteger respuestas de formulario"
+      ],
+      "answer": "Aplana un formulario PDF relleno cuando el destinatario necesite respuestas fijas y hayas guardado una copia editable. No aplanes un borrador que debas corregir y revisa siempre el resultado antes de enviarlo.",
+      "ctaLabel": "Rellenar y aplanar formulario PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Aplanar un formulario PDF es útil cuando quieres fijar las respuestas visibles para compartir o archivar, pero dificulta los cambios posteriores. Conserva primero una copia rellena y editable. Aplana solo la copia de entrega si el destinatario no necesita editar campos. Revisa el PDF final y confirma las instrucciones de la entidad que recibirá el formulario, ya que aplanar no equivale a firmar, cifrar ni autenticar legalmente."
+        },
+        {
+          "t": "h2",
+          "x": "Cómo preparar un formulario PDF para enviarlo"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarda el original",
+              "x": "Conserva una copia sin cambios, especialmente para documentos de impuestos, salud, banca o empleo."
+            },
+            {
+              "h": "Rellena los campos",
+              "x": "Abre [Rellenar formularios PDF](/tools/pdf-forms), selecciona el archivo y completa los campos interactivos."
+            },
+            {
+              "h": "Guarda una copia editable",
+              "x": "Descarga y conserva la versión rellena para corregir o actualizar respuestas más tarde."
+            },
+            {
+              "h": "Aplana la copia de entrega si hace falta",
+              "x": "Usa la salida aplanada cuando el destinatario necesite respuestas fijas y las instrucciones permitan ese tipo de PDF."
+            },
+            {
+              "h": "Comprueba antes de enviar",
+              "x": "Abre la copia final y revisa todas las respuestas, páginas, casillas y firmas."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "Rellena campos estándar y prepara una copia PDF en tu pestaña. Gratis, sin registro ni marca de agua."
+        },
+        {
+          "t": "h2",
+          "x": "Elegir entre formulario editable y aplanado"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Salida",
+            "Qué ocurre con los campos",
+            "Cuándo usarla"
+          ],
+          "rows": [
+            [
+              "PDF relleno",
+              "Los campos interactivos siguen editables",
+              "Borradores o formularios que se actualizarán."
+            ],
+            [
+              "PDF aplanado",
+              "Las respuestas se convierten en contenido fijo",
+              "Entrega final cuando no se deben editar campos."
+            ],
+            [
+              "PDF firmado",
+              "Se añade una firma electrónica o visual",
+              "Aprobación después de revisar el contenido."
+            ],
+            [
+              "PDF cifrado",
+              "Se limita el acceso con una contraseña",
+              "Protección adicional si la política lo requiere."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Qué significa aplanar un formulario"
+        },
+        {
+          "t": "p",
+          "x": "Al aplanar, las respuestas visibles se integran en el contenido de la página y se eliminan los campos de formulario editables normales. El destinatario puede leerlas, pero no cambiar cada campo como en un formulario interactivo. Esto puede evitar modificaciones accidentales y facilitar una presentación consistente. También hace más difícil corregir errores, así que guarda una copia editable y comprueba que el receptor acepta un formulario aplanado."
+        },
+        {
+          "t": "h2",
+          "x": "Cuándo conviene aplanar antes de enviar"
+        },
+        {
+          "t": "p",
+          "x": "Aplana una copia cuando hayas terminado de revisar y el destinatario solo necesite leer o archivar respuestas fijas. Puede servir para una presentación final o un paquete de registros. No aplanes un borrador, un formulario que volverás a usar ni un archivo que la institución deba procesar como campos interactivos. Sigue las instrucciones del emisor: algunos portales requieren un tipo específico de formulario."
+        },
+        {
+          "t": "h2",
+          "x": "Aplanar no firma ni protege el archivo"
+        },
+        {
+          "t": "p",
+          "x": "Aplanar no demuestra quién completó el formulario y no añade cifrado. Tampoco es lo mismo que una firma digital válida. Si necesitas una firma, revisa el contenido y usa [Firmar PDF](/tools/sign-pdf). Si necesitas restringir el acceso, aplica la protección adecuada según el destinatario. Para anotaciones independientes de los campos, [Aplanar PDF](/tools/flatten-pdf) puede fijar marcas y comentarios en otra copia."
+        },
+        {
+          "t": "h2",
+          "x": "Protege datos privados y revisa el resultado"
+        },
+        {
+          "t": "p",
+          "x": "Un formulario puede incluir dirección, identificación, cuenta, salud o historial laboral. PrintxPDF procesa el rellenado estándar localmente en la pestaña del navegador, sin subir rutinariamente el documento. Aun así, guarda las copias en un lugar autorizado y usa el canal seguro que indique el destinatario. Abre el PDF aplanado, comprueba que las respuestas sean legibles y que el número de páginas y firmas coincida. Conserva el original y la copia editable hasta que confirmen la recepción."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Debo aplanar un formulario PDF antes de enviarlo?",
+          "a": "Hazlo solo si las respuestas deben quedar fijas y el destinatario acepta un PDF aplanado. Guarda una copia editable por si necesitas corregirla."
+        },
+        {
+          "q": "¿Se puede editar un PDF aplanado?",
+          "a": "No como un formulario normal: las respuestas pasan a ser contenido fijo de página. Conserva una copia con campos interactivos para futuras modificaciones."
+        },
+        {
+          "q": "¿Aplanar un PDF añade una firma digital?",
+          "a": "No. Aplanar fija el contenido visible, pero no autentica al firmante ni cifra el documento. Usa una herramienta de firma cuando se necesite firmar."
+        },
+        {
+          "q": "¿Es privado rellenar y aplanar formularios PDF?",
+          "a": "El flujo estándar de PrintxPDF se procesa en la pestaña del navegador y no sube rutinariamente el archivo para procesarlo."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Devo achatar um formulário PDF antes de enviar?",
+      "metaTitle": "Achatar formulário PDF antes de enviar",
+      "metaDescription": "Decida se deve achatar um formulário PDF conforme quem editará as respostas. Grátis, sem cadastro ou marca-d’água, no navegador.",
+      "keyword": "achatar formulário PDF antes de enviar",
+      "secondaryKeywords": [
+        "formulário PDF preenchido",
+        "achatar campos PDF",
+        "PDF editável ou fixo",
+        "proteger respostas do formulário"
+      ],
+      "answer": "Achate um formulário PDF preenchido quando o destinatário precisar de respostas fixas e você tiver guardado uma cópia editável. Não achate um rascunho que ainda será corrigido e sempre confira o resultado antes de enviar.",
+      "ctaLabel": "Preencher e achatar formulário PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Achatar um formulário PDF é útil para fixar as respostas visíveis ao compartilhar ou arquivar, mas dificulta mudanças posteriores. Primeiro guarde uma cópia preenchida e editável. Achate apenas a cópia de entrega se o destinatário não precisar editar os campos. Revise o PDF final e confirme as exigências de quem receberá o formulário, pois achatar não equivale a assinar, criptografar ou autenticar legalmente."
+        },
+        {
+          "t": "h2",
+          "x": "Como preparar um formulário PDF para envio"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Guarde o original",
+              "x": "Mantenha uma cópia sem alterações, especialmente para documentos fiscais, médicos, bancários ou profissionais."
+            },
+            {
+              "h": "Preencha os campos",
+              "x": "Abra [Preencher formulários PDF](/tools/pdf-forms), selecione o arquivo e complete os campos interativos."
+            },
+            {
+              "h": "Salve uma cópia editável",
+              "x": "Baixe e guarde a versão preenchida para corrigir ou atualizar respostas depois."
+            },
+            {
+              "h": "Achate a cópia de entrega se necessário",
+              "x": "Use a saída achatada quando o destinatário precisar de respostas fixas e as instruções aceitarem esse tipo de PDF."
+            },
+            {
+              "h": "Confira antes de enviar",
+              "x": "Abra a cópia final e revise respostas, páginas, caixas e assinaturas."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "Preencha campos padrão e prepare uma cópia PDF na sua aba. Grátis, sem cadastro e sem marca-d’água."
+        },
+        {
+          "t": "h2",
+          "x": "Escolha entre formulário editável e achatado"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Saída",
+            "O que acontece com os campos",
+            "Quando usar"
+          ],
+          "rows": [
+            [
+              "PDF preenchido",
+              "Os campos interativos continuam editáveis",
+              "Rascunhos ou formulários que serão atualizados."
+            ],
+            [
+              "PDF achatado",
+              "As respostas viram conteúdo fixo da página",
+              "Entrega final quando os campos não devem ser editados."
+            ],
+            [
+              "PDF assinado",
+              "Uma assinatura eletrônica ou visual é adicionada",
+              "Aprovação após revisar o conteúdo."
+            ],
+            [
+              "PDF criptografado",
+              "O acesso é limitado por senha",
+              "Proteção extra se a política exigir."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "O que significa achatar um formulário"
+        },
+        {
+          "t": "p",
+          "x": "Ao achatar, as respostas visíveis são incorporadas ao conteúdo da página e os campos editáveis normais são removidos. O destinatário pode ler as respostas, mas não alterar cada campo como num formulário interativo. Isso evita mudanças acidentais e ajuda a manter uma apresentação consistente. Também dificulta correções, então guarde uma cópia editável e confirme que o destinatário aceita o formulário achatado."
+        },
+        {
+          "t": "h2",
+          "x": "Quando achatar antes de enviar"
+        },
+        {
+          "t": "p",
+          "x": "Achate uma cópia depois da revisão final quando o destinatário só precisar ler ou arquivar respostas fixas. Isso pode servir para uma entrega final ou um pacote de registros. Não achate um rascunho, um formulário que será reutilizado ou um arquivo que a instituição precisa processar como campos interativos. Siga as instruções do emissor: alguns portais exigem um formato específico."
+        },
+        {
+          "t": "h2",
+          "x": "Achatar não assina nem protege o arquivo"
+        },
+        {
+          "t": "p",
+          "x": "Achatar não comprova quem preencheu o formulário e não adiciona criptografia. Também não equivale a uma assinatura digital válida. Se precisar assinar, revise o conteúdo e use [Assinar PDF](/tools/sign-pdf). Se precisar limitar o acesso, aplique a proteção adequada ao destinatário. Para anotações separadas dos campos, [Achatar PDF](/tools/flatten-pdf) pode fixar marcas e comentários numa cópia separada."
+        },
+        {
+          "t": "h2",
+          "x": "Proteja os dados e revise o resultado"
+        },
+        {
+          "t": "p",
+          "x": "Um formulário pode conter endereço, documento, conta, saúde ou histórico profissional. O PrintxPDF processa o preenchimento padrão localmente na aba do navegador, sem enviar rotineiramente o documento. Ainda assim, guarde as cópias em local aprovado e use o canal seguro exigido pelo destinatário. Abra o PDF achatado e confira legibilidade, número de páginas e assinaturas. Guarde o original e a cópia editável até confirmarem o recebimento."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Devo achatar um formulário PDF antes de enviar?",
+          "a": "Faça isso apenas se as respostas precisarem ficar fixas e o destinatário aceitar PDF achatado. Guarde uma cópia editável para correções."
+        },
+        {
+          "q": "Dá para editar um PDF achatado?",
+          "a": "Não como um formulário comum: as respostas viram conteúdo fixo da página. Guarde uma cópia com campos interativos para futuras alterações."
+        },
+        {
+          "q": "Achatar PDF adiciona assinatura digital?",
+          "a": "Não. Achatar fixa o conteúdo visível, mas não autentica o signatário nem criptografa o documento. Use uma ferramenta de assinatura quando necessário."
+        },
+        {
+          "q": "É privado preencher e achatar formulários PDF?",
+          "a": "O fluxo padrão do PrintxPDF ocorre na aba do navegador e não envia rotineiramente o arquivo para processamento."
+        }
+      ]
+    },
+    "hi": {
+      "title": "भरा PDF फ़ॉर्म भेजने से पहले फ़्लैटन करें?",
+      "metaTitle": "भरा PDF फ़ॉर्म भेजने से पहले फ़्लैटन करें",
+      "metaDescription": "फ़ील्ड कौन बदलेगा, इसके आधार पर PDF फ़ॉर्म फ़्लैटन करें। मुफ़्त, बिना साइनअप या वॉटरमार्क, ब्राउज़र में।",
+      "keyword": "PDF फ़ॉर्म भेजने से पहले फ़्लैटन करें",
+      "secondaryKeywords": [
+        "भरा PDF फ़ॉर्म",
+        "PDF फ़ील्ड फ़्लैटन करें",
+        "संपादन योग्य या स्थिर PDF",
+        "फ़ॉर्म उत्तर सुरक्षित करें"
+      ],
+      "answer": "भरे PDF फ़ॉर्म को तब फ़्लैटन करें जब पाने वाले को स्थिर उत्तर चाहिए और आपने संपादन योग्य प्रति रख ली हो। जिस ड्राफ्ट में सुधार करना हो उसे फ़्लैटन न करें और भेजने से पहले PDF जाँचें।",
+      "ctaLabel": "PDF फ़ॉर्म भरें और फ़्लैटन करें",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF फ़ॉर्म फ़्लैटन करने से दिखने वाले उत्तर साझा करने या संग्रहित करने के लिए स्थिर हो जाते हैं, लेकिन बाद में बदलाव कठिन होते हैं। पहले भरी हुई संपादन योग्य प्रति सुरक्षित रखें। केवल जमा करने वाली प्रति फ़्लैटन करें, जब पाने वाले को फ़ील्ड संपादित नहीं करने हों। अंतिम PDF जाँचें और पाने वाले की शर्तें पढ़ें, क्योंकि फ़्लैटन करना हस्ताक्षर, एन्क्रिप्शन या कानूनी प्रमाणीकरण नहीं है।"
+        },
+        {
+          "t": "h2",
+          "x": "भेजने के लिए PDF फ़ॉर्म कैसे तैयार करें"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "मूल प्रति रखें",
+              "x": "बिना बदलाव वाली प्रति सुरक्षित रखें, खासकर टैक्स, स्वास्थ्य, बैंक या नौकरी के दस्तावेज़ में।"
+            },
+            {
+              "h": "फ़ील्ड भरें",
+              "x": "[PDF फ़ॉर्म भरें](/tools/pdf-forms) खोलें, फ़ाइल चुनें और इंटरैक्टिव फ़ील्ड पूरे करें।"
+            },
+            {
+              "h": "संपादन योग्य प्रति सहेजें",
+              "x": "बाद में उत्तर सुधारने या अपडेट करने के लिए भरी हुई प्रति डाउनलोड करके रखें।"
+            },
+            {
+              "h": "ज़रूरत हो तो डिलीवरी प्रति फ़्लैटन करें",
+              "x": "फ़्लैटन आउटपुट तभी चुनें जब पाने वाले को स्थिर उत्तर चाहिए और निर्देश इसकी अनुमति देते हों।"
+            },
+            {
+              "h": "भेजने से पहले जाँचें",
+              "x": "अंतिम प्रति खोलें और उत्तर, पेज, चेकबॉक्स व हस्ताक्षर देखें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "टैब में मानक फ़ॉर्म भरें और PDF प्रति तैयार करें। मुफ़्त, बिना साइनअप या वॉटरमार्क के."
+        },
+        {
+          "t": "h2",
+          "x": "संपादन योग्य और फ़्लैटन फ़ॉर्म चुनें"
+        },
+        {
+          "t": "table",
+          "head": [
+            "आउटपुट",
+            "फ़ील्ड पर असर",
+            "कब इस्तेमाल करें"
+          ],
+          "rows": [
+            [
+              "भरा PDF",
+              "इंटरैक्टिव फ़ील्ड संपादन योग्य रहते हैं",
+              "ड्राफ्ट या बार-बार अपडेट होने वाले फ़ॉर्म।"
+            ],
+            [
+              "फ़्लैटन PDF",
+              "उत्तर स्थिर पेज सामग्री बनते हैं",
+              "जब अंतिम प्रति में फ़ील्ड बदलने नहीं चाहिए।"
+            ],
+            [
+              "हस्ताक्षरित PDF",
+              "इलेक्ट्रॉनिक या दृश्य हस्ताक्षर जुड़ता है",
+              "सामग्री जाँचने के बाद मंजूरी।"
+            ],
+            [
+              "एन्क्रिप्टेड PDF",
+              "पासवर्ड से पहुँच सीमित होती है",
+              "नीति के अनुसार अतिरिक्त सुरक्षा।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "फ़ॉर्म फ़्लैटन करने का अर्थ"
+        },
+        {
+          "t": "p",
+          "x": "फ़्लैटन करने पर दिखने वाले उत्तर पेज सामग्री बनते हैं और सामान्य संपादन योग्य फ़ील्ड हटते हैं। पाने वाला जवाब पढ़ सकता है, लेकिन इंटरैक्टिव फ़ॉर्म की तरह हर फ़ील्ड नहीं बदल सकता। इससे अनचाहे बदलाव रुकते हैं और रूप एक जैसा रहता है। सुधार करना भी कठिन हो सकता है, इसलिए संपादन योग्य प्रति रखें और पुष्टि करें कि पाने वाला फ़्लैटन फ़ॉर्म स्वीकार करता है।"
+        },
+        {
+          "t": "h2",
+          "x": "भेजने से पहले कब फ़्लैटन करें"
+        },
+        {
+          "t": "p",
+          "x": "अंतिम जाँच के बाद प्रति फ़्लैटन करें जब पाने वाले को केवल स्थिर उत्तर पढ़ने या संग्रहित करने हों। यह अंतिम जमा या रिकॉर्ड पैकेट में उपयोगी हो सकता है। ड्राफ्ट, दोबारा इस्तेमाल होने वाला फ़ॉर्म या ऐसी फ़ाइल फ़्लैटन न करें जिसे संस्था इंटरैक्टिव फ़ील्ड के रूप में प्रोसेस करेगी। जारीकर्ता के निर्देश मानें; कुछ पोर्टल खास फ़ॉर्मेट माँगते हैं।"
+        },
+        {
+          "t": "h2",
+          "x": "फ़्लैटन करना हस्ताक्षर या सुरक्षा नहीं है"
+        },
+        {
+          "t": "p",
+          "x": "फ़्लैटन करना यह प्रमाणित नहीं करता कि फ़ॉर्म किसने भरा और न एन्क्रिप्शन जोड़ता है। यह वैध डिजिटल हस्ताक्षर के बराबर भी नहीं है। हस्ताक्षर चाहिए तो सामग्री जाँचकर [PDF पर हस्ताक्षर करें](/tools/sign-pdf)। पहुँच सीमित करनी हो तो पाने वाले के अनुसार सुरक्षा लगाएँ। फ़ील्ड से अलग टिप्पणियों के लिए [PDF फ़्लैटन करें](/tools/flatten-pdf) दूसरी प्रति में मार्क और कमेंट स्थिर कर सकता है।"
+        },
+        {
+          "t": "h2",
+          "x": "निजी डेटा सुरक्षित रखें और परिणाम जाँचें"
+        },
+        {
+          "t": "p",
+          "x": "फ़ॉर्म में पता, पहचान संख्या, खाता, स्वास्थ्य या नौकरी इतिहास हो सकता है। PrintxPDF का सामान्य फ़ॉर्म भरना ब्राउज़र टैब में स्थानीय रूप से होता है, दस्तावेज़ नियमित सर्वर पर अपलोड नहीं होता। फिर भी प्रतियाँ स्वीकृत स्थान पर रखें और निर्धारित सुरक्षित माध्यम से भेजें। फ़्लैटन PDF खोलकर पठनीयता, पेज संख्या और हस्ताक्षर देखें। पाने वाले की पुष्टि तक मूल और संपादन योग्य प्रति रखें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "क्या PDF फ़ॉर्म भेजने से पहले फ़्लैटन करना चाहिए?",
+          "a": "केवल तब जब उत्तर स्थिर होने चाहिए और पाने वाला फ़्लैटन PDF स्वीकार करे। सुधार की संभावना के लिए संपादन योग्य प्रति रखें।"
+        },
+        {
+          "q": "क्या फ़्लैटन PDF को संपादित कर सकते हैं?",
+          "a": "सामान्य फ़ॉर्म की तरह नहीं, क्योंकि उत्तर स्थिर पेज सामग्री बनते हैं। भविष्य के बदलाव के लिए इंटरैक्टिव फ़ील्ड वाली प्रति रखें।"
+        },
+        {
+          "q": "क्या PDF फ़्लैटन करने से डिजिटल हस्ताक्षर जुड़ता है?",
+          "a": "नहीं। फ़्लैटन करना दिखने वाली सामग्री स्थिर करता है, हस्ताक्षरकर्ता की पुष्टि या एन्क्रिप्शन नहीं। ज़रूरत हो तो हस्ताक्षर टूल चलाएँ।"
+        },
+        {
+          "q": "क्या PDF फ़ॉर्म भरना और फ़्लैटन करना निजी है?",
+          "a": "PrintxPDF का सामान्य काम ब्राउज़र टैब में होता है और फ़ाइल नियमित रूप से प्रोसेसिंग के लिए अपलोड नहीं होती।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "هل يجب تسطيح نموذج PDF المعبأ قبل إرساله؟",
+      "metaTitle": "تسطيح نموذج PDF قبل الإرسال",
+      "metaDescription": "اختر تسطيح نموذج PDF حسب من يحتاج إلى تعديل الإجابات. مجانًا، بلا تسجيل أو علامة مائية، في المتصفح. تعمل داخل المتصفح مباشرة.",
+      "keyword": "تسطيح نموذج PDF قبل الإرسال",
+      "secondaryKeywords": [
+        "نموذج PDF معبأ",
+        "تسطيح حقول PDF",
+        "PDF قابل للتحرير أو ثابت",
+        "حماية إجابات النموذج"
+      ],
+      "answer": "سطّح نموذج PDF المعبأ عندما يحتاج المستلم إلى إجابات ثابتة وبعد الاحتفاظ بنسخة قابلة للتحرير. لا تسطح مسودة ستراجعها، وافحص PDF دائمًا قبل إرساله.",
+      "ctaLabel": "املأ نموذج PDF وسطّحه",
+      "body": [
+        {
+          "t": "p",
+          "x": "يفيد تسطيح نموذج PDF في تثبيت الإجابات الظاهرة للمشاركة أو الأرشفة، لكنه يصعّب تعديلها لاحقًا. احتفظ أولًا بنسخة معبأة قابلة للتحرير. سطّح نسخة التسليم فقط إذا لم يحتج المستلم إلى تعديل الحقول. راجع PDF النهائي وتأكد من متطلبات الجهة المستلمة، لأن التسطيح لا يعادل التوقيع أو التشفير أو المصادقة القانونية."
+        },
+        {
+          "t": "h2",
+          "x": "كيفية تجهيز نموذج PDF للإرسال"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "احتفظ بالأصل",
+              "x": "احفظ نسخة دون تغيير، خصوصًا لنماذج الضرائب أو الصحة أو البنك أو التوظيف."
+            },
+            {
+              "h": "املأ الحقول",
+              "x": "افتح [ملء نماذج PDF](/tools/pdf-forms)، واختر الملف وأكمل الحقول التفاعلية."
+            },
+            {
+              "h": "احفظ نسخة قابلة للتحرير",
+              "x": "نزّل النسخة المعبأة واحتفظ بها لتصحيح الإجابات أو تحديثها لاحقًا."
+            },
+            {
+              "h": "سطّح نسخة التسليم عند الحاجة",
+              "x": "اختر الناتج المسطح عندما يحتاج المستلم إلى إجابات ثابتة وتسمح التعليمات بنوع PDF هذا."
+            },
+            {
+              "h": "تحقق قبل الإرسال",
+              "x": "افتح النسخة النهائية وراجع الإجابات والصفحات ومربعات الاختيار والتوقيعات."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "املأ الحقول القياسية وجهز نسخة PDF في علامة التبويب. مجانًا، بلا تسجيل أو علامة مائية."
+        },
+        {
+          "t": "h2",
+          "x": "الاختيار بين نموذج قابل للتحرير وآخر مسطح"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الناتج",
+            "ما يحدث للحقول",
+            "متى تستخدمه"
+          ],
+          "rows": [
+            [
+              "PDF معبأ",
+              "تبقى الحقول التفاعلية قابلة للتحرير",
+              "المسودات أو النماذج التي ستحدّث."
+            ],
+            [
+              "PDF مسطح",
+              "تصبح الإجابات محتوى ثابتًا على الصفحة",
+              "التسليم النهائي عندما لا ينبغي تعديل الحقول."
+            ],
+            [
+              "PDF موقع",
+              "تضاف توقيعات إلكترونية أو مرئية",
+              "الموافقة بعد مراجعة المحتوى."
+            ],
+            [
+              "PDF مشفر",
+              "تُقيّد إمكانية الوصول بكلمة مرور",
+              "حماية إضافية إذا تطلبت السياسة."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "ماذا يعني تسطيح النموذج"
+        },
+        {
+          "t": "p",
+          "x": "يحول التسطيح الإجابات الظاهرة إلى محتوى الصفحة ويزيل الحقول القابلة للتحرير عادةً. يستطيع المستلم قراءة الإجابات لكنه لا يستطيع تغيير الحقول كما في نموذج تفاعلي. يقلل هذا التعديل العرضي ويساعد على ثبات العرض. لكنه يجعل التصحيح أصعب، لذا احتفظ بنسخة قابلة للتحرير وتأكد من أن المستلم يقبل النسخة المسطحة."
+        },
+        {
+          "t": "h2",
+          "x": "متى تسطح النموذج قبل الإرسال"
+        },
+        {
+          "t": "p",
+          "x": "سطّح نسخة بعد المراجعة النهائية إذا كان المستلم سيقرأ أو يؤرشف إجابات ثابتة فقط. قد يفيد ذلك في التسليم النهائي أو ملف السجلات. لا تسطح مسودة أو نموذجًا ستعيد استخدامه أو ملفًا تحتاج المؤسسة إلى معالجته كحقول تفاعلية. اتبع تعليمات الجهة المصدرة؛ فبعض البوابات تتطلب نوعًا محددًا."
+        },
+        {
+          "t": "h2",
+          "x": "التسطيح لا يوقع الملف ولا يحميه"
+        },
+        {
+          "t": "p",
+          "x": "لا يثبت التسطيح هوية من ملأ النموذج ولا يضيف تشفيرًا. كما أنه ليس توقيعًا رقميًا صالحًا. إذا احتجت إلى توقيع، راجع المحتوى واستخدم [توقيع PDF](/tools/sign-pdf). وإذا احتجت إلى تقييد الوصول، فطبّق الحماية المناسبة للمستلم. للتعليقات المنفصلة عن الحقول، يمكن لـ[تسطيح PDF](/tools/flatten-pdf) تثبيت العلامات والتعليقات في نسخة أخرى."
+        },
+        {
+          "t": "h2",
+          "x": "احم البيانات الخاصة وافحص الناتج"
+        },
+        {
+          "t": "p",
+          "x": "قد يتضمن النموذج عنوانًا أو رقم هوية أو حسابًا أو معلومات صحية أو سجل عمل. يعالج PrintxPDF التعبئة القياسية محليًا في علامة تبويب المتصفح دون رفع الملف عادةً. مع ذلك، احفظ النسخ في مكان معتمد واستخدم قناة التسليم الآمنة المطلوبة. افتح PDF المسطح وتحقق من وضوح الإجابات وعدد الصفحات والتوقيعات. احتفظ بالأصل والنسخة القابلة للتحرير حتى يؤكد المستلم الاستلام."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "هل يجب تسطيح نموذج PDF قبل إرساله؟",
+          "a": "افعل ذلك فقط عندما يجب تثبيت الإجابات ويقبل المستلم PDF مسطحًا. احتفظ بنسخة قابلة للتحرير إذا احتجت إلى تصحيح."
+        },
+        {
+          "q": "هل يمكن تعديل PDF مسطح؟",
+          "a": "ليس مثل نموذج عادي، لأن الإجابات تصبح محتوى ثابتًا. احتفظ بنسخة تحتوي على حقول تفاعلية للتغييرات المستقبلية."
+        },
+        {
+          "q": "هل يضيف تسطيح PDF توقيعًا رقميًا؟",
+          "a": "لا. يثبت التسطيح المحتوى المرئي ولا يصادق على هوية الموقّع أو يشفر المستند. استخدم أداة توقيع عند الحاجة."
+        },
+        {
+          "q": "هل تعبئة النماذج وتسطيحها خاص؟",
+          "a": "تتم معالجة PrintxPDF القياسية داخل علامة تبويب المتصفح ولا يُرفع الملف عادةً للمعالجة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "পাঠানোর আগে পূরণ করা PDF ফর্ম ফ্ল্যাটেন করবেন?",
+      "metaTitle": "পাঠানোর আগে PDF ফর্ম ফ্ল্যাটেন",
+      "metaDescription": "কে উত্তর সম্পাদনা করবে তা দেখে PDF ফর্ম ফ্ল্যাটেন করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই, ব্রাউজারে।",
+      "keyword": "পাঠানোর আগে PDF ফর্ম ফ্ল্যাটেন করুন",
+      "secondaryKeywords": [
+        "পূরণ করা PDF ফর্ম",
+        "PDF ফিল্ড ফ্ল্যাটেন",
+        "সম্পাদনাযোগ্য বা স্থির PDF",
+        "ফর্মের উত্তর সুরক্ষিত"
+      ],
+      "answer": "প্রাপককে স্থির উত্তর দিতে হলে এবং সম্পাদনাযোগ্য কপি রেখে দিলে পূরণ করা PDF ফর্ম ফ্ল্যাটেন করুন। যে খসড়া সংশোধন করবেন তা ফ্ল্যাটেন করবেন না; পাঠানোর আগে PDF দেখুন।",
+      "ctaLabel": "PDF ফর্ম পূরণ ও ফ্ল্যাটেন",
+      "body": [
+        {
+          "t": "p",
+          "x": "PDF ফর্ম ফ্ল্যাটেন করলে দেখা উত্তর শেয়ার বা সংরক্ষণের জন্য স্থির হয়, তবে পরে বদলানো কঠিন হয়। আগে পূরণ করা সম্পাদনাযোগ্য কপি রাখুন। প্রাপককে ফিল্ড সম্পাদনা করতে না হলে কেবল জমা দেওয়ার কপিটি ফ্ল্যাটেন করুন। চূড়ান্ত PDF দেখুন এবং প্রাপকের নির্দেশ যাচাই করুন, কারণ ফ্ল্যাটেন করা স্বাক্ষর, এনক্রিপশন বা আইনি প্রমাণীকরণ নয়।"
+        },
+        {
+          "t": "h2",
+          "x": "পাঠানোর জন্য PDF ফর্ম কীভাবে প্রস্তুত করবেন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "মূল ফাইল রাখুন",
+              "x": "অপরিবর্তিত কপি রাখুন, বিশেষ করে কর, চিকিৎসা, ব্যাংক বা চাকরির ফর্মে।"
+            },
+            {
+              "h": "ফিল্ড পূরণ করুন",
+              "x": "[PDF ফর্ম পূরণ](/tools/pdf-forms) খুলুন, ফাইল বেছে ইন্টারঅ্যাকটিভ ফিল্ড পূরণ করুন।"
+            },
+            {
+              "h": "সম্পাদনাযোগ্য কপি রাখুন",
+              "x": "পরে উত্তর সংশোধন বা হালনাগাদ করতে পূরণ করা সংস্করণ ডাউনলোড করে রাখুন।"
+            },
+            {
+              "h": "প্রয়োজন হলে পাঠানোর কপি ফ্ল্যাটেন করুন",
+              "x": "প্রাপকের স্থির উত্তর দরকার হলে এবং নির্দেশ অনুমতি দিলে ফ্ল্যাটেন আউটপুট নিন।"
+            },
+            {
+              "h": "পাঠানোর আগে যাচাই করুন",
+              "x": "চূড়ান্ত কপি খুলে উত্তর, পৃষ্ঠা, চেকবক্স ও স্বাক্ষর মিলিয়ে দেখুন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "ট্যাবে মানক ফর্ম পূরণ করে PDF কপি তৈরি করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক ছাড়া."
+        },
+        {
+          "t": "h2",
+          "x": "সম্পাদনাযোগ্য ও ফ্ল্যাটেন ফর্ম বেছে নিন"
+        },
+        {
+          "t": "table",
+          "head": [
+            "আউটপুট",
+            "ফিল্ডে কী হয়",
+            "কখন ব্যবহার করবেন"
+          ],
+          "rows": [
+            [
+              "পূরণ করা PDF",
+              "ইন্টারঅ্যাকটিভ ফিল্ড সম্পাদনাযোগ্য থাকে",
+              "খসড়া বা পরে আপডেট হবে এমন ফর্ম।"
+            ],
+            [
+              "ফ্ল্যাটেন PDF",
+              "উত্তর স্থির পৃষ্ঠার বিষয়বস্তু হয়",
+              "চূড়ান্ত জমায় ফিল্ড বদলানো উচিত নয়।"
+            ],
+            [
+              "স্বাক্ষরিত PDF",
+              "ইলেকট্রনিক বা দৃশ্যমান স্বাক্ষর যোগ হয়",
+              "বিষয়বস্তু পর্যালোচনার পর অনুমোদন।"
+            ],
+            [
+              "এনক্রিপ্টেড PDF",
+              "পাসওয়ার্ড দিয়ে প্রবেশ সীমিত",
+              "নীতি চাইলে বাড়তি সুরক্ষা।"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "ফর্ম ফ্ল্যাটেন করার অর্থ"
+        },
+        {
+          "t": "p",
+          "x": "ফ্ল্যাটেন করলে দৃশ্যমান উত্তর পৃষ্ঠার অংশ হয় এবং সাধারণ সম্পাদনাযোগ্য ফিল্ড সরিয়ে দেয়। প্রাপক উত্তর পড়তে পারেন, কিন্তু ইন্টারঅ্যাকটিভ ফর্মের মতো প্রতিটি ফিল্ড বদলাতে পারেন না। এতে ভুল পরিবর্তন কমে এবং প্রদর্শন একই থাকে। সংশোধনও কঠিন হয়, তাই সম্পাদনাযোগ্য কপি রাখুন এবং প্রাপক ফ্ল্যাটেন ফর্ম নেন কি না নিশ্চিত করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "পাঠানোর আগে কখন ফ্ল্যাটেন করবেন"
+        },
+        {
+          "t": "p",
+          "x": "শেষবার যাচাইয়ের পর কপি ফ্ল্যাটেন করুন যদি প্রাপক কেবল স্থির উত্তর পড়বেন বা সংরক্ষণ করবেন। চূড়ান্ত জমা বা রেকর্ড প্যাকেটে এটি কাজে লাগে। খসড়া, পুনর্ব্যবহারযোগ্য ফর্ম বা প্রতিষ্ঠানকে ইন্টারঅ্যাকটিভ ফিল্ড হিসেবে প্রসেস করতে হবে এমন ফাইল ফ্ল্যাটেন করবেন না। প্রদানকারীর নির্দেশ মানুন, কিছু পোর্টাল নির্দিষ্ট ধরনের ফর্ম চায়।"
+        },
+        {
+          "t": "h2",
+          "x": "ফ্ল্যাটেন করা স্বাক্ষর বা সুরক্ষা নয়"
+        },
+        {
+          "t": "p",
+          "x": "ফ্ল্যাটেন প্রমাণ করে না কে ফর্ম পূরণ করেছেন এবং এনক্রিপশন যোগ করে না। এটি বৈধ ডিজিটাল স্বাক্ষরের সমানও নয়। স্বাক্ষর দরকার হলে বিষয়বস্তু দেখে [PDF-এ স্বাক্ষর](/tools/sign-pdf) ব্যবহার করুন। প্রবেশ সীমিত করতে প্রাপকের জন্য উপযুক্ত সুরক্ষা দিন। ফিল্ডের বাইরের মন্তব্যের জন্য [PDF ফ্ল্যাটেন](/tools/flatten-pdf) অন্য কপিতে মার্ক ও মন্তব্য স্থির করতে পারে।"
+        },
+        {
+          "t": "h2",
+          "x": "ব্যক্তিগত তথ্য রক্ষা করুন, ফল দেখুন"
+        },
+        {
+          "t": "p",
+          "x": "ফর্মে ঠিকানা, পরিচয় নম্বর, অ্যাকাউন্ট, স্বাস্থ্য বা চাকরির ইতিহাস থাকতে পারে। PrintxPDF-এর সাধারণ ফর্ম পূরণ ব্রাউজারে স্থানীয়ভাবে হয়, নথি নিয়মিত আপলোড হয় না। তবু কপি অনুমোদিত স্থানে রাখুন এবং প্রাপকের নিরাপদ ডেলিভারি পথ নিন। ফ্ল্যাটেন PDF খুলে পাঠযোগ্যতা, পৃষ্ঠা ও স্বাক্ষর যাচাই করুন। প্রাপক নিশ্চিত না করা পর্যন্ত মূল ও সম্পাদনাযোগ্য কপি রাখুন।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "পাঠানোর আগে PDF ফর্ম ফ্ল্যাটেন করা উচিত?",
+          "a": "উত্তর স্থির রাখতে হবে এবং প্রাপক ফ্ল্যাটেন PDF নিলে তবেই করুন। সংশোধনের জন্য সম্পাদনাযোগ্য কপি রাখুন।"
+        },
+        {
+          "q": "ফ্ল্যাটেন PDF সম্পাদনা করা যায়?",
+          "a": "সাধারণ ফর্মের মতো নয়, উত্তর স্থির পৃষ্ঠার বিষয়বস্তু হয়। পরে বদলাতে ইন্টারঅ্যাকটিভ ফিল্ডসহ কপি রাখুন।"
+        },
+        {
+          "q": "PDF ফ্ল্যাটেন করলে ডিজিটাল স্বাক্ষর যোগ হয়?",
+          "a": "না। এটি দৃশ্যমান বিষয় স্থির করে, স্বাক্ষরকারীর পরিচয় নিশ্চিত বা ফাইল এনক্রিপ্ট করে না। স্বাক্ষর দরকার হলে সই টুল ব্যবহার করুন।"
+        },
+        {
+          "q": "PDF ফর্ম পূরণ ও ফ্ল্যাটেন কি ব্যক্তিগত?",
+          "a": "PrintxPDF-এর সাধারণ কাজ ব্রাউজার ট্যাবে চলে এবং ফাইল নিয়মিত প্রসেসিংয়ের জন্য আপলোড হয় না।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Có nên làm phẳng biểu mẫu PDF trước khi gửi?",
+      "metaTitle": "Làm phẳng biểu mẫu PDF trước khi gửi",
+      "metaDescription": "Quyết định làm phẳng biểu mẫu PDF theo người cần sửa câu trả lời. Miễn phí, không đăng ký hay dấu mờ, ngay trong trình duyệt.",
+      "keyword": "làm phẳng biểu mẫu PDF trước khi gửi",
+      "secondaryKeywords": [
+        "biểu mẫu PDF đã điền",
+        "làm phẳng trường PDF",
+        "PDF có thể sửa hay cố định",
+        "bảo vệ câu trả lời biểu mẫu"
+      ],
+      "answer": "Hãy làm phẳng biểu mẫu PDF đã điền khi người nhận cần câu trả lời cố định và bạn đã giữ bản có thể chỉnh sửa. Đừng làm phẳng bản nháp cần sửa, luôn kiểm tra PDF trước khi gửi.",
+      "ctaLabel": "Điền và làm phẳng biểu mẫu PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Làm phẳng biểu mẫu PDF giúp cố định câu trả lời hiển thị để chia sẻ hoặc lưu hồ sơ, nhưng gây khó khăn khi cần sửa sau này. Trước tiên hãy lưu một bản đã điền còn chỉnh sửa được. Chỉ làm phẳng bản giao nếu người nhận không cần sửa trường. Xem PDF cuối và xác nhận yêu cầu của bên nhận, vì làm phẳng không phải ký, mã hóa hay xác thực pháp lý."
+        },
+        {
+          "t": "h2",
+          "x": "Cách chuẩn bị biểu mẫu PDF để gửi"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Giữ bản gốc",
+              "x": "Lưu bản chưa sửa, đặc biệt với biểu mẫu thuế, y tế, ngân hàng hoặc việc làm."
+            },
+            {
+              "h": "Điền các trường",
+              "x": "Mở [Điền biểu mẫu PDF](/tools/pdf-forms), chọn tệp và hoàn thành các trường tương tác."
+            },
+            {
+              "h": "Lưu bản có thể chỉnh sửa",
+              "x": "Tải và giữ bản đã điền để sửa hoặc cập nhật câu trả lời sau này."
+            },
+            {
+              "h": "Làm phẳng bản giao nếu cần",
+              "x": "Chọn đầu ra phẳng khi người nhận cần nội dung cố định và hướng dẫn cho phép loại PDF này."
+            },
+            {
+              "h": "Kiểm tra trước khi gửi",
+              "x": "Mở bản cuối và xem câu trả lời, trang, ô chọn cùng chữ ký."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "Điền trường tiêu chuẩn và tạo bản PDF ngay trong thẻ. Miễn phí, không đăng ký hay dấu mờ."
+        },
+        {
+          "t": "h2",
+          "x": "Chọn biểu mẫu có thể sửa hay đã làm phẳng"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Đầu ra",
+            "Điều xảy ra với trường",
+            "Khi nào dùng"
+          ],
+          "rows": [
+            [
+              "PDF đã điền",
+              "Trường tương tác vẫn chỉnh sửa được",
+              "Bản nháp hoặc biểu mẫu sẽ cập nhật."
+            ],
+            [
+              "PDF đã làm phẳng",
+              "Câu trả lời trở thành nội dung trang cố định",
+              "Bản giao cuối khi không nên sửa trường."
+            ],
+            [
+              "PDF đã ký",
+              "Thêm chữ ký điện tử hoặc hình ảnh",
+              "Phê duyệt sau khi xem nội dung."
+            ],
+            [
+              "PDF mã hóa",
+              "Giới hạn truy cập bằng mật khẩu",
+              "Bảo vệ thêm nếu chính sách yêu cầu."
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Làm phẳng biểu mẫu nghĩa là gì"
+        },
+        {
+          "t": "p",
+          "x": "Làm phẳng biến câu trả lời nhìn thấy thành nội dung trang và loại bỏ các trường chỉnh sửa thông thường. Người nhận có thể đọc nhưng không sửa từng trường như biểu mẫu tương tác. Việc này ngăn thay đổi nhầm và giúp cách hiển thị nhất quán. Tuy nhiên, sửa lỗi sẽ khó hơn, vì vậy hãy giữ bản có thể chỉnh sửa và xác nhận người nhận chấp nhận bản phẳng."
+        },
+        {
+          "t": "h2",
+          "x": "Khi nào nên làm phẳng trước khi gửi"
+        },
+        {
+          "t": "p",
+          "x": "Làm phẳng một bản sao sau khi rà soát cuối nếu người nhận chỉ cần đọc hoặc lưu câu trả lời cố định. Cách này hữu ích với bản nộp cuối hoặc gói hồ sơ. Đừng làm phẳng bản nháp, biểu mẫu sẽ dùng lại hoặc tệp tổ chức cần xử lý bằng trường tương tác. Hãy làm theo hướng dẫn của đơn vị phát hành vì một số cổng yêu cầu loại biểu mẫu cụ thể."
+        },
+        {
+          "t": "h2",
+          "x": "Làm phẳng không ký hay bảo vệ tệp"
+        },
+        {
+          "t": "p",
+          "x": "Làm phẳng không chứng minh ai đã điền biểu mẫu và không thêm mã hóa. Nó cũng không phải chữ ký số hợp lệ. Nếu cần ký, xem nội dung rồi dùng [Ký PDF](/tools/sign-pdf). Nếu cần hạn chế truy cập, áp dụng biện pháp phù hợp với người nhận. Với chú thích tách khỏi trường, [Làm phẳng PDF](/tools/flatten-pdf) có thể cố định dấu và nhận xét trên một bản khác."
+        },
+        {
+          "t": "h2",
+          "x": "Bảo vệ dữ liệu riêng và kiểm tra kết quả"
+        },
+        {
+          "t": "p",
+          "x": "Biểu mẫu có thể chứa địa chỉ, số định danh, tài khoản, sức khỏe hoặc lịch sử việc làm. PrintxPDF xử lý việc điền tiêu chuẩn ngay trong thẻ trình duyệt, không thường xuyên tải tệp lên. Dù vậy, lưu bản sao ở nơi được phép và dùng kênh gửi an toàn theo yêu cầu. Mở PDF phẳng để kiểm tra độ rõ, số trang và chữ ký. Giữ bản gốc cùng bản chỉnh sửa được đến khi người nhận xác nhận."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Có nên làm phẳng PDF đã điền trước khi gửi?",
+          "a": "Chỉ làm khi câu trả lời cần cố định và người nhận chấp nhận PDF phẳng. Giữ bản có thể chỉnh sửa để sửa lỗi."
+        },
+        {
+          "q": "PDF phẳng có chỉnh sửa được không?",
+          "a": "Không như biểu mẫu thông thường vì câu trả lời đã thành nội dung trang cố định. Giữ bản có trường tương tác để sửa sau."
+        },
+        {
+          "q": "Làm phẳng PDF có thêm chữ ký số không?",
+          "a": "Không. Làm phẳng cố định phần hiển thị, không xác thực người ký hay mã hóa tài liệu. Hãy dùng công cụ ký nếu cần."
+        },
+        {
+          "q": "Điền và làm phẳng biểu mẫu PDF có riêng tư không?",
+          "a": "Quy trình tiêu chuẩn của PrintxPDF chạy trong thẻ trình duyệt và không thường xuyên tải tệp lên xử lý."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "发送前要不要扁平化已填写的 PDF 表单？",
+      "metaTitle": "发送前扁平化 PDF 表单",
+      "metaDescription": "根据谁需要修改答案来决定是否扁平化 PDF 表单。免费、无需注册、无水印，在浏览器中完成。",
+      "keyword": "发送前扁平化 PDF 表单",
+      "secondaryKeywords": [
+        "已填写 PDF 表单",
+        "扁平化 PDF 字段",
+        "可编辑或固定 PDF",
+        "保护表单答案"
+      ],
+      "answer": "当收件人需要固定答案且你已保留可编辑副本时，可以扁平化已填写的 PDF 表单。不要扁平化还要修改的草稿，发送前务必检查最终 PDF。",
+      "ctaLabel": "填写并扁平化 PDF 表单",
+      "body": [
+        {
+          "t": "p",
+          "x": "扁平化 PDF 表单可以固定可见答案，方便分享或归档，但会让后续修改更困难。请先保存一份已填写且可编辑的副本。只有在收件人无需修改字段时，才扁平化交付副本。检查最终 PDF 并确认收件方要求，因为扁平化不等于签名、加密或法律认证。"
+        },
+        {
+          "t": "h2",
+          "x": "如何准备 PDF 表单以便发送"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "保留原件",
+              "x": "保存未修改的副本，尤其是税务、医疗、银行或就业表单。"
+            },
+            {
+              "h": "填写字段",
+              "x": "打开[填写 PDF 表单](/tools/pdf-forms)，选择文件并填写交互字段。"
+            },
+            {
+              "h": "保存可编辑副本",
+              "x": "下载并保留已填写版本，以便之后更正或更新答案。"
+            },
+            {
+              "h": "需要时扁平化交付副本",
+              "x": "只有当收件人需要固定答案且说明允许此类 PDF 时，才选择扁平化输出。"
+            },
+            {
+              "h": "发送前检查",
+              "x": "打开最终副本，检查答案、页面、复选框和签名。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "pdf-forms",
+          "x": "在浏览器标签页中填写标准字段并制作 PDF 副本。免费、无需注册、无水印。"
+        },
+        {
+          "t": "h2",
+          "x": "可编辑表单与扁平化表单的选择"
+        },
+        {
+          "t": "table",
+          "head": [
+            "输出",
+            "字段状态",
+            "适用场景"
+          ],
+          "rows": [
+            [
+              "已填写 PDF",
+              "交互字段仍可编辑",
+              "草稿或之后需要更新的表单。"
+            ],
+            [
+              "扁平化 PDF",
+              "答案成为固定页面内容",
+              "不应再编辑字段的最终交付副本。"
+            ],
+            [
+              "已签名 PDF",
+              "添加电子或可视签名",
+              "检查内容后的批准。"
+            ],
+            [
+              "加密 PDF",
+              "通过密码限制访问",
+              "政策要求额外保护时使用。"
+            ]
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "扁平化表单是什么意思"
+        },
+        {
+          "t": "p",
+          "x": "扁平化会将可见答案合并为页面内容，并移除常规可编辑字段。收件人可以阅读答案，但无法像交互表单那样修改字段。这有助于避免意外更改，并让显示保持一致。它也会增加纠错难度，因此请保留可编辑副本，并确认收件人接受扁平化版本。"
+        },
+        {
+          "t": "h2",
+          "x": "什么时候适合在发送前扁平化"
+        },
+        {
+          "t": "p",
+          "x": "最终检查后，如果收件人只需阅读或归档固定答案，可扁平化一个副本。这适用于最终提交或记录文件包。不要扁平化草稿、会重复使用的表单，或机构需要以交互字段处理的文件。请遵循发布方说明，因为一些平台要求特定表单类型。"
+        },
+        {
+          "t": "h2",
+          "x": "扁平化不能签署或保护文件"
+        },
+        {
+          "t": "p",
+          "x": "扁平化不能证明是谁填写表单，也不会添加加密。它不等同于有效数字签名。如果需要签名，请检查内容并使用[签署 PDF](/tools/sign-pdf)。如需限制访问，请根据收件方要求添加适当保护。对于字段以外的批注，可使用[扁平化 PDF](/tools/flatten-pdf)将标记和评论固定到另一份副本。"
+        },
+        {
+          "t": "h2",
+          "x": "保护隐私并检查结果"
+        },
+        {
+          "t": "p",
+          "x": "表单可能包含地址、证件号码、账户信息、健康资料或工作经历。PrintxPDF 的标准填写在浏览器标签页中本地处理，通常不会上传文件。不过仍应将副本保存在获准位置，并使用收件人要求的安全渠道。打开扁平化 PDF，检查答案是否清晰、页数和签名是否正确。收件人确认前请保留原件和可编辑副本。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "发送前需要扁平化 PDF 表单吗？",
+          "a": "只有答案必须固定且收件人接受扁平化 PDF 时才这样做。保留可编辑副本，以便之后纠错。"
+        },
+        {
+          "q": "扁平化 PDF 还能编辑吗？",
+          "a": "不能像普通表单那样编辑，因为答案已成为固定页面内容。保留带交互字段的副本供以后修改。"
+        },
+        {
+          "q": "扁平化 PDF 会添加数字签名吗？",
+          "a": "不会。扁平化只固定可见内容，不会验证签署者身份或加密文件。需要签名时请使用签署工具。"
+        },
+        {
+          "q": "填写并扁平化 PDF 表单时文件私密吗？",
+          "a": "PrintxPDF 的标准流程在浏览器标签页中运行，通常不会上传文件进行处理。"
+        }
+      ]
+    }
+  }
+}
