@@ -4157,6 +4157,158 @@
           "edit-pdf-without-adobe-free",
           "convert-pdf-to-markdown-for-notes"
         ]
+      },
+      {
+        "topic": "change-pdf-author-title-and-keywords",
+        "slug": "change-pdf-author-title-and-keywords",
+        "cluster": "edit-advanced",
+        "title": "Cómo cambiar autor, título y palabras clave de un PDF",
+        "metaTitle": "Cómo cambiar autor, título y palabras clave de un PDF",
+        "metaDescription": "Edita los metadatos de un PDF gratis en el navegador, sin registro ni marca de agua. Actualiza título y autor y verifica la copia.",
+        "primaryKeyword": "cambiar autor título y palabras clave de un PDF",
+        "secondaryKeywords": [
+          "edit PDF metadata",
+          "change PDF author",
+          "PDF title metadata",
+          "PDF keywords"
+        ],
+        "answer": "Para cambiar los metadatos de un PDF, abre una copia en un editor, actualiza el título, autor, asunto o palabras clave, descarga el archivo y verifica que las páginas visibles sigan correctas. PrintxPDF edita los campos estándar localmente en el navegador, sin registro ni marca de agua.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Los metadatos ayudan a los exploradores de archivos, lectores y sistemas documentales a identificar un PDF, aunque no aparezcan en la página. Corregir el título, autor, asunto o palabras clave facilita encontrar y clasificar una copia aprobada. Trabaja sobre una copia, usa valores descriptivos precisos y revisa el resultado. PrintxPDF edita los metadatos estándar en el navegador, sin cuenta, tarjeta, marca de agua ni subida rutinaria."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo cambiar el título, el autor y las palabras clave de un PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el archivo original",
+                "x": "Guarda una copia intacta si importan la procedencia, las firmas o los detalles de origen."
+              },
+              {
+                "h": "Abre Editar metadatos",
+                "x": "Añade el PDF a [Editar metadatos](/tools/edit-metadata) en el navegador."
+              },
+              {
+                "h": "Revisa los valores actuales",
+                "x": "Comprueba título, autor, asunto y palabras clave. Usa descripciones precisas y aprobadas."
+              },
+              {
+                "h": "Guarda una copia nueva",
+                "x": "Descarga el PDF editado con un nombre de versión claro."
+              },
+              {
+                "h": "Verifica el resultado",
+                "x": "Abre el PDF y confirma que las páginas no cambiaron y que los metadatos aparecen bien."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Edita los metadatos del PDF desde tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "¿Editar los metadatos o quitarlos?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Mejor herramienta",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Corregir el título o el autor",
+                "Editar metadatos",
+                "Actualiza los campos estándar seleccionados."
+              ],
+              [
+                "Compartir con menos propiedades estándar",
+                "Quitar metadatos",
+                "Crea una copia sin las propiedades documentales estándar."
+              ],
+              [
+                "Ocultar texto confidencial",
+                "Redactar PDF",
+                "Elimina contenido visible mediante redacción."
+              ],
+              [
+                "Renombrar el archivo descargado",
+                "Explorador de archivos",
+                "Cambia el nombre, no los metadatos incrustados."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Usa metadatos precisos para gestionar documentos"
+          },
+          {
+            "t": "p",
+            "x": "Un título y asunto claros ayudan a que el PDF aparezca correctamente en búsquedas, repositorios y pestañas del lector. Usa nombres descriptivos, no etiquetas temporales. No añadas datos personales sensibles solo para identificarlo. Sigue las reglas del sistema receptor."
+          },
+          {
+            "t": "h2",
+            "x": "Editar metadatos no elimina todos los detalles ocultos"
+          },
+          {
+            "t": "p",
+            "x": "Cambiar autor o título no es una limpieza forense. El PDF puede contener comentarios, adjuntos, campos de formulario, imágenes, historial u otras estructuras de metadatos. Usa [Quitar metadatos](/tools/remove-metadata) para una copia de distribución más limpia y revisa el resultado. Usa [Redactar PDF](/tools/redact-pdf) si el contenido visible no debe compartirse."
+          },
+          {
+            "t": "h2",
+            "x": "Cambios locales en el navegador para documentos privados"
+          },
+          {
+            "t": "p",
+            "x": "Los metadatos pueden revelar nombres internos de proyectos, identidades del personal o detalles de procesos. La edición local evita una subida innecesaria para cambios estándar. Tú eliges qué copia compartir y dónde guardarla. Revisa el PDF antes de enviarlo, sobre todo si contiene datos de clientes, finanzas, salud o asuntos legales."
+          },
+          {
+            "t": "h2",
+            "x": "Mantén claros los registros y las versiones"
+          },
+          {
+            "t": "p",
+            "x": "Usa un nombre de archivo descriptivo junto con metadatos precisos y conserva el original cuando sirva para los registros. Si el PDF está firmado o sujeto a retención, confirma si cambiar metadatos afecta al proceso. Guarda aparte la copia de entrega para distinguirla de la fuente."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Puedo cambiar los metadatos de un PDF gratis?",
+            "a": "Sí. Edita título, autor, asunto y palabras clave en el navegador y descarga la copia actualizada sin registro."
+          },
+          {
+            "q": "¿Cambiar metadatos altera el texto visible?",
+            "a": "No. Los campos estándar son distintos del contenido visible. Abre el PDF descargado para confirmar que las páginas siguen como esperas."
+          },
+          {
+            "q": "¿Editar metadatos elimina todos los datos ocultos?",
+            "a": "No. Editar campos seleccionados es distinto de quitar propiedades estándar o redactar contenido. Usa la herramienta de privacidad adecuada."
+          },
+          {
+            "q": "¿Editar metadatos es privado?",
+            "a": "La edición estándar se ejecuta en la pestaña del navegador; el PDF no se suele subir para procesarlo."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "redact-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-metadata-from-pdf",
+          "redact-pdf-properly",
+          "edit-pdf-without-adobe-free",
+          "change-text-in-pdf-without-changing-layout"
+        ]
       }
     ]
   },
@@ -8308,6 +8460,158 @@
           "edit-pdf-without-adobe-free",
           "convert-pdf-to-markdown-for-notes"
         ]
+      },
+      {
+        "topic": "change-pdf-author-title-and-keywords",
+        "slug": "change-pdf-author-title-and-keywords",
+        "cluster": "edit-advanced",
+        "title": "Como alterar autor, título e palavras-chave de um PDF",
+        "metaTitle": "Como alterar autor, título e palavras-chave de um PDF",
+        "metaDescription": "Edite metadados de PDF grátis no navegador, sem cadastro ou marca-d’água. Atualize o título e confira uma cópia.",
+        "primaryKeyword": "alterar autor título e palavras-chave de PDF",
+        "secondaryKeywords": [
+          "edit PDF metadata",
+          "change PDF author",
+          "PDF title metadata",
+          "PDF keywords"
+        ],
+        "answer": "Para alterar os metadados de um PDF, abra uma cópia no editor, atualize título, autor, assunto ou palavras-chave, baixe o arquivo e confirme que as páginas visíveis continuam corretas. O PrintxPDF edita campos padrão localmente no navegador, sem cadastro nem marca-d’água.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Os metadados ajudam gerenciadores de arquivos, leitores e sistemas de documentos a identificar um PDF, mesmo sem aparecer na página. Corrigir título, autor, assunto ou palavras-chave facilita encontrar e classificar uma cópia aprovada. Trabalhe em uma cópia, use valores precisos e revise o resultado. O PrintxPDF edita metadados padrão no navegador, sem conta, cartão, marca-d’água ou envio rotineiro."
+          },
+          {
+            "t": "h2",
+            "x": "Como alterar título, autor e palavras-chave de um PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Preserve o arquivo original",
+                "x": "Salve uma cópia intacta quando procedência, assinaturas ou detalhes da fonte forem importantes."
+              },
+              {
+                "h": "Abra Editar metadados",
+                "x": "Adicione o PDF ao [Editar metadados](/tools/edit-metadata) no navegador."
+              },
+              {
+                "h": "Revise os valores atuais",
+                "x": "Confira título, autor, assunto e palavras-chave. Use descrições precisas e aprovadas."
+              },
+              {
+                "h": "Salve uma nova cópia",
+                "x": "Baixe o PDF editado com um nome de versão claro."
+              },
+              {
+                "h": "Verifique o resultado",
+                "x": "Abra o PDF e confirme que as páginas não mudaram e os metadados aparecem como esperado."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Edite metadados de PDF direto na aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Editar ou remover metadados?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Objetivo",
+              "Melhor ferramenta",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Corrigir título ou autor",
+                "Editar metadados",
+                "Atualiza os campos padrão selecionados."
+              ],
+              [
+                "Compartilhar com menos propriedades padrão",
+                "Remover metadados",
+                "Cria uma cópia sem propriedades padrão do documento."
+              ],
+              [
+                "Ocultar texto confidencial",
+                "Tarjar PDF",
+                "Remove conteúdo visível com o processo de tarja."
+              ],
+              [
+                "Renomear o arquivo baixado",
+                "Gerenciador de arquivos",
+                "Altera o nome, não os metadados incorporados."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Use metadados precisos para gerenciar documentos"
+          },
+          {
+            "t": "p",
+            "x": "Um título e assunto claros ajudam o PDF a aparecer corretamente em buscas, repositórios e abas de leitores. Use nomes descritivos, não rótulos temporários. Evite inserir dados pessoais sensíveis apenas para identificá-lo. Siga as regras do sistema receptor."
+          },
+          {
+            "t": "h2",
+            "x": "Editar metadados não remove todos os detalhes ocultos"
+          },
+          {
+            "t": "p",
+            "x": "Alterar autor ou título não é uma limpeza forense. Um PDF pode conter comentários, anexos, campos de formulário, imagens, histórico de revisões ou metadados não padrão. Use [Remover metadados](/tools/remove-metadata) quando a política pedir uma cópia de distribuição mais limpa e confira o resultado. Use [Tarjar PDF](/tools/redact-pdf) quando o conteúdo visível não puder ser compartilhado."
+          },
+          {
+            "t": "h2",
+            "x": "Edição local no navegador para registros privados"
+          },
+          {
+            "t": "p",
+            "x": "Metadados podem revelar nomes internos de projetos, identidades da equipe ou detalhes de processos. A edição local evita um envio desnecessário para alterações padrão. Você decide qual cópia compartilhar e onde salvá-la. Revise o PDF antes do envio, sobretudo se houver informações de clientes, financeiras, médicas ou jurídicas."
+          },
+          {
+            "t": "h2",
+            "x": "Mantenha registros e versões claros"
+          },
+          {
+            "t": "p",
+            "x": "Use nome descritivo junto com metadados precisos e guarde o original quando ele servir como registro. Se o PDF for assinado ou sujeito a retenção, verifique se alterar metadados afeta o processo. Guarde a cópia de entrega separada da fonte."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Posso alterar metadados de PDF grátis?",
+            "a": "Sim. Edite título, autor, assunto e palavras-chave no navegador e baixe a cópia atualizada sem cadastro."
+          },
+          {
+            "q": "Alterar metadados muda o texto visível?",
+            "a": "Não. Os campos padrão são separados do conteúdo visível. Abra o PDF baixado para confirmar que as páginas continuam como esperado."
+          },
+          {
+            "q": "Editar metadados remove todos os dados ocultos?",
+            "a": "Não. Editar campos selecionados é diferente de remover propriedades padrão ou tarjar conteúdo. Use a ferramenta de privacidade adequada."
+          },
+          {
+            "q": "Editar metadados é privado?",
+            "a": "A edição padrão roda na aba do navegador; o PDF não é enviado rotineiramente para processamento."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "redact-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-metadata-from-pdf",
+          "redact-pdf-properly",
+          "edit-pdf-without-adobe-free",
+          "change-text-in-pdf-without-changing-layout"
+        ]
       }
     ]
   },
@@ -12458,6 +12762,158 @@
           "make-pdf-searchable",
           "edit-pdf-without-adobe-free",
           "convert-pdf-to-markdown-for-notes"
+        ]
+      },
+      {
+        "topic": "change-pdf-author-title-and-keywords",
+        "slug": "change-pdf-author-title-and-keywords",
+        "cluster": "edit-advanced",
+        "title": "PDF का लेखक, शीर्षक और कीवर्ड कैसे बदलें",
+        "metaTitle": "PDF का लेखक, शीर्षक और कीवर्ड कैसे बदलें",
+        "metaDescription": "ब्राउज़र में PDF मेटाडेटा मुफ़्त संपादित करें—साइनअप या वॉटरमार्क नहीं। शीर्षक बदलें और कॉपी जाँचें।",
+        "primaryKeyword": "PDF लेखक शीर्षक और कीवर्ड बदलें",
+        "secondaryKeywords": [
+          "edit PDF metadata",
+          "change PDF author",
+          "PDF title metadata",
+          "PDF keywords"
+        ],
+        "answer": "PDF मेटाडेटा बदलने के लिए कॉपी को एडिटर में खोलें, शीर्षक, लेखक, विषय या कीवर्ड अपडेट करें, फ़ाइल डाउनलोड करें और जाँचें कि दिखने वाले पन्ने सही हैं। PrintxPDF सामान्य फ़ील्ड ब्राउज़र में स्थानीय रूप से संपादित करता है, बिना साइनअप या वॉटरमार्क।",
+        "body": [
+          {
+            "t": "p",
+            "x": "मेटाडेटा फ़ाइल मैनेजर, रीडर और दस्तावेज़ सिस्टम को PDF पहचानने में मदद करता है, भले वह पन्ने पर न दिखे। सही शीर्षक, लेखक, विषय या कीवर्ड से स्वीकृत PDF ढूँढ़ना और वर्गीकृत करना आसान हो सकता है। कॉपी पर काम करें, सटीक विवरण दें और परिणाम जाँचें। PrintxPDF सामान्य मेटाडेटा ब्राउज़र में स्थानीय रूप से संपादित करता है; खाता, कार्ड, वॉटरमार्क या नियमित अपलोड नहीं।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF का शीर्षक, लेखक और कीवर्ड कैसे बदलें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल फ़ाइल सुरक्षित रखें",
+                "x": "जहाँ स्रोत, हस्ताक्षर या मूल विवरण महत्वपूर्ण हों, बिना बदली कॉपी रखें।"
+              },
+              {
+                "h": "Edit Metadata खोलें",
+                "x": "ब्राउज़र में PDF को [Edit Metadata](/tools/edit-metadata) में जोड़ें।"
+              },
+              {
+                "h": "मौजूदा मान जाँचें",
+                "x": "शीर्षक, लेखक, विषय और कीवर्ड देखें। सही और स्वीकृत विवरण उपयोग करें।"
+              },
+              {
+                "h": "नई कॉपी सेव करें",
+                "x": "स्पष्ट संस्करण नाम से संपादित PDF डाउनलोड करें।"
+              },
+              {
+                "h": "परिणाम सत्यापित करें",
+                "x": "PDF खोलकर देखें कि पन्ने नहीं बदले और मेटाडेटा सही दिखता है।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "अपने टैब में PDF मेटाडेटा संपादित करें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "मेटाडेटा संपादित करें या हटाएँ?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "लक्ष्य",
+              "बेहतर टूल",
+              "परिणाम"
+            ],
+            "rows": [
+              [
+                "शीर्षक या लेखक ठीक करना",
+                "Edit Metadata",
+                "चुने हुए सामान्य फ़ील्ड अपडेट करता है।"
+              ],
+              [
+                "कम सामान्य प्रॉपर्टी के साथ साझा करना",
+                "Remove Metadata",
+                "सामान्य दस्तावेज़ प्रॉपर्टी के बिना कॉपी बनाता है।"
+              ],
+              [
+                "गोपनीय टेक्स्ट छिपाना",
+                "Redact PDF",
+                "रेडैक्शन प्रक्रिया से दिखने वाली सामग्री हटाता है।"
+              ],
+              [
+                "डाउनलोड फ़ाइल का नाम बदलना",
+                "फ़ाइल मैनेजर",
+                "फ़ाइल नाम बदलता है, अंदर का मेटाडेटा नहीं।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "दस्तावेज़ प्रबंधन के लिए सटीक मेटाडेटा उपयोग करें"
+          },
+          {
+            "t": "p",
+            "x": "स्पष्ट शीर्षक और विषय से PDF खोज नतीजों, दस्तावेज़ भंडार और रीडर टैब में ठीक दिख सकती है। अस्थायी ड्राफ़्ट लेबल के बजाय वर्णनात्मक नाम रखें। पहचान आसान करने के लिए संवेदनशील निजी जानकारी न डालें। प्राप्तकर्ता सिस्टम के नियम हों तो उनका पालन करें।"
+          },
+          {
+            "t": "h2",
+            "x": "मेटाडेटा संपादन हर छिपा विवरण नहीं हटाता"
+          },
+          {
+            "t": "p",
+            "x": "लेखक या शीर्षक बदलना फॉरेंसिक सफ़ाई नहीं है। PDF में टिप्पणी, अटैचमेंट, फ़ॉर्म फ़ील्ड, चित्र, संशोधन इतिहास या गैर-मानक मेटाडेटा हो सकता है। नीति कहे तो [Remove Metadata](/tools/remove-metadata) से साफ़ वितरण कॉपी बनाएँ और जाँचें। दिखने वाली सामग्री साझा नहीं करनी हो तो [Redact PDF](/tools/redact-pdf) उपयोग करें।"
+          },
+          {
+            "t": "h2",
+            "x": "निजी रिकॉर्ड के लिए ब्राउज़र में स्थानीय बदलाव"
+          },
+          {
+            "t": "p",
+            "x": "मेटाडेटा से अंदरूनी प्रोजेक्ट नाम, कर्मचारियों की पहचान या कार्यप्रवाह पता चल सकता है। ब्राउज़र में स्थानीय संपादन सामान्य बदलावों के लिए अनावश्यक अपलोड से बचाता है। साझा कॉपी और सेव करने की जगह आप चुनते हैं। भेजने से पहले PDF जाँचें, खासकर ग्राहक, वित्त, चिकित्सा या कानूनी जानकारी के लिए।"
+          },
+          {
+            "t": "h2",
+            "x": "रिकॉर्ड और संस्करण स्पष्ट रखें"
+          },
+          {
+            "t": "p",
+            "x": "सटीक मेटाडेटा के साथ वर्णनात्मक फ़ाइल नाम रखें और रिकॉर्ड के लिए ज़रूरी हो तो मूल बचाएँ। हस्ताक्षरित या रिटेंशन नियम वाले PDF में मेटाडेटा बदलने से पहले रिकॉर्ड प्रक्रिया पर असर जाँचें। भेजने वाली कॉपी अलग रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या PDF मेटाडेटा मुफ्त बदल सकते हैं?",
+            "a": "हाँ। शीर्षक, लेखक, विषय और कीवर्ड जैसे सामान्य फ़ील्ड ब्राउज़र में बदलें और अपडेटेड कॉपी बिना साइनअप डाउनलोड करें।"
+          },
+          {
+            "q": "क्या मेटाडेटा बदलने से पन्ने का टेक्स्ट बदलता है?",
+            "a": "नहीं। सामान्य फ़ील्ड दृश्य सामग्री से अलग हैं। डाउनलोड की PDF खोलकर पुष्टि करें।"
+          },
+          {
+            "q": "क्या मेटाडेटा संपादन सारा छिपा डेटा हटाता है?",
+            "a": "नहीं। चुने हुए फ़ील्ड बदलना प्रॉपर्टी हटाने या सामग्री रेडैक्ट करने से अलग है। सही टूल चुनें।"
+          },
+          {
+            "q": "क्या Edit Metadata निजी है?",
+            "a": "सामान्य संपादन ब्राउज़र टैब में चलता है, इसलिए PDF नियमित रूप से अपलोड नहीं होती।"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "redact-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-metadata-from-pdf",
+          "redact-pdf-properly",
+          "edit-pdf-without-adobe-free",
+          "change-text-in-pdf-without-changing-layout"
         ]
       }
     ]
@@ -16618,6 +17074,158 @@
           "make-pdf-searchable",
           "edit-pdf-without-adobe-free",
           "convert-pdf-to-markdown-for-notes"
+        ]
+      },
+      {
+        "topic": "change-pdf-author-title-and-keywords",
+        "slug": "change-pdf-author-title-and-keywords",
+        "cluster": "edit-advanced",
+        "title": "كيفية تغيير مؤلف PDF وعنوانه وكلماته المفتاحية",
+        "metaTitle": "كيفية تغيير مؤلف PDF وعنوانه وكلماته المفتاحية",
+        "metaDescription": "عدّل بيانات PDF مجاناً في المتصفح بلا تسجيل أو علامة مائية. غيّر العنوان والمؤلف والموضوع والكلمات المفتاحية، ثم افحص النسخة.",
+        "primaryKeyword": "تغيير مؤلف PDF وعنوانه وكلماته المفتاحية",
+        "secondaryKeywords": [
+          "edit PDF metadata",
+          "change PDF author",
+          "PDF title metadata",
+          "PDF keywords"
+        ],
+        "answer": "لتغيير بيانات PDF الوصفية، افتح نسخة في محرر، وحدّث العنوان أو المؤلف أو الموضوع أو الكلمات المفتاحية، ثم نزّل الملف وتأكد من بقاء الصفحات المرئية صحيحة. تعدّل PrintxPDF الحقول القياسية محلياً في المتصفح بلا تسجيل أو علامة مائية.",
+        "body": [
+          {
+            "t": "p",
+            "x": "تساعد البيانات الوصفية مديري الملفات وبرامج القراءة وأنظمة المستندات على تحديد PDF حتى إن لم تظهر على الصفحة. قد يسهل تصحيح العنوان أو المؤلف أو الموضوع أو الكلمات المفتاحية العثور على نسخة معتمدة وتصنيفها. اعمل على نسخة، واستخدم أوصافاً دقيقة، وراجع النتيجة. تعدّل PrintxPDF البيانات القياسية محلياً في المتصفح، بلا حساب أو بطاقة أو علامة مائية أو رفع معتاد."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية تغيير عنوان PDF ومؤلفه وكلماته المفتاحية"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالملف الأصلي",
+                "x": "احفظ نسخة دون تغيير عندما تكون المنشأ أو التوقيعات أو تفاصيل المصدر مهمة."
+              },
+              {
+                "h": "افتح تعديل البيانات الوصفية",
+                "x": "أضف PDF إلى [تعديل البيانات الوصفية](/tools/edit-metadata) في المتصفح."
+              },
+              {
+                "h": "راجع القيم الحالية",
+                "x": "تحقق من العنوان والمؤلف والموضوع والكلمات المفتاحية واستخدم أوصافاً دقيقة ومعتمدة."
+              },
+              {
+                "h": "احفظ نسخة جديدة",
+                "x": "نزّل PDF المعدل باسم إصدار واضح."
+              },
+              {
+                "h": "تحقق من النتيجة",
+                "x": "افتح الملف وتأكد من عدم تغير الصفحات ومن ظهور البيانات بشكل صحيح."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "عدّل بيانات PDF الوصفية في علامة تبويبك. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "هل تعدّل البيانات الوصفية أم تزيلها؟"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الهدف",
+              "الأداة الأفضل",
+              "النتيجة"
+            ],
+            "rows": [
+              [
+                "تصحيح العنوان أو المؤلف",
+                "تعديل البيانات الوصفية",
+                "يحدّث الحقول القياسية المحددة."
+              ],
+              [
+                "المشاركة بخصائص قياسية أقل",
+                "إزالة البيانات الوصفية",
+                "تنشئ نسخة بلا خصائص المستند القياسية."
+              ],
+              [
+                "إخفاء نص سري",
+                "تنقيح PDF",
+                "يزيل المحتوى الظاهر عبر إجراء التنقيح."
+              ],
+              [
+                "إعادة تسمية الملف المنزّل",
+                "مدير الملفات",
+                "يغيّر اسم الملف لا البيانات المضمنة فيه."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "استخدم بيانات دقيقة لإدارة المستندات"
+          },
+          {
+            "t": "p",
+            "x": "يساعد العنوان والموضوع الواضحان على ظهور PDF بشكل صحيح في نتائج البحث ومستودعات المستندات وعلامات تبويب القارئ. استخدم أسماء تصف المستند بدلاً من تسميات المسودات المؤقتة. لا تضف معلومات شخصية حساسة لمجرد تسهيل التعرف على الملف. اتبع قواعد النظام المستلم."
+          },
+          {
+            "t": "h2",
+            "x": "تعديل البيانات الوصفية لا يزيل كل التفاصيل المخفية"
+          },
+          {
+            "t": "p",
+            "x": "تغيير المؤلف أو العنوان ليس تنظيفاً جنائياً. قد يحتوي PDF على تعليقات أو مرفقات أو حقول نماذج أو صور أو سجل مراجعات أو بيانات غير قياسية. استخدم [إزالة البيانات الوصفية](/tools/remove-metadata) لنسخة توزيع أنظف عند الحاجة وافحصها. استخدم [تنقيح PDF](/tools/redact-pdf) عندما يجب عدم مشاركة المحتوى الظاهر."
+          },
+          {
+            "t": "h2",
+            "x": "تعديلات محلية في المتصفح للسجلات الخاصة"
+          },
+          {
+            "t": "p",
+            "x": "قد تكشف البيانات الوصفية أسماء مشاريع داخلية أو هويات الموظفين أو تفاصيل سير العمل. يتجنب التعديل المحلي رفع الملف بلا داعٍ عند تغيير البيانات القياسية. أنت تختار النسخة التي تشاركها ومكان حفظها. راجع PDF قبل الإرسال، خاصة مع معلومات العملاء أو المال أو الصحة أو القانون."
+          },
+          {
+            "t": "h2",
+            "x": "حافظ على وضوح السجلات والإصدارات"
+          },
+          {
+            "t": "p",
+            "x": "استخدم اسماً وصفياً وبيانات دقيقة واحتفظ بالأصل عندما يخدم حفظ السجلات. إذا كان PDF موقعاً أو خاضعاً لمتطلبات احتفاظ، فتحقق من أثر تحديث البيانات على الإجراء. احفظ نسخة التسليم منفصلة عن المصدر."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يمكن تغيير بيانات PDF مجاناً؟",
+            "a": "نعم. عدّل العنوان والمؤلف والموضوع والكلمات المفتاحية في المتصفح، ثم نزّل النسخة بلا تسجيل."
+          },
+          {
+            "q": "هل يغير تعديل البيانات الوصفية نص الصفحة الظاهر؟",
+            "a": "لا. الحقول منفصلة عن محتوى الصفحة. افتح الملف المنزّل للتأكد من بقاء الصفحات كما تتوقع."
+          },
+          {
+            "q": "هل يزيل تعديل البيانات كل البيانات المخفية؟",
+            "a": "لا. تعديل حقول محددة يختلف عن إزالة الخصائص أو تنقيح المحتوى. استخدم أداة الخصوصية المناسبة."
+          },
+          {
+            "q": "هل تعديل البيانات الوصفية خاص؟",
+            "a": "يعمل التعديل القياسي في علامة تبويب المتصفح، لذلك لا يُرفع PDF عادة للمعالجة."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "redact-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-metadata-from-pdf",
+          "redact-pdf-properly",
+          "edit-pdf-without-adobe-free",
+          "change-text-in-pdf-without-changing-layout"
         ]
       }
     ]
@@ -20782,6 +21390,158 @@
           "edit-pdf-without-adobe-free",
           "convert-pdf-to-markdown-for-notes"
         ]
+      },
+      {
+        "topic": "change-pdf-author-title-and-keywords",
+        "slug": "change-pdf-author-title-and-keywords",
+        "cluster": "edit-advanced",
+        "title": "PDF-এর লেখক, শিরোনাম ও কীওয়ার্ড কীভাবে বদলাবেন",
+        "metaTitle": "PDF-এর লেখক, শিরোনাম ও কীওয়ার্ড কীভাবে বদলাবেন",
+        "metaDescription": "ব্রাউজারে PDF মেটাডেটা বিনামূল্যে সম্পাদনা করুন—সাইনআপ বা ওয়াটারমার্ক নেই। শিরোনাম বদলে কপি পরীক্ষা করুন।",
+        "primaryKeyword": "PDF লেখক শিরোনাম কীওয়ার্ড পরিবর্তন",
+        "secondaryKeywords": [
+          "edit PDF metadata",
+          "change PDF author",
+          "PDF title metadata",
+          "PDF keywords"
+        ],
+        "answer": "PDF মেটাডেটা বদলাতে কপিটি এডিটরে খুলুন, শিরোনাম, লেখক, বিষয় বা কীওয়ার্ড আপডেট করুন, ফাইল নামিয়ে দৃশ্যমান পৃষ্ঠাগুলো ঠিক আছে কি না দেখুন। PrintxPDF সাধারণ মেটাডেটা ব্রাউজারে স্থানীয়ভাবে সম্পাদনা করে, সাইনআপ বা ওয়াটারমার্ক ছাড়া।",
+        "body": [
+          {
+            "t": "p",
+            "x": "মেটাডেটা ফাইল ম্যানেজার, রিডার ও নথি সিস্টেমকে PDF চিনতে সাহায্য করে, যদিও তা পৃষ্ঠায় দেখা যায় না। সঠিক শিরোনাম, লেখক, বিষয় বা কীওয়ার্ড অনুমোদিত PDF খুঁজে পেতে ও সাজাতে সাহায্য করে। কপিতে কাজ করুন, নির্ভুল বিবরণ দিন এবং ফল পরীক্ষা করুন। PrintxPDF সাধারণ মেটাডেটা ব্রাউজারে স্থানীয়ভাবে বদলায়; অ্যাকাউন্ট, কার্ড, ওয়াটারমার্ক বা নিয়মিত আপলোড লাগে না।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF-এর শিরোনাম, লেখক ও কীওয়ার্ড কীভাবে বদলাবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল ফাইলটি রাখুন",
+                "x": "উৎস, স্বাক্ষর বা আসল বিবরণ গুরুত্বপূর্ণ হলে অপরিবর্তিত কপি সংরক্ষণ করুন।"
+              },
+              {
+                "h": "Edit Metadata খুলুন",
+                "x": "ব্রাউজারে PDF-টি [Edit Metadata](/tools/edit-metadata)-এ যোগ করুন।"
+              },
+              {
+                "h": "বর্তমান মান দেখুন",
+                "x": "শিরোনাম, লেখক, বিষয় ও কীওয়ার্ড পরীক্ষা করে নির্ভুল বিবরণ ব্যবহার করুন।"
+              },
+              {
+                "h": "নতুন কপি সংরক্ষণ করুন",
+                "x": "স্পষ্ট সংস্করণ নাম দিয়ে সম্পাদিত PDF ডাউনলোড করুন।"
+              },
+              {
+                "h": "ফল যাচাই করুন",
+                "x": "PDF খুলে পৃষ্ঠা বদলেছে কি না এবং মেটাডেটা ঠিক দেখায় কি না দেখুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "আপনার ট্যাবে PDF মেটাডেটা সম্পাদনা করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।"
+          },
+          {
+            "t": "h2",
+            "x": "মেটাডেটা সম্পাদনা, নাকি অপসারণ?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "লক্ষ্য",
+              "ভালো টুল",
+              "ফলাফল"
+            ],
+            "rows": [
+              [
+                "শিরোনাম বা লেখক ঠিক করা",
+                "Edit Metadata",
+                "নির্বাচিত সাধারণ ফিল্ড আপডেট করে।"
+              ],
+              [
+                "কম সাধারণ প্রপার্টি নিয়ে শেয়ার করা",
+                "Remove Metadata",
+                "সাধারণ নথি প্রপার্টি ছাড়া কপি তৈরি করে।"
+              ],
+              [
+                "গোপন লেখা লুকানো",
+                "Redact PDF",
+                "রেড্যাকশন পদ্ধতিতে দৃশ্যমান বিষয়বস্তু সরায়।"
+              ],
+              [
+                "ডাউনলোড ফাইলের নাম বদলানো",
+                "ফাইল ম্যানেজার",
+                "ফাইলের নাম বদলায়, এমবেড করা মেটাডেটা নয়।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "নথি ব্যবস্থাপনায় নির্ভুল মেটাডেটা ব্যবহার করুন"
+          },
+          {
+            "t": "p",
+            "x": "স্পষ্ট শিরোনাম ও বিষয় PDF-কে সার্চ ফল, নথি ভান্ডার ও রিডার ট্যাবে ঠিকভাবে দেখাতে সাহায্য করে। সাময়িক ড্রাফট লেবেলের বদলে বর্ণনামূলক নাম দিন। সংবেদনশীল ব্যক্তিগত তথ্য দেবেন না। গ্রহণকারী সিস্টেমের নিয়ম থাকলে তা অনুসরণ করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "মেটাডেটা সম্পাদনা সব লুকানো তথ্য সরায় না"
+          },
+          {
+            "t": "p",
+            "x": "লেখক বা শিরোনাম বদলানো ফরেনসিক পরিষ্কার নয়। PDF-এ মন্তব্য, সংযুক্তি, ফর্ম ফিল্ড, ছবি, সংশোধনের ইতিহাস বা অপ্রচলিত মেটাডেটা থাকতে পারে। নীতি চাইলে [Remove Metadata](/tools/remove-metadata) দিয়ে পরিষ্কার কপি বানিয়ে ফল পরীক্ষা করুন। দৃশ্যমান তথ্য শেয়ার করা যাবে না হলে [Redact PDF](/tools/redact-pdf) ব্যবহার করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্যক্তিগত রেকর্ডে ব্রাউজারে স্থানীয় পরিবর্তন"
+          },
+          {
+            "t": "p",
+            "x": "মেটাডেটা থেকে প্রকল্পের নাম, কর্মীর পরিচয় বা কাজের বিবরণ প্রকাশ পেতে পারে। ব্রাউজারে স্থানীয় সম্পাদনা অপ্রয়োজনীয় আপলোড এড়ায়। কোন কপি শেয়ার করবেন ও কোথায় রাখবেন তা আপনি ঠিক করেন। পাঠানোর আগে PDF দেখুন, বিশেষত গ্রাহক, অর্থ, চিকিৎসা বা আইনি তথ্য থাকলে।"
+          },
+          {
+            "t": "h2",
+            "x": "রেকর্ড ও সংস্করণ পরিষ্কার রাখুন"
+          },
+          {
+            "t": "p",
+            "x": "নির্ভুল মেটাডেটার সঙ্গে বর্ণনামূলক নাম ব্যবহার করুন এবং রেকর্ডের জন্য দরকার হলে মূল রাখুন। PDF স্বাক্ষরিত বা সংরক্ষণ নীতিতে থাকলে মেটাডেটা বদলানোর প্রভাব আগে যাচাই করুন। পাঠানোর কপি আলাদা রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF মেটাডেটা কি বিনামূল্যে বদলানো যায়?",
+            "a": "হ্যাঁ। শিরোনাম, লেখক, বিষয় ও কীওয়ার্ড ব্রাউজারে বদলে সাইনআপ ছাড়া আপডেটেড কপি নামান।"
+          },
+          {
+            "q": "মেটাডেটা বদলালে কি পৃষ্ঠার লেখা বদলায়?",
+            "a": "না। মেটাডেটা দৃশ্যমান বিষয়বস্তু থেকে আলাদা। ডাউনলোড করা PDF খুলে নিশ্চিত করুন।"
+          },
+          {
+            "q": "মেটাডেটা সম্পাদনা কি সব লুকানো তথ্য মুছে দেয়?",
+            "a": "না। নির্বাচিত ফিল্ড বদলানো প্রপার্টি সরানো বা বিষয়বস্তু রেড্যাক্ট করা থেকে আলাদা। উপযুক্ত টুল নিন।"
+          },
+          {
+            "q": "Edit Metadata কি ব্যক্তিগত?",
+            "a": "সাধারণ সম্পাদনা ব্রাউজার ট্যাবে চলে, তাই PDF নিয়মিত প্রসেসিংয়ের জন্য আপলোড হয় না।"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "redact-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-metadata-from-pdf",
+          "redact-pdf-properly",
+          "edit-pdf-without-adobe-free",
+          "change-text-in-pdf-without-changing-layout"
+        ]
       }
     ]
   },
@@ -24932,6 +25692,158 @@
           "make-pdf-searchable",
           "edit-pdf-without-adobe-free",
           "convert-pdf-to-markdown-for-notes"
+        ]
+      },
+      {
+        "topic": "change-pdf-author-title-and-keywords",
+        "slug": "change-pdf-author-title-and-keywords",
+        "cluster": "edit-advanced",
+        "title": "Cách đổi tác giả, tiêu đề và từ khóa PDF",
+        "metaTitle": "Cách đổi tác giả, tiêu đề và từ khóa PDF",
+        "metaDescription": "Sửa siêu dữ liệu PDF miễn phí trong trình duyệt, không đăng ký hay watermark. Đổi tiêu đề và kiểm tra bản sao.",
+        "primaryKeyword": "đổi tác giả tiêu đề và từ khóa PDF",
+        "secondaryKeywords": [
+          "edit PDF metadata",
+          "change PDF author",
+          "PDF title metadata",
+          "PDF keywords"
+        ],
+        "answer": "Để đổi siêu dữ liệu PDF, mở một bản sao, cập nhật tiêu đề, tác giả, chủ đề hoặc từ khóa, tải tệp xuống rồi xác minh các trang hiển thị vẫn đúng. PrintxPDF sửa các trường chuẩn cục bộ trong trình duyệt, không cần đăng ký hay watermark.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Siêu dữ liệu giúp trình quản lý tệp, trình đọc và hệ thống tài liệu nhận diện PDF dù thông tin đó không xuất hiện trên trang. Sửa tiêu đề, tác giả, chủ đề hoặc từ khóa giúp tìm và phân loại bản được duyệt dễ hơn. Hãy làm trên bản sao, dùng mô tả chính xác và kiểm tra kết quả. PrintxPDF sửa siêu dữ liệu chuẩn trong trình duyệt, không cần tài khoản, thẻ, watermark hay tải lên thường xuyên."
+          },
+          {
+            "t": "h2",
+            "x": "Cách đổi tiêu đề, tác giả và từ khóa PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ tệp gốc",
+                "x": "Lưu bản chưa chỉnh sửa khi nguồn gốc, chữ ký hoặc chi tiết nguồn quan trọng."
+              },
+              {
+                "h": "Mở Sửa siêu dữ liệu",
+                "x": "Thêm PDF vào [Sửa siêu dữ liệu](/tools/edit-metadata) trong trình duyệt."
+              },
+              {
+                "h": "Xem lại giá trị hiện có",
+                "x": "Kiểm tra tiêu đề, tác giả, chủ đề và từ khóa; dùng mô tả chính xác, đã duyệt."
+              },
+              {
+                "h": "Lưu bản mới",
+                "x": "Tải PDF đã sửa với tên phiên bản rõ ràng."
+              },
+              {
+                "h": "Xác minh kết quả",
+                "x": "Mở PDF để xác nhận trang không đổi và siêu dữ liệu hiển thị đúng."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "Sửa siêu dữ liệu PDF ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Nên sửa hay xóa siêu dữ liệu?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Mục tiêu",
+              "Công cụ phù hợp",
+              "Kết quả"
+            ],
+            "rows": [
+              [
+                "Sửa tiêu đề hoặc tác giả",
+                "Sửa siêu dữ liệu",
+                "Cập nhật các trường chuẩn đã chọn."
+              ],
+              [
+                "Chia sẻ với ít thuộc tính chuẩn hơn",
+                "Xóa siêu dữ liệu",
+                "Tạo bản sao không có thuộc tính tài liệu chuẩn."
+              ],
+              [
+                "Ẩn văn bản mật",
+                "Che nội dung PDF",
+                "Xóa nội dung hiển thị theo quy trình che."
+              ],
+              [
+                "Đổi tên tệp tải xuống",
+                "Trình quản lý tệp",
+                "Đổi tên tệp, không đổi siêu dữ liệu nhúng."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Dùng siêu dữ liệu chính xác để quản lý tài liệu"
+          },
+          {
+            "t": "p",
+            "x": "Tiêu đề và chủ đề rõ ràng giúp PDF hiển thị đúng trong kết quả tìm kiếm, kho tài liệu và tab trình đọc. Dùng tên mô tả thay vì nhãn nháp tạm thời. Đừng thêm dữ liệu cá nhân nhạy cảm chỉ để dễ nhận diện. Làm theo quy tắc của hệ thống nhận."
+          },
+          {
+            "t": "h2",
+            "x": "Sửa siêu dữ liệu không xóa mọi chi tiết ẩn"
+          },
+          {
+            "t": "p",
+            "x": "Đổi tác giả hay tiêu đề không phải làm sạch pháp chứng. PDF còn có thể chứa bình luận, tệp đính kèm, trường biểu mẫu, ảnh, lịch sử sửa đổi hoặc siêu dữ liệu phi chuẩn. Dùng [Xóa siêu dữ liệu](/tools/remove-metadata) để tạo bản phân phối sạch hơn khi chính sách yêu cầu và kiểm tra kết quả. Dùng [Che nội dung PDF](/tools/redact-pdf) khi không được chia sẻ nội dung hiển thị."
+          },
+          {
+            "t": "h2",
+            "x": "Chỉnh sửa cục bộ cho hồ sơ riêng tư"
+          },
+          {
+            "t": "p",
+            "x": "Siêu dữ liệu có thể tiết lộ tên dự án nội bộ, danh tính nhân viên hoặc chi tiết quy trình. Sửa cục bộ tránh tải lên không cần thiết cho thay đổi trường chuẩn. Bạn chọn bản chia sẻ và nơi lưu. Rà soát PDF trước khi gửi, nhất là khi có dữ liệu khách hàng, tài chính, y tế hoặc pháp lý."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ hồ sơ và phiên bản rõ ràng"
+          },
+          {
+            "t": "p",
+            "x": "Dùng tên tệp mô tả cùng siêu dữ liệu chính xác và giữ bản gốc khi cần lưu hồ sơ. Nếu PDF đã ký hoặc thuộc yêu cầu lưu giữ, hãy kiểm tra ảnh hưởng quy trình trước khi sửa. Lưu riêng bản gửi để phân biệt với nguồn."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Có thể đổi siêu dữ liệu PDF miễn phí không?",
+            "a": "Có. Sửa tiêu đề, tác giả, chủ đề và từ khóa trong trình duyệt rồi tải bản cập nhật không cần đăng ký."
+          },
+          {
+            "q": "Đổi siêu dữ liệu có đổi chữ trên trang không?",
+            "a": "Không. Trường chuẩn tách biệt với nội dung hiển thị. Mở PDF tải xuống để xác nhận trang như mong muốn."
+          },
+          {
+            "q": "Sửa siêu dữ liệu có xóa mọi dữ liệu ẩn không?",
+            "a": "Không. Sửa một số trường khác với xóa thuộc tính chuẩn hoặc che nội dung. Hãy dùng công cụ riêng tư phù hợp."
+          },
+          {
+            "q": "Sửa siêu dữ liệu có riêng tư không?",
+            "a": "Quy trình chuẩn chạy trong tab trình duyệt nên PDF không được tải lên thường xuyên để xử lý."
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "redact-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-metadata-from-pdf",
+          "redact-pdf-properly",
+          "edit-pdf-without-adobe-free",
+          "change-text-in-pdf-without-changing-layout"
         ]
       }
     ]
@@ -29092,6 +30004,158 @@
           "make-pdf-searchable",
           "edit-pdf-without-adobe-free",
           "convert-pdf-to-markdown-for-notes"
+        ]
+      },
+      {
+        "topic": "change-pdf-author-title-and-keywords",
+        "slug": "change-pdf-author-title-and-keywords",
+        "cluster": "edit-advanced",
+        "title": "如何修改 PDF 作者、标题和关键词",
+        "metaTitle": "如何修改 PDF 作者、标题和关键词",
+        "metaDescription": "在浏览器中免费编辑 PDF 元数据，无需注册或水印。修改标题、作者和关键词，并检查页面与副本。",
+        "primaryKeyword": "修改 PDF 作者 标题 关键词",
+        "secondaryKeywords": [
+          "edit PDF metadata",
+          "change PDF author",
+          "PDF title metadata",
+          "PDF keywords"
+        ],
+        "answer": "要修改 PDF 元数据，请在编辑器中打开副本，更新标题、作者、主题或关键词，下载文件并确认可见页面未变。PrintxPDF 可在浏览器本地修改标准字段，无需注册或水印。",
+        "body": [
+          {
+            "t": "p",
+            "x": "元数据可帮助文件管理器、阅读器和文档系统识别 PDF，即使它们不会显示在页面上。更正标题、作者、主题或关键词有助于查找和分类已批准的文件。请在副本上操作，使用准确描述，并检查结果。PrintxPDF 在浏览器本地编辑标准元数据，无需账户、银行卡或水印，也不会常规上传文件。"
+          },
+          {
+            "t": "h2",
+            "x": "如何修改 PDF 的标题、作者和关键词"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留原始文件",
+                "x": "当来源、签名或原始信息很重要时，保存未修改的副本。"
+              },
+              {
+                "h": "打开编辑元数据",
+                "x": "在浏览器中将 PDF 添加到[编辑元数据](/tools/edit-metadata)。"
+              },
+              {
+                "h": "检查当前值",
+                "x": "检查标题、作者、主题和关键词，使用准确且获准的描述。"
+              },
+              {
+                "h": "保存新副本",
+                "x": "使用清晰的版本名称下载编辑后的 PDF。"
+              },
+              {
+                "h": "验证结果",
+                "x": "打开 PDF，确认页面未变，并检查阅读器或文件管理器中的元数据显示正确。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "edit-metadata",
+            "x": "在当前标签页编辑 PDF 元数据。免费，无需注册，没有水印。"
+          },
+          {
+            "t": "h2",
+            "x": "编辑元数据还是删除元数据？"
+          },
+          {
+            "t": "table",
+            "head": [
+              "目标",
+              "适合的工具",
+              "结果"
+            ],
+            "rows": [
+              [
+                "更正标题或作者",
+                "编辑元数据",
+                "更新选定的标准字段。"
+              ],
+              [
+                "分享时减少标准属性",
+                "删除元数据",
+                "创建不含标准文档属性的副本。"
+              ],
+              [
+                "隐藏机密文字",
+                "涂黑 PDF",
+                "通过涂黑流程移除可见内容。"
+              ],
+              [
+                "重命名下载文件",
+                "文件管理器",
+                "只改文件名，不改 PDF 内嵌元数据。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "使用准确元数据管理文档"
+          },
+          {
+            "t": "p",
+            "x": "清晰的标题和主题有助于 PDF 在搜索结果、文档库和阅读器标签中正确显示。使用描述文档的名称，避免临时草稿标签。不要仅为方便识别而添加敏感个人信息。接收系统如有要求，请按规定填写。"
+          },
+          {
+            "t": "h2",
+            "x": "编辑元数据不会删除所有隐藏细节"
+          },
+          {
+            "t": "p",
+            "x": "修改作者和标题并不等于取证级清理。PDF 还可能包含批注、附件、表单字段、图片、修订历史或非标准元数据。政策要求时，请使用[删除元数据](/tools/remove-metadata)生成更干净的分发副本并检查输出。可见内容不得分享时，请使用[涂黑 PDF](/tools/redact-pdf)。"
+          },
+          {
+            "t": "h2",
+            "x": "在浏览器本地修改私人记录"
+          },
+          {
+            "t": "p",
+            "x": "元数据可能泄露内部项目名称、员工身份或工作流程信息。浏览器本地编辑标准字段可避免不必要上传。你可以决定分享哪个副本以及保存位置。发送前检查 PDF，尤其是涉及客户、财务、医疗或法律信息时。"
+          },
+          {
+            "t": "h2",
+            "x": "清楚保留记录和版本"
+          },
+          {
+            "t": "p",
+            "x": "配合准确元数据使用描述性文件名，并在需要留档时保留原件。如果 PDF 已签名或受保留要求约束，请先确认修改元数据是否影响记录流程。将交付副本单独保存，以便与来源区分。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "可以免费修改 PDF 元数据吗？",
+            "a": "可以。在浏览器中编辑标题、作者、主题和关键词等标准字段，并下载更新副本，无需注册。"
+          },
+          {
+            "q": "修改元数据会改变页面可见文字吗？",
+            "a": "不会。标准字段与可见内容分开。请打开下载的 PDF，确认页面符合预期。"
+          },
+          {
+            "q": "编辑元数据能删除所有隐藏数据吗？",
+            "a": "不能。修改部分字段不同于删除标准属性或涂黑页面内容。请使用合适的隐私工具。"
+          },
+          {
+            "q": "编辑元数据是否保护隐私？",
+            "a": "标准编辑在浏览器标签页中运行，因此通常不会上传 PDF 进行处理。"
+          }
+        ],
+        "relatedTools": [
+          "edit-metadata",
+          "remove-metadata",
+          "redact-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "remove-metadata-from-pdf",
+          "redact-pdf-properly",
+          "edit-pdf-without-adobe-free",
+          "change-text-in-pdf-without-changing-layout"
         ]
       }
     ]
