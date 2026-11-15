@@ -8281,6 +8281,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "add-revision-label-to-pdf",
+        "slug": "add-revision-label-to-pdf",
+        "cluster": "editing-expansion",
+        "tool": "add-watermark",
+        "title": "Cómo añadir una etiqueta de revisión a un PDF",
+        "metaTitle": "Cómo añadir una etiqueta de revisión a un PDF",
+        "metaDescription": "Etiqueta un PDF como borrador, revisión o versión final con una marca visible. Gratis en el navegador, sin cuenta ni marca de agua.",
+        "answer": "Para añadir una etiqueta de revisión a un PDF, aplica una marca de agua visible como BORRADOR, EN REVISIÓN o FINAL y revisa dónde aparece en cada página. PrintxPDF inserta el texto en el PDF en tu navegador. Guarda el original limpio: la etiqueta es una señal de estado, no un bloqueo ni una protección contra cambios.",
+        "sections": [
+          {
+            "heading": "Añade una marca de revisión en cuatro pasos",
+            "paragraphs": [
+              "Para añadir una etiqueta de revisión a un PDF, aplica una marca de agua visible como BORRADOR, EN REVISIÓN o FINAL y revisa dónde aparece en cada página. PrintxPDF inserta el texto en el PDF en tu navegador. Guarda el original limpio: la etiqueta es una señal de estado, no un bloqueo ni una protección contra cambios."
+            ],
+            "steps": [
+              {
+                "heading": "Guarda el original",
+                "text": "Conserva una copia sin marcas antes de añadir la etiqueta. Así podrás crear una versión limpia más adelante sin reconstruir el documento."
+              },
+              {
+                "heading": "Elige una etiqueta clara",
+                "text": "Usa un estado breve, como BORRADOR, PARA REVISIÓN o APROBADO, que describa el uso permitido. No incluyas datos personales en una etiqueta compartida."
+              },
+              {
+                "heading": "Abre Añadir marca de agua",
+                "text": "Carga el PDF en [Añadir marca de agua](/tools/add-watermark), escribe la etiqueta y ajusta tamaño, color, transparencia, ángulo y páginas según el diseño."
+              },
+              {
+                "heading": "Descarga y comprueba",
+                "text": "Abre el resultado y verifica que la marca se lea sin tapar importes, firmas, notas o texto importante. Confirma que todas las páginas requeridas están marcadas."
+              }
+            ]
+          },
+          {
+            "heading": "Qué significa una marca de revisión",
+            "paragraphs": [
+              "Una marca visible ayuda a distinguir copias de trabajo y reduce el riesgo de que un borrador se confunda con una versión aprobada. Usa palabras coherentes con el flujo de tu equipo y quita la marca solo cuando la versión haya pasado la revisión correspondiente.",
+              "La marca de agua se dibuja sobre las páginas y aparece al abrir o imprimir el archivo. No es una etiqueta de seguridad: alguien aún puede editar o cubrir contenido con otras herramientas. Conserva una copia original y no uses la marca para ocultar información confidencial.",
+              "Ajusta la transparencia y la ubicación para que la marca sea visible pero no impida leer la página. Una marca diagonal grande puede servir para un borrador interno; para una nota discreta, elige menor tamaño y una zona sin contenido. Revisa páginas con tablas y firmas.",
+              "El proceso se ejecuta en la pestaña del navegador. La etiqueta no cambia los metadatos del archivo ni impide que se copie. Para añadir numeración visible, utiliza [Números de página PDF](/tools/page-numbers). Si vas a compartir una versión editada, revisa también sus metadatos con [Eliminar metadatos PDF](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Añade una etiqueta gratis en tu navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿Cómo añado una etiqueta de revisión a un PDF?",
+            "a": "Abre Añadir marca de agua, escribe una etiqueta breve como BORRADOR o PARA REVISIÓN, ajusta su aspecto y páginas, y descarga una copia. Revisa el resultado para asegurarte de que la marca sea legible y no tape contenido importante."
+          },
+          {
+            "q": "¿La marca de revisión protege el documento contra cambios?",
+            "a": "No. Es una indicación visual de estado, no una contraseña ni una firma digital. El archivo puede editarse con otras herramientas. Guarda el original y usa controles de acceso o firma digital cuando necesites controlar cambios o validar una aprobación."
+          },
+          {
+            "q": "¿Puedo marcar solo algunas páginas?",
+            "a": "Sí. Elige las páginas o rangos que deben llevar la etiqueta y revisa la portada, anexos y páginas con firmas. Si el estado debe quedar claro en todo el documento, confirma que no quede ninguna página fuera por accidente."
+          },
+          {
+            "q": "¿La etiqueta de agua se puede quitar?",
+            "a": "La herramienta dibuja el texto en la página, así que no se comporta como una pegatina aparte que se oculta con un clic. Aun así, una marca no es imposible de alterar. Mantén el archivo limpio original y distribuye la copia marcada según tu proceso."
+          }
+        ],
+        "keywords": [
+          "cómo añadir una etiqueta de revisión a un pdf",
+          "PDF revision label",
+          "add draft watermark"
+        ],
+        "relatedTools": [
+          "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -16556,6 +16637,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "add-revision-label-to-pdf",
+        "slug": "add-revision-label-to-pdf",
+        "cluster": "editing-expansion",
+        "tool": "add-watermark",
+        "title": "Como adicionar um rótulo de revisão a um PDF",
+        "metaTitle": "Como adicionar um rótulo de revisão a um PDF",
+        "metaDescription": "Identifique um PDF como rascunho, em revisão ou final com uma marca visível. Grátis no navegador, sem conta nem marca-d’água.",
+        "answer": "Para adicionar um rótulo de revisão a um PDF, aplique uma marca visível como RASCUNHO, EM REVISÃO ou FINAL e confira onde ela aparece em cada página. O PrintxPDF grava o texto no PDF pelo navegador. Guarde o original limpo: o rótulo indica o status, mas não bloqueia alterações nem protege o arquivo.",
+        "sections": [
+          {
+            "heading": "Adicione uma marca de revisão em quatro etapas",
+            "paragraphs": [
+              "Para adicionar um rótulo de revisão a um PDF, aplique uma marca visível como RASCUNHO, EM REVISÃO ou FINAL e confira onde ela aparece em cada página. O PrintxPDF grava o texto no PDF pelo navegador. Guarde o original limpo: o rótulo indica o status, mas não bloqueia alterações nem protege o arquivo."
+            ],
+            "steps": [
+              {
+                "heading": "Guarde o original",
+                "text": "Mantenha uma cópia sem marca antes de adicionar o rótulo. Assim você poderá criar uma versão limpa depois sem reconstruir o documento."
+              },
+              {
+                "heading": "Escolha um rótulo claro",
+                "text": "Use um status curto, como RASCUNHO, PARA REVISÃO ou APROVADO, que explique o uso permitido. Não inclua dados pessoais em uma marca compartilhada."
+              },
+              {
+                "heading": "Abra Adicionar marca-d’água",
+                "text": "Carregue o PDF em [Adicionar marca-d’água](/tools/add-watermark), digite o rótulo e ajuste tamanho, cor, transparência, ângulo e páginas conforme o layout."
+              },
+              {
+                "heading": "Baixe e confira",
+                "text": "Abra o resultado e verifique se a marca está legível sem cobrir valores, assinaturas, notas ou texto importante. Confirme que todas as páginas necessárias estão marcadas."
+              }
+            ]
+          },
+          {
+            "heading": "O que uma marca de revisão significa",
+            "paragraphs": [
+              "Uma marca visível ajuda a distinguir cópias de trabalho e reduz o risco de um rascunho ser confundido com uma versão aprovada. Use termos alinhados ao fluxo da equipe e remova a marca somente quando a versão passar pela revisão apropriada.",
+              "A marca-d’água é desenhada nas páginas e aparece ao abrir ou imprimir o arquivo. Não é uma etiqueta de segurança: alguém ainda pode editar ou cobrir o conteúdo com outras ferramentas. Guarde uma cópia original e não use a marca para ocultar informações confidenciais.",
+              "Ajuste transparência e posição para manter a marca visível sem dificultar a leitura. Uma marca diagonal grande pode servir para um rascunho interno; para uma nota discreta, use tamanho menor e uma área sem conteúdo. Confira páginas com tabelas e assinaturas.",
+              "O processamento ocorre na aba do navegador. O rótulo não altera os metadados do arquivo nem impede cópias. Para adicionar numeração visível, use [Números de página PDF](/tools/page-numbers). Antes de compartilhar uma versão editada, confira também os metadados com [Remover metadados do PDF](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Adicione um rótulo grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "Como adiciono um rótulo de revisão a um PDF?",
+            "a": "Abra Adicionar marca-d’água, digite um rótulo curto como RASCUNHO ou PARA REVISÃO, ajuste a aparência e as páginas e baixe uma cópia. Revise o resultado para confirmar que a marca está legível e não cobre conteúdo importante."
+          },
+          {
+            "q": "A marca de revisão impede alterações no documento?",
+            "a": "Não. É uma indicação visual de status, não uma senha ou assinatura digital. O arquivo pode ser editado em outras ferramentas. Guarde o original e use controle de acesso ou assinatura digital quando precisar controlar alterações ou validar uma aprovação."
+          },
+          {
+            "q": "Posso marcar somente algumas páginas?",
+            "a": "Sim. Escolha as páginas ou intervalos que devem receber o rótulo e confira capa, anexos e páginas assinadas. Se o status deve ficar claro no documento inteiro, confirme que nenhuma página ficou de fora por engano."
+          },
+          {
+            "q": "A marca-d’água pode ser removida?",
+            "a": "A ferramenta desenha o texto na página, portanto não é um adesivo separado que se oculta com um clique. Ainda assim, uma marca não é impossível de alterar. Mantenha o original sem marca e distribua a cópia marcada conforme seu processo."
+          }
+        ],
+        "keywords": [
+          "como adicionar um rótulo de revisão a um pdf",
+          "PDF revision label",
+          "add draft watermark"
+        ],
+        "relatedTools": [
+          "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -24824,6 +24986,87 @@
           "remove-metadata",
           "pdf-reader",
           "organize-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "add-revision-label-to-pdf",
+        "slug": "add-revision-label-to-pdf",
+        "cluster": "editing-expansion",
+        "tool": "add-watermark",
+        "title": "PDF पर समीक्षा लेबल कैसे जोड़ें",
+        "metaTitle": "PDF पर समीक्षा लेबल कैसे जोड़ें",
+        "metaDescription": "PDF को ड्राफ्ट, समीक्षा में या अंतिम बताने के लिए दिखने वाला लेबल लगाएं। ब्राउज़र में मुफ्त, बिना खाते या वॉटरमार्क के।",
+        "answer": "PDF पर समीक्षा लेबल जोड़ने के लिए DRAFT, REVIEW या FINAL जैसा दिखाई देने वाला वॉटरमार्क लगाएं और हर पेज पर उसकी जगह जांचें। PrintxPDF आपके ब्राउज़र में PDF पर टेक्स्ट जोड़ता है। साफ़ मूल फ़ाइल रखें: लेबल स्थिति बताता है, बदलाव रोकता या सुरक्षा नहीं देता।",
+        "sections": [
+          {
+            "heading": "चार चरणों में समीक्षा वॉटरमार्क जोड़ें",
+            "paragraphs": [
+              "PDF पर समीक्षा लेबल जोड़ने के लिए DRAFT, REVIEW या FINAL जैसा दिखाई देने वाला वॉटरमार्क लगाएं और हर पेज पर उसकी जगह जांचें। PrintxPDF आपके ब्राउज़र में PDF पर टेक्स्ट जोड़ता है। साफ़ मूल फ़ाइल रखें: लेबल स्थिति बताता है, बदलाव रोकता या सुरक्षा नहीं देता।"
+            ],
+            "steps": [
+              {
+                "heading": "मूल फ़ाइल रखें",
+                "text": "लेबल लगाने से पहले बिना निशान वाली कॉपी सुरक्षित रखें। इससे बाद में दस्तावेज़ फिर से बनाए बिना साफ़ संस्करण निकलेगा।"
+              },
+              {
+                "heading": "स्पष्ट लेबल चुनें",
+                "text": "DRAFT, समीक्षा हेतु या स्वीकृत जैसा छोटा स्टेटस चुनें, जो उपयोग स्पष्ट करे। साझा किए जाने वाले लेबल में निजी जानकारी न डालें।"
+              },
+              {
+                "heading": "Add Watermark खोलें",
+                "text": "PDF को [Add Watermark](/tools/add-watermark) में खोलें, लेबल लिखें और लेआउट के अनुसार आकार, रंग, पारदर्शिता, कोण और पेज चुनें।"
+              },
+              {
+                "heading": "डाउनलोड और जांचें",
+                "text": "परिणाम खोलकर देखें कि लेबल पढ़ा जा रहा है और रकम, हस्ताक्षर, नोट या जरूरी टेक्स्ट ढक नहीं रहा। पुष्टि करें कि सभी जरूरी पेजों पर निशान है।"
+              }
+            ]
+          },
+          {
+            "heading": "समीक्षा लेबल का अर्थ",
+            "paragraphs": [
+              "दिखने वाला लेबल कामकाजी कॉपी पहचानने में मदद करता है और ड्राफ्ट को स्वीकृत संस्करण समझने का जोखिम घटाता है। अपनी टीम के कार्यप्रवाह के अनुरूप शब्द चुनें और उचित समीक्षा पूरी होने के बाद ही लेबल हटाएं।",
+              "वॉटरमार्क पेज पर लिखा जाता है और फ़ाइल खोलने या छापने पर दिखता है। यह सुरक्षा लेबल नहीं है: दूसरे टूल से कोई फ़ाइल संपादित या ढकी जा सकती है। मूल कॉपी रखें और गोपनीय जानकारी छिपाने के लिए वॉटरमार्क का उपयोग न करें।",
+              "पारदर्शिता और जगह ऐसी रखें कि लेबल दिखे, लेकिन पेज पढ़ना मुश्किल न हो। बड़े तिरछे अक्षर अंदरूनी ड्राफ्ट के लिए ठीक हैं; हल्के नोट के लिए छोटा आकार और खाली जगह चुनें। टेबल और हस्ताक्षर वाले पेज जांचें।",
+              "प्रक्रिया ब्राउज़र टैब में होती है। लेबल मेटाडेटा नहीं बदलता और कॉपी रोकता नहीं। दिखने वाले नंबरों के लिए [PDF Page Numbers](/tools/page-numbers) उपयोग करें। संपादित फ़ाइल साझा करने से पहले [Remove PDF Metadata](/tools/remove-metadata) भी जांचें।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में मुफ्त लेबल जोड़ें, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "PDF पर समीक्षा लेबल कैसे जोड़ूं?",
+            "a": "Add Watermark खोलें, DRAFT या REVIEW जैसा छोटा लेबल लिखें, उसका रूप और पेज चुनें और नई कॉपी डाउनलोड करें। परिणाम देखें कि लेबल स्पष्ट है और जरूरी सामग्री को नहीं ढकता।"
+          },
+          {
+            "q": "क्या समीक्षा वॉटरमार्क बदलाव रोकता है?",
+            "a": "नहीं। यह स्थिति बताने वाला दृश्य लेबल है, पासवर्ड या डिजिटल हस्ताक्षर नहीं। दूसरी ऐप से फ़ाइल संपादित हो सकती है। बदलाव नियंत्रित करने या स्वीकृति प्रमाणित करने के लिए मूल रखें और एक्सेस नियंत्रण या डिजिटल हस्ताक्षर अपनाएं।"
+          },
+          {
+            "q": "क्या केवल कुछ पेजों पर लेबल लगा सकता हूं?",
+            "a": "हां। जिन पेजों या रेंज पर लेबल चाहिए, उन्हें चुनें और कवर, परिशिष्ट तथा हस्ताक्षर वाले पेज जांचें। पूरे दस्तावेज़ की स्थिति बतानी हो तो सुनिश्चित करें कि कोई पेज गलती से छूटा नहीं।"
+          },
+          {
+            "q": "क्या वॉटरमार्क हटाया जा सकता है?",
+            "a": "टूल टेक्स्ट को पेज पर बनाता है, अलग स्टिकर की तरह नहीं जिसे एक क्लिक में छिपाया जाए। फिर भी निशान बदलना असंभव नहीं। बिना लेबल वाला मूल रखें और अपनी प्रक्रिया के अनुसार चिह्नित कॉपी साझा करें।"
+          }
+        ],
+        "keywords": [
+          "pdf पर समीक्षा लेबल कैसे जोड़ें",
+          "PDF revision label",
+          "add draft watermark"
+        ],
+        "relatedTools": [
+          "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
@@ -33108,6 +33351,87 @@
           "remove-metadata",
           "pdf-reader",
           "organize-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "add-revision-label-to-pdf",
+        "slug": "add-revision-label-to-pdf",
+        "cluster": "editing-expansion",
+        "tool": "add-watermark",
+        "title": "كيفية إضافة علامة مراجعة إلى PDF",
+        "metaTitle": "كيفية إضافة علامة مراجعة إلى PDF",
+        "metaDescription": "ميّز PDF كمسودة أو قيد المراجعة أو نهائي بعلامة ظاهرة. مجاناً في المتصفح، بلا حساب أو علامة مائية. استخدمها مجاناً في المتصفح، بلا تسجيل أو رفع الملف.",
+        "answer": "لإضافة علامة مراجعة إلى PDF، أضف نصاً ظاهراً مثل مسودة أو قيد المراجعة أو نهائي، ثم تحقق من موضعه في كل صفحة. تكتب PrintxPDF النص على PDF داخل المتصفح. احتفظ بالأصل النظيف: فالعلامة توضح الحالة ولا تمنع التعديل أو تحمي الملف.",
+        "sections": [
+          {
+            "heading": "إضافة علامة مراجعة في أربع خطوات",
+            "paragraphs": [
+              "لإضافة علامة مراجعة إلى PDF، أضف نصاً ظاهراً مثل مسودة أو قيد المراجعة أو نهائي، ثم تحقق من موضعه في كل صفحة. تكتب PrintxPDF النص على PDF داخل المتصفح. احتفظ بالأصل النظيف: فالعلامة توضح الحالة ولا تمنع التعديل أو تحمي الملف."
+            ],
+            "steps": [
+              {
+                "heading": "احتفظ بالأصل",
+                "text": "احفظ نسخة بلا علامات قبل إضافة الملصق. بهذه الطريقة يمكنك إنشاء نسخة نظيفة لاحقاً دون إعادة بناء المستند."
+              },
+              {
+                "heading": "اختر تسمية واضحة",
+                "text": "استخدم حالة قصيرة مثل مسودة أو للمراجعة أو معتمد توضّح الاستخدام المقصود. لا تضع معلومات شخصية في علامة ستشاركها."
+              },
+              {
+                "heading": "افتح Add Watermark",
+                "text": "حمّل PDF في [Add Watermark](/tools/add-watermark)، واكتب العلامة واضبط الحجم واللون والشفافية والزاوية والصفحات بما يناسب التصميم."
+              },
+              {
+                "heading": "نزّل وراجع",
+                "text": "افتح الناتج وتأكد من وضوح العلامة دون تغطية المبالغ أو التوقيعات أو الملاحظات أو النص المهم. تحقق من وضعها على كل الصفحات المطلوبة."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي تعنيه علامة المراجعة",
+            "paragraphs": [
+              "تساعد العلامة الظاهرة على تمييز نسخ العمل وتقلل احتمال الخلط بين المسودة والنسخة المعتمدة. استخدم كلمات متوافقة مع إجراءات فريقك، ولا تزل العلامة إلا بعد اجتياز النسخة للمراجعة المطلوبة.",
+              "تُرسم العلامة المائية على الصفحات وتظهر عند فتح الملف أو طباعته. لكنها ليست وسيلة أمان؛ إذ يمكن لشخص تعديل الملف أو تغطية العلامة بأدوات أخرى. احتفظ بنسخة أصلية نظيفة ولا تستخدم العلامة لإخفاء معلومات سرية.",
+              "اضبط الشفافية والموقع بحيث تكون العلامة واضحة دون إعاقة القراءة. قد تناسب علامة كبيرة مائلة مسودة داخلية، أما الملاحظة الخفيفة فاختر لها حجماً أصغر ومساحة خالية. راجع الصفحات التي تحتوي جداول وتوقيعات.",
+              "تتم المعالجة في علامة تبويب المتصفح. لا تغيّر العلامة البيانات الوصفية ولا تمنع النسخ. لإضافة ترقيم ظاهر استخدم [PDF Page Numbers](/tools/page-numbers). وافحص البيانات الوصفية قبل مشاركة نسخة معدّلة باستخدام [Remove PDF Metadata](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "أضف علامة مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "كيف أضيف علامة مراجعة إلى PDF؟",
+            "a": "افتح Add Watermark واكتب علامة قصيرة مثل مسودة أو للمراجعة، واضبط شكلها وصفحاتها ثم نزّل نسخة. راجع الناتج للتأكد من وضوح العلامة وعدم تغطيتها محتوى مهماً."
+          },
+          {
+            "q": "هل تمنع علامة المراجعة تعديل المستند؟",
+            "a": "لا. إنها مؤشر مرئي للحالة وليست كلمة مرور أو توقيعاً رقمياً. يمكن تعديل الملف بأدوات أخرى. احتفظ بالأصل واستخدم صلاحيات الوصول أو توقيعاً رقمياً للتحكم بالتغييرات أو إثبات الاعتماد."
+          },
+          {
+            "q": "هل يمكن وضع العلامة على صفحات محددة فقط؟",
+            "a": "نعم. اختر الصفحات أو النطاقات المطلوبة، وراجع الغلاف والملاحق وصفحات التوقيع. إذا أردت توضيح الحالة في المستند كله، فتأكد من عدم ترك أي صفحة دون علامة سهواً."
+          },
+          {
+            "q": "هل يمكن إزالة العلامة المائية؟",
+            "a": "ترسم الأداة النص على الصفحة، لذا لا تعمل كملصق منفصل يمكن إخفاؤه بنقرة. ومع ذلك يمكن تعديل العلامة. احتفظ بالأصل النظيف ووزع النسخة الموسومة وفق إجراءاتك."
+          }
+        ],
+        "keywords": [
+          "كيفية إضافة علامة مراجعة إلى pdf",
+          "PDF revision label",
+          "add draft watermark"
+        ],
+        "relatedTools": [
+          "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
@@ -41402,6 +41726,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "add-revision-label-to-pdf",
+        "slug": "add-revision-label-to-pdf",
+        "cluster": "editing-expansion",
+        "tool": "add-watermark",
+        "title": "PDF-এ রিভিশন লেবেল কীভাবে যোগ করবেন",
+        "metaTitle": "PDF-এ রিভিশন লেবেল কীভাবে যোগ করবেন",
+        "metaDescription": "PDF-কে খসড়া, পর্যালোচনাধীন বা চূড়ান্ত বোঝাতে দৃশ্যমান লেবেল দিন। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "answer": "PDF-এ রিভিশন লেবেল যোগ করতে DRAFT, REVIEW বা FINAL-এর মতো দৃশ্যমান লেখা বসান এবং প্রতিটি পাতায় তার অবস্থান দেখুন। PrintxPDF ব্রাউজারেই PDF-এ লেখা বসায়। পরিষ্কার মূল কপি রাখুন: লেবেল অবস্থা জানায়, পরিবর্তন আটকায় বা ফাইল সুরক্ষিত করে না।",
+        "sections": [
+          {
+            "heading": "চার ধাপে রিভিশন চিহ্ন যোগ করুন",
+            "paragraphs": [
+              "PDF-এ রিভিশন লেবেল যোগ করতে DRAFT, REVIEW বা FINAL-এর মতো দৃশ্যমান লেখা বসান এবং প্রতিটি পাতায় তার অবস্থান দেখুন। PrintxPDF ব্রাউজারেই PDF-এ লেখা বসায়। পরিষ্কার মূল কপি রাখুন: লেবেল অবস্থা জানায়, পরিবর্তন আটকায় বা ফাইল সুরক্ষিত করে না।"
+            ],
+            "steps": [
+              {
+                "heading": "মূল কপি রাখুন",
+                "text": "লেবেল যোগ করার আগে চিহ্নহীন কপি সংরক্ষণ করুন। পরে নথি আবার তৈরি না করেই পরিষ্কার সংস্করণ পাবেন।"
+              },
+              {
+                "heading": "স্পষ্ট লেবেল বাছুন",
+                "text": "DRAFT, পর্যালোচনার জন্য বা অনুমোদিত—এমন সংক্ষিপ্ত অবস্থা দিন, যা ব্যবহারের উদ্দেশ্য বোঝায়। শেয়ার করা লেবেলে ব্যক্তিগত তথ্য লিখবেন না।"
+              },
+              {
+                "heading": "Add Watermark খুলুন",
+                "text": "PDF [Add Watermark](/tools/add-watermark)-এ দিন, লেবেল লিখুন এবং নকশা অনুযায়ী আকার, রং, স্বচ্ছতা, কোণ ও পৃষ্ঠা ঠিক করুন।"
+              },
+              {
+                "heading": "নামিয়ে পরীক্ষা করুন",
+                "text": "আউটপুট খুলে দেখুন লেবেল পড়া যাচ্ছে কি না এবং অঙ্ক, স্বাক্ষর, নোট বা জরুরি লেখা ঢেকে যাচ্ছে কি না। সব প্রয়োজনীয় পাতায় আছে নিশ্চিত করুন।"
+              }
+            ]
+          },
+          {
+            "heading": "রিভিশন লেবেলের অর্থ কী",
+            "paragraphs": [
+              "দৃশ্যমান লেবেল কাজের কপি চেনাতে সাহায্য করে এবং খসড়াকে অনুমোদিত সংস্করণ ভেবে নেওয়ার ঝুঁকি কমায়। দলের কাজের নিয়মের সঙ্গে মানানসই শব্দ ব্যবহার করুন এবং যথাযথ পর্যালোচনার পরেই লেবেল সরান।",
+              "ওয়াটারমার্ক পৃষ্ঠায় লেখা হয় এবং ফাইল খুললে বা ছাপলে দেখা যায়। এটি নিরাপত্তার চিহ্ন নয়: অন্য টুলে ফাইল বদলানো বা লেখা ঢেকে দেওয়া যায়। মূল কপি রাখুন এবং গোপন তথ্য লুকাতে ওয়াটারমার্ক ব্যবহার করবেন না।",
+              "স্বচ্ছতা ও অবস্থান এমন রাখুন যাতে চিহ্ন দেখা যায় কিন্তু পৃষ্ঠা পড়তে বাধা না হয়। বড় তির্যক লেবেল অভ্যন্তরীণ খসড়ার জন্য উপযোগী; ছোট নোটের জন্য ছোট আকার ও ফাঁকা জায়গা বেছে নিন। টেবিল ও স্বাক্ষরের পৃষ্ঠা দেখুন।",
+              "প্রক্রিয়াটি ব্রাউজার ট্যাবে হয়। লেবেল মেটাডেটা বদলায় না বা কপি আটকায় না। দৃশ্যমান নম্বর যোগ করতে [PDF Page Numbers](/tools/page-numbers) নিন। সম্পাদিত সংস্করণ শেয়ারের আগে [Remove PDF Metadata](/tools/remove-metadata) দিয়ে মেটাডেটাও পরীক্ষা করুন।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে লেবেল যোগ করুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "PDF-এ রিভিশন লেবেল কীভাবে যোগ করব?",
+            "a": "Add Watermark খুলে DRAFT বা REVIEW-এর মতো ছোট লেখা দিন, চেহারা ও পৃষ্ঠা ঠিক করে নতুন কপি নামান। দেখে নিন লেবেল স্পষ্ট এবং গুরুত্বপূর্ণ বিষয়বস্তু ঢেকে রাখেনি।"
+          },
+          {
+            "q": "রিভিশন ওয়াটারমার্ক কি নথির পরিবর্তন আটকায়?",
+            "a": "না। এটি দৃশ্যমান অবস্থা-চিহ্ন, পাসওয়ার্ড বা ডিজিটাল স্বাক্ষর নয়। অন্য টুলে ফাইল সম্পাদনা করা যায়। পরিবর্তন নিয়ন্ত্রণ বা অনুমোদন যাচাই করতে মূল কপি রাখুন এবং অ্যাক্সেস নিয়ন্ত্রণ বা ডিজিটাল স্বাক্ষর ব্যবহার করুন।"
+          },
+          {
+            "q": "কেবল কিছু পাতায় লেবেল দিতে পারি?",
+            "a": "হ্যাঁ। যেসব পৃষ্ঠা বা রেঞ্জে লেবেল দরকার তা বেছে নিন এবং কভার, সংযোজন ও স্বাক্ষরের পৃষ্ঠা দেখুন। পুরো নথির অবস্থা বোঝাতে চাইলে ভুলে কোনো পৃষ্ঠা বাদ পড়েনি নিশ্চিত করুন।"
+          },
+          {
+            "q": "ওয়াটারমার্ক কি সরানো যায়?",
+            "a": "টুলটি লেখাকে পৃষ্ঠায় বসায়, তাই এটি আলাদা স্টিকার নয় যা এক ক্লিকে লুকানো যায়। তবুও চিহ্ন বদলানো অসম্ভব নয়। পরিষ্কার মূল রাখুন এবং নিজের নিয়মে চিহ্নিত কপি বিতরণ করুন।"
+          }
+        ],
+        "keywords": [
+          "pdf-এ রিভিশন লেবেল কীভাবে যোগ করবেন",
+          "PDF revision label",
+          "add draft watermark"
+        ],
+        "relatedTools": [
+          "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -49670,6 +50075,87 @@
           "remove-metadata",
           "pdf-reader",
           "organize-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "add-revision-label-to-pdf",
+        "slug": "add-revision-label-to-pdf",
+        "cluster": "editing-expansion",
+        "tool": "add-watermark",
+        "title": "Cách thêm nhãn chỉnh sửa vào PDF",
+        "metaTitle": "Cách thêm nhãn chỉnh sửa vào PDF",
+        "metaDescription": "Đánh dấu PDF là bản nháp, đang rà soát hoặc bản cuối bằng nhãn dễ thấy. Miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "answer": "Để thêm nhãn chỉnh sửa vào PDF, chèn chữ dễ thấy như DRAFT, REVIEW hoặc FINAL rồi kiểm tra vị trí trên từng trang. PrintxPDF ghi chữ vào PDF ngay trong trình duyệt. Hãy giữ bản gốc sạch: nhãn cho biết trạng thái, không ngăn sửa đổi hay bảo vệ tệp.",
+        "sections": [
+          {
+            "heading": "Thêm nhãn rà soát qua bốn bước",
+            "paragraphs": [
+              "Để thêm nhãn chỉnh sửa vào PDF, chèn chữ dễ thấy như DRAFT, REVIEW hoặc FINAL rồi kiểm tra vị trí trên từng trang. PrintxPDF ghi chữ vào PDF ngay trong trình duyệt. Hãy giữ bản gốc sạch: nhãn cho biết trạng thái, không ngăn sửa đổi hay bảo vệ tệp."
+            ],
+            "steps": [
+              {
+                "heading": "Giữ bản gốc",
+                "text": "Lưu một bản chưa đánh dấu trước khi thêm nhãn. Bạn có thể tạo lại bản sạch sau này mà không phải dựng lại tài liệu."
+              },
+              {
+                "heading": "Chọn nhãn rõ ràng",
+                "text": "Dùng trạng thái ngắn như BẢN NHÁP, ĐANG RÀ SOÁT hoặc ĐÃ DUYỆT để nói rõ mục đích sử dụng. Đừng đưa thông tin cá nhân vào nhãn sẽ chia sẻ."
+              },
+              {
+                "heading": "Mở Add Watermark",
+                "text": "Tải PDF vào [Add Watermark](/tools/add-watermark), nhập nhãn rồi chỉnh cỡ, màu, độ trong suốt, góc xoay và trang theo bố cục."
+              },
+              {
+                "heading": "Tải xuống và kiểm tra",
+                "text": "Mở kết quả, xác nhận nhãn dễ đọc mà không che số tiền, chữ ký, ghi chú hoặc văn bản quan trọng. Đảm bảo mọi trang cần thiết đều được đánh dấu."
+              }
+            ]
+          },
+          {
+            "heading": "Ý nghĩa của nhãn rà soát",
+            "paragraphs": [
+              "Nhãn nhìn thấy giúp phân biệt bản làm việc và giảm nguy cơ nhầm bản nháp với bản đã duyệt. Dùng từ ngữ phù hợp quy trình nhóm và chỉ gỡ nhãn khi phiên bản đã qua bước rà soát tương ứng.",
+              "Watermark được vẽ lên trang và xuất hiện khi mở hoặc in tệp. Đây không phải nhãn bảo mật: người khác vẫn có thể sửa hoặc che nội dung bằng công cụ khác. Hãy giữ bản gốc sạch và đừng dùng watermark để giấu thông tin mật.",
+              "Chỉnh độ trong suốt và vị trí sao cho nhãn nhìn rõ nhưng không cản việc đọc. Chữ chéo lớn phù hợp bản nháp nội bộ; ghi chú kín đáo nên nhỏ hơn và đặt ở vùng trống. Kiểm tra trang có bảng và chữ ký.",
+              "Quá trình chạy trong tab trình duyệt. Nhãn không thay đổi siêu dữ liệu và không ngăn sao chép. Để thêm số trang nhìn thấy, dùng [PDF Page Numbers](/tools/page-numbers). Trước khi chia sẻ bản đã chỉnh sửa, kiểm tra siêu dữ liệu bằng [Remove PDF Metadata](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Thêm nhãn miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Làm sao thêm nhãn chỉnh sửa vào PDF?",
+            "a": "Mở Add Watermark, nhập nhãn ngắn như DRAFT hoặc REVIEW, chỉnh kiểu và trang rồi tải bản mới. Kiểm tra nhãn có dễ đọc và không che nội dung quan trọng không."
+          },
+          {
+            "q": "Watermark rà soát có ngăn sửa tài liệu không?",
+            "a": "Không. Đây là dấu trạng thái nhìn thấy, không phải mật khẩu hay chữ ký số. Tệp vẫn có thể được chỉnh bằng công cụ khác. Giữ bản gốc và dùng kiểm soát quyền truy cập hoặc chữ ký số khi cần kiểm soát thay đổi hay xác nhận phê duyệt."
+          },
+          {
+            "q": "Tôi có thể chỉ đánh dấu một số trang không?",
+            "a": "Có. Chọn trang hoặc khoảng trang cần nhãn rồi kiểm tra bìa, phụ lục và trang ký. Nếu muốn trạng thái rõ trên toàn bộ tài liệu, hãy xác nhận không bỏ sót trang nào."
+          },
+          {
+            "q": "Có thể gỡ watermark không?",
+            "a": "Công cụ vẽ chữ lên trang nên nó không phải nhãn dán riêng có thể ẩn bằng một cú nhấp. Tuy nhiên, watermark vẫn có thể bị chỉnh sửa. Giữ bản gốc sạch và phân phối bản đã đánh dấu theo quy trình của bạn."
+          }
+        ],
+        "keywords": [
+          "cách thêm nhãn chỉnh sửa vào pdf",
+          "PDF revision label",
+          "add draft watermark"
+        ],
+        "relatedTools": [
+          "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
@@ -57954,6 +58440,87 @@
           "remove-metadata",
           "pdf-reader",
           "organize-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "add-revision-label-to-pdf",
+        "slug": "add-revision-label-to-pdf",
+        "cluster": "editing-expansion",
+        "tool": "add-watermark",
+        "title": "如何为 PDF 添加修订标签",
+        "metaTitle": "如何为 PDF 添加修订标签",
+        "metaDescription": "用醒目的标记注明 PDF 是草稿、审核中还是最终版。浏览器内免费处理，无需账户，也没有水印。",
+        "answer": "要为 PDF 添加修订标签，可添加“草稿”“审核中”或“最终版”等可见文字，并检查它在每页的位置。PrintxPDF 会在浏览器中将文字写入 PDF。请保留干净的原件：标签只说明状态，不会阻止修改，也不提供文件保护。",
+        "sections": [
+          {
+            "heading": "四步添加修订标记",
+            "paragraphs": [
+              "要为 PDF 添加修订标签，可添加“草稿”“审核中”或“最终版”等可见文字，并检查它在每页的位置。PrintxPDF 会在浏览器中将文字写入 PDF。请保留干净的原件：标签只说明状态，不会阻止修改，也不提供文件保护。"
+            ],
+            "steps": [
+              {
+                "heading": "保留原件",
+                "text": "添加标签前保存一份未标记的副本。以后可以直接生成干净版本，无需重新制作文档。"
+              },
+              {
+                "heading": "选择清晰的标签",
+                "text": "使用“草稿”“待审核”或“已批准”等简短状态，说明允许的用途。不要在会分享的标签中写个人信息。"
+              },
+              {
+                "heading": "打开 Add Watermark",
+                "text": "在 [Add Watermark](/tools/add-watermark) 中加载 PDF，输入标签，并按版式调整字号、颜色、透明度、角度和页面范围。"
+              },
+              {
+                "heading": "下载并检查",
+                "text": "打开输出文件，确认标签清晰可见，同时没有遮住金额、签名、注释或重要文字。确认所有需要标记的页面都已处理。"
+              }
+            ]
+          },
+          {
+            "heading": "修订标签的含义",
+            "paragraphs": [
+              "可见标签有助于区分工作副本，降低草稿被误认为已批准版本的风险。请使用符合团队流程的词语，并在版本完成相应审核后再移除标签。",
+              "水印文字会绘制到页面上，打开或打印文件时都能看到。但它不是安全标记：别人仍可能用其他工具编辑文件或覆盖文字。请保留未标记原件，不要用水印来隐藏机密信息。",
+              "调整透明度和位置，让标签清楚但不妨碍阅读。大号斜体文字适合内部草稿；较小字号和空白区域适合低调提示。检查包含表格和签名的页面。",
+              "处理在浏览器标签页中进行。标签不会更改元数据，也不能阻止复制。若要添加可见页码，请用 [PDF Page Numbers](/tools/page-numbers)。分享修改后的版本前，也可用 [Remove PDF Metadata](/tools/remove-metadata) 检查元数据。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费添加标签，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "如何为 PDF 添加修订标签？",
+            "a": "打开 Add Watermark，输入“草稿”或“审核中”等简短标签，设置样式和页面范围，然后下载新副本。检查标签是否易读，以及是否遮住重要内容。"
+          },
+          {
+            "q": "修订水印能防止文档被修改吗？",
+            "a": "不能。它只是可见的状态提示，不是密码或数字签名。其他工具仍可修改文件。若要控制变更或验证批准，请保留原件并使用访问权限控制或数字签名。"
+          },
+          {
+            "q": "可以只给部分页面加标签吗？",
+            "a": "可以。选择需要标记的页面或范围，并检查封面、附件和签名页。如果要让整个文档的状态一目了然，请确认没有页面被意外漏掉。"
+          },
+          {
+            "q": "水印可以移除吗？",
+            "a": "工具会将文字绘制到页面上，因此它不像可一键隐藏的独立贴纸。不过，水印仍可能被修改。请保留干净原件，并按流程分发带标签副本。"
+          }
+        ],
+        "keywords": [
+          "如何为 pdf 添加修订标签",
+          "PDF revision label",
+          "add draft watermark"
+        ],
+        "relatedTools": [
+          "add-watermark",
+          "remove-metadata",
+          "merge-pdf",
+          "pdf-reader"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
