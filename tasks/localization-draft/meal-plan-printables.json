@@ -1,0 +1,1624 @@
+{
+  "topic": "meal-plan-printables",
+  "sourceCluster": "recipes",
+  "tool": "merge-pdf",
+  "languages": {
+    "es": {
+      "title": "Cómo crear un menú semanal y una lista de compras para imprimir",
+      "metaTitle": "Crea un menú semanal imprimible",
+      "metaDescription": "Diseña un menú y una lista de compras en una página: plantilla para la nevera, lista por pasillo y recetas en un solo PDF semanal.",
+      "keyword": "menú semanal imprimible",
+      "secondaryKeywords": [
+        "plantilla de menú para imprimir",
+        "lista de compras imprimible",
+        "planificador semanal PDF",
+        "combinar recetas en un PDF",
+        "plan de comidas imprimible"
+      ],
+      "answer": "Crea un menú de una página con siete columnas, una por día, y filas para las comidas que realmente planificas. Pon al reverso una lista de compras agrupada por pasillo y combina las recetas de la semana en un PDF detrás del menú. Imprime una copia para la nevera y otra para llevar a la tienda.",
+      "ctaLabel": "Combinar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Un menú en el teléfono se consulta en el supermercado y se olvida en la cocina. Uno pegado en la nevera lo ve toda la casa, incluso quien iba a preguntar qué hay para cenar. Esa es la ventaja de imprimirlo."
+        },
+        {
+          "t": "h2",
+          "x": "Qué debe incluir la página del menú"
+        },
+        {
+          "t": "p",
+          "x": "Usa una página horizontal con siete columnas, de lunes a domingo. Añade filas solo para las comidas que planificas de verdad; muchos hogares solo organizan las cenas. Una plantilla con tres comidas diarias puede dejar catorce casillas vacías y hacer que el plan parezca un fracaso."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Fila",
+            "Para qué sirve",
+            "Altura sugerida"
+          ],
+          "rows": [
+            [
+              "Encabezado del día",
+              "Lunes a domingo y la fecha",
+              "Estrecha"
+            ],
+            [
+              "Cena",
+              "La comida que sí vas a preparar",
+              "Alta, dos líneas para escribir"
+            ],
+            [
+              "Almuerzo o sobras",
+              "A menudo basta una flecha desde la noche anterior",
+              "Baja"
+            ],
+            [
+              "Preparación previa",
+              "Descongelar, remojar, marinar o sacar del congelador",
+              "Baja"
+            ],
+            [
+              "Notas",
+              "Quién sale, quién cocina y qué hay que aprovechar",
+              "Baja"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "La fila de preparación previa es especialmente útil. Muchas cenas salen mal porque algo tenía que descongelarse por la mañana. Anotarlo en un lugar que ves durante el desayuno evita esa sorpresa."
+        },
+        {
+          "t": "h2",
+          "x": "Crea la plantilla una sola vez"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Haz una tabla en una hoja de cálculo",
+              "x": "Google Sheets o Excel es más práctico que un procesador de texto. Crea siete columnas, cinco filas y una fila de título con espacio para la fecha de inicio de la semana."
+            },
+            {
+              "h": "Configura horizontal y ajusta a una página",
+              "x": "En Sheets: Archivo → Imprimir → Horizontal y escala “Ajustar al ancho”. En Excel: Diseño de página → Orientación → Horizontal y “Ajustar hoja en una página”."
+            },
+            {
+              "h": "Deja espacio para escribir",
+              "x": "Una casilla de cena necesita unos 2 cm de alto. Si no caben el nombre del plato y una nota con un bolígrafo normal, no usarás la plantilla."
+            },
+            {
+              "h": "Guarda como PDF",
+              "x": "Exporta como `menu-semanal.pdf` en vez de imprimir directamente. Así puedes volver a imprimir cualquier semana sin rehacer el diseño."
+            },
+            {
+              "h": "Pon la lista de compras al reverso",
+              "x": "Añádela como segunda página del mismo PDF e imprime a doble cara. Una hoja lleva las dos partes del trabajo."
+            },
+            {
+              "h": "Imprime dos copias",
+              "x": "Una va a la nevera y sirve de referencia; la otra va en el bolsillo para la tienda, donde puedes tachar artículos y luego desecharla."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "Convierte una plantilla o lista creada en el navegador en un PDF listo para imprimir."
+        },
+        {
+          "t": "h2",
+          "x": "Agrupa la lista de compras por pasillo"
+        },
+        {
+          "t": "p",
+          "x": "Una lista en el orden en que recordaste cada cosa te hace cruzar la tienda varias veces. Agruparla por zonas puede acortar el recorrido. Usa los mismos encabezados cada semana:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Frutas y verduras, normalmente al principio y con muchos artículos.",
+            "Carne, pescado y refrigerados, incluidos lácteos y huevos.",
+            "Panadería.",
+            "Despensa: latas, productos secos, aceite, especias, pasta y arroz.",
+            "Congelados, al final para que no se descongelen en el carrito.",
+            "Hogar y otros artículos que no son comida.",
+            "Ya tengo: una columna para revisar antes de salir y evitar comprar el cuarto frasco de comino."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Deja cuatro líneas vacías bajo cada encabezado. Si no hay sitio para añadir algo que alguien recuerda, abandonará la lista."
+        },
+        {
+          "t": "h2",
+          "x": "Combina las recetas de la semana en un PDF"
+        },
+        {
+          "t": "p",
+          "x": "El menú indica qué vas a cocinar; las recetas explican cómo. Tenerlas juntas en un archivo permite imprimirlas de una vez y evita tener que buscar instrucciones a mitad de semana."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Limpia cada receta",
+              "x": "Pásala por el [impresor de páginas web](/print), elimina la historia y las fotos y descarga el resultado como PDF. Consulta [cómo imprimir una receta sin anuncios](/blog/recipes/print-recipe-without-ads)."
+            },
+            {
+              "h": "Nombra los archivos por día",
+              "x": "Usa nombres como `lun-pollo-orzo.pdf` y `mar-dal.pdf`. El orden de los nombres define el orden de combinación, así que dedica un momento a hacerlo bien."
+            },
+            {
+              "h": "Combina los archivos detrás del menú",
+              "x": "Abre [Combinar PDF](/tools/merge-pdf), añade primero el menú y luego las recetas en orden. Descarga el archivo combinado."
+            },
+            {
+              "h": "Añade números de página",
+              "x": "Pasa el PDF combinado por [Numerar páginas](/tools/page-numbers) para poder recomponer el paquete si se cae."
+            },
+            {
+              "h": "Imprime el paquete",
+              "x": "Imprime el menú y la lista a doble cara. Imprime las recetas a una cara para poder sacarlas y apoyarlas mientras cocinas."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Guarda una temporada de menús, no solo esta semana"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Estrategia",
+            "Qué guardas",
+            "Por qué ayuda"
+          ],
+          "rows": [
+            [
+              "Un archivo por semana",
+              "Menú, lista y recetas usadas",
+              "Puedes repetir una semana que salió bien"
+            ],
+            [
+              "Rotación de cuatro semanas",
+              "Cuatro paquetes completos",
+              "Evita decidir el menú durante un mes"
+            ],
+            [
+              "Carpeta por temporada",
+              "Unos doce paquetes, por mes",
+              "Se adapta a lo que está disponible y económico"
+            ],
+            [
+              "Archivo anual combinado",
+              "Todo en un PDF",
+              "Se puede buscar y respaldar fácilmente"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Las semanas que funcionan son lo más valioso que produces. En la copia de la nevera anota qué se comieron y qué no, y conserva los menús que gustaron. Al cabo de unos meses elegirás un plan ya probado en vez de empezar desde cero."
+        },
+        {
+          "t": "note",
+          "x": "Imprime el menú el domingo por la mañana, no por la noche. Si descubres el domingo que algo necesita descongelarse, ya es un problema del lunes."
+        },
+        {
+          "t": "p",
+          "x": "Si el menú y las recetas superan una docena de páginas, [comprime el PDF](/blog/compress/how-to-compress-a-pdf) antes de enviarlo a quien también cocina. Guarda la copia impresa en tu [recetario](/blog/recipes/make-a-recipe-binder) para repetirla con facilidad."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Qué debe llevar un menú semanal imprimible?",
+          "a": "Siete columnas, una por día, y filas para las comidas que realmente planificas. Añade una fila de preparación previa para descongelar o remojar y otra de notas para indicar quién cocina o sale. Mantén el diseño en una página horizontal para la nevera."
+        },
+        {
+          "q": "¿Cómo combino varias recetas en un PDF?",
+          "a": "Limpia cada receta y guárdala como PDF independiente. Pon el día en el nombre para ordenar los archivos y luego únelos con una herramienta de combinar PDF. Añade números de página después para recomponer el paquete si se cae."
+        },
+        {
+          "q": "¿Cómo organizo una lista de compras impresa?",
+          "a": "Agrupa los artículos por zona de la tienda, como frutas, refrigerados, panadería, despensa, congelados y hogar, en vez de ordenarlos por receta. Deja los congelados para el final y algunas líneas libres para añadidos."
+        },
+        {
+          "q": "¿Debo imprimir una o dos copias del menú?",
+          "a": "Dos: una queda en la nevera como referencia y otra va a la tienda para tachar las compras. Imprimir ambas juntas lleva prácticamente el mismo tiempo que imprimir una."
+        },
+        {
+          "q": "¿Cómo hago que el plan semanal quepa en una página?",
+          "a": "Pon la hoja de cálculo en orientación horizontal y ajústala a una página. Incluye solo las comidas que planificas. Deja unos 2 cm de alto para cada cena, de modo que puedas escribir el plato y una nota."
+        }
+      ]
+    },
+    "pt-BR": {
+      "title": "Como fazer um cardápio semanal e lista de compras para imprimir",
+      "metaTitle": "Crie um cardápio semanal imprimível",
+      "metaDescription": "Monte cardápio e lista de compras em uma página: modelo para a geladeira, lista por corredor e receitas em um único PDF semanal.",
+      "keyword": "cardápio semanal imprimível",
+      "secondaryKeywords": [
+        "modelo de cardápio para imprimir",
+        "lista de compras imprimível",
+        "planejador semanal PDF",
+        "juntar receitas em um PDF",
+        "planejamento de refeições imprimível"
+      ],
+      "answer": "Monte um planejamento de uma página com sete colunas, uma por dia, e linhas apenas para as refeições que você realmente planeja. Coloque no verso uma lista de compras agrupada por corredor e junte as receitas da semana em um PDF depois do planejamento. Imprima uma cópia para a geladeira e outra para levar às compras.",
+      "ctaLabel": "Juntar PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Um cardápio no celular é consultado no mercado e esquecido na cozinha. Um papel na porta da geladeira é visto por todos da casa, inclusive por quem ia perguntar o que haverá no jantar. Essa é a vantagem de imprimir."
+        },
+        {
+          "t": "h2",
+          "x": "O que a página precisa ter"
+        },
+        {
+          "t": "p",
+          "x": "Use uma página na horizontal com sete colunas, de segunda a domingo. Acrescente linhas só para as refeições que você de fato planeja; muitos lares planejam apenas o jantar. Um modelo com três refeições por dia pode deixar catorze espaços vazios e dar sensação de fracasso."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Linha",
+            "Função",
+            "Altura sugerida"
+          ],
+          "rows": [
+            [
+              "Cabeçalho do dia",
+              "Segunda a domingo e data",
+              "Estreita"
+            ],
+            [
+              "Jantar",
+              "A refeição que você vai preparar",
+              "Alta, duas linhas para escrever"
+            ],
+            [
+              "Almoço ou sobras",
+              "Às vezes só uma seta da noite anterior",
+              "Baixa"
+            ],
+            [
+              "Preparar antes",
+              "Descongelar, deixar de molho, marinar ou tirar do freezer",
+              "Baixa"
+            ],
+            [
+              "Observações",
+              "Quem sai, quem cozinha e o que precisa ser usado",
+              "Baixa"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "A linha de preparo antecipado vale o espaço. Muitos jantares de dia útil dão errado porque algo precisava descongelar pela manhã. Anotar isso num lugar visto durante o café evita a surpresa."
+        },
+        {
+          "t": "h2",
+          "x": "Crie o modelo uma vez"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Monte uma tabela em uma planilha",
+              "x": "Google Sheets ou Excel é mais prático que um editor de texto. Faça sete colunas, cinco linhas e uma linha de título com espaço para a data de início da semana."
+            },
+            {
+              "h": "Configure paisagem e ajuste a uma página",
+              "x": "No Sheets: Arquivo → Imprimir → Paisagem, depois Escala “Ajustar à largura”. No Excel: Layout da Página → Orientação → Paisagem e “Ajustar planilha em uma página”."
+            },
+            {
+              "h": "Deixe espaço para escrever",
+              "x": "Uma célula de jantar precisa de cerca de 2 cm de altura. Se não couber o nome do prato e uma observação com uma caneta comum, o modelo não será usado."
+            },
+            {
+              "h": "Exporte como PDF",
+              "x": "Salve como `cardapio-semanal.pdf` em vez de imprimir direto. Assim você pode imprimir em qualquer semana sem refazer o layout."
+            },
+            {
+              "h": "Coloque a lista de compras no verso",
+              "x": "Faça dela a segunda página do mesmo PDF e imprima frente e verso. Uma folha sai de casa com as duas partes do trabalho."
+            },
+            {
+              "h": "Imprima duas cópias",
+              "x": "Uma fica na geladeira como referência; a outra vai no bolso para o mercado, é marcada e depois descartada."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "Transforme um planejamento ou lista feito no navegador em PDF pronto para imprimir."
+        },
+        {
+          "t": "h2",
+          "x": "Agrupe a lista de compras por corredor"
+        },
+        {
+          "t": "p",
+          "x": "Uma lista na ordem em que você lembrou dos itens faz você atravessar a loja várias vezes. Agrupar por área pode encurtar o percurso. Use os mesmos títulos toda semana:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Frutas e verduras, geralmente no início e com muitos itens.",
+            "Carnes, peixes e refrigerados, incluindo laticínios e ovos.",
+            "Padaria.",
+            "Despensa: enlatados, secos, óleo, temperos, massas e arroz.",
+            "Congelados, por último para não descongelarem no carrinho.",
+            "Casa e outros itens que não são comida.",
+            "Já tenho: uma coluna para conferir antes de sair e evitar comprar o quarto pote de cominho."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Deixe quatro linhas em branco sob cada título. Sem espaço para acrescentar algo que alguém lembrou, a lista acaba abandonada."
+        },
+        {
+          "t": "h2",
+          "x": "Junte as receitas da semana em um PDF"
+        },
+        {
+          "t": "p",
+          "x": "O planejamento diz o que cozinhar. As receitas dizem como. Mantê-las juntas em um arquivo permite uma impressão só e evita buscar instruções no meio da semana."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Limpe cada receita",
+              "x": "Passe pelo [impressor de páginas da web](/print), remova história e fotos e baixe como PDF. Veja [como imprimir receita sem anúncios](/blog/recipes/print-recipe-without-ads)."
+            },
+            {
+              "h": "Nomeie os arquivos por dia",
+              "x": "Use `seg-frango-orzo.pdf`, `ter-dal.pdf` e assim por diante. Os nomes definem a ordem da junção."
+            },
+            {
+              "h": "Junte os arquivos depois do planejamento",
+              "x": "Abra [Juntar PDF](/tools/merge-pdf), adicione o planejamento primeiro e depois as receitas na ordem. Baixe o arquivo combinado."
+            },
+            {
+              "h": "Adicione números de página",
+              "x": "Use [Numeração de páginas](/tools/page-numbers) no arquivo combinado para remontar o pacote se ele cair."
+            },
+            {
+              "h": "Imprima o pacote",
+              "x": "Imprima planejamento e lista frente e verso. As receitas devem ser de um lado só para poder retirar e apoiar enquanto cozinha."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Guarde uma temporada de planos, não só esta semana"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Estratégia",
+            "O que guardar",
+            "Por que ajuda"
+          ],
+          "rows": [
+            [
+              "Um arquivo por semana",
+              "Planejamento, lista e receitas usadas",
+              "Repita uma semana que funcionou"
+            ],
+            [
+              "Rotação de quatro semanas",
+              "Quatro pacotes completos",
+              "Elimina a decisão por um mês"
+            ],
+            [
+              "Pasta por estação",
+              "Cerca de doze pacotes por mês",
+              "Acompanha o que está barato e disponível"
+            ],
+            [
+              "Arquivo anual combinado",
+              "Tudo em um PDF",
+              "Pesquisável e fácil de fazer backup"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "As semanas que deram certo são o resultado mais valioso. Anote na cópia da geladeira o que foi consumido e o que sobrou, e guarde os planos aprovados. Depois de alguns meses, você escolhe um plano testado em vez de começar do zero."
+        },
+        {
+          "t": "note",
+          "x": "Imprima o planejamento no domingo de manhã, não à noite. Se algo precisar descongelar e você só notar no domingo à noite, já virou um problema de segunda-feira."
+        },
+        {
+          "t": "p",
+          "x": "Se o planejamento e as receitas passarem de doze páginas, [comprima o PDF](/blog/compress/how-to-compress-a-pdf) antes de enviar para quem também cozinha. Guarde a cópia impressa no [fichário de receitas](/blog/recipes/make-a-recipe-binder) para repetir com facilidade."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "O que deve ter um planejamento semanal de refeições imprimível?",
+          "a": "Sete colunas, uma por dia, e linhas apenas para as refeições planejadas. Inclua uma linha de preparo antecipado para descongelar ou deixar de molho e outra de observações sobre quem sai ou cozinha. Deixe tudo em uma página horizontal para a geladeira."
+        },
+        {
+          "q": "Como juntar várias receitas em um PDF?",
+          "a": "Limpe cada receita e salve em um PDF separado. Coloque o dia no nome para ordenar os arquivos e depois junte-os em uma ferramenta de PDF. Adicione números de página para remontar o pacote se cair."
+        },
+        {
+          "q": "Como organizar uma lista de compras impressa?",
+          "a": "Agrupe itens por área da loja: hortifruti, refrigerados, padaria, despensa, congelados e casa, em vez de por receita. Deixe congelados por último e linhas livres para acréscimos."
+        },
+        {
+          "q": "Devo imprimir uma ou duas cópias do cardápio?",
+          "a": "Duas: uma fica na geladeira como referência e outra vai ao mercado para marcar os itens. Imprimir ambas leva praticamente o mesmo tempo que imprimir uma."
+        },
+        {
+          "q": "Como fazer o planejador semanal caber em uma página?",
+          "a": "Configure a planilha em paisagem e ajuste para uma página. Inclua apenas refeições que você realmente planeja e deixe cerca de 2 cm para cada jantar, para caber o nome e uma observação."
+        }
+      ]
+    },
+    "hi": {
+      "title": "प्रिंट करने योग्य साप्ताहिक भोजन योजना और खरीदारी सूची कैसे बनाएँ",
+      "metaTitle": "प्रिंटेड साप्ताहिक भोजन योजना बनाएँ",
+      "metaDescription": "एक पेज पर भोजन योजना और खरीदारी सूची बनाएँ: फ्रिज के लिए टेम्पलेट, दुकान के हिस्सों के अनुसार सूची और साप्ताहिक रेसिपी PDF।",
+      "keyword": "प्रिंट करने योग्य साप्ताहिक भोजन योजना",
+      "secondaryKeywords": [
+        "प्रिंट भोजन योजना टेम्पलेट",
+        "प्रिंट खरीदारी सूची",
+        "साप्ताहिक भोजन प्लानर PDF",
+        "रेसिपी को एक PDF में जोड़ें",
+        "प्रिंटेड मील प्रेप"
+      ],
+      "answer": "एक पेज पर सात दिन के कॉलम और केवल उन भोजन की पंक्तियों वाला प्लान बनाएँ जिन्हें आप सच में तय करते हैं। पीछे दुकान के हिस्सों के अनुसार खरीदारी सूची रखें और सप्ताह की रेसिपी उसी PDF में जोड़ें। फ्रिज के लिए एक प्रति और खरीदारी के लिए दूसरी प्रिंट करें।",
+      "ctaLabel": "PDF मर्ज करें",
+      "body": [
+        {
+          "t": "p",
+          "x": "फोन में भोजन योजना सुपरमार्केट में देखी जाती है और रसोई में भूल जाती है। फ्रिज पर लगी योजना घर के सभी लोग देखते हैं, उस व्यक्ति समेत जो पूछने वाला था कि रात के खाने में क्या है। यही इसे प्रिंट करने का कारण है।"
+        },
+        {
+          "t": "h2",
+          "x": "पेज में क्या होना चाहिए"
+        },
+        {
+          "t": "p",
+          "x": "एक लैंडस्केप पेज पर सोमवार से रविवार तक सात कॉलम रखें। केवल उन्हीं भोजन की पंक्तियाँ जोड़ें जिन्हें आप सच में प्लान करते हैं; कई घर सिर्फ रात के खाने की योजना बनाते हैं। दिन में तीन भोजन वाला टेम्पलेट चौदह खाली खाने छोड़ सकता है और योजना को असफल जैसा महसूस करा सकता है।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "पंक्ति",
+            "काम",
+            "सुझाई ऊँचाई"
+          ],
+          "rows": [
+            [
+              "दिन का शीर्षक",
+              "सोमवार से रविवार और तारीख",
+              "पतली"
+            ],
+            [
+              "रात का खाना",
+              "वह भोजन जिसे आप सच में बनाएँगे",
+              "ऊँची, लिखने के लिए दो लाइन"
+            ],
+            [
+              "दोपहर या बचा खाना",
+              "अक्सर पिछली रात से एक तीर काफी है",
+              "छोटी"
+            ],
+            [
+              "पहले से तैयारी",
+              "डीफ़्रॉस्ट, भिगोना, मैरिनेट या फ्रीज़र से निकालना",
+              "छोटी"
+            ],
+            [
+              "नोट",
+              "कौन बाहर है, कौन पकाएगा, क्या इस्तेमाल करना है",
+              "छोटी"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "पहले से तैयारी वाली पंक्ति बहुत काम की है। कई सप्ताह की रातों का खाना इसलिए बिगड़ता है कि सुबह कुछ डीफ़्रॉस्ट करना था। नाश्ते के समय दिखने वाली पंक्ति में लिखने से यह भूल नहीं होती।"
+        },
+        {
+          "t": "h2",
+          "x": "टेम्पलेट एक बार बनाएँ"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "स्प्रेडशीट में तालिका बनाएँ",
+              "x": "Google Sheets या Excel, वर्ड प्रोसेसर से आसान है। सात कॉलम, पाँच पंक्तियाँ और सप्ताह की शुरुआत की तारीख के लिए शीर्षक पंक्ति रखें।"
+            },
+            {
+              "h": "लैंडस्केप करें और एक पेज में फिट करें",
+              "x": "Sheets में File → Print → Landscape चुनें और Scale को “Fit to width” करें। Excel में Page Layout → Orientation → Landscape और “Fit Sheet on One Page” चुनें।"
+            },
+            {
+              "h": "लिखने के लिए जगह रखें",
+              "x": "डिनर वाले खाने की ऊँचाई लगभग 2 सेमी रखें। सामान्य पेन से पकवान का नाम और नोट न लिख पाएँ तो टेम्पलेट काम नहीं आएगा।"
+            },
+            {
+              "h": "सीधे प्रिंट करने के बजाय PDF बनाएं",
+              "x": "इसे `weekly-meal-plan.pdf` नाम से सेव करें। फिर हर सप्ताह लेआउट बदले बिना प्रिंट कर सकते हैं।"
+            },
+            {
+              "h": "खरीदारी सूची पीछे रखें",
+              "x": "उसे उसी PDF का दूसरा पेज बनाएँ और दोनों तरफ प्रिंट करें। एक शीट घर से निकलेगी और काम के दोनों हिस्से होंगे।"
+            },
+            {
+              "h": "दो प्रतियाँ प्रिंट करें",
+              "x": "एक फ्रिज पर संदर्भ के लिए रखें। दूसरी जेब में रखकर दुकान ले जाएँ, चीजें काटें और बाद में फेंक दें।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "ब्राउज़र में बनाई योजना या सूची को साफ प्रिंटेड PDF में बदलें।"
+        },
+        {
+          "t": "h2",
+          "x": "खरीदारी सूची को दुकान के हिस्सों में बाँटें"
+        },
+        {
+          "t": "p",
+          "x": "जिस क्रम में चीजें याद आईं उसी क्रम की सूची आपको दुकान में बार-बार आगे-पीछे भेजती है। दुकान के हिस्सों में बाँटने से रास्ता छोटा हो सकता है। हर सप्ताह समान शीर्षक रखें:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "फल और सब्जियाँ, आम तौर पर पहला हिस्सा और अधिक सामान वाला।",
+            "मांस, मछली और ठंडा सामान, जिसमें दूध-दही और अंडे आते हैं।",
+            "बेकरी।",
+            "पेंट्री: डिब्बे, सूखा सामान, तेल, मसाले, पास्ता और चावल।",
+            "फ्रोजन सामान सबसे अंत में ताकि ट्रॉली में पिघले नहीं।",
+            "घर और अन्य गैर-खाद्य चीजें।",
+            "पहले से है: निकलने से पहले जाँचें और जीरे का चौथा डिब्बा खरीदने से बचें।"
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "हर शीर्षक के नीचे चार खाली लाइनें रखें। कोई चीज याद आने पर लिखने की जगह न हो तो सूची छोड़ दी जाएगी।"
+        },
+        {
+          "t": "h2",
+          "x": "सप्ताह की रेसिपी एक PDF में जोड़ें"
+        },
+        {
+          "t": "p",
+          "x": "योजना बताती है कि क्या पकाना है; रेसिपी बताती है कैसे। उन्हें एक फाइल में रखने से एक बार प्रिंट करना पड़ता है और सप्ताह के बीच निर्देश खोजने नहीं पड़ते।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "हर रेसिपी साफ करें",
+              "x": "[वेब पेज प्रिंटर](/print) से कहानी और तस्वीरें हटाकर PDF डाउनलोड करें। तरीका [बिना विज्ञापन रेसिपी प्रिंट करने](/blog/recipes/print-recipe-without-ads) में है।"
+            },
+            {
+              "h": "फाइल का नाम दिन के अनुसार रखें",
+              "x": "`mon-chicken-orzo.pdf`, `tue-dal.pdf` जैसे नाम दें। नाम अगले चरण में क्रम तय करते हैं।"
+            },
+            {
+              "h": "योजना के बाद रेसिपी जोड़ें",
+              "x": "[PDF मर्ज करें](/tools/merge-pdf) खोलें, पहले योजना और फिर रेसिपी सही क्रम में जोड़ें और संयुक्त फाइल डाउनलोड करें।"
+            },
+            {
+              "h": "पेज नंबर लगाएँ",
+              "x": "गिरी हुई शीट फिर सही क्रम में रखने के लिए [पेज नंबर](/tools/page-numbers) टूल चलाएँ।"
+            },
+            {
+              "h": "पूरा पैक प्रिंट करें",
+              "x": "योजना और सूची दोनों तरफ प्रिंट करें। रेसिपी एक तरफ छापें ताकि पकाते समय निकालकर सामने रख सकें।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "सिर्फ इस हफ्ते नहीं, पूरे मौसम की योजना रखें"
+        },
+        {
+          "t": "table",
+          "head": [
+            "तरीका",
+            "क्या रखा जाता है",
+            "क्यों मदद करता है"
+          ],
+          "rows": [
+            [
+              "हर सप्ताह एक फ़ाइल",
+              "योजना, सूची और बनी रेसिपी",
+              "अच्छा चला सप्ताह फिर दोहरा सकते हैं"
+            ],
+            [
+              "चार सप्ताह का क्रम",
+              "चार पूरे पैक",
+              "एक महीने तक योजना का फैसला नहीं करना"
+            ],
+            [
+              "मौसम का फ़ोल्डर",
+              "हर महीने के लगभग बारह पैक",
+              "सस्ता और उपलब्ध सामान मिलता है"
+            ],
+            [
+              "साल का संयुक्त संग्रह",
+              "सब कुछ एक PDF में",
+              "खोजने और बैकअप में आसान"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "जो सप्ताह अच्छे चले वही सबसे मूल्यवान हैं। फ्रिज वाली प्रति पर लिखें कि क्या खाया गया और क्या नहीं, फिर सफल योजना रखें। कुछ महीनों बाद आप नया लिखने के बजाय आज़माया हुआ प्लान चुनेंगे; समय की असली बचत वहीं से आती है।"
+        },
+        {
+          "t": "note",
+          "x": "योजना रविवार सुबह प्रिंट करें, रात को नहीं। रविवार रात पता चले कि कुछ डीफ़्रॉस्ट करना था तो अब वह सोमवार की समस्या है।"
+        },
+        {
+          "t": "p",
+          "x": "यदि योजना और रेसिपी पैक बारह पेज से बड़े हों, तो दूसरे रसोइए को ईमेल करने से पहले [PDF कंप्रेस करें](/blog/compress/how-to-compress-a-pdf)। छपी प्रति [रेसिपी बाइंडर](/blog/recipes/make-a-recipe-binder) में रखें ताकि दोहरा सकें।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "प्रिंटेड साप्ताहिक भोजन योजना में क्या होना चाहिए?",
+          "a": "सात दिन के कॉलम और उन्हीं भोजन की पंक्तियाँ जिन्हें आप प्लान करते हैं। डीफ़्रॉस्ट या भिगोने के लिए तैयारी की पंक्ति और कौन बाहर या खाना बना रहा है उसके लिए नोट रखें। फ्रिज के लिए इसे एक लैंडस्केप पेज पर रखें।"
+        },
+        {
+          "q": "कई रेसिपी को एक PDF में कैसे जोड़ें?",
+          "a": "हर साफ रेसिपी अलग PDF में सेव करें, दिन के अनुसार नाम दें और फिर ब्राउज़र टूल से क्रम में जोड़ें। बाद में पेज नंबर लगाएँ ताकि गिरने पर शीट फिर जोड़ सकें।"
+        },
+        {
+          "q": "प्रिंटेड खरीदारी सूची को कैसे व्यवस्थित करें?",
+          "a": "रेसिपी के बजाय दुकान के हिस्सों के अनुसार फल-सब्जी, ठंडा सामान, बेकरी, पेंट्री, फ्रोजन और घरेलू सामान बाँटें। फ्रोजन अंत में रखें और कुछ खाली लाइनें छोड़ें।"
+        },
+        {
+          "q": "एक या दो प्रतियाँ प्रिंट करूँ?",
+          "a": "दो: एक फ्रिज पर सप्ताह भर रहे और दूसरी खरीदारी पर जाए, जहाँ सामान काटकर बाद में फेंक दें। दोनों साथ प्रिंट करना एक जितना ही आसान है।"
+        },
+        {
+          "q": "साप्ताहिक प्लान एक पेज में कैसे फिट करें?",
+          "a": "स्प्रेडशीट लैंडस्केप करके एक पेज में फिट करें और केवल तय किए हुए भोजन रखें। रात के खाने के खाने में लगभग 2 सेमी ऊँचाई हो ताकि नाम और नोट लिख सकें।"
+        }
+      ]
+    },
+    "ar": {
+      "title": "كيفية إعداد خطة وجبات أسبوعية وقائمة تسوق للطباعة",
+      "metaTitle": "أنشئ خطة وجبات أسبوعية قابلة للطباعة",
+      "metaDescription": "أنشئ خطة وقائمة تسوق في صفحة واحدة: قالب للثلاجة وقائمة حسب ممرات المتجر ووصفات الأسبوع في ملف PDF واحد.",
+      "keyword": "خطة وجبات أسبوعية للطباعة",
+      "secondaryKeywords": [
+        "قالب خطة وجبات للطباعة",
+        "قائمة تسوق قابلة للطباعة",
+        "مخطط وجبات أسبوعي PDF",
+        "دمج الوصفات في PDF",
+        "قالب إعداد وجبات"
+      ],
+      "answer": "أنشئ خطة من صفحة واحدة بسبعة أعمدة للأيام وصفوف للوجبات التي تخطط لها فعلًا. ضع قائمة تسوق مصنفة حسب أقسام المتجر على الوجه الآخر، واجمع وصفات الأسبوع في ملف PDF واحد خلف الخطة. اطبع نسخة للثلاجة وأخرى لتأخذها إلى المتجر.",
+      "ctaLabel": "دمج PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "تُراجع خطة الهاتف في المتجر وتُنسى في المطبخ. أما الخطة المثبتة على الثلاجة فيراها الجميع، حتى الشخص الذي كان سيسأل عمّا سنتناوله للعشاء. هذه هي فائدة طباعتها."
+        },
+        {
+          "t": "h2",
+          "x": "ما الذي تحتاجه صفحة الخطة؟"
+        },
+        {
+          "t": "p",
+          "x": "استخدم صفحة واحدة بالاتجاه الأفقي وسبعة أعمدة من الاثنين إلى الأحد. أضف صفوفًا للوجبات التي تخطط لها فعلًا فقط؛ فكثير من الأسر تخطط للعشاء وحده. قالب بثلاث وجبات يوميًا قد يترك أربعة عشر مربعًا فارغًا ويجعلك تشعر بأنك أخفقت."
+        },
+        {
+          "t": "table",
+          "head": [
+            "الصف",
+            "الغرض",
+            "الارتفاع"
+          ],
+          "rows": [
+            [
+              "عنوان اليوم",
+              "من الاثنين إلى الأحد مع التاريخ",
+              "ضيق"
+            ],
+            [
+              "العشاء",
+              "الوجبة التي ستُعد فعلًا",
+              "عالٍ، سطران للكتابة"
+            ],
+            [
+              "الغداء أو البقايا",
+              "قد يكفي سهم من عشاء الليلة السابقة",
+              "قصير"
+            ],
+            [
+              "تحضير مسبق",
+              "إذابة التجميد أو النقع أو التتبيل أو إخراج الطعام",
+              "قصير"
+            ],
+            [
+              "ملاحظات",
+              "من سيخرج ومن سيطبخ وما الذي يجب استخدامه",
+              "قصير"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "صف التحضير المسبق هو الأكثر فائدة. تتعطل وجبات كثيرة في ليالي الأسبوع لأن شيئًا ما كان يجب إخراجه من المجمد صباحًا. تدوينه في موضع تراه أثناء الإفطار يمنع المفاجأة."
+        },
+        {
+          "t": "h2",
+          "x": "أنشئ القالب مرة واحدة"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "أنشئ جدولًا في جدول بيانات",
+              "x": "Google Sheets أو Excel أسهل من معالج الكلمات. أنشئ سبعة أعمدة وخمسة صفوف وصف عنوان يتضمن تاريخ بداية الأسبوع."
+            },
+            {
+              "h": "اختر الاتجاه الأفقي واضبط صفحة واحدة",
+              "x": "في Sheets: ملف ← طباعة ← أفقي، ثم اختر «ملاءمة للعرض». في Excel: تخطيط الصفحة ← الاتجاه ← أفقي، ثم «ملاءمة الورقة في صفحة واحدة»."
+            },
+            {
+              "h": "اترك مساحة للكتابة",
+              "x": "يحتاج مربع العشاء إلى ارتفاع يقارب 2 سم. إذا لم يتسع لاسم الطبق وملاحظة بقلم عادي فلن تستخدم الخطة."
+            },
+            {
+              "h": "صدّر إلى PDF بدل الطباعة مباشرة",
+              "x": "احفظه باسم `weekly-meal-plan.pdf`. يصبح لديك ملف ثابت تطبعه كل أسبوع دون تعديل التخطيط."
+            },
+            {
+              "h": "ضع قائمة التسوق على الوجه الآخر",
+              "x": "اجعلها الصفحة الثانية من ملف PDF نفسه واطبع على الوجهين. تغادر ورقة واحدة المنزل وتحمل جزأي المهمة."
+            },
+            {
+              "h": "اطبع نسختين",
+              "x": "ضع واحدة على الثلاجة للرجوع إليها، وخذ الأخرى في جيبك إلى المتجر لتحديد المشتريات ثم التخلص منها."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "حوّل خطة أو قائمة أعددتها في المتصفح إلى PDF منسق للطباعة."
+        },
+        {
+          "t": "h2",
+          "x": "صنف قائمة التسوق حسب ممرات المتجر"
+        },
+        {
+          "t": "p",
+          "x": "القائمة المكتوبة بترتيب تذكرك للأشياء تجعلك تعود عبر المتجر ذهابًا وإيابًا. تقسيمها حسب المنطقة قد يختصر الرحلة. استخدم العناوين نفسها كل أسبوع:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "الفاكهة والخضروات، غالبًا في الممر الأول وكثير منها مطلوب.",
+            "اللحوم والأسماك والمبردات، بما فيها الألبان والبيض.",
+            "المخبز.",
+            "المؤن: المعلبات والمواد الجافة والزيوت والتوابل والمعكرونة والأرز.",
+            "المجمدات أخيرًا حتى لا تذوب في العربة.",
+            "مستلزمات المنزل وغيرها من غير الطعام.",
+            "موجود بالفعل: عمود للمراجعة قبل الخروج كي لا تشتري علبة الكمون الرابعة."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "اترك أربعة أسطر فارغة تحت كل عنوان. إذا لم تجد مساحة لإضافة شيء يتذكره أحد، فسيتوقف عن استخدام القائمة."
+        },
+        {
+          "t": "h2",
+          "x": "اجمع وصفات الأسبوع في ملف PDF واحد"
+        },
+        {
+          "t": "p",
+          "x": "تخبرك الخطة بما ستطبخه، وتخبرك الوصفات بالطريقة. جمعها في ملف واحد يعني مهمة طباعة واحدة ولا حاجة للبحث عن التعليمات أثناء الأسبوع."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "نظّف كل وصفة",
+              "x": "مررها عبر [طابعة صفحات الويب](/print)، واحذف القصة والصور ونزّلها بصيغة PDF. راجع [كيفية طباعة وصفة دون إعلانات](/blog/recipes/print-recipe-without-ads)."
+            },
+            {
+              "h": "سمّ الملفات باسم اليوم",
+              "x": "استخدم أسماء مثل `mon-chicken-orzo.pdf` و`tue-dal.pdf`. تحدد الأسماء ترتيب الملفات عند دمجها."
+            },
+            {
+              "h": "ادمجها بعد الخطة",
+              "x": "افتح [دمج PDF](/tools/merge-pdf)، وأضف الخطة أولًا ثم الوصفات بالترتيب، ونزّل الملف الموحّد."
+            },
+            {
+              "h": "أضف أرقام الصفحات",
+              "x": "استخدم [ترقيم الصفحات](/tools/page-numbers) حتى تتمكن من إعادة ترتيب المجموعة إذا سقطت."
+            },
+            {
+              "h": "اطبع المجموعة",
+              "x": "اطبع الخطة والقائمة على الوجهين. اطبع الوصفات على وجه واحد كي تخرجها وتضعها أمامك أثناء الطبخ."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "احتفظ بخطط موسم كامل لا هذا الأسبوع فقط"
+        },
+        {
+          "t": "table",
+          "head": [
+            "الطريقة",
+            "ما تحتفظ به",
+            "الفائدة"
+          ],
+          "rows": [
+            [
+              "ملف لكل أسبوع",
+              "الخطة والقائمة والوصفات المستخدمة",
+              "تكرار أسبوع سار جيدًا"
+            ],
+            [
+              "تناوب أربعة أسابيع",
+              "أربع مجموعات كاملة",
+              "إلغاء قرار التخطيط لشهر كامل"
+            ],
+            [
+              "مجلد موسمي",
+              "نحو 12 مجموعة حسب الشهر",
+              "مراعاة المتوفر والرخيص"
+            ],
+            [
+              "أرشيف سنوي مدمج",
+              "كل شيء في ملف PDF واحد",
+              "قابل للبحث وسهل النسخ الاحتياطي"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "الأسابيع الناجحة هي أثمن ما تنتجه. دوّن على نسخة الثلاجة ما أُكل وما لم يُؤكل، واحتفظ بالخطط التي نالت إعجابكم. بعد أشهر ستختار خطة مجربة بدل كتابتها من البداية، وهنا يأتي توفير الوقت."
+        },
+        {
+          "t": "note",
+          "x": "اطبع الخطة صباح الأحد لا مساءه. إذا اكتشفت ليل الأحد أن شيئًا يحتاج إلى إذابة، فقد أصبحت مشكلة يوم الاثنين."
+        },
+        {
+          "t": "p",
+          "x": "إذا تجاوزت الخطة وحزمة الوصفات اثنتي عشرة صفحة، [اضغط ملف PDF](/blog/compress/how-to-compress-a-pdf) قبل إرساله لمن يشاركك الطبخ. واحفظ النسخة المطبوعة في [ملف الوصفات](/blog/recipes/make-a-recipe-binder) لتكرارها بسهولة."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "ما الذي يجب أن تتضمنه خطة الوجبات الأسبوعية القابلة للطباعة؟",
+          "a": "سبعة أعمدة للأيام وصفوف للوجبات التي تخطط لها فعلًا، مع صف للتحضير المسبق لما يحتاج إلى إذابة أو نقع وصف للملاحظات عن الغياب أو الطبخ. اجعلها صفحة أفقية واحدة لتناسب باب الثلاجة."
+        },
+        {
+          "q": "كيف أدمج عدة وصفات في ملف PDF واحد؟",
+          "a": "نظّف كل وصفة واحفظها كملف PDF مستقل، وسمّ الملف باسم اليوم كي يظهر بالترتيب، ثم ادمجها بأداة PDF. أضف أرقام الصفحات لتعيد ترتيبها إن سقطت المجموعة."
+        },
+        {
+          "q": "كيف أنظم قائمة تسوق مطبوعة؟",
+          "a": "صنفها حسب أقسام المتجر: فاكهة وخضروات، مبردات، مخبز، مؤن، مجمدات ومنزل، بدل ترتيبها حسب الوصفة. ضع المجمدات أخيرًا واترك أسطرًا فارغة للإضافات."
+        },
+        {
+          "q": "هل أطبع نسخة واحدة أم نسختين من الخطة؟",
+          "a": "نسختين: تبقى واحدة على الثلاجة مرجعًا طوال الأسبوع، وتأخذ الثانية إلى المتجر لتحديد المشتريات. لا يستغرق طباعة الاثنين وقتًا أطول تقريبًا."
+        },
+        {
+          "q": "كيف أجعل مخطط الأسبوع يلائم صفحة واحدة؟",
+          "a": "اضبط جدول البيانات بالاتجاه الأفقي وملاءمة صفحة واحدة، وأدرج الوجبات المخطط لها فقط. اترك نحو 2 سم لصف العشاء كي يتسع لاسم الطبق والملاحظة."
+        }
+      ]
+    },
+    "bn": {
+      "title": "প্রিন্টযোগ্য সাপ্তাহিক খাবারের পরিকল্পনা ও কেনাকাটার তালিকা বানানোর উপায়",
+      "metaTitle": "প্রিন্টযোগ্য সাপ্তাহিক খাবার পরিকল্পনা",
+      "metaDescription": "এক পাতায় খাবার পরিকল্পনা ও কেনাকাটার তালিকা: ফ্রিজের টেমপ্লেট, দোকানের বিভাগভিত্তিক তালিকা এবং এক সাপ্তাহিক রেসিপি PDF।",
+      "keyword": "প্রিন্টযোগ্য সাপ্তাহিক খাবারের পরিকল্পনা",
+      "secondaryKeywords": [
+        "প্রিন্ট খাবার পরিকল্পনা টেমপ্লেট",
+        "প্রিন্টযোগ্য কেনাকাটার তালিকা",
+        "সাপ্তাহিক খাবার পরিকল্পক PDF",
+        "রেসিপি এক PDF-এ জোড়া",
+        "প্রিন্টযোগ্য মিল প্রেপ"
+      ],
+      "answer": "এক পাতার পরিকল্পনায় সাত দিনের জন্য সাতটি কলাম এবং যে খাবারগুলো সত্যিই ঠিক করেন শুধু সেগুলোর সারি রাখুন। উল্টো পিঠে দোকানের বিভাগ অনুযায়ী কেনাকাটার তালিকা দিন এবং সপ্তাহের রেসিপিগুলো পরিকল্পনার পেছনে একই PDF-এ জুড়ুন। ফ্রিজের জন্য একটি কপি, কেনাকাটার জন্য আরেকটি প্রিন্ট করুন।",
+      "ctaLabel": "PDF মার্জ করুন",
+      "body": [
+        {
+          "t": "p",
+          "x": "ফোনের খাবার পরিকল্পনা সুপারমার্কেটে দেখা হয়, কিন্তু রান্নাঘরে ভুলে যাওয়া হয়। ফ্রিজের দরজায় লাগানো পরিকল্পনা বাড়ির সবাই দেখে, এমনকি যে জানতে চাইছিল রাতের খাবার কী। এটাই প্রিন্ট করার যুক্তি।"
+        },
+        {
+          "t": "h2",
+          "x": "পরিকল্পনার পাতায় কী থাকবে"
+        },
+        {
+          "t": "p",
+          "x": "একটি ল্যান্ডস্কেপ পাতায় সোমবার থেকে রবিবার পর্যন্ত সাতটি কলাম রাখুন। সত্যিই যে খাবার ঠিক করেন শুধু সেগুলোর সারি যোগ করুন; অনেক পরিবার শুধু রাতের খাবার পরিকল্পনা করে। দিনে তিন বেলার টেমপ্লেটে চৌদ্দটি খালি ঘর পড়ে থাকতে পারে এবং পরিকল্পনা ব্যর্থ মনে হতে পারে।"
+        },
+        {
+          "t": "table",
+          "head": [
+            "সারি",
+            "কাজ",
+            "প্রস্তাবিত উচ্চতা"
+          ],
+          "rows": [
+            [
+              "দিনের শিরোনাম",
+              "সোম থেকে রবি ও তারিখ",
+              "সরু"
+            ],
+            [
+              "রাতের খাবার",
+              "যে খাবার সত্যিই রান্না করবেন",
+              "উঁচু, লেখার জন্য দুই লাইন"
+            ],
+            [
+              "দুপুর বা আগের খাবার",
+              "আগের রাত থেকে তীরচিহ্নই যথেষ্ট হতে পারে",
+              "ছোট"
+            ],
+            [
+              "আগাম প্রস্তুতি",
+              "ডিফ্রস্ট, ভেজানো, মেরিনেট বা ফ্রিজার থেকে বের করা",
+              "ছোট"
+            ],
+            [
+              "নোট",
+              "কে বাইরে, কে রান্না করবে, কী ব্যবহার করতে হবে",
+              "ছোট"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "আগাম প্রস্তুতির সারিটি বিশেষ কাজে লাগে। সপ্তাহের রাতে অনেক রান্না ব্যর্থ হয় কারণ সকালে কিছু ডিফ্রস্ট করার কথা ছিল। নাশতার সময় দেখা যায় এমন সারিতে লিখে রাখলে সেই ভুল হয় না।"
+        },
+        {
+          "t": "h2",
+          "x": "টেমপ্লেট একবার তৈরি করুন"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "স্প্রেডশিটে টেবিল বানান",
+              "x": "Google Sheets বা Excel-এ ওয়ার্ড প্রসেসরের চেয়ে সহজ। সাতটি কলাম, পাঁচটি সারি এবং সপ্তাহ শুরুর তারিখ লেখার জন্য শিরোনাম সারি রাখুন।"
+            },
+            {
+              "h": "ল্যান্ডস্কেপ করে এক পাতায় ফিট করুন",
+              "x": "Sheets-এ File → Print → Landscape, তারপর Scale-এ “Fit to width” দিন। Excel-এ Page Layout → Orientation → Landscape এবং “Fit Sheet on One Page” বেছে নিন।"
+            },
+            {
+              "h": "লেখার জায়গা রাখুন",
+              "x": "রাতের খাবারের ঘর প্রায় ২ সেমি উঁচু হওয়া দরকার। সাধারণ কলমে খাবারের নাম ও নোট না লিখতে পারলে পরিকল্পনা ব্যবহার হবে না।"
+            },
+            {
+              "h": "সরাসরি প্রিন্ট না করে PDF করুন",
+              "x": "`weekly-meal-plan.pdf` নামে সেভ করুন। এরপর বিন্যাস না বদলে প্রতি সপ্তাহে আবার প্রিন্ট করা যাবে।"
+            },
+            {
+              "h": "উল্টো পিঠে কেনাকাটার তালিকা রাখুন",
+              "x": "একই PDF-এর দ্বিতীয় পাতা বানিয়ে দুই পাশে প্রিন্ট করুন। এক পাতায় কাজের দুই অংশই থাকবে।"
+            },
+            {
+              "h": "দুটি কপি প্রিন্ট করুন",
+              "x": "একটি ফ্রিজে রেফারেন্স হিসেবে রাখুন। অন্যটি পকেটে নিয়ে দোকানে যান, কেনা জিনিস কেটে শেষে ফেলে দিন।"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "ব্রাউজারে তৈরি পরিকল্পনা বা তালিকাকে প্রিন্টযোগ্য পরিষ্কার PDF-এ রূপান্তর করুন।"
+        },
+        {
+          "t": "h2",
+          "x": "দোকানের বিভাগ অনুযায়ী কেনাকাটার তালিকা সাজান"
+        },
+        {
+          "t": "p",
+          "x": "যে ক্রমে জিনিস মনে পড়েছে সেই ক্রমের তালিকায় দোকানে বারবার এদিক-ওদিক যেতে হয়। দোকানের অংশ অনুযায়ী সাজালে পথ ছোট হতে পারে। প্রতি সপ্তাহে একই শিরোনাম রাখুন:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "ফল ও সবজি, সাধারণত প্রথম অংশ এবং বেশিরভাগ কেনাকাটা।",
+            "মাংস, মাছ ও ঠান্ডা খাবার, দুধজাত জিনিস ও ডিমসহ।",
+            "বেকারি।",
+            "প্যান্ট্রি: ক্যানজাত, শুকনো খাবার, তেল, মসলা, পাস্তা ও চাল।",
+            "ফ্রোজেন খাবার শেষে, যাতে ট্রলিতে গলে না যায়।",
+            "ঘরোয়া ও অন্যান্য, খাবার নয় এমন সব জিনিস।",
+            "আগেই আছে: বের হওয়ার আগে দেখে নিন, জিরার চতুর্থ বয়াম কেনা আটকাবে।"
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "প্রতি শিরোনামের নিচে চারটি ফাঁকা লাইন রাখুন। কারও মনে পড়া জিনিস যোগ করার জায়গা না থাকলে তালিকাটি ব্যবহার করা বন্ধ হবে।"
+        },
+        {
+          "t": "h2",
+          "x": "সপ্তাহের রেসিপি এক PDF-এ জুড়ুন"
+        },
+        {
+          "t": "p",
+          "x": "পরিকল্পনা বলে কী রান্না করবেন। রেসিপি বলে কীভাবে। এক ফাইলে থাকলে একবারেই প্রিন্ট হবে এবং সপ্তাহের মাঝখানে নির্দেশ খুঁজতে হবে না।"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "প্রতিটি রেসিপি পরিষ্কার করুন",
+              "x": "[ওয়েব পেজ প্রিন্টার](/print) দিয়ে গল্প ও ছবি সরিয়ে PDF ডাউনলোড করুন। পদ্ধতি দেখুন [বিজ্ঞাপন ছাড়া রেসিপি প্রিন্ট](/blog/recipes/print-recipe-without-ads)।"
+            },
+            {
+              "h": "দিন অনুযায়ী ফাইলের নাম দিন",
+              "x": "`mon-chicken-orzo.pdf`, `tue-dal.pdf` এমন নাম দিন। পরের ধাপে নামগুলো ক্রম ঠিক করবে।"
+            },
+            {
+              "h": "পরিকল্পনার পেছনে জুড়ুন",
+              "x": "[PDF মার্জ করুন](/tools/merge-pdf) খুলে আগে পরিকল্পনা, এরপর ক্রমানুসারে রেসিপি যোগ করে এক ফাইল ডাউনলোড করুন।"
+            },
+            {
+              "h": "পৃষ্ঠা নম্বর দিন",
+              "x": "প্যাকেট পড়ে গেলে আবার সাজাতে [পেজ নম্বর](/tools/page-numbers) টুল ব্যবহার করুন।"
+            },
+            {
+              "h": "প্যাকেট প্রিন্ট করুন",
+              "x": "পরিকল্পনা ও তালিকা দুই পাশে প্রিন্ট করুন। রান্নার সময় আলাদা করে সামনে রাখতে রেসিপি এক পাশে প্রিন্ট করুন।"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "শুধু এই সপ্তাহ নয়, পুরো মৌসুমের পরিকল্পনা রাখুন"
+        },
+        {
+          "t": "table",
+          "head": [
+            "পদ্ধতি",
+            "কী রাখবেন",
+            "কেন সুবিধা"
+          ],
+          "rows": [
+            [
+              "প্রতি সপ্তাহে একটি ফাইল",
+              "পরিকল্পনা, তালিকা ও ব্যবহৃত রেসিপি",
+              "ভালো যাওয়া সপ্তাহ আবার করা যায়"
+            ],
+            [
+              "চার সপ্তাহের আবর্তন",
+              "চারটি পূর্ণ প্যাক",
+              "এক মাসের পরিকল্পনা সিদ্ধান্ত বাদ"
+            ],
+            [
+              "মৌসুমি ফোল্ডার",
+              "মাস অনুযায়ী প্রায় বারোটি প্যাক",
+              "যা সস্তা ও পাওয়া যায় তার সঙ্গে মেলে"
+            ],
+            [
+              "বার্ষিক একত্রিত আর্কাইভ",
+              "সব কিছু এক PDF-এ",
+              "সার্চ ও ব্যাকআপ সহজ"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "যে সপ্তাহগুলো ভালো চলে সেগুলোই সবচেয়ে মূল্যবান। ফ্রিজের কপিতে লিখুন কী খাওয়া হয়েছে আর কী হয়নি, তারপর সফল পরিকল্পনাগুলো রাখুন। কয়েক মাস পর নতুন করে লেখার বদলে পরীক্ষিত পরিকল্পনা বেছে নেবেন; সময়ের সাশ্রয় সেখানেই।"
+        },
+        {
+          "t": "note",
+          "x": "রবিবার সকালে পরিকল্পনাটি প্রিন্ট করুন, রাতে নয়। রবিবার রাতে যদি মনে পড়ে কিছু ডিফ্রস্ট করতে হবে, সেটি ইতিমধ্যে সোমবারের সমস্যা।"
+        },
+        {
+          "t": "p",
+          "x": "পরিকল্পনা ও রেসিপি বারো পাতার বেশি হলে অন্য রাঁধুনিকে ইমেইলের আগে [PDF কমপ্রেস করুন](/blog/compress/how-to-compress-a-pdf)। প্রিন্টেড কপি [রেসিপি বাইন্ডারে](/blog/recipes/make-a-recipe-binder) রাখলে আবার ব্যবহার সহজ হবে।"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "প্রিন্টযোগ্য সাপ্তাহিক খাবার পরিকল্পনায় কী থাকা উচিত?",
+          "a": "সাত দিনের কলাম এবং সত্যিই যে খাবার পরিকল্পনা করেন সেগুলোর সারি রাখুন। ডিফ্রস্ট বা ভেজানোর জন্য আগাম প্রস্তুতির সারি, আর কে বাইরে বা রান্না করবে তার নোট দিন। ফ্রিজে লাগাতে এক ল্যান্ডস্কেপ পাতায় রাখুন।"
+        },
+        {
+          "q": "কয়েকটি রেসিপি এক PDF-এ কীভাবে জুড়ব?",
+          "a": "প্রতিটি পরিষ্কার রেসিপি আলাদা PDF-এ সেভ করুন, দিন অনুযায়ী নাম দিয়ে ক্রম ঠিক করুন, তারপর ব্রাউজার টুলে মার্জ করুন। প্যাকেট পড়লে সাজানোর জন্য পরে পৃষ্ঠা নম্বর দিন।"
+        },
+        {
+          "q": "প্রিন্টেড কেনাকাটার তালিকা কীভাবে সাজাব?",
+          "a": "রেসিপি অনুযায়ী নয়, দোকানের অংশ অনুযায়ী ফল-সবজি, ঠান্ডা খাবার, বেকারি, প্যান্ট্রি, ফ্রোজেন ও ঘরোয়া জিনিস সাজান। ফ্রোজেন শেষে রাখুন এবং নতুন জিনিসের জন্য ফাঁকা লাইন দিন।"
+        },
+        {
+          "q": "পরিকল্পনার একটি না দুটি কপি প্রিন্ট করব?",
+          "a": "দুটি: একটি ফ্রিজে রেফারেন্স, অন্যটি দোকানে নিয়ে জিনিস কেটে শেষে ফেলে দিন। একসঙ্গে দুটি প্রিন্ট করতে প্রায় একই সময় লাগে।"
+        },
+        {
+          "q": "সাপ্তাহিক পরিকল্পনা এক পাতায় কীভাবে ফিট করব?",
+          "a": "স্প্রেডশিট ল্যান্ডস্কেপ করে এক পেজে ফিট করুন। সত্যিই যে খাবার ঠিক করেন শুধু তা রাখুন। ডিনারের ঘর প্রায় ২ সেমি উঁচু করুন যাতে নাম ও নোট লেখা যায়।"
+        }
+      ]
+    },
+    "vi": {
+      "title": "Cách lập thực đơn tuần và danh sách mua sắm để in",
+      "metaTitle": "Tạo thực đơn tuần có thể in",
+      "metaDescription": "Lập thực đơn và danh sách mua sắm trên một trang: mẫu dán tủ lạnh, danh sách theo quầy và công thức tuần trong một PDF.",
+      "keyword": "thực đơn tuần có thể in",
+      "secondaryKeywords": [
+        "mẫu thực đơn để in",
+        "danh sách mua sắm có thể in",
+        "lịch bữa ăn tuần PDF",
+        "gộp công thức thành PDF",
+        "mẫu chuẩn bị bữa ăn"
+      ],
+      "answer": "Tạo kế hoạch một trang với bảy cột cho các ngày và chỉ thêm hàng cho những bữa bạn thực sự dự định nấu. Đặt danh sách mua sắm theo quầy ở mặt sau rồi gộp công thức trong tuần vào cùng một PDF phía sau kế hoạch. In một bản cho tủ lạnh và một bản mang đi chợ.",
+      "ctaLabel": "Gộp PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "Thực đơn trên điện thoại được xem ở siêu thị rồi bị quên trong bếp. Tờ giấy trên cửa tủ lạnh được mọi người trong nhà nhìn thấy, kể cả người sắp hỏi tối nay ăn gì. Đó là lý do nên in."
+        },
+        {
+          "t": "h2",
+          "x": "Trang thực đơn cần có gì"
+        },
+        {
+          "t": "p",
+          "x": "Dùng một trang ngang với bảy cột từ thứ Hai đến Chủ nhật. Chỉ thêm hàng cho những bữa bạn thật sự lên kế hoạch; nhiều gia đình chỉ lập thực đơn bữa tối. Mẫu có ba bữa mỗi ngày có thể để trống mười bốn ô và khiến bạn thấy mình thất bại."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Hàng",
+            "Mục đích",
+            "Chiều cao"
+          ],
+          "rows": [
+            [
+              "Tiêu đề ngày",
+              "Thứ Hai đến Chủ nhật và ngày tháng",
+              "Thấp"
+            ],
+            [
+              "Bữa tối",
+              "Món bạn thực sự định nấu",
+              "Cao, hai dòng để viết"
+            ],
+            [
+              "Bữa trưa hoặc đồ thừa",
+              "Đôi khi chỉ cần mũi tên từ tối hôm trước",
+              "Ngắn"
+            ],
+            [
+              "Chuẩn bị trước",
+              "Rã đông, ngâm, ướp hoặc lấy khỏi tủ đông",
+              "Ngắn"
+            ],
+            [
+              "Ghi chú",
+              "Ai vắng, ai nấu, món gì cần dùng",
+              "Ngắn"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Hàng chuẩn bị trước rất hữu ích. Nhiều bữa tối ngày thường hỏng kế hoạch vì sáng hôm đó cần rã đông thứ gì đó. Ghi vào hàng bạn thấy lúc ăn sáng sẽ giúp tránh quên."
+        },
+        {
+          "t": "h2",
+          "x": "Tạo mẫu một lần"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Tạo bảng trong bảng tính",
+              "x": "Google Sheets hoặc Excel dễ hơn trình soạn thảo văn bản. Tạo bảy cột, năm hàng và một hàng tiêu đề có chỗ ghi ngày bắt đầu tuần."
+            },
+            {
+              "h": "Đặt trang ngang và vừa một trang",
+              "x": "Trong Sheets: File → Print → Landscape, rồi đặt Scale thành “Fit to width”. Trong Excel: Page Layout → Orientation → Landscape, rồi “Fit Sheet on One Page”."
+            },
+            {
+              "h": "Chừa chỗ để viết",
+              "x": "Ô bữa tối cần cao khoảng 2 cm. Nếu bút thường không viết vừa tên món và ghi chú, bạn sẽ không dùng mẫu đó."
+            },
+            {
+              "h": "Xuất PDF thay vì in trực tiếp",
+              "x": "Lưu tên `weekly-meal-plan.pdf`. Bạn có một tệp cố định để in lại mỗi tuần mà không cần sửa bố cục."
+            },
+            {
+              "h": "Đặt danh sách mua sắm ở mặt sau",
+              "x": "Tạo trang thứ hai trong cùng PDF và in hai mặt. Một tờ giấy mang theo cả hai phần việc."
+            },
+            {
+              "h": "In hai bản",
+              "x": "Một bản dán tủ lạnh để tham khảo. Bản còn lại bỏ túi mang đi chợ, đánh dấu món đã mua rồi bỏ đi."
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "Chuyển kế hoạch hoặc danh sách tạo trong trình duyệt thành PDF sạch để in."
+        },
+        {
+          "t": "h2",
+          "x": "Nhóm danh sách mua sắm theo quầy"
+        },
+        {
+          "t": "p",
+          "x": "Danh sách ghi theo thứ tự bạn nhớ ra khiến bạn phải đi qua đi lại trong cửa hàng. Nhóm theo khu vực có thể rút ngắn lộ trình. Hãy dùng cùng tiêu đề mỗi tuần:"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Rau củ và trái cây, thường ở đầu cửa hàng và có nhiều món nhất.",
+            "Thịt, cá và đồ lạnh, gồm sữa và trứng.",
+            "Quầy bánh mì.",
+            "Đồ khô: đồ hộp, thực phẩm khô, dầu, gia vị, mì ống và gạo.",
+            "Đồ đông lạnh để cuối cùng để không tan đá trong xe đẩy.",
+            "Đồ gia dụng và các món không phải thực phẩm.",
+            "Đã có: cột kiểm tra trước khi đi để tránh mua lọ thì là Ai Cập thứ tư."
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "Chừa bốn dòng trống dưới mỗi tiêu đề. Không có chỗ ghi món ai đó vừa nhớ ra thì danh sách sẽ bị bỏ."
+        },
+        {
+          "t": "h2",
+          "x": "Gộp công thức trong tuần thành một PDF"
+        },
+        {
+          "t": "p",
+          "x": "Kế hoạch cho biết bạn sẽ nấu gì; công thức cho biết cách làm. Để chung trong một tệp giúp chỉ cần một lần in và không phải tìm hướng dẫn giữa tuần."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "Dọn từng công thức",
+              "x": "Dùng [công cụ in trang web](/print), xóa phần chuyện kể và ảnh, rồi tải xuống PDF. Xem [cách in công thức không có quảng cáo](/blog/recipes/print-recipe-without-ads)."
+            },
+            {
+              "h": "Đặt tên tệp theo ngày",
+              "x": "Dùng tên như `mon-chicken-orzo.pdf`, `tue-dal.pdf`. Tên tệp quyết định thứ tự khi gộp."
+            },
+            {
+              "h": "Gộp chúng sau trang kế hoạch",
+              "x": "Mở [Gộp PDF](/tools/merge-pdf), thêm kế hoạch trước rồi đến các công thức theo thứ tự và tải tệp đã gộp."
+            },
+            {
+              "h": "Thêm số trang",
+              "x": "Chạy tệp qua [Đánh số trang](/tools/page-numbers) để có thể xếp lại nếu làm rơi cả tập."
+            },
+            {
+              "h": "In cả bộ",
+              "x": "In kế hoạch và danh sách hai mặt. In công thức một mặt để có thể lấy ra dựng trước mặt khi nấu."
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "Lưu kế hoạch cả mùa thay vì chỉ tuần này"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Cách lưu",
+            "Nội dung giữ lại",
+            "Lợi ích"
+          ],
+          "rows": [
+            [
+              "Một tệp mỗi tuần",
+              "Kế hoạch, danh sách và công thức đã dùng",
+              "Lặp lại tuần đã thành công"
+            ],
+            [
+              "Luân phiên bốn tuần",
+              "Bốn bộ hoàn chỉnh",
+              "Không cần quyết định thực đơn cả tháng"
+            ],
+            [
+              "Thư mục theo mùa",
+              "Khoảng mười hai bộ theo tháng",
+              "Theo nguyên liệu rẻ và sẵn có"
+            ],
+            [
+              "Kho lưu trữ gộp hằng năm",
+              "Tất cả trong một PDF",
+              "Có thể tìm kiếm, dễ sao lưu"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Những tuần diễn ra tốt là thứ giá trị nhất bạn tạo ra. Ghi trên bản dán tủ lạnh món nào đã ăn và món nào không, rồi giữ kế hoạch được yêu thích. Sau vài tháng, bạn chỉ cần chọn một thực đơn đã thử thay vì viết lại từ đầu; đó là lúc tiết kiệm thời gian thật sự."
+        },
+        {
+          "t": "note",
+          "x": "In kế hoạch vào sáng Chủ nhật, đừng đợi tối. Nếu tối Chủ nhật mới phát hiện món cần rã đông, thì đó đã là vấn đề của thứ Hai."
+        },
+        {
+          "t": "p",
+          "x": "Nếu kế hoạch và bộ công thức dài hơn mười hai trang, hãy [nén PDF](/blog/compress/how-to-compress-a-pdf) trước khi gửi cho người cùng nấu. Cất bản in trong [sổ công thức](/blog/recipes/make-a-recipe-binder) để dễ dùng lại."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Thực đơn tuần có thể in nên gồm những gì?",
+          "a": "Bảy cột cho các ngày và hàng cho những bữa bạn thật sự lên kế hoạch. Thêm hàng chuẩn bị trước để rã đông hoặc ngâm, cùng hàng ghi chú về người vắng hoặc người nấu. Giữ trên một trang ngang để dán tủ lạnh."
+        },
+        {
+          "q": "Làm sao gộp nhiều công thức vào một PDF?",
+          "a": "Lưu từng công thức đã dọn thành PDF riêng, đặt tên theo ngày để sắp xếp đúng thứ tự rồi gộp bằng công cụ PDF trong trình duyệt. Thêm số trang để xếp lại nếu làm rơi."
+        },
+        {
+          "q": "Nên sắp xếp danh sách mua sắm in thế nào?",
+          "a": "Nhóm theo quầy: rau củ, đồ lạnh, bánh mì, đồ khô, đông lạnh và gia dụng thay vì theo công thức. Để đồ đông lạnh cuối cùng và chừa dòng trống để thêm món."
+        },
+        {
+          "q": "Nên in một hay hai bản thực đơn?",
+          "a": "Hai bản: một bản ở tủ lạnh làm tài liệu tham khảo cả tuần, bản kia mang đi chợ để đánh dấu. In cả hai gần như mất thời gian bằng in một bản."
+        },
+        {
+          "q": "Làm sao để kế hoạch tuần vừa một trang?",
+          "a": "Đặt bảng tính theo chiều ngang và vừa một trang, chỉ để các bữa bạn thật sự định nấu. Chừa khoảng 2 cm cho ô bữa tối để ghi tên món và chú thích."
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "如何制作可打印的每周菜单和购物清单",
+      "metaTitle": "制作可打印的每周菜单",
+      "metaDescription": "在一页安排菜单和购物清单：冰箱门模板、按卖场区域分类的清单，以及合并成一个 PDF 的每周食谱。",
+      "keyword": "可打印的每周菜单",
+      "secondaryKeywords": [
+        "可打印菜单模板",
+        "可打印购物清单",
+        "每周菜单计划 PDF",
+        "将食谱合并为 PDF",
+        "可打印备餐计划"
+      ],
+      "answer": "制作一页式计划，设置七个日期栏，并只为你确实计划的餐食添加行。背面放按卖场区域分类的购物清单，再把本周食谱合并到计划后面的同一个 PDF 中。打印一份贴冰箱，另一份带去购物。",
+      "ctaLabel": "合并 PDF",
+      "body": [
+        {
+          "t": "p",
+          "x": "手机里的菜单计划在超市会被查看，却容易在厨房被忘记。贴在冰箱门上的计划全家都能看到，包括那个正准备问今晚吃什么的人。这就是打印它的理由。"
+        },
+        {
+          "t": "h2",
+          "x": "菜单计划页面需要哪些内容"
+        },
+        {
+          "t": "p",
+          "x": "用一张横向页面设置七列，从周一到周日。只添加你确实计划的餐食行；很多家庭只计划晚餐。一天三餐的模板可能留下十四个空格，让你觉得计划失败。"
+        },
+        {
+          "t": "table",
+          "head": [
+            "行",
+            "用途",
+            "建议高度"
+          ],
+          "rows": [
+            [
+              "日期标题",
+              "周一至周日和日期",
+              "窄"
+            ],
+            [
+              "晚餐",
+              "你真正准备做的饭",
+              "高，留两行书写"
+            ],
+            [
+              "午餐或剩菜",
+              "有时只需从前一晚画箭头",
+              "短"
+            ],
+            [
+              "提前准备",
+              "解冻、浸泡、腌制或从冰箱取出",
+              "短"
+            ],
+            [
+              "备注",
+              "谁外出、谁做饭、哪些食材要用掉",
+              "短"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "“提前准备”这一行最值得保留。很多工作日晚餐计划失败，是因为某样食材本该早上解冻。把它写在早餐时能看到的地方，就不容易忘记。"
+        },
+        {
+          "t": "h2",
+          "x": "只需制作一次模板"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "在电子表格中创建表格",
+              "x": "Google Sheets 或 Excel 比文字处理软件更方便。设置七列、五行，并加一行标题，用来填写本周开始日期。"
+            },
+            {
+              "h": "设为横向并缩放到一页",
+              "x": "Sheets 中选择 File → Print → Landscape，再将 Scale 设为“Fit to width”。Excel 中选择 Page Layout → Orientation → Landscape，再选“Fit Sheet on One Page”。"
+            },
+            {
+              "h": "留出手写空间",
+              "x": "晚餐单元格高度约 2 厘米。如果普通笔写不下菜名和备注，这个计划表就不会被使用。"
+            },
+            {
+              "h": "导出为 PDF，而非直接打印",
+              "x": "保存为 `weekly-meal-plan.pdf`。这样每周都能打印固定版式，不必重新调整。"
+            },
+            {
+              "h": "把购物清单放在背面",
+              "x": "将它做成同一个 PDF 的第二页，并双面打印。一张纸就能完成两项任务。"
+            },
+            {
+              "h": "打印两份",
+              "x": "一份贴冰箱作为参考；另一份装进口袋带去商店，勾掉买到的东西后即可丢弃。"
+            }
+          ]
+        },
+        {
+          "t": "cta",
+          "tool": "html-to-pdf",
+          "x": "将浏览器中制作的计划或清单转换成整洁的可打印 PDF。"
+        },
+        {
+          "t": "h2",
+          "x": "按卖场区域整理购物清单"
+        },
+        {
+          "t": "p",
+          "x": "按想起物品的顺序列清单，会让你在商店里来回走。按区域分组可以缩短路线。每周使用相同标题："
+        },
+        {
+          "t": "ul",
+          "items": [
+            "水果和蔬菜，通常在入口附近，也是购买最多的区域。",
+            "肉类、鱼类和冷藏食品，包括乳制品和鸡蛋。",
+            "面包烘焙区。",
+            "食品储藏区：罐头、干货、油、香料、意面和米。",
+            "冷冻食品放最后，避免在购物车里解冻。",
+            "家居用品和其他非食品。",
+            "家里已有：出门前核对，避免买第四罐孜然。"
+          ]
+        },
+        {
+          "t": "tip",
+          "x": "每个标题下面留四行空白。有人想起要买垃圾袋时，如果无处添加，整张清单就会被弃用。"
+        },
+        {
+          "t": "h2",
+          "x": "将本周食谱合并成一个 PDF"
+        },
+        {
+          "t": "p",
+          "x": "计划告诉你要做什么菜，食谱告诉你如何做。把它们放在一个文件中，只需打印一次，周中也不用再找做法。"
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "h": "清理每份食谱",
+              "x": "通过[网页打印工具](/print)处理，删除故事和图片，再下载为 PDF。方法见[如何打印没有广告的食谱](/blog/recipes/print-recipe-without-ads)。"
+            },
+            {
+              "h": "按星期给文件命名",
+              "x": "使用 `mon-chicken-orzo.pdf`、`tue-dal.pdf` 等名称。合并时会按名称排序，值得花一点时间命名。"
+            },
+            {
+              "h": "把食谱合并到菜单后面",
+              "x": "打开[合并 PDF](/tools/merge-pdf)，先添加菜单，再按顺序添加食谱，然后下载合并文件。"
+            },
+            {
+              "h": "添加页码",
+              "x": "用[页码工具](/tools/page-numbers)处理合并文件，纸堆散落后可以重新排好。"
+            },
+            {
+              "h": "打印整套文件",
+              "x": "菜单和购物清单双面打印。食谱单面打印，方便取出并放在手边做饭。"
+            }
+          ]
+        },
+        {
+          "t": "h2",
+          "x": "保存一季的菜单，不只这一周"
+        },
+        {
+          "t": "table",
+          "head": [
+            "保存方式",
+            "保留内容",
+            "好处"
+          ],
+          "rows": [
+            [
+              "每周一个文件",
+              "菜单、清单和用过的食谱",
+              "可以重复效果不错的一周"
+            ],
+            [
+              "四周轮换",
+              "四套完整文件",
+              "一个月不必重新决定菜单"
+            ],
+            [
+              "季节文件夹",
+              "按月份保存约十二套",
+              "对应便宜且容易买到的食材"
+            ],
+            [
+              "年度合并档案",
+              "全部放在一个 PDF 中",
+              "可搜索，也容易备份"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "顺利的一周是最有价值的成果。在冰箱上的副本记下哪些菜吃完了、哪些没吃，再保存大家喜欢的计划。几个月后，你可以直接挑选验证过的菜单，而不必从头设计，真正的时间节省就来自这里。"
+        },
+        {
+          "t": "note",
+          "x": "周日早上打印菜单，不要等到晚上。若周日晚上才发现食材需要解冻，那已经变成周一的问题。"
+        },
+        {
+          "t": "p",
+          "x": "如果菜单和食谱超过十二页，先[压缩 PDF](/blog/compress/how-to-compress-a-pdf)，再发给一起做饭的人。将打印版放入[食谱夹](/blog/recipes/make-a-recipe-binder)，方便再次使用。"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "可打印的每周菜单应该包括什么？",
+          "a": "设置七个日期栏，只为确实计划的餐食留行。添加解冻或浸泡用的提前准备行，以及记录谁外出或谁做饭的备注行。使用一张横向页面，方便贴在冰箱门上。"
+        },
+        {
+          "q": "如何把几份食谱合并成一个 PDF？",
+          "a": "先把清理后的食谱分别保存为 PDF，按星期命名以确定顺序，然后用浏览器中的 PDF 合并工具合并。最后添加页码，方便散落后重新排序。"
+        },
+        {
+          "q": "如何整理打印的购物清单？",
+          "a": "按卖场区域分类，如水果蔬菜、冷藏食品、面包、干货、冷冻和家居用品，而非按食谱排序。冷冻食品放最后，并留空行添加临时物品。"
+        },
+        {
+          "q": "菜单应该打印一份还是两份？",
+          "a": "两份：一份贴在冰箱上整周查看，另一份带去商店勾选后丢弃。一次打印两份几乎不比一份多花时间。"
+        },
+        {
+          "q": "如何让每周计划适合一页？",
+          "a": "把电子表格设为横向并缩放到一页，只保留你确实计划的餐食。晚餐单元格留约 2 厘米高度，能写下菜名和备注。"
+        }
+      ]
+    }
+  }
+}
