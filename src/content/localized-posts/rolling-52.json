@@ -332,6 +332,232 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "fix-browser-print-margins",
+        "slug": "fix-browser-print-margins",
+        "title": "Cómo corregir los márgenes al imprimir desde el navegador",
+        "metaTitle": "Corregir márgenes al imprimir una página web",
+        "metaDescription": "Corrige márgenes al imprimir una página web: ajusta escala, papel y vista previa. Gratis, sin registro ni marca de agua.",
+        "keyword": "corregir márgenes al imprimir una página web",
+        "secondaryKeywords": [
+          "corregir márgenes al imprimir una página web",
+          "fit webpage to print",
+          "save webpage print to PDF"
+        ],
+        "answer": "Para corregir márgenes al imprimir desde el navegador, abre la vista previa y ajusta Márgenes, Escala y Tamaño del papel antes de imprimir. Prueba primero los márgenes predeterminados; si el contenido se corta, reduce la escala o elige márgenes personalizados. Los límites físicos de la impresora y los estilos CSS del sitio también afectan al resultado. Revisa una página de prueba antes de guardar o imprimir todo.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "Ajustar márgenes de impresión",
+        "body": [
+          {
+            "t": "p",
+            "x": "Si una página web sale con márgenes demasiado grandes, contenido cortado o columnas desplazadas, corrige la vista previa de impresión antes de cambiar el sitio. Ajusta el tamaño del papel, los márgenes y la escala, y comprueba el resultado en una página. [Web Page Cleaner](/print) puede quitar menús de páginas públicas, pero los ajustes de impresión siguen controlando el espacio de página."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo corregir los márgenes al imprimir desde el navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Abre la vista previa",
+                "x": "En el navegador, elige Imprimir para ver cómo se distribuirá la página."
+              },
+              {
+                "h": "Comprueba el papel y la orientación",
+                "x": "Elige el tamaño correcto, como A4 o Carta, y prueba vertical u horizontal según el contenido."
+              },
+              {
+                "h": "Ajusta márgenes y escala",
+                "x": "Empieza con Predeterminados. Si se corta contenido, prueba márgenes personalizados o reduce la escala unos puntos."
+              },
+              {
+                "h": "Revisa encabezados y fondos",
+                "x": "Desactiva encabezados y pies si agregan URL o fecha. Activa gráficos de fondo solo si son necesarios."
+              },
+              {
+                "h": "Prueba y guarda",
+                "x": "Revisa la primera, una intermedia y la última página; después imprime o elige Guardar como PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "Limpiar una página web"
+          },
+          {
+            "t": "h2",
+            "x": "Compara ajustes de impresión"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Ajuste",
+              "Úsalo cuando",
+              "Precaución"
+            ],
+            "rows": [
+              [
+                "Márgenes predeterminados",
+                "El diseño del sitio ya encaja",
+                "Los márgenes dependen del CSS y la impresora."
+              ],
+              [
+                "Márgenes personalizados",
+                "Hace falta más espacio o evitar un corte",
+                "El hardware puede tener un área no imprimible."
+              ],
+              [
+                "Reducir escala",
+                "Una columna o imagen rebasa la página",
+                "El texto puede quedar demasiado pequeño."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Privacidad y límites de la impresora"
+          },
+          {
+            "t": "p",
+            "x": "Los márgenes los decide el diálogo del navegador, el CSS de la página y el área que la impresora puede marcar. Un margen de cero no significa que una impresora física pueda imprimir hasta el borde. Si la página tiene menús o anuncios, prueba [Web Page Cleaner](/print) y vuelve a revisar los márgenes. El proceso de URL puede usar un lector remoto; no pegues enlaces privados."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cómo cambio los márgenes al imprimir una página web?",
+            "a": "Abre Imprimir en el navegador, expande Más ajustes y cambia Márgenes. Prueba Predeterminados o Personalizados y revisa la vista previa antes de imprimir."
+          },
+          {
+            "q": "¿Por qué se corta el contenido aunque los márgenes sean cero?",
+            "a": "La impresora tiene un área física no imprimible y el sitio puede aplicar estilos CSS. Reduce la escala, cambia orientación o ajusta el tamaño del papel."
+          },
+          {
+            "q": "¿Qué escala evita que una página se corte?",
+            "a": "No hay un valor único. Reduce la escala poco a poco hasta que el contenido quepa y comprueba que el texto siga legible."
+          },
+          {
+            "q": "¿Puedo guardar la página ajustada como PDF?",
+            "a": "Sí. En el diálogo de impresión, selecciona Guardar como PDF y comprueba que el archivo conserve el diseño y las páginas esperadas."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "print-dark-background-page",
+        "slug": "print-dark-background-page",
+        "title": "Cómo imprimir una página web con fondo oscuro",
+        "metaTitle": "Imprimir una página web con fondo oscuro",
+        "metaDescription": "Imprime una página web oscura con buen contraste y menos tinta. Gratis, sin registro ni marca de agua; revisa la vista previa antes.",
+        "keyword": "imprimir página web con fondo oscuro",
+        "secondaryKeywords": [
+          "imprimir página web con fondo oscuro",
+          "print webpage background colors",
+          "browser print background graphics"
+        ],
+        "answer": "Para imprimir una página web con fondo oscuro, abre la vista previa del navegador y comprueba si el sitio incluye sus colores de fondo. Si el fondo no aparece, activa “gráficos de fondo” en los ajustes de impresión; si consume demasiada tinta, usa el modo claro del sitio o una versión limpia. Revisa el contraste y el texto en una página de prueba antes de imprimir todo.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "Imprimir una página web limpia",
+        "body": [
+          {
+            "t": "p",
+            "x": "Los navegadores suelen omitir colores e imágenes de fondo para ahorrar tinta, así que una página oscura puede imprimirse blanca o perder contraste. Activa los gráficos de fondo si el color forma parte de la información. Si solo necesitas texto legible, usa el modo claro del sitio o [Web Page Cleaner](/print), y revisa la vista previa."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo imprimir una página web con fondo oscuro"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Abre la impresión",
+                "x": "En el navegador, selecciona Imprimir y revisa la vista previa."
+              },
+              {
+                "h": "Decide si el fondo importa",
+                "x": "Activa gráficos de fondo para conservar colores que transmiten información; déjalos apagados para ahorrar tinta."
+              },
+              {
+                "h": "Prueba un modo claro",
+                "x": "Si el sitio ofrece tema claro o impresión, cámbialo antes de imprimir. Una página pública desordenada se puede abrir con [Web Page Cleaner](/print)."
+              },
+              {
+                "h": "Ajusta color y papel",
+                "x": "Elige color o blanco y negro según lo que necesites. Comprueba orientación, márgenes y escala."
+              },
+              {
+                "h": "Revisa una página",
+                "x": "Comprueba contraste, gráficos y texto pequeño. Después imprime o guarda como PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "Imprimir una página web limpia"
+          },
+          {
+            "t": "h2",
+            "x": "Compara formas de imprimir la página"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Opción",
+              "Resultado",
+              "Cuándo conviene"
+            ],
+            "rows": [
+              [
+                "Gráficos de fondo activados",
+                "Conserva colores y algunos fondos",
+                "El color comunica categorías o estados."
+              ],
+              [
+                "Gráficos de fondo desactivados",
+                "Ahorra tinta; fondo oscuro puede desaparecer",
+                "El texto basta y el fondo es decorativo."
+              ],
+              [
+                "Tema claro o vista limpia",
+                "Fondo claro y texto más fácil de imprimir",
+                "El sitio ofrece tema claro o lectura simplificada."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Ahorra tinta sin perder información"
+          },
+          {
+            "t": "p",
+            "x": "Activar fondos puede aumentar mucho el uso de tinta, especialmente en páginas casi negras. Para una copia digital, guarda primero en PDF y revísala al tamaño real. Si un color identifica estados, leyenda o aviso, no lo elimines sin comprobar que la información siga clara. Al cargar una URL en Web Page Cleaner, el lector propio de PrintxPDF se intenta primero; si falla o tarda, la URL puede llegar a lectores públicos."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cómo imprimo una página oscura con su fondo?",
+            "a": "En la ventana de impresión, abre Más ajustes y activa Gráficos de fondo. Revisa la vista previa porque el nombre y la disponibilidad de la opción dependen del navegador."
+          },
+          {
+            "q": "¿Por qué desaparece el fondo oscuro al imprimir?",
+            "a": "Muchos navegadores omiten fondos por defecto para ahorrar tinta. Activa gráficos de fondo o usa el modo de impresión del sitio si existe."
+          },
+          {
+            "q": "¿Imprimir fondos oscuros gasta más tinta?",
+            "a": "Sí. Las áreas oscuras grandes pueden consumir mucha tinta o tóner. Prueba el tema claro o imprime solo la sección que necesitas."
+          },
+          {
+            "q": "¿Web Page Cleaner convierte el fondo oscuro en blanco?",
+            "a": "La herramienta prepara una vista legible y puede cambiar el diseño de origen. Revisa la vista resultante; no la uses si los colores de fondo contienen información necesaria."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -664,6 +890,232 @@
           {
             "q": "Que dados devo guardar como registro?",
             "a": "Guarde o arquivo, a URL, a data e hora de acesso e uma captura se o contexto visual importar. Para auditoria ou uso jurídico, siga o processo oficial da sua organização."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "fix-browser-print-margins",
+        "slug": "fix-browser-print-margins",
+        "title": "Como corrigir as margens ao imprimir pelo navegador",
+        "metaTitle": "Corrigir margens ao imprimir uma página web",
+        "metaDescription": "Corrija margens ao imprimir uma página web: ajuste escala, papel e prévia. Grátis, sem cadastro ou marca-d’água.",
+        "keyword": "corrigir margens ao imprimir página web",
+        "secondaryKeywords": [
+          "corrigir margens ao imprimir página web",
+          "fit webpage to print",
+          "save webpage print to PDF"
+        ],
+        "answer": "Para corrigir margens ao imprimir pelo navegador, abra a prévia e ajuste Margens, Escala e Tamanho do papel antes de imprimir. Comece pelas margens padrão; se o conteúdo for cortado, reduza a escala ou escolha margens personalizadas. Os limites físicos da impressora e o CSS do site também afetam o resultado. Confira uma página antes de salvar ou imprimir tudo.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "Ajustar margens de impressão",
+        "body": [
+          {
+            "t": "p",
+            "x": "Se uma página web sai com margens grandes, conteúdo cortado ou colunas deslocadas, ajuste a prévia antes de alterar o site. Confira papel, margens e escala em uma página. O [Web Page Cleaner](/print) pode remover menus de páginas públicas, mas as opções de impressão ainda controlam o espaço da página."
+          },
+          {
+            "t": "h2",
+            "x": "Como corrigir as margens ao imprimir pelo navegador"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Abra a prévia de impressão",
+                "x": "No navegador, escolha Imprimir para ver como a página será distribuída."
+              },
+              {
+                "h": "Confira papel e orientação",
+                "x": "Escolha A4 ou Carta e teste retrato ou paisagem conforme o conteúdo."
+              },
+              {
+                "h": "Ajuste margens e escala",
+                "x": "Comece com Padrão. Se algo for cortado, tente margens personalizadas ou reduza a escala alguns pontos."
+              },
+              {
+                "h": "Confira cabeçalhos e fundos",
+                "x": "Desative cabeçalhos e rodapés se adicionarem URL ou data. Ative gráficos de fundo só se necessário."
+              },
+              {
+                "h": "Teste e salve",
+                "x": "Confira a primeira, uma página do meio e a última; depois imprima ou escolha Salvar como PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "Limpar uma página web"
+          },
+          {
+            "t": "h2",
+            "x": "Compare configurações de impressão"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Ajuste",
+              "Use quando",
+              "Atenção"
+            ],
+            "rows": [
+              [
+                "Margens padrão",
+                "O layout do site já encaixa",
+                "As margens dependem do CSS e da impressora."
+              ],
+              [
+                "Margens personalizadas",
+                "Precisa de mais espaço ou evitar cortes",
+                "A impressora pode ter área não imprimível."
+              ],
+              [
+                "Reduzir escala",
+                "Uma coluna ou imagem ultrapassa a página",
+                "O texto pode ficar pequeno demais."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Privacidade e limites da impressora"
+          },
+          {
+            "t": "p",
+            "x": "As margens dependem do diálogo do navegador, do CSS da página e da área que a impressora alcança. Margem zero não significa que a impressora física imprime até a borda. Se houver menus ou anúncios, teste o [Web Page Cleaner](/print) e confira as margens novamente. O carregamento de URL pode usar um leitor remoto; não cole links privados."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Como mudar as margens ao imprimir uma página web?",
+            "a": "Abra Imprimir no navegador, expanda Mais configurações e altere Margens. Teste Padrão ou Personalizadas e confira a prévia antes de imprimir."
+          },
+          {
+            "q": "Por que o conteúdo corta mesmo com margem zero?",
+            "a": "A impressora tem uma área física que não imprime e o site pode aplicar CSS. Reduza a escala, mude a orientação ou ajuste o papel."
+          },
+          {
+            "q": "Qual escala evita que a página seja cortada?",
+            "a": "Não há um valor único. Reduza a escala aos poucos até o conteúdo caber e confira se o texto continua legível."
+          },
+          {
+            "q": "Posso salvar a página ajustada como PDF?",
+            "a": "Sim. Escolha Salvar como PDF no diálogo de impressão e confira se o arquivo mantém o layout e as páginas esperadas."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "print-dark-background-page",
+        "slug": "print-dark-background-page",
+        "title": "Como imprimir uma página web com fundo escuro",
+        "metaTitle": "Imprimir página web com fundo escuro",
+        "metaDescription": "Imprima páginas escuras com bom contraste e menos tinta. Grátis, sem cadastro ou marca-d’água; confira a prévia antes.",
+        "keyword": "imprimir página web com fundo escuro",
+        "secondaryKeywords": [
+          "imprimir página web com fundo escuro",
+          "print webpage background colors",
+          "browser print background graphics"
+        ],
+        "answer": "Para imprimir uma página web com fundo escuro, abra a prévia do navegador e veja se as cores de fundo estão incluídas. Se o fundo não aparecer, ative “gráficos de fundo” nas configurações de impressão; se gastar tinta demais, use o tema claro do site ou uma versão limpa. Confira contraste e texto em uma página de teste antes de imprimir tudo.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "Imprimir uma página web limpa",
+        "body": [
+          {
+            "t": "p",
+            "x": "Os navegadores costumam omitir cores e imagens de fundo para economizar tinta, então uma página escura pode sair branca ou perder contraste. Ative os gráficos de fundo se a cor transmitir informação. Se precisar apenas de texto legível, use o tema claro do site ou o [Web Page Cleaner](/print) e confira a prévia."
+          },
+          {
+            "t": "h2",
+            "x": "Como imprimir uma página web com fundo escuro"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Abra a impressão",
+                "x": "No navegador, escolha Imprimir e confira a prévia."
+              },
+              {
+                "h": "Decida se o fundo é necessário",
+                "x": "Ative gráficos de fundo para manter cores que comunicam dados; deixe desligado para economizar tinta."
+              },
+              {
+                "h": "Teste um tema claro",
+                "x": "Se o site oferecer tema claro ou impressão própria, use antes de imprimir. Uma página pública confusa pode ser aberta no [Web Page Cleaner](/print)."
+              },
+              {
+                "h": "Ajuste cor e papel",
+                "x": "Escolha colorido ou preto e branco conforme a necessidade. Confira orientação, margens e escala."
+              },
+              {
+                "h": "Confira uma página",
+                "x": "Revise contraste, gráficos e letras pequenas. Depois imprima ou salve em PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "Imprimir uma página web limpa"
+          },
+          {
+            "t": "h2",
+            "x": "Compare formas de imprimir a página"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Opção",
+              "Resultado",
+              "Quando usar"
+            ],
+            "rows": [
+              [
+                "Gráficos de fundo ligados",
+                "Mantém cores e alguns fundos",
+                "A cor identifica categorias ou estados."
+              ],
+              [
+                "Gráficos de fundo desligados",
+                "Economiza tinta; o fundo pode sumir",
+                "Só o texto importa e o fundo é decorativo."
+              ],
+              [
+                "Tema claro ou visual limpo",
+                "Fundo claro e texto mais legível",
+                "O site oferece tema claro ou leitura simplificada."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Economize tinta sem perder informação"
+          },
+          {
+            "t": "p",
+            "x": "Ativar fundos pode aumentar muito o consumo de tinta, especialmente em páginas quase pretas. Para uma cópia digital, salve primeiro em PDF e confira no tamanho real. Se uma cor marca estados, legenda ou aviso, confirme que a informação continua clara antes de removê-la. Ao carregar uma URL no Web Page Cleaner, a PrintxPDF tenta seu leitor primeiro; se falhar ou demorar, a URL pode chegar a leitores públicos."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Como imprimir uma página escura com o fundo?",
+            "a": "Na janela de impressão, abra Mais configurações e ative Gráficos de fundo. Confira a prévia; o nome e a opção variam conforme o navegador."
+          },
+          {
+            "q": "Por que o fundo escuro some na impressão?",
+            "a": "Muitos navegadores omitem fundos por padrão para economizar tinta. Ative gráficos de fundo ou use a opção de impressão do site."
+          },
+          {
+            "q": "Imprimir fundos escuros gasta mais tinta?",
+            "a": "Sim. Grandes áreas escuras podem consumir muita tinta ou toner. Teste o tema claro ou imprima só a seção necessária."
+          },
+          {
+            "q": "O Web Page Cleaner transforma o fundo escuro em branco?",
+            "a": "A ferramenta prepara uma leitura mais limpa e pode alterar o layout original. Confira o resultado e não a use se a cor de fundo transmitir informação necessária."
           }
         ],
         "published": "2026-11-16",
@@ -1004,6 +1456,232 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "fix-browser-print-margins",
+        "slug": "fix-browser-print-margins",
+        "title": "ब्राउज़र से प्रिंट करते समय मार्जिन कैसे ठीक करें",
+        "metaTitle": "वेब पेज प्रिंट मार्जिन ठीक करें",
+        "metaDescription": "वेब पेज प्रिंट करते समय मार्जिन, स्केल और पेपर आकार ठीक करें। मुफ़्त, बिना साइनअप या वॉटरमार्क। पहले एक पेज की जाँच करें।",
+        "keyword": "वेब पेज प्रिंट मार्जिन ठीक करें",
+        "secondaryKeywords": [
+          "वेब पेज प्रिंट मार्जिन ठीक करें",
+          "fit webpage to print",
+          "save webpage print to PDF"
+        ],
+        "answer": "ब्राउज़र से प्रिंट करते समय मार्जिन ठीक करने के लिए प्रिंट प्रीव्यू खोलें और प्रिंट करने से पहले Margins, Scale और Paper size बदलें। पहले डिफ़ॉल्ट मार्जिन आज़माएँ; सामग्री कटे तो स्केल कम करें या कस्टम मार्जिन चुनें। प्रिंटर की भौतिक सीमा और वेबसाइट का CSS भी असर डालता है। सब प्रिंट करने से पहले एक पेज जाँचें।",
+        "tool": "website-to-pdf",
+        "ctaLabel": "प्रिंट मार्जिन ठीक करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "अगर वेब पेज बड़े मार्जिन, कटी सामग्री या खिसके कॉलम के साथ प्रिंट हो, तो साइट बदलने से पहले प्रिंट प्रीव्यू ठीक करें। पेपर, मार्जिन और स्केल एक पेज पर जाँचें। [Web Page Cleaner](/print) सार्वजनिक पेज के मेन्यू हटा सकता है, लेकिन पेज स्पेस प्रिंट सेटिंग से तय होता है।"
+          },
+          {
+            "t": "h2",
+            "x": "ब्राउज़र से प्रिंट करते समय मार्जिन कैसे ठीक करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "प्रिंट प्रीव्यू खोलें",
+                "x": "ब्राउज़र में Print चुनें और पेज का लेआउट देखें।"
+              },
+              {
+                "h": "पेपर और ओरिएंटेशन जाँचें",
+                "x": "A4 या Letter सही चुनें; सामग्री के हिसाब से Portrait या Landscape आज़माएँ।"
+              },
+              {
+                "h": "मार्जिन और स्केल बदलें",
+                "x": "पहले Default रखें। सामग्री कटे तो Custom margins चुनें या स्केल थोड़ा घटाएँ।"
+              },
+              {
+                "h": "हेडर और बैकग्राउंड देखें",
+                "x": "URL या तारीख जोड़ने वाले हेडर/फुटर बंद करें। बैकग्राउंड केवल ज़रूरत पर रखें।"
+              },
+              {
+                "h": "टेस्ट कर सेव करें",
+                "x": "पहला, बीच का और आख़िरी पेज देखें; फिर प्रिंट करें या Save as PDF चुनें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "वेब पेज साफ़ करें"
+          },
+          {
+            "t": "h2",
+            "x": "प्रिंट सेटिंग की तुलना"
+          },
+          {
+            "t": "table",
+            "head": [
+              "सेटिंग",
+              "कब उपयोग करें",
+              "ध्यान रखें"
+            ],
+            "rows": [
+              [
+                "डिफ़ॉल्ट मार्जिन",
+                "साइट लेआउट ठीक बैठता हो",
+                "CSS और प्रिंटर मार्जिन बदल सकते हैं।"
+              ],
+              [
+                "कस्टम मार्जिन",
+                "जगह चाहिए या कटाव रोकना हो",
+                "प्रिंटर में बिना प्रिंट वाला किनारा हो सकता है।"
+              ],
+              [
+                "स्केल घटाएँ",
+                "कॉलम या चित्र पेज से बाहर हो",
+                "टेक्स्ट बहुत छोटा हो सकता है।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "प्राइवेसी और प्रिंटर की सीमा"
+          },
+          {
+            "t": "p",
+            "x": "मार्जिन ब्राउज़र डायलॉग, पेज CSS और प्रिंटर के प्रिंट क्षेत्र पर निर्भर करते हैं। शून्य मार्जिन का अर्थ यह नहीं कि भौतिक प्रिंटर किनारे तक छाप सकेगा। पेज पर विज्ञापन हों तो [Web Page Cleaner](/print) आज़माएँ और फिर मार्जिन जाँचें। URL लोड करने में रिमोट रीडर लग सकता है; निजी लिंक पेस्ट न करें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "वेब पेज प्रिंट करते समय मार्जिन कैसे बदलें?",
+            "a": "ब्राउज़र में Print खोलें, More settings चुनें और Margins बदलें। Default या Custom आज़माकर प्रीव्यू जाँचें।"
+          },
+          {
+            "q": "शून्य मार्जिन पर भी पेज क्यों कटता है?",
+            "a": "प्रिंटर का एक हिस्सा भौतिक रूप से प्रिंट नहीं कर सकता और साइट CSS लागू कर सकती है। स्केल घटाएँ, ओरिएंटेशन बदलें या पेपर आकार जाँचें।"
+          },
+          {
+            "q": "पेज कटने से रोकने के लिए कौन सा स्केल रखें?",
+            "a": "एक तय मान नहीं है। स्केल धीरे-धीरे घटाएँ जब तक सामग्री फिट न हो और टेक्स्ट पढ़ने योग्य रहे।"
+          },
+          {
+            "q": "समायोजित पेज PDF में सेव कर सकते हैं?",
+            "a": "हाँ। Print डायलॉग में Save as PDF चुनें और देखें कि लेआउट व पेज अपेक्षित हैं।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "print-dark-background-page",
+        "slug": "print-dark-background-page",
+        "title": "डार्क बैकग्राउंड वाला वेब पेज कैसे प्रिंट करें",
+        "metaTitle": "डार्क बैकग्राउंड वेब पेज प्रिंट करें",
+        "metaDescription": "डार्क वेब पेज को सही कंट्रास्ट और कम स्याही के साथ प्रिंट करें। मुफ़्त, बिना साइनअप या वॉटरमार्क; पहले प्रीव्यू जाँचें।",
+        "keyword": "डार्क बैकग्राउंड वेब पेज प्रिंट",
+        "secondaryKeywords": [
+          "डार्क बैकग्राउंड वेब पेज प्रिंट",
+          "print webpage background colors",
+          "browser print background graphics"
+        ],
+        "answer": "डार्क बैकग्राउंड वाला वेब पेज प्रिंट करने के लिए ब्राउज़र प्रीव्यू खोलें और देखें कि बैकग्राउंड रंग शामिल हैं या नहीं। रंग न दिखें तो Print settings में Background graphics चालू करें; स्याही बचानी हो तो साइट का लाइट थीम या साफ़ दृश्य चुनें। पूरा पेज प्रिंट करने से पहले एक पेज पर कंट्रास्ट और छोटा टेक्स्ट जाँचें।",
+        "tool": "website-to-pdf",
+        "ctaLabel": "साफ़ वेब पेज प्रिंट करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "स्याही बचाने के लिए ब्राउज़र अक्सर बैकग्राउंड रंग और चित्र छोड़ देते हैं, इसलिए डार्क पेज सफेद छप सकता है या कंट्रास्ट खो सकता है। अगर रंग जानकारी देता है तो Background graphics चालू करें। केवल पढ़ने योग्य पाठ चाहिए तो लाइट थीम या [Web Page Cleaner](/print) इस्तेमाल करें और प्रीव्यू जाँचें।"
+          },
+          {
+            "t": "h2",
+            "x": "डार्क बैकग्राउंड वाला वेब पेज कैसे प्रिंट करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "प्रिंट प्रीव्यू खोलें",
+                "x": "ब्राउज़र में Print चुनें और पेज देखें।"
+              },
+              {
+                "h": "तय करें कि बैकग्राउंड ज़रूरी है",
+                "x": "डेटा दिखाने वाले रंग रखने के लिए Background graphics चालू करें; स्याही बचानी हो तो बंद रखें।"
+              },
+              {
+                "h": "लाइट थीम आज़माएँ",
+                "x": "साइट में लाइट थीम या प्रिंट दृश्य हो तो पहले उसे चुनें। सार्वजनिक अव्यवस्थित पेज पर [Web Page Cleaner](/print) आज़माएँ।"
+              },
+              {
+                "h": "रंग और पेपर सेट करें",
+                "x": "ज़रूरत के अनुसार Color या Black and white चुनें। ओरिएंटेशन, मार्जिन और स्केल जाँचें।"
+              },
+              {
+                "h": "एक पेज जाँचें",
+                "x": "कंट्रास्ट, ग्राफ़ और छोटे अक्षर देखें; फिर प्रिंट करें या PDF सेव करें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "साफ़ वेब पेज प्रिंट करें"
+          },
+          {
+            "t": "h2",
+            "x": "पेज प्रिंट करने के तरीकों की तुलना"
+          },
+          {
+            "t": "table",
+            "head": [
+              "विकल्प",
+              "नतीजा",
+              "कब चुनें"
+            ],
+            "rows": [
+              [
+                "Background graphics चालू",
+                "रंग और कुछ बैकग्राउंड बने रहते हैं",
+                "रंग श्रेणी या स्थिति बताता हो।"
+              ],
+              [
+                "Background graphics बंद",
+                "स्याही बचती है; डार्क बैकग्राउंड गायब हो सकता है",
+                "पाठ पर्याप्त हो और बैकग्राउंड सजावटी हो।"
+              ],
+              [
+                "लाइट थीम या क्लीन व्यू",
+                "हल्का बैकग्राउंड, अधिक पढ़ने योग्य पाठ",
+                "साइट लाइट थीम या रीडर दृश्य देती हो।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "जानकारी बचाते हुए स्याही बचाएँ"
+          },
+          {
+            "t": "p",
+            "x": "बैकग्राउंड चालू करने से स्याही का उपयोग बहुत बढ़ सकता है, खासकर लगभग काले पेज पर। डिजिटल कॉपी के लिए पहले PDF सेव करें और वास्तविक आकार में जाँचें। कोई रंग स्थिति, संकेत या लेजेंड बताता हो तो हटाने से पहले पुष्टि करें कि जानकारी स्पष्ट बनी रहे। Web Page Cleaner में URL डालने पर पहले PrintxPDF का रीडर चलता है; वह विफल या धीमा हो तो URL सार्वजनिक रीडर तक जा सकता है।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "डार्क पेज को बैकग्राउंड सहित कैसे प्रिंट करें?",
+            "a": "Print डायलॉग में More settings खोलकर Background graphics चालू करें। प्रीव्यू जाँचें; विकल्प का नाम ब्राउज़र के अनुसार बदल सकता है।"
+          },
+          {
+            "q": "प्रिंट में डार्क बैकग्राउंड क्यों गायब है?",
+            "a": "कई ब्राउज़र स्याही बचाने के लिए बैकग्राउंड डिफ़ॉल्ट रूप से हटाते हैं। Background graphics चालू करें या साइट का प्रिंट विकल्प लें।"
+          },
+          {
+            "q": "डार्क बैकग्राउंड प्रिंट करने में ज्यादा स्याही लगती है?",
+            "a": "हाँ। बड़े डार्क हिस्से अधिक स्याही या टोनर लेते हैं। लाइट थीम आज़माएँ या केवल ज़रूरी भाग प्रिंट करें।"
+          },
+          {
+            "q": "क्या Web Page Cleaner डार्क बैकग्राउंड सफेद कर देता है?",
+            "a": "यह पढ़ने योग्य दृश्य बनाता है और मूल लेआउट बदल सकता है। नतीजा जाँचें और अगर बैकग्राउंड रंग जानकारी देता हो तो इसका उपयोग न करें।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -1336,6 +2014,232 @@
           {
             "q": "ما البيانات التي أحتفظ بها كسجل؟",
             "a": "احتفظ بالملف والرابط وتاريخ ووقت الوصول، وبصورة شاشة إذا كان السياق المرئي مهمًا. اتبع إجراءات مؤسستك الرسمية للتدقيق أو الاستخدام القانوني."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "fix-browser-print-margins",
+        "slug": "fix-browser-print-margins",
+        "title": "كيفية إصلاح الهوامش عند الطباعة من المتصفح",
+        "metaTitle": "إصلاح هوامش طباعة صفحة ويب",
+        "metaDescription": "أصلح هوامش طباعة صفحة ويب بضبط المقياس والورق والمعاينة. مجانًا وبلا تسجيل أو علامة مائية. افحص صفحة اختبار قبل طباعة المستند كاملًا.",
+        "keyword": "إصلاح هوامش طباعة صفحة ويب",
+        "secondaryKeywords": [
+          "إصلاح هوامش طباعة صفحة ويب",
+          "fit webpage to print",
+          "save webpage print to PDF"
+        ],
+        "answer": "لإصلاح الهوامش عند الطباعة من المتصفح، افتح المعاينة واضبط الهوامش والمقياس وحجم الورق قبل الطباعة. ابدأ بالهوامش الافتراضية؛ وإذا قُص المحتوى، فقلل المقياس أو اختر هوامش مخصصة. تؤثر حدود الطابعة المادية وCSS الموقع أيضًا في النتيجة. راجع صفحة اختبار قبل حفظ المستند كله أو طباعته.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "ضبط هوامش الطباعة",
+        "body": [
+          {
+            "t": "p",
+            "x": "إذا ظهرت صفحة الويب بهوامش واسعة أو محتوى مقصوص أو أعمدة مزاحة، فعدّل معاينة الطباعة قبل تغيير الموقع. تحقق من الورق والهوامش والمقياس على صفحة واحدة. يمكن لـ [Web Page Cleaner](/print) إزالة قوائم الصفحات العامة، لكن إعدادات الطباعة تظل هي التي تحدد مساحة الصفحة."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية إصلاح الهوامش عند الطباعة من المتصفح"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "افتح معاينة الطباعة",
+                "x": "اختر طباعة في المتصفح لمعرفة توزيع محتوى الصفحة."
+              },
+              {
+                "h": "تحقق من الورق والاتجاه",
+                "x": "اختر A4 أو Letter المناسب، وجرب الوضع الرأسي أو الأفقي حسب المحتوى."
+              },
+              {
+                "h": "اضبط الهوامش والمقياس",
+                "x": "ابدأ بالافتراضي. إذا قُص المحتوى، جرب هوامش مخصصة أو قلل المقياس قليلًا."
+              },
+              {
+                "h": "راجع الترويسات والخلفية",
+                "x": "أوقف الترويسة والتذييل إذا أضافا رابطًا أو تاريخًا. فعّل رسومات الخلفية عند الحاجة فقط."
+              },
+              {
+                "h": "اختبر ثم احفظ",
+                "x": "راجع الصفحة الأولى وصفحة وسطى والأخيرة، ثم اطبع أو اختر الحفظ PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "تنظيف صفحة ويب"
+          },
+          {
+            "t": "h2",
+            "x": "قارن إعدادات الطباعة"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الإعداد",
+              "متى تستخدمه",
+              "تنبيه"
+            ],
+            "rows": [
+              [
+                "هوامش افتراضية",
+                "عندما يناسب تخطيط الموقع",
+                "تتأثر الهوامش بـ CSS والطابعة."
+              ],
+              [
+                "هوامش مخصصة",
+                "لإضافة مساحة أو منع القص",
+                "قد لا تطبع الطابعة حتى الحافة."
+              ],
+              [
+                "تقليل المقياس",
+                "عندما يتجاوز عمود أو صورة الصفحة",
+                "قد يصغر النص أكثر من اللازم."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "الخصوصية وحدود الطابعة"
+          },
+          {
+            "t": "p",
+            "x": "تعتمد الهوامش على حوار المتصفح وCSS الصفحة ومساحة الطباعة الفعلية. لا تعني الهوامش الصفرية أن الطابعة تستطيع الطباعة حتى حافة الورق. إذا ازدحمت الصفحة بالإعلانات، جرب [Web Page Cleaner](/print) ثم راجع الهوامش. قد يعتمد جلب الرابط على قارئ بعيد؛ لا تلصق روابط خاصة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "كيف أغير الهوامش عند طباعة صفحة ويب؟",
+            "a": "افتح طباعة في المتصفح، ثم الإعدادات الإضافية وغير الهوامش. جرب الافتراضي أو المخصص وراجع المعاينة."
+          },
+          {
+            "q": "لماذا يُقص المحتوى رغم ضبط الهوامش على صفر؟",
+            "a": "للطابعة مساحة لا يمكنها الطباعة عليها وقد يفرض الموقع CSS. قلل المقياس أو غير الاتجاه أو حجم الورق."
+          },
+          {
+            "q": "ما المقياس الذي يمنع قص الصفحة؟",
+            "a": "لا توجد قيمة واحدة. قلل المقياس تدريجيًا حتى يلائم المحتوى الصفحة مع بقاء النص مقروءًا."
+          },
+          {
+            "q": "هل يمكن حفظ الصفحة المعدلة PDF؟",
+            "a": "نعم. اختر الحفظ PDF في نافذة الطباعة وتحقق من أن التخطيط وعدد الصفحات صحيحان."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "print-dark-background-page",
+        "slug": "print-dark-background-page",
+        "title": "كيفية طباعة صفحة ويب بخلفية داكنة",
+        "metaTitle": "طباعة صفحة ويب بخلفية داكنة",
+        "metaDescription": "اطبع صفحة داكنة بتباين واضح وحبر أقل. مجانًا وبلا تسجيل أو علامة مائية؛ راجع المعاينة وافحص صفحة تجريبية قبل طباعة البقية.",
+        "keyword": "طباعة صفحة ويب بخلفية داكنة",
+        "secondaryKeywords": [
+          "طباعة صفحة ويب بخلفية داكنة",
+          "print webpage background colors",
+          "browser print background graphics"
+        ],
+        "answer": "لطباعة صفحة ويب بخلفية داكنة، افتح معاينة المتصفح وتحقق مما إذا كانت ألوان الخلفية مشمولة. إذا غابت الخلفية، فعّل رسومات الخلفية في إعدادات الطباعة؛ وإذا استهلكت حبرًا كثيرًا، استخدم المظهر الفاتح للموقع أو نسخة نظيفة. راجع التباين والنص في صفحة اختبار قبل طباعة الكل.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "طباعة صفحة ويب نظيفة",
+        "body": [
+          {
+            "t": "p",
+            "x": "غالبًا ما تتجاهل المتصفحات ألوان وصور الخلفية لتوفير الحبر، لذا قد تظهر الصفحة الداكنة بيضاء أو ضعيفة التباين. فعّل رسومات الخلفية إذا كان اللون ينقل معلومة. وإذا احتجت النص فقط، استخدم المظهر الفاتح أو [Web Page Cleaner](/print) وراجع المعاينة."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية طباعة صفحة ويب بخلفية داكنة"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "افتح معاينة الطباعة",
+                "x": "اختر طباعة في المتصفح وراجع شكل الصفحة."
+              },
+              {
+                "h": "حدد أهمية الخلفية",
+                "x": "فعّل رسومات الخلفية للحفاظ على ألوان تحمل بيانات؛ وأوقفها لتوفير الحبر."
+              },
+              {
+                "h": "جرّب مظهرًا فاتحًا",
+                "x": "استخدم المظهر الفاتح أو خيار الطباعة الخاص بالموقع إن توفر. للصفحات العامة المزدحمة جرب [Web Page Cleaner](/print)."
+              },
+              {
+                "h": "اضبط اللون والورق",
+                "x": "اختر الألوان أو الأبيض والأسود حسب حاجتك. تحقق من الاتجاه والهوامش والمقياس."
+              },
+              {
+                "h": "راجع صفحة اختبار",
+                "x": "تحقق من التباين والرسوم والنص الصغير ثم اطبع أو احفظ PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "طباعة صفحة ويب نظيفة"
+          },
+          {
+            "t": "h2",
+            "x": "قارن طرق طباعة الصفحة"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الخيار",
+              "النتيجة",
+              "متى يناسب"
+            ],
+            "rows": [
+              [
+                "رسومات الخلفية مفعلة",
+                "تحافظ على الألوان وبعض الخلفيات",
+                "عندما يدل اللون على فئة أو حالة."
+              ],
+              [
+                "رسومات الخلفية معطلة",
+                "توفير الحبر؛ وقد تختفي الخلفية الداكنة",
+                "عندما يكفي النص والخلفية للزينة."
+              ],
+              [
+                "مظهر فاتح أو عرض نظيف",
+                "خلفية فاتحة ونص أسهل قراءة",
+                "عندما يوفر الموقع مظهرًا فاتحًا أو قارئًا."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "وفر الحبر دون فقد المعلومات"
+          },
+          {
+            "t": "p",
+            "x": "قد يؤدي تفعيل الخلفيات إلى زيادة استهلاك الحبر كثيرًا، خاصة الصفحات شبه السوداء. للنسخة الرقمية، احفظ PDF أولًا وراجعه بالحجم الفعلي. إذا كان اللون يوضح حالة أو مفتاحًا أو تنبيهًا، فتأكد من بقاء المعلومة واضحة قبل إزالته. عند جلب URL في Web Page Cleaner، تحاول PrintxPDF قارئها أولًا؛ وإذا أخفق أو تأخر فقد يصل الرابط إلى قارئات عامة."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "كيف أطبع صفحة داكنة مع خلفيتها؟",
+            "a": "في نافذة الطباعة، افتح إعدادات إضافية وفعّل رسومات الخلفية. راجع المعاينة لأن اسم الخيار وتوفره يختلفان حسب المتصفح."
+          },
+          {
+            "q": "لماذا تختفي الخلفية الداكنة عند الطباعة؟",
+            "a": "تتجاهل متصفحات كثيرة الخلفيات افتراضيًا لتوفير الحبر. فعّل رسومات الخلفية أو استخدم وضع الطباعة في الموقع."
+          },
+          {
+            "q": "هل تستهلك الخلفيات الداكنة حبرًا أكثر؟",
+            "a": "نعم. قد تستهلك المساحات الداكنة الكبيرة حبرًا أو مسحوقًا أكثر. جرب المظهر الفاتح أو اطبع الجزء الضروري فقط."
+          },
+          {
+            "q": "هل يحول Web Page Cleaner الخلفية الداكنة إلى بيضاء؟",
+            "a": "يعد عرضًا أسهل للقراءة وقد يغير التصميم الأصلي. راجع النتيجة ولا تستخدمه إذا كانت ألوان الخلفية تحمل معلومة مهمة."
           }
         ],
         "published": "2026-11-16",
@@ -1676,6 +2580,232 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "fix-browser-print-margins",
+        "slug": "fix-browser-print-margins",
+        "title": "ব্রাউজার থেকে প্রিন্টে মার্জিন ঠিক করার উপায়",
+        "metaTitle": "ওয়েব পেজ প্রিন্ট মার্জিন ঠিক করুন",
+        "metaDescription": "ওয়েব পেজ প্রিন্টে মার্জিন, স্কেল ও কাগজের মাপ ঠিক করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই। আগে একটি পৃষ্ঠা দেখে নিন।",
+        "keyword": "ওয়েব পেজ প্রিন্ট মার্জিন ঠিক করুন",
+        "secondaryKeywords": [
+          "ওয়েব পেজ প্রিন্ট মার্জিন ঠিক করুন",
+          "fit webpage to print",
+          "save webpage print to PDF"
+        ],
+        "answer": "ব্রাউজার থেকে প্রিন্টে মার্জিন ঠিক করতে Print preview খুলে প্রিন্টের আগে Margins, Scale ও Paper size বদলান। আগে ডিফল্ট মার্জিন নিন; কনটেন্ট কাটলে স্কেল কমান বা কাস্টম মার্জিন দিন। প্রিন্টারের শারীরিক সীমা এবং সাইটের CSS-ও ফল বদলায়। সব পেজ সেভ বা প্রিন্টের আগে একটি পেজ দেখুন।",
+        "tool": "website-to-pdf",
+        "ctaLabel": "প্রিন্ট মার্জিন ঠিক করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "ওয়েব পেজ বড় মার্জিন, কাটা লেখা বা সরে যাওয়া কলামসহ প্রিন্ট হলে সাইট বদলানোর আগে প্রিভিউ ঠিক করুন। কাগজ, মার্জিন ও স্কেল এক পেজে পরীক্ষা করুন। [Web Page Cleaner](/print) পাবলিক পেজের মেনু সরাতে পারে, তবে পেজে কতটা জায়গা থাকবে তা প্রিন্ট সেটিং ঠিক করে।"
+          },
+          {
+            "t": "h2",
+            "x": "ব্রাউজার থেকে প্রিন্টে মার্জিন ঠিক করার উপায়"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "প্রিন্ট প্রিভিউ খুলুন",
+                "x": "ব্রাউজারে Print বেছে পেজ কীভাবে বসবে দেখুন।"
+              },
+              {
+                "h": "কাগজ ও দিক যাচাই করুন",
+                "x": "A4 বা Letter নিন এবং কনটেন্ট অনুযায়ী Portrait বা Landscape পরীক্ষা করুন।"
+              },
+              {
+                "h": "মার্জিন ও স্কেল বদলান",
+                "x": "আগে Default রাখুন। কনটেন্ট কাটলে Custom margins চেষ্টা করুন বা স্কেল অল্প কমান।"
+              },
+              {
+                "h": "হেডার ও ব্যাকগ্রাউন্ড দেখুন",
+                "x": "URL বা তারিখ যোগ হলে header/footer বন্ধ করুন। দরকার না হলে background graphics বন্ধ রাখুন।"
+              },
+              {
+                "h": "টেস্ট করে সেভ করুন",
+                "x": "প্রথম, মাঝের ও শেষ পেজ দেখুন; তারপর প্রিন্ট বা Save as PDF দিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "ওয়েবপেজ পরিষ্কার করুন"
+          },
+          {
+            "t": "h2",
+            "x": "প্রিন্ট সেটিং তুলনা"
+          },
+          {
+            "t": "table",
+            "head": [
+              "সেটিং",
+              "কখন নেবেন",
+              "সীমা"
+            ],
+            "rows": [
+              [
+                "ডিফল্ট মার্জিন",
+                "সাইটের লেআউট ঠিক থাকলে",
+                "CSS ও প্রিন্টারে মার্জিন বদলাতে পারে।"
+              ],
+              [
+                "কাস্টম মার্জিন",
+                "জায়গা দরকার বা কাটিং আটকাতে",
+                "প্রিন্টারের কিছু অংশে ছাপা যায় না।"
+              ],
+              [
+                "স্কেল কমানো",
+                "কলাম বা ছবি পেজ ছাড়ালে",
+                "লেখা খুব ছোট হতে পারে।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "গোপনীয়তা ও প্রিন্টারের সীমা"
+          },
+          {
+            "t": "p",
+            "x": "মার্জিন ব্রাউজারের ডায়ালগ, পেজ CSS এবং প্রিন্টারের ছাপার সীমার ওপর নির্ভর করে। শূন্য মার্জিন মানে প্রিন্টার কাগজের একদম কিনারা পর্যন্ত ছাপবে না। বিজ্ঞাপন থাকলে [Web Page Cleaner](/print) চেষ্টা করুন, তারপর মার্জিন আবার দেখুন। URL আনতে দূরবর্তী রিডার লাগতে পারে; ব্যক্তিগত লিংক দেবেন না।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ওয়েব পেজ প্রিন্টে মার্জিন কীভাবে বদলাব?",
+            "a": "ব্রাউজারে Print খুলে More settings থেকে Margins বদলান। Default বা Custom চেষ্টা করে প্রিভিউ দেখুন।"
+          },
+          {
+            "q": "শূন্য মার্জিনেও কনটেন্ট কাটে কেন?",
+            "a": "প্রিন্টারের ছাপা যায় না এমন সীমা থাকে এবং সাইট CSS দিতে পারে। স্কেল কমান, দিক বদলান বা কাগজের মাপ দেখুন।"
+          },
+          {
+            "q": "পেজ কাটিং ঠেকাতে কোন স্কেল নেব?",
+            "a": "একটি নির্দিষ্ট মান নেই। কনটেন্ট ফিট হওয়া পর্যন্ত ধীরে স্কেল কমান, তবে লেখা পড়া যায় কি না দেখুন।"
+          },
+          {
+            "q": "পরিবর্তিত পেজ PDF-এ রাখা যাবে?",
+            "a": "হ্যাঁ। Print ডায়ালগে Save as PDF বেছে নিয়ে লেআউট ও পেজ সংখ্যা পরীক্ষা করুন।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "print-dark-background-page",
+        "slug": "print-dark-background-page",
+        "title": "ডার্ক ব্যাকগ্রাউন্ডের ওয়েব পেজ কীভাবে প্রিন্ট করবেন",
+        "metaTitle": "ডার্ক ব্যাকগ্রাউন্ড ওয়েব পেজ প্রিন্ট",
+        "metaDescription": "ডার্ক ওয়েব পেজে কনট্রাস্ট রেখে কম কালি ব্যবহার করে প্রিন্ট করুন। বিনামূল্যে, সাইনআপ বা ওয়াটারমার্ক নেই; আগে প্রিভিউ দেখুন।",
+        "keyword": "ডার্ক ব্যাকগ্রাউন্ড ওয়েব পেজ প্রিন্ট",
+        "secondaryKeywords": [
+          "ডার্ক ব্যাকগ্রাউন্ড ওয়েব পেজ প্রিন্ট",
+          "print webpage background colors",
+          "browser print background graphics"
+        ],
+        "answer": "ডার্ক ব্যাকগ্রাউন্ডের ওয়েব পেজ প্রিন্ট করতে ব্রাউজার প্রিভিউ খুলে দেখুন ব্যাকগ্রাউন্ড রং আসছে কি না। না এলে প্রিন্ট সেটিংসে Background graphics চালু করুন; কালি বেশি লাগলে সাইটের লাইট থিম বা পরিষ্কার ভিউ নিন। সব পেজ প্রিন্টের আগে একটি পেজে কনট্রাস্ট ও ছোট লেখা যাচাই করুন।",
+        "tool": "website-to-pdf",
+        "ctaLabel": "পরিষ্কার ওয়েবপেজ প্রিন্ট করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "কালি বাঁচাতে ব্রাউজার প্রায়ই ব্যাকগ্রাউন্ড রং ও ছবি বাদ দেয়, তাই ডার্ক পেজ সাদা বা কম কনট্রাস্টে ছাপতে পারে। রং তথ্য দিলে Background graphics চালু করুন। শুধু পড়ার মতো লেখা চাইলে লাইট থিম বা [Web Page Cleaner](/print) নিন এবং প্রিভিউ দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "ডার্ক ব্যাকগ্রাউন্ডের ওয়েব পেজ কীভাবে প্রিন্ট করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "প্রিন্ট প্রিভিউ খুলুন",
+                "x": "ব্রাউজারে Print বেছে পেজের রূপ দেখুন।"
+              },
+              {
+                "h": "ব্যাকগ্রাউন্ড দরকার কি ঠিক করুন",
+                "x": "তথ্যবাহী রং রাখতে Background graphics চালু করুন; কালি বাঁচাতে বন্ধ রাখুন।"
+              },
+              {
+                "h": "লাইট থিম পরীক্ষা করুন",
+                "x": "সাইটে লাইট থিম বা Print view থাকলে সেটি নিন। পাবলিক পেজ অগোছালো হলে [Web Page Cleaner](/print) দেখুন।"
+              },
+              {
+                "h": "রং ও কাগজ সেট করুন",
+                "x": "Color বা Black and white বেছে নিন। দিক, মার্জিন ও স্কেল যাচাই করুন।"
+              },
+              {
+                "h": "একটি পেজ পরীক্ষা করুন",
+                "x": "কনট্রাস্ট, গ্রাফিক ও ছোট লেখা দেখে তারপর প্রিন্ট বা PDF সেভ করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "পরিষ্কার ওয়েবপেজ প্রিন্ট করুন"
+          },
+          {
+            "t": "h2",
+            "x": "পেজ প্রিন্টের পদ্ধতি তুলনা"
+          },
+          {
+            "t": "table",
+            "head": [
+              "বিকল্প",
+              "ফল",
+              "কখন নেবেন"
+            ],
+            "rows": [
+              [
+                "Background graphics চালু",
+                "রং ও কিছু ব্যাকগ্রাউন্ড থাকে",
+                "রং বিভাগ বা অবস্থা বোঝায়।"
+              ],
+              [
+                "Background graphics বন্ধ",
+                "কালি কম লাগে; ডার্ক ব্যাকগ্রাউন্ড বাদ পড়তে পারে",
+                "লেখা যথেষ্ট, ব্যাকগ্রাউন্ড সাজসজ্জা।"
+              ],
+              [
+                "লাইট থিম বা পরিষ্কার ভিউ",
+                "হালকা ব্যাকগ্রাউন্ড, পড়া সহজ",
+                "সাইটে লাইট থিম বা রিডার ভিউ আছে।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "তথ্য রেখে কালি বাঁচান"
+          },
+          {
+            "t": "p",
+            "x": "ব্যাকগ্রাউন্ড চালু করলে কালি অনেক বেশি লাগতে পারে, বিশেষ করে প্রায় কালো পেজে। ডিজিটাল কপির জন্য আগে PDF সেভ করে আসল মাপে দেখুন। কোনো রং অবস্থা, লেজেন্ড বা সতর্কতা বোঝালে সরানোর আগে তথ্য স্পষ্ট থাকে কি না দেখুন। Web Page Cleaner-এ URL দিলে আগে PrintxPDF নিজস্ব রিডার চেষ্টা করে; ব্যর্থ বা ধীর হলে URL পাবলিক রিডার পেতে পারে।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "ডার্ক পেজ ব্যাকগ্রাউন্ডসহ কীভাবে প্রিন্ট করব?",
+            "a": "প্রিন্ট ডায়ালগে More settings খুলে Background graphics চালু করুন। প্রিভিউ দেখুন; ব্রাউজারভেদে বিকল্পের নাম বদলাতে পারে।"
+          },
+          {
+            "q": "প্রিন্টে ডার্ক ব্যাকগ্রাউন্ড হারায় কেন?",
+            "a": "অনেক ব্রাউজার কালি বাঁচাতে ডিফল্টভাবে ব্যাকগ্রাউন্ড বাদ দেয়। Background graphics চালু করুন বা সাইটের Print অপশন নিন।"
+          },
+          {
+            "q": "ডার্ক ব্যাকগ্রাউন্ড প্রিন্টে কালি বেশি লাগে?",
+            "a": "হ্যাঁ। বড় ডার্ক অংশে বেশি কালি বা টোনার লাগে। লাইট থিম চেষ্টা করুন বা শুধু দরকারি অংশ প্রিন্ট করুন।"
+          },
+          {
+            "q": "Web Page Cleaner কি ডার্ক ব্যাকগ্রাউন্ড সাদা করে?",
+            "a": "এটি পড়ার মতো ভিউ বানায় এবং মূল লেআউট বদলাতে পারে। ফল দেখুন; ব্যাকগ্রাউন্ডে তথ্য থাকলে ব্যবহার করবেন না।"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -2012,6 +3142,232 @@
         ],
         "published": "2026-11-16",
         "updated": "2026-11-16"
+      },
+      {
+        "topic": "fix-browser-print-margins",
+        "slug": "fix-browser-print-margins",
+        "title": "Cách sửa lề khi in trang web từ trình duyệt",
+        "metaTitle": "Sửa lề khi in trang web",
+        "metaDescription": "Sửa lề trang web bằng cách chỉnh tỷ lệ, khổ giấy và bản xem trước. Miễn phí, không đăng ký hay watermark.",
+        "keyword": "sửa lề khi in trang web",
+        "secondaryKeywords": [
+          "sửa lề khi in trang web",
+          "fit webpage to print",
+          "save webpage print to PDF"
+        ],
+        "answer": "Để sửa lề khi in trang web từ trình duyệt, mở bản xem trước và chỉnh Lề, Tỷ lệ, Khổ giấy trước khi in. Hãy thử lề mặc định trước; nếu nội dung bị cắt, giảm tỷ lệ hoặc chọn lề tùy chỉnh. Giới hạn vật lý của máy in và CSS của website cũng ảnh hưởng kết quả. Kiểm tra một trang trước khi lưu hoặc in toàn bộ.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "Chỉnh lề in",
+        "body": [
+          {
+            "t": "p",
+            "x": "Nếu trang web in ra có lề quá rộng, nội dung bị cắt hoặc cột lệch, hãy chỉnh bản xem trước trước khi sửa website. Thử khổ giấy, lề và tỷ lệ trên một trang. [Web Page Cleaner](/print) có thể bỏ menu trên trang công khai, nhưng thiết lập in mới quyết định vùng trang."
+          },
+          {
+            "t": "h2",
+            "x": "Cách sửa lề khi in trang web từ trình duyệt"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Mở bản xem trước in",
+                "x": "Chọn In trong trình duyệt để xem bố cục trang."
+              },
+              {
+                "h": "Kiểm tra giấy và hướng",
+                "x": "Chọn đúng A4 hoặc Letter; thử dọc hay ngang tùy nội dung."
+              },
+              {
+                "h": "Chỉnh lề và tỷ lệ",
+                "x": "Bắt đầu với mặc định. Nếu bị cắt, thử lề tùy chỉnh hoặc giảm tỷ lệ một chút."
+              },
+              {
+                "h": "Kiểm tra đầu trang và nền",
+                "x": "Tắt đầu/chân trang nếu chúng thêm URL hoặc ngày. Chỉ bật đồ họa nền khi cần."
+              },
+              {
+                "h": "In thử rồi lưu",
+                "x": "Kiểm tra trang đầu, một trang giữa và trang cuối; sau đó in hoặc chọn Lưu thành PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "Làm sạch trang web"
+          },
+          {
+            "t": "h2",
+            "x": "So sánh cài đặt in"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Thiết lập",
+              "Dùng khi",
+              "Lưu ý"
+            ],
+            "rows": [
+              [
+                "Lề mặc định",
+                "Bố cục website đã vừa",
+                "CSS và máy in có thể ảnh hưởng lề."
+              ],
+              [
+                "Lề tùy chỉnh",
+                "Cần thêm chỗ hoặc tránh cắt",
+                "Máy in có vùng không thể in."
+              ],
+              [
+                "Giảm tỷ lệ",
+                "Cột hoặc ảnh vượt khỏi trang",
+                "Chữ có thể quá nhỏ."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Quyền riêng tư và giới hạn máy in"
+          },
+          {
+            "t": "p",
+            "x": "Lề phụ thuộc hộp thoại trình duyệt, CSS trang và vùng in vật lý. Lề bằng không không có nghĩa máy in in sát mép giấy được. Nếu trang có quảng cáo, thử [Web Page Cleaner](/print) rồi kiểm tra lại lề. Việc lấy URL có thể dùng trình đọc từ xa; đừng dán liên kết riêng tư."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Đổi lề khi in trang web thế nào?",
+            "a": "Mở In trong trình duyệt, vào Cài đặt khác và đổi Lề. Thử mặc định hoặc tùy chỉnh rồi xem bản xem trước."
+          },
+          {
+            "q": "Vì sao nội dung vẫn bị cắt khi lề bằng không?",
+            "a": "Máy in có vùng vật lý không thể in và website có thể áp dụng CSS. Hãy giảm tỷ lệ, đổi hướng giấy hoặc chọn khổ khác."
+          },
+          {
+            "q": "Nên dùng tỷ lệ nào để trang không bị cắt?",
+            "a": "Không có một mức chung. Giảm từ từ đến khi nội dung vừa trang và chữ vẫn dễ đọc."
+          },
+          {
+            "q": "Có thể lưu trang đã chỉnh thành PDF không?",
+            "a": "Có. Chọn Lưu thành PDF trong hộp thoại in rồi kiểm tra bố cục và số trang."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "print-dark-background-page",
+        "slug": "print-dark-background-page",
+        "title": "Cách in trang web có nền tối",
+        "metaTitle": "In trang web có nền tối",
+        "metaDescription": "In trang web nền tối với độ tương phản tốt và ít mực hơn. Miễn phí, không đăng ký hay watermark; hãy xem trước.",
+        "keyword": "in trang web có nền tối",
+        "secondaryKeywords": [
+          "in trang web có nền tối",
+          "print webpage background colors",
+          "browser print background graphics"
+        ],
+        "answer": "Để in trang web có nền tối, mở bản xem trước của trình duyệt và kiểm tra màu nền có được giữ không. Nếu nền biến mất, bật Đồ họa nền trong cài đặt in; nếu tốn mực, dùng giao diện sáng của website hoặc bản đã làm sạch. Hãy kiểm tra độ tương phản và chữ nhỏ trên một trang mẫu trước khi in toàn bộ.",
+        "tool": "website-to-pdf",
+        "ctaLabel": "In trang web sạch",
+        "body": [
+          {
+            "t": "p",
+            "x": "Trình duyệt thường bỏ màu và ảnh nền để tiết kiệm mực, nên trang tối có thể in thành trắng hoặc mất tương phản. Bật Đồ họa nền nếu màu mang thông tin. Nếu chỉ cần chữ dễ đọc, dùng giao diện sáng hoặc [Web Page Cleaner](/print), rồi kiểm tra bản xem trước."
+          },
+          {
+            "t": "h2",
+            "x": "Cách in trang web có nền tối"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Mở bản xem trước in",
+                "x": "Chọn In trong trình duyệt và xem trang sẽ hiển thị ra sao."
+              },
+              {
+                "h": "Quyết định có cần nền không",
+                "x": "Bật Đồ họa nền nếu màu truyền tải dữ liệu; tắt nếu muốn tiết kiệm mực."
+              },
+              {
+                "h": "Thử giao diện sáng",
+                "x": "Dùng giao diện sáng hoặc chế độ in của website nếu có. Với trang công khai nhiều nội dung thừa, thử [Web Page Cleaner](/print)."
+              },
+              {
+                "h": "Chỉnh màu và giấy",
+                "x": "Chọn màu hoặc đen trắng theo nhu cầu. Kiểm tra hướng giấy, lề và tỷ lệ."
+              },
+              {
+                "h": "Kiểm tra một trang",
+                "x": "Xem độ tương phản, biểu đồ và chữ nhỏ; sau đó in hoặc lưu PDF."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "In trang web sạch"
+          },
+          {
+            "t": "h2",
+            "x": "So sánh cách in trang"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Tùy chọn",
+              "Kết quả",
+              "Khi phù hợp"
+            ],
+            "rows": [
+              [
+                "Bật Đồ họa nền",
+                "Giữ màu và một số nền",
+                "Màu thể hiện nhóm hoặc trạng thái."
+              ],
+              [
+                "Tắt Đồ họa nền",
+                "Tiết kiệm mực; nền tối có thể mất",
+                "Chỉ cần văn bản, nền mang tính trang trí."
+              ],
+              [
+                "Giao diện sáng hoặc bản sạch",
+                "Nền sáng, chữ dễ đọc hơn",
+                "Website có chế độ sáng hoặc đọc."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Tiết kiệm mực mà không mất thông tin"
+          },
+          {
+            "t": "p",
+            "x": "Bật nền có thể tăng đáng kể lượng mực, nhất là trang gần như đen. Với bản số, hãy lưu PDF trước và xem ở kích thước thực tế. Nếu màu biểu thị trạng thái, chú giải hoặc cảnh báo, hãy bảo đảm thông tin vẫn rõ trước khi bỏ màu. Khi lấy URL bằng Web Page Cleaner, PrintxPDF thử trình đọc riêng trước; nếu lỗi hoặc chậm, URL có thể đến dịch vụ đọc công khai."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Làm sao in trang tối mà vẫn có nền?",
+            "a": "Trong hộp thoại in, mở Cài đặt khác và bật Đồ họa nền. Hãy xem trước vì tên và tùy chọn thay đổi theo trình duyệt."
+          },
+          {
+            "q": "Vì sao nền tối biến mất khi in?",
+            "a": "Nhiều trình duyệt mặc định bỏ nền để tiết kiệm mực. Bật Đồ họa nền hoặc dùng chế độ in của website."
+          },
+          {
+            "q": "In nền tối có tốn mực hơn không?",
+            "a": "Có. Vùng tối lớn có thể tốn nhiều mực hoặc toner. Thử giao diện sáng hoặc chỉ in phần cần thiết."
+          },
+          {
+            "q": "Web Page Cleaner có đổi nền tối thành trắng không?",
+            "a": "Công cụ tạo bản dễ đọc hơn và có thể đổi bố cục gốc. Hãy kiểm tra; đừng dùng nếu màu nền chứa thông tin quan trọng."
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
       }
     ]
   },
@@ -2344,6 +3700,232 @@
           {
             "q": "作为记录应保存哪些信息？",
             "a": "保存文件、URL、访问日期和时间；若视觉背景重要，也保存截图。审计或法律用途请遵循组织的正式流程。"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "fix-browser-print-margins",
+        "slug": "fix-browser-print-margins",
+        "title": "如何修复浏览器打印网页时的页边距",
+        "metaTitle": "修复网页打印页边距",
+        "metaDescription": "通过调整缩放、纸张和预览来修复网页打印页边距。免费、无需注册、无水印。请先检查一页，确认内容没有裁切后再打印全部。",
+        "keyword": "修复网页打印页边距",
+        "secondaryKeywords": [
+          "修复网页打印页边距",
+          "fit webpage to print",
+          "save webpage print to PDF"
+        ],
+        "answer": "要修复浏览器打印网页时的页边距，请先打开打印预览，再调整页边距、缩放比例和纸张大小。先试默认边距；若内容被裁切，可缩小比例或设置自定义边距。打印机的物理限制和网站 CSS 也会影响结果。全部打印或保存前，先检查一页。",
+        "tool": "website-to-pdf",
+        "ctaLabel": "调整打印页边距",
+        "body": [
+          {
+            "t": "p",
+            "x": "网页打印后边距过大、内容被裁切或栏位错位时，先调整打印预览，不必马上修改网站。可先在一页上测试纸张、页边距和缩放比例。[Web Page Cleaner](/print) 可以移除公开页面上的菜单，但可用页面空间仍由打印设置控制。"
+          },
+          {
+            "t": "h2",
+            "x": "如何修复浏览器打印网页时的页边距"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "打开打印预览",
+                "x": "在浏览器中选择打印，查看页面布局。"
+              },
+              {
+                "h": "检查纸张和方向",
+                "x": "选择 A4 或 Letter，并根据内容尝试纵向或横向。"
+              },
+              {
+                "h": "调整页边距和缩放",
+                "x": "先用默认值。内容被裁切时，试自定义边距或稍微缩小比例。"
+              },
+              {
+                "h": "检查页眉和背景",
+                "x": "如果页眉页脚添加了 URL 或日期，可关闭它们。只有需要时才启用背景图形。"
+              },
+              {
+                "h": "先测试再保存",
+                "x": "检查第一页、中间一页和最后一页，然后打印或选择另存为 PDF。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "清理网页"
+          },
+          {
+            "t": "h2",
+            "x": "比较打印设置"
+          },
+          {
+            "t": "table",
+            "head": [
+              "设置",
+              "适用场景",
+              "注意事项"
+            ],
+            "rows": [
+              [
+                "默认页边距",
+                "网站布局已经合适",
+                "CSS 和打印机都可能影响边距。"
+              ],
+              [
+                "自定义页边距",
+                "需要更多空间或避免裁切",
+                "打印机可能有无法打印的边缘区域。"
+              ],
+              [
+                "缩小比例",
+                "栏位或图片超出页面",
+                "文字可能变得太小。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "隐私与打印机限制"
+          },
+          {
+            "t": "p",
+            "x": "页边距取决于浏览器打印对话框、页面 CSS 和打印机的实际打印区域。边距设为零并不代表实体打印机能打印到纸张边缘。页面杂乱时可试用 [Web Page Cleaner](/print)，然后再次检查边距。抓取 URL 可能使用远程阅读服务；不要粘贴私人链接。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "如何更改网页打印的页边距？",
+            "a": "在浏览器中打开打印，展开更多设置并更改页边距。试用默认或自定义设置，然后检查预览。"
+          },
+          {
+            "q": "为什么页边距为零仍会裁切内容？",
+            "a": "打印机有无法打印的物理区域，网站也可能应用 CSS。缩小比例、更改纸张方向或调整纸张大小。"
+          },
+          {
+            "q": "用多少缩放比例才能避免裁切？",
+            "a": "没有固定比例。逐步缩小，直到内容适合页面，同时确认文字仍清晰易读。"
+          },
+          {
+            "q": "可以把调整后的网页保存为 PDF 吗？",
+            "a": "可以。在打印对话框中选择“另存为 PDF”，并确认布局和页数符合预期。"
+          }
+        ],
+        "published": "2026-11-16",
+        "updated": "2026-11-16"
+      },
+      {
+        "topic": "print-dark-background-page",
+        "slug": "print-dark-background-page",
+        "title": "如何打印深色背景的网页",
+        "metaTitle": "打印深色背景网页",
+        "metaDescription": "打印深色网页时兼顾对比度并减少耗墨。免费、无需注册、无水印。请先检查打印预览和一页样张，确认文字与重要颜色清楚后再打印全部内容。",
+        "keyword": "打印深色背景网页",
+        "secondaryKeywords": [
+          "打印深色背景网页",
+          "print webpage background colors",
+          "browser print background graphics"
+        ],
+        "answer": "要打印深色背景网页，请打开浏览器打印预览，检查是否包含背景颜色。若背景没有显示，可在打印设置中启用“背景图形”；若耗墨太多，可改用网站浅色主题或清爽视图。打印全部内容前，先检查一页的对比度和小字。",
+        "tool": "website-to-pdf",
+        "ctaLabel": "打印清爽网页",
+        "body": [
+          {
+            "t": "p",
+            "x": "浏览器通常会省略背景颜色和图片以节省墨水，因此深色页面可能打印成白底或失去对比度。如果颜色承载信息，请启用“背景图形”。如果只需要易读文字，可使用网站浅色主题或 [Web Page Cleaner](/print)，并检查预览。"
+          },
+          {
+            "t": "h2",
+            "x": "如何打印深色背景的网页"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "打开打印预览",
+                "x": "在浏览器中选择打印，查看页面效果。"
+              },
+              {
+                "h": "判断是否需要背景",
+                "x": "颜色传递数据时启用“背景图形”；想省墨时可关闭。"
+              },
+              {
+                "h": "尝试浅色主题",
+                "x": "网站提供浅色主题或打印视图时优先使用。公开页面杂乱时可试 [Web Page Cleaner](/print)。"
+              },
+              {
+                "h": "设置颜色和纸张",
+                "x": "按需要选择彩色或黑白，并检查方向、页边距和缩放。"
+              },
+              {
+                "h": "先检查一页",
+                "x": "查看对比度、图表和小字，然后再打印或保存为 PDF。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "website-to-pdf",
+            "x": "打印清爽网页"
+          },
+          {
+            "t": "h2",
+            "x": "比较网页打印方式"
+          },
+          {
+            "t": "table",
+            "head": [
+              "选项",
+              "结果",
+              "适用场景"
+            ],
+            "rows": [
+              [
+                "启用背景图形",
+                "保留颜色和部分背景",
+                "颜色表示类别或状态。"
+              ],
+              [
+                "关闭背景图形",
+                "节省墨水；深色背景可能消失",
+                "文字足够，背景只是装饰。"
+              ],
+              [
+                "浅色主题或清爽视图",
+                "浅色背景，文字更易阅读",
+                "网站提供浅色或阅读模式。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "节省墨水并保留信息"
+          },
+          {
+            "t": "p",
+            "x": "启用背景可能显著增加耗墨，尤其是接近全黑的页面。保存数字副本时，可先存为 PDF 并按实际尺寸检查。如果颜色代表状态、图例或警告，移除前请确认信息仍然清楚。Web Page Cleaner 获取 URL 时会先尝试 PrintxPDF 自有阅读服务；若失败或等待过久，URL 可能发送给公共阅读服务。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "如何打印深色页面并保留背景？",
+            "a": "在打印对话框中打开更多设置并启用“背景图形”。请先预览，不同浏览器的选项名称可能不同。"
+          },
+          {
+            "q": "为什么打印时深色背景消失？",
+            "a": "许多浏览器默认省略背景以节省墨水。可启用“背景图形”，或使用网站自带的打印模式。"
+          },
+          {
+            "q": "打印深色背景会更耗墨吗？",
+            "a": "会。大面积深色区域会消耗更多墨水或碳粉。可试浅色主题，或只打印需要的部分。"
+          },
+          {
+            "q": "Web Page Cleaner 会把深色背景变成白色吗？",
+            "a": "它会生成更易读的视图，也可能改变原页面布局。请检查结果；若背景颜色承载重要信息，请勿使用。"
           }
         ],
         "published": "2026-11-16",
