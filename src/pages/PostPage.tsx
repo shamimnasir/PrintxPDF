@@ -53,6 +53,9 @@ export function Rich({ x }: { x: string }) {
 
 function CtaBlock({ slug, x }: { slug: string; x: string }) {
   const tool = useTool(slug)
+  if (slug === 'website-to-pdf') {
+    return <div className="inline-cta"><p>{x}</p><Link to="/print" className="btn btn-acid btn-sm">Web Page Cleaner →</Link></div>
+  }
   if (!tool) return null
   return (
     <div className="inline-cta">
@@ -164,6 +167,7 @@ function BlockView({ b, n }: { b: Block; n: number }) {
 
 function AsideTool({ slug }: { slug: string }) {
   const tool = useTool(slug)
+  if (slug === 'website-to-pdf') return <Link to="/print" className="btn btn-sm btn-acid btn-block">Web Page Cleaner</Link>
   return tool ? (
     <Link to={`/tools/${tool.slug}`} className="btn btn-sm btn-acid btn-block">
       {tool.name}
@@ -333,9 +337,11 @@ export default function PostPage() {
                 ))}
               </div>
               <p style={{ fontSize: '0.8rem', opacity: 0.8, margin: '0.75rem 0 0' }}>
-                {relatedUsesServer
-                  ? 'Each tool tells you whether it runs locally or uses our secure converter. No sign-up.'
-                  : 'Runs in your browser. No sign-up, no upload.'}
+                {post.slug === 'save-article-without-ads'
+                  ? 'Page cleanup runs in your tab after retrieval. A pasted URL may be sent to our reader or a public fallback reader.'
+                  : relatedUsesServer
+                    ? 'Each tool tells you whether it runs locally or uses our secure converter. No sign-up.'
+                    : 'Runs in your browser. No sign-up, no upload.'}
               </p>
             </div>
           )}

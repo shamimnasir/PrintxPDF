@@ -227,7 +227,7 @@ export default function LocalizedGuidePage({ pack }: { pack: LanguagePack }) {
             ))}
           </div>
         </section>
-        <p style={{ marginTop: '2rem' }}><Link to={`/tools/${guide.tool}`}>{tool?.name || guide.tool}</Link> · <Link to="/tools">{toolDirectoryLabel[pack.locale] || 'All tools'}</Link> · <Link to={guidePath(pack)}>{pack.backLabel}</Link> · <Link to="/blog">English guides</Link></p>
+        <p style={{ marginTop: '2rem' }}><Link to={localizedToolPath(guide.tool)}>{tool?.name || (guide.tool === 'website-to-pdf' ? 'Web Page Cleaner' : guide.tool)}</Link> · <Link to="/tools">{toolDirectoryLabel[pack.locale] || 'All tools'}</Link> · <Link to={guidePath(pack)}>{pack.backLabel}</Link> · <Link to="/blog">English guides</Link></p>
       </article>
     </div>
   )

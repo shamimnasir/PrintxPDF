@@ -79,6 +79,7 @@ import rolling47 from './localized-posts/rolling-47.json'
 import rolling48 from './localized-posts/rolling-48.json'
 import rolling49 from './localized-posts/rolling-49.json'
 import rolling50 from './localized-posts/rolling-50.json'
+import rolling51 from './localized-posts/rolling-51.json'
 import { LANGUAGE_PACKS as basePacks, guidePath, normalizeLocalizedGuides } from './localizedGuides'
 import type { LanguagePack, LocalizedGuide } from './localizedGuides'
 export { guidePath } from './localizedGuides'
@@ -119,6 +120,7 @@ translations.push(...rolling47.map((entry) => ({ locale: entry.locale, guides: n
 translations.push(...rolling48.map((entry) => ({ locale: entry.locale, guides: normalizeLocalizedGuides(entry.guides as (Partial<LocalizedGuide> & { description?: string })[]) })))
 translations.push(...rolling49.map((entry) => ({ locale: entry.locale, guides: normalizeLocalizedGuides(entry.guides as (Partial<LocalizedGuide> & { description?: string })[]) })))
 translations.push(...rolling50.map((entry) => ({ locale: entry.locale, guides: normalizeLocalizedGuides(entry.guides as (Partial<LocalizedGuide> & { description?: string })[]) })))
+translations.push(...rolling51.map((entry) => ({ locale: entry.locale, guides: normalizeLocalizedGuides(entry.guides as (Partial<LocalizedGuide> & { description?: string })[]) })))
 
 export const LANGUAGE_PACKS: LanguagePack[] = basePacks.map((pack) => {
   const guides = new Map(pack.guides.map((guide) => [guide.topic, guide]))
