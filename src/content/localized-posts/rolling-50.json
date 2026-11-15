@@ -1945,6 +1945,136 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "content-credentials-c2pa-explained",
+        "slug": "content-credentials-c2pa-explained",
+        "title": "Qué son Content Credentials y los metadatos C2PA",
+        "metaTitle": "Qué son Content Credentials y los metadatos C2PA",
+        "metaDescription": "Entiende qué registran C2PA y Content Credentials, dónde aparecen en imágenes, por qué pueden desaparecer y qué cambia al quitar metadatos.",
+        "keyword": "Content Credentials y metadatos C2PA",
+        "secondaryKeywords": [
+          "qué es C2PA",
+          "qué son Content Credentials",
+          "procedencia de imágenes de IA",
+          "metadatos C2PA de imagen",
+          "quitar Content Credentials"
+        ],
+        "answer": "Content Credentials son registros de procedencia que pueden incrustarse en un archivo multimedia o asociarse a él mediante el estándar C2PA. Pueden describir acciones registradas por herramientas compatibles, pero no detectan universalmente imágenes de IA y pueden perderse al convertir, cambiar el tamaño o volver a codificar un archivo.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Crear copia local sin metadatos",
+        "body": [
+          {
+            "t": "p",
+            "x": "Content Credentials no son un sello permanente dentro de cada imagen de IA. Son un sistema de procedencia: las herramientas participantes pueden registrar información sobre un archivo multimedia y adjuntar o asociar ese registro. Que exista, lo que indique y que sobreviva al compartirlo depende del software y del recorrido que siga el archivo."
+          },
+          {
+            "t": "h2",
+            "x": "C2PA y Content Credentials en palabras sencillas"
+          },
+          {
+            "t": "p",
+            "x": "C2PA es el estándar técnico detrás de muchas implementaciones de Content Credentials. Permite que el software compatible transmita afirmaciones firmadas sobre el historial de un archivo. Un registro puede identificar una aplicación, indicar que hubo ediciones o apuntar a un manifiesto asociado. No es una marca de agua en los píxeles ni una respuesta universal sobre si una imagen es auténtica, editada o generada por IA."
+          },
+          {
+            "t": "table",
+            "caption": "Tres conceptos que suelen confundirse.",
+            "head": [
+              "Elemento",
+              "Dónde se guarda",
+              "Qué puede indicar"
+            ],
+            "rows": [
+              [
+                "Etiqueta o marca visible",
+                "En los píxeles",
+                "Lo que se imprime o dibuja sobre la imagen"
+              ],
+              [
+                "EXIF / XMP / IPTC",
+                "Campos de metadatos del archivo",
+                "Cámara, autor, título, fechas o flujo de trabajo"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "Registro de procedencia incrustado o asociado",
+                "Afirmaciones registradas por herramientas participantes, si el registro existe y es válido"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Por qué pueden desaparecer los registros de procedencia"
+          },
+          {
+            "t": "p",
+            "x": "Muchas operaciones normales crean una imagen nueva: recortar, hacer una captura, exportar, subir a una red social, convertir el formato o comprimir. El nuevo codificador puede copiar los píxeles sin conservar todos los bloques de metadatos y procedencia. Eso no demuestra que alguien quisiera borrar el registro; solo significa que el archivo nuevo no es idéntico byte a byte al original. Si importan las pruebas, la licencia o el archivo histórico, conserva el original y el contexto de origen, no solo una copia reenviada."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo funciona una copia de imagen sin metadatos"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Separa la fuente de la copia para compartir",
+                "x": "Conserva el archivo original y crea una segunda copia para el destino. Así mantienes la fuente para los procesos que necesitan sus metadatos o su procedencia."
+              },
+              {
+                "h": "Reconstruye la copia desde los píxeles visibles",
+                "x": "[Eliminar metadatos de imagen](/tools/remove-ai-metadata) decodifica la imagen en el navegador y escribe un PNG, JPG o WebP nuevo. Los bloques comunes de metadatos y procedencia no pasan al nuevo archivo."
+              },
+              {
+                "h": "Usa el resultado con honestidad",
+                "x": "Una copia limpia sirve para requisitos de privacidad o entrega. No demuestra que la imagen tenga un origen o historial distinto."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Crea en tu navegador una copia para compartir sin metadatos comunes. Conserva el original cuando importe la procedencia."
+          },
+          {
+            "t": "h2",
+            "x": "Qué hacer cuando la procedencia importa"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Conserva el archivo original, no solo una copia de mensajería o redes sociales.",
+              "Registra la fuente, la fecha de recepción y los permisos relevantes junto al original.",
+              "Cuando sea posible, inspecciona el registro con el software o servicio que lo creó.",
+              "No interpretes la ausencia de credenciales como prueba de cómo se hizo una imagen.",
+              "Si la privacidad o una plataforma requiere otra versión, crea una copia de entrega con un nombre claro."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "Quitar metadatos no es lo mismo que editar una imagen. La herramienta conserva la imagen visible prevista y genera un archivo nuevo. Si también necesitas cambiar el formato o el tamaño, consulta [cómo convertir el formato de una imagen](/blog/files/convert-an-image-format) y [cómo comprimir una imagen](/blog/files/compress-an-image)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Content Credentials demuestra que una imagen fue creada con IA?",
+            "a": "No. Son registros de procedencia de herramientas participantes. Pueden describir acciones de creación o edición, pero su presencia o ausencia no determina universalmente el origen de una imagen."
+          },
+          {
+            "q": "¿Se pueden perder los datos C2PA al convertir una imagen?",
+            "a": "Sí. Una conversión o recodificación puede crear un archivo nuevo sin los metadatos ni los registros de procedencia originales. Conserva el original cuando importen la procedencia, la licencia o las pruebas."
+          },
+          {
+            "q": "¿Una copia sin metadatos cambia la imagen visible?",
+            "a": "La herramienta reconstruye el resultado desde los píxeles visibles. PNG conserva los píxeles decodificados y la transparencia; JPG y WebP comprimen, así que revisa el resultado si los detalles son importantes."
+          },
+          {
+            "q": "¿Debo borrar el original después de quitar los metadatos?",
+            "a": "Normalmente no. Guarda el original aparte, sobre todo si es tu registro del origen de la imagen o de sus metadatos originales."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -3884,6 +4014,136 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "content-credentials-c2pa-explained",
+        "slug": "content-credentials-c2pa-explained",
+        "title": "O que são Content Credentials e metadados C2PA",
+        "metaTitle": "O que são Content Credentials e metadados C2PA",
+        "metaDescription": "Entenda o que C2PA e Content Credentials registram, onde aparecem em imagens, por que podem sumir e o que muda ao remover metadados.",
+        "keyword": "Content Credentials e metadados C2PA",
+        "secondaryKeywords": [
+          "o que é C2PA",
+          "o que são Content Credentials",
+          "procedência de imagem de IA",
+          "metadados C2PA de imagem",
+          "remover Content Credentials"
+        ],
+        "answer": "Content Credentials são registros de procedência que podem ser incorporados ou associados a um arquivo de mídia pelo padrão C2PA. Eles podem descrever ações registradas por ferramentas participantes, mas não detectam universalmente imagens feitas por IA e podem desaparecer quando um arquivo é convertido, redimensionado ou codificado novamente.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Criar cópia local sem metadados",
+        "body": [
+          {
+            "t": "p",
+            "x": "Content Credentials não são um selo permanente dentro de toda imagem de IA. São um sistema de procedência: ferramentas participantes podem registrar informações sobre um arquivo de mídia e anexar ou associar esse registro. A existência do registro, seu conteúdo e sua sobrevivência ao compartilhamento dependem da ferramenta e do caminho percorrido pelo arquivo."
+          },
+          {
+            "t": "h2",
+            "x": "C2PA e Content Credentials em termos simples"
+          },
+          {
+            "t": "p",
+            "x": "C2PA é o padrão técnico por trás de muitas implementações de Content Credentials. Em termos práticos, permite que softwares compatíveis carreguem declarações assinadas sobre o histórico de um arquivo. Um registro pode identificar um aplicativo, informar que houve edições ou apontar para um manifesto associado ao recurso. Não é uma marca d’água nos pixels nem um veredito universal sobre a imagem ser real, editada ou gerada por IA."
+          },
+          {
+            "t": "table",
+            "caption": "Três conceitos que costumam ser confundidos.",
+            "head": [
+              "Item",
+              "Onde fica",
+              "O que pode indicar"
+            ],
+            "rows": [
+              [
+                "Rótulo ou marca visível",
+                "Nos pixels",
+                "O que foi impresso ou desenhado na imagem"
+              ],
+              [
+                "EXIF / XMP / IPTC",
+                "Campos de metadados do arquivo",
+                "Câmera, autor, título, datas ou fluxo de trabalho"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "Registro de procedência incorporado ou associado",
+                "Declarações de ferramentas participantes, quando o registro existe e é válido"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Por que registros de procedência podem desaparecer"
+          },
+          {
+            "t": "p",
+            "x": "Muitas operações comuns criam uma imagem nova: cortar, fazer uma captura de tela, exportar, enviar para uma rede social, converter o formato ou comprimir. Um novo codificador pode copiar os pixels sem copiar todos os blocos de metadados e procedência. Isso não prova que alguém quis apagar o registro; significa apenas que o novo arquivo não é idêntico, byte a byte, ao original. Para evidências, registros ou licenciamento, guarde o recurso original e seu contexto de origem em vez de depender de uma cópia encaminhada."
+          },
+          {
+            "t": "h2",
+            "x": "Como funciona uma cópia de imagem sem metadados"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Separe a fonte da cópia de compartilhamento",
+                "x": "Guarde o arquivo original e crie outra cópia para o destino. Assim, a fonte continua disponível para fluxos que precisam dos metadados ou da procedência."
+              },
+              {
+                "h": "Reconstrua a cópia a partir dos pixels visíveis",
+                "x": "[Remover metadados da imagem](/tools/remove-ai-metadata) decodifica a imagem no navegador e grava um novo PNG, JPG ou WebP. Os metadados e blocos de procedência comuns não são copiados."
+              },
+              {
+                "h": "Use o resultado com honestidade",
+                "x": "Uma cópia limpa serve para requisitos de privacidade ou entrega. Ela não justifica alegar que a imagem tem origem ou histórico diferentes."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Crie no navegador uma cópia para compartilhar sem metadados comuns. Guarde o original quando a procedência importar."
+          },
+          {
+            "t": "h2",
+            "x": "O que fazer quando a procedência importa"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Guarde o arquivo original, não apenas uma cópia de aplicativo de mensagens ou rede social.",
+              "Registre a fonte, a data de recebimento e as permissões relevantes junto ao original.",
+              "Quando possível, use o software ou serviço que forneceu o registro para inspecioná-lo.",
+              "Não trate a ausência de uma credencial como prova de como a imagem foi criada.",
+              "Se a privacidade ou a plataforma exigir, crie uma cópia de entrega com nome claro."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "Remover metadados é diferente de editar a imagem. A ferramenta mantém a imagem visível pretendida e cria um arquivo novo. Se também precisar de outro formato ou tamanho, veja [como converter o formato de uma imagem](/blog/files/convert-an-image-format) e [como comprimir uma imagem](/blog/files/compress-an-image)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Content Credentials provam que uma imagem foi criada por IA?",
+            "a": "Não. São registros de procedência de ferramentas participantes. Podem descrever ações de criação ou edição, mas sua presença ou ausência não determina universalmente a origem de uma imagem."
+          },
+          {
+            "q": "Os dados C2PA podem sumir ao converter uma imagem?",
+            "a": "Sim. Uma conversão ou recodificação pode criar um novo arquivo sem os blocos de metadados e procedência originais. Guarde o original quando procedência, licença ou evidências forem importantes."
+          },
+          {
+            "q": "Uma cópia sem metadados muda a imagem visível?",
+            "a": "A ferramenta reconstrói o resultado a partir dos pixels visíveis. PNG preserva pixels decodificados e transparência; JPG e WebP comprimem, então confira o resultado se os detalhes forem importantes."
+          },
+          {
+            "q": "Devo apagar o original depois de remover os metadados?",
+            "a": "Em geral, não. Guarde o original separado, especialmente se ele registra a origem da imagem ou os metadados que ela tinha."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -5819,6 +6079,136 @@
           {
             "q": "कौन-सा आउटपुट फ़ॉर्मैट चुनूँ?",
             "a": "पारदर्शिता या डिकोड किए पिक्सेल के लिए PNG, व्यापक फ़ोटो संगतता के लिए JPG और वेब डिलीवरी के लिए WebP चुनें। हर स्थिति में मूल रखें।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "content-credentials-c2pa-explained",
+        "slug": "content-credentials-c2pa-explained",
+        "title": "Content Credentials और C2PA मेटाडेटा क्या हैं",
+        "metaTitle": "Content Credentials और C2PA मेटाडेटा क्या हैं",
+        "metaDescription": "जानें C2PA और Content Credentials क्या दर्ज करते हैं, छवि में कहाँ रहते हैं, क्यों मिट सकते हैं और मेटाडेटा हटाने से क्या बदलता है।",
+        "keyword": "Content Credentials C2PA मेटाडेटा",
+        "secondaryKeywords": [
+          "C2PA क्या है",
+          "Content Credentials क्या हैं",
+          "AI इमेज स्रोत रिकॉर्ड",
+          "C2PA इमेज मेटाडेटा",
+          "Content Credentials हटाना"
+        ],
+        "answer": "Content Credentials ऐसे स्रोत रिकॉर्ड हैं जिन्हें C2PA मानक के माध्यम से मीडिया फ़ाइल में जोड़ा या उससे संबद्ध किया जा सकता है। वे भाग लेने वाले टूल द्वारा दर्ज कार्रवाइयाँ बता सकते हैं, लेकिन AI-निर्मित छवियों का सार्वभौमिक पता नहीं लगाते और फ़ाइल बदलने, आकार घटाने या दोबारा एन्कोड करने पर खो सकते हैं।",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "लोकल मेटाडेटा-मुक्त कॉपी बनाएँ",
+        "body": [
+          {
+            "t": "p",
+            "x": "Content Credentials हर AI छवि के अंदर लगा स्थायी ठप्पा नहीं हैं। यह स्रोत जानकारी की प्रणाली है: इसमें भाग लेने वाले टूल मीडिया फ़ाइल का विवरण दर्ज करके उसे फ़ाइल से जोड़ सकते हैं। रिकॉर्ड मौजूद है या नहीं, उसमें क्या है और साझा करने पर बचता है या नहीं, यह टूल तथा फ़ाइल के रास्ते पर निर्भर करता है।"
+          },
+          {
+            "t": "h2",
+            "x": "सरल शब्दों में C2PA और Content Credentials"
+          },
+          {
+            "t": "p",
+            "x": "C2PA कई Content Credentials प्रणालियों के पीछे का तकनीकी मानक है। सरल शब्दों में, यह संगत सॉफ़्टवेयर को फ़ाइल के इतिहास के बारे में हस्ताक्षरित दावे साथ रखने देता है। रिकॉर्ड ऐप की पहचान बता सकता है, संपादन होने का संकेत दे सकता है या फ़ाइल से जुड़े मैनिफ़ेस्ट तक पहुँचा सकता है। यह पिक्सेल वॉटरमार्क नहीं है और न ही इस बात का सार्वभौमिक फैसला है कि चित्र असली, संपादित या AI से बना है।"
+          },
+          {
+            "t": "table",
+            "caption": "तीन बातें जिन्हें अक्सर एक समझ लिया जाता है।",
+            "head": [
+              "चीज़",
+              "कहाँ रहती है",
+              "क्या बता सकती है"
+            ],
+            "rows": [
+              [
+                "दिखने वाला लेबल या वॉटरमार्क",
+                "पिक्सेल में",
+                "चित्र पर छपी या बनाई गई चीज़"
+              ],
+              [
+                "EXIF / XMP / IPTC",
+                "फ़ाइल के मेटाडेटा फ़ील्ड",
+                "कैमरा, लेखक, शीर्षक, तारीख या वर्कफ़्लो जानकारी"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "फ़ाइल में या उससे जुड़ा स्रोत रिकॉर्ड",
+                "भाग लेने वाले टूल के दावे, यदि रिकॉर्ड मौजूद और मान्य हो"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "स्रोत रिकॉर्ड क्यों खो सकते हैं"
+          },
+          {
+            "t": "p",
+            "x": "कई सामान्य काम नई छवि बनाते हैं: क्रॉप करना, स्क्रीनशॉट लेना, निर्यात करना, सोशल मीडिया पर डालना, फ़ॉर्मैट बदलना या संपीड़ित करना। नया एन्कोडर पिक्सेल रख सकता है, पर हर मेटाडेटा और स्रोत रिकॉर्ड नहीं। इससे यह साबित नहीं होता कि किसी ने रिकॉर्ड जानबूझकर हटाया; केवल इतना कि नई फ़ाइल मूल से बिट-दर-बिट समान नहीं है। साक्ष्य, रिकॉर्ड या लाइसेंसिंग के लिए मूल फ़ाइल और उसका स्रोत संदर्भ रखें, केवल आगे भेजी गई कॉपी पर भरोसा न करें।"
+          },
+          {
+            "t": "h2",
+            "x": "मेटाडेटा-मुक्त इमेज कॉपी कैसे बनती है"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल को साझा कॉपी से अलग रखें",
+                "x": "मूल फ़ाइल रखें और साझा करने के लिए दूसरी कॉपी बनाएँ। इससे मेटाडेटा या स्रोत जानकारी की ज़रूरत वाले काम में मूल उपलब्ध रहता है।"
+              },
+              {
+                "h": "दिखने वाले पिक्सेल से नई कॉपी बनाएँ",
+                "x": "[AI मेटाडेटा हटाएँ](/tools/remove-ai-metadata) ब्राउज़र में इमेज डिकोड करके नया PNG, JPG या WebP लिखता है। आम मेटाडेटा और स्रोत रिकॉर्ड नई फ़ाइल में नहीं जाते।"
+              },
+              {
+                "h": "नतीजे का सही उपयोग करें",
+                "x": "साफ़ कॉपी गोपनीयता या डिलीवरी की ज़रूरत के लिए है। इससे छवि के अलग स्रोत या इतिहास का दावा नहीं किया जा सकता।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "ब्राउज़र में आम मेटाडेटा के बिना साझा कॉपी बनाएँ। स्रोत रिकॉर्ड ज़रूरी हो तो मूल फ़ाइल रखें।"
+          },
+          {
+            "t": "h2",
+            "x": "स्रोत रिकॉर्ड ज़रूरी हो तो क्या करें"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "मूल फ़ाइल रखें, केवल मैसेजिंग ऐप या सोशल मीडिया की कॉपी नहीं।",
+              "मूल के साथ स्रोत, मिलने की तारीख और जरूरी अनुमतियाँ दर्ज करें।",
+              "संभव हो तो रिकॉर्ड देने वाले सॉफ़्टवेयर या सेवा से उसकी जाँच करें।",
+              "क्रेडेंशियल न होने को इस बात का प्रमाण न मानें कि चित्र कैसे बना।",
+              "गोपनीयता या प्लेटफ़ॉर्म की माँग हो तो स्पष्ट नाम वाली अलग डिलीवरी कॉपी बनाएँ।"
+            ]
+          },
+          {
+            "t": "note",
+            "x": "मेटाडेटा हटाना इमेज संपादन से अलग है। यह दिखाई देने वाला चित्र वैसा रखते हुए नई फ़ाइल बनाता है। फ़ॉर्मैट या आकार भी बदलना हो तो [इमेज फ़ॉर्मैट बदलने का तरीका](/blog/files/convert-an-image-format) और [इमेज संपीड़ित करने का तरीका](/blog/files/compress-an-image) देखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या Content Credentials साबित करता है कि छवि AI से बनी?",
+            "a": "नहीं। यह भाग लेने वाले टूल का स्रोत रिकॉर्ड है। इसमें निर्माण या संपादन का विवरण हो सकता है, पर इसकी मौजूदगी या अनुपस्थिति छवि का स्रोत सार्वभौमिक रूप से तय नहीं करती।"
+          },
+          {
+            "q": "क्या इमेज बदलने से C2PA मेटाडेटा मिट सकता है?",
+            "a": "हाँ। रूपांतरण या दोबारा एन्कोडिंग मूल मेटाडेटा और स्रोत ब्लॉक के बिना नई फ़ाइल बना सकती है। जब स्रोत, लाइसेंस या साक्ष्य महत्वपूर्ण हों तो मूल रखें।"
+          },
+          {
+            "q": "क्या मेटाडेटा-मुक्त कॉपी दिखाई देने वाली इमेज बदलती है?",
+            "a": "टूल दिखाई देने वाले पिक्सेल से आउटपुट बनाता है। PNG डिकोड किए पिक्सेल और पारदर्शिता रखता है; JPG और WebP संपीड़ित करते हैं, इसलिए बारीक विवरण जरूरी हों तो नतीजा जाँचें।"
+          },
+          {
+            "q": "क्या मेटाडेटा हटाने के बाद मूल फ़ाइल मिटा दूँ?",
+            "a": "आमतौर पर नहीं। मूल अलग रखें, खासकर जब वही छवि के स्रोत या उसके मूल मेटाडेटा का आपका रिकॉर्ड हो।"
           }
         ],
         "published": "2026-11-15",
@@ -7767,6 +8157,136 @@
           {
             "q": "أي صيغة إخراج أختار؟",
             "a": "اختر PNG للشفافية أو وحدات البكسل المفكوكة، وJPG للصور المتوافقة على نطاق واسع، وWebP للويب. احتفظ بالأصل دائماً."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "content-credentials-c2pa-explained",
+        "slug": "content-credentials-c2pa-explained",
+        "title": "ما Content Credentials وبيانات C2PA الوصفية؟",
+        "metaTitle": "ما Content Credentials وبيانات C2PA الوصفية؟",
+        "metaDescription": "تعرّف على سجلات C2PA وContent Credentials ومكانها في الصور وأسباب فقدانها وما يتغير عند إنشاء نسخة بلا بيانات وصفية.",
+        "keyword": "بيانات Content Credentials وC2PA",
+        "secondaryKeywords": [
+          "ما معيار C2PA",
+          "ما Content Credentials",
+          "مصدر صور الذكاء الاصطناعي",
+          "بيانات C2PA للصورة",
+          "إزالة Content Credentials"
+        ],
+        "answer": "Content Credentials هي سجلات مصدر يمكن تضمينها في ملف وسائط أو ربطها به باستخدام معيار C2PA. قد تصف إجراءات سجلتها أدوات مشاركة في المعيار، لكنها ليست كاشفاً عاماً للصور المولدة بالذكاء الاصطناعي، وقد تضيع عند تحويل الملف أو تغيير حجمه أو إعادة ترميزه.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "إنشاء نسخة محلية بلا بيانات وصفية",
+        "body": [
+          {
+            "t": "p",
+            "x": "لا تعد Content Credentials ختماً دائماً داخل كل صورة مولدة بالذكاء الاصطناعي. إنها نظام لتسجيل المصدر: تستطيع الأدوات المشاركة تسجيل معلومات عن ملف وسائط وإرفاق السجل به أو ربطه به. ويتوقف وجود السجل ومضمونه وبقاؤه بعد المشاركة على الأداة والمسار الذي يسلكه الملف."
+          },
+          {
+            "t": "h2",
+            "x": "شرح C2PA وContent Credentials ببساطة"
+          },
+          {
+            "t": "p",
+            "x": "C2PA هو المعيار التقني وراء كثير من تطبيقات Content Credentials. عملياً، يتيح للبرامج المتوافقة حمل بيانات موقعة عن سجل الملف. قد يحدد السجل تطبيقاً، أو يذكر إجراء تعديلات، أو يشير إلى بيان مرتبط بالأصل. وهو ليس علامة مائية ضمن البكسلات ولا حكماً عاماً يحدد إن كانت الصورة حقيقية أو معدلة أو مولدة بالذكاء الاصطناعي."
+          },
+          {
+            "t": "table",
+            "caption": "ثلاثة مفاهيم يكثر الخلط بينها.",
+            "head": [
+              "العنصر",
+              "مكانه",
+              "ما الذي قد يخبرك به؟"
+            ],
+            "rows": [
+              [
+                "تصنيف أو علامة مرئية",
+                "ضمن البكسلات",
+                "ما طُبع أو رُسم على الصورة"
+              ],
+              [
+                "EXIF / XMP / IPTC",
+                "حقول البيانات الوصفية للملف",
+                "الكاميرا والمؤلف والعنوان والتاريخ وسير العمل"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "سجل مصدر مضمن أو مرتبط بالأصل",
+                "ادعاءات الأدوات المشاركة عند وجود السجل وصحته"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "لماذا قد تختفي سجلات المصدر؟"
+          },
+          {
+            "t": "p",
+            "x": "تنشئ عمليات عادية كثيرة صورة جديدة، مثل الاقتصاص والتقاط الشاشة والتصدير والرفع إلى شبكة اجتماعية وتحويل الصيغة والضغط. قد ينسخ المرمّز الجديد البكسلات من دون نسخ كل كتل البيانات الوصفية وسجلات المصدر. لا يثبت ذلك أن أحداً قصد إزالة السجل؛ بل يعني فقط أن الملف الجديد ليس مطابقاً للأصل على مستوى البايت. لأغراض الأدلة أو حفظ السجلات أو الترخيص، احتفظ بالأصل وسياق مصدره ولا تعتمد على نسخة أعيد توجيهها."
+          },
+          {
+            "t": "h2",
+            "x": "كيف تعمل نسخة صورة بلا بيانات وصفية؟"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "افصل الأصل عن نسخة المشاركة",
+                "x": "احتفظ بالملف الأصلي وأنشئ نسخة أخرى للوجهة. يحافظ ذلك على المصدر لسير العمل الذي يحتاج بياناته أو سجل مصدره."
+              },
+              {
+                "h": "أنشئ النسخة من البكسلات المرئية",
+                "x": "تفك [أداة إزالة بيانات الصور الوصفية](/tools/remove-ai-metadata) الصورة داخل المتصفح وتكتب PNG أو JPG أو WebP جديداً. ولا تنقل كتل البيانات الوصفية وسجلات المصدر الشائعة إلى الملف الجديد."
+              },
+              {
+                "h": "استخدم النتيجة بصدق",
+                "x": "تناسب النسخة النظيفة متطلبات الخصوصية أو التسليم، لكنها لا تبرر الادعاء بأن للصورة مصدراً أو تاريخاً مختلفاً."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "أنشئ نسخة مشاركة محلية بلا بيانات صورة شائعة. احتفظ بالأصل عندما يكون سجل المصدر مهماً."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي تفعله عندما يهم سجل المصدر؟"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "احتفظ بالملف الأصلي، لا بنسخة تطبيق المراسلة أو الشبكة الاجتماعية فقط.",
+              "سجل المصدر وتاريخ الاستلام والأذونات المهمة مع الأصل.",
+              "استخدم البرنامج أو الخدمة التي وفرت السجل لفحصه إن أمكن.",
+              "لا تعتبر غياب بيانات الاعتماد دليلاً على كيفية إنشاء الصورة.",
+              "أنشئ نسخة تسليم باسم واضح إذا تطلبت الخصوصية أو المنصة ذلك."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "إزالة البيانات الوصفية تختلف عن تحرير الصورة. فهي تُبقي الصورة المرئية المقصودة كما هي وتنشئ ملفاً جديداً. إذا احتجت أيضاً إلى تغيير الصيغة أو الحجم، فراجع [كيفية تحويل صيغة صورة](/blog/files/convert-an-image-format) و[كيفية ضغط صورة](/blog/files/compress-an-image)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل تثبت Content Credentials أن الصورة مولدة بالذكاء الاصطناعي؟",
+            "a": "لا. هي سجلات مصدر من أدوات مشاركة. قد تصف إجراءات الإنشاء أو التعديل، لكن وجودها أو غيابها لا يحدد عالمياً مصدر الصورة."
+          },
+          {
+            "q": "هل يمكن أن تضيع بيانات C2PA عند تحويل الصورة؟",
+            "a": "نعم. قد ينتج التحويل أو إعادة الترميز ملفاً جديداً بلا كتل البيانات الوصفية وسجل المصدر الأصلي. احتفظ بالأصل عندما يكون المصدر أو الترخيص أو الدليل مهماً."
+          },
+          {
+            "q": "هل تغير النسخة الخالية من البيانات الصورة المرئية؟",
+            "a": "تعيد الأداة إنشاء الناتج من البكسلات المرئية. يحافظ PNG على البكسلات المفكوكة والشفافية؛ ويستخدم JPG وWebP الضغط، لذا راجع التفاصيل الدقيقة."
+          },
+          {
+            "q": "هل أحذف الأصل بعد إزالة البيانات الوصفية؟",
+            "a": "غالباً لا. احتفظ بالأصل منفصلاً، خصوصاً إذا كان سجلك لمصدر الصورة أو لبياناتها الأصلية."
           }
         ],
         "published": "2026-11-15",
@@ -9722,6 +10242,136 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "content-credentials-c2pa-explained",
+        "slug": "content-credentials-c2pa-explained",
+        "title": "Content Credentials ও C2PA ছবির মেটাডেটা কী",
+        "metaTitle": "Content Credentials ও C2PA ছবির মেটাডেটা কী",
+        "metaDescription": "C2PA ও Content Credentials কী রেকর্ড করে, ছবিতে কোথায় থাকে, কেন হারাতে পারে এবং মেটাডেটাবিহীন কপিতে কী বদলায় জানুন।",
+        "keyword": "Content Credentials C2PA মেটাডেটা",
+        "secondaryKeywords": [
+          "C2PA কী",
+          "Content Credentials কী",
+          "AI ছবির উৎস মেটাডেটা",
+          "C2PA ছবির মেটাডেটা",
+          "Content Credentials সরানো"
+        ],
+        "answer": "Content Credentials হলো উৎস-সংক্রান্ত রেকর্ড, যা C2PA মান ব্যবহার করে মিডিয়া ফাইলে এমবেড বা ফাইলের সঙ্গে যুক্ত হতে পারে। অংশগ্রহণকারী টুলের নথিভুক্ত কাজ এতে থাকতে পারে, কিন্তু এটি AI-তৈরি ছবি শনাক্ত করার সর্বজনীন উপায় নয়; ফাইল রূপান্তর, আকার বদল বা পুনরায় এনকোড করলে রেকর্ড হারাতে পারে।",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "লোকাল মেটাডেটাবিহীন কপি তৈরি করুন",
+        "body": [
+          {
+            "t": "p",
+            "x": "Content Credentials প্রতিটি AI ছবির ভেতরে থাকা স্থায়ী সিল নয়। এটি উৎস-রেকর্ডের ব্যবস্থা: অংশগ্রহণকারী টুল মিডিয়া ফাইল সম্পর্কে তথ্য লিখে সেই রেকর্ড ফাইলে যুক্ত করতে পারে। রেকর্ড আছে কি না, তাতে কী লেখা এবং শেয়ার করার পর টিকে থাকে কি না, তা টুল ও ফাইলের পথের ওপর নির্ভর করে।"
+          },
+          {
+            "t": "h2",
+            "x": "সহজ ভাষায় C2PA ও Content Credentials"
+          },
+          {
+            "t": "p",
+            "x": "C2PA হলো অনেক Content Credentials ব্যবস্থার পেছনের প্রযুক্তিগত মান। সহজভাবে, এটি সামঞ্জস্যপূর্ণ সফটওয়্যারকে ফাইলের ইতিহাস নিয়ে স্বাক্ষরিত দাবি সঙ্গে রাখতে দেয়। রেকর্ডে অ্যাপের নাম, সম্পাদনার তথ্য বা ফাইলের সঙ্গে যুক্ত ম্যানিফেস্টের সূত্র থাকতে পারে। এটি পিক্সেলের মধ্যে থাকা ওয়াটারমার্ক নয় এবং ছবি আসল, সম্পাদিত বা AI-তৈরি কি না তার সর্বজনীন রায়ও নয়।"
+          },
+          {
+            "t": "table",
+            "caption": "তিনটি বিষয় যা প্রায়ই গুলিয়ে ফেলা হয়।",
+            "head": [
+              "বিষয়",
+              "কোথায় থাকে",
+              "কী জানাতে পারে"
+            ],
+            "rows": [
+              [
+                "দৃশ্যমান লেবেল বা ওয়াটারমার্ক",
+                "পিক্সেলের মধ্যে",
+                "ছবির ওপর দৃশ্যমানভাবে লেখা বা আঁকা বিষয়"
+              ],
+              [
+                "EXIF / XMP / IPTC",
+                "ফাইলের মেটাডেটা ফিল্ড",
+                "ক্যামেরা, লেখক, শিরোনাম, তারিখ বা কাজের ধাপ"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "ফাইলে এমবেড বা যুক্ত উৎস রেকর্ড",
+                "রেকর্ড থাকলে ও বৈধ হলে অংশগ্রহণকারী টুলের দাবি"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "উৎস রেকর্ড কেন হারিয়ে যেতে পারে"
+          },
+          {
+            "t": "p",
+            "x": "অনেক সাধারণ কাজ নতুন ছবি তৈরি করে: ক্রপ করা, স্ক্রিনশট, এক্সপোর্ট, সামাজিক মাধ্যমে আপলোড, ফরম্যাট রূপান্তর বা কমপ্রেস করা। নতুন এনকোডার পিক্সেল কপি করলেও সব মেটাডেটা ও উৎস রেকর্ড নাও কপি করতে পারে। এতে কেউ ইচ্ছা করে রেকর্ড সরিয়েছে প্রমাণ হয় না; শুধু বোঝায় নতুন ফাইলটি মূলের সঙ্গে বিট-টু-বিট এক নয়। প্রমাণ, রেকর্ড বা লাইসেন্সের জন্য মূল ফাইল ও উৎস-প্রসঙ্গ রাখুন; ফরোয়ার্ড করা কপির ওপর নির্ভর করবেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "মেটাডেটাবিহীন ছবির কপি কীভাবে তৈরি হয়"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল ও শেয়ার কপি আলাদা রাখুন",
+                "x": "মূল ফাইল রেখে গন্তব্যের জন্য দ্বিতীয় কপি বানান। এতে মেটাডেটা বা উৎস রেকর্ড দরকার হলে মূলটি কাজে লাগবে।"
+              },
+              {
+                "h": "দৃশ্যমান পিক্সেল থেকে কপি বানান",
+                "x": "[AI ছবির মেটাডেটা সরান](/tools/remove-ai-metadata) ব্রাউজারে ছবি ডিকোড করে নতুন PNG, JPG বা WebP লেখে। সাধারণ মেটাডেটা ও উৎস রেকর্ড নতুন ফাইলে নেওয়া হয় না।"
+              },
+              {
+                "h": "ফলটি সৎভাবে ব্যবহার করুন",
+                "x": "গোপনীয়তা বা ডেলিভারির শর্তে পরিষ্কার কপি উপযুক্ত। এটি ছবির ভিন্ন উৎস বা ইতিহাস দাবি করার ভিত্তি নয়।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "ব্রাউজারে লোকালি সাধারণ এমবেডেড মেটাডেটাবিহীন কপি তৈরি করুন। উৎস রেকর্ড গুরুত্বপূর্ণ হলে মূল ফাইল রাখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "উৎস রেকর্ড গুরুত্বপূর্ণ হলে কী করবেন"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "মূল ফাইল রাখুন, শুধু মেসেজিং অ্যাপ বা সামাজিক মাধ্যমের কপি নয়।",
+              "মূল ফাইলের সঙ্গে উৎস, পাওয়ার তারিখ ও প্রাসঙ্গিক অনুমতি লিখে রাখুন।",
+              "সম্ভব হলে রেকর্ড প্রদানকারী সফটওয়্যার বা সেবা দিয়ে তা পরীক্ষা করুন।",
+              "ক্রেডেনশিয়াল নেই মানেই ছবি কীভাবে তৈরি হয়েছে তার প্রমাণ নয়।",
+              "গোপনীয়তা বা প্ল্যাটফর্মের শর্ত থাকলে স্পষ্ট নাম দিয়ে আলাদা ডেলিভারি কপি তৈরি করুন।"
+            ]
+          },
+          {
+            "t": "note",
+            "x": "মেটাডেটা সরানো আর ছবি সম্পাদনা এক কাজ নয়। টুলটি দৃশ্যমান ছবিটি অপরিবর্তিত রেখে নতুন ফাইল তৈরি করে। ফরম্যাট বা আকারও বদলাতে হলে দেখুন [ছবির ফরম্যাট কীভাবে বদলাবেন](/blog/files/convert-an-image-format) এবং [ছবি কীভাবে কমপ্রেস করবেন](/blog/files/compress-an-image)।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Content Credentials কি প্রমাণ করে ছবি AI দিয়ে বানানো?",
+            "a": "না। এটি অংশগ্রহণকারী টুলের উৎস রেকর্ড। এতে তৈরি বা সম্পাদনার কাজ লেখা থাকতে পারে, কিন্তু থাকা বা না থাকা ছবির উৎসের সর্বজনীন সিদ্ধান্ত দেয় না।"
+          },
+          {
+            "q": "ছবি রূপান্তরে কি C2PA মেটাডেটা হারাতে পারে?",
+            "a": "হ্যাঁ। রূপান্তর বা পুনরায় এনকোড করলে মূল মেটাডেটা ও উৎস ব্লক ছাড়া নতুন ফাইল তৈরি হতে পারে। উৎস, লাইসেন্স বা প্রমাণ গুরুত্বপূর্ণ হলে মূল রাখুন।"
+          },
+          {
+            "q": "মেটাডেটাবিহীন কপি কি দৃশ্যমান ছবি বদলায়?",
+            "a": "টুল দৃশ্যমান পিক্সেল থেকে ফল বানায়। PNG ডিকোড করা পিক্সেল ও স্বচ্ছতা রাখে; JPG ও WebP কমপ্রেস করে, তাই সূক্ষ্ম বিবরণ গুরুত্বপূর্ণ হলে ফল দেখুন।"
+          },
+          {
+            "q": "মেটাডেটা সরানোর পর মূল ফাইল মুছে দেব?",
+            "a": "সাধারণত না। মূল আলাদা রাখুন, বিশেষ করে যখন সেটিই ছবির উৎস বা পুরোনো মেটাডেটার রেকর্ড।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -11657,6 +12307,136 @@
           {
             "q": "Nên chọn định dạng đầu ra nào?",
             "a": "Chọn PNG cho độ trong suốt hoặc điểm ảnh đã giải mã, JPG cho ảnh tương thích rộng và WebP cho web. Dù chọn định dạng nào, hãy giữ bản gốc."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "content-credentials-c2pa-explained",
+        "slug": "content-credentials-c2pa-explained",
+        "title": "Content Credentials và siêu dữ liệu ảnh C2PA là gì?",
+        "metaTitle": "Content Credentials và siêu dữ liệu ảnh C2PA là gì?",
+        "metaDescription": "Tìm hiểu C2PA và Content Credentials ghi gì, nằm ở đâu trong ảnh, vì sao có thể mất và bản sao không siêu dữ liệu thay đổi điều gì.",
+        "keyword": "Content Credentials và siêu dữ liệu C2PA",
+        "secondaryKeywords": [
+          "C2PA là gì",
+          "Content Credentials là gì",
+          "nguồn gốc ảnh AI",
+          "siêu dữ liệu ảnh C2PA",
+          "xóa Content Credentials"
+        ],
+        "answer": "Content Credentials là hồ sơ nguồn gốc có thể được nhúng vào hoặc liên kết với tệp phương tiện theo chuẩn C2PA. Hồ sơ có thể mô tả thao tác do công cụ tham gia ghi nhận, nhưng không phải bộ phát hiện ảnh AI toàn diện và có thể mất khi đổi định dạng, thay kích thước hoặc mã hóa lại tệp.",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "Tạo bản sao cục bộ không siêu dữ liệu",
+        "body": [
+          {
+            "t": "p",
+            "x": "Content Credentials không phải con dấu vĩnh viễn bên trong mọi ảnh AI. Đây là hệ thống ghi nguồn gốc: công cụ tham gia có thể ghi thông tin về tài sản phương tiện rồi gắn hoặc liên kết hồ sơ đó với tệp. Hồ sơ có tồn tại không, ghi điều gì và còn sau khi chia sẻ hay không tùy công cụ cùng đường đi của tệp."
+          },
+          {
+            "t": "h2",
+            "x": "C2PA và Content Credentials dễ hiểu"
+          },
+          {
+            "t": "p",
+            "x": "C2PA là chuẩn kỹ thuật đứng sau nhiều cách triển khai Content Credentials. Nói đơn giản, chuẩn này cho phần mềm tương thích mang theo các tuyên bố có chữ ký về lịch sử tệp. Hồ sơ có thể nêu ứng dụng, cho biết đã chỉnh sửa hoặc trỏ tới bản kê liên kết với tài sản. Đây không phải hình mờ trong điểm ảnh và cũng không phải kết luận phổ quát rằng ảnh thật, đã chỉnh hay do AI tạo."
+          },
+          {
+            "t": "table",
+            "caption": "Ba khái niệm thường bị nhầm lẫn.",
+            "head": [
+              "Loại thông tin",
+              "Nằm ở đâu",
+              "Có thể cho biết gì"
+            ],
+            "rows": [
+              [
+                "Nhãn hoặc hình mờ nhìn thấy",
+                "Trong điểm ảnh",
+                "Nội dung được in hoặc vẽ lên ảnh"
+              ],
+              [
+                "EXIF / XMP / IPTC",
+                "Trường siêu dữ liệu của tệp",
+                "Máy ảnh, tác giả, tiêu đề, ngày hoặc quy trình"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "Hồ sơ nguồn gốc nhúng hoặc liên kết",
+                "Tuyên bố của công cụ tham gia khi hồ sơ có mặt và hợp lệ"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao hồ sơ nguồn gốc có thể biến mất"
+          },
+          {
+            "t": "p",
+            "x": "Nhiều thao tác bình thường tạo ảnh mới: cắt, chụp màn hình, xuất tệp, tải lên mạng xã hội, đổi định dạng hoặc nén. Bộ mã hóa mới có thể giữ điểm ảnh nhưng không giữ mọi khối siêu dữ liệu và hồ sơ nguồn gốc. Điều đó không chứng minh ai đó cố ý xóa hồ sơ; chỉ cho biết tệp mới không giống nguyên bản từng byte. Khi cần chứng cứ, lưu trữ hoặc cấp phép, hãy giữ tài sản gốc cùng bối cảnh nguồn thay vì chỉ dựa vào bản được chuyển tiếp."
+          },
+          {
+            "t": "h2",
+            "x": "Bản sao ảnh không siêu dữ liệu hoạt động thế nào"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Tách bản nguồn và bản chia sẻ",
+                "x": "Giữ tệp gốc rồi tạo bản thứ hai để gửi. Nhờ vậy nguồn vẫn còn cho quy trình cần siêu dữ liệu hoặc hồ sơ nguồn gốc."
+              },
+              {
+                "h": "Dựng lại từ điểm ảnh nhìn thấy",
+                "x": "[Xóa siêu dữ liệu ảnh AI](/tools/remove-ai-metadata) giải mã ảnh trong trình duyệt rồi ghi PNG, JPG hoặc WebP mới. Các khối siêu dữ liệu và nguồn gốc phổ biến không được chuyển sang."
+              },
+              {
+                "h": "Dùng kết quả trung thực",
+                "x": "Bản sạch phù hợp với yêu cầu riêng tư hoặc giao tệp. Không nên dùng nó để khẳng định ảnh có nguồn gốc hay lịch sử khác."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "Tạo bản chia sẻ cục bộ không có siêu dữ liệu ảnh phổ biến. Giữ bản gốc khi nguồn gốc quan trọng."
+          },
+          {
+            "t": "h2",
+            "x": "Làm gì khi cần giữ nguồn gốc"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Giữ tệp gốc, không chỉ giữ bản từ ứng dụng nhắn tin hoặc mạng xã hội.",
+              "Ghi nguồn, ngày nhận và quyền sử dụng liên quan cùng với bản gốc.",
+              "Nếu có thể, dùng phần mềm hoặc dịch vụ cung cấp hồ sơ để kiểm tra.",
+              "Không xem việc thiếu chứng nhận là bằng chứng về cách ảnh được tạo.",
+              "Nếu quyền riêng tư hoặc nền tảng yêu cầu, tạo bản giao riêng với tên rõ ràng."
+            ]
+          },
+          {
+            "t": "note",
+            "x": "Xóa siêu dữ liệu khác với chỉnh sửa ảnh. Công cụ giữ nguyên hình ảnh nhìn thấy dự định và tạo tệp mới. Nếu cần đổi cả định dạng hoặc kích thước, xem [cách chuyển định dạng ảnh](/blog/files/convert-an-image-format) và [cách nén ảnh](/blog/files/compress-an-image)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Content Credentials có chứng minh ảnh do AI tạo không?",
+            "a": "Không. Đây là hồ sơ nguồn gốc từ công cụ tham gia. Hồ sơ có thể mô tả thao tác tạo hoặc chỉnh sửa, nhưng có hay không không xác định phổ quát nguồn gốc ảnh."
+          },
+          {
+            "q": "Chuyển đổi ảnh có thể làm mất dữ liệu C2PA không?",
+            "a": "Có. Việc chuyển đổi hoặc mã hóa lại có thể tạo tệp mới không còn khối siêu dữ liệu và nguồn gốc ban đầu. Hãy giữ bản gốc khi nguồn gốc, giấy phép hoặc chứng cứ quan trọng."
+          },
+          {
+            "q": "Bản sao không siêu dữ liệu có đổi hình ảnh nhìn thấy không?",
+            "a": "Công cụ dựng kết quả từ điểm ảnh nhìn thấy. PNG giữ điểm ảnh đã giải mã và độ trong suốt; JPG và WebP nén, nên hãy kiểm tra chi tiết nếu cần."
+          },
+          {
+            "q": "Có nên xóa bản gốc sau khi bỏ siêu dữ liệu?",
+            "a": "Thường là không. Hãy giữ riêng bản gốc, nhất là khi đó là hồ sơ về nguồn ảnh hoặc siêu dữ liệu ban đầu."
           }
         ],
         "published": "2026-11-15",
@@ -13605,6 +14385,136 @@
           {
             "q": "我应该选择哪种输出格式？",
             "a": "需要透明度或保留解码像素时选 PNG；普通照片和广泛兼容性选 JPG；网页交付选 WebP。无论选择哪种格式，都请保留原件。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "content-credentials-c2pa-explained",
+        "slug": "content-credentials-c2pa-explained",
+        "title": "什么是 Content Credentials 和 C2PA 图片元数据？",
+        "metaTitle": "什么是 Content Credentials 和 C2PA 图片元数据？",
+        "metaDescription": "了解 C2PA 与 Content Credentials 记录什么、位于图片何处、为何会丢失，以及无元数据副本会改变什么。",
+        "keyword": "Content Credentials C2PA 元数据",
+        "secondaryKeywords": [
+          "什么是 C2PA",
+          "什么是 Content Credentials",
+          "AI 图片来源元数据",
+          "C2PA 图片元数据",
+          "删除 Content Credentials"
+        ],
+        "answer": "Content Credentials 是一种来源记录，可通过 C2PA 标准嵌入媒体文件或与其关联。它可以描述参与工具记录的操作，但不是识别 AI 生成图片的通用检测器；文件转换、缩放或重新编码时，记录可能丢失。",
+        "tool": "remove-ai-metadata",
+        "ctaLabel": "创建本地无元数据副本",
+        "body": [
+          {
+            "t": "p",
+            "x": "Content Credentials 并不是每张 AI 图片中永久存在的印章。它是一套来源记录机制：参与该机制的工具可以记录媒体资产信息，并将记录附加到文件或与文件关联。记录是否存在、记录了什么，以及分享后是否保留，取决于所用工具和文件经过的处理流程。"
+          },
+          {
+            "t": "h2",
+            "x": "C2PA 与 Content Credentials 简明说明"
+          },
+          {
+            "t": "p",
+            "x": "C2PA 是许多 Content Credentials 实现背后的技术标准。简单来说，它让兼容软件能够携带关于文件历史的签名声明。记录可能标明应用程序、说明发生过编辑，或指向与资产相关的清单。它不是像素中的可见水印，也不能普遍判定图片是真实、经过编辑还是由 AI 生成。"
+          },
+          {
+            "t": "table",
+            "caption": "三个常被混为一谈的概念。",
+            "head": [
+              "类型",
+              "存放位置",
+              "可能说明什么"
+            ],
+            "rows": [
+              [
+                "可见标签或水印",
+                "图片像素中",
+                "图片上可见的文字或图案"
+              ],
+              [
+                "EXIF / XMP / IPTC",
+                "文件元数据字段",
+                "相机、作者、标题、日期或工作流程信息"
+              ],
+              [
+                "C2PA / Content Credentials",
+                "嵌入或关联资产的来源记录",
+                "记录存在且有效时，参与工具声明的操作"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "来源记录为什么可能消失"
+          },
+          {
+            "t": "p",
+            "x": "许多常见操作都会生成新图片，例如裁剪、截图、导出、上传社交平台、转换格式或压缩。新的编码器可能保留像素，却不保留所有元数据和来源记录块。这并不能证明有人故意删除记录，只说明新文件与原件并非逐字节相同。如果涉及证据、归档或许可，请保留原始资产及其来源背景，不要只依赖转发后的副本。"
+          },
+          {
+            "t": "h2",
+            "x": "无元数据图片副本如何生成"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "将源文件与分享副本分开",
+                "x": "保留原文件，再为分享目的创建第二份副本。这样，需要元数据或来源记录的工作仍可使用原件。"
+              },
+              {
+                "h": "根据可见像素重新生成副本",
+                "x": "[AI 图片元数据清除工具](/tools/remove-ai-metadata)会在浏览器中解码图片，并写入新的 PNG、JPG 或 WebP。常见嵌入式元数据和来源记录不会复制到新文件。"
+              },
+              {
+                "h": "如实使用结果",
+                "x": "清理后的副本适用于隐私或交付要求，但不能据此声称图片具有不同的来源或历史。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "remove-ai-metadata",
+            "x": "在浏览器本地创建不含常见图片元数据的分享副本。来源记录重要时请保留原件。"
+          },
+          {
+            "t": "h2",
+            "x": "来源信息重要时应该怎么做"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "保留原始文件，不要只保留聊天应用或社交平台上的副本。",
+              "在原件旁记录来源、收到日期和相关授权。",
+              "尽可能使用提供该记录的软件或服务检查来源信息。",
+              "不要把缺少凭证当作图片制作方式的证明。",
+              "隐私或平台要求另存时，创建名称清晰的交付副本。"
+            ]
+          },
+          {
+            "t": "note",
+            "x": "删除元数据与编辑图片不同。此工具保留预期的可见画面，同时生成新文件。如果还需更改格式或尺寸，请参阅[如何转换图片格式](/blog/files/convert-an-image-format)和[如何压缩图片](/blog/files/compress-an-image)。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Content Credentials 能证明图片由 AI 生成吗？",
+            "a": "不能。它是参与工具提供的来源记录，可能描述创建或编辑操作，但记录存在或缺失都不能普遍判定图片来源。"
+          },
+          {
+            "q": "转换图片会丢失 C2PA 元数据吗？",
+            "a": "可能会。转换或重新编码可能生成不含原始元数据和来源记录块的新文件。来源、许可或证据重要时，请保留原件。"
+          },
+          {
+            "q": "无元数据副本会改变可见画面吗？",
+            "a": "工具根据可见像素重新生成结果。PNG 保留解码后的像素和透明度；JPG 与 WebP 会压缩，如果细节重要，请检查结果。"
+          },
+          {
+            "q": "删除元数据后应该删除原件吗？",
+            "a": "通常不应该。请单独保留原件，特别是当它是图片来源或原始元数据的记录时。"
           }
         ],
         "published": "2026-11-15",
