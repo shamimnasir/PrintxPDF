@@ -5545,6 +5545,157 @@
           "pdf-checksum-basics-for-archives",
           "pdf-a-validation-checklist"
         ]
+      },
+      {
+        "topic": "preserving-signed-pdfs",
+        "slug": "preserving-signed-pdfs",
+        "cluster": "archive-expansion",
+        "title": "Cómo conservar PDF firmados sin invalidar la firma",
+        "metaTitle": "Cómo conservar PDF firmados sin invalidar la firma",
+        "metaDescription": "Conserva PDF firmados sin alterar el original. Aprende a verificar, guardar y compartir copias. Gratis y sin registro.",
+        "primaryKeyword": "cómo conservar PDF firmados",
+        "secondaryKeywords": [
+          "preserve digitally signed PDF",
+          "PDF signature validation",
+          "archive signed PDF"
+        ],
+        "answer": "Para conservar un PDF con firma digital, guarda el archivo original exactamente como se recibió y no lo edites, aplanes, conviertas ni optimices. Verifica la firma con un lector que compruebe certificados y estado de confianza; conserva el informe de validación y el contexto de recepción. Si necesitas una copia accesible o PDF/A, crea un derivado identificado y valida la firma del original por separado.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Si un PDF tiene una firma digital basada en certificado, cualquier cambio posterior puede invalidarla o afectar la verificación. Conserva intactos los bytes del archivo recibido, verifica la firma con un lector que muestre su estado y registra cuándo y cómo llegó. No aplanes, edites, comprimas ni conviertas el original firmado. Si necesitas imprimir, archivar en otro formato o añadir notas, crea una copia derivada y no la presentes como el mismo archivo firmado."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo conservar un PDF firmado"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarda el original sin cambios",
+                "x": "Descarga o copia el archivo recibido a un repositorio aprobado y conserva su nombre, origen y fecha."
+              },
+              {
+                "h": "Verifica la firma antes de usarlo",
+                "x": "Comprueba el estado, el certificado, el emisor y cualquier alerta usando el proceso de confianza de tu organización."
+              },
+              {
+                "h": "Registra la evidencia",
+                "x": "Guarda el resultado de validación, la hora de recepción y la información necesaria para identificar la versión exacta."
+              },
+              {
+                "h": "Crea derivados solo si hacen falta",
+                "x": "Trabaja sobre una copia. Identifícala como copia de acceso, impresión o PDF/A, y no afirmes que conserva la firma original."
+              },
+              {
+                "h": "Vuelve a comprobar el original",
+                "x": "Abre el original en [Lector PDF](/tools/pdf-reader) y confirma que no ha cambiado; solicita una nueva firma si se necesita una versión modificada."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Consulta el PDF original en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Qué hacer con un PDF firmado"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Acción",
+              "Efecto posible",
+              "Práctica recomendada"
+            ],
+            "rows": [
+              [
+                "Abrir para leer",
+                "Normalmente no modifica el archivo, pero el visor debe validar la firma.",
+                "Usa un lector confiable y conserva el archivo exacto."
+              ],
+              [
+                "Editar, aplanar o comprimir",
+                "Puede cambiar bytes y hacer que una firma digital aparezca como inválida.",
+                "No modifiques el original; guarda un derivado separado."
+              ],
+              [
+                "Convertir a PDF/A",
+                "Puede modificar estructura y estado de firma.",
+                "Valida la firma original y la conformidad del derivado por separado."
+              ],
+              [
+                "Imprimir y volver a escanear",
+                "La nueva copia no conserva la firma criptográfica original.",
+                "Etiqueta como copia escaneada y conserva el archivo firmado."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Firma digital y firma dibujada no son iguales"
+          },
+          {
+            "t": "p",
+            "x": "Una firma digital basada en certificado utiliza datos criptográficos para detectar cambios y puede incluir información del firmante y del momento de firma. Una firma dibujada o una imagen de firma es contenido visible en la página y no ofrece por sí sola la misma verificación. No uses el aspecto visual como prueba de que una firma digital es válida. Consulta al emisor o al responsable legal si el tipo de firma no está claro."
+          },
+          {
+            "t": "h2",
+            "x": "Verifica certificado, confianza y tiempo"
+          },
+          {
+            "t": "p",
+            "x": "Un visor puede informar si el documento cambió desde la firma y si la cadena de certificados parece confiable, pero el resultado depende de certificados, revocación, configuración y momento de comprobación. Sigue el procedimiento de tu organización y registra advertencias. No interpretes una marca visual, el nombre del archivo o una firma visible como validación. Si la validez legal importa, consulta al responsable competente y a la plataforma de firma."
+          },
+          {
+            "t": "h2",
+            "x": "Conserva evidencia y copias por separado"
+          },
+          {
+            "t": "p",
+            "x": "Guarda la versión exacta recibida, el mensaje o registro de entrega, el informe de firma y cualquier evidencia de sello de tiempo disponible. Usa un almacenamiento con permisos, historial y backup adecuados. Un checksum registrado puede ayudar a detectar cambios posteriores si se compara con una referencia confiable, pero no verifica identidad ni validez por sí solo. Para distribuir una copia con notas, usa un nombre que la identifique como derivada."
+          },
+          {
+            "t": "h2",
+            "x": "Evita cambios en el archivo firmado"
+          },
+          {
+            "t": "p",
+            "x": "Editar metadatos, eliminar páginas, aplanar campos, comprimir, optimizar o convertir puede alterar el documento. La herramienta [Aplanar PDF](/tools/flatten-pdf) advierte que aplanar puede invalidar firmas digitales certificadas; no la uses sobre el original que quieres preservar. [PDF a PDF/A](/tools/pdf-to-pdfa) puede servir para conservación si el flujo lo requiere, pero produce una copia que debe validarse por separado. [Firmar PDF](/tools/sign-pdf) añade una firma visible y no reemplaza una firma digital certificada."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Editar un PDF invalida una firma digital?",
+            "a": "Puede invalidar la firma o hacer que el visor reporte cambios. Conserva el original intacto y utiliza una copia separada para editar; vuelve a firmar la versión nueva si corresponde."
+          },
+          {
+            "q": "¿Puedo convertir un PDF firmado a PDF/A?",
+            "a": "Puedes generar un derivado si el proceso lo permite, pero la conversión puede alterar la estructura. Conserva y valida el original firmado; comprueba PDF/A y su firma por separado."
+          },
+          {
+            "q": "¿Imprimir y escanear conserva la firma digital?",
+            "a": "No. El escaneo produce una imagen de la página y no conserva la validación criptográfica del archivo original. Etiquétalo como copia y guarda el PDF firmado."
+          },
+          {
+            "q": "¿Cómo sé si un PDF firmado es válido?",
+            "a": "Usa un lector o flujo de validación confiable que examine el estado de cambios, certificados y confianza. Guarda el informe y consulta al responsable apropiado si aparecen alertas."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "flatten-pdf",
+          "pdf-to-pdfa",
+          "sign-pdf"
+        ],
+        "relatedPosts": [
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist",
+          "document-retention-handoff-checklist"
+        ]
       }
     ]
   },
@@ -11084,6 +11235,157 @@
           "pdf-checksum-basics-for-archives",
           "pdf-a-validation-checklist"
         ]
+      },
+      {
+        "topic": "preserving-signed-pdfs",
+        "slug": "preserving-signed-pdfs",
+        "cluster": "archive-expansion",
+        "title": "Como preservar PDFs assinados sem invalidar a assinatura",
+        "metaTitle": "Como preservar PDFs assinados sem invalidar a assinatura",
+        "metaDescription": "Preserve PDFs assinados sem alterar o original. Saiba verificar, guardar e compartilhar cópias. Grátis e sem cadastro.",
+        "primaryKeyword": "como preservar PDF assinado",
+        "secondaryKeywords": [
+          "preserve digitally signed PDF",
+          "PDF signature validation",
+          "archive signed PDF"
+        ],
+        "answer": "Para preservar um PDF com assinatura digital, guarde o arquivo original exatamente como foi recebido e não o edite, achate, converta ou otimize. Verifique a assinatura com um leitor que confira certificados e confiança; preserve o relatório de validação e o contexto do recebimento. Se precisar de uma cópia acessível ou PDF/A, crie um derivado identificado e valide a assinatura do original separadamente.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Se um PDF tem assinatura digital baseada em certificado, alterações posteriores podem invalidá-la ou afetar a validação. Preserve os bytes do arquivo recebido, verifique o estado da assinatura em um leitor e registre quando e como ele chegou. Não achate, edite, comprima nem converta o original assinado. Se precisar imprimir, arquivar em outro formato ou acrescentar notas, crie uma cópia derivada e não a apresente como o mesmo arquivo assinado."
+          },
+          {
+            "t": "h2",
+            "x": "Como preservar um PDF assinado"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Guarde o original sem alterações",
+                "x": "Salve o arquivo recebido em um repositório aprovado e preserve nome, origem e data."
+              },
+              {
+                "h": "Verifique a assinatura antes de usar",
+                "x": "Confira estado, certificado, emissor e alertas pelo processo de confiança da organização."
+              },
+              {
+                "h": "Registre as evidências",
+                "x": "Guarde o resultado da validação, horário do recebimento e dados para identificar a versão exata."
+              },
+              {
+                "h": "Crie derivados somente se necessário",
+                "x": "Trabalhe em uma cópia. Identifique-a como acesso, impressão ou PDF/A, sem afirmar que mantém a assinatura original."
+              },
+              {
+                "h": "Confira novamente o original",
+                "x": "Abra o arquivo em [Leitor de PDF](/tools/pdf-reader), confirme que não mudou e peça nova assinatura se uma versão alterada for necessária."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Consulte o PDF original na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Como tratar um PDF assinado"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Ação",
+              "Possível efeito",
+              "Prática recomendada"
+            ],
+            "rows": [
+              [
+                "Abrir para leitura",
+                "Normalmente não altera o arquivo, mas o leitor precisa validar a assinatura.",
+                "Use um leitor confiável e preserve o arquivo exato."
+              ],
+              [
+                "Editar, achatar ou comprimir",
+                "Pode mudar bytes e fazer a assinatura digital aparecer como inválida.",
+                "Não altere o original; salve um derivado separado."
+              ],
+              [
+                "Converter para PDF/A",
+                "Pode modificar a estrutura e o estado da assinatura.",
+                "Valide a assinatura original e a conformidade do derivado separadamente."
+              ],
+              [
+                "Imprimir e digitalizar novamente",
+                "A nova cópia não mantém a assinatura criptográfica original.",
+                "Identifique como cópia digitalizada e preserve o arquivo assinado."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Assinatura digital e assinatura desenhada são diferentes"
+          },
+          {
+            "t": "p",
+            "x": "Uma assinatura digital baseada em certificado usa dados criptográficos para detectar alterações e pode incluir informações do signatário e do momento da assinatura. Uma assinatura desenhada ou imagem de assinatura é conteúdo visível na página e não oferece a mesma validação por si só. Não trate a aparência visual como prova de que uma assinatura digital é válida. Consulte o remetente ou a área jurídica se o tipo não estiver claro."
+          },
+          {
+            "t": "h2",
+            "x": "Verifique certificado, confiança e horário"
+          },
+          {
+            "t": "p",
+            "x": "Um leitor pode informar se o documento mudou depois da assinatura e se a cadeia de certificados parece confiável, mas o resultado depende dos certificados, revogação, configurações e momento da verificação. Siga o procedimento da organização e registre alertas. Um selo visual, nome do arquivo ou assinatura visível não prova validade. Se a validade jurídica for importante, consulte a área responsável e a plataforma de assinatura."
+          },
+          {
+            "t": "h2",
+            "x": "Preserve evidências e cópias separadas"
+          },
+          {
+            "t": "p",
+            "x": "Guarde a versão exata recebida, a mensagem ou registro de entrega, o relatório de assinatura e eventuais evidências de carimbo de tempo. Use armazenamento com permissões, histórico e backup adequados. Um checksum registrado pode ajudar a detectar mudanças futuras quando comparado a uma referência confiável, mas não verifica identidade ou validade sozinho. Para distribuir uma cópia com notas, use um nome que indique que ela é derivada."
+          },
+          {
+            "t": "h2",
+            "x": "Evite alterações no arquivo assinado"
+          },
+          {
+            "t": "p",
+            "x": "Editar metadados, remover páginas, achatar campos, comprimir, otimizar ou converter pode alterar o documento. A ferramenta [Achatar PDF](/tools/flatten-pdf) avisa que o achatamento pode invalidar assinaturas digitais certificadas; não a use no original que precisa preservar. [PDF para PDF/A](/tools/pdf-to-pdfa) pode ser útil se o fluxo exigir preservação, mas gera uma cópia que precisa de validação própria. [Assinar PDF](/tools/sign-pdf) adiciona uma assinatura visível e não substitui uma assinatura digital certificada."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Editar um PDF invalida a assinatura digital?",
+            "a": "Pode invalidá-la ou fazer o leitor indicar alterações. Preserve o original intacto e use uma cópia separada para editar; assine novamente a nova versão se necessário."
+          },
+          {
+            "q": "Posso converter um PDF assinado para PDF/A?",
+            "a": "Você pode criar um derivado se o processo permitir, mas a conversão pode alterar a estrutura. Preserve e valide o original assinado; verifique o PDF/A e a assinatura separadamente."
+          },
+          {
+            "q": "Imprimir e digitalizar preserva a assinatura digital?",
+            "a": "Não. O escaneamento cria uma imagem e não mantém a validação criptográfica do arquivo original. Identifique como cópia e preserve o PDF assinado."
+          },
+          {
+            "q": "Como saber se um PDF assinado é válido?",
+            "a": "Use um leitor ou fluxo confiável que examine alterações, certificados e confiança. Guarde o relatório e consulte o responsável adequado se houver alertas."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "flatten-pdf",
+          "pdf-to-pdfa",
+          "sign-pdf"
+        ],
+        "relatedPosts": [
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist",
+          "document-retention-handoff-checklist"
+        ]
       }
     ]
   },
@@ -16622,6 +16924,157 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "preserving-signed-pdfs",
+        "slug": "preserving-signed-pdfs",
+        "cluster": "archive-expansion",
+        "title": "हस्ताक्षरित PDF को सुरक्षित कैसे रखें",
+        "metaTitle": "हस्ताक्षरित PDF को सुरक्षित कैसे रखें",
+        "metaDescription": "मूल फ़ाइल बदले बिना हस्ताक्षरित PDF सुरक्षित रखें। सत्यापन, भंडारण और कॉपी साझा करने के तरीके जानें। मुफ़्त।",
+        "primaryKeyword": "हस्ताक्षरित PDF सुरक्षित रखना",
+        "secondaryKeywords": [
+          "preserve digitally signed PDF",
+          "PDF signature validation",
+          "archive signed PDF"
+        ],
+        "answer": "डिजिटल हस्ताक्षर वाली PDF सुरक्षित रखने के लिए प्राप्त मूल फ़ाइल को बिल्कुल वैसा ही रखें; उसे संपादित, फ़्लैटन, कन्वर्ट या ऑप्टिमाइज़ न करें। प्रमाणपत्र और भरोसे की स्थिति जाँचने वाले रीडर से हस्ताक्षर सत्यापित करें और रिपोर्ट व प्राप्ति संदर्भ सुरक्षित रखें। जरूरत पर अलग पहचान वाली कॉपी या PDF/A बनाएँ और मूल हस्ताक्षर की जाँच अलग करें।",
+        "body": [
+          {
+            "t": "p",
+            "x": "प्रमाणपत्र-आधारित डिजिटल हस्ताक्षर वाली PDF में बाद के बदलाव हस्ताक्षर को अमान्य कर सकते हैं या सत्यापन प्रभावित कर सकते हैं। प्राप्त फ़ाइल के बाइट्स जस के तस रखें, रीडर से हस्ताक्षर स्थिति जाँचें और प्राप्ति का समय व तरीका लिखें। हस्ताक्षरित मूल को फ़्लैटन, संपादित, संपीड़ित या कन्वर्ट न करें। प्रिंट, दूसरे फ़ॉर्मेट या नोट्स की जरूरत हो तो अलग डेरिवेटिव कॉपी बनाएँ; उसे वही हस्ताक्षरित फ़ाइल न बताएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "हस्ताक्षरित PDF को कैसे सुरक्षित रखें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "मूल फ़ाइल बिना बदलाव रखें",
+                "x": "प्राप्त फ़ाइल को स्वीकृत संग्रह में सहेजें और नाम, स्रोत व तारीख रखें।"
+              },
+              {
+                "h": "उपयोग से पहले हस्ताक्षर जाँचें",
+                "x": "अपने संगठन की भरोसा प्रक्रिया से स्थिति, प्रमाणपत्र, जारीकर्ता और चेतावनी देखें।"
+              },
+              {
+                "h": "प्रमाण दर्ज करें",
+                "x": "सत्यापन परिणाम, प्राप्ति समय और सही संस्करण पहचानने वाली जानकारी रखें।"
+              },
+              {
+                "h": "जरूरत पर अलग कॉपी बनाएँ",
+                "x": "कॉपी पर काम करें। उसे एक्सेस, प्रिंट या PDF/A कॉपी बताएं; मूल हस्ताक्षर बरकरार होने का दावा न करें।"
+              },
+              {
+                "h": "मूल फिर जाँचें",
+                "x": "[PDF Reader](/tools/pdf-reader) में मूल खोलकर बदलाव न होने की पुष्टि करें; बदले संस्करण पर नई हस्ताक्षर प्रक्रिया लें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "अपने टैब में मूल PDF देखें। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "हस्ताक्षरित PDF के साथ क्या करें"
+          },
+          {
+            "t": "table",
+            "head": [
+              "कार्रवाई",
+              "संभावित प्रभाव",
+              "सुझाव"
+            ],
+            "rows": [
+              [
+                "केवल पढ़ने के लिए खोलें",
+                "आमतौर पर फ़ाइल नहीं बदलती, पर रीडर को हस्ताक्षर सत्यापित करना चाहिए।",
+                "विश्वसनीय रीडर लें और सटीक मूल रखें।"
+              ],
+              [
+                "संपादन, फ़्लैटन या संपीड़न",
+                "बाइट बदल सकते हैं और डिजिटल हस्ताक्षर अमान्य दिख सकता है।",
+                "मूल न बदलें; अलग डेरिवेटिव रखें।"
+              ],
+              [
+                "PDF/A में कन्वर्ट",
+                "संरचना और हस्ताक्षर स्थिति बदल सकती है।",
+                "मूल हस्ताक्षर और डेरिवेटिव अनुपालन अलग-अलग जाँचें।"
+              ],
+              [
+                "प्रिंट कर फिर स्कैन",
+                "नई कॉपी मूल क्रिप्टोग्राफ़िक हस्ताक्षर नहीं रखती।",
+                "स्कैन कॉपी चिह्नित करें और हस्ताक्षरित फ़ाइल रखें।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "डिजिटल और हाथ से बनाई हस्ताक्षर छवि अलग हैं"
+          },
+          {
+            "t": "p",
+            "x": "प्रमाणपत्र-आधारित डिजिटल हस्ताक्षर बदलाव पहचानने के लिए क्रिप्टोग्राफ़िक डेटा उपयोग करता है और हस्ताक्षरकर्ता व समय की जानकारी भी दे सकता है। हाथ से बनाई गई रेखा या हस्ताक्षर की तस्वीर पेज पर दिखाई देने वाली सामग्री है; वह अपने आप वैसी जाँच नहीं देती। दृश्य रूप को डिजिटल हस्ताक्षर की वैधता का प्रमाण न मानें। प्रकार स्पष्ट न हो तो भेजने वाले या कानूनी जिम्मेदार व्यक्ति से पूछें।"
+          },
+          {
+            "t": "h2",
+            "x": "प्रमाणपत्र, भरोसा और समय जाँचें"
+          },
+          {
+            "t": "p",
+            "x": "रीडर बता सकता है कि हस्ताक्षर के बाद दस्तावेज़ बदला है या प्रमाणपत्र शृंखला भरोसेमंद लगती है, लेकिन परिणाम प्रमाणपत्र, निरस्तीकरण, सेटिंग और जाँच के समय पर निर्भर है। संगठन की प्रक्रिया अपनाएँ और चेतावनी दर्ज करें। दृश्य मुहर, फ़ाइल नाम या पेज पर हस्ताक्षर सत्यापन नहीं है। कानूनी वैधता महत्वपूर्ण हो तो संबंधित अधिकारी और हस्ताक्षर प्लेटफ़ॉर्म से जाँचें।"
+          },
+          {
+            "t": "h2",
+            "x": "प्रमाण और अलग कॉपियाँ सुरक्षित रखें"
+          },
+          {
+            "t": "p",
+            "x": "प्राप्त सटीक संस्करण, संदेश या डिलीवरी रिकॉर्ड, हस्ताक्षर रिपोर्ट और उपलब्ध टाइमस्टैम्प प्रमाण रखें। अनुमतियों, इतिहास और बैकअप वाले स्टोरेज का उपयोग करें। दर्ज चेकसम विश्वसनीय संदर्भ से मिलाने पर बाद के बदलाव पकड़ सकता है, पर अकेले पहचान या वैधता नहीं बताता। नोट वाली कॉपी बाँटते समय नाम से बताएं कि वह डेरिवेटिव है।"
+          },
+          {
+            "t": "h2",
+            "x": "हस्ताक्षरित फ़ाइल में बदलाव से बचें"
+          },
+          {
+            "t": "p",
+            "x": "मेटाडेटा बदलना, पेज हटाना, फ़ील्ड फ़्लैटन करना, संपीड़ित, ऑप्टिमाइज़ या कन्वर्ट करना दस्तावेज़ बदल सकता है। [Flatten PDF](/tools/flatten-pdf) बताता है कि फ़्लैटन करने से प्रमाणित डिजिटल हस्ताक्षर अमान्य हो सकता है; संरक्षित करने वाले मूल पर इसका उपयोग न करें। जरूरत पर [PDF to PDF/A](/tools/pdf-to-pdfa) डेरिवेटिव बनाएगा, जिसे अलग से वैलिडेट करें। [Sign PDF](/tools/sign-pdf) दृश्य हस्ताक्षर जोड़ता है; यह प्रमाणपत्र-आधारित हस्ताक्षर का विकल्प नहीं है।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "क्या PDF संपादित करने से डिजिटल हस्ताक्षर अमान्य होता है?",
+            "a": "यह हस्ताक्षर अमान्य कर सकता है या रीडर को बदलाव दिखा सकता है। मूल सुरक्षित रखें और अलग कॉपी संपादित करें; जरूरत हो तो नए संस्करण पर फिर हस्ताक्षर लें।"
+          },
+          {
+            "q": "क्या हस्ताक्षरित PDF को PDF/A में कन्वर्ट कर सकता हूँ?",
+            "a": "प्रक्रिया अनुमति दे तो डेरिवेटिव बना सकते हैं, पर संरचना बदल सकती है। मूल हस्ताक्षरित फ़ाइल सुरक्षित रखें और मूल व PDF/A कॉपी अलग-अलग वैलिडेट करें।"
+          },
+          {
+            "q": "क्या प्रिंट और स्कैन से डिजिटल हस्ताक्षर बचता है?",
+            "a": "नहीं। स्कैन पेज की छवि बनाता है और मूल फ़ाइल का क्रिप्टोग्राफ़िक सत्यापन नहीं रखता। इसे स्कैन कॉपी कहें और हस्ताक्षरित PDF रखें।"
+          },
+          {
+            "q": "हस्ताक्षरित PDF वैध है या नहीं कैसे जानें?",
+            "a": "विश्वसनीय रीडर या प्रक्रिया से बदलाव, प्रमाणपत्र और भरोसे की स्थिति जाँचें। रिपोर्ट रखें और चेतावनी हो तो उचित जिम्मेदार व्यक्ति से पूछें।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "flatten-pdf",
+          "pdf-to-pdfa",
+          "sign-pdf"
+        ],
+        "relatedPosts": [
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist",
+          "document-retention-handoff-checklist"
         ]
       }
     ]
@@ -22170,6 +22623,157 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "preserving-signed-pdfs",
+        "slug": "preserving-signed-pdfs",
+        "cluster": "archive-expansion",
+        "title": "كيفية الحفاظ على ملفات PDF الموقعة",
+        "metaTitle": "كيفية الحفاظ على ملفات PDF الموقعة",
+        "metaDescription": "احتفظ بملف PDF الموقع دون تغيير الأصل. تعرف على التحقق والتخزين ومشاركة النسخ. مجاناً وبلا تسجيل، مع إرشادات واضحة للحفظ.",
+        "primaryKeyword": "الحفاظ على PDF موقع",
+        "secondaryKeywords": [
+          "preserve digitally signed PDF",
+          "PDF signature validation",
+          "archive signed PDF"
+        ],
+        "answer": "للحفاظ على PDF ذي توقيع رقمي، احتفظ بالملف الأصلي كما استلمته تماماً ولا تعدله أو تسطحه أو تحوله أو تحسنه. تحقق من التوقيع بقارئ يفحص الشهادات والثقة، واحتفظ بتقرير التحقق وسياق الاستلام. إذا احتجت نسخة سهلة الاستخدام أو PDF/A، أنشئ نسخة مشتقة محددة الهوية وتحقق من توقيع الأصل بشكل منفصل.",
+        "body": [
+          {
+            "t": "p",
+            "x": "إذا كان PDF يحمل توقيعاً رقمياً قائماً على شهادة، فقد يؤدي أي تعديل لاحق إلى إبطاله أو التأثير في التحقق. احتفظ ببايتات الملف المستلم دون تغيير، وافحص حالة التوقيع في قارئ وسجل وقت وطريقة الاستلام. لا تسطح الأصل الموقع أو تعدله أو تضغطه أو تحوله. إذا احتجت إلى الطباعة أو تنسيق آخر أو إضافة ملاحظات، أنشئ نسخة مشتقة ولا تقدمها على أنها الملف الموقع نفسه."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية الحفاظ على PDF موقع"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احفظ الأصل دون تغيير",
+                "x": "ضع الملف المستلم في مخزن معتمد واحتفظ باسمه ومصدره وتاريخه."
+              },
+              {
+                "h": "تحقق من التوقيع قبل الاستخدام",
+                "x": "افحص الحالة والشهادة والجهة المصدرة والتنبيهات وفق إجراء الثقة في مؤسستك."
+              },
+              {
+                "h": "سجل الأدلة",
+                "x": "احفظ نتيجة التحقق ووقت الاستلام والمعلومات التي تحدد الإصدار بدقة."
+              },
+              {
+                "h": "أنشئ نسخاً مشتقة عند الحاجة فقط",
+                "x": "اعمل على نسخة وعرّفها بأنها نسخة وصول أو طباعة أو PDF/A ولا تدعِ بقاء توقيع الأصل."
+              },
+              {
+                "h": "أعد فحص الأصل",
+                "x": "افتح الأصل في [قارئ PDF](/tools/pdf-reader) وتأكد من عدم تغييره؛ واطلب توقيعاً جديداً إذا لزم إصدار معدل."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "اعرض ملف PDF الأصلي في علامة التبويب. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "كيفية التعامل مع PDF موقع"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الإجراء",
+              "الأثر المحتمل",
+              "الممارسة الموصى بها"
+            ],
+            "rows": [
+              [
+                "الفتح للقراءة",
+                "غالباً لا يغير الملف، لكن يجب أن يتحقق القارئ من التوقيع.",
+                "استخدم قارئاً موثوقاً واحتفظ بالملف نفسه."
+              ],
+              [
+                "التعديل أو التسطيح أو الضغط",
+                "قد يغير البايتات ويجعل التوقيع الرقمي يبدو غير صالح.",
+                "لا تعدل الأصل؛ احفظ نسخة مشتقة منفصلة."
+              ],
+              [
+                "التحويل إلى PDF/A",
+                "قد يغير البنية وحالة التوقيع.",
+                "تحقق من توقيع الأصل ومطابقة النسخة المشتقة كل على حدة."
+              ],
+              [
+                "الطباعة وإعادة المسح",
+                "لا تحتفظ النسخة الجديدة بالتوقيع المشفر الأصلي.",
+                "سمها نسخة ممسوحة واحتفظ بالملف الموقع."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "التوقيع الرقمي يختلف عن صورة التوقيع"
+          },
+          {
+            "t": "p",
+            "x": "يستخدم التوقيع الرقمي القائم على شهادة بيانات تشفيرية لكشف التغييرات وقد يتضمن معلومات الموقع ووقت التوقيع. أما التوقيع المرسوم أو صورة التوقيع فهي محتوى مرئي على الصفحة ولا توفر وحدها التحقق نفسه. لا تعتبر الشكل المرئي دليلاً على صلاحية التوقيع الرقمي. إذا لم يتضح نوعه، فاسأل المرسل أو المسؤول القانوني."
+          },
+          {
+            "t": "h2",
+            "x": "تحقق من الشهادة والثقة والوقت"
+          },
+          {
+            "t": "p",
+            "x": "قد يوضح القارئ ما إذا تغير المستند بعد التوقيع وما إذا بدت سلسلة الشهادات موثوقة، لكن النتيجة تعتمد على الشهادات والإلغاء والإعدادات ووقت الفحص. اتبع إجراء مؤسستك وسجل التنبيهات. الختم المرئي أو اسم الملف أو التوقيع الظاهر لا يثبت الصلاحية. إذا كانت الصلاحية القانونية مهمة، فاستشر المسؤول المختص ومنصة التوقيع."
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بالأدلة والنسخ المنفصلة"
+          },
+          {
+            "t": "p",
+            "x": "احفظ الإصدار المستلم نفسه ورسالة أو سجل التسليم وتقرير التوقيع وأي دليل متاح على الطابع الزمني. استخدم تخزيناً بصلاحيات وسجل إصدارات ونسخ احتياطية مناسبة. قد تساعد البصمة المسجلة في كشف التغييرات عند مقارنتها بقيمة مرجعية موثوقة، لكنها لا تثبت الهوية أو الصلاحية وحدها. سمّ النسخة التي تتضمن ملاحظات بأنها مشتقة."
+          },
+          {
+            "t": "h2",
+            "x": "تجنب تغيير الملف الموقع"
+          },
+          {
+            "t": "p",
+            "x": "قد يؤدي تعديل البيانات الوصفية أو حذف الصفحات أو تسطيح الحقول أو الضغط أو التحسين أو التحويل إلى تغيير المستند. تحذر أداة [تسطيح PDF](/tools/flatten-pdf) من أن التسطيح قد يبطل التوقيعات الرقمية المعتمدة؛ فلا تستخدمها على الأصل المراد حفظه. قد يساعد [التحويل إلى PDF/A](/tools/pdf-to-pdfa) إذا طلبه سير العمل، لكنه ينشئ نسخة يجب التحقق منها منفصلة. تضيف [توقيع PDF](/tools/sign-pdf) توقيعاً مرئياً ولا تستبدل توقيعاً رقمياً معتمداً."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "هل يؤدي تعديل PDF إلى إبطال التوقيع الرقمي؟",
+            "a": "قد يبطله أو يجعل القارئ يبلغ عن تغييرات. احتفظ بالأصل دون تعديل واستخدم نسخة منفصلة للتحرير، ثم أعد التوقيع إذا لزم الأمر."
+          },
+          {
+            "q": "هل يمكن تحويل PDF موقع إلى PDF/A؟",
+            "a": "يمكن إنشاء نسخة مشتقة إذا سمح الإجراء، لكن التحويل قد يغير البنية. احتفظ بالأصل الموقع وتحقق من الأصل ونسخة PDF/A كل على حدة."
+          },
+          {
+            "q": "هل تحفظ الطباعة والمسح التوقيع الرقمي؟",
+            "a": "لا. ينتج المسح صورة للصفحة ولا يحفظ التحقق التشفيري للملف الأصلي. عرّفها كنسخة ممسوحة واحتفظ بملف PDF الموقع."
+          },
+          {
+            "q": "كيف أعرف أن PDF الموقع صالح؟",
+            "a": "استخدم قارئاً أو إجراء تحقق موثوقاً يفحص التغييرات والشهادات والثقة. احتفظ بالتقرير واستشر المسؤول المناسب عند ظهور تنبيهات."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "flatten-pdf",
+          "pdf-to-pdfa",
+          "sign-pdf"
+        ],
+        "relatedPosts": [
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist",
+          "document-retention-handoff-checklist"
         ]
       }
     ]
@@ -27722,6 +28326,157 @@
           "pdf-checksum-basics-for-archives",
           "pdf-a-validation-checklist"
         ]
+      },
+      {
+        "topic": "preserving-signed-pdfs",
+        "slug": "preserving-signed-pdfs",
+        "cluster": "archive-expansion",
+        "title": "স্বাক্ষরিত PDF কীভাবে সংরক্ষণ করবেন",
+        "metaTitle": "স্বাক্ষরিত PDF কীভাবে সংরক্ষণ করবেন",
+        "metaDescription": "মূল ফাইল না বদলে স্বাক্ষরিত PDF সংরক্ষণ করুন। যাচাই, রাখা ও কপি শেয়ার করার নিয়ম জানুন। বিনামূল্যে, সাইনআপ নেই।",
+        "primaryKeyword": "স্বাক্ষরিত PDF সংরক্ষণ",
+        "secondaryKeywords": [
+          "preserve digitally signed PDF",
+          "PDF signature validation",
+          "archive signed PDF"
+        ],
+        "answer": "ডিজিটাল স্বাক্ষরযুক্ত PDF সংরক্ষণ করতে প্রাপ্ত মূল ফাইল হুবহু রাখুন; সম্পাদনা, ফ্ল্যাটেন, রূপান্তর বা অপ্টিমাইজ করবেন না। সার্টিফিকেট ও বিশ্বাসযোগ্যতা যাচাই করে এমন রিডার দিয়ে স্বাক্ষর পরীক্ষা করুন এবং রিপোর্ট ও প্রাপ্তির প্রেক্ষাপট রাখুন। দরকারে আলাদা পরিচয়যুক্ত কপি বা PDF/A তৈরি করুন, আর মূল স্বাক্ষর আলাদাভাবে যাচাই করুন।",
+        "body": [
+          {
+            "t": "p",
+            "x": "সার্টিফিকেট-ভিত্তিক ডিজিটাল স্বাক্ষর থাকা PDF-এ পরে পরিবর্তন করলে স্বাক্ষর বাতিল হতে পারে বা যাচাই প্রভাবিত হতে পারে। প্রাপ্ত ফাইলের বাইট অপরিবর্তিত রাখুন, রিডারে স্বাক্ষরের অবস্থা দেখুন এবং কখন ও কীভাবে পেয়েছেন লিখুন। স্বাক্ষরিত মূল ফ্ল্যাটেন, সম্পাদনা, সংকুচিত বা রূপান্তর করবেন না। প্রিন্ট, অন্য ফরম্যাট বা নোট দরকার হলে আলাদা ডেরিভেটিভ কপি তৈরি করুন; সেটিকে একই স্বাক্ষরিত ফাইল বলবেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "স্বাক্ষরিত PDF কীভাবে সংরক্ষণ করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "মূল ফাইল অপরিবর্তিত রাখুন",
+                "x": "প্রাপ্ত ফাইল অনুমোদিত সংরক্ষণস্থলে রাখুন এবং নাম, উৎস ও তারিখ নথিভুক্ত করুন।"
+              },
+              {
+                "h": "ব্যবহারের আগে স্বাক্ষর যাচাই করুন",
+                "x": "প্রতিষ্ঠানের বিশ্বাস যাচাই পদ্ধতিতে অবস্থা, সার্টিফিকেট, ইস্যুকারী ও সতর্কতা দেখুন।"
+              },
+              {
+                "h": "প্রমাণ নথিভুক্ত করুন",
+                "x": "যাচাই ফল, প্রাপ্তির সময় ও সঠিক সংস্করণ শনাক্ত করার তথ্য রাখুন।"
+              },
+              {
+                "h": "প্রয়োজন হলেই ডেরিভেটিভ তৈরি করুন",
+                "x": "কপিতে কাজ করুন। অ্যাক্সেস, প্রিন্ট বা PDF/A কপি বলে চিহ্নিত করুন; মূল স্বাক্ষর রয়েছে দাবি করবেন না।"
+              },
+              {
+                "h": "মূলটি আবার পরীক্ষা করুন",
+                "x": "[PDF Reader](/tools/pdf-reader) দিয়ে মূল খুলে পরিবর্তন হয়নি নিশ্চিত করুন; পরিবর্তিত সংস্করণে নতুন স্বাক্ষর নিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "আপনার ট্যাবে মূল PDF দেখুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক নেই।"
+          },
+          {
+            "t": "h2",
+            "x": "স্বাক্ষরিত PDF ব্যবহারের নিয়ম"
+          },
+          {
+            "t": "table",
+            "head": [
+              "কাজ",
+              "সম্ভাব্য প্রভাব",
+              "ভালো পদ্ধতি"
+            ],
+            "rows": [
+              [
+                "শুধু পড়তে খোলা",
+                "সাধারণত ফাইল বদলায় না, তবে রিডারকে স্বাক্ষর যাচাই করতে হবে।",
+                "বিশ্বস্ত রিডার নিন ও সঠিক মূল কপি রাখুন।"
+              ],
+              [
+                "সম্পাদনা, ফ্ল্যাটেন বা সংকোচন",
+                "বাইট বদলে ডিজিটাল স্বাক্ষরকে অবৈধ দেখাতে পারে।",
+                "মূল বদলাবেন না; আলাদা ডেরিভেটিভ রাখুন।"
+              ],
+              [
+                "PDF/A-তে রূপান্তর",
+                "গঠন ও স্বাক্ষরের অবস্থা বদলাতে পারে।",
+                "মূল স্বাক্ষর ও ডেরিভেটিভের কনফরম্যান্স আলাদা যাচাই করুন।"
+              ],
+              [
+                "প্রিন্ট করে আবার স্ক্যান",
+                "নতুন কপি মূল ক্রিপ্টোগ্রাফিক স্বাক্ষর রাখে না।",
+                "স্ক্যান কপি চিহ্নিত করুন ও স্বাক্ষরিত ফাইল রাখুন।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ডিজিটাল স্বাক্ষর ও আঁকা স্বাক্ষর এক নয়"
+          },
+          {
+            "t": "p",
+            "x": "সার্টিফিকেট-ভিত্তিক ডিজিটাল স্বাক্ষর পরিবর্তন শনাক্তে ক্রিপ্টোগ্রাফিক তথ্য ব্যবহার করে এবং স্বাক্ষরকারী ও সময়ের তথ্য থাকতে পারে। হাতে আঁকা দাগ বা স্বাক্ষরের ছবি পৃষ্ঠায় দেখা যায়, কিন্তু একা একই যাচাই দেয় না। দৃশ্যমান স্বাক্ষর দেখে ডিজিটাল স্বাক্ষর বৈধ ধরে নেবেন না। ধরন স্পষ্ট না হলে প্রেরক বা আইনগত দায়িত্বপ্রাপ্ত ব্যক্তিকে জিজ্ঞেস করুন।"
+          },
+          {
+            "t": "h2",
+            "x": "সার্টিফিকেট, বিশ্বাস ও সময় যাচাই করুন"
+          },
+          {
+            "t": "p",
+            "x": "রিডার জানাতে পারে স্বাক্ষরের পর নথি বদলেছে কি না এবং সার্টিফিকেট চেইন বিশ্বাসযোগ্য কি না; তবে ফল সার্টিফিকেট, প্রত্যাহার, সেটিং ও যাচাইয়ের সময়ের ওপর নির্ভর করে। প্রতিষ্ঠানের পদ্ধতি মেনে সতর্কতা নথিভুক্ত করুন। দৃশ্যমান সিল, ফাইলের নাম বা পৃষ্ঠার স্বাক্ষর যাচাইয়ের প্রমাণ নয়। আইনি বৈধতা জরুরি হলে যথাযথ কর্মকর্তা ও স্বাক্ষর প্ল্যাটফর্মের পরামর্শ নিন।"
+          },
+          {
+            "t": "h2",
+            "x": "প্রমাণ ও আলাদা কপি সংরক্ষণ করুন"
+          },
+          {
+            "t": "p",
+            "x": "প্রাপ্ত সঠিক সংস্করণ, বার্তা বা হস্তান্তর নথি, স্বাক্ষর রিপোর্ট এবং টাইমস্ট্যাম্প প্রমাণ থাকলে তা রাখুন। অনুমতি, ইতিহাস ও ব্যাকআপসহ স্টোরেজ ব্যবহার করুন। নথিভুক্ত চেকসাম বিশ্বস্ত রেফারেন্সের সঙ্গে তুললে পরের পরিবর্তন ধরতে পারে, কিন্তু একা পরিচয় বা বৈধতা যাচাই করে না। নোটসহ বিতরণ কপিকে ডেরিভেটিভ বলে নাম দিন।"
+          },
+          {
+            "t": "h2",
+            "x": "স্বাক্ষরিত ফাইলে পরিবর্তন এড়ান"
+          },
+          {
+            "t": "p",
+            "x": "মেটাডেটা বদল, পৃষ্ঠা মোছা, ফর্ম ফ্ল্যাটেন, সংকোচন, অপ্টিমাইজ বা রূপান্তর নথি বদলাতে পারে। [Flatten PDF](/tools/flatten-pdf) টুল জানায় যে ফ্ল্যাটেন করলে সার্টিফিকেট-ভিত্তিক ডিজিটাল স্বাক্ষর বাতিল হতে পারে; সংরক্ষণযোগ্য মূলটিতে ব্যবহার করবেন না। দরকারে [PDF to PDF/A](/tools/pdf-to-pdfa) ডেরিভেটিভ তৈরি করে, সেটি আলাদাভাবে যাচাই করুন। [Sign PDF](/tools/sign-pdf) দৃশ্যমান স্বাক্ষর যোগ করে, সার্টিফিকেট-ভিত্তিক স্বাক্ষরের বিকল্প নয়।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "PDF সম্পাদনা করলে ডিজিটাল স্বাক্ষর বাতিল হয়?",
+            "a": "হতে পারে, অথবা রিডার পরিবর্তনের সতর্কতা দেখাতে পারে। মূল অপরিবর্তিত রেখে আলাদা কপি সম্পাদনা করুন; দরকারে নতুন সংস্করণে আবার স্বাক্ষর নিন।"
+          },
+          {
+            "q": "স্বাক্ষরিত PDF কি PDF/A-তে রূপান্তর করা যায়?",
+            "a": "প্রক্রিয়া অনুমতি দিলে ডেরিভেটিভ বানানো যায়, তবে গঠন বদলাতে পারে। মূল স্বাক্ষরিত ফাইল রাখুন এবং মূল ও PDF/A কপি আলাদাভাবে যাচাই করুন।"
+          },
+          {
+            "q": "প্রিন্ট ও স্ক্যান করলে ডিজিটাল স্বাক্ষর থাকে?",
+            "a": "না। স্ক্যান পৃষ্ঠার ছবি তৈরি করে, মূল ফাইলের ক্রিপ্টোগ্রাফিক যাচাই ধরে রাখে না। স্ক্যান কপি চিহ্নিত করে স্বাক্ষরিত PDF রাখুন।"
+          },
+          {
+            "q": "স্বাক্ষরিত PDF বৈধ কি না কীভাবে জানব?",
+            "a": "বিশ্বস্ত রিডার বা প্রক্রিয়ায় পরিবর্তন, সার্টিফিকেট ও বিশ্বাসযোগ্যতা যাচাই করুন। রিপোর্ট রাখুন এবং সতর্কতা এলে দায়িত্বপ্রাপ্ত ব্যক্তির পরামর্শ নিন।"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "flatten-pdf",
+          "pdf-to-pdfa",
+          "sign-pdf"
+        ],
+        "relatedPosts": [
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist",
+          "document-retention-handoff-checklist"
+        ]
       }
     ]
   },
@@ -33260,6 +34015,157 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "preserving-signed-pdfs",
+        "slug": "preserving-signed-pdfs",
+        "cluster": "archive-expansion",
+        "title": "Cách bảo quản PDF đã ký mà không làm mất hiệu lực chữ ký",
+        "metaTitle": "Cách bảo quản PDF đã ký mà không làm mất hiệu lực chữ ký",
+        "metaDescription": "Giữ nguyên PDF đã ký và bảo toàn bản gốc. Tìm hiểu cách xác minh, lưu và chia sẻ bản sao an toàn. Miễn phí, không đăng ký.",
+        "primaryKeyword": "cách bảo quản PDF đã ký",
+        "secondaryKeywords": [
+          "preserve digitally signed PDF",
+          "PDF signature validation",
+          "archive signed PDF"
+        ],
+        "answer": "Để bảo quản PDF có chữ ký số, hãy giữ nguyên chính xác tệp gốc đã nhận và không chỉnh sửa, làm phẳng, chuyển đổi hoặc tối ưu tệp. Xác minh chữ ký bằng trình đọc kiểm tra chứng thư và mức độ tin cậy; lưu báo cáo cùng bối cảnh tiếp nhận. Nếu cần bản dễ truy cập hoặc PDF/A, hãy tạo bản dẫn xuất có nhãn riêng và xác minh chữ ký của bản gốc độc lập.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Nếu PDF có chữ ký số dựa trên chứng thư, thay đổi sau đó có thể làm chữ ký mất hiệu lực hoặc ảnh hưởng việc xác minh. Hãy giữ nguyên từng byte của tệp đã nhận, kiểm tra trạng thái chữ ký bằng trình đọc và ghi lại thời gian, cách nhận. Đừng làm phẳng, chỉnh sửa, nén hay chuyển đổi bản gốc đã ký. Nếu cần in, lưu định dạng khác hoặc thêm ghi chú, hãy tạo bản dẫn xuất và không coi đó là chính tệp đã ký ban đầu."
+          },
+          {
+            "t": "h2",
+            "x": "Cách bảo quản PDF đã ký"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ nguyên bản gốc",
+                "x": "Lưu tệp đã nhận vào kho được duyệt và giữ tên, nguồn cùng ngày nhận."
+              },
+              {
+                "h": "Xác minh chữ ký trước khi dùng",
+                "x": "Kiểm tra trạng thái, chứng thư, đơn vị cấp và cảnh báo theo quy trình tin cậy của tổ chức."
+              },
+              {
+                "h": "Ghi lại bằng chứng",
+                "x": "Lưu kết quả xác minh, thời điểm nhận và thông tin nhận diện đúng phiên bản."
+              },
+              {
+                "h": "Chỉ tạo bản dẫn xuất khi cần",
+                "x": "Thao tác trên bản sao. Ghi rõ là bản truy cập, bản in hoặc PDF/A; không nói bản sao giữ chữ ký gốc."
+              },
+              {
+                "h": "Kiểm tra lại bản gốc",
+                "x": "Mở bản gốc bằng [Trình đọc PDF](/tools/pdf-reader) và xác nhận không đổi; xin chữ ký mới nếu cần phiên bản chỉnh sửa."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "Xem PDF gốc ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Cách xử lý PDF đã ký"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Thao tác",
+              "Ảnh hưởng có thể xảy ra",
+              "Cách làm nên chọn"
+            ],
+            "rows": [
+              [
+                "Mở để đọc",
+                "Thường không sửa tệp nhưng trình đọc cần xác minh chữ ký.",
+                "Dùng trình đọc đáng tin cậy và giữ nguyên tệp."
+              ],
+              [
+                "Chỉnh sửa, làm phẳng hoặc nén",
+                "Có thể đổi byte và khiến chữ ký số bị báo không hợp lệ.",
+                "Không sửa bản gốc; lưu bản dẫn xuất riêng."
+              ],
+              [
+                "Chuyển sang PDF/A",
+                "Có thể đổi cấu trúc và trạng thái chữ ký.",
+                "Xác minh chữ ký gốc và tính tuân thủ của bản dẫn xuất riêng."
+              ],
+              [
+                "In rồi quét lại",
+                "Bản mới không giữ xác minh mật mã của chữ ký gốc.",
+                "Ghi rõ là bản quét và giữ tệp đã ký."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Chữ ký số khác chữ ký vẽ"
+          },
+          {
+            "t": "p",
+            "x": "Chữ ký số dựa trên chứng thư sử dụng dữ liệu mật mã để phát hiện thay đổi và có thể chứa thông tin người ký cùng thời điểm ký. Chữ ký vẽ hoặc ảnh chữ ký chỉ là nội dung nhìn thấy trên trang, không tự cung cấp cùng mức xác minh. Đừng xem hình ảnh chữ ký là bằng chứng chữ ký số hợp lệ. Nếu chưa rõ loại chữ ký, hỏi người gửi hoặc bộ phận pháp lý."
+          },
+          {
+            "t": "h2",
+            "x": "Kiểm tra chứng thư, độ tin cậy và thời điểm"
+          },
+          {
+            "t": "p",
+            "x": "Trình đọc có thể cho biết tài liệu đã đổi sau khi ký hay chưa và chuỗi chứng thư có vẻ đáng tin không, nhưng kết quả phụ thuộc chứng thư, việc thu hồi, cấu hình và thời điểm kiểm tra. Hãy theo quy trình của tổ chức và ghi nhận cảnh báo. Dấu hình ảnh, tên tệp hoặc chữ ký nhìn thấy không chứng minh tính hợp lệ. Nếu hiệu lực pháp lý quan trọng, hãy hỏi người có trách nhiệm và nền tảng ký."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ bằng chứng và các bản sao riêng"
+          },
+          {
+            "t": "p",
+            "x": "Lưu đúng phiên bản đã nhận, email hoặc hồ sơ bàn giao, báo cáo chữ ký và bằng chứng dấu thời gian nếu có. Dùng nơi lưu có quyền truy cập, lịch sử và backup phù hợp. Checksum đã ghi có thể phát hiện thay đổi nếu so với giá trị tham chiếu đáng tin cậy, nhưng tự nó không xác minh danh tính hay hiệu lực. Đặt tên bản có ghi chú để thể hiện đó là bản dẫn xuất."
+          },
+          {
+            "t": "h2",
+            "x": "Tránh thay đổi tệp đã ký"
+          },
+          {
+            "t": "p",
+            "x": "Sửa siêu dữ liệu, xóa trang, làm phẳng trường, nén, tối ưu hoặc chuyển đổi có thể làm thay đổi tài liệu. [Làm phẳng PDF](/tools/flatten-pdf) cảnh báo việc làm phẳng có thể làm mất hiệu lực chữ ký số chứng nhận; đừng dùng trên bản gốc cần bảo toàn. [PDF sang PDF/A](/tools/pdf-to-pdfa) có thể hỗ trợ nếu quy trình yêu cầu, nhưng tạo ra bản sao cần xác minh riêng. [Ký PDF](/tools/sign-pdf) thêm chữ ký nhìn thấy, không thay thế chữ ký số dựa trên chứng thư."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Chỉnh sửa PDF có làm mất hiệu lực chữ ký số không?",
+            "a": "Có thể làm mất hiệu lực hoặc khiến trình đọc báo tài liệu đã đổi. Giữ bản gốc nguyên vẹn, chỉnh sửa trên bản sao và ký lại phiên bản mới nếu cần."
+          },
+          {
+            "q": "Có thể chuyển PDF đã ký sang PDF/A không?",
+            "a": "Có thể tạo bản dẫn xuất nếu quy trình cho phép, nhưng việc chuyển đổi có thể đổi cấu trúc. Giữ bản gốc đã ký và xác minh riêng bản gốc với PDF/A."
+          },
+          {
+            "q": "In rồi quét lại có giữ chữ ký số không?",
+            "a": "Không. Bản quét chỉ tạo ảnh trang và không giữ xác minh mật mã của tệp gốc. Hãy ghi rõ là bản quét và giữ PDF đã ký."
+          },
+          {
+            "q": "Làm sao biết PDF đã ký có hợp lệ?",
+            "a": "Dùng trình đọc hoặc quy trình tin cậy để kiểm tra thay đổi, chứng thư và độ tin cậy. Lưu báo cáo và hỏi người phụ trách nếu có cảnh báo."
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "flatten-pdf",
+          "pdf-to-pdfa",
+          "sign-pdf"
+        ],
+        "relatedPosts": [
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist",
+          "document-retention-handoff-checklist"
         ]
       }
     ]
@@ -38808,6 +39714,157 @@
           "pdf-archive-review-schedule",
           "pdf-checksum-basics-for-archives",
           "pdf-a-validation-checklist"
+        ]
+      },
+      {
+        "topic": "preserving-signed-pdfs",
+        "slug": "preserving-signed-pdfs",
+        "cluster": "archive-expansion",
+        "title": "如何保留已签名的 PDF",
+        "metaTitle": "如何保留已签名的 PDF",
+        "metaDescription": "保留已签名 PDF 且不改动原件。了解验证、保存和分享副本的方法。免费、无需注册、无水印，并附实用步骤。",
+        "primaryKeyword": "如何保留已签名 PDF",
+        "secondaryKeywords": [
+          "preserve digitally signed PDF",
+          "PDF signature validation",
+          "archive signed PDF"
+        ],
+        "answer": "要保留带数字签名的 PDF，应原样保存收到的文件，不要编辑、扁平化、转换或优化。使用能检查证书和信任状态的阅读器验证签名，并保存验证报告和接收背景。如果需要便于访问的副本或 PDF/A，请创建明确标记的派生文件，并单独验证原件签名。",
+        "body": [
+          {
+            "t": "p",
+            "x": "如果 PDF 使用基于证书的数字签名，后续修改可能使签名失效或影响验证。请逐字节保留收到的文件，用阅读器检查签名状态，并记录接收时间和方式。不要扁平化、编辑、压缩或转换已签名原件。如果需要打印、转成其他格式或添加注释，请另建派生副本，不要把它说成同一个已签名文件。"
+          },
+          {
+            "t": "h2",
+            "x": "如何保留已签名 PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "原样保存原件",
+                "x": "将收到的文件保存到获准的存储位置，并记录名称、来源和日期。"
+              },
+              {
+                "h": "使用前验证签名",
+                "x": "按组织的信任流程检查状态、证书、签发者和警告。"
+              },
+              {
+                "h": "记录验证证据",
+                "x": "保存验证结果、接收时间和可准确识别版本的信息。"
+              },
+              {
+                "h": "仅在需要时创建派生副本",
+                "x": "在副本上操作，并标记为访问版、打印版或 PDF/A；不要声称保留了原签名。"
+              },
+              {
+                "h": "重新检查原件",
+                "x": "用[PDF 阅读器](/tools/pdf-reader)打开原件，确认未被改动；若需修改版本，应重新签署。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "pdf-reader",
+            "x": "在当前标签页查看 PDF 原件。免费、无需注册、无水印。"
+          },
+          {
+            "t": "h2",
+            "x": "已签名 PDF 的处理方式"
+          },
+          {
+            "t": "table",
+            "head": [
+              "操作",
+              "可能影响",
+              "建议做法"
+            ],
+            "rows": [
+              [
+                "打开阅读",
+                "通常不会改文件，但阅读器应验证签名。",
+                "使用可信阅读器并保留精确原件。"
+              ],
+              [
+                "编辑、扁平化或压缩",
+                "可能改变字节，使数字签名显示无效。",
+                "不要改原件；另存派生副本。"
+              ],
+              [
+                "转换为 PDF/A",
+                "可能改变结构和签名状态。",
+                "分别验证原签名与派生文件的符合性。"
+              ],
+              [
+                "打印后重新扫描",
+                "新副本不会保留原件的加密签名验证。",
+                "标记为扫描副本并保留已签名文件。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "数字签名不同于手写签名图像"
+          },
+          {
+            "t": "p",
+            "x": "基于证书的数字签名使用加密数据检测更改，也可能包含签署人和签署时间信息。手写笔迹或签名图片只是页面上可见的内容，本身不提供同等验证。不要把视觉外观当作数字签名有效的证据。如果无法确定签名类型，请咨询发送方或法律负责人。"
+          },
+          {
+            "t": "h2",
+            "x": "检查证书、信任状态和验证时间"
+          },
+          {
+            "t": "p",
+            "x": "阅读器可以报告签署后文件是否改变、证书链是否可信，但结果取决于证书、吊销状态、设置和检查时间。请遵循组织流程并记录警告。可见印章、文件名或页面上的签名都不能证明有效性。如果涉及法律效力，请咨询相关负责人和签署平台。"
+          },
+          {
+            "t": "h2",
+            "x": "保留证据并将副本分开管理"
+          },
+          {
+            "t": "p",
+            "x": "保存收到的准确版本、交付邮件或记录、签名验证报告，以及可用的时间戳证据。使用具备权限管理、历史记录和适当备份的存储。已记录的校验和与可信参考值比较时可用于发现后续变化，但单独不能验证身份或效力。分享带注释的副本时，应在名称中注明它是派生版本。"
+          },
+          {
+            "t": "h2",
+            "x": "避免修改已签名文件"
+          },
+          {
+            "t": "p",
+            "x": "编辑元数据、删除页面、扁平化表单、压缩、优化或转换都可能改变文档。[扁平化 PDF](/tools/flatten-pdf)提示扁平化可能使认证数字签名失效，不要对需要保留的原件使用。[转换为 PDF/A](/tools/pdf-to-pdfa)可在流程需要时生成保存副本，但必须单独验证。[签署 PDF](/tools/sign-pdf)会添加可见签名，不能替代基于证书的数字签名。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "编辑 PDF 会使数字签名失效吗？",
+            "a": "可能会，也可能导致阅读器报告文件有变更。保留未修改原件，在单独副本上编辑；如有需要，为新版本重新签名。"
+          },
+          {
+            "q": "可以把已签名 PDF 转换为 PDF/A 吗？",
+            "a": "流程允许时可以创建派生副本，但转换可能改变结构。请保留并验证已签名原件，并单独检查 PDF/A 副本。"
+          },
+          {
+            "q": "打印后扫描还能保留数字签名吗？",
+            "a": "不能。扫描件是页面图像，不保留原文件的加密验证。请将其标记为扫描副本并保留已签名 PDF。"
+          },
+          {
+            "q": "如何判断已签名 PDF 是否有效？",
+            "a": "使用可信阅读器或流程检查更改、证书和信任状态。保存报告；出现警告时咨询相关负责人。"
+          }
+        ],
+        "relatedTools": [
+          "pdf-reader",
+          "flatten-pdf",
+          "pdf-to-pdfa",
+          "sign-pdf"
+        ],
+        "relatedPosts": [
+          "archive-copy-vs-backup",
+          "pdf-archive-review-schedule",
+          "pdf-a-validation-checklist",
+          "document-retention-handoff-checklist"
         ]
       }
     ]
