@@ -8200,6 +8200,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "combine-pdf-exhibits",
+        "slug": "combine-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "merge-pdf",
+        "title": "Cómo combinar anexos en PDF",
+        "metaTitle": "Cómo combinar anexos en PDF",
+        "metaDescription": "Combina anexos PDF en un solo archivo y elige el orden de las pruebas. Gratis en el navegador, sin cuenta ni marca de agua.",
+        "answer": "Para combinar anexos PDF, reúne los archivos, decide el orden y únelos en una copia nueva. Coloca primero la portada o índice y después cada anexo según las referencias del documento. PrintxPDF copia las páginas en el orden elegido dentro del navegador; conserva los originales y revisa el archivo final antes de presentarlo.",
+        "sections": [
+          {
+            "heading": "Combina anexos PDF en cuatro pasos",
+            "paragraphs": [
+              "Para combinar anexos PDF, reúne los archivos, decide el orden y únelos en una copia nueva. Coloca primero la portada o índice y después cada anexo según las referencias del documento. PrintxPDF copia las páginas en el orden elegido dentro del navegador; conserva los originales y revisa el archivo final antes de presentarlo."
+            ],
+            "steps": [
+              {
+                "heading": "Prepara los archivos",
+                "text": "Conserva una copia de cada anexo y renómbralos para reconocerlos, como Exhibit-A y Exhibit-B. Comprueba que cada PDF abre y que las páginas están completas."
+              },
+              {
+                "heading": "Define el orden",
+                "text": "Decide el orden final conforme al índice, contrato o instrucción de presentación. Puedes poner una portada o índice primero y luego los anexos en orden alfabético o numérico."
+              },
+              {
+                "heading": "Combina los PDF",
+                "text": "Abre [Combinar PDF](/tools/merge-pdf), añade los archivos y mueve cada uno arriba o abajo hasta que la lista refleje el orden final. Ejecuta la combinación."
+              },
+              {
+                "heading": "Revisa la copia",
+                "text": "Descarga el archivo combinado y comprueba las transiciones, etiquetas, números de página, orientación y páginas completas. Asegúrate de que el documento coincide con el índice."
+              }
+            ]
+          },
+          {
+            "heading": "Qué conserva y qué puede perderse al combinar",
+            "paragraphs": [
+              "La herramienta combina archivos completos en el orden de la lista. Si un anexo contiene páginas fuera de alcance, elimina o extrae las páginas correctas antes de combinar. [Extraer páginas PDF](/tools/extract-pages) puede preparar una selección en un archivo aparte, mientras [Organizar PDF](/tools/organize-pdf) permite ajustar el orden página por página después.",
+              "Las páginas se copian al PDF nuevo, no se convierten en capturas de pantalla. El texto permanece seleccionable y las imágenes mantienen su calidad. Sin embargo, marcadores del documento, metadatos globales y la configuración de formularios rellenables pueden no transferirse. Si los campos rellenados deben permanecer visibles, aplana cada formulario antes de combinar con [Aplanar PDF](/tools/flatten-pdf).",
+              "Compara el PDF terminado con la lista de anexos. Verifica que cada separador identifica la prueba correcta, que no falten hojas y que las páginas aparezcan en el orden citado. Si usas numeración propia, revisa que coincida con la versión que vas a presentar; no asumas que el archivo combinará automáticamente los números impresos.",
+              "Merge PDF trabaja en la pestaña del navegador y descarga una salida separada. El archivo normal no se sube a un servidor. Para materiales confidenciales, sigue las políticas de tu organización y confirma que solo incluyes páginas autorizadas. Elimina metadatos generales si hace falta con [Eliminar metadatos PDF](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Combina anexos gratis en tu navegador, sin cuenta ni marca de agua.",
+        "faqs": [
+          {
+            "q": "¿Cómo combino anexos PDF en un solo archivo?",
+            "a": "Abre Combinar PDF, añade cada anexo, ordénalos según el índice o las instrucciones y ejecuta la combinación. Descarga el nuevo archivo y comprueba todas las páginas, etiquetas y transiciones antes de presentarlo."
+          },
+          {
+            "q": "¿Puedo cambiar el orden de los anexos?",
+            "a": "Sí. Reordena los archivos en la lista antes de combinar. Para cambiar el orden de páginas individuales, usa Organizar PDF después o prepara cada selección con Extraer páginas."
+          },
+          {
+            "q": "¿Se conservan los formularios rellenables y marcadores?",
+            "a": "No necesariamente. Las páginas y su contenido visual se copian, pero los marcadores globales y la configuración interactiva de formularios pueden no transferirse. Si las respuestas deben verse, aplana el formulario antes de unirlo."
+          },
+          {
+            "q": "¿Combinar PDF reduce la calidad o modifica los originales?",
+            "a": "No. Las páginas se copian sin volver a dibujarse y el original queda intacto. El texto y las imágenes conservan su calidad. La herramienta produce un archivo nuevo para que puedas revisar y corregirlo antes de compartirlo."
+          }
+        ],
+        "keywords": [
+          "cómo combinar anexos en pdf",
+          "combine PDF exhibits",
+          "merge PDF attachments"
+        ],
+        "relatedTools": [
+          "merge-pdf",
+          "remove-metadata",
+          "pdf-reader",
+          "organize-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -16394,6 +16475,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "combine-pdf-exhibits",
+        "slug": "combine-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "merge-pdf",
+        "title": "Como combinar anexos em PDF",
+        "metaTitle": "Como combinar anexos em PDF",
+        "metaDescription": "Combine anexos PDF em um único arquivo e escolha a ordem das provas. Grátis no navegador, sem conta nem marca-d’água.",
+        "answer": "Para combinar anexos em PDF, reúna os arquivos, defina a ordem e una-os em uma nova cópia. Coloque a capa ou o índice primeiro e depois cada anexo conforme as referências do documento. O PrintxPDF copia as páginas na ordem escolhida dentro do navegador; mantenha os originais e confira o resultado antes de protocolar.",
+        "sections": [
+          {
+            "heading": "Combine anexos PDF em quatro etapas",
+            "paragraphs": [
+              "Para combinar anexos em PDF, reúna os arquivos, defina a ordem e una-os em uma nova cópia. Coloque a capa ou o índice primeiro e depois cada anexo conforme as referências do documento. O PrintxPDF copia as páginas na ordem escolhida dentro do navegador; mantenha os originais e confira o resultado antes de protocolar."
+            ],
+            "steps": [
+              {
+                "heading": "Prepare os arquivos",
+                "text": "Guarde uma cópia de cada anexo e renomeie-os para facilitar a identificação, como Exhibit-A e Exhibit-B. Confirme que todos os PDFs abrem e têm as páginas completas."
+              },
+              {
+                "heading": "Defina a ordem",
+                "text": "Escolha a sequência conforme o índice, contrato ou instrução de envio. Você pode colocar capa ou índice primeiro e depois os anexos em ordem alfabética ou numérica."
+              },
+              {
+                "heading": "Combine os PDFs",
+                "text": "Abra [Combinar PDF](/tools/merge-pdf), adicione os arquivos e mova cada um para cima ou para baixo até a lista refletir a sequência final. Execute a combinação."
+              },
+              {
+                "heading": "Confira a cópia",
+                "text": "Baixe o arquivo combinado e verifique transições, etiquetas, números de página, orientação e páginas completas. Confirme se o documento corresponde ao índice."
+              }
+            ]
+          },
+          {
+            "heading": "O que é e o que pode não ser preservado",
+            "paragraphs": [
+              "A ferramenta combina arquivos inteiros na ordem da lista. Se um anexo tiver páginas que não devem ser incluídas, extraia ou remova as páginas corretas antes de combinar. [Extrair páginas do PDF](/tools/extract-pages) prepara uma seleção em outro arquivo; [Organizar PDF](/tools/organize-pdf) permite mudar a ordem de páginas individuais depois.",
+              "As páginas são copiadas para o novo PDF, não convertidas em capturas de tela. O texto continua selecionável e as imagens preservam a qualidade. Porém, marcadores gerais, metadados do documento e a configuração de formulários preenchíveis podem não ser transferidos. Se as respostas precisam continuar visíveis, achate cada formulário antes com [Achatar PDF](/tools/flatten-pdf).",
+              "Compare o PDF final com sua lista de anexos. Confira se cada separador identifica a prova correta, se nenhuma folha está faltando e se a ordem corresponde às citações. Se você usa numeração própria, confirme que ela corresponde à versão protocolada; os números impressos não são combinados automaticamente.",
+              "Merge PDF funciona na aba do navegador e baixa uma saída separada. Um arquivo comum não é enviado a um servidor. Para materiais confidenciais, siga as políticas da organização e confira se somente páginas autorizadas foram incluídas. Se necessário, remova metadados gerais com [Remover metadados do PDF](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Combine anexos grátis no navegador, sem conta nem marca-d’água.",
+        "faqs": [
+          {
+            "q": "Como combinar anexos PDF em um único arquivo?",
+            "a": "Abra Combinar PDF, adicione cada anexo, organize conforme o índice ou as instruções e execute a combinação. Baixe o novo arquivo e confira todas as páginas, etiquetas e transições antes de protocolar."
+          },
+          {
+            "q": "Posso mudar a ordem dos anexos?",
+            "a": "Sim. Reordene os arquivos na lista antes de combinar. Para alterar a ordem de páginas individuais, use Organizar PDF depois ou prepare cada seleção com Extrair páginas."
+          },
+          {
+            "q": "Formulários preenchíveis e marcadores são preservados?",
+            "a": "Não necessariamente. As páginas e o conteúdo visual são copiados, mas os marcadores gerais e a configuração interativa do formulário podem não ser transferidos. Se as respostas devem aparecer, achate o formulário antes de unir."
+          },
+          {
+            "q": "Combinar PDF reduz a qualidade ou altera os originais?",
+            "a": "Não. As páginas são copiadas sem serem redesenhadas e o arquivo original permanece intacto. Texto e imagens mantêm a qualidade. A ferramenta cria outro arquivo para você revisar e corrigir antes de compartilhar."
+          }
+        ],
+        "keywords": [
+          "como combinar anexos em pdf",
+          "combine PDF exhibits",
+          "merge PDF attachments"
+        ],
+        "relatedTools": [
+          "merge-pdf",
+          "remove-metadata",
+          "pdf-reader",
+          "organize-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -24581,6 +24743,87 @@
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "combine-pdf-exhibits",
+        "slug": "combine-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "merge-pdf",
+        "title": "PDF साक्ष्य परिशिष्ट कैसे जोड़ें",
+        "metaTitle": "PDF साक्ष्य परिशिष्ट कैसे जोड़ें",
+        "metaDescription": "PDF परिशिष्टों को एक फ़ाइल में जोड़ें और साक्ष्यों का क्रम चुनें। ब्राउज़र में मुफ्त, बिना खाते या वॉटरमार्क के।",
+        "answer": "PDF साक्ष्य परिशिष्ट जोड़ने के लिए सभी फ़ाइलें इकट्ठा करें, क्रम तय करें और नई कॉपी में जोड़ें। कवर या सूची पहले रखें, फिर दस्तावेज़ के संदर्भ के अनुसार हर परिशिष्ट रखें। PrintxPDF चुने क्रम में पेज ब्राउज़र में कॉपी करता है; मूल फाइलें रखें और जमा करने से पहले अंतिम फ़ाइल जांचें।",
+        "sections": [
+          {
+            "heading": "चार चरणों में PDF परिशिष्ट जोड़ें",
+            "paragraphs": [
+              "PDF साक्ष्य परिशिष्ट जोड़ने के लिए सभी फ़ाइलें इकट्ठा करें, क्रम तय करें और नई कॉपी में जोड़ें। कवर या सूची पहले रखें, फिर दस्तावेज़ के संदर्भ के अनुसार हर परिशिष्ट रखें। PrintxPDF चुने क्रम में पेज ब्राउज़र में कॉपी करता है; मूल फाइलें रखें और जमा करने से पहले अंतिम फ़ाइल जांचें।"
+            ],
+            "steps": [
+              {
+                "heading": "फ़ाइलें तैयार करें",
+                "text": "हर परिशिष्ट की कॉपी रखें और पहचानने योग्य नाम दें, जैसे Exhibit-A और Exhibit-B। पुष्टि करें कि हर PDF खुलता है और उसके पेज पूरे हैं।"
+              },
+              {
+                "heading": "क्रम तय करें",
+                "text": "सूची, अनुबंध या जमा निर्देशों के अनुसार अंतिम क्रम निर्धारित करें। कवर या सूची पहले और फिर परिशिष्ट वर्णमाला या संख्या क्रम में रख सकते हैं।"
+              },
+              {
+                "heading": "PDF जोड़ें",
+                "text": "[Merge PDF](/tools/merge-pdf) खोलें, फ़ाइलें जोड़ें और ऊपर-नीचे करके सूची को सही क्रम में रखें। फिर जोड़ने की प्रक्रिया चलाएं।"
+              },
+              {
+                "heading": "कॉपी जांचें",
+                "text": "संयुक्त फ़ाइल डाउनलोड करके पेज बदलने की जगह, लेबल, पेज नंबर, दिशा और पूर्णता जांचें। पुष्टि करें कि दस्तावेज़ सूची से मेल खाता है।"
+              }
+            ]
+          },
+          {
+            "heading": "मर्ज में क्या सुरक्षित रहता है और क्या नहीं",
+            "paragraphs": [
+              "टूल सूची में दिए क्रम में पूरी फ़ाइलें जोड़ता है। यदि किसी परिशिष्ट में कुछ पेज शामिल नहीं करने, तो जोड़ने से पहले सही पेज निकालें या हटाएं। [Extract Pages](/tools/extract-pages) चुने पेजों की अलग फ़ाइल बनाता है; बाद में पेज दर पेज क्रम के लिए [Organize PDF](/tools/organize-pdf) इस्तेमाल करें।",
+              "पेज नए PDF में कॉपी होते हैं, स्क्रीनशॉट में नहीं बदलते। टेक्स्ट चयन योग्य और चित्र अपनी गुणवत्ता में रहते हैं। हालांकि दस्तावेज़ के बुकमार्क, सामान्य मेटाडेटा और भरने योग्य फ़ॉर्म की सेटिंग साथ न आएं। उत्तर दिखते रहने चाहिए तो जोड़ने से पहले फ़ॉर्म को [Flatten PDF](/tools/flatten-pdf) करें।",
+              "तैयार PDF को परिशिष्ट सूची से मिलाएं। जांचें कि हर विभाजक सही साक्ष्य बताता है, कोई शीट गायब नहीं और क्रम उद्धरणों से मेल खाता है। अपनी पेज नंबरिंग हो तो जमा की जाने वाली प्रति से मिलाएं; प्रिंट नंबर अपने आप एकीकृत नहीं होते।",
+              "Merge PDF ब्राउज़र टैब में चलता है और अलग आउटपुट डाउनलोड करता है। सामान्य फ़ाइल सर्वर पर अपलोड नहीं होती। गोपनीय दस्तावेज़ों के लिए संगठन के नियम मानें और केवल अनुमत पेज शामिल करें। जरूरत हो तो [Remove PDF Metadata](/tools/remove-metadata) से सामान्य मेटाडेटा हटाएं।"
+            ]
+          }
+        ],
+        "ctaLabel": "ब्राउज़र में परिशिष्ट मुफ्त जोड़ें, बिना खाते और वॉटरमार्क के।",
+        "faqs": [
+          {
+            "q": "PDF साक्ष्य परिशिष्ट एक फ़ाइल में कैसे जोड़ें?",
+            "a": "Merge PDF खोलें, हर परिशिष्ट जोड़ें, सूची या निर्देश के अनुसार क्रम लगाएं और प्रक्रिया चलाएं। नई फ़ाइल डाउनलोड करके जमा करने से पहले सभी पेज, लेबल और जोड़ जांचें।"
+          },
+          {
+            "q": "क्या परिशिष्टों का क्रम बदल सकते हैं?",
+            "a": "हां। जोड़ने से पहले सूची में फ़ाइलों का क्रम बदलें। अलग-अलग पेजों का क्रम बदलने के लिए बाद में Organize PDF इस्तेमाल करें या Extract Pages से चयन तैयार करें।"
+          },
+          {
+            "q": "क्या भरने योग्य फ़ॉर्म और बुकमार्क सुरक्षित रहते हैं?",
+            "a": "जरूरी नहीं। पेज और दिखने वाली सामग्री कॉपी होती है, लेकिन सामान्य बुकमार्क और इंटरैक्टिव फ़ॉर्म सेटअप नहीं भी आ सकते। उत्तर दिखाने हों तो जोड़ने से पहले फ़ॉर्म Flatten करें।"
+          },
+          {
+            "q": "क्या PDF जोड़ने से गुणवत्ता घटती या मूल बदलता है?",
+            "a": "नहीं। पेज बिना दोबारा बनाए कॉपी होते हैं और मूल फ़ाइल जस की तस रहती है। टेक्स्ट और चित्र गुणवत्ता बनाए रखते हैं। टूल नई फ़ाइल देता है जिसे साझा करने से पहले जांच और सुधार सकते हैं।"
+          }
+        ],
+        "keywords": [
+          "pdf साक्ष्य परिशिष्ट कैसे जोड़ें",
+          "combine PDF exhibits",
+          "merge PDF attachments"
+        ],
+        "relatedTools": [
+          "merge-pdf",
+          "remove-metadata",
+          "pdf-reader",
+          "organize-pdf"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
@@ -32784,6 +33027,87 @@
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "combine-pdf-exhibits",
+        "slug": "combine-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "merge-pdf",
+        "title": "كيفية جمع مرفقات PDF كأدلة",
+        "metaTitle": "كيفية جمع مرفقات PDF كأدلة",
+        "metaDescription": "اجمع مرفقات PDF في ملف واحد واختر ترتيب الأدلة. مجاناً في المتصفح، بلا حساب أو علامة مائية. اجمعها مجاناً في المتصفح، دون تسجيل أو رفع الملفات.",
+        "answer": "لجمع مرفقات PDF، اجمع الملفات وحدد ترتيبها ثم ادمجها في نسخة جديدة. ضع الغلاف أو الفهرس أولاً ثم كل مرفق وفق الإشارات في المستند. تنسخ PrintxPDF الصفحات بالترتيب الذي تختاره داخل المتصفح؛ احتفظ بالأصول وراجع الناتج قبل تقديمه.",
+        "sections": [
+          {
+            "heading": "جمع مرفقات PDF في أربع خطوات",
+            "paragraphs": [
+              "لجمع مرفقات PDF، اجمع الملفات وحدد ترتيبها ثم ادمجها في نسخة جديدة. ضع الغلاف أو الفهرس أولاً ثم كل مرفق وفق الإشارات في المستند. تنسخ PrintxPDF الصفحات بالترتيب الذي تختاره داخل المتصفح؛ احتفظ بالأصول وراجع الناتج قبل تقديمه."
+            ],
+            "steps": [
+              {
+                "heading": "جهّز الملفات",
+                "text": "احتفظ بنسخة من كل مرفق وسمّها بوضوح، مثل Exhibit-A وExhibit-B. تأكد من فتح كل PDF واكتمال صفحاته."
+              },
+              {
+                "heading": "حدّد الترتيب",
+                "text": "اختر التسلسل النهائي وفق الفهرس أو العقد أو تعليمات التقديم. يمكنك وضع الغلاف أو الفهرس أولاً ثم المرفقات أبجدياً أو رقمياً."
+              },
+              {
+                "heading": "اجمع ملفات PDF",
+                "text": "افتح [Merge PDF](/tools/merge-pdf)، وأضف الملفات، ثم حرّك كل ملف للأعلى أو للأسفل حتى تعكس القائمة الترتيب النهائي. نفّذ الدمج."
+              },
+              {
+                "heading": "راجع النسخة",
+                "text": "نزّل الملف المدمج وتحقق من الفواصل والعناوين وأرقام الصفحات والاتجاه واكتمال الأوراق. تأكد من مطابقته للفهرس."
+              }
+            ]
+          },
+          {
+            "heading": "ما الذي يُحفظ وما الذي قد لا ينتقل عند الدمج",
+            "paragraphs": [
+              "تجمع الأداة الملفات كاملة حسب ترتيب القائمة. إذا احتوى مرفق على صفحات لا ينبغي تضمينها، فاستخرج أو احذف الصفحات المناسبة قبل الدمج. تتيح [Extract Pages](/tools/extract-pages) إعداد مجموعة في ملف منفصل، بينما تسمح [Organize PDF](/tools/organize-pdf) بتعديل ترتيب الصفحات المفردة لاحقاً.",
+              "تُنسخ الصفحات إلى PDF الجديد ولا تتحول إلى لقطات شاشة. يبقى النص قابلاً للتحديد وتحافظ الصور على جودتها. لكن الإشارات المرجعية العامة والبيانات الوصفية وإعداد النماذج القابلة للتعبئة قد لا تنتقل. إذا أردت إظهار إجابات النموذج، فسطّحه أولاً باستخدام [Flatten PDF](/tools/flatten-pdf).",
+              "قارن الملف النهائي بقائمة المرفقات. تحقق من أن كل فاصل يشير إلى الدليل الصحيح، وأن الصفحات غير ناقصة، وأن الترتيب يطابق الإحالات. إذا استخدمت ترقيمك الخاص، فراجعه مع النسخة التي ستقدمها؛ لا تندمج الأرقام المطبوعة تلقائياً.",
+              "تعمل Merge PDF في علامة تبويب المتصفح وتنزّل ملفاً منفصلاً. لا يُرفع PDF العادي إلى خادم. اتبع سياسات مؤسستك للمواد السرية وتأكد من تضمين الصفحات المصرح بها فقط. أزل البيانات الوصفية العامة عند الحاجة باستخدام [Remove PDF Metadata](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "اجمع المرفقات مجاناً في المتصفح، بلا حساب أو علامة مائية.",
+        "faqs": [
+          {
+            "q": "كيف أجمع مرفقات PDF في ملف واحد؟",
+            "a": "افتح Merge PDF، وأضف كل مرفق، ورتبها وفق الفهرس أو التعليمات ثم نفّذ الدمج. نزّل الملف الجديد وراجع كل الصفحات والعناوين والفواصل قبل تقديمه."
+          },
+          {
+            "q": "هل يمكن تغيير ترتيب المرفقات؟",
+            "a": "نعم. أعد ترتيب الملفات في القائمة قبل الدمج. لتغيير ترتيب الصفحات المفردة، استخدم Organize PDF بعد ذلك أو جهّز الاختيار عبر Extract Pages."
+          },
+          {
+            "q": "هل تبقى النماذج القابلة للتعبئة والإشارات المرجعية؟",
+            "a": "ليس بالضرورة. تُنسخ الصفحات ومحتوياتها المرئية، لكن الإشارات العامة وإعداد النموذج التفاعلي قد لا ينتقلان. إذا أردت بقاء الإجابات ظاهرة، فسطّح النموذج قبل الدمج."
+          },
+          {
+            "q": "هل يقلل الدمج الجودة أو يغيّر الأصول؟",
+            "a": "لا. تُنسخ الصفحات دون إعادة رسم ويظل الملف الأصلي كما هو. يحافظ النص والصور على جودتها. تنشئ الأداة ملفاً جديداً يمكنك مراجعته وتصحيحه قبل المشاركة."
+          }
+        ],
+        "keywords": [
+          "كيفية جمع مرفقات pdf كأدلة",
+          "combine PDF exhibits",
+          "merge PDF attachments"
+        ],
+        "relatedTools": [
+          "merge-pdf",
+          "remove-metadata",
+          "pdf-reader",
+          "organize-pdf"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
@@ -40997,6 +41321,87 @@
           "make-pdf-searchable",
           "prepare-pdf-for-long-term-archive"
         ]
+      },
+      {
+        "topic": "combine-pdf-exhibits",
+        "slug": "combine-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "merge-pdf",
+        "title": "PDF প্রদর্শনী একত্র করে কীভাবে সাজাবেন",
+        "metaTitle": "PDF প্রদর্শনী একত্র করে কীভাবে সাজাবেন",
+        "metaDescription": "PDF প্রদর্শনীগুলো এক ফাইলে জুড়ুন এবং প্রমাণের ক্রম বেছে নিন। ব্রাউজারে বিনামূল্যে, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "answer": "PDF প্রদর্শনী একত্র করতে ফাইলগুলো জোগাড় করুন, ক্রম ঠিক করুন এবং নতুন কপিতে জুড়ুন। কভার বা সূচি আগে রাখুন, তারপর নথিতে উল্লেখিত ক্রমে প্রতিটি প্রদর্শনী সাজান। PrintxPDF ব্রাউজারে বেছে নেওয়া ক্রমে পৃষ্ঠা কপি করে; মূল ফাইল রেখে জমা দেওয়ার আগে ফল পরীক্ষা করুন।",
+        "sections": [
+          {
+            "heading": "চার ধাপে PDF প্রদর্শনী একত্র করুন",
+            "paragraphs": [
+              "PDF প্রদর্শনী একত্র করতে ফাইলগুলো জোগাড় করুন, ক্রম ঠিক করুন এবং নতুন কপিতে জুড়ুন। কভার বা সূচি আগে রাখুন, তারপর নথিতে উল্লেখিত ক্রমে প্রতিটি প্রদর্শনী সাজান। PrintxPDF ব্রাউজারে বেছে নেওয়া ক্রমে পৃষ্ঠা কপি করে; মূল ফাইল রেখে জমা দেওয়ার আগে ফল পরীক্ষা করুন।"
+            ],
+            "steps": [
+              {
+                "heading": "ফাইল প্রস্তুত করুন",
+                "text": "প্রতিটি প্রদর্শনীর কপি রাখুন এবং সহজে চেনার নাম দিন, যেমন Exhibit-A ও Exhibit-B। প্রতিটি PDF খোলে ও সব পৃষ্ঠা আছে কি না দেখুন।"
+              },
+              {
+                "heading": "ক্রম ঠিক করুন",
+                "text": "সূচি, চুক্তি বা জমা দেওয়ার নির্দেশ অনুযায়ী চূড়ান্ত ক্রম বাছুন। কভার বা সূচির পর প্রদর্শনীগুলো অক্ষর বা সংখ্যা অনুযায়ী রাখতে পারেন।"
+              },
+              {
+                "heading": "PDF একত্র করুন",
+                "text": "[Merge PDF](/tools/merge-pdf) খুলে ফাইল যোগ করুন এবং তালিকার ওপর-নিচে সরিয়ে সঠিক ক্রম করুন। তারপর মার্জ চালান।"
+              },
+              {
+                "heading": "কপি যাচাই করুন",
+                "text": "একত্রিত ফাইল নামিয়ে বিভাজক, লেবেল, পৃষ্ঠা নম্বর, দিক ও পূর্ণতা দেখুন। সূচির সঙ্গে নথিটি মেলে কি না নিশ্চিত করুন।"
+              }
+            ]
+          },
+          {
+            "heading": "মার্জে কী থাকে এবং কী নাও থাকতে পারে",
+            "paragraphs": [
+              "টুলটি তালিকার ক্রমে পুরো ফাইলগুলো একত্র করে। কোনো প্রদর্শনীতে বাদ দেওয়ার পৃষ্ঠা থাকলে মার্জের আগে সঠিক পৃষ্ঠা বের করুন বা সরান। [Extract Pages](/tools/extract-pages) নির্বাচিত পৃষ্ঠার আলাদা ফাইল বানায়; পরে পৃষ্ঠা ধরে সাজাতে [Organize PDF](/tools/organize-pdf) ব্যবহার করুন।",
+              "পৃষ্ঠাগুলো নতুন PDF-এ কপি হয়, স্ক্রিনশটে বদলে যায় না। লেখা নির্বাচনযোগ্য থাকে এবং ছবি মান ধরে রাখে। তবে নথির বুকমার্ক, সাধারণ মেটাডেটা এবং পূরণযোগ্য ফর্মের সেটআপ নাও থাকতে পারে। ফর্মের উত্তর দৃশ্যমান রাখতে মার্জের আগে [Flatten PDF](/tools/flatten-pdf) করুন।",
+              "তৈরি PDF প্রদর্শনীর তালিকার সঙ্গে মিলিয়ে দেখুন। প্রতিটি বিভাজক সঠিক প্রমাণ বোঝায় কি না, কোনো পৃষ্ঠা বাদ পড়েছে কি না এবং উদ্ধৃত ক্রম ঠিক আছে কি না পরীক্ষা করুন। নিজস্ব পৃষ্ঠা নম্বর থাকলে জমার কপির সঙ্গে মিলিয়ে নিন; ছাপা নম্বর স্বয়ংক্রিয়ভাবে মেলানো হয় না।",
+              "Merge PDF ব্রাউজার ট্যাবে চলে এবং আলাদা আউটপুট নামায়। সাধারণ ফাইল সার্ভারে আপলোড হয় না। গোপনীয় নথিতে প্রতিষ্ঠানের নিয়ম মানুন এবং কেবল অনুমোদিত পৃষ্ঠা রাখুন। দরকার হলে [Remove PDF Metadata](/tools/remove-metadata) দিয়ে সাধারণ মেটাডেটা সরান।"
+            ]
+          }
+        ],
+        "ctaLabel": "ব্রাউজারে বিনামূল্যে প্রদর্শনী জুড়ুন, অ্যাকাউন্ট বা ওয়াটারমার্ক ছাড়া।",
+        "faqs": [
+          {
+            "q": "PDF প্রদর্শনী এক ফাইলে কীভাবে জুড়ব?",
+            "a": "Merge PDF খুলুন, প্রতিটি প্রদর্শনী যোগ করুন, সূচি বা নির্দেশ মেনে ক্রম সাজান এবং মার্জ চালান। নতুন ফাইল নামিয়ে জমা দেওয়ার আগে সব পৃষ্ঠা, লেবেল ও বিভাজন পরীক্ষা করুন।"
+          },
+          {
+            "q": "প্রদর্শনীর ক্রম বদলানো যাবে?",
+            "a": "হ্যাঁ। মার্জের আগে তালিকায় ফাইলগুলো সাজান। আলাদা পৃষ্ঠার ক্রম বদলাতে পরে Organize PDF নিন বা Extract Pages দিয়ে পছন্দের সেট তৈরি করুন।"
+          },
+          {
+            "q": "পূরণযোগ্য ফর্ম ও বুকমার্ক কি থাকে?",
+            "a": "সবসময় নয়। পৃষ্ঠা ও দৃশ্যমান বিষয়বস্তু কপি হয়, কিন্তু সাধারণ বুকমার্ক ও ইন্টারঅ্যাকটিভ ফর্ম সেটআপ নাও আসতে পারে। উত্তর দৃশ্যমান রাখতে মার্জের আগে ফর্ম Flatten করুন।"
+          },
+          {
+            "q": "PDF মার্জ করলে কি মান কমে বা মূল ফাইল বদলায়?",
+            "a": "না। পৃষ্ঠা নতুন করে না এঁকে কপি করা হয় এবং মূল অপরিবর্তিত থাকে। লেখা ও ছবি মান বজায় রাখে। টুল আলাদা ফাইল দেয়, যা শেয়ারের আগে পরীক্ষা ও ঠিক করতে পারেন।"
+          }
+        ],
+        "keywords": [
+          "pdf প্রদর্শনী একত্র করে কীভাবে সাজাবেন",
+          "combine PDF exhibits",
+          "merge PDF attachments"
+        ],
+        "relatedTools": [
+          "merge-pdf",
+          "remove-metadata",
+          "pdf-reader",
+          "organize-pdf"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
       }
     ]
   },
@@ -49184,6 +49589,87 @@
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "combine-pdf-exhibits",
+        "slug": "combine-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "merge-pdf",
+        "title": "Cách ghép các tài liệu chứng cứ PDF",
+        "metaTitle": "Cách ghép các tài liệu chứng cứ PDF",
+        "metaDescription": "Ghép các tài liệu chứng cứ PDF thành một tệp và chọn thứ tự. Miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "answer": "Để ghép các tài liệu chứng cứ PDF, tập hợp tệp, quyết định thứ tự rồi ghép thành một bản mới. Đặt bìa hoặc mục lục trước, sau đó xếp từng phụ lục theo tham chiếu trong tài liệu. PrintxPDF sao chép trang theo thứ tự đã chọn trong trình duyệt; giữ bản gốc và kiểm tra tệp cuối trước khi nộp.",
+        "sections": [
+          {
+            "heading": "Ghép tài liệu PDF qua bốn bước",
+            "paragraphs": [
+              "Để ghép các tài liệu chứng cứ PDF, tập hợp tệp, quyết định thứ tự rồi ghép thành một bản mới. Đặt bìa hoặc mục lục trước, sau đó xếp từng phụ lục theo tham chiếu trong tài liệu. PrintxPDF sao chép trang theo thứ tự đã chọn trong trình duyệt; giữ bản gốc và kiểm tra tệp cuối trước khi nộp."
+            ],
+            "steps": [
+              {
+                "heading": "Chuẩn bị tệp",
+                "text": "Giữ một bản sao của mỗi tài liệu và đặt tên dễ nhận biết như Exhibit-A, Exhibit-B. Xác nhận mỗi PDF mở được và đủ trang."
+              },
+              {
+                "heading": "Chọn thứ tự",
+                "text": "Quyết định trình tự theo mục lục, hợp đồng hoặc hướng dẫn nộp. Bạn có thể đặt bìa hoặc mục lục trước, rồi xếp phụ lục theo chữ cái hoặc số."
+              },
+              {
+                "heading": "Ghép PDF",
+                "text": "Mở [Merge PDF](/tools/merge-pdf), thêm tệp và di chuyển lên hoặc xuống đến khi danh sách đúng thứ tự. Chạy thao tác ghép."
+              },
+              {
+                "heading": "Kiểm tra bản mới",
+                "text": "Tải tệp đã ghép và kiểm tra trang ngăn cách, nhãn, số trang, hướng và tính đầy đủ. Đảm bảo tài liệu khớp với mục lục."
+              }
+            ]
+          },
+          {
+            "heading": "Những gì được giữ lại và có thể bị mất",
+            "paragraphs": [
+              "Công cụ ghép toàn bộ tệp theo thứ tự trong danh sách. Nếu một phụ lục có trang không nên đưa vào, hãy trích hoặc xóa đúng trang trước khi ghép. [Extract Pages](/tools/extract-pages) tạo một tệp riêng gồm các trang chọn; [Organize PDF](/tools/organize-pdf) giúp đổi thứ tự từng trang sau đó.",
+              "Trang được sao chép sang PDF mới, không biến thành ảnh chụp màn hình. Văn bản vẫn chọn được và hình ảnh giữ chất lượng. Tuy nhiên, dấu trang toàn tài liệu, siêu dữ liệu chung và cấu hình biểu mẫu điền được có thể không được chuyển. Nếu cần giữ câu trả lời hiển thị, hãy làm phẳng biểu mẫu bằng [Flatten PDF](/tools/flatten-pdf) trước khi ghép.",
+              "Đối chiếu PDF cuối với danh sách phụ lục. Xác nhận mỗi trang ngăn cách chỉ đúng tài liệu, không thiếu trang và thứ tự khớp với phần trích dẫn. Nếu dùng số trang riêng, kiểm tra với bản sẽ nộp; số in trên trang không tự được đánh lại.",
+              "Merge PDF chạy trong tab trình duyệt và tải một tệp đầu ra riêng. PDF thông thường không được tải lên máy chủ. Với tài liệu mật, làm theo chính sách tổ chức và chỉ thêm trang được phép. Nếu cần, xóa siêu dữ liệu chung bằng [Remove PDF Metadata](/tools/remove-metadata)."
+            ]
+          }
+        ],
+        "ctaLabel": "Ghép tài liệu miễn phí trong trình duyệt, không cần tài khoản hay watermark.",
+        "faqs": [
+          {
+            "q": "Làm sao ghép các tài liệu chứng cứ PDF thành một tệp?",
+            "a": "Mở Merge PDF, thêm từng tài liệu, sắp xếp theo mục lục hoặc hướng dẫn rồi chạy ghép. Tải tệp mới và kiểm tra mọi trang, nhãn cùng phần chuyển tiếp trước khi nộp."
+          },
+          {
+            "q": "Tôi có thể đổi thứ tự tài liệu không?",
+            "a": "Có. Sắp xếp lại tệp trong danh sách trước khi ghép. Để đổi thứ tự trang riêng lẻ, dùng Organize PDF sau đó hoặc tạo bộ trang chọn bằng Extract Pages."
+          },
+          {
+            "q": "Biểu mẫu điền được và dấu trang có được giữ không?",
+            "a": "Không nhất thiết. Trang và nội dung nhìn thấy được sao chép, nhưng dấu trang chung và cấu hình biểu mẫu tương tác có thể không chuyển. Nếu cần câu trả lời hiện ra, hãy làm phẳng biểu mẫu trước."
+          },
+          {
+            "q": "Ghép PDF có giảm chất lượng hoặc sửa bản gốc không?",
+            "a": "Không. Trang được sao chép mà không vẽ lại và bản gốc vẫn nguyên vẹn. Văn bản và hình ảnh giữ chất lượng. Công cụ tạo tệp mới để bạn kiểm tra và sửa trước khi chia sẻ."
+          }
+        ],
+        "keywords": [
+          "cách ghép các tài liệu chứng cứ pdf",
+          "combine PDF exhibits",
+          "merge PDF attachments"
+        ],
+        "relatedTools": [
+          "merge-pdf",
+          "remove-metadata",
+          "pdf-reader",
+          "organize-pdf"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
@@ -57387,6 +57873,87 @@
           "remove-metadata",
           "merge-pdf",
           "pdf-reader"
+        ],
+        "relatedPosts": [
+          "how-to-merge-pdf-files",
+          "remove-metadata-from-pdf",
+          "make-pdf-searchable",
+          "prepare-pdf-for-long-term-archive"
+        ]
+      },
+      {
+        "topic": "combine-pdf-exhibits",
+        "slug": "combine-pdf-exhibits",
+        "cluster": "editing-expansion",
+        "tool": "merge-pdf",
+        "title": "如何合并 PDF 证据附件",
+        "metaTitle": "如何合并 PDF 证据附件",
+        "metaDescription": "将 PDF 证据附件合并为一个文件，并按需要排列顺序。浏览器内免费处理，无需账户，也没有水印。",
+        "answer": "要合并 PDF 证据附件，请先整理文件、确定顺序，再生成一个新副本。将封面或目录放在前面，然后按文档中的引用顺序排列附件。PrintxPDF 会在浏览器中按所选顺序复制页面；请保留原件，并在提交前检查最终文件。",
+        "sections": [
+          {
+            "heading": "四步合并 PDF 附件",
+            "paragraphs": [
+              "要合并 PDF 证据附件，请先整理文件、确定顺序，再生成一个新副本。将封面或目录放在前面，然后按文档中的引用顺序排列附件。PrintxPDF 会在浏览器中按所选顺序复制页面；请保留原件，并在提交前检查最终文件。"
+            ],
+            "steps": [
+              {
+                "heading": "准备文件",
+                "text": "保留每份附件的副本，并使用清晰名称，例如 Exhibit-A 和 Exhibit-B。确认每个 PDF 都能打开且页面完整。"
+              },
+              {
+                "heading": "确定顺序",
+                "text": "根据目录、合同或提交要求决定最终顺序。可先放封面或目录，再按字母或编号排列附件。"
+              },
+              {
+                "heading": "合并 PDF",
+                "text": "打开 [Merge PDF](/tools/merge-pdf)，添加文件并上下移动，直到列表符合最终顺序，然后运行合并。"
+              },
+              {
+                "heading": "检查新副本",
+                "text": "下载合并后的文件，检查分隔页、标签、页码、方向和完整性。确认文件与目录一致。"
+              }
+            ]
+          },
+          {
+            "heading": "合并时哪些内容会保留或可能丢失",
+            "paragraphs": [
+              "工具会按列表顺序合并整个文件。如果某个附件中有不应包含的页面，请先提取或删除这些页面。[Extract Pages](/tools/extract-pages) 可将选定页面另存为一个文件；之后也可用 [Organize PDF](/tools/organize-pdf) 逐页调整顺序。",
+              "页面会复制到新 PDF 中，而不是转成屏幕截图。文本仍可选择，图像保持原质量。不过，文档级书签、全局元数据和可填写表单设置可能不会保留。如需让已填答案继续显示，请先用 [Flatten PDF](/tools/flatten-pdf) 扁平化表单再合并。",
+              "将最终 PDF 与附件清单逐项核对。确认每张分隔页标识正确、没有漏页，顺序也符合引用。如果使用自定义页码，请与实际提交版本核对；印刷页码不会自动重新编排。",
+              "Merge PDF 在浏览器标签页中运行并下载单独的输出文件。普通 PDF 不会上传到服务器。处理机密材料时，请遵守组织政策，并确认只包含获准页面。必要时可用 [Remove PDF Metadata](/tools/remove-metadata) 删除常规元数据。"
+            ]
+          }
+        ],
+        "ctaLabel": "在浏览器中免费合并附件，无需账户，也没有水印。",
+        "faqs": [
+          {
+            "q": "如何将 PDF 证据附件合并成一个文件？",
+            "a": "打开 Merge PDF，添加每份附件，按目录或要求排序并执行合并。下载新文件，在提交前检查所有页面、标签和分隔位置。"
+          },
+          {
+            "q": "可以调整附件顺序吗？",
+            "a": "可以。合并前在列表中重新排列文件。若要调整单页顺序，可之后使用 Organize PDF，或先通过 Extract Pages 准备所需页面。"
+          },
+          {
+            "q": "可填写表单和书签会保留吗？",
+            "a": "不一定。页面及可见内容会复制，但全局书签和交互式表单设置可能不会转移。若要保留已填答案的显示效果，请在合并前扁平化表单。"
+          },
+          {
+            "q": "合并会降低质量或修改原文件吗？",
+            "a": "不会。页面会直接复制而不重新绘制，原文件保持不变。文本和图像保留质量。工具会生成新文件，供你在分享前检查和修正。"
+          }
+        ],
+        "keywords": [
+          "如何合并 pdf 证据附件",
+          "combine PDF exhibits",
+          "merge PDF attachments"
+        ],
+        "relatedTools": [
+          "merge-pdf",
+          "remove-metadata",
+          "pdf-reader",
+          "organize-pdf"
         ],
         "relatedPosts": [
           "how-to-merge-pdf-files",
