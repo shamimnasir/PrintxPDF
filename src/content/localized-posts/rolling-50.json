@@ -3089,6 +3089,159 @@
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "pdf-opens-in-one-reader-not-another",
+        "slug": "pdf-opens-in-one-reader-not-another",
+        "cluster": "archive",
+        "title": "Por qué un PDF se abre en un lector y no en otro",
+        "metaTitle": "Por qué un PDF se abre en un lector y no en otro",
+        "metaDescription": "Por qué un PDF se abre en un lector y no en otro. Reparación gratis en el navegador, sin Adobe, registro ni marca de agua.",
+        "primaryKeyword": "PDF se abre en un lector pero no en otro",
+        "secondaryKeywords": [
+          "reparar PDF corrupto",
+          "PDF no se abre",
+          "arreglar PDF dañado",
+          "recuperar archivo PDF"
+        ],
+        "answer": "Los lectores de PDF no validan la estructura exactamente igual. Un archivo con un índice mal formado puede abrirse en una aplicación más permisiva y fallar en otra. Reconstruir el índice puede mejorar la compatibilidad, pero revisa siempre el documento resultante.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Los lectores de PDF no aplican las reglas de estructura exactamente igual. Si el índice está mal formado, una aplicación más permisiva puede abrir el archivo mientras otra lo rechaza."
+          },
+          {
+            "t": "h2",
+            "x": "Qué hacer si un PDF se abre en un lector pero no en otro"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Conserva el original dañado",
+                "x": "Guarda una copia antes de repararlo. Puede hacer falta para volver a exportar, recuperar el documento o conservar un registro."
+              },
+              {
+                "h": "Abre Reparar PDF",
+                "x": "Añade el archivo a [Reparar PDF](/tools/repair-pdf) en la pestaña del navegador."
+              },
+              {
+                "h": "Ejecuta la reparación limitada",
+                "x": "La herramienta lee las partes recuperables del PDF y crea una copia con el índice interno reconstruido."
+              },
+              {
+                "h": "Lee el aviso del resultado",
+                "x": "Comprueba el número de páginas indicado y descarga la copia reparada solo si te sirve."
+              },
+              {
+                "h": "Revisa todas las páginas importantes",
+                "x": "Abre la copia con [Lector PDF](/tools/pdf-reader) y compara texto, imágenes, firmas y adjuntos con el original o la fuente."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "repair-pdf",
+            "x": "Prueba una reparación privada y limitada de PDF en tu pestaña. Gratis, sin registro ni marca de agua."
+          },
+          {
+            "t": "h2",
+            "x": "Reparar, volver a descargar o recrear"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Problema",
+              "Primera acción recomendada",
+              "Motivo"
+            ],
+            "rows": [
+              [
+                "La descarga se interrumpió",
+                "Descarga una copia nueva desde la fuente",
+                "No se pueden inventar de forma fiable los bytes que faltan."
+              ],
+              [
+                "Solo se abre en algunos lectores",
+                "Prueba Reparar PDF",
+                "Reconstruir el índice puede mejorar la compatibilidad estructural."
+              ],
+              [
+                "Las imágenes están en blanco o dañadas",
+                "Exporta o escanea de nuevo",
+                "El daño puede estar en el contenido de la página."
+              ],
+              [
+                "Hay un problema de contraseña o permisos",
+                "Desbloquea el PDF solo con autorización",
+                "La reparación no elude los controles de acceso."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Qué puede hacer una reparación estructural"
+          },
+          {
+            "t": "p",
+            "x": "Un PDF contiene objetos de página y un índice interno que indica dónde están. Si ese índice o el marcador final están dañados, un lector estricto puede rechazar un documento cuyo contenido aún existe. Reparar PDF lee las partes recuperables, omite las ilegibles y escribe una estructura nueva. Puede permitir que el archivo se abra, pero no recrea contenido que nunca se guardó o se destruyó."
+          },
+          {
+            "t": "h2",
+            "x": "Por qué debes revisar el resultado"
+          },
+          {
+            "t": "p",
+            "x": "Que la descarga termine no demuestra que el documento esté completo. Una copia reparada puede tener páginas en blanco, imágenes ausentes, marcadores modificados o funciones interactivas perdidas. Compara el número de páginas y las páginas importantes con una fuente fiable. Para documentos firmados, regulados o probatorios, conserva el original y sigue el proceso formal de recuperación; la reparación no prueba autenticidad."
+          },
+          {
+            "t": "h2",
+            "x": "La privacidad también importa en archivos dañados"
+          },
+          {
+            "t": "p",
+            "x": "Un contrato, extracto bancario o historial médico dañado sigue siendo sensible. El flujo estándar de reparación de PrintxPDF se ejecuta en el navegador y evita una subida rutinaria para esta tarea limitada. Guarda las descargas en una ubicación aprobada y verifica el contenido y el destinatario antes de compartir el archivo reparado."
+          },
+          {
+            "t": "h2",
+            "x": "Elige la herramienta adecuada después"
+          },
+          {
+            "t": "p",
+            "x": "Si el PDF reparado se abre pero no permite buscar texto, crea una copia de trabajo con [OCR PDF](/tools/ocr-pdf) y verifica el reconocimiento. Si contiene propiedades no deseadas, [Quitar metadatos](/tools/remove-metadata) puede preparar una copia para compartir. Ninguna de estas acciones recupera contenido perdido. Conserva el original y una exportación de origen hasta confirmar que la copia está completa."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Por qué un PDF se abre en un lector y no en otro?",
+            "a": "Las aplicaciones pueden interpretar o validar la estructura del PDF de manera distinta. Un lector puede tolerar un índice defectuoso y otro rechazar el archivo. Una reparación puede mejorar la compatibilidad, pero debes revisar todas las páginas importantes."
+          },
+          {
+            "q": "¿La reparación recupera páginas que faltan?",
+            "a": "No. Puede reconstruir partes recuperables de la estructura, pero no recrea páginas ni bytes ausentes."
+          },
+          {
+            "q": "¿La reparación cambia el archivo original?",
+            "a": "No. La herramienta crea una copia reparada aparte. Conserva el archivo de origen hasta revisar el resultado."
+          },
+          {
+            "q": "¿Reparar PDF es privado?",
+            "a": "El flujo estándar se ejecuta en la pestaña del navegador, por lo que el archivo no se suele subir para procesarlo."
+          }
+        ],
+        "relatedTools": [
+          "repair-pdf",
+          "pdf-reader",
+          "ocr-pdf",
+          "remove-metadata",
+          "unlock-pdf"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "make-pdf-searchable",
+          "remove-metadata-from-pdf",
+          "will-this-file-still-open"
+        ]
       }
     ]
   },
@@ -6145,6 +6298,159 @@
           {
             "q": "Posso reparar um PDF corrompido sem Adobe?",
             "a": "Sim. Você pode tentar Reparar PDF no navegador. Preserve o original e confira a cópia: o reparo é limitado e não garante recuperar conteúdo perdido."
+          },
+          {
+            "q": "O reparo recupera páginas ausentes?",
+            "a": "Não. Ele pode reconstruir partes recuperáveis da estrutura, mas não recria páginas nem bytes ausentes."
+          },
+          {
+            "q": "O reparo altera o arquivo original?",
+            "a": "Não. A ferramenta cria uma cópia reparada separada. Preserve o original até conferir o resultado."
+          },
+          {
+            "q": "O Reparar PDF é privado?",
+            "a": "O fluxo padrão roda na aba do navegador, então o arquivo não é enviado rotineiramente para processamento."
+          }
+        ],
+        "relatedTools": [
+          "repair-pdf",
+          "pdf-reader",
+          "ocr-pdf",
+          "remove-metadata",
+          "unlock-pdf"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "make-pdf-searchable",
+          "remove-metadata-from-pdf",
+          "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-opens-in-one-reader-not-another",
+        "slug": "pdf-opens-in-one-reader-not-another",
+        "cluster": "archive",
+        "title": "Por que um PDF abre em um leitor e não em outro",
+        "metaTitle": "Por que um PDF abre em um leitor e não em outro",
+        "metaDescription": "Por que um PDF abre em um leitor e não em outro. Reparo grátis no navegador, sem Adobe, cadastro ou marca-d’água.",
+        "primaryKeyword": "PDF abre em um leitor mas não em outro",
+        "secondaryKeywords": [
+          "reparar PDF danificado",
+          "PDF não abre",
+          "corrigir PDF corrompido",
+          "recuperar arquivo PDF"
+        ],
+        "answer": "Os leitores de PDF não validam a estrutura exatamente da mesma forma. Um arquivo com índice malformado pode abrir em um aplicativo mais tolerante e falhar em outro. Reconstruir o índice pode melhorar a compatibilidade, mas sempre confira o documento resultante.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Os leitores de PDF não aplicam as regras de estrutura exatamente da mesma forma. Se o índice estiver malformado, um aplicativo mais tolerante pode abrir o arquivo enquanto outro o rejeita."
+          },
+          {
+            "t": "h2",
+            "x": "O que fazer quando um PDF abre em um leitor, mas não em outro"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Preserve o original danificado",
+                "x": "Salve uma cópia antes do reparo. Ela pode ser necessária para exportar novamente, recuperar ou documentar o arquivo."
+              },
+              {
+                "h": "Abra Reparar PDF",
+                "x": "Adicione o arquivo ao [Reparar PDF](/tools/repair-pdf) na aba do navegador."
+              },
+              {
+                "h": "Tente o reparo limitado",
+                "x": "A ferramenta lê as partes recuperáveis e cria uma cópia com o índice interno reconstruído."
+              },
+              {
+                "h": "Leia o aviso do resultado",
+                "x": "Confira o número de páginas informado e baixe a cópia reparada apenas se ela for útil."
+              },
+              {
+                "h": "Inspecione as páginas importantes",
+                "x": "Abra no [Leitor de PDF](/tools/pdf-reader) e compare texto, imagens, assinaturas e anexos com o original ou uma fonte confiável."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "repair-pdf",
+            "x": "Tente um reparo de PDF privado e limitado na sua aba. Grátis, sem cadastro e sem marca-d’água."
+          },
+          {
+            "t": "h2",
+            "x": "Reparar, baixar novamente ou recriar"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Problema",
+              "Primeira ação recomendada",
+              "Motivo"
+            ],
+            "rows": [
+              [
+                "O download parou antes do fim",
+                "Baixe uma cópia nova da fonte",
+                "Não é possível inventar com confiança os bytes ausentes."
+              ],
+              [
+                "Abre em apenas alguns leitores",
+                "Tente Reparar PDF",
+                "Reconstruir o índice pode melhorar a compatibilidade estrutural."
+              ],
+              [
+                "Imagens estão em branco ou corrompidas",
+                "Exporte ou digitalize novamente",
+                "O dano pode estar no conteúdo da página."
+              ],
+              [
+                "Problema de senha ou permissão",
+                "Desbloqueie o PDF somente com autorização",
+                "O reparo não contorna controles de acesso."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "O que um reparo estrutural pode fazer"
+          },
+          {
+            "t": "p",
+            "x": "Um PDF contém objetos de página e um índice interno que informa onde eles estão. Se o índice ou o marcador final estiver danificado, um leitor rigoroso pode rejeitar um documento cujo conteúdo ainda exista. Reparar PDF lê as partes recuperáveis, ignora o que não consegue ler e grava uma estrutura nova. Isso pode fazer o arquivo abrir, mas não recria conteúdo que nunca foi salvo ou foi destruído."
+          },
+          {
+            "t": "h2",
+            "x": "Por que revisar o resultado"
+          },
+          {
+            "t": "p",
+            "x": "Um download concluído não prova que o documento está completo. A cópia reparada pode ter páginas em branco, imagens ausentes, favoritos alterados ou recursos interativos perdidos. Compare a contagem de páginas e as páginas importantes com uma fonte confiável. Para documentos assinados, regulados ou usados como evidência, preserve o original e siga o processo formal; o reparo não comprova autenticidade."
+          },
+          {
+            "t": "h2",
+            "x": "A privacidade importa até em arquivos danificados"
+          },
+          {
+            "t": "p",
+            "x": "Um contrato, extrato bancário ou prontuário danificado continua sensível. O fluxo padrão de reparo do PrintxPDF roda no navegador e evita um envio rotineiro para essa tarefa limitada. Guarde os downloads em um local aprovado e confira o conteúdo e o destinatário antes de compartilhar."
+          },
+          {
+            "t": "h2",
+            "x": "Escolha a ferramenta adequada depois"
+          },
+          {
+            "t": "p",
+            "x": "Se o PDF reparado abre, mas não permite pesquisar texto, crie uma cópia de trabalho com [OCR de PDF](/tools/ocr-pdf) e confira o reconhecimento. Se tiver propriedades indesejadas, [Remover metadados](/tools/remove-metadata) pode preparar uma cópia para compartilhar. Nenhuma dessas ações restaura conteúdo perdido. Preserve o original e uma exportação da fonte até confirmar que a nova cópia está completa."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Por que um PDF abre em um leitor, mas não em outro?",
+            "a": "Os aplicativos podem interpretar ou validar a estrutura do PDF de maneiras diferentes. Um leitor pode tolerar um índice com erro e outro rejeitar o arquivo. O reparo pode melhorar a compatibilidade, mas confira todas as páginas importantes."
           },
           {
             "q": "O reparo recupera páginas ausentes?",
@@ -9255,6 +9561,159 @@
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "pdf-opens-in-one-reader-not-another",
+        "slug": "pdf-opens-in-one-reader-not-another",
+        "cluster": "archive",
+        "title": "एक रीडर में PDF खुलती है, दूसरे में क्यों नहीं",
+        "metaTitle": "एक रीडर में PDF खुलती है, दूसरे में क्यों नहीं",
+        "metaDescription": "एक रीडर में PDF खुलती है, दूसरे में क्यों नहीं. ब्राउज़र में मुफ़्त मरम्मत—Adobe, साइनअप या वॉटरमार्क नहीं।",
+        "primaryKeyword": "एक रीडर में PDF खुलती है लेकिन दूसरे में नहीं",
+        "secondaryKeywords": [
+          "करप्ट PDF ठीक करें",
+          "PDF नहीं खुल रही",
+          "खराब PDF सुधारें",
+          "PDF फ़ाइल रिकवर करें"
+        ],
+        "answer": "PDF रीडर फ़ाइल की संरचना को एक जैसे नियमों से नहीं जाँचते। खराब इंडेक्स वाली PDF अधिक सहनशील ऐप में खुल सकती है, लेकिन दूसरे में विफल हो सकती है। इंडेक्स फिर बनाना संगतता सुधार सकता है, फिर भी बनी फ़ाइल के हर ज़रूरी पन्ने की जाँच करें।",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF रीडर संरचना के नियमों को अलग-अलग तरीके से लागू करते हैं। खराब इंडेक्स को अधिक सहनशील ऐप स्वीकार कर सकता है, जबकि दूसरा फ़ाइल अस्वीकार कर सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "जब PDF एक रीडर में खुले और दूसरे में नहीं, तो क्या करें"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "खराब मूल फ़ाइल सुरक्षित रखें",
+                "x": "मरम्मत से पहले कॉपी सेव करें। दोबारा एक्सपोर्ट, रिकवरी या रिकॉर्ड के लिए इसकी ज़रूरत पड़ सकती है।"
+              },
+              {
+                "h": "Repair PDF खोलें",
+                "x": "ब्राउज़र टैब में [Repair PDF](/tools/repair-pdf) पर फ़ाइल जोड़ें।"
+              },
+              {
+                "h": "सीमित मरम्मत चलाएँ",
+                "x": "टूल पढ़े जा सकने वाले हिस्से लेकर नए आंतरिक इंडेक्स वाली कॉपी बनाता है।"
+              },
+              {
+                "h": "नतीजे का संदेश पढ़ें",
+                "x": "बताए गए पन्नों की संख्या देखें और उपयोगी लगे तभी सुधारी हुई कॉपी डाउनलोड करें।"
+              },
+              {
+                "h": "ज़रूरी पन्ने जाँचें",
+                "x": "[PDF Reader](/tools/pdf-reader) में खोलकर टेक्स्ट, चित्र, हस्ताक्षर और अटैचमेंट को मूल या भरोसेमंद स्रोत से मिलाएँ।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "repair-pdf",
+            "x": "अपने टैब में निजी, सीमित PDF मरम्मत आज़माएँ। मुफ़्त, बिना साइनअप और बिना वॉटरमार्क।"
+          },
+          {
+            "t": "h2",
+            "x": "मरम्मत करें, फिर डाउनलोड करें या दोबारा बनाएँ"
+          },
+          {
+            "t": "table",
+            "head": [
+              "समस्या",
+              "पहला सही कदम",
+              "क्यों"
+            ],
+            "rows": [
+              [
+                "डाउनलोड बीच में रुक गया",
+                "स्रोत से नई कॉपी डाउनलोड करें",
+                "गायब बाइट्स भरोसे से दोबारा नहीं बनाई जा सकतीं।"
+              ],
+              [
+                "केवल कुछ रीडर में खुलती है",
+                "Repair PDF आज़माएँ",
+                "इंडेक्स दोबारा बनाना संरचनात्मक संगतता सुधार सकता है।"
+              ],
+              [
+                "पन्नों के चित्र खाली या खराब हैं",
+                "फिर से एक्सपोर्ट या स्कैन करें",
+                "नुकसान पन्ने की सामग्री में हो सकता है।"
+              ],
+              [
+                "पासवर्ड या अनुमति की समस्या",
+                "अनुमति लेकर PDF अनलॉक करें",
+                "मरम्मत एक्सेस नियंत्रण को बायपास नहीं करती।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "संरचनात्मक मरम्मत क्या कर सकती है"
+          },
+          {
+            "t": "p",
+            "x": "PDF में पेज ऑब्जेक्ट और आंतरिक इंडेक्स होता है जो उनके स्थान बताता है। इंडेक्स या अंत का मार्कर बिगड़ा हो तो रीडर ऐसी फ़ाइल अस्वीकार कर सकता है जिसकी सामग्री अभी मौजूद हो। Repair PDF पढ़े जा सकने वाले हिस्सों को लेकर नया ढाँचा लिखता है और अपठनीय भाग छोड़ सकता है। इससे फ़ाइल खुल सकती है, पर कभी सेव न हुई या नष्ट सामग्री वापस नहीं आती।"
+          },
+          {
+            "t": "h2",
+            "x": "नतीजे की जाँच क्यों ज़रूरी है"
+          },
+          {
+            "t": "p",
+            "x": "डाउनलोड पूरा होना फ़ाइल के पूरे होने का प्रमाण नहीं है। सुधारी कॉपी में खाली पन्ने, गायब चित्र, बदले बुकमार्क या खोई इंटरैक्टिव सुविधाएँ हो सकती हैं। पन्नों की संख्या और ज़रूरी हिस्से भरोसेमंद स्रोत से मिलाएँ। हस्ताक्षरित, नियामक या सबूत वाले दस्तावेज़ का मूल सुरक्षित रखें और औपचारिक रिकवरी प्रक्रिया अपनाएँ; मरम्मत प्रामाणिकता साबित नहीं करती।"
+          },
+          {
+            "t": "h2",
+            "x": "खराब फ़ाइलों में भी गोपनीयता ज़रूरी है"
+          },
+          {
+            "t": "p",
+            "x": "खराब अनुबंध, बैंक विवरण या मेडिकल रिकॉर्ड भी संवेदनशील होते हैं। PrintxPDF का सामान्य मरम्मत तरीका ब्राउज़र में चलता है, इसलिए इस सीमित काम के लिए फ़ाइल नियमित रूप से सर्वर पर भेजने की ज़रूरत नहीं पड़ती। डाउनलोड स्वीकृत जगह पर रखें और सामग्री व प्राप्तकर्ता जाँचे बिना साझा न करें।"
+          },
+          {
+            "t": "h2",
+            "x": "इसके बाद सही टूल चुनें"
+          },
+          {
+            "t": "p",
+            "x": "अगर सुधरी PDF खुलती है लेकिन खोजी नहीं जा सकती, तो [OCR PDF](/tools/ocr-pdf) से काम की कॉपी बनाएँ और पहचान जाँचें। अनचाही प्रॉपर्टी हटाने के लिए [Remove Metadata](/tools/remove-metadata) साझा करने की कॉपी तैयार कर सकता है। कोई भी टूल खोई सामग्री नहीं लौटाता। नई कॉपी पूरी होने तक मूल और स्रोत एक्सपोर्ट रखें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "एक रीडर में PDF खुलती है लेकिन दूसरे में क्यों नहीं?",
+            "a": "ऐप PDF की संरचना को अलग-अलग तरीके से पढ़ या जाँच सकते हैं। एक रीडर खराब इंडेक्स सह सकता है, जबकि दूसरा फ़ाइल रोक दे। मरम्मत संगतता सुधार सकती है, पर सभी ज़रूरी पन्ने जाँचें।"
+          },
+          {
+            "q": "क्या मरम्मत गायब पन्ने लौटा सकती है?",
+            "a": "नहीं। यह बची हुई संरचना सुधार सकती है, लेकिन गायब पन्ने या बाइट्स नहीं बना सकती।"
+          },
+          {
+            "q": "क्या मरम्मत से मूल PDF बदलती है?",
+            "a": "नहीं। टूल अलग सुधारी हुई कॉपी बनाता है। नतीजा जाँचने तक मूल रखें।"
+          },
+          {
+            "q": "क्या Repair PDF निजी है?",
+            "a": "सामान्य तरीका ब्राउज़र टैब में चलता है, इसलिए फ़ाइल को प्रोसेसिंग के लिए नियमित रूप से अपलोड नहीं किया जाता।"
+          }
+        ],
+        "relatedTools": [
+          "repair-pdf",
+          "pdf-reader",
+          "ocr-pdf",
+          "remove-metadata",
+          "unlock-pdf"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "make-pdf-searchable",
+          "remove-metadata-from-pdf",
+          "will-this-file-still-open"
+        ]
       }
     ]
   },
@@ -12320,6 +12779,159 @@
           {
             "q": "هل يمكن إصلاح PDF تالف بدون Adobe؟",
             "a": "نعم. يمكنك تجربة إصلاح PDF في المتصفح. احتفظ بالأصل وافحص النسخة؛ الإصلاح محدود ولا يضمن استعادة المحتوى المفقود."
+          },
+          {
+            "q": "هل يستعيد الإصلاح الصفحات المفقودة؟",
+            "a": "لا. قد يعيد بناء الأجزاء القابلة للاستعادة من البنية، لكنه لا ينشئ الصفحات أو البايتات المفقودة."
+          },
+          {
+            "q": "هل يغيّر الإصلاح الملف الأصلي؟",
+            "a": "لا. تنشئ الأداة نسخة مُصلحة منفصلة. احتفظ بالأصل حتى تفحص النتيجة."
+          },
+          {
+            "q": "هل إصلاح PDF خاص؟",
+            "a": "تعمل الطريقة القياسية داخل علامة تبويب المتصفح، لذلك لا يُرفع الملف عادة للمعالجة."
+          }
+        ],
+        "relatedTools": [
+          "repair-pdf",
+          "pdf-reader",
+          "ocr-pdf",
+          "remove-metadata",
+          "unlock-pdf"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "make-pdf-searchable",
+          "remove-metadata-from-pdf",
+          "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-opens-in-one-reader-not-another",
+        "slug": "pdf-opens-in-one-reader-not-another",
+        "cluster": "archive",
+        "title": "لماذا يفتح PDF في قارئ ولا يفتح في آخر؟",
+        "metaTitle": "لماذا يفتح PDF في قارئ ولا يفتح في آخر؟",
+        "metaDescription": "لماذا يفتح PDF في قارئ ولا يفتح في آخر؟ إصلاح مجاني في المتصفح بلا Adobe أو تسجيل أو علامة مائية. افحص كل صفحة بعد الإصلاح.",
+        "primaryKeyword": "PDF يفتح في قارئ ولا يفتح في آخر",
+        "secondaryKeywords": [
+          "إصلاح PDF معطوب",
+          "ملف PDF لا يفتح",
+          "تصليح PDF تالف",
+          "استعادة ملف PDF"
+        ],
+        "answer": "لا تتحقق برامج قراءة PDF من بنية الملف بالطريقة نفسها تماماً. قد يفتح ملف ذو فهرس مشوه في تطبيق أكثر تساهلاً ويفشل في آخر. قد يحسن بناء الفهرس التوافق، لكن افحص المستند الناتج دائماً.",
+        "body": [
+          {
+            "t": "p",
+            "x": "لا تطبق برامج قراءة PDF قواعد البنية بالطريقة نفسها. قد يقبل تطبيق أكثر تساهلاً فهرساً معطوباً بينما يرفض تطبيق آخر الملف."
+          },
+          {
+            "t": "h2",
+            "x": "ما العمل إذا فتح PDF في قارئ ولم يفتح في آخر؟"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "احتفظ بالأصل التالف",
+                "x": "احفظ نسخة قبل الإصلاح. قد تحتاج إليها لإعادة التصدير أو الاستعادة أو توثيق حالة الملف."
+              },
+              {
+                "h": "افتح أداة إصلاح PDF",
+                "x": "أضف الملف إلى [إصلاح PDF](/tools/repair-pdf) في علامة تبويب المتصفح."
+              },
+              {
+                "h": "جرّب الإصلاح المحدود",
+                "x": "تقرأ الأداة الأجزاء القابلة للاستعادة وتنشئ نسخة بفهرس داخلي مُعاد بناؤه."
+              },
+              {
+                "h": "اقرأ ملاحظة النتيجة",
+                "x": "تحقق من عدد الصفحات المذكور ونزّل النسخة المُصلحة فقط إذا كانت مفيدة."
+              },
+              {
+                "h": "افحص الصفحات المهمة",
+                "x": "افتح النسخة باستخدام [قارئ PDF](/tools/pdf-reader) وقارن النصوص والصور والتوقيعات والمرفقات بالأصل أو بمصدر موثوق."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "repair-pdf",
+            "x": "جرّب إصلاح PDF خاصاً ومحدوداً في علامة تبويبك. مجاناً، بلا تسجيل أو علامة مائية."
+          },
+          {
+            "t": "h2",
+            "x": "أصلح الملف أم أعد تنزيله أم أنشئه مجدداً؟"
+          },
+          {
+            "t": "table",
+            "head": [
+              "المشكلة",
+              "أفضل إجراء أول",
+              "السبب"
+            ],
+            "rows": [
+              [
+                "توقف التنزيل قبل اكتماله",
+                "نزّل نسخة جديدة من المصدر",
+                "لا يمكن تخمين البايتات المفقودة بشكل موثوق."
+              ],
+              [
+                "يفتح في بعض برامج القراءة فقط",
+                "جرّب إصلاح PDF",
+                "قد يحسن بناء الفهرس التوافق البنيوي."
+              ],
+              [
+                "صور الصفحات فارغة أو تالفة",
+                "أعد التصدير أو المسح",
+                "قد يكون التلف في محتوى الصفحة نفسه."
+              ],
+              [
+                "مشكلة كلمة مرور أو أذونات",
+                "افتح القفل بتفويض",
+                "الإصلاح لا يتجاوز ضوابط الوصول."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي يستطيع الإصلاح البنيوي فعله؟"
+          },
+          {
+            "t": "p",
+            "x": "يحتوي PDF على كائنات صفحات وفهرس داخلي يحدد مواقعها. إذا كان الفهرس أو مؤشر النهاية مشوهاً، فقد يرفض قارئ صارم مستنداً لا يزال محتواه موجوداً. تقرأ الأداة الأجزاء القابلة للاستعادة، وتتجاوز غير المقروء، وتكتب بنية جديدة. قد يفتح الملف مجدداً، لكن هذا لا يعيد محتوى لم يُحفظ أو تلف نهائياً."
+          },
+          {
+            "t": "h2",
+            "x": "لماذا يجب مراجعة النتيجة"
+          },
+          {
+            "t": "p",
+            "x": "اكتمال التنزيل لا يثبت أن المستند كامل. قد تحتوي النسخة المُصلحة على صفحات فارغة أو صور مفقودة أو إشارات مرجعية متغيرة أو ميزات تفاعلية ضائعة. قارن عدد الصفحات والأجزاء المهمة بمصدر موثوق. احتفظ بالأصل للمستندات الموقعة أو المنظمة أو المستخدمة كأدلة واتبع إجراء الاستعادة الرسمي؛ فالإصلاح لا يثبت الأصالة."
+          },
+          {
+            "t": "h2",
+            "x": "الخصوصية مهمة حتى للملفات التالفة"
+          },
+          {
+            "t": "p",
+            "x": "العقد أو كشف الحساب أو السجل الطبي التالف يظل حساساً. تعمل طريقة الإصلاح القياسية في PrintxPDF داخل المتصفح، فلا يلزم رفع الملف عادة لهذه المحاولة المحدودة. احفظ التنزيلات في مكان معتمد وتحقق من المحتوى والمستلم قبل المشاركة."
+          },
+          {
+            "t": "h2",
+            "x": "اختر الأداة المناسبة بعد الإصلاح"
+          },
+          {
+            "t": "p",
+            "x": "إذا فُتح الملف المُصلح لكن تعذر البحث فيه، أنشئ نسخة عمل باستخدام [OCR PDF](/tools/ocr-pdf) وتحقق من التعرف. وإذا احتوى على خصائص غير مرغوبة، يمكن لـ[إزالة البيانات الوصفية](/tools/remove-metadata) تجهيز نسخة للمشاركة. لا يعيد أي منهما محتوى مفقوداً. احتفظ بالأصل ونسخة المصدر حتى تتأكد من اكتمال الملف الجديد."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "لماذا يفتح PDF في قارئ ولا يفتح في آخر؟",
+            "a": "قد تفسر التطبيقات بنية PDF أو تتحقق منها بطرق مختلفة. قد يتسامح قارئ مع فهرس معطوب بينما يرفضه آخر. قد يحسن الإصلاح التوافق، لكن افحص كل الصفحات المهمة."
           },
           {
             "q": "هل يستعيد الإصلاح الصفحات المفقودة؟",
@@ -15442,6 +16054,159 @@
           "remove-metadata-from-pdf",
           "will-this-file-still-open"
         ]
+      },
+      {
+        "topic": "pdf-opens-in-one-reader-not-another",
+        "slug": "pdf-opens-in-one-reader-not-another",
+        "cluster": "archive",
+        "title": "এক রিডারে PDF খুললেও অন্য রিডারে কেন খোলে না",
+        "metaTitle": "এক রিডারে PDF খুললেও অন্য রিডারে কেন খোলে না",
+        "metaDescription": "এক রিডারে PDF খুললেও অন্য রিডারে কেন খোলে না. ব্রাউজারে বিনামূল্যে মেরামত—Adobe, সাইনআপ বা ওয়াটারমার্ক নেই।",
+        "primaryKeyword": "এক রিডারে PDF খোলে কিন্তু অন্য রিডারে খোলে না",
+        "secondaryKeywords": [
+          "করাপ্ট PDF মেরামত",
+          "PDF খুলছে না",
+          "নষ্ট PDF ঠিক করা",
+          "PDF ফাইল পুনরুদ্ধার"
+        ],
+        "answer": "PDF রিডারগুলো ফাইলের কাঠামো একই নিয়মে যাচাই করে না। ত্রুটিপূর্ণ সূচির PDF বেশি সহনশীল অ্যাপে খুলতে পারে, অন্য অ্যাপে ব্যর্থ হতে পারে। সূচি পুনর্গঠন সামঞ্জস্য বাড়াতে পারে, তবে ফলের নথির গুরুত্বপূর্ণ প্রতিটি পৃষ্ঠা পরীক্ষা করুন।",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF রিডারগুলো কাঠামোর নিয়ম আলাদাভাবে প্রয়োগ করে। বেশি সহনশীল অ্যাপ ত্রুটিপূর্ণ সূচি মেনে নিতে পারে, অন্যটি ফাইল প্রত্যাখ্যান করতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "এক রিডারে খুললেও অন্যটিতে না খুললে কী করবেন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "নষ্ট মূল ফাইলটি রাখুন",
+                "x": "মেরামতের আগে একটি কপি সংরক্ষণ করুন। আবার এক্সপোর্ট, পুনরুদ্ধার বা ফাইলের অবস্থা নথিভুক্ত করতে এটি লাগতে পারে।"
+              },
+              {
+                "h": "Repair PDF খুলুন",
+                "x": "ব্রাউজার ট্যাবে [Repair PDF](/tools/repair-pdf)-এ ফাইল যোগ করুন।"
+              },
+              {
+                "h": "সীমিত মেরামত চালান",
+                "x": "টুলটি উদ্ধারযোগ্য PDF অংশ পড়ে নতুন অভ্যন্তরীণ সূচিসহ একটি কপি তৈরি করে।"
+              },
+              {
+                "h": "ফলাফলের বার্তা পড়ুন",
+                "x": "দেখানো পৃষ্ঠাসংখ্যা পরীক্ষা করুন এবং কাজে লাগলে তবেই মেরামত করা কপি ডাউনলোড করুন।"
+              },
+              {
+                "h": "গুরুত্বপূর্ণ পৃষ্ঠা দেখুন",
+                "x": "[PDF Reader](/tools/pdf-reader)-এ খুলে নির্ভরযোগ্য উৎসের সঙ্গে লেখা, ছবি, স্বাক্ষর ও সংযুক্তি মিলিয়ে নিন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "repair-pdf",
+            "x": "আপনার ট্যাবে ব্যক্তিগত, সীমিত PDF মেরামত চেষ্টা করুন। বিনামূল্যে, সাইনআপ ও ওয়াটারমার্ক ছাড়া।"
+          },
+          {
+            "t": "h2",
+            "x": "মেরামত, আবার ডাউনলোড, নাকি নতুন করে তৈরি?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "সমস্যা",
+              "প্রথমে যা করবেন",
+              "কারণ"
+            ],
+            "rows": [
+              [
+                "ডাউনলোড মাঝপথে থেমেছে",
+                "উৎস থেকে নতুন কপি ডাউনলোড করুন",
+                "নিখোঁজ বাইট নির্ভরযোগ্যভাবে বানানো যায় না।"
+              ],
+              [
+                "শুধু কিছু রিডারে খোলে",
+                "Repair PDF চেষ্টা করুন",
+                "সূচি নতুন করে তৈরি করলে কাঠামোগত সামঞ্জস্য বাড়তে পারে।"
+              ],
+              [
+                "পৃষ্ঠার ছবি ফাঁকা বা নষ্ট",
+                "আবার এক্সপোর্ট বা স্ক্যান করুন",
+                "পৃষ্ঠার বিষয়বস্তুতেই ক্ষতি থাকতে পারে।"
+              ],
+              [
+                "পাসওয়ার্ড বা অনুমতির সমস্যা",
+                "অনুমোদন নিয়ে PDF আনলক করুন",
+                "মেরামত প্রবেশাধিকার নিয়ন্ত্রণ এড়ায় না।"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "কাঠামোগত PDF মেরামত কী করতে পারে"
+          },
+          {
+            "t": "p",
+            "x": "PDF-এ পৃষ্ঠা অবজেক্ট ও একটি অভ্যন্তরীণ সূচি থাকে, যা তাদের অবস্থান জানায়। সূচি বা শেষের চিহ্ন বিকৃত হলে কঠোর রিডার এমন ফাইলও প্রত্যাখ্যান করতে পারে যার বিষয়বস্তু এখনও আছে। Repair PDF উদ্ধারযোগ্য অংশ পড়ে, অপাঠ্য অংশ বাদ দিতে পারে এবং নতুন কাঠামো লেখে। এতে ফাইল খুলতে পারে, কিন্তু কখনও সংরক্ষিত হয়নি বা ধ্বংস হয়েছে এমন বিষয়বস্তু ফিরে আসে না।"
+          },
+          {
+            "t": "h2",
+            "x": "ফলাফল পরীক্ষা করা কেন জরুরি"
+          },
+          {
+            "t": "p",
+            "x": "ডাউনলোড শেষ হলেই নথি সম্পূর্ণ প্রমাণ হয় না। মেরামত করা কপিতে ফাঁকা পৃষ্ঠা, অনুপস্থিত ছবি, বদলে যাওয়া বুকমার্ক বা হারানো ইন্টারঅ্যাকটিভ সুবিধা থাকতে পারে। পৃষ্ঠার সংখ্যা ও গুরুত্বপূর্ণ অংশ নির্ভরযোগ্য উৎসের সঙ্গে মিলিয়ে নিন। স্বাক্ষরিত, নিয়ন্ত্রিত বা প্রমাণ হিসেবে ব্যবহৃত নথিতে মূল ফাইল রাখুন এবং আনুষ্ঠানিক প্রক্রিয়া অনুসরণ করুন; মেরামত সত্যতা প্রমাণ করে না।"
+          },
+          {
+            "t": "h2",
+            "x": "নষ্ট ফাইলেও গোপনীয়তা জরুরি"
+          },
+          {
+            "t": "p",
+            "x": "নষ্ট চুক্তি, ব্যাংক বিবরণী বা চিকিৎসার নথিও সংবেদনশীল। PrintxPDF-এর সাধারণ মেরামত ব্রাউজারে চলে, তাই এই সীমিত চেষ্টায় ফাইল নিয়মিত আপলোড করতে হয় না। অনুমোদিত স্থানে ডাউনলোড রাখুন এবং বিষয়বস্তু ও প্রাপক যাচাই না করে শেয়ার করবেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "এরপর উপযুক্ত টুল বেছে নিন"
+          },
+          {
+            "t": "p",
+            "x": "মেরামতের পর PDF খুললেও খোঁজা না গেলে [OCR PDF](/tools/ocr-pdf) দিয়ে কাজের কপি বানিয়ে স্বীকৃতি যাচাই করুন। অনাকাঙ্ক্ষিত বৈশিষ্ট্য সরাতে [Remove Metadata](/tools/remove-metadata) শেয়ার কপি প্রস্তুত করতে পারে। কোনোটি হারানো বিষয়বস্তু ফেরায় না। নতুন কপি সম্পূর্ণ নিশ্চিত না হওয়া পর্যন্ত মূল ও উৎস থেকে এক্সপোর্ট করা কপি রাখুন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "এক রিডারে PDF খুললেও অন্য রিডারে কেন খোলে না?",
+            "a": "অ্যাপগুলো PDF কাঠামো আলাদাভাবে পড়তে বা যাচাই করতে পারে। একটি রিডার ত্রুটিপূর্ণ সূচি মেনে নিলেও অন্যটি ফাইল প্রত্যাখ্যান করতে পারে। মেরামত সামঞ্জস্য বাড়াতে পারে, তবে গুরুত্বপূর্ণ সব পৃষ্ঠা দেখুন।"
+          },
+          {
+            "q": "মেরামত কি হারানো পৃষ্ঠা ফেরায়?",
+            "a": "না। এটি উদ্ধারযোগ্য কাঠামো পুনর্গঠন করতে পারে, কিন্তু হারানো পৃষ্ঠা বা বাইট তৈরি করতে পারে না।"
+          },
+          {
+            "q": "মেরামতে কি মূল ফাইল বদলে যায়?",
+            "a": "না। টুলটি আলাদা মেরামত করা কপি তৈরি করে। ফলাফল যাচাই না করা পর্যন্ত মূল রাখুন।"
+          },
+          {
+            "q": "Repair PDF কি ব্যক্তিগত?",
+            "a": "সাধারণ প্রক্রিয়াটি ব্রাউজার ট্যাবে চলে, তাই ফাইলটি নিয়মিত প্রক্রিয়াকরণের জন্য আপলোড হয় না।"
+          }
+        ],
+        "relatedTools": [
+          "repair-pdf",
+          "pdf-reader",
+          "ocr-pdf",
+          "remove-metadata",
+          "unlock-pdf"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "make-pdf-searchable",
+          "remove-metadata-from-pdf",
+          "will-this-file-still-open"
+        ]
       }
     ]
   },
@@ -18498,6 +19263,159 @@
           {
             "q": "Có thể sửa PDF bị hỏng không cần Adobe không?",
             "a": "Có. Bạn có thể thử Sửa PDF trong trình duyệt. Giữ bản gốc và kiểm tra bản mới; việc sửa có giới hạn, không đảm bảo khôi phục nội dung đã mất."
+          },
+          {
+            "q": "Việc sửa có khôi phục trang bị thiếu không?",
+            "a": "Không. Công cụ có thể dựng lại phần cấu trúc còn khôi phục được, nhưng không tạo lại trang hay byte đã mất."
+          },
+          {
+            "q": "Việc sửa có thay đổi tệp gốc không?",
+            "a": "Không. Công cụ tạo một bản đã sửa riêng. Hãy giữ tệp gốc đến khi kiểm tra xong."
+          },
+          {
+            "q": "Sửa PDF có riêng tư không?",
+            "a": "Quy trình tiêu chuẩn chạy trong tab trình duyệt, nên tệp không được tải lên thường xuyên để xử lý."
+          }
+        ],
+        "relatedTools": [
+          "repair-pdf",
+          "pdf-reader",
+          "ocr-pdf",
+          "remove-metadata",
+          "unlock-pdf"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "make-pdf-searchable",
+          "remove-metadata-from-pdf",
+          "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-opens-in-one-reader-not-another",
+        "slug": "pdf-opens-in-one-reader-not-another",
+        "cluster": "archive",
+        "title": "Vì sao PDF mở được ở trình đọc này nhưng không ở trình đọc khác",
+        "metaTitle": "Vì sao PDF mở được ở trình đọc này nhưng không ở trình đọc khác",
+        "metaDescription": "Vì sao PDF mở được ở trình đọc này nhưng không ở trình đọc khác. Sửa miễn phí trong trình duyệt, không cần Adobe, đăng ký hay watermark.",
+        "primaryKeyword": "PDF mở ở trình đọc này nhưng không ở trình đọc khác",
+        "secondaryKeywords": [
+          "sửa PDF lỗi",
+          "PDF không mở",
+          "khắc phục PDF hỏng",
+          "khôi phục tệp PDF"
+        ],
+        "answer": "Các trình đọc PDF không xác thực cấu trúc theo cùng một cách. Tệp có chỉ mục sai định dạng có thể mở ở ứng dụng dễ chấp nhận hơn nhưng lỗi ở ứng dụng khác. Dựng lại chỉ mục có thể cải thiện tương thích, nhưng hãy kiểm tra tài liệu mới.",
+        "body": [
+          {
+            "t": "p",
+            "x": "Các trình đọc PDF áp dụng quy tắc cấu trúc khác nhau. Ứng dụng dễ chấp nhận hơn có thể mở tệp có chỉ mục lỗi trong khi ứng dụng khác từ chối."
+          },
+          {
+            "t": "h2",
+            "x": "Cần làm gì khi PDF mở ở một trình đọc nhưng không ở trình đọc khác"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Giữ lại bản gốc bị lỗi",
+                "x": "Lưu một bản sao trước khi sửa. Bạn có thể cần nó để xuất lại, khôi phục hoặc ghi nhận tình trạng tệp."
+              },
+              {
+                "h": "Mở Sửa PDF",
+                "x": "Thêm tệp vào [Sửa PDF](/tools/repair-pdf) trong tab trình duyệt."
+              },
+              {
+                "h": "Thử sửa ở mức tốt nhất",
+                "x": "Công cụ đọc các phần PDF có thể khôi phục và tạo bản sao với chỉ mục nội bộ được dựng lại."
+              },
+              {
+                "h": "Đọc thông báo kết quả",
+                "x": "Kiểm tra số trang được báo và chỉ tải bản đã sửa nếu kết quả hữu ích."
+              },
+              {
+                "h": "Kiểm tra các trang quan trọng",
+                "x": "Mở bằng [Trình đọc PDF](/tools/pdf-reader), đối chiếu văn bản, hình ảnh, chữ ký và tệp đính kèm với bản gốc hoặc nguồn đáng tin cậy."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "repair-pdf",
+            "x": "Thử sửa PDF riêng tư, có giới hạn ngay trong tab. Miễn phí, không đăng ký, không watermark."
+          },
+          {
+            "t": "h2",
+            "x": "Nên sửa, tải lại hay tạo lại PDF?"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Vấn đề",
+              "Việc nên làm đầu tiên",
+              "Lý do"
+            ],
+            "rows": [
+              [
+                "Tải xuống bị dừng giữa chừng",
+                "Tải bản mới từ nguồn",
+                "Không thể đoán chính xác các byte bị thiếu."
+              ],
+              [
+                "Chỉ mở được ở một số trình đọc",
+                "Thử Sửa PDF",
+                "Dựng lại chỉ mục có thể cải thiện tương thích cấu trúc."
+              ],
+              [
+                "Ảnh trang trắng hoặc hỏng",
+                "Xuất hoặc quét lại",
+                "Nội dung trang có thể đã bị hỏng."
+              ],
+              [
+                "Lỗi mật khẩu hoặc quyền",
+                "Mở khóa khi được phép",
+                "Sửa lỗi không vượt qua kiểm soát truy cập."
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Sửa cấu trúc PDF làm được gì"
+          },
+          {
+            "t": "p",
+            "x": "PDF chứa các đối tượng trang và chỉ mục nội bộ cho biết vị trí của chúng. Nếu chỉ mục hoặc dấu kết thúc bị lỗi, trình đọc nghiêm ngặt có thể từ chối tệp dù nội dung trang vẫn còn. Công cụ đọc phần còn khôi phục được, bỏ qua phần không đọc được và ghi cấu trúc mới. Cách này có thể giúp tệp mở lại, nhưng không khôi phục nội dung chưa được lưu hoặc đã bị phá hủy."
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao cần kiểm tra kết quả"
+          },
+          {
+            "t": "p",
+            "x": "Tải xuống thành công không chứng minh tài liệu đầy đủ. Bản sửa vẫn có thể có trang trắng, ảnh thiếu, dấu trang thay đổi hoặc mất tính năng tương tác. Hãy so số trang và trang quan trọng với nguồn đáng tin cậy. Với tài liệu đã ký, thuộc diện quản lý hoặc dùng làm bằng chứng, giữ bản gốc và theo quy trình chính thức; việc sửa không chứng minh tính xác thực."
+          },
+          {
+            "t": "h2",
+            "x": "Tệp lỗi vẫn cần được bảo vệ riêng tư"
+          },
+          {
+            "t": "p",
+            "x": "Hợp đồng, sao kê hoặc hồ sơ y tế bị lỗi vẫn nhạy cảm. Quy trình sửa tiêu chuẩn của PrintxPDF chạy trong trình duyệt, tránh tải tệp lên thường xuyên chỉ để thử sửa giới hạn. Lưu bản tải xuống ở nơi được phép và kiểm tra nội dung cùng người nhận trước khi chia sẻ."
+          },
+          {
+            "t": "h2",
+            "x": "Chọn công cụ tiếp theo phù hợp"
+          },
+          {
+            "t": "p",
+            "x": "Nếu PDF đã sửa mở được nhưng không tìm kiếm được, hãy tạo bản làm việc bằng [OCR PDF](/tools/ocr-pdf) và kiểm tra nhận dạng. Nếu tệp có thuộc tính không mong muốn, [Xóa siêu dữ liệu](/tools/remove-metadata) có thể chuẩn bị bản chia sẻ. Cả hai đều không khôi phục nội dung đã mất. Giữ bản gốc và bản xuất từ nguồn đến khi xác nhận tệp mới đầy đủ."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Vì sao PDF mở được ở trình đọc này nhưng không ở trình đọc khác?",
+            "a": "Các ứng dụng có thể diễn giải hoặc xác thực cấu trúc PDF khác nhau. Một trình đọc có thể chấp nhận chỉ mục lỗi trong khi trình đọc khác từ chối. Sửa cấu trúc có thể cải thiện tương thích, nhưng hãy kiểm tra các trang quan trọng."
           },
           {
             "q": "Việc sửa có khôi phục trang bị thiếu không?",
@@ -21590,6 +22508,159 @@
           {
             "q": "无需 Adobe 可以修复损坏的 PDF 吗？",
             "a": "可以。你可以在浏览器中尝试修复 PDF。请保留原件并检查副本；修复能力有限，无法保证恢复丢失的内容。"
+          },
+          {
+            "q": "修复能恢复缺失页面吗？",
+            "a": "不能。它可以重建仍可恢复的结构，但无法重新生成缺失的页面或字节。"
+          },
+          {
+            "q": "修复会修改原始文件吗？",
+            "a": "不会。工具会另行生成修复副本。检查结果前请保留原文件。"
+          },
+          {
+            "q": "修复 PDF 是否保护隐私？",
+            "a": "标准流程在浏览器标签页中运行，因此通常不会为了处理而上传文件。"
+          }
+        ],
+        "relatedTools": [
+          "repair-pdf",
+          "pdf-reader",
+          "ocr-pdf",
+          "remove-metadata",
+          "unlock-pdf"
+        ],
+        "relatedPosts": [
+          "prepare-pdf-for-long-term-archive",
+          "make-pdf-searchable",
+          "remove-metadata-from-pdf",
+          "will-this-file-still-open"
+        ]
+      },
+      {
+        "topic": "pdf-opens-in-one-reader-not-another",
+        "slug": "pdf-opens-in-one-reader-not-another",
+        "cluster": "archive",
+        "title": "为什么 PDF 在一个阅读器能打开，在另一个却不行",
+        "metaTitle": "为什么 PDF 在一个阅读器能打开，在另一个却不行",
+        "metaDescription": "为什么 PDF 在一个阅读器能打开，在另一个却不行. 在浏览器中免费修复，无需 Adobe、注册或水印。",
+        "primaryKeyword": "PDF 在一个阅读器能打开但另一个不行",
+        "secondaryKeywords": [
+          "修复损坏的 PDF",
+          "PDF 无法打开",
+          "修复 PDF 文件错误",
+          "恢复 PDF 文件"
+        ],
+        "answer": "不同 PDF 阅读器验证文件结构的方式并不完全相同。索引格式异常的文件可能在更宽容的应用中打开，却在另一个应用中失败。重建索引可能改善兼容性，但请务必检查修复后的文档。",
+        "body": [
+          {
+            "t": "p",
+            "x": "PDF 阅读器采用的结构规则各不相同。更宽容的应用可能接受索引异常的文件，而另一个应用会拒绝打开。"
+          },
+          {
+            "t": "h2",
+            "x": "PDF 在一个阅读器能打开而另一个不行时怎么办"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "保留损坏的原件",
+                "x": "修复前先保存副本，以便重新导出、恢复或记录文件原始状态。"
+              },
+              {
+                "h": "打开修复 PDF",
+                "x": "在浏览器标签页中，将文件添加到[修复 PDF](/tools/repair-pdf)。"
+              },
+              {
+                "h": "尝试有限修复",
+                "x": "工具读取可恢复的 PDF 部分，并生成内部索引已重建的副本。"
+              },
+              {
+                "h": "查看结果说明",
+                "x": "检查提示的页数；只有结果有用时才下载修复后的副本。"
+              },
+              {
+                "h": "检查重要页面",
+                "x": "用[PDF 阅读器](/tools/pdf-reader)打开，并与原件或可信来源核对文字、图片、签名和附件。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "repair-pdf",
+            "x": "在当前标签页尝试私密、有限的 PDF 修复。免费，无需注册，没有水印。"
+          },
+          {
+            "t": "h2",
+            "x": "应该修复、重新下载还是重新生成？"
+          },
+          {
+            "t": "table",
+            "head": [
+              "问题",
+              "优先采取的操作",
+              "原因"
+            ],
+            "rows": [
+              [
+                "下载中途停止",
+                "从来源重新下载副本",
+                "缺失的字节无法可靠地凭空补回。"
+              ],
+              [
+                "只能在部分阅读器中打开",
+                "尝试修复 PDF",
+                "重建索引可能改善结构兼容性。"
+              ],
+              [
+                "页面图像空白或损坏",
+                "重新导出或扫描",
+                "损坏可能发生在页面内容本身。"
+              ],
+              [
+                "密码或权限问题",
+                "在获得授权后解锁 PDF",
+                "修复不会绕过访问控制。"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "结构修复能做什么"
+          },
+          {
+            "t": "p",
+            "x": "PDF 包含页面对象和用于定位对象的内部索引。如果索引或文件结束标记格式错误，严格的阅读器可能拒绝打开文件，即使页面内容仍然存在。工具会读取可恢复部分，跳过无法读取的部分，并写入新结构。这可能让文件重新打开，但不能恢复从未保存或已经损坏的内容。"
+          },
+          {
+            "t": "h2",
+            "x": "为什么必须检查修复结果"
+          },
+          {
+            "t": "p",
+            "x": "下载完成并不代表文档完整。修复后的副本可能有空白页、图片缺失、书签变化或交互功能丢失。请将页数和重要页面与可信来源核对。对于已签名、受监管或作为证据的文件，请保留原件并遵循正式恢复流程；修复结果不能证明文件真实性。"
+          },
+          {
+            "t": "h2",
+            "x": "损坏文件同样需要保护隐私"
+          },
+          {
+            "t": "p",
+            "x": "损坏的合同、银行账单或医疗记录仍然敏感。PrintxPDF 的标准修复流程在浏览器中运行，通常无需为了这项有限修复而上传文件。请将下载内容保存在获准的位置，并在核实内容和收件人前不要分享。"
+          },
+          {
+            "t": "h2",
+            "x": "修复后选择合适的工具"
+          },
+          {
+            "t": "p",
+            "x": "如果修复后的 PDF 可以打开但无法搜索，可用[OCR PDF](/tools/ocr-pdf)创建工作副本并检查识别结果。如果文件含有不需要的属性，可用[删除元数据](/tools/remove-metadata)准备分享副本。这些操作都无法恢复丢失内容。在确认新文件完整前，请保留原件和来源导出的副本。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "为什么 PDF 在一个阅读器能打开，在另一个却不行？",
+            "a": "不同应用解析或验证 PDF 结构的方式可能不同。一个阅读器可能容忍有问题的索引，另一个则拒绝文件。结构修复可能改善兼容性，但请检查所有重要页面。"
           },
           {
             "q": "修复能恢复缺失页面吗？",
