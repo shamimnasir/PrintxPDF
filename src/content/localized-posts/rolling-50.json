@@ -143,6 +143,244 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-epub-to-pdf",
+        "slug": "convert-epub-to-pdf",
+        "title": "Cómo convertir EPUB a PDF y qué cambia",
+        "metaTitle": "Cómo convertir EPUB a PDF y qué cambia",
+        "metaDescription": "Convierte un EPUB a PDF gratis para imprimir o anotar. Elige tamaño, márgenes y letra; el archivo se procesa en servidor y se elimina al terminar.",
+        "keyword": "convertir EPUB a PDF",
+        "secondaryKeywords": [
+          "convertir EPUB a PDF",
+          "convertidor EPUB a PDF",
+          "tamaño de página EPUB PDF"
+        ],
+        "answer": "Para convertir EPUB a PDF, sube el libro sin DRM, elige A4 o Carta para imprimir o A5 para leer, define márgenes y tamaño de letra, y descarga el resultado. EPUB no tiene páginas fijas: el PDF crea una distribución estable, pero pierde el ajuste de texto del lector.",
+        "tool": "epub-to-pdf",
+        "ctaLabel": "Convertir EPUB a PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Un EPUB no contiene páginas fijas. Guarda capítulos, estilos e imágenes; la aplicación de lectura decide dónde se parten las líneas. Al convertir EPUB a PDF, eliges una vez el tamaño de página, los márgenes y la letra. Ganas páginas estables para imprimir o citar y pierdes el control del tamaño de texto y el ajuste automático."
+          },
+          {
+            "t": "h2",
+            "x": "Qué cambia cuando el libro deja de reajustarse"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Comportamiento",
+              "EPUB",
+              "PDF convertido"
+            ],
+            "rows": [
+              [
+                "Tamaño de texto",
+                "El lector lo cambia y las líneas se reajustan",
+                "Queda fijo; puedes ampliar la página"
+              ],
+              [
+                "Números de página",
+                "La app calcula pantallas, no páginas estables",
+                "Páginas fijas que se pueden citar"
+              ],
+              [
+                "Impresión",
+                "El resultado depende de la app",
+                "La página tiene un diseño definido"
+              ],
+              [
+                "Novela de 300 páginas",
+                "Suele ocupar 300 KB–2 MB",
+                "Suele ocupar 1–5 MB"
+              ],
+              [
+                "Modo oscuro",
+                "La app cambia colores del texto y fondo",
+                "El visor puede invertir toda la página"
+              ],
+              [
+                "Notas al pie",
+                "A menudo son ventanas emergentes",
+                "Enlaces a la nota al pie del capítulo o final"
+              ],
+              [
+                "Lector de 6 pulgadas",
+                "Formato nativo y cómodo",
+                "Puede quedar estrecho y exigir desplazamiento"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Elige primero el tamaño de página"
+          },
+          {
+            "t": "p",
+            "x": "Usa A4 o Carta para imprimir y A5 o 6 × 9 pulgadas para leer en pantalla."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Tamaño",
+              "Dimensiones",
+              "Palabras aprox. por página",
+              "Úsalo para"
+            ],
+            "rows": [
+              [
+                "A4",
+                "210 × 297 mm",
+                "500",
+                "Imprimir fuera de Norteamérica"
+              ],
+              [
+                "Carta",
+                "216 × 279 mm",
+                "480",
+                "Imprimir en Norteamérica"
+              ],
+              [
+                "Comercial 6 × 9 in",
+                "152 × 229 mm",
+                "300",
+                "Aspecto de libro de bolsillo"
+              ],
+              [
+                "A5",
+                "148 × 210 mm",
+                "280",
+                "Leer en una tableta pequeña"
+              ],
+              [
+                "B5",
+                "176 × 250 mm",
+                "380",
+                "Equilibrar impresión y pantalla"
+              ]
+            ]
+          },
+          {
+            "t": "note",
+            "x": "A4 permite muchas palabras por página y resulta práctico para papel, pero cansa al leer en pantalla. Para una novela, A5 o 6 × 9 pulgadas suele ser más cómodo."
+          },
+          {
+            "t": "h2",
+            "x": "Cómo convertir un EPUB paso a paso"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Comprueba si el libro tiene DRM",
+                "x": "Las tiendas suelen proteger los ebooks. Si el archivo solo abre después de iniciar sesión, puede estar protegido. [Qué es el DRM de ebooks](/blog/ebooks/ebook-drm-explained) explica las señales. No intentes quitar protecciones."
+              },
+              {
+                "h": "Abre EPUB a PDF",
+                "x": "Ve a [EPUB a PDF](/tools/epub-to-pdf). Esta conversión usa un servidor: el archivo se transmite por conexión segura, se convierte y se elimina al finalizar. Acepta archivos de hasta 100 MB y tarda como máximo dos minutos por trabajo."
+              },
+              {
+                "h": "Elige el tamaño de página",
+                "x": "Usa A4 o Carta para imprimir y A5 o 6 × 9 pulgadas para leer en pantalla."
+              },
+              {
+                "h": "Ajusta márgenes y letra",
+                "x": "Empieza con márgenes de 20 mm y letra de 11 pt. Para una carpeta de anillas, aumenta el margen interior a 25 mm."
+              },
+              {
+                "h": "Convierte y revisa tres puntos",
+                "x": "Comprueba la portada, el inicio del capítulo dos y el índice. Ahí se notan portadas estiradas, títulos separados y enlaces del índice que dejaron de funcionar."
+              },
+              {
+                "h": "Añade números de página",
+                "x": "El EPUB no tiene páginas fijas. Usa [Añadir números de página](/tools/page-numbers) para que una copia impresa sea fácil de consultar."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "epub-to-pdf",
+            "x": "Convierte un EPUB compatible en PDF con el tamaño de página que elijas."
+          },
+          {
+            "t": "note",
+            "x": "Las conversiones en servidor consumen la cuota mensual porque usan equipos de PrintxPDF. Las cuentas gratuitas incluyen cinco trabajos al mes; Pro y Lifetime, 300; una clave API, 5.000. Consulta los límites vigentes en [precios](/pricing)."
+          },
+          {
+            "t": "h2",
+            "x": "Qué se pierde al convertir EPUB a PDF"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "**Tamaño de texto ajustable.** En EPUB, quien necesita letra grande puede aumentarla y el texto se reorganiza. En PDF hay que ampliar y desplazarse.",
+              "**Notas emergentes.** Se convierten en enlaces y debes volver al lugar de lectura; en papel pueden perderse.",
+              "**Fuentes incrustadas.** Pueden sustituirse si el convertidor no las admite.",
+              "**Estilos para modo oscuro y pantalla.** Un PDF no cambia de diseño según el dispositivo.",
+              "**Audio y vídeo.** EPUB 3 puede incluirlos; PDF no los conserva.",
+              "**Sincronización de lectura.** La posición entre dispositivos pertenece a la app, no al archivo."
+            ]
+          },
+          {
+            "t": "warn",
+            "x": "Si el lector necesita letra grande, conserva el EPUB y envía el PDF solo a imprimir. Un PDF no puede ampliar el texto y reajustarlo como un ebook refluible."
+          },
+          {
+            "t": "h2",
+            "x": "Los EPUB de diseño fijo se convierten casi página por página"
+          },
+          {
+            "t": "p",
+            "x": "Los EPUB de recetas, cómics, fotografía y libros infantiles pueden tener diseño fijo: cada página ya tiene tamaño y distribución. Su conversión es más directa. Cambia el tamaño de letra en la app: si se reajusta el texto, es refluible; si la página completa solo se escala, es de diseño fijo."
+          },
+          {
+            "t": "h2",
+            "x": "Por qué el PDF puede ser más grande"
+          },
+          {
+            "t": "p",
+            "x": "Una imagen que el EPUB reutiliza puede repetirse en el PDF, y las fuentes completas pueden ocupar espacio. Usa [Comprimir PDF](/tools/compress-pdf) para reducir el archivo antes de enviarlo."
+          },
+          {
+            "t": "cta",
+            "tool": "compress-pdf",
+            "x": "Reduce el tamaño del libro convertido antes de enviarlo por correo o imprimirlo."
+          },
+          {
+            "t": "h2",
+            "x": "Conserva el EPUB original"
+          },
+          {
+            "t": "p",
+            "x": "Conserva el EPUB como original y considera el PDF un archivo de salida. Volver de PDF a EPUB exige adivinar capítulos y encabezados; suele quedar peor que la fuente. Para leer el resultado, abre el [Lector de PDF](/tools/pdf-reader), que funciona localmente en tu pestaña: el archivo no se sube. Si solo necesitas el texto, usa [PDF a texto](/tools/pdf-to-text)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Cómo convierto EPUB a PDF gratis?",
+            "a": "Sube el EPUB sin DRM, elige tamaño de página y márgenes, y descarga el PDF. La herramienta EPUB a PDF procesa el archivo en un servidor por conexión segura y lo elimina cuando termina. Las cuentas gratuitas incluyen cinco conversiones de servidor al mes."
+          },
+          {
+            "q": "¿Por qué mi EPUB no tiene números de página?",
+            "a": "EPUB guarda texto y estilos, no páginas fijas. La aplicación divide el texto en pantallas según el tamaño de letra y dispositivo. Al cambiar la letra cambia el número de pantallas. PDF crea páginas estables."
+          },
+          {
+            "q": "¿Qué tamaño de página debo elegir?",
+            "a": "Elige A4 o Carta para imprimir. Para leer en una pantalla, prueba A5 o 6 × 9 pulgadas; A4 puede dejar líneas muy largas."
+          },
+          {
+            "q": "¿Convertir EPUB a PDF reduce la calidad?",
+            "a": "El texto sigue siendo texto nítido, pero se pierde el ajuste de fuente, las notas emergentes y el contenido multimedia. Algunas fuentes incrustadas pueden sustituirse."
+          },
+          {
+            "q": "¿Puedo convertir un ebook prestado de una biblioteca?",
+            "a": "Por lo general, no. Muchos préstamos digitales están protegidos y vinculados a tu cuenta. Un EPUB sin DRM que tengas derecho a convertir sí puede procesarse."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -286,6 +524,244 @@
           {
             "q": "O PDF ficará igual à tela do Kindle?",
             "a": "Não. O conversor cria páginas A4 fixas. Confira capítulos, imagens e tabelas porque o texto pode refluir de outra forma."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-epub-to-pdf",
+        "slug": "convert-epub-to-pdf",
+        "title": "Como converter EPUB para PDF e o que muda",
+        "metaTitle": "Como converter EPUB para PDF e o que muda",
+        "metaDescription": "Converta EPUB para PDF grátis para imprimir ou anotar. Escolha página e margens; arquivo processado no servidor e apagado ao terminar.",
+        "keyword": "converter EPUB para PDF",
+        "secondaryKeywords": [
+          "converter EPUB para PDF",
+          "conversor EPUB para PDF",
+          "tamanho da página EPUB PDF"
+        ],
+        "answer": "Para converter EPUB para PDF, envie um livro sem DRM, escolha A4 ou Carta para imprimir ou A5 para ler, ajuste margens e fonte e baixe o arquivo. EPUB não tem páginas fixas: o PDF cria uma diagramação estável, mas perde o ajuste de texto do leitor.",
+        "tool": "epub-to-pdf",
+        "ctaLabel": "Converter EPUB para PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "Um EPUB não tem páginas fixas. Ele guarda capítulos, estilos e imagens; o aplicativo de leitura decide onde as linhas quebram. Ao converter EPUB para PDF, você escolhe o tamanho da página, as margens e a fonte de uma vez. Ganha páginas estáveis para imprimir ou citar e perde o controle de fonte do leitor e o ajuste automático."
+          },
+          {
+            "t": "h2",
+            "x": "O que muda quando o livro deixa de se ajustar"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Comportamento",
+              "EPUB",
+              "PDF convertido"
+            ],
+            "rows": [
+              [
+                "Tamanho do texto",
+                "O leitor muda e as linhas se reorganizam",
+                "Fica fixo; você amplia a página"
+              ],
+              [
+                "Números de página",
+                "O app calcula telas, sem páginas estáveis",
+                "Páginas fixas que podem ser citadas"
+              ],
+              [
+                "Impressão",
+                "O resultado depende do app",
+                "A página tem layout definido"
+              ],
+              [
+                "Romance de 300 páginas",
+                "Geralmente 300 KB–2 MB",
+                "Geralmente 1–5 MB"
+              ],
+              [
+                "Modo noturno",
+                "O app troca as cores do texto e fundo",
+                "O leitor pode inverter a página toda"
+              ],
+              [
+                "Notas de rodapé",
+                "Muitas vezes são pop-ups",
+                "Links para a nota no capítulo ou no fim"
+              ],
+              [
+                "Leitor de 6 polegadas",
+                "Formato nativo e confortável",
+                "Pode ficar apertado e exigir rolagem"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Escolha o tamanho da página primeiro"
+          },
+          {
+            "t": "p",
+            "x": "Use A4 ou Carta para imprimir e A5 ou 15 × 23 cm para ler na tela."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Tamanho",
+              "Dimensões",
+              "Palavras aprox. por página",
+              "Use para"
+            ],
+            "rows": [
+              [
+                "A4",
+                "210 × 297 mm",
+                "500",
+                "Imprimir fora da América do Norte"
+              ],
+              [
+                "Carta",
+                "216 × 279 mm",
+                "480",
+                "Imprimir na América do Norte"
+              ],
+              [
+                "Comercial 15 × 23 cm",
+                "152 × 229 mm",
+                "300",
+                "Aparência de livro de bolso"
+              ],
+              [
+                "A5",
+                "148 × 210 mm",
+                "280",
+                "Ler em tablet pequeno"
+              ],
+              [
+                "B5",
+                "176 × 250 mm",
+                "380",
+                "Equilibrar impressão e tela"
+              ]
+            ]
+          },
+          {
+            "t": "note",
+            "x": "A4 comporta muitas palavras por página e é prático para imprimir, mas cansa na tela. Para um romance, A5 ou 15 × 23 cm costuma ser mais confortável."
+          },
+          {
+            "t": "h2",
+            "x": "Como converter EPUB para PDF passo a passo"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Confira se o livro tem DRM",
+                "x": "Lojas costumam proteger ebooks. Se o arquivo só abre após login, pode ter proteção. [Entenda o DRM de ebooks](/blog/ebooks/ebook-drm-explained) mostra os sinais. Não tente remover proteções."
+              },
+              {
+                "h": "Abra EPUB para PDF",
+                "x": "Acesse [EPUB para PDF](/tools/epub-to-pdf). Essa conversão usa um servidor: o arquivo é enviado por conexão segura, convertido e apagado ao terminar. O limite é 100 MB e dois minutos por tarefa."
+              },
+              {
+                "h": "Escolha o tamanho da página",
+                "x": "Use A4 ou Carta para imprimir e A5 ou 15 × 23 cm para ler na tela."
+              },
+              {
+                "h": "Ajuste margens e fonte",
+                "x": "Comece com margens de 20 mm e fonte de 11 pt. Para fichário, aumente a margem interna para 25 mm."
+              },
+              {
+                "h": "Converta e confira três pontos",
+                "x": "Revise a capa, o início do capítulo dois e o sumário. Eles revelam capas esticadas, títulos isolados e links do índice que deixaram de funcionar."
+              },
+              {
+                "h": "Adicione números de página",
+                "x": "O EPUB não tem páginas fixas. Use [Números de página](/tools/page-numbers) para consultar uma cópia impressa."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "epub-to-pdf",
+            "x": "Converta um EPUB compatível em PDF no tamanho de página que você escolher."
+          },
+          {
+            "t": "note",
+            "x": "Conversões no servidor usam a cota mensal porque rodam nos equipamentos do PrintxPDF. Contas grátis incluem cinco tarefas por mês; Pro e Lifetime, 300; uma chave de API, 5.000. Veja os limites atuais em [preços](/pricing)."
+          },
+          {
+            "t": "h2",
+            "x": "O que se perde na conversão"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "**Fonte ajustável.** No EPUB, quem precisa de letras grandes pode aumentá-las e o texto se reorganiza. No PDF, é preciso ampliar e rolar.",
+              "**Notas pop-up.** Viram links; você precisa voltar ao ponto de leitura e, no papel, pode perdê-las.",
+              "**Fontes incorporadas.** Podem ser substituídas se o conversor não as aceitar.",
+              "**Estilos para modo escuro e tela.** O PDF não muda o layout conforme o dispositivo.",
+              "**Áudio e vídeo.** O EPUB 3 pode incluir mídia; o PDF não a mantém.",
+              "**Sincronização de leitura.** A posição entre dispositivos pertence ao app, não ao arquivo."
+            ]
+          },
+          {
+            "t": "warn",
+            "x": "Se a pessoa precisa de letras grandes, mantenha o EPUB para leitura e envie o PDF apenas para impressão. O PDF não aumenta o texto com reajuste como um ebook refluível."
+          },
+          {
+            "t": "h2",
+            "x": "EPUB de layout fixo converte quase página por página"
+          },
+          {
+            "t": "p",
+            "x": "EPUBs de receitas, quadrinhos, fotografia e livros infantis podem ter layout fixo: cada página já tem tamanho e composição. A conversão é mais direta. Mude a fonte no app: se o texto se reorganizar, é refluível; se a página apenas ampliar, o layout é fixo."
+          },
+          {
+            "t": "h2",
+            "x": "Por que o PDF pode ficar maior"
+          },
+          {
+            "t": "p",
+            "x": "Uma imagem reutilizada no EPUB pode se repetir no PDF, e fontes completas ocupam espaço. Use [Comprimir PDF](/tools/compress-pdf) antes de enviar o arquivo."
+          },
+          {
+            "t": "cta",
+            "tool": "compress-pdf",
+            "x": "Reduza o livro convertido antes de enviar por e-mail ou imprimir."
+          },
+          {
+            "t": "h2",
+            "x": "Guarde o EPUB original"
+          },
+          {
+            "t": "p",
+            "x": "Guarde o EPUB como original e trate o PDF como arquivo de saída. Voltar de PDF para EPUB exige adivinhar capítulos e cabeçalhos, e o resultado costuma ser pior. Para ler, use o [Leitor de PDF](/tools/pdf-reader), que funciona localmente na aba sem enviar o arquivo. Se precisar só do texto, use [PDF para texto](/tools/pdf-to-text)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Como converter EPUB para PDF grátis?",
+            "a": "Envie um EPUB sem DRM, escolha o tamanho da página e as margens e baixe o PDF. A ferramenta EPUB para PDF processa o arquivo no servidor por conexão segura e o apaga ao terminar. Contas grátis têm cinco conversões no servidor por mês."
+          },
+          {
+            "q": "Por que meu EPUB não tem números de página?",
+            "a": "EPUB guarda texto e estilos, não páginas fixas. O leitor divide o texto em telas conforme a fonte e o dispositivo. Ao mudar a fonte, muda a quantidade de telas. PDF cria páginas estáveis."
+          },
+          {
+            "q": "Qual tamanho devo escolher?",
+            "a": "Escolha A4 ou Carta para imprimir. Para ler na tela, experimente A5 ou 15 × 23 cm; A4 pode criar linhas longas demais."
+          },
+          {
+            "q": "Converter EPUB para PDF reduz a qualidade?",
+            "a": "O texto continua nítido, mas você perde ajuste de fonte, notas pop-up e mídia. Algumas fontes incorporadas também podem ser substituídas."
+          },
+          {
+            "q": "Posso converter um ebook emprestado da biblioteca?",
+            "a": "Geralmente, não. Muitos empréstimos digitais têm proteção e ficam vinculados à conta. Um EPUB sem DRM que você tenha direito de converter pode ser processado."
           }
         ],
         "published": "2026-11-15",
@@ -437,6 +913,244 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-epub-to-pdf",
+        "slug": "convert-epub-to-pdf",
+        "title": "EPUB को PDF में कैसे बदलें और क्या बदलता है",
+        "metaTitle": "EPUB को PDF में कैसे बदलें और क्या बदलता है",
+        "metaDescription": "EPUB को PDF में मुफ़्त बदलें। पेज आकार और मार्जिन चुनें; फ़ाइल सुरक्षित सर्वर पर प्रोसेस होकर काम के बाद मिटती है।",
+        "keyword": "EPUB को PDF में बदलें",
+        "secondaryKeywords": [
+          "EPUB को PDF में बदलें",
+          "EPUB PDF कन्वर्टर",
+          "EPUB PDF पेज आकार"
+        ],
+        "answer": "EPUB को PDF में बदलने के लिए DRM-मुक्त किताब अपलोड करें, छपाई के लिए A4 या पढ़ने के लिए A5 चुनें, मार्जिन और फ़ॉन्ट तय करें और PDF डाउनलोड करें। EPUB में स्थायी पेज नहीं होते; PDF स्थिर लेआउट देता है, लेकिन पाठ का आकार बदलने की सुविधा खत्म हो जाती है।",
+        "tool": "epub-to-pdf",
+        "ctaLabel": "EPUB से PDF करें",
+        "body": [
+          {
+            "t": "p",
+            "x": "EPUB में स्थायी पेज नहीं होते। इसमें अध्याय, स्टाइल और चित्र होते हैं; रीडर ऐप तय करता है कि पंक्तियाँ कहाँ टूटें। EPUB को PDF में बदलते समय आप पेज आकार, मार्जिन और फ़ॉन्ट एक बार चुनते हैं। इससे छपाई या उद्धरण के लिए स्थिर पेज मिलते हैं, लेकिन रीडर में फ़ॉन्ट आकार बदलने और पाठ को फिर से बहने देने की सुविधा नहीं रहती।"
+          },
+          {
+            "t": "h2",
+            "x": "किताब का लेआउट स्थिर होने पर क्या बदलता है"
+          },
+          {
+            "t": "table",
+            "head": [
+              "विशेषता",
+              "EPUB",
+              "बना हुआ PDF"
+            ],
+            "rows": [
+              [
+                "पाठ का आकार",
+                "रीडर बदल सकता है, पंक्तियाँ फिर सजती हैं",
+                "स्थिर; पेज ज़ूम करें"
+              ],
+              [
+                "पेज नंबर",
+                "ऐप स्क्रीन गिनता है, पेज स्थिर नहीं",
+                "स्थिर पेज जिनका उद्धरण दिया जा सकता है"
+              ],
+              [
+                "प्रिंट",
+                "ऐप के हिसाब से नतीजा बदलता है",
+                "पेज का लेआउट तय रहता है"
+              ],
+              [
+                "300 पेज का उपन्यास",
+                "आम तौर पर 300 KB–2 MB",
+                "आम तौर पर 1–5 MB"
+              ],
+              [
+                "नाइट मोड",
+                "ऐप रंग बदलता है",
+                "रीडर पूरा पेज उलट सकता है"
+              ],
+              [
+                "फुटनोट",
+                "अक्सर पॉप-अप में खुलते हैं",
+                "अध्याय या पुस्तक के अंत में लिंक"
+              ],
+              [
+                "6-इंच रीडर",
+                "मूल और आरामदायक",
+                "तंग लग सकता है; पैन करना होगा"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "सबसे पहले पेज आकार चुनें"
+          },
+          {
+            "t": "p",
+            "x": "प्रिंट के लिए A4 या US Letter और स्क्रीन के लिए A5 या 6 × 9 इंच चुनें।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "पेज आकार",
+              "माप",
+              "प्रति पेज अनुमानित शब्द",
+              "कब चुनें"
+            ],
+            "rows": [
+              [
+                "A4",
+                "210 × 297 mm",
+                "500",
+                "उत्तरी अमेरिका के बाहर प्रिंट"
+              ],
+              [
+                "US Letter",
+                "216 × 279 mm",
+                "480",
+                "उत्तरी अमेरिका में प्रिंट"
+              ],
+              [
+                "ट्रेड 6 × 9 इंच",
+                "152 × 229 mm",
+                "300",
+                "पेपरबैक जैसा रूप"
+              ],
+              [
+                "A5",
+                "148 × 210 mm",
+                "280",
+                "छोटे टैबलेट पर पढ़ना"
+              ],
+              [
+                "B5",
+                "176 × 250 mm",
+                "380",
+                "प्रिंट और स्क्रीन के बीच संतुलन"
+              ]
+            ]
+          },
+          {
+            "t": "note",
+            "x": "A4 में एक पेज पर बहुत शब्द आते हैं; यह प्रिंट में अच्छा, स्क्रीन पर थकाने वाला है। उपन्यास पढ़ने के लिए A5 या 6 × 9 इंच अधिक आरामदायक हो सकता है।"
+          },
+          {
+            "t": "h2",
+            "x": "EPUB को PDF में बदलने के चरण"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "जाँचें कि किताब कॉपी-सुरक्षित तो नहीं",
+                "x": "दुकानें अक्सर ebooks पर DRM लगाती हैं। यदि फ़ाइल केवल साइन इन के बाद खुलती है तो सुरक्षा हो सकती है। [Ebook DRM के बारे में](/blog/ebooks/ebook-drm-explained) संकेत बताता है। सुरक्षा हटाने की कोशिश न करें।"
+              },
+              {
+                "h": "EPUB से PDF खोलें",
+                "x": "[EPUB से PDF](/tools/epub-to-pdf) पर जाएँ। यह कन्वर्ज़न सर्वर पर होता है: फ़ाइल सुरक्षित कनेक्शन से भेजी जाती है, बदली जाती है और काम पूरा होते ही मिटा दी जाती है। सीमा 100 MB और हर काम के लिए दो मिनट है।"
+              },
+              {
+                "h": "पेज आकार चुनें",
+                "x": "प्रिंट के लिए A4 या US Letter और स्क्रीन के लिए A5 या 6 × 9 इंच चुनें।"
+              },
+              {
+                "h": "मार्जिन और फ़ॉन्ट तय करें",
+                "x": "20 mm मार्जिन और 11 pt फ़ॉन्ट से शुरू करें। बाइंडर के लिए अंदर का मार्जिन 25 mm करें।"
+              },
+              {
+                "h": "कन्वर्ट करें और तीन जगह जाँचें",
+                "x": "कवर, दूसरे अध्याय की शुरुआत और विषय-सूची देखें। इससे खिंचा हुआ कवर, अकेला छूटा शीर्षक और टूटे हुए इंडेक्स लिंक दिख जाते हैं।"
+              },
+              {
+                "h": "पेज नंबर जोड़ें",
+                "x": "EPUB में स्थायी पेज नहीं होते। छपे पन्नों को ढूँढने के लिए [पेज नंबर जोड़ें](/tools/page-numbers) इस्तेमाल करें।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "epub-to-pdf",
+            "x": "समर्थित EPUB को अपनी चुनी पेज सेटिंग के साथ PDF में बदलें।"
+          },
+          {
+            "t": "note",
+            "x": "सर्वर कन्वर्ज़न मासिक कोटा इस्तेमाल करते हैं क्योंकि ये PrintxPDF के कंप्यूटर पर चलते हैं। मुफ़्त खाते में महीने के पाँच काम, Pro और Lifetime में 300, और API key में 5,000 हैं। [मौजूदा कीमतें](/pricing) देखें।"
+          },
+          {
+            "t": "h2",
+            "x": "कन्वर्ज़न में क्या नहीं रहता"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "**बदलने योग्य फ़ॉन्ट।** EPUB में बड़ा फ़ॉन्ट चुनने पर पाठ फिर सजता है। PDF में ज़ूम और स्क्रॉल करना पड़ता है।",
+              "**पॉप-अप फुटनोट।** ये लिंक बन जाते हैं; पढ़ने की जगह लौटनी पड़ती है। कागज़ पर इन्हें खो सकते हैं।",
+              "**एम्बेडेड फ़ॉन्ट।** कन्वर्टर न पढ़ पाए तो फ़ॉन्ट बदल सकता है।",
+              "**नाइट मोड और स्क्रीन स्टाइल।** PDF डिवाइस के अनुसार लेआउट नहीं बदलता।",
+              "**ऑडियो और वीडियो।** EPUB 3 में ये हो सकते हैं; PDF इन्हें नहीं रखता।",
+              "**रीडिंग सिंक।** डिवाइसों के बीच पढ़ने की स्थिति ऐप में होती है, फ़ाइल में नहीं।"
+            ]
+          },
+          {
+            "t": "warn",
+            "x": "यदि पाठक को बड़ा अक्षर चाहिए तो EPUB रखें और PDF केवल प्रिंट के लिए दें। PDF बड़े अक्षर के अनुसार पाठ को फिर से नहीं बहा सकता।"
+          },
+          {
+            "t": "h2",
+            "x": "फिक्स्ड-लेआउट EPUB लगभग पेज-दर-पेज बदलता है"
+          },
+          {
+            "t": "p",
+            "x": "कुकबुक, कॉमिक, फ़ोटोग्राफ़ी और बच्चों की किताबों में फिक्स्ड लेआउट हो सकता है: हर पेज का आकार और डिज़ाइन पहले से तय होता है। ऐप में फ़ॉन्ट बदलें। पाठ फिर सजता है तो ebook रीफ्लोबल है; केवल पूरा पेज बड़ा हो तो फिक्स्ड लेआउट है।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF फ़ाइल बड़ी क्यों हो सकती है"
+          },
+          {
+            "t": "p",
+            "x": "EPUB में दोबारा इस्तेमाल की गई तस्वीर PDF में कई बार जुड़ सकती है और पूरे फ़ॉन्ट जगह लेते हैं। भेजने से पहले [PDF कम्प्रेस करें](/tools/compress-pdf)।"
+          },
+          {
+            "t": "cta",
+            "tool": "compress-pdf",
+            "x": "ईमेल या प्रिंट से पहले कन्वर्ट की हुई किताब का आकार घटाएँ।"
+          },
+          {
+            "t": "h2",
+            "x": "मूल EPUB सुरक्षित रखें"
+          },
+          {
+            "t": "p",
+            "x": "EPUB को मूल फ़ाइल रखें और PDF को आउटपुट कॉपी मानें। PDF को वापस EPUB करने में अध्याय और हेडर का अनुमान लगाना पड़ता है, इसलिए नतीजा कमजोर हो सकता है। पढ़ने के लिए [PDF Reader](/tools/pdf-reader) खोलें; यह टैब में स्थानीय रूप से चलता है, फ़ाइल अपलोड नहीं होती। केवल पाठ चाहिए तो [PDF से टेक्स्ट](/tools/pdf-to-text) लें।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "EPUB को PDF में मुफ़्त कैसे बदलें?",
+            "a": "DRM-मुक्त EPUB अपलोड करें, पेज आकार और मार्जिन चुनें और PDF डाउनलोड करें। EPUB से PDF टूल सुरक्षित कनेक्शन से सर्वर पर फ़ाइल प्रोसेस करके काम पूरा होने पर मिटाता है। मुफ़्त खाते में हर महीने पाँच सर्वर कन्वर्ज़न मिलते हैं।"
+          },
+          {
+            "q": "मेरे EPUB में पेज नंबर क्यों नहीं हैं?",
+            "a": "EPUB में स्थायी पेज नहीं, केवल पाठ और स्टाइल होते हैं। ऐप फ़ॉन्ट और डिवाइस के हिसाब से स्क्रीन बनाता है। फ़ॉन्ट बदलने से स्क्रीन की संख्या बदलती है। PDF स्थिर पेज बनाता है।"
+          },
+          {
+            "q": "EPUB कन्वर्ज़न के लिए कौन सा पेज आकार चुनूँ?",
+            "a": "प्रिंट के लिए A4 या US Letter चुनें। स्क्रीन पर पढ़ने के लिए A5 या 6 × 9 इंच बेहतर हो सकता है; A4 में पंक्तियाँ बहुत लंबी हो सकती हैं।"
+          },
+          {
+            "q": "क्या EPUB को PDF करने से गुणवत्ता घटती है?",
+            "a": "पाठ साफ रहता है, पर फ़ॉन्ट बदलने, रीफ्लो, पॉप-अप फुटनोट और ऑडियो या वीडियो का व्यवहार खो जाता है। कुछ फ़ॉन्ट बदले भी जा सकते हैं।"
+          },
+          {
+            "q": "क्या लाइब्रेरी से उधार की ebook बदल सकता हूँ?",
+            "a": "अक्सर नहीं। डिजिटल लाइब्रेरी पुस्तकें आम तौर पर DRM से सुरक्षित और खाते से जुड़ी होती हैं। जिस DRM-मुक्त EPUB को बदलने का अधिकार हो, वह काम कर सकता है।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -580,6 +1294,244 @@
           {
             "q": "هل سيبدو PDF تمامًا مثل شاشة Kindle؟",
             "a": "لا. ينشئ المحول صفحات A4 ثابتة. راجع الفصول والصور والجداول لأن النص قد ينساب بشكل مختلف."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-epub-to-pdf",
+        "slug": "convert-epub-to-pdf",
+        "title": "كيفية تحويل EPUB إلى PDF وما الذي يتغير",
+        "metaTitle": "كيفية تحويل EPUB إلى PDF وما الذي يتغير",
+        "metaDescription": "حوّل EPUB إلى PDF مجانًا للطباعة أو التعليق. اختر حجم الصفحة والهوامش؛ يُعالج الملف على خادم آمن ثم يُحذف.",
+        "keyword": "تحويل EPUB إلى PDF",
+        "secondaryKeywords": [
+          "تحويل EPUB إلى PDF",
+          "محول EPUB إلى PDF",
+          "حجم صفحة EPUB PDF"
+        ],
+        "answer": "لتحويل EPUB إلى PDF، ارفع كتابًا خاليًا من DRM، واختر A4 أو Letter للطباعة أو A5 للقراءة، ثم اضبط الهوامش وحجم الخط ونزّل الملف. لا يحتوي EPUB على صفحات ثابتة؛ ينشئ PDF تخطيطًا ثابتًا لكنه يفقد مرونة تغيير الخط وإعادة التدفق.",
+        "tool": "epub-to-pdf",
+        "ctaLabel": "تحويل EPUB إلى PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "لا يحتوي EPUB على صفحات ثابتة. فهو يخزّن الفصول والأنماط والصور، ويحدد تطبيق القراءة مواضع التفاف السطور. عند تحويله إلى PDF تختار حجم الصفحة والهوامش والخط مرة واحدة. تحصل على صفحات ثابتة للطباعة أو الاقتباس، لكن القارئ لا يستطيع تغيير حجم النص أو إعادة تدفقه بحرية."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي يتغير عندما يصبح تخطيط الكتاب ثابتًا"
+          },
+          {
+            "t": "table",
+            "head": [
+              "الميزة",
+              "EPUB",
+              "PDF الناتج"
+            ],
+            "rows": [
+              [
+                "حجم النص",
+                "يمكن للقارئ تغييره وتلتف السطور من جديد",
+                "ثابت؛ يمكنك تكبير الصفحة"
+              ],
+              [
+                "أرقام الصفحات",
+                "يحسب التطبيق الشاشات، لا صفحات ثابتة",
+                "صفحات ثابتة يمكن الاستشهاد بها"
+              ],
+              [
+                "الطباعة",
+                "تعتمد النتيجة على التطبيق",
+                "تخطيط الصفحة محدد"
+              ],
+              [
+                "رواية من 300 صفحة",
+                "عادةً 300 كيلوبايت–2 ميغابايت",
+                "عادةً 1–5 ميغابايت"
+              ],
+              [
+                "الوضع الليلي",
+                "يبدل التطبيق ألوان النص والخلفية",
+                "قد يعكس العارض ألوان الصفحة كلها"
+              ],
+              [
+                "الحواشي",
+                "غالبًا تظهر في نافذة منبثقة",
+                "روابط إلى نهاية الفصل أو الكتاب"
+              ],
+              [
+                "قارئ بحجم 6 بوصات",
+                "تنسيق أصلي ومريح",
+                "قد يكون ضيقًا ويتطلب تحريك الصفحة"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "اختر حجم الصفحة أولًا"
+          },
+          {
+            "t": "p",
+            "x": "استخدم A4 أو Letter للطباعة، وA5 أو 6 × 9 بوصات للقراءة على الشاشة."
+          },
+          {
+            "t": "table",
+            "head": [
+              "الحجم",
+              "الأبعاد",
+              "كلمات تقريبًا في الصفحة",
+              "مناسب لـ"
+            ],
+            "rows": [
+              [
+                "A4",
+                "210 × 297 مم",
+                "500",
+                "الطباعة خارج أمريكا الشمالية"
+              ],
+              [
+                "US Letter",
+                "216 × 279 مم",
+                "480",
+                "الطباعة في أمريكا الشمالية"
+              ],
+              [
+                "تجاري 6 × 9 بوصات",
+                "152 × 229 مم",
+                "300",
+                "مظهر الكتاب الورقي"
+              ],
+              [
+                "A5",
+                "148 × 210 مم",
+                "280",
+                "القراءة على جهاز لوحي صغير"
+              ],
+              [
+                "B5",
+                "176 × 250 مم",
+                "380",
+                "موازنة الطباعة والقراءة على الشاشة"
+              ]
+            ]
+          },
+          {
+            "t": "note",
+            "x": "يتسع A4 لكلمات كثيرة وهو عملي للطباعة، لكنه متعب على الشاشة. قد يكون A5 أو 6 × 9 بوصات أريح لقراءة الرواية."
+          },
+          {
+            "t": "h2",
+            "x": "خطوات تحويل EPUB إلى PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "تحقق من خلو الكتاب من DRM",
+                "x": "تحمي المتاجر الكتب الإلكترونية غالبًا. إذا لم يفتح الملف إلا بعد تسجيل الدخول فقد يكون محميًا. يشرح [دليل DRM للكتب الإلكترونية](/blog/ebooks/ebook-drm-explained) العلامات. لا تحاول تجاوز الحماية."
+              },
+              {
+                "h": "افتح أداة EPUB إلى PDF",
+                "x": "انتقل إلى [EPUB إلى PDF](/tools/epub-to-pdf). تتم هذه المعالجة على خادم: يُرسل الملف عبر اتصال آمن ويُحوّل ثم يُحذف فور اكتمال المهمة. الحد الأقصى 100 ميغابايت ودقيقتان لكل مهمة."
+              },
+              {
+                "h": "اختر حجم الصفحة",
+                "x": "استخدم A4 أو Letter للطباعة، وA5 أو 6 × 9 بوصات للقراءة على الشاشة."
+              },
+              {
+                "h": "اضبط الهوامش والخط",
+                "x": "ابدأ بهوامش 20 مم وخط 11 نقطة. وللتجليد، زد الهامش الداخلي إلى 25 مم."
+              },
+              {
+                "h": "حوّل الملف وافحص ثلاثة مواضع",
+                "x": "راجع الغلاف وبداية الفصل الثاني والفهرس. تكشف هذه المواضع الغلاف الممدد والعنوان المنفرد وروابط الفهرس المعطلة."
+              },
+              {
+                "h": "أضف أرقام الصفحات",
+                "x": "لا يملك EPUB صفحات ثابتة. استخدم [أداة إضافة أرقام الصفحات](/tools/page-numbers) لتسهيل الرجوع إلى النسخة المطبوعة."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "epub-to-pdf",
+            "x": "حوّل EPUB متوافقًا إلى PDF بحجم الصفحة الذي تختاره."
+          },
+          {
+            "t": "note",
+            "x": "تُحتسب التحويلات على الخادم ضمن الحصة الشهرية لأنها تستخدم أجهزة PrintxPDF. تشمل الحسابات المجانية خمس مهام شهريًا، وPro وLifetime ثلاثمئة، ومفتاح API خمسة آلاف. راجع [الأسعار](/pricing)."
+          },
+          {
+            "t": "h2",
+            "x": "ما الذي لا ينتقل إلى PDF"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "**تغيير حجم الخط.** يتيح EPUB تكبير الخط وإعادة تدفق النص، بينما يتطلب PDF التكبير والتحريك.",
+              "**الحواشي المنبثقة.** تصبح روابط وقد تضطر للعودة إلى موضع القراءة؛ وقد تضيع في النسخة المطبوعة.",
+              "**الخطوط المضمنة.** قد يستبدلها المحول إذا لم يدعمها.",
+              "**أنماط الشاشة والوضع الليلي.** لا يغير PDF تخطيطه حسب الجهاز.",
+              "**الصوت والفيديو.** قد يضمها EPUB 3 ولا يحتفظ بها PDF.",
+              "**مزامنة القراءة.** تحفظها التطبيقات لا الملف."
+            ]
+          },
+          {
+            "t": "warn",
+            "x": "إذا كان القارئ يحتاج إلى خط كبير، فاحتفظ بـ EPUB وأرسل PDF للطباعة فقط. لا يستطيع PDF إعادة تدفق النص بعد تكبيره."
+          },
+          {
+            "t": "h2",
+            "x": "يتحول EPUB ثابت التخطيط صفحةً بصفحة تقريبًا"
+          },
+          {
+            "t": "p",
+            "x": "قد تأتي كتب الطبخ والقصص المصورة والتصوير وكتب الأطفال بتخطيط ثابت؛ لكل صفحة أبعادها وتصميمها مسبقًا، لذا يكون التحويل مباشرًا. غيّر حجم الخط في التطبيق: إذا التف النص فهو قابل لإعادة التدفق، وإذا كبرت الصفحة كلها فقط فهو ثابت التخطيط."
+          },
+          {
+            "t": "h2",
+            "x": "لماذا قد يكبر ملف PDF"
+          },
+          {
+            "t": "p",
+            "x": "قد تتكرر الصورة التي يعيد EPUB استخدامها في PDF، كما تشغل الخطوط الكاملة مساحة. استخدم [ضغط PDF](/tools/compress-pdf) قبل الإرسال."
+          },
+          {
+            "t": "cta",
+            "tool": "compress-pdf",
+            "x": "قلّل حجم الكتاب المحوّل قبل إرساله بالبريد أو طباعته."
+          },
+          {
+            "t": "h2",
+            "x": "احتفظ بملف EPUB الأصلي"
+          },
+          {
+            "t": "p",
+            "x": "احتفظ بـ EPUB كنسخة أصلية واجعل PDF نسخة ناتجة. إعادة PDF إلى EPUB تتطلب تخمين الفصول والعناوين، وغالبًا تكون النتيجة أقل جودة. لقراءة الناتج افتح [قارئ PDF](/tools/pdf-reader)، فهو يعمل محليًا في التبويب ولا يرفع الملف. وللنص فقط استخدم [PDF إلى نص](/tools/pdf-to-text)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "كيف أحوّل EPUB إلى PDF مجانًا؟",
+            "a": "ارفع ملف EPUB خاليًا من DRM، واختر حجم الصفحة والهوامش، ثم نزّل PDF. تعالج الأداة الملف على خادم عبر اتصال آمن وتحذفه عند انتهاء المهمة. تتضمن الحسابات المجانية خمس عمليات تحويل خادمية شهريًا."
+          },
+          {
+            "q": "لماذا لا يحتوي EPUB على أرقام صفحات؟",
+            "a": "يخزن EPUB النص والأنماط لا الصفحات الثابتة. يقسم التطبيق المحتوى إلى شاشات بحسب حجم الخط والجهاز. يتغير عدد الشاشات عند تغيير الخط؛ أما PDF فينشئ صفحات ثابتة."
+          },
+          {
+            "q": "ما حجم الصفحة المناسب لتحويل EPUB؟",
+            "a": "اختر A4 أو Letter للطباعة. وللقراءة على الشاشة جرّب A5 أو 6 × 9 بوصات؛ فقد يجعل A4 السطور طويلة."
+          },
+          {
+            "q": "هل تقل الجودة عند تحويل EPUB إلى PDF؟",
+            "a": "يبقى النص واضحًا، لكنك تفقد تغيير الخط وإعادة التدفق والحواشي المنبثقة والوسائط الصوتية أو المرئية. وقد تُستبدل بعض الخطوط المضمنة."
+          },
+          {
+            "q": "هل يمكن تحويل كتاب مستعار من المكتبة؟",
+            "a": "غالبًا لا. تكون كتب المكتبات الرقمية محمية ومرتبطة بالحساب. يمكن معالجة EPUB الخالي من DRM إذا كان لديك حق تحويله."
           }
         ],
         "published": "2026-11-15",
@@ -731,6 +1683,244 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-epub-to-pdf",
+        "slug": "convert-epub-to-pdf",
+        "title": "EPUB থেকে PDF করার উপায় ও কী বদলে যায়",
+        "metaTitle": "EPUB থেকে PDF করার উপায় ও কী বদলে যায়",
+        "metaDescription": "প্রিন্ট বা টীকার জন্য EPUB বিনামূল্যে PDF করুন। পেজ ও মার্জিন বেছে নিন; ফাইল নিরাপদ সার্ভারে প্রসেস হয়ে পরে মুছে যায়।",
+        "keyword": "EPUB থেকে PDF করুন",
+        "secondaryKeywords": [
+          "EPUB থেকে PDF করুন",
+          "EPUB PDF কনভার্টার",
+          "EPUB PDF পৃষ্ঠার আকার"
+        ],
+        "answer": "EPUB থেকে PDF করতে DRM-মুক্ত বই আপলোড করুন, প্রিন্টের জন্য A4 বা পড়ার জন্য A5 বেছে নিন, মার্জিন ও ফন্ট ঠিক করে PDF নামান। EPUB-এ স্থির পৃষ্ঠা নেই; PDF স্থির বিন্যাস তৈরি করে, তবে ফন্ট বদলানো ও লেখা পুনর্বিন্যাসের সুবিধা থাকে না।",
+        "tool": "epub-to-pdf",
+        "ctaLabel": "EPUB থেকে PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "EPUB-এ স্থির পৃষ্ঠা থাকে না। এতে অধ্যায়, স্টাইল ও ছবি থাকে; পাঠক অ্যাপ ঠিক করে লাইন কোথায় ভাঙবে। PDF-এ রূপান্তরের সময় একবারেই পৃষ্ঠার আকার, মার্জিন ও ফন্ট বেছে নিতে হয়। এতে প্রিন্ট বা উদ্ধৃতির জন্য স্থির পৃষ্ঠা মেলে, কিন্তু পাঠক আর নিজের মতো ফন্ট বড় করতে বা লেখা নতুন করে সাজাতে পারেন না।"
+          },
+          {
+            "t": "h2",
+            "x": "বইয়ের বিন্যাস স্থির হলে কী বদলায়"
+          },
+          {
+            "t": "table",
+            "head": [
+              "বৈশিষ্ট্য",
+              "EPUB",
+              "তৈরি PDF"
+            ],
+            "rows": [
+              [
+                "লেখার আকার",
+                "পাঠক বদলাতে পারেন, লাইন নতুন করে সাজে",
+                "স্থির; পৃষ্ঠা জুম করা যায়"
+              ],
+              [
+                "পৃষ্ঠা নম্বর",
+                "অ্যাপ পর্দা গোনে, স্থির পৃষ্ঠা নেই",
+                "স্থির পৃষ্ঠা, উদ্ধৃতিযোগ্য"
+              ],
+              [
+                "প্রিন্ট",
+                "অ্যাপভেদে ফল বদলায়",
+                "পৃষ্ঠার বিন্যাস স্থির"
+              ],
+              [
+                "৩০০ পৃষ্ঠার উপন্যাস",
+                "সাধারণত ৩০০ KB–২ MB",
+                "সাধারণত ১–৫ MB"
+              ],
+              [
+                "নাইট মোড",
+                "অ্যাপ লেখা ও পটভূমির রং বদলায়",
+                "রিডার পুরো পৃষ্ঠা উল্টে দিতে পারে"
+              ],
+              [
+                "পাদটীকা",
+                "প্রায়ই পপ-আপে দেখা যায়",
+                "অধ্যায় বা বইয়ের শেষে যাওয়ার লিংক"
+              ],
+              [
+                "৬ ইঞ্চি রিডার",
+                "স্বাভাবিক ও আরামদায়ক",
+                "সংকীর্ণ হতে পারে, প্যান করতে হয়"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "প্রথমে পৃষ্ঠার আকার বেছে নিন"
+          },
+          {
+            "t": "p",
+            "x": "প্রিন্টে A4 বা US Letter, স্ক্রিনে পড়তে A5 বা 6 × 9 ইঞ্চি নিন।"
+          },
+          {
+            "t": "table",
+            "head": [
+              "আকার",
+              "মাত্রা",
+              "প্রতি পৃষ্ঠায় আনুমানিক শব্দ",
+              "ব্যবহার"
+            ],
+            "rows": [
+              [
+                "A4",
+                "210 × 297 mm",
+                "500",
+                "উত্তর আমেরিকার বাইরে প্রিন্ট"
+              ],
+              [
+                "US Letter",
+                "216 × 279 mm",
+                "480",
+                "উত্তর আমেরিকায় প্রিন্ট"
+              ],
+              [
+                "ট্রেড 6 × 9 ইঞ্চি",
+                "152 × 229 mm",
+                "300",
+                "পেপারব্যাকের মতো দেখতে"
+              ],
+              [
+                "A5",
+                "148 × 210 mm",
+                "280",
+                "ছোট ট্যাবলেটে পড়া"
+              ],
+              [
+                "B5",
+                "176 × 250 mm",
+                "380",
+                "প্রিন্ট ও স্ক্রিনের ভারসাম্য"
+              ]
+            ]
+          },
+          {
+            "t": "note",
+            "x": "A4-এ প্রতি পৃষ্ঠায় অনেক শব্দ ধরে, প্রিন্টে সুবিধা হলেও স্ক্রিনে পড়তে ক্লান্তিকর। উপন্যাস পড়তে A5 বা 6 × 9 ইঞ্চি আরামদায়ক হতে পারে।"
+          },
+          {
+            "t": "h2",
+            "x": "ধাপে ধাপে EPUB PDF করুন"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "বইয়ে DRM আছে কি না দেখুন",
+                "x": "দোকানগুলো প্রায়ই ebook সুরক্ষিত রাখে। ফাইলটি শুধু সাইন-ইন করার পর খুললে সুরক্ষা থাকতে পারে। [Ebook DRM সম্পর্কে](/blog/ebooks/ebook-drm-explained) লক্ষণগুলো জানায়। সুরক্ষা পাশ কাটানোর চেষ্টা করবেন না।"
+              },
+              {
+                "h": "EPUB থেকে PDF টুল খুলুন",
+                "x": "[EPUB থেকে PDF](/tools/epub-to-pdf) খুলুন। এই কাজ সার্ভারে হয়: নিরাপদ সংযোগে ফাইল পাঠানো হয়, রূপান্তর শেষে সঙ্গে সঙ্গে মুছে ফেলা হয়। সর্বোচ্চ 100 MB; প্রতিটি কাজের সময়সীমা দুই মিনিট।"
+              },
+              {
+                "h": "পৃষ্ঠার আকার বেছে নিন",
+                "x": "প্রিন্টে A4 বা US Letter, স্ক্রিনে পড়তে A5 বা 6 × 9 ইঞ্চি নিন।"
+              },
+              {
+                "h": "মার্জিন ও ফন্ট ঠিক করুন",
+                "x": "20 mm মার্জিন এবং 11 pt ফন্ট দিয়ে শুরু করুন। বাইন্ডারের জন্য ভেতরের মার্জিন 25 mm করুন।"
+              },
+              {
+                "h": "রূপান্তর করে তিনটি জায়গা দেখুন",
+                "x": "কভার, দ্বিতীয় অধ্যায়ের শুরু ও সূচি দেখুন। এতে টেনে বড় হওয়া কভার, একা পড়ে থাকা শিরোনাম ও নষ্ট সূচি-লিংক ধরা পড়ে।"
+              },
+              {
+                "h": "পৃষ্ঠা নম্বর যোগ করুন",
+                "x": "EPUB-এ স্থির পৃষ্ঠা নেই। প্রিন্ট কপি সহজে খুঁজতে [পৃষ্ঠা নম্বর যোগ করুন](/tools/page-numbers) ব্যবহার করুন।"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "epub-to-pdf",
+            "x": "নিজের পছন্দের পৃষ্ঠা আকারে সমর্থিত EPUB PDF করুন।"
+          },
+          {
+            "t": "note",
+            "x": "সার্ভার কনভার্সন মাসিক কোটা ব্যবহার করে, কারণ এটি PrintxPDF-এর মেশিনে চলে। ফ্রি অ্যাকাউন্টে মাসে পাঁচটি, Pro ও Lifetime-এ ৩০০টি, API key-তে ৫,০০০টি কাজ। [বর্তমান মূল্য](/pricing) দেখুন।"
+          },
+          {
+            "t": "h2",
+            "x": "কনভার্ট করলে কী থাকে না"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "**বদলানো যায় এমন ফন্ট।** EPUB-এ ফন্ট বড় করলে লেখা নতুন করে সাজে; PDF-এ জুম ও স্ক্রল করতে হয়।",
+              "**পপ-আপ পাদটীকা।** লিংকে বদলে যায়; পড়ার জায়গায় ফিরতে হয়, প্রিন্টে হারাতেও পারেন।",
+              "**এমবেডেড ফন্ট।** কনভার্টার না চিনলে অন্য ফন্ট বসতে পারে।",
+              "**নাইট মোড ও স্ক্রিন স্টাইল।** PDF ডিভাইস অনুযায়ী বিন্যাস বদলায় না।",
+              "**অডিও ও ভিডিও।** EPUB 3-তে থাকতে পারে; PDF ধরে রাখে না।",
+              "**পড়ার অবস্থান সিঙ্ক।** এটি অ্যাপের কাজ, ফাইলের নয়।"
+            ]
+          },
+          {
+            "t": "warn",
+            "x": "পাঠকের বড় লেখা দরকার হলে EPUB রাখুন এবং PDF শুধু প্রিন্টে দিন। PDF বড় ফন্টে লেখা নতুন করে সাজাতে পারে না।"
+          },
+          {
+            "t": "h2",
+            "x": "স্থির-বিন্যাস EPUB প্রায় পৃষ্ঠা ধরে রূপান্তরিত হয়"
+          },
+          {
+            "t": "p",
+            "x": "রান্নার বই, কমিক, ফটোগ্রাফি ও শিশুদের EPUB-এ স্থির বিন্যাস থাকতে পারে; প্রতিটি পৃষ্ঠার মাপ ও নকশা আগে থেকেই থাকে। অ্যাপে ফন্ট বদলান। লেখা নতুন করে সাজলে রিফ্লোয়েবল; পুরো পৃষ্ঠা শুধু বড় হলে স্থির বিন্যাস।"
+          },
+          {
+            "t": "h2",
+            "x": "PDF ফাইল বড় হতে পারে কেন"
+          },
+          {
+            "t": "p",
+            "x": "EPUB-এ পুনর্ব্যবহৃত ছবি PDF-এ বারবার থাকতে পারে, আর সম্পূর্ণ ফন্ট জায়গা নেয়। পাঠানোর আগে [PDF কমপ্রেস](/tools/compress-pdf) করুন।"
+          },
+          {
+            "t": "cta",
+            "tool": "compress-pdf",
+            "x": "ইমেইল বা প্রিন্টের আগে কনভার্ট করা বইয়ের আকার কমান।"
+          },
+          {
+            "t": "h2",
+            "x": "মূল EPUB রেখে দিন"
+          },
+          {
+            "t": "p",
+            "x": "EPUB মূল ফাইল হিসেবে রাখুন, PDF-কে আউটপুট কপি ধরুন। PDF থেকে EPUB ফেরত বানাতে অধ্যায় ও শিরোনাম অনুমান করতে হয়, ফলে মান কমতে পারে। পড়তে [PDF Reader](/tools/pdf-reader) খুলুন; এটি ট্যাবে স্থানীয়ভাবে চলে, ফাইল আপলোড হয় না। শুধু লেখা চাইলে [PDF থেকে টেক্সট](/tools/pdf-to-text) নিন।"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "বিনামূল্যে EPUB থেকে PDF কীভাবে করব?",
+            "a": "DRM-মুক্ত EPUB আপলোড করে পৃষ্ঠা ও মার্জিন বেছে PDF নামান। টুলটি নিরাপদ সংযোগে সার্ভারে ফাইল প্রসেস করে কাজ শেষে মুছে দেয়। বিনামূল্যের অ্যাকাউন্টে মাসে পাঁচটি সার্ভার কনভার্সন থাকে।"
+          },
+          {
+            "q": "আমার EPUB-এ পৃষ্ঠা নম্বর নেই কেন?",
+            "a": "EPUB-এ লেখা ও স্টাইল থাকে, স্থির পৃষ্ঠা নয়। অ্যাপ ফন্ট ও ডিভাইস অনুযায়ী স্ক্রিন ভাগ করে। ফন্ট বদলালে স্ক্রিনের সংখ্যাও বদলায়। PDF স্থির পৃষ্ঠা তৈরি করে।"
+          },
+          {
+            "q": "EPUB কনভার্টে কোন পৃষ্ঠার আকার নেব?",
+            "a": "প্রিন্টে A4 বা US Letter নিন। স্ক্রিনে পড়ার জন্য A5 বা 6 × 9 ইঞ্চি চেষ্টা করুন; A4-এ লাইন বেশি লম্বা হতে পারে।"
+          },
+          {
+            "q": "EPUB PDF করলে মান কমে?",
+            "a": "লেখা স্পষ্ট থাকে, তবে ফন্ট বদলানো, রিফ্লো, পপ-আপ পাদটীকা এবং অডিও বা ভিডিও হারায়। কিছু এমবেড করা ফন্টও বদলে যেতে পারে।"
+          },
+          {
+            "q": "লাইব্রেরি থেকে ধার করা ebook কনভার্ট করা যাবে?",
+            "a": "সাধারণত না। ডিজিটাল লাইব্রেরি বই DRM-সুরক্ষিত ও অ্যাকাউন্টের সঙ্গে যুক্ত থাকে। অধিকার থাকা DRM-মুক্ত EPUB কনভার্ট করা যায়।"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -878,6 +2068,244 @@
         ],
         "published": "2026-11-15",
         "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-epub-to-pdf",
+        "slug": "convert-epub-to-pdf",
+        "title": "Cách chuyển EPUB sang PDF và những gì thay đổi",
+        "metaTitle": "Cách chuyển EPUB sang PDF và những gì thay đổi",
+        "metaDescription": "Chuyển EPUB sang PDF miễn phí để in hoặc ghi chú. Chọn khổ giấy, lề; tệp xử lý trên máy chủ an toàn rồi xóa sau khi hoàn tất.",
+        "keyword": "chuyển EPUB sang PDF",
+        "secondaryKeywords": [
+          "chuyển EPUB sang PDF",
+          "công cụ EPUB sang PDF",
+          "khổ trang EPUB PDF"
+        ],
+        "answer": "Để chuyển EPUB sang PDF, tải sách không DRM lên, chọn A4 hoặc Letter để in hay A5 để đọc, đặt lề và cỡ chữ rồi tải PDF. EPUB không có trang cố định; PDF tạo bố cục ổn định nhưng mất khả năng đổi cỡ chữ và tự dàn lại.",
+        "tool": "epub-to-pdf",
+        "ctaLabel": "Chuyển EPUB sang PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "EPUB không chứa trang cố định. Tệp lưu chương, kiểu chữ và hình ảnh; ứng dụng đọc quyết định chỗ xuống dòng. Khi chuyển EPUB sang PDF, bạn chọn khổ giấy, lề và cỡ chữ một lần. Bạn có trang ổn định để in hoặc trích dẫn, nhưng không còn khả năng đổi cỡ chữ hay để văn bản tự dàn lại."
+          },
+          {
+            "t": "h2",
+            "x": "Điều gì thay đổi khi sách không còn tự dàn lại"
+          },
+          {
+            "t": "table",
+            "head": [
+              "Đặc điểm",
+              "EPUB",
+              "PDF được tạo"
+            ],
+            "rows": [
+              [
+                "Cỡ chữ",
+                "Người đọc đổi được, dòng tự sắp xếp lại",
+                "Cố định; có thể phóng to trang"
+              ],
+              [
+                "Số trang",
+                "Ứng dụng đếm màn hình, không có trang ổn định",
+                "Trang cố định, có thể trích dẫn"
+              ],
+              [
+                "In ấn",
+                "Kết quả tùy ứng dụng",
+                "Bố cục trang được cố định"
+              ],
+              [
+                "Tiểu thuyết 300 trang",
+                "Thường 300 KB–2 MB",
+                "Thường 1–5 MB"
+              ],
+              [
+                "Chế độ tối",
+                "Ứng dụng đổi màu nền và chữ",
+                "Trình đọc có thể đảo màu cả trang"
+              ],
+              [
+                "Chú thích cuối trang",
+                "Thường mở dạng cửa sổ bật lên",
+                "Liên kết đến cuối chương hoặc sách"
+              ],
+              [
+                "Máy đọc 6 inch",
+                "Tự nhiên và thoải mái",
+                "Có thể chật, cần di chuyển trang"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "Chọn khổ giấy trước tiên"
+          },
+          {
+            "t": "p",
+            "x": "Chọn A4 hoặc Letter để in; A5 hoặc 6 × 9 inch để đọc trên màn hình."
+          },
+          {
+            "t": "table",
+            "head": [
+              "Khổ giấy",
+              "Kích thước",
+              "Số từ ước tính mỗi trang",
+              "Dùng khi"
+            ],
+            "rows": [
+              [
+                "A4",
+                "210 × 297 mm",
+                "500",
+                "In ngoài Bắc Mỹ"
+              ],
+              [
+                "Letter",
+                "216 × 279 mm",
+                "480",
+                "In tại Bắc Mỹ"
+              ],
+              [
+                "Khổ thương mại 6 × 9 inch",
+                "152 × 229 mm",
+                "300",
+                "Muốn giống sách bìa mềm"
+              ],
+              [
+                "A5",
+                "148 × 210 mm",
+                "280",
+                "Đọc trên máy tính bảng nhỏ"
+              ],
+              [
+                "B5",
+                "176 × 250 mm",
+                "380",
+                "Cân bằng in và đọc màn hình"
+              ]
+            ]
+          },
+          {
+            "t": "note",
+            "x": "A4 chứa nhiều từ, tiện để in nhưng mỏi mắt khi đọc trên màn hình. A5 hoặc 6 × 9 inch thường dễ đọc hơn với tiểu thuyết."
+          },
+          {
+            "t": "h2",
+            "x": "Cách chuyển EPUB sang PDF từng bước"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "Kiểm tra sách có DRM không",
+                "x": "Cửa hàng thường bảo vệ ebook. Nếu tệp chỉ mở sau khi đăng nhập, sách có thể được bảo vệ. [Tìm hiểu DRM ebook](/blog/ebooks/ebook-drm-explained) nêu các dấu hiệu. Đừng tìm cách gỡ bảo vệ."
+              },
+              {
+                "h": "Mở EPUB sang PDF",
+                "x": "Vào [EPUB sang PDF](/tools/epub-to-pdf). Công cụ xử lý trên máy chủ: tệp được truyền qua kết nối an toàn, chuyển đổi rồi xóa khi hoàn tất. Giới hạn 100 MB và tối đa hai phút mỗi lượt."
+              },
+              {
+                "h": "Chọn khổ giấy",
+                "x": "Chọn A4 hoặc Letter để in; A5 hoặc 6 × 9 inch để đọc trên màn hình."
+              },
+              {
+                "h": "Đặt lề và cỡ chữ",
+                "x": "Bắt đầu với lề 20 mm và chữ 11 pt. Nếu đóng gáy, tăng lề trong lên 25 mm."
+              },
+              {
+                "h": "Chuyển đổi rồi kiểm tra ba vị trí",
+                "x": "Xem bìa, trang đầu chương hai và mục lục. Ba vị trí này giúp phát hiện bìa bị kéo giãn, tiêu đề bị tách và liên kết mục lục không còn hoạt động."
+              },
+              {
+                "h": "Thêm số trang",
+                "x": "EPUB không có trang cố định. Dùng [Thêm số trang](/tools/page-numbers) để tra cứu bản in."
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "epub-to-pdf",
+            "x": "Chuyển EPUB được hỗ trợ sang PDF theo khổ giấy bạn chọn."
+          },
+          {
+            "t": "note",
+            "x": "Lượt xử lý máy chủ tính vào hạn mức tháng vì dùng máy của PrintxPDF. Tài khoản miễn phí có năm lượt mỗi tháng; Pro và Lifetime có 300; khóa API có 5.000. Xem [giá hiện tại](/pricing)."
+          },
+          {
+            "t": "h2",
+            "x": "Những gì bị mất khi chuyển đổi"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "**Cỡ chữ tùy chỉnh.** EPUB có thể đổi cỡ và dàn lại dòng; PDF cần phóng to và cuộn.",
+              "**Chú thích bật lên.** Chúng thành liên kết; bạn phải quay lại chỗ đọc và có thể mất khi in.",
+              "**Phông nhúng.** Có thể bị thay nếu bộ chuyển đổi không hỗ trợ.",
+              "**Kiểu cho chế độ tối và màn hình.** PDF không đổi bố cục theo thiết bị.",
+              "**Âm thanh và video.** EPUB 3 có thể chứa chúng; PDF không giữ lại.",
+              "**Đồng bộ vị trí đọc.** Ứng dụng lưu vị trí giữa thiết bị, không phải tệp."
+            ]
+          },
+          {
+            "t": "warn",
+            "x": "Nếu người đọc cần chữ lớn, hãy giữ EPUB để đọc và chỉ dùng PDF để in. PDF không thể tự dàn lại sau khi tăng cỡ chữ."
+          },
+          {
+            "t": "h2",
+            "x": "EPUB bố cục cố định chuyển gần như từng trang"
+          },
+          {
+            "t": "p",
+            "x": "Sách nấu ăn, truyện tranh, ảnh và sách thiếu nhi có thể dùng EPUB bố cục cố định, mỗi trang đã có kích thước và thiết kế. Hãy đổi cỡ chữ trong ứng dụng: chữ dàn lại là loại reflow; cả trang chỉ phóng to là bố cục cố định."
+          },
+          {
+            "t": "h2",
+            "x": "Vì sao PDF có thể lớn hơn"
+          },
+          {
+            "t": "p",
+            "x": "Ảnh được EPUB dùng lại có thể bị lặp trong PDF; phông đầy đủ cũng chiếm chỗ. Dùng [Nén PDF](/tools/compress-pdf) trước khi gửi."
+          },
+          {
+            "t": "cta",
+            "tool": "compress-pdf",
+            "x": "Giảm dung lượng sách đã chuyển trước khi gửi email hoặc in."
+          },
+          {
+            "t": "h2",
+            "x": "Giữ lại EPUB gốc"
+          },
+          {
+            "t": "p",
+            "x": "Giữ EPUB làm bản gốc và xem PDF là bản xuất. Chuyển ngược PDF sang EPUB phải đoán chương và tiêu đề, nên kết quả thường kém hơn. Để đọc, mở [Trình đọc PDF](/tools/pdf-reader); công cụ chạy ngay trong tab và không tải tệp lên. Nếu chỉ cần chữ, dùng [PDF sang văn bản](/tools/pdf-to-text)."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Làm sao chuyển EPUB sang PDF miễn phí?",
+            "a": "Tải EPUB không DRM lên, chọn khổ giấy và lề rồi tải PDF. Công cụ EPUB sang PDF xử lý tệp trên máy chủ qua kết nối an toàn và xóa tệp khi hoàn thành. Tài khoản miễn phí có năm lượt xử lý máy chủ mỗi tháng."
+          },
+          {
+            "q": "Vì sao EPUB không có số trang?",
+            "a": "EPUB lưu văn bản và kiểu trình bày chứ không lưu trang cố định. Ứng dụng chia văn bản thành màn hình theo cỡ chữ và thiết bị. Đổi cỡ chữ sẽ thay đổi số màn hình. PDF tạo trang ổn định."
+          },
+          {
+            "q": "Nên chọn khổ giấy nào khi chuyển EPUB?",
+            "a": "Chọn A4 hoặc Letter để in. Để đọc trên màn hình, thử A5 hoặc 6 × 9 inch; khổ A4 có thể tạo dòng quá dài."
+          },
+          {
+            "q": "Chuyển EPUB sang PDF có giảm chất lượng không?",
+            "a": "Văn bản vẫn rõ, nhưng mất khả năng đổi cỡ chữ, tự dàn lại, chú thích bật lên và nội dung âm thanh hoặc video. Một số phông nhúng có thể bị thay thế."
+          },
+          {
+            "q": "Có chuyển được ebook mượn từ thư viện không?",
+            "a": "Thường là không. Ebook thư viện hay được bảo vệ và liên kết với tài khoản. EPUB không DRM mà bạn có quyền chuyển đổi có thể dùng được."
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
       }
     ]
   },
@@ -1021,6 +2449,244 @@
           {
             "q": "PDF 会和 Kindle 屏幕显示完全相同吗？",
             "a": "不会。转换器会生成固定的 A4 页面。请检查章节、图片和表格，因为文字流动方式可能不同。"
+          }
+        ],
+        "published": "2026-11-15",
+        "updated": "2026-11-15"
+      },
+      {
+        "topic": "convert-epub-to-pdf",
+        "slug": "convert-epub-to-pdf",
+        "title": "如何将 EPUB 转为 PDF，以及会失去什么",
+        "metaTitle": "如何将 EPUB 转为 PDF，以及会失去什么",
+        "metaDescription": "免费将 EPUB 转为 PDF 以便打印或批注。可选纸张和页边距；文件经安全服务器处理后删除。",
+        "keyword": "EPUB 转 PDF",
+        "secondaryKeywords": [
+          "EPUB 转 PDF",
+          "EPUB 转 PDF 工具",
+          "EPUB PDF 页面尺寸"
+        ],
+        "answer": "要将 EPUB 转为 PDF，请上传无 DRM 的电子书，打印选 A4 或 Letter，屏幕阅读选 A5，再设置页边距和字号并下载。EPUB 没有固定页码；PDF 会固定版式，但无法像阅读器那样调整字号和重新排版。",
+        "tool": "epub-to-pdf",
+        "ctaLabel": "EPUB 转 PDF",
+        "body": [
+          {
+            "t": "p",
+            "x": "EPUB 本身没有固定页面。它保存章节、样式和图片，由阅读应用决定在哪里换行。转成 PDF 时，你一次选定纸张大小、页边距和字号。这样会得到便于打印和引用的固定页面，但读者无法再自由调整字号或让文字重新排版。"
+          },
+          {
+            "t": "h2",
+            "x": "从可重排到固定页面会发生什么"
+          },
+          {
+            "t": "table",
+            "head": [
+              "特性",
+              "EPUB",
+              "转换后的 PDF"
+            ],
+            "rows": [
+              [
+                "字号",
+                "阅读器可调整，文字会重新换行",
+                "字号固定，可缩放页面"
+              ],
+              [
+                "页码",
+                "应用计算屏幕数量，没有固定页码",
+                "固定页面，可稳定引用"
+              ],
+              [
+                "打印",
+                "效果取决于阅读应用",
+                "页面布局固定"
+              ],
+              [
+                "300 页小说",
+                "通常为 300 KB–2 MB",
+                "通常为 1–5 MB"
+              ],
+              [
+                "夜间模式",
+                "应用切换文字和背景颜色",
+                "阅读器可能反转整页颜色"
+              ],
+              [
+                "脚注",
+                "通常以弹出框显示",
+                "链接到章节或全书末尾"
+              ],
+              [
+                "6 英寸阅读器",
+                "原生舒适",
+                "可能拥挤，需要平移页面"
+              ]
+            ]
+          },
+          {
+            "t": "h2",
+            "x": "先选择页面尺寸"
+          },
+          {
+            "t": "p",
+            "x": "打印选 A4 或 US Letter；屏幕阅读可选 A5 或 6 × 9 英寸。"
+          },
+          {
+            "t": "table",
+            "head": [
+              "纸张尺寸",
+              "尺寸",
+              "每页约字数",
+              "适用情况"
+            ],
+            "rows": [
+              [
+                "A4",
+                "210 × 297 毫米",
+                "500",
+                "在北美以外打印"
+              ],
+              [
+                "US Letter",
+                "216 × 279 毫米",
+                "480",
+                "在北美打印"
+              ],
+              [
+                "6 × 9 英寸商业版",
+                "152 × 229 毫米",
+                "300",
+                "想要平装书的版式"
+              ],
+              [
+                "A5",
+                "148 × 210 毫米",
+                "280",
+                "在小平板上阅读"
+              ],
+              [
+                "B5",
+                "176 × 250 毫米",
+                "380",
+                "兼顾打印和屏幕阅读"
+              ]
+            ]
+          },
+          {
+            "t": "note",
+            "x": "A4 每页容纳较多文字，适合打印，但屏幕阅读时行宽可能令人疲劳。阅读小说可考虑 A5 或 6 × 9 英寸。"
+          },
+          {
+            "t": "h2",
+            "x": "如何逐步将 EPUB 转为 PDF"
+          },
+          {
+            "t": "steps",
+            "items": [
+              {
+                "h": "先确认电子书没有 DRM",
+                "x": "书店常会给电子书加保护。如果文件必须登录后才能打开，可能受 DRM 保护。[了解电子书 DRM](/blog/ebooks/ebook-drm-explained)可查看线索。不要尝试绕过保护。"
+              },
+              {
+                "h": "打开 EPUB 转 PDF 工具",
+                "x": "访问 [EPUB 转 PDF](/tools/epub-to-pdf)。此转换由服务器处理：文件经安全连接上传，转换完成后立即删除。单个文件上限为 100 MB，每项任务最长两分钟。"
+              },
+              {
+                "h": "选择页面尺寸",
+                "x": "打印选 A4 或 US Letter；屏幕阅读可选 A5 或 6 × 9 英寸。"
+              },
+              {
+                "h": "设置页边距和字号",
+                "x": "可从 20 毫米页边距和 11 pt 字号开始。若要装订，将内侧页边距增至 25 毫米。"
+              },
+              {
+                "h": "转换并检查三个位置",
+                "x": "检查封面、第二章首页和目录。这三处容易发现封面拉伸、章节标题孤立以及目录链接失效。"
+              },
+              {
+                "h": "添加页码",
+                "x": "EPUB 没有固定页码。使用[添加页码](/tools/page-numbers)，方便查找打印页。"
+              }
+            ]
+          },
+          {
+            "t": "cta",
+            "tool": "epub-to-pdf",
+            "x": "将受支持的 EPUB 按所选页面尺寸转换为 PDF。"
+          },
+          {
+            "t": "note",
+            "x": "服务器转换使用 PrintxPDF 的计算资源，因此计入月度额度。免费账户每月 5 次，Pro 和 Lifetime 为 300 次，API 密钥为 5,000 次。请查看[当前价格](/pricing)。"
+          },
+          {
+            "t": "h2",
+            "x": "转换后哪些内容会改变"
+          },
+          {
+            "t": "ul",
+            "items": [
+              "**字号调整。** EPUB 可增大字号并重新排版；PDF 需要缩放和滚动。",
+              "**弹出脚注。** 会变成链接，需要返回原阅读位置；打印后可能不便查看。",
+              "**嵌入字体。** 转换器不支持时可能会替换字体。",
+              "**夜间模式和屏幕样式。** PDF 不会根据设备改变布局。",
+              "**音频和视频。** EPUB 3 可能包含媒体，PDF 不会保留。",
+              "**阅读进度同步。** 进度由阅读应用保存，不在文件中。"
+            ]
+          },
+          {
+            "t": "warn",
+            "x": "如果读者需要大字号，请保留 EPUB 阅读，仅将 PDF 用于打印。PDF 无法像可重排电子书那样在放大文字后重新排版。"
+          },
+          {
+            "t": "h2",
+            "x": "固定版式 EPUB 几乎可逐页转换"
+          },
+          {
+            "t": "p",
+            "x": "食谱、漫画、摄影集和儿童绘本可能采用固定版式，每页尺寸和设计都已确定，因此转换较直接。在阅读应用中调整字号：文字重新换行的是可重排 EPUB；只有整页缩放的是固定版式。"
+          },
+          {
+            "t": "h2",
+            "x": "为什么 PDF 可能更大"
+          },
+          {
+            "t": "p",
+            "x": "EPUB 重用的图片可能在 PDF 中重复嵌入，完整字体也会占空间。发送前可使用[压缩 PDF](/tools/compress-pdf)。"
+          },
+          {
+            "t": "cta",
+            "tool": "compress-pdf",
+            "x": "通过邮件发送或打印前，先缩小转换后电子书的文件体积。"
+          },
+          {
+            "t": "h2",
+            "x": "保留原始 EPUB"
+          },
+          {
+            "t": "p",
+            "x": "保留 EPUB 作为原件，将 PDF 视为输出副本。从 PDF 还原 EPUB 需要猜测章节和标题，效果通常不如原件。阅读时可打开[PDF 阅读器](/tools/pdf-reader)，它在浏览器标签页本地运行，不会上传文件。只需文字时可使用[PDF 转文本](/tools/pdf-to-text)。"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "如何免费将 EPUB 转为 PDF？",
+            "a": "上传无 DRM 的 EPUB，选择纸张大小和页边距，然后下载 PDF。EPUB 转 PDF 工具通过安全连接在服务器处理文件，并在任务结束时删除。免费账户每月可使用五次服务器转换。"
+          },
+          {
+            "q": "为什么 EPUB 没有页码？",
+            "a": "EPUB 保存文字和样式，不保存固定页面。阅读应用会按字号和设备将内容分成屏幕；字号改变后屏幕数量也会改变。PDF 会生成稳定页面。"
+          },
+          {
+            "q": "转换 EPUB 时应该选什么纸张？",
+            "a": "打印选 A4 或 US Letter。屏幕阅读可试 A5 或 6 × 9 英寸；A4 可能让每行过长。"
+          },
+          {
+            "q": "EPUB 转 PDF 会降低质量吗？",
+            "a": "文字仍然清晰，但会失去字号调整、自动重排、弹出脚注以及音视频。部分嵌入字体也可能被替换。"
+          },
+          {
+            "q": "可以转换图书馆借阅的电子书吗？",
+            "a": "通常不可以。图书馆电子书常受保护并绑定账户。你有权转换的无 DRM EPUB 则可以处理。"
           }
         ],
         "published": "2026-11-15",
